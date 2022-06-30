@@ -48,7 +48,7 @@
     sput-object v1, Landroidx/core/widget/c;->a:Ljava/lang/reflect/Field;
 
     .line 5
-    invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v1, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -103,11 +103,21 @@
 
     .line 3
     :cond_0
-    check-cast p0, Landroidx/core/widget/i;
+    instance-of v0, p0, Landroidx/core/widget/j;
 
-    invoke-interface {p0}, Landroidx/core/widget/i;->getSupportButtonTintList()Landroid/content/res/ColorStateList;
+    if-eqz v0, :cond_1
+
+    .line 4
+    check-cast p0, Landroidx/core/widget/j;
+
+    invoke-interface {p0}, Landroidx/core/widget/j;->getSupportButtonTintList()Landroid/content/res/ColorStateList;
 
     move-result-object p0
+
+    return-object p0
+
+    :cond_1
+    const/4 p0, 0x0
 
     return-object p0
 .end method
@@ -129,14 +139,45 @@
 
     .line 3
     :cond_0
-    instance-of v0, p0, Landroidx/core/widget/i;
+    instance-of v0, p0, Landroidx/core/widget/j;
 
     if-eqz v0, :cond_1
 
     .line 4
-    check-cast p0, Landroidx/core/widget/i;
+    check-cast p0, Landroidx/core/widget/j;
 
-    invoke-interface {p0, p1}, Landroidx/core/widget/i;->setSupportButtonTintList(Landroid/content/res/ColorStateList;)V
+    invoke-interface {p0, p1}, Landroidx/core/widget/j;->setSupportButtonTintList(Landroid/content/res/ColorStateList;)V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public static d(Landroid/widget/CompoundButton;Landroid/graphics/PorterDuff$Mode;)V
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0, p1}, Landroid/widget/CompoundButton;->setButtonTintMode(Landroid/graphics/PorterDuff$Mode;)V
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    instance-of v0, p0, Landroidx/core/widget/j;
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    check-cast p0, Landroidx/core/widget/j;
+
+    invoke-interface {p0, p1}, Landroidx/core/widget/j;->setSupportButtonTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
     :cond_1
     :goto_0

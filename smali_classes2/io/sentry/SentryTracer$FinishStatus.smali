@@ -28,7 +28,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/SentryTracer$FinishStatus;->notFinished()Lio/sentry/SentryTracer$FinishStatus;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 .method public static synthetic access$000(Lio/sentry/SentryTracer$FinishStatus;)Lio/sentry/SpanStatus;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/sentry/SentryTracer$FinishStatus;->spanStatus:Lio/sentry/SpanStatus;
 
     return-object p0
@@ -65,7 +63,6 @@
 .method public static synthetic access$100(Lio/sentry/SentryTracer$FinishStatus;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lio/sentry/SentryTracer$FinishStatus;->isFinishing:Z
 
     return p0
@@ -74,7 +71,6 @@
 .method public static finishing(Lio/sentry/SpanStatus;)Lio/sentry/SentryTracer$FinishStatus;
     .locals 2
 
-    .line 1
     new-instance v0, Lio/sentry/SentryTracer$FinishStatus;
 
     const/4 v1, 0x1
@@ -87,7 +83,6 @@
 .method private static notFinished()Lio/sentry/SentryTracer$FinishStatus;
     .locals 3
 
-    .line 1
     new-instance v0, Lio/sentry/SentryTracer$FinishStatus;
 
     const/4 v1, 0x0

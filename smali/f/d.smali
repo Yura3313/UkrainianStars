@@ -1,4 +1,4 @@
-.class public Lf/d;
+.class public final Lf/d;
 .super Landroid/content/ContextWrapper;
 .source "ContextThemeWrapper.java"
 
@@ -41,7 +41,7 @@
 
 
 # virtual methods
-.method public a(Landroid/content/res/Configuration;)V
+.method public final a(Landroid/content/res/Configuration;)V
     .locals 1
 
     .line 1
@@ -84,10 +84,9 @@
     throw p1
 .end method
 
-.method public attachBaseContext(Landroid/content/Context;)V
+.method public final attachBaseContext(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/content/ContextWrapper;->attachBaseContext(Landroid/content/Context;)V
 
     return-void
@@ -152,10 +151,9 @@
     return-void
 .end method
 
-.method public getAssets()Landroid/content/res/AssetManager;
+.method public final getAssets()Landroid/content/res/AssetManager;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lf/d;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -167,7 +165,7 @@
     return-object v0
 .end method
 
-.method public getResources()Landroid/content/res/Resources;
+.method public final getResources()Landroid/content/res/Resources;
     .locals 1
 
     .line 1
@@ -191,7 +189,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->createConfigurationContext(Landroid/content/res/Configuration;)Landroid/content/Context;
+    invoke-virtual {p0, v0}, Landroid/content/Context;->createConfigurationContext(Landroid/content/res/Configuration;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -210,7 +208,7 @@
     return-object v0
 .end method
 
-.method public getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+.method public final getSystemService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
 
     const-string v0, "layout_inflater"
@@ -261,7 +259,7 @@
     return-object p1
 .end method
 
-.method public getTheme()Landroid/content/res/Resources$Theme;
+.method public final getTheme()Landroid/content/res/Resources$Theme;
     .locals 1
 
     .line 1
@@ -292,7 +290,7 @@
     return-object v0
 .end method
 
-.method public setTheme(I)V
+.method public final setTheme(I)V
     .locals 1
 
     .line 1

@@ -41,7 +41,7 @@
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 4
 
     const-string v0, "MasterKey{keyAlias="
@@ -51,6 +51,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Ls0/c;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -59,7 +60,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
+    .line 3
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/4 v2, 0x0
@@ -74,17 +75,17 @@
     :try_start_0
     const-string v1, "AndroidKeyStore"
 
-    .line 3
+    .line 4
     invoke-static {v1}, Ljava/security/KeyStore;->getInstance(Ljava/lang/String;)Ljava/security/KeyStore;
 
     move-result-object v1
 
     const/4 v3, 0x0
 
-    .line 4
+    .line 5
     invoke-virtual {v1, v3}, Ljava/security/KeyStore;->load(Ljava/security/KeyStore$LoadStoreParameter;)V
 
-    .line 5
+    .line 6
     iget-object v3, p0, Ls0/c;->a:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/security/KeyStore;->containsAlias(Ljava/lang/String;)Z
@@ -100,8 +101,8 @@
     :goto_0
     const-string v1, "}"
 
-    .line 6
-    invoke-static {v0, v2, v1}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    .line 7
+    invoke-static {v0, v2, v1}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

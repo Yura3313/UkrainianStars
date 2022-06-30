@@ -239,7 +239,6 @@
 
     const-string v0, "appId"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -254,7 +253,6 @@
 
     const-string v0, "appSecret"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -269,7 +267,6 @@
 
     const-string v0, "appVersion"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -335,7 +332,6 @@
 
     const-string v0, "market"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -348,7 +344,6 @@
 .method public getServerInfo()Lcom/kakaogame/server/ServerInfo;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/kakaogame/server/ServerInfo;
 
     const-string v1, "serverInfo"
@@ -450,7 +445,6 @@
 
     const-string v0, "serverType"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0

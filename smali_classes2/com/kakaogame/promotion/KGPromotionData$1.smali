@@ -35,7 +35,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/KGPromotionData;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/KGPromotionData$1;->this$0:Lcom/kakaogame/promotion/KGPromotionData;
 
     iput-object p2, p0, Lcom/kakaogame/promotion/KGPromotionData$1;->val$callback:Lcom/kakaogame/KGResultCallback;

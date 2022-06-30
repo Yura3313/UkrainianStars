@@ -23,10 +23,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Li3/e;
+    new-instance v0, Lj3/g;
 
-    invoke-direct {v0}, Li3/e;-><init>()V
+    invoke-direct {v0}, Lj3/g;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/instantapps/zzk;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -36,7 +35,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     return-void
@@ -50,12 +48,12 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
     .line 2
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

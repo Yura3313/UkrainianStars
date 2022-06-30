@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/tabs/TabLayout$j;
+.class public final Lcom/google/android/material/tabs/TabLayout$j;
 .super Ljava/lang/Object;
 .source "TabLayout.java"
 
@@ -36,13 +36,13 @@
 
 
 # virtual methods
-.method public a(Lcom/google/android/material/tabs/TabLayout$g;)V
+.method public final a(Lcom/google/android/material/tabs/TabLayout$g;)V
     .locals 0
 
     return-void
 .end method
 
-.method public b(Lcom/google/android/material/tabs/TabLayout$g;)V
+.method public final b(Lcom/google/android/material/tabs/TabLayout$g;)V
     .locals 1
 
     .line 1
@@ -57,7 +57,7 @@
     return-void
 .end method
 
-.method public c(Lcom/google/android/material/tabs/TabLayout$g;)V
+.method public final c(Lcom/google/android/material/tabs/TabLayout$g;)V
     .locals 0
 
     return-void

@@ -1,26 +1,26 @@
 .class public final Lod/m;
-.super Lle/j;
-.source "RegisterEnterPinPageFragment.kt"
+.super Lse/h;
+.source "OnboardingNicknamePageFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lod/q;",
-        "Ljava/lang/String;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/p<",
+        "Lod/k;",
+        "Lvc/v;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lod/m;
+.field public static final f:Lod/m;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lod/m;-><init>()V
 
-    sput-object v0, Lod/m;->g:Lod/m;
+    sput-object v0, Lod/m;->f:Lod/m;
 
     return-void
 .end method
@@ -41,69 +41,71 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    check-cast p1, Lod/q;
+    check-cast p1, Lod/k;
 
-    check-cast p2, Ljava/lang/String;
+    check-cast p2, Lvc/v;
+
+    const-string v0, "$receiver"
+
+    .line 2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "it"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    invoke-virtual {p1}, Lod/a;->U0()Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->j1()V
+
+    .line 4
+    :cond_0
+    iget-object p2, p2, Lvc/v;->b:Ljava/util/List;
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
-
-    .line 2
-    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->clearPendingRegistration$supercellId_release()V
-
-    .line 3
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->updateSharedServices$supercellId_release()V
-
-    .line 4
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    .line 5
+    invoke-static {p2, v0}, Lje/j;->B(Ljava/util/List;I)Ljava/lang/Object;
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lvd/r;->m()Lse/f0;
+    check-cast p2, Ljava/lang/String;
 
-    .line 5
-    invoke-virtual {p1}, Lod/r;->f1()Lcom/supercell/id/ui/register/RegisterFlowFragment;
+    if-eqz p2, :cond_1
+
+    .line 6
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
-    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->s1()V
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
-    .line 6
-    :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "it"
+    const/4 v0, 0x0
 
     .line 7
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->H(Ljava/lang/String;Lre/l;)V
 
-    throw v0
+    .line 8
+    :cond_1
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    :cond_2
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return-object p1
 .end method

@@ -71,10 +71,9 @@
 .method private getContext()Landroid/content/Context;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/nova/interop/line/auth/LineLoginProxy;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -94,7 +93,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/nova/interop/line/auth/LineLoginProxy;->lineApiClient:Lcom/linecorp/linesdk/api/LineApiClient;
 
     invoke-interface {v0}, Lcom/linecorp/linesdk/api/LineApiClient;->getCurrentAccessToken()Lcom/linecorp/linesdk/LineApiResponse;
@@ -177,7 +175,7 @@
     move-exception p1
 
     .line 5
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     :goto_0
     return-void
@@ -194,7 +192,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/nova/interop/line/auth/LineLoginProxy;->lineApiClient:Lcom/linecorp/linesdk/api/LineApiClient;
 
     invoke-interface {v0}, Lcom/linecorp/linesdk/api/LineApiClient;->refreshAccessToken()Lcom/linecorp/linesdk/LineApiResponse;
@@ -214,7 +211,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/nova/interop/line/auth/LineLoginProxy;->lineApiClient:Lcom/linecorp/linesdk/api/LineApiClient;
 
     invoke-interface {v0}, Lcom/linecorp/linesdk/api/LineApiClient;->logout()Lcom/linecorp/linesdk/LineApiResponse;
@@ -235,7 +231,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/nova/interop/line/auth/LineLoginProxy;->lineApiClient:Lcom/linecorp/linesdk/api/LineApiClient;
 
     invoke-interface {v0}, Lcom/linecorp/linesdk/api/LineApiClient;->verifyToken()Lcom/linecorp/linesdk/LineApiResponse;

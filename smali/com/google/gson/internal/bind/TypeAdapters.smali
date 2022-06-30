@@ -913,7 +913,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/gson/internal/bind/TypeAdapters$34;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$34;-><init>(Ljava/lang/Class;Ljava/lang/Class;Lcom/google/gson/TypeAdapter;)V
@@ -936,7 +935,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/gson/internal/bind/TypeAdapters$35;
 
     invoke-direct {v0, p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$35;-><init>(Ljava/lang/Class;Lcom/google/gson/TypeAdapter;)V

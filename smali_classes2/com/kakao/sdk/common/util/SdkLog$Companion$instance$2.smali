@@ -1,9 +1,9 @@
 .class final Lcom/kakao/sdk/common/util/SdkLog$Companion$instance$2;
-.super Lle/j;
+.super Lse/h;
 .source "SdkLog.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
+        "Lse/h;",
+        "Lre/a<",
         "Lcom/kakao/sdk/common/util/SdkLog;",
         ">;"
     }
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/kakao/sdk/common/util/SdkLog;-><init>(ZILle/g;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/kakao/sdk/common/util/SdkLog;-><init>(ZILse/e;)V
 
     return-object v0
 .end method

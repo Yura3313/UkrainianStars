@@ -1,76 +1,80 @@
 .class public final Lqd/e;
-.super Lle/j;
-.source "SettingsGeneralTabFragment.kt"
+.super Lse/h;
+.source "ProfileImageEditorFragment.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
-        "Lse/f0<",
-        "+",
-        "Lqc/w;",
-        ">;>;"
+        "Lse/h;",
+        "Lre/p<",
+        "Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;",
+        "Ljava/lang/Object;",
+        "Lie/h;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Z
+# static fields
+.field public static final f:Lqd/e;
 
 
 # direct methods
-.method public constructor <init>(Z)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-boolean p1, p0, Lqd/e;->g:Z
+    new-instance v0, Lqd/e;
 
-    const/4 p1, 0x0
+    invoke-direct {v0}, Lqd/e;-><init>()V
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    sput-object v0, Lqd/e;->f:Lqd/e;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
-    .locals 7
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    check-cast p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    const-string v0, "$receiver"
 
-    move-result-object v0
+    .line 2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Lvd/r;->i()Lwd/z;
+    const-string v0, "it"
 
-    move-result-object v1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Lqd/e;->g:Z
+    .line 3
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
-    xor-int/lit8 v0, v0, 0x1
+    move-result-object p1
 
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    if-eqz p1, :cond_0
 
-    move-result-object v5
+    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->f()V
 
-    const/4 v6, 0x7
+    .line 4
+    :cond_0
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    invoke-static/range {v1 .. v6}, Lwd/z;->k(Lwd/z;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)Lse/f0;
-
-    move-result-object v0
-
-    return-object v0
+    return-object p1
 .end method

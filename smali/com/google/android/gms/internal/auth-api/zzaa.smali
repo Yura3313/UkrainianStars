@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract o6(Lcom/google/android/gms/common/api/Status;Lcom/google/android/gms/auth/api/identity/BeginSignInResult;)V
+.method public abstract b()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -36,7 +36,6 @@
 .method public getMediaController()Landroid/support/v4/media/session/MediaControllerCompat;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerExtraData;->mMediaController:Landroid/support/v4/media/session/MediaControllerCompat;
 
     return-object v0

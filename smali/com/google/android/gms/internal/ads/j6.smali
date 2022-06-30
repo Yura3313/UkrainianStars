@@ -13,7 +13,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -23,8 +22,12 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/d6;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/a0$a;I)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/d6;Lcom/google/android/gms/internal/ads/a0$a;I)V
     .locals 7
+
+    const-string v2, "XLHOfrBefh/XuKTLTjyhlPIaCxluS3pTQi+gEZfTBluRJuWX3xNYXE2jLxpQRzgB"
+
+    const-string v3, "BgRtXwp/TdPjOMTtxgPOZvXLI0QBLAqNFbcCQtGyZIw="
 
     const/16 v6, 0x2c
 
@@ -32,15 +35,10 @@
 
     move-object v1, p1
 
-    move-object v2, p2
+    move-object v4, p2
 
-    move-object v3, p3
+    move v5, p3
 
-    move-object v4, p4
-
-    move v5, p5
-
-    .line 1
     invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/internal/ads/d7;-><init>(Lcom/google/android/gms/internal/ads/d6;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/a0$a;II)V
 
     return-void
@@ -123,7 +121,7 @@
     move-result-wide v3
 
     .line 8
-    iget-boolean v5, v2, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iget-boolean v5, v2, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     if-eqz v5, :cond_2
 
@@ -131,15 +129,15 @@
     invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
 
     .line 10
-    iput-boolean v1, v2, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iput-boolean v1, v2, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     .line 11
     :cond_2
-    iget-object v1, v2, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+    iget-object v1, v2, Lcom/google/android/gms/internal/ads/v5$b;->g:Lcom/google/android/gms/internal/ads/v5;
 
     check-cast v1, Lcom/google/android/gms/internal/ads/a0;
 
-    invoke-static {v1, v3, v4}, Lcom/google/android/gms/internal/ads/a0;->G0(Lcom/google/android/gms/internal/ads/a0;J)V
+    invoke-static {v1, v3, v4}, Lcom/google/android/gms/internal/ads/a0;->E0(Lcom/google/android/gms/internal/ads/a0;J)V
 
     .line 12
     monitor-exit v0

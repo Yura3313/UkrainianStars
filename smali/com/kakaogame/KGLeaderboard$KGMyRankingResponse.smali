@@ -48,7 +48,6 @@
 .method public static synthetic access$600(Lcom/kakaogame/KGLeaderboard$KGMyRankingResponse;)I
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/KGLeaderboard$KGMyRankingResponse;->getSeasonSeq()I
 
     move-result p0
@@ -59,7 +58,6 @@
 .method private getSeasonSeq()I
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGLeaderboard$KGMyRankingResponse;->object:Lcom/kakaogame/util/json/JSONObject;
 
     const-string v1, "seasonSeq"
@@ -78,7 +76,6 @@
 .method public getRankingInfo()Lcom/kakaogame/KGLeaderboard$KGRankingInfo;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/kakaogame/KGLeaderboard$KGRankingInfo;
 
     iget-object v1, p0, Lcom/kakaogame/KGLeaderboard$KGMyRankingResponse;->object:Lcom/kakaogame/util/json/JSONObject;
@@ -93,7 +90,6 @@
 .method public getTotalPlayerCount()I
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGLeaderboard$KGMyRankingResponse;->object:Lcom/kakaogame/util/json/JSONObject;
 
     const-string v1, "cardinality"

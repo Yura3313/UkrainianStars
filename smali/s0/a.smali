@@ -19,7 +19,7 @@
 # instance fields
 .field public final a:Landroid/content/SharedPreferences;
 
-.field public final b:Ljava/util/List;
+.field public final b:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -31,13 +31,13 @@
 
 .field public final c:Ljava/lang/String;
 
-.field public final d:Ld5/a;
+.field public final d:Lf5/a;
 
-.field public final e:Ld5/c;
+.field public final e:Lf5/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroid/content/SharedPreferences;Ld5/a;Ld5/c;)V
+.method public constructor <init>(Ljava/lang/String;Landroid/content/SharedPreferences;Lf5/a;Lf5/c;)V
     .locals 0
 
     .line 1
@@ -47,26 +47,26 @@
     iput-object p1, p0, Ls0/a;->c:Ljava/lang/String;
 
     .line 3
-    iput-object p3, p0, Ls0/a;->a:Landroid/content/SharedPreferences;
+    iput-object p2, p0, Ls0/a;->a:Landroid/content/SharedPreferences;
 
     .line 4
-    iput-object p4, p0, Ls0/a;->d:Ld5/a;
+    iput-object p3, p0, Ls0/a;->d:Lf5/a;
 
     .line 5
-    iput-object p5, p0, Ls0/a;->e:Ld5/c;
+    iput-object p4, p0, Ls0/a;->e:Lf5/c;
 
     .line 6
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Ls0/a;->b:Ljava/util/List;
+    iput-object p1, p0, Ls0/a;->b:Ljava/util/ArrayList;
 
     return-void
 .end method
 
 .method public static a(Landroid/content/Context;Ljava/lang/String;Ls0/c;Ls0/a$b;Ls0/a$c;)Landroid/content/SharedPreferences;
-    .locals 6
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;,
@@ -75,55 +75,55 @@
     .end annotation
 
     .line 1
-    iget-object v2, p2, Ls0/c;->a:Ljava/lang/String;
+    iget-object p2, p2, Ls0/c;->a:Ljava/lang/String;
 
     .line 2
-    sget p2, Lf5/a;->a:I
+    sget v0, Lh5/a;->a:I
 
     .line 3
-    sget-object p2, Lg5/b;->a:Ll5/g1;
+    sget-object v0, Li5/b;->a:Ln5/g1;
 
     .line 4
-    new-instance p2, Lg5/a;
+    new-instance v0, Li5/a;
 
-    invoke-direct {p2}, Lg5/a;-><init>()V
+    invoke-direct {v0}, Li5/a;-><init>()V
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
-    invoke-static {p2, v0}, Ld5/y;->h(Ld5/i;Z)V
+    invoke-static {v0, v1}, Lf5/x;->h(Lf5/i;Z)V
 
     .line 5
-    new-instance p2, Lg5/c;
+    new-instance v0, Li5/c;
 
-    invoke-direct {p2}, Lg5/c;-><init>()V
+    invoke-direct {v0}, Li5/c;-><init>()V
 
-    invoke-static {p2}, Ld5/y;->i(Ld5/q;)V
+    invoke-static {v0}, Lf5/x;->i(Lf5/p;)V
 
     .line 6
-    invoke-static {}, Lh5/c;->a()V
+    invoke-static {}, Lj5/c;->a()V
 
     .line 7
-    sget p2, Lk5/d;->a:I
+    sget v0, Lm5/d;->a:I
 
     .line 8
-    new-instance p2, Lk5/a;
+    new-instance v0, Lm5/a;
 
-    invoke-direct {p2}, Lk5/a;-><init>()V
+    invoke-direct {v0}, Lm5/a;-><init>()V
 
-    invoke-static {p2, v0}, Ld5/y;->h(Ld5/i;Z)V
+    invoke-static {v0, v1}, Lf5/x;->h(Lf5/i;Z)V
 
     .line 9
-    new-instance p2, Lk5/f;
+    new-instance v0, Lm5/f;
 
-    invoke-direct {p2}, Lk5/f;-><init>()V
+    invoke-direct {v0}, Lm5/f;-><init>()V
 
-    invoke-static {p2}, Ld5/y;->i(Ld5/q;)V
+    invoke-static {v0}, Lf5/x;->i(Lf5/p;)V
 
     .line 10
-    invoke-static {}, Ln5/l;->a()V
+    invoke-static {}, Lp5/l;->a()V
 
     .line 11
-    invoke-static {}, Lo5/c;->a()V
+    invoke-static {}, Lq5/c;->a()V
 
     .line 12
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -131,111 +131,111 @@
     move-result-object p0
 
     .line 13
-    new-instance p2, Li5/a$b;
+    new-instance v0, Lk5/a$a;
 
-    invoke-direct {p2}, Li5/a$b;-><init>()V
+    invoke-direct {v0}, Lk5/a$a;-><init>()V
 
     .line 14
-    iget-object p3, p3, Ls0/a$b;->g:Ld5/h;
+    iget-object p3, p3, Ls0/a$b;->f:Lf5/h;
 
     .line 15
-    iput-object p3, p2, Li5/a$b;->e:Ld5/h;
+    iput-object p3, v0, Lk5/a$a;->e:Lf5/h;
 
     const-string p3, "__androidx_security_crypto_encrypted_prefs_key_keyset__"
 
     .line 16
-    invoke-virtual {p2, p0, p3, p1}, Li5/a$b;->d(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Li5/a$b;
+    invoke-virtual {v0, p0, p3, p1}, Lk5/a$a;->d(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Lk5/a$a;
 
     new-instance p3, Ljava/lang/StringBuilder;
 
     invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v0, "android-keystore://"
+    const-string v1, "android-keystore://"
 
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p3
 
-    const-string v0, "android-keystore://"
+    const-string v1, "android-keystore://"
 
     .line 17
-    invoke-virtual {p3, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-virtual {p3, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
     .line 18
-    iput-object p3, p2, Li5/a$b;->c:Ljava/lang/String;
+    iput-object p3, v0, Lk5/a$a;->c:Ljava/lang/String;
 
     .line 19
-    invoke-virtual {p2}, Li5/a$b;->a()Li5/a;
+    invoke-virtual {v0}, Lk5/a$a;->a()Lk5/a;
 
-    move-result-object p2
+    move-result-object p3
 
     .line 20
-    monitor-enter p2
+    monitor-enter p3
 
     .line 21
     :try_start_0
-    iget-object p3, p2, Li5/a;->b:Ld5/k;
+    iget-object v0, p3, Lk5/a;->b:Lf5/k;
 
-    invoke-virtual {p3}, Ld5/k;->b()Ld5/j;
+    invoke-virtual {v0}, Lf5/k;->b()Lf5/j;
 
-    move-result-object p3
+    move-result-object v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    monitor-exit p2
+    monitor-exit p3
 
     .line 22
-    new-instance p2, Li5/a$b;
+    new-instance p3, Lk5/a$a;
 
-    invoke-direct {p2}, Li5/a$b;-><init>()V
+    invoke-direct {p3}, Lk5/a$a;-><init>()V
 
     .line 23
-    iget-object p4, p4, Ls0/a$c;->g:Ld5/h;
+    iget-object p4, p4, Ls0/a$c;->f:Lf5/h;
 
     .line 24
-    iput-object p4, p2, Li5/a$b;->e:Ld5/h;
+    iput-object p4, p3, Lk5/a$a;->e:Lf5/h;
 
     const-string p4, "__androidx_security_crypto_encrypted_prefs_value_keyset__"
 
     .line 25
-    invoke-virtual {p2, p0, p4, p1}, Li5/a$b;->d(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Li5/a$b;
+    invoke-virtual {p3, p0, p4, p1}, Lk5/a$a;->d(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Lk5/a$a;
 
     new-instance p4, Ljava/lang/StringBuilder;
 
     invoke-direct {p4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v0, "android-keystore://"
+    const-string v1, "android-keystore://"
 
-    invoke-virtual {p4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p4
+    move-result-object p2
 
-    const-string v0, "android-keystore://"
+    const-string p4, "android-keystore://"
 
     .line 26
-    invoke-virtual {p4, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-virtual {p2, p4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result p4
 
-    if-eqz v0, :cond_0
+    if-eqz p4, :cond_0
 
     .line 27
-    iput-object p4, p2, Li5/a$b;->c:Ljava/lang/String;
+    iput-object p2, p3, Lk5/a$a;->c:Ljava/lang/String;
 
     .line 28
-    invoke-virtual {p2}, Li5/a$b;->a()Li5/a;
+    invoke-virtual {p3}, Lk5/a$a;->a()Lk5/a;
 
     move-result-object p2
 
@@ -244,55 +244,47 @@
 
     .line 30
     :try_start_1
-    iget-object p4, p2, Li5/a;->b:Ld5/k;
+    iget-object p3, p2, Lk5/a;->b:Lf5/k;
 
-    invoke-virtual {p4}, Ld5/k;->b()Ld5/j;
+    invoke-virtual {p3}, Lf5/k;->b()Lf5/j;
 
-    move-result-object p4
+    move-result-object p3
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     monitor-exit p2
 
     .line 31
-    const-class p2, Ld5/c;
+    const-class p2, Lf5/c;
 
-    invoke-virtual {p3, p2}, Ld5/j;->b(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, p2}, Lf5/j;->b(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p2
 
-    move-object v5, p2
-
-    check-cast v5, Ld5/c;
+    check-cast p2, Lf5/c;
 
     .line 32
-    const-class p2, Ld5/a;
+    const-class p4, Lf5/a;
 
-    invoke-virtual {p4, p2}, Ld5/j;->b(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p3, p4}, Lf5/j;->b(Ljava/lang/Class;)Ljava/lang/Object;
 
-    move-result-object p2
+    move-result-object p3
 
-    move-object v4, p2
-
-    check-cast v4, Ld5/a;
+    check-cast p3, Lf5/a;
 
     .line 33
-    new-instance p2, Ls0/a;
+    new-instance p4, Ls0/a;
 
-    const/4 p3, 0x0
+    const/4 v0, 0x0
 
     .line 34
-    invoke-virtual {p0, p1, p3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, p1, v0}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    move-result-object v3
+    move-result-object p0
 
-    move-object v0, p2
+    invoke-direct {p4, p1, p0, p3, p2}, Ls0/a;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;Lf5/a;Lf5/c;)V
 
-    move-object v1, p1
-
-    invoke-direct/range {v0 .. v5}, Ls0/a;-><init>(Ljava/lang/String;Ljava/lang/String;Landroid/content/SharedPreferences;Ld5/a;Ld5/c;)V
-
-    return-object p2
+    return-object p4
 
     :catchall_0
     move-exception p0
@@ -316,7 +308,7 @@
     move-exception p0
 
     .line 37
-    monitor-exit p2
+    monitor-exit p3
 
     throw p0
 
@@ -333,7 +325,7 @@
 
 
 # virtual methods
-.method public b(Ljava/lang/String;)Ljava/lang/String;
+.method public final b(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
     if-nez p1, :cond_0
@@ -343,7 +335,7 @@
     .line 1
     :cond_0
     :try_start_0
-    iget-object v0, p0, Ls0/a;->e:Ld5/c;
+    iget-object v0, p0, Ls0/a;->e:Lf5/c;
 
     sget-object v1, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
@@ -360,12 +352,12 @@
     move-result-object v1
 
     .line 4
-    invoke-interface {v0, p1, v1}, Ld5/c;->a([B[B)[B
+    invoke-interface {v0, p1, v1}, Lf5/c;->a([B[B)[B
 
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Lp5/i;->b([B)Ljava/lang/String;
+    invoke-static {p1}, Lr5/h;->b([B)Ljava/lang/String;
 
     move-result-object p1
     :try_end_0
@@ -381,11 +373,13 @@
 
     const-string v1, "Could not encrypt key. "
 
+    .line 7
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Ljava/security/GeneralSecurityException;->getMessage()Ljava/lang/String;
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -400,11 +394,102 @@
     throw v0
 .end method
 
-.method public final c(Ljava/lang/String;)Ljava/lang/Object;
+.method public final c(Ljava/lang/String;[B)Landroid/util/Pair;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "[B)",
+            "Landroid/util/Pair<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1}, Ls0/a;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 2
+    iget-object v0, p0, Ls0/a;->d:Lf5/a;
+
+    sget-object v1, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v1
+
+    invoke-interface {v0, p2, v1}, Lf5/a;->a([B[B)[B
+
+    move-result-object p2
+
+    .line 3
+    new-instance v0, Landroid/util/Pair;
+
+    invoke-static {p2}, Lr5/h;->b([B)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-direct {v0, p1, p2}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method public final contains(Ljava/lang/String;)Z
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0, p1}, Ls0/a;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 2
+    invoke-virtual {p0, p1}, Ls0/a;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 3
+    iget-object v0, p0, Ls0/a;->a:Landroid/content/SharedPreferences;
+
+    invoke-interface {v0, p1}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+
+    move-result p1
+
+    return p1
+
+    .line 4
+    :cond_0
+    new-instance v0, Ljava/lang/SecurityException;
+
+    const-string v1, " is a reserved key for the encryption keyset."
+
+    .line 5
+    invoke-static {p1, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 6
+    invoke-direct {v0, p1}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public final d(Ljava/lang/String;)Ljava/lang/Object;
     .locals 8
 
     .line 1
-    invoke-virtual {p0, p1}, Ls0/a;->d(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Ls0/a;->e(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -437,12 +522,12 @@
     const/4 v3, 0x0
 
     .line 4
-    invoke-static {v1, v3}, Lp5/i;->a(Ljava/lang/String;I)[B
+    invoke-static {v1}, Lr5/h;->a(Ljava/lang/String;)[B
 
     move-result-object v1
 
     .line 5
-    iget-object v4, p0, Ls0/a;->d:Ld5/a;
+    iget-object v4, p0, Ls0/a;->d:Lf5/a;
 
     sget-object v5, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
@@ -450,7 +535,7 @@
 
     move-result-object p1
 
-    invoke-interface {v4, v1, p1}, Ld5/a;->b([B[B)[B
+    invoke-interface {v4, v1, p1}, Lf5/a;->b([B[B)[B
 
     move-result-object p1
 
@@ -563,7 +648,7 @@
 
     .line 17
     :goto_0
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->hasRemaining()Z
+    invoke-virtual {p1}, Ljava/nio/Buffer;->hasRemaining()Z
 
     move-result v5
 
@@ -583,7 +668,7 @@
     invoke-virtual {v6, v5}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
     .line 21
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result v7
 
@@ -608,12 +693,12 @@
 
     .line 23
     :cond_7
-    iget p1, v1, Lm/c;->i:I
+    iget p1, v1, Lm/c;->h:I
 
     if-ne p1, v4, :cond_8
 
     .line 24
-    iget-object p1, v1, Lm/c;->h:[Ljava/lang/Object;
+    iget-object p1, v1, Lm/c;->g:[Ljava/lang/Object;
 
     aget-object p1, p1, v3
 
@@ -682,11 +767,13 @@
 
     const-string v1, "Could not decrypt value. "
 
+    .line 32
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Ljava/security/GeneralSecurityException;->getMessage()Ljava/lang/String;
+    .line 33
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -700,16 +787,18 @@
 
     throw v0
 
-    .line 32
+    .line 34
     :cond_c
     new-instance v0, Ljava/lang/SecurityException;
 
     const-string v1, " is a reserved key for the encryption keyset."
 
-    invoke-static {p1, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 35
+    invoke-static {p1, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 36
     invoke-direct {v0, p1}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
 
     goto :goto_3
@@ -721,51 +810,11 @@
     goto :goto_2
 .end method
 
-.method public contains(Ljava/lang/String;)Z
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0, p1}, Ls0/a;->d(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 2
-    invoke-virtual {p0, p1}, Ls0/a;->b(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 3
-    iget-object v0, p0, Ls0/a;->a:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0, p1}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
-
-    move-result p1
-
-    return p1
-
-    .line 4
-    :cond_0
-    new-instance v0, Ljava/lang/SecurityException;
-
-    const-string v1, " is a reserved key for the encryption keyset."
-
-    invoke-static {p1, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public d(Ljava/lang/String;)Z
+.method public final e(Ljava/lang/String;)Z
     .locals 1
 
     const-string v0, "__androidx_security_crypto_encrypted_prefs_key_keyset__"
 
-    .line 1
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -794,10 +843,9 @@
     return p1
 .end method
 
-.method public edit()Landroid/content/SharedPreferences$Editor;
+.method public final edit()Landroid/content/SharedPreferences$Editor;
     .locals 2
 
-    .line 1
     new-instance v0, Ls0/a$a;
 
     iget-object v1, p0, Ls0/a;->a:Landroid/content/SharedPreferences;
@@ -811,7 +859,7 @@
     return-object v0
 .end method
 
-.method public getAll()Ljava/util/Map;
+.method public final getAll()Ljava/util/Map;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -863,7 +911,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    invoke-virtual {p0, v3}, Ls0/a;->d(Ljava/lang/String;)Z
+    invoke-virtual {p0, v3}, Ls0/a;->e(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -878,12 +926,10 @@
 
     .line 5
     :try_start_0
-    iget-object v3, p0, Ls0/a;->e:Ld5/c;
-
-    const/4 v4, 0x0
+    iget-object v3, p0, Ls0/a;->e:Lf5/c;
 
     .line 6
-    invoke-static {v2, v4}, Lp5/i;->a(Ljava/lang/String;I)[B
+    invoke-static {v2}, Lr5/h;->a(Ljava/lang/String;)[B
 
     move-result-object v2
 
@@ -895,7 +941,7 @@
     move-result-object v4
 
     .line 8
-    invoke-interface {v3, v2, v4}, Ld5/c;->b([B[B)[B
+    invoke-interface {v3, v2, v4}, Lf5/c;->b([B[B)[B
 
     move-result-object v2
 
@@ -921,7 +967,7 @@
 
     .line 11
     :cond_1
-    invoke-virtual {p0, v3}, Ls0/a;->c(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Ls0/a;->d(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -938,11 +984,13 @@
 
     const-string v2, "Could not decrypt key. "
 
+    .line 14
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/security/GeneralSecurityException;->getMessage()Ljava/lang/String;
+    .line 15
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -960,11 +1008,11 @@
     return-object v0
 .end method
 
-.method public getBoolean(Ljava/lang/String;Z)Z
+.method public final getBoolean(Ljava/lang/String;Z)Z
     .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Ls0/a;->c(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ls0/a;->d(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -985,11 +1033,11 @@
     return p2
 .end method
 
-.method public getFloat(Ljava/lang/String;F)F
+.method public final getFloat(Ljava/lang/String;F)F
     .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Ls0/a;->c(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ls0/a;->d(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1010,11 +1058,11 @@
     return p2
 .end method
 
-.method public getInt(Ljava/lang/String;I)I
+.method public final getInt(Ljava/lang/String;I)I
     .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Ls0/a;->c(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ls0/a;->d(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1035,11 +1083,11 @@
     return p2
 .end method
 
-.method public getLong(Ljava/lang/String;J)J
+.method public final getLong(Ljava/lang/String;J)J
     .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Ls0/a;->c(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ls0/a;->d(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1060,11 +1108,11 @@
     return-wide p2
 .end method
 
-.method public getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public final getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Ls0/a;->c(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ls0/a;->d(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1083,7 +1131,7 @@
     return-object p2
 .end method
 
-.method public getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
+.method public final getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1099,7 +1147,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Ls0/a;->c(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ls0/a;->d(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1136,22 +1184,20 @@
     return-object p2
 .end method
 
-.method public registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+.method public final registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Ls0/a;->b:Ljava/util/List;
+    iget-object v0, p0, Ls0/a;->b:Ljava/util/ArrayList;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method
 
-.method public unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+.method public final unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Ls0/a;->b:Ljava/util/List;
+    iget-object v0, p0, Ls0/a;->b:Ljava/util/ArrayList;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 

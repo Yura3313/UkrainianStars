@@ -13,10 +13,10 @@
     const/16 p1, 0x33
 
     .line 2
-    invoke-virtual {p0, p1}, Landroid/widget/EditText;->setGravity(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 3
-    invoke-static {p0}, Lkb/a;->b(Landroid/widget/TextView;)V
+    invoke-static {p0}, Lnb/a;->b(Landroid/widget/TextView;)V
 
     return-void
 .end method
@@ -30,36 +30,36 @@
     const/16 p1, 0x33
 
     .line 5
-    invoke-virtual {p0, p1}, Landroid/widget/EditText;->setGravity(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 6
-    invoke-static {p0}, Lkb/a;->b(Landroid/widget/TextView;)V
+    invoke-static {p0}, Lnb/a;->b(Landroid/widget/TextView;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public setError(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
+.method public final setError(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
     .locals 4
 
     if-nez p1, :cond_0
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroid/widget/EditText;->setError(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
+    invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setError(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
 
     return-void
 
     .line 2
     :cond_0
-    invoke-static {}, Lkb/a;->d()Lkb/c;
+    invoke-static {}, Lnb/a;->d()Lnb/c;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
     .line 3
-    invoke-super {p0, p1, p2}, Landroid/widget/EditText;->setError(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
+    invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setError(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
 
     return-void
 
@@ -81,7 +81,7 @@
     invoke-virtual {v1, v0, v2, p1, v3}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 6
-    invoke-super {p0, v1, p2}, Landroid/widget/EditText;->setError(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
+    invoke-super {p0, v1, p2}, Landroid/widget/TextView;->setError(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method

@@ -1,81 +1,88 @@
 .class public final Ljd/f;
-.super Ljava/lang/Object;
-.source "OnboardingInviteFriendsPageFragment.kt"
+.super Lse/h;
+.source "EmbeddedIngameChatDialog.kt"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Lre/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/a<",
+        "Lae/e2;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/View;
+.field public final synthetic f:Ljava/util/List;
 
-.field public final synthetic b:I
-
-.field public final synthetic c:Ljd/c;
+.field public final synthetic g:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;ILjd/c;)V
+.method public constructor <init>(Ljava/util/List;Ljava/util/List;)V
     .locals 0
 
-    iput-object p1, p0, Ljd/f;->a:Landroid/view/View;
+    iput-object p1, p0, Ljd/f;->f:Ljava/util/List;
 
-    iput p2, p0, Ljd/f;->b:I
+    iput-object p2, p0, Ljd/f;->g:Ljava/util/List;
 
-    iput-object p3, p0, Ljd/f;->c:Ljd/c;
+    const/4 p1, 0x0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 0
+.method public final invoke()Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    iget-object p1, p0, Ljd/f;->c:Ljd/c;
+    new-instance v0, Lae/e2;
 
-    sget p2, Lcom/supercell/id/R$id;->friends_list:I
+    iget-object v1, p0, Ljd/f;->f:Ljava/util/List;
 
-    invoke-virtual {p1, p2}, Ljd/c;->e1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroidx/recyclerview/widget/RecyclerView;
-
-    if-eqz p1, :cond_0
+    iget-object v2, p0, Ljd/f;->g:Ljava/util/List;
 
     .line 2
-    iget-object p2, p0, Ljd/f;->a:Landroid/view/View;
+    new-instance v3, Lae/d2;
 
-    const-string p3, "selectAllBackground"
+    if-eqz v1, :cond_0
 
-    invoke-static {p2, p3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object v4, v1
 
-    invoke-virtual {p2}, Landroid/view/View;->getBottom()I
-
-    move-result p2
-
-    iget p3, p0, Ljd/f;->b:I
-
-    add-int/2addr p2, p3
+    goto :goto_0
 
     .line 3
-    invoke-static {p1}, Lvd/g2;->f(Landroid/view/View;)I
+    :cond_0
+    sget-object v4, Lje/l;->f:Lje/l;
 
-    move-result p3
+    :goto_0
+    if-eqz v2, :cond_1
 
-    if-eq p2, p3, :cond_0
+    move-object v5, v2
+
+    goto :goto_1
+
+    :cond_1
+    sget-object v5, Lje/l;->f:Lje/l;
 
     .line 4
-    new-instance p3, Ljd/f$a;
+    :goto_1
+    invoke-direct {v3, v4, v5}, Lae/d2;-><init>(Ljava/util/List;Ljava/util/List;)V
 
-    invoke-direct {p3, p1, p2}, Ljd/f$a;-><init>(Landroidx/recyclerview/widget/RecyclerView;I)V
+    .line 5
+    invoke-static {v3}, Landroidx/recyclerview/widget/l;->a(Landroidx/recyclerview/widget/l$b;)Landroidx/recyclerview/widget/l$c;
 
-    invoke-virtual {p1, p3}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
+    move-result-object v3
 
-    :cond_0
-    return-void
+    invoke-direct {v0, v1, v2, v3}, Lae/e2;-><init>(Ljava/util/List;Ljava/util/List;Landroidx/recyclerview/widget/l$c;)V
+
+    return-object v0
 .end method

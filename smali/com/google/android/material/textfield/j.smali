@@ -1,71 +1,47 @@
-.class public Lcom/google/android/material/textfield/j;
-.super Ljava/lang/Object;
+.class public final Lcom/google/android/material/textfield/j;
+.super Landroid/animation/AnimatorListenerAdapter;
 .source "DropdownMenuEndIconDelegate.java"
-
-# interfaces
-.implements Landroid/view/View$OnTouchListener;
 
 
 # instance fields
-.field public final synthetic g:Landroid/widget/AutoCompleteTextView;
-
-.field public final synthetic h:Lcom/google/android/material/textfield/h;
+.field public final synthetic f:Lcom/google/android/material/textfield/g;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/textfield/h;Landroid/widget/AutoCompleteTextView;)V
+.method public constructor <init>(Lcom/google/android/material/textfield/g;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/j;->h:Lcom/google/android/material/textfield/h;
+    iput-object p1, p0, Lcom/google/android/material/textfield/j;->f:Lcom/google/android/material/textfield/g;
 
-    iput-object p2, p0, Lcom/google/android/material/textfield/j;->g:Landroid/widget/AutoCompleteTextView;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
     .line 1
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
+    iget-object p1, p0, Lcom/google/android/material/textfield/j;->f:Lcom/google/android/material/textfield/g;
 
-    move-result p1
-
-    const/4 p2, 0x0
-
-    const/4 v0, 0x1
-
-    if-ne p1, v0, :cond_1
+    iget-object v0, p1, Lcom/google/android/material/textfield/k;->c:Lcom/google/android/material/internal/CheckableImageButton;
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/textfield/j;->h:Lcom/google/android/material/textfield/h;
+    iget-boolean p1, p1, Lcom/google/android/material/textfield/g;->j:Z
 
     .line 3
-    invoke-virtual {p1}, Lcom/google/android/material/textfield/h;->h()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
+    invoke-virtual {v0, p1}, Lcom/google/android/material/internal/CheckableImageButton;->setChecked(Z)V
 
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/textfield/j;->h:Lcom/google/android/material/textfield/h;
+    iget-object p1, p0, Lcom/google/android/material/textfield/j;->f:Lcom/google/android/material/textfield/g;
 
     .line 5
-    iput-boolean p2, p1, Lcom/google/android/material/textfield/h;->i:Z
+    iget-object p1, p1, Lcom/google/android/material/textfield/g;->p:Landroid/animation/ValueAnimator;
 
     .line 6
-    :cond_0
-    iget-object p1, p0, Lcom/google/android/material/textfield/j;->h:Lcom/google/android/material/textfield/h;
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->start()V
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/j;->g:Landroid/widget/AutoCompleteTextView;
-
-    invoke-static {p1, v0}, Lcom/google/android/material/textfield/h;->f(Lcom/google/android/material/textfield/h;Landroid/widget/AutoCompleteTextView;)V
-
-    :cond_1
-    return p2
+    return-void
 .end method

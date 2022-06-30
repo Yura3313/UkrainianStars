@@ -1,10 +1,9 @@
-.class public interface abstract Lcom/google/crypto/tink/shaded/protobuf/q$c;
+.class public final Lcom/google/crypto/tink/shaded/protobuf/q$c;
 .super Ljava/lang/Object;
-.source "Internal.java"
+.source "LazyField.java"
 
 # interfaces
-.implements Ljava/util/List;
-.implements Ljava/util/RandomAccess;
+.implements Ljava/util/Iterator;
 
 
 # annotations
@@ -13,36 +12,116 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
+    accessFlags = 0x9
     name = "c"
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<E:",
+        "<K:",
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Ljava/util/List<",
-        "TE;>;",
-        "Ljava/util/RandomAccess;"
+        "Ljava/util/Iterator<",
+        "Ljava/util/Map$Entry<",
+        "TK;",
+        "Ljava/lang/Object;",
+        ">;>;"
     }
 .end annotation
 
 
-# virtual methods
-.method public abstract C()Z
-.end method
-
-.method public abstract k()V
-.end method
-
-.method public abstract o(I)Lcom/google/crypto/tink/shaded/protobuf/q$c;
+# instance fields
+.field public f:Ljava/util/Iterator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(I)",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
-            "TE;>;"
+            "Ljava/util/Iterator<",
+            "Ljava/util/Map$Entry<",
+            "TK;",
+            "Ljava/lang/Object;",
+            ">;>;"
         }
     .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/Iterator;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Iterator<",
+            "Ljava/util/Map$Entry<",
+            "TK;",
+            "Ljava/lang/Object;",
+            ">;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/q$c;->f:Ljava/util/Iterator;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final hasNext()Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/q$c;->f:Ljava/util/Iterator;
+
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final next()Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/q$c;->f:Ljava/util/Iterator;
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Map$Entry;
+
+    .line 2
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    instance-of v1, v1, Lcom/google/crypto/tink/shaded/protobuf/q;
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    new-instance v1, Lcom/google/crypto/tink/shaded/protobuf/q$b;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, v0, v2}, Lcom/google/crypto/tink/shaded/protobuf/q$b;-><init>(Ljava/util/Map$Entry;Lcom/google/crypto/tink/shaded/protobuf/q$a;)V
+
+    move-object v0, v1
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public final remove()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/q$c;->f:Ljava/util/Iterator;
+
+    invoke-interface {v0}, Ljava/util/Iterator;->remove()V
+
+    return-void
 .end method

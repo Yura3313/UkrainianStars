@@ -49,7 +49,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +57,6 @@
 .method public static synthetic access$000()Lcom/linecorp/nova/security/StringCipher;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/linecorp/nova/interop/line/auth/EncryptorHolder;->ENCRYPTOR:Lcom/linecorp/nova/security/StringCipher;
 
     return-object v0
@@ -67,7 +65,6 @@
 .method public static getEncryptor()Lcom/linecorp/nova/security/StringCipher;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/linecorp/nova/interop/line/auth/EncryptorHolder;->ENCRYPTOR:Lcom/linecorp/nova/security/StringCipher;
 
     return-object v0
@@ -101,7 +98,7 @@
     invoke-direct {v1, p0}, Lcom/linecorp/nova/interop/line/auth/EncryptorHolder$a;-><init>(Landroid/content/Context;)V
 
     .line 5
-    invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     :cond_0
     return-void

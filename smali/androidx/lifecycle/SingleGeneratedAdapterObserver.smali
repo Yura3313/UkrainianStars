@@ -25,24 +25,18 @@
 
 
 # virtual methods
-.method public a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
-    .locals 3
+.method public final a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->a:Landroidx/lifecycle/e;
+    iget-object p1, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->a:Landroidx/lifecycle/e;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-interface {v0, p1, p2, v1, v2}, Landroidx/lifecycle/e;->a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;ZLandroidx/lifecycle/n;)V
+    invoke-interface {p1}, Landroidx/lifecycle/e;->a()V
 
     .line 2
-    iget-object v0, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->a:Landroidx/lifecycle/e;
+    iget-object p1, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->a:Landroidx/lifecycle/e;
 
-    const/4 v1, 0x1
-
-    invoke-interface {v0, p1, p2, v1, v2}, Landroidx/lifecycle/e;->a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;ZLandroidx/lifecycle/n;)V
+    invoke-interface {p1}, Landroidx/lifecycle/e;->a()V
 
     return-void
 .end method

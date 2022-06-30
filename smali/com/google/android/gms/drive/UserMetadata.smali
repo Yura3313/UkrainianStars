@@ -18,25 +18,24 @@
 
 
 # instance fields
+.field public final f:Ljava/lang/String;
+
 .field public final g:Ljava/lang/String;
 
 .field public final h:Ljava/lang/String;
 
-.field public final i:Ljava/lang/String;
+.field public final i:Z
 
-.field public final j:Z
-
-.field public final k:Ljava/lang/String;
+.field public final j:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Ln2/h;
+    new-instance v0, Lo2/h;
 
-    invoke-direct {v0}, Ln2/h;-><init>()V
+    invoke-direct {v0}, Lo2/h;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/UserMetadata;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -50,26 +49,26 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/UserMetadata;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/drive/UserMetadata;->f:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/drive/UserMetadata;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/drive/UserMetadata;->g:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/drive/UserMetadata;->i:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/drive/UserMetadata;->h:Ljava/lang/String;
 
     .line 5
-    iput-boolean p4, p0, Lcom/google/android/gms/drive/UserMetadata;->j:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/drive/UserMetadata;->i:Z
 
     .line 6
-    iput-object p5, p0, Lcom/google/android/gms/drive/UserMetadata;->k:Ljava/lang/String;
+    iput-object p5, p0, Lcom/google/android/gms/drive/UserMetadata;->j:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
     const/4 v0, 0x5
@@ -77,25 +76,25 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/drive/UserMetadata;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/drive/UserMetadata;->f:Ljava/lang/String;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/drive/UserMetadata;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/drive/UserMetadata;->g:Ljava/lang/String;
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/drive/UserMetadata;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/drive/UserMetadata;->h:Ljava/lang/String;
 
     const/4 v2, 0x2
 
     aput-object v1, v0, v2
 
-    iget-boolean v1, p0, Lcom/google/android/gms/drive/UserMetadata;->j:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/drive/UserMetadata;->i:Z
 
     .line 2
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -106,7 +105,7 @@
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/drive/UserMetadata;->k:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/drive/UserMetadata;->j:Ljava/lang/String;
 
     const/4 v2, 0x4
 
@@ -122,59 +121,59 @@
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x2
-
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/UserMetadata;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/UserMetadata;->f:Ljava/lang/String;
+
+    const/4 v1, 0x2
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    const/4 v0, 0x3
+    invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/drive/UserMetadata;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/UserMetadata;->g:Ljava/lang/String;
 
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    const/4 v1, 0x3
+
+    invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/gms/drive/UserMetadata;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/UserMetadata;->h:Ljava/lang/String;
 
     const/4 v1, 0x4
 
-    invoke-static {p1, v1, v0, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    const/4 v0, 0x5
+    invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 5
-    iget-boolean v3, p0, Lcom/google/android/gms/drive/UserMetadata;->j:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/drive/UserMetadata;->i:Z
+
+    const/4 v3, 0x5
 
     .line 6
-    invoke-static {p1, v0, v1}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v3, v1}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 7
-    invoke-virtual {p1, v3}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/4 v0, 0x6
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget-object v1, p0, Lcom/google/android/gms/drive/UserMetadata;->k:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/UserMetadata;->j:Ljava/lang/String;
 
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    const/4 v1, 0x6
+
+    invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 9
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/game/GameFragment$c;
-.super Lle/j;
+.super Lse/h;
 .source "GameFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
@@ -18,66 +18,59 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
+        "Lse/h;",
+        "Lre/l<",
         "Ljava/util/List<",
         "+",
-        "Lvc/k;",
+        "Lad/k;",
         ">;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/game/GameFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$c;->g:Lcom/supercell/id/ui/game/GameFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$c;->f:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
     check-cast p1, Ljava/util/List;
 
-    if-eqz p1, :cond_0
+    const-string v0, "it"
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$c;->g:Lcom/supercell/id/ui/game/GameFragment;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iput-object p1, v0, Lcom/supercell/id/ui/game/GameFragment;->r0:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$c;->f:Lcom/supercell/id/ui/game/GameFragment;
 
     .line 4
-    invoke-virtual {v0}, Lcom/supercell/id/ui/game/GameFragment;->v1()V
+    iput-object p1, v0, Lcom/supercell/id/ui/game/GameFragment;->p0:Ljava/util/List;
 
     .line 5
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_0
-    const-string p1, "it"
+    invoke-virtual {v0}, Lcom/supercell/id/ui/game/GameFragment;->m1()V
 
     .line 6
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    const/4 p1, 0x0
-
-    throw p1
+    return-object p1
 .end method

@@ -1,4 +1,4 @@
-.class public Lp/a;
+.class public final Lp/a;
 .super Ljava/lang/Object;
 .source "ArrayLinkedVariables.java"
 
@@ -102,31 +102,31 @@
     :cond_0
     iget v1, p0, Lp/a;->h:I
 
-    const/4 v2, 0x0
+    const/4 v2, -0x1
 
-    const/4 v3, -0x1
+    const/4 v3, 0x0
 
-    if-ne v1, v3, :cond_2
+    if-ne v1, v2, :cond_2
 
     .line 3
-    iput v2, p0, Lp/a;->h:I
+    iput v3, p0, Lp/a;->h:I
 
     .line 4
     iget-object v1, p0, Lp/a;->g:[F
 
-    aput p2, v1, v2
+    aput p2, v1, v3
 
     .line 5
     iget-object p2, p0, Lp/a;->e:[I
 
     iget v1, p1, Lp/h;->b:I
 
-    aput v1, p2, v2
+    aput v1, p2, v3
 
     .line 6
     iget-object p2, p0, Lp/a;->f:[I
 
-    aput v3, p2, v2
+    aput v2, p2, v3
 
     .line 7
     iget p2, p1, Lp/h;->l:I
@@ -185,7 +185,7 @@
     const/4 v5, -0x1
 
     :goto_0
-    if-eq v1, v3, :cond_5
+    if-eq v1, v2, :cond_5
 
     .line 15
     iget v6, p0, Lp/a;->a:I
@@ -242,7 +242,7 @@
 
     aget v6, v4, v1
 
-    if-ne v6, v3, :cond_6
+    if-ne v6, v2, :cond_6
 
     goto :goto_1
 
@@ -283,7 +283,7 @@
     .line 27
     aget v6, v6, v4
 
-    if-ne v6, v3, :cond_8
+    if-ne v6, v2, :cond_8
 
     move v1, v4
 
@@ -314,58 +314,58 @@
     iput v4, p0, Lp/a;->d:I
 
     .line 31
-    iput-boolean v2, p0, Lp/a;->j:Z
+    iput-boolean v3, p0, Lp/a;->j:Z
 
-    add-int/lit8 v2, v1, -0x1
+    add-int/lit8 v3, v1, -0x1
 
     .line 32
-    iput v2, p0, Lp/a;->i:I
+    iput v3, p0, Lp/a;->i:I
 
     .line 33
-    iget-object v2, p0, Lp/a;->g:[F
+    iget-object v3, p0, Lp/a;->g:[F
 
-    invoke-static {v2, v4}, Ljava/util/Arrays;->copyOf([FI)[F
+    invoke-static {v3, v4}, Ljava/util/Arrays;->copyOf([FI)[F
 
-    move-result-object v2
+    move-result-object v3
 
-    iput-object v2, p0, Lp/a;->g:[F
+    iput-object v3, p0, Lp/a;->g:[F
 
     .line 34
-    iget-object v2, p0, Lp/a;->e:[I
+    iget-object v3, p0, Lp/a;->e:[I
 
     iget v4, p0, Lp/a;->d:I
 
-    invoke-static {v2, v4}, Ljava/util/Arrays;->copyOf([II)[I
+    invoke-static {v3, v4}, Ljava/util/Arrays;->copyOf([II)[I
 
-    move-result-object v2
+    move-result-object v3
 
-    iput-object v2, p0, Lp/a;->e:[I
+    iput-object v3, p0, Lp/a;->e:[I
 
     .line 35
-    iget-object v2, p0, Lp/a;->f:[I
+    iget-object v3, p0, Lp/a;->f:[I
 
     iget v4, p0, Lp/a;->d:I
 
-    invoke-static {v2, v4}, Ljava/util/Arrays;->copyOf([II)[I
+    invoke-static {v3, v4}, Ljava/util/Arrays;->copyOf([II)[I
 
-    move-result-object v2
+    move-result-object v3
 
-    iput-object v2, p0, Lp/a;->f:[I
+    iput-object v3, p0, Lp/a;->f:[I
 
     .line 36
     :cond_a
-    iget-object v2, p0, Lp/a;->e:[I
+    iget-object v3, p0, Lp/a;->e:[I
 
     iget v4, p1, Lp/h;->b:I
 
-    aput v4, v2, v1
+    aput v4, v3, v1
 
     .line 37
-    iget-object v2, p0, Lp/a;->g:[F
+    iget-object v3, p0, Lp/a;->g:[F
 
-    aput p2, v2, v1
+    aput p2, v3, v1
 
-    if-eq v5, v3, :cond_b
+    if-eq v5, v2, :cond_b
 
     .line 38
     iget-object p2, p0, Lp/a;->f:[I
@@ -455,7 +455,7 @@
     return-void
 .end method
 
-.method public b(Lp/h;FZ)V
+.method public final b(Lp/h;FZ)V
     .locals 11
 
     const v0, 0x3a83126f
@@ -900,10 +900,9 @@
     return-void
 .end method
 
-.method public c()I
+.method public final c()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lp/a;->a:I
 
     return v0
@@ -932,9 +931,7 @@
     .line 3
     iget-object v3, p0, Lp/a;->c:Lp/c;
 
-    iget-object v3, v3, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast v3, [Lp/h;
+    iget-object v3, v3, Lp/c;->c:[Lp/h;
 
     iget-object v4, p0, Lp/a;->e:[I
 
@@ -975,7 +972,7 @@
     return-void
 .end method
 
-.method public d(I)Lp/h;
+.method public final d(I)Lp/h;
     .locals 3
 
     .line 1
@@ -998,9 +995,7 @@
     .line 3
     iget-object p1, p0, Lp/a;->c:Lp/c;
 
-    iget-object p1, p1, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast p1, [Lp/h;
+    iget-object p1, p1, Lp/c;->c:[Lp/h;
 
     iget-object v1, p0, Lp/a;->e:[I
 
@@ -1026,7 +1021,7 @@
     return-object p1
 .end method
 
-.method public e()V
+.method public final e()V
     .locals 5
 
     .line 1
@@ -1068,7 +1063,7 @@
     return-void
 .end method
 
-.method public f(I)F
+.method public final f(I)F
     .locals 3
 
     .line 1
@@ -1111,7 +1106,7 @@
     return p1
 .end method
 
-.method public g(Lp/b;Z)F
+.method public final g(Lp/b;Z)F
     .locals 5
 
     .line 1
@@ -1285,25 +1280,25 @@
     return v1
 .end method
 
-.method public i(Lp/h;)Z
+.method public final i(Lp/h;)Z
     .locals 6
 
     .line 1
     iget v0, p0, Lp/a;->h:I
 
-    const/4 v1, -0x1
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, -0x1
 
-    if-ne v0, v1, :cond_0
+    if-ne v0, v2, :cond_0
 
-    return v2
+    return v1
 
     :cond_0
     const/4 v3, 0x0
 
     :goto_0
-    if-eq v0, v1, :cond_2
+    if-eq v0, v2, :cond_2
 
     .line 2
     iget v4, p0, Lp/a;->a:I
@@ -1334,7 +1329,7 @@
     goto :goto_0
 
     :cond_2
-    return v2
+    return v1
 .end method
 
 .method public final j(Lp/h;)F
@@ -1387,7 +1382,7 @@
     return p1
 .end method
 
-.method public k(F)V
+.method public final k(F)V
     .locals 4
 
     .line 1
@@ -1427,7 +1422,7 @@
     return-void
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 5
 
     .line 1
@@ -1450,7 +1445,7 @@
     const-string v3, " -> "
 
     .line 3
-    invoke-static {v1, v3}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v3}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1459,6 +1454,7 @@
 
     move-result-object v1
 
+    .line 5
     iget-object v3, p0, Lp/a;->g:[F
 
     aget v3, v3, v0
@@ -1473,16 +1469,15 @@
 
     move-result-object v1
 
-    .line 5
+    .line 6
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 7
     iget-object v3, p0, Lp/a;->c:Lp/c;
 
-    iget-object v3, v3, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast v3, [Lp/h;
+    iget-object v3, v3, Lp/c;->c:[Lp/h;
 
     iget-object v4, p0, Lp/a;->e:[I
 
@@ -1496,7 +1491,7 @@
 
     move-result-object v1
 
-    .line 6
+    .line 8
     iget-object v3, p0, Lp/a;->f:[I
 
     aget v0, v3, v0

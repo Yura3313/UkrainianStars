@@ -1,177 +1,41 @@
-.class public Lea/a;
+.class public final Lea/a;
 .super Ljava/lang/Object;
-.source "AppInfoModel.java"
+.source "LegacyProfile.java"
 
 
 # instance fields
-.field public a:Ljava/lang/Boolean;
+.field public final a:Ljava/lang/String;
 
-.field public b:Ljava/lang/Integer;
+.field public final b:Ljava/lang/String;
 
-.field public c:Ljava/lang/String;
+.field public final c:Ljava/lang/String;
 
-.field public d:Lia/c;
+.field public final d:Ljava/lang/String;
+
+.field public final e:Lda/a;
 
 
 # direct methods
-.method public constructor <init>(Lia/c;)V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lda/a;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lea/a;->d:Lia/c;
+    iput-object p1, p0, Lea/a;->a:Ljava/lang/String;
 
     .line 3
-    check-cast p1, Lia/a;
-
-    const-string v0, "apiKey"
-
-    invoke-virtual {p1, v0}, Lia/a;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
+    iput-object p2, p0, Lea/a;->b:Ljava/lang/String;
 
     .line 4
-    iget-object p1, p0, Lea/a;->d:Lia/c;
-
-    const-string v0, "domainName"
-
-    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
-
-    if-eqz p1, :cond_0
+    iput-object p3, p0, Lea/a;->c:Ljava/lang/String;
 
     .line 5
-    invoke-static {p1}, Lp5/c0;->h(Ljava/lang/String;)Z
+    iput-object p4, p0, Lea/a;->d:Ljava/lang/String;
 
     .line 6
-    :cond_0
-    iget-object p1, p0, Lea/a;->d:Lia/c;
-
-    const-string v0, "platformId"
-
-    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
-
-    if-eqz p1, :cond_1
-
-    .line 7
-    invoke-static {p1}, Lcom/helpshift/util/y;->j(Ljava/lang/String;)Z
-
-    .line 8
-    :cond_1
-    iget-object p1, p0, Lea/a;->d:Lia/c;
-
-    const-string v0, "font"
-
-    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
-
-    iput-object p1, p0, Lea/a;->c:Ljava/lang/String;
-
-    .line 9
-    iget-object p1, p0, Lea/a;->d:Lia/c;
-
-    const-string v0, "notificationSound"
-
-    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Integer;
-
-    .line 10
-    iget-object p1, p0, Lea/a;->d:Lia/c;
-
-    const-string v0, "notificationIcon"
-
-    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Integer;
-
-    .line 11
-    iget-object p1, p0, Lea/a;->d:Lia/c;
-
-    const-string v0, "largeNotificationIcon"
-
-    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Integer;
-
-    .line 12
-    iget-object p1, p0, Lea/a;->d:Lia/c;
-
-    const-string v0, "disableHelpshiftBranding"
-
-    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Boolean;
-
-    .line 13
-    iget-object p1, p0, Lea/a;->d:Lia/c;
-
-    const-string v0, "enableInboxPolling"
-
-    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Boolean;
-
-    .line 14
-    iget-object p1, p0, Lea/a;->d:Lia/c;
-
-    const-string v0, "muteNotifications"
-
-    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Boolean;
-
-    .line 15
-    iget-object p1, p0, Lea/a;->d:Lia/c;
-
-    const-string v0, "disableAnimations"
-
-    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Boolean;
-
-    iput-object p1, p0, Lea/a;->a:Ljava/lang/Boolean;
-
-    .line 16
-    iget-object p1, p0, Lea/a;->d:Lia/c;
-
-    const-string v0, "screenOrientation"
-
-    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Integer;
-
-    iput-object p1, p0, Lea/a;->b:Ljava/lang/Integer;
+    iput-object p5, p0, Lea/a;->e:Lda/a;
 
     return-void
 .end method

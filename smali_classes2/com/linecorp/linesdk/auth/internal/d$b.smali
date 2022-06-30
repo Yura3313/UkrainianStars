@@ -23,7 +23,7 @@
 
 
 # static fields
-.field public static final synthetic g:[I
+.field public static final synthetic f:[I
 
 
 # direct methods
@@ -50,8 +50,7 @@
 
     aput v0, v1, v3
 
-    .line 1
-    sput-object v1, Lcom/linecorp/linesdk/auth/internal/d$b;->g:[I
+    sput-object v1, Lcom/linecorp/linesdk/auth/internal/d$b;->f:[I
 
     return-void
 .end method

@@ -138,7 +138,6 @@
 
     const-string v0, ".envelope"
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result p1
@@ -149,7 +148,6 @@
 .method public bridge synthetic processDirectory(Ljava/io/File;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/DirectoryProcessor;->processDirectory(Ljava/io/File;)V
 
     return-void

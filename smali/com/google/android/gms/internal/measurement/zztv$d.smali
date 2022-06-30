@@ -34,7 +34,7 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/measurement/zztv;-><init>(Ln1/a;)V
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/measurement/zztv;-><init>(Lk/c;)V
 
     .line 2
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->d:Ljava/nio/ByteBuffer;
@@ -53,11 +53,11 @@
     iput-object v0, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->e:Ljava/nio/ByteBuffer;
 
     .line 4
-    sget-object v0, Lu3/b5;->d:Lu3/b5$d;
+    sget-object v0, Lv3/z4;->d:Lv3/z4$d;
 
-    sget-wide v1, Lu3/b5;->h:J
+    sget-wide v1, Lv3/z4;->h:J
 
-    invoke-virtual {v0, p1, v1, v2}, Lu3/b5$d;->j(Ljava/lang/Object;J)J
+    invoke-virtual {v0, p1, v1, v2}, Lv3/z4$d;->j(Ljava/lang/Object;J)J
 
     move-result-wide v0
 
@@ -65,7 +65,7 @@
     iput-wide v0, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->f:J
 
     .line 6
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result v2
 
@@ -74,7 +74,7 @@
     add-long/2addr v2, v0
 
     .line 7
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->limit()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->limit()I
 
     move-result p1
 
@@ -132,14 +132,11 @@
 
     int-to-byte p1, p1
 
-    .line 3
-    sget-object v2, Lu3/b5;->d:Lu3/b5$d;
-
-    invoke-virtual {v2, v0, v1, p1}, Lu3/b5$d;->a(JB)V
+    invoke-static {v0, v1, p1}, Lv3/z4;->b(JB)V
 
     return-void
 
-    .line 4
+    .line 3
     :cond_0
     iget-wide v0, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
 
@@ -153,16 +150,13 @@
 
     int-to-byte v2, v2
 
-    .line 5
-    sget-object v3, Lu3/b5;->d:Lu3/b5$d;
-
-    invoke-virtual {v3, v0, v1, v2}, Lu3/b5$d;->a(JB)V
+    invoke-static {v0, v1, v2}, Lv3/z4;->b(JB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
     goto :goto_0
 
-    .line 6
+    .line 4
     :cond_1
     :goto_1
     iget-wide v0, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
@@ -179,22 +173,19 @@
 
     add-long/2addr v4, v0
 
-    .line 7
+    .line 5
     iput-wide v4, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
 
     int-to-byte p1, p1
 
-    .line 8
-    sget-object v2, Lu3/b5;->d:Lu3/b5$d;
-
-    invoke-virtual {v2, v0, v1, p1}, Lu3/b5$d;->a(JB)V
+    invoke-static {v0, v1, p1}, Lv3/z4;->b(JB)V
 
     return-void
 
     :cond_2
     add-long v2, v0, v4
 
-    .line 9
+    .line 6
     iput-wide v2, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
 
     and-int/lit8 v2, p1, 0x7f
@@ -203,16 +194,13 @@
 
     int-to-byte v2, v2
 
-    .line 10
-    sget-object v3, Lu3/b5;->d:Lu3/b5$d;
-
-    invoke-virtual {v3, v0, v1, v2}, Lu3/b5$d;->a(JB)V
+    invoke-static {v0, v1, v2}, Lv3/z4;->b(JB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
     goto :goto_1
 
-    .line 11
+    .line 7
     :cond_3
     new-instance p1, Lcom/google/android/gms/internal/measurement/zztv$zzc;
 
@@ -224,7 +212,7 @@
 
     iget-wide v2, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
 
-    .line 12
+    .line 8
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v2
@@ -301,7 +289,7 @@
     return-void
 .end method
 
-.method public final N(B)V
+.method public final M(B)V
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -325,14 +313,11 @@
     .line 2
     iput-wide v2, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
 
-    .line 3
-    sget-object v2, Lu3/b5;->d:Lu3/b5$d;
-
-    invoke-virtual {v2, v0, v1, p1}, Lu3/b5$d;->a(JB)V
+    invoke-static {v0, v1, p1}, Lv3/z4;->b(JB)V
 
     return-void
 
-    .line 4
+    .line 3
     :cond_0
     new-instance p1, Lcom/google/android/gms/internal/measurement/zztv$zzc;
 
@@ -344,7 +329,7 @@
 
     iget-wide v2, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
 
-    .line 5
+    .line 4
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v2
@@ -380,7 +365,7 @@
     throw p1
 .end method
 
-.method public final O(II)V
+.method public final N(II)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -392,26 +377,23 @@
 
     or-int/2addr p1, p2
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
 
     return-void
 .end method
 
-.method public final P(IJ)V
-    .locals 0
+.method public final O(IJ)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x1
+    const/4 v0, 0x1
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     .line 2
     invoke-virtual {p0, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv$d;->p(J)V
@@ -419,52 +401,37 @@
     return-void
 .end method
 
-.method public final R(II)V
-    .locals 0
+.method public final Q(II)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x0
+    const/4 v0, 0x0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
-
-    if-ltz p2, :cond_0
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     .line 2
-    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
+    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->s(I)V
 
-    goto :goto_0
-
-    :cond_0
-    int-to-long p1, p2
-
-    .line 3
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->o(J)V
-
-    :goto_0
     return-void
 .end method
 
-.method public final T(II)V
-    .locals 0
+.method public final S(II)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x0
+    const/4 v0, 0x0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     .line 2
     invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
@@ -472,20 +439,18 @@
     return-void
 .end method
 
-.method public final W(II)V
-    .locals 0
+.method public final V(II)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x5
+    const/4 v0, 0x5
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     .line 2
     invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->D(I)V
@@ -501,25 +466,72 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv$d;->h([BII)V
 
     return-void
 .end method
 
-.method public final f0()I
-    .locals 4
+.method public final e0(Lv3/x1;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 1
-    iget-wide v0, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->g:J
+    invoke-virtual {p1}, Lv3/x1;->size()I
 
-    iget-wide v2, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
+    move-result v0
 
-    sub-long/2addr v0, v2
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
 
-    long-to-int v1, v0
+    .line 2
+    invoke-virtual {p1, p0}, Lv3/x1;->e(Lv3/w1;)V
 
-    return v1
+    return-void
+.end method
+
+.method public final f0(Lv3/t3;Lv3/i4;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    move-object v0, p1
+
+    check-cast v0, Lv3/q1;
+
+    .line 2
+    invoke-virtual {v0}, Lv3/q1;->g()I
+
+    move-result v1
+
+    const/4 v2, -0x1
+
+    if-ne v1, v2, :cond_0
+
+    .line 3
+    invoke-interface {p2, v0}, Lv3/i4;->g(Ljava/lang/Object;)I
+
+    move-result v1
+
+    .line 4
+    invoke-virtual {v0, v1}, Lv3/q1;->f(I)V
+
+    .line 5
+    :cond_0
+    invoke-virtual {p0, v1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
+
+    .line 6
+    iget-object v0, p0, Lcom/google/android/gms/internal/measurement/zztv;->a:Lv3/e2;
+
+    invoke-interface {p2, p1, v0}, Lv3/i4;->h(Ljava/lang/Object;Lv3/m5;)V
+
+    return-void
 .end method
 
 .method public final g()V
@@ -543,7 +555,7 @@
     return-void
 .end method
 
-.method public final g0(Lu3/x1;)V
+.method public final g0(Lv3/t3;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -552,14 +564,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lu3/x1;->size()I
+    invoke-interface {p1}, Lv3/t3;->c()I
 
     move-result v0
 
     invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
 
     .line 2
-    invoke-virtual {p1, p0}, Lu3/x1;->d(Lu3/w1;)V
+    invoke-interface {p1, p0}, Lv3/t3;->b(Lcom/google/android/gms/internal/measurement/zztv;)V
 
     return-void
 .end method
@@ -603,13 +615,13 @@
     int-to-long v4, p2
 
     .line 2
-    sget-object v2, Lu3/b5;->d:Lu3/b5$d;
+    sget-object v2, Lv3/z4;->d:Lv3/z4$d;
 
     move-object v3, p1
 
     move-wide v8, v10
 
-    invoke-virtual/range {v2 .. v9}, Lu3/b5$d;->f([BJJJ)V
+    invoke-virtual/range {v2 .. v9}, Lv3/z4$d;->f([BJJJ)V
 
     .line 3
     iget-wide p1, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
@@ -681,91 +693,7 @@
     throw p1
 .end method
 
-.method public final h0(Lu3/u3;Lu3/j4;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    move-object v0, p1
-
-    check-cast v0, Lu3/q1;
-
-    .line 2
-    invoke-virtual {v0}, Lu3/q1;->g()I
-
-    move-result v1
-
-    const/4 v2, -0x1
-
-    if-ne v1, v2, :cond_0
-
-    .line 3
-    invoke-interface {p2, v0}, Lu3/j4;->f(Ljava/lang/Object;)I
-
-    move-result v1
-
-    .line 4
-    invoke-virtual {v0, v1}, Lu3/q1;->f(I)V
-
-    .line 5
-    :cond_0
-    invoke-virtual {p0, v1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
-
-    .line 6
-    iget-object v0, p0, Lcom/google/android/gms/internal/measurement/zztv;->a:Lu3/e2;
-
-    invoke-interface {p2, p1, v0}, Lu3/j4;->h(Ljava/lang/Object;Lu3/o5;)V
-
-    return-void
-.end method
-
-.method public final i0(Lu3/u3;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-interface {p1}, Lu3/u3;->c()I
-
-    move-result v0
-
-    invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
-
-    .line 2
-    invoke-interface {p1, p0}, Lu3/u3;->b(Lcom/google/android/gms/internal/measurement/zztv;)V
-
-    return-void
-.end method
-
-.method public final j(IJ)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x0
-
-    .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
-
-    .line 2
-    invoke-virtual {p0, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv$d;->o(J)V
-
-    return-void
-.end method
-
-.method public final j0(Ljava/lang/String;)V
+.method public final h0(Ljava/lang/String;)V
     .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -820,12 +748,12 @@
     .line 8
     iget-object v3, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->e:Ljava/nio/ByteBuffer;
 
-    invoke-static {p1, v3}, Lu3/d5;->c(Ljava/lang/CharSequence;Ljava/nio/ByteBuffer;)V
+    invoke-static {p1, v3}, Lv3/b5;->c(Ljava/lang/CharSequence;Ljava/nio/ByteBuffer;)V
 
     .line 9
     iget-object v3, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->e:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v3}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v3}, Ljava/nio/Buffer;->position()I
 
     move-result v3
 
@@ -847,7 +775,7 @@
 
     .line 12
     :cond_0
-    invoke-static {p1}, Lu3/d5;->a(Ljava/lang/CharSequence;)I
+    invoke-static {p1}, Lv3/b5;->a(Ljava/lang/CharSequence;)I
 
     move-result v2
 
@@ -873,7 +801,7 @@
     .line 18
     iget-object v3, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->e:Ljava/nio/ByteBuffer;
 
-    invoke-static {p1, v3}, Lu3/d5;->c(Ljava/lang/CharSequence;Ljava/nio/ByteBuffer;)V
+    invoke-static {p1, v3}, Lv3/b5;->c(Ljava/lang/CharSequence;Ljava/nio/ByteBuffer;)V
 
     .line 19
     iget-wide v3, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
@@ -884,7 +812,7 @@
 
     iput-wide v3, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
     :try_end_0
-    .catch Lu3/g5; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Lv3/e5; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -930,70 +858,83 @@
     invoke-virtual {v3, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     .line 26
-    invoke-virtual {p0, p1, v2}, Lcom/google/android/gms/internal/measurement/zztv;->n(Ljava/lang/String;Lu3/g5;)V
+    invoke-virtual {p0, p1, v2}, Lcom/google/android/gms/internal/measurement/zztv;->n(Ljava/lang/String;Lv3/e5;)V
 
     return-void
 .end method
 
-.method public final k(ILu3/x1;)V
-    .locals 0
+.method public final j(IJ)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x2
+    const/4 v0, 0x0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     .line 2
-    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->g0(Lu3/x1;)V
+    invoke-virtual {p0, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv$d;->o(J)V
 
     return-void
 .end method
 
-.method public final l(ILu3/u3;)V
-    .locals 0
+.method public final k(ILv3/x1;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x2
+    const/4 v0, 0x2
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     .line 2
-    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->i0(Lu3/u3;)V
+    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->e0(Lv3/x1;)V
 
     return-void
 .end method
 
-.method public final m(ILu3/u3;Lu3/j4;)V
-    .locals 0
+.method public final l(ILv3/t3;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x2
+    const/4 v0, 0x2
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     .line 2
-    invoke-virtual {p0, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv$d;->h0(Lu3/u3;Lu3/j4;)V
+    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->g0(Lv3/t3;)V
+
+    return-void
+.end method
+
+.method public final m(ILv3/t3;Lv3/i4;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v0, 0x2
+
+    .line 1
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
+
+    .line 2
+    invoke-virtual {p0, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv$d;->f0(Lv3/t3;Lv3/i4;)V
 
     return-void
 .end method
@@ -1041,14 +982,11 @@
 
     int-to-byte p1, p2
 
-    .line 3
-    sget-object p2, Lu3/b5;->d:Lu3/b5$d;
-
-    invoke-virtual {p2, v0, v1, p1}, Lu3/b5$d;->a(JB)V
+    invoke-static {v0, v1, p1}, Lv3/z4;->b(JB)V
 
     return-void
 
-    .line 4
+    .line 3
     :cond_0
     iget-wide v0, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
 
@@ -1064,16 +1002,13 @@
 
     int-to-byte v2, v2
 
-    .line 5
-    sget-object v3, Lu3/b5;->d:Lu3/b5$d;
-
-    invoke-virtual {v3, v0, v1, v2}, Lu3/b5$d;->a(JB)V
+    invoke-static {v0, v1, v2}, Lv3/z4;->b(JB)V
 
     ushr-long/2addr p1, v4
 
     goto :goto_0
 
-    .line 6
+    .line 4
     :cond_1
     :goto_1
     iget-wide v0, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
@@ -1092,24 +1027,21 @@
 
     add-long/2addr v9, v0
 
-    .line 7
+    .line 5
     iput-wide v9, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
 
     long-to-int p2, p1
 
     int-to-byte p1, p2
 
-    .line 8
-    sget-object p2, Lu3/b5;->d:Lu3/b5$d;
-
-    invoke-virtual {p2, v0, v1, p1}, Lu3/b5$d;->a(JB)V
+    invoke-static {v0, v1, p1}, Lv3/z4;->b(JB)V
 
     return-void
 
     :cond_2
     add-long v2, v0, v9
 
-    .line 9
+    .line 6
     iput-wide v2, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
 
     long-to-int v2, p1
@@ -1120,16 +1052,13 @@
 
     int-to-byte v2, v2
 
-    .line 10
-    sget-object v3, Lu3/b5;->d:Lu3/b5$d;
-
-    invoke-virtual {v3, v0, v1, v2}, Lu3/b5$d;->a(JB)V
+    invoke-static {v0, v1, v2}, Lv3/z4;->b(JB)V
 
     ushr-long/2addr p1, v4
 
     goto :goto_1
 
-    .line 11
+    .line 7
     :cond_3
     new-instance p1, Lcom/google/android/gms/internal/measurement/zztv$zzc;
 
@@ -1141,7 +1070,7 @@
 
     iget-wide v1, p0, Lcom/google/android/gms/internal/measurement/zztv$d;->i:J
 
-    .line 12
+    .line 8
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v1
@@ -1243,27 +1172,25 @@
 .end method
 
 .method public final w(ILjava/lang/String;)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x2
+    const/4 v0, 0x2
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     .line 2
-    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->j0(Ljava/lang/String;)V
+    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->h0(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public final x(ILu3/x1;)V
+.method public final x(ILv3/x1;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1276,25 +1203,25 @@
     const/4 v1, 0x3
 
     .line 1
-    invoke-virtual {p0, v0, v1}, Lcom/google/android/gms/internal/measurement/zztv$d;->O(II)V
+    invoke-virtual {p0, v0, v1}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     const/4 v2, 0x2
 
     .line 2
-    invoke-virtual {p0, v2, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->T(II)V
+    invoke-virtual {p0, v2, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->S(II)V
 
     .line 3
-    invoke-virtual {p0, v1, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->k(ILu3/x1;)V
+    invoke-virtual {p0, v1, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->k(ILv3/x1;)V
 
     const/4 p1, 0x4
 
     .line 4
-    invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->O(II)V
+    invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     return-void
 .end method
 
-.method public final y(ILu3/u3;)V
+.method public final y(ILv3/t3;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1307,43 +1234,41 @@
     const/4 v1, 0x3
 
     .line 1
-    invoke-virtual {p0, v0, v1}, Lcom/google/android/gms/internal/measurement/zztv$d;->O(II)V
+    invoke-virtual {p0, v0, v1}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     const/4 v2, 0x2
 
     .line 2
-    invoke-virtual {p0, v2, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->T(II)V
+    invoke-virtual {p0, v2, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->S(II)V
 
     .line 3
-    invoke-virtual {p0, v1, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->l(ILu3/u3;)V
+    invoke-virtual {p0, v1, p2}, Lcom/google/android/gms/internal/measurement/zztv$d;->l(ILv3/t3;)V
 
     const/4 p1, 0x4
 
     .line 4
-    invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->O(II)V
+    invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     return-void
 .end method
 
 .method public final z(IZ)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x0
+    const/4 v0, 0x0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->B(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(II)V
 
     int-to-byte p1, p2
 
     .line 2
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->N(B)V
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zztv$d;->M(B)V
 
     return-void
 .end method

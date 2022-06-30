@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/snackbar/i$a;
+.class public final Lcom/google/android/material/snackbar/i$a;
 .super Ljava/lang/Object;
 .source "SnackbarManager.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/snackbar/i;
+.field public final synthetic f:Lcom/google/android/material/snackbar/i;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/snackbar/i;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/snackbar/i$a;->g:Lcom/google/android/material/snackbar/i;
+    iput-object p1, p0, Lcom/google/android/material/snackbar/i$a;->f:Lcom/google/android/material/snackbar/i;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)Z
+.method public final handleMessage(Landroid/os/Message;)Z
     .locals 3
 
     .line 1
@@ -49,7 +48,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/snackbar/i$a;->g:Lcom/google/android/material/snackbar/i;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/i$a;->f:Lcom/google/android/material/snackbar/i;
 
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 

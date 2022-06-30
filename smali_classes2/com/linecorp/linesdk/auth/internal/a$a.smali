@@ -21,7 +21,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Intent;Landroid/os/Bundle;Z)V
+.method public constructor <init>(Landroid/content/Intent;Z)V
     .locals 0
 
     .line 1
@@ -31,7 +31,7 @@
     iput-object p1, p0, Lcom/linecorp/linesdk/auth/internal/a$a;->a:Landroid/content/Intent;
 
     .line 3
-    iput-boolean p3, p0, Lcom/linecorp/linesdk/auth/internal/a$a;->b:Z
+    iput-boolean p2, p0, Lcom/linecorp/linesdk/auth/internal/a$a;->b:Z
 
     return-void
 .end method

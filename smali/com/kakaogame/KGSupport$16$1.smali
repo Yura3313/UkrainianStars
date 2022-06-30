@@ -36,7 +36,6 @@
 .method public constructor <init>(Lcom/kakaogame/KGSupport$16;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSupport$16$1;->this$0:Lcom/kakaogame/KGSupport$16;
 
     iput-object p2, p0, Lcom/kakaogame/KGSupport$16$1;->val$lock:Lcom/kakaogame/util/MutexLock;

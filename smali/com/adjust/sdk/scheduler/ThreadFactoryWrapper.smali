@@ -40,10 +40,12 @@
 
     const-string v0, "Adjust-"
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     invoke-virtual {p1}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
     move-result-object v1

@@ -134,7 +134,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/KGMessage$KGMessageState;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/KGMessage$KGMessageState;->value:Ljava/lang/String;
 
     return-object p0
@@ -143,7 +142,6 @@
 .method public static synthetic access$600(Ljava/lang/String;)Lcom/kakaogame/KGMessage$KGMessageState;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGMessage$KGMessageState;->getState(Ljava/lang/String;)Lcom/kakaogame/KGMessage$KGMessageState;
 
     move-result-object p0
@@ -193,7 +191,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/kakaogame/KGMessage$KGMessageState;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/kakaogame/KGMessage$KGMessageState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -208,7 +205,6 @@
 .method public static values()[Lcom/kakaogame/KGMessage$KGMessageState;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/KGMessage$KGMessageState;->$VALUES:[Lcom/kakaogame/KGMessage$KGMessageState;
 
     invoke-virtual {v0}, [Lcom/kakaogame/KGMessage$KGMessageState;->clone()Ljava/lang/Object;

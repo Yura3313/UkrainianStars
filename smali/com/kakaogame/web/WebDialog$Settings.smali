@@ -160,7 +160,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/web/WebDialog$Settings;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/kakaogame/web/WebDialog$Settings;->isPulltoRefresh:Z
 
     return p0
@@ -169,7 +168,6 @@
 .method public static synthetic access$1002(Lcom/kakaogame/web/WebDialog$Settings;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->port_width:I
 
     return p1
@@ -178,7 +176,6 @@
 .method public static synthetic access$102(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->isPulltoRefresh:Z
 
     return p1
@@ -187,7 +184,6 @@
 .method public static synthetic access$1102(Lcom/kakaogame/web/WebDialog$Settings;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->port_height:I
 
     return p1
@@ -196,7 +192,6 @@
 .method public static synthetic access$1202(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->isCustomSize:Z
 
     return p1
@@ -205,7 +200,6 @@
 .method public static synthetic access$1302(Lcom/kakaogame/web/WebDialog$Settings;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->land_width:I
 
     return p1
@@ -214,7 +208,6 @@
 .method public static synthetic access$1402(Lcom/kakaogame/web/WebDialog$Settings;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->land_height:I
 
     return p1
@@ -223,7 +216,6 @@
 .method public static synthetic access$1502(Lcom/kakaogame/web/WebDialog$Settings;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->verticalMargin:I
 
     return p1
@@ -232,7 +224,6 @@
 .method public static synthetic access$1602(Lcom/kakaogame/web/WebDialog$Settings;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->horizontalMargin:I
 
     return p1
@@ -241,7 +232,6 @@
 .method public static synthetic access$1702(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->isActivity:Z
 
     return p1
@@ -250,7 +240,6 @@
 .method public static synthetic access$1802(Lcom/kakaogame/web/WebDialog$Settings;Lcom/kakaogame/web/WebDialog$OnCloseListener;)Lcom/kakaogame/web/WebDialog$OnCloseListener;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->closeListener:Lcom/kakaogame/web/WebDialog$OnCloseListener;
 
     return-object p1
@@ -259,7 +248,6 @@
 .method public static synthetic access$1902(Lcom/kakaogame/web/WebDialog$Settings;Ljava/util/Map;)Ljava/util/Map;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->customCookie:Ljava/util/Map;
 
     return-object p1
@@ -268,7 +256,6 @@
 .method public static synthetic access$2002(Lcom/kakaogame/web/WebDialog$Settings;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->backgroundColor:I
 
     return p1
@@ -277,7 +264,6 @@
 .method public static synthetic access$2102(Lcom/kakaogame/web/WebDialog$Settings;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->titleBackgroundColor:I
 
     return p1
@@ -286,7 +272,6 @@
 .method public static synthetic access$2202(Lcom/kakaogame/web/WebDialog$Settings;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->titleTextColor:I
 
     return p1
@@ -295,7 +280,6 @@
 .method public static synthetic access$2302(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->isFixedTextFontSize:Z
 
     return p1
@@ -304,7 +288,6 @@
 .method public static synthetic access$2402(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->isHideTopbar:Z
 
     return p1
@@ -313,7 +296,6 @@
 .method public static synthetic access$2502(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->isHideCloseButton:Z
 
     return p1
@@ -322,7 +304,6 @@
 .method public static synthetic access$2602(Lcom/kakaogame/web/WebDialog$Settings;Lcom/kakaogame/web/WebDialog$Settings$CloseButtonColor;)Lcom/kakaogame/web/WebDialog$Settings$CloseButtonColor;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->closeButtonColor:Lcom/kakaogame/web/WebDialog$Settings$CloseButtonColor;
 
     return-object p1
@@ -331,7 +312,6 @@
 .method public static synthetic access$2702(Lcom/kakaogame/web/WebDialog$Settings;Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;)Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->previousButtonColor:Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;
 
     return-object p1
@@ -340,7 +320,6 @@
 .method public static synthetic access$802(Lcom/kakaogame/web/WebDialog$Settings;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->title:Ljava/lang/String;
 
     return-object p1
@@ -349,7 +328,6 @@
 .method public static synthetic access$902(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/web/WebDialog$Settings;->isFixedTitle:Z
 
     return p1
@@ -360,7 +338,6 @@
 .method public getBackgroundColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->backgroundColor:I
 
     return v0
@@ -369,7 +346,6 @@
 .method public getCloseButtonColor()Lcom/kakaogame/web/WebDialog$Settings$CloseButtonColor;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->closeButtonColor:Lcom/kakaogame/web/WebDialog$Settings$CloseButtonColor;
 
     return-object v0
@@ -378,7 +354,6 @@
 .method public getCloseListener()Lcom/kakaogame/web/WebDialog$OnCloseListener;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->closeListener:Lcom/kakaogame/web/WebDialog$OnCloseListener;
 
     return-object v0
@@ -396,7 +371,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->customCookie:Ljava/util/Map;
 
     return-object v0
@@ -422,7 +396,6 @@
 .method public getHorizontalMargin()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->horizontalMargin:I
 
     return v0
@@ -431,7 +404,6 @@
 .method public getPreviousButtonColor()Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->previousButtonColor:Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;
 
     return-object v0
@@ -440,7 +412,6 @@
 .method public getTitle()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->title:Ljava/lang/String;
 
     return-object v0
@@ -449,7 +420,6 @@
 .method public getTitleBackgroundColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->titleBackgroundColor:I
 
     return v0
@@ -458,7 +428,6 @@
 .method public getTitleTextColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->titleTextColor:I
 
     return v0
@@ -467,7 +436,6 @@
 .method public getVerticalMargin()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->verticalMargin:I
 
     return v0
@@ -495,7 +463,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->isHideTopbar:Z
 
     return-void
@@ -504,7 +471,6 @@
 .method public isActivity()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->isActivity:Z
 
     return v0
@@ -513,7 +479,6 @@
 .method public isCustomSize()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->isCustomSize:Z
 
     return v0
@@ -522,7 +487,6 @@
 .method public isFixedTextFontSize()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->isFixedTextFontSize:Z
 
     return v0
@@ -531,7 +495,6 @@
 .method public isFixedTitle()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->isFixedTitle:Z
 
     return v0
@@ -540,7 +503,6 @@
 .method public isHideCloseButton()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->isHideCloseButton:Z
 
     return v0
@@ -549,7 +511,6 @@
 .method public isHideTopbar()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->isHideTopbar:Z
 
     return v0
@@ -558,7 +519,6 @@
 .method public isMarginSet()Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/web/WebDialog$Settings;->verticalMargin:I
 
     if-lez v0, :cond_0

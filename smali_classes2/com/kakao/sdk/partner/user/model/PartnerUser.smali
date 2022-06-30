@@ -89,7 +89,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lcom/kakao/sdk/partner/user/model/PartnerUser;->id:J
@@ -414,7 +413,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/user/model/PartnerUser;->properties:Ljava/util/Map;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -424,7 +423,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/user/model/PartnerUser;->kakaoAccount:Lcom/kakao/sdk/partner/user/model/PartnerAccount;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -434,7 +433,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/user/model/PartnerUser;->groupUserToken:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -444,7 +443,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/user/model/PartnerUser;->hasSignedUp:Ljava/lang/Boolean;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -454,7 +453,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/user/model/PartnerUser;->forPartner:Ljava/util/Map;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -464,7 +463,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/user/model/PartnerUser;->connectedAt:Ljava/util/Date;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -474,7 +473,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/partner/user/model/PartnerUser;->synchedAt:Ljava/util/Date;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -493,7 +492,6 @@
 .method public final getConnectedAt()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/PartnerUser;->connectedAt:Ljava/util/Date;
 
     return-object v0
@@ -511,7 +509,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/PartnerUser;->forPartner:Ljava/util/Map;
 
     return-object v0
@@ -520,7 +517,6 @@
 .method public final getGroupUserToken()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/PartnerUser;->groupUserToken:Ljava/lang/String;
 
     return-object v0
@@ -529,7 +525,6 @@
 .method public final getHasSignedUp()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/PartnerUser;->hasSignedUp:Ljava/lang/Boolean;
 
     return-object v0
@@ -538,7 +533,6 @@
 .method public final getId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakao/sdk/partner/user/model/PartnerUser;->id:J
 
     return-wide v0
@@ -547,7 +541,6 @@
 .method public final getKakaoAccount()Lcom/kakao/sdk/partner/user/model/PartnerAccount;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/PartnerUser;->kakaoAccount:Lcom/kakao/sdk/partner/user/model/PartnerAccount;
 
     return-object v0
@@ -565,7 +558,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/PartnerUser;->properties:Ljava/util/Map;
 
     return-object v0
@@ -574,7 +566,6 @@
 .method public final getSynchedAt()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/PartnerUser;->synchedAt:Ljava/util/Date;
 
     return-object v0
@@ -724,10 +715,12 @@
 
     const-string v0, "PartnerUser(id="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-wide v1, p0, Lcom/kakao/sdk/partner/user/model/PartnerUser;->id:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
@@ -802,7 +795,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
-    if-eqz p1, :cond_6
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-wide v0, p0, Lcom/kakao/sdk/partner/user/model/PartnerUser;->id:J
 
@@ -887,10 +882,12 @@
 
     if-eqz p2, :cond_3
 
-    invoke-static {p1, v0, p2}, Lj3/ap0;->e(Landroid/os/Parcel;ILjava/lang/Boolean;)V
+    .line 1
+    invoke-static {p1, v0, p2}, Lk3/vo0;->c(Landroid/os/Parcel;ILjava/lang/Boolean;)V
 
     goto :goto_2
 
+    .line 2
     :cond_3
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -957,20 +954,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeSerializable(Ljava/io/Serializable;)V
 
     return-void
-
-    :cond_6
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    goto :goto_5
-
-    :goto_4
-    throw p1
-
-    :goto_5
-    goto :goto_4
 .end method

@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/util/MutexLock;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/infodesk/InfodeskNoticeManager$2;->val$dialogLock:Lcom/kakaogame/util/MutexLock;
 
     iput-object p2, p0, Lcom/kakaogame/infodesk/InfodeskNoticeManager$2;->val$linkUrl:Ljava/lang/String;

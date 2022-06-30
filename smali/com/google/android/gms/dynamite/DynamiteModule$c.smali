@@ -47,7 +47,6 @@
 .method public final b(Landroid/content/Context;Ljava/lang/String;)I
     .locals 0
 
-    .line 1
     iget p1, p0, Lcom/google/android/gms/dynamite/DynamiteModule$c;->a:I
 
     return p1

@@ -1,4 +1,4 @@
-.class public Lg/c$b;
+.class public final Lg/c$b;
 .super Lg/c$a;
 .source "MenuItemWrapperICS.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lg/c;Landroid/content/Context;Landroid/view/ActionProvider;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lg/c$a;-><init>(Lg/c;Landroid/content/Context;Landroid/view/ActionProvider;)V
 
     return-void
@@ -33,10 +32,9 @@
 
 
 # virtual methods
-.method public b()Z
+.method public final b()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/c$a;->c:Landroid/view/ActionProvider;
 
     invoke-virtual {v0}, Landroid/view/ActionProvider;->isVisible()Z
@@ -46,10 +44,9 @@
     return v0
 .end method
 
-.method public d(Landroid/view/MenuItem;)Landroid/view/View;
+.method public final d(Landroid/view/MenuItem;)Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/c$a;->c:Landroid/view/ActionProvider;
 
     invoke-virtual {v0, p1}, Landroid/view/ActionProvider;->onCreateActionView(Landroid/view/MenuItem;)Landroid/view/View;
@@ -59,10 +56,9 @@
     return-object p1
 .end method
 
-.method public g()Z
+.method public final g()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/c$a;->c:Landroid/view/ActionProvider;
 
     invoke-virtual {v0}, Landroid/view/ActionProvider;->overridesItemVisibility()Z
@@ -72,7 +68,7 @@
     return v0
 .end method
 
-.method public h(Lf0/b$b;)V
+.method public final h(Lf0/b$b;)V
     .locals 0
 
     .line 1
@@ -86,7 +82,7 @@
     return-void
 .end method
 
-.method public onActionProviderVisibilityChanged(Z)V
+.method public final onActionProviderVisibilityChanged(Z)V
     .locals 1
 
     .line 1
@@ -108,7 +104,7 @@
     iput-boolean v0, p1, Landroidx/appcompat/view/menu/e;->h:Z
 
     .line 5
-    invoke-virtual {p1, v0}, Landroidx/appcompat/view/menu/e;->q(Z)V
+    invoke-virtual {p1, v0}, Landroidx/appcompat/view/menu/e;->r(Z)V
 
     :cond_0
     return-void

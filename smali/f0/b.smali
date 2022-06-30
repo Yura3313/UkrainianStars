@@ -19,10 +19,9 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -52,7 +51,6 @@
 .method public d(Landroid/view/MenuItem;)Landroid/view/View;
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lf0/b;->c()Landroid/view/View;
 
     move-result-object p1
@@ -85,13 +83,12 @@
 .method public h(Lf0/b$b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lf0/b;->b:Lf0/b$b;
 
     return-void
 .end method
 
-.method public i(Z)V
+.method public final i(Z)V
     .locals 1
 
     .line 1
@@ -105,12 +102,12 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, v0, Landroidx/appcompat/view/menu/a;->k:Landroidx/appcompat/view/menu/i$a;
+    iget-object p1, v0, Landroidx/appcompat/view/menu/a;->j:Landroidx/appcompat/view/menu/i$a;
 
     if-eqz p1, :cond_1
 
     .line 4
-    iget-object v0, v0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
 
     invoke-interface {p1, v0}, Landroidx/appcompat/view/menu/i$a;->c(Landroidx/appcompat/view/menu/e;)Z
 
@@ -118,7 +115,7 @@
 
     .line 5
     :cond_0
-    iget-object p1, v0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
+    iget-object p1, v0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
 
     if-eqz p1, :cond_1
 

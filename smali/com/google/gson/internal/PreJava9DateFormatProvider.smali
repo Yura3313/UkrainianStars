@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,10 +39,12 @@
 
     const-string v1, "Unknown DateFormat style: "
 
-    invoke-static {v1, p0}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    .line 2
+    invoke-static {v1, p0}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 3
     invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -91,10 +92,12 @@
 
     const-string v1, "Unknown DateFormat style: "
 
-    invoke-static {v1, p0}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    .line 2
+    invoke-static {v1, p0}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 3
     invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -142,10 +145,12 @@
 
     const-string v1, "Unknown DateFormat style: "
 
-    invoke-static {v1, p0}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    .line 2
+    invoke-static {v1, p0}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 3
     invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -164,7 +169,6 @@
 .method public static getUSDateFormat(I)Ljava/text/DateFormat;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     invoke-static {p0}, Lcom/google/gson/internal/PreJava9DateFormatProvider;->getDateFormatPattern(I)Ljava/lang/String;

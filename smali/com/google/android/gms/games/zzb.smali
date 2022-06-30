@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/games/zzb;
-.super Lu2/n;
+.super Lv2/o;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 # interfaces
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field public final j:Lb3/b;
+.field public final i:Lc3/b;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/common/data/DataHolder;ILb3/b;)V
+.method public constructor <init>(Lcom/google/android/gms/common/data/DataHolder;ILc3/b;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lu2/n;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
+    invoke-direct {p0, p1, p2}, Lv2/o;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
 
     .line 2
-    iput-object p3, p0, Lcom/google/android/gms/games/zzb;->j:Lb3/b;
+    iput-object p3, p0, Lcom/google/android/gms/games/zzb;->i:Lc3/b;
 
     return-void
 .end method
@@ -41,22 +41,10 @@
     return v0
 .end method
 
-.method public final synthetic e2()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/games/zza;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/games/zza;-><init>(Lcom/google/android/gms/games/CurrentPlayerInfo;)V
-
-    return-object v0
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/zza;->A2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/zza;->D2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -64,48 +52,95 @@
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 3
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/zza;->z2(Lcom/google/android/gms/games/CurrentPlayerInfo;)I
+    invoke-virtual {p0}, Lcom/google/android/gms/games/zzb;->v2()I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    .line 2
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final r2()I
-    .locals 2
+.method public final synthetic k2()Ljava/lang/Object;
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/zzb;->j:Lb3/b;
+    new-instance v0, Lcom/google/android/gms/games/zza;
 
-    iget-object v0, v0, Lb3/b;->K:Ljava/lang/String;
+    invoke-direct {v0, p0}, Lcom/google/android/gms/games/zza;-><init>(Lcom/google/android/gms/games/CurrentPlayerInfo;)V
 
-    const/4 v1, 0x0
-
-    invoke-virtual {p0, v0, v1}, Lu2/n;->C(Ljava/lang/String;I)I
-
-    move-result v0
-
-    return v0
+    return-object v0
 .end method
 
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/zza;->B2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/zza;->E2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
+.method public final v2()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/games/zzb;->i:Lc3/b;
+
+    iget-object v0, v0, Lc3/b;->K:Ljava/lang/String;
+
+    .line 2
+    invoke-virtual {p0, v0}, Lc2/d;->B(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {p0, v0}, Lc2/d;->G(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0, v0}, Lc2/d;->l(Ljava/lang/String;)I
+
+    move-result v0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x0
+
+    :goto_1
+    return v0
+.end method
+
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/gms/games/zza;
 
     invoke-direct {v0, p0}, Lcom/google/android/gms/games/zza;-><init>(Lcom/google/android/gms/games/CurrentPlayerInfo;)V

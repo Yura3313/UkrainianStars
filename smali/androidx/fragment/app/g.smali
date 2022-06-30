@@ -1,29 +1,32 @@
-.class public Landroidx/fragment/app/g;
+.class public final Landroidx/fragment/app/g;
 .super Ljava/lang/Object;
 .source "DefaultSpecialEffectsController.java"
 
 # interfaces
-.implements Lb0/a$a;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/View;
+.field public final synthetic f:Landroidx/fragment/app/j0$d;
 
-.field public final synthetic b:Landroid/view/ViewGroup;
+.field public final synthetic g:Landroidx/fragment/app/j0$d;
 
-.field public final synthetic c:Landroidx/fragment/app/c$b;
+.field public final synthetic h:Z
+
+.field public final synthetic i:Lm/a;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/c;Landroid/view/View;Landroid/view/ViewGroup;Landroidx/fragment/app/c$b;)V
+.method public constructor <init>(Landroidx/fragment/app/j0$d;Landroidx/fragment/app/j0$d;ZLm/a;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/fragment/app/g;->a:Landroid/view/View;
+    iput-object p1, p0, Landroidx/fragment/app/g;->f:Landroidx/fragment/app/j0$d;
 
-    iput-object p3, p0, Landroidx/fragment/app/g;->b:Landroid/view/ViewGroup;
+    iput-object p2, p0, Landroidx/fragment/app/g;->g:Landroidx/fragment/app/j0$d;
 
-    iput-object p4, p0, Landroidx/fragment/app/g;->c:Landroidx/fragment/app/c$b;
+    iput-boolean p3, p0, Landroidx/fragment/app/g;->h:Z
+
+    iput-object p4, p0, Landroidx/fragment/app/g;->i:Lm/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,25 +35,26 @@
 
 
 # virtual methods
-.method public a()V
-    .locals 2
+.method public final run()V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/g;->a:Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->clearAnimation()V
+    iget-object v0, p0, Landroidx/fragment/app/g;->f:Landroidx/fragment/app/j0$d;
 
     .line 2
-    iget-object v0, p0, Landroidx/fragment/app/g;->b:Landroid/view/ViewGroup;
-
-    iget-object v1, p0, Landroidx/fragment/app/g;->a:Landroid/view/View;
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
+    iget-object v0, v0, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/g;->c:Landroidx/fragment/app/c$b;
+    iget-object v1, p0, Landroidx/fragment/app/g;->g:Landroidx/fragment/app/j0$d;
 
-    invoke-virtual {v0}, Landroidx/fragment/app/c$c;->a()V
+    .line 4
+    iget-object v1, v1, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
+
+    .line 5
+    iget-boolean v2, p0, Landroidx/fragment/app/g;->h:Z
+
+    .line 6
+    invoke-static {v0, v1, v2}, Landroidx/fragment/app/d0;->a(Landroidx/fragment/app/Fragment;Landroidx/fragment/app/Fragment;Z)V
 
     return-void
 .end method

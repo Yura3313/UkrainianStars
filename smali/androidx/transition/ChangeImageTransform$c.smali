@@ -1,4 +1,4 @@
-.class public synthetic Landroidx/transition/ChangeImageTransform$c;
+.class public final synthetic Landroidx/transition/ChangeImageTransform$c;
 .super Ljava/lang/Object;
 .source "ChangeImageTransform.java"
 
@@ -22,7 +22,6 @@
 .method public static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Landroid/widget/ImageView$ScaleType;->values()[Landroid/widget/ImageView$ScaleType;
 
     move-result-object v0
@@ -36,7 +35,7 @@
     :try_start_0
     sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_XY:Landroid/widget/ImageView$ScaleType;
 
-    invoke-virtual {v1}, Landroid/widget/ImageView$ScaleType;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -52,7 +51,7 @@
 
     sget-object v1, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
-    invoke-virtual {v1}, Landroid/widget/ImageView$ScaleType;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 

@@ -22,19 +22,19 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ToggleButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/ToggleButton;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Landroidx/appcompat/widget/d0;->a(Landroid/view/View;Landroid/content/Context;)V
+    invoke-static {p0, p1}, Landroidx/appcompat/widget/c0;->a(Landroid/view/View;Landroid/content/Context;)V
 
     .line 4
-    new-instance p1, Landroidx/appcompat/widget/n;
+    new-instance p1, Landroidx/appcompat/widget/m;
 
-    invoke-direct {p1, p0}, Landroidx/appcompat/widget/n;-><init>(Landroid/widget/TextView;)V
+    invoke-direct {p1, p0}, Landroidx/appcompat/widget/m;-><init>(Landroid/widget/TextView;)V
 
     .line 5
-    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/n;->e(Landroid/util/AttributeSet;I)V
+    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/m;->f(Landroid/util/AttributeSet;I)V
 
     return-void
 .end method

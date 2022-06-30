@@ -1,4 +1,4 @@
-.class public Landroidx/transition/Visibility$a;
+.class public final Landroidx/transition/Visibility$a;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "Visibility.java"
 
@@ -19,21 +19,21 @@
 
 
 # instance fields
-.field public final g:Landroid/view/View;
+.field public final f:Landroid/view/View;
 
-.field public final h:I
+.field public final g:I
 
-.field public final i:Landroid/view/ViewGroup;
+.field public final h:Landroid/view/ViewGroup;
 
-.field public final j:Z
+.field public final i:Z
+
+.field public j:Z
 
 .field public k:Z
 
-.field public l:Z
-
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;IZ)V
+.method public constructor <init>(Landroid/view/View;I)V
     .locals 1
 
     .line 1
@@ -42,13 +42,13 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Landroidx/transition/Visibility$a;->l:Z
+    iput-boolean v0, p0, Landroidx/transition/Visibility$a;->k:Z
 
     .line 3
-    iput-object p1, p0, Landroidx/transition/Visibility$a;->g:Landroid/view/View;
+    iput-object p1, p0, Landroidx/transition/Visibility$a;->f:Landroid/view/View;
 
     .line 4
-    iput p2, p0, Landroidx/transition/Visibility$a;->h:I
+    iput p2, p0, Landroidx/transition/Visibility$a;->g:I
 
     .line 5
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -57,12 +57,12 @@
 
     check-cast p1, Landroid/view/ViewGroup;
 
-    iput-object p1, p0, Landroidx/transition/Visibility$a;->i:Landroid/view/ViewGroup;
-
-    .line 6
-    iput-boolean p3, p0, Landroidx/transition/Visibility$a;->j:Z
+    iput-object p1, p0, Landroidx/transition/Visibility$a;->h:Landroid/view/ViewGroup;
 
     const/4 p1, 0x1
+
+    .line 6
+    iput-boolean p1, p0, Landroidx/transition/Visibility$a;->i:Z
 
     .line 7
     invoke-virtual {p0, p1}, Landroidx/transition/Visibility$a;->g(Z)V
@@ -72,82 +72,77 @@
 
 
 # virtual methods
-.method public a(Landroidx/transition/Transition;)V
+.method public final a()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Landroidx/transition/Visibility$a;->g(Z)V
+
+    return-void
+.end method
+
+.method public final b()V
     .locals 0
 
     return-void
 .end method
 
-.method public b(Landroidx/transition/Transition;)V
-    .locals 0
-
-    const/4 p1, 0x0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/Visibility$a;->g(Z)V
-
-    return-void
-.end method
-
-.method public c(Landroidx/transition/Transition;)V
+.method public final c(Landroidx/transition/Transition;)V
     .locals 0
 
     .line 1
     invoke-virtual {p0}, Landroidx/transition/Visibility$a;->f()V
 
     .line 2
-    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->y(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     return-void
 .end method
 
-.method public d(Landroidx/transition/Transition;)V
+.method public final d()V
     .locals 0
 
     return-void
 .end method
 
-.method public e(Landroidx/transition/Transition;)V
-    .locals 0
+.method public final e()V
+    .locals 1
 
-    const/4 p1, 0x1
+    const/4 v0, 0x1
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/Visibility$a;->g(Z)V
+    invoke-virtual {p0, v0}, Landroidx/transition/Visibility$a;->g(Z)V
 
     return-void
 .end method
 
 .method public final f()V
-    .locals 3
+    .locals 2
 
     .line 1
-    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->l:Z
+    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->k:Z
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/Visibility$a;->g:Landroid/view/View;
+    iget-object v0, p0, Landroidx/transition/Visibility$a;->f:Landroid/view/View;
 
-    iget v1, p0, Landroidx/transition/Visibility$a;->h:I
+    iget v1, p0, Landroidx/transition/Visibility$a;->g:I
+
+    invoke-static {v0, v1}, Lv0/x;->d(Landroid/view/View;I)V
 
     .line 3
-    sget-object v2, Lv0/x;->a:Lv0/d0;
-
-    invoke-virtual {v2, v0, v1}, Lv0/d0;->g(Landroid/view/View;I)V
-
-    .line 4
-    iget-object v0, p0, Landroidx/transition/Visibility$a;->i:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/Visibility$a;->h:Landroid/view/ViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 5
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->invalidate()V
+    .line 4
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
     :cond_0
     const/4 v0, 0x0
 
-    .line 6
+    .line 5
     invoke-virtual {p0, v0}, Landroidx/transition/Visibility$a;->g(Z)V
 
     return-void
@@ -157,99 +152,91 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->j:Z
+    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->i:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->k:Z
+    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->j:Z
 
     if-eq v0, p1, :cond_0
 
-    iget-object v0, p0, Landroidx/transition/Visibility$a;->i:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/Visibility$a;->h:Landroid/view/ViewGroup;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean p1, p0, Landroidx/transition/Visibility$a;->k:Z
+    iput-boolean p1, p0, Landroidx/transition/Visibility$a;->j:Z
 
     .line 3
-    invoke-static {v0, p1}, Lv0/w;->b(Landroid/view/ViewGroup;Z)V
+    invoke-static {v0, p1}, Lv0/w;->c(Landroid/view/ViewGroup;Z)V
 
     :cond_0
     return-void
 .end method
 
-.method public onAnimationCancel(Landroid/animation/Animator;)V
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
 
     const/4 p1, 0x1
 
-    .line 1
-    iput-boolean p1, p0, Landroidx/transition/Visibility$a;->l:Z
+    iput-boolean p1, p0, Landroidx/transition/Visibility$a;->k:Z
 
     return-void
 .end method
 
-.method public onAnimationEnd(Landroid/animation/Animator;)V
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/Visibility$a;->f()V
 
     return-void
 .end method
 
-.method public onAnimationPause(Landroid/animation/Animator;)V
-    .locals 2
+.method public final onAnimationPause(Landroid/animation/Animator;)V
+    .locals 1
 
     .line 1
-    iget-boolean p1, p0, Landroidx/transition/Visibility$a;->l:Z
+    iget-boolean p1, p0, Landroidx/transition/Visibility$a;->k:Z
 
     if-nez p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Landroidx/transition/Visibility$a;->g:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/Visibility$a;->f:Landroid/view/View;
 
-    iget v0, p0, Landroidx/transition/Visibility$a;->h:I
+    iget v0, p0, Landroidx/transition/Visibility$a;->g:I
 
-    .line 3
-    sget-object v1, Lv0/x;->a:Lv0/d0;
-
-    invoke-virtual {v1, p1, v0}, Lv0/d0;->g(Landroid/view/View;I)V
+    invoke-static {p1, v0}, Lv0/x;->d(Landroid/view/View;I)V
 
     :cond_0
     return-void
 .end method
 
-.method public onAnimationRepeat(Landroid/animation/Animator;)V
+.method public final onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onAnimationResume(Landroid/animation/Animator;)V
-    .locals 2
+.method public final onAnimationResume(Landroid/animation/Animator;)V
+    .locals 1
 
     .line 1
-    iget-boolean p1, p0, Landroidx/transition/Visibility$a;->l:Z
+    iget-boolean p1, p0, Landroidx/transition/Visibility$a;->k:Z
 
     if-nez p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Landroidx/transition/Visibility$a;->g:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/Visibility$a;->f:Landroid/view/View;
 
     const/4 v0, 0x0
 
-    .line 3
-    sget-object v1, Lv0/x;->a:Lv0/d0;
-
-    invoke-virtual {v1, p1, v0}, Lv0/d0;->g(Landroid/view/View;I)V
+    invoke-static {p1, v0}, Lv0/x;->d(Landroid/view/View;I)V
 
     :cond_0
     return-void
 .end method
 
-.method public onAnimationStart(Landroid/animation/Animator;)V
+.method public final onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
 
     return-void

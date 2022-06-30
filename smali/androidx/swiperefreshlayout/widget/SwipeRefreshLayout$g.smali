@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract a(Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;Landroid/view/View;)Z
+.method public abstract a()Z
 .end method

@@ -1,4 +1,4 @@
-.class public Landroidx/lifecycle/k$a;
+.class public final Landroidx/lifecycle/k$a;
 .super Ljava/lang/Object;
 .source "LifecycleRegistry.java"
 
@@ -28,7 +28,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget-object v0, Landroidx/lifecycle/m;->a:Ljava/util/Map;
+    sget-object v0, Landroidx/lifecycle/m;->a:Ljava/util/HashMap;
 
     .line 3
     instance-of v0, p1, Landroidx/lifecycle/h;
@@ -93,7 +93,7 @@
     if-ne v1, v2, :cond_5
 
     .line 10
-    sget-object v1, Landroidx/lifecycle/m;->b:Ljava/util/Map;
+    sget-object v1, Landroidx/lifecycle/m;->b:Ljava/util/HashMap;
 
     .line 11
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -191,11 +191,11 @@
 
 
 # virtual methods
-.method public a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
+.method public final a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
     .locals 2
 
     .line 1
-    invoke-virtual {p2}, Landroidx/lifecycle/f$b;->a()Landroidx/lifecycle/f$c;
+    invoke-virtual {p2}, Landroidx/lifecycle/f$b;->c()Landroidx/lifecycle/f$c;
 
     move-result-object v0
 

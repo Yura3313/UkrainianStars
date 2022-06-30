@@ -4,25 +4,25 @@
 
 
 # instance fields
-.field public final g:Lx3/a;
+.field public final f:Ly3/a;
 
 
 # direct methods
-.method public constructor <init>(Lx3/a;)V
+.method public constructor <init>(Ly3/a;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzbia;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzamj;->g:Lx3/a;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzamj;->f:Ly3/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final C2()Ljava/lang/String;
+.method public final H2()Ljava/lang/String;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -31,21 +31,21 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->g:Lx3/a;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->f:Ly3/a;
 
     .line 2
-    iget-object v0, v0, Lx3/a;->g:Ljava/lang/Object;
+    iget-object v0, v0, Ly3/a;->a:Ljava/lang/Object;
 
-    check-cast v0, Lu3/u4;
+    check-cast v0, Lv3/s4;
 
-    invoke-virtual {v0}, Lu3/u4;->j()Ljava/lang/String;
+    invoke-virtual {v0}, Lv3/s4;->k()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final P4()Ljava/lang/String;
+.method public final Q4()Ljava/lang/String;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -54,20 +54,20 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->g:Lx3/a;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->f:Ly3/a;
 
     .line 2
-    iget-object v0, v0, Lx3/a;->g:Ljava/lang/Object;
+    iget-object v0, v0, Ly3/a;->a:Ljava/lang/Object;
 
-    check-cast v0, Lu3/u4;
+    check-cast v0, Lv3/s4;
 
     .line 3
-    iget-object v0, v0, Lu3/u4;->e:Ljava/lang/String;
+    iget-object v0, v0, Lv3/s4;->e:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public final S4()Ljava/lang/String;
+.method public final T4()Ljava/lang/String;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -75,10 +75,9 @@
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->g:Lx3/a;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->f:Ly3/a;
 
-    invoke-virtual {v0}, Lx3/a;->j()Ljava/lang/String;
+    invoke-virtual {v0}, Ly3/a;->j()Ljava/lang/String;
 
     move-result-object v0
 
@@ -94,22 +93,39 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->g:Lx3/a;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->f:Ly3/a;
 
     .line 2
-    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->Y0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->c2(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Landroid/app/Activity;
 
     .line 3
-    invoke-virtual {v0, p1, p2, p3}, Lx3/a;->m(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, p1, p2, p3}, Ly3/a;->m(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public final e3()J
+.method public final h0(Ljava/lang/String;Landroid/os/Bundle;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->f:Ly3/a;
+
+    const-string v1, "am"
+
+    invoke-virtual {v0, v1, p1, p2}, Ly3/a;->l(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+
+    return-void
+.end method
+
+.method public final j7(Ljava/lang/String;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -118,21 +134,49 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->g:Lx3/a;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->f:Ly3/a;
 
     .line 2
-    iget-object v0, v0, Lx3/a;->g:Ljava/lang/Object;
+    iget-object v0, v0, Ly3/a;->a:Ljava/lang/Object;
 
-    check-cast v0, Lu3/u4;
+    check-cast v0, Lv3/s4;
 
-    invoke-virtual {v0}, Lu3/u4;->k()J
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 3
+    new-instance v1, Lv3/e;
+
+    invoke-direct {v1, v0, p1}, Lv3/e;-><init>(Lv3/s4;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lv3/s4;->f(Lv3/s4$a;)V
+
+    return-void
+.end method
+
+.method public final k3()J
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->f:Ly3/a;
+
+    .line 2
+    iget-object v0, v0, Ly3/a;->a:Ljava/lang/Object;
+
+    check-cast v0, Lv3/s4;
+
+    invoke-virtual {v0}, Lv3/s4;->l()J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public final k3()Ljava/lang/String;
+.method public final q5()Ljava/lang/String;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -140,17 +184,16 @@
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->g:Lx3/a;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->f:Ly3/a;
 
-    invoke-virtual {v0}, Lx3/a;->i()Ljava/lang/String;
+    invoke-virtual {v0}, Ly3/a;->h()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final n7(Ljava/lang/String;)V
+.method public final s6(Ljava/lang/String;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -159,29 +202,26 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->g:Lx3/a;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->f:Ly3/a;
 
     .line 2
-    iget-object v0, v0, Lx3/a;->g:Ljava/lang/Object;
+    iget-object v0, v0, Ly3/a;->a:Ljava/lang/Object;
 
-    check-cast v0, Lu3/u4;
+    check-cast v0, Lv3/s4;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    new-instance v1, Lu3/e;
+    new-instance v1, Lv3/d;
 
-    invoke-direct {v1, v0, p1}, Lu3/e;-><init>(Lu3/u4;Ljava/lang/String;)V
+    invoke-direct {v1, v0, p1}, Lv3/d;-><init>(Lv3/s4;Ljava/lang/String;)V
 
-    .line 4
-    iget-object p1, v0, Lu3/u4;->a:Ljava/util/concurrent/ExecutorService;
-
-    invoke-interface {p1, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-virtual {v0, v1}, Lv3/s4;->f(Lv3/s4$a;)V
 
     return-void
 .end method
 
-.method public final s5()Ljava/lang/String;
+.method public final t3()Ljava/lang/String;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -189,59 +229,11 @@
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->g:Lx3/a;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->f:Ly3/a;
 
-    invoke-virtual {v0}, Lx3/a;->h()Ljava/lang/String;
+    invoke-virtual {v0}, Ly3/a;->i()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public final w6(Ljava/lang/String;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->g:Lx3/a;
-
-    .line 2
-    iget-object v0, v0, Lx3/a;->g:Ljava/lang/Object;
-
-    check-cast v0, Lu3/u4;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 3
-    new-instance v1, Lu3/d;
-
-    invoke-direct {v1, v0, p1}, Lu3/d;-><init>(Lu3/u4;Ljava/lang/String;)V
-
-    .line 4
-    iget-object p1, v0, Lu3/u4;->a:Ljava/util/concurrent/ExecutorService;
-
-    invoke-interface {p1, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
-.method public final y0(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzamj;->g:Lx3/a;
-
-    invoke-virtual {v0, p1, p2, p3}, Lx3/a;->l(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
-
-    return-void
 .end method

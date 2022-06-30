@@ -69,7 +69,6 @@
 .method public getErrorType()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/util/json/parser/ParseException;->errorType:I
 
     return v0
@@ -185,7 +184,6 @@
 .method public getPosition()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/util/json/parser/ParseException;->position:I
 
     return v0
@@ -194,7 +192,6 @@
 .method public getUnexpectedObject()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/util/json/parser/ParseException;->unexpectedObject:Ljava/lang/Object;
 
     return-object v0
@@ -203,7 +200,6 @@
 .method public setErrorType(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/util/json/parser/ParseException;->errorType:I
 
     return-void
@@ -212,7 +208,6 @@
 .method public setPosition(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/util/json/parser/ParseException;->position:I
 
     return-void
@@ -221,7 +216,6 @@
 .method public setUnexpectedObject(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/util/json/parser/ParseException;->unexpectedObject:Ljava/lang/Object;
 
     return-void

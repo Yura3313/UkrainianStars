@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/m$d;
+.class public final Landroidx/recyclerview/widget/m$d;
 .super Ljava/lang/Object;
 .source "FastScroller.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/recyclerview/widget/m;
+.field public final synthetic f:Landroidx/recyclerview/widget/m;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/recyclerview/widget/m;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/recyclerview/widget/m$d;->g:Landroidx/recyclerview/widget/m;
+    iput-object p1, p0, Landroidx/recyclerview/widget/m$d;->f:Landroidx/recyclerview/widget/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
     .line 1
@@ -56,26 +55,23 @@
     float-to-int p1, p1
 
     .line 2
-    iget-object v0, p0, Landroidx/recyclerview/widget/m$d;->g:Landroidx/recyclerview/widget/m;
+    iget-object v0, p0, Landroidx/recyclerview/widget/m$d;->f:Landroidx/recyclerview/widget/m;
 
     iget-object v0, v0, Landroidx/recyclerview/widget/m;->c:Landroid/graphics/drawable/StateListDrawable;
 
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/StateListDrawable;->setAlpha(I)V
+    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
     .line 3
-    iget-object v0, p0, Landroidx/recyclerview/widget/m$d;->g:Landroidx/recyclerview/widget/m;
+    iget-object v0, p0, Landroidx/recyclerview/widget/m$d;->f:Landroidx/recyclerview/widget/m;
 
     iget-object v0, v0, Landroidx/recyclerview/widget/m;->d:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
     .line 4
-    iget-object p1, p0, Landroidx/recyclerview/widget/m$d;->g:Landroidx/recyclerview/widget/m;
+    iget-object p1, p0, Landroidx/recyclerview/widget/m$d;->f:Landroidx/recyclerview/widget/m;
 
-    .line 5
-    iget-object p1, p1, Landroidx/recyclerview/widget/m;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->invalidate()V
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/m;->j()V
 
     return-void
 .end method

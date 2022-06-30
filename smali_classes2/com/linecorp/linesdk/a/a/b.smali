@@ -73,35 +73,33 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
     new-instance v0, Lcom/linecorp/linesdk/a/a/b$b;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Lcom/linecorp/linesdk/a/a/b$b;-><init>(B)V
+    invoke-direct {v0}, Lcom/linecorp/linesdk/a/a/b$b;-><init>()V
 
     sput-object v0, Lcom/linecorp/linesdk/a/a/b;->a:Lcom/linecorp/linesdk/a/a/a/c;
 
     .line 2
     new-instance v0, Lcom/linecorp/linesdk/a/a/b$a;
 
-    invoke-direct {v0, v1}, Lcom/linecorp/linesdk/a/a/b$a;-><init>(B)V
+    invoke-direct {v0}, Lcom/linecorp/linesdk/a/a/b$a;-><init>()V
 
     sput-object v0, Lcom/linecorp/linesdk/a/a/b;->b:Lcom/linecorp/linesdk/a/a/a/c;
 
     .line 3
     new-instance v0, Lcom/linecorp/linesdk/a/a/b$d;
 
-    invoke-direct {v0, v1}, Lcom/linecorp/linesdk/a/a/b$d;-><init>(B)V
+    invoke-direct {v0}, Lcom/linecorp/linesdk/a/a/b$d;-><init>()V
 
     sput-object v0, Lcom/linecorp/linesdk/a/a/b;->c:Lcom/linecorp/linesdk/a/a/a/c;
 
     .line 4
     new-instance v0, Lcom/linecorp/linesdk/a/a/b$c;
 
-    invoke-direct {v0, v1}, Lcom/linecorp/linesdk/a/a/b$c;-><init>(B)V
+    invoke-direct {v0}, Lcom/linecorp/linesdk/a/a/b$c;-><init>()V
 
     sput-object v0, Lcom/linecorp/linesdk/a/a/b;->d:Lcom/linecorp/linesdk/a/a/a/c;
 

@@ -145,7 +145,6 @@
 .method private segment(I)I
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lokio/SegmentedByteString;->directory:[I
 
     iget-object v1, p0, Lokio/SegmentedByteString;->segments:[[B
@@ -174,7 +173,6 @@
 .method private toByteString()Lokio/ByteString;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/ByteString;
 
     invoke-virtual {p0}, Lokio/SegmentedByteString;->toByteArray()[B
@@ -189,7 +187,6 @@
 .method private writeReplace()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -202,7 +199,6 @@
 .method public asByteBuffer()Ljava/nio/ByteBuffer;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lokio/SegmentedByteString;->toByteArray()[B
 
     move-result-object v0
@@ -221,7 +217,6 @@
 .method public base64()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -236,7 +231,6 @@
 .method public base64Url()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -440,7 +434,6 @@
 .method public hex()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -455,7 +448,6 @@
 .method public hmacSha1(Lokio/ByteString;)Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -470,7 +462,6 @@
 .method public hmacSha256(Lokio/ByteString;)Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -485,7 +476,6 @@
 .method public indexOf([BI)I
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -500,7 +490,6 @@
 .method public internalArray()[B
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lokio/SegmentedByteString;->toByteArray()[B
 
     move-result-object v0
@@ -511,7 +500,6 @@
 .method public lastIndexOf([BI)I
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -526,7 +514,6 @@
 .method public md5()Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -759,7 +746,6 @@
 .method public sha1()Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -774,7 +760,6 @@
 .method public sha256()Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -789,7 +774,6 @@
 .method public size()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokio/SegmentedByteString;->directory:[I
 
     iget-object v1, p0, Lokio/SegmentedByteString;->segments:[[B
@@ -806,7 +790,6 @@
 .method public string(Ljava/nio/charset/Charset;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -851,7 +834,6 @@
 .method public toAsciiLowercase()Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -866,7 +848,6 @@
 .method public toAsciiUppercase()Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -936,7 +917,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -951,7 +931,6 @@
 .method public utf8()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0

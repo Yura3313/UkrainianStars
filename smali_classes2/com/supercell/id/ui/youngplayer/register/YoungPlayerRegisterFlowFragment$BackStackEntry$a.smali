@@ -27,10 +27,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lle/g;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,15 +37,18 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string v0, "parcel"
 
     .line 1
-    new-instance v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
+    new-instance v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;
+
+    .line 3
     const-class v1, Lcom/supercell/id/IdPendingRegistration;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -62,22 +64,11 @@
     invoke-direct {v0, p1}, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;-><init>(Lcom/supercell/id/IdPendingRegistration;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "parcel"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;
 
     return-object p1

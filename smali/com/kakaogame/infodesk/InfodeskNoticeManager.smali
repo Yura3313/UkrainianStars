@@ -17,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,7 +39,7 @@
     move-exception p0
 
     .line 2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -55,7 +54,6 @@
 .method public static initialize(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/kakaogame/infodesk/InfodeskNoticeManager;->appId:Ljava/lang/String;
 
     return-void
@@ -181,7 +179,7 @@
     move-exception p1
 
     .line 13
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -240,14 +238,14 @@
 
     move-result-object v4
 
-    invoke-virtual {v2, v4}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {v2, v4}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 4
     new-instance v4, Ljava/util/Date;
 
     invoke-direct {v4}, Ljava/util/Date;-><init>()V
 
-    invoke-virtual {v2, v4}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v2, v4}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -263,9 +261,15 @@
 
     sget-object v6, Lcom/kakaogame/infodesk/InfodeskNoticeManager;->appId:Ljava/lang/String;
 
-    const-string v7, "_"
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v5, v6, v7, v4}, Landroidx/fragment/app/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v6, "_"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -459,6 +463,7 @@
 
     move-result-object v5
 
+    .line 31
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v6
@@ -485,7 +490,7 @@
 
     invoke-static {v3, v5}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 31
+    .line 32
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v3
@@ -500,7 +505,7 @@
 
     if-eqz v3, :cond_8
 
-    .line 32
+    .line 33
     invoke-virtual/range {p1 .. p1}, Lcom/kakaogame/infodesk/InfodeskData$KGInfodeskNotice;->getActionOnClose()Lcom/kakaogame/infodesk/InfodeskData$KGInfodeskNotice$InfodeskNoticeActionOnClose;
 
     move-result-object v3
@@ -516,13 +521,13 @@
     :cond_5
     move-object/from16 v16, v6
 
-    .line 33
+    .line 34
     :goto_1
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v3
 
-    .line 34
+    .line 35
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v7
@@ -538,7 +543,7 @@
     :cond_6
     move-object v13, v4
 
-    .line 35
+    .line 36
     :goto_2
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -556,7 +561,7 @@
     :goto_3
     const-string v11, ""
 
-    .line 36
+    .line 37
     invoke-static/range {v10 .. v16}, Lcom/kakaogame/KGCustomUI$KGCustomAlert;->makeAlert(Lcom/kakaogame/KGCustomUI$KGCustomAlertType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/KGCustomUI$KGCustomAlert;
 
     move-result-object v4
@@ -567,42 +572,42 @@
 
     goto :goto_5
 
-    .line 37
+    .line 38
     :cond_8
     invoke-static {}, Lcom/kakaogame/util/MutexLock;->createLock()Lcom/kakaogame/util/MutexLock;
 
     move-result-object v3
 
-    .line 38
+    .line 39
     invoke-static/range {p0 .. p0}, Lcom/kakaogame/ui/DialogManager;->createAlertDialogBuilder(Landroid/app/Activity;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v7
 
-    .line 39
+    .line 40
     invoke-virtual {v7, v12}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    .line 40
+    .line 41
     new-instance v8, Lcom/kakaogame/infodesk/InfodeskNoticeManager$1;
 
     invoke-direct {v8, v1, v3}, Lcom/kakaogame/infodesk/InfodeskNoticeManager$1;-><init>(Lcom/kakaogame/infodesk/InfodeskData$KGInfodeskNotice;Lcom/kakaogame/util/MutexLock;)V
 
     invoke-virtual {v7, v15, v8}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 41
+    .line 42
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v8
 
     if-nez v8, :cond_9
 
-    .line 42
+    .line 43
     new-instance v8, Lcom/kakaogame/infodesk/InfodeskNoticeManager$2;
 
     invoke-direct {v8, v3, v2}, Lcom/kakaogame/infodesk/InfodeskNoticeManager$2;-><init>(Lcom/kakaogame/util/MutexLock;Ljava/lang/String;)V
 
     invoke-virtual {v7, v4, v8}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 43
+    .line 44
     :cond_9
     invoke-virtual/range {p1 .. p1}, Lcom/kakaogame/infodesk/InfodeskData$KGInfodeskNotice;->getActionOnClose()Lcom/kakaogame/infodesk/InfodeskData$KGInfodeskNotice$InfodeskNoticeActionOnClose;
 
@@ -614,7 +619,7 @@
 
     const/4 v4, 0x0
 
-    .line 44
+    .line 45
     invoke-virtual {v7, v4}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     goto :goto_4
@@ -622,31 +627,31 @@
     :cond_a
     const/4 v4, 0x1
 
-    .line 45
+    .line 46
     invoke-virtual {v7, v4}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    .line 46
+    .line 47
     new-instance v4, Lcom/kakaogame/infodesk/InfodeskNoticeManager$3;
 
     invoke-direct {v4, v3}, Lcom/kakaogame/infodesk/InfodeskNoticeManager$3;-><init>(Lcom/kakaogame/util/MutexLock;)V
 
     invoke-virtual {v7, v4}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 47
+    .line 48
     :goto_4
     invoke-static {v0, v7}, Lcom/kakaogame/ui/DialogManager;->showAlertDialogBuilder(Landroid/app/Activity;Landroid/app/AlertDialog$Builder;)V
 
-    .line 48
+    .line 49
     invoke-virtual {v3}, Lcom/kakaogame/util/MutexLock;->lock()V
 
-    .line 49
+    .line 50
     invoke-virtual {v3}, Lcom/kakaogame/util/MutexLock;->getContent()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Ljava/lang/String;
 
-    .line 50
+    .line 51
     :goto_5
     invoke-virtual {v3, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -654,14 +659,14 @@
 
     if-eqz v4, :cond_b
 
-    .line 51
+    .line 52
     invoke-static {}, Lcom/kakaogame/KGResult;->getSuccessResult()Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
     return-object v0
 
-    .line 52
+    .line 53
     :cond_b
     invoke-virtual {v3, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -671,14 +676,14 @@
 
     if-eqz v4, :cond_c
 
-    .line 53
+    .line 54
     invoke-static {v5}, Lcom/kakaogame/KGResult;->getResult(I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
     return-object v0
 
-    .line 54
+    .line 55
     :cond_c
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -686,7 +691,7 @@
 
     if-nez v3, :cond_e
 
-    .line 55
+    .line 56
     invoke-virtual/range {p1 .. p1}, Lcom/kakaogame/infodesk/InfodeskData$KGInfodeskNotice;->getActionOnClose()Lcom/kakaogame/infodesk/InfodeskData$KGInfodeskNotice$InfodeskNoticeActionOnClose;
 
     move-result-object v1
@@ -695,17 +700,17 @@
 
     if-ne v1, v3, :cond_d
 
-    .line 56
+    .line 57
     invoke-static {v0, v2}, Lcom/kakaogame/util/AppUtil;->launchViewer(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 57
+    .line 58
     invoke-static {v5}, Lcom/kakaogame/KGResult;->getResult(I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
     return-object v0
 
-    .line 58
+    .line 59
     :cond_d
     new-instance v1, Lcom/kakaogame/infodesk/InfodeskNoticeManager$4;
 
@@ -713,7 +718,7 @@
 
     invoke-static {v0, v2, v1}, Lcom/kakaogame/web/WebDialogManager;->show(Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
 
-    .line 59
+    .line 60
     :cond_e
     invoke-static {}, Lcom/kakaogame/KGResult;->getSuccessResult()Lcom/kakaogame/KGResult;
 
@@ -874,7 +879,7 @@
     const/16 p1, 0xfa1
 
     .line 14
-    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -1068,7 +1073,7 @@
     const/16 p1, 0xfa1
 
     .line 19
-    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 

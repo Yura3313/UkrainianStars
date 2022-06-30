@@ -67,7 +67,6 @@
 .method public build()Lcom/kakaogame/KGAppOption$UpdatePopupParamBuilder$UpdatePopupParam;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGAppOption$UpdatePopupParamBuilder;->updateParam:Lcom/kakaogame/KGAppOption$UpdatePopupParamBuilder$UpdatePopupParam;
 
     return-object v0

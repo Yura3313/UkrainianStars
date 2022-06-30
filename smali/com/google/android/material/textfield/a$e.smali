@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/textfield/a$e;
+.class public final Lcom/google/android/material/textfield/a$e;
 .super Ljava/lang/Object;
 .source "ClearTextEndIconDelegate.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/textfield/a;
+.field public final synthetic f:Lcom/google/android/material/textfield/a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/a;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/a$e;->g:Lcom/google/android/material/textfield/a;
+    iput-object p1, p0, Lcom/google/android/material/textfield/a$e;->f:Lcom/google/android/material/textfield/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,13 +34,13 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public final onClick(Landroid/view/View;)V
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/textfield/a$e;->g:Lcom/google/android/material/textfield/a;
+    iget-object p1, p0, Lcom/google/android/material/textfield/a$e;->f:Lcom/google/android/material/textfield/a;
 
-    iget-object p1, p1, Lcom/google/android/material/textfield/m;->a:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object p1, p1, Lcom/google/android/material/textfield/k;->a:Lcom/google/android/material/textfield/TextInputLayout;
 
     invoke-virtual {p1}, Lcom/google/android/material/textfield/TextInputLayout;->getEditText()Landroid/widget/EditText;
 

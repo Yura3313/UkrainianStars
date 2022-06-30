@@ -29,7 +29,6 @@
 .method public constructor <init>(Lcom/kakaogame/core/CoreManager;Lcom/kakaogame/core/CoreManager$CoreStateListener;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/CoreManager$7;->this$0:Lcom/kakaogame/core/CoreManager;
 
     iput-object p2, p0, Lcom/kakaogame/core/CoreManager$7;->val$listener:Lcom/kakaogame/core/CoreManager$CoreStateListener;
@@ -46,7 +45,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager$7;->val$listener:Lcom/kakaogame/core/CoreManager$CoreStateListener;
 
     iget-object v1, p0, Lcom/kakaogame/core/CoreManager$7;->val$playerId:Ljava/lang/String;

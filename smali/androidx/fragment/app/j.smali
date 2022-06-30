@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/j;
+.class public final Landroidx/fragment/app/j;
 .super Ljava/lang/Object;
 .source "DefaultSpecialEffectsController.java"
 
@@ -7,15 +7,14 @@
 
 
 # instance fields
-.field public final synthetic g:Ljava/util/ArrayList;
+.field public final synthetic f:Landroidx/fragment/app/b$d;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/c;Ljava/util/ArrayList;)V
+.method public constructor <init>(Landroidx/fragment/app/b$d;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/fragment/app/j;->g:Ljava/util/ArrayList;
+    iput-object p1, p0, Landroidx/fragment/app/j;->f:Landroidx/fragment/app/b$d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,15 +23,12 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public final run()V
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/j;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/fragment/app/j;->f:Landroidx/fragment/app/b$d;
 
-    const/4 v1, 0x4
-
-    invoke-static {v0, v1}, Landroidx/fragment/app/n0;->o(Ljava/util/ArrayList;I)V
+    invoke-virtual {v0}, Landroidx/fragment/app/b$c;->a()V
 
     return-void
 .end method

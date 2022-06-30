@@ -22,7 +22,7 @@
 
 .field public final b:Landroid/content/SharedPreferences$Editor;
 
-.field public final c:Ljava/util/List;
+.field public final c:Ljava/util/concurrent/CopyOnWriteArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -62,7 +62,7 @@
 
     invoke-direct {p1}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
 
-    iput-object p1, p0, Ls0/a$a;->c:Ljava/util/List;
+    iput-object p1, p0, Ls0/a$a;->c:Ljava/util/concurrent/CopyOnWriteArrayList;
 
     return-void
 .end method
@@ -115,9 +115,9 @@
     check-cast v1, Ljava/lang/String;
 
     .line 3
-    iget-object v2, p0, Ls0/a$a;->c:Ljava/util/List;
+    iget-object v2, p0, Ls0/a$a;->c:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    invoke-interface {v2, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v1}, Ljava/util/concurrent/CopyOnWriteArrayList;->contains(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -126,7 +126,7 @@
     iget-object v2, p0, Ls0/a$a;->a:Ls0/a;
 
     .line 4
-    invoke-virtual {v2, v1}, Ls0/a;->d(Ljava/lang/String;)Z
+    invoke-virtual {v2, v1}, Ls0/a;->e(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -149,7 +149,7 @@
     return-void
 .end method
 
-.method public apply()V
+.method public final apply()V
     .locals 1
 
     .line 1
@@ -164,9 +164,9 @@
     invoke-virtual {p0}, Ls0/a$a;->b()V
 
     .line 4
-    iget-object v0, p0, Ls0/a$a;->c:Ljava/util/List;
+    iget-object v0, p0, Ls0/a$a;->c:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    invoke-interface {v0}, Ljava/util/List;->clear()V
+    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->clear()V
 
     return-void
 .end method
@@ -177,9 +177,9 @@
     .line 1
     iget-object v0, p0, Ls0/a$a;->a:Ls0/a;
 
-    iget-object v0, v0, Ls0/a;->b:Ljava/util/List;
+    iget-object v0, v0, Ls0/a;->b:Ljava/util/ArrayList;
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -197,9 +197,9 @@
     check-cast v1, Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 2
-    iget-object v2, p0, Ls0/a$a;->c:Ljava/util/List;
+    iget-object v2, p0, Ls0/a$a;->c:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v2}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
@@ -233,16 +233,16 @@
     .line 1
     iget-object v0, p0, Ls0/a$a;->a:Ls0/a;
 
-    invoke-virtual {v0, p1}, Ls0/a;->d(Ljava/lang/String;)Z
+    invoke-virtual {v0, p1}, Ls0/a;->e(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Ls0/a$a;->c:Ljava/util/List;
+    iget-object v0, p0, Ls0/a$a;->c:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
 
     if-nez p1, :cond_0
 
@@ -254,44 +254,22 @@
     iget-object v0, p0, Ls0/a$a;->a:Ls0/a;
 
     .line 4
-    invoke-virtual {v0, p1}, Ls0/a;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1, p2}, Ls0/a;->c(Ljava/lang/String;[B)Landroid/util/Pair;
 
     move-result-object p1
 
     .line 5
-    iget-object v0, v0, Ls0/a;->d:Ld5/a;
+    iget-object p2, p0, Ls0/a$a;->b:Landroid/content/SharedPreferences$Editor;
 
-    sget-object v1, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
-
-    invoke-virtual {p1, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
-
-    move-result-object v1
-
-    invoke-interface {v0, p2, v1}, Ld5/a;->a([B[B)[B
-
-    move-result-object p2
-
-    .line 6
-    new-instance v0, Landroid/util/Pair;
-
-    invoke-static {p2}, Lp5/i;->b([B)Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-direct {v0, p1, p2}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    .line 7
-    iget-object p1, p0, Ls0/a$a;->b:Landroid/content/SharedPreferences$Editor;
-
-    iget-object p2, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
-
-    check-cast p2, Ljava/lang/String;
-
-    iget-object v0, v0, Landroid/util/Pair;->second:Ljava/lang/Object;
+    iget-object v0, p1, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-interface {p1, p2, v0}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    iget-object p1, p1, Landroid/util/Pair;->second:Ljava/lang/Object;
+
+    check-cast p1, Ljava/lang/String;
+
+    invoke-interface {p2, v0, p1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
     :try_end_0
     .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -300,16 +278,18 @@
     :catch_0
     move-exception p1
 
-    .line 8
+    .line 6
     new-instance p2, Ljava/lang/SecurityException;
 
     const-string v0, "Could not encrypt data: "
 
+    .line 7
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {p1}, Ljava/security/GeneralSecurityException;->getMessage()Ljava/lang/String;
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
@@ -329,19 +309,20 @@
 
     const-string v0, " is a reserved key for the encryption keyset."
 
-    invoke-static {p1, v0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 10
+    invoke-static {p1, v0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 11
     invoke-direct {p2, p1}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
 
     throw p2
 .end method
 
-.method public clear()Landroid/content/SharedPreferences$Editor;
+.method public final clear()Landroid/content/SharedPreferences$Editor;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Ls0/a$a;->d:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
@@ -351,7 +332,7 @@
     return-object p0
 .end method
 
-.method public commit()Z
+.method public final commit()Z
     .locals 2
 
     .line 1
@@ -371,9 +352,9 @@
     invoke-virtual {p0}, Ls0/a$a;->b()V
 
     .line 4
-    iget-object v1, p0, Ls0/a$a;->c:Ljava/util/List;
+    iget-object v1, p0, Ls0/a$a;->c:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    invoke-interface {v1}, Ljava/util/List;->clear()V
+    invoke-virtual {v1}, Ljava/util/concurrent/CopyOnWriteArrayList;->clear()V
 
     return v0
 
@@ -384,15 +365,15 @@
     invoke-virtual {p0}, Ls0/a$a;->b()V
 
     .line 6
-    iget-object v1, p0, Ls0/a$a;->c:Ljava/util/List;
+    iget-object v1, p0, Ls0/a$a;->c:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    invoke-interface {v1}, Ljava/util/List;->clear()V
+    invoke-virtual {v1}, Ljava/util/concurrent/CopyOnWriteArrayList;->clear()V
 
     .line 7
     throw v0
 .end method
 
-.method public putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+.method public final putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
     .locals 2
 
     const/4 v0, 0x5
@@ -418,7 +399,7 @@
     return-object p0
 .end method
 
-.method public putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
+.method public final putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
     .locals 2
 
     const/16 v0, 0x8
@@ -446,7 +427,7 @@
     return-object p0
 .end method
 
-.method public putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+.method public final putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
     .locals 2
 
     const/16 v0, 0x8
@@ -474,7 +455,7 @@
     return-object p0
 .end method
 
-.method public putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
+.method public final putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
     .locals 2
 
     const/16 v0, 0xc
@@ -502,7 +483,7 @@
     return-object p0
 .end method
 
-.method public putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+.method public final putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
     .locals 3
 
     if-nez p2, :cond_0
@@ -548,7 +529,7 @@
     return-object p0
 .end method
 
-.method public putStringSet(Ljava/lang/String;Ljava/util/Set;)Landroid/content/SharedPreferences$Editor;
+.method public final putStringSet(Ljava/lang/String;Ljava/util/Set;)Landroid/content/SharedPreferences$Editor;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -680,13 +661,13 @@
     return-object p0
 .end method
 
-.method public remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+.method public final remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
     .locals 2
 
     .line 1
     iget-object v0, p0, Ls0/a$a;->a:Ls0/a;
 
-    invoke-virtual {v0, p1}, Ls0/a;->d(Ljava/lang/String;)Z
+    invoke-virtual {v0, p1}, Ls0/a;->e(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -704,9 +685,9 @@
     invoke-interface {v0, v1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     .line 3
-    iget-object v0, p0, Ls0/a$a;->c:Ljava/util/List;
+    iget-object v0, p0, Ls0/a$a;->c:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/CopyOnWriteArrayList;->remove(Ljava/lang/Object;)Z
 
     return-object p0
 
@@ -716,10 +697,12 @@
 
     const-string v1, " is a reserved key for the encryption keyset."
 
-    invoke-static {p1, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 5
+    invoke-static {p1, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 6
     invoke-direct {v0, p1}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
 
     throw v0

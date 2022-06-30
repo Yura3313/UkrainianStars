@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/ActivityChooserView$a;
+.class public final Landroidx/appcompat/widget/ActivityChooserView$a;
 .super Landroid/database/DataSetObserver;
 .source "ActivityChooserView.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Landroidx/appcompat/widget/ActivityChooserView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ActivityChooserView$a;->a:Landroidx/appcompat/widget/ActivityChooserView;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -32,7 +31,7 @@
 
 
 # virtual methods
-.method public onChanged()V
+.method public final onChanged()V
     .locals 1
 
     .line 1
@@ -41,14 +40,14 @@
     .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/ActivityChooserView$a;->a:Landroidx/appcompat/widget/ActivityChooserView;
 
-    iget-object v0, v0, Landroidx/appcompat/widget/ActivityChooserView;->g:Landroidx/appcompat/widget/ActivityChooserView$f;
+    iget-object v0, v0, Landroidx/appcompat/widget/ActivityChooserView;->f:Landroidx/appcompat/widget/ActivityChooserView$f;
 
     invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     return-void
 .end method
 
-.method public onInvalidated()V
+.method public final onInvalidated()V
     .locals 1
 
     .line 1
@@ -57,7 +56,7 @@
     .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/ActivityChooserView$a;->a:Landroidx/appcompat/widget/ActivityChooserView;
 
-    iget-object v0, v0, Landroidx/appcompat/widget/ActivityChooserView;->g:Landroidx/appcompat/widget/ActivityChooserView$f;
+    iget-object v0, v0, Landroidx/appcompat/widget/ActivityChooserView;->f:Landroidx/appcompat/widget/ActivityChooserView$f;
 
     invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
 

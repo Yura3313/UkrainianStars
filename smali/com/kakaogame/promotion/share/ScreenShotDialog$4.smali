@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/share/ScreenShotDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog$4;->this$0:Lcom/kakaogame/promotion/share/ScreenShotDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog$4;->this$0:Lcom/kakaogame/promotion/share/ScreenShotDialog;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V

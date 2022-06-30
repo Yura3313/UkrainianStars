@@ -4,45 +4,45 @@
 
 
 # static fields
-.field public static final q:[I
+.field public static final p:[I
 
 
 # instance fields
-.field public final g:Landroid/graphics/Paint;
+.field public final f:Landroid/graphics/Paint;
+
+.field public final g:I
 
 .field public final h:I
 
 .field public final i:I
 
-.field public final j:I
+.field public j:I
 
-.field public k:I
+.field public k:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Le6/l;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field public l:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lc6/l;",
+            "Le6/l;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public m:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lc6/l;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public m:Lcom/journeyapps/barcodescanner/CameraPreview;
 
-.field public n:Lcom/journeyapps/barcodescanner/CameraPreview;
+.field public n:Landroid/graphics/Rect;
 
 .field public o:Landroid/graphics/Rect;
-
-.field public p:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -59,7 +59,7 @@
     .line 2
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/journeyapps/barcodescanner/ViewfinderView;->q:[I
+    sput-object v0, Lcom/journeyapps/barcodescanner/ViewfinderView;->p:[I
 
     return-void
 
@@ -89,7 +89,7 @@
 
     invoke-direct {p1, v0}, Landroid/graphics/Paint;-><init>(I)V
 
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
@@ -122,7 +122,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->h:I
+    iput v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:I
 
     .line 8
     sget v0, Lcom/google/zxing/client/android/R$styleable;->zxing_finder_zxing_result_view:I
@@ -152,7 +152,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->i:I
+    iput v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->h:I
 
     .line 14
     sget v0, Lcom/google/zxing/client/android/R$styleable;->zxing_finder_zxing_possible_result_points:I
@@ -169,7 +169,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->j:I
+    iput p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->i:I
 
     .line 17
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
@@ -177,7 +177,7 @@
     const/4 p1, 0x0
 
     .line 18
-    iput p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:I
+    iput p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->j:I
 
     .line 19
     new-instance p1, Ljava/util/ArrayList;
@@ -186,25 +186,25 @@
 
     invoke-direct {p1, p2}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:Ljava/util/List;
 
     .line 20
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1, p2}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->m:Ljava/util/List;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->n:Lcom/journeyapps/barcodescanner/CameraPreview;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->m:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     if-nez v0, :cond_0
 
@@ -217,7 +217,7 @@
     move-result-object v0
 
     .line 3
-    iget-object v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->n:Lcom/journeyapps/barcodescanner/CameraPreview;
+    iget-object v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->m:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     invoke-virtual {v1}, Lcom/journeyapps/barcodescanner/CameraPreview;->getPreviewFramingRect()Landroid/graphics/Rect;
 
@@ -228,27 +228,27 @@
     if-eqz v1, :cond_1
 
     .line 4
-    iput-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->o:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->n:Landroid/graphics/Rect;
 
     .line 5
-    iput-object v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->p:Landroid/graphics/Rect;
+    iput-object v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->o:Landroid/graphics/Rect;
 
     :cond_1
     return-void
 .end method
 
-.method public onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 11
 
     .line 1
     invoke-virtual {p0}, Lcom/journeyapps/barcodescanner/ViewfinderView;->a()V
 
     .line 2
-    iget-object v7, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->o:Landroid/graphics/Rect;
+    iget-object v7, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->n:Landroid/graphics/Rect;
 
     if-eqz v7, :cond_5
 
-    iget-object v8, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->p:Landroid/graphics/Rect;
+    iget-object v8, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->o:Landroid/graphics/Rect;
 
     if-nez v8, :cond_0
 
@@ -266,9 +266,9 @@
     move-result v9
 
     .line 5
-    iget-object v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
-    iget v2, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->h:I
+    iget v2, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:I
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setColor(I)V
 
@@ -283,7 +283,7 @@
 
     int-to-float v4, v0
 
-    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
     move-object v0, p1
 
@@ -306,7 +306,7 @@
 
     int-to-float v4, v0
 
-    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
     move-object v0, p1
 
@@ -329,7 +329,7 @@
 
     int-to-float v4, v0
 
-    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
     move-object v0, p1
 
@@ -348,40 +348,38 @@
 
     int-to-float v4, v9
 
-    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
     move-object v0, p1
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
     .line 10
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
-    iget v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->i:I
+    iget v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->h:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 11
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
-    sget-object v1, Lcom/journeyapps/barcodescanner/ViewfinderView;->q:[I
+    sget-object v1, Lcom/journeyapps/barcodescanner/ViewfinderView;->p:[I
 
-    iget v2, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:I
+    iget v2, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->j:I
 
-    aget v2, v1, v2
+    aget v1, v1, v2
 
-    invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setAlpha(I)V
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAlpha(I)V
 
     .line 12
-    iget v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:I
+    iget v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->j:I
 
     add-int/lit8 v0, v0, 0x1
 
-    array-length v1, v1
+    rem-int/lit8 v0, v0, 0x8
 
-    rem-int/2addr v0, v1
-
-    iput v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:I
+    iput v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->j:I
 
     .line 13
     invoke-virtual {v7}, Landroid/graphics/Rect;->height()I
@@ -415,7 +413,7 @@
 
     int-to-float v4, v0
 
-    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
     move-object v0, p1
 
@@ -458,7 +456,7 @@
     iget v3, v7, Landroid/graphics/Rect;->top:I
 
     .line 19
-    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->m:Ljava/util/List;
+    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->isEmpty()Z
 
@@ -467,23 +465,23 @@
     if-nez v4, :cond_2
 
     .line 20
-    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
     const/16 v5, 0x50
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setAlpha(I)V
 
     .line 21
-    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
-    iget v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->j:I
+    iget v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->i:I
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setColor(I)V
 
     const/high16 v4, 0x40400000    # 3.0f
 
     .line 22
-    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->m:Ljava/util/List;
+    iget-object v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -500,10 +498,10 @@
 
     move-result-object v8
 
-    check-cast v8, Lc6/l;
+    check-cast v8, Le6/l;
 
     .line 23
-    iget v9, v8, Lc6/l;->a:F
+    iget v9, v8, Le6/l;->a:F
 
     mul-float v9, v9, v0
 
@@ -514,7 +512,7 @@
     int-to-float v9, v9
 
     .line 24
-    iget v8, v8, Lc6/l;->b:F
+    iget v8, v8, Le6/l;->b:F
 
     mul-float v8, v8, v1
 
@@ -525,7 +523,7 @@
     int-to-float v8, v8
 
     .line 25
-    iget-object v10, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v10, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
     .line 26
     invoke-virtual {p1, v9, v8, v4, v10}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
@@ -534,13 +532,13 @@
 
     .line 27
     :cond_1
-    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->m:Ljava/util/List;
+    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->clear()V
 
     .line 28
     :cond_2
-    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
+    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->isEmpty()Z
 
@@ -549,21 +547,21 @@
     if-nez v4, :cond_4
 
     .line 29
-    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
     const/16 v5, 0xa0
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setAlpha(I)V
 
     .line 30
-    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
-    iget v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->j:I
+    iget v5, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->i:I
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 31
-    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
+    iget-object v4, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -580,10 +578,10 @@
 
     move-result-object v5
 
-    check-cast v5, Lc6/l;
+    check-cast v5, Le6/l;
 
     .line 32
-    iget v8, v5, Lc6/l;->a:F
+    iget v8, v5, Le6/l;->a:F
 
     mul-float v8, v8, v0
 
@@ -594,7 +592,7 @@
     int-to-float v8, v8
 
     .line 33
-    iget v5, v5, Lc6/l;->b:F
+    iget v5, v5, Le6/l;->b:F
 
     mul-float v5, v5, v1
 
@@ -607,7 +605,7 @@
     const/high16 v9, 0x40c00000    # 6.0f
 
     .line 34
-    iget-object v10, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->g:Landroid/graphics/Paint;
+    iget-object v10, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->f:Landroid/graphics/Paint;
 
     .line 35
     invoke-virtual {p1, v8, v5, v9, v10}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
@@ -616,15 +614,15 @@
 
     .line 36
     :cond_3
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:Ljava/util/List;
 
     .line 37
-    iget-object v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->m:Ljava/util/List;
+    iget-object v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
 
-    iput-object v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
+    iput-object v1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:Ljava/util/List;
 
     .line 38
-    iput-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->m:Ljava/util/List;
+    iput-object v0, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
 
     .line 39
     invoke-interface {v1}, Ljava/util/List;->clear()V
@@ -662,7 +660,7 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->n:Lcom/journeyapps/barcodescanner/CameraPreview;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView;->m:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
     new-instance v0, Lcom/journeyapps/barcodescanner/ViewfinderView$a;
@@ -670,9 +668,9 @@
     invoke-direct {v0, p0}, Lcom/journeyapps/barcodescanner/ViewfinderView$a;-><init>(Lcom/journeyapps/barcodescanner/ViewfinderView;)V
 
     .line 3
-    iget-object p1, p1, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
+    iget-object p1, p1, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
 
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method

@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/LocaleManager$1;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -101,7 +100,6 @@
 .method public onUnregister(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/LocaleManager$1;->val$context:Landroid/content/Context;
 
     invoke-static {}, Lcom/kakaogame/core/LocaleManager;->access$000()Ljava/lang/String;

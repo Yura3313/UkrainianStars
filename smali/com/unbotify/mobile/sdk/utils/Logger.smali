@@ -108,14 +108,17 @@
 
     const-string v3, "()"
 
+    .line 1
     invoke-static {v0, v1, v2, p2, v3}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p2, " : "
 
-    invoke-static {v0, p2, p3}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 2
+    invoke-static {v0, p2, p3}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
+    .line 3
     :goto_0
     sget-object p2, Lcom/unbotify/mobile/sdk/utils/Logger;->listener:Lcom/unbotify/mobile/sdk/utils/Logger$OnLogger;
 

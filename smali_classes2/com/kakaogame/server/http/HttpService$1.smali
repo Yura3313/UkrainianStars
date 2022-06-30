@@ -31,7 +31,6 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/util/Map;Lcom/kakaogame/server/http/HttpService$HttpContentType;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/server/http/HttpService$1;->val$urlString:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/kakaogame/server/http/HttpService$1;->val$header:Ljava/util/Map;

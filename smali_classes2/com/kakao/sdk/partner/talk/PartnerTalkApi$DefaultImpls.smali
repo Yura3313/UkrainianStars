@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public static synthetic chatList$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/Boolean;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic chatList$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/Boolean;ILjava/lang/Object;)Lef/b;
     .locals 1
 
     if-nez p7, :cond_5
@@ -58,7 +58,7 @@
     sget-object p5, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     :cond_4
-    invoke-interface/range {p0 .. p5}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->chatList(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/Boolean;)Lxe/b;
+    invoke-interface/range {p0 .. p5}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->chatList(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/Boolean;)Lef/b;
 
     move-result-object p0
 
@@ -75,7 +75,7 @@
     throw p0
 .end method
 
-.method public static synthetic chatMembers$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;JLjava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/Boolean;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic chatMembers$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;JLjava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/Boolean;ILjava/lang/Object;)Lef/b;
     .locals 11
 
     if-nez p10, :cond_6
@@ -161,7 +161,7 @@
 
     move-wide v3, p1
 
-    invoke-interface/range {v2 .. v10}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->chatMembers(JLjava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/Boolean;)Lxe/b;
+    invoke-interface/range {v2 .. v10}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->chatMembers(JLjava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/Boolean;)Lef/b;
 
     move-result-object v0
 
@@ -178,7 +178,7 @@
     throw v0
 .end method
 
-.method public static synthetic friends$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;Lcom/kakao/sdk/partner/talk/model/FriendType;Lcom/kakao/sdk/partner/talk/model/FriendFilter;Lcom/kakao/sdk/talk/model/FriendOrder;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/String;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic friends$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;Lcom/kakao/sdk/partner/talk/model/FriendType;Lcom/kakao/sdk/partner/talk/model/FriendFilter;Lcom/kakao/sdk/talk/model/FriendOrder;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/String;ILjava/lang/Object;)Lef/b;
     .locals 1
 
     if-nez p9, :cond_7
@@ -235,7 +235,7 @@
 
     .line 1
     :cond_6
-    invoke-interface/range {p0 .. p7}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->friends(Lcom/kakao/sdk/partner/talk/model/FriendType;Lcom/kakao/sdk/partner/talk/model/FriendFilter;Lcom/kakao/sdk/talk/model/FriendOrder;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/String;)Lxe/b;
+    invoke-interface/range {p0 .. p7}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->friends(Lcom/kakao/sdk/partner/talk/model/FriendType;Lcom/kakao/sdk/partner/talk/model/FriendFilter;Lcom/kakao/sdk/talk/model/FriendOrder;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Ljava/lang/String;)Lef/b;
 
     move-result-object p0
 
@@ -252,7 +252,7 @@
     throw p0
 .end method
 
-.method public static synthetic sendMessage$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;Ljava/lang/String;Ljava/lang/String;JLjava/util/Map;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic sendMessage$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;Ljava/lang/String;Ljava/lang/String;JLjava/util/Map;ILjava/lang/Object;)Lef/b;
     .locals 7
 
     if-nez p7, :cond_2
@@ -290,7 +290,7 @@
     move-wide v4, p3
 
     .line 1
-    invoke-interface/range {v1 .. v6}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->sendMessage(Ljava/lang/String;Ljava/lang/String;JLjava/util/Map;)Lxe/b;
+    invoke-interface/range {v1 .. v6}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->sendMessage(Ljava/lang/String;Ljava/lang/String;JLjava/util/Map;)Lef/b;
 
     move-result-object p0
 
@@ -307,7 +307,7 @@
     throw p0
 .end method
 
-.method public static synthetic sendMessage$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;Ljava/lang/String;Ljava/lang/String;Lcom/kakao/sdk/template/model/DefaultTemplate;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic sendMessage$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;Ljava/lang/String;Ljava/lang/String;Lcom/kakao/sdk/template/model/DefaultTemplate;ILjava/lang/Object;)Lef/b;
     .locals 0
 
     if-nez p5, :cond_1
@@ -320,7 +320,7 @@
 
     .line 3
     :cond_0
-    invoke-interface {p0, p1, p2, p3}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->sendMessage(Ljava/lang/String;Ljava/lang/String;Lcom/kakao/sdk/template/model/DefaultTemplate;)Lxe/b;
+    invoke-interface {p0, p1, p2, p3}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->sendMessage(Ljava/lang/String;Ljava/lang/String;Lcom/kakao/sdk/template/model/DefaultTemplate;)Lef/b;
 
     move-result-object p0
 
@@ -337,7 +337,7 @@
     throw p0
 .end method
 
-.method public static synthetic sendMessage$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic sendMessage$default(Lcom/kakao/sdk/partner/talk/PartnerTalkApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;ILjava/lang/Object;)Lef/b;
     .locals 7
 
     if-nez p7, :cond_3
@@ -387,7 +387,7 @@
     move-object v4, p3
 
     .line 5
-    invoke-interface/range {v1 .. v6}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->sendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;)Lxe/b;
+    invoke-interface/range {v1 .. v6}, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;->sendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;)Lef/b;
 
     move-result-object p0
 

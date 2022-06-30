@@ -1,167 +1,199 @@
-.class public abstract Lbe/b;
-.super Ljava/lang/Object;
-.source "AbstractIterator.kt"
-
-# interfaces
-.implements Ljava/util/Iterator;
-.implements Lme/a;
+.class public final Lbe/b;
+.super Lbe/v0;
+.source "ClientStateStorage.kt"
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lbe/b$a;,
+        Lbe/b$b;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Iterator<",
-        "TT;>;",
-        "Lme/a;"
+        "Lbe/v0<",
+        "Lvc/a;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public g:I
+# static fields
+.field public static final g:Lbe/b$b;
 
-.field public h:Ljava/lang/Object;
+
+# instance fields
+.field public final d:Lze/e1;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "TT;"
+            "Lze/e0<",
+            "Lie/h;",
+            ">;"
         }
     .end annotation
 .end field
 
+.field public final e:Landroid/content/Context;
+
+.field public final f:Ljava/lang/String;
+
 
 # direct methods
-.method public constructor <init>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lbe/b$b;
 
-    const/4 v0, 0x2
+    invoke-direct {v0}, Lbe/b$b;-><init>()V
+
+    sput-object v0, Lbe/b;->g:Lbe/b$b;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 2
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-direct {p0}, Lbe/v0;-><init>()V
+
+    iput-object p1, p0, Lbe/b;->e:Landroid/content/Context;
+
+    iput-object p2, p0, Lbe/b;->f:Ljava/lang/String;
+
+    if-eqz p2, :cond_1
 
     .line 2
-    iput v0, p0, Lbe/b;->g:I
+    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    :goto_1
+    if-eqz p1, :cond_2
+
+    .line 3
+    new-instance p1, Lbe/b$a$a;
+
+    new-instance p2, Lvc/a;
+
+    const/4 v0, 0x3
+
+    const/4 v1, 0x0
+
+    invoke-direct {p2, v1, v1, v0}, Lvc/a;-><init>(Ljava/util/Set;Ljava/util/Set;I)V
+
+    invoke-direct {p1, p2}, Lbe/b$a$a;-><init>(Lvc/a;)V
+
+    invoke-virtual {p0, p1}, Lbe/v0;->a(Lbe/a;)V
+
+    .line 4
+    sget-object p1, Lie/h;->a:Lie/h;
+
+    .line 5
+    invoke-static {p1}, Lbf/g;->b(Ljava/lang/Object;)Lze/o;
+
+    move-result-object p1
+
+    goto :goto_2
+
+    .line 6
+    :cond_2
+    new-instance p1, Lbe/c;
+
+    invoke-direct {p1, p0}, Lbe/c;-><init>(Lbe/b;)V
+
+    invoke-static {p1}, Lae/u1;->o(Lre/a;)Lze/e0;
+
+    move-result-object p1
+
+    .line 7
+    :goto_2
+    check-cast p1, Lze/e1;
+
+    iput-object p1, p0, Lbe/b;->d:Lze/e1;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract b()V
-.end method
-
-.method public hasNext()Z
-    .locals 5
+.method public final c(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, Lbe/b;->g:I
+    check-cast p1, Lvc/a;
 
-    const/4 v1, 0x0
+    check-cast p2, Lvc/a;
 
-    const/4 v2, 0x1
+    if-eqz p1, :cond_4
 
-    const/4 v3, 0x4
+    if-eqz p2, :cond_4
 
-    if-eq v0, v3, :cond_0
+    .line 2
+    invoke-static {p1, p2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    const/4 v4, 0x1
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_2
+
+    .line 3
+    :cond_0
+    iget-object p1, p0, Lbe/b;->f:Ljava/lang/String;
+
+    if-eqz p1, :cond_2
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result p1
+
+    if-nez p1, :cond_1
 
     goto :goto_0
 
-    :cond_0
-    const/4 v4, 0x0
-
-    :goto_0
-    if-eqz v4, :cond_3
-
-    .line 2
-    invoke-static {v0}, Lp/g;->b(I)I
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const/4 v4, 0x2
-
-    if-eq v0, v4, :cond_2
-
-    .line 3
-    iput v3, p0, Lbe/b;->g:I
-
-    .line 4
-    invoke-virtual {p0}, Lbe/b;->b()V
-
-    .line 5
-    iget v0, p0, Lbe/b;->g:I
-
-    if-ne v0, v2, :cond_2
-
     :cond_1
-    const/4 v1, 0x1
+    const/4 p1, 0x0
+
+    goto :goto_1
 
     :cond_2
-    return v1
+    :goto_0
+    const/4 p1, 0x1
 
-    .line 6
-    :cond_3
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    :goto_1
+    if-eqz p1, :cond_3
 
-    const-string v1, "Failed requirement."
-
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public next()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lbe/b;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x2
-
-    .line 2
-    iput v0, p0, Lbe/b;->g:I
-
-    .line 3
-    iget-object v0, p0, Lbe/b;->h:Ljava/lang/Object;
-
-    return-object v0
+    goto :goto_2
 
     .line 4
-    :cond_0
-    new-instance v0, Ljava/util/NoSuchElementException;
+    :cond_3
+    new-instance p1, Lbe/d;
 
-    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
+    invoke-direct {p1, p0, p2}, Lbe/d;-><init>(Lbe/b;Lvc/a;)V
 
-    throw v0
-.end method
+    invoke-static {p1}, Lae/u1;->o(Lre/a;)Lze/e0;
 
-.method public remove()V
-    .locals 2
-
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    const-string v1, "Operation is not supported for read-only collection"
-
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    :cond_4
+    :goto_2
+    return-void
 .end method

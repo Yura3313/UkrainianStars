@@ -27,7 +27,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     throw v0
 .end method
 
@@ -145,7 +144,7 @@
     if-eqz v1, :cond_1
 
     .line 7
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -170,7 +169,7 @@
 
     .line 10
     :goto_1
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getSuggestedMinimumWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumWidth()I
 
     move-result v2
 
@@ -179,7 +178,7 @@
     move-result v0
 
     .line 11
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getSuggestedMinimumHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumHeight()I
 
     move-result v2
 
@@ -197,7 +196,7 @@
     move-result p2
 
     .line 13
-    invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->setMeasuredDimension(II)V
+    invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
     return-void
 .end method
@@ -207,7 +206,6 @@
 
     const/4 p1, 0x0
 
-    .line 1
     throw p1
 .end method
 

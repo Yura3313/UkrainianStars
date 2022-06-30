@@ -1,61 +1,45 @@
-.class public Lr9/a;
+.class public final Lr9/a;
 .super Ljava/lang/Object;
-.source "AdminFileInfo.java"
+.source "UserDbMigration_1_to_2.java"
+
+# interfaces
+.implements Lh9/d;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Ljava/lang/String;
-
-.field public final c:Z
-
-.field public d:Ljava/lang/String;
-
-.field public e:Z
+.field public a:Lq9/b;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+.method public constructor <init>(Lq9/b;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lr9/a;->a:Ljava/lang/String;
-
-    .line 3
-    iput-object p3, p0, Lr9/a;->b:Ljava/lang/String;
-
-    .line 4
-    iput-boolean p4, p0, Lr9/a;->c:Z
+    iput-object p1, p0, Lr9/a;->a:Lq9/b;
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Z)V
-    .locals 0
 
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+# virtual methods
+.method public final a(Landroid/database/sqlite/SQLiteDatabase;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
 
-    .line 6
-    iput-object p1, p0, Lr9/a;->a:Ljava/lang/String;
+    iget-object v0, p0, Lr9/a;->a:Lq9/b;
 
-    const/4 p1, 0x0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 7
-    iput-object p1, p0, Lr9/a;->b:Ljava/lang/String;
+    const-string v0, "CREATE TABLE redaction_info_table ( user_local_id INTEGER PRIMARY KEY, redaction_state INTEGER , redaction_type INTEGER );"
 
-    .line 8
-    iput-boolean p4, p0, Lr9/a;->c:Z
-
-    .line 9
-    iput-object p5, p0, Lr9/a;->d:Ljava/lang/String;
-
-    .line 10
-    iput-boolean p6, p0, Lr9/a;->e:Z
+    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     return-void
 .end method

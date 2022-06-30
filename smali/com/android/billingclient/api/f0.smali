@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic g:Ljava/util/concurrent/Future;
+.field public final synthetic f:Lcom/android/billingclient/api/g;
 
-.field public final synthetic h:Ljava/lang/Runnable;
+.field public final synthetic g:Lcom/android/billingclient/api/f;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Future;Ljava/lang/Runnable;)V
+.method public constructor <init>(Lcom/android/billingclient/api/g;Lcom/android/billingclient/api/f;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/billingclient/api/f0;->g:Ljava/util/concurrent/Future;
+    iput-object p1, p0, Lcom/android/billingclient/api/f0;->f:Lcom/android/billingclient/api/g;
 
-    iput-object p2, p0, Lcom/android/billingclient/api/f0;->h:Ljava/lang/Runnable;
+    iput-object p2, p0, Lcom/android/billingclient/api/f0;->g:Lcom/android/billingclient/api/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,42 +28,25 @@
 
 # virtual methods
 .method public final run()V
-    .locals 2
+    .locals 3
 
-    iget-object v0, p0, Lcom/android/billingclient/api/f0;->g:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Lcom/android/billingclient/api/f0;->f:Lcom/android/billingclient/api/g;
 
     .line 1
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->isDone()Z
+    sget-object v1, Lcom/android/billingclient/api/t;->k:Lcom/android/billingclient/api/e;
 
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/billingclient/api/f0;->g:Ljava/util/concurrent/Future;
-
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->isCancelled()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/billingclient/api/f0;->g:Ljava/util/concurrent/Future;
-
-    const/4 v1, 0x1
+    iget-object v2, p0, Lcom/android/billingclient/api/f0;->g:Lcom/android/billingclient/api/f;
 
     .line 2
-    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
+    iget-object v2, v2, Lcom/android/billingclient/api/f;->a:Ljava/lang/String;
 
     .line 3
-    sget v0, Lv3/a;->a:I
+    check-cast v0, Lcom/supercell/titan/l;
 
-    iget-object v0, p0, Lcom/android/billingclient/api/f0;->h:Ljava/lang/Runnable;
-
-    if-eqz v0, :cond_0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+    iget v0, v1, Lcom/android/billingclient/api/e;->a:I
 
-    :cond_0
     return-void
 .end method

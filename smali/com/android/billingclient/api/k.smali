@@ -43,7 +43,7 @@
 
 # virtual methods
 .method public final synthetic call()Ljava/lang/Object;
-    .locals 7
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -55,29 +55,25 @@
     .line 1
     iget-object v1, v0, Lcom/android/billingclient/api/b;->f:Lcom/google/android/gms/internal/play_billing/zzd;
 
-    const/4 v2, 0x3
-
     .line 2
     iget-object v0, v0, Lcom/android/billingclient/api/b;->e:Landroid/content/Context;
 
     .line 3
     invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v0
 
-    iget-object v0, p0, Lcom/android/billingclient/api/k;->a:Lcom/android/billingclient/api/SkuDetails;
+    iget-object v2, p0, Lcom/android/billingclient/api/k;->a:Lcom/android/billingclient/api/SkuDetails;
 
     .line 4
-    invoke-virtual {v0}, Lcom/android/billingclient/api/SkuDetails;->a()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/android/billingclient/api/SkuDetails;->a()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v2
 
-    iget-object v5, p0, Lcom/android/billingclient/api/k;->b:Ljava/lang/String;
-
-    const/4 v6, 0x0
+    iget-object v3, p0, Lcom/android/billingclient/api/k;->b:Ljava/lang/String;
 
     .line 5
-    invoke-interface/range {v1 .. v6}, Lcom/google/android/gms/internal/play_billing/zzd;->E1(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
+    invoke-interface {v1, v0, v2, v3}, Lcom/google/android/gms/internal/play_billing/zzd;->u5(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object v0
 

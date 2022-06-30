@@ -135,7 +135,7 @@
     new-array p0, p0, [C
 
     :goto_0
-    invoke-virtual {v1, p0}, Ljava/io/BufferedReader;->read([C)I
+    invoke-virtual {v1, p0}, Ljava/io/Reader;->read([C)I
 
     move-result v2
 

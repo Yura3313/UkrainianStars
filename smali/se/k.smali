@@ -1,126 +1,129 @@
 .class public final Lse/k;
-.super Lse/c1;
-.source "JobSupport.kt"
+.super Ljava/lang/Object;
+.source "PackageReference.kt"
 
 # interfaces
-.implements Lse/j;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/c1<",
-        "Lse/e1;",
-        ">;",
-        "Lse/j;"
-    }
-.end annotation
+.implements Lse/c;
 
 
 # instance fields
-.field public final k:Lse/l;
+.field public final f:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lse/e1;Lse/l;)V
+.method public constructor <init>(Ljava/lang/Class;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "*>;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
 
-    .line 1
-    invoke-direct {p0, p1}, Lse/c1;-><init>(Lse/b1;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lse/k;->k:Lse/l;
+    iput-object p1, p0, Lse/k;->f:Ljava/lang/Class;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/lang/Throwable;)Z
-    .locals 3
+.method public final a()Ljava/lang/Class;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
 
-    if-eqz p1, :cond_1
+    iget-object v0, p0, Lse/k;->f:Ljava/lang/Class;
 
-    .line 1
-    iget-object v0, p0, Lse/d1;->j:Lse/b1;
-
-    check-cast v0, Lse/e1;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    instance-of v1, p1, Ljava/util/concurrent/CancellationException;
-
-    const/4 v2, 0x1
-
-    if-eqz v1, :cond_0
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    invoke-virtual {v0, p1}, Lse/e1;->t(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    :goto_0
-    return v2
-
-    :cond_1
-    const-string p1, "cause"
-
-    .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
+    return-object v0
 .end method
 
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    check-cast p1, Ljava/lang/Throwable;
-
-    invoke-virtual {p0, p1}, Lse/k;->j(Ljava/lang/Throwable;)V
-
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-.end method
-
-.method public j(Ljava/lang/Throwable;)V
+.method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lse/k;->k:Lse/l;
+    instance-of v0, p1, Lse/k;
 
-    iget-object v0, p0, Lse/d1;->j:Lse/b1;
+    if-eqz v0, :cond_0
 
-    check-cast v0, Lse/m1;
+    .line 2
+    iget-object v0, p0, Lse/k;->f:Ljava/lang/Class;
 
-    invoke-interface {p1, v0}, Lse/l;->p(Lse/m1;)V
+    .line 3
+    check-cast p1, Lse/k;
 
-    return-void
+    .line 4
+    iget-object p1, p1, Lse/k;->f:Ljava/lang/Class;
+
+    .line 5
+    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 2
-
-    const-string v0, "ChildHandle["
+.method public final hashCode()I
+    .locals 1
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lse/k;->f:Ljava/lang/Class;
 
-    move-result-object v0
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
-    iget-object v1, p0, Lse/k;->k:Lse/l;
+    move-result v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    return v0
+.end method
 
-    const/16 v1, 0x5d
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2
+    iget-object v1, p0, Lse/k;->f:Ljava/lang/Class;
+
+    .line 3
+    invoke-virtual {v1}, Ljava/lang/Class;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " (Kotlin reflection is not available)"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

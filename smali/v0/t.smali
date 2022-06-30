@@ -1,4 +1,4 @@
-.class public Lv0/t;
+.class public final Lv0/t;
 .super Ljava/lang/Object;
 .source "TransitionValuesMaps.java"
 

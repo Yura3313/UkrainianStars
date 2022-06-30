@@ -251,7 +251,7 @@
     move-result-object v1
 
     .line 34
-    invoke-interface {v0}, Ljava/util/Queue;->iterator()Ljava/util/Iterator;
+    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -507,7 +507,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/sentry/CircularFifoQueue;
 
     invoke-direct {v0, p1}, Lio/sentry/CircularFifoQueue;-><init>(I)V
@@ -576,7 +575,6 @@
 .method public addAttachment(Lio/sentry/Attachment;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->attachments:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -688,7 +686,6 @@
 .method public addEventProcessor(Lio/sentry/EventProcessor;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->eventProcessors:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -745,7 +742,6 @@
 .method public clearAttachments()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->attachments:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
@@ -756,10 +752,9 @@
 .method public clearBreadcrumbs()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->breadcrumbs:Ljava/util/Queue;
 
-    invoke-interface {v0}, Ljava/util/Queue;->clear()V
+    invoke-interface {v0}, Ljava/util/Collection;->clear()V
 
     return-void
 .end method
@@ -860,7 +855,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
 
     iget-object v1, p0, Lio/sentry/Scope;->attachments:Ljava/util/List;
@@ -881,7 +875,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->breadcrumbs:Ljava/util/Queue;
 
     return-object v0
@@ -890,7 +883,6 @@
 .method public getContexts()Lio/sentry/protocol/Contexts;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->contexts:Lio/sentry/protocol/Contexts;
 
     return-object v0
@@ -907,7 +899,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->eventProcessors:Ljava/util/List;
 
     return-object v0
@@ -925,7 +916,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->extra:Ljava/util/Map;
 
     return-object v0
@@ -942,7 +932,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->fingerprint:Ljava/util/List;
 
     return-object v0
@@ -951,7 +940,6 @@
 .method public getLevel()Lio/sentry/SentryLevel;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->level:Lio/sentry/SentryLevel;
 
     return-object v0
@@ -960,7 +948,6 @@
 .method public getRequest()Lio/sentry/protocol/Request;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->request:Lio/sentry/protocol/Request;
 
     return-object v0
@@ -1002,7 +989,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->tags:Ljava/util/Map;
 
     invoke-static {v0}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -1015,7 +1001,6 @@
 .method public getTransaction()Lio/sentry/ITransaction;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->transaction:Lio/sentry/ITransaction;
 
     return-object v0
@@ -1046,7 +1031,6 @@
 .method public getUser()Lio/sentry/protocol/User;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->user:Lio/sentry/protocol/User;
 
     return-object v0
@@ -1055,10 +1039,9 @@
 .method public removeContexts(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope;->contexts:Lio/sentry/protocol/Contexts;
 
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/AbstractMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -1226,7 +1209,7 @@
     .line 1
     iget-object v0, p0, Lio/sentry/Scope;->contexts:Lio/sentry/protocol/Contexts;
 
-    invoke-virtual {v0, p1, p2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -1361,7 +1344,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
@@ -1375,7 +1357,6 @@
 .method public setLevel(Lio/sentry/SentryLevel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/Scope;->level:Lio/sentry/SentryLevel;
 
     return-void
@@ -1384,7 +1365,6 @@
 .method public setRequest(Lio/sentry/protocol/Request;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/Scope;->request:Lio/sentry/protocol/Request;
 
     return-void

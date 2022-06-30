@@ -19,17 +19,22 @@
 .method public constructor <init>(JLcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "templateArgs"
 
-    if-eqz p3, :cond_3
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_2
+    const-string v0, "templateMsg"
 
-    if-eqz p5, :cond_1
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p6, :cond_0
+    const-string v0, "warningMsg"
 
-    .line 1
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "argumentMsg"
+
+    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lcom/kakao/sdk/link/model/ValidationResult;->templateId:J
@@ -43,35 +48,6 @@
     iput-object p6, p0, Lcom/kakao/sdk/link/model/ValidationResult;->argumentMsg:Lcom/google/gson/JsonObject;
 
     return-void
-
-    :cond_0
-    const-string p1, "argumentMsg"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "warningMsg"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "templateMsg"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "templateArgs"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/link/model/ValidationResult;JLcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;ILjava/lang/Object;)Lcom/kakao/sdk/link/model/ValidationResult;
@@ -176,15 +152,21 @@
 .method public final copy(JLcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;)Lcom/kakao/sdk/link/model/ValidationResult;
     .locals 8
 
-    const/4 v0, 0x0
+    const-string v0, "templateArgs"
 
-    if-eqz p3, :cond_3
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_2
+    const-string v0, "templateMsg"
 
-    if-eqz p5, :cond_1
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p6, :cond_0
+    const-string v0, "warningMsg"
+
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "argumentMsg"
+
+    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/link/model/ValidationResult;
 
@@ -203,35 +185,6 @@
     invoke-direct/range {v1 .. v7}, Lcom/kakao/sdk/link/model/ValidationResult;-><init>(JLcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "argumentMsg"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "warningMsg"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "templateMsg"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "templateArgs"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -271,7 +224,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/link/model/ValidationResult;->templateArgs:Lcom/google/gson/JsonObject;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -281,7 +234,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/link/model/ValidationResult;->templateMsg:Lcom/google/gson/JsonObject;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -291,7 +244,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/link/model/ValidationResult;->warningMsg:Lcom/google/gson/JsonObject;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -301,7 +254,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/link/model/ValidationResult;->argumentMsg:Lcom/google/gson/JsonObject;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -320,7 +273,6 @@
 .method public final getArgumentMsg()Lcom/google/gson/JsonObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/ValidationResult;->argumentMsg:Lcom/google/gson/JsonObject;
 
     return-object v0
@@ -329,7 +281,6 @@
 .method public final getTemplateArgs()Lcom/google/gson/JsonObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/ValidationResult;->templateArgs:Lcom/google/gson/JsonObject;
 
     return-object v0
@@ -338,7 +289,6 @@
 .method public final getTemplateId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakao/sdk/link/model/ValidationResult;->templateId:J
 
     return-wide v0
@@ -347,7 +297,6 @@
 .method public final getTemplateMsg()Lcom/google/gson/JsonObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/ValidationResult;->templateMsg:Lcom/google/gson/JsonObject;
 
     return-object v0
@@ -356,7 +305,6 @@
 .method public final getWarningMsg()Lcom/google/gson/JsonObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/ValidationResult;->warningMsg:Lcom/google/gson/JsonObject;
 
     return-object v0
@@ -452,10 +400,12 @@
 
     const-string v0, "ValidationResult(templateId="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-wide v1, p0, Lcom/kakao/sdk/link/model/ValidationResult;->templateId:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;

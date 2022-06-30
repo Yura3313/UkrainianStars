@@ -24,7 +24,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,7 +32,6 @@
 .method public static synthetic access$1000(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/log/PlayerLogManager$PrefManager;->clearPlayerGameData(Ljava/lang/String;)V
 
     return-void
@@ -42,7 +40,6 @@
 .method public static synthetic access$1400(Ljava/lang/String;Ljava/util/List;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/log/PlayerLogManager$PrefManager;->saveSummayrLogs(Ljava/lang/String;Ljava/util/List;)V
 
     return-void
@@ -51,7 +48,6 @@
 .method public static synthetic access$1500(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/log/PlayerLogManager$PrefManager;->clearSummaryLogs(Ljava/lang/String;)V
 
     return-void
@@ -60,7 +56,6 @@
 .method public static synthetic access$500(Ljava/lang/String;)Ljava/util/Map;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/log/PlayerLogManager$PrefManager;->loadPlayerGameData(Ljava/lang/String;)Ljava/util/Map;
 
     move-result-object p0
@@ -71,7 +66,6 @@
 .method public static synthetic access$800(Ljava/lang/String;)Ljava/util/List;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/log/PlayerLogManager$PrefManager;->loadSummaryLogs(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object p0
@@ -82,7 +76,6 @@
 .method public static synthetic access$900(Ljava/lang/String;Ljava/util/Map;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/log/PlayerLogManager$PrefManager;->savePlayerGameData(Ljava/lang/String;Ljava/util/Map;)V
 
     return-void
@@ -128,7 +121,7 @@
     move-exception p0
 
     .line 3
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -178,7 +171,7 @@
     move-exception p0
 
     .line 3
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -261,7 +254,7 @@
     move-exception p0
 
     .line 4
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -343,14 +336,14 @@
 
     .line 5
     :goto_0
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v4
 
     if-ge v3, v4, :cond_1
 
     .line 6
-    invoke-virtual {p0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -384,7 +377,7 @@
     move-exception p0
 
     .line 10
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -454,7 +447,7 @@
     move-exception p0
 
     .line 4
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -507,7 +500,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
@@ -557,7 +550,7 @@
     move-exception p0
 
     .line 7
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 

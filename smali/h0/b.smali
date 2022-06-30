@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(FFFF)Landroid/view/animation/Interpolator;
+.method public static a(FFF)Landroid/view/animation/Interpolator;
     .locals 2
 
     .line 1
@@ -17,7 +17,9 @@
     .line 2
     new-instance v0, Landroid/view/animation/PathInterpolator;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Landroid/view/animation/PathInterpolator;-><init>(FFFF)V
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    invoke-direct {v0, p0, p1, p2, v1}, Landroid/view/animation/PathInterpolator;-><init>(FFFF)V
 
     return-object v0
 
@@ -25,7 +27,7 @@
     :cond_0
     new-instance v0, Lh0/a;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lh0/a;-><init>(FFFF)V
+    invoke-direct {v0, p0, p1, p2}, Lh0/a;-><init>(FFF)V
 
     return-object v0
 .end method

@@ -1,34 +1,19 @@
-.class public interface abstract Lke/b;
+.class public abstract Lke/b;
 .super Ljava/lang/Object;
-.source "Functions.kt"
+.source "CoroutineContextImpl.kt"
+
+# interfaces
+.implements Lke/f$b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<P1:",
+        "<B::",
+        "Lke/f$a;",
+        "E::TB;>",
         "Ljava/lang/Object;",
-        "P2:",
-        "Ljava/lang/Object;",
-        "P3:",
-        "Ljava/lang/Object;",
-        "P4:",
-        "Ljava/lang/Object;",
-        "P5:",
-        "Ljava/lang/Object;",
-        "P6:",
-        "Ljava/lang/Object;",
-        "P7:",
-        "Ljava/lang/Object;",
-        "P8:",
-        "Ljava/lang/Object;",
-        "P9:",
-        "Ljava/lang/Object;",
-        "P10:",
-        "Ljava/lang/Object;",
-        "R:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
+        "Lke/f$b<",
+        "TE;>;"
     }
 .end annotation

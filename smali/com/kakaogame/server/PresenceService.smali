@@ -62,7 +62,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -71,7 +70,6 @@
 .method public static synthetic access$100()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/server/PresenceService;->stopHeartbeat()V
 
     return-void
@@ -80,7 +78,6 @@
 .method public static synthetic access$200()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/server/PresenceService;->sendHeartBeat()V
 
     return-void
@@ -89,7 +86,6 @@
 .method public static initialize(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object p0
@@ -266,7 +262,6 @@
 
     if-lez v2, :cond_0
 
-    .line 1
     sput-wide p0, Lcom/kakaogame/server/PresenceService;->heartBeatInterval:J
 
     :cond_0

@@ -38,7 +38,6 @@
 .method public handleInternal(Landroid/webkit/WebView;Landroid/net/Uri;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/kakaogame/web/WebDialog$SelectImageHandler;->this$0:Lcom/kakaogame/web/WebDialog;
 
     iget-object p2, p1, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;

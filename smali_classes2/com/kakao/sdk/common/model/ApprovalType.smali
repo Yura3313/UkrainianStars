@@ -27,7 +27,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/common/model/ApprovalType$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/common/model/ApprovalType$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/common/model/ApprovalType;->Companion:Lcom/kakao/sdk/common/model/ApprovalType$Companion;
 
@@ -37,7 +37,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +47,6 @@
 .method public getValue()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/common/model/ApprovalType;->value:Ljava/lang/String;
 
     return-object v0

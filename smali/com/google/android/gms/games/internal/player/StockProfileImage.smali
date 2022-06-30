@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lb2/e;
+.implements Lc2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lb2/e<",
+        "Lc2/e<",
         "Lcom/google/android/gms/games/internal/player/StockProfileImage;",
         ">;"
     }
@@ -20,8 +20,8 @@
 
 
 # virtual methods
-.method public abstract getImageUrl()Ljava/lang/String;
+.method public abstract E()Landroid/net/Uri;
 .end method
 
-.method public abstract x()Landroid/net/Uri;
+.method public abstract getImageUrl()Ljava/lang/String;
 .end method

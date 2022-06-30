@@ -1,4 +1,4 @@
-.class public Lp/d;
+.class public final Lp/d;
 .super Ljava/lang/Object;
 .source "LinearSystem.java"
 
@@ -16,15 +16,13 @@
 
 .field public static q:I = 0x3e8
 
-.field public static r:J
-
 
 # instance fields
 .field public a:Z
 
 .field public b:I
 
-.field public c:Lp/d$a;
+.field public c:Lp/f;
 
 .field public d:I
 
@@ -48,7 +46,7 @@
 
 .field public n:I
 
-.field public o:Lp/d$a;
+.field public o:Lp/b;
 
 
 # direct methods
@@ -128,14 +126,14 @@
 
     invoke-direct {v1, v0}, Lp/f;-><init>(Lp/c;)V
 
-    iput-object v1, p0, Lp/d;->c:Lp/d$a;
+    iput-object v1, p0, Lp/d;->c:Lp/f;
 
     .line 18
     new-instance v1, Lp/b;
 
     invoke-direct {v1, v0}, Lp/b;-><init>(Lp/c;)V
 
-    iput-object v1, p0, Lp/d;->o:Lp/d$a;
+    iput-object v1, p0, Lp/d;->o:Lp/b;
 
     return-void
 .end method
@@ -148,9 +146,7 @@
     .line 1
     iget-object p2, p0, Lp/d;->l:Lp/c;
 
-    iget-object p2, p2, Lp/c;->c:Ljava/lang/Object;
-
-    check-cast p2, Lp/e;
+    iget-object p2, p2, Lp/c;->b:Lp/e;
 
     invoke-virtual {p2}, Lp/e;->a()Ljava/lang/Object;
 
@@ -216,7 +212,7 @@
     return-object p2
 .end method
 
-.method public b(Lp/h;Lp/h;IFLp/h;Lp/h;II)V
+.method public final b(Lp/h;Lp/h;IFLp/h;Lp/h;II)V
     .locals 6
 
     .line 1
@@ -398,7 +394,7 @@
     if-eq p8, p1, :cond_7
 
     .line 21
-    invoke-virtual {v0, p0, p8}, Lp/b;->c(Lp/d;I)Lp/b;
+    invoke-virtual {v0, p0, p8}, Lp/b;->b(Lp/d;I)Lp/b;
 
     .line 22
     :cond_7
@@ -407,7 +403,7 @@
     return-void
 .end method
 
-.method public c(Lp/b;)V
+.method public final c(Lp/b;)V
     .locals 16
 
     move-object/from16 v0, p0
@@ -441,7 +437,7 @@
     :cond_1
     iget-boolean v2, v1, Lp/b;->e:Z
 
-    if-nez v2, :cond_1f
+    if-nez v2, :cond_23
 
     .line 4
     iget-object v2, v0, Lp/d;->f:[Lp/b;
@@ -531,7 +527,7 @@
     if-eqz v9, :cond_5
 
     .line 12
-    invoke-virtual {v1, v0, v8, v3}, Lp/b;->k(Lp/d;Lp/h;Z)V
+    invoke-virtual {v1, v0, v8, v3}, Lp/b;->j(Lp/d;Lp/h;Z)V
 
     goto :goto_4
 
@@ -543,7 +539,7 @@
 
     aget-object v8, v9, v8
 
-    invoke-virtual {v1, v0, v8, v3}, Lp/b;->l(Lp/d;Lp/b;Z)V
+    invoke-virtual {v1, v0, v8, v3}, Lp/b;->k(Lp/d;Lp/b;Z)V
 
     :goto_4
     add-int/lit8 v7, v7, 0x1
@@ -587,7 +583,7 @@
     .line 19
     :cond_9
     :goto_5
-    invoke-virtual/range {p1 .. p1}, Lp/b;->isEmpty()Z
+    invoke-virtual/range {p1 .. p1}, Lp/b;->g()Z
 
     move-result v2
 
@@ -642,7 +638,7 @@
     const/4 v14, 0x0
 
     :goto_6
-    if-ge v8, v2, :cond_12
+    if-ge v8, v2, :cond_16
 
     .line 24
     iget-object v15, v1, Lp/b;->d:Lp/b$a;
@@ -661,48 +657,59 @@
     .line 26
     iget v5, v4, Lp/h;->i:I
 
-    if-ne v5, v3, :cond_e
+    if-ne v5, v3, :cond_10
 
     if-nez v9, :cond_c
 
     .line 27
-    invoke-virtual {v1, v4}, Lp/b;->h(Lp/h;)Z
+    iget v5, v4, Lp/h;->l:I
 
-    move-result v5
+    if-gt v5, v3, :cond_d
 
-    :goto_7
-    move v12, v5
-
-    goto :goto_8
+    goto :goto_7
 
     :cond_c
     cmpl-float v5, v11, v15
 
-    if-lez v5, :cond_d
+    if-lez v5, :cond_e
 
     .line 28
-    invoke-virtual {v1, v4}, Lp/b;->h(Lp/h;)Z
+    iget v5, v4, Lp/h;->l:I
 
-    move-result v5
+    if-gt v5, v3, :cond_d
 
-    goto :goto_7
+    :goto_7
+    const/4 v12, 0x1
+
+    goto :goto_8
+
+    :cond_d
+    const/4 v12, 0x0
 
     :goto_8
     move-object v9, v4
 
     move v11, v15
 
-    goto :goto_b
+    goto :goto_d
 
-    :cond_d
-    if-nez v12, :cond_11
+    :cond_e
+    if-nez v12, :cond_15
 
     .line 29
-    invoke-virtual {v1, v4}, Lp/b;->h(Lp/h;)Z
+    iget v5, v4, Lp/h;->l:I
 
-    move-result v5
+    if-gt v5, v3, :cond_f
 
-    if-eqz v5, :cond_11
+    const/4 v5, 0x1
+
+    goto :goto_9
+
+    :cond_f
+    const/4 v5, 0x0
+
+    :goto_9
+    if-eqz v5, :cond_15
 
     move-object v9, v4
 
@@ -710,55 +717,66 @@
 
     const/4 v12, 0x1
 
-    goto :goto_b
+    goto :goto_d
 
-    :cond_e
-    if-nez v9, :cond_11
+    :cond_10
+    if-nez v9, :cond_15
 
     cmpg-float v5, v15, v6
 
-    if-gez v5, :cond_11
+    if-gez v5, :cond_15
 
-    if-nez v10, :cond_f
+    if-nez v10, :cond_11
 
     .line 30
-    invoke-virtual {v1, v4}, Lp/b;->h(Lp/h;)Z
+    iget v5, v4, Lp/h;->l:I
 
-    move-result v5
-
-    :goto_9
-    move v14, v5
+    if-gt v5, v3, :cond_12
 
     goto :goto_a
 
-    :cond_f
+    :cond_11
     cmpl-float v5, v13, v15
 
-    if-lez v5, :cond_10
+    if-lez v5, :cond_13
 
     .line 31
-    invoke-virtual {v1, v4}, Lp/b;->h(Lp/h;)Z
+    iget v5, v4, Lp/h;->l:I
 
-    move-result v5
-
-    goto :goto_9
+    if-gt v5, v3, :cond_12
 
     :goto_a
+    const/4 v14, 0x1
+
+    goto :goto_b
+
+    :cond_12
+    const/4 v14, 0x0
+
+    :goto_b
     move-object v10, v4
 
     move v13, v15
 
-    goto :goto_b
+    goto :goto_d
 
-    :cond_10
-    if-nez v14, :cond_11
+    :cond_13
+    if-nez v14, :cond_15
 
     .line 32
-    invoke-virtual {v1, v4}, Lp/b;->h(Lp/h;)Z
+    iget v5, v4, Lp/h;->l:I
 
-    move-result v5
+    if-gt v5, v3, :cond_14
 
-    if-eqz v5, :cond_11
+    const/4 v5, 0x1
+
+    goto :goto_c
+
+    :cond_14
+    const/4 v5, 0x0
+
+    :goto_c
+    if-eqz v5, :cond_15
 
     move-object v10, v4
 
@@ -766,50 +784,50 @@
 
     const/4 v14, 0x1
 
-    :cond_11
-    :goto_b
+    :cond_15
+    :goto_d
     add-int/lit8 v8, v8, 0x1
 
     const/4 v5, -0x1
 
     goto :goto_6
 
-    :cond_12
-    if-eqz v9, :cond_13
+    :cond_16
+    if-eqz v9, :cond_17
 
-    goto :goto_c
+    goto :goto_e
 
-    :cond_13
+    :cond_17
     move-object v9, v10
 
-    :goto_c
-    if-nez v9, :cond_14
+    :goto_e
+    if-nez v9, :cond_18
 
     const/4 v2, 0x1
 
-    goto :goto_d
+    goto :goto_f
 
     .line 33
-    :cond_14
-    invoke-virtual {v1, v9}, Lp/b;->j(Lp/h;)V
+    :cond_18
+    invoke-virtual {v1, v9}, Lp/b;->i(Lp/h;)V
 
     const/4 v2, 0x0
 
     .line 34
-    :goto_d
+    :goto_f
     iget-object v4, v1, Lp/b;->d:Lp/b$a;
 
     invoke-interface {v4}, Lp/b$a;->c()I
 
     move-result v4
 
-    if-nez v4, :cond_15
+    if-nez v4, :cond_19
 
     .line 35
     iput-boolean v3, v1, Lp/b;->e:Z
 
-    :cond_15
-    if-eqz v2, :cond_1b
+    :cond_19
+    if-eqz v2, :cond_1f
 
     .line 36
     iget v2, v0, Lp/d;->i:I
@@ -818,12 +836,12 @@
 
     iget v4, v0, Lp/d;->e:I
 
-    if-lt v2, v4, :cond_16
+    if-lt v2, v4, :cond_1a
 
     .line 37
     invoke-virtual/range {p0 .. p0}, Lp/d;->p()V
 
-    :cond_16
+    :cond_1a
     const/4 v2, 0x3
 
     .line 38
@@ -851,9 +869,7 @@
     .line 42
     iget-object v5, v0, Lp/d;->l:Lp/c;
 
-    iget-object v5, v5, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast v5, [Lp/h;
+    iget-object v5, v5, Lp/c;->c:[Lp/h;
 
     aput-object v2, v5, v4
 
@@ -871,12 +887,10 @@
 
     add-int/2addr v4, v3
 
-    if-ne v5, v4, :cond_1b
+    if-ne v5, v4, :cond_1f
 
     .line 47
-    iget-object v4, v0, Lp/d;->o:Lp/d$a;
-
-    check-cast v4, Lp/b;
+    iget-object v4, v0, Lp/d;->o:Lp/b;
 
     invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -891,14 +905,14 @@
     const/4 v5, 0x0
 
     .line 50
-    :goto_e
+    :goto_10
     iget-object v8, v1, Lp/b;->d:Lp/b$a;
 
     invoke-interface {v8}, Lp/b$a;->c()I
 
     move-result v8
 
-    if-ge v5, v8, :cond_17
+    if-ge v5, v8, :cond_1b
 
     .line 51
     iget-object v8, v1, Lp/b;->d:Lp/b$a;
@@ -921,11 +935,11 @@
 
     add-int/lit8 v5, v5, 0x1
 
-    goto :goto_e
+    goto :goto_10
 
     .line 54
-    :cond_17
-    iget-object v4, v0, Lp/d;->o:Lp/d$a;
+    :cond_1b
+    iget-object v4, v0, Lp/d;->o:Lp/b;
 
     invoke-virtual {v0, v4}, Lp/d;->s(Lp/d$a;)I
 
@@ -934,28 +948,28 @@
 
     const/4 v5, -0x1
 
-    if-ne v4, v5, :cond_1a
+    if-ne v4, v5, :cond_1e
 
     .line 56
     iget-object v4, v1, Lp/b;->a:Lp/h;
 
-    if-ne v4, v2, :cond_18
+    if-ne v4, v2, :cond_1c
 
     .line 57
-    invoke-virtual {v1, v7, v2}, Lp/b;->i([ZLp/h;)Lp/h;
+    invoke-virtual {v1, v7, v2}, Lp/b;->h([ZLp/h;)Lp/h;
 
     move-result-object v2
 
-    if-eqz v2, :cond_18
+    if-eqz v2, :cond_1c
 
     .line 58
-    invoke-virtual {v1, v2}, Lp/b;->j(Lp/h;)V
+    invoke-virtual {v1, v2}, Lp/b;->i(Lp/h;)V
 
     .line 59
-    :cond_18
+    :cond_1c
     iget-boolean v2, v1, Lp/b;->e:Z
 
-    if-nez v2, :cond_19
+    if-nez v2, :cond_1d
 
     .line 60
     iget-object v2, v1, Lp/b;->a:Lp/h;
@@ -963,12 +977,10 @@
     invoke-virtual {v2, v0, v1}, Lp/h;->e(Lp/d;Lp/b;)V
 
     .line 61
-    :cond_19
+    :cond_1d
     iget-object v2, v0, Lp/d;->l:Lp/c;
 
-    iget-object v2, v2, Lp/c;->b:Ljava/lang/Object;
-
-    check-cast v2, Lp/e;
+    iget-object v2, v2, Lp/c;->a:Lp/e;
 
     invoke-virtual {v2, v1}, Lp/e;->b(Ljava/lang/Object;)Z
 
@@ -979,60 +991,60 @@
 
     iput v2, v0, Lp/d;->j:I
 
-    :cond_1a
+    :cond_1e
     const/4 v2, 0x1
 
-    goto :goto_f
+    goto :goto_11
 
-    :cond_1b
+    :cond_1f
     const/4 v2, 0x0
 
     .line 63
-    :goto_f
+    :goto_11
     iget-object v4, v1, Lp/b;->a:Lp/h;
 
-    if-eqz v4, :cond_1c
+    if-eqz v4, :cond_20
 
     iget v4, v4, Lp/h;->i:I
 
-    if-eq v4, v3, :cond_1d
+    if-eq v4, v3, :cond_21
 
     iget v4, v1, Lp/b;->b:F
 
     cmpg-float v4, v4, v6
 
-    if-ltz v4, :cond_1c
+    if-ltz v4, :cond_20
 
-    goto :goto_10
+    goto :goto_12
 
-    :cond_1c
+    :cond_20
     const/4 v3, 0x0
 
-    :cond_1d
-    :goto_10
-    if-nez v3, :cond_1e
+    :cond_21
+    :goto_12
+    if-nez v3, :cond_22
 
     return-void
 
-    :cond_1e
+    :cond_22
     move v4, v2
 
-    goto :goto_11
+    goto :goto_13
 
-    :cond_1f
+    :cond_23
     const/4 v4, 0x0
 
-    :goto_11
-    if-nez v4, :cond_20
+    :goto_13
+    if-nez v4, :cond_24
 
     .line 64
     invoke-virtual/range {p0 .. p1}, Lp/d;->i(Lp/b;)V
 
-    :cond_20
+    :cond_24
     return-void
 .end method
 
-.method public d(Lp/h;Lp/h;II)Lp/b;
+.method public final d(Lp/h;Lp/h;II)Lp/b;
     .locals 4
 
     const/16 v0, 0x8
@@ -1119,7 +1131,7 @@
     if-eq p4, v0, :cond_4
 
     .line 9
-    invoke-virtual {v1, p0, p4}, Lp/b;->c(Lp/d;I)Lp/b;
+    invoke-virtual {v1, p0, p4}, Lp/b;->b(Lp/d;I)Lp/b;
 
     .line 10
     :cond_4
@@ -1128,7 +1140,7 @@
     return-object v1
 .end method
 
-.method public e(Lp/h;I)V
+.method public final e(Lp/h;I)V
     .locals 4
 
     .line 1
@@ -1158,9 +1170,7 @@
     .line 4
     iget-object p2, p0, Lp/d;->l:Lp/c;
 
-    iget-object p2, p2, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast p2, [Lp/h;
+    iget-object p2, p2, Lp/c;->c:[Lp/h;
 
     aget-object p2, p2, p1
 
@@ -1281,7 +1291,66 @@
     return-void
 .end method
 
-.method public f(Lp/h;Lp/h;II)V
+.method public final f(Lp/h;Lp/h;II)V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lp/d;->m()Lp/b;
+
+    move-result-object v0
+
+    .line 2
+    invoke-virtual {p0}, Lp/d;->n()Lp/h;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    .line 3
+    iput v2, v1, Lp/h;->d:I
+
+    .line 4
+    invoke-virtual {v0, p1, p2, v1, p3}, Lp/b;->d(Lp/h;Lp/h;Lp/h;I)Lp/b;
+
+    const/16 p1, 0x8
+
+    if-eq p4, p1, :cond_0
+
+    .line 5
+    iget-object p1, v0, Lp/b;->d:Lp/b$a;
+
+    invoke-interface {p1, v1}, Lp/b$a;->j(Lp/h;)F
+
+    move-result p1
+
+    const/high16 p2, -0x40800000    # -1.0f
+
+    mul-float p1, p1, p2
+
+    float-to-int p1, p1
+
+    const/4 p2, 0x0
+
+    .line 6
+    invoke-virtual {p0, p4, p2}, Lp/d;->k(ILjava/lang/String;)Lp/h;
+
+    move-result-object p2
+
+    .line 7
+    iget-object p3, v0, Lp/b;->d:Lp/b$a;
+
+    int-to-float p1, p1
+
+    invoke-interface {p3, p2, p1}, Lp/b$a;->a(Lp/h;F)V
+
+    .line 8
+    :cond_0
+    invoke-virtual {p0, v0}, Lp/d;->c(Lp/b;)V
+
+    return-void
+.end method
+
+.method public final g(Lp/h;Lp/h;II)V
     .locals 3
 
     .line 1
@@ -1340,66 +1409,7 @@
     return-void
 .end method
 
-.method public g(Lp/h;Lp/h;II)V
-    .locals 3
-
-    .line 1
-    invoke-virtual {p0}, Lp/d;->m()Lp/b;
-
-    move-result-object v0
-
-    .line 2
-    invoke-virtual {p0}, Lp/d;->n()Lp/h;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    .line 3
-    iput v2, v1, Lp/h;->d:I
-
-    .line 4
-    invoke-virtual {v0, p1, p2, v1, p3}, Lp/b;->f(Lp/h;Lp/h;Lp/h;I)Lp/b;
-
-    const/16 p1, 0x8
-
-    if-eq p4, p1, :cond_0
-
-    .line 5
-    iget-object p1, v0, Lp/b;->d:Lp/b$a;
-
-    invoke-interface {p1, v1}, Lp/b$a;->j(Lp/h;)F
-
-    move-result p1
-
-    const/high16 p2, -0x40800000    # -1.0f
-
-    mul-float p1, p1, p2
-
-    float-to-int p1, p1
-
-    const/4 p2, 0x0
-
-    .line 6
-    invoke-virtual {p0, p4, p2}, Lp/d;->k(ILjava/lang/String;)Lp/h;
-
-    move-result-object p2
-
-    .line 7
-    iget-object p3, v0, Lp/b;->d:Lp/b$a;
-
-    int-to-float p1, p1
-
-    invoke-interface {p3, p2, p1}, Lp/b$a;->a(Lp/h;F)V
-
-    .line 8
-    :cond_0
-    invoke-virtual {p0, v0}, Lp/d;->c(Lp/b;)V
-
-    return-void
-.end method
-
-.method public h(Lp/h;Lp/h;Lp/h;Lp/h;FI)V
+.method public final h(Lp/h;Lp/h;Lp/h;Lp/h;F)V
     .locals 7
 
     .line 1
@@ -1420,17 +1430,9 @@
     move v5, p5
 
     .line 2
-    invoke-virtual/range {v0 .. v5}, Lp/b;->d(Lp/h;Lp/h;Lp/h;Lp/h;F)Lp/b;
-
-    const/16 p1, 0x8
-
-    if-eq p6, p1, :cond_0
+    invoke-virtual/range {v0 .. v5}, Lp/b;->c(Lp/h;Lp/h;Lp/h;Lp/h;F)Lp/b;
 
     .line 3
-    invoke-virtual {v6, p0, p6}, Lp/b;->c(Lp/d;I)Lp/b;
-
-    .line 4
-    :cond_0
     invoke-virtual {p0, v6}, Lp/d;->c(Lp/b;)V
 
     return-void
@@ -1531,9 +1533,7 @@
     .line 14
     iget-object v2, p0, Lp/d;->l:Lp/c;
 
-    iget-object v2, v2, Lp/c;->b:Ljava/lang/Object;
-
-    check-cast v2, Lp/e;
+    iget-object v2, v2, Lp/c;->a:Lp/e;
 
     invoke-virtual {v2, v1}, Lp/e;->b(Ljava/lang/Object;)Z
 
@@ -1650,8 +1650,8 @@
     return-void
 .end method
 
-.method public k(ILjava/lang/String;)Lp/h;
-    .locals 2
+.method public final k(ILjava/lang/String;)Lp/h;
+    .locals 3
 
     .line 1
     iget v0, p0, Lp/d;->i:I
@@ -1696,21 +1696,42 @@
     .line 8
     iget-object p1, p0, Lp/d;->l:Lp/c;
 
-    iget-object p1, p1, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast p1, [Lp/h;
+    iget-object p1, p1, Lp/c;->c:[Lp/h;
 
     aput-object p2, p1, v0
 
     .line 9
-    iget-object p1, p0, Lp/d;->c:Lp/d$a;
+    iget-object p1, p0, Lp/d;->c:Lp/f;
 
-    invoke-interface {p1, p2}, Lp/d$a;->a(Lp/h;)V
+    .line 10
+    iget-object v0, p1, Lp/f;->i:Lp/f$b;
+
+    .line 11
+    iput-object p2, v0, Lp/f$b;->f:Lp/h;
+
+    .line 12
+    iget-object v0, p2, Lp/h;->h:[F
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Ljava/util/Arrays;->fill([FF)V
+
+    .line 13
+    iget-object v0, p2, Lp/h;->h:[F
+
+    iget v1, p2, Lp/h;->d:I
+
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    aput v2, v0, v1
+
+    .line 14
+    invoke-virtual {p1, p2}, Lp/f;->l(Lp/h;)V
 
     return-object p2
 .end method
 
-.method public l(Ljava/lang/Object;)Lp/h;
+.method public final l(Ljava/lang/Object;)Lp/h;
     .locals 4
 
     const/4 v0, 0x0
@@ -1770,9 +1791,7 @@
 
     iget-object v3, p0, Lp/d;->l:Lp/c;
 
-    iget-object v3, v3, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast v3, [Lp/h;
+    iget-object v3, v3, Lp/c;->c:[Lp/h;
 
     aget-object v3, v3, p1
 
@@ -1808,9 +1827,7 @@
     .line 14
     iget-object v1, p0, Lp/d;->l:Lp/c;
 
-    iget-object v1, v1, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast v1, [Lp/h;
+    iget-object v1, v1, Lp/c;->c:[Lp/h;
 
     aput-object v0, v1, p1
 
@@ -1818,15 +1835,13 @@
     return-object v0
 .end method
 
-.method public m()Lp/b;
-    .locals 5
+.method public final m()Lp/b;
+    .locals 2
 
     .line 1
     iget-object v0, p0, Lp/d;->l:Lp/c;
 
-    iget-object v0, v0, Lp/c;->b:Ljava/lang/Object;
-
-    check-cast v0, Lp/e;
+    iget-object v0, v0, Lp/c;->a:Lp/e;
 
     invoke-virtual {v0}, Lp/e;->a()Ljava/lang/Object;
 
@@ -1843,50 +1858,34 @@
 
     invoke-direct {v0, v1}, Lp/b;-><init>(Lp/c;)V
 
-    .line 3
-    sget-wide v1, Lp/d;->r:J
-
-    const-wide/16 v3, 0x1
-
-    add-long/2addr v1, v3
-
-    sput-wide v1, Lp/d;->r:J
-
     goto :goto_0
 
     :cond_0
     const/4 v1, 0x0
 
-    .line 4
+    .line 3
     iput-object v1, v0, Lp/b;->a:Lp/h;
 
-    .line 5
+    .line 4
     iget-object v1, v0, Lp/b;->d:Lp/b$a;
 
     invoke-interface {v1}, Lp/b$a;->clear()V
 
     const/4 v1, 0x0
 
-    .line 6
+    .line 5
     iput v1, v0, Lp/b;->b:F
 
     const/4 v1, 0x0
 
-    .line 7
+    .line 6
     iput-boolean v1, v0, Lp/b;->e:Z
 
-    .line 8
     :goto_0
-    sget v1, Lp/h;->m:I
-
-    add-int/lit8 v1, v1, 0x1
-
-    sput v1, Lp/h;->m:I
-
     return-object v0
 .end method
 
-.method public n()Lp/h;
+.method public final n()Lp/h;
     .locals 3
 
     .line 1
@@ -1931,16 +1930,14 @@
     .line 7
     iget-object v2, p0, Lp/d;->l:Lp/c;
 
-    iget-object v2, v2, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast v2, [Lp/h;
+    iget-object v2, v2, Lp/c;->c:[Lp/h;
 
     aput-object v0, v2, v1
 
     return-object v0
 .end method
 
-.method public o(Ljava/lang/Object;)I
+.method public final o(Ljava/lang/Object;)I
     .locals 1
 
     .line 1
@@ -1992,9 +1989,7 @@
     .line 3
     iget-object v0, p0, Lp/d;->l:Lp/c;
 
-    iget-object v1, v0, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast v1, [Lp/h;
+    iget-object v1, v0, Lp/c;->c:[Lp/h;
 
     iget v2, p0, Lp/d;->d:I
 
@@ -2004,7 +1999,7 @@
 
     check-cast v1, [Lp/h;
 
-    iput-object v1, v0, Lp/c;->d:Ljava/lang/Object;
+    iput-object v1, v0, Lp/c;->c:[Lp/h;
 
     .line 4
     iget v0, p0, Lp/d;->d:I
@@ -2022,8 +2017,8 @@
     return-void
 .end method
 
-.method public q()V
-    .locals 3
+.method public final q()V
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -2031,82 +2026,91 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lp/d;->c:Lp/d$a;
-
-    invoke-interface {v0}, Lp/d$a;->isEmpty()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
+    iget-object v0, p0, Lp/d;->c:Lp/f;
 
     .line 2
-    invoke-virtual {p0}, Lp/d;->j()V
+    iget v1, v0, Lp/f;->h:I
 
-    return-void
+    const/4 v2, 0x0
 
-    .line 3
-    :cond_0
-    iget-boolean v0, p0, Lp/d;->g:Z
+    const/4 v3, 0x1
 
-    if-eqz v0, :cond_4
+    if-nez v1, :cond_0
 
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    .line 4
-    :goto_0
-    iget v2, p0, Lp/d;->j:I
-
-    if-ge v1, v2, :cond_2
-
-    .line 5
-    iget-object v2, p0, Lp/d;->f:[Lp/b;
-
-    aget-object v2, v2, v1
-
-    .line 6
-    iget-boolean v2, v2, Lp/b;->e:Z
-
-    if-nez v2, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    add-int/lit8 v1, v1, 0x1
+    const/4 v1, 0x1
 
     goto :goto_0
 
-    :cond_2
-    const/4 v0, 0x1
+    :cond_0
+    const/4 v1, 0x0
 
+    :goto_0
+    if-eqz v1, :cond_1
+
+    .line 3
+    invoke-virtual {p0}, Lp/d;->j()V
+
+    return-void
+
+    .line 4
+    :cond_1
+    iget-boolean v1, p0, Lp/d;->g:Z
+
+    if-eqz v1, :cond_5
+
+    const/4 v0, 0x0
+
+    .line 5
     :goto_1
-    if-nez v0, :cond_3
+    iget v1, p0, Lp/d;->j:I
+
+    if-ge v0, v1, :cond_3
+
+    .line 6
+    iget-object v1, p0, Lp/d;->f:[Lp/b;
+
+    aget-object v1, v1, v0
 
     .line 7
-    iget-object v0, p0, Lp/d;->c:Lp/d$a;
+    iget-boolean v1, v1, Lp/b;->e:Z
+
+    if-nez v1, :cond_2
+
+    goto :goto_2
+
+    :cond_2
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_1
+
+    :cond_3
+    const/4 v2, 0x1
+
+    :goto_2
+    if-nez v2, :cond_4
+
+    .line 8
+    iget-object v0, p0, Lp/d;->c:Lp/f;
 
     invoke-virtual {p0, v0}, Lp/d;->r(Lp/d$a;)V
 
-    goto :goto_2
-
-    .line 8
-    :cond_3
-    invoke-virtual {p0}, Lp/d;->j()V
-
-    goto :goto_2
+    goto :goto_3
 
     .line 9
     :cond_4
-    iget-object v0, p0, Lp/d;->c:Lp/d$a;
+    invoke-virtual {p0}, Lp/d;->j()V
 
+    goto :goto_3
+
+    .line 10
+    :cond_5
     invoke-virtual {p0, v0}, Lp/d;->r(Lp/d$a;)V
 
-    :goto_2
+    :goto_3
     return-void
 .end method
 
-.method public r(Lp/d$a;)V
+.method public final r(Lp/d$a;)V
     .locals 18
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -2333,13 +2337,11 @@
     .line 18
     iget-object v4, v0, Lp/d;->l:Lp/c;
 
-    iget-object v4, v4, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast v4, [Lp/h;
+    iget-object v4, v4, Lp/c;->c:[Lp/h;
 
     aget-object v4, v4, v10
 
-    invoke-virtual {v1, v4}, Lp/b;->j(Lp/h;)V
+    invoke-virtual {v1, v4}, Lp/b;->i(Lp/h;)V
 
     .line 19
     iget-object v4, v1, Lp/b;->a:Lp/h;
@@ -2447,7 +2449,7 @@
     :cond_3
     iget-object v4, p0, Lp/d;->h:[Z
 
-    invoke-interface {p1, p0, v4}, Lp/d$a;->b(Lp/d;[Z)Lp/h;
+    invoke-interface {p1, v4}, Lp/d$a;->a([Z)Lp/h;
 
     move-result-object v4
 
@@ -2566,7 +2568,7 @@
     iput v6, v7, Lp/h;->c:I
 
     .line 20
-    invoke-virtual {v5, v4}, Lp/b;->j(Lp/h;)V
+    invoke-virtual {v5, v4}, Lp/b;->i(Lp/h;)V
 
     .line 21
     iget-object v4, v5, Lp/b;->a:Lp/h;
@@ -2608,9 +2610,7 @@
     .line 3
     iget-object v2, p0, Lp/d;->l:Lp/c;
 
-    iget-object v2, v2, Lp/c;->b:Ljava/lang/Object;
-
-    check-cast v2, Lp/e;
+    iget-object v2, v2, Lp/c;->a:Lp/e;
 
     invoke-virtual {v2, v1}, Lp/e;->b(Ljava/lang/Object;)Z
 
@@ -2630,7 +2630,7 @@
     return-void
 .end method
 
-.method public u()V
+.method public final u()V
     .locals 9
 
     const/4 v0, 0x0
@@ -2641,19 +2641,13 @@
     :goto_0
     iget-object v2, p0, Lp/d;->l:Lp/c;
 
-    iget-object v3, v2, Lp/c;->d:Ljava/lang/Object;
+    iget-object v3, v2, Lp/c;->c:[Lp/h;
 
-    move-object v4, v3
-
-    check-cast v4, [Lp/h;
-
-    array-length v4, v4
+    array-length v4, v3
 
     if-ge v1, v4, :cond_1
 
     .line 2
-    check-cast v3, [Lp/h;
-
     aget-object v2, v3, v1
 
     if-eqz v2, :cond_0
@@ -2668,9 +2662,7 @@
 
     .line 4
     :cond_1
-    iget-object v1, v2, Lp/c;->c:Ljava/lang/Object;
-
-    check-cast v1, Lp/e;
+    iget-object v1, v2, Lp/c;->b:Lp/e;
 
     iget-object v2, p0, Lp/d;->m:[Lp/h;
 
@@ -2724,9 +2716,7 @@
     .line 12
     iget-object v1, p0, Lp/d;->l:Lp/c;
 
-    iget-object v1, v1, Lp/c;->d:Ljava/lang/Object;
-
-    check-cast v1, [Lp/h;
+    iget-object v1, v1, Lp/c;->c:[Lp/h;
 
     const/4 v2, 0x0
 
@@ -2736,31 +2726,37 @@
     iput v0, p0, Lp/d;->b:I
 
     .line 14
-    iget-object v1, p0, Lp/d;->c:Lp/d$a;
+    iget-object v1, p0, Lp/d;->c:Lp/f;
 
-    invoke-interface {v1}, Lp/d$a;->clear()V
+    .line 15
+    iput v0, v1, Lp/f;->h:I
+
+    const/4 v2, 0x0
+
+    .line 16
+    iput v2, v1, Lp/b;->b:F
 
     const/4 v1, 0x1
 
-    .line 15
+    .line 17
     iput v1, p0, Lp/d;->i:I
 
     const/4 v1, 0x0
 
-    .line 16
+    .line 18
     :goto_2
     iget v2, p0, Lp/d;->j:I
 
     if-ge v1, v2, :cond_6
 
-    .line 17
+    .line 19
     iget-object v2, p0, Lp/d;->f:[Lp/b;
 
     aget-object v3, v2, v1
 
     if-eqz v3, :cond_5
 
-    .line 18
+    .line 20
     aget-object v2, v2, v1
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -2770,21 +2766,21 @@
 
     goto :goto_2
 
-    .line 19
+    .line 21
     :cond_6
     invoke-virtual {p0}, Lp/d;->t()V
 
-    .line 20
+    .line 22
     iput v0, p0, Lp/d;->j:I
 
-    .line 21
+    .line 23
     new-instance v0, Lp/b;
 
     iget-object v1, p0, Lp/d;->l:Lp/c;
 
     invoke-direct {v0, v1}, Lp/b;-><init>(Lp/c;)V
 
-    iput-object v0, p0, Lp/d;->o:Lp/d$a;
+    iput-object v0, p0, Lp/d;->o:Lp/b;
 
     return-void
 .end method

@@ -1,490 +1,218 @@
 .class public final Lcom/google/android/material/internal/i;
 .super Ljava/lang/Object;
-.source "StaticLayoutBuilderCompat.java"
+.source "TextDrawableHelper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/android/material/internal/i$a;
+        Lcom/google/android/material/internal/i$b;
     }
 .end annotation
 
 
-# static fields
-.field public static j:Z
+# instance fields
+.field public final a:Landroid/text/TextPaint;
 
-.field public static k:Ljava/lang/reflect/Constructor;
+.field public final b:Lcom/google/android/material/internal/i$a;
+
+.field public c:F
+
+.field public d:Z
+
+.field public e:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/lang/reflect/Constructor<",
-            "Landroid/text/StaticLayout;",
+            "Ljava/lang/ref/WeakReference<",
+            "Lcom/google/android/material/internal/i$b;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public static l:Ljava/lang/Object;
-
-
-# instance fields
-.field public a:Ljava/lang/CharSequence;
-
-.field public final b:Landroid/text/TextPaint;
-
-.field public final c:I
-
-.field public d:I
-
-.field public e:Landroid/text/Layout$Alignment;
-
-.field public f:I
-
-.field public g:Z
-
-.field public h:Z
-
-.field public i:Landroid/text/TextUtils$TruncateAt;
+.field public f:Lp4/d;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;I)V
-    .locals 0
+.method public constructor <init>(Lcom/google/android/material/internal/i$b;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/internal/i;->a:Ljava/lang/CharSequence;
+    new-instance v0, Landroid/text/TextPaint;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, Landroid/text/TextPaint;-><init>(I)V
+
+    iput-object v0, p0, Lcom/google/android/material/internal/i;->a:Landroid/text/TextPaint;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/material/internal/i;->b:Landroid/text/TextPaint;
+    new-instance v0, Lcom/google/android/material/internal/i$a;
+
+    invoke-direct {v0, p0}, Lcom/google/android/material/internal/i$a;-><init>(Lcom/google/android/material/internal/i;)V
+
+    iput-object v0, p0, Lcom/google/android/material/internal/i;->b:Lcom/google/android/material/internal/i$a;
 
     .line 4
-    iput p3, p0, Lcom/google/android/material/internal/i;->c:I
+    iput-boolean v1, p0, Lcom/google/android/material/internal/i;->d:Z
 
     .line 5
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+    new-instance v0, Ljava/lang/ref/WeakReference;
 
-    move-result p1
+    const/4 v1, 0x0
 
-    iput p1, p0, Lcom/google/android/material/internal/i;->d:I
+    invoke-direct {v0, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/google/android/material/internal/i;->e:Ljava/lang/ref/WeakReference;
 
     .line 6
-    sget-object p1, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
+    new-instance v0, Ljava/lang/ref/WeakReference;
 
-    iput-object p1, p0, Lcom/google/android/material/internal/i;->e:Landroid/text/Layout$Alignment;
+    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    const p1, 0x7fffffff
-
-    .line 7
-    iput p1, p0, Lcom/google/android/material/internal/i;->f:I
-
-    const/4 p1, 0x1
-
-    .line 8
-    iput-boolean p1, p0, Lcom/google/android/material/internal/i;->g:Z
-
-    const/4 p1, 0x0
-
-    .line 9
-    iput-object p1, p0, Lcom/google/android/material/internal/i;->i:Landroid/text/TextUtils$TruncateAt;
+    iput-object v0, p0, Lcom/google/android/material/internal/i;->e:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Landroid/text/StaticLayout;
-    .locals 20
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/material/internal/i$a;
-        }
-    .end annotation
-
-    move-object/from16 v1, p0
+.method public final a(Ljava/lang/String;)F
+    .locals 3
 
     .line 1
-    iget-object v0, v1, Lcom/google/android/material/internal/i;->a:Ljava/lang/CharSequence;
+    iget-boolean v0, p0, Lcom/google/android/material/internal/i;->d:Z
 
     if-nez v0, :cond_0
 
-    const-string v0, ""
-
     .line 2
-    iput-object v0, v1, Lcom/google/android/material/internal/i;->a:Ljava/lang/CharSequence;
+    iget p1, p0, Lcom/google/android/material/internal/i;->c:F
 
-    .line 3
+    return p1
+
     :cond_0
-    iget v0, v1, Lcom/google/android/material/internal/i;->c:I
+    const/4 v0, 0x0
 
-    const/4 v2, 0x0
+    if-nez p1, :cond_1
 
-    invoke-static {v2, v0}, Ljava/lang/Math;->max(II)I
-
-    move-result v0
-
-    .line 4
-    iget-object v3, v1, Lcom/google/android/material/internal/i;->a:Ljava/lang/CharSequence;
-
-    .line 5
-    iget v4, v1, Lcom/google/android/material/internal/i;->f:I
-
-    const/4 v5, 0x1
-
-    if-ne v4, v5, :cond_1
-
-    .line 6
-    iget-object v4, v1, Lcom/google/android/material/internal/i;->b:Landroid/text/TextPaint;
-
-    int-to-float v6, v0
-
-    iget-object v7, v1, Lcom/google/android/material/internal/i;->i:Landroid/text/TextUtils$TruncateAt;
-
-    invoke-static {v3, v4, v6, v7}, Landroid/text/TextUtils;->ellipsize(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;)Ljava/lang/CharSequence;
-
-    move-result-object v3
-
-    .line 7
-    :cond_1
-    invoke-interface {v3}, Ljava/lang/CharSequence;->length()I
-
-    move-result v4
-
-    iget v6, v1, Lcom/google/android/material/internal/i;->d:I
-
-    invoke-static {v4, v6}, Ljava/lang/Math;->min(II)I
-
-    move-result v4
-
-    iput v4, v1, Lcom/google/android/material/internal/i;->d:I
-
-    .line 8
-    sget v6, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v7, 0x17
-
-    if-lt v6, v7, :cond_5
-
-    .line 9
-    iget-boolean v5, v1, Lcom/google/android/material/internal/i;->h:Z
-
-    if-eqz v5, :cond_2
-
-    .line 10
-    sget-object v5, Landroid/text/Layout$Alignment;->ALIGN_OPPOSITE:Landroid/text/Layout$Alignment;
-
-    iput-object v5, v1, Lcom/google/android/material/internal/i;->e:Landroid/text/Layout$Alignment;
-
-    .line 11
-    :cond_2
-    iget-object v5, v1, Lcom/google/android/material/internal/i;->b:Landroid/text/TextPaint;
-
-    .line 12
-    invoke-static {v3, v2, v4, v5, v0}, Landroid/text/StaticLayout$Builder;->obtain(Ljava/lang/CharSequence;IILandroid/text/TextPaint;I)Landroid/text/StaticLayout$Builder;
-
-    move-result-object v0
-
-    .line 13
-    iget-object v2, v1, Lcom/google/android/material/internal/i;->e:Landroid/text/Layout$Alignment;
-
-    invoke-virtual {v0, v2}, Landroid/text/StaticLayout$Builder;->setAlignment(Landroid/text/Layout$Alignment;)Landroid/text/StaticLayout$Builder;
-
-    .line 14
-    iget-boolean v2, v1, Lcom/google/android/material/internal/i;->g:Z
-
-    invoke-virtual {v0, v2}, Landroid/text/StaticLayout$Builder;->setIncludePad(Z)Landroid/text/StaticLayout$Builder;
-
-    .line 15
-    iget-boolean v2, v1, Lcom/google/android/material/internal/i;->h:Z
-
-    if-eqz v2, :cond_3
-
-    sget-object v2, Landroid/text/TextDirectionHeuristics;->RTL:Landroid/text/TextDirectionHeuristic;
+    const/4 p1, 0x0
 
     goto :goto_0
 
-    :cond_3
-    sget-object v2, Landroid/text/TextDirectionHeuristics;->LTR:Landroid/text/TextDirectionHeuristic;
+    .line 3
+    :cond_1
+    iget-object v1, p0, Lcom/google/android/material/internal/i;->a:Landroid/text/TextPaint;
 
-    .line 16
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    invoke-virtual {v1, p1, v0, v2}, Landroid/graphics/Paint;->measureText(Ljava/lang/CharSequence;II)F
+
+    move-result p1
+
+    .line 4
     :goto_0
-    invoke-virtual {v0, v2}, Landroid/text/StaticLayout$Builder;->setTextDirection(Landroid/text/TextDirectionHeuristic;)Landroid/text/StaticLayout$Builder;
+    iput p1, p0, Lcom/google/android/material/internal/i;->c:F
 
-    .line 17
-    iget-object v2, v1, Lcom/google/android/material/internal/i;->i:Landroid/text/TextUtils$TruncateAt;
+    .line 5
+    iput-boolean v0, p0, Lcom/google/android/material/internal/i;->d:Z
 
-    if-eqz v2, :cond_4
+    return p1
+.end method
 
-    .line 18
-    invoke-virtual {v0, v2}, Landroid/text/StaticLayout$Builder;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)Landroid/text/StaticLayout$Builder;
+.method public final b(Lp4/d;Landroid/content/Context;)V
+    .locals 3
 
-    .line 19
-    :cond_4
-    iget v2, v1, Lcom/google/android/material/internal/i;->f:I
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/internal/i;->f:Lp4/d;
 
-    invoke-virtual {v0, v2}, Landroid/text/StaticLayout$Builder;->setMaxLines(I)Landroid/text/StaticLayout$Builder;
+    if-eq v0, p1, :cond_2
 
-    .line 20
-    invoke-virtual {v0}, Landroid/text/StaticLayout$Builder;->build()Landroid/text/StaticLayout;
+    .line 2
+    iput-object p1, p0, Lcom/google/android/material/internal/i;->f:Lp4/d;
+
+    if-eqz p1, :cond_1
+
+    .line 3
+    iget-object v0, p0, Lcom/google/android/material/internal/i;->a:Landroid/text/TextPaint;
+
+    iget-object v1, p0, Lcom/google/android/material/internal/i;->b:Lcom/google/android/material/internal/i$a;
+
+    .line 4
+    invoke-virtual {p1}, Lp4/d;->a()V
+
+    .line 5
+    iget-object v2, p1, Lp4/d;->l:Landroid/graphics/Typeface;
+
+    .line 6
+    invoke-virtual {p1, v0, v2}, Lp4/d;->d(Landroid/text/TextPaint;Landroid/graphics/Typeface;)V
+
+    .line 7
+    new-instance v2, Lp4/e;
+
+    invoke-direct {v2, p1, v0, v1}, Lp4/e;-><init>(Lp4/d;Landroid/text/TextPaint;Lb2/a0;)V
+
+    invoke-virtual {p1, p2, v2}, Lp4/d;->b(Landroid/content/Context;Lb2/a0;)V
+
+    .line 8
+    iget-object v0, p0, Lcom/google/android/material/internal/i;->e:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    return-object v0
+    check-cast v0, Lcom/google/android/material/internal/i$b;
 
-    .line 21
-    :cond_5
-    sget-boolean v4, Lcom/google/android/material/internal/i;->j:Z
+    if-eqz v0, :cond_0
 
-    const/16 v9, 0xb
+    .line 9
+    iget-object v1, p0, Lcom/google/android/material/internal/i;->a:Landroid/text/TextPaint;
 
-    const/16 v10, 0xa
-
-    const/16 v11, 0x9
-
-    const/16 v12, 0x8
-
-    const/4 v13, 0x7
-
-    const/4 v14, 0x6
-
-    const/4 v15, 0x5
-
-    const/16 v16, 0x4
-
-    const/16 v17, 0x3
-
-    const/16 v18, 0x2
-
-    const/16 v8, 0xd
-
-    if-eqz v4, :cond_6
-
-    goto :goto_3
-
-    .line 22
-    :cond_6
-    :try_start_0
-    iget-boolean v4, v1, Lcom/google/android/material/internal/i;->h:Z
-
-    if-eqz v4, :cond_7
-
-    if-lt v6, v7, :cond_7
-
-    const/4 v4, 0x1
-
-    goto :goto_1
-
-    :cond_7
-    const/4 v4, 0x0
-
-    .line 23
-    :goto_1
-    const-class v6, Landroid/text/TextDirectionHeuristic;
-
-    if-eqz v4, :cond_8
-
-    .line 24
-    sget-object v4, Landroid/text/TextDirectionHeuristics;->RTL:Landroid/text/TextDirectionHeuristic;
-
-    goto :goto_2
-
-    :cond_8
-    sget-object v4, Landroid/text/TextDirectionHeuristics;->LTR:Landroid/text/TextDirectionHeuristic;
-
-    :goto_2
-    sput-object v4, Lcom/google/android/material/internal/i;->l:Ljava/lang/Object;
-
-    new-array v4, v8, [Ljava/lang/Class;
-
-    .line 25
-    const-class v7, Ljava/lang/CharSequence;
-
-    aput-object v7, v4, v2
-
-    sget-object v7, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    aput-object v7, v4, v5
-
-    aput-object v7, v4, v18
-
-    const-class v19, Landroid/text/TextPaint;
-
-    aput-object v19, v4, v17
-
-    aput-object v7, v4, v16
-
-    const-class v19, Landroid/text/Layout$Alignment;
-
-    aput-object v19, v4, v15
-
-    aput-object v6, v4, v14
-
-    sget-object v6, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
-
-    aput-object v6, v4, v13
-
-    aput-object v6, v4, v12
-
-    sget-object v6, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
-
-    aput-object v6, v4, v11
-
-    const-class v6, Landroid/text/TextUtils$TruncateAt;
-
-    aput-object v6, v4, v10
-
-    aput-object v7, v4, v9
-
-    const/16 v6, 0xc
-
-    aput-object v7, v4, v6
-
-    .line 26
-    const-class v6, Landroid/text/StaticLayout;
-
-    invoke-virtual {v6, v4}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v4
-
-    sput-object v4, Lcom/google/android/material/internal/i;->k:Ljava/lang/reflect/Constructor;
-
-    .line 27
-    invoke-virtual {v4, v5}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
-
-    .line 28
-    sput-boolean v5, Lcom/google/android/material/internal/i;->j:Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
-
-    .line 29
-    :goto_3
-    :try_start_1
-    sget-object v4, Lcom/google/android/material/internal/i;->k:Ljava/lang/reflect/Constructor;
-
-    .line 30
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    new-array v6, v8, [Ljava/lang/Object;
-
-    aput-object v3, v6, v2
-
-    .line 31
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    aput-object v2, v6, v5
-
-    iget v2, v1, Lcom/google/android/material/internal/i;->d:I
-
-    .line 32
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    aput-object v2, v6, v18
-
-    iget-object v2, v1, Lcom/google/android/material/internal/i;->b:Landroid/text/TextPaint;
-
-    aput-object v2, v6, v17
-
-    .line 33
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    aput-object v2, v6, v16
-
-    iget-object v2, v1, Lcom/google/android/material/internal/i;->e:Landroid/text/Layout$Alignment;
-
-    aput-object v2, v6, v15
-
-    sget-object v2, Lcom/google/android/material/internal/i;->l:Ljava/lang/Object;
-
-    .line 34
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    aput-object v2, v6, v14
-
-    const/high16 v2, 0x3f800000    # 1.0f
-
-    .line 35
-    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v2
-
-    aput-object v2, v6, v13
-
-    const/4 v2, 0x0
-
-    .line 36
-    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v2
-
-    aput-object v2, v6, v12
-
-    iget-boolean v2, v1, Lcom/google/android/material/internal/i;->g:Z
-
-    .line 37
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v2
-
-    aput-object v2, v6, v11
-
-    const/4 v2, 0x0
-
-    aput-object v2, v6, v10
-
-    .line 38
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-interface {v0}, Lcom/google/android/material/internal/i$b;->getState()[I
 
     move-result-object v0
 
-    aput-object v0, v6, v9
+    iput-object v0, v1, Landroid/text/TextPaint;->drawableState:[I
 
-    iget v0, v1, Lcom/google/android/material/internal/i;->f:I
+    .line 10
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/material/internal/i;->a:Landroid/text/TextPaint;
 
-    .line 39
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-object v1, p0, Lcom/google/android/material/internal/i;->b:Lcom/google/android/material/internal/i$a;
 
-    move-result-object v0
+    invoke-virtual {p1, p2, v0, v1}, Lp4/d;->c(Landroid/content/Context;Landroid/text/TextPaint;Lb2/a0;)V
 
-    const/16 v2, 0xc
+    const/4 p1, 0x1
 
-    aput-object v0, v6, v2
+    .line 11
+    iput-boolean p1, p0, Lcom/google/android/material/internal/i;->d:Z
 
-    .line 40
-    invoke-virtual {v4, v6}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    .line 12
+    :cond_1
+    iget-object p1, p0, Lcom/google/android/material/internal/i;->e:Ljava/lang/ref/WeakReference;
 
-    move-result-object v0
+    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
-    check-cast v0, Landroid/text/StaticLayout;
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    move-result-object p1
 
-    return-object v0
+    check-cast p1, Lcom/google/android/material/internal/i$b;
 
-    :catch_0
-    move-exception v0
+    if-eqz p1, :cond_2
 
-    .line 41
-    new-instance v2, Lcom/google/android/material/internal/i$a;
+    .line 13
+    invoke-interface {p1}, Lcom/google/android/material/internal/i$b;->a()V
 
-    invoke-direct {v2, v0}, Lcom/google/android/material/internal/i$a;-><init>(Ljava/lang/Throwable;)V
+    .line 14
+    invoke-interface {p1}, Lcom/google/android/material/internal/i$b;->getState()[I
 
-    throw v2
+    move-result-object p2
 
-    :catch_1
-    move-exception v0
+    invoke-interface {p1, p2}, Lcom/google/android/material/internal/i$b;->onStateChange([I)Z
 
-    .line 42
-    new-instance v2, Lcom/google/android/material/internal/i$a;
-
-    invoke-direct {v2, v0}, Lcom/google/android/material/internal/i$a;-><init>(Ljava/lang/Throwable;)V
-
-    throw v2
+    :cond_2
+    return-void
 .end method

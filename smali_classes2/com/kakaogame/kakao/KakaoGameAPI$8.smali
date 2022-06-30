@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/kakao/KakaoGameAPI$8;->val$requestLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -111,7 +110,7 @@
 
     const-string v2, "invitation_events"
 
-    invoke-virtual {v0, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -168,7 +167,7 @@
 
     .line 12
     :goto_1
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 13
     :cond_0

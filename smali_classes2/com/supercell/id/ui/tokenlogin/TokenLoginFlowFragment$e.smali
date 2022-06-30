@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$e;
-.super Lle/j;
+.super Lse/h;
 .source "TokenLoginFlow.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->d0(Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->V(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
+        "Lse/h;",
+        "Lre/p<",
         "Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;",
         "Ljava/lang/Exception;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$e;
+.field public static final f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$e;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$e;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$e;->g:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$e;
+    sput-object v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$e;->f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$e;
 
     return-void
 .end method
@@ -50,14 +50,14 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
     .line 1
@@ -65,42 +65,31 @@
 
     check-cast p2, Ljava/lang/Exception;
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
+    const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object p1
+    const-string v0, "it"
 
-    if-eqz p1, :cond_0
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v1, Lwd/f;
+
+    invoke-direct {v1, p1}, Lwd/f;-><init>(Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;)V
+
+    invoke-virtual {v0, p2, v1}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
 
     .line 4
     :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
-
-    :cond_1
-    const-string p1, "it"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

@@ -22,7 +22,6 @@
 .method public constructor <init>(Lokio/Buffer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokio/Buffer$1;->this$0:Lokio/Buffer;
 
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
@@ -47,7 +46,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

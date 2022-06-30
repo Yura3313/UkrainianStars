@@ -1,79 +1,85 @@
 .class public final Lae/b;
 .super Ljava/lang/Object;
-.source "Lazy.kt"
+.source "FontUtil.kt"
 
 # interfaces
-.implements Lae/c;
-.implements Ljava/io/Serializable;
+.implements Lge/d;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lae/c<",
-        "TT;>;",
-        "Ljava/io/Serializable;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final g:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TT;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static final a:Lae/b;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lae/b;
+
+    invoke-direct {v0}, Lae/b;-><init>()V
+
+    sput-object v0, Lae/b;->a:Lae/b;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lae/b;->g:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getValue()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
+.method public final a(Lge/d$a;)Lge/c;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lae/b;->g:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lae/b;->g:Ljava/lang/Object;
-
-    .line 2
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-interface {p1}, Lge/d$a;->request()Lge/b;
 
     move-result-object v0
 
-    return-object v0
+    invoke-interface {p1, v0}, Lge/d$a;->a(Lge/b;)Lge/c;
+
+    move-result-object p1
+
+    .line 2
+    invoke-virtual {p1}, Lge/c;->c()Lge/c$a;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Lge/c;->d()Landroid/view/View;
+
+    move-result-object v1
+
+    instance-of v2, v1, Landroid/widget/TextView;
+
+    if-nez v2, :cond_0
+
+    const/4 v1, 0x0
+
+    :cond_0
+    check-cast v1, Landroid/widget/TextView;
+
+    if-eqz v1, :cond_1
+
+    invoke-static {v1}, Lae/r;->a(Landroid/widget/TextView;)Landroid/widget/TextView;
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {p1}, Lge/c;->d()Landroid/view/View;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-virtual {v0, v1}, Lge/c$a;->b(Landroid/view/View;)Lge/c$a;
+
+    invoke-virtual {v0}, Lge/c$a;->a()Lge/c;
+
+    move-result-object p1
+
+    return-object p1
 .end method

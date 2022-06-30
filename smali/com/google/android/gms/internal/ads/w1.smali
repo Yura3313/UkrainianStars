@@ -26,12 +26,12 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/google/android/gms/internal/ads/z4;->C([BLcom/google/android/gms/internal/ads/t5;)Lcom/google/android/gms/internal/ads/z4;
+    invoke-static {p0, v0}, Lcom/google/android/gms/internal/ads/z4;->A([BLcom/google/android/gms/internal/ads/t5;)Lcom/google/android/gms/internal/ads/z4;
 
     move-result-object p0
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/z4;->z()Ljava/util/List;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/z4;->x()Ljava/util/List;
 
     move-result-object v0
 
@@ -53,11 +53,11 @@
     check-cast v1, Lcom/google/android/gms/internal/ads/z4$b;
 
     .line 3
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/z4$b;->B()Lcom/google/android/gms/internal/ads/u4;
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/z4$b;->z()Lcom/google/android/gms/internal/ads/u4;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/u4;->D()I
+    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/u4;->B()I
 
     move-result v2
 
@@ -66,11 +66,11 @@
     if-eq v2, v3, :cond_0
 
     .line 4
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/z4$b;->B()Lcom/google/android/gms/internal/ads/u4;
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/z4$b;->z()Lcom/google/android/gms/internal/ads/u4;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/u4;->D()I
+    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/u4;->B()I
 
     move-result v2
 
@@ -79,11 +79,11 @@
     if-eq v2, v3, :cond_0
 
     .line 5
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/z4$b;->B()Lcom/google/android/gms/internal/ads/u4;
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/z4$b;->z()Lcom/google/android/gms/internal/ads/u4;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/u4;->D()I
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/u4;->B()I
 
     move-result v1
 
@@ -105,7 +105,7 @@
 
     .line 7
     :cond_1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/z4;->A()I
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/z4;->y()I
 
     move-result v0
 

@@ -13,10 +13,10 @@
     const/16 p1, 0x33
 
     .line 2
-    invoke-virtual {p0, p1}, Landroid/widget/EditText;->setGravity(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 3
-    invoke-static {p0}, Lkb/a;->b(Landroid/widget/TextView;)V
+    invoke-static {p0}, Lnb/a;->b(Landroid/widget/TextView;)V
 
     return-void
 .end method
@@ -30,10 +30,10 @@
     const/16 p1, 0x33
 
     .line 5
-    invoke-virtual {p0, p1}, Landroid/widget/EditText;->setGravity(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 6
-    invoke-static {p0}, Lkb/a;->b(Landroid/widget/TextView;)V
+    invoke-static {p0}, Lnb/a;->b(Landroid/widget/TextView;)V
 
     return-void
 .end method

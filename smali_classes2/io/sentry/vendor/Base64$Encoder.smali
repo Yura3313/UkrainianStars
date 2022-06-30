@@ -309,7 +309,8 @@
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v0, v1, v2}, Lj3/xq0;->a(IIII)I
+    .line 1
+    invoke-static {p1, v0, v1, v2}, Landroid/support/v4/media/c;->a(IIII)I
 
     move-result p1
 

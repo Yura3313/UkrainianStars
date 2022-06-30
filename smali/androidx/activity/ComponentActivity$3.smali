@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroidx/activity/ComponentActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/activity/ComponentActivity$3;->a:Landroidx/activity/ComponentActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
+.method public final a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
     .locals 0
 
     .line 1

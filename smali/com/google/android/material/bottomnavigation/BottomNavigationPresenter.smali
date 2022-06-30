@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;
+.class public final Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;
 .super Ljava/lang/Object;
 .source "BottomNavigationPresenter.java"
 
@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+.field public f:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
-.field public h:Z
+.field public g:Z
 
-.field public i:I
+.field public h:I
 
 
 # direct methods
@@ -32,24 +32,24 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->h:Z
+    iput-boolean v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b(Landroidx/appcompat/view/menu/e;Z)V
+.method public final b(Landroidx/appcompat/view/menu/e;Z)V
     .locals 0
 
     return-void
 .end method
 
-.method public c(Z)V
+.method public final c(Z)V
     .locals 6
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->h:Z
+    iget-boolean v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Z
 
     if-eqz v0, :cond_0
 
@@ -59,7 +59,7 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     invoke-virtual {p1}, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->a()V
 
@@ -67,14 +67,14 @@
 
     .line 3
     :cond_1
-    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     .line 4
-    iget-object v0, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->E:Landroidx/appcompat/view/menu/e;
+    iget-object v0, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->D:Landroidx/appcompat/view/menu/e;
 
     if-eqz v0, :cond_7
 
-    iget-object v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->q:[Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
+    iget-object v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->p:[Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
 
     if-nez v1, :cond_2
 
@@ -87,7 +87,7 @@
     move-result v0
 
     .line 6
-    iget-object v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->q:[Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
+    iget-object v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->p:[Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
 
     array-length v1, v1
 
@@ -100,7 +100,7 @@
 
     .line 8
     :cond_3
-    iget v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->r:I
+    iget v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->q:I
 
     const/4 v2, 0x0
 
@@ -110,7 +110,7 @@
     if-ge v3, v0, :cond_5
 
     .line 9
-    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->E:Landroidx/appcompat/view/menu/e;
+    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->D:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v4, v3}, Landroidx/appcompat/view/menu/e;->getItem(I)Landroid/view/MenuItem;
 
@@ -128,10 +128,10 @@
 
     move-result v4
 
-    iput v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->r:I
+    iput v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->q:I
 
     .line 12
-    iput v3, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->s:I
+    iput v3, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->r:I
 
     :cond_4
     add-int/lit8 v3, v3, 0x1
@@ -140,20 +140,20 @@
 
     .line 13
     :cond_5
-    iget v3, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->r:I
+    iget v3, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->q:I
 
     if-eq v1, v3, :cond_6
 
     .line 14
-    iget-object v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->g:Landroidx/transition/TransitionSet;
+    iget-object v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->f:Landroidx/transition/AutoTransition;
 
     invoke-static {p1, v1}, Landroidx/transition/e;->a(Landroid/view/ViewGroup;Landroidx/transition/Transition;)V
 
     .line 15
     :cond_6
-    iget v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->p:I
+    iget v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->o:I
 
-    iget-object v3, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->E:Landroidx/appcompat/view/menu/e;
+    iget-object v3, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->D:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v3}, Landroidx/appcompat/view/menu/e;->m()Ljava/util/ArrayList;
 
@@ -173,35 +173,35 @@
     if-ge v3, v0, :cond_7
 
     .line 16
-    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->D:Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;
+    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->C:Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;
 
     const/4 v5, 0x1
 
     .line 17
-    iput-boolean v5, v4, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->h:Z
+    iput-boolean v5, v4, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Z
 
     .line 18
-    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->q:[Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
+    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->p:[Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
 
     aget-object v4, v4, v3
 
-    iget v5, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->p:I
+    iget v5, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->o:I
 
     invoke-virtual {v4, v5}, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->setLabelVisibilityMode(I)V
 
     .line 19
-    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->q:[Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
+    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->p:[Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
 
     aget-object v4, v4, v3
 
     invoke-virtual {v4, v1}, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->setShifting(Z)V
 
     .line 20
-    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->q:[Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
+    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->p:[Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
 
     aget-object v4, v4, v3
 
-    iget-object v5, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->E:Landroidx/appcompat/view/menu/e;
+    iget-object v5, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->D:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v5, v3}, Landroidx/appcompat/view/menu/e;->getItem(I)Landroid/view/MenuItem;
 
@@ -209,13 +209,13 @@
 
     check-cast v5, Landroidx/appcompat/view/menu/g;
 
-    invoke-virtual {v4, v5, v2}, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->d(Landroidx/appcompat/view/menu/g;I)V
+    invoke-virtual {v4, v5}, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->d(Landroidx/appcompat/view/menu/g;)V
 
     .line 21
-    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->D:Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;
+    iget-object v4, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->C:Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;
 
     .line 22
-    iput-boolean v2, v4, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->h:Z
+    iput-boolean v2, v4, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Z
 
     add-int/lit8 v3, v3, 0x1
 
@@ -226,7 +226,7 @@
     return-void
 .end method
 
-.method public d()Z
+.method public final d()Z
     .locals 1
 
     const/4 v0, 0x0
@@ -234,7 +234,7 @@
     return v0
 .end method
 
-.method public e(Landroidx/appcompat/view/menu/e;Landroidx/appcompat/view/menu/g;)Z
+.method public final f(Landroidx/appcompat/view/menu/g;)Z
     .locals 0
 
     const/4 p1, 0x0
@@ -242,36 +242,27 @@
     return p1
 .end method
 
-.method public f(Landroidx/appcompat/view/menu/e;Landroidx/appcompat/view/menu/g;)Z
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public getId()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->i:I
-
-    return v0
-.end method
-
-.method public h(Landroid/content/Context;Landroidx/appcompat/view/menu/e;)V
+.method public final g(Landroid/content/Context;Landroidx/appcompat/view/menu/e;)V
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     .line 2
-    iput-object p2, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->E:Landroidx/appcompat/view/menu/e;
+    iput-object p2, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->D:Landroidx/appcompat/view/menu/e;
 
     return-void
 .end method
 
-.method public i(Landroid/os/Parcelable;)V
+.method public final getId()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->h:I
+
+    return v0
+.end method
+
+.method public final h(Landroid/os/Parcelable;)V
     .locals 8
 
     .line 1
@@ -280,14 +271,14 @@
     if-eqz v0, :cond_5
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+    iget-object v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     check-cast p1, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;
 
-    iget v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->g:I
+    iget v1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->f:I
 
     .line 3
-    iget-object v2, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->E:Landroidx/appcompat/view/menu/e;
+    iget-object v2, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->D:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v2}, Landroidx/appcompat/view/menu/e;->size()I
 
@@ -301,7 +292,7 @@
     if-ge v4, v2, :cond_1
 
     .line 4
-    iget-object v5, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->E:Landroidx/appcompat/view/menu/e;
+    iget-object v5, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->D:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v5, v4}, Landroidx/appcompat/view/menu/e;->getItem(I)Landroid/view/MenuItem;
 
@@ -315,10 +306,10 @@
     if-ne v1, v6, :cond_0
 
     .line 6
-    iput v1, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->r:I
+    iput v1, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->q:I
 
     .line 7
-    iput v4, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->s:I
+    iput v4, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->r:I
 
     const/4 v0, 0x1
 
@@ -335,14 +326,14 @@
     .line 9
     :cond_1
     :goto_1
-    iget-object v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+    iget-object v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     .line 10
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->h:Lcom/google/android/material/internal/ParcelableSparseArray;
+    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->g:Lcom/google/android/material/internal/ParcelableSparseArray;
 
     .line 11
     new-instance v1, Landroid/util/SparseArray;
@@ -381,13 +372,13 @@
     invoke-direct {v5, v0}, Lcom/google/android/material/badge/BadgeDrawable;-><init>(Landroid/content/Context;)V
 
     .line 16
-    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->k:I
+    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->j:I
 
     .line 17
     invoke-virtual {v5, v6}, Lcom/google/android/material/badge/BadgeDrawable;->i(I)V
 
     .line 18
-    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->j:I
+    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->i:I
 
     const/4 v7, -0x1
 
@@ -398,46 +389,46 @@
 
     .line 20
     :cond_2
-    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->g:I
+    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->f:I
 
     .line 21
     invoke-virtual {v5, v6}, Lcom/google/android/material/badge/BadgeDrawable;->f(I)V
 
     .line 22
-    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->h:I
+    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->g:I
 
     .line 23
     invoke-virtual {v5, v6}, Lcom/google/android/material/badge/BadgeDrawable;->h(I)V
 
     .line 24
-    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->o:I
+    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->n:I
 
     .line 25
     invoke-virtual {v5, v6}, Lcom/google/android/material/badge/BadgeDrawable;->g(I)V
 
     .line 26
-    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->p:I
+    iget v6, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->o:I
 
     .line 27
-    iget-object v7, v5, Lcom/google/android/material/badge/BadgeDrawable;->n:Lcom/google/android/material/badge/BadgeDrawable$SavedState;
+    iget-object v7, v5, Lcom/google/android/material/badge/BadgeDrawable;->m:Lcom/google/android/material/badge/BadgeDrawable$SavedState;
 
     .line 28
-    iput v6, v7, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->p:I
+    iput v6, v7, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->o:I
 
     .line 29
-    invoke-virtual {v5}, Lcom/google/android/material/badge/BadgeDrawable;->k()V
+    invoke-virtual {v5}, Lcom/google/android/material/badge/BadgeDrawable;->l()V
 
     .line 30
-    iget v4, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->q:I
+    iget v4, v4, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->p:I
 
     .line 31
-    iget-object v6, v5, Lcom/google/android/material/badge/BadgeDrawable;->n:Lcom/google/android/material/badge/BadgeDrawable$SavedState;
+    iget-object v6, v5, Lcom/google/android/material/badge/BadgeDrawable;->m:Lcom/google/android/material/badge/BadgeDrawable$SavedState;
 
     .line 32
-    iput v4, v6, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->q:I
+    iput v4, v6, Lcom/google/android/material/badge/BadgeDrawable$SavedState;->p:I
 
     .line 33
-    invoke-virtual {v5}, Lcom/google/android/material/badge/BadgeDrawable;->k()V
+    invoke-virtual {v5}, Lcom/google/android/material/badge/BadgeDrawable;->l()V
 
     .line 34
     invoke-virtual {v1, v2, v5}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
@@ -458,7 +449,7 @@
 
     .line 36
     :cond_4
-    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     invoke-virtual {p1, v1}, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->setBadgeDrawables(Landroid/util/SparseArray;)V
 
@@ -466,7 +457,7 @@
     return-void
 .end method
 
-.method public k(Landroidx/appcompat/view/menu/l;)Z
+.method public final j(Landroidx/appcompat/view/menu/l;)Z
     .locals 0
 
     const/4 p1, 0x0
@@ -474,7 +465,7 @@
     return p1
 .end method
 
-.method public l()Landroid/os/Parcelable;
+.method public final k()Landroid/os/Parcelable;
     .locals 6
 
     .line 1
@@ -483,16 +474,16 @@
     invoke-direct {v0}, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+    iget-object v1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     invoke-virtual {v1}, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->getSelectedItemId()I
 
     move-result v1
 
-    iput v1, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->g:I
+    iput v1, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->f:I
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+    iget-object v1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     .line 4
     invoke-virtual {v1}, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->getBadgeDrawables()Landroid/util/SparseArray;
@@ -529,7 +520,7 @@
     if-eqz v5, :cond_0
 
     .line 9
-    iget-object v5, v5, Lcom/google/android/material/badge/BadgeDrawable;->n:Lcom/google/android/material/badge/BadgeDrawable$SavedState;
+    iget-object v5, v5, Lcom/google/android/material/badge/BadgeDrawable;->m:Lcom/google/android/material/badge/BadgeDrawable$SavedState;
 
     .line 10
     invoke-virtual {v2, v4, v5}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
@@ -550,7 +541,15 @@
 
     .line 12
     :cond_1
-    iput-object v2, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->h:Lcom/google/android/material/internal/ParcelableSparseArray;
+    iput-object v2, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->g:Lcom/google/android/material/internal/ParcelableSparseArray;
 
     return-object v0
+.end method
+
+.method public final l(Landroidx/appcompat/view/menu/g;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
 .end method

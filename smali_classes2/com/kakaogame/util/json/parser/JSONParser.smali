@@ -223,7 +223,6 @@
 .method public getPosition()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/util/json/parser/JSONParser;->lexer:Lcom/kakaogame/util/json/parser/Yylex;
 
     invoke-virtual {v0}, Lcom/kakaogame/util/json/parser/Yylex;->getPosition()I

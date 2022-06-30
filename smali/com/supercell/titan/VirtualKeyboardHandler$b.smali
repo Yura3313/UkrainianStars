@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/VirtualKeyboardHandler$b;
+.class public final Lcom/supercell/titan/VirtualKeyboardHandler$b;
 .super Ljava/lang/Object;
 .source "VirtualKeyboardHandler.java"
 
@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,13 +28,12 @@
 
 
 # virtual methods
-.method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
+.method public final filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
     .locals 0
 
     :goto_0
     if-ge p2, p3, :cond_1
 
-    .line 1
     invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result p4

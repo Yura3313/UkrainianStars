@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/SupercellId$s;
-.super Lle/j;
+.super Lse/h;
 .source "SupercellId.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/SupercellId;->respondToDonation(Landroid/app/Activity;Ljava/lang/String;Z)V
+    value = Lcom/supercell/id/SupercellId;->setOnline(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,120 +18,105 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Ljava/lang/Exception;",
+        "Lse/h;",
+        "Lre/l<",
         "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Ljava/lang/String;
-
-.field public final synthetic h:Landroid/app/Activity;
-
-.field public final synthetic i:Ljava/lang/String;
+# static fields
+.field public static final f:Lcom/supercell/id/SupercellId$s;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Landroid/app/Activity;Ljava/lang/String;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lcom/supercell/id/SupercellId$s;->g:Ljava/lang/String;
+    new-instance v0, Lcom/supercell/id/SupercellId$s;
 
-    iput-object p2, p0, Lcom/supercell/id/SupercellId$s;->h:Landroid/app/Activity;
+    invoke-direct {v0}, Lcom/supercell/id/SupercellId$s;-><init>()V
 
-    iput-object p3, p0, Lcom/supercell/id/SupercellId$s;->i:Ljava/lang/String;
+    sput-object v0, Lcom/supercell/id/SupercellId$s;->f:Lcom/supercell/id/SupercellId$s;
 
-    const/4 p1, 0x1
+    return-void
+.end method
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    check-cast p1, Ljava/lang/Exception;
+    check-cast p1, Lae/i;
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
+    const-string v0, "it"
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/SupercellId$s;->g:Ljava/lang/String;
-
-    sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object v3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v3, v3, Lvd/r;->l:Lcom/supercell/id/IdAccount;
+    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    if-eqz v3, :cond_0
-
-    .line 4
-    invoke-virtual {v3}, Lcom/supercell/id/IdAccount;->getScidToken()Ljava/lang/String;
-
-    move-result-object v0
-
-    :cond_0
-    invoke-static {v1, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1}, Lcom/supercell/id/SupercellId;->access$getM_online$p(Lcom/supercell/id/SupercellId;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
-    .line 5
-    sget-object v0, Lcom/supercell/id/util/NormalizedError;->m:Lcom/supercell/id/util/NormalizedError;
-
-    invoke-static {p1}, Lcom/supercell/id/util/NormalizedError;->b(Ljava/lang/Exception;)Lcom/supercell/id/util/NormalizedError;
-
-    move-result-object p1
-
-    .line 6
-    iget-object v0, p0, Lcom/supercell/id/SupercellId$s;->h:Landroid/app/Activity;
-
-    .line 7
-    iget-object v1, p1, Lcom/supercell/id/util/NormalizedError;->k:Ljava/lang/String;
-
-    .line 8
-    invoke-virtual {v2, v0, v1}, Lcom/supercell/id/SupercellId;->showErrorPopup(Landroid/app/Activity;Ljava/lang/String;)V
-
-    .line 9
-    invoke-static {v2}, Lcom/supercell/id/SupercellId;->access$getDelegate$p(Lcom/supercell/id/SupercellId;)Lcom/supercell/id/SupercellIdDelegate;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
+    .line 4
+    iget-object v0, v0, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
+
+    .line 5
+    invoke-virtual {v0}, Lcom/supercell/id/IdConfiguration;->getWebSocketEnabled()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
     if-eqz v0, :cond_1
 
-    iget-object v1, p0, Lcom/supercell/id/SupercellId$s;->i:Ljava/lang/String;
+    .line 6
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->updateSharedServices$supercellId_release()V
+
+    .line 7
+    :cond_1
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object p1
+
+    .line 8
+    iget-object p1, p1, Lae/u;->v:Lrc/b1;
+
+    .line 9
+    invoke-virtual {p1, v0}, Lrc/b1;->g(Z)V
 
     .line 10
-    iget-object p1, p1, Lcom/supercell/id/util/NormalizedError;->k:Ljava/lang/String;
-
-    .line 11
-    invoke-interface {v0, v1, p1}, Lcom/supercell/id/SupercellIdDelegate;->respondToDonationResult(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 12
-    :cond_1
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
-
-    :cond_2
-    const-string p1, "it"
-
-    .line 13
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

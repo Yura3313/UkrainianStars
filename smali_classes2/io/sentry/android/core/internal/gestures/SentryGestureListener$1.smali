@@ -25,7 +25,6 @@
 .method public constructor <init>(Lio/sentry/android/core/internal/gestures/SentryGestureListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/android/core/internal/gestures/SentryGestureListener$1;->this$0:Lio/sentry/android/core/internal/gestures/SentryGestureListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public select(Landroid/view/View;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/internal/gestures/SentryGestureListener$1;->this$0:Lio/sentry/android/core/internal/gestures/SentryGestureListener;
 
     invoke-static {v0}, Lio/sentry/android/core/internal/gestures/SentryGestureListener;->access$700(Lio/sentry/android/core/internal/gestures/SentryGestureListener;)Z

@@ -27,7 +27,6 @@
 .method public constructor <init>(Landroidx/lifecycle/f;Landroidx/savedstate/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/lifecycle/SavedStateHandleController$1;->a:Landroidx/lifecycle/f;
 
     iput-object p2, p0, Landroidx/lifecycle/SavedStateHandleController$1;->b:Landroidx/savedstate/a;
@@ -39,7 +38,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
+.method public final a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
     .locals 0
 
     .line 1
@@ -50,24 +49,12 @@
     .line 2
     iget-object p1, p0, Landroidx/lifecycle/SavedStateHandleController$1;->a:Landroidx/lifecycle/f;
 
-    check-cast p1, Landroidx/lifecycle/k;
-
-    const-string p2, "removeObserver"
+    invoke-virtual {p1, p0}, Landroidx/lifecycle/f;->b(Landroidx/lifecycle/i;)V
 
     .line 3
-    invoke-virtual {p1, p2}, Landroidx/lifecycle/k;->d(Ljava/lang/String;)V
-
-    .line 4
-    iget-object p1, p1, Landroidx/lifecycle/k;->a:Li/a;
-
-    invoke-virtual {p1, p0}, Li/a;->f(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
     iget-object p1, p0, Landroidx/lifecycle/SavedStateHandleController$1;->b:Landroidx/savedstate/a;
 
-    const-class p2, Landroidx/lifecycle/SavedStateHandleController$a;
-
-    invoke-virtual {p1, p2}, Landroidx/savedstate/a;->c(Ljava/lang/Class;)V
+    invoke-virtual {p1}, Landroidx/savedstate/a;->c()V
 
     :cond_0
     return-void

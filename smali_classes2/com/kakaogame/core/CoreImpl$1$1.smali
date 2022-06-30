@@ -32,7 +32,6 @@
 .method public constructor <init>(Lcom/kakaogame/core/CoreImpl$1;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/CoreImpl$1$1;->this$0:Lcom/kakaogame/core/CoreImpl$1;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V

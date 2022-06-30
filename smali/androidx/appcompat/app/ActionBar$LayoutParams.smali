@@ -19,21 +19,18 @@
 
 
 # direct methods
-.method public constructor <init>(II)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, -0x2
 
     .line 6
-    invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(II)V
+    invoke-direct {p0, v0, v0}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(II)V
 
-    const/4 p1, 0x0
+    const v0, 0x800013
 
     .line 7
-    iput p1, p0, Landroidx/appcompat/app/ActionBar$LayoutParams;->a:I
-
-    const p1, 0x800013
-
-    .line 8
-    iput p1, p0, Landroidx/appcompat/app/ActionBar$LayoutParams;->a:I
+    iput v0, p0, Landroidx/appcompat/app/ActionBar$LayoutParams;->a:I
 
     return-void
 .end method
@@ -74,12 +71,12 @@
 .method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 0
 
-    .line 12
+    .line 11
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     const/4 p1, 0x0
 
-    .line 13
+    .line 12
     iput p1, p0, Landroidx/appcompat/app/ActionBar$LayoutParams;->a:I
 
     return-void
@@ -88,15 +85,15 @@
 .method public constructor <init>(Landroidx/appcompat/app/ActionBar$LayoutParams;)V
     .locals 1
 
-    .line 9
+    .line 8
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
     const/4 v0, 0x0
 
-    .line 10
+    .line 9
     iput v0, p0, Landroidx/appcompat/app/ActionBar$LayoutParams;->a:I
 
-    .line 11
+    .line 10
     iget p1, p1, Landroidx/appcompat/app/ActionBar$LayoutParams;->a:I
 
     iput p1, p0, Landroidx/appcompat/app/ActionBar$LayoutParams;->a:I

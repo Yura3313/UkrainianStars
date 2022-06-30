@@ -1,4 +1,4 @@
-.class public Lj0/c$b;
+.class public final Lj0/c$b;
 .super Ljava/lang/Object;
 .source "ViewDragHelper.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lj0/c;
+.field public final synthetic f:Lj0/c;
 
 
 # direct methods
 .method public constructor <init>(Lj0/c;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lj0/c$b;->g:Lj0/c;
+    iput-object p1, p0, Lj0/c$b;->f:Lj0/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,15 +34,14 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Lj0/c$b;->g:Lj0/c;
+    iget-object v0, p0, Lj0/c$b;->f:Lj0/c;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lj0/c;->x(I)V
+    invoke-virtual {v0, v1}, Lj0/c;->w(I)V
 
     return-void
 .end method

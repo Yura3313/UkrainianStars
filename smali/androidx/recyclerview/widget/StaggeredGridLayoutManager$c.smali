@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;
+.class public final Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;
 .super Ljava/lang/Object;
 .source "StaggeredGridLayoutManager.java"
 
@@ -73,13 +73,15 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;)V
+.method public final a(Landroid/view/View;)V
     .locals 4
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->j(Landroid/view/View;)Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LayoutParams;
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
+
+    check-cast v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LayoutParams;
 
     .line 2
     iput-object p0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LayoutParams;->e:Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;
@@ -128,7 +130,7 @@
 
     iget-object v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v1, v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v1, v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     invoke-virtual {v1, p1}, Landroidx/recyclerview/widget/v;->c(Landroid/view/View;)I
 
@@ -142,7 +144,7 @@
     return-void
 .end method
 
-.method public b()V
+.method public final b()V
     .locals 3
 
     .line 1
@@ -168,7 +170,7 @@
     .line 3
     iget-object v2, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v2, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v2, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     invoke-virtual {v2, v0}, Landroidx/recyclerview/widget/v;->b(Landroid/view/View;)I
 
@@ -182,7 +184,7 @@
     return-void
 .end method
 
-.method public c()V
+.method public final c()V
     .locals 3
 
     .line 1
@@ -204,7 +206,7 @@
     .line 3
     iget-object v2, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v2, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v2, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     invoke-virtual {v2, v0}, Landroidx/recyclerview/widget/v;->e(Landroid/view/View;)I
 
@@ -218,7 +220,7 @@
     return-void
 .end method
 
-.method public d()V
+.method public final d()V
     .locals 1
 
     .line 1
@@ -242,15 +244,13 @@
     return-void
 .end method
 
-.method public e()I
-    .locals 3
+.method public final e()I
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-boolean v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->w:Z
-
-    const/4 v1, 0x1
+    iget-boolean v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->y:Z
 
     if-eqz v0, :cond_0
 
@@ -261,11 +261,11 @@
 
     move-result v0
 
-    sub-int/2addr v0, v1
+    add-int/lit8 v0, v0, -0x1
 
-    const/4 v2, -0x1
+    const/4 v1, -0x1
 
-    invoke-virtual {p0, v0, v2, v1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->g(IIZ)I
+    invoke-virtual {p0, v0, v1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->g(II)I
 
     move-result v0
 
@@ -274,14 +274,14 @@
     :cond_0
     const/4 v0, 0x0
 
-    iget-object v2, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->a:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->a:Ljava/util/ArrayList;
 
     .line 3
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
-    move-result v2
+    move-result v1
 
-    invoke-virtual {p0, v0, v2, v1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->g(IIZ)I
+    invoke-virtual {p0, v0, v1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->g(II)I
 
     move-result v0
 
@@ -289,28 +289,26 @@
     return v0
 .end method
 
-.method public f()I
-    .locals 3
+.method public final f()I
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-boolean v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->w:Z
-
-    const/4 v1, 0x1
+    iget-boolean v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->y:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
-    iget-object v2, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->a:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->a:Ljava/util/ArrayList;
 
     .line 2
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
-    move-result v2
+    move-result v1
 
-    invoke-virtual {p0, v0, v2, v1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->g(IIZ)I
+    invoke-virtual {p0, v0, v1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->g(II)I
 
     move-result v0
 
@@ -324,11 +322,11 @@
 
     move-result v0
 
-    sub-int/2addr v0, v1
+    add-int/lit8 v0, v0, -0x1
 
-    const/4 v2, -0x1
+    const/4 v1, -0x1
 
-    invoke-virtual {p0, v0, v2, v1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->g(IIZ)I
+    invoke-virtual {p0, v0, v1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->g(II)I
 
     move-result v0
 
@@ -336,13 +334,13 @@
     return v0
 .end method
 
-.method public g(IIZ)I
+.method public final g(II)I
     .locals 10
 
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/v;->k()I
 
@@ -351,7 +349,7 @@
     .line 2
     iget-object v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v1, v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v1, v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     invoke-virtual {v1}, Landroidx/recyclerview/widget/v;->g()I
 
@@ -371,7 +369,7 @@
     const/4 v4, -0x1
 
     :goto_0
-    if-eq p1, p2, :cond_7
+    if-eq p1, p2, :cond_5
 
     .line 3
     iget-object v5, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->a:Ljava/util/ArrayList;
@@ -385,7 +383,7 @@
     .line 4
     iget-object v6, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v6, v6, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v6, v6, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     invoke-virtual {v6, v5}, Landroidx/recyclerview/widget/v;->e(Landroid/view/View;)I
 
@@ -394,7 +392,7 @@
     .line 5
     iget-object v7, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v7, v7, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v7, v7, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     invoke-virtual {v7, v5}, Landroidx/recyclerview/widget/v;->b(Landroid/view/View;)I
 
@@ -402,66 +400,50 @@
 
     const/4 v8, 0x0
 
-    if-eqz p3, :cond_1
+    if-gt v6, v1, :cond_1
 
-    if-gt v6, v1, :cond_2
+    const/4 v9, 0x1
 
     goto :goto_1
 
     :cond_1
-    if-ge v6, v1, :cond_2
-
-    :goto_1
-    const/4 v9, 0x1
-
-    goto :goto_2
-
-    :cond_2
     const/4 v9, 0x0
 
-    :goto_2
-    if-eqz p3, :cond_3
+    :goto_1
+    if-lt v7, v0, :cond_2
 
-    if-lt v7, v0, :cond_4
-
-    goto :goto_3
-
-    :cond_3
-    if-le v7, v0, :cond_4
-
-    :goto_3
     const/4 v8, 0x1
 
-    :cond_4
-    if-eqz v9, :cond_6
+    :cond_2
+    if-eqz v9, :cond_4
 
-    if-eqz v8, :cond_6
+    if-eqz v8, :cond_4
 
-    if-lt v6, v0, :cond_5
+    if-lt v6, v0, :cond_3
 
-    if-le v7, v1, :cond_6
+    if-le v7, v1, :cond_4
 
     .line 6
-    :cond_5
+    :cond_3
     iget-object p1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    invoke-virtual {p1, v5}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p1, v5}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v2
 
-    goto :goto_4
+    goto :goto_2
 
-    :cond_6
+    :cond_4
     add-int/2addr p1, v4
 
     goto :goto_0
 
-    :cond_7
-    :goto_4
+    :cond_5
+    :goto_2
     return v2
 .end method
 
-.method public h(I)I
+.method public final h(I)I
     .locals 2
 
     .line 1
@@ -495,7 +477,7 @@
     return p1
 .end method
 
-.method public i(II)Landroid/view/View;
+.method public final i(II)Landroid/view/View;
     .locals 5
 
     const/4 v0, -0x1
@@ -528,11 +510,11 @@
     .line 3
     iget-object v3, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-boolean v4, v3, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->w:Z
+    iget-boolean v4, v3, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->y:Z
 
     if-eqz v4, :cond_0
 
-    invoke-virtual {v3, v2}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {v3, v2}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v3
 
@@ -541,12 +523,12 @@
     :cond_0
     iget-object v3, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-boolean v4, v3, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->w:Z
+    iget-boolean v4, v3, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->y:Z
 
     if-nez v4, :cond_1
 
     .line 4
-    invoke-virtual {v3, v2}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {v3, v2}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v3
 
@@ -593,11 +575,11 @@
     .line 8
     iget-object v2, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-boolean v3, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->w:Z
+    iget-boolean v3, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->y:Z
 
     if-eqz v3, :cond_3
 
-    invoke-virtual {v2, v0}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {v2, v0}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v2
 
@@ -606,12 +588,12 @@
     :cond_3
     iget-object v2, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-boolean v3, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->w:Z
+    iget-boolean v3, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->y:Z
 
     if-nez v3, :cond_4
 
     .line 9
-    invoke-virtual {v2, v0}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {v2, v0}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v2
 
@@ -638,10 +620,9 @@
     return-object v1
 .end method
 
-.method public j(Landroid/view/View;)Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LayoutParams;
+.method public final j(Landroid/view/View;)Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LayoutParams;
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
@@ -651,7 +632,7 @@
     return-object p1
 .end method
 
-.method public k(I)I
+.method public final k(I)I
     .locals 2
 
     .line 1
@@ -685,7 +666,7 @@
     return p1
 .end method
 
-.method public l()V
+.method public final l()V
     .locals 4
 
     .line 1
@@ -735,7 +716,7 @@
 
     iget-object v3, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v3, v3, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v3, v3, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     invoke-virtual {v3, v1}, Landroidx/recyclerview/widget/v;->c(Landroid/view/View;)I
 
@@ -762,7 +743,7 @@
     return-void
 .end method
 
-.method public m()V
+.method public final m()V
     .locals 4
 
     .line 1
@@ -820,7 +801,7 @@
 
     iget-object v2, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v2, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v2, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     invoke-virtual {v2, v0}, Landroidx/recyclerview/widget/v;->c(Landroid/view/View;)I
 
@@ -837,13 +818,15 @@
     return-void
 .end method
 
-.method public n(Landroid/view/View;)V
+.method public final n(Landroid/view/View;)V
     .locals 4
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->j(Landroid/view/View;)Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LayoutParams;
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
+
+    check-cast v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LayoutParams;
 
     .line 2
     iput-object p0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LayoutParams;->e:Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;
@@ -894,7 +877,7 @@
 
     iget-object v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v1, v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v1, v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     invoke-virtual {v1, p1}, Landroidx/recyclerview/widget/v;->c(Landroid/view/View;)I
 

@@ -7,10 +7,8 @@
 .method public final onReceiveResult(ILandroid/os/Bundle;)V
     .locals 1
 
-    const-string v0, "BillingClient"
-
     .line 1
-    invoke-static {p2, v0}, Lv3/a;->c(Landroid/os/Bundle;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2}, Lw3/a;->c(Landroid/os/Bundle;)Ljava/lang/String;
 
     move-result-object p2
 

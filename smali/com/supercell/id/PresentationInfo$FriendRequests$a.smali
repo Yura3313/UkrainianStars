@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/PresentationInfo$FriendRequests;-><clinit>()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/supercell/id/PresentationInfo$FriendRequests;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,8 +37,8 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 0
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,25 +48,16 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "source"
 
-    .line 1
-    sget-object p1, Lcom/supercell/id/PresentationInfo$FriendRequests;->g:Lcom/supercell/id/PresentationInfo$FriendRequests;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object p1, Lcom/supercell/id/PresentationInfo$FriendRequests;->f:Lcom/supercell/id/PresentationInfo$FriendRequests;
 
     return-object p1
-
-    :cond_0
-    const-string p1, "source"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -76,7 +66,6 @@
         }
     .end annotation
 
-    .line 1
     new-array p1, p1, [Lcom/supercell/id/PresentationInfo$FriendRequests;
 
     return-object p1

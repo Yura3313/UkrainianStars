@@ -31,7 +31,6 @@
 .method public constructor <init>(Landroid/app/Activity;Lcom/kakaogame/auth/agreement/AgreementManager$AgreementCheckType;Ljava/util/Map;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/agreement/AgreementManager$1;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/auth/agreement/AgreementManager$1;->val$checkType:Lcom/kakaogame/auth/agreement/AgreementManager$AgreementCheckType;

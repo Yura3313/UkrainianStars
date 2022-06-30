@@ -140,7 +140,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Ljava/lang/Object;
 
     invoke-static {v0}, Lcom/google/gson/reflect/TypeToken;->get(Ljava/lang/Class;)Lcom/google/gson/reflect/TypeToken;
@@ -879,7 +878,6 @@
 .method public excluder()Lcom/google/gson/internal/Excluder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/Gson;->excluder:Lcom/google/gson/internal/Excluder;
 
     return-object v0
@@ -888,7 +886,6 @@
 .method public fieldNamingStrategy()Lcom/google/gson/FieldNamingStrategy;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/Gson;->fieldNamingStrategy:Lcom/google/gson/FieldNamingStrategy;
 
     return-object v0
@@ -1050,7 +1047,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/AssertionError;->getMessage()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1063,7 +1060,7 @@
     invoke-direct {v1, v2}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
     .line 20
-    invoke-virtual {v1, p2}, Ljava/lang/AssertionError;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v1, p2}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 21
     throw v1
@@ -1588,7 +1585,6 @@
 .method public htmlSafe()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/gson/Gson;->htmlSafe:Z
 
     return v0
@@ -1597,7 +1593,6 @@
 .method public newBuilder()Lcom/google/gson/GsonBuilder;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/gson/GsonBuilder;
 
     invoke-direct {v0, p0}, Lcom/google/gson/GsonBuilder;-><init>(Lcom/google/gson/Gson;)V
@@ -1667,7 +1662,6 @@
 .method public serializeNulls()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/gson/Gson;->serializeNulls:Z
 
     return v0
@@ -1815,7 +1809,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/AssertionError;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -1828,7 +1822,7 @@
     invoke-direct {v3, v4}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
     .line 47
-    invoke-virtual {v3, p1}, Ljava/lang/AssertionError;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v3, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 48
     throw v3
@@ -2010,7 +2004,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/AssertionError;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 
@@ -2023,7 +2017,7 @@
     invoke-direct {p2, v3}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
     .line 23
-    invoke-virtual {p2, p1}, Ljava/lang/AssertionError;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {p2, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 24
     throw p2

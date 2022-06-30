@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/push/OnlinePushManager$2;Landroid/app/NotificationManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/push/OnlinePushManager$2$1;->this$0:Lcom/kakaogame/push/OnlinePushManager$2;
 
     iput-object p2, p0, Lcom/kakaogame/push/OnlinePushManager$2$1;->val$nm:Landroid/app/NotificationManager;
@@ -42,7 +41,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/push/OnlinePushManager$2$1;->val$nm:Landroid/app/NotificationManager;
 
     const/16 v1, 0xb1c

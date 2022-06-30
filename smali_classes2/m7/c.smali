@@ -1,58 +1,73 @@
-.class public Lm7/c;
-.super Lm7/g;
-.source "FilteredViewExternalStorageDownloadRunnable.java"
+.class public final Lm7/c;
+.super Ljava/lang/Object;
+.source "DownloadManager.java"
+
+# interfaces
+.implements Ln7/d;
 
 
 # instance fields
-.field public l:Landroid/content/Context;
+.field public final synthetic a:Lm7/d;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lj3/h70;Ln7/b;Ll7/a;Ll7/c;Ll7/b;)V
-    .locals 6
+.method public constructor <init>(Lm7/d;)V
+    .locals 0
 
-    move-object v0, p0
+    iput-object p1, p0, Lm7/c;->a:Lm7/d;
 
-    move-object v1, p2
-
-    move-object v2, p3
-
-    move-object v3, p4
-
-    move-object v4, p5
-
-    move-object v5, p6
-
-    .line 1
-    invoke-direct/range {v0 .. v5}, Lm7/g;-><init>(Lj3/h70;Ln7/b;Ll7/a;Ll7/c;Ll7/b;)V
-
-    .line 2
-    iput-object p1, p0, Lm7/c;->l:Landroid/content/Context;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public h()Ljava/io/File;
+.method public final a(Ljava/lang/String;I)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lm7/c;->l:Landroid/content/Context;
+    iget-object v0, p0, Lm7/c;->a:Lm7/d;
 
-    const/4 v1, 0x0
+    iget-object v0, v0, Lm7/d;->b:Ljava/util/concurrent/ConcurrentHashMap;
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
+    .line 2
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    check-cast v0, Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-.method public j()Z
-    .locals 1
+    if-eqz v0, :cond_1
 
-    const/4 v0, 0x0
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
 
-    return v0
+    move-result-object v0
+
+    .line 4
+    :cond_0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 5
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ln7/d;
+
+    if-eqz v1, :cond_0
+
+    .line 6
+    invoke-interface {v1, p1, p2}, Ln7/d;->a(Ljava/lang/String;I)V
+
+    goto :goto_0
+
+    :cond_1
+    return-void
 .end method

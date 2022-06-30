@@ -1,4 +1,4 @@
-.class public Ln/h;
+.class public final Ln/h;
 .super Ljava/lang/Object;
 .source "VelocityMatrix.java"
 
@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,7 @@
 
 
 # virtual methods
-.method public a(FFII[F)V
+.method public final a(FFII[F)V
     .locals 16
 
     move-object/from16 v0, p0
@@ -187,44 +186,7 @@
     return-void
 .end method
 
-.method public b(Lo/s;F)V
-    .locals 5
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    iget-object v0, p1, Lo/s;->a:Ln/b;
-
-    float-to-double v1, p2
-
-    const/4 p2, 0x0
-
-    invoke-virtual {v0, v1, v2, p2}, Ln/b;->e(DI)D
-
-    move-result-wide v3
-
-    double-to-float v0, v3
-
-    .line 2
-    iput v0, p0, Ln/h;->e:F
-
-    .line 3
-    iget-object p1, p1, Lo/s;->a:Ln/b;
-
-    invoke-virtual {p1, v1, v2, p2}, Ln/b;->b(DI)D
-
-    move-result-wide p1
-
-    double-to-float p1, p1
-
-    .line 4
-    iput p1, p0, Ln/h;->f:F
-
-    :cond_0
-    return-void
-.end method
-
-.method public c(Lo/h;Lo/h;F)V
+.method public final b(Lo/i;Lo/i;F)V
     .locals 0
 
     if-nez p1, :cond_0
@@ -237,7 +199,7 @@
     if-nez p1, :cond_1
 
     .line 1
-    invoke-virtual {p1, p3}, Lo/h;->b(F)F
+    invoke-virtual {p1, p3}, Lo/i;->b(F)F
 
     move-result p1
 
@@ -247,96 +209,12 @@
     if-nez p2, :cond_2
 
     .line 2
-    invoke-virtual {p2, p3}, Lo/h;->b(F)F
+    invoke-virtual {p2, p3}, Lo/i;->b(F)F
 
     move-result p1
 
     iput p1, p0, Ln/h;->b:F
 
     :cond_2
-    return-void
-.end method
-
-.method public d(Lo/s;Lo/s;F)V
-    .locals 3
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    iget-object p1, p1, Lo/s;->a:Ln/b;
-
-    float-to-double v1, p3
-
-    invoke-virtual {p1, v1, v2, v0}, Ln/b;->e(DI)D
-
-    move-result-wide v1
-
-    double-to-float p1, v1
-
-    .line 2
-    iput p1, p0, Ln/h;->a:F
-
-    :cond_0
-    if-eqz p2, :cond_1
-
-    .line 3
-    iget-object p1, p2, Lo/s;->a:Ln/b;
-
-    float-to-double p2, p3
-
-    invoke-virtual {p1, p2, p3, v0}, Ln/b;->e(DI)D
-
-    move-result-wide p1
-
-    double-to-float p1, p1
-
-    .line 4
-    iput p1, p0, Ln/h;->b:F
-
-    :cond_1
-    return-void
-.end method
-
-.method public e(Lo/s;Lo/s;F)V
-    .locals 3
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    iget-object p1, p1, Lo/s;->a:Ln/b;
-
-    float-to-double v1, p3
-
-    invoke-virtual {p1, v1, v2, v0}, Ln/b;->e(DI)D
-
-    move-result-wide v1
-
-    double-to-float p1, v1
-
-    .line 2
-    iput p1, p0, Ln/h;->c:F
-
-    :cond_0
-    if-eqz p2, :cond_1
-
-    .line 3
-    iget-object p1, p2, Lo/s;->a:Ln/b;
-
-    float-to-double p2, p3
-
-    invoke-virtual {p1, p2, p3, v0}, Ln/b;->e(DI)D
-
-    move-result-wide p1
-
-    double-to-float p1, p1
-
-    .line 4
-    iput p1, p0, Ln/h;->d:F
-
-    :cond_1
     return-void
 .end method

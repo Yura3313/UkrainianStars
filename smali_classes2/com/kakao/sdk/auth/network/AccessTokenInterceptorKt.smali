@@ -7,11 +7,13 @@
 .method public static final withAccessToken(Lokhttp3/Request;Ljava/lang/String;)Lokhttp3/Request;
     .locals 3
 
-    const/4 v0, 0x0
+    const-string v0, "$this$withAccessToken"
 
-    if-eqz p0, :cond_1
+    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p1, :cond_0
+    const-string v0, "accessToken"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lokhttp3/Request;->newBuilder()Lokhttp3/Request$Builder;
@@ -50,19 +52,4 @@
     move-result-object p0
 
     return-object p0
-
-    :cond_0
-    const-string p0, "accessToken"
-
-    .line 5
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p0, "$this$withAccessToken"
-
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

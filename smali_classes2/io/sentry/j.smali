@@ -46,7 +46,6 @@
 
     iget-object v3, p0, Lio/sentry/j;->d:Ljava/io/File;
 
-    .line 1
     invoke-static {v0, v1, v2, v3}, Lio/sentry/k;->c(Lio/sentry/ILogger;Ljava/lang/String;Lio/sentry/DirectoryProcessor;Ljava/io/File;)V
 
     return-void

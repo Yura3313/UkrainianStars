@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/WebDialogManager$4;Lcom/kakaogame/web/WebDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialogManager$4$1;->this$0:Lcom/kakaogame/web/WebDialogManager$4;
 
     iput-object p2, p0, Lcom/kakaogame/web/WebDialogManager$4$1;->val$webDialog:Lcom/kakaogame/web/WebDialog;

@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/RecyclerView$m$d;
+.class public final Landroidx/recyclerview/widget/RecyclerView$m$d;
 .super Ljava/lang/Object;
 .source "RecyclerView.java"
 
@@ -28,7 +28,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

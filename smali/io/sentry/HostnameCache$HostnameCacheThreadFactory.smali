@@ -25,7 +25,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +33,6 @@
 .method public synthetic constructor <init>(Lio/sentry/HostnameCache$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lio/sentry/HostnameCache$HostnameCacheThreadFactory;-><init>()V
 
     return-void
@@ -50,10 +48,12 @@
 
     const-string v1, "SentryHostnameCache-"
 
+    .line 2
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 3
     iget v2, p0, Lio/sentry/HostnameCache$HostnameCacheThreadFactory;->cnt:I
 
     add-int/lit8 v3, v2, 0x1
@@ -70,7 +70,7 @@
 
     const/4 p1, 0x1
 
-    .line 2
+    .line 4
     invoke-virtual {v0, p1}, Ljava/lang/Thread;->setDaemon(Z)V
 
     return-object v0

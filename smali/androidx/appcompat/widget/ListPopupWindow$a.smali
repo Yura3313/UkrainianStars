@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/ListPopupWindow$a;
+.class public final Landroidx/appcompat/widget/ListPopupWindow$a;
 .super Ljava/lang/Object;
 .source "ListPopupWindow.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/ListPopupWindow;
+.field public final synthetic f:Landroidx/appcompat/widget/ListPopupWindow;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/ListPopupWindow;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow$a;->g:Landroidx/appcompat/widget/ListPopupWindow;
+    iput-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow$a;->f:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,24 +34,24 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow$a;->g:Landroidx/appcompat/widget/ListPopupWindow;
+    iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow$a;->f:Landroidx/appcompat/widget/ListPopupWindow;
 
     .line 2
-    iget-object v0, v0, Landroidx/appcompat/widget/ListPopupWindow;->i:Landroidx/appcompat/widget/s;
+    iget-object v0, v0, Landroidx/appcompat/widget/ListPopupWindow;->h:Landroidx/appcompat/widget/r;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x1
 
     .line 3
-    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/s;->setListSelectionHidden(Z)V
+    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/r;->setListSelectionHidden(Z)V
 
     .line 4
-    invoke-virtual {v0}, Landroid/widget/ListView;->requestLayout()V
+    invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
 
     :cond_0
     return-void

@@ -1,4 +1,4 @@
-.class public Lu/a$b;
+.class public final Lu/a$b;
 .super Ljava/lang/Object;
 .source "ActivityCompat.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lu/a;->g(Landroid/app/Activity;)V
+    value = Lu/a;->j(Landroid/app/Activity;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroid/app/Activity;
+.field public final synthetic f:Landroid/app/Activity;
 
 
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lu/a$b;->g:Landroid/app/Activity;
+    iput-object p1, p0, Lu/a$b;->f:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +34,11 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lu/a$b;->g:Landroid/app/Activity;
+    iget-object v0, p0, Lu/a$b;->f:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
 
@@ -48,16 +47,16 @@
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lu/a$b;->g:Landroid/app/Activity;
+    iget-object v0, p0, Lu/a$b;->f:Landroid/app/Activity;
 
-    invoke-static {v0}, Lu/c;->b(Landroid/app/Activity;)Z
+    invoke-static {v0}, Lu/b;->b(Landroid/app/Activity;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lu/a$b;->g:Landroid/app/Activity;
+    iget-object v0, p0, Lu/a$b;->f:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->recreate()V
 

@@ -71,7 +71,6 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/CircularFifoQueue$1;->isFirst:Z
 
     if-nez v0, :cond_1

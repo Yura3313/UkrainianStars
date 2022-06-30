@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/FragmentManager$b;
+.class public final Landroidx/fragment/app/FragmentManager$b;
 .super Ljava/lang/Object;
 .source "FragmentManager.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/fragment/app/FragmentManager;->b(Landroidx/fragment/app/w;Landroidx/fragment/app/t;Landroidx/fragment/app/Fragment;)V
+    value = Landroidx/fragment/app/FragmentManager;->b(Landroidx/fragment/app/s;Landroidx/fragment/app/p;Landroidx/fragment/app/Fragment;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,7 +36,6 @@
 .method public constructor <init>(Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentManager$b;->a:Landroidx/fragment/app/FragmentManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +45,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)V
+.method public final a(Ljava/lang/Object;)V
     .locals 5
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -130,7 +129,7 @@
     :cond_1
     iget-object v1, p0, Landroidx/fragment/app/FragmentManager$b;->a:Landroidx/fragment/app/FragmentManager;
 
-    iget-object v1, v1, Landroidx/fragment/app/FragmentManager;->z:Ljava/util/ArrayDeque;
+    iget-object v1, v1, Landroidx/fragment/app/FragmentManager;->y:Ljava/util/ArrayDeque;
 
     invoke-virtual {v1}, Ljava/util/ArrayDeque;->pollFirst()Ljava/lang/Object;
 
@@ -144,19 +143,19 @@
 
     .line 9
     :cond_2
-    iget-object v2, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:Ljava/lang/String;
+    iget-object v2, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->f:Ljava/lang/String;
 
     .line 10
-    iget v1, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->h:I
+    iget v1, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:I
 
     .line 11
     iget-object v3, p0, Landroidx/fragment/app/FragmentManager$b;->a:Landroidx/fragment/app/FragmentManager;
 
     .line 12
-    iget-object v3, v3, Landroidx/fragment/app/FragmentManager;->c:Landroidx/fragment/app/f0;
+    iget-object v3, v3, Landroidx/fragment/app/FragmentManager;->c:Landroidx/fragment/app/b0;
 
     .line 13
-    invoke-virtual {v3, v2}, Landroidx/fragment/app/f0;->e(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+    invoke-virtual {v3, v2}, Landroidx/fragment/app/b0;->e(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
 
     move-result-object v2
 
@@ -166,7 +165,7 @@
 
     .line 14
     :cond_3
-    invoke-virtual {v2, v1, v0, p1}, Landroidx/fragment/app/Fragment;->n0(I[Ljava/lang/String;[I)V
+    invoke-virtual {v2, v1, v0, p1}, Landroidx/fragment/app/Fragment;->f0(I[Ljava/lang/String;[I)V
 
     :goto_2
     return-void

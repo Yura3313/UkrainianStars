@@ -1,4 +1,4 @@
-.class public Lcom/helpshift/util/e;
+.class public final Lcom/helpshift/util/e;
 .super Ljava/lang/Object;
 .source "ByteArrayUtil.java"
 
@@ -45,19 +45,11 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 6
-    :try_start_3
-    invoke-virtual {v2}, Ljava/io/ObjectOutputStream;->close()V
-    :try_end_3
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
+    invoke-static {v2}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
 
     .line 7
-    :catch_0
-    :try_start_4
-    invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->close()V
-    :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
+    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
 
-    :catch_1
     return-object p0
 
     :catchall_0
@@ -77,28 +69,14 @@
 
     move-object v1, v0
 
-    :goto_0
-    if-eqz v0, :cond_0
-
     .line 8
-    :try_start_5
-    invoke-interface {v0}, Ljava/io/Closeable;->close()V
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_2
-
-    :catch_2
-    :cond_0
-    if-eqz v1, :cond_1
+    :goto_0
+    invoke-static {v0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
 
     .line 9
-    :try_start_6
-    invoke-interface {v1}, Ljava/io/Closeable;->close()V
-    :try_end_6
-    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_3
+    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
 
     .line 10
-    :catch_3
-    :cond_1
     throw p0
 .end method
 
@@ -138,19 +116,11 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 4
-    :try_start_3
-    invoke-virtual {v1}, Ljava/io/ByteArrayInputStream;->close()V
-    :try_end_3
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
+    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
 
     .line 5
-    :catch_0
-    :try_start_4
-    invoke-virtual {p0}, Ljava/io/ObjectInputStream;->close()V
-    :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
+    invoke-static {p0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
 
-    :catch_1
     return-object v0
 
     :catchall_0
@@ -178,27 +148,13 @@
 
     move-object p0, v1
 
-    :goto_0
-    if-eqz v1, :cond_0
-
     .line 6
-    :try_start_5
-    invoke-interface {v1}, Ljava/io/Closeable;->close()V
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_2
-
-    :catch_2
-    :cond_0
-    if-eqz p0, :cond_1
+    :goto_0
+    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
 
     .line 7
-    :try_start_6
-    invoke-interface {p0}, Ljava/io/Closeable;->close()V
-    :try_end_6
-    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_3
+    invoke-static {p0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
 
     .line 8
-    :catch_3
-    :cond_1
     throw v0
 .end method

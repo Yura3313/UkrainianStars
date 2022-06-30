@@ -17,7 +17,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -111,7 +110,7 @@
     move-exception p0
 
     .line 8
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -131,7 +130,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -149,7 +147,6 @@
 .method public static getDeviceBrand()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/os/Build;->BRAND:Ljava/lang/String;
 
     return-object v0
@@ -193,7 +190,6 @@
 .method public static getDeviceModel()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     return-object v0
@@ -306,7 +302,7 @@
     move-exception p0
 
     .line 7
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -318,8 +314,7 @@
 .method public static getSSAID(Landroid/app/Activity;)Ljava/lang/String;
     .locals 1
 
-    .line 1
-    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p0
 
@@ -402,18 +397,16 @@
 .end method
 
 .method public static isGooglePlayServicesAvailable(Landroid/content/Context;)Z
-    .locals 3
+    .locals 2
 
     const/4 v0, 0x0
 
     .line 1
     :try_start_0
-    sget-object v1, Ly1/d;->b:Ly1/d;
+    sget-object v1, Lz1/d;->b:Lz1/d;
 
     .line 2
-    sget v2, Ly1/d;->a:I
-
-    invoke-virtual {v1, p0, v2}, Ly1/d;->d(Landroid/content/Context;I)I
+    invoke-virtual {v1, p0}, Lz1/d;->c(Landroid/content/Context;)I
 
     move-result p0
     :try_end_0

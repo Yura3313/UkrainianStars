@@ -147,7 +147,6 @@
 .method public getEnabled()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationEvent;->enabled:Ljava/lang/Boolean;
 
     return-object v0
@@ -156,7 +155,6 @@
 .method public getEndsAt()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationEvent;->endsAt:Ljava/lang/String;
 
     return-object v0
@@ -165,7 +163,6 @@
 .method public getId()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationEvent;->id:Ljava/lang/Integer;
 
     return-object v0
@@ -174,7 +171,6 @@
 .method public getInvitationUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationEvent;->invitationUrl:Ljava/lang/String;
 
     return-object v0
@@ -183,7 +179,6 @@
 .method public getMaxSenderRewardsCount()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationEvent;->maxSenderRewardsCount:Ljava/lang/Integer;
 
     return-object v0
@@ -192,7 +187,6 @@
 .method public getReceiverReward()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationEvent;->receiverReward:Ljava/lang/String;
 
     return-object v0
@@ -201,7 +195,6 @@
 .method public getSenderReward()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationEvent;->senderReward:Ljava/lang/String;
 
     return-object v0
@@ -210,7 +203,6 @@
 .method public getStartsAt()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationEvent;->startsAt:Ljava/lang/String;
 
     return-object v0
@@ -219,7 +211,6 @@
 .method public getTotalReceiversCount()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationEvent;->totalReceiversCount:Ljava/lang/Integer;
 
     return-object v0

@@ -194,7 +194,6 @@
 .method public build()Landroid/support/v4/media/MediaMetadataCompat;
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/support/v4/media/MediaMetadataCompat;
 
     iget-object v1, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
@@ -210,31 +209,20 @@
     .line 1
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Lm/a;
 
-    .line 2
-    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/g;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-ltz v1, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_1
 
     const/4 v1, 0x0
 
-    .line 3
+    .line 2
     invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
+    .line 3
     check-cast v0, Ljava/lang/Integer;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
@@ -243,29 +231,31 @@
 
     const/4 v1, 0x2
 
-    if-ne v0, v1, :cond_1
+    if-ne v0, v1, :cond_0
 
-    goto :goto_1
+    goto :goto_0
 
-    .line 5
-    :cond_1
+    .line 4
+    :cond_0
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "The "
 
     const-string v1, " key cannot be used to put a Bitmap"
 
-    invoke-static {v0, p1, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 5
+    invoke-static {v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 6
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
 
-    .line 6
-    :cond_2
-    :goto_1
+    .line 7
+    :cond_1
+    :goto_0
     iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
@@ -279,60 +269,51 @@
     .line 1
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Lm/a;
 
-    .line 2
-    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/g;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-ltz v1, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_1
 
     const/4 v1, 0x0
 
-    .line 3
+    .line 2
     invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
+    .line 3
     check-cast v0, Ljava/lang/Integer;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_0
 
-    goto :goto_1
+    goto :goto_0
 
-    .line 5
-    :cond_1
+    .line 4
+    :cond_0
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     const-string p3, "The "
 
     const-string v0, " key cannot be used to put a long"
 
-    invoke-static {p3, p1, v0}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 5
+    invoke-static {p3, p1, v0}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 6
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
 
-    .line 6
-    :cond_2
-    :goto_1
+    .line 7
+    :cond_1
+    :goto_0
     iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
@@ -346,31 +327,20 @@
     .line 1
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Lm/a;
 
-    .line 2
-    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/g;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-ltz v1, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_1
 
     const/4 v1, 0x0
 
-    .line 3
+    .line 2
     invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
+    .line 3
     check-cast v0, Ljava/lang/Integer;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
@@ -379,36 +349,38 @@
 
     const/4 v1, 0x3
 
-    if-ne v0, v1, :cond_1
+    if-ne v0, v1, :cond_0
 
-    goto :goto_1
+    goto :goto_0
 
-    .line 5
-    :cond_1
+    .line 4
+    :cond_0
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "The "
 
     const-string v1, " key cannot be used to put a Rating"
 
-    invoke-static {v0, p1, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 5
+    invoke-static {v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 6
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
 
-    .line 6
-    :cond_2
-    :goto_1
+    .line 7
+    :cond_1
+    :goto_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
-    if-lt v0, v1, :cond_3
+    if-lt v0, v1, :cond_2
 
-    .line 7
+    .line 8
     iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
     invoke-virtual {p2}, Landroid/support/v4/media/RatingCompat;->getRating()Ljava/lang/Object;
@@ -419,80 +391,71 @@
 
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 8
-    :cond_3
+    .line 9
+    :cond_2
     iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    :goto_2
+    :goto_1
     return-object p0
 .end method
 
 .method public putString(Ljava/lang/String;Ljava/lang/String;)Landroid/support/v4/media/MediaMetadataCompat$Builder;
-    .locals 3
+    .locals 2
 
     .line 1
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Lm/a;
 
-    .line 2
-    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/g;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
-    const/4 v2, 0x1
-
-    if-ltz v1, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_1
 
     const/4 v1, 0x0
 
-    .line 3
+    .line 2
     invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
+    .line 3
     check-cast v0, Ljava/lang/Integer;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
-    if-ne v0, v2, :cond_1
+    const/4 v1, 0x1
 
-    goto :goto_1
+    if-ne v0, v1, :cond_0
 
-    .line 5
-    :cond_1
+    goto :goto_0
+
+    .line 4
+    :cond_0
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "The "
 
     const-string v1, " key cannot be used to put a String"
 
-    invoke-static {v0, p1, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 5
+    invoke-static {v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 6
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
 
-    .line 6
-    :cond_2
-    :goto_1
+    .line 7
+    :cond_1
+    :goto_0
     iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
@@ -501,67 +464,58 @@
 .end method
 
 .method public putText(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/support/v4/media/MediaMetadataCompat$Builder;
-    .locals 3
+    .locals 2
 
     .line 1
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Lm/a;
 
-    .line 2
-    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/g;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
-    const/4 v2, 0x1
-
-    if-ltz v1, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_1
 
     const/4 v1, 0x0
 
-    .line 3
+    .line 2
     invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
+    .line 3
     check-cast v0, Ljava/lang/Integer;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
-    if-ne v0, v2, :cond_1
+    const/4 v1, 0x1
 
-    goto :goto_1
+    if-ne v0, v1, :cond_0
 
-    .line 5
-    :cond_1
+    goto :goto_0
+
+    .line 4
+    :cond_0
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "The "
 
     const-string v1, " key cannot be used to put a CharSequence"
 
-    invoke-static {v0, p1, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 5
+    invoke-static {v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 6
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
 
-    .line 6
-    :cond_2
-    :goto_1
+    .line 7
+    :cond_1
+    :goto_0
     iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V

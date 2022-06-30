@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/SearchView$e;
+.class public final Landroidx/appcompat/widget/SearchView$e;
 .super Ljava/lang/Object;
 .source "SearchView.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SearchView$e;->a:Landroidx/appcompat/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,14 +34,14 @@
 
 
 # virtual methods
-.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
     .locals 0
 
     .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/SearchView$e;->a:Landroidx/appcompat/widget/SearchView;
 
     .line 2
-    iget-object p2, p1, Landroidx/appcompat/widget/SearchView;->D:Landroid/view/View;
+    iget-object p2, p1, Landroidx/appcompat/widget/SearchView;->C:Landroid/view/View;
 
     invoke-virtual {p2}, Landroid/view/View;->getWidth()I
 
@@ -53,7 +52,7 @@
     if-le p2, p3, :cond_2
 
     .line 3
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -62,7 +61,7 @@
     move-result-object p2
 
     .line 4
-    iget-object p3, p1, Landroidx/appcompat/widget/SearchView;->x:Landroid/view/View;
+    iget-object p3, p1, Landroidx/appcompat/widget/SearchView;->w:Landroid/view/View;
 
     invoke-virtual {p3}, Landroid/view/View;->getPaddingLeft()I
 
@@ -74,12 +73,12 @@
     invoke-direct {p4}, Landroid/graphics/Rect;-><init>()V
 
     .line 6
-    invoke-static {p1}, Landroidx/appcompat/widget/p0;->a(Landroid/view/View;)Z
+    invoke-static {p1}, Landroidx/appcompat/widget/o0;->a(Landroid/view/View;)Z
 
     move-result p5
 
     .line 7
-    iget-boolean p6, p1, Landroidx/appcompat/widget/SearchView;->V:Z
+    iget-boolean p6, p1, Landroidx/appcompat/widget/SearchView;->U:Z
 
     if-eqz p6, :cond_0
 
@@ -107,7 +106,7 @@
 
     .line 11
     :goto_0
-    iget-object p6, p1, Landroidx/appcompat/widget/SearchView;->v:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
+    iget-object p6, p1, Landroidx/appcompat/widget/SearchView;->u:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {p6}, Landroid/widget/AutoCompleteTextView;->getDropDownBackground()Landroid/graphics/drawable/Drawable;
 
@@ -134,12 +133,12 @@
 
     .line 14
     :goto_1
-    iget-object p6, p1, Landroidx/appcompat/widget/SearchView;->v:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
+    iget-object p6, p1, Landroidx/appcompat/widget/SearchView;->u:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {p6, p5}, Landroid/widget/AutoCompleteTextView;->setDropDownHorizontalOffset(I)V
 
     .line 15
-    iget-object p5, p1, Landroidx/appcompat/widget/SearchView;->D:Landroid/view/View;
+    iget-object p5, p1, Landroidx/appcompat/widget/SearchView;->C:Landroid/view/View;
 
     invoke-virtual {p5}, Landroid/view/View;->getWidth()I
 
@@ -158,7 +157,7 @@
     sub-int/2addr p5, p3
 
     .line 16
-    iget-object p1, p1, Landroidx/appcompat/widget/SearchView;->v:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
+    iget-object p1, p1, Landroidx/appcompat/widget/SearchView;->u:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
     invoke-virtual {p1, p5}, Landroid/widget/AutoCompleteTextView;->setDropDownWidth(I)V
 

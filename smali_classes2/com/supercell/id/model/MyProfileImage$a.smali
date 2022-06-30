@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,50 +37,53 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 3
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_9
+    const-string v0, "parcel"
 
     .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 3
+    const-class v1, Lcom/supercell/id/model/MyProfileImage$Empty;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2
-    const-class v2, Lcom/supercell/id/model/MyProfileImage$Empty;
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    move-result v1
 
-    move-result-object v2
+    if-eqz v1, :cond_0
 
-    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    sget-object p1, Lcom/supercell/id/model/MyProfileImage$Empty;->g:Lcom/supercell/id/model/MyProfileImage$Empty;
+    sget-object p1, Lcom/supercell/id/model/MyProfileImage$Empty;->f:Lcom/supercell/id/model/MyProfileImage$Empty;
 
     goto :goto_1
 
-    .line 3
+    .line 4
     :cond_0
-    const-class v2, Lcom/supercell/id/model/MyProfileImage$Avatar;
+    const-class v1, Lcom/supercell/id/model/MyProfileImage$Avatar;
 
-    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_2
+    const/4 v2, 0x0
 
-    new-instance v1, Lcom/supercell/id/model/MyProfileImage$Avatar;
+    if-eqz v1, :cond_2
+
+    new-instance v0, Lcom/supercell/id/model/MyProfileImage$Avatar;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -89,39 +91,39 @@
 
     if-eqz p1, :cond_1
 
-    invoke-direct {v1, p1}, Lcom/supercell/id/model/MyProfileImage$Avatar;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p1}, Lcom/supercell/id/model/MyProfileImage$Avatar;-><init>(Ljava/lang/String;)V
 
     :goto_0
-    move-object p1, v1
+    move-object p1, v0
 
     goto :goto_1
 
     :cond_1
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    throw v2
 
-    .line 4
+    .line 5
     :cond_2
-    const-class v2, Lcom/supercell/id/model/MyProfileImage$Image;
+    const-class v1, Lcom/supercell/id/model/MyProfileImage$Image;
 
-    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_5
+    if-eqz v1, :cond_5
 
-    new-instance v1, Lcom/supercell/id/model/MyProfileImage$Image;
+    new-instance v0, Lcom/supercell/id/model/MyProfileImage$Image;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    if-eqz v2, :cond_4
+    if-eqz v1, :cond_4
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -129,41 +131,41 @@
 
     if-eqz p1, :cond_3
 
-    invoke-direct {v1, v2, p1}, Lcom/supercell/id/model/MyProfileImage$Image;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, p1}, Lcom/supercell/id/model/MyProfileImage$Image;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_3
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    throw v2
 
     :cond_4
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    throw v2
 
-    .line 5
+    .line 6
     :cond_5
-    const-class v2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;
+    const-class v1, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;
 
-    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_8
+    if-eqz v1, :cond_8
 
-    new-instance v1, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;
+    new-instance v0, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    if-eqz v2, :cond_7
+    if-eqz v1, :cond_7
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -171,7 +173,7 @@
 
     if-eqz p1, :cond_6
 
-    invoke-direct {v1, v2, p1}, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, p1}, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -179,48 +181,41 @@
     return-object p1
 
     :cond_6
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    throw v2
 
     :cond_7
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    throw v2
 
-    .line 6
+    .line 7
     :cond_8
     new-instance p1, Landroid/os/ParcelFormatException;
 
-    const-string v0, "Could not create IdMyImage from type "
+    const-string v1, "Could not create IdMyImage from type "
 
-    invoke-static {v0, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 8
+    invoke-static {v1, v0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 9
     invoke-direct {p1, v0}, Landroid/os/ParcelFormatException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_9
-    const-string p1, "parcel"
-
-    .line 7
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     goto :goto_3
 
     :goto_2
-    throw v0
+    throw p1
 
     :goto_3
     goto :goto_2
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Lcom/supercell/id/model/MyProfileImage;
 
     return-object p1

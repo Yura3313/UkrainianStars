@@ -112,7 +112,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -121,7 +120,6 @@
 .method public static synthetic access$000()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/log/PlayerLogManager;->LOCK:Ljava/lang/Object;
 
     return-object v0
@@ -130,7 +128,6 @@
 .method public static synthetic access$100()Lcom/kakaogame/core/TimerManager;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/log/PlayerLogManager;->timer:Lcom/kakaogame/core/TimerManager;
 
     return-object v0
@@ -139,7 +136,6 @@
 .method public static synthetic access$102(Lcom/kakaogame/core/TimerManager;)Lcom/kakaogame/core/TimerManager;
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/kakaogame/log/PlayerLogManager;->timer:Lcom/kakaogame/core/TimerManager;
 
     return-object p0
@@ -148,7 +144,6 @@
 .method public static synthetic access$1600()Landroid/content/Context;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/log/PlayerLogManager;->context:Landroid/content/Context;
 
     return-object v0
@@ -157,7 +152,6 @@
 .method public static synthetic access$200(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/log/PlayerLogManager;->writePlayerGameData(Ljava/lang/String;)V
 
     return-void
@@ -166,7 +160,6 @@
 .method public static synthetic access$300(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/log/PlayerLogManager;->writeSummaryLog(Ljava/lang/String;)V
 
     return-void
@@ -175,7 +168,6 @@
 .method public static synthetic access$400()Ljava/util/Map;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/log/PlayerLogManager;->playerGameDataLogMap:Ljava/util/Map;
 
     return-object v0
@@ -184,7 +176,6 @@
 .method public static synthetic access$600()Ljava/util/Map;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/log/PlayerLogManager;->playerGameDataMap:Ljava/util/Map;
 
     return-object v0
@@ -193,7 +184,6 @@
 .method public static synthetic access$700()Ljava/util/List;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/log/PlayerLogManager;->logDataList:Ljava/util/List;
 
     return-object v0
@@ -211,10 +201,11 @@
     const-string v3, " : "
 
     .line 1
-    invoke-static {v1, p0, v2, p1, v3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, p0, v2, p1, v3}, Lcom/kakaogame/c;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 2
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v2, " : "
@@ -229,7 +220,7 @@
 
     invoke-static {v0, v1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     :try_start_0
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
@@ -239,7 +230,7 @@
 
     move-result-object v0
 
-    .line 3
+    .line 4
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -250,12 +241,12 @@
 
     const-string p1, "player id is null"
 
-    .line 4
+    .line 5
     invoke-static {p0, p1}, Lcom/kakaogame/Logger;->w(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 5
+    .line 6
     :cond_0
     sget-object v1, Lcom/kakaogame/log/PlayerLogManager;->logDataList:Ljava/util/List;
 
@@ -263,7 +254,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 6
+    .line 7
     :try_start_1
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -284,7 +275,7 @@
 
     check-cast v3, Lcom/kakaogame/log/PlayerLogManager$SummaryLogData;
 
-    .line 7
+    .line 8
     invoke-static {v3, p0, p1, p2}, Lcom/kakaogame/log/PlayerLogManager$SummaryLogData;->access$1100(Lcom/kakaogame/log/PlayerLogManager$SummaryLogData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v5
@@ -299,26 +290,26 @@
     :goto_0
     if-nez v3, :cond_3
 
-    .line 8
+    .line 9
     new-instance v3, Lcom/kakaogame/log/PlayerLogManager$SummaryLogData;
 
     invoke-direct {v3, p0, p1, p2, v4}, Lcom/kakaogame/log/PlayerLogManager$SummaryLogData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/kakaogame/log/PlayerLogManager$1;)V
 
-    .line 9
+    .line 10
     sget-object p0, Lcom/kakaogame/log/PlayerLogManager;->logDataList:Ljava/util/List;
 
     invoke-interface {p0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 10
+    .line 11
     :cond_3
     invoke-static {v3, p3, p4}, Lcom/kakaogame/log/PlayerLogManager$SummaryLogData;->access$1300(Lcom/kakaogame/log/PlayerLogManager$SummaryLogData;J)V
 
-    .line 11
+    .line 12
     sget-object p0, Lcom/kakaogame/log/PlayerLogManager;->logDataList:Ljava/util/List;
 
     invoke-static {v0, p0}, Lcom/kakaogame/log/PlayerLogManager$PrefManager;->access$1400(Ljava/lang/String;Ljava/util/List;)V
 
-    .line 12
+    .line 13
     monitor-exit v1
 
     goto :goto_1
@@ -340,8 +331,8 @@
 
     const-string p1, "PlayerLogManager"
 
-    .line 13
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 14
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -359,7 +350,7 @@
     const-string v1, "PlayerLogManager"
 
     .line 1
-    invoke-static {v0, p0, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p0, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     sget-object v0, Lcom/kakaogame/log/PlayerLogManager;->playerGameDataMap:Ljava/util/Map;
@@ -496,7 +487,7 @@
     const-string p1, "PlayerLogManager"
 
     .line 10
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -617,7 +608,7 @@
     const-string p1, "PlayerLogManager"
 
     .line 22
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 

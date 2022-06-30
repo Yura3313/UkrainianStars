@@ -1,4 +1,4 @@
-.class public Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;
+.class public final Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;
 .super Ljava/lang/Object;
 .source "CoordinatorLayout.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,15 +34,12 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;Lf0/z;)Lf0/z;
+.method public final a(Landroid/view/View;Lf0/a0;)Lf0/a0;
     .locals 0
 
-    .line 1
     iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
-    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C(Lf0/z;)Lf0/z;
+    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C(Lf0/a0;)Lf0/a0;
 
-    move-result-object p1
-
-    return-object p1
+    return-object p2
 .end method

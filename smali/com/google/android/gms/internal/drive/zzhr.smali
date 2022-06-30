@@ -13,7 +13,7 @@
 
 
 # virtual methods
-.method public final u0()V
+.method public final A0()V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -22,10 +22,10 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/android/gms/common/api/Status;->l:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->k:Lcom/google/android/gms/common/api/Status;
 
     .line 2
-    invoke-virtual {v0}, Lcom/google/android/gms/common/api/Status;->z2()Z
+    invoke-virtual {v0}, Lcom/google/android/gms/common/api/Status;->D2()Z
 
     move-result v1
 
@@ -42,6 +42,5 @@
 
     invoke-direct {v1, v0}, Lcom/google/android/gms/common/api/ApiException;-><init>(Lcom/google/android/gms/common/api/Status;)V
 
-    .line 5
     throw v2
 .end method

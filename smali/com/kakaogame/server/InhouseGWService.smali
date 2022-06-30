@@ -41,7 +41,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -138,7 +137,7 @@
     const/16 v1, 0xfa1
 
     .line 9
-    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -258,7 +257,7 @@
     const/16 v0, 0xfa1
 
     .line 12
-    invoke-static {p0, p1, p0, v0}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, p1, p0, v0}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -436,7 +435,7 @@
     const/16 p2, 0xfa1
 
     .line 19
-    invoke-static {p0, p1, p0, p2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, p1, p0, p2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -597,7 +596,7 @@
     const/16 v1, 0xfa1
 
     .line 9
-    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -795,7 +794,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v5, Lcom/kakaogame/server/InhouseGWService$Settings;->sendRecommendFriendMessageUri:Ljava/lang/String;
 
     const-string v6, "3.5"
@@ -834,7 +832,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v5, Lcom/kakaogame/server/InhouseGWService$Settings;->sendRecommendFriendMessageUri:Ljava/lang/String;
 
     const-string v6, "4.0"
@@ -978,7 +975,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v5, Lcom/kakaogame/server/InhouseGWService$Settings;->sendTalkMessageUri:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -1016,7 +1012,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v5, Lcom/kakaogame/server/InhouseGWService$Settings;->sendTalkMessageUri:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -1107,7 +1102,7 @@
     const-string v0, "token"
 
     .line 8
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -1130,7 +1125,7 @@
     const/16 v1, 0xfa1
 
     .line 10
-    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -1140,7 +1135,6 @@
 .method public static initialize(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/kakaogame/server/InhouseGWService;->context:Landroid/content/Context;
 
     return-void
@@ -1272,7 +1266,7 @@
     const/16 v1, 0xfa1
 
     .line 10
-    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -1501,7 +1495,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/RuntimeException;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1521,7 +1515,7 @@
     move-exception p0
 
     .line 23
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 

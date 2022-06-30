@@ -19,7 +19,9 @@
 .method public constructor <init>(Landroid/os/Handler;Ljava/lang/String;)V
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "handler"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -27,19 +29,9 @@
     invoke-direct {p0, p1, p2, v0}, Lkotlinx/coroutines/android/HandlerContext;-><init>(Landroid/os/Handler;Ljava/lang/String;Z)V
 
     return-void
-
-    :cond_0
-    const-string p1, "handler"
-
-    .line 7
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public synthetic constructor <init>(Landroid/os/Handler;Ljava/lang/String;ILle/g;)V
+.method public synthetic constructor <init>(Landroid/os/Handler;Ljava/lang/String;ILse/e;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2
@@ -61,7 +53,7 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0, v0}, Lkotlinx/coroutines/android/HandlerDispatcher;-><init>(Lle/g;)V
+    invoke-direct {p0, v0}, Lkotlinx/coroutines/android/HandlerDispatcher;-><init>(Lse/e;)V
 
     iput-object p1, p0, Lkotlinx/coroutines/android/HandlerContext;->handler:Landroid/os/Handler;
 
@@ -103,7 +95,6 @@
 .method public static final synthetic access$getHandler$p(Lkotlinx/coroutines/android/HandlerContext;)Landroid/os/Handler;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lkotlinx/coroutines/android/HandlerContext;->handler:Landroid/os/Handler;
 
     return-object p0
@@ -111,42 +102,27 @@
 
 
 # virtual methods
-.method public dispatch(Lde/f;Ljava/lang/Runnable;)V
+.method public dispatch(Lke/f;Ljava/lang/Runnable;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string p1, "block"
 
-    .line 1
+    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     iget-object p1, p0, Lkotlinx/coroutines/android/HandlerContext;->handler:Landroid/os/Handler;
 
     invoke-virtual {p1, p2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     return-void
-
-    :cond_0
-    const-string p1, "block"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lkotlinx/coroutines/android/HandlerContext;
 
     if-eqz v0, :cond_0
@@ -190,7 +166,7 @@
     return-object v0
 .end method
 
-.method public bridge synthetic getImmediate()Lse/i1;
+.method public bridge synthetic getImmediate()Lze/i1;
     .locals 1
 
     .line 2
@@ -204,7 +180,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lkotlinx/coroutines/android/HandlerContext;->handler:Landroid/os/Handler;
 
     invoke-static {v0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
@@ -214,20 +189,25 @@
     return v0
 .end method
 
-.method public invokeOnTimeout(JLjava/lang/Runnable;)Lse/m0;
-    .locals 3
+.method public invokeOnTimeout(JLjava/lang/Runnable;)Lze/l0;
+    .locals 4
 
-    if-eqz p3, :cond_0
+    const-string v0, "block"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lkotlinx/coroutines/android/HandlerContext;->handler:Landroid/os/Handler;
 
     const-wide v1, 0x3fffffffffffffffL    # 1.9999999999999998
 
-    invoke-static {p1, p2, v1, v2}, Lc2/n0;->b(JJ)J
+    cmp-long v3, p1, v1
 
-    move-result-wide p1
+    if-lez v3, :cond_0
 
+    move-wide p1, v1
+
+    :cond_0
     invoke-virtual {v0, p3, p1, p2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 2
@@ -236,24 +216,15 @@
     invoke-direct {p1, p0, p3}, Lkotlinx/coroutines/android/HandlerContext$invokeOnTimeout$1;-><init>(Lkotlinx/coroutines/android/HandlerContext;Ljava/lang/Runnable;)V
 
     return-object p1
-
-    :cond_0
-    const-string p1, "block"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public isDispatchNeeded(Lde/f;)Z
+.method public isDispatchNeeded(Lke/f;)Z
     .locals 2
 
-    if-eqz p1, :cond_2
+    const-string v0, "context"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     iget-boolean p1, p0, Lkotlinx/coroutines/android/HandlerContext;->invokeImmediately:Z
 
     const/4 v0, 0x1
@@ -270,7 +241,7 @@
 
     move-result-object v1
 
-    invoke-static {p1, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -286,46 +257,41 @@
     :cond_1
     :goto_0
     return v0
-
-    :cond_2
-    const-string p1, "context"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public scheduleResumeAfterDelay(JLse/f;)V
-    .locals 4
+.method public scheduleResumeAfterDelay(JLze/f;)V
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
-            "Lse/f<",
+            "Lze/f<",
             "-",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    if-eqz p3, :cond_0
+    const-string v0, "continuation"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1;
 
-    invoke-direct {v0, p0, p3}, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1;-><init>(Lkotlinx/coroutines/android/HandlerContext;Lse/f;)V
+    invoke-direct {v0, p0, p3}, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1;-><init>(Lkotlinx/coroutines/android/HandlerContext;Lze/f;)V
 
     .line 2
     iget-object v1, p0, Lkotlinx/coroutines/android/HandlerContext;->handler:Landroid/os/Handler;
 
     const-wide v2, 0x3fffffffffffffffL    # 1.9999999999999998
 
-    invoke-static {p1, p2, v2, v3}, Lc2/n0;->b(JJ)J
+    cmp-long v4, p1, v2
 
-    move-result-wide p1
+    if-lez v4, :cond_0
 
+    move-wide p1, v2
+
+    :cond_0
     invoke-virtual {v1, v0, p1, p2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 3
@@ -333,19 +299,9 @@
 
     invoke-direct {p1, p0, v0}, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$1;-><init>(Lkotlinx/coroutines/android/HandlerContext;Ljava/lang/Runnable;)V
 
-    invoke-interface {p3, p1}, Lse/f;->k(Lke/l;)V
+    invoke-interface {p3, p1}, Lze/f;->n(Lre/l;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "continuation"
-
-    .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -369,13 +325,14 @@
 
     const-string v2, " [immediate]"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 3
+    .line 4
     :cond_0
     iget-object v0, p0, Lkotlinx/coroutines/android/HandlerContext;->handler:Landroid/os/Handler;
 
@@ -385,7 +342,7 @@
 
     const-string v1, "handler.toString()"
 
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     :cond_1
     :goto_0

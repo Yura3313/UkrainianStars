@@ -134,6 +134,8 @@
     <item type="id" name="avatar_backgrounds" />
     <item type="id" name="avatar_image_view" />
     <item type="id" name="avatar_images" />
+    <item type="id" name="backgroundIconView" />
+    <item type="id" name="backgroundView" />
     <item type="id" name="background_image" />
     <item type="id" name="background_outer_circle" />
     <item type="id" name="background_selected" />
@@ -259,6 +261,7 @@
     <item type="id" name="dialog_button" />
     <item type="id" name="dialog_container" />
     <item type="id" name="dimmer" />
+    <item type="id" name="dismissButton" />
     <item type="id" name="divider" />
     <item type="id" name="donateBarrier" />
     <item type="id" name="donateButton" />
@@ -668,6 +671,7 @@
     <item type="id" name="online_friend_count_label" />
     <item type="id" name="online_status_indicator" />
     <item type="id" name="online_status_text" />
+    <item type="id" name="openButton" />
     <item type="id" name="option_list_item_layout" />
     <item type="id" name="option_text" />
     <item type="id" name="options_header" />
@@ -891,6 +895,7 @@
     <item type="id" name="spacer" />
     <item type="id" name="special_effects_controller_view_tag" />
     <item type="id" name="split_action_bar" />
+    <item type="id" name="stage" />
     <item type="id" name="start_button" />
     <item type="id" name="statusGuide" />
     <item type="id" name="status_bar_latest_event_content" />

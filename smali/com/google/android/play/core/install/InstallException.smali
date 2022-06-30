@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
 
 
 # direct methods
@@ -23,7 +23,7 @@
     aput-object v1, v0, v2
 
     .line 1
-    sget-object v1, Lx4/a;->a:Ljava/util/Map;
+    sget-object v1, Lz4/a;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -35,7 +35,7 @@
 
     if-eqz v3, :cond_0
 
-    sget-object v3, Lx4/a;->b:Ljava/util/Map;
+    sget-object v3, Lz4/a;->b:Ljava/util/HashMap;
 
     invoke-interface {v3, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -116,7 +116,7 @@
 
     if-eqz p1, :cond_1
 
-    iput p1, p0, Lcom/google/android/play/core/install/InstallException;->g:I
+    iput p1, p0, Lcom/google/android/play/core/install/InstallException;->f:I
 
     return-void
 
@@ -132,10 +132,10 @@
 
 
 # virtual methods
-.method public getErrorCode()I
+.method public final getErrorCode()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/play/core/install/InstallException;->g:I
+    iget v0, p0, Lcom/google/android/play/core/install/InstallException;->f:I
 
     return v0
 .end method

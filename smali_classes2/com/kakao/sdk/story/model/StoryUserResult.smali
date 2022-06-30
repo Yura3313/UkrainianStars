@@ -42,7 +42,6 @@
 .method public constructor <init>(Z)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Lcom/kakao/sdk/story/model/StoryUserResult;->isStoryUser:Z
@@ -152,7 +151,6 @@
 .method public final isStoryUser()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakao/sdk/story/model/StoryUserResult;->isStoryUser:Z
 
     return v0
@@ -163,15 +161,18 @@
 
     const-string v0, "StoryUserResult(isStoryUser="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-boolean v1, p0, Lcom/kakao/sdk/story/model/StoryUserResult;->isStoryUser:Z
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -181,21 +182,13 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    if-eqz p1, :cond_0
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-boolean p2, p0, Lcom/kakao/sdk/story/model/StoryUserResult;->isStoryUser:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
-
-    :cond_0
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

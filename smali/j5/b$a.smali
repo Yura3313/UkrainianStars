@@ -1,6 +1,6 @@
-.class public Lj5/b$a;
-.super Ld5/i$b;
-.source "HmacKeyManager.java"
+.class public final Lj5/b$a;
+.super Lf5/i$b;
+.source "EciesAeadHkdfPublicKeyManager.java"
 
 
 # annotations
@@ -15,27 +15,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ld5/i$b<",
-        "Ld5/o;",
-        "Ll5/s0;",
+        "Lf5/i$b<",
+        "Lf5/e;",
+        "Ln5/h0;",
         ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0, p1}, Ld5/i$b;-><init>(Ljava/lang/Class;)V
+    const-class v0, Lf5/e;
+
+    invoke-direct {p0, v0}, Lf5/i$b;-><init>(Ljava/lang/Class;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -44,108 +45,89 @@
     .end annotation
 
     .line 1
-    check-cast p1, Ll5/s0;
+    check-cast p1, Ln5/h0;
 
     .line 2
-    invoke-virtual {p1}, Ll5/s0;->w()Ll5/u0;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ll5/u0;->s()Ll5/o0;
+    invoke-virtual {p1}, Ln5/h0;->w()Ln5/f0;
 
     move-result-object v0
 
     .line 3
-    invoke-virtual {p1}, Ll5/s0;->v()Lm5/c;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lm5/c;->m()[B
+    invoke-virtual {v0}, Ln5/f0;->u()Ln5/i0;
 
     move-result-object v1
 
     .line 4
-    new-instance v2, Ljavax/crypto/spec/SecretKeySpec;
+    invoke-virtual {v1}, Ln5/i0;->r()Ln5/m0;
 
-    const-string v3, "HMAC"
+    move-result-object v2
 
-    invoke-direct {v2, v1, v3}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
+    invoke-static {v2}, Lj5/f;->a(Ln5/m0;)I
+
+    move-result v2
 
     .line 5
-    invoke-virtual {p1}, Ll5/s0;->w()Ll5/u0;
+    invoke-virtual {p1}, Ln5/h0;->y()Lo5/d;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lo5/d;->n()[B
+
+    move-result-object v3
+
+    .line 6
+    invoke-virtual {p1}, Ln5/h0;->z()Lo5/d;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ll5/u0;->t()I
+    invoke-virtual {p1}, Lo5/d;->n()[B
 
-    move-result p1
-
-    .line 6
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_2
-
-    const/4 v1, 0x3
-
-    if-eq v0, v1, :cond_1
-
-    const/4 v1, 0x4
-
-    if-ne v0, v1, :cond_0
+    move-result-object p1
 
     .line 7
-    new-instance v0, Lp5/f0;
+    invoke-static {v2, v3, p1}, Lr5/v;->e(I[B[B)Ljava/security/interfaces/ECPublicKey;
 
-    new-instance v1, Lp5/e0;
-
-    const-string v3, "HMACSHA512"
-
-    invoke-direct {v1, v3, v2}, Lp5/e0;-><init>(Ljava/lang/String;Ljava/security/Key;)V
-
-    invoke-direct {v0, v1, p1}, Lp5/f0;-><init>(Lk5/c;I)V
-
-    goto :goto_0
+    move-result-object p1
 
     .line 8
-    :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "unknown hash"
-
-    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    new-instance v2, Lj5/g;
 
     .line 9
-    :cond_1
-    new-instance v0, Lp5/f0;
+    invoke-virtual {v0}, Ln5/f0;->s()Ln5/d0;
 
-    new-instance v1, Lp5/e0;
+    move-result-object v3
 
-    const-string v3, "HMACSHA256"
+    invoke-virtual {v3}, Ln5/d0;->r()Ln5/x0;
 
-    invoke-direct {v1, v3, v2}, Lp5/e0;-><init>(Ljava/lang/String;Ljava/security/Key;)V
+    move-result-object v3
 
-    invoke-direct {v0, v1, p1}, Lp5/f0;-><init>(Lk5/c;I)V
-
-    goto :goto_0
+    invoke-direct {v2, v3}, Lj5/g;-><init>(Ln5/x0;)V
 
     .line 10
-    :cond_2
-    new-instance v0, Lp5/f0;
+    new-instance v2, Lr5/q;
 
-    new-instance v1, Lp5/e0;
+    .line 11
+    invoke-virtual {v1}, Ln5/i0;->u()Lo5/d;
 
-    const-string v3, "HMACSHA1"
+    move-result-object v3
 
-    invoke-direct {v1, v3, v2}, Lp5/e0;-><init>(Ljava/lang/String;Ljava/security/Key;)V
+    invoke-virtual {v3}, Lo5/d;->n()[B
 
-    invoke-direct {v0, v1, p1}, Lp5/f0;-><init>(Lk5/c;I)V
+    .line 12
+    invoke-virtual {v1}, Ln5/i0;->t()Ln5/o0;
 
-    :goto_0
-    return-object v0
+    move-result-object v1
+
+    invoke-static {v1}, Lj5/f;->b(Ln5/o0;)Ljava/lang/String;
+
+    .line 13
+    invoke-virtual {v0}, Ln5/f0;->t()Ln5/x;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lj5/f;->c(Ln5/x;)I
+
+    invoke-direct {v2, p1}, Lr5/q;-><init>(Ljava/security/interfaces/ECPublicKey;)V
+
+    return-object v2
 .end method

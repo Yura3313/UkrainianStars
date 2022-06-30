@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/ingamechat/ChatFragment$c;
-.super Lle/j;
+.super Lse/h;
 .source "IngameChatFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingamechat/ChatFragment;->p1()V
+    value = Lcom/supercell/id/ui/ingamechat/ChatFragment;->g1()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,59 +18,52 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lae/i;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/l<",
+        "Lie/h;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/ingamechat/ChatFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingamechat/ChatFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$c;->g:Lcom/supercell/id/ui/ingamechat/ChatFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$c;->f:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    check-cast p1, Lae/i;
+    check-cast p1, Lie/h;
 
-    if-eqz p1, :cond_0
+    const-string v0, "it"
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$c;->g:Lcom/supercell/id/ui/ingamechat/ChatFragment;
-
-    invoke-virtual {p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->p1()V
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    sget-object p1, Lae/i;->a:Lae/i;
+    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$c;->f:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
-    return-object p1
-
-    :cond_0
-    const-string p1, "it"
+    invoke-virtual {p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->g1()V
 
     .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    const/4 p1, 0x0
-
-    throw p1
+    return-object p1
 .end method

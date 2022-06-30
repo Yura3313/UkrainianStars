@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public static synthetic postLink$default(Lcom/kakao/sdk/story/StoryApi;Lcom/kakao/sdk/story/model/LinkInfo;Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic postLink$default(Lcom/kakao/sdk/story/StoryApi;Lcom/kakao/sdk/story/model/LinkInfo;Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;ILjava/lang/Object;)Lef/b;
     .locals 11
 
     move/from16 v0, p9
@@ -108,7 +108,7 @@
     move-object v4, p2
 
     .line 2
-    invoke-interface/range {v2 .. v10}, Lcom/kakao/sdk/story/StoryApi;->postLink(Lcom/kakao/sdk/story/model/LinkInfo;Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)Lxe/b;
+    invoke-interface/range {v2 .. v10}, Lcom/kakao/sdk/story/StoryApi;->postLink(Lcom/kakao/sdk/story/model/LinkInfo;Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)Lef/b;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
     throw v0
 .end method
 
-.method public static synthetic postNote$default(Lcom/kakao/sdk/story/StoryApi;Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic postNote$default(Lcom/kakao/sdk/story/StoryApi;Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;ILjava/lang/Object;)Lef/b;
     .locals 7
 
     if-nez p9, :cond_6
@@ -220,7 +220,7 @@
     move-object/from16 p9, v3
 
     .line 2
-    invoke-interface/range {p2 .. p9}, Lcom/kakao/sdk/story/StoryApi;->postNote(Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)Lxe/b;
+    invoke-interface/range {p2 .. p9}, Lcom/kakao/sdk/story/StoryApi;->postNote(Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)Lef/b;
 
     move-result-object v0
 
@@ -237,7 +237,7 @@
     throw v0
 .end method
 
-.method public static synthetic postPhoto$default(Lcom/kakao/sdk/story/StoryApi;Ljava/lang/String;Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic postPhoto$default(Lcom/kakao/sdk/story/StoryApi;Ljava/lang/String;Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;ILjava/lang/Object;)Lef/b;
     .locals 11
 
     move/from16 v0, p9
@@ -330,7 +330,7 @@
     move-object v4, p2
 
     .line 2
-    invoke-interface/range {v2 .. v10}, Lcom/kakao/sdk/story/StoryApi;->postPhoto(Ljava/lang/String;Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)Lxe/b;
+    invoke-interface/range {v2 .. v10}, Lcom/kakao/sdk/story/StoryApi;->postPhoto(Ljava/lang/String;Ljava/lang/String;Lcom/kakao/sdk/story/model/Story$Permission;ZLjava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)Lef/b;
 
     move-result-object v0
 
@@ -347,7 +347,7 @@
     throw v0
 .end method
 
-.method public static synthetic profile$default(Lcom/kakao/sdk/story/StoryApi;Ljava/lang/Boolean;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic profile$default(Lcom/kakao/sdk/story/StoryApi;Ljava/lang/Boolean;ILjava/lang/Object;)Lef/b;
     .locals 0
 
     if-nez p3, :cond_1
@@ -360,7 +360,7 @@
     sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     :cond_0
-    invoke-interface {p0, p1}, Lcom/kakao/sdk/story/StoryApi;->profile(Ljava/lang/Boolean;)Lxe/b;
+    invoke-interface {p0, p1}, Lcom/kakao/sdk/story/StoryApi;->profile(Ljava/lang/Boolean;)Lef/b;
 
     move-result-object p0
 
@@ -377,7 +377,7 @@
     throw p0
 .end method
 
-.method public static synthetic stories$default(Lcom/kakao/sdk/story/StoryApi;Ljava/lang/String;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic stories$default(Lcom/kakao/sdk/story/StoryApi;Ljava/lang/String;ILjava/lang/Object;)Lef/b;
     .locals 0
 
     if-nez p3, :cond_1
@@ -390,7 +390,7 @@
 
     .line 1
     :cond_0
-    invoke-interface {p0, p1}, Lcom/kakao/sdk/story/StoryApi;->stories(Ljava/lang/String;)Lxe/b;
+    invoke-interface {p0, p1}, Lcom/kakao/sdk/story/StoryApi;->stories(Ljava/lang/String;)Lef/b;
 
     move-result-object p0
 

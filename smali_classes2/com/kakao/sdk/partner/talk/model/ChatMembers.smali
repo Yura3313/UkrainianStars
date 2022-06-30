@@ -65,13 +65,14 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "members"
 
-    if-eqz p3, :cond_1
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_0
+    const-string v0, "type"
 
-    .line 1
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->activeMembersCount:Ljava/lang/Long;
@@ -83,21 +84,6 @@
     iput-object p4, p0, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->type:Lcom/kakao/sdk/partner/talk/model/ChatMembers$Type;
 
     return-void
-
-    :cond_0
-    const-string p1, "type"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "members"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/partner/talk/model/ChatMembers;Ljava/lang/Long;Ljava/lang/Long;Ljava/util/List;Lcom/kakao/sdk/partner/talk/model/ChatMembers$Type;ILjava/lang/Object;)Lcom/kakao/sdk/partner/talk/model/ChatMembers;
@@ -196,32 +182,19 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "members"
 
-    if-eqz p3, :cond_1
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_0
+    const-string v0, "type"
+
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/partner/talk/model/ChatMembers;
 
     invoke-direct {v0, p1, p2, p3, p4}, Lcom/kakao/sdk/partner/talk/model/ChatMembers;-><init>(Ljava/lang/Long;Ljava/lang/Long;Ljava/util/List;Lcom/kakao/sdk/partner/talk/model/ChatMembers$Type;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "type"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "members"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -247,7 +220,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->activeMembersCount:Ljava/lang/Long;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -257,7 +230,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->activeFriendsCount:Ljava/lang/Long;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -267,7 +240,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->members:Ljava/util/List;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -277,7 +250,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->type:Lcom/kakao/sdk/partner/talk/model/ChatMembers$Type;
 
-    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -300,7 +273,6 @@
 .method public final getActiveFriendsCount()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->activeFriendsCount:Ljava/lang/Long;
 
     return-object v0
@@ -309,7 +281,6 @@
 .method public final getActiveMembersCount()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->activeMembersCount:Ljava/lang/Long;
 
     return-object v0
@@ -326,7 +297,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->members:Ljava/util/List;
 
     return-object v0
@@ -335,7 +305,6 @@
 .method public final getType()Lcom/kakao/sdk/partner/talk/model/ChatMembers$Type;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->type:Lcom/kakao/sdk/partner/talk/model/ChatMembers$Type;
 
     return-object v0
@@ -417,10 +386,12 @@
 
     const-string v0, "ChatMembers(activeMembersCount="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->activeMembersCount:Ljava/lang/Long;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -463,7 +434,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
-    if-eqz p1, :cond_3
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/partner/talk/model/ChatMembers;->activeMembersCount:Ljava/lang/Long;
 
@@ -544,20 +517,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     return-void
-
-    :cond_3
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    goto :goto_4
-
-    :goto_3
-    throw p1
-
-    :goto_4
-    goto :goto_3
 .end method

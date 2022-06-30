@@ -99,7 +99,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -108,8 +107,11 @@
 .method public constructor <init>(Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;)V
     .locals 5
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
     iget-object v0, p1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mAppId:Ljava/lang/String;
@@ -134,11 +136,16 @@
     .line 7
     iget-object v0, p1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mValue:Ljava/lang/Object;
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     const/4 v1, 0x0
 
+    if-nez v0, :cond_0
+
+    goto :goto_1
+
     .line 8
+    :cond_0
     :try_start_0
     new-instance v2, Ljava/io/ByteArrayOutputStream;
 
@@ -191,7 +198,7 @@
 
     move-object v1, v2
 
-    goto :goto_2
+    goto :goto_1
 
     :catchall_0
     move-exception v2
@@ -217,36 +224,29 @@
     move-object v3, v0
 
     :goto_0
-    if-eqz v3, :cond_0
+    if-eqz v3, :cond_1
 
     .line 17
     invoke-virtual {v3}, Ljava/io/ObjectOutputStream;->close()V
 
-    goto :goto_1
-
-    :catch_0
-    nop
-
-    goto :goto_2
-
-    :cond_0
-    :goto_1
-    if-eqz v0, :cond_1
+    :cond_1
+    if-eqz v0, :cond_2
 
     .line 18
     invoke-virtual {v0}, Ljava/io/ObjectInputStream;->close()V
 
-    :cond_1
+    :cond_2
     throw v2
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_3 .. :try_end_3} :catch_0
 
     .line 19
-    :goto_2
+    :catch_0
+    :goto_1
     iput-object v1, p0, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mValue:Ljava/lang/Object;
 
-    if-nez v1, :cond_2
+    if-nez v1, :cond_3
 
     .line 20
     iget-object v0, p1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mValue:Ljava/lang/Object;
@@ -254,7 +254,7 @@
     iput-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mValue:Ljava/lang/Object;
 
     .line 21
-    :cond_2
+    :cond_3
     iget-boolean v0, p1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mActive:Z
 
     iput-boolean v0, p0, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mActive:Z
@@ -277,7 +277,7 @@
     .line 25
     iget-object v0, p1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mTimedOutEventParams:Landroid/os/Bundle;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
     .line 26
     new-instance v0, Landroid/os/Bundle;
@@ -289,7 +289,7 @@
     iput-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mTimedOutEventParams:Landroid/os/Bundle;
 
     .line 27
-    :cond_3
+    :cond_4
     iget-object v0, p1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mTriggeredEventName:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mTriggeredEventName:Ljava/lang/String;
@@ -297,7 +297,7 @@
     .line 28
     iget-object v0, p1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mTriggeredEventParams:Landroid/os/Bundle;
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
     .line 29
     new-instance v0, Landroid/os/Bundle;
@@ -309,7 +309,7 @@
     iput-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mTriggeredEventParams:Landroid/os/Bundle;
 
     .line 30
-    :cond_4
+    :cond_5
     iget-wide v0, p1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mTriggeredTimestamp:J
 
     iput-wide v0, p0, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mTriggeredTimestamp:J
@@ -327,7 +327,7 @@
     .line 33
     iget-object v0, p1, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mExpiredEventParams:Landroid/os/Bundle;
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_6
 
     .line 34
     new-instance v0, Landroid/os/Bundle;
@@ -338,6 +338,6 @@
 
     iput-object v0, p0, Lcom/google/android/gms/measurement/AppMeasurement$ConditionalUserProperty;->mExpiredEventParams:Landroid/os/Bundle;
 
-    :cond_5
+    :cond_6
     return-void
 .end method

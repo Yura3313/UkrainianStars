@@ -22,7 +22,6 @@
 .method public constructor <init>(Lcom/kakaogame/game/GameMessageBlockDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/game/GameMessageBlockDialog$1;->this$0:Lcom/kakaogame/game/GameMessageBlockDialog;
 
     invoke-direct {p0}, Landroid/webkit/WebViewClient;-><init>()V

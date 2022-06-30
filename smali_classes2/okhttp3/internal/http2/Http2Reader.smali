@@ -33,7 +33,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lokhttp3/internal/http2/Http2;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -110,7 +109,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p2}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p2
@@ -1146,7 +1144,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/Source;->close()V

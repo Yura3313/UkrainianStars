@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Application;-><init>()V
 
     return-void
@@ -15,11 +14,11 @@
 
 
 # virtual methods
-.method public attachBaseContext(Landroid/content/Context;)V
-    .locals 6
+.method public final attachBaseContext(Landroid/content/Context;)V
+    .locals 2
 
     .line 1
-    invoke-super {p0, p1}, Landroid/app/Application;->attachBaseContext(Landroid/content/Context;)V
+    invoke-super {p0, p1}, Landroid/content/ContextWrapper;->attachBaseContext(Landroid/content/Context;)V
 
     .line 2
     sget-boolean p1, Lr0/e;->b:Z
@@ -56,27 +55,19 @@
     .line 4
     :cond_1
     :try_start_1
+    new-instance v0, Ljava/io/File;
+
+    iget-object v1, p1, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
+
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
     new-instance v1, Ljava/io/File;
-
-    iget-object v0, p1, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
-
-    invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    new-instance v2, Ljava/io/File;
 
     iget-object p1, p1, Landroid/content/pm/ApplicationInfo;->dataDir:Ljava/lang/String;
 
-    invoke-direct {v2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    const-string v3, "secondary-dexes"
-
-    const-string v4, ""
-
-    const/4 v5, 0x1
-
-    move-object v0, p0
-
-    invoke-static/range {v0 .. v5}, Lr0/e;->c(Landroid/content/Context;Ljava/io/File;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-static {p0, v0, v1}, Lr0/e;->c(Landroid/content/Context;Ljava/io/File;Ljava/io/File;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -89,11 +80,13 @@
 
     const-string v1, "MultiDex installation failed ("
 
+    .line 6
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    .line 7
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 

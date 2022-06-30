@@ -1,4 +1,4 @@
-.class public Lp/f$a;
+.class public final Lp/f$a;
 .super Ljava/lang/Object;
 .source "PriorityGoalRow.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lp/f;->m(Lp/h;)V
+    value = Lp/f;->l(Lp/h;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,10 +27,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lp/f;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +37,7 @@
 
 
 # virtual methods
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
     .line 1

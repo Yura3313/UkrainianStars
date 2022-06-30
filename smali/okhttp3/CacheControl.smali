@@ -853,7 +853,6 @@
 .method public immutable()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/CacheControl;->immutable:Z
 
     return v0
@@ -862,7 +861,6 @@
 .method public isPrivate()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/CacheControl;->isPrivate:Z
 
     return v0
@@ -871,7 +869,6 @@
 .method public isPublic()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/CacheControl;->isPublic:Z
 
     return v0
@@ -880,7 +877,6 @@
 .method public maxAgeSeconds()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/CacheControl;->maxAgeSeconds:I
 
     return v0
@@ -889,7 +885,6 @@
 .method public maxStaleSeconds()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/CacheControl;->maxStaleSeconds:I
 
     return v0
@@ -898,7 +893,6 @@
 .method public minFreshSeconds()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/CacheControl;->minFreshSeconds:I
 
     return v0
@@ -907,7 +901,6 @@
 .method public mustRevalidate()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/CacheControl;->mustRevalidate:Z
 
     return v0
@@ -916,7 +909,6 @@
 .method public noCache()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/CacheControl;->noCache:Z
 
     return v0
@@ -925,7 +917,6 @@
 .method public noStore()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/CacheControl;->noStore:Z
 
     return v0
@@ -934,7 +925,6 @@
 .method public noTransform()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/CacheControl;->noTransform:Z
 
     return v0
@@ -943,7 +933,6 @@
 .method public onlyIfCached()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/CacheControl;->onlyIfCached:Z
 
     return v0
@@ -952,7 +941,6 @@
 .method public sMaxAgeSeconds()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/CacheControl;->sMaxAgeSeconds:I
 
     return v0

@@ -1,4 +1,4 @@
-.class public Landroidx/core/widget/a$b;
+.class public final Landroidx/core/widget/a$b;
 .super Ljava/lang/Object;
 .source "AutoScrollHelper.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/core/widget/a;
+.field public final synthetic f:Landroidx/core/widget/a;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/core/widget/a;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
+    iput-object p1, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,13 +34,13 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 15
 
     .line 1
-    iget-object v0, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
+    iget-object v0, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
 
-    iget-boolean v1, v0, Landroidx/core/widget/a;->u:Z
+    iget-boolean v1, v0, Landroidx/core/widget/a;->t:Z
 
     if-nez v1, :cond_0
 
@@ -49,17 +48,17 @@
 
     .line 2
     :cond_0
-    iget-boolean v1, v0, Landroidx/core/widget/a;->s:Z
+    iget-boolean v1, v0, Landroidx/core/widget/a;->r:Z
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_1
 
     .line 3
-    iput-boolean v2, v0, Landroidx/core/widget/a;->s:Z
+    iput-boolean v2, v0, Landroidx/core/widget/a;->r:Z
 
     .line 4
-    iget-object v0, v0, Landroidx/core/widget/a;->g:Landroidx/core/widget/a$a;
+    iget-object v0, v0, Landroidx/core/widget/a;->f:Landroidx/core/widget/a$a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -73,7 +72,7 @@
     const-wide/16 v5, -0x1
 
     .line 6
-    iput-wide v5, v0, Landroidx/core/widget/a$a;->i:J
+    iput-wide v5, v0, Landroidx/core/widget/a$a;->g:J
 
     .line 7
     iput-wide v3, v0, Landroidx/core/widget/a$a;->f:J
@@ -81,22 +80,16 @@
     const/high16 v1, 0x3f000000    # 0.5f
 
     .line 8
-    iput v1, v0, Landroidx/core/widget/a$a;->j:F
+    iput v1, v0, Landroidx/core/widget/a$a;->h:F
 
     .line 9
-    iput v2, v0, Landroidx/core/widget/a$a;->g:I
+    :cond_1
+    iget-object v0, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
+
+    iget-object v0, v0, Landroidx/core/widget/a;->f:Landroidx/core/widget/a$a;
 
     .line 10
-    iput v2, v0, Landroidx/core/widget/a$a;->h:I
-
-    .line 11
-    :cond_1
-    iget-object v0, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
-
-    iget-object v0, v0, Landroidx/core/widget/a;->g:Landroidx/core/widget/a$a;
-
-    .line 12
-    iget-wide v3, v0, Landroidx/core/widget/a$a;->i:J
+    iget-wide v3, v0, Landroidx/core/widget/a$a;->g:J
 
     const-wide/16 v5, 0x0
 
@@ -104,14 +97,14 @@
 
     if-lez v1, :cond_2
 
-    .line 13
+    .line 11
     invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
 
     move-result-wide v3
 
-    iget-wide v7, v0, Landroidx/core/widget/a$a;->i:J
+    iget-wide v7, v0, Landroidx/core/widget/a$a;->g:J
 
-    iget v1, v0, Landroidx/core/widget/a$a;->k:I
+    iget v1, v0, Landroidx/core/widget/a$a;->i:I
 
     int-to-long v9, v1
 
@@ -129,10 +122,10 @@
     const/4 v1, 0x0
 
     :goto_0
-    if-nez v1, :cond_9
+    if-nez v1, :cond_6
 
-    .line 14
-    iget-object v1, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
+    .line 12
+    iget-object v1, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
 
     invoke-virtual {v1}, Landroidx/core/widget/a;->e()Z
 
@@ -140,23 +133,20 @@
 
     if-nez v1, :cond_3
 
-    goto/16 :goto_2
+    goto :goto_1
 
-    .line 15
+    .line 13
     :cond_3
-    iget-object v1, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
+    iget-object v1, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
 
-    iget-boolean v3, v1, Landroidx/core/widget/a;->t:Z
+    iget-boolean v3, v1, Landroidx/core/widget/a;->s:Z
 
     if-eqz v3, :cond_4
 
-    .line 16
-    iput-boolean v2, v1, Landroidx/core/widget/a;->t:Z
+    .line 14
+    iput-boolean v2, v1, Landroidx/core/widget/a;->s:Z
 
-    .line 17
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 18
+    .line 15
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v9
@@ -171,147 +161,92 @@
 
     move-wide v7, v9
 
-    .line 19
+    .line 16
     invoke-static/range {v7 .. v14}, Landroid/view/MotionEvent;->obtain(JJIFFI)Landroid/view/MotionEvent;
-
-    move-result-object v3
-
-    .line 20
-    iget-object v1, v1, Landroidx/core/widget/a;->i:Landroid/view/View;
-
-    invoke-virtual {v1, v3}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
-
-    .line 21
-    invoke-virtual {v3}, Landroid/view/MotionEvent;->recycle()V
-
-    .line 22
-    :cond_4
-    iget-wide v3, v0, Landroidx/core/widget/a$a;->f:J
-
-    cmp-long v1, v3, v5
-
-    if-eqz v1, :cond_8
-
-    .line 23
-    invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
-
-    move-result-wide v3
-
-    .line 24
-    invoke-virtual {v0, v3, v4}, Landroidx/core/widget/a$a;->a(J)F
-
-    move-result v1
-
-    const/high16 v5, -0x3f800000    # -4.0f
-
-    mul-float v5, v5, v1
-
-    mul-float v5, v5, v1
-
-    const/high16 v6, 0x40800000    # 4.0f
-
-    mul-float v1, v1, v6
-
-    add-float/2addr v1, v5
-
-    .line 25
-    iget-wide v5, v0, Landroidx/core/widget/a$a;->f:J
-
-    sub-long v5, v3, v5
-
-    .line 26
-    iput-wide v3, v0, Landroidx/core/widget/a$a;->f:J
-
-    long-to-float v3, v5
-
-    mul-float v3, v3, v1
-
-    .line 27
-    iget v1, v0, Landroidx/core/widget/a$a;->c:F
-
-    mul-float v1, v1, v3
-
-    float-to-int v1, v1
-
-    iput v1, v0, Landroidx/core/widget/a$a;->g:I
-
-    .line 28
-    iget v1, v0, Landroidx/core/widget/a$a;->d:F
-
-    mul-float v3, v3, v1
-
-    float-to-int v1, v3
-
-    iput v1, v0, Landroidx/core/widget/a$a;->h:I
-
-    .line 29
-    iget-object v0, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
-
-    check-cast v0, Landroidx/core/widget/f;
-
-    .line 30
-    iget-object v0, v0, Landroidx/core/widget/f;->x:Landroid/widget/ListView;
-
-    .line 31
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v4, 0x13
-
-    if-lt v3, v4, :cond_5
-
-    .line 32
-    invoke-virtual {v0, v1}, Landroid/widget/ListView;->scrollListBy(I)V
-
-    goto :goto_1
-
-    .line 33
-    :cond_5
-    invoke-virtual {v0}, Landroid/widget/ListView;->getFirstVisiblePosition()I
-
-    move-result v3
-
-    const/4 v4, -0x1
-
-    if-ne v3, v4, :cond_6
-
-    goto :goto_1
-
-    .line 34
-    :cond_6
-    invoke-virtual {v0, v2}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
-    if-nez v2, :cond_7
+    .line 17
+    iget-object v1, v1, Landroidx/core/widget/a;->h:Landroid/view/View;
 
-    goto :goto_1
+    invoke-virtual {v1, v2}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 35
-    :cond_7
-    invoke-virtual {v2}, Landroid/view/View;->getTop()I
+    .line 18
+    invoke-virtual {v2}, Landroid/view/MotionEvent;->recycle()V
 
-    move-result v2
+    .line 19
+    :cond_4
+    iget-wide v1, v0, Landroidx/core/widget/a$a;->f:J
 
-    sub-int/2addr v2, v1
+    cmp-long v3, v1, v5
 
-    .line 36
-    invoke-virtual {v0, v3, v2}, Landroid/widget/ListView;->setSelectionFromTop(II)V
+    if-eqz v3, :cond_5
 
-    .line 37
-    :goto_1
-    iget-object v0, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
+    .line 20
+    invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
 
-    iget-object v0, v0, Landroidx/core/widget/a;->i:Landroid/view/View;
+    move-result-wide v1
+
+    .line 21
+    invoke-virtual {v0, v1, v2}, Landroidx/core/widget/a$a;->a(J)F
+
+    move-result v3
+
+    const/high16 v4, -0x3f800000    # -4.0f
+
+    mul-float v4, v4, v3
+
+    mul-float v4, v4, v3
+
+    const/high16 v5, 0x40800000    # 4.0f
+
+    mul-float v3, v3, v5
+
+    add-float/2addr v3, v4
+
+    .line 22
+    iget-wide v4, v0, Landroidx/core/widget/a$a;->f:J
+
+    sub-long v4, v1, v4
+
+    .line 23
+    iput-wide v1, v0, Landroidx/core/widget/a$a;->f:J
+
+    long-to-float v1, v4
+
+    mul-float v1, v1, v3
+
+    .line 24
+    iget v0, v0, Landroidx/core/widget/a$a;->d:F
+
+    mul-float v1, v1, v0
+
+    float-to-int v0, v1
+
+    .line 25
+    iget-object v1, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
+
+    check-cast v1, Landroidx/core/widget/f;
+
+    .line 26
+    iget-object v1, v1, Landroidx/core/widget/f;->w:Landroid/widget/ListView;
+
+    invoke-static {v1, v0}, Landroidx/core/widget/g;->b(Landroid/widget/ListView;I)V
+
+    .line 27
+    iget-object v0, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
+
+    iget-object v0, v0, Landroidx/core/widget/a;->h:Landroid/view/View;
 
     sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
-    .line 38
+    .line 28
     invoke-virtual {v0, p0}, Landroid/view/View;->postOnAnimation(Ljava/lang/Runnable;)V
 
     return-void
 
-    .line 39
-    :cond_8
+    .line 29
+    :cond_5
     new-instance v0, Ljava/lang/RuntimeException;
 
     const-string v1, "Cannot compute scroll delta before calling start()"
@@ -320,12 +255,12 @@
 
     throw v0
 
-    .line 40
-    :cond_9
-    :goto_2
-    iget-object v0, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
+    .line 30
+    :cond_6
+    :goto_1
+    iget-object v0, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
 
-    iput-boolean v2, v0, Landroidx/core/widget/a;->u:Z
+    iput-boolean v2, v0, Landroidx/core/widget/a;->t:Z
 
     return-void
 .end method

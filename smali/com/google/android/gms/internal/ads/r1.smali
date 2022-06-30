@@ -3,17 +3,17 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/nm0;
+.implements Lk3/jm0;
 
 
 # static fields
-.field public static volatile z:Lcom/google/android/gms/internal/ads/d6;
+.field public static volatile y:Lcom/google/android/gms/internal/ads/d6;
 
 
 # instance fields
-.field public g:Landroid/view/MotionEvent;
+.field public f:Landroid/view/MotionEvent;
 
-.field public h:Ljava/util/LinkedList;
+.field public g:Ljava/util/LinkedList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedList<",
@@ -22,6 +22,8 @@
         }
     .end annotation
 .end field
+
+.field public h:J
 
 .field public i:J
 
@@ -35,13 +37,13 @@
 
 .field public n:J
 
-.field public o:J
+.field public o:D
 
 .field public p:D
 
 .field public q:D
 
-.field public r:D
+.field public r:F
 
 .field public s:F
 
@@ -49,13 +51,11 @@
 
 .field public u:F
 
-.field public v:F
+.field public v:Z
 
 .field public w:Z
 
-.field public x:Z
-
-.field public y:Landroid/util/DisplayMetrics;
+.field public x:Landroid/util/DisplayMetrics;
 
 
 # direct methods
@@ -70,50 +70,50 @@
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->h:Ljava/util/LinkedList;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->g:Ljava/util/LinkedList;
 
     const-wide/16 v0, 0x0
 
     .line 3
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->i:J
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->h:J
 
     .line 4
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->j:J
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->i:J
 
     .line 5
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->k:J
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->j:J
 
     .line 6
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->l:J
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->k:J
 
     .line 7
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->m:J
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->l:J
 
     .line 8
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->n:J
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->m:J
 
     .line 9
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->o:J
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->n:J
 
     const/4 v0, 0x0
 
     .line 10
-    iput-boolean v0, p0, Lcom/google/android/gms/internal/ads/r1;->w:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/internal/ads/r1;->v:Z
 
     .line 11
-    iput-boolean v0, p0, Lcom/google/android/gms/internal/ads/r1;->x:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/internal/ads/r1;->w:Z
 
     .line 12
     :try_start_0
-    sget-object v0, Lj3/n;->l1:Lj3/f;
+    sget-object v0, Lk3/q;->l1:Lk3/g;
 
     .line 13
-    sget-object v1, Lj3/t51;->j:Lj3/t51;
+    sget-object v1, Lk3/l51;->j:Lk3/l51;
 
-    iget-object v1, v1, Lj3/t51;->f:Lj3/l;
+    iget-object v1, v1, Lk3/l51;->f:Lk3/n;
 
     .line 14
-    invoke-virtual {v1, v0}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -133,7 +133,7 @@
 
     .line 17
     :cond_0
-    sget-object v0, Lcom/google/android/gms/internal/ads/r1;->z:Lcom/google/android/gms/internal/ads/d6;
+    sget-object v0, Lcom/google/android/gms/internal/ads/r1;->y:Lcom/google/android/gms/internal/ads/d6;
 
     invoke-static {v0}, Lcom/google/android/gms/internal/ads/e6;->a(Lcom/google/android/gms/internal/ads/d6;)Z
 
@@ -147,7 +147,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/r1;->y:Landroid/util/DisplayMetrics;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/r1;->x:Landroid/util/DisplayMetrics;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -162,7 +162,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, p2, p3, v0}, Lcom/google/android/gms/internal/ads/r1;->g(Landroid/content/Context;Ljava/lang/String;Landroid/view/View;Landroid/app/Activity;)Ljava/lang/String;
 
     move-result-object p1
@@ -188,15 +187,15 @@
     move-result-wide v3
 
     .line 2
-    sget-object v5, Lj3/n;->b1:Lj3/f;
+    sget-object v5, Lk3/q;->b1:Lk3/g;
 
     .line 3
-    sget-object v6, Lj3/t51;->j:Lj3/t51;
+    sget-object v6, Lk3/l51;->j:Lk3/l51;
 
-    iget-object v6, v6, Lj3/t51;->f:Lj3/l;
+    iget-object v6, v6, Lk3/l51;->f:Lk3/n;
 
     .line 4
-    invoke-virtual {v6, v5}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+    invoke-virtual {v6, v5}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -212,11 +211,11 @@
     if-eqz v5, :cond_2
 
     .line 6
-    sget-object v7, Lcom/google/android/gms/internal/ads/r1;->z:Lcom/google/android/gms/internal/ads/d6;
+    sget-object v7, Lcom/google/android/gms/internal/ads/r1;->y:Lcom/google/android/gms/internal/ads/d6;
 
     if-eqz v7, :cond_0
 
-    sget-object v7, Lcom/google/android/gms/internal/ads/r1;->z:Lcom/google/android/gms/internal/ads/d6;
+    sget-object v7, Lcom/google/android/gms/internal/ads/r1;->y:Lcom/google/android/gms/internal/ads/d6;
 
     .line 7
     iget-object v7, v7, Lcom/google/android/gms/internal/ads/d6;->l:Lcom/google/android/gms/internal/ads/q1;
@@ -228,15 +227,15 @@
 
     .line 8
     :goto_0
-    sget-object v8, Lj3/n;->l1:Lj3/f;
+    sget-object v8, Lk3/q;->l1:Lk3/g;
 
     .line 9
-    sget-object v9, Lj3/t51;->j:Lj3/t51;
+    sget-object v9, Lk3/l51;->j:Lk3/l51;
 
-    iget-object v9, v9, Lj3/t51;->f:Lj3/l;
+    iget-object v9, v9, Lk3/l51;->f:Lk3/n;
 
     .line 10
-    invoke-virtual {v9, v8}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+    invoke-virtual {v9, v8}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -281,12 +280,12 @@
     check-cast v9, Lcom/google/android/gms/internal/ads/h2;
 
     .line 13
-    invoke-static {}, Lcom/google/android/gms/internal/ads/a0;->V()Lcom/google/android/gms/internal/ads/a0$a;
+    invoke-static {}, Lcom/google/android/gms/internal/ads/a0;->T()Lcom/google/android/gms/internal/ads/a0$a;
 
     move-result-object v10
 
     .line 14
-    iget-object v11, v9, Lcom/google/android/gms/internal/ads/h2;->B:Ljava/lang/String;
+    iget-object v11, v9, Lcom/google/android/gms/internal/ads/h2;->A:Ljava/lang/String;
 
     invoke-static {v11}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -295,13 +294,13 @@
     if-nez v11, :cond_3
 
     .line 15
-    iget-object v11, v9, Lcom/google/android/gms/internal/ads/h2;->B:Ljava/lang/String;
+    iget-object v11, v9, Lcom/google/android/gms/internal/ads/h2;->A:Ljava/lang/String;
 
     invoke-virtual {v10, v11}, Lcom/google/android/gms/internal/ads/a0$a;->r(Ljava/lang/String;)Lcom/google/android/gms/internal/ads/a0$a;
 
     .line 16
     :cond_3
-    iget-boolean v11, v9, Lcom/google/android/gms/internal/ads/h2;->A:Z
+    iget-boolean v11, v9, Lcom/google/android/gms/internal/ads/h2;->z:Z
 
     invoke-static {v0, v11}, Lcom/google/android/gms/internal/ads/h2;->o(Landroid/content/Context;Z)Lcom/google/android/gms/internal/ads/d6;
 
@@ -324,7 +323,7 @@
 
     .line 18
     :try_start_1
-    iput-boolean v12, v1, Lcom/google/android/gms/internal/ads/r1;->w:Z
+    iput-boolean v12, v1, Lcom/google/android/gms/internal/ads/r1;->v:Z
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -358,16 +357,16 @@
     check-cast v9, Lcom/google/android/gms/internal/ads/h2;
 
     .line 20
-    invoke-static {}, Lcom/google/android/gms/internal/ads/a0;->V()Lcom/google/android/gms/internal/ads/a0$a;
+    invoke-static {}, Lcom/google/android/gms/internal/ads/a0;->T()Lcom/google/android/gms/internal/ads/a0$a;
 
     move-result-object v10
 
-    iget-object v11, v9, Lcom/google/android/gms/internal/ads/h2;->B:Ljava/lang/String;
+    iget-object v11, v9, Lcom/google/android/gms/internal/ads/h2;->A:Ljava/lang/String;
 
     invoke-virtual {v10, v11}, Lcom/google/android/gms/internal/ads/a0$a;->r(Ljava/lang/String;)Lcom/google/android/gms/internal/ads/a0$a;
 
     .line 21
-    iget-boolean v11, v9, Lcom/google/android/gms/internal/ads/h2;->A:Z
+    iget-boolean v11, v9, Lcom/google/android/gms/internal/ads/h2;->z:Z
 
     invoke-static {v0, v11}, Lcom/google/android/gms/internal/ads/h2;->o(Landroid/content/Context;Z)Lcom/google/android/gms/internal/ads/d6;
 
@@ -411,12 +410,12 @@
     check-cast v9, Lcom/google/android/gms/internal/ads/h2;
 
     .line 24
-    invoke-static {}, Lcom/google/android/gms/internal/ads/a0;->V()Lcom/google/android/gms/internal/ads/a0$a;
+    invoke-static {}, Lcom/google/android/gms/internal/ads/a0;->T()Lcom/google/android/gms/internal/ads/a0$a;
 
     move-result-object v10
 
     .line 25
-    iget-object v11, v9, Lcom/google/android/gms/internal/ads/h2;->B:Ljava/lang/String;
+    iget-object v11, v9, Lcom/google/android/gms/internal/ads/h2;->A:Ljava/lang/String;
 
     invoke-static {v11}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -425,13 +424,13 @@
     if-nez v11, :cond_6
 
     .line 26
-    iget-object v11, v9, Lcom/google/android/gms/internal/ads/h2;->B:Ljava/lang/String;
+    iget-object v11, v9, Lcom/google/android/gms/internal/ads/h2;->A:Ljava/lang/String;
 
     invoke-virtual {v10, v11}, Lcom/google/android/gms/internal/ads/a0$a;->r(Ljava/lang/String;)Lcom/google/android/gms/internal/ads/a0$a;
 
     .line 27
     :cond_6
-    iget-boolean v11, v9, Lcom/google/android/gms/internal/ads/h2;->A:Z
+    iget-boolean v11, v9, Lcom/google/android/gms/internal/ads/h2;->z:Z
 
     invoke-static {v0, v11}, Lcom/google/android/gms/internal/ads/h2;->o(Landroid/content/Context;Z)Lcom/google/android/gms/internal/ads/d6;
 
@@ -443,7 +442,7 @@
     if-eqz v13, :cond_7
 
     .line 29
-    invoke-virtual {v9, v11, v0, v10, v6}, Lcom/google/android/gms/internal/ads/h2;->l(Lcom/google/android/gms/internal/ads/d6;Landroid/content/Context;Lcom/google/android/gms/internal/ads/a0$a;Lcom/google/android/gms/internal/ads/o;)Ljava/util/List;
+    invoke-virtual {v9, v11, v0, v10}, Lcom/google/android/gms/internal/ads/h2;->k(Lcom/google/android/gms/internal/ads/d6;Landroid/content/Context;Lcom/google/android/gms/internal/ads/a0$a;)Ljava/util/List;
 
     move-result-object v0
 
@@ -594,7 +593,7 @@
 
     .line 36
     :try_start_5
-    invoke-virtual {v6}, Lcom/google/android/gms/internal/ads/v5$b;->j()Lj3/dt0;
+    invoke-virtual {v6}, Lcom/google/android/gms/internal/ads/v5$b;->i()Lk3/ws0;
 
     move-result-object v0
 
@@ -612,7 +611,7 @@
 
     .line 37
     :cond_d
-    invoke-virtual {v6}, Lcom/google/android/gms/internal/ads/v5$b;->j()Lj3/dt0;
+    invoke-virtual {v6}, Lcom/google/android/gms/internal/ads/v5$b;->i()Lk3/ws0;
 
     move-result-object v0
 
@@ -788,28 +787,28 @@
     const-wide/16 v0, 0x0
 
     .line 1
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->m:J
-
-    .line 2
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->i:J
-
-    .line 3
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->j:J
-
-    .line 4
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->k:J
-
-    .line 5
     iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->l:J
 
+    .line 2
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->h:J
+
+    .line 3
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->i:J
+
+    .line 4
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->j:J
+
+    .line 5
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->k:J
+
     .line 6
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->n:J
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->m:J
 
     .line 7
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->o:J
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/r1;->n:J
 
     .line 8
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->h:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->g:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->size()I
 
@@ -818,9 +817,9 @@
     if-lez v0, :cond_1
 
     .line 9
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->h:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->g:Ljava/util/LinkedList;
 
-    invoke-virtual {v0}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -844,7 +843,7 @@
 
     .line 11
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->h:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->g:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->clear()V
 
@@ -852,7 +851,7 @@
 
     .line 12
     :cond_1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->g:Landroid/view/MotionEvent;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->f:Landroid/view/MotionEvent;
 
     if-eqz v0, :cond_2
 
@@ -864,7 +863,7 @@
     const/4 v0, 0x0
 
     .line 14
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->g:Landroid/view/MotionEvent;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/r1;->f:Landroid/view/MotionEvent;
 
     return-void
 .end method

@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public add(I)Landroid/view/MenuItem;
+.method public final add(I)Landroid/view/MenuItem;
     .locals 1
 
     .line 2
@@ -54,7 +54,7 @@
     return-object p1
 .end method
 
-.method public add(IIII)Landroid/view/MenuItem;
+.method public final add(IIII)Landroid/view/MenuItem;
     .locals 1
 
     .line 4
@@ -71,7 +71,7 @@
     return-object p1
 .end method
 
-.method public add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
+.method public final add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 1
 
     .line 3
@@ -88,7 +88,7 @@
     return-object p1
 .end method
 
-.method public add(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
+.method public final add(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 1
 
     .line 1
@@ -105,7 +105,7 @@
     return-object p1
 .end method
 
-.method public addIntentOptions(IIILandroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I[Landroid/view/MenuItem;)I
+.method public final addIntentOptions(IIILandroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I[Landroid/view/MenuItem;)I
     .locals 12
 
     move-object v0, p0
@@ -176,7 +176,7 @@
     return v3
 .end method
 
-.method public addSubMenu(I)Landroid/view/SubMenu;
+.method public final addSubMenu(I)Landroid/view/SubMenu;
     .locals 1
 
     .line 2
@@ -193,7 +193,7 @@
     return-object p1
 .end method
 
-.method public addSubMenu(IIII)Landroid/view/SubMenu;
+.method public final addSubMenu(IIII)Landroid/view/SubMenu;
     .locals 1
 
     .line 4
@@ -212,7 +212,7 @@
     return-object p1
 .end method
 
-.method public addSubMenu(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;
+.method public final addSubMenu(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;
     .locals 1
 
     .line 3
@@ -229,7 +229,7 @@
     return-object p1
 .end method
 
-.method public addSubMenu(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
+.method public final addSubMenu(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
     .locals 1
 
     .line 1
@@ -246,7 +246,7 @@
     return-object p1
 .end method
 
-.method public clear()V
+.method public final clear()V
     .locals 1
 
     .line 1
@@ -275,10 +275,9 @@
     return-void
 .end method
 
-.method public close()V
+.method public final close()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0}, Landroid/view/Menu;->close()V
@@ -286,10 +285,9 @@
     return-void
 .end method
 
-.method public findItem(I)Landroid/view/MenuItem;
+.method public final findItem(I)Landroid/view/MenuItem;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0, p1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
@@ -303,10 +301,9 @@
     return-object p1
 .end method
 
-.method public getItem(I)Landroid/view/MenuItem;
+.method public final getItem(I)Landroid/view/MenuItem;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0, p1}, Landroid/view/Menu;->getItem(I)Landroid/view/MenuItem;
@@ -320,10 +317,9 @@
     return-object p1
 .end method
 
-.method public hasVisibleItems()Z
+.method public final hasVisibleItems()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0}, Landroid/view/Menu;->hasVisibleItems()Z
@@ -333,10 +329,9 @@
     return v0
 .end method
 
-.method public isShortcutKey(ILandroid/view/KeyEvent;)Z
+.method public final isShortcutKey(ILandroid/view/KeyEvent;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0, p1, p2}, Landroid/view/Menu;->isShortcutKey(ILandroid/view/KeyEvent;)Z
@@ -346,10 +341,9 @@
     return p1
 .end method
 
-.method public performIdentifierAction(II)Z
+.method public final performIdentifierAction(II)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0, p1, p2}, Landroid/view/Menu;->performIdentifierAction(II)Z
@@ -359,10 +353,9 @@
     return p1
 .end method
 
-.method public performShortcut(ILandroid/view/KeyEvent;I)Z
+.method public final performShortcut(ILandroid/view/KeyEvent;I)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0, p1, p2, p3}, Landroid/view/Menu;->performShortcut(ILandroid/view/KeyEvent;I)Z
@@ -372,7 +365,7 @@
     return p1
 .end method
 
-.method public removeGroup(I)V
+.method public final removeGroup(I)V
     .locals 3
 
     .line 1
@@ -390,7 +383,7 @@
     iget-object v1, p0, Lg/b;->b:Lm/g;
 
     .line 3
-    iget v2, v1, Lm/g;->i:I
+    iget v2, v1, Lm/g;->h:I
 
     if-ge v0, v2, :cond_2
 
@@ -429,7 +422,7 @@
     return-void
 .end method
 
-.method public removeItem(I)V
+.method public final removeItem(I)V
     .locals 3
 
     .line 1
@@ -447,7 +440,7 @@
     iget-object v1, p0, Lg/b;->b:Lm/g;
 
     .line 3
-    iget v2, v1, Lm/g;->i:I
+    iget v2, v1, Lm/g;->h:I
 
     if-ge v0, v2, :cond_2
 
@@ -486,10 +479,9 @@
     return-void
 .end method
 
-.method public setGroupCheckable(IZZ)V
+.method public final setGroupCheckable(IZZ)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0, p1, p2, p3}, Landroid/view/Menu;->setGroupCheckable(IZZ)V
@@ -497,10 +489,9 @@
     return-void
 .end method
 
-.method public setGroupEnabled(IZ)V
+.method public final setGroupEnabled(IZ)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0, p1, p2}, Landroid/view/Menu;->setGroupEnabled(IZ)V
@@ -508,10 +499,9 @@
     return-void
 .end method
 
-.method public setGroupVisible(IZ)V
+.method public final setGroupVisible(IZ)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0, p1, p2}, Landroid/view/Menu;->setGroupVisible(IZ)V
@@ -519,10 +509,9 @@
     return-void
 .end method
 
-.method public setQwertyMode(Z)V
+.method public final setQwertyMode(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0, p1}, Landroid/view/Menu;->setQwertyMode(Z)V
@@ -530,10 +519,9 @@
     return-void
 .end method
 
-.method public size()I
+.method public final size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lg/e;->d:Lz/a;
 
     invoke-interface {v0}, Landroid/view/Menu;->size()I

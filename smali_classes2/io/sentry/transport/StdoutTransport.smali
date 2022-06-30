@@ -42,7 +42,6 @@
 .method public flush(J)V
     .locals 0
 
-    .line 1
     sget-object p1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     const-string p2, "Flushing"
@@ -52,7 +51,7 @@
     return-void
 .end method
 
-.method public synthetic send(Lio/sentry/SentryEnvelope;)V
+.method public final synthetic send(Lio/sentry/SentryEnvelope;)V
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/transport/b;->a(Lio/sentry/transport/ITransport;Lio/sentry/SentryEnvelope;)V

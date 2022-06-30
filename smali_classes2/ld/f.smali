@@ -1,26 +1,27 @@
 .class public final Lld/f;
-.super Lle/j;
-.source "ProfileImageEditorFragment.kt"
+.super Ljava/lang/Object;
+.source "IngameFriendsFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;",
-        "Ljava/lang/Exception;",
-        "Lae/i;",
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lld/c;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lld/f;
+.field public static final f:Lld/f;
 
 
 # direct methods
@@ -31,99 +32,38 @@
 
     invoke-direct {v0}, Lld/f;-><init>()V
 
-    sput-object v0, Lld/f;->g:Lld/f;
+    sput-object v0, Lld/f;->f:Lld/f;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
 
     .line 1
-    check-cast p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    check-cast p1, Lld/c;
 
-    check-cast p2, Ljava/lang/Exception;
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_4
-
-    if-eqz p2, :cond_3
+    check-cast p2, Lld/c;
 
     .line 2
-    invoke-virtual {p2}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    iget-object p1, p1, Lld/c;->b:Ljava/lang/String;
 
-    move-result-object v1
-
-    const-string v2, "profile_image_rejected"
-
-    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
+    iget-object p2, p2, Lld/c;->b:Ljava/lang/String;
 
     .line 3
-    iget-object v1, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->j0:Lcom/supercell/id/model/MyProfileImage;
+    invoke-static {p1, p2}, Lcom/google/android/gms/ads/q;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-eqz v1, :cond_0
+    move-result p1
 
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    sget-object v1, Lcom/supercell/id/model/MyProfileImage$Empty;->g:Lcom/supercell/id/model/MyProfileImage$Empty;
-
-    .line 5
-    :goto_0
-    invoke-virtual {p1, v1}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->D1(Lcom/supercell/id/model/MyProfileImage;)V
-
-    .line 6
-    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->B1(Lcom/supercell/id/model/MyProfileImage;)V
-
-    .line 7
-    :cond_1
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_2
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
-
-    .line 8
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
-
-    .line 9
-    :cond_2
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_3
-    const-string p1, "it"
-
-    .line 10
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_4
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return p1
 .end method

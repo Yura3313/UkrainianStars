@@ -17,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,7 +25,6 @@
 .method public static synthetic access$000()I
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/kakao/KakaoAgeAuthManager;->getAgeAuthLimit()I
 
     move-result v0
@@ -37,7 +35,6 @@
 .method public static synthetic access$100()Z
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/kakao/KakaoAgeAuthManager;->isReachBoardGame()Z
 
     move-result v0
@@ -48,7 +45,6 @@
 .method public static synthetic access$200()Z
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/kakao/KakaoAgeAuthManager;->isAgeAuthFailProcessKill()Z
 
     move-result v0
@@ -654,7 +650,7 @@
 
     .line 69
     :try_start_c
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -663,7 +659,7 @@
     const/16 p1, 0xfa1
 
     .line 70
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -741,7 +737,6 @@
 .method private static getAgeAuthValidDays()I
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/infodesk/InfodeskHelper;->getAgeAuthValidDays()I
 
     move-result v0
@@ -752,7 +747,6 @@
 .method public static getCI()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/kakao/KakaoAgeAuthManager;->ci:Ljava/lang/String;
 
     return-object v0
@@ -796,7 +790,6 @@
 .method public static initialize(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/kakaogame/kakao/KakaoAgeAuthManager;->context:Landroid/content/Context;
 
     return-void
@@ -866,6 +859,7 @@
     :cond_0
     const-string v2, "false"
 
+    .line 3
     :goto_0
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1061,7 +1055,7 @@
     const/16 v2, 0xfa1
 
     .line 13
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -1152,7 +1146,7 @@
     const/16 v1, 0xfa1
 
     .line 10
-    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 

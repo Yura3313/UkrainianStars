@@ -12,23 +12,21 @@
 
 
 # static fields
-.field private static final a:Lsb/a;
+.field private static final a:Lwb/a;
 
 .field private static volatile b:Z
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    new-instance v0, Lsb/a;
+    new-instance v0, Lwb/a;
 
-    const-string v1, "com.linecorp.linesdk.sharedpreference.encryptionsalt"
+    invoke-direct {v0}, Lwb/a;-><init>()V
 
-    invoke-direct {v0, v1}, Lsb/a;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lcom/linecorp/linesdk/a/c;->a:Lsb/a;
+    sput-object v0, Lcom/linecorp/linesdk/a/c;->a:Lwb/a;
 
     const/4 v0, 0x0
 
@@ -38,11 +36,11 @@
     return-void
 .end method
 
-.method public static a()Lsb/a;
+.method public static a()Lwb/a;
     .locals 1
 
     .line 6
-    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lsb/a;
+    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lwb/a;
 
     return-object v0
 .end method
@@ -75,17 +73,16 @@
     invoke-direct {v1, p0}, Lcom/linecorp/linesdk/a/c$a;-><init>(Landroid/content/Context;)V
 
     .line 5
-    invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     :cond_0
     return-void
 .end method
 
-.method public static synthetic b()Lsb/a;
+.method public static synthetic b()Lwb/a;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lsb/a;
+    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lwb/a;
 
     return-object v0
 .end method

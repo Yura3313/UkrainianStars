@@ -41,17 +41,22 @@
 .method public constructor <init>(JLjava/lang/String;ZLjava/util/Date;Lcom/kakao/sdk/user/model/ShippingAddressType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "updatedAt"
 
-    if-eqz p5, :cond_3
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p6, :cond_2
+    const-string v0, "type"
 
-    if-eqz p7, :cond_1
+    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p8, :cond_0
+    const-string v0, "baseAddress"
 
-    .line 1
+    invoke-static {p7, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "detailAddress"
+
+    invoke-static {p8, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->id:J
@@ -79,35 +84,6 @@
     iput-object p13, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->zipCode:Ljava/lang/String;
 
     return-void
-
-    :cond_0
-    const-string p1, "detailAddress"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "baseAddress"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "type"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "updatedAt"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/user/model/ShippingAddress;JLjava/lang/String;ZLjava/util/Date;Lcom/kakao/sdk/user/model/ShippingAddressType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/kakao/sdk/user/model/ShippingAddress;
@@ -393,15 +369,29 @@
 .method public final copy(JLjava/lang/String;ZLjava/util/Date;Lcom/kakao/sdk/user/model/ShippingAddressType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakao/sdk/user/model/ShippingAddress;
     .locals 15
 
-    const/4 v0, 0x0
+    const-string v0, "updatedAt"
 
-    if-eqz p5, :cond_3
+    move-object/from16 v6, p5
 
-    if-eqz p6, :cond_2
+    invoke-static {v6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p7, :cond_1
+    const-string v0, "type"
 
-    if-eqz p8, :cond_0
+    move-object/from16 v7, p6
+
+    invoke-static {v7, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "baseAddress"
+
+    move-object/from16 v8, p7
+
+    invoke-static {v8, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "detailAddress"
+
+    move-object/from16 v9, p8
+
+    invoke-static {v9, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/user/model/ShippingAddress;
 
@@ -412,14 +402,6 @@
     move-object/from16 v4, p3
 
     move/from16 v5, p4
-
-    move-object/from16 v6, p5
-
-    move-object/from16 v7, p6
-
-    move-object/from16 v8, p7
-
-    move-object/from16 v9, p8
 
     move-object/from16 v10, p9
 
@@ -434,35 +416,6 @@
     invoke-direct/range {v1 .. v14}, Lcom/kakao/sdk/user/model/ShippingAddress;-><init>(JLjava/lang/String;ZLjava/util/Date;Lcom/kakao/sdk/user/model/ShippingAddressType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
-
-    :cond_0
-    const-string v1, "detailAddress"
-
-    .line 1
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string v1, "baseAddress"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string v1, "type"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string v1, "updatedAt"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -502,7 +455,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/ShippingAddress;->name:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -528,7 +481,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/ShippingAddress;->updatedAt:Ljava/util/Date;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -538,7 +491,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/ShippingAddress;->type:Lcom/kakao/sdk/user/model/ShippingAddressType;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -548,7 +501,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/ShippingAddress;->baseAddress:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -558,7 +511,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/ShippingAddress;->detailAddress:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -568,7 +521,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/ShippingAddress;->receiverName:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -578,7 +531,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/ShippingAddress;->receiverPhoneNumber1:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -588,7 +541,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/ShippingAddress;->receiverPhoneNumber2:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -598,7 +551,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/ShippingAddress;->zoneNumber:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -608,7 +561,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/user/model/ShippingAddress;->zipCode:Ljava/lang/String;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -627,7 +580,6 @@
 .method public final getBaseAddress()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->baseAddress:Ljava/lang/String;
 
     return-object v0
@@ -636,7 +588,6 @@
 .method public final getDetailAddress()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->detailAddress:Ljava/lang/String;
 
     return-object v0
@@ -645,7 +596,6 @@
 .method public final getId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->id:J
 
     return-wide v0
@@ -654,7 +604,6 @@
 .method public final getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->name:Ljava/lang/String;
 
     return-object v0
@@ -663,7 +612,6 @@
 .method public final getReceiverName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->receiverName:Ljava/lang/String;
 
     return-object v0
@@ -672,7 +620,6 @@
 .method public final getReceiverPhoneNumber1()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->receiverPhoneNumber1:Ljava/lang/String;
 
     return-object v0
@@ -681,7 +628,6 @@
 .method public final getReceiverPhoneNumber2()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->receiverPhoneNumber2:Ljava/lang/String;
 
     return-object v0
@@ -690,7 +636,6 @@
 .method public final getType()Lcom/kakao/sdk/user/model/ShippingAddressType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->type:Lcom/kakao/sdk/user/model/ShippingAddressType;
 
     return-object v0
@@ -699,7 +644,6 @@
 .method public final getUpdatedAt()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->updatedAt:Ljava/util/Date;
 
     return-object v0
@@ -708,7 +652,6 @@
 .method public final getZipCode()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->zipCode:Ljava/lang/String;
 
     return-object v0
@@ -717,7 +660,6 @@
 .method public final getZoneNumber()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->zoneNumber:Ljava/lang/String;
 
     return-object v0
@@ -930,7 +872,6 @@
 .method public final isDefault()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->isDefault:Z
 
     return v0
@@ -941,10 +882,12 @@
 
     const-string v0, "ShippingAddress(id="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-wide v1, p0, Lcom/kakao/sdk/user/model/ShippingAddress;->id:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
@@ -1037,7 +980,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

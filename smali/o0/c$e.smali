@@ -1,4 +1,4 @@
-.class public Lo0/c$e;
+.class public final Lo0/c$e;
 .super Landroid/os/Handler;
 .source "ModernAsyncTask.java"
 
@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -30,7 +29,7 @@
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)V
+.method public final handleMessage(Landroid/os/Message;)V
     .locals 2
 
     .line 1
@@ -70,7 +69,7 @@
     aget-object v0, v0, v1
 
     .line 5
-    iget-object v1, p1, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v1, p1, Lo0/c;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -79,7 +78,7 @@
     if-eqz v1, :cond_2
 
     .line 6
-    invoke-virtual {p1, v0}, Lo0/c;->b(Ljava/lang/Object;)V
+    invoke-virtual {p1}, Lo0/c;->b()V
 
     goto :goto_0
 
@@ -91,7 +90,7 @@
     const/4 v0, 0x3
 
     .line 8
-    iput v0, p1, Lo0/c;->i:I
+    iput v0, p1, Lo0/c;->h:I
 
     :goto_1
     return-void

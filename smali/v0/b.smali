@@ -1,4 +1,4 @@
-.class public Lv0/b;
+.class public final Lv0/b;
 .super Lv0/e0;
 .source "CircularPropagation.java"
 
@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lv0/e0;-><init>()V
 
     return-void
@@ -15,8 +14,8 @@
 
 
 # virtual methods
-.method public g(Landroid/view/ViewGroup;Landroidx/transition/Transition;Lv0/s;Lv0/s;)J
-    .locals 9
+.method public final g(Landroid/view/ViewGroup;Landroidx/transition/Transition;Lv0/s;Lv0/s;)J
+    .locals 8
 
     const-wide/16 v0, 0x0
 
@@ -32,7 +31,7 @@
     if-eqz p4, :cond_2
 
     .line 1
-    invoke-virtual {p0, p3}, Lv0/e0;->m(Lv0/s;)I
+    invoke-virtual {p0, p3}, Lv0/e0;->j(Lv0/s;)I
 
     move-result v3
 
@@ -51,122 +50,118 @@
     :goto_0
     const/4 p4, -0x1
 
-    :goto_1
-    const/4 v3, 0x0
-
     .line 2
-    invoke-static {p3, v3}, Lv0/e0;->l(Lv0/s;I)I
+    :goto_1
+    invoke-virtual {p0, p3}, Lv0/e0;->k(Lv0/s;)I
 
-    move-result v4
+    move-result v3
 
     .line 3
-    invoke-static {p3, v2}, Lv0/e0;->l(Lv0/s;I)I
+    invoke-virtual {p0, p3}, Lv0/e0;->l(Lv0/s;)I
 
     move-result p3
 
     .line 4
     invoke-virtual {p2}, Landroidx/transition/Transition;->o()Landroid/graphics/Rect;
 
-    move-result-object v5
+    move-result-object v4
 
-    if-eqz v5, :cond_3
+    if-eqz v4, :cond_3
 
     .line 5
-    invoke-virtual {v5}, Landroid/graphics/Rect;->centerX()I
+    invoke-virtual {v4}, Landroid/graphics/Rect;->centerX()I
 
     move-result v2
 
     .line 6
-    invoke-virtual {v5}, Landroid/graphics/Rect;->centerY()I
+    invoke-virtual {v4}, Landroid/graphics/Rect;->centerY()I
 
-    move-result v3
+    move-result v4
 
     goto :goto_2
 
     :cond_3
-    const/4 v5, 0x2
+    const/4 v4, 0x2
 
-    new-array v6, v5, [I
+    new-array v5, v4, [I
 
     .line 7
-    invoke-virtual {p1, v6}, Landroid/view/ViewGroup;->getLocationOnScreen([I)V
+    invoke-virtual {p1, v5}, Landroid/view/View;->getLocationOnScreen([I)V
+
+    const/4 v6, 0x0
+
+    aget v6, v5, v6
 
     .line 8
-    aget v3, v6, v3
-
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v7
 
-    div-int/2addr v7, v5
+    div-int/2addr v7, v4
 
-    add-int/2addr v7, v3
+    add-int/2addr v7, v6
 
-    int-to-float v3, v7
+    int-to-float v6, v7
 
     .line 9
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getTranslationX()F
+    invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
 
     move-result v7
 
-    add-float/2addr v7, v3
+    add-float/2addr v7, v6
 
     .line 10
     invoke-static {v7}, Ljava/lang/Math;->round(F)I
 
-    move-result v3
-
-    .line 11
-    aget v2, v6, v2
-
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getHeight()I
-
     move-result v6
 
-    div-int/2addr v6, v5
+    aget v2, v5, v2
 
-    add-int/2addr v6, v2
-
-    int-to-float v2, v6
-
-    .line 12
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getTranslationY()F
+    .line 11
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result v5
 
-    add-float/2addr v5, v2
+    div-int/2addr v5, v4
+
+    add-int/2addr v5, v2
+
+    int-to-float v2, v5
+
+    .line 12
+    invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
+
+    move-result v4
+
+    add-float/2addr v4, v2
 
     .line 13
-    invoke-static {v5}, Ljava/lang/Math;->round(F)I
+    invoke-static {v4}, Ljava/lang/Math;->round(F)I
 
-    move-result v2
+    move-result v4
 
-    move v8, v3
-
-    move v3, v2
-
-    move v2, v8
+    move v2, v6
 
     :goto_2
-    int-to-float v4, v4
+    int-to-float v3, v3
 
     int-to-float p3, p3
 
     int-to-float v2, v2
 
-    int-to-float v3, v3
+    int-to-float v4, v4
 
-    sub-float/2addr v2, v4
+    sub-float/2addr v2, v3
 
-    sub-float/2addr v3, p3
+    sub-float/2addr v4, p3
 
     mul-float v2, v2, v2
 
-    mul-float v3, v3, v3
+    mul-float v4, v4, v4
 
-    add-float/2addr v3, v2
+    add-float/2addr v4, v2
 
-    float-to-double v2, v3
+    float-to-double v2, v4
 
     .line 14
     invoke-static {v2, v3}, Ljava/lang/Math;->sqrt(D)D
@@ -176,13 +171,13 @@
     double-to-float p3, v2
 
     .line 15
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
     int-to-float v2, v2
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p1
 
@@ -212,7 +207,7 @@
     div-float/2addr p3, p1
 
     .line 17
-    iget-wide p1, p2, Landroidx/transition/Transition;->i:J
+    iget-wide p1, p2, Landroidx/transition/Transition;->h:J
 
     cmp-long v2, p1, v0
 

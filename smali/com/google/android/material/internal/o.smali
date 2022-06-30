@@ -2,157 +2,295 @@
 .super Ljava/lang/Object;
 .source "ViewUtils.java"
 
-# interfaces
-.implements Lcom/google/android/material/internal/p$b;
 
-
-# instance fields
-.field public final synthetic a:Z
-
-.field public final synthetic b:Z
-
-.field public final synthetic c:Z
-
-.field public final synthetic d:Lcom/google/android/material/internal/p$b;
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/android/material/internal/o$c;,
+        Lcom/google/android/material/internal/o$b;
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(ZZZLcom/google/android/material/internal/p$b;)V
-    .locals 0
-
-    .line 1
-    iput-boolean p1, p0, Lcom/google/android/material/internal/o;->a:Z
-
-    iput-boolean p2, p0, Lcom/google/android/material/internal/o;->b:Z
-
-    iput-boolean p3, p0, Lcom/google/android/material/internal/o;->c:Z
-
-    iput-object p4, p0, Lcom/google/android/material/internal/o;->d:Lcom/google/android/material/internal/p$b;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(Landroid/view/View;Lf0/z;Lcom/google/android/material/internal/p$c;)Lf0/z;
+.method public static a(Landroid/view/View;Lcom/google/android/material/internal/o$b;)V
     .locals 5
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/internal/o;->a:Z
-
-    if-eqz v0, :cond_0
+    new-instance v0, Lcom/google/android/material/internal/o$c;
 
     .line 2
-    iget v0, p3, Lcom/google/android/material/internal/p$c;->d:I
+    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
-    invoke-virtual {p2}, Lf0/z;->d()I
+    .line 3
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingStart()I
 
     move-result v1
 
-    add-int/2addr v1, v0
-
-    iput v1, p3, Lcom/google/android/material/internal/p$c;->d:I
-
-    .line 3
-    :cond_0
-    invoke-static {p1}, Lcom/google/android/material/internal/p;->f(Landroid/view/View;)Z
-
-    move-result v0
-
     .line 4
-    iget-boolean v1, p0, Lcom/google/android/material/internal/o;->b:Z
-
-    if-eqz v1, :cond_2
-
-    if-eqz v0, :cond_1
-
-    .line 5
-    iget v1, p3, Lcom/google/android/material/internal/p$c;->c:I
-
-    invoke-virtual {p2}, Lf0/z;->e()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v2
 
-    add-int/2addr v2, v1
+    .line 5
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingEnd()I
 
-    iput v2, p3, Lcom/google/android/material/internal/p$c;->c:I
+    move-result v3
+
+    .line 6
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
+
+    move-result v4
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/google/android/material/internal/o$c;-><init>(IIII)V
+
+    .line 7
+    new-instance v1, Lcom/google/android/material/internal/o$a;
+
+    invoke-direct {v1, p1, v0}, Lcom/google/android/material/internal/o$a;-><init>(Lcom/google/android/material/internal/o$b;Lcom/google/android/material/internal/o$c;)V
+
+    invoke-static {p0, v1}, Lf0/r;->K(Landroid/view/View;Lf0/n;)V
+
+    .line 8
+    invoke-static {p0}, Lf0/r;->r(Landroid/view/View;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 9
+    invoke-static {p0}, Lf0/r;->B(Landroid/view/View;)V
 
     goto :goto_0
 
-    .line 6
-    :cond_1
-    iget v1, p3, Lcom/google/android/material/internal/p$c;->a:I
-
-    invoke-virtual {p2}, Lf0/z;->e()I
-
-    move-result v2
-
-    add-int/2addr v2, v1
-
-    iput v2, p3, Lcom/google/android/material/internal/p$c;->a:I
-
-    .line 7
-    :cond_2
-    :goto_0
-    iget-boolean v1, p0, Lcom/google/android/material/internal/o;->c:Z
-
-    if-eqz v1, :cond_4
-
-    if-eqz v0, :cond_3
-
-    .line 8
-    iget v0, p3, Lcom/google/android/material/internal/p$c;->a:I
-
-    invoke-virtual {p2}, Lf0/z;->f()I
-
-    move-result v1
-
-    add-int/2addr v1, v0
-
-    iput v1, p3, Lcom/google/android/material/internal/p$c;->a:I
-
-    goto :goto_1
-
-    .line 9
-    :cond_3
-    iget v0, p3, Lcom/google/android/material/internal/p$c;->c:I
-
-    invoke-virtual {p2}, Lf0/z;->f()I
-
-    move-result v1
-
-    add-int/2addr v1, v0
-
-    iput v1, p3, Lcom/google/android/material/internal/p$c;->c:I
-
     .line 10
-    :cond_4
-    :goto_1
-    iget v0, p3, Lcom/google/android/material/internal/p$c;->a:I
+    :cond_0
+    new-instance p1, Lcom/google/android/material/internal/p;
 
-    iget v1, p3, Lcom/google/android/material/internal/p$c;->b:I
+    invoke-direct {p1}, Lcom/google/android/material/internal/p;-><init>()V
 
-    iget v2, p3, Lcom/google/android/material/internal/p$c;->c:I
+    invoke-virtual {p0, p1}, Landroid/view/View;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 
-    iget v3, p3, Lcom/google/android/material/internal/p$c;->d:I
+    :goto_0
+    return-void
+.end method
 
-    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
+.method public static b(Landroid/content/Context;I)F
+    .locals 1
 
-    .line 11
-    invoke-virtual {p1, v0, v1, v2, v3}, Landroid/view/View;->setPaddingRelative(IIII)V
+    .line 1
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    .line 12
-    iget-object v0, p0, Lcom/google/android/material/internal/o;->d:Lcom/google/android/material/internal/p$b;
+    move-result-object p0
 
-    if-eqz v0, :cond_5
+    int-to-float p1, p1
 
-    .line 13
-    invoke-interface {v0, p1, p2, p3}, Lcom/google/android/material/internal/p$b;->a(Landroid/view/View;Lf0/z;Lcom/google/android/material/internal/p$c;)Lf0/z;
+    .line 2
+    invoke-virtual {p0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
-    move-result-object p2
+    move-result-object p0
 
-    :cond_5
-    return-object p2
+    const/4 v0, 0x1
+
+    invoke-static {v0, p1, p0}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static c(Landroid/view/View;)Landroid/view/ViewGroup;
+    .locals 3
+
+    const/4 v0, 0x0
+
+    if-nez p0, :cond_0
+
+    return-object v0
+
+    .line 1
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getRootView()Landroid/view/View;
+
+    move-result-object v1
+
+    const v2, 0x1020002
+
+    .line 2
+    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/ViewGroup;
+
+    if-eqz v2, :cond_1
+
+    return-object v2
+
+    :cond_1
+    if-eq v1, p0, :cond_2
+
+    .line 3
+    instance-of p0, v1, Landroid/view/ViewGroup;
+
+    if-eqz p0, :cond_2
+
+    .line 4
+    check-cast v1, Landroid/view/ViewGroup;
+
+    return-object v1
+
+    :cond_2
+    return-object v0
+.end method
+
+.method public static d(Landroid/view/View;)Lcom/google/android/material/internal/l;
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/material/internal/o;->c(Landroid/view/View;)Landroid/view/ViewGroup;
+
+    move-result-object p0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x0
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    new-instance v0, Lk3/l6;
+
+    invoke-direct {v0, p0}, Lk3/l6;-><init>(Landroid/view/View;)V
+
+    move-object p0, v0
+
+    :goto_0
+    return-object p0
+.end method
+
+.method public static e(Landroid/view/View;)F
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    .line 2
+    :goto_0
+    instance-of v1, p0, Landroid/view/View;
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    move-object v1, p0
+
+    check-cast v1, Landroid/view/View;
+
+    invoke-static {v1}, Lf0/r;->k(Landroid/view/View;)F
+
+    move-result v1
+
+    add-float/2addr v0, v1
+
+    .line 4
+    invoke-interface {p0}, Landroid/view/ViewParent;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_0
+    return v0
+.end method
+
+.method public static f(Landroid/view/View;)Z
+    .locals 1
+
+    .line 1
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
+
+    .line 2
+    invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
+
+    move-result p0
+
+    const/4 v0, 0x1
+
+    if-ne p0, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public static g(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+    .locals 1
+
+    const/4 v0, 0x3
+
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x5
+
+    if-eq p0, v0, :cond_1
+
+    const/16 v0, 0x9
+
+    if-eq p0, v0, :cond_0
+
+    packed-switch p0, :pswitch_data_0
+
+    return-object p1
+
+    .line 1
+    :pswitch_0
+    sget-object p0, Landroid/graphics/PorterDuff$Mode;->ADD:Landroid/graphics/PorterDuff$Mode;
+
+    return-object p0
+
+    .line 2
+    :pswitch_1
+    sget-object p0, Landroid/graphics/PorterDuff$Mode;->SCREEN:Landroid/graphics/PorterDuff$Mode;
+
+    return-object p0
+
+    .line 3
+    :pswitch_2
+    sget-object p0, Landroid/graphics/PorterDuff$Mode;->MULTIPLY:Landroid/graphics/PorterDuff$Mode;
+
+    return-object p0
+
+    .line 4
+    :cond_0
+    sget-object p0, Landroid/graphics/PorterDuff$Mode;->SRC_ATOP:Landroid/graphics/PorterDuff$Mode;
+
+    return-object p0
+
+    .line 5
+    :cond_1
+    sget-object p0, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
+
+    return-object p0
+
+    .line 6
+    :cond_2
+    sget-object p0, Landroid/graphics/PorterDuff$Mode;->SRC_OVER:Landroid/graphics/PorterDuff$Mode;
+
+    return-object p0
+
+    :pswitch_data_0
+    .packed-switch 0xe
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

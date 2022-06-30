@@ -1,97 +1,116 @@
 .class public final Lod/h;
-.super Lle/j;
-.source "RegisterEnterEmailTabPageFragment.kt"
-
-# interfaces
-.implements Lke/p;
+.super Lae/x;
+.source "OnboardingInviteFriendsPageFragment.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lod/i;",
-        "Ljava/lang/Exception;",
-        "Lae/i;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public g:Landroid/graphics/Rect;
 
+.field public final synthetic h:Ljava/lang/ref/WeakReference;
 
-# static fields
-.field public static final g:Lod/h;
+.field public final synthetic i:Lod/r;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Ljava/lang/ref/WeakReference;Lod/r;)V
+    .locals 0
 
-    new-instance v0, Lod/h;
+    iput-object p1, p0, Lod/h;->h:Ljava/lang/ref/WeakReference;
 
-    invoke-direct {v0}, Lod/h;-><init>()V
+    iput-object p2, p0, Lod/h;->i:Lod/r;
 
-    sput-object v0, Lod/h;->g:Lod/h;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Lae/x;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final a(Landroid/graphics/Rect;)V
+    .locals 8
+
+    const-string v0, "systemWindowInsets"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    check-cast p1, Lod/i;
+    iget-object v0, p0, Lod/h;->h:Ljava/lang/ref/WeakReference;
 
-    check-cast p2, Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
-    const/4 v0, 0x0
+    move-result-object v0
 
-    if-eqz p1, :cond_2
+    move-object v2, v0
 
-    if-eqz p2, :cond_1
+    check-cast v2, Lod/c;
+
+    if-eqz v2, :cond_2
 
     .line 2
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    iget-object v0, p0, Lod/h;->g:Landroid/graphics/Rect;
 
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    if-eqz v0, :cond_0
 
     .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
+    iget v1, v0, Landroid/graphics/Rect;->left:I
+
+    iget v3, p1, Landroid/graphics/Rect;->left:I
+
+    if-ne v1, v3, :cond_0
+
+    iget v0, v0, Landroid/graphics/Rect;->right:I
+
+    iget v1, p1, Landroid/graphics/Rect;->right:I
+
+    if-eq v0, v1, :cond_1
 
     .line 4
     :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget v0, Lcom/supercell/id/R$id;->sticky_header_container:I
 
-    return-object p1
+    invoke-virtual {v2, v0}, Lod/c;->V0(I)Landroid/view/View;
 
-    :cond_1
-    const-string p1, "it"
+    move-result-object v0
+
+    if-eqz v0, :cond_2
 
     .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    sget v1, Lcom/supercell/id/R$id;->friends_header_container:I
 
-    throw v0
+    invoke-virtual {v2, v1}, Lod/c;->V0(I)Landroid/view/View;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_2
+
+    .line 6
+    sget v1, Lcom/supercell/id/R$id;->end_system_inset_guide:I
+
+    invoke-virtual {v2, v1}, Lod/c;->V0(I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v5, v1
+
+    check-cast v5, Landroid/widget/FrameLayout;
+
+    .line 7
+    new-instance v7, Lod/h$a;
+
+    move-object v1, v7
+
+    move-object v3, v0
+
+    move-object v6, p0
+
+    invoke-direct/range {v1 .. v6}, Lod/h$a;-><init>(Lod/c;Landroid/view/View;Landroid/view/View;Landroid/widget/FrameLayout;Lod/h;)V
+
+    invoke-virtual {v0, v7}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    .line 8
+    :cond_1
+    iput-object p1, p0, Lod/h;->g:Landroid/graphics/Rect;
 
     :cond_2
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return-void
 .end method

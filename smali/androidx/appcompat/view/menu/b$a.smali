@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/view/menu/b$a;
+.class public final Landroidx/appcompat/view/menu/b$a;
 .super Ljava/lang/Object;
 .source "CascadingMenuPopup.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/view/menu/b;
+.field public final synthetic f:Landroidx/appcompat/view/menu/b;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/view/menu/b;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/view/menu/b$a;->g:Landroidx/appcompat/view/menu/b;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/b$a;->f:Landroidx/appcompat/view/menu/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +34,11 @@
 
 
 # virtual methods
-.method public onGlobalLayout()V
+.method public final onGlobalLayout()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->g:Landroidx/appcompat/view/menu/b;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->f:Landroidx/appcompat/view/menu/b;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/b;->a()Z
 
@@ -47,40 +46,40 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->g:Landroidx/appcompat/view/menu/b;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->f:Landroidx/appcompat/view/menu/b;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->o:Ljava/util/List;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->n:Ljava/util/ArrayList;
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
     if-lez v0, :cond_2
 
-    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->g:Landroidx/appcompat/view/menu/b;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->f:Landroidx/appcompat/view/menu/b;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->o:Ljava/util/List;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->n:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
 
     .line 2
-    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroidx/appcompat/view/menu/b$d;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/b$d;->a:Landroidx/appcompat/widget/x;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/b$d;->a:Landroidx/appcompat/widget/w;
 
     .line 3
-    iget-boolean v0, v0, Landroidx/appcompat/widget/ListPopupWindow;->D:Z
+    iget-boolean v0, v0, Landroidx/appcompat/widget/ListPopupWindow;->C:Z
 
     if-nez v0, :cond_2
 
     .line 4
-    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->g:Landroidx/appcompat/view/menu/b;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->f:Landroidx/appcompat/view/menu/b;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->v:Landroid/view/View;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->u:Landroid/view/View;
 
     if-eqz v0, :cond_1
 
@@ -95,11 +94,11 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->g:Landroidx/appcompat/view/menu/b;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->f:Landroidx/appcompat/view/menu/b;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->o:Ljava/util/List;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/b;->n:Ljava/util/ArrayList;
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -117,16 +116,16 @@
     check-cast v1, Landroidx/appcompat/view/menu/b$d;
 
     .line 7
-    iget-object v1, v1, Landroidx/appcompat/view/menu/b$d;->a:Landroidx/appcompat/widget/x;
+    iget-object v1, v1, Landroidx/appcompat/view/menu/b$d;->a:Landroidx/appcompat/widget/w;
 
-    invoke-virtual {v1}, Landroidx/appcompat/widget/ListPopupWindow;->M()V
+    invoke-virtual {v1}, Landroidx/appcompat/widget/ListPopupWindow;->R()V
 
     goto :goto_0
 
     .line 8
     :cond_1
     :goto_1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->g:Landroidx/appcompat/view/menu/b;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/b$a;->f:Landroidx/appcompat/view/menu/b;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/b;->dismiss()V
 

@@ -1,22 +1,74 @@
-.class public Lcom/helpshift/util/t;
+.class public final Lcom/helpshift/util/t;
 .super Ljava/lang/Object;
-.source "HSLinkify.java"
-
-
-# instance fields
-.field public a:Ljava/lang/String;
-
-.field public b:I
-
-.field public c:I
+.source "HSViewUtil.java"
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static a(Landroid/view/View;)Z
+    .locals 2
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
 
-    return-void
+    if-nez p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
+
+    move-result p0
+
+    const/16 v1, 0x8
+
+    if-ne p0, v1, :cond_1
+
+    const/4 v0, 0x1
+
+    :cond_1
+    :goto_0
+    return v0
+.end method
+
+.method public static b(Landroid/view/View;)Z
+    .locals 2
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
+
+    move-result p0
+
+    const/4 v1, 0x1
+
+    if-ne p0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    :cond_0
+    return v0
+.end method
+
+.method public static c(Landroid/view/View;)Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    if-nez p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    const/4 v0, 0x1
+
+    :cond_1
+    :goto_0
+    return v0
 .end method

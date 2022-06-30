@@ -14,7 +14,7 @@
 # static fields
 .field public static final Companion:Lcom/kakao/sdk/link/KakaoLinkIntentClient$Companion;
 
-.field private static final instance$delegate:Lae/c;
+.field private static final instance$delegate:Lie/c;
 
 
 # instance fields
@@ -33,18 +33,17 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/link/KakaoLinkIntentClient$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/link/KakaoLinkIntentClient$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->Companion:Lcom/kakao/sdk/link/KakaoLinkIntentClient$Companion;
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/link/KakaoLinkIntentClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/link/KakaoLinkIntentClient$Companion$instance$2;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->instance$delegate:Lae/c;
+    sput-object v0, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->instance$delegate:Lie/c;
 
     return-void
 .end method
@@ -64,7 +63,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/kakao/sdk/link/KakaoLinkIntentClient;-><init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/util/IntentResolveClient;ILle/g;)V
+    invoke-direct/range {v0 .. v5}, Lcom/kakao/sdk/link/KakaoLinkIntentClient;-><init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/util/IntentResolveClient;ILse/e;)V
 
     return-void
 .end method
@@ -72,13 +71,17 @@
 .method public constructor <init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/util/IntentResolveClient;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "contextInfo"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "applicationInfo"
 
-    if-eqz p3, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "intentResolveClient"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -90,38 +93,16 @@
     iput-object p3, p0, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->intentResolveClient:Lcom/kakao/sdk/common/util/IntentResolveClient;
 
     return-void
-
-    :cond_0
-    const-string p1, "intentResolveClient"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "applicationInfo"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "contextInfo"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/util/IntentResolveClient;ILle/g;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/util/IntentResolveClient;ILse/e;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x1
 
     if-eqz p5, :cond_0
 
-    .line 3
+    .line 2
     sget-object p1, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p1}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -133,7 +114,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 4
+    .line 3
     sget-object p2, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p2}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -145,7 +126,7 @@
 
     if-eqz p4, :cond_2
 
-    .line 5
+    .line 4
     sget-object p3, Lcom/kakao/sdk/common/util/IntentResolveClient;->Companion:Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;
 
     invoke-virtual {p3}, Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;->getInstance()Lcom/kakao/sdk/common/util/IntentResolveClient;
@@ -158,11 +139,10 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lae/c;
+.method public static final synthetic access$getInstance$cp()Lie/c;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->instance$delegate:Lae/c;
+    sget-object v0, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->instance$delegate:Lie/c;
 
     return-object v0
 .end method
@@ -199,7 +179,7 @@
 
     const-string v2, "response.templateMsg[\"P\"]"
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Lcom/google/gson/JsonElement;->getAsJsonObject()Lcom/google/gson/JsonObject;
 
@@ -218,7 +198,7 @@
 
     const-string v2, "response.templateMsg[\"C\"]"
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Lcom/google/gson/JsonElement;->getAsJsonObject()Lcom/google/gson/JsonObject;
 
@@ -260,7 +240,7 @@
     move-object v4, p1
 
     .line 7
-    invoke-direct/range {v1 .. v12}, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;JLcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;ILle/g;)V
+    invoke-direct/range {v1 .. v12}, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;JLcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;ILse/e;)V
 
     .line 8
     sget-object v1, Lcom/kakao/sdk/common/util/KakaoJson;->INSTANCE:Lcom/kakao/sdk/common/util/KakaoJson;
@@ -300,7 +280,7 @@
     const-string p2, "clone"
 
     .line 2
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 
@@ -368,7 +348,6 @@
 .method private final linkUriBuilder()Landroid/net/Uri$Builder;
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/net/Uri$Builder;
 
     invoke-direct {v0}, Landroid/net/Uri$Builder;-><init>()V
@@ -393,7 +372,6 @@
 .method public final getApplicationInfo()Lcom/kakao/sdk/common/model/ApplicationInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->applicationInfo:Lcom/kakao/sdk/common/model/ApplicationInfo;
 
     return-object v0
@@ -402,7 +380,6 @@
 .method public final getContextInfo()Lcom/kakao/sdk/common/model/ContextInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->contextInfo:Lcom/kakao/sdk/common/model/ContextInfo;
 
     return-object v0
@@ -411,7 +388,6 @@
 .method public final getIntentResolveClient()Lcom/kakao/sdk/common/util/IntentResolveClient;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->intentResolveClient:Lcom/kakao/sdk/common/util/IntentResolveClient;
 
     return-object v0
@@ -420,9 +396,10 @@
 .method public final isKakaoLinkAvailable(Landroid/content/Context;)Z
     .locals 4
 
-    if-eqz p1, :cond_1
+    const-string v0, "context"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     iget-object v0, p0, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->intentResolveClient:Lcom/kakao/sdk/common/util/IntentResolveClient;
 
     new-instance v1, Landroid/content/Intent;
@@ -454,16 +431,6 @@
 
     :goto_0
     return p1
-
-    :cond_1
-    const-string p1, "context"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final linkResultFromResponse(Landroid/content/Context;Lcom/kakao/sdk/link/model/ValidationResult;Ljava/util/Map;)Lcom/kakao/sdk/link/model/LinkResult;
@@ -562,15 +529,21 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_5
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_4
+    const-string v0, "response"
 
-    if-eqz p4, :cond_3
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p5, :cond_2
+    const-string v0, "appKey"
+
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "appVer"
+
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0, p4, p2, p3}, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->attachmentSize(Ljava/lang/String;Lcom/kakao/sdk/link/model/ValidationResult;Ljava/util/Map;)I
@@ -702,7 +675,7 @@
 
     const-string p4, "Intent(Intent.ACTION_SEN\u2026.FLAG_ACTIVITY_CLEAR_TOP)"
 
-    invoke-static {p3, p4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, p4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 15
     new-instance p4, Lcom/kakao/sdk/link/model/LinkResult;
@@ -729,7 +702,7 @@
 
     const-string v0, "response.warningMsg.toString()"
 
-    invoke-static {p5, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p5, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-class v0, Ljava/util/Map;
 
@@ -750,7 +723,7 @@
 
     const-string v0, "response.argumentMsg.toString()"
 
-    invoke-static {p2, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-class v0, Ljava/util/Map;
 
@@ -786,12 +759,22 @@
     .line 24
     sget-object p2, Lcom/kakao/sdk/common/model/ClientErrorCause;->BadParameter:Lcom/kakao/sdk/common/model/ClientErrorCause;
 
-    const-string p3, "KakaoLink intent size is "
+    .line 25
+    new-instance p3, Ljava/lang/StringBuilder;
+
+    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p4, "KakaoLink intent size is "
+
+    invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const-string p4, " bytes. It should be less than 10240 bytes."
 
-    .line 25
-    invoke-static {p3, v0, p4}, Lb0/c;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p3
 
@@ -799,33 +782,4 @@
     invoke-direct {p1, p2, p3}, Lcom/kakao/sdk/common/model/ClientError;-><init>(Lcom/kakao/sdk/common/model/ClientErrorCause;Ljava/lang/String;)V
 
     throw p1
-
-    :cond_2
-    const-string p1, "appVer"
-
-    .line 27
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "appKey"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_4
-    const-string p1, "response"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_5
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

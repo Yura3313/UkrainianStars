@@ -1,11 +1,11 @@
-.class public Landroidx/transition/Fade$a;
+.class public final Landroidx/transition/Fade$a;
 .super Landroidx/transition/d;
 .source "Fade.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/transition/Fade;->P(Landroid/view/View;FF)Landroid/animation/Animator;
+    value = Landroidx/transition/Fade;->Q(Landroid/view/View;FF)Landroid/animation/Animator;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,15 +15,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic f:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/transition/Fade;Landroid/view/View;)V
+.method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/transition/Fade$a;->g:Landroid/view/View;
+    iput-object p1, p0, Landroidx/transition/Fade$a;->f:Landroid/view/View;
 
     invoke-direct {p0}, Landroidx/transition/d;-><init>()V
 
@@ -32,27 +31,26 @@
 
 
 # virtual methods
-.method public c(Landroidx/transition/Transition;)V
-    .locals 3
+.method public final c(Landroidx/transition/Transition;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Fade$a;->g:Landroid/view/View;
+    iget-object v0, p0, Landroidx/transition/Fade$a;->f:Landroid/view/View;
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    invoke-static {v0, v1}, Lv0/x;->c(Landroid/view/View;F)V
 
     .line 2
-    sget-object v1, Lv0/x;->a:Lv0/d0;
-
-    const/high16 v2, 0x3f800000    # 1.0f
-
-    invoke-virtual {v1, v0, v2}, Lv0/d0;->f(Landroid/view/View;F)V
+    iget-object v0, p0, Landroidx/transition/Fade$a;->f:Landroid/view/View;
 
     .line 3
-    iget-object v0, p0, Landroidx/transition/Fade$a;->g:Landroid/view/View;
+    sget-object v1, Lv0/x;->a:Lv0/d0;
 
-    .line 4
     invoke-virtual {v1, v0}, Lv0/d0;->a(Landroid/view/View;)V
 
-    .line 5
-    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    .line 4
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->y(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     return-void
 .end method

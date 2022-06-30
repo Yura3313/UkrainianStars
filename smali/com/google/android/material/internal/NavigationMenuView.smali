@@ -29,9 +29,7 @@
 
     const/4 p2, 0x1
 
-    const/4 p3, 0x0
-
-    invoke-direct {p1, p2, p3}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(IZ)V
+    invoke-direct {p1, p2}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(I)V
 
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$m;)V
 
@@ -40,7 +38,7 @@
 
 
 # virtual methods
-.method public b(Landroidx/appcompat/view/menu/e;)V
+.method public final b(Landroidx/appcompat/view/menu/e;)V
     .locals 0
 
     return-void

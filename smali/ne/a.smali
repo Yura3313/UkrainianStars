@@ -1,34 +1,52 @@
-.class public abstract Lne/a;
-.super Lne/c;
-.source "PlatformRandom.kt"
+.class public Lne/a;
+.super Ljava/lang/Object;
+.source "PlatformImplementations.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lne/a$a;
+    }
+.end annotation
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lne/c;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(I)I
-    .locals 1
+.method public a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    .locals 3
 
-    .line 1
-    invoke-virtual {p0}, Lne/a;->b()Ljava/util/Random;
+    const-string v0, "cause"
 
-    move-result-object v0
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0, p1}, Ljava/util/Random;->nextInt(I)I
+    const-string v0, "exception"
 
-    move-result p1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    return p1
-.end method
+    sget-object v0, Lne/a$a;->a:Ljava/lang/reflect/Method;
 
-.method public abstract b()Ljava/util/Random;
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    aput-object p2, v1, v2
+
+    invoke-virtual {v0, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_0
+    return-void
 .end method

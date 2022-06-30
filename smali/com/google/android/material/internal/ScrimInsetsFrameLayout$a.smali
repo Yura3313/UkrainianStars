@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;
+.class public final Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;
 .super Ljava/lang/Object;
 .source "ScrimInsetsFrameLayout.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/google/android/material/internal/ScrimInsetsFrameLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;->a:Lcom/google/android/material/internal/ScrimInsetsFrameLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,13 +34,13 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;Lf0/z;)Lf0/z;
+.method public final a(Landroid/view/View;Lf0/a0;)Lf0/a0;
     .locals 4
 
     .line 1
     iget-object p1, p0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;->a:Lcom/google/android/material/internal/ScrimInsetsFrameLayout;
 
-    iget-object v0, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->h:Landroid/graphics/Rect;
+    iget-object v0, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->g:Landroid/graphics/Rect;
 
     if-nez v0, :cond_0
 
@@ -50,31 +49,31 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->h:Landroid/graphics/Rect;
+    iput-object v0, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->g:Landroid/graphics/Rect;
 
     .line 3
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;->a:Lcom/google/android/material/internal/ScrimInsetsFrameLayout;
 
-    iget-object p1, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->h:Landroid/graphics/Rect;
+    iget-object p1, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->g:Landroid/graphics/Rect;
 
     .line 4
-    invoke-virtual {p2}, Lf0/z;->e()I
+    invoke-virtual {p2}, Lf0/a0;->e()I
 
     move-result v0
 
     .line 5
-    invoke-virtual {p2}, Lf0/z;->g()I
+    invoke-virtual {p2}, Lf0/a0;->g()I
 
     move-result v1
 
     .line 6
-    invoke-virtual {p2}, Lf0/z;->f()I
+    invoke-virtual {p2}, Lf0/a0;->f()I
 
     move-result v2
 
     .line 7
-    invoke-virtual {p2}, Lf0/z;->d()I
+    invoke-virtual {p2}, Lf0/a0;->d()I
 
     move-result v3
 
@@ -84,19 +83,19 @@
     .line 9
     iget-object p1, p0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;->a:Lcom/google/android/material/internal/ScrimInsetsFrameLayout;
 
-    invoke-virtual {p1, p2}, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->a(Lf0/z;)V
+    invoke-virtual {p1, p2}, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->a(Lf0/a0;)V
 
     .line 10
     iget-object p1, p0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;->a:Lcom/google/android/material/internal/ScrimInsetsFrameLayout;
 
     .line 11
-    invoke-virtual {p2}, Lf0/z;->h()Lx/b;
+    invoke-virtual {p2}, Lf0/a0;->h()Lx/c;
 
     move-result-object v0
 
-    sget-object v1, Lx/b;->e:Lx/b;
+    sget-object v1, Lx/c;->e:Lx/c;
 
-    invoke-virtual {v0, v1}, Lx/b;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lx/c;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -109,7 +108,7 @@
     .line 12
     iget-object v0, p0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;->a:Lcom/google/android/material/internal/ScrimInsetsFrameLayout;
 
-    iget-object v0, v0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->f:Landroid/graphics/drawable/Drawable;
 
     if-nez v0, :cond_1
 
@@ -120,7 +119,7 @@
 
     :cond_2
     :goto_0
-    invoke-virtual {p1, v1}, Landroid/widget/FrameLayout;->setWillNotDraw(Z)V
+    invoke-virtual {p1, v1}, Landroid/view/View;->setWillNotDraw(Z)V
 
     .line 13
     iget-object p1, p0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;->a:Lcom/google/android/material/internal/ScrimInsetsFrameLayout;
@@ -131,7 +130,7 @@
     invoke-virtual {p1}, Landroid/view/View;->postInvalidateOnAnimation()V
 
     .line 15
-    invoke-virtual {p2}, Lf0/z;->c()Lf0/z;
+    invoke-virtual {p2}, Lf0/a0;->c()Lf0/a0;
 
     move-result-object p1
 

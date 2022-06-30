@@ -3,7 +3,7 @@
 .source "EndingPromotionManager.java"
 
 # interfaces
-.implements Lgc/a;
+.implements Lkc/a;
 
 
 # annotations
@@ -29,7 +29,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;Landroid/widget/ImageView;Landroid/widget/ImageView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$4;->this$0:Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;
 
     iput-object p2, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$4;->val$promotionImageView:Landroid/widget/ImageView;
@@ -66,7 +65,7 @@
 
     invoke-direct {p2, p0}, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$4$1;-><init>(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$4;)V
 
-    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 3
     iget-object p1, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$4;->val$progressView:Landroid/widget/ImageView;
@@ -78,15 +77,14 @@
     .line 4
     iget-object p1, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$4;->val$progressView:Landroid/widget/ImageView;
 
-    invoke-virtual {p1}, Landroid/widget/ImageView;->clearAnimation()V
+    invoke-virtual {p1}, Landroid/view/View;->clearAnimation()V
 
     return-void
 .end method
 
-.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Lac/b;)V
+.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Lfc/b;)V
     .locals 0
 
-    .line 1
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -116,7 +114,7 @@
     const-string v0, "EndingPopupDialog"
 
     .line 1
-    invoke-static {p2, p1, v0}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p2, p1, v0}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

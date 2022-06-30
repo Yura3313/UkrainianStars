@@ -1,18 +1,17 @@
-.class public Lcom/google/android/material/textfield/b;
+.class public final Lcom/google/android/material/textfield/b;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "ClearTextEndIconDelegate.java"
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/textfield/a;
+.field public final synthetic f:Lcom/google/android/material/textfield/a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/a;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/b;->g:Lcom/google/android/material/textfield/a;
+    iput-object p1, p0, Lcom/google/android/material/textfield/b;->f:Lcom/google/android/material/textfield/a;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -21,13 +20,12 @@
 
 
 # virtual methods
-.method public onAnimationStart(Landroid/animation/Animator;)V
+.method public final onAnimationStart(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
-    iget-object p1, p0, Lcom/google/android/material/textfield/b;->g:Lcom/google/android/material/textfield/a;
+    iget-object p1, p0, Lcom/google/android/material/textfield/b;->f:Lcom/google/android/material/textfield/a;
 
-    iget-object p1, p1, Lcom/google/android/material/textfield/m;->a:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object p1, p1, Lcom/google/android/material/textfield/k;->a:Lcom/google/android/material/textfield/TextInputLayout;
 
     const/4 v0, 0x1
 

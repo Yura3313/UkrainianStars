@@ -30,11 +30,11 @@
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 8
 
-    const/4 v0, 0x0
+    const-string v0, "in"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v7, Lcom/kakao/sdk/user/model/AccessTokenInfo;
+    new-instance v0, Lcom/kakao/sdk/user/model/AccessTokenInfo;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
@@ -52,28 +52,25 @@
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
-    move-result-wide v0
+    move-result-wide v6
 
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v0
+    move-result-object p1
+
+    goto :goto_0
 
     :cond_0
-    move-object v6, v0
+    const/4 p1, 0x0
 
-    move-object v1, v7
+    :goto_0
+    move-object v6, p1
+
+    move-object v1, v0
 
     invoke-direct/range {v1 .. v6}, Lcom/kakao/sdk/user/model/AccessTokenInfo;-><init>(JJLjava/lang/Long;)V
 
-    return-object v7
-
-    :cond_1
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

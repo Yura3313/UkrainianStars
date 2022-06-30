@@ -162,7 +162,6 @@
 .method private dynamicTableIndex(I)I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http2/Hpack$Reader;->nextHeaderIndex:I
 
     add-int/lit8 v0, v0, 0x1
@@ -309,12 +308,14 @@
 
     const-string v1, "Header index too large "
 
+    .line 7
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
     add-int/lit8 p1, p1, 0x1
 
+    .line 8
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -474,7 +475,6 @@
 
     if-ltz p1, :cond_0
 
-    .line 1
     sget-object v1, Lokhttp3/internal/http2/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/http2/Header;
 
     array-length v1, v1
@@ -500,7 +500,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Hpack$Reader;->source:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->readByte()B
@@ -576,12 +575,14 @@
 
     const-string v1, "Header index too large "
 
+    .line 8
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
     add-int/lit8 p1, p1, 0x1
 
+    .line 9
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -752,7 +753,6 @@
 .method public maxDynamicTableByteCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http2/Hpack$Reader;->maxDynamicTableByteCount:I
 
     return v0
@@ -942,10 +942,12 @@
 
     const-string v1, "Invalid dynamic table size update "
 
+    .line 12
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 13
     iget v2, p0, Lokhttp3/internal/http2/Hpack$Reader;->maxDynamicTableByteCount:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -970,26 +972,26 @@
     :cond_5
     const/16 v1, 0xf
 
-    .line 12
+    .line 14
     invoke-virtual {p0, v0, v1}, Lokhttp3/internal/http2/Hpack$Reader;->readInt(II)I
 
     move-result v0
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 13
+    .line 15
     invoke-direct {p0, v0}, Lokhttp3/internal/http2/Hpack$Reader;->readLiteralHeaderWithoutIndexingIndexedName(I)V
 
     goto :goto_0
 
-    .line 14
+    .line 16
     :cond_6
     :goto_1
     invoke-direct {p0}, Lokhttp3/internal/http2/Hpack$Reader;->readLiteralHeaderWithoutIndexingNewName()V
 
     goto :goto_0
 
-    .line 15
+    .line 17
     :cond_7
     new-instance v0, Ljava/io/IOException;
 
@@ -1020,7 +1022,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 1
     :goto_0
     invoke-direct {p0}, Lokhttp3/internal/http2/Hpack$Reader;->readByte()I
 

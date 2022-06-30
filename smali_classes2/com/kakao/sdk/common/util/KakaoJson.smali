@@ -73,7 +73,7 @@
 
     const-string v2, "internalBuilder.create()"
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v1, Lcom/kakao/sdk/common/util/KakaoJson;->base:Lcom/google/gson/Gson;
 
@@ -88,7 +88,7 @@
 
     const-string v1, "internalBuilder.setPrettyPrinting().create()"
 
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->pretty:Lcom/google/gson/Gson;
 
@@ -98,7 +98,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -119,13 +118,14 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "string"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string v0, "type1"
 
-    .line 1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->base:Lcom/google/gson/Gson;
 
     invoke-virtual {v0, p1, p2}, Lcom/google/gson/Gson;->fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;
@@ -133,27 +133,11 @@
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "type1"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "string"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public final getBase()Lcom/google/gson/Gson;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->base:Lcom/google/gson/Gson;
 
     return-object v0
@@ -162,7 +146,6 @@
 .method public final getPretty()Lcom/google/gson/Gson;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->pretty:Lcom/google/gson/Gson;
 
     return-object v0
@@ -183,13 +166,14 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "string"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string v0, "type"
 
-    .line 1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->base:Lcom/google/gson/Gson;
 
     const-class v1, Ljava/util/List;
@@ -208,7 +192,7 @@
 
     const-string v1, "TypeToken.getParameterized(List::class.java, type)"
 
-    invoke-static {p2, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getType()Ljava/lang/reflect/Type;
 
@@ -220,26 +204,11 @@
 
     const-string p2, "base.fromJson(string, Ty\u2026::class.java, type).type)"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Ljava/util/List;
 
     return-object p1
-
-    :cond_0
-    const-string p1, "type"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "string"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public final parameterizedFromJson(Ljava/lang/String;Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)Ljava/lang/Object;
@@ -256,15 +225,18 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "string"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "type1"
 
-    if-eqz p3, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    const-string v0, "type2"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->base:Lcom/google/gson/Gson;
 
     const/4 v1, 0x1
@@ -281,7 +253,7 @@
 
     const-string p3, "TypeToken.getParameterized(type1, type2)"
 
-    invoke-static {p2, p3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getType()Ljava/lang/reflect/Type;
 
@@ -292,28 +264,6 @@
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "type2"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "type1"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "string"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public final toJson(Ljava/lang/Object;)Ljava/lang/String;
@@ -327,7 +277,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->base:Lcom/google/gson/Gson;
 
     invoke-virtual {v0, p1}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
@@ -336,7 +285,7 @@
 
     const-string v0, "base.toJson(model)"
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method

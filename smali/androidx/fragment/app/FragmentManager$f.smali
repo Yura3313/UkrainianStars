@@ -1,9 +1,9 @@
-.class public Landroidx/fragment/app/FragmentManager$f;
+.class public final Landroidx/fragment/app/FragmentManager$f;
 .super Ljava/lang/Object;
 .source "FragmentManager.java"
 
 # interfaces
-.implements Landroidx/fragment/app/v0;
+.implements Landroidx/fragment/app/k0;
 
 
 # annotations
@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/FragmentManager;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

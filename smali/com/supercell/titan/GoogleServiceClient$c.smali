@@ -1,9 +1,9 @@
-.class public Lcom/supercell/titan/GoogleServiceClient$c;
+.class public final Lcom/supercell/titan/GoogleServiceClient$c;
 .super Ljava/lang/Object;
 .source "GoogleServiceClient.java"
 
 # interfaces
-.implements Lb4/c;
+.implements Lc4/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lb4/c<",
+        "Lc4/c<",
         "Ljava/lang/Void;",
         ">;"
     }
@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/supercell/titan/GoogleServiceClient;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/titan/GoogleServiceClient$c;->a:Lcom/supercell/titan/GoogleServiceClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,12 +43,12 @@
 
 
 # virtual methods
-.method public a(Lb4/f;)V
+.method public final a(Lc4/f;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lb4/f<",
+            "Lc4/f<",
             "Ljava/lang/Void;",
             ">;)V"
         }

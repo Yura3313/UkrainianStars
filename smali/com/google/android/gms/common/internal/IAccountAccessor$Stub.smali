@@ -29,13 +29,12 @@
 
     const-string v0, "com.google.android.gms.common.internal.IAccountAccessor"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/common/zza;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public static Q0(Landroid/os/IBinder;)Lcom/google/android/gms/common/internal/IAccountAccessor;
+.method public static S0(Landroid/os/IBinder;)Lcom/google/android/gms/common/internal/IAccountAccessor;
     .locals 2
     .param p0    # Landroid/os/IBinder;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -79,7 +78,7 @@
 
 
 # virtual methods
-.method public final F0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final J0(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 0
     .param p2    # Landroid/os/Parcel;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -103,7 +102,6 @@
 
     return p1
 
-    .line 1
     :cond_0
     new-instance p1, Ljava/lang/NoSuchMethodError;
 

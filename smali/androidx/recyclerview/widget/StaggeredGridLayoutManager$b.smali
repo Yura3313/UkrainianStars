@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/StaggeredGridLayoutManager$b;
+.class public final Landroidx/recyclerview/widget/StaggeredGridLayoutManager$b;
 .super Ljava/lang/Object;
 .source "StaggeredGridLayoutManager.java"
 
@@ -47,7 +47,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 1
 
     .line 1
@@ -57,7 +57,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$b;->g:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/v;->g()I
 
@@ -68,7 +68,7 @@
     :cond_0
     iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$b;->g:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    iget-object v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->r:Landroidx/recyclerview/widget/v;
+    iget-object v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
     .line 2
     invoke-virtual {v0}, Landroidx/recyclerview/widget/v;->k()I
@@ -81,7 +81,7 @@
     return-void
 .end method
 
-.method public b()V
+.method public final b()V
     .locals 2
 
     const/4 v0, -0x1

@@ -1,4 +1,4 @@
-.class public Landroidx/activity/ComponentActivity$a;
+.class public final Landroidx/activity/ComponentActivity$a;
 .super Ljava/lang/Object;
 .source "ComponentActivity.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/activity/ComponentActivity;
+.field public final synthetic f:Landroidx/activity/ComponentActivity;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/activity/ComponentActivity;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/activity/ComponentActivity$a;->g:Landroidx/activity/ComponentActivity;
+    iput-object p1, p0, Landroidx/activity/ComponentActivity$a;->f:Landroidx/activity/ComponentActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,12 +34,12 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 3
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Landroidx/activity/ComponentActivity$a;->g:Landroidx/activity/ComponentActivity;
+    iget-object v0, p0, Landroidx/activity/ComponentActivity$a;->f:Landroidx/activity/ComponentActivity;
 
     invoke-static {v0}, Landroidx/activity/ComponentActivity;->access$001(Landroidx/activity/ComponentActivity;)V
     :try_end_0
@@ -52,7 +51,7 @@
     move-exception v0
 
     .line 2
-    invoke-virtual {v0}, Ljava/lang/IllegalStateException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 

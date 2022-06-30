@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.appopen.client.IAppOpenAdPresentationCallback"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,7 +19,7 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -39,6 +38,5 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 1
     throw p1
 .end method

@@ -91,7 +91,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/RequestDetails;->headers:Ljava/util/Map;
 
     return-object v0
@@ -100,7 +99,6 @@
 .method public getUrl()Ljava/net/URL;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/RequestDetails;->url:Ljava/net/URL;
 
     return-object v0

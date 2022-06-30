@@ -401,7 +401,6 @@
 
     const-string p0, ".envelope"
 
-    .line 1
     invoke-virtual {p1, p0}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result p0
@@ -454,7 +453,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v3}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -1295,7 +1294,7 @@
     return-object v0
 .end method
 
-.method public synthetic store(Lio/sentry/SentryEnvelope;)V
+.method public final synthetic store(Lio/sentry/SentryEnvelope;)V
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/cache/c;->a(Lio/sentry/cache/IEnvelopeCache;Lio/sentry/SentryEnvelope;)V

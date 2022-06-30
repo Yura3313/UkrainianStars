@@ -99,9 +99,10 @@
 
     move-result-object v3
 
+    .line 7
     iget-object v4, p0, Lio/sentry/RequestDetailsResolver;->options:Lio/sentry/SentryOptions;
 
-    .line 7
+    .line 8
     invoke-virtual {v4}, Lio/sentry/SentryOptions;->getSentryClientName()Ljava/lang/String;
 
     move-result-object v4
@@ -116,7 +117,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 8
+    .line 9
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -125,7 +126,8 @@
 
     const-string v2, ",sentry_secret="
 
-    invoke-static {v2, v0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 10
+    invoke-static {v2, v0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -134,6 +136,7 @@
     :cond_0
     const-string v0, ""
 
+    .line 11
     :goto_0
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -141,29 +144,29 @@
 
     move-result-object v0
 
-    .line 9
+    .line 12
     iget-object v2, p0, Lio/sentry/RequestDetailsResolver;->options:Lio/sentry/SentryOptions;
 
     invoke-virtual {v2}, Lio/sentry/SentryOptions;->getSentryClientName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 10
+    .line 13
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
     const-string v4, "User-Agent"
 
-    .line 11
+    .line 14
     invoke-virtual {v3, v4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v2, "X-Sentry-Auth"
 
-    .line 12
+    .line 15
     invoke-virtual {v3, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 13
+    .line 16
     new-instance v0, Lio/sentry/RequestDetails;
 
     invoke-direct {v0, v1, v3}, Lio/sentry/RequestDetails;-><init>(Ljava/lang/String;Ljava/util/Map;)V

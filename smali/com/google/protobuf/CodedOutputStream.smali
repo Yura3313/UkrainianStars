@@ -42,7 +42,7 @@
     sput-object v0, Lcom/google/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
 
     .line 2
-    sget-boolean v0, Lcom/google/protobuf/u1;->g:Z
+    sget-boolean v0, Lcom/google/protobuf/t1;->e:Z
 
     .line 3
     sput-boolean v0, Lcom/google/protobuf/CodedOutputStream;->c:Z
@@ -68,24 +68,7 @@
     return-void
 .end method
 
-.method public static A(IJ)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
-
-    move-result p0
-
-    invoke-static {p1, p2}, Lcom/google/protobuf/CodedOutputStream;->B(J)I
-
-    move-result p1
-
-    add-int/2addr p1, p0
-
-    return p1
-.end method
-
-.method public static B(J)I
+.method public static A(J)I
     .locals 6
 
     const-wide/16 v0, -0x80
@@ -161,19 +144,7 @@
     return v0
 .end method
 
-.method public static C(I)I
-    .locals 1
-
-    shl-int/lit8 v0, p0, 0x1
-
-    shr-int/lit8 p0, p0, 0x1f
-
-    xor-int/2addr p0, v0
-
-    return p0
-.end method
-
-.method public static D(J)J
+.method public static B(J)J
     .locals 3
 
     const/4 v0, 0x1
@@ -189,10 +160,9 @@
     return-wide p0
 .end method
 
-.method public static G(Ljava/io/OutputStream;I)Lcom/google/protobuf/CodedOutputStream;
+.method public static E(Ljava/io/OutputStream;I)Lcom/google/protobuf/CodedOutputStream;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/CodedOutputStream$d;
 
     invoke-direct {v0, p0, p1}, Lcom/google/protobuf/CodedOutputStream$d;-><init>(Ljava/io/OutputStream;I)V
@@ -200,11 +170,10 @@
     return-object v0
 .end method
 
-.method public static b(IZ)I
+.method public static b(I)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
@@ -214,10 +183,10 @@
 .end method
 
 .method public static c(ILcom/google/protobuf/i;)I
-    .locals 0
+    .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
@@ -226,35 +195,40 @@
 
     move-result p1
 
-    invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->o(I)I
+    .line 3
+    invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->y(I)I
 
-    move-result p1
+    move-result v0
 
-    add-int/2addr p0, p1
+    add-int/2addr v0, p1
 
-    return p0
+    add-int/2addr v0, p0
+
+    return v0
 .end method
 
 .method public static d(Lcom/google/protobuf/i;)I
-    .locals 0
+    .locals 1
 
     .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/i;->size()I
 
     move-result p0
 
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->o(I)I
+    .line 2
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->y(I)I
 
-    move-result p0
+    move-result v0
 
-    return p0
+    add-int/2addr v0, p0
+
+    return v0
 .end method
 
-.method public static e(ID)I
+.method public static e(I)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
@@ -267,7 +241,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
@@ -276,16 +250,15 @@
 
     move-result p1
 
-    add-int/2addr p0, p1
+    add-int/2addr p1, p0
 
-    return p0
+    return p1
 .end method
 
-.method public static g(II)I
+.method public static g(I)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
@@ -294,11 +267,10 @@
     return p0
 .end method
 
-.method public static h(IJ)I
+.method public static h(I)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
@@ -307,11 +279,10 @@
     return p0
 .end method
 
-.method public static i(IF)I
+.method public static i(I)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
@@ -326,7 +297,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
@@ -339,16 +310,15 @@
 
     move-result p1
 
-    add-int/2addr p0, p1
+    add-int/2addr p1, p0
 
-    return p0
+    return p1
 .end method
 
 .method public static k(II)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
@@ -366,8 +336,7 @@
 
     if-ltz p0, :cond_0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->z(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->y(I)I
 
     move-result p0
 
@@ -383,18 +352,18 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
     .line 2
-    invoke-static {p1, p2}, Lcom/google/protobuf/CodedOutputStream;->B(J)I
+    invoke-static {p1, p2}, Lcom/google/protobuf/CodedOutputStream;->A(J)I
 
     move-result p1
 
-    add-int/2addr p0, p1
+    add-int/2addr p1, p0
 
-    return p0
+    return p1
 .end method
 
 .method public static n(Lcom/google/protobuf/d0;)I
@@ -434,18 +403,7 @@
 
     .line 5
     :goto_0
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->o(I)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static o(I)I
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->z(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->y(I)I
 
     move-result v0
 
@@ -454,11 +412,10 @@
     return v0
 .end method
 
-.method public static p(II)I
+.method public static o(I)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
@@ -467,11 +424,10 @@
     return p0
 .end method
 
-.method public static q(IJ)I
+.method public static p(I)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
@@ -480,15 +436,14 @@
     return p0
 .end method
 
-.method public static r(II)I
+.method public static q(II)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
-    invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->s(I)I
+    invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->r(I)I
 
     move-result p1
 
@@ -497,30 +452,30 @@
     return p1
 .end method
 
-.method public static s(I)I
-    .locals 0
+.method public static r(I)I
+    .locals 1
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->C(I)I
+    shl-int/lit8 v0, p0, 0x1
 
-    move-result p0
+    shr-int/lit8 p0, p0, 0x1f
 
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->z(I)I
+    xor-int/2addr p0, v0
+
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->y(I)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static t(IJ)I
+.method public static s(IJ)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
-    invoke-static {p1, p2}, Lcom/google/protobuf/CodedOutputStream;->u(J)I
+    invoke-static {p1, p2}, Lcom/google/protobuf/CodedOutputStream;->t(J)I
 
     move-result p1
 
@@ -529,30 +484,28 @@
     return p1
 .end method
 
-.method public static u(J)I
+.method public static t(J)I
     .locals 0
 
-    .line 1
-    invoke-static {p0, p1}, Lcom/google/protobuf/CodedOutputStream;->D(J)J
+    invoke-static {p0, p1}, Lcom/google/protobuf/CodedOutputStream;->B(J)J
 
     move-result-wide p0
 
-    invoke-static {p0, p1}, Lcom/google/protobuf/CodedOutputStream;->B(J)I
+    invoke-static {p0, p1}, Lcom/google/protobuf/CodedOutputStream;->A(J)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static v(ILjava/lang/String;)I
+.method public static u(ILjava/lang/String;)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
-    invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->w(Ljava/lang/String;)I
+    invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->v(Ljava/lang/String;)I
 
     move-result p1
 
@@ -561,16 +514,16 @@
     return p1
 .end method
 
-.method public static w(Ljava/lang/String;)I
+.method public static v(Ljava/lang/String;)I
     .locals 1
 
     .line 1
     :try_start_0
-    invoke-static {p0}, Lcom/google/protobuf/v1;->e(Ljava/lang/CharSequence;)I
+    invoke-static {p0}, Lcom/google/protobuf/u1;->e(Ljava/lang/CharSequence;)I
 
     move-result p0
     :try_end_0
-    .catch Lcom/google/protobuf/v1$d; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/google/protobuf/u1$d; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
@@ -587,37 +540,37 @@
 
     .line 4
     :goto_0
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->o(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->y(I)I
 
-    move-result p0
+    move-result v0
 
-    return p0
+    add-int/2addr v0, p0
+
+    return v0
 .end method
 
-.method public static x(I)I
+.method public static w(I)I
     .locals 0
 
     shl-int/lit8 p0, p0, 0x3
 
     or-int/lit8 p0, p0, 0x0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->z(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->y(I)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static y(II)I
+.method public static x(II)I
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->x(I)I
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
 
     move-result p0
 
-    invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->z(I)I
+    invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->y(I)I
 
     move-result p1
 
@@ -626,7 +579,7 @@
     return p1
 .end method
 
-.method public static z(I)I
+.method public static y(I)I
     .locals 1
 
     and-int/lit8 v0, p0, -0x80
@@ -674,9 +627,25 @@
     return p0
 .end method
 
+.method public static z(IJ)I
+    .locals 0
+
+    invoke-static {p0}, Lcom/google/protobuf/CodedOutputStream;->w(I)I
+
+    move-result p0
+
+    invoke-static {p1, p2}, Lcom/google/protobuf/CodedOutputStream;->A(J)I
+
+    move-result p1
+
+    add-int/2addr p1, p0
+
+    return p1
+.end method
+
 
 # virtual methods
-.method public abstract E()V
+.method public abstract C()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -684,7 +653,7 @@
     .end annotation
 .end method
 
-.method public final F(Ljava/lang/String;Lcom/google/protobuf/v1$d;)V
+.method public final D(Ljava/lang/String;Lcom/google/protobuf/u1$d;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -712,7 +681,7 @@
     :try_start_0
     array-length p2, p1
 
-    invoke-virtual {p0, p2}, Lcom/google/protobuf/CodedOutputStream;->a0(I)V
+    invoke-virtual {p0, p2}, Lcom/google/protobuf/CodedOutputStream;->Y(I)V
 
     const/4 p2, 0x0
 
@@ -743,7 +712,7 @@
     throw p2
 .end method
 
-.method public abstract H(B)V
+.method public abstract F(B)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -751,7 +720,7 @@
     .end annotation
 .end method
 
-.method public abstract I(IZ)V
+.method public abstract G(IZ)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -759,7 +728,7 @@
     .end annotation
 .end method
 
-.method public abstract J([BII)V
+.method public abstract H([BI)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -767,7 +736,7 @@
     .end annotation
 .end method
 
-.method public abstract K(ILcom/google/protobuf/i;)V
+.method public abstract I(ILcom/google/protobuf/i;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -775,7 +744,7 @@
     .end annotation
 .end method
 
-.method public abstract L(Lcom/google/protobuf/i;)V
+.method public abstract J(Lcom/google/protobuf/i;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -783,7 +752,7 @@
     .end annotation
 .end method
 
-.method public abstract M(II)V
+.method public abstract K(II)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -791,7 +760,7 @@
     .end annotation
 .end method
 
-.method public abstract N(I)V
+.method public abstract L(I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -799,7 +768,7 @@
     .end annotation
 .end method
 
-.method public abstract O(IJ)V
+.method public abstract M(IJ)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -807,7 +776,7 @@
     .end annotation
 .end method
 
-.method public abstract P(J)V
+.method public abstract N(J)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -815,7 +784,7 @@
     .end annotation
 .end method
 
-.method public abstract Q(II)V
+.method public abstract O(II)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -823,7 +792,7 @@
     .end annotation
 .end method
 
-.method public abstract R(I)V
+.method public abstract P(I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -831,7 +800,7 @@
     .end annotation
 .end method
 
-.method public abstract S(ILcom/google/protobuf/q0;Lcom/google/protobuf/i1;)V
+.method public abstract Q(ILcom/google/protobuf/q0;Lcom/google/protobuf/i1;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -839,7 +808,7 @@
     .end annotation
 .end method
 
-.method public abstract T(Lcom/google/protobuf/q0;)V
+.method public abstract R(Lcom/google/protobuf/q0;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -847,7 +816,7 @@
     .end annotation
 .end method
 
-.method public abstract U(ILcom/google/protobuf/q0;)V
+.method public abstract S(ILcom/google/protobuf/q0;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -855,7 +824,7 @@
     .end annotation
 .end method
 
-.method public abstract V(ILcom/google/protobuf/i;)V
+.method public abstract T(ILcom/google/protobuf/i;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -863,7 +832,7 @@
     .end annotation
 .end method
 
-.method public abstract W(ILjava/lang/String;)V
+.method public abstract U(ILjava/lang/String;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -871,7 +840,7 @@
     .end annotation
 .end method
 
-.method public abstract X(Ljava/lang/String;)V
+.method public abstract V(Ljava/lang/String;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -879,7 +848,7 @@
     .end annotation
 .end method
 
-.method public abstract Y(II)V
+.method public abstract W(II)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -887,7 +856,7 @@
     .end annotation
 .end method
 
-.method public abstract Z(II)V
+.method public abstract X(II)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -895,7 +864,7 @@
     .end annotation
 .end method
 
-.method public abstract a0(I)V
+.method public abstract Y(I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -903,7 +872,7 @@
     .end annotation
 .end method
 
-.method public abstract b0(IJ)V
+.method public abstract Z(IJ)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -911,7 +880,7 @@
     .end annotation
 .end method
 
-.method public abstract c0(J)V
+.method public abstract a0(J)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

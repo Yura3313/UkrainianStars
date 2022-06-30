@@ -1,201 +1,240 @@
 .class public final Lvc/h;
 .super Ljava/lang/Object;
-.source "GameFragment.kt"
-
-# interfaces
-.implements Lvc/k;
+.source "IdChatMessages.kt"
 
 
 # instance fields
-.field public final a:I
+.field public final a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lvc/f;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Ljava/lang/String;
-
-.field public final c:Ljava/lang/String;
-
-.field public final d:Ljava/lang/String;
-
-.field public final e:Lcom/supercell/id/model/MyProfileImage;
-
-.field public final f:Ljava/lang/String;
-
-.field public final g:Ljava/lang/Integer;
-
-.field public final h:I
+.field public final b:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lvc/g;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lcom/supercell/id/model/MyProfileImage;Ljava/lang/String;Ljava/lang/Integer;I)V
-    .locals 0
+.method public constructor <init>(Lorg/json/JSONObject;)V
+    .locals 7
 
-    if-eqz p1, :cond_0
+    const-string v0, "data"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v1, "members"
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
-    iput-object p1, p0, Lvc/h;->c:Ljava/lang/String;
-
-    iput-object p2, p0, Lvc/h;->d:Ljava/lang/String;
-
-    iput-object p3, p0, Lvc/h;->e:Lcom/supercell/id/model/MyProfileImage;
-
-    iput-object p4, p0, Lvc/h;->f:Ljava/lang/String;
-
-    iput-object p5, p0, Lvc/h;->g:Ljava/lang/Integer;
-
-    iput p6, p0, Lvc/h;->h:I
+    move-result-object v1
 
     .line 2
-    sget p2, Lcom/supercell/id/R$layout;->fragment_game_list_own:I
-
-    iput p2, p0, Lvc/h;->a:I
+    invoke-static {v1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-static {p1}, Lc5/i;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    .line 4
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    .line 5
+    :cond_0
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    const/4 v5, 0x0
+
+    if-eqz v4, :cond_3
+
+    .line 6
+    :try_start_0
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    if-eqz v4, :cond_0
+
+    invoke-virtual {v1, v4}, Lorg/json/JSONObject;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    instance-of v6, v4, Lorg/json/JSONObject;
+
+    if-nez v6, :cond_1
+
+    move-object v4, v5
+
+    :cond_1
+    check-cast v4, Lorg/json/JSONObject;
+
+    if-eqz v4, :cond_2
+
+    new-instance v5, Lvc/f;
+
+    invoke-direct {v5, v4}, Lvc/f;-><init>(Lorg/json/JSONObject;)V
+
+    :cond_2
+    if-eqz v5, :cond_0
+
+    .line 7
+    invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v4
+
+    .line 8
+    invoke-virtual {v4}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v4
+
+    .line 9
+    invoke-virtual {v4}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
+
+    goto :goto_0
+
+    .line 10
+    :cond_3
+    invoke-static {v3}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/util/List;
+
+    move-result-object v1
+
+    const-string v2, "messages"
+
+    .line 11
+    invoke-virtual {p1, v2}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object p1
 
-    iput-object p1, p0, Lvc/h;->b:Ljava/lang/String;
+    .line 12
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 13
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
+
+    move-result v0
+
+    const/4 v2, 0x0
+
+    invoke-static {v2, v0}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+
+    move-result-object v0
+
+    .line 14
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    .line 15
+    invoke-virtual {v0}, Lve/a;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_4
+    :goto_1
+    move-object v3, v0
+
+    check-cast v3, Lve/b;
+
+    invoke-virtual {v3}, Lve/b;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_6
+
+    move-object v3, v0
+
+    check-cast v3, Lje/s;
+
+    invoke-virtual {v3}, Lje/s;->a()I
+
+    move-result v3
+
+    .line 16
+    :try_start_1
+    invoke-virtual {p1, v3}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_5
+
+    .line 17
+    new-instance v4, Lvc/g;
+
+    invoke-direct {v4, v3}, Lvc/g;-><init>(Lorg/json/JSONObject;)V
+    :try_end_1
+    .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_3
+    .catch Ljava/text/ParseException; {:try_start_1 .. :try_end_1} :catch_2
+
+    goto :goto_3
+
+    :catch_2
+    move-exception v3
+
+    .line 18
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
+
+    goto :goto_2
+
+    :catch_3
+    move-exception v3
+
+    .line 19
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
+
+    :cond_5
+    :goto_2
+    move-object v4, v5
+
+    :goto_3
+    if-eqz v4, :cond_4
+
+    .line 20
+    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_1
+
+    .line 21
+    :cond_6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v1, p0, Lvc/h;->a:Ljava/util/List;
+
+    iput-object v2, p0, Lvc/h;->b:Ljava/util/List;
 
     return-void
-
-    :cond_0
-    const-string p1, "scid"
-
-    .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public a(Lvd/j1;)Z
-    .locals 3
-
-    if-eqz p1, :cond_2
-
-    .line 1
-    instance-of v0, p1, Lvc/h;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    .line 2
-    :cond_0
-    check-cast p1, Lvc/h;
-
-    .line 3
-    iget-object v0, p1, Lvc/h;->d:Ljava/lang/String;
-
-    iget-object v2, p0, Lvc/h;->d:Ljava/lang/String;
-
-    .line 4
-    invoke-static {v0, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p1, Lvc/h;->e:Lcom/supercell/id/model/MyProfileImage;
-
-    iget-object v2, p0, Lvc/h;->e:Lcom/supercell/id/model/MyProfileImage;
-
-    invoke-static {v0, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p1, Lvc/h;->f:Ljava/lang/String;
-
-    iget-object v2, p0, Lvc/h;->f:Ljava/lang/String;
-
-    invoke-static {v0, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 5
-    iget-object v0, p1, Lvc/h;->g:Ljava/lang/Integer;
-
-    iget-object v2, p0, Lvc/h;->g:Ljava/lang/Integer;
-
-    .line 6
-    invoke-static {v0, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget p1, p1, Lvc/h;->h:I
-
-    iget v0, p0, Lvc/h;->h:I
-
-    if-ne p1, v0, :cond_1
-
-    const/4 v1, 0x1
-
-    :cond_1
-    return v1
-
-    :cond_2
-    const-string p1, "other"
-
-    .line 7
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public b()Ljava/lang/Integer;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lvc/h;->g:Ljava/lang/Integer;
-
-    return-object v0
-.end method
-
-.method public c()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lvc/h;->a:I
-
-    return v0
-.end method
-
-.method public d(Lvd/j1;)Z
-    .locals 0
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    instance-of p1, p1, Lvc/h;
-
-    return p1
-
-    :cond_0
-    const-string p1, "other"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
     if-eq p0, p1, :cond_1
@@ -206,65 +245,25 @@
 
     check-cast p1, Lvc/h;
 
-    iget-object v0, p0, Lvc/h;->c:Ljava/lang/String;
+    iget-object v0, p0, Lvc/h;->a:Ljava/util/List;
 
-    iget-object v1, p1, Lvc/h;->c:Ljava/lang/String;
+    iget-object v1, p1, Lvc/h;->a:Ljava/util/List;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 1
-    iget-object v0, p0, Lvc/h;->d:Ljava/lang/String;
-
-    iget-object v1, p1, Lvc/h;->d:Ljava/lang/String;
-
-    .line 2
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lvc/h;->e:Lcom/supercell/id/model/MyProfileImage;
+    iget-object v0, p0, Lvc/h;->b:Ljava/util/List;
 
-    iget-object v1, p1, Lvc/h;->e:Lcom/supercell/id/model/MyProfileImage;
+    iget-object p1, p1, Lvc/h;->b:Ljava/util/List;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v0
+    move-result p1
 
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lvc/h;->f:Ljava/lang/String;
-
-    iget-object v1, p1, Lvc/h;->f:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    iget-object v0, p0, Lvc/h;->g:Ljava/lang/Integer;
-
-    iget-object v1, p1, Lvc/h;->g:Ljava/lang/Integer;
-
-    .line 4
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget v0, p0, Lvc/h;->h:I
-
-    iget p1, p1, Lvc/h;->h:I
-
-    if-ne v0, p1, :cond_0
+    if-eqz p1, :cond_0
 
     goto :goto_0
 
@@ -280,19 +279,10 @@
     return p1
 .end method
 
-.method public getName()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lvc/h;->d:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public hashCode()I
+.method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lvc/h;->c:Ljava/lang/String;
+    iget-object v0, p0, Lvc/h;->a:Ljava/util/List;
 
     const/4 v1, 0x0
 
@@ -310,142 +300,45 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 1
-    iget-object v2, p0, Lvc/h;->d:Ljava/lang/String;
+    iget-object v2, p0, Lvc/h;->b:Ljava/util/List;
 
     if-eqz v2, :cond_1
 
-    .line 2
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v2, 0x0
-
-    :goto_1
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lvc/h;->e:Lcom/supercell/id/model/MyProfileImage;
-
-    if-eqz v2, :cond_2
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_2
-
-    :cond_2
-    const/4 v2, 0x0
-
-    :goto_2
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lvc/h;->f:Ljava/lang/String;
-
-    if-eqz v2, :cond_3
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_3
-
-    :cond_3
-    const/4 v2, 0x0
-
-    :goto_3
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 3
-    iget-object v2, p0, Lvc/h;->g:Ljava/lang/Integer;
-
-    if-eqz v2, :cond_4
-
-    .line 4
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     move-result v1
 
-    :cond_4
-    add-int/2addr v0, v1
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget v1, p0, Lvc/h;->h:I
-
+    :cond_1
     add-int/2addr v0, v1
 
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
-    const-string v0, "OwnRow(scid="
+    const-string v0, "IdChatMessages(members="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lvc/h;->c:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", name="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 1
-    iget-object v1, p0, Lvc/h;->d:Ljava/lang/String;
-
     .line 2
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", image="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lvc/h;->e:Lcom/supercell/id/model/MyProfileImage;
+    iget-object v1, p0, Lvc/h;->a:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", gameNickname="
+    const-string v1, ", messages="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lvc/h;->f:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", score="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 3
-    iget-object v1, p0, Lvc/h;->g:Ljava/lang/Integer;
-
-    .line 4
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", scoreDigits="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lvc/h;->h:I
+    iget-object v1, p0, Lvc/h;->b:Ljava/util/List;
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Ltb/a;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

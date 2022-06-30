@@ -1,4 +1,4 @@
-.class public Lu/a;
+.class public final Lu/a;
 .super Lv/a;
 .source "ActivityCompat.java"
 
@@ -17,7 +17,47 @@
 
 
 # direct methods
-.method public static g(Landroid/app/Activity;)V
+.method public static h(Landroid/app/Activity;)V
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/app/Activity;->finishAfterTransition()V
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+
+    :goto_0
+    return-void
+.end method
+
+.method public static i(Landroid/app/Activity;)V
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/app/Activity;->postponeEnterTransition()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public static j(Landroid/app/Activity;)V
     .locals 2
 
     .line 1
@@ -40,7 +80,7 @@
     .line 3
     new-instance v0, Landroid/os/Handler;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getMainLooper()Landroid/os/Looper;
+    invoke-virtual {p0}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
 
@@ -57,7 +97,7 @@
 
     .line 5
     :cond_1
-    invoke-static {p0}, Lu/c;->b(Landroid/app/Activity;)Z
+    invoke-static {p0}, Lu/b;->b(Landroid/app/Activity;)Z
 
     move-result v0
 
@@ -71,7 +111,7 @@
     return-void
 .end method
 
-.method public static h(Landroid/app/Activity;[Ljava/lang/String;I)V
+.method public static k(Landroid/app/Activity;[Ljava/lang/String;I)V
     .locals 2
 
     .line 1
@@ -127,7 +167,45 @@
     return-void
 .end method
 
-.method public static i(Landroid/app/Activity;Ljava/lang/String;)Z
+.method public static l(Landroid/app/Activity;)V
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->setEnterSharedElementCallback(Landroid/app/SharedElementCallback;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public static m(Landroid/app/Activity;)V
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->setExitSharedElementCallback(Landroid/app/SharedElementCallback;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public static n(Landroid/app/Activity;Ljava/lang/String;)Z
     .locals 2
 
     .line 1
@@ -148,4 +226,21 @@
     const/4 p0, 0x0
 
     return p0
+.end method
+
+.method public static o(Landroid/app/Activity;)V
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/app/Activity;->startPostponedEnterTransition()V
+
+    :cond_0
+    return-void
 .end method

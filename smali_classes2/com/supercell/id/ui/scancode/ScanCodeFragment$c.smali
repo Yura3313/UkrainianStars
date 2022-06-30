@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/scancode/ScanCodeFragment$c;
-.super Lle/j;
+.super Ljava/lang/Object;
 .source "ScanCodeFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lrb/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/scancode/ScanCodeFragment;->o0()V
+    value = Lcom/supercell/id/ui/scancode/ScanCodeFragment;-><init>()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,68 +16,125 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lrc/e;",
-        "Lae/i;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
+.field public final synthetic a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/scancode/ScanCodeFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
-    iput-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$c;->g:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$c;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
 
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a(Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Le6/l;",
+            ">;)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public final b(Lrb/b;)V
+    .locals 11
 
     .line 1
-    check-cast p1, Lrc/e;
-
-    if-eqz p1, :cond_1
+    iget-object p1, p1, Lrb/b;->a:Le6/j;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$c;->g:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
+    iget-object v8, p1, Le6/j;->a:Ljava/lang/String;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    .line 3
+    sget-object p1, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->n0:Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;
+
+    const-string p1, "url"
+
+    invoke-static {v8, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    new-instance p1, Landroid/net/UrlQuerySanitizer;
+
+    invoke-direct {p1, v8}, Landroid/net/UrlQuerySanitizer;-><init>(Ljava/lang/String;)V
+
+    const-string v0, "p"
+
+    .line 5
+    invoke-virtual {p1, v0}, Landroid/net/UrlQuerySanitizer;->getValue(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 6
+    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$c;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
+
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
-    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->f()V
+    new-instance v10, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;
 
-    .line 3
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    sget-object v4, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v9, 0x1
+
+    move-object v0, v10
+
+    invoke-direct/range {v0 .. v9}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Lcom/supercell/id/model/IdPresenceStatus;ZLjava/lang/String;Z)V
+
+    invoke-virtual {p1, v10}, Lcom/supercell/id/ui/MainActivity;->C(Lcom/supercell/id/ui/BackStack$Entry;)V
+
+    goto :goto_0
+
+    .line 7
     :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
+    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$c;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
 
-    return-object p1
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    new-instance v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$c$a;
+
+    invoke-direct {v0, p0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$c$a;-><init>(Lcom/supercell/id/ui/scancode/ScanCodeFragment$c;)V
+
+    const-string v1, "scan_code"
+
+    invoke-virtual {p1, v1, v0}, Lcom/supercell/id/ui/MainActivity;->H(Ljava/lang/String;Lre/l;)V
 
     :cond_1
-    const-string p1, "it"
-
-    .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
+    :goto_0
+    return-void
 .end method

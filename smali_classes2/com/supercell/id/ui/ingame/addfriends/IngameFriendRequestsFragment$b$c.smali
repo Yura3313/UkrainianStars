@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b;->i(Lvd/k1$a;ILvd/j1;)V
+    value = Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b;->n(Lae/c2$a;ILae/b2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b;
+.field public final synthetic f:Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b;
 
-.field public final synthetic h:Lvd/j1;
+.field public final synthetic g:Lae/b2;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b;Lvd/j1;)V
+.method public constructor <init>(Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b;Lae/b2;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b$c;->g:Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b$c;->f:Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b$c;->h:Lvd/j1;
+    iput-object p2, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b$c;->g:Lae/b2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,95 +39,76 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 12
+    .locals 11
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b$c;->g:Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b;
+    iget-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b$c;->f:Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b;
 
     .line 2
-    iget-object p1, p1, Lvd/q;->f:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    new-instance v11, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;
+    new-instance v9, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b$c;->h:Lvd/j1;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$b$c;->g:Lae/b2;
 
-    move-object v2, v0
-
-    check-cast v2, Lxc/a;
+    check-cast v0, Lcd/a;
 
     .line 4
-    iget-object v2, v2, Lxc/a;->b:Lqc/i;
+    iget-object v2, v0, Lcd/a;->b:Lvc/i;
 
     .line 5
-    iget-object v2, v2, Lqc/i;->a:Lqc/d0;
+    iget-object v3, v2, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 6
-    move-object v3, v0
-
-    check-cast v3, Lxc/a;
+    iget-object v4, v2, Lvc/i;->b:Ljava/lang/String;
 
     .line 7
-    iget-object v3, v3, Lxc/a;->b:Lqc/i;
+    iget-object v5, v2, Lvc/i;->c:Lcom/supercell/id/model/ProfileImage;
 
     .line 8
-    iget-object v3, v3, Lqc/i;->b:Ljava/lang/String;
+    iget-object v6, v0, Lcd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    const/4 v7, 0x0
 
     .line 9
-    move-object v4, v0
+    iget-boolean v8, v2, Lvc/i;->g:Z
 
-    check-cast v4, Lxc/a;
+    const/4 v10, 0x0
+
+    move-object v0, v9
+
+    move-object v2, v3
+
+    move-object v3, v4
+
+    move-object v4, v5
+
+    move-object v5, v6
+
+    move-object v6, v7
+
+    move v7, v8
+
+    move-object v8, v10
 
     .line 10
-    iget-object v4, v4, Lxc/a;->b:Lqc/i;
+    invoke-direct/range {v0 .. v8}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Lcom/supercell/id/model/IdPresenceStatus;ZLjava/lang/String;)V
 
-    .line 11
-    iget-object v4, v4, Lqc/i;->c:Lcom/supercell/id/model/ProfileImage;
-
-    .line 12
-    move-object v5, v0
-
-    check-cast v5, Lxc/a;
-
-    .line 13
-    iget-object v5, v5, Lxc/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
-
-    const/4 v6, 0x0
-
-    .line 14
-    check-cast v0, Lxc/a;
-
-    .line 15
-    iget-object v0, v0, Lxc/a;->b:Lqc/i;
-
-    .line 16
-    iget-boolean v7, v0, Lqc/i;->g:Z
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    const/16 v10, 0x100
-
-    move-object v0, v11
-
-    .line 17
-    invoke-direct/range {v0 .. v10}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Lqc/d0;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Lcom/supercell/id/model/IdPresenceStatus;ZLjava/lang/String;ZI)V
-
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
     const/4 v0, 0x0
 
-    .line 18
-    invoke-virtual {p1, v11, v0}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
+    .line 11
+    invoke-virtual {p1, v9, v0}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
 
     :cond_0
     return-void

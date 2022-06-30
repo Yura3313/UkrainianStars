@@ -19,10 +19,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/common/api/internal/BasePendingResult;La2/v0;)V
+.method public constructor <init>(Lcom/google/android/gms/common/api/internal/BasePendingResult;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/gms/common/api/internal/BasePendingResult$b;->a:Lcom/google/android/gms/common/api/internal/BasePendingResult;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,10 +43,10 @@
     iget-object v0, p0, Lcom/google/android/gms/common/api/internal/BasePendingResult$b;->a:Lcom/google/android/gms/common/api/internal/BasePendingResult;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/gms/common/api/internal/BasePendingResult;->f:Lz1/g;
+    iget-object v0, v0, Lcom/google/android/gms/common/api/internal/BasePendingResult;->f:La2/g;
 
     .line 3
-    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->h(Lz1/g;)V
+    invoke-static {v0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->h(La2/g;)V
 
     .line 4
     invoke-super {p0}, Ljava/lang/Object;->finalize()V

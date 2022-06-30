@@ -1,4 +1,4 @@
-.class public Ll0/a$d;
+.class public final Ll0/a$d;
 .super Ll0/a$c;
 .source "AnimationHandler.java"
 
@@ -17,7 +17,7 @@
 # instance fields
 .field public final b:Landroid/view/Choreographer;
 
-.field public final c:Landroid/view/Choreographer$FrameCallback;
+.field public final c:Ll0/a$d$a;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {p1, p0}, Ll0/a$d$a;-><init>(Ll0/a$d;)V
 
-    iput-object p1, p0, Ll0/a$d;->c:Landroid/view/Choreographer$FrameCallback;
+    iput-object p1, p0, Ll0/a$d;->c:Ll0/a$d$a;
 
     return-void
 .end method

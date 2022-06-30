@@ -12,19 +12,18 @@
 
 .field public static d:Lcom/supercell/titan/KeyboardDialog;
 
-.field public static final e:Landroid/text/InputFilter;
+.field public static final e:Lcom/supercell/titan/VirtualKeyboardHandler$b;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/supercell/titan/VirtualKeyboardHandler$b;
 
     invoke-direct {v0}, Lcom/supercell/titan/VirtualKeyboardHandler$b;-><init>()V
 
-    sput-object v0, Lcom/supercell/titan/VirtualKeyboardHandler;->e:Landroid/text/InputFilter;
+    sput-object v0, Lcom/supercell/titan/VirtualKeyboardHandler;->e:Lcom/supercell/titan/VirtualKeyboardHandler$b;
 
     return-void
 .end method
@@ -32,7 +31,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +42,6 @@
 .method public static getKeyboardSize(I)F
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/supercell/titan/KeyboardDialog;->getKeyboardSize(I)F
 
     move-result p0
@@ -67,11 +64,11 @@
 
     move-result-object v0
 
-    new-instance v2, Lcom/supercell/titan/n0;
+    new-instance v2, Lcom/supercell/titan/m0;
 
     const/4 v3, 0x1
 
-    invoke-direct {v2, v1, v3}, Lcom/supercell/titan/n0;-><init>(ZZ)V
+    invoke-direct {v2, v1, v3}, Lcom/supercell/titan/m0;-><init>(ZZ)V
 
     invoke-virtual {v0, v2}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -100,9 +97,9 @@
 .method public static setMaxTextLength(II)V
     .locals 4
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     if-nez p1, :cond_0
 
@@ -129,20 +126,17 @@
 
     invoke-direct {v3, p0}, Landroid/text/InputFilter$LengthFilter;-><init>(I)V
 
-    aput-object v3, v2, v1
+    aput-object v3, v2, v0
 
-    goto :goto_1
+    const/4 v0, 0x1
 
     :cond_2
-    const/4 v0, 0x0
-
-    :goto_1
     const p0, 0x12000006
 
     if-nez p1, :cond_3
 
     .line 3
-    sget-object p0, Lcom/supercell/titan/VirtualKeyboardHandler;->e:Landroid/text/InputFilter;
+    sget-object p0, Lcom/supercell/titan/VirtualKeyboardHandler;->e:Lcom/supercell/titan/VirtualKeyboardHandler$b;
 
     aput-object p0, v2, v0
 
@@ -150,19 +144,19 @@
 
     .line 4
     :cond_3
-    sput-object v2, Lcom/supercell/titan/KeyboardDialog;->n:[Landroid/text/InputFilter;
+    sput-object v2, Lcom/supercell/titan/KeyboardDialog;->m:[Landroid/text/InputFilter;
 
     .line 5
-    sget-object p1, Lcom/supercell/titan/KeyboardDialog;->p:Lcom/supercell/titan/KeyboardDialog;
+    sget-object p1, Lcom/supercell/titan/KeyboardDialog;->o:Lcom/supercell/titan/KeyboardDialog;
 
     if-eqz p1, :cond_4
 
-    iget-object p1, p1, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
+    iget-object p1, p1, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
 
     if-eqz p1, :cond_4
 
     .line 6
-    invoke-virtual {p1, v2}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {p1, v2}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
 
     .line 7
     :cond_4
@@ -185,7 +179,7 @@
     .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 2
-    sget-object p0, Lcom/supercell/titan/KeyboardDialog;->p:Lcom/supercell/titan/KeyboardDialog;
+    sget-object p0, Lcom/supercell/titan/KeyboardDialog;->o:Lcom/supercell/titan/KeyboardDialog;
 
     if-eqz p0, :cond_0
 
@@ -201,9 +195,9 @@
 
     move-result-object p0
 
-    new-instance v1, Lcom/supercell/titan/j;
+    new-instance v1, Lcom/supercell/titan/h;
 
-    invoke-direct {v1, v0}, Lcom/supercell/titan/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/supercell/titan/h;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -211,7 +205,7 @@
 
     .line 5
     :cond_0
-    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->m:Ljava/lang/String;
+    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->l:Ljava/lang/String;
 
     :cond_1
     :goto_0

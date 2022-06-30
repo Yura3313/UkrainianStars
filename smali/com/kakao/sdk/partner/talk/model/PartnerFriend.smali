@@ -64,13 +64,14 @@
 .method public constructor <init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;Ljava/lang/Boolean;Lcom/kakao/sdk/partner/talk/model/FriendRelation;Ljava/lang/String;Ljava/lang/Boolean;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "uuid"
 
-    if-eqz p2, :cond_1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p3, :cond_0
+    const-string v0, "profileNickname"
 
-    .line 1
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->id:Ljava/lang/Long;
@@ -94,21 +95,6 @@
     iput-object p10, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->msgAllowed:Ljava/lang/Boolean;
 
     return-void
-
-    :cond_0
-    const-string p1, "profileNickname"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "uuid"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/partner/talk/model/PartnerFriend;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;Ljava/lang/Boolean;Lcom/kakao/sdk/partner/talk/model/FriendRelation;Ljava/lang/String;Ljava/lang/Boolean;ILjava/lang/Object;)Lcom/kakao/sdk/partner/talk/model/PartnerFriend;
@@ -350,21 +336,23 @@
 .method public final copy(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;Ljava/lang/Boolean;Lcom/kakao/sdk/partner/talk/model/FriendRelation;Ljava/lang/String;Ljava/lang/Boolean;)Lcom/kakao/sdk/partner/talk/model/PartnerFriend;
     .locals 12
 
-    const/4 v0, 0x0
+    const-string v0, "uuid"
 
-    if-eqz p2, :cond_1
+    move-object v3, p2
 
-    if-eqz p3, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "profileNickname"
+
+    move-object v4, p3
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;
 
     move-object v1, v0
 
     move-object v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
 
     move-object/from16 v5, p4
 
@@ -383,21 +371,6 @@
     invoke-direct/range {v1 .. v11}, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;-><init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;Ljava/lang/Boolean;Lcom/kakao/sdk/partner/talk/model/FriendRelation;Ljava/lang/String;Ljava/lang/Boolean;)V
 
     return-object v0
-
-    :cond_0
-    const-string v1, "profileNickname"
-
-    .line 1
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string v1, "uuid"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -427,7 +400,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->id:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -437,7 +410,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->uuid:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -447,7 +420,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->profileNickname:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -457,7 +430,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->profileThumbnailImage:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -483,7 +456,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->serviceUserId:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -493,7 +466,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->registeredToApp:Ljava/lang/Boolean;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -503,7 +476,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->relation:Lcom/kakao/sdk/partner/talk/model/FriendRelation;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -513,7 +486,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->talkOs:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -523,7 +496,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->msgAllowed:Ljava/lang/Boolean;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -542,7 +515,6 @@
 .method public final getFavorite()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->favorite:Z
 
     return v0
@@ -551,7 +523,6 @@
 .method public final getId()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->id:Ljava/lang/Long;
 
     return-object v0
@@ -560,7 +531,6 @@
 .method public final getMsgAllowed()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->msgAllowed:Ljava/lang/Boolean;
 
     return-object v0
@@ -569,7 +539,6 @@
 .method public final getProfileNickname()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->profileNickname:Ljava/lang/String;
 
     return-object v0
@@ -578,7 +547,6 @@
 .method public final getProfileThumbnailImage()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->profileThumbnailImage:Ljava/lang/String;
 
     return-object v0
@@ -587,7 +555,6 @@
 .method public final getRegisteredToApp()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->registeredToApp:Ljava/lang/Boolean;
 
     return-object v0
@@ -596,7 +563,6 @@
 .method public final getRelation()Lcom/kakao/sdk/partner/talk/model/FriendRelation;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->relation:Lcom/kakao/sdk/partner/talk/model/FriendRelation;
 
     return-object v0
@@ -605,7 +571,6 @@
 .method public final getServiceUserId()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->serviceUserId:Ljava/lang/Long;
 
     return-object v0
@@ -614,7 +579,6 @@
 .method public final getTalkOs()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->talkOs:Ljava/lang/String;
 
     return-object v0
@@ -623,7 +587,6 @@
 .method public final getUuid()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->uuid:Ljava/lang/String;
 
     return-object v0
@@ -806,10 +769,12 @@
 
     const-string v0, "PartnerFriend(id="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->id:Ljava/lang/Long;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -900,7 +865,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
-    if-eqz p1, :cond_5
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->id:Ljava/lang/Long;
 
@@ -962,10 +929,12 @@
 
     if-eqz p2, :cond_2
 
-    invoke-static {p1, v0, p2}, Lj3/ap0;->e(Landroid/os/Parcel;ILjava/lang/Boolean;)V
+    .line 1
+    invoke-static {p1, v0, p2}, Lk3/vo0;->c(Landroid/os/Parcel;ILjava/lang/Boolean;)V
 
     goto :goto_2
 
+    .line 2
     :cond_2
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -992,23 +961,15 @@
 
     if-eqz p2, :cond_4
 
-    invoke-static {p1, v0, p2}, Lj3/ap0;->e(Landroid/os/Parcel;ILjava/lang/Boolean;)V
+    .line 3
+    invoke-static {p1, v0, p2}, Lk3/vo0;->c(Landroid/os/Parcel;ILjava/lang/Boolean;)V
 
     goto :goto_4
 
+    .line 4
     :cond_4
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_4
     return-void
-
-    :cond_5
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

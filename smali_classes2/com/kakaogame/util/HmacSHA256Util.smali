@@ -79,7 +79,6 @@
 
     aput-object v2, v0, v1
 
-    .line 1
     sput-object v0, Lcom/kakaogame/util/HmacSHA256Util;->secrets:[Ljava/lang/String;
 
     return-void
@@ -88,7 +87,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

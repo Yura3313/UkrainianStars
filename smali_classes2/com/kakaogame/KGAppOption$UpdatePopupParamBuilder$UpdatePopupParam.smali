@@ -27,7 +27,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/KGObject;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -40,7 +39,6 @@
 
     const-string v0, "laterButton"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -55,7 +53,6 @@
 
     const-string v0, "marketUrl"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -70,7 +67,6 @@
 
     const-string v0, "titleMessage"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -85,7 +81,6 @@
 
     const-string v0, "updateButton"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0

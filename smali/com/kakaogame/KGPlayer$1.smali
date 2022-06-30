@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGPlayer$1;->val$callback:Lcom/kakaogame/KGResultCallback;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -101,6 +100,7 @@
 
     move-result-object v0
 
+    .line 4
     invoke-virtual {p1}, Lcom/kakaogame/KGResult;->getCode()I
 
     move-result v1
@@ -115,14 +115,14 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
+    .line 5
     iget-object v0, p0, Lcom/kakaogame/KGPlayer$1;->val$callback:Lcom/kakaogame/KGResultCallback;
 
     invoke-interface {v0, p1}, Lcom/kakaogame/KGResultCallback;->onResult(Lcom/kakaogame/KGResult;)V
 
     const-string v0, "loadFriendPlayers"
 
-    .line 5
+    .line 6
     invoke-static {v1, v0, p1}, Lcom/kakaogame/log/FirebaseEvent;->sendEvent(Ljava/lang/String;Ljava/lang/String;Lcom/kakaogame/KGResult;)V
 
     :cond_0

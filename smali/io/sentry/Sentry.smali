@@ -58,7 +58,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -135,7 +134,6 @@
 .method public static bindClient(Lio/sentry/ISentryClient;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -238,7 +236,6 @@
 .method public static captureUserFeedback(Lio/sentry/UserFeedback;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -251,7 +248,6 @@
 .method public static clearBreadcrumbs()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -307,7 +303,6 @@
 .method public static configureScope(Lio/sentry/ScopeCallback;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -320,7 +315,6 @@
 .method public static endSession()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -333,7 +327,6 @@
 .method public static flush(J)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -387,7 +380,6 @@
 .method public static getLastEventId()Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -402,7 +394,6 @@
 .method public static getSpan()Lio/sentry/ISpan;
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -418,7 +409,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lio/sentry/m;->a:Lio/sentry/m;
+    sget-object v0, Landroid/support/v4/media/b;->a:Landroid/support/v4/media/b;
 
     const/4 v1, 0x0
 
@@ -896,7 +887,6 @@
 .method public static isCrashedLastRun()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -911,7 +901,6 @@
 .method public static isEnabled()Z
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -928,7 +917,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setEnableExternalConfiguration(Z)V
 
     return-void
@@ -937,7 +925,6 @@
 .method private static synthetic lambda$init$1(Ljava/lang/String;Lio/sentry/SentryOptions;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1, p0}, Lio/sentry/SentryOptions;->setDsn(Ljava/lang/String;)V
 
     return-void
@@ -984,7 +971,6 @@
 .method public static removeExtra(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -997,7 +983,6 @@
 .method public static removeTag(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -1012,7 +997,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     sget-object v0, Lio/sentry/Sentry;->currentHub:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0, p0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
@@ -1023,7 +1007,6 @@
 .method public static setExtra(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -1044,7 +1027,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -1057,7 +1039,6 @@
 .method public static setLevel(Lio/sentry/SentryLevel;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -1070,7 +1051,6 @@
 .method public static setTag(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -1083,7 +1063,6 @@
 .method public static setTransaction(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -1096,7 +1075,6 @@
 .method public static setUser(Lio/sentry/protocol/User;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -1109,7 +1087,6 @@
 .method public static startSession()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -1322,7 +1299,6 @@
 .method public static traceHeaders()Lio/sentry/SentryTraceHeader;
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -1337,7 +1313,6 @@
 .method public static withScope(Lio/sentry/ScopeCallback;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0

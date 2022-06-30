@@ -27,7 +27,6 @@
 .method public constructor <init>(ILcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/kakao/KakaoGameAPI$10;->val$eventId:I
 
     iput-object p2, p0, Lcom/kakaogame/kakao/KakaoGameAPI$10;->val$requestLock:Lcom/kakaogame/util/MutexLock;
@@ -61,10 +60,12 @@
 
     const-string v1, "/common/v1/invitation_events/"
 
+    .line 2
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 3
     iget v2, p0, Lcom/kakaogame/kakao/KakaoGameAPI$10;->val$eventId:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -81,17 +82,17 @@
 
     move-result-object v0
 
-    .line 2
+    .line 4
     invoke-virtual {v0}, Landroid/net/Uri$Builder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3
+    .line 5
     invoke-static {}, Lcom/kakaogame/kakao/KakaoGameAPI;->makeHeader()Ljava/util/Map;
 
     move-result-object v1
 
-    .line 4
+    .line 6
     sget-object v2, Lcom/kakaogame/idp/KGKakao2Auth;->context:Landroid/content/Context;
 
     sget-object v3, Lcom/kakaogame/server/http/HttpService$HttpContentType;->STRING:Lcom/kakaogame/server/http/HttpService$HttpContentType;
@@ -100,7 +101,7 @@
 
     move-result-object v0
 
-    .line 5
+    .line 7
     invoke-virtual {v0}, Lcom/kakaogame/server/KeyBaseResult;->getCode()I
 
     move-result v1
@@ -109,12 +110,12 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 6
+    .line 8
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 7
+    .line 9
     :try_start_0
     invoke-virtual {v0}, Lcom/kakaogame/server/KeyBaseResult;->getContent()Ljava/lang/Object;
 
@@ -126,12 +127,12 @@
 
     move-result-object v0
 
-    .line 8
+    .line 10
     check-cast v0, Lcom/kakaogame/util/json/JSONObject;
 
     const-string v2, "invitation_states"
 
-    invoke-virtual {v0, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -139,7 +140,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 9
+    .line 11
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -157,7 +158,7 @@
 
     check-cast v2, Lcom/kakaogame/util/json/JSONObject;
 
-    .line 10
+    .line 12
     new-instance v3, Lorg/json/JSONObject;
 
     invoke-virtual {v2}, Lcom/kakaogame/util/json/JSONObject;->toString()Ljava/lang/String;
@@ -166,7 +167,7 @@
 
     invoke-direct {v3, v2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 11
+    .line 13
     new-instance v2, Lcom/kakaogame/game/model/InvitationState;
 
     invoke-direct {v2, v3}, Lcom/kakaogame/game/model/InvitationState;-><init>(Lorg/json/JSONObject;)V
@@ -186,22 +187,22 @@
     :catch_1
     move-exception v0
 
-    .line 12
+    .line 14
     :goto_1
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 13
+    .line 15
     :cond_0
     invoke-static {v1}, Lcom/kakaogame/KGResult;->getSuccessResult(Ljava/lang/Object;)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
-    .line 14
+    .line 16
     iget-object v1, p0, Lcom/kakaogame/kakao/KakaoGameAPI$10;->val$requestLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {v1, v0}, Lcom/kakaogame/util/MutexLock;->setContent(Ljava/lang/Object;)V
 
-    .line 15
+    .line 17
     iget-object v0, p0, Lcom/kakaogame/kakao/KakaoGameAPI$10;->val$requestLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {v0}, Lcom/kakaogame/util/MutexLock;->unlock()V
@@ -211,7 +212,7 @@
     :cond_1
     const/16 v1, 0xfa1
 
-    .line 16
+    .line 18
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -240,12 +241,12 @@
 
     move-result-object v0
 
-    .line 17
+    .line 19
     iget-object v1, p0, Lcom/kakaogame/kakao/KakaoGameAPI$10;->val$requestLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {v1, v0}, Lcom/kakaogame/util/MutexLock;->setContent(Ljava/lang/Object;)V
 
-    .line 18
+    .line 20
     iget-object v0, p0, Lcom/kakaogame/kakao/KakaoGameAPI$10;->val$requestLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {v0}, Lcom/kakaogame/util/MutexLock;->unlock()V

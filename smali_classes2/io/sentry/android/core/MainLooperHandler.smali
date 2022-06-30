@@ -45,7 +45,6 @@
 .method public getThread()Ljava/lang/Thread;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/MainLooperHandler;->handler:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
@@ -62,7 +61,6 @@
 .method public post(Ljava/lang/Runnable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/MainLooperHandler;->handler:Landroid/os/Handler;
 
     invoke-virtual {v0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z

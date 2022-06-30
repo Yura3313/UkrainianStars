@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/WebDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog$6;->this$0:Lcom/kakaogame/web/WebDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -54,6 +53,7 @@
     :cond_0
     const-string p1, "false"
 
+    .line 2
     :goto_0
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

@@ -66,12 +66,24 @@
     .line 7
     iput-object v1, p0, Lcom/kakaogame/manager/Version;->buildType:Ljava/lang/String;
 
-    const-string v1, "Version: "
+    .line 8
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Version: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
 
     const-string v2, "Version"
 
-    .line 8
-    invoke-static {v1, p1, v2}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     :try_start_0
     const-string v1, "\\-"
@@ -234,7 +246,7 @@
     move-exception p1
 
     .line 27
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -421,7 +433,6 @@
 .method public getBuildType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/manager/Version;->buildType:Ljava/lang/String;
 
     return-object v0
@@ -430,7 +441,6 @@
 .method public getMaintenanceVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/manager/Version;->maintenanceVersion:I
 
     return v0
@@ -439,7 +449,6 @@
 .method public getMajorVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/manager/Version;->majorVersion:I
 
     return v0
@@ -448,7 +457,6 @@
 .method public getMinorVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/manager/Version;->minorVersion:I
 
     return v0
@@ -457,7 +465,6 @@
 .method public getRevision()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/manager/Version;->revision:I
 
     return v0
@@ -466,7 +473,6 @@
 .method public getVersionString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/manager/Version;->version:Ljava/lang/String;
 
     return-object v0
@@ -482,6 +488,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakaogame/manager/Version;->version:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -526,7 +533,8 @@
 
     const-string v2, "]"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

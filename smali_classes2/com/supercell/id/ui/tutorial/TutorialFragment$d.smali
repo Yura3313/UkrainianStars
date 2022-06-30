@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/tutorial/TutorialFragment$d;
-.super Landroidx/fragment/app/c0;
+.super Landroidx/fragment/app/y;
 .source "TutorialFragment.kt"
 
 
@@ -15,12 +15,12 @@
 
 
 # instance fields
-.field public final h:[Lke/a;
+.field public final h:[Lre/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[",
-            "Lke/a<",
-            "Lsd/d;",
+            "Lre/a<",
+            "Lxd/d;",
             ">;"
         }
     .end annotation
@@ -32,75 +32,73 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/fragment/app/c0;-><init>(Landroidx/fragment/app/FragmentManager;)V
+    invoke-direct {p0, p1}, Landroidx/fragment/app/y;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
     const/4 p1, 0x5
 
-    new-array p1, p1, [Lke/a;
-
-    const/4 v0, 0x0
+    new-array p1, p1, [Lre/a;
 
     .line 2
-    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
+    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
 
-    aput-object v1, p1, v0
+    const/4 v1, 0x0
 
-    const/4 v0, 0x1
+    aput-object v0, p1, v1
 
     .line 3
-    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
+    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
 
-    aput-object v1, p1, v0
+    const/4 v1, 0x1
 
-    const/4 v0, 0x2
+    aput-object v0, p1, v1
 
     .line 4
-    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;
+    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;
 
-    aput-object v1, p1, v0
+    const/4 v1, 0x2
 
-    const/4 v0, 0x3
+    aput-object v0, p1, v1
 
     .line 5
-    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;
+    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;
 
-    aput-object v1, p1, v0
+    const/4 v1, 0x3
 
-    const/4 v0, 0x4
+    aput-object v0, p1, v1
 
     .line 6
-    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;
+    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;
 
-    aput-object v1, p1, v0
+    const/4 v1, 0x4
+
+    aput-object v0, p1, v1
 
     .line 7
-    iput-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d;->h:[Lke/a;
+    iput-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d;->h:[Lre/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public e()I
+.method public final e()I
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d;->h:[Lke/a;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d;->h:[Lre/a;
 
     array-length v0, v0
 
     return v0
 .end method
 
-.method public u(I)Landroidx/fragment/app/Fragment;
+.method public final u(I)Landroidx/fragment/app/Fragment;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d;->h:[Lke/a;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d;->h:[Lre/a;
 
     aget-object p1, v0, p1
 
-    invoke-interface {p1}, Lke/a;->invoke()Ljava/lang/Object;
+    invoke-interface {p1}, Lre/a;->invoke()Ljava/lang/Object;
 
     move-result-object p1
 

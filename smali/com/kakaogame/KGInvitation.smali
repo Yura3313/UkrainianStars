@@ -13,7 +13,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -22,7 +21,6 @@
 .method public static synthetic access$000(Landroid/app/Activity;)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGInvitation;->showShareViewOnActivity(Landroid/app/Activity;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -33,7 +31,6 @@
 .method public static synthetic access$100(Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/web/WebDialog$Settings;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/kakaogame/KGInvitation;->showInAppWebView(Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/web/WebDialog$Settings;Lcom/kakaogame/KGResultCallback;)V
 
     return-void
@@ -134,7 +131,6 @@
 .method public static initialize()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/KGInvitation;->initInterfaceBroker()V
 
     return-void
@@ -426,7 +422,7 @@
     move-exception p0
 
     .line 10
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -435,7 +431,7 @@
     const/16 p1, 0xfa1
 
     .line 11
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -617,7 +613,7 @@
     move-exception p0
 
     .line 19
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -626,7 +622,7 @@
     const/16 v0, 0xfa1
 
     .line 20
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -840,7 +836,7 @@
     const/16 v1, 0xfa1
 
     .line 19
-    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, v1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 

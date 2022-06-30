@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/auth/AuthImpl$2;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/AuthImpl$2$1;->this$0:Lcom/kakaogame/auth/AuthImpl$2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public run()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/push/PushService;->register()V
 
     return-void

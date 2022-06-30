@@ -27,7 +27,6 @@
 .method public constructor <init>(Ljava/util/Map;Ljava/util/Map;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/log/ReactiveLogManager$1;->val$header:Ljava/util/Map;
 
     iput-object p2, p0, Lcom/kakaogame/log/ReactiveLogManager$1;->val$body:Ljava/util/Map;
@@ -58,7 +57,7 @@
     const-string v2, "ReactiveLogManager"
 
     .line 2
-    invoke-static {v1, v0, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v1, v0, v2}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     return-void
 .end method

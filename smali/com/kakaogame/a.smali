@@ -4,18 +4,28 @@
 
 
 # direct methods
-.method public static a(Lcom/kakaogame/KGResult;Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/util/LinkedHashMap;)Lcom/kakaogame/KGResult;
-    .locals 0
+.method public static a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    .locals 1
 
-    invoke-virtual {p0}, Lcom/kakaogame/KGResult;->getContent()Ljava/lang/Object;
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 3
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 4
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-interface {p1, p2, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 6
+    invoke-static {p2, p0}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {p3}, Lcom/kakaogame/KGResult;->getSuccessResult(Ljava/lang/Object;)Lcom/kakaogame/KGResult;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

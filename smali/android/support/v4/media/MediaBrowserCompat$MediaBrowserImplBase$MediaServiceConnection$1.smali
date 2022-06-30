@@ -29,7 +29,6 @@
 .method public constructor <init>(Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection;Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection$1;->this$1:Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection;
 
     iput-object p2, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection$1;->val$name:Landroid/content/ComponentName;
@@ -54,11 +53,11 @@
     .line 2
     iget-object v1, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection$1;->val$name:Landroid/content/ComponentName;
 
-    invoke-static {v1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     iget-object v1, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection$1;->val$binder:Landroid/os/IBinder;
 
-    invoke-static {v1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 3
     iget-object v1, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection$1;->this$1:Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection;
@@ -168,7 +167,7 @@
 
     iget-object v0, v0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceComponent:Landroid/content/ComponentName;
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 12
     sget-boolean v0, Landroid/support/v4/media/MediaBrowserCompat;->DEBUG:Z

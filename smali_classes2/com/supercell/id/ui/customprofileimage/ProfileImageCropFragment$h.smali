@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$h;
-.super Lle/j;
+.super Lse/h;
 .source "ProfileImageCropFragment.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
+        "Lse/h;",
+        "Lre/a<",
         "Landroid/view/ScaleGestureDetector;",
         ">;"
     }
@@ -27,31 +27,30 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$h;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$h;->f:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
+.method public final invoke()Ljava/lang/Object;
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/view/ScaleGestureDetector;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$h;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$h;->f:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
     invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
 

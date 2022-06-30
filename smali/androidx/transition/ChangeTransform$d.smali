@@ -1,4 +1,4 @@
-.class public Landroidx/transition/ChangeTransform$d;
+.class public final Landroidx/transition/ChangeTransform$d;
 .super Ljava/lang/Object;
 .source "ChangeTransform.java"
 

@@ -1,14 +1,14 @@
 .class public final Lnd/b$b;
-.super Lle/j;
-.source "FriendsFragment.kt"
+.super Lse/h;
+.source "MessagesTabFriendsFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lnd/b;->d1()V
+    value = Lnd/b;-><init>()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,201 +18,177 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lqc/d0;",
-        "Lse/f0<",
+        "Lse/h;",
+        "Lre/l<",
+        "Lae/m<",
         "+",
-        "Ljava/util/List<",
+        "Lvc/j;",
         "+",
-        "Lqc/i;",
-        ">;>;>;"
+        "Lcom/supercell/id/util/NormalizedError;",
+        ">;",
+        "Lie/h;",
+        ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lnd/b$b;
+# instance fields
+.field public final synthetic f:Lnd/b;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lnd/b;)V
+    .locals 0
 
-    new-instance v0, Lnd/b$b;
+    iput-object p1, p0, Lnd/b$b;->f:Lnd/b;
 
-    invoke-direct {v0}, Lnd/b$b;-><init>()V
+    const/4 p1, 0x1
 
-    sput-object v0, Lnd/b$b;->g:Lnd/b$b;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    check-cast p1, Lqc/d0;
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
+    check-cast p1, Lae/m;
 
     .line 2
-    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    iget-object v0, p0, Lnd/b$b;->f:Lnd/b;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    const/4 v1, 0x0
 
-    move-result-object v1
+    if-eqz p1, :cond_6
 
     .line 3
-    iget-object v1, v1, Lvd/r;->o:Lmc/f0;
+    instance-of v2, p1, Lae/m$a;
+
+    if-eqz v2, :cond_4
+
+    check-cast p1, Lae/m$a;
 
     .line 4
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v2, 0x3
-
-    new-array v2, v2, [Lae/d;
-
-    const/4 v3, 0x0
+    iget-object p1, p1, Lae/m$a;->a:Ljava/lang/Object;
 
     .line 5
-    invoke-virtual {p1}, Lqc/d0;->b()Ljava/lang/String;
-
-    move-result-object v4
+    check-cast p1, Lvc/j;
 
     .line 6
-    new-instance v5, Lae/d;
-
-    const-string v6, "scid"
-
-    invoke-direct {v5, v6, v4}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v5, v2, v3
-
-    const/4 v3, 0x1
+    iget-object p1, p1, Lvc/j;->c:Ljava/util/List;
 
     .line 7
-    invoke-virtual {p1}, Lqc/d0;->a()Lqc/e;
+    new-instance v2, Ljava/util/ArrayList;
 
-    move-result-object v4
-
-    if-eqz v4, :cond_0
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 8
-    iget-object v4, v4, Lqc/e;->a:Ljava/lang/String;
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :cond_0
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 9
+    check-cast v3, Lvc/i;
+
+    .line 10
+    iget-object v4, v3, Lvc/i;->e:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    .line 11
+    instance-of v5, v4, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    if-nez v5, :cond_1
+
+    move-object v4, v1
+
+    :cond_1
+    check-cast v4, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    if-eqz v4, :cond_2
+
+    new-instance v5, Lnd/a;
+
+    invoke-direct {v5, v3, v4}, Lnd/a;-><init>(Lvc/i;Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;)V
+
+    goto :goto_1
+
+    :cond_2
+    move-object v5, v1
+
+    :goto_1
+    if-eqz v5, :cond_0
+
+    .line 12
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    :cond_0
-    move-object v4, v0
+    .line 13
+    :cond_3
+    new-instance p1, Lnd/g;
 
-    .line 9
-    :goto_0
-    new-instance v5, Lae/d;
+    invoke-direct {p1}, Lnd/g;-><init>()V
 
-    const-string v6, "appAccount"
-
-    invoke-direct {v5, v6, v4}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v5, v2, v3
-
-    const/4 v3, 0x2
-
-    .line 10
-    invoke-virtual {p1}, Lqc/d0;->a()Lqc/e;
+    invoke-static {v2, p1}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    .line 11
-    iget-object p1, p1, Lqc/e;->b:Lqc/d;
-
-    if-eqz p1, :cond_1
-
-    .line 12
-    invoke-virtual {p1}, Lqc/d;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 13
-    :cond_1
-    new-instance p1, Lae/d;
-
-    const-string v4, "app"
-
-    invoke-direct {p1, v4, v0}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object p1, v2, v3
 
     .line 14
-    invoke-static {v2}, Lee/d;->i([Lae/d;)Ljava/util/Map;
+    new-instance v1, Lae/m$a;
 
-    move-result-object v4
+    invoke-direct {v1, p1}, Lae/m$a;-><init>(Ljava/lang/Object;)V
 
-    const/4 v5, 0x0
-
-    const/4 v6, 0x4
-
-    const/4 v7, 0x0
-
-    const-string v3, "v3/friends.list"
-
-    move-object v2, v1
+    goto :goto_2
 
     .line 15
-    invoke-static/range {v2 .. v7}, Lmc/f;->e(Lmc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lse/f0;
+    :cond_4
+    instance-of v1, p1, Lae/m$b;
 
-    move-result-object p1
+    if-eqz v1, :cond_5
+
+    new-instance v1, Lae/m$b;
+
+    check-cast p1, Lae/m$b;
 
     .line 16
-    new-instance v0, Lmc/o0;
-
-    invoke-direct {v0, v1}, Lmc/o0;-><init>(Lmc/f0;)V
-
-    invoke-static {p1, v0}, Lvd/e1;->o(Lse/f0;Lke/l;)Lse/f0;
-
-    move-result-object p1
+    iget-object p1, p1, Lae/m$b;->a:Ljava/lang/Object;
 
     .line 17
-    sget-object v0, Lmc/p0;->g:Lmc/p0;
+    invoke-direct {v1, p1}, Lae/m$b;-><init>(Ljava/lang/Object;)V
 
-    invoke-static {p1, v0}, Lvd/e1;->o(Lse/f0;Lke/l;)Lse/f0;
+    goto :goto_2
 
-    move-result-object p1
+    :cond_5
+    new-instance p1, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {p1}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    throw p1
 
     .line 18
-    new-instance v0, Lmc/q0;
-
-    sget-object v1, Lqc/i;->i:Lqc/i$a;
-
-    invoke-direct {v0, v1}, Lmc/q0;-><init>(Lqc/i$a;)V
-
-    invoke-static {p1, v0}, Lvd/e1;->o(Lse/f0;Lke/l;)Lse/f0;
-
-    move-result-object p1
-
-    return-object p1
-
-    :cond_2
-    const-string p1, "it"
+    :cond_6
+    :goto_2
+    iput-object v1, v0, Lnd/b;->c0:Lae/m;
 
     .line 19
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-virtual {v0}, Lnd/b;->W0()V
 
-    throw v0
+    .line 20
+    sget-object p1, Lie/h;->a:Lie/h;
+
+    return-object p1
 .end method

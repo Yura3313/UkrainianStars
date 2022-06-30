@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/tutorial/TutorialFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/tutorial/TutorialFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$f;->a:Lcom/supercell/id/ui/tutorial/TutorialFragment;
 
     invoke-direct {p0}, Landroidx/viewpager/widget/ViewPager$k;-><init>()V
@@ -37,7 +36,7 @@
 
 
 # virtual methods
-.method public a(IFI)V
+.method public final a(IFI)V
     .locals 8
 
     .line 1
@@ -45,7 +44,7 @@
 
     sget v0, Lcom/supercell/id/R$id;->imagePager:I
 
-    invoke-virtual {p3, v0}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p3, v0}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
 
     move-result-object p3
 
@@ -57,10 +56,12 @@
 
     const/16 v1, -0x14
 
-    .line 2
-    invoke-static {v1}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float v1, v1
 
-    move-result v1
+    .line 2
+    sget v2, La5/g0;->a:F
+
+    mul-float v1, v1, v2
 
     .line 3
     sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -126,7 +127,7 @@
     sub-float/2addr v4, v5
 
     .line 7
-    invoke-virtual {p3}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {p3}, Landroid/view/View;->getWidth()I
 
     move-result v5
 
@@ -136,7 +137,7 @@
 
     float-to-int p2, v5
 
-    invoke-virtual {p3, p2}, Landroid/view/ViewGroup;->setScrollX(I)V
+    invoke-virtual {p3, p2}, Landroid/view/View;->setScrollX(I)V
 
     .line 8
     invoke-virtual {p3}, Landroid/view/ViewGroup;->getChildCount()I
@@ -163,7 +164,7 @@
     if-ne v3, v6, :cond_4
 
     .line 11
-    invoke-static {v5, v7}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v6, Lcom/supercell/id/R$id;->image:I
 
@@ -175,7 +176,7 @@
 
     if-eqz v7, :cond_2
 
-    invoke-virtual {v7, v4}, Landroid/widget/ImageView;->setScaleX(F)V
+    invoke-virtual {v7, v4}, Landroid/view/View;->setScaleX(F)V
 
     .line 12
     :cond_2
@@ -187,7 +188,7 @@
 
     if-eqz v7, :cond_3
 
-    invoke-virtual {v7, v4}, Landroid/widget/ImageView;->setScaleY(F)V
+    invoke-virtual {v7, v4}, Landroid/view/View;->setScaleY(F)V
 
     .line 13
     :cond_3
@@ -201,13 +202,13 @@
 
     mul-float v6, v2, v1
 
-    invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setTranslationY(F)V
+    invoke-virtual {v5, v6}, Landroid/view/View;->setTranslationY(F)V
 
     goto :goto_2
 
     .line 14
     :cond_4
-    invoke-static {v5, v7}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v6, Lcom/supercell/id/R$id;->image:I
 
@@ -219,7 +220,7 @@
 
     if-eqz v7, :cond_5
 
-    invoke-virtual {v7, v0}, Landroid/widget/ImageView;->setScaleX(F)V
+    invoke-virtual {v7, v0}, Landroid/view/View;->setScaleX(F)V
 
     .line 15
     :cond_5
@@ -231,7 +232,7 @@
 
     if-eqz v7, :cond_6
 
-    invoke-virtual {v7, v0}, Landroid/widget/ImageView;->setScaleY(F)V
+    invoke-virtual {v7, v0}, Landroid/view/View;->setScaleY(F)V
 
     .line 16
     :cond_6
@@ -243,7 +244,7 @@
 
     if-eqz v5, :cond_7
 
-    invoke-virtual {v5, v1}, Landroid/widget/ImageView;->setTranslationY(F)V
+    invoke-virtual {v5, v1}, Landroid/view/View;->setTranslationY(F)V
 
     :cond_7
     :goto_2

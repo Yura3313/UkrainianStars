@@ -1,44 +1,52 @@
-.class public Lab/a;
+.class public final Lab/a;
 .super Ljava/lang/Object;
-.source "FaqSearchIndex.java"
+.source "AttachmentPreviewFragment.java"
 
 # interfaces
-.implements Ljava/io/Serializable;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final g:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/util/List<",
-            "Lab/b;",
-            ">;>;"
-        }
-    .end annotation
-.end field
+.field public final synthetic f:Lab/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Map;)V
+.method public constructor <init>(Lab/c;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/util/List<",
-            "Lab/b;",
-            ">;>;)V"
-        }
-    .end annotation
 
-    .line 1
+    iput-object p1, p0, Lab/a;->f:Lab/c;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lab/a;->f:Lab/c;
+
+    iget-object v0, v0, Lab/c;->h0:Landroid/widget/ProgressBar;
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
     .line 2
-    iput-object p1, p0, Lab/a;->g:Ljava/util/Map;
+    iget-object v0, p0, Lab/a;->f:Lab/c;
+
+    .line 3
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+
+    .line 4
+    sget v1, Lcom/helpshift/R$string;->hs__screenshot_cloud_attach_error:I
+
+    const/4 v2, -0x2
+
+    invoke-static {v0, v1, v2}, Lib/f;->c(Landroid/view/View;II)V
 
     return-void
 .end method

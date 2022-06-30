@@ -1,5 +1,5 @@
-.class public Landroidx/fragment/app/FragmentManager$e;
-.super Landroidx/fragment/app/v;
+.class public final Landroidx/fragment/app/FragmentManager$e;
+.super Landroidx/fragment/app/r;
 .source "FragmentManager.java"
 
 
@@ -22,35 +22,29 @@
 .method public constructor <init>(Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentManager$e;->b:Landroidx/fragment/app/FragmentManager;
 
-    invoke-direct {p0}, Landroidx/fragment/app/v;-><init>()V
+    invoke-direct {p0}, Landroidx/fragment/app/r;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/lang/ClassLoader;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
-    .locals 2
+.method public final a(Ljava/lang/ClassLoader;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+    .locals 0
 
     .line 1
     iget-object p1, p0, Landroidx/fragment/app/FragmentManager$e;->b:Landroidx/fragment/app/FragmentManager;
 
     .line 2
-    iget-object p1, p1, Landroidx/fragment/app/FragmentManager;->q:Landroidx/fragment/app/w;
+    iget-object p1, p1, Landroidx/fragment/app/FragmentManager;->p:Landroidx/fragment/app/s;
 
     .line 3
-    iget-object v0, p1, Landroidx/fragment/app/w;->h:Landroid/content/Context;
-
-    const/4 v1, 0x0
+    iget-object p1, p1, Landroidx/fragment/app/s;->g:Landroid/content/Context;
 
     .line 4
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 5
-    invoke-static {v0, p2, v1}, Landroidx/fragment/app/Fragment;->T(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;)Landroidx/fragment/app/Fragment;
+    invoke-static {p1, p2}, Landroidx/fragment/app/Fragment;->M(Landroid/content/Context;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
 
     move-result-object p1
 

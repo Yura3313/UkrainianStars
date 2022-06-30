@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/gameserver/GameSessionService$1;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/gameserver/GameSessionService$1$1;->this$0:Lcom/kakaogame/gameserver/GameSessionService$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -65,7 +64,7 @@
     const-string v2, "GameSessionService"
 
     .line 5
-    invoke-static {v1, v0, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v1, v0, v2}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 6
     :cond_0

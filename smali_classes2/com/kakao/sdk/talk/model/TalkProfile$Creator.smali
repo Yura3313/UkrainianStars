@@ -30,7 +30,9 @@
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 4
 
-    if-eqz p1, :cond_0
+    const-string v0, "in"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/talk/model/TalkProfile;
 
@@ -53,16 +55,6 @@
     invoke-direct {v0, v1, v2, v3, p1}, Lcom/kakao/sdk/talk/model/TalkProfile;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

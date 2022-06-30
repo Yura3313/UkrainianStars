@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lb2/e;
+.implements Lc2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lb2/e<",
+        "Lc2/e<",
         "Lcom/google/android/gms/games/appcontent/zzd;",
         ">;"
     }
@@ -20,10 +20,7 @@
 
 
 # virtual methods
-.method public abstract D0()I
-.end method
-
-.method public abstract f()Ljava/lang/String;
+.method public abstract P0()I
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
@@ -41,13 +38,13 @@
 .method public abstract getType()Ljava/lang/String;
 .end method
 
-.method public abstract h0()I
+.method public abstract h()Ljava/lang/String;
 .end method
 
-.method public abstract j()Ljava/lang/String;
+.method public abstract k()Ljava/lang/String;
 .end method
 
-.method public abstract q()Ljava/util/List;
+.method public abstract t()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -58,7 +55,7 @@
     .end annotation
 .end method
 
-.method public abstract r()Ljava/util/List;
+.method public abstract u()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -69,7 +66,7 @@
     .end annotation
 .end method
 
-.method public abstract s()Ljava/util/List;
+.method public abstract v()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -78,4 +75,7 @@
             ">;"
         }
     .end annotation
+.end method
+
+.method public abstract v0()I
 .end method

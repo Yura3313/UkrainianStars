@@ -1,35 +1,29 @@
-.class public interface abstract annotation Lze/c;
-.super Ljava/lang/Object;
-.source "Field.java"
-
-# interfaces
-.implements Ljava/lang/annotation/Annotation;
+.class public final Lze/c;
+.super Lze/q0;
+.source "EventLoop.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/AnnotationDefault;
-    value = .subannotation Lze/c;
-        encoded = false
-    .end subannotation
-.end annotation
+# instance fields
+.field public final k:Ljava/lang/Thread;
 
-.annotation runtime Ljava/lang/annotation/Documented;
-.end annotation
 
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
+# direct methods
+.method public constructor <init>(Ljava/lang/Thread;)V
+    .locals 0
 
-.annotation runtime Ljava/lang/annotation/Target;
-    value = {
-        .enum Ljava/lang/annotation/ElementType;->PARAMETER:Ljava/lang/annotation/ElementType;
-    }
-.end annotation
+    invoke-direct {p0}, Lze/q0;-><init>()V
+
+    iput-object p1, p0, Lze/c;->k:Ljava/lang/Thread;
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract encoded()Z
-.end method
+.method public final w()Ljava/lang/Thread;
+    .locals 1
 
-.method public abstract value()Ljava/lang/String;
+    iget-object v0, p0, Lze/c;->k:Ljava/lang/Thread;
+
+    return-object v0
 .end method

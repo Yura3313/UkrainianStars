@@ -43,7 +43,6 @@
 
     const-string v0, "application/x-www-form-urlencoded"
 
-    .line 1
     invoke-static {v0}, Lokhttp3/MediaType;->get(Ljava/lang/String;)Lokhttp3/MediaType;
 
     move-result-object v0
@@ -190,7 +189,6 @@
 
     const/4 v1, 0x1
 
-    .line 1
     invoke-direct {p0, v0, v1}, Lokhttp3/FormBody;->writeOrCountBytes(Lokio/BufferedSink;Z)J
 
     move-result-wide v0
@@ -201,7 +199,6 @@
 .method public contentType()Lokhttp3/MediaType;
     .locals 1
 
-    .line 1
     sget-object v0, Lokhttp3/FormBody;->CONTENT_TYPE:Lokhttp3/MediaType;
 
     return-object v0
@@ -210,7 +207,6 @@
 .method public encodedName(I)Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/FormBody;->encodedNames:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -225,7 +221,6 @@
 .method public encodedValue(I)Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/FormBody;->encodedValues:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -240,7 +235,6 @@
 .method public name(I)Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-virtual {p0, p1}, Lokhttp3/FormBody;->encodedName(I)Ljava/lang/String;
 
     move-result-object p1
@@ -257,7 +251,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/FormBody;->encodedNames:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -270,7 +263,6 @@
 .method public value(I)Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-virtual {p0, p1}, Lokhttp3/FormBody;->encodedValue(I)Ljava/lang/String;
 
     move-result-object p1
@@ -294,7 +286,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lokhttp3/FormBody;->writeOrCountBytes(Lokio/BufferedSink;Z)J
 
     return-void

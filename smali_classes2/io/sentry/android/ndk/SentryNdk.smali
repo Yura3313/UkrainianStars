@@ -33,7 +33,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,7 +41,6 @@
 .method public static close()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lio/sentry/android/ndk/SentryNdk;->shutdown()V
 
     return-void

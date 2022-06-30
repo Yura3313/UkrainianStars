@@ -1,4 +1,4 @@
-.class public Lo/f$a;
+.class public final Lo/f$a;
 .super Ljava/lang/Object;
 .source "KeyCycle.java"
 

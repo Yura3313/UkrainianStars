@@ -3,7 +3,7 @@
 .source "KGKakao2Auth.java"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/p;
 
 
 # annotations
@@ -19,17 +19,17 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lke/p<",
+        "Lre/p<",
         "Lcom/kakao/sdk/auth/model/OAuthToken;",
         "Ljava/lang/Throwable;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lae/i;
+.method public abstract invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lie/h;
 .end method
 
 .method public bridge abstract synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

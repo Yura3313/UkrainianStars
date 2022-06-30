@@ -1,9 +1,6 @@
 .class public final Lcom/google/protobuf/GeneratedMessageLite$d;
-.super Ljava/lang/Object;
+.super Lcom/google/protobuf/o;
 .source "GeneratedMessageLite.java"
-
-# interfaces
-.implements Lcom/google/protobuf/v$a;
 
 
 # annotations
@@ -12,148 +9,176 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x9
     name = "d"
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<ContainingType::",
+        "Lcom/google/protobuf/q0;",
+        "Type:",
         "Ljava/lang/Object;",
-        "Lcom/google/protobuf/v$a<",
-        "Lcom/google/protobuf/GeneratedMessageLite$d;",
-        ">;"
+        ">",
+        "Lcom/google/protobuf/o<",
+        "TContainingType;TType;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final g:Lcom/google/protobuf/a0$d;
+.field public final a:Lcom/google/protobuf/q0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/protobuf/a0$d<",
-            "*>;"
+            "TContainingType;"
         }
     .end annotation
 .end field
 
-.field public final h:I
+.field public final b:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TType;"
+        }
+    .end annotation
+.end field
 
-.field public final i:Lcom/google/protobuf/x1$b;
+.field public final c:Lcom/google/protobuf/q0;
 
-.field public final j:Z
-
-.field public final k:Z
+.field public final d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/protobuf/a0$d;ILcom/google/protobuf/x1$b;ZZ)V
-    .locals 0
+.method public constructor <init>(Lcom/google/protobuf/q0;Ljava/lang/Object;Lcom/google/protobuf/q0;Lcom/google/protobuf/GeneratedMessageLite$c;)V
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lcom/google/protobuf/a0$d<",
-            "*>;I",
-            "Lcom/google/protobuf/x1$b;",
-            "ZZ)V"
+            "(TContainingType;TType;",
+            "Lcom/google/protobuf/q0;",
+            "Lcom/google/protobuf/GeneratedMessageLite$c;",
+            "Ljava/lang/Class;",
+            ")V"
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/google/protobuf/o;-><init>()V
+
+    if-eqz p1, :cond_2
 
     .line 2
-    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->g:Lcom/google/protobuf/a0$d;
+    iget-object v0, p4, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
 
     .line 3
-    iput p2, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->h:I
+    sget-object v1, Lcom/google/protobuf/w1$b;->r:Lcom/google/protobuf/w1$b$c;
+
+    if-ne v0, v1, :cond_1
+
+    if-eqz p3, :cond_0
+
+    goto :goto_0
 
     .line 4
-    iput-object p3, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->i:Lcom/google/protobuf/x1$b;
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "Null messageDefaultInstance"
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 
     .line 5
-    iput-boolean p4, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->j:Z
+    :cond_1
+    :goto_0
+    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->a:Lcom/google/protobuf/q0;
 
     .line 6
-    iput-boolean p5, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->k:Z
+    iput-object p2, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->b:Ljava/lang/Object;
+
+    .line 7
+    iput-object p3, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->c:Lcom/google/protobuf/q0;
+
+    .line 8
+    iput-object p4, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     return-void
+
+    .line 9
+    :cond_2
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "Null containingTypeDefaultInstance"
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method
 
 
 # virtual methods
-.method public B()Z
-    .locals 1
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->k:Z
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
-    return v0
-.end method
+    .line 2
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
 
-.method public E(Lcom/google/protobuf/q0$a;Lcom/google/protobuf/q0;)Lcom/google/protobuf/q0$a;
-    .locals 0
+    .line 3
+    iget-object v1, v1, Lcom/google/protobuf/w1$b;->f:Lcom/google/protobuf/w1$c;
 
-    .line 1
-    check-cast p1, Lcom/google/protobuf/GeneratedMessageLite$b;
+    .line 4
+    sget-object v2, Lcom/google/protobuf/w1$c;->n:Lcom/google/protobuf/w1$c;
 
-    check-cast p2, Lcom/google/protobuf/GeneratedMessageLite;
+    if-ne v1, v2, :cond_0
 
-    invoke-virtual {p1, p2}, Lcom/google/protobuf/GeneratedMessageLite$b;->f(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+    .line 5
+    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->f:Lcom/google/protobuf/a0$d;
 
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    invoke-interface {v0, p1}, Lcom/google/protobuf/a0$d;->a(I)Lcom/google/protobuf/a0$c;
+
+    move-result-object p1
+
+    :cond_0
     return-object p1
 .end method
 
-.method public b()I
-    .locals 1
+.method public final b(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->h:I
-
-    return v0
-.end method
-
-.method public compareTo(Ljava/lang/Object;)I
-    .locals 1
-
-    .line 1
-    check-cast p1, Lcom/google/protobuf/GeneratedMessageLite$d;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 2
-    iget v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->h:I
+    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
 
-    iget p1, p1, Lcom/google/protobuf/GeneratedMessageLite$d;->h:I
+    .line 3
+    iget-object v0, v0, Lcom/google/protobuf/w1$b;->f:Lcom/google/protobuf/w1$c;
 
-    sub-int/2addr v0, p1
+    .line 4
+    sget-object v1, Lcom/google/protobuf/w1$c;->n:Lcom/google/protobuf/w1$c;
 
-    return v0
-.end method
+    if-ne v0, v1, :cond_0
 
-.method public k()Z
-    .locals 1
+    .line 5
+    check-cast p1, Lcom/google/protobuf/a0$c;
 
-    .line 1
-    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->j:Z
+    invoke-interface {p1}, Lcom/google/protobuf/a0$c;->d()I
 
-    return v0
-.end method
+    move-result p1
 
-.method public o()Lcom/google/protobuf/x1$b;
-    .locals 1
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 1
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->i:Lcom/google/protobuf/x1$b;
+    move-result-object p1
 
-    return-object v0
-.end method
-
-.method public y()Lcom/google/protobuf/x1$c;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->i:Lcom/google/protobuf/x1$b;
-
-    .line 2
-    iget-object v0, v0, Lcom/google/protobuf/x1$b;->g:Lcom/google/protobuf/x1$c;
-
-    return-object v0
+    :cond_0
+    return-object p1
 .end method

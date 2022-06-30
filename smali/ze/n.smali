@@ -1,32 +1,40 @@
-.class public interface abstract annotation Lze/n;
+.class public final Lze/n;
 .super Ljava/lang/Object;
-.source "PATCH.java"
+.source "CommonPool.kt"
 
 # interfaces
-.implements Ljava/lang/annotation/Annotation;
+.implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/AnnotationDefault;
-    value = .subannotation Lze/n;
-        value = ""
-    .end subannotation
-.end annotation
+# static fields
+.field public static final f:Lze/n;
 
-.annotation runtime Ljava/lang/annotation/Documented;
-.end annotation
 
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
 
-.annotation runtime Ljava/lang/annotation/Target;
-    value = {
-        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;
-    }
-.end annotation
+    new-instance v0, Lze/n;
+
+    invoke-direct {v0}, Lze/n;-><init>()V
+
+    sput-object v0, Lze/n;->f:Lze/n;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract value()Ljava/lang/String;
+.method public final run()V
+    .locals 0
+
+    return-void
 .end method

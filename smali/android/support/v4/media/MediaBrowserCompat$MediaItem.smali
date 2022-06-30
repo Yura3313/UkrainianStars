@@ -49,7 +49,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/support/v4/media/MediaBrowserCompat$MediaItem$1;
 
     invoke-direct {v0}, Landroid/support/v4/media/MediaBrowserCompat$MediaItem$1;-><init>()V
@@ -260,7 +259,6 @@
 .method public getDescription()Landroid/support/v4/media/MediaDescriptionCompat;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;->mDescription:Landroid/support/v4/media/MediaDescriptionCompat;
 
     return-object v0
@@ -269,7 +267,6 @@
 .method public getFlags()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;->mFlags:I
 
     return v0
@@ -278,7 +275,6 @@
 .method public getMediaId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;->mDescription:Landroid/support/v4/media/MediaDescriptionCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/media/MediaDescriptionCompat;->getMediaId()Ljava/lang/String;
@@ -291,7 +287,6 @@
 .method public isBrowsable()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;->mFlags:I
 
     const/4 v1, 0x1
@@ -312,7 +307,6 @@
 .method public isPlayable()Z
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;->mFlags:I
 
     and-int/lit8 v0, v0, 0x2

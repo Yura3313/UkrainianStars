@@ -258,7 +258,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lio/sentry/android/core/AppComponentsBreadcrumbsIntegration;->createLowMemoryBreadcrumb(Ljava/lang/Integer;)V
 
     return-void
@@ -267,7 +266,6 @@
 .method public onTrimMemory(I)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1

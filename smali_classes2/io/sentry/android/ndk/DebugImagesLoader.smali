@@ -30,7 +30,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -162,7 +161,6 @@
     .annotation build Lorg/jetbrains/annotations/VisibleForTesting;
     .end annotation
 
-    .line 1
     sget-object v0, Lio/sentry/android/ndk/DebugImagesLoader;->debugImages:Ljava/util/List;
 
     return-object v0

@@ -24,15 +24,14 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/x4;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
-    .line 1
-    invoke-static {}, Lcom/google/android/gms/internal/ads/y4;->D()Lcom/google/android/gms/internal/ads/y4;
+    invoke-static {}, Lcom/google/android/gms/internal/ads/y4;->A()Lcom/google/android/gms/internal/ads/y4;
 
-    move-result-object p1
+    move-result-object v0
 
-    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/ads/v5$b;-><init>(Lcom/google/android/gms/internal/ads/v5;)V
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/v5$b;-><init>(Lcom/google/android/gms/internal/ads/v5;)V
 
     return-void
 .end method

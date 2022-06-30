@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lu5/c;
+.implements Lw5/c;
 
 
 # annotations
@@ -20,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,7 +36,7 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lu5/a<",
+            "Lw5/a<",
             "*>;>;"
         }
     .end annotation
@@ -46,39 +45,41 @@
     const-class v0, Lcom/google/firebase/iid/FirebaseInstanceId;
 
     .line 2
-    invoke-static {v0}, Lu5/a;->a(Ljava/lang/Class;)Lu5/a$b;
+    invoke-static {v0}, Lw5/a;->a(Ljava/lang/Class;)Lw5/a$b;
 
     move-result-object v1
 
-    const-class v2, Lr5/b;
+    const-class v2, Lt5/b;
 
     .line 3
-    invoke-static {v2}, Lu5/d;->a(Ljava/lang/Class;)Lu5/d;
+    new-instance v3, Lw5/d;
 
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lu5/a$b;->a(Lu5/d;)Lu5/a$b;
-
-    const-class v2, Lv5/d;
+    invoke-direct {v3, v2}, Lw5/d;-><init>(Ljava/lang/Class;)V
 
     .line 4
-    invoke-static {v2}, Lu5/d;->a(Ljava/lang/Class;)Lu5/d;
+    invoke-virtual {v1, v3}, Lw5/a$b;->a(Lw5/d;)Lw5/a$b;
 
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lu5/a$b;->a(Lu5/d;)Lu5/a$b;
-
-    sget-object v2, Lcom/google/android/gms/ads/r;->l:Lu5/b;
+    const-class v2, Lx5/d;
 
     .line 5
-    invoke-virtual {v1, v2}, Lu5/a$b;->c(Lu5/b;)Lu5/a$b;
+    new-instance v3, Lw5/d;
+
+    invoke-direct {v3, v2}, Lw5/d;-><init>(Ljava/lang/Class;)V
 
     .line 6
-    iget v2, v1, Lu5/a$b;->c:I
+    invoke-virtual {v1, v3}, Lw5/a$b;->a(Lw5/d;)Lw5/a$b;
 
-    const/4 v3, 0x0
+    sget-object v2, Lt2/f;->a:Lt2/f;
 
-    const/4 v4, 0x1
+    .line 7
+    iput-object v2, v1, Lw5/a$b;->d:Lw5/b;
+
+    .line 8
+    iget v2, v1, Lw5/a$b;->c:I
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
 
     if-nez v2, :cond_0
 
@@ -92,50 +93,51 @@
     :goto_0
     const-string v5, "Instantiation type has already been set."
 
-    invoke-static {v2, v5}, Lc2/h;->k(ZLjava/lang/Object;)V
+    invoke-static {v2, v5}, Ld2/h;->k(ZLjava/lang/Object;)V
 
-    .line 7
-    iput v4, v1, Lu5/a$b;->c:I
+    .line 9
+    iput v3, v1, Lw5/a$b;->c:I
 
-    .line 8
-    invoke-virtual {v1}, Lu5/a$b;->b()Lu5/a;
+    .line 10
+    invoke-virtual {v1}, Lw5/a$b;->b()Lw5/a;
 
     move-result-object v1
 
-    .line 9
-    const-class v2, Lx5/a;
+    .line 11
+    const-class v2, Lz5/a;
 
-    .line 10
-    invoke-static {v2}, Lu5/a;->a(Ljava/lang/Class;)Lu5/a$b;
+    .line 12
+    invoke-static {v2}, Lw5/a;->a(Ljava/lang/Class;)Lw5/a$b;
 
     move-result-object v2
 
-    .line 11
-    invoke-static {v0}, Lu5/d;->a(Ljava/lang/Class;)Lu5/d;
-
-    move-result-object v0
-
-    invoke-virtual {v2, v0}, Lu5/a$b;->a(Lu5/d;)Lu5/a$b;
-
-    sget-object v0, Lcom/google/android/gms/ads/s;->g:Lu5/b;
-
-    .line 12
-    invoke-virtual {v2, v0}, Lu5/a$b;->c(Lu5/b;)Lu5/a$b;
-
     .line 13
-    invoke-virtual {v2}, Lu5/a$b;->b()Lu5/a;
+    new-instance v5, Lw5/d;
+
+    invoke-direct {v5, v0}, Lw5/d;-><init>(Ljava/lang/Class;)V
+
+    .line 14
+    invoke-virtual {v2, v5}, Lw5/a$b;->a(Lw5/d;)Lw5/a$b;
+
+    sget-object v0, Lef/t;->a:Lef/t;
+
+    .line 15
+    iput-object v0, v2, Lw5/a$b;->d:Lw5/b;
+
+    .line 16
+    invoke-virtual {v2}, Lw5/a$b;->b()Lw5/a;
 
     move-result-object v0
 
     const/4 v2, 0x2
 
-    new-array v2, v2, [Lu5/a;
+    new-array v2, v2, [Lw5/a;
 
-    aput-object v1, v2, v3
+    aput-object v1, v2, v4
 
-    aput-object v0, v2, v4
+    aput-object v0, v2, v3
 
-    .line 14
+    .line 17
     invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0

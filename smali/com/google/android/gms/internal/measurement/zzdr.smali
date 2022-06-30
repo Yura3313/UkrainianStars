@@ -11,7 +11,6 @@
 
     const-string v0, "com.google.android.gms.measurement.api.internal.IBundleReceiver"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/measurement/zzr;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -19,34 +18,34 @@
 
 
 # virtual methods
-.method public final F0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 0
+.method public final J0(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    const/4 p4, 0x1
+    const/4 v0, 0x1
 
-    if-ne p1, p4, :cond_0
+    if-ne p1, v0, :cond_0
 
     .line 1
     sget-object p1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lu3/c1;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lv3/c1;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/Bundle;
 
     .line 2
-    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/measurement/zzdq;->O(Landroid/os/Bundle;)V
+    invoke-interface {p0}, Lcom/google/android/gms/internal/measurement/zzdq;->d()V
 
     .line 3
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    return p4
+    return v0
 
     :cond_0
     const/4 p1, 0x0

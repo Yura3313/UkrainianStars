@@ -46,7 +46,6 @@
 .method private synthetic lambda$processDirectory$0(Ljava/io/File;Ljava/lang/String;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p2}, Lio/sentry/DirectoryProcessor;->isRelevantFileName(Ljava/lang/String;)Z
 
     move-result p1

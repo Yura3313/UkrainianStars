@@ -1,4 +1,4 @@
-.class public Landroidx/transition/f$a;
+.class public final Landroidx/transition/f$a;
 .super Ljava/lang/Object;
 .source "TransitionUtils.java"
 
@@ -65,7 +65,7 @@
 
 
 # virtual methods
-.method public evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
 
     .line 1

@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/util/NormalizedError;-><clinit>()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/supercell/id/util/NormalizedError;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +37,7 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -49,17 +48,19 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "source"
 
-    if-eqz p1, :cond_5
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    new-instance v7, Lcom/supercell/id/util/NormalizedError;
+    new-instance v0, Lcom/supercell/id/util/NormalizedError;
 
     .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v2
+
+    const/4 v1, 0x0
 
     if-eqz v2, :cond_4
 
@@ -80,28 +81,28 @@
     .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v5
 
     .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v5
-
-    if-eqz v1, :cond_0
+    move-result-object v6
 
     if-eqz v5, :cond_0
 
+    if-eqz v6, :cond_0
+
     .line 7
-    new-instance v6, Lae/d;
+    new-instance v7, Lie/d;
 
-    invoke-direct {v6, v1, v5}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v7, v5, v6}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    move-object v5, v6
+    move-object v5, v7
 
     goto :goto_0
 
     :cond_0
-    move-object v5, v0
+    move-object v5, v1
 
     .line 8
     :goto_0
@@ -111,47 +112,39 @@
 
     if-eqz v6, :cond_1
 
-    move-object v1, v7
+    move-object v1, v0
 
     .line 9
-    invoke-direct/range {v1 .. v6}, Lcom/supercell/id/util/NormalizedError;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lae/d;Ljava/lang/String;)V
+    invoke-direct/range {v1 .. v6}, Lcom/supercell/id/util/NormalizedError;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lie/d;Ljava/lang/String;)V
 
-    return-object v7
+    return-object v0
 
     .line 10
     :cond_1
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    throw v1
 
     .line 11
     :cond_2
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    throw v1
 
     .line 12
     :cond_3
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    throw v1
 
     .line 13
     :cond_4
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
-
-    :cond_5
-    const-string p1, "source"
-
-    .line 14
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    throw v1
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -160,7 +153,6 @@
         }
     .end annotation
 
-    .line 1
     new-array p1, p1, [Lcom/supercell/id/util/NormalizedError;
 
     return-object p1

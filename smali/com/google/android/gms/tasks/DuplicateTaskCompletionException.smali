@@ -4,14 +4,13 @@
 
 
 # static fields
-.field public static final synthetic g:I
+.field public static final synthetic f:I
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void

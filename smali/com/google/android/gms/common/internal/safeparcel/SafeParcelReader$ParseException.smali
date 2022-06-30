@@ -37,10 +37,12 @@
 
     const/16 v1, 0x29
 
+    .line 2
     invoke-static {p1, v1}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v1
 
+    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V

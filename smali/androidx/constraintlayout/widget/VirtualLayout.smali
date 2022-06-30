@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public o:Z
+.field public n:Z
 
-.field public p:Z
+.field public o:Z
 
 
 # direct methods
@@ -72,7 +72,7 @@
     if-ne v2, v3, :cond_0
 
     .line 6
-    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
+    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->n:Z
 
     goto :goto_1
 
@@ -83,7 +83,7 @@
     if-ne v2, v3, :cond_1
 
     .line 8
-    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->p:Z
+    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
 
     :cond_1
     :goto_1
@@ -99,18 +99,18 @@
     return-void
 .end method
 
-.method public onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 8
 
     .line 1
     invoke-super {p0}, Landroidx/constraintlayout/widget/ConstraintHelper;->onAttachedToWindow()V
 
     .line 2
-    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
+    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->n:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->p:Z
+    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
 
     if-eqz v0, :cond_4
 
@@ -159,12 +159,12 @@
 
     .line 9
     :goto_1
-    iget v6, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->h:I
+    iget v6, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->g:I
 
     if-ge v5, v6, :cond_4
 
     .line 10
-    iget-object v6, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->g:[I
+    iget-object v6, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->f:[I
 
     aget v6, v6, v5
 
@@ -176,7 +176,7 @@
     if-eqz v6, :cond_3
 
     .line 12
-    iget-boolean v7, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
+    iget-boolean v7, p0, Landroidx/constraintlayout/widget/VirtualLayout;->n:Z
 
     if-eqz v7, :cond_2
 
@@ -185,7 +185,7 @@
 
     .line 14
     :cond_2
-    iget-boolean v7, p0, Landroidx/constraintlayout/widget/VirtualLayout;->p:Z
+    iget-boolean v7, p0, Landroidx/constraintlayout/widget/VirtualLayout;->o:Z
 
     if-eqz v7, :cond_3
 

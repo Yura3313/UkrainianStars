@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final g:Lm/a;
+.field public final f:Lm/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lm/a<",
-            "La2/b<",
+            "Lb2/b<",
             "*>;",
             "Lcom/google/android/gms/common/ConnectionResult;",
             ">;"
@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public getMessage()Ljava/lang/String;
+.method public final getMessage()Ljava/lang/String;
     .locals 7
 
     .line 1
@@ -27,7 +27,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/common/api/AvailabilityException;->g:Lm/a;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/AvailabilityException;->f:Lm/a;
 
     invoke-virtual {v1}, Lm/a;->keySet()Ljava/util/Set;
 
@@ -42,35 +42,39 @@
     const/4 v2, 0x1
 
     :goto_0
-    move-object v3, v1
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    check-cast v3, Lm/f$a;
+    move-result v3
 
-    invoke-virtual {v3}, Lm/f$a;->hasNext()Z
+    if-eqz v3, :cond_1
 
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    invoke-virtual {v3}, Lm/f$a;->next()Ljava/lang/Object;
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, La2/b;
+    check-cast v3, Lb2/b;
 
     .line 3
-    iget-object v4, p0, Lcom/google/android/gms/common/api/AvailabilityException;->g:Lm/a;
+    iget-object v4, p0, Lcom/google/android/gms/common/api/AvailabilityException;->f:Lm/a;
 
-    invoke-virtual {v4, v3}, Lm/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v5, 0x0
+
+    .line 4
+    invoke-virtual {v4, v3, v5}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
+    .line 5
     check-cast v4, Lcom/google/android/gms/common/ConnectionResult;
 
-    invoke-static {v4}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v4}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
-    invoke-virtual {v4}, Lcom/google/android/gms/common/ConnectionResult;->A2()Z
+    move-object v5, v4
+
+    check-cast v5, Lcom/google/android/gms/common/ConnectionResult;
+
+    .line 6
+    invoke-virtual {v4}, Lcom/google/android/gms/common/ConnectionResult;->E2()Z
 
     move-result v5
 
@@ -78,24 +82,26 @@
 
     const/4 v2, 0x0
 
-    .line 5
+    .line 7
     :cond_0
-    iget-object v3, v3, La2/b;->b:Lcom/google/android/gms/common/api/a;
+    iget-object v3, v3, Lb2/b;->b:Lcom/google/android/gms/common/api/a;
 
-    .line 6
+    .line 8
     iget-object v3, v3, Lcom/google/android/gms/common/api/a;->c:Ljava/lang/String;
 
-    .line 7
+    .line 9
     invoke-static {v4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
 
     const/4 v5, 0x2
 
+    .line 10
     invoke-static {v3, v5}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v5
 
+    .line 11
     invoke-virtual {v4}, Ljava/lang/String;->length()I
 
     move-result v6
@@ -122,7 +128,7 @@
 
     goto :goto_0
 
-    .line 8
+    .line 12
     :cond_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -132,7 +138,7 @@
 
     const-string v2, "None of the queried APIs are available. "
 
-    .line 9
+    .line 13
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -140,20 +146,20 @@
     :cond_2
     const-string v2, "Some of the queried APIs are unavailable. "
 
-    .line 10
+    .line 14
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :goto_1
     const-string v2, "; "
 
-    .line 11
+    .line 15
     invoke-static {v2, v0}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 12
+    .line 16
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0

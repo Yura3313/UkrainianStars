@@ -54,9 +54,15 @@
 
     iget-object v1, p0, Lcom/kakaogame/session/WebSocketManager;->TAG:Ljava/lang/String;
 
-    const-string v2, ":"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, v1, v2, p2}, Landroidx/fragment/app/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v1, ":"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -91,7 +97,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/session/WebSocketManager;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/session/WebSocketManager;->lock:Ljava/lang/Object;
 
     return-object p0
@@ -100,7 +105,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/session/WebSocketManager;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/session/WebSocketManager;->TAG:Ljava/lang/String;
 
     return-object p0
@@ -109,7 +113,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/session/WebSocketManager;)Lcom/kakaogame/session/websocket/WebSocketClient;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/session/WebSocketManager;->webSocket:Lcom/kakaogame/session/websocket/WebSocketClient;
 
     return-object p0
@@ -118,7 +121,6 @@
 .method public static synthetic access$202(Lcom/kakaogame/session/WebSocketManager;Lcom/kakaogame/session/websocket/WebSocketClient;)Lcom/kakaogame/session/websocket/WebSocketClient;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/session/WebSocketManager;->webSocket:Lcom/kakaogame/session/websocket/WebSocketClient;
 
     return-object p1
@@ -127,7 +129,6 @@
 .method public static synthetic access$300(Lcom/kakaogame/session/WebSocketManager;)Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/session/WebSocketManager;->webSocketListener:Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;
 
     return-object p0
@@ -136,7 +137,6 @@
 .method public static synthetic access$302(Lcom/kakaogame/session/WebSocketManager;Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;)Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/session/WebSocketManager;->webSocketListener:Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;
 
     return-object p1
@@ -145,7 +145,6 @@
 .method public static synthetic access$400(Lcom/kakaogame/session/WebSocketManager;)Lcom/kakaogame/session/WebSocketManager$WebSocketEventListener;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/session/WebSocketManager;->websocketEventListener:Lcom/kakaogame/session/WebSocketManager$WebSocketEventListener;
 
     return-object p0
@@ -183,9 +182,15 @@
 
     iget-object v2, p0, Lcom/kakaogame/session/WebSocketManager;->serverUrl:Ljava/lang/String;
 
-    const-string v3, "?"
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v1, v2, v3, v0}, Landroidx/fragment/app/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v2, "?"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -289,10 +294,12 @@
 
     const-string p3, "connectResult is null: "
 
+    .line 16
     invoke-static {p3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p3
 
+    .line 17
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -311,7 +318,7 @@
 
     invoke-static {p1, p3}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 16
+    .line 18
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -320,7 +327,7 @@
 
     if-ltz p1, :cond_0
 
-    .line 17
+    .line 19
     invoke-static {p2}, Lcom/kakaogame/server/KeyBaseResult;->getResult(I)Lcom/kakaogame/server/KeyBaseResult;
 
     move-result-object p1
@@ -330,14 +337,14 @@
     :cond_0
     const/16 p1, 0x7d4
 
-    .line 18
+    .line 20
     invoke-static {p1}, Lcom/kakaogame/server/KeyBaseResult;->getResult(I)Lcom/kakaogame/server/KeyBaseResult;
 
     move-result-object p1
 
     return-object p1
 
-    .line 19
+    .line 21
     :cond_1
     invoke-virtual {p1}, Lcom/kakaogame/server/KeyBaseResult;->isSuccess()Z
 
@@ -345,14 +352,14 @@
 
     if-nez p3, :cond_2
 
-    .line 20
+    .line 22
     invoke-static {p1}, Lcom/kakaogame/server/KeyBaseResult;->getResult(Ljava/util/Map;)Lcom/kakaogame/server/KeyBaseResult;
 
     move-result-object p1
 
     return-object p1
 
-    .line 21
+    .line 23
     :cond_2
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -373,7 +380,7 @@
 
     check-cast p3, Lcom/kakaogame/session/SyncServerRequest;
 
-    .line 22
+    .line 24
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -386,35 +393,37 @@
 
     if-gtz v7, :cond_4
 
-    .line 23
+    .line 25
     iget-object p1, p0, Lcom/kakaogame/session/WebSocketManager;->TAG:Ljava/lang/String;
 
     const-string p3, "connectInternal(timeout)"
 
     invoke-static {p1, p3}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 24
+    .line 26
     invoke-static {p2}, Lcom/kakaogame/server/KeyBaseResult;->getResult(I)Lcom/kakaogame/server/KeyBaseResult;
 
     move-result-object p1
 
     return-object p1
 
-    .line 25
+    .line 27
     :cond_4
     invoke-virtual {p3, v0, v1}, Lcom/kakaogame/session/SyncServerRequest;->getSessionResponse(J)Lcom/kakaogame/server/ServerResult;
 
     move-result-object p3
 
-    .line 26
+    .line 28
     iget-object v0, p0, Lcom/kakaogame/session/WebSocketManager;->TAG:Ljava/lang/String;
 
     const-string v1, "connectInternal(serverResult): "
 
+    .line 29
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 30
     invoke-virtual {p3}, Lcom/kakaogame/server/KeyBaseResult;->getCode()I
 
     move-result v5
@@ -427,28 +436,28 @@
 
     invoke-static {v0, v1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 27
+    .line 31
     invoke-virtual {p3}, Lcom/kakaogame/server/KeyBaseResult;->isSuccess()Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
-    .line 28
+    .line 32
     invoke-virtual {p3}, Lcom/kakaogame/server/KeyBaseResult;->getCode()I
 
     move-result v0
 
     if-ne v0, p2, :cond_3
 
-    .line 29
+    .line 33
     invoke-static {p3}, Lcom/kakaogame/server/KeyBaseResult;->getResult(Ljava/util/Map;)Lcom/kakaogame/server/KeyBaseResult;
 
     move-result-object p1
 
     return-object p1
 
-    .line 30
+    .line 34
     :cond_5
     invoke-static {v4, p3}, Lcom/kakaogame/server/KeyBaseResult;->getSuccessResult(Ljava/util/Map;Ljava/lang/Object;)Lcom/kakaogame/server/KeyBaseResult;
 
@@ -610,7 +619,7 @@
     .line 8
     iget-object p2, p0, Lcom/kakaogame/session/WebSocketManager;->TAG:Ljava/lang/String;
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p3
 
@@ -622,7 +631,7 @@
     const/16 p2, 0x7d2
 
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -636,7 +645,6 @@
 .method public disconnect()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakaogame/session/WebSocketManager$1;
 
     invoke-direct {v0, p0}, Lcom/kakaogame/session/WebSocketManager$1;-><init>(Lcom/kakaogame/session/WebSocketManager;)V
@@ -724,7 +732,7 @@
     .line 3
     iget-object v1, p0, Lcom/kakaogame/session/WebSocketManager;->TAG:Ljava/lang/String;
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -742,10 +750,12 @@
 
     const-string v1, "send: "
 
+    .line 2
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 3
     invoke-virtual {p1}, Lcom/kakaogame/server/ServerRequest;->getRequestUri()Ljava/lang/String;
 
     move-result-object v2
@@ -758,7 +768,7 @@
 
     invoke-static {v0, v1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 4
     :try_start_0
     iget-object v0, p0, Lcom/kakaogame/session/WebSocketManager;->lock:Ljava/lang/Object;
 
@@ -766,13 +776,13 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 3
+    .line 5
     :try_start_1
     invoke-direct {p0, p1, p2, p3}, Lcom/kakaogame/session/WebSocketManager;->sendInternal(Lcom/kakaogame/server/ServerRequest;J)Lcom/kakaogame/server/ServerResult;
 
     move-result-object p2
 
-    .line 4
+    .line 6
     iget-object p3, p0, Lcom/kakaogame/session/WebSocketManager;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -791,7 +801,7 @@
 
     invoke-static {p3, v1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
+    .line 7
     invoke-virtual {p2}, Lcom/kakaogame/server/KeyBaseResult;->getCode()I
 
     move-result p3
@@ -800,7 +810,7 @@
 
     if-ne p3, v1, :cond_0
 
-    .line 6
+    .line 8
     invoke-virtual {p0}, Lcom/kakaogame/session/WebSocketManager;->disconnect()V
 
     goto :goto_0
@@ -810,17 +820,17 @@
 
     if-ne p3, v1, :cond_1
 
-    .line 7
+    .line 9
     invoke-virtual {p1}, Lcom/kakaogame/server/ServerRequest;->isIgnoreTimeout()Z
 
     move-result p1
 
     if-nez p1, :cond_1
 
-    .line 8
+    .line 10
     invoke-virtual {p0}, Lcom/kakaogame/session/WebSocketManager;->disconnect()V
 
-    .line 9
+    .line 11
     :cond_1
     :goto_0
     monitor-exit v0
@@ -830,7 +840,7 @@
     :catchall_0
     move-exception p1
 
-    .line 10
+    .line 12
     monitor-exit v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -843,10 +853,10 @@
     :catch_0
     move-exception p1
 
-    .line 11
+    .line 13
     iget-object p2, p0, Lcom/kakaogame/session/WebSocketManager;->TAG:Ljava/lang/String;
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p3
 
@@ -854,8 +864,8 @@
 
     const/16 p2, 0x7d2
 
-    .line 12
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 14
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -900,7 +910,7 @@
     .line 3
     iget-object p2, p0, Lcom/kakaogame/session/WebSocketManager;->TAG:Ljava/lang/String;
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p3
 
@@ -941,7 +951,6 @@
 .method public setWebsocketListener(Lcom/kakaogame/session/WebSocketManager$WebSocketEventListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/session/WebSocketManager;->websocketEventListener:Lcom/kakaogame/session/WebSocketManager$WebSocketEventListener;
 
     return-void

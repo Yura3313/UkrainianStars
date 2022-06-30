@@ -12,35 +12,35 @@
 
 
 # static fields
-.field public static final s:Landroid/widget/ImageView$ScaleType;
+.field public static final r:Landroid/widget/ImageView$ScaleType;
 
-.field public static final t:Landroid/graphics/Bitmap$Config;
+.field public static final s:Landroid/graphics/Bitmap$Config;
 
 
 # instance fields
+.field public final f:Landroid/graphics/RectF;
+
 .field public final g:Landroid/graphics/RectF;
 
-.field public final h:Landroid/graphics/RectF;
+.field public final h:Landroid/graphics/Matrix;
 
-.field public final i:Landroid/graphics/Matrix;
+.field public final i:Landroid/graphics/Paint;
 
-.field public final j:Landroid/graphics/Paint;
+.field public j:Landroid/graphics/Bitmap;
 
-.field public k:Landroid/graphics/Bitmap;
+.field public k:Landroid/graphics/BitmapShader;
 
-.field public l:Landroid/graphics/BitmapShader;
+.field public l:I
 
 .field public m:I
 
-.field public n:I
+.field public n:F
 
-.field public o:F
+.field public o:Landroid/graphics/ColorFilter;
 
-.field public p:Landroid/graphics/ColorFilter;
+.field public p:Z
 
 .field public q:Z
-
-.field public r:Z
 
 
 # direct methods
@@ -50,12 +50,12 @@
     .line 1
     sget-object v0, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
-    sput-object v0, Lcom/helpshift/views/CircleImageView;->s:Landroid/widget/ImageView$ScaleType;
+    sput-object v0, Lcom/helpshift/views/CircleImageView;->r:Landroid/widget/ImageView$ScaleType;
 
     .line 2
     sget-object v0, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
-    sput-object v0, Lcom/helpshift/views/CircleImageView;->t:Landroid/graphics/Bitmap$Config;
+    sput-object v0, Lcom/helpshift/views/CircleImageView;->s:Landroid/graphics/Bitmap$Config;
 
     return-void
 .end method
@@ -82,41 +82,41 @@
 
     invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
+    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->f:Landroid/graphics/RectF;
 
     .line 4
     new-instance p1, Landroid/graphics/RectF;
 
     invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->h:Landroid/graphics/RectF;
+    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
 
     .line 5
     new-instance p1, Landroid/graphics/Matrix;
 
     invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->i:Landroid/graphics/Matrix;
+    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->h:Landroid/graphics/Matrix;
 
     .line 6
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Paint;
+    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->i:Landroid/graphics/Paint;
 
     .line 7
-    sget-object p1, Lcom/helpshift/views/CircleImageView;->s:Landroid/widget/ImageView$ScaleType;
+    sget-object p1, Lcom/helpshift/views/CircleImageView;->r:Landroid/widget/ImageView$ScaleType;
 
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     const/4 p1, 0x1
 
     .line 8
-    iput-boolean p1, p0, Lcom/helpshift/views/CircleImageView;->q:Z
+    iput-boolean p1, p0, Lcom/helpshift/views/CircleImageView;->p:Z
 
     .line 9
-    iget-boolean p1, p0, Lcom/helpshift/views/CircleImageView;->r:Z
+    iget-boolean p1, p0, Lcom/helpshift/views/CircleImageView;->q:Z
 
     if-eqz p1, :cond_0
 
@@ -126,7 +126,7 @@
     const/4 p1, 0x0
 
     .line 11
-    iput-boolean p1, p0, Lcom/helpshift/views/CircleImageView;->r:Z
+    iput-boolean p1, p0, Lcom/helpshift/views/CircleImageView;->q:Z
 
     :cond_0
     return-void
@@ -166,7 +166,7 @@
     if-eqz v1, :cond_2
 
     .line 4
-    sget-object v1, Lcom/helpshift/views/CircleImageView;->t:Landroid/graphics/Bitmap$Config;
+    sget-object v1, Lcom/helpshift/views/CircleImageView;->s:Landroid/graphics/Bitmap$Config;
 
     const/4 v2, 0x2
 
@@ -186,7 +186,7 @@
 
     move-result v2
 
-    sget-object v3, Lcom/helpshift/views/CircleImageView;->t:Landroid/graphics/Bitmap$Config;
+    sget-object v3, Lcom/helpshift/views/CircleImageView;->s:Landroid/graphics/Bitmap$Config;
 
     invoke-static {v1, v2, v3}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
@@ -222,7 +222,7 @@
     move-exception p1
 
     .line 9
-    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-object v0
 .end method
@@ -231,26 +231,26 @@
     .locals 6
 
     .line 1
-    iget-boolean v0, p0, Lcom/helpshift/views/CircleImageView;->q:Z
+    iget-boolean v0, p0, Lcom/helpshift/views/CircleImageView;->p:Z
 
     const/4 v1, 0x1
 
     if-nez v0, :cond_0
 
     .line 2
-    iput-boolean v1, p0, Lcom/helpshift/views/CircleImageView;->r:Z
+    iput-boolean v1, p0, Lcom/helpshift/views/CircleImageView;->q:Z
 
     return-void
 
     .line 3
     :cond_0
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v0
 
@@ -260,12 +260,12 @@
 
     .line 4
     :cond_1
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Bitmap;
 
     if-nez v0, :cond_2
 
     .line 5
-    invoke-virtual {p0}, Landroid/widget/ImageView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
 
@@ -273,54 +273,54 @@
     :cond_2
     new-instance v0, Landroid/graphics/BitmapShader;
 
-    iget-object v2, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/Bitmap;
+    iget-object v2, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Bitmap;
 
     sget-object v3, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
 
     invoke-direct {v0, v2, v3, v3}, Landroid/graphics/BitmapShader;-><init>(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V
 
-    iput-object v0, p0, Lcom/helpshift/views/CircleImageView;->l:Landroid/graphics/BitmapShader;
+    iput-object v0, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/BitmapShader;
 
     .line 7
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->i:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 8
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->i:Landroid/graphics/Paint;
 
-    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->l:Landroid/graphics/BitmapShader;
+    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/BitmapShader;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
 
     .line 9
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v0
 
-    iput v0, p0, Lcom/helpshift/views/CircleImageView;->n:I
+    iput v0, p0, Lcom/helpshift/views/CircleImageView;->m:I
 
     .line 10
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v0
 
-    iput v0, p0, Lcom/helpshift/views/CircleImageView;->m:I
+    iput v0, p0, Lcom/helpshift/views/CircleImageView;->l:I
 
     .line 11
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->h:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
 
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v1
 
     int-to-float v1, v1
 
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v2
 
@@ -331,14 +331,14 @@
     invoke-virtual {v0, v3, v3, v1, v2}, Landroid/graphics/RectF;->set(FFFF)V
 
     .line 12
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->f:Landroid/graphics/RectF;
 
-    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->h:Landroid/graphics/RectF;
+    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
 
     invoke-virtual {v0, v1}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
 
     .line 13
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->f:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->height()F
 
@@ -348,7 +348,7 @@
 
     div-float/2addr v0, v1
 
-    iget-object v2, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
+    iget-object v2, p0, Lcom/helpshift/views/CircleImageView;->f:Landroid/graphics/RectF;
 
     invoke-virtual {v2}, Landroid/graphics/RectF;->width()F
 
@@ -360,21 +360,21 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/helpshift/views/CircleImageView;->o:F
+    iput v0, p0, Lcom/helpshift/views/CircleImageView;->n:F
 
     .line 14
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->i:Landroid/graphics/Matrix;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->h:Landroid/graphics/Matrix;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
     .line 15
-    iget v0, p0, Lcom/helpshift/views/CircleImageView;->m:I
+    iget v0, p0, Lcom/helpshift/views/CircleImageView;->l:I
 
     int-to-float v0, v0
 
-    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
+    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->f:Landroid/graphics/RectF;
 
     invoke-virtual {v1}, Landroid/graphics/RectF;->height()F
 
@@ -382,13 +382,13 @@
 
     mul-float v1, v1, v0
 
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->f:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
 
     move-result v0
 
-    iget v2, p0, Lcom/helpshift/views/CircleImageView;->n:I
+    iget v2, p0, Lcom/helpshift/views/CircleImageView;->m:I
 
     int-to-float v2, v2
 
@@ -401,26 +401,26 @@
     if-lez v0, :cond_3
 
     .line 16
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->f:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->height()F
 
     move-result v0
 
-    iget v1, p0, Lcom/helpshift/views/CircleImageView;->n:I
+    iget v1, p0, Lcom/helpshift/views/CircleImageView;->m:I
 
     int-to-float v1, v1
 
     div-float/2addr v0, v1
 
     .line 17
-    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
+    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->f:Landroid/graphics/RectF;
 
     invoke-virtual {v1}, Landroid/graphics/RectF;->width()F
 
     move-result v1
 
-    iget v4, p0, Lcom/helpshift/views/CircleImageView;->m:I
+    iget v4, p0, Lcom/helpshift/views/CircleImageView;->l:I
 
     int-to-float v4, v4
 
@@ -438,26 +438,26 @@
 
     .line 18
     :cond_3
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->f:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
 
     move-result v0
 
-    iget v1, p0, Lcom/helpshift/views/CircleImageView;->m:I
+    iget v1, p0, Lcom/helpshift/views/CircleImageView;->l:I
 
     int-to-float v1, v1
 
     div-float/2addr v0, v1
 
     .line 19
-    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
+    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->f:Landroid/graphics/RectF;
 
     invoke-virtual {v1}, Landroid/graphics/RectF;->height()F
 
     move-result v1
 
-    iget v4, p0, Lcom/helpshift/views/CircleImageView;->n:I
+    iget v4, p0, Lcom/helpshift/views/CircleImageView;->m:I
 
     int-to-float v4, v4
 
@@ -469,12 +469,12 @@
 
     .line 20
     :goto_0
-    iget-object v4, p0, Lcom/helpshift/views/CircleImageView;->i:Landroid/graphics/Matrix;
+    iget-object v4, p0, Lcom/helpshift/views/CircleImageView;->h:Landroid/graphics/Matrix;
 
     invoke-virtual {v4, v0, v0}, Landroid/graphics/Matrix;->setScale(FF)V
 
     .line 21
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->i:Landroid/graphics/Matrix;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->h:Landroid/graphics/Matrix;
 
     add-float/2addr v3, v2
 
@@ -482,7 +482,7 @@
 
     int-to-float v3, v3
 
-    iget-object v4, p0, Lcom/helpshift/views/CircleImageView;->g:Landroid/graphics/RectF;
+    iget-object v4, p0, Lcom/helpshift/views/CircleImageView;->f:Landroid/graphics/RectF;
 
     iget v5, v4, Landroid/graphics/RectF;->left:F
 
@@ -501,14 +501,14 @@
     invoke-virtual {v0, v3, v1}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
     .line 22
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->l:Landroid/graphics/BitmapShader;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/BitmapShader;
 
-    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->i:Landroid/graphics/Matrix;
+    iget-object v1, p0, Lcom/helpshift/views/CircleImageView;->h:Landroid/graphics/Matrix;
 
-    invoke-virtual {v0, v1}, Landroid/graphics/BitmapShader;->setLocalMatrix(Landroid/graphics/Matrix;)V
+    invoke-virtual {v0, v1}, Landroid/graphics/Shader;->setLocalMatrix(Landroid/graphics/Matrix;)V
 
     .line 23
-    invoke-virtual {p0}, Landroid/widget/ImageView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
 .end method
@@ -516,17 +516,16 @@
 .method public getScaleType()Landroid/widget/ImageView$ScaleType;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/helpshift/views/CircleImageView;->s:Landroid/widget/ImageView$ScaleType;
+    sget-object v0, Lcom/helpshift/views/CircleImageView;->r:Landroid/widget/ImageView$ScaleType;
 
     return-object v0
 .end method
 
-.method public onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Bitmap;
 
     if-nez v0, :cond_0
 
@@ -534,7 +533,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
@@ -544,7 +543,7 @@
 
     div-float/2addr v0, v1
 
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v2
 
@@ -552,20 +551,20 @@
 
     div-float/2addr v2, v1
 
-    iget v1, p0, Lcom/helpshift/views/CircleImageView;->o:F
+    iget v1, p0, Lcom/helpshift/views/CircleImageView;->n:F
 
-    iget-object v3, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Paint;
+    iget-object v3, p0, Lcom/helpshift/views/CircleImageView;->i:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v2, v1, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     return-void
 .end method
 
-.method public onSizeChanged(IIII)V
+.method public final onSizeChanged(IIII)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/ImageView;->onSizeChanged(IIII)V
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
     .line 2
     invoke-virtual {p0}, Lcom/helpshift/views/CircleImageView;->b()V
@@ -580,7 +579,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -595,7 +593,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->p:Landroid/graphics/ColorFilter;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->o:Landroid/graphics/ColorFilter;
 
     if-ne p1, v0, :cond_0
 
@@ -603,15 +601,15 @@
 
     .line 2
     :cond_0
-    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->p:Landroid/graphics/ColorFilter;
+    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->o:Landroid/graphics/ColorFilter;
 
     .line 3
-    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/helpshift/views/CircleImageView;->i:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 
     .line 4
-    invoke-virtual {p0}, Landroid/widget/ImageView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
 .end method
@@ -623,7 +621,7 @@
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     .line 2
-    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Bitmap;
 
     .line 3
     invoke-virtual {p0}, Lcom/helpshift/views/CircleImageView;->b()V
@@ -642,7 +640,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Bitmap;
 
     .line 3
     invoke-virtual {p0}, Lcom/helpshift/views/CircleImageView;->b()V
@@ -665,7 +663,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Bitmap;
 
     .line 3
     invoke-virtual {p0}, Lcom/helpshift/views/CircleImageView;->b()V
@@ -696,7 +694,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->k:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Lcom/helpshift/views/CircleImageView;->j:Landroid/graphics/Bitmap;
 
     .line 3
     invoke-virtual {p0}, Lcom/helpshift/views/CircleImageView;->b()V
@@ -708,7 +706,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/helpshift/views/CircleImageView;->s:Landroid/widget/ImageView$ScaleType;
+    sget-object v0, Lcom/helpshift/views/CircleImageView;->r:Landroid/widget/ImageView$ScaleType;
 
     if-ne p1, v0, :cond_0
 

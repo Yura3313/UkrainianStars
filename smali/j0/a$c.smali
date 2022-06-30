@@ -1,5 +1,5 @@
-.class public Lj0/a$c;
-.super Lg0/c;
+.class public final Lj0/a$c;
+.super Lg0/d;
 .source "ExploreByTouchHelper.java"
 
 
@@ -22,43 +22,35 @@
 .method public constructor <init>(Lj0/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lj0/a$c;->b:Lj0/a;
 
-    invoke-direct {p0}, Lg0/c;-><init>()V
+    invoke-direct {p0}, Lg0/d;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(I)Lg0/b;
+.method public final a(I)Lg0/c;
     .locals 1
 
     .line 1
     iget-object v0, p0, Lj0/a$c;->b:Lj0/a;
 
     .line 2
-    invoke-virtual {v0, p1}, Lj0/a;->t(I)Lg0/b;
+    invoke-virtual {v0, p1}, Lj0/a;->t(I)Lg0/c;
 
     move-result-object p1
 
     .line 3
-    iget-object p1, p1, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-static {p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->obtain(Landroid/view/accessibility/AccessibilityNodeInfo;)Landroid/view/accessibility/AccessibilityNodeInfo;
+    invoke-static {p1}, Lg0/c;->v(Lg0/c;)Lg0/c;
 
     move-result-object p1
 
-    .line 4
-    new-instance v0, Lg0/b;
-
-    invoke-direct {v0, p1}, Lg0/b;-><init>(Landroid/view/accessibility/AccessibilityNodeInfo;)V
-
-    return-object v0
+    return-object p1
 .end method
 
-.method public b(I)Lg0/b;
+.method public final b(I)Lg0/c;
     .locals 1
 
     const/4 v0, 0x2
@@ -91,26 +83,19 @@
     iget-object v0, p0, Lj0/a$c;->b:Lj0/a;
 
     .line 3
-    invoke-virtual {v0, p1}, Lj0/a;->t(I)Lg0/b;
+    invoke-virtual {v0, p1}, Lj0/a;->t(I)Lg0/c;
 
     move-result-object p1
 
     .line 4
-    iget-object p1, p1, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-static {p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->obtain(Landroid/view/accessibility/AccessibilityNodeInfo;)Landroid/view/accessibility/AccessibilityNodeInfo;
+    invoke-static {p1}, Lg0/c;->v(Lg0/c;)Lg0/c;
 
     move-result-object p1
 
-    .line 5
-    new-instance v0, Lg0/b;
-
-    invoke-direct {v0, p1}, Lg0/b;-><init>(Landroid/view/accessibility/AccessibilityNodeInfo;)V
-
-    return-object v0
+    return-object p1
 .end method
 
-.method public c(IILandroid/os/Bundle;)Z
+.method public final c(IILandroid/os/Bundle;)Z
     .locals 3
 
     .line 1

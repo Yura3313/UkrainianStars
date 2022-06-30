@@ -134,10 +134,12 @@
 
     const-string p4, "keepAliveDuration <= 0: "
 
+    .line 9
     invoke-static {p4, p2, p3}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p2
 
+    .line 10
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1
@@ -191,6 +193,7 @@
 
     move-result-object v4
 
+    .line 7
     invoke-virtual {p1}, Lokhttp3/internal/connection/RealConnection;->route()Lokhttp3/Route;
 
     move-result-object v5
@@ -213,7 +216,7 @@
 
     move-result-object v4
 
-    .line 7
+    .line 8
     invoke-static {}, Lokhttp3/internal/platform/Platform;->get()Lokhttp3/internal/platform/Platform;
 
     move-result-object v5
@@ -222,22 +225,22 @@
 
     invoke-virtual {v5, v4, v3}, Lokhttp3/internal/platform/Platform;->logCloseableLeak(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 8
+    .line 9
     invoke-interface {v0, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     const/4 v3, 0x1
 
-    .line 9
+    .line 10
     iput-boolean v3, p1, Lokhttp3/internal/connection/RealConnection;->noNewStreams:Z
 
-    .line 10
+    .line 11
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 11
+    .line 12
     iget-wide v2, p0, Lokhttp3/ConnectionPool;->keepAliveDurationNs:J
 
     sub-long/2addr p2, v2
@@ -246,7 +249,7 @@
 
     return v1
 
-    .line 12
+    .line 13
     :cond_2
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -448,7 +451,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/ConnectionPool;->connections:Ljava/util/Deque;
 

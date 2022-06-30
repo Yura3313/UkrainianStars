@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final j:Landroidx/appcompat/widget/ListPopupWindow;
+.field public final i:Landroidx/appcompat/widget/ListPopupWindow;
 
-.field public final k:Landroid/view/accessibility/AccessibilityManager;
+.field public final j:Landroid/view/accessibility/AccessibilityManager;
 
-.field public final l:Landroid/graphics/Rect;
+.field public final k:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -29,7 +29,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-static {p1, p2, p3, v0}, Lt4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
+    invoke-static {p1, p2, p3, v0}, Lu4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
     move-result-object p1
 
@@ -40,10 +40,10 @@
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->l:Landroid/graphics/Rect;
+    iput-object p1, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->k:Landroid/graphics/Rect;
 
     .line 4
-    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
@@ -61,7 +61,7 @@
     move v4, p3
 
     .line 6
-    invoke-static/range {v1 .. v6}, Lcom/google/android/material/internal/l;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
+    invoke-static/range {v1 .. v6}, Lcom/google/android/material/internal/k;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
@@ -84,7 +84,7 @@
     if-nez p3, :cond_0
 
     .line 9
-    invoke-virtual {p0, v2}, Landroid/widget/AutoCompleteTextView;->setKeyListener(Landroid/text/method/KeyListener;)V
+    invoke-virtual {p0, v2}, Landroid/widget/TextView;->setKeyListener(Landroid/text/method/KeyListener;)V
 
     :cond_0
     const-string p3, "accessibility"
@@ -96,7 +96,7 @@
 
     check-cast p3, Landroid/view/accessibility/AccessibilityManager;
 
-    iput-object p3, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->k:Landroid/view/accessibility/AccessibilityManager;
+    iput-object p3, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->j:Landroid/view/accessibility/AccessibilityManager;
 
     .line 11
     new-instance p3, Landroidx/appcompat/widget/ListPopupWindow;
@@ -107,22 +107,16 @@
     invoke-direct {p3, p1, v2, v0}, Landroidx/appcompat/widget/ListPopupWindow;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 13
-    iput-object p3, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->j:Landroidx/appcompat/widget/ListPopupWindow;
-
-    const/4 p1, 0x1
+    iput-object p3, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->i:Landroidx/appcompat/widget/ListPopupWindow;
 
     .line 14
-    invoke-virtual {p3, p1}, Landroidx/appcompat/widget/ListPopupWindow;->r(Z)V
+    invoke-virtual {p3}, Landroidx/appcompat/widget/ListPopupWindow;->s()V
 
     .line 15
-    iput-object p0, p3, Landroidx/appcompat/widget/ListPopupWindow;->u:Landroid/view/View;
-
-    const/4 p1, 0x2
+    iput-object p0, p3, Landroidx/appcompat/widget/ListPopupWindow;->t:Landroid/view/View;
 
     .line 16
-    iget-object v0, p3, Landroidx/appcompat/widget/ListPopupWindow;->E:Landroid/widget/PopupWindow;
-
-    invoke-virtual {v0, p1}, Landroid/widget/PopupWindow;->setInputMethodMode(I)V
+    invoke-virtual {p3}, Landroidx/appcompat/widget/ListPopupWindow;->r()V
 
     .line 17
     invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getAdapter()Landroid/widget/ListAdapter;
@@ -137,7 +131,7 @@
     invoke-direct {p1, p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$a;-><init>(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;)V
 
     .line 19
-    iput-object p1, p3, Landroidx/appcompat/widget/ListPopupWindow;->v:Landroid/widget/AdapterView$OnItemClickListener;
+    iput-object p1, p3, Landroidx/appcompat/widget/ListPopupWindow;->u:Landroid/widget/AdapterView$OnItemClickListener;
 
     .line 20
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
@@ -148,7 +142,6 @@
 .method public static a(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;Ljava/lang/Object;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0, p1}, Landroid/widget/AutoCompleteTextView;->convertSelectionToString(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
     move-result-object p1
@@ -166,7 +159,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
@@ -208,7 +201,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->G:Z
+    iget-boolean v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->F:Z
 
     if-eqz v1, :cond_0
 
@@ -221,14 +214,14 @@
 
     .line 4
     :cond_0
-    invoke-super {p0}, Landroid/widget/AutoCompleteTextView;->getHint()Ljava/lang/CharSequence;
+    invoke-super {p0}, Landroid/widget/TextView;->getHint()Ljava/lang/CharSequence;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 2
 
     .line 1
@@ -242,12 +235,12 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-boolean v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->G:Z
+    iget-boolean v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->F:Z
 
     if-eqz v0, :cond_0
 
     .line 4
-    invoke-super {p0}, Landroid/widget/AutoCompleteTextView;->getHint()Ljava/lang/CharSequence;
+    invoke-super {p0}, Landroid/widget/TextView;->getHint()Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -273,17 +266,17 @@
     const-string v0, ""
 
     .line 6
-    invoke-virtual {p0, v0}, Landroid/widget/AutoCompleteTextView;->setHint(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setHint(Ljava/lang/CharSequence;)V
 
     :cond_0
     return-void
 .end method
 
-.method public onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 12
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroid/widget/AutoCompleteTextView;->onMeasure(II)V
+    invoke-super {p0, p1, p2}, Landroid/widget/TextView;->onMeasure(II)V
 
     .line 2
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
@@ -295,7 +288,7 @@
     if-ne p2, v0, :cond_7
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getMeasuredWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p2
 
@@ -319,7 +312,7 @@
 
     .line 6
     :cond_0
-    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getMeasuredWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v3
 
@@ -328,7 +321,7 @@
     move-result v3
 
     .line 7
-    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getMeasuredHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v4
 
@@ -337,7 +330,7 @@
     move-result v4
 
     .line 8
-    iget-object v5, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->j:Landroidx/appcompat/widget/ListPopupWindow;
+    iget-object v5, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->i:Landroidx/appcompat/widget/ListPopupWindow;
 
     .line 9
     invoke-virtual {v5}, Landroidx/appcompat/widget/ListPopupWindow;->a()Z
@@ -352,9 +345,9 @@
 
     .line 10
     :cond_1
-    iget-object v5, v5, Landroidx/appcompat/widget/ListPopupWindow;->i:Landroidx/appcompat/widget/s;
+    iget-object v5, v5, Landroidx/appcompat/widget/ListPopupWindow;->h:Landroidx/appcompat/widget/r;
 
-    invoke-virtual {v5}, Landroid/widget/ListView;->getSelectedItemPosition()I
+    invoke-virtual {v5}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
 
     move-result v5
 
@@ -365,7 +358,7 @@
     move-result v5
 
     .line 12
-    invoke-interface {v0}, Landroid/widget/ListAdapter;->getCount()I
+    invoke-interface {v0}, Landroid/widget/Adapter;->getCount()I
 
     move-result v6
 
@@ -394,7 +387,7 @@
     if-ge v8, v5, :cond_4
 
     .line 14
-    invoke-interface {v0, v8}, Landroid/widget/ListAdapter;->getItemViewType(I)I
+    invoke-interface {v0, v8}, Landroid/widget/Adapter;->getItemViewType(I)I
 
     move-result v10
 
@@ -406,7 +399,7 @@
 
     .line 15
     :cond_2
-    invoke-interface {v0, v8, v9, v1}, Landroid/widget/ListAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-interface {v0, v8, v9, v1}, Landroid/widget/Adapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v9
 
@@ -445,7 +438,7 @@
 
     .line 20
     :cond_4
-    iget-object v0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->j:Landroidx/appcompat/widget/ListPopupWindow;
+    iget-object v0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->i:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->g()Landroid/graphics/drawable/Drawable;
 
@@ -454,12 +447,12 @@
     if-eqz v0, :cond_5
 
     .line 21
-    iget-object v2, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->l:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->k:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v2}, Landroid/graphics/drawable/Drawable;->getPadding(Landroid/graphics/Rect;)Z
 
     .line 22
-    iget-object v0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->l:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->k:Landroid/graphics/Rect;
 
     iget v2, v0, Landroid/graphics/Rect;->left:I
 
@@ -475,7 +468,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/ImageButton;->getMeasuredWidth()I
+    invoke-virtual {v0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v0
 
@@ -499,12 +492,12 @@
     move-result p1
 
     .line 27
-    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getMeasuredHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result p2
 
     .line 28
-    invoke-virtual {p0, p1, p2}, Landroid/widget/AutoCompleteTextView;->setMeasuredDimension(II)V
+    invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
     :cond_7
     return-void
@@ -526,7 +519,7 @@
     invoke-super {p0, p1}, Landroid/widget/AutoCompleteTextView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->j:Landroidx/appcompat/widget/ListPopupWindow;
+    iget-object p1, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->i:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getAdapter()Landroid/widget/ListAdapter;
 
@@ -537,17 +530,17 @@
     return-void
 .end method
 
-.method public showDropDown()V
+.method public final showDropDown()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getInputType()I
+    invoke-virtual {p0}, Landroid/widget/TextView;->getInputType()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->k:Landroid/view/accessibility/AccessibilityManager;
+    iget-object v0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->j:Landroid/view/accessibility/AccessibilityManager;
 
     if-eqz v0, :cond_0
 
@@ -559,9 +552,9 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->j:Landroidx/appcompat/widget/ListPopupWindow;
+    iget-object v0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->i:Landroidx/appcompat/widget/ListPopupWindow;
 
-    invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->M()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->R()V
 
     goto :goto_0
 

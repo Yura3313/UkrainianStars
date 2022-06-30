@@ -30,7 +30,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/id/view/FastScroll$d;->a:Lcom/supercell/id/view/FastScroll;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +39,7 @@
 
 
 # virtual methods
-.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
     .locals 0
 
     if-eqz p1, :cond_0
@@ -52,26 +51,7 @@
     :cond_0
     iget-object p1, p0, Lcom/supercell/id/view/FastScroll$d;->a:Lcom/supercell/id/view/FastScroll;
 
-    .line 3
-    iget-object p2, p1, Lcom/supercell/id/view/FastScroll;->g:Landroidx/recyclerview/widget/RecyclerView;
+    invoke-static {p1}, Lcom/supercell/id/view/FastScroll;->c(Lcom/supercell/id/view/FastScroll;)V
 
-    if-eqz p2, :cond_1
-
-    .line 4
-    sget p3, Lcom/supercell/id/R$id;->fastscroll_thumb:I
-
-    invoke-virtual {p1, p3}, Lcom/supercell/id/view/FastScroll;->a(I)Landroid/view/View;
-
-    move-result-object p3
-
-    check-cast p3, Landroid/widget/ImageView;
-
-    new-instance p4, Lcom/supercell/id/view/d;
-
-    invoke-direct {p4, p2, p1}, Lcom/supercell/id/view/d;-><init>(Landroidx/recyclerview/widget/RecyclerView;Lcom/supercell/id/view/FastScroll;)V
-
-    invoke-virtual {p3, p4}, Landroid/widget/ImageView;->post(Ljava/lang/Runnable;)Z
-
-    :cond_1
     return-void
 .end method

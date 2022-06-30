@@ -27,25 +27,11 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
-    invoke-static {}, Lcom/google/android/gms/internal/ads/c5$a;->D()Lcom/google/android/gms/internal/ads/c5$a;
+    invoke-static {}, Lcom/google/android/gms/internal/ads/c5$a;->B()Lcom/google/android/gms/internal/ads/c5$a;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/v5$b;-><init>(Lcom/google/android/gms/internal/ads/v5;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/b5;)V
-    .locals 0
-
-    .line 2
-    invoke-static {}, Lcom/google/android/gms/internal/ads/c5$a;->D()Lcom/google/android/gms/internal/ads/c5$a;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/ads/v5$b;-><init>(Lcom/google/android/gms/internal/ads/v5;)V
 
     return-void
 .end method

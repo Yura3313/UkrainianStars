@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/session/websocket/WebSocketClient;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/session/websocket/WebSocketClient$2;->this$0:Lcom/kakaogame/session/websocket/WebSocketClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

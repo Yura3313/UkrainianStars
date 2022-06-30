@@ -1,9 +1,9 @@
 .class public final synthetic Lcom/supercell/id/ui/MainActivity$i;
-.super Lle/i;
+.super Lse/g;
 .source "MainActivity.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,9 +18,9 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/i;",
-        "Lke/a<",
-        "Lae/i;",
+        "Lse/g;",
+        "Lre/a<",
+        "Lie/h;",
         ">;"
     }
 .end annotation
@@ -32,7 +32,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0, p1}, Lle/i;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p0, v0, p1}, Lse/g;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -47,12 +47,12 @@
     return-object v0
 .end method
 
-.method public final getOwner()Lpe/d;
+.method public final getOwner()Lwe/d;
     .locals 1
 
     const-class v0, Lcom/supercell/id/ui/MainActivity;
 
-    invoke-static {v0}, Lle/t;->a(Ljava/lang/Class;)Lpe/c;
+    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
 
     move-result-object v0
 
@@ -67,16 +67,16 @@
     return-object v0
 .end method
 
-.method public invoke()Ljava/lang/Object;
+.method public final invoke()Ljava/lang/Object;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lle/c;->receiver:Ljava/lang/Object;
+    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
 
     check-cast v0, Lcom/supercell/id/ui/MainActivity;
 
     .line 2
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
     .line 3
     sget v1, Lcom/supercell/id/R$id;->panel:I
@@ -87,14 +87,14 @@
 
     check-cast v1, Landroid/widget/FrameLayout;
 
-    new-instance v2, Lrc/y0;
+    new-instance v2, Lwc/s0;
 
-    invoke-direct {v2, v0}, Lrc/y0;-><init>(Lcom/supercell/id/ui/MainActivity;)V
+    invoke-direct {v2, v0}, Lwc/s0;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
-    invoke-static {v1, v2}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
+    invoke-static {v1, v2}, Lae/z2;->a(Landroid/view/View;Lre/l;)V
 
     .line 4
-    sget-object v0, Lae/i;->a:Lae/i;
+    sget-object v0, Lie/h;->a:Lie/h;
 
     return-object v0
 .end method

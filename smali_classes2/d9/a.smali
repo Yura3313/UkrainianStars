@@ -1,52 +1,121 @@
-.class public Ld9/a;
+.class public final synthetic Ld9/a;
 .super Ljava/lang/Object;
-.source "AttachmentPreviewVM.java"
-
-# interfaces
-.implements Ld7/a$a;
-
-
-# instance fields
-.field public final a:Lz7/f;
-
-.field public b:Lm8/a;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(Lz7/f;Lm8/a;)V
-    .locals 0
+.method public static final a(I)I
+    .locals 1
+
+    const/4 v0, 0x5
+
+    if-eq p0, v0, :cond_0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p0}, Ld9/a;->b(I)I
+
+    move-result p0
+
+    return p0
 
     .line 2
-    iput-object p1, p0, Ld9/a;->a:Lz7/f;
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    .line 3
-    iput-object p2, p0, Ld9/a;->b:Lm8/a;
+    const-string v0, "Can\'t get the number of an unknown enum value."
 
-    .line 4
-    iget-object p1, p1, Lz7/f;->t:Ld7/a;
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    .line 5
-    invoke-virtual {p1, p0}, Ld7/a;->b(Ld7/a$a;)V
-
-    return-void
+    throw p0
 .end method
 
-
-# virtual methods
-.method public a()V
+.method public static synthetic b(I)I
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Ld9/a;->a:Lz7/f;
+    const/4 v0, 0x1
 
-    new-instance v1, Ld9/a$a;
+    if-ne p0, v0, :cond_0
 
-    invoke-direct {v1, p0}, Ld9/a$a;-><init>(Ld9/a;)V
+    const/4 p0, 0x0
 
-    invoke-virtual {v0, v1}, Lz7/f;->h(Lz7/g;)V
+    return p0
 
-    return-void
+    :cond_0
+    const/4 v1, 0x2
+
+    if-ne p0, v1, :cond_1
+
+    return v0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    if-ne p0, v0, :cond_2
+
+    return v1
+
+    :cond_2
+    const/4 v1, 0x4
+
+    if-ne p0, v1, :cond_3
+
+    return v0
+
+    :cond_3
+    const/4 v0, 0x5
+
+    if-ne p0, v0, :cond_4
+
+    const/4 p0, -0x1
+
+    return p0
+
+    :cond_4
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public static synthetic c(I)Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-ne p0, v0, :cond_0
+
+    const-string p0, "NONE"
+
+    return-object p0
+
+    :cond_0
+    const/4 v0, 0x2
+
+    if-ne p0, v0, :cond_1
+
+    const-string p0, "SUBMITTED_NOT_SYNCED"
+
+    return-object p0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    if-ne p0, v0, :cond_2
+
+    const-string p0, "SUBMITTED_SYNCED"
+
+    return-object p0
+
+    :cond_2
+    const/4 v0, 0x4
+
+    if-ne p0, v0, :cond_3
+
+    const-string p0, "EXPIRED"
+
+    return-object p0
+
+    :cond_3
+    const/4 p0, 0x0
+
+    throw p0
 .end method

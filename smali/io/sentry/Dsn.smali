@@ -266,7 +266,6 @@
 .method public getPath()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Dsn;->path:Ljava/lang/String;
 
     return-object v0
@@ -275,7 +274,6 @@
 .method public getProjectId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Dsn;->projectId:Ljava/lang/String;
 
     return-object v0
@@ -284,7 +282,6 @@
 .method public getPublicKey()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Dsn;->publicKey:Ljava/lang/String;
 
     return-object v0
@@ -293,7 +290,6 @@
 .method public getSecretKey()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Dsn;->secretKey:Ljava/lang/String;
 
     return-object v0
@@ -302,7 +298,6 @@
 .method public getSentryUri()Ljava/net/URI;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Dsn;->sentryUri:Ljava/net/URI;
 
     return-object v0

@@ -1,172 +1,624 @@
-.class public final Lt3/n;
-.super Ljava/lang/Object;
+.class public abstract Lt3/n;
+.super Lt3/m;
+.source "com.google.android.gms:play-services-games@@20.0.1"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
+.implements Ljava/util/List;
+.implements Ljava/util/RandomAccess;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<E:",
         "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/internal/instantapps/zzn;",
-        ">;"
+        ">",
+        "Lt3/m<",
+        "TE;>;",
+        "Ljava/util/List<",
+        "TE;>;",
+        "Ljava/util/RandomAccess;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# static fields
+.field public static final g:Lt3/p;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lt3/w<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lt3/p;
+
+    sget-object v1, Lt3/u;->j:Lt3/u;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lt3/p;-><init>(Lt3/n;I)V
+
+    sput-object v0, Lt3/n;->g:Lt3/p;
 
     return-void
 .end method
 
+.method public constructor <init>()V
+    .locals 0
 
-# virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 12
+    invoke-direct {p0}, Lt3/m;-><init>()V
+
+    return-void
+.end method
+
+.method public static h([Ljava/lang/Object;I)Lt3/n;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E:",
+            "Ljava/lang/Object;",
+            ">([",
+            "Ljava/lang/Object;",
+            "I)",
+            "Lt3/n<",
+            "TE;>;"
+        }
+    .end annotation
+
+    if-nez p1, :cond_0
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    sget-object p0, Lt3/u;->j:Lt3/u;
+
+    return-object p0
+
+    .line 2
+    :cond_0
+    new-instance v0, Lt3/u;
+
+    invoke-direct {v0, p0, p1}, Lt3/u;-><init>([Ljava/lang/Object;I)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final add(ILjava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(ITE;)V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
+.end method
+
+.method public final addAll(ILjava/util/Collection;)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/util/Collection<",
+            "+TE;>;)Z"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
+.end method
+
+.method public b([Ljava/lang/Object;I)I
+    .locals 4
+
+    .line 1
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    :goto_0
+    if-ge v1, v0, :cond_0
 
-    const-wide/16 v3, 0x0
-
-    move-object v10, v1
-
-    move-object v11, v10
-
-    move-wide v7, v3
-
-    const/4 v6, 0x0
-
-    const/4 v9, 0x0
+    add-int v2, p2, v1
 
     .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result v1
+    move-result-object v3
 
-    if-ge v1, v0, :cond_5
+    aput-object v3, p1, v2
 
-    .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v1
-
-    const v2, 0xffff
-
-    and-int/2addr v2, v1
-
-    const/4 v3, 0x2
-
-    if-eq v2, v3, :cond_4
-
-    const/4 v3, 0x3
-
-    if-eq v2, v3, :cond_3
-
-    const/4 v3, 0x4
-
-    if-eq v2, v3, :cond_2
-
-    const/4 v3, 0x5
-
-    if-eq v2, v3, :cond_1
-
-    const/4 v3, 0x6
-
-    if-eq v2, v3, :cond_0
-
-    .line 4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 5
     :cond_0
-    sget-object v2, Landroid/accounts/Account;->CREATOR:Landroid/os/Parcelable$Creator;
+    add-int/2addr p2, v0
 
-    .line 6
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->l(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)[Ljava/lang/Object;
-
-    move-result-object v1
-
-    move-object v11, v1
-
-    check-cast v11, [Landroid/accounts/Account;
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    sget-object v2, Landroid/accounts/Account;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 8
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-
-    move-result-object v1
-
-    move-object v10, v1
-
-    check-cast v10, Landroid/accounts/Account;
-
-    goto :goto_0
-
-    .line 9
-    :cond_2
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v9
-
-    goto :goto_0
-
-    .line 10
-    :cond_3
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->t(Landroid/os/Parcel;I)J
-
-    move-result-wide v7
-
-    goto :goto_0
-
-    .line 11
-    :cond_4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v6
-
-    goto :goto_0
-
-    .line 12
-    :cond_5
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 13
-    new-instance p1, Lcom/google/android/gms/internal/instantapps/zzn;
-
-    move-object v5, p1
-
-    invoke-direct/range {v5 .. v11}, Lcom/google/android/gms/internal/instantapps/zzn;-><init>(IJILandroid/accounts/Account;[Landroid/accounts/Account;)V
-
-    return-object p1
+    return p2
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
+.method public final c()Lt3/x;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lt3/x<",
+            "TE;>;"
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Lt3/n;->listIterator()Ljava/util/ListIterator;
+
+    move-result-object v0
+
+    check-cast v0, Lt3/w;
+
+    return-object v0
+.end method
+
+.method public final contains(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+
+    invoke-virtual {p0, p1}, Lt3/n;->indexOf(Ljava/lang/Object;)I
+
+    move-result p1
+
+    if-ltz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 6
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_0
+
+    return v0
 
     .line 1
-    new-array p1, p1, [Lcom/google/android/gms/internal/instantapps/zzn;
+    :cond_0
+    instance-of v1, p1, Ljava/util/List;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_4
+
+    .line 2
+    check-cast p1, Ljava/util/List;
+
+    .line 3
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    .line 4
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    if-ne v1, v3, :cond_4
+
+    .line 5
+    instance-of v3, p1, Ljava/util/RandomAccess;
+
+    if-eqz v3, :cond_2
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v1, :cond_1
+
+    .line 6
+    invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Lt3/h;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return v0
+
+    .line 7
+    :cond_2
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v1
+
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    const/4 v3, 0x0
+
+    :goto_1
+    if-ge v3, v1, :cond_3
+
+    .line 8
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    .line 9
+    invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    add-int/lit8 v3, v3, 0x1
+
+    .line 10
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 11
+    invoke-static {v4, v5}, Lt3/h;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    goto :goto_1
+
+    .line 12
+    :cond_3
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result p1
+
+    if-nez p1, :cond_4
+
+    return v0
+
+    :cond_4
+    return v2
+.end method
+
+.method public final hashCode()I
+    .locals 4
+
+    .line 1
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v0, :cond_0
+
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 2
+    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
+    move-result v3
+
+    add-int/2addr v3, v1
+
+    xor-int/lit8 v1, v3, -0x1
+
+    xor-int/lit8 v1, v1, -0x1
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return v1
+.end method
+
+.method public i(II)Lt3/n;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II)",
+            "Lt3/n<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v0
+
+    invoke-static {p1, p2, v0}, Lt3/j;->b(III)V
+
+    sub-int/2addr p2, p1
+
+    .line 2
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v0
+
+    if-ne p2, v0, :cond_0
+
+    return-object p0
+
+    :cond_0
+    if-nez p2, :cond_1
+
+    .line 3
+    sget-object p1, Lt3/u;->j:Lt3/u;
+
+    return-object p1
+
+    .line 4
+    :cond_1
+    new-instance v0, Lt3/o;
+
+    invoke-direct {v0, p0, p1, p2}, Lt3/o;-><init>(Lt3/n;II)V
+
+    return-object v0
+.end method
+
+.method public final indexOf(Ljava/lang/Object;)I
+    .locals 4
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+
+    const/4 v0, -0x1
+
+    if-nez p1, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v1, :cond_2
+
+    .line 2
+    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-virtual {p1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    return v2
+
+    :cond_1
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    return v0
+.end method
+
+.method public final synthetic iterator()Ljava/util/Iterator;
+    .locals 1
+
+    invoke-virtual {p0}, Lt3/n;->c()Lt3/x;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final lastIndexOf(Ljava/lang/Object;)I
+    .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+
+    const/4 v0, -0x1
+
+    if-nez p1, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    :goto_0
+    if-ltz v1, :cond_2
+
+    .line 2
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    return v1
+
+    :cond_1
+    add-int/lit8 v1, v1, -0x1
+
+    goto :goto_0
+
+    :cond_2
+    return v0
+.end method
+
+.method public final synthetic listIterator()Ljava/util/ListIterator;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 6
+    invoke-virtual {p0, v0}, Lt3/n;->listIterator(I)Ljava/util/ListIterator;
+
+    move-result-object v0
+
+    check-cast v0, Lt3/w;
+
+    return-object v0
+.end method
+
+.method public final listIterator(I)Ljava/util/ListIterator;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v0
+
+    if-ltz p1, :cond_1
+
+    if-gt p1, v0, :cond_1
+
+    .line 2
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    sget-object p1, Lt3/n;->g:Lt3/p;
+
+    return-object p1
+
+    .line 4
+    :cond_0
+    new-instance v0, Lt3/p;
+
+    invoke-direct {v0, p0, p1}, Lt3/p;-><init>(Lt3/n;I)V
+
+    return-object v0
+
+    .line 5
+    :cond_1
+    new-instance v1, Ljava/lang/IndexOutOfBoundsException;
+
+    const-string v2, "index"
+
+    invoke-static {p1, v0, v2}, Lt3/j;->c(IILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v1, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final remove(I)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TE;"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
+.end method
+
+.method public final set(ILjava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(ITE;)TE;"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
+.end method
+
+.method public synthetic subList(II)Ljava/util/List;
+    .locals 0
+
+    invoke-virtual {p0, p1, p2}, Lt3/n;->i(II)Lt3/n;
+
+    move-result-object p1
 
     return-object p1
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/helpshift/util/g;
+.class public final Lcom/helpshift/util/g;
 .super Ljava/lang/Object;
 .source "CloneUtil.java"
 
@@ -9,7 +9,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
-            "Lcom/helpshift/util/j;",
+            "Lcom/helpshift/util/l;",
             ">(",
             "Ljava/util/List<",
             "TT;>;)",
@@ -51,14 +51,14 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/helpshift/util/j;
+    check-cast v1, Lcom/helpshift/util/l;
 
     .line 4
-    invoke-interface {v1}, Lcom/helpshift/util/j;->a()Ljava/lang/Object;
+    invoke-interface {v1}, Lcom/helpshift/util/l;->a()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/helpshift/util/j;
+    check-cast v1, Lcom/helpshift/util/l;
 
     invoke-virtual {p0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

@@ -110,7 +110,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/kakaogame/auth/view/LoginUIManager$RequestType;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/kakaogame/auth/view/LoginUIManager$RequestType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -125,7 +124,6 @@
 .method public static values()[Lcom/kakaogame/auth/view/LoginUIManager$RequestType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/auth/view/LoginUIManager$RequestType;->$VALUES:[Lcom/kakaogame/auth/view/LoginUIManager$RequestType;
 
     invoke-virtual {v0}, [Lcom/kakaogame/auth/view/LoginUIManager$RequestType;->clone()Ljava/lang/Object;
@@ -142,7 +140,6 @@
 .method public getValue()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/auth/view/LoginUIManager$RequestType;->value:I
 
     return v0

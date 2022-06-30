@@ -1,5 +1,5 @@
-.class public interface abstract Ll0/b$j;
-.super Ljava/lang/Object;
+.class public abstract Ll0/b$j;
+.super Ll0/c;
 .source "DynamicAnimation.java"
 
 
@@ -9,11 +9,24 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
+    accessFlags = 0x409
     name = "j"
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ll0/c<",
+        "Landroid/view/View;",
+        ">;"
+    }
+.end annotation
 
-# virtual methods
-.method public abstract a(Ll0/b;FF)V
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0}, Ll0/c;-><init>()V
+
+    return-void
 .end method

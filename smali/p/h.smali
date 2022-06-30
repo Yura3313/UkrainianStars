@@ -1,10 +1,6 @@
-.class public Lp/h;
+.class public final Lp/h;
 .super Ljava/lang/Object;
 .source "SolverVariable.java"
-
-
-# static fields
-.field public static m:I = 0x1
 
 
 # instance fields
@@ -206,7 +202,7 @@
     return-void
 .end method
 
-.method public c()V
+.method public final c()V
     .locals 6
 
     const/4 v0, 0x5
@@ -272,7 +268,7 @@
     return-void
 .end method
 
-.method public d(Lp/d;F)V
+.method public final d(Lp/d;F)V
     .locals 3
 
     .line 1
@@ -303,7 +299,7 @@
 
     aget-object v2, v2, v1
 
-    invoke-virtual {v2, p1, p0, v0}, Lp/b;->k(Lp/d;Lp/h;Z)V
+    invoke-virtual {v2, p1, p0, v0}, Lp/b;->j(Lp/d;Lp/h;Z)V
 
     add-int/lit8 v1, v1, 0x1
 
@@ -334,7 +330,7 @@
 
     aget-object v3, v3, v2
 
-    invoke-virtual {v3, p1, p2, v1}, Lp/b;->l(Lp/d;Lp/b;Z)V
+    invoke-virtual {v3, p1, p2, v1}, Lp/b;->k(Lp/d;Lp/b;Z)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -347,7 +343,7 @@
     return-void
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
     const-string v0, ""
@@ -357,6 +353,7 @@
 
     move-result-object v0
 
+    .line 2
     iget v1, p0, Lp/h;->b:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;

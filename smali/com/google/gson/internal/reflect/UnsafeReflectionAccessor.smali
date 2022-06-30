@@ -40,7 +40,6 @@
 .method private static getOverrideField()Ljava/lang/reflect/Field;
     .locals 2
 
-    .line 1
     :try_start_0
     const-class v0, Ljava/lang/reflect/AccessibleObject;
 
@@ -85,7 +84,7 @@
     const/4 v2, 0x1
 
     .line 3
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v1, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 4
     invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;

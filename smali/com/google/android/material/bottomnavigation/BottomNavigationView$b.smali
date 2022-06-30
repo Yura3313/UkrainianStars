@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract a(Landroid/view/MenuItem;)V
+.method public abstract a()V
 .end method

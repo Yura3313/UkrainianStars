@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/kakaogame/KGLeaderboard$KGRankingResponse;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGLeaderboard$KGRankingResponse$RankingComparator;->this$0:Lcom/kakaogame/KGLeaderboard$KGRankingResponse;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

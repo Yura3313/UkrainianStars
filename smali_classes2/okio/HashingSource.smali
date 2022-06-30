@@ -99,7 +99,6 @@
 .method public static hmacSha1(Lokio/Source;Lokio/ByteString;)Lokio/HashingSource;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSource;
 
     const-string v1, "HmacSHA1"
@@ -112,7 +111,6 @@
 .method public static hmacSha256(Lokio/Source;Lokio/ByteString;)Lokio/HashingSource;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSource;
 
     const-string v1, "HmacSHA256"
@@ -125,7 +123,6 @@
 .method public static md5(Lokio/Source;)Lokio/HashingSource;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSource;
 
     const-string v1, "MD5"
@@ -138,7 +135,6 @@
 .method public static sha1(Lokio/Source;)Lokio/HashingSource;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSource;
 
     const-string v1, "SHA-1"
@@ -151,7 +147,6 @@
 .method public static sha256(Lokio/Source;)Lokio/HashingSource;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSource;
 
     const-string v1, "SHA-256"

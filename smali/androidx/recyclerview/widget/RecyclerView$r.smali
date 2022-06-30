@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/RecyclerView$r;
+.class public final Landroidx/recyclerview/widget/RecyclerView$r;
 .super Ljava/lang/Object;
 .source "RecyclerView.java"
 
@@ -84,32 +84,4 @@
 
     :cond_0
     return-object v0
-.end method
-
-.method public b(JJ)J
-    .locals 4
-
-    const-wide/16 v0, 0x0
-
-    cmp-long v2, p1, v0
-
-    if-nez v2, :cond_0
-
-    return-wide p3
-
-    :cond_0
-    const-wide/16 v0, 0x4
-
-    .line 1
-    div-long/2addr p1, v0
-
-    const-wide/16 v2, 0x3
-
-    mul-long p1, p1, v2
-
-    div-long/2addr p3, v0
-
-    add-long/2addr p3, p1
-
-    return-wide p3
 .end method

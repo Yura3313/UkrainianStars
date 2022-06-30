@@ -29,8 +29,8 @@
 
 
 # virtual methods
-.method public a(Ll/d;)V
-    .locals 6
+.method public final a(Ll/d;)V
+    .locals 5
 
     .line 1
     new-instance v0, Landroid/graphics/Rect;
@@ -72,25 +72,23 @@
     double-to-int v2, v2
 
     .line 6
-    move-object v3, p1
-
-    check-cast v3, Landroidx/cardview/widget/CardView$a;
+    check-cast p1, Landroidx/cardview/widget/CardView$a;
 
     .line 7
-    iget-object v4, v3, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
+    iget-object v3, p1, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
-    iget v5, v4, Landroidx/cardview/widget/CardView;->i:I
+    iget v4, v3, Landroidx/cardview/widget/CardView;->h:I
 
-    if-le v1, v5, :cond_0
+    if-le v1, v4, :cond_0
 
     .line 8
-    invoke-static {v4, v1}, Landroidx/cardview/widget/CardView;->f(Landroidx/cardview/widget/CardView;I)V
+    invoke-static {v3, v1}, Landroidx/cardview/widget/CardView;->f(Landroidx/cardview/widget/CardView;I)V
 
     .line 9
     :cond_0
-    iget-object v1, v3, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
+    iget-object v1, p1, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
-    iget v3, v1, Landroidx/cardview/widget/CardView;->j:I
+    iget v3, v1, Landroidx/cardview/widget/CardView;->i:I
 
     if-le v2, v3, :cond_1
 
@@ -107,14 +105,12 @@
 
     iget v0, v0, Landroid/graphics/Rect;->bottom:I
 
-    check-cast p1, Landroidx/cardview/widget/CardView$a;
-
     invoke-virtual {p1, v1, v2, v3, v0}, Landroidx/cardview/widget/CardView$a;->b(IIII)V
 
     return-void
 .end method
 
-.method public b(Ll/d;)F
+.method public final b(Ll/d;)F
     .locals 0
 
     .line 1
@@ -128,7 +124,7 @@
     return p1
 .end method
 
-.method public c(Ll/d;)Landroid/content/res/ColorStateList;
+.method public final c(Ll/d;)Landroid/content/res/ColorStateList;
     .locals 0
 
     .line 1
@@ -142,7 +138,7 @@
     return-object p1
 .end method
 
-.method public d(Ll/d;F)V
+.method public final d(Ll/d;F)V
     .locals 1
 
     .line 1
@@ -158,7 +154,7 @@
     return-void
 .end method
 
-.method public e(Ll/d;F)V
+.method public final e(Ll/d;F)V
     .locals 2
 
     .line 1
@@ -177,13 +173,13 @@
     return-void
 .end method
 
-.method public f(Ll/d;)V
+.method public final f(Ll/d;)V
     .locals 0
 
     return-void
 .end method
 
-.method public g(Ll/d;)F
+.method public final g(Ll/d;)F
     .locals 0
 
     .line 1
@@ -197,7 +193,7 @@
     return p1
 .end method
 
-.method public h(Ll/d;Landroid/content/res/ColorStateList;)V
+.method public final h(Ll/d;Landroid/content/res/ColorStateList;)V
     .locals 0
 
     .line 1
@@ -214,7 +210,7 @@
     return-void
 .end method
 
-.method public i(Ll/d;)F
+.method public final i(Ll/d;)F
     .locals 0
 
     .line 1
@@ -228,7 +224,7 @@
     return p1
 .end method
 
-.method public j(Ll/d;Landroid/content/Context;Landroid/content/res/ColorStateList;FFF)V
+.method public final j(Ll/d;Landroid/content/Context;Landroid/content/res/ColorStateList;FFF)V
     .locals 7
 
     .line 1
@@ -269,7 +265,7 @@
     .line 6
     iget-object p2, p1, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
-    invoke-virtual {p2, v6}, Landroid/widget/FrameLayout;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p2, v6}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 7
     invoke-virtual {p0, p1}, Ll/c;->a(Ll/d;)V
@@ -277,7 +273,7 @@
     return-void
 .end method
 
-.method public k(Ll/d;F)V
+.method public final k(Ll/d;F)V
     .locals 2
 
     .line 1
@@ -355,7 +351,7 @@
     throw p1
 .end method
 
-.method public l(Ll/d;)V
+.method public final l(Ll/d;)V
     .locals 2
 
     .line 1
@@ -381,7 +377,7 @@
     return-void
 .end method
 
-.method public n(Ll/d;)F
+.method public final n(Ll/d;)F
     .locals 5
 
     .line 1
@@ -434,7 +430,7 @@
     return v1
 .end method
 
-.method public o(Ll/d;)F
+.method public final o(Ll/d;)F
     .locals 4
 
     .line 1

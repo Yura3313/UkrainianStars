@@ -1,4 +1,4 @@
-.class public Landroidx/transition/Transition$b;
+.class public final Landroidx/transition/Transition$b;
 .super Ljava/lang/Object;
 .source "Transition.java"
 

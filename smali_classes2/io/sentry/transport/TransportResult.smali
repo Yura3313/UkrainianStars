@@ -16,7 +16,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,7 +24,6 @@
 .method public synthetic constructor <init>(Lio/sentry/transport/TransportResult$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/sentry/transport/TransportResult;-><init>()V
 
     return-void
@@ -58,7 +56,6 @@
 .method public static success()Lio/sentry/transport/TransportResult;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/transport/TransportResult$SuccessTransportResult;->INSTANCE:Lio/sentry/transport/TransportResult$SuccessTransportResult;
 
     return-object v0

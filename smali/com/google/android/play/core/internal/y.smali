@@ -6,7 +6,7 @@
 
 
 # virtual methods
-.method public abstract H(Landroid/os/Bundle;)V
+.method public abstract M(Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -14,7 +14,7 @@
     .end annotation
 .end method
 
-.method public abstract h(Landroid/os/Bundle;)V
+.method public abstract c(Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -22,7 +22,7 @@
     .end annotation
 .end method
 
-.method public abstract t0(Landroid/os/Bundle;Landroid/os/Bundle;)V
+.method public abstract z0(Landroid/os/Bundle;Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

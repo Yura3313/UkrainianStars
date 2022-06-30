@@ -79,7 +79,6 @@
 .method public execute()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$PingRunnable;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
     iget-boolean v1, p0, Lokhttp3/internal/http2/Http2Connection$PingRunnable;->reply:Z

@@ -1,4 +1,4 @@
-.class public Lc0/b;
+.class public final Lc0/b;
 .super Ljava/lang/Object;
 .source "FontsContractCompat.java"
 
@@ -31,7 +31,6 @@
 .method public constructor <init>(Landroid/content/Context;Lc0/a;ILjava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lc0/b;->a:Landroid/content/Context;
 
     iput-object p2, p0, Lc0/b;->b:Lc0/a;
@@ -47,7 +46,7 @@
 
 
 # virtual methods
-.method public call()Ljava/lang/Object;
+.method public final call()Ljava/lang/Object;
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {

@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public final D0()V
+.method public final H0()V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

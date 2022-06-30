@@ -1,4 +1,4 @@
-.class public Lf0/d;
+.class public final Lf0/d;
 .super Ljava/lang/Object;
 .source "KeyEventDispatcher.java"
 
@@ -41,31 +41,11 @@
 
     .line 3
     :cond_0
-    sget-object v0, Lf0/r$g;->d:Ljava/util/ArrayList;
+    invoke-static {p0}, Lf0/r$g;->a(Landroid/view/View;)Lf0/r$g;
 
-    .line 4
-    sget v0, Landroidx/core/R$id;->tag_unhandled_key_event_manager:I
+    move-result-object p0
 
-    .line 5
-    invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lf0/r$g;
-
-    if-nez v1, :cond_1
-
-    .line 6
-    new-instance v1, Lf0/r$g;
-
-    invoke-direct {v1}, Lf0/r$g;-><init>()V
-
-    .line 7
-    invoke-virtual {p0, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 8
-    :cond_1
-    invoke-virtual {v1, p1}, Lf0/r$g;->e(Landroid/view/KeyEvent;)Z
+    invoke-virtual {p0, p1}, Lf0/r$g;->e(Landroid/view/KeyEvent;)Z
 
     move-result p0
 
@@ -279,7 +259,7 @@
     sput-object p0, Lf0/d;->d:Ljava/lang/reflect/Field;
 
     .line 24
-    invoke-virtual {p0, v3}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {p0, v3}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_2
     .catch Ljava/lang/NoSuchFieldException; {:try_start_2 .. :try_end_2} :catch_2
 

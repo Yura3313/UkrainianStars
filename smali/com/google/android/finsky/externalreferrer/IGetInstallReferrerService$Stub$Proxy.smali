@@ -19,19 +19,16 @@
 
 # direct methods
 .method public constructor <init>(Landroid/os/IBinder;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "com.google.android.finsky.externalreferrer.IGetInstallReferrerService"
-
-    .line 1
-    invoke-direct {p0, p1, v0}, Lcom/google/android/a/a;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/google/android/a/a;-><init>(Landroid/os/IBinder;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final h(Landroid/os/Bundle;)Landroid/os/Bundle;
+.method public final c(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -44,7 +41,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/a/a;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/a/a;->g:Ljava/lang/String;
 
     .line 2
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
@@ -68,7 +65,7 @@
     move-result-object p1
 
     :try_start_0
-    iget-object v3, p0, Lcom/google/android/a/a;->g:Landroid/os/IBinder;
+    iget-object v3, p0, Lcom/google/android/a/a;->f:Landroid/os/IBinder;
 
     .line 7
     invoke-interface {v3, v1, v0, p1, v2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z

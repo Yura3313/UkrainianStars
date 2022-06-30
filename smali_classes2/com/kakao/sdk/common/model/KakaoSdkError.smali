@@ -19,7 +19,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Lle/g;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Lse/e;)V
     .locals 0
 
     .line 2
@@ -33,7 +33,6 @@
 .method public getMsg()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/common/model/KakaoSdkError;->msg:Ljava/lang/String;
 
     return-object v0

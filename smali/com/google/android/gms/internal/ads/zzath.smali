@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field public final h:I
+.field public final g:I
 
 
 # direct methods
@@ -17,16 +17,24 @@
     invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzati;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzath;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzath;->f:Ljava/lang/String;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzath;->h:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzath;->g:I
 
     return-void
 .end method
 
 
 # virtual methods
+.method public final C0()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzath;->g:I
+
+    return v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
@@ -46,20 +54,20 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzath;
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzath;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzath;->f:Ljava/lang/String;
 
     .line 4
-    iget-object v2, p1, Lcom/google/android/gms/internal/ads/zzath;->g:Ljava/lang/String;
+    iget-object v2, p1, Lcom/google/android/gms/internal/ads/zzath;->f:Ljava/lang/String;
 
     .line 5
-    invoke-static {v1, v2}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 6
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzath;->h:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzath;->g:I
 
     .line 7
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -67,14 +75,14 @@
     move-result-object v1
 
     .line 8
-    iget p1, p1, Lcom/google/android/gms/internal/ads/zzath;->h:I
+    iget p1, p1, Lcom/google/android/gms/internal/ads/zzath;->g:I
 
     .line 9
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    invoke-static {v1, p1}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -92,17 +100,7 @@
 .method public final getType()Ljava/lang/String;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzath;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzath;->f:Ljava/lang/String;
 
     return-object v0
-.end method
-
-.method public final w0()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzath;->h:I
-
-    return v0
 .end method

@@ -10,7 +10,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/drive/events/zzv;",
+        "Lcom/google/android/gms/drive/UserMetadata;",
         ">;"
     }
 .end annotation
@@ -20,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,7 @@
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 5
+    .locals 9
 
     .line 1
     invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
@@ -38,51 +37,110 @@
 
     const/4 v1, 0x0
 
+    const/4 v2, 0x0
+
+    move-object v4, v1
+
+    move-object v5, v4
+
+    move-object v6, v5
+
+    move-object v8, v6
+
+    const/4 v7, 0x0
+
     .line 2
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result v2
+    move-result v1
 
-    if-ge v2, v0, :cond_1
+    if-ge v1, v0, :cond_5
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v2
+    move-result v1
 
-    const v3, 0xffff
+    const v2, 0xffff
 
-    and-int/2addr v3, v2
+    and-int/2addr v2, v1
 
-    const/4 v4, 0x3
+    const/4 v3, 0x2
 
-    if-eq v3, v4, :cond_0
+    if-eq v2, v3, :cond_4
+
+    const/4 v3, 0x3
+
+    if-eq v2, v3, :cond_3
+
+    const/4 v3, 0x4
+
+    if-eq v2, v3, :cond_2
+
+    const/4 v3, 0x5
+
+    if-eq v2, v3, :cond_1
+
+    const/4 v3, 0x6
+
+    if-eq v2, v3, :cond_0
 
     .line 4
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     .line 5
     :cond_0
-    sget-object v1, Lcom/google/android/gms/internal/drive/zzh;->CREATOR:Landroid/os/Parcelable$Creator;
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v8
+
+    goto :goto_0
 
     .line 6
-    invoke-static {p1, v2, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->m(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
+    :cond_1
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
 
-    move-result-object v1
+    move-result v7
 
     goto :goto_0
 
     .line 7
-    :cond_1
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    :cond_2
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :goto_0
 
     .line 8
-    new-instance p1, Lcom/google/android/gms/drive/events/zzv;
+    :cond_3
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    invoke-direct {p1, v1}, Lcom/google/android/gms/drive/events/zzv;-><init>(Ljava/util/List;)V
+    move-result-object v5
+
+    goto :goto_0
+
+    .line 9
+    :cond_4
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v4
+
+    goto :goto_0
+
+    .line 10
+    :cond_5
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+
+    .line 11
+    new-instance p1, Lcom/google/android/gms/drive/UserMetadata;
+
+    move-object v3, p1
+
+    invoke-direct/range {v3 .. v8}, Lcom/google/android/gms/drive/UserMetadata;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
 
     return-object p1
 .end method
@@ -90,8 +148,7 @@
 .method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
-    new-array p1, p1, [Lcom/google/android/gms/drive/events/zzv;
+    new-array p1, p1, [Lcom/google/android/gms/drive/UserMetadata;
 
     return-object p1
 .end method

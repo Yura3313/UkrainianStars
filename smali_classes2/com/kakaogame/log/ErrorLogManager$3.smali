@@ -25,7 +25,6 @@
 .method public constructor <init>(Ljava/lang/Thread$UncaughtExceptionHandler;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/log/ErrorLogManager$3;->val$defaultUEH:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -76,6 +75,7 @@
 
     move-result-object v0
 
+    .line 5
     invoke-virtual {p2}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object v1
@@ -90,7 +90,7 @@
 
     move-result-object v0
 
-    .line 5
+    .line 6
     :cond_0
     new-instance v1, Ljava/util/LinkedHashMap;
 
@@ -98,7 +98,7 @@
 
     const-string v2, "exception"
 
-    .line 6
+    .line 7
     invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const/16 v4, 0xfa1
@@ -119,15 +119,15 @@
 
     move-object v10, p2
 
-    .line 7
+    .line 8
     invoke-static/range {v3 .. v11}, Lcom/kakaogame/log/ErrorLogManager;->access$200(Ljava/lang/String;ILcom/kakaogame/server/ServerRequest;Lcom/kakaogame/server/ServerResponse;Lcom/kakaogame/KGResult;Lcom/kakaogame/auth/LoginData;Lcom/kakaogame/idp/IdpAccount;Ljava/lang/Throwable;Ljava/lang/String;)V
 
-    .line 8
+    .line 9
     iget-object v0, p0, Lcom/kakaogame/log/ErrorLogManager$3;->val$defaultUEH:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     if-eqz v0, :cond_1
 
-    .line 9
+    .line 10
     invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
     :cond_1

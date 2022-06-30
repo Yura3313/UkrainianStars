@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/SearchView$b;
+.class public final Landroidx/appcompat/widget/SearchView$b;
 .super Ljava/lang/Object;
 .source "SearchView.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/SearchView;
+.field public final synthetic f:Landroidx/appcompat/widget/SearchView;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$b;->g:Landroidx/appcompat/widget/SearchView;
+    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$b;->f:Landroidx/appcompat/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,13 +34,12 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$b;->g:Landroidx/appcompat/widget/SearchView;
+    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$b;->f:Landroidx/appcompat/widget/SearchView;
 
-    invoke-virtual {v0}, Landroidx/appcompat/widget/SearchView;->x()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/SearchView;->w()V
 
     return-void
 .end method

@@ -312,7 +312,7 @@
     const-string v0, "uuid"
 
     .line 31
-    invoke-virtual {p1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -321,7 +321,7 @@
     const-string v0, "profile_nickname"
 
     .line 32
-    invoke-virtual {p1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -332,7 +332,7 @@
     const-string v0, "profile_thumbnail_image"
 
     .line 33
-    invoke-virtual {p1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -343,7 +343,7 @@
     const-string v0, "app_registered"
 
     .line 34
-    invoke-virtual {p1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -354,7 +354,7 @@
     const-string v0, "allowed_msg"
 
     .line 35
-    invoke-virtual {p1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -365,7 +365,7 @@
     const-string v0, "talk_os"
 
     .line 36
-    invoke-virtual {p1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -403,7 +403,7 @@
     if-eqz v2, :cond_0
 
     .line 40
-    invoke-virtual {p1, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -414,7 +414,7 @@
     invoke-virtual {p0, v4, v2}, Lcom/kakaogame/KGObject;->put(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 41
-    invoke-virtual {p1, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -441,7 +441,7 @@
     const-string v1, "recommended"
 
     .line 44
-    invoke-virtual {p1, v1}, Ljava/util/LinkedHashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v1}, Ljava/util/AbstractMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -450,7 +450,7 @@
     if-eqz v2, :cond_2
 
     .line 45
-    invoke-virtual {p1, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -486,7 +486,7 @@
     const-string v0, "impression_id"
 
     .line 48
-    invoke-virtual {p1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -747,7 +747,6 @@
 .method public static synthetic access$000(II)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/KGKakaoProfile;->loadInvitableFriendProfiles(II)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -758,7 +757,6 @@
 .method public static synthetic access$100(III)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/kakaogame/KGKakaoProfile;->requestInvitableFriendProfiles(III)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -1123,7 +1121,7 @@
 
     .line 31
     :try_start_1
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1132,7 +1130,7 @@
     const/16 p1, 0xfa1
 
     .line 32
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1144,7 +1142,7 @@
 
     .line 33
     :goto_1
-    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1161,7 +1159,7 @@
     const/4 p1, 0x0
 
     .line 35
-    invoke-static {v0, p1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1434,7 +1432,7 @@
     .line 10
     :goto_0
     :try_start_1
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1443,7 +1441,7 @@
     const/16 p1, 0xfa1
 
     .line 11
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1455,7 +1453,7 @@
 
     .line 12
     :goto_1
-    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1472,7 +1470,7 @@
     const/4 p1, 0x0
 
     .line 14
-    invoke-static {v0, p1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -1492,7 +1490,6 @@
 .method public getAccountType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/kakao/KakaoManager;->isTalkUser()Z
 
     move-result v0
@@ -1514,7 +1511,6 @@
 
     const-string v0, "ci"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1529,7 +1525,6 @@
 
     const-string v0, "impressionId"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1544,7 +1539,6 @@
 
     const-string v0, "memberKey"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1559,7 +1553,6 @@
 
     const-string v0, "nickname"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1574,7 +1567,6 @@
 
     const-string v0, "profileImageUrl"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1714,7 +1706,6 @@
 
     const-string v0, "kakaoTalkOS"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1729,7 +1720,6 @@
 
     const-string v0, "thumbnailImageUrl"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1744,7 +1734,6 @@
 
     const-string v0, "uuid"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0

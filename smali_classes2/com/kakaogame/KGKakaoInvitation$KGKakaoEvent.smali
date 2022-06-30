@@ -106,7 +106,6 @@
 
     const-string v0, "description"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0

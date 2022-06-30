@@ -25,19 +25,18 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field public final h:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lw2/f;
+    new-instance v0, Lx2/f;
 
-    invoke-direct {v0}, Lw2/f;-><init>()V
+    invoke-direct {v0}, Lx2/f;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -51,10 +50,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -85,10 +84,10 @@
     move-result-object v1
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
 
     .line 5
-    invoke-static {v1, v2}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -100,10 +99,10 @@
     move-result-object p1
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
 
     .line 8
-    invoke-static {p1, v1}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -120,8 +119,7 @@
 .method public final getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -129,8 +127,7 @@
 .method public final getValue()Ljava/lang/String;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -143,7 +140,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -152,7 +149,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
 
     aput-object v2, v0, v1
 
@@ -168,30 +165,28 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lc2/f$a;
+    new-instance v0, Ld2/f$a;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lc2/f$a;-><init>(Ljava/lang/Object;Lc2/n0;)V
+    invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
 
     const-string v2, "Name"
 
     .line 3
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
 
     const-string v2, "Value"
 
     .line 5
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 6
-    invoke-virtual {v0}, Lc2/f$a;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ld2/f$a;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -204,30 +199,30 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x1
-
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
+
+    const/4 v1, 0x1
 
     const/4 v2, 0x0
 
     .line 3
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    const/4 v0, 0x2
+    invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+
+    const/4 v1, 0x2
 
     .line 5
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

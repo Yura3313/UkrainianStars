@@ -1,4 +1,4 @@
-.class public Lf0/r$c;
+.class public final Lf0/r$c;
 .super Ljava/lang/Object;
 .source "ViewCompat.java"
 
@@ -15,11 +15,11 @@
 
 
 # direct methods
-.method public static a(Landroid/view/View;Lf0/z;Landroid/graphics/Rect;)Lf0/z;
+.method public static a(Landroid/view/View;Lf0/a0;Landroid/graphics/Rect;)Lf0/a0;
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lf0/z;->m()Landroid/view/WindowInsets;
+    invoke-virtual {p1}, Lf0/a0;->m()Landroid/view/WindowInsets;
 
     move-result-object v0
 
@@ -31,7 +31,7 @@
     move-result-object p0
 
     .line 3
-    invoke-static {p0}, Lf0/z;->n(Landroid/view/WindowInsets;)Lf0/z;
+    invoke-static {p0}, Lf0/a0;->n(Landroid/view/WindowInsets;)Lf0/a0;
 
     move-result-object p0
 

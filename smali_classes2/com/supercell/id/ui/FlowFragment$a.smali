@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/FlowFragment$a;
-.super Landroidx/fragment/app/c0;
+.super Landroidx/fragment/app/y;
 .source "FlowFragment.kt"
 
 
@@ -15,24 +15,24 @@
 
 
 # instance fields
-.field public final h:Ljava/util/Map;
+.field public final h:Ljava/util/LinkedHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
             "Ljava/lang/Integer;",
             "Ljava/lang/ref/WeakReference<",
-            "Lrc/w;",
+            "Lwc/w;",
             ">;>;"
         }
     .end annotation
 .end field
 
-.field public final i:[Lke/a;
+.field public final i:[Lre/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[",
-            "Lke/a<",
-            "Lrc/w;",
+            "Lre/a<",
+            "Lwc/w;",
             ">;"
         }
     .end annotation
@@ -40,70 +40,65 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/FragmentManager;[Lke/a;)V
-    .locals 0
+.method public constructor <init>(Landroidx/fragment/app/FragmentManager;[Lre/a;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/fragment/app/FragmentManager;",
             "[",
-            "Lke/a<",
+            "Lre/a<",
             "+",
-            "Lrc/w;",
+            "Lwc/w;",
             ">;)V"
         }
     .end annotation
 
-    if-eqz p2, :cond_0
+    const-string v0, "fragments"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/fragment/app/c0;-><init>(Landroidx/fragment/app/FragmentManager;)V
+    invoke-direct {p0, p1}, Landroidx/fragment/app/y;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
-    iput-object p2, p0, Lcom/supercell/id/ui/FlowFragment$a;->i:[Lke/a;
+    iput-object p2, p0, Lcom/supercell/id/ui/FlowFragment$a;->i:[Lre/a;
 
     .line 2
     new-instance p1, Ljava/util/LinkedHashMap;
 
     invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/ui/FlowFragment$a;->h:Ljava/util/Map;
+    iput-object p1, p0, Lcom/supercell/id/ui/FlowFragment$a;->h:Ljava/util/LinkedHashMap;
 
     return-void
-
-    :cond_0
-    const-string p1, "fragments"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public e()I
+.method public final e()I
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$a;->i:[Lke/a;
+    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$a;->i:[Lre/a;
 
     array-length v0, v0
 
     return v0
 .end method
 
-.method public j(Landroid/view/ViewGroup;I)Ljava/lang/Object;
+.method public final j(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 3
 
+    const-string v0, "container"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 1
-    invoke-super {p0, p1, p2}, Landroidx/fragment/app/c0;->j(Landroid/view/ViewGroup;I)Ljava/lang/Object;
+    invoke-super {p0, p1, p2}, Landroidx/fragment/app/y;->j(Landroid/view/ViewGroup;I)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$a;->h:Ljava/util/Map;
+    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$a;->h:Ljava/util/LinkedHashMap;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -113,7 +108,7 @@
 
     move-object v2, p1
 
-    check-cast v2, Lrc/w;
+    check-cast v2, Lwc/w;
 
     invoke-direct {v1, v2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
@@ -122,15 +117,14 @@
     return-object p1
 .end method
 
-.method public u(I)Landroidx/fragment/app/Fragment;
+.method public final u(I)Landroidx/fragment/app/Fragment;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$a;->i:[Lke/a;
+    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$a;->i:[Lre/a;
 
     aget-object p1, v0, p1
 
-    invoke-interface {p1}, Lke/a;->invoke()Ljava/lang/Object;
+    invoke-interface {p1}, Lre/a;->invoke()Ljava/lang/Object;
 
     move-result-object p1
 

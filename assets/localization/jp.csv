@@ -49,10 +49,10 @@ TID_BRAWLPASS_PURCHASE_ERROR_5,すでにすべての報酬を獲得している�
 TID_BRAWLPASS_PURCHASE_ERROR_6,エメラルド残高がマイナスであるため、ブロスタパスを購入できません。
 TID_PURCHASE_BRAWL_PASS_PROGRESS_TITLE,グレードを進める？
 TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,<NUM>トークン購入して次のグレードに進みますか？
-TID_PURCHASE_BRAWL_PASS_TITLE,ブロスタパスを手に入れよう！
+TID_PURCHASE_BRAWL_PASS_TITLE,ブロスタパスをゲット！
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,ブロスタパス
 TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,ブロスタパスセット
-TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,ブロスタパス報酬や追加クエストをアンロックできるほか、クエストを1週間に追加で2つ入れ替えることが可能になります
+TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,ブロスタパス報酬や追加クエストをアンロックできるほか、クエストを1週間に追加で<NUM>回入れ替えることが可能になります
 TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,ブロスタパス + <NUM>グレード
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,過去のシーズンのブロスタパスは購入できません。
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,今シーズンのブロスタパスが見つかりません。また後ほどお試しください。
@@ -274,7 +274,7 @@ TID_LONG_RANGE_SHOTGUN_DESC,シェリーの武器は、広範囲に広がる中�
 TID_MEGA_BLASH_ULTI,スーパーシェル
 TID_MEGA_BLASH_ULTI_DESC,障害物も敵も吹き飛ばす高威力。攻撃に耐えた敵も押し戻してしまう。
 TID_GUNSLINGER,コルト
-TID_GUNSLINGER_DESC,コルトは両手に持ったピストルから正確な射撃を繰り出す。障害物も粉々にする必殺技は、強烈なうえに射程も一段と長い。
+TID_GUNSLINGER_DESC,大事な時に大事な場所にいてくれない正義の味方、コルト。どこか抜けたところがあるが、ちょっとやそっとじゃ怖気づかない自信たっぷりのヒーローだ！
 TID_RAPID_FIRE,シックスシューター
 TID_RAPID_FIRE_DESC,自慢のリボルバーから長射程の6連弾を放つ。
 TID_RAPID_FIRE_ULTI,ブレットストーム
@@ -286,13 +286,13 @@ TID_SHOTGUN_BLAST_DESC,ダブルバレルのショットガンが大ダメージ
 TID_CHARGE,ブルドーザー
 TID_CHARGE_DESC,頭を低くして、敵や障害物に猛突進！こうなった彼は、もう誰にも止められない！
 TID_ROCKET_GIRL,ブロック
-TID_ROCKET_GIRL_DESC,ブロックは、爆発する長射程のロケット弾を発射する。必殺技は、障害物も木っ端みじんにする一斉射撃だ！
+TID_ROCKET_GIRL_DESC,いつもロケットで戦場を沸かせているブロック。戦っていないときは、そのしなやかな動きでダンスフロアを沸かせているという。
 TID_FIREWORKS_WEAPON,ロックンロケット
 TID_FIREWORKS_WEAPON_DESC,かなり射程の長いロックンロケットを1発ずつ発射する。
 TID_FIREWORKS_ULTI,ロケットレイン
 TID_FIREWORKS_ULTI_DESC,敵も障害物も吹き飛ばすロケットの連射。彼いわく、人はロケットの雨に打たれている姿が最も魅力的なのだとか。
 TID_TNT_DUDE,ダイナマイク
-TID_TNT_DUDE_DESC,ダイナマイクは、2本のダイナマイトを投げて攻撃する。必殺技はダイナマイトが詰まったタルで、あらゆるものを吹き飛ばす！
+TID_TNT_DUDE_DESC,噂では鉱山の奥底で行方不明になっていたダイナマイクが、ついに帰ってきた！圧倒的な爆発力はまだまだ健在だ！
 TID_MORTAR,短気決戦
 TID_MORTAR_DESC,どんな障害物もものともせず、2本のダイナマイトを投げ入れる。彼の異常な短気さに合わせて、導火線はすべて短くカットしてある。
 TID_MORTAR_ULTI,巨大タル爆弾
@@ -316,7 +316,7 @@ TID_CACTUS_WEAPON_DESC,四方八方にトゲを飛ばして爆発する、小さ
 TID_CACTUS_ULTI,トゲトゲ地獄
 TID_CACTUS_ULTI_DESC,トゲの海を生み出すグレネード。効果範囲に入った敵はダメージを負うだけでなく、動きも鈍くなる。
 TID_BARKEEP,バーリー
-TID_BARKEEP_DESC,バーリーは、範囲攻撃ができるボトルを投げる。必殺技は、広範囲に燃え広がるボトルの大盤振る舞いだ！
+TID_BARKEEP_DESC,スターパークで最高のドリンクを振る舞ってくれるバーリー。汚れた彼のバーからは、何やら煙が出てきたり、ボトルが飛び交ったりするそうだ！
 TID_BARKEEP_WEAPON,オン・ザ・ロック
 TID_BARKEEP_WEAPON_DESC,投げたボトルが地面で割れ、キツいアルコールが敵にダメージを与える。ダメージは効果範囲にいる時間につれて大きくなる。
 TID_BARKEEP_ULTI,ラストオーダー
@@ -340,7 +340,7 @@ TID_UNDERTAKER_WEAPON_DESC,シャベルを素早く振ることで前方へダ�
 TID_UNDERTAKER_ULTI,ドラキュラ
 TID_UNDERTAKER_ULTI_DESC,吸血コウモリの群れを召喚し、吸い取った敵のHPを自らのHPとして取り込む。なんとも不気味である...
 TID_CROW,クロウ
-TID_CROW_DESC,クロウは、毒を塗った3本の短剣を投げる。優雅に空を舞う必殺技では、離陸と着陸の瞬間に短剣を飛ばす。
+TID_CROW_DESC,ある日突然、町に現れた謎のクリーチャー。彼にケンカを仕掛けようとする者などいるだろうか？いや、もはやいないだろう...
 TID_CROW_WEAPON,飛び出しナイフ
 TID_CROW_WEAPON_DESC,3本の短剣を投げつける。かすり傷でも負った敵は、ナイフに塗られた毒により時間とともにダメージを受け、毒状態の間はすべての回復効果が減少する。
 TID_CROW_ULTI,スイープ
@@ -376,7 +376,7 @@ TID_BONE_THROWER_WEAPON_DESC,ミニガンナーがラクラクと持ち運ぶ、
 TID_BONE_THROWER_ULTI,バンデージ・マシン
 TID_BONE_THROWER_ULTI_DESC,激しい銃撃戦には、すり傷や切り傷が付き物。ばんそうこうで、チームをベストコンディションに保つ！
 TID_BLACK_HOLE,タラ
-TID_BLACK_HOLE_DESC,タラの3枚のタロットカードは、敵をすり抜ける。必殺技は、周辺にいる敵を吸い込んでダメージを与えるブラックホールだ！
+TID_BLACK_HOLE_DESC,神秘の世界に精通しているタラは、みんなの運勢を占うために最果ての地からはるばるやってきた。ちなみに、どのタロットカードにも「敗北」の2文字が刻まれている。
 TID_BLACK_HOLE_WEAPON,トリプルタロット
 TID_BLACK_HOLE_WEAPON_DESC,手首のスナップをきかせて、3枚のタロットカードを飛ばす。敵をすり抜けるカードには、タネも仕掛けもない！
 TID_BLACK_HOLE_ULTI,グラビティ
@@ -670,11 +670,11 @@ TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,クロマティックキャラクターを獲得できる確率はブロスタパスシーズンを重ねる度に上昇します。最初はレジェンドレアと同じ入手確率ですが、次はウルトラレア、そして最終的にハイパーレアと同じ確率まで上昇します。\n\n今シーズン、<BRAWLER>をアンロックできる確率は<RARITY>と同じです。
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,クロマティックキャラクターの獲得確率は、ブロスタパスシーズンを重ねる度に上昇します。最初はレジェンドレアと同じ獲得確率ですが、次はウルトラレア、そして最終的にハイパーレアと同じ確率まで上昇します。<BRAWLER>をボックスから獲得するには、シーズン<SEASON>でグレード<TIER>に到達する必要があります。
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,クロマティックキャラクターの獲得確率は、ブロスタパスシーズンを重ねる度に上昇します。最初はレジェンドレアと同じ獲得確率ですが、次はウルトラレア、そして最終的にハイパーレアと同じ確率まで上昇します。\n\n<BRAWLER>はシーズン<SEASON>で登場します。
-TID_MATCHMAKE_FAILED_5,マッチ不成立: イベントは終了しました
+TID_MATCHMAKE_FAILED_5,マッチ不成立：イベントは終了しました
 TID_MATCHMAKE_FAILED_7,マッチ不成立：チームメンバーがサーバーから切断されました
-TID_MATCHMAKE_FAILED_9,マッチメイキング失敗：メンテナンスが始まります
-TID_MATCHMAKE_FAILED_11,マッチメイキング失敗：チームメンバーが退出しました
-TID_MATCHMAKE_FAILED_12,マッチメイキング失敗：すでに最後のボスを倒しています
+TID_MATCHMAKE_FAILED_9,マッチ不成立：メンテナンスが始まります
+TID_MATCHMAKE_FAILED_11,マッチ不成立：チームメンバーが退出しました
+TID_MATCHMAKE_FAILED_12,マッチ不成立：すでに最後のボスを倒しています
 TID_MATCHMAKE_FAILED_14,パワープレイには、\nスターパワーを持った\nキャラクターが必要です。
 TID_MATCHMAKE_FAILED_15,本日のパワープレイバトルは\nすべて終了しました
 TID_MATCHMAKE_FAILED_19,選択のキャラクターは、今シーズンのパワープレイとチャレンジで使用が禁止されています
@@ -850,7 +850,7 @@ TID_GAME_MODE_5_DESC,敵チームのゴールまでボールを運べばポイ�
 TID_GAME_MODE_3_OG,殲滅
 TID_GAME_MODE_3_OG_DESC,敵チームのプレイヤーを倒して星を集めよう。敵を倒すたびに、プレイヤーの頭上に表示される賞金の星が1つずつ、最大7つまで増える。敵チームに自分の星を奪われないよう、全力で生き延びよう！\n\n終了時に相手よりも多く星を持っているチームが勝利！
 TID_GAME_MODE_11,制圧
-TID_GAME_MODE_11_DESC,敵のIKEタレットを攻撃して破壊しよう！どちらの陣地にも存在するこのタレットは、集めたボルトから強大な制圧ロボットを組み立てる。マップ中央付近にランダムに出現するボルトを回収して数秒間キープすれば、味方のIKEに供給できる。\n\n各バトルには、最大3回の制圧攻撃がある。制圧攻撃が始まった時点で、より多くのボルトを所持しているチームが制圧ロボットを製造できる。集めたボルトが多いほど、できあがるロボットが強くなる！\nなお、IKEには強力な防衛システムが備わっているので、攻撃する時は注意すること！敵の陣地に近付く時は、制圧ロボットを味方に連れて行こう！
+TID_GAME_MODE_11_DESC,敵のIKEタレットを攻撃して破壊しよう！どちらの陣地にも存在するこのタレットは、集めたボルトから強大な制圧ロボットを組み立てる。マップ中央付近にランダムに出現するボルトを回収して数秒間キープすれば、味方のIKEに供給できる。\n\n各バトルには、最大3回の制圧攻撃がある。制圧攻撃が始まった時点で、より多くのボルトを所持しているチームが制圧ロボットを製造できる。集めたボルトが多いほど、できあがるロボットが強くなる！\nなお、IKEには強力な防衛システムが備わっているので、攻撃するときは注意すること！敵の陣地に近付くときは、制圧ロボットを味方に連れて行こう！
 TID_BATTLE_END_GAIN_LABEL_FIRST_WIN,スタートークン
 TID_BATTLE_END_GAIN_LABEL_RANK_UP,ランクアップ
 TID_BATTLE_END_GAIN_LABEL_LEVEL_UP,レベルアップ
@@ -1014,7 +1014,7 @@ TID_PLAYER_STAT_18,最高到達ソロリーグ
 TID_PLAYER_STAT_19,最高到達クラブリーグ
 TID_NO_CLAN,クラブに参加していません
 TID_ULTIMATE_NOT_READY,敵に命中させて必殺技をチャージ！
-TID_CANT_ACTIVATE_ULTI,撃ち負けた時は必殺技を使えません！
+TID_CANT_ACTIVATE_ULTI,撃ち負けたときは必殺技を使えません！
 TID_NAME_TOO_SHORT,名前が短すぎます
 TID_ALLIANCE_JOINED,クラブに参加しました
 TID_COIN_RUSH_INTRO_TEXT,10エメラルドを集めれば勝利
@@ -1146,8 +1146,8 @@ TID_STREAM_EVENT_101,<sender>がチームを作成しました
 TID_STREAM_EVENT_102,プレイヤー<sender>が参加しました
 TID_STREAM_EVENT_103,プレイヤー<sender>が脱退しました
 TID_STREAM_EVENT_104,さらば！<sender>が<target>を追放しました
-TID_STREAM_EVENT_105,マッチメイキングが始まりました
-TID_STREAM_EVENT_106,マッチメイキングがキャンセルされました
+TID_STREAM_EVENT_105,マッチメイキング開始
+TID_STREAM_EVENT_106,マッチメイキング中止
 TID_STREAM_EVENT_107,バトルが始まりました
 TID_STREAM_EVENT_108,勝利しました
 TID_STREAM_EVENT_109,敗北しました
@@ -1581,7 +1581,7 @@ TID_SEASON_END_POPUP_GOLD_VALUE,<VALUE>
 TID_COIN_META_MIGRATION_TITLE,重要な変更点！
 TID_COIN_META_MIGRATION_OK,チュートリアルをプレイ
 TID_COIN_META_MIGRATION_TXT_1,ブロスタに新しいアップグレードシステムが追加されました。パワーポイントを集めることで、キャラクターをレベルアップできます。これまでの成長状況は、キャラクターのレベルに換算されました。
-TID_COIN_META_MIGRATION_TXT_2,これまでの成長状況がな損なわれないよう、未使用のアップグレードトークンの代わりにブロスタボックスを受け取りました。また、補助アイテムもいくつか届いています。
+TID_COIN_META_MIGRATION_TXT_2,これまでの進行状況が損なわれないよう、未使用のアップグレードトークンの代わりにブロスタボックスを受け取りました。また、補助アイテムもいくつか届いています。
 TID_COIN_META_MIGRATION_TXT_3,今後、ゲームは横向きになり、操作も2本のジョイスティックで行います。
 TID_COIN_META_MIGRATION_TXT_4,コインブースターはなくなり、エメラルドに換算されました。
 TID_BOLTS_MIGRATION_TITLE,重要な変更点！
@@ -1625,11 +1625,11 @@ TID_BARREL_BOT_WEAPON_DESC,ダブルバレルのショットガンから、至�
 TID_BARREL_BOT_ULTI,バレルロール
 TID_BARREL_BOT_ULTI_DESC,胴体のタルに入って転がることで、受けるダメージを軽減し、壁にバウンドしながら敵をノックバックさせる。必殺技ゲージは時間とともに溜まっていく。
 TID_ARTILLERY_DUDE,ペニー
-TID_ARTILLERY_DUDE_DESC,ペニーは、標的とその後ろにいる敵にダメージを与えるコインが入った袋を発射する。必殺技では、迫撃砲タイプの大砲を設置する！
+TID_ARTILLERY_DUDE_DESC,じゃじゃ馬のペニーは、広大な海は自分のものだと言い張っている。お宝のためならどんな危険をもいとわずに冒険に繰り出す、正真正銘の反逆児だ！
 TID_ARTILLERY_DUDE_WEAPON,ラッパ銃
 TID_ARTILLERY_DUDE_WEAPON_DESC,金貨が入った袋を発射する。敵に当たると袋が破けて金貨が飛び散り、さらに後ろにいる標的にまでダメージを与える。
 TID_ARTILLERY_DUDE_ULTI,伝家の砲台
-TID_ARTILLERY_DUDE_ULTI_DESC,長年愛用している自慢の大砲を設置する！その射程は長く、障害物に隠れた敵まで狙うことができる。
+TID_ARTILLERY_DUDE_ULTI_DESC,長年愛用している自慢の大砲を設置する！その砲弾は障害物をも越えて敵を襲い、着弾すると地面を火の海にする。
 TID_ITEM_NAME_SPECIAL,スターパワー
 TID_HERO_INFO_ITEM_LOCKED,レベル<LEVEL>以上で登場します。
 TID_HERO_INFO_LOCKED_INFO,ブロスタボックス\nからアンロック
@@ -1800,11 +1800,11 @@ TID_HINT_9,リコの弾丸は、跳ねるたびに\nその飛距離を延ばし�
 TID_HINT_10,<ccc0033>赤いコントローラー</c>は、画面の右側なら\nどこを触っても操作できます。
 TID_HINT_11,通常攻撃と必殺技には、どちらも2種類の発射モードがあります。オートエイム（タップ）とエイム（ドラッグ）です。
 TID_HINT_12,攻撃のエイムは、動いている\nターゲットを狙うのに有効です。
-TID_HINT_13,オートエイムは反応の速い攻撃で\nエイムをする時間がない時に便利です。
+TID_HINT_13,オートエイムは反応の速い攻撃で\nエイムをする時間がないときに便利です。
 TID_HINT_14,オートエイムはあなたの周りにいる敵に有効です。
 TID_HINT_15,やぶの中に隠れていても\n敵が近くに来ると見つかってしまいます。
 TID_HINT_16,オートエイムは一番近くにいる敵に向かって\nまっすぐ放たれ、敵の動きは考慮されません。
-TID_HINT_17,手動エイムは、やぶに向かって発射すると\n敵がいないか確かめたい時に便利です。
+TID_HINT_17,手動エイムは、やぶに向かって発射すると\n敵がいないか確かめたいときに便利です。
 TID_HINT_18,オートエイムは止まっている敵に有効です。
 TID_HINT_19,オートエイムは、まっすぐ向かってくる敵や\n背を向けて遠ざかる敵に有効です。
 TID_HINT_20,やぶの中にいても、そこから攻撃したり\nダメージを受けると敵から見えてしまいます。
@@ -1963,7 +1963,7 @@ TID_ADD_FRIEND_ERROR_DOES_NOT_EXIST,フレンドに追加しようとしたプ�
 TID_ADD_FRIEND_ERROR_OWN_AVATAR,自分をフレンドとして招待することはできません！
 TID_ADD_FRIEND_ERROR_TOO_MANY_FRIENDS_OTHER,あなたのフレンドのフレンド数が多すぎます。また後ほどお試しください。
 TID_ADD_FRIEND_ERROR_TOO_MANY_FRIENDS_YOU,フレンドが多すぎます。新しいフレンドを追加するには、今いるフレンドを1人削除してください。
-TID_HINT_26,ペニーのスプラッシュ攻撃は\n敵が一直線に並んでいる時に有効です。
+TID_HINT_26,ペニーのスプラッシュ攻撃は\n敵が一直線に並んでいるときに有効です。
 TID_HINT_27,開始前にチームメイトが集まったら\nバトルに向けてキャラの組合せを選んだり\n作戦を立てることができます。
 TID_HINT_28,フレンドバトルでは、イベントの練習をしたり\n仲間と大会を開催したりできます！
 TID_HINT_29,新しい仲間と良いバトルができたら「もう一度」を\n選んで引き続き一緒にプレイすることができます！
@@ -1973,7 +1973,7 @@ TID_EXPERIENCE,XP
 TID_HINT_32,特別イベントではトロフィーを獲得できません。ただし、ブロスタパスを手に入れるためのトークンは手に入ります。
 TID_HINT_33,クラブのメンバーリストから\nメンバーにフレンド申請を送信できます。
 TID_HINT_34,同じチームのプレイヤーには\nフレンド申請を送信できます。
-TID_HINT_35,何戦か良いバトルができた時には\nオススメのフレンドリストからそのメンバーに\nフレンド申請を送信しましょう。
+TID_HINT_35,何戦か良いバトルができたときには\nオススメのフレンドリストからそのメンバーに\nフレンド申請を送信しましょう。
 TID_HINT_36,同じチームのプレイヤーには\nフレンド申請を送信できます。
 TID_HINT_37,「募集」ボタンを使うと、フレンドやクラブの\n仲間に向けてチームのメンバー募集ができます。
 TID_COOP_GENERATED,ランブルアリーナ
@@ -3145,7 +3145,7 @@ TID_POCO_PIRATE_SKIN_SHOP,海賊\nポコ
 TID_BEA_LADYBUG_SKIN,てんとう虫 ビー
 TID_BEA_LADYBUG_SKIN_SHOP,てんとう虫\nビー
 TID_MAX_BLUE_SKIN,GT MAX
-TID_MAX_BLUE_SKIN_SHOP,GT\nMAX
+TID_MAX_BLUE_SKIN_SHOP,GT MAX
 TID_CTF_3,豪華プレゼント
 TID_CTF_4,クリスマスの強奪
 TID_CTF_5,陽気な逃亡
@@ -3338,6 +3338,8 @@ TID_ACCESSORY_BLOCKED_SUPER_REQUIRED,必殺技をチャージしてください�
 TID_ACCESSORY_BLOCKED_REQUIRES_MECHA,メカを発動してください！
 TID_ACCESSORY_BLOCKED_REQUIRES_DUPLICATE,必殺技を発動してください！
 TID_ACCESSORY_BLOCKED_DUPLICATE_TOO_FAR,分身が遠すぎます！
+TID_ACCESSORY_BLOCKED_SILENCED,攻撃不可！
+TID_ACCESSORY_BLOCKED_RANGE_TO_TURRET,射程内の敵がいません！
 TID_WALLY_SHORT_DESC,サポート
 TID_WALLY_DESC,植物を育てるために作られたスプラウトは、あふれる愛をこめて、飛び跳ねる種爆弾を発射する。必殺技は、植物の障害物を出現させる！
 TID_WALLY_WEAPON,種爆弾
@@ -3868,13 +3870,13 @@ TID_KING_OF_HILL_28,掌握
 TID_EMOTE_EQUIP_NOT_OWNED_SPECIAL,コレクターズピンズです！\nそう簡単には手に入りません！
 TID_LOGIN_WITH_FACEBOOK,Facebookで\nログイン
 TID_TERMS_OF_SERVICE_BUTTON_TENCENT,Tencent Games ライセンスとサービス利用規約
-TID_PRIVACY_POLICY_BUTTON_TENCENT,Tencent Games プライバシー保護のガイドライン
+TID_PRIVACY_POLICY_BUTTON_TENCENT,荒野乱斗隐私保护指引
 TID_PARENTS_GUIDE_BUTTON_TENCENT,Tencent Games 子どものプライバシー保護のガイドライン
 TID_TENCENT_LOGIN_AGREEMENTS,私は<TOS>、<PP>、<CHILDREN>および<THIRDPARTY>をよく読んだうえで、同意します。
 TID_THIRD_PARTY_SHARING_BUTTON_TENCENT,サードパーティ情報共有リスト
 TID_TENCENT_THIRDPARTY_INFO,サードパーティ情報共有リスト
 TID_TENCENT_LOGIN_TOS,Tencent Games ライセンスとサービス利用規約
-TID_TENCENT_LOGIN_PP,Tencent Games プライバシー保護のガイドライン
+TID_TENCENT_LOGIN_PP,荒野乱斗隐私保护指引
 TID_TENCENT_LOGIN_CHILDREN,Tencent Games 子どものプライバシー保護のガイドライン
 TID_TENCENT_LOGIN_AGREEMENT_NOTE,ゲームを始める前に、\n<TOS>\n<PP>\n<CHILDREN>\n<THIRDPARTY>\nをよくお読みのうえ、同意してください。
 TID_KING_OF_HILL_29,パワーサージ
@@ -3995,12 +3997,19 @@ TID_TENCENT_LOGIN_AGREEMENT_POPUP_2_TITLE,重要なお知らせ
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_2,ゲームを始める前に、\n<TOS>\n<PP>\n<CHILDREN>\n<THIRDPARTY>\nをよくお読みのうえ、同意してください。
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_BACK,戻る
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_NO,いいえ
+TID_TENCENT_LOGIN_BS_PP,荒野乱斗隐私保护指引
+TID_TENCENT_LOGIN_SPECIAL_TOS,《腾讯游戏许可及服务协议》
+TID_TENCENT_LOGIN_SPECIAL_OLD_PP,《腾讯游戏隐私保护指引》
+TID_TENCENT_LOGIN_SPECIAL_BS_PP,《荒野乱斗隐私保护指引》
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1_TITLE,更新提示
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1,尊敬的腾讯游戏用户：\n为充分保障您的权利及个人信息安全，我们根据法律法规要求，\n对<OLDPP>进行了更新。我们结合本产品和业务实际，更详细、具体地向您说明我们收集和使用您个人信息的业务场景及目的，具体可参见<PP>内更新提示。\n您也可以阅读完整版\n<PP>和<TOS>\n了解详尽的个人信息处理规则和用户权利义务。如您已详细阅读并同意\n<TOS>和<PP>，\n请点击\q同意\q继续使用我们的服务。
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_2,尊敬的用户，您需要详细阅读并同意\n<TOS>、<PP>、\n<CHILDREN>和<THIRDPARTY>，\n才可进入游戏哦。
 TID_BRAWL_PASS_SEASON_2,スターパークへようこそ！
 TID_BRAWL_PASS_INFO_TEXT_2,追加報酬を獲得しましょう！\n報酬の中にはこんなものがあります！\n\n新クロマティックキャラクター：<BRAWLER>\n\n限定スキン：<SKIN_1>\n\n限定スキン：<SKIN_2>\n\n<BRAWLER>のクールな限定ピンズ\n\nメガボックス<NUM>個\n\n更なるコインとパワーポイント\n\nさらに、ブロスタパスを速く進める追加クエストや、シーズン期間中、名前の色を光沢のあるクロマティックカラーに変更できる限定特典もあります！
 TID_BRAWL_PASS_SEASON_3,ぬくぬくホリデー
 TID_BRAWL_PASS_INFO_TEXT_3,追加報酬を獲得しましょう！\n報酬の中にはこんなものがあります！\n\n新クロマティックキャラクター：<BRAWLER>\n\n限定スキン：<SKIN_1>\n\n限定スキン：<SKIN_2>\n\n<BRAWLER>のクールな限定ピンズ\n\nメガボックス<NUM>個\n\n更なるコインとパワーポイント\n\nさらに、ブロスタパスを速く進める追加クエストや、シーズン期間中、名前の色を光沢のあるクロマティックカラーに変更できる限定特典もあります！
 TID_BRAWL_PASS_SEASON_4,スターフォース！
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,追加報酬を獲得しましょう！\n報酬の中にはこんなものがあります！\n\n新クロマティックキャラクター：<BRAWLER>\n\n期間限定スキン：<SKIN_1>\n\n期間限定スキン：<SKIN_2>\n\n<BRAWLER>のクールな期間限定ピンズ\n\n期間限定スプレー\n\nメガボックス<NUM>個\n\n更なるコインとパワーポイント\n\nブロスタパスを速く進める追加クエスト\n\n1週間にクエストを追加で<NUM>回入れ替え可能\n\nシーズン期間中、名前の色を光沢のあるクロマティックカラーに変更できる限定特典
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,報酬の中にはこんなものがあります！\n\n新クロマティックキャラクター：<BRAWLER>\n期間限定スキン：<SKIN_1>\n期間限定スキン：<SKIN_2>\n<BRAWLER>のクールな期間限定ピンズ\n期間限定スプレー\nメガボックス<NUM_BOX>個\n更なるコインとパワーポイント\nブロスタパスを速く進める追加クエスト\n1週間にクエストを追加で<NUM_REROLL>回入れ替え可能\nシーズン期間中、名前の色を光沢のあるクロマティックカラーに変更できる限定特典
 TID_QUESTS_MORE,クエストをすべて表示
 TID_QUESTS_MORE_NEXT_SEASON,<THIS_SEASON>のシーズンのクエストをすべてクリアしました。<NEXT_SEASON>のシーズンが始まると、新しいクエストをプレイできます。
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,シーズン<NUM>の報酬
@@ -4649,7 +4658,7 @@ TID_RANKED_CLUB_LEAGUE_EVENT_LOCATION_INFO,ランダムなゲームモード＆�
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_1,チームメイトやスキルレベルの近い他のプレイヤーと一緒に、3対3のバトルで戦いましょう。
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_2,先に2回バトルに勝利したチームが勝者です！
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_3,ゲームモードとマップがランダムに入れ替わります... 心の準備をお忘れなく！
-TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,シーズンが終了すると、使用したチケットの枚数や所属クラブのシーズンランクに応じて報酬をもらえます。
+TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,今週のイベントが終了すると、使用したチケットの枚数や所属クラブのランキングに応じて報酬をもらえます。
 TID_RANKED_EVENT_SEASON_REWARDS_BUTTON,シーズン報酬
 TID_RANKED_EVENT_SOLO,パワーリーグ
 TID_RANKED_EVENT_TEAMS,パワーリーグ
@@ -4742,6 +4751,7 @@ TID_RANKED_PICK_ERROR_BRAWLER_BANNED,このキャラクターは使用禁止で�
 TID_RANKED_PICK_ERROR_BRAWLER_PICKED,このキャラクターはすでに選択されています。\n他のキャラクターを選びましょう！
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED,このキャラクターは、まだパワーリーグで使用できません。\n他のキャラクターを選びましょう！
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED_CLUB_LEAGUE,このキャラクターはまだパワーマッチで使用できません。\n別のキャラクターを選んでください！
+TID_RANKED_ERROR_BRAWLER_BLACKLISTED,このキャラクターは大会運営によって選択禁止に設定されています
 TID_RANKED_HERO_POWER,パワー<NUM>
 TID_RANKED_REWARD_POPUP_SEASON,シーズン<SEASON>
 TID_RANKED_REWARDS_TOOL_TIP,パワーリーグには2つの3対3モードがあります。\n\n- ソロモード：リーグレベルが近い他のプレイヤー2人とランダムにチームが組まれます。\n\n- チームモード：マッチを開始する前に3人組のチームを作ります。\n\nパワーリーグ報酬は、いずれかのモードで記録したシーズン中の最高到達ランクに基づいて決定します。
@@ -4789,6 +4799,8 @@ TID_RANKED_MATCH_TERMINATED_REASON_1,マッチ終了：<NAME>の接続が切れ�
 TID_RANKED_MATCH_TERMINATED_REASON_2,マッチ終了：<NAME>の応答がありません。
 TID_RANKED_MATCH_TERMINATED_REASON_3,マッチ終了：シーズンが終了しました
 TID_RANKED_MATCH_TERMINATED_REASON_4,マッチが終了しました（<CODE>）。もう一度お試しください。
+TID_RANKED_MATCH_TERMINATED_REASON_5,マッチ終了：マッチが長すぎます
+TID_RANKED_MATCH_TERMINATED_REASON_6,マッチ終了：バトルが長すぎます
 TID_RANKED_GOAL_REWARD_PURCHASE_OPTION_SKIN,限定スキン購入オプション
 TID_RANKED_MATCH_TERMINATED_NAME_PLAYER,プレイヤー
 TID_RANKED2_CONFIRM_PICKED,選択済
@@ -4938,7 +4950,7 @@ TID_ACCESSORY_ASSAULT_SHOTGUN_BOMB,ブタの貯金箱
 TID_ACCESSORY_ASSAULT_SHOTGUN_BOMB_DESC,爆薬入りのブタの貯金箱を出現させる。設置すると少し遅れて爆発し、障害物を破壊するほか、範囲内にいる敵に<c00cc00><VALUE1></c>ダメージを与える。
 TID_KNIGHT,アッシュ
 TID_KNIGHT_SHORT_DESC,タンク
-TID_KNIGHT_DESC,ゴミを見るだけで怒りだす短気なアッシュは、攻撃をくらった際はもちろん、敵にダメージを与えた時でさえ激高する。怒りで暴走すると手に負えないが、最終的には落ち着くのでしばらく一人にしておくのが得策だ。
+TID_KNIGHT_DESC,ゴミを見るだけで怒りだす短気なアッシュは、攻撃をくらった際はもちろん、敵にダメージを与えたときでさえ激高する。怒りで暴走すると手に負えないが、最終的には落ち着くのでしばらく一人にしておくのが得策だ。
 TID_KNIGHT_WEAPON,掃き掃除
 TID_KNIGHT_WEAPON_DESC,怒りに任せて箒を振り下ろす。素早く逃げなければ、掃除前の地面に這いつくばることになる。
 TID_KNIGHT_ULTI,お掃除ロボット
@@ -5358,17 +5370,17 @@ TID_CLUB_LEAGUES_BUTTON_EVENT_DAY,イベント<DAY>日目
 TID_CLUB_LEAGUES_BUTTON_DAY_NEW,新イベント日！
 TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,次のイベント
 TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,次のイベント日まで：
-TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,シーズン開始まで
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,シーズンランク：<RANK>
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,シーズンランクなし
+TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,来週のイベントまで：
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,今週のランク：<RANK>
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,今週のランクなし
 TID_CLUB_LEAGUES_BUTTON_JOIN_CLUB_DESC,クラブに参加してプレイしよう
 TID_CLUB_LEAGUES_BUTTON_REGISTRATION_CLOSED,登録は終了しました
 TID_CLUB_LEAGUE_EVENT_TIME_LEFT,残り<TIME>
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_DESC,次のイベント日開始まで：
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_TIME,<TIME>
-TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,シーズン開始まで：<TIME>
+TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,来週のイベントまで：<TIME>
 TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TITLE,クラブリーグ
-TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,来シーズンのイベント：
+TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,来週のイベント：
 TID_CLUB_LEAGUE_TICKETS_PER_PLAY,<NUM><cA4B7E0>/プレイ</c>
 TID_CLUB_LEAGUE_TROPHIES_MAX_PER_WIN,最大獲得数/勝利
 TID_CLUB_LEAGUE_EVENT_TROPHY_WIN_DESC,クラブチームで勝利：
@@ -5408,17 +5420,17 @@ TID_CLUB_LEAGUE_MASTERS,マスター
 TID_CLUB_LEAGUE_TIER_1,I
 TID_CLUB_LEAGUE_TIER_2,II
 TID_CLUB_LEAGUE_TIER_3,III
-TID_CLUB_LEAGUE_SEASON_PROGRESS,シーズン進捗
+TID_CLUB_LEAGUE_SEASON_PROGRESS,今週の進捗
 TID_CLUB_LEAGUE_SEASON_ENDS_IN,終了まで：
 TID_CLUB_LEAGUE_WAITING_FINAL_RESULTS,最終結果待ち
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,シーズン結果待ち
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,シーズンの戦績を集計しています。最終結果はまた後ほどご確認ください。
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,今週の結果を集計中
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,今週の戦績を集計しています。最終結果はまた後ほどご確認ください。
 TID_CLUB_LEAGUE_RESULTS_TITLE,結果：
-TID_CLUB_LEAGUE_SEASON_OVER,シーズン終了！
-TID_CLUB_LEAGUE_SEASON_OVER_2,シーズン終了
+TID_CLUB_LEAGUE_SEASON_OVER,今週のイベント終了！
+TID_CLUB_LEAGUE_SEASON_OVER_2,今週のイベント終了
 TID_CLUB_LEAGUE_MAX_TROPHIES_AVAILABLE,入手可能な最大トロフィー
-TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,シーズン進捗
-TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,シーズン結果
+TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,今週の進捗
+TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,今週の戦績
 TID_CLUB_LEAGUE_ITEM_PROMOTING,昇格
 TID_CLUB_LEAGUE_ITEM_PROMOTING_MULTIPLE,<NUM>段階昇格
 TID_CLUB_LEAGUE_ITEM_DEMOTING,降格
@@ -5427,18 +5439,18 @@ TID_CLUB_LEAGUE_COLUMN_CLUB_NAME,クラブ名
 TID_CLUB_LEAGUE_COLUMN_DAILY_RANKS,デイリーランク
 TID_CLUB_LEAGUE_COLUMN_TOTAL_POINTS,合計ポイント
 TID_CLUB_LEAGUE_COLUMN_MAX_REWARD,最大報酬
-TID_CLUB_LEAGUE_SHOP_DESC,強化アイテムと限定スキンをゲット！
+TID_CLUB_LEAGUE_SHOP_DESC,強化アイテムや限定スキンなどをゲット！
 TID_CLUB_LEAGUE_SHOP_BUTTON_DESC,強化アイテムと限定スキンをゲット！
 TID_CLUB_LEAGUE_BUTTON_VISIT_CLUB_SHOP,クラブショップ
-TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,あなたの\nシーズン終了報酬
+TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,週の終わりの報酬
 TID_CLUB_LEAGUE_SEASON_END_REWARD_CLAIMED,回収済
 TID_CLUB_LEAGUE_NOT_YET_RANKED,ランクなし
 TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,参加登録終了
 TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,戦況を見る
-TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,来シーズンまでお待ちください！
-TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,来シーズンのイベント：
-TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,来シーズンの開始まで：<TIME>
-TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,シーズン中にチケットを使い切って\n報酬を最大限に獲得しましょう！
+TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,来週までお待ちください！
+TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,来週のイベント：
+TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,来週のイベントまで<TIME>
+TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,今週中にチケットを使い切って\n報酬を最大限に獲得しましょう！
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED_TITLE,使用したチケット：
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED,<NUM>/<MAX>
 TID_CLUB_LEAGUE_SEASON_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5449,7 +5461,7 @@ TID_CLUB_LEAGUE_NEED_MORE_GOLDEN_TICKETS,プレイするにはゴールドチケ
 TID_CLUB_LEAGUE_NOT_ENOUGH_GOLDEN_TICKETS_AVAILABLE_TO_PURCHASE,購入できるゴールドチケットがありません
 TID_CLUB_LEAGUE_FEATURE_UNAVAILABLE,この機能は現在利用できません
 TID_CLUB_LEAGUE_NOT_IN_LEAGUE,現在クラブがリーグに所属していません
-TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,現在クラブはリーグシーズンに参加していません！
+TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,クラブは今週のイベントに参加していません！
 TID_DUPLICATOR,ローラ
 TID_DUPLICATOR_SHORT_DESC,アタッカー
 TID_DUPLICATOR_DESC,普段は街のツアーガイドとして働くローラだが、ハリウッド映画の主演女優兼歌手という別の顔も持っている。お気に入りのスカーフで敵を攻撃し、必殺技では彼女の高すぎるプライドが滲み出る。
@@ -5467,7 +5479,7 @@ TID_CLUB_UNLOCK_TITLE_CLUBS,クラブ
 TID_CLUB_UNLOCK_TITLE_UNLOCKED,アンロックしました！
 TID_CLUB_UNLOCK_SEARCHING_FOR_CLUB,あなたにピッタリのクラブを探しています...
 TID_CLUB_UNLOCK_CLUB_LEAGUE_TITLE,クラブ\nリーグ
-TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,来シーズンに参加して\n限定報酬を入手しましょう！
+TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,来週のイベントに参加して\n限定報酬を入手しましょう！
 TID_CLUB_UNLOCK_CLUB_FOUND,クラブが見つかりました！
 TID_CLUB_UNLOCK_WELCOME_TO_CLUB,クラブにようこそ！
 TID_CLUB_UNLOCK_LETS_GO,OK
@@ -5480,8 +5492,8 @@ TID_CLUB_UNLOCK_STAT_TYPE,タイプ
 TID_SHOP_BRAWLOWEEN_TITLE,ブロウィン
 TID_SHOP_BRAWLOWEEN_INFO,スキンセット
 TID_SKIN_INFO_BRAWLOWEEN,ブロウィンスキン
-TID_CLUB_LEAGUE_FLOW_NEW_SEASON,新シーズン！
-TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,シーズンが終了しました
+TID_CLUB_LEAGUE_FLOW_NEW_SEASON,新たな週が開始！
+TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,今週のイベント終了
 TID_CLUB_LEAGUE_FLOW_CLUB_LEAGUE,クラブリーグ
 TID_CLUB_LEAGUE_FLOW_DAY_NEW,NEW!
 TID_CLUB_LEAGUE_FLOW_EVENT_DAY_STARTED,イベント<NUM>日目が始まりました！
@@ -5492,8 +5504,8 @@ TID_CLUB_LEAGUE_FLOW_BUTTON_GO_SEASON_END,OK
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_START,OK
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_END,OK
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_LEAGUE_PROMOTION,OK
-TID_CLUB_LEAGUE_FLOW_SEASON_RANK,シーズンランク
-TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,シーズン終了報酬
+TID_CLUB_LEAGUE_FLOW_SEASON_RANK,今週のランク
+TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,週の終わりの報酬
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED_TITLE,使用したチケット
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED,<NUM><cA4B7E0>/<MAX></c>
 TID_CLUB_LEAGUE_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5504,7 +5516,7 @@ TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_1,購入エラー
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_COINS,コインが足りません！
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_GEMS,エメラルドが足りません！
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_3,購入できません
-TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,シーズン終了まで：<TIME>
+TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,イベント終了まで<TIME>
 TID_CLUB_LEAGUE_TICKET_SHOP_TITLE,ゴールドチケット
 TID_CLUB_LEAGUE_TICKET_SHOP_INFO,クラブリーグでは、1シーズンにつき<cFEA305><NUM>枚まで</c>ゴールドチケットを入手して、追加のマッチをプレイすることができます。各イベント日に使用して更なるクラブトロフィーを獲得すれば、クラブのデイリーランクを上げることも可能です。\n\n余ったゴールドチケットは、自動的に次のシーズンに持ち越されます。\n\nなお、消費したゴールドチケットの数は、シーズン終了時に獲得する報酬の量には影響しません。
 TID_CLUB_LEAGUE_TICKETS_GET_MORE,もっと入手する
@@ -5527,18 +5539,18 @@ TID_CLUB_LEAGUE_EVENTS_TITLE,イベント
 TID_CLUB_LEAGUE_EVENT_UNLOCKS_AT,アンロック：
 TID_CLUB_LEAGUE_SHOW_TICKETS_TOGGLE,獲得可能なクラブ\nトロフィーの<cFFDA14>最大数</c>を表示
 TID_CLUB_LEAGUE_INFO_TITLE,クラブリーグ情報
-TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,シーズンと\nイベント日
-TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>シーズンとイベント日</c>
-TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,各シーズン中、所属クラブは同じリーグにいる他の7つのクラブと対戦します。\n\n3日に分けて行われるリーグイベントでプレイして、クラブトロフィーを集めましょう。各イベント日に最も多くのトロフィーを集めたクラブが、シーズンランクにおいて最も多くのポイントを獲得します。\n\nクラブトロフィーはイベント日が終了するたびにリセットされます。\n\n<cFCBC22>ヒント：他のクラブメンバーとチームを組むと、ボーナスクラブトロフィーを獲得できます！</c>
-TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,チケット
-TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>チケット</c>
-TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,クラブリーグでイベントをプレイするには、チケットが必要です。クラブメンバーには、各イベント日に使用できるチケットが与えられます。\n\nチケットを使い切って、できる限り多くのクラブトロフィーを集め、シーズン報酬を最大限に獲得しましょう！
-TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,リーグ
-TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>リーグ</c>
-TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,週の終わりまでに最も多くのシーズンポイントを獲得したクラブは上位リーグに昇格し、獲得ポイントが最も少なかったクラブは降格します。最上位リーグでは、よりハイレベルなバトルと豪華な報酬が待っています。
+TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,ようこそ
+TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>クラブゲームへようこそ</c>
+TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,クラブのみんなと力を合わせて<cFCBC22>クラブショップ</c>の報酬を毎週獲得しましょう！\n\nクラブゲームでは、下の2つのクラブゲームが毎週入れ替わりで開催されます。\n<cFCBC22>クラブリーグウィーク</c>：リーグ内の他のクラブと競い合って、高ランクの報酬を獲得し、上位のリーグを目指しましょう。\n<cFCBC22>クラブクエストウィーク</c>：1週間で3つのクラブクエストをクリアして、クラブのためにポイントを獲得しましょう。この期間にクラブが完了したクエストの数が多いほど、各メンバーへの報酬も豪華になります。
+TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,クラブリーグ
+TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>クラブリーグウィーク</c>
+TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,クラブリーグウィークでは、同じリーグにいる他の7つのクラブと対戦します。<cFCBC22>3日に分けて</c>開催されるクラブリーグイベントをプレイして、最多<cFCBC22>クラブトロフィー</c>を目指しましょう。クラブリーグのマッチをプレイするには<cFCBC22>チケット</c>が必要です。\n\nその週で最高の戦績を残したクラブが、最も豪華な報酬を手にします。週の終わりには、リーグの<cFCBC22>昇格</c>や<cFCBC22>降格</c>が行われます。\n\nボーナス：他のクラブメンバーと一緒にプレイすると、<cFCBC22>追加のクラブトロフィー</c>を獲得できます。
+TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,クラブクエスト
+TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>クラブクエストウィーク</c>
+TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,クラブクエストウィークでは、<cFCBC22>3つのクエスト</c>が与えられます。\n\nクラブクエストをクリアすると、自分のクラブに<cFCBC22>ポイント</c>が加算されます。週の終わりまでに稼いだポイントが多いほど、各メンバーへの報酬も豪華になります。なお、報酬を回収するには、少なくともクラブクエスト1つをクリアする必要があります。\n\nボーナス：他のクラブメンバーと一緒にプレイすると、<cFCBC22>クエストのポイントが2倍</c>になります。
 TID_CLUB_LEAGUE_INFO_PAGE_4_MARKER,クラブ\nショップ
-TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>クラブショップ</c>
-TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,クラブリーグに参加すると、クラブコインを獲得します。所属リーグとシーズンランクが高いほど、獲得できるクラブコインも増加します。シーズン中にチケットを使い切って、すべてのクラブコイン報酬を手に入れましょう。\n\n獲得したクラブコインは、クラブショップで使用できます！ここでは限定スキンのほか、追加のパワーポイントやコイン、ギア等も入手できます。お見逃しなく！
+TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>クラブショップとは？</c>
+TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,クラブリーグとクラブクエストをプレイして<cFCBC22>クラブコイン</c>を手に入れ、クラブショップで使いましょう！\n\nクラブショップでは、<cFCBC22>キャラクターの強化</c>を最大50％まで加速するアイテムや、<cFCBC22>限定スキン</c>を購入できます！
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_1,7つのクラブを相手に対戦
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_2,3日間のイベント
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_3,イベントでクラブトロフィーを集めましょう
@@ -5579,17 +5591,17 @@ TID_CLUB_SHOP_BUTTON,クラブショップ
 TID_CLUB_SHOP_DESC,強化アイテムと限定スキンをゲット！
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED,キャラクター未入手
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED_DESC,購入するにはこのキャラクターを\nアンロックしてください
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,クラブリーグシーズン終了：あなたの所属クラブは<RANKING>位にランクインし、報酬として<COINS><cEE1B39>クラブコイン</c>を獲得しました！
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,クラブリーグシーズン終了：あなたの所属クラブは<RANKING>位にランクインしましたが、あなたは今シーズンには不参加でした。次のシーズンにはエントリーして、クラブコインを受け取りましょう！
-TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,シーズン終了時の最大報酬
-TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,シーズン中にチケットを使い切って\n報酬を最大限に獲得しましょう！
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,クラブリーグウィーク終了：あなたの所属クラブは<RANKING>位にランクインし、報酬として<COINS><cEE1B39>クラブコイン</c>を獲得しました！
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,クラブリーグウィーク終了：所属クラブは<RANKING>位にランクインしましたが、あなたは今週のイベントには不参加でした。来週はエントリーして、クラブコインを受け取りましょう！
+TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,報酬の最大量
+TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,今週中にチケットを使い切って\n報酬を最大限に獲得しましょう！
 TID_CLUB_LEAGUE_SEASON_REWARD_MAX,最大
 TID_CLUB_LEAGUE_SEASON_PROMOTING_DESC,上位リーグに昇格します
 TID_CLUB_LEAGUE_SEASON_DEMOTING_DESC,下位リーグに降格します
 TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,チームを募集
 TID_CLUB_LEAGUE_LOOKING_FOR_PLAYERS,プレイヤーを\n募集
 TID_CLUB_INFO_TAB_PLAYER_RANKS,プレイヤーランク
-TID_CLUB_INFO_TAB_LEAGUE_SEASON,クラブリーグシーズン
+TID_CLUB_INFO_TAB_LEAGUE_SEASON,クラブリーグウィーク
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY,イベント<NUM>日目
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY_NONE,イベント日
 TID_CLUB_MEMBER_LEAGUE_TICKETS,<NUM>/<MAX>
@@ -5624,20 +5636,24 @@ TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,クラブトロフィー報酬
 TID_REWARD_DESC_GEAR_TOKENS,ギアトークン
 TID_REWARD_DESC_GEAR_TOKEN_SINGLE,ギアトークン
 TID_REWARD_DESC_GEAR_SCRAP,ギアスクラップ
-TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,残念だけど、今シーズンへの\n参加には間に合わなかったみたい。\n\n来シーズンの開始まで自由に\n見てまわって、クラブを応援しましょう！
+TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,残念だけど、今週のイベントへの\n参加には間に合わなかったみたい。\n\n来週のイベント開始まで自由に\n見てまわって、クラブを\n応援しましょう！
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,クラブショップの商品を\n見てみましょう！
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,最終結果：
 TID_CLUB_LEAGUE_TEASER_TITLE,クラブリーグ
 TID_CLUB_LEAGUE_TEASER_JOIN_CLUB,クラブに参加
 TID_CLUB_LEAGUE_TEASER_MESSAGE,クラブと共に戦って\n強化アイテム＆限定スキンを\nゲット！
 TID_CLUB_LEAGUE_TEASER_REACH_TROPHIES_TO_UNLOCK,<NUM>トロフィー到達でクラブをアンロック！
-TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,クラブに参加して\n来シーズンを戦いましょう
+TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,クラブに参加してプレイしよう！
 TID_CLUB_LEAGUE_TEASER_FIND_OUT_MORE,詳細はこちら
-TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,今シーズンのスケジュール：
-TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,来シーズンのスケジュール：
+TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,今週のスケジュール：
+TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,来週のスケジュール：
 TID_CLUB_LEAGUE_EVENTS_DAY_STARTS_IN,開始まで<TIME>
 TID_CLUB_LEAGUE_EVENTS_DAY_ENDS_IN,終了まで<TIME>
 TID_CLUB_LEAGUE_EVENTS_INFO_BUTTON,クラブリーグとは？
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_CURRENT_SEASON,今週
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_ENDS_IN,終了まで<TIME>
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_NEXT_SEASON,来週
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_STARTS_IN,開始まで<TIME>
 TID_CLUBS_MEMBERS_CLUB_TROPHIES,クラブトロフィー
 TID_CLUBS_MEMBERS_TICKETS_USED,使用したチケット
 TID_CLUBS_MEMBERS_POWER_LEAGUE_RANK,パワーリーグランク
@@ -5702,7 +5718,7 @@ TID_TRUE_GOLD_DYNAMIKE_SKIN,トゥルーゴールド マイク
 TID_TRUE_GOLD_DYNAMIKE_SKIN_SHOP,トゥルーゴールド\nマイク
 TID_TRUE_SILVER_DYNAMIKE_SKIN,トゥルーシルバー マイク
 TID_TRUE_SILVER_DYNAMIKE_SKIN_SHOP,トゥルーシルバー\nマイク
-TID_MATCHMAKE_FAILED_8,マッチ不成立：イベントは利用できません
+TID_MATCHMAKE_FAILED_8,マッチ不成立：イベントはプレイできません
 TID_TEAM_ERROR_51,チーム参加申請に失敗：イベントは利用できません
 TID_TEAM_ERROR_52,チームに参加不可：イベントは利用できません
 TID_TEAM_ERROR_53,チームのメンバーが足りません
@@ -5758,7 +5774,7 @@ TID_LOOKING_TOGGLE_LOOKING_FOR_A_TEAM,オンライン中のプレイヤーに「
 TID_LOOKING_TOGGLE_LOOKING_FOR_PLAYERS,オンライン中のプレイヤーに「プレイヤーを募集中」のチームとして表示されます
 TID_CLUB_JOIN_FAIL_FEATURE_LOCKED,クラブに参加できません。クラブは<NUM>トロフィーでアンロックされます。
 TID_CLUB_LEAGUE_LEAGUES_POPUP_CURRENT_LEAGUE,現在のリーグ
-TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,クラブリーグシーズンが終了すると、\nクラブが昇格または降格します。\n上位リーグになるほど、獲得できるクラブコイン報酬が増えますよ！
+TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,クラブリーグウィークが終了すると、\nクラブが昇格または降格します。\n上位リーグになるほど、獲得できるクラブコイン報酬が増えますよ！
 TID_CLUB_LEAGUE_LEAGUES_POPUP_BUTTON,OK
 TID_CLUB_LEAGUE_LEAGUES_POPUP_TITLE,リーグ
 TID_IMPORTANT_MESSAGE_TITLE,重要なお知らせ
@@ -5923,10 +5939,10 @@ TID_CLAIM_VOUCHER_POPUP_TITLE,報酬を回収
 TID_CLAIM_VOUCHER_BUTTON_CLAIM,回収
 TID_CLAIM_VOUCHER_BUTTON_CANCEL,キャンセル
 TID_SPELL_FACTORY_CLAIM_FAILED_TITLE,報酬回収失敗
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,<c267F00><CODE></c>；エラーが発生したため、報酬を回収できませんでした
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,報酬を回収できませんでした。\n\n<c267F00><CODE></c>：報酬はすでに回収済みです。
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,無効なコード\n\n<c7F0000><CODE></c>
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,報酬を回収できませんでした。\n\n<c267F00><CODE></c>：報酬の回収期限が過ぎています。
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,報酬を回収できませんでした。
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,報酬を回収できませんでした。報酬はすでに回収済みです。
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,報酬を回収できませんでした。コードが無効です。
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,報酬を回収できませんでした。報酬の回収期限が過ぎています。
 TID_RANKED_FRIENDLY_BEST_OF_TOGGLE_TITLE,対戦形式
 TID_FLEA,イヴ
 TID_FLEA_SHORT_DESC,アタッカー
@@ -5938,7 +5954,7 @@ TID_FLEA_ULTI_DESC,ベビーがうようよと孵化する大きなタマゴを1
 TID_SPEC_ABI_FLEA_1,摂理への冒涜
 TID_SPEC_ABI_FLEA_1_DESC,通常攻撃で撃ち出されるタマゴの順番が逆になる。
 TID_SPEC_ABI_FLEA_2,ベビーシャワー
-TID_SPEC_ABI_FLEA_2_DESC,通常攻撃が敵に命中すると、一番大きなタマゴからベビーが1体産まれる。
+TID_SPEC_ABI_FLEA_2_DESC,通常攻撃の一番大きなタマゴが命中すると、そのタマゴから<c00cc00><VALUE1></c>秒にごとにベビーが産まれる。
 TID_ACCESSORY_FLEA_JUMP,ベビーシッター
 TID_ACCESSORY_FLEA_JUMP_DESC,ベビーを1体その場に産み落とし、大きくジャンプする。
 TID_ACCESSORY_FLEA_SYMBIOSIS,無条件の愛
@@ -5950,7 +5966,7 @@ TID_HATCHLING_HEALTH,ベビーのHP
 TID_HATCHLING_DAMAGE,ベビーのダメージ
 TID_HATCHLING_COUNT,ベビーの数
 TID_ACCESSORY_DUPLICATOR_SWAP,スタントダブル
-TID_ACCESSORY_DUPLICATOR_SWAP_DESC,ローラと分身の位置が入れ替わり、両者のHPが<c00cc00><VALUE1></c>回復する。
+TID_ACCESSORY_DUPLICATOR_SWAP_DESC,ローラと分身の位置が入れ替わり、ローラのHPが<c00cc00><VALUE1></c>回復する。
 TID_ACCESSORY_BLOCKED_EGO_TOO_FAR,分身が遠すぎます！
 TID_ACCESSORY_BLOCKED_MISSING_EGO,影なしでは使用できません！
 TID_GAME_MODE_25,殲滅
@@ -5967,13 +5983,13 @@ TID_ACCESSORY_BASEBALL_STICKY,増強ガム
 TID_ACCESSORY_BASEBALL_STICKY_DESC,次の必殺技が命中した敵を<c00cc00><VALUE1></c>秒間にわたってスローダウンする。
 TID_ACCESSORY_MUMMY_ACID,酸性スプレー
 TID_ACCESSORY_MUMMY_ACID_DESC,次の通常攻撃が壁をすり抜け、向こう側にいる敵まで届く。ただし、ダメージは<ccc0000><VALUE1>％</c>低減する。
-TID_FIRST_BLOOD,初撃破は<name>！
+TID_FIRST_BLOOD,<name>が敵を初撃破！
 TID_KILL_NUMBER_OWN,あと4回撃破！
-TID_KILL_NUMBER_OPPONENT,敵チーム：あと4回撃破！
+TID_KILL_NUMBER_OPPONENT,あと4回撃破されると敗北！
 TID_ONE_POINT_FROM_VICTORY,あと1回撃破すると勝利！
 TID_OPPONENT_ONE_POINT_FROM_VICTORY,あと1回撃破されると敗北！
-TID_VICTORY_MATCH_OVER,勝利！
-TID_LOSS_MATCH_OVER,敗北！
+TID_VICTORY_MATCH_OVER,勝利！\nバトル終了
+TID_LOSS_MATCH_OVER,敗北！\nバトル終了
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2022,2022年 旧正月スキン
 TID_LOGIN_CALENDAR_LEFT_TITLE,連続デイリーギフト
 TID_LOGIN_CALENDAR_LEFT_SUBTITLE,<cfffc11>15日間毎日ログインして</c><cfffc11>無料ギフト</c>を手に入れましょう！<cfffc11>1日でも回収を忘れると</c>それ以降のギフトは入手できなくなります。
@@ -6071,7 +6087,7 @@ TID_STAG_BEETLE_MEG_SKIN,カブトムシ メグ
 TID_STAG_BEETLE_MEG_SKIN_SHOP,カブトムシ\nメグ
 TID_SAVAGE_BULL_SKIN,ライオン ブル
 TID_SAVAGE_BULL_SKIN_SHOP,ライオン\nブル
-TID_WASP_BO_SKIN,スズメハチ ボウ
+TID_WASP_BO_SKIN,スズメバチ ボウ
 TID_WASP_BO_SKIN_SHOP,スズメバチ\nボウ
 TID_MR_FLY_SKIN,アブ ミスターP
 TID_MR_FLY_SKIN_SHOP,アブ\nミスターP
@@ -6355,18 +6371,237 @@ TID_LOGIN_CALENDAR_TOOLTIP_PIN_2,ピンズを使ってバトル中に気持ち�
 TID_LOGIN_CALENDAR_TOOLTIP_GADGETS,キャラクターのガジェットを選択しましょう！ガジェットはキャラクター固有の追加スキルで、バトル中に3回まで使用できます。
 TID_LOGIN_CALENDAR_TOOLTIP_STAR_POWER,キャラクターのスターパワーを選択しましょう。スターパワーは、キャラクターを強化する固有のパッシブスキルです。
 TID_LOGIN_CALENDAR_TUTORIAL_TOOLTIP,最初のデイリーギフトが待っています！タップして回収しましょう！
-TID_BRAWL_PASS_INFO_TEXT_10,追加報酬を獲得しましょう！\n報酬の中にはこんなものがあります！\n\n新クロマティックキャラクター：<BRAWLER>\n\n限定スキン：<SKIN_1>\n\n限定スキン：<SKIN_2>\n\n<BRAWLER>のクールな限定ピンズ\n\nメガボックス<NUM>個\n\n更なるコインとパワーポイント\n\nブロスタパスを速く進める追加クエスト\n\n1週間にクエストを追加で<NUM>回入れ替え可能\n\nシーズン期間中、名前の色を光沢のあるクロマティックカラーに変更できる限定特典
+TID_BRAWL_PASS_INFO_TEXT_10,報酬の中にはこんなものがあります！\n\n新クロマティックキャラクター：<BRAWLER>\n限定スキン：<SKIN_1>\n限定スキン：<SKIN_2>\n<BRAWLER>のクールな限定ピンズ\nメガボックス<NUM>個\n更なるコインとパワーポイント\nブロスタパスを速く進める追加クエスト\n1週間にクエストを追加で<NUM>回入れ替え可能\nシーズン期間中、名前の色を光沢のあるクロマティックカラーに変更できる限定特典
 TID_LOGIN_CALENDAR_STARR_PARK,スターパーク
 TID_LOGIN_CALENDAR_LOYALTY_PROGRAM,ロイヤリティプログラム
 TID_LOGIN_CALENDAR_TITLE,スターパーク ロイヤリティプログラム
 TID_REWARD_DESC_PLAYER_ICON_REGULAR,プレイヤーアイコン
 TID_CLUB_LEAGUE_CLUB_COINS_HOW_TO_GET,クラブリーグに参加してクラブコインを獲得しましょう
+TID_CLUB_EVENTS_TITLE,クラブゲーム
+TID_CLUB_EVENTS_LEAGUE_TAB_DAY,イベント日
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY,イベント<NUM>日目
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY_COMPLETE,終了
+TID_CLUB_EVENTS_LEAGUE_TAB_SEASON,週
+TID_CLUB_EVENTS_TAB_LEAGUE,リーグ
+TID_CLUB_EVENTS_TAB_QUESTS,クエスト
+TID_CLUB_EVENTS_BUTTON_CLUB_SHOP,クラブショップ
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_IS_TOP,各クラブ内の上位<TOP>位までの結果のみがカウントされます。現在あなたは<NUM>位です。
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_TOP,各クラブ内の上位<TOP>位までの結果のみがカウントされます。現在あなたは<cF76263><NUM></c>位です。
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_RANKED,各クラブ内の上位<TOP>位までの結果のみがカウントされます。<cF76263>あなたはまだ参加していません。</c>
+TID_CLUB_INFO_TOP_EVENT_DAY_PLAYER_DIVIDER,クラブ内の結果のうち、上位<TOP>位までの結果のみがカウントされます
+TID_CLUB_QUESTS_PLAYER_REWARD_DESC,週の終わりの報酬
+TID_CLUB_QUESTS_LOCKED_REWARD_DESC,クエストクリアでアンロック
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY,クラブ全体で<POINTS>ポイントに到達すると、こちらの報酬を週の終わりに獲得できます！
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_CURRENT,週の終わりに獲得できるクラブクエストの報酬です
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_LOCKED,現在のクラブクエストの報酬です。クラブクエストをクリアして、週の終わりに受け取りましょう！
+TID_CLUB_QUESTS_LEAGUES_BUTTON,リーグ
+TID_CLUB_QUESTS_LEAGUES_DESC,上位のクラブリーグに昇格すると、最大報酬が増加します。
+TID_CLUB_QUESTS_RANKS_CURRENT_LEAGUE,現在のリーグ
+TID_CLUB_QUESTS_RANKS_MAX_REWARD,最大報酬
+TID_CLUB_QUESTS_RANKS_MESSAGE,クラブリーグのランクによってクラブクエストウィークの最大報酬が決まります。上位リーグに昇格してクラブコインをたくさん獲得しましょう！
+TID_CLUB_QUESTS_RANKS_TITLE,リーグ
+TID_CLUB_QUESTS_FLOW_NEW_SEASON,新たな週が開始！
+TID_CLUB_QUESTS_FLOW_SEASON_ENDED,今週のイベント終了
+TID_CLUB_QUESTS_FLOW_CLUB_QUESTS,クラブクエスト
+TID_CLUB_QUESTS_FLOW_MAX_REWARD,最大報酬
+TID_CLUB_QUESTS_FLOW_BUTTON_GO,OK
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_START,始める
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_END,OK
+TID_CLUB_QUESTS_FLOW_SEASON_RANK,今週のランク
+TID_CLUB_QUESTS_FLOW_END_OF_SEASON_REWARD,週の終わりの報酬
+TID_CLUB_QUESTS_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_BADGE,<cFCF044>x2</c>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_DESC,クラブメンバーと一緒にプレイすると、クラブクエストのポイントが<cFCF044>2倍</c>になります
+TID_CLUB_QUESTS_ALL_COMPLETED_DESC,今週のクラブクエストはすべてクリアしました！
+TID_CLUB_QUEST_ALREADY_COMPLETED,このクラブクエストはクリア済みです！
+TID_CLUB_QUESTS_SEASON_ENDS_IN_TIME,イベント終了まで
+TID_CLUB_QUESTS_REWARD_LOCKED_DESC,最初のクエストで報酬開放
+TID_CLUB_QUESTS_COMPLETED_NUM,クリアしたクエスト：<NUM>/<MAX>
+TID_CLUB_QUESTS_TITLE,クラブクエスト
+TID_CLUB_QUESTS_NEW_SEASON,新たな週が開始！
+TID_CLUB_QUESTS_SEASON_END_NOTIFICATION,クラブクエストウィーク終了：今週の報酬として、<COINS><cEE1B39>クラブコイン</c>を獲得しました！
+TID_CLUB_QUESTS_CONTRIBUTIONS_TITLE,今週の貢献
+TID_CLUB_QUESTS_CONTRIBUTIONS_MEMBERS,クラブメンバー：<NUM>人
+TID_CLUB_QUESTS_CLUB_TEAM_BONUS,x2クラブチームボーナス
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TITLE,チームアップボーナス！
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_DESC,クラブメンバーと一緒にプレイすると、クラブクエストのポイントが<cFCF044>2倍</c>になります！
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PROGRESS,クラブクエストの進捗
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_X2,x2
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PLAY_SOLO,1人でプレイ
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_ONLINE,<NUM>人オンライン
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TEAM_UP,チームを組もう！
+TID_CLUB_QUESTS_WARNING_NOT_AVAILABLE,獲得したポイントは、今週のイベント開始時に所属していたクラブにのみ加算されます。\n\nこのクラブに貢献するには来週まで待ちましょう！
+TID_CLUB_QUESTS_SEASON_END_REWARD_CLAIMED,回収済
+TID_CLUB_LEAGUE_WARNING_NOT_AVAILABLE,所属しているクラブは、今週のクラブリーグに参加していないようです。次のクラブリーグウィークが始まったら、他のクラブと対戦できるようになります。
+TID_CLUB_EVENT_TIME_LEFT,残り<TIME>
+TID_SHOP_CLUB_SHOP_SEE_OFFERS,セール品を見る
+TID_SHOP_CLUB_SHOP_TITLE,クラブショップ
+TID_SHOP_CLUB_SHOP_DESC,強化を促進
 TID_SHOP_OFFER_INFO_25,新しいプレイヤーアイコン！
 TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,このギフトを<cFFB820>明日忘れずに回収</c>しましょう！回収を忘れると、それ以降のギフトは入手できなくなります。
 TID_BRAWLBALL_49,バウンシングゾーン
 TID_BRAWLBALL_50,全力疾走
 TID_BRAWLBALL_51,ハイスコア
 TID_BRAWLBALL_52,ピンポン
+TID_INBOX_CAPTION_72_68,寄付：スプレー
+TID_SILENCER,オーティス
+TID_SILENCER_SHORT_DESC,アタッカー
+TID_SILENCER_DESC,オーティスは、ヒトデの相棒シルと共に深海で静かに暮らしているストリートアーティスト。ふたりでタッグを組んで、スターパークをストリートアートでいっぱいにする。
+TID_SILENCER_WEAPON,インクアート
+TID_SILENCER_WEAPON_DESC,腕のように操れるスプレーガンから、敵に向かってインク玉を放つ。
+TID_SILENCER_ULTI,サイレントシー
+TID_SILENCER_ULTI_DESC,放り投げられたヒトデのシルが、最初に当たった1体の敵に張り付き、少しの間攻撃を封じる。
+TID_SPEC_ABI_SILENCER_1,ぺったんこシール
+TID_SPEC_ABI_SILENCER_1_DESC,ヒトデのシルが全力で敵にへばりつき、敵の攻撃を封じる時間が<c00cc00><VALUE1>％</c>長くなる。
+TID_SPEC_ABI_SILENCER_2,詰替用インク
+TID_SPEC_ABI_SILENCER_2_DESC,オーティスの放つインク玉が<c00cc00><VALUE1>％</c>増える。
+TID_ACCESSORY_SILENCER_GADGET_1,スリープスター
+TID_ACCESSORY_SILENCER_GADGET_1_DESC,次にシルを投げたときに敵に当たらなかった場合は地面に張り付き、敵が近付くまで目を覚まさない。
+TID_ACCESSORY_SILENCER_GADGET_2,黒潮
+TID_ACCESSORY_SILENCER_GADGET_2_DESC,次にオーティスが放つ攻撃が巨大なインク玉となり、落ちた場所にインクの水たまりを作る。水たまりは<c00cc00><VALUE2></c>秒にわたって、敵に<c00cc00><VALUE1></c>ずつダメージを与える。
+TID_RANDOM_GAME_MODE,ミステリー
+TID_NOTIFICATION_RANDOM,新しいミステリーマップが登場！新しい報酬を獲得しましょう！
+TID_SKIN_INFO_DEEPSEA,深海スキン
+TID_EMOTE_BUNDLE_DEEPSEA_PACK,深海スキンのピンズ
+TID_SUGGEST,提案
+TID_SUGGEST_CANCEL,キャンセル
+TID_PURCHASE_BRAWL_PASS_INFO_SHOP,ブロスタパス報酬のアンロック + 追加クエスト＆クエスト入替回数増加
+TID_SUGGESTED_BY,提案者：
+TID_SHOP_DEEPSEA_SKINS,深海スキン
+TID_SHOP_DEEPSEA_TITLE,深海バトル
+TID_SHOP_DEEPSEA_INFO,スキンセット
+TID_SKIN_INFO_BT21,BT21スキン
+TID_CLUB_EVENTS_ONBOARDING_TITLE,クラブゲーム
+TID_CLUB_EVENTS_ONBOARDING_SUBTITLE,強化アイテムと限定スキンをゲット！
+TID_CLUB_EVENTS_ONBOARDING_PAGE_1_TITLE,ウィークリークラブゲームへ\nようこそ！
+TID_CLUB_EVENTS_ONBOARDING_NEW_GAME,新しいクラブゲーム！
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_TITLE,クラブリーグ
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_DESCRIPTION,他のクラブと対戦！\n上位リーグを目指せ！
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_TITLE,クラブクエスト
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_DESCRIPTION,クラブの仲間とクエストをクリア！
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_1,クラブの仲間と\n毎週入れ替わる\nイベントをプレイ！
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_2,クラブコインを\n獲得！
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_3,クラブショップで強化アイテムをゲット！
+TID_SUGGEST_TITLE,キャラクターを提案
+TID_CLUB_LEAGUE_TOP_24_REWARDS,報酬はすべてのプレイヤーが週の終わりに獲得できます
+TID_CLUB_LEAGUE_STARTS_IN,クラブリーグ開始まで：
+TID_CLUB_QUESTS_STARTS_IN,クラブクエスト開始まで：
+TID_SHOWDOWN_71,ジャンプパーク
+TID_SHOWDOWN_72,バトルハイウェイ
+TID_SHOWDOWN_73,ワープタグ
+TID_CLUB_QUESTS_NOT_AVAILABLE,クラブクエストは現在プレイできません
+TID_CLUB_LEAGUE_NOT_AVAILABLE,クラブリーグは現在プレイできません
+TID_CLUB_QUESTS_WEEK_ACTIVE,クエストウィーク終了まで：
+TID_CLUB_LEAGUE_WEEK_ACTIVE,リーグウィーク終了まで：
+TID_CLUB_EVENTS_ACTIVE,プレイ可能
+TID_CLUB_EVENTS_STARTING,まもなく開始
+TID_CLUB_EVENTS_WAITING,開始待ち
+TID_CLUB_LEAGUE_PREVIOUS_WEEK,前の週
+TID_CLUB_LEAGUE_RESULTS,結果：
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_SHORT,リーグウィーク\n開始まで：
+TID_CLUB_QUESTS_WEEK_STARTS_IN_SHORT,クエストウィーク\n開始まで：
+TID_CLUB_LEAGUE_WEEK_STARTS_IN,次のクラブリーグウィーク開始まで：<TIME>
+TID_CLUB_QUESTS_WEEK_STARTS_IN,次のクラブクエストウィーク開始まで：<TIME>
+TID_CLUB_LEAGUE_WEEK_SCHEDULE,スケジュール
+TID_CLUB_QUESTS_PREVIOUS_WEEK_REWARD,前の週の報酬
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TEXT,次のクラブリーグウィーク
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TIME,開始まで：<TIME>
+TID_CLUB_EVENTS_PREVIOUS_WEEK,今週のイベント終了！
+TID_BT21_SANDY_SKIN,サンディ KOYA
+TID_BT21_SANDY_SKIN_SHOP,サンディ\nKOYA
+TID_BT21_EDGAR_SKIN,エドガー TATA
+TID_BT21_EDGAR_SKIN_SHOP,エドガー\nTATA
+TID_BT21_RUFFS_SKIN,ラフス CHIMMY
+TID_BT21_RUFFS_SKIN_SHOP,ラフス\nCHIMMY
+TID_BT21_BULL_SKIN,ブル MANG
+TID_BT21_BULL_SKIN_SHOP,ブル\nMANG
+TID_BT21_BIBI_SKIN,ビビ RJ
+TID_BT21_BIBI_SKIN_SHOP,ビビ\nRJ
+TID_BT21_JACKY_SKIN,ジャッキー COOKY
+TID_BT21_JACKY_SKIN_SHOP,ジャッキー\nCOOKY
+TID_BT21_TICK_SKIN,ティック SHOOKY
+TID_BT21_TICK_SKIN_SHOP,ティック\nSHOOKY
+TID_POSTAL_BROCK_SKIN,郵便屋 ブロック
+TID_POSTAL_BROCK_SKIN_SHOP,郵便屋\nブロック
+TID_MAKE_EMZ_SKIN,DJ 3.M.Z
+TID_MAKE_EMZ_SKIN_SHOP,DJ 3.M.Z
+TID_SHARK_JAW_COLT_SKIN,シャーク コルト
+TID_SHARK_JAW_COLT_SKIN_SHOP,シャーク\nコルト
+TID_OCTO_FANG_SKIN,オクトパス ファング
+TID_OCTO_FANG_SKIN_SHOP,オクトパス\nファング
+TID_CORAL_BELLE_SKIN,サンゴ ベル
+TID_CORAL_BELLE_SKIN_SHOP,サンゴ\nベル
+TID_PHARA_OTIS_SKIN,ファラオーティス
+TID_PHARA_OTIS_SKIN_SHOP,ファラオーティス
+TID_RANKED_SUGGESTING_BRAWLER,<NAME>にキャラクターを提案
+TID_RANKED_BRAWLER_SUGGESTED,キャラクターを提案しました
+TID_RANKED_SUGGESTION,<NAME>が<BRAWLER>を提案しました
+TID_CLUB_EVENTS_STARTS_IN,開始まで：
+TID_CLUB_EVENTS_ACTIVE_FOR,終了まで：
+TID_GAME_MODE_28,ハンター
+TID_GAME_MODE_28_DESC,狩猟シーズンが到来！\n\n敵を倒してポイントを集めよう。最初に<MAX_SCORE>ポイントを集めたプレイヤーが勝利！
+TID_DEATHMATCH_FFA_INTRO_TEXT,敵を撃破しよう！
+TID_NOTIFICATION_DEATHMATCH_FFA,新しいハンターマップが登場！新しい報酬を獲得しましょう！
+TID_DEATHMATCH_FFA_1,試練と苦難
+TID_DEATHMATCH_FFA_2,狩猟シーズン
+TID_DEATHMATCH_FFA_3,獲物
+TID_DEATHMATCH_FFA_4,素早くそして絶え間なく
+TID_DEATHMATCH_FFA_5,解放
+TID_DEATHMATCH_FFA_6,真実の道
+TID_DEATHMATCH_FFA_7,オメガ
+TID_CLUB_EVENTS_CHANGED_CLUB,獲得したポイントは、今週のイベント開始時に所属していたクラブにのみ加算されます。\n\nこのクラブに貢献するには来週まで待ちましょう！\n\n来週のイベント開始まで：<TIME>
+TID_CLUB_QUESTS_CURRENT_CLUB_POINTS,所属クラブが今週獲得した合計ポイント
+TID_CLUB_QUESTS_THIS_WEEKS_QUESTS,今週のクラブクエスト
+TID_SPEC_ABI_ARTILLERY_DUDE_1,お宝ザクザク
+TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,金貨の飛び散る範囲が、敵に命中するたびに<c00cc00><VALUE1>％</c>広くなる。
+TID_SPEC_ABI_ARTILLERY_DUDE_2,マスターブラスター
+TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,ペニーの大砲によるダメージが<c00cc00><VALUE1>％</c>強化され、着弾とともに敵をノックバックする。
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,ソルティーバレル
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,塩の入ったタルを出現させて敵の攻撃を防ぐ。自らタルに攻撃を当てれば、袋の金貨が拡散される。
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,カリブの望遠鏡
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2_DESC,ペニーの大砲が、射程内の見える敵すべてに砲撃を放つ。
+TID_RANDOM_GAME_MODE_DESC,さまざまなゲームモード、マップ、特別ルールからランダムに構成されたマッチをプレイしましょう。まさに「ミステリー」な展開をお楽しみください！
+TID_CLUB_QUESTS_EXPIRED,クエストは終了しました
+TID_CLUB_LEAGUE_ACTIVE,リーグウィーク開催中
+TID_CLUB_QUESTS_TUTORIAL,1週間以内に3つのクラブクエストをクリアして、クラブのためにポイントを獲得しましょう
+TID_CLUB_QUESTS_YOUR_QUESTS,今週のクラブクエスト
+TID_CLUB_QUESTS_NEW_QUESTS,新しいクラブクエスト
+TID_CLUB_QUESTS_REWARDS_INCREASED,クラブリーグとクラブクエストでの最大報酬が増加しました
+TID_BRAWLBALL_441,ダブルリスク
+TID_BRAWLBALL_442,バウンドボール
+TID_KNOCKOUT_441,陰にひそむ敵
+TID_KNOCKOUT_442,オープンフィールド
+TID_BANKHEIST_441,川岸
+TID_BANKHEIST_442,ツリーポイント
+TID_GEMGRAB_441,楽観
+TID_GEMGRAB_442,双対関係
+TID_BOUNTY_441,振り向き禁止
+TID_BOUNTY_442,隣り合わせ
+TID_HOTZONE_441,三つ又の槍
+TID_HOTZONE_442,アンバランス
+TID_SHOWDOWN_441,箱詰め
+TID_SHOWDOWN_442,ズームアウト
+TID_TRUE_GOLD_FANG_SKIN,トゥルーゴールド ファング
+TID_TRUE_GOLD_FANG_SKIN_SHOP,トゥルーゴールド\nファング
+TID_TRUE_SILVER_FANG_SKIN,トゥルーシルバー ファング
+TID_TRUE_SILVER_FANG_SKIN_SHOP,トゥルーシルバー\nファング
+TID_TRUE_GOLD_BONNIE_SKIN,トゥルーゴールド ボニー
+TID_TRUE_GOLD_BONNIE_SKIN_SHOP,トゥルーゴールド\nボニー
+TID_TRUE_SILVER_BONNIE_SKIN,トゥルーシルバー ボニー
+TID_TRUE_SILVER_BONNIE_SKIN_SHOP,トゥルーシルバー\nボニー
+TID_TRUE_GOLD_JANET_SKIN,トゥルーゴールド ジャネット
+TID_TRUE_GOLD_JANET_SKIN_SHOP,トゥルーゴールド\nジャネット
+TID_TRUE_SILVER_JANET_SKIN,トゥルーシルバー ジャネット
+TID_TRUE_SILVER_JANET_SKIN_SHOP,トゥルーシルバー\nジャネット
+TID_TRUE_GOLD_GROM_SKIN,トゥルーゴールド グロム
+TID_TRUE_GOLD_GROM_SKIN_SHOP,トゥルーゴールド\nグロム
+TID_TRUE_SILVER_GROM_SKIN,トゥルーシルバー グロム
+TID_TRUE_SILVER_GROM_SKIN_SHOP,トゥルーシルバー\nグロム
+TID_TRUE_GOLD_EVE_SKIN,トゥルーゴールド イヴ
+TID_TRUE_GOLD_EVE_SKIN_SHOP,トゥルーゴールド\nイヴ
+TID_TRUE_SILVER_EVE_SKIN,トゥルーシルバー イヴ
+TID_TRUE_SILVER_EVE_SKIN_SHOP,トゥルーシルバー\nイヴ
+TID_BRAWL_PASS_SEASON_12,深海バトル
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

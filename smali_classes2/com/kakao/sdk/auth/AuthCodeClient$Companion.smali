@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final synthetic $$delegatedProperties:[Lpe/h;
+.field public static final synthetic $$delegatedProperties:[Lwe/h;
 
 
 # direct methods
@@ -24,13 +24,13 @@
 
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lpe/h;
+    new-array v0, v0, [Lwe/h;
 
-    new-instance v1, Lle/o;
+    new-instance v1, Lse/m;
 
     const-class v2, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;
 
-    invoke-static {v2}, Lle/t;->a(Ljava/lang/Class;)Lpe/c;
+    invoke-static {v2}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
 
     move-result-object v2
 
@@ -38,10 +38,10 @@
 
     const-string v4, "getInstance()Lcom/kakao/sdk/auth/AuthCodeClient;"
 
-    invoke-direct {v1, v2, v3, v4}, Lle/o;-><init>(Lpe/d;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v2, v3, v4}, Lse/m;-><init>(Lwe/d;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1
-    sget-object v2, Lle/t;->a:Lle/u;
+    sget-object v2, Lse/r;->a:Lse/s;
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -50,7 +50,7 @@
     aput-object v1, v0, v2
 
     .line 2
-    sput-object v0, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;->$$delegatedProperties:[Lpe/h;
+    sput-object v0, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;->$$delegatedProperties:[Lwe/h;
 
     return-void
 .end method
@@ -58,16 +58,14 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lle/g;)V
+.method public synthetic constructor <init>(Lse/e;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;-><init>()V
 
     return-void
@@ -84,7 +82,9 @@
 .method public final codeChallenge([B)Ljava/lang/String;
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "codeVerifier"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "SHA-256"
 
@@ -106,19 +106,9 @@
 
     const-string v0, "Base64.encodeToString(\n \u202664.URL_SAFE\n            )"
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
-
-    :cond_0
-    const-string p1, "codeVerifier"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final codeVerifier()Ljava/lang/String;
@@ -142,9 +132,9 @@
 
     const-string v2, "UUID.randomUUID().toString()"
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v2, Lre/a;->a:Ljava/nio/charset/Charset;
+    sget-object v2, Lye/a;->a:Ljava/nio/charset/Charset;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
@@ -152,7 +142,7 @@
 
     const-string v2, "(this as java.lang.String).getBytes(charset)"
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-virtual {v0, v1}, Ljava/security/MessageDigest;->digest([B)[B
@@ -168,7 +158,7 @@
 
     const-string v1, "Base64.encodeToString(\n \u2026.NO_PADDING\n            )"
 
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -176,19 +166,19 @@
 .method public final getInstance()Lcom/kakao/sdk/auth/AuthCodeClient;
     .locals 3
 
-    invoke-static {}, Lcom/kakao/sdk/auth/AuthCodeClient;->access$getInstance$cp()Lae/c;
+    invoke-static {}, Lcom/kakao/sdk/auth/AuthCodeClient;->access$getInstance$cp()Lie/c;
 
     move-result-object v0
 
     sget-object v1, Lcom/kakao/sdk/auth/AuthCodeClient;->Companion:Lcom/kakao/sdk/auth/AuthCodeClient$Companion;
 
-    sget-object v1, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;->$$delegatedProperties:[Lpe/h;
+    sget-object v1, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;->$$delegatedProperties:[Lwe/h;
 
     const/4 v2, 0x0
 
     aget-object v1, v1, v2
 
-    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lie/c;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 

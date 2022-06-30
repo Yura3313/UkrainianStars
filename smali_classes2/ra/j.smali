@@ -1,21 +1,24 @@
-.class public Lra/j;
+.class public final Lra/j;
 .super Ljava/lang/Object;
-.source "SmartIntentRendererImpl.java"
+.source "AdminMessageViewDataBinder.java"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lcom/helpshift/util/o$b;
 
 
 # instance fields
-.field public final synthetic g:Lra/a;
+.field public final synthetic a:Lo8/y;
+
+.field public final synthetic b:Lra/k;
 
 
 # direct methods
-.method public constructor <init>(Lra/a;)V
+.method public constructor <init>(Lra/k;Lo8/y;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lra/j;->g:Lra/a;
+    iput-object p1, p0, Lra/j;->b:Lra/k;
+
+    iput-object p2, p0, Lra/j;->a:Lo8/y;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,41 +27,41 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 1
+.method public final a(Ljava/lang/String;)V
+    .locals 2
 
     .line 1
-    iget-object p1, p0, Lra/j;->g:Lra/a;
+    iget-object v0, p0, Lra/j;->b:Lra/k;
 
-    .line 2
-    iget-object p1, p1, Lra/a;->b:Lra/m;
-
-    .line 3
-    check-cast p1, Loa/t;
-
-    .line 4
-    iget-object p1, p1, Loa/t;->o0:Ld9/i;
-
-    invoke-virtual {p1}, Ld9/i;->q()Z
-
-    .line 5
-    iget-object p1, p0, Lra/j;->g:Lra/a;
-
-    .line 6
-    iget-object v0, p1, Lra/a;->z:La9/b;
-
-    .line 7
-    iget-boolean v0, v0, La9/b;->b:Z
+    iget-object v0, v0, Lra/u;->b:Lra/u$a;
 
     if-eqz v0, :cond_0
 
-    .line 8
-    iget-object p1, p1, Lra/a;->r:Landroid/widget/EditText;
+    .line 2
+    iget-object v1, p0, Lra/j;->a:Lo8/y;
 
-    const-string v0, ""
+    check-cast v0, Lqa/p0;
 
-    .line 9
-    invoke-virtual {p1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, p1, v1}, Lqa/p0;->q(Ljava/lang/String;Lo8/y;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final b()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lra/j;->b:Lra/k;
+
+    iget-object v0, v0, Lra/u;->b:Lra/u$a;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    check-cast v0, Lqa/p0;
+
+    invoke-virtual {v0}, Lqa/p0;->p()V
 
     :cond_0
     return-void

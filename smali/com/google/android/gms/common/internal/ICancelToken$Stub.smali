@@ -29,7 +29,6 @@
 
     const-string v0, "com.google.android.gms.common.internal.ICancelToken"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/common/zza;-><init>(Ljava/lang/String;)V
 
     return-void

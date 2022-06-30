@@ -1,385 +1,82 @@
-.class public final Lcom/android/billingclient/api/s;
+.class public final synthetic Lcom/android/billingclient/api/s;
 .super Ljava/lang/Object;
 .source "com.android.billingclient:billing@@3.0.3"
 
 
-# static fields
-.field public static final a:Lcom/android/billingclient/api/e;
-
-.field public static final b:Lcom/android/billingclient/api/e;
-
-.field public static final c:Lcom/android/billingclient/api/e;
-
-.field public static final d:Lcom/android/billingclient/api/e;
-
-.field public static final e:Lcom/android/billingclient/api/e;
-
-.field public static final f:Lcom/android/billingclient/api/e;
-
-.field public static final g:Lcom/android/billingclient/api/e;
-
-.field public static final h:Lcom/android/billingclient/api/e;
-
-.field public static final i:Lcom/android/billingclient/api/e;
-
-.field public static final j:Lcom/android/billingclient/api/e;
-
-.field public static final k:Lcom/android/billingclient/api/e;
-
-.field public static final l:Lcom/android/billingclient/api/e;
-
-.field public static final m:Lcom/android/billingclient/api/e;
-
-.field public static final n:Lcom/android/billingclient/api/e;
-
-
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 4
+.method public static final a(JLke/d;)Ljava/lang/Object;
+    .locals 3
+
+    const-wide/16 v0, 0x0
+
+    cmp-long v2, p0, v0
+
+    if-gtz v2, :cond_0
 
     .line 1
-    new-instance v0, Lcom/android/billingclient/api/e;
+    sget-object p0, Lie/h;->a:Lie/h;
 
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    const/4 v1, 0x3
+    return-object p0
 
     .line 2
-    iput v1, v0, Lcom/android/billingclient/api/e;->a:I
+    :cond_0
+    new-instance v0, Lze/g;
 
-    const-string v2, "Google Play In-app Billing API version is less than 3"
+    invoke-static {p2}, Lpe/a;->e(Lke/d;)Lke/d;
+
+    move-result-object p2
+
+    invoke-direct {v0, p2}, Lze/g;-><init>(Lke/d;)V
 
     .line 3
-    iput-object v2, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
+    iget-object p2, v0, Lze/g;->i:Lke/f;
 
     .line 4
-    sput-object v0, Lcom/android/billingclient/api/s;->a:Lcom/android/billingclient/api/e;
+    invoke-static {p2}, Lcom/android/billingclient/api/s;->b(Lke/f;)Lze/g0;
+
+    move-result-object p2
+
+    invoke-interface {p2, p0, p1, v0}, Lze/g0;->scheduleResumeAfterDelay(JLze/f;)V
 
     .line 5
-    new-instance v0, Lcom/android/billingclient/api/e;
+    invoke-virtual {v0}, Lze/g;->m()Ljava/lang/Object;
 
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
+    move-result-object p0
 
-    .line 6
-    iput v1, v0, Lcom/android/billingclient/api/e;->a:I
+    return-object p0
+.end method
 
-    const-string v2, "Google Play In-app Billing API version is less than 9"
+.method public static final b(Lke/f;)Lze/g0;
+    .locals 1
 
-    .line 7
-    iput-object v2, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
+    const-string v0, "$this$delay"
 
-    .line 8
-    new-instance v0, Lcom/android/billingclient/api/e;
+    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
+    .line 1
+    sget-object v0, Lke/e$a;->a:Lke/e$a;
 
-    .line 9
-    iput v1, v0, Lcom/android/billingclient/api/e;->a:I
+    invoke-interface {p0, v0}, Lke/f;->get(Lke/f$b;)Lke/f$a;
 
-    const-string v2, "Billing service unavailable on device."
+    move-result-object p0
 
-    .line 10
-    iput-object v2, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
+    instance-of v0, p0, Lze/g0;
 
-    .line 11
-    sput-object v0, Lcom/android/billingclient/api/s;->b:Lcom/android/billingclient/api/e;
+    if-nez v0, :cond_0
 
-    .line 12
-    new-instance v0, Lcom/android/billingclient/api/e;
+    const/4 p0, 0x0
 
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
+    :cond_0
+    check-cast p0, Lze/g0;
 
-    const/4 v2, 0x5
+    if-eqz p0, :cond_1
 
-    .line 13
-    iput v2, v0, Lcom/android/billingclient/api/e;->a:I
+    goto :goto_0
 
-    const-string v3, "Client is already in the process of connecting to billing service."
+    .line 2
+    :cond_1
+    sget-object p0, Lze/d0;->a:Lze/c0;
 
-    .line 14
-    iput-object v3, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 15
-    sput-object v0, Lcom/android/billingclient/api/s;->c:Lcom/android/billingclient/api/e;
-
-    .line 16
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 17
-    iput v1, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v1, "Play Store version installed does not support cross selling products."
-
-    .line 18
-    iput-object v1, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 19
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 20
-    iput v2, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v1, "The list of SKUs can\'t be empty."
-
-    .line 21
-    iput-object v1, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 22
-    sput-object v0, Lcom/android/billingclient/api/s;->d:Lcom/android/billingclient/api/e;
-
-    .line 23
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 24
-    iput v2, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v1, "SKU type can\'t be empty."
-
-    .line 25
-    iput-object v1, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 26
-    sput-object v0, Lcom/android/billingclient/api/s;->e:Lcom/android/billingclient/api/e;
-
-    .line 27
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    const/4 v1, -0x2
-
-    .line 28
-    iput v1, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v3, "Client does not support extra params."
-
-    .line 29
-    iput-object v3, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 30
-    sput-object v0, Lcom/android/billingclient/api/s;->f:Lcom/android/billingclient/api/e;
-
-    .line 31
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 32
-    iput v1, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v3, "Client does not support the feature."
-
-    .line 33
-    iput-object v3, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 34
-    sput-object v0, Lcom/android/billingclient/api/s;->g:Lcom/android/billingclient/api/e;
-
-    .line 35
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 36
-    iput v1, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v3, "Client does not support get purchase history."
-
-    .line 37
-    iput-object v3, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 38
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 39
-    iput v2, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v3, "Invalid purchase token."
-
-    .line 40
-    iput-object v3, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    const/4 v0, 0x6
-
-    .line 41
-    new-instance v3, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v3}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 42
-    iput v0, v3, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v0, "An internal error occurred."
-
-    .line 43
-    iput-object v0, v3, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 44
-    sput-object v3, Lcom/android/billingclient/api/s;->h:Lcom/android/billingclient/api/e;
-
-    const/4 v0, 0x4
-
-    .line 45
-    new-instance v3, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v3}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 46
-    iput v0, v3, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v0, "Item is unavailable for purchase."
-
-    .line 47
-    iput-object v0, v3, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 48
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 49
-    iput v2, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v3, "SKU can\'t be null."
-
-    .line 50
-    iput-object v3, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 51
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 52
-    iput v2, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v3, "SKU type can\'t be null."
-
-    .line 53
-    iput-object v3, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    const/4 v0, 0x0
-
-    .line 54
-    new-instance v3, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v3}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 55
-    iput v0, v3, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v0, ""
-
-    .line 56
-    iput-object v0, v3, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 57
-    sput-object v3, Lcom/android/billingclient/api/s;->i:Lcom/android/billingclient/api/e;
-
-    const/4 v0, -0x1
-
-    .line 58
-    new-instance v3, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v3}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 59
-    iput v0, v3, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v0, "Service connection is disconnected."
-
-    .line 60
-    iput-object v0, v3, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 61
-    sput-object v3, Lcom/android/billingclient/api/s;->j:Lcom/android/billingclient/api/e;
-
-    const/4 v0, -0x3
-
-    .line 62
-    new-instance v3, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v3}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 63
-    iput v0, v3, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v0, "Timeout communicating with service."
-
-    .line 64
-    iput-object v0, v3, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 65
-    sput-object v3, Lcom/android/billingclient/api/s;->k:Lcom/android/billingclient/api/e;
-
-    .line 66
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 67
-    iput v1, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v3, "Client doesn\'t support subscriptions."
-
-    .line 68
-    iput-object v3, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 69
-    sput-object v0, Lcom/android/billingclient/api/s;->l:Lcom/android/billingclient/api/e;
-
-    .line 70
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 71
-    iput v1, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v3, "Client doesn\'t support subscriptions update."
-
-    .line 72
-    iput-object v3, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 73
-    sput-object v0, Lcom/android/billingclient/api/s;->m:Lcom/android/billingclient/api/e;
-
-    .line 74
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 75
-    iput v1, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v1, "Client doesn\'t support multi-item purchases."
-
-    .line 76
-    iput-object v1, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    .line 77
-    sput-object v0, Lcom/android/billingclient/api/s;->n:Lcom/android/billingclient/api/e;
-
-    .line 78
-    new-instance v0, Lcom/android/billingclient/api/e;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 79
-    iput v2, v0, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v1, "Unknown feature"
-
-    .line 80
-    iput-object v1, v0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    return-void
+    :goto_0
+    return-object p0
 .end method

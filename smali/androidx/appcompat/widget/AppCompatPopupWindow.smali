@@ -15,7 +15,6 @@
 .method public static constructor <clinit>()V
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
@@ -103,7 +102,7 @@
 
     .line 8
     :cond_0
-    invoke-static {p0, p3}, Landroidx/core/widget/g;->a(Landroid/widget/PopupWindow;Z)V
+    invoke-static {p0, p3}, Landroidx/core/widget/h;->a(Landroid/widget/PopupWindow;Z)V
 
     .line 9
     :cond_1
@@ -147,7 +146,7 @@
     return-void
 .end method
 
-.method public showAsDropDown(Landroid/view/View;II)V
+.method public final showAsDropDown(Landroid/view/View;II)V
     .locals 1
 
     .line 1
@@ -173,7 +172,7 @@
     return-void
 .end method
 
-.method public showAsDropDown(Landroid/view/View;III)V
+.method public final showAsDropDown(Landroid/view/View;III)V
     .locals 1
 
     .line 4
@@ -199,7 +198,7 @@
     return-void
 .end method
 
-.method public update(Landroid/view/View;IIII)V
+.method public final update(Landroid/view/View;IIII)V
     .locals 6
 
     .line 1

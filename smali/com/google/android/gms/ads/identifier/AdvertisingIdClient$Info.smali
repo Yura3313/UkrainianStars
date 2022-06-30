@@ -59,10 +59,12 @@
 
     const/4 v2, 0x7
 
+    .line 1
     invoke-static {v0, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v2
 
+    .line 2
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V

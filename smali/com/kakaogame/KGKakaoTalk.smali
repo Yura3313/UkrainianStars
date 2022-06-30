@@ -13,7 +13,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -22,7 +21,6 @@
 .method public static synthetic access$000(I)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGKakaoTalk;->addPlusFriend(I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -33,7 +31,6 @@
 .method public static synthetic access$100(Ljava/io/File;)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGKakaoTalk;->uploadGameImage(Ljava/io/File;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -195,7 +192,7 @@
     const-string v2, "KGKakaoTalk"
 
     .line 20
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -204,7 +201,7 @@
     const/16 v2, 0xfa1
 
     .line 21
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -334,7 +331,6 @@
 .method public static initialize()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/KGKakaoTalk;->initInterfaceBroker()V
 
     return-void
@@ -384,12 +380,12 @@
 
     const-string v0, "KGKakaoTalk.uploadGameImage"
 
-    .line 5
+    .line 9
     invoke-static {v0}, Lcom/kakaogame/util/Stopwatch;->start(Ljava/lang/String;)Lcom/kakaogame/util/Stopwatch;
 
     move-result-object v0
 
-    .line 6
+    .line 10
     :try_start_0
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
@@ -401,27 +397,27 @@
 
     if-eqz v1, :cond_0
 
-    .line 7
+    .line 11
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v1
 
     invoke-virtual {v1}, Lcom/kakaogame/core/CoreManager;->tryKakaoReConnect()Lcom/kakaogame/KGResult;
 
-    .line 8
+    .line 12
     :cond_0
     invoke-static {p0}, Lcom/kakaogame/kakao/KakaoGameAPI;->requestGameImageUpload(Ljava/io/File;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
-    .line 9
+    .line 13
     invoke-virtual {p0}, Lcom/kakaogame/KGResult;->isSuccess()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 10
+    .line 14
     invoke-static {p0}, Lcom/kakaogame/KGResult;->getResult(Ljava/util/Map;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -429,11 +425,11 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 11
+    .line 15
     :goto_0
     invoke-virtual {v0}, Lcom/kakaogame/util/Stopwatch;->stop()V
 
-    .line 12
+    .line 16
     invoke-virtual {v0}, Lcom/kakaogame/util/Stopwatch;->getName()Ljava/lang/String;
 
     move-result-object v1
@@ -446,7 +442,7 @@
 
     return-object p0
 
-    .line 13
+    .line 17
     :cond_1
     :try_start_1
     invoke-virtual {p0}, Lcom/kakaogame/KGResult;->getContent()Ljava/lang/Object;
@@ -455,7 +451,7 @@
 
     check-cast p0, Ljava/lang/String;
 
-    .line 14
+    .line 18
     invoke-static {p0}, Lcom/kakaogame/KGResult;->getSuccessResult(Ljava/lang/Object;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -476,8 +472,8 @@
     :try_start_2
     const-string v1, "KGKakaoTalk"
 
-    .line 15
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 19
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -485,8 +481,8 @@
 
     const/16 v1, 0xfa1
 
-    .line 16
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 20
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -498,11 +494,11 @@
 
     goto :goto_0
 
-    .line 17
+    .line 21
     :goto_1
     invoke-virtual {v0}, Lcom/kakaogame/util/Stopwatch;->stop()V
 
-    .line 18
+    .line 22
     invoke-virtual {v0}, Lcom/kakaogame/util/Stopwatch;->getName()Ljava/lang/String;
 
     move-result-object v1
@@ -515,7 +511,7 @@
 
     invoke-static {v1, v0, v2, v3}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
-    .line 19
+    .line 23
     goto :goto_3
 
     :goto_2
@@ -546,6 +542,7 @@
 
     if-eqz p0, :cond_0
 
+    .line 2
     invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v1
@@ -570,16 +567,16 @@
 
     const-string v0, "uploadGameImage: Invalid Parameter! \'callback\' is null."
 
-    .line 2
+    .line 3
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->w(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
+    .line 4
     :cond_1
     new-instance v0, Lcom/kakaogame/KGKakaoTalk$2;
 
     invoke-direct {v0, p0, p1}, Lcom/kakaogame/KGKakaoTalk$2;-><init>(Ljava/io/File;Lcom/kakaogame/KGResultCallback;)V
 
-    .line 4
+    .line 5
     invoke-static {v0}, Lcom/kakaogame/manager/AsyncTaskManager;->execute(Landroid/os/AsyncTask;)V
 
     return-void

@@ -23,8 +23,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
-    .line 1
-    invoke-static {}, Lcom/google/protobuf/q;->a()Lcom/google/protobuf/q;
+    invoke-static {}, Lcom/google/protobuf/q;->b()Lcom/google/protobuf/q;
 
     return-void
 .end method
@@ -32,7 +31,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

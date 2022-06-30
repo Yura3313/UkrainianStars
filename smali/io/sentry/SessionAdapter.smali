@@ -95,7 +95,6 @@
 
     const-string p2, "attrs"
 
-    .line 1
     invoke-virtual {p1, p2}, Lcom/google/gson/stream/JsonWriter;->name(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
 
     move-result-object p1

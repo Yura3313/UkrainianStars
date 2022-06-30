@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kakao/sdk/story/StoryApiClient;->isStoryUser(Lke/p;)V
+    value = Lcom/kakao/sdk/story/StoryApiClient;->isStoryUser(Lre/p;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,15 +23,14 @@
 
 
 # instance fields
-.field public final synthetic $callback:Lke/p;
+.field public final synthetic $callback:Lre/p;
 
 
 # direct methods
-.method public constructor <init>(Lke/p;)V
+.method public constructor <init>(Lre/p;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/kakao/sdk/story/StoryApiClient$isStoryUser$1;->$callback:Lke/p;
+    iput-object p1, p0, Lcom/kakao/sdk/story/StoryApiClient$isStoryUser$1;->$callback:Lre/p;
 
     invoke-direct {p0}, Lcom/kakao/sdk/network/ApiCallback;-><init>()V
 
@@ -44,7 +43,7 @@
     .locals 1
 
     .line 2
-    iget-object v0, p0, Lcom/kakao/sdk/story/StoryApiClient$isStoryUser$1;->$callback:Lke/p;
+    iget-object v0, p0, Lcom/kakao/sdk/story/StoryApiClient$isStoryUser$1;->$callback:Lre/p;
 
     if-eqz p1, :cond_0
 
@@ -62,7 +61,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    invoke-interface {v0, p1, p2}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1, p2}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

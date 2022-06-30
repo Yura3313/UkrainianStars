@@ -1,344 +1,214 @@
 .class public final Lv3/a;
-.super Ljava/lang/Object;
-.source "com.android.billingclient:billing@@3.0.3"
+.super Lv3/s4$a;
+.source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
 
 
-# static fields
-.field public static final a:I
+# instance fields
+.field public final synthetic j:Landroid/content/Context;
+
+.field public final synthetic k:Landroid/os/Bundle;
+
+.field public final synthetic l:Lv3/s4;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lv3/s4;Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Landroid/os/Bundle;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
+    iput-object p1, p0, Lv3/a;->l:Lv3/s4;
 
-    move-result-object v0
+    iput-object p4, p0, Lv3/a;->j:Landroid/content/Context;
 
-    invoke-virtual {v0}, Ljava/lang/Runtime;->availableProcessors()I
+    iput-object p5, p0, Lv3/a;->k:Landroid/os/Bundle;
 
-    move-result v0
+    const/4 p2, 0x1
 
-    sput v0, Lv3/a;->a:I
+    .line 2
+    invoke-direct {p0, p1, p2}, Lv3/s4$a;-><init>(Lv3/s4;Z)V
 
     return-void
 .end method
 
-.method public static a(Landroid/content/Intent;Ljava/lang/String;)Lcom/android/billingclient/api/e;
-    .locals 1
 
-    if-nez p0, :cond_0
+# virtual methods
+.method public final a()V
+    .locals 15
 
-    const/4 p0, 0x6
+    const-string v0, "com.google.android.gms.measurement.dynamite"
 
-    .line 1
-    new-instance p1, Lcom/android/billingclient/api/e;
-
-    invoke-direct {p1}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 2
-    iput p0, p1, Lcom/android/billingclient/api/e;->a:I
-
-    const-string p0, "An internal error occurred."
-
-    .line 3
-    iput-object p0, p1, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    return-object p1
-
-    .line 4
-    :cond_0
-    invoke-virtual {p0}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
-
-    move-result-object v0
-
-    invoke-static {v0, p1}, Lv3/a;->b(Landroid/os/Bundle;Ljava/lang/String;)I
-
-    move-result v0
-
-    .line 5
-    invoke-virtual {p0}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
-
-    move-result-object p0
-
-    invoke-static {p0, p1}, Lv3/a;->c(Landroid/os/Bundle;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 6
-    new-instance p1, Lcom/android/billingclient/api/e;
-
-    invoke-direct {p1}, Lcom/android/billingclient/api/e;-><init>()V
-
-    .line 7
-    iput v0, p1, Lcom/android/billingclient/api/e;->a:I
-
-    .line 8
-    iput-object p0, p1, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    return-object p1
-.end method
-
-.method public static b(Landroid/os/Bundle;Ljava/lang/String;)I
-    .locals 1
-
-    const/4 p1, 0x6
-
-    if-nez p0, :cond_0
-
-    return p1
-
-    :cond_0
-    const-string v0, "RESPONSE_CODE"
-
-    .line 1
-    invoke-virtual {p0, v0}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    if-nez p0, :cond_1
-
-    const/4 p0, 0x0
-
-    return p0
-
-    .line 2
-    :cond_1
-    instance-of v0, p0, Ljava/lang/Integer;
-
-    if-eqz v0, :cond_2
-
-    .line 3
-    check-cast p0, Ljava/lang/Integer;
-
-    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
-
-    move-result p0
-
-    return p0
-
-    :cond_2
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object p0
-
-    .line 4
-    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    const-string v0, "Unexpected type for bundle response code: "
-
-    invoke-virtual {v0, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    :cond_3
-    return p1
-.end method
-
-.method public static c(Landroid/os/Bundle;Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
-
-    const-string p1, ""
-
-    if-nez p0, :cond_0
-
-    return-object p1
-
-    :cond_0
-    const-string v0, "DEBUG_MESSAGE"
-
-    .line 1
-    invoke-virtual {p0, v0}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    if-nez p0, :cond_1
-
-    return-object p1
-
-    .line 2
-    :cond_1
-    instance-of v0, p0, Ljava/lang/String;
-
-    if-eqz v0, :cond_2
-
-    .line 3
-    check-cast p0, Ljava/lang/String;
-
-    return-object p0
-
-    :cond_2
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object p0
-
-    .line 4
-    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    const-string v0, "Unexpected type for debug message: "
-
-    invoke-virtual {v0, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    :cond_3
-    return-object p1
-.end method
-
-.method public static d(IZLjava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)Landroid/os/Bundle;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(IZ",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/util/ArrayList<",
-            "Lcom/android/billingclient/api/x;",
-            ">;)",
-            "Landroid/os/Bundle;"
-        }
-    .end annotation
-
-    new-instance p3, Landroid/os/Bundle;
-
-    .line 1
-    invoke-direct {p3}, Landroid/os/Bundle;-><init>()V
-
-    const/16 v0, 0x9
-
-    if-lt p0, v0, :cond_0
-
-    const-string v1, "playBillingLibraryVersion"
-
-    .line 2
-    invoke-virtual {p3, v1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_0
-    const/4 p2, 0x1
-
-    if-lt p0, v0, :cond_1
-
-    if-eqz p1, :cond_1
-
-    const-string p1, "enablePendingPurchases"
-
-    .line 3
-    invoke-virtual {p3, p1, p2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    :cond_1
-    const/16 p1, 0xe
-
-    if-lt p0, p1, :cond_3
-
-    new-instance p0, Ljava/util/ArrayList;
-
-    .line 4
-    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
-
-    invoke-interface {p4}, Ljava/util/List;->size()I
-
-    move-result p1
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    if-ge v0, p1, :cond_2
-
-    invoke-interface {p4, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    .line 5
-    check-cast v2, Lcom/android/billingclient/api/x;
+    const/4 v1, 0x1
 
     const/4 v2, 0x0
 
-    .line 6
-    invoke-virtual {p0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 7
-    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    xor-int/2addr v2, p2
-
-    or-int/2addr v1, v2
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    if-eqz v1, :cond_3
-
-    const-string p1, "SKU_OFFER_ID_TOKEN_LIST"
-
-    .line 8
-    invoke-virtual {p3, p1, p0}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
-
-    :cond_3
-    return-object p3
-.end method
-
-.method public static e(Ljava/lang/String;Ljava/lang/String;)Lcom/android/billingclient/api/Purchase;
-    .locals 1
-
-    if-eqz p0, :cond_1
-
-    if-nez p1, :cond_0
-
-    goto :goto_0
-
     .line 1
-    :cond_0
     :try_start_0
-    new-instance v0, Lcom/android/billingclient/api/Purchase;
+    iget-object v3, p0, Lv3/a;->l:Lv3/s4;
+
+    new-instance v4, Ljava/util/ArrayList;
+
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    invoke-direct {v0, p0, p1}, Lcom/android/billingclient/api/Purchase;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v13, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    .line 3
+    iget-object v3, p0, Lv3/a;->j:Landroid/content/Context;
+
+    invoke-static {v3}, Lv3/s4;->i(Landroid/content/Context;)V
+
+    .line 4
+    sget-object v3, Lv3/s4;->i:Ljava/lang/Boolean;
+
+    .line 5
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    const/4 v3, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v3, 0x1
+
+    .line 6
+    :goto_0
+    iget-object v4, p0, Lv3/a;->l:Lv3/s4;
+
+    iget-object v5, p0, Lv3/a;->j:Landroid/content/Context;
+
+    invoke-virtual {v4, v5, v3}, Lv3/s4;->b(Landroid/content/Context;Z)Lcom/google/android/gms/internal/measurement/zzm;
+
+    move-result-object v5
+
+    .line 7
+    iput-object v5, v4, Lv3/s4;->f:Lcom/google/android/gms/internal/measurement/zzm;
+
+    .line 8
+    iget-object v4, p0, Lv3/a;->l:Lv3/s4;
+
+    .line 9
+    iget-object v5, v4, Lv3/s4;->f:Lcom/google/android/gms/internal/measurement/zzm;
+
+    if-nez v5, :cond_1
+
+    .line 10
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    return-void
+
+    .line 11
+    :cond_1
+    iget-object v4, p0, Lv3/a;->j:Landroid/content/Context;
+
+    .line 12
+    invoke-static {v4, v0}, Lcom/google/android/gms/dynamite/DynamiteModule;->a(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v4
+
+    .line 13
+    iget-object v5, p0, Lv3/a;->j:Landroid/content/Context;
+
+    .line 14
+    invoke-static {v5, v0, v2}, Lcom/google/android/gms/dynamite/DynamiteModule;->d(Landroid/content/Context;Ljava/lang/String;Z)I
+
+    move-result v0
+
+    if-eqz v3, :cond_3
+
+    .line 15
+    invoke-static {v4, v0}, Ljava/lang/Math;->max(II)I
+
+    move-result v3
+
+    if-ge v0, v4, :cond_2
+
+    const/4 v0, 0x1
 
     goto :goto_1
 
-    :catch_0
-    move-exception p0
-
-    .line 3
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result p0
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    add-int/lit8 p0, p0, 0x2f
-
-    invoke-direct {p1, p0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    :cond_1
-    :goto_0
+    :cond_2
     const/4 v0, 0x0
 
     :goto_1
-    return-object v0
+    move v10, v0
+
+    goto :goto_3
+
+    :cond_3
+    if-lez v4, :cond_4
+
+    move v0, v4
+
+    :cond_4
+    if-lez v4, :cond_5
+
+    const/4 v3, 0x1
+
+    goto :goto_2
+
+    :cond_5
+    const/4 v3, 0x0
+
+    :goto_2
+    move v10, v3
+
+    move v3, v0
+
+    .line 16
+    :goto_3
+    new-instance v0, Lcom/google/android/gms/internal/measurement/zzv;
+
+    const-wide/16 v6, 0x46b6
+
+    int-to-long v8, v3
+
+    iget-object v14, p0, Lv3/a;->k:Landroid/os/Bundle;
+
+    move-object v5, v0
+
+    invoke-direct/range {v5 .. v14}, Lcom/google/android/gms/internal/measurement/zzv;-><init>(JJZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+
+    .line 17
+    iget-object v3, p0, Lv3/a;->l:Lv3/s4;
+
+    .line 18
+    iget-object v3, v3, Lv3/s4;->f:Lcom/google/android/gms/internal/measurement/zzm;
+
+    .line 19
+    iget-object v4, p0, Lv3/a;->j:Landroid/content/Context;
+
+    .line 20
+    new-instance v5, Lcom/google/android/gms/dynamic/ObjectWrapper;
+
+    invoke-direct {v5, v4}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
+
+    .line 21
+    iget-wide v6, p0, Lv3/s4$a;->f:J
+
+    invoke-interface {v3, v5, v0, v6, v7}, Lcom/google/android/gms/internal/measurement/zzm;->initialize(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/internal/measurement/zzv;J)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    .line 22
+    iget-object v3, p0, Lv3/a;->l:Lv3/s4;
+
+    .line 23
+    invoke-virtual {v3, v0, v1, v2}, Lv3/s4;->e(Ljava/lang/Exception;ZZ)V
+
+    return-void
 .end method

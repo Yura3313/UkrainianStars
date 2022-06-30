@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->n(Lae/c2$a;ILae/b2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+.field public final synthetic f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
-.field public final synthetic h:Lcom/supercell/id/IdAccount;
+.field public final synthetic g:Lcom/supercell/id/IdAccount;
 
-.field public final synthetic i:Lvd/j1;
+.field public final synthetic h:Lae/b2;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;Lcom/supercell/id/IdAccount;Lvd/j1;)V
+.method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;Lcom/supercell/id/IdAccount;Lae/b2;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->h:Lcom/supercell/id/IdAccount;
+    iput-object p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->g:Lcom/supercell/id/IdAccount;
 
-    iput-object p3, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->i:Lvd/j1;
+    iput-object p3, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->h:Lae/b2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,307 +43,232 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 17
-
-    move-object/from16 v0, p0
+    .locals 7
 
     .line 1
-    iget-object v1, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->h:Lcom/supercell/id/IdAccount;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->g:Lcom/supercell/id/IdAccount;
 
-    sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    move-result-object v3
+    move-result-object v1
 
     .line 2
-    iget-object v3, v3, Lvd/r;->l:Lcom/supercell/id/IdAccount;
+    iget-object v1, v1, Lae/u;->l:Lcom/supercell/id/IdAccount;
 
     .line 3
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result p1
 
-    const-string v3, "popupDialog"
+    const-string v1, "Saved Credentials"
 
-    const-string v4, "cancelButtonKey"
+    const-string v2, "click"
 
-    const-string v5, "okButtonKey"
+    const/16 v3, 0x18
 
-    const-string v6, "textKey"
+    const/4 v4, 0x0
 
-    const-string v7, "titleKey"
+    const-string v5, "popupDialog"
 
-    const-string v8, "account"
+    const-string v6, "account"
 
-    const/4 v9, 0x0
-
-    if-eqz v1, :cond_2
+    if-eqz p1, :cond_1
 
     .line 4
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    move-result-object v1
+    move-result-object p1
 
     .line 5
-    iget-object v10, v1, Lvd/r;->m:Lcom/supercell/titan/h;
-
-    const/4 v14, 0x0
-
-    const/4 v15, 0x0
-
-    const/16 v16, 0x18
-
-    const-string v11, "Saved Credentials"
-
-    const-string v12, "click"
-
-    const-string v13, "Log out"
+    iget-object p1, p1, Lae/u;->m:La5/d0;
 
     .line 6
-    invoke-static/range {v10 .. v16}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static {p1, v1, v2, v4, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 7
-    iget-object v1, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
     .line 8
-    iget-object v1, v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
     .line 9
-    iget-object v2, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->h:Lcom/supercell/id/IdAccount;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->g:Lcom/supercell/id/IdAccount;
 
-    if-eqz v2, :cond_1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 10
-    invoke-static {v1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_5
+    invoke-static {v0, v6}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 11
-    new-instance v8, Lrc/m0;
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
-    invoke-direct {v8}, Lrc/m0;-><init>()V
+    move-result-object p1
+
+    if-eqz p1, :cond_3
 
     .line 12
-    iget-object v9, v8, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    new-instance v1, Lwc/g0;
 
-    if-eqz v9, :cond_0
+    invoke-direct {v1}, Lwc/g0;-><init>()V
+
+    .line 13
+    iget-object v2, v1, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+
+    if-eqz v2, :cond_0
 
     goto :goto_0
 
-    .line 13
+    .line 14
     :cond_0
-    new-instance v9, Landroid/os/Bundle;
+    new-instance v2, Landroid/os/Bundle;
 
-    invoke-direct {v9}, Landroid/os/Bundle;-><init>()V
+    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
     :goto_0
-    const-string v10, "account_confirm_heading"
+    const-string v3, "titleKey"
 
-    .line 14
-    invoke-virtual {v9, v7, v10}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v7, "account_confirm_description"
+    const-string v4, "account_confirm_heading"
 
     .line 15
-    invoke-virtual {v9, v6, v7}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string v6, "account_confirm_btn_confirm"
+    const-string v3, "textKey"
+
+    const-string v4, "account_confirm_description"
 
     .line 16
-    invoke-virtual {v9, v5, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string v5, "account_confirm_btn_cancel"
+    const-string v3, "okButtonKey"
+
+    const-string v4, "account_confirm_btn_confirm"
 
     .line 17
-    invoke-virtual {v9, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v3, "cancelButtonKey"
+
+    const-string v4, "account_confirm_btn_cancel"
 
     .line 18
-    invoke-virtual {v8, v9}, Landroidx/fragment/app/Fragment;->J0(Landroid/os/Bundle;)V
+    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 19
-    new-instance v4, Lmd/g;
-
-    invoke-direct {v4, v2}, Lmd/g;-><init>(Lcom/supercell/id/IdAccount;)V
+    invoke-virtual {v1, v2}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V
 
     .line 20
-    iput-object v4, v8, Lrc/m0;->y0:Lke/l;
+    new-instance v2, Lrd/g;
+
+    invoke-direct {v2, v0}, Lrd/g;-><init>(Lcom/supercell/id/IdAccount;)V
 
     .line 21
-    sget-object v2, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    iput-object v2, v1, Lwc/g0;->w0:Lre/l;
 
     .line 22
-    invoke-virtual {v1, v8, v3}, Lcom/supercell/id/ui/MainActivity;->I(Lrc/e;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
     .line 23
-    :cond_1
-    invoke-static {v8}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-virtual {p1, v1, v5}, Lcom/supercell/id/ui/MainActivity;->J(Lwc/e;Ljava/lang/String;)V
 
-    throw v9
+    goto :goto_2
 
     .line 24
-    :cond_2
-    iget-object v1, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->i:Lvd/j1;
+    :cond_1
+    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->h:Lae/b2;
 
-    check-cast v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
+    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
 
     .line 25
-    iget-object v1, v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;->d:Lqc/x;
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;->d:Lvc/w;
 
-    if-eqz v1, :cond_3
+    if-eqz p1, :cond_2
 
     .line 26
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    move-result-object v1
+    move-result-object p1
 
     .line 27
-    iget-object v10, v1, Lvd/r;->m:Lcom/supercell/titan/h;
+    iget-object p1, p1, Lae/u;->m:La5/d0;
 
-    const/4 v14, 0x0
-
-    const/4 v15, 0x0
-
-    const/16 v16, 0x18
-
-    const-string v11, "Shared Credentials"
-
-    const-string v12, "click"
-
-    const-string v13, "Forget shared credentials"
+    const-string v0, "Shared Credentials"
 
     .line 28
-    invoke-static/range {v10 .. v16}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static {p1, v0, v2, v4, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     goto :goto_1
 
     .line 29
-    :cond_3
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    :cond_2
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    move-result-object v1
+    move-result-object p1
 
     .line 30
-    iget-object v10, v1, Lvd/r;->m:Lcom/supercell/titan/h;
-
-    const/4 v14, 0x0
-
-    const/4 v15, 0x0
-
-    const/16 v16, 0x18
-
-    const-string v11, "Saved Credentials"
-
-    const-string v12, "click"
-
-    const-string v13, "Forget saved credentials"
+    iget-object p1, p1, Lae/u;->m:La5/d0;
 
     .line 31
-    invoke-static/range {v10 .. v16}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static {p1, v1, v2, v4, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 32
     :goto_1
-    iget-object v1, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
     .line 33
-    iget-object v1, v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
     .line 34
-    iget-object v2, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->h:Lcom/supercell/id/IdAccount;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$b;->g:Lcom/supercell/id/IdAccount;
 
-    if-eqz v2, :cond_6
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 35
-    invoke-static {v1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object v8
-
-    if-eqz v8, :cond_5
+    invoke-static {v0, v6}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 36
-    new-instance v10, Lrc/p;
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
-    invoke-direct {v10}, Lrc/p;-><init>()V
+    move-result-object v1
+
+    if-eqz v1, :cond_3
+
+    new-instance v2, Lwc/q$a;
+
+    const-string v3, "switch_forget_confirm_heading"
+
+    const-string v4, "switch_forget_confirm_btn_confirm"
+
+    const-string v6, "switch_forget_confirm_btn_cancel"
+
+    invoke-direct {v2, v3, v4, v6}, Lwc/q$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v3, "switch_forget_confirm_description"
 
     .line 37
-    iget-object v11, v10, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
-
-    if-eqz v11, :cond_4
-
-    goto :goto_2
+    iput-object v3, v2, Lwc/q$a;->a:Ljava/lang/String;
 
     .line 38
-    :cond_4
-    new-instance v11, Landroid/os/Bundle;
+    invoke-virtual {v2}, Lwc/q$a;->a()Lwc/q;
 
-    invoke-direct {v11}, Landroid/os/Bundle;-><init>()V
-
-    :goto_2
-    const-string v12, "switch_forget_confirm_heading"
+    move-result-object v2
 
     .line 39
-    invoke-virtual {v11, v7, v12}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    new-instance v3, Lrd/f;
 
-    const-string v7, "switch_forget_confirm_description"
+    invoke-direct {v3, p1, v0}, Lrd/f;-><init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;Lcom/supercell/id/IdAccount;)V
 
     .line 40
-    invoke-virtual {v11, v6, v7}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v6, "switch_forget_confirm_btn_confirm"
+    iput-object v3, v2, Lwc/q;->w0:Lre/l;
 
     .line 41
-    invoke-virtual {v11, v5, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v5, "switch_forget_confirm_btn_cancel"
+    sget-object p1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
     .line 42
-    invoke-virtual {v11, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v5}, Lcom/supercell/id/ui/MainActivity;->J(Lwc/e;Ljava/lang/String;)V
 
-    const-string v4, "titleStringKey"
-
-    .line 43
-    invoke-virtual {v11, v4, v9}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
-
-    const-string v4, "textStringKey"
-
-    .line 44
-    invoke-virtual {v11, v4, v9}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
-
-    const/4 v4, 0x0
-
-    const-string v5, "destructiveKey"
-
-    .line 45
-    invoke-virtual {v11, v5, v4}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 46
-    invoke-virtual {v10, v11}, Landroidx/fragment/app/Fragment;->J0(Landroid/os/Bundle;)V
-
-    .line 47
-    new-instance v4, Lmd/f;
-
-    invoke-direct {v4, v1, v2}, Lmd/f;-><init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;Lcom/supercell/id/IdAccount;)V
-
-    .line 48
-    iput-object v4, v10, Lrc/p;->y0:Lke/l;
-
-    .line 49
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
-
-    .line 50
-    invoke-virtual {v8, v10, v3}, Lcom/supercell/id/ui/MainActivity;->I(Lrc/e;Ljava/lang/String;)V
-
-    :cond_5
-    :goto_3
+    :cond_3
+    :goto_2
     return-void
-
-    .line 51
-    :cond_6
-    invoke-static {v8}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v9
 .end method

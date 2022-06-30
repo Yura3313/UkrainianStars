@@ -1,19 +1,17 @@
-.class public Lj1/l;
-.super Lj1/c;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.class public interface abstract Lj1/l;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
-.end annotation
+# virtual methods
+.method public abstract I()V
+.end method
 
+.method public abstract U()V
+.end method
 
-# direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;ZLandroid/location/Location;IILjava/lang/String;Ljava/lang/String;)V
-    .locals 0
+.method public abstract onPause()V
+.end method
 
-    .line 1
-    invoke-direct/range {p0 .. p10}, Lj1/c;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;ZLandroid/location/Location;IILjava/lang/String;Ljava/lang/String;)V
-
-    return-void
+.method public abstract onResume()V
 .end method

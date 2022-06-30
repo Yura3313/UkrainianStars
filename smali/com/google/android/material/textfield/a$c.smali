@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/textfield/a$c;
+.class public final Lcom/google/android/material/textfield/a$c;
 .super Ljava/lang/Object;
 .source "ClearTextEndIconDelegate.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/google/android/material/textfield/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/textfield/a$c;->a:Lcom/google/android/material/textfield/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public a(Lcom/google/android/material/textfield/TextInputLayout;)V
+.method public final a(Lcom/google/android/material/textfield/TextInputLayout;)V
     .locals 4
 
     .line 1
@@ -44,7 +43,7 @@
     move-result-object v0
 
     .line 2
-    invoke-virtual {v0}, Landroid/widget/EditText;->hasFocus()Z
+    invoke-virtual {v0}, Landroid/view/View;->hasFocus()Z
 
     move-result v1
 
@@ -59,7 +58,7 @@
     move-result-object v1
 
     .line 3
-    invoke-interface {v1}, Landroid/text/Editable;->length()I
+    invoke-interface {v1}, Ljava/lang/CharSequence;->length()I
 
     move-result v1
 
@@ -91,28 +90,28 @@
     iget-object p1, p0, Lcom/google/android/material/textfield/a$c;->a:Lcom/google/android/material/textfield/a;
 
     .line 7
-    iget-object p1, p1, Lcom/google/android/material/textfield/a;->e:Landroid/view/View$OnFocusChangeListener;
+    iget-object p1, p1, Lcom/google/android/material/textfield/a;->e:Lcom/google/android/material/textfield/a$b;
 
     .line 8
-    invoke-virtual {v0, p1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 9
     iget-object p1, p0, Lcom/google/android/material/textfield/a$c;->a:Lcom/google/android/material/textfield/a;
 
     .line 10
-    iget-object p1, p1, Lcom/google/android/material/textfield/a;->d:Landroid/text/TextWatcher;
+    iget-object p1, p1, Lcom/google/android/material/textfield/a;->d:Lcom/google/android/material/textfield/a$a;
 
     .line 11
-    invoke-virtual {v0, p1}, Landroid/widget/EditText;->removeTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->removeTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 12
     iget-object p1, p0, Lcom/google/android/material/textfield/a$c;->a:Lcom/google/android/material/textfield/a;
 
     .line 13
-    iget-object p1, p1, Lcom/google/android/material/textfield/a;->d:Landroid/text/TextWatcher;
+    iget-object p1, p1, Lcom/google/android/material/textfield/a;->d:Lcom/google/android/material/textfield/a$a;
 
     .line 14
-    invoke-virtual {v0, p1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     return-void
 .end method

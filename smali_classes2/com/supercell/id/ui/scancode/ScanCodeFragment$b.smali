@@ -1,141 +1,214 @@
 .class public final Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
-.super Ljava/lang/Object;
+.super Lwc/a1;
 .source "ScanCodeFragment.kt"
-
-# interfaces
-.implements Lob/a;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/scancode/ScanCodeFragment;-><init>()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/supercell/id/ui/scancode/ScanCodeFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = null
+    name = "b"
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
+.field public n0:Ljava/util/HashMap;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/scancode/ScanCodeFragment;)V
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
-    .line 1
-    iput-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lwc/a1;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lob/b;)V
-    .locals 11
+.method public final N0()V
+    .locals 1
 
-    if-eqz p1, :cond_1
+    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->n0:Ljava/util/HashMap;
 
-    .line 1
-    iget-object p1, p1, Lob/b;->a:Lc6/j;
+    if-eqz v0, :cond_0
 
-    .line 2
-    iget-object v8, p1, Lc6/j;->a:Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
-    const-string p1, "url"
-
-    .line 3
-    invoke-static {v8, p1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4
-    new-instance p1, Landroid/net/UrlQuerySanitizer;
-
-    invoke-direct {p1, v8}, Landroid/net/UrlQuerySanitizer;-><init>(Ljava/lang/String;)V
-
-    const-string v0, "p"
-
-    .line 5
-    invoke-virtual {p1, v0}, Landroid/net/UrlQuerySanitizer;->getValue(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 6
-    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
-
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    new-instance v10, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    sget-object v4, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v9, 0x1
-
-    move-object v0, v10
-
-    invoke-direct/range {v0 .. v9}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Lqc/d0;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Lcom/supercell/id/model/IdPresenceStatus;ZLjava/lang/String;Z)V
-
-    invoke-virtual {p1, v10}, Lcom/supercell/id/ui/MainActivity;->C(Lcom/supercell/id/ui/BackStack$Entry;)V
-
-    goto :goto_0
-
-    .line 7
     :cond_0
-    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
-
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    new-instance v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;
-
-    invoke-direct {v0, p0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;-><init>(Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;)V
-
-    const-string v1, "scan_code"
-
-    invoke-virtual {p1, v1, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/String;Lke/l;)V
-
-    :cond_1
-    :goto_0
     return-void
 .end method
 
-.method public b(Ljava/util/List;)V
+.method public final P0(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment$b;Z)V
+    .locals 1
+
+    const-string v0, "view"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "animation"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-super {p0, p1, p2, p3}, Lwc/a1;->P0(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment$b;Z)V
+
+    .line 2
+    invoke-virtual {p0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->h1()Landroid/view/View;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p2, 0x0
+
+    .line 3
+    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleX(F)V
+
+    .line 4
+    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleY(F)V
+
+    .line 5
+    invoke-virtual {p1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p2
+
+    sget p3, Lcom/supercell/id/R$integer;->locale_mirror_flip:I
+
+    invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result p2
+
+    int-to-float p2, p2
+
+    .line 6
+    new-instance p3, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;
+
+    invoke-direct {p3, p1, p2, p0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;-><init>(Landroid/view/View;FLcom/supercell/id/ui/scancode/ScanCodeFragment$b;)V
+
+    invoke-static {p1, p3}, Lae/z2;->a(Landroid/view/View;Lre/l;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
+
+    const-string p3, "inflater"
+
+    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget p3, Lcom/supercell/id/R$layout;->fragment_scan_code_navigation:I
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final synthetic a0()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lc6/l;",
-            ">;)V"
-        }
-    .end annotation
+
+    invoke-super {p0}, Lwc/a1;->a0()V
+
+    invoke-virtual {p0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->N0()V
+
+    return-void
+.end method
+
+.method public final h1()Landroid/view/View;
+    .locals 3
+
+    .line 1
+    sget v0, Lcom/supercell/id/R$id;->navigation_back_button:I
+
+    .line 2
+    iget-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->n0:Ljava/util/HashMap;
+
+    if-nez v1, :cond_0
+
+    new-instance v1, Ljava/util/HashMap;
+
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->n0:Ljava/util/HashMap;
+
+    :cond_0
+    iget-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->n0:Ljava/util/HashMap;
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/View;
+
+    if-nez v1, :cond_2
+
+    .line 3
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+
+    if-nez v1, :cond_1
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    .line 4
+    :cond_1
+    invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->n0:Ljava/util/HashMap;
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_2
+    move-object v0, v1
+
+    .line 5
+    :goto_0
+    check-cast v0, Landroid/widget/ImageButton;
+
+    return-object v0
+.end method
+
+.method public final k0(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 1
+
+    const-string v0, "view"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->h1()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/android/billingclient/api/z;->j(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    .line 2
+    iput-object v0, p0, Lwc/a1;->l0:Ljava/util/Collection;
+
+    .line 3
+    invoke-super {p0, p1, p2}, Lwc/a1;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 
     return-void
 .end method

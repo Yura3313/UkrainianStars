@@ -71,10 +71,12 @@
 
     const-string v1, "maxBufferSize < 1: "
 
+    .line 7
     invoke-static {v1, p1, p2}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 8
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -85,7 +87,6 @@
 .method public final sink()Lokio/Sink;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/Pipe;->sink:Lokio/Sink;
 
     return-object v0
@@ -94,7 +95,6 @@
 .method public final source()Lokio/Source;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/Pipe;->source:Lokio/Source;
 
     return-object v0

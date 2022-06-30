@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/widget/a$a;
+.class public final Landroidx/constraintlayout/widget/a$a;
 .super Ljava/lang/Object;
 .source "ConstraintSet.java"
 
@@ -84,7 +84,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;)V
+.method public final a(Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;)V
     .locals 2
 
     .line 1
@@ -726,7 +726,7 @@
     return-void
 .end method
 
-.method public clone()Ljava/lang/Object;
+.method public final clone()Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {

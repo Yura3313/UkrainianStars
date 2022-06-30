@@ -31,7 +31,6 @@
 .method public constructor <init>(Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/auth/view/LogoutUIManager$RequestType;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/LogoutUIManager$1;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/auth/view/LogoutUIManager$1;->val$idpCode:Ljava/lang/String;
@@ -96,7 +95,7 @@
     const/16 v1, 0xfa1
 
     .line 4
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 

@@ -127,7 +127,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/gson/internal/bind/TypeAdapters;->JSON_ELEMENT:Lcom/google/gson/TypeAdapter;
 
     invoke-virtual {v0, p1, p0}, Lcom/google/gson/TypeAdapter;->write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;)V
@@ -138,7 +137,6 @@
 .method public static writerForAppendable(Ljava/lang/Appendable;)Ljava/io/Writer;
     .locals 1
 
-    .line 1
     instance-of v0, p0, Ljava/io/Writer;
 
     if-eqz v0, :cond_0

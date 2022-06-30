@@ -1,4 +1,4 @@
-.class public Lv0/j;
+.class public final Lv0/j;
 .super Ljava/lang/Object;
 .source "ObjectAnimatorUtils.java"
 

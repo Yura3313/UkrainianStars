@@ -39,7 +39,7 @@
     new-instance v0, Lcom/linecorp/linesdk/a/a/b;
 
     .line 2
-    invoke-virtual {p1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -53,7 +53,7 @@
     new-instance v1, Lcom/linecorp/linesdk/a/a/d;
 
     .line 4
-    invoke-virtual {p1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -71,7 +71,7 @@
     new-instance v3, Lcom/linecorp/linesdk/a/a;
 
     .line 6
-    invoke-virtual {p1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -114,7 +114,6 @@
 .method public static synthetic a(Lcom/linecorp/linesdk/LineApiResponse;)Lcom/linecorp/linesdk/auth/LineLoginResult;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/linecorp/linesdk/auth/LineLoginResult;
 
     invoke-virtual {p0}, Lcom/linecorp/linesdk/LineApiResponse;->getResponseCode()Lcom/linecorp/linesdk/LineApiResponseCode;

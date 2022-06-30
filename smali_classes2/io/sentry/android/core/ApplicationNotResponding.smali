@@ -34,7 +34,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/RuntimeException;->setStackTrace([Ljava/lang/StackTraceElement;)V
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
 
     return-void
 .end method
@@ -44,7 +44,6 @@
 .method public getThread()Ljava/lang/Thread;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/ApplicationNotResponding;->thread:Ljava/lang/Thread;
 
     return-object v0

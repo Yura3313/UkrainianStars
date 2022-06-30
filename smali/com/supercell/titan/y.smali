@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/titan/TitanWebView;
+.field public final synthetic f:Lcom/supercell/titan/TitanWebView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/y;->g:Lcom/supercell/titan/TitanWebView;
+    iput-object p1, p0, Lcom/supercell/titan/y;->f:Lcom/supercell/titan/TitanWebView;
 
     return-void
 .end method
@@ -24,49 +24,64 @@
 
 # virtual methods
 .method public final run()V
-    .locals 3
+    .locals 5
 
-    iget-object v0, p0, Lcom/supercell/titan/y;->g:Lcom/supercell/titan/TitanWebView;
+    iget-object v0, p0, Lcom/supercell/titan/y;->f:Lcom/supercell/titan/TitanWebView;
 
     .line 1
-    invoke-virtual {v0}, Lcom/supercell/titan/TitanWebView;->hide()V
+    iget-object v1, v0, Lcom/supercell/titan/TitanWebView;->g:Landroid/webkit/WebView;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setAlpha(F)V
 
     .line 2
-    iget-object v1, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
+    iget-object v1, v0, Lcom/supercell/titan/TitanWebView;->g:Landroid/webkit/WebView;
 
-    invoke-virtual {v1}, Landroid/webkit/WebView;->clearHistory()V
+    const/4 v2, 0x4
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 3
-    iget-object v1, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
+    invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
-    const/4 v2, 0x1
+    move-result-object v1
 
-    invoke-virtual {v1, v2}, Landroid/webkit/WebView;->clearCache(Z)V
+    const-string v2, "input_method"
 
     .line 4
-    iget-object v1, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    const-string v2, "about:blank"
+    move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+    check-cast v2, Landroid/view/inputmethod/InputMethodManager;
+
+    if-eqz v2, :cond_0
 
     .line 5
-    iget-object v1, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
+    iget-object v3, v0, Lcom/supercell/titan/TitanWebView;->g:Landroid/webkit/WebView;
 
-    invoke-virtual {v1}, Landroid/webkit/WebView;->freeMemory()V
+    invoke-virtual {v3}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+
+    move-result-object v3
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v2, v3, v4}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
     .line 6
-    iget-object v0, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
+    :cond_0
+    iget-object v0, v0, Lcom/supercell/titan/TitanWebView;->g:Landroid/webkit/WebView;
 
-    invoke-virtual {v0}, Landroid/webkit/WebView;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v0}, Landroid/view/View;->clearFocus()V
 
-    move-result-object v0
+    .line 7
+    invoke-virtual {v1}, Lcom/supercell/titan/GameApp;->setSystemUiVisibility()V
 
-    check-cast v0, Landroid/view/View;
+    const-wide/16 v2, 0x7d0
 
-    const/16 v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    .line 8
+    invoke-virtual {v1, v2, v3}, Lcom/supercell/titan/GameApp;->setSystemUiVisibilityDelayed(J)V
 
     return-void
 .end method

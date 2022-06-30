@@ -21,7 +21,6 @@
 
     const-wide v0, 0x4041800000000000L    # 35.0
 
-    .line 1
     invoke-static {v0, v1}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v0
@@ -98,7 +97,7 @@
     const/4 v2, 0x1
 
     .line 11
-    invoke-static {p1, p2, v1, v2, v0}, Lw/f;->c(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+    invoke-static {p1, p2, v1, v2, v0}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
     move-result v1
 
@@ -114,22 +113,11 @@
     const-string v2, "minimumHorizontalAngle"
 
     .line 13
-    invoke-static {p2, v2}, Lw/f;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    goto :goto_0
-
-    .line 14
-    :cond_0
-    invoke-virtual {p1, v1, v0}, Landroid/content/res/TypedArray;->getFloat(IF)F
+    invoke-static {p1, p2, v2, v1, v0}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
     move-result v0
 
-    .line 15
-    :goto_0
+    .line 14
     invoke-static {v0}, Landroidx/transition/ArcMotion;->b(F)F
 
     move-result v0
@@ -142,30 +130,19 @@
 
     const-string v2, "maximumAngle"
 
-    .line 16
-    invoke-static {p2, v2}, Lw/f;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    .line 15
+    invoke-static {p1, p2, v2, v0, v1}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
     move-result p2
 
-    if-nez p2, :cond_1
-
-    goto :goto_1
-
-    .line 17
-    :cond_1
-    invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
-
-    move-result v1
-
-    .line 18
-    :goto_1
-    invoke-static {v1}, Landroidx/transition/ArcMotion;->b(F)F
+    .line 16
+    invoke-static {p2}, Landroidx/transition/ArcMotion;->b(F)F
 
     move-result p2
 
     iput p2, p0, Landroidx/transition/ArcMotion;->c:F
 
-    .line 19
+    .line 17
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -218,7 +195,7 @@
 
 
 # virtual methods
-.method public a(FFFF)Landroid/graphics/Path;
+.method public final a(FFFF)Landroid/graphics/Path;
     .locals 11
 
     .line 1
@@ -390,11 +367,11 @@
 
     double-to-float v3, v8
 
-    invoke-static {v1, v2, v3, v2}, Lo/o;->a(FFFF)F
+    invoke-static {v1, v2, v3, v2}, Lo/p;->a(FFFF)F
 
     move-result v1
 
-    invoke-static {v0, v5, v3, v5}, Lo/o;->a(FFFF)F
+    invoke-static {v0, v5, v3, v5}, Lo/p;->a(FFFF)F
 
     move-result v0
 

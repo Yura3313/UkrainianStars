@@ -1,4 +1,4 @@
-.class public Lv0/c;
+.class public final Lv0/c;
 .super Ljava/lang/Object;
 .source "FloatArrayEvaluator.java"
 
@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
     .line 1
@@ -68,7 +68,7 @@
     .line 6
     aget v3, p3, v1
 
-    invoke-static {v3, v2, p1, v2}, Lo/o;->a(FFFF)F
+    invoke-static {v3, v2, p1, v2}, Lo/p;->a(FFFF)F
 
     move-result v2
 

@@ -306,7 +306,6 @@
 .method public getId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/kakao/UserProfile;->id:J
 
     return-wide v0
@@ -315,7 +314,6 @@
 .method public getNickname()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/kakao/UserProfile;->nickname:Ljava/lang/String;
 
     return-object v0
@@ -324,7 +322,6 @@
 .method public getProfileImagePath()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/kakao/UserProfile;->profileImagePath:Ljava/lang/String;
 
     return-object v0
@@ -342,7 +339,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/kakao/UserProfile;->properties:Ljava/util/Map;
 
     return-object v0
@@ -374,7 +370,6 @@
 .method public getRemainingGroupMsgCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/kakao/UserProfile;->remainingGroupMsgCount:I
 
     return v0
@@ -383,7 +378,6 @@
 .method public getRemainingInviteCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/kakao/UserProfile;->remainingInviteCount:I
 
     return v0
@@ -392,7 +386,6 @@
 .method public getServiceUserId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/kakao/UserProfile;->serviceUserId:J
 
     return-wide v0
@@ -401,7 +394,6 @@
 .method public getThumbnailImagePath()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/kakao/UserProfile;->thumbnailImagePath:Ljava/lang/String;
 
     return-object v0
@@ -410,7 +402,6 @@
 .method public getUUID()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/kakao/UserProfile;->uuid:Ljava/lang/String;
 
     return-object v0
@@ -419,7 +410,6 @@
 .method public hasSignedUp()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/kakao/UserProfile;->hasSignedUp:Z
 
     return v0

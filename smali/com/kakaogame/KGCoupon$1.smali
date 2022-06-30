@@ -38,7 +38,6 @@
 .method public constructor <init>(Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/log/FirebaseEvent;Lcom/kakaogame/util/Stopwatch;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGCoupon$1;->val$callback:Lcom/kakaogame/KGResultCallback;
 
     iput-object p2, p0, Lcom/kakaogame/KGCoupon$1;->val$fbEvent:Lcom/kakaogame/log/FirebaseEvent;
@@ -73,7 +72,7 @@
     const-string v1, "KGCoupon"
 
     .line 2
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 3
     iget-object v0, p0, Lcom/kakaogame/KGCoupon$1;->val$callback:Lcom/kakaogame/KGResultCallback;

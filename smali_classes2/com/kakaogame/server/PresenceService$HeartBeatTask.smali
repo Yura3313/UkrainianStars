@@ -21,7 +21,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +29,6 @@
 .method public synthetic constructor <init>(Lcom/kakaogame/server/PresenceService$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/kakaogame/server/PresenceService$HeartBeatTask;-><init>()V
 
     return-void
@@ -53,7 +51,7 @@
     move-exception v0
 
     .line 2
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 

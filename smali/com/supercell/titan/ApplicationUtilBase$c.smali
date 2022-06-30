@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/ApplicationUtilBase$c;
+.class public final Lcom/supercell/titan/ApplicationUtilBase$c;
 .super Ljava/lang/Object;
 .source "ApplicationUtilBase.java"
 
@@ -18,19 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/titan/GL2JNISurfaceView;
+.field public final synthetic f:Lcom/supercell/titan/GL2JNISurfaceView;
 
-.field public final synthetic h:Z
+.field public final synthetic g:Z
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/GL2JNISurfaceView;Z)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->g:Lcom/supercell/titan/GL2JNISurfaceView;
+    iput-object p1, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->f:Lcom/supercell/titan/GL2JNISurfaceView;
 
-    iput-boolean p2, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->h:Z
+    iput-boolean p2, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->g:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,15 +38,14 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->g:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->f:Lcom/supercell/titan/GL2JNISurfaceView;
 
-    iget-boolean v1, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->h:Z
+    iget-boolean v1, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->g:Z
 
-    invoke-virtual {v0, v1}, Landroid/view/SurfaceView;->setKeepScreenOn(Z)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setKeepScreenOn(Z)V
 
     return-void
 .end method

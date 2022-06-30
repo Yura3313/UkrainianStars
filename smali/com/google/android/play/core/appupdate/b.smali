@@ -10,12 +10,5 @@
 
     const/4 v0, 0x0
 
-    if-eq p1, p2, :cond_0
-
-    const/4 p2, 0x2
-
-    throw v0
-
-    :cond_0
     throw v0
 .end method

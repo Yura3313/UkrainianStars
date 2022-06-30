@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/SupercellId$i;
+.class public final Lcom/supercell/titan/SupercellId$i;
 .super Ljava/lang/Object;
 .source "SupercellId.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/titan/SupercellId;->accountAlreadyBound()V
+    value = Lcom/supercell/titan/SupercellId;->accountBindingFailed()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/SupercellId;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,13 +28,12 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->accountAlreadyBound()V
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->accountBindingFailed()V
 
     return-void
 .end method

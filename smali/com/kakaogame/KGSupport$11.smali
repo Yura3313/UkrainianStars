@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -114,7 +113,7 @@
     const-string v0, "deepLinkUrl"
 
     .line 11
-    invoke-static {p1, p2, v0, p2}, Lcom/kakaogame/a;->a(Lcom/kakaogame/KGResult;Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/util/LinkedHashMap;)Lcom/kakaogame/KGResult;
+    invoke-static {p1, p2, v0, p2}, Landroidx/appcompat/app/j;->a(Lcom/kakaogame/KGResult;Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/util/LinkedHashMap;)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 

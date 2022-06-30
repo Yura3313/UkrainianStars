@@ -214,10 +214,9 @@
 
 
 # virtual methods
-.method public a()Z
+.method public final a()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/g1;->d:I
 
     const/4 v1, 0x2
@@ -237,19 +236,17 @@
     return v0
 .end method
 
-.method public b()Lcom/google/protobuf/q0;
+.method public final b()Lcom/google/protobuf/q0;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/g1;->a:Lcom/google/protobuf/q0;
 
     return-object v0
 .end method
 
-.method public c()I
+.method public final c()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/g1;->d:I
 
     const/4 v1, 0x1

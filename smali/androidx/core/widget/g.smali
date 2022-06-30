@@ -1,162 +1,121 @@
 .class public final Landroidx/core/widget/g;
 .super Ljava/lang/Object;
-.source "PopupWindowCompat.java"
-
-
-# static fields
-.field public static a:Ljava/lang/reflect/Method;
-
-.field public static b:Z
-
-.field public static c:Ljava/lang/reflect/Field;
-
-.field public static d:Z
+.source "ListViewCompat.java"
 
 
 # direct methods
-.method public static a(Landroid/widget/PopupWindow;Z)V
+.method public static a(Landroid/widget/ListView;)Z
     .locals 3
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x17
+    const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
+    const/4 v0, -0x1
+
     .line 2
-    invoke-virtual {p0, p1}, Landroid/widget/PopupWindow;->setOverlapAnchor(Z)V
+    invoke-virtual {p0, v0}, Landroid/widget/ListView;->canScrollList(I)Z
 
-    goto :goto_0
+    move-result p0
 
-    :cond_0
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_2
+    return p0
 
     .line 3
-    sget-boolean v0, Landroidx/core/widget/g;->d:Z
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v0
+
+    const/4 v1, 0x0
 
     if-nez v0, :cond_1
 
-    const/4 v0, 0x1
+    return v1
 
     .line 4
-    :try_start_0
-    const-class v1, Landroid/widget/PopupWindow;
+    :cond_1
+    invoke-virtual {p0}, Landroid/widget/AdapterView;->getFirstVisiblePosition()I
 
-    const-string v2, "mOverlapAnchor"
-
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
-    move-result-object v1
-
-    sput-object v1, Landroidx/core/widget/g;->c:Ljava/lang/reflect/Field;
+    move-result v0
 
     .line 5
-    invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/view/View;->getTop()I
+
+    move-result v2
+
+    if-gtz v0, :cond_2
 
     .line 6
-    :catch_0
-    sput-boolean v0, Landroidx/core/widget/g;->d:Z
+    invoke-virtual {p0}, Landroid/widget/AbsListView;->getListPaddingTop()I
 
-    .line 7
-    :cond_1
-    sget-object v0, Landroidx/core/widget/g;->c:Ljava/lang/reflect/Field;
+    move-result p0
 
-    if-eqz v0, :cond_2
+    if-ge v2, p0, :cond_3
 
-    .line 8
-    :try_start_1
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
-    :try_end_1
-    .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
     :cond_2
-    :goto_0
-    return-void
+    const/4 v1, 0x1
+
+    :cond_3
+    return v1
 .end method
 
-.method public static b(Landroid/widget/PopupWindow;I)V
-    .locals 6
+.method public static b(Landroid/widget/ListView;I)V
+    .locals 2
 
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x17
+    const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
     .line 2
-    invoke-virtual {p0, p1}, Landroid/widget/PopupWindow;->setWindowLayoutType(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/ListView;->scrollListBy(I)V
 
-    return-void
+    goto :goto_0
 
     .line 3
     :cond_0
-    sget-boolean v0, Landroidx/core/widget/g;->b:Z
+    invoke-virtual {p0}, Landroid/widget/AdapterView;->getFirstVisiblePosition()I
 
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-ne v0, v1, :cond_1
+
+    return-void
+
+    :cond_1
     const/4 v1, 0x0
 
-    const/4 v2, 0x1
-
-    if-nez v0, :cond_1
-
     .line 4
-    :try_start_0
-    const-class v0, Landroid/widget/PopupWindow;
+    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
-    const-string v3, "setWindowLayoutType"
+    move-result-object v1
 
-    new-array v4, v2, [Ljava/lang/Class;
+    if-nez v1, :cond_2
 
-    sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    aput-object v5, v4, v1
-
-    invoke-virtual {v0, v3, v4}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v0
-
-    sput-object v0, Landroidx/core/widget/g;->a:Ljava/lang/reflect/Method;
+    return-void
 
     .line 5
-    invoke-virtual {v0, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    :cond_2
+    invoke-virtual {v1}, Landroid/view/View;->getTop()I
+
+    move-result v1
+
+    sub-int/2addr v1, p1
 
     .line 6
-    :catch_0
-    sput-boolean v2, Landroidx/core/widget/g;->b:Z
+    invoke-virtual {p0, v0, v1}, Landroid/widget/ListView;->setSelectionFromTop(II)V
 
-    .line 7
-    :cond_1
-    sget-object v0, Landroidx/core/widget/g;->a:Ljava/lang/reflect/Method;
-
-    if-eqz v0, :cond_2
-
-    :try_start_1
-    new-array v2, v2, [Ljava/lang/Object;
-
-    .line 8
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p1
-
-    aput-object p1, v2, v1
-
-    invoke-virtual {v0, p0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    :cond_2
+    :goto_0
     return-void
 .end method

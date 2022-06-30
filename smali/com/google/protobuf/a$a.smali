@@ -39,7 +39,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -77,7 +76,7 @@
     .line 4
     check-cast p0, Lcom/google/protobuf/f0;
 
-    invoke-interface {p0}, Lcom/google/protobuf/f0;->t()Ljava/util/List;
+    invoke-interface {p0}, Lcom/google/protobuf/f0;->q()Ljava/util/List;
 
     move-result-object p0
 
@@ -114,6 +113,7 @@
 
     move-result-object p0
 
+    .line 9
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -128,7 +128,7 @@
 
     move-result-object p0
 
-    .line 9
+    .line 10
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -138,12 +138,12 @@
 
     if-lt v1, p1, :cond_0
 
-    .line 10
+    .line 11
     invoke-interface {v0, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     goto :goto_1
 
-    .line 11
+    .line 12
     :cond_0
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -151,20 +151,20 @@
 
     throw p1
 
-    .line 12
+    .line 13
     :cond_1
     instance-of v4, v3, Lcom/google/protobuf/i;
 
     if-eqz v4, :cond_2
 
-    .line 13
+    .line 14
     check-cast v3, Lcom/google/protobuf/i;
 
-    invoke-interface {v0, v3}, Lcom/google/protobuf/f0;->X(Lcom/google/protobuf/i;)V
+    invoke-interface {v0, v3}, Lcom/google/protobuf/f0;->k0(Lcom/google/protobuf/i;)V
 
     goto :goto_0
 
-    .line 14
+    .line 15
     :cond_2
     check-cast v3, Ljava/lang/String;
 
@@ -172,20 +172,20 @@
 
     goto :goto_0
 
-    .line 15
+    .line 16
     :cond_3
     instance-of v0, p0, Lcom/google/protobuf/d1;
 
     if-eqz v0, :cond_4
 
-    .line 16
+    .line 17
     check-cast p0, Ljava/util/Collection;
 
     invoke-interface {p1, p0}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     goto :goto_4
 
-    .line 17
+    .line 18
     :cond_4
     instance-of v0, p1, Ljava/util/ArrayList;
 
@@ -195,7 +195,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 18
+    .line 19
     move-object v0, p1
 
     check-cast v0, Ljava/util/ArrayList;
@@ -216,13 +216,13 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->ensureCapacity(I)V
 
-    .line 19
+    .line 20
     :cond_5
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
 
-    .line 20
+    .line 21
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -240,11 +240,12 @@
 
     if-nez v3, :cond_7
 
-    .line 21
+    .line 22
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
+    .line 23
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v2
@@ -259,7 +260,7 @@
 
     move-result-object p0
 
-    .line 22
+    .line 24
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v1
@@ -269,12 +270,12 @@
 
     if-lt v1, v0, :cond_6
 
-    .line 23
+    .line 25
     invoke-interface {p1, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     goto :goto_3
 
-    .line 24
+    .line 26
     :cond_6
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -282,7 +283,7 @@
 
     throw p1
 
-    .line 25
+    .line 27
     :cond_7
     invoke-interface {p1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

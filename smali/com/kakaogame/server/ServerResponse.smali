@@ -92,7 +92,7 @@
     const/4 v1, 0x0
 
     .line 7
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -101,7 +101,7 @@
     const/4 v2, 0x1
 
     .line 8
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -110,7 +110,7 @@
     const/4 v3, 0x2
 
     .line 9
-    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -134,7 +134,7 @@
     move-exception v0
 
     .line 12
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -189,7 +189,7 @@
     move-exception p0
 
     .line 4
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -227,7 +227,7 @@
     const-string v0, "status"
 
     .line 1
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -236,7 +236,7 @@
     if-eqz v1, :cond_0
 
     .line 2
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -249,7 +249,7 @@
     const-string v1, "desc"
 
     .line 3
-    invoke-virtual {p0, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -258,7 +258,7 @@
     const-string v3, "content"
 
     .line 4
-    invoke-virtual {p0, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -285,7 +285,6 @@
 .method public getBody()Lcom/kakaogame/util/json/JSONObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/server/ServerResponse;->body:Lcom/kakaogame/util/json/JSONObject;
 
     return-object v0
@@ -294,7 +293,6 @@
 .method public getHeader()Lcom/kakaogame/util/json/JSONObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/server/ServerResponse;->header:Lcom/kakaogame/util/json/JSONObject;
 
     return-object v0
@@ -303,7 +301,6 @@
 .method public getRequestUri()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/server/ServerResponse;->requestUri:Ljava/lang/String;
 
     return-object v0
@@ -340,7 +337,7 @@
     const-string v2, "txNo"
 
     .line 2
-    invoke-virtual {v1, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -359,7 +356,7 @@
     move-exception v1
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -380,6 +377,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakaogame/server/ServerResponse;->requestUri:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;

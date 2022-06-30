@@ -1,4 +1,4 @@
-.class public Lj0/b;
+.class public final Lj0/b;
 .super Ljava/lang/Object;
 .source "FocusStrategy.java"
 
@@ -6,9 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lj0/b$b;,
         Lj0/b$a;,
-        Lj0/b$c;
+        Lj0/b$b;
     }
 .end annotation
 
@@ -199,25 +198,25 @@
 .method public static b(ILandroid/graphics/Rect;Landroid/graphics/Rect;)Z
     .locals 3
 
-    const/16 v0, 0x11
+    const/4 v0, 0x0
 
-    const/4 v1, 0x1
+    const/16 v1, 0x11
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
-    if-eq p0, v0, :cond_3
+    if-eq p0, v1, :cond_3
 
-    const/16 v0, 0x21
+    const/16 v1, 0x21
 
-    if-eq p0, v0, :cond_1
+    if-eq p0, v1, :cond_1
 
-    const/16 v0, 0x42
+    const/16 v1, 0x42
 
-    if-eq p0, v0, :cond_3
+    if-eq p0, v1, :cond_3
 
-    const/16 v0, 0x82
+    const/16 v1, 0x82
 
-    if-ne p0, v0, :cond_0
+    if-ne p0, v1, :cond_0
 
     goto :goto_0
 
@@ -236,9 +235,9 @@
     :goto_0
     iget p0, p2, Landroid/graphics/Rect;->right:I
 
-    iget v0, p1, Landroid/graphics/Rect;->left:I
+    iget v1, p1, Landroid/graphics/Rect;->left:I
 
-    if-lt p0, v0, :cond_2
+    if-lt p0, v1, :cond_2
 
     iget p0, p2, Landroid/graphics/Rect;->left:I
 
@@ -246,21 +245,18 @@
 
     if-gt p0, p1, :cond_2
 
-    goto :goto_1
+    const/4 v0, 0x1
 
     :cond_2
-    const/4 v1, 0x0
-
-    :goto_1
-    return v1
+    return v0
 
     .line 3
     :cond_3
     iget p0, p2, Landroid/graphics/Rect;->bottom:I
 
-    iget v0, p1, Landroid/graphics/Rect;->top:I
+    iget v1, p1, Landroid/graphics/Rect;->top:I
 
-    if-lt p0, v0, :cond_4
+    if-lt p0, v1, :cond_4
 
     iget p0, p2, Landroid/graphics/Rect;->top:I
 
@@ -268,48 +264,45 @@
 
     if-gt p0, p1, :cond_4
 
-    goto :goto_2
+    const/4 v0, 0x1
 
     :cond_4
-    const/4 v1, 0x0
-
-    :goto_2
-    return v1
+    return v0
 .end method
 
 .method public static c(Landroid/graphics/Rect;Landroid/graphics/Rect;I)Z
     .locals 3
 
-    const/16 v0, 0x11
+    const/4 v0, 0x0
 
-    const/4 v1, 0x1
+    const/16 v1, 0x11
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
-    if-eq p2, v0, :cond_9
+    if-eq p2, v1, :cond_9
 
-    const/16 v0, 0x21
+    const/16 v1, 0x21
 
-    if-eq p2, v0, :cond_6
+    if-eq p2, v1, :cond_6
 
-    const/16 v0, 0x42
+    const/16 v1, 0x42
 
-    if-eq p2, v0, :cond_3
+    if-eq p2, v1, :cond_3
 
-    const/16 v0, 0x82
+    const/16 v1, 0x82
 
-    if-ne p2, v0, :cond_2
+    if-ne p2, v1, :cond_2
 
     .line 1
     iget p2, p0, Landroid/graphics/Rect;->top:I
 
-    iget v0, p1, Landroid/graphics/Rect;->top:I
+    iget v1, p1, Landroid/graphics/Rect;->top:I
 
-    if-lt p2, v0, :cond_0
+    if-lt p2, v1, :cond_0
 
     iget p2, p0, Landroid/graphics/Rect;->bottom:I
 
-    if-gt p2, v0, :cond_1
+    if-gt p2, v1, :cond_1
 
     :cond_0
     iget p0, p0, Landroid/graphics/Rect;->bottom:I
@@ -318,13 +311,10 @@
 
     if-ge p0, p1, :cond_1
 
-    goto :goto_0
+    const/4 v0, 0x1
 
     :cond_1
-    const/4 v1, 0x0
-
-    :goto_0
-    return v1
+    return v0
 
     .line 2
     :cond_2
@@ -340,13 +330,13 @@
     :cond_3
     iget p2, p0, Landroid/graphics/Rect;->left:I
 
-    iget v0, p1, Landroid/graphics/Rect;->left:I
+    iget v1, p1, Landroid/graphics/Rect;->left:I
 
-    if-lt p2, v0, :cond_4
+    if-lt p2, v1, :cond_4
 
     iget p2, p0, Landroid/graphics/Rect;->right:I
 
-    if-gt p2, v0, :cond_5
+    if-gt p2, v1, :cond_5
 
     :cond_4
     iget p0, p0, Landroid/graphics/Rect;->right:I
@@ -355,25 +345,22 @@
 
     if-ge p0, p1, :cond_5
 
-    goto :goto_1
+    const/4 v0, 0x1
 
     :cond_5
-    const/4 v1, 0x0
-
-    :goto_1
-    return v1
+    return v0
 
     .line 4
     :cond_6
     iget p2, p0, Landroid/graphics/Rect;->bottom:I
 
-    iget v0, p1, Landroid/graphics/Rect;->bottom:I
+    iget v1, p1, Landroid/graphics/Rect;->bottom:I
 
-    if-gt p2, v0, :cond_7
+    if-gt p2, v1, :cond_7
 
     iget p2, p0, Landroid/graphics/Rect;->top:I
 
-    if-lt p2, v0, :cond_8
+    if-lt p2, v1, :cond_8
 
     :cond_7
     iget p0, p0, Landroid/graphics/Rect;->top:I
@@ -382,25 +369,22 @@
 
     if-le p0, p1, :cond_8
 
-    goto :goto_2
+    const/4 v0, 0x1
 
     :cond_8
-    const/4 v1, 0x0
-
-    :goto_2
-    return v1
+    return v0
 
     .line 5
     :cond_9
     iget p2, p0, Landroid/graphics/Rect;->right:I
 
-    iget v0, p1, Landroid/graphics/Rect;->right:I
+    iget v1, p1, Landroid/graphics/Rect;->right:I
 
-    if-gt p2, v0, :cond_a
+    if-gt p2, v1, :cond_a
 
     iget p2, p0, Landroid/graphics/Rect;->left:I
 
-    if-lt p2, v0, :cond_b
+    if-lt p2, v1, :cond_b
 
     :cond_a
     iget p0, p0, Landroid/graphics/Rect;->left:I
@@ -409,13 +393,10 @@
 
     if-le p0, p1, :cond_b
 
-    goto :goto_3
+    const/4 v0, 0x1
 
     :cond_b
-    const/4 v1, 0x0
-
-    :goto_3
-    return v1
+    return v0
 .end method
 
 .method public static d(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I

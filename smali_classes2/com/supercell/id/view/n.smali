@@ -4,18 +4,15 @@
 
 
 # instance fields
-.field public g:Z
-
-.field public final synthetic h:Landroid/view/View;
+.field public final synthetic f:Lcom/supercell/id/view/ViewAnimator;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;)V
+.method public constructor <init>(Lcom/supercell/id/view/ViewAnimator;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/n;->h:Landroid/view/View;
+    iput-object p1, p0, Lcom/supercell/id/view/n;->f:Lcom/supercell/id/view/ViewAnimator;
 
-    .line 1
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
@@ -23,48 +20,22 @@
 
 
 # virtual methods
-.method public onAnimationCancel(Landroid/animation/Animator;)V
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-
-    const/4 p1, 0x1
-
-    .line 1
-    iput-boolean p1, p0, Lcom/supercell/id/view/n;->g:Z
 
     return-void
 .end method
 
-.method public onAnimationEnd(Landroid/animation/Animator;)V
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    if-eqz p1, :cond_1
+    const-string v0, "animation"
 
-    .line 1
-    iget-boolean p1, p0, Lcom/supercell/id/view/n;->g:Z
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-nez p1, :cond_0
+    iget-object p1, p0, Lcom/supercell/id/view/n;->f:Lcom/supercell/id/view/ViewAnimator;
 
-    .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/n;->h:Landroid/view/View;
+    invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
 
-    const-string v0, "child"
-
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/16 v0, 0x8
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
-
-    :cond_0
     return-void
-
-    :cond_1
-    const-string p1, "animation"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

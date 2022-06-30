@@ -24,7 +24,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/SentryCrashLastRunState;
 
     invoke-direct {v0}, Lio/sentry/SentryCrashLastRunState;-><init>()V
@@ -53,7 +52,6 @@
 .method public static getInstance()Lio/sentry/SentryCrashLastRunState;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/SentryCrashLastRunState;->INSTANCE:Lio/sentry/SentryCrashLastRunState;
 
     return-object v0

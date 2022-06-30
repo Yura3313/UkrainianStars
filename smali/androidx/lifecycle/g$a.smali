@@ -1,4 +1,4 @@
-.class public Landroidx/lifecycle/g$a;
+.class public final Landroidx/lifecycle/g$a;
 .super Landroidx/lifecycle/c;
 .source "LifecycleDispatcher.java"
 
@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/lifecycle/c;-><init>()V
 
     return-void
@@ -29,8 +28,7 @@
 .method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
-    invoke-static {p1}, Landroidx/lifecycle/t;->c(Landroid/app/Activity;)V
+    invoke-static {p1}, Landroidx/lifecycle/s;->c(Landroid/app/Activity;)V
 
     return-void
 .end method

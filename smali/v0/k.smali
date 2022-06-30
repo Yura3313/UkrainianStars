@@ -1,4 +1,4 @@
-.class public Lv0/k;
+.class public final Lv0/k;
 .super Landroid/util/Property;
 .source "PathProperty.java"
 
@@ -102,10 +102,9 @@
 
 
 # virtual methods
-.method public get(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iget p1, p0, Lv0/k;->f:F
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -115,7 +114,7 @@
     return-object p1
 .end method
 
-.method public set(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final set(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 3
 
     .line 1

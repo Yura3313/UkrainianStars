@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;
-.super Lle/j;
+.super Lse/h;
 .source "IngameFriendsFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->p1()V
+    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->g1()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,21 +18,21 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lqc/j;",
-        "Lse/f0<",
+        "Lse/h;",
+        "Lre/l<",
+        "Lvc/j;",
+        "Lze/e0<",
         "+",
         "Ljava/util/List<",
         "+",
-        "Lqc/l;",
+        "Lvc/l;",
         ">;>;>;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;
+.field public static final f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;
+    sput-object v0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$b;
 
     return-void
 .end method
@@ -53,51 +53,54 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 7
 
     .line 1
-    check-cast p1, Lqc/j;
+    check-cast p1, Lvc/j;
 
-    if-eqz p1, :cond_3
+    const-string v0, "friends"
 
     .line 2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getIngameFriends()[Lcom/supercell/id/IdIngameFriend;
 
     move-result-object v0
 
-    .line 3
-    iget-object v1, p1, Lqc/j;->a:Ljava/util/List;
-
     .line 4
-    iget-object p1, p1, Lqc/j;->b:Ljava/util/List;
+    iget-object v1, p1, Lvc/j;->a:Ljava/util/List;
 
     .line 5
-    invoke-static {v1, p1}, Lbe/k;->O(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    iget-object p1, p1, Lvc/j;->b:Ljava/util/List;
+
+    .line 6
+    invoke-static {v1, p1}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p1
 
-    .line 6
+    .line 7
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v2}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
     move-result v2
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 7
+    .line 8
     check-cast p1, Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -115,38 +118,38 @@
 
     move-result-object v2
 
-    .line 8
-    check-cast v2, Lqc/i;
-
     .line 9
-    iget-object v2, v2, Lqc/i;->a:Lqc/d0;
+    check-cast v2, Lvc/i;
 
     .line 10
+    iget-object v2, v2, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+
+    .line 11
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     :cond_0
-    invoke-static {v1}, Lbe/k;->Z(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v1}, Lje/j;->U(Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object p1
 
-    .line 11
+    .line 12
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v1
 
-    .line 12
-    iget-object v1, v1, Lvd/r;->o:Lmc/f0;
-
     .line 13
+    iget-object v1, v1, Lae/u;->o:Lrc/d0;
+
+    .line 14
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 14
+    .line 15
     array-length v3, v0
 
     const/4 v4, 0x0
@@ -156,8 +159,8 @@
 
     aget-object v5, v0, v4
 
-    .line 15
-    invoke-virtual {v5}, Lcom/supercell/id/IdIngameFriend;->getAccount()Lqc/d0;
+    .line 16
+    invoke-virtual {v5}, Lcom/supercell/id/IdIngameFriend;->getAccount()Lcom/supercell/id/model/IdSocialAccount;
 
     move-result-object v6
 
@@ -176,27 +179,11 @@
 
     goto :goto_1
 
-    .line 16
+    .line 17
     :cond_2
-    invoke-virtual {v1, v2}, Lmc/f0;->j(Ljava/util/List;)Lse/f0;
+    invoke-virtual {v1, v2}, Lrc/d0;->j(Ljava/util/List;)Lze/e0;
 
     move-result-object p1
 
     return-object p1
-
-    :cond_3
-    const-string p1, "friends"
-
-    .line 17
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    goto :goto_3
-
-    :goto_2
-    throw p1
-
-    :goto_3
-    goto :goto_2
 .end method

@@ -15,11 +15,11 @@
 
 
 # virtual methods
-.method public abstract a(Landroid/view/View;F)V
+.method public abstract a()V
 .end method
 
-.method public abstract b(Landroid/view/View;)V
+.method public abstract b()V
 .end method
 
-.method public abstract c(Landroid/view/View;)V
+.method public abstract c()V
 .end method

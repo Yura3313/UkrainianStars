@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/auth/view/LoginIDPListFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/LoginIDPListFragment$1;->this$0:Lcom/kakaogame/auth/view/LoginIDPListFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

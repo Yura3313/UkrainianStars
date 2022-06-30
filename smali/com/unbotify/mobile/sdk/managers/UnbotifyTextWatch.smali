@@ -40,7 +40,7 @@
 
     iget v0, p0, Lcom/unbotify/mobile/sdk/managers/UnbotifyTextWatch;->id:I
 
-    invoke-interface {p1}, Landroid/text/Editable;->length()I
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result p1
 

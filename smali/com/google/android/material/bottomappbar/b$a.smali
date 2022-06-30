@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/bottomappbar/b$a;
+.class public final Lcom/google/android/material/bottomappbar/b$a;
 .super Lcom/google/android/material/floatingactionbutton/FloatingActionButton$a;
 .source "BottomAppBar.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Lcom/google/android/material/bottomappbar/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomappbar/b$a;->a:Lcom/google/android/material/bottomappbar/b;
 
     invoke-direct {p0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$a;-><init>()V
@@ -32,15 +31,18 @@
 
 
 # virtual methods
-.method public b(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V
-    .locals 0
+.method public final b()V
+    .locals 2
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/b$a;->a:Lcom/google/android/material/bottomappbar/b;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/b$a;->a:Lcom/google/android/material/bottomappbar/b;
 
-    iget-object p1, p1, Lcom/google/android/material/bottomappbar/b;->b:Lcom/google/android/material/bottomappbar/BottomAppBar;
+    iget-object v0, v0, Lcom/google/android/material/bottomappbar/b;->b:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
-    invoke-static {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->E(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
+    sget v1, Lcom/google/android/material/bottomappbar/BottomAppBar;->o0:I
+
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     return-void
 .end method

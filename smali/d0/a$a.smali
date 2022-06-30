@@ -1,4 +1,4 @@
-.class public Ld0/a$a;
+.class public final Ld0/a$a;
 .super Ljava/lang/Object;
 .source "BidiFormatter.java"
 
@@ -61,7 +61,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/CharSequence;Z)V
+.method public constructor <init>(Ljava/lang/CharSequence;)V
     .locals 0
 
     .line 1
@@ -82,7 +82,7 @@
 
 
 # virtual methods
-.method public a()B
+.method public final a()B
     .locals 3
 
     .line 1

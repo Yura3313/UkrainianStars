@@ -20,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,6 @@
 .method public static synthetic access$000(Landroid/app/Activity;Ljava/lang/String;Landroid/app/Dialog;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/kakaogame/coupon/CouponManager;->useCoupon(Landroid/app/Activity;Ljava/lang/String;Landroid/app/Dialog;Lcom/kakaogame/KGResultCallback;)V
 
     return-void
@@ -189,7 +187,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/kakaogame/coupon/CouponManager$1;
 
     invoke-direct {v0, p0, p1}, Lcom/kakaogame/coupon/CouponManager$1;-><init>(Landroid/app/Activity;Lcom/kakaogame/KGResultCallback;)V

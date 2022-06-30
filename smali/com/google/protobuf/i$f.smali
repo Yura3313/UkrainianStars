@@ -27,5 +27,5 @@
 
 
 # virtual methods
-.method public abstract a()B
+.method public abstract b()B
 .end method

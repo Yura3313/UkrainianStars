@@ -11,7 +11,6 @@
 .method public constructor <init>(Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/web/WebDialog$Settings;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/kakaogame/web/WebDialog;-><init>(Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/web/WebDialog$Settings;)V
 
     return-void
@@ -296,7 +295,7 @@
     .line 9
     iget-object v7, v0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v7}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -318,7 +317,7 @@
     .line 11
     iget-object v8, v0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v8}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v8}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
@@ -356,7 +355,7 @@
     .line 15
     iget-object v8, v0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v8}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v8}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
@@ -369,7 +368,7 @@
     .line 16
     iget-object v9, v0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v9}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v9}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
@@ -402,7 +401,7 @@
     .line 17
     iget-object v5, v0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v5}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -417,7 +416,7 @@
     .line 18
     iget-object v7, v0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v7}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -554,7 +553,7 @@
     .line 26
     iget-object v7, v0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v7}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -567,7 +566,7 @@
     .line 27
     iget-object v7, v0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v7}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 

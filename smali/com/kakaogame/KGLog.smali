@@ -19,7 +19,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +27,6 @@
 .method public static synthetic access$000(Ljava/util/Map;)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGLog;->writeItemLog(Ljava/util/Map;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -39,7 +37,6 @@
 .method public static synthetic access$100(Ljava/util/Map;)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGLog;->writeResourceLog(Ljava/util/Map;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -50,7 +47,6 @@
 .method public static synthetic access$200(Ljava/util/Map;)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGLog;->writeActionLog(Ljava/util/Map;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -61,7 +57,6 @@
 .method public static synthetic access$300(Ljava/util/Map;)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGLog;->writeNetworkLog(Ljava/util/Map;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -72,7 +67,6 @@
 .method public static synthetic access$400(Ljava/util/Map;)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGLog;->writeRoundLog(Ljava/util/Map;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -96,7 +90,7 @@
 
     const/4 v0, 0x0
 
-    .line 1
+    .line 23
     :try_start_0
     invoke-static {p0, p1, v0, p2, p3}, Lcom/kakaogame/KGLog;->accumulateValue(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Lcom/kakaogame/KGResult;
 
@@ -113,8 +107,8 @@
 
     const/16 p2, 0xfa1
 
-    .line 2
-    invoke-static {p0, p1, p0, p2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    .line 24
+    invoke-static {p0, p1, p0, p2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -146,11 +140,12 @@
 
     const-string v4, " :  "
 
-    .line 3
-    invoke-static {v2, p0, v3, p1, v4}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 1
+    invoke-static {v2, p0, v3, p1, v4}, Lcom/kakaogame/c;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 2
     invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -165,7 +160,7 @@
 
     invoke-static {v3, v2}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
+    .line 3
     :try_start_0
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -175,17 +170,17 @@
 
     if-eqz v2, :cond_0
 
-    .line 5
+    .line 4
     invoke-static {v3, v1}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
+    .line 5
     invoke-static {v4, v1}, Lcom/kakaogame/KGResult;->getResult(ILjava/lang/String;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
     return-object p0
 
-    .line 7
+    .line 6
     :cond_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -193,21 +188,21 @@
 
     if-eqz v1, :cond_1
 
-    .line 8
+    .line 7
     invoke-static {v3, v0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
+    .line 8
     invoke-static {v4, v0}, Lcom/kakaogame/KGResult;->getResult(ILjava/lang/String;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
     return-object p0
 
-    .line 10
+    .line 9
     :cond_1
     invoke-static {p0, p1, p2, p3, p4}, Lcom/kakaogame/log/PlayerLogManager;->addSummaryLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 
-    .line 11
+    .line 10
     invoke-static {}, Lcom/kakaogame/KGResult;->getSuccessResult()Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -221,8 +216,8 @@
 
     const/16 p1, 0xfa1
 
-    .line 12
-    invoke-static {p0, v3, p0, p1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    .line 11
+    invoke-static {p0, v3, p0, p1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -253,7 +248,7 @@
     move-exception v1
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -345,7 +340,6 @@
 .method public static initialize()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/KGLog;->initInterfaceBroker()V
 
     return-void
@@ -367,7 +361,7 @@
 
     const/4 v0, 0x0
 
-    .line 1
+    .line 23
     :try_start_0
     invoke-static {p0, p1, v0}, Lcom/kakaogame/KGLog;->startLatencyCheck(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/KGResult;
 
@@ -384,8 +378,8 @@
 
     const/16 v0, 0xfa1
 
-    .line 2
-    invoke-static {p0, p1, p0, v0}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    .line 24
+    invoke-static {p0, p1, p0, v0}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -417,11 +411,12 @@
 
     const-string v4, " :  "
 
-    .line 3
-    invoke-static {v2, p0, v3, p1, v4}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 1
+    invoke-static {v2, p0, v3, p1, v4}, Lcom/kakaogame/c;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 2
     invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -432,7 +427,7 @@
 
     invoke-static {v3, v2}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
+    .line 3
     :try_start_0
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -442,17 +437,17 @@
 
     if-eqz v2, :cond_0
 
-    .line 5
+    .line 4
     invoke-static {v3, v1}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
+    .line 5
     invoke-static {v4, v1}, Lcom/kakaogame/KGResult;->getResult(ILjava/lang/String;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
     return-object p0
 
-    .line 7
+    .line 6
     :cond_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -460,21 +455,21 @@
 
     if-eqz v1, :cond_1
 
-    .line 8
+    .line 7
     invoke-static {v3, v0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
+    .line 8
     invoke-static {v4, v0}, Lcom/kakaogame/KGResult;->getResult(ILjava/lang/String;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
     return-object p0
 
-    .line 10
+    .line 9
     :cond_1
     invoke-static {p0, p1, p2}, Lcom/kakaogame/KGLog$LatencyData;->access$500(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
+    .line 10
     invoke-static {}, Lcom/kakaogame/KGResult;->getSuccessResult()Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -488,8 +483,8 @@
 
     const/16 p1, 0xfa1
 
-    .line 12
-    invoke-static {p0, v3, p0, p1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    .line 11
+    invoke-static {p0, v3, p0, p1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -512,7 +507,7 @@
 
     const/4 v0, 0x0
 
-    .line 1
+    .line 28
     :try_start_0
     invoke-static {p0, p1, v0}, Lcom/kakaogame/KGLog;->stopLatencyCheck(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/KGResult;
 
@@ -529,8 +524,8 @@
 
     const/16 v0, 0xfa1
 
-    .line 2
-    invoke-static {p0, p1, p0, v0}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    .line 29
+    invoke-static {p0, p1, p0, v0}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -564,11 +559,12 @@
 
     const-string v5, " :  "
 
-    .line 3
-    invoke-static {v3, p0, v4, p1, v5}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 1
+    invoke-static {v3, p0, v4, p1, v5}, Lcom/kakaogame/c;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
+    .line 2
     invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -579,7 +575,7 @@
 
     invoke-static {v4, v3}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
+    .line 3
     :try_start_0
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -589,17 +585,17 @@
 
     if-eqz v3, :cond_0
 
-    .line 5
+    .line 4
     invoke-static {v4, v2}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
+    .line 5
     invoke-static {v5, v2}, Lcom/kakaogame/KGResult;->getResult(ILjava/lang/String;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
     return-object p0
 
-    .line 7
+    .line 6
     :cond_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -607,17 +603,17 @@
 
     if-eqz v2, :cond_1
 
-    .line 8
+    .line 7
     invoke-static {v4, v1}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
+    .line 8
     invoke-static {v5, v1}, Lcom/kakaogame/KGResult;->getResult(ILjava/lang/String;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
     return-object p0
 
-    .line 10
+    .line 9
     :cond_1
     invoke-static {p0, p1, p2}, Lcom/kakaogame/KGLog$LatencyData;->access$600(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/KGLog$LatencyData;
 
@@ -625,25 +621,25 @@
 
     if-nez v1, :cond_2
 
-    .line 11
+    .line 10
     invoke-static {v4, v0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 p0, 0xfa2
 
-    .line 12
+    .line 11
     invoke-static {p0, v0}, Lcom/kakaogame/KGResult;->getResult(ILjava/lang/String;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
     return-object p0
 
-    .line 13
+    .line 12
     :cond_2
     invoke-static {v1}, Lcom/kakaogame/KGLog$LatencyData;->access$700(Lcom/kakaogame/KGLog$LatencyData;)J
 
     move-result-wide v0
 
-    .line 14
+    .line 13
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -660,10 +656,10 @@
 
     invoke-static {v4, v2}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 15
+    .line 14
     invoke-static {p0, p1, p2, v0, v1}, Lcom/kakaogame/KGLog;->accumulateValue(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Lcom/kakaogame/KGResult;
 
-    .line 16
+    .line 15
     invoke-static {}, Lcom/kakaogame/KGResult;->getSuccessResult()Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -677,8 +673,8 @@
 
     const/16 p1, 0xfa1
 
-    .line 17
-    invoke-static {p0, v4, p0, p1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    .line 16
+    invoke-static {p0, v4, p0, p1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -792,7 +788,7 @@
 
     .line 9
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -801,7 +797,7 @@
     const/16 v1, 0xfa1
 
     .line 10
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -973,7 +969,7 @@
 
     .line 9
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -982,7 +978,7 @@
     const/16 v1, 0xfa1
 
     .line 10
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1154,7 +1150,7 @@
 
     .line 9
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1163,7 +1159,7 @@
     const/16 v1, 0xfa1
 
     .line 10
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1335,7 +1331,7 @@
 
     .line 9
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1344,7 +1340,7 @@
     const/16 v1, 0xfa1
 
     .line 10
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1516,7 +1512,7 @@
 
     .line 9
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1525,7 +1521,7 @@
     const/16 v1, 0xfa1
 
     .line 10
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 

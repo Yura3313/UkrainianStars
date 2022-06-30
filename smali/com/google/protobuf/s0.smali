@@ -175,11 +175,11 @@
     check-cast p3, Ljava/lang/String;
 
     .line 14
-    invoke-static {p3}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {p3}, Lcom/google/protobuf/i;->g(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/google/protobuf/p1;->a(Lcom/google/protobuf/i;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/google/protobuf/o1;->a(Lcom/google/protobuf/i;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -201,7 +201,7 @@
 
     check-cast p3, Lcom/google/protobuf/i;
 
-    invoke-static {p3}, Lcom/google/protobuf/p1;->a(Lcom/google/protobuf/i;)Ljava/lang/String;
+    invoke-static {p3}, Lcom/google/protobuf/o1;->a(Lcom/google/protobuf/i;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -618,7 +618,7 @@
     const-class v8, Ljava/lang/Deprecated;
 
     .line 30
-    invoke-virtual {v3, v8}, Ljava/lang/reflect/Method;->isAnnotationPresent(Ljava/lang/Class;)Z
+    invoke-virtual {v3, v8}, Ljava/lang/reflect/AccessibleObject;->isAnnotationPresent(Ljava/lang/Class;)Z
 
     move-result v8
 
@@ -688,11 +688,12 @@
 
     if-eqz v3, :cond_7
 
+    .line 37
     invoke-static {v7}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 37
+    .line 38
     invoke-virtual {v6}, Ljava/lang/String;->length()I
 
     move-result v4
@@ -709,7 +710,7 @@
 
     move-result-object v3
 
-    .line 38
+    .line 39
     invoke-virtual {v0, v3}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v3
@@ -718,7 +719,7 @@
 
     goto/16 :goto_1
 
-    .line 39
+    .line 40
     :cond_7
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -744,7 +745,7 @@
 
     move-result-object v3
 
-    .line 40
+    .line 41
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -763,7 +764,7 @@
 
     check-cast v4, Ljava/lang/reflect/Method;
 
-    .line 41
+    .line 42
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -788,19 +789,19 @@
 
     new-array v8, v5, [Ljava/lang/Object;
 
-    .line 42
+    .line 43
     invoke-static {v4, p0, v8}, Lcom/google/protobuf/GeneratedMessageLite;->invokeOrDie(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
     if-nez v6, :cond_11
 
-    .line 43
+    .line 44
     instance-of v6, v4, Ljava/lang/Boolean;
 
     if-eqz v6, :cond_8
 
-    .line 44
+    .line 45
     move-object v6, v4
 
     check-cast v6, Ljava/lang/Boolean;
@@ -813,13 +814,13 @@
 
     goto/16 :goto_4
 
-    .line 45
+    .line 46
     :cond_8
     instance-of v6, v4, Ljava/lang/Integer;
 
     if-eqz v6, :cond_9
 
-    .line 46
+    .line 47
     move-object v6, v4
 
     check-cast v6, Ljava/lang/Integer;
@@ -832,13 +833,13 @@
 
     goto :goto_3
 
-    .line 47
+    .line 48
     :cond_9
     instance-of v6, v4, Ljava/lang/Float;
 
     if-eqz v6, :cond_a
 
-    .line 48
+    .line 49
     move-object v6, v4
 
     check-cast v6, Ljava/lang/Float;
@@ -855,13 +856,13 @@
 
     goto :goto_3
 
-    .line 49
+    .line 50
     :cond_a
     instance-of v6, v4, Ljava/lang/Double;
 
     if-eqz v6, :cond_b
 
-    .line 50
+    .line 51
     move-object v6, v4
 
     check-cast v6, Ljava/lang/Double;
@@ -878,7 +879,7 @@
 
     goto :goto_3
 
-    .line 51
+    .line 52
     :cond_b
     instance-of v6, v4, Ljava/lang/String;
 
@@ -886,21 +887,21 @@
 
     const-string v6, ""
 
-    .line 52
+    .line 53
     invoke-virtual {v4, v6}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
     goto :goto_4
 
-    .line 53
+    .line 54
     :cond_c
     instance-of v6, v4, Lcom/google/protobuf/i;
 
     if-eqz v6, :cond_d
 
-    .line 54
-    sget-object v6, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
+    .line 55
+    sget-object v6, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
 
     invoke-virtual {v4, v6}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -908,13 +909,13 @@
 
     goto :goto_4
 
-    .line 55
+    .line 56
     :cond_d
     instance-of v6, v4, Lcom/google/protobuf/q0;
 
     if-eqz v6, :cond_e
 
-    .line 56
+    .line 57
     move-object v6, v4
 
     check-cast v6, Lcom/google/protobuf/q0;
@@ -927,13 +928,13 @@
 
     goto :goto_3
 
-    .line 57
+    .line 58
     :cond_e
     instance-of v6, v4, Ljava/lang/Enum;
 
     if-eqz v6, :cond_f
 
-    .line 58
+    .line 59
     move-object v6, v4
 
     check-cast v6, Ljava/lang/Enum;
@@ -965,7 +966,7 @@
     :cond_11
     new-array v8, v5, [Ljava/lang/Object;
 
-    .line 59
+    .line 60
     invoke-static {v6, p0, v8}, Lcom/google/protobuf/GeneratedMessageLite;->invokeOrDie(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
@@ -979,7 +980,7 @@
     :goto_5
     if-eqz v10, :cond_2
 
-    .line 60
+    .line 61
     invoke-static {v3}, Lcom/google/protobuf/s0;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -988,25 +989,25 @@
 
     goto/16 :goto_1
 
-    .line 61
+    .line 62
     :cond_12
     instance-of v0, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtendableMessage;
 
     if-eqz v0, :cond_13
 
-    .line 62
+    .line 63
     move-object v0, p0
 
     check-cast v0, Lcom/google/protobuf/GeneratedMessageLite$ExtendableMessage;
 
     iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$ExtendableMessage;->extensions:Lcom/google/protobuf/v;
 
-    .line 63
+    .line 64
     invoke-virtual {v0}, Lcom/google/protobuf/v;->o()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 64
+    .line 65
     :goto_6
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1014,7 +1015,7 @@
 
     if-eqz v1, :cond_13
 
-    .line 65
+    .line 66
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
@@ -1023,27 +1024,29 @@
 
     const-string v2, "["
 
-    .line 66
+    .line 67
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 68
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Lcom/google/protobuf/GeneratedMessageLite$d;
+    check-cast v3, Lcom/google/protobuf/GeneratedMessageLite$c;
 
-    .line 67
-    iget v3, v3, Lcom/google/protobuf/GeneratedMessageLite$d;->h:I
+    .line 69
+    iget v3, v3, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
 
     const-string v6, "]"
 
-    .line 68
+    .line 70
     invoke-static {v2, v3, v6}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
+    .line 71
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -1052,33 +1055,33 @@
 
     goto :goto_6
 
-    .line 69
+    .line 72
     :cond_13
     check-cast p0, Lcom/google/protobuf/GeneratedMessageLite;
 
-    iget-object p0, p0, Lcom/google/protobuf/GeneratedMessageLite;->unknownFields:Lcom/google/protobuf/r1;
+    iget-object p0, p0, Lcom/google/protobuf/GeneratedMessageLite;->unknownFields:Lcom/google/protobuf/q1;
 
     if-eqz p0, :cond_14
 
-    .line 70
+    .line 73
     :goto_7
-    iget v0, p0, Lcom/google/protobuf/r1;->a:I
+    iget v0, p0, Lcom/google/protobuf/q1;->a:I
 
     if-ge v5, v0, :cond_14
 
-    .line 71
-    iget-object v0, p0, Lcom/google/protobuf/r1;->b:[I
+    .line 74
+    iget-object v0, p0, Lcom/google/protobuf/q1;->b:[I
 
     aget v0, v0, v5
 
     ushr-int/2addr v0, v4
 
-    .line 72
+    .line 75
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/protobuf/r1;->c:[Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/protobuf/q1;->c:[Ljava/lang/Object;
 
     aget-object v1, v1, v5
 

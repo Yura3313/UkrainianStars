@@ -91,10 +91,10 @@
     iput-object v7, p0, Lio/sentry/android/core/AppLifecycleIntegration;->watcher:Lio/sentry/android/core/LifecycleWatcher;
 
     .line 6
-    sget-object p1, Landroidx/lifecycle/r;->o:Landroidx/lifecycle/r;
+    sget-object p1, Landroidx/lifecycle/q;->n:Landroidx/lifecycle/q;
 
     .line 7
-    iget-object p1, p1, Landroidx/lifecycle/r;->l:Landroidx/lifecycle/k;
+    iget-object p1, p1, Landroidx/lifecycle/q;->k:Landroidx/lifecycle/k;
 
     .line 8
     invoke-virtual {p1, v7}, Landroidx/lifecycle/k;->a(Landroidx/lifecycle/i;)V
@@ -130,7 +130,6 @@
 .method private synthetic lambda$close$1()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/sentry/android/core/AppLifecycleIntegration;->removeObserver()V
 
     return-void
@@ -139,7 +138,6 @@
 .method private synthetic lambda$register$0(Lio/sentry/IHub;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lio/sentry/android/core/AppLifecycleIntegration;->addObserver(Lio/sentry/IHub;)V
 
     return-void
@@ -149,10 +147,10 @@
     .locals 2
 
     .line 1
-    sget-object v0, Landroidx/lifecycle/r;->o:Landroidx/lifecycle/r;
+    sget-object v0, Landroidx/lifecycle/q;->n:Landroidx/lifecycle/q;
 
     .line 2
-    iget-object v0, v0, Landroidx/lifecycle/r;->l:Landroidx/lifecycle/k;
+    iget-object v0, v0, Landroidx/lifecycle/q;->k:Landroidx/lifecycle/k;
 
     .line 3
     iget-object v1, p0, Lio/sentry/android/core/AppLifecycleIntegration;->watcher:Lio/sentry/android/core/LifecycleWatcher;
@@ -343,7 +341,7 @@
     .line 13
     :cond_1
     :try_start_0
-    sget-object v0, Landroidx/lifecycle/r;->o:Landroidx/lifecycle/r;
+    sget-object v0, Landroidx/lifecycle/q;->n:Landroidx/lifecycle/q;
 
     .line 14
     invoke-static {}, Lio/sentry/android/core/internal/util/MainThreadChecker;->isMainThread()Z

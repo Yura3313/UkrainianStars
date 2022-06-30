@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/m$c;
+.class public final Landroidx/recyclerview/widget/m$c;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "FastScroller.java"
 
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public g:Z
+.field public f:Z
 
-.field public final synthetic h:Landroidx/recyclerview/widget/m;
+.field public final synthetic g:Landroidx/recyclerview/widget/m;
 
 
 # direct methods
@@ -25,49 +25,48 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/recyclerview/widget/m$c;->h:Landroidx/recyclerview/widget/m;
+    iput-object p1, p0, Landroidx/recyclerview/widget/m$c;->g:Landroidx/recyclerview/widget/m;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     const/4 p1, 0x0
 
     .line 2
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/m$c;->g:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/m$c;->f:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationCancel(Landroid/animation/Animator;)V
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
 
     const/4 p1, 0x1
 
-    .line 1
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/m$c;->g:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/m$c;->f:Z
 
     return-void
 .end method
 
-.method public onAnimationEnd(Landroid/animation/Animator;)V
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
 
     .line 1
-    iget-boolean p1, p0, Landroidx/recyclerview/widget/m$c;->g:Z
+    iget-boolean p1, p0, Landroidx/recyclerview/widget/m$c;->f:Z
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_0
 
     .line 2
-    iput-boolean v0, p0, Landroidx/recyclerview/widget/m$c;->g:Z
+    iput-boolean v0, p0, Landroidx/recyclerview/widget/m$c;->f:Z
 
     return-void
 
     .line 3
     :cond_0
-    iget-object p1, p0, Landroidx/recyclerview/widget/m$c;->h:Landroidx/recyclerview/widget/m;
+    iget-object p1, p0, Landroidx/recyclerview/widget/m$c;->g:Landroidx/recyclerview/widget/m;
 
     iget-object p1, p1, Landroidx/recyclerview/widget/m;->z:Landroid/animation/ValueAnimator;
 
@@ -88,27 +87,25 @@
     if-nez p1, :cond_1
 
     .line 4
-    iget-object p1, p0, Landroidx/recyclerview/widget/m$c;->h:Landroidx/recyclerview/widget/m;
+    iget-object p1, p0, Landroidx/recyclerview/widget/m$c;->g:Landroidx/recyclerview/widget/m;
 
     iput v0, p1, Landroidx/recyclerview/widget/m;->A:I
 
     .line 5
-    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/m;->k(I)V
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/m;->l(I)V
 
     goto :goto_0
 
     .line 6
     :cond_1
-    iget-object p1, p0, Landroidx/recyclerview/widget/m$c;->h:Landroidx/recyclerview/widget/m;
+    iget-object p1, p0, Landroidx/recyclerview/widget/m$c;->g:Landroidx/recyclerview/widget/m;
 
     const/4 v0, 0x2
 
     iput v0, p1, Landroidx/recyclerview/widget/m;->A:I
 
     .line 7
-    iget-object p1, p1, Landroidx/recyclerview/widget/m;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->invalidate()V
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/m;->j()V
 
     :goto_0
     return-void

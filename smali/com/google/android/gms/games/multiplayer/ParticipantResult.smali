@@ -16,21 +16,20 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
+
+.field public final g:I
 
 .field public final h:I
-
-.field public final i:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lc3/d;
+    new-instance v0, Ld3/d;
 
-    invoke-direct {v0}, Lc3/d;-><init>()V
+    invoke-direct {v0}, Ld3/d;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -43,10 +42,10 @@
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
-    if-eqz p1, :cond_1
-
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->g:Ljava/lang/String;
+    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iput-object p1, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->f:Ljava/lang/String;
 
     const/4 p1, 0x1
 
@@ -74,25 +73,15 @@
 
     .line 3
     :cond_0
-    invoke-static {p1}, Lc2/h;->j(Z)V
+    invoke-static {p1}, Ld2/h;->j(Z)V
 
     .line 4
-    iput p2, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->h:I
+    iput p2, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->g:I
 
     .line 5
-    iput p3, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->i:I
+    iput p3, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->h:I
 
     return-void
-
-    .line 6
-    :cond_1
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "null reference"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
@@ -121,26 +110,27 @@
     check-cast p1, Lcom/google/android/gms/games/multiplayer/ParticipantResult;
 
     .line 3
-    iget v2, p1, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->i:I
-
-    iget v3, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->i:I
-
-    if-ne v2, v3, :cond_2
-
-    .line 4
     iget v2, p1, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->h:I
 
+    .line 4
     iget v3, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->h:I
 
     if-ne v2, v3, :cond_2
 
     .line 5
-    iget-object p1, p1, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->g:Ljava/lang/String;
+    iget v2, p1, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->g:I
 
-    iget-object v2, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->g:Ljava/lang/String;
+    iget v3, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->g:I
+
+    if-ne v2, v3, :cond_2
 
     .line 6
-    invoke-static {p1, v2}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object p1, p1, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->f:Ljava/lang/String;
+
+    iget-object v2, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->f:Ljava/lang/String;
+
+    .line 7
+    invoke-static {p1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -160,7 +150,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget v1, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->i:I
+    iget v1, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->h:I
 
     .line 2
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -174,7 +164,7 @@
     const/4 v1, 0x1
 
     .line 3
-    iget v2, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->h:I
+    iget v2, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->g:I
 
     .line 4
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -186,7 +176,7 @@
     const/4 v1, 0x2
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->f:Ljava/lang/String;
 
     aput-object v2, v0, v1
 
@@ -199,51 +189,49 @@
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 3
+    .locals 6
 
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
-    move-result p2
+    move-result v5
+
+    .line 2
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->f:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->g:Ljava/lang/String;
-
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 3
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    const/4 v0, 0x2
+    invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget v1, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->h:I
+    iget p2, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->g:I
+
+    const/4 v0, 0x2
 
     const/4 v2, 0x4
 
     .line 5
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v0, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 6
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/4 v0, 0x3
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 7
-    iget v1, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->i:I
+    iget v3, p0, Lcom/google/android/gms/games/multiplayer/ParticipantResult;->h:I
+
+    const/4 v1, 0x3
+
+    move-object v0, p1
+
+    move-object v4, p1
 
     .line 8
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
-
-    .line 9
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 10
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static/range {v0 .. v5}, Li1/i;->b(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
 
     return-void
 .end method

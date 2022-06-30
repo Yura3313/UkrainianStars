@@ -82,8 +82,8 @@
 
 
 # virtual methods
-.method public i(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;IIII)Z
-    .locals 7
+.method public final i(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)Z
+    .locals 5
 
     .line 1
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -131,19 +131,19 @@
     if-eqz v3, :cond_2
 
     .line 7
-    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lf0/z;
+    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lf0/a0;
 
     move-result-object v3
 
     if-eqz v3, :cond_2
 
     .line 8
-    invoke-virtual {v3}, Lf0/z;->g()I
+    invoke-virtual {v3}, Lf0/a0;->g()I
 
     move-result v4
 
     .line 9
-    invoke-virtual {v3}, Lf0/z;->d()I
+    invoke-virtual {v3}, Lf0/a0;->d()I
 
     move-result v3
 
@@ -155,7 +155,7 @@
 
     .line 10
     :cond_1
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p5
 
@@ -188,20 +188,10 @@
     :goto_1
     invoke-static {p5, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
-    move-result v5
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move v3, p3
-
-    move v4, p4
-
-    move v6, p6
+    move-result p5
 
     .line 14
-    invoke-virtual/range {v1 .. v6}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w(Landroid/view/View;IIII)V
+    invoke-virtual {p1, p2, p3, p4, p5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w(Landroid/view/View;III)V
 
     const/4 p1, 0x1
 
@@ -213,7 +203,7 @@
     return p1
 .end method
 
-.method public u(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
+.method public final u(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
     .locals 8
 
     .line 1
@@ -239,7 +229,7 @@
     iget-object v5, p0, Lcom/google/android/material/appbar/HeaderScrollingViewBehavior;->c:Landroid/graphics/Rect;
 
     .line 5
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getPaddingLeft()I
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v2
 
@@ -257,11 +247,11 @@
     add-int/2addr v3, v4
 
     .line 7
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v4
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getPaddingRight()I
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingRight()I
 
     move-result v6
 
@@ -272,7 +262,7 @@
     sub-int/2addr v4, v6
 
     .line 8
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result v6
 
@@ -282,7 +272,7 @@
 
     add-int/2addr v7, v6
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getPaddingBottom()I
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
 
     move-result v6
 
@@ -296,7 +286,7 @@
     invoke-virtual {v5, v2, v3, v4, v7}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 10
-    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lf0/z;
+    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lf0/a0;
 
     move-result-object v2
 
@@ -322,7 +312,7 @@
     .line 14
     iget p1, v5, Landroid/graphics/Rect;->left:I
 
-    invoke-virtual {v2}, Lf0/z;->e()I
+    invoke-virtual {v2}, Lf0/a0;->e()I
 
     move-result v3
 
@@ -333,7 +323,7 @@
     .line 15
     iget p1, v5, Landroid/graphics/Rect;->right:I
 
-    invoke-virtual {v2}, Lf0/z;->f()I
+    invoke-virtual {v2}, Lf0/a0;->f()I
 
     move-result v2
 
@@ -461,7 +451,7 @@
 
     float-to-int p1, p1
 
-    invoke-static {p1, v1, v0}, La0/a;->b(III)I
+    invoke-static {p1, v1, v0}, La0/a;->e(III)I
 
     move-result v1
 
@@ -480,7 +470,6 @@
 .method public z(Landroid/view/View;)I
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result p1

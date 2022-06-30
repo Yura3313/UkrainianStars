@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kakao/sdk/link/LinkClient;->scrapTemplate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lke/p;)V
+    value = Lcom/kakao/sdk/link/LinkClient;->scrapTemplate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lre/p;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field public final synthetic $callback:Lke/p;
+.field public final synthetic $callback:Lre/p;
 
 .field public final synthetic $context:Landroid/content/Context;
 
@@ -33,22 +33,21 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/kakao/sdk/link/LinkClient;Lke/p;Landroid/content/Context;Ljava/util/Map;)V
+.method public constructor <init>(Lcom/kakao/sdk/link/LinkClient;Lre/p;Landroid/content/Context;Ljava/util/Map;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lke/p;",
+            "Lre/p;",
             "Landroid/content/Context;",
             "Ljava/util/Map;",
             ")V"
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;->this$0:Lcom/kakao/sdk/link/LinkClient;
 
-    iput-object p2, p0, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;->$callback:Lke/p;
+    iput-object p2, p0, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;->$callback:Lre/p;
 
     iput-object p3, p0, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;->$context:Landroid/content/Context;
 
@@ -70,7 +69,7 @@
 
     .line 2
     :try_start_0
-    iget-object p2, p0, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;->$callback:Lke/p;
+    iget-object p2, p0, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;->$callback:Lre/p;
 
     .line 3
     iget-object v1, p0, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;->this$0:Lcom/kakao/sdk/link/LinkClient;
@@ -98,7 +97,7 @@
     move-result-object p1
 
     .line 4
-    invoke-interface {p2, p1, v0}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, p1, v0}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -108,17 +107,17 @@
     move-exception p1
 
     .line 5
-    iget-object p2, p0, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;->$callback:Lke/p;
+    iget-object p2, p0, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;->$callback:Lre/p;
 
-    invoke-interface {p2, v0, p1}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, v0, p1}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
     .line 6
     :cond_0
-    iget-object p1, p0, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;->$callback:Lke/p;
+    iget-object p1, p0, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;->$callback:Lre/p;
 
-    invoke-interface {p1, v0, p2}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0, p2}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
     return-void

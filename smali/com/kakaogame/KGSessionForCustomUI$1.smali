@@ -39,7 +39,6 @@
 .method public constructor <init>(Landroid/app/Activity;Lcom/kakaogame/KGIdpProfile$KGIdpCode;Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/log/FirebaseEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSessionForCustomUI$1;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/KGSessionForCustomUI$1;->val$idpCode:Lcom/kakaogame/KGIdpProfile$KGIdpCode;
@@ -125,7 +124,7 @@
     const-string v2, "KGSessionForCustomUI"
 
     .line 4
-    invoke-static {v1, v0, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v1, v0, v2}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 5
     iget-object v1, p0, Lcom/kakaogame/KGSessionForCustomUI$1;->val$callback:Lcom/kakaogame/KGResultCallback;

@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public final g:Ljava/util/Set;
+.field public final f:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -41,9 +41,14 @@
 
     invoke-direct {p1, v0}, Ljava/util/HashSet;-><init>(I)V
 
-    iput-object p1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->g:Ljava/util/Set;
+    iput-object p1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->f:Ljava/util/HashSet;
 
     .line 3
+    sget p1, Lcom/supercell/titan/R$id;->stage:I
+
+    invoke-virtual {p0, p1}, Landroid/view/View;->setId(I)V
+
+    .line 4
     invoke-virtual {p0}, Landroid/view/SurfaceView;->getHolder()Landroid/view/SurfaceHolder;
 
     move-result-object p1
@@ -55,8 +60,8 @@
     :goto_0
     if-ge p1, v0, :cond_0
 
-    .line 4
-    iget-object v1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->g:Ljava/util/Set;
+    .line 5
+    iget-object v1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->f:Ljava/util/HashSet;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -118,7 +123,7 @@
 
     .line 4
     :cond_1
-    invoke-super {p0, p1}, Landroid/view/SurfaceView;->onGenericMotionEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/view/View;->onGenericMotionEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
 

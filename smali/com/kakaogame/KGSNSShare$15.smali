@@ -39,7 +39,6 @@
 .method public constructor <init>(Landroid/app/Activity;Lcom/kakaogame/promotion/SNSShareData;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSNSShare$15;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/KGSNSShare$15;->val$data:Lcom/kakaogame/promotion/SNSShareData;

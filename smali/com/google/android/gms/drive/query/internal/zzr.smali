@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final g:Lcom/google/android/gms/drive/query/internal/zzx;
+.field public final f:Lcom/google/android/gms/drive/query/internal/zzx;
 
-.field public final h:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -32,10 +32,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Ls2/j;
+    new-instance v0, Lt2/j;
 
-    invoke-direct {v0}, Ls2/j;-><init>()V
+    invoke-direct {v0}, Lt2/j;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/query/internal/zzr;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -58,24 +57,24 @@
     invoke-direct {p0}, Lcom/google/android/gms/drive/query/internal/zza;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->g:Lcom/google/android/gms/drive/query/internal/zzx;
+    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->f:Lcom/google/android/gms/drive/query/internal/zzx;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/drive/query/internal/zzr;->h:Ljava/util/List;
+    iput-object p2, p0, Lcom/google/android/gms/drive/query/internal/zzr;->g:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final B1(Lj3/y1;)Ljava/lang/Object;
+.method public final I1(Lef/t;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lj3/y1;",
+            "Lef/t;",
             ")TT;"
         }
     .end annotation
@@ -86,7 +85,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->h:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->g:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -106,10 +105,10 @@
     check-cast v2, Lcom/google/android/gms/drive/query/internal/FilterHolder;
 
     .line 3
-    iget-object v2, v2, Lcom/google/android/gms/drive/query/internal/FilterHolder;->p:Lcom/google/android/gms/drive/query/Filter;
+    iget-object v2, v2, Lcom/google/android/gms/drive/query/internal/FilterHolder;->o:Lcom/google/android/gms/drive/query/internal/zza;
 
     .line 4
-    invoke-interface {v2, p1}, Lcom/google/android/gms/drive/query/Filter;->B1(Lj3/y1;)Ljava/lang/Object;
+    invoke-interface {v2, p1}, Lcom/google/android/gms/drive/query/Filter;->I1(Lef/t;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -119,66 +118,64 @@
 
     .line 5
     :cond_0
-    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->g:Lcom/google/android/gms/drive/query/internal/zzx;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->f:Lcom/google/android/gms/drive/query/internal/zzx;
 
     .line 6
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 7
-    iget-object v1, v1, Lcom/google/android/gms/drive/query/internal/zzx;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/drive/query/internal/zzx;->f:Ljava/lang/String;
 
     .line 8
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p1
 
     const-string v2, "("
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p1
 
-    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 9
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result-object v0
+    move-result-object p1
 
-    const-string v1, ""
+    const-string v0, ""
 
     :goto_1
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/String;
 
     .line 10
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 11
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ","
+    const-string v0, ","
 
     goto :goto_1
 
     :cond_1
-    const-string v0, ")"
+    const-string p1, ")"
 
     .line 12
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -191,28 +188,28 @@
     const/16 v0, 0x4f45
 
     .line 1
-    invoke-static {p1, v0}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v0
 
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/drive/query/internal/zzr;->g:Lcom/google/android/gms/drive/query/internal/zzx;
+    iget-object v2, p0, Lcom/google/android/gms/drive/query/internal/zzr;->f:Lcom/google/android/gms/drive/query/internal/zzx;
 
     const/4 v3, 0x0
 
-    invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/4 p2, 0x2
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->h:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->g:Ljava/util/List;
 
-    invoke-static {p1, p2, v1, v3}, Ld2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, p2, v1, v3}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 4
-    invoke-static {p1, v0}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

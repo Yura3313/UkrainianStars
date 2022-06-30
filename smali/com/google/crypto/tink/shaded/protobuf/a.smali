@@ -3,7 +3,7 @@
 .source "AbstractMessageLite.java"
 
 # interfaces
-.implements Lcom/google/crypto/tink/shaded/protobuf/a0;
+.implements Lcom/google/crypto/tink/shaded/protobuf/x;
 
 
 # annotations
@@ -21,7 +21,7 @@
         "Lcom/google/crypto/tink/shaded/protobuf/a$a<",
         "TMessageType;TBuilderType;>;>",
         "Ljava/lang/Object;",
-        "Lcom/google/crypto/tink/shaded/protobuf/a0;"
+        "Lcom/google/crypto/tink/shaded/protobuf/x;"
     }
 .end annotation
 
@@ -47,38 +47,38 @@
 
 
 # virtual methods
-.method public a()[B
-    .locals 5
+.method public final a()[B
+    .locals 4
 
     .line 1
     :try_start_0
     move-object v0, p0
 
-    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/o;
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/n;
 
-    invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->getSerializedSize()I
+    invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->getSerializedSize()I
 
     move-result v1
 
     new-array v2, v1, [B
 
     .line 2
-    sget-object v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
+    sget-object v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
 
     .line 3
     new-instance v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;
 
-    const/4 v4, 0x0
-
-    invoke-direct {v3, v2, v4, v1}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;-><init>([BII)V
+    invoke-direct {v3, v2, v1}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;-><init>([BI)V
 
     .line 4
-    invoke-virtual {v0, v3}, Lcom/google/crypto/tink/shaded/protobuf/o;->b(Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;)V
+    invoke-virtual {v0, v3}, Lcom/google/crypto/tink/shaded/protobuf/n;->b(Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;)V
 
     .line 5
-    invoke-virtual {v3}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->O()I
+    iget v0, v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->e:I
 
-    move-result v0
+    iget v1, v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->f:I
+
+    sub-int/2addr v0, v1
 
     if-nez v0, :cond_0
 
@@ -116,7 +116,6 @@
 .method c()I
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -124,7 +123,7 @@
     throw v0
 .end method
 
-.method public d(Lcom/google/crypto/tink/shaded/protobuf/h0;)I
+.method public final d(Lcom/google/crypto/tink/shaded/protobuf/d0;)I
     .locals 2
 
     .line 1
@@ -137,7 +136,7 @@
     if-ne v0, v1, :cond_0
 
     .line 2
-    invoke-interface {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/h0;->g(Ljava/lang/Object;)I
+    invoke-interface {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/d0;->g(Ljava/lang/Object;)I
 
     move-result v0
 
@@ -189,7 +188,6 @@
 .method f(I)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -197,48 +195,48 @@
     throw p1
 .end method
 
-.method public toByteString()Lm5/c;
-    .locals 5
+.method public final toByteString()Lo5/d;
+    .locals 4
 
     .line 1
     :try_start_0
     move-object v0, p0
 
-    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/o;
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/n;
 
-    invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->getSerializedSize()I
+    invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->getSerializedSize()I
 
     move-result v1
 
-    sget-object v2, Lm5/c;->h:Lm5/c;
+    sget-object v2, Lo5/d;->g:Lo5/d$f;
 
     .line 2
     new-array v2, v1, [B
 
     .line 3
-    sget-object v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
+    sget-object v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
 
     .line 4
     new-instance v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;
 
-    const/4 v4, 0x0
-
-    invoke-direct {v3, v2, v4, v1}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;-><init>([BII)V
+    invoke-direct {v3, v2, v1}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;-><init>([BI)V
 
     .line 5
-    invoke-virtual {v0, v3}, Lcom/google/crypto/tink/shaded/protobuf/o;->b(Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;)V
+    invoke-virtual {v0, v3}, Lcom/google/crypto/tink/shaded/protobuf/n;->b(Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;)V
 
     .line 6
-    invoke-virtual {v3}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->O()I
+    iget v0, v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->e:I
 
-    move-result v0
+    iget v1, v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->f:I
+
+    sub-int/2addr v0, v1
 
     if-nez v0, :cond_0
 
     .line 7
-    new-instance v0, Lm5/c$f;
+    new-instance v0, Lo5/d$f;
 
-    invoke-direct {v0, v2}, Lm5/c$f;-><init>([B)V
+    invoke-direct {v0, v2}, Lo5/d$f;-><init>([B)V
 
     return-object v0
 

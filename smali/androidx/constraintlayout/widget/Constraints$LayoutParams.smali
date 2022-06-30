@@ -43,56 +43,56 @@
 
 
 # direct methods
-.method public constructor <init>(II)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;-><init>(II)V
+    invoke-direct {p0}, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;-><init>()V
 
-    const/high16 p1, 0x3f800000    # 1.0f
+    const/high16 v0, 0x3f800000    # 1.0f
 
     .line 2
-    iput p1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->m0:F
+    iput v0, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->m0:F
 
-    const/4 p2, 0x0
+    const/4 v1, 0x0
 
     .line 3
-    iput-boolean p2, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->n0:Z
+    iput-boolean v1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->n0:Z
 
-    const/4 p2, 0x0
+    const/4 v1, 0x0
 
     .line 4
-    iput p2, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->o0:F
+    iput v1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->o0:F
 
     .line 5
-    iput p2, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->p0:F
+    iput v1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->p0:F
 
     .line 6
-    iput p2, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->q0:F
+    iput v1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->q0:F
 
     .line 7
-    iput p2, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->r0:F
+    iput v1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->r0:F
 
     .line 8
-    iput p1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->s0:F
+    iput v0, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->s0:F
 
     .line 9
-    iput p1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->t0:F
+    iput v0, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->t0:F
 
     .line 10
-    iput p2, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->u0:F
+    iput v1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->u0:F
 
     .line 11
-    iput p2, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->v0:F
+    iput v1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->v0:F
 
     .line 12
-    iput p2, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->w0:F
+    iput v1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->w0:F
 
     .line 13
-    iput p2, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->x0:F
+    iput v1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->x0:F
 
     .line 14
-    iput p2, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->y0:F
+    iput v1, p0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;->y0:F
 
     return-void
 .end method

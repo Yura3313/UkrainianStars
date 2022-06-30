@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.client.IResponseInfo"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,8 +19,8 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 0
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -32,9 +31,9 @@
 
     if-eq p1, p2, :cond_1
 
-    const/4 p4, 0x2
+    const/4 v0, 0x2
 
-    if-eq p1, p4, :cond_0
+    if-eq p1, v0, :cond_0
 
     const/4 p1, 0x0
 
@@ -47,7 +46,7 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzbsp;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzbsp;->h:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzbsp;->g:Ljava/lang/String;
 
     .line 3
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
@@ -64,7 +63,7 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzbsp;
 
     .line 6
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzbsp;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzbsp;->f:Ljava/lang/String;
 
     .line 7
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V

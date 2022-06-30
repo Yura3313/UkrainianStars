@@ -30,19 +30,14 @@
     .line 1
     invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
-    const/4 v0, 0x0
-
     .line 2
-    iput-object v0, p0, Lcom/kakaogame/game/GameMessageBlockDialog;->callback:Lcom/kakaogame/game/KGCallback;
-
-    .line 3
     iput-object p1, p0, Lcom/kakaogame/game/GameMessageBlockDialog;->activity:Landroid/app/Activity;
 
-    .line 4
+    .line 3
     iput-object p2, p0, Lcom/kakaogame/game/GameMessageBlockDialog;->callback:Lcom/kakaogame/game/KGCallback;
 
-    .line 5
-    invoke-virtual {p1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    .line 4
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p2
 
@@ -56,7 +51,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 6
+    .line 5
     sget-object v1, Lcom/kakaogame/game/GameMessageBlockDialog;->SETTING_URL:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -79,14 +74,14 @@
 
     iput-object p2, p0, Lcom/kakaogame/game/GameMessageBlockDialog;->url:Ljava/lang/String;
 
-    .line 7
+    .line 6
     sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v0, 0x1c
 
     if-lt p2, v0, :cond_0
 
-    .line 8
+    .line 7
     invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object p1
@@ -106,7 +101,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/game/GameMessageBlockDialog;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/game/GameMessageBlockDialog;->showProgressDialog()V
 
     return-void
@@ -115,7 +109,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/game/GameMessageBlockDialog;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/game/GameMessageBlockDialog;->hideProgressDialog()V
 
     return-void
@@ -124,7 +117,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/game/GameMessageBlockDialog;)Lcom/kakaogame/game/KGCallback;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/game/GameMessageBlockDialog;->callback:Lcom/kakaogame/game/KGCallback;
 
     return-object p0
@@ -260,7 +252,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     const/4 v0, 0x0
 
@@ -499,6 +491,7 @@
 
     move-result-object v0
 
+    .line 7
     invoke-static {}, Lcom/kakao/sdk/auth/TokenManager;->getInstance()Lcom/kakao/sdk/auth/TokenManager;
 
     move-result-object v1
@@ -523,7 +516,7 @@
 
     invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
+    .line 8
     sget-object v0, Lcom/kakao/sdk/common/KakaoSdk;->applicationContextInfo:Lcom/kakao/sdk/common/model/ApplicationContextInfo;
 
     invoke-virtual {v0}, Lcom/kakao/sdk/common/model/ApplicationContextInfo;->getKaHeader()Ljava/lang/String;
@@ -534,14 +527,14 @@
 
     invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
+    .line 9
     iget-object v0, p0, Lcom/kakaogame/game/GameMessageBlockDialog;->webView:Landroid/webkit/WebView;
 
     iget-object v1, p0, Lcom/kakaogame/game/GameMessageBlockDialog;->url:Ljava/lang/String;
 
     invoke-virtual {v0, v1, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 9
+    .line 10
     iget-object p1, p0, Lcom/kakaogame/game/GameMessageBlockDialog;->webView:Landroid/webkit/WebView;
 
     invoke-virtual {p1}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
@@ -552,7 +545,7 @@
 
     invoke-virtual {p1, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
-    .line 10
+    .line 11
     iget-object p1, p0, Lcom/kakaogame/game/GameMessageBlockDialog;->webView:Landroid/webkit/WebView;
 
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
@@ -563,7 +556,7 @@
 
     invoke-virtual {p1, v0}, Landroid/webkit/WebView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 11
+    .line 12
     iget-object p1, p0, Lcom/kakaogame/game/GameMessageBlockDialog;->webView:Landroid/webkit/WebView;
 
     new-instance v0, Landroid/view/ViewGroup$LayoutParams;
@@ -572,7 +565,7 @@
 
     invoke-virtual {p0, p1, v0}, Landroid/app/Dialog;->addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 12
+    .line 13
     invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object p1

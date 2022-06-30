@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public g:Landroidx/constraintlayout/widget/a;
+.field public f:Landroidx/constraintlayout/widget/a;
 
 
 # direct methods
@@ -25,7 +25,7 @@
     const/16 p1, 0x8
 
     .line 2
-    invoke-super {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-super {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
     return-void
 .end method
@@ -39,33 +39,30 @@
     const/16 p1, 0x8
 
     .line 4
-    invoke-super {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-super {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-    .locals 2
+.method public final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    .locals 1
 
-    .line 1
     new-instance v0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;
 
-    const/4 v1, -0x2
-
-    invoke-direct {v0, v1, v1}, Landroidx/constraintlayout/widget/Constraints$LayoutParams;-><init>(II)V
+    invoke-direct {v0}, Landroidx/constraintlayout/widget/Constraints$LayoutParams;-><init>()V
 
     return-object v0
 .end method
 
-.method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
+.method public final generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
 
     .line 1
     new-instance v0, Landroidx/constraintlayout/widget/Constraints$LayoutParams;
 
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -74,7 +71,7 @@
     return-object v0
 .end method
 
-.method public generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+.method public final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
     .line 2
@@ -89,7 +86,7 @@
     .locals 9
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->g:Landroidx/constraintlayout/widget/a;
+    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->f:Landroidx/constraintlayout/widget/a;
 
     if-nez v0, :cond_0
 
@@ -98,11 +95,11 @@
 
     invoke-direct {v0}, Landroidx/constraintlayout/widget/a;-><init>()V
 
-    iput-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->g:Landroidx/constraintlayout/widget/a;
+    iput-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->f:Landroidx/constraintlayout/widget/a;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->g:Landroidx/constraintlayout/widget/a;
+    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->f:Landroidx/constraintlayout/widget/a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -262,12 +259,12 @@
 
     .line 24
     :cond_5
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->g:Landroidx/constraintlayout/widget/a;
+    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->f:Landroidx/constraintlayout/widget/a;
 
     return-object v0
 .end method
 
-.method public onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 0
 
     return-void

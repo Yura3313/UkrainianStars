@@ -28,7 +28,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/KGObject;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -158,14 +157,14 @@
 
     .line 3
     :goto_0
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v1}, Ljava/util/AbstractCollection;->size()I
 
     move-result v3
 
     if-ge v2, v3, :cond_1
 
     .line 4
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -200,7 +199,6 @@
 
     const-string v0, "player"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -352,7 +350,6 @@
 .method public put(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Lcom/kakaogame/KGObject;->put(Ljava/lang/String;Ljava/lang/Object;)V
 
     return-void

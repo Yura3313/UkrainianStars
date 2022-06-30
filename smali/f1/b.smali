@@ -20,45 +20,45 @@
 
 .field public final d:I
 
-.field public final e:Lcom/google/android/gms/ads/q;
+.field public final e:Lcom/google/android/gms/ads/p;
 
 
 # direct methods
-.method public constructor <init>(Lf1/b$a;Lcom/google/android/gms/ads/i;)V
-    .locals 0
+.method public constructor <init>(Lf1/b$a;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget-boolean p2, p1, Lf1/b$a;->a:Z
+    iget-boolean v0, p1, Lf1/b$a;->a:Z
 
     .line 3
-    iput-boolean p2, p0, Lf1/b;->a:Z
+    iput-boolean v0, p0, Lf1/b;->a:Z
 
     .line 4
-    iget p2, p1, Lf1/b$a;->b:I
+    iget v0, p1, Lf1/b$a;->b:I
 
     .line 5
-    iput p2, p0, Lf1/b;->b:I
+    iput v0, p0, Lf1/b;->b:I
 
     .line 6
-    iget-boolean p2, p1, Lf1/b$a;->c:Z
+    iget-boolean v0, p1, Lf1/b$a;->c:Z
 
     .line 7
-    iput-boolean p2, p0, Lf1/b;->c:Z
+    iput-boolean v0, p0, Lf1/b;->c:Z
 
     .line 8
-    iget p2, p1, Lf1/b$a;->e:I
+    iget v0, p1, Lf1/b$a;->e:I
 
     .line 9
-    iput p2, p0, Lf1/b;->d:I
+    iput v0, p0, Lf1/b;->d:I
 
     .line 10
-    iget-object p1, p1, Lf1/b$a;->d:Lcom/google/android/gms/ads/q;
+    iget-object p1, p1, Lf1/b$a;->d:Lcom/google/android/gms/ads/p;
 
     .line 11
-    iput-object p1, p0, Lf1/b;->e:Lcom/google/android/gms/ads/q;
+    iput-object p1, p0, Lf1/b;->e:Lcom/google/android/gms/ads/p;
 
     return-void
 .end method

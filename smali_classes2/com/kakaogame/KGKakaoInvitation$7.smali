@@ -41,7 +41,6 @@
 .method public constructor <init>(ILcom/kakaogame/KGKakaoProfile;Ljava/lang/String;Ljava/util/Map;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/KGKakaoInvitation$7;->val$eventId:I
 
     iput-object p2, p0, Lcom/kakaogame/KGKakaoInvitation$7;->val$kakaoProfile:Lcom/kakaogame/KGKakaoProfile;

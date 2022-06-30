@@ -1,4 +1,4 @@
-.class public Lq/c;
+.class public final Lq/c;
 .super Ljava/lang/Object;
 .source "ChainHead.java"
 
@@ -36,21 +36,15 @@
 
 .field public l:I
 
-.field public m:I
+.field public m:Z
 
-.field public n:I
+.field public n:Z
 
-.field public o:I
+.field public o:Z
 
 .field public p:Z
 
 .field public q:Z
-
-.field public r:Z
-
-.field public s:Z
-
-.field public t:Z
 
 
 # direct methods
@@ -65,19 +59,14 @@
     .line 2
     iput v0, p0, Lq/c;->k:F
 
-    const/4 v0, 0x0
-
     .line 3
-    iput-boolean v0, p0, Lq/c;->p:Z
-
-    .line 4
     iput-object p1, p0, Lq/c;->a:Lq/e;
 
-    .line 5
-    iput p2, p0, Lq/c;->o:I
+    .line 4
+    iput p2, p0, Lq/c;->l:I
 
-    .line 6
-    iput-boolean p3, p0, Lq/c;->p:Z
+    .line 5
+    iput-boolean p3, p0, Lq/c;->m:Z
 
     return-void
 .end method

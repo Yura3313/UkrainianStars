@@ -1,4 +1,4 @@
-.class public Landroidx/transition/e;
+.class public final Landroidx/transition/e;
 .super Ljava/lang/Object;
 .source "TransitionManager.java"
 
@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static a:Landroidx/transition/Transition;
+.field public static a:Landroidx/transition/AutoTransition;
 
 .field public static b:Ljava/lang/ThreadLocal;
     .annotation system Ldalvik/annotation/Signature;
@@ -48,7 +48,7 @@
 
     invoke-direct {v0}, Landroidx/transition/AutoTransition;-><init>()V
 
-    sput-object v0, Landroidx/transition/e;->a:Landroidx/transition/Transition;
+    sput-object v0, Landroidx/transition/e;->a:Landroidx/transition/AutoTransition;
 
     .line 2
     new-instance v0, Ljava/lang/ThreadLocal;
@@ -79,7 +79,7 @@
 
     if-nez v0, :cond_4
 
-    invoke-static {p0}, Lf0/r;->p(Landroid/view/View;)Z
+    invoke-static {p0}, Lf0/r;->s(Landroid/view/View;)Z
 
     move-result v0
 
@@ -93,7 +93,7 @@
     if-nez p1, :cond_0
 
     .line 3
-    sget-object p1, Landroidx/transition/e;->a:Landroidx/transition/Transition;
+    sget-object p1, Landroidx/transition/e;->a:Landroidx/transition/AutoTransition;
 
     .line 4
     :cond_0
@@ -160,7 +160,7 @@
     :cond_2
     sget v0, Landroidx/transition/R$id;->transition_current_scene:I
 
-    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getTag(I)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -169,7 +169,7 @@
     if-nez v2, :cond_3
 
     .line 13
-    invoke-virtual {p0, v0, v1}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
+    invoke-virtual {p0, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     if-eqz p1, :cond_4
 
@@ -179,10 +179,10 @@
     invoke-direct {v0, p1, p0}, Landroidx/transition/e$a;-><init>(Landroidx/transition/Transition;Landroid/view/ViewGroup;)V
 
     .line 15
-    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 
     .line 16
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object p0
 
@@ -225,7 +225,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 

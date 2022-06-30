@@ -29,7 +29,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/WebDialog;Landroid/view/View;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog$7;->this$0:Lcom/kakaogame/web/WebDialog;
 
     iput-object p2, p0, Lcom/kakaogame/web/WebDialog$7;->val$decorView:Landroid/view/View;
@@ -147,7 +146,7 @@
     move-exception v0
 
     .line 11
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 

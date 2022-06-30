@@ -3,20 +3,20 @@
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 # interfaces
-.implements La2/d;
+.implements Lb2/d;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<R::",
-        "Lz1/g;",
+        "La2/g;",
         "A::",
         "Lcom/google/android/gms/common/api/a$b;",
         ">",
         "Lcom/google/android/gms/common/api/internal/BasePendingResult<",
         "TR;>;",
-        "La2/d<",
+        "Lb2/d<",
         "TR;>;"
     }
 .end annotation
@@ -46,14 +46,14 @@
     const-string v0, "GoogleApiClient must not be null"
 
     .line 1
-    invoke-static {p2, v0}, Lc2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2, v0}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-direct {p0, p2}, Lcom/google/android/gms/common/api/internal/BasePendingResult;-><init>(Lcom/google/android/gms/common/api/c;)V
 
     const-string p2, "Api must not be null"
 
     .line 2
-    invoke-static {p1, p2}, Lc2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, p2}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -86,7 +86,7 @@
     .end param
 
     .line 1
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->z2()Z
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->D2()Z
 
     move-result v0
 
@@ -94,15 +94,15 @@
 
     const-string v1, "Failed result must not be success"
 
-    invoke-static {v0, v1}, Lc2/h;->b(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Ld2/h;->b(ZLjava/lang/Object;)V
 
     .line 2
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->d(Lcom/google/android/gms/common/api/Status;)Lz1/g;
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->d(Lcom/google/android/gms/common/api/Status;)La2/g;
 
     move-result-object p1
 
     .line 3
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->g(Lz1/g;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->g(La2/g;)V
 
     return-void
 .end method

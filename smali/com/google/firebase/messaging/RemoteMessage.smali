@@ -23,9 +23,9 @@
 
 
 # instance fields
-.field public g:Landroid/os/Bundle;
+.field public f:Landroid/os/Bundle;
 
-.field public h:Ljava/util/Map;
+.field public g:Lm/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -36,17 +36,16 @@
     .end annotation
 .end field
 
-.field public i:Lcom/google/firebase/messaging/RemoteMessage$a;
+.field public h:Lcom/google/firebase/messaging/RemoteMessage$a;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lz5/c;
+    new-instance v0, Lb6/c;
 
-    invoke-direct {v0}, Lz5/c;-><init>()V
+    invoke-direct {v0}, Lb6/c;-><init>()V
 
     sput-object v0, Lcom/google/firebase/messaging/RemoteMessage;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -60,47 +59,24 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/google/firebase/messaging/RemoteMessage;->f:Landroid/os/Bundle;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 3
+.method public final D2()Lcom/google/firebase/messaging/RemoteMessage$a;
+    .locals 2
 
     .line 1
-    invoke-static {p1}, Ld2/b;->a(Landroid/os/Parcel;)I
-
-    move-result p2
-
-    .line 2
-    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
-
-    const/4 v1, 0x2
-
-    const/4 v2, 0x0
-
-    invoke-static {p1, v1, v0, v2}, Ld2/b;->d(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
-
-    .line 3
-    invoke-static {p1, p2}, Ld2/b;->b(Landroid/os/Parcel;I)V
-
-    return-void
-.end method
-
-.method public final z2()Lcom/google/firebase/messaging/RemoteMessage$a;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->i:Lcom/google/firebase/messaging/RemoteMessage$a;
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->h:Lcom/google/firebase/messaging/RemoteMessage$a;
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->f:Landroid/os/Bundle;
 
-    invoke-static {v0}, Lz5/b;->h(Landroid/os/Bundle;)Z
+    invoke-static {v0}, Lb6/b;->h(Landroid/os/Bundle;)Z
 
     move-result v0
 
@@ -109,17 +85,36 @@
     .line 2
     new-instance v0, Lcom/google/firebase/messaging/RemoteMessage$a;
 
-    iget-object v1, p0, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/google/firebase/messaging/RemoteMessage;->f:Landroid/os/Bundle;
 
-    const/4 v2, 0x0
+    invoke-direct {v0, v1}, Lcom/google/firebase/messaging/RemoteMessage$a;-><init>(Landroid/os/Bundle;)V
 
-    invoke-direct {v0, v1, v2}, Lcom/google/firebase/messaging/RemoteMessage$a;-><init>(Landroid/os/Bundle;Ly4/u;)V
-
-    iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->i:Lcom/google/firebase/messaging/RemoteMessage$a;
+    iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->h:Lcom/google/firebase/messaging/RemoteMessage$a;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->i:Lcom/google/firebase/messaging/RemoteMessage$a;
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->h:Lcom/google/firebase/messaging/RemoteMessage$a;
 
     return-object v0
+.end method
+
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 2
+
+    .line 1
+    invoke-static {p1}, Le2/b;->a(Landroid/os/Parcel;)I
+
+    move-result p2
+
+    .line 2
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->f:Landroid/os/Bundle;
+
+    const/4 v1, 0x2
+
+    invoke-static {p1, v1, v0}, Le2/b;->d(Landroid/os/Parcel;ILandroid/os/Bundle;)V
+
+    .line 3
+    invoke-static {p1, p2}, Le2/b;->b(Landroid/os/Parcel;I)V
+
+    return-void
 .end method

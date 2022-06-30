@@ -67,7 +67,6 @@
 .method private updateConnectionFlowControl(J)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSource;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-object v0, v0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
@@ -117,7 +116,7 @@
 
     move-result-object v3
 
-    invoke-interface {v3}, Ljava/util/Deque;->isEmpty()Z
+    invoke-interface {v3}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v3
 
@@ -151,7 +150,7 @@
 
     move-result-object v3
 
-    invoke-interface {v3}, Ljava/util/Deque;->clear()V
+    invoke-interface {v3}, Ljava/util/Collection;->clear()V
 
     .line 8
     iget-object v3, p0, Lokhttp3/internal/http2/Http2Stream$FramingSource;->this$0:Lokhttp3/internal/http2/Http2Stream;
@@ -301,7 +300,7 @@
 
     move-result-object v0
 
-    invoke-interface {v0}, Ljava/util/Deque;->isEmpty()Z
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
 
@@ -551,10 +550,12 @@
 
     const-string v4, "byteCount < 0: "
 
+    .line 26
     invoke-static {v4, v2, v3}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object v2
 
+    .line 27
     invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     goto :goto_5
@@ -773,7 +774,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$FramingSource;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     iget-object v0, v0, Lokhttp3/internal/http2/Http2Stream;->readTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;

@@ -30,59 +30,51 @@
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 9
 
-    if-eqz p1, :cond_0
+    const-string v0, "in"
 
-    new-instance v8, Lcom/kakao/sdk/partner/talk/model/Chat;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lcom/kakao/sdk/partner/talk/model/Chat;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
-    move-result-wide v1
-
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v3
+    move-result-wide v2
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v4
 
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v5
+
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v5
+    move-result v6
 
     invoke-virtual {p1}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
 
-    move-result-object v6
+    move-result-object v7
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    const-class v0, Lcom/kakao/sdk/partner/talk/model/Chat$Type;
+    const-class v1, Lcom/kakao/sdk/partner/talk/model/Chat$Type;
 
-    invoke-static {v0, p1}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    invoke-static {v1, p1}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     move-result-object p1
 
-    move-object v7, p1
+    move-object v8, p1
 
-    check-cast v7, Lcom/kakao/sdk/partner/talk/model/Chat$Type;
+    check-cast v8, Lcom/kakao/sdk/partner/talk/model/Chat$Type;
 
-    move-object v0, v8
+    move-object v1, v0
 
-    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/partner/talk/model/Chat;-><init>(JLjava/lang/String;Ljava/lang/String;ILjava/util/List;Lcom/kakao/sdk/partner/talk/model/Chat$Type;)V
+    invoke-direct/range {v1 .. v8}, Lcom/kakao/sdk/partner/talk/model/Chat;-><init>(JLjava/lang/String;Ljava/lang/String;ILjava/util/List;Lcom/kakao/sdk/partner/talk/model/Chat$Type;)V
 
-    return-object v8
-
-    :cond_0
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

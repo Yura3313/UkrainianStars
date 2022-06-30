@@ -106,81 +106,19 @@
 
 
 # virtual methods
-.method public a(Lp/h;)V
-    .locals 2
+.method public a([Z)Lp/h;
+    .locals 1
 
-    .line 1
-    iget v0, p1, Lp/h;->d:I
+    const/4 v0, 0x0
 
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_1
-
-    const/high16 v0, 0x447a0000    # 1000.0f
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v1, 0x3
-
-    if-ne v0, v1, :cond_2
-
-    const v0, 0x49742400    # 1000000.0f
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v1, 0x4
-
-    if-ne v0, v1, :cond_3
-
-    const v0, 0x4e6e6b28    # 1.0E9f
-
-    goto :goto_1
-
-    :cond_3
-    const/4 v1, 0x5
-
-    if-ne v0, v1, :cond_4
-
-    const v0, 0x5368d4a5
-
-    goto :goto_1
-
-    :cond_4
-    :goto_0
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 2
-    :goto_1
-    iget-object v1, p0, Lp/b;->d:Lp/b$a;
-
-    invoke-interface {v1, p1, v0}, Lp/b$a;->a(Lp/h;F)V
-
-    return-void
-.end method
-
-.method public b(Lp/d;[Z)Lp/h;
-    .locals 0
-
-    const/4 p1, 0x0
-
-    .line 1
-    invoke-virtual {p0, p2, p1}, Lp/b;->i([ZLp/h;)Lp/h;
+    invoke-virtual {p0, p1, v0}, Lp/b;->h([ZLp/h;)Lp/h;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public c(Lp/d;I)Lp/b;
+.method public final b(Lp/d;I)Lp/b;
     .locals 3
 
     .line 1
@@ -212,28 +150,7 @@
     return-object p0
 .end method
 
-.method public clear()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lp/b;->d:Lp/b$a;
-
-    invoke-interface {v0}, Lp/b$a;->clear()V
-
-    const/4 v0, 0x0
-
-    .line 2
-    iput-object v0, p0, Lp/b;->a:Lp/h;
-
-    const/4 v0, 0x0
-
-    .line 3
-    iput v0, p0, Lp/b;->b:F
-
-    return-void
-.end method
-
-.method public d(Lp/h;Lp/h;Lp/h;Lp/h;F)Lp/b;
+.method public final c(Lp/h;Lp/h;Lp/h;Lp/h;F)Lp/b;
     .locals 2
 
     .line 1
@@ -265,7 +182,7 @@
     return-object p0
 .end method
 
-.method public e(Lp/h;Lp/h;Lp/h;I)Lp/b;
+.method public final d(Lp/h;Lp/h;Lp/h;I)Lp/b;
     .locals 2
 
     const/4 v0, 0x0
@@ -328,7 +245,7 @@
     return-object p0
 .end method
 
-.method public f(Lp/h;Lp/h;Lp/h;I)Lp/b;
+.method public final e(Lp/h;Lp/h;Lp/h;I)Lp/b;
     .locals 2
 
     const/4 v0, 0x0
@@ -391,7 +308,7 @@
     return-object p0
 .end method
 
-.method public g(Lp/h;Lp/h;Lp/h;Lp/h;F)Lp/b;
+.method public final f(Lp/h;Lp/h;Lp/h;Lp/h;F)Lp/b;
     .locals 2
 
     .line 1
@@ -426,15 +343,30 @@
     return-object p0
 .end method
 
-.method public final h(Lp/h;)Z
-    .locals 1
+.method public g()Z
+    .locals 2
 
-    .line 1
-    iget p1, p1, Lp/h;->l:I
+    iget-object v0, p0, Lp/b;->a:Lp/h;
+
+    if-nez v0, :cond_0
+
+    iget v0, p0, Lp/b;->b:F
+
+    const/4 v1, 0x0
+
+    cmpl-float v0, v0, v1
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lp/b;->d:Lp/b$a;
+
+    invoke-interface {v0}, Lp/b$a;->c()I
+
+    move-result v0
+
+    if-nez v0, :cond_0
 
     const/4 v0, 0x1
-
-    if-gt p1, v0, :cond_0
 
     goto :goto_0
 
@@ -445,7 +377,7 @@
     return v0
 .end method
 
-.method public final i([ZLp/h;)Lp/h;
+.method public final h([ZLp/h;)Lp/h;
     .locals 9
 
     .line 1
@@ -525,42 +457,7 @@
     return-object v2
 .end method
 
-.method public isEmpty()Z
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lp/b;->a:Lp/h;
-
-    if-nez v0, :cond_0
-
-    iget v0, p0, Lp/b;->b:F
-
-    const/4 v1, 0x0
-
-    cmpl-float v0, v0, v1
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lp/b;->d:Lp/b$a;
-
-    invoke-interface {v0}, Lp/b$a;->c()I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public j(Lp/h;)V
+.method public final i(Lp/h;)V
     .locals 3
 
     .line 1
@@ -626,7 +523,7 @@
     return-void
 .end method
 
-.method public k(Lp/d;Lp/h;Z)V
+.method public final j(Lp/d;Lp/h;Z)V
     .locals 3
 
     .line 1
@@ -688,7 +585,7 @@
     return-void
 .end method
 
-.method public l(Lp/d;Lp/b;Z)V
+.method public k(Lp/d;Lp/b;Z)V
     .locals 3
 
     .line 1
@@ -763,6 +660,7 @@
 
     move-result-object v0
 
+    .line 3
     iget-object v1, p0, Lp/b;->a:Lp/h;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -774,12 +672,12 @@
     :goto_0
     const-string v1, " = "
 
-    .line 3
-    invoke-static {v0, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 4
+    invoke-static {v0, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4
+    .line 5
     iget v1, p0, Lp/b;->b:F
 
     const/4 v2, 0x0
@@ -790,11 +688,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
+    .line 6
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 7
     iget v1, p0, Lp/b;->b:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
@@ -810,7 +709,7 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 6
+    .line 8
     :goto_1
     iget-object v4, p0, Lp/b;->d:Lp/b$a;
 
@@ -821,7 +720,7 @@
     :goto_2
     if-ge v3, v4, :cond_8
 
-    .line 7
+    .line 9
     iget-object v5, p0, Lp/b;->d:Lp/b$a;
 
     invoke-interface {v5, v3}, Lp/b$a;->d(I)Lp/h;
@@ -832,7 +731,7 @@
 
     goto :goto_6
 
-    .line 8
+    .line 10
     :cond_2
     iget-object v6, p0, Lp/b;->d:Lp/b$a;
 
@@ -846,7 +745,7 @@
 
     goto :goto_6
 
-    .line 9
+    .line 11
     :cond_3
     invoke-virtual {v5}, Lp/h;->toString()Ljava/lang/String;
 
@@ -862,8 +761,8 @@
 
     const-string v1, "- "
 
-    .line 10
-    invoke-static {v0, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 12
+    invoke-static {v0, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -876,8 +775,8 @@
 
     const-string v1, " + "
 
-    .line 11
-    invoke-static {v0, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 13
+    invoke-static {v0, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -886,8 +785,8 @@
     :cond_5
     const-string v1, " - "
 
-    .line 12
-    invoke-static {v0, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 14
+    invoke-static {v0, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -902,14 +801,14 @@
 
     if-nez v1, :cond_7
 
-    .line 13
-    invoke-static {v0, v5}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 15
+    invoke-static {v0, v5}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_5
 
-    .line 14
+    .line 16
     :cond_7
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -942,8 +841,8 @@
 
     const-string v1, "0.0"
 
-    .line 15
-    invoke-static {v0, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 17
+    invoke-static {v0, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -33,14 +33,14 @@
 
     move-result v1
 
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result v2
 
     add-int/2addr v2, v1
 
     .line 3
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->remaining()I
 
     move-result v1
 
@@ -51,7 +51,7 @@
     iput-object p1, p0, Lcom/google/android/gms/internal/measurement/zztv$b;->h:Ljava/nio/ByteBuffer;
 
     .line 6
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result p1
 
@@ -77,10 +77,10 @@
 
     sub-int/2addr v2, v3
 
-    add-int/2addr v1, v2
+    add-int/2addr v2, v1
 
     .line 3
-    invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v0, v2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     return-void
 .end method

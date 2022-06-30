@@ -1,10 +1,10 @@
-.class public Ly/h;
+.class public final Ly/h;
 .super Ly/g;
 .source "WrappedDrawableApi21.java"
 
 
 # static fields
-.field public static n:Ljava/lang/reflect/Method;
+.field public static m:Ljava/lang/reflect/Method;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     invoke-direct {p0, p1}, Ly/g;-><init>(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    sget-object p1, Ly/h;->n:Ljava/lang/reflect/Method;
+    sget-object p1, Ly/h;->m:Ljava/lang/reflect/Method;
 
     if-nez p1, :cond_0
 
@@ -33,7 +33,7 @@
 
     move-result-object p1
 
-    sput-object p1, Ly/h;->n:Ljava/lang/reflect/Method;
+    sput-object p1, Ly/h;->m:Ljava/lang/reflect/Method;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -49,7 +49,7 @@
     invoke-direct {p0, p1, p2}, Ly/g;-><init>(Ly/i;Landroid/content/res/Resources;)V
 
     .line 5
-    sget-object p1, Ly/h;->n:Ljava/lang/reflect/Method;
+    sget-object p1, Ly/h;->m:Ljava/lang/reflect/Method;
 
     if-nez p1, :cond_0
 
@@ -67,7 +67,7 @@
 
     move-result-object p1
 
-    sput-object p1, Ly/h;->n:Ljava/lang/reflect/Method;
+    sput-object p1, Ly/h;->m:Ljava/lang/reflect/Method;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -78,7 +78,7 @@
 
 
 # virtual methods
-.method public c()Z
+.method public final c()Z
     .locals 3
 
     .line 1
@@ -91,7 +91,7 @@
     if-ne v0, v2, :cond_1
 
     .line 2
-    iget-object v0, p0, Ly/g;->l:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Ly/g;->k:Landroid/graphics/drawable/Drawable;
 
     .line 3
     instance-of v2, v0, Landroid/graphics/drawable/GradientDrawable;
@@ -117,11 +117,10 @@
     return v1
 .end method
 
-.method public getDirtyBounds()Landroid/graphics/Rect;
+.method public final getDirtyBounds()Landroid/graphics/Rect;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Ly/g;->l:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Ly/g;->k:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getDirtyBounds()Landroid/graphics/Rect;
 
@@ -130,28 +129,27 @@
     return-object v0
 .end method
 
-.method public getOutline(Landroid/graphics/Outline;)V
+.method public final getOutline(Landroid/graphics/Outline;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Ly/g;->l:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Ly/g;->k:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->getOutline(Landroid/graphics/Outline;)V
 
     return-void
 .end method
 
-.method public isProjected()Z
+.method public final isProjected()Z
     .locals 4
 
     .line 1
-    iget-object v0, p0, Ly/g;->l:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Ly/g;->k:Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    sget-object v2, Ly/h;->n:Ljava/lang/reflect/Method;
+    sget-object v2, Ly/h;->m:Ljava/lang/reflect/Method;
 
     if-eqz v2, :cond_0
 
@@ -178,29 +176,27 @@
     return v1
 .end method
 
-.method public setHotspot(FF)V
+.method public final setHotspot(FF)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Ly/g;->l:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Ly/g;->k:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/drawable/Drawable;->setHotspot(FF)V
 
     return-void
 .end method
 
-.method public setHotspotBounds(IIII)V
+.method public final setHotspotBounds(IIII)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Ly/g;->l:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Ly/g;->k:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->setHotspotBounds(IIII)V
 
     return-void
 .end method
 
-.method public setState([I)Z
+.method public final setState([I)Z
     .locals 0
 
     .line 1
@@ -223,7 +219,7 @@
     return p1
 .end method
 
-.method public setTint(I)V
+.method public final setTint(I)V
     .locals 1
 
     .line 1
@@ -240,7 +236,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Ly/g;->l:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Ly/g;->k:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setTint(I)V
 
@@ -248,7 +244,7 @@
     return-void
 .end method
 
-.method public setTintList(Landroid/content/res/ColorStateList;)V
+.method public final setTintList(Landroid/content/res/ColorStateList;)V
     .locals 1
 
     .line 1
@@ -259,22 +255,13 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Ly/g;->j:Ly/i;
-
-    iput-object p1, v0, Ly/i;->c:Landroid/content/res/ColorStateList;
-
-    .line 3
-    invoke-virtual {p0}, Ly/g;->getState()[I
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Ly/g;->d([I)Z
+    invoke-super {p0, p1}, Ly/g;->setTintList(Landroid/content/res/ColorStateList;)V
 
     goto :goto_0
 
-    .line 4
+    .line 3
     :cond_0
-    iget-object v0, p0, Ly/g;->l:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Ly/g;->k:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setTintList(Landroid/content/res/ColorStateList;)V
 
@@ -282,7 +269,7 @@
     return-void
 .end method
 
-.method public setTintMode(Landroid/graphics/PorterDuff$Mode;)V
+.method public final setTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 1
 
     .line 1
@@ -293,22 +280,13 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Ly/g;->j:Ly/i;
-
-    iput-object p1, v0, Ly/i;->d:Landroid/graphics/PorterDuff$Mode;
-
-    .line 3
-    invoke-virtual {p0}, Ly/g;->getState()[I
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Ly/g;->d([I)Z
+    invoke-super {p0, p1}, Ly/g;->setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
     goto :goto_0
 
-    .line 4
+    .line 3
     :cond_0
-    iget-object v0, p0, Ly/g;->l:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Ly/g;->k:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 

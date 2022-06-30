@@ -1,31 +1,18 @@
-.class public final Lse/c;
-.super Lse/q0;
-.source "EventLoop.kt"
+.class public interface abstract Lse/c;
+.super Ljava/lang/Object;
+.source "ClassBasedDeclarationContainer.kt"
 
-
-# instance fields
-.field public final l:Ljava/lang/Thread;
-
-
-# direct methods
-.method public constructor <init>(Ljava/lang/Thread;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Lse/q0;-><init>()V
-
-    iput-object p1, p0, Lse/c;->l:Ljava/lang/Thread;
-
-    return-void
-.end method
+# interfaces
+.implements Lwe/d;
 
 
 # virtual methods
-.method public v()Ljava/lang/Thread;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lse/c;->l:Ljava/lang/Thread;
-
-    return-object v0
+.method public abstract a()Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
 .end method

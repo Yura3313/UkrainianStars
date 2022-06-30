@@ -1,383 +1,472 @@
 .class public final Lsd/a;
-.super Lsd/d;
-.source "TutorialPageFragment.kt"
+.super Ljava/lang/Object;
+.source "FriendsFragment.kt"
+
+# interfaces
+.implements Lae/b2;
 
 
 # instance fields
-.field public g0:Ljava/util/HashMap;
+.field public final a:I
+
+.field public final b:Lcom/supercell/id/model/IdSocialAccount;
+
+.field public final c:Ljava/lang/String;
+
+.field public final d:Lcom/supercell/id/model/ProfileImage;
+
+.field public final e:Lcom/supercell/id/model/IdPresenceStatus;
+
+.field public final f:Lcom/supercell/id/model/IdRelationshipStatus;
+
+.field public final g:I
+
+.field public final h:Z
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdPresenceStatus;Lcom/supercell/id/model/IdRelationshipStatus;IZ)V
+    .locals 1
+
+    const-string v0, "account"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "image"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "relationship"
+
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0}, Lsd/d;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lsd/a;->b:Lcom/supercell/id/model/IdSocialAccount;
+
+    iput-object p2, p0, Lsd/a;->c:Ljava/lang/String;
+
+    iput-object p3, p0, Lsd/a;->d:Lcom/supercell/id/model/ProfileImage;
+
+    iput-object p4, p0, Lsd/a;->e:Lcom/supercell/id/model/IdPresenceStatus;
+
+    iput-object p5, p0, Lsd/a;->f:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    iput p6, p0, Lsd/a;->g:I
+
+    iput-boolean p7, p0, Lsd/a;->h:Z
+
+    .line 2
+    sget p1, Lcom/supercell/id/R$layout;->fragment_public_profile_list_item_friend:I
+
+    iput p1, p0, Lsd/a;->a:I
 
     return-void
 .end method
 
-.method public static final d1(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lsd/a;
-    .locals 3
+.method public static e(Lsd/a;Lcom/supercell/id/model/IdRelationshipStatus;)Lsd/a;
+    .locals 8
 
-    .line 1
-    new-instance v0, Lsd/a;
+    iget-object v1, p0, Lsd/a;->b:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-direct {v0}, Lsd/a;-><init>()V
+    iget-object v2, p0, Lsd/a;->c:Ljava/lang/String;
 
-    .line 2
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    iget-object v3, p0, Lsd/a;->d:Lcom/supercell/id/model/ProfileImage;
 
-    if-eqz v1, :cond_0
+    iget-object v4, p0, Lsd/a;->e:Lcom/supercell/id/model/IdPresenceStatus;
 
-    goto :goto_0
+    iget v6, p0, Lsd/a;->g:I
 
-    .line 3
-    :cond_0
-    new-instance v1, Landroid/os/Bundle;
+    iget-boolean v7, p0, Lsd/a;->h:Z
 
-    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+    const-string p0, "account"
 
-    :goto_0
-    const-string v2, "imageKey"
+    invoke-static {v1, p0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 4
-    invoke-virtual {v1, v2, p0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    const-string p0, "image"
 
-    const-string p0, "titleKey"
+    invoke-static {v3, p0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 5
-    invoke-virtual {v1, p0, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    const-string p0, "relationship"
 
-    const-string p0, "descriptionKey"
+    invoke-static {p1, p0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 6
-    invoke-virtual {v1, p0, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    new-instance p0, Lsd/a;
 
-    const-string p0, "actionKey"
+    move-object v0, p0
 
-    .line 7
-    invoke-virtual {v1, p0, p3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    move-object v5, p1
 
-    const-string p0, "analyticsLabel"
+    invoke-direct/range {v0 .. v7}, Lsd/a;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdPresenceStatus;Lcom/supercell/id/model/IdRelationshipStatus;IZ)V
 
-    .line 8
-    invoke-virtual {v1, p0, p4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 9
-    invoke-virtual {v0, v1}, Landroidx/fragment/app/Fragment;->J0(Landroid/os/Bundle;)V
-
-    return-object v0
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public W0()V
-    .locals 1
+.method public final a(Lae/b2;)Z
+    .locals 3
 
-    iget-object v0, p0, Lsd/a;->g0:Ljava/util/HashMap;
+    const-string v0, "other"
 
-    if-eqz v0, :cond_0
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+    .line 1
+    instance-of v0, p1, Lsd/a;
 
-    :cond_0
-    return-void
-.end method
-
-.method public c1(I)Landroid/view/View;
-    .locals 2
-
-    iget-object v0, p0, Lsd/a;->g0:Ljava/util/HashMap;
+    const/4 v1, 0x0
 
     if-nez v0, :cond_0
 
-    new-instance v0, Ljava/util/HashMap;
+    return v1
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lsd/a;->g0:Ljava/util/HashMap;
-
+    .line 2
     :cond_0
-    iget-object v0, p0, Lsd/a;->g0:Ljava/util/HashMap;
+    iget-object v0, p0, Lsd/a;->c:Ljava/lang/String;
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    check-cast p1, Lsd/a;
 
-    move-result-object v1
+    iget-object v2, p1, Lsd/a;->c:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lsd/a;->f:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    check-cast v0, Landroid/view/View;
+    iget-object v2, p1, Lsd/a;->f:Lcom/supercell/id/model/IdRelationshipStatus;
 
-    if-nez v0, :cond_2
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    move-result-object v2
 
-    if-nez v0, :cond_1
+    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    const/4 p1, 0x0
+    move-result v0
 
-    return-object p1
+    if-eqz v0, :cond_1
 
-    .line 2
-    :cond_1
-    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iget v0, p0, Lsd/a;->g:I
 
-    move-result-object v0
+    iget p1, p1, Lsd/a;->g:I
 
-    iget-object v1, p0, Lsd/a;->g0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p1
-
-    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_2
-    return-object v0
-.end method
-
-.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    sget p3, Lcom/supercell/id/R$layout;->fragment_tutorial_content_page:I
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p1
-
-    return-object p1
-
-    :cond_0
-    const-string p1, "inflater"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public synthetic i0()V
-    .locals 0
-
-    invoke-super {p0}, Lsd/d;->i0()V
-
-    invoke-virtual {p0}, Lsd/a;->W0()V
-
-    return-void
-.end method
-
-.method public s0(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 2
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_9
-
-    .line 1
-    invoke-super {p0, p1, p2}, Lsd/d;->s0(Landroid/view/View;Landroid/os/Bundle;)V
-
-    .line 2
-    sget p1, Lcom/supercell/id/R$id;->image:I
-
-    invoke-virtual {p0, p1}, Lsd/a;->c1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/ImageView;
-
-    if-eqz p1, :cond_2
-
-    .line 3
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
-
-    if-eqz p2, :cond_1
-
-    const-string v1, "imageKey"
-
-    .line 4
-    invoke-virtual {p2, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_0
-
-    const-string v1, "arguments!!.getString(IMAGE_KEY)!!"
-
-    invoke-static {p2, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    if-ne v0, p1, :cond_1
 
     const/4 v1, 0x1
 
-    .line 5
-    invoke-static {p1, p2, v1}, Lpd/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    :cond_1
+    return v1
+.end method
+
+.method public final c()I
+    .locals 1
+
+    iget v0, p0, Lsd/a;->a:I
+
+    return v0
+.end method
+
+.method public final d(Lae/b2;)Z
+    .locals 1
+
+    const-string v0, "other"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    instance-of v0, p1, Lsd/a;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lsd/a;
+
+    iget-object p1, p1, Lsd/a;->b:Lcom/supercell/id/model/IdSocialAccount;
+
+    iget-object v0, p0, Lsd/a;->b:Lcom/supercell/id/model/IdSocialAccount;
+
+    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
 
     goto :goto_0
 
-    .line 6
     :cond_0
-    invoke-static {}, Ls3/b;->g()V
+    const/4 p1, 0x0
 
-    throw v0
+    :goto_0
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    if-eq p0, p1, :cond_1
+
+    instance-of v0, p1, Lsd/a;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lsd/a;
+
+    iget-object v0, p0, Lsd/a;->b:Lcom/supercell/id/model/IdSocialAccount;
+
+    iget-object v1, p1, Lsd/a;->b:Lcom/supercell/id/model/IdSocialAccount;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lsd/a;->c:Ljava/lang/String;
+
+    iget-object v1, p1, Lsd/a;->c:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lsd/a;->d:Lcom/supercell/id/model/ProfileImage;
+
+    iget-object v1, p1, Lsd/a;->d:Lcom/supercell/id/model/ProfileImage;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lsd/a;->e:Lcom/supercell/id/model/IdPresenceStatus;
+
+    iget-object v1, p1, Lsd/a;->e:Lcom/supercell/id/model/IdPresenceStatus;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lsd/a;->f:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    iget-object v1, p1, Lsd/a;->f:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget v0, p0, Lsd/a;->g:I
+
+    iget v1, p1, Lsd/a;->g:I
+
+    if-ne v0, v1, :cond_0
+
+    iget-boolean v0, p0, Lsd/a;->h:Z
+
+    iget-boolean p1, p1, Lsd/a;->h:Z
+
+    if-ne v0, p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
 
     :cond_1
-    invoke-static {}, Ls3/b;->g()V
-
-    throw v0
-
-    .line 7
-    :cond_2
     :goto_0
-    sget p1, Lcom/supercell/id/R$id;->title:I
+    const/4 p1, 0x1
 
-    invoke-virtual {p0, p1}, Lsd/a;->c1(I)Landroid/view/View;
+    return p1
+.end method
 
-    move-result-object p1
+.method public final hashCode()I
+    .locals 3
 
-    check-cast p1, Landroid/widget/TextView;
+    iget-object v0, p0, Lsd/a;->b:Lcom/supercell/id/model/IdSocialAccount;
 
-    const-string p2, "title"
+    const/4 v1, 0x0
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v0, :cond_0
 
-    .line 8
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
-    if-eqz p2, :cond_8
+    move-result v0
 
-    const-string v1, "titleKey"
+    goto :goto_0
 
-    .line 9
-    invoke-virtual {p2, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    :cond_0
+    const/4 v0, 0x0
 
-    move-result-object p2
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
 
-    if-eqz p2, :cond_7
+    iget-object v2, p0, Lsd/a;->c:Ljava/lang/String;
 
-    const-string v1, "arguments!!.getString(TITLE_KEY)!!"
+    if-eqz v2, :cond_1
 
-    invoke-static {p2, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    .line 10
-    invoke-static {p1, p2, v0}, Lpd/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lke/p;)V
+    move-result v2
 
-    .line 11
-    sget p1, Lcom/supercell/id/R$id;->description:I
+    goto :goto_1
 
-    invoke-virtual {p0, p1}, Lsd/a;->c1(I)Landroid/view/View;
+    :cond_1
+    const/4 v2, 0x0
 
-    move-result-object p1
+    :goto_1
+    add-int/2addr v0, v2
 
-    check-cast p1, Landroid/widget/TextView;
+    mul-int/lit8 v0, v0, 0x1f
 
-    const-string p2, "description"
+    iget-object v2, p0, Lsd/a;->d:Lcom/supercell/id/model/ProfileImage;
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v2, :cond_2
 
-    .line 12
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    if-eqz p2, :cond_6
+    move-result v2
 
-    const-string v1, "descriptionKey"
+    goto :goto_2
 
-    .line 13
-    invoke-virtual {p2, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    :cond_2
+    const/4 v2, 0x0
 
-    move-result-object p2
+    :goto_2
+    add-int/2addr v0, v2
 
-    if-eqz p2, :cond_5
+    mul-int/lit8 v0, v0, 0x1f
 
-    const-string v1, "arguments!!.getString(DESCRIPTION_KEY)!!"
+    iget-object v2, p0, Lsd/a;->e:Lcom/supercell/id/model/IdPresenceStatus;
 
-    invoke-static {p2, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v2, :cond_3
 
-    .line 14
-    invoke-static {p1, p2, v0}, Lpd/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lke/p;)V
+    invoke-virtual {v2}, Lcom/supercell/id/model/IdPresenceStatus;->hashCode()I
 
-    .line 15
-    sget p1, Lcom/supercell/id/R$id;->button:I
+    move-result v2
 
-    invoke-virtual {p0, p1}, Lsd/a;->c1(I)Landroid/view/View;
+    goto :goto_3
 
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/Button;
-
-    const-string p2, "button"
-
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 16
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
-
-    if-eqz p2, :cond_4
-
-    const-string v1, "actionKey"
-
-    .line 17
-    invoke-virtual {p2, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_3
-
-    const-string v1, "arguments!!.getString(ACTION_KEY)!!"
-
-    invoke-static {p2, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 18
-    invoke-static {p1, p2, v0}, Lpd/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lke/p;)V
-
-    return-void
-
-    .line 19
     :cond_3
-    invoke-static {}, Ls3/b;->g()V
+    const/4 v2, 0x0
 
-    throw v0
+    :goto_3
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lsd/a;->f:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    if-eqz v2, :cond_4
+
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    move-result v1
 
     :cond_4
-    invoke-static {}, Ls3/b;->g()V
+    add-int/2addr v0, v1
 
-    throw v0
+    mul-int/lit8 v0, v0, 0x1f
 
-    .line 20
+    iget v1, p0, Lsd/a;->g:I
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-boolean v1, p0, Lsd/a;->h:Z
+
+    if-eqz v1, :cond_5
+
+    const/4 v1, 0x1
+
     :cond_5
-    invoke-static {}, Ls3/b;->g()V
+    add-int/2addr v0, v1
 
-    throw v0
+    return v0
+.end method
 
-    :cond_6
-    invoke-static {}, Ls3/b;->g()V
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
-    throw v0
+    const-string v0, "FriendRow(account="
 
-    .line 21
-    :cond_7
-    invoke-static {}, Ls3/b;->g()V
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    throw v0
+    move-result-object v0
 
-    :cond_8
-    invoke-static {}, Ls3/b;->g()V
+    .line 2
+    iget-object v1, p0, Lsd/a;->b:Lcom/supercell/id/model/IdSocialAccount;
 
-    throw v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    :cond_9
-    const-string p1, "view"
+    const-string v1, ", name="
 
-    .line 22
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    throw v0
+    iget-object v1, p0, Lsd/a;->c:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", image="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lsd/a;->d:Lcom/supercell/id/model/ProfileImage;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", presence="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lsd/a;->e:Lcom/supercell/id/model/IdPresenceStatus;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", relationship="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lsd/a;->f:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", mutualFriends="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lsd/a;->g:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", blockIncomingFriendRequests="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Lsd/a;->h:Z
+
+    const-string v2, ")"
+
+    .line 3
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

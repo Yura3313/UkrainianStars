@@ -60,7 +60,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0}, Ljava/util/Queue;->clear()V
+    invoke-interface {v0}, Ljava/util/Collection;->clear()V
 
     :cond_0
     const/4 v0, 0x0
@@ -122,7 +122,7 @@
 
     iget-object p1, p0, Lcom/unbotify/mobile/sdk/managers/ReportManager$ReportHandler;->deque:Ljava/util/Queue;
 
-    invoke-interface {p1}, Ljava/util/Queue;->isEmpty()Z
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result p1
 
@@ -157,7 +157,7 @@
 
     iget-object p1, p0, Lcom/unbotify/mobile/sdk/managers/ReportManager$ReportHandler;->deque:Ljava/util/Queue;
 
-    invoke-interface {p1}, Ljava/util/Queue;->size()I
+    invoke-interface {p1}, Ljava/util/Collection;->size()I
 
     move-result p1
 
@@ -165,11 +165,11 @@
 
     iget-object v1, p0, Lcom/unbotify/mobile/sdk/managers/ReportManager$ReportHandler;->deque:Ljava/util/Queue;
 
-    invoke-interface {v1, p1}, Ljava/util/Queue;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-interface {v1, p1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/unbotify/mobile/sdk/managers/ReportManager$ReportHandler;->deque:Ljava/util/Queue;
 
-    invoke-interface {v1}, Ljava/util/Queue;->clear()V
+    invoke-interface {v1}, Ljava/util/Collection;->clear()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
@@ -228,7 +228,7 @@
     :cond_5
     iget-object p1, p0, Lcom/unbotify/mobile/sdk/managers/ReportManager$ReportHandler;->deque:Ljava/util/Queue;
 
-    invoke-interface {p1}, Ljava/util/Queue;->clear()V
+    invoke-interface {p1}, Ljava/util/Collection;->clear()V
 
     iget-boolean p1, p0, Lcom/unbotify/mobile/sdk/managers/ReportManager$ReportHandler;->sessionEndRequested:Z
 

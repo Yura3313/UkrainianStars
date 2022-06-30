@@ -1,4 +1,4 @@
-.class public Landroidx/transition/ChangeBounds$g;
+.class public final Landroidx/transition/ChangeBounds$g;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "ChangeBounds.java"
 
@@ -19,14 +19,14 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/transition/ChangeBounds;Landroidx/transition/ChangeBounds$j;)V
+.method public constructor <init>(Landroidx/transition/ChangeBounds$j;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     .line 2
-    iput-object p2, p0, Landroidx/transition/ChangeBounds$g;->mViewBounds:Landroidx/transition/ChangeBounds$j;
+    iput-object p1, p0, Landroidx/transition/ChangeBounds$g;->mViewBounds:Landroidx/transition/ChangeBounds$j;
 
     return-void
 .end method

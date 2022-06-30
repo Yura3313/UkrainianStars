@@ -1,9 +1,9 @@
 .class final Lcom/kakao/sdk/network/ApiFactory$loggingInterceptor$2;
-.super Lle/j;
+.super Lse/h;
 .source "ApiFactory.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
+        "Lse/h;",
+        "Lre/a<",
         "Lokhttp3/logging/HttpLoggingInterceptor;",
         ">;"
     }
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method

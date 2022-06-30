@@ -1,14 +1,14 @@
 .class final Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$1;
-.super Lle/j;
+.super Lse/h;
 .source "HandlerDispatcher.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkotlinx/coroutines/android/HandlerContext;->scheduleResumeAfterDelay(JLse/f;)V
+    value = Lkotlinx/coroutines/android/HandlerContext;->scheduleResumeAfterDelay(JLze/f;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,10 +18,10 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
+        "Lse/h;",
+        "Lre/l<",
         "Ljava/lang/Throwable;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
@@ -43,7 +43,7 @@
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$1;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
 .end method

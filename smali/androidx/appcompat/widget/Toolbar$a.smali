@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/Toolbar$a;
+.class public final Landroidx/appcompat/widget/Toolbar$a;
 .super Ljava/lang/Object;
 .source "Toolbar.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroidx/appcompat/widget/Toolbar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/Toolbar$a;->a:Landroidx/appcompat/widget/Toolbar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

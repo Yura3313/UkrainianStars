@@ -51,200 +51,208 @@
 
 
 # virtual methods
-.method public d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
-    .locals 1
-
-    .line 1
-    check-cast p3, Ll4/a;
-
-    .line 2
-    invoke-interface {p3}, Ll4/a;->a()Z
-
-    move-result p1
-
-    .line 3
-    invoke-virtual {p0, p1}, Lcom/google/android/material/transformation/ExpandableBehavior;->t(Z)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    .line 4
-    invoke-interface {p3}, Ll4/a;->a()Z
-
-    move-result p1
-
-    const/4 v0, 0x1
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x2
-
-    :goto_0
-    iput p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
-
-    .line 5
-    move-object p1, p3
-
-    check-cast p1, Landroid/view/View;
-
-    invoke-interface {p3}, Ll4/a;->a()Z
-
-    move-result p3
-
-    invoke-virtual {p0, p1, p2, p3, v0}, Lcom/google/android/material/transformation/ExpandableBehavior;->u(Landroid/view/View;Landroid/view/View;ZZ)Z
-
-    move-result p1
-
-    return p1
-
-    :cond_1
-    const/4 p1, 0x0
-
-    return p1
+.method public abstract b(Landroid/view/View;Landroid/view/View;)Z
 .end method
 
-.method public h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
-    .locals 5
-
-    .line 1
-    invoke-static {p2}, Lf0/r;->p(Landroid/view/View;)Z
-
-    move-result p3
-
-    const/4 v0, 0x0
-
-    if-nez p3, :cond_3
-
-    .line 2
-    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i(Landroid/view/View;)Ljava/util/List;
-
-    move-result-object p3
-
-    .line 3
-    invoke-interface {p3}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v1, :cond_1
-
-    .line 4
-    invoke-interface {p3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/view/View;
-
-    .line 5
-    invoke-virtual {p0, p1, p2, v3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->b(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
-
-    .line 6
-    check-cast v3, Ll4/a;
-
-    goto :goto_1
-
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v3, 0x0
-
-    :goto_1
-    if-eqz v3, :cond_3
-
-    .line 7
-    invoke-interface {v3}, Ll4/a;->a()Z
-
-    move-result p1
-
-    invoke-virtual {p0, p1}, Lcom/google/android/material/transformation/ExpandableBehavior;->t(Z)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    .line 8
-    invoke-interface {v3}, Ll4/a;->a()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_2
-
-    const/4 p1, 0x1
-
-    goto :goto_2
-
-    :cond_2
-    const/4 p1, 0x2
-
-    :goto_2
-    iput p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
-
-    .line 9
-    invoke-virtual {p2}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object p3
-
-    new-instance v1, Lcom/google/android/material/transformation/ExpandableBehavior$a;
-
-    invoke-direct {v1, p0, p2, p1, v3}, Lcom/google/android/material/transformation/ExpandableBehavior$a;-><init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILl4/a;)V
-
-    .line 10
-    invoke-virtual {p3, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
-
-    :cond_3
-    return v0
-.end method
-
-.method public final t(Z)Z
+.method public final d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
     .locals 3
+
+    .line 1
+    check-cast p3, Lm4/a;
+
+    .line 2
+    invoke-interface {p3}, Lm4/a;->a()Z
+
+    move-result p1
 
     const/4 v0, 0x0
 
     const/4 v1, 0x1
 
-    if-eqz p1, :cond_2
-
-    .line 1
-    iget p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
+    const/4 v2, 0x2
 
     if-eqz p1, :cond_0
 
-    const/4 v2, 0x2
-
-    if-ne p1, v2, :cond_1
-
-    :cond_0
-    const/4 v0, 0x1
-
-    :cond_1
-    return v0
-
-    .line 2
-    :cond_2
+    .line 3
     iget p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
 
-    if-ne p1, v1, :cond_3
+    if-eqz p1, :cond_1
 
-    const/4 v0, 0x1
+    if-ne p1, v2, :cond_2
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    iget p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
+
+    if-ne p1, v1, :cond_2
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    goto :goto_1
+
+    :cond_2
+    const/4 p1, 0x0
+
+    :goto_1
+    if-eqz p1, :cond_4
+
+    .line 5
+    invoke-interface {p3}, Lm4/a;->a()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    const/4 v2, 0x1
 
     :cond_3
+    iput v2, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
+
+    .line 6
+    move-object p1, p3
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-interface {p3}, Lm4/a;->a()Z
+
+    move-result p3
+
+    invoke-virtual {p0, p1, p2, p3, v1}, Lcom/google/android/material/transformation/ExpandableBehavior;->t(Landroid/view/View;Landroid/view/View;ZZ)V
+
+    return v1
+
+    :cond_4
     return v0
 .end method
 
-.method public abstract u(Landroid/view/View;Landroid/view/View;ZZ)Z
+.method public final h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
+    .locals 4
+
+    .line 1
+    invoke-static {p2}, Lf0/r;->s(Landroid/view/View;)Z
+
+    move-result p3
+
+    const/4 v0, 0x0
+
+    if-nez p3, :cond_6
+
+    .line 2
+    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i(Landroid/view/View;)Ljava/util/List;
+
+    move-result-object p1
+
+    .line 3
+    check-cast p1, Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    move-result p3
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, p3, :cond_1
+
+    .line 4
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/View;
+
+    .line 5
+    invoke-virtual {p0, p2, v2}, Lcom/google/android/material/transformation/ExpandableBehavior;->b(Landroid/view/View;Landroid/view/View;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    .line 6
+    check-cast v2, Lm4/a;
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v2, 0x0
+
+    :goto_1
+    if-eqz v2, :cond_6
+
+    .line 7
+    invoke-interface {v2}, Lm4/a;->a()Z
+
+    move-result p1
+
+    const/4 p3, 0x2
+
+    const/4 v1, 0x1
+
+    if-eqz p1, :cond_2
+
+    .line 8
+    iget p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
+
+    if-eqz p1, :cond_3
+
+    if-ne p1, p3, :cond_4
+
+    goto :goto_2
+
+    .line 9
+    :cond_2
+    iget p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
+
+    if-ne p1, v1, :cond_4
+
+    :cond_3
+    :goto_2
+    const/4 p1, 0x1
+
+    goto :goto_3
+
+    :cond_4
+    const/4 p1, 0x0
+
+    :goto_3
+    if-eqz p1, :cond_6
+
+    .line 10
+    invoke-interface {v2}, Lm4/a;->a()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_5
+
+    const/4 p3, 0x1
+
+    :cond_5
+    iput p3, p0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
+
+    .line 11
+    invoke-virtual {p2}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object p1
+
+    new-instance v1, Lcom/google/android/material/transformation/ExpandableBehavior$a;
+
+    invoke-direct {v1, p0, p2, p3, v2}, Lcom/google/android/material/transformation/ExpandableBehavior$a;-><init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILm4/a;)V
+
+    .line 12
+    invoke-virtual {p1, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+
+    :cond_6
+    return v0
+.end method
+
+.method public abstract t(Landroid/view/View;Landroid/view/View;ZZ)V
 .end method

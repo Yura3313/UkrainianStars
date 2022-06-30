@@ -9,11 +9,11 @@
 
 
 # static fields
-.field public static final h:[I
+.field public static final g:[I
 
 
 # instance fields
-.field public g:Landroidx/appcompat/view/menu/e;
+.field public f:Landroidx/appcompat/view/menu/e;
 
 
 # direct methods
@@ -24,10 +24,9 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
-    sput-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->h:[I
+    sput-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->g:[I
 
     return-void
 
@@ -58,10 +57,10 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/ListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 3
-    invoke-virtual {p0, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {p0, p0}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 4
-    sget-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->h:[I
+    sget-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->g:[I
 
     const/4 v1, 0x0
 
@@ -106,7 +105,7 @@
 
     .line 11
     :goto_0
-    invoke-virtual {p0, p3}, Landroid/widget/ListView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, p3}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     :cond_1
     const/4 p3, 0x1
@@ -158,29 +157,28 @@
 
 
 # virtual methods
-.method public a(Landroidx/appcompat/view/menu/g;)Z
+.method public final a(Landroidx/appcompat/view/menu/g;)Z
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->g:Landroidx/appcompat/view/menu/e;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->f:Landroidx/appcompat/view/menu/e;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x0
 
     .line 2
-    invoke-virtual {v0, p1, v1, v2}, Landroidx/appcompat/view/menu/e;->s(Landroid/view/MenuItem;Landroidx/appcompat/view/menu/i;I)Z
+    invoke-virtual {v0, p1, v1, v2}, Landroidx/appcompat/view/menu/e;->t(Landroid/view/MenuItem;Landroidx/appcompat/view/menu/i;I)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public b(Landroidx/appcompat/view/menu/e;)V
+.method public final b(Landroidx/appcompat/view/menu/e;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->g:Landroidx/appcompat/view/menu/e;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->f:Landroidx/appcompat/view/menu/e;
 
     return-void
 .end method
@@ -193,7 +191,7 @@
     return v0
 .end method
 
-.method public onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 1
 
     .line 1
@@ -202,20 +200,19 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-virtual {p0, v0}, Landroid/widget/ListView;->setChildrenDrawingCacheEnabled(Z)V
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setChildrenDrawingCacheEnabled(Z)V
 
     return-void
 .end method
 
-.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
 
     move-result-object p1
 
-    invoke-interface {p1, p3}, Landroid/widget/ListAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-interface {p1, p3}, Landroid/widget/Adapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object p1
 

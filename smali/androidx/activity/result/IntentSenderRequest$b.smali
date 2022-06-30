@@ -39,10 +39,9 @@
 
 
 # virtual methods
-.method public a()Landroidx/activity/result/IntentSenderRequest;
+.method public final a()Landroidx/activity/result/IntentSenderRequest;
     .locals 5
 
-    .line 1
     new-instance v0, Landroidx/activity/result/IntentSenderRequest;
 
     iget-object v1, p0, Landroidx/activity/result/IntentSenderRequest$b;->a:Landroid/content/IntentSender;
@@ -58,16 +57,15 @@
     return-object v0
 .end method
 
-.method public b(Landroid/content/Intent;)Landroidx/activity/result/IntentSenderRequest$b;
+.method public final b(Landroid/content/Intent;)Landroidx/activity/result/IntentSenderRequest$b;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/activity/result/IntentSenderRequest$b;->b:Landroid/content/Intent;
 
     return-object p0
 .end method
 
-.method public c(II)Landroidx/activity/result/IntentSenderRequest$b;
+.method public final c(II)Landroidx/activity/result/IntentSenderRequest$b;
     .locals 0
 
     .line 1

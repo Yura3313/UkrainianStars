@@ -1,4 +1,4 @@
-.class public Lt0/d$a;
+.class public final Lt0/d$a;
 .super Ljava/lang/Object;
 .source "CircularProgressDrawable.java"
 
@@ -152,7 +152,7 @@
 
 
 # virtual methods
-.method public a(I)V
+.method public final a(I)V
     .locals 1
 
     .line 1
@@ -168,7 +168,7 @@
     return-void
 .end method
 
-.method public b(Z)V
+.method public final b(Z)V
     .locals 1
 
     .line 1

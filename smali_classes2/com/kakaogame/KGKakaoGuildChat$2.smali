@@ -41,7 +41,6 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGKakaoGuildChat$2;->val$worldId:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/kakaogame/KGKakaoGuildChat$2;->val$guildId:Ljava/lang/String;

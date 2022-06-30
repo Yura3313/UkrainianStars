@@ -70,15 +70,18 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "title"
 
-    if-eqz p3, :cond_2
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p6, :cond_1
+    const-string v0, "displayMemberImages"
 
-    if-eqz p7, :cond_0
+    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    const-string v0, "chatType"
+
+    invoke-static {p7, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->id:J
@@ -94,28 +97,6 @@
     iput-object p7, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->chatType:Lcom/kakao/sdk/partner/talk/model/Chat$Type;
 
     return-void
-
-    :cond_0
-    const-string p1, "chatType"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "displayMemberImages"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "title"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/partner/talk/model/Chat;JLjava/lang/String;Ljava/lang/String;ILjava/util/List;Lcom/kakao/sdk/partner/talk/model/Chat$Type;ILjava/lang/Object;)Lcom/kakao/sdk/partner/talk/model/Chat;
@@ -289,13 +270,23 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "title"
 
-    if-eqz p3, :cond_2
+    move-object v4, p3
 
-    if-eqz p6, :cond_1
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p7, :cond_0
+    const-string v0, "displayMemberImages"
+
+    move-object v7, p6
+
+    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "chatType"
+
+    move-object/from16 v8, p7
+
+    invoke-static {v8, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/partner/talk/model/Chat;
 
@@ -303,41 +294,13 @@
 
     move-wide v2, p1
 
-    move-object v4, p3
-
     move-object v5, p4
 
     move v6, p5
 
-    move-object v7, p6
-
-    move-object/from16 v8, p7
-
     invoke-direct/range {v1 .. v8}, Lcom/kakao/sdk/partner/talk/model/Chat;-><init>(JLjava/lang/String;Ljava/lang/String;ILjava/util/List;Lcom/kakao/sdk/partner/talk/model/Chat$Type;)V
 
     return-object v0
-
-    :cond_0
-    const-string v1, "chatType"
-
-    .line 1
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string v1, "displayMemberImages"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string v1, "title"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -385,7 +348,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/Chat;->title:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -395,7 +358,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/Chat;->imageUrl:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -421,7 +384,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/Chat;->displayMemberImages:Ljava/util/List;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -431,7 +394,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/partner/talk/model/Chat;->chatType:Lcom/kakao/sdk/partner/talk/model/Chat$Type;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -450,7 +413,6 @@
 .method public final getChatType()Lcom/kakao/sdk/partner/talk/model/Chat$Type;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->chatType:Lcom/kakao/sdk/partner/talk/model/Chat$Type;
 
     return-object v0
@@ -467,7 +429,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->displayMemberImages:Ljava/util/List;
 
     return-object v0
@@ -476,7 +437,6 @@
 .method public final getId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->id:J
 
     return-wide v0
@@ -485,7 +445,6 @@
 .method public final getImageUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->imageUrl:Ljava/lang/String;
 
     return-object v0
@@ -494,7 +453,6 @@
 .method public final getMemberCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->memberCount:I
 
     return v0
@@ -503,7 +461,6 @@
 .method public final getTitle()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->title:Ljava/lang/String;
 
     return-object v0
@@ -605,10 +562,12 @@
 
     const-string v0, "Chat(id="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-wide v1, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->id:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
@@ -667,7 +626,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-wide v0, p0, Lcom/kakao/sdk/partner/talk/model/Chat;->id:J
 
@@ -698,14 +659,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

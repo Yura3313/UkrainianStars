@@ -15,19 +15,18 @@
 
 
 # instance fields
-.field public final g:J
+.field public final f:J
 
-.field public final h:J
+.field public final g:J
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Ln2/d;
+    new-instance v0, Lo2/d;
 
-    invoke-direct {v0}, Ln2/d;-><init>()V
+    invoke-direct {v0}, Lo2/d;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/zzh;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -41,10 +40,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-wide p1, p0, Lcom/google/android/gms/drive/zzh;->g:J
+    iput-wide p1, p0, Lcom/google/android/gms/drive/zzh;->f:J
 
     .line 3
-    iput-wide p3, p0, Lcom/google/android/gms/drive/zzh;->h:J
+    iput-wide p3, p0, Lcom/google/android/gms/drive/zzh;->g:J
 
     return-void
 .end method
@@ -57,36 +56,36 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x2
-
     .line 2
-    iget-wide v1, p0, Lcom/google/android/gms/drive/zzh;->g:J
+    iget-wide v0, p0, Lcom/google/android/gms/drive/zzh;->f:J
+
+    const/4 v2, 0x2
 
     const/16 v3, 0x8
 
     .line 3
-    invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v3}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 4
-    invoke-virtual {p1, v1, v2}, Landroid/os/Parcel;->writeLong(J)V
-
-    const/4 v0, 0x3
+    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 5
-    iget-wide v1, p0, Lcom/google/android/gms/drive/zzh;->h:J
+    iget-wide v0, p0, Lcom/google/android/gms/drive/zzh;->g:J
+
+    const/4 v2, 0x3
 
     .line 6
-    invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v3}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 7
-    invoke-virtual {p1, v1, v2}, Landroid/os/Parcel;->writeLong(J)V
+    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 8
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

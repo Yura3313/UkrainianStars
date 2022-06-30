@@ -34,7 +34,6 @@
 .method public static synthetic access$000(Lio/sentry/transport/ReusableCountLatch$Sync;)I
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/sentry/transport/ReusableCountLatch$Sync;->getCount()I
 
     move-result p0
@@ -45,7 +44,6 @@
 .method public static synthetic access$100(Lio/sentry/transport/ReusableCountLatch$Sync;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/sentry/transport/ReusableCountLatch$Sync;->decrement()V
 
     return-void
@@ -54,7 +52,6 @@
 .method public static synthetic access$200(Lio/sentry/transport/ReusableCountLatch$Sync;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/sentry/transport/ReusableCountLatch$Sync;->increment()V
 
     return-void
@@ -65,7 +62,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0}, Ljava/util/concurrent/locks/AbstractQueuedSynchronizer;->releaseShared(I)Z
 
     return-void
@@ -74,7 +70,6 @@
 .method private getCount()I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/locks/AbstractQueuedSynchronizer;->getState()I
 
     move-result v0
@@ -108,7 +103,6 @@
 .method public tryAcquireShared(I)I
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/locks/AbstractQueuedSynchronizer;->getState()I
 
     move-result p1

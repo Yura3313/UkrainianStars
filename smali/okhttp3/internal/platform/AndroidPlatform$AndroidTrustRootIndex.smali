@@ -150,7 +150,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/platform/AndroidPlatform$AndroidTrustRootIndex;->trustManager:Ljavax/net/ssl/X509TrustManager;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I

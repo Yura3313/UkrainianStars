@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/SwitchCompat$a;
+.class public final Landroidx/appcompat/widget/SwitchCompat$a;
 .super Landroid/util/Property;
 .source "SwitchCompat.java"
 
@@ -24,25 +24,28 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 2
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
+    const-class v0, Ljava/lang/Float;
+
+    const-string v1, "thumbPos"
+
+    invoke-direct {p0, v0, v1}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public get(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 1
     check-cast p1, Landroidx/appcompat/widget/SwitchCompat;
 
     .line 2
-    iget p1, p1, Landroidx/appcompat/widget/SwitchCompat;->D:F
+    iget p1, p1, Landroidx/appcompat/widget/SwitchCompat;->C:F
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -51,7 +54,7 @@
     return-object p1
 .end method
 
-.method public set(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final set(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
     .line 1

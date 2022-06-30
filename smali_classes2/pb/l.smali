@@ -1,151 +1,97 @@
-.class public Lpb/l;
-.super Lpb/o;
-.source "FitXYStrategy.java"
+.class public final Lpb/l;
+.super Ljava/lang/Object;
+.source "HandshakeReader.java"
+
+
+# instance fields
+.field public final a:Lpb/e0;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lpb/e0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lpb/o;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lpb/l;->a:Lpb/e0;
 
     return-void
 .end method
 
-.method public static c(F)F
-    .locals 2
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    cmpg-float v1, p0, v0
-
-    if-gez v1, :cond_0
-
-    div-float/2addr v0, p0
-
-    return v0
-
-    :cond_0
-    return p0
-.end method
-
 
 # virtual methods
-.method public a(Lob/o;Lob/o;)F
-    .locals 4
+.method public final a(Ljava/util/Map;Ljava/lang/String;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;>;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    const-string v0, ":"
+
+    const/4 v1, 0x2
 
     .line 1
-    iget v0, p1, Lob/o;->g:I
+    invoke-virtual {p2, v0, v1}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
 
-    if-lez v0, :cond_1
-
-    iget v1, p1, Lob/o;->h:I
-
-    if-gtz v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    int-to-float v0, v0
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    mul-float v0, v0, v1
+    move-result-object p2
 
     .line 2
-    iget v2, p2, Lob/o;->g:I
+    array-length v0, p2
 
-    int-to-float v2, v2
+    if-ge v0, v1, :cond_0
 
-    div-float/2addr v0, v2
+    return-void
 
-    invoke-static {v0}, Lpb/l;->c(F)F
-
-    move-result v0
+    :cond_0
+    const/4 v0, 0x0
 
     .line 3
-    iget v2, p1, Lob/o;->h:I
+    aget-object v0, p2, v0
 
-    int-to-float v2, v2
+    invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
-    mul-float v2, v2, v1
+    move-result-object v0
 
-    iget v3, p2, Lob/o;->h:I
-
-    int-to-float v3, v3
-
-    div-float/2addr v2, v3
-
-    invoke-static {v2}, Lpb/l;->c(F)F
-
-    move-result v2
-
-    div-float v0, v1, v0
-
-    div-float/2addr v0, v2
+    const/4 v1, 0x1
 
     .line 4
-    iget v2, p1, Lob/o;->g:I
+    aget-object p2, p2, v1
 
-    int-to-float v2, v2
+    invoke-virtual {p2}, Ljava/lang/String;->trim()Ljava/lang/String;
 
-    mul-float v2, v2, v1
+    move-result-object p2
 
-    iget p1, p1, Lob/o;->h:I
+    .line 5
+    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    int-to-float p1, p1
+    move-result-object v1
 
-    div-float/2addr v2, p1
+    check-cast v1, Ljava/util/List;
 
-    iget p1, p2, Lob/o;->g:I
+    if-nez v1, :cond_1
 
-    int-to-float p1, p1
+    .line 6
+    new-instance v1, Ljava/util/ArrayList;
 
-    mul-float p1, p1, v1
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iget p2, p2, Lob/o;->h:I
+    .line 7
+    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    int-to-float p2, p2
-
-    div-float/2addr p1, p2
-
-    div-float/2addr v2, p1
-
-    invoke-static {v2}, Lpb/l;->c(F)F
-
-    move-result p1
-
-    div-float/2addr v1, p1
-
-    div-float/2addr v1, p1
-
-    div-float/2addr v1, p1
-
-    mul-float v1, v1, v0
-
-    return v1
-
+    .line 8
     :cond_1
-    :goto_0
-    const/4 p1, 0x0
+    invoke-interface {v1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    return p1
-.end method
-
-.method public b(Lob/o;Lob/o;)Landroid/graphics/Rect;
-    .locals 2
-
-    .line 1
-    new-instance p1, Landroid/graphics/Rect;
-
-    iget v0, p2, Lob/o;->g:I
-
-    iget p2, p2, Lob/o;->h:I
-
-    const/4 v1, 0x0
-
-    invoke-direct {p1, v1, v1, v0, p2}, Landroid/graphics/Rect;-><init>(IIII)V
-
-    return-object p1
+    return-void
 .end method

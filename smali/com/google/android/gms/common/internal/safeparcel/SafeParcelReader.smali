@@ -1,4 +1,4 @@
-.class public Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;
+.class public final Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
@@ -628,10 +628,12 @@
 
     const-string v2, "Overread allowed size end="
 
-    invoke-static {v1, v2, p1}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
+    .line 3
+    invoke-static {v1, v2, p1}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 4
     invoke-direct {v0, p1, p0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
 
     throw v0
@@ -862,7 +864,6 @@
 
     return p0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -984,10 +985,12 @@
 
     const-string v5, " end="
 
-    invoke-static {v3, v4, v2, v5, v1}, Ld2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+    .line 7
+    invoke-static {v3, v4, v2, v5, v1}, Le2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 
+    .line 8
     invoke-direct {v0, v1, p0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader$ParseException;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
 
     throw v0
@@ -1016,10 +1019,12 @@
 
     const/16 v2, 0x2e
 
+    .line 4
     invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v2
 
+    .line 5
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
@@ -1038,9 +1043,15 @@
 
     const-string p1, " (0x"
 
-    const-string p2, ")"
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v3, p1, v1, p2}, Landroidx/fragment/app/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, ")"
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1067,10 +1078,12 @@
 
     const/16 v2, 0x2e
 
+    .line 3
     invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v2
 
+    .line 4
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
@@ -1089,9 +1102,15 @@
 
     const-string p1, " (0x"
 
-    const-string p2, ")"
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v3, p1, v1, p2}, Landroidx/fragment/app/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, ")"
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 

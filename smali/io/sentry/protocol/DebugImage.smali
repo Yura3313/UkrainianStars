@@ -45,7 +45,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -68,7 +67,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/DebugImage;->unknown:Ljava/util/Map;
 
     return-void
@@ -77,7 +75,6 @@
 .method public getArch()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/DebugImage;->arch:Ljava/lang/String;
 
     return-object v0
@@ -86,7 +83,6 @@
 .method public getCodeFile()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/DebugImage;->codeFile:Ljava/lang/String;
 
     return-object v0
@@ -95,7 +91,6 @@
 .method public getCodeId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/DebugImage;->codeId:Ljava/lang/String;
 
     return-object v0
@@ -104,7 +99,6 @@
 .method public getDebugFile()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/DebugImage;->debugFile:Ljava/lang/String;
 
     return-object v0
@@ -113,7 +107,6 @@
 .method public getDebugId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/DebugImage;->debugId:Ljava/lang/String;
 
     return-object v0
@@ -122,7 +115,6 @@
 .method public getImageAddr()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/DebugImage;->imageAddr:Ljava/lang/String;
 
     return-object v0
@@ -131,7 +123,6 @@
 .method public getImageSize()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/DebugImage;->imageSize:Ljava/lang/Long;
 
     return-object v0
@@ -140,7 +131,6 @@
 .method public getType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/DebugImage;->type:Ljava/lang/String;
 
     return-object v0
@@ -149,7 +139,6 @@
 .method public getUuid()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/DebugImage;->uuid:Ljava/lang/String;
 
     return-object v0
@@ -158,7 +147,6 @@
 .method public setArch(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/DebugImage;->arch:Ljava/lang/String;
 
     return-void
@@ -167,7 +155,6 @@
 .method public setCodeFile(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/DebugImage;->codeFile:Ljava/lang/String;
 
     return-void
@@ -176,7 +163,6 @@
 .method public setCodeId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/DebugImage;->codeId:Ljava/lang/String;
 
     return-void
@@ -185,7 +171,6 @@
 .method public setDebugFile(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/DebugImage;->debugFile:Ljava/lang/String;
 
     return-void
@@ -194,7 +179,6 @@
 .method public setDebugId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/DebugImage;->debugId:Ljava/lang/String;
 
     return-void
@@ -203,7 +187,6 @@
 .method public setImageAddr(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/DebugImage;->imageAddr:Ljava/lang/String;
 
     return-void
@@ -234,7 +217,6 @@
 .method public setType(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/DebugImage;->type:Ljava/lang/String;
 
     return-void
@@ -243,7 +225,6 @@
 .method public setUuid(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/DebugImage;->uuid:Ljava/lang/String;
 
     return-void

@@ -105,7 +105,7 @@
     return p1
 .end method
 
-.method public m(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;IIIII[I)V
+.method public final m(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;IIIII[I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -153,7 +153,7 @@
 
     const-wide/16 p7, 0xaf
 
-    sget-object p9, Lc4/a;->c:Landroid/animation/TimeInterpolator;
+    sget-object p9, Ld4/a;->c:Lm0/a;
 
     move-object p4, p0
 
@@ -196,7 +196,7 @@
     const-wide/16 p7, 0xe1
 
     .line 12
-    sget-object p9, Lc4/a;->d:Landroid/animation/TimeInterpolator;
+    sget-object p9, Ld4/a;->d:Lm0/c;
 
     move-object p4, p0
 
@@ -209,7 +209,7 @@
     return-void
 .end method
 
-.method public q(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;II)Z
+.method public q(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;II)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -224,7 +224,7 @@
 
     const/4 p1, 0x2
 
-    if-ne p5, p1, :cond_0
+    if-ne p4, p1, :cond_0
 
     const/4 p1, 0x1
 

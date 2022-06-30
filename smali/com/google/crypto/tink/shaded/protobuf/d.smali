@@ -40,7 +40,7 @@
     if-nez v0, :cond_0
 
     .line 4
-    sget-object p0, Lm5/c;->h:Lm5/c;
+    sget-object p0, Lo5/d;->g:Lo5/d$f;
 
     iput-object p0, p2, Lcom/google/crypto/tink/shaded/protobuf/d$a;->c:Ljava/lang/Object;
 
@@ -48,7 +48,7 @@
 
     .line 5
     :cond_0
-    invoke-static {p0, p1, v0}, Lm5/c;->e([BII)Lm5/c;
+    invoke-static {p0, p1, v0}, Lo5/d;->f([BII)Lo5/d;
 
     move-result-object p0
 
@@ -78,7 +78,6 @@
 .method public static b([BI)I
     .locals 2
 
-    .line 1
     aget-byte v0, p0, p1
 
     and-int/lit16 v0, v0, 0xff
@@ -119,7 +118,6 @@
 .method public static c([BI)J
     .locals 7
 
-    .line 1
     aget-byte v0, p0, p1
 
     int-to-long v0, v0
@@ -229,7 +227,7 @@
     return-wide p0
 .end method
 
-.method public static d(Lcom/google/crypto/tink/shaded/protobuf/h0;[BIIILcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static d(Lcom/google/crypto/tink/shaded/protobuf/d0;[BIIILcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -238,10 +236,10 @@
     .end annotation
 
     .line 1
-    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/c0;
+    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/z;
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c0;->d()Ljava/lang/Object;
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/z;->d()Ljava/lang/Object;
 
     move-result-object v7
 
@@ -260,12 +258,12 @@
     move-object v6, p5
 
     .line 3
-    invoke-virtual/range {v0 .. v6}, Lcom/google/crypto/tink/shaded/protobuf/c0;->K(Ljava/lang/Object;[BIIILcom/google/crypto/tink/shaded/protobuf/d$a;)I
+    invoke-virtual/range {v0 .. v6}, Lcom/google/crypto/tink/shaded/protobuf/z;->J(Ljava/lang/Object;[BIIILcom/google/crypto/tink/shaded/protobuf/d$a;)I
 
     move-result p1
 
     .line 4
-    invoke-virtual {p0, v7}, Lcom/google/crypto/tink/shaded/protobuf/c0;->e(Ljava/lang/Object;)V
+    invoke-virtual {p0, v7}, Lcom/google/crypto/tink/shaded/protobuf/z;->e(Ljava/lang/Object;)V
 
     .line 5
     iput-object v7, p5, Lcom/google/crypto/tink/shaded/protobuf/d$a;->c:Ljava/lang/Object;
@@ -273,7 +271,7 @@
     return p1
 .end method
 
-.method public static e(Lcom/google/crypto/tink/shaded/protobuf/h0;[BIILcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static e(Lcom/google/crypto/tink/shaded/protobuf/d0;[BIILcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -306,7 +304,7 @@
     if-gt p2, p3, :cond_1
 
     .line 4
-    invoke-interface {p0}, Lcom/google/crypto/tink/shaded/protobuf/h0;->d()Ljava/lang/Object;
+    invoke-interface {p0}, Lcom/google/crypto/tink/shaded/protobuf/d0;->d()Ljava/lang/Object;
 
     move-result-object p3
 
@@ -323,10 +321,10 @@
     move-object v5, p4
 
     .line 5
-    invoke-interface/range {v0 .. v5}, Lcom/google/crypto/tink/shaded/protobuf/h0;->h(Ljava/lang/Object;[BIILcom/google/crypto/tink/shaded/protobuf/d$a;)V
+    invoke-interface/range {v0 .. v5}, Lcom/google/crypto/tink/shaded/protobuf/d0;->i(Ljava/lang/Object;[BIILcom/google/crypto/tink/shaded/protobuf/d$a;)V
 
     .line 6
-    invoke-interface {p0, p3}, Lcom/google/crypto/tink/shaded/protobuf/h0;->e(Ljava/lang/Object;)V
+    invoke-interface {p0, p3}, Lcom/google/crypto/tink/shaded/protobuf/d0;->e(Ljava/lang/Object;)V
 
     .line 7
     iput-object p3, p4, Lcom/google/crypto/tink/shaded/protobuf/d$a;->c:Ljava/lang/Object;
@@ -342,14 +340,14 @@
     throw p0
 .end method
 
-.method public static f(Lcom/google/crypto/tink/shaded/protobuf/h0;I[BIILcom/google/crypto/tink/shaded/protobuf/q$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static f(Lcom/google/crypto/tink/shaded/protobuf/d0;I[BIILcom/google/crypto/tink/shaded/protobuf/p$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/crypto/tink/shaded/protobuf/h0<",
+            "Lcom/google/crypto/tink/shaded/protobuf/d0<",
             "*>;I[BII",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+            "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
             "*>;",
             "Lcom/google/crypto/tink/shaded/protobuf/d$a;",
             ")I"
@@ -363,7 +361,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0, p2, p3, p4, p6}, Lcom/google/crypto/tink/shaded/protobuf/d;->e(Lcom/google/crypto/tink/shaded/protobuf/h0;[BIILcom/google/crypto/tink/shaded/protobuf/d$a;)I
+    invoke-static {p0, p2, p3, p4, p6}, Lcom/google/crypto/tink/shaded/protobuf/d;->e(Lcom/google/crypto/tink/shaded/protobuf/d0;[BIILcom/google/crypto/tink/shaded/protobuf/d$a;)I
 
     move-result p3
 
@@ -389,7 +387,7 @@
 
     .line 5
     :cond_0
-    invoke-static {p0, p2, v0, p4, p6}, Lcom/google/crypto/tink/shaded/protobuf/d;->e(Lcom/google/crypto/tink/shaded/protobuf/h0;[BIILcom/google/crypto/tink/shaded/protobuf/d$a;)I
+    invoke-static {p0, p2, v0, p4, p6}, Lcom/google/crypto/tink/shaded/protobuf/d;->e(Lcom/google/crypto/tink/shaded/protobuf/d0;[BIILcom/google/crypto/tink/shaded/protobuf/d$a;)I
 
     move-result p3
 
@@ -405,12 +403,12 @@
     return p3
 .end method
 
-.method public static g([BILcom/google/crypto/tink/shaded/protobuf/q$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static g([BILcom/google/crypto/tink/shaded/protobuf/p$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BI",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+            "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
             "*>;",
             "Lcom/google/crypto/tink/shaded/protobuf/d$a;",
             ")I"
@@ -485,12 +483,12 @@
     goto :goto_2
 .end method
 
-.method public static h([BILcom/google/crypto/tink/shaded/protobuf/q$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static h([BILcom/google/crypto/tink/shaded/protobuf/p$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BI",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+            "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
             "*>;",
             "Lcom/google/crypto/tink/shaded/protobuf/d$a;",
             ")I"
@@ -504,7 +502,7 @@
     .end annotation
 
     .line 1
-    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/i;
+    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/h;
 
     .line 2
     invoke-static {p0, p1, p3}, Lcom/google/crypto/tink/shaded/protobuf/d;->t([BILcom/google/crypto/tink/shaded/protobuf/d$a;)I
@@ -529,7 +527,7 @@
     move-result-wide v0
 
     .line 5
-    invoke-virtual {p2, v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/i;->c(D)V
+    invoke-virtual {p2, v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/h;->c(D)V
 
     add-int/lit8 p1, p1, 0x8
 
@@ -555,12 +553,12 @@
     goto :goto_1
 .end method
 
-.method public static i([BILcom/google/crypto/tink/shaded/protobuf/q$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static i([BILcom/google/crypto/tink/shaded/protobuf/p$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BI",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+            "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
             "*>;",
             "Lcom/google/crypto/tink/shaded/protobuf/d$a;",
             ")I"
@@ -574,7 +572,7 @@
     .end annotation
 
     .line 1
-    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/p;
+    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/o;
 
     .line 2
     invoke-static {p0, p1, p3}, Lcom/google/crypto/tink/shaded/protobuf/d;->t([BILcom/google/crypto/tink/shaded/protobuf/d$a;)I
@@ -594,7 +592,7 @@
 
     move-result v0
 
-    invoke-virtual {p2, v0}, Lcom/google/crypto/tink/shaded/protobuf/p;->c(I)V
+    invoke-virtual {p2, v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->c(I)V
 
     add-int/lit8 p1, p1, 0x4
 
@@ -620,12 +618,12 @@
     goto :goto_1
 .end method
 
-.method public static j([BILcom/google/crypto/tink/shaded/protobuf/q$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static j([BILcom/google/crypto/tink/shaded/protobuf/p$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BI",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+            "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
             "*>;",
             "Lcom/google/crypto/tink/shaded/protobuf/d$a;",
             ")I"
@@ -639,7 +637,7 @@
     .end annotation
 
     .line 1
-    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/v;
+    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/u;
 
     .line 2
     invoke-static {p0, p1, p3}, Lcom/google/crypto/tink/shaded/protobuf/d;->t([BILcom/google/crypto/tink/shaded/protobuf/d$a;)I
@@ -659,7 +657,7 @@
 
     move-result-wide v0
 
-    invoke-virtual {p2, v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/v;->c(J)V
+    invoke-virtual {p2, v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/u;->c(J)V
 
     add-int/lit8 p1, p1, 0x8
 
@@ -685,12 +683,12 @@
     goto :goto_1
 .end method
 
-.method public static k([BILcom/google/crypto/tink/shaded/protobuf/q$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static k([BILcom/google/crypto/tink/shaded/protobuf/p$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BI",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+            "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
             "*>;",
             "Lcom/google/crypto/tink/shaded/protobuf/d$a;",
             ")I"
@@ -704,7 +702,7 @@
     .end annotation
 
     .line 1
-    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/n;
+    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/m;
 
     .line 2
     invoke-static {p0, p1, p3}, Lcom/google/crypto/tink/shaded/protobuf/d;->t([BILcom/google/crypto/tink/shaded/protobuf/d$a;)I
@@ -729,7 +727,7 @@
     move-result v0
 
     .line 5
-    invoke-virtual {p2, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->c(F)V
+    invoke-virtual {p2, v0}, Lcom/google/crypto/tink/shaded/protobuf/m;->c(F)V
 
     add-int/lit8 p1, p1, 0x4
 
@@ -755,12 +753,12 @@
     goto :goto_1
 .end method
 
-.method public static l([BILcom/google/crypto/tink/shaded/protobuf/q$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static l([BILcom/google/crypto/tink/shaded/protobuf/p$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BI",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+            "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
             "*>;",
             "Lcom/google/crypto/tink/shaded/protobuf/d$a;",
             ")I"
@@ -774,7 +772,7 @@
     .end annotation
 
     .line 1
-    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/p;
+    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/o;
 
     .line 2
     invoke-static {p0, p1, p3}, Lcom/google/crypto/tink/shaded/protobuf/d;->t([BILcom/google/crypto/tink/shaded/protobuf/d$a;)I
@@ -801,7 +799,7 @@
 
     move-result v1
 
-    invoke-virtual {p2, v1}, Lcom/google/crypto/tink/shaded/protobuf/p;->c(I)V
+    invoke-virtual {p2, v1}, Lcom/google/crypto/tink/shaded/protobuf/o;->c(I)V
 
     goto :goto_0
 
@@ -825,12 +823,12 @@
     goto :goto_1
 .end method
 
-.method public static m([BILcom/google/crypto/tink/shaded/protobuf/q$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static m([BILcom/google/crypto/tink/shaded/protobuf/p$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BI",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+            "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
             "*>;",
             "Lcom/google/crypto/tink/shaded/protobuf/d$a;",
             ")I"
@@ -844,7 +842,7 @@
     .end annotation
 
     .line 1
-    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/v;
+    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/u;
 
     .line 2
     invoke-static {p0, p1, p3}, Lcom/google/crypto/tink/shaded/protobuf/d;->t([BILcom/google/crypto/tink/shaded/protobuf/d$a;)I
@@ -871,7 +869,7 @@
 
     move-result-wide v1
 
-    invoke-virtual {p2, v1, v2}, Lcom/google/crypto/tink/shaded/protobuf/v;->c(J)V
+    invoke-virtual {p2, v1, v2}, Lcom/google/crypto/tink/shaded/protobuf/u;->c(J)V
 
     goto :goto_0
 
@@ -895,12 +893,12 @@
     goto :goto_1
 .end method
 
-.method public static n([BILcom/google/crypto/tink/shaded/protobuf/q$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static n([BILcom/google/crypto/tink/shaded/protobuf/p$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BI",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+            "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
             "*>;",
             "Lcom/google/crypto/tink/shaded/protobuf/d$a;",
             ")I"
@@ -914,7 +912,7 @@
     .end annotation
 
     .line 1
-    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/p;
+    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/o;
 
     .line 2
     invoke-static {p0, p1, p3}, Lcom/google/crypto/tink/shaded/protobuf/d;->t([BILcom/google/crypto/tink/shaded/protobuf/d$a;)I
@@ -937,7 +935,7 @@
     .line 5
     iget v1, p3, Lcom/google/crypto/tink/shaded/protobuf/d$a;->a:I
 
-    invoke-virtual {p2, v1}, Lcom/google/crypto/tink/shaded/protobuf/p;->c(I)V
+    invoke-virtual {p2, v1}, Lcom/google/crypto/tink/shaded/protobuf/o;->c(I)V
 
     goto :goto_0
 
@@ -961,12 +959,12 @@
     goto :goto_1
 .end method
 
-.method public static o([BILcom/google/crypto/tink/shaded/protobuf/q$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static o([BILcom/google/crypto/tink/shaded/protobuf/p$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BI",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+            "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
             "*>;",
             "Lcom/google/crypto/tink/shaded/protobuf/d$a;",
             ")I"
@@ -980,7 +978,7 @@
     .end annotation
 
     .line 1
-    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/v;
+    check-cast p2, Lcom/google/crypto/tink/shaded/protobuf/u;
 
     .line 2
     invoke-static {p0, p1, p3}, Lcom/google/crypto/tink/shaded/protobuf/d;->t([BILcom/google/crypto/tink/shaded/protobuf/d$a;)I
@@ -1003,7 +1001,7 @@
     .line 5
     iget-wide v1, p3, Lcom/google/crypto/tink/shaded/protobuf/d$a;->b:J
 
-    invoke-virtual {p2, v1, v2}, Lcom/google/crypto/tink/shaded/protobuf/v;->c(J)V
+    invoke-virtual {p2, v1, v2}, Lcom/google/crypto/tink/shaded/protobuf/u;->c(J)V
 
     goto :goto_0
 
@@ -1058,7 +1056,7 @@
     :cond_0
     new-instance v1, Ljava/lang/String;
 
-    sget-object v2, Lcom/google/crypto/tink/shaded/protobuf/q;->a:Ljava/nio/charset/Charset;
+    sget-object v2, Lcom/google/crypto/tink/shaded/protobuf/p;->a:Ljava/nio/charset/Charset;
 
     invoke-direct {v1, p0, p1, v0, v2}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
 
@@ -1106,9 +1104,9 @@
 
     .line 4
     :cond_0
-    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/n0;->a:Lcom/google/crypto/tink/shaded/protobuf/n0$b;
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/j0;->a:Lcom/google/crypto/tink/shaded/protobuf/j0$b;
 
-    invoke-virtual {v1, p0, p1, v0}, Lcom/google/crypto/tink/shaded/protobuf/n0$b;->a([BII)Ljava/lang/String;
+    invoke-virtual {v1, p0, p1, v0}, Lcom/google/crypto/tink/shaded/protobuf/j0$b;->a([BII)Ljava/lang/String;
 
     move-result-object p0
 
@@ -1128,7 +1126,7 @@
     throw p0
 .end method
 
-.method public static r(I[BIILcom/google/crypto/tink/shaded/protobuf/m0;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static r(I[BIILcom/google/crypto/tink/shaded/protobuf/i0;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1169,7 +1167,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p4, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/m0;->c(ILjava/lang/Object;)V
+    invoke-virtual {p4, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/i0;->b(ILjava/lang/Object;)V
 
     add-int/lit8 p2, p2, 0x4
 
@@ -1185,9 +1183,9 @@
 
     .line 3
     :cond_1
-    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/m0;->b()Lcom/google/crypto/tink/shaded/protobuf/m0;
+    new-instance v6, Lcom/google/crypto/tink/shaded/protobuf/i0;
 
-    move-result-object v6
+    invoke-direct {v6}, Lcom/google/crypto/tink/shaded/protobuf/i0;-><init>()V
 
     and-int/lit8 v0, p0, -0x8
 
@@ -1226,7 +1224,7 @@
     move-object v5, p5
 
     .line 6
-    invoke-static/range {v0 .. v5}, Lcom/google/crypto/tink/shaded/protobuf/d;->r(I[BIILcom/google/crypto/tink/shaded/protobuf/m0;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+    invoke-static/range {v0 .. v5}, Lcom/google/crypto/tink/shaded/protobuf/d;->r(I[BIILcom/google/crypto/tink/shaded/protobuf/i0;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
 
     move-result v0
 
@@ -1245,7 +1243,7 @@
     if-ne v0, v7, :cond_4
 
     .line 7
-    invoke-virtual {p4, p0, v6}, Lcom/google/crypto/tink/shaded/protobuf/m0;->c(ILjava/lang/Object;)V
+    invoke-virtual {p4, p0, v6}, Lcom/google/crypto/tink/shaded/protobuf/i0;->b(ILjava/lang/Object;)V
 
     return p2
 
@@ -1278,19 +1276,19 @@
     if-nez p3, :cond_6
 
     .line 12
-    sget-object p1, Lm5/c;->h:Lm5/c;
+    sget-object p1, Lo5/d;->g:Lo5/d$f;
 
-    invoke-virtual {p4, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/m0;->c(ILjava/lang/Object;)V
+    invoke-virtual {p4, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/i0;->b(ILjava/lang/Object;)V
 
     goto :goto_2
 
     .line 13
     :cond_6
-    invoke-static {p1, p2, p3}, Lm5/c;->e([BII)Lm5/c;
+    invoke-static {p1, p2, p3}, Lo5/d;->f([BII)Lo5/d;
 
     move-result-object p1
 
-    invoke-virtual {p4, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/m0;->c(ILjava/lang/Object;)V
+    invoke-virtual {p4, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/i0;->b(ILjava/lang/Object;)V
 
     :goto_2
     add-int/2addr p2, p3
@@ -1323,7 +1321,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p4, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/m0;->c(ILjava/lang/Object;)V
+    invoke-virtual {p4, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/i0;->b(ILjava/lang/Object;)V
 
     add-int/lit8 p2, p2, 0x8
 
@@ -1342,7 +1340,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p4, p0, p2}, Lcom/google/crypto/tink/shaded/protobuf/m0;->c(ILjava/lang/Object;)V
+    invoke-virtual {p4, p0, p2}, Lcom/google/crypto/tink/shaded/protobuf/i0;->b(ILjava/lang/Object;)V
 
     return p1
 
@@ -1501,12 +1499,12 @@
     return p0
 .end method
 
-.method public static u(I[BIILcom/google/crypto/tink/shaded/protobuf/q$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
+.method public static u(I[BIILcom/google/crypto/tink/shaded/protobuf/p$c;Lcom/google/crypto/tink/shaded/protobuf/d$a;)I
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I[BII",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+            "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
             "*>;",
             "Lcom/google/crypto/tink/shaded/protobuf/d$a;",
             ")I"
@@ -1514,7 +1512,7 @@
     .end annotation
 
     .line 1
-    check-cast p4, Lcom/google/crypto/tink/shaded/protobuf/p;
+    check-cast p4, Lcom/google/crypto/tink/shaded/protobuf/o;
 
     .line 2
     invoke-static {p1, p2, p5}, Lcom/google/crypto/tink/shaded/protobuf/d;->t([BILcom/google/crypto/tink/shaded/protobuf/d$a;)I
@@ -1524,7 +1522,7 @@
     .line 3
     iget v0, p5, Lcom/google/crypto/tink/shaded/protobuf/d$a;->a:I
 
-    invoke-virtual {p4, v0}, Lcom/google/crypto/tink/shaded/protobuf/p;->c(I)V
+    invoke-virtual {p4, v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->c(I)V
 
     :goto_0
     if-ge p2, p3, :cond_1
@@ -1550,7 +1548,7 @@
     .line 7
     iget v0, p5, Lcom/google/crypto/tink/shaded/protobuf/d$a;->a:I
 
-    invoke-virtual {p4, v0}, Lcom/google/crypto/tink/shaded/protobuf/p;->c(I)V
+    invoke-virtual {p4, v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->c(I)V
 
     goto :goto_0
 

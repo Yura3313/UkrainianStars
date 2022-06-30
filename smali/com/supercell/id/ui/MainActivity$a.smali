@@ -15,10 +15,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lle/g;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,15 +26,17 @@
 
 # virtual methods
 .method public final a()Lcom/supercell/id/ui/MainActivity;
-    .locals 2
+    .locals 3
 
     .line 1
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -45,15 +46,12 @@
 
     invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
 
-    move-result v1
+    move-result v2
 
-    if-nez v1, :cond_0
+    if-nez v2, :cond_0
 
-    goto :goto_0
+    move-object v1, v0
 
     :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return-object v0
+    return-object v1
 .end method

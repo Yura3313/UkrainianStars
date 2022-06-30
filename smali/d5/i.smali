@@ -1,321 +1,199 @@
-.class public abstract Ld5/i;
+.class public final Ld5/i;
 .super Ljava/lang/Object;
-.source "KeyTypeManager.java"
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Ld5/i$a;,
-        Ld5/i$b;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<KeyProtoT::",
-        "Lcom/google/crypto/tink/shaded/protobuf/a0;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+# interfaces
+.implements Ld5/k;
 
 
 # instance fields
-.field public final a:Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/Class<",
-            "TKeyProtoT;>;"
-        }
-    .end annotation
-.end field
+.field public final synthetic a:Ljava/util/Set;
 
-.field public final b:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Ld5/i$b<",
-            "*TKeyProtoT;>;>;"
-        }
-    .end annotation
-.end field
+.field public final synthetic b:Ld5/q;
 
-.field public final c:Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-.end field
+.field public final synthetic c:Ljava/util/zip/ZipFile;
 
 
 # direct methods
-.method public varargs constructor <init>(Ljava/lang/Class;[Ld5/i$b;)V
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "TKeyProtoT;>;[",
-            "Ld5/i$b<",
-            "*TKeyProtoT;>;)V"
-        }
-    .end annotation
+.method public constructor <init>(Ljava/util/Set;Ld5/q;Ljava/util/zip/ZipFile;)V
+    .locals 0
 
-    .annotation runtime Ljava/lang/SafeVarargs;
-    .end annotation
+    iput-object p1, p0, Ld5/i;->a:Ljava/util/Set;
 
-    .line 1
+    iput-object p2, p0, Ld5/i;->b:Ld5/q;
+
+    iput-object p3, p0, Ld5/i;->c:Ljava/util/zip/ZipFile;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Ld5/i;->a:Ljava/lang/Class;
-
-    .line 3
-    new-instance p1, Ljava/util/HashMap;
-
-    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
-
-    .line 4
-    array-length v0, p2
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v0, :cond_1
-
-    aget-object v3, p2, v2
-
-    .line 5
-    iget-object v4, v3, Ld5/i$b;->a:Ljava/lang/Class;
-
-    .line 6
-    invoke-interface {p1, v4}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_0
-
-    .line 7
-    iget-object v4, v3, Ld5/i$b;->a:Ljava/lang/Class;
-
-    .line 8
-    invoke-interface {p1, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    .line 9
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string p2, "KeyTypeManager constructed with duplicate factories for primitive "
-
-    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    .line 10
-    iget-object v0, v3, Ld5/i$b;->a:Ljava/lang/Class;
-
-    .line 11
-    invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 12
-    :cond_1
-    array-length v0, p2
-
-    if-lez v0, :cond_2
-
-    .line 13
-    aget-object p2, p2, v1
-
-    .line 14
-    iget-object p2, p2, Ld5/i$b;->a:Ljava/lang/Class;
-
-    .line 15
-    iput-object p2, p0, Ld5/i;->c:Ljava/lang/Class;
-
-    goto :goto_1
-
-    .line 16
-    :cond_2
-    const-class p2, Ljava/lang/Void;
-
-    iput-object p2, p0, Ld5/i;->c:Ljava/lang/Class;
-
-    .line 17
-    :goto_1
-    invoke-static {p1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
-
-    move-result-object p1
-
-    iput-object p1, p0, Ld5/i;->b:Ljava/util/Map;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a()Ljava/lang/String;
-.end method
-
-.method public final b(Lcom/google/crypto/tink/shaded/protobuf/a0;Ljava/lang/Class;)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<P:",
-            "Ljava/lang/Object;",
-            ">(TKeyProtoT;",
-            "Ljava/lang/Class<",
-            "TP;>;)TP;"
-        }
-    .end annotation
-
+.method public final a(Ld5/l;Ljava/io/File;Z)V
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/security/GeneralSecurityException;
+            Ljava/io/IOException;
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Ld5/i;->b:Ljava/util/Map;
+    iget-object v0, p0, Ld5/i;->a:Ljava/util/Set;
 
-    .line 2
-    invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p2}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+
+    if-nez p3, :cond_2
+
+    const/4 p3, 0x5
+
+    new-array p3, p3, [Ljava/lang/Object;
+
+    iget-object v0, p0, Ld5/i;->b:Ld5/q;
+
+    invoke-virtual {v0}, Ld5/q;->b()Ljava/lang/String;
 
     move-result-object v0
 
-    check-cast v0, Ld5/i$b;
+    const/4 v1, 0x0
 
-    if-eqz v0, :cond_0
+    aput-object v0, p3, v1
 
-    .line 3
-    invoke-virtual {v0, p1}, Ld5/i$b;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v0, 0x1
+
+    iget-object v2, p1, Ld5/l;->a:Ljava/lang/String;
+
+    aput-object v2, p3, v0
+
+    const/4 v0, 0x2
+
+    iget-object v2, p0, Ld5/i;->b:Ld5/q;
+
+    invoke-virtual {v2}, Ld5/q;->a()Ljava/io/File;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, p3, v0
+
+    const/4 v0, 0x3
+
+    iget-object v2, p1, Ld5/l;->b:Ljava/util/zip/ZipEntry;
+
+    invoke-virtual {v2}, Ljava/util/zip/ZipEntry;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, p3, v0
+
+    const/4 v0, 0x4
+
+    invoke-virtual {p2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, p3, v0
+
+    const-string v0, "NativeLibraryExtractor: split \'%s\' has native library \'%s\' that does not exist; extracting from \'%s!%s\' to \'%s\'"
+
+    invoke-static {v0, p3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    iget-object p3, p0, Ld5/i;->c:Ljava/util/zip/ZipFile;
+
+    iget-object p1, p1, Ld5/l;->b:Ljava/util/zip/ZipEntry;
+
+    sget-object v0, Ld5/m;->b:Ljava/util/regex/Pattern;
+
+    const/16 v0, 0x1000
+
+    new-array v0, v0, [B
+
+    invoke-virtual {p3, p1}, Ljava/util/zip/ZipFile;->getInputStream(Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;
 
     move-result-object p1
 
-    return-object p1
+    :try_start_0
+    new-instance p3, Ljava/io/FileOutputStream;
 
-    .line 4
+    invoke-direct {p3, p2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {p3, p2}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object p2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
+
+    :goto_0
+    :try_start_1
+    invoke-virtual {p1, v0}, Ljava/io/InputStream;->read([B)I
+
+    move-result p3
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    if-gtz p3, :cond_0
+
+    :try_start_2
+    invoke-virtual {p2}, Ljava/io/FileOutputStream;->close()V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+
+    invoke-virtual {p1}, Ljava/io/InputStream;->close()V
+
+    return-void
+
     :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    :try_start_3
+    invoke-virtual {p2, v0, v1, p3}, Ljava/io/FileOutputStream;->write([BII)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    const-string v0, "Requested primitive class "
+    goto :goto_0
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :catchall_0
+    move-exception p3
 
-    move-result-object v0
+    :try_start_4
+    invoke-virtual {p2}, Ljava/io/FileOutputStream;->close()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 5
-    invoke-virtual {p2}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
+    goto :goto_1
 
-    move-result-object p2
+    :catchall_1
+    move-exception p2
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :try_start_5
+    invoke-static {p3, p2}, La5/q0;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
-    const-string p2, " not supported."
+    :goto_1
+    throw p3
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_2
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :catchall_2
+    move-exception p2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    if-eqz p1, :cond_1
 
-    move-result-object p2
+    :try_start_6
+    invoke-virtual {p1}, Ljava/io/InputStream;->close()V
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_3
 
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    goto :goto_2
 
-    throw p1
-.end method
+    :catchall_3
+    move-exception p1
 
-.method public c()Ld5/i$a;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ld5/i$a<",
-            "*TKeyProtoT;>;"
-        }
-    .end annotation
+    invoke-static {p2, p1}, La5/q0;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
-    .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    :cond_1
+    :goto_2
+    throw p2
 
-    const-string v1, "Creating keys is not supported."
-
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public abstract d()Ll5/v0$c;
-.end method
-
-.method public abstract e(Lm5/c;)Lcom/google/crypto/tink/shaded/protobuf/a0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lm5/c;",
-            ")TKeyProtoT;"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
-        }
-    .end annotation
-.end method
-
-.method public final f()Ljava/util/Set;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Set<",
-            "Ljava/lang/Class<",
-            "*>;>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Ld5/i;->b:Ljava/util/Map;
-
-    invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public abstract g(Lcom/google/crypto/tink/shaded/protobuf/a0;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TKeyProtoT;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+    :cond_2
+    return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Ll/b;
+.class public final Ll/b;
 .super Ljava/lang/Object;
 .source "CardViewApi21Impl.java"
 
@@ -10,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -18,7 +17,7 @@
 
 
 # virtual methods
-.method public a(Ll/d;)V
+.method public final a(Ll/d;)V
     .locals 5
 
     .line 1
@@ -44,22 +43,16 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p0, p1}, Ll/b;->p(Ll/d;)Ll/f;
+    invoke-virtual {p0, p1}, Ll/b;->b(Ll/d;)F
 
-    move-result-object v1
+    move-result v1
 
     .line 5
-    iget v1, v1, Ll/f;->e:F
+    invoke-virtual {p0, p1}, Ll/b;->g(Ll/d;)F
+
+    move-result p1
 
     .line 6
-    invoke-virtual {p0, p1}, Ll/b;->p(Ll/d;)Ll/f;
-
-    move-result-object p1
-
-    .line 7
-    iget p1, p1, Ll/f;->a:F
-
-    .line 8
     invoke-virtual {v0}, Landroidx/cardview/widget/CardView$a;->a()Z
 
     move-result v2
@@ -70,14 +63,14 @@
 
     float-to-double v2, v2
 
-    .line 9
+    .line 7
     invoke-static {v2, v3}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v2
 
     double-to-int v2, v2
 
-    .line 10
+    .line 8
     invoke-virtual {v0}, Landroidx/cardview/widget/CardView$a;->a()Z
 
     move-result v3
@@ -88,20 +81,20 @@
 
     float-to-double v3, p1
 
-    .line 11
+    .line 9
     invoke-static {v3, v4}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v3
 
     double-to-int p1, v3
 
-    .line 12
+    .line 10
     invoke-virtual {v0, v2, p1, v2, p1}, Landroidx/cardview/widget/CardView$a;->b(IIII)V
 
     return-void
 .end method
 
-.method public b(Ll/d;)F
+.method public final b(Ll/d;)F
     .locals 0
 
     .line 1
@@ -115,7 +108,7 @@
     return p1
 .end method
 
-.method public c(Ll/d;)Landroid/content/res/ColorStateList;
+.method public final c(Ll/d;)Landroid/content/res/ColorStateList;
     .locals 0
 
     .line 1
@@ -129,7 +122,7 @@
     return-object p1
 .end method
 
-.method public d(Ll/d;F)V
+.method public final d(Ll/d;F)V
     .locals 0
 
     .line 1
@@ -144,7 +137,7 @@
     return-void
 .end method
 
-.method public e(Ll/d;F)V
+.method public final e(Ll/d;F)V
     .locals 4
 
     .line 1
@@ -211,24 +204,19 @@
     return-void
 .end method
 
-.method public f(Ll/d;)V
+.method public final f(Ll/d;)V
     .locals 1
 
-    .line 1
-    invoke-virtual {p0, p1}, Ll/b;->p(Ll/d;)Ll/f;
+    invoke-virtual {p0, p1}, Ll/b;->b(Ll/d;)F
 
-    move-result-object v0
+    move-result v0
 
-    .line 2
-    iget v0, v0, Ll/f;->e:F
-
-    .line 3
     invoke-virtual {p0, p1, v0}, Ll/b;->e(Ll/d;F)V
 
     return-void
 .end method
 
-.method public g(Ll/d;)F
+.method public final g(Ll/d;)F
     .locals 0
 
     .line 1
@@ -242,7 +230,7 @@
     return p1
 .end method
 
-.method public h(Ll/d;Landroid/content/res/ColorStateList;)V
+.method public final h(Ll/d;Landroid/content/res/ColorStateList;)V
     .locals 0
 
     .line 1
@@ -259,7 +247,7 @@
     return-void
 .end method
 
-.method public i(Ll/d;)F
+.method public final i(Ll/d;)F
     .locals 0
 
     .line 1
@@ -276,7 +264,7 @@
     return p1
 .end method
 
-.method public j(Ll/d;Landroid/content/Context;Landroid/content/res/ColorStateList;FFF)V
+.method public final j(Ll/d;Landroid/content/Context;Landroid/content/res/ColorStateList;FFF)V
     .locals 0
 
     .line 1
@@ -295,7 +283,7 @@
     .line 4
     iget-object p4, p3, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
-    invoke-virtual {p4, p2}, Landroid/widget/FrameLayout;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p4, p2}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 5
     iget-object p2, p3, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
@@ -314,7 +302,7 @@
     return-void
 .end method
 
-.method public k(Ll/d;F)V
+.method public final k(Ll/d;F)V
     .locals 1
 
     .line 1
@@ -347,39 +335,30 @@
     return-void
 .end method
 
-.method public l(Ll/d;)V
+.method public final l(Ll/d;)V
     .locals 1
 
-    .line 1
-    invoke-virtual {p0, p1}, Ll/b;->p(Ll/d;)Ll/f;
+    invoke-virtual {p0, p1}, Ll/b;->b(Ll/d;)F
 
-    move-result-object v0
+    move-result v0
 
-    .line 2
-    iget v0, v0, Ll/f;->e:F
-
-    .line 3
     invoke-virtual {p0, p1, v0}, Ll/b;->e(Ll/d;F)V
 
     return-void
 .end method
 
-.method public m()V
+.method public final m()V
     .locals 0
 
     return-void
 .end method
 
-.method public n(Ll/d;)F
+.method public final n(Ll/d;)F
     .locals 1
 
-    .line 1
-    invoke-virtual {p0, p1}, Ll/b;->p(Ll/d;)Ll/f;
+    invoke-virtual {p0, p1}, Ll/b;->g(Ll/d;)F
 
-    move-result-object p1
-
-    .line 2
-    iget p1, p1, Ll/f;->a:F
+    move-result p1
 
     const/high16 v0, 0x40000000    # 2.0f
 
@@ -388,16 +367,12 @@
     return p1
 .end method
 
-.method public o(Ll/d;)F
+.method public final o(Ll/d;)F
     .locals 1
 
-    .line 1
-    invoke-virtual {p0, p1}, Ll/b;->p(Ll/d;)Ll/f;
+    invoke-virtual {p0, p1}, Ll/b;->g(Ll/d;)F
 
-    move-result-object p1
-
-    .line 2
-    iget p1, p1, Ll/f;->a:F
+    move-result p1
 
     const/high16 v0, 0x40000000    # 2.0f
 

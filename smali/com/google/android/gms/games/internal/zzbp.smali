@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.games.internal.IGamesClient"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/games/zza;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,8 +19,8 @@
 
 
 # virtual methods
-.method public final F0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 0
+.method public final J0(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -30,12 +29,12 @@
 
     const/4 p2, 0x0
 
-    const/16 p4, 0x3e9
+    const/16 v0, 0x3e9
 
-    if-ne p1, p4, :cond_1
+    if-ne p1, v0, :cond_1
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/zzbm;->K1()Lcom/google/android/gms/games/internal/zzbq;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/zzbm;->N1()Lcom/google/android/gms/games/internal/zzbq;
 
     move-result-object p1
 
@@ -43,9 +42,9 @@
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
     .line 3
-    sget p4, Ls3/h;->a:I
+    sget v0, Lt3/f;->a:I
 
-    const/4 p4, 0x1
+    const/4 v0, 0x1
 
     if-nez p1, :cond_0
 
@@ -56,13 +55,13 @@
 
     .line 5
     :cond_0
-    invoke-virtual {p3, p4}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p3, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 6
-    invoke-virtual {p1, p3, p4}, Lcom/google/android/gms/games/internal/zzbq;->writeToParcel(Landroid/os/Parcel;I)V
+    invoke-virtual {p1, p3, v0}, Lcom/google/android/gms/games/internal/zzbq;->writeToParcel(Landroid/os/Parcel;I)V
 
     :goto_0
-    return p4
+    return v0
 
     :cond_1
     return p2

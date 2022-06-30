@@ -77,7 +77,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -86,7 +85,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/kakaogame/infodesk/InfodeskHelper$AgreementType;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/kakaogame/infodesk/InfodeskHelper$AgreementType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -101,7 +99,6 @@
 .method public static values()[Lcom/kakaogame/infodesk/InfodeskHelper$AgreementType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/infodesk/InfodeskHelper$AgreementType;->$VALUES:[Lcom/kakaogame/infodesk/InfodeskHelper$AgreementType;
 
     invoke-virtual {v0}, [Lcom/kakaogame/infodesk/InfodeskHelper$AgreementType;->clone()Ljava/lang/Object;

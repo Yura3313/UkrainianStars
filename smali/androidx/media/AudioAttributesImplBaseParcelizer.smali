@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -79,44 +78,28 @@
 
     const/4 v1, 0x1
 
+    invoke-virtual {p1, v0, v1}, Landroidx/versionedparcelable/VersionedParcel;->u(II)V
+
     .line 3
-    invoke-virtual {p1, v1}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
-
-    .line 4
-    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->t(I)V
-
-    .line 5
     iget v0, p0, Lp0/c;->b:I
 
     const/4 v1, 0x2
 
-    .line 6
-    invoke-virtual {p1, v1}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
+    invoke-virtual {p1, v0, v1}, Landroidx/versionedparcelable/VersionedParcel;->u(II)V
 
-    .line 7
-    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->t(I)V
-
-    .line 8
+    .line 4
     iget v0, p0, Lp0/c;->c:I
 
     const/4 v1, 0x3
 
-    .line 9
-    invoke-virtual {p1, v1}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
+    invoke-virtual {p1, v0, v1}, Landroidx/versionedparcelable/VersionedParcel;->u(II)V
 
-    .line 10
-    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->t(I)V
-
-    .line 11
+    .line 5
     iget p0, p0, Lp0/c;->d:I
 
     const/4 v0, 0x4
 
-    .line 12
-    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
-
-    .line 13
-    invoke-virtual {p1, p0}, Landroidx/versionedparcelable/VersionedParcel;->t(I)V
+    invoke-virtual {p1, p0, v0}, Landroidx/versionedparcelable/VersionedParcel;->u(II)V
 
     return-void
 .end method

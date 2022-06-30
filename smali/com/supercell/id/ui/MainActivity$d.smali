@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/MainActivity$d;
-.super Lle/j;
+.super Lse/h;
 .source "MainActivity.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/p;
 
 
 # annotations
@@ -18,18 +18,18 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
+        "Lse/h;",
+        "Lre/p<",
         "Lcom/supercell/id/ui/MainActivity;",
         "Ljava/lang/Exception;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/MainActivity$d;
+.field public static final f:Lcom/supercell/id/ui/MainActivity$d;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/MainActivity$d;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/MainActivity$d;->g:Lcom/supercell/id/ui/MainActivity$d;
+    sput-object v0, Lcom/supercell/id/ui/MainActivity$d;->f:Lcom/supercell/id/ui/MainActivity$d;
 
     return-void
 .end method
@@ -50,14 +50,14 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
@@ -65,34 +65,22 @@
 
     check-cast p2, Ljava/lang/Exception;
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
-
-    if-eqz p2, :cond_0
+    const-string v0, "$receiver"
 
     .line 2
-    sget-object v0, Lcom/supercell/id/ui/a;->g:Lcom/supercell/id/ui/a;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
+    const-string v0, "it"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object v0, Lcom/supercell/id/ui/a;->f:Lcom/supercell/id/ui/a;
 
-    return-object p1
-
-    :cond_0
-    const-string p1, "it"
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
 
     .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    throw v0
-
-    :cond_1
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return-object p1
 .end method

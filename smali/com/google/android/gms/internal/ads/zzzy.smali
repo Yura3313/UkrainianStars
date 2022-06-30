@@ -16,43 +16,30 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lj3/i61;
+    new-instance v0, Lk3/z51;
 
-    invoke-direct {v0}, Lj3/i61;-><init>()V
+    invoke-direct {v0}, Lk3/z51;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzzy;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    const/4 v0, 0x0
-
     .line 2
-    throw v0
-.end method
-
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
-
-    .line 3
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
-
-    .line 4
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzy;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzy;->f:Ljava/lang/String;
 
     return-void
 .end method
@@ -65,21 +52,21 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/16 v0, 0xf
-
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzzy;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzzy;->f:Ljava/lang/String;
+
+    const/16 v1, 0xf
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 3
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

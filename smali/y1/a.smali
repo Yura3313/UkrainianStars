@@ -1,23 +1,10 @@
-.class public Ly1/a;
+.class public final Ly1/a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
-
-# interfaces
-.implements Landroid/content/ServiceConnection;
+.source "com.google.android.gms:play-services-base@@17.5.0"
 
 
 # instance fields
-.field public a:Z
-
-.field public final b:Ljava/util/concurrent/BlockingQueue;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/BlockingQueue<",
-            "Landroid/os/IBinder;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public a:I
 
 
 # direct methods
@@ -27,113 +14,68 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Ly1/a;->a:Z
-
-    .line 3
-    new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
-
-    invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
-
-    iput-object v0, p0, Ly1/a;->b:Ljava/util/concurrent/BlockingQueue;
+    iput v0, p0, Ly1/a;->a:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(JLjava/util/concurrent/TimeUnit;)Landroid/os/IBinder;
-    .locals 1
-    .param p3    # Ljava/util/concurrent/TimeUnit;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
+.method public final a(Ljava/lang/Object;)Ly1/a;
+    .locals 2
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/InterruptedException;,
-            Ljava/util/concurrent/TimeoutException;
-        }
+    iget v0, p0, Ly1/a;->a:I
+
+    const/16 v1, 0x1f
+
+    mul-int v1, v1, v0
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
+
+    move-result p1
+
+    :goto_0
+    add-int/2addr v1, p1
+
+    iput v1, p0, Ly1/a;->a:I
+
+    return-object p0
+.end method
+
+.method public final b()I
+    .locals 1
+
+    iget v0, p0, Ly1/a;->a:I
+
+    return v0
+.end method
+
+.method public final c(Z)Ly1/a;
+    .locals 2
+    .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 
-    const-string v0, "BlockingServiceConnection.getServiceWithTimeout() called on main thread"
+    iget v0, p0, Ly1/a;->a:I
 
-    .line 1
-    invoke-static {v0}, Lc2/h;->g(Ljava/lang/String;)V
+    const/16 v1, 0x1f
 
-    .line 2
-    iget-boolean v0, p0, Ly1/a;->a:Z
+    mul-int v1, v1, v0
 
-    if-nez v0, :cond_1
+    add-int/2addr v1, p1
 
-    const/4 v0, 0x1
+    iput v1, p0, Ly1/a;->a:I
 
-    .line 3
-    iput-boolean v0, p0, Ly1/a;->a:Z
-
-    .line 4
-    iget-object v0, p0, Ly1/a;->b:Ljava/util/concurrent/BlockingQueue;
-
-    invoke-interface {v0, p1, p2, p3}, Ljava/util/concurrent/BlockingQueue;->poll(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/os/IBinder;
-
-    if-eqz p1, :cond_0
-
-    return-object p1
-
-    .line 5
-    :cond_0
-    new-instance p1, Ljava/util/concurrent/TimeoutException;
-
-    const-string p2, "Timed out waiting for the service connection"
-
-    invoke-direct {p1, p2}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 6
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string p2, "Cannot call get on this connection more than once"
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
-    .locals 0
-    .param p1    # Landroid/content/ComponentName;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .param p2    # Landroid/os/IBinder;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-
-    .line 1
-    iget-object p1, p0, Ly1/a;->b:Ljava/util/concurrent/BlockingQueue;
-
-    invoke-interface {p1, p2}, Ljava/util/concurrent/BlockingQueue;->add(Ljava/lang/Object;)Z
-
-    return-void
-.end method
-
-.method public onServiceDisconnected(Landroid/content/ComponentName;)V
-    .locals 0
-    .param p1    # Landroid/content/ComponentName;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-
-    return-void
+    return-object p0
 .end method

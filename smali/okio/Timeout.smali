@@ -19,7 +19,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lokio/Timeout$1;
 
     invoke-direct {v0}, Lokio/Timeout$1;-><init>()V
@@ -32,7 +31,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +43,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lokio/Timeout;->hasDeadline:Z
 
     return-object p0
@@ -56,7 +53,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 1
     iput-wide v0, p0, Lokio/Timeout;->timeoutNanos:J
 
     return-object p0
@@ -106,10 +102,12 @@
 
     const-string v0, "duration <= 0: "
 
+    .line 4
     invoke-static {v0, p1, p2}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 5
     invoke-direct {p3, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p3
@@ -156,7 +154,6 @@
 .method public hasDeadline()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokio/Timeout;->hasDeadline:Z
 
     return v0
@@ -266,10 +263,12 @@
 
     const-string v0, "timeout < 0: "
 
+    .line 4
     invoke-static {v0, p1, p2}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 5
     invoke-direct {p3, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p3
@@ -278,7 +277,6 @@
 .method public timeoutNanos()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lokio/Timeout;->timeoutNanos:J
 
     return-wide v0

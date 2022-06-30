@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public static synthetic scrapImage$default(Lcom/kakao/sdk/link/LinkApi;Ljava/lang/String;Ljava/lang/Boolean;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic scrapImage$default(Lcom/kakao/sdk/link/LinkApi;Ljava/lang/String;Ljava/lang/Boolean;ILjava/lang/Object;)Lef/b;
     .locals 0
 
     if-nez p4, :cond_1
@@ -28,7 +28,7 @@
     sget-object p2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     :cond_0
-    invoke-interface {p0, p1, p2}, Lcom/kakao/sdk/link/LinkApi;->scrapImage(Ljava/lang/String;Ljava/lang/Boolean;)Lxe/b;
+    invoke-interface {p0, p1, p2}, Lcom/kakao/sdk/link/LinkApi;->scrapImage(Ljava/lang/String;Ljava/lang/Boolean;)Lef/b;
 
     move-result-object p0
 
@@ -45,7 +45,7 @@
     throw p0
 .end method
 
-.method public static synthetic uploadImage$default(Lcom/kakao/sdk/link/LinkApi;Lokhttp3/MultipartBody$Part;Ljava/lang/Boolean;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic uploadImage$default(Lcom/kakao/sdk/link/LinkApi;Lokhttp3/MultipartBody$Part;Ljava/lang/Boolean;ILjava/lang/Object;)Lef/b;
     .locals 0
 
     if-nez p4, :cond_1
@@ -58,7 +58,7 @@
     sget-object p2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     :cond_0
-    invoke-interface {p0, p1, p2}, Lcom/kakao/sdk/link/LinkApi;->uploadImage(Lokhttp3/MultipartBody$Part;Ljava/lang/Boolean;)Lxe/b;
+    invoke-interface {p0, p1, p2}, Lcom/kakao/sdk/link/LinkApi;->uploadImage(Lokhttp3/MultipartBody$Part;Ljava/lang/Boolean;)Lef/b;
 
     move-result-object p0
 
@@ -75,7 +75,7 @@
     throw p0
 .end method
 
-.method public static synthetic validateCustom$default(Lcom/kakao/sdk/link/LinkApi;JLjava/util/Map;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic validateCustom$default(Lcom/kakao/sdk/link/LinkApi;JLjava/util/Map;ILjava/lang/Object;)Lef/b;
     .locals 0
 
     if-nez p5, :cond_1
@@ -88,7 +88,7 @@
 
     .line 1
     :cond_0
-    invoke-interface {p0, p1, p2, p3}, Lcom/kakao/sdk/link/LinkApi;->validateCustom(JLjava/util/Map;)Lxe/b;
+    invoke-interface {p0, p1, p2, p3}, Lcom/kakao/sdk/link/LinkApi;->validateCustom(JLjava/util/Map;)Lef/b;
 
     move-result-object p0
 
@@ -105,7 +105,7 @@
     throw p0
 .end method
 
-.method public static synthetic validateScrap$default(Lcom/kakao/sdk/link/LinkApi;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic validateScrap$default(Lcom/kakao/sdk/link/LinkApi;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;ILjava/lang/Object;)Lef/b;
     .locals 1
 
     if-nez p5, :cond_2
@@ -127,7 +127,7 @@
 
     .line 1
     :cond_1
-    invoke-interface {p0, p1, p2, p3}, Lcom/kakao/sdk/link/LinkApi;->validateScrap(Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;)Lxe/b;
+    invoke-interface {p0, p1, p2, p3}, Lcom/kakao/sdk/link/LinkApi;->validateScrap(Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;)Lef/b;
 
     move-result-object p0
 

@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,7 @@
 
 
 # virtual methods
-.method public synthetic obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
+.method public final synthetic obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/android/core/internal/gestures/b;->a(Lio/sentry/android/core/internal/gestures/SentryWindowCallback$MotionEventObtainer;Landroid/view/MotionEvent;)Landroid/view/MotionEvent;

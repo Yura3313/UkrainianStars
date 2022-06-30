@@ -27,7 +27,6 @@
 .method public constructor <init>(ILcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/auth/view/LoginUIManager$1;->val$limitAge:I
 
     iput-object p2, p0, Lcom/kakaogame/auth/view/LoginUIManager$1;->val$callback:Lcom/kakaogame/KGResultCallback;
@@ -68,7 +67,6 @@
 .method public onUserCanceled()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/auth/view/LoginUIManager$1;->val$callback:Lcom/kakaogame/KGResultCallback;
 
     sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;

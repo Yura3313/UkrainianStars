@@ -46,13 +46,14 @@
 .method public constructor <init>(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "uuid"
 
-    if-eqz p3, :cond_1
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_0
+    const-string v0, "profileNickname"
 
-    .line 1
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lcom/kakao/sdk/talk/model/Friend;->id:J
@@ -66,21 +67,6 @@
     iput-boolean p6, p0, Lcom/kakao/sdk/talk/model/Friend;->favorite:Z
 
     return-void
-
-    :cond_0
-    const-string p1, "profileNickname"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "uuid"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/talk/model/Friend;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Lcom/kakao/sdk/talk/model/Friend;
@@ -185,11 +171,13 @@
 .method public final copy(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lcom/kakao/sdk/talk/model/Friend;
     .locals 8
 
-    const/4 v0, 0x0
+    const-string v0, "uuid"
 
-    if-eqz p3, :cond_1
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_0
+    const-string v0, "profileNickname"
+
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/talk/model/Friend;
 
@@ -208,21 +196,6 @@
     invoke-direct/range {v1 .. v7}, Lcom/kakao/sdk/talk/model/Friend;-><init>(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "profileNickname"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "uuid"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -270,7 +243,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/talk/model/Friend;->uuid:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -280,7 +253,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/talk/model/Friend;->profileNickname:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -290,7 +263,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/talk/model/Friend;->profileThumbnailImage:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -325,7 +298,6 @@
 .method public final getFavorite()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakao/sdk/talk/model/Friend;->favorite:Z
 
     return v0
@@ -334,7 +306,6 @@
 .method public final getId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakao/sdk/talk/model/Friend;->id:J
 
     return-wide v0
@@ -343,7 +314,6 @@
 .method public final getProfileNickname()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/model/Friend;->profileNickname:Ljava/lang/String;
 
     return-object v0
@@ -352,7 +322,6 @@
 .method public final getProfileThumbnailImage()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/model/Friend;->profileThumbnailImage:Ljava/lang/String;
 
     return-object v0
@@ -361,7 +330,6 @@
 .method public final getUuid()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/model/Friend;->uuid:Ljava/lang/String;
 
     return-object v0
@@ -450,10 +418,12 @@
 
     const-string v0, "Friend(id="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-wide v1, p0, Lcom/kakao/sdk/talk/model/Friend;->id:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
@@ -490,7 +460,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -500,7 +471,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-wide v0, p0, Lcom/kakao/sdk/talk/model/Friend;->id:J
 
@@ -523,14 +496,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
-
-    :cond_0
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

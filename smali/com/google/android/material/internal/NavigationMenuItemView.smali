@@ -7,29 +7,29 @@
 
 
 # static fields
-.field public static final L:[I
+.field public static final K:[I
 
 
 # instance fields
-.field public B:I
+.field public A:I
+
+.field public B:Z
 
 .field public C:Z
 
-.field public D:Z
+.field public final D:Landroid/widget/CheckedTextView;
 
-.field public final E:Landroid/widget/CheckedTextView;
+.field public E:Landroid/widget/FrameLayout;
 
-.field public F:Landroid/widget/FrameLayout;
+.field public F:Landroidx/appcompat/view/menu/g;
 
-.field public G:Landroidx/appcompat/view/menu/g;
+.field public G:Landroid/content/res/ColorStateList;
 
-.field public H:Landroid/content/res/ColorStateList;
+.field public H:Z
 
-.field public I:Z
+.field public I:Landroid/graphics/drawable/Drawable;
 
-.field public J:Landroid/graphics/drawable/Drawable;
-
-.field public final K:Lf0/a;
+.field public final J:Lcom/google/android/material/internal/NavigationMenuItemView$a;
 
 
 # direct methods
@@ -46,8 +46,7 @@
 
     aput v2, v0, v1
 
-    .line 1
-    sput-object v0, Lcom/google/android/material/internal/NavigationMenuItemView;->L:[I
+    sput-object v0, Lcom/google/android/material/internal/NavigationMenuItemView;->K:[I
 
     return-void
 .end method
@@ -74,7 +73,7 @@
 
     invoke-direct {p2, p0}, Lcom/google/android/material/internal/NavigationMenuItemView$a;-><init>(Lcom/google/android/material/internal/NavigationMenuItemView;)V
 
-    iput-object p2, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->K:Lf0/a;
+    iput-object p2, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->J:Lcom/google/android/material/internal/NavigationMenuItemView$a;
 
     const/4 p3, 0x0
 
@@ -108,19 +107,19 @@
     .line 7
     sget p1, Lcom/google/android/material/R$id;->design_menu_item_text:I
 
-    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroid/widget/CheckedTextView;
 
-    iput-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
+    iput-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
 
     .line 8
-    invoke-virtual {p1, v1}, Landroid/widget/CheckedTextView;->setDuplicateParentStateEnabled(Z)V
+    invoke-virtual {p1, v1}, Landroid/view/View;->setDuplicateParentStateEnabled(Z)V
 
     .line 9
-    invoke-static {p1, p2}, Lf0/r;->A(Landroid/view/View;Lf0/a;)V
+    invoke-static {p1, p2}, Lf0/r;->D(Landroid/view/View;Lf0/a;)V
 
     return-void
 .end method
@@ -131,7 +130,7 @@
     if-eqz p1, :cond_1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/FrameLayout;
 
     if-nez v0, :cond_0
 
@@ -139,7 +138,7 @@
     sget v0, Lcom/google/android/material/R$id;->design_menu_item_action_area_stub:I
 
     .line 3
-    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -151,18 +150,18 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    iput-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/FrameLayout;
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v0, p1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     :cond_1
     return-void
@@ -170,173 +169,173 @@
 
 
 # virtual methods
-.method public d(Landroidx/appcompat/view/menu/g;I)V
-    .locals 6
+.method public final d(Landroidx/appcompat/view/menu/g;)V
+    .locals 7
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->G:Landroidx/appcompat/view/menu/g;
+    iput-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroidx/appcompat/view/menu/g;
 
     .line 2
-    iget p2, p1, Landroidx/appcompat/view/menu/g;->a:I
+    iget v0, p1, Landroidx/appcompat/view/menu/g;->a:I
 
-    if-lez p2, :cond_0
+    if-lez v0, :cond_0
 
     .line 3
-    invoke-virtual {p0, p2}, Landroid/view/ViewGroup;->setId(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setId(I)V
 
     .line 4
     :cond_0
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/g;->isVisible()Z
 
-    move-result p2
+    move-result v0
 
-    const/16 v0, 0x8
+    const/16 v1, 0x8
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
-    if-eqz p2, :cond_1
+    if-eqz v0, :cond_1
 
-    const/4 p2, 0x0
+    const/4 v0, 0x0
 
     goto :goto_0
 
     :cond_1
-    const/16 p2, 0x8
+    const/16 v0, 0x8
 
     :goto_0
-    invoke-virtual {p0, p2}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 5
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getBackground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
-    move-result-object p2
+    move-result-object v0
 
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
-    if-nez p2, :cond_3
+    if-nez v0, :cond_3
 
     .line 6
-    new-instance p2, Landroid/util/TypedValue;
+    new-instance v0, Landroid/util/TypedValue;
 
-    invoke-direct {p2}, Landroid/util/TypedValue;-><init>()V
+    invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
     .line 7
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    move-result-object v3
+    move-result-object v4
 
     .line 8
-    invoke-virtual {v3}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+    invoke-virtual {v4}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
-    move-result-object v3
+    move-result-object v4
 
-    sget v4, Landroidx/appcompat/R$attr;->colorControlHighlight:I
+    sget v5, Landroidx/appcompat/R$attr;->colorControlHighlight:I
 
     .line 9
-    invoke-virtual {v3, v4, p2, v2}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
+    invoke-virtual {v4, v5, v0, v3}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_2
+    if-eqz v4, :cond_2
 
     .line 10
-    new-instance v3, Landroid/graphics/drawable/StateListDrawable;
+    new-instance v4, Landroid/graphics/drawable/StateListDrawable;
 
-    invoke-direct {v3}, Landroid/graphics/drawable/StateListDrawable;-><init>()V
+    invoke-direct {v4}, Landroid/graphics/drawable/StateListDrawable;-><init>()V
 
     .line 11
-    sget-object v4, Lcom/google/android/material/internal/NavigationMenuItemView;->L:[I
+    sget-object v5, Lcom/google/android/material/internal/NavigationMenuItemView;->K:[I
+
+    new-instance v6, Landroid/graphics/drawable/ColorDrawable;
+
+    iget v0, v0, Landroid/util/TypedValue;->data:I
+
+    invoke-direct {v6, v0}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
+
+    invoke-virtual {v4, v5, v6}, Landroid/graphics/drawable/StateListDrawable;->addState([ILandroid/graphics/drawable/Drawable;)V
+
+    .line 12
+    sget-object v0, Landroid/view/ViewGroup;->EMPTY_STATE_SET:[I
 
     new-instance v5, Landroid/graphics/drawable/ColorDrawable;
 
-    iget p2, p2, Landroid/util/TypedValue;->data:I
+    invoke-direct {v5, v2}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
-    invoke-direct {v5, p2}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
-
-    invoke-virtual {v3, v4, v5}, Landroid/graphics/drawable/StateListDrawable;->addState([ILandroid/graphics/drawable/Drawable;)V
-
-    .line 12
-    sget-object p2, Landroid/view/ViewGroup;->EMPTY_STATE_SET:[I
-
-    new-instance v4, Landroid/graphics/drawable/ColorDrawable;
-
-    invoke-direct {v4, v1}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
-
-    invoke-virtual {v3, p2, v4}, Landroid/graphics/drawable/StateListDrawable;->addState([ILandroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v4, v0, v5}, Landroid/graphics/drawable/StateListDrawable;->addState([ILandroid/graphics/drawable/Drawable;)V
 
     goto :goto_1
 
     :cond_2
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
     .line 13
     :goto_1
-    sget-object p2, Lf0/r;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 14
-    invoke-virtual {p0, v3}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 15
     :cond_3
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/g;->isCheckable()Z
 
-    move-result p2
+    move-result v0
 
-    invoke-virtual {p0, p2}, Lcom/google/android/material/internal/NavigationMenuItemView;->setCheckable(Z)V
+    invoke-virtual {p0, v0}, Lcom/google/android/material/internal/NavigationMenuItemView;->setCheckable(Z)V
 
     .line 16
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/g;->isChecked()Z
 
-    move-result p2
+    move-result v0
 
-    invoke-virtual {p0, p2}, Lcom/google/android/material/internal/NavigationMenuItemView;->setChecked(Z)V
+    invoke-virtual {p0, v0}, Lcom/google/android/material/internal/NavigationMenuItemView;->setChecked(Z)V
 
     .line 17
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/g;->isEnabled()Z
 
-    move-result p2
+    move-result v0
 
-    invoke-virtual {p0, p2}, Landroid/view/ViewGroup;->setEnabled(Z)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 18
-    iget-object p2, p1, Landroidx/appcompat/view/menu/g;->e:Ljava/lang/CharSequence;
+    iget-object v0, p1, Landroidx/appcompat/view/menu/g;->e:Ljava/lang/CharSequence;
 
     .line 19
-    invoke-virtual {p0, p2}, Lcom/google/android/material/internal/NavigationMenuItemView;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/google/android/material/internal/NavigationMenuItemView;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 20
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/g;->getIcon()Landroid/graphics/drawable/Drawable;
 
-    move-result-object p2
+    move-result-object v0
 
-    invoke-virtual {p0, p2}, Lcom/google/android/material/internal/NavigationMenuItemView;->setIcon(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v0}, Lcom/google/android/material/internal/NavigationMenuItemView;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 21
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/g;->getActionView()Landroid/view/View;
 
-    move-result-object p2
+    move-result-object v0
 
-    invoke-direct {p0, p2}, Lcom/google/android/material/internal/NavigationMenuItemView;->setActionView(Landroid/view/View;)V
+    invoke-direct {p0, v0}, Lcom/google/android/material/internal/NavigationMenuItemView;->setActionView(Landroid/view/View;)V
 
     .line 22
-    iget-object p2, p1, Landroidx/appcompat/view/menu/g;->q:Ljava/lang/CharSequence;
+    iget-object v0, p1, Landroidx/appcompat/view/menu/g;->q:Ljava/lang/CharSequence;
 
     .line 23
-    invoke-virtual {p0, p2}, Landroid/view/ViewGroup;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 24
     iget-object p1, p1, Landroidx/appcompat/view/menu/g;->r:Ljava/lang/CharSequence;
 
     .line 25
-    invoke-static {p0, p1}, Landroidx/appcompat/widget/l0;->a(Landroid/view/View;Ljava/lang/CharSequence;)V
+    invoke-static {p0, p1}, Landroidx/appcompat/widget/k0;->a(Landroid/view/View;Ljava/lang/CharSequence;)V
 
     .line 26
-    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->G:Landroidx/appcompat/view/menu/g;
+    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroidx/appcompat/view/menu/g;
 
     .line 27
-    iget-object p2, p1, Landroidx/appcompat/view/menu/g;->e:Ljava/lang/CharSequence;
+    iget-object v0, p1, Landroidx/appcompat/view/menu/g;->e:Ljava/lang/CharSequence;
 
-    if-nez p2, :cond_4
+    if-nez v0, :cond_4
 
     .line 28
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/g;->getIcon()Landroid/graphics/drawable/Drawable;
@@ -345,7 +344,7 @@
 
     if-nez p1, :cond_4
 
-    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->G:Landroidx/appcompat/view/menu/g;
+    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroidx/appcompat/view/menu/g;
 
     .line 29
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/g;->getActionView()Landroid/view/View;
@@ -357,67 +356,67 @@
     goto :goto_2
 
     :cond_4
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     :goto_2
-    if-eqz v2, :cond_5
+    if-eqz v3, :cond_5
 
     .line 30
-    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
+    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
 
-    invoke-virtual {p1, v0}, Landroid/widget/CheckedTextView;->setVisibility(I)V
+    invoke-virtual {p1, v1}, Landroid/widget/CheckedTextView;->setVisibility(I)V
 
     .line 31
-    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroid/widget/FrameLayout;
+    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/FrameLayout;
 
     if-eqz p1, :cond_6
 
     .line 32
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
 
     check-cast p1, Landroidx/appcompat/widget/LinearLayoutCompat$LayoutParams;
 
-    const/4 p2, -0x1
+    const/4 v0, -0x1
 
     .line 33
-    iput p2, p1, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+    iput v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
 
     .line 34
-    iget-object p2, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/FrameLayout;
 
-    invoke-virtual {p2, p1}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_3
 
     .line 35
     :cond_5
-    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
+    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
 
-    invoke-virtual {p1, v1}, Landroid/widget/CheckedTextView;->setVisibility(I)V
+    invoke-virtual {p1, v2}, Landroid/widget/CheckedTextView;->setVisibility(I)V
 
     .line 36
-    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroid/widget/FrameLayout;
+    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/FrameLayout;
 
     if-eqz p1, :cond_6
 
     .line 37
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
 
     check-cast p1, Landroidx/appcompat/widget/LinearLayoutCompat$LayoutParams;
 
-    const/4 p2, -0x2
+    const/4 v0, -0x2
 
     .line 38
-    iput p2, p1, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+    iput v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
 
     .line 39
-    iget-object p2, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/FrameLayout;
 
-    invoke-virtual {p2, p1}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_6
     :goto_3
@@ -427,13 +426,12 @@
 .method public getItemData()Landroidx/appcompat/view/menu/g;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->G:Landroidx/appcompat/view/menu/g;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroidx/appcompat/view/menu/g;
 
     return-object v0
 .end method
 
-.method public onCreateDrawableState(I)[I
+.method public final onCreateDrawableState(I)[I
     .locals 1
 
     add-int/lit8 p1, p1, 0x1
@@ -444,7 +442,7 @@
     move-result-object p1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->G:Landroidx/appcompat/view/menu/g;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroidx/appcompat/view/menu/g;
 
     if-eqz v0, :cond_0
 
@@ -454,7 +452,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->G:Landroidx/appcompat/view/menu/g;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroidx/appcompat/view/menu/g;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/g;->isChecked()Z
 
@@ -463,9 +461,9 @@
     if-eqz v0, :cond_0
 
     .line 3
-    sget-object v0, Lcom/google/android/material/internal/NavigationMenuItemView;->L:[I
+    sget-object v0, Lcom/google/android/material/internal/NavigationMenuItemView;->K:[I
 
-    invoke-static {p1, v0}, Landroid/view/ViewGroup;->mergeDrawableStates([I[I)[I
+    invoke-static {p1, v0}, Landroid/view/View;->mergeDrawableStates([I[I)[I
 
     :cond_0
     return-object p1
@@ -475,20 +473,20 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->refreshDrawableState()V
+    invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Z
+    iget-boolean v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->C:Z
 
     if-eq v0, p1, :cond_0
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Z
+    iput-boolean p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->C:Z
 
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->K:Lf0/a;
+    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->J:Lcom/google/android/material/internal/NavigationMenuItemView$a;
 
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
 
     const/16 v1, 0x800
 
@@ -502,10 +500,10 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->refreshDrawableState()V
+    invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
@@ -517,8 +515,7 @@
 
     const/4 v0, 0x0
 
-    .line 1
-    invoke-virtual {p0, p1, v0, p1, v0}, Landroid/view/ViewGroup;->setPadding(IIII)V
+    invoke-virtual {p0, p1, v0, p1, v0}, Landroid/view/View;->setPadding(IIII)V
 
     return-void
 .end method
@@ -531,7 +528,7 @@
     if-eqz p1, :cond_2
 
     .line 1
-    iget-boolean v1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->I:Z
+    iget-boolean v1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->H:Z
 
     if-eqz v1, :cond_1
 
@@ -551,7 +548,7 @@
     move-result-object p1
 
     :goto_0
-    invoke-static {p1}, Ly/a;->l(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1}, Ly/a;->q(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
@@ -560,13 +557,13 @@
     move-result-object p1
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->H:Landroid/content/res/ColorStateList;
+    iget-object v1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->G:Landroid/content/res/ColorStateList;
 
-    invoke-static {p1, v1}, Ly/a;->i(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
+    invoke-static {p1, v1}, Ly/a;->n(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
     .line 5
     :cond_1
-    iget v1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->B:I
+    iget v1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->A:I
 
     invoke-virtual {p1, v0, v0, v1, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
@@ -574,23 +571,23 @@
 
     .line 6
     :cond_2
-    iget-boolean v1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->C:Z
+    iget-boolean v1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->B:Z
 
     if-eqz v1, :cond_4
 
     .line 7
-    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->J:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->I:Landroid/graphics/drawable/Drawable;
 
     if-nez p1, :cond_3
 
     .line 8
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
     sget v1, Lcom/google/android/material/R$drawable;->navigation_empty_icon:I
 
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -603,23 +600,23 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->J:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->I:Landroid/graphics/drawable/Drawable;
 
     if-eqz p1, :cond_3
 
     .line 10
-    iget v1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->B:I
+    iget v1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->A:I
 
     invoke-virtual {p1, v0, v0, v1, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 11
     :cond_3
-    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->J:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->I:Landroid/graphics/drawable/Drawable;
 
     .line 12
     :cond_4
     :goto_1
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
 
     const/4 v1, 0x0
 
@@ -632,10 +629,9 @@
 .method public setIconPadding(I)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/CheckedTextView;->setCompoundDrawablePadding(I)V
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setCompoundDrawablePadding(I)V
 
     return-void
 .end method
@@ -643,8 +639,7 @@
 .method public setIconSize(I)V
     .locals 0
 
-    .line 1
-    iput p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->B:I
+    iput p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->A:I
 
     return-void
 .end method
@@ -653,7 +648,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->H:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->G:Landroid/content/res/ColorStateList;
 
     if-eqz p1, :cond_0
 
@@ -666,10 +661,10 @@
 
     .line 2
     :goto_0
-    iput-boolean p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->I:Z
+    iput-boolean p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->H:Z
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->G:Landroidx/appcompat/view/menu/g;
+    iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroidx/appcompat/view/menu/g;
 
     if-eqz p1, :cond_1
 
@@ -687,10 +682,9 @@
 .method public setMaxLines(I)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/CheckedTextView;->setMaxLines(I)V
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setMaxLines(I)V
 
     return-void
 .end method
@@ -698,8 +692,7 @@
 .method public setNeedsEmptyIcon(Z)V
     .locals 0
 
-    .line 1
-    iput-boolean p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->C:Z
+    iput-boolean p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->B:Z
 
     return-void
 .end method
@@ -707,10 +700,9 @@
 .method public setTextAppearance(I)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
 
-    invoke-static {v0, p1}, Landroidx/core/widget/h;->f(Landroid/widget/TextView;I)V
+    invoke-static {v0, p1}, Landroidx/core/widget/i;->f(Landroid/widget/TextView;I)V
 
     return-void
 .end method
@@ -718,10 +710,9 @@
 .method public setTextColor(Landroid/content/res/ColorStateList;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/CheckedTextView;->setTextColor(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     return-void
 .end method
@@ -729,10 +720,9 @@
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
+    iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/CheckedTextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     return-void
 .end method

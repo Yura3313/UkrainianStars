@@ -1,4 +1,4 @@
-.class public Lcom/journeyapps/barcodescanner/b$a$a;
+.class public final Lcom/journeyapps/barcodescanner/b$a$a;
 .super Ljava/lang/Object;
 .source "CaptureManager.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/journeyapps/barcodescanner/b$a;->a(Lob/b;)V
+    value = Lcom/journeyapps/barcodescanner/b$a;->b(Lrb/b;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,19 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lob/b;
+.field public final synthetic f:Lrb/b;
 
-.field public final synthetic h:Lcom/journeyapps/barcodescanner/b$a;
+.field public final synthetic g:Lcom/journeyapps/barcodescanner/b$a;
 
 
 # direct methods
-.method public constructor <init>(Lcom/journeyapps/barcodescanner/b$a;Lob/b;)V
+.method public constructor <init>(Lcom/journeyapps/barcodescanner/b$a;Lrb/b;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->h:Lcom/journeyapps/barcodescanner/b$a;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->g:Lcom/journeyapps/barcodescanner/b$a;
 
-    iput-object p2, p0, Lcom/journeyapps/barcodescanner/b$a$a;->g:Lob/b;
+    iput-object p2, p0, Lcom/journeyapps/barcodescanner/b$a$a;->f:Lrb/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,15 +38,15 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 15
 
     .line 1
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/b$a$a;->h:Lcom/journeyapps/barcodescanner/b$a;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/b$a$a;->g:Lcom/journeyapps/barcodescanner/b$a;
 
     iget-object v0, v0, Lcom/journeyapps/barcodescanner/b$a;->a:Lcom/journeyapps/barcodescanner/b;
 
-    iget-object v1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->g:Lob/b;
+    iget-object v1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->f:Lrb/b;
 
     .line 2
     iget-boolean v2, v0, Lcom/journeyapps/barcodescanner/b;->d:Z
@@ -59,13 +58,13 @@
     if-eqz v2, :cond_3
 
     .line 3
-    iget-object v2, v1, Lob/b;->b:Lob/p;
+    iget-object v2, v1, Lrb/b;->b:Lrb/p;
 
     .line 4
-    iget-object v5, v2, Lob/p;->f:Landroid/graphics/Rect;
+    iget-object v5, v2, Lrb/p;->f:Landroid/graphics/Rect;
 
     .line 5
-    iget v6, v2, Lob/p;->e:I
+    iget v6, v2, Lrb/p;->e:I
 
     rem-int/lit16 v6, v6, 0xb4
 
@@ -100,13 +99,13 @@
     :cond_1
     new-instance v12, Landroid/graphics/YuvImage;
 
-    iget-object v7, v2, Lob/p;->a:[B
+    iget-object v7, v2, Lrb/p;->a:[B
 
-    iget v8, v2, Lob/p;->d:I
+    iget v8, v2, Lrb/p;->d:I
 
-    iget v9, v2, Lob/p;->b:I
+    iget v9, v2, Lrb/p;->b:I
 
-    iget v10, v2, Lob/p;->c:I
+    iget v10, v2, Lrb/p;->c:I
 
     const/4 v11, 0x0
 
@@ -147,7 +146,7 @@
     move-result-object v8
 
     .line 14
-    iget v5, v2, Lob/p;->e:I
+    iget v5, v2, Lrb/p;->e:I
 
     if-eqz v5, :cond_2
 
@@ -157,7 +156,7 @@
     invoke-direct {v13}, Landroid/graphics/Matrix;-><init>()V
 
     .line 16
-    iget v2, v2, Lob/p;->e:I
+    iget v2, v2, Lrb/p;->e:I
 
     int-to-float v2, v2
 
@@ -191,7 +190,7 @@
     .line 18
     iget-object v6, v0, Lcom/journeyapps/barcodescanner/b;->a:Landroid/app/Activity;
 
-    invoke-virtual {v6}, Landroid/app/Activity;->getCacheDir()Ljava/io/File;
+    invoke-virtual {v6}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
     move-result-object v6
 
@@ -250,10 +249,10 @@
     invoke-virtual {v5, v6}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 26
-    iget-object v6, v1, Lob/b;->a:Lc6/j;
+    iget-object v6, v1, Lrb/b;->a:Le6/j;
 
     .line 27
-    iget-object v6, v6, Lc6/j;->a:Ljava/lang/String;
+    iget-object v6, v6, Le6/j;->a:Ljava/lang/String;
 
     const-string v7, "SCAN_RESULT"
 
@@ -261,13 +260,13 @@
     invoke-virtual {v5, v7, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 29
-    iget-object v6, v1, Lob/b;->a:Lc6/j;
+    iget-object v6, v1, Lrb/b;->a:Le6/j;
 
     .line 30
-    iget-object v6, v6, Lc6/j;->d:Lc6/a;
+    iget-object v6, v6, Le6/j;->d:Le6/a;
 
     .line 31
-    invoke-virtual {v6}, Ljava/lang/Enum;->toString()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v6
 
@@ -276,10 +275,10 @@
     invoke-virtual {v5, v7, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 32
-    iget-object v6, v1, Lob/b;->a:Lc6/j;
+    iget-object v6, v1, Lrb/b;->a:Le6/j;
 
     .line 33
-    iget-object v6, v6, Lc6/j;->b:[B
+    iget-object v6, v6, Le6/j;->b:[B
 
     if-eqz v6, :cond_4
 
@@ -295,15 +294,15 @@
 
     .line 36
     :cond_4
-    iget-object v1, v1, Lob/b;->a:Lc6/j;
+    iget-object v1, v1, Lrb/b;->a:Le6/j;
 
     .line 37
-    iget-object v1, v1, Lc6/j;->e:Ljava/util/Map;
+    iget-object v1, v1, Le6/j;->e:Ljava/util/Map;
 
     if-eqz v1, :cond_8
 
     .line 38
-    sget-object v6, Lc6/k;->m:Lc6/k;
+    sget-object v6, Le6/k;->l:Le6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -327,7 +326,7 @@
 
     .line 41
     :cond_5
-    sget-object v6, Lc6/k;->g:Lc6/k;
+    sget-object v6, Le6/k;->f:Le6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -348,7 +347,7 @@
 
     .line 43
     :cond_6
-    sget-object v6, Lc6/k;->i:Lc6/k;
+    sget-object v6, Le6/k;->h:Le6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -365,7 +364,7 @@
 
     .line 45
     :cond_7
-    sget-object v6, Lc6/k;->h:Lc6/k;
+    sget-object v6, Le6/k;->g:Le6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -431,7 +430,7 @@
     invoke-virtual {v1, v2, v5}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
     .line 50
-    invoke-virtual {v0}, Lcom/journeyapps/barcodescanner/b;->a()V
+    invoke-virtual {v0}, Lcom/journeyapps/barcodescanner/b;->b()V
 
     return-void
 .end method

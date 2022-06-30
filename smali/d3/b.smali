@@ -11,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;",
+        "Lcom/google/android/gms/games/multiplayer/InvitationEntity;",
         ">;"
     }
 .end annotation
@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,11 +28,10 @@
 
 
 # virtual methods
-.method public synthetic newArray(I)[Ljava/lang/Object;
+.method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
-    new-array p1, p1, [Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;
+    new-array p1, p1, [Lcom/google/android/gms/games/multiplayer/InvitationEntity;
 
     return-object p1
 .end method

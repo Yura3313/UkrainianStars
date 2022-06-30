@@ -7,7 +7,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lokhttp3/internal/platform/Platform;-><init>()V
 
     return-void
@@ -50,7 +49,6 @@
 .method private getProvider()Ljava/security/Provider;
     .locals 1
 
-    .line 1
     invoke-static {}, Lorg/conscrypt/Conscrypt;->newProviderBuilder()Lorg/conscrypt/Conscrypt$ProviderBuilder;
 
     move-result-object v0

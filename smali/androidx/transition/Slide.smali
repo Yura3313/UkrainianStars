@@ -14,25 +14,25 @@
 
 
 # static fields
-.field public static final H:Landroid/animation/TimeInterpolator;
+.field public static final G:Landroid/view/animation/DecelerateInterpolator;
 
-.field public static final I:Landroid/animation/TimeInterpolator;
+.field public static final H:Landroid/view/animation/AccelerateInterpolator;
 
-.field public static final J:Landroidx/transition/Slide$g;
+.field public static final I:Landroidx/transition/Slide$a;
 
-.field public static final K:Landroidx/transition/Slide$g;
+.field public static final J:Landroidx/transition/Slide$b;
 
-.field public static final L:Landroidx/transition/Slide$g;
+.field public static final K:Landroidx/transition/Slide$c;
 
-.field public static final M:Landroidx/transition/Slide$g;
+.field public static final L:Landroidx/transition/Slide$d;
 
-.field public static final N:Landroidx/transition/Slide$g;
+.field public static final M:Landroidx/transition/Slide$e;
 
-.field public static final O:Landroidx/transition/Slide$g;
+.field public static final N:Landroidx/transition/Slide$f;
 
 
 # instance fields
-.field public G:Landroidx/transition/Slide$g;
+.field public F:Landroidx/transition/Slide$g;
 
 
 # direct methods
@@ -44,56 +44,56 @@
 
     invoke-direct {v0}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
 
-    sput-object v0, Landroidx/transition/Slide;->H:Landroid/animation/TimeInterpolator;
+    sput-object v0, Landroidx/transition/Slide;->G:Landroid/view/animation/DecelerateInterpolator;
 
     .line 2
     new-instance v0, Landroid/view/animation/AccelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
 
-    sput-object v0, Landroidx/transition/Slide;->I:Landroid/animation/TimeInterpolator;
+    sput-object v0, Landroidx/transition/Slide;->H:Landroid/view/animation/AccelerateInterpolator;
 
     .line 3
     new-instance v0, Landroidx/transition/Slide$a;
 
     invoke-direct {v0}, Landroidx/transition/Slide$a;-><init>()V
 
-    sput-object v0, Landroidx/transition/Slide;->J:Landroidx/transition/Slide$g;
+    sput-object v0, Landroidx/transition/Slide;->I:Landroidx/transition/Slide$a;
 
     .line 4
     new-instance v0, Landroidx/transition/Slide$b;
 
     invoke-direct {v0}, Landroidx/transition/Slide$b;-><init>()V
 
-    sput-object v0, Landroidx/transition/Slide;->K:Landroidx/transition/Slide$g;
+    sput-object v0, Landroidx/transition/Slide;->J:Landroidx/transition/Slide$b;
 
     .line 5
     new-instance v0, Landroidx/transition/Slide$c;
 
     invoke-direct {v0}, Landroidx/transition/Slide$c;-><init>()V
 
-    sput-object v0, Landroidx/transition/Slide;->L:Landroidx/transition/Slide$g;
+    sput-object v0, Landroidx/transition/Slide;->K:Landroidx/transition/Slide$c;
 
     .line 6
     new-instance v0, Landroidx/transition/Slide$d;
 
     invoke-direct {v0}, Landroidx/transition/Slide$d;-><init>()V
 
-    sput-object v0, Landroidx/transition/Slide;->M:Landroidx/transition/Slide$g;
+    sput-object v0, Landroidx/transition/Slide;->L:Landroidx/transition/Slide$d;
 
     .line 7
     new-instance v0, Landroidx/transition/Slide$e;
 
     invoke-direct {v0}, Landroidx/transition/Slide$e;-><init>()V
 
-    sput-object v0, Landroidx/transition/Slide;->N:Landroidx/transition/Slide$g;
+    sput-object v0, Landroidx/transition/Slide;->M:Landroidx/transition/Slide$e;
 
     .line 8
     new-instance v0, Landroidx/transition/Slide$f;
 
     invoke-direct {v0}, Landroidx/transition/Slide$f;-><init>()V
 
-    sput-object v0, Landroidx/transition/Slide;->O:Landroidx/transition/Slide$g;
+    sput-object v0, Landroidx/transition/Slide;->N:Landroidx/transition/Slide$f;
 
     return-void
 .end method
@@ -105,14 +105,14 @@
     invoke-direct {p0}, Landroidx/transition/Visibility;-><init>()V
 
     .line 2
-    sget-object v0, Landroidx/transition/Slide;->O:Landroidx/transition/Slide$g;
+    sget-object v0, Landroidx/transition/Slide;->N:Landroidx/transition/Slide$f;
 
-    iput-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
+    iput-object v0, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
 
     const/16 v0, 0x50
 
     .line 3
-    invoke-virtual {p0, v0}, Landroidx/transition/Slide;->P(I)V
+    invoke-virtual {p0, v0}, Landroidx/transition/Slide;->Q(I)V
 
     return-void
 .end method
@@ -129,9 +129,9 @@
     invoke-direct {p0, p1, p2}, Landroidx/transition/Visibility;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 5
-    sget-object v0, Landroidx/transition/Slide;->O:Landroidx/transition/Slide$g;
+    sget-object v0, Landroidx/transition/Slide;->N:Landroidx/transition/Slide$f;
 
-    iput-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
+    iput-object v0, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
 
     .line 6
     sget-object v0, Lv0/p;->f:[I
@@ -149,7 +149,7 @@
 
     const/16 v2, 0x50
 
-    invoke-static {p1, p2, v0, v1, v2}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {p1, p2, v0, v1, v2}, Lw/f;->e(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
     move-result p2
 
@@ -157,22 +157,29 @@
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 9
-    invoke-virtual {p0, p2}, Landroidx/transition/Slide;->P(I)V
+    invoke-virtual {p0, p2}, Landroidx/transition/Slide;->Q(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public L(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public final N(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
     .locals 10
 
+    if-nez p4, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
+
     .line 1
-    iget-object p3, p4, Lv0/s;->a:Ljava/util/Map;
+    :cond_0
+    iget-object p3, p4, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v0, "android:slide:screenPosition"
 
-    invoke-interface {p3, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p3, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p3
 
@@ -189,14 +196,14 @@
     move-result v7
 
     .line 4
-    iget-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
+    iget-object v0, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
 
     invoke-interface {v0, p1, p2}, Landroidx/transition/Slide$g;->b(Landroid/view/ViewGroup;Landroid/view/View;)F
 
     move-result v4
 
     .line 5
-    iget-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
+    iget-object v0, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
 
     invoke-interface {v0, p1, p2}, Landroidx/transition/Slide$g;->a(Landroid/view/ViewGroup;Landroid/view/View;)F
 
@@ -211,7 +218,7 @@
 
     aget v3, p3, p1
 
-    sget-object v8, Landroidx/transition/Slide;->H:Landroid/animation/TimeInterpolator;
+    sget-object v8, Landroidx/transition/Slide;->G:Landroid/view/animation/DecelerateInterpolator;
 
     move-object v0, p2
 
@@ -227,70 +234,77 @@
     return-object p1
 .end method
 
-.method public N(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
-    .locals 10
+.method public final O(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;)Landroid/animation/Animator;
+    .locals 11
+
+    if-nez p3, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
 
     .line 1
-    iget-object p4, p3, Lv0/s;->a:Ljava/util/Map;
+    :cond_0
+    iget-object v0, p3, Lv0/s;->a:Ljava/util/HashMap;
 
-    const-string v0, "android:slide:screenPosition"
+    const-string v1, "android:slide:screenPosition"
 
-    invoke-interface {p4, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p4
+    move-result-object v0
 
-    check-cast p4, [I
+    check-cast v0, [I
 
     .line 2
     invoke-virtual {p2}, Landroid/view/View;->getTranslationX()F
 
-    move-result v4
+    move-result v5
 
     .line 3
     invoke-virtual {p2}, Landroid/view/View;->getTranslationY()F
 
-    move-result v5
-
-    .line 4
-    iget-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
-
-    invoke-interface {v0, p1, p2}, Landroidx/transition/Slide$g;->b(Landroid/view/ViewGroup;Landroid/view/View;)F
-
     move-result v6
 
-    .line 5
-    iget-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
+    .line 4
+    iget-object v1, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
 
-    invoke-interface {v0, p1, p2}, Landroidx/transition/Slide$g;->a(Landroid/view/ViewGroup;Landroid/view/View;)F
+    invoke-interface {v1, p1, p2}, Landroidx/transition/Slide$g;->b(Landroid/view/ViewGroup;Landroid/view/View;)F
 
     move-result v7
+
+    .line 5
+    iget-object v1, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
+
+    invoke-interface {v1, p1, p2}, Landroidx/transition/Slide$g;->a(Landroid/view/ViewGroup;Landroid/view/View;)F
+
+    move-result v8
 
     const/4 p1, 0x0
 
     .line 6
-    aget v2, p4, p1
+    aget v3, v0, p1
 
     const/4 p1, 0x1
 
-    aget v3, p4, p1
+    aget v4, v0, p1
 
-    sget-object v8, Landroidx/transition/Slide;->I:Landroid/animation/TimeInterpolator;
+    sget-object v9, Landroidx/transition/Slide;->H:Landroid/view/animation/AccelerateInterpolator;
 
-    move-object v0, p2
+    move-object v1, p2
 
-    move-object v1, p3
+    move-object v2, p3
 
-    move-object v9, p0
+    move-object v10, p0
 
     .line 7
-    invoke-static/range {v0 .. v9}, Landroidx/transition/g;->a(Landroid/view/View;Lv0/s;IIFFFFLandroid/animation/TimeInterpolator;Landroidx/transition/Transition;)Landroid/animation/Animator;
+    invoke-static/range {v1 .. v10}, Landroidx/transition/g;->a(Landroid/view/View;Lv0/s;IIFFFFLandroid/animation/TimeInterpolator;Landroidx/transition/Transition;)Landroid/animation/Animator;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public P(I)V
+.method public final Q(I)V
     .locals 1
 
     const/4 v0, 0x3
@@ -318,9 +332,9 @@
     if-ne p1, v0, :cond_0
 
     .line 1
-    sget-object v0, Landroidx/transition/Slide;->N:Landroidx/transition/Slide$g;
+    sget-object v0, Landroidx/transition/Slide;->M:Landroidx/transition/Slide$e;
 
-    iput-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
+    iput-object v0, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
 
     goto :goto_0
 
@@ -336,41 +350,41 @@
 
     .line 3
     :cond_1
-    sget-object v0, Landroidx/transition/Slide;->K:Landroidx/transition/Slide$g;
+    sget-object v0, Landroidx/transition/Slide;->J:Landroidx/transition/Slide$b;
 
-    iput-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
+    iput-object v0, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
 
     goto :goto_0
 
     .line 4
     :cond_2
-    sget-object v0, Landroidx/transition/Slide;->O:Landroidx/transition/Slide$g;
+    sget-object v0, Landroidx/transition/Slide;->N:Landroidx/transition/Slide$f;
 
-    iput-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
+    iput-object v0, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
 
     goto :goto_0
 
     .line 5
     :cond_3
-    sget-object v0, Landroidx/transition/Slide;->L:Landroidx/transition/Slide$g;
+    sget-object v0, Landroidx/transition/Slide;->K:Landroidx/transition/Slide$c;
 
-    iput-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
+    iput-object v0, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
 
     goto :goto_0
 
     .line 6
     :cond_4
-    sget-object v0, Landroidx/transition/Slide;->M:Landroidx/transition/Slide$g;
+    sget-object v0, Landroidx/transition/Slide;->L:Landroidx/transition/Slide$d;
 
-    iput-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
+    iput-object v0, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
 
     goto :goto_0
 
     .line 7
     :cond_5
-    sget-object v0, Landroidx/transition/Slide;->J:Landroidx/transition/Slide$g;
+    sget-object v0, Landroidx/transition/Slide;->I:Landroidx/transition/Slide$a;
 
-    iput-object v0, p0, Landroidx/transition/Slide;->G:Landroidx/transition/Slide$g;
+    iput-object v0, p0, Landroidx/transition/Slide;->F:Landroidx/transition/Slide$g;
 
     .line 8
     :goto_0
@@ -379,19 +393,19 @@
     invoke-direct {v0}, Lv0/o;-><init>()V
 
     .line 9
-    iput p1, v0, Lv0/o;->h:I
+    iput p1, v0, Lv0/o;->g:I
 
     .line 10
-    iput-object v0, p0, Landroidx/transition/Transition;->y:Landroidx/fragment/app/t;
+    iput-object v0, p0, Landroidx/transition/Transition;->x:Landroidx/fragment/app/p;
 
     return-void
 .end method
 
-.method public d(Lv0/s;)V
+.method public final d(Lv0/s;)V
     .locals 2
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->J(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->L(Lv0/s;)V
 
     .line 2
     iget-object v0, p1, Lv0/s;->b:Landroid/view/View;
@@ -404,20 +418,20 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 4
-    iget-object p1, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object p1, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v0, "android:slide:screenPosition"
 
-    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public g(Lv0/s;)V
+.method public final g(Lv0/s;)V
     .locals 2
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->J(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->L(Lv0/s;)V
 
     .line 2
     iget-object v0, p1, Lv0/s;->b:Landroid/view/View;
@@ -430,11 +444,11 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 4
-    iget-object p1, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object p1, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v0, "android:slide:screenPosition"
 
-    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

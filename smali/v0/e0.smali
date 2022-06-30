@@ -1,10 +1,10 @@
 .class public abstract Lv0/e0;
-.super Landroidx/fragment/app/t;
+.super Landroidx/fragment/app/p;
 .source "VisibilityPropagation.java"
 
 
 # static fields
-.field public static final g:[Ljava/lang/String;
+.field public static final f:[Ljava/lang/String;
 
 
 # direct methods
@@ -27,8 +27,7 @@
 
     aput-object v2, v0, v1
 
-    .line 1
-    sput-object v0, Lv0/e0;->g:[Ljava/lang/String;
+    sput-object v0, Lv0/e0;->f:[Ljava/lang/String;
 
     return-void
 .end method
@@ -36,58 +35,25 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Landroidx/fragment/app/t;-><init>()V
+    invoke-direct {p0}, Landroidx/fragment/app/p;-><init>()V
 
     return-void
 .end method
 
-.method public static l(Lv0/s;I)I
-    .locals 2
-
-    const/4 v0, -0x1
-
-    if-nez p0, :cond_0
-
-    return v0
-
-    .line 1
-    :cond_0
-    iget-object p0, p0, Lv0/s;->a:Ljava/util/Map;
-
-    const-string v1, "android:visibilityPropagation:center"
-
-    invoke-interface {p0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, [I
-
-    if-nez p0, :cond_1
-
-    return v0
-
-    .line 2
-    :cond_1
-    aget p0, p0, p1
-
-    return p0
-.end method
-
 
 # virtual methods
-.method public c(Lv0/s;)V
+.method public final c(Lv0/s;)V
     .locals 6
 
     .line 1
     iget-object v0, p1, Lv0/s;->b:Landroid/view/View;
 
     .line 2
-    iget-object v1, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v2, "android:visibility:visibility"
 
-    invoke-interface {v1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -106,11 +72,11 @@
 
     .line 4
     :cond_0
-    iget-object v2, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object v2, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v3, "android:visibilityPropagation:visibility"
 
-    invoke-interface {v2, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v3, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v1, 0x2
 
@@ -121,9 +87,9 @@
 
     const/4 v3, 0x0
 
-    .line 6
     aget v4, v2, v3
 
+    .line 6
     invoke-virtual {v0}, Landroid/view/View;->getTranslationX()F
 
     move-result v5
@@ -136,9 +102,9 @@
 
     aput v5, v2, v3
 
-    .line 7
     aget v4, v2, v3
 
+    .line 7
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
 
     move-result v5
@@ -151,9 +117,9 @@
 
     const/4 v3, 0x1
 
-    .line 8
     aget v4, v2, v3
 
+    .line 8
     invoke-virtual {v0}, Landroid/view/View;->getTranslationY()F
 
     move-result v5
@@ -166,9 +132,9 @@
 
     aput v5, v2, v3
 
-    .line 9
     aget v4, v2, v3
 
+    .line 9
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
     move-result v0
@@ -180,25 +146,22 @@
     aput v0, v2, v3
 
     .line 10
-    iget-object p1, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object p1, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v0, "android:visibilityPropagation:center"
 
-    invoke-interface {p1, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public e()[Ljava/lang/String;
-    .locals 1
+.method public final e()V
+    .locals 0
 
-    .line 1
-    sget-object v0, Lv0/e0;->g:[Ljava/lang/String;
-
-    return-object v0
+    return-void
 .end method
 
-.method public m(Lv0/s;)I
+.method public final j(Lv0/s;)I
     .locals 2
 
     const/16 v0, 0x8
@@ -209,11 +172,11 @@
 
     .line 1
     :cond_0
-    iget-object p1, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object p1, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v1, "android:visibilityPropagation:visibility"
 
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -229,5 +192,77 @@
 
     move-result p1
 
+    return p1
+.end method
+
+.method public final k(Lv0/s;)I
+    .locals 1
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    .line 1
+    :cond_0
+    iget-object p1, p1, Lv0/s;->a:Ljava/util/HashMap;
+
+    const-string v0, "android:visibilityPropagation:center"
+
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, [I
+
+    if-nez p1, :cond_1
+
+    :goto_0
+    const/4 p1, -0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 2
+    aget p1, p1, v0
+
+    :goto_1
+    return p1
+.end method
+
+.method public final l(Lv0/s;)I
+    .locals 1
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    .line 1
+    :cond_0
+    iget-object p1, p1, Lv0/s;->a:Ljava/util/HashMap;
+
+    const-string v0, "android:visibilityPropagation:center"
+
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, [I
+
+    if-nez p1, :cond_1
+
+    :goto_0
+    const/4 p1, -0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v0, 0x1
+
+    .line 2
+    aget p1, p1, v0
+
+    :goto_1
     return p1
 .end method

@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.httpcache.IHttpAssetsCacheCallback"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,7 +19,7 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -35,7 +34,7 @@
     .line 1
     sget-object p1, Landroid/os/ParcelFileDescriptor;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lj3/mw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lk3/cw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
@@ -44,12 +43,12 @@
     .line 2
     move-object p2, p0
 
-    check-cast p2, Lj3/p3;
+    check-cast p2, Lk3/o3;
 
     .line 3
-    iget-object p2, p2, Lj3/p3;->g:Lj3/qd;
+    iget-object p2, p2, Lk3/o3;->f:Lk3/pd;
 
-    invoke-virtual {p2, p1}, Lj3/qd;->b(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p1}, Lk3/pd;->a(Ljava/lang/Object;)Z
 
     return p3
 

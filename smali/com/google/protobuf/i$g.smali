@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/i;-><init>()V
 
     return-void
@@ -26,10 +25,9 @@
 
 
 # virtual methods
-.method public iterator()Ljava/util/Iterator;
+.method public final iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/i$a;
 
     invoke-direct {v0, p0}, Lcom/google/protobuf/i$a;-><init>(Lcom/google/protobuf/i;)V

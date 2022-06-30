@@ -1,9 +1,9 @@
-.class public Lcom/google/android/material/appbar/c;
+.class public final Lcom/google/android/material/appbar/c;
 .super Ljava/lang/Object;
 .source "AppBarLayout.java"
 
 # interfaces
-.implements Lg0/d;
+.implements Lg0/e;
 
 
 # instance fields
@@ -22,7 +22,6 @@
 .method public constructor <init>(Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/appbar/c;->e:Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;
 
     iput-object p2, p0, Lcom/google/android/material/appbar/c;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
@@ -40,10 +39,9 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;Lg0/d$a;)Z
+.method public final a(Landroid/view/View;)Z
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/appbar/c;->e:Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;
 
     iget-object v1, p0, Lcom/google/android/material/appbar/c;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;

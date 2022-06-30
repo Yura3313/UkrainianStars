@@ -9,7 +9,6 @@
 
     const v0, 0x3f99999a
 
-    .line 1
     invoke-direct {p0, v0}, Landroid/text/style/RelativeSizeSpan;-><init>(F)V
 
     return-void

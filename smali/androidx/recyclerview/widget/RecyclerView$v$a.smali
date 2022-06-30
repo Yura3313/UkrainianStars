@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/RecyclerView$v$a;
+.class public final Landroidx/recyclerview/widget/RecyclerView$v$a;
 .super Ljava/lang/Object;
 .source "RecyclerView.java"
 
@@ -27,11 +27,9 @@
 
 .field public f:Z
 
-.field public g:I
-
 
 # direct methods
-.method public constructor <init>(II)V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
@@ -48,31 +46,28 @@
     iput-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->f:Z
 
     .line 4
-    iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->g:I
+    iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->a:I
 
     .line 5
-    iput p1, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->a:I
+    iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->b:I
+
+    const/high16 v0, -0x80000000
 
     .line 6
-    iput p2, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->b:I
+    iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->c:I
 
-    const/high16 p1, -0x80000000
+    const/4 v0, 0x0
 
     .line 7
-    iput p1, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->c:I
-
-    const/4 p1, 0x0
-
-    .line 8
-    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->e:Landroid/view/animation/Interpolator;
+    iput-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->e:Landroid/view/animation/Interpolator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroidx/recyclerview/widget/RecyclerView;)V
-    .locals 6
+.method public final a(Landroidx/recyclerview/widget/RecyclerView;)V
+    .locals 5
 
     .line 1
     iget v0, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->d:I
@@ -131,27 +126,20 @@
     if-lt v3, v2, :cond_3
 
     .line 9
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->j0:Landroidx/recyclerview/widget/RecyclerView$y;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->i0:Landroidx/recyclerview/widget/RecyclerView$y;
 
-    iget v4, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->a:I
+    iget v2, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->a:I
 
-    iget v5, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->b:I
+    iget v4, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->b:I
 
-    invoke-virtual {p1, v4, v5, v3, v0}, Landroidx/recyclerview/widget/RecyclerView$y;->b(IIILandroid/view/animation/Interpolator;)V
+    invoke-virtual {p1, v2, v4, v3, v0}, Landroidx/recyclerview/widget/RecyclerView$y;->b(IIILandroid/view/animation/Interpolator;)V
 
     .line 10
-    iget p1, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->g:I
-
-    add-int/2addr p1, v2
-
-    iput p1, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->g:I
-
-    .line 11
     iput-boolean v1, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->f:Z
 
     goto :goto_1
 
-    .line 12
+    .line 11
     :cond_3
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -161,15 +149,12 @@
 
     throw p1
 
-    .line 13
     :cond_4
-    iput v1, p0, Landroidx/recyclerview/widget/RecyclerView$v$a;->g:I
-
     :goto_1
     return-void
 .end method
 
-.method public b(IIILandroid/view/animation/Interpolator;)V
+.method public final b(IIILandroid/view/animation/Interpolator;)V
     .locals 0
 
     .line 1

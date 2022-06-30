@@ -1,52 +1,45 @@
-.class public interface abstract La2/i;
+.class public final synthetic La2/i;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.source "R8$$SyntheticClass"
 
 
-# virtual methods
-.method public abstract d(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
-    .param p1    # Ljava/lang/String;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .param p2    # Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
+# direct methods
+.method public static a(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    invoke-direct {v0, p0}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 4
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
-.method public abstract g(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-    .param p1    # Ljava/lang/String;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .param p2    # Ljava/lang/Class;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .annotation build Landroidx/annotation/RecentlyNullable;
-    .end annotation
+.method public static synthetic b(I)Ljava/lang/String;
+    .locals 1
 
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Lcom/google/android/gms/common/api/internal/LifecycleCallback;",
-            ">(",
-            "Ljava/lang/String;",
-            "Ljava/lang/Class<",
-            "TT;>;)TT;"
-        }
-    .end annotation
-.end method
+    const/4 v0, 0x1
 
-.method public abstract i()Landroid/app/Activity;
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-.end method
+    if-ne p0, v0, :cond_0
 
-.method public abstract startActivityForResult(Landroid/content/Intent;I)V
-    .param p1    # Landroid/content/Intent;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
+    const-string p0, "AES256_GCM"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "null"
+
+    return-object p0
 .end method

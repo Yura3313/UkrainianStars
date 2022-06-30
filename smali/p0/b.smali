@@ -1,4 +1,4 @@
-.class public Lp0/b;
+.class public final Lp0/b;
 .super Ljava/lang/Object;
 .source "AudioAttributesImplApi21.java"
 
@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
     .line 1
@@ -63,10 +63,9 @@
     return p1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lp0/b;->a:Landroid/media/AudioAttributes;
 
     invoke-virtual {v0}, Landroid/media/AudioAttributes;->hashCode()I
@@ -76,7 +75,7 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
     const-string v0, "AudioAttributesCompat: audioattributes="
@@ -86,6 +85,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lp0/b;->a:Landroid/media/AudioAttributes;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

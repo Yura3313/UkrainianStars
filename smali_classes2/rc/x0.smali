@@ -1,117 +1,81 @@
-.class public final Lrc/x0;
-.super Ljava/lang/Object;
-.source "MainActivity.kt"
+.class public final synthetic Lrc/x0;
+.super Lse/g;
+.source "SocialApiClient.kt"
 
 # interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.implements Lre/l;
 
 
-# instance fields
-.field public final synthetic g:Landroid/animation/ValueAnimator;
-
-.field public final synthetic h:I
-
-.field public final synthetic i:Lrc/y0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/g;",
+        "Lre/l<",
+        "Lorg/json/JSONObject;",
+        "Lorg/json/JSONObject;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Landroid/animation/ValueAnimator;ILrc/y0;)V
-    .locals 0
+.method public constructor <init>(Lrc/d0;)V
+    .locals 1
 
-    iput-object p1, p0, Lrc/x0;->g:Landroid/animation/ValueAnimator;
+    const/4 v0, 0x1
 
-    iput p2, p0, Lrc/x0;->h:I
-
-    iput-object p3, p0, Lrc/x0;->i:Lrc/y0;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, v0, p1}, Lse/g;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 5
+.method public final getName()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "handleResponse"
+
+    return-object v0
+.end method
+
+.method public final getOwner()Lwe/d;
+    .locals 1
+
+    const-class v0, Lrc/d0;
+
+    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getSignature()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "handleResponse(Lorg/json/JSONObject;)Lorg/json/JSONObject;"
+
+    return-object v0
+.end method
+
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    iget-object p1, p0, Lrc/x0;->i:Lrc/y0;
+    check-cast p1, Lorg/json/JSONObject;
 
-    iget-object p1, p1, Lrc/y0;->g:Lcom/supercell/id/ui/MainActivity;
-
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    const-string v0, "p1"
 
     .line 2
-    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->p()Ljava/lang/Integer;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object p1
+    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
 
-    if-eqz p1, :cond_0
+    check-cast v0, Lrc/d0;
 
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+    invoke-virtual {v0, p1}, Lrc/f;->b(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
-    move-result p1
-
-    .line 4
-    iget-object v0, p0, Lrc/x0;->i:Lrc/y0;
-
-    iget-object v0, v0, Lrc/y0;->g:Lcom/supercell/id/ui/MainActivity;
-
-    sget v1, Lcom/supercell/id/R$id;->head:I
-
-    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/FrameLayout;
-
-    const-string v2, "head"
-
-    invoke-static {v0, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v0}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v0
-
-    iget v2, p0, Lrc/x0;->h:I
-
-    iget-object v3, p0, Lrc/x0;->g:Landroid/animation/ValueAnimator;
-
-    invoke-virtual {v3}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
-
-    move-result v3
-
-    int-to-float v4, v2
-
-    sub-int/2addr p1, v2
-
-    int-to-float p1, p1
-
-    mul-float p1, p1, v3
-
-    add-float/2addr p1, v4
-
-    .line 5
-    invoke-static {p1}, Lb5/m;->r(F)I
-
-    move-result p1
-
-    iput p1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
-
-    .line 6
-    iget-object p1, p0, Lrc/x0;->i:Lrc/y0;
-
-    iget-object p1, p1, Lrc/y0;->g:Lcom/supercell/id/ui/MainActivity;
-
-    invoke-virtual {p1, v1}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/FrameLayout;
-
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->requestLayout()V
-
-    :cond_0
-    return-void
+    return-object p1
 .end method

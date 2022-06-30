@@ -1,40 +1,87 @@
 .class public final Ltd/n;
-.super Ljava/lang/Object;
-.source "YoungPlayerLoginEnterPinPageFragment.kt"
+.super Lse/h;
+.source "RegisterEnterPinPageFragment.kt"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lre/p;
 
 
-# instance fields
-.field public final synthetic g:Lke/a;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/p<",
+        "Ltd/q;",
+        "Ljava/lang/Exception;",
+        "Lie/h;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final f:Ltd/n;
 
 
 # direct methods
-.method public constructor <init>(Lke/a;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Ltd/n;
 
-    iput-object p1, p0, Ltd/n;->g:Lke/a;
+    invoke-direct {v0}, Ltd/n;-><init>()V
+
+    sput-object v0, Ltd/n;->f:Ltd/n;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic run()V
-    .locals 2
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    iget-object v0, p0, Ltd/n;->g:Lke/a;
+    .line 1
+    check-cast p1, Ltd/q;
 
-    invoke-interface {v0}, Lke/a;->invoke()Ljava/lang/Object;
+    check-cast p2, Ljava/lang/Exception;
 
-    move-result-object v0
+    const-string v0, "$receiver"
 
-    const-string v1, "invoke(...)"
+    .line 2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "it"
 
-    return-void
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
+
+    .line 5
+    :cond_0
+    sget-object p1, Lie/h;->a:Lie/h;
+
+    return-object p1
 .end method

@@ -45,7 +45,7 @@
 
 
 # virtual methods
-.method public g(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public final g(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 3
 
     .line 1
@@ -76,7 +76,7 @@
 
     move-result-object v1
 
-    iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$f;->a:Lcom/google/android/material/snackbar/i$b;
+    iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$f;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar$e;
 
     invoke-virtual {v1, v0}, Lcom/google/android/material/snackbar/i;->f(Lcom/google/android/material/snackbar/i$b;)V
 
@@ -107,7 +107,7 @@
 
     move-result-object v1
 
-    iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$f;->a:Lcom/google/android/material/snackbar/i$b;
+    iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$f;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar$e;
 
     invoke-virtual {v1, v0}, Lcom/google/android/material/snackbar/i;->e(Lcom/google/android/material/snackbar/i$b;)V
 
@@ -121,7 +121,7 @@
     return p1
 .end method
 
-.method public t(Landroid/view/View;)Z
+.method public final t(Landroid/view/View;)Z
     .locals 1
 
     .line 1

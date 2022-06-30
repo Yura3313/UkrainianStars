@@ -146,7 +146,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->breadcrumbs:Ljava/util/List;
 
     return-object v0
@@ -155,7 +154,6 @@
 .method public getContexts()Lio/sentry/protocol/Contexts;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->contexts:Lio/sentry/protocol/Contexts;
 
     return-object v0
@@ -164,7 +162,6 @@
 .method public getDist()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->dist:Ljava/lang/String;
 
     return-object v0
@@ -173,7 +170,6 @@
 .method public getEnvironment()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->environment:Ljava/lang/String;
 
     return-object v0
@@ -182,7 +178,6 @@
 .method public getEventId()Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->eventId:Lio/sentry/protocol/SentryId;
 
     return-object v0
@@ -221,7 +216,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->extra:Ljava/util/Map;
 
     return-object v0
@@ -232,7 +226,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/sentry/SentryBaseEvent;->getThrowable()Ljava/lang/Throwable;
 
     move-result-object v0
@@ -243,7 +236,6 @@
 .method public getPlatform()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->platform:Ljava/lang/String;
 
     return-object v0
@@ -252,7 +244,6 @@
 .method public getRelease()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->release:Ljava/lang/String;
 
     return-object v0
@@ -261,7 +252,6 @@
 .method public getRequest()Lio/sentry/protocol/Request;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->request:Lio/sentry/protocol/Request;
 
     return-object v0
@@ -270,7 +260,6 @@
 .method public getSdk()Lio/sentry/protocol/SdkVersion;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->sdk:Lio/sentry/protocol/SdkVersion;
 
     return-object v0
@@ -279,7 +268,6 @@
 .method public getServerName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->serverName:Ljava/lang/String;
 
     return-object v0
@@ -323,7 +311,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->tags:Ljava/util/Map;
 
     return-object v0
@@ -354,7 +341,6 @@
 .method public getThrowableMechanism()Ljava/lang/Throwable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->throwable:Ljava/lang/Throwable;
 
     return-object v0
@@ -363,7 +349,6 @@
 .method public getUser()Lio/sentry/protocol/User;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryBaseEvent;->user:Lio/sentry/protocol/User;
 
     return-object v0
@@ -410,7 +395,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newArrayList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
@@ -423,7 +407,6 @@
 .method public setDist(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryBaseEvent;->dist:Ljava/lang/String;
 
     return-void
@@ -432,7 +415,6 @@
 .method public setEnvironment(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryBaseEvent;->environment:Ljava/lang/String;
 
     return-void
@@ -441,7 +423,6 @@
 .method public setEventId(Lio/sentry/protocol/SentryId;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryBaseEvent;->eventId:Lio/sentry/protocol/SentryId;
 
     return-void
@@ -483,7 +464,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newHashMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
@@ -496,7 +476,6 @@
 .method public setPlatform(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryBaseEvent;->platform:Ljava/lang/String;
 
     return-void
@@ -505,7 +484,6 @@
 .method public setRelease(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryBaseEvent;->release:Ljava/lang/String;
 
     return-void
@@ -514,7 +492,6 @@
 .method public setRequest(Lio/sentry/protocol/Request;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryBaseEvent;->request:Lio/sentry/protocol/Request;
 
     return-void
@@ -523,7 +500,6 @@
 .method public setSdk(Lio/sentry/protocol/SdkVersion;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryBaseEvent;->sdk:Lio/sentry/protocol/SdkVersion;
 
     return-void
@@ -532,7 +508,6 @@
 .method public setServerName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryBaseEvent;->serverName:Ljava/lang/String;
 
     return-void
@@ -574,7 +549,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newHashMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
@@ -587,7 +561,6 @@
 .method public setThrowable(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryBaseEvent;->throwable:Ljava/lang/Throwable;
 
     return-void
@@ -596,7 +569,6 @@
 .method public setUser(Lio/sentry/protocol/User;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryBaseEvent;->user:Lio/sentry/protocol/User;
 
     return-void

@@ -1,97 +1,61 @@
 .class public final Lad/d;
-.super Lle/j;
-.source "IngameFriendRequestsFragment.kt"
+.super Ljava/lang/Object;
+.source "Comparisons.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;",
-        "Ljava/lang/Exception;",
-        "Lae/i;",
-        ">;"
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "TT;>;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lad/d;
-
-
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lad/d;
-
-    invoke-direct {v0}, Lad/d;-><init>()V
-
-    sput-object v0, Lad/d;->g:Lad/d;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)I"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;
-
-    check-cast p2, Ljava/lang/Exception;
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
+    check-cast p2, Lad/k;
 
     .line 2
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-interface {p2}, Lad/k;->b()Ljava/lang/Integer;
+
+    move-result-object p2
+
+    check-cast p1, Lad/k;
+
+    .line 3
+    invoke-interface {p1}, Lad/k;->b()Ljava/lang/Integer;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    invoke-static {p2, p1}, Lid/h;->b(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    move-result p1
 
-    .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
-
-    .line 4
-    :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "it"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return p1
 .end method

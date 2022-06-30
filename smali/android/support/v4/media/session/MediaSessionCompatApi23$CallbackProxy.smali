@@ -33,7 +33,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/support/v4/media/session/MediaSessionCompatApi21$CallbackProxy;-><init>(Landroid/support/v4/media/session/MediaSessionCompatApi21$Callback;)V
 
     return-void

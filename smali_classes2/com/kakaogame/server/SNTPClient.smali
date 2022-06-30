@@ -37,7 +37,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -297,7 +296,6 @@
 .method public getNtpTime()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/server/SNTPClient;->mNtpTime:J
 
     return-wide v0
@@ -306,7 +304,6 @@
 .method public getNtpTimeReference()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/server/SNTPClient;->mNtpTimeReference:J
 
     return-wide v0
@@ -315,7 +312,6 @@
 .method public getRoundTripTime()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/server/SNTPClient;->mRoundTripTime:J
 
     return-wide v0

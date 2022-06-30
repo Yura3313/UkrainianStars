@@ -1,98 +1,118 @@
 .class public final Lcom/google/android/play/core/assetpacks/v1;
 .super Ljava/lang/Object;
 
-# interfaces
-.implements Ly4/o0;
-.implements Ld5/u;
+
+# static fields
+.field public static final c:La5/b;
 
 
 # instance fields
-.field public final g:Ljava/lang/Object;
+.field public final a:Landroid/content/Context;
+
+.field public b:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Ly4/o0;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, La5/b;
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/v1;->g:Ljava/lang/Object;
+    const-string v1, "PackageStateCache"
+
+    invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lcom/google/android/play/core/assetpacks/v1;->c:La5/b;
 
     return-void
 .end method
 
-.method public constructor <init>([B)V
-    .locals 3
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    array-length v0, p1
+    const/4 v0, -0x1
 
-    const/4 v1, 0x0
+    iput v0, p0, Lcom/google/android/play/core/assetpacks/v1;->b:I
 
-    const/16 v2, 0x20
-
-    if-ne v0, v2, :cond_0
-
-    .line 3
-    array-length v0, p1
-
-    .line 4
-    new-instance v2, Lp5/c0;
-
-    invoke-direct {v2, p1, v1, v0}, Lp5/c0;-><init>([BII)V
-
-    .line 5
-    iput-object v2, p0, Lcom/google/android/play/core/assetpacks/v1;->g:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/v1;->a:Landroid/content/Context;
 
     return-void
-
-    .line 6
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 7
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const-string v1, "Given public key\'s length is not %s."
-
-    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public bridge synthetic a()Ljava/lang/Object;
-    .locals 2
+.method public final declared-synchronized a()I
+    .locals 4
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/v1;->g:Ljava/lang/Object;
+    monitor-enter p0
 
-    check-cast v0, Ly4/o0;
+    :try_start_0
+    iget v0, p0, Lcom/google/android/play/core/assetpacks/v1;->b:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    check-cast v0, Lcom/google/android/play/core/assetpacks/p2;
+    const/4 v1, -0x1
 
-    invoke-virtual {v0}, Lcom/google/android/play/core/assetpacks/p2;->b()Landroid/content/Context;
+    if-ne v0, v1, :cond_0
 
-    move-result-object v0
+    const/4 v0, 0x0
 
-    new-instance v1, Lcom/google/android/play/core/assetpacks/u1;
+    :try_start_1
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/v1;->a:Landroid/content/Context;
 
-    invoke-direct {v1, v0}, Lcom/google/android/play/core/assetpacks/u1;-><init>(Landroid/content/Context;)V
+    invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    return-object v1
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/v1;->a:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1, v0}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+
+    move-result-object v1
+
+    iget v1, v1, Landroid/content/pm/PackageInfo;->versionCode:I
+
+    iput v1, p0, Lcom/google/android/play/core/assetpacks/v1;->b:I
+    :try_end_1
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
+
+    :catch_0
+    :try_start_2
+    sget-object v1, Lcom/google/android/play/core/assetpacks/v1;->c:La5/b;
+
+    const-string v2, "The current version of the app could not be retrieved"
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    const/4 v3, 0x6
+
+    .line 1
+    invoke-virtual {v1, v3, v2, v0}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+
+    .line 2
+    :cond_0
+    :goto_0
+    iget v0, p0, Lcom/google/android/play/core/assetpacks/v1;->b:I
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    monitor-exit p0
+
+    return v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
 .end method

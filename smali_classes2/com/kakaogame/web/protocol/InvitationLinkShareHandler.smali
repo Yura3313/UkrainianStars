@@ -9,7 +9,6 @@
 
     const-string v0, "invitationLinkShare"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/kakaogame/web/protocol/WebAppProtocolHandler;-><init>(Ljava/lang/String;)V
 
     return-void

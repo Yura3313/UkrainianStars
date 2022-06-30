@@ -6,45 +6,42 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/protobuf/g0$c;,
-        Lcom/google/protobuf/g0$b;
+        Lcom/google/protobuf/g0$b;,
+        Lcom/google/protobuf/g0$a;
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/google/protobuf/g0;
+.field public static final a:Lcom/google/protobuf/g0$a;
 
-.field public static final b:Lcom/google/protobuf/g0;
+.field public static final b:Lcom/google/protobuf/g0$b;
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    new-instance v0, Lcom/google/protobuf/g0$b;
+    new-instance v0, Lcom/google/protobuf/g0$a;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Lcom/google/protobuf/g0$a;-><init>()V
 
-    invoke-direct {v0, v1}, Lcom/google/protobuf/g0$b;-><init>(Lcom/google/protobuf/g0$a;)V
-
-    sput-object v0, Lcom/google/protobuf/g0;->a:Lcom/google/protobuf/g0;
+    sput-object v0, Lcom/google/protobuf/g0;->a:Lcom/google/protobuf/g0$a;
 
     .line 2
-    new-instance v0, Lcom/google/protobuf/g0$c;
+    new-instance v0, Lcom/google/protobuf/g0$b;
 
-    invoke-direct {v0, v1}, Lcom/google/protobuf/g0$c;-><init>(Lcom/google/protobuf/g0$a;)V
+    invoke-direct {v0}, Lcom/google/protobuf/g0$b;-><init>()V
 
-    sput-object v0, Lcom/google/protobuf/g0;->b:Lcom/google/protobuf/g0;
+    sput-object v0, Lcom/google/protobuf/g0;->b:Lcom/google/protobuf/g0$b;
 
     return-void
 .end method
 
-.method public constructor <init>(Lcom/google/protobuf/g0$a;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

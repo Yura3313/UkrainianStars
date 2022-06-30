@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;
-.super Lle/j;
+.super Lse/h;
 .source "IngameInviteToPlayFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
@@ -18,64 +18,64 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lvd/k<",
+        "Lse/h;",
+        "Lre/l<",
+        "Lae/m<",
         "+",
         "Ljava/util/List<",
         "+",
-        "Lbd/b;",
+        "Lgd/b;",
         ">;+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
     .line 1
-    check-cast p1, Lvd/k;
+    check-cast p1, Lae/m;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     .line 3
-    instance-of v1, p1, Lvd/k$a;
+    instance-of v1, p1, Lae/m$a;
 
     if-eqz v1, :cond_0
 
-    check-cast p1, Lvd/k$a;
+    check-cast p1, Lae/m$a;
 
     .line 4
-    iget-object p1, p1, Lvd/k$a;->a:Ljava/lang/Object;
+    iget-object p1, p1, Lae/m$a;->a:Ljava/lang/Object;
 
     .line 5
     check-cast p1, Ljava/util/List;
 
-    invoke-static {p1}, Lbd/g;->a(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p1}, Lgd/g;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
@@ -83,23 +83,23 @@
 
     .line 6
     :cond_0
-    instance-of v1, p1, Lvd/k$b;
+    instance-of v1, p1, Lae/m$b;
 
     if-eqz v1, :cond_1
 
-    new-instance v1, Lvd/o;
+    new-instance v1, Lae/q;
 
-    check-cast p1, Lvd/k$b;
+    check-cast p1, Lae/m$b;
 
     .line 7
-    iget-object p1, p1, Lvd/k$b;->a:Ljava/lang/Object;
+    iget-object p1, p1, Lae/m$b;->a:Ljava/lang/Object;
 
     .line 8
     check-cast p1, Lcom/supercell/id/util/NormalizedError;
 
-    invoke-direct {v1, p1}, Lvd/o;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+    invoke-direct {v1, p1}, Lae/q;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v1}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -110,13 +110,13 @@
 
     .line 9
     :goto_0
-    sget v1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->t0:I
+    sget v1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->r0:I
 
     .line 10
-    invoke-virtual {v0, p1}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->r1(Ljava/util/List;)V
+    invoke-virtual {v0, p1}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->i1(Ljava/util/List;)V
 
     .line 11
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
 .end method

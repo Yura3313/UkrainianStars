@@ -34,7 +34,6 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/infodesk/InfodeskNoticeManager$4;->val$linkUrl:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -62,6 +61,7 @@
 
     move-result-object p1
 
+    .line 2
     iget-object v0, p0, Lcom/kakaogame/infodesk/InfodeskNoticeManager$4;->val$linkUrl:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;

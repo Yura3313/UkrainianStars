@@ -98,7 +98,6 @@
 .method public getClient()Lio/sentry/ISentryClient;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Stack$StackItem;->client:Lio/sentry/ISentryClient;
 
     return-object v0
@@ -107,7 +106,6 @@
 .method public getOptions()Lio/sentry/SentryOptions;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Stack$StackItem;->options:Lio/sentry/SentryOptions;
 
     return-object v0
@@ -116,7 +114,6 @@
 .method public getScope()Lio/sentry/Scope;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Stack$StackItem;->scope:Lio/sentry/Scope;
 
     return-object v0
@@ -125,7 +122,6 @@
 .method public setClient(Lio/sentry/ISentryClient;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/Stack$StackItem;->client:Lio/sentry/ISentryClient;
 
     return-void

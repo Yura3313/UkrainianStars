@@ -4,11 +4,10 @@
 
 
 # virtual methods
-.method public final Z1()V
+.method public final d2()V
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 1
     throw v0
 .end method

@@ -9,10 +9,10 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Ll0/b$j;,
         Ll0/b$i;,
         Ll0/b$h;,
-        Ll0/b$k;
+        Ll0/b$g;,
+        Ll0/b$j;
     }
 .end annotation
 
@@ -28,17 +28,17 @@
 
 
 # static fields
-.field public static final k:Ll0/b$k;
+.field public static final k:Ll0/b$b;
 
-.field public static final l:Ll0/b$k;
+.field public static final l:Ll0/b$c;
 
-.field public static final m:Ll0/b$k;
+.field public static final m:Ll0/b$d;
 
-.field public static final n:Ll0/b$k;
+.field public static final n:Ll0/b$e;
 
-.field public static final o:Ll0/b$k;
+.field public static final o:Ll0/b$f;
 
-.field public static final p:Ll0/b$k;
+.field public static final p:Ll0/b$a;
 
 
 # instance fields
@@ -62,7 +62,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Ll0/b$i;",
+            "Ll0/b$h;",
             ">;"
         }
     .end annotation
@@ -72,7 +72,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Ll0/b$j;",
+            "Ll0/b$i;",
             ">;"
         }
     .end annotation
@@ -81,61 +81,49 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    new-instance v0, Ll0/b$c;
+    new-instance v0, Ll0/b$b;
 
-    const-string v1, "scaleX"
+    invoke-direct {v0}, Ll0/b$b;-><init>()V
 
-    invoke-direct {v0, v1}, Ll0/b$c;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Ll0/b;->k:Ll0/b$k;
+    sput-object v0, Ll0/b;->k:Ll0/b$b;
 
     .line 2
-    new-instance v0, Ll0/b$d;
+    new-instance v0, Ll0/b$c;
 
-    const-string v1, "scaleY"
+    invoke-direct {v0}, Ll0/b$c;-><init>()V
 
-    invoke-direct {v0, v1}, Ll0/b$d;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Ll0/b;->l:Ll0/b$k;
+    sput-object v0, Ll0/b;->l:Ll0/b$c;
 
     .line 3
-    new-instance v0, Ll0/b$e;
+    new-instance v0, Ll0/b$d;
 
-    const-string v1, "rotation"
+    invoke-direct {v0}, Ll0/b$d;-><init>()V
 
-    invoke-direct {v0, v1}, Ll0/b$e;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Ll0/b;->m:Ll0/b$k;
+    sput-object v0, Ll0/b;->m:Ll0/b$d;
 
     .line 4
-    new-instance v0, Ll0/b$f;
+    new-instance v0, Ll0/b$e;
 
-    const-string v1, "rotationX"
+    invoke-direct {v0}, Ll0/b$e;-><init>()V
 
-    invoke-direct {v0, v1}, Ll0/b$f;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Ll0/b;->n:Ll0/b$k;
+    sput-object v0, Ll0/b;->n:Ll0/b$e;
 
     .line 5
-    new-instance v0, Ll0/b$g;
+    new-instance v0, Ll0/b$f;
 
-    const-string v1, "rotationY"
+    invoke-direct {v0}, Ll0/b$f;-><init>()V
 
-    invoke-direct {v0, v1}, Ll0/b$g;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Ll0/b;->o:Ll0/b$k;
+    sput-object v0, Ll0/b;->o:Ll0/b$f;
 
     .line 6
     new-instance v0, Ll0/b$a;
 
-    const-string v1, "alpha"
+    invoke-direct {v0}, Ll0/b$a;-><init>()V
 
-    invoke-direct {v0, v1}, Ll0/b$a;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Ll0/b;->p:Ll0/b$k;
+    sput-object v0, Ll0/b;->p:Ll0/b$a;
 
     return-void
 .end method
@@ -201,15 +189,15 @@
     iput-object p2, p0, Ll0/b;->d:Ll0/c;
 
     .line 11
-    sget-object p1, Ll0/b;->m:Ll0/b$k;
+    sget-object p1, Ll0/b;->m:Ll0/b$d;
 
     if-eq p2, p1, :cond_4
 
-    sget-object p1, Ll0/b;->n:Ll0/b$k;
+    sget-object p1, Ll0/b;->n:Ll0/b$e;
 
     if-eq p2, p1, :cond_4
 
-    sget-object p1, Ll0/b;->o:Ll0/b$k;
+    sget-object p1, Ll0/b;->o:Ll0/b$f;
 
     if-ne p2, p1, :cond_0
 
@@ -217,7 +205,7 @@
 
     .line 12
     :cond_0
-    sget-object p1, Ll0/b;->p:Ll0/b$k;
+    sget-object p1, Ll0/b;->p:Ll0/b$a;
 
     const/high16 v0, 0x3b800000    # 0.00390625f
 
@@ -230,11 +218,11 @@
 
     .line 14
     :cond_1
-    sget-object p1, Ll0/b;->k:Ll0/b$k;
+    sget-object p1, Ll0/b;->k:Ll0/b$b;
 
     if-eq p2, p1, :cond_3
 
-    sget-object p1, Ll0/b;->l:Ll0/b$k;
+    sget-object p1, Ll0/b;->l:Ll0/b$c;
 
     if-ne p2, p1, :cond_2
 
@@ -309,7 +297,7 @@
 
 
 # virtual methods
-.method public a(J)Z
+.method public final a(J)Z
     .locals 25
 
     move-object/from16 v0, p0
@@ -384,7 +372,7 @@
 
     move-wide/from16 v20, v23
 
-    invoke-virtual/range {v15 .. v21}, Ll0/e;->c(DDJ)Ll0/b$h;
+    invoke-virtual/range {v15 .. v21}, Ll0/e;->c(DDJ)Ll0/b$g;
 
     move-result-object v3
 
@@ -402,11 +390,11 @@
     iput v4, v1, Ll0/d;->r:F
 
     .line 13
-    iget v9, v3, Ll0/b$h;->a:F
+    iget v9, v3, Ll0/b$g;->a:F
 
     float-to-double v9, v9
 
-    iget v3, v3, Ll0/b$h;->b:F
+    iget v3, v3, Ll0/b$g;->b:F
 
     float-to-double v11, v3
 
@@ -416,17 +404,17 @@
 
     move-wide/from16 v21, v11
 
-    invoke-virtual/range {v18 .. v24}, Ll0/e;->c(DDJ)Ll0/b$h;
+    invoke-virtual/range {v18 .. v24}, Ll0/e;->c(DDJ)Ll0/b$g;
 
     move-result-object v3
 
     .line 14
-    iget v8, v3, Ll0/b$h;->a:F
+    iget v8, v3, Ll0/b$g;->a:F
 
     iput v8, v1, Ll0/b;->b:F
 
     .line 15
-    iget v3, v3, Ll0/b$h;->b:F
+    iget v3, v3, Ll0/b$g;->b:F
 
     iput v3, v1, Ll0/b;->a:F
 
@@ -444,17 +432,17 @@
 
     float-to-double v11, v3
 
-    invoke-virtual/range {v8 .. v14}, Ll0/e;->c(DDJ)Ll0/b$h;
+    invoke-virtual/range {v8 .. v14}, Ll0/e;->c(DDJ)Ll0/b$g;
 
     move-result-object v3
 
     .line 17
-    iget v8, v3, Ll0/b$h;->a:F
+    iget v8, v3, Ll0/b$g;->a:F
 
     iput v8, v1, Ll0/b;->b:F
 
     .line 18
-    iget v3, v3, Ll0/b$h;->b:F
+    iget v3, v3, Ll0/b$g;->b:F
 
     iput v3, v1, Ll0/b;->a:F
 
@@ -611,44 +599,38 @@
     :cond_4
     iput-wide v6, v0, Ll0/b;->g:J
 
-    const/4 v2, 0x0
-
     .line 40
     :goto_3
-    iget-object v3, v0, Ll0/b;->i:Ljava/util/ArrayList;
+    iget-object v2, v0, Ll0/b;->i:Ljava/util/ArrayList;
 
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
-    move-result v3
+    move-result v2
 
-    if-ge v2, v3, :cond_6
+    if-ge v5, v2, :cond_6
 
     .line 41
-    iget-object v3, v0, Ll0/b;->i:Ljava/util/ArrayList;
+    iget-object v2, v0, Ll0/b;->i:Ljava/util/ArrayList;
 
-    invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v2
 
-    if-eqz v3, :cond_5
+    if-eqz v2, :cond_5
 
     .line 42
-    iget-object v3, v0, Ll0/b;->i:Ljava/util/ArrayList;
+    iget-object v2, v0, Ll0/b;->i:Ljava/util/ArrayList;
 
-    invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v2
 
-    check-cast v3, Ll0/b$i;
+    check-cast v2, Ll0/b$h;
 
-    iget v4, v0, Ll0/b;->b:F
-
-    iget v6, v0, Ll0/b;->a:F
-
-    invoke-interface {v3, v0, v5, v4, v6}, Ll0/b$i;->a(Ll0/b;ZFF)V
+    invoke-interface {v2}, Ll0/b$h;->a()V
 
     :cond_5
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_3
 
@@ -662,8 +644,8 @@
     return v1
 .end method
 
-.method public c(F)V
-    .locals 3
+.method public final c(F)V
+    .locals 2
 
     .line 1
     iget-object v0, p0, Ll0/b;->d:Ll0/c;
@@ -700,13 +682,9 @@
 
     move-result-object v0
 
-    check-cast v0, Ll0/b$j;
+    check-cast v0, Ll0/b$i;
 
-    iget v1, p0, Ll0/b;->b:F
-
-    iget v2, p0, Ll0/b;->a:F
-
-    invoke-interface {v0, p0, v1, v2}, Ll0/b$j;->a(Ll0/b;FF)V
+    invoke-interface {v0}, Ll0/b$i;->a()V
 
     :cond_0
     add-int/lit8 p1, p1, 0x1

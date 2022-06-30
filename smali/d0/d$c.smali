@@ -39,21 +39,21 @@
 .method public abstract a()Z
 .end method
 
-.method public b(Ljava/lang/CharSequence;II)Z
+.method public final b(Ljava/lang/CharSequence;I)Z
     .locals 1
 
-    if-ltz p2, :cond_3
+    if-eqz p1, :cond_3
 
-    if-ltz p3, :cond_3
+    if-ltz p2, :cond_3
 
     .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
 
-    sub-int/2addr v0, p3
+    sub-int/2addr v0, p2
 
-    if-lt v0, p2, :cond_3
+    if-ltz v0, :cond_3
 
     .line 2
     iget-object v0, p0, Ld0/d$c;->a:Ld0/d$b;
@@ -69,7 +69,7 @@
 
     .line 4
     :cond_0
-    invoke-interface {v0, p1, p2, p3}, Ld0/d$b;->a(Ljava/lang/CharSequence;II)I
+    invoke-interface {v0, p1, p2}, Ld0/d$b;->a(Ljava/lang/CharSequence;I)I
 
     move-result p1
 

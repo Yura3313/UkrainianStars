@@ -11,7 +11,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/google/gson/internal/JavaVersion;->determineMajorJavaVersion()I
 
     move-result v0
@@ -24,7 +23,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -146,7 +144,6 @@
 .method public static isJava9OrLater()Z
     .locals 2
 
-    .line 1
     sget v0, Lcom/google/gson/internal/JavaVersion;->majorJavaVersion:I
 
     const/16 v1, 0x9

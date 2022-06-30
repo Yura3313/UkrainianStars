@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/GameApp$g;
+.class public final Lcom/supercell/titan/GameApp$g;
 .super Ljava/lang/Object;
 .source "GameApp.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/titan/GameApp;->hapticFeedback(I)V
+    value = Lcom/supercell/titan/GameApp;->queuePushNotificationValueUpdate(ILjava/lang/String;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,15 +18,22 @@
 
 
 # instance fields
-.field public final synthetic g:I
+.field public final synthetic f:I
+
+.field public final synthetic g:Ljava/lang/String;
+
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(I)V
+.method public constructor <init>(ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
-    iput p1, p0, Lcom/supercell/titan/GameApp$g;->g:I
+    iput p1, p0, Lcom/supercell/titan/GameApp$g;->f:I
+
+    iput-object p2, p0, Lcom/supercell/titan/GameApp$g;->g:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/supercell/titan/GameApp$g;->h:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +42,7 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 3
 
     .line 1
@@ -43,15 +50,33 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/supercell/titan/GameApp;->getView()Lcom/supercell/titan/GL2JNISurfaceView;
+    if-eqz v0, :cond_0
+
+    invoke-static {}, Lcom/supercell/titan/GameApp;->isNativeLibraryLoaded()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/supercell/titan/GameApp$g;->g:I
+    invoke-virtual {v0}, Lcom/supercell/titan/GameApp;->isStopped()Z
 
-    const/4 v2, 0x2
+    move-result v0
 
-    invoke-virtual {v0, v1, v2}, Landroid/view/SurfaceView;->performHapticFeedback(II)Z
+    if-nez v0, :cond_0
 
+    .line 2
+    iget v0, p0, Lcom/supercell/titan/GameApp$g;->f:I
+
+    iget-object v1, p0, Lcom/supercell/titan/GameApp$g;->g:Ljava/lang/String;
+
+    iget-object v2, p0, Lcom/supercell/titan/GameApp$g;->h:Ljava/lang/String;
+
+    invoke-static {v0, v1, v2}, Lcom/supercell/titan/GameApp;->setPushNotificationValues(ILjava/lang/String;Ljava/lang/String;)V
+
+    :cond_0
     return-void
 .end method

@@ -1,6 +1,6 @@
 .class public final Lnd/g;
 .super Ljava/lang/Object;
-.source "FriendsFragment.kt"
+.source "Comparisons.kt"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -14,29 +14,12 @@
         ">",
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lnd/a;",
-        ">;"
+        "TT;>;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lnd/g;
-
-
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lnd/g;
-
-    invoke-direct {v0}, Lnd/g;-><init>()V
-
-    sput-object v0, Lnd/g;->g:Lnd/g;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
@@ -47,21 +30,34 @@
 
 
 # virtual methods
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)I"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Lnd/a;
-
     check-cast p2, Lnd/a;
 
     .line 2
-    iget-object p1, p1, Lnd/a;->c:Ljava/lang/String;
-
-    iget-object p2, p2, Lnd/a;->c:Ljava/lang/String;
+    iget-object p2, p2, Lnd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
     .line 3
-    invoke-static {p1, p2}, Li1/n;->a(Ljava/lang/String;Ljava/lang/String;)I
+    iget-object p2, p2, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+
+    .line 4
+    check-cast p1, Lnd/a;
+
+    .line 5
+    iget-object p1, p1, Lnd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    .line 6
+    iget-object p1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+
+    .line 7
+    invoke-static {p2, p1}, Lid/h;->b(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
     move-result p1
 

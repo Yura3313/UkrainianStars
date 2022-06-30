@@ -46,7 +46,6 @@
 .method public constructor <init>(JJLjava/lang/Long;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lcom/kakao/sdk/user/model/AccessTokenInfo;->id:J
@@ -210,7 +209,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/user/model/AccessTokenInfo;->expiresInMillis:Ljava/lang/Long;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -229,7 +228,6 @@
 .method public final getExpiresIn()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakao/sdk/user/model/AccessTokenInfo;->expiresIn:J
 
     return-wide v0
@@ -238,7 +236,6 @@
 .method public final getExpiresInMillis()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/AccessTokenInfo;->expiresInMillis:Ljava/lang/Long;
 
     return-object v0
@@ -247,7 +244,6 @@
 .method public final getId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakao/sdk/user/model/AccessTokenInfo;->id:J
 
     return-wide v0
@@ -304,10 +300,12 @@
 
     const-string v0, "AccessTokenInfo(id="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-wide v1, p0, Lcom/kakao/sdk/user/model/AccessTokenInfo;->id:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
@@ -342,7 +340,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    if-eqz p1, :cond_1
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-wide v0, p0, Lcom/kakao/sdk/user/model/AccessTokenInfo;->id:J
 
@@ -375,14 +375,4 @@
 
     :goto_0
     return-void
-
-    :cond_1
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

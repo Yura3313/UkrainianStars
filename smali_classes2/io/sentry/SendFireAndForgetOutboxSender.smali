@@ -136,7 +136,7 @@
     return-object p1
 .end method
 
-.method public synthetic hasValidPath(Ljava/lang/String;Lio/sentry/ILogger;)Z
+.method public final synthetic hasValidPath(Ljava/lang/String;Lio/sentry/ILogger;)Z
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/k;->a(Lio/sentry/SendCachedEnvelopeFireAndForgetIntegration$SendFireAndForgetFactory;Ljava/lang/String;Lio/sentry/ILogger;)Z
@@ -146,7 +146,7 @@
     return p1
 .end method
 
-.method public synthetic processDir(Lio/sentry/DirectoryProcessor;Ljava/lang/String;Lio/sentry/ILogger;)Lio/sentry/SendCachedEnvelopeFireAndForgetIntegration$SendFireAndForget;
+.method public final synthetic processDir(Lio/sentry/DirectoryProcessor;Ljava/lang/String;Lio/sentry/ILogger;)Lio/sentry/SendCachedEnvelopeFireAndForgetIntegration$SendFireAndForget;
     .locals 0
 
     invoke-static {p0, p1, p2, p3}, Lio/sentry/k;->b(Lio/sentry/SendCachedEnvelopeFireAndForgetIntegration$SendFireAndForgetFactory;Lio/sentry/DirectoryProcessor;Ljava/lang/String;Lio/sentry/ILogger;)Lio/sentry/SendCachedEnvelopeFireAndForgetIntegration$SendFireAndForget;

@@ -1,4 +1,4 @@
-.class public Lu/f$b;
+.class public final Lu/f$b;
 .super Lu/f$d;
 .source "NotificationCompat.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lu/f$d;-><init>()V
 
     return-void
@@ -30,10 +29,9 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/CharSequence;)Lu/f$b;
+.method public final a(Ljava/lang/CharSequence;)Lu/f$b;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lu/f$c;->b(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object p1

@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/protobuf/Empty$b;
+        Lcom/google/protobuf/Empty$a;
     }
 .end annotation
 
@@ -17,7 +17,7 @@
     value = {
         "Lcom/google/protobuf/GeneratedMessageLite<",
         "Lcom/google/protobuf/Empty;",
-        "Lcom/google/protobuf/Empty$b;",
+        "Lcom/google/protobuf/Empty$a;",
         ">;",
         "Lcom/google/protobuf/r0;"
     }
@@ -61,7 +61,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
     return-void
@@ -70,7 +69,6 @@
 .method public static synthetic access$000()Lcom/google/protobuf/Empty;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Empty;->DEFAULT_INSTANCE:Lcom/google/protobuf/Empty;
 
     return-object v0
@@ -79,38 +77,37 @@
 .method public static getDefaultInstance()Lcom/google/protobuf/Empty;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Empty;->DEFAULT_INSTANCE:Lcom/google/protobuf/Empty;
 
     return-object v0
 .end method
 
-.method public static newBuilder()Lcom/google/protobuf/Empty$b;
+.method public static newBuilder()Lcom/google/protobuf/Empty$a;
     .locals 1
 
     .line 1
     sget-object v0, Lcom/google/protobuf/Empty;->DEFAULT_INSTANCE:Lcom/google/protobuf/Empty;
 
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$b;
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$a;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/protobuf/Empty$b;
+    check-cast v0, Lcom/google/protobuf/Empty$a;
 
     return-object v0
 .end method
 
-.method public static newBuilder(Lcom/google/protobuf/Empty;)Lcom/google/protobuf/Empty$b;
+.method public static newBuilder(Lcom/google/protobuf/Empty;)Lcom/google/protobuf/Empty$a;
     .locals 1
 
     .line 2
     sget-object v0, Lcom/google/protobuf/Empty;->DEFAULT_INSTANCE:Lcom/google/protobuf/Empty;
 
-    invoke-virtual {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+    invoke-virtual {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$a;
 
     move-result-object p0
 
-    check-cast p0, Lcom/google/protobuf/Empty$b;
+    check-cast p0, Lcom/google/protobuf/Empty$a;
 
     return-object p0
 .end method
@@ -366,7 +363,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Empty;->DEFAULT_INSTANCE:Lcom/google/protobuf/Empty;
 
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/c1;
@@ -378,7 +374,7 @@
 
 
 # virtual methods
-.method public final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$f;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 1
@@ -428,11 +424,11 @@
     if-nez p1, :cond_0
 
     .line 7
-    new-instance p1, Lcom/google/protobuf/GeneratedMessageLite$c;
+    new-instance p1, Lcom/google/protobuf/GeneratedMessageLite$b;
 
     sget-object p3, Lcom/google/protobuf/Empty;->DEFAULT_INSTANCE:Lcom/google/protobuf/Empty;
 
-    invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$c;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+    invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$b;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
 
     .line 8
     sput-object p1, Lcom/google/protobuf/Empty;->PARSER:Lcom/google/protobuf/c1;
@@ -476,13 +472,14 @@
 
     .line 12
     :pswitch_5
-    new-instance p1, Lcom/google/protobuf/Empty$b;
+    new-instance p1, Lcom/google/protobuf/Empty$a;
 
-    invoke-direct {p1, p2}, Lcom/google/protobuf/Empty$b;-><init>(Lcom/google/protobuf/Empty$a;)V
+    .line 13
+    invoke-direct {p1}, Lcom/google/protobuf/Empty$a;-><init>()V
 
     return-object p1
 
-    .line 13
+    .line 14
     :pswitch_6
     new-instance p1, Lcom/google/protobuf/Empty;
 

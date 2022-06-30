@@ -19,7 +19,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -78,7 +77,7 @@
     move-exception p0
 
     .line 5
-    invoke-virtual {p0}, Ljava/lang/NumberFormatException;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_1
     :goto_0
@@ -148,7 +147,7 @@
     move-exception p0
 
     .line 5
-    invoke-virtual {p0}, Ljava/lang/NumberFormatException;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_1
     :goto_0
@@ -216,7 +215,7 @@
     const-string v0, "[getNetworkCountryCode] getNetworkCountryIso : "
 
     .line 6
-    invoke-static {v0, p0, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p0, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object p0
 
@@ -278,7 +277,7 @@
     const-string p0, "[getNetworkOperatorName] networkOperatorName: "
 
     .line 5
-    invoke-static {p0, v0, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p0, v0, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
 
@@ -389,7 +388,7 @@
     const-string v0, "[getNetworkCountryCode] getNetworkCountryIso : "
 
     .line 8
-    invoke-static {v0, p0, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p0, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object p0
 

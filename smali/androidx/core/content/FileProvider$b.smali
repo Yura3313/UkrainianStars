@@ -1,4 +1,4 @@
-.class public Landroidx/core/content/FileProvider$b;
+.class public final Landroidx/core/content/FileProvider$b;
 .super Ljava/lang/Object;
 .source "FileProvider.java"
 
@@ -54,7 +54,7 @@
 
 
 # virtual methods
-.method public a(Landroid/net/Uri;)Ljava/io/File;
+.method public final a(Landroid/net/Uri;)Ljava/io/File;
     .locals 4
 
     .line 1
@@ -187,7 +187,7 @@
     throw v0
 .end method
 
-.method public b(Ljava/io/File;)Landroid/net/Uri;
+.method public final b(Ljava/io/File;)Landroid/net/Uri;
     .locals 5
 
     .line 1
@@ -383,15 +383,17 @@
 
     const-string v1, "Failed to find configured root that contains "
 
-    invoke-static {v1, p1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 14
+    invoke-static {v1, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 15
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 14
+    .line 16
     :catch_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

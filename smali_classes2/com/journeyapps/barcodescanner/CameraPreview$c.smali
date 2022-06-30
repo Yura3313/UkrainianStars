@@ -1,9 +1,9 @@
-.class public Lcom/journeyapps/barcodescanner/CameraPreview$c;
+.class public final Lcom/journeyapps/barcodescanner/CameraPreview$c;
 .super Ljava/lang/Object;
 .source "CameraPreview.java"
 
 # interfaces
-.implements Lob/l;
+.implements Lrb/l;
 
 
 # annotations
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/journeyapps/barcodescanner/CameraPreview;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/journeyapps/barcodescanner/CameraPreview$c;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public static synthetic issueAccessToken$default(Lcom/kakao/sdk/partner/auth/PartnerAuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic issueAccessToken$default(Lcom/kakao/sdk/partner/auth/PartnerAuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lef/b;
     .locals 6
 
     if-nez p7, :cond_2
@@ -47,7 +47,7 @@
     move-object v3, p3
 
     .line 1
-    invoke-interface/range {v0 .. v5}, Lcom/kakao/sdk/partner/auth/PartnerAuthApi;->issueAccessToken(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lxe/b;
+    invoke-interface/range {v0 .. v5}, Lcom/kakao/sdk/partner/auth/PartnerAuthApi;->issueAccessToken(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lef/b;
 
     move-result-object p0
 

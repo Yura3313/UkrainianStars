@@ -89,7 +89,6 @@
 .method public static getDefaultImpl()Landroid/support/v4/app/INotificationSideChannel;
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->sDefaultImpl:Landroid/support/v4/app/INotificationSideChannel;
 
     return-object v0

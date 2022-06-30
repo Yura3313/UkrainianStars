@@ -1,4 +1,4 @@
-.class public Lc0/e$a;
+.class public final Lc0/e$a;
 .super Ljava/lang/Object;
 .source "FontsContractCompat.java"
 
@@ -29,7 +29,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,7 +36,7 @@
 
 
 # virtual methods
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 4
 
     .line 1

@@ -37,7 +37,7 @@
 
 .field public g:I
 
-.field public final h:Landroid/view/View$OnLayoutChangeListener;
+.field public final h:Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$a;
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     invoke-direct {v0, p0}, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$a;-><init>(Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;)V
 
-    iput-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->h:Landroid/view/View$OnLayoutChangeListener;
+    iput-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->h:Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$a;
 
     .line 3
     new-instance v0, Landroid/graphics/Rect;
@@ -75,7 +75,7 @@
 
     invoke-direct {p1, p0}, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$a;-><init>(Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;)V
 
-    iput-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->h:Landroid/view/View$OnLayoutChangeListener;
+    iput-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->h:Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$a;
 
     .line 6
     new-instance p1, Landroid/graphics/Rect;
@@ -89,7 +89,7 @@
 
 
 # virtual methods
-.method public h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
+.method public final h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
     .locals 3
 
     .line 1
@@ -103,17 +103,17 @@
     iput-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->f:Ljava/lang/ref/WeakReference;
 
     .line 3
-    sget v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->q0:I
+    sget v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->o0:I
 
     .line 4
-    invoke-virtual {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->L()Landroid/view/View;
+    invoke-virtual {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->K()Landroid/view/View;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 5
-    invoke-static {v0}, Lf0/r;->p(Landroid/view/View;)Z
+    invoke-static {v0}, Lf0/r;->s(Landroid/view/View;)Z
 
     move-result v1
 
@@ -145,12 +145,12 @@
     check-cast v0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
     .line 11
-    iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->h:Landroid/view/View$OnLayoutChangeListener;
+    iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->h:Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$a;
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
     .line 12
-    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->o0:Landroid/animation/AnimatorListenerAdapter;
+    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:Lcom/google/android/material/bottomappbar/BottomAppBar$a;
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->d(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -162,13 +162,13 @@
     invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->e(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 14
-    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->p0:Lc4/i;
+    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->n0:Lcom/google/android/material/bottomappbar/BottomAppBar$b;
 
-    invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->f(Lc4/i;)V
+    invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->f(Ld4/j;)V
 
     .line 15
     :cond_0
-    invoke-virtual {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->R()V
+    invoke-virtual {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->Q()V
 
     .line 16
     :cond_1
@@ -197,7 +197,7 @@
     return p1
 .end method
 
-.method public q(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;II)Z
+.method public final q(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;II)Z
     .locals 0
 
     .line 1
@@ -216,7 +216,7 @@
 
     const/4 p1, 0x2
 
-    if-ne p5, p1, :cond_0
+    if-ne p4, p1, :cond_0
 
     const/4 p1, 0x1
 

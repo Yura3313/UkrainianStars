@@ -1,67 +1,69 @@
-.class public Landroidx/appcompat/widget/l;
-.super Landroidx/appcompat/widget/u;
-.source "AppCompatSpinner.java"
+.class public final Landroidx/appcompat/widget/l;
+.super Ljava/lang/Object;
+.source "AppCompatTextClassifierHelper.java"
 
 
 # instance fields
-.field public final synthetic p:Landroidx/appcompat/widget/AppCompatSpinner$d;
+.field public a:Landroid/widget/TextView;
 
-.field public final synthetic q:Landroidx/appcompat/widget/AppCompatSpinner;
+.field public b:Landroid/view/textclassifier/TextClassifier;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/widget/AppCompatSpinner;Landroid/view/View;Landroidx/appcompat/widget/AppCompatSpinner$d;)V
+.method public constructor <init>(Landroid/widget/TextView;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/l;->q:Landroidx/appcompat/widget/AppCompatSpinner;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p3, p0, Landroidx/appcompat/widget/l;->p:Landroidx/appcompat/widget/AppCompatSpinner$d;
+    .line 2
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-direct {p0, p2}, Landroidx/appcompat/widget/u;-><init>(Landroid/view/View;)V
+    .line 3
+    iput-object p1, p0, Landroidx/appcompat/widget/l;->a:Landroid/widget/TextView;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b()Lg/f;
-    .locals 1
+.method public final a()Landroid/view/textclassifier/TextClassifier;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/l;->p:Landroidx/appcompat/widget/AppCompatSpinner$d;
+    iget-object v0, p0, Landroidx/appcompat/widget/l;->b:Landroid/view/textclassifier/TextClassifier;
 
-    return-object v0
-.end method
+    if-nez v0, :cond_1
 
-.method public c()Z
-    .locals 1
-    .annotation build Landroid/annotation/SuppressLint;
-        value = {
-            "SyntheticAccessor"
-        }
-    .end annotation
+    .line 2
+    iget-object v0, p0, Landroidx/appcompat/widget/l;->a:Landroid/widget/TextView;
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/l;->q:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->getInternalPopup()Landroidx/appcompat/widget/AppCompatSpinner$e;
+    .line 3
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-interface {v0}, Landroidx/appcompat/widget/AppCompatSpinner$e;->a()Z
+    const-class v1, Landroid/view/textclassifier/TextClassificationManager;
 
-    move-result v0
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
 
-    if-nez v0, :cond_0
+    move-result-object v0
 
-    .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/l;->q:Landroidx/appcompat/widget/AppCompatSpinner;
+    check-cast v0, Landroid/view/textclassifier/TextClassificationManager;
 
-    invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->b()V
+    if-eqz v0, :cond_0
 
+    .line 4
+    invoke-virtual {v0}, Landroid/view/textclassifier/TextClassificationManager;->getTextClassifier()Landroid/view/textclassifier/TextClassifier;
+
+    move-result-object v0
+
+    return-object v0
+
+    .line 5
     :cond_0
-    const/4 v0, 0x1
+    sget-object v0, Landroid/view/textclassifier/TextClassifier;->NO_OP:Landroid/view/textclassifier/TextClassifier;
 
-    return v0
+    :cond_1
+    return-object v0
 .end method

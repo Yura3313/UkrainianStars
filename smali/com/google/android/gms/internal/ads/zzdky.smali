@@ -4,13 +4,12 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+.method public constructor <init>(Ljava/lang/Throwable;)V
     .locals 1
 
-    const/4 v0, 0x1
+    const-string v0, "unable to parse ServerResponse"
 
-    .line 1
-    invoke-direct {p0, v0, p1, p2}, Lcom/google/android/gms/internal/ads/zzcmt;-><init>(ILjava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p0, v0, p1}, Lcom/google/android/gms/internal/ads/zzcmt;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
 .end method

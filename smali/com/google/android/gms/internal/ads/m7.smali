@@ -3,13 +3,13 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/hy0;
+.implements Lk3/wx0;
 
 
 # static fields
-.field public static final x:I
+.field public static final w:I
 
-.field public static final y:[B
+.field public static final x:[B
 
 
 # instance fields
@@ -17,21 +17,21 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray<",
-            "Lj3/fz0;",
+            "Lk3/vy0;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final b:Lj3/d21;
+.field public final b:Lk3/s11;
 
-.field public final c:Lj3/d21;
+.field public final c:Lk3/s11;
 
-.field public final d:Lj3/d21;
+.field public final d:Lk3/s11;
 
-.field public final e:Lj3/d21;
+.field public final e:Lk3/s11;
 
-.field public final f:Lj3/d21;
+.field public final f:Lk3/s11;
 
 .field public final g:[B
 
@@ -39,7 +39,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Stack<",
-            "Lj3/zy0;",
+            "Lk3/oy0;",
             ">;"
         }
     .end annotation
@@ -49,7 +49,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedList<",
-            "Lj3/gz0;",
+            "Lk3/wy0;",
             ">;"
         }
     .end annotation
@@ -63,25 +63,23 @@
 
 .field public m:I
 
-.field public n:Lj3/d21;
+.field public n:Lk3/s11;
 
 .field public o:J
 
-.field public p:I
+.field public p:J
 
-.field public q:J
+.field public q:Lk3/vy0;
 
-.field public r:Lj3/fz0;
+.field public r:I
 
 .field public s:I
 
 .field public t:I
 
-.field public u:I
+.field public u:Lk3/yx0;
 
-.field public v:Lj3/jy0;
-
-.field public w:Z
+.field public v:Z
 
 
 # direct methods
@@ -91,11 +89,11 @@
     const-string v0, "seig"
 
     .line 1
-    invoke-static {v0}, Lj3/g21;->f(Ljava/lang/String;)I
+    invoke-static {v0}, Lk3/v11;->f(Ljava/lang/String;)I
 
     move-result v0
 
-    sput v0, Lcom/google/android/gms/internal/ads/m7;->x:I
+    sput v0, Lcom/google/android/gms/internal/ads/m7;->w:I
 
     const/16 v0, 0x10
 
@@ -104,7 +102,7 @@
     .line 2
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/google/android/gms/internal/ads/m7;->y:[B
+    sput-object v0, Lcom/google/android/gms/internal/ads/m7;->x:[B
 
     return-void
 
@@ -136,47 +134,47 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Lj3/d21;
+    new-instance v0, Lk3/s11;
 
     const/16 v1, 0x10
 
-    invoke-direct {v0, v1}, Lj3/d21;-><init>(I)V
+    invoke-direct {v0, v1}, Lk3/s11;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/m7;->f:Lj3/d21;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/m7;->f:Lk3/s11;
 
     .line 3
-    new-instance v0, Lj3/d21;
+    new-instance v0, Lk3/s11;
 
-    sget-object v2, Lj3/z11;->a:[B
+    sget-object v2, Lk3/o11;->a:[B
 
-    invoke-direct {v0, v2}, Lj3/d21;-><init>([B)V
+    invoke-direct {v0, v2}, Lk3/s11;-><init>([B)V
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/m7;->b:Lj3/d21;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/m7;->b:Lk3/s11;
 
     .line 4
-    new-instance v0, Lj3/d21;
+    new-instance v0, Lk3/s11;
 
     const/4 v2, 0x5
 
-    invoke-direct {v0, v2}, Lj3/d21;-><init>(I)V
+    invoke-direct {v0, v2}, Lk3/s11;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/m7;->c:Lj3/d21;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/m7;->c:Lk3/s11;
 
     .line 5
-    new-instance v0, Lj3/d21;
+    new-instance v0, Lk3/s11;
 
-    invoke-direct {v0}, Lj3/d21;-><init>()V
+    invoke-direct {v0}, Lk3/s11;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/m7;->d:Lj3/d21;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/m7;->d:Lk3/s11;
 
     .line 6
-    new-instance v0, Lj3/d21;
+    new-instance v0, Lk3/s11;
 
     const/4 v2, 0x1
 
-    invoke-direct {v0, v2}, Lj3/d21;-><init>(I)V
+    invoke-direct {v0, v2}, Lk3/s11;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/m7;->e:Lj3/d21;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/m7;->e:Lk3/s11;
 
     new-array v0, v1, [B
 
@@ -207,7 +205,7 @@
     const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
 
     .line 11
-    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/m7;->q:J
+    iput-wide v0, p0, Lcom/google/android/gms/internal/ads/m7;->p:J
 
     .line 12
     invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/m7;->h()V
@@ -215,7 +213,7 @@
     return-void
 .end method
 
-.method public static a(Lj3/d21;ILj3/lz0;)V
+.method public static b(Lk3/s11;ILk3/bz0;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -226,15 +224,15 @@
     add-int/lit8 p1, p1, 0x8
 
     .line 1
-    invoke-virtual {p0, p1}, Lj3/d21;->h(I)V
+    invoke-virtual {p0, p1}, Lk3/s11;->h(I)V
 
     .line 2
-    invoke-virtual {p0}, Lj3/d21;->b()I
+    invoke-virtual {p0}, Lk3/s11;->b()I
 
     move-result p1
 
     .line 3
-    sget v0, Lj3/wy0;->b:I
+    sget v0, Lk3/ly0;->b:I
 
     const v0, 0xffffff
 
@@ -259,51 +257,54 @@
 
     .line 4
     :goto_0
-    invoke-virtual {p0}, Lj3/d21;->o()I
+    invoke-virtual {p0}, Lk3/s11;->n()I
 
     move-result v1
 
     .line 5
-    iget v2, p2, Lj3/lz0;->e:I
+    iget v2, p2, Lk3/bz0;->e:I
 
     if-ne v1, v2, :cond_1
 
     .line 6
-    iget-object v2, p2, Lj3/lz0;->m:[Z
+    iget-object v2, p2, Lk3/bz0;->m:[Z
 
     invoke-static {v2, v0, v1, p1}, Ljava/util/Arrays;->fill([ZIIZ)V
 
     .line 7
-    invoke-virtual {p0}, Lj3/d21;->m()I
+    iget p1, p0, Lk3/s11;->c:I
 
-    move-result p1
+    iget v1, p0, Lk3/s11;->b:I
 
-    invoke-virtual {p2, p1}, Lj3/lz0;->a(I)V
+    sub-int/2addr p1, v1
 
     .line 8
-    iget-object p1, p2, Lj3/lz0;->p:Lj3/d21;
-
-    iget-object p1, p1, Lj3/d21;->a:[B
-
-    iget v1, p2, Lj3/lz0;->o:I
-
-    invoke-virtual {p0, p1, v0, v1}, Lj3/d21;->l([BII)V
+    invoke-virtual {p2, p1}, Lk3/bz0;->a(I)V
 
     .line 9
-    iget-object p0, p2, Lj3/lz0;->p:Lj3/d21;
+    iget-object p1, p2, Lk3/bz0;->p:Lk3/s11;
 
-    invoke-virtual {p0, v0}, Lj3/d21;->h(I)V
+    iget-object p1, p1, Lk3/s11;->a:[B
+
+    iget v1, p2, Lk3/bz0;->o:I
+
+    invoke-virtual {p0, p1, v0, v1}, Lk3/s11;->l([BII)V
 
     .line 10
-    iput-boolean v0, p2, Lj3/lz0;->q:Z
+    iget-object p0, p2, Lk3/bz0;->p:Lk3/s11;
+
+    invoke-virtual {p0, v0}, Lk3/s11;->h(I)V
+
+    .line 11
+    iput-boolean v0, p2, Lk3/bz0;->q:Z
 
     return-void
 
-    .line 11
+    .line 12
     :cond_1
     new-instance p0, Lcom/google/android/gms/internal/ads/zzhv;
 
-    iget p1, p2, Lj3/lz0;->e:I
+    iget p1, p2, Lk3/bz0;->e:I
 
     const/16 p2, 0x29
 
@@ -311,15 +312,17 @@
 
     const-string v2, ", "
 
-    invoke-static {p2, v0, v1, v2, p1}, Ld2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+    .line 13
+    invoke-static {p2, v0, v1, v2, p1}, Le2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 14
     invoke-direct {p0, p1}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
 
     throw p0
 
-    .line 12
+    .line 15
     :cond_2
     new-instance p0, Lcom/google/android/gms/internal/ads/zzhv;
 
@@ -336,7 +339,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lj3/yy0;",
+            "Lk3/ny0;",
             ">;)",
             "Lcom/google/android/gms/internal/ads/zzjn;"
         }
@@ -363,12 +366,12 @@
 
     move-result-object v5
 
-    check-cast v5, Lj3/yy0;
+    check-cast v5, Lk3/ny0;
 
     .line 3
-    iget v6, v5, Lj3/wy0;->a:I
+    iget v6, v5, Lk3/ly0;->a:I
 
-    sget v7, Lj3/wy0;->V:I
+    sget v7, Lk3/ly0;->V:I
 
     if-ne v6, v7, :cond_9
 
@@ -381,37 +384,42 @@
 
     .line 5
     :cond_0
-    iget-object v5, v5, Lj3/yy0;->P0:Lj3/d21;
+    iget-object v5, v5, Lk3/ny0;->P0:Lk3/s11;
 
-    iget-object v5, v5, Lj3/d21;->a:[B
+    iget-object v5, v5, Lk3/s11;->a:[B
 
     .line 6
-    new-instance v6, Lj3/d21;
+    new-instance v6, Lk3/s11;
 
-    invoke-direct {v6, v5}, Lj3/d21;-><init>([B)V
+    invoke-direct {v6, v5}, Lk3/s11;-><init>([B)V
 
     .line 7
-    iget v8, v6, Lj3/d21;->c:I
+    iget v8, v6, Lk3/s11;->c:I
 
     const/16 v9, 0x20
 
     if-ge v8, v9, :cond_1
 
-    goto :goto_1
+    :goto_1
+    move-object v6, v2
+
+    goto :goto_2
 
     .line 8
     :cond_1
-    invoke-virtual {v6, v1}, Lj3/d21;->h(I)V
+    invoke-virtual {v6, v1}, Lk3/s11;->h(I)V
 
     .line 9
-    invoke-virtual {v6}, Lj3/d21;->b()I
+    invoke-virtual {v6}, Lk3/s11;->b()I
 
     move-result v8
 
     .line 10
-    invoke-virtual {v6}, Lj3/d21;->m()I
+    iget v9, v6, Lk3/s11;->c:I
 
-    move-result v9
+    iget v10, v6, Lk3/s11;->b:I
+
+    sub-int/2addr v9, v10
 
     add-int/lit8 v9, v9, 0x4
 
@@ -421,7 +429,7 @@
 
     .line 11
     :cond_2
-    invoke-virtual {v6}, Lj3/d21;->b()I
+    invoke-virtual {v6}, Lk3/s11;->b()I
 
     move-result v8
 
@@ -431,7 +439,7 @@
 
     .line 12
     :cond_3
-    invoke-virtual {v6}, Lj3/d21;->b()I
+    invoke-virtual {v6}, Lk3/s11;->b()I
 
     move-result v7
 
@@ -449,11 +457,11 @@
     :cond_4
     new-instance v9, Ljava/util/UUID;
 
-    invoke-virtual {v6}, Lj3/d21;->c()J
+    invoke-virtual {v6}, Lk3/s11;->c()J
 
     move-result-wide v10
 
-    invoke-virtual {v6}, Lj3/d21;->c()J
+    invoke-virtual {v6}, Lk3/s11;->c()J
 
     move-result-wide v12
 
@@ -462,52 +470,40 @@
     if-ne v7, v8, :cond_5
 
     .line 14
-    invoke-virtual {v6}, Lj3/d21;->o()I
+    invoke-virtual {v6}, Lk3/s11;->n()I
 
     move-result v7
 
     shl-int/lit8 v7, v7, 0x4
 
     .line 15
-    invoke-virtual {v6, v7}, Lj3/d21;->i(I)V
+    invoke-virtual {v6, v7}, Lk3/s11;->i(I)V
 
     .line 16
     :cond_5
-    invoke-virtual {v6}, Lj3/d21;->o()I
+    invoke-virtual {v6}, Lk3/s11;->n()I
 
     move-result v7
 
     .line 17
-    invoke-virtual {v6}, Lj3/d21;->m()I
+    iget v8, v6, Lk3/s11;->c:I
 
-    move-result v8
+    iget v10, v6, Lk3/s11;->b:I
+
+    sub-int/2addr v8, v10
 
     if-eq v7, v8, :cond_6
 
-    :goto_1
-    move-object v6, v2
-
-    goto :goto_2
+    goto :goto_1
 
     .line 18
     :cond_6
     new-array v8, v7, [B
 
     .line 19
-    iget-object v10, v6, Lj3/d21;->a:[B
-
-    iget v11, v6, Lj3/d21;->b:I
-
-    invoke-static {v10, v11, v8, v1, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-virtual {v6, v8, v1, v7}, Lk3/s11;->l([BII)V
 
     .line 20
-    iget v10, v6, Lj3/d21;->b:I
-
-    add-int/2addr v10, v7
-
-    iput v10, v6, Lj3/d21;->b:I
-
-    .line 21
     invoke-static {v9, v8}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
 
     move-result-object v6
@@ -519,7 +515,7 @@
 
     goto :goto_3
 
-    .line 22
+    .line 21
     :cond_7
     iget-object v6, v6, Landroid/util/Pair;->first:Ljava/lang/Object;
 
@@ -530,7 +526,7 @@
 
     goto :goto_4
 
-    .line 23
+    .line 22
     :cond_8
     new-instance v7, Lcom/google/android/gms/internal/ads/zzjn$zza;
 
@@ -551,11 +547,11 @@
 
     return-object v2
 
-    .line 24
+    .line 23
     :cond_b
     new-instance p0, Lcom/google/android/gms/internal/ads/zzjn;
 
-    .line 25
+    .line 24
     invoke-interface {v4}, Ljava/util/List;->size()I
 
     move-result v0
@@ -575,7 +571,7 @@
 
 
 # virtual methods
-.method public final b(Lj3/ky0;)Z
+.method public final a(Lk3/zx0;)Z
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -586,24 +582,1631 @@
 
     const/4 v0, 0x1
 
-    .line 1
-    invoke-static {p1, v0}, Lj3/kz0;->a(Lj3/ky0;Z)Z
+    invoke-static {p1, v0}, Lk3/az0;->a(Lk3/zx0;Z)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public final c(Lj3/jy0;)V
+.method public final c(Lk3/yx0;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/m7;->v:Lj3/jy0;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/m7;->u:Lk3/yx0;
 
     return-void
 .end method
 
-.method public final e(JJ)V
+.method public final e(Lk3/zx0;Lk3/cy0;)I
+    .locals 23
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p1
+
+    .line 1
+    :cond_0
+    :goto_0
+    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
+
+    const/4 v3, 0x2
+
+    const/16 v4, 0x8
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x1
+
+    if-eqz v2, :cond_22
+
+    if-eq v2, v7, :cond_1b
+
+    const-wide v9, 0x7fffffffffffffffL
+
+    const/4 v11, 0x3
+
+    if-eq v2, v3, :cond_16
+
+    if-ne v2, v11, :cond_c
+
+    .line 2
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->q:Lk3/vy0;
+
+    if-nez v2, :cond_6
+
+    .line 3
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
+
+    .line 4
+    invoke-virtual {v2}, Landroid/util/SparseArray;->size()I
+
+    move-result v12
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    :goto_1
+    if-ge v13, v12, :cond_2
+
+    .line 5
+    invoke-virtual {v2, v13}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v15
+
+    check-cast v15, Lk3/vy0;
+
+    .line 6
+    iget v11, v15, Lk3/vy0;->g:I
+
+    iget-object v5, v15, Lk3/vy0;->a:Lk3/bz0;
+
+    iget v8, v5, Lk3/bz0;->d:I
+
+    if-eq v11, v8, :cond_1
+
+    .line 7
+    iget-object v5, v5, Lk3/bz0;->f:[J
+
+    aget-wide v17, v5, v11
+
+    cmp-long v5, v17, v9
+
+    if-gez v5, :cond_1
+
+    move-object v14, v15
+
+    move-wide/from16 v9, v17
+
+    :cond_1
+    add-int/lit8 v13, v13, 0x1
+
+    const/4 v11, 0x3
+
+    goto :goto_1
+
+    :cond_2
+    if-nez v14, :cond_4
+
+    .line 8
+    iget-wide v2, v0, Lcom/google/android/gms/internal/ads/m7;->o:J
+
+    move-object v4, v1
+
+    check-cast v4, Lk3/xx0;
+
+    .line 9
+    iget-wide v7, v4, Lk3/xx0;->c:J
+
+    sub-long/2addr v2, v7
+
+    long-to-int v3, v2
+
+    if-ltz v3, :cond_3
+
+    .line 10
+    invoke-virtual {v4, v3}, Lk3/xx0;->d(I)V
+
+    .line 11
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/ads/m7;->h()V
+
+    const/4 v7, 0x0
+
+    goto/16 :goto_c
+
+    .line 12
+    :cond_3
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
+
+    const-string v2, "Offset to end of mdat was negative."
+
+    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 13
+    :cond_4
+    iget-object v2, v14, Lk3/vy0;->a:Lk3/bz0;
+
+    iget-object v2, v2, Lk3/bz0;->f:[J
+
+    iget v5, v14, Lk3/vy0;->g:I
+
+    aget-wide v8, v2, v5
+
+    .line 14
+    move-object v2, v1
+
+    check-cast v2, Lk3/xx0;
+
+    .line 15
+    iget-wide v10, v2, Lk3/xx0;->c:J
+
+    sub-long/2addr v8, v10
+
+    long-to-int v5, v8
+
+    if-gez v5, :cond_5
+
+    const/4 v5, 0x0
+
+    .line 16
+    :cond_5
+    invoke-virtual {v2, v5}, Lk3/xx0;->d(I)V
+
+    .line 17
+    iput-object v14, v0, Lcom/google/android/gms/internal/ads/m7;->q:Lk3/vy0;
+
+    .line 18
+    :cond_6
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->q:Lk3/vy0;
+
+    iget-object v5, v2, Lk3/vy0;->a:Lk3/bz0;
+
+    iget-object v8, v5, Lk3/bz0;->h:[I
+
+    iget v9, v2, Lk3/vy0;->e:I
+
+    aget v8, v8, v9
+
+    iput v8, v0, Lcom/google/android/gms/internal/ads/m7;->r:I
+
+    .line 19
+    iget-boolean v8, v5, Lk3/bz0;->l:Z
+
+    if-eqz v8, :cond_a
+
+    .line 20
+    iget-object v8, v5, Lk3/bz0;->p:Lk3/s11;
+
+    .line 21
+    iget-object v10, v5, Lk3/bz0;->a:Lk3/uy0;
+
+    iget v10, v10, Lk3/uy0;->a:I
+
+    .line 22
+    iget-object v11, v5, Lk3/bz0;->n:Lk3/cz0;
+
+    if-eqz v11, :cond_7
+
+    goto :goto_2
+
+    .line 23
+    :cond_7
+    iget-object v11, v2, Lk3/vy0;->c:Lk3/zy0;
+
+    iget-object v11, v11, Lk3/zy0;->h:[Lk3/cz0;
+
+    aget-object v11, v11, v10
+
+    .line 24
+    :goto_2
+    iget v10, v11, Lk3/cz0;->a:I
+
+    .line 25
+    iget-object v5, v5, Lk3/bz0;->m:[Z
+
+    aget-boolean v5, v5, v9
+
+    .line 26
+    iget-object v9, v0, Lcom/google/android/gms/internal/ads/m7;->e:Lk3/s11;
+
+    iget-object v11, v9, Lk3/s11;->a:[B
+
+    if-eqz v5, :cond_8
+
+    const/16 v12, 0x80
+
+    goto :goto_3
+
+    :cond_8
+    const/4 v12, 0x0
+
+    :goto_3
+    or-int/2addr v12, v10
+
+    int-to-byte v12, v12
+
+    aput-byte v12, v11, v6
+
+    .line 27
+    invoke-virtual {v9, v6}, Lk3/s11;->h(I)V
+
+    .line 28
+    iget-object v2, v2, Lk3/vy0;->b:Lk3/f01;
+
+    .line 29
+    iget-object v9, v0, Lcom/google/android/gms/internal/ads/m7;->e:Lk3/s11;
+
+    invoke-virtual {v2, v9, v7}, Lk3/f01;->e(Lk3/s11;I)V
+
+    .line 30
+    invoke-virtual {v2, v8, v10}, Lk3/f01;->e(Lk3/s11;I)V
+
+    if-nez v5, :cond_9
+
+    add-int/lit8 v10, v10, 0x1
+
+    goto :goto_4
+
+    .line 31
+    :cond_9
+    invoke-virtual {v8}, Lk3/s11;->e()I
+
+    move-result v5
+
+    const/4 v9, -0x2
+
+    .line 32
+    invoke-virtual {v8, v9}, Lk3/s11;->i(I)V
+
+    mul-int/lit8 v5, v5, 0x6
+
+    add-int/2addr v5, v3
+
+    .line 33
+    invoke-virtual {v2, v8, v5}, Lk3/f01;->e(Lk3/s11;I)V
+
+    add-int/lit8 v10, v10, 0x1
+
+    add-int/2addr v10, v5
+
+    .line 34
+    :goto_4
+    iput v10, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
+
+    .line 35
+    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->r:I
+
+    add-int/2addr v2, v10
+
+    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->r:I
+
+    goto :goto_5
+
+    .line 36
+    :cond_a
+    iput v6, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
+
+    .line 37
+    :goto_5
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->q:Lk3/vy0;
+
+    iget-object v2, v2, Lk3/vy0;->c:Lk3/zy0;
+
+    iget v2, v2, Lk3/zy0;->g:I
+
+    if-ne v2, v7, :cond_b
+
+    .line 38
+    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->r:I
+
+    sub-int/2addr v2, v4
+
+    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->r:I
+
+    .line 39
+    move-object v2, v1
+
+    check-cast v2, Lk3/xx0;
+
+    invoke-virtual {v2, v4}, Lk3/xx0;->d(I)V
+
+    :cond_b
+    const/4 v2, 0x4
+
+    .line 40
+    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
+
+    .line 41
+    iput v6, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
+
+    .line 42
+    :cond_c
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->q:Lk3/vy0;
+
+    iget-object v4, v2, Lk3/vy0;->a:Lk3/bz0;
+
+    .line 43
+    iget-object v5, v2, Lk3/vy0;->c:Lk3/zy0;
+
+    .line 44
+    iget-object v8, v2, Lk3/vy0;->b:Lk3/f01;
+
+    .line 45
+    iget v2, v2, Lk3/vy0;->e:I
+
+    .line 46
+    iget v9, v5, Lk3/zy0;->k:I
+
+    if-eqz v9, :cond_e
+
+    .line 47
+    iget-object v10, v0, Lcom/google/android/gms/internal/ads/m7;->c:Lk3/s11;
+
+    iget-object v10, v10, Lk3/s11;->a:[B
+
+    .line 48
+    aput-byte v6, v10, v6
+
+    .line 49
+    aput-byte v6, v10, v7
+
+    .line 50
+    aput-byte v6, v10, v3
+
+    add-int/lit8 v3, v9, 0x1
+
+    rsub-int/lit8 v9, v9, 0x4
+
+    .line 51
+    :goto_6
+    iget v11, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
+
+    iget v12, v0, Lcom/google/android/gms/internal/ads/m7;->r:I
+
+    if-ge v11, v12, :cond_f
+
+    .line 52
+    iget v11, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
+
+    if-nez v11, :cond_d
+
+    .line 53
+    move-object v11, v1
+
+    check-cast v11, Lk3/xx0;
+
+    .line 54
+    invoke-virtual {v11, v10, v9, v3, v6}, Lk3/xx0;->c([BIIZ)Z
+
+    .line 55
+    iget-object v11, v0, Lcom/google/android/gms/internal/ads/m7;->c:Lk3/s11;
+
+    invoke-virtual {v11, v6}, Lk3/s11;->h(I)V
+
+    .line 56
+    iget-object v11, v0, Lcom/google/android/gms/internal/ads/m7;->c:Lk3/s11;
+
+    invoke-virtual {v11}, Lk3/s11;->n()I
+
+    move-result v11
+
+    sub-int/2addr v11, v7
+
+    iput v11, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
+
+    .line 57
+    iget-object v11, v0, Lcom/google/android/gms/internal/ads/m7;->b:Lk3/s11;
+
+    invoke-virtual {v11, v6}, Lk3/s11;->h(I)V
+
+    .line 58
+    iget-object v11, v0, Lcom/google/android/gms/internal/ads/m7;->b:Lk3/s11;
+
+    const/4 v12, 0x4
+
+    invoke-virtual {v8, v11, v12}, Lk3/f01;->e(Lk3/s11;I)V
+
+    .line 59
+    iget-object v11, v0, Lcom/google/android/gms/internal/ads/m7;->c:Lk3/s11;
+
+    invoke-virtual {v8, v11, v7}, Lk3/f01;->e(Lk3/s11;I)V
+
+    .line 60
+    iget v11, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
+
+    add-int/lit8 v11, v11, 0x5
+
+    iput v11, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
+
+    .line 61
+    iget v11, v0, Lcom/google/android/gms/internal/ads/m7;->r:I
+
+    add-int/2addr v11, v9
+
+    iput v11, v0, Lcom/google/android/gms/internal/ads/m7;->r:I
+
+    goto :goto_6
+
+    .line 62
+    :cond_d
+    invoke-virtual {v8, v1, v11}, Lk3/f01;->b(Lk3/zx0;I)I
+
+    move-result v11
+
+    .line 63
+    iget v12, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
+
+    add-int/2addr v12, v11
+
+    iput v12, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
+
+    .line 64
+    iget v12, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
+
+    sub-int/2addr v12, v11
+
+    iput v12, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
+
+    goto :goto_6
+
+    .line 65
+    :cond_e
+    :goto_7
+    iget v3, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
+
+    iget v9, v0, Lcom/google/android/gms/internal/ads/m7;->r:I
+
+    if-ge v3, v9, :cond_f
+
+    sub-int/2addr v9, v3
+
+    .line 66
+    invoke-virtual {v8, v1, v9}, Lk3/f01;->b(Lk3/zx0;I)I
+
+    move-result v3
+
+    .line 67
+    iget v9, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
+
+    add-int/2addr v9, v3
+
+    iput v9, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
+
+    goto :goto_7
+
+    .line 68
+    :cond_f
+    iget-object v3, v4, Lk3/bz0;->j:[J
+
+    aget-wide v9, v3, v2
+
+    iget-object v3, v4, Lk3/bz0;->i:[I
+
+    aget v3, v3, v2
+
+    int-to-long v11, v3
+
+    add-long/2addr v9, v11
+
+    const-wide/16 v11, 0x3e8
+
+    mul-long v9, v9, v11
+
+    .line 69
+    iget-boolean v3, v4, Lk3/bz0;->l:Z
+
+    if-eqz v3, :cond_10
+
+    const/high16 v11, 0x40000000    # 2.0f
+
+    goto :goto_8
+
+    :cond_10
+    const/4 v11, 0x0
+
+    .line 70
+    :goto_8
+    iget-object v12, v4, Lk3/bz0;->k:[Z
+
+    aget-boolean v2, v12, v2
+
+    or-int/2addr v11, v2
+
+    if-eqz v3, :cond_13
+
+    .line 71
+    iget-object v2, v4, Lk3/bz0;->n:Lk3/cz0;
+
+    if-eqz v2, :cond_11
+
+    goto :goto_9
+
+    .line 72
+    :cond_11
+    iget-object v2, v5, Lk3/zy0;->h:[Lk3/cz0;
+
+    iget-object v3, v4, Lk3/bz0;->a:Lk3/uy0;
+
+    iget v3, v3, Lk3/uy0;->a:I
+
+    aget-object v2, v2, v3
+
+    .line 73
+    :goto_9
+    iget-object v3, v0, Lcom/google/android/gms/internal/ads/m7;->q:Lk3/vy0;
+
+    iget-object v5, v3, Lk3/vy0;->i:Lk3/cz0;
+
+    if-eq v2, v5, :cond_12
+
+    .line 74
+    new-instance v3, Lk3/fy0;
+
+    iget-object v5, v2, Lk3/cz0;->b:[B
+
+    invoke-direct {v3, v5}, Lk3/fy0;-><init>([B)V
+
+    goto :goto_a
+
+    .line 75
+    :cond_12
+    iget-object v3, v3, Lk3/vy0;->h:Lk3/fy0;
+
+    :goto_a
+    move-object v13, v3
+
+    goto :goto_b
+
+    :cond_13
+    const/4 v2, 0x0
+
+    const/4 v13, 0x0
+
+    .line 76
+    :goto_b
+    iget-object v3, v0, Lcom/google/android/gms/internal/ads/m7;->q:Lk3/vy0;
+
+    iput-object v13, v3, Lk3/vy0;->h:Lk3/fy0;
+
+    .line 77
+    iput-object v2, v3, Lk3/vy0;->i:Lk3/cz0;
+
+    .line 78
+    iget v12, v0, Lcom/google/android/gms/internal/ads/m7;->r:I
+
+    invoke-virtual/range {v8 .. v13}, Lk3/f01;->c(JIILk3/fy0;)V
+
+    .line 79
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->i:Ljava/util/LinkedList;
+
+    invoke-virtual {v2}, Ljava/util/AbstractCollection;->isEmpty()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_15
+
+    .line 80
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->q:Lk3/vy0;
+
+    iget v3, v2, Lk3/vy0;->e:I
+
+    add-int/2addr v3, v7
+
+    iput v3, v2, Lk3/vy0;->e:I
+
+    .line 81
+    iget v3, v2, Lk3/vy0;->f:I
+
+    add-int/2addr v3, v7
+
+    iput v3, v2, Lk3/vy0;->f:I
+
+    .line 82
+    iget-object v4, v4, Lk3/bz0;->g:[I
+
+    iget v5, v2, Lk3/vy0;->g:I
+
+    aget v4, v4, v5
+
+    if-ne v3, v4, :cond_14
+
+    add-int/lit8 v5, v5, 0x1
+
+    .line 83
+    iput v5, v2, Lk3/vy0;->g:I
+
+    .line 84
+    iput v6, v2, Lk3/vy0;->f:I
+
+    const/4 v2, 0x0
+
+    .line 85
+    iput-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->q:Lk3/vy0;
+
+    :cond_14
+    const/4 v2, 0x3
+
+    .line 86
+    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
+
+    :goto_c
+    if-eqz v7, :cond_0
+
+    return v6
+
+    .line 87
+    :cond_15
+    iget-object v1, v0, Lcom/google/android/gms/internal/ads/m7;->i:Ljava/util/LinkedList;
+
+    invoke-virtual {v1}, Ljava/util/LinkedList;->removeFirst()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lk3/wy0;
+
+    .line 88
+    iget v1, v1, Lk3/wy0;->a:I
+
+    const/4 v1, 0x0
+
+    .line 89
+    throw v1
+
+    .line 90
+    :cond_16
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
+
+    invoke-virtual {v2}, Landroid/util/SparseArray;->size()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    const/4 v5, 0x0
+
+    :goto_d
+    if-ge v3, v2, :cond_18
+
+    .line 91
+    iget-object v4, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
+
+    invoke-virtual {v4, v3}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lk3/vy0;
+
+    iget-object v4, v4, Lk3/vy0;->a:Lk3/bz0;
+
+    .line 92
+    iget-boolean v7, v4, Lk3/bz0;->q:Z
+
+    if-eqz v7, :cond_17
+
+    iget-wide v7, v4, Lk3/bz0;->c:J
+
+    cmp-long v4, v7, v9
+
+    if-gez v4, :cond_17
+
+    .line 93
+    iget-object v4, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
+
+    invoke-virtual {v4, v3}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lk3/vy0;
+
+    move-object v5, v4
+
+    move-wide v9, v7
+
+    :cond_17
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_d
+
+    :cond_18
+    if-nez v5, :cond_19
+
+    const/4 v2, 0x3
+
+    .line 94
+    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
+
+    goto/16 :goto_0
+
+    .line 95
+    :cond_19
+    move-object v2, v1
+
+    check-cast v2, Lk3/xx0;
+
+    .line 96
+    iget-wide v3, v2, Lk3/xx0;->c:J
+
+    sub-long/2addr v9, v3
+
+    long-to-int v3, v9
+
+    if-ltz v3, :cond_1a
+
+    .line 97
+    invoke-virtual {v2, v3}, Lk3/xx0;->d(I)V
+
+    .line 98
+    iget-object v3, v5, Lk3/vy0;->a:Lk3/bz0;
+
+    .line 99
+    iget-object v4, v3, Lk3/bz0;->p:Lk3/s11;
+
+    iget-object v4, v4, Lk3/s11;->a:[B
+
+    iget v5, v3, Lk3/bz0;->o:I
+
+    .line 100
+    invoke-virtual {v2, v4, v6, v5, v6}, Lk3/xx0;->c([BIIZ)Z
+
+    .line 101
+    iget-object v2, v3, Lk3/bz0;->p:Lk3/s11;
+
+    invoke-virtual {v2, v6}, Lk3/s11;->h(I)V
+
+    .line 102
+    iput-boolean v6, v3, Lk3/bz0;->q:Z
+
+    goto/16 :goto_0
+
+    .line 103
+    :cond_1a
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
+
+    const-string v2, "Offset to encryption data was negative."
+
+    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 104
+    :cond_1b
+    iget-wide v8, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
+
+    long-to-int v2, v8
+
+    iget v5, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
+
+    sub-int/2addr v2, v5
+
+    .line 105
+    iget-object v5, v0, Lcom/google/android/gms/internal/ads/m7;->n:Lk3/s11;
+
+    if-eqz v5, :cond_21
+
+    .line 106
+    iget-object v5, v5, Lk3/s11;->a:[B
+
+    move-object v8, v1
+
+    check-cast v8, Lk3/xx0;
+
+    .line 107
+    invoke-virtual {v8, v5, v4, v2, v6}, Lk3/xx0;->c([BIIZ)Z
+
+    .line 108
+    new-instance v2, Lk3/ny0;
+
+    iget v5, v0, Lcom/google/android/gms/internal/ads/m7;->k:I
+
+    iget-object v9, v0, Lcom/google/android/gms/internal/ads/m7;->n:Lk3/s11;
+
+    invoke-direct {v2, v5, v9}, Lk3/ny0;-><init>(ILk3/s11;)V
+
+    .line 109
+    iget-wide v10, v8, Lk3/xx0;->c:J
+
+    .line 110
+    iget-object v8, v0, Lcom/google/android/gms/internal/ads/m7;->h:Ljava/util/Stack;
+
+    invoke-virtual {v8}, Ljava/util/AbstractCollection;->isEmpty()Z
+
+    move-result v8
+
+    if-nez v8, :cond_1c
+
+    .line 111
+    iget-object v3, v0, Lcom/google/android/gms/internal/ads/m7;->h:Ljava/util/Stack;
+
+    invoke-virtual {v3}, Ljava/util/Stack;->peek()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lk3/oy0;
+
+    .line 112
+    iget-object v3, v3, Lk3/oy0;->Q0:Ljava/util/ArrayList;
+
+    invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto/16 :goto_10
+
+    .line 113
+    :cond_1c
+    sget v2, Lk3/ly0;->B:I
+
+    if-ne v5, v2, :cond_20
+
+    .line 114
+    invoke-virtual {v9, v4}, Lk3/s11;->h(I)V
+
+    .line 115
+    invoke-virtual {v9}, Lk3/s11;->b()I
+
+    move-result v2
+
+    shr-int/lit8 v2, v2, 0x18
+
+    and-int/lit16 v2, v2, 0xff
+
+    const/4 v4, 0x4
+
+    .line 116
+    invoke-virtual {v9, v4}, Lk3/s11;->i(I)V
+
+    .line 117
+    invoke-virtual {v9}, Lk3/s11;->m()J
+
+    move-result-wide v4
+
+    if-nez v2, :cond_1d
+
+    .line 118
+    invoke-virtual {v9}, Lk3/s11;->m()J
+
+    move-result-wide v12
+
+    .line 119
+    invoke-virtual {v9}, Lk3/s11;->m()J
+
+    move-result-wide v14
+
+    goto :goto_e
+
+    .line 120
+    :cond_1d
+    invoke-virtual {v9}, Lk3/s11;->o()J
+
+    move-result-wide v12
+
+    .line 121
+    invoke-virtual {v9}, Lk3/s11;->o()J
+
+    move-result-wide v14
+
+    :goto_e
+    add-long/2addr v14, v10
+
+    const-wide/32 v19, 0xf4240
+
+    move-wide/from16 v17, v12
+
+    move-wide/from16 v21, v4
+
+    .line 122
+    invoke-static/range {v17 .. v22}, Lk3/v11;->b(JJJ)J
+
+    move-result-wide v10
+
+    .line 123
+    invoke-virtual {v9, v3}, Lk3/s11;->i(I)V
+
+    .line 124
+    invoke-virtual {v9}, Lk3/s11;->e()I
+
+    move-result v2
+
+    .line 125
+    new-array v3, v2, [I
+
+    .line 126
+    new-array v8, v2, [J
+
+    .line 127
+    new-array v6, v2, [J
+
+    .line 128
+    new-array v7, v2, [J
+
+    move-wide/from16 v17, v10
+
+    move-wide v15, v14
+
+    move-wide v13, v12
+
+    const/4 v12, 0x0
+
+    :goto_f
+    if-ge v12, v2, :cond_1f
+
+    .line 129
+    invoke-virtual {v9}, Lk3/s11;->b()I
+
+    move-result v19
+
+    const/high16 v20, -0x80000000
+
+    and-int v20, v19, v20
+
+    if-nez v20, :cond_1e
+
+    .line 130
+    invoke-virtual {v9}, Lk3/s11;->m()J
+
+    move-result-wide v20
+
+    const v22, 0x7fffffff
+
+    and-int v19, v19, v22
+
+    .line 131
+    aput v19, v3, v12
+
+    .line 132
+    aput-wide v15, v8, v12
+
+    .line 133
+    aput-wide v17, v7, v12
+
+    add-long v13, v13, v20
+
+    const-wide/32 v19, 0xf4240
+
+    move-wide/from16 v17, v13
+
+    move-wide/from16 v21, v4
+
+    .line 134
+    invoke-static/range {v17 .. v22}, Lk3/v11;->b(JJJ)J
+
+    move-result-wide v17
+
+    .line 135
+    aget-wide v19, v7, v12
+
+    sub-long v19, v17, v19
+
+    aput-wide v19, v6, v12
+
+    move/from16 v19, v2
+
+    const/4 v2, 0x4
+
+    .line 136
+    invoke-virtual {v9, v2}, Lk3/s11;->i(I)V
+
+    .line 137
+    aget v2, v3, v12
+
+    move-wide/from16 v20, v4
+
+    int-to-long v4, v2
+
+    add-long/2addr v15, v4
+
+    add-int/lit8 v12, v12, 0x1
+
+    move/from16 v2, v19
+
+    move-wide/from16 v4, v20
+
+    goto :goto_f
+
+    .line 138
+    :cond_1e
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
+
+    const-string v2, "Unhandled indirect reference"
+
+    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 139
+    :cond_1f
+    invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v2
+
+    new-instance v4, Lk3/ux0;
+
+    invoke-direct {v4, v3, v8, v6, v7}, Lk3/ux0;-><init>([I[J[J[J)V
+
+    invoke-static {v2, v4}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v2
+
+    .line 140
+    iget-object v3, v2, Landroid/util/Pair;->first:Ljava/lang/Object;
+
+    check-cast v3, Ljava/lang/Long;
+
+    invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
+
+    .line 141
+    iget-object v3, v0, Lcom/google/android/gms/internal/ads/m7;->u:Lk3/yx0;
+
+    iget-object v2, v2, Landroid/util/Pair;->second:Ljava/lang/Object;
+
+    check-cast v2, Lk3/ey0;
+
+    check-cast v3, Lk3/qz0;
+
+    invoke-virtual {v3, v2}, Lk3/qz0;->d(Lk3/ey0;)V
+
+    const/4 v2, 0x1
+
+    .line 142
+    iput-boolean v2, v0, Lcom/google/android/gms/internal/ads/m7;->v:Z
+
+    goto :goto_10
+
+    .line 143
+    :cond_20
+    sget v2, Lk3/ly0;->G0:I
+
+    goto :goto_10
+
+    .line 144
+    :cond_21
+    move-object v3, v1
+
+    check-cast v3, Lk3/xx0;
+
+    invoke-virtual {v3, v2}, Lk3/xx0;->d(I)V
+
+    .line 145
+    :goto_10
+    move-object v2, v1
+
+    check-cast v2, Lk3/xx0;
+
+    .line 146
+    iget-wide v2, v2, Lk3/xx0;->c:J
+
+    .line 147
+    invoke-virtual {v0, v2, v3}, Lcom/google/android/gms/internal/ads/m7;->g(J)V
+
+    goto/16 :goto_0
+
+    .line 148
+    :cond_22
+    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
+
+    if-nez v2, :cond_24
+
+    .line 149
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lk3/s11;
+
+    iget-object v2, v2, Lk3/s11;->a:[B
+
+    move-object v5, v1
+
+    check-cast v5, Lk3/xx0;
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x1
+
+    invoke-virtual {v5, v2, v6, v4, v7}, Lk3/xx0;->c([BIIZ)Z
+
+    move-result v2
+
+    if-nez v2, :cond_23
+
+    goto/16 :goto_18
+
+    .line 150
+    :cond_23
+    iput v4, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
+
+    .line 151
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lk3/s11;
+
+    invoke-virtual {v2, v6}, Lk3/s11;->h(I)V
+
+    .line 152
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lk3/s11;
+
+    invoke-virtual {v2}, Lk3/s11;->m()J
+
+    move-result-wide v5
+
+    iput-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
+
+    .line 153
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lk3/s11;
+
+    invoke-virtual {v2}, Lk3/s11;->b()I
+
+    move-result v2
+
+    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->k:I
+
+    .line 154
+    :cond_24
+    iget-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
+
+    const-wide/16 v7, 0x1
+
+    cmp-long v2, v5, v7
+
+    if-nez v2, :cond_25
+
+    .line 155
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lk3/s11;
+
+    iget-object v2, v2, Lk3/s11;->a:[B
+
+    move-object v5, v1
+
+    check-cast v5, Lk3/xx0;
+
+    const/4 v6, 0x0
+
+    .line 156
+    invoke-virtual {v5, v2, v4, v4, v6}, Lk3/xx0;->c([BIIZ)Z
+
+    .line 157
+    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
+
+    add-int/2addr v2, v4
+
+    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
+
+    .line 158
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lk3/s11;
+
+    invoke-virtual {v2}, Lk3/s11;->o()J
+
+    move-result-wide v5
+
+    iput-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
+
+    .line 159
+    :cond_25
+    iget-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
+
+    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
+
+    int-to-long v7, v2
+
+    cmp-long v2, v5, v7
+
+    if-ltz v2, :cond_33
+
+    .line 160
+    move-object v2, v1
+
+    check-cast v2, Lk3/xx0;
+
+    .line 161
+    iget-wide v5, v2, Lk3/xx0;->c:J
+
+    sub-long/2addr v5, v7
+
+    .line 162
+    iget v7, v0, Lcom/google/android/gms/internal/ads/m7;->k:I
+
+    sget v8, Lk3/ly0;->L:I
+
+    if-ne v7, v8, :cond_26
+
+    .line 163
+    iget-object v7, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
+
+    invoke-virtual {v7}, Landroid/util/SparseArray;->size()I
+
+    move-result v7
+
+    const/4 v8, 0x0
+
+    :goto_11
+    if-ge v8, v7, :cond_26
+
+    .line 164
+    iget-object v9, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
+
+    invoke-virtual {v9, v8}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Lk3/vy0;
+
+    iget-object v9, v9, Lk3/vy0;->a:Lk3/bz0;
+
+    .line 165
+    invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 166
+    iput-wide v5, v9, Lk3/bz0;->c:J
+
+    .line 167
+    iput-wide v5, v9, Lk3/bz0;->b:J
+
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_11
+
+    .line 168
+    :cond_26
+    iget v7, v0, Lcom/google/android/gms/internal/ads/m7;->k:I
+
+    sget v8, Lk3/ly0;->i:I
+
+    if-ne v7, v8, :cond_28
+
+    const/4 v8, 0x0
+
+    .line 169
+    iput-object v8, v0, Lcom/google/android/gms/internal/ads/m7;->q:Lk3/vy0;
+
+    .line 170
+    iget-wide v7, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
+
+    add-long/2addr v5, v7
+
+    iput-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->o:J
+
+    .line 171
+    iget-boolean v2, v0, Lcom/google/android/gms/internal/ads/m7;->v:Z
+
+    if-nez v2, :cond_27
+
+    .line 172
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->u:Lk3/yx0;
+
+    new-instance v4, Lk3/dy0;
+
+    iget-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->p:J
+
+    invoke-direct {v4, v5, v6}, Lk3/dy0;-><init>(J)V
+
+    check-cast v2, Lk3/qz0;
+
+    invoke-virtual {v2, v4}, Lk3/qz0;->d(Lk3/ey0;)V
+
+    const/4 v2, 0x1
+
+    .line 173
+    iput-boolean v2, v0, Lcom/google/android/gms/internal/ads/m7;->v:Z
+
+    .line 174
+    :cond_27
+    iput v3, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
+
+    goto :goto_14
+
+    .line 175
+    :cond_28
+    sget v3, Lk3/ly0;->C:I
+
+    if-eq v7, v3, :cond_2a
+
+    sget v3, Lk3/ly0;->E:I
+
+    if-eq v7, v3, :cond_2a
+
+    sget v3, Lk3/ly0;->F:I
+
+    if-eq v7, v3, :cond_2a
+
+    sget v3, Lk3/ly0;->G:I
+
+    if-eq v7, v3, :cond_2a
+
+    sget v3, Lk3/ly0;->H:I
+
+    if-eq v7, v3, :cond_2a
+
+    sget v3, Lk3/ly0;->L:I
+
+    if-eq v7, v3, :cond_2a
+
+    sget v3, Lk3/ly0;->M:I
+
+    if-eq v7, v3, :cond_2a
+
+    sget v3, Lk3/ly0;->N:I
+
+    if-eq v7, v3, :cond_2a
+
+    sget v3, Lk3/ly0;->Q:I
+
+    if-ne v7, v3, :cond_29
+
+    goto :goto_12
+
+    :cond_29
+    const/4 v3, 0x0
+
+    goto :goto_13
+
+    :cond_2a
+    :goto_12
+    const/4 v3, 0x1
+
+    :goto_13
+    if-eqz v3, :cond_2c
+
+    .line 176
+    iget-wide v2, v2, Lk3/xx0;->c:J
+
+    .line 177
+    iget-wide v4, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
+
+    add-long/2addr v2, v4
+
+    const-wide/16 v4, 0x8
+
+    sub-long/2addr v2, v4
+
+    .line 178
+    iget-object v4, v0, Lcom/google/android/gms/internal/ads/m7;->h:Ljava/util/Stack;
+
+    new-instance v5, Lk3/oy0;
+
+    iget v6, v0, Lcom/google/android/gms/internal/ads/m7;->k:I
+
+    invoke-direct {v5, v6, v2, v3}, Lk3/oy0;-><init>(IJ)V
+
+    invoke-virtual {v4, v5}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+
+    .line 179
+    iget-wide v4, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
+
+    iget v6, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
+
+    int-to-long v6, v6
+
+    cmp-long v8, v4, v6
+
+    if-nez v8, :cond_2b
+
+    .line 180
+    invoke-virtual {v0, v2, v3}, Lcom/google/android/gms/internal/ads/m7;->g(J)V
+
+    goto :goto_14
+
+    .line 181
+    :cond_2b
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/ads/m7;->h()V
+
+    :goto_14
+    const/4 v2, 0x1
+
+    goto/16 :goto_17
+
+    .line 182
+    :cond_2c
+    sget v2, Lk3/ly0;->T:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->S:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->D:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->B:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->U:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->x:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->y:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->P:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->z:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->A:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->V:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->d0:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->e0:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->i0:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->h0:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->f0:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->g0:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->R:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->O:I
+
+    if-eq v7, v2, :cond_2e
+
+    sget v2, Lk3/ly0;->G0:I
+
+    if-ne v7, v2, :cond_2d
+
+    goto :goto_15
+
+    :cond_2d
+    const/4 v2, 0x0
+
+    goto :goto_16
+
+    :cond_2e
+    :goto_15
+    const/4 v2, 0x1
+
+    :goto_16
+    const-wide/32 v5, 0x7fffffff
+
+    if-eqz v2, :cond_31
+
+    .line 183
+    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
+
+    if-ne v2, v4, :cond_30
+
+    .line 184
+    iget-wide v2, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
+
+    cmp-long v7, v2, v5
+
+    if-gtz v7, :cond_2f
+
+    .line 185
+    new-instance v5, Lk3/s11;
+
+    long-to-int v3, v2
+
+    invoke-direct {v5, v3}, Lk3/s11;-><init>(I)V
+
+    iput-object v5, v0, Lcom/google/android/gms/internal/ads/m7;->n:Lk3/s11;
+
+    .line 186
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lk3/s11;
+
+    iget-object v2, v2, Lk3/s11;->a:[B
+
+    iget-object v3, v5, Lk3/s11;->a:[B
+
+    const/4 v5, 0x0
+
+    invoke-static {v2, v5, v3, v5, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    const/4 v2, 0x1
+
+    .line 187
+    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
+
+    goto :goto_17
+
+    .line 188
+    :cond_2f
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
+
+    const-string v2, "Leaf atom with length > 2147483647 (unsupported)."
+
+    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 189
+    :cond_30
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
+
+    const-string v2, "Leaf atom defines extended atom size (unsupported)."
+
+    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 190
+    :cond_31
+    iget-wide v2, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
+
+    cmp-long v4, v2, v5
+
+    if-gtz v4, :cond_32
+
+    const/4 v2, 0x0
+
+    .line 191
+    iput-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->n:Lk3/s11;
+
+    const/4 v2, 0x1
+
+    .line 192
+    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
+
+    :goto_17
+    const/4 v6, 0x1
+
+    :goto_18
+    if-nez v6, :cond_0
+
+    const/4 v1, -0x1
+
+    return v1
+
+    .line 193
+    :cond_32
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
+
+    const-string v2, "Skipping atom with length > 2147483647 (unsupported)."
+
+    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 194
+    :cond_33
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
+
+    const-string v2, "Atom size less than header length (unsupported)."
+
+    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
+
+    goto :goto_1a
+
+    :goto_19
+    throw v1
+
+    :goto_1a
+    goto :goto_19
+.end method
+
+.method public final f(JJ)V
     .locals 0
 
     .line 1
@@ -615,23 +2218,21 @@
 
     const/4 p2, 0x0
 
-    const/4 p3, 0x0
-
     :goto_0
-    if-ge p3, p1, :cond_0
+    if-ge p2, p1, :cond_0
 
     .line 2
-    iget-object p4, p0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
+    iget-object p3, p0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
 
-    invoke-virtual {p4, p3}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+    invoke-virtual {p3, p2}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
-    move-result-object p4
+    move-result-object p3
 
-    check-cast p4, Lj3/fz0;
+    check-cast p3, Lk3/vy0;
 
-    invoke-virtual {p4}, Lj3/fz0;->a()V
+    invoke-virtual {p3}, Lk3/vy0;->a()V
 
-    add-int/lit8 p3, p3, 0x1
+    add-int/lit8 p2, p2, 0x1
 
     goto :goto_0
 
@@ -642,20 +2243,17 @@
     invoke-virtual {p1}, Ljava/util/LinkedList;->clear()V
 
     .line 4
-    iput p2, p0, Lcom/google/android/gms/internal/ads/m7;->p:I
-
-    .line 5
     iget-object p1, p0, Lcom/google/android/gms/internal/ads/m7;->h:Ljava/util/Stack;
 
-    invoke-virtual {p1}, Ljava/util/Stack;->clear()V
+    invoke-virtual {p1}, Ljava/util/AbstractCollection;->clear()V
 
-    .line 6
+    .line 5
     invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/m7;->h()V
 
     return-void
 .end method
 
-.method public final f(J)V
+.method public final g(J)V
     .locals 49
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -672,7 +2270,7 @@
     :goto_0
     iget-object v2, v1, Lcom/google/android/gms/internal/ads/m7;->h:Ljava/util/Stack;
 
-    invoke-virtual {v2}, Ljava/util/Stack;->isEmpty()Z
+    invoke-virtual {v2}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v2
 
@@ -684,9 +2282,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lj3/zy0;
+    check-cast v2, Lk3/oy0;
 
-    iget-wide v2, v2, Lj3/zy0;->P0:J
+    iget-wide v2, v2, Lk3/oy0;->P0:J
 
     cmp-long v4, v2, p1
 
@@ -699,12 +2297,12 @@
 
     move-result-object v2
 
-    check-cast v2, Lj3/zy0;
+    check-cast v2, Lk3/oy0;
 
     .line 3
-    iget v3, v2, Lj3/wy0;->a:I
+    iget v3, v2, Lk3/ly0;->a:I
 
-    sget v4, Lj3/wy0;->C:I
+    sget v4, Lk3/ly0;->C:I
 
     const/16 v5, 0xc
 
@@ -715,16 +2313,16 @@
     if-ne v3, v4, :cond_a
 
     .line 4
-    iget-object v3, v2, Lj3/zy0;->Q0:Ljava/util/List;
+    iget-object v3, v2, Lk3/oy0;->Q0:Ljava/util/ArrayList;
 
     invoke-static {v3}, Lcom/google/android/gms/internal/ads/m7;->d(Ljava/util/List;)Lcom/google/android/gms/internal/ads/zzjn;
 
     move-result-object v3
 
     .line 5
-    sget v4, Lj3/wy0;->N:I
+    sget v4, Lk3/ly0;->N:I
 
-    invoke-virtual {v2, v4}, Lj3/zy0;->c(I)Lj3/zy0;
+    invoke-virtual {v2, v4}, Lk3/oy0;->c(I)Lk3/oy0;
 
     move-result-object v4
 
@@ -736,9 +2334,9 @@
     const-wide v8, -0x7fffffffffffffffL    # -4.9E-324
 
     .line 7
-    iget-object v10, v4, Lj3/zy0;->Q0:Ljava/util/List;
+    iget-object v10, v4, Lk3/oy0;->Q0:Ljava/util/ArrayList;
 
-    invoke-interface {v10}, Ljava/util/List;->size()I
+    invoke-virtual {v10}, Ljava/util/ArrayList;->size()I
 
     move-result v10
 
@@ -750,51 +2348,51 @@
     if-ge v11, v10, :cond_4
 
     .line 8
-    iget-object v8, v4, Lj3/zy0;->Q0:Ljava/util/List;
+    iget-object v8, v4, Lk3/oy0;->Q0:Ljava/util/ArrayList;
 
-    invoke-interface {v8, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v8, v11}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v8
 
-    check-cast v8, Lj3/yy0;
+    check-cast v8, Lk3/ny0;
 
     .line 9
-    iget v9, v8, Lj3/wy0;->a:I
+    iget v9, v8, Lk3/ly0;->a:I
 
-    sget v12, Lj3/wy0;->z:I
+    sget v12, Lk3/ly0;->z:I
 
     if-ne v9, v12, :cond_1
 
     .line 10
-    iget-object v8, v8, Lj3/yy0;->P0:Lj3/d21;
+    iget-object v8, v8, Lk3/ny0;->P0:Lk3/s11;
 
     .line 11
-    invoke-virtual {v8, v5}, Lj3/d21;->h(I)V
+    invoke-virtual {v8, v5}, Lk3/s11;->h(I)V
 
     .line 12
-    invoke-virtual {v8}, Lj3/d21;->b()I
+    invoke-virtual {v8}, Lk3/s11;->b()I
 
     move-result v5
 
     .line 13
-    invoke-virtual {v8}, Lj3/d21;->o()I
+    invoke-virtual {v8}, Lk3/s11;->n()I
 
     move-result v9
 
     sub-int/2addr v9, v7
 
     .line 14
-    invoke-virtual {v8}, Lj3/d21;->o()I
+    invoke-virtual {v8}, Lk3/s11;->n()I
 
     move-result v12
 
     .line 15
-    invoke-virtual {v8}, Lj3/d21;->o()I
+    invoke-virtual {v8}, Lk3/s11;->n()I
 
     move-result v13
 
     .line 16
-    invoke-virtual {v8}, Lj3/d21;->b()I
+    invoke-virtual {v8}, Lk3/s11;->b()I
 
     move-result v8
 
@@ -803,9 +2401,9 @@
 
     move-result-object v5
 
-    new-instance v7, Lj3/ez0;
+    new-instance v7, Lk3/uy0;
 
-    invoke-direct {v7, v9, v12, v13, v8}, Lj3/ez0;-><init>(IIII)V
+    invoke-direct {v7, v9, v12, v13, v8}, Lk3/uy0;-><init>(IIII)V
 
     invoke-static {v5, v7}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
 
@@ -822,7 +2420,7 @@
 
     iget-object v5, v5, Landroid/util/Pair;->second:Ljava/lang/Object;
 
-    check-cast v5, Lj3/ez0;
+    check-cast v5, Lk3/uy0;
 
     invoke-virtual {v14, v7, v5}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -830,18 +2428,18 @@
 
     .line 19
     :cond_1
-    sget v5, Lj3/wy0;->O:I
+    sget v5, Lk3/ly0;->O:I
 
     if-ne v9, v5, :cond_3
 
     .line 20
-    iget-object v5, v8, Lj3/yy0;->P0:Lj3/d21;
+    iget-object v5, v8, Lk3/ny0;->P0:Lk3/s11;
 
     .line 21
-    invoke-virtual {v5, v6}, Lj3/d21;->h(I)V
+    invoke-virtual {v5, v6}, Lk3/s11;->h(I)V
 
     .line 22
-    invoke-virtual {v5}, Lj3/d21;->b()I
+    invoke-virtual {v5}, Lk3/s11;->b()I
 
     move-result v7
 
@@ -852,14 +2450,14 @@
     if-nez v7, :cond_2
 
     .line 23
-    invoke-virtual {v5}, Lj3/d21;->n()J
+    invoke-virtual {v5}, Lk3/s11;->m()J
 
     move-result-wide v7
 
     goto :goto_2
 
     :cond_2
-    invoke-virtual {v5}, Lj3/d21;->p()J
+    invoke-virtual {v5}, Lk3/s11;->o()J
 
     move-result-wide v7
 
@@ -883,9 +2481,9 @@
     invoke-direct {v4}, Landroid/util/SparseArray;-><init>()V
 
     .line 25
-    iget-object v5, v2, Lj3/zy0;->R0:Ljava/util/List;
+    iget-object v5, v2, Lk3/oy0;->R0:Ljava/util/ArrayList;
 
-    invoke-interface {v5}, Ljava/util/List;->size()I
+    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
     move-result v5
 
@@ -895,27 +2493,27 @@
     if-ge v6, v5, :cond_6
 
     .line 26
-    iget-object v7, v2, Lj3/zy0;->R0:Ljava/util/List;
+    iget-object v7, v2, Lk3/oy0;->R0:Ljava/util/ArrayList;
 
-    invoke-interface {v7, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v7, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
     move-object v8, v7
 
-    check-cast v8, Lj3/zy0;
+    check-cast v8, Lk3/oy0;
 
     .line 27
-    iget v7, v8, Lj3/wy0;->a:I
+    iget v7, v8, Lk3/ly0;->a:I
 
-    sget v9, Lj3/wy0;->E:I
+    sget v9, Lk3/ly0;->E:I
 
     if-ne v7, v9, :cond_5
 
     .line 28
-    sget v7, Lj3/wy0;->D:I
+    sget v7, Lk3/ly0;->D:I
 
-    invoke-virtual {v2, v7}, Lj3/zy0;->b(I)Lj3/yy0;
+    invoke-virtual {v2, v7}, Lk3/oy0;->b(I)Lk3/ny0;
 
     move-result-object v9
 
@@ -925,14 +2523,14 @@
 
     move-object v12, v3
 
-    invoke-static/range {v8 .. v13}, Lcom/google/android/gms/internal/ads/l7;->b(Lj3/zy0;Lj3/yy0;JLcom/google/android/gms/internal/ads/zzjn;Z)Lj3/jz0;
+    invoke-static/range {v8 .. v13}, Lcom/google/android/gms/internal/ads/l7;->b(Lk3/oy0;Lk3/ny0;JLcom/google/android/gms/internal/ads/zzjn;Z)Lk3/zy0;
 
     move-result-object v7
 
     if-eqz v7, :cond_5
 
     .line 29
-    iget v8, v7, Lj3/jz0;->a:I
+    iget v8, v7, Lk3/zy0;->a:I
 
     invoke-virtual {v4, v8, v7}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -966,82 +2564,67 @@
 
     move-result-object v5
 
-    check-cast v5, Lj3/jz0;
+    check-cast v5, Lk3/zy0;
 
     .line 33
-    new-instance v6, Lj3/fz0;
+    new-instance v6, Lk3/vy0;
 
-    iget-object v7, v1, Lcom/google/android/gms/internal/ads/m7;->v:Lj3/jy0;
+    iget-object v7, v1, Lcom/google/android/gms/internal/ads/m7;->u:Lk3/yx0;
 
-    iget v8, v5, Lj3/jz0;->b:I
+    iget v8, v5, Lk3/zy0;->b:I
 
-    check-cast v7, Lj3/b01;
+    check-cast v7, Lk3/qz0;
 
-    invoke-virtual {v7, v3, v8}, Lj3/b01;->o(II)Lj3/q01;
+    invoke-virtual {v7, v3}, Lk3/qz0;->n(I)Lk3/f01;
 
     move-result-object v7
 
-    invoke-direct {v6, v7}, Lj3/fz0;-><init>(Lj3/q01;)V
+    invoke-direct {v6, v7}, Lk3/vy0;-><init>(Lk3/f01;)V
 
     .line 34
-    iget v8, v5, Lj3/jz0;->a:I
+    iget v7, v5, Lk3/zy0;->a:I
 
-    invoke-virtual {v14, v8}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+    invoke-virtual {v14, v7}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
-    move-result-object v8
+    move-result-object v7
 
-    check-cast v8, Lj3/ez0;
+    check-cast v7, Lk3/uy0;
+
+    invoke-virtual {v6, v5, v7}, Lk3/vy0;->b(Lk3/zy0;Lk3/uy0;)V
 
     .line 35
-    iput-object v5, v6, Lj3/fz0;->c:Lj3/jz0;
-
-    .line 36
-    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 37
-    iput-object v8, v6, Lj3/fz0;->d:Lj3/ez0;
-
-    .line 38
-    iget-object v8, v5, Lj3/jz0;->f:Lcom/google/android/gms/internal/ads/zzho;
-
-    invoke-virtual {v7, v8}, Lj3/q01;->g(Lcom/google/android/gms/internal/ads/zzho;)V
-
-    .line 39
-    invoke-virtual {v6}, Lj3/fz0;->a()V
-
-    .line 40
     iget-object v7, v1, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
 
-    iget v8, v5, Lj3/jz0;->a:I
+    iget v8, v5, Lk3/zy0;->a:I
 
     invoke-virtual {v7, v8, v6}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 41
-    iget-wide v6, v1, Lcom/google/android/gms/internal/ads/m7;->q:J
+    .line 36
+    iget-wide v6, v1, Lcom/google/android/gms/internal/ads/m7;->p:J
 
-    iget-wide v8, v5, Lj3/jz0;->e:J
+    iget-wide v8, v5, Lk3/zy0;->e:J
 
     invoke-static {v6, v7, v8, v9}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide v5
 
-    iput-wide v5, v1, Lcom/google/android/gms/internal/ads/m7;->q:J
+    iput-wide v5, v1, Lcom/google/android/gms/internal/ads/m7;->p:J
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_5
 
-    .line 42
+    .line 37
     :cond_7
-    iget-object v2, v1, Lcom/google/android/gms/internal/ads/m7;->v:Lj3/jy0;
+    iget-object v2, v1, Lcom/google/android/gms/internal/ads/m7;->u:Lk3/yx0;
 
-    check-cast v2, Lj3/b01;
+    check-cast v2, Lk3/qz0;
 
-    invoke-virtual {v2}, Lj3/b01;->p()V
+    invoke-virtual {v2}, Lk3/qz0;->o()V
 
     goto/16 :goto_0
 
-    .line 43
+    .line 38
     :cond_8
     iget-object v3, v1, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
 
@@ -1059,79 +2642,60 @@
     const/4 v7, 0x0
 
     :goto_6
-    invoke-static {v7}, Lj3/cj;->e(Z)V
+    invoke-static {v7}, Lk3/j6;->c(Z)V
 
     const/4 v3, 0x0
 
     :goto_7
     if-ge v3, v2, :cond_0
 
-    .line 44
+    .line 39
     invoke-virtual {v4, v3}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    check-cast v5, Lj3/jz0;
+    check-cast v5, Lk3/zy0;
 
-    .line 45
+    .line 40
     iget-object v6, v1, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
 
-    iget v7, v5, Lj3/jz0;->a:I
+    iget v7, v5, Lk3/zy0;->a:I
 
     invoke-virtual {v6, v7}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
-    check-cast v6, Lj3/fz0;
+    check-cast v6, Lk3/vy0;
 
-    iget v7, v5, Lj3/jz0;->a:I
+    iget v7, v5, Lk3/zy0;->a:I
 
     invoke-virtual {v14, v7}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    check-cast v7, Lj3/ez0;
+    check-cast v7, Lk3/uy0;
 
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 46
-    iput-object v5, v6, Lj3/fz0;->c:Lj3/jz0;
-
-    .line 47
-    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 48
-    iput-object v7, v6, Lj3/fz0;->d:Lj3/ez0;
-
-    .line 49
-    iget-object v7, v6, Lj3/fz0;->b:Lj3/q01;
-
-    iget-object v5, v5, Lj3/jz0;->f:Lcom/google/android/gms/internal/ads/zzho;
-
-    invoke-virtual {v7, v5}, Lj3/q01;->g(Lcom/google/android/gms/internal/ads/zzho;)V
-
-    .line 50
-    invoke-virtual {v6}, Lj3/fz0;->a()V
+    invoke-virtual {v6, v5, v7}, Lk3/vy0;->b(Lk3/zy0;Lk3/uy0;)V
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_7
 
-    .line 51
+    .line 41
     :cond_a
-    sget v4, Lj3/wy0;->L:I
+    sget v4, Lk3/ly0;->L:I
 
     if-ne v3, v4, :cond_45
 
-    .line 52
+    .line 42
     iget-object v3, v1, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
 
     iget-object v1, v1, Lcom/google/android/gms/internal/ads/m7;->g:[B
 
-    .line 53
-    iget-object v4, v2, Lj3/zy0;->R0:Ljava/util/List;
+    .line 43
+    iget-object v4, v2, Lk3/oy0;->R0:Ljava/util/ArrayList;
 
-    invoke-interface {v4}, Ljava/util/List;->size()I
+    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v4
 
@@ -1142,37 +2706,37 @@
     :goto_8
     if-ge v5, v4, :cond_43
 
-    .line 54
-    iget-object v8, v2, Lj3/zy0;->R0:Ljava/util/List;
+    .line 44
+    iget-object v8, v2, Lk3/oy0;->R0:Ljava/util/ArrayList;
 
-    invoke-interface {v8, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v8, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v8
 
-    check-cast v8, Lj3/zy0;
+    check-cast v8, Lk3/oy0;
 
-    .line 55
-    iget v9, v8, Lj3/wy0;->a:I
+    .line 45
+    iget v9, v8, Lk3/ly0;->a:I
 
-    sget v10, Lj3/wy0;->M:I
+    sget v10, Lk3/ly0;->M:I
 
     if-ne v9, v10, :cond_42
 
-    .line 56
-    sget v9, Lj3/wy0;->y:I
+    .line 46
+    sget v9, Lk3/ly0;->y:I
 
-    invoke-virtual {v8, v9}, Lj3/zy0;->b(I)Lj3/yy0;
+    invoke-virtual {v8, v9}, Lk3/oy0;->b(I)Lk3/ny0;
 
     move-result-object v9
 
-    .line 57
-    iget-object v9, v9, Lj3/yy0;->P0:Lj3/d21;
+    .line 47
+    iget-object v9, v9, Lk3/ny0;->P0:Lk3/s11;
 
-    .line 58
-    invoke-virtual {v9, v6}, Lj3/d21;->h(I)V
+    .line 48
+    invoke-virtual {v9, v6}, Lk3/s11;->h(I)V
 
-    .line 59
-    invoke-virtual {v9}, Lj3/d21;->b()I
+    .line 49
+    invoke-virtual {v9}, Lk3/s11;->b()I
 
     move-result v10
 
@@ -1180,17 +2744,17 @@
 
     and-int/2addr v10, v11
 
-    .line 60
-    invoke-virtual {v9}, Lj3/d21;->b()I
+    .line 50
+    invoke-virtual {v9}, Lk3/s11;->b()I
 
     move-result v11
 
-    .line 61
+    .line 51
     invoke-virtual {v3, v11}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v11
 
-    check-cast v11, Lj3/fz0;
+    check-cast v11, Lk3/vy0;
 
     if-nez v11, :cond_b
 
@@ -1203,29 +2767,29 @@
 
     if-eqz v12, :cond_c
 
-    .line 62
-    invoke-virtual {v9}, Lj3/d21;->p()J
+    .line 52
+    invoke-virtual {v9}, Lk3/s11;->o()J
 
     move-result-wide v12
 
-    .line 63
-    iget-object v14, v11, Lj3/fz0;->a:Lj3/lz0;
+    .line 53
+    iget-object v14, v11, Lk3/vy0;->a:Lk3/bz0;
 
-    iput-wide v12, v14, Lj3/lz0;->b:J
+    iput-wide v12, v14, Lk3/bz0;->b:J
 
-    .line 64
-    iput-wide v12, v14, Lj3/lz0;->c:J
+    .line 54
+    iput-wide v12, v14, Lk3/bz0;->c:J
 
-    .line 65
+    .line 55
     :cond_c
-    iget-object v12, v11, Lj3/fz0;->d:Lj3/ez0;
+    iget-object v12, v11, Lk3/vy0;->d:Lk3/uy0;
 
     and-int/lit8 v13, v10, 0x2
 
     if-eqz v13, :cond_d
 
-    .line 66
-    invoke-virtual {v9}, Lj3/d21;->o()I
+    .line 56
+    invoke-virtual {v9}, Lk3/s11;->n()I
 
     move-result v13
 
@@ -1234,96 +2798,96 @@
     goto :goto_9
 
     :cond_d
-    iget v13, v12, Lj3/ez0;->a:I
+    iget v13, v12, Lk3/uy0;->a:I
 
     :goto_9
     and-int/lit8 v14, v10, 0x8
 
     if-eqz v14, :cond_e
 
-    .line 67
-    invoke-virtual {v9}, Lj3/d21;->o()I
+    .line 57
+    invoke-virtual {v9}, Lk3/s11;->n()I
 
     move-result v14
 
     goto :goto_a
 
     :cond_e
-    iget v14, v12, Lj3/ez0;->b:I
+    iget v14, v12, Lk3/uy0;->b:I
 
     :goto_a
     and-int/lit8 v15, v10, 0x10
 
     if-eqz v15, :cond_f
 
-    .line 68
-    invoke-virtual {v9}, Lj3/d21;->o()I
+    .line 58
+    invoke-virtual {v9}, Lk3/s11;->n()I
 
     move-result v15
 
     goto :goto_b
 
     :cond_f
-    iget v15, v12, Lj3/ez0;->c:I
+    iget v15, v12, Lk3/uy0;->c:I
 
     :goto_b
     and-int/lit8 v10, v10, 0x20
 
     if-eqz v10, :cond_10
 
-    .line 69
-    invoke-virtual {v9}, Lj3/d21;->o()I
+    .line 59
+    invoke-virtual {v9}, Lk3/s11;->n()I
 
     move-result v9
 
     goto :goto_c
 
     :cond_10
-    iget v9, v12, Lj3/ez0;->d:I
+    iget v9, v12, Lk3/uy0;->d:I
 
-    .line 70
+    .line 60
     :goto_c
-    iget-object v10, v11, Lj3/fz0;->a:Lj3/lz0;
+    iget-object v10, v11, Lk3/vy0;->a:Lk3/bz0;
 
-    new-instance v12, Lj3/ez0;
+    new-instance v12, Lk3/uy0;
 
-    invoke-direct {v12, v13, v14, v15, v9}, Lj3/ez0;-><init>(IIII)V
+    invoke-direct {v12, v13, v14, v15, v9}, Lk3/uy0;-><init>(IIII)V
 
-    iput-object v12, v10, Lj3/lz0;->a:Lj3/ez0;
+    iput-object v12, v10, Lk3/bz0;->a:Lk3/uy0;
 
     :goto_d
     if-eqz v11, :cond_42
 
-    .line 71
-    iget-object v9, v11, Lj3/fz0;->a:Lj3/lz0;
+    .line 61
+    iget-object v9, v11, Lk3/vy0;->a:Lk3/bz0;
 
-    .line 72
-    iget-wide v12, v9, Lj3/lz0;->r:J
+    .line 62
+    iget-wide v12, v9, Lk3/bz0;->r:J
 
-    .line 73
-    invoke-virtual {v11}, Lj3/fz0;->a()V
+    .line 63
+    invoke-virtual {v11}, Lk3/vy0;->a()V
 
-    .line 74
-    sget v10, Lj3/wy0;->x:I
+    .line 64
+    sget v10, Lk3/ly0;->x:I
 
-    invoke-virtual {v8, v10}, Lj3/zy0;->b(I)Lj3/yy0;
+    invoke-virtual {v8, v10}, Lk3/oy0;->b(I)Lk3/ny0;
 
     move-result-object v14
 
     if-eqz v14, :cond_12
 
-    .line 75
-    invoke-virtual {v8, v10}, Lj3/zy0;->b(I)Lj3/yy0;
+    .line 65
+    invoke-virtual {v8, v10}, Lk3/oy0;->b(I)Lk3/ny0;
 
     move-result-object v10
 
-    iget-object v10, v10, Lj3/yy0;->P0:Lj3/d21;
+    iget-object v10, v10, Lk3/ny0;->P0:Lk3/s11;
 
-    .line 76
-    invoke-virtual {v10, v6}, Lj3/d21;->h(I)V
+    .line 66
+    invoke-virtual {v10, v6}, Lk3/s11;->h(I)V
 
-    .line 77
-    invoke-virtual {v10}, Lj3/d21;->b()I
+    .line 67
+    invoke-virtual {v10}, Lk3/s11;->b()I
 
     move-result v6
 
@@ -1333,25 +2897,25 @@
 
     if-ne v6, v7, :cond_11
 
-    .line 78
-    invoke-virtual {v10}, Lj3/d21;->p()J
+    .line 68
+    invoke-virtual {v10}, Lk3/s11;->o()J
 
     move-result-wide v12
 
     goto :goto_e
 
     :cond_11
-    invoke-virtual {v10}, Lj3/d21;->n()J
+    invoke-virtual {v10}, Lk3/s11;->m()J
 
     move-result-wide v12
 
-    .line 79
+    .line 69
     :cond_12
     :goto_e
-    iget-object v6, v8, Lj3/zy0;->Q0:Ljava/util/List;
+    iget-object v6, v8, Lk3/oy0;->Q0:Ljava/util/ArrayList;
 
-    .line 80
-    invoke-interface {v6}, Ljava/util/List;->size()I
+    .line 70
+    invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
     move-result v7
 
@@ -1364,7 +2928,7 @@
     :goto_f
     if-ge v15, v7, :cond_14
 
-    .line 81
+    .line 71
     invoke-interface {v6, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v16
@@ -1373,29 +2937,29 @@
 
     move-object/from16 v3, v16
 
-    check-cast v3, Lj3/yy0;
+    check-cast v3, Lk3/ny0;
 
     move/from16 v16, v4
 
-    .line 82
-    iget v4, v3, Lj3/wy0;->a:I
+    .line 72
+    iget v4, v3, Lk3/ly0;->a:I
 
     move-wide/from16 v18, v12
 
-    sget v12, Lj3/wy0;->A:I
+    sget v12, Lk3/ly0;->A:I
 
     if-ne v4, v12, :cond_13
 
-    .line 83
-    iget-object v3, v3, Lj3/yy0;->P0:Lj3/d21;
+    .line 73
+    iget-object v3, v3, Lk3/ny0;->P0:Lk3/s11;
 
     const/16 v4, 0xc
 
-    .line 84
-    invoke-virtual {v3, v4}, Lj3/d21;->h(I)V
+    .line 74
+    invoke-virtual {v3, v4}, Lk3/s11;->h(I)V
 
-    .line 85
-    invoke-virtual {v3}, Lj3/d21;->o()I
+    .line 75
+    invoke-virtual {v3}, Lk3/s11;->n()I
 
     move-result v3
 
@@ -1425,26 +2989,26 @@
 
     const/4 v3, 0x0
 
-    .line 86
-    iput v3, v11, Lj3/fz0;->g:I
+    .line 76
+    iput v3, v11, Lk3/vy0;->g:I
 
-    .line 87
-    iput v3, v11, Lj3/fz0;->f:I
+    .line 77
+    iput v3, v11, Lk3/vy0;->f:I
 
-    .line 88
-    iput v3, v11, Lj3/fz0;->e:I
+    .line 78
+    iput v3, v11, Lk3/vy0;->e:I
 
-    .line 89
-    iget-object v3, v11, Lj3/fz0;->a:Lj3/lz0;
+    .line 79
+    iget-object v3, v11, Lk3/vy0;->a:Lk3/bz0;
 
-    .line 90
-    iput v14, v3, Lj3/lz0;->d:I
+    .line 80
+    iput v14, v3, Lk3/bz0;->d:I
 
-    .line 91
-    iput v10, v3, Lj3/lz0;->e:I
+    .line 81
+    iput v10, v3, Lk3/bz0;->e:I
 
-    .line 92
-    iget-object v4, v3, Lj3/lz0;->g:[I
+    .line 82
+    iget-object v4, v3, Lk3/bz0;->g:[I
 
     if-eqz v4, :cond_15
 
@@ -1452,20 +3016,20 @@
 
     if-ge v4, v14, :cond_16
 
-    .line 93
+    .line 83
     :cond_15
     new-array v4, v14, [J
 
-    iput-object v4, v3, Lj3/lz0;->f:[J
+    iput-object v4, v3, Lk3/bz0;->f:[J
 
-    .line 94
+    .line 84
     new-array v4, v14, [I
 
-    iput-object v4, v3, Lj3/lz0;->g:[I
+    iput-object v4, v3, Lk3/bz0;->g:[I
 
-    .line 95
+    .line 85
     :cond_16
-    iget-object v4, v3, Lj3/lz0;->h:[I
+    iget-object v4, v3, Lk3/bz0;->h:[I
 
     if-eqz v4, :cond_17
 
@@ -1476,33 +3040,33 @@
     :cond_17
     mul-int/lit8 v10, v10, 0x7d
 
-    .line 96
+    .line 86
     div-int/lit8 v10, v10, 0x64
 
-    .line 97
+    .line 87
     new-array v4, v10, [I
 
-    iput-object v4, v3, Lj3/lz0;->h:[I
+    iput-object v4, v3, Lk3/bz0;->h:[I
 
-    .line 98
+    .line 88
     new-array v4, v10, [I
 
-    iput-object v4, v3, Lj3/lz0;->i:[I
+    iput-object v4, v3, Lk3/bz0;->i:[I
 
-    .line 99
+    .line 89
     new-array v4, v10, [J
 
-    iput-object v4, v3, Lj3/lz0;->j:[J
+    iput-object v4, v3, Lk3/bz0;->j:[J
 
-    .line 100
+    .line 90
     new-array v4, v10, [Z
 
-    iput-object v4, v3, Lj3/lz0;->k:[Z
+    iput-object v4, v3, Lk3/bz0;->k:[Z
 
-    .line 101
+    .line 91
     new-array v4, v10, [Z
 
-    iput-object v4, v3, Lj3/lz0;->m:[Z
+    iput-object v4, v3, Lk3/bz0;->m:[Z
 
     :cond_18
     const/4 v3, 0x0
@@ -1514,32 +3078,32 @@
     :goto_10
     if-ge v3, v7, :cond_2b
 
-    .line 102
+    .line 92
     invoke-interface {v6, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v12
 
-    check-cast v12, Lj3/yy0;
+    check-cast v12, Lk3/ny0;
 
-    .line 103
-    iget v13, v12, Lj3/wy0;->a:I
+    .line 93
+    iget v13, v12, Lk3/ly0;->a:I
 
-    sget v14, Lj3/wy0;->A:I
+    sget v14, Lk3/ly0;->A:I
 
     if-ne v13, v14, :cond_2a
 
     add-int/lit8 v13, v4, 0x1
 
-    .line 104
-    iget-object v12, v12, Lj3/yy0;->P0:Lj3/d21;
+    .line 94
+    iget-object v12, v12, Lk3/ny0;->P0:Lk3/s11;
 
     const/16 v14, 0x8
 
-    .line 105
-    invoke-virtual {v12, v14}, Lj3/d21;->h(I)V
+    .line 95
+    invoke-virtual {v12, v14}, Lk3/s11;->h(I)V
 
-    .line 106
-    invoke-virtual {v12}, Lj3/d21;->b()I
+    .line 96
+    invoke-virtual {v12}, Lk3/s11;->b()I
 
     move-result v14
 
@@ -1547,36 +3111,36 @@
 
     and-int/2addr v14, v15
 
-    .line 107
-    iget-object v15, v11, Lj3/fz0;->c:Lj3/jz0;
+    .line 97
+    iget-object v15, v11, Lk3/vy0;->c:Lk3/zy0;
 
     move-object/from16 v20, v6
 
-    .line 108
-    iget-object v6, v11, Lj3/fz0;->a:Lj3/lz0;
+    .line 98
+    iget-object v6, v11, Lk3/vy0;->a:Lk3/bz0;
 
     move/from16 v21, v7
 
-    .line 109
-    iget-object v7, v6, Lj3/lz0;->a:Lj3/ez0;
+    .line 99
+    iget-object v7, v6, Lk3/bz0;->a:Lk3/uy0;
 
     move/from16 v22, v13
 
-    .line 110
-    iget-object v13, v6, Lj3/lz0;->g:[I
+    .line 100
+    iget-object v13, v6, Lk3/bz0;->g:[I
 
-    invoke-virtual {v12}, Lj3/d21;->o()I
+    invoke-virtual {v12}, Lk3/s11;->n()I
 
     move-result v23
 
     aput v23, v13, v4
 
-    .line 111
-    iget-object v13, v6, Lj3/lz0;->f:[J
+    .line 101
+    iget-object v13, v6, Lk3/bz0;->f:[J
 
     move-object/from16 v23, v1
 
-    iget-wide v0, v6, Lj3/lz0;->b:J
+    iget-wide v0, v6, Lk3/bz0;->b:J
 
     aput-wide v0, v13, v4
 
@@ -1584,12 +3148,12 @@
 
     if-eqz v0, :cond_19
 
-    .line 112
+    .line 102
     aget-wide v0, v13, v4
 
     move-object/from16 v24, v2
 
-    invoke-virtual {v12}, Lj3/d21;->b()I
+    invoke-virtual {v12}, Lk3/s11;->b()I
 
     move-result v2
 
@@ -1624,14 +3188,14 @@
     :cond_1a
     const/4 v0, 0x0
 
-    .line 113
+    .line 103
     :goto_12
-    iget v1, v7, Lj3/ez0;->d:I
+    iget v1, v7, Lk3/uy0;->d:I
 
     if-eqz v0, :cond_1b
 
-    .line 114
-    invoke-virtual {v12}, Lj3/d21;->o()I
+    .line 104
+    invoke-virtual {v12}, Lk3/s11;->n()I
 
     move-result v1
 
@@ -1683,9 +3247,9 @@
     :cond_1f
     const/4 v13, 0x0
 
-    .line 115
+    .line 105
     :goto_16
-    iget-object v14, v15, Lj3/jz0;->i:[J
+    iget-object v14, v15, Lk3/zy0;->i:[J
 
     if-eqz v14, :cond_20
 
@@ -1709,8 +3273,8 @@
 
     if-nez v5, :cond_21
 
-    .line 116
-    iget-object v5, v15, Lj3/jz0;->j:[J
+    .line 106
+    iget-object v5, v15, Lk3/zy0;->j:[J
 
     aget-wide v29, v5, v1
 
@@ -1718,11 +3282,11 @@
 
     move v1, v13
 
-    iget-wide v13, v15, Lj3/jz0;->c:J
+    iget-wide v13, v15, Lk3/zy0;->c:J
 
     move-wide/from16 v33, v13
 
-    invoke-static/range {v29 .. v34}, Lj3/g21;->b(JJJ)J
+    invoke-static/range {v29 .. v34}, Lk3/v11;->b(JJJ)J
 
     move-result-wide v13
 
@@ -1738,29 +3302,29 @@
 
     const-wide/16 v13, 0x0
 
-    .line 117
+    .line 107
     :goto_17
-    iget-object v5, v6, Lj3/lz0;->h:[I
+    iget-object v5, v6, Lk3/bz0;->h:[I
 
     move-object/from16 v29, v11
 
-    .line 118
-    iget-object v11, v6, Lj3/lz0;->i:[I
+    .line 108
+    iget-object v11, v6, Lk3/bz0;->i:[I
 
     move/from16 v30, v3
 
-    .line 119
-    iget-object v3, v6, Lj3/lz0;->j:[J
+    .line 109
+    iget-object v3, v6, Lk3/bz0;->j:[J
 
     move-object/from16 v31, v5
 
-    .line 120
-    iget-object v5, v6, Lj3/lz0;->k:[Z
+    .line 110
+    iget-object v5, v6, Lk3/bz0;->k:[Z
 
     move-object/from16 v32, v5
 
-    .line 121
-    iget-object v5, v6, Lj3/lz0;->g:[I
+    .line 111
+    iget-object v5, v6, Lk3/bz0;->g:[I
 
     aget v5, v5, v4
 
@@ -1768,15 +3332,15 @@
 
     move-wide/from16 v39, v13
 
-    .line 122
-    iget-wide v13, v15, Lj3/jz0;->c:J
+    .line 112
+    iget-wide v13, v15, Lk3/zy0;->c:J
 
     if-lez v4, :cond_22
 
     move-object v15, v3
 
-    .line 123
-    iget-wide v3, v6, Lj3/lz0;->r:J
+    .line 113
+    iget-wide v3, v6, Lk3/bz0;->r:J
 
     goto :goto_18
 
@@ -1790,8 +3354,8 @@
 
     if-eqz v2, :cond_23
 
-    .line 124
-    invoke-virtual {v12}, Lj3/d21;->o()I
+    .line 114
+    invoke-virtual {v12}, Lk3/s11;->n()I
 
     move-result v33
 
@@ -1804,14 +3368,14 @@
     :cond_23
     move/from16 v41, v2
 
-    .line 125
-    iget v2, v7, Lj3/ez0;->b:I
+    .line 115
+    iget v2, v7, Lk3/uy0;->b:I
 
     :goto_19
     if-eqz v8, :cond_24
 
-    .line 126
-    invoke-virtual {v12}, Lj3/d21;->o()I
+    .line 116
+    invoke-virtual {v12}, Lk3/s11;->n()I
 
     move-result v33
 
@@ -1824,7 +3388,7 @@
     :cond_24
     move/from16 v42, v5
 
-    iget v5, v7, Lj3/ez0;->c:I
+    iget v5, v7, Lk3/uy0;->c:I
 
     :goto_1a
     if-nez v10, :cond_25
@@ -1840,8 +3404,8 @@
     :cond_25
     if-eqz v9, :cond_26
 
-    .line 127
-    invoke-virtual {v12}, Lj3/d21;->b()I
+    .line 117
+    invoke-virtual {v12}, Lk3/s11;->b()I
 
     move-result v33
 
@@ -1854,15 +3418,15 @@
     :cond_26
     move/from16 v43, v0
 
-    iget v0, v7, Lj3/ez0;->d:I
+    iget v0, v7, Lk3/uy0;->d:I
 
     :goto_1b
     if-eqz v1, :cond_27
 
     move/from16 v44, v1
 
-    .line 128
-    invoke-virtual {v12}, Lj3/d21;->b()I
+    .line 118
+    invoke-virtual {v12}, Lk3/s11;->b()I
 
     move-result v1
 
@@ -1874,7 +3438,7 @@
 
     int-to-long v7, v1
 
-    .line 129
+    .line 119
     div-long/2addr v7, v13
 
     long-to-int v1, v7
@@ -1892,7 +3456,7 @@
 
     const/4 v1, 0x0
 
-    .line 130
+    .line 120
     aput v1, v11, v10
 
     :goto_1c
@@ -1902,8 +3466,8 @@
 
     move-wide/from16 v37, v13
 
-    .line 131
-    invoke-static/range {v33 .. v38}, Lj3/g21;->b(JJJ)J
+    .line 121
+    invoke-static/range {v33 .. v38}, Lk3/v11;->b(JJJ)J
 
     move-result-wide v7
 
@@ -1911,7 +3475,7 @@
 
     aput-wide v7, v15, v10
 
-    .line 132
+    .line 122
     aput v5, v31, v10
 
     shr-int/lit8 v0, v0, 0x10
@@ -1927,7 +3491,7 @@
     :cond_28
     const/4 v0, 0x0
 
-    .line 133
+    .line 123
     :goto_1d
     aput-boolean v0, v32, v10
 
@@ -1954,8 +3518,8 @@
     :cond_29
     move/from16 v42, v5
 
-    .line 134
-    iput-wide v3, v6, Lj3/lz0;->r:J
+    .line 124
+    iput-wide v3, v6, Lk3/bz0;->r:J
 
     move/from16 v4, v22
 
@@ -2018,10 +3582,10 @@
 
     move-object/from16 v29, v11
 
-    .line 135
-    sget v0, Lj3/wy0;->d0:I
+    .line 125
+    sget v0, Lk3/ly0;->d0:I
 
-    invoke-virtual {v8, v0}, Lj3/zy0;->b(I)Lj3/yy0;
+    invoke-virtual {v8, v0}, Lk3/oy0;->b(I)Lk3/ny0;
 
     move-result-object v0
 
@@ -2029,32 +3593,32 @@
 
     move-object/from16 v11, v29
 
-    .line 136
-    iget-object v1, v11, Lj3/fz0;->c:Lj3/jz0;
+    .line 126
+    iget-object v1, v11, Lk3/vy0;->c:Lk3/zy0;
 
-    iget-object v1, v1, Lj3/jz0;->h:[Lj3/mz0;
+    iget-object v1, v1, Lk3/zy0;->h:[Lk3/cz0;
 
     move-object/from16 v2, v26
 
-    iget-object v3, v2, Lj3/lz0;->a:Lj3/ez0;
+    iget-object v3, v2, Lk3/bz0;->a:Lk3/uy0;
 
-    iget v3, v3, Lj3/ez0;->a:I
+    iget v3, v3, Lk3/uy0;->a:I
 
     aget-object v1, v1, v3
 
-    .line 137
-    iget-object v0, v0, Lj3/yy0;->P0:Lj3/d21;
+    .line 127
+    iget-object v0, v0, Lk3/ny0;->P0:Lk3/s11;
 
-    .line 138
-    iget v1, v1, Lj3/mz0;->a:I
+    .line 128
+    iget v1, v1, Lk3/cz0;->a:I
 
     const/16 v3, 0x8
 
-    .line 139
-    invoke-virtual {v0, v3}, Lj3/d21;->h(I)V
+    .line 129
+    invoke-virtual {v0, v3}, Lk3/s11;->h(I)V
 
-    .line 140
-    invoke-virtual {v0}, Lj3/d21;->b()I
+    .line 130
+    invoke-virtual {v0}, Lk3/s11;->b()I
 
     move-result v4
 
@@ -2068,29 +3632,29 @@
 
     if-ne v4, v5, :cond_2c
 
-    .line 141
-    invoke-virtual {v0, v3}, Lj3/d21;->i(I)V
+    .line 131
+    invoke-virtual {v0, v3}, Lk3/s11;->i(I)V
 
-    .line 142
+    .line 132
     :cond_2c
-    invoke-virtual {v0}, Lj3/d21;->d()I
+    invoke-virtual {v0}, Lk3/s11;->d()I
 
     move-result v3
 
-    .line 143
-    invoke-virtual {v0}, Lj3/d21;->o()I
+    .line 133
+    invoke-virtual {v0}, Lk3/s11;->n()I
 
     move-result v4
 
-    .line 144
-    iget v5, v2, Lj3/lz0;->e:I
+    .line 134
+    iget v5, v2, Lk3/bz0;->e:I
 
     if-ne v4, v5, :cond_31
 
     if-nez v3, :cond_2e
 
-    .line 145
-    iget-object v3, v2, Lj3/lz0;->m:[Z
+    .line 135
+    iget-object v3, v2, Lk3/bz0;->m:[Z
 
     const/4 v5, 0x0
 
@@ -2099,8 +3663,8 @@
     :goto_1f
     if-ge v5, v4, :cond_30
 
-    .line 146
-    invoke-virtual {v0}, Lj3/d21;->d()I
+    .line 136
+    invoke-virtual {v0}, Lk3/s11;->d()I
 
     move-result v7
 
@@ -2115,7 +3679,7 @@
     :cond_2d
     const/4 v7, 0x0
 
-    .line 147
+    .line 137
     :goto_20
     aput-boolean v7, v3, v5
 
@@ -2140,22 +3704,22 @@
 
     add-int/lit8 v6, v3, 0x0
 
-    .line 148
-    iget-object v3, v2, Lj3/lz0;->m:[Z
+    .line 138
+    iget-object v3, v2, Lk3/bz0;->m:[Z
 
     invoke-static {v3, v1, v4, v0}, Ljava/util/Arrays;->fill([ZIIZ)V
 
-    .line 149
+    .line 139
     :cond_30
-    invoke-virtual {v2, v6}, Lj3/lz0;->a(I)V
+    invoke-virtual {v2, v6}, Lk3/bz0;->a(I)V
 
     goto :goto_22
 
-    .line 150
+    .line 140
     :cond_31
     new-instance v0, Lcom/google/android/gms/internal/ads/zzhv;
 
-    iget v1, v2, Lj3/lz0;->e:I
+    iget v1, v2, Lk3/bz0;->e:I
 
     const/16 v2, 0x29
 
@@ -2163,10 +3727,12 @@
 
     const-string v5, ", "
 
-    invoke-static {v2, v3, v4, v5, v1}, Ld2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+    .line 141
+    invoke-static {v2, v3, v4, v5, v1}, Le2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 
+    .line 142
     invoke-direct {v0, v1}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -2174,26 +3740,26 @@
     :cond_32
     move-object/from16 v2, v26
 
-    .line 151
+    .line 143
     :goto_22
-    sget v0, Lj3/wy0;->e0:I
+    sget v0, Lk3/ly0;->e0:I
 
-    invoke-virtual {v8, v0}, Lj3/zy0;->b(I)Lj3/yy0;
+    invoke-virtual {v8, v0}, Lk3/oy0;->b(I)Lk3/ny0;
 
     move-result-object v0
 
     if-eqz v0, :cond_36
 
-    .line 152
-    iget-object v0, v0, Lj3/yy0;->P0:Lj3/d21;
+    .line 144
+    iget-object v0, v0, Lk3/ny0;->P0:Lk3/s11;
 
     const/16 v1, 0x8
 
-    .line 153
-    invoke-virtual {v0, v1}, Lj3/d21;->h(I)V
+    .line 145
+    invoke-virtual {v0, v1}, Lk3/s11;->h(I)V
 
-    .line 154
-    invoke-virtual {v0}, Lj3/d21;->b()I
+    .line 146
+    invoke-virtual {v0}, Lk3/s11;->b()I
 
     move-result v3
 
@@ -2207,12 +3773,12 @@
 
     if-ne v4, v5, :cond_33
 
-    .line 155
-    invoke-virtual {v0, v1}, Lj3/d21;->i(I)V
+    .line 147
+    invoke-virtual {v0, v1}, Lk3/s11;->i(I)V
 
-    .line 156
+    .line 148
     :cond_33
-    invoke-virtual {v0}, Lj3/d21;->o()I
+    invoke-virtual {v0}, Lk3/s11;->n()I
 
     move-result v1
 
@@ -2222,31 +3788,31 @@
 
     and-int/lit16 v1, v1, 0xff
 
-    .line 157
-    iget-wide v3, v2, Lj3/lz0;->c:J
+    .line 149
+    iget-wide v3, v2, Lk3/bz0;->c:J
 
     if-nez v1, :cond_34
 
-    .line 158
-    invoke-virtual {v0}, Lj3/d21;->n()J
+    .line 150
+    invoke-virtual {v0}, Lk3/s11;->m()J
 
     move-result-wide v0
 
     goto :goto_23
 
     :cond_34
-    invoke-virtual {v0}, Lj3/d21;->p()J
+    invoke-virtual {v0}, Lk3/s11;->o()J
 
     move-result-wide v0
 
     :goto_23
     add-long/2addr v3, v0
 
-    iput-wide v3, v2, Lj3/lz0;->c:J
+    iput-wide v3, v2, Lk3/bz0;->c:J
 
     goto :goto_24
 
-    .line 159
+    .line 151
     :cond_35
     new-instance v0, Lcom/google/android/gms/internal/ads/zzhv;
 
@@ -2254,45 +3820,47 @@
 
     const-string v3, "Unexpected saio entry count: "
 
-    invoke-static {v2, v3, v1}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
+    .line 152
+    invoke-static {v2, v3, v1}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 
+    .line 153
     invoke-direct {v0, v1}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 160
+    .line 154
     :cond_36
     :goto_24
-    sget v0, Lj3/wy0;->i0:I
+    sget v0, Lk3/ly0;->i0:I
 
-    invoke-virtual {v8, v0}, Lj3/zy0;->b(I)Lj3/yy0;
+    invoke-virtual {v8, v0}, Lk3/oy0;->b(I)Lk3/ny0;
 
     move-result-object v0
 
     if-eqz v0, :cond_37
 
-    .line 161
-    iget-object v0, v0, Lj3/yy0;->P0:Lj3/d21;
+    .line 155
+    iget-object v0, v0, Lk3/ny0;->P0:Lk3/s11;
 
     const/4 v1, 0x0
 
-    .line 162
-    invoke-static {v0, v1, v2}, Lcom/google/android/gms/internal/ads/m7;->a(Lj3/d21;ILj3/lz0;)V
+    .line 156
+    invoke-static {v0, v1, v2}, Lcom/google/android/gms/internal/ads/m7;->b(Lk3/s11;ILk3/bz0;)V
 
-    .line 163
+    .line 157
     :cond_37
-    sget v0, Lj3/wy0;->f0:I
+    sget v0, Lk3/ly0;->f0:I
 
-    invoke-virtual {v8, v0}, Lj3/zy0;->b(I)Lj3/yy0;
+    invoke-virtual {v8, v0}, Lk3/oy0;->b(I)Lk3/ny0;
 
     move-result-object v0
 
-    .line 164
-    sget v1, Lj3/wy0;->g0:I
+    .line 158
+    sget v1, Lk3/ly0;->g0:I
 
-    invoke-virtual {v8, v1}, Lj3/zy0;->b(I)Lj3/yy0;
+    invoke-virtual {v8, v1}, Lk3/oy0;->b(I)Lk3/ny0;
 
     move-result-object v1
 
@@ -2300,27 +3868,27 @@
 
     if-eqz v1, :cond_3e
 
-    .line 165
-    iget-object v0, v0, Lj3/yy0;->P0:Lj3/d21;
+    .line 159
+    iget-object v0, v0, Lk3/ny0;->P0:Lk3/s11;
 
-    iget-object v1, v1, Lj3/yy0;->P0:Lj3/d21;
+    iget-object v1, v1, Lk3/ny0;->P0:Lk3/s11;
 
     const/16 v3, 0x8
 
-    .line 166
-    invoke-virtual {v0, v3}, Lj3/d21;->h(I)V
+    .line 160
+    invoke-virtual {v0, v3}, Lk3/s11;->h(I)V
 
-    .line 167
-    invoke-virtual {v0}, Lj3/d21;->b()I
+    .line 161
+    invoke-virtual {v0}, Lk3/s11;->b()I
 
     move-result v3
 
-    .line 168
-    invoke-virtual {v0}, Lj3/d21;->b()I
+    .line 162
+    invoke-virtual {v0}, Lk3/s11;->b()I
 
     move-result v4
 
-    sget v5, Lcom/google/android/gms/internal/ads/m7;->x:I
+    sget v5, Lcom/google/android/gms/internal/ads/m7;->w:I
 
     if-ne v4, v5, :cond_3e
 
@@ -2334,12 +3902,12 @@
 
     if-ne v3, v6, :cond_38
 
-    .line 169
-    invoke-virtual {v0, v4}, Lj3/d21;->i(I)V
+    .line 163
+    invoke-virtual {v0, v4}, Lk3/s11;->i(I)V
 
-    .line 170
+    .line 164
     :cond_38
-    invoke-virtual {v0}, Lj3/d21;->b()I
+    invoke-virtual {v0}, Lk3/s11;->b()I
 
     move-result v0
 
@@ -2347,16 +3915,16 @@
 
     const/16 v0, 0x8
 
-    .line 171
-    invoke-virtual {v1, v0}, Lj3/d21;->h(I)V
+    .line 165
+    invoke-virtual {v1, v0}, Lk3/s11;->h(I)V
 
-    .line 172
-    invoke-virtual {v1}, Lj3/d21;->b()I
+    .line 166
+    invoke-virtual {v1}, Lk3/s11;->b()I
 
     move-result v0
 
-    .line 173
-    invoke-virtual {v1}, Lj3/d21;->b()I
+    .line 167
+    invoke-virtual {v1}, Lk3/s11;->b()I
 
     move-result v3
 
@@ -2370,8 +3938,8 @@
 
     if-ne v0, v6, :cond_3a
 
-    .line 174
-    invoke-virtual {v1}, Lj3/d21;->n()J
+    .line 168
+    invoke-virtual {v1}, Lk3/s11;->m()J
 
     move-result-wide v4
 
@@ -2383,7 +3951,7 @@
 
     goto :goto_25
 
-    .line 175
+    .line 169
     :cond_39
     new-instance v0, Lcom/google/android/gms/internal/ads/zzhv;
 
@@ -2396,13 +3964,13 @@
     :cond_3a
     if-lt v0, v3, :cond_3b
 
-    .line 176
-    invoke-virtual {v1, v4}, Lj3/d21;->i(I)V
+    .line 170
+    invoke-virtual {v1, v4}, Lk3/s11;->i(I)V
 
-    .line 177
+    .line 171
     :cond_3b
     :goto_25
-    invoke-virtual {v1}, Lj3/d21;->n()J
+    invoke-virtual {v1}, Lk3/s11;->m()J
 
     move-result-wide v4
 
@@ -2412,11 +3980,11 @@
 
     if-nez v0, :cond_3c
 
-    .line 178
-    invoke-virtual {v1, v3}, Lj3/d21;->i(I)V
+    .line 172
+    invoke-virtual {v1, v3}, Lk3/s11;->i(I)V
 
-    .line 179
-    invoke-virtual {v1}, Lj3/d21;->d()I
+    .line 173
+    invoke-virtual {v1}, Lk3/s11;->d()I
 
     move-result v0
 
@@ -2424,8 +3992,8 @@
 
     if-ne v0, v3, :cond_3e
 
-    .line 180
-    invoke-virtual {v1}, Lj3/d21;->d()I
+    .line 174
+    invoke-virtual {v1}, Lk3/s11;->d()I
 
     move-result v0
 
@@ -2433,35 +4001,24 @@
 
     new-array v5, v4, [B
 
-    .line 181
-    iget-object v6, v1, Lj3/d21;->a:[B
+    const/4 v6, 0x0
 
-    iget v7, v1, Lj3/d21;->b:I
+    .line 175
+    invoke-virtual {v1, v5, v6, v4}, Lk3/s11;->l([BII)V
 
-    const/4 v9, 0x0
+    .line 176
+    iput-boolean v3, v2, Lk3/bz0;->l:Z
 
-    invoke-static {v6, v7, v5, v9, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    .line 177
+    new-instance v1, Lk3/cz0;
 
-    .line 182
-    iget v6, v1, Lj3/d21;->b:I
+    invoke-direct {v1, v0, v5}, Lk3/cz0;-><init>(I[B)V
 
-    add-int/2addr v6, v4
-
-    iput v6, v1, Lj3/d21;->b:I
-
-    .line 183
-    iput-boolean v3, v2, Lj3/lz0;->l:Z
-
-    .line 184
-    new-instance v1, Lj3/mz0;
-
-    invoke-direct {v1, v3, v0, v5}, Lj3/mz0;-><init>(ZI[B)V
-
-    iput-object v1, v2, Lj3/lz0;->n:Lj3/mz0;
+    iput-object v1, v2, Lk3/bz0;->n:Lk3/cz0;
 
     goto :goto_26
 
-    .line 185
+    .line 178
     :cond_3c
     new-instance v0, Lcom/google/android/gms/internal/ads/zzhv;
 
@@ -2471,7 +4028,7 @@
 
     throw v0
 
-    .line 186
+    .line 179
     :cond_3d
     new-instance v0, Lcom/google/android/gms/internal/ads/zzhv;
 
@@ -2481,12 +4038,12 @@
 
     throw v0
 
-    .line 187
+    .line 180
     :cond_3e
     :goto_26
-    iget-object v0, v8, Lj3/zy0;->Q0:Ljava/util/List;
+    iget-object v0, v8, Lk3/oy0;->Q0:Ljava/util/ArrayList;
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
@@ -2495,29 +4052,29 @@
     :goto_27
     if-ge v1, v0, :cond_41
 
-    .line 188
-    iget-object v3, v8, Lj3/zy0;->Q0:Ljava/util/List;
+    .line 181
+    iget-object v3, v8, Lk3/oy0;->Q0:Ljava/util/ArrayList;
 
-    invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v3, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Lj3/yy0;
+    check-cast v3, Lk3/ny0;
 
-    .line 189
-    iget v4, v3, Lj3/wy0;->a:I
+    .line 182
+    iget v4, v3, Lk3/ly0;->a:I
 
-    sget v5, Lj3/wy0;->h0:I
+    sget v5, Lk3/ly0;->h0:I
 
     if-ne v4, v5, :cond_3f
 
-    .line 190
-    iget-object v3, v3, Lj3/yy0;->P0:Lj3/d21;
+    .line 183
+    iget-object v3, v3, Lk3/ny0;->P0:Lk3/s11;
 
     const/16 v4, 0x8
 
-    .line 191
-    invoke-virtual {v3, v4}, Lj3/d21;->h(I)V
+    .line 184
+    invoke-virtual {v3, v4}, Lk3/s11;->h(I)V
 
     const/16 v4, 0x10
 
@@ -2525,11 +4082,11 @@
 
     move-object/from16 v6, v23
 
-    .line 192
-    invoke-virtual {v3, v6, v5, v4}, Lj3/d21;->l([BII)V
+    .line 185
+    invoke-virtual {v3, v6, v5, v4}, Lk3/s11;->l([BII)V
 
-    .line 193
-    sget-object v5, Lcom/google/android/gms/internal/ads/m7;->y:[B
+    .line 186
+    sget-object v5, Lcom/google/android/gms/internal/ads/m7;->x:[B
 
     invoke-static {v6, v5}, Ljava/util/Arrays;->equals([B[B)Z
 
@@ -2537,8 +4094,8 @@
 
     if-eqz v5, :cond_40
 
-    .line 194
-    invoke-static {v3, v4, v2}, Lcom/google/android/gms/internal/ads/m7;->a(Lj3/d21;ILj3/lz0;)V
+    .line 187
+    invoke-static {v3, v4, v2}, Lcom/google/android/gms/internal/ads/m7;->b(Lk3/s11;ILk3/bz0;)V
 
     goto :goto_28
 
@@ -2590,9 +4147,9 @@
 
     goto/16 :goto_8
 
-    .line 195
+    .line 188
     :cond_43
-    iget-object v0, v2, Lj3/zy0;->Q0:Ljava/util/List;
+    iget-object v0, v2, Lk3/oy0;->Q0:Ljava/util/ArrayList;
 
     invoke-static {v0}, Lcom/google/android/gms/internal/ads/m7;->d(Ljava/util/List;)Lcom/google/android/gms/internal/ads/zzjn;
 
@@ -2602,7 +4159,7 @@
 
     move-object/from16 v15, p0
 
-    .line 196
+    .line 189
     iget-object v1, v15, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
 
     invoke-virtual {v1}, Landroid/util/SparseArray;->size()I
@@ -2616,52 +4173,52 @@
     :goto_2a
     if-ge v13, v14, :cond_44
 
-    .line 197
+    .line 190
     iget-object v1, v15, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
 
     invoke-virtual {v1, v13}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lj3/fz0;
+    check-cast v1, Lk3/vy0;
 
-    .line 198
-    iget-object v12, v1, Lj3/fz0;->b:Lj3/q01;
+    .line 191
+    iget-object v12, v1, Lk3/vy0;->b:Lk3/f01;
 
-    iget-object v1, v1, Lj3/fz0;->c:Lj3/jz0;
+    iget-object v1, v1, Lk3/vy0;->c:Lk3/zy0;
 
-    iget-object v11, v1, Lj3/jz0;->f:Lcom/google/android/gms/internal/ads/zzho;
+    iget-object v11, v1, Lk3/zy0;->f:Lcom/google/android/gms/internal/ads/zzho;
 
-    .line 199
+    .line 192
     new-instance v10, Lcom/google/android/gms/internal/ads/zzho;
 
     move-object v1, v10
 
-    iget-object v2, v11, Lcom/google/android/gms/internal/ads/zzho;->g:Ljava/lang/String;
+    iget-object v2, v11, Lcom/google/android/gms/internal/ads/zzho;->f:Ljava/lang/String;
 
-    iget-object v3, v11, Lcom/google/android/gms/internal/ads/zzho;->k:Ljava/lang/String;
+    iget-object v3, v11, Lcom/google/android/gms/internal/ads/zzho;->j:Ljava/lang/String;
 
-    iget-object v4, v11, Lcom/google/android/gms/internal/ads/zzho;->l:Ljava/lang/String;
+    iget-object v4, v11, Lcom/google/android/gms/internal/ads/zzho;->k:Ljava/lang/String;
 
-    iget-object v5, v11, Lcom/google/android/gms/internal/ads/zzho;->i:Ljava/lang/String;
+    iget-object v5, v11, Lcom/google/android/gms/internal/ads/zzho;->h:Ljava/lang/String;
 
-    iget v6, v11, Lcom/google/android/gms/internal/ads/zzho;->h:I
+    iget v6, v11, Lcom/google/android/gms/internal/ads/zzho;->g:I
 
-    iget v7, v11, Lcom/google/android/gms/internal/ads/zzho;->m:I
+    iget v7, v11, Lcom/google/android/gms/internal/ads/zzho;->l:I
 
-    iget v8, v11, Lcom/google/android/gms/internal/ads/zzho;->p:I
+    iget v8, v11, Lcom/google/android/gms/internal/ads/zzho;->o:I
 
-    iget v9, v11, Lcom/google/android/gms/internal/ads/zzho;->q:I
+    iget v9, v11, Lcom/google/android/gms/internal/ads/zzho;->p:I
 
     move-object/from16 v16, v10
 
-    iget v10, v11, Lcom/google/android/gms/internal/ads/zzho;->r:F
+    iget v10, v11, Lcom/google/android/gms/internal/ads/zzho;->q:F
 
     move-object/from16 v47, v16
 
     move-object/from16 v16, v12
 
-    iget v12, v11, Lcom/google/android/gms/internal/ads/zzho;->s:I
+    iget v12, v11, Lcom/google/android/gms/internal/ads/zzho;->r:I
 
     move-object/from16 v29, v1
 
@@ -2669,69 +4226,69 @@
 
     move v11, v12
 
-    iget v12, v1, Lcom/google/android/gms/internal/ads/zzho;->t:F
+    iget v12, v1, Lcom/google/android/gms/internal/ads/zzho;->s:F
 
     move-object/from16 v48, v16
 
     move/from16 v16, v13
 
-    iget-object v13, v1, Lcom/google/android/gms/internal/ads/zzho;->v:[B
+    iget-object v13, v1, Lcom/google/android/gms/internal/ads/zzho;->u:[B
 
     move/from16 v30, v16
 
     move/from16 v16, v14
 
-    iget v14, v1, Lcom/google/android/gms/internal/ads/zzho;->u:I
+    iget v14, v1, Lcom/google/android/gms/internal/ads/zzho;->t:I
 
     move/from16 v31, v16
 
-    iget-object v15, v1, Lcom/google/android/gms/internal/ads/zzho;->w:Lcom/google/android/gms/internal/ads/zzpr;
+    iget-object v15, v1, Lcom/google/android/gms/internal/ads/zzho;->v:Lcom/google/android/gms/internal/ads/zzpr;
 
     move-object/from16 v32, v2
 
-    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->x:I
+    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->w:I
 
     move/from16 v16, v2
 
-    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->y:I
+    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->x:I
 
     move/from16 v17, v2
 
-    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->z:I
+    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->y:I
 
     move/from16 v18, v2
 
-    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->A:I
+    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->z:I
 
     move/from16 v19, v2
 
-    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->B:I
+    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->A:I
 
     move/from16 v20, v2
 
-    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->D:I
+    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->C:I
 
     move/from16 v21, v2
 
-    iget-object v2, v1, Lcom/google/android/gms/internal/ads/zzho;->E:Ljava/lang/String;
+    iget-object v2, v1, Lcom/google/android/gms/internal/ads/zzho;->D:Ljava/lang/String;
 
     move-object/from16 v22, v2
 
-    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->F:I
+    iget v2, v1, Lcom/google/android/gms/internal/ads/zzho;->E:I
 
     move/from16 v23, v2
 
     move-object/from16 v33, v3
 
-    iget-wide v2, v1, Lcom/google/android/gms/internal/ads/zzho;->C:J
+    iget-wide v2, v1, Lcom/google/android/gms/internal/ads/zzho;->B:J
 
     move-wide/from16 v24, v2
 
-    iget-object v2, v1, Lcom/google/android/gms/internal/ads/zzho;->n:Ljava/util/List;
+    iget-object v2, v1, Lcom/google/android/gms/internal/ads/zzho;->m:Ljava/util/List;
 
     move-object/from16 v26, v2
 
-    iget-object v1, v1, Lcom/google/android/gms/internal/ads/zzho;->j:Lcom/google/android/gms/internal/ads/zzmc;
+    iget-object v1, v1, Lcom/google/android/gms/internal/ads/zzho;->i:Lcom/google/android/gms/internal/ads/zzmc;
 
     move-object/from16 v28, v1
 
@@ -2749,8 +4306,8 @@
 
     move-object/from16 v1, v48
 
-    .line 200
-    invoke-virtual {v1, v2}, Lj3/q01;->g(Lcom/google/android/gms/internal/ads/zzho;)V
+    .line 193
+    invoke-virtual {v1, v2}, Lk3/f01;->g(Lcom/google/android/gms/internal/ads/zzho;)V
 
     add-int/lit8 v13, v30, 0x1
 
@@ -2765,29 +4322,29 @@
 
     goto :goto_2b
 
-    .line 201
+    .line 194
     :cond_45
     iget-object v0, v1, Lcom/google/android/gms/internal/ads/m7;->h:Ljava/util/Stack;
 
-    invoke-virtual {v0}, Ljava/util/Stack;->isEmpty()Z
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_46
 
-    .line 202
+    .line 195
     iget-object v0, v1, Lcom/google/android/gms/internal/ads/m7;->h:Ljava/util/Stack;
 
     invoke-virtual {v0}, Ljava/util/Stack;->peek()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lj3/zy0;
+    check-cast v0, Lk3/oy0;
 
-    .line 203
-    iget-object v0, v0, Lj3/zy0;->R0:Ljava/util/List;
+    .line 196
+    iget-object v0, v0, Lk3/oy0;->R0:Ljava/util/ArrayList;
 
-    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_46
     :goto_2b
@@ -2795,1636 +4352,11 @@
 
     goto/16 :goto_0
 
-    .line 204
+    .line 197
     :cond_47
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/ads/m7;->h()V
 
     return-void
-.end method
-
-.method public final g(Lj3/ky0;Lj3/ny0;)I
-    .locals 23
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;,
-            Ljava/lang/InterruptedException;
-        }
-    .end annotation
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    .line 1
-    :cond_0
-    :goto_0
-    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
-
-    const/4 v3, 0x2
-
-    const/16 v4, 0x8
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x1
-
-    if-eqz v2, :cond_22
-
-    if-eq v2, v7, :cond_1b
-
-    const-wide v9, 0x7fffffffffffffffL
-
-    const/4 v11, 0x3
-
-    if-eq v2, v3, :cond_16
-
-    if-ne v2, v11, :cond_c
-
-    .line 2
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->r:Lj3/fz0;
-
-    if-nez v2, :cond_6
-
-    .line 3
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
-
-    .line 4
-    invoke-virtual {v2}, Landroid/util/SparseArray;->size()I
-
-    move-result v12
-
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
-
-    :goto_1
-    if-ge v13, v12, :cond_2
-
-    .line 5
-    invoke-virtual {v2, v13}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v15
-
-    check-cast v15, Lj3/fz0;
-
-    .line 6
-    iget v11, v15, Lj3/fz0;->g:I
-
-    iget-object v5, v15, Lj3/fz0;->a:Lj3/lz0;
-
-    iget v8, v5, Lj3/lz0;->d:I
-
-    if-eq v11, v8, :cond_1
-
-    .line 7
-    iget-object v5, v5, Lj3/lz0;->f:[J
-
-    aget-wide v17, v5, v11
-
-    cmp-long v5, v17, v9
-
-    if-gez v5, :cond_1
-
-    move-object v14, v15
-
-    move-wide/from16 v9, v17
-
-    :cond_1
-    add-int/lit8 v13, v13, 0x1
-
-    const/4 v11, 0x3
-
-    goto :goto_1
-
-    :cond_2
-    if-nez v14, :cond_4
-
-    .line 8
-    iget-wide v2, v0, Lcom/google/android/gms/internal/ads/m7;->o:J
-
-    move-object v4, v1
-
-    check-cast v4, Lj3/iy0;
-
-    .line 9
-    iget-wide v7, v4, Lj3/iy0;->c:J
-
-    sub-long/2addr v2, v7
-
-    long-to-int v3, v2
-
-    if-ltz v3, :cond_3
-
-    .line 10
-    invoke-virtual {v4, v3}, Lj3/iy0;->d(I)V
-
-    .line 11
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/ads/m7;->h()V
-
-    const/4 v7, 0x0
-
-    goto/16 :goto_c
-
-    .line 12
-    :cond_3
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
-
-    const-string v2, "Offset to end of mdat was negative."
-
-    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 13
-    :cond_4
-    iget-object v2, v14, Lj3/fz0;->a:Lj3/lz0;
-
-    iget-object v2, v2, Lj3/lz0;->f:[J
-
-    iget v5, v14, Lj3/fz0;->g:I
-
-    aget-wide v8, v2, v5
-
-    .line 14
-    move-object v2, v1
-
-    check-cast v2, Lj3/iy0;
-
-    .line 15
-    iget-wide v10, v2, Lj3/iy0;->c:J
-
-    sub-long/2addr v8, v10
-
-    long-to-int v5, v8
-
-    if-gez v5, :cond_5
-
-    const/4 v5, 0x0
-
-    .line 16
-    :cond_5
-    invoke-virtual {v2, v5}, Lj3/iy0;->d(I)V
-
-    .line 17
-    iput-object v14, v0, Lcom/google/android/gms/internal/ads/m7;->r:Lj3/fz0;
-
-    .line 18
-    :cond_6
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->r:Lj3/fz0;
-
-    iget-object v5, v2, Lj3/fz0;->a:Lj3/lz0;
-
-    iget-object v8, v5, Lj3/lz0;->h:[I
-
-    iget v9, v2, Lj3/fz0;->e:I
-
-    aget v8, v8, v9
-
-    iput v8, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
-
-    .line 19
-    iget-boolean v8, v5, Lj3/lz0;->l:Z
-
-    if-eqz v8, :cond_a
-
-    .line 20
-    iget-object v8, v5, Lj3/lz0;->p:Lj3/d21;
-
-    .line 21
-    iget-object v10, v5, Lj3/lz0;->a:Lj3/ez0;
-
-    iget v10, v10, Lj3/ez0;->a:I
-
-    .line 22
-    iget-object v11, v5, Lj3/lz0;->n:Lj3/mz0;
-
-    if-eqz v11, :cond_7
-
-    goto :goto_2
-
-    .line 23
-    :cond_7
-    iget-object v11, v2, Lj3/fz0;->c:Lj3/jz0;
-
-    iget-object v11, v11, Lj3/jz0;->h:[Lj3/mz0;
-
-    aget-object v11, v11, v10
-
-    .line 24
-    :goto_2
-    iget v10, v11, Lj3/mz0;->a:I
-
-    .line 25
-    iget-object v5, v5, Lj3/lz0;->m:[Z
-
-    aget-boolean v5, v5, v9
-
-    .line 26
-    iget-object v9, v0, Lcom/google/android/gms/internal/ads/m7;->e:Lj3/d21;
-
-    iget-object v11, v9, Lj3/d21;->a:[B
-
-    if-eqz v5, :cond_8
-
-    const/16 v12, 0x80
-
-    goto :goto_3
-
-    :cond_8
-    const/4 v12, 0x0
-
-    :goto_3
-    or-int/2addr v12, v10
-
-    int-to-byte v12, v12
-
-    aput-byte v12, v11, v6
-
-    .line 27
-    invoke-virtual {v9, v6}, Lj3/d21;->h(I)V
-
-    .line 28
-    iget-object v2, v2, Lj3/fz0;->b:Lj3/q01;
-
-    .line 29
-    iget-object v9, v0, Lcom/google/android/gms/internal/ads/m7;->e:Lj3/d21;
-
-    invoke-virtual {v2, v9, v7}, Lj3/q01;->e(Lj3/d21;I)V
-
-    .line 30
-    invoke-virtual {v2, v8, v10}, Lj3/q01;->e(Lj3/d21;I)V
-
-    if-nez v5, :cond_9
-
-    add-int/lit8 v10, v10, 0x1
-
-    goto :goto_4
-
-    .line 31
-    :cond_9
-    invoke-virtual {v8}, Lj3/d21;->e()I
-
-    move-result v5
-
-    const/4 v9, -0x2
-
-    .line 32
-    invoke-virtual {v8, v9}, Lj3/d21;->i(I)V
-
-    mul-int/lit8 v5, v5, 0x6
-
-    add-int/2addr v5, v3
-
-    .line 33
-    invoke-virtual {v2, v8, v5}, Lj3/q01;->e(Lj3/d21;I)V
-
-    add-int/lit8 v10, v10, 0x1
-
-    add-int/2addr v10, v5
-
-    .line 34
-    :goto_4
-    iput v10, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
-
-    .line 35
-    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
-
-    add-int/2addr v2, v10
-
-    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
-
-    goto :goto_5
-
-    .line 36
-    :cond_a
-    iput v6, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
-
-    .line 37
-    :goto_5
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->r:Lj3/fz0;
-
-    iget-object v2, v2, Lj3/fz0;->c:Lj3/jz0;
-
-    iget v2, v2, Lj3/jz0;->g:I
-
-    if-ne v2, v7, :cond_b
-
-    .line 38
-    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
-
-    sub-int/2addr v2, v4
-
-    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
-
-    .line 39
-    move-object v2, v1
-
-    check-cast v2, Lj3/iy0;
-
-    invoke-virtual {v2, v4}, Lj3/iy0;->d(I)V
-
-    :cond_b
-    const/4 v2, 0x4
-
-    .line 40
-    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
-
-    .line 41
-    iput v6, v0, Lcom/google/android/gms/internal/ads/m7;->u:I
-
-    .line 42
-    :cond_c
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->r:Lj3/fz0;
-
-    iget-object v4, v2, Lj3/fz0;->a:Lj3/lz0;
-
-    .line 43
-    iget-object v5, v2, Lj3/fz0;->c:Lj3/jz0;
-
-    .line 44
-    iget-object v8, v2, Lj3/fz0;->b:Lj3/q01;
-
-    .line 45
-    iget v2, v2, Lj3/fz0;->e:I
-
-    .line 46
-    iget v9, v5, Lj3/jz0;->k:I
-
-    if-eqz v9, :cond_e
-
-    .line 47
-    iget-object v10, v0, Lcom/google/android/gms/internal/ads/m7;->c:Lj3/d21;
-
-    iget-object v10, v10, Lj3/d21;->a:[B
-
-    .line 48
-    aput-byte v6, v10, v6
-
-    .line 49
-    aput-byte v6, v10, v7
-
-    .line 50
-    aput-byte v6, v10, v3
-
-    add-int/lit8 v3, v9, 0x1
-
-    rsub-int/lit8 v9, v9, 0x4
-
-    .line 51
-    :goto_6
-    iget v11, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
-
-    iget v12, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
-
-    if-ge v11, v12, :cond_f
-
-    .line 52
-    iget v11, v0, Lcom/google/android/gms/internal/ads/m7;->u:I
-
-    if-nez v11, :cond_d
-
-    .line 53
-    move-object v11, v1
-
-    check-cast v11, Lj3/iy0;
-
-    .line 54
-    invoke-virtual {v11, v10, v9, v3, v6}, Lj3/iy0;->c([BIIZ)Z
-
-    .line 55
-    iget-object v11, v0, Lcom/google/android/gms/internal/ads/m7;->c:Lj3/d21;
-
-    invoke-virtual {v11, v6}, Lj3/d21;->h(I)V
-
-    .line 56
-    iget-object v11, v0, Lcom/google/android/gms/internal/ads/m7;->c:Lj3/d21;
-
-    invoke-virtual {v11}, Lj3/d21;->o()I
-
-    move-result v11
-
-    sub-int/2addr v11, v7
-
-    iput v11, v0, Lcom/google/android/gms/internal/ads/m7;->u:I
-
-    .line 57
-    iget-object v11, v0, Lcom/google/android/gms/internal/ads/m7;->b:Lj3/d21;
-
-    invoke-virtual {v11, v6}, Lj3/d21;->h(I)V
-
-    .line 58
-    iget-object v11, v0, Lcom/google/android/gms/internal/ads/m7;->b:Lj3/d21;
-
-    const/4 v12, 0x4
-
-    invoke-virtual {v8, v11, v12}, Lj3/q01;->e(Lj3/d21;I)V
-
-    .line 59
-    iget-object v11, v0, Lcom/google/android/gms/internal/ads/m7;->c:Lj3/d21;
-
-    invoke-virtual {v8, v11, v7}, Lj3/q01;->e(Lj3/d21;I)V
-
-    .line 60
-    iget v11, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
-
-    add-int/lit8 v11, v11, 0x5
-
-    iput v11, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
-
-    .line 61
-    iget v11, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
-
-    add-int/2addr v11, v9
-
-    iput v11, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
-
-    goto :goto_6
-
-    .line 62
-    :cond_d
-    invoke-virtual {v8, v1, v11}, Lj3/q01;->b(Lj3/ky0;I)I
-
-    move-result v11
-
-    .line 63
-    iget v12, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
-
-    add-int/2addr v12, v11
-
-    iput v12, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
-
-    .line 64
-    iget v12, v0, Lcom/google/android/gms/internal/ads/m7;->u:I
-
-    sub-int/2addr v12, v11
-
-    iput v12, v0, Lcom/google/android/gms/internal/ads/m7;->u:I
-
-    goto :goto_6
-
-    .line 65
-    :cond_e
-    :goto_7
-    iget v3, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
-
-    iget v9, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
-
-    if-ge v3, v9, :cond_f
-
-    sub-int/2addr v9, v3
-
-    .line 66
-    invoke-virtual {v8, v1, v9}, Lj3/q01;->b(Lj3/ky0;I)I
-
-    move-result v3
-
-    .line 67
-    iget v9, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
-
-    add-int/2addr v9, v3
-
-    iput v9, v0, Lcom/google/android/gms/internal/ads/m7;->t:I
-
-    goto :goto_7
-
-    .line 68
-    :cond_f
-    iget-object v3, v4, Lj3/lz0;->j:[J
-
-    aget-wide v9, v3, v2
-
-    iget-object v3, v4, Lj3/lz0;->i:[I
-
-    aget v3, v3, v2
-
-    int-to-long v11, v3
-
-    add-long/2addr v9, v11
-
-    const-wide/16 v11, 0x3e8
-
-    mul-long v9, v9, v11
-
-    .line 69
-    iget-boolean v3, v4, Lj3/lz0;->l:Z
-
-    if-eqz v3, :cond_10
-
-    const/high16 v11, 0x40000000    # 2.0f
-
-    goto :goto_8
-
-    :cond_10
-    const/4 v11, 0x0
-
-    .line 70
-    :goto_8
-    iget-object v12, v4, Lj3/lz0;->k:[Z
-
-    aget-boolean v2, v12, v2
-
-    or-int/2addr v11, v2
-
-    if-eqz v3, :cond_13
-
-    .line 71
-    iget-object v2, v4, Lj3/lz0;->n:Lj3/mz0;
-
-    if-eqz v2, :cond_11
-
-    goto :goto_9
-
-    .line 72
-    :cond_11
-    iget-object v2, v5, Lj3/jz0;->h:[Lj3/mz0;
-
-    iget-object v3, v4, Lj3/lz0;->a:Lj3/ez0;
-
-    iget v3, v3, Lj3/ez0;->a:I
-
-    aget-object v2, v2, v3
-
-    .line 73
-    :goto_9
-    iget-object v3, v0, Lcom/google/android/gms/internal/ads/m7;->r:Lj3/fz0;
-
-    iget-object v5, v3, Lj3/fz0;->i:Lj3/mz0;
-
-    if-eq v2, v5, :cond_12
-
-    .line 74
-    new-instance v3, Lj3/qy0;
-
-    iget-object v5, v2, Lj3/mz0;->b:[B
-
-    invoke-direct {v3, v5}, Lj3/qy0;-><init>([B)V
-
-    goto :goto_a
-
-    .line 75
-    :cond_12
-    iget-object v3, v3, Lj3/fz0;->h:Lj3/qy0;
-
-    :goto_a
-    move-object v14, v3
-
-    goto :goto_b
-
-    :cond_13
-    const/4 v2, 0x0
-
-    const/4 v14, 0x0
-
-    .line 76
-    :goto_b
-    iget-object v3, v0, Lcom/google/android/gms/internal/ads/m7;->r:Lj3/fz0;
-
-    iput-object v14, v3, Lj3/fz0;->h:Lj3/qy0;
-
-    .line 77
-    iput-object v2, v3, Lj3/fz0;->i:Lj3/mz0;
-
-    .line 78
-    iget v12, v0, Lcom/google/android/gms/internal/ads/m7;->s:I
-
-    const/4 v13, 0x0
-
-    invoke-virtual/range {v8 .. v14}, Lj3/q01;->c(JIIILj3/qy0;)V
-
-    .line 79
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->i:Ljava/util/LinkedList;
-
-    invoke-virtual {v2}, Ljava/util/LinkedList;->isEmpty()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_15
-
-    .line 80
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->r:Lj3/fz0;
-
-    iget v3, v2, Lj3/fz0;->e:I
-
-    add-int/2addr v3, v7
-
-    iput v3, v2, Lj3/fz0;->e:I
-
-    .line 81
-    iget v3, v2, Lj3/fz0;->f:I
-
-    add-int/2addr v3, v7
-
-    iput v3, v2, Lj3/fz0;->f:I
-
-    .line 82
-    iget-object v4, v4, Lj3/lz0;->g:[I
-
-    iget v5, v2, Lj3/fz0;->g:I
-
-    aget v4, v4, v5
-
-    if-ne v3, v4, :cond_14
-
-    add-int/lit8 v5, v5, 0x1
-
-    .line 83
-    iput v5, v2, Lj3/fz0;->g:I
-
-    .line 84
-    iput v6, v2, Lj3/fz0;->f:I
-
-    const/4 v2, 0x0
-
-    .line 85
-    iput-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->r:Lj3/fz0;
-
-    :cond_14
-    const/4 v2, 0x3
-
-    .line 86
-    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
-
-    :goto_c
-    if-eqz v7, :cond_0
-
-    return v6
-
-    .line 87
-    :cond_15
-    iget-object v1, v0, Lcom/google/android/gms/internal/ads/m7;->i:Ljava/util/LinkedList;
-
-    invoke-virtual {v1}, Ljava/util/LinkedList;->removeFirst()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/gz0;
-
-    .line 88
-    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->p:I
-
-    iget v1, v1, Lj3/gz0;->a:I
-
-    sub-int/2addr v2, v1
-
-    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->p:I
-
-    const/4 v1, 0x0
-
-    .line 89
-    throw v1
-
-    .line 90
-    :cond_16
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
-
-    invoke-virtual {v2}, Landroid/util/SparseArray;->size()I
-
-    move-result v2
-
-    const/4 v3, 0x0
-
-    const/4 v5, 0x0
-
-    :goto_d
-    if-ge v3, v2, :cond_18
-
-    .line 91
-    iget-object v4, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
-
-    invoke-virtual {v4, v3}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Lj3/fz0;
-
-    iget-object v4, v4, Lj3/fz0;->a:Lj3/lz0;
-
-    .line 92
-    iget-boolean v7, v4, Lj3/lz0;->q:Z
-
-    if-eqz v7, :cond_17
-
-    iget-wide v7, v4, Lj3/lz0;->c:J
-
-    cmp-long v4, v7, v9
-
-    if-gez v4, :cond_17
-
-    .line 93
-    iget-object v4, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
-
-    invoke-virtual {v4, v3}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Lj3/fz0;
-
-    move-object v5, v4
-
-    move-wide v9, v7
-
-    :cond_17
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_d
-
-    :cond_18
-    if-nez v5, :cond_19
-
-    const/4 v2, 0x3
-
-    .line 94
-    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
-
-    goto/16 :goto_0
-
-    .line 95
-    :cond_19
-    move-object v2, v1
-
-    check-cast v2, Lj3/iy0;
-
-    .line 96
-    iget-wide v3, v2, Lj3/iy0;->c:J
-
-    sub-long/2addr v9, v3
-
-    long-to-int v3, v9
-
-    if-ltz v3, :cond_1a
-
-    .line 97
-    invoke-virtual {v2, v3}, Lj3/iy0;->d(I)V
-
-    .line 98
-    iget-object v3, v5, Lj3/fz0;->a:Lj3/lz0;
-
-    .line 99
-    iget-object v4, v3, Lj3/lz0;->p:Lj3/d21;
-
-    iget-object v4, v4, Lj3/d21;->a:[B
-
-    iget v5, v3, Lj3/lz0;->o:I
-
-    .line 100
-    invoke-virtual {v2, v4, v6, v5, v6}, Lj3/iy0;->c([BIIZ)Z
-
-    .line 101
-    iget-object v2, v3, Lj3/lz0;->p:Lj3/d21;
-
-    invoke-virtual {v2, v6}, Lj3/d21;->h(I)V
-
-    .line 102
-    iput-boolean v6, v3, Lj3/lz0;->q:Z
-
-    goto/16 :goto_0
-
-    .line 103
-    :cond_1a
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
-
-    const-string v2, "Offset to encryption data was negative."
-
-    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 104
-    :cond_1b
-    iget-wide v8, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
-
-    long-to-int v2, v8
-
-    iget v5, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
-
-    sub-int/2addr v2, v5
-
-    .line 105
-    iget-object v5, v0, Lcom/google/android/gms/internal/ads/m7;->n:Lj3/d21;
-
-    if-eqz v5, :cond_21
-
-    .line 106
-    iget-object v5, v5, Lj3/d21;->a:[B
-
-    move-object v8, v1
-
-    check-cast v8, Lj3/iy0;
-
-    .line 107
-    invoke-virtual {v8, v5, v4, v2, v6}, Lj3/iy0;->c([BIIZ)Z
-
-    .line 108
-    new-instance v2, Lj3/yy0;
-
-    iget v5, v0, Lcom/google/android/gms/internal/ads/m7;->k:I
-
-    iget-object v9, v0, Lcom/google/android/gms/internal/ads/m7;->n:Lj3/d21;
-
-    invoke-direct {v2, v5, v9}, Lj3/yy0;-><init>(ILj3/d21;)V
-
-    .line 109
-    iget-wide v10, v8, Lj3/iy0;->c:J
-
-    .line 110
-    iget-object v8, v0, Lcom/google/android/gms/internal/ads/m7;->h:Ljava/util/Stack;
-
-    invoke-virtual {v8}, Ljava/util/Stack;->isEmpty()Z
-
-    move-result v8
-
-    if-nez v8, :cond_1c
-
-    .line 111
-    iget-object v3, v0, Lcom/google/android/gms/internal/ads/m7;->h:Ljava/util/Stack;
-
-    invoke-virtual {v3}, Ljava/util/Stack;->peek()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lj3/zy0;
-
-    .line 112
-    iget-object v3, v3, Lj3/zy0;->Q0:Ljava/util/List;
-
-    invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    goto/16 :goto_10
-
-    .line 113
-    :cond_1c
-    sget v2, Lj3/wy0;->B:I
-
-    if-ne v5, v2, :cond_20
-
-    .line 114
-    invoke-virtual {v9, v4}, Lj3/d21;->h(I)V
-
-    .line 115
-    invoke-virtual {v9}, Lj3/d21;->b()I
-
-    move-result v2
-
-    shr-int/lit8 v2, v2, 0x18
-
-    and-int/lit16 v2, v2, 0xff
-
-    const/4 v4, 0x4
-
-    .line 116
-    invoke-virtual {v9, v4}, Lj3/d21;->i(I)V
-
-    .line 117
-    invoke-virtual {v9}, Lj3/d21;->n()J
-
-    move-result-wide v4
-
-    if-nez v2, :cond_1d
-
-    .line 118
-    invoke-virtual {v9}, Lj3/d21;->n()J
-
-    move-result-wide v12
-
-    .line 119
-    invoke-virtual {v9}, Lj3/d21;->n()J
-
-    move-result-wide v14
-
-    goto :goto_e
-
-    .line 120
-    :cond_1d
-    invoke-virtual {v9}, Lj3/d21;->p()J
-
-    move-result-wide v12
-
-    .line 121
-    invoke-virtual {v9}, Lj3/d21;->p()J
-
-    move-result-wide v14
-
-    :goto_e
-    add-long/2addr v14, v10
-
-    const-wide/32 v19, 0xf4240
-
-    move-wide/from16 v17, v12
-
-    move-wide/from16 v21, v4
-
-    .line 122
-    invoke-static/range {v17 .. v22}, Lj3/g21;->b(JJJ)J
-
-    move-result-wide v10
-
-    .line 123
-    invoke-virtual {v9, v3}, Lj3/d21;->i(I)V
-
-    .line 124
-    invoke-virtual {v9}, Lj3/d21;->e()I
-
-    move-result v2
-
-    .line 125
-    new-array v3, v2, [I
-
-    .line 126
-    new-array v8, v2, [J
-
-    .line 127
-    new-array v6, v2, [J
-
-    .line 128
-    new-array v7, v2, [J
-
-    move-wide/from16 v17, v10
-
-    move-wide v15, v14
-
-    move-wide v13, v12
-
-    const/4 v12, 0x0
-
-    :goto_f
-    if-ge v12, v2, :cond_1f
-
-    .line 129
-    invoke-virtual {v9}, Lj3/d21;->b()I
-
-    move-result v19
-
-    const/high16 v20, -0x80000000
-
-    and-int v20, v19, v20
-
-    if-nez v20, :cond_1e
-
-    .line 130
-    invoke-virtual {v9}, Lj3/d21;->n()J
-
-    move-result-wide v20
-
-    const v22, 0x7fffffff
-
-    and-int v19, v19, v22
-
-    .line 131
-    aput v19, v3, v12
-
-    .line 132
-    aput-wide v15, v8, v12
-
-    .line 133
-    aput-wide v17, v7, v12
-
-    add-long v13, v13, v20
-
-    const-wide/32 v19, 0xf4240
-
-    move-wide/from16 v17, v13
-
-    move-wide/from16 v21, v4
-
-    .line 134
-    invoke-static/range {v17 .. v22}, Lj3/g21;->b(JJJ)J
-
-    move-result-wide v17
-
-    .line 135
-    aget-wide v19, v7, v12
-
-    sub-long v19, v17, v19
-
-    aput-wide v19, v6, v12
-
-    move/from16 v19, v2
-
-    const/4 v2, 0x4
-
-    .line 136
-    invoke-virtual {v9, v2}, Lj3/d21;->i(I)V
-
-    .line 137
-    aget v2, v3, v12
-
-    move-wide/from16 v20, v4
-
-    int-to-long v4, v2
-
-    add-long/2addr v15, v4
-
-    add-int/lit8 v12, v12, 0x1
-
-    move/from16 v2, v19
-
-    move-wide/from16 v4, v20
-
-    goto :goto_f
-
-    .line 138
-    :cond_1e
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
-
-    const-string v2, "Unhandled indirect reference"
-
-    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 139
-    :cond_1f
-    invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v2
-
-    new-instance v4, Lj3/fy0;
-
-    invoke-direct {v4, v3, v8, v6, v7}, Lj3/fy0;-><init>([I[J[J[J)V
-
-    invoke-static {v2, v4}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
-
-    move-result-object v2
-
-    .line 140
-    iget-object v3, v2, Landroid/util/Pair;->first:Ljava/lang/Object;
-
-    check-cast v3, Ljava/lang/Long;
-
-    invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
-
-    .line 141
-    iget-object v3, v0, Lcom/google/android/gms/internal/ads/m7;->v:Lj3/jy0;
-
-    iget-object v2, v2, Landroid/util/Pair;->second:Ljava/lang/Object;
-
-    check-cast v2, Lj3/py0;
-
-    check-cast v3, Lj3/b01;
-
-    invoke-virtual {v3, v2}, Lj3/b01;->d(Lj3/py0;)V
-
-    const/4 v2, 0x1
-
-    .line 142
-    iput-boolean v2, v0, Lcom/google/android/gms/internal/ads/m7;->w:Z
-
-    goto :goto_10
-
-    .line 143
-    :cond_20
-    sget v2, Lj3/wy0;->G0:I
-
-    goto :goto_10
-
-    .line 144
-    :cond_21
-    move-object v3, v1
-
-    check-cast v3, Lj3/iy0;
-
-    invoke-virtual {v3, v2}, Lj3/iy0;->d(I)V
-
-    .line 145
-    :goto_10
-    move-object v2, v1
-
-    check-cast v2, Lj3/iy0;
-
-    .line 146
-    iget-wide v2, v2, Lj3/iy0;->c:J
-
-    .line 147
-    invoke-virtual {v0, v2, v3}, Lcom/google/android/gms/internal/ads/m7;->f(J)V
-
-    goto/16 :goto_0
-
-    .line 148
-    :cond_22
-    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
-
-    if-nez v2, :cond_24
-
-    .line 149
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lj3/d21;
-
-    iget-object v2, v2, Lj3/d21;->a:[B
-
-    move-object v5, v1
-
-    check-cast v5, Lj3/iy0;
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x1
-
-    invoke-virtual {v5, v2, v6, v4, v7}, Lj3/iy0;->c([BIIZ)Z
-
-    move-result v2
-
-    if-nez v2, :cond_23
-
-    goto/16 :goto_18
-
-    .line 150
-    :cond_23
-    iput v4, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
-
-    .line 151
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lj3/d21;
-
-    invoke-virtual {v2, v6}, Lj3/d21;->h(I)V
-
-    .line 152
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lj3/d21;
-
-    invoke-virtual {v2}, Lj3/d21;->n()J
-
-    move-result-wide v5
-
-    iput-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
-
-    .line 153
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lj3/d21;
-
-    invoke-virtual {v2}, Lj3/d21;->b()I
-
-    move-result v2
-
-    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->k:I
-
-    .line 154
-    :cond_24
-    iget-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
-
-    const-wide/16 v7, 0x1
-
-    cmp-long v2, v5, v7
-
-    if-nez v2, :cond_25
-
-    .line 155
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lj3/d21;
-
-    iget-object v2, v2, Lj3/d21;->a:[B
-
-    move-object v5, v1
-
-    check-cast v5, Lj3/iy0;
-
-    const/4 v6, 0x0
-
-    .line 156
-    invoke-virtual {v5, v2, v4, v4, v6}, Lj3/iy0;->c([BIIZ)Z
-
-    .line 157
-    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
-
-    add-int/2addr v2, v4
-
-    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
-
-    .line 158
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lj3/d21;
-
-    invoke-virtual {v2}, Lj3/d21;->p()J
-
-    move-result-wide v5
-
-    iput-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
-
-    .line 159
-    :cond_25
-    iget-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
-
-    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
-
-    int-to-long v7, v2
-
-    cmp-long v2, v5, v7
-
-    if-ltz v2, :cond_33
-
-    .line 160
-    move-object v2, v1
-
-    check-cast v2, Lj3/iy0;
-
-    .line 161
-    iget-wide v5, v2, Lj3/iy0;->c:J
-
-    sub-long/2addr v5, v7
-
-    .line 162
-    iget v7, v0, Lcom/google/android/gms/internal/ads/m7;->k:I
-
-    sget v8, Lj3/wy0;->L:I
-
-    if-ne v7, v8, :cond_26
-
-    .line 163
-    iget-object v7, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
-
-    invoke-virtual {v7}, Landroid/util/SparseArray;->size()I
-
-    move-result v7
-
-    const/4 v8, 0x0
-
-    :goto_11
-    if-ge v8, v7, :cond_26
-
-    .line 164
-    iget-object v9, v0, Lcom/google/android/gms/internal/ads/m7;->a:Landroid/util/SparseArray;
-
-    invoke-virtual {v9, v8}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v9
-
-    check-cast v9, Lj3/fz0;
-
-    iget-object v9, v9, Lj3/fz0;->a:Lj3/lz0;
-
-    .line 165
-    invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 166
-    iput-wide v5, v9, Lj3/lz0;->c:J
-
-    .line 167
-    iput-wide v5, v9, Lj3/lz0;->b:J
-
-    add-int/lit8 v8, v8, 0x1
-
-    goto :goto_11
-
-    .line 168
-    :cond_26
-    iget v7, v0, Lcom/google/android/gms/internal/ads/m7;->k:I
-
-    sget v8, Lj3/wy0;->i:I
-
-    if-ne v7, v8, :cond_28
-
-    const/4 v8, 0x0
-
-    .line 169
-    iput-object v8, v0, Lcom/google/android/gms/internal/ads/m7;->r:Lj3/fz0;
-
-    .line 170
-    iget-wide v7, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
-
-    add-long/2addr v5, v7
-
-    iput-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->o:J
-
-    .line 171
-    iget-boolean v2, v0, Lcom/google/android/gms/internal/ads/m7;->w:Z
-
-    if-nez v2, :cond_27
-
-    .line 172
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->v:Lj3/jy0;
-
-    new-instance v4, Lj3/oy0;
-
-    iget-wide v5, v0, Lcom/google/android/gms/internal/ads/m7;->q:J
-
-    invoke-direct {v4, v5, v6}, Lj3/oy0;-><init>(J)V
-
-    check-cast v2, Lj3/b01;
-
-    .line 173
-    iput-object v4, v2, Lj3/b01;->x:Lj3/py0;
-
-    .line 174
-    iget-object v4, v2, Lj3/b01;->u:Landroid/os/Handler;
-
-    iget-object v2, v2, Lj3/b01;->s:Ljava/lang/Runnable;
-
-    invoke-virtual {v4, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    const/4 v2, 0x1
-
-    .line 175
-    iput-boolean v2, v0, Lcom/google/android/gms/internal/ads/m7;->w:Z
-
-    .line 176
-    :cond_27
-    iput v3, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
-
-    goto :goto_14
-
-    .line 177
-    :cond_28
-    sget v3, Lj3/wy0;->C:I
-
-    if-eq v7, v3, :cond_2a
-
-    sget v3, Lj3/wy0;->E:I
-
-    if-eq v7, v3, :cond_2a
-
-    sget v3, Lj3/wy0;->F:I
-
-    if-eq v7, v3, :cond_2a
-
-    sget v3, Lj3/wy0;->G:I
-
-    if-eq v7, v3, :cond_2a
-
-    sget v3, Lj3/wy0;->H:I
-
-    if-eq v7, v3, :cond_2a
-
-    sget v3, Lj3/wy0;->L:I
-
-    if-eq v7, v3, :cond_2a
-
-    sget v3, Lj3/wy0;->M:I
-
-    if-eq v7, v3, :cond_2a
-
-    sget v3, Lj3/wy0;->N:I
-
-    if-eq v7, v3, :cond_2a
-
-    sget v3, Lj3/wy0;->Q:I
-
-    if-ne v7, v3, :cond_29
-
-    goto :goto_12
-
-    :cond_29
-    const/4 v3, 0x0
-
-    goto :goto_13
-
-    :cond_2a
-    :goto_12
-    const/4 v3, 0x1
-
-    :goto_13
-    if-eqz v3, :cond_2c
-
-    .line 178
-    iget-wide v2, v2, Lj3/iy0;->c:J
-
-    .line 179
-    iget-wide v4, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
-
-    add-long/2addr v2, v4
-
-    const-wide/16 v4, 0x8
-
-    sub-long/2addr v2, v4
-
-    .line 180
-    iget-object v4, v0, Lcom/google/android/gms/internal/ads/m7;->h:Ljava/util/Stack;
-
-    new-instance v5, Lj3/zy0;
-
-    iget v6, v0, Lcom/google/android/gms/internal/ads/m7;->k:I
-
-    invoke-direct {v5, v6, v2, v3}, Lj3/zy0;-><init>(IJ)V
-
-    invoke-virtual {v4, v5}, Ljava/util/Stack;->add(Ljava/lang/Object;)Z
-
-    .line 181
-    iget-wide v4, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
-
-    iget v6, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
-
-    int-to-long v6, v6
-
-    cmp-long v8, v4, v6
-
-    if-nez v8, :cond_2b
-
-    .line 182
-    invoke-virtual {v0, v2, v3}, Lcom/google/android/gms/internal/ads/m7;->f(J)V
-
-    goto :goto_14
-
-    .line 183
-    :cond_2b
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/gms/internal/ads/m7;->h()V
-
-    :goto_14
-    const/4 v2, 0x1
-
-    goto/16 :goto_17
-
-    .line 184
-    :cond_2c
-    sget v2, Lj3/wy0;->T:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->S:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->D:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->B:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->U:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->x:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->y:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->P:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->z:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->A:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->V:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->d0:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->e0:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->i0:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->h0:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->f0:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->g0:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->R:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->O:I
-
-    if-eq v7, v2, :cond_2e
-
-    sget v2, Lj3/wy0;->G0:I
-
-    if-ne v7, v2, :cond_2d
-
-    goto :goto_15
-
-    :cond_2d
-    const/4 v2, 0x0
-
-    goto :goto_16
-
-    :cond_2e
-    :goto_15
-    const/4 v2, 0x1
-
-    :goto_16
-    const-wide/32 v5, 0x7fffffff
-
-    if-eqz v2, :cond_31
-
-    .line 185
-    iget v2, v0, Lcom/google/android/gms/internal/ads/m7;->m:I
-
-    if-ne v2, v4, :cond_30
-
-    .line 186
-    iget-wide v2, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
-
-    cmp-long v7, v2, v5
-
-    if-gtz v7, :cond_2f
-
-    .line 187
-    new-instance v5, Lj3/d21;
-
-    long-to-int v3, v2
-
-    invoke-direct {v5, v3}, Lj3/d21;-><init>(I)V
-
-    iput-object v5, v0, Lcom/google/android/gms/internal/ads/m7;->n:Lj3/d21;
-
-    .line 188
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->f:Lj3/d21;
-
-    iget-object v2, v2, Lj3/d21;->a:[B
-
-    iget-object v3, v5, Lj3/d21;->a:[B
-
-    const/4 v5, 0x0
-
-    invoke-static {v2, v5, v3, v5, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    const/4 v2, 0x1
-
-    .line 189
-    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
-
-    goto :goto_17
-
-    .line 190
-    :cond_2f
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
-
-    const-string v2, "Leaf atom with length > 2147483647 (unsupported)."
-
-    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 191
-    :cond_30
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
-
-    const-string v2, "Leaf atom defines extended atom size (unsupported)."
-
-    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 192
-    :cond_31
-    iget-wide v2, v0, Lcom/google/android/gms/internal/ads/m7;->l:J
-
-    cmp-long v4, v2, v5
-
-    if-gtz v4, :cond_32
-
-    const/4 v2, 0x0
-
-    .line 193
-    iput-object v2, v0, Lcom/google/android/gms/internal/ads/m7;->n:Lj3/d21;
-
-    const/4 v2, 0x1
-
-    .line 194
-    iput v2, v0, Lcom/google/android/gms/internal/ads/m7;->j:I
-
-    :goto_17
-    const/4 v6, 0x1
-
-    :goto_18
-    if-nez v6, :cond_0
-
-    const/4 v1, -0x1
-
-    return v1
-
-    .line 195
-    :cond_32
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
-
-    const-string v2, "Skipping atom with length > 2147483647 (unsupported)."
-
-    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 196
-    :cond_33
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzhv;
-
-    const-string v2, "Atom size less than header length (unsupported)."
-
-    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;)V
-
-    goto :goto_1a
-
-    :goto_19
-    throw v1
-
-    :goto_1a
-    goto :goto_19
 .end method
 
 .method public final h()V

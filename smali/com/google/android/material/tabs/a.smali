@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/tabs/a;
+.class public final Lcom/google/android/material/tabs/a;
 .super Ljava/lang/Object;
 .source "TabLayout.java"
 
@@ -16,7 +16,6 @@
 .method public constructor <init>(Lcom/google/android/material/tabs/TabLayout$i;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/tabs/a;->b:Lcom/google/android/material/tabs/TabLayout$i;
 
     iput-object p2, p0, Lcom/google/android/material/tabs/a;->a:Landroid/view/View;
@@ -28,7 +27,7 @@
 
 
 # virtual methods
-.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
     .locals 0
 
     .line 1
@@ -46,7 +45,7 @@
     iget-object p2, p0, Lcom/google/android/material/tabs/a;->a:Landroid/view/View;
 
     .line 3
-    invoke-virtual {p1, p2}, Lcom/google/android/material/tabs/TabLayout$i;->f(Landroid/view/View;)V
+    invoke-virtual {p1, p2}, Lcom/google/android/material/tabs/TabLayout$i;->g(Landroid/view/View;)V
 
     :cond_0
     return-void

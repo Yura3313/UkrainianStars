@@ -55,13 +55,14 @@
     const-string p1, "com.linecorp.linesdk.accesstoken."
 
     .line 4
-    invoke-static {p1, p2}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 5
     iput-object p1, p0, Lcom/linecorp/nova/interop/line/auth/AccessTokenCache;->sharedPreferenceKey:Ljava/lang/String;
 
-    .line 5
+    .line 6
     iput-object p3, p0, Lcom/linecorp/nova/interop/line/auth/AccessTokenCache;->encryptor:Lcom/linecorp/nova/security/StringCipher;
 
     return-void
@@ -111,7 +112,6 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/linecorp/nova/interop/line/auth/AccessTokenCache;->encryptor:Lcom/linecorp/nova/security/StringCipher;
 
@@ -127,7 +127,6 @@
 .method private encryptLong(J)Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/nova/interop/line/auth/AccessTokenCache;->encryptor:Lcom/linecorp/nova/security/StringCipher;
 
     iget-object v1, p0, Lcom/linecorp/nova/interop/line/auth/AccessTokenCache;->context:Landroid/content/Context;
@@ -146,7 +145,6 @@
 .method private encryptString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/nova/interop/line/auth/AccessTokenCache;->encryptor:Lcom/linecorp/nova/security/StringCipher;
 
     iget-object v1, p0, Lcom/linecorp/nova/interop/line/auth/AccessTokenCache;->context:Landroid/content/Context;

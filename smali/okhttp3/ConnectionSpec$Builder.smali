@@ -129,7 +129,6 @@
 .method public build()Lokhttp3/ConnectionSpec;
     .locals 1
 
-    .line 1
     new-instance v0, Lokhttp3/ConnectionSpec;
 
     invoke-direct {v0, p0}, Lokhttp3/ConnectionSpec;-><init>(Lokhttp3/ConnectionSpec$Builder;)V

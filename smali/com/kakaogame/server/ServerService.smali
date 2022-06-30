@@ -13,7 +13,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +45,7 @@
     move-exception v1
 
     .line 4
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -60,7 +59,6 @@
 .method public static initialize(Landroid/content/Context;Lcom/kakaogame/config/Configuration;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/server/session/SessionService;->initialize(Landroid/content/Context;Lcom/kakaogame/config/Configuration;)V
 
     return-void
@@ -69,7 +67,6 @@
 .method public static isUseSession()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/kakaogame/server/ServerService;->useSession:Z
 
     return v0
@@ -153,6 +150,7 @@
 
     move-result-object v0
 
+    .line 2
     sget-boolean v1, Lcom/kakaogame/server/ServerService;->useSession:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
@@ -165,26 +163,26 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     :try_start_0
     sget-boolean v0, Lcom/kakaogame/server/ServerService;->useSession:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 4
     invoke-static {p0}, Lcom/kakaogame/server/session/SessionService;->requestConnect(Lcom/kakaogame/server/ServerRequest;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
     return-object p0
 
-    .line 4
+    .line 5
     :cond_0
     invoke-static {p0}, Lcom/kakaogame/server/ServerService;->requestServer(Lcom/kakaogame/server/ServerRequest;)Lcom/kakaogame/server/ServerResult;
 
     move-result-object p0
 
-    .line 5
+    .line 6
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -201,7 +199,7 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
+    .line 7
     invoke-virtual {p0}, Lcom/kakaogame/server/KeyBaseResult;->getCode()I
 
     move-result v0
@@ -221,8 +219,8 @@
     :catch_0
     move-exception p0
 
-    .line 7
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 8
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -230,7 +228,7 @@
 
     const/16 p0, 0xfa1
 
-    .line 8
+    .line 9
     invoke-static {p0}, Lcom/kakaogame/KGResult;->getResult(I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -248,6 +246,7 @@
 
     move-result-object v0
 
+    .line 2
     sget-boolean v1, Lcom/kakaogame/server/ServerService;->useSession:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
@@ -260,20 +259,20 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     :try_start_0
     sget-boolean v0, Lcom/kakaogame/server/ServerService;->useSession:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 4
     invoke-static {p0}, Lcom/kakaogame/server/session/SessionService;->requestSession(Lcom/kakaogame/server/ServerRequest;)Lcom/kakaogame/server/ServerResult;
 
     move-result-object p0
 
     return-object p0
 
-    .line 4
+    .line 5
     :cond_0
     invoke-static {p0}, Lcom/kakaogame/server/openapi/OpenApiService;->requestServerApi(Lcom/kakaogame/server/ServerRequest;)Lcom/kakaogame/server/ServerResult;
 
@@ -286,8 +285,8 @@
     :catch_0
     move-exception v0
 
-    .line 5
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 6
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -295,7 +294,7 @@
 
     const/16 v0, 0xfa1
 
-    .line 6
+    .line 7
     invoke-static {v0}, Lcom/kakaogame/server/KeyBaseResult;->getResult(I)Lcom/kakaogame/server/KeyBaseResult;
 
     move-result-object v0
@@ -317,6 +316,7 @@
 
     move-result-object v0
 
+    .line 2
     sget-boolean v1, Lcom/kakaogame/server/ServerService;->useSession:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
@@ -329,18 +329,18 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     :try_start_0
     sget-boolean v0, Lcom/kakaogame/server/ServerService;->useSession:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 4
     invoke-static {p0}, Lcom/kakaogame/server/session/SessionService;->requestSessionWithoutResponse(Lcom/kakaogame/server/ServerRequest;)V
 
     goto :goto_0
 
-    .line 4
+    .line 5
     :cond_0
     invoke-static {p0}, Lcom/kakaogame/server/openapi/OpenApiService;->requestServerApiWithoutResponse(Lcom/kakaogame/server/ServerRequest;)V
     :try_end_0
@@ -351,8 +351,8 @@
     :catch_0
     move-exception p0
 
-    .line 5
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 6
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -389,7 +389,7 @@
     move-exception v1
 
     .line 4
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -423,7 +423,7 @@
     move-exception v1
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 

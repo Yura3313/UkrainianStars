@@ -1,424 +1,333 @@
 .class public final Lge/b;
 .super Ljava/lang/Object;
-.source "PlatformImplementations.kt"
+.source "InflateRequest.kt"
 
 
-# static fields
-.field public static final a:Lge/a;
+# instance fields
+.field public final a:Ljava/lang/String;
+
+.field public final b:Landroid/content/Context;
+
+.field public final c:Landroid/util/AttributeSet;
+
+.field public final d:Landroid/view/View;
+
+.field public final e:Lge/a;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 11
+.method public constructor <init>(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;Landroid/view/View;Lge/a;)V
+    .locals 1
+
+    const-string v0, "name"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "context"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "fallbackViewCreator"
+
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    const-class v0, Lge/a;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v1, "java.specification.version"
+    iput-object p1, p0, Lge/b;->a:Ljava/lang/String;
 
-    .line 2
-    invoke-static {v1}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    iput-object p2, p0, Lge/b;->b:Landroid/content/Context;
 
-    move-result-object v1
+    iput-object p3, p0, Lge/b;->c:Landroid/util/AttributeSet;
 
-    if-eqz v1, :cond_2
+    iput-object p4, p0, Lge/b;->d:Landroid/view/View;
 
-    const/4 v2, 0x6
+    iput-object p5, p0, Lge/b;->e:Lge/a;
 
-    const/16 v3, 0x2e
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;Lge/a;)V
+    .locals 6
 
     const/4 v4, 0x0
 
-    .line 3
-    invoke-static {v1, v3, v4, v4, v2}, Lre/r;->r(Ljava/lang/CharSequence;CIZI)I
+    move-object v0, p0
 
-    move-result v2
+    move-object v1, p1
 
-    const/high16 v5, 0x10000
+    move-object v2, p2
 
-    if-gez v2, :cond_0
+    move-object v3, p3
 
-    .line 4
-    :try_start_0
-    invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    move-object v5, p4
 
-    move-result v1
-    :try_end_0
-    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 2
+    invoke-direct/range {v0 .. v5}, Lge/b;-><init>(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;Landroid/view/View;Lge/a;)V
 
-    mul-int v1, v1, v5
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Landroid/util/AttributeSet;
+    .locals 1
+
+    iget-object v0, p0, Lge/b;->c:Landroid/util/AttributeSet;
+
+    return-object v0
+.end method
+
+.method public final b()Landroid/content/Context;
+    .locals 1
+
+    iget-object v0, p0, Lge/b;->b:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method public final c()Lge/a;
+    .locals 1
+
+    iget-object v0, p0, Lge/b;->e:Lge/a;
+
+    return-object v0
+.end method
+
+.method public final d()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lge/b;->a:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final e()Landroid/view/View;
+    .locals 1
+
+    iget-object v0, p0, Lge/b;->d:Landroid/view/View;
+
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    if-eq p0, p1, :cond_1
+
+    instance-of v0, p1, Lge/b;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lge/b;
+
+    iget-object v0, p0, Lge/b;->a:Ljava/lang/String;
+
+    iget-object v1, p1, Lge/b;->a:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lge/b;->b:Landroid/content/Context;
+
+    iget-object v1, p1, Lge/b;->b:Landroid/content/Context;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lge/b;->c:Landroid/util/AttributeSet;
+
+    iget-object v1, p1, Lge/b;->c:Landroid/util/AttributeSet;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lge/b;->d:Landroid/view/View;
+
+    iget-object v1, p1, Lge/b;->d:Landroid/view/View;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lge/b;->e:Lge/a;
+
+    iget-object p1, p1, Lge/b;->e:Lge/a;
+
+    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
 
     goto :goto_0
 
     :cond_0
-    add-int/lit8 v6, v2, 0x1
+    const/4 p1, 0x0
 
-    const/4 v7, 0x4
+    return p1
 
-    .line 5
-    invoke-static {v1, v3, v6, v4, v7}, Lre/r;->r(Ljava/lang/CharSequence;CIZI)I
-
-    move-result v3
-
-    if-gez v3, :cond_1
-
-    .line 6
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v3
-
-    .line 7
     :cond_1
-    invoke-virtual {v1, v4, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    :goto_0
+    const/4 p1, 0x1
 
-    move-result-object v2
+    return p1
+.end method
 
-    const-string v4, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
+.method public final hashCode()I
+    .locals 3
 
-    invoke-static {v2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v0, p0, Lge/b;->a:Ljava/lang/String;
 
-    .line 8
-    invoke-virtual {v1, v6, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v1
+    if-eqz v0, :cond_0
 
-    invoke-static {v1, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
-    .line 9
-    :try_start_1
-    invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v2
-
-    mul-int v2, v2, v5
-
-    invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v1
-    :try_end_1
-    .catch Ljava/lang/NumberFormatException; {:try_start_1 .. :try_end_1} :catch_0
-
-    add-int/2addr v1, v2
+    move-result v0
 
     goto :goto_0
 
-    :catch_0
-    :cond_2
-    const v1, 0x10006
+    :cond_0
+    const/4 v0, 0x0
 
     :goto_0
-    const v2, 0x10008
+    mul-int/lit8 v0, v0, 0x1f
 
-    const-string v3, "ClassCastException(\"Inst\u2026baseTypeCL\").initCause(e)"
+    iget-object v2, p0, Lge/b;->b:Landroid/content/Context;
 
-    const-string v4, ", base type classloader: "
+    if-eqz v2, :cond_1
 
-    const-string v5, "Instance classloader: "
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    const-string v6, "Class.forName(\"kotlin.in\u2026entations\").newInstance()"
+    move-result v2
 
-    if-lt v1, v2, :cond_3
+    goto :goto_1
 
-    :try_start_2
-    const-string v2, "kotlin.internal.jdk8.JDK8PlatformImplementations"
+    :cond_1
+    const/4 v2, 0x0
 
-    .line 10
-    invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    :goto_1
+    add-int/2addr v0, v2
 
-    move-result-object v2
+    mul-int/lit8 v0, v0, 0x1f
 
-    invoke-virtual {v2}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
+    iget-object v2, p0, Lge/b;->c:Landroid/util/AttributeSet;
 
-    move-result-object v2
+    if-eqz v2, :cond_2
 
-    invoke-static {v2, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-    :try_end_2
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    :try_start_3
-    check-cast v2, Lge/a;
-    :try_end_3
-    .catch Ljava/lang/ClassCastException; {:try_start_3 .. :try_end_3} :catch_1
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_3 .. :try_end_3} :catch_2
+    move-result v2
 
-    goto/16 :goto_1
+    goto :goto_2
 
-    :catch_1
-    move-exception v7
+    :cond_2
+    const/4 v2, 0x0
 
-    :try_start_4
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :goto_2
+    add-int/2addr v0, v2
 
-    move-result-object v2
+    mul-int/lit8 v0, v0, 0x1f
 
-    invoke-virtual {v2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+    iget-object v2, p0, Lge/b;->d:Landroid/view/View;
 
-    move-result-object v2
+    if-eqz v2, :cond_3
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    move-result-object v8
+    move-result v2
 
-    new-instance v9, Ljava/lang/ClassCastException;
-
-    new-instance v10, Ljava/lang/StringBuilder;
-
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v10, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v10, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v10, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v10, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v9, v2}, Ljava/lang/ClassCastException;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v9, v7}, Ljava/lang/ClassCastException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
-
-    move-result-object v2
-
-    invoke-static {v2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    throw v2
-    :try_end_4
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_4 .. :try_end_4} :catch_2
-
-    :catch_2
-    :try_start_5
-    const-string v2, "kotlin.internal.JRE8PlatformImplementations"
-
-    .line 11
-    invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
-
-    move-result-object v2
-
-    invoke-static {v2, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-    :try_end_5
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_5 .. :try_end_5} :catch_4
-
-    :try_start_6
-    check-cast v2, Lge/a;
-    :try_end_6
-    .catch Ljava/lang/ClassCastException; {:try_start_6 .. :try_end_6} :catch_3
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_6 .. :try_end_6} :catch_4
-
-    goto/16 :goto_1
-
-    :catch_3
-    move-exception v7
-
-    :try_start_7
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v2
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v8
-
-    new-instance v9, Ljava/lang/ClassCastException;
-
-    new-instance v10, Ljava/lang/StringBuilder;
-
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v10, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v10, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v10, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v10, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v9, v2}, Ljava/lang/ClassCastException;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v9, v7}, Ljava/lang/ClassCastException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
-
-    move-result-object v2
-
-    invoke-static {v2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    throw v2
-    :try_end_7
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_7 .. :try_end_7} :catch_4
-
-    :catch_4
-    nop
+    goto :goto_3
 
     :cond_3
-    const v2, 0x10007
+    const/4 v2, 0x0
 
-    if-lt v1, v2, :cond_4
+    :goto_3
+    add-int/2addr v0, v2
 
-    .line 12
-    :try_start_8
-    const-class v1, Lhe/a;
+    mul-int/lit8 v0, v0, 0x1f
 
-    invoke-virtual {v1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
+    iget-object v2, p0, Lge/b;->e:Lge/a;
 
-    move-result-object v1
+    if-eqz v2, :cond_4
 
-    invoke-static {v1, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-    :try_end_8
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_8 .. :try_end_8} :catch_6
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    :try_start_9
-    move-object v2, v1
+    move-result v1
 
-    check-cast v2, Lge/a;
-    :try_end_9
-    .catch Ljava/lang/ClassCastException; {:try_start_9 .. :try_end_9} :catch_5
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_9 .. :try_end_9} :catch_6
-
-    goto :goto_1
-
-    :catch_5
-    move-exception v2
-
-    :try_start_a
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v1
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v7
-
-    new-instance v8, Ljava/lang/ClassCastException;
-
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v9, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v8, v1}, Ljava/lang/ClassCastException;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v8, v2}, Ljava/lang/ClassCastException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
-
-    move-result-object v1
-
-    invoke-static {v1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    throw v1
-    :try_end_a
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_a .. :try_end_a} :catch_6
-
-    :catch_6
-    :try_start_b
-    const-string v1, "kotlin.internal.JRE7PlatformImplementations"
-
-    .line 13
-    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
-
-    move-result-object v1
-
-    invoke-static {v1, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-    :try_end_b
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_b .. :try_end_b} :catch_8
-
-    :try_start_c
-    move-object v2, v1
-
-    check-cast v2, Lge/a;
-    :try_end_c
-    .catch Ljava/lang/ClassCastException; {:try_start_c .. :try_end_c} :catch_7
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_c .. :try_end_c} :catch_8
-
-    goto :goto_1
-
-    :catch_7
-    move-exception v2
-
-    :try_start_d
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v1
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v0
-
-    new-instance v6, Ljava/lang/ClassCastException;
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {v6, v0}, Ljava/lang/ClassCastException;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v6, v2}, Ljava/lang/ClassCastException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
-
-    move-result-object v0
-
-    invoke-static {v0, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    throw v0
-    :try_end_d
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_d .. :try_end_d} :catch_8
-
-    .line 14
-    :catch_8
     :cond_4
-    new-instance v2, Lge/a;
+    add-int/2addr v0, v1
 
-    invoke-direct {v2}, Lge/a;-><init>()V
+    return v0
+.end method
 
-    .line 15
-    :goto_1
-    sput-object v2, Lge/b;->a:Lge/a;
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-    return-void
+    const-string v0, "InflateRequest(name="
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v1, p0, Lge/b;->a:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", context="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lge/b;->b:Landroid/content/Context;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", attrs="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lge/b;->c:Landroid/util/AttributeSet;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", parent="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lge/b;->d:Landroid/view/View;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", fallbackViewCreator="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lge/b;->e:Lge/a;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

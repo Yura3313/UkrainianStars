@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams$a;
+.class public final Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams$a;
 .super Ljava/lang/Object;
 .source "ConstraintLayout.java"
 

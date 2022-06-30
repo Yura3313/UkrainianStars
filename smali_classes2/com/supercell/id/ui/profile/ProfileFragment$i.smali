@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/profile/ProfileFragment$i;
-.super Lle/j;
+.super Lse/h;
 .source "ProfileFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profile/ProfileFragment;-><init>()V
+    value = Lcom/supercell/id/ui/profile/ProfileFragment;->S(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,47 +18,53 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lqc/a;",
-        "Lae/i;",
-        ">;"
+        "Lse/h;",
+        "Lre/a<",
+        "Ljava/util/List<",
+        "+",
+        "Lae/p2;",
+        ">;>;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/profile/ProfileFragment;
+# static fields
+.field public static final f:Lcom/supercell/id/ui/profile/ProfileFragment$i;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$i;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    new-instance v0, Lcom/supercell/id/ui/profile/ProfileFragment$i;
 
-    const/4 p1, 0x1
+    invoke-direct {v0}, Lcom/supercell/id/ui/profile/ProfileFragment$i;-><init>()V
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    sput-object v0, Lcom/supercell/id/ui/profile/ProfileFragment$i;->f:Lcom/supercell/id/ui/profile/ProfileFragment$i;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    check-cast p1, Lqc/a;
+    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->o0:Lcom/supercell/id/ui/profile/ProfileFragment$a;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$i;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
+    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/List;
 
-    invoke-static {p1}, Lcom/supercell/id/ui/profile/ProfileFragment;->q1(Lcom/supercell/id/ui/profile/ProfileFragment;)V
-
-    .line 3
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
+    return-object v0
 .end method

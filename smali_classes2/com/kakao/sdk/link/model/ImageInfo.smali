@@ -46,13 +46,14 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;III)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "url"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string v0, "contentType"
 
-    .line 1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/kakao/sdk/link/model/ImageInfo;->url:Ljava/lang/String;
@@ -66,21 +67,6 @@
     iput p5, p0, Lcom/kakao/sdk/link/model/ImageInfo;->height:I
 
     return-void
-
-    :cond_0
-    const-string p1, "contentType"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "url"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/link/model/ImageInfo;Ljava/lang/String;Ljava/lang/String;IIIILjava/lang/Object;)Lcom/kakao/sdk/link/model/ImageInfo;
@@ -193,11 +179,13 @@
 .method public final copy(Ljava/lang/String;Ljava/lang/String;III)Lcom/kakao/sdk/link/model/ImageInfo;
     .locals 7
 
-    const/4 v0, 0x0
+    const-string v0, "url"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string v0, "contentType"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/link/model/ImageInfo;
 
@@ -216,21 +204,6 @@
     invoke-direct/range {v1 .. v6}, Lcom/kakao/sdk/link/model/ImageInfo;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "contentType"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "url"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -260,7 +233,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/link/model/ImageInfo;->url:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -270,7 +243,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/link/model/ImageInfo;->contentType:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -337,7 +310,6 @@
 .method public final getContentType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/ImageInfo;->contentType:Ljava/lang/String;
 
     return-object v0
@@ -346,7 +318,6 @@
 .method public final getHeight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/link/model/ImageInfo;->height:I
 
     return v0
@@ -355,7 +326,6 @@
 .method public final getLength()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/link/model/ImageInfo;->length:I
 
     return v0
@@ -364,7 +334,6 @@
 .method public final getUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/ImageInfo;->url:Ljava/lang/String;
 
     return-object v0
@@ -373,7 +342,6 @@
 .method public final getWidth()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/link/model/ImageInfo;->width:I
 
     return v0
@@ -437,10 +405,12 @@
 
     const-string v0, "ImageInfo(url="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakao/sdk/link/model/ImageInfo;->url:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -477,6 +447,7 @@
 
     const-string v2, ")"
 
+    .line 3
     invoke-static {v0, v1, v2}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -487,7 +458,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    if-eqz p1, :cond_0
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/link/model/ImageInfo;->url:Ljava/lang/String;
 
@@ -510,14 +483,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
-
-    :cond_0
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

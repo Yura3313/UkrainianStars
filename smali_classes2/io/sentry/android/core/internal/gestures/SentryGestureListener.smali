@@ -92,7 +92,6 @@
 .method public static synthetic access$700(Lio/sentry/android/core/internal/gestures/SentryGestureListener;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lio/sentry/android/core/internal/gestures/SentryGestureListener;->isAndroidXAvailable:Z
 
     return p0
@@ -161,7 +160,7 @@
     .line 1
     iget-object v0, p0, Lio/sentry/android/core/internal/gestures/SentryGestureListener;->windowRef:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -187,18 +186,19 @@
 
     const-string v5, "Window is null in "
 
-    invoke-static {v5, p1, v3}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 4
+    invoke-static {v5, p1, v3}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 4
+    .line 5
     invoke-interface {v0, v4, p1, v2}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-object v1
 
-    .line 5
+    .line 6
     :cond_0
     invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
@@ -206,10 +206,10 @@
 
     if-nez v0, :cond_1
 
-    .line 6
+    .line 7
     iget-object v0, p0, Lio/sentry/android/core/internal/gestures/SentryGestureListener;->options:Lio/sentry/android/core/SentryAndroidOptions;
 
-    .line 7
+    .line 8
     invoke-virtual {v0}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
     move-result-object v0
@@ -218,13 +218,14 @@
 
     const-string v5, "DecorView is null in "
 
-    invoke-static {v5, p1, v3}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 9
+    invoke-static {v5, p1, v3}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 8
+    .line 10
     invoke-interface {v0, v4, p1, v2}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-object v1
@@ -236,7 +237,6 @@
 .method private static synthetic lambda$onSingleTapUp$0(Landroid/view/View;)Z
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lio/sentry/android/core/internal/gestures/ViewUtils;->isViewTappable(Landroid/view/View;)Z
 
     move-result p0
@@ -285,7 +285,6 @@
 .method public onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lio/sentry/android/core/internal/gestures/SentryGestureListener;->scrollState:Lio/sentry/android/core/internal/gestures/SentryGestureListener$ScrollState;
 
     const-string p2, "swipe"
@@ -484,7 +483,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v1
 

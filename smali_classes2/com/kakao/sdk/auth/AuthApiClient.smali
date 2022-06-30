@@ -14,7 +14,7 @@
 # static fields
 .field public static final Companion:Lcom/kakao/sdk/auth/AuthApiClient$Companion;
 
-.field private static final instance$delegate:Lae/c;
+.field private static final instance$delegate:Lie/c;
 
 
 # instance fields
@@ -37,18 +37,17 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/auth/AuthApiClient$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/auth/AuthApiClient$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/auth/AuthApiClient;->Companion:Lcom/kakao/sdk/auth/AuthApiClient$Companion;
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/AuthApiClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/auth/AuthApiClient$Companion$instance$2;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/auth/AuthApiClient;->instance$delegate:Lae/c;
+    sput-object v0, Lcom/kakao/sdk/auth/AuthApiClient;->instance$delegate:Lie/c;
 
     return-void
 .end method
@@ -72,7 +71,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/auth/AuthApiClient;-><init>(Lcom/kakao/sdk/auth/AuthApi;Lcom/kakao/sdk/auth/TokenManagerProvider;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILle/g;)V
+    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/auth/AuthApiClient;-><init>(Lcom/kakao/sdk/auth/AuthApi;Lcom/kakao/sdk/auth/TokenManagerProvider;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILse/e;)V
 
     return-void
 .end method
@@ -80,17 +79,25 @@
 .method public constructor <init>(Lcom/kakao/sdk/auth/AuthApi;Lcom/kakao/sdk/auth/TokenManagerProvider;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "authApi"
 
-    if-eqz p1, :cond_4
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_3
+    const-string v0, "tokenManagerProvider"
 
-    if-eqz p3, :cond_2
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_1
+    const-string v0, "applicationInfo"
 
-    if-eqz p5, :cond_0
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "contextInfo"
+
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "approvalType"
+
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -106,67 +113,31 @@
     iput-object p5, p0, Lcom/kakao/sdk/auth/AuthApiClient;->approvalType:Lcom/kakao/sdk/common/model/ApprovalType;
 
     return-void
-
-    :cond_0
-    const-string p1, "approvalType"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "contextInfo"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "applicationInfo"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "tokenManagerProvider"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_4
-    const-string p1, "authApi"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/auth/AuthApi;Lcom/kakao/sdk/auth/TokenManagerProvider;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILle/g;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/auth/AuthApi;Lcom/kakao/sdk/auth/TokenManagerProvider;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILse/e;)V
     .locals 3
 
     and-int/lit8 p7, p6, 0x1
 
     if-eqz p7, :cond_0
 
-    .line 3
+    .line 2
     sget-object p1, Lcom/kakao/sdk/network/ApiFactory;->INSTANCE:Lcom/kakao/sdk/network/ApiFactory;
 
-    invoke-static {p1}, Lcom/kakao/sdk/auth/network/ApiFactoryKt;->getKauth(Lcom/kakao/sdk/network/ApiFactory;)Lxe/b0;
+    invoke-static {p1}, Lcom/kakao/sdk/auth/network/ApiFactoryKt;->getKauth(Lcom/kakao/sdk/network/ApiFactory;)Lef/d0;
 
     move-result-object p1
 
     const-class p7, Lcom/kakao/sdk/auth/AuthApi;
 
-    invoke-virtual {p1, p7}, Lxe/b0;->b(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p1, p7}, Lef/d0;->b(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p1
 
     const-string p7, "ApiFactory.kauth.create(AuthApi::class.java)"
 
-    invoke-static {p1, p7}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Lcom/kakao/sdk/auth/AuthApi;
 
@@ -175,7 +146,7 @@
 
     if-eqz p7, :cond_1
 
-    .line 4
+    .line 3
     sget-object p2, Lcom/kakao/sdk/auth/TokenManagerProvider;->Companion:Lcom/kakao/sdk/auth/TokenManagerProvider$Companion;
 
     invoke-virtual {p2}, Lcom/kakao/sdk/auth/TokenManagerProvider$Companion;->getInstance()Lcom/kakao/sdk/auth/TokenManagerProvider;
@@ -189,7 +160,7 @@
 
     if-eqz p2, :cond_2
 
-    .line 5
+    .line 4
     sget-object p2, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p2}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -203,7 +174,7 @@
 
     if-eqz p2, :cond_3
 
-    .line 6
+    .line 5
     sget-object p2, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p2}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -217,7 +188,7 @@
 
     if-eqz p2, :cond_4
 
-    .line 7
+    .line 6
     sget-object p2, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p2}, Lcom/kakao/sdk/common/KakaoSdk;->getApprovalType()Lcom/kakao/sdk/common/model/ApprovalType;
@@ -244,11 +215,10 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lae/c;
+.method public static final synthetic access$getInstance$cp()Lie/c;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/kakao/sdk/auth/AuthApiClient;->instance$delegate:Lae/c;
+    sget-object v0, Lcom/kakao/sdk/auth/AuthApiClient;->instance$delegate:Lie/c;
 
     return-object v0
 .end method
@@ -265,7 +235,7 @@
     return-object v0
 .end method
 
-.method public static synthetic issueAccessToken$default(Lcom/kakao/sdk/auth/AuthApiClient;Ljava/lang/String;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+.method public static synthetic issueAccessToken$default(Lcom/kakao/sdk/auth/AuthApiClient;Ljava/lang/String;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
     .locals 0
 
     and-int/lit8 p4, p4, 0x2
@@ -274,9 +244,8 @@
 
     const/4 p2, 0x0
 
-    .line 1
     :cond_0
-    invoke-virtual {p0, p1, p2, p3}, Lcom/kakao/sdk/auth/AuthApiClient;->issueAccessToken(Ljava/lang/String;Ljava/lang/String;Lke/p;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/kakao/sdk/auth/AuthApiClient;->issueAccessToken(Ljava/lang/String;Ljava/lang/String;Lre/p;)V
 
     return-void
 .end method
@@ -323,7 +292,7 @@
     return-object p0
 .end method
 
-.method public static synthetic refreshAccessToken$default(Lcom/kakao/sdk/auth/AuthApiClient;Lcom/kakao/sdk/auth/model/OAuthToken;Lke/p;ILjava/lang/Object;)V
+.method public static synthetic refreshAccessToken$default(Lcom/kakao/sdk/auth/AuthApiClient;Lcom/kakao/sdk/auth/model/OAuthToken;Lre/p;ILjava/lang/Object;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x1
@@ -358,53 +327,53 @@
 
     :cond_1
     :goto_0
-    invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/auth/AuthApiClient;->refreshAccessToken(Lcom/kakao/sdk/auth/model/OAuthToken;Lke/p;)V
+    invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/auth/AuthApiClient;->refreshAccessToken(Lcom/kakao/sdk/auth/model/OAuthToken;Lre/p;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final agt(Lke/p;)V
+.method public final agt(Lre/p;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "callback"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v1, p0, Lcom/kakao/sdk/auth/AuthApiClient;->tokenManagerProvider:Lcom/kakao/sdk/auth/TokenManagerProvider;
+    iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->tokenManagerProvider:Lcom/kakao/sdk/auth/TokenManagerProvider;
 
-    invoke-virtual {v1}, Lcom/kakao/sdk/auth/TokenManagerProvider;->getManager()Lcom/kakao/sdk/auth/TokenManageable;
+    invoke-virtual {v0}, Lcom/kakao/sdk/auth/TokenManagerProvider;->getManager()Lcom/kakao/sdk/auth/TokenManageable;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-interface {v1}, Lcom/kakao/sdk/auth/TokenManageable;->getToken()Lcom/kakao/sdk/auth/model/OAuthToken;
+    invoke-interface {v0}, Lcom/kakao/sdk/auth/TokenManageable;->getToken()Lcom/kakao/sdk/auth/model/OAuthToken;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v1}, Lcom/kakao/sdk/auth/model/OAuthToken;->getAccessToken()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/kakao/sdk/auth/model/OAuthToken;->getAccessToken()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->authApi:Lcom/kakao/sdk/auth/AuthApi;
+    iget-object v1, p0, Lcom/kakao/sdk/auth/AuthApiClient;->authApi:Lcom/kakao/sdk/auth/AuthApi;
 
     .line 3
     iget-object v2, p0, Lcom/kakao/sdk/auth/AuthApiClient;->applicationInfo:Lcom/kakao/sdk/common/model/ApplicationInfo;
@@ -414,21 +383,23 @@
     move-result-object v2
 
     .line 4
-    invoke-interface {v0, v2, v1}, Lcom/kakao/sdk/auth/AuthApi;->agt(Ljava/lang/String;Ljava/lang/String;)Lxe/b;
+    invoke-interface {v1, v2, v0}, Lcom/kakao/sdk/auth/AuthApi;->agt(Ljava/lang/String;Ljava/lang/String;)Lef/b;
 
     move-result-object v0
 
     .line 5
     new-instance v1, Lcom/kakao/sdk/auth/AuthApiClient$agt$$inlined$let$lambda$1;
 
-    invoke-direct {v1, p0, p1}, Lcom/kakao/sdk/auth/AuthApiClient$agt$$inlined$let$lambda$1;-><init>(Lcom/kakao/sdk/auth/AuthApiClient;Lke/p;)V
+    invoke-direct {v1, p0, p1}, Lcom/kakao/sdk/auth/AuthApiClient$agt$$inlined$let$lambda$1;-><init>(Lcom/kakao/sdk/auth/AuthApiClient;Lre/p;)V
 
-    invoke-interface {v0, v1}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {v0, v1}, Lef/b;->x(Lef/d;)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
+    const/4 v0, 0x0
+
+    .line 6
     new-instance v1, Lcom/kakao/sdk/common/model/ClientError;
 
     sget-object v2, Lcom/kakao/sdk/common/model/ClientErrorCause;->TokenNotFound:Lcom/kakao/sdk/common/model/ClientErrorCause;
@@ -437,28 +408,19 @@
 
     invoke-direct {v1, v2, v3}, Lcom/kakao/sdk/common/model/ClientError;-><init>(Lcom/kakao/sdk/common/model/ClientErrorCause;Ljava/lang/String;)V
 
-    invoke-interface {p1, v0, v1}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0, v1}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lae/i;
+    check-cast p1, Lie/h;
 
     :goto_0
     return-void
-
-    :cond_1
-    const-string p1, "callback"
-
-    .line 7
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public final getApplicationInfo()Lcom/kakao/sdk/common/model/ApplicationInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->applicationInfo:Lcom/kakao/sdk/common/model/ApplicationInfo;
 
     return-object v0
@@ -467,7 +429,6 @@
 .method public final getApprovalType()Lcom/kakao/sdk/common/model/ApprovalType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->approvalType:Lcom/kakao/sdk/common/model/ApprovalType;
 
     return-object v0
@@ -476,7 +437,6 @@
 .method public final getContextInfo()Lcom/kakao/sdk/common/model/ContextInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->contextInfo:Lcom/kakao/sdk/common/model/ContextInfo;
 
     return-object v0
@@ -485,7 +445,6 @@
 .method public final getTokenManagerProvider()Lcom/kakao/sdk/auth/TokenManagerProvider;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->tokenManagerProvider:Lcom/kakao/sdk/auth/TokenManagerProvider;
 
     return-object v0
@@ -494,7 +453,6 @@
 .method public final hasToken()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->tokenManagerProvider:Lcom/kakao/sdk/auth/TokenManagerProvider;
 
     invoke-virtual {v0}, Lcom/kakao/sdk/auth/TokenManagerProvider;->getManager()Lcom/kakao/sdk/auth/TokenManageable;
@@ -518,28 +476,30 @@
     return v0
 .end method
 
-.method public final issueAccessToken(Ljava/lang/String;Ljava/lang/String;Lke/p;)V
+.method public final issueAccessToken(Ljava/lang/String;Ljava/lang/String;Lre/p;)V
     .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "code"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p3, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v1, p0, Lcom/kakao/sdk/auth/AuthApiClient;->authApi:Lcom/kakao/sdk/auth/AuthApi;
@@ -583,94 +543,81 @@
     move-object v6, p2
 
     .line 6
-    invoke-static/range {v1 .. v10}, Lcom/kakao/sdk/auth/AuthApi$DefaultImpls;->issueAccessToken$default(Lcom/kakao/sdk/auth/AuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lxe/b;
+    invoke-static/range {v1 .. v10}, Lcom/kakao/sdk/auth/AuthApi$DefaultImpls;->issueAccessToken$default(Lcom/kakao/sdk/auth/AuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lef/b;
 
     move-result-object p1
 
     .line 7
     new-instance p2, Lcom/kakao/sdk/auth/AuthApiClient$issueAccessToken$1;
 
-    invoke-direct {p2, p0, p3}, Lcom/kakao/sdk/auth/AuthApiClient$issueAccessToken$1;-><init>(Lcom/kakao/sdk/auth/AuthApiClient;Lke/p;)V
+    invoke-direct {p2, p0, p3}, Lcom/kakao/sdk/auth/AuthApiClient$issueAccessToken$1;-><init>(Lcom/kakao/sdk/auth/AuthApiClient;Lre/p;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 8
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "code"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public final refreshAccessToken(Lcom/kakao/sdk/auth/model/OAuthToken;)Lcom/kakao/sdk/auth/model/OAuthToken;
-    .locals 8
+    .locals 9
 
-    if-eqz p1, :cond_1
+    const-string v0, "oldToken"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 8
+    iget-object v1, p0, Lcom/kakao/sdk/auth/AuthApiClient;->authApi:Lcom/kakao/sdk/auth/AuthApi;
 
     .line 9
-    iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->authApi:Lcom/kakao/sdk/auth/AuthApi;
+    iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->applicationInfo:Lcom/kakao/sdk/common/model/ApplicationInfo;
 
-    .line 10
-    iget-object v1, p0, Lcom/kakao/sdk/auth/AuthApiClient;->applicationInfo:Lcom/kakao/sdk/common/model/ApplicationInfo;
-
-    invoke-interface {v1}, Lcom/kakao/sdk/common/model/ApplicationInfo;->getAppKey()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 11
-    iget-object v2, p0, Lcom/kakao/sdk/auth/AuthApiClient;->contextInfo:Lcom/kakao/sdk/common/model/ContextInfo;
-
-    invoke-interface {v2}, Lcom/kakao/sdk/common/model/ContextInfo;->getSigningKeyHash()Ljava/lang/String;
+    invoke-interface {v0}, Lcom/kakao/sdk/common/model/ApplicationInfo;->getAppKey()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 12
-    invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/OAuthToken;->getRefreshToken()Ljava/lang/String;
+    .line 10
+    iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->contextInfo:Lcom/kakao/sdk/common/model/ContextInfo;
+
+    invoke-interface {v0}, Lcom/kakao/sdk/common/model/ContextInfo;->getSigningKeyHash()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 13
-    iget-object v4, p0, Lcom/kakao/sdk/auth/AuthApiClient;->approvalType:Lcom/kakao/sdk/common/model/ApprovalType;
-
-    invoke-virtual {v4}, Lcom/kakao/sdk/common/model/ApprovalType;->getValue()Ljava/lang/String;
+    .line 11
+    invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/OAuthToken;->getRefreshToken()Ljava/lang/String;
 
     move-result-object v4
 
-    const/4 v5, 0x0
+    .line 12
+    iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->approvalType:Lcom/kakao/sdk/common/model/ApprovalType;
 
-    const/16 v6, 0x10
+    invoke-virtual {v0}, Lcom/kakao/sdk/common/model/ApprovalType;->getValue()Ljava/lang/String;
 
-    const/4 v7, 0x0
+    move-result-object v5
+
+    const/4 v6, 0x0
+
+    const/16 v7, 0x10
+
+    const/4 v8, 0x0
+
+    .line 13
+    invoke-static/range {v1 .. v8}, Lcom/kakao/sdk/auth/AuthApi$DefaultImpls;->refreshAccessToken$default(Lcom/kakao/sdk/auth/AuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lef/b;
+
+    move-result-object v0
 
     .line 14
-    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/auth/AuthApi$DefaultImpls;->refreshAccessToken$default(Lcom/kakao/sdk/auth/AuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lxe/b;
+    invoke-interface {v0}, Lef/b;->execute()Lef/c0;
 
     move-result-object v0
 
     .line 15
-    invoke-interface {v0}, Lxe/b;->execute()Lxe/a0;
-
-    move-result-object v0
+    iget-object v1, v0, Lef/c0;->b:Ljava/lang/Object;
 
     .line 16
-    iget-object v1, v0, Lxe/a0;->b:Ljava/lang/Object;
-
-    .line 17
     check-cast v1, Lcom/kakao/sdk/auth/model/AccessTokenResponse;
 
     if-eqz v1, :cond_0
 
-    .line 18
+    .line 17
     sget-object v2, Lcom/kakao/sdk/auth/model/OAuthToken;->Companion:Lcom/kakao/sdk/auth/model/OAuthToken$Companion;
 
     invoke-virtual {v2, v1, p1}, Lcom/kakao/sdk/auth/model/OAuthToken$Companion;->fromResponse(Lcom/kakao/sdk/auth/model/AccessTokenResponse;Lcom/kakao/sdk/auth/model/OAuthToken;)Lcom/kakao/sdk/auth/model/OAuthToken;
@@ -679,7 +626,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 19
+    .line 18
     iget-object v0, p0, Lcom/kakao/sdk/auth/AuthApiClient;->tokenManagerProvider:Lcom/kakao/sdk/auth/TokenManagerProvider;
 
     invoke-virtual {v0}, Lcom/kakao/sdk/auth/TokenManagerProvider;->getManager()Lcom/kakao/sdk/auth/TokenManageable;
@@ -690,52 +637,44 @@
 
     return-object p1
 
-    .line 20
+    .line 19
     :cond_0
     sget-object p1, Lcom/kakao/sdk/auth/AuthApiClient;->Companion:Lcom/kakao/sdk/auth/AuthApiClient$Companion;
 
     new-instance v1, Lretrofit2/HttpException;
 
-    invoke-direct {v1, v0}, Lretrofit2/HttpException;-><init>(Lxe/a0;)V
+    invoke-direct {v1, v0}, Lretrofit2/HttpException;-><init>(Lef/c0;)V
 
     invoke-virtual {p1, v1}, Lcom/kakao/sdk/auth/AuthApiClient$Companion;->translateError(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     move-result-object p1
 
     throw p1
-
-    :cond_1
-    const-string p1, "oldToken"
-
-    .line 21
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public final refreshAccessToken(Lcom/kakao/sdk/auth/model/OAuthToken;Lke/p;)V
+.method public final refreshAccessToken(Lcom/kakao/sdk/auth/model/OAuthToken;Lre/p;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "oldToken"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v1, p0, Lcom/kakao/sdk/auth/AuthApiClient;->authApi:Lcom/kakao/sdk/auth/AuthApi;
@@ -773,46 +712,31 @@
     const/4 v8, 0x0
 
     .line 6
-    invoke-static/range {v1 .. v8}, Lcom/kakao/sdk/auth/AuthApi$DefaultImpls;->refreshAccessToken$default(Lcom/kakao/sdk/auth/AuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lxe/b;
+    invoke-static/range {v1 .. v8}, Lcom/kakao/sdk/auth/AuthApi$DefaultImpls;->refreshAccessToken$default(Lcom/kakao/sdk/auth/AuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lef/b;
 
     move-result-object v0
 
     .line 7
     new-instance v1, Lcom/kakao/sdk/auth/AuthApiClient$refreshAccessToken$1;
 
-    invoke-direct {v1, p0, p2, p1}, Lcom/kakao/sdk/auth/AuthApiClient$refreshAccessToken$1;-><init>(Lcom/kakao/sdk/auth/AuthApiClient;Lke/p;Lcom/kakao/sdk/auth/model/OAuthToken;)V
+    invoke-direct {v1, p0, p2, p1}, Lcom/kakao/sdk/auth/AuthApiClient$refreshAccessToken$1;-><init>(Lcom/kakao/sdk/auth/AuthApiClient;Lre/p;Lcom/kakao/sdk/auth/model/OAuthToken;)V
 
-    invoke-interface {v0, v1}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {v0, v1}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 8
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "oldToken"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public final refreshAccessToken(Lke/p;)V
+.method public final refreshAccessToken(Lre/p;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -821,7 +745,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {p0, v0, p1, v1, v0}, Lcom/kakao/sdk/auth/AuthApiClient;->refreshAccessToken$default(Lcom/kakao/sdk/auth/AuthApiClient;Lcom/kakao/sdk/auth/model/OAuthToken;Lke/p;ILjava/lang/Object;)V
+    invoke-static {p0, v0, p1, v1, v0}, Lcom/kakao/sdk/auth/AuthApiClient;->refreshAccessToken$default(Lcom/kakao/sdk/auth/AuthApiClient;Lcom/kakao/sdk/auth/model/OAuthToken;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method

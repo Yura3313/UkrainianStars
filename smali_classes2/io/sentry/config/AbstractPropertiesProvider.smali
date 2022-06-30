@@ -57,7 +57,7 @@
 
 
 # virtual methods
-.method public synthetic getBooleanProperty(Ljava/lang/String;)Ljava/lang/Boolean;
+.method public final synthetic getBooleanProperty(Ljava/lang/String;)Ljava/lang/Boolean;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/config/a;->a(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;)Ljava/lang/Boolean;
@@ -67,7 +67,7 @@
     return-object p1
 .end method
 
-.method public synthetic getDoubleProperty(Ljava/lang/String;)Ljava/lang/Double;
+.method public final synthetic getDoubleProperty(Ljava/lang/String;)Ljava/lang/Double;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/config/a;->b(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;)Ljava/lang/Double;
@@ -77,7 +77,7 @@
     return-object p1
 .end method
 
-.method public synthetic getList(Ljava/lang/String;)Ljava/util/List;
+.method public final synthetic getList(Ljava/lang/String;)Ljava/util/List;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/config/a;->c(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;)Ljava/util/List;
@@ -108,9 +108,15 @@
 
     iget-object v1, p0, Lio/sentry/config/AbstractPropertiesProvider;->prefix:Ljava/lang/String;
 
-    const-string v2, "."
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, v1, p1, v2}, Landroidx/fragment/app/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, "."
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -122,7 +128,7 @@
     .line 3
     iget-object v1, p0, Lio/sentry/config/AbstractPropertiesProvider;->properties:Ljava/util/Properties;
 
-    invoke-virtual {v1}, Ljava/util/Properties;->entrySet()Ljava/util/Set;
+    invoke-virtual {v1}, Ljava/util/Hashtable;->entrySet()Ljava/util/Set;
 
     move-result-object v1
 
@@ -238,7 +244,7 @@
     return-object p1
 .end method
 
-.method public synthetic getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public final synthetic getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/config/a;->d(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;

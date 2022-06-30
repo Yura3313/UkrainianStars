@@ -92,7 +92,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILle/g;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILse/e;)V
 
     return-void
 .end method
@@ -114,7 +114,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILle/g;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILse/e;)V
 
     return-void
 .end method
@@ -136,7 +136,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILle/g;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILse/e;)V
 
     return-void
 .end method
@@ -169,7 +169,7 @@
 
     move-object v3, p3
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILle/g;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/Link;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILse/e;)V
 
     return-void
 .end method
@@ -206,7 +206,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILle/g;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;ILse/e;)V
     .locals 1
 
     and-int/lit8 p6, p5, 0x1
@@ -384,7 +384,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/Link;->webUrl:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -394,7 +394,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/Link;->mobileWebUrl:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -404,7 +404,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/Link;->androidExecParams:Ljava/util/Map;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -414,7 +414,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/template/model/Link;->iosExecParams:Ljava/util/Map;
 
-    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -446,7 +446,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/template/model/Link;->androidExecParams:Ljava/util/Map;
 
     return-object v0
@@ -464,7 +463,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/template/model/Link;->iosExecParams:Ljava/util/Map;
 
     return-object v0
@@ -473,7 +471,6 @@
 .method public final getMobileWebUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/template/model/Link;->mobileWebUrl:Ljava/lang/String;
 
     return-object v0
@@ -482,7 +479,6 @@
 .method public final getWebUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/template/model/Link;->webUrl:Ljava/lang/String;
 
     return-object v0
@@ -564,10 +560,12 @@
 
     const-string v0, "Link(webUrl="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakao/sdk/template/model/Link;->webUrl:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -610,7 +608,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
-    if-eqz p1, :cond_4
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/template/model/Link;->webUrl:Ljava/lang/String;
 
@@ -731,20 +731,4 @@
 
     :cond_3
     return-void
-
-    :cond_4
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    goto :goto_3
-
-    :goto_2
-    throw p1
-
-    :goto_3
-    goto :goto_2
 .end method

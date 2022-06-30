@@ -19,7 +19,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/transport/CurrentDateProvider;
 
     invoke-direct {v0}, Lio/sentry/transport/CurrentDateProvider;-><init>()V
@@ -32,7 +31,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public static getInstance()Lio/sentry/transport/ICurrentDateProvider;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/transport/CurrentDateProvider;->instance:Lio/sentry/transport/ICurrentDateProvider;
 
     return-object v0
@@ -52,7 +49,6 @@
 .method public final getCurrentTimeMillis()J
     .locals 2
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0

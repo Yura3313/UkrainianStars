@@ -100,7 +100,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatType;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatType;->value:Ljava/lang/String;
 
     return-object p0
@@ -109,7 +108,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatType;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -124,7 +122,6 @@
 .method public static values()[Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatType;->$VALUES:[Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatType;
 
     invoke-virtual {v0}, [Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatType;->clone()Ljava/lang/Object;

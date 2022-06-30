@@ -9,7 +9,7 @@
 
 
 # instance fields
-.field public i:Ljava/util/Map;
+.field public i:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -42,8 +42,8 @@
 
 
 # virtual methods
-.method public C(Landroid/content/Context;Z)Lcom/google/android/material/transformation/FabTransformationBehavior$b;
-    .locals 2
+.method public final C(Landroid/content/Context;Z)Lcom/google/android/material/transformation/FabTransformationBehavior$b;
+    .locals 1
 
     if-eqz p2, :cond_0
 
@@ -63,28 +63,24 @@
     invoke-direct {v0}, Lcom/google/android/material/transformation/FabTransformationBehavior$b;-><init>()V
 
     .line 4
-    invoke-static {p1, p2}, Lc4/g;->b(Landroid/content/Context;I)Lc4/g;
+    invoke-static {p1, p2}, Ld4/g;->b(Landroid/content/Context;I)Ld4/g;
 
     move-result-object p1
 
-    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->a:Lc4/g;
+    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->a:Ld4/g;
 
     .line 5
-    new-instance p1, Lr5/a;
+    new-instance p1, Ld4/i;
 
-    const/16 p2, 0x11
+    invoke-direct {p1}, Ld4/i;-><init>()V
 
-    const/4 v1, 0x0
-
-    invoke-direct {p1, p2, v1, v1}, Lr5/a;-><init>(IFF)V
-
-    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->b:Lr5/a;
+    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->b:Ld4/i;
 
     return-object v0
 .end method
 
-.method public u(Landroid/view/View;Landroid/view/View;ZZ)Z
-    .locals 8
+.method public final t(Landroid/view/View;Landroid/view/View;ZZ)V
+    .locals 7
 
     .line 1
     invoke-virtual {p2}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -93,8 +89,6 @@
 
     .line 2
     instance-of v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;
-
-    const/4 v2, 0x1
 
     if-nez v1, :cond_0
 
@@ -112,60 +106,60 @@
     if-eqz p3, :cond_1
 
     .line 5
-    new-instance v3, Ljava/util/HashMap;
+    new-instance v2, Ljava/util/HashMap;
 
-    invoke-direct {v3, v1}, Ljava/util/HashMap;-><init>(I)V
+    invoke-direct {v2, v1}, Ljava/util/HashMap;-><init>(I)V
 
-    iput-object v3, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/Map;
+    iput-object v2, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/HashMap;
 
     :cond_1
+    const/4 v2, 0x0
+
     const/4 v3, 0x0
 
-    const/4 v4, 0x0
-
     :goto_0
-    if-ge v4, v1, :cond_6
+    if-ge v3, v1, :cond_6
 
     .line 6
-    invoke-virtual {v0, v4}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v4
+
+    .line 7
+    invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v5
 
-    .line 7
-    invoke-virtual {v5}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    instance-of v5, v5, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
 
-    move-result-object v6
-
-    instance-of v6, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
-
-    if-eqz v6, :cond_2
+    if-eqz v5, :cond_2
 
     .line 8
-    invoke-virtual {v5}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-    move-result-object v6
+    move-result-object v5
 
-    check-cast v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
+    check-cast v5, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
 
     .line 9
-    iget-object v6, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
+    iget-object v5, v5, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
 
     .line 10
-    instance-of v6, v6, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;
+    instance-of v5, v5, Lcom/google/android/material/transformation/FabTransformationScrimBehavior;
 
-    if-eqz v6, :cond_2
+    if-eqz v5, :cond_2
 
-    const/4 v6, 0x1
+    const/4 v5, 0x1
 
     goto :goto_1
 
     :cond_2
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
     :goto_1
-    if-eq v5, p2, :cond_5
+    if-eq v4, p2, :cond_5
 
-    if-eqz v6, :cond_3
+    if-eqz v5, :cond_3
 
     goto :goto_2
 
@@ -173,56 +167,56 @@
     if-nez p3, :cond_4
 
     .line 11
-    iget-object v6, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/Map;
+    iget-object v5, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/HashMap;
 
-    if-eqz v6, :cond_5
+    if-eqz v5, :cond_5
 
     .line 12
-    invoke-interface {v6, v5}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
-    move-result v6
+    move-result v5
 
-    if-eqz v6, :cond_5
+    if-eqz v5, :cond_5
 
     .line 13
-    iget-object v6, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/Map;
+    iget-object v5, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/HashMap;
 
-    invoke-interface {v6, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v5, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v5
 
-    check-cast v6, Ljava/lang/Integer;
+    check-cast v5, Ljava/lang/Integer;
 
-    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
 
-    move-result v6
+    move-result v5
 
-    invoke-static {v5, v6}, Lf0/r;->D(Landroid/view/View;I)V
+    invoke-static {v4, v5}, Lf0/r;->I(Landroid/view/View;I)V
 
     goto :goto_2
 
     .line 14
     :cond_4
-    iget-object v6, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/Map;
+    iget-object v5, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/HashMap;
 
-    invoke-virtual {v5}, Landroid/view/View;->getImportantForAccessibility()I
+    invoke-virtual {v4}, Landroid/view/View;->getImportantForAccessibility()I
 
-    move-result v7
+    move-result v6
 
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v7
+    move-result-object v6
 
-    invoke-interface {v6, v5, v7}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v5, v4, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v6, 0x4
+    const/4 v5, 0x4
 
     .line 15
-    invoke-static {v5, v6}, Lf0/r;->D(Landroid/view/View;I)V
+    invoke-static {v4, v5}, Lf0/r;->I(Landroid/view/View;I)V
 
     :cond_5
     :goto_2
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
@@ -232,12 +226,12 @@
     const/4 v0, 0x0
 
     .line 16
-    iput-object v0, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/Map;
+    iput-object v0, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->i:Ljava/util/HashMap;
 
     .line 17
     :cond_7
     :goto_3
-    invoke-super {p0, p1, p2, p3, p4}, Lcom/google/android/material/transformation/ExpandableTransformationBehavior;->u(Landroid/view/View;Landroid/view/View;ZZ)Z
+    invoke-super {p0, p1, p2, p3, p4}, Lcom/google/android/material/transformation/ExpandableTransformationBehavior;->t(Landroid/view/View;Landroid/view/View;ZZ)V
 
-    return v2
+    return-void
 .end method

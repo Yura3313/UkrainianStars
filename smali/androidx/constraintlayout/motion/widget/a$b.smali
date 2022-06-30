@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/motion/widget/a$b;
+.class public final Landroidx/constraintlayout/motion/widget/a$b;
 .super Ljava/lang/Object;
 .source "MotionScene.java"
 
@@ -45,7 +45,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Lo/i;",
+            "Lo/j;",
             ">;"
         }
     .end annotation

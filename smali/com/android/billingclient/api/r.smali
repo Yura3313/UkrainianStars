@@ -56,12 +56,12 @@
     .locals 3
 
     .line 1
-    sget p1, Lv3/a;->a:I
+    sget p1, Lw3/a;->a:I
 
     iget-object p1, p0, Lcom/android/billingclient/api/r;->c:Lcom/android/billingclient/api/b;
 
     .line 2
-    invoke-static {p2}, Lcom/google/android/gms/internal/play_billing/zzc;->F0(Landroid/os/IBinder;)Lcom/google/android/gms/internal/play_billing/zzd;
+    invoke-static {p2}, Lcom/google/android/gms/internal/play_billing/zzc;->J0(Landroid/os/IBinder;)Lcom/google/android/gms/internal/play_billing/zzd;
 
     move-result-object p2
 
@@ -113,10 +113,10 @@
 .end method
 
 .method public final onServiceDisconnected(Landroid/content/ComponentName;)V
-    .locals 3
+    .locals 4
 
     .line 1
-    sget p1, Lv3/a;->a:I
+    sget p1, Lw3/a;->a:I
 
     iget-object p1, p0, Lcom/android/billingclient/api/r;->c:Lcom/android/billingclient/api/b;
 
@@ -141,28 +141,28 @@
     if-eqz v0, :cond_0
 
     .line 5
-    check-cast v0, Lcom/supercell/titan/m;
+    check-cast v0, Lcom/supercell/titan/k;
 
     .line 6
-    iget-object v0, v0, Lcom/supercell/titan/m;->a:Lcom/supercell/titan/PurchaseManagerGoogle;
+    iget-object v0, v0, Lcom/supercell/titan/k;->a:Lcom/supercell/titan/PurchaseManagerGoogle;
 
     const/4 v1, 0x3
 
-    .line 7
-    new-instance v2, Lcom/android/billingclient/api/e;
+    const-string v2, "onBillingServiceDisconnected"
 
-    invoke-direct {v2}, Lcom/android/billingclient/api/e;-><init>()V
+    .line 7
+    new-instance v3, Lcom/android/billingclient/api/e;
+
+    invoke-direct {v3}, Lcom/android/billingclient/api/e;-><init>()V
 
     .line 8
-    iput v1, v2, Lcom/android/billingclient/api/e;->a:I
-
-    const-string v1, "onBillingServiceDisconnected"
+    iput v1, v3, Lcom/android/billingclient/api/e;->a:I
 
     .line 9
-    iput-object v1, v2, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
+    iput-object v2, v3, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
 
     .line 10
-    iput-object v2, v0, Lcom/supercell/titan/PurchaseManagerGoogle;->v:Lcom/android/billingclient/api/e;
+    iput-object v3, v0, Lcom/supercell/titan/PurchaseManagerGoogle;->v:Lcom/android/billingclient/api/e;
 
     goto :goto_0
 

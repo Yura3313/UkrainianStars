@@ -14,7 +14,47 @@
 
 
 # direct methods
-.method public static a(Landroid/graphics/drawable/Drawable;)V
+.method public static a(Landroid/graphics/drawable/Drawable;Landroid/content/res/Resources$Theme;)V
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0, p1}, Landroid/graphics/drawable/Drawable;->applyTheme(Landroid/content/res/Resources$Theme;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public static b(Landroid/graphics/drawable/Drawable;)Z
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->canApplyTheme()Z
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public static c(Landroid/graphics/drawable/Drawable;)V
     .locals 3
 
     .line 1
@@ -49,7 +89,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Ly/a;->a(Landroid/graphics/drawable/Drawable;)V
+    invoke-static {p0}, Ly/a;->c(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_1
 
@@ -66,7 +106,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Ly/a;->a(Landroid/graphics/drawable/Drawable;)V
+    invoke-static {p0}, Ly/a;->c(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_1
 
@@ -106,7 +146,7 @@
     if-eqz v2, :cond_3
 
     .line 13
-    invoke-static {v2}, Ly/a;->a(Landroid/graphics/drawable/Drawable;)V
+    invoke-static {v2}, Ly/a;->c(Landroid/graphics/drawable/Drawable;)V
 
     :cond_3
     add-int/lit8 v0, v0, 0x1
@@ -122,7 +162,53 @@
     return-void
 .end method
 
-.method public static b(Landroid/graphics/drawable/Drawable;)I
+.method public static d(Landroid/graphics/drawable/Drawable;)I
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x13
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getAlpha()I
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public static e(Landroid/graphics/drawable/Drawable;)Landroid/graphics/ColorFilter;
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getColorFilter()Landroid/graphics/ColorFilter;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public static f(Landroid/graphics/drawable/Drawable;)I
     .locals 5
 
     .line 1
@@ -165,7 +251,7 @@
     sput-object v2, Ly/a;->c:Ljava/lang/reflect/Method;
 
     .line 6
-    invoke-virtual {v2, v0}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v2, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -207,7 +293,36 @@
     return v1
 .end method
 
-.method public static c(Landroid/graphics/drawable/Drawable;)Z
+.method public static g(Landroid/graphics/drawable/Drawable;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/xmlpull/v1/XmlPullParserException;,
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0, p1, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)V
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0, p1, p2, p3}, Landroid/graphics/drawable/Drawable;->inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public static h(Landroid/graphics/drawable/Drawable;)Z
     .locals 2
 
     .line 1
@@ -230,7 +345,7 @@
     return p0
 .end method
 
-.method public static d(Landroid/graphics/drawable/Drawable;Z)V
+.method public static i(Landroid/graphics/drawable/Drawable;Z)V
     .locals 2
 
     .line 1
@@ -247,7 +362,7 @@
     return-void
 .end method
 
-.method public static e(Landroid/graphics/drawable/Drawable;FF)V
+.method public static j(Landroid/graphics/drawable/Drawable;FF)V
     .locals 2
 
     .line 1
@@ -264,7 +379,7 @@
     return-void
 .end method
 
-.method public static f(Landroid/graphics/drawable/Drawable;IIII)V
+.method public static k(Landroid/graphics/drawable/Drawable;IIII)V
     .locals 2
 
     .line 1
@@ -281,7 +396,7 @@
     return-void
 .end method
 
-.method public static g(Landroid/graphics/drawable/Drawable;I)Z
+.method public static l(Landroid/graphics/drawable/Drawable;I)Z
     .locals 6
 
     .line 1
@@ -328,7 +443,7 @@
     sput-object v0, Ly/a;->a:Ljava/lang/reflect/Method;
 
     .line 6
-    invoke-virtual {v0, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -368,7 +483,7 @@
     return v1
 .end method
 
-.method public static h(Landroid/graphics/drawable/Drawable;I)V
+.method public static m(Landroid/graphics/drawable/Drawable;I)V
     .locals 2
 
     .line 1
@@ -399,7 +514,7 @@
     return-void
 .end method
 
-.method public static i(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
+.method public static n(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
     .locals 2
 
     .line 1
@@ -430,7 +545,7 @@
     return-void
 .end method
 
-.method public static j(Landroid/graphics/drawable/Drawable;Landroid/graphics/PorterDuff$Mode;)V
+.method public static o(Landroid/graphics/drawable/Drawable;Landroid/graphics/PorterDuff$Mode;)V
     .locals 2
 
     .line 1
@@ -461,7 +576,7 @@
     return-void
 .end method
 
-.method public static k(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+.method public static p(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -489,7 +604,7 @@
     return-object p0
 .end method
 
-.method public static l(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+.method public static q(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 2
 
     .line 1

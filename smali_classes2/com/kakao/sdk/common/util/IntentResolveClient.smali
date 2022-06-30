@@ -14,7 +14,7 @@
 # static fields
 .field public static final Companion:Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;
 
-.field private static final instance$delegate:Lae/c;
+.field private static final instance$delegate:Lie/c;
 
 
 # instance fields
@@ -41,18 +41,17 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient;->Companion:Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/common/util/IntentResolveClient$Companion$instance$2;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient;->instance$delegate:Lae/c;
+    sput-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient;->instance$delegate:Lie/c;
 
     return-void
 .end method
@@ -119,11 +118,10 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lae/c;
+.method public static final synthetic access$getInstance$cp()Lie/c;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient;->instance$delegate:Lae/c;
+    sget-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient;->instance$delegate:Lie/c;
 
     return-object v0
 .end method
@@ -153,7 +151,7 @@
     .line 3
     iget-object v4, p0, Lcom/kakao/sdk/common/util/IntentResolveClient;->ALLOWED_SIGNATURES:[Ljava/lang/String;
 
-    invoke-static {v4, v3}, Lbe/f;->f([Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v3}, Lje/e;->d([Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -175,120 +173,122 @@
 
 # virtual methods
 .method public resolveTalkIntent(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/Intent;
-    .locals 12
+    .locals 11
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_9
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_8
+    const-string v0, "intent"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    move-result-object v1
+    move-result-object v0
 
     .line 2
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 3
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
-    new-instance v3, Ljava/util/ArrayList;
-
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
-
     .line 4
-    iget-object v4, p0, Lcom/kakao/sdk/common/util/IntentResolveClient;->ALLOWED_PACKAGES:[Ljava/lang/String;
+    iget-object v3, p0, Lcom/kakao/sdk/common/util/IntentResolveClient;->ALLOWED_PACKAGES:[Ljava/lang/String;
 
-    array-length v5, v4
+    array-length v4, v3
+
+    const/4 v5, 0x0
 
     const/4 v6, 0x0
 
-    const/4 v7, 0x0
-
     :goto_0
-    if-ge v7, v5, :cond_3
+    if-ge v6, v4, :cond_3
 
-    aget-object v8, v4, v7
+    aget-object v7, v3, v6
 
     .line 5
     invoke-virtual {p2}, Landroid/content/Intent;->clone()Ljava/lang/Object;
 
-    move-result-object v9
-
-    if-eqz v9, :cond_2
-
-    check-cast v9, Landroid/content/Intent;
-
-    .line 6
-    invoke-virtual {v9, v8}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
-
-    const/high16 v8, 0x10000
-
-    .line 7
-    invoke-virtual {v1, v9, v8}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
-
     move-result-object v8
 
-    if-eqz v8, :cond_1
+    if-eqz v8, :cond_2
+
+    check-cast v8, Landroid/content/Intent;
+
+    .line 6
+    invoke-virtual {v8, v7}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    const/high16 v7, 0x10000
+
+    .line 7
+    invoke-virtual {v0, v8, v7}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+
+    move-result-object v7
+
+    if-eqz v7, :cond_1
 
     .line 8
-    iget-object v10, v8, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+    iget-object v9, v7, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v10, v10, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object v9, v9, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    iget-object v10, v10, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+    iget-object v9, v9, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    const/16 v11, 0x40
+    const/16 v10, 0x40
 
     .line 9
-    invoke-virtual {v1, v10, v11}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-virtual {v0, v9, v10}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
-    move-result-object v10
+    move-result-object v9
 
-    const-string v11, "packageInfo"
+    const-string v10, "packageInfo"
 
     .line 10
-    invoke-static {v10, v11}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v9, v10}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {p0, v10}, Lcom/kakao/sdk/common/util/IntentResolveClient;->validateTalkSignature(Landroid/content/pm/PackageInfo;)Z
+    invoke-direct {p0, v9}, Lcom/kakao/sdk/common/util/IntentResolveClient;->validateTalkSignature(Landroid/content/pm/PackageInfo;)Z
 
-    move-result v10
+    move-result v9
 
-    if-nez v10, :cond_0
+    if-nez v9, :cond_0
 
     goto :goto_1
 
     .line 11
     :cond_0
-    invoke-interface {v2, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v1, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 12
-    new-instance v9, Landroid/content/pm/LabeledIntent;
+    new-instance v8, Landroid/content/pm/LabeledIntent;
 
     .line 13
-    iget-object v8, v8, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+    iget-object v7, v7, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v8, v8, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object v7, v7, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    iget-object v10, v8, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+    iget-object v9, v7, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
     .line 14
-    iget v11, v8, Landroid/content/pm/ApplicationInfo;->labelRes:I
+    iget v10, v7, Landroid/content/pm/ApplicationInfo;->labelRes:I
 
     .line 15
-    iget v8, v8, Landroid/content/pm/ApplicationInfo;->icon:I
+    iget v7, v7, Landroid/content/pm/ApplicationInfo;->icon:I
 
     .line 16
-    invoke-direct {v9, p2, v10, v11, v8}, Landroid/content/pm/LabeledIntent;-><init>(Landroid/content/Intent;Ljava/lang/String;II)V
+    invoke-direct {v8, p2, v9, v10, v7}, Landroid/content/pm/LabeledIntent;-><init>(Landroid/content/Intent;Ljava/lang/String;II)V
 
     .line 17
-    invoke-interface {v3, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v2, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_1
     :goto_1
-    add-int/lit8 v7, v7, 0x1
+    add-int/lit8 v6, v6, 0x1
 
     goto :goto_0
 
@@ -304,17 +304,19 @@
 
     .line 19
     :cond_3
-    invoke-interface {v2}, Ljava/util/List;->size()I
+    invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result p2
 
     if-nez p2, :cond_4
 
-    return-object v0
+    const/4 p1, 0x0
+
+    return-object p1
 
     .line 20
     :cond_4
-    invoke-interface {v2}, Ljava/util/List;->size()I
+    invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result p2
 
@@ -323,7 +325,7 @@
     if-ne p2, v0, :cond_5
 
     .line 21
-    invoke-interface {v2, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -333,7 +335,7 @@
 
     .line 22
     :cond_5
-    invoke-interface {v3, v6}, Ljava/util/List;->remove(I)Ljava/lang/Object;
+    invoke-interface {v2, v5}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     move-result-object p2
 
@@ -352,16 +354,16 @@
     move-result-object p1
 
     .line 25
-    invoke-interface {v3}, Ljava/util/List;->size()I
+    invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result p2
 
     if-lez p2, :cond_7
 
-    new-array p2, v6, [Landroid/os/Parcelable;
+    new-array p2, v5, [Landroid/os/Parcelable;
 
     .line 26
-    invoke-interface {v3, p2}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-interface {v2, p2}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p2
 
@@ -390,25 +392,4 @@
     :cond_7
     :goto_2
     return-object p1
-
-    :cond_8
-    const-string p1, "intent"
-
-    .line 30
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_9
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    goto :goto_4
-
-    :goto_3
-    throw v0
-
-    :goto_4
-    goto :goto_3
 .end method

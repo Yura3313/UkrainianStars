@@ -253,10 +253,12 @@
 
     const-string v1, "Unexpected protocol: "
 
-    invoke-static {v1, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 8
+    invoke-static {v1, p0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 9
     invoke-direct {v0, p0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -265,7 +267,6 @@
 .method public static valueOf(Ljava/lang/String;)Lokhttp3/Protocol;
     .locals 1
 
-    .line 1
     const-class v0, Lokhttp3/Protocol;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -280,7 +281,6 @@
 .method public static values()[Lokhttp3/Protocol;
     .locals 1
 
-    .line 1
     sget-object v0, Lokhttp3/Protocol;->$VALUES:[Lokhttp3/Protocol;
 
     invoke-virtual {v0}, [Lokhttp3/Protocol;->clone()Ljava/lang/Object;
@@ -297,7 +297,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Protocol;->protocol:Ljava/lang/String;
 
     return-object v0

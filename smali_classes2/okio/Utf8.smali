@@ -7,7 +7,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -154,11 +153,12 @@
 
     const-string v1, " > "
 
-    invoke-static {v0, p2, v1}, Lqc/a0;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    .line 6
+    invoke-static {v0, p2, v1}, Lcom/supercell/titan/a;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
-    .line 6
+    .line 7
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result p0
@@ -173,29 +173,27 @@
 
     throw p1
 
-    .line 7
+    .line 8
     :cond_9
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "endIndex < beginIndex: "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v1, " < "
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {v0, p2, v1, p1}, Landroid/support/v4/media/a;->b(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+    const-string v1, "endIndex < beginIndex: "
 
-    move-result-object p1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    throw p0
+    const-string p2, " < "
 
-    .line 8
-    :cond_a
-    new-instance p0, Ljava/lang/IllegalArgumentException;
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p2, "beginIndex < 0: "
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-static {p2, p1}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -204,6 +202,22 @@
     throw p0
 
     .line 9
+    :cond_a
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "beginIndex < 0: "
+
+    .line 10
+    invoke-static {p2, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 11
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 12
     :cond_b
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

@@ -1,4 +1,4 @@
-.class public Landroidx/viewpager2/widget/ViewPager2$j;
+.class public final Landroidx/viewpager2/widget/ViewPager2$j;
 .super Landroidx/recyclerview/widget/w;
 .source "ViewPager2.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Landroidx/viewpager2/widget/ViewPager2;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$j;->f:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/w;-><init>()V
@@ -32,20 +31,24 @@
 
 
 # virtual methods
-.method public d(Landroidx/recyclerview/widget/RecyclerView$m;)Landroid/view/View;
-    .locals 1
+.method public final d(Landroidx/recyclerview/widget/RecyclerView$m;)Landroid/view/View;
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$j;->f:Landroidx/viewpager2/widget/ViewPager2;
 
     .line 2
-    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->t:Landroidx/viewpager2/widget/d;
+    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->s:Landroidx/viewpager2/widget/d;
 
     .line 3
-    iget-object v0, v0, Landroidx/viewpager2/widget/d;->a:Landroidx/viewpager2/widget/f;
+    iget-object v0, v0, Landroidx/viewpager2/widget/d;->b:Ljava/lang/Object;
+
+    check-cast v0, Landroidx/viewpager2/widget/f;
 
     .line 4
     iget-boolean v0, v0, Landroidx/viewpager2/widget/f;->m:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
@@ -66,9 +69,9 @@
 
     invoke-virtual {p0, p1, v0}, Landroidx/recyclerview/widget/w;->h(Landroidx/recyclerview/widget/RecyclerView$m;Landroidx/recyclerview/widget/v;)Landroid/view/View;
 
-    move-result-object p1
+    move-result-object v1
 
-    goto :goto_1
+    goto :goto_0
 
     .line 7
     :cond_1
@@ -85,14 +88,9 @@
 
     invoke-virtual {p0, p1, v0}, Landroidx/recyclerview/widget/w;->h(Landroidx/recyclerview/widget/RecyclerView$m;Landroidx/recyclerview/widget/v;)Landroid/view/View;
 
-    move-result-object p1
-
-    goto :goto_1
+    move-result-object v1
 
     :cond_2
     :goto_0
-    const/4 p1, 0x0
-
-    :goto_1
-    return-object p1
+    return-object v1
 .end method

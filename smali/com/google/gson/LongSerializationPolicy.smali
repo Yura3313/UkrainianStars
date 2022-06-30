@@ -87,7 +87,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/gson/LongSerializationPolicy;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/gson/LongSerializationPolicy;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -102,7 +101,6 @@
 .method public static values()[Lcom/google/gson/LongSerializationPolicy;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/gson/LongSerializationPolicy;->$VALUES:[Lcom/google/gson/LongSerializationPolicy;
 
     invoke-virtual {v0}, [Lcom/google/gson/LongSerializationPolicy;->clone()Ljava/lang/Object;

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkotlinx/coroutines/android/HandlerDispatcherKt;->postFrameCallback(Landroid/view/Choreographer;Lse/f;)V
+    value = Lkotlinx/coroutines/android/HandlerDispatcherKt;->postFrameCallback(Landroid/view/Choreographer;Lze/f;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic $cont:Lse/f;
+.field public final synthetic $cont:Lze/f;
 
 
 # direct methods
-.method public constructor <init>(Lse/f;)V
+.method public constructor <init>(Lze/f;)V
     .locals 0
 
-    iput-object p1, p0, Lkotlinx/coroutines/android/HandlerDispatcherKt$postFrameCallback$1;->$cont:Lse/f;
+    iput-object p1, p0, Lkotlinx/coroutines/android/HandlerDispatcherKt$postFrameCallback$1;->$cont:Lze/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,19 +38,19 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lkotlinx/coroutines/android/HandlerDispatcherKt$postFrameCallback$1;->$cont:Lse/f;
+    iget-object v0, p0, Lkotlinx/coroutines/android/HandlerDispatcherKt$postFrameCallback$1;->$cont:Lze/f;
 
-    sget-object v1, Lse/l0;->a:Lse/w;
+    sget-object v1, Lze/k0;->a:Lze/t0;
 
     .line 2
-    sget-object v1, Lte/r;->a:Lse/i1;
+    sget-object v1, Laf/q;->a:Lze/i1;
 
     .line 3
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
 
-    invoke-interface {v0, v1, p1}, Lse/f;->c(Lse/w;Ljava/lang/Object;)V
+    invoke-interface {v0, v1, p1}, Lze/f;->r(Lze/w;Ljava/lang/Object;)V
 
     return-void
 .end method

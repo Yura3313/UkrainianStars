@@ -38,7 +38,6 @@
 .method public getCustomSamplingContext()Lio/sentry/CustomSamplingContext;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SamplingContext;->customSamplingContext:Lio/sentry/CustomSamplingContext;
 
     return-object v0
@@ -47,7 +46,6 @@
 .method public getTransactionContext()Lio/sentry/TransactionContext;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SamplingContext;->transactionContext:Lio/sentry/TransactionContext;
 
     return-object v0

@@ -33,7 +33,6 @@
 .method public constructor <init>(Landroid/app/Activity;Ljava/lang/String;[BZLcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialogManager$4;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/web/WebDialogManager$4;->val$webUrl:Ljava/lang/String;
@@ -112,7 +111,7 @@
     const/16 v2, 0xfa1
 
     .line 7
-    invoke-static {v0, v1, v0, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v0, v1, v0, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 

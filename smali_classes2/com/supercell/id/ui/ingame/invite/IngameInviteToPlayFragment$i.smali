@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;
-.super Lle/j;
+.super Lse/h;
 .source "IngameInviteToPlayFragment.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
+        "Lse/h;",
+        "Lre/a<",
         "Ljava/lang/Boolean;",
         ">;"
     }
@@ -27,37 +27,37 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
+.method public final invoke()Ljava/lang/Object;
     .locals 3
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lvd/h;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lae/i;
 
     move-result-object v0
 
     const/16 v1, 0xa
 
-    invoke-virtual {v0, v1}, Lvd/h;->d(I)Ljava/util/List;
+    invoke-virtual {v0, v1}, Lae/i;->d(I)Ljava/util/List;
 
     move-result-object v0
 
@@ -65,10 +65,10 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iget-object v2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     .line 2
-    iget-object v2, v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->k0:Ljava/lang/String;
+    iget-object v2, v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->i0:Ljava/lang/String;
 
     .line 3
     invoke-interface {v0, v2}, Ljava/util/List;->contains(Ljava/lang/Object;)Z

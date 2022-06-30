@@ -1,4 +1,4 @@
-.class public Lw0/d$a;
+.class public final Lw0/d$a;
 .super Ljava/lang/Object;
 .source "AnimatorInflaterCompat.java"
 
@@ -21,21 +21,20 @@
         "Ljava/lang/Object;",
         "Landroid/animation/TypeEvaluator<",
         "[",
-        "Lx/c$a;",
+        "Lx/d$a;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public a:[Lx/c$a;
+.field public a:[Lx/d$a;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,36 +42,36 @@
 
 
 # virtual methods
-.method public evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 9
 
     .line 1
-    check-cast p2, [Lx/c$a;
+    check-cast p2, [Lx/d$a;
 
-    check-cast p3, [Lx/c$a;
+    check-cast p3, [Lx/d$a;
 
     .line 2
-    invoke-static {p2, p3}, Lx/c;->a([Lx/c$a;[Lx/c$a;)Z
+    invoke-static {p2, p3}, Lx/d;->a([Lx/d$a;[Lx/d$a;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 3
-    iget-object v0, p0, Lw0/d$a;->a:[Lx/c$a;
+    iget-object v0, p0, Lw0/d$a;->a:[Lx/d$a;
 
-    invoke-static {v0, p2}, Lx/c;->a([Lx/c$a;[Lx/c$a;)Z
+    invoke-static {v0, p2}, Lx/d;->a([Lx/d$a;[Lx/d$a;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 4
-    invoke-static {p2}, Lx/c;->e([Lx/c$a;)[Lx/c$a;
+    invoke-static {p2}, Lx/d;->e([Lx/d$a;)[Lx/d$a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lw0/d$a;->a:[Lx/c$a;
+    iput-object v0, p0, Lw0/d$a;->a:[Lx/d$a;
 
     :cond_0
     const/4 v0, 0x0
@@ -86,7 +85,7 @@
     if-ge v1, v2, :cond_2
 
     .line 6
-    iget-object v2, p0, Lw0/d$a;->a:[Lx/c$a;
+    iget-object v2, p0, Lw0/d$a;->a:[Lx/d$a;
 
     aget-object v2, v2, v1
 
@@ -97,22 +96,22 @@
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
-    iget-char v5, v3, Lx/c$a;->a:C
+    iget-char v5, v3, Lx/d$a;->a:C
 
-    iput-char v5, v2, Lx/c$a;->a:C
+    iput-char v5, v2, Lx/d$a;->a:C
 
     const/4 v5, 0x0
 
     .line 8
     :goto_1
-    iget-object v6, v3, Lx/c$a;->b:[F
+    iget-object v6, v3, Lx/d$a;->b:[F
 
     array-length v7, v6
 
     if-ge v5, v7, :cond_1
 
     .line 9
-    iget-object v7, v2, Lx/c$a;->b:[F
+    iget-object v7, v2, Lx/d$a;->b:[F
 
     aget v6, v6, v5
 
@@ -122,7 +121,7 @@
 
     mul-float v8, v8, v6
 
-    iget-object v6, v4, Lx/c$a;->b:[F
+    iget-object v6, v4, Lx/d$a;->b:[F
 
     aget v6, v6, v5
 
@@ -143,7 +142,7 @@
 
     .line 10
     :cond_2
-    iget-object p1, p0, Lw0/d$a;->a:[Lx/c$a;
+    iget-object p1, p0, Lw0/d$a;->a:[Lx/d$a;
 
     return-object p1
 

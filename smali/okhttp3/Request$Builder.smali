@@ -143,7 +143,6 @@
 .method public addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Request$Builder;->headers:Lokhttp3/Headers$Builder;
 
     invoke-virtual {v0, p1, p2}, Lokhttp3/Headers$Builder;->add(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
@@ -246,7 +245,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-virtual {p0, v0, v1}, Lokhttp3/Request$Builder;->method(Ljava/lang/String;Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
 
     move-result-object v0
@@ -261,7 +259,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-virtual {p0, v0, v1}, Lokhttp3/Request$Builder;->method(Ljava/lang/String;Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
 
     move-result-object v0
@@ -272,7 +269,6 @@
 .method public header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Request$Builder;->headers:Lokhttp3/Headers$Builder;
 
     invoke-virtual {v0, p1, p2}, Lokhttp3/Headers$Builder;->set(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Headers$Builder;
@@ -283,7 +279,6 @@
 .method public headers(Lokhttp3/Headers;)Lokhttp3/Request$Builder;
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lokhttp3/Headers;->newBuilder()Lokhttp3/Headers$Builder;
 
     move-result-object p1
@@ -328,10 +323,12 @@
 
     const-string v1, " must not have a request body."
 
-    invoke-static {v0, p1, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 4
+    invoke-static {v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 5
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
@@ -340,7 +337,7 @@
     :goto_0
     if-nez p2, :cond_3
 
-    .line 4
+    .line 6
     invoke-static {p1}, Lokhttp3/internal/http/HttpMethod;->requiresRequestBody(Ljava/lang/String;)Z
 
     move-result v1
@@ -349,31 +346,33 @@
 
     goto :goto_1
 
-    .line 5
+    .line 7
     :cond_2
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     const-string v1, " must have a request body."
 
-    invoke-static {v0, p1, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 8
+    invoke-static {v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 9
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
 
-    .line 6
+    .line 10
     :cond_3
     :goto_1
     iput-object p1, p0, Lokhttp3/Request$Builder;->method:Ljava/lang/String;
 
-    .line 7
+    .line 11
     iput-object p2, p0, Lokhttp3/Request$Builder;->body:Lokhttp3/RequestBody;
 
     return-object p0
 
-    .line 8
+    .line 12
     :cond_4
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -383,7 +382,7 @@
 
     throw p1
 
-    .line 9
+    .line 13
     :cond_5
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -399,7 +398,6 @@
 
     const-string v0, "PATCH"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lokhttp3/Request$Builder;->method(Ljava/lang/String;Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
 
     move-result-object p1
@@ -412,7 +410,6 @@
 
     const-string v0, "POST"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lokhttp3/Request$Builder;->method(Ljava/lang/String;Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
 
     move-result-object p1
@@ -425,7 +422,6 @@
 
     const-string v0, "PUT"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lokhttp3/Request$Builder;->method(Ljava/lang/String;Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
 
     move-result-object p1
@@ -436,7 +432,6 @@
 .method public removeHeader(Ljava/lang/String;)Lokhttp3/Request$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Request$Builder;->headers:Lokhttp3/Headers$Builder;
 
     invoke-virtual {v0, p1}, Lokhttp3/Headers$Builder;->removeAll(Ljava/lang/String;)Lokhttp3/Headers$Builder;
@@ -562,6 +557,7 @@
 
     const/4 v1, 0x3
 
+    .line 5
     invoke-virtual {p1, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
@@ -587,7 +583,7 @@
 
     move-object v0, p1
 
-    .line 5
+    .line 6
     invoke-virtual/range {v0 .. v5}, Ljava/lang/String;->regionMatches(ZILjava/lang/String;II)Z
 
     move-result v0
@@ -596,13 +592,14 @@
 
     const-string v0, "https:"
 
-    .line 6
+    .line 7
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
     const/4 v1, 0x4
 
+    .line 8
     invoke-virtual {p1, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
@@ -613,7 +610,7 @@
 
     move-result-object p1
 
-    .line 7
+    .line 9
     :cond_1
     :goto_0
     invoke-static {p1}, Lokhttp3/HttpUrl;->get(Ljava/lang/String;)Lokhttp3/HttpUrl;
@@ -626,7 +623,7 @@
 
     return-object p1
 
-    .line 8
+    .line 10
     :cond_2
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -642,7 +639,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 9
+    .line 17
     invoke-virtual {p1}, Ljava/net/URL;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -657,7 +654,7 @@
 
     return-object p1
 
-    .line 10
+    .line 18
     :cond_0
     new-instance p1, Ljava/lang/NullPointerException;
 

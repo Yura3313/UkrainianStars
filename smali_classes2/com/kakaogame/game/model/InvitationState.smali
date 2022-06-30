@@ -114,7 +114,6 @@
 .method public getCreatedAt()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationState;->createdAt:Ljava/lang/String;
 
     return-object v0
@@ -123,7 +122,6 @@
 .method public getNickname()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationState;->nickname:Ljava/lang/String;
 
     return-object v0
@@ -132,7 +130,6 @@
 .method public getProfileImageUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationState;->profileImageUrl:Ljava/lang/String;
 
     return-object v0
@@ -141,7 +138,6 @@
 .method public getReceiverReward()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationState;->receiverReward:Ljava/lang/String;
 
     return-object v0
@@ -150,7 +146,6 @@
 .method public getReceiverRewardState()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationState;->receiverRewardState:Ljava/lang/String;
 
     return-object v0
@@ -159,7 +154,6 @@
 .method public getSenderReward()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationState;->senderReward:Ljava/lang/String;
 
     return-object v0
@@ -168,7 +162,6 @@
 .method public getSenderRewardState()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationState;->senderRewardState:Ljava/lang/String;
 
     return-object v0
@@ -177,7 +170,6 @@
 .method public getUserId()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationState;->userId:Ljava/lang/Long;
 
     return-object v0

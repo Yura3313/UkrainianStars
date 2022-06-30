@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/appbar/f;
+.class public final Lcom/google/android/material/appbar/f;
 .super Ljava/lang/Object;
 .source "ViewOffsetHelper.java"
 
@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 4
 
     .line 1
@@ -48,7 +48,7 @@
 
     sub-int/2addr v1, v2
 
-    invoke-static {v0, v1}, Lf0/r;->t(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lf0/r;->w(Landroid/view/View;I)V
 
     .line 2
     iget-object v0, p0, Lcom/google/android/material/appbar/f;->a:Landroid/view/View;
@@ -65,12 +65,12 @@
 
     sub-int/2addr v1, v2
 
-    invoke-static {v0, v1}, Lf0/r;->s(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lf0/r;->v(Landroid/view/View;I)V
 
     return-void
 .end method
 
-.method public b(I)Z
+.method public final b(I)Z
     .locals 1
 
     .line 1

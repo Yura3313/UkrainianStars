@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final g:Landroidx/appcompat/widget/k;
+.field public final f:Landroidx/appcompat/widget/j;
 
 
 # direct methods
@@ -26,38 +26,38 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/SeekBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/SeekBar;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Landroidx/appcompat/widget/d0;->a(Landroid/view/View;Landroid/content/Context;)V
+    invoke-static {p0, p1}, Landroidx/appcompat/widget/c0;->a(Landroid/view/View;Landroid/content/Context;)V
 
     .line 4
-    new-instance p1, Landroidx/appcompat/widget/k;
+    new-instance p1, Landroidx/appcompat/widget/j;
 
-    invoke-direct {p1, p0}, Landroidx/appcompat/widget/k;-><init>(Landroid/widget/SeekBar;)V
+    invoke-direct {p1, p0}, Landroidx/appcompat/widget/j;-><init>(Landroid/widget/SeekBar;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->g:Landroidx/appcompat/widget/k;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->f:Landroidx/appcompat/widget/j;
 
     .line 5
-    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/k;->a(Landroid/util/AttributeSet;I)V
+    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/j;->a(Landroid/util/AttributeSet;I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 3
 
     .line 1
-    invoke-super {p0}, Landroid/widget/SeekBar;->drawableStateChanged()V
+    invoke-super {p0}, Landroid/widget/AbsSeekBar;->drawableStateChanged()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->g:Landroidx/appcompat/widget/k;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->f:Landroidx/appcompat/widget/j;
 
     .line 3
-    iget-object v1, v0, Landroidx/appcompat/widget/k;->e:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v0, Landroidx/appcompat/widget/j;->e:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_0
 
@@ -68,10 +68,10 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, v0, Landroidx/appcompat/widget/k;->d:Landroid/widget/SeekBar;
+    iget-object v2, v0, Landroidx/appcompat/widget/j;->d:Landroid/widget/SeekBar;
 
     .line 5
-    invoke-virtual {v2}, Landroid/widget/SeekBar;->getDrawableState()[I
+    invoke-virtual {v2}, Landroid/view/View;->getDrawableState()[I
 
     move-result-object v2
 
@@ -82,25 +82,25 @@
     if-eqz v2, :cond_0
 
     .line 6
-    iget-object v0, v0, Landroidx/appcompat/widget/k;->d:Landroid/widget/SeekBar;
+    iget-object v0, v0, Landroidx/appcompat/widget/j;->d:Landroid/widget/SeekBar;
 
-    invoke-virtual {v0, v1}, Landroid/widget/SeekBar;->invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
 
     :cond_0
     return-void
 .end method
 
-.method public jumpDrawablesToCurrentState()V
+.method public final jumpDrawablesToCurrentState()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/widget/SeekBar;->jumpDrawablesToCurrentState()V
+    invoke-super {p0}, Landroid/widget/AbsSeekBar;->jumpDrawablesToCurrentState()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->g:Landroidx/appcompat/widget/k;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->f:Landroidx/appcompat/widget/j;
 
     .line 3
-    iget-object v0, v0, Landroidx/appcompat/widget/k;->e:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Landroidx/appcompat/widget/j;->e:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -111,19 +111,19 @@
     return-void
 .end method
 
-.method public declared-synchronized onDraw(Landroid/graphics/Canvas;)V
+.method public final declared-synchronized onDraw(Landroid/graphics/Canvas;)V
     .locals 1
 
     monitor-enter p0
 
     .line 1
     :try_start_0
-    invoke-super {p0, p1}, Landroid/widget/SeekBar;->onDraw(Landroid/graphics/Canvas;)V
+    invoke-super {p0, p1}, Landroid/widget/AbsSeekBar;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->g:Landroidx/appcompat/widget/k;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSeekBar;->f:Landroidx/appcompat/widget/j;
 
-    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/k;->d(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/j;->d(Landroid/graphics/Canvas;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

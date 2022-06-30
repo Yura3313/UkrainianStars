@@ -22,7 +22,6 @@
 
     const-string v0, "UTF-8"
 
-    .line 1
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     move-result-object v0
@@ -609,7 +608,7 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_3
 
-    invoke-virtual {v1}, Ljava/io/BufferedOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
 
     return-void
 
@@ -632,7 +631,7 @@
     move-exception p1
 
     :try_start_7
-    invoke-virtual {v1}, Ljava/io/BufferedOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_4
 

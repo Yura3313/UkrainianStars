@@ -92,7 +92,6 @@
 
     const-string p1, "callEnd"
 
-    .line 1
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void
@@ -101,7 +100,6 @@
 .method public callFailed(Lokhttp3/Call;Ljava/io/IOException;)V
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -138,6 +136,7 @@
 
     move-result-object v0
 
+    .line 3
     invoke-interface {p1}, Lokhttp3/Call;->request()Lokhttp3/Request;
 
     move-result-object p1
@@ -160,7 +159,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -187,7 +185,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -216,7 +213,6 @@
 .method public connectStart(Lokhttp3/Call;Ljava/net/InetSocketAddress;Ljava/net/Proxy;)V
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -245,7 +241,6 @@
 .method public connectionAcquired(Lokhttp3/Call;Lokhttp3/Connection;)V
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -270,7 +265,6 @@
 
     const-string p1, "connectionReleased"
 
-    .line 1
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void
@@ -289,7 +283,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -315,10 +308,11 @@
     const-string p1, "dnsStart: "
 
     .line 1
-    invoke-static {p1, p2}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 2
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void
@@ -334,6 +328,7 @@
 
     move-result-object p1
 
+    .line 2
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void
@@ -344,7 +339,6 @@
 
     const-string p1, "requestBodyStart"
 
-    .line 1
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void
@@ -355,7 +349,6 @@
 
     const-string p1, "requestHeadersEnd"
 
-    .line 1
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void
@@ -366,7 +359,6 @@
 
     const-string p1, "requestHeadersStart"
 
-    .line 1
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void
@@ -382,6 +374,7 @@
 
     move-result-object p1
 
+    .line 2
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void
@@ -392,7 +385,6 @@
 
     const-string p1, "responseBodyStart"
 
-    .line 1
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void
@@ -401,7 +393,6 @@
 .method public responseHeadersEnd(Lokhttp3/Call;Lokhttp3/Response;)V
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -426,7 +417,6 @@
 
     const-string p1, "responseHeadersStart"
 
-    .line 1
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void
@@ -441,7 +431,6 @@
 
     const-string p1, "secureConnectEnd"
 
-    .line 1
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void
@@ -452,7 +441,6 @@
 
     const-string p1, "secureConnectStart"
 
-    .line 1
     invoke-direct {p0, p1}, Lokhttp3/logging/LoggingEventListener;->logWithTime(Ljava/lang/String;)V
 
     return-void

@@ -37,7 +37,9 @@
 .method public final handleMessage(Landroid/os/Message;)Z
     .locals 3
 
-    if-eqz p1, :cond_0
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object p1, Lcom/kakao/sdk/common/util/SdkLog;->Companion:Lcom/kakao/sdk/common/util/SdkLog$Companion;
@@ -62,14 +64,4 @@
     const/4 p1, 0x1
 
     return p1
-
-    :cond_0
-    const-string p1, "it"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

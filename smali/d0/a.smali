@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static final d:Ld0/c;
+.field public static final d:Ld0/d$d;
 
 .field public static final e:Ljava/lang/String;
 
@@ -36,9 +36,9 @@
     .locals 4
 
     .line 1
-    sget-object v0, Ld0/d;->c:Ld0/c;
+    sget-object v0, Ld0/d;->c:Ld0/d$d;
 
-    sput-object v0, Ld0/a;->d:Ld0/c;
+    sput-object v0, Ld0/a;->d:Ld0/d$d;
 
     const/16 v1, 0x200e
 
@@ -105,14 +105,14 @@
     .line 1
     new-instance v0, Ld0/a$a;
 
-    const/4 v1, 0x0
+    invoke-direct {v0, p0}, Ld0/a$a;-><init>(Ljava/lang/CharSequence;)V
 
-    invoke-direct {v0, p0, v1}, Ld0/a$a;-><init>(Ljava/lang/CharSequence;Z)V
+    const/4 p0, 0x0
 
     .line 2
-    iput v1, v0, Ld0/a$a;->c:I
+    iput p0, v0, Ld0/a$a;->c:I
 
-    const/4 p0, -0x1
+    const/4 v1, -0x1
 
     const/4 v2, 0x1
 
@@ -265,7 +265,7 @@
     :cond_7
     if-eqz v4, :cond_8
 
-    move v1, v4
+    move p0, v4
 
     goto :goto_6
 
@@ -294,7 +294,7 @@
     if-ne v3, v5, :cond_9
 
     :goto_4
-    const/4 v1, 0x1
+    const/4 p0, 0x1
 
     goto :goto_6
 
@@ -302,7 +302,7 @@
     if-ne v3, v5, :cond_9
 
     :goto_5
-    const/4 v1, -0x1
+    const/4 p0, -0x1
 
     goto :goto_6
 
@@ -313,7 +313,7 @@
 
     :cond_a
     :goto_6
-    return v1
+    return p0
 
     :pswitch_data_0
     .packed-switch 0xe
@@ -340,9 +340,7 @@
     .line 1
     new-instance v0, Ld0/a$a;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Ld0/a$a;-><init>(Ljava/lang/CharSequence;Z)V
+    invoke-direct {v0, p0}, Ld0/a$a;-><init>(Ljava/lang/CharSequence;)V
 
     .line 2
     iget p0, v0, Ld0/a$a;->b:I
@@ -350,6 +348,8 @@
     iput p0, v0, Ld0/a$a;->c:I
 
     const/4 p0, 0x0
+
+    const/4 v1, 0x0
 
     const/4 v2, 0x0
 
@@ -386,30 +386,30 @@
     goto :goto_3
 
     :pswitch_0
-    add-int/lit8 p0, p0, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
     :pswitch_1
-    if-ne v2, p0, :cond_1
+    if-ne v2, v1, :cond_1
 
     goto :goto_1
 
     :pswitch_2
-    if-ne v2, p0, :cond_1
+    if-ne v2, v1, :cond_1
 
     goto :goto_2
 
     :cond_1
-    add-int/lit8 p0, p0, -0x1
+    add-int/lit8 v1, v1, -0x1
 
     goto :goto_0
 
     :cond_2
-    if-nez p0, :cond_3
+    if-nez v1, :cond_3
 
     :goto_1
-    const/4 v1, 0x1
+    const/4 p0, 0x1
 
     goto :goto_4
 
@@ -419,10 +419,10 @@
     goto :goto_3
 
     :cond_4
-    if-nez p0, :cond_5
+    if-nez v1, :cond_5
 
     :goto_2
-    const/4 v1, -0x1
+    const/4 p0, -0x1
 
     goto :goto_4
 
@@ -430,13 +430,13 @@
     if-nez v2, :cond_0
 
     :goto_3
-    move v2, p0
+    move v2, v1
 
     goto :goto_0
 
     :cond_6
     :goto_4
-    return v1
+    return p0
 
     :pswitch_data_0
     .packed-switch 0xe
@@ -449,7 +449,7 @@
 .end method
 
 .method public static c()Ld0/a;
-    .locals 4
+    .locals 2
 
     .line 1
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -473,18 +473,10 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 4
     :goto_0
-    sget-object v0, Ld0/a;->d:Ld0/c;
-
-    .line 5
-    sget-object v2, Ld0/a;->d:Ld0/c;
-
-    if-ne v0, v2, :cond_2
-
     if-eqz v1, :cond_1
 
-    .line 6
+    .line 4
     sget-object v0, Ld0/a;->h:Ld0/a;
 
     goto :goto_1
@@ -492,26 +484,14 @@
     :cond_1
     sget-object v0, Ld0/a;->g:Ld0/a;
 
-    goto :goto_1
-
-    .line 7
-    :cond_2
-    new-instance v2, Ld0/a;
-
-    const/4 v3, 0x2
-
-    invoke-direct {v2, v1, v3, v0}, Ld0/a;-><init>(ZILd0/c;)V
-
-    move-object v0, v2
-
     :goto_1
     return-object v0
 .end method
 
 
 # virtual methods
-.method public d(Ljava/lang/CharSequence;Ld0/c;Z)Ljava/lang/CharSequence;
-    .locals 7
+.method public final d(Ljava/lang/CharSequence;Ld0/c;)Ljava/lang/CharSequence;
+    .locals 6
 
     if-nez p1, :cond_0
 
@@ -527,9 +507,7 @@
 
     check-cast p2, Ld0/d$c;
 
-    const/4 v1, 0x0
-
-    invoke-virtual {p2, p1, v1, v0}, Ld0/d$c;->b(Ljava/lang/CharSequence;II)Z
+    invoke-virtual {p2, p1, v0}, Ld0/d$c;->b(Ljava/lang/CharSequence;I)Z
 
     move-result p2
 
@@ -539,124 +517,120 @@
     invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
 
     .line 3
-    iget v2, p0, Ld0/a;->b:I
+    iget v1, p0, Ld0/a;->b:I
 
-    and-int/lit8 v2, v2, 0x2
-
-    const/4 v3, 0x1
-
-    if-eqz v2, :cond_1
+    and-int/lit8 v1, v1, 0x2
 
     const/4 v2, 0x1
+
+    if-eqz v1, :cond_1
+
+    const/4 v1, 0x1
 
     goto :goto_0
 
     :cond_1
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     :goto_0
-    const/4 v4, -0x1
+    const/4 v3, -0x1
 
-    const-string v5, ""
+    const-string v4, ""
 
-    if-eqz v2, :cond_7
-
-    if-eqz p3, :cond_7
+    if-eqz v1, :cond_7
 
     if-eqz p2, :cond_2
 
     .line 4
-    sget-object v2, Ld0/d;->b:Ld0/c;
+    sget-object v1, Ld0/d;->b:Ld0/d$d;
 
     goto :goto_1
 
     :cond_2
-    sget-object v2, Ld0/d;->a:Ld0/c;
+    sget-object v1, Ld0/d;->a:Ld0/d$d;
 
     .line 5
     :goto_1
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
-    move-result v6
+    move-result v5
 
-    check-cast v2, Ld0/d$c;
+    invoke-virtual {v1, p1, v5}, Ld0/d$c;->b(Ljava/lang/CharSequence;I)Z
 
-    invoke-virtual {v2, p1, v1, v6}, Ld0/d$c;->b(Ljava/lang/CharSequence;II)Z
-
-    move-result v2
+    move-result v1
 
     .line 6
-    iget-boolean v6, p0, Ld0/a;->a:Z
+    iget-boolean v5, p0, Ld0/a;->a:Z
 
-    if-nez v6, :cond_4
+    if-nez v5, :cond_4
 
-    if-nez v2, :cond_3
+    if-nez v1, :cond_3
 
     invoke-static {p1}, Ld0/a;->a(Ljava/lang/CharSequence;)I
 
-    move-result v6
+    move-result v5
 
-    if-ne v6, v3, :cond_4
+    if-ne v5, v2, :cond_4
 
     .line 7
     :cond_3
-    sget-object v2, Ld0/a;->e:Ljava/lang/String;
+    sget-object v1, Ld0/a;->e:Ljava/lang/String;
 
     goto :goto_2
 
     .line 8
     :cond_4
-    iget-boolean v6, p0, Ld0/a;->a:Z
+    iget-boolean v5, p0, Ld0/a;->a:Z
 
-    if-eqz v6, :cond_6
+    if-eqz v5, :cond_6
 
-    if-eqz v2, :cond_5
+    if-eqz v1, :cond_5
 
     invoke-static {p1}, Ld0/a;->a(Ljava/lang/CharSequence;)I
 
-    move-result v2
+    move-result v1
 
-    if-ne v2, v4, :cond_6
+    if-ne v1, v3, :cond_6
 
     .line 9
     :cond_5
-    sget-object v2, Ld0/a;->f:Ljava/lang/String;
+    sget-object v1, Ld0/a;->f:Ljava/lang/String;
 
     goto :goto_2
 
     :cond_6
-    move-object v2, v5
+    move-object v1, v4
 
     .line 10
     :goto_2
-    invoke-virtual {v0, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+    invoke-virtual {v0, v1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     .line 11
     :cond_7
-    iget-boolean v2, p0, Ld0/a;->a:Z
+    iget-boolean v1, p0, Ld0/a;->a:Z
 
-    if-eq p2, v2, :cond_9
+    if-eq p2, v1, :cond_9
 
     if-eqz p2, :cond_8
 
-    const/16 v2, 0x202b
+    const/16 v1, 0x202b
 
     goto :goto_3
 
     :cond_8
-    const/16 v2, 0x202a
+    const/16 v1, 0x202a
 
     .line 12
     :goto_3
-    invoke-virtual {v0, v2}, Landroid/text/SpannableStringBuilder;->append(C)Landroid/text/SpannableStringBuilder;
+    invoke-virtual {v0, v1}, Landroid/text/SpannableStringBuilder;->append(C)Landroid/text/SpannableStringBuilder;
 
     .line 13
     invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    const/16 v2, 0x202c
+    const/16 v1, 0x202c
 
     .line 14
-    invoke-virtual {v0, v2}, Landroid/text/SpannableStringBuilder;->append(C)Landroid/text/SpannableStringBuilder;
+    invoke-virtual {v0, v1}, Landroid/text/SpannableStringBuilder;->append(C)Landroid/text/SpannableStringBuilder;
 
     goto :goto_4
 
@@ -665,54 +639,50 @@
     invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     :goto_4
-    if-eqz p3, :cond_f
-
     if-eqz p2, :cond_a
 
     .line 16
-    sget-object p2, Ld0/d;->b:Ld0/c;
+    sget-object p2, Ld0/d;->b:Ld0/d$d;
 
     goto :goto_5
 
     :cond_a
-    sget-object p2, Ld0/d;->a:Ld0/c;
+    sget-object p2, Ld0/d;->a:Ld0/d$d;
 
     .line 17
     :goto_5
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
-    move-result p3
+    move-result v1
 
-    check-cast p2, Ld0/d$c;
-
-    invoke-virtual {p2, p1, v1, p3}, Ld0/d$c;->b(Ljava/lang/CharSequence;II)Z
+    invoke-virtual {p2, p1, v1}, Ld0/d$c;->b(Ljava/lang/CharSequence;I)Z
 
     move-result p2
 
     .line 18
-    iget-boolean p3, p0, Ld0/a;->a:Z
+    iget-boolean v1, p0, Ld0/a;->a:Z
 
-    if-nez p3, :cond_c
+    if-nez v1, :cond_c
 
     if-nez p2, :cond_b
 
     invoke-static {p1}, Ld0/a;->b(Ljava/lang/CharSequence;)I
 
-    move-result p3
+    move-result v1
 
-    if-ne p3, v3, :cond_c
+    if-ne v1, v2, :cond_c
 
     .line 19
     :cond_b
-    sget-object v5, Ld0/a;->e:Ljava/lang/String;
+    sget-object v4, Ld0/a;->e:Ljava/lang/String;
 
     goto :goto_6
 
     .line 20
     :cond_c
-    iget-boolean p3, p0, Ld0/a;->a:Z
+    iget-boolean v1, p0, Ld0/a;->a:Z
 
-    if-eqz p3, :cond_e
+    if-eqz v1, :cond_e
 
     if-eqz p2, :cond_d
 
@@ -720,17 +690,42 @@
 
     move-result p1
 
-    if-ne p1, v4, :cond_e
+    if-ne p1, v3, :cond_e
 
     .line 21
     :cond_d
-    sget-object v5, Ld0/a;->f:Ljava/lang/String;
+    sget-object v4, Ld0/a;->f:Ljava/lang/String;
 
     .line 22
     :cond_e
     :goto_6
-    invoke-virtual {v0, v5}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+    invoke-virtual {v0, v4}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    :cond_f
     return-object v0
+.end method
+
+.method public final e(Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ld0/a;->c:Ld0/c;
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    invoke-virtual {p0, p1, v0}, Ld0/a;->d(Ljava/lang/CharSequence;Ld0/c;)Ljava/lang/CharSequence;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    :goto_0
+    return-object p1
 .end method

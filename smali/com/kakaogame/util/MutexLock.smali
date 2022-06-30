@@ -40,7 +40,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
@@ -73,6 +72,7 @@
 
     move-result-object v1
 
+    .line 5
     sget-object v2, Lcom/kakaogame/util/MutexLock;->LOCK_ID:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
@@ -87,7 +87,7 @@
 
     iput-object v1, p0, Lcom/kakaogame/util/MutexLock;->TAG:Ljava/lang/String;
 
-    .line 5
+    .line 6
     new-instance v1, Ljava/util/concurrent/CountDownLatch;
 
     invoke-direct {v1, v0}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
@@ -109,7 +109,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/kakaogame/util/MutexLock;
 
     invoke-direct {v0}, Lcom/kakaogame/util/MutexLock;-><init>()V
@@ -127,7 +126,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/util/MutexLock;->content:Ljava/lang/Object;
 
     return-object v0
@@ -136,7 +134,6 @@
 .method public isLock()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/util/MutexLock;->lockFlag:Z
 
     return v0
@@ -145,7 +142,6 @@
 .method public isTimeout()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/util/MutexLock;->timeover:Z
 
     return v0
@@ -237,7 +233,7 @@
     .line 6
     iget-object v2, p0, Lcom/kakaogame/util/MutexLock;->TAG:Ljava/lang/String;
 
-    invoke-virtual {v0}, Ljava/lang/InterruptedException;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -320,10 +316,12 @@
 
     const-string v1, "setContent already called : "
 
+    .line 5
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 6
     iget-object v2, p0, Lcom/kakaogame/util/MutexLock;->content:Ljava/lang/Object;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

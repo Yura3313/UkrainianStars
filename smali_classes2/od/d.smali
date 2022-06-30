@@ -1,139 +1,74 @@
 .class public final Lod/d;
-.super Lle/j;
-.source "RegisterEnterEmailPageFragment.kt"
+.super Lse/h;
+.source "OnboardingInviteFriendsPageFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lod/f;",
-        "Ljava/lang/Boolean;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/l<",
+        "Landroid/widget/TextView;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic f:Lod/c$b$c;
 
-.field public final synthetic h:Z
+.field public final synthetic g:Landroid/graphics/drawable/BitmapDrawable;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Z)V
+.method public constructor <init>(Lod/c$b$c;Landroid/graphics/drawable/BitmapDrawable;)V
     .locals 0
 
-    iput-object p1, p0, Lod/d;->g:Ljava/lang/String;
+    iput-object p1, p0, Lod/d;->f:Lod/c$b$c;
 
-    iput-boolean p2, p0, Lod/d;->h:Z
+    iput-object p2, p0, Lod/d;->g:Landroid/graphics/drawable/BitmapDrawable;
 
-    const/4 p1, 0x2
+    const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    check-cast p1, Lod/f;
-
-    check-cast p2, Ljava/lang/Boolean;
-
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    if-eqz p1, :cond_3
+    check-cast p1, Landroid/widget/TextView;
 
     .line 2
-    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    iget-object p1, p0, Lod/d;->f:Lod/c$b$c;
 
-    iget-object v0, p0, Lod/d;->g:Ljava/lang/String;
+    iget-object p1, p1, Lod/c$b$c;->h:Landroid/view/View;
 
-    iget-boolean v1, p0, Lod/d;->h:Z
+    sget v0, Lcom/supercell/id/R$id;->friend_playing_name_label:I
 
-    invoke-virtual {p2, v0, v1}, Lcom/supercell/id/SupercellId;->setPendingRegistrationWithEmail$supercellId_release(Ljava/lang/String;Z)V
-
-    .line 3
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object p2
-
-    .line 4
-    iget-object v0, p2, Lvd/r;->m:Lcom/supercell/titan/h;
-
-    .line 5
-    iget-boolean p2, p0, Lod/d;->h:Z
-
-    if-eqz p2, :cond_0
-
-    const-string p2, "true"
-
-    goto :goto_0
-
-    :cond_0
-    const-string p2, "false"
-
-    :goto_0
-    move-object v3, p2
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/16 v6, 0x18
-
-    const-string v1, "Accept marketing"
-
-    const-string v2, "Selection"
-
-    invoke-static/range {v0 .. v6}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
-
-    .line 6
-    iget-object p2, p0, Lod/d;->g:Ljava/lang/String;
-
-    .line 7
-    invoke-virtual {p1}, Lod/r;->f1()Lcom/supercell/id/ui/register/RegisterFlowFragment;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    .line 8
-    iput-object p2, v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->l0:Ljava/lang/String;
-
-    .line 9
-    :cond_1
-    invoke-virtual {p1}, Lod/r;->f1()Lcom/supercell/id/ui/register/RegisterFlowFragment;
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
-    if-eqz p1, :cond_2
+    check-cast p1, Landroid/widget/TextView;
 
-    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->s1()V
+    iget-object v0, p0, Lod/d;->g:Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 10
-    :cond_2
-    sget-object p1, Lae/i;->a:Lae/i;
+    const/4 v1, 0x0
+
+    .line 3
+    invoke-virtual {p1, v0, v1, v1, v1}, Landroid/widget/TextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+
+    .line 4
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
-
-    :cond_3
-    const-string p1, "$receiver"
-
-    .line 11
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

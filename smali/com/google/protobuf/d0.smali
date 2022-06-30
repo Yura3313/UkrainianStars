@@ -13,8 +13,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
-    .line 1
-    invoke-static {}, Lcom/google/protobuf/q;->a()Lcom/google/protobuf/q;
+    invoke-static {}, Lcom/google/protobuf/q;->b()Lcom/google/protobuf/q;
 
     return-void
 .end method
@@ -22,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +28,7 @@
 
 
 # virtual methods
-.method public a(Lcom/google/protobuf/q0;)Lcom/google/protobuf/q0;
+.method public final a(Lcom/google/protobuf/q0;)Lcom/google/protobuf/q0;
     .locals 1
 
     .line 1
@@ -63,7 +61,7 @@
     iput-object p1, p0, Lcom/google/protobuf/d0;->a:Lcom/google/protobuf/q0;
 
     .line 6
-    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
+    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
 
     iput-object v0, p0, Lcom/google/protobuf/d0;->b:Lcom/google/protobuf/i;
     :try_end_1
@@ -78,7 +76,7 @@
     iput-object p1, p0, Lcom/google/protobuf/d0;->a:Lcom/google/protobuf/q0;
 
     .line 8
-    sget-object p1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
+    sget-object p1, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
 
     iput-object p1, p0, Lcom/google/protobuf/d0;->b:Lcom/google/protobuf/i;
 
@@ -106,7 +104,7 @@
     throw p1
 .end method
 
-.method public b()Lcom/google/protobuf/i;
+.method public final b()Lcom/google/protobuf/i;
     .locals 1
 
     .line 1
@@ -143,7 +141,7 @@
     if-nez v0, :cond_2
 
     .line 7
-    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
+    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
 
     iput-object v0, p0, Lcom/google/protobuf/d0;->b:Lcom/google/protobuf/i;
 

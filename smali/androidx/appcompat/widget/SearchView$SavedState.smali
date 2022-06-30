@@ -27,14 +27,13 @@
 
 
 # instance fields
-.field public i:Z
+.field public h:Z
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/appcompat/widget/SearchView$SavedState$a;
 
     invoke-direct {v0}, Landroidx/appcompat/widget/SearchView$SavedState$a;-><init>()V
@@ -63,7 +62,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Landroidx/appcompat/widget/SearchView$SavedState;->i:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/SearchView$SavedState;->h:Z
 
     return-void
 .end method
@@ -79,7 +78,7 @@
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
     const-string v0, "SearchView.SavedState{"
@@ -104,27 +103,28 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Landroidx/appcompat/widget/SearchView$SavedState;->i:Z
+    iget-boolean v1, p0, Landroidx/appcompat/widget/SearchView$SavedState;->h:Z
 
     const-string v2, "}"
 
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget-boolean p2, p0, Landroidx/appcompat/widget/SearchView$SavedState;->i:Z
+    iget-boolean p2, p0, Landroidx/appcompat/widget/SearchView$SavedState;->h:Z
 
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

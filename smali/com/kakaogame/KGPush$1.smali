@@ -37,7 +37,6 @@
 .method public constructor <init>(Ljava/lang/String;ZLcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGPush$1;->val$pushOption:Ljava/lang/String;
 
     iput-boolean p2, p0, Lcom/kakaogame/KGPush$1;->val$enable:Z

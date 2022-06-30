@@ -28,13 +28,13 @@
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 9
+    .locals 8
 
-    const/4 v0, 0x0
+    const-string v0, "in"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v8, Lcom/kakao/sdk/template/model/LocationTemplate;
+    new-instance v0, Lcom/kakao/sdk/template/model/LocationTemplate;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -58,6 +58,8 @@
 
     move-result v1
 
+    const/4 v5, 0x0
+
     if-eqz v1, :cond_0
 
     sget-object v1, Lcom/kakao/sdk/template/model/Social;->CREATOR:Landroid/os/Parcelable$Creator;
@@ -68,77 +70,63 @@
 
     check-cast v1, Lcom/kakao/sdk/template/model/Social;
 
-    move-object v5, v1
+    move-object v6, v1
 
     goto :goto_0
 
     :cond_0
-    move-object v5, v0
+    move-object v6, v5
 
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_1
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v0
+    move-result v1
 
-    new-instance v1, Ljava/util/ArrayList;
+    new-instance v5, Ljava/util/ArrayList;
 
-    invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v5, v1}, Ljava/util/ArrayList;-><init>(I)V
 
     :goto_1
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
-    sget-object v6, Lcom/kakao/sdk/template/model/Button;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object v7, Lcom/kakao/sdk/template/model/Button;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-interface {v6, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    invoke-interface {v7, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v7
 
-    check-cast v6, Lcom/kakao/sdk/template/model/Button;
+    check-cast v7, Lcom/kakao/sdk/template/model/Button;
 
-    invoke-virtual {v1, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    add-int/lit8 v0, v0, -0x1
+    add-int/lit8 v1, v1, -0x1
 
     goto :goto_1
 
     :cond_1
-    move-object v6, v1
+    move-object v7, v5
 
-    goto :goto_2
-
-    :cond_2
-    move-object v6, v0
-
-    :goto_2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object p1
 
-    move-object v1, v8
+    move-object v1, v0
+
+    move-object v5, v6
+
+    move-object v6, v7
+
+    move-object v7, p1
 
     invoke-direct/range {v1 .. v7}, Lcom/kakao/sdk/template/model/LocationTemplate;-><init>(Ljava/lang/String;Lcom/kakao/sdk/template/model/Content;Ljava/lang/String;Lcom/kakao/sdk/template/model/Social;Ljava/util/List;Ljava/lang/String;)V
 
-    return-object v8
-
-    :cond_3
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    goto :goto_4
-
-    :goto_3
-    throw v0
-
-    :goto_4
-    goto :goto_3
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

@@ -1,44 +1,24 @@
 .class public interface abstract Lse/f;
 .super Ljava/lang/Object;
-.source "CancellableContinuation.kt"
+.source "FunctionBase.kt"
 
 # interfaces
-.implements Lde/d;
+.implements Lie/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
+        "<R:",
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lde/d<",
-        "TT;>;"
+        "Lie/a<",
+        "TR;>;"
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract c(Lse/w;Ljava/lang/Object;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lse/w;",
-            "TT;)V"
-        }
-    .end annotation
-.end method
-
-.method public abstract k(Lke/l;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lke/l<",
-            "-",
-            "Ljava/lang/Throwable;",
-            "Lae/i;",
-            ">;)V"
-        }
-    .end annotation
+.method public abstract getArity()I
 .end method

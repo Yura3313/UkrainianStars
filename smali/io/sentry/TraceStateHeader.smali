@@ -24,7 +24,6 @@
 
     const-string v0, "UTF-8"
 
-    .line 1
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     move-result-object v0
@@ -51,7 +50,6 @@
     .annotation build Lorg/jetbrains/annotations/VisibleForTesting;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/String;
 
     const/4 v1, 0x3
@@ -72,7 +70,6 @@
     .annotation build Lorg/jetbrains/annotations/VisibleForTesting;
     .end annotation
 
-    .line 1
     sget-object v0, Lio/sentry/TraceStateHeader;->UTF8_CHARSET:Ljava/nio/charset/Charset;
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
@@ -91,7 +88,6 @@
 .method public static fromTraceState(Lio/sentry/TraceState;Lio/sentry/ISerializer;Lio/sentry/ILogger;)Lio/sentry/TraceStateHeader;
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/TraceStateHeader;
 
     invoke-static {p0, p1, p2}, Lio/sentry/TraceStateHeader;->toJson(Lio/sentry/TraceState;Lio/sentry/ISerializer;Lio/sentry/ILogger;)Ljava/lang/String;
@@ -156,7 +152,6 @@
 .method public getValue()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/TraceStateHeader;->value:Ljava/lang/String;
 
     return-object v0

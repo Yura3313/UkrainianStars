@@ -1,4 +1,4 @@
-.class public Lu/f;
+.class public final Lu/f;
 .super Ljava/lang/Object;
 .source "NotificationCompat.java"
 
@@ -100,7 +100,7 @@
     .line 11
     :cond_2
     :try_start_3
-    invoke-virtual {v3, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v3, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 12
     sput-object v3, Lu/h;->b:Ljava/lang/reflect/Field;

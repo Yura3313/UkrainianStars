@@ -1,6 +1,6 @@
 .class public interface abstract La2/c$a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.source "com.google.android.gms:play-services-base@@17.5.0"
 
 
 # annotations
@@ -15,5 +15,9 @@
 
 
 # virtual methods
-.method public abstract a(Z)V
+.method public abstract a(Lcom/google/android/gms/common/api/Status;)V
+    .param p1    # Lcom/google/android/gms/common/api/Status;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 .end method

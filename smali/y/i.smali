@@ -26,7 +26,7 @@
     iput-object v0, p0, Ly/i;->c:Landroid/content/res/ColorStateList;
 
     .line 3
-    sget-object v0, Ly/g;->m:Landroid/graphics/PorterDuff$Mode;
+    sget-object v0, Ly/g;->l:Landroid/graphics/PorterDuff$Mode;
 
     iput-object v0, p0, Ly/i;->d:Landroid/graphics/PorterDuff$Mode;
 
@@ -58,7 +58,7 @@
 
 
 # virtual methods
-.method public getChangingConfigurations()I
+.method public final getChangingConfigurations()I
     .locals 2
 
     .line 1
@@ -84,7 +84,7 @@
     return v0
 .end method
 
-.method public newDrawable()Landroid/graphics/drawable/Drawable;
+.method public final newDrawable()Landroid/graphics/drawable/Drawable;
     .locals 1
 
     const/4 v0, 0x0
@@ -97,7 +97,7 @@
     return-object v0
 .end method
 
-.method public newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
+.method public final newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
     .locals 2
 
     .line 2

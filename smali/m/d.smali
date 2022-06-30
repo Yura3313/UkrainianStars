@@ -1,4 +1,4 @@
-.class public Lm/d;
+.class public final Lm/d;
 .super Ljava/lang/Object;
 .source "LongSparseArray.java"
 
@@ -19,29 +19,28 @@
 
 
 # static fields
-.field public static final k:Ljava/lang/Object;
+.field public static final j:Ljava/lang/Object;
 
 
 # instance fields
-.field public g:Z
+.field public f:Z
 
-.field public h:[J
+.field public g:[J
 
-.field public i:[Ljava/lang/Object;
+.field public h:[Ljava/lang/Object;
 
-.field public j:I
+.field public i:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lm/d;->k:Ljava/lang/Object;
+    sput-object v0, Lm/d;->j:Ljava/lang/Object;
 
     return-void
 .end method
@@ -55,31 +54,31 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lm/d;->g:Z
+    iput-boolean v0, p0, Lm/d;->f:Z
 
     const/16 v0, 0xa
 
     .line 3
-    invoke-static {v0}, Landroidx/lifecycle/n;->h(I)I
+    invoke-static {v0}, Lcom/android/billingclient/api/z;->g(I)I
 
     move-result v0
 
     .line 4
     new-array v1, v0, [J
 
-    iput-object v1, p0, Lm/d;->h:[J
+    iput-object v1, p0, Lm/d;->g:[J
 
     .line 5
     new-array v0, v0, [Ljava/lang/Object;
 
-    iput-object v0, p0, Lm/d;->i:[Ljava/lang/Object;
+    iput-object v0, p0, Lm/d;->h:[Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(JLjava/lang/Object;)V
+.method public final a(JLjava/lang/Object;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -88,11 +87,11 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lm/d;->j:I
+    iget v0, p0, Lm/d;->i:I
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lm/d;->h:[J
+    iget-object v1, p0, Lm/d;->g:[J
 
     add-int/lit8 v2, v0, -0x1
 
@@ -103,17 +102,17 @@
     if-gtz v1, :cond_0
 
     .line 2
-    invoke-virtual {p0, p1, p2, p3}, Lm/d;->g(JLjava/lang/Object;)V
+    invoke-virtual {p0, p1, p2, p3}, Lm/d;->f(JLjava/lang/Object;)V
 
     return-void
 
     .line 3
     :cond_0
-    iget-boolean v1, p0, Lm/d;->g:Z
+    iget-boolean v1, p0, Lm/d;->f:Z
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lm/d;->h:[J
+    iget-object v1, p0, Lm/d;->g:[J
 
     array-length v1, v1
 
@@ -124,10 +123,10 @@
 
     .line 5
     :cond_1
-    iget v0, p0, Lm/d;->j:I
+    iget v0, p0, Lm/d;->i:I
 
     .line 6
-    iget-object v1, p0, Lm/d;->h:[J
+    iget-object v1, p0, Lm/d;->g:[J
 
     array-length v1, v1
 
@@ -136,7 +135,7 @@
     add-int/lit8 v1, v0, 0x1
 
     .line 7
-    invoke-static {v1}, Landroidx/lifecycle/n;->h(I)I
+    invoke-static {v1}, Lcom/android/billingclient/api/z;->g(I)I
 
     move-result v1
 
@@ -147,7 +146,7 @@
     new-array v1, v1, [Ljava/lang/Object;
 
     .line 10
-    iget-object v3, p0, Lm/d;->h:[J
+    iget-object v3, p0, Lm/d;->g:[J
 
     array-length v4, v3
 
@@ -156,45 +155,45 @@
     invoke-static {v3, v5, v2, v5, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 11
-    iget-object v3, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object v3, p0, Lm/d;->h:[Ljava/lang/Object;
 
     array-length v4, v3
 
     invoke-static {v3, v5, v1, v5, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 12
-    iput-object v2, p0, Lm/d;->h:[J
+    iput-object v2, p0, Lm/d;->g:[J
 
     .line 13
-    iput-object v1, p0, Lm/d;->i:[Ljava/lang/Object;
+    iput-object v1, p0, Lm/d;->h:[Ljava/lang/Object;
 
     .line 14
     :cond_2
-    iget-object v1, p0, Lm/d;->h:[J
+    iget-object v1, p0, Lm/d;->g:[J
 
     aput-wide p1, v1, v0
 
     .line 15
-    iget-object p1, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object p1, p0, Lm/d;->h:[Ljava/lang/Object;
 
     aput-object p3, p1, v0
 
     add-int/lit8 v0, v0, 0x1
 
     .line 16
-    iput v0, p0, Lm/d;->j:I
+    iput v0, p0, Lm/d;->i:I
 
     return-void
 .end method
 
-.method public b()V
+.method public final b()V
     .locals 5
 
     .line 1
-    iget v0, p0, Lm/d;->j:I
+    iget v0, p0, Lm/d;->i:I
 
     .line 2
-    iget-object v1, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object v1, p0, Lm/d;->h:[Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -214,15 +213,15 @@
 
     .line 4
     :cond_0
-    iput v2, p0, Lm/d;->j:I
+    iput v2, p0, Lm/d;->i:I
 
     .line 5
-    iput-boolean v2, p0, Lm/d;->g:Z
+    iput-boolean v2, p0, Lm/d;->f:Z
 
     return-void
 .end method
 
-.method public c()Lm/d;
+.method public final c()Lm/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -241,7 +240,7 @@
     check-cast v0, Lm/d;
 
     .line 2
-    iget-object v1, p0, Lm/d;->h:[J
+    iget-object v1, p0, Lm/d;->g:[J
 
     invoke-virtual {v1}, [J->clone()Ljava/lang/Object;
 
@@ -249,10 +248,10 @@
 
     check-cast v1, [J
 
-    iput-object v1, v0, Lm/d;->h:[J
+    iput-object v1, v0, Lm/d;->g:[J
 
     .line 3
-    iget-object v1, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object v1, p0, Lm/d;->h:[Ljava/lang/Object;
 
     invoke-virtual {v1}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
@@ -260,7 +259,7 @@
 
     check-cast v1, [Ljava/lang/Object;
 
-    iput-object v1, v0, Lm/d;->i:[Ljava/lang/Object;
+    iput-object v1, v0, Lm/d;->h:[Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/CloneNotSupportedException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -277,7 +276,7 @@
     throw v1
 .end method
 
-.method public bridge synthetic clone()Ljava/lang/Object;
+.method public final bridge synthetic clone()Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -285,7 +284,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lm/d;->c()Lm/d;
 
     move-result-object v0
@@ -297,13 +295,13 @@
     .locals 9
 
     .line 1
-    iget v0, p0, Lm/d;->j:I
+    iget v0, p0, Lm/d;->i:I
 
     .line 2
-    iget-object v1, p0, Lm/d;->h:[J
+    iget-object v1, p0, Lm/d;->g:[J
 
     .line 3
-    iget-object v2, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object v2, p0, Lm/d;->h:[Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -318,7 +316,7 @@
     aget-object v6, v2, v4
 
     .line 5
-    sget-object v7, Lm/d;->k:Ljava/lang/Object;
+    sget-object v7, Lm/d;->j:Ljava/lang/Object;
 
     if-eq v6, v7, :cond_1
 
@@ -347,33 +345,15 @@
 
     .line 9
     :cond_2
-    iput-boolean v3, p0, Lm/d;->g:Z
+    iput-boolean v3, p0, Lm/d;->f:Z
 
     .line 10
-    iput v5, p0, Lm/d;->j:I
+    iput v5, p0, Lm/d;->i:I
 
     return-void
 .end method
 
-.method public e(J)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(J)TE;"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-virtual {p0, p1, p2, v0}, Lm/d;->f(JLjava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public f(JLjava/lang/Object;)Ljava/lang/Object;
+.method public final e(JLjava/lang/Object;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -382,22 +362,22 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lm/d;->h:[J
+    iget-object v0, p0, Lm/d;->g:[J
 
-    iget v1, p0, Lm/d;->j:I
+    iget v1, p0, Lm/d;->i:I
 
-    invoke-static {v0, v1, p1, p2}, Landroidx/lifecycle/n;->b([JIJ)I
+    invoke-static {v0, v1, p1, p2}, Lcom/android/billingclient/api/z;->c([JIJ)I
 
     move-result p1
 
     if-ltz p1, :cond_1
 
     .line 2
-    iget-object p2, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object p2, p0, Lm/d;->h:[Ljava/lang/Object;
 
     aget-object v0, p2, p1
 
-    sget-object v1, Lm/d;->k:Ljava/lang/Object;
+    sget-object v1, Lm/d;->j:Ljava/lang/Object;
 
     if-ne v0, v1, :cond_0
 
@@ -414,7 +394,7 @@
     return-object p3
 .end method
 
-.method public g(JLjava/lang/Object;)V
+.method public final f(JLjava/lang/Object;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -423,18 +403,18 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lm/d;->h:[J
+    iget-object v0, p0, Lm/d;->g:[J
 
-    iget v1, p0, Lm/d;->j:I
+    iget v1, p0, Lm/d;->i:I
 
-    invoke-static {v0, v1, p1, p2}, Landroidx/lifecycle/n;->b([JIJ)I
+    invoke-static {v0, v1, p1, p2}, Lcom/android/billingclient/api/z;->c([JIJ)I
 
     move-result v0
 
     if-ltz v0, :cond_0
 
     .line 2
-    iget-object p1, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object p1, p0, Lm/d;->h:[Ljava/lang/Object;
 
     aput-object p3, p1, v0
 
@@ -444,20 +424,20 @@
     xor-int/lit8 v0, v0, -0x1
 
     .line 3
-    iget v1, p0, Lm/d;->j:I
+    iget v1, p0, Lm/d;->i:I
 
     if-ge v0, v1, :cond_1
 
-    iget-object v2, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object v2, p0, Lm/d;->h:[Ljava/lang/Object;
 
     aget-object v3, v2, v0
 
-    sget-object v4, Lm/d;->k:Ljava/lang/Object;
+    sget-object v4, Lm/d;->j:Ljava/lang/Object;
 
     if-ne v3, v4, :cond_1
 
     .line 4
-    iget-object v1, p0, Lm/d;->h:[J
+    iget-object v1, p0, Lm/d;->g:[J
 
     aput-wide p1, v1, v0
 
@@ -468,11 +448,11 @@
 
     .line 6
     :cond_1
-    iget-boolean v2, p0, Lm/d;->g:Z
+    iget-boolean v2, p0, Lm/d;->f:Z
 
     if-eqz v2, :cond_2
 
-    iget-object v2, p0, Lm/d;->h:[J
+    iget-object v2, p0, Lm/d;->g:[J
 
     array-length v2, v2
 
@@ -482,11 +462,11 @@
     invoke-virtual {p0}, Lm/d;->d()V
 
     .line 8
-    iget-object v0, p0, Lm/d;->h:[J
+    iget-object v0, p0, Lm/d;->g:[J
 
-    iget v1, p0, Lm/d;->j:I
+    iget v1, p0, Lm/d;->i:I
 
-    invoke-static {v0, v1, p1, p2}, Landroidx/lifecycle/n;->b([JIJ)I
+    invoke-static {v0, v1, p1, p2}, Lcom/android/billingclient/api/z;->c([JIJ)I
 
     move-result v0
 
@@ -494,9 +474,9 @@
 
     .line 9
     :cond_2
-    iget v1, p0, Lm/d;->j:I
+    iget v1, p0, Lm/d;->i:I
 
-    iget-object v2, p0, Lm/d;->h:[J
+    iget-object v2, p0, Lm/d;->g:[J
 
     array-length v2, v2
 
@@ -505,7 +485,7 @@
     add-int/lit8 v1, v1, 0x1
 
     .line 10
-    invoke-static {v1}, Landroidx/lifecycle/n;->h(I)I
+    invoke-static {v1}, Lcom/android/billingclient/api/z;->g(I)I
 
     move-result v1
 
@@ -516,7 +496,7 @@
     new-array v1, v1, [Ljava/lang/Object;
 
     .line 13
-    iget-object v3, p0, Lm/d;->h:[J
+    iget-object v3, p0, Lm/d;->g:[J
 
     array-length v4, v3
 
@@ -525,28 +505,28 @@
     invoke-static {v3, v5, v2, v5, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 14
-    iget-object v3, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object v3, p0, Lm/d;->h:[Ljava/lang/Object;
 
     array-length v4, v3
 
     invoke-static {v3, v5, v1, v5, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 15
-    iput-object v2, p0, Lm/d;->h:[J
+    iput-object v2, p0, Lm/d;->g:[J
 
     .line 16
-    iput-object v1, p0, Lm/d;->i:[Ljava/lang/Object;
+    iput-object v1, p0, Lm/d;->h:[Ljava/lang/Object;
 
     .line 17
     :cond_3
-    iget v1, p0, Lm/d;->j:I
+    iget v1, p0, Lm/d;->i:I
 
     sub-int v2, v1, v0
 
     if-eqz v2, :cond_4
 
     .line 18
-    iget-object v2, p0, Lm/d;->h:[J
+    iget-object v2, p0, Lm/d;->g:[J
 
     add-int/lit8 v3, v0, 0x1
 
@@ -555,9 +535,9 @@
     invoke-static {v2, v0, v2, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 19
-    iget-object v1, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object v1, p0, Lm/d;->h:[Ljava/lang/Object;
 
-    iget v2, p0, Lm/d;->j:I
+    iget v2, p0, Lm/d;->i:I
 
     sub-int/2addr v2, v0
 
@@ -565,31 +545,31 @@
 
     .line 20
     :cond_4
-    iget-object v1, p0, Lm/d;->h:[J
+    iget-object v1, p0, Lm/d;->g:[J
 
     aput-wide p1, v1, v0
 
     .line 21
-    iget-object p1, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object p1, p0, Lm/d;->h:[Ljava/lang/Object;
 
     aput-object p3, p1, v0
 
     .line 22
-    iget p1, p0, Lm/d;->j:I
+    iget p1, p0, Lm/d;->i:I
 
     add-int/lit8 p1, p1, 0x1
 
-    iput p1, p0, Lm/d;->j:I
+    iput p1, p0, Lm/d;->i:I
 
     :goto_0
     return-void
 .end method
 
-.method public h()I
+.method public final g()I
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lm/d;->g:Z
+    iget-boolean v0, p0, Lm/d;->f:Z
 
     if-eqz v0, :cond_0
 
@@ -598,12 +578,12 @@
 
     .line 3
     :cond_0
-    iget v0, p0, Lm/d;->j:I
+    iget v0, p0, Lm/d;->i:I
 
     return v0
 .end method
 
-.method public j(I)Ljava/lang/Object;
+.method public final h(I)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -612,7 +592,7 @@
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lm/d;->g:Z
+    iget-boolean v0, p0, Lm/d;->f:Z
 
     if-eqz v0, :cond_0
 
@@ -621,18 +601,18 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lm/d;->i:[Ljava/lang/Object;
+    iget-object v0, p0, Lm/d;->h:[Ljava/lang/Object;
 
     aget-object p1, v0, p1
 
     return-object p1
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 5
 
     .line 1
-    invoke-virtual {p0}, Lm/d;->h()I
+    invoke-virtual {p0}, Lm/d;->g()I
 
     move-result v0
 
@@ -646,7 +626,7 @@
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lm/d;->j:I
+    iget v1, p0, Lm/d;->i:I
 
     mul-int/lit8 v1, v1, 0x1c
 
@@ -661,7 +641,7 @@
 
     .line 4
     :goto_0
-    iget v2, p0, Lm/d;->j:I
+    iget v2, p0, Lm/d;->i:I
 
     if-ge v1, v2, :cond_4
 
@@ -674,7 +654,7 @@
 
     .line 6
     :cond_1
-    iget-boolean v2, p0, Lm/d;->g:Z
+    iget-boolean v2, p0, Lm/d;->f:Z
 
     if-eqz v2, :cond_2
 
@@ -683,7 +663,7 @@
 
     .line 8
     :cond_2
-    iget-object v2, p0, Lm/d;->h:[J
+    iget-object v2, p0, Lm/d;->g:[J
 
     aget-wide v3, v2, v1
 
@@ -696,7 +676,7 @@
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 11
-    invoke-virtual {p0, v1}, Lm/d;->j(I)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lm/d;->h(I)Ljava/lang/Object;
 
     move-result-object v2
 

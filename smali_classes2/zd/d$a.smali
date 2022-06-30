@@ -1,14 +1,14 @@
 .class public final Lzd/d$a;
-.super Lle/j;
-.source "-ViewPumpLayoutInflater.kt"
+.super Ljava/lang/Object;
+.source "YoungPlayerRegisterEnterEmailPageFragment.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lzd/d;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lzd/d;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,77 +16,53 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/a<",
-        "Ljava/lang/reflect/Field;",
-        ">;"
-    }
-.end annotation
 
-
-# static fields
-.field public static final g:Lzd/d$a;
+# instance fields
+.field public final synthetic f:Lzd/d;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lzd/d;)V
+    .locals 0
 
-    new-instance v0, Lzd/d$a;
+    iput-object p1, p0, Lzd/d$a;->f:Lzd/d;
 
-    invoke-direct {v0}, Lzd/d$a;-><init>()V
-
-    sput-object v0, Lzd/d$a;->g:Lzd/d$a;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
-    .locals 2
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
 
     .line 1
-    const-class v0, Landroid/view/LayoutInflater;
+    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    const-string v1, "mConstructorArgs"
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    invoke-virtual {v0, v1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v1, 0x1
+    move-result-object p1
 
     .line 2
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
-
-    return-object v0
+    iget-object p1, p1, Lae/u;->w:Lsc/a;
 
     .line 3
+    sget-object v0, Lsc/a$a;->g:Lsc/a$a;
+
+    invoke-virtual {p1, v0}, Lsc/a;->b(Lsc/a$a;)V
+
+    .line 4
+    iget-object p1, p0, Lzd/d$a;->f:Lzd/d;
+
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-static {p1}, Lcom/supercell/id/ui/MainActivity;->I(Lcom/supercell/id/ui/MainActivity;)V
+
     :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    const-string v1, "No constructor arguments field found in LayoutInflater!"
-
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    return-void
 .end method

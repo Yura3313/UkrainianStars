@@ -37,7 +37,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;ZLcom/kakaogame/ui/CustomProgressDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$5;->this$0:Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;
 
     iput-boolean p2, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$5;->val$applyClick:Z

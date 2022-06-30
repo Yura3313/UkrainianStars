@@ -47,7 +47,7 @@
 
 # direct methods
 .method public constructor <init>(Lcom/kakaogame/session/WebSocketManager;Ljava/lang/String;Lcom/kakaogame/util/MutexLock;)V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -83,9 +83,15 @@
 
     iget-object v0, p0, Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;->TAG:Ljava/lang/String;
 
-    const-string v1, ":"
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {p1, v0, v1, p2}, Landroidx/fragment/app/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v0, ":"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -115,20 +121,21 @@
 
     const-string v2, "handleResponse: "
 
-    invoke-static {v2, v0, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
     .line 3
+    invoke-static {v2, v0, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 4
     iget-object v1, p0, Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;->syncRequestMap:Ljava/util/Map;
 
     monitor-enter v1
 
-    .line 4
+    .line 5
     :try_start_0
     invoke-virtual {p1}, Lcom/kakaogame/server/ServerResponse;->getTransactionNo()I
 
     move-result v2
 
-    .line 5
+    .line 6
     iget-object v3, p0, Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;->syncRequestMap:Ljava/util/Map;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -143,7 +150,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 6
+    .line 7
     invoke-virtual {v3}, Lcom/kakaogame/session/SyncServerRequest;->getRequestUri()Ljava/lang/String;
 
     move-result-object v4
@@ -154,7 +161,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 7
+    .line 8
     iget-object v0, p0, Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;->syncRequestMap:Ljava/util/Map;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -163,12 +170,12 @@
 
     invoke-interface {v0, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
+    .line 9
     invoke-virtual {v3, p1}, Lcom/kakaogame/session/SyncServerRequest;->setSessionResponse(Lcom/kakaogame/server/ServerResponse;)V
 
     goto :goto_0
 
-    .line 9
+    .line 10
     :cond_1
     iget-object v0, p0, Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;->TAG:Ljava/lang/String;
 
@@ -194,7 +201,7 @@
 
     invoke-static {v0, v2}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10
+    .line 11
     iget-object v0, p0, Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;->this$0:Lcom/kakaogame/session/WebSocketManager;
 
     invoke-static {v0}, Lcom/kakaogame/session/WebSocketManager;->access$400(Lcom/kakaogame/session/WebSocketManager;)Lcom/kakaogame/session/WebSocketManager$WebSocketEventListener;
@@ -203,7 +210,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 11
+    .line 12
     iget-object v0, p0, Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -222,7 +229,7 @@
 
     invoke-static {v0, v2}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12
+    .line 13
     iget-object v0, p0, Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;->this$0:Lcom/kakaogame/session/WebSocketManager;
 
     invoke-static {v0}, Lcom/kakaogame/session/WebSocketManager;->access$400(Lcom/kakaogame/session/WebSocketManager;)Lcom/kakaogame/session/WebSocketManager$WebSocketEventListener;
@@ -231,7 +238,7 @@
 
     invoke-interface {v0, p1}, Lcom/kakaogame/session/WebSocketManager$WebSocketEventListener;->onServerMessage(Lcom/kakaogame/server/ServerResponse;)V
 
-    .line 13
+    .line 14
     :cond_2
     :goto_0
     monitor-exit v1
@@ -628,7 +635,7 @@
     const/16 v0, 0x7d2
 
     .line 5
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 

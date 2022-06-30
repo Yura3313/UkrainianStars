@@ -1,152 +1,107 @@
 .class public final Lie/e$a;
 .super Ljava/lang/Object;
-.source "ReadWrite.kt"
+.source "Result.kt"
 
 # interfaces
-.implements Ljava/util/Iterator;
-.implements Lme/a;
+.implements Ljava/io/Serializable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lie/e;->iterator()Ljava/util/Iterator;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lie/e;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Iterator<",
-        "Ljava/lang/String;",
-        ">;",
-        "Lme/a;"
-    }
+    name = "a"
 .end annotation
 
 
 # instance fields
-.field public g:Ljava/lang/String;
-
-.field public h:Z
-
-.field public final synthetic i:Lie/e;
+.field public final f:Ljava/lang/Throwable;
 
 
 # direct methods
-.method public constructor <init>(Lie/e;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
+.method public constructor <init>(Ljava/lang/Throwable;)V
+    .locals 1
 
-    .line 1
-    iput-object p1, p0, Lie/e$a;->i:Lie/e;
+    const-string v0, "exception"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lie/e$a;->f:Ljava/lang/Throwable;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public hasNext()Z
-    .locals 2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lie/e$a;->g:Ljava/lang/String;
-
-    const/4 v1, 0x1
-
-    if-nez v0, :cond_0
-
-    iget-boolean v0, p0, Lie/e$a;->h:Z
-
-    if-nez v0, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lie/e$a;->i:Lie/e;
-
-    .line 3
-    iget-object v0, v0, Lie/e;->a:Ljava/io/BufferedReader;
-
-    .line 4
-    invoke-virtual {v0}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lie/e$a;->g:Ljava/lang/String;
-
-    if-nez v0, :cond_0
-
-    .line 5
-    iput-boolean v1, p0, Lie/e$a;->h:Z
-
-    .line 6
-    :cond_0
-    iget-object v0, p0, Lie/e$a;->g:Ljava/lang/String;
-
-    if-eqz v0, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v1, 0x0
-
-    :goto_0
-    return v1
-.end method
-
-.method public next()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Lie/e$a;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    iget-object v0, p0, Lie/e$a;->g:Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    .line 3
-    iput-object v1, p0, Lie/e$a;->g:Ljava/lang/String;
+    instance-of v0, p1, Lie/e$a;
 
     if-eqz v0, :cond_0
 
-    return-object v0
+    iget-object v0, p0, Lie/e$a;->f:Ljava/lang/Throwable;
 
-    .line 4
+    check-cast p1, Lie/e$a;
+
+    iget-object p1, p1, Lie/e$a;->f:Ljava/lang/Throwable;
+
+    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
     :cond_0
-    invoke-static {}, Ls3/b;->g()V
+    const/4 p1, 0x0
 
-    throw v1
-
-    .line 5
-    :cond_1
-    new-instance v0, Ljava/util/NoSuchElementException;
-
-    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    throw v0
+    :goto_0
+    return p1
 .end method
 
-.method public remove()V
+.method public final hashCode()I
+    .locals 1
+
+    iget-object v0, p0, Lie/e$a;->f:Ljava/lang/Throwable;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
     .locals 2
 
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    const-string v0, "Failure("
 
-    const-string v1, "Operation is not supported for read-only collection"
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    move-result-object v0
 
-    throw v0
+    .line 2
+    iget-object v1, p0, Lie/e$a;->f:Ljava/lang/Throwable;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x29
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

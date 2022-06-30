@@ -25,7 +25,6 @@
 .method public constructor <init>(Lokhttp3/internal/cache/DiskLruCache;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/cache/DiskLruCache$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

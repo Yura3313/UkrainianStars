@@ -1,4 +1,4 @@
-.class public Lv0/l;
+.class public final Lv0/l;
 .super Ljava/lang/Object;
 .source "PropertyValuesHolderUtils.java"
 

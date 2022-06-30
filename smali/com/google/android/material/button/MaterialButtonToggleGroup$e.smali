@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/google/android/material/button/MaterialButtonToggleGroup;IZ)V
+.method public abstract a()V
 .end method

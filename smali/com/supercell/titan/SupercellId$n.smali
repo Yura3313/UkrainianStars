@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/SupercellId$n;
+.class public final Lcom/supercell/titan/SupercellId$n;
 .super Ljava/lang/Object;
 .source "SupercellId.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/titan/SupercellId;->handleNotification(Ljava/lang/String;)V
+    value = Lcom/supercell/titan/SupercellId;->setNotificationsAllowed(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,19 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic f:Z
 
-.field public final synthetic h:Lcom/supercell/titan/GameApp;
+.field public final synthetic g:Lcom/supercell/titan/GameApp;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;Lcom/supercell/titan/GameApp;)V
+.method public constructor <init>(ZLcom/supercell/titan/GameApp;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Lcom/supercell/titan/SupercellId$n;->g:Ljava/lang/String;
+    iput-boolean p1, p0, Lcom/supercell/titan/SupercellId$n;->f:Z
 
-    iput-object p3, p0, Lcom/supercell/titan/SupercellId$n;->h:Lcom/supercell/titan/GameApp;
+    iput-object p2, p0, Lcom/supercell/titan/SupercellId$n;->g:Lcom/supercell/titan/GameApp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,18 +38,18 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/SupercellId$n;->g:Ljava/lang/String;
+    iget-boolean v0, p0, Lcom/supercell/titan/SupercellId$n;->f:Z
 
     .line 2
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    iget-object v2, p0, Lcom/supercell/titan/SupercellId$n;->h:Lcom/supercell/titan/GameApp;
+    iget-object v2, p0, Lcom/supercell/titan/SupercellId$n;->g:Lcom/supercell/titan/GameApp;
 
-    invoke-virtual {v1, v2, v0}, Lcom/supercell/id/SupercellId;->handleNotification(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0}, Lcom/supercell/id/SupercellId;->setNotificationsAllowed(Landroid/app/Activity;Z)V
 
     return-void
 .end method

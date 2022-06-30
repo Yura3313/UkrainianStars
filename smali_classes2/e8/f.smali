@@ -1,33 +1,21 @@
-.class public Le8/f;
-.super Le8/h;
-.source "POSTRequest.java"
+.class public final Le8/f;
+.super Ljava/lang/Object;
+.source "AndroidFAQSearchDM.java"
 
 
 # instance fields
-.field public final e:Ljava/lang/String;
+.field public a:Lla/e;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;I)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/util/List<",
-            "Le8/c;",
-            ">;I)V"
-        }
-    .end annotation
-
-    const/4 v0, 0x1
+.method public constructor <init>(Lla/e;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0, v0, p1, p3, p4}, Le8/h;-><init>(ILjava/lang/String;Ljava/util/List;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Le8/f;->e:Ljava/lang/String;
+    iput-object p1, p0, Le8/f;->a:Lla/e;
 
     return-void
 .end method

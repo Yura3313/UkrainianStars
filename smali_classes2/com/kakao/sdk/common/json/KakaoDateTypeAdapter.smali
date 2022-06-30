@@ -42,7 +42,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {v0, v1}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 4
     iput-object v0, p0, Lcom/kakao/sdk/common/json/KakaoDateTypeAdapter;->format:Ljava/text/SimpleDateFormat;
@@ -55,7 +55,6 @@
 .method public final getFormat()Ljava/text/SimpleDateFormat;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/common/json/KakaoDateTypeAdapter;->format:Ljava/text/SimpleDateFormat;
 
     return-object v0
@@ -125,7 +124,7 @@
     .line 6
     iget-object v0, p0, Lcom/kakao/sdk/common/json/KakaoDateTypeAdapter;->format:Ljava/text/SimpleDateFormat;
 
-    invoke-virtual {v0, p1}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+    invoke-virtual {v0, p1}, Ljava/text/DateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p1
 
@@ -165,7 +164,7 @@
     .line 3
     iget-object v0, p0, Lcom/kakao/sdk/common/json/KakaoDateTypeAdapter;->format:Ljava/text/SimpleDateFormat;
 
-    invoke-virtual {v0, p2}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v0, p2}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p2
 

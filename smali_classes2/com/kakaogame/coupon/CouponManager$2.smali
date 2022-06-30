@@ -41,7 +41,6 @@
 .method public constructor <init>(Lcom/kakaogame/ui/CustomProgressDialog;Ljava/lang/String;Landroid/app/Activity;Landroid/app/Dialog;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/coupon/CouponManager$2;->val$progress:Lcom/kakaogame/ui/CustomProgressDialog;
 
     iput-object p2, p0, Lcom/kakaogame/coupon/CouponManager$2;->val$couponCode:Ljava/lang/String;
@@ -214,7 +213,6 @@
 .method public onPreExecute()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/coupon/CouponManager$2;->val$progress:Lcom/kakaogame/ui/CustomProgressDialog;
 
     invoke-virtual {v0}, Lcom/kakaogame/ui/CustomProgressDialog;->show()V

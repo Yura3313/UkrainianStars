@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private final b:Ltb/a;
+.field private final b:Lxb/a;
 
 .field private final c:Lcom/linecorp/linesdk/a/a/a/d;
 
@@ -25,7 +25,6 @@
 
     new-array v0, v0, [B
 
-    .line 1
     sput-object v0, Lcom/linecorp/linesdk/a/a/a/a;->a:[B
 
     return-void
@@ -35,23 +34,23 @@
     .locals 1
 
     .line 1
-    new-instance v0, Ltb/a;
+    new-instance v0, Lxb/a;
 
-    invoke-direct {v0, p1, p2}, Ltb/a;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lxb/a;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    invoke-direct {p0, v0}, Lcom/linecorp/linesdk/a/a/a/a;-><init>(Ltb/a;)V
+    invoke-direct {p0, v0}, Lcom/linecorp/linesdk/a/a/a/a;-><init>(Lxb/a;)V
 
     return-void
 .end method
 
-.method private constructor <init>(Ltb/a;)V
+.method private constructor <init>(Lxb/a;)V
     .locals 1
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    iput-object p1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Ltb/a;
+    iput-object p1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lxb/a;
 
     .line 4
     new-instance p1, Lcom/linecorp/linesdk/a/a/a/d;
@@ -101,7 +100,7 @@
     if-ge v0, v1, :cond_0
 
     .line 43
-    invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+    invoke-virtual {p0}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v0
 
@@ -115,7 +114,7 @@
 
     .line 45
     :goto_0
-    invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;
+    invoke-virtual {p0}, Ljava/net/URLConnection;->getHeaderFields()Ljava/util/Map;
 
     move-result-object v1
 
@@ -288,14 +287,14 @@
     check-cast v0, Ljavax/net/ssl/HttpsURLConnection;
 
     .line 28
-    new-instance p0, Lrb/a;
+    new-instance p0, Lvb/a;
 
     .line 29
     invoke-virtual {v0}, Ljavax/net/ssl/HttpsURLConnection;->getSSLSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lrb/a;-><init>(Ljavax/net/ssl/SSLSocketFactory;)V
+    invoke-direct {p0, v1}, Lvb/a;-><init>(Ljavax/net/ssl/SSLSocketFactory;)V
 
     .line 30
     invoke-virtual {v0, p0}, Ljavax/net/ssl/HttpsURLConnection;->setSSLSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)V
@@ -371,7 +370,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-virtual {p0, v1, v0}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v1, v0}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -536,27 +535,27 @@
     const-string v3, "User-Agent"
 
     .line 5
-    iget-object v4, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Ltb/a;
+    iget-object v4, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lxb/a;
 
-    invoke-virtual {v4}, Ltb/a;->a()Ljava/lang/String;
+    invoke-virtual {v4}, Lxb/a;->a()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {p1, v3, v4}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v3, v4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v3, "Accept-Encoding"
 
     const-string v4, "gzip"
 
     .line 6
-    invoke-virtual {p1, v3, v4}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v3, v4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v3, "Content-Type"
 
     const-string v4, "application/x-www-form-urlencoded"
 
     .line 7
-    invoke-virtual {p1, v3, v4}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v3, v4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v3, "Content-Length"
 
@@ -565,17 +564,17 @@
 
     move-result-object v1
 
-    invoke-virtual {p1, v3, v1}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v3, v1}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 9
     iget v1, p0, Lcom/linecorp/linesdk/a/a/a/a;->d:I
 
-    invoke-virtual {p1, v1}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+    invoke-virtual {p1, v1}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
     .line 10
     iget v1, p0, Lcom/linecorp/linesdk/a/a/a/a;->e:I
 
-    invoke-virtual {p1, v1}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+    invoke-virtual {p1, v1}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     const-string v1, "POST"
 
@@ -583,7 +582,7 @@
     invoke-virtual {p1, v1}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
     .line 12
-    invoke-virtual {p1, v2}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+    invoke-virtual {p1, v2}, Ljava/net/URLConnection;->setDoOutput(Z)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
@@ -593,10 +592,10 @@
     invoke-static {p1, p2}, Lcom/linecorp/linesdk/a/a/a/a;->a(Ljava/net/HttpURLConnection;Ljava/util/Map;)V
 
     .line 14
-    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->connect()V
+    invoke-virtual {p1}, Ljava/net/URLConnection;->connect()V
 
     .line 15
-    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+    invoke-virtual {p1}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object p2
 
@@ -765,30 +764,30 @@
     const-string v0, "User-Agent"
 
     .line 7
-    iget-object v1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Ltb/a;
+    iget-object v1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lxb/a;
 
-    invoke-virtual {v1}, Ltb/a;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Lxb/a;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p1, v0, v1}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "Accept-Encoding"
 
     const-string v1, "gzip"
 
     .line 8
-    invoke-virtual {p1, v0, v1}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 9
     iget v0, p0, Lcom/linecorp/linesdk/a/a/a/a;->d:I
 
-    invoke-virtual {p1, v0}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+    invoke-virtual {p1, v0}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
     .line 10
     iget v0, p0, Lcom/linecorp/linesdk/a/a/a/a;->e:I
 
-    invoke-virtual {p1, v0}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+    invoke-virtual {p1, v0}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     const-string v0, "GET"
 
@@ -803,7 +802,7 @@
     invoke-static {p1, p2}, Lcom/linecorp/linesdk/a/a/a/a;->a(Ljava/net/HttpURLConnection;Ljava/util/Map;)V
 
     .line 13
-    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->connect()V
+    invoke-virtual {p1}, Ljava/net/URLConnection;->connect()V
 
     .line 14
     iget-object p2, p0, Lcom/linecorp/linesdk/a/a/a/a;->c:Lcom/linecorp/linesdk/a/a/a/d;

@@ -16,100 +16,48 @@
     name = "Entry"
 .end annotation
 
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/supercell/id/ui/BackStack$Entry$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final f:Lcom/supercell/id/ui/BackStack$Entry$a;
+
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/supercell/id/ui/BackStack$Entry$a;
+
+    invoke-direct {v0}, Lcom/supercell/id/ui/BackStack$Entry$a;-><init>()V
+
+    sput-object v0, Lcom/supercell/id/ui/BackStack$Entry;->f:Lcom/supercell/id/ui/BackStack$Entry$a;
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static final b(III)I
-    .locals 2
-
-    sub-int/2addr p0, p1
-
-    sub-int/2addr p0, p2
-
-    int-to-float p0, p0
-
-    const p2, 0x3ee66666
-
-    mul-float p2, p2, p0
-
-    const/16 v0, 0xb4
-
-    .line 1
-    invoke-static {v0}, Lcom/android/billingclient/api/a0;->b(I)F
-
-    move-result v0
-
-    const/16 v1, 0x12c
-
-    invoke-static {v1}, Lcom/android/billingclient/api/a0;->b(I)F
-
-    move-result v1
-
-    sub-float/2addr p0, v1
-
-    .line 2
-    invoke-static {p2, v0}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v1
-
-    if-gez v1, :cond_0
-
-    move p2, v0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-static {p2, p0}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v0
-
-    if-lez v0, :cond_1
-
-    move p2, p0
-
-    .line 3
-    :cond_1
-    :goto_0
-    invoke-static {p2}, Lb5/m;->r(F)I
-
-    move-result p0
-
-    add-int/2addr p0, p1
-
-    return p0
-.end method
-
 
 # virtual methods
-.method public abstract B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/supercell/id/ui/MainActivity;",
-            ")",
-            "Ljava/lang/Class<",
-            "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
-            ">;"
-        }
-    .end annotation
-.end method
+.method public B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/String;
+    .locals 1
 
-.method public C(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/String;
-    .locals 0
+    const-string v0, "mainActivity"
 
-    if-eqz p1, :cond_0
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->x(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
 
     move-result-object p1
 
@@ -118,45 +66,28 @@
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public abstract E(Lcom/supercell/id/ui/MainActivity;III)I
+.method public abstract G(Lcom/supercell/id/ui/MainActivity;III)I
 .end method
 
-.method public G(Lcom/supercell/id/ui/MainActivity;III)I
-    .locals 0
+.method public K(Lcom/supercell/id/ui/MainActivity;III)I
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "mainActivity"
 
-    .line 1
-    invoke-static {p2, p3, p4}, Lcom/supercell/id/ui/BackStack$Entry;->b(III)I
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object p1, Lcom/supercell/id/ui/BackStack$Entry;->f:Lcom/supercell/id/ui/BackStack$Entry$a;
+
+    invoke-virtual {p1, p2, p3, p4}, Lcom/supercell/id/ui/BackStack$Entry$a;->a(III)I
 
     move-result p1
 
     return p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public I()Z
+.method public N()Z
     .locals 1
 
     const/4 v0, 0x0
@@ -164,7 +95,7 @@
     return v0
 .end method
 
-.method public M()Z
+.method public P()Z
     .locals 1
 
     const/4 v0, 0x0
@@ -172,8 +103,8 @@
     return v0
 .end method
 
-.method public T(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
-    .locals 0
+.method public Q(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -181,36 +112,29 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lrc/g1;",
+            "Lwc/a1;",
             ">;"
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "mainActivity"
 
-    .line 1
-    const-class p1, Lrc/i1;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-class p1, Lwc/c1;
 
     return-object p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public X(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
+.method public T(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
     .locals 1
 
-    if-eqz p1, :cond_1
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->i()Ljava/lang/Class;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->a()Ljava/lang/Class;
 
     move-result-object v0
 
@@ -218,12 +142,14 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Landroidx/fragment/app/Fragment;->S(Landroid/content/Context;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+    .line 2
+    invoke-static {p1, v0}, Landroidx/fragment/app/Fragment;->M(Landroid/content/Context;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
+    .line 3
     check-cast p1, Lcom/supercell/id/ui/BaseFragment;
 
     return-object p1
@@ -236,107 +162,9 @@
     invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
 
     throw p1
-
-    :cond_1
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public Y(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
-    .locals 1
-
-    if-eqz p1, :cond_1
-
-    .line 1
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p1, v0}, Landroidx/fragment/app/Fragment;->S(Landroid/content/Context;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    check-cast p1, Lcom/supercell/id/ui/BaseFragment;
-
-    return-object p1
-
-    :cond_0
-    new-instance p1, Lkotlin/TypeCastException;
-
-    const-string v0, "null cannot be cast to non-null type com.supercell.id.ui.BaseFragment"
-
-    invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_1
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public final b0(Lcom/supercell/id/ui/MainActivity;)Lrc/g1;
-    .locals 1
-
-    if-eqz p1, :cond_1
-
-    .line 1
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->T(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p1, v0}, Landroidx/fragment/app/Fragment;->S(Landroid/content/Context;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    check-cast p1, Lrc/g1;
-
-    return-object p1
-
-    :cond_0
-    new-instance p1, Lkotlin/TypeCastException;
-
-    const-string v0, "null cannot be cast to non-null type com.supercell.id.ui.NavigationBaseFragment"
-
-    invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_1
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public abstract i()Ljava/lang/Class;
+.method public abstract a()Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -348,11 +176,48 @@
     .end annotation
 .end method
 
-.method public k()Ljava/lang/String;
+.method public b0(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
     .locals 1
 
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 1
-    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->i()Ljava/lang/Class;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->x(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {p1, v0}, Landroidx/fragment/app/Fragment;->M(Landroid/content/Context;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    check-cast p1, Lcom/supercell/id/ui/BaseFragment;
+
+    return-object p1
+
+    :cond_0
+    new-instance p1, Lkotlin/TypeCastException;
+
+    const-string v0, "null cannot be cast to non-null type com.supercell.id.ui.BaseFragment"
+
+    invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public d()Ljava/lang/String;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->a()Ljava/lang/Class;
 
     move-result-object v0
 
@@ -363,35 +228,45 @@
     return-object v0
 .end method
 
-.method public k0(Lcom/supercell/id/ui/MainActivity;III)I
-    .locals 0
+.method public final h0(Lcom/supercell/id/ui/MainActivity;)Lwc/a1;
+    .locals 1
+
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->Q(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {p1, v0}, Landroidx/fragment/app/Fragment;->M(Landroid/content/Context;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+
+    move-result-object p1
 
     if-eqz p1, :cond_0
 
-    const/4 p1, 0x0
+    .line 3
+    check-cast p1, Lwc/a1;
 
-    return p1
+    return-object p1
 
     :cond_0
-    const-string p1, "mainActivity"
+    new-instance p1, Lkotlin/TypeCastException;
 
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    const-string v0, "null cannot be cast to non-null type com.supercell.id.ui.NavigationBaseFragment"
 
-    const/4 p1, 0x0
+    invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public n0(Lcom/supercell/id/ui/MainActivity;III)I
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public o()Z
+.method public j()Z
     .locals 1
 
     const/4 v0, 0x0
@@ -399,63 +274,79 @@
     return v0
 .end method
 
-.method public abstract t()Z
-.end method
-
-.method public t0(Lcom/supercell/id/ui/MainActivity;)Z
+.method public k0(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
-    if-eqz p1, :cond_0
+    const-string p2, "mainActivity"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public abstract l()Z
+.end method
+
+.method public o0(Lcom/supercell/id/ui/MainActivity;III)I
+    .locals 0
+
+    const-string p2, "mainActivity"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public q(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    return-object p1
+.end method
+
+.method public r0(Lcom/supercell/id/ui/MainActivity;)Z
+    .locals 1
+
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x1
 
     return p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public w0(Lcom/supercell/id/ui/MainActivity;)Z
-    .locals 0
+.method public abstract x(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/supercell/id/ui/MainActivity;",
+            ")",
+            "Ljava/lang/Class<",
+            "+",
+            "Lcom/supercell/id/ui/BaseFragment;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    if-eqz p1, :cond_0
+.method public z0(Lcom/supercell/id/ui/MainActivity;)Z
+    .locals 1
+
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     return p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public y(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/String;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

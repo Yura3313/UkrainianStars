@@ -24,7 +24,17 @@
 
 
 # virtual methods
-.method public abstract a(ILandroid/os/Bundle;)Lo0/b;
+.method public abstract a(Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lo0/b<",
+            "TD;>;TD;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract b()Lo0/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -32,16 +42,6 @@
             ")",
             "Lo0/b<",
             "TD;>;"
-        }
-    .end annotation
-.end method
-
-.method public abstract b(Lo0/b;Ljava/lang/Object;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lo0/b<",
-            "TD;>;TD;)V"
         }
     .end annotation
 .end method

@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public a:Ly1/a;
+.field public a:Lz1/a;
     .annotation build Ljavax/annotation/concurrent/GuardedBy;
         value = "this"
     .end annotation
@@ -64,7 +64,7 @@
 
     iput-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->d:Ljava/lang/Object;
 
-    if-eqz p1, :cond_2
+    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-eqz p4, :cond_1
 
@@ -92,16 +92,6 @@
     iput-boolean p5, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->g:Z
 
     return-void
-
-    .line 1
-    :cond_2
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "null reference"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 .method public static c(Landroid/content/Context;)Z
@@ -118,9 +108,8 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
-    invoke-static {p0}, Ly1/f;->a(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {p0}, Lz1/f;->a(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -145,7 +134,7 @@
 
     goto :goto_1
 
-    .line 2
+    .line 1
     :cond_1
     :try_start_1
     invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
@@ -185,7 +174,7 @@
     :goto_3
     const/4 v8, 0x0
 
-    .line 3
+    .line 2
     :goto_4
     new-instance v0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;
 
@@ -218,8 +207,8 @@
     throw p0
 .end method
 
-.method public static d(Ly1/a;)Lcom/google/android/gms/internal/ads_identifier/zze;
-    .locals 3
+.method public static d(Lz1/a;)Lcom/google/android/gms/internal/ads_identifier/zze;
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -229,13 +218,11 @@
     :try_start_0
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
-    const-wide/16 v1, 0x2710
-
-    invoke-virtual {p0, v1, v2, v0}, Ly1/a;->a(JLjava/util/concurrent/TimeUnit;)Landroid/os/IBinder;
+    invoke-virtual {p0}, Lz1/a;->a()Landroid/os/IBinder;
 
     move-result-object p0
 
-    sget v0, Lcom/google/android/gms/internal/ads_identifier/zzf;->g:I
+    sget v0, Lcom/google/android/gms/internal/ads_identifier/zzf;->f:I
 
     const-string v0, "com.google.android.gms.ads.identifier.internal.IAdvertisingIdService"
 
@@ -283,7 +270,7 @@
     throw p0
 .end method
 
-.method public static e(Landroid/content/Context;Z)Ly1/a;
+.method public static e(Landroid/content/Context;Z)Lz1/a;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -307,12 +294,12 @@
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 1
-    sget-object v0, Ly1/d;->b:Ly1/d;
+    sget-object v0, Lz1/d;->b:Lz1/d;
 
     const v1, 0xbdfcb8
 
     .line 2
-    invoke-virtual {v0, p0, v1}, Ly1/d;->d(Landroid/content/Context;I)I
+    invoke-virtual {v0, p0, v1}, Lz1/d;->d(Landroid/content/Context;I)I
 
     move-result v0
 
@@ -345,9 +332,9 @@
     const-string p1, "com.google.android.gms.ads.identifier.service.START"
 
     :goto_1
-    new-instance v0, Ly1/a;
+    new-instance v0, Lz1/a;
 
-    invoke-direct {v0}, Ly1/a;-><init>()V
+    invoke-direct {v0}, Lz1/a;-><init>()V
 
     new-instance v1, Landroid/content/Intent;
 
@@ -358,13 +345,13 @@
     invoke-virtual {v1, p1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     :try_start_1
-    invoke-static {}, Lj2/a;->b()Lj2/a;
+    invoke-static {}, Lk2/a;->b()Lk2/a;
 
     move-result-object p1
 
     const/4 v2, 0x1
 
-    invoke-virtual {p1, p0, v1, v0, v2}, Lj2/a;->a(Landroid/content/Context;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
+    invoke-virtual {p1, p0, v1, v0, v2}, Lk2/a;->a(Landroid/content/Context;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
 
     move-result p0
     :try_end_1
@@ -395,9 +382,7 @@
     :catch_0
     new-instance p0, Lcom/google/android/gms/common/GooglePlayServicesNotAvailableException;
 
-    const/16 p1, 0x9
-
-    invoke-direct {p0, p1}, Lcom/google/android/gms/common/GooglePlayServicesNotAvailableException;-><init>(I)V
+    invoke-direct {p0}, Lcom/google/android/gms/common/GooglePlayServicesNotAvailableException;-><init>()V
 
     throw p0
 .end method
@@ -417,9 +402,8 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
-    invoke-static {p0}, Ly1/f;->a(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {p0}, Lz1/f;->a(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -444,7 +428,7 @@
 
     goto :goto_1
 
-    .line 2
+    .line 1
     :cond_1
     :try_start_1
     invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
@@ -468,7 +452,7 @@
 
     goto :goto_3
 
-    .line 3
+    .line 2
     :cond_2
     :try_start_2
     invoke-interface {v0, v3, v4}, Landroid/content/SharedPreferences;->getFloat(Ljava/lang/String;F)F
@@ -494,7 +478,7 @@
 
     goto :goto_5
 
-    .line 4
+    .line 3
     :cond_3
     :try_start_3
     invoke-interface {v0, v3, v4}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -518,7 +502,7 @@
 
     goto :goto_7
 
-    .line 5
+    .line 4
     :cond_4
     :try_start_4
     invoke-interface {v0, v3, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
@@ -535,7 +519,7 @@
     :goto_7
     const/4 v8, 0x0
 
-    .line 6
+    .line 5
     :goto_8
     new-instance v0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;
 
@@ -625,7 +609,7 @@
 
     const-string v0, "Calling this from your main thread can lead to deadlock"
 
-    invoke-static {v0}, Lc2/h;->g(Ljava/lang/String;)V
+    invoke-static {v0}, Ld2/h;->g(Ljava/lang/String;)V
 
     monitor-enter p0
 
@@ -634,7 +618,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Ly1/a;
+    iget-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Lz1/a;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
@@ -648,15 +632,15 @@
 
     if-eqz v0, :cond_1
 
-    invoke-static {}, Lj2/a;->b()Lj2/a;
+    invoke-static {}, Lk2/a;->b()Lk2/a;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->f:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Ly1/a;
+    iget-object v2, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Lz1/a;
 
-    invoke-virtual {v0, v1, v2}, Lj2/a;->c(Landroid/content/Context;Landroid/content/ServiceConnection;)V
+    invoke-virtual {v0, v1, v2}, Lk2/a;->c(Landroid/content/Context;Landroid/content/ServiceConnection;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -671,7 +655,7 @@
 
     iput-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->b:Lcom/google/android/gms/internal/ads_identifier/zze;
 
-    iput-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Ly1/a;
+    iput-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Lz1/a;
 
     monitor-exit p0
 
@@ -693,8 +677,8 @@
     throw v0
 .end method
 
-.method public b()Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
-    .locals 4
+.method public final b()Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -703,7 +687,7 @@
 
     const-string v0, "Calling this from your main thread can lead to deadlock"
 
-    invoke-static {v0}, Lc2/h;->g(Ljava/lang/String;)V
+    invoke-static {v0}, Ld2/h;->g(Ljava/lang/String;)V
 
     monitor-enter p0
 
@@ -723,7 +707,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-boolean v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->j:Z
+    iget-boolean v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->i:Z
 
     if-eqz v1, :cond_1
 
@@ -790,13 +774,13 @@
 
     :cond_2
     :goto_0
-    iget-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Ly1/a;
+    iget-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Lz1/a;
 
-    invoke-static {v0}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->b:Lcom/google/android/gms/internal/ads_identifier/zze;
 
-    invoke-static {v0}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
@@ -811,9 +795,7 @@
 
     iget-object v2, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->b:Lcom/google/android/gms/internal/ads_identifier/zze;
 
-    const/4 v3, 0x1
-
-    invoke-interface {v2, v3}, Lcom/google/android/gms/internal/ads_identifier/zze;->r0(Z)Z
+    invoke-interface {v2}, Lcom/google/android/gms/internal/ads_identifier/zze;->d()Z
 
     move-result v2
 
@@ -863,7 +845,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->i:Ljava/util/concurrent/CountDownLatch;
+    iget-object v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->h:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
     :try_end_0
@@ -911,7 +893,7 @@
     throw v1
 .end method
 
-.method public finalize()V
+.method public final finalize()V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -939,7 +921,7 @@
 
     const-string v0, "Calling this from your main thread can lead to deadlock"
 
-    invoke-static {v0}, Lc2/h;->g(Ljava/lang/String;)V
+    invoke-static {v0}, Ld2/h;->g(Ljava/lang/String;)V
 
     monitor-enter p0
 
@@ -955,13 +937,13 @@
 
     iget-boolean v1, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->g:Z
 
-    invoke-static {v0, v1}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->e(Landroid/content/Context;Z)Ly1/a;
+    invoke-static {v0, v1}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->e(Landroid/content/Context;Z)Lz1/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Ly1/a;
+    iput-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Lz1/a;
 
-    invoke-static {v0}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->d(Ly1/a;)Lcom/google/android/gms/internal/ads_identifier/zze;
+    invoke-static {v0}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->d(Lz1/a;)Lcom/google/android/gms/internal/ads_identifier/zze;
 
     move-result-object v0
 
@@ -1137,7 +1119,7 @@
 
     const-string v0, "Calling this from your main thread can lead to deadlock"
 
-    invoke-static {v0}, Lc2/h;->g(Ljava/lang/String;)V
+    invoke-static {v0}, Ld2/h;->g(Ljava/lang/String;)V
 
     monitor-enter p0
 
@@ -1157,7 +1139,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-boolean v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->j:Z
+    iget-boolean v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->i:Z
 
     if-eqz v1, :cond_1
 
@@ -1224,20 +1206,20 @@
 
     :cond_2
     :goto_0
-    iget-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Ly1/a;
+    iget-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->a:Lz1/a;
 
-    invoke-static {v0}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->b:Lcom/google/android/gms/internal/ads_identifier/zze;
 
-    invoke-static {v0}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     :try_start_6
     iget-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->b:Lcom/google/android/gms/internal/ads_identifier/zze;
 
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads_identifier/zze;->g()Z
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads_identifier/zze;->b()Z
 
     move-result v0
     :try_end_6

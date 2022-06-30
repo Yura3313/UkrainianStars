@@ -70,12 +70,14 @@
 
     const-string v2, "GoogleAdId read "
 
-    invoke-static {v2, p1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 1
+    invoke-static {v2, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     new-array v1, v1, [Ljava/lang/Object;
 
+    .line 2
     invoke-interface {v0, v2, v1}, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-object p1

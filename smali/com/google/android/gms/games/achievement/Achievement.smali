@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lb2/e;
+.implements Lc2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lb2/e<",
+        "Lc2/e<",
         "Lcom/google/android/gms/games/achievement/Achievement;",
         ">;"
     }
@@ -20,10 +20,22 @@
 
 
 # virtual methods
-.method public abstract Z1()I
+.method public abstract D()J
 .end method
 
-.method public abstract b1()Ljava/lang/String;
+.method public abstract D1()I
+.end method
+
+.method public abstract K0()J
+.end method
+
+.method public abstract U()Landroid/net/Uri;
+.end method
+
+.method public abstract Z()Ljava/lang/String;
+.end method
+
+.method public abstract f2()I
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
@@ -54,20 +66,20 @@
     .end annotation
 .end method
 
-.method public abstract m()Ljava/lang/String;
+.method public abstract i1()Ljava/lang/String;
 .end method
 
-.method public abstract o2()Lcom/google/android/gms/games/Player;
+.method public abstract n()Ljava/lang/String;
 .end method
 
-.method public abstract p1()F
+.method public abstract n0()Ljava/lang/String;
 .end method
 
-.method public abstract u1()I
+.method public abstract o1()Landroid/net/Uri;
 .end method
 
-.method public abstract w()J
+.method public abstract u2()Lcom/google/android/gms/games/Player;
 .end method
 
-.method public abstract y0()J
+.method public abstract y1()F
 .end method

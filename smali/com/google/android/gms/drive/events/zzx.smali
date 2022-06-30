@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final g:Ljava/util/List;
+.field public final f:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -30,10 +30,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lo2/i;
+    new-instance v0, Lp2/i;
 
-    invoke-direct {v0}, Lo2/i;-><init>()V
+    invoke-direct {v0}, Lp2/i;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/events/zzx;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -55,7 +54,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/gms/drive/events/zzx;->f:Ljava/util/List;
 
     return-void
 .end method
@@ -90,11 +89,11 @@
     check-cast p1, Lcom/google/android/gms/drive/events/zzx;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/drive/events/zzx;->f:Ljava/util/List;
 
-    iget-object p1, p1, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
+    iget-object p1, p1, Lcom/google/android/gms/drive/events/zzx;->f:Ljava/util/List;
 
-    invoke-static {v0, p1}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -115,7 +114,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/zzx;->f:Ljava/util/List;
 
     const/4 v2, 0x0
 
@@ -132,14 +131,13 @@
 .method public final toString()Ljava/lang/String;
     .locals 4
 
-    .line 1
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const/4 v1, 0x1
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/android/gms/drive/events/zzx;->f:Ljava/util/List;
 
     const/4 v3, 0x0
 
@@ -160,21 +158,21 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x2
-
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/drive/events/zzx;->f:Ljava/util/List;
+
+    const/4 v1, 0x2
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, v1, v0, v2}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 3
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

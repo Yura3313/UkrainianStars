@@ -36,7 +36,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/WebDialog$MakeShortcutHandler;Landroid/net/Uri;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog$MakeShortcutHandler$1;->this$1:Lcom/kakaogame/web/WebDialog$MakeShortcutHandler;
 
     iput-object p2, p0, Lcom/kakaogame/web/WebDialog$MakeShortcutHandler$1;->val$webUri:Landroid/net/Uri;

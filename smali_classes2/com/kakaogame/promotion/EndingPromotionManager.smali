@@ -19,7 +19,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +37,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/kakaogame/promotion/EndingPromotionManager$3;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/kakaogame/promotion/EndingPromotionManager$3;-><init>(Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V

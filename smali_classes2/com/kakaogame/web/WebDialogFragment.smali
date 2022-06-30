@@ -98,7 +98,7 @@
     .locals 2
 
     .line 1
-    invoke-super {p0, p1}, Landroid/app/DialogFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 2
     iget v0, p0, Lcom/kakaogame/web/WebDialogFragment;->preOrientation:I
@@ -128,6 +128,7 @@
 
     move-result-object v0
 
+    .line 6
     invoke-virtual {p1}, Landroid/content/res/Configuration;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -169,7 +170,7 @@
     .line 3
     new-instance p1, Lcom/kakaogame/web/WebDialog;
 
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -187,7 +188,7 @@
     :cond_0
     new-instance p1, Lcom/kakaogame/web/WebDialog;
 
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -275,7 +276,7 @@
 
     .line 6
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Landroid/app/DialogFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object p1
 
@@ -289,7 +290,7 @@
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onDismiss(Landroid/content/DialogInterface;)V
 
     .line 2
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

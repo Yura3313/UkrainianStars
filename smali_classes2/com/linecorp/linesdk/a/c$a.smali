@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final g:Landroid/content/Context;
+.field public final f:Landroid/content/Context;
 
 
 # direct methods
@@ -29,7 +29,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/linecorp/linesdk/a/c$a;->g:Landroid/content/Context;
+    iput-object p1, p0, Lcom/linecorp/linesdk/a/c$a;->f:Landroid/content/Context;
 
     return-void
 .end method
@@ -39,14 +39,13 @@
 .method public final run()V
     .locals 2
 
-    .line 1
-    invoke-static {}, Lcom/linecorp/linesdk/a/c;->b()Lsb/a;
+    invoke-static {}, Lcom/linecorp/linesdk/a/c;->b()Lwb/a;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/linecorp/linesdk/a/c$a;->g:Landroid/content/Context;
+    iget-object v1, p0, Lcom/linecorp/linesdk/a/c$a;->f:Landroid/content/Context;
 
-    invoke-virtual {v0, v1}, Lsb/a;->b(Landroid/content/Context;)V
+    invoke-virtual {v0, v1}, Lwb/a;->b(Landroid/content/Context;)V
 
     return-void
 .end method

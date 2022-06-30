@@ -3,17 +3,17 @@
 .source "AbstractParser.java"
 
 # interfaces
-.implements Lm5/r;
+.implements Lo5/u;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<MessageType::",
-        "Lcom/google/crypto/tink/shaded/protobuf/a0;",
+        "Lcom/google/crypto/tink/shaded/protobuf/x;",
         ">",
         "Ljava/lang/Object;",
-        "Lm5/r<",
+        "Lo5/u<",
         "TMessageType;>;"
     }
 .end annotation
@@ -23,8 +23,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
-    .line 1
-    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/j;->a()Lcom/google/crypto/tink/shaded/protobuf/j;
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/i;->a()Lcom/google/crypto/tink/shaded/protobuf/i;
 
     return-void
 .end method
@@ -32,7 +31,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

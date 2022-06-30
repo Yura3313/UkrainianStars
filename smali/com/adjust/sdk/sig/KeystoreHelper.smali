@@ -550,7 +550,6 @@
 .method public getApiLevel()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/adjust/sdk/sig/KeystoreHelper;->apiLevel:I
 
     return v0

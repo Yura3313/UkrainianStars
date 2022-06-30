@@ -45,7 +45,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -54,55 +53,55 @@
 .method public constructor <init>(Lio/sentry/protocol/Gpu;)V
     .locals 1
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 2
     iget-object v0, p1, Lio/sentry/protocol/Gpu;->name:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Gpu;->name:Ljava/lang/String;
 
-    .line 4
+    .line 3
     iget-object v0, p1, Lio/sentry/protocol/Gpu;->id:Ljava/lang/Integer;
 
     iput-object v0, p0, Lio/sentry/protocol/Gpu;->id:Ljava/lang/Integer;
 
-    .line 5
+    .line 4
     iget-object v0, p1, Lio/sentry/protocol/Gpu;->vendorId:Ljava/lang/Integer;
 
     iput-object v0, p0, Lio/sentry/protocol/Gpu;->vendorId:Ljava/lang/Integer;
 
-    .line 6
+    .line 5
     iget-object v0, p1, Lio/sentry/protocol/Gpu;->vendorName:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Gpu;->vendorName:Ljava/lang/String;
 
-    .line 7
+    .line 6
     iget-object v0, p1, Lio/sentry/protocol/Gpu;->memorySize:Ljava/lang/Integer;
 
     iput-object v0, p0, Lio/sentry/protocol/Gpu;->memorySize:Ljava/lang/Integer;
 
-    .line 8
+    .line 7
     iget-object v0, p1, Lio/sentry/protocol/Gpu;->apiType:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Gpu;->apiType:Ljava/lang/String;
 
-    .line 9
+    .line 8
     iget-object v0, p1, Lio/sentry/protocol/Gpu;->multiThreadedRendering:Ljava/lang/Boolean;
 
     iput-object v0, p0, Lio/sentry/protocol/Gpu;->multiThreadedRendering:Ljava/lang/Boolean;
 
-    .line 10
+    .line 9
     iget-object v0, p1, Lio/sentry/protocol/Gpu;->version:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Gpu;->version:Ljava/lang/String;
 
-    .line 11
+    .line 10
     iget-object v0, p1, Lio/sentry/protocol/Gpu;->npotSupport:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Gpu;->npotSupport:Ljava/lang/String;
 
-    .line 12
+    .line 11
     iget-object p1, p1, Lio/sentry/protocol/Gpu;->unknown:Ljava/util/Map;
 
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -131,7 +130,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(Ljava/util/Map;)V
@@ -144,7 +142,6 @@
 .method public getApiType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Gpu;->apiType:Ljava/lang/String;
 
     return-object v0
@@ -153,7 +150,6 @@
 .method public getId()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Gpu;->id:Ljava/lang/Integer;
 
     return-object v0
@@ -162,7 +158,6 @@
 .method public getMemorySize()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Gpu;->memorySize:Ljava/lang/Integer;
 
     return-object v0
@@ -171,7 +166,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Gpu;->name:Ljava/lang/String;
 
     return-object v0
@@ -180,7 +174,6 @@
 .method public getNpotSupport()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Gpu;->npotSupport:Ljava/lang/String;
 
     return-object v0
@@ -198,7 +191,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Gpu;->unknown:Ljava/util/Map;
 
     return-object v0
@@ -207,7 +199,6 @@
 .method public getVendorId()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Gpu;->vendorId:Ljava/lang/Integer;
 
     return-object v0
@@ -216,7 +207,6 @@
 .method public getVendorName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Gpu;->vendorName:Ljava/lang/String;
 
     return-object v0
@@ -225,7 +215,6 @@
 .method public getVersion()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Gpu;->version:Ljava/lang/String;
 
     return-object v0
@@ -234,7 +223,6 @@
 .method public isMultiThreadedRendering()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Gpu;->multiThreadedRendering:Ljava/lang/Boolean;
 
     return-object v0
@@ -243,7 +231,6 @@
 .method public setApiType(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Gpu;->apiType:Ljava/lang/String;
 
     return-void
@@ -252,7 +239,6 @@
 .method public setId(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Gpu;->id:Ljava/lang/Integer;
 
     return-void
@@ -261,7 +247,6 @@
 .method public setMemorySize(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Gpu;->memorySize:Ljava/lang/Integer;
 
     return-void
@@ -270,7 +255,6 @@
 .method public setMultiThreadedRendering(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Gpu;->multiThreadedRendering:Ljava/lang/Boolean;
 
     return-void
@@ -279,7 +263,6 @@
 .method public setName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Gpu;->name:Ljava/lang/String;
 
     return-void
@@ -288,7 +271,6 @@
 .method public setNpotSupport(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Gpu;->npotSupport:Ljava/lang/String;
 
     return-void
@@ -297,7 +279,6 @@
 .method public setVendorId(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Gpu;->vendorId:Ljava/lang/Integer;
 
     return-void
@@ -306,7 +287,6 @@
 .method public setVendorName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Gpu;->vendorName:Ljava/lang/String;
 
     return-void
@@ -315,7 +295,6 @@
 .method public setVersion(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Gpu;->version:Ljava/lang/String;
 
     return-void

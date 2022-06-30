@@ -1,4 +1,4 @@
-.class public Landroidx/transition/c$b;
+.class public final Landroidx/transition/c$b;
 .super Ljava/lang/Object;
 .source "FragmentTransitionSupport.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/transition/c;->q(Ljava/lang/Object;Landroid/view/View;Ljava/util/ArrayList;)V
+    value = Landroidx/transition/c;->l(Ljava/lang/Object;Landroid/view/View;Ljava/util/ArrayList;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,19 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic f:Landroid/view/View;
 
-.field public final synthetic h:Ljava/util/ArrayList;
+.field public final synthetic g:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/transition/c;Landroid/view/View;Ljava/util/ArrayList;)V
+.method public constructor <init>(Landroid/view/View;Ljava/util/ArrayList;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/transition/c$b;->g:Landroid/view/View;
+    iput-object p1, p0, Landroidx/transition/c$b;->f:Landroid/view/View;
 
-    iput-object p3, p0, Landroidx/transition/c$b;->h:Ljava/util/ArrayList;
+    iput-object p2, p0, Landroidx/transition/c$b;->g:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,33 +38,33 @@
 
 
 # virtual methods
-.method public a(Landroidx/transition/Transition;)V
+.method public final a()V
     .locals 0
 
     return-void
 .end method
 
-.method public b(Landroidx/transition/Transition;)V
+.method public final b()V
     .locals 0
 
     return-void
 .end method
 
-.method public c(Landroidx/transition/Transition;)V
+.method public final c(Landroidx/transition/Transition;)V
     .locals 3
 
     .line 1
-    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->y(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     .line 2
-    iget-object p1, p0, Landroidx/transition/c$b;->g:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/c$b;->f:Landroid/view/View;
 
     const/16 v0, 0x8
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 3
-    iget-object p1, p0, Landroidx/transition/c$b;->h:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/transition/c$b;->g:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -79,7 +78,7 @@
     if-ge v1, p1, :cond_0
 
     .line 4
-    iget-object v2, p0, Landroidx/transition/c$b;->h:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroidx/transition/c$b;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -97,13 +96,13 @@
     return-void
 .end method
 
-.method public d(Landroidx/transition/Transition;)V
+.method public final d()V
     .locals 0
 
     return-void
 .end method
 
-.method public e(Landroidx/transition/Transition;)V
+.method public final e()V
     .locals 0
 
     return-void

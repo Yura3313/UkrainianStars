@@ -1,146 +1,161 @@
-.class public Ln8/q;
-.super Ln8/n;
-.source "ConfirmationRejectedMessageDM.java"
+.class public final Ln8/q;
+.super Ln8/p;
+.source "ViewableConversationHistory.java"
+
+
+# instance fields
+.field public j:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lq8/d;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JLn8/m;I)V
-    .locals 9
-
-    const/4 v6, 0x0
-
-    const/16 v7, 0x8
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-wide v3, p3
-
-    move-object v5, p5
-
-    move v8, p6
-
-    .line 1
-    invoke-direct/range {v0 .. v8}, Ln8/n;-><init>(Ljava/lang/String;Ljava/lang/String;JLn8/m;ZII)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Ln8/q;)V
+.method public constructor <init>(Le8/s;La8/f;Li7/c;Lw8/c;Ln8/c;)V
     .locals 0
 
+    .line 1
+    invoke-direct/range {p0 .. p5}, Ln8/p;-><init>(Le8/s;La8/f;Li7/c;Lw8/d;Ln8/c;)V
+
     .line 2
-    invoke-direct {p0, p1}, Ln8/n;-><init>(Ln8/n;)V
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Ln8/q;->j:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Ljava/lang/Object;
-    .locals 1
+.method public final declared-synchronized c()Lq8/d;
+    .locals 2
 
-    .line 1
-    new-instance v0, Ln8/q;
+    monitor-enter p0
 
-    invoke-direct {v0, p0}, Ln8/q;-><init>(Ln8/q;)V
+    :try_start_0
+    iget-object v0, p0, Ln8/q;->j:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    add-int/lit8 v1, v1, -0x1
+
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lq8/d;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
 
     return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
 .end method
 
-.method public b()Ln8/w;
-    .locals 1
+.method public final declared-synchronized d()Ljava/util/List;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lq8/d;",
+            ">;"
+        }
+    .end annotation
 
-    .line 1
-    new-instance v0, Ln8/q;
+    monitor-enter p0
 
-    invoke-direct {v0, p0}, Ln8/q;-><init>(Ln8/q;)V
+    :try_start_0
+    new-instance v0, Ljava/util/ArrayList;
+
+    iget-object v1, p0, Ln8/q;->j:Ljava/util/List;
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
 
     return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
 .end method
 
-.method public h(Ljava/lang/String;)Lb8/i;
-    .locals 7
+.method public final declared-synchronized e()Lk3/w80;
+    .locals 2
+
+    monitor-enter p0
 
     .line 1
-    new-instance v1, Lb8/k;
+    :try_start_0
+    iget-object v0, p0, Ln8/q;->j:Ljava/util/List;
 
-    iget-object v0, p0, Ln8/w;->u:Lz7/f;
+    invoke-static {v0}, Lbc/a;->d(Ljava/util/List;)Z
 
-    iget-object v2, p0, Ln8/w;->v:Ld8/r;
+    move-result v0
 
-    invoke-direct {v1, p1, v0, v2}, Lb8/k;-><init>(Ljava/lang/String;Lz7/f;Ld8/r;)V
+    if-nez v0, :cond_0
 
     .line 2
-    new-instance v6, Lb8/g;
+    iget-object v0, p0, Ln8/q;->j:Ljava/util/List;
 
-    iget-object v2, p0, Ln8/w;->v:Ld8/r;
+    const/4 v1, 0x0
+
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lq8/d;
 
     .line 3
-    new-instance v3, La8/b;
+    invoke-virtual {p0, v0}, Ln8/p;->a(Lq8/d;)Lk3/w80;
 
-    invoke-direct {v3}, La8/b;-><init>()V
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    return-object v0
+
+    :cond_0
+    const/4 v0, 0x0
 
     .line 4
-    iget-object v0, p0, Ln8/w;->n:Ljava/lang/Long;
+    monitor-exit p0
 
-    .line 5
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    return-object v0
 
-    move-result-object v5
+    :catchall_0
+    move-exception v0
 
-    move-object v0, v6
+    monitor-exit p0
 
-    move-object v4, p1
-
-    invoke-direct/range {v0 .. v5}, Lb8/g;-><init>(Lb8/i;Ld8/r;La2/a0;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 6
-    new-instance p1, Lj3/y60;
-
-    iget-object v0, p0, Ln8/w;->v:Ld8/r;
-
-    invoke-direct {p1, v6, v0}, Lj3/y60;-><init>(Lb8/i;Ld8/r;)V
-
-    .line 7
-    new-instance v0, Lj3/g50;
-
-    invoke-direct {v0, p1}, Lj3/g50;-><init>(Ljava/lang/Object;)V
-
-    .line 8
-    new-instance p1, Lj3/cc0;
-
-    invoke-direct {p1, v0}, Lj3/cc0;-><init>(Ljava/lang/Object;)V
-
-    .line 9
-    new-instance v0, Lb8/e;
-
-    iget-object v1, p0, Ln8/w;->v:Ld8/r;
-
-    invoke-direct {v0, p1, v1}, Lb8/e;-><init>(Lb8/i;Ld8/r;)V
-
-    .line 10
-    new-instance p1, Lj3/l00;
-
-    invoke-direct {p1, v0}, Lj3/l00;-><init>(Ljava/lang/Object;)V
-
-    .line 11
-    new-instance v0, Lj3/ls;
-
-    invoke-direct {v0, p1}, Lj3/ls;-><init>(Ljava/lang/Object;)V
-
-    .line 12
-    new-instance p1, Ly3/e0;
-
-    invoke-direct {p1, v0}, Ly3/e0;-><init>(Ljava/lang/Object;)V
-
-    return-object p1
+    throw v0
 .end method
 
-.method public j()Z
+.method public final f()I
     .locals 1
 
     const/4 v0, 0x1
@@ -148,193 +163,434 @@
     return v0
 .end method
 
-.method public q(Ljava/lang/String;Ljava/util/Map;)Le8/i;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;)",
-            "Le8/i;"
-        }
-    .end annotation
+.method public final declared-synchronized h()V
+    .locals 5
+
+    monitor-enter p0
 
     .line 1
     :try_start_0
-    invoke-super {p0, p1, p2}, Ln8/n;->q(Ljava/lang/String;Ljava/util/Map;)Le8/i;
-
-    move-result-object p1
-    :try_end_0
-    .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p1
-
-    :catch_0
-    move-exception p1
+    iget-object v0, p0, Ln8/p;->a:Lw8/d;
 
     .line 2
-    iget-object p2, p1, Lcom/helpshift/common/exception/RootAPIException;->i:Lc8/a;
+    iget-object v1, v0, Lw8/d;->a:Lw8/a;
 
-    sget-object v0, Lc8/b;->v:Lc8/b;
+    iget-wide v2, v0, Lw8/d;->c:J
 
-    if-ne p2, v0, :cond_0
-
-    const/4 p2, 0x3
+    const/4 v4, 0x0
 
     .line 3
-    invoke-virtual {p0, p2}, Ln8/n;->s(I)V
+    invoke-virtual {v1, v4, v4, v2, v3}, Lw8/a;->a(Ljava/lang/String;Ljava/lang/String;J)Ljava/util/List;
+
+    move-result-object v1
 
     .line 4
-    :cond_0
-    throw p1
-.end method
+    invoke-virtual {v0, v1}, Lw8/d;->b(Ljava/util/List;)V
 
-.method public r(Lg7/c;Lm8/k;)V
-    .locals 3
+    .line 5
+    iput-object v1, p0, Ln8/q;->j:Ljava/util/List;
 
-    .line 1
-    move-object v0, p2
-
-    check-cast v0, Lp8/d;
-
-    .line 2
-    iget-object v0, v0, Lp8/d;->i:Ljava/lang/String;
-
-    .line 3
-    invoke-static {v0}, Lp5/c0;->h(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    .line 4
-    invoke-static {p1}, Ldc/a;->g(Lg7/c;)Ljava/util/HashMap;
+    .line 6
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 5
-    iget-object v1, p0, Ln8/w;->k:Ljava/lang/String;
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    const-string v2, "body"
+    move-result v1
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz v1, :cond_1
 
-    const-string v1, "type"
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    const-string v2, "ncr"
+    move-result-object v1
 
-    .line 6
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v1, "refers"
-
-    const-string v2, ""
+    check-cast v1, Lq8/d;
 
     .line 7
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v2, p0, Ln8/p;->d:Li7/c;
 
     .line 8
-    :try_start_0
-    invoke-virtual {p0, p2}, Ln8/w;->f(Lm8/k;)Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {p0, p2, v0}, Ln8/q;->q(Ljava/lang/String;Ljava/util/Map;)Le8/i;
-
-    move-result-object p2
+    iget-object v2, v2, Li7/c;->f:Ljava/lang/Long;
 
     .line 9
-    iget-object v0, p0, Ln8/w;->v:Ld8/r;
+    invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
 
-    check-cast v0, Ld8/j;
+    move-result-wide v2
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput-wide v2, v1, Lq8/d;->x:J
 
     .line 10
-    new-instance v0, Ld8/k;
+    iget-object v2, p0, Ln8/p;->f:Ln8/c;
 
-    invoke-direct {v0}, Ld8/k;-><init>()V
+    invoke-virtual {v2, v1}, Ln8/c;->Z(Lq8/d;)V
 
     .line 11
-    iget-object p2, p2, Le8/i;->b:Ljava/lang/String;
+    iget-object v1, v1, Lq8/d;->o:Lcom/helpshift/util/q;
+
+    invoke-virtual {v1}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lo8/y;
 
     .line 12
-    invoke-virtual {v0, p2}, Ld8/k;->s(Ljava/lang/String;)Ln8/q;
+    iget-object v3, p0, Ln8/p;->c:La8/f;
 
-    move-result-object p2
+    iget-object v4, p0, Ln8/p;->b:Le8/s;
+
+    invoke-virtual {v2, v3, v4}, Lo8/y;->n(La8/f;Le8/s;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
 
     .line 13
-    invoke-virtual {p0, p2}, Ln8/n;->k(Ln8/w;)V
-
-    .line 14
-    iget-object v0, p2, Ln8/w;->j:Ljava/lang/String;
-
-    iput-object v0, p0, Ln8/w;->j:Ljava/lang/String;
-
-    .line 15
-    iget-object p2, p2, Ln8/w;->l:Ln8/m;
-
-    iput-object p2, p0, Ln8/w;->l:Ln8/m;
-
-    .line 16
-    invoke-virtual {p0}, Ljava/util/Observable;->setChanged()V
-
-    .line 17
-    invoke-virtual {p0}, Ljava/util/Observable;->notifyObservers()V
-
-    .line 18
-    iget-object p2, p0, Ln8/w;->v:Ld8/r;
-
-    check-cast p2, Ld8/j;
-
-    invoke-virtual {p2}, Ld8/j;->c()Ld8/a;
-
-    move-result-object p2
-
-    invoke-virtual {p2, p0}, Ld8/a;->e(Ln8/w;)V
-    :try_end_0
-    .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
+    :cond_1
+    monitor-exit p0
 
     return-void
 
-    :catch_0
-    move-exception p2
+    :catchall_0
+    move-exception v0
 
-    .line 19
-    iget-object v0, p2, Lcom/helpshift/common/exception/RootAPIException;->i:Lc8/a;
+    monitor-exit p0
 
-    sget-object v1, Lc8/b;->y:Lc8/b;
+    goto :goto_2
 
-    if-eq v0, v1, :cond_0
+    :goto_1
+    throw v0
 
-    sget-object v1, Lc8/b;->z:Lc8/b;
+    :goto_2
+    goto :goto_1
+.end method
 
-    if-ne v0, v1, :cond_1
+.method public final declared-synchronized i()V
+    .locals 6
 
-    .line 20
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p0}, Ln8/q;->c()Lq8/d;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lq8/d;->g:Ljava/lang/Long;
+
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v0
+
+    .line 2
+    iget-object v2, p0, Ln8/q;->j:Ljava/util/List;
+
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lq8/d;
+
+    .line 3
+    iget-object v4, v3, Lq8/d;->g:Ljava/lang/Long;
+
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/Long;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    .line 4
+    iget-object v5, p0, Ln8/p;->f:Ln8/c;
+
+    invoke-virtual {v5, v3, v4}, Ln8/c;->p(Lq8/d;Z)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    .line 5
     :cond_0
-    iget-object v1, p0, Ln8/w;->u:Lz7/f;
+    monitor-exit p0
 
-    .line 21
-    iget-object v1, v1, Lz7/f;->t:Ld7/a;
+    return-void
 
-    .line 22
-    invoke-virtual {v1, p1, v0}, Ld7/a;->a(Lg7/c;Lc8/a;)V
+    :catchall_0
+    move-exception v0
 
-    .line 23
-    :cond_1
-    throw p2
+    monitor-exit p0
 
-    .line 24
-    :cond_2
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    goto :goto_2
 
-    const-string p2, "ConfirmationRejectedMessageDM send called with conversation in pre issue mode."
+    :goto_1
+    throw v0
 
-    invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    :goto_2
+    goto :goto_1
+.end method
+
+.method public final declared-synchronized m(Lq8/d;)V
+    .locals 1
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iput-object p0, p1, Lq8/d;->G:Ln8/b;
+
+    .line 2
+    iget-object v0, p0, Ln8/q;->j:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 3
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
 
     throw p1
+.end method
+
+.method public final declared-synchronized o(Ljava/util/List;)V
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lq8/d;",
+            ">;)V"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 2
+    iget-object v1, p0, Ln8/q;->j:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lq8/d;
+
+    .line 3
+    iget-object v3, v2, Lq8/d;->g:Ljava/lang/Long;
+
+    invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    check-cast p1, Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    .line 5
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_1
+    if-ge v4, v1, :cond_2
+
+    .line 6
+    invoke-virtual {p1, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lq8/d;
+
+    .line 7
+    iget-object v6, v5, Lq8/d;->g:Ljava/lang/Long;
+
+    invoke-virtual {v0, v6}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Lq8/d;
+
+    if-eqz v6, :cond_1
+
+    .line 8
+    iget-object v6, v6, Lq8/d;->o:Lcom/helpshift/util/q;
+
+    iget-object v5, v5, Lq8/d;->o:Lcom/helpshift/util/q;
+
+    .line 9
+    invoke-virtual {v6, v3, v5}, Ljava/util/ArrayList;->addAll(ILjava/util/Collection;)Z
+
+    goto :goto_2
+
+    .line 10
+    :cond_1
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :goto_2
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_1
+
+    .line 11
+    :cond_2
+    invoke-static {v2}, Lbc/a;->d(Ljava/util/List;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_3
+
+    .line 12
+    iget-object p1, p0, Ln8/q;->j:Ljava/util/List;
+
+    invoke-interface {p1, v3, v2}, Ljava/util/List;->addAll(ILjava/util/Collection;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 13
+    :cond_3
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    goto :goto_4
+
+    :goto_3
+    throw p1
+
+    :goto_4
+    goto :goto_3
+.end method
+
+.method public final declared-synchronized p(Lf9/g;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lf9/g;",
+            ")V"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Ln8/q;->j:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lq8/d;
+
+    .line 2
+    iget-object v2, v1, Lq8/d;->o:Lcom/helpshift/util/q;
+
+    .line 3
+    iput-object p1, v2, Lcom/helpshift/util/q;->f:Lf9/g;
+
+    .line 4
+    invoke-virtual {v1}, Lq8/d;->d()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    goto :goto_2
+
+    :goto_1
+    throw p1
+
+    :goto_2
+    goto :goto_1
+.end method
+
+.method public final q()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
 .end method

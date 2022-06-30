@@ -29,7 +29,6 @@
 .method public constructor <init>(Ljava/lang/Class;Ljava/lang/Class;Lcom/google/gson/TypeAdapter;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$34;->val$base:Ljava/lang/Class;
 
     iput-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$34;->val$sub:Ljava/lang/Class;
@@ -97,6 +96,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/google/gson/internal/bind/TypeAdapters$34;->val$base:Ljava/lang/Class;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -111,7 +111,7 @@
 
     iget-object v1, p0, Lcom/google/gson/internal/bind/TypeAdapters$34;->val$sub:Ljava/lang/Class;
 
-    .line 2
+    .line 3
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1

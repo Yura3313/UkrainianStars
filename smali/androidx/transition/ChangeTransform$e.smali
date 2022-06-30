@@ -1,4 +1,4 @@
-.class public Landroidx/transition/ChangeTransform$e;
+.class public final Landroidx/transition/ChangeTransform$e;
 .super Ljava/lang/Object;
 .source "ChangeTransform.java"
 
@@ -34,7 +34,7 @@
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -54,58 +54,41 @@
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->b:F
 
     .line 4
-    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
-
-    .line 5
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
-    .line 6
-    invoke-virtual {p1}, Landroid/view/View;->getTranslationZ()F
+    invoke-static {p1}, Lf0/r;->p(Landroid/view/View;)F
 
     move-result v0
 
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 7
-    :goto_0
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->c:F
 
-    .line 8
+    .line 5
     invoke-virtual {p1}, Landroid/view/View;->getScaleX()F
 
     move-result v0
 
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->d:F
 
-    .line 9
+    .line 6
     invoke-virtual {p1}, Landroid/view/View;->getScaleY()F
 
     move-result v0
 
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->e:F
 
-    .line 10
+    .line 7
     invoke-virtual {p1}, Landroid/view/View;->getRotationX()F
 
     move-result v0
 
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->f:F
 
-    .line 11
+    .line 8
     invoke-virtual {p1}, Landroid/view/View;->getRotationY()F
 
     move-result v0
 
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->g:F
 
-    .line 12
+    .line 9
     invoke-virtual {p1}, Landroid/view/View;->getRotation()F
 
     move-result p1
@@ -117,10 +100,9 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;)V
+.method public final a(Landroid/view/View;)V
     .locals 9
 
-    .line 1
     iget v1, p0, Landroidx/transition/ChangeTransform$e;->a:F
 
     iget v2, p0, Landroidx/transition/ChangeTransform$e;->b:F
@@ -139,12 +121,12 @@
 
     move-object v0, p1
 
-    invoke-static/range {v0 .. v8}, Landroidx/transition/ChangeTransform;->L(Landroid/view/View;FFFFFFFF)V
+    invoke-static/range {v0 .. v8}, Landroidx/transition/ChangeTransform;->M(Landroid/view/View;FFFFFFFF)V
 
     return-void
 .end method
 
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
     .line 1
@@ -231,7 +213,7 @@
     return v1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 5
 
     .line 1

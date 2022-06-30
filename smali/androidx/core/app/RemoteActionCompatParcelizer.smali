@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -174,7 +173,7 @@
     invoke-virtual {p1, v1}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
 
     .line 4
-    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->w(Lx0/b;)V
+    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->y(Lx0/b;)V
 
     .line 5
     iget-object v0, p0, Landroidx/core/app/RemoteActionCompat;->b:Ljava/lang/CharSequence;
@@ -203,32 +202,28 @@
 
     const/4 v1, 0x4
 
+    invoke-virtual {p1, v0, v1}, Landroidx/versionedparcelable/VersionedParcel;->w(Landroid/os/Parcelable;I)V
+
     .line 12
-    invoke-virtual {p1, v1}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
-
-    .line 13
-    invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->u(Landroid/os/Parcelable;)V
-
-    .line 14
     iget-boolean v0, p0, Landroidx/core/app/RemoteActionCompat;->e:Z
 
     const/4 v1, 0x5
 
-    .line 15
+    .line 13
     invoke-virtual {p1, v1}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
 
-    .line 16
+    .line 14
     invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->q(Z)V
 
-    .line 17
+    .line 15
     iget-boolean p0, p0, Landroidx/core/app/RemoteActionCompat;->f:Z
 
     const/4 v0, 0x6
 
-    .line 18
+    .line 16
     invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
 
-    .line 19
+    .line 17
     invoke-virtual {p1, p0}, Landroidx/versionedparcelable/VersionedParcel;->q(Z)V
 
     return-void

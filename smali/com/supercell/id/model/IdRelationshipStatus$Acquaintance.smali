@@ -27,14 +27,13 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Date;Lle/g;)V
+.method public constructor <init>(Ljava/util/Date;)V
     .locals 0
 
-    const/4 p2, 0x0
-
     .line 1
-    invoke-direct {p0, p2}, Lcom/supercell/id/model/IdRelationshipStatus;-><init>(Lle/g;)V
+    invoke-direct {p0}, Lcom/supercell/id/model/IdRelationshipStatus;-><init>()V
 
+    .line 2
     iput-object p1, p0, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
 
     return-void

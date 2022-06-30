@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkotlinx/coroutines/android/HandlerContext;->scheduleResumeAfterDelay(JLse/f;)V
+    value = Lkotlinx/coroutines/android/HandlerContext;->scheduleResumeAfterDelay(JLze/f;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic $continuation$inlined:Lse/f;
+.field public final synthetic $continuation$inlined:Lze/f;
 
 .field public final synthetic this$0:Lkotlinx/coroutines/android/HandlerContext;
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/android/HandlerContext;Lse/f;)V
+.method public constructor <init>(Lkotlinx/coroutines/android/HandlerContext;Lze/f;)V
     .locals 0
 
     iput-object p1, p0, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1;->this$0:Lkotlinx/coroutines/android/HandlerContext;
 
-    iput-object p2, p0, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1;->$continuation$inlined:Lse/f;
+    iput-object p2, p0, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1;->$continuation$inlined:Lze/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,14 +41,13 @@
 .method public final run()V
     .locals 3
 
-    .line 1
-    iget-object v0, p0, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1;->$continuation$inlined:Lse/f;
+    iget-object v0, p0, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1;->$continuation$inlined:Lze/f;
 
     iget-object v1, p0, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1;->this$0:Lkotlinx/coroutines/android/HandlerContext;
 
-    sget-object v2, Lae/i;->a:Lae/i;
+    sget-object v2, Lie/h;->a:Lie/h;
 
-    invoke-interface {v0, v1, v2}, Lse/f;->c(Lse/w;Ljava/lang/Object;)V
+    invoke-interface {v0, v1, v2}, Lze/f;->r(Lze/w;Ljava/lang/Object;)V
 
     return-void
 .end method

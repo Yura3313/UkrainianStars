@@ -127,7 +127,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/partner/model/KakaoPhase$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/partner/model/KakaoPhase$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/partner/model/KakaoPhase;->Companion:Lcom/kakao/sdk/partner/model/KakaoPhase$Companion;
 
@@ -144,7 +144,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     iput-object p3, p0, Lcom/kakao/sdk/partner/model/KakaoPhase;->phaseName:Ljava/lang/String;
@@ -185,7 +184,6 @@
 .method public final getPhaseName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/model/KakaoPhase;->phaseName:Ljava/lang/String;
 
     return-object v0

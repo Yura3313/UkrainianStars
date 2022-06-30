@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +23,6 @@
 .method public clearModuleList()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lio/sentry/android/ndk/NativeModuleListLoader;->nativeClearModuleList()V
 
     return-void
@@ -33,7 +31,6 @@
 .method public loadModuleList()[Lio/sentry/protocol/DebugImage;
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/android/ndk/NativeModuleListLoader;->nativeLoadModuleList()[Lio/sentry/protocol/DebugImage;
 
     move-result-object v0

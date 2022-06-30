@@ -495,14 +495,14 @@
 
     invoke-direct {p1, p0, p4}, Lcom/kakaogame/auth/view/LogoutUIManager$LogoutPopupDialog$2;-><init>(Lcom/kakaogame/auth/view/LogoutUIManager$LogoutPopupDialog;Lcom/kakaogame/util/MutexLock;)V
 
-    invoke-virtual {v6, p1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 57
     new-instance p1, Lcom/kakaogame/auth/view/LogoutUIManager$LogoutPopupDialog$3;
 
     invoke-direct {p1, p0, p4}, Lcom/kakaogame/auth/view/LogoutUIManager$LogoutPopupDialog$3;-><init>(Lcom/kakaogame/auth/view/LogoutUIManager$LogoutPopupDialog;Lcom/kakaogame/util/MutexLock;)V
 
-    invoke-virtual {v8, p1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v8, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 58
     invoke-virtual {p0, v2}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V

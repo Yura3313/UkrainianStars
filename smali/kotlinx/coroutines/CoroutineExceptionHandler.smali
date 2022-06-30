@@ -3,7 +3,7 @@
 .source "CoroutineExceptionHandler.kt"
 
 # interfaces
-.implements Lde/f$b;
+.implements Lke/f$a;
 
 
 # annotations
@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final synthetic e:I
+.field public static final synthetic d:I
 
 
 # virtual methods
-.method public abstract handleException(Lde/f;Ljava/lang/Throwable;)V
+.method public abstract handleException(Lke/f;Ljava/lang/Throwable;)V
 .end method

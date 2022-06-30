@@ -7,32 +7,20 @@
 
 
 # instance fields
+.field public final synthetic f:Lcom/supercell/titan/TitanWebView;
+
 .field public final synthetic g:Lcom/supercell/titan/TitanWebView;
-
-.field public final synthetic h:I
-
-.field public final synthetic i:I
-
-.field public final synthetic j:I
-
-.field public final synthetic k:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/supercell/titan/TitanWebView;IIII)V
+.method public synthetic constructor <init>(Lcom/supercell/titan/TitanWebView;Lcom/supercell/titan/TitanWebView;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/c0;->g:Lcom/supercell/titan/TitanWebView;
+    iput-object p1, p0, Lcom/supercell/titan/c0;->f:Lcom/supercell/titan/TitanWebView;
 
-    iput p2, p0, Lcom/supercell/titan/c0;->h:I
-
-    iput p3, p0, Lcom/supercell/titan/c0;->i:I
-
-    iput p4, p0, Lcom/supercell/titan/c0;->j:I
-
-    iput p5, p0, Lcom/supercell/titan/c0;->k:I
+    iput-object p2, p0, Lcom/supercell/titan/c0;->g:Lcom/supercell/titan/TitanWebView;
 
     return-void
 .end method
@@ -40,79 +28,35 @@
 
 # virtual methods
 .method public final run()V
-    .locals 7
+    .locals 5
 
-    iget-object v0, p0, Lcom/supercell/titan/c0;->g:Lcom/supercell/titan/TitanWebView;
+    iget-object v0, p0, Lcom/supercell/titan/c0;->f:Lcom/supercell/titan/TitanWebView;
 
-    iget v1, p0, Lcom/supercell/titan/c0;->h:I
+    iget-object v1, p0, Lcom/supercell/titan/c0;->g:Lcom/supercell/titan/TitanWebView;
 
-    iget v2, p0, Lcom/supercell/titan/c0;->i:I
-
-    iget v3, p0, Lcom/supercell/titan/c0;->j:I
-
-    iget v4, p0, Lcom/supercell/titan/c0;->k:I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
-    iget-object v5, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
+    new-instance v2, Landroid/view/GestureDetector;
 
-    const/4 v6, 0x0
+    invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
-    invoke-virtual {v5, v6}, Landroid/webkit/WebView;->setVisibility(I)V
+    move-result-object v3
+
+    new-instance v4, Lcom/supercell/titan/TitanWebView$b;
+
+    invoke-direct {v4, v1}, Lcom/supercell/titan/TitanWebView$b;-><init>(Lcom/supercell/titan/TitanWebView;)V
+
+    invoke-direct {v2, v3, v4}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
 
     .line 2
-    iget-object v5, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
+    iget-object v0, v0, Lcom/supercell/titan/TitanWebView;->g:Landroid/webkit/WebView;
 
-    invoke-virtual {v5}, Landroid/webkit/WebView;->getParent()Landroid/view/ViewParent;
+    new-instance v1, Lcom/supercell/titan/o;
 
-    move-result-object v5
+    invoke-direct {v1, v2}, Lcom/supercell/titan/o;-><init>(Landroid/view/GestureDetector;)V
 
-    check-cast v5, Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setVisibility(I)V
-
-    .line 3
-    iget-object v5, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
-
-    invoke-virtual {v5}, Landroid/webkit/WebView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v5
-
-    instance-of v5, v5, Landroid/view/ViewGroup$MarginLayoutParams;
-
-    if-nez v5, :cond_0
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    iget-object v5, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
-
-    invoke-virtual {v5}, Landroid/webkit/WebView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v5
-
-    check-cast v5, Landroid/view/ViewGroup$MarginLayoutParams;
-
-    .line 5
-    iput v3, v5, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
-
-    .line 6
-    iput v4, v5, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
-
-    .line 7
-    iput v1, v5, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
-
-    .line 8
-    iput v2, v5, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
-
-    .line 9
-    iput-object v5, v0, Lcom/supercell/titan/TitanWebView;->d:Landroid/view/ViewGroup$MarginLayoutParams;
-
-    .line 10
-    iget-object v0, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
-
-    invoke-virtual {v0, v5}, Landroid/webkit/WebView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    :goto_0
     return-void
 .end method

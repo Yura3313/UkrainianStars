@@ -72,7 +72,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)Ljava/lang/String;
+.method public final a(Ljava/lang/Object;)Ljava/lang/String;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -130,7 +130,7 @@
     throw p0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -153,6 +153,7 @@
 
     const-string v2, "}"
 
+    .line 5
     invoke-static {v0, v1, v2}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0

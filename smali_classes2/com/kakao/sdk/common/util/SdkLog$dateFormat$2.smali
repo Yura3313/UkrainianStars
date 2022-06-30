@@ -1,9 +1,9 @@
 .class final Lcom/kakao/sdk/common/util/SdkLog$dateFormat$2;
-.super Lle/j;
+.super Lse/h;
 .source "SdkLog.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
+        "Lse/h;",
+        "Lre/a<",
         "Ljava/text/SimpleDateFormat;",
         ">;"
     }
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method

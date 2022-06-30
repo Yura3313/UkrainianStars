@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/Object;
+.field public final f:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -37,12 +37,12 @@
     invoke-direct {p0}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/dynamic/ObjectWrapper;->g:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/google/android/gms/dynamic/ObjectWrapper;->f:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public static Y0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+.method public static c2(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
     .locals 7
     .param p0    # Lcom/google/android/gms/dynamic/IObjectWrapper;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -69,7 +69,7 @@
     .line 2
     check-cast p0, Lcom/google/android/gms/dynamic/ObjectWrapper;
 
-    iget-object p0, p0, Lcom/google/android/gms/dynamic/ObjectWrapper;->g:Ljava/lang/Object;
+    iget-object p0, p0, Lcom/google/android/gms/dynamic/ObjectWrapper;->f:Ljava/lang/Object;
 
     return-object p0
 
@@ -125,20 +125,20 @@
     if-ne v4, v2, :cond_4
 
     .line 8
-    invoke-static {v1}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object v0, v1
 
     check-cast v0, Ljava/lang/reflect/Field;
 
-    invoke-virtual {v1}, Ljava/lang/reflect/Field;->isAccessible()Z
+    invoke-virtual {v1}, Ljava/lang/reflect/AccessibleObject;->isAccessible()Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
     .line 9
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v1, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 10
     :try_start_0
@@ -195,10 +195,12 @@
 
     const-string v2, "Unexpected number of IObjectWrapper declared fields: "
 
-    invoke-static {v1, v2, v0}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
+    .line 15
+    invoke-static {v1, v2, v0}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 16
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     goto :goto_2
@@ -208,4 +210,29 @@
 
     :goto_2
     goto :goto_1
+.end method
+
+.method public static i2(Ljava/lang/Object;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+    .locals 1
+    .param p0    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;)",
+            "Lcom/google/android/gms/dynamic/IObjectWrapper;"
+        }
+    .end annotation
+
+    new-instance v0, Lcom/google/android/gms/dynamic/ObjectWrapper;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
+
+    return-object v0
 .end method

@@ -9,103 +9,100 @@
 
 
 # instance fields
-.field public g:Landroid/graphics/Rect;
+.field public f:Landroid/graphics/Rect;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static n(Landroid/widget/ListAdapter;Landroid/view/ViewGroup;Landroid/content/Context;I)I
-    .locals 9
+.method public static n(Landroid/widget/ListAdapter;Landroid/content/Context;I)I
+    .locals 10
 
-    const/4 p1, 0x0
+    const/4 v0, 0x0
 
     .line 1
-    invoke-static {p1, p1}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
-
-    move-result v0
-
-    .line 2
-    invoke-static {p1, p1}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+    invoke-static {v0, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v1
 
-    .line 3
-    check-cast p0, Landroidx/appcompat/view/menu/d;
-
-    invoke-virtual {p0}, Landroidx/appcompat/view/menu/d;->getCount()I
+    .line 2
+    invoke-static {v0, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v2
 
-    const/4 v3, 0x0
+    .line 3
+    invoke-interface {p0}, Landroid/widget/Adapter;->getCount()I
 
-    move-object v6, v3
-
-    move-object v7, v6
+    move-result v3
 
     const/4 v4, 0x0
 
+    move-object v7, v4
+
+    move-object v8, v7
+
     const/4 v5, 0x0
 
+    const/4 v6, 0x0
+
     :goto_0
-    if-ge p1, v2, :cond_4
+    if-ge v0, v3, :cond_4
 
     .line 4
-    invoke-interface {p0, p1}, Landroid/widget/ListAdapter;->getItemViewType(I)I
+    invoke-interface {p0, v0}, Landroid/widget/Adapter;->getItemViewType(I)I
 
-    move-result v8
+    move-result v9
 
-    if-eq v8, v5, :cond_0
+    if-eq v9, v6, :cond_0
 
-    move-object v7, v3
+    move-object v8, v4
 
-    move v5, v8
+    move v6, v9
 
     :cond_0
-    if-nez v6, :cond_1
+    if-nez v7, :cond_1
 
     .line 5
-    new-instance v6, Landroid/widget/FrameLayout;
+    new-instance v7, Landroid/widget/FrameLayout;
 
-    invoke-direct {v6, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
+    invoke-direct {v7, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     .line 6
     :cond_1
-    invoke-interface {p0, p1, v7, v6}, Landroid/widget/ListAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-interface {p0, v0, v8, v7}, Landroid/widget/Adapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
-    move-result-object v7
+    move-result-object v8
 
     .line 7
-    invoke-virtual {v7, v0, v1}, Landroid/view/View;->measure(II)V
+    invoke-virtual {v8, v1, v2}, Landroid/view/View;->measure(II)V
 
     .line 8
-    invoke-virtual {v7}, Landroid/view/View;->getMeasuredWidth()I
+    invoke-virtual {v8}, Landroid/view/View;->getMeasuredWidth()I
 
-    move-result v8
+    move-result v9
 
-    if-lt v8, p3, :cond_2
+    if-lt v9, p2, :cond_2
 
-    return p3
+    return p2
 
     :cond_2
-    if-le v8, v4, :cond_3
+    if-le v9, v5, :cond_3
 
-    move v4, v8
+    move v5, v9
 
     :cond_3
-    add-int/lit8 p1, p1, 0x1
+    add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
     :cond_4
-    return v4
+    return v5
 .end method
 
 .method public static v(Landroidx/appcompat/view/menu/e;)Z
@@ -157,7 +154,7 @@
 
 
 # virtual methods
-.method public e(Landroidx/appcompat/view/menu/e;Landroidx/appcompat/view/menu/g;)Z
+.method public final f(Landroidx/appcompat/view/menu/g;)Z
     .locals 0
 
     const/4 p1, 0x0
@@ -165,15 +162,13 @@
     return p1
 .end method
 
-.method public f(Landroidx/appcompat/view/menu/e;Landroidx/appcompat/view/menu/g;)Z
+.method public final g(Landroid/content/Context;Landroidx/appcompat/view/menu/e;)V
     .locals 0
 
-    const/4 p1, 0x0
-
-    return p1
+    return-void
 .end method
 
-.method public getId()I
+.method public final getId()I
     .locals 1
 
     const/4 v0, 0x0
@@ -181,10 +176,12 @@
     return v0
 .end method
 
-.method public h(Landroid/content/Context;Landroidx/appcompat/view/menu/e;)V
+.method public final l(Landroidx/appcompat/view/menu/g;)Z
     .locals 0
 
-    return-void
+    const/4 p1, 0x0
+
+    return p1
 .end method
 
 .method public abstract m(Landroidx/appcompat/view/menu/e;)V
@@ -193,7 +190,7 @@
 .method public abstract o(Landroid/view/View;)V
 .end method
 
-.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -238,10 +235,10 @@
 
     .line 5
     :goto_0
-    iget-object p2, p2, Landroidx/appcompat/view/menu/d;->g:Landroidx/appcompat/view/menu/e;
+    iget-object p2, p2, Landroidx/appcompat/view/menu/d;->f:Landroidx/appcompat/view/menu/e;
 
     .line 6
-    invoke-interface {p1, p3}, Landroid/widget/ListAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-interface {p1, p3}, Landroid/widget/Adapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -263,7 +260,7 @@
 
     .line 8
     :goto_1
-    invoke-virtual {p2, p1, p0, p3}, Landroidx/appcompat/view/menu/e;->s(Landroid/view/MenuItem;Landroidx/appcompat/view/menu/i;I)Z
+    invoke-virtual {p2, p1, p0, p3}, Landroidx/appcompat/view/menu/e;->t(Landroid/view/MenuItem;Landroidx/appcompat/view/menu/i;I)Z
 
     return-void
 .end method

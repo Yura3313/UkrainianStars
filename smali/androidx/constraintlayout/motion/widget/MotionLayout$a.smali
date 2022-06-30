@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/motion/widget/MotionLayout$a;
+.class public final Landroidx/constraintlayout/motion/widget/MotionLayout$a;
 .super Ljava/lang/Object;
 .source "MotionLayout.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic f:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/constraintlayout/motion/widget/MotionLayout;Landroid/view/View;)V
+.method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$a;->g:Landroid/view/View;
+    iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$a;->f:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +34,10 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$a;->g:Landroid/view/View;
+    iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$a;->f:Landroid/view/View;
 
     const/4 v1, 0x1
 

@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/SearchView$o;
+.class public final Landroidx/appcompat/widget/SearchView$o;
 .super Landroid/view/TouchDelegate;
 .source "SearchView.java"
 
@@ -82,7 +82,7 @@
 
 
 # virtual methods
-.method public a(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
+.method public final a(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 2
 
     .line 1
@@ -114,7 +114,7 @@
     return-void
 .end method
 
-.method public onTouchEvent(Landroid/view/MotionEvent;)Z
+.method public final onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
 
     .line 1

@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +29,6 @@
 .method public static synthetic access$100(Landroid/app/Activity;Ljava/util/List;ZLcom/kakaogame/KGResultCallback;)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/kakaogame/promotion/StartingPromotionManager;->showStartingPromotionPopupsInternal(Landroid/app/Activity;Ljava/util/List;ZLcom/kakaogame/KGResultCallback;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -41,7 +39,6 @@
 .method public static synthetic access$300()Landroid/app/Dialog;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/promotion/StartingPromotionManager;->bgDialog:Landroid/app/Dialog;
 
     return-object v0
@@ -50,7 +47,6 @@
 .method public static synthetic access$302(Landroid/app/Dialog;)Landroid/app/Dialog;
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/kakaogame/promotion/StartingPromotionManager;->bgDialog:Landroid/app/Dialog;
 
     return-object p0
@@ -59,7 +55,6 @@
 .method public static clearPreference(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/promotion/StartingPromotionManager$HidePrefManager;->access$000(Landroid/content/Context;)V
 
     return-void
@@ -251,7 +246,7 @@
     const/16 v1, 0xfa1
 
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -380,7 +375,7 @@
 
     invoke-direct {v0}, Lcom/kakaogame/promotion/StartingPromotionManager$2;-><init>()V
 
-    invoke-static {v2, v0}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Lgc/a;)V
+    invoke-static {v2, v0}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Lkc/a;)V
 
     goto :goto_0
 

@@ -1,6 +1,6 @@
-.class public interface abstract Lcom/google/crypto/tink/shaded/protobuf/q$a;
+.class public final synthetic Lcom/google/crypto/tink/shaded/protobuf/q$a;
 .super Ljava/lang/Object;
-.source "Internal.java"
+.source "LazyField.java"
 
 
 # annotations
@@ -9,11 +9,6 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
-    name = "a"
+    accessFlags = 0x1009
+    name = null
 .end annotation
-
-
-# virtual methods
-.method public abstract b()I
-.end method

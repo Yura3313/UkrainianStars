@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public a:Landroid/content/BroadcastReceiver;
+.field public a:Landroidx/appcompat/app/AppCompatDelegateImpl$h$a;
 
 .field public final synthetic b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
@@ -24,7 +24,6 @@
 .method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -34,11 +33,11 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->a:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$h$a;
 
     if-eqz v0, :cond_0
 
@@ -46,7 +45,7 @@
     :try_start_0
     iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-    iget-object v1, v1, Landroidx/appcompat/app/AppCompatDelegateImpl;->j:Landroid/content/Context;
+    iget-object v1, v1, Landroidx/appcompat/app/AppCompatDelegateImpl;->i:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     :try_end_0
@@ -56,7 +55,7 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->a:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$h$a;
 
     :cond_0
     return-void
@@ -65,13 +64,10 @@
 .method public abstract b()Landroid/content/IntentFilter;
 .end method
 
-.method public abstract c()I
+.method public abstract c()V
 .end method
 
-.method public abstract d()V
-.end method
-
-.method public e()V
+.method public final d()V
     .locals 3
 
     .line 1
@@ -95,7 +91,7 @@
 
     .line 4
     :cond_0
-    iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->a:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$h$a;
 
     if-nez v1, :cond_1
 
@@ -104,15 +100,15 @@
 
     invoke-direct {v1, p0}, Landroidx/appcompat/app/AppCompatDelegateImpl$h$a;-><init>(Landroidx/appcompat/app/AppCompatDelegateImpl$h;)V
 
-    iput-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->a:Landroid/content/BroadcastReceiver;
+    iput-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$h$a;
 
     .line 6
     :cond_1
     iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-    iget-object v1, v1, Landroidx/appcompat/app/AppCompatDelegateImpl;->j:Landroid/content/Context;
+    iget-object v1, v1, Landroidx/appcompat/app/AppCompatDelegateImpl;->i:Landroid/content/Context;
 
-    iget-object v2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->a:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$h$a;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 

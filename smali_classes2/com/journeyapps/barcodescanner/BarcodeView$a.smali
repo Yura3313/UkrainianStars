@@ -1,4 +1,4 @@
-.class public Lcom/journeyapps/barcodescanner/BarcodeView$a;
+.class public final Lcom/journeyapps/barcodescanner/BarcodeView$a;
 .super Ljava/lang/Object;
 .source "BarcodeView.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/journeyapps/barcodescanner/BarcodeView;
+.field public final synthetic f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/journeyapps/barcodescanner/BarcodeView;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/BarcodeView$a;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/BarcodeView$a;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)Z
+.method public final handleMessage(Landroid/os/Message;)Z
     .locals 3
 
     .line 1
@@ -50,43 +49,43 @@
     .line 2
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    check-cast p1, Lob/b;
+    check-cast p1, Lrb/b;
 
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/BarcodeView$a;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/BarcodeView$a;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     .line 4
-    iget-object v1, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->I:Lob/a;
+    iget-object v1, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->H:Lrb/a;
 
     if-eqz v1, :cond_0
 
     .line 5
-    iget v0, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->H:I
+    iget v0, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->G:I
 
     if-eq v0, v2, :cond_0
 
     .line 6
-    invoke-interface {v1, p1}, Lob/a;->a(Lob/b;)V
+    invoke-interface {v1, p1}, Lrb/a;->b(Lrb/b;)V
 
     .line 7
-    iget-object p1, p0, Lcom/journeyapps/barcodescanner/BarcodeView$a;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object p1, p0, Lcom/journeyapps/barcodescanner/BarcodeView$a;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     .line 8
-    iget v0, p1, Lcom/journeyapps/barcodescanner/BarcodeView;->H:I
+    iget v0, p1, Lcom/journeyapps/barcodescanner/BarcodeView;->G:I
 
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_0
 
     .line 9
-    iput v2, p1, Lcom/journeyapps/barcodescanner/BarcodeView;->H:I
+    iput v2, p1, Lcom/journeyapps/barcodescanner/BarcodeView;->G:I
 
     const/4 v0, 0x0
 
     .line 10
-    iput-object v0, p1, Lcom/journeyapps/barcodescanner/BarcodeView;->I:Lob/a;
+    iput-object v0, p1, Lcom/journeyapps/barcodescanner/BarcodeView;->H:Lrb/a;
 
     .line 11
     invoke-virtual {p1}, Lcom/journeyapps/barcodescanner/BarcodeView;->k()V
@@ -114,20 +113,20 @@
     check-cast p1, Ljava/util/List;
 
     .line 15
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/BarcodeView$a;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/BarcodeView$a;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     .line 16
-    iget-object v1, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->I:Lob/a;
+    iget-object v1, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->H:Lrb/a;
 
     if-eqz v1, :cond_3
 
     .line 17
-    iget v0, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->H:I
+    iget v0, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->G:I
 
     if-eq v0, v2, :cond_3
 
     .line 18
-    invoke-interface {v1, p1}, Lob/a;->b(Ljava/util/List;)V
+    invoke-interface {v1, p1}, Lrb/a;->a(Ljava/util/List;)V
 
     :cond_3
     return v2

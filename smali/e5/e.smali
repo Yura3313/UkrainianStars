@@ -1,174 +1,245 @@
 .class public final Le5/e;
-.super Ld5/i;
-.source "AesEaxKeyManager.java"
+.super Lb5/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ld5/i<",
-        "Ll5/l;",
+        "Lb5/c<",
+        "Le5/a;",
         ">;"
     }
 .end annotation
 
 
+# static fields
+.field public static i:Le5/e;
+
+
+# instance fields
+.field public final g:Landroid/os/Handler;
+
+.field public final h:Le5/g;
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 4
 
-    .line 1
-    const-class v0, Ll5/l;
+    sget-object v0, Le5/j;->f:Le5/j;
 
-    const/4 v1, 0x1
+    new-instance v1, La5/b;
 
-    new-array v1, v1, [Ld5/i$b;
+    const-string v2, "SplitInstallListenerRegistry"
 
-    new-instance v2, Le5/e$a;
+    invoke-direct {v1, v2}, La5/b;-><init>(Ljava/lang/String;)V
 
-    const-class v3, Ld5/a;
+    new-instance v2, Landroid/content/IntentFilter;
 
-    invoke-direct {v2, v3}, Le5/e$a;-><init>(Ljava/lang/Class;)V
+    const-string v3, "com.google.android.play.core.splitinstall.receiver.SplitInstallUpdateIntentService"
 
-    const/4 v3, 0x0
+    invoke-direct {v2, v3}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    aput-object v2, v1, v3
+    invoke-direct {p0, v1, v2, p1}, Lb5/c;-><init>(La5/b;Landroid/content/IntentFilter;Landroid/content/Context;)V
 
-    invoke-direct {p0, v0, v1}, Ld5/i;-><init>(Ljava/lang/Class;[Ld5/i$b;)V
+    new-instance p1, Landroid/os/Handler;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v1
+
+    invoke-direct {p1, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    iput-object p1, p0, Le5/e;->g:Landroid/os/Handler;
+
+    iput-object v0, p0, Le5/e;->h:Le5/g;
 
     return-void
 .end method
 
+.method public static declared-synchronized d(Landroid/content/Context;)Le5/e;
+    .locals 3
+
+    const-class v0, Le5/e;
+
+    monitor-enter v0
+
+    :try_start_0
+    sget-object v1, Le5/e;->i:Le5/e;
+
+    if-nez v1, :cond_0
+
+    new-instance v1, Le5/e;
+
+    sget-object v2, Le5/j;->f:Le5/j;
+
+    invoke-direct {v1, p0}, Le5/e;-><init>(Landroid/content/Context;)V
+
+    sput-object v1, Le5/e;->i:Le5/e;
+
+    :cond_0
+    sget-object p0, Le5/e;->i:Le5/e;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit v0
+
+    return-object p0
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+
+    throw p0
+.end method
+
 
 # virtual methods
-.method public a()Ljava/lang/String;
-    .locals 1
+.method public final a(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 16
 
-    const-string v0, "type.googleapis.com/google.crypto.tink.AesEaxKey"
+    move-object/from16 v0, p0
 
-    return-object v0
-.end method
+    move-object/from16 v1, p2
 
-.method public c()Ld5/i$a;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ld5/i$a<",
-            "Ll5/m;",
-            "Ll5/l;",
-            ">;"
-        }
-    .end annotation
+    const-string v2, "session_state"
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->getBundleExtra(Ljava/lang/String;)Landroid/os/Bundle;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_2
 
     .line 1
-    new-instance v0, Le5/e$b;
+    new-instance v15, Le5/b;
 
-    const-class v1, Ll5/m;
+    const-string v3, "session_id"
 
-    invoke-direct {v0, p0, v1}, Le5/e$b;-><init>(Le5/e;Ljava/lang/Class;)V
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
-    return-object v0
-.end method
+    move-result v4
 
-.method public d()Ll5/v0$c;
-    .locals 1
+    const-string v3, "status"
 
-    .line 1
-    sget-object v0, Ll5/v0$c;->i:Ll5/v0$c;
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
-    return-object v0
-.end method
+    move-result v14
 
-.method public e(Lm5/c;)Lcom/google/crypto/tink/shaded/protobuf/a0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
-        }
-    .end annotation
+    const-string v3, "error_code"
 
-    .line 1
-    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/j;->a()Lcom/google/crypto/tink/shaded/protobuf/j;
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
-    move-result-object v0
+    move-result v6
 
-    invoke-static {p1, v0}, Ll5/l;->y(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/l;
+    const-string v3, "bytes_downloaded"
 
-    move-result-object p1
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
 
-    return-object p1
-.end method
+    move-result-wide v7
 
-.method public g(Lcom/google/crypto/tink/shaded/protobuf/a0;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+    const-string v3, "total_bytes_to_download"
 
-    .line 1
-    check-cast p1, Ll5/l;
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+
+    move-result-wide v9
+
+    const-string v3, "module_names"
+
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v11
+
+    const-string v3, "languages"
+
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v12
+
+    const-string v3, "user_confirmation_intent"
+
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
+    move-result-object v3
+
+    move-object v13, v3
+
+    check-cast v13, Landroid/app/PendingIntent;
+
+    const-string v3, "split_file_intents"
+
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getParcelableArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v2
+
+    move-object v3, v15
+
+    move v5, v14
+
+    move v1, v14
+
+    move-object v14, v2
+
+    invoke-direct/range {v3 .. v14}, Le5/b;-><init>(IIIJJLjava/util/List;Ljava/util/List;Landroid/app/PendingIntent;Ljava/util/List;)V
 
     .line 2
-    invoke-virtual {p1}, Ll5/l;->w()I
+    iget-object v3, v0, Lb5/c;->a:La5/b;
 
-    move-result v0
+    const/4 v4, 0x1
 
-    const/4 v1, 0x0
+    new-array v4, v4, [Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lp5/m0;->e(II)V
+    const/4 v5, 0x0
+
+    aput-object v15, v4, v5
+
+    const/4 v5, 0x3
+
+    const-string v6, "ListenerRegistryBroadcastReceiver.onReceive: %s"
 
     .line 3
-    invoke-virtual {p1}, Ll5/l;->u()Lm5/c;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lm5/c;->size()I
-
-    move-result v0
-
-    invoke-static {v0}, Lp5/m0;->a(I)V
+    invoke-virtual {v3, v5, v6, v4}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 4
-    invoke-virtual {p1}, Ll5/l;->v()Ll5/n;
+    iget-object v3, v0, Le5/e;->h:Le5/g;
 
-    move-result-object v0
+    check-cast v3, Le5/j;
 
-    invoke-virtual {v0}, Ll5/n;->s()I
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result v0
+    .line 5
+    sget-object v3, Le5/j;->g:Ljava/util/concurrent/atomic/AtomicReference;
 
-    const/16 v1, 0xc
+    invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
-    if-eq v0, v1, :cond_1
+    move-result-object v3
 
-    invoke-virtual {p1}, Ll5/l;->v()Ll5/n;
+    check-cast v3, Le5/h;
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Ll5/n;->s()I
-
-    move-result p1
-
-    const/16 v0, 0x10
-
-    if-ne p1, v0, :cond_0
+    if-eq v1, v5, :cond_0
 
     goto :goto_0
 
-    .line 5
     :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
+    if-eqz v3, :cond_1
 
-    const-string v0, "invalid IV size; acceptable values have 12 or 16 bytes"
+    .line 6
+    new-instance v1, Le5/c;
 
-    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+    move-object/from16 v4, p1
 
-    throw p1
+    move-object/from16 v5, p2
+
+    invoke-direct {v1, v0, v15, v5, v4}, Le5/c;-><init>(Le5/e;Le5/a;Landroid/content/Intent;Landroid/content/Context;)V
+
+    invoke-interface {v3, v2, v1}, Le5/h;->a(Ljava/util/List;Le5/f;)V
+
+    return-void
 
     :cond_1
     :goto_0
+    invoke-virtual {v0, v15}, Lb5/c;->b(Ljava/lang/Object;)V
+
+    :cond_2
     return-void
 .end method

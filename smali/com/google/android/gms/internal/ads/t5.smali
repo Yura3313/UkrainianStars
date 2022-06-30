@@ -1,4 +1,4 @@
-.class public Lcom/google/android/gms/internal/ads/t5;
+.class public final Lcom/google/android/gms/internal/ads/t5;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
@@ -36,7 +36,6 @@
 .method public static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/android/gms/internal/ads/t5;
 
     const/4 v1, 0x1
@@ -153,7 +152,7 @@
 
     .line 5
     :cond_1
-    invoke-static {v0}, Lj3/yr0;->b(Ljava/lang/Class;)Lcom/google/android/gms/internal/ads/t5;
+    invoke-static {}, Lk3/qr0;->b()Lcom/google/android/gms/internal/ads/t5;
 
     move-result-object v1
 

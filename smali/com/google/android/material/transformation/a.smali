@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/transformation/a;
+.class public final Lcom/google/android/material/transformation/a;
 .super Ljava/lang/Object;
 .source "FabTransformationBehavior.java"
 
@@ -7,15 +7,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic f:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/transformation/FabTransformationBehavior;Landroid/view/View;)V
+.method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Lcom/google/android/material/transformation/a;->g:Landroid/view/View;
+    iput-object p1, p0, Lcom/google/android/material/transformation/a;->f:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,11 +23,10 @@
 
 
 # virtual methods
-.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 0
 
-    .line 1
-    iget-object p1, p0, Lcom/google/android/material/transformation/a;->g:Landroid/view/View;
+    iget-object p1, p0, Lcom/google/android/material/transformation/a;->f:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->invalidate()V
 

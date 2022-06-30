@@ -29,7 +29,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;ZZ)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialogFragment$1;->this$0:Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;
 
     iput-boolean p2, p0, Lcom/kakaogame/promotion/share/ScreenShotDialogFragment$1;->val$isCrop:Z
@@ -110,7 +109,7 @@
     const/16 v2, 0xfa1
 
     .line 4
-    invoke-static {v0, v1, v0, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v0, v1, v0, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 

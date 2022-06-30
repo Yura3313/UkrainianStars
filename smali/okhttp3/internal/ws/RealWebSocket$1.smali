@@ -25,7 +25,6 @@
 .method public constructor <init>(Lokhttp3/internal/ws/RealWebSocket;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/ws/RealWebSocket$1;->this$0:Lokhttp3/internal/ws/RealWebSocket;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

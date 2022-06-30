@@ -1,137 +1,71 @@
-.class public Lm2/a;
+.class public final Lm2/a;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
+# interfaces
+.implements Ljava/util/concurrent/ThreadFactory;
 
-# static fields
-.field public static a:Landroid/content/Context;
 
-.field public static b:Ljava/lang/Boolean;
+# instance fields
+.field public final a:Ljava/lang/String;
+
+.field public final b:Ljava/util/concurrent/ThreadFactory;
 
 
 # direct methods
-.method public static declared-synchronized a(Landroid/content/Context;)Z
-    .locals 4
-    .param p0    # Landroid/content/Context;
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
 
-    const-class v0, Lm2/a;
-
-    monitor-enter v0
-
     .line 1
-    :try_start_0
-    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget-object v2, Lm2/a;->a:Landroid/content/Context;
+    invoke-static {}, Ljava/util/concurrent/Executors;->defaultThreadFactory()Ljava/util/concurrent/ThreadFactory;
 
-    if-eqz v2, :cond_0
+    move-result-object v0
 
-    sget-object v3, Lm2/a;->b:Ljava/lang/Boolean;
+    iput-object v0, p0, Lm2/a;->b:Ljava/util/concurrent/ThreadFactory;
 
-    if-eqz v3, :cond_0
-
-    if-ne v2, v1, :cond_0
+    const-string v0, "Name must not be null"
 
     .line 3
-    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-static {p1, v0}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iput-object p1, p0, Lm2/a;->a:Ljava/lang/String;
 
-    monitor-exit v0
+    return-void
+.end method
 
-    return p0
 
-    :cond_0
-    const/4 v2, 0x0
+# virtual methods
+.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+    .locals 2
+    .param p1    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
 
-    .line 4
-    :try_start_1
-    sput-object v2, Lm2/a;->b:Ljava/lang/Boolean;
+    .line 1
+    iget-object v0, p0, Lm2/a;->b:Ljava/util/concurrent/ThreadFactory;
 
-    .line 5
-    invoke-static {}, Lk2/m;->c()Z
+    new-instance v1, Lm2/b;
 
-    move-result v2
+    invoke-direct {v1, p1}, Lm2/b;-><init>(Ljava/lang/Runnable;)V
 
-    if-eqz v2, :cond_1
+    invoke-interface {v0, v1}, Ljava/util/concurrent/ThreadFactory;->newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
 
-    .line 6
-    invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    move-result-object p1
 
-    move-result-object p0
+    .line 2
+    iget-object v0, p0, Lm2/a;->a:Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/content/pm/PackageManager;->isInstantApp()Z
+    invoke-virtual {p1, v0}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    move-result p0
-
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p0
-
-    sput-object p0, Lm2/a;->b:Ljava/lang/Boolean;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    :try_start_2
-    invoke-virtual {p0}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object p0
-
-    const-string v2, "com.google.android.instantapps.supervisor.InstantAppsRuntime"
-
-    .line 8
-    invoke-virtual {p0, v2}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
-
-    .line 9
-    sget-object p0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    sput-object p0, Lm2/a;->b:Ljava/lang/Boolean;
-    :try_end_2
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    goto :goto_0
-
-    .line 10
-    :catch_0
-    :try_start_3
-    sget-object p0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    sput-object p0, Lm2/a;->b:Ljava/lang/Boolean;
-
-    .line 11
-    :goto_0
-    sput-object v1, Lm2/a;->a:Landroid/content/Context;
-
-    .line 12
-    sget-object p0, Lm2/a;->b:Ljava/lang/Boolean;
-
-    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    monitor-exit v0
-
-    return p0
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v0
-
-    throw p0
+    return-object p1
 .end method

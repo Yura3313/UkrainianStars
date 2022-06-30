@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
     return-void
@@ -26,49 +25,18 @@
 
 
 # virtual methods
-.method public B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/supercell/id/ui/MainActivity;",
-            ")",
-            "Ljava/lang/Class<",
-            "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
-            ">;"
-        }
-    .end annotation
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    const-class p1, Lcom/supercell/id/ui/FlowFragment$b;
-
-    return-object p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public C(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/String;
+.method public final B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/String;
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string v0, "mainActivity"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->k()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->d()Ljava/lang/String;
 
     move-result-object v1
 
@@ -78,7 +46,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/FlowFragment$BackStackEntry;->B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/FlowFragment$BackStackEntry;->x(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
 
     move-result-object p1
 
@@ -89,22 +57,14 @@
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public E(Lcom/supercell/id/ui/MainActivity;III)I
+.method public final G(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 1
 
-    if-eqz p1, :cond_2
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sub-int/2addr p2, p3
 
@@ -114,31 +74,33 @@
 
     const/16 p2, 0x19a
 
-    .line 1
-    invoke-static {p2}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float p2, p2
 
-    move-result p2
+    .line 1
+    sget p4, La5/g0;->a:F
+
+    mul-float p2, p2, p4
 
     sub-float p2, p1, p2
 
-    const/16 p4, 0x46
+    const/16 v0, 0x46
 
-    invoke-static {p4}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float v0, v0
+
+    mul-float v0, v0, p4
+
+    const p4, 0x3e4ccccd
+
+    mul-float p1, p1, p4
+
+    .line 2
+    invoke-static {p2, v0}, Ljava/lang/Float;->compare(FF)I
 
     move-result p4
 
-    const v0, 0x3e4ccccd
+    if-gez p4, :cond_0
 
-    mul-float p1, p1, v0
-
-    .line 2
-    invoke-static {p2, p4}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v0
-
-    if-gez v0, :cond_0
-
-    move p2, p4
+    move p2, v0
 
     goto :goto_0
 
@@ -154,29 +116,21 @@
     .line 3
     :cond_1
     :goto_0
-    invoke-static {p2}, Lb5/m;->r(F)I
+    invoke-static {p2}, Lcom/android/billingclient/api/z;->n(F)I
 
     move-result p1
 
     add-int/2addr p1, p3
 
     return p1
-
-    :cond_2
-    const-string p1, "mainActivity"
-
-    .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public G(Lcom/supercell/id/ui/MainActivity;III)I
+.method public final K(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 1
 
-    if-eqz p1, :cond_2
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sub-int/2addr p2, p3
 
@@ -186,63 +140,78 @@
 
     const/16 p2, 0x17c
 
-    .line 1
-    invoke-static {p2}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float p2, p2
 
-    move-result p2
+    .line 1
+    sget p4, La5/g0;->a:F
+
+    mul-float p2, p2, p4
 
     sub-float/2addr p1, p2
 
     const/16 p2, 0x64
 
-    invoke-static {p2}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float p2, p2
 
-    move-result p2
+    mul-float p2, p2, p4
 
-    const/16 p4, 0xb4
+    const/16 v0, 0xb4
 
-    invoke-static {p4}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float v0, v0
 
-    move-result p4
+    mul-float v0, v0, p4
 
     .line 2
     invoke-static {p1, p2}, Ljava/lang/Float;->compare(FF)I
 
-    move-result v0
+    move-result p4
 
-    if-gez v0, :cond_0
+    if-gez p4, :cond_0
 
     move p1, p2
 
     goto :goto_0
 
     :cond_0
-    invoke-static {p1, p4}, Ljava/lang/Float;->compare(FF)I
+    invoke-static {p1, v0}, Ljava/lang/Float;->compare(FF)I
 
     move-result p2
 
     if-lez p2, :cond_1
 
-    move p1, p4
+    move p1, v0
 
     .line 3
     :cond_1
     :goto_0
-    invoke-static {p1}, Lb5/m;->r(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
 
     move-result p1
 
     add-int/2addr p1, p3
 
     return p1
+.end method
 
-    :cond_2
-    const-string p1, "mainActivity"
+.method public x(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/supercell/id/ui/MainActivity;",
+            ")",
+            "Ljava/lang/Class<",
+            "+",
+            "Lcom/supercell/id/ui/BaseFragment;",
+            ">;"
+        }
+    .end annotation
 
-    .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    const-string v0, "mainActivity"
 
-    const/4 p1, 0x0
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    throw p1
+    const-class p1, Lcom/supercell/id/ui/FlowFragment$b;
+
+    return-object p1
 .end method

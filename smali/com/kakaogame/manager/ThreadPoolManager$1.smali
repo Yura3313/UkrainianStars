@@ -25,7 +25,6 @@
 .method public constructor <init>(Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/manager/ThreadPoolManager$1;->val$runnable:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,6 +44,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakaogame/manager/ThreadPoolManager$1;->val$runnable:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -57,7 +57,7 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/kakaogame/manager/ThreadPoolManager$1;->val$runnable:Ljava/lang/Runnable;
 
@@ -71,7 +71,7 @@
     :catchall_0
     move-exception v0
 
-    .line 3
+    .line 4
     invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v2
@@ -85,7 +85,7 @@
 
     const-string v2, "OutOfMemoryError"
 
-    .line 4
+    .line 5
     invoke-static {v1, v2, v0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0

@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/n$b;
+.class public final Landroidx/recyclerview/widget/n$b;
 .super Ljava/lang/Object;
 .source "GapWorker.java"
 
@@ -37,7 +37,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +44,7 @@
 
 
 # virtual methods
-.method public a(II)V
+.method public final a(II)V
     .locals 5
 
     if-ltz p1, :cond_3
@@ -138,7 +137,7 @@
     throw p1
 .end method
 
-.method public b(Landroidx/recyclerview/widget/RecyclerView;Z)V
+.method public final b(Landroidx/recyclerview/widget/RecyclerView;Z)V
     .locals 4
 
     const/4 v0, 0x0
@@ -158,24 +157,24 @@
 
     .line 4
     :cond_0
-    iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView;->s:Landroidx/recyclerview/widget/RecyclerView$m;
+    iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView;->r:Landroidx/recyclerview/widget/RecyclerView$m;
 
     .line 5
-    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView;->r:Landroidx/recyclerview/widget/RecyclerView$e;
+    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView;->q:Landroidx/recyclerview/widget/RecyclerView$e;
 
     if-eqz v1, :cond_3
 
     if-eqz v0, :cond_3
 
     .line 6
-    iget-boolean v1, v0, Landroidx/recyclerview/widget/RecyclerView$m;->i:Z
+    iget-boolean v1, v0, Landroidx/recyclerview/widget/RecyclerView$m;->k:Z
 
     if-eqz v1, :cond_3
 
     if-eqz p2, :cond_1
 
     .line 7
-    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView;->j:Landroidx/recyclerview/widget/a;
+    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView;->i:Landroidx/recyclerview/widget/a;
 
     invoke-virtual {v1}, Landroidx/recyclerview/widget/a;->g()Z
 
@@ -184,7 +183,7 @@
     if-nez v1, :cond_2
 
     .line 8
-    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView;->r:Landroidx/recyclerview/widget/RecyclerView$e;
+    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView;->q:Landroidx/recyclerview/widget/RecyclerView$e;
 
     invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView$e;->b()I
 
@@ -207,7 +206,7 @@
 
     iget v2, p0, Landroidx/recyclerview/widget/n$b;->b:I
 
-    iget-object v3, p1, Landroidx/recyclerview/widget/RecyclerView;->m0:Landroidx/recyclerview/widget/RecyclerView$w;
+    iget-object v3, p1, Landroidx/recyclerview/widget/RecyclerView;->l0:Landroidx/recyclerview/widget/RecyclerView$w;
 
     invoke-virtual {v0, v1, v2, v3, p0}, Landroidx/recyclerview/widget/RecyclerView$m;->i(IILandroidx/recyclerview/widget/RecyclerView$w;Landroidx/recyclerview/widget/RecyclerView$m$c;)V
 
@@ -216,18 +215,18 @@
     :goto_0
     iget v1, p0, Landroidx/recyclerview/widget/n$b;->d:I
 
-    iget v2, v0, Landroidx/recyclerview/widget/RecyclerView$m;->j:I
+    iget v2, v0, Landroidx/recyclerview/widget/RecyclerView$m;->l:I
 
     if-le v1, v2, :cond_3
 
     .line 12
-    iput v1, v0, Landroidx/recyclerview/widget/RecyclerView$m;->j:I
+    iput v1, v0, Landroidx/recyclerview/widget/RecyclerView$m;->l:I
 
     .line 13
-    iput-boolean p2, v0, Landroidx/recyclerview/widget/RecyclerView$m;->k:Z
+    iput-boolean p2, v0, Landroidx/recyclerview/widget/RecyclerView$m;->m:Z
 
     .line 14
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->h:Landroidx/recyclerview/widget/RecyclerView$s;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->g:Landroidx/recyclerview/widget/RecyclerView$s;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$s;->m()V
 
@@ -235,7 +234,7 @@
     return-void
 .end method
 
-.method public c(I)Z
+.method public final c(I)Z
     .locals 4
 
     .line 1

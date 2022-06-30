@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/d;
+.class public final Landroidx/appcompat/app/d;
 .super Ljava/lang/Object;
 .source "AlertController.java"
 
@@ -13,13 +13,12 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/app/AlertController;Landroid/view/View;Landroid/view/View;)V
+.method public constructor <init>(Landroid/view/View;Landroid/view/View;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/appcompat/app/d;->a:Landroid/view/View;
+    iput-object p1, p0, Landroidx/appcompat/app/d;->a:Landroid/view/View;
 
-    iput-object p3, p0, Landroidx/appcompat/app/d;->b:Landroid/view/View;
+    iput-object p2, p0, Landroidx/appcompat/app/d;->b:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,20 +27,19 @@
 
 
 # virtual methods
-.method public onScroll(Landroid/widget/AbsListView;III)V
+.method public final onScroll(Landroid/widget/AbsListView;III)V
     .locals 0
 
-    .line 1
     iget-object p2, p0, Landroidx/appcompat/app/d;->a:Landroid/view/View;
 
     iget-object p3, p0, Landroidx/appcompat/app/d;->b:Landroid/view/View;
 
-    invoke-static {p1, p2, p3}, Landroidx/appcompat/app/AlertController;->c(Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
+    invoke-static {p1, p2, p3}, Landroidx/appcompat/app/AlertController;->b(Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
 
     return-void
 .end method
 
-.method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
+.method public final onScrollStateChanged(Landroid/widget/AbsListView;I)V
     .locals 0
 
     return-void

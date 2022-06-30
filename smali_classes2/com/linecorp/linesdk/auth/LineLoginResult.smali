@@ -290,7 +290,6 @@
 .method public getErrorData()Lcom/linecorp/linesdk/LineApiError;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/auth/LineLoginResult;->errorData:Lcom/linecorp/linesdk/LineApiError;
 
     return-object v0
@@ -299,7 +298,6 @@
 .method public getLineCredential()Lcom/linecorp/linesdk/LineCredential;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/auth/LineLoginResult;->lineCredential:Lcom/linecorp/linesdk/LineCredential;
 
     return-object v0
@@ -308,7 +306,6 @@
 .method public getLineProfile()Lcom/linecorp/linesdk/LineProfile;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/auth/LineLoginResult;->lineProfile:Lcom/linecorp/linesdk/LineProfile;
 
     return-object v0
@@ -317,7 +314,6 @@
 .method public getResponseCode()Lcom/linecorp/linesdk/LineApiResponseCode;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/auth/LineLoginResult;->responseCode:Lcom/linecorp/linesdk/LineApiResponseCode;
 
     return-object v0
@@ -329,7 +325,7 @@
     .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/auth/LineLoginResult;->responseCode:Lcom/linecorp/linesdk/LineApiResponseCode;
 
-    invoke-virtual {v0}, Ljava/lang/Enum;->hashCode()I
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
 
@@ -385,7 +381,6 @@
 .method public isSuccess()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/auth/LineLoginResult;->responseCode:Lcom/linecorp/linesdk/LineApiResponseCode;
 
     sget-object v1, Lcom/linecorp/linesdk/LineApiResponseCode;->SUCCESS:Lcom/linecorp/linesdk/LineApiResponseCode;
@@ -405,7 +400,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "LineLoginResult{errorData="

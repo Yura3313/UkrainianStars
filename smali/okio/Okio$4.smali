@@ -22,7 +22,6 @@
 .method public constructor <init>(Ljava/net/Socket;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokio/Okio$4;->val$socket:Ljava/net/Socket;
 
     invoke-direct {p0}, Lokio/AsyncTimeout;-><init>()V
@@ -49,7 +48,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    invoke-virtual {v0, p1}, Ljava/io/InterruptedIOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v0, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     :cond_0
     return-object v0
@@ -86,10 +85,12 @@
 
     sget-object v3, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
+    .line 4
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 5
     iget-object v4, p0, Lokio/Okio$4;->val$socket:Ljava/net/Socket;
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -102,22 +103,24 @@
 
     goto :goto_0
 
-    .line 4
+    .line 6
     :cond_0
     throw v1
 
     :catch_1
     move-exception v1
 
-    .line 5
+    .line 7
     sget-object v2, Lokio/Okio;->logger:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
+    .line 8
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 9
     iget-object v4, p0, Lokio/Okio$4;->val$socket:Ljava/net/Socket;
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

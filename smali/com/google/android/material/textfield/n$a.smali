@@ -1,11 +1,14 @@
-.class public Lcom/google/android/material/textfield/n$a;
-.super Landroid/animation/AnimatorListenerAdapter;
-.source "IndicatorViewController.java"
+.class public final Lcom/google/android/material/textfield/n$a;
+.super Ljava/lang/Object;
+.source "PasswordToggleEndIconDelegate.java"
+
+# interfaces
+.implements Landroid/text/TextWatcher;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/textfield/n;->k(IIZ)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/material/textfield/n;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,117 +18,48 @@
 
 
 # instance fields
-.field public final synthetic g:I
-
-.field public final synthetic h:Landroid/widget/TextView;
-
-.field public final synthetic i:I
-
-.field public final synthetic j:Landroid/widget/TextView;
-
-.field public final synthetic k:Lcom/google/android/material/textfield/n;
+.field public final synthetic f:Lcom/google/android/material/textfield/n;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/textfield/n;ILandroid/widget/TextView;ILandroid/widget/TextView;)V
+.method public constructor <init>(Lcom/google/android/material/textfield/n;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/n$a;->k:Lcom/google/android/material/textfield/n;
+    iput-object p1, p0, Lcom/google/android/material/textfield/n$a;->f:Lcom/google/android/material/textfield/n;
 
-    iput p2, p0, Lcom/google/android/material/textfield/n$a;->g:I
-
-    iput-object p3, p0, Lcom/google/android/material/textfield/n$a;->h:Landroid/widget/TextView;
-
-    iput p4, p0, Lcom/google/android/material/textfield/n$a;->i:I
-
-    iput-object p5, p0, Lcom/google/android/material/textfield/n$a;->j:Landroid/widget/TextView;
-
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 2
+.method public final afterTextChanged(Landroid/text/Editable;)V
+    .locals 0
 
-    .line 1
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->k:Lcom/google/android/material/textfield/n;
-
-    iget v0, p0, Lcom/google/android/material/textfield/n$a;->g:I
-
-    .line 2
-    iput v0, p1, Lcom/google/android/material/textfield/n;->i:I
-
-    const/4 v0, 0x0
-
-    .line 3
-    iput-object v0, p1, Lcom/google/android/material/textfield/n;->g:Landroid/animation/Animator;
-
-    .line 4
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->h:Landroid/widget/TextView;
-
-    if-eqz p1, :cond_0
-
-    const/4 v1, 0x4
-
-    .line 5
-    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 6
-    iget p1, p0, Lcom/google/android/material/textfield/n$a;->i:I
-
-    const/4 v1, 0x1
-
-    if-ne p1, v1, :cond_0
-
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->k:Lcom/google/android/material/textfield/n;
-
-    .line 7
-    iget-object p1, p1, Lcom/google/android/material/textfield/n;->m:Landroid/widget/TextView;
-
-    if-eqz p1, :cond_0
-
-    .line 8
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 9
-    :cond_0
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->j:Landroid/widget/TextView;
-
-    if-eqz p1, :cond_1
-
-    const/4 v0, 0x0
-
-    .line 10
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTranslationY(F)V
-
-    .line 11
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->j:Landroid/widget/TextView;
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setAlpha(F)V
-
-    :cond_1
     return-void
 .end method
 
-.method public onAnimationStart(Landroid/animation/Animator;)V
-    .locals 1
+.method public final beforeTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
 
-    .line 1
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->j:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->f:Lcom/google/android/material/textfield/n;
 
-    if-eqz p1, :cond_0
+    iget-object p2, p1, Lcom/google/android/material/textfield/k;->c:Lcom/google/android/material/internal/CheckableImageButton;
 
-    const/4 v0, 0x0
+    invoke-static {p1}, Lcom/google/android/material/textfield/n;->d(Lcom/google/android/material/textfield/n;)Z
 
-    .line 2
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
+    move-result p1
 
-    :cond_0
+    xor-int/lit8 p1, p1, 0x1
+
+    invoke-virtual {p2, p1}, Lcom/google/android/material/internal/CheckableImageButton;->setChecked(Z)V
+
+    return-void
+.end method
+
+.method public final onTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
+
     return-void
 .end method

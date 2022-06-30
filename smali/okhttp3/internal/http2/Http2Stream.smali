@@ -209,7 +209,6 @@
 .method public static synthetic access$000(Lokhttp3/internal/http2/Http2Stream;)Ljava/util/Deque;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->headersQueue:Ljava/util/Deque;
 
     return-object p0
@@ -218,7 +217,6 @@
 .method public static synthetic access$100(Lokhttp3/internal/http2/Http2Stream;)Lokhttp3/internal/http2/Header$Listener;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->headersListener:Lokhttp3/internal/http2/Header$Listener;
 
     return-object p0
@@ -521,7 +519,6 @@
 .method public getConnection()Lokhttp3/internal/http2/Http2Connection;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
 
     return-object v0
@@ -532,7 +529,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->errorCode:Lokhttp3/internal/http2/ErrorCode;
     :try_end_0
@@ -553,7 +549,6 @@
 .method public getId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
 
     return v0
@@ -616,7 +611,6 @@
 .method public getSource()Lokio/Source;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->source:Lokhttp3/internal/http2/Http2Stream$FramingSource;
 
     return-object v0
@@ -735,7 +729,6 @@
 .method public readTimeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->readTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
 
     return-object v0
@@ -749,7 +742,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->source:Lokhttp3/internal/http2/Http2Stream$FramingSource;
 
     int-to-long v1, p2
@@ -921,7 +913,7 @@
     .line 2
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->headersQueue:Ljava/util/Deque;
 
-    invoke-interface {v0}, Ljava/util/Deque;->isEmpty()Z
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
 
@@ -971,7 +963,7 @@
     :try_start_1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->headersQueue:Ljava/util/Deque;
 
-    invoke-interface {v0}, Ljava/util/Deque;->isEmpty()Z
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
 
@@ -998,7 +990,7 @@
     .line 5
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->headersQueue:Ljava/util/Deque;
 
-    invoke-interface {v0}, Ljava/util/Deque;->isEmpty()Z
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
 
@@ -1227,7 +1219,6 @@
 .method public writeTimeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->writeTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
 
     return-object v0

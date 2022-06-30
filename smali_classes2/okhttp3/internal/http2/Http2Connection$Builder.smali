@@ -60,7 +60,6 @@
 .method public build()Lokhttp3/internal/http2/Http2Connection;
     .locals 1
 
-    .line 1
     new-instance v0, Lokhttp3/internal/http2/Http2Connection;
 
     invoke-direct {v0, p0}, Lokhttp3/internal/http2/Http2Connection;-><init>(Lokhttp3/internal/http2/Http2Connection$Builder;)V
@@ -71,7 +70,6 @@
 .method public listener(Lokhttp3/internal/http2/Http2Connection$Listener;)Lokhttp3/internal/http2/Http2Connection$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->listener:Lokhttp3/internal/http2/Http2Connection$Listener;
 
     return-object p0
@@ -80,7 +78,6 @@
 .method public pingIntervalMillis(I)Lokhttp3/internal/http2/Http2Connection$Builder;
     .locals 0
 
-    .line 1
     iput p1, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->pingIntervalMillis:I
 
     return-object p0
@@ -89,7 +86,6 @@
 .method public pushObserver(Lokhttp3/internal/http2/PushObserver;)Lokhttp3/internal/http2/Http2Connection$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->pushObserver:Lokhttp3/internal/http2/PushObserver;
 
     return-object p0

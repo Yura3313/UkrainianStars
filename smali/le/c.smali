@@ -1,338 +1,104 @@
-.class public abstract Lle/c;
-.super Ljava/lang/Object;
-.source "CallableReference.java"
-
-# interfaces
-.implements Lpe/b;
-.implements Ljava/io/Serializable;
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lle/c$a;
-    }
-.end annotation
-
-
-# static fields
-.field public static final NO_RECEIVER:Ljava/lang/Object;
+.class public final Lle/c;
+.super Lme/c;
+.source "IntrinsicsJvm.kt"
 
 
 # instance fields
-.field public final receiver:Ljava/lang/Object;
+.field public i:I
 
-.field private transient reflected:Lpe/b;
+.field public final synthetic j:Lke/d;
+
+.field public final synthetic k:Lke/f;
+
+.field public final synthetic l:Lre/p;
+
+.field public final synthetic m:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    sget-object v0, Lle/c$a;->g:Lle/c$a;
-
-    sput-object v0, Lle/c;->NO_RECEIVER:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    .line 1
-    sget-object v0, Lle/c;->NO_RECEIVER:Ljava/lang/Object;
-
-    invoke-direct {p0, v0}, Lle/c;-><init>(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/Object;)V
+.method public constructor <init>(Lke/d;Lke/f;Lke/d;Lke/f;Lre/p;Ljava/lang/Object;)V
     .locals 0
 
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lle/c;->j:Lke/d;
 
-    .line 3
-    iput-object p1, p0, Lle/c;->receiver:Ljava/lang/Object;
+    iput-object p2, p0, Lle/c;->k:Lke/f;
+
+    iput-object p5, p0, Lle/c;->l:Lre/p;
+
+    iput-object p6, p0, Lle/c;->m:Ljava/lang/Object;
+
+    invoke-direct {p0, p3, p4}, Lme/c;-><init>(Lke/d;Lke/f;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public varargs call([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final d(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lle/c;->getReflected()Lpe/b;
+    iget v0, p0, Lle/c;->i:I
 
-    move-result-object v0
+    const/4 v1, 0x1
 
-    invoke-interface {v0, p1}, Lpe/b;->call([Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz v0, :cond_1
 
-    move-result-object p1
+    if-ne v0, v1, :cond_0
 
-    return-object p1
-.end method
-
-.method public callBy(Ljava/util/Map;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lle/c;->getReflected()Lpe/b;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Lpe/b;->callBy(Ljava/util/Map;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public compute()Lpe/b;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lle/c;->reflected:Lpe/b;
-
-    if-nez v0, :cond_0
+    const/4 v0, 0x2
 
     .line 2
-    invoke-virtual {p0}, Lle/c;->computeReflected()Lpe/b;
-
-    move-result-object v0
+    iput v0, p0, Lle/c;->i:I
 
     .line 3
-    iput-object v0, p0, Lle/c;->reflected:Lpe/b;
+    invoke-static {p1}, Le5/i;->q(Ljava/lang/Object;)V
 
+    goto :goto_0
+
+    .line 4
     :cond_0
-    return-object v0
-.end method
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-.method public abstract computeReflected()Lpe/b;
-.end method
+    const-string v0, "This coroutine had already completed"
 
-.method public getAnnotations()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Ljava/lang/annotation/Annotation;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lle/c;->getReflected()Lpe/b;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lpe/a;->getAnnotations()Ljava/util/List;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    throw p1
 
-    return-object v0
-.end method
+    .line 5
+    :cond_1
+    iput v1, p0, Lle/c;->i:I
 
-.method public getBoundReceiver()Ljava/lang/Object;
-    .locals 1
+    .line 6
+    invoke-static {p1}, Le5/i;->q(Ljava/lang/Object;)V
 
-    .line 1
-    iget-object v0, p0, Lle/c;->receiver:Ljava/lang/Object;
+    .line 7
+    iget-object p1, p0, Lle/c;->l:Lre/p;
 
-    return-object v0
-.end method
+    if-eqz p1, :cond_2
 
-.method public getName()Ljava/lang/String;
-    .locals 1
+    invoke-static {p1}, Lse/t;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1
-    new-instance v0, Ljava/lang/AbstractMethodError;
+    iget-object v0, p0, Lle/c;->m:Ljava/lang/Object;
 
-    invoke-direct {v0}, Ljava/lang/AbstractMethodError;-><init>()V
+    invoke-interface {p1, v0, p0}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    throw v0
-.end method
+    move-result-object p1
 
-.method public getOwner()Lpe/d;
-    .locals 1
+    :goto_0
+    return-object p1
 
-    .line 1
-    new-instance v0, Ljava/lang/AbstractMethodError;
+    :cond_2
+    new-instance p1, Lkotlin/TypeCastException;
 
-    invoke-direct {v0}, Ljava/lang/AbstractMethodError;-><init>()V
+    const-string v0, "null cannot be cast to non-null type (R, kotlin.coroutines.Continuation<T>) -> kotlin.Any?"
 
-    throw v0
-.end method
+    invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
 
-.method public getParameters()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lle/c;->getReflected()Lpe/b;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lpe/b;->getParameters()Ljava/util/List;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public getReflected()Lpe/b;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lle/c;->compute()Lpe/b;
-
-    move-result-object v0
-
-    if-eq v0, p0, :cond_0
-
-    return-object v0
-
-    .line 2
-    :cond_0
-    new-instance v0, Lje/a;
-
-    invoke-direct {v0}, Lje/a;-><init>()V
-
-    throw v0
-.end method
-
-.method public getReturnType()Lpe/k;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lle/c;->getReflected()Lpe/b;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lpe/b;->getReturnType()Lpe/k;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public getSignature()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    new-instance v0, Ljava/lang/AbstractMethodError;
-
-    invoke-direct {v0}, Ljava/lang/AbstractMethodError;-><init>()V
-
-    throw v0
-.end method
-
-.method public getTypeParameters()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lle/c;->getReflected()Lpe/b;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lpe/b;->getTypeParameters()Ljava/util/List;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public getVisibility()Lpe/l;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lle/c;->getReflected()Lpe/b;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lpe/b;->getVisibility()Lpe/l;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public isAbstract()Z
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lle/c;->getReflected()Lpe/b;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lpe/b;->isAbstract()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public isFinal()Z
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lle/c;->getReflected()Lpe/b;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lpe/b;->isFinal()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public isOpen()Z
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lle/c;->getReflected()Lpe/b;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lpe/b;->isOpen()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public isSuspend()Z
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lle/c;->getReflected()Lpe/b;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lpe/b;->isSuspend()Z
-
-    move-result v0
-
-    return v0
+    throw p1
 .end method

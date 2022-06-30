@@ -118,7 +118,6 @@
 .method private static getEmptyResponse()Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatsResponse;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatsResponse;
 
     const/4 v1, 0x0
@@ -141,7 +140,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatsResponse;->kakaoChatInfoList:Ljava/util/List;
 
     return-object v0
@@ -150,7 +148,6 @@
 .method public getTotalCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/KGKakaoTalkGroupChat$KGKakaoTalkGroupChatsResponse;->totalCount:I
 
     return v0

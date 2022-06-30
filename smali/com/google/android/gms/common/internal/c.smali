@@ -7,15 +7,14 @@
 
 
 # instance fields
-.field public final synthetic a:La2/l;
+.field public final synthetic a:Lb2/l;
 
 
 # direct methods
-.method public constructor <init>(La2/l;)V
+.method public constructor <init>(Lb2/l;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/c;->a:La2/l;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/c;->a:Lb2/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,13 +23,12 @@
 
 
 # virtual methods
-.method public final Q0(Lcom/google/android/gms/common/ConnectionResult;)V
+.method public final S0(Lcom/google/android/gms/common/ConnectionResult;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/c;->a:La2/l;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/c;->a:Lb2/l;
 
-    invoke-interface {v0, p1}, La2/l;->Q0(Lcom/google/android/gms/common/ConnectionResult;)V
+    invoke-interface {v0, p1}, Lb2/l;->S0(Lcom/google/android/gms/common/ConnectionResult;)V
 
     return-void
 .end method

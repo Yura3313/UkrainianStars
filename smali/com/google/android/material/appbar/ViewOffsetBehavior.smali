@@ -125,7 +125,7 @@
     return p1
 .end method
 
-.method public t()I
+.method public final t()I
     .locals 1
 
     .line 1
@@ -155,13 +155,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1, p2, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v(Landroid/view/View;I)V
 
     return-void
 .end method
 
-.method public v(I)Z
+.method public final v(I)Z
     .locals 1
 
     .line 1

@@ -25,15 +25,21 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;JLcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "lv"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_2
+    const-string v0, "av"
 
-    if-eqz p3, :cond_1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p9, :cond_0
+    const-string v0, "ak"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "extras"
+
+    invoke-static {p9, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -55,38 +61,9 @@
     iput-object p9, p0, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;->extras:Lcom/google/gson/JsonObject;
 
     return-void
-
-    :cond_0
-    const-string p1, "extras"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "ak"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "av"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "lv"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;JLcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;ILle/g;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;JLcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;ILse/e;)V
     .locals 12
 
     and-int/lit8 v0, p10, 0x1
@@ -161,7 +138,7 @@
 
     move-object/from16 v11, p9
 
-    .line 3
+    .line 2
     invoke-direct/range {v2 .. v11}, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;JLcom/google/gson/JsonObject;Lcom/google/gson/JsonObject;)V
 
     return-void
@@ -172,7 +149,6 @@
 .method public final getAk()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;->ak:Ljava/lang/String;
 
     return-object v0
@@ -181,7 +157,6 @@
 .method public final getAv()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;->av:Ljava/lang/String;
 
     return-object v0
@@ -190,7 +165,6 @@
 .method public final getC()Lcom/google/gson/JsonObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;->C:Lcom/google/gson/JsonObject;
 
     return-object v0
@@ -199,7 +173,6 @@
 .method public final getExtras()Lcom/google/gson/JsonObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;->extras:Lcom/google/gson/JsonObject;
 
     return-object v0
@@ -208,7 +181,6 @@
 .method public final getLv()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;->lv:Ljava/lang/String;
 
     return-object v0
@@ -217,7 +189,6 @@
 .method public final getP()Lcom/google/gson/JsonObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;->P:Lcom/google/gson/JsonObject;
 
     return-object v0
@@ -226,7 +197,6 @@
 .method public final getTa()Lcom/google/gson/JsonObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;->ta:Lcom/google/gson/JsonObject;
 
     return-object v0
@@ -235,7 +205,6 @@
 .method public final getTi()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakao/sdk/link/model/KakaoLinkAttachment;->ti:J
 
     return-wide v0

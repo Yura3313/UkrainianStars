@@ -90,7 +90,8 @@
 
     const-string p2, "_test"
 
-    invoke-static {p1, p2}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 1
+    invoke-static {p1, p2}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -99,6 +100,7 @@
     :cond_0
     const/4 p1, 0x0
 
+    .line 2
     :goto_0
     iput-object p1, p0, Lcom/unbotify/mobile/sdk/managers/EventManager;->apiKeyTest:Ljava/lang/String;
 
@@ -821,11 +823,11 @@
 
     invoke-direct {v2, p0}, Lcom/unbotify/mobile/sdk/managers/EventManager$1;-><init>(Lcom/unbotify/mobile/sdk/managers/EventManager;)V
 
-    invoke-virtual {v1, v2}, Landroid/os/HandlerThread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
+    invoke-virtual {v1, v2}, Ljava/lang/Thread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
     iget-object v1, p0, Lcom/unbotify/mobile/sdk/managers/EventManager;->thread:Landroid/os/HandlerThread;
 
-    invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
+    invoke-virtual {v1}, Ljava/lang/Thread;->start()V
 
     new-instance v1, Lcom/unbotify/mobile/sdk/managers/EventManager$Handler;
 

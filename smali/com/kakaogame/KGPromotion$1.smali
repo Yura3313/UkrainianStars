@@ -40,7 +40,6 @@
 .method public constructor <init>(Lcom/kakaogame/ui/CustomProgressDialog;Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/log/FirebaseEvent;Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGPromotion$1;->val$progress:Lcom/kakaogame/ui/CustomProgressDialog;
 
     iput-object p2, p0, Lcom/kakaogame/KGPromotion$1;->val$callback:Lcom/kakaogame/KGResultCallback;
@@ -160,7 +159,7 @@
     move-result-object p1
 
     .line 9
-    invoke-static {v1, p1, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v1, p1, v2}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 10
     iget-object v0, p0, Lcom/kakaogame/KGPromotion$1;->val$callback:Lcom/kakaogame/KGResultCallback;
@@ -184,7 +183,7 @@
     move-result-object p1
 
     .line 13
-    invoke-static {v1, p1, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v1, p1, v2}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 14
     iget-object v0, p0, Lcom/kakaogame/KGPromotion$1;->val$callback:Lcom/kakaogame/KGResultCallback;
@@ -212,7 +211,6 @@
 .method public onPreExecute()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGPromotion$1;->val$progress:Lcom/kakaogame/ui/CustomProgressDialog;
 
     invoke-virtual {v0}, Lcom/kakaogame/ui/CustomProgressDialog;->show()V

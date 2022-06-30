@@ -34,6 +34,15 @@
 
 
 # instance fields
+.field public f:Li/b$c;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Li/b$c<",
+            "TK;TV;>;"
+        }
+    .end annotation
+.end field
+
 .field public g:Li/b$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -43,16 +52,7 @@
     .end annotation
 .end field
 
-.field public h:Li/b$c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Li/b$c<",
-            "TK;TV;>;"
-        }
-    .end annotation
-.end field
-
-.field public i:Ljava/util/WeakHashMap;
+.field public h:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/WeakHashMap<",
@@ -64,7 +64,7 @@
     .end annotation
 .end field
 
-.field public j:I
+.field public i:I
 
 
 # direct methods
@@ -79,19 +79,19 @@
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    iput-object v0, p0, Li/b;->i:Ljava/util/WeakHashMap;
+    iput-object v0, p0, Li/b;->h:Ljava/util/WeakHashMap;
 
     const/4 v0, 0x0
 
     .line 3
-    iput v0, p0, Li/b;->j:I
+    iput v0, p0, Li/b;->i:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)Li/b$c;
+.method public b(Ljava/lang/Object;)Li/b$c;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -102,13 +102,13 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Li/b;->g:Li/b$c;
+    iget-object v0, p0, Li/b;->f:Li/b$c;
 
     :goto_0
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object v1, v0, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v1, v0, Li/b$c;->f:Ljava/lang/Object;
 
     invoke-virtual {v1, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -120,7 +120,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, v0, Li/b$c;->i:Li/b$c;
+    iget-object v0, v0, Li/b$c;->h:Li/b$c;
 
     goto :goto_0
 
@@ -129,7 +129,7 @@
     return-object v0
 .end method
 
-.method public c()Li/b$d;
+.method public final c()Li/b$d;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -145,7 +145,7 @@
     invoke-direct {v0, p0}, Li/b$d;-><init>(Li/b;)V
 
     .line 2
-    iget-object v1, p0, Li/b;->i:Ljava/util/WeakHashMap;
+    iget-object v1, p0, Li/b;->h:Ljava/util/WeakHashMap;
 
     sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
@@ -154,7 +154,7 @@
     return-object v0
 .end method
 
-.method public d(Ljava/lang/Object;Ljava/lang/Object;)Li/b$c;
+.method public final e(Ljava/lang/Object;Ljava/lang/Object;)Li/b$c;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -170,68 +170,39 @@
     invoke-direct {v0, p1, p2}, Li/b$c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 2
-    iget p1, p0, Li/b;->j:I
+    iget p1, p0, Li/b;->i:I
 
     add-int/lit8 p1, p1, 0x1
 
-    iput p1, p0, Li/b;->j:I
+    iput p1, p0, Li/b;->i:I
 
     .line 3
-    iget-object p1, p0, Li/b;->h:Li/b$c;
+    iget-object p1, p0, Li/b;->g:Li/b$c;
 
     if-nez p1, :cond_0
 
     .line 4
-    iput-object v0, p0, Li/b;->g:Li/b$c;
+    iput-object v0, p0, Li/b;->f:Li/b$c;
 
     .line 5
-    iput-object v0, p0, Li/b;->h:Li/b$c;
+    iput-object v0, p0, Li/b;->g:Li/b$c;
 
     return-object v0
 
     .line 6
     :cond_0
-    iput-object v0, p1, Li/b$c;->i:Li/b$c;
+    iput-object v0, p1, Li/b$c;->h:Li/b$c;
 
     .line 7
-    iput-object p1, v0, Li/b$c;->j:Li/b$c;
+    iput-object p1, v0, Li/b$c;->i:Li/b$c;
 
     .line 8
-    iput-object v0, p0, Li/b;->h:Li/b$c;
+    iput-object v0, p0, Li/b;->g:Li/b$c;
 
     return-object v0
 .end method
 
-.method public e(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TK;TV;)TV;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0, p1}, Li/b;->a(Ljava/lang/Object;)Li/b$c;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object p1, v0, Li/b$c;->h:Ljava/lang/Object;
-
-    return-object p1
-
-    .line 3
-    :cond_0
-    invoke-virtual {p0, p1, p2}, Li/b;->d(Ljava/lang/Object;Ljava/lang/Object;)Li/b$c;
-
-    const/4 p1, 0x0
-
-    return-object p1
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 6
 
     const/4 v0, 0x1
@@ -255,26 +226,27 @@
     check-cast p1, Li/b;
 
     .line 3
-    iget v1, p0, Li/b;->j:I
+    iget v1, p0, Li/b;->i:I
 
-    iget v3, p1, Li/b;->j:I
+    .line 4
+    iget v3, p1, Li/b;->i:I
 
     if-eq v1, v3, :cond_2
 
     return v2
 
-    .line 4
+    .line 5
     :cond_2
     invoke-virtual {p0}, Li/b;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    .line 5
+    .line 6
     invoke-virtual {p1}, Li/b;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 6
+    .line 7
     :cond_3
     move-object v3, v1
 
@@ -296,14 +268,14 @@
 
     if-eqz v5, :cond_6
 
-    .line 7
+    .line 8
     invoke-virtual {v3}, Li/b$e;->next()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Ljava/util/Map$Entry;
 
-    .line 8
+    .line 9
     invoke-virtual {v4}, Li/b$e;->next()Ljava/lang/Object;
 
     move-result-object v4
@@ -315,7 +287,7 @@
     :cond_4
     if-eqz v3, :cond_3
 
-    .line 9
+    .line 10
     invoke-interface {v3, v4}, Ljava/util/Map$Entry;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -325,7 +297,7 @@
     :cond_5
     return v2
 
-    .line 10
+    .line 11
     :cond_6
     invoke-virtual {v3}, Li/b$e;->hasNext()Z
 
@@ -350,7 +322,36 @@
     return v0
 .end method
 
-.method public f(Ljava/lang/Object;)Ljava/lang/Object;
+.method public f(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TK;TV;)TV;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1}, Li/b;->b(Ljava/lang/Object;)Li/b$c;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object p1, v0, Li/b$c;->g:Ljava/lang/Object;
+
+    return-object p1
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0, p1, p2}, Li/b;->e(Ljava/lang/Object;Ljava/lang/Object;)Li/b$c;
+
+    const/4 p1, 0x0
+
+    return-object p1
+.end method
+
+.method public g(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -359,7 +360,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Li/b;->a(Ljava/lang/Object;)Li/b$c;
+    invoke-virtual {p0, p1}, Li/b;->b(Ljava/lang/Object;)Li/b$c;
 
     move-result-object p1
 
@@ -371,14 +372,14 @@
 
     .line 2
     :cond_0
-    iget v1, p0, Li/b;->j:I
+    iget v1, p0, Li/b;->i:I
 
     add-int/lit8 v1, v1, -0x1
 
-    iput v1, p0, Li/b;->j:I
+    iput v1, p0, Li/b;->i:I
 
     .line 3
-    iget-object v1, p0, Li/b;->i:Ljava/util/WeakHashMap;
+    iget-object v1, p0, Li/b;->h:Ljava/util/WeakHashMap;
 
     invoke-virtual {v1}, Ljava/util/WeakHashMap;->isEmpty()Z
 
@@ -387,7 +388,7 @@
     if-nez v1, :cond_1
 
     .line 4
-    iget-object v1, p0, Li/b;->i:Ljava/util/WeakHashMap;
+    iget-object v1, p0, Li/b;->h:Ljava/util/WeakHashMap;
 
     invoke-virtual {v1}, Ljava/util/WeakHashMap;->keySet()Ljava/util/Set;
 
@@ -411,58 +412,58 @@
     check-cast v2, Li/b$f;
 
     .line 5
-    invoke-interface {v2, p1}, Li/b$f;->b(Li/b$c;)V
+    invoke-interface {v2, p1}, Li/b$f;->a(Li/b$c;)V
 
     goto :goto_0
 
     .line 6
     :cond_1
-    iget-object v1, p1, Li/b$c;->j:Li/b$c;
+    iget-object v1, p1, Li/b$c;->i:Li/b$c;
 
     if-eqz v1, :cond_2
 
     .line 7
-    iget-object v2, p1, Li/b$c;->i:Li/b$c;
+    iget-object v2, p1, Li/b$c;->h:Li/b$c;
 
-    iput-object v2, v1, Li/b$c;->i:Li/b$c;
+    iput-object v2, v1, Li/b$c;->h:Li/b$c;
 
     goto :goto_1
 
     .line 8
     :cond_2
-    iget-object v2, p1, Li/b$c;->i:Li/b$c;
+    iget-object v2, p1, Li/b$c;->h:Li/b$c;
 
-    iput-object v2, p0, Li/b;->g:Li/b$c;
+    iput-object v2, p0, Li/b;->f:Li/b$c;
 
     .line 9
     :goto_1
-    iget-object v2, p1, Li/b$c;->i:Li/b$c;
+    iget-object v2, p1, Li/b$c;->h:Li/b$c;
 
     if-eqz v2, :cond_3
 
     .line 10
-    iput-object v1, v2, Li/b$c;->j:Li/b$c;
+    iput-object v1, v2, Li/b$c;->i:Li/b$c;
 
     goto :goto_2
 
     .line 11
     :cond_3
-    iput-object v1, p0, Li/b;->h:Li/b$c;
+    iput-object v1, p0, Li/b;->g:Li/b$c;
 
     .line 12
     :goto_2
-    iput-object v0, p1, Li/b$c;->i:Li/b$c;
+    iput-object v0, p1, Li/b$c;->h:Li/b$c;
 
     .line 13
-    iput-object v0, p1, Li/b$c;->j:Li/b$c;
+    iput-object v0, p1, Li/b$c;->i:Li/b$c;
 
     .line 14
-    iget-object p1, p1, Li/b$c;->h:Ljava/lang/Object;
+    iget-object p1, p1, Li/b$c;->g:Ljava/lang/Object;
 
     return-object p1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 4
 
     .line 1
@@ -503,7 +504,7 @@
     return v1
 .end method
 
-.method public iterator()Ljava/util/Iterator;
+.method public final iterator()Ljava/util/Iterator;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -517,14 +518,14 @@
     .line 1
     new-instance v0, Li/b$a;
 
-    iget-object v1, p0, Li/b;->g:Li/b$c;
+    iget-object v1, p0, Li/b;->f:Li/b$c;
 
-    iget-object v2, p0, Li/b;->h:Li/b$c;
+    iget-object v2, p0, Li/b;->g:Li/b$c;
 
     invoke-direct {v0, v1, v2}, Li/b$a;-><init>(Li/b$c;Li/b$c;)V
 
     .line 2
-    iget-object v1, p0, Li/b;->i:Ljava/util/WeakHashMap;
+    iget-object v1, p0, Li/b;->h:Ljava/util/WeakHashMap;
 
     sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
@@ -533,7 +534,7 @@
     return-object v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 4
 
     const-string v0, "["

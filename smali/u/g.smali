@@ -1,4 +1,4 @@
-.class public Lu/g;
+.class public final Lu/g;
 .super Ljava/lang/Object;
 .source "NotificationCompatBuilder.java"
 
@@ -8,7 +8,7 @@
 
 .field public final b:Lu/f$c;
 
-.field public final c:Ljava/util/List;
+.field public final c:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -37,7 +37,7 @@
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v2, v0, Lu/g;->c:Ljava/util/List;
+    iput-object v2, v0, Lu/g;->c:Ljava/util/ArrayList;
 
     .line 3
     new-instance v2, Landroid/os/Bundle;
@@ -349,7 +349,7 @@
     if-eqz v13, :cond_6
 
     .line 36
-    invoke-virtual {v13}, Landroidx/core/graphics/drawable/IconCompat;->f()Landroid/graphics/drawable/Icon;
+    invoke-virtual {v13}, Landroidx/core/graphics/drawable/IconCompat;->g()Landroid/graphics/drawable/Icon;
 
     move-result-object v13
 
@@ -531,7 +531,7 @@
 
     .line 73
     :cond_f
-    iget-object v3, v0, Lu/g;->c:Ljava/util/List;
+    iget-object v3, v0, Lu/g;->c:Ljava/util/ArrayList;
 
     iget-object v5, v0, Lu/g;->a:Landroid/app/Notification$Builder;
 
@@ -1119,4 +1119,264 @@
 
     :cond_23
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()Landroid/app/Notification;
+    .locals 9
+
+    .line 1
+    iget-object v0, p0, Lu/g;->b:Lu/f$c;
+
+    iget-object v0, v0, Lu/f$c;->j:Lu/f$d;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    move-object v1, v0
+
+    check-cast v1, Lu/f$b;
+
+    .line 3
+    new-instance v2, Landroid/app/Notification$BigTextStyle;
+
+    .line 4
+    iget-object v3, p0, Lu/g;->a:Landroid/app/Notification$Builder;
+
+    .line 5
+    invoke-direct {v2, v3}, Landroid/app/Notification$BigTextStyle;-><init>(Landroid/app/Notification$Builder;)V
+
+    const/4 v3, 0x0
+
+    .line 6
+    invoke-virtual {v2, v3}, Landroid/app/Notification$BigTextStyle;->setBigContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$BigTextStyle;
+
+    move-result-object v2
+
+    iget-object v1, v1, Lu/f$b;->b:Ljava/lang/CharSequence;
+
+    .line 7
+    invoke-virtual {v2, v1}, Landroid/app/Notification$BigTextStyle;->bigText(Ljava/lang/CharSequence;)Landroid/app/Notification$BigTextStyle;
+
+    .line 8
+    :cond_0
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1a
+
+    const/16 v3, 0x15
+
+    if-lt v1, v2, :cond_1
+
+    .line 9
+    iget-object v1, p0, Lu/g;->a:Landroid/app/Notification$Builder;
+
+    invoke-virtual {v1}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v1
+
+    goto/16 :goto_1
+
+    :cond_1
+    const/16 v2, 0x18
+
+    if-lt v1, v2, :cond_2
+
+    .line 10
+    iget-object v1, p0, Lu/g;->a:Landroid/app/Notification$Builder;
+
+    invoke-virtual {v1}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v1
+
+    goto/16 :goto_1
+
+    :cond_2
+    if-lt v1, v3, :cond_3
+
+    .line 11
+    iget-object v1, p0, Lu/g;->a:Landroid/app/Notification$Builder;
+
+    iget-object v2, p0, Lu/g;->d:Landroid/os/Bundle;
+
+    invoke-virtual {v1, v2}, Landroid/app/Notification$Builder;->setExtras(Landroid/os/Bundle;)Landroid/app/Notification$Builder;
+
+    .line 12
+    iget-object v1, p0, Lu/g;->a:Landroid/app/Notification$Builder;
+
+    invoke-virtual {v1}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v1
+
+    goto/16 :goto_1
+
+    :cond_3
+    const/16 v2, 0x14
+
+    if-lt v1, v2, :cond_4
+
+    .line 13
+    iget-object v1, p0, Lu/g;->a:Landroid/app/Notification$Builder;
+
+    iget-object v2, p0, Lu/g;->d:Landroid/os/Bundle;
+
+    invoke-virtual {v1, v2}, Landroid/app/Notification$Builder;->setExtras(Landroid/os/Bundle;)Landroid/app/Notification$Builder;
+
+    .line 14
+    iget-object v1, p0, Lu/g;->a:Landroid/app/Notification$Builder;
+
+    invoke-virtual {v1}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v1
+
+    goto :goto_1
+
+    :cond_4
+    const/16 v2, 0x13
+
+    const-string v4, "android.support.actionExtras"
+
+    if-lt v1, v2, :cond_6
+
+    .line 15
+    iget-object v1, p0, Lu/g;->c:Ljava/util/ArrayList;
+
+    .line 16
+    invoke-static {v1}, Lu/h;->a(Ljava/util/List;)Landroid/util/SparseArray;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_5
+
+    .line 17
+    iget-object v2, p0, Lu/g;->d:Landroid/os/Bundle;
+
+    invoke-virtual {v2, v4, v1}, Landroid/os/Bundle;->putSparseParcelableArray(Ljava/lang/String;Landroid/util/SparseArray;)V
+
+    .line 18
+    :cond_5
+    iget-object v1, p0, Lu/g;->a:Landroid/app/Notification$Builder;
+
+    iget-object v2, p0, Lu/g;->d:Landroid/os/Bundle;
+
+    invoke-virtual {v1, v2}, Landroid/app/Notification$Builder;->setExtras(Landroid/os/Bundle;)Landroid/app/Notification$Builder;
+
+    .line 19
+    iget-object v1, p0, Lu/g;->a:Landroid/app/Notification$Builder;
+
+    invoke-virtual {v1}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v1
+
+    goto :goto_1
+
+    .line 20
+    :cond_6
+    iget-object v1, p0, Lu/g;->a:Landroid/app/Notification$Builder;
+
+    invoke-virtual {v1}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v1
+
+    .line 21
+    invoke-static {v1}, Lu/f;->a(Landroid/app/Notification;)Landroid/os/Bundle;
+
+    move-result-object v2
+
+    .line 22
+    new-instance v5, Landroid/os/Bundle;
+
+    iget-object v6, p0, Lu/g;->d:Landroid/os/Bundle;
+
+    invoke-direct {v5, v6}, Landroid/os/Bundle;-><init>(Landroid/os/Bundle;)V
+
+    .line 23
+    iget-object v6, p0, Lu/g;->d:Landroid/os/Bundle;
+
+    invoke-virtual {v6}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+
+    move-result-object v6
+
+    invoke-interface {v6}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v6
+
+    :cond_7
+    :goto_0
+    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_8
+
+    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/lang/String;
+
+    .line 24
+    invoke-virtual {v2, v7}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_7
+
+    .line 25
+    invoke-virtual {v5, v7}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 26
+    :cond_8
+    invoke-virtual {v2, v5}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
+
+    .line 27
+    iget-object v2, p0, Lu/g;->c:Ljava/util/ArrayList;
+
+    .line 28
+    invoke-static {v2}, Lu/h;->a(Ljava/util/List;)Landroid/util/SparseArray;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_9
+
+    .line 29
+    invoke-static {v1}, Lu/f;->a(Landroid/app/Notification;)Landroid/os/Bundle;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v4, v2}, Landroid/os/Bundle;->putSparseParcelableArray(Ljava/lang/String;Landroid/util/SparseArray;)V
+
+    .line 30
+    :cond_9
+    :goto_1
+    iget-object v2, p0, Lu/g;->b:Lu/f$c;
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 31
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    if-lt v2, v3, :cond_a
+
+    if-eqz v0, :cond_a
+
+    .line 32
+    iget-object v2, p0, Lu/g;->b:Lu/f$c;
+
+    iget-object v2, v2, Lu/f$c;->j:Lu/f$d;
+
+    .line 33
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    :cond_a
+    if-eqz v0, :cond_b
+
+    .line 34
+    invoke-static {v1}, Lu/f;->a(Landroid/app/Notification;)Landroid/os/Bundle;
+
+    :cond_b
+    return-object v1
 .end method

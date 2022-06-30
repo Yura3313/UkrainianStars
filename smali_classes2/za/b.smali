@@ -1,99 +1,51 @@
-.class public Lza/b;
+.class public final Lza/b;
 .super Ljava/lang/Object;
-.source "BitmapLruCache.java"
+.source "DynamicFormFlow.java"
+
+# interfaces
+.implements Lza/e;
 
 
 # instance fields
-.field public final a:Lm/e;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lm/e<",
-            "Ljava/lang/String;",
-            "Landroid/graphics/Bitmap;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public a:Lpa/b;
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 2
+# virtual methods
+.method public final a()V
+    .locals 5
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget-object v0, p0, Lza/b;->a:Lpa/b;
+
+    const/4 v1, 0x1
 
     .line 2
-    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
+    iget-object v2, v0, Lpa/b;->c:Landroid/os/Bundle;
 
-    move-result-object v0
+    const/4 v3, 0x0
 
-    invoke-virtual {v0}, Ljava/lang/Runtime;->maxMemory()J
+    if-eqz v2, :cond_0
 
-    move-result-wide v0
-
-    long-to-float v0, v0
-
-    const v1, 0x3e19999a
-
-    mul-float v0, v0, v1
-
-    invoke-static {v0}, Ljava/lang/Math;->round(F)I
-
-    move-result v0
-
-    const/high16 v1, 0x800000
-
-    if-lt v0, v1, :cond_0
-
-    const/high16 v0, 0x800000
+    const-string v4, "flow_title"
 
     .line 3
+    invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 4
     :cond_0
-    new-instance v1, Lza/b$a;
-
-    invoke-direct {v1, p0, v0}, Lza/b$a;-><init>(Lza/b;I)V
-
-    iput-object v1, p0, Lza/b;->a:Lm/e;
+    invoke-virtual {v0, v3, v1}, Lpa/b;->l(Ljava/util/List;Z)V
 
     return-void
 .end method
 
+.method public final b()V
+    .locals 0
 
-# virtual methods
-.method public a(Ljava/lang/String;)Landroid/graphics/Bitmap;
-    .locals 3
+    return-void
+.end method
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+.method public final c()V
+    .locals 0
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "Bitmap loaded from cache with key: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "Helpshift_BtmpLruCache"
-
-    const/4 v2, 0x0
-
-    .line 2
-    invoke-static {v1, v0, v2, v2}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
-
-    .line 3
-    iget-object v0, p0, Lza/b;->a:Lm/e;
-
-    invoke-virtual {v0, p1}, Lm/e;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/graphics/Bitmap;
-
-    return-object p1
+    return-void
 .end method

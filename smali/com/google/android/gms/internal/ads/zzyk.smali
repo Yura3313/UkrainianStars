@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.client.IVideoLifecycleCallbacks"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,33 +19,33 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 1
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    const/4 p4, 0x1
+    const/4 v0, 0x1
 
-    if-eq p1, p4, :cond_4
+    if-eq p1, v0, :cond_4
 
-    const/4 v0, 0x2
+    const/4 v1, 0x2
 
-    if-eq p1, v0, :cond_3
+    if-eq p1, v1, :cond_3
 
-    const/4 v0, 0x3
+    const/4 v1, 0x3
 
-    if-eq p1, v0, :cond_2
+    if-eq p1, v1, :cond_2
 
-    const/4 v0, 0x4
+    const/4 v1, 0x4
 
-    if-eq p1, v0, :cond_1
+    if-eq p1, v1, :cond_1
 
-    const/4 v0, 0x5
+    const/4 v1, 0x5
 
-    if-eq p1, v0, :cond_0
+    if-eq p1, v1, :cond_0
 
     const/4 p1, 0x0
 
@@ -54,7 +53,7 @@
 
     .line 1
     :cond_0
-    sget-object p1, Lj3/mw0;->a:Ljava/lang/ClassLoader;
+    sget-object p1, Lk3/cw0;->a:Ljava/lang/ClassLoader;
 
     .line 2
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
@@ -65,7 +64,7 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzzz;
 
     .line 4
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzzz;->g:Lcom/google/android/gms/ads/p$a;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzzz;->f:Lcom/google/android/gms/ads/o$a;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -77,53 +76,44 @@
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzzz;
 
-    .line 6
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzzz;->g:Lcom/google/android/gms/ads/p$a;
-
-    invoke-virtual {p1}, Lcom/google/android/gms/ads/p$a;->a()V
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzzz;->D0()V
 
     goto :goto_0
 
-    .line 7
+    .line 6
     :cond_2
     move-object p1, p0
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzzz;
 
-    .line 8
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzzz;->g:Lcom/google/android/gms/ads/p$a;
-
-    invoke-virtual {p1}, Lcom/google/android/gms/ads/p$a;->b()V
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzzz;->k0()V
 
     goto :goto_0
 
-    .line 9
+    .line 7
     :cond_3
     move-object p1, p0
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzzz;
 
-    .line 10
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzzz;->g:Lcom/google/android/gms/ads/p$a;
+    .line 8
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzzz;->f:Lcom/google/android/gms/ads/o$a;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     goto :goto_0
 
-    .line 11
+    .line 9
     :cond_4
     move-object p1, p0
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzzz;
 
-    .line 12
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzzz;->g:Lcom/google/android/gms/ads/p$a;
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzzz;->g5()V
 
-    invoke-virtual {p1}, Lcom/google/android/gms/ads/p$a;->c()V
-
-    .line 13
+    .line 10
     :goto_0
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    return p4
+    return v0
 .end method

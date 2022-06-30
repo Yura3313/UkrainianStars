@@ -41,7 +41,7 @@
 
 
 # virtual methods
-.method public synthetic getBooleanProperty(Ljava/lang/String;)Ljava/lang/Boolean;
+.method public final synthetic getBooleanProperty(Ljava/lang/String;)Ljava/lang/Boolean;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/config/a;->a(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;)Ljava/lang/Boolean;
@@ -51,7 +51,7 @@
     return-object p1
 .end method
 
-.method public synthetic getDoubleProperty(Ljava/lang/String;)Ljava/lang/Double;
+.method public final synthetic getDoubleProperty(Ljava/lang/String;)Ljava/lang/Double;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/config/a;->b(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;)Ljava/lang/Double;
@@ -61,7 +61,7 @@
     return-object p1
 .end method
 
-.method public synthetic getList(Ljava/lang/String;)Ljava/util/List;
+.method public final synthetic getList(Ljava/lang/String;)Ljava/util/List;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/config/a;->c(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;)Ljava/util/List;
@@ -161,7 +161,7 @@
     return-object p1
 .end method
 
-.method public synthetic getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public final synthetic getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/config/a;->d(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;

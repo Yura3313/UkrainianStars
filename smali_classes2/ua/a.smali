@@ -1,26 +1,62 @@
-.class public Lua/a;
-.super Lf9/a;
-.source "FaqsDBHelper.java"
+.class public final Lua/a;
+.super Ljava/lang/Object;
+.source "ConversationSetupFragment.java"
+
+# interfaces
+.implements Lqb/d;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lua/a$a;
-    }
-.end annotation
-
-
-# static fields
-.field public static final synthetic i:I
+# instance fields
+.field public final synthetic a:Lua/d;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lf9/b;)V
+.method public constructor <init>(Lua/d;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Lf9/a;-><init>(Landroid/content/Context;Lf9/b;)V
+    iput-object p1, p0, Lua/a;->a:Lua/d;
 
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    check-cast p1, Lqb/a;
+
+    .line 2
+    iget-boolean p1, p1, Lqb/a;->d:Z
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    iget-object p1, p0, Lua/a;->a:Lua/d;
+
+    .line 4
+    iget-object p1, p1, Lua/d;->g0:Landroid/widget/ProgressBar;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    iget-object p1, p0, Lua/a;->a:Lua/d;
+
+    .line 6
+    iget-object p1, p1, Lua/d;->g0:Landroid/widget/ProgressBar;
+
+    const/16 v0, 0x8
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    :goto_0
     return-void
 .end method

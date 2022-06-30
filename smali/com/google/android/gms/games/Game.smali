@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lb2/e;
+.implements Lc2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lb2/e<",
+        "Lc2/e<",
         "Lcom/google/android/gms/games/Game;",
         ">;"
     }
@@ -20,34 +20,34 @@
 
 
 # virtual methods
-.method public abstract E0()Z
+.method public abstract E0()Ljava/lang/String;
 .end method
 
-.method public abstract I0()Ljava/lang/String;
+.method public abstract F()Ljava/lang/String;
 .end method
 
-.method public abstract M0()Z
+.method public abstract G0()I
 .end method
 
-.method public abstract Q0()Z
+.method public abstract I0()Z
 .end method
 
-.method public abstract Q1()Z
+.method public abstract X()Z
 .end method
 
-.method public abstract a()Landroid/net/Uri;
+.method public abstract X1()Z
 .end method
 
-.method public abstract d2()Z
+.method public abstract a1()Ljava/lang/String;
 .end method
 
-.method public abstract e0()Z
+.method public abstract b()Z
 .end method
 
-.method public abstract f0()Ljava/lang/String;
+.method public abstract c()Landroid/net/Uri;
 .end method
 
-.method public abstract g()Z
+.method public abstract e1()Z
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
@@ -80,29 +80,29 @@
     .end annotation
 .end method
 
-.method public abstract h()Landroid/net/Uri;
+.method public abstract i()Landroid/net/Uri;
 .end method
 
 .method public abstract j2()Z
 .end method
 
-.method public abstract m()Ljava/lang/String;
+.method public abstract m0()Z
 .end method
 
-.method public abstract m1()I
+.method public abstract n()Ljava/lang/String;
 .end method
 
-.method public abstract n1()Ljava/lang/String;
+.method public abstract p2()Z
 .end method
 
-.method public abstract r0()Ljava/lang/String;
+.method public abstract t0()Ljava/lang/String;
 .end method
 
-.method public abstract s0()Ljava/lang/String;
+.method public abstract u1()I
 .end method
 
-.method public abstract v0()I
+.method public abstract v1()Ljava/lang/String;
 .end method
 
-.method public abstract v2()Landroid/net/Uri;
+.method public abstract z2()Landroid/net/Uri;
 .end method

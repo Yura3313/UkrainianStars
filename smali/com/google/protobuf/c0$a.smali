@@ -1,4 +1,4 @@
-.class public synthetic Lcom/google/protobuf/c0$a;
+.class public final synthetic Lcom/google/protobuf/c0$a;
 .super Ljava/lang/Object;
 .source "LazyField.java"
 

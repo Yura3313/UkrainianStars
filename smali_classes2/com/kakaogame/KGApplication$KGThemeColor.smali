@@ -188,7 +188,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/kakaogame/KGApplication$KGThemeColor;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/kakaogame/KGApplication$KGThemeColor;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -203,7 +202,6 @@
 .method public static values()[Lcom/kakaogame/KGApplication$KGThemeColor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/KGApplication$KGThemeColor;->$VALUES:[Lcom/kakaogame/KGApplication$KGThemeColor;
 
     invoke-virtual {v0}, [Lcom/kakaogame/KGApplication$KGThemeColor;->clone()Ljava/lang/Object;
@@ -220,7 +218,6 @@
 .method public getCode()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGApplication$KGThemeColor;->code:Ljava/lang/String;
 
     return-object v0

@@ -80,7 +80,6 @@
 .method public static synthetic access$000(Lokhttp3/RealCall;)Lokhttp3/EventListener;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lokhttp3/RealCall;->eventListener:Lokhttp3/EventListener;
 
     return-object p0
@@ -135,7 +134,6 @@
 .method public cancel()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/RealCall;->retryAndFollowUpInterceptor:Lokhttp3/internal/http/RetryAndFollowUpInterceptor;
 
     invoke-virtual {v0}, Lokhttp3/internal/http/RetryAndFollowUpInterceptor;->cancel()V
@@ -559,7 +557,6 @@
 .method public isCanceled()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/RealCall;->retryAndFollowUpInterceptor:Lokhttp3/internal/http/RetryAndFollowUpInterceptor;
 
     invoke-virtual {v0}, Lokhttp3/internal/http/RetryAndFollowUpInterceptor;->isCanceled()Z
@@ -574,7 +571,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-boolean v0, p0, Lokhttp3/RealCall;->executed:Z
     :try_end_0
@@ -595,7 +591,6 @@
 .method public redactedUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/RealCall;->originalRequest:Lokhttp3/Request;
 
     invoke-virtual {v0}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
@@ -612,7 +607,6 @@
 .method public request()Lokhttp3/Request;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/RealCall;->originalRequest:Lokhttp3/Request;
 
     return-object v0
@@ -621,7 +615,6 @@
 .method public streamAllocation()Lokhttp3/internal/connection/StreamAllocation;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/RealCall;->retryAndFollowUpInterceptor:Lokhttp3/internal/http/RetryAndFollowUpInterceptor;
 
     invoke-virtual {v0}, Lokhttp3/internal/http/RetryAndFollowUpInterceptor;->streamAllocation()Lokhttp3/internal/connection/StreamAllocation;
@@ -634,7 +627,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/RealCall;->timeout:Lokio/AsyncTimeout;
 
     return-object v0
@@ -671,7 +663,7 @@
     if-eqz p1, :cond_1
 
     .line 3
-    invoke-virtual {v0, p1}, Ljava/io/InterruptedIOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v0, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     :cond_1
     return-object v0

@@ -1,4 +1,4 @@
-.class public Lk/d;
+.class public final Lk/d;
 .super Ljava/lang/Object;
 .source "CustomTabsSessionToken.java"
 
@@ -22,10 +22,9 @@
 
 
 # virtual methods
-.method public a()Landroid/os/IBinder;
+.method public final a()Landroid/os/IBinder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lk/d;->a:Landroid/support/customtabs/ICustomTabsCallback;
 
     invoke-interface {v0}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
@@ -35,7 +34,7 @@
     return-object v0
 .end method
 
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
     .line 1
@@ -69,10 +68,9 @@
     return p1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lk/d;->a()Landroid/os/IBinder;
 
     move-result-object v0

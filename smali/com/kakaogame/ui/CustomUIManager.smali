@@ -50,7 +50,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/ui/CustomUIManager;)Lcom/kakaogame/util/MutexLock;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/ui/CustomUIManager;->uiAlertLock:Lcom/kakaogame/util/MutexLock;
 
     return-object p0
@@ -61,7 +60,6 @@
 .method public hasCustomAlertHandler(Lcom/kakaogame/KGCustomUI$KGCustomAlertType;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/ui/CustomUIManager;->uiHandlers:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -106,6 +104,7 @@
 
     move-result-object v0
 
+    .line 2
     invoke-virtual {p1}, Lcom/kakaogame/KGCustomUI$KGCustomAlertType;->getName()Ljava/lang/String;
 
     move-result-object v1
@@ -120,7 +119,7 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     iget-object v0, p0, Lcom/kakaogame/ui/CustomUIManager;->uiHandlers:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -138,6 +137,7 @@
 
     move-result-object v0
 
+    .line 2
     invoke-virtual {p2}, Lcom/kakaogame/KGObject;->toJSONString()Ljava/lang/String;
 
     move-result-object v1
@@ -154,17 +154,17 @@
 
     const/4 v0, 0x0
 
-    .line 2
+    .line 3
     iput-object v0, p0, Lcom/kakaogame/ui/CustomUIManager;->uiAlertLock:Lcom/kakaogame/util/MutexLock;
 
-    .line 3
+    .line 4
     invoke-static {}, Lcom/kakaogame/util/MutexLock;->createLock()Lcom/kakaogame/util/MutexLock;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/kakaogame/ui/CustomUIManager;->uiAlertLock:Lcom/kakaogame/util/MutexLock;
 
-    .line 4
+    .line 5
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v0
@@ -175,19 +175,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
+    .line 6
     new-instance p1, Lcom/kakaogame/ui/CustomUIManager$1;
 
     invoke-direct {p1, p0, p2}, Lcom/kakaogame/ui/CustomUIManager$1;-><init>(Lcom/kakaogame/ui/CustomUIManager;Lcom/kakaogame/KGCustomUI$KGCustomAlert;)V
 
     invoke-static {p1}, Lcom/kakaogame/core/UiThreadManager;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 6
+    .line 7
     iget-object p1, p0, Lcom/kakaogame/ui/CustomUIManager;->uiAlertLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {p1}, Lcom/kakaogame/util/MutexLock;->lock()V
 
-    .line 7
+    .line 8
     iget-object p1, p0, Lcom/kakaogame/ui/CustomUIManager;->uiAlertLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {p1}, Lcom/kakaogame/util/MutexLock;->getContent()Ljava/lang/Object;
@@ -198,7 +198,7 @@
 
     return-object p1
 
-    .line 8
+    .line 9
     :cond_0
     iget-object v0, p0, Lcom/kakaogame/ui/CustomUIManager;->uiHandlers:Ljava/util/Map;
 
@@ -212,19 +212,19 @@
 
     check-cast v0, Lcom/kakaogame/KGCustomUI$KGShowCustomAlertHandler;
 
-    .line 9
+    .line 10
     new-instance v1, Lcom/kakaogame/ui/CustomUIManager$2;
 
     invoke-direct {v1, p0}, Lcom/kakaogame/ui/CustomUIManager$2;-><init>(Lcom/kakaogame/ui/CustomUIManager;)V
 
     invoke-interface {v0, p1, p2, v1}, Lcom/kakaogame/KGCustomUI$KGShowCustomAlertHandler;->onShow(Landroid/app/Activity;Lcom/kakaogame/KGCustomUI$KGCustomAlert;Lcom/kakaogame/KGCustomUI$KGCustomAlertCallback;)V
 
-    .line 10
+    .line 11
     iget-object p1, p0, Lcom/kakaogame/ui/CustomUIManager;->uiAlertLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {p1}, Lcom/kakaogame/util/MutexLock;->lock()V
 
-    .line 11
+    .line 12
     iget-object p1, p0, Lcom/kakaogame/ui/CustomUIManager;->uiAlertLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {p1}, Lcom/kakaogame/util/MutexLock;->getContent()Ljava/lang/Object;

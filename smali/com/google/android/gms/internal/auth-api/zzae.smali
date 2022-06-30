@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract p7(Lcom/google/android/gms/common/api/Status;Landroid/app/PendingIntent;)V
+.method public abstract a2()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

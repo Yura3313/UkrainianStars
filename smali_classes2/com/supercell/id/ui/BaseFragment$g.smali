@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/BaseFragment;->j1(Z)V
+    value = Lcom/supercell/id/ui/BaseFragment;->a1(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;Z)V
+.method public constructor <init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;)V
     .locals 0
 
     iput-object p1, p0, Lcom/supercell/id/ui/BaseFragment$g;->a:Landroid/view/View;
@@ -38,17 +38,16 @@
 
 
 # virtual methods
-.method public final a(Landroidx/core/widget/NestedScrollView;IIII)V
-    .locals 0
+.method public final a(Landroidx/core/widget/NestedScrollView;II)V
+    .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$g;->b:Lcom/supercell/id/ui/BaseFragment;
 
-    iget-object p2, p0, Lcom/supercell/id/ui/BaseFragment$g;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment$g;->a:Landroid/view/View;
 
-    sub-int p4, p3, p5
+    sub-int p3, p2, p3
 
-    invoke-static {p1, p2, p3, p4}, Lcom/supercell/id/ui/BaseFragment;->X0(Lcom/supercell/id/ui/BaseFragment;Landroid/view/View;II)V
+    invoke-static {p1, v0, p2, p3}, Lcom/supercell/id/ui/BaseFragment;->O0(Lcom/supercell/id/ui/BaseFragment;Landroid/view/View;II)V
 
     return-void
 .end method

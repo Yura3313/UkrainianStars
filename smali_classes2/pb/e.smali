@@ -1,934 +1,894 @@
 .class public final Lpb/e;
 .super Ljava/lang/Object;
-.source "CameraManager.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lpb/e$a;
-    }
-.end annotation
+.source "DeflateUtil.java"
 
 
 # static fields
-.field public static final synthetic n:I
-
-
-# instance fields
-.field public a:Landroid/hardware/Camera;
-
-.field public b:Landroid/hardware/Camera$CameraInfo;
-
-.field public c:Lpb/a;
-
-.field public d:Lg6/b;
-
-.field public e:Z
-
-.field public f:Ljava/lang/String;
-
-.field public g:Lpb/f;
-
-.field public h:Lpb/j;
-
-.field public i:Lob/o;
-
-.field public j:Lob/o;
-
-.field public k:I
-
-.field public l:Landroid/content/Context;
-
-.field public final m:Lpb/e$a;
+.field public static a:[I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
+    const/16 v0, 0x13
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_0
+
+    sput-object v0, Lpb/e;->a:[I
+
+    return-void
+
+    :array_0
+    .array-data 4
+        0x10
+        0x11
+        0x12
+        0x0
+        0x8
+        0x7
+        0x9
+        0x6
+        0xa
+        0x5
+        0xb
+        0x4
+        0xc
+        0x3
+        0xd
+        0x2
+        0xe
+        0x1
+        0xf
+    .end array-data
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    new-instance v0, Lpb/f;
-
-    invoke-direct {v0}, Lpb/f;-><init>()V
-
-    iput-object v0, p0, Lpb/e;->g:Lpb/f;
-
-    const/4 v0, -0x1
-
-    .line 3
-    iput v0, p0, Lpb/e;->k:I
-
-    .line 4
-    iput-object p1, p0, Lpb/e;->l:Landroid/content/Context;
-
-    .line 5
-    new-instance p1, Lpb/e$a;
-
-    invoke-direct {p1, p0}, Lpb/e$a;-><init>(Lpb/e;)V
-
-    iput-object p1, p0, Lpb/e;->m:Lpb/e$a;
-
     return-void
 .end method
 
-
-# virtual methods
-.method public a()V
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, Lpb/e;->a:Landroid/hardware/Camera;
-
-    if-eqz v0, :cond_6
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    .line 2
-    :try_start_0
-    iget-object v3, p0, Lpb/e;->h:Lpb/j;
-
-    .line 3
-    iget v3, v3, Lpb/j;->b:I
-
-    if-eqz v3, :cond_3
-
-    if-eq v3, v1, :cond_2
-
-    const/4 v4, 0x2
-
-    if-eq v3, v4, :cond_1
-
-    const/4 v4, 0x3
-
-    if-eq v3, v4, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v3, 0x10e
-
-    goto :goto_1
-
-    :cond_1
-    const/16 v3, 0xb4
-
-    goto :goto_1
-
-    :cond_2
-    const/16 v3, 0x5a
-
-    goto :goto_1
-
-    :cond_3
-    :goto_0
-    const/4 v3, 0x0
-
-    .line 4
-    :goto_1
-    iget-object v4, p0, Lpb/e;->b:Landroid/hardware/Camera$CameraInfo;
-
-    iget v5, v4, Landroid/hardware/Camera$CameraInfo;->facing:I
-
-    if-ne v5, v1, :cond_4
-
-    .line 5
-    iget v4, v4, Landroid/hardware/Camera$CameraInfo;->orientation:I
-
-    add-int/2addr v4, v3
-
-    rem-int/lit16 v4, v4, 0x168
-
-    rsub-int v3, v4, 0x168
-
-    .line 6
-    rem-int/lit16 v3, v3, 0x168
-
-    goto :goto_2
-
-    .line 7
-    :cond_4
-    iget v4, v4, Landroid/hardware/Camera$CameraInfo;->orientation:I
-
-    sub-int/2addr v4, v3
-
-    add-int/lit16 v4, v4, 0x168
-
-    rem-int/lit16 v3, v4, 0x168
-
-    .line 8
-    :goto_2
-    iput v3, p0, Lpb/e;->k:I
-
-    .line 9
-    invoke-virtual {v0, v3}, Landroid/hardware/Camera;->setDisplayOrientation(I)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 10
-    :catch_0
-    :try_start_1
-    invoke-virtual {p0, v2}, Lpb/e;->d(Z)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
-
-    goto :goto_3
-
-    .line 11
-    :catch_1
-    :try_start_2
-    invoke-virtual {p0, v1}, Lpb/e;->d(Z)V
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
-
-    goto :goto_3
-
-    :catch_2
-    nop
-
-    .line 12
-    :goto_3
-    iget-object v0, p0, Lpb/e;->a:Landroid/hardware/Camera;
-
-    invoke-virtual {v0}, Landroid/hardware/Camera;->getParameters()Landroid/hardware/Camera$Parameters;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/hardware/Camera$Parameters;->getPreviewSize()Landroid/hardware/Camera$Size;
-
-    move-result-object v0
-
-    if-nez v0, :cond_5
-
-    .line 13
-    iget-object v0, p0, Lpb/e;->i:Lob/o;
-
-    iput-object v0, p0, Lpb/e;->j:Lob/o;
-
-    goto :goto_4
-
-    .line 14
-    :cond_5
-    new-instance v1, Lob/o;
-
-    iget v2, v0, Landroid/hardware/Camera$Size;->width:I
-
-    iget v0, v0, Landroid/hardware/Camera$Size;->height:I
-
-    invoke-direct {v1, v2, v0}, Lob/o;-><init>(II)V
-
-    iput-object v1, p0, Lpb/e;->j:Lob/o;
-
-    .line 15
-    :goto_4
-    iget-object v0, p0, Lpb/e;->m:Lpb/e$a;
-
-    iget-object v1, p0, Lpb/e;->j:Lob/o;
-
-    .line 16
-    iput-object v1, v0, Lpb/e$a;->b:Lob/o;
-
-    return-void
-
-    .line 17
-    :cond_6
-    new-instance v0, Ljava/lang/RuntimeException;
-
-    const-string v1, "Camera not open"
-
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public b()Z
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lpb/e;->k:I
-
-    const/4 v1, -0x1
-
-    if-eq v0, v1, :cond_1
-
-    .line 2
-    rem-int/lit16 v0, v0, 0xb4
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-
-    .line 3
-    :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "Rotation not calculated yet. Call configure() first."
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public c()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lpb/e;->g:Lpb/f;
-
-    .line 2
-    iget v0, v0, Lpb/f;->a:I
-
-    .line 3
-    invoke-static {v0}, Li6/a;->a(I)I
-
-    move-result v0
-
-    const/4 v1, -0x1
-
-    if-ne v0, v1, :cond_0
+.method public static a(Lpb/b;[I[ILpb/m;)V
+    .locals 7
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lpb/j;
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    invoke-static {v0}, Landroid/hardware/Camera;->open(I)Landroid/hardware/Camera;
-
-    move-result-object v0
-
-    .line 5
-    :goto_0
-    iput-object v0, p0, Lpb/e;->a:Landroid/hardware/Camera;
-
-    if-eqz v0, :cond_1
-
-    .line 6
-    iget-object v0, p0, Lpb/e;->g:Lpb/f;
-
-    .line 7
-    iget v0, v0, Lpb/f;->a:I
-
-    .line 8
-    invoke-static {v0}, Li6/a;->a(I)I
-
-    move-result v0
-
-    .line 9
-    new-instance v1, Landroid/hardware/Camera$CameraInfo;
-
-    invoke-direct {v1}, Landroid/hardware/Camera$CameraInfo;-><init>()V
-
-    iput-object v1, p0, Lpb/e;->b:Landroid/hardware/Camera$CameraInfo;
-
-    .line 10
-    invoke-static {v0, v1}, Landroid/hardware/Camera;->getCameraInfo(ILandroid/hardware/Camera$CameraInfo;)V
-
-    return-void
-
-    .line 11
-    :cond_1
-    new-instance v0, Ljava/lang/RuntimeException;
-
-    const-string v1, "Failed to open camera"
-
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public final d(Z)V
-    .locals 9
+    const/4 v1, 0x0
 
     .line 1
-    iget-object v0, p0, Lpb/e;->a:Landroid/hardware/Camera;
+    :goto_0
+    array-length v2, p2
 
-    invoke-virtual {v0}, Landroid/hardware/Camera;->getParameters()Landroid/hardware/Camera$Parameters;
-
-    move-result-object v0
+    if-ge v1, v2, :cond_2
 
     .line 2
-    iget-object v1, p0, Lpb/e;->f:Ljava/lang/String;
-
-    if-nez v1, :cond_0
-
-    .line 3
-    invoke-virtual {v0}, Landroid/hardware/Camera$Parameters;->flatten()Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lpb/e;->f:Ljava/lang/String;
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    invoke-virtual {v0, v1}, Landroid/hardware/Camera$Parameters;->unflatten(Ljava/lang/String;)V
-
-    :goto_0
-    if-nez v0, :cond_1
-
-    return-void
-
-    .line 5
-    :cond_1
-    invoke-virtual {v0}, Landroid/hardware/Camera$Parameters;->flatten()Ljava/lang/String;
-
-    .line 6
-    iget-object v1, p0, Lpb/e;->g:Lpb/f;
-
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    sget v1, Lh6/a;->a:I
-
-    .line 7
-    invoke-virtual {v0}, Landroid/hardware/Camera$Parameters;->getSupportedFocusModes()Ljava/util/List;
-
-    move-result-object v1
-
-    const-string v2, "focus mode"
-
-    const/4 v3, 0x1
-
-    new-array v4, v3, [Ljava/lang/String;
-
-    const/4 v5, 0x0
-
-    const-string v6, "auto"
-
-    aput-object v6, v4, v5
-
-    .line 8
-    invoke-static {v2, v1, v4}, Lh6/a;->a(Ljava/lang/String;Ljava/util/Collection;[Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const/4 v6, 0x2
-
-    if-nez p1, :cond_2
-
-    if-nez v4, :cond_2
-
-    new-array v4, v6, [Ljava/lang/String;
-
-    const-string v7, "macro"
-
-    aput-object v7, v4, v5
-
-    const-string v7, "edof"
-
-    aput-object v7, v4, v3
-
-    .line 9
-    invoke-static {v2, v1, v4}, Lh6/a;->a(Ljava/lang/String;Ljava/util/Collection;[Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    :cond_2
-    if-eqz v4, :cond_4
-
-    .line 10
-    invoke-virtual {v0}, Landroid/hardware/Camera$Parameters;->getFocusMode()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    goto :goto_1
-
-    .line 11
-    :cond_3
-    invoke-virtual {v0, v4}, Landroid/hardware/Camera$Parameters;->setFocusMode(Ljava/lang/String;)V
-
-    :cond_4
-    :goto_1
-    if-nez p1, :cond_5
-
-    .line 12
-    invoke-static {v0, v5}, Lh6/a;->b(Landroid/hardware/Camera$Parameters;Z)V
-
-    .line 13
-    iget-object p1, p0, Lpb/e;->g:Lpb/f;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 14
-    iget-object p1, p0, Lpb/e;->g:Lpb/f;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 15
-    iget-object p1, p0, Lpb/e;->g:Lpb/f;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 16
-    :cond_5
-    invoke-virtual {v0}, Landroid/hardware/Camera$Parameters;->getSupportedPreviewSizes()Ljava/util/List;
-
-    move-result-object p1
-
-    .line 17
-    new-instance v1, Ljava/util/ArrayList;
-
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
-
-    if-nez p1, :cond_6
-
-    .line 18
-    invoke-virtual {v0}, Landroid/hardware/Camera$Parameters;->getPreviewSize()Landroid/hardware/Camera$Size;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_7
-
-    .line 19
-    new-instance v2, Lob/o;
-
-    iget v4, p1, Landroid/hardware/Camera$Size;->width:I
-
-    iget p1, p1, Landroid/hardware/Camera$Size;->height:I
-
-    invoke-direct {v2, v4, p1}, Lob/o;-><init>(II)V
-
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_3
-
-    .line 20
-    :cond_6
-    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_2
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {p3, p0, p1}, Lpb/m;->a(Lpb/b;[I)I
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    const/4 v3, 0x1
 
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    if-ltz v2, :cond_0
 
-    move-result-object v2
+    const/16 v4, 0xf
 
-    check-cast v2, Landroid/hardware/Camera$Size;
+    if-gt v2, v4, :cond_0
 
-    .line 21
-    new-instance v4, Lob/o;
-
-    iget v7, v2, Landroid/hardware/Camera$Size;->width:I
-
-    iget v2, v2, Landroid/hardware/Camera$Size;->height:I
-
-    invoke-direct {v4, v7, v2}, Lob/o;-><init>(II)V
-
-    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_2
-
-    .line 22
-    :cond_7
-    :goto_3
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
-
-    move-result p1
-
-    const/4 v2, 0x0
-
-    if-nez p1, :cond_8
-
-    .line 23
-    iput-object v2, p0, Lpb/e;->i:Lob/o;
-
-    goto :goto_6
-
-    .line 24
-    :cond_8
-    iget-object p1, p0, Lpb/e;->h:Lpb/j;
-
-    invoke-virtual {p0}, Lpb/e;->b()Z
-
-    move-result v4
-
-    .line 25
-    iget-object v7, p1, Lpb/j;->a:Lob/o;
-
-    if-nez v7, :cond_9
-
-    move-object v7, v2
+    .line 3
+    aput v2, p2, v1
 
     goto :goto_4
 
-    :cond_9
-    if-eqz v4, :cond_a
+    :cond_0
+    const/4 v4, 0x2
 
-    .line 26
-    new-instance v4, Lob/o;
+    const/4 v5, 0x3
 
-    iget v8, v7, Lob/o;->h:I
+    packed-switch v2, :pswitch_data_0
 
-    iget v7, v7, Lob/o;->g:I
+    new-array p0, v5, [Ljava/lang/Object;
 
-    invoke-direct {v4, v8, v7}, Lob/o;-><init>(II)V
+    .line 4
+    const-class p2, Lpb/e;
 
-    move-object v7, v4
+    .line 5
+    invoke-virtual {p2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    .line 27
-    :cond_a
-    :goto_4
-    iget-object p1, p1, Lpb/j;->c:Lpb/o;
+    move-result-object p2
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    aput-object p2, p0, v0
 
-    if-nez v7, :cond_b
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    goto :goto_5
+    move-result-object p2
 
-    .line 28
-    :cond_b
-    new-instance v4, Lpb/n;
+    aput-object p2, p0, v3
 
-    invoke-direct {v4, p1, v7}, Lpb/n;-><init>(Lpb/o;Lob/o;)V
+    aput-object p1, p0, v4
 
-    invoke-static {v1, v4}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
+    const-string p1, "[%s] Bad code length \'%d\' at the bit index \'%d\'."
 
-    .line 29
-    :goto_5
-    invoke-static {v7}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    .line 6
+    invoke-static {p1, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    .line 30
-    invoke-static {v1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    move-result-object p0
 
-    .line 31
-    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 7
+    new-instance p1, Lpb/j;
 
-    move-result-object p1
+    invoke-direct {p1, p0}, Lpb/j;-><init>(Ljava/lang/String;)V
 
-    check-cast p1, Lob/o;
+    throw p1
 
-    .line 32
-    iput-object p1, p0, Lpb/e;->i:Lob/o;
+    :pswitch_0
+    const/4 v2, 0x7
 
-    .line 33
-    iget v1, p1, Lob/o;->g:I
+    .line 8
+    invoke-virtual {p0, p1, v2}, Lpb/b;->f([II)I
 
-    iget p1, p1, Lob/o;->h:I
+    move-result v2
 
-    invoke-virtual {v0, v1, p1}, Landroid/hardware/Camera$Parameters;->setPreviewSize(II)V
+    add-int/lit8 v2, v2, 0xb
 
-    .line 34
-    :goto_6
-    sget-object p1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
+    goto :goto_1
 
-    const-string v1, "glass-1"
+    .line 9
+    :pswitch_1
+    invoke-virtual {p0, p1, v5}, Lpb/b;->f([II)I
 
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v2
 
-    move-result p1
+    add-int/2addr v2, v5
 
-    if-eqz p1, :cond_12
+    :goto_1
+    move v4, v2
 
-    .line 35
-    invoke-virtual {v0}, Landroid/hardware/Camera$Parameters;->getSupportedPreviewFpsRange()Ljava/util/List;
+    const/4 v2, 0x0
 
-    move-result-object p1
+    goto :goto_2
 
-    if-eqz p1, :cond_d
+    :pswitch_2
+    add-int/lit8 v2, v1, -0x1
 
-    .line 36
-    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
+    .line 10
+    aget v2, p2, v2
 
-    move-result v1
-
-    if-eqz v1, :cond_c
-
-    goto :goto_8
-
-    .line 37
-    :cond_c
-    invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    .line 38
-    :goto_7
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    .line 11
+    invoke-virtual {p0, p1, v4}, Lpb/b;->f([II)I
 
     move-result v4
 
-    if-eqz v4, :cond_d
+    add-int/2addr v4, v5
 
-    .line 39
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    :goto_2
+    const/4 v5, 0x0
 
-    move-result-object v4
+    :goto_3
+    if-ge v5, v4, :cond_1
 
-    check-cast v4, [I
+    add-int v6, v1, v5
 
-    invoke-static {v4}, Ljava/util/Arrays;->toString([I)Ljava/lang/String;
+    .line 12
+    aput v2, p2, v6
 
-    .line 40
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    add-int/lit8 v5, v5, 0x1
 
-    goto :goto_7
+    goto :goto_3
 
-    :cond_d
-    :goto_8
-    if-eqz p1, :cond_12
+    :cond_1
+    add-int/lit8 v4, v4, -0x1
 
-    .line 41
-    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
+    add-int/2addr v1, v4
 
-    move-result v1
+    :goto_4
+    add-int/2addr v1, v3
 
-    if-nez v1, :cond_12
+    goto :goto_0
 
-    .line 42
-    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :cond_e
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_f
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, [I
-
-    .line 43
-    aget v4, v1, v5
-
-    .line 44
-    aget v7, v1, v3
-
-    const/16 v8, 0x2710
-
-    if-lt v4, v8, :cond_e
-
-    const/16 v4, 0x4e20
-
-    if-gt v7, v4, :cond_e
-
-    move-object v2, v1
-
-    :cond_f
-    if-nez v2, :cond_10
-
-    goto :goto_9
-
-    :cond_10
-    new-array p1, v6, [I
-
-    .line 45
-    invoke-virtual {v0, p1}, Landroid/hardware/Camera$Parameters;->getPreviewFpsRange([I)V
-
-    .line 46
-    invoke-static {p1, v2}, Ljava/util/Arrays;->equals([I[I)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_11
-
-    .line 47
-    invoke-static {v2}, Ljava/util/Arrays;->toString([I)Ljava/lang/String;
-
-    goto :goto_9
-
-    .line 48
-    :cond_11
-    invoke-static {v2}, Ljava/util/Arrays;->toString([I)Ljava/lang/String;
-
-    .line 49
-    aget p1, v2, v5
-
-    aget v1, v2, v3
-
-    invoke-virtual {v0, p1, v1}, Landroid/hardware/Camera$Parameters;->setPreviewFpsRange(II)V
-
-    .line 50
-    :cond_12
-    :goto_9
-    invoke-virtual {v0}, Landroid/hardware/Camera$Parameters;->flatten()Ljava/lang/String;
-
-    .line 51
-    iget-object p1, p0, Lpb/e;->a:Landroid/hardware/Camera;
-
-    invoke-virtual {p1, v0}, Landroid/hardware/Camera;->setParameters(Landroid/hardware/Camera$Parameters;)V
-
+    :cond_2
     return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x10
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public e(Z)V
-    .locals 3
+.method public static b(Lpb/b;[ILpb/m;)I
+    .locals 8
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lpb/j;
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lpb/e;->a:Landroid/hardware/Camera;
+    invoke-virtual {p2, p0, p1}, Lpb/m;->a(Lpb/b;[I)I
 
-    if-eqz v0, :cond_3
+    move-result p2
+
+    const/16 v0, 0x9
+
+    const/4 v1, 0x7
+
+    const/4 v2, 0x5
+
+    const/4 v3, 0x3
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x2
+
+    const/16 v6, 0xd
+
+    const/16 v7, 0xc
+
+    packed-switch p2, :pswitch_data_0
+
+    new-array p0, v3, [Ljava/lang/Object;
 
     .line 2
-    :try_start_0
-    invoke-virtual {v0}, Landroid/hardware/Camera;->getParameters()Landroid/hardware/Camera$Parameters;
+    const-class v0, Lpb/e;
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_1
+    aput-object v0, p0, v1
 
-    .line 3
-    invoke-virtual {v0}, Landroid/hardware/Camera$Parameters;->getFlashMode()Ljava/lang/String;
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v0
+    move-result-object p2
 
-    if-eqz v0, :cond_1
+    aput-object p2, p0, v4
 
-    const-string v2, "on"
+    aget p1, p1, v1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    aput-object p1, p0, v5
+
+    const-string p1, "[%s] Bad distance code \'%d\' at the bit index \'%d\'."
 
     .line 4
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-static {p1, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    const-string v2, "torch"
+    move-result-object p0
 
     .line 5
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    new-instance p1, Lpb/j;
 
-    move-result v0
+    invoke-direct {p1, p0}, Lpb/j;-><init>(Ljava/lang/String;)V
 
-    if-eqz v0, :cond_1
+    throw p1
 
-    :cond_0
-    const/4 v0, 0x1
+    :pswitch_0
+    const/16 v0, 0x6001
+
+    const/16 p2, 0x6001
 
     goto :goto_0
 
-    :cond_1
-    const/4 v0, 0x0
+    :pswitch_1
+    const/16 v0, 0x4001
+
+    const/16 p2, 0x4001
 
     :goto_0
-    if-eq p1, v0, :cond_3
+    const/16 v0, 0xd
+
+    goto/16 :goto_c
+
+    :pswitch_2
+    const/16 v0, 0x3001
+
+    const/16 p2, 0x3001
+
+    goto :goto_1
+
+    :pswitch_3
+    const/16 v0, 0x2001
+
+    const/16 p2, 0x2001
+
+    :goto_1
+    const/16 v0, 0xc
+
+    goto/16 :goto_c
+
+    :pswitch_4
+    const/16 p2, 0x1801
+
+    const/16 v0, 0x1801
+
+    goto :goto_2
+
+    :pswitch_5
+    const/16 p2, 0x1001
+
+    const/16 v0, 0x1001
+
+    :goto_2
+    const/16 p2, 0xb
+
+    move p2, v0
+
+    const/16 v0, 0xb
+
+    goto/16 :goto_c
+
+    :pswitch_6
+    const/16 p2, 0xc01
+
+    const/16 v0, 0xc01
+
+    goto :goto_3
+
+    :pswitch_7
+    const/16 p2, 0x801
+
+    const/16 v0, 0x801
+
+    :goto_3
+    const/16 p2, 0xa
+
+    move p2, v0
+
+    const/16 v0, 0xa
+
+    goto/16 :goto_c
+
+    :pswitch_8
+    const/16 p2, 0x601
+
+    goto/16 :goto_c
+
+    :pswitch_9
+    const/16 p2, 0x401
+
+    goto/16 :goto_c
+
+    :pswitch_a
+    const/16 p2, 0x301
+
+    const/16 v0, 0x301
+
+    goto :goto_4
+
+    :pswitch_b
+    const/16 p2, 0x201
+
+    const/16 v0, 0x201
+
+    :goto_4
+    const/16 p2, 0x8
+
+    move p2, v0
+
+    const/16 v0, 0x8
+
+    goto :goto_c
+
+    :pswitch_c
+    const/16 p2, 0x181
+
+    const/16 v0, 0x181
+
+    goto :goto_5
+
+    :pswitch_d
+    const/16 p2, 0x101
+
+    const/16 v0, 0x101
+
+    :goto_5
+    move p2, v0
+
+    const/4 v0, 0x7
+
+    goto :goto_c
+
+    :pswitch_e
+    const/16 p2, 0xc1
+
+    const/16 v0, 0xc1
+
+    goto :goto_6
+
+    :pswitch_f
+    const/16 p2, 0x81
+
+    const/16 v0, 0x81
+
+    :goto_6
+    const/4 p2, 0x6
+
+    move p2, v0
+
+    const/4 v0, 0x6
+
+    goto :goto_c
+
+    :pswitch_10
+    const/16 p2, 0x61
+
+    const/16 v0, 0x61
+
+    goto :goto_7
+
+    :pswitch_11
+    const/16 p2, 0x41
+
+    const/16 v0, 0x41
+
+    :goto_7
+    move p2, v0
+
+    const/4 v0, 0x5
+
+    goto :goto_c
+
+    :pswitch_12
+    const/16 p2, 0x31
+
+    const/16 v0, 0x31
+
+    goto :goto_8
+
+    :pswitch_13
+    const/16 p2, 0x21
+
+    const/16 v0, 0x21
+
+    :goto_8
+    const/4 p2, 0x4
+
+    move p2, v0
+
+    const/4 v0, 0x4
+
+    goto :goto_c
+
+    :pswitch_14
+    const/16 p2, 0x19
+
+    const/16 v0, 0x19
+
+    goto :goto_9
+
+    :pswitch_15
+    const/16 p2, 0x11
+
+    const/16 v0, 0x11
+
+    :goto_9
+    move p2, v0
+
+    const/4 v0, 0x3
+
+    goto :goto_c
+
+    :pswitch_16
+    const/16 p2, 0xd
+
+    goto :goto_a
+
+    :pswitch_17
+    const/16 p2, 0x9
+
+    :goto_a
+    const/4 v0, 0x2
+
+    goto :goto_c
+
+    :pswitch_18
+    const/4 p2, 0x7
+
+    goto :goto_b
+
+    :pswitch_19
+    const/4 p2, 0x5
+
+    :goto_b
+    const/4 v0, 0x1
 
     .line 6
-    iget-object v0, p0, Lpb/e;->c:Lpb/a;
+    :goto_c
+    invoke-virtual {p0, p1, v0}, Lpb/b;->f([II)I
 
-    if-eqz v0, :cond_2
+    move-result p0
+
+    add-int/2addr p0, p2
+
+    return p0
+
+    :pswitch_1a
+    add-int/2addr p2, v4
+
+    return p2
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1a
+        :pswitch_1a
+        :pswitch_1a
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public static c(Lpb/b;[I[Lpb/m;)V
+    .locals 9
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lpb/j;
+        }
+    .end annotation
+
+    const/4 v0, 0x5
+
+    .line 1
+    invoke-virtual {p0, p1, v0}, Lpb/b;->f([II)I
+
+    move-result v1
+
+    add-int/lit16 v1, v1, 0x101
+
+    .line 2
+    invoke-virtual {p0, p1, v0}, Lpb/b;->f([II)I
+
+    move-result v0
+
+    const/4 v2, 0x1
+
+    add-int/2addr v0, v2
+
+    const/4 v3, 0x4
+
+    .line 3
+    invoke-virtual {p0, p1, v3}, Lpb/b;->f([II)I
+
+    move-result v4
+
+    add-int/2addr v4, v3
+
+    const/16 v3, 0x13
+
+    new-array v3, v3, [I
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    :goto_0
+    if-ge v6, v4, :cond_0
+
+    const/4 v7, 0x3
+
+    .line 4
+    invoke-virtual {p0, p1, v7}, Lpb/b;->f([II)I
+
+    move-result v7
+
+    int-to-byte v7, v7
+
+    .line 5
+    sget-object v8, Lpb/e;->a:[I
+
+    aget v8, v8, v6
+
+    .line 6
+    aput v7, v3, v8
+
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_0
 
     .line 7
-    invoke-virtual {v0}, Lpb/a;->c()V
+    :cond_0
+    new-instance v4, Lpb/m;
+
+    invoke-direct {v4, v3}, Lpb/m;-><init>([I)V
 
     .line 8
-    :cond_2
-    iget-object v0, p0, Lpb/e;->a:Landroid/hardware/Camera;
-
-    invoke-virtual {v0}, Landroid/hardware/Camera;->getParameters()Landroid/hardware/Camera$Parameters;
-
-    move-result-object v0
+    new-array v1, v1, [I
 
     .line 9
-    invoke-static {v0, p1}, Lh6/a;->b(Landroid/hardware/Camera$Parameters;Z)V
+    invoke-static {p0, p1, v1, v4}, Lpb/e;->a(Lpb/b;[I[ILpb/m;)V
 
     .line 10
-    iget-object p1, p0, Lpb/e;->g:Lpb/f;
+    new-instance v3, Lpb/m;
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {v3, v1}, Lpb/m;-><init>([I)V
 
     .line 11
-    iget-object p1, p0, Lpb/e;->a:Landroid/hardware/Camera;
-
-    invoke-virtual {p1, v0}, Landroid/hardware/Camera;->setParameters(Landroid/hardware/Camera$Parameters;)V
+    new-array v0, v0, [I
 
     .line 12
-    iget-object p1, p0, Lpb/e;->c:Lpb/a;
-
-    if-eqz p1, :cond_3
+    invoke-static {p0, p1, v0, v4}, Lpb/e;->a(Lpb/b;[I[ILpb/m;)V
 
     .line 13
-    iput-boolean v1, p1, Lpb/a;->a:Z
+    new-instance p0, Lpb/m;
+
+    invoke-direct {p0, v0}, Lpb/m;-><init>([I)V
 
     .line 14
-    invoke-virtual {p1}, Lpb/a;->b()V
-    :try_end_0
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+    aput-object v3, p2, v5
 
-    :catch_0
-    :cond_3
+    .line 15
+    aput-object p0, p2, v2
+
     return-void
 .end method
 
-.method public f()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lpb/e;->a:Landroid/hardware/Camera;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-boolean v1, p0, Lpb/e;->e:Z
-
-    if-nez v1, :cond_0
-
-    .line 3
-    invoke-virtual {v0}, Landroid/hardware/Camera;->startPreview()V
+.method public static d(Lpb/b;[II)I
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lpb/j;
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
+    const/4 v1, 0x2
+
+    const/4 v2, 0x3
+
+    const/4 v3, 0x5
+
+    packed-switch p2, :pswitch_data_0
+
+    new-array p0, v2, [Ljava/lang/Object;
+
+    .line 1
+    const-class v2, Lpb/e;
+
+    .line 2
+    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    aput-object v2, p0, v3
+
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    aput-object p2, p0, v0
+
+    aget p1, p1, v3
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    aput-object p1, p0, v1
+
+    const-string p1, "[%s] Bad literal/length code \'%d\' at the bit index \'%d\'."
+
+    .line 3
+    invoke-static {p1, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
     .line 4
-    iput-boolean v0, p0, Lpb/e;->e:Z
+    new-instance p1, Lpb/j;
+
+    invoke-direct {p1, p0}, Lpb/j;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :pswitch_0
+    const/16 p0, 0x102
+
+    return p0
+
+    :pswitch_1
+    const/16 p2, 0xe3
+
+    goto :goto_0
+
+    :pswitch_2
+    const/16 p2, 0xc3
+
+    goto :goto_0
+
+    :pswitch_3
+    const/16 p2, 0xa3
+
+    goto :goto_0
+
+    :pswitch_4
+    const/16 p2, 0x83
+
+    :goto_0
+    const/4 v0, 0x5
+
+    goto :goto_4
+
+    :pswitch_5
+    const/16 p2, 0x73
+
+    goto :goto_1
+
+    :pswitch_6
+    const/16 p2, 0x63
+
+    goto :goto_1
+
+    :pswitch_7
+    const/16 p2, 0x53
+
+    goto :goto_1
+
+    :pswitch_8
+    const/16 p2, 0x43
+
+    :goto_1
+    const/4 v0, 0x4
+
+    goto :goto_4
+
+    :pswitch_9
+    const/16 p2, 0x3b
+
+    goto :goto_2
+
+    :pswitch_a
+    const/16 p2, 0x33
+
+    goto :goto_2
+
+    :pswitch_b
+    const/16 p2, 0x2b
+
+    goto :goto_2
+
+    :pswitch_c
+    const/16 p2, 0x23
+
+    :goto_2
+    const/4 v0, 0x3
+
+    goto :goto_4
+
+    :pswitch_d
+    const/16 p2, 0x1f
+
+    goto :goto_3
+
+    :pswitch_e
+    const/16 p2, 0x1b
+
+    goto :goto_3
+
+    :pswitch_f
+    const/16 p2, 0x17
+
+    goto :goto_3
+
+    :pswitch_10
+    const/16 p2, 0x13
+
+    :goto_3
+    const/4 v0, 0x2
+
+    goto :goto_4
+
+    :pswitch_11
+    const/16 p2, 0x11
+
+    goto :goto_4
+
+    :pswitch_12
+    const/16 p2, 0xf
+
+    goto :goto_4
+
+    :pswitch_13
+    const/16 p2, 0xd
+
+    goto :goto_4
+
+    :pswitch_14
+    const/16 p2, 0xb
 
     .line 5
-    new-instance v0, Lpb/a;
+    :goto_4
+    invoke-virtual {p0, p1, v0}, Lpb/b;->f([II)I
 
-    iget-object v1, p0, Lpb/e;->a:Landroid/hardware/Camera;
+    move-result p0
 
-    iget-object v2, p0, Lpb/e;->g:Lpb/f;
+    add-int/2addr p0, p2
 
-    invoke-direct {v0, v1, v2}, Lpb/a;-><init>(Landroid/hardware/Camera;Lpb/f;)V
+    return p0
 
-    iput-object v0, p0, Lpb/e;->c:Lpb/a;
+    :pswitch_15
+    add-int/lit16 p2, p2, -0xfe
 
-    .line 6
-    new-instance v0, Lg6/b;
+    return p2
 
-    iget-object v1, p0, Lpb/e;->l:Landroid/content/Context;
+    nop
 
-    iget-object v2, p0, Lpb/e;->g:Lpb/f;
-
-    invoke-direct {v0, v1, p0, v2}, Lg6/b;-><init>(Landroid/content/Context;Lpb/e;Lpb/f;)V
-
-    iput-object v0, p0, Lpb/e;->d:Lg6/b;
-
-    .line 7
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    :cond_0
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x101
+        :pswitch_15
+        :pswitch_15
+        :pswitch_15
+        :pswitch_15
+        :pswitch_15
+        :pswitch_15
+        :pswitch_15
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

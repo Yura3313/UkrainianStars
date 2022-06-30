@@ -6,7 +6,7 @@
 
 
 # virtual methods
-.method public asBinder()Landroid/os/IBinder;
+.method public final asBinder()Landroid/os/IBinder;
     .locals 1
 
     const/4 v0, 0x0

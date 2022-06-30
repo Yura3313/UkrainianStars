@@ -1,4 +1,4 @@
-.class public Ll/f;
+.class public final Ll/f;
 .super Landroid/graphics/drawable/Drawable;
 .source "RoundRectDrawable.java"
 
@@ -251,7 +251,7 @@
     return-void
 .end method
 
-.method public draw(Landroid/graphics/Canvas;)V
+.method public final draw(Landroid/graphics/Canvas;)V
     .locals 4
 
     .line 1
@@ -299,7 +299,7 @@
     return-void
 .end method
 
-.method public getOpacity()I
+.method public final getOpacity()I
     .locals 1
 
     const/4 v0, -0x3
@@ -307,10 +307,9 @@
     return v0
 .end method
 
-.method public getOutline(Landroid/graphics/Outline;)V
+.method public final getOutline(Landroid/graphics/Outline;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Ll/f;->d:Landroid/graphics/Rect;
 
     iget v1, p0, Ll/f;->a:F
@@ -320,7 +319,7 @@
     return-void
 .end method
 
-.method public isStateful()Z
+.method public final isStateful()Z
     .locals 1
 
     .line 1
@@ -365,7 +364,7 @@
     return v0
 .end method
 
-.method public onBoundsChange(Landroid/graphics/Rect;)V
+.method public final onBoundsChange(Landroid/graphics/Rect;)V
     .locals 0
 
     .line 1
@@ -377,7 +376,7 @@
     return-void
 .end method
 
-.method public onStateChange([I)Z
+.method public final onStateChange([I)Z
     .locals 3
 
     .line 1
@@ -440,10 +439,9 @@
     return v0
 .end method
 
-.method public setAlpha(I)V
+.method public final setAlpha(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ll/f;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setAlpha(I)V
@@ -451,10 +449,9 @@
     return-void
 .end method
 
-.method public setColorFilter(Landroid/graphics/ColorFilter;)V
+.method public final setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ll/f;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
@@ -462,7 +459,7 @@
     return-void
 .end method
 
-.method public setTintList(Landroid/content/res/ColorStateList;)V
+.method public final setTintList(Landroid/content/res/ColorStateList;)V
     .locals 1
 
     .line 1
@@ -483,7 +480,7 @@
     return-void
 .end method
 
-.method public setTintMode(Landroid/graphics/PorterDuff$Mode;)V
+.method public final setTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 1
 
     .line 1

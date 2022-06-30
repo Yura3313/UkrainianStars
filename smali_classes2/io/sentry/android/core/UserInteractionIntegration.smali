@@ -268,7 +268,6 @@
 .method public onActivityPaused(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object p1
@@ -281,7 +280,6 @@
 .method public onActivityResumed(Landroid/app/Activity;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v0

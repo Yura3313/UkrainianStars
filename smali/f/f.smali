@@ -1,4 +1,4 @@
-.class public Lf/f;
+.class public final Lf/f;
 .super Landroid/view/ActionMode;
 .source "SupportActionModeWrapper.java"
 
@@ -35,10 +35,9 @@
 
 
 # virtual methods
-.method public finish()V
+.method public final finish()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     invoke-virtual {v0}, Lf/b;->c()V
@@ -46,10 +45,9 @@
     return-void
 .end method
 
-.method public getCustomView()Landroid/view/View;
+.method public final getCustomView()Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     invoke-virtual {v0}, Lf/b;->d()Landroid/view/View;
@@ -59,10 +57,9 @@
     return-object v0
 .end method
 
-.method public getMenu()Landroid/view/Menu;
+.method public final getMenu()Landroid/view/Menu;
     .locals 3
 
-    .line 1
     new-instance v0, Lg/e;
 
     iget-object v1, p0, Lf/f;->a:Landroid/content/Context;
@@ -80,10 +77,9 @@
     return-object v0
 .end method
 
-.method public getMenuInflater()Landroid/view/MenuInflater;
+.method public final getMenuInflater()Landroid/view/MenuInflater;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     invoke-virtual {v0}, Lf/b;->f()Landroid/view/MenuInflater;
@@ -93,10 +89,9 @@
     return-object v0
 .end method
 
-.method public getSubtitle()Ljava/lang/CharSequence;
+.method public final getSubtitle()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     invoke-virtual {v0}, Lf/b;->g()Ljava/lang/CharSequence;
@@ -106,22 +101,21 @@
     return-object v0
 .end method
 
-.method public getTag()Ljava/lang/Object;
+.method public final getTag()Ljava/lang/Object;
     .locals 1
 
     .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     .line 2
-    iget-object v0, v0, Lf/b;->g:Ljava/lang/Object;
+    iget-object v0, v0, Lf/b;->f:Ljava/lang/Object;
 
     return-object v0
 .end method
 
-.method public getTitle()Ljava/lang/CharSequence;
+.method public final getTitle()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     invoke-virtual {v0}, Lf/b;->h()Ljava/lang/CharSequence;
@@ -131,22 +125,21 @@
     return-object v0
 .end method
 
-.method public getTitleOptionalHint()Z
+.method public final getTitleOptionalHint()Z
     .locals 1
 
     .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     .line 2
-    iget-boolean v0, v0, Lf/b;->h:Z
+    iget-boolean v0, v0, Lf/b;->g:Z
 
     return v0
 .end method
 
-.method public invalidate()V
+.method public final invalidate()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     invoke-virtual {v0}, Lf/b;->i()V
@@ -154,10 +147,9 @@
     return-void
 .end method
 
-.method public isTitleOptional()Z
+.method public final isTitleOptional()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     invoke-virtual {v0}, Lf/b;->j()Z
@@ -167,10 +159,9 @@
     return v0
 .end method
 
-.method public setCustomView(Landroid/view/View;)V
+.method public final setCustomView(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     invoke-virtual {v0, p1}, Lf/b;->k(Landroid/view/View;)V
@@ -178,7 +169,7 @@
     return-void
 .end method
 
-.method public setSubtitle(I)V
+.method public final setSubtitle(I)V
     .locals 1
 
     .line 2
@@ -189,7 +180,7 @@
     return-void
 .end method
 
-.method public setSubtitle(Ljava/lang/CharSequence;)V
+.method public final setSubtitle(Ljava/lang/CharSequence;)V
     .locals 1
 
     .line 1
@@ -200,19 +191,19 @@
     return-void
 .end method
 
-.method public setTag(Ljava/lang/Object;)V
+.method public final setTag(Ljava/lang/Object;)V
     .locals 1
 
     .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     .line 2
-    iput-object p1, v0, Lf/b;->g:Ljava/lang/Object;
+    iput-object p1, v0, Lf/b;->f:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public setTitle(I)V
+.method public final setTitle(I)V
     .locals 1
 
     .line 2
@@ -223,7 +214,7 @@
     return-void
 .end method
 
-.method public setTitle(Ljava/lang/CharSequence;)V
+.method public final setTitle(Ljava/lang/CharSequence;)V
     .locals 1
 
     .line 1
@@ -234,10 +225,9 @@
     return-void
 .end method
 
-.method public setTitleOptionalHint(Z)V
+.method public final setTitleOptionalHint(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     invoke-virtual {v0, p1}, Lf/b;->p(Z)V

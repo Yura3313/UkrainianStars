@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/server/ServerRequest;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/gameserver/GameSessionService$3;->val$request:Lcom/kakaogame/server/ServerRequest;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

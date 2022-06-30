@@ -11,44 +11,12 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 2
-
-    .line 1
-    invoke-static {}, Lcom/helpshift/util/q;->c()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    sget-object v0, Ljb/b;->a:Ljb/a;
-
-    .line 3
-    new-instance v1, Lcom/helpshift/CoreInternal$c;
-
-    invoke-direct {v1, p0, p1}, Lcom/helpshift/CoreInternal$c;-><init>(Landroid/content/Context;Landroid/content/Intent;)V
-
-    check-cast v0, Ljb/c;
-
-    .line 4
-    iget-object p0, v0, Ljb/c;->c:Landroid/os/Handler;
-
-    invoke-virtual {p0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    return-void
-.end method
-
-.method public static b(Landroid/content/Context;Ljava/util/Map;)V
+.method public static a(Landroid/content/Context;Ljava/util/Map;)V
     .locals 7
 
     const-string v0, "enableLogging"
@@ -108,20 +76,20 @@
 
     .line 6
     :cond_1
-    invoke-static {}, Lcom/helpshift/util/q;->b()Ld8/r;
+    invoke-static {}, Lcom/helpshift/util/u;->a()Le8/s;
 
     move-result-object p1
 
-    invoke-interface {p1}, Ld8/r;->a()Le8/e;
+    invoke-interface {p1}, Le8/s;->a()Lf8/d;
 
     move-result-object p1
 
-    invoke-interface {p1}, Le8/e;->a()F
+    invoke-interface {p1}, Lf8/d;->a()F
 
     move-result p1
 
     .line 7
-    invoke-static {p0}, Lee/d;->f(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/billingclient/api/c0;->h(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -136,46 +104,42 @@
 
     .line 8
     :goto_1
-    sget-object v3, Lcom/helpshift/util/q;->c:Lc7/a;
+    sget-object v3, Lcom/helpshift/util/u;->c:Le7/g;
 
     .line 9
-    invoke-interface {v3}, Lc7/a;->a()Li8/b;
+    invoke-interface {v3}, Le7/a;->a()Lj8/b;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Li8/b;->j()I
+    invoke-virtual {v3}, Lj8/b;->j()I
 
     move-result v3
 
     .line 10
-    new-instance v4, Lw9/e;
+    new-instance v4, Lx9/e;
 
-    const-string v5, "__hs_log_store"
-
-    const-string v6, "7.11.0"
-
-    invoke-direct {v4, p0, v5, v6}, Lw9/e;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v4, p0}, Lx9/e;-><init>(Landroid/content/Context;)V
 
     .line 11
-    sput-object v4, Lie/a;->g:Lw9/c;
+    sput-object v4, Landroidx/savedstate/d;->f:Lx9/c;
 
     .line 12
-    invoke-interface {v4, v1}, Lw9/c;->f(I)V
+    invoke-interface {v4, v1}, Lx9/c;->f(I)V
 
     .line 13
-    sget-object v1, Lie/a;->g:Lw9/c;
+    sget-object v1, Landroidx/savedstate/d;->f:Lx9/c;
 
-    invoke-interface {v1, v3}, Lw9/c;->b(I)V
+    invoke-interface {v1, v3}, Lx9/c;->d(I)V
 
     .line 14
-    new-instance v1, Le9/a;
+    new-instance v1, Lvc/b0;
 
-    invoke-direct {v1}, Le9/a;-><init>()V
+    invoke-direct {v1}, Lvc/b0;-><init>()V
 
-    invoke-static {v1}, Ly9/b;->c(Le9/a;)V
+    invoke-static {v1}, Lz9/b;->c(Lvc/b0;)V
 
     .line 15
-    sget-object v1, Lie/a;->g:Lw9/c;
+    sget-object v1, Landroidx/savedstate/d;->f:Lx9/c;
 
     float-to-long v3, p1
 
@@ -183,26 +147,26 @@
 
     mul-long v3, v3, v5
 
-    invoke-interface {v1, v3, v4}, Lw9/c;->g(J)V
+    invoke-interface {v1, v3, v4}, Lx9/c;->g(J)V
 
     xor-int/lit8 p1, v2, 0x1
 
     .line 16
-    sget-object v1, Lie/a;->g:Lw9/c;
+    sget-object v1, Landroidx/savedstate/d;->f:Lx9/c;
 
     if-eqz v1, :cond_3
 
     .line 17
-    invoke-interface {v1, v0, p1}, Lw9/c;->h(ZZ)V
+    invoke-interface {v1, v0, p1}, Lx9/c;->h(ZZ)V
 
     .line 18
     :cond_3
-    invoke-static {p1}, Lha/a;->a(Z)V
+    invoke-static {p1}, Lid/h;->e(Z)V
 
     if-nez v2, :cond_4
 
     .line 19
-    invoke-static {p0}, Ls9/a;->a(Landroid/content/Context;)V
+    invoke-static {p0}, Lu9/a;->a(Landroid/content/Context;)V
 
     :cond_4
     return-void
@@ -212,7 +176,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lcom/helpshift/util/q;->c()Z
+    invoke-static {}, Lcom/helpshift/util/u;->b()Z
 
     move-result v0
 
@@ -222,19 +186,14 @@
 
     .line 2
     :cond_0
-    sget-object v0, Ljb/b;->a:Ljb/a;
+    sget-object v0, Lmb/a;->a:Lmb/b;
 
     .line 3
     new-instance v1, Lcom/helpshift/CoreInternal$b;
 
     invoke-direct {v1}, Lcom/helpshift/CoreInternal$b;-><init>()V
 
-    check-cast v0, Ljb/c;
-
-    .line 4
-    iget-object v0, v0, Ljb/c;->c:Landroid/os/Handler;
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lmb/b;->a(Ljava/lang/Runnable;)V
 
     return-void
 .end method
@@ -243,7 +202,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lcom/helpshift/util/q;->c()Z
+    invoke-static {}, Lcom/helpshift/util/u;->b()Z
 
     move-result v0
 
@@ -253,19 +212,14 @@
 
     .line 2
     :cond_0
-    sget-object v0, Ljb/b;->a:Ljb/a;
+    sget-object v0, Lmb/a;->a:Lmb/b;
 
     .line 3
     new-instance v1, Lcom/helpshift/CoreInternal$a;
 
     invoke-direct {v1}, Lcom/helpshift/CoreInternal$a;-><init>()V
 
-    check-cast v0, Ljb/c;
-
-    .line 4
-    iget-object v0, v0, Ljb/c;->c:Landroid/os/Handler;
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lmb/b;->a(Ljava/lang/Runnable;)V
 
     return-void
 .end method

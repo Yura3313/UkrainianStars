@@ -1,4 +1,4 @@
-.class public Ld0/b$a$a;
+.class public final Ld0/b$a$a;
 .super Ljava/lang/Object;
 .source "PrecomputedTextCompat.java"
 
@@ -70,10 +70,9 @@
 
 
 # virtual methods
-.method public a()Ld0/b$a;
+.method public final a()Ld0/b$a;
     .locals 5
 
-    .line 1
     new-instance v0, Ld0/b$a;
 
     iget-object v1, p0, Ld0/b$a$a;->a:Landroid/text/TextPaint;
@@ -89,28 +88,25 @@
     return-object v0
 .end method
 
-.method public b(I)Ld0/b$a$a;
+.method public final b(I)Ld0/b$a$a;
     .locals 0
 
-    .line 1
     iput p1, p0, Ld0/b$a$a;->c:I
 
     return-object p0
 .end method
 
-.method public c(I)Ld0/b$a$a;
+.method public final c(I)Ld0/b$a$a;
     .locals 0
 
-    .line 1
     iput p1, p0, Ld0/b$a$a;->d:I
 
     return-object p0
 .end method
 
-.method public d(Landroid/text/TextDirectionHeuristic;)Ld0/b$a$a;
+.method public final d(Landroid/text/TextDirectionHeuristic;)Ld0/b$a$a;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Ld0/b$a$a;->b:Landroid/text/TextDirectionHeuristic;
 
     return-object p0

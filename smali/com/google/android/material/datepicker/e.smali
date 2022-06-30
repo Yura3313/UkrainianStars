@@ -1,25 +1,24 @@
-.class public Lcom/google/android/material/datepicker/e;
+.class public final Lcom/google/android/material/datepicker/e;
 .super Landroid/widget/BaseAdapter;
 .source "DaysOfWeekAdapter.java"
 
 
 # static fields
-.field public static final j:I
+.field public static final i:I
 
 
 # instance fields
-.field public final g:Ljava/util/Calendar;
+.field public final f:Ljava/util/Calendar;
+
+.field public final g:I
 
 .field public final h:I
-
-.field public final i:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1a
@@ -34,7 +33,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    sput v0, Lcom/google/android/material/datepicker/e;->j:I
+    sput v0, Lcom/google/android/material/datepicker/e;->i:I
 
     return-void
 .end method
@@ -45,48 +44,50 @@
     .line 1
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
+    const/4 v0, 0x0
+
     .line 2
-    invoke-static {}, Lcom/google/android/material/datepicker/x;->i()Ljava/util/Calendar;
+    invoke-static {v0}, Lcom/google/android/material/datepicker/b0;->i(Ljava/util/Calendar;)Ljava/util/Calendar;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/material/datepicker/e;->g:Ljava/util/Calendar;
+    .line 3
+    iput-object v0, p0, Lcom/google/android/material/datepicker/e;->f:Ljava/util/Calendar;
 
     const/4 v1, 0x7
 
-    .line 3
+    .line 4
     invoke-virtual {v0, v1}, Ljava/util/Calendar;->getMaximum(I)I
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/material/datepicker/e;->h:I
+    iput v1, p0, Lcom/google/android/material/datepicker/e;->g:I
 
-    .line 4
+    .line 5
     invoke-virtual {v0}, Ljava/util/Calendar;->getFirstDayOfWeek()I
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/datepicker/e;->i:I
+    iput v0, p0, Lcom/google/android/material/datepicker/e;->h:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getCount()I
+.method public final getCount()I
     .locals 1
 
-    .line 1
-    iget v0, p0, Lcom/google/android/material/datepicker/e;->h:I
+    iget v0, p0, Lcom/google/android/material/datepicker/e;->g:I
 
     return v0
 .end method
 
-.method public getItem(I)Ljava/lang/Object;
+.method public final getItem(I)Ljava/lang/Object;
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/datepicker/e;->h:I
+    iget v0, p0, Lcom/google/android/material/datepicker/e;->g:I
 
     if-lt p1, v0, :cond_0
 
@@ -96,7 +97,7 @@
 
     .line 2
     :cond_0
-    iget v1, p0, Lcom/google/android/material/datepicker/e;->i:I
+    iget v1, p0, Lcom/google/android/material/datepicker/e;->h:I
 
     add-int/2addr p1, v1
 
@@ -114,7 +115,7 @@
     return-object p1
 .end method
 
-.method public getItemId(I)J
+.method public final getItemId(I)J
     .locals 2
 
     const-wide/16 v0, 0x0
@@ -122,7 +123,7 @@
     return-wide v0
 .end method
 
-.method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+.method public final getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -140,7 +141,7 @@
     if-nez p2, :cond_0
 
     .line 2
-    invoke-virtual {p3}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -162,15 +163,15 @@
 
     .line 5
     :cond_0
-    iget-object p2, p0, Lcom/google/android/material/datepicker/e;->g:Ljava/util/Calendar;
+    iget-object p2, p0, Lcom/google/android/material/datepicker/e;->f:Ljava/util/Calendar;
 
     .line 6
-    iget v2, p0, Lcom/google/android/material/datepicker/e;->i:I
+    iget v2, p0, Lcom/google/android/material/datepicker/e;->h:I
 
     add-int/2addr p1, v2
 
     .line 7
-    iget v2, p0, Lcom/google/android/material/datepicker/e;->h:I
+    iget v2, p0, Lcom/google/android/material/datepicker/e;->g:I
 
     if-le p1, v2, :cond_1
 
@@ -183,9 +184,9 @@
     invoke-virtual {p2, v2, p1}, Ljava/util/Calendar;->set(II)V
 
     .line 9
-    iget-object p1, p0, Lcom/google/android/material/datepicker/e;->g:Ljava/util/Calendar;
+    iget-object p1, p0, Lcom/google/android/material/datepicker/e;->f:Ljava/util/Calendar;
 
-    sget p2, Lcom/google/android/material/datepicker/e;->j:I
+    sget p2, Lcom/google/android/material/datepicker/e;->i:I
 
     .line 10
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -200,7 +201,7 @@
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 12
-    invoke-virtual {p3}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
@@ -214,7 +215,7 @@
 
     new-array p2, p2, [Ljava/lang/Object;
 
-    iget-object p3, p0, Lcom/google/android/material/datepicker/e;->g:Ljava/util/Calendar;
+    iget-object p3, p0, Lcom/google/android/material/datepicker/e;->f:Ljava/util/Calendar;
 
     const/4 v3, 0x2
 
@@ -235,7 +236,7 @@
     move-result-object p1
 
     .line 15
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     return-object v0
 .end method

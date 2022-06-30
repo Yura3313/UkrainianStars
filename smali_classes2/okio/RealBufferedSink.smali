@@ -51,7 +51,6 @@
 .method public buffer()Lokio/Buffer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/RealBufferedSink;->buffer:Lokio/Buffer;
 
     return-object v0
@@ -279,7 +278,6 @@
 .method public isOpen()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokio/RealBufferedSink;->closed:Z
 
     xor-int/lit8 v0, v0, 0x1
@@ -290,7 +288,6 @@
 .method public outputStream()Ljava/io/OutputStream;
     .locals 1
 
-    .line 1
     new-instance v0, Lokio/RealBufferedSink$1;
 
     invoke-direct {v0, p0}, Lokio/RealBufferedSink$1;-><init>(Lokio/RealBufferedSink;)V
@@ -301,7 +298,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/RealBufferedSink;->sink:Lokio/Sink;
 
     invoke-interface {v0}, Lokio/Sink;->timeout()Lokio/Timeout;
@@ -321,6 +317,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lokio/RealBufferedSink;->sink:Lokio/Sink;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

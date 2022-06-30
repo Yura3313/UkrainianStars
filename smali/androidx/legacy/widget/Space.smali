@@ -86,7 +86,7 @@
 
 
 # virtual methods
-.method public draw(Landroid/graphics/Canvas;)V
+.method public final draw(Landroid/graphics/Canvas;)V
     .locals 0
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -100,7 +100,7 @@
     return-void
 .end method
 
-.method public onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 1
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation

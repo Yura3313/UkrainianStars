@@ -383,7 +383,6 @@
 .method public errorCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Session;->errorCount:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -396,7 +395,6 @@
 .method public getDistinctId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Session;->distinctId:Ljava/lang/String;
 
     return-object v0
@@ -405,7 +403,6 @@
 .method public getDuration()Ljava/lang/Double;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Session;->duration:Ljava/lang/Double;
 
     return-object v0
@@ -414,7 +411,6 @@
 .method public getEnvironment()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Session;->environment:Ljava/lang/String;
 
     return-object v0
@@ -423,7 +419,6 @@
 .method public getInit()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Session;->init:Ljava/lang/Boolean;
 
     return-object v0
@@ -432,7 +427,6 @@
 .method public getIpAddress()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Session;->ipAddress:Ljava/lang/String;
 
     return-object v0
@@ -441,7 +435,6 @@
 .method public getRelease()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Session;->release:Ljava/lang/String;
 
     return-object v0
@@ -450,7 +443,6 @@
 .method public getSequence()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Session;->sequence:Ljava/lang/Long;
 
     return-object v0
@@ -459,7 +451,6 @@
 .method public getSessionId()Ljava/util/UUID;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Session;->sessionId:Ljava/util/UUID;
 
     return-object v0
@@ -491,7 +482,6 @@
 .method public getStatus()Lio/sentry/Session$State;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Session;->status:Lio/sentry/Session$State;
 
     return-object v0
@@ -524,7 +514,6 @@
 .method public getUserAgent()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Session;->userAgent:Ljava/lang/String;
 
     return-object v0
@@ -535,7 +524,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     iput-object v0, p0, Lio/sentry/Session;->init:Ljava/lang/Boolean;

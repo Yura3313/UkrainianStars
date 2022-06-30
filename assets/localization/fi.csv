@@ -12,7 +12,7 @@ TID_BRAWL_PASS_QUESTS_INFO_UNCLAIMED,Voit nyt avata pokaalipolun tehtävät!
 TID_BRAWL_PASS_QUESTS_UNCLAIMED_FLOATER,Avaa pokaalipolun tehtävät.
 TID_BRAWL_PASS_BUY_PROGRESS_LABEL,OSTA TASO
 TID_QUESTS_TITLE,TEHTÄVÄT
-TID_QUEST_DESC_1,VOITA <AMOUNT> OTTELUA
+TID_QUEST_DESC_1,VOITA\n<AMOUNT> OTTELUA
 TID_QUEST_DESC_2,TYRMÄÄ <AMOUNT> VASTUSTAJAA
 TID_QUEST_DESC_3,AIHEUTA <AMOUNT> PISTETTÄ TUHOA
 TID_QUEST_DESC_4,PALAUTA <AMOUNT> PISTETTÄ ELINVOIMAA
@@ -52,7 +52,7 @@ TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,Haluatko ostaa <NUM> polettia ja nousta se
 TID_PURCHASE_BRAWL_PASS_TITLE,HANKI BRAWL PASS!
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,BRAWL PASS
 TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,BRAWL PASS -PAKETTI
-TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"Avaa Brawl Pass -palkintoja, lisätehtäviä ja 2 ylimääräistä tehtävän vaihtoa viikossa"
+TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"Avaa Brawl Pass -palkintoja, lisätehtäviä ja <NUM> tehtävän vaihtoa viikossa"
 TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,Brawl Pass + <NUM> tasoa
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,Edellisten kausien Brawl Passeja ei voi ostaa.
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,Nykyistä Brawl Pass -kautta ei löydy. Yritä myöhemmin uudelleen.
@@ -69,7 +69,7 @@ TID_LFG_POPUP_INFO_TEAM,Etsi jäsentä nykyiseen joukkueeseesi.
 TID_LFG_POPUP_EVENT_LABEL_MEMBER,Tapahtuman edellytykset (vaihda napauttamalla)
 TID_LFG_POPUP_EVENT_LABEL_TEAM,Haluan pelata (vaihda napauttamalla):
 TID_LFG_POPUP_START_SEARCH,OK!
-TID_LFG_NO_ROOM_FOR_PLAYERS,Tämä pelitila ei tue enempää pelaajia.
+TID_LFG_NO_ROOM_FOR_PLAYERS,Tässä pelitilassa ei voi olla enempää pelaajia.
 TID_LOOKING_FOR_A_TEAM,ETSIN JOUKKUETTA
 TID_LOOKING_FOR_A_MEMBER,ETSIMME JÄSENTÄ
 TID_CC_TEASER_TITLE,Tulossa pian!
@@ -194,7 +194,7 @@ TID_TEAM_REQEST_JOIN_FAIL_UNMERGEABLE_TEAMS,Liittymispyyntöä ei voi lähettä�
 TID_TEAM_REQEST_JOIN_FAIL_PENDING_INVITE,Liittymispyyntöä ei voi lähettää. Joukkuekutsu odottamassa.
 TID_TEAM_REQEST_JOIN_FAIL_PENDING_JOIN_REQUEST,Liittymispyyntöä ei voi lähettää. Sinulla on liittymispyyntö odottamassa.
 TID_TEAM_REQUEST_JOIN_REQUEST_CANCELLED,Liittymispyyntö peruttu.
-TID_TEAM_JOIN_REQUEST_POPUP_TITLE,HALUAISIN LIITTYÄ JOUKKUEESEENNE
+TID_TEAM_JOIN_REQUEST_POPUP_TITLE,HALUAISIN LIITTYÄ JOUKKUEESEEN
 TID_BATTLE_LOG_TVST_RESULT_0,<c00ff00>VOITTO</c>
 TID_BATTLE_LOG_TVST_RESULT_1,<ccc0000>TAPPIO</c>
 TID_BATTLE_LOG_TVST_RESULT_2,<ccccccc>TASAPELI</c>
@@ -274,7 +274,7 @@ TID_LONG_RANGE_SHOTGUN_DESC,"Shellyn tuliluikku laukoo keskipitkän kantaman amm
 TID_MEGA_BLASH_ULTI,SUPERPANOS
 TID_MEGA_BLASH_ULTI_DESC,Shellyn superpanos tuhoaa sekä suojia että vastustajia. Selviytyjät pysykööt loitolla.
 TID_GUNSLINGER,COLT
-TID_GUNSLINGER_DESC,Colt ampuu kaksi tarkkaa luotiryöppyä kahdella revolverillaan. Hänen supervoimansa saa luodit lentämään laajemmalle ja silppuaa suojapaikat.
+TID_GUNSLINGER_DESC,"Yllättävä sankari, joka löytää itsensä usein väärästä paikasta oikeaan aikaan. Hän rakastaa omaa peilikuvaansa ja suorastaan pursuaa itseluottamusta!"
 TID_RAPID_FIRE,SARJALAUKAUS
 TID_RAPID_FIRE_DESC,Colt ampuu revolvereistaan kuusi suoraa pitkän kantaman laukausta.
 TID_RAPID_FIRE_ULTI,LUOTISADE
@@ -286,13 +286,13 @@ TID_SHOTGUN_BLAST_DESC,"Bullin kaksipiippuinen haulikko levittää raskasta tuho
 TID_CHARGE,HÄRÄN HYÖKKÄYS
 TID_CHARGE_DESC,Bull ottaa hyökkäysasennon ja raivaa tiensä vastustajien ja esteiden läpi. Hän on aina ollut kovapäistä sorttia!
 TID_ROCKET_GIRL,BROCK
-TID_ROCKET_GIRL_DESC,"Brock tulittaa vastustajiaan räjähtävillä pitkän kantaman raketeilla. Hänen superhyökkäyksensä on raju rakettikeskitys, joka tuhoaa suojapaikkoja."
+TID_ROCKET_GIRL_DESC,"Kun Brock ei valaise taistelukenttää raketeilla, hän saa tanssilattian liekkeihin sulavilla liikkeillään."
 TID_FIREWORKS_WEAPON,ROKKIRAKETTI
 TID_FIREWORKS_WEAPON_DESC,Brockin rokkiraketti lentää pitkälle ja todellakin soi mennessään.
 TID_FIREWORKS_ULTI,RAKETTIKUURO
 TID_FIREWORKS_ULTI_DESC,"Brock tulittaa rakettiryöpyn, joka kaataa vastustajia ja esteitä. Oletko nähnyt Brockin jammailevan? Se on sadetanssi, joka tietää rakettikuuroa."
 TID_TNT_DUDE,DYNAMIKE
-TID_TNT_DUDE_DESC,"Dynamike viskaa kaksi räjähtävää dynamiittipötköä. Hänen superhyökkäyksensä on kokonainen dynamiittitynnyri, joka tuhoaa suojapaikkoja."
+TID_TNT_DUDE_DESC,"Kahjon Dynamiken luultiin kadonneen jonkin kaivoksen uumeniin, mutta nyt hän on palannut - ja hän räjäyttää edelleen kaiken tielleen osuvan tuusan nuuskaksi!"
 TID_MORTAR,SYTYTYSLANKA
 TID_MORTAR_DESC,"Mike heittää kaksi dynamiittipötköä, jotka kiitävät vaivatta yli esteiden. Sytytyslangat ovat yhtä lyhyet kuin Miken pinna, kun hän hermostuu!"
 TID_MORTAR_ULTI,ISO PAMAUS
@@ -316,7 +316,7 @@ TID_CACTUS_WEAPON_DESC,"Spike sinkoaa matkaan pienen kaktuksen, joka räjähtä�
 TID_CACTUS_ULTI,PIIKKIMATTO
 TID_CACTUS_ULTI_DESC,Spike sinkoaa piikikkään kranaatin. Räjähdysalueella olevat vastustajat vahingoittuvat ja hidastuvat.
 TID_BARKEEP,BARLEY
-TID_BARKEEP_DESC,"Barley hyökkää paiskomalla vastustajaansa pulloilla, joiden roiskeet tekevät aluetuhoa. Hänen supervoimansa on joukko palavia pulloja."
+TID_BARKEEP_DESC,"Barley tarjoilee Starr Parkin parhaat juomat, mutta jos sotket hänen baaritiskinsä, hän kilahtaa ja pullot alkavat lennellä!"
 TID_BARKEEP_WEAPON,VÄKEVÄ PAUKKU
 TID_BARKEEP_WEAPON_DESC,"Barley nakkaa pullon, joka hajoaa maahan. Vastustajat vahingoittuvat roiskeista, ja lätäkössä seisoskelu aiheuttaa lisää tuhoa."
 TID_BARKEEP_ULTI,VALOMERKKI
@@ -340,7 +340,7 @@ TID_UNDERTAKER_WEAPON_DESC,"Mortis syöksyy eteenpäin heiluttaen lapiotaan letk
 TID_UNDERTAKER_ULTI,VERENIMIJÄT
 TID_UNDERTAKER_ULTI_DESC,"Mortis kutsuu paikalle parven vampyyrilepakoita, jotka imevät vastustajarämäpäiltä elinvoimaa ja palauttavat hänen omansa. Karmeaa!"
 TID_CROW,CROW
-TID_CROW_DESC,"Crow sinkauttaa matkaan kolme myrkkytikaria. Hänen supervoimansa on loikka, jonka alussa ja lopussa hän heittää tikareita."
+TID_CROW_DESC,Tämä arvoituksellinen otus vain ilmaantui kaupunkiin eräänä päivänä. Kukaan ei uskalla pöllyttää hänen sulkiaan - enää.
 TID_CROW_WEAPON,KOLMOISSTILETTI
 TID_CROW_WEAPON_DESC,"Crow paiskoo kolmoisuhan tikareillaan. Vastustaja, jota myrkkytikari viiltää, kärsii pitkäkestoista tuhoa, jonka vaikutuksen ajan parannus tehoaa vähemmän."
 TID_CROW_ULTI,SURMANSYÖKSY
@@ -376,7 +376,7 @@ TID_BONE_THROWER_WEAPON_DESC,Minigunner tekee tämän valtavan konekiväärin k�
 TID_BONE_THROWER_ULTI,LAASTARISÄILIÖ
 TID_BONE_THROWER_ULTI_DESC,Toisinaan tiukassa tulitaistelussa saa naarmuja ja ruhjeita. Laastarisäiliö pitää koko joukkueen taistelukunnossa!
 TID_BLACK_HOLE,TARA
-TID_BLACK_HOLE_DESC,"Tara sivaltaa vastustajiaan kolmoiskorttihyökkäyksellä. Hänen supervoimansa on musta aukko, johon imeytyessään vastustajat vahingoittuvat."
+TID_BLACK_HOLE_DESC,"Mitä kortit kertovat? Tämä kaukomaiden mystikko on tullut ennustamaan, ja korteissa lukee: TAPPIO!"
 TID_BLACK_HOLE_WEAPON,KOLMOSET
 TID_BLACK_HOLE_WEAPON_DESC,Tara heittää kolme sivaltavaa tarot-korttia vastustajia kohti yhdellä ranneliikkeellä. Aikamoinen korttitemppu!
 TID_BLACK_HOLE_ULTI,MUSTA AUKKO
@@ -410,7 +410,7 @@ TID_BATTLE,PELAA
 TID_QUIT,Poistu
 TID_MATCHMAKING_QUIT,Poistu
 TID_MATCHMAKING_HEADING,Etsitään pelaajia
-TID_MATCHMAKING_TIME_LABEL,Ottelun alkamiseen:
+TID_MATCHMAKING_TIME_LABEL,Ottelun alkuun:
 TID_MATCHMAKING_PLAYERS,<x>/<y> pelaajaa löydetty
 TID_BUTTON_CANCEL,Peruuta
 TID_BUTTON_OK,OK
@@ -671,8 +671,8 @@ TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Mahdollisuutesi saada kromaattinen rämäpä�
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"Mahdollisuutesi saada kromaattinen rämäpää kasvaa jokaisella Brawl Pass -kaudella: aluksi rämäpää on legendaarinen, sen jälkeen myyttinen ja lopulta eeppinen.\n\nSinun on saavutettava taso <TIER> kaudella <SEASON>, jotta voit saada rämäpään <BRAWLER> lippaista."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"Mahdollisuutesi saada kromaattinen rämäpää kasvaa jokaisella Brawl Pass -kaudella: aluksi rämäpää on legendaarinen, sen jälkeen myyttinen ja lopulta eeppinen, joten todennäköisyys sen saamiseen on aina suurempi.\n\n<BRAWLER> saapuu kaudella <SEASON>."
 TID_MATCHMAKE_FAILED_5,Ottelunmuodostus epäonnistui: tapahtuma on päättynyt.
-TID_MATCHMAKE_FAILED_7,Ottelunmuodostus epäonnistui: joukkueen jäsen poistui paikalta.
-TID_MATCHMAKE_FAILED_9,Ottelunmuodostus epäonnistui: huoltokatko on alkamaisillaan.
+TID_MATCHMAKE_FAILED_7,Ottelunmuodostus epäonnistui: joukkueen jäsenen yhteys katkesi.
+TID_MATCHMAKE_FAILED_9,Ottelunmuodostus epäonnistui: huoltokatko on alkamassa.
 TID_MATCHMAKE_FAILED_11,Ottelunmuodostus epäonnistui: joukkueen jäsen poistui ottelunmuodostuksesta.
 TID_MATCHMAKE_FAILED_12,Ottelunmuodostus epäonnistui: olet jo kukistanut viimeisen pomon.
 TID_MATCHMAKE_FAILED_14,"Tähtitaistelua voi pelata vain rämäpäillä, joilla on tähtivoima."
@@ -717,7 +717,7 @@ TID_SKIN_REWARD_INFO_0,Brawl Starsin pelaajatuki on lahjoittanut sinulle uuden a
 TID_SKIN_REWARD_TITLE_3,VIESTI PELAAJATUELTA
 TID_SKIN_REWARD_INFO_3,Brawl Starsin pelaajatuki on lahjoittanut sinulle uuden asun.
 TID_REWARD_TITLE,VIESTI PELAAJATUELTA
-TID_REWARD_INFO,Brawl Starsin pelaajatuen lahjoitus odottamassa.
+TID_REWARD_INFO,Brawl Starsin pelaajatuen lahjoitus odottaa lunastamista.
 TID_REWARD_INFO_RESOURCE_FIRSTWINS,Lunastettu <AMOUNT> x tähtipoletti
 TID_REWARD_INFO_RESOURCE_GOLD,Lunastettu <AMOUNT> x poletti
 TID_REWARD_INFO_RESOURCE_LEGENDARYTROPHIES,<AMOUNT> tähtipistettä lunastettu
@@ -890,7 +890,7 @@ TID_FRIEND_STATUS_BATTLE,<cffffff>taistelussa</c> <TIME> ajan
 TID_FRIEND_STATUS_BATTLE_END_SCREEN,<cffffff>ottelun päätösruutu</c>
 TID_FRIEND_STATUS_SPECTATING,<cffffff>katselee</c>
 TID_FRIEND_STATUS_PRACTICING,<cffffff>harjoittelee</c>
-TID_FRIEND_STATUS_MATCHMAKE,<cffffff>ottelunmuodostuksessa</c>
+TID_FRIEND_STATUS_MATCHMAKE,<cffffff>jonossa</c>
 TID_FRIEND_STATUS_HOME_AD_FULL,<cffffff>joukkueessa</c>
 TID_FRIEND_STATUS_HOME_WITH_AD,<cffffff>joukkueessa</c>
 TID_FRIEND_STATUS_HOME_IN_GAMEROOM,<cffffff>joukkueessa</c>
@@ -1146,8 +1146,8 @@ TID_STREAM_EVENT_101,Pelaajan <sender> perustama joukkue
 TID_STREAM_EVENT_102,Pelaaja <sender> liittyi.
 TID_STREAM_EVENT_103,Pelaaja <sender> poistui.
 TID_STREAM_EVENT_104,No voi! <sender> poisti pelaajan <target>.
-TID_STREAM_EVENT_105,Ottelunmuodostus on aloitettu.
-TID_STREAM_EVENT_106,Ottelunmuodostus on peruttu.
+TID_STREAM_EVENT_105,ottelunmuodostus alkanut
+TID_STREAM_EVENT_106,ottelunmuodostus peruttu
 TID_STREAM_EVENT_107,Ottelu on alkanut.
 TID_STREAM_EVENT_108,ottelu voitettu
 TID_STREAM_EVENT_109,ottelu hävitty
@@ -1625,11 +1625,11 @@ TID_BARREL_BOT_WEAPON_DESC,Darrylin kaksipiippuiset haulikot ampuvat kaksi annos
 TID_BARREL_BOT_ULTI,TYNNYRIJYRÄYS
 TID_BARREL_BOT_ULTI_DESC,"Darryl etenee rullaamalla tynnyrissään. Matkalla hän kolkkaa vastustajia, vähentää itseensä kohdistuvaa tuhovoimaa ja pomppii seinistä. Hänen superinsa latautuu uudelleen ajan mittaan!"
 TID_ARTILLERY_DUDE,PENNY
-TID_ARTILLERY_DUDE_DESC,"Penny ampuu kolikkopusseja, jotka vahingoittavat sekä vastustajaa että sen takana olevia kohteita. Hänen superinsa on mörssärimäinen tykkitorni."
+TID_ARTILLERY_DUDE_DESC,"Ilkikurinen Penny on rellestävä kapinallinen, joka hallitsee \qvaltameriä\q. Hän on varsin vaarallinen seikkailija, joka tekee mitä vain saaliinsa eteen."
 TID_ARTILLERY_DUDE_WEAPON,LANTTILÄIMÄYS
 TID_ARTILLERY_DUDE_WEAPON_DESC,"Ammuksena on pussi katinkultaa. Jos pussi osuu vastustajaan, se hajoaa, ja kolikot vahingoittavat ensimmäisen vastustajan takana olevia kohteita."
 TID_ARTILLERY_DUDE_ULTI,VANHA KUULALINKO
-TID_ARTILLERY_DUDE_ULTI_DESC,"Penny virittää tykkinsä! Se ampuu vastustajia pitkällä kantamalla, vaikka he olisivat suojan takana."
+TID_ARTILLERY_DUDE_ULTI_DESC,"Pennyn tykki ei ole mikään vitsi! Sillä voi ampua vastustajia pitkällä kantamalla ja suojien yli, ja se sytyttää maan tuleen."
 TID_ITEM_NAME_SPECIAL,TÄHTIVOIMA
 TID_HERO_INFO_ITEM_LOCKED,Voit löytää tämän tason <LEVEL> jälkeen.
 TID_HERO_INFO_LOCKED_INFO,Avaa rämäpää rähinälippaasta.
@@ -2166,7 +2166,7 @@ TID_TEAM_MEMBER_STATUS_NEW_0,<c999999>POISSA</c>
 TID_TEAM_MEMBER_STATUS_NEW_1,OTTELUSSA
 TID_TEAM_MEMBER_STATUS_NEW_2,POISSA
 TID_TEAM_MEMBER_STATUS_NEW_3,<EMPTY>
-TID_TEAM_MEMBER_STATUS_NEW_4,ODOTTAA OTTELUA
+TID_TEAM_MEMBER_STATUS_NEW_4,JONOSSA
 TID_TEAM_MEMBER_STATUS_NEW_5,OTTELU PÄÄTTYI
 TID_TEAM_MEMBER_STATUS_NEW_6,<c999999>POISSA</c>
 TID_TEAM_MEMBER_STATUS_NEW_7,KATSELEE
@@ -2224,7 +2224,7 @@ TID_DYNAMIKE_SANTA_SKIN_SHOP,PUKKI-\nMIKE
 TID_DYNAMIKE_CHEF_SKIN_SHOP,MAUSTE-\nMIKE
 TID_BROCK_BOOMBOX_SKIN_SHOP,BOOMBOX-\nBROCK
 TID_NITA_REINDEER_SKIN_SHOP,PORO-NITA
-TID_EVENT_STARTS_IN,Tapahtuman alkamiseen <TIME>
+TID_EVENT_STARTS_IN,Tapahtuman alkuun: <TIME>
 TID_UNDERTAKER_HAT_SKIN,SILINTERI-MORTIS
 TID_CREATE_ROOM_CODE,LUO JOUKKUEKOODI
 TID_EVENT_LOCKED_TEAM,Tässä tapahtumassa ei voi pelata joukkueessa.
@@ -2532,8 +2532,8 @@ TID_CONTENT_UPDATE,Sisältöä ladataan...
 TID_BATTLE_ROYALE_28,Lentävä mielikuvitus
 TID_SHAMAN_SHIBA_SKIN,SHIBA-NITA
 TID_PENNY_BUNNY_SKIN,PUPU-PENNY
-TID_SHAMAN_SHIBA_SKIN_SHOP,SHIBA-NITA
-TID_PENNY_BUNNY_SKIN_SHOP,PUPU-PENNY
+TID_SHAMAN_SHIBA_SKIN_SHOP,SHIBA-\nNITA
+TID_PENNY_BUNNY_SKIN_SHOP,PUPU-\nPENNY
 TID_PURCHASE_POPUP_CONFIRM_OFFER,OSTETAANKO TARJOUS?
 TID_PURCHASE_POPUP_CONFIRM_SKIN,OSTETAANKO ASU?
 TID_PURCHASE_POPUP_CONFIRM_HERO,OSTETAANKO RÄMÄPÄÄ?
@@ -3145,7 +3145,7 @@ TID_POCO_PIRATE_SKIN_SHOP,LAIVAPOIKA-\nPOCO
 TID_BEA_LADYBUG_SKIN,LEPPÄKERTTU-BEA
 TID_BEA_LADYBUG_SKIN_SHOP,LEPPÄKERTTU-\nBEA
 TID_MAX_BLUE_SKIN,GT-MAX
-TID_MAX_BLUE_SKIN_SHOP,GT-\nMAX
+TID_MAX_BLUE_SKIN_SHOP,GT-MAX
 TID_CTF_3,Erityislahjakkaat
 TID_CTF_4,Lomapyhän jysäys
 TID_CTF_5,Riemulla karkuun
@@ -3290,9 +3290,9 @@ TID_FREE_BOX_AVAILABLE_3,Ilmaiset palkinnot odottavat sinua!
 TID_FREE_BOX_AVAILABLE_4,Hae ilmainen palkintosi nyt!
 TID_SEASON_ENDED_NOTI,Pokaaliliiga on päättynyt! Lunasta palkintosi!
 TID_KEY_BAR_FULL,Poletteja on saatavilla <PARAM>! Aika lähteä otteluun!
-TID_COME_BACK_NOTIFICATION_SMALL,Mites olisi toinen ottelu?
-TID_COME_BACK_NOTIFICATION_MEDIUM,Mites olisi toinen ottelu?
-TID_COME_BACK_NOTIFICATION_LARGE,Mites olisi toinen ottelu?
+TID_COME_BACK_NOTIFICATION_SMALL,Miten olisi toinen ottelu?
+TID_COME_BACK_NOTIFICATION_MEDIUM,Miten olisi toinen ottelu?
+TID_COME_BACK_NOTIFICATION_LARGE,Miten olisi toinen ottelu?
 TID_POWER_PLAY_NOTIFICATION,TÄHTITAISTELUN kartta (<PARAM>) on auki!
 TID_NOTIFICATION_NEW_BRAWLER,"<PARAM> on täällä, tule kokeilemaan!"
 TID_NOTIFICATION_DOUBLE_TOKENS_STARTED,TUPLAPOLETTITAPAHTUMA on alkanut!
@@ -3338,6 +3338,8 @@ TID_ACCESSORY_BLOCKED_SUPER_REQUIRED,Tarvitaan ladattu supervoima!
 TID_ACCESSORY_BLOCKED_REQUIRES_MECHA,Mechamuoto tarvitaan!
 TID_ACCESSORY_BLOCKED_REQUIRES_DUPLICATE,Lolan ego tarvitaan!
 TID_ACCESSORY_BLOCKED_DUPLICATE_TOO_FAR,Lolan ego on liian kaukana!
+TID_ACCESSORY_BLOCKED_SILENCED,Mykistetty!
+TID_ACCESSORY_BLOCKED_RANGE_TO_TURRET,Ei vastustajia kantaman sisällä!
 TID_WALLY_SHORT_DESC,VAHVISTUS
 TID_WALLY_DESC,"Sprout rakennettiin kylvämään elämää, ja sitä se kiltisti tekeekin heittelemällä pomppivia siemenpommeja. Supervoimallaan se luo kasviesteen!"
 TID_WALLY_WEAPON,SIEMENPOMMI
@@ -3774,7 +3776,7 @@ TID_BRAWLPASS_POPUP_UNLOCKED,BRAWL PASS AVATTU!
 TID_BRAWL_PASS_SEASON_1,MONSTERIKESÄ
 TID_BRAWL_PASS_INFO_TEXT_1,"Ansaitse kasapäin ylimääräisiä palkintoja, mukaan lukien seuraavat:\n\nSurge - uusi kromaattinen rämäpää!\n\nAsu vain passin haltijoille: <SKIN_1>!\n\nAsu vain passin haltijoille: <SKIN_2>!\n\nVain passin haltijoiden saatavilla olevia upeita merkkejä Surgelle!\n\n<NUM> megalipasta!\n\nYlimääräisiä kolikoita ja tehopisteitä!\n\nYlimääräisiä tehtäviä Brawl Passin nopeampaan suorittamiseen!\n\nVain passin haltijoiden saatavilla oleva kromaattinen nimi koko kaudeksi!"
 TID_EMOTE_EQUIP_NOT_OWNED,Tämä merkki löytyy merkkipaketeista!
-TID_RAID_BOSS_TOWN_CRUSHER_INTRO_TEXT,KUKISTA MEGAMONSTERI!
+TID_RAID_BOSS_TOWN_CRUSHER_INTRO_TEXT,Kukista megamonsteri!
 TID_EMOTE_CATEGORY_1,1. PAIKKA
 TID_EMOTE_CATEGORY_2,2. PAIKKA
 TID_EMOTE_CATEGORY_3,3. PAIKKA
@@ -3868,13 +3870,13 @@ TID_KING_OF_HILL_28,Kiistaton kontrolli
 TID_EMOTE_EQUIP_NOT_OWNED_SPECIAL,Keräilyharvinaisuus! Tämän merkin saatavuus on rajoitettu!
 TID_LOGIN_WITH_FACEBOOK,Kirjaudu Facebookin kautta
 TID_TERMS_OF_SERVICE_BUTTON_TENCENT,Tencent Gamesin lisenssi- ja palvelusopimus
-TID_PRIVACY_POLICY_BUTTON_TENCENT,Tencent Gamesin yksityisyydensuojaa koskevat käytännöt
+TID_PRIVACY_POLICY_BUTTON_TENCENT,荒野乱斗隐私保护指引
 TID_PARENTS_GUIDE_BUTTON_TENCENT,Tencent Gamesin lasten yksityisyydensuojaa koskevat käytännöt
 TID_TENCENT_LOGIN_AGREEMENTS,"Olen huolellisesti lukenut ja hyväksyn seuraavat: <TOS>, <PP>, <CHILDREN> ja <THIRDPARTY>."
 TID_THIRD_PARTY_SHARING_BUTTON_TENCENT,Tietojen jakaminen kolmansille osapuolille
 TID_TENCENT_THIRDPARTY_INFO,Tietojen jakaminen kolmansille osapuolille
 TID_TENCENT_LOGIN_TOS,Tencent Gamesin lisenssi- ja palvelusopimus
-TID_TENCENT_LOGIN_PP,Tencent Gamesin yksityisyydensuojaa koskevat käytännöt
+TID_TENCENT_LOGIN_PP,荒野乱斗隐私保护指引
 TID_TENCENT_LOGIN_CHILDREN,Tencent Gamesin lasten yksityisyydensuojaa koskevat käytännöt
 TID_TENCENT_LOGIN_AGREEMENT_NOTE,"Sinun on huolellisesti luettava ja hyväksyttävä\n<TOS>,\n<PP>,\n<CHILDREN> ja\n<THIRDPARTY>\nennen peliin pääsyä."
 TID_KING_OF_HILL_29,Energiapiikki
@@ -3995,12 +3997,19 @@ TID_TENCENT_LOGIN_AGREEMENT_POPUP_2_TITLE,Tärkeä ilmoitus
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_2,"Huomaathan, että sinun on luettava huolellisesti ja hyväksyttävä\n<TOS>,\n<PP>,\n<CHILDREN> ja\n<THIRDPARTY>\nennen peliin pääsyä."
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_BACK,Takaisin
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_NO,Ei
+TID_TENCENT_LOGIN_BS_PP,荒野乱斗隐私保护指引
+TID_TENCENT_LOGIN_SPECIAL_TOS,《腾讯游戏许可及服务协议》
+TID_TENCENT_LOGIN_SPECIAL_OLD_PP,《腾讯游戏隐私保护指引》
+TID_TENCENT_LOGIN_SPECIAL_BS_PP,《荒野乱斗隐私保护指引》
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1_TITLE,更新提示
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1,尊敬的腾讯游戏用户：\n为充分保障您的权利及个人信息安全，我们根据法律法规要求，\n对<OLDPP>进行了更新。我们结合本产品和业务实际，更详细、具体地向您说明我们收集和使用您个人信息的业务场景及目的，具体可参见<PP>内更新提示。\n您也可以阅读完整版\n<PP>和<TOS>\n了解详尽的个人信息处理规则和用户权利义务。如您已详细阅读并同意\n<TOS>和<PP>，\n请点击\q同意\q继续使用我们的服务。
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_2,尊敬的用户，您需要详细阅读并同意\n<TOS>、<PP>、\n<CHILDREN>和<THIRDPARTY>，\n才可进入游戏哦。
 TID_BRAWL_PASS_SEASON_2,TERVETULOA STARR PARKIIN!
 TID_BRAWL_PASS_INFO_TEXT_2,"Ansaitse kasapäin ylimääräisiä palkintoja, mukaan lukien seuraavat:\n\n<BRAWLER> - uusi kromaattinen rämäpää!\n\nAsu vain passin haltijoille: <SKIN_1>!\n\nAsu vain passin haltijoille: <SKIN_2>!\n\nVain passin haltijoiden saatavilla olevia upeita merkkejä rämäpäälle <BRAWLER>!\n\n<NUM> megalipasta!\n\nYlimääräisiä kolikoita ja tehopisteitä!\n\n\nYlimääräisiä tehtäviä Brawl Passin nopeampaan suorittamiseen!\n\nVain passin haltijoiden kromaattinen nimi kauden ajaksi!"
 TID_BRAWL_PASS_SEASON_3,LUMILOMA
 TID_BRAWL_PASS_INFO_TEXT_3,"Ansaitse kasapäin ylimääräisiä palkintoja, mukaan lukien seuraavat:\n\n<BRAWLER> - uusi kromaattinen rämäpää!\n\nAsu vain passin haltijoille: <SKIN_1>!\n\nAsu vain passin haltijoille: <SKIN_2>!\n\nVain passin haltijoiden saatavilla olevia upeita merkkejä rämäpäälle <BRAWLER>!\n\n<NUM> megalipasta!\n\nYlimääräisiä kolikoita ja tehopisteitä!\n\n\nYlimääräisiä tehtäviä Brawl Passin nopeampaan suorittamiseen!\n\nVain passin haltijoiden kromaattinen nimi kauden ajaksi!"
 TID_BRAWL_PASS_SEASON_4,STARR FORCE!
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,"Ansaitse kasapäin ylimääräisiä palkintoja, mukaan lukien seuraavat:\n\n<BRAWLER> - uusi kromaattinen rämäpää!\n\nAikarajattu erikoisasu: <SKIN_1>!\n\nAikarajattu erikoisasu: <SKIN_2>!\n\nAikarajattuja erikoismerkkejä rämäpäälle <BRAWLER>!\n\nAikarajattuja spraymaaleja\n\n<NUM> megalipasta!\n\nYlimääräisiä kolikoita ja tehopisteitä!\n\n\nYlimääräisiä tehtäviä Brawl Passin nopeampaan suorittamiseen!\n\n<NUM> ylimääräistä tehtävän vaihtoa viikossa\n\nVain passin haltijoiden kromaattinen nimi kauden ajaksi!"
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,"Ansaitse kasapäin ylimääräisiä palkintoja, mukaan lukien seuraavat:\n\n<BRAWLER> - uusi kromaattinen rämäpää!\n\nAikarajattu erikoisasu: <SKIN_1>!\n\nAikarajattu erikoisasu: <SKIN_2>!\n\nAikarajattuja erikoismerkkejä rämäpäälle <BRAWLER>!\n\nAikarajattuja erikoissprayita\n\n<NUM_BOX> megalipasta!\n\nYlimääräisiä kolikoita ja tehopisteitä!\n\nYlimääräisiä tehtäviä Brawl Passin nopeampaan suorittamiseen!\n\n<NUM_REROLL> ylimääräistä tehtävän vaihtoa viikossa\n\nVain passin haltijoiden kromaattinen nimi kauden ajaksi!"
 TID_QUESTS_MORE,Näytä kaikki tehtävät
 TID_QUESTS_MORE_NEXT_SEASON,"Olet suorittanut kaikki kauden <THIS_SEASON> tehtävät. Uusia tehtäviä tulee saataville, kun kausi <NEXT_SEASON> alkaa."
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,Kauden <NUM> palkinnot
@@ -4551,7 +4560,7 @@ TID_SECTION_HEADER_CLUB_LEAGUE,JENGILIIGA
 TID_SECTION_SHORTCUT_CLUB_LEAGUE,JENGILIIGA
 TID_RANKED2_ROUNDS_HEADER,Rähinäerät
 TID_RANKED2_ROUNDS_INFO,"Ottelun voittaa joukkue, joka voittaa ensimmäisenä <NUM> erää!"
-TID_RANKED2_ROUNDS_NEXT_TIMER,<NUM>. erän alkamiseen:
+TID_RANKED2_ROUNDS_NEXT_TIMER,<NUM>. erän alkuun:
 TID_RANKED2_ROUNDS_NEXT_TIMER_TIME,<SECONDS>
 TID_RONIN_RUFFS_SKIN,RONIN-RUFFS
 TID_RONIN_RUFFS_SKIN_SHOP,RONIN-\nRUFFS
@@ -4649,7 +4658,7 @@ TID_RANKED_CLUB_LEAGUE_EVENT_LOCATION_INFO,Satunnainen pelitila ja kartta
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_1,Kilpaile 3v3-otteluissa joukkueessa tai muiden itsesi tasoisten pelaajien kanssa.
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_2,"Ottelun voittaa joukkue, joka voittaa ensimmäisenä kaksi peliä."
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_3,"Pelitilat ja kartat vaihtuvat satunnaisesti ja usein, joten ole valmiina!"
-TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"Kun kausi päättyy, saat palkintoja sen mukaan, montako lippua pelasit ja miten jengisi sijoittui kaudella."
+TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"Kun viikko päättyy, saat palkintoja sen mukaan, montako lippua käytit ja miten jengisi sijoittui kaudella."
 TID_RANKED_EVENT_SEASON_REWARDS_BUTTON,KAUSIPALKINNOT
 TID_RANKED_EVENT_SOLO,TÄHTILIIGA
 TID_RANKED_EVENT_TEAMS,TÄHTILIIGA
@@ -4742,6 +4751,7 @@ TID_RANKED_PICK_ERROR_BRAWLER_BANNED,"Tämä rämäpää on estetty, valitse toi
 TID_RANKED_PICK_ERROR_BRAWLER_PICKED,"Tämä rämäpää on jo valittu, valitse toinen!"
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED,Tämä rämäpää ei ole vielä saatavilla Tähtiliigassa. Valitse joku toinen!
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED_CLUB_LEAGUE,Tämä rämäpää ei ole vielä saatavilla tähtiotteluihin. Valitse jokin toinen rämäpää!
+TID_RANKED_ERROR_BRAWLER_BLACKLISTED,Turnauksen järjestäjä on poistanut tämän rämäpään käytöstä.
 TID_RANKED_HERO_POWER,TEHO <NUM>
 TID_RANKED_REWARD_POPUP_SEASON,KAUSI <SEASON>
 TID_RANKED_REWARDS_TOOL_TIP,"Tähtiliigassa on kaksi 3v3-tilaa:\n\n- yksinpelitila, jossa seuraasi liittyy kaksi satunnaista pelaajaa, joiden liigataso vastaa omaasi\n\n- joukkuetila, jossa kokoat ensin kolmen hengen joukkueen ennen ottelun alkamista.\n\nTähtiliigan palkintosi perustuvat korkeimpaan saavuttamaasi arvoon kummassa tahansa tilassa kauden aikana."
@@ -4789,6 +4799,8 @@ TID_RANKED_MATCH_TERMINATED_REASON_1,Ottelu lopetettu: pelaajan <NAME> yhteys ka
 TID_RANKED_MATCH_TERMINATED_REASON_2,Ottelu lopetettu: pelaaja <NAME> ei vastaa.
 TID_RANKED_MATCH_TERMINATED_REASON_3,Ottelu lopetettu: kausi päättyi.
 TID_RANKED_MATCH_TERMINATED_REASON_4,Ottelu lopetettu (<CODE>). Yritä uudelleen.
+TID_RANKED_MATCH_TERMINATED_REASON_5,Ottelu lopetettu: liian pitkä ottelu.
+TID_RANKED_MATCH_TERMINATED_REASON_6,Ottelu lopetettu: liian pitkä erä.
 TID_RANKED_GOAL_REWARD_PURCHASE_OPTION_SKIN,AINUTLAATUINEN ASUN OSTOMAHDOLLISUUS
 TID_RANKED_MATCH_TERMINATED_NAME_PLAYER,pelaaja
 TID_RANKED2_CONFIRM_PICKED,VALITTU
@@ -5358,17 +5370,17 @@ TID_CLUB_LEAGUES_BUTTON_EVENT_DAY,<DAY>. päivä
 TID_CLUB_LEAGUES_BUTTON_DAY_NEW,UUSI PÄIVÄ
 TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,SEURAAVAT TAPAHTUMAT
 TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,Seuraavaan päivään:
-TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Seuraavaan kauteen:
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Sijoitus kaudella: <RANK>.
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Ei sijoitusta kaudella
+TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Seuraavan viikon alkuun:
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Tämän viikon sijoitus: <RANK>.
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Ei sijoitusta tällä viikolla
 TID_CLUB_LEAGUES_BUTTON_JOIN_CLUB_DESC,Liity jengiin!
 TID_CLUB_LEAGUES_BUTTON_REGISTRATION_CLOSED,Ilmoittautuminen suljettu
 TID_CLUB_LEAGUE_EVENT_TIME_LEFT,<TIME> jäljellä
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_DESC,Seuraavaan tapahtumapäivään:
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_TIME,<TIME>
-TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,Kauden alkuun: <TIME>
+TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,Seuraavan viikon alkuun: <TIME>
 TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TITLE,JENGILIIGA
-TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,Seuraavat kausitapahtumat:
+TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,Seuraavan viikon tapahtumat:
 TID_CLUB_LEAGUE_TICKETS_PER_PLAY,<NUM><cA4B7E0>/PELI</c>
 TID_CLUB_LEAGUE_TROPHIES_MAX_PER_WIN,enintään/voitto
 TID_CLUB_LEAGUE_EVENT_TROPHY_WIN_DESC,Voitto jengijoukkueessa:
@@ -5408,17 +5420,17 @@ TID_CLUB_LEAGUE_MASTERS,MESTARIT
 TID_CLUB_LEAGUE_TIER_1,I
 TID_CLUB_LEAGUE_TIER_2,II
 TID_CLUB_LEAGUE_TIER_3,III
-TID_CLUB_LEAGUE_SEASON_PROGRESS,KAUDEN EDISTYMINEN
+TID_CLUB_LEAGUE_SEASON_PROGRESS,VIIKON EDISTYMINEN
 TID_CLUB_LEAGUE_SEASON_ENDS_IN,Päättymiseen:
 TID_CLUB_LEAGUE_WAITING_FINAL_RESULTS,Odotetaan lopullisia tuloksia...
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,Odotetaan kauden tuloksia...
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,Kauden tuloksia käsitellään. Palaa myöhemmin katsomaan lopulliset tulokset!
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,Odotetaan tämän viikon tuloksia...
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,Viikon tuloksia käsitellään. Palaa myöhemmin katsomaan lopulliset tulokset!
 TID_CLUB_LEAGUE_RESULTS_TITLE,Tulokset:
-TID_CLUB_LEAGUE_SEASON_OVER,KAUSI PÄÄTTYI!
-TID_CLUB_LEAGUE_SEASON_OVER_2,KAUSI PÄÄTTYI
+TID_CLUB_LEAGUE_SEASON_OVER,VIIKKO PÄÄTTYI!
+TID_CLUB_LEAGUE_SEASON_OVER_2,VIIKKO PÄÄTTYI
 TID_CLUB_LEAGUE_MAX_TROPHIES_AVAILABLE,Pokaalien enimmäismäärä
-TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,KAUDEN EDISTYMINEN
-TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,KAUDEN TULOKSET
+TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,VIIKON EDISTYMINEN
+TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,VIIKON TULOKSET
 TID_CLUB_LEAGUE_ITEM_PROMOTING,YLENNETÄÄN
 TID_CLUB_LEAGUE_ITEM_PROMOTING_MULTIPLE,YLENNETÄÄN x <NUM>
 TID_CLUB_LEAGUE_ITEM_DEMOTING,ALENNETAAN
@@ -5426,20 +5438,20 @@ TID_CLUB_LEAGUE_ITEM_DEMOTING_MULTIPLE,ALENNETAAN x <NUM>
 TID_CLUB_LEAGUE_COLUMN_CLUB_NAME,JENGIN NIMI
 TID_CLUB_LEAGUE_COLUMN_DAILY_RANKS,PÄIVÄN SIJOITUKSET
 TID_CLUB_LEAGUE_COLUMN_TOTAL_POINTS,PISTEET YHT.
-TID_CLUB_LEAGUE_COLUMN_MAX_REWARD,PALKINTO ENINTÄÄN
+TID_CLUB_LEAGUE_COLUMN_MAX_REWARD,PALKINTO ENINT.
 TID_CLUB_LEAGUE_SHOP_DESC,Tehosta etenemistäsi ja osta erikoisasuja!
 TID_CLUB_LEAGUE_SHOP_BUTTON_DESC,TEHOSTA ETENEMISTÄSI JA OSTA ERIKOISASUJA:
 TID_CLUB_LEAGUE_BUTTON_VISIT_CLUB_SHOP,JENGIKAUPPAAN
-TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,KAUDEN PÄÄTÖSPALKINTOSI
+TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,VIIKON PÄÄTÖSPALKINTOSI
 TID_CLUB_LEAGUE_SEASON_END_REWARD_CLAIMED,LUNASTETTU
 TID_CLUB_LEAGUE_NOT_YET_RANKED,EI VIELÄ SIJOITUSTA
-TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,KAUDEN ILMOITTAUTUMINEN SULJETTU
-TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,KATSELE TÄTÄ KAUTTA
-TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,Pelaa taas ensi kaudella!
-TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,Seuraavan kauden tapahtumat:
-TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,Seuraavan kauden alkuun: <TIME>
-TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,"Pelaa kauden kaikki liput, niin saat oman enimmäispalkintosi!"
-TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED_TITLE,PELATUT LIPUT:
+TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,VIIKON ILMOITTAUTUMINEN SULJETTU
+TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,KATSELE TÄTÄ VIIKKOA
+TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,Pelaa taas ensi viikolla!
+TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,Seuraavan viikon tapahtumat:
+TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,Seuraavan viikon alkuun: <TIME>
+TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,"Pelaa viikon kaikki liput, niin saat oman enimmäispalkintosi!"
+TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED_TITLE,PELATUT LIPUT
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED,<NUM>/<MAX>
 TID_CLUB_LEAGUE_SEASON_CLUB_COIN_REWARD,<NUM>/<MAX>
 TID_CLUB_LEAGUE_BUY,OSTA
@@ -5449,7 +5461,7 @@ TID_CLUB_LEAGUE_NEED_MORE_GOLDEN_TICKETS,"Jotta voit pelata, tarvitset lisää k
 TID_CLUB_LEAGUE_NOT_ENOUGH_GOLDEN_TICKETS_AVAILABLE_TO_PURCHASE,Ei tarpeeksi kultaisia lippuja myytävänä.
 TID_CLUB_LEAGUE_FEATURE_UNAVAILABLE,Tämä ominaisuus ei ole tällä hetkellä käytössä.
 TID_CLUB_LEAGUE_NOT_IN_LEAGUE,Jengi ei ole tällä hetkellä liigassa.
-TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,Jengi ei ole mukana tällä liigakaudella!
+TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,Jengi ei ole mukana tällä liigaviikolla!
 TID_DUPLICATOR,LOLA
 TID_DUPLICATOR_SHORT_DESC,TUHOAJA
 TID_DUPLICATOR_DESC,"Lola on opas, näyttelijä ja diiva - Brawlywoodin ehdoton ykkösnainen!\n\nLola hyökkää huivillaan, ja supervoiman avulla hän saa egonsa ilmestymään näkyväksi."
@@ -5467,7 +5479,7 @@ TID_CLUB_UNLOCK_TITLE_CLUBS,JENGIT
 TID_CLUB_UNLOCK_TITLE_UNLOCKED,avattu!
 TID_CLUB_UNLOCK_SEARCHING_FOR_CLUB,Etsitään sinulle parasta jengiä...
 TID_CLUB_UNLOCK_CLUB_LEAGUE_TITLE,JENGILIIGA
-TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,Osallistu seuraavalle kaudelle ja voita erikoispalkintoja!
+TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,Osallistu seuraavaan viikkoon ja voita erikoispalkintoja!
 TID_CLUB_UNLOCK_CLUB_FOUND,JENGI LÖYTYI!
 TID_CLUB_UNLOCK_WELCOME_TO_CLUB,TERVETULOA JENGIIN!
 TID_CLUB_UNLOCK_LETS_GO,MENOKSI
@@ -5480,8 +5492,8 @@ TID_CLUB_UNLOCK_STAT_TYPE,Tyyppi
 TID_SHOP_BRAWLOWEEN_TITLE,BRAWL-OWEEN
 TID_SHOP_BRAWLOWEEN_INFO,Asusetti
 TID_SKIN_INFO_BRAWLOWEEN,Brawl-oween-asut
-TID_CLUB_LEAGUE_FLOW_NEW_SEASON,Uusi kausi!
-TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Kausi on päättynyt
+TID_CLUB_LEAGUE_FLOW_NEW_SEASON,Uusi viikko!
+TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Viikko on päättynyt
 TID_CLUB_LEAGUE_FLOW_CLUB_LEAGUE,JENGILIIGA
 TID_CLUB_LEAGUE_FLOW_DAY_NEW,UUSI!
 TID_CLUB_LEAGUE_FLOW_EVENT_DAY_STARTED,<NUM>. TAPAHTUMAPÄIVÄ ALKOI!
@@ -5492,8 +5504,8 @@ TID_CLUB_LEAGUE_FLOW_BUTTON_GO_SEASON_END,OK
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_START,MENOKSI
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_END,OK
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_LEAGUE_PROMOTION,OK
-TID_CLUB_LEAGUE_FLOW_SEASON_RANK,Sijoitus kaudella
-TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,KAUDEN PÄÄTÖSPALKINTOSI
+TID_CLUB_LEAGUE_FLOW_SEASON_RANK,Viikon sijoitus
+TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,VIIKON PÄÄTÖSPALKINTOSI
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED_TITLE,Pelatut liput
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED,<NUM><cA4B7E0>/<MAX></c>
 TID_CLUB_LEAGUE_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5504,7 +5516,7 @@ TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_1,Osto epäonnistui.
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_COINS,Ei tarpeeksi kolikoita!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_GEMS,Ei tarpeeksi jalokiviä!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_3,Lippuja ei ole nyt myytävänä!
-TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,Kauden päättymiseen: <TIME>
+TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,Viikon päättymiseen: <TIME>
 TID_CLUB_LEAGUE_TICKET_SHOP_TITLE,KULTAISET LIPUT
 TID_CLUB_LEAGUE_TICKET_SHOP_INFO,Voit käyttää enintään <cFEA305><NUM> kultaista lippua</c> jengiliigan kauden aikana. Voit pelata niillä ylimääräisiä otteluita ja ansaita enemmän jengipokaaleja. Kultaisten lippujen käyttäminen voi parantaa jengisi sijoitusta kyseisenä tapahtumapäivänä.\n\nKäyttämättömät kultaiset liput siirretään kauden päätyttyä automaattisesti seuraavalle kaudelle.\n\nKultaisia lippuja ei oteta huomioon kauden päätöspalkintoja laskettaessa.
 TID_CLUB_LEAGUE_TICKETS_GET_MORE,Hanki lisää...
@@ -5527,18 +5539,18 @@ TID_CLUB_LEAGUE_EVENTS_TITLE,TAPAHTUMAT
 TID_CLUB_LEAGUE_EVENT_UNLOCKS_AT,Avautuu:
 TID_CLUB_LEAGUE_SHOW_TICKETS_TOGGLE,Näytä kerättävien jengipokaalien <cFFDA14>enimmäismäärä</c>
 TID_CLUB_LEAGUE_INFO_TITLE,JENGILIIGAN TIEDOT
-TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Kaudet ja tapahtumapäivät
-TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>KAUDET JA TAPAHTUMAPÄIVÄT</c>
-TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Jokaisen viikoittaisen kauden aikana jengisi kilpailee 7:ää muuta liigassa olevaa jengiä vastaan.\n\nPelaa jengiliigan tapahtumia 3 tapahtumapäivän aikana ja voita päivittäin pokaaleja jengillesi. Eniten pokaaleja kunkin päivän aikana keränneet jengit saavat eniten pisteitä kauden pistetaulukkoon.\n\nJengipokaalit NOLLATAAN kunkin tapahtumapäivän lopussa.\n\n<cFCBC22>Vinkki: muodosta joukkueita jengisi jäsenten kanssa, niin saat ylimääräisiä jengipokaaleja!</c>"
-TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Liput
-TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>LIPUT</c>
-TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,"Jengiliigan tapahtumien pelaamiseen tarvitaan lippuja. Jokaisella jengin jäsenellä on lippuja jokaista tapahtumapäivää varten.\n\nMaksimoi kausipalkintosi käyttämällä kaikki lippusi, ja hanki jengillesi mahdollisimman monta jengipokaalia!"
-TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,Liigat
-TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>LIIGAT</c>
-TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,"Eniten kausipisteitä viikon aikana keränneet jengit ylennetään seuraavaan liigaan ja heikoiten pärjänneet jengit alennetaan. Mitä korkeammassa liigassa jengisi on, sitä kovemmat haasteet ja paremmat palkinnot!"
+TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Tervetuloa
+TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>TERVETULOA JENGIKISOIHIN</c>
+TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Pelaa jengisi kanssa ja ansaitse <cFCBC22>jengikaupan</c> palkintoja joka viikko!\n\nJoka viikko on käynnissä yksi jengikisa:\n<cFCBC22>JENGILIIGAVIIKKO</c> - Kilpaile muita jengejä vastaan jengiliigassa, jotta voit ansaita parhaat palkinnot ja nousta ylempiin liigoihin.\n<cFCBC22>JENGITEHTÄVÄVIIKKO</c> - Suorita kolme jengitehtävääsi, niin ansaitset pisteitä jengillesi. Mitä useampia tehtäviä koko jengisi suorittaa viikon aikana, sitä parempia palkintoja kaikki jäsenet saavat."
+TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Jengiliiga
+TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>JENGILIIGAVIIKKO</c>
+TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,"Jengiliigaviikon aikana kilpailet seitsemää samassa liigassa olevaa jengiä vastaan. Pelaa jengiliigan tapahtumia <cFCBC22>3 päivänä</c> ja kilpaile parhaista <cFCBC22>jengipokaaleista</c>. Jengiliigan otteluiden pelaaminen maksaa <cFCBC22>lippuja</c>.\n\nViikon parhaiten suoriutunut jengi ansaitsee parhaat palkinnot. Viikon päätteeksi jaetaan <cFCBC22>ylennyksiä</c> ja <cFCBC22>alennuksia</c>.\n\nBonus: pelaa muiden jengisi jäsenten kanssa, niin ansaitset otteluista <cFCBC22>ylimääräisiä jengipokaaleja</c>."
+TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,Jengitehtävät
+TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>JENGITEHTÄVÄVIIKKO</c>
+TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,"Jengitehtäväviikon aikana sinun pitää suorittaa <cFCBC22>3 tehtävää</c>.\n\nSuoritetuista tehtävistä jengi saa <cFCBC22>pisteitä</c>. Mitä enemmän pisteitä jengi viikon aikana kerää, sitä paremman palkinnon kaikki jäsenet saavat. Suorita ainakin yksi tehtävä, jotta voit lunastaa palkintosi.\n\nBonus: pelaa kenen tahansa jengin jäsenen kanssa, niin <cFCBC22>edistytte tehtävässä tuplasti</c>."
 TID_CLUB_LEAGUE_INFO_PAGE_4_MARKER,Jengikauppa
-TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>JENGIKAUPPA</c>
-TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,"Jengiliigasta voitat jengikolikoita. Mitä korkeammassa liigassa olet ja mitä paremmin sijoitut, sitä enemmän ansaitset. Käytä kaikki lippusi kauden aikana, niin saat kerättyä kaikki jengikolikkopalkintosi.\n\nVoit käyttää jengikolikkosi jengikaupassa, jonka valikoimassa on erikoisasuja, tehopisteitä, kolikoita ja tehostimen osia. Käy katsomassa!"
+TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>MIKÄ JENGIKAUPPA ON?</c>
+TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,"Kun pelaat jengiliigassa ja suoritat jengitehtäviä, ansaitset <cFCBC22>jengikolikoita</c>, joita voit käyttää jengikaupassa.\n\nJengikaupassa voit <cFCBC22>tehostaa edistymistäsi</c> jopa 50 % ja ostaa <cFCBC22>erikoisasuja</c>!"
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_1,KILPAILE 7:ÄÄ JENGIÄ VASTAAN
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_2,3 TAPAHTUMA-\nPÄIVÄÄ
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_3,PELAA TAPAHTUMISSA JA VOITA JENGIPOKAALEJA
@@ -5579,17 +5591,17 @@ TID_CLUB_SHOP_BUTTON,JENGIKAUPPA
 TID_CLUB_SHOP_DESC,Tehosta etenemistäsi ja osta erikoisasuja!
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED,Rämäpää lukittu
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED_DESC,"Avaa tämä rämäpää, niin voit ostaa asun!"
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,JENGILIIGAN KAUDEN PÄÄTÖS: Jengisi saavutti <RANKING>. sijan. Sait palkinnoksi <COINS> <cEE1B39>jengikolikkoa</c>!
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"JENGILIIGAN KAUDEN PÄÄTÖS: Jengisi saavutti <RANKING>. sijan, mutta sinä et kisannut tällä kaudella. Osallistu seuraavalle kaudelle, niin saat jengikolikoita!"
-TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,ENIMMÄISPALKINNOT KAUDEN PÄÄTTYESSÄ
-TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,"Käytä kaudella kaikki lippusi, niin saat enimmäispalkintosi!"
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,JENGILIIGAVIIKON PÄÄTÖS: Jengisi saavutti <RANKING>. sijan. Sait palkinnoksi <COINS> <cEE1B39>jengikolikkoa</c>!
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"JENGILIIGAVIIKON PÄÄTÖS: Jengisi saavutti <RANKING>. sijan, mutta sinä et kisannut tällä viikolla. Osallistu seuraavaan viikkoon, niin saat jengikolikoita!"
+TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,ENIMMÄISPALKINNOT VIIKON PÄÄTTYESSÄ
+TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,"Käytä kaikki lippusi viikon aikana, niin saat enimmäispalkintosi!"
 TID_CLUB_LEAGUE_SEASON_REWARD_MAX,ENINT.
 TID_CLUB_LEAGUE_SEASON_PROMOTING_DESC,Ylennetään ylempään liigaan
 TID_CLUB_LEAGUE_SEASON_DEMOTING_DESC,Alennetaan alempaan liigaan
 TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,Etsin joukkuetta:
 TID_CLUB_LEAGUE_LOOKING_FOR_PLAYERS,Etsitään pelaajia:
 TID_CLUB_INFO_TAB_PLAYER_RANKS,SIJOITUKSET
-TID_CLUB_INFO_TAB_LEAGUE_SEASON,JENGILIIGAN KAUSI
+TID_CLUB_INFO_TAB_LEAGUE_SEASON,JENGILIIGAVIIKKO
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY,<NUM>. TAPAHTUMAPÄIVÄ
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY_NONE,TAPAHTUMAPÄIVÄ
 TID_CLUB_MEMBER_LEAGUE_TICKETS,<NUM>/<MAX>
@@ -5624,20 +5636,24 @@ TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,JENGIPOKAALIPALKINNOT
 TID_REWARD_DESC_GEAR_TOKENS,TEHOSTINPOLETIT
 TID_REWARD_DESC_GEAR_TOKEN_SINGLE,TEHOSTINPOLETTI
 TID_REWARD_DESC_GEAR_SCRAP,TEHOSTIMEN OSIA
-TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hei! Et ehtinyt mukaan tälle kaudelle.\n\nVoit silti katsella vapaasti ympärillesi ja seurata jengisi otteluita ennen seuraavan kauden alkua!
+TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hei! Et ehtinyt mukaan tällä viikolla.\n\nVoit silti katsella vapaasti ympärillesi ja seurata jengisi otteluita ennen seuraavan viikon alkua!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Tule tutustumaan jengikaupan tarjontaan!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Lopulliset tulokset:
 TID_CLUB_LEAGUE_TEASER_TITLE,JENGILIIGA
 TID_CLUB_LEAGUE_TEASER_JOIN_CLUB,LIITY JENGIIN
 TID_CLUB_LEAGUE_TEASER_MESSAGE,Kisaamalla jengisi kanssa tehostat etenemistäsi ja ansaitset erikoisasuja!
 TID_CLUB_LEAGUE_TEASER_REACH_TROPHIES_TO_UNLOCK,Avaa jengit keräämällä yhteensä <NUM> pokaalia.
-TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,"Liity jengiin, niin voit kilpailla ensi kaudella."
+TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,Liity jengiin!
 TID_CLUB_LEAGUE_TEASER_FIND_OUT_MORE,KATSO LISÄÄ
-TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,Nykyisen kauden aikataulu:
-TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,Seuraavan kauden aikataulu:
+TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,Tämän viikon aikataulu
+TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,Ensi viikon aikataulu
 TID_CLUB_LEAGUE_EVENTS_DAY_STARTS_IN,Alkamiseen: <TIME>
 TID_CLUB_LEAGUE_EVENTS_DAY_ENDS_IN,Päättymiseen: <TIME>
 TID_CLUB_LEAGUE_EVENTS_INFO_BUTTON,MIKÄ JENGILIIGA ON?
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_CURRENT_SEASON,TÄMÄ VIIKKO
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_ENDS_IN,Päättymiseen: <TIME>
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_NEXT_SEASON,ENSI VIIKKO
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_STARTS_IN,Alkamiseen: <TIME>
 TID_CLUBS_MEMBERS_CLUB_TROPHIES,Jengipokaalit
 TID_CLUBS_MEMBERS_TICKETS_USED,Käytetyt liput
 TID_CLUBS_MEMBERS_POWER_LEAGUE_RANK,Tähtiliigan sijoitus
@@ -5668,7 +5684,7 @@ TID_HEADLESS_RIDER_STU_SKIN,PÄÄTÖN RATSUMIES -STU
 TID_COUNT_PENGULA_MRP_SKIN,KREIVI PENGULA
 TID_SWAMP_GENE_SKIN,SUO-GENE
 TID_GHOST_SQUEAK_SKIN_SHOP,HAAMU-\nSQUEAK
-TID_SURGE KONG_SKIN_SHOP,SURGE KONG
+TID_SURGE KONG_SKIN_SHOP,SURGE\nKONG
 TID_HEADLESS_RIDER_STU_SKIN_SHOP,PÄÄTÖN RATSUMIES\n-STU
 TID_COUNT_PENGULA_MRP_SKIN_SHOP,KREIVI\nPENGULA
 TID_SWAMP_GENE_SKIN_SHOP,SUO-\nGENE
@@ -5758,7 +5774,7 @@ TID_LOOKING_TOGGLE_LOOKING_FOR_A_TEAM,"Nyt muut paikalla olevat näkevät, että
 TID_LOOKING_TOGGLE_LOOKING_FOR_PLAYERS,"Nyt muut paikalla olevat näkevät, että joukkueesi\nETSII PELAAJIA."
 TID_CLUB_JOIN_FAIL_FEATURE_LOCKED,Et voi liittyä jengiin. Jengit avautuvat <NUM> pokaalilla.
 TID_CLUB_LEAGUE_LEAGUES_POPUP_CURRENT_LEAGUE,NYKYINEN LIIGA
-TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,"Ylennyksiä ja alennuksia jokaisen jengiliigan kauden päätteeksi!\nNouse korkeampiin liigoihin, niin ansaitset enemmän jengikolikoita."
+TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,"Ylennyksiä ja alennuksia jokaisen jengiliigaviikon päätteeksi!\nNouse korkeampiin liigoihin, niin ansaitset enemmän jengikolikoita."
 TID_CLUB_LEAGUE_LEAGUES_POPUP_BUTTON,OK
 TID_CLUB_LEAGUE_LEAGUES_POPUP_TITLE,LIIGAT
 TID_IMPORTANT_MESSAGE_TITLE,TÄRKEÄ ILMOITUS
@@ -5836,7 +5852,7 @@ TID_FURIOUS_FANG_SKIN_SHOP,RAIVOISA\nFANG
 TID_CLASSIC MIKE_SKIN,KLASSINEN DYNAMIKE
 TID_CLASSIC MIKE_SKIN_SHOP,KLASSINEN\nDYNAMIKE
 TID_EL_PRIMO_VALENTINES,EL CORAZÓN
-TID_EL_PRIMO_VALENTINES_SHOP,EL\nCORAZÓN
+TID_EL_PRIMO_VALENTINES_SHOP,EL CORAZÓN
 TID_GRIFF_SLEIGH_SKIN,REKIRETKI-GRIFF
 TID_GRIFF_SLEIGH_SKIN_SHOP,REKIRETKI-\nGRIFF
 TID_SANTA_BO_SKIN,HOH-HOH-HOO-BO
@@ -5923,10 +5939,10 @@ TID_CLAIM_VOUCHER_POPUP_TITLE,Lunasta palkinto
 TID_CLAIM_VOUCHER_BUTTON_CLAIM,Lunasta
 TID_CLAIM_VOUCHER_BUTTON_CANCEL,Peruuta
 TID_SPELL_FACTORY_CLAIM_FAILED_TITLE,Virhe palkinnon lunastamisessa
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,Palkinnon lunastaminen ei onnistunut (<c267F00><CODE></c>).
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,Lunastaminen ei onnistu.\n\nPalkinto (<c267F00><CODE></c>) on jo lunastettu.
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,VIRHEELLINEN KOODI\n\n<c7F0000><CODE></c>
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,Palkinnon lunastaminen ei onnistu.\n\nPalkinto (<c267F00><CODE></c>) on vanhentunut.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,Palkinnon lunastaminen ei onnistunut.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,Lunastaminen ei onnistu. Palkinto on jo lunastettu.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,Lunastaminen ei onnistu. Koodi on virheellinen.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,Lunastaminen ei onnistu. Palkinto on vanhentunut.
 TID_RANKED_FRIENDLY_BEST_OF_TOGGLE_TITLE,ENINTÄÄN
 TID_FLEA,EVE
 TID_FLEA_SHORT_DESC,TUHOAJA
@@ -5938,7 +5954,7 @@ TID_FLEA_ULTI_DESC,"Eve vapauttaa suuren munan, josta kuoriutuu poikasia. Poikas
 TID_SPEC_ABI_FLEA_1,LUONNOTON JÄRJESTYS
 TID_SPEC_ABI_FLEA_1_DESC,Munalingosta ammuttujen munien järjestys muuttuu päinvastaiseksi.
 TID_SPEC_ABI_FLEA_2,ILOINEN YLLÄTYS
-TID_SPEC_ABI_FLEA_2_DESC,"Kun munalingon suurin muna on osunut vastustajaan, siitä kuoriutuu poikanen."
+TID_SPEC_ABI_FLEA_2_DESC,Aina <c00cc00><VALUE1></c> sekunnin välein vastustajaan osuvasta munalingon suurimmasta munasta kuoriutuu poikanen.
 TID_ACCESSORY_FLEA_JUMP,KIITTI MOI!
 TID_ACCESSORY_FLEA_JUMP_DESC,Eve hyppää pois ja jättää paikalleen poikasen.
 TID_ACCESSORY_FLEA_SYMBIOSIS,ÄIDINRAKKAUS
@@ -5950,7 +5966,7 @@ TID_HATCHLING_HEALTH,Poikasen elinvoima
 TID_HATCHLING_DAMAGE,Poikasen tuhovoima
 TID_HATCHLING_COUNT,Poikasten määrä
 TID_ACCESSORY_DUPLICATOR_SWAP,STUNTTIPARI
-TID_ACCESSORY_DUPLICATOR_SWAP_DESC,"Lola ja hänen egonsa vaihtavat paikkoja, ja heille palautuu <c00cc00><VALUE1></c> pistettä elinvoimaa."
+TID_ACCESSORY_DUPLICATOR_SWAP_DESC,"Lola ja hänen egonsa vaihtavat paikkoja, ja Lolalle palautuu <c00cc00><VALUE1></c> pistettä elinvoimaa."
 TID_ACCESSORY_BLOCKED_EGO_TOO_FAR,Ego on liian kaukana!
 TID_ACCESSORY_BLOCKED_MISSING_EGO,Ei voida aktivoida ilman egoa!
 TID_GAME_MODE_25,TÄYSTUHO
@@ -5967,13 +5983,13 @@ TID_ACCESSORY_BASEBALL_STICKY,TAJUTTOMAN TAHMEA
 TID_ACCESSORY_BASEBALL_STICKY_DESC,"Seuraava Bibin heittämä kopparin kauhu hidastaa <c00cc00><VALUE1></c> sekunnin ajan vastustajia, joihin se osuu."
 TID_ACCESSORY_MUMMY_ACID,HAPPOSPRAY
 TID_ACCESSORY_MUMMY_ACID_DESC,"Emzin seuraava hiuslakkasuihkaus voi läpäistä muureja, mutta aiheuttaa <ccc0000><VALUE1> %</c> vähemmän tuhoa."
-TID_FIRST_BLOOD,<name>: ENSIMMÄINEN TYRMÄYS!
-TID_KILL_NUMBER_OWN,VIELÄ NELJÄ TYRMÄYSTÄ!
-TID_KILL_NUMBER_OPPONENT,VASTUSTAJALTASI PUUTTUU\nNELJÄ TYRMÄYSTÄ
-TID_ONE_POINT_FROM_VICTORY,YKSI TYRMÄYS VOITTOON!
-TID_OPPONENT_ONE_POINT_FROM_VICTORY,YKSI TYRMÄYS TAPPIOON!
-TID_VICTORY_MATCH_OVER,VOITTO!
-TID_LOSS_MATCH_OVER,TAPPIO!
+TID_FIRST_BLOOD,<name>: ensimmäinen tyrmäys!
+TID_KILL_NUMBER_OWN,Vielä 4 tyrmäystä!
+TID_KILL_NUMBER_OPPONENT,Vastustajalta puuttuu 4 tyrmäystä!
+TID_ONE_POINT_FROM_VICTORY,1 tyrmäys voittoon!
+TID_OPPONENT_ONE_POINT_FROM_VICTORY,1 tyrmäys tappioon!
+TID_VICTORY_MATCH_OVER,VOITTO!\nOttelu päättyi
+TID_LOSS_MATCH_OVER,TAPPIO!\nOttelu päättyi
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2022,Kiinalaisen uudenvuoden 2022 asu
 TID_LOGIN_CALENDAR_LEFT_TITLE,PÄIVÄN LAHJOJEN SARJA
 TID_LOGIN_CALENDAR_LEFT_SUBTITLE,"<cfffc11>Kirjaudu peliin joka päivä 15 päivän ajan</c> lunastaaksesi <cfffc11>lahjoja</c>! <cfffc11>Älä jätä päivääkään väliin</c>, tai sarja katkeaa!"
@@ -6304,7 +6320,7 @@ TID_CRASH_TEST_DARRYL_SKIN_SHOP,KOLARITESTI-\nDARRYL
 TID_BIKER_CARL_SKIN,MOTORISTI-CARL
 TID_BIKER_CARL_SKIN_SHOP,MOTORISTI-\nCARL
 TID_PYRO_SPIKE_SKIN,PYRO-SPIKE
-TID_PYRO_SPIKE_SKIN_SHOP,PYRO-SPIKE
+TID_PYRO_SPIKE_SKIN_SHOP,PYRO-\nSPIKE
 TID_MONSTER_TRUCK_MEG_SKIN,MONSTERIAUTO-MEG
 TID_MONSTER_TRUCK_MEG_SKIN_SHOP,MONSTERIAUTO-\nMEG
 TID_OVERLORD_BYRON_SKIN,PAHAN VALTIAS -BYRON
@@ -6361,12 +6377,231 @@ TID_LOGIN_CALENDAR_LOYALTY_PROGRAM,KANTA-ASIAKKUUS
 TID_LOGIN_CALENDAR_TITLE,STARR PARKIN KANTA-ASIAKKUUS
 TID_REWARD_DESC_PLAYER_ICON_REGULAR,PELAAJATUNNUS
 TID_CLUB_LEAGUE_CLUB_COINS_HOW_TO_GET,Ansaitse jengikolikoita kilpailemalla jengiliigassa.
+TID_CLUB_EVENTS_TITLE,JENGIKISAT
+TID_CLUB_EVENTS_LEAGUE_TAB_DAY,TAPAHTUMAPÄIVÄ
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY,<NUM>. TAPAHTUMAPÄIVÄ
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY_COMPLETE,VALMIS
+TID_CLUB_EVENTS_LEAGUE_TAB_SEASON,VIIKKO
+TID_CLUB_EVENTS_TAB_LEAGUE,LIIGA
+TID_CLUB_EVENTS_TAB_QUESTS,TEHTÄVÄT
+TID_CLUB_EVENTS_BUTTON_CLUB_SHOP,JENGIKAUPPA
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_IS_TOP,Jengeiltä huomioidaan vain <TOP> parasta tulosta. Sinä olet <NUM>. sijalla.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_TOP,Jengeiltä huomioidaan vain <TOP> parasta tulosta. Sinä olet <cF76263><NUM></c>. sijalla.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_RANKED,Jengeiltä huomioidaan vain <TOP> parasta tulosta. <cF76263>Sinä et ole vielä osallistunut.</c>
+TID_CLUB_INFO_TOP_EVENT_DAY_PLAYER_DIVIDER,Jengiltä huomioidaan vain <TOP> parasta tulosta.
+TID_CLUB_QUESTS_PLAYER_REWARD_DESC,VIIKON PÄÄTÖSPALKINTOSI
+TID_CLUB_QUESTS_LOCKED_REWARD_DESC,SUORITA JENGITEHTÄVÄ
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY,"Kerää <POINTS> pistettä jengisi kanssa, niin saat tämän viikon päätöspalkinnoksi!"
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_CURRENT,Tämä on jengitehtäväviikon tämänhetkinen päätöspalkinto.
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_LOCKED,"Tämä on jengitehtäväviikon tämänhetkinen päätöspalkinto. Suorita jokin jengitehtävä, niin saat sen viikon päätteeksi!"
+TID_CLUB_QUESTS_LEAGUES_BUTTON,LIIGAT
+TID_CLUB_QUESTS_LEAGUES_DESC,"Ylene parempaan jengiliigaan, niin enimmäispalkintosi kasvaa."
+TID_CLUB_QUESTS_RANKS_CURRENT_LEAGUE,NYKYINEN LIIGA
+TID_CLUB_QUESTS_RANKS_MAX_REWARD,ENIMMÄISPALKINTO
+TID_CLUB_QUESTS_RANKS_MESSAGE,"Jengiliigasi arvo määrittää jengitehtäväviikon enimmäispalkintosi. Nouse ylempiin liigoihin, niin jengikolikkopalkintosi kasvavat!"
+TID_CLUB_QUESTS_RANKS_TITLE,LIIGAT
+TID_CLUB_QUESTS_FLOW_NEW_SEASON,Uusi viikko!
+TID_CLUB_QUESTS_FLOW_SEASON_ENDED,Viikko on päättynyt
+TID_CLUB_QUESTS_FLOW_CLUB_QUESTS,JENGITEHTÄVÄT
+TID_CLUB_QUESTS_FLOW_MAX_REWARD,ENIMMÄISPALKINTO
+TID_CLUB_QUESTS_FLOW_BUTTON_GO,HYVÄKSY
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_START,MENOKSI
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_END,OK
+TID_CLUB_QUESTS_FLOW_SEASON_RANK,Viikon sijoitus
+TID_CLUB_QUESTS_FLOW_END_OF_SEASON_REWARD,VIIKON PÄÄTÖSPALKINTOSI
+TID_CLUB_QUESTS_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_BADGE,<cFCF044>x2</c>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_DESC,"Pelaa vähintään yhden jengisi jäsenen kanssa, niin <cFCF044>TUPLAAT</c> jengitehtävässä edistymisesi."
+TID_CLUB_QUESTS_ALL_COMPLETED_DESC,Kaikki jengitehtävät suoritettu tältä viikolta!
+TID_CLUB_QUEST_ALREADY_COMPLETED,Tämä jengitehtävä on jo suoritettu!
+TID_CLUB_QUESTS_SEASON_ENDS_IN_TIME,Viikon päättymiseen:
+TID_CLUB_QUESTS_REWARD_LOCKED_DESC,1. tehtävä avaa palkinnon!
+TID_CLUB_QUESTS_COMPLETED_NUM,Suoritetut tehtävät: <NUM>/<MAX>
+TID_CLUB_QUESTS_TITLE,JENGITEHTÄVÄT
+TID_CLUB_QUESTS_NEW_SEASON,UUSI VIIKKO
+TID_CLUB_QUESTS_SEASON_END_NOTIFICATION,JENGITEHTÄVÄVIIKON PÄÄTÖS: sait tämän viikon palkinnoksi <COINS> <cEE1B39>jengikolikkoa</c>!
+TID_CLUB_QUESTS_CONTRIBUTIONS_TITLE,TÄMÄN VIIKON OSALLISTUMINEN
+TID_CLUB_QUESTS_CONTRIBUTIONS_MEMBERS,Jengin jäsenet: <NUM>
+TID_CLUB_QUESTS_CLUB_TEAM_BONUS,JENGIJOUKKUEEN TUPLABONUS
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TITLE,JOUKKUEBONUS!
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_DESC,"Pelaa vähintään yhden jengisi jäsenen kanssa, niin <cFCF044>TUPLAAT</c> jengitehtävässä edistymisesi!"
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PROGRESS,Jengitehtävän edistyminen
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_X2,x 2
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PLAY_SOLO,PELAA YKSIN
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_ONLINE,<NUM> paikalla
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TEAM_UP,PELAA JOUKKUEESSA
+TID_CLUB_QUESTS_WARNING_NOT_AVAILABLE,"Voit auttaa vain sitä jengiä, jonka jäsenenä aloitit tämän viikon.\n\nOdota ensi viikkoon, niin voit auttaa tätä jengiä!"
+TID_CLUB_QUESTS_SEASON_END_REWARD_CLAIMED,LUNASTETTU
+TID_CLUB_LEAGUE_WARNING_NOT_AVAILABLE,"Hei! Jengisi ei ole näköjään vielä osallistunut jengiliigaviikkoon. Voit kilpailla muita jengejä vastaan, kun seuraava jengiliigaviikko alkaa."
+TID_CLUB_EVENT_TIME_LEFT,<TIME> jäljellä
+TID_SHOP_CLUB_SHOP_SEE_OFFERS,KATSO TARJOUKSET
+TID_SHOP_CLUB_SHOP_TITLE,JENGIKAUPPA
+TID_SHOP_CLUB_SHOP_DESC,TEHOSTA EDISTYMISTÄSI
 TID_SHOP_OFFER_INFO_25,Uusi pelaajakuvake!
-TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,<cFFB820>Tule lunastamaan tämä lahja huomenna</c> tai sarja katkeaa!
+TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,"<cFFB820>Tule lunastamaan tämä lahja huomenna,</c> tai sarja katkeaa!"
 TID_BRAWLBALL_49,Reilusti joustoa
 TID_BRAWLBALL_50,Täysi tiltti
 TID_BRAWLBALL_51,Huipputulos
 TID_BRAWLBALL_52,Pingis
+TID_INBOX_CAPTION_72_68,LAHJA: SPRAY
+TID_SILENCER,OTIS
+TID_SILENCER_SHORT_DESC,TUHOAJA
+TID_SILENCER_DESC,"Otis on katutaiteilija, joka ottaa rennosti syvyyksissä meritähtikaverinsa Cilin kanssa. Yhdessä he spreijaavat graffiteja ympäri Starr Parkia."
+TID_SILENCER_WEAPON,MUSTETAIDETTA
+TID_SILENCER_WEAPON_DESC,Otis ruiskauttaa mustetta maaliaseellaan.
+TID_SILENCER_ULTI,HILJAINEN MERENPOHJA
+TID_SILENCER_ULTI_DESC,"Otis heittää Cilin, joka tarttuu ensimmäiseen osuman saavaan vastustajaan ja estää tätä hyökkäämästä vähään aikaan."
+TID_SPEC_ABI_SILENCER_1,SAPLUUNALIIMA
+TID_SPEC_ABI_SILENCER_1_DESC,Cil puristaa vihollista kaikin voimin ja estää tätä hyökkäämästä <c00cc00><VALUE1> %</c> pidempään.
+TID_SPEC_ABI_SILENCER_2,TÄYTTÖMUSTE
+TID_SPEC_ABI_SILENCER_2_DESC,Otis ampuu <c00cc00><VALUE1> %</c> enemmän mustetta.
+TID_ACCESSORY_SILENCER_GADGET_1,UINUVA TÄHTI
+TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Jos seuraava meritähti ei osu vastustajaan, se jää maahan makaamaan ja odottamaan lähelle tulevaa vastustajaa."
+TID_ACCESSORY_SILENCER_GADGET_2,JÄTTIROISKAUS
+TID_ACCESSORY_SILENCER_GADGET_2_DESC,"Seuraavalla hyökkäyksellään Otis ampuu jättimäisen mustepallon, jonka jättämä lätäkkö aiheuttaa <c00cc00><VALUE1></c> pistettä tuhoa <c00cc00><VALUE2></c> sekunnissa."
+TID_RANDOM_GAME_MODE,MYSTEERI
+TID_NOTIFICATION_RANDOM,MYSTEERIN uusi kartta on auki! Voita uusia palkintoja!
+TID_SKIN_INFO_DEEPSEA,Syvänmeren rähinäasu
+TID_EMOTE_BUNDLE_DEEPSEA_PACK,Syvänmeren rähinäasumerkit
+TID_SUGGEST,EHDOTA
+TID_SUGGEST_CANCEL,PERUUTA
+TID_PURCHASE_BRAWL_PASS_INFO_SHOP,"AVAA BRAWL PASS -PALKINTOJA, LISÄTEHTÄVIÄ JA VAIHTOJA!"
+TID_SUGGESTED_BY,Ehdottaja:
+TID_SHOP_DEEPSEA_SKINS,Syvänmeren rähinäasu
+TID_SHOP_DEEPSEA_TITLE,SYVÄNMEREN RÄHINÖIDEN
+TID_SHOP_DEEPSEA_INFO,asusetti
+TID_SKIN_INFO_BT21,BT21-asu
+TID_CLUB_EVENTS_ONBOARDING_TITLE,JENGIKISAT
+TID_CLUB_EVENTS_ONBOARDING_SUBTITLE,Tehosta etenemistäsi ja ansaitse erikoisasuja!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_1_TITLE,Tervetuloa jokaviikkoisiin\nJENGIKISOIHIN!
+TID_CLUB_EVENTS_ONBOARDING_NEW_GAME,Uusi jengikisa!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_TITLE,JENGILIIGA
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_DESCRIPTION,Kilpaile muita jengejä vastaan!\nNouse liigoissa!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_TITLE,JENGITEHTÄVÄT
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_DESCRIPTION,Suorita tehtäviä jengisi kanssa!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_1,Pelaa jengisi kanssa yksi jengikisa viikossa!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_2,Ansaitse jengikolikoita!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_3,Tehosta edistymistäsi jengikaupassa!
+TID_SUGGEST_TITLE,Ehdota rämäpäätä
+TID_CLUB_LEAGUE_TOP_24_REWARDS,Kaikki pelaajat voivat lunastaa viikon päätöspalkintonsa.
+TID_CLUB_LEAGUE_STARTS_IN,Jengiliigan alkuun:
+TID_CLUB_QUESTS_STARTS_IN,Jengitehtävien alkuun:
+TID_SHOWDOWN_71,Pomppupuisto
+TID_SHOWDOWN_72,Rämäpäiden vauhtirata
+TID_SHOWDOWN_73,Teleporttihippa
+TID_CLUB_QUESTS_NOT_AVAILABLE,Jengitehtävät eivät ole nyt saatavilla.
+TID_CLUB_LEAGUE_NOT_AVAILABLE,Jengiliiga ei ole nyt saatavilla.
+TID_CLUB_QUESTS_WEEK_ACTIVE,TEHTÄVÄVIIKKO aktiivisena:
+TID_CLUB_LEAGUE_WEEK_ACTIVE,LIIGAVIIKKO aktiivisena:
+TID_CLUB_EVENTS_ACTIVE,Aktiivinen
+TID_CLUB_EVENTS_STARTING,Alkaa pian
+TID_CLUB_EVENTS_WAITING,Odottaa
+TID_CLUB_LEAGUE_PREVIOUS_WEEK,EDELLINEN VIIKKO
+TID_CLUB_LEAGUE_RESULTS,Tulokset:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_SHORT,LIIGAVIIKON alkuun:
+TID_CLUB_QUESTS_WEEK_STARTS_IN_SHORT,TEHTÄVÄVIIKON alkuun:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN,Seuraavan jengiliigaviikon alkuun: <TIME>
+TID_CLUB_QUESTS_WEEK_STARTS_IN,Seuraavan jengitehtäväviikon alkuun: <TIME>
+TID_CLUB_LEAGUE_WEEK_SCHEDULE,AIKATAULU
+TID_CLUB_QUESTS_PREVIOUS_WEEK_REWARD,EDELLISEN VIIKON PALKINTO
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TEXT,Seuraava jengiliigaviikko
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TIME,Alkamiseen: <TIME>
+TID_CLUB_EVENTS_PREVIOUS_WEEK,VIIKKO PÄÄTTYI!
+TID_BT21_SANDY_SKIN,SANDY-KOYA
+TID_BT21_SANDY_SKIN_SHOP,SANDY-\nKOYA
+TID_BT21_EDGAR_SKIN,EDGAR-TATA
+TID_BT21_EDGAR_SKIN_SHOP,EDGAR-\nTATA
+TID_BT21_RUFFS_SKIN,RUFFS-CHIMMY
+TID_BT21_RUFFS_SKIN_SHOP,RUFFS-\nCHIMMY
+TID_BT21_BULL_SKIN,BULL-MANG
+TID_BT21_BULL_SKIN_SHOP,BULL-\nMANG
+TID_BT21_BIBI_SKIN,BIBI-RJ
+TID_BT21_BIBI_SKIN_SHOP,BIBI-\nRJ
+TID_BT21_JACKY_SKIN,JACKY-COOKY
+TID_BT21_JACKY_SKIN_SHOP,JACKY-\nCOOKY
+TID_BT21_TICK_SKIN,TICK-SHOOKY
+TID_BT21_TICK_SKIN_SHOP,TICK-\nSHOOKY
+TID_POSTAL_BROCK_SKIN,POSTI-BROCK
+TID_POSTAL_BROCK_SKIN_SHOP,POSTI-\nBROCK
+TID_MAKE_EMZ_SKIN,DJ 3.M.Z
+TID_MAKE_EMZ_SKIN_SHOP,DJ 3.M.Z
+TID_SHARK_JAW_COLT_SKIN,HAINHAMMAS-COLT
+TID_SHARK_JAW_COLT_SKIN_SHOP,HAINHAMMAS-\nCOLT
+TID_OCTO_FANG_SKIN,MUSTE-FANG
+TID_OCTO_FANG_SKIN_SHOP,MUSTE-\nFANG
+TID_CORAL_BELLE_SKIN,KORALLI-BELLE
+TID_CORAL_BELLE_SKIN_SHOP,KORALLI-\nBELLE
+TID_PHARA_OTIS_SKIN,FAARAOTIS
+TID_PHARA_OTIS_SKIN_SHOP,FAARAOTIS
+TID_RANKED_SUGGESTING_BRAWLER,Rämäpääehdotus pelaajalle <NAME>
+TID_RANKED_BRAWLER_SUGGESTED,RÄMÄPÄÄTÄ EHDOTETTU
+TID_RANKED_SUGGESTION,<NAME> ehdotti tätä: <BRAWLER>
+TID_CLUB_EVENTS_STARTS_IN,Alkamiseen:
+TID_CLUB_EVENTS_ACTIVE_FOR,Aktiivisena:
+TID_GAME_MODE_28,METSÄSTÄJÄT
+TID_GAME_MODE_28_DESC,Metsästyskausi alkaa!\n\nKerää pisteitä metsästämällä ja kukistamalla vastustajia. Ensimmäisenä <MAX_SCORE> pistettä kerännyt voittaa ottelun!
+TID_DEATHMATCH_FFA_INTRO_TEXT,Tyrmää vastustajia!
+TID_NOTIFICATION_DEATHMATCH_FFA,METSÄSTÄJIEN uusi kartta on auki! Voita uusia palkintoja!
+TID_DEATHMATCH_FFA_1,Kovat koettelemukset
+TID_DEATHMATCH_FFA_2,Metsästyskausi
+TID_DEATHMATCH_FFA_3,Saalis
+TID_DEATHMATCH_FFA_4,Nopeat ja levottomat
+TID_DEATHMATCH_FFA_5,Vapautus
+TID_DEATHMATCH_FFA_6,Aito erämaa
+TID_DEATHMATCH_FFA_7,Omega
+TID_CLUB_EVENTS_CHANGED_CLUB,"Voit auttaa vain sitä jengiä, jonka jäsenenä aloitit tämän viikon.\n\nOdota ensi viikkoon, niin voit auttaa tätä jengiä!\n\nSeuraavan viikon alkuun: <TIME>"
+TID_CLUB_QUESTS_CURRENT_CLUB_POINTS,Jengisi tällä viikolla keräämät kokonaispisteet
+TID_CLUB_QUESTS_THIS_WEEKS_QUESTS,TÄMÄN VIIKON JENGITEHTÄVÄT
+TID_SPEC_ABI_ARTILLERY_DUDE_1,KIRSTUT TÄYNNÄ
+TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,Pennyn kultapussit ratkeavat <c00cc00><VALUE1> %</c> laajempana kartiona jokaisen osuman jälkeen.
+TID_SPEC_ABI_ARTILLERY_DUDE_2,SUPERSÄTEILYTTÄJÄ
+TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Pennyn tykki aiheuttaa <c00cc00><VALUE1> %</c> tuhoa ja työntää lähellä olevia vastustajia taaksepäin laskeutuessaan.
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,SUOLATYNNYRI
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,"Penny pudottaa suolatynnyrin, joka pysäyttää vastustajan ammukset. Hän voi myös avata sillä omat kultapussinsa."
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,LUOTTOKAUKOPUTKI
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2_DESC,Pennyn tykki ampuu kaikkia kantamalla sisällä näkyvissä olevia vastustajia.
+TID_RANDOM_GAME_MODE_DESC,"Pelaa ottelu, joka on koottu satunnaisista pelitiloista, kartoista ja muokkaajista. Täysin ennalta arvaamatonta!"
+TID_CLUB_QUESTS_EXPIRED,TEHTÄVÄ ON PÄÄTTYNYT
+TID_CLUB_LEAGUE_ACTIVE,LIIGAVIIKKO aktiivisena
+TID_CLUB_QUESTS_TUTORIAL,Ansaitse pisteitä jengillesi suorittamalla tämän viikon 3 jengitehtävääsi.
+TID_CLUB_QUESTS_YOUR_QUESTS,TÄMÄN VIIKON JENGITEHTÄVÄSI
+TID_CLUB_QUESTS_NEW_QUESTS,UUDET JENGITEHTÄVÄT
+TID_CLUB_QUESTS_REWARDS_INCREASED,Jengiliigan ja jengitehtävien enimmäispalkintosi kasvoivat.
+TID_BRAWLBALL_441,Kaksoisvaara
+TID_BRAWLBALL_442,Pomputus
+TID_KNOCKOUT_441,Piileksivä vihollinen
+TID_KNOCKOUT_442,Maalitaulu
+TID_BANKHEIST_441,Varrella virran
+TID_BANKHEIST_442,Puupäät
+TID_GEMGRAB_441,Puolitäysi lasi
+TID_GEMGRAB_442,Kahtiajako
+TID_BOUNTY_441,Älä käänny
+TID_BOUNTY_442,Rinta rinnan
+TID_HOTZONE_441,Kolmikärki
+TID_HOTZONE_442,Epätasapaino
+TID_SHOWDOWN_441,Satimessa
+TID_SHOWDOWN_442,Kaukokatse
+TID_TRUE_GOLD_FANG_SKIN,JALOKULTA-FANG
+TID_TRUE_GOLD_FANG_SKIN_SHOP,JALOKULTA-\nFANG
+TID_TRUE_SILVER_FANG_SKIN,JALOHOPEA-FANG
+TID_TRUE_SILVER_FANG_SKIN_SHOP,JALOHOPEA-\nFANG
+TID_TRUE_GOLD_BONNIE_SKIN,JALOKULTA-BONNIE
+TID_TRUE_GOLD_BONNIE_SKIN_SHOP,JALOKULTA-\nBONNIE
+TID_TRUE_SILVER_BONNIE_SKIN,JALOHOPEA-BONNIE
+TID_TRUE_SILVER_BONNIE_SKIN_SHOP,JALOHOPEA-\nBONNIE
+TID_TRUE_GOLD_JANET_SKIN,JALOKULTA-JANET
+TID_TRUE_GOLD_JANET_SKIN_SHOP,JALOKULTA-\nJANET
+TID_TRUE_SILVER_JANET_SKIN,JALOHOPEA-JANET
+TID_TRUE_SILVER_JANET_SKIN_SHOP,JALOHOPEA-\nJANET
+TID_TRUE_GOLD_GROM_SKIN,JALOKULTA-GROM
+TID_TRUE_GOLD_GROM_SKIN_SHOP,JALOKULTA-\nGROM
+TID_TRUE_SILVER_GROM_SKIN,JALOHOPEA-GROM
+TID_TRUE_SILVER_GROM_SKIN_SHOP,JALOHOPEA-\nGROM
+TID_TRUE_GOLD_EVE_SKIN,JALOKULTA-EVE
+TID_TRUE_GOLD_EVE_SKIN_SHOP,JALOKULTA-\nEVE
+TID_TRUE_SILVER_EVE_SKIN,JALOHOPEA-EVE
+TID_TRUE_SILVER_EVE_SKIN_SHOP,JALOHOPEA-\nEVE
+TID_BRAWL_PASS_SEASON_12,SYVÄNMEREN RÄHINÄT
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

@@ -84,7 +84,6 @@
 .method public getExceptionMechanism()Lio/sentry/protocol/Mechanism;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/exception/ExceptionMechanismException;->exceptionMechanism:Lio/sentry/protocol/Mechanism;
 
     return-object v0
@@ -93,7 +92,6 @@
 .method public getThread()Ljava/lang/Thread;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/exception/ExceptionMechanismException;->thread:Ljava/lang/Thread;
 
     return-object v0
@@ -102,7 +100,6 @@
 .method public getThrowable()Ljava/lang/Throwable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/exception/ExceptionMechanismException;->throwable:Ljava/lang/Throwable;
 
     return-object v0
@@ -111,7 +108,6 @@
 .method public isSnapshot()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/exception/ExceptionMechanismException;->snapshot:Z
 
     return v0

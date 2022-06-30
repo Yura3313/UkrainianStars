@@ -95,46 +95,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)V"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lt/a;->b:Lm/g;
-
-    .line 2
-    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
-
-    move-result v0
-
-    if-ltz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    if-nez v0, :cond_1
-
-    .line 3
-    iget-object v0, p0, Lt/a;->b:Lm/g;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, p1, v1}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_1
-    return-void
-.end method
-
-.method public final b(Ljava/lang/Object;Ljava/util/ArrayList;Ljava/util/HashSet;)V
+.method public final a(Ljava/lang/Object;Ljava/util/ArrayList;Ljava/util/HashSet;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -196,7 +157,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0, v3, p2, p3}, Lt/a;->b(Ljava/lang/Object;Ljava/util/ArrayList;Ljava/util/HashSet;)V
+    invoke-virtual {p0, v3, p2, p3}, Lt/a;->a(Ljava/lang/Object;Ljava/util/ArrayList;Ljava/util/HashSet;)V
 
     add-int/lit8 v1, v1, 0x1
 

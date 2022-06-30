@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/e;
+.class public final Lcom/supercell/titan/e;
 .super Ljava/lang/Object;
 .source "GameApp.java"
 
@@ -14,7 +14,6 @@
 .method public constructor <init>(Lcom/supercell/titan/GameApp;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/titan/e;->a:Lcom/supercell/titan/GameApp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

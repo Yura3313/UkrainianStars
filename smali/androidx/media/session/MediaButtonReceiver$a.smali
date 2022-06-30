@@ -1,4 +1,4 @@
-.class public Landroidx/media/session/MediaButtonReceiver$a;
+.class public final Landroidx/media/session/MediaButtonReceiver$a;
 .super Landroid/support/v4/media/MediaBrowserCompat$ConnectionCallback;
 .source "MediaButtonReceiver.java"
 
@@ -61,7 +61,7 @@
     return-void
 .end method
 
-.method public onConnected()V
+.method public final onConnected()V
     .locals 3
 
     .line 1
@@ -102,19 +102,17 @@
     return-void
 .end method
 
-.method public onConnectionFailed()V
+.method public final onConnectionFailed()V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/media/session/MediaButtonReceiver$a;->a()V
 
     return-void
 .end method
 
-.method public onConnectionSuspended()V
+.method public final onConnectionSuspended()V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/media/session/MediaButtonReceiver$a;->a()V
 
     return-void

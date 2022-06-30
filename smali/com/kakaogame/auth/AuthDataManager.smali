@@ -31,7 +31,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +43,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -53,7 +51,6 @@
 .method public static synthetic access$000()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/auth/AuthDataManager;->lock:Ljava/lang/Object;
 
     return-object v0
@@ -62,7 +59,6 @@
 .method public static synthetic access$100()Lcom/kakaogame/auth/LoginData;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/auth/AuthDataManager;->reservedLoginData:Lcom/kakaogame/auth/LoginData;
 
     return-object v0
@@ -71,7 +67,6 @@
 .method public static synthetic access$102(Lcom/kakaogame/auth/LoginData;)Lcom/kakaogame/auth/LoginData;
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/kakaogame/auth/AuthDataManager;->reservedLoginData:Lcom/kakaogame/auth/LoginData;
 
     return-object p0
@@ -80,7 +75,6 @@
 .method public static synthetic access$200()Landroid/content/Context;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/auth/AuthDataManager;->context:Landroid/content/Context;
 
     return-object v0
@@ -89,7 +83,6 @@
 .method public static synthetic access$300(Landroid/content/Context;Lcom/kakaogame/auth/LoginData;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/auth/AuthDataManager;->saveLoginData(Landroid/content/Context;Lcom/kakaogame/auth/LoginData;)V
 
     return-void
@@ -98,7 +91,6 @@
 .method public static synthetic access$400()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/auth/AuthDataManager;->refreshTokenWithIdp()V
 
     return-void
@@ -214,7 +206,7 @@
     move-exception p0
 
     .line 3
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -367,6 +359,7 @@
 
     move-result-object v0
 
+    .line 8
     sget-object v1, Lcom/kakaogame/auth/AuthDataManager;->prefKey:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -377,12 +370,12 @@
 
     invoke-static {p1, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
+    .line 9
     sget-object p1, Lcom/kakaogame/auth/AuthDataManager;->lock:Ljava/lang/Object;
 
     monitor-enter p1
 
-    .line 9
+    .line 10
     :try_start_0
     invoke-static {p0}, Lcom/kakaogame/auth/AuthDataManager;->loadLoginData(Landroid/content/Context;)Lcom/kakaogame/auth/LoginData;
 
@@ -390,7 +383,7 @@
 
     sput-object v0, Lcom/kakaogame/auth/AuthDataManager;->reservedLoginData:Lcom/kakaogame/auth/LoginData;
 
-    .line 10
+    .line 11
     invoke-static {p0}, Lcom/kakaogame/auth/AuthDataManager;->loadAccount(Landroid/content/Context;)Lcom/kakaogame/idp/IdpAccount;
 
     move-result-object p0
@@ -406,11 +399,11 @@
     :cond_1
     const/4 p0, 0x0
 
-    .line 11
+    .line 12
     :goto_0
     sput-boolean p0, Lcom/kakaogame/auth/AuthDataManager;->saveAccount:Z
 
-    .line 12
+    .line 13
     monitor-exit p1
 
     return-void
@@ -612,7 +605,7 @@
     move-exception p0
 
     .line 16
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -782,7 +775,7 @@
     move-exception p0
 
     .line 16
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1112,7 +1105,7 @@
     invoke-direct {v2, v0, v3}, Landroid/util/Base64OutputStream;-><init>(Ljava/io/OutputStream;I)V
 
     .line 11
-    invoke-virtual {v2, p1}, Landroid/util/Base64OutputStream;->write([B)V
+    invoke-virtual {v2, p1}, Ljava/io/OutputStream;->write([B)V
 
     .line 12
     invoke-virtual {v2}, Landroid/util/Base64OutputStream;->close()V
@@ -1167,7 +1160,7 @@
     move-exception p0
 
     .line 17
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1248,7 +1241,7 @@
     invoke-direct {v2, v0, v3}, Landroid/util/Base64OutputStream;-><init>(Ljava/io/OutputStream;I)V
 
     .line 11
-    invoke-virtual {v2, p1}, Landroid/util/Base64OutputStream;->write([B)V
+    invoke-virtual {v2, p1}, Ljava/io/OutputStream;->write([B)V
 
     .line 12
     invoke-virtual {v2}, Landroid/util/Base64OutputStream;->close()V
@@ -1303,7 +1296,7 @@
     move-exception p0
 
     .line 17
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 

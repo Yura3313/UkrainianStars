@@ -151,7 +151,7 @@
 .method public abstract a(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V
 .end method
 
-.method public b()V
+.method public final b()V
     .locals 9
 
     .line 1
@@ -340,7 +340,7 @@
 
     iget-object v2, p0, Ly/c;->f:Landroid/graphics/Matrix;
 
-    invoke-virtual {v0, v2}, Landroid/graphics/BitmapShader;->setLocalMatrix(Landroid/graphics/Matrix;)V
+    invoke-virtual {v0, v2}, Landroid/graphics/Shader;->setLocalMatrix(Landroid/graphics/Matrix;)V
 
     .line 19
     iget-object v0, p0, Ly/c;->d:Landroid/graphics/Paint;
@@ -357,7 +357,7 @@
     return-void
 .end method
 
-.method public draw(Landroid/graphics/Canvas;)V
+.method public final draw(Landroid/graphics/Canvas;)V
     .locals 4
 
     .line 1
@@ -405,10 +405,9 @@
     return-void
 .end method
 
-.method public getAlpha()I
+.method public final getAlpha()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ly/c;->d:Landroid/graphics/Paint;
 
     invoke-virtual {v0}, Landroid/graphics/Paint;->getAlpha()I
@@ -418,10 +417,9 @@
     return v0
 .end method
 
-.method public getColorFilter()Landroid/graphics/ColorFilter;
+.method public final getColorFilter()Landroid/graphics/ColorFilter;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ly/c;->d:Landroid/graphics/Paint;
 
     invoke-virtual {v0}, Landroid/graphics/Paint;->getColorFilter()Landroid/graphics/ColorFilter;
@@ -431,33 +429,33 @@
     return-object v0
 .end method
 
-.method public getIntrinsicHeight()I
+.method public final getIntrinsicHeight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Ly/c;->m:I
 
     return v0
 .end method
 
-.method public getIntrinsicWidth()I
+.method public final getIntrinsicWidth()I
     .locals 1
 
-    .line 1
     iget v0, p0, Ly/c;->l:I
 
     return v0
 .end method
 
-.method public getOpacity()I
-    .locals 2
+.method public final getOpacity()I
+    .locals 3
 
     .line 1
     iget v0, p0, Ly/c;->c:I
 
-    const/16 v1, 0x77
+    const/4 v1, -0x3
 
-    if-ne v0, v1, :cond_3
+    const/16 v2, 0x77
+
+    if-ne v0, v2, :cond_3
 
     iget-boolean v0, p0, Ly/c;->k:Z
 
@@ -485,15 +483,15 @@
 
     move-result v0
 
-    const/16 v1, 0xff
+    const/16 v2, 0xff
 
-    if-lt v0, v1, :cond_3
+    if-lt v0, v2, :cond_3
 
     iget v0, p0, Ly/c;->g:F
 
-    const v1, 0x3d4ccccd
+    const v2, 0x3d4ccccd
 
-    cmpl-float v0, v0, v1
+    cmpl-float v0, v0, v2
 
     if-lez v0, :cond_1
 
@@ -510,19 +508,14 @@
     goto :goto_1
 
     :cond_2
-    const/4 v0, -0x1
-
-    goto :goto_2
+    const/4 v1, -0x1
 
     :cond_3
     :goto_1
-    const/4 v0, -0x3
-
-    :goto_2
-    return v0
+    return v1
 .end method
 
-.method public onBoundsChange(Landroid/graphics/Rect;)V
+.method public final onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
 
     .line 1
@@ -558,7 +551,7 @@
     return-void
 .end method
 
-.method public setAlpha(I)V
+.method public final setAlpha(I)V
     .locals 1
 
     .line 1
@@ -582,7 +575,7 @@
     return-void
 .end method
 
-.method public setColorFilter(Landroid/graphics/ColorFilter;)V
+.method public final setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
 
     .line 1
@@ -596,7 +589,7 @@
     return-void
 .end method
 
-.method public setDither(Z)V
+.method public final setDither(Z)V
     .locals 1
 
     .line 1
@@ -610,7 +603,7 @@
     return-void
 .end method
 
-.method public setFilterBitmap(Z)V
+.method public final setFilterBitmap(Z)V
     .locals 1
 
     .line 1

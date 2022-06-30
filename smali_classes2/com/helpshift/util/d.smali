@@ -1,4 +1,4 @@
-.class public Lcom/helpshift/util/d;
+.class public final Lcom/helpshift/util/d;
 .super Ljava/lang/Object;
 .source "AttachmentDataProvider.java"
 

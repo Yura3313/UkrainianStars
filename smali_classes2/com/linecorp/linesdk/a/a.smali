@@ -8,7 +8,7 @@
 
 .field private final b:Ljava/lang/String;
 
-.field private final c:Lsb/a;
+.field private final c:Lwb/a;
 
 
 # direct methods
@@ -20,16 +20,16 @@
 
     move-result-object p1
 
-    invoke-static {}, Lcom/linecorp/linesdk/a/c;->a()Lsb/a;
+    invoke-static {}, Lcom/linecorp/linesdk/a/c;->a()Lwb/a;
 
     move-result-object v0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/linecorp/linesdk/a/a;-><init>(Landroid/content/Context;Ljava/lang/String;Lsb/a;)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/linecorp/linesdk/a/a;-><init>(Landroid/content/Context;Ljava/lang/String;Lwb/a;)V
 
     return-void
 .end method
 
-.method private constructor <init>(Landroid/content/Context;Ljava/lang/String;Lsb/a;)V
+.method private constructor <init>(Landroid/content/Context;Ljava/lang/String;Lwb/a;)V
     .locals 1
 
     .line 2
@@ -54,7 +54,7 @@
     iput-object p1, p0, Lcom/linecorp/linesdk/a/a;->b:Ljava/lang/String;
 
     .line 5
-    iput-object p3, p0, Lcom/linecorp/linesdk/a/a;->c:Lsb/a;
+    iput-object p3, p0, Lcom/linecorp/linesdk/a/a;->c:Lwb/a;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
     .locals 2
 
     .line 21
-    iget-object v0, p0, Lcom/linecorp/linesdk/a/a;->c:Lsb/a;
+    iget-object v0, p0, Lcom/linecorp/linesdk/a/a;->c:Lwb/a;
 
     iget-object v1, p0, Lcom/linecorp/linesdk/a/a;->a:Landroid/content/Context;
 
@@ -71,7 +71,7 @@
 
     move-result-object p1
 
-    invoke-virtual {v0, v1, p1}, Lsb/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1, p1}, Lwb/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -82,11 +82,11 @@
     .locals 2
 
     .line 20
-    iget-object v0, p0, Lcom/linecorp/linesdk/a/a;->c:Lsb/a;
+    iget-object v0, p0, Lcom/linecorp/linesdk/a/a;->c:Lwb/a;
 
     iget-object v1, p0, Lcom/linecorp/linesdk/a/a;->a:Landroid/content/Context;
 
-    invoke-virtual {v0, v1, p1}, Lsb/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1, p1}, Lwb/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -104,11 +104,11 @@
 
     .line 14
     :cond_0
-    iget-object v0, p0, Lcom/linecorp/linesdk/a/a;->c:Lsb/a;
+    iget-object v0, p0, Lcom/linecorp/linesdk/a/a;->c:Lwb/a;
 
     iget-object v1, p0, Lcom/linecorp/linesdk/a/a;->a:Landroid/content/Context;
 
-    invoke-virtual {v0, v1, p1}, Lsb/a;->c(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1, p1}, Lwb/a;->c(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -126,11 +126,11 @@
 
     .line 1
     :cond_0
-    iget-object v2, p0, Lcom/linecorp/linesdk/a/a;->c:Lsb/a;
+    iget-object v2, p0, Lcom/linecorp/linesdk/a/a;->c:Lwb/a;
 
     iget-object v3, p0, Lcom/linecorp/linesdk/a/a;->a:Landroid/content/Context;
 
-    invoke-virtual {v2, v3, p1}, Lsb/a;->c(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v3, p1}, Lwb/a;->c(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

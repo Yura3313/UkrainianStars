@@ -1,5 +1,5 @@
 .class public final Ll0/b$a;
-.super Ll0/b$k;
+.super Ll0/b$j;
 .source "DynamicAnimation.java"
 
 
@@ -15,20 +15,19 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "alpha"
 
-    .line 1
-    invoke-direct {p0, p1, v0}, Ll0/b$k;-><init>(Ljava/lang/String;Ll0/b$b;)V
+    invoke-direct {p0, v0}, Ll0/b$j;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)F
+.method public final a(Ljava/lang/Object;)F
     .locals 0
 
     .line 1
@@ -42,7 +41,7 @@
     return p1
 .end method
 
-.method public b(Ljava/lang/Object;F)V
+.method public final b(Ljava/lang/Object;F)V
     .locals 0
 
     .line 1

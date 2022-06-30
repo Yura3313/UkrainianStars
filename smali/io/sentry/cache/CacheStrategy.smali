@@ -23,7 +23,6 @@
 
     const-string v0, "UTF-8"
 
-    .line 1
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     move-result-object v0
@@ -75,7 +74,7 @@
     return-void
 .end method
 
-.method public static synthetic a(Ljava/io/File;Ljava/io/File;)I
+.method public static synthetic b(Ljava/io/File;Ljava/io/File;)I
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/cache/CacheStrategy;->lambda$sortFilesOldestToNewest$0(Ljava/io/File;Ljava/io/File;)I
@@ -193,7 +192,6 @@
 
     return p1
 
-    .line 1
     :cond_0
     invoke-virtual {p1}, Lio/sentry/SentryEnvelopeItem;->getHeader()Lio/sentry/SentryEnvelopeItemHeader;
 
@@ -205,7 +203,7 @@
 
     sget-object v0, Lio/sentry/SentryItemType;->Session:Lio/sentry/SentryItemType;
 
-    invoke-virtual {p1, v0}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -215,7 +213,6 @@
 .method private isValidEnvelope(Lio/sentry/SentryEnvelope;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lio/sentry/SentryEnvelope;->getItems()Ljava/lang/Iterable;
 
     move-result-object p1
@@ -250,7 +247,7 @@
 
     sget-object v1, Lio/sentry/Session$State;->Ok:Lio/sentry/Session$State;
 
-    invoke-virtual {v0, v1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -277,7 +274,6 @@
 .method private static synthetic lambda$sortFilesOldestToNewest$0(Ljava/io/File;Ljava/io/File;)I
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Ljava/io/File;->lastModified()J
 
     move-result-wide v0
@@ -828,7 +824,7 @@
     if-le v0, v1, :cond_0
 
     .line 2
-    sget-object v0, Lio/sentry/cache/a;->g:Lio/sentry/cache/a;
+    sget-object v0, Lio/sentry/cache/a;->f:Lio/sentry/cache/a;
 
     invoke-static {p1, v0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 

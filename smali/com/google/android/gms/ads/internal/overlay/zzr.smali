@@ -7,7 +7,6 @@
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/gms/ads/internal/overlay/zzc;-><init>(Landroid/app/Activity;)V
 
     return-void
@@ -15,19 +14,19 @@
 
 
 # virtual methods
-.method public final q7(Landroid/os/Bundle;)V
+.method public final l7(Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
-    invoke-static {}, Lj3/cj;->l()Z
+    invoke-static {}, Lk3/j6;->m()Z
 
     const/4 p1, 0x3
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->t:I
+    iput p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->s:I
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->h:Landroid/app/Activity;
+    iget-object p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->g:Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V
 

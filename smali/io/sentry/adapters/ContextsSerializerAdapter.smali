@@ -55,7 +55,7 @@
     invoke-direct {p2}, Lcom/google/gson/JsonObject;-><init>()V
 
     .line 3
-    invoke-virtual {p1}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+    invoke-virtual {p1}, Ljava/util/AbstractMap;->entrySet()Ljava/util/Set;
 
     move-result-object p1
 

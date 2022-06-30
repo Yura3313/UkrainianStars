@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/slider/BaseSlider$c;
+.class public final Lcom/google/android/material/slider/BaseSlider$c;
 .super Lj0/a;
 .source "BaseSlider.java"
 
@@ -56,7 +56,7 @@
 
 
 # virtual methods
-.method public p(FF)I
+.method public final p(FF)I
     .locals 4
 
     const/4 v0, 0x0
@@ -108,8 +108,8 @@
     return p1
 .end method
 
-.method public q(Ljava/util/List;)V
-    .locals 2
+.method public final q(Ljava/util/List;)V
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -140,7 +140,11 @@
 
     move-result-object v1
 
-    invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    move-object v2, p1
+
+    check-cast v2, Ljava/util/ArrayList;
+
+    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v0, v0, 0x1
 
@@ -150,8 +154,8 @@
     return-void
 .end method
 
-.method public u(IILandroid/os/Bundle;)Z
-    .locals 5
+.method public final u(IILandroid/os/Bundle;)Z
+    .locals 4
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
@@ -206,7 +210,7 @@
     .line 4
     iget-object p3, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
 
-    sget v0, Lcom/google/android/material/slider/BaseSlider;->a0:I
+    sget v0, Lcom/google/android/material/slider/BaseSlider;->W:I
 
     .line 5
     invoke-virtual {p3, p1, p2}, Lcom/google/android/material/slider/BaseSlider;->q(IF)Z
@@ -239,12 +243,10 @@
     :cond_4
     iget-object p3, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
 
-    const/16 v0, 0x14
-
-    sget v4, Lcom/google/android/material/slider/BaseSlider;->a0:I
+    sget v0, Lcom/google/android/material/slider/BaseSlider;->W:I
 
     .line 11
-    invoke-virtual {p3, v0}, Lcom/google/android/material/slider/BaseSlider;->b(I)F
+    invoke-virtual {p3}, Lcom/google/android/material/slider/BaseSlider;->b()F
 
     move-result p3
 
@@ -300,7 +302,7 @@
     move-result v0
 
     .line 17
-    invoke-static {p2, p3, v0}, La0/a;->a(FFF)F
+    invoke-static {p2, p3, v0}, La0/a;->c(FFF)F
 
     move-result p2
 
@@ -334,13 +336,13 @@
     return v1
 .end method
 
-.method public w(ILg0/b;)V
-    .locals 8
+.method public final w(ILg0/c;)V
+    .locals 5
 
     .line 1
-    sget-object v0, Lg0/b$a;->o:Lg0/b$a;
+    sget-object v0, Lg0/c$a;->o:Lg0/c$a;
 
-    invoke-virtual {p2, v0}, Lg0/b;->a(Lg0/b$a;)V
+    invoke-virtual {p2, v0}, Lg0/c;->b(Lg0/c$a;)V
 
     .line 2
     iget-object v0, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
@@ -390,9 +392,7 @@
     const/16 v4, 0x2000
 
     .line 7
-    iget-object v5, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v5, v4}, Landroid/view/accessibility/AccessibilityNodeInfo;->addAction(I)V
+    invoke-virtual {p2, v4}, Lg0/c;->a(I)V
 
     :cond_0
     cmpg-float v4, v1, v3
@@ -402,80 +402,42 @@
     const/16 v4, 0x1000
 
     .line 8
-    iget-object v5, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    invoke-virtual {p2, v4}, Lg0/c;->a(I)V
 
-    invoke-virtual {v5, v4}, Landroid/view/accessibility/AccessibilityNodeInfo;->addAction(I)V
+    :cond_1
+    const/4 v4, 0x1
 
     .line 9
-    :cond_1
-    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v5, 0x13
-
-    const/4 v6, 0x1
-
-    if-lt v4, v5, :cond_2
-
-    .line 10
-    new-instance v7, Lg0/b$d;
-
-    .line 11
-    invoke-static {v6, v2, v3, v1}, Landroid/view/accessibility/AccessibilityNodeInfo$RangeInfo;->obtain(IFFF)Landroid/view/accessibility/AccessibilityNodeInfo$RangeInfo;
+    invoke-static {v2, v3, v1}, Lg0/c$d;->a(FFF)Lg0/c$d;
 
     move-result-object v2
 
-    invoke-direct {v7, v2}, Lg0/b$d;-><init>(Ljava/lang/Object;)V
+    invoke-virtual {p2, v2}, Lg0/c;->U(Lg0/c$d;)V
 
-    goto :goto_0
-
-    .line 12
-    :cond_2
-    new-instance v7, Lg0/b$d;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v7, v2}, Lg0/b$d;-><init>(Ljava/lang/Object;)V
-
-    :goto_0
-    if-lt v4, v5, :cond_3
-
-    .line 13
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    iget-object v3, v7, Lg0/b$d;->a:Ljava/lang/Object;
-
-    check-cast v3, Landroid/view/accessibility/AccessibilityNodeInfo$RangeInfo;
-
-    invoke-virtual {v2, v3}, Landroid/view/accessibility/AccessibilityNodeInfo;->setRangeInfo(Landroid/view/accessibility/AccessibilityNodeInfo$RangeInfo;)V
-
-    .line 14
-    :cond_3
+    .line 10
     const-class v2, Landroid/widget/SeekBar;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 15
-    iget-object v3, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    invoke-virtual {p2, v2}, Lg0/c;->E(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v3, v2}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
-
-    .line 16
+    .line 11
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 17
+    .line 12
     iget-object v3, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-virtual {v3}, Landroid/view/View;->getContentDescription()Ljava/lang/CharSequence;
 
     move-result-object v3
 
-    if-eqz v3, :cond_4
+    if-eqz v3, :cond_2
 
-    .line 18
+    .line 13
     iget-object v3, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-virtual {v3}, Landroid/view/View;->getContentDescription()Ljava/lang/CharSequence;
@@ -488,31 +450,31 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 19
-    :cond_4
+    .line 14
+    :cond_2
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    if-le v0, v6, :cond_7
+    if-le v0, v4, :cond_5
 
-    .line 20
+    .line 15
     iget-object v0, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-virtual {v0}, Lcom/google/android/material/slider/BaseSlider;->getValues()Ljava/util/List;
 
     move-result-object v0
 
-    .line 21
+    .line 16
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
     add-int/lit8 v0, v0, -0x1
 
-    if-ne p1, v0, :cond_5
+    if-ne p1, v0, :cond_3
 
-    .line 22
+    .line 17
     iget-object v0, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -525,12 +487,12 @@
 
     move-result-object v0
 
-    goto :goto_1
+    goto :goto_0
 
-    :cond_5
-    if-nez p1, :cond_6
+    :cond_3
+    if-nez p1, :cond_4
 
-    .line 23
+    .line 18
     iget-object v0, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -543,51 +505,45 @@
 
     move-result-object v0
 
-    goto :goto_1
+    goto :goto_0
 
-    :cond_6
+    :cond_4
     const-string v0, ""
 
-    .line 24
-    :goto_1
+    .line 19
+    :goto_0
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 25
+    .line 20
     iget-object v0, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
 
-    .line 26
+    .line 21
     invoke-virtual {v0, v1}, Lcom/google/android/material/slider/BaseSlider;->g(F)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 27
+    .line 22
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 28
-    :cond_7
+    .line 23
+    :cond_5
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 29
-    iget-object v1, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    invoke-virtual {p2, v0}, Lg0/c;->I(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    .line 30
+    .line 24
     iget-object v0, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
 
     iget-object v1, p0, Lcom/google/android/material/slider/BaseSlider$c;->r:Landroid/graphics/Rect;
 
     invoke-virtual {v0, p1, v1}, Lcom/google/android/material/slider/BaseSlider;->s(ILandroid/graphics/Rect;)V
 
-    .line 31
+    .line 25
     iget-object p1, p0, Lcom/google/android/material/slider/BaseSlider$c;->r:Landroid/graphics/Rect;
 
-    .line 32
-    iget-object p2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setBoundsInParent(Landroid/graphics/Rect;)V
+    invoke-virtual {p2, p1}, Lg0/c;->A(Landroid/graphics/Rect;)V
 
     return-void
 .end method

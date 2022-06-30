@@ -17,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -53,7 +52,7 @@
     return v0
 .end method
 
-.method public abstract g(Landroid/content/res/Configuration;)V
+.method public abstract g()V
 .end method
 
 .method public h()V

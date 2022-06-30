@@ -1,4 +1,4 @@
-.class public Lf0/r$g;
+.class public final Lf0/r$g;
 .super Ljava/lang/Object;
 .source "ViewCompat.java"
 
@@ -65,7 +65,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -124,7 +123,7 @@
 
 
 # virtual methods
-.method public b(Landroid/view/View;Landroid/view/KeyEvent;)Z
+.method public final b(Landroid/view/View;Landroid/view/KeyEvent;)Z
     .locals 6
 
     .line 1
@@ -193,7 +192,7 @@
     check-cast v3, Ljava/lang/ref/WeakReference;
 
     .line 10
-    invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v3}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -324,12 +323,10 @@
 .end method
 
 .method public final c(Landroid/view/View;Landroid/view/KeyEvent;)Landroid/view/View;
-    .locals 4
+    .locals 3
 
     .line 1
     iget-object v0, p0, Lf0/r$g;->a:Ljava/util/WeakHashMap;
-
-    const/4 v1, 0x0
 
     if-eqz v0, :cond_3
 
@@ -339,7 +336,7 @@
 
     if-nez v0, :cond_0
 
-    goto :goto_1
+    goto :goto_0
 
     .line 2
     :cond_0
@@ -355,31 +352,26 @@
     .line 4
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
 
-    move-result v2
-
-    add-int/lit8 v2, v2, -0x1
-
-    :goto_0
-    if-ltz v2, :cond_2
-
-    .line 5
-    invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v3
-
-    .line 6
-    invoke-virtual {p0, v3, p2}, Lf0/r$g;->c(Landroid/view/View;Landroid/view/KeyEvent;)Landroid/view/View;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_1
-
-    return-object v3
+    move-result v1
 
     :cond_1
-    add-int/lit8 v2, v2, -0x1
+    add-int/lit8 v1, v1, -0x1
 
-    goto :goto_0
+    if-ltz v1, :cond_2
+
+    .line 5
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    .line 6
+    invoke-virtual {p0, v2, p2}, Lf0/r$g;->c(Landroid/view/View;Landroid/view/KeyEvent;)Landroid/view/View;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_1
+
+    return-object v2
 
     .line 7
     :cond_2
@@ -392,54 +384,56 @@
     return-object p1
 
     :cond_3
-    :goto_1
-    return-object v1
+    :goto_0
+    const/4 p1, 0x0
+
+    return-object p1
 .end method
 
 .method public final d(Landroid/view/View;Landroid/view/KeyEvent;)Z
-    .locals 4
+    .locals 2
 
     .line 1
-    sget v0, Landroidx/core/R$id;->tag_unhandled_key_listeners:I
+    sget p2, Landroidx/core/R$id;->tag_unhandled_key_listeners:I
 
     .line 2
-    invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
+    invoke-virtual {p1, p2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p1
 
-    check-cast v0, Ljava/util/ArrayList;
+    check-cast p1, Ljava/util/ArrayList;
 
-    if-eqz v0, :cond_1
+    if-eqz p1, :cond_1
 
     .line 3
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    move-result p2
+
+    const/4 v0, 0x1
+
+    sub-int/2addr p2, v0
+
+    :goto_0
+    if-ltz p2, :cond_1
+
+    .line 4
+    invoke-virtual {p1, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lf0/r$f;
+
+    invoke-interface {v1}, Lf0/r$f;->a()Z
 
     move-result v1
 
-    const/4 v2, 0x1
+    if-eqz v1, :cond_0
 
-    sub-int/2addr v1, v2
-
-    :goto_0
-    if-ltz v1, :cond_1
-
-    .line 4
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lf0/r$f;
-
-    invoke-interface {v3, p1, p2}, Lf0/r$f;->a(Landroid/view/View;Landroid/view/KeyEvent;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    return v2
+    return v0
 
     :cond_0
-    add-int/lit8 v1, v1, -0x1
+    add-int/lit8 p2, p2, -0x1
 
     goto :goto_0
 
@@ -449,7 +443,7 @@
     return p1
 .end method
 
-.method public e(Landroid/view/KeyEvent;)Z
+.method public final e(Landroid/view/KeyEvent;)Z
     .locals 5
 
     .line 1
@@ -460,7 +454,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -542,7 +536,7 @@
     if-eqz v0, :cond_5
 
     .line 12
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -551,7 +545,7 @@
     if-eqz v0, :cond_4
 
     .line 13
-    invoke-static {v0}, Lf0/r;->o(Landroid/view/View;)Z
+    invoke-static {v0}, Lf0/r;->r(Landroid/view/View;)Z
 
     move-result v1
 

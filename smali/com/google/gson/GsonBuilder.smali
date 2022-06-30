@@ -421,7 +421,6 @@
 .method public addDeserializationExclusionStrategy(Lcom/google/gson/ExclusionStrategy;)Lcom/google/gson/GsonBuilder;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/GsonBuilder;->excluder:Lcom/google/gson/internal/Excluder;
 
     const/4 v1, 0x0
@@ -440,7 +439,6 @@
 .method public addSerializationExclusionStrategy(Lcom/google/gson/ExclusionStrategy;)Lcom/google/gson/GsonBuilder;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/GsonBuilder;->excluder:Lcom/google/gson/internal/Excluder;
 
     const/4 v1, 0x1
@@ -569,7 +567,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lcom/google/gson/GsonBuilder;->escapeHtmlChars:Z
 
     return-object p0
@@ -578,7 +575,6 @@
 .method public disableInnerClassSerialization()Lcom/google/gson/GsonBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/GsonBuilder;->excluder:Lcom/google/gson/internal/Excluder;
 
     invoke-virtual {v0}, Lcom/google/gson/internal/Excluder;->disableInnerClassSerialization()Lcom/google/gson/internal/Excluder;
@@ -595,7 +591,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/google/gson/GsonBuilder;->complexMapKeySerialization:Z
 
     return-object p0
@@ -604,7 +599,6 @@
 .method public varargs excludeFieldsWithModifiers([I)Lcom/google/gson/GsonBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/GsonBuilder;->excluder:Lcom/google/gson/internal/Excluder;
 
     invoke-virtual {v0, p1}, Lcom/google/gson/internal/Excluder;->withModifiers([I)Lcom/google/gson/internal/Excluder;
@@ -619,7 +613,6 @@
 .method public excludeFieldsWithoutExposeAnnotation()Lcom/google/gson/GsonBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/GsonBuilder;->excluder:Lcom/google/gson/internal/Excluder;
 
     invoke-virtual {v0}, Lcom/google/gson/internal/Excluder;->excludeFieldsWithoutExposeAnnotation()Lcom/google/gson/internal/Excluder;
@@ -636,7 +629,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/google/gson/GsonBuilder;->generateNonExecutableJson:Z
 
     return-object p0
@@ -741,7 +733,6 @@
 .method public registerTypeAdapterFactory(Lcom/google/gson/TypeAdapterFactory;)Lcom/google/gson/GsonBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/GsonBuilder;->factories:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -832,7 +823,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/google/gson/GsonBuilder;->serializeNulls:Z
 
     return-object p0
@@ -843,7 +833,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/google/gson/GsonBuilder;->serializeSpecialFloatingPointValues:Z
 
     return-object p0
@@ -924,7 +913,6 @@
 .method public setFieldNamingPolicy(Lcom/google/gson/FieldNamingPolicy;)Lcom/google/gson/GsonBuilder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/GsonBuilder;->fieldNamingPolicy:Lcom/google/gson/FieldNamingStrategy;
 
     return-object p0
@@ -933,7 +921,6 @@
 .method public setFieldNamingStrategy(Lcom/google/gson/FieldNamingStrategy;)Lcom/google/gson/GsonBuilder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/GsonBuilder;->fieldNamingPolicy:Lcom/google/gson/FieldNamingStrategy;
 
     return-object p0
@@ -944,7 +931,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/google/gson/GsonBuilder;->lenient:Z
 
     return-object p0
@@ -953,7 +939,6 @@
 .method public setLongSerializationPolicy(Lcom/google/gson/LongSerializationPolicy;)Lcom/google/gson/GsonBuilder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/GsonBuilder;->longSerializationPolicy:Lcom/google/gson/LongSerializationPolicy;
 
     return-object p0
@@ -964,7 +949,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/google/gson/GsonBuilder;->prettyPrinting:Z
 
     return-object p0
@@ -973,7 +957,6 @@
 .method public setVersion(D)Lcom/google/gson/GsonBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/GsonBuilder;->excluder:Lcom/google/gson/internal/Excluder;
 
     invoke-virtual {v0, p1, p2}, Lcom/google/gson/internal/Excluder;->withVersion(D)Lcom/google/gson/internal/Excluder;

@@ -44,7 +44,6 @@
 .method public getFirstConnectException()Ljava/io/IOException;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/connection/RouteException;->firstException:Ljava/io/IOException;
 
     return-object v0
@@ -53,7 +52,6 @@
 .method public getLastConnectException()Ljava/io/IOException;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/connection/RouteException;->lastException:Ljava/io/IOException;
 
     return-object v0

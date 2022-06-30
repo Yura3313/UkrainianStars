@@ -27,7 +27,6 @@
 .method public constructor <init>(Ljava/lang/String;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSupport$3;->val$url:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/kakaogame/KGSupport$3;->val$resultLock:Lcom/kakaogame/util/MutexLock;
@@ -42,7 +41,6 @@
 .method public onActivityAction(Landroid/app/Activity;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGSupport$3;->val$url:Ljava/lang/String;
 
     new-instance v1, Lcom/kakaogame/KGSupport$3$1;

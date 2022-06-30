@@ -111,7 +111,6 @@
 .method private isFrameMetricsAggregatorAvailable()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/ActivityFramesTracker;->androidXAvailable:Z
 
     if-eqz v0, :cond_0

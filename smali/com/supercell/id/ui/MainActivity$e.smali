@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/MainActivity$e;
-.super Lle/j;
+.super Lse/h;
 .source "MainActivity.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,42 +18,41 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
-        "Lpc/c;",
+        "Lse/h;",
+        "Lre/a<",
+        "Luc/e;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/MainActivity;
+.field public final synthetic f:Lcom/supercell/id/ui/MainActivity;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/MainActivity;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/MainActivity$e;->g:Lcom/supercell/id/ui/MainActivity;
+    iput-object p1, p0, Lcom/supercell/id/ui/MainActivity$e;->f:Lcom/supercell/id/ui/MainActivity;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
+.method public final invoke()Ljava/lang/Object;
     .locals 2
 
-    .line 1
-    new-instance v0, Lpc/c;
+    new-instance v0, Luc/e;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity$e;->g:Lcom/supercell/id/ui/MainActivity;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity$e;->f:Lcom/supercell/id/ui/MainActivity;
 
-    invoke-direct {v0, v1}, Lpc/c;-><init>(Lcom/supercell/id/ui/MainActivity;)V
+    invoke-direct {v0, v1}, Luc/e;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
     return-object v0
 .end method

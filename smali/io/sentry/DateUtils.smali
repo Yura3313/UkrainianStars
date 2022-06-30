@@ -71,7 +71,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -80,7 +79,6 @@
 .method public static synthetic access$000()Ljava/util/TimeZone;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/DateUtils;->UTC_TIMEZONE:Ljava/util/TimeZone;
 
     return-object v0
@@ -107,17 +105,17 @@
 .method public static getDateTime(J)Ljava/util/Date;
     .locals 1
 
-    .line 4
+    .line 11
     sget-object v0, Lio/sentry/DateUtils;->UTC_TIMEZONE:Ljava/util/TimeZone;
 
     invoke-static {v0}, Ljava/util/Calendar;->getInstance(Ljava/util/TimeZone;)Ljava/util/Calendar;
 
     move-result-object v0
 
-    .line 5
+    .line 12
     invoke-virtual {v0, p0, p1}, Ljava/util/Calendar;->setTimeInMillis(J)V
 
-    .line 6
+    .line 13
     invoke-virtual {v0}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object p0
@@ -143,7 +141,7 @@
 
     check-cast v0, Ljava/text/SimpleDateFormat;
 
-    invoke-virtual {v0, p0}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+    invoke-virtual {v0, p0}, Ljava/text/DateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p0
     :try_end_0
@@ -162,7 +160,7 @@
 
     check-cast v0, Ljava/text/SimpleDateFormat;
 
-    invoke-virtual {v0, p0}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+    invoke-virtual {v0, p0}, Ljava/text/DateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p0
     :try_end_1
@@ -176,10 +174,12 @@
 
     const-string v1, "timestamp is not ISO format "
 
-    invoke-static {v1, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 4
+    invoke-static {v1, p0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 5
     invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -231,10 +231,12 @@
 
     const-string v1, "timestamp is not millis format "
 
-    invoke-static {v1, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 5
+    invoke-static {v1, p0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 6
     invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0

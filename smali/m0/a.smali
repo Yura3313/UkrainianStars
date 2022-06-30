@@ -1,4 +1,4 @@
-.class public Lm0/a;
+.class public final Lm0/a;
 .super Lm0/d;
 .source "FastOutLinearInInterpolator.java"
 
@@ -15,7 +15,6 @@
 
     new-array v0, v0, [F
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lm0/a;->c:[F
@@ -231,7 +230,6 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     sget-object v0, Lm0/a;->c:[F
 
     invoke-direct {p0, v0}, Lm0/d;-><init>([F)V

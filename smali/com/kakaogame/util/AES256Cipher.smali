@@ -17,7 +17,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +31,6 @@
 
     const-string v1, "0123456789ABCDEF"
 
-    .line 1
     invoke-virtual {v1, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -360,7 +358,7 @@
     move-result-object p0
 
     .line 6
-    invoke-interface {p0}, Ljavax/crypto/SecretKey;->getEncoded()[B
+    invoke-interface {p0}, Ljava/security/Key;->getEncoded()[B
 
     move-result-object p0
 
@@ -375,7 +373,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/util/AES256Cipher;->getNewRawIV([B)[B
 
     move-result-object p0
@@ -391,7 +388,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/util/AES256Cipher;->getNewRawKey([B)[B
 
     move-result-object p0

@@ -1,9 +1,9 @@
-.class public Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$b;
+.class public final Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$b;
 .super Ljava/lang/Object;
 .source "ExtendedFloatingActionButton.java"
 
 # interfaces
-.implements Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;
+.implements Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;
 
 
 # annotations
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$b;->a:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,10 +34,9 @@
 
 
 # virtual methods
-.method public getHeight()I
+.method public final getHeight()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$b;->a:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->getCollapsedSize()I
@@ -48,7 +46,7 @@
     return v0
 .end method
 
-.method public getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+.method public final getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 3
 
     .line 1
@@ -74,10 +72,9 @@
     return-object v0
 .end method
 
-.method public getWidth()I
+.method public final getWidth()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$b;->a:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->getCollapsedSize()I

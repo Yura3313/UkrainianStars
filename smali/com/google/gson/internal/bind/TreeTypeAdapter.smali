@@ -169,7 +169,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/gson/internal/bind/TreeTypeAdapter$SingleTypeFactory;
 
     const/4 v1, 0x0
@@ -236,7 +235,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/gson/internal/bind/TreeTypeAdapter$SingleTypeFactory;
 
     const/4 v1, 0x0

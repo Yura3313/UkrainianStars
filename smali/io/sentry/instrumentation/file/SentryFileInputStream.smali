@@ -216,7 +216,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lio/sentry/instrumentation/file/SentryFileInputStream;->init(Ljava/io/File;Ljava/io/FileInputStream;Lio/sentry/IHub;)Lio/sentry/instrumentation/file/FileInputStreamInitData;
 
     move-result-object p0
@@ -227,7 +226,6 @@
 .method public static synthetic access$200(Ljava/io/FileDescriptor;Ljava/io/FileInputStream;Lio/sentry/IHub;)Lio/sentry/instrumentation/file/FileInputStreamInitData;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lio/sentry/instrumentation/file/SentryFileInputStream;->init(Ljava/io/FileDescriptor;Ljava/io/FileInputStream;Lio/sentry/IHub;)Lio/sentry/instrumentation/file/FileInputStreamInitData;
 
     move-result-object p0
@@ -386,7 +384,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/instrumentation/file/SentryFileInputStream;->delegate:Ljava/io/FileInputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/FileInputStream;->read([B)I
@@ -408,7 +405,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/instrumentation/file/SentryFileInputStream;->delegate:Ljava/io/FileInputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/FileInputStream;->read([BII)I
@@ -430,7 +426,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/instrumentation/file/SentryFileInputStream;->delegate:Ljava/io/FileInputStream;
 
     invoke-virtual {v0, p1, p2}, Ljava/io/FileInputStream;->skip(J)J
@@ -454,7 +449,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/instrumentation/file/SentryFileInputStream;->spanManager:Lio/sentry/instrumentation/file/FileIOSpanManager;
 
     iget-object v1, p0, Lio/sentry/instrumentation/file/SentryFileInputStream;->delegate:Ljava/io/FileInputStream;
@@ -560,7 +554,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/instrumentation/file/SentryFileInputStream;->spanManager:Lio/sentry/instrumentation/file/FileIOSpanManager;
 
     new-instance v1, Lio/sentry/instrumentation/file/a;

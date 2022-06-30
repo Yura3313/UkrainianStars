@@ -1,4 +1,4 @@
-.class public Lv0/a;
+.class public final Lv0/a;
 .super Ljava/lang/Object;
 .source "CanvasUtils.java"
 
@@ -76,7 +76,7 @@
     sput-object v2, Lv0/a;->a:Ljava/lang/reflect/Method;
 
     .line 6
-    invoke-virtual {v2, v0}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v2, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 7
     const-class v2, Landroid/graphics/Canvas;
@@ -92,7 +92,7 @@
     sput-object v2, Lv0/a;->b:Ljava/lang/reflect/Method;
 
     .line 8
-    invoke-virtual {v2, v0}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v2, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 

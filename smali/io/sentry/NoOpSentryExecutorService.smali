@@ -14,7 +14,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/NoOpSentryExecutorService;
 
     invoke-direct {v0}, Lio/sentry/NoOpSentryExecutorService;-><init>()V
@@ -27,7 +26,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +44,6 @@
 .method public static getInstance()Lio/sentry/ISentryExecutorService;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/NoOpSentryExecutorService;->instance:Lio/sentry/NoOpSentryExecutorService;
 
     return-object v0
@@ -85,7 +82,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/util/concurrent/FutureTask;
 
     sget-object v0, Lio/sentry/h;->a:Lio/sentry/h;

@@ -1,27 +1,22 @@
 .class public final Lid/g;
 .super Ljava/lang/Object;
-.source "Comparisons.kt"
+.source "DonationReceivedDialog.kt"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Landroid/animation/Animator$AnimatorListener;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "TT;>;"
-    }
-.end annotation
+# instance fields
+.field public f:Z
+
+.field public final synthetic g:Landroid/animation/AnimatorSet;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/animation/AnimatorSet;)V
     .locals 0
+
+    iput-object p1, p0, Lid/g;->g:Landroid/animation/AnimatorSet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,36 +25,48 @@
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)I"
-        }
-    .end annotation
+
+    const/4 p1, 0x1
+
+    iput-boolean p1, p0, Lid/g;->f:Z
+
+    return-void
+.end method
+
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 2
 
     .line 1
-    check-cast p2, Lid/a;
+    iget-object p1, p0, Lid/g;->g:Landroid/animation/AnimatorSet;
+
+    const-wide/16 v0, 0x0
+
+    invoke-virtual {p1, v0, v1}, Landroid/animation/AnimatorSet;->setStartDelay(J)V
 
     .line 2
-    iget-object p2, p2, Lid/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+    iget-boolean p1, p0, Lid/g;->f:Z
+
+    if-nez p1, :cond_0
 
     .line 3
-    iget-object p2, p2, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+    iget-object p1, p0, Lid/g;->g:Landroid/animation/AnimatorSet;
 
-    .line 4
-    check-cast p1, Lid/a;
+    invoke-virtual {p1}, Landroid/animation/AnimatorSet;->start()V
 
-    .line 5
-    iget-object p1, p1, Lid/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+    :cond_0
+    return-void
+.end method
 
-    .line 6
-    iget-object p1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+.method public final onAnimationRepeat(Landroid/animation/Animator;)V
+    .locals 0
 
-    .line 7
-    invoke-static {p2, p1}, Lce/a;->a(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    return-void
+.end method
 
-    move-result p1
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
 
-    return p1
+    return-void
 .end method

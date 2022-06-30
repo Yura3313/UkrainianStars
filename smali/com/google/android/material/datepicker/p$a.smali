@@ -1,11 +1,11 @@
-.class public Lcom/google/android/material/datepicker/p$a;
+.class public final Lcom/google/android/material/datepicker/p$a;
 .super Lcom/google/android/material/datepicker/t;
 .source "MaterialTextInputPicker.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/datepicker/p;->g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    value = Lcom/google/android/material/datepicker/p;->Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -29,7 +29,6 @@
 .method public constructor <init>(Lcom/google/android/material/datepicker/p;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/datepicker/p$a;->a:Lcom/google/android/material/datepicker/p;
 
     invoke-direct {p0}, Lcom/google/android/material/datepicker/t;-><init>()V
@@ -39,15 +38,15 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 2
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/datepicker/p$a;->a:Lcom/google/android/material/datepicker/p;
 
-    iget-object v0, v0, Lcom/google/android/material/datepicker/u;->c0:Ljava/util/LinkedHashSet;
+    iget-object v0, v0, Lcom/google/android/material/datepicker/u;->a0:Ljava/util/LinkedHashSet;
 
-    invoke-virtual {v0}, Ljava/util/LinkedHashSet;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -73,7 +72,7 @@
     return-void
 .end method
 
-.method public b(Ljava/lang/Object;)V
+.method public final b(Ljava/lang/Object;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -84,9 +83,9 @@
     .line 1
     iget-object v0, p0, Lcom/google/android/material/datepicker/p$a;->a:Lcom/google/android/material/datepicker/p;
 
-    iget-object v0, v0, Lcom/google/android/material/datepicker/u;->c0:Ljava/util/LinkedHashSet;
+    iget-object v0, v0, Lcom/google/android/material/datepicker/u;->a0:Ljava/util/LinkedHashSet;
 
-    invoke-virtual {v0}, Ljava/util/LinkedHashSet;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 

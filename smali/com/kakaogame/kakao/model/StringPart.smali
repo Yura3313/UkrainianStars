@@ -121,7 +121,6 @@
 .method public lengthOfData()J
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/kakao/model/StringPart;->getContent()[B
 
     move-result-object v0
@@ -141,7 +140,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/kakao/model/StringPart;->getContent()[B
 
     move-result-object v0

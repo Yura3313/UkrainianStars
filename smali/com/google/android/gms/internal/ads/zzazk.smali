@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
 
 
 # direct methods
@@ -15,7 +15,7 @@
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     .line 2
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzazk;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzazk;->f:I
 
     return-void
 .end method

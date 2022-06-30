@@ -27,14 +27,13 @@
 
 
 # instance fields
-.field public g:Ljava/lang/String;
+.field public f:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/fragment/app/FragmentTabHost$SavedState$a;
 
     invoke-direct {v0}, Landroidx/fragment/app/FragmentTabHost$SavedState$a;-><init>()V
@@ -55,7 +54,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->g:Ljava/lang/String;
+    iput-object p1, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->f:Ljava/lang/String;
 
     return-void
 .end method
@@ -71,7 +70,7 @@
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
     const-string v0, "FragmentTabHost.SavedState{"
@@ -96,25 +95,26 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->g:Ljava/lang/String;
+    iget-object v1, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->f:Ljava/lang/String;
 
     const-string v2, "}"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
-    iget-object p2, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->g:Ljava/lang/String;
+    iget-object p2, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->f:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

@@ -62,7 +62,6 @@
 .method public getAudioStream()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$PlaybackInfo;->mAudioStream:I
 
     return v0
@@ -71,7 +70,6 @@
 .method public getCurrentVolume()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$PlaybackInfo;->mCurrentVolume:I
 
     return v0
@@ -80,7 +78,6 @@
 .method public getMaxVolume()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$PlaybackInfo;->mMaxVolume:I
 
     return v0
@@ -89,7 +86,6 @@
 .method public getPlaybackType()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$PlaybackInfo;->mPlaybackType:I
 
     return v0
@@ -98,7 +94,6 @@
 .method public getVolumeControl()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$PlaybackInfo;->mVolumeControl:I
 
     return v0

@@ -1,9 +1,9 @@
-.class public Ln0/b$b;
+.class public final Ln0/b$b;
 .super Ljava/lang/Object;
 .source "LoaderManagerImpl.java"
 
 # interfaces
-.implements Landroidx/lifecycle/p;
+.implements Landroidx/lifecycle/o;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Landroidx/lifecycle/p<",
+        "Landroidx/lifecycle/o<",
         "TD;>;"
     }
 .end annotation
@@ -82,8 +82,8 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)V
-    .locals 2
+.method public final a(Ljava/lang/Object;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TD;)V"
@@ -93,9 +93,7 @@
     .line 1
     iget-object v0, p0, Ln0/b$b;->b:Ln0/a$a;
 
-    iget-object v1, p0, Ln0/b$b;->a:Lo0/b;
-
-    invoke-interface {v0, v1, p1}, Ln0/a$a;->b(Lo0/b;Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Ln0/a$a;->a(Ljava/lang/Object;)V
 
     const/4 p1, 0x1
 
@@ -105,7 +103,7 @@
     return-void
 .end method
 
-.method public b()V
+.method public final b()V
     .locals 1
 
     .line 1
@@ -122,10 +120,9 @@
     return-void
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ln0/b$b;->b:Ln0/a$a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;

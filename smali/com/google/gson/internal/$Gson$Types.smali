@@ -25,7 +25,6 @@
 
     new-array v0, v0, [Ljava/lang/reflect/Type;
 
-    .line 1
     sput-object v0, Lcom/google/gson/internal/$Gson$Types;->EMPTY_TYPE_ARRAY:[Ljava/lang/reflect/Type;
 
     return-void
@@ -48,7 +47,6 @@
 .method public static arrayOf(Ljava/lang/reflect/Type;)Ljava/lang/reflect/GenericArrayType;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/gson/internal/$Gson$Types$GenericArrayTypeImpl;
 
     invoke-direct {v0, p0}, Lcom/google/gson/internal/$Gson$Types$GenericArrayTypeImpl;-><init>(Ljava/lang/reflect/Type;)V
@@ -171,7 +169,6 @@
 .method public static checkNotPrimitive(Ljava/lang/reflect/Type;)V
     .locals 1
 
-    .line 1
     instance-of v0, p0, Ljava/lang/Class;
 
     if-eqz v0, :cond_1
@@ -242,7 +239,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -1017,7 +1013,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result p0
@@ -1076,7 +1071,6 @@
 .method public static varargs newParameterizedTypeWithOwner(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/ParameterizedType;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/gson/internal/$Gson$Types$ParameterizedTypeImpl;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/gson/internal/$Gson$Types$ParameterizedTypeImpl;-><init>(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;[Ljava/lang/reflect/Type;)V
@@ -1553,7 +1547,6 @@
 .method public static typeToString(Ljava/lang/reflect/Type;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     instance-of v0, p0, Ljava/lang/Class;
 
     if-eqz v0, :cond_0

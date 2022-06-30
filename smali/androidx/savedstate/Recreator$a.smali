@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/Set;
+.field public final a:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -41,7 +41,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Landroidx/savedstate/Recreator$a;->a:Ljava/util/Set;
+    iput-object v0, p0, Landroidx/savedstate/Recreator$a;->a:Ljava/util/HashSet;
 
     const-string v0, "androidx.savedstate.Restarter"
 
@@ -53,7 +53,7 @@
 
 
 # virtual methods
-.method public a()Landroid/os/Bundle;
+.method public final a()Landroid/os/Bundle;
     .locals 3
 
     .line 1
@@ -64,7 +64,7 @@
     .line 2
     new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v2, p0, Landroidx/savedstate/Recreator$a;->a:Ljava/util/Set;
+    iget-object v2, p0, Landroidx/savedstate/Recreator$a;->a:Ljava/util/HashSet;
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -75,13 +75,12 @@
     return-object v0
 .end method
 
-.method public b(Ljava/lang/String;)V
+.method public final b(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/savedstate/Recreator$a;->a:Ljava/util/Set;
+    iget-object v0, p0, Landroidx/savedstate/Recreator$a;->a:Ljava/util/HashSet;
 
-    invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ljava/util/Set;
+.field public static final a:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -26,7 +26,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Lr0/e;->a:Ljava/util/Set;
+    sput-object v0, Lr0/e;->a:Ljava/util/HashSet;
 
     const-string v0, "java.vm.version"
 
@@ -264,8 +264,8 @@
     return-void
 .end method
 
-.method public static c(Landroid/content/Context;Ljava/io/File;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Z)V
-    .locals 4
+.method public static c(Landroid/content/Context;Ljava/io/File;Ljava/io/File;)V
+    .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -280,39 +280,41 @@
         }
     .end annotation
 
-    .line 1
-    sget-object v0, Lr0/e;->a:Ljava/util/Set;
+    const-string v0, "secondary-dexes"
 
-    monitor-enter v0
+    .line 1
+    sget-object v1, Lr0/e;->a:Ljava/util/HashSet;
+
+    monitor-enter v1
 
     .line 2
     :try_start_0
-    invoke-interface {v0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+    invoke-interface {v1, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
     .line 3
-    monitor-exit v0
+    monitor-exit v1
 
     return-void
 
     .line 4
     :cond_0
-    invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    invoke-interface {v1, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 5
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v2, 0x14
+    const/16 v3, 0x14
 
-    if-le v1, v2, :cond_1
+    if-le v2, v3, :cond_1
 
-    const-string v1, "java.vm.version"
+    const-string v2, "java.vm.version"
 
     .line 6
-    invoke-static {v1}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
@@ -321,16 +323,16 @@
     :try_start_1
     invoke-virtual {p0}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
 
-    move-result-object v1
+    move-result-object v2
     :try_end_1
     .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_4
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    if-nez v1, :cond_2
+    if-nez v2, :cond_2
 
     .line 8
     :try_start_2
-    monitor-exit v0
+    monitor-exit v1
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
@@ -346,17 +348,17 @@
     .line 10
     :catchall_0
     :try_start_4
-    new-instance v2, Ljava/io/File;
+    new-instance v3, Ljava/io/File;
 
-    const-string v3, "code_cache"
+    const-string v4, "code_cache"
 
-    invoke-direct {v2, p2, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {v3, p2, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
     .line 11
     :try_start_5
-    invoke-static {v2}, Lr0/e;->f(Ljava/io/File;)V
+    invoke-static {v3}, Lr0/e;->f(Ljava/io/File;)V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_0
     .catchall {:try_start_5 .. :try_end_5} :catchall_2
@@ -366,48 +368,48 @@
     .line 12
     :catch_0
     :try_start_6
-    new-instance v2, Ljava/io/File;
+    new-instance v3, Ljava/io/File;
 
     invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
     move-result-object p2
 
-    invoke-direct {v2, p2, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {v3, p2, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     .line 13
-    invoke-static {v2}, Lr0/e;->f(Ljava/io/File;)V
+    invoke-static {v3}, Lr0/e;->f(Ljava/io/File;)V
 
     .line 14
     :goto_0
     new-instance p2, Ljava/io/File;
 
-    invoke-direct {p2, v2, p3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {p2, v3, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     .line 15
     invoke-static {p2}, Lr0/e;->f(Ljava/io/File;)V
 
     .line 16
-    new-instance p3, Lr0/g;
+    new-instance v0, Lr0/g;
 
-    invoke-direct {p3, p1, p2}, Lr0/g;-><init>(Ljava/io/File;Ljava/io/File;)V
+    invoke-direct {v0, p1, p2}, Lr0/g;-><init>(Ljava/io/File;Ljava/io/File;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
     const/4 p1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     .line 17
     :try_start_7
-    invoke-virtual {p3, p0, p4, v2}, Lr0/g;->d(Landroid/content/Context;Ljava/lang/String;Z)Ljava/util/List;
+    invoke-virtual {v0, p0, v3}, Lr0/g;->d(Landroid/content/Context;Z)Ljava/util/List;
 
-    move-result-object v2
+    move-result-object v3
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_1
 
     .line 18
     :try_start_8
-    invoke-static {v1, p2, v2}, Lr0/e;->e(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/util/List;)V
+    invoke-static {v2, p2, v3}, Lr0/e;->e(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/util/List;)V
     :try_end_8
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_1
     .catchall {:try_start_8 .. :try_end_8} :catchall_1
@@ -415,27 +417,23 @@
     goto :goto_1
 
     :catch_1
-    move-exception v2
-
-    if-eqz p5, :cond_4
-
-    const/4 p5, 0x1
+    const/4 v3, 0x1
 
     .line 19
     :try_start_9
-    invoke-virtual {p3, p0, p4, p5}, Lr0/g;->d(Landroid/content/Context;Ljava/lang/String;Z)Ljava/util/List;
+    invoke-virtual {v0, p0, v3}, Lr0/g;->d(Landroid/content/Context;Z)Ljava/util/List;
 
     move-result-object p0
 
     .line 20
-    invoke-static {v1, p2, p0}, Lr0/e;->e(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/util/List;)V
+    invoke-static {v2, p2, p0}, Lr0/e;->e(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/util/List;)V
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_1
 
     .line 21
     :goto_1
     :try_start_a
-    invoke-virtual {p3}, Lr0/g;->close()V
+    invoke-virtual {v0}, Lr0/g;->close()V
     :try_end_a
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_2
     .catchall {:try_start_a .. :try_end_a} :catchall_2
@@ -450,7 +448,7 @@
 
     .line 22
     :try_start_b
-    monitor-exit v0
+    monitor-exit v1
 
     return-void
 
@@ -460,41 +458,34 @@
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_2
 
-    .line 24
-    :cond_4
-    :try_start_c
-    throw v2
-    :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_1
-
     :catchall_1
     move-exception p0
 
-    .line 25
-    :try_start_d
-    invoke-virtual {p3}, Lr0/g;->close()V
-    :try_end_d
-    .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_3
-    .catchall {:try_start_d .. :try_end_d} :catchall_2
+    .line 24
+    :try_start_c
+    invoke-virtual {v0}, Lr0/g;->close()V
+    :try_end_c
+    .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_3
+    .catchall {:try_start_c .. :try_end_c} :catchall_2
 
-    .line 26
+    .line 25
     :catch_3
-    :try_start_e
+    :try_start_d
     throw p0
 
-    .line 27
+    .line 26
     :catch_4
-    monitor-exit v0
+    monitor-exit v1
 
     return-void
 
     :catchall_2
     move-exception p0
 
-    .line 28
-    monitor-exit v0
-    :try_end_e
-    .catchall {:try_start_e .. :try_end_e} :catchall_2
+    .line 27
+    monitor-exit v1
+    :try_end_d
+    .catchall {:try_start_d .. :try_end_d} :catchall_2
 
     throw p0
 .end method
@@ -522,7 +513,7 @@
     move-result-object v1
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/reflect/Field;->isAccessible()Z
+    invoke-virtual {v1}, Ljava/lang/reflect/AccessibleObject;->isAccessible()Z
 
     move-result v2
 
@@ -531,7 +522,7 @@
     const/4 v2, 0x1
 
     .line 4
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v1, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -691,14 +682,14 @@
     move-result-object v8
 
     .line 10
-    invoke-virtual {v8}, Ljava/lang/reflect/Method;->isAccessible()Z
+    invoke-virtual {v8}, Ljava/lang/reflect/AccessibleObject;->isAccessible()Z
 
     move-result v9
 
     if-nez v9, :cond_0
 
     .line 11
-    invoke-virtual {v8, v6}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v8, v6}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -826,7 +817,7 @@
 
     check-cast p1, Ljava/lang/Throwable;
 
-    invoke-virtual {p0, p1}, Ljava/io/IOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 27
     throw p0
@@ -1089,10 +1080,12 @@
 
     const-string v1, "Failed to create directory "
 
+    .line 12
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 13
     invoke-virtual {p0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object p0

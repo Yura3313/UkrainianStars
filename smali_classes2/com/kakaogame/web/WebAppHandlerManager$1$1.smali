@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/WebAppHandlerManager$1;Lcom/kakaogame/KGResult;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebAppHandlerManager$1$1;->this$1:Lcom/kakaogame/web/WebAppHandlerManager$1;
 
     iput-object p2, p0, Lcom/kakaogame/web/WebAppHandlerManager$1$1;->val$result:Lcom/kakaogame/KGResult;
@@ -42,7 +41,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebAppHandlerManager$1$1;->this$1:Lcom/kakaogame/web/WebAppHandlerManager$1;
 
     iget-object v0, v0, Lcom/kakaogame/web/WebAppHandlerManager$1;->val$callback:Lcom/kakaogame/web/WebAppHandlerManager$WebAppHandlerCallback;

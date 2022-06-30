@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/coupon/CouponManager$CouponPopupDialog;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/coupon/CouponManager$CouponPopupDialog$2;->this$0:Lcom/kakaogame/coupon/CouponManager$CouponPopupDialog;
 
     iput-object p2, p0, Lcom/kakaogame/coupon/CouponManager$CouponPopupDialog$2;->val$callback:Lcom/kakaogame/KGResultCallback;

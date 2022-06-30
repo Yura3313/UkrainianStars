@@ -1,122 +1,75 @@
 .class public final Lzd/d$c;
 .super Ljava/lang/Object;
-.source "-ViewPumpLayoutInflater.kt"
+.source "YoungPlayerRegisterEnterEmailPageFragment.kt"
 
 # interfaces
-.implements Lyd/a;
+.implements Landroid/view/View$OnFocusChangeListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lzd/d;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lzd/d;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = "c"
+    name = null
 .end annotation
 
 
 # instance fields
-.field public final a:Lzd/d;
+.field public final synthetic f:Lzd/d;
 
 
 # direct methods
 .method public constructor <init>(Lzd/d;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lzd/d$c;->f:Lzd/d;
 
-    iput-object p1, p0, Lzd/d$c;->a:Lzd/d;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onCreateView(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
-    .locals 2
+.method public final onFocusChange(Landroid/view/View;Z)V
+    .locals 1
 
-    const/4 p1, 0x0
-
-    if-eqz p2, :cond_4
-
-    if-eqz p3, :cond_3
+    if-eqz p2, :cond_0
 
     .line 1
-    sget-object p3, Lzd/d;->e:Ljava/util/Set;
+    iget-object p2, p0, Lzd/d$c;->f:Lzd/d;
 
-    .line 2
-    invoke-interface {p3}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    sget v0, Lcom/supercell/id/R$id;->registerEnterEmailScrollView:I
 
-    move-result-object p3
+    invoke-virtual {p2, v0}, Lzd/d;->W0(I)Landroid/view/View;
 
-    :cond_0
-    :goto_0
-    invoke-interface {p3}, Ljava/util/Iterator;->hasNext()Z
+    move-result-object p2
 
-    move-result v0
+    check-cast p2, Landroid/widget/ScrollView;
 
-    if-eqz v0, :cond_1
+    const-string v0, "registerEnterEmailScrollView"
 
-    invoke-interface {p3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object v0
+    const-string v0, "v"
 
-    check-cast v0, Ljava/lang/String;
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 3
-    :try_start_0
-    iget-object v1, p0, Lzd/d$c;->a:Lzd/d;
-
-    invoke-virtual {v1, p2, v0, p4}, Landroid/view/LayoutInflater;->createView(Ljava/lang/String;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;
-
-    move-result-object p1
-    :try_end_0
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    if-eqz p1, :cond_0
-
-    goto :goto_1
-
-    :catch_0
-    nop
+    invoke-static {p2, p1}, Lae/z2;->t(Landroid/widget/ScrollView;Landroid/view/View;)V
 
     goto :goto_0
 
-    :cond_1
-    :goto_1
-    if-nez p1, :cond_2
+    .line 2
+    :cond_0
+    new-instance p2, Lzd/d$c$a;
 
-    .line 4
-    iget-object p1, p0, Lzd/d$c;->a:Lzd/d;
+    invoke-direct {p2, p0}, Lzd/d$c$a;-><init>(Lzd/d$c;)V
 
-    invoke-static {p1, p2, p4}, Lzd/d;->b(Lzd/d;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;
+    invoke-virtual {p1, p2}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    move-result-object p1
-
-    :cond_2
-    return-object p1
-
-    :cond_3
-    const-string p2, "context"
-
-    .line 5
-    invoke-static {p2}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_4
-    const-string p2, "name"
-
-    invoke-static {p2}, Ls3/b;->h(Ljava/lang/String;)V
-
-    goto :goto_3
-
-    :goto_2
-    throw p1
-
-    :goto_3
-    goto :goto_2
+    :goto_0
+    return-void
 .end method

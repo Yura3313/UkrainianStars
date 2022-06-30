@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 # interfaces
-.implements La2/l;
+.implements Lb2/l;
 
 
 # annotations

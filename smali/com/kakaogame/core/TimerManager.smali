@@ -67,7 +67,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/core/TimerManager;)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/core/TimerManager;->prevTaskTime:J
 
     return-wide v0
@@ -76,7 +75,6 @@
 .method public static synthetic access$002(Lcom/kakaogame/core/TimerManager;J)J
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/kakaogame/core/TimerManager;->prevTaskTime:J
 
     return-wide p1
@@ -85,7 +83,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/core/TimerManager;)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/core/TimerManager;->timerInterval:J
 
     return-wide v0
@@ -94,7 +91,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/core/TimerManager;)Ljava/lang/Runnable;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/core/TimerManager;->timerTask:Ljava/lang/Runnable;
 
     return-object p0
@@ -114,6 +110,7 @@
 
     move-result-object v1
 
+    .line 2
     iget-object v2, p0, Lcom/kakaogame/core/TimerManager;->timer:Ljava/util/concurrent/ScheduledFuture;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -124,7 +121,7 @@
 
     invoke-static {v0, v1}, Lcom/kakaogame/Logger;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/kakaogame/core/TimerManager;->lock:Ljava/lang/Object;
 
@@ -132,29 +129,29 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 3
+    .line 4
     :try_start_1
     iget-object v1, p0, Lcom/kakaogame/core/TimerManager;->timer:Ljava/util/concurrent/ScheduledFuture;
 
     if-eqz v1, :cond_0
 
-    .line 4
+    .line 5
     monitor-exit v0
 
     return-void
 
-    .line 5
+    .line 6
     :cond_0
     iget-object v1, p0, Lcom/kakaogame/core/TimerManager;->timerTask:Ljava/lang/Runnable;
 
     if-nez v1, :cond_1
 
-    .line 6
+    .line 7
     monitor-exit v0
 
     return-void
 
-    .line 7
+    .line 8
     :cond_1
     iget-wide v1, p0, Lcom/kakaogame/core/TimerManager;->timerInterval:J
 
@@ -164,12 +161,12 @@
 
     if-gez v5, :cond_2
 
-    .line 8
+    .line 9
     monitor-exit v0
 
     return-void
 
-    .line 9
+    .line 10
     :cond_2
     new-instance v2, Ljava/util/concurrent/ScheduledThreadPoolExecutor;
 
@@ -177,7 +174,7 @@
 
     invoke-direct {v2, v1}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;-><init>(I)V
 
-    .line 10
+    .line 11
     new-instance v3, Lcom/kakaogame/core/TimerManager$1;
 
     invoke-direct {v3, p0}, Lcom/kakaogame/core/TimerManager$1;-><init>(Lcom/kakaogame/core/TimerManager;)V
@@ -194,7 +191,7 @@
 
     iput-object v1, p0, Lcom/kakaogame/core/TimerManager;->timer:Ljava/util/concurrent/ScheduledFuture;
 
-    .line 11
+    .line 12
     monitor-exit v0
 
     goto :goto_0
@@ -216,8 +213,8 @@
 
     const-string v1, "TimerManager"
 
-    .line 12
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -254,7 +251,7 @@
     const/4 v2, 0x0
 
     .line 4
-    invoke-interface {v1, v2}, Ljava/util/concurrent/ScheduledFuture;->cancel(Z)Z
+    invoke-interface {v1, v2}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     const/4 v1, 0x0
 
@@ -285,7 +282,7 @@
     const-string v1, "TimerManager"
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 

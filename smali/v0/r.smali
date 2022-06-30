@@ -1,18 +1,17 @@
-.class public Lv0/r;
+.class public final Lv0/r;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "Transition.java"
 
 
 # instance fields
-.field public final synthetic g:Landroidx/transition/Transition;
+.field public final synthetic f:Landroidx/transition/Transition;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/transition/Transition;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lv0/r;->g:Landroidx/transition/Transition;
+    iput-object p1, p0, Lv0/r;->f:Landroidx/transition/Transition;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -21,11 +20,11 @@
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/animation/Animator;)V
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lv0/r;->g:Landroidx/transition/Transition;
+    iget-object v0, p0, Lv0/r;->f:Landroidx/transition/Transition;
 
     invoke-virtual {v0}, Landroidx/transition/Transition;->n()V
 

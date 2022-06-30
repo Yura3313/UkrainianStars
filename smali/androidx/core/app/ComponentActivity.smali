@@ -161,7 +161,6 @@
 .method public getLifecycle()Landroidx/lifecycle/f;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mLifecycleRegistry:Landroidx/lifecycle/k;
 
     return-object v0
@@ -179,7 +178,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
-    invoke-static {p0}, Landroidx/lifecycle/t;->c(Landroid/app/Activity;)V
+    invoke-static {p0}, Landroidx/lifecycle/s;->c(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -190,22 +189,17 @@
     .line 1
     iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mLifecycleRegistry:Landroidx/lifecycle/k;
 
-    sget-object v1, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
 
     const-string v2, "markState"
 
     .line 2
     invoke-virtual {v0, v2}, Landroidx/lifecycle/k;->d(Ljava/lang/String;)V
 
-    const-string v2, "setCurrentState"
-
     .line 3
-    invoke-virtual {v0, v2}, Landroidx/lifecycle/k;->d(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/k;->j(Landroidx/lifecycle/f$c;)V
 
     .line 4
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/k;->g(Landroidx/lifecycle/f$c;)V
-
-    .line 5
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     return-void
@@ -216,7 +210,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mExtraDataMap:Lm/g;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -231,7 +224,6 @@
 .method public superDispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result p1

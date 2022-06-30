@@ -28,7 +28,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lokhttp3/internal/http2/Http2;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -912,7 +911,6 @@
 .method public maxDataLength()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http2/Http2Writer;->maxFrameSize:I
 
     return v0

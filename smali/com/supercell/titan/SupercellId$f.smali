@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/SupercellId$f;
+.class public final Lcom/supercell/titan/SupercellId$f;
 .super Ljava/lang/Object;
 .source "SupercellId.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/titan/SupercellId;->closeWindow()V
+    value = Lcom/supercell/titan/SupercellId;->reopenWindow(Ljava/lang/String;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,11 +17,24 @@
 .end annotation
 
 
+# instance fields
+.field public final synthetic f:Ljava/lang/String;
+
+.field public final synthetic g:Lcom/supercell/titan/GameApp;
+
+.field public final synthetic h:Ljava/lang/String;
+
+
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/SupercellId;)V
+.method public constructor <init>(Ljava/lang/String;Lcom/supercell/titan/GameApp;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
+    iput-object p1, p0, Lcom/supercell/titan/SupercellId$f;->f:Ljava/lang/String;
+
+    iput-object p2, p0, Lcom/supercell/titan/SupercellId$f;->g:Lcom/supercell/titan/GameApp;
+
+    iput-object p3, p0, Lcom/supercell/titan/SupercellId$f;->h:Ljava/lang/String;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,13 +42,20 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 1
+.method public final run()V
+    .locals 4
 
     .line 1
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    iget-object v0, p0, Lcom/supercell/titan/SupercellId$f;->f:Ljava/lang/String;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->closeAllWindows()V
+    .line 2
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    iget-object v2, p0, Lcom/supercell/titan/SupercellId$f;->g:Lcom/supercell/titan/GameApp;
+
+    iget-object v3, p0, Lcom/supercell/titan/SupercellId$f;->h:Ljava/lang/String;
+
+    invoke-virtual {v1, v2, v0, v3}, Lcom/supercell/id/SupercellId;->represent(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

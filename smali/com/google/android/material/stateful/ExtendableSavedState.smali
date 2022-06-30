@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public final i:Lm/g;
+.field public final h:Lm/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lm/g<",
@@ -32,7 +32,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/material/stateful/ExtendableSavedState$a;
 
     invoke-direct {v0}, Lcom/google/android/material/stateful/ExtendableSavedState$a;-><init>()V
@@ -42,8 +41,8 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;Lcom/google/android/material/stateful/ExtendableSavedState$a;)V
-    .locals 4
+.method public constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
+    .locals 5
 
     .line 3
     invoke-direct {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
@@ -54,25 +53,25 @@
     move-result p2
 
     .line 5
-    new-array p3, p2, [Ljava/lang/String;
+    new-array v0, p2, [Ljava/lang/String;
 
     .line 6
-    invoke-virtual {p1, p3}, Landroid/os/Parcel;->readStringArray([Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readStringArray([Ljava/lang/String;)V
 
     .line 7
-    new-array v0, p2, [Landroid/os/Bundle;
+    new-array v1, p2, [Landroid/os/Bundle;
 
     .line 8
-    sget-object v1, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object v2, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->readTypedArray([Ljava/lang/Object;Landroid/os/Parcelable$Creator;)V
+    invoke-virtual {p1, v1, v2}, Landroid/os/Parcel;->readTypedArray([Ljava/lang/Object;Landroid/os/Parcelable$Creator;)V
 
     .line 9
     new-instance p1, Lm/g;
 
     invoke-direct {p1, p2}, Lm/g;-><init>(I)V
 
-    iput-object p1, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->i:Lm/g;
+    iput-object p1, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->h:Lm/g;
 
     const/4 p1, 0x0
 
@@ -80,13 +79,13 @@
     if-ge p1, p2, :cond_0
 
     .line 10
-    iget-object v1, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->i:Lm/g;
-
-    aget-object v2, p3, p1
+    iget-object v2, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->h:Lm/g;
 
     aget-object v3, v0, p1
 
-    invoke-virtual {v1, v2, v3}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    aget-object v4, v1, p1
+
+    invoke-virtual {v2, v3, v4}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 p1, p1, 0x1
 
@@ -107,14 +106,14 @@
 
     invoke-direct {p1}, Lm/g;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->i:Lm/g;
+    iput-object p1, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->h:Lm/g;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
     const-string v0, "ExtendableSavedState{"
@@ -139,7 +138,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->i:Lm/g;
+    iget-object v1, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->h:Lm/g;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -154,19 +153,19 @@
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->i:Lm/g;
+    iget-object p2, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->h:Lm/g;
 
     .line 3
-    iget p2, p2, Lm/g;->i:I
+    iget p2, p2, Lm/g;->h:I
 
     .line 4
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
@@ -185,7 +184,7 @@
     if-ge v3, p2, :cond_0
 
     .line 7
-    iget-object v4, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->i:Lm/g;
+    iget-object v4, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->h:Lm/g;
 
     invoke-virtual {v4, v3}, Lm/g;->h(I)Ljava/lang/Object;
 
@@ -196,7 +195,7 @@
     aput-object v4, v0, v3
 
     .line 8
-    iget-object v4, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->i:Lm/g;
+    iget-object v4, p0, Lcom/google/android/material/stateful/ExtendableSavedState;->h:Lm/g;
 
     invoke-virtual {v4, v3}, Lm/g;->k(I)Ljava/lang/Object;
 

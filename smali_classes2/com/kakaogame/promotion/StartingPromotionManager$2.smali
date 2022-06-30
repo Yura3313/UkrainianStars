@@ -3,7 +3,7 @@
 .source "StartingPromotionManager.java"
 
 # interfaces
-.implements Lgc/a;
+.implements Lkc/a;
 
 
 # annotations
@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +31,6 @@
 .method public onLoadingCancelled(Ljava/lang/String;Landroid/view/View;)V
     .locals 1
 
-    .line 1
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -57,7 +55,6 @@
 .method public onLoadingComplete(Ljava/lang/String;Landroid/view/View;Landroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 1
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -79,10 +76,9 @@
     return-void
 .end method
 
-.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Lac/b;)V
+.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Lfc/b;)V
     .locals 0
 
-    .line 1
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -107,7 +103,6 @@
 .method public onLoadingStarted(Ljava/lang/String;Landroid/view/View;)V
     .locals 1
 
-    .line 1
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V

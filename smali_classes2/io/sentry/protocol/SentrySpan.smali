@@ -184,7 +184,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentrySpan;->data:Ljava/util/Map;
 
     return-object v0
@@ -193,7 +192,6 @@
 .method public getDescription()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentrySpan;->description:Ljava/lang/String;
 
     return-object v0
@@ -202,7 +200,6 @@
 .method public getOp()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentrySpan;->op:Ljava/lang/String;
 
     return-object v0
@@ -211,7 +208,6 @@
 .method public getParentSpanId()Lio/sentry/SpanId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentrySpan;->parentSpanId:Lio/sentry/SpanId;
 
     return-object v0
@@ -220,7 +216,6 @@
 .method public getSpanId()Lio/sentry/SpanId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentrySpan;->spanId:Lio/sentry/SpanId;
 
     return-object v0
@@ -229,7 +224,6 @@
 .method public getStartTimestamp()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentrySpan;->startTimestamp:Ljava/util/Date;
 
     return-object v0
@@ -238,7 +232,6 @@
 .method public getStatus()Lio/sentry/SpanStatus;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentrySpan;->status:Lio/sentry/SpanStatus;
 
     return-object v0
@@ -256,7 +249,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentrySpan;->tags:Ljava/util/Map;
 
     return-object v0
@@ -265,7 +257,6 @@
 .method public getTimestamp()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentrySpan;->timestamp:Ljava/util/Date;
 
     return-object v0
@@ -274,7 +265,6 @@
 .method public getTraceId()Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentrySpan;->traceId:Lio/sentry/protocol/SentryId;
 
     return-object v0
@@ -283,7 +273,6 @@
 .method public isFinished()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentrySpan;->timestamp:Ljava/util/Date;
 
     if-eqz v0, :cond_0

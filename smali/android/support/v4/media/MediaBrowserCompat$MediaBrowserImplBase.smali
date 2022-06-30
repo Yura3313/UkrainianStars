@@ -188,7 +188,7 @@
     const-string v0, "UNKNOWN/"
 
     .line 1
-    invoke-static {v0, p0}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p0}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -253,11 +253,11 @@
     .line 3
     iget-object p1, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceComponent:Landroid/content/ComponentName;
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     iget-object p1, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mCallbacksMessenger:Landroid/os/Messenger;
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -289,23 +289,27 @@
 
     const-string v1, "connect() called while neigther disconnecting nor disconnected (state="
 
+    .line 3
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 4
     iget v2, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mState:I
 
-    .line 3
+    .line 5
     invoke-static {v2}, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->getStateLabel(I)Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, ")"
 
-    invoke-static {v1, v2, v3}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 6
+    invoke-static {v1, v2, v3}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
+    .line 7
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -314,10 +318,10 @@
     :goto_0
     const/4 v0, 0x2
 
-    .line 4
+    .line 8
     iput v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mState:I
 
-    .line 5
+    .line 9
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mHandler:Landroid/support/v4/media/MediaBrowserCompat$CallbackHandler;
 
     new-instance v1, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$1;
@@ -355,17 +359,17 @@
     .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceComponent:Landroid/content/ComponentName;
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 2
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mCallback:Landroid/support/v4/media/MediaBrowserCompat$ConnectionCallback;
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 3
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mRootHints:Landroid/os/Bundle;
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 4
     iget v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mState:I
@@ -375,22 +379,22 @@
     .line 5
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceConnection:Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection;
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 6
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceBinderWrapper:Landroid/support/v4/media/MediaBrowserCompat$ServiceBinderWrapper;
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 7
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mCallbacksMessenger:Landroid/os/Messenger;
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 8
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mMediaSessionToken:Landroid/support/v4/media/session/MediaSessionCompat$Token;
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -460,23 +464,27 @@
 
     const-string v1, "getExtras() called while not connected (state="
 
+    .line 4
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 5
     iget v2, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mState:I
 
-    .line 4
+    .line 6
     invoke-static {v2}, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->getStateLabel(I)Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, ")"
 
-    invoke-static {v1, v2, v3}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 7
+    invoke-static {v1, v2, v3}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
+    .line 8
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -569,7 +577,6 @@
 .method public getNotifyChildrenChangedOptions()Landroid/os/Bundle;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mNotifyChildrenChangedOptions:Landroid/os/Bundle;
 
     return-object v0
@@ -596,23 +603,27 @@
 
     const-string v1, "getRoot() called while not connected(state="
 
+    .line 4
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 5
     iget v2, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mState:I
 
-    .line 4
+    .line 6
     invoke-static {v2}, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->getStateLabel(I)Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, ")"
 
-    invoke-static {v1, v2, v3}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 7
+    invoke-static {v1, v2, v3}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
+    .line 8
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -639,18 +650,22 @@
 
     const-string v1, "getServiceComponent() called while not connected (state="
 
+    .line 4
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 5
     iget v2, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mState:I
 
     const-string v3, ")"
 
+    .line 6
     invoke-static {v1, v2, v3}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
+    .line 7
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -677,18 +692,22 @@
 
     const-string v1, "getSessionToken() called while not connected(state="
 
+    .line 4
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 5
     iget v2, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mState:I
 
     const-string v3, ")"
 
+    .line 6
     invoke-static {v1, v2, v3}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
+    .line 7
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -697,7 +716,6 @@
 .method public isConnected()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mState:I
 
     const/4 v1, 0x3
@@ -721,7 +739,7 @@
     .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceComponent:Landroid/content/ComponentName;
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     const-string v0, "onConnectFailed"
 
@@ -784,7 +802,7 @@
     .line 3
     iget-object p1, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceComponent:Landroid/content/ComponentName;
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 4
     :cond_1
@@ -879,8 +897,6 @@
     if-eq p1, v0, :cond_1
 
     .line 3
-    iget p1, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mState:I
-
     invoke-static {p1}, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->getStateLabel(I)Ljava/lang/String;
 
     return-void
@@ -929,15 +945,17 @@
     move-result-object p1
 
     :cond_3
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    move-object p2, p1
 
-    move-result p2
+    check-cast p2, Lm/f$d;
 
-    if-eqz p2, :cond_4
+    invoke-virtual {p2}, Lm/f$d;->hasNext()Z
 
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result p3
 
-    move-result-object p2
+    if-eqz p3, :cond_4
+
+    invoke-virtual {p2}, Lm/f$d;->next()Ljava/lang/Object;
 
     check-cast p2, Ljava/util/Map$Entry;
 
@@ -1057,23 +1075,27 @@
 
     const-string p2, "search() called while not connected (state="
 
+    .line 6
     invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
+    .line 7
     iget p3, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mState:I
 
-    .line 6
+    .line 8
     invoke-static {p3}, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->getStateLabel(I)Ljava/lang/String;
 
     move-result-object p3
 
     const-string v0, ")"
 
-    invoke-static {p2, p3, v0}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 9
+    invoke-static {p2, p3, v0}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
+    .line 10
     invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p1
@@ -1112,7 +1134,7 @@
     nop
 
     .line 4
-    invoke-static {p2}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {p2}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     if-eqz p3, :cond_0
 
@@ -1157,10 +1179,12 @@
 
     const-string p2, "service."
 
-    invoke-static {v0, p1, p2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 7
+    invoke-static {v0, p1, p2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 8
     invoke-direct {p3, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p3

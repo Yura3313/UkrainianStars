@@ -4,10 +4,10 @@
 
 
 # instance fields
-.field public g:Lke/p;
+.field public f:Lre/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/supercell/id/view/TouchInterceptingFrameLayout;",
             "-",
@@ -21,88 +21,43 @@
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 6
+    .locals 2
 
-    const/4 v3, 0x0
+    const/4 v0, 0x0
 
-    const/4 v4, 0x0
+    const-string v1, "context"
 
-    const/16 v5, 0xc
+    .line 1
+    invoke-static {p1, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    invoke-direct/range {v0 .. v5}, Lcom/supercell/id/view/TouchInterceptingFrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;III)V
+    .line 2
+    invoke-direct {p0, p1, p2, v0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 6
-
-    const/4 v4, 0x0
-
-    const/16 v5, 0x8
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move v3, p3
-
-    invoke-direct/range {v0 .. v5}, Lcom/supercell/id/view/TouchInterceptingFrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;III)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;III)V
     .locals 1
 
-    and-int/lit8 p4, p5, 0x2
+    const-string v0, "context"
 
-    const/4 v0, 0x0
+    .line 3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_0
-
-    move-object p2, v0
-
-    :cond_0
-    and-int/lit8 p4, p5, 0x4
-
-    if-eqz p4, :cond_1
-
-    const/4 p3, 0x0
-
-    :cond_1
-    if-eqz p1, :cond_2
-
-    .line 1
+    .line 4
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
-
-    :cond_2
-    const-string p1, "context"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 
 # virtual methods
-.method public final getTouchInterceptor()Lke/p;
+.method public final getTouchInterceptor()Lre/p;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lke/p<",
+            "Lre/p<",
             "Lcom/supercell/id/view/TouchInterceptingFrameLayout;",
             "Landroid/view/MotionEvent;",
             "Ljava/lang/Boolean;",
@@ -110,21 +65,20 @@
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lke/p;
+    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->f:Lre/p;
 
     return-object v0
 .end method
 
-.method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
+.method public final onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lke/p;
+    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->f:Lre/p;
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0, p0, p1}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p0, p1}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -142,19 +96,19 @@
 
     .line 2
     :cond_0
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public final setTouchInterceptor(Lke/p;)V
+.method public final setTouchInterceptor(Lre/p;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/supercell/id/view/TouchInterceptingFrameLayout;",
             "-",
@@ -164,8 +118,7 @@
         }
     .end annotation
 
-    .line 1
-    iput-object p1, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lke/p;
+    iput-object p1, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->f:Lre/p;
 
     return-void
 .end method

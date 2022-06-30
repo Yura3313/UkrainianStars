@@ -1,4 +1,4 @@
-.class public Ls/a;
+.class public final Ls/a;
 .super Ljava/lang/Object;
 .source "ConstraintAttribute.java"
 
@@ -421,10 +421,18 @@
 
     check-cast v3, Ls/a;
 
-    const-string v4, "set"
-
     .line 4
-    invoke-static {v4, v2}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "set"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -470,6 +478,21 @@
     invoke-virtual {v2, p0, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
+
+    :catch_0
+    move-exception v2
+
+    goto/16 :goto_1
+
+    :catch_1
+    move-exception v2
+
+    goto/16 :goto_2
+
+    :catch_2
+    move-exception v2
+
+    goto/16 :goto_3
 
     :pswitch_1
     new-array v4, v6, [Ljava/lang/Class;
@@ -637,34 +660,26 @@
 
     goto/16 :goto_0
 
-    :catch_0
-    move-exception v2
-
     .line 22
-    invoke-virtual {v2}, Ljava/lang/reflect/InvocationTargetException;->printStackTrace()V
+    :goto_1
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto/16 :goto_0
-
-    :catch_1
-    move-exception v2
 
     .line 23
-    invoke-virtual {v2}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+    :goto_2
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto/16 :goto_0
 
-    :catch_2
-    move-exception v2
-
     .line 24
-    invoke-virtual {v2}, Ljava/lang/NoSuchMethodException;->getMessage()Ljava/lang/String;
+    :goto_3
+    invoke-virtual {v2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     goto/16 :goto_0
 
     :cond_0
     return-void
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -680,7 +695,7 @@
 
 
 # virtual methods
-.method public b()F
+.method public final b()F
     .locals 2
 
     .line 1
@@ -766,7 +781,7 @@
     .end packed-switch
 .end method
 
-.method public c([F)V
+.method public final c([F)V
     .locals 10
 
     .line 1
@@ -936,10 +951,9 @@
     .end packed-switch
 .end method
 
-.method public d()I
+.method public final d()I
     .locals 2
 
-    .line 1
     iget v0, p0, Ls/a;->b:I
 
     invoke-static {v0}, Lp/g;->b(I)I
@@ -964,7 +978,7 @@
     return v0
 .end method
 
-.method public g(Landroid/view/View;[F)V
+.method public final g(Landroid/view/View;[F)V
     .locals 12
 
     .line 1
@@ -979,6 +993,7 @@
 
     move-result-object v1
 
+    .line 3
     iget-object v2, p0, Ls/a;->a:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -987,7 +1002,7 @@
 
     move-result-object v1
 
-    .line 3
+    .line 4
     :try_start_0
     iget v2, p0, Ls/a;->b:I
 
@@ -1014,7 +1029,7 @@
     :pswitch_0
     new-array v2, v8, [Ljava/lang/Class;
 
-    .line 4
+    .line 5
     sget-object v3, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
     aput-object v3, v2, v9
@@ -1025,7 +1040,7 @@
 
     new-array v1, v8, [Ljava/lang/Object;
 
-    .line 5
+    .line 6
     aget p2, p2, v9
 
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -1041,7 +1056,7 @@
     :pswitch_1
     new-array v2, v8, [Ljava/lang/Class;
 
-    .line 6
+    .line 7
     sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
     aput-object v3, v2, v9
@@ -1052,7 +1067,7 @@
 
     new-array v1, v8, [Ljava/lang/Object;
 
-    .line 7
+    .line 8
     aget p2, p2, v9
 
     const/high16 v2, 0x3f000000    # 0.5f
@@ -1077,7 +1092,7 @@
 
     goto/16 :goto_1
 
-    .line 8
+    .line 9
     :pswitch_2
     new-instance p2, Ljava/lang/RuntimeException;
 
@@ -1104,7 +1119,7 @@
     :pswitch_3
     new-array v2, v8, [Ljava/lang/Class;
 
-    .line 9
+    .line 10
     const-class v10, Landroid/graphics/drawable/Drawable;
 
     aput-object v10, v2, v9
@@ -1113,7 +1128,7 @@
 
     move-result-object v0
 
-    .line 10
+    .line 11
     aget v1, p2, v9
 
     float-to-double v1, v1
@@ -1132,7 +1147,7 @@
 
     move-result v1
 
-    .line 11
+    .line 12
     aget v2, p2, v8
 
     float-to-double v10, v2
@@ -1151,7 +1166,7 @@
 
     move-result v2
 
-    .line 12
+    .line 13
     aget v4, p2, v4
 
     float-to-double v10, v4
@@ -1170,7 +1185,7 @@
 
     move-result v4
 
-    .line 13
+    .line 14
     aget p2, p2, v3
 
     mul-float p2, p2, v7
@@ -1193,19 +1208,19 @@
 
     or-int/2addr p2, v4
 
-    .line 14
+    .line 15
     new-instance v1, Landroid/graphics/drawable/ColorDrawable;
 
     invoke-direct {v1}, Landroid/graphics/drawable/ColorDrawable;-><init>()V
 
-    .line 15
+    .line 16
     invoke-virtual {v1, p2}, Landroid/graphics/drawable/ColorDrawable;->setColor(I)V
 
     new-array p2, v8, [Ljava/lang/Object;
 
     aput-object v1, p2, v9
 
-    .line 16
+    .line 17
     invoke-virtual {v0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_1
@@ -1213,7 +1228,7 @@
     :pswitch_4
     new-array v2, v8, [Ljava/lang/Class;
 
-    .line 17
+    .line 18
     sget-object v10, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     aput-object v10, v2, v9
@@ -1222,7 +1237,7 @@
 
     move-result-object v0
 
-    .line 18
+    .line 19
     aget v1, p2, v9
 
     float-to-double v1, v1
@@ -1241,7 +1256,7 @@
 
     move-result v1
 
-    .line 19
+    .line 20
     aget v2, p2, v8
 
     float-to-double v10, v2
@@ -1260,7 +1275,7 @@
 
     move-result v2
 
-    .line 20
+    .line 21
     aget v4, p2, v4
 
     float-to-double v10, v4
@@ -1279,7 +1294,7 @@
 
     move-result v4
 
-    .line 21
+    .line 22
     aget p2, p2, v3
 
     mul-float p2, p2, v7
@@ -1304,7 +1319,7 @@
 
     new-array v1, v8, [Ljava/lang/Object;
 
-    .line 22
+    .line 23
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
@@ -1318,7 +1333,7 @@
     :pswitch_5
     new-array v2, v8, [Ljava/lang/Class;
 
-    .line 23
+    .line 24
     sget-object v3, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
     aput-object v3, v2, v9
@@ -1329,7 +1344,7 @@
 
     new-array v1, v8, [Ljava/lang/Object;
 
-    .line 24
+    .line 25
     aget p2, p2, v9
 
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -1345,7 +1360,7 @@
     :pswitch_6
     new-array v2, v8, [Ljava/lang/Class;
 
-    .line 25
+    .line 26
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     aput-object v3, v2, v9
@@ -1356,7 +1371,7 @@
 
     new-array v1, v8, [Ljava/lang/Object;
 
-    .line 26
+    .line 27
     aget p2, p2, v9
 
     float-to-int p2, p2
@@ -1378,30 +1393,30 @@
     :catch_0
     move-exception p1
 
-    .line 27
-    invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->printStackTrace()V
+    .line 28
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_1
 
     :catch_1
     move-exception p2
 
-    .line 28
+    .line 29
     invoke-static {p1}, Lo/a;->c(Landroid/view/View;)Ljava/lang/String;
 
-    .line 29
-    invoke-virtual {p2}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+    .line 30
+    invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_1
 
     :catch_2
     move-exception p2
 
-    .line 30
+    .line 31
     invoke-static {p1}, Lo/a;->c(Landroid/view/View;)Ljava/lang/String;
 
-    .line 31
-    invoke-virtual {p2}, Ljava/lang/NoSuchMethodException;->printStackTrace()V
+    .line 32
+    invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_1
     return-void
@@ -1420,7 +1435,7 @@
     .end packed-switch
 .end method
 
-.method public h(Ljava/lang/Object;)V
+.method public final h(Ljava/lang/Object;)V
     .locals 1
 
     .line 1

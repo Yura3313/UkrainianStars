@@ -18,10 +18,10 @@
 
 
 # instance fields
-.field public final a:Lse/f0;
+.field public final a:Lze/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lse/f0<",
+            "Lze/e0<",
             "*>;"
         }
     .end annotation
@@ -36,32 +36,33 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget-object v0, Lae/i;->a:Lae/i;
+    sget-object v0, Lie/h;->a:Lie/h;
 
     .line 3
-    invoke-static {v0}, Lp5/h;->a(Ljava/lang/Object;)Lse/o;
+    invoke-static {v0}, Lbf/g;->b(Ljava/lang/Object;)Lze/o;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/BackStack$d;->a:Lse/f0;
+    check-cast v0, Lze/p;
+
+    iput-object v0, p0, Lcom/supercell/id/ui/BackStack$d;->a:Lze/p;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Lse/f0;
+.method public final a()Lze/e0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lse/f0<",
+            "Lze/e0<",
             "*>;"
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$d;->a:Lse/f0;
+    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$d;->a:Lze/p;
 
     return-object v0
 .end method

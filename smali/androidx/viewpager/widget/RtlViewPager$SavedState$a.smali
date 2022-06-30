@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/viewpager/widget/RtlViewPager$SavedState;-><clinit>()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/viewpager/widget/RtlViewPager$SavedState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +37,7 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -49,45 +48,39 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "source"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 4
-    const-class v1, Landroidx/viewpager/widget/RtlViewPager$SavedState;
+    .line 3
+    const-class v0, Landroidx/viewpager/widget/RtlViewPager$SavedState;
 
-    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
-    const-string v0, "T::class.java.classLoader!!"
+    const-string v1, "T::class.java.classLoader!!"
 
-    invoke-static {v1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p0, p1, v1}, Landroidx/viewpager/widget/RtlViewPager$SavedState$a;->createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, v0}, Landroidx/viewpager/widget/RtlViewPager$SavedState$a;->createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 
     :cond_0
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    const/4 p1, 0x0
 
-    :cond_1
-    const-string p1, "source"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    throw p1
 .end method
 
-.method public createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
-    .locals 2
+.method public final createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -98,37 +91,24 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "source"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string v0, "loader"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    new-instance v1, Landroidx/viewpager/widget/RtlViewPager$SavedState;
+    new-instance v0, Landroidx/viewpager/widget/RtlViewPager$SavedState;
 
     .line 2
-    invoke-direct {v1, p1, p2, v0}, Landroidx/viewpager/widget/RtlViewPager$SavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;Lle/g;)V
+    invoke-direct {v0, p1, p2}, Landroidx/viewpager/widget/RtlViewPager$SavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
 
-    return-object v1
-
-    :cond_0
-    const-string p1, "loader"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "source"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return-object v0
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -137,7 +117,6 @@
         }
     .end annotation
 
-    .line 1
     new-array p1, p1, [Landroidx/viewpager/widget/RtlViewPager$SavedState;
 
     return-object p1

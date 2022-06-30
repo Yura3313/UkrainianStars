@@ -25,7 +25,9 @@
 .method public constructor <init>(Lcom/kakao/sdk/partner/model/KakaoPhase;)V
     .locals 6
 
-    if-eqz p1, :cond_1a
+    const-string v0, "phase"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Lcom/kakao/sdk/common/model/ServerHosts;-><init>()V
@@ -352,16 +354,6 @@
     iput-object p1, p0, Lcom/kakao/sdk/partner/model/PhasedServerHosts;->channel:Ljava/lang/String;
 
     return-void
-
-    :cond_1a
-    const-string p1, "phase"
-
-    .line 23
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 
@@ -369,7 +361,6 @@
 .method public getAccount()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/model/PhasedServerHosts;->account:Ljava/lang/String;
 
     return-object v0
@@ -378,7 +369,6 @@
 .method public getChannel()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/model/PhasedServerHosts;->channel:Ljava/lang/String;
 
     return-object v0
@@ -387,7 +377,6 @@
 .method public getKapi()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/model/PhasedServerHosts;->kapi:Ljava/lang/String;
 
     return-object v0
@@ -396,7 +385,6 @@
 .method public getKauth()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/model/PhasedServerHosts;->kauth:Ljava/lang/String;
 
     return-object v0
@@ -405,7 +393,6 @@
 .method public getMobileAccount()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/model/PhasedServerHosts;->mobileAccount:Ljava/lang/String;
 
     return-object v0
@@ -414,7 +401,6 @@
 .method public getNavi()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/model/PhasedServerHosts;->navi:Ljava/lang/String;
 
     return-object v0
@@ -423,7 +409,6 @@
 .method public final getPhase()Lcom/kakao/sdk/partner/model/KakaoPhase;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/model/PhasedServerHosts;->phase:Lcom/kakao/sdk/partner/model/KakaoPhase;
 
     return-object v0
@@ -432,7 +417,6 @@
 .method public getSharer()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/model/PhasedServerHosts;->sharer:Ljava/lang/String;
 
     return-object v0

@@ -60,17 +60,22 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "nickname"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_2
+    const-string v0, "profileImageUrl"
 
-    if-eqz p3, :cond_1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_0
+    const-string v0, "thumbnailUrl"
 
-    .line 1
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "countryISO"
+
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/kakao/sdk/talk/model/TalkProfile;->nickname:Ljava/lang/String;
@@ -82,35 +87,6 @@
     iput-object p4, p0, Lcom/kakao/sdk/talk/model/TalkProfile;->countryISO:Ljava/lang/String;
 
     return-void
-
-    :cond_0
-    const-string p1, "countryISO"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "thumbnailUrl"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "profileImageUrl"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "nickname"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/kakao/sdk/talk/model/TalkProfile;
@@ -188,50 +164,27 @@
 .method public final copy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakao/sdk/talk/model/TalkProfile;
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "nickname"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_2
+    const-string v0, "profileImageUrl"
 
-    if-eqz p3, :cond_1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_0
+    const-string v0, "thumbnailUrl"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "countryISO"
+
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/talk/model/TalkProfile;
 
     invoke-direct {v0, p1, p2, p3, p4}, Lcom/kakao/sdk/talk/model/TalkProfile;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "countryISO"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "thumbnailUrl"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "profileImageUrl"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "nickname"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -257,7 +210,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/talk/model/TalkProfile;->nickname:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -267,7 +220,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/talk/model/TalkProfile;->profileImageUrl:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -277,7 +230,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/talk/model/TalkProfile;->thumbnailUrl:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -287,7 +240,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/talk/model/TalkProfile;->countryISO:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -310,7 +263,6 @@
 .method public final getCountryISO()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/model/TalkProfile;->countryISO:Ljava/lang/String;
 
     return-object v0
@@ -319,7 +271,6 @@
 .method public final getNickname()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/model/TalkProfile;->nickname:Ljava/lang/String;
 
     return-object v0
@@ -328,7 +279,6 @@
 .method public final getProfileImageUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/model/TalkProfile;->profileImageUrl:Ljava/lang/String;
 
     return-object v0
@@ -337,7 +287,6 @@
 .method public final getThumbnailUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/model/TalkProfile;->thumbnailUrl:Ljava/lang/String;
 
     return-object v0
@@ -419,10 +368,12 @@
 
     const-string v0, "TalkProfile(nickname="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakao/sdk/talk/model/TalkProfile;->nickname:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -451,7 +402,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -461,7 +413,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    if-eqz p1, :cond_0
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/talk/model/TalkProfile;->nickname:Ljava/lang/String;
 
@@ -480,14 +434,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

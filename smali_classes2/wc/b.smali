@@ -1,69 +1,55 @@
 .class public final Lwc/b;
-.super Ljava/lang/Object;
-.source "DonateFragment.kt"
-
-# interfaces
-.implements Ljava/util/Comparator;
+.super Landroid/app/Dialog;
+.source "ConfirmDialogFragment.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lwc/e;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final g:Lwc/b;
+# instance fields
+.field public final synthetic f:Lwc/c;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lwc/b;
-
-    invoke-direct {v0}, Lwc/b;-><init>()V
-
-    sput-object v0, Lwc/b;->g:Lwc/b;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lwc/c;Landroid/content/Context;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "I)V"
+        }
+    .end annotation
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lwc/b;->f:Lwc/c;
+
+    invoke-direct {p0, p2, p3}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
+.method public final onBackPressed()V
+    .locals 2
 
     .line 1
-    check-cast p1, Lwc/e;
-
-    check-cast p2, Lwc/e;
+    iget-object v0, p0, Lwc/b;->f:Lwc/c;
 
     .line 2
-    iget-object p1, p1, Lwc/e;->c:Ljava/lang/String;
+    iget-object v1, v0, Lwc/c;->u0:Lre/l;
 
-    iget-object p2, p2, Lwc/e;->c:Ljava/lang/String;
+    if-eqz v1, :cond_0
 
     .line 3
-    invoke-static {p1, p2}, Li1/n;->a(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-interface {v1, v0}, Lre/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result p1
+    move-result-object v0
 
-    return p1
+    check-cast v0, Lie/h;
+
+    .line 4
+    :cond_0
+    iget-object v0, p0, Lwc/b;->f:Lwc/c;
+
+    invoke-virtual {v0}, Lwc/e;->V0()V
+
+    return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/LocationService$c;
+.class public final Lcom/supercell/titan/LocationService$c;
 .super Ljava/lang/Object;
 .source "LocationService.java"
 
@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/supercell/titan/LocationService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/titan/LocationService$c;->a:Lcom/supercell/titan/LocationService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +43,7 @@
 
 
 # virtual methods
-.method public call()Ljava/lang/Object;
+.method public final call()Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -66,7 +65,7 @@
     iget-object v1, v1, Lcom/supercell/titan/LocationService;->c:Lcom/supercell/titan/GameApp;
 
     .line 4
-    invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     .line 5
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;

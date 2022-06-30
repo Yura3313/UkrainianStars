@@ -58,45 +58,36 @@
 
     invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
-    const/4 v0, 0x0
+    const/16 v0, 0x2329
 
     .line 2
-    iput-boolean v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isCrop:Z
+    iput v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->resultCode:I
+
+    const/4 v0, 0x0
 
     .line 3
-    iput-boolean v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isActiveWatermark:Z
-
-    const/16 v1, 0x2329
-
-    .line 4
-    iput v1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->resultCode:I
-
-    .line 5
-    iput-boolean v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isUnity:Z
-
-    .line 6
     iput-boolean v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->paused:Z
 
-    .line 7
+    .line 4
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     iput-object v1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->progressLock:Ljava/lang/Object;
 
-    .line 8
+    .line 5
     iput-boolean v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isProgress:Z
 
-    .line 9
+    .line 6
     iput-object p1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->activity:Landroid/app/Activity;
 
-    .line 10
+    .line 7
     iput-boolean p2, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isUnity:Z
 
-    .line 11
+    .line 8
     iput-boolean p3, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isCrop:Z
 
-    .line 12
+    .line 9
     iput-boolean p4, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isActiveWatermark:Z
 
     return-void
@@ -105,7 +96,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/promotion/share/ScreenShotDialog;)Landroid/widget/ImageView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->captureResultImage:Landroid/widget/ImageView;
 
     return-object p0
@@ -114,7 +104,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/promotion/share/ScreenShotDialog;)Landroid/app/Activity;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->activity:Landroid/app/Activity;
 
     return-object p0
@@ -123,7 +112,6 @@
 .method public static synthetic access$1000(Lcom/kakaogame/promotion/share/ScreenShotDialog;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/promotion/share/ScreenShotDialog;->manageWatermarkView()V
 
     return-void
@@ -132,7 +120,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/promotion/share/ScreenShotDialog;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isUnity:Z
 
     return p0
@@ -141,7 +128,6 @@
 .method public static synthetic access$300(Lcom/kakaogame/promotion/share/ScreenShotDialog;Z)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/promotion/share/ScreenShotDialog;->setProgressSharing(Z)V
 
     return-void
@@ -150,7 +136,6 @@
 .method public static synthetic access$402(Lcom/kakaogame/promotion/share/ScreenShotDialog;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->resultCode:I
 
     return p1
@@ -159,7 +144,6 @@
 .method public static synthetic access$500(Lcom/kakaogame/promotion/share/ScreenShotDialog;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isProgress:Z
 
     return p0
@@ -168,7 +152,6 @@
 .method public static synthetic access$600(Lcom/kakaogame/promotion/share/ScreenShotDialog;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/promotion/share/ScreenShotDialog;->takeScreenCapture()V
 
     return-void
@@ -177,7 +160,6 @@
 .method public static synthetic access$700(Lcom/kakaogame/promotion/share/ScreenShotDialog;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isCrop:Z
 
     return p0
@@ -186,7 +168,6 @@
 .method public static synthetic access$702(Lcom/kakaogame/promotion/share/ScreenShotDialog;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isCrop:Z
 
     return p1
@@ -195,7 +176,6 @@
 .method public static synthetic access$800(Lcom/kakaogame/promotion/share/ScreenShotDialog;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/promotion/share/ScreenShotDialog;->manageCropView()V
 
     return-void
@@ -204,7 +184,6 @@
 .method public static synthetic access$900(Lcom/kakaogame/promotion/share/ScreenShotDialog;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isActiveWatermark:Z
 
     return p0
@@ -213,7 +192,6 @@
 .method public static synthetic access$902(Lcom/kakaogame/promotion/share/ScreenShotDialog;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isActiveWatermark:Z
 
     return p1
@@ -254,7 +232,7 @@
     .line 4
     iget-object p1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {p1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
@@ -361,7 +339,7 @@
 
     invoke-direct {v1, p0}, Lcom/kakaogame/promotion/share/ScreenShotDialog$4;-><init>(Lcom/kakaogame/promotion/share/ScreenShotDialog;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 5
     sget v0, Lcom/kakaogame/R$id;->kakao_game_sdk_screenshot_camera:I
@@ -386,7 +364,7 @@
 
     invoke-direct {v1, p0}, Lcom/kakaogame/promotion/share/ScreenShotDialog$5;-><init>(Lcom/kakaogame/promotion/share/ScreenShotDialog;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 8
     sget v0, Lcom/kakaogame/R$id;->kakao_game_sdk_screenshot_crop:I
@@ -505,7 +483,7 @@
 
     invoke-direct {v1, p0}, Lcom/kakaogame/promotion/share/ScreenShotDialog$6;-><init>(Lcom/kakaogame/promotion/share/ScreenShotDialog;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 21
     iget-object v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->watermarkButton:Landroid/view/View;
@@ -785,7 +763,7 @@
     .line 16
     iget-object v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->watermarkImageCrop:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
@@ -812,7 +790,7 @@
     .line 21
     iget-object v1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->watermarkImageCrop:Landroid/widget/ImageView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_0
 
@@ -865,7 +843,7 @@
     .line 31
     iget-object v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->watermarkImageCrop:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
@@ -892,7 +870,7 @@
     .line 36
     iget-object v1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->watermarkImageCrop:Landroid/widget/ImageView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     :goto_0
     return-void
@@ -934,7 +912,7 @@
 
     iget-object v1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->getFilesDir()Ljava/io/File;
+    invoke-virtual {v1}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
     move-result-object v1
 
@@ -959,7 +937,7 @@
     invoke-virtual {p1, v3, v2, v1}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
     .line 8
-    invoke-virtual {v1}, Ljava/io/FileOutputStream;->flush()V
+    invoke-virtual {v1}, Ljava/io/OutputStream;->flush()V
 
     .line 9
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
@@ -1066,7 +1044,6 @@
 .method public getResultCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->resultCode:I
 
     return v0
@@ -1075,7 +1052,6 @@
 .method public isActiveWatermark()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isActiveWatermark:Z
 
     return v0
@@ -1084,7 +1060,6 @@
 .method public isCrop()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isCrop:Z
 
     return v0
@@ -1187,6 +1162,7 @@
 
     move-result-object v0
 
+    .line 2
     iget v1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->resultCode:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -1199,7 +1175,7 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     iget-boolean v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->isUnity:Z
 
     if-eqz v0, :cond_0
@@ -1216,22 +1192,22 @@
 
     const v0, 0x186a0
 
-    .line 3
+    .line 4
     iput v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->resultCode:I
 
-    .line 4
+    .line 5
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
 
     goto :goto_0
 
-    .line 5
+    .line 6
     :cond_0
     invoke-direct {p0}, Lcom/kakaogame/promotion/share/ScreenShotDialog;->setDialogVisibility()V
 
     :goto_0
     const/4 v0, 0x0
 
-    .line 6
+    .line 7
     iput-boolean v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog;->paused:Z
 
     return-void

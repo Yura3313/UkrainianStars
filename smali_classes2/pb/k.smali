@@ -1,166 +1,156 @@
-.class public Lpb/k;
-.super Lpb/o;
-.source "FitCenterStrategy.java"
+.class public final Lpb/k;
+.super Ljava/lang/Object;
+.source "HandshakeBuilder.java"
+
+
+# static fields
+.field public static final h:[Ljava/lang/String;
+
+.field public static final i:[Ljava/lang/String;
+
+.field public static final j:[Ljava/lang/String;
+
+
+# instance fields
+.field public final a:Ljava/lang/String;
+
+.field public final b:Ljava/lang/String;
+
+.field public c:Ljava/lang/String;
+
+.field public d:Ljava/lang/String;
+
+.field public e:Ljava/util/LinkedHashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public f:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lpb/f0;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public g:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "[",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 5
+
+    const/4 v0, 0x2
+
+    new-array v1, v0, [Ljava/lang/String;
+
+    const-string v2, "Connection"
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    const/4 v2, 0x1
+
+    const-string v4, "Upgrade"
+
+    aput-object v4, v1, v2
 
     .line 1
-    invoke-direct {p0}, Lpb/o;-><init>()V
+    sput-object v1, Lpb/k;->h:[Ljava/lang/String;
+
+    new-array v1, v0, [Ljava/lang/String;
+
+    aput-object v4, v1, v3
+
+    const-string v4, "websocket"
+
+    aput-object v4, v1, v2
+
+    .line 2
+    sput-object v1, Lpb/k;->i:[Ljava/lang/String;
+
+    new-array v0, v0, [Ljava/lang/String;
+
+    const-string v1, "Sec-WebSocket-Version"
+
+    aput-object v1, v0, v3
+
+    const-string v1, "13"
+
+    aput-object v1, v0, v2
+
+    .line 3
+    sput-object v0, Lpb/k;->j:[Ljava/lang/String;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public a(Lob/o;Lob/o;)F
-    .locals 7
+.method public constructor <init>(ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
 
     .line 1
-    iget v0, p1, Lob/o;->g:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    if-lez v0, :cond_2
+    .line 2
+    iput-object p2, p0, Lpb/k;->c:Ljava/lang/String;
 
-    iget v0, p1, Lob/o;->h:I
+    .line 3
+    iput-object p3, p0, Lpb/k;->a:Ljava/lang/String;
 
-    if-gtz v0, :cond_0
+    .line 4
+    iput-object p4, p0, Lpb/k;->b:Ljava/lang/String;
+
+    const/4 p2, 0x3
+
+    new-array p2, p2, [Ljava/lang/Object;
+
+    if-eqz p1, :cond_0
+
+    const-string p1, "wss"
 
     goto :goto_0
 
-    .line 2
     :cond_0
-    invoke-virtual {p1, p2}, Lob/o;->c(Lob/o;)Lob/o;
+    const-string p1, "ws"
 
-    move-result-object v0
-
-    .line 3
-    iget v1, v0, Lob/o;->g:I
-
-    int-to-float v1, v1
-
-    const/high16 v2, 0x3f800000    # 1.0f
-
-    mul-float v1, v1, v2
-
-    iget p1, p1, Lob/o;->g:I
-
-    int-to-float p1, p1
-
-    div-float/2addr v1, p1
-
-    cmpl-float p1, v1, v2
-
-    if-lez p1, :cond_1
-
-    div-float p1, v2, v1
-
-    float-to-double v3, p1
-
-    const-wide v5, 0x3ff199999999999aL    # 1.1
-
-    .line 4
-    invoke-static {v3, v4, v5, v6}, Ljava/lang/Math;->pow(DD)D
-
-    move-result-wide v3
-
-    double-to-float v1, v3
-
-    .line 5
-    :cond_1
-    iget p1, p2, Lob/o;->g:I
-
-    int-to-float p1, p1
-
-    mul-float p1, p1, v2
-
-    iget v3, v0, Lob/o;->g:I
-
-    int-to-float v3, v3
-
-    div-float/2addr p1, v3
-
-    iget p2, p2, Lob/o;->h:I
-
-    int-to-float p2, p2
-
-    mul-float p2, p2, v2
-
-    iget v0, v0, Lob/o;->h:I
-
-    int-to-float v0, v0
-
-    div-float/2addr p2, v0
-
-    mul-float p2, p2, p1
-
-    div-float/2addr v2, p2
-
-    div-float/2addr v2, p2
-
-    div-float/2addr v2, p2
-
-    mul-float v2, v2, v1
-
-    return v2
-
-    :cond_2
     :goto_0
-    const/4 p1, 0x0
+    const/4 v0, 0x0
 
-    return p1
-.end method
+    aput-object p1, p2, v0
 
-.method public b(Lob/o;Lob/o;)Landroid/graphics/Rect;
-    .locals 5
+    const/4 p1, 0x1
 
-    .line 1
-    invoke-virtual {p1, p2}, Lob/o;->c(Lob/o;)Lob/o;
+    aput-object p3, p2, p1
 
-    move-result-object v0
+    const/4 p1, 0x2
 
-    .line 2
-    invoke-virtual {p1}, Lob/o;->toString()Ljava/lang/String;
+    aput-object p4, p2, p1
 
-    invoke-virtual {v0}, Lob/o;->toString()Ljava/lang/String;
-
-    invoke-virtual {p2}, Lob/o;->toString()Ljava/lang/String;
-
-    .line 3
-    iget p1, v0, Lob/o;->g:I
-
-    iget v1, p2, Lob/o;->g:I
-
-    sub-int/2addr p1, v1
-
-    div-int/lit8 p1, p1, 0x2
-
-    .line 4
-    iget v1, v0, Lob/o;->h:I
-
-    iget p2, p2, Lob/o;->h:I
-
-    sub-int/2addr v1, p2
-
-    div-int/lit8 v1, v1, 0x2
+    const-string p1, "%s://%s%s"
 
     .line 5
-    new-instance p2, Landroid/graphics/Rect;
+    invoke-static {p1, p2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    neg-int v2, p1
+    move-result-object p1
 
-    neg-int v3, v1
+    invoke-static {p1}, Ljava/net/URI;->create(Ljava/lang/String;)Ljava/net/URI;
 
-    iget v4, v0, Lob/o;->g:I
-
-    sub-int/2addr v4, p1
-
-    iget p1, v0, Lob/o;->h:I
-
-    sub-int/2addr p1, v1
-
-    invoke-direct {p2, v2, v3, v4, p1}, Landroid/graphics/Rect;-><init>(IIII)V
-
-    return-object p2
+    return-void
 .end method

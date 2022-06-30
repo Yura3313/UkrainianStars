@@ -1,10 +1,10 @@
-.class public Lv0/s;
+.class public final Lv0/s;
 .super Ljava/lang/Object;
 .source "TransitionValues.java"
 
 
 # instance fields
-.field public final a:Ljava/util/Map;
+.field public final a:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lv0/s;->a:Ljava/util/Map;
+    iput-object v0, p0, Lv0/s;->a:Ljava/util/HashMap;
 
     .line 3
     new-instance v0, Ljava/util/ArrayList;
@@ -65,7 +65,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lv0/s;->a:Ljava/util/Map;
+    iput-object v0, p0, Lv0/s;->a:Ljava/util/HashMap;
 
     .line 6
     new-instance v0, Ljava/util/ArrayList;
@@ -82,7 +82,7 @@
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
     .line 1
@@ -100,9 +100,9 @@
     if-ne v0, v1, :cond_0
 
     .line 3
-    iget-object v0, p0, Lv0/s;->a:Ljava/util/Map;
+    iget-object v0, p0, Lv0/s;->a:Ljava/util/HashMap;
 
-    iget-object p1, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object p1, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->equals(Ljava/lang/Object;)Z
 
@@ -120,10 +120,9 @@
     return p1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lv0/s;->b:Landroid/view/View;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -132,7 +131,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, p0, Lv0/s;->a:Ljava/util/HashMap;
 
     invoke-interface {v1}, Ljava/util/Map;->hashCode()I
 
@@ -143,7 +142,7 @@
     return v1
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 5
 
     const-string v0, "TransitionValues@"
@@ -153,6 +152,7 @@
 
     move-result-object v0
 
+    .line 2
     invoke-virtual {p0}, Lv0/s;->hashCode()I
 
     move-result v1
@@ -173,11 +173,12 @@
 
     const-string v1, "    view = "
 
-    .line 2
+    .line 3
     invoke-static {v0, v1}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 4
     iget-object v1, p0, Lv0/s;->b:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -192,13 +193,13 @@
 
     const-string v2, "    values:"
 
-    .line 3
-    invoke-static {v0, v2}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 5
+    invoke-static {v0, v2}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4
-    iget-object v2, p0, Lv0/s;->a:Ljava/util/Map;
+    .line 6
+    iget-object v2, p0, Lv0/s;->a:Ljava/util/HashMap;
 
     invoke-interface {v2}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -221,7 +222,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    .line 5
+    .line 7
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -238,7 +239,7 @@
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lv0/s;->a:Ljava/util/Map;
+    iget-object v0, p0, Lv0/s;->a:Ljava/util/HashMap;
 
     invoke-interface {v0, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

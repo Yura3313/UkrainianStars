@@ -377,7 +377,6 @@
 .method public static getSdkInt()I
     .locals 1
 
-    .line 1
     :try_start_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
     :try_end_0
@@ -528,7 +527,7 @@
     move-result-object v0
 
     .line 2
-    invoke-virtual {v0, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 3
     new-instance v1, Lokhttp3/internal/platform/AndroidPlatform$AndroidTrustRootIndex;
@@ -659,7 +658,7 @@
     invoke-direct {p2, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     .line 4
-    invoke-virtual {p2, p1}, Ljava/io/IOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {p2, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 5
     throw p2
@@ -677,7 +676,7 @@
     invoke-direct {p2, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     .line 8
-    invoke-virtual {p2, p1}, Ljava/io/IOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {p2, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 9
     throw p2
@@ -824,7 +823,6 @@
 .method public getStackTraceForCloseable(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/platform/AndroidPlatform;->closeGuard:Lokhttp3/internal/platform/AndroidPlatform$CloseGuard;
 
     invoke-virtual {v0, p1}, Lokhttp3/internal/platform/AndroidPlatform$CloseGuard;->createAndOpen(Ljava/lang/String;)Ljava/lang/Object;

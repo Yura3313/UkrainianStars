@@ -1757,6 +1757,7 @@
 
     move-result-object v0
 
+    .line 3
     invoke-virtual {p0, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
@@ -1769,7 +1770,7 @@
 
     return-object p0
 
-    .line 3
+    .line 4
     :cond_0
     invoke-virtual {p0, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -1777,11 +1778,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 4
+    .line 5
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 6
     invoke-virtual {p0, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
@@ -1801,7 +1803,6 @@
 .method public javaName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/CipherSuite;->javaName:Ljava/lang/String;
 
     return-object v0
@@ -1810,7 +1811,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/CipherSuite;->javaName:Ljava/lang/String;
 
     return-object v0

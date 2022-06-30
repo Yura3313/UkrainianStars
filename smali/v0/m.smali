@@ -1,4 +1,4 @@
-.class public Lv0/m;
+.class public final Lv0/m;
 .super Ljava/lang/Object;
 .source "RectEvaluator.java"
 
@@ -45,7 +45,7 @@
 
 
 # virtual methods
-.method public evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
     .line 1

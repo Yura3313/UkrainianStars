@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/widget/a$c;
+.class public final Landroidx/constraintlayout/widget/a$c;
 .super Ljava/lang/Object;
 .source "ConstraintSet.java"
 
@@ -140,7 +140,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/constraintlayout/widget/a$c;)V
+.method public final a(Landroidx/constraintlayout/widget/a$c;)V
     .locals 1
 
     .line 1
@@ -181,7 +181,7 @@
     return-void
 .end method
 
-.method public b(Landroid/content/Context;Landroid/util/AttributeSet;)V
+.method public final b(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
 
     .line 1
@@ -206,7 +206,7 @@
     const/4 v1, 0x0
 
     :goto_0
-    if-ge v1, p2, :cond_2
+    if-ge v1, p2, :cond_1
 
     .line 4
     invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getIndex(I)I
@@ -240,29 +240,17 @@
     :pswitch_1
     iget v3, p0, Landroidx/constraintlayout/widget/a$c;->b:I
 
-    sget-object v4, Landroidx/constraintlayout/widget/a;->d:[I
-
     .line 8
-    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    invoke-static {p1, v2, v3}, Landroidx/constraintlayout/widget/a;->j(Landroid/content/res/TypedArray;II)I
 
-    move-result v3
-
-    const/4 v4, -0x1
-
-    if-ne v3, v4, :cond_0
+    move-result v2
 
     .line 9
-    invoke-virtual {p1, v2, v4}, Landroid/content/res/TypedArray;->getInt(II)I
-
-    move-result v3
-
-    .line 10
-    :cond_0
-    iput v3, p0, Landroidx/constraintlayout/widget/a$c;->b:I
+    iput v2, p0, Landroidx/constraintlayout/widget/a$c;->b:I
 
     goto :goto_1
 
-    .line 11
+    .line 10
     :pswitch_2
     invoke-virtual {p1, v2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -272,20 +260,20 @@
 
     goto :goto_1
 
-    .line 12
+    .line 11
     :pswitch_3
     invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
 
     move-result-object v3
 
-    .line 13
+    .line 12
     iget v3, v3, Landroid/util/TypedValue;->type:I
 
     const/4 v4, 0x3
 
-    if-ne v3, v4, :cond_1
+    if-ne v3, v4, :cond_0
 
-    .line 14
+    .line 13
     invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v2
@@ -294,8 +282,8 @@
 
     goto :goto_1
 
-    .line 15
-    :cond_1
+    .line 14
+    :cond_0
     sget-object v3, Ln/c;->c:[Ljava/lang/String;
 
     invoke-virtual {p1, v2, v0}, Landroid/content/res/TypedArray;->getInteger(II)I
@@ -308,7 +296,7 @@
 
     goto :goto_1
 
-    .line 16
+    .line 15
     :pswitch_4
     iget v3, p0, Landroidx/constraintlayout/widget/a$c;->d:I
 
@@ -320,7 +308,7 @@
 
     goto :goto_1
 
-    .line 17
+    .line 16
     :pswitch_5
     iget v3, p0, Landroidx/constraintlayout/widget/a$c;->g:F
 
@@ -335,11 +323,13 @@
 
     goto :goto_0
 
-    .line 18
-    :cond_2
+    .line 17
+    :cond_1
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1

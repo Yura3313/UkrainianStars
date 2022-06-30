@@ -430,7 +430,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    invoke-virtual {p2}, Ljava/net/MalformedURLException;->getMessage()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p2
 
@@ -501,7 +501,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p2, p0}, Ljava/text/SimpleDateFormat;->format(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p2, p0}, Ljava/text/Format;->format(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -576,12 +576,12 @@
 
     const-string v0, "Authorization"
 
-    invoke-virtual {p1, v0, p2}, Ljavax/net/ssl/HttpsURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, p2}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     const-string p2, "GET"
 
-    invoke-virtual {p1, p2}, Ljavax/net/ssl/HttpsURLConnection;->setRequestMethod(Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
     invoke-static {p1, p0}, Lcom/adjust/sdk/UtilNetworking;->readHttpResponse(Ljavax/net/ssl/HttpsURLConnection;Lcom/adjust/sdk/ActivityPackage;)Lcom/adjust/sdk/ResponseData;
 
@@ -647,26 +647,26 @@
 
     const-string v3, "Authorization"
 
-    invoke-virtual {p0, v3, v2}, Ljavax/net/ssl/HttpsURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v3, v2}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     const-string v2, "POST"
 
-    invoke-virtual {p0, v2}, Ljavax/net/ssl/HttpsURLConnection;->setRequestMethod(Ljava/lang/String;)V
+    invoke-virtual {p0, v2}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v2}, Ljavax/net/ssl/HttpsURLConnection;->setUseCaches(Z)V
+    invoke-virtual {p0, v2}, Ljava/net/URLConnection;->setUseCaches(Z)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0, v2}, Ljavax/net/ssl/HttpsURLConnection;->setDoInput(Z)V
+    invoke-virtual {p0, v2}, Ljava/net/URLConnection;->setDoInput(Z)V
 
-    invoke-virtual {p0, v2}, Ljavax/net/ssl/HttpsURLConnection;->setDoOutput(Z)V
+    invoke-virtual {p0, v2}, Ljava/net/URLConnection;->setDoOutput(Z)V
 
     new-instance v2, Ljava/io/DataOutputStream;
 
-    invoke-virtual {p0}, Ljavax/net/ssl/HttpsURLConnection;->getOutputStream()Ljava/io/OutputStream;
+    invoke-virtual {p0}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v3
 
@@ -692,7 +692,7 @@
     :try_start_2
     invoke-virtual {v2}, Ljava/io/DataOutputStream;->flush()V
 
-    invoke-virtual {v2}, Ljava/io/DataOutputStream;->close()V
+    invoke-virtual {v2}, Ljava/io/OutputStream;->close()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -733,7 +733,7 @@
     :try_start_4
     invoke-virtual {v0}, Ljava/io/DataOutputStream;->flush()V
 
-    invoke-virtual {v0}, Ljava/io/DataOutputStream;->close()V
+    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
@@ -1036,7 +1036,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Ljava/text/SimpleDateFormat;->format(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Ljava/text/Format;->format(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -1209,10 +1209,12 @@
 
     if-eqz v1, :cond_2
 
+    .line 1
     invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
+    .line 2
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -1221,14 +1223,17 @@
 
     const-string v2, " "
 
-    invoke-static {p1, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {p1, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 4
     invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
+    .line 5
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -1375,9 +1380,9 @@
     const/4 v3, 0x0
 
     :try_start_0
-    invoke-virtual {p0}, Ljavax/net/ssl/HttpsURLConnection;->connect()V
+    invoke-virtual {p0}, Ljava/net/URLConnection;->connect()V
 
-    invoke-virtual {p0}, Ljavax/net/ssl/HttpsURLConnection;->getResponseCode()I
+    invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result v4
 
@@ -1393,14 +1398,14 @@
 
     if-lt v5, v6, :cond_0
 
-    invoke-virtual {p0}, Ljavax/net/ssl/HttpsURLConnection;->getErrorStream()Ljava/io/InputStream;
+    invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object v5
 
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p0}, Ljavax/net/ssl/HttpsURLConnection;->getInputStream()Ljava/io/InputStream;
+    invoke-virtual {p0}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v5
 
@@ -1428,7 +1433,7 @@
     goto :goto_1
 
     :cond_1
-    invoke-virtual {p0}, Ljavax/net/ssl/HttpsURLConnection;->disconnect()V
+    invoke-virtual {p0}, Ljava/net/HttpURLConnection;->disconnect()V
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -1486,7 +1491,7 @@
 
     new-array v5, v2, [Ljava/lang/Object;
 
-    invoke-virtual {p0}, Lorg/json/JSONException;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1608,7 +1613,7 @@
     :try_start_2
     new-array v2, v2, [Ljava/lang/Object;
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1623,7 +1628,7 @@
     :goto_4
     if-eqz p0, :cond_9
 
-    invoke-virtual {p0}, Ljavax/net/ssl/HttpsURLConnection;->disconnect()V
+    invoke-virtual {p0}, Ljava/net/HttpURLConnection;->disconnect()V
 
     :cond_9
     goto :goto_6

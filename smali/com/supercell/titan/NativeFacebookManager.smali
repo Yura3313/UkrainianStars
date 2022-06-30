@@ -15,7 +15,6 @@
 
     const-string v0, "content://com.facebook.katana.provider.AttributionIdProvider"
 
-    .line 1
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
@@ -28,7 +27,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
 .method public static createInstance(Lcom/supercell/titan/GameApp;)V
     .locals 0
 
-    .line 1
     new-instance p0, Lcom/supercell/titan/NativeFacebookManager;
 
     invoke-direct {p0}, Lcom/supercell/titan/NativeFacebookManager;-><init>()V
@@ -56,7 +53,6 @@
 .method public static getInstance()Lcom/supercell/titan/NativeFacebookManager;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/NativeFacebookManager;->a:Lcom/supercell/titan/NativeFacebookManager;
 
     return-object v0
@@ -124,7 +120,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 

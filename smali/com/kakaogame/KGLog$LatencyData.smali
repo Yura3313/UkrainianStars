@@ -40,7 +40,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -78,7 +77,6 @@
 .method public static synthetic access$500(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/kakaogame/KGLog$LatencyData;->createLatencyData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -87,7 +85,6 @@
 .method public static synthetic access$600(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/KGLog$LatencyData;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/kakaogame/KGLog$LatencyData;->getLatencyData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/KGLog$LatencyData;
 
     move-result-object p0
@@ -98,7 +95,6 @@
 .method public static synthetic access$700(Lcom/kakaogame/KGLog$LatencyData;)J
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/KGLog$LatencyData;->stop()J
 
     move-result-wide v0

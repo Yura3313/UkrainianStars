@@ -1,103 +1,108 @@
 .class public final Lzd/d$i;
-.super Ljava/lang/Object;
-.source "-ViewPumpLayoutInflater.kt"
+.super Lse/h;
+.source "YoungPlayerRegisterEnterEmailPageFragment.kt"
 
 # interfaces
-.implements Landroid/view/LayoutInflater$Factory;
+.implements Lre/p;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lzd/d;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lzd/d;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = "i"
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/p<",
+        "Landroid/widget/TextView;",
+        "Ljava/lang/CharSequence;",
+        "Lie/h;",
+        ">;"
+    }
 .end annotation
 
 
-# instance fields
-.field public final g:Lyd/a;
+# static fields
+.field public static final f:Lzd/d$i;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/LayoutInflater$Factory;)V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lzd/d$i;
 
-    .line 2
-    new-instance v0, Lzd/d$j;
+    invoke-direct {v0}, Lzd/d$i;-><init>()V
 
-    invoke-direct {v0, p1}, Lzd/d$j;-><init>(Landroid/view/LayoutInflater$Factory;)V
+    sput-object v0, Lzd/d$i;->f:Lzd/d$i;
 
-    iput-object v0, p0, Lzd/d$i;->g:Lyd/a;
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onCreateView(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
-    .locals 9
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    check-cast p1, Landroid/widget/TextView;
+
+    check-cast p2, Ljava/lang/CharSequence;
+
+    const-string v0, "textView"
+
+    .line 2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "value"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
+
+    move-result p2
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_1
+    if-lez p2, :cond_0
 
-    if-eqz p2, :cond_0
+    const/4 p2, 0x1
 
-    .line 1
-    sget-object v0, Lyd/e;->g:Lyd/e;
-
-    invoke-static {}, Lyd/e;->a()Lyd/e;
-
-    move-result-object v0
-
-    .line 2
-    new-instance v8, Lyd/b;
-
-    const/4 v5, 0x0
-
-    .line 3
-    iget-object v6, p0, Lzd/d$i;->g:Lyd/a;
-
-    const/16 v7, 0x8
-
-    move-object v1, v8
-
-    move-object v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    .line 4
-    invoke-direct/range {v1 .. v7}, Lyd/b;-><init>(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;Landroid/view/View;Lyd/a;I)V
-
-    invoke-virtual {v0, v8}, Lyd/e;->b(Lyd/b;)Lyd/c;
-
-    move-result-object p1
-
-    .line 5
-    iget-object p1, p1, Lyd/c;->a:Landroid/view/View;
-
-    return-object p1
+    goto :goto_0
 
     :cond_0
-    const-string p1, "context"
+    const/4 p2, 0x0
 
-    .line 6
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    :goto_0
+    if-eqz p2, :cond_1
 
-    throw v0
+    goto :goto_1
 
     :cond_1
-    const-string p1, "name"
+    const/16 v0, 0x8
 
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    :goto_1
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    throw v0
+    .line 4
+    sget-object p1, Lie/h;->a:Lie/h;
+
+    return-object p1
 .end method

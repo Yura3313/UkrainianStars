@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lb2/e;
+.implements Lc2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lb2/e<",
+        "Lc2/e<",
         "Lcom/google/android/gms/games/multiplayer/Participant;",
         ">;"
     }
@@ -20,22 +20,13 @@
 
 
 # virtual methods
-.method public abstract C1()Ljava/lang/String;
+.method public abstract L1()Ljava/lang/String;
 .end method
 
-.method public abstract K()Ljava/lang/String;
+.method public abstract Y()Ljava/lang/String;
 .end method
 
-.method public abstract U()Z
-.end method
-
-.method public abstract a()Landroid/net/Uri;
-.end method
-
-.method public abstract a1()I
-.end method
-
-.method public abstract e1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
+.method public abstract c()Landroid/net/Uri;
 .end method
 
 .method public abstract getDisplayName()Ljava/lang/String;
@@ -60,8 +51,17 @@
 .method public abstract getStatus()I
 .end method
 
-.method public abstract h()Landroid/net/Uri;
+.method public abstract h1()I
 .end method
 
-.method public abstract l()Lcom/google/android/gms/games/Player;
+.method public abstract i()Landroid/net/Uri;
+.end method
+
+.method public abstract i0()Z
+.end method
+
+.method public abstract l1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
+.end method
+
+.method public abstract m()Lcom/google/android/gms/games/Player;
 .end method

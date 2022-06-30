@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final k:I
+.field public final j:I
 
-.field public final l:I
+.field public final k:I
 
 
 # direct methods
@@ -32,13 +32,13 @@
     .line 2
     array-length p1, p1
 
-    invoke-static {p2, v0, p1}, Lcom/google/protobuf/i;->d(III)I
+    invoke-static {p2, v0, p1}, Lcom/google/protobuf/i;->e(III)I
 
     .line 3
-    iput p2, p0, Lcom/google/protobuf/i$d;->k:I
+    iput p2, p0, Lcom/google/protobuf/i$d;->j:I
 
     .line 4
-    iput p3, p0, Lcom/google/protobuf/i$d;->l:I
+    iput p3, p0, Lcom/google/protobuf/i$d;->k:I
 
     return-void
 .end method
@@ -51,7 +51,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/io/InvalidObjectException;
 
     const-string v0, "BoundedByteStream instances are not to be serialized directly"
@@ -63,19 +62,19 @@
 
 
 # virtual methods
-.method public a(I)B
+.method public final b(I)B
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/protobuf/i$d;->l:I
+    iget v0, p0, Lcom/google/protobuf/i$d;->k:I
 
     .line 2
     invoke-static {p1, v0}, Lcom/google/protobuf/i;->c(II)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/i$h;->j:[B
+    iget-object v0, p0, Lcom/google/protobuf/i$h;->i:[B
 
-    iget v1, p0, Lcom/google/protobuf/i$d;->k:I
+    iget v1, p0, Lcom/google/protobuf/i$d;->j:I
 
     add-int/2addr v1, p1
 
@@ -84,14 +83,14 @@
     return p1
 .end method
 
-.method public g([BIII)V
+.method public final h([BIII)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/i$h;->j:[B
+    iget-object v0, p0, Lcom/google/protobuf/i$h;->i:[B
 
     .line 2
-    iget v1, p0, Lcom/google/protobuf/i$d;->k:I
+    iget v1, p0, Lcom/google/protobuf/i$d;->j:I
 
     add-int/2addr v1, p2
 
@@ -101,13 +100,12 @@
     return-void
 .end method
 
-.method public h(I)B
+.method public final i(I)B
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Lcom/google/protobuf/i$h;->j:[B
+    iget-object v0, p0, Lcom/google/protobuf/i$h;->i:[B
 
-    iget v1, p0, Lcom/google/protobuf/i$d;->k:I
+    iget v1, p0, Lcom/google/protobuf/i$d;->j:I
 
     add-int/2addr v1, p1
 
@@ -116,20 +114,18 @@
     return p1
 .end method
 
-.method public size()I
+.method public final size()I
     .locals 1
 
-    .line 1
-    iget v0, p0, Lcom/google/protobuf/i$d;->l:I
+    iget v0, p0, Lcom/google/protobuf/i$d;->k:I
 
     return v0
 .end method
 
-.method public v()I
+.method public final v()I
     .locals 1
 
-    .line 1
-    iget v0, p0, Lcom/google/protobuf/i$d;->k:I
+    iget v0, p0, Lcom/google/protobuf/i$d;->j:I
 
     return v0
 .end method

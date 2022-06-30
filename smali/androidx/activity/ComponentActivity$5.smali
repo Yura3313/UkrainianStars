@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroidx/activity/ComponentActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/activity/ComponentActivity$5;->a:Landroidx/activity/ComponentActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
+.method public final a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
     .locals 0
 
     .line 1
@@ -50,17 +49,7 @@
 
     move-result-object p1
 
-    check-cast p1, Landroidx/lifecycle/k;
-
-    const-string p2, "removeObserver"
-
-    .line 3
-    invoke-virtual {p1, p2}, Landroidx/lifecycle/k;->d(Ljava/lang/String;)V
-
-    .line 4
-    iget-object p1, p1, Landroidx/lifecycle/k;->a:Li/a;
-
-    invoke-virtual {p1, p0}, Li/a;->f(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Landroidx/lifecycle/f;->b(Landroidx/lifecycle/i;)V
 
     return-void
 .end method

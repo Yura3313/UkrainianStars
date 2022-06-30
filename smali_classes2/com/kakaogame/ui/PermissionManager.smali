@@ -25,7 +25,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +33,6 @@
 .method public static synthetic access$000(Landroid/app/AlertDialog$Builder;Lcom/kakaogame/KGApplication$KGPermissionTheme;Landroid/app/Activity;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/kakaogame/ui/PermissionManager;->showPermissionAlertDialog(Landroid/app/AlertDialog$Builder;Lcom/kakaogame/KGApplication$KGPermissionTheme;Landroid/app/Activity;Lcom/kakaogame/util/MutexLock;)V
 
     return-void
@@ -43,7 +41,6 @@
 .method public static synthetic access$100([I)Z
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/ui/PermissionManager;->checkGrantResult([I)Z
 
     move-result p0
@@ -612,7 +609,7 @@
 
     .line 10
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -621,7 +618,7 @@
     const/16 p1, 0xfa1
 
     .line 11
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -635,14 +632,14 @@
     move-exception p0
 
     .line 12
-    invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {v1, p1, p0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 13
-    invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -813,7 +810,7 @@
     .line 9
     :goto_1
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -822,7 +819,7 @@
     const/16 p1, 0xfa1
 
     .line 10
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -834,14 +831,14 @@
 
     .line 11
     :goto_2
-    invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {v1, p1, p0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 12
-    invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1022,7 +1019,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
 
@@ -1134,7 +1131,7 @@
     move-exception p0
 
     .line 8
-    invoke-virtual {p0}, Lorg/json/JSONException;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_1
     const-string p0, "permissions desc count: "
@@ -1144,6 +1141,7 @@
 
     move-result-object p0
 
+    .line 10
     invoke-virtual {v1}, Ljava/util/HashMap;->size()I
 
     move-result v2
@@ -1165,7 +1163,7 @@
     .line 1
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1220,7 +1218,7 @@
     if-nez v0, :cond_1
 
     .line 9
-    invoke-static {p0, p1}, Lu/a;->i(Landroid/app/Activity;Ljava/lang/String;)Z
+    invoke-static {p0, p1}, Lu/a;->n(Landroid/app/Activity;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1343,7 +1341,7 @@
     if-nez v2, :cond_0
 
     .line 4
-    invoke-static {p0, v0}, Lu/a;->i(Landroid/app/Activity;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Lu/a;->n(Landroid/app/Activity;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -1538,7 +1536,7 @@
 
     .line 10
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1547,7 +1545,7 @@
     const/16 p1, 0xfa1
 
     .line 11
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1561,14 +1559,14 @@
     move-exception p0
 
     .line 12
-    invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {v1, p1, p0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 13
-    invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1855,7 +1853,7 @@
     .line 9
     :goto_1
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1864,7 +1862,7 @@
     const/16 p1, 0xfa1
 
     .line 10
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1876,14 +1874,14 @@
 
     .line 11
     :goto_2
-    invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {v1, p1, p0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 12
-    invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -2167,7 +2165,6 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {p0, v1, p1, v0, v0}, Lcom/kakaogame/ui/PermissionManager;->requestPermissions(Landroid/app/Activity;Ljava/util/List;Ljava/util/List;ZZ)Z
 
     move-result p0
@@ -2217,7 +2214,7 @@
 
     invoke-direct {v1, p0, p1}, Lcom/kakaogame/ui/PermissionManager$3;-><init>(Landroid/app/AlertDialog;Lcom/kakaogame/KGApplication$KGPermissionTheme;)V
 
-    invoke-virtual {p0, v1}, Landroid/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
+    invoke-virtual {p0, v1}, Landroid/app/Dialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
     .line 5
     :cond_0
@@ -2228,7 +2225,7 @@
     .line 6
     sget-object v2, Lcom/kakaogame/KGApplication$KGThemeColor;->CUSTOM:Lcom/kakaogame/KGApplication$KGThemeColor;
 
-    invoke-virtual {v1, v2}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -2242,7 +2239,7 @@
     if-eqz v1, :cond_1
 
     .line 8
-    invoke-virtual {p0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -2275,7 +2272,7 @@
     invoke-virtual {v1, p1, v2}, Landroid/graphics/drawable/Drawable;->setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
 
     .line 12
-    invoke-virtual {p0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object p1
 
@@ -2287,7 +2284,7 @@
     :cond_2
     sget-object p1, Lcom/kakaogame/KGApplication$KGThemeColor;->GRAY:Lcom/kakaogame/KGApplication$KGThemeColor;
 
-    invoke-virtual {v1, p1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -2306,7 +2303,7 @@
     :cond_3
     sget-object p1, Lcom/kakaogame/KGApplication$KGThemeColor;->BLACK:Lcom/kakaogame/KGApplication$KGThemeColor;
 
-    invoke-virtual {v1, p1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -2338,7 +2335,7 @@
 
     .line 19
     :goto_0
-    invoke-virtual {p0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -2351,10 +2348,10 @@
 
     invoke-direct {p1, v0, p2, p3}, Lcom/kakaogame/ui/PermissionManager$4;-><init>(ZLandroid/app/Activity;Lcom/kakaogame/util/MutexLock;)V
 
-    invoke-virtual {p0, p1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {p0, p1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 21
-    invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
+    invoke-virtual {p0}, Landroid/app/Dialog;->show()V
 
     return-void
 .end method
@@ -2496,6 +2493,7 @@
     :cond_1
     const-string v4, "false"
 
+    .line 5
     :goto_0
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2511,7 +2509,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 5
+    .line 6
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result p3
@@ -2520,13 +2518,13 @@
 
     goto :goto_1
 
-    .line 6
+    .line 7
     :cond_2
     invoke-static {p0, p1}, Lcom/kakaogame/ui/PermissionManager;->getNotGrantedPermissions(Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
 
     move-result-object p3
 
-    .line 7
+    .line 8
     invoke-interface {p3}, Ljava/util/List;->isEmpty()Z
 
     move-result p3
@@ -2535,30 +2533,30 @@
 
     const-string p0, "all required permission is granted."
 
-    .line 8
+    .line 9
     invoke-static {v2, p0}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_3
     :goto_1
     return v1
 
-    .line 9
+    .line 10
     :cond_4
     invoke-static {p0, p1}, Lcom/kakaogame/ui/PermissionManager;->getNotGrantedPermissions(Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
-    .line 10
+    .line 11
     invoke-static {p0, p2}, Lcom/kakaogame/ui/PermissionManager;->getNotGrantedPermissions(Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
 
     move-result-object p2
 
-    .line 11
+    .line 12
     new-instance p3, Ljava/util/ArrayList;
 
     invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 12
+    .line 13
     invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
@@ -2577,19 +2575,19 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 13
+    .line 14
     invoke-static {p0, v0}, Lcom/kakaogame/ui/PermissionManager;->isForeverDenied(Landroid/app/Activity;Ljava/lang/String;)Z
 
     move-result v3
 
     if-nez v3, :cond_5
 
-    .line 14
+    .line 15
     invoke-virtual {p3, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 15
+    .line 16
     :cond_6
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
@@ -2597,7 +2595,7 @@
 
     if-eqz p2, :cond_7
 
-    .line 16
+    .line 17
     invoke-virtual {p3}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result p2
@@ -2606,9 +2604,9 @@
 
     return v1
 
-    .line 17
+    .line 18
     :cond_7
-    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -2620,7 +2618,7 @@
 
     check-cast p2, Landroid/view/LayoutInflater;
 
-    .line 18
+    .line 19
     sget v0, Lcom/kakaogame/R$layout;->zinny_sdk_permission_noti:I
 
     const/4 v1, 0x0
@@ -2629,7 +2627,7 @@
 
     move-result-object p2
 
-    .line 19
+    .line 20
     sget v0, Lcom/kakaogame/R$id;->zinny_sdk_permission_noti_icon:I
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2638,7 +2636,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 20
+    .line 21
     sget v1, Lcom/kakaogame/R$id;->zinny_sdk_permission_noti_title:I
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2647,7 +2645,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 21
+    .line 22
     sget v3, Lcom/kakaogame/R$id;->zinny_sdk_permission_noti_scrollview:I
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2656,7 +2654,7 @@
 
     check-cast v3, Landroid/widget/ScrollView;
 
-    .line 22
+    .line 23
     sget v4, Lcom/kakaogame/R$id;->zinny_sdk_permission_noti_content:I
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2665,7 +2663,7 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    .line 23
+    .line 24
     invoke-virtual {p4}, Lcom/kakaogame/KGApplication$KGPermissionTheme;->getIconResource()Landroid/graphics/drawable/Drawable;
 
     move-result-object v5
@@ -2674,16 +2672,16 @@
 
     const/16 v5, 0x8
 
-    .line 24
+    .line 25
     invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_3
 
-    .line 25
+    .line 26
     :cond_8
     invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 26
+    .line 27
     :goto_3
     invoke-virtual {p4}, Lcom/kakaogame/KGApplication$KGPermissionTheme;->getTitleTextColor()I
 
@@ -2693,10 +2691,10 @@
 
     if-eq v0, v5, :cond_9
 
-    .line 27
+    .line 28
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 28
+    .line 29
     :cond_9
     invoke-virtual {p4}, Lcom/kakaogame/KGApplication$KGPermissionTheme;->getContentTextColor()I
 
@@ -2704,21 +2702,21 @@
 
     if-eq v0, v5, :cond_a
 
-    .line 29
+    .line 30
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 30
+    .line 31
     :cond_a
     invoke-static {p0}, Lcom/kakaogame/ui/DialogManager;->createAlertDialogBuilder(Landroid/app/Activity;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 31
+    .line 32
     invoke-virtual {v0, p2}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
     const/4 p2, 0x0
 
-    .line 32
+    .line 33
     :try_start_0
     invoke-static {p0}, Lcom/kakaogame/ui/PermissionManager;->getPermissionDescriptions(Landroid/app/Activity;)Lorg/json/JSONObject;
 
@@ -2726,7 +2724,7 @@
 
     const-string v6, "title"
 
-    .line 33
+    .line 34
     invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
@@ -2735,31 +2733,31 @@
 
     const-string v1, "prefix_essential"
 
-    .line 34
+    .line 35
     invoke-virtual {v5, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     const-string v6, "prefix_optional"
 
-    .line 35
+    .line 36
     invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
     const-string v7, "summary"
 
-    .line 36
+    .line 37
     invoke-virtual {v5, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 37
+    .line 38
     invoke-static {v5, p1, p3, v1, v6}, Lcom/kakaogame/ui/PermissionManager;->appendPermissionDescBody(Lorg/json/JSONObject;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 38
+    .line 39
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -2776,7 +2774,7 @@
 
     invoke-static {v2, v5}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 39
+    .line 40
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -2791,15 +2789,15 @@
 
     invoke-virtual {v4, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 40
+    .line 41
     invoke-virtual {v3}, Landroid/widget/ScrollView;->requestLayout()V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 41
+    .line 42
     invoke-virtual {v0, p2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    .line 42
+    .line 43
     sget v1, Lcom/kakaogame/R$string;->zinny_sdk_common_button_ok:I
 
     new-instance v2, Lcom/kakaogame/ui/PermissionManager$1;
@@ -2808,22 +2806,22 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 43
+    .line 44
     invoke-static {}, Lcom/kakaogame/util/MutexLock;->createLock()Lcom/kakaogame/util/MutexLock;
 
     move-result-object v1
 
-    .line 44
+    .line 45
     new-instance v2, Lcom/kakaogame/ui/PermissionManager$2;
 
     invoke-direct {v2, v0, p4, p0, v1}, Lcom/kakaogame/ui/PermissionManager$2;-><init>(Landroid/app/AlertDialog$Builder;Lcom/kakaogame/KGApplication$KGPermissionTheme;Landroid/app/Activity;Lcom/kakaogame/util/MutexLock;)V
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 45
+    .line 46
     invoke-virtual {v1}, Lcom/kakaogame/util/MutexLock;->lock()V
 
-    .line 46
+    .line 47
     invoke-static {p0, p1, p3, p2, p2}, Lcom/kakaogame/ui/PermissionManager;->requestPermissions(Landroid/app/Activity;Ljava/util/List;Ljava/util/List;ZZ)Z
 
     move-result p0
@@ -2833,8 +2831,8 @@
     :catch_0
     move-exception p0
 
-    .line 47
-    invoke-virtual {p0}, Lorg/json/JSONException;->printStackTrace()V
+    .line 48
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return p2
 .end method

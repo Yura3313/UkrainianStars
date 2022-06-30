@@ -1,248 +1,168 @@
 .class public final Lkb/a;
-.super Ljava/lang/Object;
-.source "FontApplier.java"
+.super Landroid/webkit/WebChromeClient;
+.source "CustomWebChromeClient.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lkb/a$a;
-    }
-.end annotation
+# instance fields
+.field public final a:Landroid/view/View;
 
+.field public final b:Landroid/view/View;
 
-# static fields
-.field public static a:Landroid/graphics/Typeface;
+.field public final c:Landroid/view/ViewGroup;
 
-.field public static b:Lkb/c;
+.field public d:Landroid/webkit/WebChromeClient$CustomViewCallback;
 
-.field public static c:Z
-
-.field public static d:Ljava/lang/String;
+.field public e:Landroid/view/View;
 
 
 # direct methods
-.method public static a(Landroid/view/View;)V
-    .locals 2
+.method public constructor <init>(Landroid/view/View;Landroid/view/View;)V
+    .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkb/a;->e(Landroid/content/Context;)V
+    invoke-direct {p0}, Landroid/webkit/WebChromeClient;-><init>()V
 
     .line 2
-    sget-object v0, Lkb/a;->a:Landroid/graphics/Typeface;
-
-    if-nez v0, :cond_0
-
-    return-void
+    iput-object p1, p0, Lkb/a;->a:Landroid/view/View;
 
     .line 3
-    :cond_0
-    invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    iput-object p2, p0, Lkb/a;->b:Landroid/view/View;
 
-    move-result-object v0
-
-    new-instance v1, Lkb/a$a;
-
-    invoke-direct {v1, p0}, Lkb/a$a;-><init>(Landroid/view/View;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
-
-    return-void
-.end method
-
-.method public static b(Landroid/widget/TextView;)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkb/a;->e(Landroid/content/Context;)V
-
-    .line 2
-    sget-object v0, Lkb/a;->a:Landroid/graphics/Typeface;
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 3
-    :cond_0
-    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
-
-    return-void
-.end method
-
-.method public static c(Landroid/view/View;)V
-    .locals 2
-
-    .line 1
-    instance-of v0, p0, Landroid/widget/TextView;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    check-cast p0, Landroid/widget/TextView;
-
-    invoke-static {p0}, Lkb/a;->b(Landroid/widget/TextView;)V
-
-    goto :goto_1
-
-    .line 3
-    :cond_0
-    instance-of v0, p0, Landroid/view/ViewGroup;
-
-    if-eqz v0, :cond_1
+    const p2, 0x1020002
 
     .line 4
-    check-cast p0, Landroid/view/ViewGroup;
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/ViewGroup;
+
+    iput-object p1, p0, Lkb/a;->c:Landroid/view/ViewGroup;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onHideCustomView()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lkb/a;->e:Landroid/view/View;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const/16 v1, 0x8
+
+    .line 2
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 3
+    iget-object v0, p0, Lkb/a;->c:Landroid/view/ViewGroup;
+
+    iget-object v1, p0, Lkb/a;->e:Landroid/view/View;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     const/4 v0, 0x0
 
+    .line 4
+    iput-object v0, p0, Lkb/a;->e:Landroid/view/View;
+
     .line 5
-    :goto_0
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+    iget-object v0, p0, Lkb/a;->d:Landroid/webkit/WebChromeClient$CustomViewCallback;
 
-    move-result v1
-
-    if-ge v0, v1, :cond_1
+    if-eqz v0, :cond_1
 
     .line 6
-    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-interface {v0}, Landroid/webkit/WebChromeClient$CustomViewCallback;->onCustomViewHidden()V
 
-    move-result-object v1
-
-    invoke-static {v1}, Lkb/a;->c(Landroid/view/View;)V
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
+    .line 7
     :cond_1
-    :goto_1
+    iget-object v0, p0, Lkb/a;->b:Landroid/view/View;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 8
+    iget-object v0, p0, Lkb/a;->a:Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->getSystemUiVisibility()I
+
+    move-result v0
+
+    and-int/lit8 v0, v0, -0x3
+
+    and-int/lit8 v0, v0, -0x5
+
+    and-int/lit16 v0, v0, -0x1001
+
+    .line 9
+    iget-object v1, p0, Lkb/a;->a:Landroid/view/View;
+
+    invoke-virtual {v1, v0}, Landroid/view/View;->setSystemUiVisibility(I)V
+
     return-void
 .end method
 
-.method public static d()Lkb/c;
-    .locals 2
+.method public final onShowCustomView(Landroid/view/View;Landroid/webkit/WebChromeClient$CustomViewCallback;)V
+    .locals 1
 
     .line 1
-    sget-object v0, Lkb/a;->a:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lkb/a;->e:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lkb/a;->b:Lkb/c;
-
-    if-nez v0, :cond_0
-
     .line 2
-    new-instance v0, Lkb/c;
+    invoke-interface {p2}, Landroid/webkit/WebChromeClient$CustomViewCallback;->onCustomViewHidden()V
 
-    sget-object v1, Lkb/a;->a:Landroid/graphics/Typeface;
-
-    invoke-direct {v0, v1}, Lkb/c;-><init>(Landroid/graphics/Typeface;)V
-
-    sput-object v0, Lkb/a;->b:Lkb/c;
+    return-void
 
     .line 3
     :cond_0
-    sget-object v0, Lkb/a;->b:Lkb/c;
+    iget-object v0, p0, Lkb/a;->c:Landroid/view/ViewGroup;
 
-    return-object v0
-.end method
-
-.method public static e(Landroid/content/Context;)V
-    .locals 4
-
-    .line 1
-    sget-object v0, Lkb/a;->d:Ljava/lang/String;
-
-    .line 2
-    invoke-static {v0}, Lp5/c0;->k(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    sget-object v1, Lkb/a;->a:Landroid/graphics/Typeface;
-
-    if-nez v1, :cond_0
-
-    sget-boolean v1, Lkb/a;->c:Z
-
-    if-nez v1, :cond_0
-
-    const/4 v1, 0x1
-
-    .line 3
-    :try_start_0
-    invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
-
-    move-result-object p0
-
-    invoke-static {p0, v0}, Landroid/graphics/Typeface;->createFromAsset(Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/graphics/Typeface;
-
-    move-result-object p0
-
-    sput-object p0, Lkb/a;->a:Landroid/graphics/Typeface;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception p0
-
-    :try_start_1
-    const-string v0, "HS_FontApplier"
+    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 4
-    new-instance v2, Ljava/lang/StringBuilder;
+    iput-object p1, p0, Lkb/a;->e:Landroid/view/View;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Typeface initialisation failed. Using default typeface. "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0, p0}, Lie/a;->g(Ljava/lang/String;Ljava/lang/String;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    const/high16 v0, -0x1000000
 
     .line 5
-    :goto_0
-    sput-boolean v1, Lkb/a;->c:Z
-
-    goto :goto_2
-
-    :goto_1
-    sput-boolean v1, Lkb/a;->c:Z
+    invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundColor(I)V
 
     .line 6
-    throw p0
+    iput-object p2, p0, Lkb/a;->d:Landroid/webkit/WebChromeClient$CustomViewCallback;
 
-    :cond_0
-    :goto_2
+    .line 7
+    iget-object p1, p0, Lkb/a;->b:Landroid/view/View;
+
+    const/16 p2, 0x8
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 8
+    iget-object p1, p0, Lkb/a;->a:Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->getSystemUiVisibility()I
+
+    move-result p1
+
+    or-int/lit8 p1, p1, 0x2
+
+    or-int/lit8 p1, p1, 0x4
+
+    or-int/lit16 p1, p1, 0x1000
+
+    .line 9
+    iget-object p2, p0, Lkb/a;->a:Landroid/view/View;
+
+    invoke-virtual {p2, p1}, Landroid/view/View;->setSystemUiVisibility(I)V
+
     return-void
 .end method

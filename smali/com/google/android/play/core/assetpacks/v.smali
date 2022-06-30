@@ -6,7 +6,7 @@
 
 
 # static fields
-.field public static final a:Lcom/google/android/play/core/assetpacks/w;
+.field public static final f:Lcom/google/android/play/core/assetpacks/v;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/v;-><init>()V
 
-    sput-object v0, Lcom/google/android/play/core/assetpacks/v;->a:Lcom/google/android/play/core/assetpacks/w;
+    sput-object v0, Lcom/google/android/play/core/assetpacks/v;->f:Lcom/google/android/play/core/assetpacks/v;
 
     return-void
 .end method
@@ -32,7 +32,7 @@
 
 
 # virtual methods
-.method public final b(ILjava/lang/String;)I
+.method public final K(I)I
     .locals 0
 
     return p1

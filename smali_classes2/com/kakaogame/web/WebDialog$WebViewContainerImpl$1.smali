@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl$1;->this$1:Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;
 
     iput-object p2, p0, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl$1;->val$url:Ljava/lang/String;
@@ -58,7 +57,7 @@
     const-string v2, "WebDialog"
 
     .line 2
-    invoke-static {v1, v0, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v1, v0, v2}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     return-void
 .end method

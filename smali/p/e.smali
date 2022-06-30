@@ -1,4 +1,4 @@
-.class public Lp/e;
+.class public final Lp/e;
 .super Ljava/lang/Object;
 .source "Pools.java"
 
@@ -21,35 +21,25 @@
 
 
 # direct methods
-.method public constructor <init>(I)V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    if-lez p1, :cond_0
+    const/16 v0, 0x100
+
+    new-array v0, v0, [Ljava/lang/Object;
 
     .line 2
-    new-array p1, p1, [Ljava/lang/Object;
-
-    iput-object p1, p0, Lp/e;->a:[Ljava/lang/Object;
+    iput-object v0, p0, Lp/e;->a:[Ljava/lang/Object;
 
     return-void
-
-    .line 3
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string v0, "The max pool size must be > 0"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -85,7 +75,7 @@
     return-object v1
 .end method
 
-.method public b(Ljava/lang/Object;)Z
+.method public final b(Ljava/lang/Object;)Z
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {

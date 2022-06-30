@@ -102,7 +102,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -125,7 +124,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->unknown:Ljava/util/Map;
 
     return-void
@@ -134,7 +132,6 @@
 .method public getAbsPath()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->absPath:Ljava/lang/String;
 
     return-object v0
@@ -143,7 +140,6 @@
 .method public getColno()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->colno:Ljava/lang/Integer;
 
     return-object v0
@@ -152,7 +148,6 @@
 .method public getContextLine()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->contextLine:Ljava/lang/String;
 
     return-object v0
@@ -161,7 +156,6 @@
 .method public getFilename()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->filename:Ljava/lang/String;
 
     return-object v0
@@ -178,7 +172,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->framesOmitted:Ljava/util/List;
 
     return-object v0
@@ -187,7 +180,6 @@
 .method public getFunction()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->function:Ljava/lang/String;
 
     return-object v0
@@ -196,7 +188,6 @@
 .method public getImageAddr()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->imageAddr:Ljava/lang/String;
 
     return-object v0
@@ -205,7 +196,6 @@
 .method public getInstructionAddr()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->instructionAddr:Ljava/lang/String;
 
     return-object v0
@@ -214,7 +204,6 @@
 .method public getLineno()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->lineno:Ljava/lang/Integer;
 
     return-object v0
@@ -223,7 +212,6 @@
 .method public getModule()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->module:Ljava/lang/String;
 
     return-object v0
@@ -232,7 +220,6 @@
 .method public getPackage()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->_package:Ljava/lang/String;
 
     return-object v0
@@ -241,7 +228,6 @@
 .method public getPlatform()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->platform:Ljava/lang/String;
 
     return-object v0
@@ -258,7 +244,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->postContext:Ljava/util/List;
 
     return-object v0
@@ -275,7 +260,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->preContext:Ljava/util/List;
 
     return-object v0
@@ -284,7 +268,6 @@
 .method public getRawFunction()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->rawFunction:Ljava/lang/String;
 
     return-object v0
@@ -293,7 +276,6 @@
 .method public getSymbolAddr()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->symbolAddr:Ljava/lang/String;
 
     return-object v0
@@ -311,7 +293,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->vars:Ljava/util/Map;
 
     return-object v0
@@ -320,7 +301,6 @@
 .method public isInApp()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->inApp:Ljava/lang/Boolean;
 
     return-object v0
@@ -329,7 +309,6 @@
 .method public isNative()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackFrame;->_native:Ljava/lang/Boolean;
 
     return-object v0
@@ -338,7 +317,6 @@
 .method public setAbsPath(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->absPath:Ljava/lang/String;
 
     return-void
@@ -347,7 +325,6 @@
 .method public setColno(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->colno:Ljava/lang/Integer;
 
     return-void
@@ -356,7 +333,6 @@
 .method public setContextLine(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->contextLine:Ljava/lang/String;
 
     return-void
@@ -365,7 +341,6 @@
 .method public setFilename(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->filename:Ljava/lang/String;
 
     return-void
@@ -382,7 +357,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->framesOmitted:Ljava/util/List;
 
     return-void
@@ -391,7 +365,6 @@
 .method public setFunction(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->function:Ljava/lang/String;
 
     return-void
@@ -400,7 +373,6 @@
 .method public setImageAddr(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->imageAddr:Ljava/lang/String;
 
     return-void
@@ -409,7 +381,6 @@
 .method public setInApp(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->inApp:Ljava/lang/Boolean;
 
     return-void
@@ -418,7 +389,6 @@
 .method public setInstructionAddr(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->instructionAddr:Ljava/lang/String;
 
     return-void
@@ -427,7 +397,6 @@
 .method public setLineno(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->lineno:Ljava/lang/Integer;
 
     return-void
@@ -436,7 +405,6 @@
 .method public setModule(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->module:Ljava/lang/String;
 
     return-void
@@ -445,7 +413,6 @@
 .method public setNative(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->_native:Ljava/lang/Boolean;
 
     return-void
@@ -454,7 +421,6 @@
 .method public setPackage(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->_package:Ljava/lang/String;
 
     return-void
@@ -463,7 +429,6 @@
 .method public setPlatform(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->platform:Ljava/lang/String;
 
     return-void
@@ -480,7 +445,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->postContext:Ljava/util/List;
 
     return-void
@@ -497,7 +461,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->preContext:Ljava/util/List;
 
     return-void
@@ -506,7 +469,6 @@
 .method public setRawFunction(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->rawFunction:Ljava/lang/String;
 
     return-void
@@ -515,7 +477,6 @@
 .method public setSymbolAddr(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->symbolAddr:Ljava/lang/String;
 
     return-void
@@ -533,7 +494,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackFrame;->vars:Ljava/util/Map;
 
     return-void

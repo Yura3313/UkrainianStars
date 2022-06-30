@@ -7,5 +7,5 @@
 .method public abstract a()Landroid/os/Parcelable;
 .end method
 
-.method public abstract b(Landroid/os/Parcelable;)V
+.method public abstract b()V
 .end method

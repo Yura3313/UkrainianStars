@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/Kakao$g;
+.class public final Lcom/supercell/titan/Kakao$g;
 .super Ljava/lang/Object;
 .source "Kakao.java"
 
@@ -34,7 +34,6 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/titan/Kakao$g;->a:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +43,7 @@
 
 
 # virtual methods
-.method public onResult(Lcom/kakaogame/KGResult;)V
+.method public final onResult(Lcom/kakaogame/KGResult;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {

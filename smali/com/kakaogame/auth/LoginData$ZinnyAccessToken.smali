@@ -51,31 +51,21 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/String;JLjava/lang/String;J)V
-    .locals 2
+    .locals 0
 
     .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v0, ""
-
     .line 7
-    iput-object v0, p0, Lcom/kakaogame/auth/LoginData$ZinnyAccessToken;->zrt:Ljava/lang/String;
-
-    const-wide/16 v0, 0x0
-
-    .line 8
-    iput-wide v0, p0, Lcom/kakaogame/auth/LoginData$ZinnyAccessToken;->ztrExpiryTime:J
-
-    .line 9
     iput-object p1, p0, Lcom/kakaogame/auth/LoginData$ZinnyAccessToken;->zat:Ljava/lang/String;
 
-    .line 10
+    .line 8
     iput-wide p2, p0, Lcom/kakaogame/auth/LoginData$ZinnyAccessToken;->expiryTime:J
 
-    .line 11
+    .line 9
     iput-object p4, p0, Lcom/kakaogame/auth/LoginData$ZinnyAccessToken;->zrt:Ljava/lang/String;
 
-    .line 12
+    .line 10
     iput-wide p5, p0, Lcom/kakaogame/auth/LoginData$ZinnyAccessToken;->ztrExpiryTime:J
 
     return-void
@@ -86,7 +76,6 @@
 .method public getExpiryTime()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/auth/LoginData$ZinnyAccessToken;->expiryTime:J
 
     return-wide v0
@@ -95,7 +84,6 @@
 .method public getZat()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/auth/LoginData$ZinnyAccessToken;->zat:Ljava/lang/String;
 
     return-object v0
@@ -104,7 +92,6 @@
 .method public getZrt()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/auth/LoginData$ZinnyAccessToken;->zrt:Ljava/lang/String;
 
     return-object v0
@@ -113,7 +100,6 @@
 .method public getZrtExpiryTime()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/auth/LoginData$ZinnyAccessToken;->ztrExpiryTime:J
 
     return-wide v0
@@ -122,7 +108,6 @@
 .method public isExpired()Z
     .locals 5
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v0
@@ -241,6 +226,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakaogame/auth/LoginData$ZinnyAccessToken;->zat:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;

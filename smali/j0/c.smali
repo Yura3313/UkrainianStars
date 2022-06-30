@@ -1,4 +1,4 @@
-.class public Lj0/c;
+.class public final Lj0/c;
 .super Ljava/lang/Object;
 .source "ViewDragHelper.java"
 
@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static final w:Landroid/view/animation/Interpolator;
+.field public static final w:Lj0/c$a;
 
 
 # instance fields
@@ -58,19 +58,18 @@
 
 .field public final u:Landroid/view/ViewGroup;
 
-.field public final v:Ljava/lang/Runnable;
+.field public final v:Lj0/c$b;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lj0/c$a;
 
     invoke-direct {v0}, Lj0/c$a;-><init>()V
 
-    sput-object v0, Lj0/c;->w:Landroid/view/animation/Interpolator;
+    sput-object v0, Lj0/c;->w:Lj0/c$a;
 
     return-void
 .end method
@@ -91,7 +90,9 @@
 
     invoke-direct {v0, p0}, Lj0/c$b;-><init>(Lj0/c;)V
 
-    iput-object v0, p0, Lj0/c;->v:Ljava/lang/Runnable;
+    iput-object v0, p0, Lj0/c;->v:Lj0/c$b;
+
+    if-eqz p2, :cond_1
 
     if-eqz p3, :cond_0
 
@@ -158,7 +159,7 @@
     .line 12
     new-instance p2, Landroid/widget/OverScroller;
 
-    sget-object p3, Lj0/c;->w:Landroid/view/animation/Interpolator;
+    sget-object p3, Lj0/c;->w:Lj0/c$a;
 
     invoke-direct {p2, p1, p3}, Landroid/widget/OverScroller;-><init>(Landroid/content/Context;Landroid/view/animation/Interpolator;)V
 
@@ -175,15 +176,25 @@
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1
+
+    .line 14
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "Parent view may not be null"
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method
 
-.method public static k(Landroid/view/ViewGroup;FLj0/c$c;)Lj0/c;
+.method public static j(Landroid/view/ViewGroup;FLj0/c$c;)Lj0/c;
     .locals 2
 
     .line 1
     new-instance v0, Lj0/c;
 
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -207,13 +218,12 @@
     return-object v0
 .end method
 
-.method public static l(Landroid/view/ViewGroup;Lj0/c$c;)Lj0/c;
+.method public static k(Landroid/view/ViewGroup;Lj0/c$c;)Lj0/c;
     .locals 2
 
-    .line 1
     new-instance v0, Lj0/c;
 
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -224,45 +234,7 @@
 
 
 # virtual methods
-.method public A(Landroid/view/View;II)Z
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lj0/c;->s:Landroid/view/View;
-
-    const/4 p1, -0x1
-
-    .line 2
-    iput p1, p0, Lj0/c;->c:I
-
-    const/4 p1, 0x0
-
-    .line 3
-    invoke-virtual {p0, p2, p3, p1, p1}, Lj0/c;->o(IIII)Z
-
-    move-result p1
-
-    if-nez p1, :cond_0
-
-    .line 4
-    iget p2, p0, Lj0/c;->a:I
-
-    if-nez p2, :cond_0
-
-    iget-object p2, p0, Lj0/c;->s:Landroid/view/View;
-
-    if-eqz p2, :cond_0
-
-    const/4 p2, 0x0
-
-    .line 5
-    iput-object p2, p0, Lj0/c;->s:Landroid/view/View;
-
-    :cond_0
-    return p1
-.end method
-
-.method public B(Landroid/view/View;I)Z
+.method public final A(Landroid/view/View;I)Z
     .locals 2
 
     .line 1
@@ -304,8 +276,8 @@
     return p1
 .end method
 
-.method public a()V
-    .locals 9
+.method public final a()V
+    .locals 4
 
     .line 1
     invoke-virtual {p0}, Lj0/c;->b()V
@@ -322,55 +294,47 @@
 
     invoke-virtual {v0}, Landroid/widget/OverScroller;->getCurrX()I
 
+    .line 4
+    iget-object v0, p0, Lj0/c;->q:Landroid/widget/OverScroller;
+
+    invoke-virtual {v0}, Landroid/widget/OverScroller;->getCurrY()I
+
+    .line 5
+    iget-object v0, p0, Lj0/c;->q:Landroid/widget/OverScroller;
+
+    invoke-virtual {v0}, Landroid/widget/OverScroller;->abortAnimation()V
+
+    .line 6
+    iget-object v0, p0, Lj0/c;->q:Landroid/widget/OverScroller;
+
+    invoke-virtual {v0}, Landroid/widget/OverScroller;->getCurrX()I
+
     move-result v0
 
-    .line 4
+    .line 7
     iget-object v1, p0, Lj0/c;->q:Landroid/widget/OverScroller;
 
     invoke-virtual {v1}, Landroid/widget/OverScroller;->getCurrY()I
 
     move-result v1
 
-    .line 5
-    iget-object v2, p0, Lj0/c;->q:Landroid/widget/OverScroller;
-
-    invoke-virtual {v2}, Landroid/widget/OverScroller;->abortAnimation()V
-
-    .line 6
-    iget-object v2, p0, Lj0/c;->q:Landroid/widget/OverScroller;
-
-    invoke-virtual {v2}, Landroid/widget/OverScroller;->getCurrX()I
-
-    move-result v5
-
-    .line 7
-    iget-object v2, p0, Lj0/c;->q:Landroid/widget/OverScroller;
-
-    invoke-virtual {v2}, Landroid/widget/OverScroller;->getCurrY()I
-
-    move-result v6
-
     .line 8
-    iget-object v3, p0, Lj0/c;->r:Lj0/c$c;
+    iget-object v2, p0, Lj0/c;->r:Lj0/c$c;
 
-    iget-object v4, p0, Lj0/c;->s:Landroid/view/View;
+    iget-object v3, p0, Lj0/c;->s:Landroid/view/View;
 
-    sub-int v7, v5, v0
-
-    sub-int v8, v6, v1
-
-    invoke-virtual/range {v3 .. v8}, Lj0/c$c;->i(Landroid/view/View;IIII)V
+    invoke-virtual {v2, v3, v0, v1}, Lj0/c$c;->i(Landroid/view/View;II)V
 
     :cond_0
     const/4 v0, 0x0
 
     .line 9
-    invoke-virtual {p0, v0}, Lj0/c;->x(I)V
+    invoke-virtual {p0, v0}, Lj0/c;->w(I)V
 
     return-void
 .end method
 
-.method public b()V
+.method public final b()V
     .locals 2
 
     const/4 v0, -0x1
@@ -444,7 +408,7 @@
     return-void
 .end method
 
-.method public c(Landroid/view/View;I)V
+.method public final c(Landroid/view/View;I)V
     .locals 2
 
     .line 1
@@ -470,7 +434,7 @@
     const/4 p1, 0x1
 
     .line 5
-    invoke-virtual {p0, p1}, Lj0/c;->x(I)V
+    invoke-virtual {p0, p1}, Lj0/c;->w(I)V
 
     return-void
 
@@ -480,10 +444,12 @@
 
     const-string p2, "captureChildView: parameter must be a descendant of the ViewDragHelper\'s tracked parent view ("
 
+    .line 7
     invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
+    .line 8
     iget-object v0, p0, Lj0/c;->u:Landroid/view/ViewGroup;
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -603,7 +569,7 @@
 .end method
 
 .method public final e(Landroid/view/View;FF)Z
-    .locals 4
+    .locals 3
 
     const/4 v0, 0x0
 
@@ -617,40 +583,40 @@
 
     invoke-virtual {v1, p1}, Lj0/c$c;->c(Landroid/view/View;)I
 
-    move-result v1
-
-    const/4 v2, 0x1
-
-    if-lez v1, :cond_1
+    move-result p1
 
     const/4 v1, 0x1
+
+    if-lez p1, :cond_1
+
+    const/4 p1, 0x1
 
     goto :goto_0
 
     :cond_1
-    const/4 v1, 0x0
+    const/4 p1, 0x0
 
     .line 2
     :goto_0
-    iget-object v3, p0, Lj0/c;->r:Lj0/c$c;
+    iget-object v2, p0, Lj0/c;->r:Lj0/c$c;
 
-    invoke-virtual {v3, p1}, Lj0/c$c;->d(Landroid/view/View;)I
+    invoke-virtual {v2}, Lj0/c$c;->d()I
 
-    move-result p1
+    move-result v2
 
-    if-lez p1, :cond_2
+    if-lez v2, :cond_2
 
-    const/4 p1, 0x1
+    const/4 v2, 0x1
 
     goto :goto_1
 
     :cond_2
-    const/4 p1, 0x0
+    const/4 v2, 0x0
 
     :goto_1
-    if-eqz v1, :cond_4
-
     if-eqz p1, :cond_4
+
+    if-eqz v2, :cond_4
 
     mul-float p2, p2, p2
 
@@ -675,7 +641,7 @@
     return v0
 
     :cond_4
-    if-eqz v1, :cond_6
+    if-eqz p1, :cond_6
 
     .line 4
     invoke-static {p2}, Ljava/lang/Math;->abs(F)F
@@ -696,7 +662,7 @@
     return v0
 
     :cond_6
-    if-eqz p1, :cond_7
+    if-eqz v2, :cond_7
 
     .line 5
     invoke-static {p3}, Ljava/lang/Math;->abs(F)F
@@ -720,7 +686,6 @@
 .method public final f(FFF)F
     .locals 2
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Math;->abs(F)F
 
     move-result v0
@@ -754,38 +719,7 @@
     return p1
 .end method
 
-.method public final g(III)I
-    .locals 1
-
-    .line 1
-    invoke-static {p1}, Ljava/lang/Math;->abs(I)I
-
-    move-result v0
-
-    if-ge v0, p2, :cond_0
-
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_0
-    if-le v0, p3, :cond_2
-
-    if-lez p1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    neg-int p3, p3
-
-    :goto_0
-    return p3
-
-    :cond_2
-    return p1
-.end method
-
-.method public final h(I)V
+.method public final g(I)V
     .locals 2
 
     .line 1
@@ -793,7 +727,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0, p1}, Lj0/c;->p(I)Z
+    invoke-virtual {p0, p1}, Lj0/c;->o(I)Z
 
     move-result v0
 
@@ -859,7 +793,7 @@
     return-void
 .end method
 
-.method public final i(III)I
+.method public final h(III)I
     .locals 4
 
     if-nez p1, :cond_0
@@ -872,7 +806,7 @@
     :cond_0
     iget-object v0, p0, Lj0/c;->u:Landroid/view/ViewGroup;
 
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {v0}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
@@ -978,17 +912,17 @@
     return p1
 .end method
 
-.method public j(Z)Z
-    .locals 11
+.method public final i()Z
+    .locals 8
 
     .line 1
     iget v0, p0, Lj0/c;->a:I
 
-    const/4 v1, 0x2
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x2
 
-    if-ne v0, v1, :cond_6
+    if-ne v0, v2, :cond_5
 
     .line 2
     iget-object v0, p0, Lj0/c;->q:Landroid/widget/OverScroller;
@@ -1009,69 +943,65 @@
 
     invoke-virtual {v4}, Landroid/widget/OverScroller;->getCurrY()I
 
-    move-result v10
+    move-result v4
 
     .line 5
-    iget-object v4, p0, Lj0/c;->s:Landroid/view/View;
+    iget-object v5, p0, Lj0/c;->s:Landroid/view/View;
 
-    invoke-virtual {v4}, Landroid/view/View;->getLeft()I
+    invoke-virtual {v5}, Landroid/view/View;->getLeft()I
 
-    move-result v4
+    move-result v5
 
-    sub-int v8, v3, v4
+    sub-int v5, v3, v5
 
     .line 6
-    iget-object v4, p0, Lj0/c;->s:Landroid/view/View;
+    iget-object v6, p0, Lj0/c;->s:Landroid/view/View;
 
-    invoke-virtual {v4}, Landroid/view/View;->getTop()I
+    invoke-virtual {v6}, Landroid/view/View;->getTop()I
 
-    move-result v4
+    move-result v6
 
-    sub-int v9, v10, v4
+    sub-int v6, v4, v6
 
-    if-eqz v8, :cond_0
+    if-eqz v5, :cond_0
 
     .line 7
-    iget-object v4, p0, Lj0/c;->s:Landroid/view/View;
+    iget-object v7, p0, Lj0/c;->s:Landroid/view/View;
 
-    invoke-static {v4, v8}, Lf0/r;->s(Landroid/view/View;I)V
+    invoke-static {v7, v5}, Lf0/r;->v(Landroid/view/View;I)V
 
     :cond_0
-    if-eqz v9, :cond_1
+    if-eqz v6, :cond_1
 
     .line 8
-    iget-object v4, p0, Lj0/c;->s:Landroid/view/View;
+    iget-object v7, p0, Lj0/c;->s:Landroid/view/View;
 
-    invoke-static {v4, v9}, Lf0/r;->t(Landroid/view/View;I)V
+    invoke-static {v7, v6}, Lf0/r;->w(Landroid/view/View;I)V
 
     :cond_1
-    if-nez v8, :cond_2
+    if-nez v5, :cond_2
 
-    if-eqz v9, :cond_3
+    if-eqz v6, :cond_3
 
     .line 9
     :cond_2
-    iget-object v4, p0, Lj0/c;->r:Lj0/c$c;
+    iget-object v5, p0, Lj0/c;->r:Lj0/c$c;
 
-    iget-object v5, p0, Lj0/c;->s:Landroid/view/View;
+    iget-object v6, p0, Lj0/c;->s:Landroid/view/View;
 
-    move v6, v3
-
-    move v7, v10
-
-    invoke-virtual/range {v4 .. v9}, Lj0/c$c;->i(Landroid/view/View;IIII)V
+    invoke-virtual {v5, v6, v3, v4}, Lj0/c$c;->i(Landroid/view/View;II)V
 
     :cond_3
     if-eqz v0, :cond_4
 
     .line 10
-    iget-object v4, p0, Lj0/c;->q:Landroid/widget/OverScroller;
+    iget-object v5, p0, Lj0/c;->q:Landroid/widget/OverScroller;
 
-    invoke-virtual {v4}, Landroid/widget/OverScroller;->getFinalX()I
+    invoke-virtual {v5}, Landroid/widget/OverScroller;->getFinalX()I
 
-    move-result v4
+    move-result v5
 
-    if-ne v3, v4, :cond_4
+    if-ne v3, v5, :cond_4
 
     iget-object v3, p0, Lj0/c;->q:Landroid/widget/OverScroller;
 
@@ -1079,7 +1009,7 @@
 
     move-result v3
 
-    if-ne v10, v3, :cond_4
+    if-ne v4, v3, :cond_4
 
     .line 11
     iget-object v0, p0, Lj0/c;->q:Landroid/widget/OverScroller;
@@ -1089,37 +1019,28 @@
     const/4 v0, 0x0
 
     :cond_4
-    if-nez v0, :cond_6
-
-    if-eqz p1, :cond_5
+    if-nez v0, :cond_5
 
     .line 12
-    iget-object p1, p0, Lj0/c;->u:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lj0/c;->u:Landroid/view/ViewGroup;
 
-    iget-object v0, p0, Lj0/c;->v:Ljava/lang/Runnable;
+    iget-object v3, p0, Lj0/c;->v:Lj0/c$b;
 
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
-
-    goto :goto_0
+    invoke-virtual {v0, v3}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     .line 13
     :cond_5
-    invoke-virtual {p0, v2}, Lj0/c;->x(I)V
+    iget v0, p0, Lj0/c;->a:I
 
-    .line 14
+    if-ne v0, v2, :cond_6
+
+    const/4 v1, 0x1
+
     :cond_6
-    :goto_0
-    iget p1, p0, Lj0/c;->a:I
-
-    if-ne p1, v1, :cond_7
-
-    const/4 v2, 0x1
-
-    :cond_7
-    return v2
+    return v1
 .end method
 
-.method public final m(FF)V
+.method public final l(FF)V
     .locals 3
 
     const/4 v0, 0x1
@@ -1145,13 +1066,13 @@
     if-ne p2, v0, :cond_0
 
     .line 5
-    invoke-virtual {p0, p1}, Lj0/c;->x(I)V
+    invoke-virtual {p0, p1}, Lj0/c;->w(I)V
 
     :cond_0
     return-void
 .end method
 
-.method public n(II)Landroid/view/View;
+.method public final m(II)Landroid/view/View;
     .locals 3
 
     .line 1
@@ -1216,7 +1137,7 @@
     return-object p1
 .end method
 
-.method public final o(IIII)Z
+.method public final n(IIII)Z
     .locals 9
 
     .line 1
@@ -1237,135 +1158,177 @@
 
     sub-int v5, p2, v3
 
+    const/4 p1, 0x0
+
     if-nez v4, :cond_0
 
     if-nez v5, :cond_0
 
     .line 3
-    iget-object p1, p0, Lj0/c;->q:Landroid/widget/OverScroller;
+    iget-object p2, p0, Lj0/c;->q:Landroid/widget/OverScroller;
 
-    invoke-virtual {p1}, Landroid/widget/OverScroller;->abortAnimation()V
-
-    const/4 p1, 0x0
+    invoke-virtual {p2}, Landroid/widget/OverScroller;->abortAnimation()V
 
     .line 4
-    invoke-virtual {p0, p1}, Lj0/c;->x(I)V
+    invoke-virtual {p0, p1}, Lj0/c;->w(I)V
 
     return p1
 
     .line 5
     :cond_0
-    iget-object p1, p0, Lj0/c;->s:Landroid/view/View;
+    iget-object p2, p0, Lj0/c;->s:Landroid/view/View;
 
     .line 6
-    iget p2, p0, Lj0/c;->n:F
-
-    float-to-int p2, p2
-
-    iget v0, p0, Lj0/c;->m:F
+    iget v0, p0, Lj0/c;->n:F
 
     float-to-int v0, v0
 
-    invoke-virtual {p0, p3, p2, v0}, Lj0/c;->g(III)I
+    iget v1, p0, Lj0/c;->m:F
 
-    move-result p2
+    float-to-int v1, v1
 
     .line 7
-    iget p3, p0, Lj0/c;->n:F
+    invoke-static {p3}, Ljava/lang/Math;->abs(I)I
 
-    float-to-int p3, p3
+    move-result v6
 
-    iget v0, p0, Lj0/c;->m:F
+    if-ge v6, v0, :cond_1
+
+    const/4 p3, 0x0
+
+    goto :goto_0
+
+    :cond_1
+    if-le v6, v1, :cond_3
+
+    if-lez p3, :cond_2
+
+    move p3, v1
+
+    goto :goto_0
+
+    :cond_2
+    neg-int p3, v1
+
+    .line 8
+    :cond_3
+    :goto_0
+    iget v0, p0, Lj0/c;->n:F
 
     float-to-int v0, v0
 
-    invoke-virtual {p0, p4, p3, v0}, Lj0/c;->g(III)I
+    iget v1, p0, Lj0/c;->m:F
 
-    move-result p3
-
-    .line 8
-    invoke-static {v4}, Ljava/lang/Math;->abs(I)I
-
-    move-result p4
+    float-to-int v1, v1
 
     .line 9
+    invoke-static {p4}, Ljava/lang/Math;->abs(I)I
+
+    move-result v6
+
+    if-ge v6, v0, :cond_4
+
+    const/4 p4, 0x0
+
+    goto :goto_1
+
+    :cond_4
+    if-le v6, v1, :cond_6
+
+    if-lez p4, :cond_5
+
+    move p4, v1
+
+    goto :goto_1
+
+    :cond_5
+    neg-int p4, v1
+
+    .line 10
+    :cond_6
+    :goto_1
+    invoke-static {v4}, Ljava/lang/Math;->abs(I)I
+
+    move-result p1
+
+    .line 11
     invoke-static {v5}, Ljava/lang/Math;->abs(I)I
 
     move-result v0
 
-    .line 10
-    invoke-static {p2}, Ljava/lang/Math;->abs(I)I
+    .line 12
+    invoke-static {p3}, Ljava/lang/Math;->abs(I)I
 
     move-result v1
 
-    .line 11
-    invoke-static {p3}, Ljava/lang/Math;->abs(I)I
+    .line 13
+    invoke-static {p4}, Ljava/lang/Math;->abs(I)I
 
     move-result v6
 
     add-int v7, v1, v6
 
-    add-int v8, p4, v0
+    add-int v8, p1, v0
 
-    if-eqz p2, :cond_1
+    if-eqz p3, :cond_7
 
-    int-to-float p4, v1
+    int-to-float p1, v1
 
     int-to-float v1, v7
 
-    goto :goto_0
+    goto :goto_2
 
-    :cond_1
-    int-to-float p4, p4
+    :cond_7
+    int-to-float p1, p1
 
     int-to-float v1, v8
 
-    :goto_0
-    div-float/2addr p4, v1
+    :goto_2
+    div-float/2addr p1, v1
 
-    if-eqz p3, :cond_2
+    if-eqz p4, :cond_8
 
     int-to-float v0, v6
 
     int-to-float v1, v7
 
-    goto :goto_1
+    goto :goto_3
 
-    :cond_2
+    :cond_8
     int-to-float v0, v0
 
     int-to-float v1, v8
 
-    :goto_1
+    :goto_3
     div-float/2addr v0, v1
 
-    .line 12
+    .line 14
     iget-object v1, p0, Lj0/c;->r:Lj0/c$c;
 
-    invoke-virtual {v1, p1}, Lj0/c$c;->c(Landroid/view/View;)I
-
-    move-result v1
-
-    invoke-virtual {p0, v4, p2, v1}, Lj0/c;->i(III)I
+    invoke-virtual {v1, p2}, Lj0/c$c;->c(Landroid/view/View;)I
 
     move-result p2
 
-    .line 13
-    iget-object v1, p0, Lj0/c;->r:Lj0/c$c;
+    invoke-virtual {p0, v4, p3, p2}, Lj0/c;->h(III)I
 
-    invoke-virtual {v1, p1}, Lj0/c$c;->d(Landroid/view/View;)I
+    move-result p2
 
-    move-result p1
+    .line 15
+    iget-object p3, p0, Lj0/c;->r:Lj0/c$c;
 
-    invoke-virtual {p0, v5, p3, p1}, Lj0/c;->i(III)I
+    invoke-virtual {p3}, Lj0/c$c;->d()I
 
-    move-result p1
+    move-result p3
+
+    invoke-virtual {p0, v5, p4, p3}, Lj0/c;->h(III)I
+
+    move-result p3
 
     int-to-float p2, p2
 
-    mul-float p2, p2, p4
+    mul-float p2, p2, p1
 
-    int-to-float p1, p1
+    int-to-float p1, p3
 
     mul-float p1, p1, v0
 
@@ -1373,25 +1336,24 @@
 
     float-to-int v6, p1
 
-    .line 14
+    .line 16
     iget-object v1, p0, Lj0/c;->q:Landroid/widget/OverScroller;
 
     invoke-virtual/range {v1 .. v6}, Landroid/widget/OverScroller;->startScroll(IIIII)V
 
     const/4 p1, 0x2
 
-    .line 15
-    invoke-virtual {p0, p1}, Lj0/c;->x(I)V
+    .line 17
+    invoke-virtual {p0, p1}, Lj0/c;->w(I)V
 
     const/4 p1, 0x1
 
     return p1
 .end method
 
-.method public p(I)Z
+.method public final o(I)Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lj0/c;->k:I
 
     const/4 v1, 0x1
@@ -1411,11 +1373,10 @@
     return v1
 .end method
 
-.method public final q(I)Z
+.method public final p(I)Z
     .locals 0
 
-    .line 1
-    invoke-virtual {p0, p1}, Lj0/c;->p(I)Z
+    invoke-virtual {p0, p1}, Lj0/c;->o(I)Z
 
     move-result p1
 
@@ -1431,7 +1392,7 @@
     return p1
 .end method
 
-.method public r(Landroid/view/View;II)Z
+.method public final q(Landroid/view/View;II)Z
     .locals 2
 
     const/4 v0, 0x0
@@ -1475,8 +1436,8 @@
     return v0
 .end method
 
-.method public s(Landroid/view/MotionEvent;)V
-    .locals 14
+.method public final r(Landroid/view/MotionEvent;)V
+    .locals 9
 
     .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
@@ -1591,7 +1552,7 @@
     float-to-int v6, v6
 
     .line 14
-    invoke-virtual {p0, v5, v6}, Lj0/c;->n(II)Landroid/view/View;
+    invoke-virtual {p0, v5, v6}, Lj0/c;->m(II)Landroid/view/View;
 
     move-result-object v5
 
@@ -1600,7 +1561,7 @@
     if-ne v5, v6, :cond_4
 
     .line 15
-    invoke-virtual {p0, v6, v4}, Lj0/c;->B(Landroid/view/View;I)Z
+    invoke-virtual {p0, v6, v4}, Lj0/c;->A(Landroid/view/View;I)Z
 
     move-result v4
 
@@ -1624,11 +1585,11 @@
     if-ne p1, v3, :cond_6
 
     .line 17
-    invoke-virtual {p0}, Lj0/c;->t()V
+    invoke-virtual {p0}, Lj0/c;->s()V
 
     .line 18
     :cond_6
-    invoke-virtual {p0, v0}, Lj0/c;->h(I)V
+    invoke-virtual {p0, v0}, Lj0/c;->g(I)V
 
     goto/16 :goto_6
 
@@ -1649,7 +1610,7 @@
     move-result p1
 
     .line 22
-    invoke-virtual {p0, v2, p1, v0}, Lj0/c;->v(FFI)V
+    invoke-virtual {p0, v2, p1, v0}, Lj0/c;->u(FFI)V
 
     .line 23
     iget v1, p0, Lj0/c;->a:I
@@ -1661,12 +1622,12 @@
     float-to-int p1, p1
 
     .line 24
-    invoke-virtual {p0, v1, p1}, Lj0/c;->n(II)Landroid/view/View;
+    invoke-virtual {p0, v1, p1}, Lj0/c;->m(II)Landroid/view/View;
 
     move-result-object p1
 
     .line 25
-    invoke-virtual {p0, p1, v0}, Lj0/c;->B(Landroid/view/View;I)Z
+    invoke-virtual {p0, p1, v0}, Lj0/c;->A(Landroid/view/View;I)Z
 
     .line 26
     iget-object p1, p0, Lj0/c;->h:[I
@@ -1674,18 +1635,16 @@
     aget p1, p1, v0
 
     .line 27
-    iget v1, p0, Lj0/c;->p:I
+    iget v0, p0, Lj0/c;->p:I
 
-    and-int v2, p1, v1
+    and-int/2addr p1, v0
 
-    if-eqz v2, :cond_19
+    if-eqz p1, :cond_19
 
     .line 28
-    iget-object v2, p0, Lj0/c;->r:Lj0/c$c;
+    iget-object p1, p0, Lj0/c;->r:Lj0/c$c;
 
-    and-int/2addr p1, v1
-
-    invoke-virtual {v2, p1, v0}, Lj0/c$c;->f(II)V
+    invoke-virtual {p1}, Lj0/c$c;->f()V
 
     goto/16 :goto_6
 
@@ -1697,7 +1656,7 @@
     .line 29
     iget-object v2, p0, Lj0/c;->s:Landroid/view/View;
 
-    invoke-virtual {p0, v2, v1, p1}, Lj0/c;->r(Landroid/view/View;II)Z
+    invoke-virtual {p0, v2, v1, p1}, Lj0/c;->q(Landroid/view/View;II)Z
 
     move-result p1
 
@@ -1706,7 +1665,7 @@
     .line 30
     iget-object p1, p0, Lj0/c;->s:Landroid/view/View;
 
-    invoke-virtual {p0, p1, v0}, Lj0/c;->B(Landroid/view/View;I)Z
+    invoke-virtual {p0, p1, v0}, Lj0/c;->A(Landroid/view/View;I)Z
 
     goto/16 :goto_6
 
@@ -1719,7 +1678,7 @@
     const/4 p1, 0x0
 
     .line 32
-    invoke-virtual {p0, p1, p1}, Lj0/c;->m(FF)V
+    invoke-virtual {p0, p1, p1}, Lj0/c;->l(FF)V
 
     .line 33
     :cond_a
@@ -1736,7 +1695,7 @@
     .line 35
     iget v0, p0, Lj0/c;->c:I
 
-    invoke-virtual {p0, v0}, Lj0/c;->q(I)Z
+    invoke-virtual {p0, v0}, Lj0/c;->p(I)Z
 
     move-result v0
 
@@ -1820,60 +1779,52 @@
 
     iget-object v7, p0, Lj0/c;->s:Landroid/view/View;
 
-    invoke-virtual {v6, v7, v2, v1}, Lj0/c$c;->a(Landroid/view/View;II)I
+    invoke-virtual {v6, v7, v2}, Lj0/c$c;->a(Landroid/view/View;I)I
 
     move-result v2
 
     .line 45
     iget-object v6, p0, Lj0/c;->s:Landroid/view/View;
 
-    sub-int v7, v2, v4
+    sub-int v4, v2, v4
 
-    invoke-static {v6, v7}, Lf0/r;->s(Landroid/view/View;I)V
+    invoke-static {v6, v4}, Lf0/r;->v(Landroid/view/View;I)V
 
     :cond_d
-    move v10, v2
-
     if-eqz v0, :cond_e
 
     .line 46
-    iget-object v2, p0, Lj0/c;->r:Lj0/c$c;
+    iget-object v4, p0, Lj0/c;->r:Lj0/c$c;
 
     iget-object v6, p0, Lj0/c;->s:Landroid/view/View;
 
-    invoke-virtual {v2, v6, v3, v0}, Lj0/c$c;->b(Landroid/view/View;II)I
+    invoke-virtual {v4, v6, v3}, Lj0/c$c;->b(Landroid/view/View;I)I
 
     move-result v3
 
     .line 47
-    iget-object v2, p0, Lj0/c;->s:Landroid/view/View;
+    iget-object v4, p0, Lj0/c;->s:Landroid/view/View;
 
-    sub-int v6, v3, v5
+    sub-int v5, v3, v5
 
-    invoke-static {v2, v6}, Lf0/r;->t(Landroid/view/View;I)V
+    invoke-static {v4, v5}, Lf0/r;->w(Landroid/view/View;I)V
 
     :cond_e
-    move v11, v3
-
     if-nez v1, :cond_f
 
     if-eqz v0, :cond_10
 
-    :cond_f
-    sub-int v12, v10, v4
-
-    sub-int v13, v11, v5
-
     .line 48
-    iget-object v8, p0, Lj0/c;->r:Lj0/c$c;
+    :cond_f
+    iget-object v0, p0, Lj0/c;->r:Lj0/c$c;
 
-    iget-object v9, p0, Lj0/c;->s:Landroid/view/View;
+    iget-object v1, p0, Lj0/c;->s:Landroid/view/View;
 
-    invoke-virtual/range {v8 .. v13}, Lj0/c$c;->i(Landroid/view/View;IIII)V
+    invoke-virtual {v0, v1, v2, v3}, Lj0/c$c;->i(Landroid/view/View;II)V
 
     .line 49
     :cond_10
-    invoke-virtual {p0, p1}, Lj0/c;->w(Landroid/view/MotionEvent;)V
+    invoke-virtual {p0, p1}, Lj0/c;->v(Landroid/view/MotionEvent;)V
 
     goto/16 :goto_6
 
@@ -1892,7 +1843,7 @@
     move-result v1
 
     .line 52
-    invoke-virtual {p0, v1}, Lj0/c;->q(I)Z
+    invoke-virtual {p0, v1}, Lj0/c;->p(I)Z
 
     move-result v4
 
@@ -1926,7 +1877,7 @@
     sub-float v7, v5, v7
 
     .line 57
-    invoke-virtual {p0, v6, v7, v1}, Lj0/c;->u(FFI)V
+    invoke-virtual {p0, v6, v7, v1}, Lj0/c;->t(FFI)V
 
     .line 58
     iget v8, p0, Lj0/c;->a:I
@@ -1941,7 +1892,7 @@
     float-to-int v5, v5
 
     .line 59
-    invoke-virtual {p0, v4, v5}, Lj0/c;->n(II)Landroid/view/View;
+    invoke-virtual {p0, v4, v5}, Lj0/c;->m(II)Landroid/view/View;
 
     move-result-object v4
 
@@ -1953,7 +1904,7 @@
     if-eqz v5, :cond_14
 
     .line 61
-    invoke-virtual {p0, v4, v1}, Lj0/c;->B(Landroid/view/View;I)Z
+    invoke-virtual {p0, v4, v1}, Lj0/c;->A(Landroid/view/View;I)Z
 
     move-result v1
 
@@ -1970,7 +1921,7 @@
     .line 62
     :cond_15
     :goto_5
-    invoke-virtual {p0, p1}, Lj0/c;->w(Landroid/view/MotionEvent;)V
+    invoke-virtual {p0, p1}, Lj0/c;->v(Landroid/view/MotionEvent;)V
 
     goto :goto_6
 
@@ -1981,7 +1932,7 @@
     if-ne p1, v3, :cond_17
 
     .line 64
-    invoke-virtual {p0}, Lj0/c;->t()V
+    invoke-virtual {p0}, Lj0/c;->s()V
 
     .line 65
     :cond_17
@@ -2010,41 +1961,39 @@
     float-to-int v3, v1
 
     .line 69
-    invoke-virtual {p0, v2, v3}, Lj0/c;->n(II)Landroid/view/View;
+    invoke-virtual {p0, v2, v3}, Lj0/c;->m(II)Landroid/view/View;
 
     move-result-object v2
 
     .line 70
-    invoke-virtual {p0, v0, v1, p1}, Lj0/c;->v(FFI)V
+    invoke-virtual {p0, v0, v1, p1}, Lj0/c;->u(FFI)V
 
     .line 71
-    invoke-virtual {p0, v2, p1}, Lj0/c;->B(Landroid/view/View;I)Z
+    invoke-virtual {p0, v2, p1}, Lj0/c;->A(Landroid/view/View;I)Z
 
     .line 72
     iget-object v0, p0, Lj0/c;->h:[I
 
-    aget v0, v0, p1
+    aget p1, v0, p1
 
     .line 73
-    iget v1, p0, Lj0/c;->p:I
+    iget v0, p0, Lj0/c;->p:I
 
-    and-int v2, v0, v1
+    and-int/2addr p1, v0
 
-    if-eqz v2, :cond_19
+    if-eqz p1, :cond_19
 
     .line 74
-    iget-object v2, p0, Lj0/c;->r:Lj0/c$c;
+    iget-object p1, p0, Lj0/c;->r:Lj0/c$c;
 
-    and-int/2addr v0, v1
-
-    invoke-virtual {v2, v0, p1}, Lj0/c$c;->f(II)V
+    invoke-virtual {p1}, Lj0/c$c;->f()V
 
     :cond_19
     :goto_6
     return-void
 .end method
 
-.method public final t()V
+.method public final s()V
     .locals 4
 
     .line 1
@@ -2095,12 +2044,12 @@
     move-result v1
 
     .line 8
-    invoke-virtual {p0, v0, v1}, Lj0/c;->m(FF)V
+    invoke-virtual {p0, v0, v1}, Lj0/c;->l(FF)V
 
     return-void
 .end method
 
-.method public final u(FFI)V
+.method public final t(FFI)V
     .locals 2
 
     const/4 v0, 0x1
@@ -2166,7 +2115,7 @@
     return-void
 .end method
 
-.method public final v(FFI)V
+.method public final u(FFI)V
     .locals 10
 
     .line 1
@@ -2304,7 +2253,7 @@
     .line 26
     iget-object v2, p0, Lj0/c;->u:Landroid/view/ViewGroup;
 
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getLeft()I
+    invoke-virtual {v2}, Landroid/view/View;->getLeft()I
 
     move-result v2
 
@@ -2322,7 +2271,7 @@
     :cond_3
     iget-object v2, p0, Lj0/c;->u:Landroid/view/ViewGroup;
 
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getTop()I
+    invoke-virtual {v2}, Landroid/view/View;->getTop()I
 
     move-result v2
 
@@ -2338,7 +2287,7 @@
     :cond_4
     iget-object v2, p0, Lj0/c;->u:Landroid/view/ViewGroup;
 
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getRight()I
+    invoke-virtual {v2}, Landroid/view/View;->getRight()I
 
     move-result v2
 
@@ -2354,7 +2303,7 @@
     :cond_5
     iget-object p1, p0, Lj0/c;->u:Landroid/view/ViewGroup;
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getBottom()I
+    invoke-virtual {p1}, Landroid/view/View;->getBottom()I
 
     move-result p1
 
@@ -2382,7 +2331,7 @@
     return-void
 .end method
 
-.method public final w(Landroid/view/MotionEvent;)V
+.method public final v(Landroid/view/MotionEvent;)V
     .locals 6
 
     .line 1
@@ -2401,7 +2350,7 @@
     move-result v2
 
     .line 3
-    invoke-virtual {p0, v2}, Lj0/c;->q(I)Z
+    invoke-virtual {p0, v2}, Lj0/c;->p(I)Z
 
     move-result v3
 
@@ -2439,15 +2388,15 @@
     return-void
 .end method
 
-.method public x(I)V
+.method public final w(I)V
     .locals 2
 
     .line 1
     iget-object v0, p0, Lj0/c;->u:Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lj0/c;->v:Ljava/lang/Runnable;
+    iget-object v1, p0, Lj0/c;->v:Lj0/c$b;
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 2
     iget v0, p0, Lj0/c;->a:I
@@ -2476,7 +2425,7 @@
     return-void
 .end method
 
-.method public y(II)Z
+.method public final x(II)Z
     .locals 3
 
     .line 1
@@ -2508,7 +2457,7 @@
     float-to-int v1, v1
 
     .line 5
-    invoke-virtual {p0, p1, p2, v0, v1}, Lj0/c;->o(IIII)Z
+    invoke-virtual {p0, p1, p2, v0, v1}, Lj0/c;->n(IIII)Z
 
     move-result p1
 
@@ -2525,7 +2474,7 @@
     throw p1
 .end method
 
-.method public z(Landroid/view/MotionEvent;)Z
+.method public final y(Landroid/view/MotionEvent;)Z
     .locals 16
 
     move-object/from16 v0, p0
@@ -2597,7 +2546,7 @@
     move-result v1
 
     .line 8
-    invoke-virtual {v0, v1}, Lj0/c;->h(I)V
+    invoke-virtual {v0, v1}, Lj0/c;->g(I)V
 
     goto/16 :goto_4
 
@@ -2618,7 +2567,7 @@
     move-result v1
 
     .line 12
-    invoke-virtual {v0, v7, v1, v2}, Lj0/c;->v(FFI)V
+    invoke-virtual {v0, v7, v1, v2}, Lj0/c;->u(FFI)V
 
     .line 13
     iget v3, v0, Lj0/c;->a:I
@@ -2631,16 +2580,16 @@
     aget v1, v1, v2
 
     .line 15
-    iget v3, v0, Lj0/c;->p:I
+    iget v2, v0, Lj0/c;->p:I
 
-    and-int/2addr v1, v3
+    and-int/2addr v1, v2
 
     if-eqz v1, :cond_f
 
     .line 16
-    iget-object v3, v0, Lj0/c;->r:Lj0/c$c;
+    iget-object v1, v0, Lj0/c;->r:Lj0/c$c;
 
-    invoke-virtual {v3, v1, v2}, Lj0/c$c;->f(II)V
+    invoke-virtual {v1}, Lj0/c$c;->f()V
 
     goto/16 :goto_4
 
@@ -2652,7 +2601,7 @@
     float-to-int v1, v1
 
     .line 17
-    invoke-virtual {v0, v3, v1}, Lj0/c;->n(II)Landroid/view/View;
+    invoke-virtual {v0, v3, v1}, Lj0/c;->m(II)Landroid/view/View;
 
     move-result-object v1
 
@@ -2662,7 +2611,7 @@
     if-ne v1, v3, :cond_f
 
     .line 19
-    invoke-virtual {v0, v1, v2}, Lj0/c;->B(Landroid/view/View;I)Z
+    invoke-virtual {v0, v1, v2}, Lj0/c;->A(Landroid/view/View;I)Z
 
     goto/16 :goto_4
 
@@ -2695,7 +2644,7 @@
     move-result v4
 
     .line 23
-    invoke-virtual {v0, v4}, Lj0/c;->q(I)Z
+    invoke-virtual {v0, v4}, Lj0/c;->p(I)Z
 
     move-result v7
 
@@ -2733,7 +2682,7 @@
     float-to-int v8, v8
 
     .line 28
-    invoke-virtual {v0, v7, v8}, Lj0/c;->n(II)Landroid/view/View;
+    invoke-virtual {v0, v7, v8}, Lj0/c;->m(II)Landroid/view/View;
 
     move-result-object v7
 
@@ -2763,12 +2712,12 @@
 
     float-to-int v12, v9
 
-    add-int v13, v11, v12
+    add-int/2addr v12, v11
 
     .line 31
-    iget-object v14, v0, Lj0/c;->r:Lj0/c$c;
+    iget-object v13, v0, Lj0/c;->r:Lj0/c$c;
 
-    invoke-virtual {v14, v7, v13, v12}, Lj0/c$c;->a(Landroid/view/View;II)I
+    invoke-virtual {v13, v7, v12}, Lj0/c$c;->a(Landroid/view/View;I)I
 
     move-result v12
 
@@ -2779,47 +2728,47 @@
 
     float-to-int v14, v10
 
-    add-int v15, v13, v14
+    add-int/2addr v14, v13
 
     .line 33
-    iget-object v5, v0, Lj0/c;->r:Lj0/c$c;
+    iget-object v15, v0, Lj0/c;->r:Lj0/c$c;
 
-    invoke-virtual {v5, v7, v15, v14}, Lj0/c$c;->b(Landroid/view/View;II)I
-
-    move-result v5
-
-    .line 34
-    iget-object v14, v0, Lj0/c;->r:Lj0/c$c;
-
-    invoke-virtual {v14, v7}, Lj0/c$c;->c(Landroid/view/View;)I
+    invoke-virtual {v15, v7, v14}, Lj0/c$c;->b(Landroid/view/View;I)I
 
     move-result v14
 
-    .line 35
+    .line 34
     iget-object v15, v0, Lj0/c;->r:Lj0/c$c;
 
-    invoke-virtual {v15, v7}, Lj0/c$c;->d(Landroid/view/View;)I
+    invoke-virtual {v15, v7}, Lj0/c$c;->c(Landroid/view/View;)I
 
     move-result v15
 
-    if-eqz v14, :cond_9
+    .line 35
+    iget-object v5, v0, Lj0/c;->r:Lj0/c$c;
 
-    if-lez v14, :cond_a
+    invoke-virtual {v5}, Lj0/c$c;->d()I
+
+    move-result v5
+
+    if-eqz v15, :cond_9
+
+    if-lez v15, :cond_a
 
     if-ne v12, v11, :cond_a
 
     :cond_9
-    if-eqz v15, :cond_d
+    if-eqz v5, :cond_d
 
-    if-lez v15, :cond_a
+    if-lez v5, :cond_a
 
-    if-ne v5, v13, :cond_a
+    if-ne v14, v13, :cond_a
 
     goto :goto_3
 
     .line 36
     :cond_a
-    invoke-virtual {v0, v9, v10, v4}, Lj0/c;->u(FFI)V
+    invoke-virtual {v0, v9, v10, v4}, Lj0/c;->t(FFI)V
 
     .line 37
     iget v5, v0, Lj0/c;->a:I
@@ -2832,7 +2781,7 @@
     if-eqz v8, :cond_c
 
     .line 38
-    invoke-virtual {v0, v7, v4}, Lj0/c;->B(Landroid/view/View;I)Z
+    invoke-virtual {v0, v7, v4}, Lj0/c;->A(Landroid/view/View;I)Z
 
     move-result v4
 
@@ -2849,7 +2798,7 @@
     .line 39
     :cond_d
     :goto_3
-    invoke-virtual/range {p0 .. p1}, Lj0/c;->w(Landroid/view/MotionEvent;)V
+    invoke-virtual/range {p0 .. p1}, Lj0/c;->v(Landroid/view/MotionEvent;)V
 
     goto :goto_4
 
@@ -2882,14 +2831,14 @@
     move-result v1
 
     .line 44
-    invoke-virtual {v0, v2, v3, v1}, Lj0/c;->v(FFI)V
+    invoke-virtual {v0, v2, v3, v1}, Lj0/c;->u(FFI)V
 
     float-to-int v2, v2
 
     float-to-int v3, v3
 
     .line 45
-    invoke-virtual {v0, v2, v3}, Lj0/c;->n(II)Landroid/view/View;
+    invoke-virtual {v0, v2, v3}, Lj0/c;->m(II)Landroid/view/View;
 
     move-result-object v2
 
@@ -2903,25 +2852,25 @@
     if-ne v3, v4, :cond_11
 
     .line 47
-    invoke-virtual {v0, v2, v1}, Lj0/c;->B(Landroid/view/View;I)Z
+    invoke-virtual {v0, v2, v1}, Lj0/c;->A(Landroid/view/View;I)Z
 
     .line 48
     :cond_11
     iget-object v2, v0, Lj0/c;->h:[I
 
-    aget v2, v2, v1
+    aget v1, v2, v1
 
     .line 49
-    iget v3, v0, Lj0/c;->p:I
+    iget v2, v0, Lj0/c;->p:I
 
-    and-int/2addr v2, v3
+    and-int/2addr v1, v2
 
-    if-eqz v2, :cond_12
+    if-eqz v1, :cond_12
 
     .line 50
-    iget-object v3, v0, Lj0/c;->r:Lj0/c$c;
+    iget-object v1, v0, Lj0/c;->r:Lj0/c$c;
 
-    invoke-virtual {v3, v2, v1}, Lj0/c$c;->f(II)V
+    invoke-virtual {v1}, Lj0/c$c;->f()V
 
     .line 51
     :cond_12
@@ -2934,4 +2883,42 @@
 
     :cond_13
     return v5
+.end method
+
+.method public final z(Landroid/view/View;II)Z
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lj0/c;->s:Landroid/view/View;
+
+    const/4 p1, -0x1
+
+    .line 2
+    iput p1, p0, Lj0/c;->c:I
+
+    const/4 p1, 0x0
+
+    .line 3
+    invoke-virtual {p0, p2, p3, p1, p1}, Lj0/c;->n(IIII)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    .line 4
+    iget p2, p0, Lj0/c;->a:I
+
+    if-nez p2, :cond_0
+
+    iget-object p2, p0, Lj0/c;->s:Landroid/view/View;
+
+    if-eqz p2, :cond_0
+
+    const/4 p2, 0x0
+
+    .line 5
+    iput-object p2, p0, Lj0/c;->s:Landroid/view/View;
+
+    :cond_0
+    return p1
 .end method

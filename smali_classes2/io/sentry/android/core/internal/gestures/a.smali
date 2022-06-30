@@ -43,7 +43,7 @@
     return p1
 .end method
 
-.method public synthetic skipChildren()Z
+.method public final synthetic skipChildren()Z
     .locals 1
 
     invoke-static {p0}, Lio/sentry/android/core/internal/gestures/c;->a(Lio/sentry/android/core/internal/gestures/ViewTargetSelector;)Z

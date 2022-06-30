@@ -1,4 +1,4 @@
-.class public Landroidx/core/widget/a$a;
+.class public final Landroidx/core/widget/a$a;
 .super Ljava/lang/Object;
 .source "AutoScrollHelper.java"
 
@@ -27,15 +27,11 @@
 
 .field public f:J
 
-.field public g:I
+.field public g:J
 
-.field public h:I
+.field public h:F
 
-.field public i:J
-
-.field public j:F
-
-.field public k:I
+.field public i:I
 
 
 # direct methods
@@ -53,20 +49,12 @@
     const-wide/16 v0, -0x1
 
     .line 3
-    iput-wide v0, p0, Landroidx/core/widget/a$a;->i:J
+    iput-wide v0, p0, Landroidx/core/widget/a$a;->g:J
 
     const-wide/16 v0, 0x0
 
     .line 4
     iput-wide v0, p0, Landroidx/core/widget/a$a;->f:J
-
-    const/4 v0, 0x0
-
-    .line 5
-    iput v0, p0, Landroidx/core/widget/a$a;->g:I
-
-    .line 6
-    iput v0, p0, Landroidx/core/widget/a$a;->h:I
 
     return-void
 .end method
@@ -89,7 +77,7 @@
 
     .line 2
     :cond_0
-    iget-wide v3, p0, Landroidx/core/widget/a$a;->i:J
+    iget-wide v3, p0, Landroidx/core/widget/a$a;->g:J
 
     const-wide/16 v5, 0x0
 
@@ -109,13 +97,13 @@
     sub-long/2addr p1, v3
 
     .line 3
-    iget v0, p0, Landroidx/core/widget/a$a;->j:F
+    iget v0, p0, Landroidx/core/widget/a$a;->h:F
 
     sub-float v1, v7, v0
 
     long-to-float p1, p1
 
-    iget p2, p0, Landroidx/core/widget/a$a;->k:I
+    iget p2, p0, Landroidx/core/widget/a$a;->i:I
 
     int-to-float p2, p2
 

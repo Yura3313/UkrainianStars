@@ -1,70 +1,75 @@
 .class public final Lzd/d$d;
 .super Ljava/lang/Object;
-.source "-ViewPumpLayoutInflater.kt"
+.source "YoungPlayerRegisterEnterEmailPageFragment.kt"
 
 # interfaces
-.implements Lyd/a;
+.implements Landroid/view/View$OnFocusChangeListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lzd/d;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lzd/d;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = "d"
+    name = null
 .end annotation
 
 
 # instance fields
-.field public final a:Lzd/d;
+.field public final synthetic f:Lzd/d;
 
 
 # direct methods
 .method public constructor <init>(Lzd/d;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lzd/d$d;->f:Lzd/d;
 
-    iput-object p1, p0, Lzd/d$d;->a:Lzd/d;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onCreateView(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
+.method public final onFocusChange(Landroid/view/View;Z)V
     .locals 1
 
-    const/4 v0, 0x0
-
-    if-eqz p2, :cond_1
-
-    if-eqz p3, :cond_0
+    if-eqz p2, :cond_0
 
     .line 1
-    iget-object p3, p0, Lzd/d$d;->a:Lzd/d;
+    iget-object p2, p0, Lzd/d$d;->f:Lzd/d;
 
-    invoke-static {p3, p1, p2, p4}, Lzd/d;->a(Lzd/d;Landroid/view/View;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;
+    sget v0, Lcom/supercell/id/R$id;->registerEnterEmailScrollView:I
 
-    move-result-object p1
+    invoke-virtual {p2, v0}, Lzd/d;->W0(I)Landroid/view/View;
 
-    return-object p1
+    move-result-object p2
 
-    :cond_0
-    const-string p1, "context"
+    check-cast p2, Landroid/widget/ScrollView;
+
+    const-string v0, "registerEnterEmailScrollView"
+
+    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "v"
+
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p2, p1}, Lae/z2;->t(Landroid/widget/ScrollView;Landroid/view/View;)V
+
+    goto :goto_0
 
     .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    :cond_0
+    new-instance p2, Lzd/d$d$a;
 
-    throw v0
+    invoke-direct {p2, p0}, Lzd/d$d$a;-><init>(Lzd/d$d;)V
 
-    :cond_1
-    const-string p1, "name"
+    invoke-virtual {p1, p2}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    :goto_0
+    return-void
 .end method

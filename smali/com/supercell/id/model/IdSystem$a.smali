@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/model/IdSystem;-><clinit>()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/supercell/id/model/IdSystem;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,8 +37,8 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 9
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,12 +48,12 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "source"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    new-instance v8, Lcom/supercell/id/model/IdSystem;
+    new-instance v0, Lcom/supercell/id/model/IdSystem;
 
     .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -66,18 +65,18 @@
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
     const/4 v3, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
     const/4 v3, 0x0
 
@@ -98,13 +97,13 @@
     move-result-object v6
 
     .line 7
-    const-class v0, Lcom/supercell/id/model/IdSeason;
+    const-class v1, Lcom/supercell/id/model/IdSeason;
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+    invoke-virtual {p1, v1}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
 
     move-result-object p1
 
@@ -112,29 +111,23 @@
 
     check-cast v7, Lcom/supercell/id/model/IdSeason;
 
-    move-object v1, v8
+    move-object v1, v0
 
     .line 8
     invoke-direct/range {v1 .. v7}, Lcom/supercell/id/model/IdSystem;-><init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/supercell/id/model/IdSeason;)V
 
-    return-object v8
+    return-object v0
 
     .line 9
     :cond_1
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    const/4 p1, 0x0
 
-    :cond_2
-    const-string p1, "source"
-
-    .line 10
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    throw p1
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -143,7 +136,6 @@
         }
     .end annotation
 
-    .line 1
     new-array p1, p1, [Lcom/supercell/id/model/IdSystem;
 
     return-object p1

@@ -22,7 +22,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -94,7 +93,7 @@
     array-length v2, p0
 
     .line 3
-    invoke-virtual {v0}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
+    invoke-virtual {v0}, Ljava/util/AbstractMap;->keySet()Ljava/util/Set;
 
     move-result-object v0
 
@@ -149,7 +148,6 @@
 
     const-string v1, "NONE"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -164,7 +162,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getInt(Ljava/lang/String;I)I
 
     move-result v0
@@ -179,7 +176,6 @@
 
     const/16 v1, 0x16d
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getInt(Ljava/lang/String;I)I
 
     move-result v0
@@ -209,7 +205,7 @@
     const-string v2, "agreementType"
 
     .line 2
-    invoke-virtual {v0, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -258,7 +254,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -273,7 +268,6 @@
 
     const-string v1, "0.0.0"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -329,14 +323,14 @@
     const-string v0, "appOption"
 
     .line 3
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 4
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -470,7 +464,7 @@
     if-eqz v0, :cond_1
 
     .line 2
-    invoke-virtual {v0}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
+    invoke-virtual {v0}, Ljava/util/AbstractMap;->keySet()Ljava/util/Set;
 
     move-result-object v1
 
@@ -499,7 +493,7 @@
     if-eqz v3, :cond_0
 
     .line 4
-    invoke-virtual {v0, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -522,7 +516,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -541,7 +534,6 @@
 
     move-wide v1, v3
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -556,7 +548,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -571,7 +562,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -586,7 +576,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -601,7 +590,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -616,7 +604,6 @@
 
     const-string v1, "7gnfn7f96rnanmt1s5iaa3kdruhuneu"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -631,7 +618,6 @@
 
     const-string v1, "djfdskj12328438djdgjcjeejhdew15"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -750,7 +736,8 @@
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lorg/json/JSONException;->toString()Ljava/lang/String;
+    .line 12
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -774,7 +761,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -789,7 +775,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -804,7 +789,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -819,7 +803,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -838,7 +821,6 @@
 
     move-wide v1, v3
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -908,7 +890,6 @@
 
     move-wide v2, v4
 
-    .line 1
     invoke-static/range {v0 .. v7}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/util/Map;Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -927,7 +908,6 @@
 
     const-wide/16 v5, 0xa
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -956,7 +936,7 @@
     if-eqz v1, :cond_5
 
     .line 2
-    invoke-virtual {v1}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
+    invoke-virtual {v1}, Ljava/util/AbstractMap;->keySet()Ljava/util/Set;
 
     move-result-object v2
 
@@ -985,7 +965,7 @@
     if-eqz v4, :cond_0
 
     .line 4
-    invoke-virtual {v1, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -1116,7 +1096,6 @@
 
     const-wide/16 v5, 0x14
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -1135,7 +1114,6 @@
 
     const-wide/16 v5, 0x5
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -1154,7 +1132,6 @@
 
     move-wide v3, v5
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -1169,7 +1146,6 @@
 
     const-string v1, "b218d36220410f7bea5090124dd99e37e0d1c923bd576edfc2ca96107aa54b33"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1375,6 +1351,7 @@
 
     move-result-object v0
 
+    .line 6
     invoke-static {v1}, Lcom/kakaogame/util/AndroidManifestUtil;->getPackageName(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
@@ -1400,7 +1377,6 @@
 
     const-wide/16 v5, 0x258
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -1423,7 +1399,6 @@
 
     const-wide/16 v5, 0x64
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -1442,7 +1417,6 @@
 
     const-wide/16 v5, 0x64
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -1457,7 +1431,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1472,7 +1445,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1487,7 +1459,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getInt(Ljava/lang/String;I)I
 
     move-result v0
@@ -1502,7 +1473,6 @@
 
     const/16 v1, 0x64
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getInt(Ljava/lang/String;I)I
 
     move-result v0
@@ -1517,7 +1487,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1532,7 +1501,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1547,7 +1515,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1562,7 +1529,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1581,7 +1547,6 @@
 
     const-wide/16 v5, 0x3c
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -1634,7 +1599,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {v1}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
+    invoke-virtual {v1}, Ljava/util/AbstractMap;->keySet()Ljava/util/Set;
 
     move-result-object v3
 
@@ -1664,7 +1629,7 @@
     if-eqz v5, :cond_1
 
     .line 5
-    invoke-virtual {v1, v4}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v4}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -1679,12 +1644,24 @@
 
     move-result-object v4
 
-    const-string v5, "customStringSet: "
+    .line 7
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "customStringSet: "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
 
     const-string v6, "InfodeskHelper"
 
-    .line 7
-    invoke-static {v5, v4, v6}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v6, v5}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8
     :try_start_0
@@ -1789,7 +1766,8 @@
 
     move-result-object v5
 
-    invoke-virtual {v4}, Lorg/json/JSONException;->toString()Ljava/lang/String;
+    .line 20
+    invoke-virtual {v4}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1830,7 +1808,7 @@
     const-string v2, "serverConnectionType"
 
     .line 2
-    invoke-virtual {v0, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1883,7 +1861,6 @@
 
     move-wide v1, v5
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -1898,7 +1875,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1913,7 +1889,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1928,7 +1903,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1943,7 +1917,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1958,7 +1931,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1973,7 +1945,6 @@
 
     const/4 v1, -0x1
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getInt(Ljava/lang/String;I)I
 
     move-result v0
@@ -1996,7 +1967,7 @@
     if-eqz v0, :cond_1
 
     .line 2
-    invoke-virtual {v0}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
+    invoke-virtual {v0}, Ljava/util/AbstractMap;->keySet()Ljava/util/Set;
 
     move-result-object v1
 
@@ -2025,7 +1996,7 @@
     if-eqz v3, :cond_0
 
     .line 4
-    invoke-virtual {v0, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -2053,7 +2024,6 @@
 
     const-string v0, "stringSet"
 
-    .line 1
     invoke-static {v0, p0}, Lcom/kakaogame/infodesk/InfodeskHelper;->getResourceMapData(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;
 
     move-result-object p0
@@ -2096,7 +2066,7 @@
     const-string v2, "supportedIdpCodes"
 
     .line 3
-    invoke-virtual {v1, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -2108,14 +2078,14 @@
 
     .line 4
     :goto_0
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v1}, Ljava/util/AbstractCollection;->size()I
 
     move-result v3
 
     if-ge v2, v3, :cond_1
 
     .line 5
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -2139,7 +2109,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -2154,7 +2123,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -2169,7 +2137,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -2184,7 +2151,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -2205,7 +2171,6 @@
 
     aput-object v2, v0, v1
 
-    .line 1
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
     move-result v0
@@ -2224,7 +2189,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -2242,6 +2206,7 @@
 
     move-result-object v0
 
+    .line 2
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v1
@@ -2262,7 +2227,7 @@
 
     const/4 v1, -0x1
 
-    .line 2
+    .line 3
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getInt(Ljava/lang/String;I)I
 
     move-result v0
@@ -2273,7 +2238,6 @@
 .method public static getValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -2309,7 +2273,7 @@
     if-eqz v0, :cond_4
 
     .line 2
-    invoke-virtual {v0}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
+    invoke-virtual {v0}, Ljava/util/AbstractMap;->keySet()Ljava/util/Set;
 
     move-result-object v2
 
@@ -2338,7 +2302,7 @@
     if-eqz v4, :cond_0
 
     .line 4
-    invoke-virtual {v0, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -2355,7 +2319,7 @@
     .line 7
     check-cast p0, Lcom/kakaogame/util/json/JSONArray;
 
-    invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
 
@@ -2382,7 +2346,7 @@
     const-string v2, "version"
 
     .line 10
-    invoke-virtual {v1, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -2393,14 +2357,14 @@
     const-string v5, "level"
 
     .line 11
-    invoke-virtual {v1, v5}, Ljava/util/LinkedHashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v5}, Ljava/util/AbstractMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v6
 
     if-eqz v6, :cond_2
 
     .line 12
-    invoke-virtual {v1, v5}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v5}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -2438,7 +2402,6 @@
 
     const-wide/16 v5, 0x294
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/kakaogame/infodesk/InfodeskHelper;->getLong(Ljava/lang/String;JJJ)J
 
     move-result-wide v0
@@ -2501,7 +2464,6 @@
 
     aput-object v2, v0, v1
 
-    .line 1
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
     move-result v0
@@ -2553,7 +2515,6 @@
 
     aput-object v2, v0, v1
 
-    .line 1
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
     move-result v0
@@ -2574,7 +2535,6 @@
 
     aput-object v2, v0, v1
 
-    .line 1
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
     move-result v0
@@ -2589,7 +2549,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
@@ -2651,7 +2610,6 @@
 
     aput-object v2, v0, v1
 
-    .line 1
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
     move-result v0
@@ -2672,7 +2630,6 @@
 
     aput-object v2, v0, v1
 
-    .line 1
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
     move-result v0
@@ -2693,7 +2650,6 @@
 
     aput-object v2, v0, v1
 
-    .line 1
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
     move-result v0
@@ -2714,7 +2670,6 @@
 
     aput-object v2, v0, v1
 
-    .line 1
     invoke-static {v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->containsKey([Ljava/lang/String;)Z
 
     move-result v0
@@ -2853,7 +2808,6 @@
 
     const v1, -0xc1c1c2
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getInt(Ljava/lang/String;I)I
 
     move-result v0
@@ -2868,7 +2822,6 @@
 
     const/4 v1, -0x1
 
-    .line 1
     invoke-static {v0, v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getInt(Ljava/lang/String;I)I
 
     move-result v0

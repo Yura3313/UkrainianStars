@@ -17,7 +17,6 @@
 .method public static constructor <clinit>()V
     .locals 8
 
-    .line 1
     new-instance v7, Ljava/util/concurrent/ThreadPoolExecutor;
 
     sget-object v5, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
@@ -44,7 +43,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -53,7 +51,6 @@
 .method public static getThreadPoolExecutor()Ljava/util/concurrent/ThreadPoolExecutor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/manager/ThreadPoolManager;->threadPool:Ljava/util/concurrent/ThreadPoolExecutor;
 
     return-object v0

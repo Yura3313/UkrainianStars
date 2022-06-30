@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/c0$b;
+.class public final Landroidx/recyclerview/widget/c0$b;
 .super Landroidx/recyclerview/widget/p;
 .source "SnapHelper.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Landroidx/recyclerview/widget/c0;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/c0$b;->p:Landroidx/recyclerview/widget/c0;
 
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/p;-><init>(Landroid/content/Context;)V
@@ -32,70 +31,69 @@
 
 
 # virtual methods
-.method public d(Landroid/view/View;Landroidx/recyclerview/widget/RecyclerView$w;Landroidx/recyclerview/widget/RecyclerView$v$a;)V
-    .locals 2
+.method public final d(Landroid/view/View;Landroidx/recyclerview/widget/RecyclerView$v$a;)V
+    .locals 3
 
     .line 1
-    iget-object p2, p0, Landroidx/recyclerview/widget/c0$b;->p:Landroidx/recyclerview/widget/c0;
+    iget-object v0, p0, Landroidx/recyclerview/widget/c0$b;->p:Landroidx/recyclerview/widget/c0;
 
-    iget-object v0, p2, Landroidx/recyclerview/widget/c0;->a:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, v0, Landroidx/recyclerview/widget/c0;->a:Landroidx/recyclerview/widget/RecyclerView;
 
-    if-nez v0, :cond_0
+    if-nez v1, :cond_0
 
     return-void
 
     .line 2
     :cond_0
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$m;
+    invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$m;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {p2, v0, p1}, Landroidx/recyclerview/widget/c0;->b(Landroidx/recyclerview/widget/RecyclerView$m;Landroid/view/View;)[I
+    invoke-virtual {v0, v1, p1}, Landroidx/recyclerview/widget/c0;->b(Landroidx/recyclerview/widget/RecyclerView$m;Landroid/view/View;)[I
 
     move-result-object p1
 
-    const/4 p2, 0x0
+    const/4 v0, 0x0
 
     .line 3
-    aget p2, p1, p2
+    aget v0, p1, v0
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
     .line 4
-    aget p1, p1, v0
+    aget p1, p1, v1
 
     .line 5
-    invoke-static {p2}, Ljava/lang/Math;->abs(I)I
-
-    move-result v0
-
-    invoke-static {p1}, Ljava/lang/Math;->abs(I)I
+    invoke-static {v0}, Ljava/lang/Math;->abs(I)I
 
     move-result v1
 
-    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+    invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
-    move-result v0
+    move-result v2
 
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/p;->h(I)I
+    invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
 
-    move-result v0
+    move-result v1
 
-    if-lez v0, :cond_1
+    invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/p;->h(I)I
+
+    move-result v1
+
+    if-lez v1, :cond_1
 
     .line 6
-    iget-object v1, p0, Landroidx/recyclerview/widget/p;->i:Landroid/view/animation/DecelerateInterpolator;
+    iget-object v2, p0, Landroidx/recyclerview/widget/p;->i:Landroid/view/animation/DecelerateInterpolator;
 
-    invoke-virtual {p3, p2, p1, v0, v1}, Landroidx/recyclerview/widget/RecyclerView$v$a;->b(IIILandroid/view/animation/Interpolator;)V
+    invoke-virtual {p2, v0, p1, v1, v2}, Landroidx/recyclerview/widget/RecyclerView$v$a;->b(IIILandroid/view/animation/Interpolator;)V
 
     :cond_1
     return-void
 .end method
 
-.method public g(Landroid/util/DisplayMetrics;)F
+.method public final g(Landroid/util/DisplayMetrics;)F
     .locals 1
 
-    .line 1
     iget p1, p1, Landroid/util/DisplayMetrics;->densityDpi:I
 
     int-to-float p1, p1

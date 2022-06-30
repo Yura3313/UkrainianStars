@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/Toolbar$d;
+.class public final Landroidx/appcompat/widget/Toolbar$d;
 .super Ljava/lang/Object;
 .source "Toolbar.java"
 
@@ -18,19 +18,18 @@
 
 
 # instance fields
-.field public g:Landroidx/appcompat/view/menu/e;
+.field public f:Landroidx/appcompat/view/menu/e;
 
-.field public h:Landroidx/appcompat/view/menu/g;
+.field public g:Landroidx/appcompat/view/menu/g;
 
-.field public final synthetic i:Landroidx/appcompat/widget/Toolbar;
+.field public final synthetic h:Landroidx/appcompat/widget/Toolbar;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/Toolbar;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
+    iput-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,22 +38,22 @@
 
 
 # virtual methods
-.method public b(Landroidx/appcompat/view/menu/e;Z)V
+.method public final b(Landroidx/appcompat/view/menu/e;Z)V
     .locals 0
 
     return-void
 .end method
 
-.method public c(Z)V
+.method public final c(Z)V
     .locals 4
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/view/menu/g;
+    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/g;
 
     if-eqz p1, :cond_2
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/e;
+    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->f:Landroidx/appcompat/view/menu/e;
 
     const/4 v0, 0x0
 
@@ -71,14 +70,14 @@
     if-ge v1, p1, :cond_1
 
     .line 4
-    iget-object v2, p0, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/e;
+    iget-object v2, p0, Landroidx/appcompat/widget/Toolbar$d;->f:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v2, v1}, Landroidx/appcompat/view/menu/e;->getItem(I)Landroid/view/MenuItem;
 
     move-result-object v2
 
     .line 5
-    iget-object v3, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/view/menu/g;
+    iget-object v3, p0, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/g;
 
     if-ne v2, v3, :cond_0
 
@@ -96,17 +95,15 @@
     if-nez v0, :cond_2
 
     .line 6
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/e;
+    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/g;
 
-    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/view/menu/g;
-
-    invoke-virtual {p0, p1, v0}, Landroidx/appcompat/widget/Toolbar$d;->e(Landroidx/appcompat/view/menu/e;Landroidx/appcompat/view/menu/g;)Z
+    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/Toolbar$d;->f(Landroidx/appcompat/view/menu/g;)Z
 
     :cond_2
     return-void
 .end method
 
-.method public d()Z
+.method public final d()Z
     .locals 1
 
     const/4 v0, 0x0
@@ -114,317 +111,108 @@
     return v0
 .end method
 
-.method public e(Landroidx/appcompat/view/menu/e;Landroidx/appcompat/view/menu/g;)Z
-    .locals 3
-
-    .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    iget-object p1, p1, Landroidx/appcompat/widget/Toolbar;->o:Landroid/view/View;
-
-    instance-of v0, p1, Lf/c;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    check-cast p1, Lf/c;
-
-    invoke-interface {p1}, Lf/c;->e()V
-
-    .line 3
-    :cond_0
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    iget-object v0, p1, Landroidx/appcompat/widget/Toolbar;->o:Landroid/view/View;
-
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
-
-    .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    iget-object v0, p1, Landroidx/appcompat/widget/Toolbar;->n:Landroid/widget/ImageButton;
-
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
-
-    .line 5
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    const/4 v0, 0x0
-
-    iput-object v0, p1, Landroidx/appcompat/widget/Toolbar;->o:Landroid/view/View;
-
-    .line 6
-    iget-object v1, p1, Landroidx/appcompat/widget/Toolbar;->K:Ljava/util/ArrayList;
-
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
-
-    move-result v1
-
-    :goto_0
-    add-int/lit8 v1, v1, -0x1
-
-    if-ltz v1, :cond_1
-
-    .line 7
-    iget-object v2, p1, Landroidx/appcompat/widget/Toolbar;->K:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/view/View;
-
-    invoke-virtual {p1, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
-
-    goto :goto_0
-
-    .line 8
-    :cond_1
-    iget-object p1, p1, Landroidx/appcompat/widget/Toolbar;->K:Ljava/util/ArrayList;
-
-    invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
-
-    .line 9
-    iput-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/view/menu/g;
-
-    .line 10
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->requestLayout()V
-
-    const/4 p1, 0x0
-
-    .line 11
-    iput-boolean p1, p2, Landroidx/appcompat/view/menu/g;->C:Z
-
-    .line 12
-    iget-object p2, p2, Landroidx/appcompat/view/menu/g;->n:Landroidx/appcompat/view/menu/e;
-
-    invoke-virtual {p2, p1}, Landroidx/appcompat/view/menu/e;->q(Z)V
-
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public f(Landroidx/appcompat/view/menu/e;Landroidx/appcompat/view/menu/g;)Z
+.method public final f(Landroidx/appcompat/view/menu/g;)Z
     .locals 4
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
 
-    invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->f()V
+    iget-object v0, v0, Landroidx/appcompat/widget/Toolbar;->n:Landroid/view/View;
 
-    .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    iget-object p1, p1, Landroidx/appcompat/widget/Toolbar;->n:Landroid/widget/ImageButton;
-
-    invoke-virtual {p1}, Landroid/widget/ImageButton;->getParent()Landroid/view/ViewParent;
-
-    move-result-object p1
-
-    .line 3
-    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    if-eq p1, v0, :cond_1
-
-    .line 4
-    instance-of v1, p1, Landroid/view/ViewGroup;
+    instance-of v1, v0, Lf/c;
 
     if-eqz v1, :cond_0
 
+    .line 2
+    check-cast v0, Lf/c;
+
+    invoke-interface {v0}, Lf/c;->e()V
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    iget-object v1, v0, Landroidx/appcompat/widget/Toolbar;->n:Landroid/view/View;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    .line 4
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    iget-object v1, v0, Landroidx/appcompat/widget/Toolbar;->m:Landroidx/appcompat/widget/AppCompatImageButton;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
     .line 5
-    check-cast p1, Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
 
-    iget-object v0, v0, Landroidx/appcompat/widget/Toolbar;->n:Landroid/widget/ImageButton;
+    const/4 v1, 0x0
 
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+    iput-object v1, v0, Landroidx/appcompat/widget/Toolbar;->n:Landroid/view/View;
 
     .line 6
-    :cond_0
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
+    iget-object v2, v0, Landroidx/appcompat/widget/Toolbar;->J:Ljava/util/ArrayList;
 
-    iget-object v0, p1, Landroidx/appcompat/widget/Toolbar;->n:Landroid/widget/ImageButton;
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+    move-result v2
+
+    :goto_0
+    add-int/lit8 v2, v2, -0x1
+
+    if-ltz v2, :cond_1
 
     .line 7
-    :cond_1
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
+    iget-object v3, v0, Landroidx/appcompat/widget/Toolbar;->J:Ljava/util/ArrayList;
 
-    invoke-virtual {p2}, Landroidx/appcompat/view/menu/g;->getActionView()Landroid/view/View;
-
-    move-result-object v0
-
-    iput-object v0, p1, Landroidx/appcompat/widget/Toolbar;->o:Landroid/view/View;
-
-    .line 8
-    iput-object p2, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/view/menu/g;
-
-    .line 9
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    iget-object p1, p1, Landroidx/appcompat/widget/Toolbar;->o:Landroid/view/View;
-
-    invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object p1
-
-    .line 10
-    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    const/4 v1, 0x2
-
-    if-eq p1, v0, :cond_3
-
-    .line 11
-    instance-of v2, p1, Landroid/view/ViewGroup;
-
-    if-eqz v2, :cond_2
-
-    .line 12
-    check-cast p1, Landroid/view/ViewGroup;
-
-    iget-object v0, v0, Landroidx/appcompat/widget/Toolbar;->o:Landroid/view/View;
-
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
-
-    .line 13
-    :cond_2
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->k()Landroidx/appcompat/widget/Toolbar$LayoutParams;
-
-    move-result-object p1
-
-    const v0, 0x800003
-
-    .line 14
-    iget-object v2, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    iget v3, v2, Landroidx/appcompat/widget/Toolbar;->t:I
-
-    and-int/lit8 v3, v3, 0x70
-
-    or-int/2addr v0, v3
-
-    iput v0, p1, Landroidx/appcompat/app/ActionBar$LayoutParams;->a:I
-
-    .line 15
-    iput v1, p1, Landroidx/appcompat/widget/Toolbar$LayoutParams;->b:I
-
-    .line 16
-    iget-object v0, v2, Landroidx/appcompat/widget/Toolbar;->o:Landroid/view/View;
-
-    invoke-virtual {v0, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 17
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    iget-object v0, p1, Landroidx/appcompat/widget/Toolbar;->o:Landroid/view/View;
-
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
-
-    .line 18
-    :cond_3
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    .line 19
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v0
-
-    :cond_4
-    :goto_0
-    add-int/lit8 v0, v0, -0x1
-
-    if-ltz v0, :cond_5
-
-    .line 20
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v2
-
-    .line 21
-    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Landroidx/appcompat/widget/Toolbar$LayoutParams;
+    check-cast v3, Landroid/view/View;
 
-    .line 22
-    iget v3, v3, Landroidx/appcompat/widget/Toolbar$LayoutParams;->b:I
-
-    if-eq v3, v1, :cond_4
-
-    iget-object v3, p1, Landroidx/appcompat/widget/Toolbar;->g:Landroidx/appcompat/widget/ActionMenuView;
-
-    if-eq v2, v3, :cond_4
-
-    .line 23
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->removeViewAt(I)V
-
-    .line 24
-    iget-object v3, p1, Landroidx/appcompat/widget/Toolbar;->K:Ljava/util/ArrayList;
-
-    invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     goto :goto_0
 
-    .line 25
-    :cond_5
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
+    .line 8
+    :cond_1
+    iget-object v0, v0, Landroidx/appcompat/widget/Toolbar;->J:Ljava/util/ArrayList;
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->requestLayout()V
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+
+    .line 9
+    iput-object v1, p0, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/g;
+
+    .line 10
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
+
+    const/4 v0, 0x0
+
+    .line 11
+    iput-boolean v0, p1, Landroidx/appcompat/view/menu/g;->C:Z
+
+    .line 12
+    iget-object p1, p1, Landroidx/appcompat/view/menu/g;->n:Landroidx/appcompat/view/menu/e;
+
+    invoke-virtual {p1, v0}, Landroidx/appcompat/view/menu/e;->r(Z)V
 
     const/4 p1, 0x1
 
-    .line 26
-    iput-boolean p1, p2, Landroidx/appcompat/view/menu/g;->C:Z
-
-    .line 27
-    iget-object p2, p2, Landroidx/appcompat/view/menu/g;->n:Landroidx/appcompat/view/menu/e;
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p2, v0}, Landroidx/appcompat/view/menu/e;->q(Z)V
-
-    .line 28
-    iget-object p2, p0, Landroidx/appcompat/widget/Toolbar$d;->i:Landroidx/appcompat/widget/Toolbar;
-
-    iget-object p2, p2, Landroidx/appcompat/widget/Toolbar;->o:Landroid/view/View;
-
-    instance-of v0, p2, Lf/c;
-
-    if-eqz v0, :cond_6
-
-    .line 29
-    check-cast p2, Lf/c;
-
-    invoke-interface {p2}, Lf/c;->c()V
-
-    :cond_6
     return p1
 .end method
 
-.method public getId()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public h(Landroid/content/Context;Landroidx/appcompat/view/menu/e;)V
+.method public final g(Landroid/content/Context;Landroidx/appcompat/view/menu/e;)V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/e;
+    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->f:Landroidx/appcompat/view/menu/e;
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/view/menu/g;
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/g;
 
     if-eqz v0, :cond_0
 
@@ -433,18 +221,26 @@
 
     .line 3
     :cond_0
-    iput-object p2, p0, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/e;
+    iput-object p2, p0, Landroidx/appcompat/widget/Toolbar$d;->f:Landroidx/appcompat/view/menu/e;
 
     return-void
 .end method
 
-.method public i(Landroid/os/Parcelable;)V
+.method public final getId()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final h(Landroid/os/Parcelable;)V
     .locals 0
 
     return-void
 .end method
 
-.method public k(Landroidx/appcompat/view/menu/l;)Z
+.method public final j(Landroidx/appcompat/view/menu/l;)Z
     .locals 0
 
     const/4 p1, 0x0
@@ -452,10 +248,214 @@
     return p1
 .end method
 
-.method public l()Landroid/os/Parcelable;
+.method public final k()Landroid/os/Parcelable;
     .locals 1
 
     const/4 v0, 0x0
 
     return-object v0
+.end method
+
+.method public final l(Landroidx/appcompat/view/menu/g;)Z
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->f()V
+
+    .line 2
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    iget-object v0, v0, Landroidx/appcompat/widget/Toolbar;->m:Landroidx/appcompat/widget/AppCompatImageButton;
+
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    .line 3
+    iget-object v1, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    if-eq v0, v1, :cond_1
+
+    .line 4
+    instance-of v2, v0, Landroid/view/ViewGroup;
+
+    if-eqz v2, :cond_0
+
+    .line 5
+    check-cast v0, Landroid/view/ViewGroup;
+
+    iget-object v1, v1, Landroidx/appcompat/widget/Toolbar;->m:Landroidx/appcompat/widget/AppCompatImageButton;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    .line 6
+    :cond_0
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    iget-object v1, v0, Landroidx/appcompat/widget/Toolbar;->m:Landroidx/appcompat/widget/AppCompatImageButton;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    .line 7
+    :cond_1
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    invoke-virtual {p1}, Landroidx/appcompat/view/menu/g;->getActionView()Landroid/view/View;
+
+    move-result-object v1
+
+    iput-object v1, v0, Landroidx/appcompat/widget/Toolbar;->n:Landroid/view/View;
+
+    .line 8
+    iput-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/g;
+
+    .line 9
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    iget-object v0, v0, Landroidx/appcompat/widget/Toolbar;->n:Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    .line 10
+    iget-object v1, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    const/4 v2, 0x2
+
+    if-eq v0, v1, :cond_3
+
+    .line 11
+    instance-of v3, v0, Landroid/view/ViewGroup;
+
+    if-eqz v3, :cond_2
+
+    .line 12
+    check-cast v0, Landroid/view/ViewGroup;
+
+    iget-object v1, v1, Landroidx/appcompat/widget/Toolbar;->n:Landroid/view/View;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    .line 13
+    :cond_2
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    new-instance v0, Landroidx/appcompat/widget/Toolbar$LayoutParams;
+
+    invoke-direct {v0}, Landroidx/appcompat/widget/Toolbar$LayoutParams;-><init>()V
+
+    const v1, 0x800003
+
+    .line 15
+    iget-object v3, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    iget v4, v3, Landroidx/appcompat/widget/Toolbar;->s:I
+
+    and-int/lit8 v4, v4, 0x70
+
+    or-int/2addr v1, v4
+
+    iput v1, v0, Landroidx/appcompat/app/ActionBar$LayoutParams;->a:I
+
+    .line 16
+    iput v2, v0, Landroidx/appcompat/widget/Toolbar$LayoutParams;->b:I
+
+    .line 17
+    iget-object v1, v3, Landroidx/appcompat/widget/Toolbar;->n:Landroid/view/View;
+
+    invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 18
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    iget-object v1, v0, Landroidx/appcompat/widget/Toolbar;->n:Landroid/view/View;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    .line 19
+    :cond_3
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    .line 20
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v1
+
+    :cond_4
+    :goto_0
+    add-int/lit8 v1, v1, -0x1
+
+    if-ltz v1, :cond_5
+
+    .line 21
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v3
+
+    .line 22
+    invoke-virtual {v3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v4
+
+    check-cast v4, Landroidx/appcompat/widget/Toolbar$LayoutParams;
+
+    .line 23
+    iget v4, v4, Landroidx/appcompat/widget/Toolbar$LayoutParams;->b:I
+
+    if-eq v4, v2, :cond_4
+
+    iget-object v4, v0, Landroidx/appcompat/widget/Toolbar;->f:Landroidx/appcompat/widget/ActionMenuView;
+
+    if-eq v3, v4, :cond_4
+
+    .line 24
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeViewAt(I)V
+
+    .line 25
+    iget-object v4, v0, Landroidx/appcompat/widget/Toolbar;->J:Ljava/util/ArrayList;
+
+    invoke-virtual {v4, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    .line 26
+    :cond_5
+    iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
+
+    const/4 v0, 0x1
+
+    .line 27
+    iput-boolean v0, p1, Landroidx/appcompat/view/menu/g;->C:Z
+
+    .line 28
+    iget-object p1, p1, Landroidx/appcompat/view/menu/g;->n:Landroidx/appcompat/view/menu/e;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v1}, Landroidx/appcompat/view/menu/e;->r(Z)V
+
+    .line 29
+    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/widget/Toolbar;
+
+    iget-object p1, p1, Landroidx/appcompat/widget/Toolbar;->n:Landroid/view/View;
+
+    instance-of v1, p1, Lf/c;
+
+    if-eqz v1, :cond_6
+
+    .line 30
+    check-cast p1, Lf/c;
+
+    invoke-interface {p1}, Lf/c;->c()V
+
+    :cond_6
+    return v0
 .end method

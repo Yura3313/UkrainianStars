@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/session/websocket/WebSocketClient;[B)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/session/websocket/WebSocketClient$3;->this$0:Lcom/kakaogame/session/websocket/WebSocketClient;
 
     iput-object p2, p0, Lcom/kakaogame/session/websocket/WebSocketClient$3;->val$frame:[B

@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/core/TimerManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/TimerManager$1;->this$0:Lcom/kakaogame/core/TimerManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -101,7 +100,7 @@
 
     .line 7
     :try_start_2
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -126,7 +125,7 @@
     move-exception v1
 
     .line 9
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 

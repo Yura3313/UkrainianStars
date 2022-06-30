@@ -41,7 +41,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -54,7 +53,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -187,7 +185,6 @@
 .method public static getLoggingLevel()I
     .locals 1
 
-    .line 1
     sget v0, Lcom/kakaogame/Logger;->loggingLevel:I
 
     return v0
@@ -242,7 +239,6 @@
 .method private static isLoggable(I)Z
     .locals 1
 
-    .line 1
     sget v0, Lcom/kakaogame/Logger;->loggingLevel:I
 
     if-lt p0, v0, :cond_0
@@ -364,10 +360,12 @@
 
     const-string v1, "Level: "
 
-    invoke-static {v1, p0}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    .line 3
+    invoke-static {v1, p0}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 4
     invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0

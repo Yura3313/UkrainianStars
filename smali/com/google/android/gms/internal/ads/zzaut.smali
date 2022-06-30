@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract L4(Lcom/google/android/gms/internal/ads/zzuw;)V
+.method public abstract E1()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -15,7 +15,7 @@
     .end annotation
 .end method
 
-.method public abstract x5(I)V
+.method public abstract M4(Lcom/google/android/gms/internal/ads/zzuw;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -23,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract z1()V
+.method public abstract v5(I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

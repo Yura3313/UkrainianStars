@@ -1,246 +1,156 @@
 .class public final Lnd/i;
-.super Ljava/lang/Object;
-.source "GamesFragment.kt"
+.super Lse/h;
+.source "MessagesTabFriendsFragment.kt"
 
 # interfaces
-.implements Lvd/j1;
+.implements Lre/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/p<",
+        "Landroid/graphics/drawable/Drawable;",
+        "Lud/g;",
+        "Lie/h;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic f:Ljava/lang/ref/WeakReference;
 
-.field public final b:Lcom/supercell/id/model/IdConnectedSystem;
-
-.field public final c:Z
+.field public final synthetic g:Lvc/x;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/model/IdConnectedSystem;Z)V
+.method public constructor <init>(Ljava/lang/ref/WeakReference;Lvc/x;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lnd/i;->f:Ljava/lang/ref/WeakReference;
 
-    iput-object p1, p0, Lnd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
+    iput-object p2, p0, Lnd/i;->g:Lvc/x;
 
-    iput-boolean p2, p0, Lnd/i;->c:Z
+    const/4 p1, 0x2
 
-    .line 2
-    sget p1, Lcom/supercell/id/R$layout;->fragment_public_profile_games_item:I
-
-    iput p1, p0, Lnd/i;->a:I
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lvd/j1;)Z
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
 
-    if-eqz p1, :cond_2
+    check-cast p1, Landroid/graphics/drawable/Drawable;
+
+    check-cast p2, Lud/g;
+
+    const-string v0, "drawable"
 
     .line 1
-    instance-of v0, p1, Lnd/i;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "<anonymous parameter 1>"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object p2, p0, Lnd/i;->f:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/widget/TextView;
+
+    if-eqz p2, :cond_5
+
+    .line 3
+    instance-of v0, p1, Landroid/graphics/drawable/BitmapDrawable;
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_0
 
-    return v1
+    move-object p1, v1
 
-    .line 2
     :cond_0
-    check-cast p1, Lnd/i;
+    check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
 
-    iget-object v0, p1, Lnd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
+    if-eqz p1, :cond_2
 
-    iget-object v2, p0, Lnd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
+    new-instance v0, Landroid/graphics/drawable/BitmapDrawable;
 
-    invoke-static {v0, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    move-result v0
+    move-result-object v2
 
-    if-eqz v0, :cond_1
+    if-eqz v2, :cond_1
 
-    iget-boolean p1, p1, Lnd/i;->c:Z
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    iget-boolean v0, p0, Lnd/i;->c:Z
-
-    if-ne p1, v0, :cond_1
-
-    const/4 v1, 0x1
+    move-result-object v1
 
     :cond_1
-    return v1
+    invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
-    :cond_2
-    const-string p1, "other"
+    move-result-object p1
 
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-direct {v0, v1, p1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public c()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lnd/i;->a:I
-
-    return v0
-.end method
-
-.method public d(Lvd/j1;)Z
-    .locals 1
-
-    if-eqz p1, :cond_1
-
-    .line 1
-    instance-of v0, p1, Lnd/i;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Lnd/i;
-
-    iget-object p1, p1, Lnd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
-
-    .line 2
-    iget-object p1, p1, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
-
-    .line 3
-    iget-object v0, p0, Lnd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
+    move-object v1, v0
 
     .line 4
-    iget-object v0, v0, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
+    :cond_2
+    invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    .line 5
-    invoke-static {p1, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_3
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    sget v2, Lcom/supercell/id/R$dimen;->ingame_friend_list_game_icon_size:I
+
+    invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p1
 
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
     goto :goto_0
 
-    :cond_0
+    :cond_3
     const/4 p1, 0x0
 
     :goto_0
-    return p1
+    if-eqz v1, :cond_4
 
-    :cond_1
-    const-string p1, "other"
+    .line 5
+    new-instance v2, Landroid/graphics/Rect;
+
+    invoke-direct {v2, v0, v0, p1, p1}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    invoke-virtual {v1, v2}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
     .line 6
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    :cond_4
+    iget-object p1, p0, Lnd/i;->g:Lvc/x;
 
-    const/4 p1, 0x0
+    .line 7
+    invoke-static {p2, p1, v1}, Lnd/k;->a(Landroid/widget/TextView;Lvc/x;Landroid/graphics/drawable/BitmapDrawable;)V
 
-    throw p1
-.end method
+    .line 8
+    :cond_5
+    sget-object p1, Lie/h;->a:Lie/h;
 
-.method public equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    if-eq p0, p1, :cond_1
-
-    instance-of v0, p1, Lnd/i;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Lnd/i;
-
-    iget-object v0, p0, Lnd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
-
-    iget-object v1, p1, Lnd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
-
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-boolean v0, p0, Lnd/i;->c:Z
-
-    iget-boolean p1, p1, Lnd/i;->c:Z
-
-    if-ne v0, p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public hashCode()I
-    .locals 2
-
-    iget-object v0, p0, Lnd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lcom/supercell/id/model/IdConnectedSystem;->hashCode()I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-boolean v1, p0, Lnd/i;->c:Z
-
-    if-eqz v1, :cond_1
-
-    const/4 v1, 0x1
-
-    :cond_1
-    add-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 3
-
-    const-string v0, "GameRow(connected="
-
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lnd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", online="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v1, p0, Lnd/i;->c:Z
-
-    const-string v2, ")"
-
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    return-object p1
 .end method

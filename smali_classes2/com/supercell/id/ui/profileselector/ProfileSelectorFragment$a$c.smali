@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
-.super Lle/j;
+.super Lse/h;
 .source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->n(Lae/c2$a;ILae/b2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
+        "Lse/h;",
+        "Lre/p<",
         "Landroid/widget/TextView;",
         "Ljava/lang/String;",
         "Landroid/text/SpannableStringBuilder;",
@@ -29,7 +29,7 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
+.field public static final f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
+    sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
 
     return-void
 .end method
@@ -50,14 +50,14 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
 
     .line 1
@@ -65,80 +65,68 @@
 
     check-cast p2, Ljava/lang/String;
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
+    const-string v0, "view"
 
     .line 2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "value"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
     invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
 
-    .line 3
+    .line 4
     invoke-virtual {v0, p2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     move-result-object p2
 
     const-string v0, "  "
 
-    .line 4
+    .line 5
     invoke-virtual {p2, v0}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     move-result-object p2
 
-    .line 5
-    invoke-virtual {p1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+    .line 6
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 6
-    invoke-static {p1}, Lp5/c0;->g(Landroid/content/Context;)Landroid/graphics/Bitmap;
+    .line 7
+    invoke-static {p1}, Lae/l;->g(Landroid/content/Context;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 7
+    .line 8
     new-instance v1, Landroid/text/style/ImageSpan;
 
     const/4 v2, 0x0
 
     invoke-direct {v1, p1, v0, v2}, Landroid/text/style/ImageSpan;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;I)V
 
-    .line 8
+    .line 9
     invoke-virtual {p2}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result p1
 
     add-int/lit8 p1, p1, -0x1
 
-    .line 9
+    .line 10
     invoke-virtual {p2}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result v0
 
     const/16 v2, 0x21
 
-    .line 10
+    .line 11
     invoke-virtual {p2, v1, p1, v0, v2}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
     :cond_0
     return-object p2
-
-    :cond_1
-    const-string p1, "value"
-
-    .line 11
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "view"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

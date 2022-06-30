@@ -31,17 +31,29 @@
     .line 3
     sget-object v0, Lcom/google/protobuf/a0;->a:Ljava/nio/charset/Charset;
 
+    if-eqz p1, :cond_0
+
     iput-object p1, p0, Lcom/google/protobuf/k;->a:Lcom/google/protobuf/j;
 
     .line 4
     iput-object p0, p1, Lcom/google/protobuf/j;->d:Lcom/google/protobuf/k;
 
     return-void
+
+    .line 5
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "input"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method
 
 
 # virtual methods
-.method public A()I
+.method public final A()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -64,7 +76,7 @@
     return v0
 .end method
 
-.method public B()Z
+.method public final B()Z
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -106,7 +118,7 @@
     return v0
 .end method
 
-.method public C()I
+.method public final C()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -129,7 +141,7 @@
     return v0
 .end method
 
-.method public D(Ljava/util/List;)V
+.method public final D(Ljava/util/List;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -207,7 +219,7 @@
     goto :goto_0
 .end method
 
-.method public E(Ljava/util/List;)V
+.method public final E(Ljava/util/List;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -441,7 +453,7 @@
     return-void
 .end method
 
-.method public F()J
+.method public final F()J
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -464,7 +476,7 @@
     return-wide v0
 .end method
 
-.method public G()Ljava/lang/String;
+.method public final G()Ljava/lang/String;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -487,7 +499,7 @@
     return-object v0
 .end method
 
-.method public H(Ljava/util/List;)V
+.method public final H(Ljava/util/List;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -721,7 +733,7 @@
     return-void
 .end method
 
-.method public I(Ljava/util/List;Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)V
+.method public final I(Ljava/util/List;Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -794,10 +806,14 @@
 
     .line 6
     :cond_3
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->d()Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;
+    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:I
 
-    move-result-object p1
+    .line 7
+    new-instance p1, Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;
 
+    invoke-direct {p1}, Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;-><init>()V
+
+    .line 8
     goto :goto_2
 
     :goto_1
@@ -807,7 +823,7 @@
     goto :goto_1
 .end method
 
-.method public J(Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
+.method public final J(Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -847,7 +863,7 @@
     return-object p1
 .end method
 
-.method public K(Ljava/util/List;Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)V
+.method public final K(Ljava/util/List;Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -920,10 +936,14 @@
 
     .line 6
     :cond_3
-    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->d()Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;
+    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:I
 
-    move-result-object p1
+    .line 7
+    new-instance p1, Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;
 
+    invoke-direct {p1}, Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;-><init>()V
+
+    .line 8
     goto :goto_2
 
     :goto_1
@@ -933,7 +953,7 @@
     goto :goto_1
 .end method
 
-.method public L(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+.method public final L(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -966,7 +986,7 @@
     return-object p1
 .end method
 
-.method public M(Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
+.method public final M(Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1006,7 +1026,7 @@
     return-object p1
 .end method
 
-.method public N(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+.method public final N(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1039,7 +1059,7 @@
     return-object p1
 .end method
 
-.method public O(Ljava/util/Map;Lcom/google/protobuf/j0$a;Lcom/google/protobuf/q;)V
+.method public final O(Ljava/util/Map;Lcom/google/protobuf/j0$a;Lcom/google/protobuf/q;)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1141,7 +1161,7 @@
 
     .line 10
     :cond_2
-    iget-object v4, p2, Lcom/google/protobuf/j0$a;->c:Lcom/google/protobuf/x1$b;
+    iget-object v4, p2, Lcom/google/protobuf/j0$a;->c:Lcom/google/protobuf/w1$b;
 
     iget-object v5, p2, Lcom/google/protobuf/j0$a;->d:Ljava/lang/Object;
 
@@ -1151,7 +1171,7 @@
     move-result-object v5
 
     .line 12
-    invoke-virtual {p0, v4, v5, p3}, Lcom/google/protobuf/k;->P(Lcom/google/protobuf/x1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
+    invoke-virtual {p0, v4, v5, p3}, Lcom/google/protobuf/k;->P(Lcom/google/protobuf/w1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -1159,11 +1179,11 @@
 
     .line 13
     :cond_3
-    iget-object v4, p2, Lcom/google/protobuf/j0$a;->a:Lcom/google/protobuf/x1$b;
+    iget-object v4, p2, Lcom/google/protobuf/j0$a;->a:Lcom/google/protobuf/w1$b;
 
     const/4 v5, 0x0
 
-    invoke-virtual {p0, v4, v5, v5}, Lcom/google/protobuf/k;->P(Lcom/google/protobuf/x1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
+    invoke-virtual {p0, v4, v5, v5}, Lcom/google/protobuf/k;->P(Lcom/google/protobuf/w1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
 
     move-result-object v2
     :try_end_1
@@ -1222,12 +1242,12 @@
     goto :goto_2
 .end method
 
-.method public final P(Lcom/google/protobuf/x1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
+.method public final P(Lcom/google/protobuf/w1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/protobuf/x1$b;",
+            "Lcom/google/protobuf/w1$b;",
             "Ljava/lang/Class<",
             "*>;",
             "Lcom/google/protobuf/q;",
@@ -1646,7 +1666,7 @@
     throw p1
 .end method
 
-.method public S(Ljava/util/List;Z)V
+.method public final S(Ljava/util/List;Z)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1690,7 +1710,7 @@
 
     move-result-object p1
 
-    invoke-interface {v0, p1}, Lcom/google/protobuf/f0;->X(Lcom/google/protobuf/i;)V
+    invoke-interface {v0, p1}, Lcom/google/protobuf/f0;->k0(Lcom/google/protobuf/i;)V
 
     .line 5
     iget-object p1, p0, Lcom/google/protobuf/k;->a:Lcom/google/protobuf/j;
@@ -1851,7 +1871,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->g()Lcom/google/protobuf/InvalidProtocolBufferException;
 
@@ -1874,7 +1893,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->g()Lcom/google/protobuf/InvalidProtocolBufferException;
 
@@ -1883,7 +1901,7 @@
     throw p1
 .end method
 
-.method public a(Ljava/util/List;)V
+.method public final a(Ljava/util/List;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2115,7 +2133,7 @@
     return-void
 .end method
 
-.method public b()J
+.method public final b()J
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -2138,7 +2156,7 @@
     return-wide v0
 .end method
 
-.method public c()J
+.method public final c()J
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -2161,7 +2179,7 @@
     return-wide v0
 .end method
 
-.method public d(Ljava/util/List;)V
+.method public final d(Ljava/util/List;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2397,7 +2415,7 @@
     return-void
 .end method
 
-.method public e(Ljava/util/List;)V
+.method public final e(Ljava/util/List;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2629,7 +2647,7 @@
     return-void
 .end method
 
-.method public f(Ljava/util/List;)V
+.method public final f(Ljava/util/List;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2861,7 +2879,7 @@
     return-void
 .end method
 
-.method public g()I
+.method public final g()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -2884,16 +2902,15 @@
     return v0
 .end method
 
-.method public getTag()I
+.method public final getTag()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/k;->b:I
 
     return v0
 .end method
 
-.method public h()Z
+.method public final h()Z
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -2916,7 +2933,7 @@
     return v0
 .end method
 
-.method public i()J
+.method public final i()J
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -2939,7 +2956,7 @@
     return-wide v0
 .end method
 
-.method public j(Ljava/util/List;)V
+.method public final j(Ljava/util/List;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -3171,7 +3188,7 @@
     return-void
 .end method
 
-.method public k()I
+.method public final k()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -3194,7 +3211,7 @@
     return v0
 .end method
 
-.method public l(Ljava/util/List;)V
+.method public final l(Ljava/util/List;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -3426,7 +3443,7 @@
     return-void
 .end method
 
-.method public m(Ljava/util/List;)V
+.method public final m(Ljava/util/List;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -3660,7 +3677,7 @@
     return-void
 .end method
 
-.method public n(Ljava/util/List;)V
+.method public final n(Ljava/util/List;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -3892,7 +3909,7 @@
     return-void
 .end method
 
-.method public o(Ljava/util/List;)V
+.method public final o(Ljava/util/List;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -4124,7 +4141,7 @@
     return-void
 .end method
 
-.method public p()I
+.method public final p()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -4147,7 +4164,7 @@
     return v0
 .end method
 
-.method public q(Ljava/util/List;)V
+.method public final q(Ljava/util/List;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -4383,7 +4400,7 @@
     return-void
 .end method
 
-.method public r()I
+.method public final r()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -4406,7 +4423,7 @@
     return v0
 .end method
 
-.method public readDouble()D
+.method public final readDouble()D
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -4429,7 +4446,7 @@
     return-wide v0
 .end method
 
-.method public readFloat()F
+.method public final readFloat()F
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -4452,7 +4469,7 @@
     return v0
 .end method
 
-.method public s()J
+.method public final s()J
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -4475,7 +4492,7 @@
     return-wide v0
 .end method
 
-.method public t(Ljava/util/List;)V
+.method public final t(Ljava/util/List;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -4707,7 +4724,7 @@
     return-void
 .end method
 
-.method public u()Ljava/lang/String;
+.method public final u()Ljava/lang/String;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -4730,7 +4747,7 @@
     return-object v0
 .end method
 
-.method public v()I
+.method public final v()I
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -4787,7 +4804,7 @@
     return v0
 .end method
 
-.method public w(Ljava/util/List;)V
+.method public final w(Ljava/util/List;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -4806,13 +4823,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/google/protobuf/k;->S(Ljava/util/List;Z)V
 
     return-void
 .end method
 
-.method public x(Ljava/util/List;)V
+.method public final x(Ljava/util/List;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -4831,13 +4847,12 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/google/protobuf/k;->S(Ljava/util/List;Z)V
 
     return-void
 .end method
 
-.method public y()Lcom/google/protobuf/i;
+.method public final y()Lcom/google/protobuf/i;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -4860,7 +4875,7 @@
     return-object v0
 .end method
 
-.method public z(Ljava/util/List;)V
+.method public final z(Ljava/util/List;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {

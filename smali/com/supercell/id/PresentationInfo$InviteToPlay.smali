@@ -27,9 +27,9 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field public final h:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
@@ -50,44 +50,43 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "type"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "payload"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0, v0}, Lcom/supercell/id/PresentationInfo;-><init>(Lle/g;)V
+    invoke-direct {p0}, Lcom/supercell/id/PresentationInfo;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->g:Ljava/lang/String;
+    .line 2
+    iput-object p1, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->f:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->g:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    if-eqz p1, :cond_0
+    const-string p2, "dest"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->f:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->h:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "dest"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

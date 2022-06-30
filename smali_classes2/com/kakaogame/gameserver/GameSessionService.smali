@@ -37,7 +37,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +45,6 @@
 .method public static synthetic access$000()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/kakaogame/gameserver/GameSessionService;->useGameServer:Z
 
     return v0
@@ -55,7 +53,6 @@
 .method public static synthetic access$100()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/gameserver/GameSessionService;->setServerInfoFromInfodesk()V
 
     return-void
@@ -64,7 +61,6 @@
 .method public static synthetic access$200()Lcom/kakaogame/gameserver/GameSessionService$GameServerMessageListener;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/gameserver/GameSessionService;->gameServerMessageListener:Lcom/kakaogame/gameserver/GameSessionService$GameServerMessageListener;
 
     return-object v0
@@ -73,7 +69,6 @@
 .method public static synthetic access$300()Landroid/content/Context;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/gameserver/GameSessionService;->context:Landroid/content/Context;
 
     return-object v0
@@ -82,7 +77,6 @@
 .method public static synthetic access$400()J
     .locals 2
 
-    .line 1
     sget-wide v0, Lcom/kakaogame/gameserver/GameSessionService;->sessionTimeout:J
 
     return-wide v0
@@ -91,7 +85,6 @@
 .method public static synthetic access$500()Lcom/kakaogame/session/WebSocketManager;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/gameserver/GameSessionService;->manager:Lcom/kakaogame/session/WebSocketManager;
 
     return-object v0
@@ -987,7 +980,6 @@
 .method public static setGameServerMessageListener(Lcom/kakaogame/gameserver/GameSessionService$GameServerMessageListener;)V
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/kakaogame/gameserver/GameSessionService;->gameServerMessageListener:Lcom/kakaogame/gameserver/GameSessionService$GameServerMessageListener;
 
     return-void
@@ -1048,7 +1040,7 @@
     move-exception v2
 
     .line 6
-    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1102,7 +1094,7 @@
     move-exception v0
 
     .line 10
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 

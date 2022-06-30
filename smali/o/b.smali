@@ -1,4 +1,4 @@
-.class public Lo/b;
+.class public final Lo/b;
 .super Ljava/lang/Object;
 .source "DesignTool.java"
 
@@ -227,10 +227,9 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroidx/constraintlayout/motion/widget/MotionLayout;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

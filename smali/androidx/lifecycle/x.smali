@@ -1,143 +1,157 @@
-.class public abstract Landroidx/lifecycle/x;
+.class public final Landroidx/lifecycle/x;
 .super Ljava/lang/Object;
-.source "ViewModel.java"
+.source "ViewModelProvider.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/lifecycle/x$a;,
+        Landroidx/lifecycle/x$d;,
+        Landroidx/lifecycle/x$c;,
+        Landroidx/lifecycle/x$e;,
+        Landroidx/lifecycle/x$b;
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final a:Landroidx/lifecycle/x$b;
 
-.field public volatile b:Z
+.field public final b:Landroidx/lifecycle/y;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Landroidx/lifecycle/y;Landroidx/lifecycle/x$b;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Landroidx/lifecycle/x;->a:Ljava/util/Map;
-
-    const/4 v0, 0x0
+    iput-object p2, p0, Landroidx/lifecycle/x;->a:Landroidx/lifecycle/x$b;
 
     .line 3
-    iput-boolean v0, p0, Landroidx/lifecycle/x;->b:Z
+    iput-object p1, p0, Landroidx/lifecycle/x;->b:Landroidx/lifecycle/y;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public b(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a(Ljava/lang/Class;)Landroidx/lifecycle/w;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Ljava/lang/Object;",
+            "Landroidx/lifecycle/w;",
             ">(",
-            "Ljava/lang/String;",
-            "TT;)TT;"
+            "Ljava/lang/Class<",
+            "TT;>;)TT;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/x;->a:Ljava/util/Map;
+    invoke-virtual {p1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
-    monitor-enter v0
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    const-string v1, "androidx.lifecycle.ViewModelProvider.DefaultKey:"
 
     .line 2
-    :try_start_0
-    iget-object v1, p0, Landroidx/lifecycle/x;->a:Ljava/util/Map;
+    invoke-static {v1, v0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v0
+
+    .line 3
+    iget-object v1, p0, Landroidx/lifecycle/x;->b:Landroidx/lifecycle/y;
+
+    .line 4
+    iget-object v1, v1, Landroidx/lifecycle/y;->a:Ljava/util/HashMap;
+
+    invoke-virtual {v1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    if-nez v1, :cond_0
-
-    .line 3
-    iget-object v2, p0, Landroidx/lifecycle/x;->a:Ljava/util/Map;
-
-    invoke-interface {v2, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    :cond_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    if-nez v1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    move-object p2, v1
+    check-cast v1, Landroidx/lifecycle/w;
 
     .line 5
-    :goto_0
-    iget-boolean p1, p0, Landroidx/lifecycle/x;->b:Z
+    invoke-virtual {p1, v1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
-    if-eqz p1, :cond_2
+    move-result v2
+
+    if-eqz v2, :cond_0
 
     .line 6
-    instance-of p1, p2, Ljava/io/Closeable;
+    iget-object p1, p0, Landroidx/lifecycle/x;->a:Landroidx/lifecycle/x$b;
 
-    if-eqz p1, :cond_2
+    instance-of v0, p1, Landroidx/lifecycle/x$e;
+
+    if-eqz v0, :cond_2
 
     .line 7
-    :try_start_1
-    move-object p1, p2
+    check-cast p1, Landroidx/lifecycle/x$e;
 
-    check-cast p1, Ljava/io/Closeable;
-
-    invoke-interface {p1}, Ljava/io/Closeable;->close()V
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    invoke-virtual {p1, v1}, Landroidx/lifecycle/x$e;->b(Landroidx/lifecycle/w;)V
 
     goto :goto_1
 
-    :catch_0
-    move-exception p1
-
     .line 8
-    new-instance p2, Ljava/lang/RuntimeException;
+    :cond_0
+    iget-object v1, p0, Landroidx/lifecycle/x;->a:Landroidx/lifecycle/x$b;
 
-    invoke-direct {p2, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+    instance-of v2, v1, Landroidx/lifecycle/x$c;
 
-    throw p2
+    if-eqz v2, :cond_1
+
+    .line 9
+    check-cast v1, Landroidx/lifecycle/x$c;
+
+    invoke-virtual {v1, v0, p1}, Landroidx/lifecycle/x$c;->c(Ljava/lang/String;Ljava/lang/Class;)Landroidx/lifecycle/w;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    .line 10
+    :cond_1
+    invoke-interface {v1, p1}, Landroidx/lifecycle/x$b;->a(Ljava/lang/Class;)Landroidx/lifecycle/w;
+
+    move-result-object p1
+
+    :goto_0
+    move-object v1, p1
+
+    .line 11
+    iget-object p1, p0, Landroidx/lifecycle/x;->b:Landroidx/lifecycle/y;
+
+    .line 12
+    iget-object p1, p1, Landroidx/lifecycle/y;->a:Ljava/util/HashMap;
+
+    invoke-virtual {p1, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/lifecycle/w;
+
+    if-eqz p1, :cond_2
+
+    .line 13
+    invoke-virtual {p1}, Landroidx/lifecycle/w;->a()V
 
     :cond_2
     :goto_1
-    return-object p2
+    return-object v1
 
-    :catchall_0
-    move-exception p1
+    .line 14
+    :cond_3
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    .line 9
-    :try_start_2
-    monitor-exit v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    const-string v0, "Local and anonymous classes can not be ViewModels"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method

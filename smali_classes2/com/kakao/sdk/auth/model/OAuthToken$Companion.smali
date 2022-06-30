@@ -18,16 +18,14 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lle/g;)V
+.method public synthetic constructor <init>(Lse/e;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/kakao/sdk/auth/model/OAuthToken$Companion;-><init>()V
 
     return-void
@@ -42,7 +40,6 @@
 
     const/4 p2, 0x0
 
-    .line 1
     :cond_0
     invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/auth/model/OAuthToken$Companion;->fromResponse(Lcom/kakao/sdk/auth/model/AccessTokenResponse;Lcom/kakao/sdk/auth/model/OAuthToken;)Lcom/kakao/sdk/auth/model/OAuthToken;
 
@@ -56,9 +53,9 @@
 .method public final fromResponse(Lcom/kakao/sdk/auth/model/AccessTokenResponse;Lcom/kakao/sdk/auth/model/OAuthToken;)Lcom/kakao/sdk/auth/model/OAuthToken;
     .locals 12
 
-    const/4 v0, 0x0
+    const-string v0, "response"
 
-    if-eqz p1, :cond_7
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->getAccessToken()Ljava/lang/String;
@@ -68,37 +65,36 @@
     .line 2
     new-instance v3, Ljava/util/Date;
 
-    new-instance v1, Ljava/util/Date;
+    new-instance v0, Ljava/util/Date;
 
-    invoke-direct {v1}, Ljava/util/Date;-><init>()V
+    invoke-direct {v0}, Ljava/util/Date;-><init>()V
 
-    invoke-virtual {v1}, Ljava/util/Date;->getTime()J
+    invoke-virtual {v0}, Ljava/util/Date;->getTime()J
 
-    move-result-wide v4
+    move-result-wide v0
 
     invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->getAccessTokenExpiresIn()J
 
-    move-result-wide v6
+    move-result-wide v4
 
-    const-wide/16 v8, 0x3e8
+    const-wide/16 v6, 0x3e8
 
-    mul-long v6, v6, v8
+    mul-long v4, v4, v6
 
-    add-long/2addr v6, v4
+    add-long/2addr v4, v0
 
-    invoke-direct {v3, v6, v7}, Ljava/util/Date;-><init>(J)V
+    invoke-direct {v3, v4, v5}, Ljava/util/Date;-><init>(J)V
 
     .line 3
     invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->getRefreshToken()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_0
+    const/4 v1, 0x0
 
-    :goto_0
-    move-object v4, v1
+    if-eqz v0, :cond_0
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_0
     if-eqz p2, :cond_1
@@ -106,12 +102,15 @@
     .line 4
     invoke-virtual {p2}, Lcom/kakao/sdk/auth/model/OAuthToken;->getRefreshToken()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    goto :goto_0
+    :goto_0
+    move-object v4, v0
+
+    goto :goto_1
 
     :cond_1
-    move-object v4, v0
+    move-object v4, v1
 
     :goto_1
     if-eqz v4, :cond_6
@@ -119,36 +118,36 @@
     .line 5
     invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->getRefreshToken()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
     .line 6
     invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->getRefreshTokenExpiresIn()Ljava/lang/Long;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_3
+    if-eqz v0, :cond_3
 
-    invoke-virtual {v1}, Ljava/lang/Number;->longValue()J
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
 
-    move-result-wide v5
+    move-result-wide v8
 
-    new-instance v1, Ljava/util/Date;
+    new-instance v0, Ljava/util/Date;
 
-    new-instance v7, Ljava/util/Date;
+    new-instance v5, Ljava/util/Date;
 
-    invoke-direct {v7}, Ljava/util/Date;-><init>()V
+    invoke-direct {v5}, Ljava/util/Date;-><init>()V
 
-    invoke-virtual {v7}, Ljava/util/Date;->getTime()J
+    invoke-virtual {v5}, Ljava/util/Date;->getTime()J
 
     move-result-wide v10
 
-    mul-long v5, v5, v8
+    mul-long v8, v8, v6
 
-    add-long/2addr v5, v10
+    add-long/2addr v8, v10
 
-    invoke-direct {v1, v5, v6}, Ljava/util/Date;-><init>(J)V
+    invoke-direct {v0, v8, v9}, Ljava/util/Date;-><init>(J)V
 
     goto :goto_2
 
@@ -158,15 +157,15 @@
     .line 7
     invoke-virtual {p2}, Lcom/kakao/sdk/auth/model/OAuthToken;->getRefreshTokenExpiresAt()Ljava/util/Date;
 
-    move-result-object v1
+    move-result-object v0
 
     :goto_2
-    move-object v5, v1
+    move-object v5, v0
 
     goto :goto_3
 
     :cond_3
-    move-object v5, v0
+    move-object v5, v1
 
     .line 8
     :goto_3
@@ -188,9 +187,9 @@
 
     const/4 v0, 0x6
 
-    invoke-static {p1, p2, v1, v1, v0}, Lre/r;->A(Ljava/lang/CharSequence;[Ljava/lang/String;ZII)Ljava/util/List;
+    invoke-static {p1, p2, v1, v0}, Lye/r;->z(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
-    move-result-object v0
+    move-result-object p1
 
     goto :goto_4
 
@@ -199,13 +198,18 @@
 
     invoke-virtual {p2}, Lcom/kakao/sdk/auth/model/OAuthToken;->getScopes()Ljava/util/List;
 
-    move-result-object v0
+    move-result-object p1
+
+    :goto_4
+    move-object v6, p1
+
+    goto :goto_5
 
     :cond_5
-    :goto_4
-    move-object v6, v0
+    move-object v6, v1
 
     .line 9
+    :goto_5
     new-instance p1, Lcom/kakao/sdk/auth/model/OAuthToken;
 
     move-object v1, p1
@@ -225,18 +229,4 @@
     invoke-direct {p1, p2, v0}, Lcom/kakao/sdk/common/model/ClientError;-><init>(Lcom/kakao/sdk/common/model/ClientErrorCause;Ljava/lang/String;)V
 
     throw p1
-
-    :cond_7
-    const-string p1, "response"
-
-    .line 11
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    goto :goto_6
-
-    :goto_5
-    throw v0
-
-    :goto_6
-    goto :goto_5
 .end method

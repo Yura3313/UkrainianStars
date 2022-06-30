@@ -11,7 +11,6 @@
 .method public constructor <init>(Lokio/Sink;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lokio/ForwardingSink;-><init>(Lokio/Sink;)V
 
     return-void

@@ -1,65 +1,30 @@
 .class public final Lae/d;
 .super Ljava/lang/Object;
-.source "Tuples.kt"
-
-# interfaces
-.implements Ljava/io/Serializable;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<A:",
-        "Ljava/lang/Object;",
-        "B:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/io/Serializable;"
-    }
-.end annotation
+.source "ProfileUtil.kt"
 
 
 # instance fields
-.field public final g:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TA;"
-        }
-    .end annotation
-.end field
+.field public final a:I
 
-.field public final h:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TB;"
-        }
-    .end annotation
-.end field
+.field public final b:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public constructor <init>(II)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TA;TB;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lae/d;->g:Ljava/lang/Object;
+    iput p1, p0, Lae/d;->a:I
 
-    iput-object p2, p0, Lae/d;->h:Ljava/lang/Object;
+    iput p2, p0, Lae/d;->b:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
     if-eq p0, p1, :cond_1
@@ -70,25 +35,17 @@
 
     check-cast p1, Lae/d;
 
-    iget-object v0, p0, Lae/d;->g:Ljava/lang/Object;
+    iget v0, p0, Lae/d;->a:I
 
-    iget-object v1, p1, Lae/d;->g:Ljava/lang/Object;
+    iget v1, p1, Lae/d;->a:I
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-ne v0, v1, :cond_0
 
-    move-result v0
+    iget v0, p0, Lae/d;->b:I
 
-    if-eqz v0, :cond_0
+    iget p1, p1, Lae/d;->b:I
 
-    iget-object v0, p0, Lae/d;->h:Ljava/lang/Object;
-
-    iget-object p1, p1, Lae/d;->h:Ljava/lang/Object;
-
-    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
+    if-ne v0, p1, :cond_0
 
     goto :goto_0
 
@@ -104,70 +61,45 @@
     return p1
 .end method
 
-.method public hashCode()I
-    .locals 3
+.method public final hashCode()I
+    .locals 2
 
-    iget-object v0, p0, Lae/d;->g:Ljava/lang/Object;
+    iget v0, p0, Lae/d;->a:I
 
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lae/d;->h:Ljava/lang/Object;
+    iget v1, p0, Lae/d;->b:I
 
-    if-eqz v2, :cond_1
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v1
-
-    :cond_1
     add-int/2addr v0, v1
 
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "AvatarBackground(startColor="
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
-    const/16 v1, 0x28
+    .line 2
+    iget v1, p0, Lae/d;->a:I
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lae/d;->g:Ljava/lang/Object;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", "
+    const-string v1, ", endColor="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lae/d;->h:Ljava/lang/Object;
+    iget v1, p0, Lae/d;->b:I
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, ")"
 
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

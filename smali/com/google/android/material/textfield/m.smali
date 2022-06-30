@@ -1,58 +1,38 @@
-.class public abstract Lcom/google/android/material/textfield/m;
-.super Ljava/lang/Object;
-.source "EndIconDelegate.java"
-
-
-# instance fields
-.field public a:Lcom/google/android/material/textfield/TextInputLayout;
-
-.field public b:Landroid/content/Context;
-
-.field public c:Lcom/google/android/material/internal/CheckableImageButton;
+.class public final Lcom/google/android/material/textfield/m;
+.super Lcom/google/android/material/textfield/k;
+.source "NoEndIconDelegate.java"
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/TextInputLayout;)V
-    .locals 1
+    .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lcom/google/android/material/textfield/m;->a:Lcom/google/android/material/textfield/TextInputLayout;
-
-    .line 3
-    invoke-virtual {p1}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/google/android/material/textfield/m;->b:Landroid/content/Context;
-
-    .line 4
-    invoke-virtual {p1}, Lcom/google/android/material/textfield/TextInputLayout;->getEndIconView()Lcom/google/android/material/internal/CheckableImageButton;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lcom/google/android/material/textfield/m;->c:Lcom/google/android/material/internal/CheckableImageButton;
+    invoke-direct {p0, p1}, Lcom/google/android/material/textfield/k;-><init>(Lcom/google/android/material/textfield/TextInputLayout;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a()V
-.end method
+.method public final a()V
+    .locals 2
 
-.method public b(I)Z
-    .locals 0
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/textfield/k;->a:Lcom/google/android/material/textfield/TextInputLayout;
 
-    const/4 p1, 0x1
+    const/4 v1, 0x0
 
-    return p1
-.end method
+    invoke-virtual {v0, v1}, Lcom/google/android/material/textfield/TextInputLayout;->setEndIconOnClickListener(Landroid/view/View$OnClickListener;)V
 
-.method public c(Z)V
-    .locals 0
+    .line 2
+    iget-object v0, p0, Lcom/google/android/material/textfield/k;->a:Lcom/google/android/material/textfield/TextInputLayout;
+
+    invoke-virtual {v0, v1}, Lcom/google/android/material/textfield/TextInputLayout;->setEndIconDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    .line 3
+    iget-object v0, p0, Lcom/google/android/material/textfield/k;->a:Lcom/google/android/material/textfield/TextInputLayout;
+
+    invoke-virtual {v0, v1}, Lcom/google/android/material/textfield/TextInputLayout;->setEndIconContentDescription(Ljava/lang/CharSequence;)V
 
     return-void
 .end method

@@ -94,23 +94,24 @@
     .line 1
     iget-object v0, p0, Lcom/google/android/gms/dynamic/RemoteCreator;->b:Ljava/lang/Object;
 
-    if-nez v0, :cond_2
-
-    if-eqz p1, :cond_1
+    if-nez v0, :cond_1
 
     .line 2
-    invoke-static {p1}, Ly1/f;->a(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    invoke-static {p1}, Lz1/f;->a(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 3
+    .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object p1
 
-    .line 4
+    .line 5
     :try_start_0
     iget-object v0, p0, Lcom/google/android/gms/dynamic/RemoteCreator;->a:Ljava/lang/String;
 
@@ -118,14 +119,14 @@
 
     move-result-object p1
 
-    .line 5
+    .line 6
     invoke-virtual {p1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/IBinder;
 
-    .line 6
+    .line 7
     invoke-virtual {p0, p1}, Lcom/google/android/gms/dynamic/RemoteCreator;->a(Landroid/os/IBinder;)Ljava/lang/Object;
 
     move-result-object p1
@@ -141,7 +142,7 @@
     :catch_0
     move-exception p1
 
-    .line 7
+    .line 8
     new-instance v0, Lcom/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException;
 
     const-string v1, "Could not access creator."
@@ -153,7 +154,7 @@
     :catch_1
     move-exception p1
 
-    .line 8
+    .line 9
     new-instance v0, Lcom/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException;
 
     const-string v1, "Could not instantiate creator."
@@ -165,7 +166,7 @@
     :catch_2
     move-exception p1
 
-    .line 9
+    .line 10
     new-instance v0, Lcom/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException;
 
     const-string v1, "Could not load creator class."
@@ -174,28 +175,16 @@
 
     throw v0
 
-    .line 10
+    .line 11
     :cond_0
     new-instance p1, Lcom/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException;
 
-    const-string v0, "Could not get remote context."
-
-    invoke-direct {p1, v0}, Lcom/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 11
-    :cond_1
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "null reference"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1}, Lcom/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException;-><init>()V
 
     throw p1
 
     .line 12
-    :cond_2
+    :cond_1
     :goto_0
     iget-object p1, p0, Lcom/google/android/gms/dynamic/RemoteCreator;->b:Ljava/lang/Object;
 

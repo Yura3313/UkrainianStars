@@ -489,7 +489,6 @@
 .method private matches(I)Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/sentry/SpanStatus;->minHttpStatusCode:I
 
     if-lt p1, v0, :cond_0
@@ -512,7 +511,6 @@
 .method public static valueOf(Ljava/lang/String;)Lio/sentry/SpanStatus;
     .locals 1
 
-    .line 1
     const-class v0, Lio/sentry/SpanStatus;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -527,7 +525,6 @@
 .method public static values()[Lio/sentry/SpanStatus;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/SpanStatus;->$VALUES:[Lio/sentry/SpanStatus;
 
     invoke-virtual {v0}, [Lio/sentry/SpanStatus;->clone()Ljava/lang/Object;

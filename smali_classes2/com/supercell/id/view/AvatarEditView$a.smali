@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/view/AvatarEditView$a;
-.super Lle/j;
+.super Lse/h;
 .source "AvatarEditView.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/p;
 
 
 # annotations
@@ -18,71 +18,59 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
+        "Lse/h;",
+        "Lre/p<",
         "Landroid/graphics/drawable/Drawable;",
-        "Lpd/g;",
-        "Lae/i;",
+        "Lud/g;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/view/AvatarEditView;
+.field public final synthetic f:Lcom/supercell/id/view/AvatarEditView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/AvatarEditView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$a;->g:Lcom/supercell/id/view/AvatarEditView;
+    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$a;->f:Lcom/supercell/id/view/AvatarEditView;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
     check-cast p1, Landroid/graphics/drawable/Drawable;
 
-    check-cast p2, Lpd/g;
+    check-cast p2, Lud/g;
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
-
-    if-eqz p2, :cond_0
+    const-string v0, "avatarAtlas"
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/view/AvatarEditView$a;->g:Lcom/supercell/id/view/AvatarEditView;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "<anonymous parameter 1>"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    iget-object p2, p0, Lcom/supercell/id/view/AvatarEditView$a;->f:Lcom/supercell/id/view/AvatarEditView;
 
     invoke-static {p2, p1}, Lcom/supercell/id/view/AvatarEditView;->access$setAtlas$p(Lcom/supercell/id/view/AvatarEditView;Landroid/graphics/drawable/Drawable;)V
 
-    .line 3
-    sget-object p1, Lae/i;->a:Lae/i;
+    .line 4
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
-
-    :cond_0
-    const-string p1, "<anonymous parameter 1>"
-
-    .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "avatarAtlas"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

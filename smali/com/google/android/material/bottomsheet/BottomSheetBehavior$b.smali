@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/bottomsheet/BottomSheetBehavior$b;
+.class public final Lcom/google/android/material/bottomsheet/BottomSheetBehavior$b;
 .super Lj0/c$c;
 .source "BottomSheetBehavior.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$b;->a:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     invoke-direct {p0}, Lj0/c$c;-><init>()V
@@ -32,10 +31,9 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;II)I
+.method public final a(Landroid/view/View;I)I
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
     move-result p1
@@ -43,8 +41,8 @@
     return p1
 .end method
 
-.method public b(Landroid/view/View;II)I
-    .locals 1
+.method public final b(Landroid/view/View;I)I
+    .locals 2
 
     .line 1
     iget-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$b;->a:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
@@ -54,51 +52,51 @@
 
     move-result p1
 
-    iget-object p3, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$b;->a:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$b;->a:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
-    iget-boolean v0, p3, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->v:Z
+    iget-boolean v1, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->v:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    iget p3, p3, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->F:I
+    iget v0, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->F:I
 
     goto :goto_0
 
     :cond_0
-    iget p3, p3, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->t:I
+    iget v0, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->t:I
 
     .line 3
     :goto_0
-    invoke-static {p2, p1, p3}, La0/a;->b(III)I
+    invoke-static {p2, p1, v0}, La0/a;->e(III)I
 
     move-result p1
 
     return p1
 .end method
 
-.method public d(Landroid/view/View;)I
-    .locals 1
+.method public final d()I
+    .locals 2
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$b;->a:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$b;->a:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
-    iget-boolean v0, p1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->v:Z
+    iget-boolean v1, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->v:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     .line 2
-    iget p1, p1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->F:I
+    iget v0, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->F:I
 
-    return p1
+    return v0
 
     .line 3
     :cond_0
-    iget p1, p1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->t:I
+    iget v0, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->t:I
 
-    return p1
+    return v0
 .end method
 
-.method public h(I)V
+.method public final h(I)V
     .locals 2
 
     const/4 v0, 0x1
@@ -120,10 +118,9 @@
     return-void
 .end method
 
-.method public i(Landroid/view/View;IIII)V
+.method public final i(Landroid/view/View;II)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$b;->a:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     invoke-virtual {p1, p3}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->x(I)V
@@ -131,7 +128,7 @@
     return-void
 .end method
 
-.method public j(Landroid/view/View;FF)V
+.method public final j(Landroid/view/View;FF)V
     .locals 7
 
     const/4 v0, 0x1
@@ -531,7 +528,7 @@
     return-void
 .end method
 
-.method public k(Landroid/view/View;I)Z
+.method public final k(Landroid/view/View;I)Z
     .locals 5
 
     .line 1
@@ -539,13 +536,13 @@
 
     iget v1, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->y:I
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const/4 v3, 0x0
 
-    if-ne v1, v3, :cond_0
+    if-ne v1, v2, :cond_0
 
-    return v2
+    return v3
 
     .line 2
     :cond_0
@@ -553,7 +550,7 @@
 
     if-eqz v4, :cond_1
 
-    return v2
+    return v3
 
     :cond_1
     const/4 v4, 0x3
@@ -570,7 +567,7 @@
 
     if-eqz p2, :cond_2
 
-    invoke-virtual {p2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object p2
 
@@ -593,7 +590,7 @@
 
     if-eqz p2, :cond_3
 
-    return v2
+    return v3
 
     .line 6
     :cond_3
@@ -603,14 +600,17 @@
 
     if-eqz p2, :cond_4
 
-    invoke-virtual {p2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object p2
 
     if-ne p2, p1, :cond_4
 
-    const/4 v2, 0x1
+    goto :goto_1
 
     :cond_4
+    const/4 v2, 0x0
+
+    :goto_1
     return v2
 .end method

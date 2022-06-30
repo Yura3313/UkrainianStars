@@ -69,7 +69,6 @@
 .method public static acceptHeader(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -130,13 +129,23 @@
 
     if-gt p0, v0, :cond_3
 
-    :cond_2
-    const-string v0, "Code "
-
-    const-string v1, " is reserved and may not be used."
-
     .line 1
-    invoke-static {v0, p0, v1}, Lb0/c;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    :cond_2
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "Code "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p0, " is reserved and may not be used."
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -152,7 +161,7 @@
     const-string v0, "Code must be in range [1000,5000): "
 
     .line 2
-    invoke-static {v0, p0}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p0}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 

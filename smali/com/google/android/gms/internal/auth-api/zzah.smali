@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.auth.api.identity.internal.IGetSignInIntentCallback"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/auth-api/zzc;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,7 +19,7 @@
 
 
 # virtual methods
-.method public final F0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final J0(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -35,23 +34,23 @@
     .line 1
     sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lm3/b;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Ln3/b;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Lcom/google/android/gms/common/api/Status;
 
     .line 2
-    sget-object p4, Landroid/app/PendingIntent;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object p1, Landroid/app/PendingIntent;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p4}, Lm3/b;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Ln3/b;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
-    move-result-object p2
+    move-result-object p1
 
-    check-cast p2, Landroid/app/PendingIntent;
+    check-cast p1, Landroid/app/PendingIntent;
 
     .line 3
-    invoke-interface {p0, p1, p2}, Lcom/google/android/gms/internal/auth-api/zzae;->p7(Lcom/google/android/gms/common/api/Status;Landroid/app/PendingIntent;)V
+    invoke-interface {p0}, Lcom/google/android/gms/internal/auth-api/zzae;->a2()V
 
     return p3
 

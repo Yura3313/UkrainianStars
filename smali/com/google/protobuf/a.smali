@@ -99,7 +99,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/protobuf/i;->i()Z
+    invoke-virtual {p0}, Lcom/google/protobuf/i;->j()Z
 
     move-result p0
 
@@ -161,7 +161,6 @@
 .method getMemoizedSerializedSize()I
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -196,7 +195,6 @@
 .method public newUninitializedMessageException()Lcom/google/protobuf/UninitializedMessageException;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/UninitializedMessageException;
 
     invoke-direct {v0}, Lcom/google/protobuf/UninitializedMessageException;-><init>()V
@@ -207,7 +205,6 @@
 .method setMemoizedSerializedSize(I)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -216,7 +213,7 @@
 .end method
 
 .method public toByteArray()[B
-    .locals 4
+    .locals 3
 
     .line 1
     :try_start_0
@@ -232,17 +229,17 @@
     .line 3
     new-instance v2, Lcom/google/protobuf/CodedOutputStream$c;
 
-    const/4 v3, 0x0
-
-    invoke-direct {v2, v1, v3, v0}, Lcom/google/protobuf/CodedOutputStream$c;-><init>([BII)V
+    invoke-direct {v2, v1, v0}, Lcom/google/protobuf/CodedOutputStream$c;-><init>([BI)V
 
     .line 4
     invoke-interface {p0, v2}, Lcom/google/protobuf/q0;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
     .line 5
-    invoke-virtual {v2}, Lcom/google/protobuf/CodedOutputStream$c;->d0()I
+    iget v0, v2, Lcom/google/protobuf/CodedOutputStream$c;->e:I
 
-    move-result v0
+    iget v2, v2, Lcom/google/protobuf/CodedOutputStream$c;->f:I
+
+    sub-int/2addr v0, v2
 
     if-nez v0, :cond_0
 
@@ -278,7 +275,7 @@
 .end method
 
 .method public toByteString()Lcom/google/protobuf/i;
-    .locals 4
+    .locals 3
 
     .line 1
     :try_start_0
@@ -286,7 +283,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
+    sget-object v1, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
 
     .line 2
     new-array v1, v0, [B
@@ -297,17 +294,17 @@
     .line 4
     new-instance v2, Lcom/google/protobuf/CodedOutputStream$c;
 
-    const/4 v3, 0x0
-
-    invoke-direct {v2, v1, v3, v0}, Lcom/google/protobuf/CodedOutputStream$c;-><init>([BII)V
+    invoke-direct {v2, v1, v0}, Lcom/google/protobuf/CodedOutputStream$c;-><init>([BI)V
 
     .line 5
     invoke-interface {p0, v2}, Lcom/google/protobuf/q0;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
     .line 6
-    invoke-virtual {v2}, Lcom/google/protobuf/CodedOutputStream$c;->d0()I
+    iget v0, v2, Lcom/google/protobuf/CodedOutputStream$c;->e:I
 
-    move-result v0
+    iget v2, v2, Lcom/google/protobuf/CodedOutputStream$c;->f:I
+
+    sub-int/2addr v0, v2
 
     if-nez v0, :cond_0
 
@@ -361,7 +358,7 @@
     move-result v0
 
     .line 2
-    invoke-static {v0}, Lcom/google/protobuf/CodedOutputStream;->z(I)I
+    invoke-static {v0}, Lcom/google/protobuf/CodedOutputStream;->y(I)I
 
     move-result v1
 
@@ -375,18 +372,18 @@
 
     .line 3
     :cond_0
-    invoke-static {p1, v1}, Lcom/google/protobuf/CodedOutputStream;->G(Ljava/io/OutputStream;I)Lcom/google/protobuf/CodedOutputStream;
+    invoke-static {p1, v1}, Lcom/google/protobuf/CodedOutputStream;->E(Ljava/io/OutputStream;I)Lcom/google/protobuf/CodedOutputStream;
 
     move-result-object p1
 
     .line 4
-    invoke-virtual {p1, v0}, Lcom/google/protobuf/CodedOutputStream;->a0(I)V
+    invoke-virtual {p1, v0}, Lcom/google/protobuf/CodedOutputStream;->Y(I)V
 
     .line 5
     invoke-interface {p0, p1}, Lcom/google/protobuf/q0;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
     .line 6
-    invoke-virtual {p1}, Lcom/google/protobuf/CodedOutputStream;->E()V
+    invoke-virtual {p1}, Lcom/google/protobuf/CodedOutputStream;->C()V
 
     return-void
 .end method
@@ -414,7 +411,7 @@
 
     .line 2
     :cond_0
-    invoke-static {p1, v0}, Lcom/google/protobuf/CodedOutputStream;->G(Ljava/io/OutputStream;I)Lcom/google/protobuf/CodedOutputStream;
+    invoke-static {p1, v0}, Lcom/google/protobuf/CodedOutputStream;->E(Ljava/io/OutputStream;I)Lcom/google/protobuf/CodedOutputStream;
 
     move-result-object p1
 
@@ -422,7 +419,7 @@
     invoke-interface {p0, p1}, Lcom/google/protobuf/q0;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
     .line 4
-    invoke-virtual {p1}, Lcom/google/protobuf/CodedOutputStream;->E()V
+    invoke-virtual {p1}, Lcom/google/protobuf/CodedOutputStream;->C()V
 
     return-void
 .end method

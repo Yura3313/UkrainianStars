@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public a(Landroid/os/Bundle;)V
+.method public final a(Landroid/os/Bundle;)V
     .locals 3
 
     .line 1
@@ -50,7 +50,7 @@
     iget-object v1, v1, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 4
-    sget-object v2, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
+    sget-object v2, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
 
     if-ne v1, v2, :cond_2
 
@@ -118,7 +118,7 @@
     throw p1
 .end method
 
-.method public b(Landroid/os/Bundle;)V
+.method public final b(Landroid/os/Bundle;)V
     .locals 4
 
     .line 1

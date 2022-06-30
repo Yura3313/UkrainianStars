@@ -1,6 +1,6 @@
 .class public final Lnd/b$a$c;
 .super Ljava/lang/Object;
-.source "FriendsFragment.kt"
+.source "MessagesTabFriendsFragment.kt"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lnd/b$a;->i(Lvd/k1$a;ILvd/j1;)V
+    value = Lnd/b$a;->n(Lae/c2$a;ILae/b2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lnd/b$a;
+.field public final synthetic f:Lnd/b$a;
+
+.field public final synthetic g:Lae/b2;
 
 
 # direct methods
-.method public constructor <init>(Lnd/b$a;)V
+.method public constructor <init>(Lnd/b$a;Lae/b2;)V
     .locals 0
 
-    iput-object p1, p0, Lnd/b$a$c;->g:Lnd/b$a;
+    iput-object p1, p0, Lnd/b$a$c;->f:Lnd/b$a;
+
+    iput-object p2, p0, Lnd/b$a$c;->g:Lae/b2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,63 +39,77 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 7
+    .locals 11
 
     .line 1
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    iget-object p1, p0, Lnd/b$a$c;->f:Lnd/b$a;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    .line 2
+    iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
+
+    .line 3
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
-    .line 2
-    iget-object v0, p1, Lvd/r;->m:Lcom/supercell/titan/h;
+    if-eqz p1, :cond_0
 
-    const/4 v4, 0x0
+    new-instance v9, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;
 
-    const/4 v5, 0x0
+    const/4 v1, 0x0
 
-    const/16 v6, 0x18
+    iget-object v0, p0, Lnd/b$a$c;->g:Lae/b2;
 
-    const-string v1, "Public Profile Friends"
-
-    const-string v2, "click"
-
-    const-string v3, "Retry"
-
-    .line 3
-    invoke-static/range {v0 .. v6}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    check-cast v0, Lnd/a;
 
     .line 4
-    iget-object p1, p0, Lnd/b$a$c;->g:Lnd/b$a;
+    iget-object v2, v0, Lnd/a;->b:Lvc/i;
 
     .line 5
-    iget-object p1, p1, Lnd/b$a;->e:Lnd/b;
+    iget-object v3, v2, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 6
-    iget-object v0, p1, Lnd/b;->d0:Ljava/util/List;
+    iget-object v4, v2, Lvc/i;->b:Ljava/lang/String;
 
     .line 7
-    iget-object p1, p1, Lnd/b;->f0:Lvd/w1;
-
-    new-instance v1, Lnd/e;
-
-    invoke-direct {v1, v0}, Lnd/e;-><init>(Ljava/util/List;)V
-
-    invoke-static {v1}, Lvd/e1;->n(Lke/a;)Lse/f0;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Lvd/w1;->b(Lse/f0;)V
+    iget-object v5, v2, Lvc/i;->c:Lcom/supercell/id/model/ProfileImage;
 
     .line 8
-    iget-object p1, p0, Lnd/b$a$c;->g:Lnd/b$a;
+    iget-object v6, v0, Lnd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    const/4 v7, 0x0
 
     .line 9
-    iget-object p1, p1, Lnd/b$a;->e:Lnd/b;
+    iget-boolean v8, v2, Lvc/i;->g:Z
+
+    const/4 v10, 0x0
+
+    move-object v0, v9
+
+    move-object v2, v3
+
+    move-object v3, v4
+
+    move-object v4, v5
+
+    move-object v5, v6
+
+    move-object v6, v7
+
+    move v7, v8
+
+    move-object v8, v10
 
     .line 10
-    invoke-virtual {p1}, Lnd/b;->d1()V
+    invoke-direct/range {v0 .. v8}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Lcom/supercell/id/model/IdPresenceStatus;ZLjava/lang/String;)V
 
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+
+    const/4 v0, 0x0
+
+    .line 11
+    invoke-virtual {p1, v9, v0}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
+
+    :cond_0
     return-void
 .end method

@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Application;-><init>()V
 
     return-void
@@ -18,7 +17,6 @@
 .method public onTrimMemory(I)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/linecorp/nova/android/NovaNative;->onTrimMemory(I)V
 
     return-void

@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/profile/ProfileFragment$h;
-.super Lle/j;
+.super Ljava/lang/Object;
 .source "ProfileFragment.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profile/ProfileFragment;->a0(Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/profile/ProfileFragment;->S(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,55 +16,47 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/a<",
-        "Ljava/util/List<",
-        "+",
-        "Lvd/x1;",
-        ">;>;"
-    }
-.end annotation
 
-
-# static fields
-.field public static final g:Lcom/supercell/id/ui/profile/ProfileFragment$h;
+# instance fields
+.field public final synthetic f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
+    .locals 0
 
-    new-instance v0, Lcom/supercell/id/ui/profile/ProfileFragment$h;
+    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$h;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
 
-    invoke-direct {v0}, Lcom/supercell/id/ui/profile/ProfileFragment$h;-><init>()V
-
-    sput-object v0, Lcom/supercell/id/ui/profile/ProfileFragment$h;->g:Lcom/supercell/id/ui/profile/ProfileFragment$h;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
-    .locals 1
+.method public final onClick(Landroid/view/View;)V
+    .locals 2
 
     .line 1
-    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->q0:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$h;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
+
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    new-instance v0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$BackStackEntry;
+
+    invoke-direct {v0}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$BackStackEntry;-><init>()V
+
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+
+    const/4 v1, 0x0
 
     .line 2
-    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->p0:Ljava/util/List;
+    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
 
-    return-object v0
+    :cond_0
+    return-void
 .end method

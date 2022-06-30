@@ -1,32 +1,26 @@
-.class public interface abstract annotation Lze/u;
+.class public interface abstract Lze/u;
 .super Ljava/lang/Object;
-.source "QueryMap.java"
-
-# interfaces
-.implements Ljava/lang/annotation/Annotation;
+.source "Debug.kt"
 
 
 # annotations
-.annotation system Ldalvik/annotation/AnnotationDefault;
-    value = .subannotation Lze/u;
-        encoded = false
-    .end subannotation
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Documented;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Target;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        .enum Ljava/lang/annotation/ElementType;->PARAMETER:Ljava/lang/annotation/ElementType;
+        "<T:",
+        "Ljava/lang/Throwable;",
+        ":",
+        "Lze/u<",
+        "TT;>;>",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract encoded()Z
+.method public abstract a()Ljava/lang/Throwable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
 .end method

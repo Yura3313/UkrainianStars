@@ -3,5 +3,5 @@
 
 
 # virtual methods
-.method public abstract b(ILjava/lang/String;)I
+.method public abstract K(I)I
 .end method

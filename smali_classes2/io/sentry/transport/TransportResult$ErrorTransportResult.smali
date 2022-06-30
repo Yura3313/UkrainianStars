@@ -38,7 +38,6 @@
 .method public getResponseCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/sentry/transport/TransportResult$ErrorTransportResult;->responseCode:I
 
     return v0

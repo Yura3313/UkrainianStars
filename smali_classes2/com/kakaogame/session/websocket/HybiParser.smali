@@ -393,7 +393,7 @@
     .line 4
     iget-object v1, p0, Lcom/kakaogame/session/websocket/HybiParser;->mBuffer:Ljava/io/ByteArrayOutputStream;
 
-    invoke-virtual {v1, v0}, Ljava/io/ByteArrayOutputStream;->write([B)V
+    invoke-virtual {v1, v0}, Ljava/io/OutputStream;->write([B)V
 
     .line 5
     iget-boolean v0, p0, Lcom/kakaogame/session/websocket/HybiParser;->mFinal:Z
@@ -472,7 +472,7 @@
     .line 16
     iget-object v1, p0, Lcom/kakaogame/session/websocket/HybiParser;->mBuffer:Ljava/io/ByteArrayOutputStream;
 
-    invoke-virtual {v1, v0}, Ljava/io/ByteArrayOutputStream;->write([B)V
+    invoke-virtual {v1, v0}, Ljava/io/OutputStream;->write([B)V
 
     goto/16 :goto_2
 
@@ -500,7 +500,7 @@
     .line 20
     iget-object v1, p0, Lcom/kakaogame/session/websocket/HybiParser;->mBuffer:Ljava/io/ByteArrayOutputStream;
 
-    invoke-virtual {v1, v0}, Ljava/io/ByteArrayOutputStream;->write([B)V
+    invoke-virtual {v1, v0}, Ljava/io/OutputStream;->write([B)V
 
     goto :goto_2
 
@@ -627,7 +627,7 @@
     const-string v1, "Got pong! "
 
     .line 30
-    invoke-static {v1, v0, v6}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0, v6}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_c
     :goto_2
@@ -1251,10 +1251,12 @@
 
     const-string v2, "Bad integer: "
 
+    .line 3
     invoke-static {v2, v0, v1}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 4
     invoke-direct {p1, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     throw p1
@@ -1591,7 +1593,6 @@
 .method private slice([BI)[B
     .locals 1
 
-    .line 1
     array-length v0, p1
 
     invoke-static {p1, p2, v0}, Lcom/kakaogame/session/websocket/HybiParser;->copyOfRange([BII)[B
@@ -1672,7 +1673,6 @@
 
     const/4 v2, -0x1
 
-    .line 1
     invoke-direct {p0, v0, v1, v2}, Lcom/kakaogame/session/websocket/HybiParser;->frame(Ljava/lang/String;II)[B
 
     move-result-object v0
@@ -1690,7 +1690,7 @@
 
     .line 1
     :goto_0
-    invoke-virtual {p1}, Ljava/io/DataInputStream;->available()I
+    invoke-virtual {p1}, Ljava/io/InputStream;->available()I
 
     move-result v0
 

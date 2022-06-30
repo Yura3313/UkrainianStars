@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/AppCompatSpinner$d$a;
+.class public final Landroidx/appcompat/widget/AppCompatSpinner$d$a;
 .super Ljava/lang/Object;
 .source "AppCompatSpinner.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/AppCompatSpinner$d;
+.field public final synthetic f:Landroidx/appcompat/widget/AppCompatSpinner$d;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/widget/AppCompatSpinner$d;Landroidx/appcompat/widget/AppCompatSpinner;)V
+.method public constructor <init>(Landroidx/appcompat/widget/AppCompatSpinner$d;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$d$a;->g:Landroidx/appcompat/widget/AppCompatSpinner$d;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$d$a;->f:Landroidx/appcompat/widget/AppCompatSpinner$d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -48,40 +47,40 @@
     .end annotation
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$d$a;->g:Landroidx/appcompat/widget/AppCompatSpinner$d;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$d$a;->f:Landroidx/appcompat/widget/AppCompatSpinner$d;
 
-    iget-object p1, p1, Landroidx/appcompat/widget/AppCompatSpinner$d;->M:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object p1, p1, Landroidx/appcompat/widget/AppCompatSpinner$d;->L:Landroidx/appcompat/widget/AppCompatSpinner;
 
-    invoke-virtual {p1, p3}, Landroid/widget/Spinner;->setSelection(I)V
+    invoke-virtual {p1, p3}, Landroid/widget/AdapterView;->setSelection(I)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$d$a;->g:Landroidx/appcompat/widget/AppCompatSpinner$d;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$d$a;->f:Landroidx/appcompat/widget/AppCompatSpinner$d;
 
-    iget-object p1, p1, Landroidx/appcompat/widget/AppCompatSpinner$d;->M:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object p1, p1, Landroidx/appcompat/widget/AppCompatSpinner$d;->L:Landroidx/appcompat/widget/AppCompatSpinner;
 
-    invoke-virtual {p1}, Landroid/widget/Spinner;->getOnItemClickListener()Landroid/widget/AdapterView$OnItemClickListener;
+    invoke-virtual {p1}, Landroid/widget/AdapterView;->getOnItemClickListener()Landroid/widget/AdapterView$OnItemClickListener;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$d$a;->g:Landroidx/appcompat/widget/AppCompatSpinner$d;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$d$a;->f:Landroidx/appcompat/widget/AppCompatSpinner$d;
 
-    iget-object p4, p1, Landroidx/appcompat/widget/AppCompatSpinner$d;->M:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object p4, p1, Landroidx/appcompat/widget/AppCompatSpinner$d;->L:Landroidx/appcompat/widget/AppCompatSpinner;
 
-    iget-object p1, p1, Landroidx/appcompat/widget/AppCompatSpinner$d;->J:Landroid/widget/ListAdapter;
+    iget-object p1, p1, Landroidx/appcompat/widget/AppCompatSpinner$d;->I:Landroid/widget/ListAdapter;
 
     .line 4
-    invoke-interface {p1, p3}, Landroid/widget/ListAdapter;->getItemId(I)J
+    invoke-interface {p1, p3}, Landroid/widget/Adapter;->getItemId(I)J
 
     move-result-wide v0
 
-    invoke-virtual {p4, p2, p3, v0, v1}, Landroid/widget/Spinner;->performItemClick(Landroid/view/View;IJ)Z
+    invoke-virtual {p4, p2, p3, v0, v1}, Landroid/widget/AdapterView;->performItemClick(Landroid/view/View;IJ)Z
 
     .line 5
     :cond_0
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$d$a;->g:Landroidx/appcompat/widget/AppCompatSpinner$d;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$d$a;->f:Landroidx/appcompat/widget/AppCompatSpinner$d;
 
     invoke-virtual {p1}, Landroidx/appcompat/widget/ListPopupWindow;->dismiss()V
 

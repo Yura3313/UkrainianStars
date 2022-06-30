@@ -1,21 +1,20 @@
-.class public Lcom/google/android/material/textfield/i;
+.class public final Lcom/google/android/material/textfield/i;
 .super Ljava/lang/Object;
 .source "DropdownMenuEndIconDelegate.java"
 
 # interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.implements Landroid/widget/AutoCompleteTextView$OnDismissListener;
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/textfield/h;
+.field public final synthetic a:Lcom/google/android/material/textfield/g;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/textfield/h;)V
+.method public constructor <init>(Lcom/google/android/material/textfield/g;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/i;->g:Lcom/google/android/material/textfield/h;
+    iput-object p1, p0, Lcom/google/android/material/textfield/i;->a:Lcom/google/android/material/textfield/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,26 +23,31 @@
 
 
 # virtual methods
-.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 1
+.method public final onDismiss()V
+    .locals 3
 
     .line 1
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+    iget-object v0, p0, Lcom/google/android/material/textfield/i;->a:Lcom/google/android/material/textfield/g;
 
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Float;
-
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    move-result p1
+    const/4 v1, 0x1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/i;->g:Lcom/google/android/material/textfield/h;
+    iput-boolean v1, v0, Lcom/google/android/material/textfield/g;->i:Z
 
-    iget-object v0, v0, Lcom/google/android/material/textfield/m;->c:Lcom/google/android/material/internal/CheckableImageButton;
+    .line 3
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setAlpha(F)V
+    move-result-wide v1
+
+    .line 4
+    iput-wide v1, v0, Lcom/google/android/material/textfield/g;->k:J
+
+    .line 5
+    iget-object v0, p0, Lcom/google/android/material/textfield/i;->a:Lcom/google/android/material/textfield/g;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lcom/google/android/material/textfield/g;->e(Lcom/google/android/material/textfield/g;Z)V
 
     return-void
 .end method

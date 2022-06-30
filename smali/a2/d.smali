@@ -1,28 +1,46 @@
-.class public interface abstract La2/d;
-.super Ljava/lang/Object;
+.class public final La2/d;
+.super Lcom/google/android/gms/common/api/internal/BasePendingResult;
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<R:",
-        "Ljava/lang/Object;",
+        "<R::",
+        "La2/g;",
         ">",
-        "Ljava/lang/Object;"
+        "Lcom/google/android/gms/common/api/internal/BasePendingResult<",
+        "TR;>;"
     }
 .end annotation
 
 
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/common/api/c;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;-><init>(Lcom/google/android/gms/common/api/c;)V
+
+    return-void
+.end method
+
+
 # virtual methods
-.method public abstract a(Ljava/lang/Object;)V
-    .param p1    # Ljava/lang/Object;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
+.method public final d(Lcom/google/android/gms/common/api/Status;)La2/g;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TR;)V"
+            "(",
+            "Lcom/google/android/gms/common/api/Status;",
+            ")TR;"
         }
     .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const-string v0, "Creating failed results is not supported"
+
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

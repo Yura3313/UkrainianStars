@@ -1,27 +1,56 @@
-.class public interface abstract Ll7/a;
+.class public final Ll7/a;
 .super Ljava/lang/Object;
-.source "NetworkAuthDataFetcher.java"
+.source "AnalyticsEventDTO.java"
+
+# interfaces
+.implements Ljava/io/Serializable;
 
 
-# virtual methods
-.method public abstract a(Ljava/util/Map;)Ljava/util/Map;
+# instance fields
+.field public final f:I
+
+.field public final g:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;)",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
             ">;"
         }
     .end annotation
+.end field
 
-    .annotation system Ldalvik/annotation/Throws;
+.field public final h:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(ILjava/util/Map;Ljava/lang/String;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Ljava/security/GeneralSecurityException;
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;",
+            "Ljava/lang/String;",
+            ")V"
         }
     .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput p1, p0, Ll7/a;->f:I
+
+    .line 3
+    iput-object p2, p0, Ll7/a;->g:Ljava/util/Map;
+
+    .line 4
+    iput-object p3, p0, Ll7/a;->h:Ljava/lang/String;
+
+    return-void
 .end method

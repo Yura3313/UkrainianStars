@@ -4,14 +4,8 @@
 
 
 # virtual methods
-.method public abstract M()V
+.method public abstract I()V
 .end method
 
-.method public abstract T()V
-.end method
-
-.method public abstract onPause()V
-.end method
-
-.method public abstract onResume()V
+.method public abstract m()V
 .end method

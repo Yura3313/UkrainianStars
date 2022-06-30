@@ -1,4 +1,4 @@
-.class public Lcom/journeyapps/barcodescanner/b$c;
+.class public final Lcom/journeyapps/barcodescanner/b$c;
 .super Ljava/lang/Object;
 .source "CaptureManager.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/journeyapps/barcodescanner/b;
+.field public final synthetic f:Lcom/journeyapps/barcodescanner/b;
 
 
 # direct methods
 .method public constructor <init>(Lcom/journeyapps/barcodescanner/b;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$c;->g:Lcom/journeyapps/barcodescanner/b;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$c;->f:Lcom/journeyapps/barcodescanner/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,19 +34,16 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 1
 
     .line 1
     sget v0, Lcom/journeyapps/barcodescanner/b;->m:I
 
     .line 2
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/b$c;->g:Lcom/journeyapps/barcodescanner/b;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/b$c;->f:Lcom/journeyapps/barcodescanner/b;
 
-    .line 3
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/b;->a:Landroid/app/Activity;
-
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-static {v0}, Lcom/journeyapps/barcodescanner/b;->a(Lcom/journeyapps/barcodescanner/b;)V
 
     return-void
 .end method

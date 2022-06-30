@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,39 +37,45 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 3
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_6
+    const-string v0, "parcel"
 
     .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
-    sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v2, "Locale.ENGLISH"
 
-    invoke-static {v0, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "(this as java.lang.String).toUpperCase(locale)"
 
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Lqc/j0;->valueOf(Ljava/lang/String;)Lqc/j0;
+    invoke-static {v0}, Lvc/f0;->valueOf(Ljava/lang/String;)Lvc/f0;
 
     move-result-object v0
 
+    goto :goto_0
+
     :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
     if-eqz v0, :cond_5
 
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
@@ -91,7 +96,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 2
+    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
@@ -104,9 +109,9 @@
 
     invoke-direct {v0, p1}, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance$Friends;-><init>(Ljava/util/Date;)V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 3
+    .line 4
     :cond_1
     new-instance p1, Lkotlin/NoWhenBranchMatchedException;
 
@@ -114,7 +119,7 @@
 
     throw p1
 
-    .line 4
+    .line 5
     :cond_2
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
@@ -128,9 +133,9 @@
 
     invoke-direct {v0, p1}, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance$RequestReceived;-><init>(Ljava/util/Date;)V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 5
+    .line 6
     :cond_3
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
@@ -144,16 +149,16 @@
 
     invoke-direct {v0, p1}, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance$RequestSent;-><init>(Ljava/util/Date;)V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 6
+    .line 7
     :cond_4
     sget-object v0, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->g:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
 
-    :goto_0
+    :goto_1
     return-object v0
 
-    .line 7
+    .line 8
     :cond_5
     new-instance p1, Landroid/os/ParcelFormatException;
 
@@ -162,20 +167,11 @@
     invoke-direct {p1, v0}, Landroid/os/ParcelFormatException;-><init>(Ljava/lang/String;)V
 
     throw p1
-
-    :cond_6
-    const-string p1, "parcel"
-
-    .line 8
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Lcom/supercell/id/model/IdRelationshipStatus;
 
     return-object p1

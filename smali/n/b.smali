@@ -15,7 +15,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -72,7 +71,7 @@
 
 
 # virtual methods
-.method public abstract b(DI)D
+.method public abstract b(D)D
 .end method
 
 .method public abstract c(D[D)V
@@ -81,7 +80,7 @@
 .method public abstract d(D[F)V
 .end method
 
-.method public abstract e(DI)D
+.method public abstract e(D)D
 .end method
 
 .method public abstract f(D[D)V

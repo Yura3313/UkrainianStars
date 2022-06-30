@@ -3,9 +3,9 @@
 .source "ComponentActivity.java"
 
 # interfaces
-.implements Landroidx/lifecycle/d0;
+.implements Landroidx/lifecycle/z;
 .implements Landroidx/savedstate/c;
-.implements Landroidx/activity/c;
+.implements Landroidx/activity/e;
 .implements Landroidx/activity/result/c;
 
 
@@ -24,7 +24,7 @@
 
 .field public final mContextAwareHelper:La/a;
 
-.field private mDefaultFactory:Landroidx/lifecycle/z;
+.field private mDefaultFactory:Landroidx/lifecycle/x$b;
 
 .field private final mLifecycleRegistry:Landroidx/lifecycle/k;
 
@@ -34,7 +34,7 @@
 
 .field public final mSavedStateRegistryController:Landroidx/savedstate/b;
 
-.field private mViewModelStore:Landroidx/lifecycle/c0;
+.field private mViewModelStore:Landroidx/lifecycle/y;
 
 
 # direct methods
@@ -185,14 +185,13 @@
 .method public static synthetic access$001(Landroidx/activity/ComponentActivity;)V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Landroid/app/Activity;->onBackPressed()V
 
     return-void
 .end method
 
 .method private initViewTreeOwners()V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
@@ -203,10 +202,18 @@
 
     move-result-object v0
 
-    .line 2
-    sget v1, Landroidx/lifecycle/runtime/R$id;->view_tree_lifecycle_owner:I
+    invoke-static {v0, p0}, Landroidx/lifecycle/a0;->d(Landroid/view/View;Landroidx/lifecycle/j;)V
 
-    invoke-virtual {v0, v1, p0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+    .line 2
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-static {v0, p0}, Landroidx/lifecycle/b0;->b(Landroid/view/View;Landroidx/lifecycle/z;)V
 
     .line 3
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
@@ -217,24 +224,7 @@
 
     move-result-object v0
 
-    .line 4
-    sget v1, Landroidx/lifecycle/viewmodel/R$id;->view_tree_view_model_store_owner:I
-
-    invoke-virtual {v0, v1, p0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 5
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    move-result-object v0
-
-    .line 6
-    sget v1, Landroidx/savedstate/R$id;->view_tree_saved_state_registry_owner:I
-
-    invoke-virtual {v0, v1, p0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+    invoke-static {v0, p0}, Landroidx/savedstate/d;->o(Landroid/view/View;Landroidx/savedstate/c;)V
 
     return-void
 .end method
@@ -281,13 +271,11 @@
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v1, v0, La/a;->b:Landroid/content/Context;
-
-    invoke-interface {p1, v1}, La/b;->a(Landroid/content/Context;)V
+    invoke-interface {p1}, La/b;->a()V
 
     .line 4
     :cond_0
-    iget-object v0, v0, La/a;->a:Ljava/util/Set;
+    iget-object v0, v0, La/a;->a:Ljava/util/concurrent/CopyOnWriteArraySet;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
@@ -298,7 +286,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/c0;
+    iget-object v0, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/y;
 
     if-nez v0, :cond_1
 
@@ -312,22 +300,22 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, v0, Landroidx/activity/ComponentActivity$c;->b:Landroidx/lifecycle/c0;
+    iget-object v0, v0, Landroidx/activity/ComponentActivity$c;->b:Landroidx/lifecycle/y;
 
-    iput-object v0, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/c0;
+    iput-object v0, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/y;
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/c0;
+    iget-object v0, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/y;
 
     if-nez v0, :cond_1
 
     .line 5
-    new-instance v0, Landroidx/lifecycle/c0;
+    new-instance v0, Landroidx/lifecycle/y;
 
-    invoke-direct {v0}, Landroidx/lifecycle/c0;-><init>()V
+    invoke-direct {v0}, Landroidx/lifecycle/y;-><init>()V
 
-    iput-object v0, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/c0;
+    iput-object v0, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/y;
 
     :cond_1
     return-void
@@ -336,13 +324,12 @@
 .method public final getActivityResultRegistry()Landroidx/activity/result/ActivityResultRegistry;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mActivityResultRegistry:Landroidx/activity/result/ActivityResultRegistry;
 
     return-object v0
 .end method
 
-.method public getDefaultViewModelProviderFactory()Landroidx/lifecycle/z;
+.method public getDefaultViewModelProviderFactory()Landroidx/lifecycle/x$b;
     .locals 3
 
     .line 1
@@ -353,12 +340,12 @@
     if-eqz v0, :cond_2
 
     .line 2
-    iget-object v0, p0, Landroidx/activity/ComponentActivity;->mDefaultFactory:Landroidx/lifecycle/z;
+    iget-object v0, p0, Landroidx/activity/ComponentActivity;->mDefaultFactory:Landroidx/lifecycle/x$b;
 
     if-nez v0, :cond_1
 
     .line 3
-    new-instance v0, Landroidx/lifecycle/v;
+    new-instance v0, Landroidx/lifecycle/u;
 
     .line 4
     invoke-virtual {p0}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
@@ -386,13 +373,13 @@
     const/4 v2, 0x0
 
     :goto_0
-    invoke-direct {v0, v1, p0, v2}, Landroidx/lifecycle/v;-><init>(Landroid/app/Application;Landroidx/savedstate/c;Landroid/os/Bundle;)V
+    invoke-direct {v0, v1, p0, v2}, Landroidx/lifecycle/u;-><init>(Landroid/app/Application;Landroidx/savedstate/c;Landroid/os/Bundle;)V
 
-    iput-object v0, p0, Landroidx/activity/ComponentActivity;->mDefaultFactory:Landroidx/lifecycle/z;
+    iput-object v0, p0, Landroidx/activity/ComponentActivity;->mDefaultFactory:Landroidx/lifecycle/x$b;
 
     .line 6
     :cond_1
-    iget-object v0, p0, Landroidx/activity/ComponentActivity;->mDefaultFactory:Landroidx/lifecycle/z;
+    iget-object v0, p0, Landroidx/activity/ComponentActivity;->mDefaultFactory:Landroidx/lifecycle/x$b;
 
     return-object v0
 
@@ -436,7 +423,6 @@
 .method public getLifecycle()Landroidx/lifecycle/f;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mLifecycleRegistry:Landroidx/lifecycle/k;
 
     return-object v0
@@ -445,7 +431,6 @@
 .method public final getOnBackPressedDispatcher()Landroidx/activity/OnBackPressedDispatcher;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mOnBackPressedDispatcher:Landroidx/activity/OnBackPressedDispatcher;
 
     return-object v0
@@ -463,7 +448,7 @@
     return-object v0
 .end method
 
-.method public getViewModelStore()Landroidx/lifecycle/c0;
+.method public getViewModelStore()Landroidx/lifecycle/y;
     .locals 2
 
     .line 1
@@ -477,7 +462,7 @@
     invoke-virtual {p0}, Landroidx/activity/ComponentActivity;->ensureViewModelStore()V
 
     .line 3
-    iget-object v0, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/c0;
+    iget-object v0, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/y;
 
     return-object v0
 
@@ -516,7 +501,6 @@
 .method public onBackPressed()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mOnBackPressedDispatcher:Landroidx/activity/OnBackPressedDispatcher;
 
     invoke-virtual {v0}, Landroidx/activity/OnBackPressedDispatcher;->b()V
@@ -539,7 +523,7 @@
     iput-object p0, v0, La/a;->b:Landroid/content/Context;
 
     .line 4
-    iget-object v0, v0, La/a;->a:Ljava/util/Set;
+    iget-object v0, v0, La/a;->a:Ljava/util/concurrent/CopyOnWriteArraySet;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -559,7 +543,7 @@
     check-cast v1, La/b;
 
     .line 5
-    invoke-interface {v1, p0}, La/b;->a(Landroid/content/Context;)V
+    invoke-interface {v1}, La/b;->a()V
 
     goto :goto_0
 
@@ -626,7 +610,7 @@
     check-cast v6, Ljava/lang/String;
 
     .line 12
-    iget-object v7, v0, Landroidx/activity/result/ActivityResultRegistry;->b:Ljava/util/Map;
+    iget-object v7, v0, Landroidx/activity/result/ActivityResultRegistry;->b:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -635,7 +619,7 @@
     invoke-interface {v7, v8, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 13
-    iget-object v7, v0, Landroidx/activity/result/ActivityResultRegistry;->c:Ljava/util/Map;
+    iget-object v7, v0, Landroidx/activity/result/ActivityResultRegistry;->c:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -684,7 +668,7 @@
     .line 19
     :cond_4
     :goto_2
-    invoke-static {p0}, Landroidx/lifecycle/t;->c(Landroid/app/Activity;)V
+    invoke-static {p0}, Landroidx/lifecycle/s;->c(Landroid/app/Activity;)V
 
     .line 20
     iget p1, p0, Landroidx/activity/ComponentActivity;->mContentLayoutId:I
@@ -766,7 +750,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/c0;
+    iget-object v1, p0, Landroidx/activity/ComponentActivity;->mViewModelStore:Landroidx/lifecycle/y;
 
     if-nez v1, :cond_0
 
@@ -780,7 +764,7 @@
     if-eqz v2, :cond_0
 
     .line 4
-    iget-object v1, v2, Landroidx/activity/ComponentActivity$c;->b:Landroidx/lifecycle/c0;
+    iget-object v1, v2, Landroidx/activity/ComponentActivity$c;->b:Landroidx/lifecycle/y;
 
     :cond_0
     if-nez v1, :cond_1
@@ -801,7 +785,7 @@
     iput-object v0, v2, Landroidx/activity/ComponentActivity$c;->a:Ljava/lang/Object;
 
     .line 7
-    iput-object v1, v2, Landroidx/activity/ComponentActivity$c;->b:Landroidx/lifecycle/c0;
+    iput-object v1, v2, Landroidx/activity/ComponentActivity$c;->b:Landroidx/lifecycle/y;
 
     return-object v2
 .end method
@@ -822,36 +806,30 @@
     .line 3
     check-cast v0, Landroidx/lifecycle/k;
 
-    sget-object v1, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
 
-    const-string v2, "setCurrentState"
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/k;->j(Landroidx/lifecycle/f$c;)V
 
     .line 4
-    invoke-virtual {v0, v2}, Landroidx/lifecycle/k;->d(Ljava/lang/String;)V
-
-    .line 5
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/k;->g(Landroidx/lifecycle/f$c;)V
-
-    .line 6
     :cond_0
     invoke-super {p0, p1}, Landroidx/core/app/ComponentActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 7
+    .line 5
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mSavedStateRegistryController:Landroidx/savedstate/b;
 
     invoke-virtual {v0, p1}, Landroidx/savedstate/b;->b(Landroid/os/Bundle;)V
 
-    .line 8
+    .line 6
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mActivityResultRegistry:Landroidx/activity/result/ActivityResultRegistry;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 9
+    .line 7
     new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v2, v0, Landroidx/activity/result/ActivityResultRegistry;->b:Ljava/util/Map;
+    iget-object v2, v0, Landroidx/activity/result/ActivityResultRegistry;->b:Ljava/util/HashMap;
 
-    .line 10
+    .line 8
     invoke-interface {v2}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v2
@@ -860,15 +838,15 @@
 
     const-string v2, "KEY_COMPONENT_ACTIVITY_REGISTERED_RCS"
 
-    .line 11
+    .line 9
     invoke-virtual {p1, v2, v1}, Landroid/os/Bundle;->putIntegerArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 12
+    .line 10
     new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v2, v0, Landroidx/activity/result/ActivityResultRegistry;->b:Ljava/util/Map;
+    iget-object v2, v0, Landroidx/activity/result/ActivityResultRegistry;->b:Ljava/util/HashMap;
 
-    .line 13
+    .line 11
     invoke-interface {v2}, Ljava/util/Map;->values()Ljava/util/Collection;
 
     move-result-object v2
@@ -877,10 +855,10 @@
 
     const-string v2, "KEY_COMPONENT_ACTIVITY_REGISTERED_KEYS"
 
-    .line 14
+    .line 12
     invoke-virtual {p1, v2, v1}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 15
+    .line 13
     new-instance v1, Ljava/util/ArrayList;
 
     iget-object v2, v0, Landroidx/activity/result/ActivityResultRegistry;->e:Ljava/util/ArrayList;
@@ -891,10 +869,10 @@
 
     invoke-virtual {p1, v2, v1}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 16
+    .line 14
     iget-object v1, v0, Landroidx/activity/result/ActivityResultRegistry;->h:Landroid/os/Bundle;
 
-    .line 17
+    .line 15
     invoke-virtual {v1}, Landroid/os/Bundle;->clone()Ljava/lang/Object;
 
     move-result-object v1
@@ -903,10 +881,10 @@
 
     const-string v2, "KEY_COMPONENT_ACTIVITY_PENDING_RESULT"
 
-    .line 18
+    .line 16
     invoke-virtual {p1, v2, v1}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    .line 19
+    .line 17
     iget-object v0, v0, Landroidx/activity/result/ActivityResultRegistry;->a:Ljava/util/Random;
 
     const-string v1, "KEY_COMPONENT_ACTIVITY_RANDOM_OBJECT"
@@ -954,9 +932,10 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Landroidx/activity/ComponentActivity;->mNextLocalRequestCode:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 2
+    .line 3
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
     move-result v1
@@ -967,7 +946,7 @@
 
     move-result-object v0
 
-    .line 3
+    .line 4
     invoke-virtual {p2, v0, p0, p1, p3}, Landroidx/activity/result/ActivityResultRegistry;->c(Ljava/lang/String;Landroidx/lifecycle/j;Lb/a;Landroidx/activity/result/a;)Landroidx/activity/result/b;
 
     move-result-object p1
@@ -993,7 +972,7 @@
         }
     .end annotation
 
-    .line 4
+    .line 8
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mActivityResultRegistry:Landroidx/activity/result/ActivityResultRegistry;
 
     invoke-virtual {p0, p1, v0, p2}, Landroidx/activity/ComponentActivity;->registerForActivityResult(Lb/a;Landroidx/activity/result/ActivityResultRegistry;Landroidx/activity/result/a;)Landroidx/activity/result/b;
@@ -1010,7 +989,7 @@
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mContextAwareHelper:La/a;
 
     .line 2
-    iget-object v0, v0, La/a;->a:Ljava/util/Set;
+    iget-object v0, v0, La/a;->a:Ljava/util/concurrent/CopyOnWriteArraySet;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
@@ -1050,8 +1029,16 @@
     .line 3
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    goto :goto_2
+
     .line 4
     :cond_0
+    :goto_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
@@ -1061,7 +1048,7 @@
     .line 5
     invoke-super {p0}, Landroid/app/Activity;->reportFullyDrawn()V
 
-    goto :goto_0
+    goto :goto_1
 
     :cond_1
     if-ne v0, v1, :cond_2
@@ -1082,14 +1069,12 @@
 
     .line 8
     :cond_2
-    :goto_0
+    :goto_1
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     return-void
 
-    :catchall_0
-    move-exception v0
-
+    :goto_2
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     .line 9

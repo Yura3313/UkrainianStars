@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroid/app/AlertDialog$Builder;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/ui/DialogManager$3;->val$builder:Landroid/app/AlertDialog$Builder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,10 +47,10 @@
     const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
+    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
     .line 3
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -60,7 +59,7 @@
     invoke-virtual {v1, v2}, Landroid/view/Window;->setGravity(I)V
 
     .line 4
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -73,7 +72,7 @@
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
     .line 5
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
+    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 
     return-void
 .end method

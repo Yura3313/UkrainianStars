@@ -42,7 +42,6 @@
 
     aput v2, v0, v1
 
-    .line 1
     sput-object v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$LayoutParams;->e:[I
 
     return-void

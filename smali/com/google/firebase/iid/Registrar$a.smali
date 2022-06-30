@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lx5/a;
+.implements Lz5/a;
 
 
 # annotations
@@ -17,10 +17,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/firebase/iid/FirebaseInstanceId;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -28,9 +28,6 @@
 .method public abstract consumeLink(Ljava/lang/String;)Z
 .end method
 
-.method public abstract donationReceivedNotification(Lcom/supercell/id/IdShopDonation;)V
-.end method
-
 .method public abstract friends([Lcom/supercell/id/IdFriend;)V
 .end method
 
@@ -80,9 +77,6 @@
 .end method
 
 .method public abstract resetPresences([Lcom/supercell/id/IdPresence;)V
-.end method
-
-.method public abstract respondToDonationResult(Ljava/lang/String;Ljava/lang/String;)V
 .end method
 
 .method public abstract setNotificationBadge(ZI)V

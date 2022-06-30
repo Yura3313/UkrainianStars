@@ -1,138 +1,170 @@
-.class public abstract Lxb/a;
+.class public final Lxb/a;
 .super Ljava/lang/Object;
-.source "LimitedMemoryCache.java"
-
-# interfaces
-.implements Lxb/b;
+.source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/util/Map;
+.field public final a:Landroid/content/pm/PackageInfo;
 
-.field public final b:I
+.field public final b:Ljava/lang/String;
 
-.field public final c:Ljava/util/concurrent/atomic/AtomicInteger;
-
-.field public final d:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Landroid/graphics/Bitmap;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public c:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 3
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    invoke-static {v0}, Ljava/util/Collections;->synchronizedMap(Ljava/util/Map;)Ljava/util/Map;
+    :try_start_0
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
-
-    iput-object v0, p0, Lxb/a;->a:Ljava/util/Map;
 
     .line 3
-    new-instance v0, Ljava/util/LinkedList;
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
+    move-result-object p1
 
-    invoke-static {v0}, Ljava/util/Collections;->synchronizedList(Ljava/util/List;)Ljava/util/List;
+    const/16 v1, 0x80
 
-    move-result-object v0
+    invoke-virtual {v0, p1, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
-    iput-object v0, p0, Lxb/a;->d:Ljava/util/List;
+    move-result-object p1
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 4
-    iput p1, p0, Lxb/a;->b:I
+    iput-object p1, p0, Lxb/a;->a:Landroid/content/pm/PackageInfo;
 
     .line 5
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object p2, p0, Lxb/a;->b:Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
-
-    iput-object v0, p0, Lxb/a;->c:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    const/high16 v0, 0x1000000
-
-    if-le p1, v0, :cond_0
-
-    const/4 p1, 0x1
-
-    new-array p1, p1, [Ljava/lang/Object;
-
-    const/4 v0, 0x0
-
-    const/16 v1, 0x10
-
-    .line 6
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    aput-object v1, p1, v0
-
-    const/4 v0, 0x5
-
-    const/4 v1, 0x0
-
-    const-string v2, "You set too large memory cache size (more than %1$d Mb)"
-
-    .line 7
-    invoke-static {v0, v1, v2, p1}, Lh4/a;->g(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
-
-    :cond_0
     return-void
-.end method
 
-.method private c(Ljava/lang/String;)Landroid/graphics/Bitmap;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lxb/a;->a:Ljava/util/Map;
-
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/ref/Reference;
-
-    if-eqz p1, :cond_0
-
-    .line 2
-    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/graphics/Bitmap;
-
-    goto :goto_0
-
-    :cond_0
+    :catch_0
     const/4 p1, 0x0
 
-    :goto_0
-    return-object p1
+    .line 6
+    throw p1
 .end method
 
 
 # virtual methods
-.method public bridge synthetic a(Ljava/lang/String;)Landroid/graphics/Bitmap;
-    .locals 0
+.method public final a()Ljava/lang/String;
+    .locals 4
 
-    invoke-direct {p0, p1}, Lxb/a;->c(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    .line 1
+    iget-object v0, p0, Lxb/a;->c:Ljava/lang/String;
 
-    move-result-object p1
+    if-eqz v0, :cond_0
 
-    return-object p1
+    return-object v0
+
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lxb/a;->a:Landroid/content/pm/PackageInfo;
+
+    const-string v1, "UNK"
+
+    if-nez v0, :cond_1
+
+    move-object v2, v1
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v2, v0, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
+
+    :goto_0
+    if-nez v0, :cond_2
+
+    goto :goto_1
+
+    .line 3
+    :cond_2
+    iget-object v1, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+
+    .line 4
+    :goto_1
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v0
+
+    .line 5
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "/"
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " ChannelSDK/"
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lxb/a;->b:Ljava/lang/String;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " (Linux; U; Android "
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-object v1, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "; "
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 6
+    invoke-virtual {v0}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "-"
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " Build/"
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-object v0, Landroid/os/Build;->ID:Ljava/lang/String;
+
+    const-string v1, ")"
+
+    .line 7
+    invoke-static {v3, v0, v1}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 8
+    iput-object v0, p0, Lxb/a;->c:Ljava/lang/String;
+
+    return-object v0
 .end method

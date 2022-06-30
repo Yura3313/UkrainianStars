@@ -29,7 +29,6 @@
 .method public constructor <init>(Landroid/app/Activity;Lcom/kakaogame/util/MutexLock;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/kakao/KakaoAgeAuthManager$5;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/kakao/KakaoAgeAuthManager$5;->val$uiLock:Lcom/kakaogame/util/MutexLock;
@@ -115,7 +114,7 @@
     move-exception v0
 
     .line 9
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 

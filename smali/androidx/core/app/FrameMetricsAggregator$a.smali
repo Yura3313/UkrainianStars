@@ -1,4 +1,4 @@
-.class public Landroidx/core/app/FrameMetricsAggregator$a;
+.class public final Landroidx/core/app/FrameMetricsAggregator$a;
 .super Landroidx/core/app/FrameMetricsAggregator$b;
 .source "FrameMetricsAggregator.java"
 
@@ -36,7 +36,7 @@
     .end annotation
 .end field
 
-.field public d:Landroid/view/Window$OnFrameMetricsAvailableListener;
+.field public d:Landroidx/core/app/FrameMetricsAggregator$a$a;
 
 
 # direct methods
@@ -65,7 +65,7 @@
 
     invoke-direct {v0, p0}, Landroidx/core/app/FrameMetricsAggregator$a$a;-><init>(Landroidx/core/app/FrameMetricsAggregator$a;)V
 
-    iput-object v0, p0, Landroidx/core/app/FrameMetricsAggregator$a;->d:Landroid/view/Window$OnFrameMetricsAvailableListener;
+    iput-object v0, p0, Landroidx/core/app/FrameMetricsAggregator$a;->d:Landroidx/core/app/FrameMetricsAggregator$a$a;
 
     .line 5
     iput p1, p0, Landroidx/core/app/FrameMetricsAggregator$a;->a:I
@@ -75,7 +75,7 @@
 
 
 # virtual methods
-.method public a(Landroid/app/Activity;)V
+.method public final a(Landroid/app/Activity;)V
     .locals 4
 
     .line 1
@@ -93,7 +93,7 @@
     sput-object v0, Landroidx/core/app/FrameMetricsAggregator$a;->e:Landroid/os/HandlerThread;
 
     .line 3
-    invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     .line 4
     new-instance v0, Landroid/os/Handler;
@@ -151,7 +151,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Landroidx/core/app/FrameMetricsAggregator$a;->d:Landroid/view/Window$OnFrameMetricsAvailableListener;
+    iget-object v1, p0, Landroidx/core/app/FrameMetricsAggregator$a;->d:Landroidx/core/app/FrameMetricsAggregator$a$a;
 
     sget-object v2, Landroidx/core/app/FrameMetricsAggregator$a;->f:Landroid/os/Handler;
 
@@ -169,7 +169,7 @@
     return-void
 .end method
 
-.method public b(Landroid/app/Activity;)[Landroid/util/SparseIntArray;
+.method public final b(Landroid/app/Activity;)[Landroid/util/SparseIntArray;
     .locals 3
 
     .line 1
@@ -193,7 +193,7 @@
     check-cast v1, Ljava/lang/ref/WeakReference;
 
     .line 2
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -210,7 +210,7 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Landroidx/core/app/FrameMetricsAggregator$a;->d:Landroid/view/Window$OnFrameMetricsAvailableListener;
+    iget-object v0, p0, Landroidx/core/app/FrameMetricsAggregator$a;->d:Landroidx/core/app/FrameMetricsAggregator$a$a;
 
     invoke-virtual {p1, v0}, Landroid/view/Window;->removeOnFrameMetricsAvailableListener(Landroid/view/Window$OnFrameMetricsAvailableListener;)V
 
@@ -220,7 +220,7 @@
     return-object p1
 .end method
 
-.method public c()[Landroid/util/SparseIntArray;
+.method public final c()[Landroid/util/SparseIntArray;
     .locals 3
 
     .line 1
@@ -230,9 +230,10 @@
 
     move-result v0
 
+    :cond_0
+    :goto_0
     add-int/lit8 v0, v0, -0x1
 
-    :goto_0
     if-ltz v0, :cond_1
 
     .line 2
@@ -245,14 +246,14 @@
     check-cast v1, Ljava/lang/ref/WeakReference;
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroid/app/Activity;
 
     .line 4
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -263,7 +264,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Landroidx/core/app/FrameMetricsAggregator$a;->d:Landroid/view/Window$OnFrameMetricsAvailableListener;
+    iget-object v2, p0, Landroidx/core/app/FrameMetricsAggregator$a;->d:Landroidx/core/app/FrameMetricsAggregator$a$a;
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->removeOnFrameMetricsAvailableListener(Landroid/view/Window$OnFrameMetricsAvailableListener;)V
 
@@ -271,9 +272,6 @@
     iget-object v1, p0, Landroidx/core/app/FrameMetricsAggregator$a;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
-
-    :cond_0
-    add-int/lit8 v0, v0, -0x1
 
     goto :goto_0
 
@@ -284,7 +282,7 @@
     return-object v0
 .end method
 
-.method public d(Landroid/util/SparseIntArray;J)V
+.method public final d(Landroid/util/SparseIntArray;J)V
     .locals 4
 
     if-eqz p1, :cond_0

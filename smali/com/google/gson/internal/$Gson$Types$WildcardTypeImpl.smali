@@ -175,7 +175,6 @@
 .method public getLowerBounds()[Ljava/lang/reflect/Type;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/internal/$Gson$Types$WildcardTypeImpl;->lowerBound:Ljava/lang/reflect/Type;
 
     if-eqz v0, :cond_0
@@ -204,7 +203,6 @@
 
     new-array v0, v0, [Ljava/lang/reflect/Type;
 
-    .line 1
     iget-object v1, p0, Lcom/google/gson/internal/$Gson$Types$WildcardTypeImpl;->upperBound:Ljava/lang/reflect/Type;
 
     const/4 v2, 0x0
@@ -263,6 +261,7 @@
 
     move-result-object v0
 
+    .line 3
     iget-object v1, p0, Lcom/google/gson/internal/$Gson$Types$WildcardTypeImpl;->lowerBound:Ljava/lang/reflect/Type;
 
     invoke-static {v1}, Lcom/google/gson/internal/$Gson$Types;->typeToString(Ljava/lang/reflect/Type;)Ljava/lang/String;
@@ -277,7 +276,7 @@
 
     return-object v0
 
-    .line 3
+    .line 4
     :cond_0
     iget-object v0, p0, Lcom/google/gson/internal/$Gson$Types$WildcardTypeImpl;->upperBound:Ljava/lang/reflect/Type;
 
@@ -292,11 +291,12 @@
     :cond_1
     const-string v0, "? extends "
 
-    .line 4
+    .line 5
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 6
     iget-object v1, p0, Lcom/google/gson/internal/$Gson$Types$WildcardTypeImpl;->upperBound:Ljava/lang/reflect/Type;
 
     invoke-static {v1}, Lcom/google/gson/internal/$Gson$Types;->typeToString(Ljava/lang/reflect/Type;)Ljava/lang/String;

@@ -30,7 +30,6 @@
 .method public constructor <init>(Lcom/google/gson/Gson;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/Gson$2;->this$0:Lcom/google/gson/Gson;
 
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V

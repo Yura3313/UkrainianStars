@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$b;
+        Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;
     }
 .end annotation
 
@@ -22,14 +22,14 @@
 
 .field private static binder:Landroid/os/IBinder;
 
-.field private static connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$b;
+.field private static connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;
 
 .field private static object:Ljava/lang/Object;
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
     new-instance v0, Ljava/lang/Object;
@@ -39,13 +39,11 @@
     sput-object v0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->object:Ljava/lang/Object;
 
     .line 2
-    new-instance v0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$b;
+    new-instance v0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;-><init>()V
 
-    invoke-direct {v0, v1}, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$b;-><init>(Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;)V
-
-    sput-object v0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$b;
+    sput-object v0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;
 
     return-void
 .end method
@@ -53,7 +51,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +59,6 @@
 .method public static synthetic access$102(Landroid/os/IBinder;)Landroid/os/IBinder;
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->binder:Landroid/os/IBinder;
 
     return-object p0
@@ -193,7 +189,7 @@
     move-exception p0
 
     .line 18
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const-string p0, ""
 
@@ -347,7 +343,7 @@
     move-exception p0
 
     .line 19
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 20
     monitor-exit v0
@@ -392,7 +388,7 @@
 
     .line 4
     :try_start_0
-    sget-object v2, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$b;
+    sget-object v2, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;
 
     const/4 v3, 0x1
 
@@ -403,23 +399,23 @@
     if-eqz p0, :cond_1
 
     .line 5
-    sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$b;
+    sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
-    sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$b;->a:Ljava/util/concurrent/Semaphore;
+    sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;->a:Ljava/util/concurrent/Semaphore;
 
     if-eqz p0, :cond_1
 
     .line 7
-    sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$b;
+    sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper;->connection:Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;
 
     .line 8
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 9
-    sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$b;->a:Ljava/util/concurrent/Semaphore;
+    sget-object p0, Lcom/linecorp/nova/android/NovaAdvertisingIdHelper$a;->a:Ljava/util/concurrent/Semaphore;
 
     const-wide/16 v2, 0x1f4
 
@@ -446,7 +442,7 @@
     move-exception p0
 
     .line 12
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-object v1
 .end method

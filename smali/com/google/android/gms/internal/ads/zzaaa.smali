@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public final A6(Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
+.method public final w6(Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -12,8 +12,7 @@
         }
     .end annotation
 
-    .line 1
-    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->Y0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->c2(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
 
     move-result-object p1
 

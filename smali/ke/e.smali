@@ -1,40 +1,44 @@
 .class public interface abstract Lke/e;
 .super Ljava/lang/Object;
-.source "Functions.kt"
+.source "ContinuationInterceptor.kt"
+
+# interfaces
+.implements Lke/f$a;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "<P1:",
-        "Ljava/lang/Object;",
-        "P2:",
-        "Ljava/lang/Object;",
-        "P3:",
-        "Ljava/lang/Object;",
-        "P4:",
-        "Ljava/lang/Object;",
-        "P5:",
-        "Ljava/lang/Object;",
-        "P6:",
-        "Ljava/lang/Object;",
-        "P7:",
-        "Ljava/lang/Object;",
-        "P8:",
-        "Ljava/lang/Object;",
-        "P9:",
-        "Ljava/lang/Object;",
-        "P10:",
-        "Ljava/lang/Object;",
-        "P11:",
-        "Ljava/lang/Object;",
-        "P12:",
-        "Ljava/lang/Object;",
-        "P13:",
-        "Ljava/lang/Object;",
-        "R:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
+        Lke/e$a;
     }
 .end annotation
+
+
+# static fields
+.field public static final synthetic c:I
+
+
+# virtual methods
+.method public abstract interceptContinuation(Lke/d;)Lke/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lke/d<",
+            "-TT;>;)",
+            "Lke/d<",
+            "TT;>;"
+        }
+    .end annotation
+.end method
+
+.method public abstract releaseInterceptedContinuation(Lke/d;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lke/d<",
+            "*>;)V"
+        }
+    .end annotation
+.end method

@@ -9,7 +9,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0}, Lio/sentry/IHub;->addBreadcrumb(Lio/sentry/Breadcrumb;Ljava/lang/Object;)V
 
     return-void
@@ -18,7 +17,6 @@
 .method public static b(Lio/sentry/IHub;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/Breadcrumb;
 
     invoke-direct {v0, p1}, Lio/sentry/Breadcrumb;-><init>(Ljava/lang/String;)V
@@ -50,7 +48,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0}, Lio/sentry/IHub;->captureEnvelope(Lio/sentry/SentryEnvelope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -63,7 +60,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0}, Lio/sentry/IHub;->captureEvent(Lio/sentry/SentryEvent;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -76,7 +72,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0}, Lio/sentry/IHub;->captureException(Ljava/lang/Throwable;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -87,7 +82,6 @@
 .method public static g(Lio/sentry/IHub;Ljava/lang/String;)Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/SentryLevel;->INFO:Lio/sentry/SentryLevel;
 
     invoke-interface {p0, p1, v0}, Lio/sentry/IHub;->captureMessage(Ljava/lang/String;Lio/sentry/SentryLevel;)Lio/sentry/protocol/SentryId;
@@ -104,7 +98,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, p2, v0}, Lio/sentry/IHub;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -119,7 +112,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0, p2}, Lio/sentry/IHub;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -132,7 +124,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0}, Lio/sentry/IHub;->startTransaction(Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
 
     move-result-object p0
@@ -145,7 +136,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, p2, v0}, Lio/sentry/IHub;->startTransaction(Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
 
     move-result-object p0
@@ -158,7 +148,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0, p2}, Lio/sentry/IHub;->startTransaction(Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
 
     move-result-object p0
@@ -171,7 +160,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, p2, v0}, Lio/sentry/IHub;->startTransaction(Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
 
     move-result-object p0
@@ -184,7 +172,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, p2, p3, v0}, Lio/sentry/IHub;->startTransaction(Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
 
     move-result-object p0
@@ -195,7 +182,6 @@
 .method public static o(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/TransactionContext;
 
     invoke-direct {v0, p1, p2}, Lio/sentry/TransactionContext;-><init>(Ljava/lang/String;Ljava/lang/String;)V
@@ -212,7 +198,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     new-instance v1, Lio/sentry/TransactionContext;
 
     invoke-direct {v1, p1, p2}, Lio/sentry/TransactionContext;-><init>(Ljava/lang/String;Ljava/lang/String;)V
@@ -241,7 +226,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, p2, v0, p3}, Lio/sentry/IHub;->startTransaction(Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
 
     move-result-object p0

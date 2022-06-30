@@ -212,7 +212,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
 
     sput-object v0, Lio/sentry/SentryOptions;->DEFAULT_DIAGNOSTIC_LEVEL:Lio/sentry/SentryLevel;
@@ -485,7 +484,7 @@
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_0
-    const-string p1, "sentry.java/5.7.1"
+    const-string p1, "sentry.java/5.7.3"
 
     .line 46
     invoke-virtual {p0, p1}, Lio/sentry/SentryOptions;->setSentryClientName(Ljava/lang/String;)V
@@ -509,7 +508,7 @@
 
     const-string v1, "sentry.java"
 
-    const-string v2, "5.7.1"
+    const-string v2, "5.7.3"
 
     invoke-direct {v0, v1, v2}, Lio/sentry/protocol/SdkVersion;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -527,7 +526,6 @@
 .method public static empty()Lio/sentry/SentryOptions;
     .locals 2
 
-    .line 1
     new-instance v0, Lio/sentry/SentryOptions;
 
     const/4 v1, 0x1
@@ -939,7 +937,6 @@
 .method private getDebug()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->debug:Ljava/lang/Boolean;
 
     return-object v0
@@ -948,7 +945,6 @@
 .method private getEnableDeduplication()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->enableDeduplication:Ljava/lang/Boolean;
 
     return-object v0
@@ -959,7 +955,6 @@
 .method public addEventProcessor(Lio/sentry/EventProcessor;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->eventProcessors:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -979,7 +974,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->ignoredExceptionsForType:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
@@ -990,7 +984,6 @@
 .method public addInAppExclude(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->inAppExcludes:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -1001,7 +994,6 @@
 .method public addInAppInclude(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->inAppIncludes:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -1012,7 +1004,6 @@
 .method public addIntegration(Lio/sentry/Integration;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->integrations:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -1023,7 +1014,6 @@
 .method public addScopeObserver(Lio/sentry/IScopeObserver;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->observers:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -1034,7 +1024,6 @@
 .method public addTracingOrigin(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->tracingOrigins:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -1045,7 +1034,6 @@
 .method public containsIgnoredExceptionForType(Ljava/lang/Throwable;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->ignoredExceptionsForType:Ljava/util/Set;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1062,7 +1050,6 @@
 .method public getBeforeBreadcrumb()Lio/sentry/SentryOptions$BeforeBreadcrumbCallback;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->beforeBreadcrumb:Lio/sentry/SentryOptions$BeforeBreadcrumbCallback;
 
     return-object v0
@@ -1071,7 +1058,6 @@
 .method public getBeforeSend()Lio/sentry/SentryOptions$BeforeSendCallback;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->beforeSend:Lio/sentry/SentryOptions$BeforeSendCallback;
 
     return-object v0
@@ -1080,7 +1066,6 @@
 .method public getCacheDirPath()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->cacheDirPath:Ljava/lang/String;
 
     return-object v0
@@ -1091,7 +1076,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iget v0, p0, Lio/sentry/SentryOptions;->maxCacheItems:I
 
     return v0
@@ -1100,7 +1084,6 @@
 .method public getConnectionTimeoutMillis()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/sentry/SentryOptions;->connectionTimeoutMillis:I
 
     return v0
@@ -1109,7 +1092,6 @@
 .method public getDiagnosticLevel()Lio/sentry/SentryLevel;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->diagnosticLevel:Lio/sentry/SentryLevel;
 
     return-object v0
@@ -1118,7 +1100,6 @@
 .method public getDist()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->dist:Ljava/lang/String;
 
     return-object v0
@@ -1129,7 +1110,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->distinctId:Ljava/lang/String;
 
     return-object v0
@@ -1138,7 +1118,6 @@
 .method public getDsn()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->dsn:Ljava/lang/String;
 
     return-object v0
@@ -1147,7 +1126,6 @@
 .method public getEnableUncaughtExceptionHandler()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->enableUncaughtExceptionHandler:Ljava/lang/Boolean;
 
     return-object v0
@@ -1156,7 +1134,6 @@
 .method public getEnvelopeDiskCache()Lio/sentry/cache/IEnvelopeCache;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->envelopeDiskCache:Lio/sentry/cache/IEnvelopeCache;
 
     return-object v0
@@ -1165,7 +1142,6 @@
 .method public getEnvelopeReader()Lio/sentry/IEnvelopeReader;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->envelopeReader:Lio/sentry/IEnvelopeReader;
 
     return-object v0
@@ -1174,7 +1150,6 @@
 .method public getEnvironment()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->environment:Ljava/lang/String;
 
     return-object v0
@@ -1191,7 +1166,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->eventProcessors:Ljava/util/List;
 
     return-object v0
@@ -1200,7 +1174,6 @@
 .method public getExecutorService()Lio/sentry/ISentryExecutorService;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->executorService:Lio/sentry/ISentryExecutorService;
 
     return-object v0
@@ -1209,7 +1182,6 @@
 .method public getFlushTimeoutMillis()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lio/sentry/SentryOptions;->flushTimeoutMillis:J
 
     return-wide v0
@@ -1218,7 +1190,6 @@
 .method public getHostnameVerifier()Ljavax/net/ssl/HostnameVerifier;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
 
     return-object v0
@@ -1237,7 +1208,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->ignoredExceptionsForType:Ljava/util/Set;
 
     return-object v0
@@ -1254,7 +1224,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->inAppExcludes:Ljava/util/List;
 
     return-object v0
@@ -1271,7 +1240,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->inAppIncludes:Ljava/util/List;
 
     return-object v0
@@ -1288,7 +1256,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->integrations:Ljava/util/List;
 
     return-object v0
@@ -1297,7 +1264,6 @@
 .method public getLogger()Lio/sentry/ILogger;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->logger:Lio/sentry/ILogger;
 
     return-object v0
@@ -1306,7 +1272,6 @@
 .method public getMaxAttachmentSize()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lio/sentry/SentryOptions;->maxAttachmentSize:J
 
     return-wide v0
@@ -1315,7 +1280,6 @@
 .method public getMaxBreadcrumbs()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/sentry/SentryOptions;->maxBreadcrumbs:I
 
     return v0
@@ -1324,7 +1288,6 @@
 .method public getMaxCacheItems()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/sentry/SentryOptions;->maxCacheItems:I
 
     return v0
@@ -1333,7 +1296,6 @@
 .method public getMaxQueueSize()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/sentry/SentryOptions;->maxQueueSize:I
 
     return v0
@@ -1342,7 +1304,6 @@
 .method public getMaxRequestBodySize()Lio/sentry/SentryOptions$RequestSize;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->maxRequestBodySize:Lio/sentry/SentryOptions$RequestSize;
 
     return-object v0
@@ -1353,7 +1314,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Experimental;
     .end annotation
 
-    .line 1
     iget v0, p0, Lio/sentry/SentryOptions;->maxSpans:I
 
     return v0
@@ -1389,7 +1349,8 @@
 
     const-string v2, "outbox"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1405,7 +1366,6 @@
 .method public getPrintUncaughtStackTrace()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->printUncaughtStackTrace:Ljava/lang/Boolean;
 
     return-object v0
@@ -1414,7 +1374,6 @@
 .method public getProguardUuid()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->proguardUuid:Ljava/lang/String;
 
     return-object v0
@@ -1423,7 +1382,6 @@
 .method public getProxy()Lio/sentry/SentryOptions$Proxy;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->proxy:Lio/sentry/SentryOptions$Proxy;
 
     return-object v0
@@ -1432,7 +1390,6 @@
 .method public getReadTimeoutMillis()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/sentry/SentryOptions;->readTimeoutMillis:I
 
     return v0
@@ -1441,7 +1398,6 @@
 .method public getRelease()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->release:Ljava/lang/String;
 
     return-object v0
@@ -1450,7 +1406,6 @@
 .method public getSampleRate()Ljava/lang/Double;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->sampleRate:Ljava/lang/Double;
 
     return-object v0
@@ -1467,7 +1422,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->observers:Ljava/util/List;
 
     return-object v0
@@ -1476,7 +1430,6 @@
 .method public getSdkVersion()Lio/sentry/protocol/SdkVersion;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->sdkVersion:Lio/sentry/protocol/SdkVersion;
 
     return-object v0
@@ -1485,7 +1438,6 @@
 .method public getSentryClientName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->sentryClientName:Ljava/lang/String;
 
     return-object v0
@@ -1494,7 +1446,6 @@
 .method public getSerializer()Lio/sentry/ISerializer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->serializer:Lio/sentry/ISerializer;
 
     return-object v0
@@ -1503,7 +1454,6 @@
 .method public getServerName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->serverName:Ljava/lang/String;
 
     return-object v0
@@ -1512,7 +1462,6 @@
 .method public getSessionTrackingIntervalMillis()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lio/sentry/SentryOptions;->sessionTrackingIntervalMillis:J
 
     return-wide v0
@@ -1521,7 +1470,6 @@
 .method public getShutdownTimeout()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lio/sentry/SentryOptions;->shutdownTimeout:J
 
     return-wide v0
@@ -1530,7 +1478,6 @@
 .method public getSslSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
 
     return-object v0
@@ -1548,7 +1495,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->tags:Ljava/util/Map;
 
     return-object v0
@@ -1557,7 +1503,6 @@
 .method public getTracesSampleRate()Ljava/lang/Double;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->tracesSampleRate:Ljava/lang/Double;
 
     return-object v0
@@ -1566,7 +1511,6 @@
 .method public getTracesSampler()Lio/sentry/SentryOptions$TracesSamplerCallback;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->tracesSampler:Lio/sentry/SentryOptions$TracesSamplerCallback;
 
     return-object v0
@@ -1583,7 +1527,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->tracingOrigins:Ljava/util/List;
 
     return-object v0
@@ -1592,7 +1535,6 @@
 .method public getTransportFactory()Lio/sentry/ITransportFactory;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->transportFactory:Lio/sentry/ITransportFactory;
 
     return-object v0
@@ -1601,7 +1543,6 @@
 .method public getTransportGate()Lio/sentry/transport/ITransportGate;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->transportGate:Lio/sentry/transport/ITransportGate;
 
     return-object v0
@@ -1610,7 +1551,6 @@
 .method public isAttachServerName()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->attachServerName:Z
 
     return v0
@@ -1619,7 +1559,6 @@
 .method public isAttachStacktrace()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->attachStacktrace:Z
 
     return v0
@@ -1628,7 +1567,6 @@
 .method public isAttachThreads()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->attachThreads:Z
 
     return v0
@@ -1637,7 +1575,6 @@
 .method public isDebug()Z
     .locals 2
 
-    .line 1
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     iget-object v1, p0, Lio/sentry/SentryOptions;->debug:Ljava/lang/Boolean;
@@ -1652,7 +1589,6 @@
 .method public isEnableAutoSessionTracking()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->enableAutoSessionTracking:Z
 
     return v0
@@ -1661,7 +1597,6 @@
 .method public isEnableDeduplication()Z
     .locals 2
 
-    .line 1
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     iget-object v1, p0, Lio/sentry/SentryOptions;->enableDeduplication:Ljava/lang/Boolean;
@@ -1676,7 +1611,6 @@
 .method public isEnableExternalConfiguration()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->enableExternalConfiguration:Z
 
     return v0
@@ -1685,7 +1619,6 @@
 .method public isEnableNdk()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->enableNdk:Z
 
     return v0
@@ -1694,7 +1627,6 @@
 .method public isEnableScopeSync()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->enableScopeSync:Z
 
     return v0
@@ -1708,7 +1640,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$ScheduledForRemoval;
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->enableAutoSessionTracking:Z
 
     return v0
@@ -1717,7 +1648,6 @@
 .method public isEnableShutdownHook()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->enableShutdownHook:Z
 
     return v0
@@ -1726,7 +1656,6 @@
 .method public isEnableUncaughtExceptionHandler()Z
     .locals 2
 
-    .line 1
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     iget-object v1, p0, Lio/sentry/SentryOptions;->enableUncaughtExceptionHandler:Ljava/lang/Boolean;
@@ -1741,7 +1670,6 @@
 .method public isPrintUncaughtStackTrace()Z
     .locals 2
 
-    .line 1
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     iget-object v1, p0, Lio/sentry/SentryOptions;->printUncaughtStackTrace:Ljava/lang/Boolean;
@@ -1756,7 +1684,6 @@
 .method public isSendDefaultPii()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->sendDefaultPii:Z
 
     return v0
@@ -1767,7 +1694,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Experimental;
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->traceSampling:Z
 
     return v0
@@ -1776,7 +1702,6 @@
 .method public isTracingEnabled()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lio/sentry/SentryOptions;->getTracesSampleRate()Ljava/lang/Double;
 
     move-result-object v0
@@ -2175,7 +2100,6 @@
 .method public setAttachServerName(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/SentryOptions;->attachServerName:Z
 
     return-void
@@ -2184,7 +2108,6 @@
 .method public setAttachStacktrace(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/SentryOptions;->attachStacktrace:Z
 
     return-void
@@ -2193,7 +2116,6 @@
 .method public setAttachThreads(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/SentryOptions;->attachThreads:Z
 
     return-void
@@ -2202,7 +2124,6 @@
 .method public setBeforeBreadcrumb(Lio/sentry/SentryOptions$BeforeBreadcrumbCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->beforeBreadcrumb:Lio/sentry/SentryOptions$BeforeBreadcrumbCallback;
 
     return-void
@@ -2211,7 +2132,6 @@
 .method public setBeforeSend(Lio/sentry/SentryOptions$BeforeSendCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->beforeSend:Lio/sentry/SentryOptions$BeforeSendCallback;
 
     return-void
@@ -2220,7 +2140,6 @@
 .method public setCacheDirPath(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->cacheDirPath:Ljava/lang/String;
 
     return-void
@@ -2231,7 +2150,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iput p1, p0, Lio/sentry/SentryOptions;->maxCacheItems:I
 
     return-void
@@ -2240,7 +2158,6 @@
 .method public setConnectionTimeoutMillis(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lio/sentry/SentryOptions;->connectionTimeoutMillis:I
 
     return-void
@@ -2249,7 +2166,6 @@
 .method public setDebug(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->debug:Ljava/lang/Boolean;
 
     return-void
@@ -2262,7 +2178,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     sget-object p1, Lio/sentry/SentryOptions;->DEFAULT_DIAGNOSTIC_LEVEL:Lio/sentry/SentryLevel;
 
@@ -2275,7 +2190,6 @@
 .method public setDist(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->dist:Ljava/lang/String;
 
     return-void
@@ -2286,7 +2200,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->distinctId:Ljava/lang/String;
 
     return-void
@@ -2295,7 +2208,6 @@
 .method public setDsn(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->dsn:Ljava/lang/String;
 
     return-void
@@ -2304,7 +2216,6 @@
 .method public setEnableAutoSessionTracking(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/SentryOptions;->enableAutoSessionTracking:Z
 
     return-void
@@ -2313,7 +2224,6 @@
 .method public setEnableDeduplication(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->enableDeduplication:Ljava/lang/Boolean;
 
     return-void
@@ -2322,7 +2232,6 @@
 .method public setEnableExternalConfiguration(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/SentryOptions;->enableExternalConfiguration:Z
 
     return-void
@@ -2331,7 +2240,6 @@
 .method public setEnableNdk(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/SentryOptions;->enableNdk:Z
 
     return-void
@@ -2340,7 +2248,6 @@
 .method public setEnableScopeSync(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/SentryOptions;->enableScopeSync:Z
 
     return-void
@@ -2354,7 +2261,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$ScheduledForRemoval;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lio/sentry/SentryOptions;->setEnableAutoSessionTracking(Z)V
 
     return-void
@@ -2363,7 +2269,6 @@
 .method public setEnableShutdownHook(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/SentryOptions;->enableShutdownHook:Z
 
     return-void
@@ -2372,7 +2277,6 @@
 .method public setEnableUncaughtExceptionHandler(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->enableUncaughtExceptionHandler:Ljava/lang/Boolean;
 
     return-void
@@ -2385,7 +2289,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-static {}, Lio/sentry/transport/NoOpEnvelopeCache;->getInstance()Lio/sentry/transport/NoOpEnvelopeCache;
 
@@ -2404,7 +2307,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-static {}, Lio/sentry/NoOpEnvelopeReader;->getInstance()Lio/sentry/NoOpEnvelopeReader;
 
@@ -2419,7 +2321,6 @@
 .method public setEnvironment(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->environment:Ljava/lang/String;
 
     return-void
@@ -2430,7 +2331,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->executorService:Lio/sentry/ISentryExecutorService;
 
     :cond_0
@@ -2440,7 +2340,6 @@
 .method public setFlushTimeoutMillis(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lio/sentry/SentryOptions;->flushTimeoutMillis:J
 
     return-void
@@ -2449,7 +2348,6 @@
 .method public setHostnameVerifier(Ljavax/net/ssl/HostnameVerifier;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
 
     return-void
@@ -2460,7 +2358,6 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     invoke-static {}, Lio/sentry/NoOpLogger;->getInstance()Lio/sentry/NoOpLogger;
 
     move-result-object p1
@@ -2483,7 +2380,6 @@
 .method public setMaxAttachmentSize(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lio/sentry/SentryOptions;->maxAttachmentSize:J
 
     return-void
@@ -2492,7 +2388,6 @@
 .method public setMaxBreadcrumbs(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lio/sentry/SentryOptions;->maxBreadcrumbs:I
 
     return-void
@@ -2501,7 +2396,6 @@
 .method public setMaxCacheItems(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lio/sentry/SentryOptions;->maxCacheItems:I
 
     return-void
@@ -2512,7 +2406,6 @@
 
     if-lez p1, :cond_0
 
-    .line 1
     iput p1, p0, Lio/sentry/SentryOptions;->maxQueueSize:I
 
     :cond_0
@@ -2522,7 +2415,6 @@
 .method public setMaxRequestBodySize(Lio/sentry/SentryOptions$RequestSize;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->maxRequestBodySize:Lio/sentry/SentryOptions$RequestSize;
 
     return-void
@@ -2533,7 +2425,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Experimental;
     .end annotation
 
-    .line 1
     iput p1, p0, Lio/sentry/SentryOptions;->maxSpans:I
 
     return-void
@@ -2542,7 +2433,6 @@
 .method public setPrintUncaughtStackTrace(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->printUncaughtStackTrace:Ljava/lang/Boolean;
 
     return-void
@@ -2551,7 +2441,6 @@
 .method public setProguardUuid(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->proguardUuid:Ljava/lang/String;
 
     return-void
@@ -2560,7 +2449,6 @@
 .method public setProxy(Lio/sentry/SentryOptions$Proxy;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->proxy:Lio/sentry/SentryOptions$Proxy;
 
     return-void
@@ -2569,7 +2457,6 @@
 .method public setReadTimeoutMillis(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lio/sentry/SentryOptions;->readTimeoutMillis:I
 
     return-void
@@ -2578,7 +2465,6 @@
 .method public setRelease(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->release:Ljava/lang/String;
 
     return-void
@@ -2651,7 +2537,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->sdkVersion:Lio/sentry/protocol/SdkVersion;
 
     return-void
@@ -2660,7 +2545,6 @@
 .method public setSendDefaultPii(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/SentryOptions;->sendDefaultPii:Z
 
     return-void
@@ -2669,7 +2553,6 @@
 .method public setSentryClientName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->sentryClientName:Ljava/lang/String;
 
     return-void
@@ -2682,7 +2565,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-static {}, Lio/sentry/NoOpSerializer;->getInstance()Lio/sentry/NoOpSerializer;
 
@@ -2697,7 +2579,6 @@
 .method public setServerName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->serverName:Ljava/lang/String;
 
     return-void
@@ -2706,7 +2587,6 @@
 .method public setSessionTrackingIntervalMillis(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lio/sentry/SentryOptions;->sessionTrackingIntervalMillis:J
 
     return-void
@@ -2715,7 +2595,6 @@
 .method public setShutdownTimeout(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lio/sentry/SentryOptions;->shutdownTimeout:J
 
     return-void
@@ -2724,7 +2603,6 @@
 .method public setSslSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
 
     return-void
@@ -2733,7 +2611,6 @@
 .method public setTag(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->tags:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -2746,7 +2623,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Experimental;
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/SentryOptions;->traceSampling:Z
 
     return-void
@@ -2817,7 +2693,6 @@
 .method public setTracesSampler(Lio/sentry/SentryOptions$TracesSamplerCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions;->tracesSampler:Lio/sentry/SentryOptions$TracesSamplerCallback;
 
     return-void
@@ -2830,7 +2705,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-static {}, Lio/sentry/NoOpTransportFactory;->getInstance()Lio/sentry/NoOpTransportFactory;
 
@@ -2849,7 +2723,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-static {}, Lio/sentry/transport/NoOpTransportGate;->getInstance()Lio/sentry/transport/NoOpTransportGate;
 

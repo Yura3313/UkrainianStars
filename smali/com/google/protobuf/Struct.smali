@@ -9,8 +9,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/protobuf/Struct$b;,
-        Lcom/google/protobuf/Struct$c;
+        Lcom/google/protobuf/Struct$a;,
+        Lcom/google/protobuf/Struct$b;
     }
 .end annotation
 
@@ -18,7 +18,7 @@
     value = {
         "Lcom/google/protobuf/GeneratedMessageLite<",
         "Lcom/google/protobuf/Struct;",
-        "Lcom/google/protobuf/Struct$b;",
+        "Lcom/google/protobuf/Struct$a;",
         ">;",
         "Lcom/google/protobuf/r0;"
     }
@@ -81,7 +81,7 @@
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/k0;->h:Lcom/google/protobuf/k0;
+    sget-object v0, Lcom/google/protobuf/k0;->g:Lcom/google/protobuf/k0;
 
     .line 3
     iput-object v0, p0, Lcom/google/protobuf/Struct;->fields_:Lcom/google/protobuf/k0;
@@ -92,7 +92,6 @@
 .method public static synthetic access$000()Lcom/google/protobuf/Struct;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Struct;->DEFAULT_INSTANCE:Lcom/google/protobuf/Struct;
 
     return-object v0
@@ -101,7 +100,6 @@
 .method public static synthetic access$100(Lcom/google/protobuf/Struct;)Ljava/util/Map;
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/Struct;->getMutableFieldsMap()Ljava/util/Map;
 
     move-result-object p0
@@ -112,7 +110,6 @@
 .method public static getDefaultInstance()Lcom/google/protobuf/Struct;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Struct;->DEFAULT_INSTANCE:Lcom/google/protobuf/Struct;
 
     return-object v0
@@ -130,7 +127,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/Struct;->internalGetMutableFields()Lcom/google/protobuf/k0;
 
     move-result-object v0
@@ -150,7 +146,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Struct;->fields_:Lcom/google/protobuf/k0;
 
     return-object v0
@@ -172,7 +167,7 @@
     iget-object v0, p0, Lcom/google/protobuf/Struct;->fields_:Lcom/google/protobuf/k0;
 
     .line 2
-    iget-boolean v1, v0, Lcom/google/protobuf/k0;->g:Z
+    iget-boolean v1, v0, Lcom/google/protobuf/k0;->f:Z
 
     if-nez v1, :cond_0
 
@@ -190,32 +185,32 @@
     return-object v0
 .end method
 
-.method public static newBuilder()Lcom/google/protobuf/Struct$b;
+.method public static newBuilder()Lcom/google/protobuf/Struct$a;
     .locals 1
 
     .line 1
     sget-object v0, Lcom/google/protobuf/Struct;->DEFAULT_INSTANCE:Lcom/google/protobuf/Struct;
 
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$b;
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$a;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/protobuf/Struct$b;
+    check-cast v0, Lcom/google/protobuf/Struct$a;
 
     return-object v0
 .end method
 
-.method public static newBuilder(Lcom/google/protobuf/Struct;)Lcom/google/protobuf/Struct$b;
+.method public static newBuilder(Lcom/google/protobuf/Struct;)Lcom/google/protobuf/Struct$a;
     .locals 1
 
     .line 2
     sget-object v0, Lcom/google/protobuf/Struct;->DEFAULT_INSTANCE:Lcom/google/protobuf/Struct;
 
-    invoke-virtual {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+    invoke-virtual {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$a;
 
     move-result-object p0
 
-    check-cast p0, Lcom/google/protobuf/Struct$b;
+    check-cast p0, Lcom/google/protobuf/Struct$a;
 
     return-object p0
 .end method
@@ -471,7 +466,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Struct;->DEFAULT_INSTANCE:Lcom/google/protobuf/Struct;
 
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/c1;
@@ -494,14 +488,14 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ljava/util/AbstractMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$f;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
@@ -510,8 +504,6 @@
     move-result p1
 
     const/4 p2, 0x1
-
-    const/4 p3, 0x0
 
     packed-switch p1, :pswitch_data_0
 
@@ -523,7 +515,9 @@
     throw p1
 
     :pswitch_0
-    return-object p3
+    const/4 p1, 0x0
+
+    return-object p1
 
     .line 3
     :pswitch_1
@@ -551,11 +545,11 @@
     if-nez p1, :cond_0
 
     .line 7
-    new-instance p1, Lcom/google/protobuf/GeneratedMessageLite$c;
+    new-instance p1, Lcom/google/protobuf/GeneratedMessageLite$b;
 
     sget-object p3, Lcom/google/protobuf/Struct;->DEFAULT_INSTANCE:Lcom/google/protobuf/Struct;
 
-    invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$c;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+    invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$b;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
 
     .line 8
     sput-object p1, Lcom/google/protobuf/Struct;->PARSER:Lcom/google/protobuf/c1;
@@ -597,7 +591,7 @@
     aput-object v0, p1, p3
 
     .line 11
-    sget-object p3, Lcom/google/protobuf/Struct$c;->a:Lcom/google/protobuf/j0;
+    sget-object p3, Lcom/google/protobuf/Struct$b;->a:Lcom/google/protobuf/j0;
 
     aput-object p3, p1, p2
 
@@ -614,13 +608,14 @@
 
     .line 13
     :pswitch_5
-    new-instance p1, Lcom/google/protobuf/Struct$b;
+    new-instance p1, Lcom/google/protobuf/Struct$a;
 
-    invoke-direct {p1, p3}, Lcom/google/protobuf/Struct$b;-><init>(Lcom/google/protobuf/Struct$a;)V
+    .line 14
+    invoke-direct {p1}, Lcom/google/protobuf/Struct$a;-><init>()V
 
     return-object p1
 
-    .line 14
+    .line 15
     :pswitch_6
     new-instance p1, Lcom/google/protobuf/Struct;
 
@@ -657,7 +652,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/Struct;->getFieldsMap()Ljava/util/Map;
 
     move-result-object v0
@@ -668,12 +662,11 @@
 .method public getFieldsCount()I
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/Struct;->internalGetFields()Lcom/google/protobuf/k0;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/util/LinkedHashMap;->size()I
+    invoke-virtual {v0}, Ljava/util/AbstractMap;->size()I
 
     move-result v0
 

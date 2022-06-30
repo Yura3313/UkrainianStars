@@ -1,57 +1,46 @@
-.class public final Lw5/k;
-.super Lw5/j;
+.class public final synthetic Lw5/k;
+.super Ljava/lang/Object;
+.source "com.google.firebase:firebase-common@@16.0.2"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lw5/j<",
-        "Landroid/os/Bundle;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final f:Ljava/util/Map$Entry;
+
+.field public final g:Lx5/a;
 
 
 # direct methods
-.method public constructor <init>(ILandroid/os/Bundle;)V
-    .locals 1
+.method public constructor <init>(Ljava/util/Map$Entry;Lx5/a;)V
+    .locals 0
 
-    const/4 v0, 0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1
-    invoke-direct {p0, p1, v0, p2}, Lw5/j;-><init>(IILandroid/os/Bundle;)V
+    iput-object p1, p0, Lw5/k;->f:Ljava/util/Map$Entry;
+
+    iput-object p2, p0, Lw5/k;->g:Lx5/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c()Z
-    .locals 1
+.method public final run()V
+    .locals 2
 
-    const/4 v0, 0x0
+    iget-object v0, p0, Lw5/k;->f:Ljava/util/Map$Entry;
 
-    return v0
-.end method
+    iget-object v1, p0, Lw5/k;->g:Lx5/a;
 
-.method public final d(Landroid/os/Bundle;)V
-    .locals 1
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    const-string v0, "data"
+    move-result-object v0
 
-    .line 1
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
+    check-cast v0, Lx5/b;
 
-    move-result-object p1
-
-    if-nez p1, :cond_0
-
-    .line 2
-    sget-object p1, Landroid/os/Bundle;->EMPTY:Landroid/os/Bundle;
-
-    .line 3
-    :cond_0
-    invoke-virtual {p0, p1}, Lw5/j;->a(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lx5/b;->a(Lx5/a;)V
 
     return-void
 .end method

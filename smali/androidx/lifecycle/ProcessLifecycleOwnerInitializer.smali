@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
 
     return-void
@@ -15,7 +14,7 @@
 
 
 # virtual methods
-.method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+.method public final delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 0
 
     const/4 p1, 0x0
@@ -23,7 +22,7 @@
     return p1
 .end method
 
-.method public getType(Landroid/net/Uri;)Ljava/lang/String;
+.method public final getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 0
 
     const/4 p1, 0x0
@@ -31,7 +30,7 @@
     return-object p1
 .end method
 
-.method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+.method public final insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 0
 
     const/4 p1, 0x0
@@ -39,7 +38,7 @@
     return-object p1
 .end method
 
-.method public onCreate()Z
+.method public final onCreate()Z
     .locals 5
 
     .line 1
@@ -82,7 +81,7 @@
     move-result-object v0
 
     .line 6
-    sget-object v1, Landroidx/lifecycle/r;->o:Landroidx/lifecycle/r;
+    sget-object v1, Landroidx/lifecycle/q;->n:Landroidx/lifecycle/q;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -91,10 +90,10 @@
 
     invoke-direct {v3}, Landroid/os/Handler;-><init>()V
 
-    iput-object v3, v1, Landroidx/lifecycle/r;->k:Landroid/os/Handler;
+    iput-object v3, v1, Landroidx/lifecycle/q;->j:Landroid/os/Handler;
 
     .line 8
-    iget-object v3, v1, Landroidx/lifecycle/r;->l:Landroidx/lifecycle/k;
+    iget-object v3, v1, Landroidx/lifecycle/q;->k:Landroidx/lifecycle/k;
 
     sget-object v4, Landroidx/lifecycle/f$b;->ON_CREATE:Landroidx/lifecycle/f$b;
 
@@ -108,16 +107,16 @@
     check-cast v0, Landroid/app/Application;
 
     .line 10
-    new-instance v3, Landroidx/lifecycle/s;
+    new-instance v3, Landroidx/lifecycle/r;
 
-    invoke-direct {v3, v1}, Landroidx/lifecycle/s;-><init>(Landroidx/lifecycle/r;)V
+    invoke-direct {v3, v1}, Landroidx/lifecycle/r;-><init>(Landroidx/lifecycle/q;)V
 
     invoke-virtual {v0, v3}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
     return v2
 .end method
 
-.method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+.method public final query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 0
 
     const/4 p1, 0x0
@@ -125,7 +124,7 @@
     return-object p1
 .end method
 
-.method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+.method public final update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 0
 
     const/4 p1, 0x0

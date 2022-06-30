@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/HelpshiftTitan$c;
+.class public final Lcom/supercell/titan/HelpshiftTitan$c;
 .super Ljava/lang/Object;
 .source "HelpshiftTitan.java"
 
@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,7 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 4
 
     .line 1
@@ -42,7 +41,7 @@
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
     .line 3
-    invoke-static {}, Lcom/helpshift/util/q;->c()Z
+    invoke-static {}, Lcom/helpshift/util/u;->b()Z
 
     move-result v2
 
@@ -52,19 +51,14 @@
 
     .line 4
     :cond_0
-    sget-object v2, Ljb/b;->a:Ljb/a;
+    sget-object v2, Lmb/a;->a:Lmb/b;
 
     .line 5
-    new-instance v3, Lja/w;
+    new-instance v3, Lla/w;
 
-    invoke-direct {v3, v0, v1}, Lja/w;-><init>(Landroid/os/Handler;Landroid/os/Handler;)V
+    invoke-direct {v3, v0, v1}, Lla/w;-><init>(Landroid/os/Handler;Landroid/os/Handler;)V
 
-    check-cast v2, Ljb/c;
-
-    .line 6
-    iget-object v0, v2, Ljb/c;->c:Landroid/os/Handler;
-
-    invoke-virtual {v0, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v2, v3}, Lmb/b;->a(Ljava/lang/Runnable;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

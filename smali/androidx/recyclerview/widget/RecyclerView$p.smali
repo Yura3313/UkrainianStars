@@ -15,11 +15,11 @@
 
 
 # virtual methods
-.method public abstract a(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/MotionEvent;)V
+.method public abstract a(Landroid/view/MotionEvent;)V
 .end method
 
-.method public abstract b(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/MotionEvent;)Z
+.method public abstract b()V
 .end method
 
-.method public abstract c(Z)V
+.method public abstract c(Landroid/view/MotionEvent;)Z
 .end method

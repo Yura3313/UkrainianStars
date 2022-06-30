@@ -235,7 +235,6 @@
 .method public trustManager(Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "clientBuilder.sslSocketFactory(SSLSocketFactory) not supported on JDK 9+"

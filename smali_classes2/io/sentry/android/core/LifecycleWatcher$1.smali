@@ -22,7 +22,6 @@
 .method public constructor <init>(Lio/sentry/android/core/LifecycleWatcher;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/android/core/LifecycleWatcher$1;->this$0:Lio/sentry/android/core/LifecycleWatcher;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V

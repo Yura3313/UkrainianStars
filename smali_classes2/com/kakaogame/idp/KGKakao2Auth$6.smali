@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/idp/KGKakao2Auth;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/idp/KGKakao2Auth$6;->this$0:Lcom/kakaogame/idp/KGKakao2Auth;
 
     iput-object p2, p0, Lcom/kakaogame/idp/KGKakao2Auth$6;->val$idpLoginLock:Lcom/kakaogame/util/MutexLock;

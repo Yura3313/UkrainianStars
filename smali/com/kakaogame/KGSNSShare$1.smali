@@ -36,7 +36,6 @@
 .method public constructor <init>(Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/log/FirebaseEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSNSShare$1;->val$callback:Lcom/kakaogame/KGResultCallback;
 
     iput-object p2, p0, Lcom/kakaogame/KGSNSShare$1;->val$fbEvent:Lcom/kakaogame/log/FirebaseEvent;
@@ -59,7 +58,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGSNSShare$1;->val$callback:Lcom/kakaogame/KGResultCallback;
 
     iget-object v1, p0, Lcom/kakaogame/KGSNSShare$1;->val$fbEvent:Lcom/kakaogame/log/FirebaseEvent;

@@ -119,7 +119,7 @@
     if-eqz v2, :cond_3
 
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Exception;->getCause()Ljava/lang/Throwable;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object v0
 

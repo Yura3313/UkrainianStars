@@ -24,7 +24,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,7 +32,6 @@
 .method public static getCurrentIdpLogin()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/idp/IdpAuthManager;->access$200()Landroid/content/Context;
 
     move-result-object v0

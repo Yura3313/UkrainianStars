@@ -29,7 +29,7 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzefz;-><init>(Lj3/tj;)V
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzefz;-><init>(Lj1/q;)V
 
     or-int/lit8 v0, p2, 0x0
 
@@ -104,7 +104,7 @@
 
 
 # virtual methods
-.method public final I(ILj3/ar0;)V
+.method public final I(ILk3/tq0;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -125,7 +125,7 @@
     invoke-virtual {p0, v2, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->y(II)V
 
     .line 3
-    invoke-virtual {p0, v1, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->u(ILj3/ar0;)V
+    invoke-virtual {p0, v1, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->u(ILk3/tq0;)V
 
     const/4 p1, 0x4
 
@@ -135,20 +135,7 @@
     return-void
 .end method
 
-.method public final J()I
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->e:I
-
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->f:I
-
-    sub-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public final N(B)V
+.method public final M(B)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -222,7 +209,7 @@
     throw v0
 .end method
 
-.method public final O(J)V
+.method public final N(J)V
     .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -242,9 +229,11 @@
     if-eqz v0, :cond_1
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzefz$a;->J()I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->e:I
 
-    move-result v0
+    iget v6, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->f:I
+
+    sub-int/2addr v0, v6
 
     const/16 v6, 0xa
 
@@ -272,7 +261,7 @@
 
     int-to-byte p1, p2
 
-    invoke-static {v0, v1, v2, p1}, Lj3/lu0;->g([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lk3/du0;->h([BJB)V
 
     return-void
 
@@ -296,7 +285,7 @@
 
     int-to-byte v8, v8
 
-    invoke-static {v0, v6, v7, v8}, Lj3/lu0;->g([BJB)V
+    invoke-static {v0, v6, v7, v8}, Lk3/du0;->h([BJB)V
 
     ushr-long/2addr p1, v1
 
@@ -410,7 +399,7 @@
     goto :goto_2
 .end method
 
-.method public final P(J)V
+.method public final O(J)V
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -593,7 +582,7 @@
     throw p2
 .end method
 
-.method public final T(I)V
+.method public final S(I)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -604,7 +593,7 @@
     if-ltz p1, :cond_0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->T(I)V
 
     return-void
 
@@ -612,12 +601,12 @@
     int-to-long v0, p1
 
     .line 2
-    invoke-virtual {p0, v0, v1}, Lcom/google/android/gms/internal/ads/zzefz$a;->O(J)V
+    invoke-virtual {p0, v0, v1}, Lcom/google/android/gms/internal/ads/zzefz$a;->N(J)V
 
     return-void
 .end method
 
-.method public final U(I)V
+.method public final T(I)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -631,20 +620,22 @@
     if-eqz v0, :cond_4
 
     .line 2
-    invoke-static {}, Lj3/uq0;->a()Z
+    invoke-static {}, Lk3/oq0;->a()Z
 
     move-result v0
 
     if-nez v0, :cond_4
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzefz$a;->J()I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->e:I
 
-    move-result v0
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->f:I
 
-    const/4 v1, 0x5
+    sub-int/2addr v0, v1
 
-    if-lt v0, v1, :cond_4
+    const/4 v2, 0x5
+
+    if-lt v0, v2, :cond_4
 
     and-int/lit8 v0, p1, -0x80
 
@@ -652,8 +643,6 @@
 
     .line 4
     iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->d:[B
-
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->f:I
 
     add-int/lit8 v2, v1, 0x1
 
@@ -663,15 +652,13 @@
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lj3/lu0;->g([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lk3/du0;->h([BJB)V
 
     return-void
 
     .line 5
     :cond_0
     iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->d:[B
-
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->f:I
 
     add-int/lit8 v2, v1, 0x1
 
@@ -683,7 +670,7 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lj3/lu0;->g([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lk3/du0;->h([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -704,7 +691,7 @@
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lj3/lu0;->g([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lk3/du0;->h([BJB)V
 
     return-void
 
@@ -724,7 +711,7 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lj3/lu0;->g([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lk3/du0;->h([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -745,7 +732,7 @@
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lj3/lu0;->g([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lk3/du0;->h([BJB)V
 
     return-void
 
@@ -765,7 +752,7 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lj3/lu0;->g([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lk3/du0;->h([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -786,7 +773,7 @@
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lj3/lu0;->g([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lk3/du0;->h([BJB)V
 
     return-void
 
@@ -806,7 +793,7 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lj3/lu0;->g([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lk3/du0;->h([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -823,7 +810,7 @@
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lj3/lu0;->g([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lk3/du0;->h([BJB)V
 
     return-void
 
@@ -929,7 +916,7 @@
     goto :goto_1
 .end method
 
-.method public final V(I)V
+.method public final U(I)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1038,20 +1025,77 @@
     throw v0
 .end method
 
-.method public final b0(IJ)V
-    .locals 0
+.method public final Z(IJ)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x0
+    const/4 v0, 0x0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->s(II)V
+
+    .line 2
+    invoke-virtual {p0, p2, p3}, Lcom/google/android/gms/internal/ads/zzefz$a;->N(J)V
+
+    return-void
+.end method
+
+.method public final a0(IZ)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->s(II)V
+
+    int-to-byte p1, p2
+
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->M(B)V
+
+    return-void
+.end method
+
+.method public final d0(ILjava/lang/String;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v0, 0x2
+
+    .line 1
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->s(II)V
+
+    .line 2
+    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->n0(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final f0(IJ)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    .line 1
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->s(II)V
 
     .line 2
     invoke-virtual {p0, p2, p3}, Lcom/google/android/gms/internal/ads/zzefz$a;->O(J)V
@@ -1059,72 +1103,7 @@
     return-void
 .end method
 
-.method public final c0(IZ)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x0
-
-    .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
-
-    int-to-byte p1, p2
-
-    .line 2
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->N(B)V
-
-    return-void
-.end method
-
-.method public final f0(ILjava/lang/String;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x2
-
-    .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
-
-    .line 2
-    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->p0(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public final h0(IJ)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x1
-
-    .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
-
-    .line 2
-    invoke-virtual {p0, p2, p3}, Lcom/google/android/gms/internal/ads/zzefz$a;->P(J)V
-
-    return-void
-.end method
-
-.method public final n0([BII)V
+.method public final l0([BII)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1201,21 +1180,7 @@
     throw p2
 .end method
 
-.method public final o([BII)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/ads/zzefz$a;->n0([BII)V
-
-    return-void
-.end method
-
-.method public final o0(Lj3/ar0;)V
+.method public final m0(Lk3/tq0;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1224,19 +1189,19 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lj3/ar0;->size()I
+    invoke-virtual {p1}, Lk3/tq0;->size()I
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->T(I)V
 
     .line 2
-    invoke-virtual {p1, p0}, Lj3/ar0;->e(Lj3/u7;)V
+    invoke-virtual {p1, p0}, Lk3/tq0;->f(Lk3/u7;)V
 
     return-void
 .end method
 
-.method public final p0(Ljava/lang/String;)V
+.method public final n0(Ljava/lang/String;)V
     .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1256,7 +1221,7 @@
     mul-int/lit8 v1, v1, 0x3
 
     .line 3
-    invoke-static {v1}, Lcom/google/android/gms/internal/ads/zzefz;->Y(I)I
+    invoke-static {v1}, Lcom/google/android/gms/internal/ads/zzefz;->X(I)I
 
     move-result v1
 
@@ -1265,7 +1230,7 @@
 
     move-result v2
 
-    invoke-static {v2}, Lcom/google/android/gms/internal/ads/zzefz;->Y(I)I
+    invoke-static {v2}, Lcom/google/android/gms/internal/ads/zzefz;->X(I)I
 
     move-result v2
 
@@ -1279,61 +1244,63 @@
     .line 6
     iget-object v3, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->d:[B
 
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzefz$a;->J()I
-
-    move-result v4
-
     .line 7
-    sget-object v5, Lj3/ou0;->a:Lj3/u7;
+    iget v4, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->e:I
 
-    invoke-virtual {v5, p1, v3, v1, v4}, Lj3/u7;->m(Ljava/lang/CharSequence;[BII)I
+    sub-int/2addr v4, v1
+
+    .line 8
+    sget-object v5, Lk3/gu0;->a:Lk3/u7;
+
+    invoke-virtual {v5, p1, v3, v1, v4}, Lk3/u7;->m(Ljava/lang/CharSequence;[BII)I
 
     move-result v1
 
-    .line 8
+    .line 9
     iput v0, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->f:I
 
     sub-int v3, v1, v0
 
     sub-int/2addr v3, v2
 
-    .line 9
-    invoke-virtual {p0, v3}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
-
     .line 10
+    invoke-virtual {p0, v3}, Lcom/google/android/gms/internal/ads/zzefz$a;->T(I)V
+
+    .line 11
     iput v1, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->f:I
 
     return-void
 
-    .line 11
+    .line 12
     :cond_0
-    invoke-static {p1}, Lj3/ou0;->a(Ljava/lang/CharSequence;)I
+    invoke-static {p1}, Lk3/gu0;->a(Ljava/lang/CharSequence;)I
 
     move-result v1
 
-    .line 12
-    invoke-virtual {p0, v1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
-
     .line 13
+    invoke-virtual {p0, v1}, Lcom/google/android/gms/internal/ads/zzefz$a;->T(I)V
+
+    .line 14
     iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->d:[B
 
     iget v2, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->f:I
 
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzefz$a;->J()I
+    .line 15
+    iget v3, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->e:I
 
-    move-result v3
+    sub-int/2addr v3, v2
 
-    .line 14
-    sget-object v4, Lj3/ou0;->a:Lj3/u7;
+    .line 16
+    sget-object v4, Lk3/gu0;->a:Lk3/u7;
 
-    invoke-virtual {v4, p1, v1, v2, v3}, Lj3/u7;->m(Ljava/lang/CharSequence;[BII)I
+    invoke-virtual {v4, p1, v1, v2, v3}, Lk3/u7;->m(Ljava/lang/CharSequence;[BII)I
 
     move-result v1
 
-    .line 15
+    .line 17
     iput v1, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->f:I
     :try_end_0
-    .catch Lj3/qu0; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lk3/hu0; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
@@ -1341,7 +1308,7 @@
     :catch_0
     move-exception p1
 
-    .line 16
+    .line 18
     new-instance v0, Lcom/google/android/gms/internal/ads/zzefz$zza;
 
     invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzefz$zza;-><init>(Ljava/lang/Throwable;)V
@@ -1353,10 +1320,10 @@
 
     move-object v7, v1
 
-    .line 17
+    .line 19
     iput v0, p0, Lcom/google/android/gms/internal/ads/zzefz$a;->f:I
 
-    .line 18
+    .line 20
     sget-object v2, Lcom/google/android/gms/internal/ads/zzefz;->b:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
@@ -1369,26 +1336,25 @@
 
     invoke-virtual/range {v2 .. v7}, Ljava/util/logging/Logger;->logp(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 19
-    sget-object v0, Lj3/bs0;->a:Ljava/nio/charset/Charset;
+    .line 21
+    sget-object v0, Lk3/tr0;->a:Ljava/nio/charset/Charset;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
     move-result-object p1
 
-    .line 20
+    .line 22
     :try_start_1
     array-length v0, p1
 
-    invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->T(I)V
 
     const/4 v0, 0x0
 
-    .line 21
+    .line 23
     array-length v1, p1
 
-    .line 22
-    invoke-virtual {p0, p1, v0, v1}, Lcom/google/android/gms/internal/ads/zzefz$a;->n0([BII)V
+    invoke-virtual {p0, p1, v0, v1}, Lcom/google/android/gms/internal/ads/zzefz$a;->o([BII)V
     :try_end_1
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_1 .. :try_end_1} :catch_3
     .catch Lcom/google/android/gms/internal/ads/zzefz$zza; {:try_start_1 .. :try_end_1} :catch_2
@@ -1398,18 +1364,31 @@
     :catch_2
     move-exception p1
 
-    .line 23
+    .line 24
     throw p1
 
     :catch_3
     move-exception p1
 
-    .line 24
+    .line 25
     new-instance v0, Lcom/google/android/gms/internal/ads/zzefz$zza;
 
     invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzefz$zza;-><init>(Ljava/lang/Throwable;)V
 
     throw v0
+.end method
+
+.method public final o([BII)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/ads/zzefz$a;->l0([BII)V
+
+    return-void
 .end method
 
 .method public final s(II)V
@@ -1424,34 +1403,31 @@
 
     or-int/2addr p1, p2
 
-    .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->T(I)V
 
     return-void
 .end method
 
-.method public final u(ILj3/ar0;)V
-    .locals 0
+.method public final u(ILk3/tq0;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x2
+    const/4 v0, 0x2
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->s(II)V
 
     .line 2
-    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->o0(Lj3/ar0;)V
+    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->m0(Lk3/tq0;)V
 
     return-void
 .end method
 
-.method public final v(ILj3/dt0;)V
+.method public final v(ILk3/ws0;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1475,14 +1451,14 @@
     invoke-virtual {p0, v1, v2}, Lcom/google/android/gms/internal/ads/zzefz$a;->s(II)V
 
     .line 4
-    invoke-interface {p2}, Lj3/dt0;->d()I
+    invoke-interface {p2}, Lk3/ws0;->d()I
 
     move-result p1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->T(I)V
 
     .line 5
-    invoke-interface {p2, p0}, Lj3/dt0;->c(Lcom/google/android/gms/internal/ads/zzefz;)V
+    invoke-interface {p2, p0}, Lk3/ws0;->c(Lcom/google/android/gms/internal/ads/zzefz;)V
 
     const/4 p1, 0x4
 
@@ -1492,7 +1468,7 @@
     return-void
 .end method
 
-.method public final w(ILj3/dt0;Lj3/tt0;)V
+.method public final w(ILk3/ws0;Lk3/mt0;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1500,20 +1476,18 @@
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x2
+    const/4 v0, 0x2
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->s(II)V
 
     .line 2
     move-object p1, p2
 
-    check-cast p1, Lj3/rq0;
+    check-cast p1, Lk3/lq0;
 
     .line 3
-    invoke-virtual {p1}, Lj3/rq0;->j()I
+    invoke-virtual {p1}, Lk3/lq0;->i()I
 
     move-result v0
 
@@ -1522,95 +1496,78 @@
     if-ne v0, v1, :cond_0
 
     .line 4
-    invoke-interface {p3, p1}, Lj3/tt0;->h(Ljava/lang/Object;)I
+    invoke-interface {p3, p1}, Lk3/mt0;->h(Ljava/lang/Object;)I
 
     move-result v0
 
     .line 5
-    invoke-virtual {p1, v0}, Lj3/rq0;->k(I)V
+    invoke-virtual {p1, v0}, Lk3/lq0;->k(I)V
 
     .line 6
     :cond_0
-    invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->T(I)V
 
     .line 7
-    iget-object p1, p0, Lcom/google/android/gms/internal/ads/zzefz;->a:Lj3/pr0;
+    iget-object p1, p0, Lcom/google/android/gms/internal/ads/zzefz;->a:Lk3/ir0;
 
-    invoke-interface {p3, p2, p1}, Lj3/tt0;->i(Ljava/lang/Object;Lj3/bv0;)V
+    invoke-interface {p3, p2, p1}, Lk3/mt0;->i(Ljava/lang/Object;Lk3/su0;)V
 
     return-void
 .end method
 
 .method public final x(II)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x0
+    const/4 v0, 0x0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
-
-    if-ltz p2, :cond_0
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->s(II)V
 
     .line 2
-    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->S(I)V
 
-    goto :goto_0
-
-    :cond_0
-    int-to-long p1, p2
-
-    .line 3
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->O(J)V
-
-    :goto_0
     return-void
 .end method
 
 .method public final y(II)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x0
+    const/4 v0, 0x0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->s(II)V
 
     .line 2
-    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->T(I)V
 
     return-void
 .end method
 
 .method public final z(II)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    shl-int/lit8 p1, p1, 0x3
-
-    or-int/lit8 p1, p1, 0x5
+    const/4 v0, 0x5
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzefz$a;->s(II)V
 
     .line 2
-    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->V(I)V
+    invoke-virtual {p0, p2}, Lcom/google/android/gms/internal/ads/zzefz$a;->U(I)V
 
     return-void
 .end method

@@ -85,10 +85,8 @@
     .line 2
     iget-object v0, v0, Landroidx/core/view/GestureDetectorCompat;->a:Landroidx/core/view/GestureDetectorCompat$a;
 
-    check-cast v0, Landroidx/core/view/GestureDetectorCompat$b;
-
     .line 3
-    iget-object v0, v0, Landroidx/core/view/GestureDetectorCompat$b;->a:Landroid/view/GestureDetector;
+    iget-object v0, v0, Landroidx/core/view/GestureDetectorCompat$a;->a:Landroid/view/GestureDetector;
 
     invoke-virtual {v0, p1}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -115,7 +113,6 @@
 .method public bridge synthetic dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -126,7 +123,6 @@
 .method public bridge synthetic dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result p1
@@ -137,7 +133,6 @@
 .method public bridge synthetic dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
 
     move-result p1
@@ -148,7 +143,6 @@
 .method public bridge synthetic dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
 
     move-result p1
@@ -229,7 +223,6 @@
 .method public bridge synthetic dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -240,7 +233,6 @@
 .method public getDelegate()Landroid/view/Window$Callback;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/internal/gestures/SentryWindowCallback;->delegate:Landroid/view/Window$Callback;
 
     return-object v0
@@ -249,7 +241,6 @@
 .method public bridge synthetic onActionModeFinished(Landroid/view/ActionMode;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onActionModeFinished(Landroid/view/ActionMode;)V
 
     return-void
@@ -258,7 +249,6 @@
 .method public bridge synthetic onActionModeStarted(Landroid/view/ActionMode;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onActionModeStarted(Landroid/view/ActionMode;)V
 
     return-void
@@ -267,7 +257,6 @@
 .method public bridge synthetic onAttachedToWindow()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onAttachedToWindow()V
 
     return-void
@@ -276,7 +265,6 @@
 .method public bridge synthetic onContentChanged()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onContentChanged()V
 
     return-void
@@ -285,7 +273,6 @@
 .method public bridge synthetic onCreatePanelMenu(ILandroid/view/Menu;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onCreatePanelMenu(ILandroid/view/Menu;)Z
 
     move-result p1
@@ -296,7 +283,6 @@
 .method public bridge synthetic onCreatePanelView(I)Landroid/view/View;
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onCreatePanelView(I)Landroid/view/View;
 
     move-result-object p1
@@ -307,7 +293,6 @@
 .method public bridge synthetic onDetachedFromWindow()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onDetachedFromWindow()V
 
     return-void
@@ -316,7 +301,6 @@
 .method public bridge synthetic onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onMenuItemSelected(ILandroid/view/MenuItem;)Z
 
     move-result p1
@@ -327,7 +311,6 @@
 .method public bridge synthetic onMenuOpened(ILandroid/view/Menu;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onMenuOpened(ILandroid/view/Menu;)Z
 
     move-result p1
@@ -338,7 +321,6 @@
 .method public bridge synthetic onPanelClosed(ILandroid/view/Menu;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onPanelClosed(ILandroid/view/Menu;)V
 
     return-void
@@ -347,7 +329,6 @@
 .method public bridge synthetic onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
 
     move-result p1
@@ -385,7 +366,6 @@
 .method public bridge synthetic onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
 
     return-void
@@ -394,7 +374,6 @@
 .method public bridge synthetic onWindowFocusChanged(Z)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/android/core/internal/gestures/WindowCallbackAdapter;->onWindowFocusChanged(Z)V
 
     return-void

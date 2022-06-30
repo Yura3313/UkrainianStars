@@ -3,7 +3,7 @@
 .source "CoroutineExceptionHandler.kt"
 
 # interfaces
-.implements Lde/f$c;
+.implements Lke/f$b;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lde/f$c<",
+        "Lke/f$b<",
         "Lkotlinx/coroutines/CoroutineExceptionHandler;",
         ">;"
     }
@@ -34,7 +34,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lkotlinx/coroutines/CoroutineExceptionHandler$a;
 
     invoke-direct {v0}, Lkotlinx/coroutines/CoroutineExceptionHandler$a;-><init>()V
@@ -47,7 +46,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

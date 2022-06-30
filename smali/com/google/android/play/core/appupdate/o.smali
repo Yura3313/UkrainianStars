@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/play/core/appupdate/o;
-.super Lcom/google/android/play/core/appupdate/e;
+.super Lcom/google/android/play/core/appupdate/d;
 
 
 # instance fields
@@ -12,7 +12,7 @@
 .method public synthetic constructor <init>(IZ)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/google/android/play/core/appupdate/e;-><init>()V
+    invoke-direct {p0}, Lcom/google/android/play/core/appupdate/d;-><init>()V
 
     iput p1, p0, Lcom/google/android/play/core/appupdate/o;->a:I
 
@@ -46,17 +46,17 @@
 
     if-eq p1, p0, :cond_1
 
-    instance-of v1, p1, Lcom/google/android/play/core/appupdate/e;
+    instance-of v1, p1, Lcom/google/android/play/core/appupdate/d;
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_0
 
-    check-cast p1, Lcom/google/android/play/core/appupdate/e;
+    check-cast p1, Lcom/google/android/play/core/appupdate/d;
 
     iget v1, p0, Lcom/google/android/play/core/appupdate/o;->a:I
 
-    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/e;->b()I
+    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/d;->b()I
 
     move-result v3
 
@@ -64,7 +64,7 @@
 
     iget-boolean v1, p0, Lcom/google/android/play/core/appupdate/o;->b:Z
 
-    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/e;->a()Z
+    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/d;->a()Z
 
     move-result p1
 

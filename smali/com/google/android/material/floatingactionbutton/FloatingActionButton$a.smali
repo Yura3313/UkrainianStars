@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +31,7 @@
     return-void
 .end method
 
-.method public b(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V
+.method public b()V
     .locals 0
 
     return-void

@@ -1,4 +1,4 @@
-.class public Landroidx/browser/customtabs/PostMessageService$a;
+.class public final Landroidx/browser/customtabs/PostMessageService$a;
 .super Landroid/support/customtabs/IPostMessageService$Stub;
 .source "PostMessageService.java"
 
@@ -15,10 +15,9 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/browser/customtabs/PostMessageService;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/support/customtabs/IPostMessageService$Stub;-><init>()V
 
     return-void
@@ -26,7 +25,7 @@
 
 
 # virtual methods
-.method public onMessageChannelReady(Landroid/support/customtabs/ICustomTabsCallback;Landroid/os/Bundle;)V
+.method public final onMessageChannelReady(Landroid/support/customtabs/ICustomTabsCallback;Landroid/os/Bundle;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -34,13 +33,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1, p2}, Landroid/support/customtabs/ICustomTabsCallback;->onMessageChannelReady(Landroid/os/Bundle;)V
 
     return-void
 .end method
 
-.method public onPostMessage(Landroid/support/customtabs/ICustomTabsCallback;Ljava/lang/String;Landroid/os/Bundle;)V
+.method public final onPostMessage(Landroid/support/customtabs/ICustomTabsCallback;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -48,7 +46,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1, p2, p3}, Landroid/support/customtabs/ICustomTabsCallback;->onPostMessage(Ljava/lang/String;Landroid/os/Bundle;)V
 
     return-void

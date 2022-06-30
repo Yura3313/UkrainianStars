@@ -52,7 +52,7 @@ TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,Купити <NUM> токенів щоб �
 TID_PURCHASE_BRAWL_PASS_TITLE,ДІСТАТИ БРАВЛ ПАСС
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,БРАВЛ ПАСС
 TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,НАБІР БРАВЛ ПАССВ
-TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,Відкрий Бравл Пассні Нагороди додаткові нагороди та + 2 перезаписування квестів
+TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,Відкрий Бравл Пассні Нагороди додаткові нагороди та <NUM> перезаписування квестів
 TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,БРАВЛ ПАСС + <NUM> РІВЕНЬ
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,Минулий сезон Бравл пасса не можна купити
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,"Теперішний сезон Бравл Пасса не можна знайти, попробуте пізнше"
@@ -274,7 +274,7 @@ TID_LONG_RANGE_SHOTGUN_DESC,"Атака Шеллі стріляє широким
 TID_MEGA_BLASH_ULTI,БУ-УМ!
 TID_MEGA_BLASH_ULTI_DESC,"Суператака від Шеллі знищує як укриття, так і ворогів. Усіх, хто вижив, відкидає."
 TID_GUNSLINGER,КОЛЬТ
-TID_GUNSLINGER_DESC,Вистріли з його револьверів надзвичайно точні. Його Супер знищує укриття ще й летить на більшу дистанцію!
+TID_GUNSLINGER_DESC,"Неймовірний герой, який часто опиняється не в тому місці в потрібний час. Він не з тих, хто ухиляється від дзеркала і просто сповнений впевненості "
 TID_RAPID_FIRE,ПО ТРИ НА КОЖЕН
 TID_RAPID_FIRE_DESC,Кольт вистрілює шість куль на велику відстань зі своїх револьверів
 TID_RAPID_FIRE_ULTI,ШТОРМ КУЛЬ
@@ -286,13 +286,13 @@ TID_SHOTGUN_BLAST_DESC,"Двоствольна рушниця Була завд�
 TID_CHARGE,БУЛЬДОЗЕР
 TID_CHARGE_DESC,Булл опускає голову і пробивається крізь супротивників і перешкоди. Він завжди був наполегливим!
 TID_ROCKET_GIRL,БРОК
-TID_ROCKET_GIRL_DESC,"Брок запускає по ворогах вибухову ракету великої дальності. Його супер — це балістичний ракетний залп, який руйнує укриття!"
+TID_ROCKET_GIRL_DESC,"Коли Брок не запалює битву ракетами, він запалює танцпол своїми плавними рухами."
 TID_FIREWORKS_WEAPON,РАКЕТА!
 TID_FIREWORKS_WEAPON_DESC,"Брок запускає одну ракету, яка долає велику відстань."
 TID_FIREWORKS_ULTI,РАКЕТНИЙ ДОЩ
 TID_FIREWORKS_ULTI_DESC,"Брок запускає ракетний обстріл, який усуває ворогів і перешкоди. Він лише хоче бачити, як ви купаєтеся в Ракетному дощі!"
 TID_TNT_DUDE,ДИНАМАЙК
-TID_TNT_DUDE_DESC,"Динамайк кидає дві вибухові палиці динаміту. Його суператака — це ціла бочка, повна динаміту, який підриває укриття!"
+TID_TNT_DUDE_DESC,Довгі думки втрачені глибоко в шахті. Божевільний динамік повернувся — і він все ще прагне рознести все на шматки!
 TID_MORTAR,КОРОТКИЙ ЗАПОБІЖНИК
 TID_MORTAR_DESC,"Майк кидає дві палиці динаміту, обходячи будь-які перешкоди на шляху. Запобіжники скорочені для шкидкого вибуху."
 TID_MORTAR_ULTI,ВЕЛИКА БОЧКА - ВЕЛИКИЙ ВИБУХ
@@ -316,7 +316,7 @@ TID_CACTUS_WEAPON_DESC,"Спайк вистрілює маленький как�
 TID_CACTUS_ULTI,Прилипучка
 TID_CACTUS_ULTI_DESC,"Спайк кидає колючу гранату. Вороги, що потрапили в зону вибуху, отримують пошкодження та сповільнюються."
 TID_BARKEEP,БАРЛІ
-TID_BARKEEP_DESC,"Барлі атакує, кидаючи пляшки у ворогів, завдаючи шкоди від бризок. Його суператака — це величезний шквал палаючих пляшок!"
+TID_BARKEEP_DESC,"Барлі з готовністю подає найкращі напої в Старр-парку. Забруднити його бар, і виходить пара, і пляшки починають літати!"
 TID_BARKEEP_WEAPON,Потужний
 TID_BARKEEP_WEAPON_DESC,"Барлі кидає пляшку, розбиваючи її об землю. Вороги отримують пошкодження від бризок, а з часом вони отримують більше шкоди, якщо залишаються в калюжі."
 TID_BARKEEP_ULTI,Останій виклик
@@ -376,7 +376,7 @@ TID_BONE_THROWER_WEAPON_DESC,The Minigunner makes wielding this massive machine 
 TID_BONE_THROWER_ULTI,BANDAGE DISPENSER
 TID_BONE_THROWER_ULTI_DESC,Sometimes you get scratches and flesh wounds in a high-intensity firefight. The Bandage Dispenser helps keep your whole team in fighting shape!
 TID_BLACK_HOLE,ТАРА
-TID_BLACK_HOLE_DESC,"Атака трьох карт Тари пробиває ворогів. Її супер — це чорна діра, яка всмоктує всіх сусідніх ворогів, завдаючи шкоди!"
+TID_BLACK_HOLE_DESC,Що для вас у картках? Ця загадка із далекої країни прийшла почитати вашу долю. У ньому просто сказано: ПОРАЗКА!
 TID_BLACK_HOLE_WEAPON,Потрійні катрочки
 TID_BLACK_HOLE_WEAPON_DESC,"Тара махає зап’ястям, викидуючи три карти, які пробивають ворогів. Неабиякий трюк!"
 TID_BLACK_HOLE_ULTI,Гравітація
@@ -439,9 +439,9 @@ TID_ERROR_POP_UP_LOGIN_FAILED_BUTTON,Спробуй ще раз
 TID_ERROR_POP_UP_AUTO_DISCONNECTED_TITLE,Хтось там?
 TID_ERROR_POP_UP_AUTO_DISCONNECTED,Натисни на кнопку знизу щоб перезавантажити гру
 TID_ERROR_POP_UP_AUTO_DISCONNECTED_BUTTON,Перезавантажити гру
-TID_ERROR_POP_UP_WRONG_CLIENT_VERSION_TITLE,Оновлення доступне!
+TID_ERROR_POP_UP_WRONG_CLIENT_VERSION_TITLE,Оновлення необхідне!
 TID_ERROR_POP_UP_WRONG_CLIENT_VERSION,Хороші новини! Доступна нова версія бравл старсу
-TID_ERROR_POP_UP_WRONG_CLIENT_VERSION_BUTTON,Оновлення
+TID_ERROR_POP_UP_WRONG_CLIENT_VERSION_BUTTON,Оновити
 TID_ERROR_POP_UP_SERVER_MAINTENANCE_TITLE,Перерва на технічне обслуговування
 TID_ERROR_POP_UP_SERVER_MAINTENANCE,"Вибачте, сервери на технічному обслуговуванні. Будь ласка спробуйте ще раз."
 TID_ERROR_POP_UP_SERVER_MAINTENANCE_BUTTON,Попробуй ще раз
@@ -890,7 +890,7 @@ TID_FRIEND_STATUS_BATTLE,<cffffff>У грі</c> <TIME>
 TID_FRIEND_STATUS_BATTLE_END_SCREEN,<cffffff>матч і кінцевий екран</c>
 TID_FRIEND_STATUS_SPECTATING,<cffffff>спостерігає</c>
 TID_FRIEND_STATUS_PRACTICING,<cffffff>Практикується</c>
-TID_FRIEND_STATUS_MATCHMAKE,<cffffff>Завантаження матчу</c>
+TID_FRIEND_STATUS_MATCHMAKE,<cffffff>Пошук Матчу</c>
 TID_FRIEND_STATUS_HOME_AD_FULL,<cffffff>В команді</c>
 TID_FRIEND_STATUS_HOME_WITH_AD,<cffffff>В команді</c>
 TID_FRIEND_STATUS_HOME_IN_GAMEROOM,<cffffff>В команді</c>
@@ -912,7 +912,7 @@ TID_CLAN_MEMBER_ONLINE_STATUS_OFFLINE_LONG,В мережі: <cf7f7f7>> 1 міс�
 TID_CLAN_MEMBER_ONLINE_STATUS_1,<cff1e00>У ГРІ</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_2,<cffffff>В МЕНЮ</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_3,<cffffff>В МЕНЮ</c>
-TID_CLAN_MEMBER_ONLINE_STATUS_4,<cff1e00>ОЧІКУЄ ПІД'ЄДНАННЯ ДО ГРИ</c>
+TID_CLAN_MEMBER_ONLINE_STATUS_4,<cff1e00>ПОШУК МАТЧУ</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_5,<cffffff>В МЕНЮ</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_7,<cff1e00>СПОСТЕРІГАЄ</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_8,<cff1e00>ТРЕНУЄТЬСЯ</c>
@@ -1410,7 +1410,7 @@ TID_SETTINGS_BUTTON_FACEBOOK_CONNECTED_UP,ПІДКЛЮЧЕНО
 TID_SETTINGS_BUTTON_FACEBOOK_DISCONNECTED_UP,ПІДКЛЮЧИТИ
 TID_FAQ_BUTTON,Допомога та підтримка
 TID_ABOUT_TERMS,Будь-яке використання цього програмного забезпечення регулюється Умовами та Політикою конфіденційності на сайті www.supercell.com.
-TID_ABOUT,Credits\n\n<names>\n\nBrawl Stars ™ <version>\nCopyright 2016-2022 Supercell Ltd. All Rights Reserved.\n<extracopyright>\n<terms>
+TID_ABOUT,Український Бравл 42.226\n\n<names>\n\nНАЛАГОДЖУВАЛЬНА ІНФОРМАЦІЯ:\nВерсія додатку <version>\n
 TID_IAP_TRANSACTION_PENDING,"Зачекайте, будь ласка. Трансакція очікує на розгляд."
 TID_RATE_APP_TITLE,Оцініть Бравл Старс!
 TID_RATE_APP_MESSAGE,"Оцініть або залишіть відгук Бравл Старс в Плей Маркеті, щоб залишити нам цінний відгук!"
@@ -1629,7 +1629,7 @@ TID_ARTILLERY_DUDE_DESC,"Пенні стріляє мішками з монет�
 TID_ARTILLERY_DUDE_WEAPON,ЗОЛОТИЙ КУЛАК
 TID_ARTILLERY_DUDE_WEAPON_DESC,"Вистрілює мішечок штучного золота. Якщо мішечок потрапить у ворога, він лопне, і монети випадають на цілі за першим ворогом."
 TID_ARTILLERY_DUDE_ULTI,СТАРИЙ ЛОБЕР
-TID_ARTILLERY_DUDE_ULTI_DESC,"Пенні налаштовує свою гармату! Він може стріляти у ворогів на великій відстані, навіть якщо вони перебувають за укриттям."
+TID_ARTILLERY_DUDE_ULTI_DESC,"Пенні налаштовує свою гармату! Вона може стріляти у ворогів на великій відстані, над укриттям і підпалюючи землю"
 TID_ITEM_NAME_SPECIAL,ПАСІВКА
 TID_HERO_INFO_ITEM_LOCKED,Ви можете знайти це після рівня <LEVEL>
 TID_HERO_INFO_LOCKED_INFO,Розблокуйте бравлера з Бравл Боксів
@@ -2530,8 +2530,8 @@ TID_BRAWL_TV_LIVE,ЕФІР
 TID_BUTTON_TEST_HERO,СПРОБУВАТИ
 TID_CONTENT_UPDATE,Завантажуємо оновлення...
 TID_BATTLE_ROYALE_28,Літаючі фантазії
-TID_SHAMAN_SHIBA_SKIN,ШІБА НІТА
-TID_PENNY_BUNNY_SKIN,ЗАЙЧИК ПЕННІ
+TID_SHAMAN_SHIBA_SKIN,ШІБА\nНІТА
+TID_PENNY_BUNNY_SKIN,ЗАЙЧИК\nПЕННІ
 TID_SHAMAN_SHIBA_SKIN_SHOP,ШІБА НІТА
 TID_PENNY_BUNNY_SKIN_SHOP,ЗАЙЧИК ПЕННІ
 TID_PURCHASE_POPUP_CONFIRM_OFFER,BUY OFFER?
@@ -3150,7 +3150,7 @@ TID_POCO_PIRATE_SKIN_SHOP,ПІРАТ\nПОКО
 TID_BEA_LADYBUG_SKIN,БОЖА КОРІВКА БЕА
 TID_BEA_LADYBUG_SKIN_SHOP,БОЖА КОРІВКА\nБЕА
 TID_MAX_BLUE_SKIN,ГТ МАКС
-TID_MAX_BLUE_SKIN_SHOP,ГТ\nМАКС
+TID_MAX_BLUE_SKIN_SHOP,ГТ МАКС
 TID_CTF_3,Precious Presents
 TID_CTF_4,Holiday Heist
 TID_CTF_5,Cheery Getaway
@@ -3344,6 +3344,8 @@ TID_ACCESSORY_BLOCKED_SUPER_REQUIRED,Потрібен супер заряд!
 TID_ACCESSORY_BLOCKED_REQUIRES_MECHA,Потрібна форма МЕХА!
 TID_ACCESSORY_BLOCKED_REQUIRES_DUPLICATE,Потрібне Его Лоли!
 TID_ACCESSORY_BLOCKED_DUPLICATE_TOO_FAR,Его Лоли занадто далеко!
+TID_ACCESSORY_BLOCKED_SILENCED,Затишений!
+TID_ACCESSORY_BLOCKED_RANGE_TO_TURRET,Немає ворогів у зоні!
 TID_WALLY_SHORT_DESC,ПІДТРИМКА
 TID_WALLY_DESC,"Sprout was built to plant life, launching bouncy Seed Bombs with reckless love. Its Super creates a plant-based obstacle!"
 TID_WALLY_WEAPON,SEED BOMB
@@ -3739,7 +3741,7 @@ TID_POPUP_BRAWLTV_TEXT_CN,Watch top players play Brawl Stars!
 TID_PRO_LEAGUE_INFO_POPUP_RANK_INFO_CN,跻身排行榜前列\n可获得的额外奖励
 TID_PRO_LEAGUE_POPUP_INFO_CN,在星徽竞技场中证明自己的实力！每天可参加3场星徽竞技场对战，在赛季排行榜上冲击更高排名。赛季结束后，您将根据自己的积分和在排行榜上的排名获得星光点数奖励。
 TID_QUALIFIED_INFO_CN,您已成功完成全球锦标赛挑战，真棒！\n您可以前往<cFFE400><URL></c>，通过引导完成赛事报名，继续荒野乱斗全球锦标赛之旅！
-TID_GAME_MODE_18,SUPER CITY RAMPAGE
+TID_GAME_MODE_18,БИТВА СУПЕР МІСТА
 TID_GAME_MODE_18_DESC,"Can you beat the Mega Monster and save the City? Join forces with two teammates to take down the Mega Monster. You can get back in the fight as long as at least one of your teammates is standing. If everyone falls OR all buildings get destroyed, the match is over!\n\nRampages increase in Challenge, from Normal all the way to Insane, every time you manage to beat the Mega Monster."
 TID_TENCENT_TEAM_INVITED_FAILED_901203,Invite failed. Invite limit reached!
 TID_TENCENT_TEAM_INVITED_FAILED_901204,Invite failed. Receiver's invite limit reached!
@@ -3780,7 +3782,7 @@ TID_BRAWLPASS_POPUP_UNLOCKED,BRAWL PASS UNLOCKED!
 TID_BRAWL_PASS_SEASON_1,SUMMER OF MONSTERS
 TID_BRAWL_PASS_INFO_TEXT_1,"Earn tons of extra rewards, including:\n\nSURGE- the new Chromatic rarity Brawler!\n\nEXCLUSIVE SKIN: <SKIN_1>!\n\nEXCLUSIVE SKIN: <SKIN_2>!\n\nEXCLUSIVE and COOL PINS for SURGE\n\n<NUM> MEGA BOXES!\n\nEXTRA COINS and POWER POINTS!\n\n\nEXTRA QUESTS to complete your Brawl Pass faster!\n\nEXCLUSIVE CHROMATIC NAME for the duration of the season!"
 TID_EMOTE_EQUIP_NOT_OWNED,Find this Pin inside Pin Packs!
-TID_RAID_BOSS_TOWN_CRUSHER_INTRO_TEXT,DEFEAT THE MEGA MONSTER!
+TID_RAID_BOSS_TOWN_CRUSHER_INTRO_TEXT,Знищте великого боса
 TID_EMOTE_CATEGORY_1,SLOT 1
 TID_EMOTE_CATEGORY_2,SLOT 2
 TID_EMOTE_CATEGORY_3,SLOT 3
@@ -3874,13 +3876,13 @@ TID_KING_OF_HILL_28,Control Grande
 TID_EMOTE_EQUIP_NOT_OWNED_SPECIAL,Collector's Pin! This Pin is not commonly available!
 TID_LOGIN_WITH_FACEBOOK,Login with Facebook
 TID_TERMS_OF_SERVICE_BUTTON_TENCENT,Tencent Game License and Service Agreement
-TID_PRIVACY_POLICY_BUTTON_TENCENT,Tencent Game Privacy Protection Guidelines
+TID_PRIVACY_POLICY_BUTTON_TENCENT,荒野乱斗隐私保护指引
 TID_PARENTS_GUIDE_BUTTON_TENCENT,Tencent Game Children Privacy Protection Guidelines
 TID_TENCENT_LOGIN_AGREEMENTS,"I have carefully read and agree with <TOS>, <PP>, <CHILDREN> and <THIRDPARTY>."
 TID_THIRD_PARTY_SHARING_BUTTON_TENCENT,Third Party Info Sharing List
 TID_TENCENT_THIRDPARTY_INFO,Third Party Info Sharing List
 TID_TENCENT_LOGIN_TOS,Tencent Game License and Service Agreement
-TID_TENCENT_LOGIN_PP,Tencent Game Privacy Protection Guidelines
+TID_TENCENT_LOGIN_PP,荒野乱斗隐私保护指引
 TID_TENCENT_LOGIN_CHILDREN,Tencent Game Children Privacy Protection Guidelines
 TID_TENCENT_LOGIN_AGREEMENT_NOTE,"You need to carefully read and agree with\n<TOS>,\n<PP>,\n<CHILDREN> and\n<THIRDPARTY>\nbefore accessing the game."
 TID_KING_OF_HILL_29,Power Surge
@@ -4001,12 +4003,19 @@ TID_TENCENT_LOGIN_AGREEMENT_POPUP_2_TITLE,Important notice
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_2,"Please note that you need to carefully read and agree with\n<TOS>,\n<PP>,\n<CHILDREN> and\n<THIRDPARTY>\nbefore accessing the game."
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_BACK,Back
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_NO,No
+TID_TENCENT_LOGIN_BS_PP,荒野乱斗隐私保护指引
+TID_TENCENT_LOGIN_SPECIAL_TOS,《腾讯游戏许可及服务协议》
+TID_TENCENT_LOGIN_SPECIAL_OLD_PP,《腾讯游戏隐私保护指引》
+TID_TENCENT_LOGIN_SPECIAL_BS_PP,《荒野乱斗隐私保护指引》
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1_TITLE,更新提示
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1,尊敬的腾讯游戏用户：\n为充分保障您的权利及个人信息安全，我们根据法律法规要求，\n对<OLDPP>进行了更新。我们结合本产品和业务实际，更详细、具体地向您说明我们收集和使用您个人信息的业务场景及目的，具体可参见<PP>内更新提示。\n您也可以阅读完整版\n<PP>和<TOS>\n了解详尽的个人信息处理规则和用户权利义务。如您已详细阅读并同意\n<TOS>和<PP>，\n请点击\q同意\q继续使用我们的服务。
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_2,尊敬的用户，您需要详细阅读并同意\n<TOS>、<PP>、\n<CHILDREN>和<THIRDPARTY>，\n才可进入游戏哦。
 TID_BRAWL_PASS_SEASON_2,WELCOME TO STARR PARK!
 TID_BRAWL_PASS_INFO_TEXT_2,"Earn tons of extra rewards, including:\n\n<BRAWLER>- the new Chromatic rarity Brawler!\n\nEXCLUSIVE SKIN: <SKIN_1>!\n\nEXCLUSIVE SKIN: <SKIN_2>!\n\nEXCLUSIVE and COOL PINS for <BRAWLER>\n\n<NUM> MEGA BOXES!\n\nEXTRA COINS and POWER POINTS!\n\n\nEXTRA QUESTS to complete your Brawl Pass faster!\n\nEXCLUSIVE CHROMATIC NAME for the duration of the season!"
 TID_BRAWL_PASS_SEASON_3,HOLIDAY GETAWAY
 TID_BRAWL_PASS_INFO_TEXT_3,"Earn tons of extra rewards, including:\n\n<BRAWLER>- the new Chromatic rarity Brawler!\n\nEXCLUSIVE SKIN: <SKIN_1>!\n\nEXCLUSIVE SKIN: <SKIN_2>!\n\nEXCLUSIVE and COOL PINS for <BRAWLER>\n\n<NUM> MEGA BOXES!\n\nEXTRA COINS and POWER POINTS!\n\n\nEXTRA QUESTS to complete your Brawl Pass faster!\n\nEXCLUSIVE CHROMATIC NAME for the duration of the season!"
 TID_BRAWL_PASS_SEASON_4,THE STARR FORCE!
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,"""Отримайте безліч додаткових нагород, зокрема:\n\n<BRAWLER>- новий хроматичний бравлер!\n\nЕКСКЛЮЗИВНО ОБМЕЖЕНИЙ НА ЧАС: <SKIN_1>!\n\nЕКСКЛЮЗИВНИЙ ДО: <SKIN_2>!\n\nЕКСКЛЮЗИВНО ОБМЕЖЕНИЙ НА ЧАС ЕМОЗІ ДЛЯ <BRAWLER>\n\nЕКСКЛЮЗИВНІ СПРЕЇ НА ЧАС\n\n<КІЛЬКА МЕГА БОКСІВ!\n\nДодаткові монети та очки сили\n\n\nДодаткові квести, щоб швидше завершити Бравл Пас!\n\n< NUM> ДОДАТКОВИХ ЗМІН КВЕСТІВ ЗА ТИЖДЕНЬ\n\nЕКСКЛЮЗИВНА ХРОМАТИЧНА НАЗВА ПРОТЯГОМ СЕЗОНУ!"""
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,"Отримуйте безліч додаткових нагород, зокрема:\n\n<BRAWLER>- новий Хроматичний Бравлер!\n\nЕКСКЛЮЗИВНИЙ І ОБМЕЖЕНИЙ НА ЧАС: <SKIN_1>!\n\nЕКСКЛЮЗИВНИЙ ТА ОБМЕЖЕНИЙ НА ЧАС: <SKIN_2>!\n\nЕКСКЛЮЗИВ У ЧАСІ КРУТІ ЕМОЗІ для <BRAWLER>\n\nЕКСКЛЮЗИВНІ СПРЕЇ НА ЧАС\n\n<NUM_BOX> МЕГА КОРОБОК!\n\nДодаткові монети та очки потужності!\n\nДодаткові завдання, щоб швидше завершити Бравл Пасс!\n\n<NUM_REROLL> ДОДАТКОВІ КВЕСТИ НА ТИЖДЕНЬ\n\nЕКСКЛЮЗИВНА ХРОМАТИЧНА НАЗВА протягом сезону!"
 TID_QUESTS_MORE,Show All Quests
 TID_QUESTS_MORE_NEXT_SEASON,You have completed all the Quests for Season <THIS_SEASON>. New Quests will be available when Season <NEXT_SEASON> starts.
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,Season <NUM> Rewards
@@ -4482,7 +4491,7 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,BRAWLIDAYS PINS
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,Important notice
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Thanks for using Map Maker. Please abide by the Tencent Game License and Service Agreement and other related regulations when using Map Maker. Do not make or spread inappropriate content that is erotic, obscene, or endangers national unity, sovereignty, and territorial integrity, or violates laws and other regulations."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Thanks for using Map Maker. Please abide by the User Agreement and other related regulations when using Map Maker. Do not make or spread inappropriate content that is erotic, obscene, or endangers national unity, sovereignty, and territorial integrity, or violates laws and other regulations."
-TID_RUFFS,ГЕНЕРАЛ РАФС
+TID_RUFFS,ГЕНЕРАЛ\nРАФС
 TID_RUFFS_SHORT_DESC,ПІДТРИМКА
 TID_RUFFS_DESC,Ruffs fires twin shots of lasers that bounce off walls. His Super is a supply drop that can damage opponents in the drop zone and leaves a power up for your team to use.
 TID_RUFFS_WEAPON,DOUBLE-BARREL LASER
@@ -4656,7 +4665,7 @@ TID_RANKED_CLUB_LEAGUE_EVENT_LOCATION_INFO,Випадковий режим гр�
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_1,"Змагайтеся в битвах 3 на 3 в команді або з іншими гравцями на тому ж рівні навичок, що і ваш."
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_2,"Виграє матч та команда, яка першою виграє дві битви."
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_3,"Ігрові режими та карти обертаються випадковим чином і часто, будьте готові!"
-TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"Коли сезон закінчується, ви отримуєте винагороди на основі того, скільки квитків ви зіграли та рейтинг вашого клубу в сезоні."
+TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"Коли тиджень закінчується, ви отримуєте винагороди на основі того, скільки квитків ви зіграли та рейтинг вашого клубу в сезоні."
 TID_RANKED_EVENT_SEASON_REWARDS_BUTTON,СЕЗОННІ НАГОРОДИ
 TID_RANKED_EVENT_SOLO,ПАВЕР ЛІГА
 TID_RANKED_EVENT_TEAMS,ПАВЕР ЛІГА
@@ -4750,6 +4759,7 @@ TID_RANKED_PICK_ERROR_BRAWLER_BANNED,"Цього бравлера заборон
 TID_RANKED_PICK_ERROR_BRAWLER_PICKED,"Цього бравлера уже вибрано, виберіть іншого!"
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED,"Цей бравлер ще недоступний у ПАВЕР ЛІЗІ, виберіть іншого!"
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED_CLUB_LEAGUE,Цей бравлер ще не доступний у ПАВЕР ЛІЗІ. Виберіть іншого бравлера!
+TID_RANKED_ERROR_BRAWLER_BLACKLISTED,Організатор турніру вимкнув цього бравлера
 TID_RANKED_HERO_POWER,<NUM> СИЛА
 TID_RANKED_REWARD_POPUP_SEASON,СЕЗОН <SEASON>
 TID_RANKED_REWARDS_TOOL_TIP,"ПАВЕР ЛІГА має два режими 3 на 3:\n\n- Одиночний режим, де ви приєднуєтеся до двох випадкових гравців подібного до вашого рівня ліги.\n\n Командний режим, де ви спочатку створюєте команду з трьох, щоб почати матч.\ n\nВаші нагороди ПАВЕР ЛІГА залежатимуть від найвищого рангу, досягнутого протягом сезону в будь-якому режимі."
@@ -4797,7 +4807,9 @@ TID_RANKED_MATCH_TERMINATED_REASON_1,Матч завершено: <NAME> від�
 TID_RANKED_MATCH_TERMINATED_REASON_2,Матч припинено: <NAME> не відповідає
 TID_RANKED_MATCH_TERMINATED_REASON_3,Матч завершено: сезон закінчився
 TID_RANKED_MATCH_TERMINATED_REASON_4,Матч припинено (<CODE>). Будь ласка спробуйте ще раз.
-TID_RANKED_GOAL_REWARD_PURCHASE_OPTION_SKIN,ЕКСКЛЮЗИВНИЙ ВАРІАНТ КУПІВКИ ШКІРИ
+TID_RANKED_MATCH_TERMINATED_REASON_5,Match terminated: Match too long.
+TID_RANKED_MATCH_TERMINATED_REASON_6,Match terminated: Battle too long.
+TID_RANKED_GOAL_REWARD_PURCHASE_OPTION_SKIN,ЕКСКЛЮЗИВНИЙ ВАРІАНТ КУПІВЛІ СКІНА
 TID_RANKED_MATCH_TERMINATED_NAME_PLAYER,гравець
 TID_RANKED2_CONFIRM_PICKED,ОБРАНО
 TID_ATT_NOT_GIVEN_PRINT,Facebook social features is disabled due to your privacy preference.
@@ -5367,11 +5379,11 @@ TID_CLUB_LEAGUES_BUTTON_EVENT_DAY,Event Day <DAY>
 TID_CLUB_LEAGUES_BUTTON_DAY_NEW,NEW DAY!
 TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,NEXT EVENTS
 TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,Наступний день через:
-TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Next Season starts in:
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Ранг сезону: <RANK>
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Не рейтинговані в сезоні
-TID_CLUB_LEAGUES_BUTTON_JOIN_CLUB_DESC,Join a Club to play
-TID_CLUB_LEAGUES_BUTTON_REGISTRATION_CLOSED,Registration closed
+TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Наступний тиджень починається через
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Ранг тиждня: <RANK>
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Не рейтинговані у тиждні
+TID_CLUB_LEAGUES_BUTTON_JOIN_CLUB_DESC,
+TID_CLUB_LEAGUES_BUTTON_REGISTRATION_CLOSED,Join a Club to play
 TID_CLUB_LEAGUE_EVENT_TIME_LEFT,<TIME> left
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_DESC,Next Event Day Starts in:
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_TIME,<TIME>
@@ -5417,17 +5429,17 @@ TID_CLUB_LEAGUE_MASTERS,MASTERS
 TID_CLUB_LEAGUE_TIER_1,I
 TID_CLUB_LEAGUE_TIER_2,II
 TID_CLUB_LEAGUE_TIER_3,III
-TID_CLUB_LEAGUE_SEASON_PROGRESS,SEASON PROGRESS
-TID_CLUB_LEAGUE_SEASON_ENDS_IN,Ends in:
+TID_CLUB_LEAGUE_SEASON_PROGRESS,Прогрес тиждня
+TID_CLUB_LEAGUE_SEASON_ENDS_IN,Закінчується за:
 TID_CLUB_LEAGUE_WAITING_FINAL_RESULTS,Waiting for final results
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,Waiting for Season results
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,Season results are being processed. Come back later for final results!
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,Чекаємо на результати цього тижня.
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,Підсумки тижня опрацьовуються. Поверніться пізніше для остаточних результатів!
 TID_CLUB_LEAGUE_RESULTS_TITLE,Results:
-TID_CLUB_LEAGUE_SEASON_OVER,SEASON OVER!
-TID_CLUB_LEAGUE_SEASON_OVER_2,SEASON OVER
+TID_CLUB_LEAGUE_SEASON_OVER,ТИДЖЕНЬ ЗАКІНЧИВСЯ!
+TID_CLUB_LEAGUE_SEASON_OVER_2,ТИДЖЕНЬ ЗАКІНЧИВСЯ
 TID_CLUB_LEAGUE_MAX_TROPHIES_AVAILABLE,Max trophies available
-TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,SEASON PROGRESS
-TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,SEASON RESULTS
+TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,ПРОГРЕС ТИЖДНЯ
+TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,ПРОГРЕС ТИЖДНЯ
 TID_CLUB_LEAGUE_ITEM_PROMOTING,PROMOTING
 TID_CLUB_LEAGUE_ITEM_PROMOTING_MULTIPLE,PROMOTING X<NUM>
 TID_CLUB_LEAGUE_ITEM_DEMOTING,DEMOTING
@@ -5442,12 +5454,12 @@ TID_CLUB_LEAGUE_BUTTON_VISIT_CLUB_SHOP,VISIT CLUB SHOP
 TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,YOUR END OF SEASON REWARD
 TID_CLUB_LEAGUE_SEASON_END_REWARD_CLAIMED,CLAIMED
 TID_CLUB_LEAGUE_NOT_YET_RANKED,ЩЕ НЕ РАНГОВАНО
-TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,SEASON REGISTRATION CLOSED
-TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,SPECTATE THIS SEASON
-TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,Wait for the next season to play!
-TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,Next season's events:
-TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,Next season starts in <TIME>
-TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,Play all Tickets in a season to receive your individual max reward!
+TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,РЕЄСТРАЦІЯ НА ТИЖДЕНЬ ЗАКРИТА
+TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,СЛІДКУВАТИ ЗА ТИЖДНЕМ
+TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,Зачекай до наступного тиждня щоб заграти
+TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,Режими наступного тиждня:
+TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,Наступний тиждень починається за <TIME>
+TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,"Відіграйте всі квитки за тиждень, щоб отримати свою індивідуальну максимальну винагороду!"
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED_TITLE,TICKETS PLAYED:
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED,<NUM>/<MAX>
 TID_CLUB_LEAGUE_SEASON_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5458,7 +5470,7 @@ TID_CLUB_LEAGUE_NEED_MORE_GOLDEN_TICKETS,You need <NUM> more Golden Tickets to p
 TID_CLUB_LEAGUE_NOT_ENOUGH_GOLDEN_TICKETS_AVAILABLE_TO_PURCHASE,Not enough Golden Tickets available to purchase
 TID_CLUB_LEAGUE_FEATURE_UNAVAILABLE,This feature is currently unavailable
 TID_CLUB_LEAGUE_NOT_IN_LEAGUE,Club is not currently in league
-TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,Club is not in current league season!
+TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,Клуб не в лізі тиждня!
 TID_DUPLICATOR,ЛОЛА
 TID_DUPLICATOR_SHORT_DESC,ВОЇН
 TID_DUPLICATOR_DESC,"Part guide and part actress and full diva, Lola is THE leading lady of Brawlywood.\n\nShe attacks with her scarf and her Super is a channeled manifestation of her Ego."
@@ -5476,7 +5488,7 @@ TID_CLUB_UNLOCK_TITLE_CLUBS,CLUBS
 TID_CLUB_UNLOCK_TITLE_UNLOCKED,Unlocked!
 TID_CLUB_UNLOCK_SEARCHING_FOR_CLUB,Searching for the best Club for you...
 TID_CLUB_UNLOCK_CLUB_LEAGUE_TITLE,КЛУБОВА ЛІГА
-TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,Join next season to win exclusive rewards!
+TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,Приєднайся до наступного тиждня ліги!
 TID_CLUB_UNLOCK_CLUB_FOUND,CLUB FOUND!
 TID_CLUB_UNLOCK_WELCOME_TO_CLUB,WELCOME TO THE CLUB!
 TID_CLUB_UNLOCK_LETS_GO,LET'S GO
@@ -5489,8 +5501,8 @@ TID_CLUB_UNLOCK_STAT_TYPE,Type
 TID_SHOP_BRAWLOWEEN_TITLE,BRAWL-O-WEEN
 TID_SHOP_BRAWLOWEEN_INFO,Skin set
 TID_SKIN_INFO_BRAWLOWEEN,Brawl-o-ween skins
-TID_CLUB_LEAGUE_FLOW_NEW_SEASON,New Season!
-TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Season has ended
+TID_CLUB_LEAGUE_FLOW_NEW_SEASON,Новий тиждень!
+TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Тиждень закінчився
 TID_CLUB_LEAGUE_FLOW_CLUB_LEAGUE,КЛУБОВА ЛІГА
 TID_CLUB_LEAGUE_FLOW_DAY_NEW,NEW!
 TID_CLUB_LEAGUE_FLOW_EVENT_DAY_STARTED,EVENT DAY <NUM> STARTED!
@@ -5501,9 +5513,9 @@ TID_CLUB_LEAGUE_FLOW_BUTTON_GO_SEASON_END,ACCEPT
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_START,LET'S GO
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_END,ACCEPT
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_LEAGUE_PROMOTION,ACCEPT
-TID_CLUB_LEAGUE_FLOW_SEASON_RANK,Season Rank
-TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,YOUR SEASON END REWARD
-TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED_TITLE,Tickets played
+TID_CLUB_LEAGUE_FLOW_SEASON_RANK,Тиждневий Ранк
+TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,ТВОЯ ВИНАГОРОДА НА КІНЦІ ТИЖДНЯ
+TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED_TITLE,Використано квитків
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED,<NUM><cA4B7E0>/<MAX></c>
 TID_CLUB_LEAGUE_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
 TID_CLUB_LEAGUE_FLOW_PROMOTED,PROMOTED
@@ -5513,7 +5525,7 @@ TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_1,Purchase failed
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_COINS,Not enough coins!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_GEMS,Not enough gems!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_3,No tickets available for purchase!
-TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,СЕЗОН ЗАКІНЧУЄТЬСЯ ЗА:<TIME>
+TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,ТИЖДЕНЬ ЗАКІНЧУЄТЬСЯ ЗА:<TIME>
 TID_CLUB_LEAGUE_TICKET_SHOP_TITLE,GOLDEN TICKETS
 TID_CLUB_LEAGUE_TICKET_SHOP_INFO,You can play up to <cFEA305><NUM> Golden Tickets</c> during a Club League season. Use them to play extra matches and earn more Club Trophies. Golden Tickets can improve your Club's daily rank for the Event Day they're used.\n\nAny Golden Tickets remaining at season end will be automatically transferred to the next season.\n\nGolden Tickets are not considered when calculating season end rewards.
 TID_CLUB_LEAGUE_TICKETS_GET_MORE,Get more...
@@ -5536,18 +5548,18 @@ TID_CLUB_LEAGUE_EVENTS_TITLE,EVENTS
 TID_CLUB_LEAGUE_EVENT_UNLOCKS_AT,Unlocks at
 TID_CLUB_LEAGUE_SHOW_TICKETS_TOGGLE,Show <cFFDA14>max</c> Club trophies available to collect
 TID_CLUB_LEAGUE_INFO_TITLE,CLUB LEAGUE INFO
-TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Seasons & Event Days
-TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>SEASONS & EVENT DAYS</c>
-TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,During each weekly season your Club will compete against 7 other Clubs in your League.\n\nPlay Club League events over 3 separate Event Days and win daily Club trophies for your Club. The Clubs with the most trophies at the end of each day will earn the most points for the season leaderboard.\n\nClub Trophies RESET at the end of each Event Day.\n\n<cFCBC22>TIP: Team up with other Club members to earn bonus Club trophies!</c>
-TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Tickets
-TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>TICKETS</c>
-TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,"Playing Club League events requires Tickets. Every Club member will have Tickets to play each Event Day.\n\nPlay all your tickets to maximize your season reward, and get as many club trophies for your club as you can!"
-TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,Leagues
-TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>LEAGUES</c>
-TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,The Clubs with the most season points at the end of the week will be promoted to the next league while the bottom performing Clubs will be demoted. Climb to the highest league for higher challenge and rewards.
-TID_CLUB_LEAGUE_INFO_PAGE_4_MARKER,Club Shop
-TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>CLUB SHOP</c>
-TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,"Participating in Club League earns you Club Coins. The higher your League and season ranking the more Club Coins you can win. Play all your tickets in a season to collect all your Club Coin rewards.\n\nSpend your Club Coins in the Club Shop! You can find exclusive Skins, stock up on additional Power Points, Coins and Gear items. Check it out!"
+TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Ласкаво просимо
+TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>ЛАСКАВО ПРОСТО ДО КЛУБНИХ ІГОР</c>
+TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Грайте зі своїм клубом і отримуйте нагороди для <cFCBC22>Клубного магазину</c> щотижня!\n\n1 Клубна гра буде активна щотижня:\n<cFCBC22>ТИЖЕНЬ КЛУБОВОЇ ЛІГИ</c> – змагайтеся з іншими клубами в клубній лізі, щоб отримати найвищу нагороду та піднятися по лігах.\n<cFCBC22>ТИЖЕНЬ КЛУБНИХ КВЕСТІВ</c> – Виконайте 3 клубні квести, щоб заробити очки для свого клубу. Чим більше квестів виконає весь ваш клуб протягом тижня, тим вищою буде нагорода кожного."
+TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Клубна ліга
+TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>ТИЖЕНЬ КЛУБНОЇ ЛІГИ</c>
+TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,"Протягом тижня клубної ліги змагайтеся з 7 іншими клубами вашої ліги. Грайте в події клубної ліги <cFCBC22>3 окремі дні</c> і змагайтеся за найвищий <cFCBC22>клубний трофей</c>. Участь у матчах клубної ліги коштує <cFCBC22>квитки</c>.\n\nКлуб з найкращими результатами протягом тижня отримає найвищі винагороди. <cFCBC22>Підвищення</c> та <cFCBC22>пониження</c> відбудуться наприкінці тижня.\n\nБонус: грайте з іншими товаришами по клубу, щоб отримати <cFCBC22>додаткові клубні трофеї</c> від ваших матчів."
+TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,Клубні квести
+TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>ТИЖЕНЬ КЛУБНИХ КВЕСТІВ</c>
+TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,"Під час Тижня клубних квестів у вас буде <cFCBC22>3 завдання</c>, які потрібно виконати.\n\nВиконання клубних квестів принесе клубу <cFCBC22>очки</c>. Чим більше очок набере клуб до кінця тижня, тим вищою буде нагорода кожного. Виконайте принаймні 1 клубне завдання, щоб отримати свою винагороду.\n\nБонус: грайте з будь-яким товаришем по клубу, щоб <cFCBC22>подвоїти прогрес у виконанні завдань</c>."
+TID_CLUB_LEAGUE_INFO_PAGE_4_MARKER,Клубний магазин
+TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>ЩО ТАКЕ КЛУБНИЙ МАГАЗИН</c>
+TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,"Грайте у клубну лігу та квести клубу, щоб заробити <cFCBC22>клубні монети</c>. Витратьте свої клубні монети в клубному магазині!\n\nУ клубному магазині ви можете <cFCBC22>підвищити свій прогрес</c> на 50% і знайти <cFCBC22>ексклюзивні скіни</c>!"
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_1,COMPETE AGAINST 7 CLUBS
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_2,3 EVENT DAYS
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_3,PLAY EVENTS FOR CLUB TROPHIES
@@ -5588,8 +5600,8 @@ TID_CLUB_SHOP_BUTTON,CLUB SHOP
 TID_CLUB_SHOP_DESC,Boost your progress and buy exclusive skins!
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED,Brawler locked
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED_DESC,Unlock Brawler to buy this Skin!
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,"CLUB LEAGUE SEASON END: Your Club achieved RANK <RANKING>, and as a reward you gained <COINS> <cEE1B39>Club Coins</c>!"
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"CLUB LEAGUE SEASON END: Your Club achieved RANK <RANKING>, but you didn't compete this season. Participate in the next season to earn Club Coins!"
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,"""КІНЕЦЬ ТИЖНЯ КЛУБНОЇ ЛІГИ: Ваш клуб отримав <RANKING> РАНГ, і як нагороду ви отримали <COINS> і <cEE1B39> Клубні монети</c>!"""
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"""КІНЕЦЬ ТИЖНЯ КЛУБНОЇ ЛІГИ: Ваш клуб досяг <RANKING> РАНГУ, але ви не брали участь у змаганнях цього тижня. Візьміть участь у наступному тижні, щоб заробити клубні монети!"""
 TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,END OF SEASON MAXIMUM REWARDS
 TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,Play all your Tickets in a season to receive your max reward!
 TID_CLUB_LEAGUE_SEASON_REWARD_MAX,MAX
@@ -5598,7 +5610,7 @@ TID_CLUB_LEAGUE_SEASON_DEMOTING_DESC,Demoting to lower League
 TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,Я шукаю команду
 TID_CLUB_LEAGUE_LOOKING_FOR_PLAYERS,Looking for Players:
 TID_CLUB_INFO_TAB_PLAYER_RANKS,РАНГИ ГРАВЦІВ
-TID_CLUB_INFO_TAB_LEAGUE_SEASON,СЕЗОН КЛУБНОЇ ЛІГИ
+TID_CLUB_INFO_TAB_LEAGUE_SEASON,ТИЖДЕНЬ КЛУБНОЇ ЛІГИ
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY,ДЕНЬ ПОДІЙ №<NUM>
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY_NONE,ДЕНЬ ПОДІЙ
 TID_CLUB_MEMBER_LEAGUE_TICKETS,<NUM>/<MAX>
@@ -5633,20 +5645,24 @@ TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,CLUB TROPHY REWARDS
 TID_REWARD_DESC_GEAR_TOKENS,GEAR TOKENS
 TID_REWARD_DESC_GEAR_TOKEN_SINGLE,GEAR TOKEN
 TID_REWARD_DESC_GEAR_SCRAP,GEAR SCRAP
-TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hey! Looks like you're too late to play in this season.\n\nFeel free to still look around & spectate your Club before the next season starts!
+TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,"Привіт! Схоже, ви запізнилися грати цього тижня.\n\nНе соромтеся озирнутися та подивитися на свій клуб до початку наступного тижня!"
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Come check out what's in the Club Shop!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Final Results:
 TID_CLUB_LEAGUE_TEASER_TITLE,КЛУБОВА ЛІГА
 TID_CLUB_LEAGUE_TEASER_JOIN_CLUB,JOIN A CLUB
 TID_CLUB_LEAGUE_TEASER_MESSAGE,Compete with your Club to boost your progress & earn exclusive skins!
 TID_CLUB_LEAGUE_TEASER_REACH_TROPHIES_TO_UNLOCK,Reach <NUM> trophies to unlock Clubs
-TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,Join a Club to compete next season
+TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,"Приєднайся до клубу, щоб грати!"
 TID_CLUB_LEAGUE_TEASER_FIND_OUT_MORE,FIND OUT MORE
-TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,Current Season Schedule:
-TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,Next Season Schedule:
+TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,Розклад на поточний тиждень:
+TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,Розклад на наступний тиждень:
 TID_CLUB_LEAGUE_EVENTS_DAY_STARTS_IN,Starts in: <TIME>
 TID_CLUB_LEAGUE_EVENTS_DAY_ENDS_IN,Ends in: <TIME>
 TID_CLUB_LEAGUE_EVENTS_INFO_BUTTON,WHAT IS CLUB LEAGUE?
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_CURRENT_SEASON,CURRENT WEEK
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_ENDS_IN,Ends in <TIME>
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_NEXT_SEASON,NEXT WEEK
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_STARTS_IN,Starts in <TIME>
 TID_CLUBS_MEMBERS_CLUB_TROPHIES,Club Trophies
 TID_CLUBS_MEMBERS_TICKETS_USED,ВИКОРИСТАНО КВИТКІВ
 TID_CLUBS_MEMBERS_POWER_LEAGUE_RANK,Power League Rank
@@ -5677,7 +5693,7 @@ TID_HEADLESS_RIDER_STU_SKIN,БЕЗГОЛОВИЙ СТУ
 TID_COUNT_PENGULA_MRP_SKIN,МІСТЕР ПЕНГУЛА
 TID_SWAMP_GENE_SKIN,БОЛОТНИЙ ДЖИН
 TID_GHOST_SQUEAK_SKIN_SHOP,ПРИВИД\nСКВІК
-TID_SURGE KONG_SKIN_SHOP,ВОЛЬТ КОНГ
+TID_SURGE KONG_SKIN_SHOP,ВОЛЬТ\nКОНГ
 TID_HEADLESS_RIDER_STU_SKIN_SHOP,БЕЗГОЛОВИЙ\nСТУ
 TID_COUNT_PENGULA_MRP_SKIN_SHOP,МІСТЕР\nПЕНГУЛА
 TID_SWAMP_GENE_SKIN_SHOP,БОЛОТНИЙ\nДЖИН
@@ -5767,7 +5783,7 @@ TID_LOOKING_TOGGLE_LOOKING_FOR_A_TEAM,You are now shown as LOOKING FOR A TEAM to
 TID_LOOKING_TOGGLE_LOOKING_FOR_PLAYERS,Your Team is now shown as LOOKING FOR PLAYERS to others online
 TID_CLUB_JOIN_FAIL_FEATURE_LOCKED,Cannot join club. Clubs unlock at <NUM> trophies.
 TID_CLUB_LEAGUE_LEAGUES_POPUP_CURRENT_LEAGUE,CURRENT LEAGUE
-TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,Promotion & demotions at the end of each Club League season!\nClimb the leagues to increase your Club Coin rewards.
+TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,"Підвищення та пониження в кінці кожного тижня Клубної ліги!\nПіднімайте ліги, щоб збільшити свої винагороди за клубні монети."
 TID_CLUB_LEAGUE_LEAGUES_POPUP_BUTTON,OK
 TID_CLUB_LEAGUE_LEAGUES_POPUP_TITLE,LEAGUES
 TID_IMPORTANT_MESSAGE_TITLE,IMPORTANT NOTICE
@@ -5844,8 +5860,8 @@ TID_FURIOUS_FANG_SKIN,ЛЮТИЙ ФЕНГ
 TID_FURIOUS_FANG_SKIN_SHOP,ЛЮТИЙ\nФЕНГ
 TID_CLASSIC MIKE_SKIN,КЛАСИЧНИЙ ДИНАМАЙК
 TID_CLASSIC MIKE_SKIN_SHOP,КЛАСИЧНИЙ\nДИНАМАЙК
-TID_EL_PRIMO_VALENTINES,Ель КОРАЗОН
-TID_EL_PRIMO_VALENTINES_SHOP,Ель\nКОРАЗОН
+TID_EL_PRIMO_VALENTINES,ЕЛЬ КОРАЗОН
+TID_EL_PRIMO_VALENTINES_SHOP,ЕЛЬ\nКОРАЗОН
 TID_GRIFF_SLEIGH_SKIN,СЛІГЕР ГРІФ
 TID_GRIFF_SLEIGH_SKIN_SHOP,СЛІГЕР\nГРІФ
 TID_SANTA_BO_SKIN,ХО ХО ХО БО
@@ -5932,10 +5948,10 @@ TID_CLAIM_VOUCHER_POPUP_TITLE,Claim Reward
 TID_CLAIM_VOUCHER_BUTTON_CLAIM,Claim
 TID_CLAIM_VOUCHER_BUTTON_CANCEL,Cancel
 TID_SPELL_FACTORY_CLAIM_FAILED_TITLE,Error claiming reward
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,Unable to claim reward for <c267F00><CODE></c>
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,Unable to claim.\n\n<c267F00><CODE></c> reward has already been claimed
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,INVALID CODE\n\n<c7F0000><CODE></c>
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,Unable to claim reward.\n\n<c267F00><CODE></c> reward has expired.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,Неможливо отримати винагороду.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,Неможливо забрати. Винагорода вже отримана.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,Неможливо отримати. Код недійсний.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,Неможливо забрати. Термін дії винагороди минув.
 TID_RANKED_FRIENDLY_BEST_OF_TOGGLE_TITLE,BEST OF
 TID_FLEA,ІВЕ
 TID_FLEA_SHORT_DESC,ВОЇН
@@ -5959,7 +5975,7 @@ TID_HATCHLING_HEALTH,Hatchling Health
 TID_HATCHLING_DAMAGE,Hatchling Damage
 TID_HATCHLING_COUNT,Hatchling Count
 TID_ACCESSORY_DUPLICATOR_SWAP,STUNT DOUBLE
-TID_ACCESSORY_DUPLICATOR_SWAP_DESC,Lola and her Ego switch locations and recover <c00cc00><VALUE1></c> health.
+TID_ACCESSORY_DUPLICATOR_SWAP_DESC,Лола та її Его міняються місцями. Вона відновлює <c00cc00><VALUE1></c> здоров'я.
 TID_ACCESSORY_BLOCKED_EGO_TOO_FAR,Ego is too far!
 TID_ACCESSORY_BLOCKED_MISSING_EGO,Can't activate without Ego!
 TID_GAME_MODE_25,WIPEOUT
@@ -5976,13 +5992,13 @@ TID_ACCESSORY_BASEBALL_STICKY,EXTRA STICKY
 TID_ACCESSORY_BASEBALL_STICKY_DESC,Bibi's next Spitball slows down enemies on hit for <c00cc00><VALUE1></c> seconds!
 TID_ACCESSORY_MUMMY_ACID,ACID SPRAY
 TID_ACCESSORY_MUMMY_ACID_DESC,"Emz's next blast of hair spray can pass through walls, but deals <ccc0000><VALUE1>%</c> less damage."
-TID_FIRST_BLOOD,<name> FIRST TAKEDOWN!
-TID_KILL_NUMBER_OWN,FOUR TAKEDOWNS LEFT!
-TID_KILL_NUMBER_OPPONENT,FOUR TAKEDOWNS LEFT FOR YOUR ENEMIES!
-TID_ONE_POINT_FROM_VICTORY,ONE TAKEDOWN FROM VICTORY!
-TID_OPPONENT_ONE_POINT_FROM_VICTORY,ONE TAKEDOWN FROM DEFEAT!
-TID_VICTORY_MATCH_OVER,ПЕРЕМОГА!
-TID_LOSS_MATCH_OVER,ПОРАЗКА!
+TID_FIRST_BLOOD,<name> Перше знищення!
+TID_KILL_NUMBER_OWN,Залишилося 4 знищення!
+TID_KILL_NUMBER_OPPONENT,Вашим ворогам залишилося 4 знищення!
+TID_ONE_POINT_FROM_VICTORY,1 знищення від перемоги!
+TID_OPPONENT_ONE_POINT_FROM_VICTORY,1 знищення до поразки!
+TID_VICTORY_MATCH_OVER,ПЕРЕМОГА!\nМатч завершено
+TID_LOSS_MATCH_OVER,ПОРАЗКА!\nМатч завершено
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2022,Lunar Brawl 2022 skin
 TID_LOGIN_CALENDAR_LEFT_TITLE,GIFT STREAK
 TID_LOGIN_CALENDAR_LEFT_SUBTITLE,<cfffc11>LOGIN EVERYDAY FOR 15 DAYS</c> to claim your <cfffc11>FREE GIFTS</c>! <cfffc11>DON'T MISS A DAY</c> or the streak will be gone!
@@ -6075,25 +6091,25 @@ TID_LOGIN_CALENDAR_REWARD_DESC_BRAWLER,Unlock <HERONAME>
 TID_DOCTOR_EDGAR_SKIN,ДОКТОР ЕДГАР
 TID_DOCTOR_EDGAR_SKIN_SHOP,ДОКТОР\nЕДГАР
 TID_FIREFLY_RICO_SKIN,СВІТЛЯЧОК РІКО
-TID_FIREFLY_RICO_SKIN_SHOP,СВІТЛЯЧОК РІКО
+TID_FIREFLY_RICO_SKIN_SHOP,СВІТЛЯЧОК\nРІКО
 TID_STAG_BEETLE_MEG_SKIN,МУРАХА МЕГ
-TID_STAG_BEETLE_MEG_SKIN_SHOP,МУРАХА МЕГ
+TID_STAG_BEETLE_MEG_SKIN_SHOP,МУРАХА\nМЕГ
 TID_SAVAGE_BULL_SKIN,ЛЕВ БУЛЛ
-TID_SAVAGE_BULL_SKIN_SHOP,ЛЕВ БУЛЛ
+TID_SAVAGE_BULL_SKIN_SHOP,ЛЕВ\nБУЛЛ
 TID_WASP_BO_SKIN,ОСА БО
-TID_WASP_BO_SKIN_SHOP,ОСА БО
+TID_WASP_BO_SKIN_SHOP,ОСА\nБО
 TID_MR_FLY_SKIN,МІСТЕР МУХА
 TID_MR_FLY_SKIN_SHOP,МІСТЕР МУХА
 TID_BUNNY_GROM_SKIN,ЗАЙЧИК ГРОМ
-TID_BUNNY_GROM_SKIN_SHOP,ЗАЙЧИК ГРОМ
+TID_BUNNY_GROM_SKIN_SHOP,ЗАЙЧИК\nГРОМ
 TID_MANTIS_ROSA_SKIN,БОГОМОЛ РОЗА
-TID_MANTIS_ROSA_SKIN_SHOP,БОГОМОЛ РОЗА
+TID_MANTIS_ROSA_SKIN_SHOP,БОГОМОЛ\nРОЗА
 TID_SPIKY_EVE_SKIN,КОЛЮЧА ІВЕ
 TID_SPIKY_EVE_SKIN_SHOP,КОЛЮЧА ІВЕ
 TID_CORRUPTED_SPROUT_SKIN,ПОЛОМАНИЙ СПРАУТ
 TID_CORRUPTED_SPROUT_SKIN_SHOP,ПОЛОМАНИЙ\nСПРАУТ
 TID_IVY_BELLE_SKIN,ПЛЮЩ БЕЛЛЬ
-TID_IVY_BELLE_SKIN_SHOP,ПЛЮЩ БЕЛЛЬ
+TID_IVY_BELLE_SKIN_SHOP,ПЛЮЩ\nБЕЛЛЬ
 TID_TRUE_GOLD_SPROUT_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ СПРАУТ
 TID_TRUE_GOLD_SPROUT_SKIN_SHOP,СПРАВЖНІЙ ЗОЛОТИЙ\nСПРАУТ
 TID_TRUE_GOLD_SURGE_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ ВОЛЬТ
@@ -6311,9 +6327,9 @@ TID_TRUE_SILVER_LOLA_SKIN_SHOP,СПРАВЖНЯ СРІБЛА\nЛОЛА
 TID_CRASH_TEST_DARRYL_SKIN,КРАШ-ТЕСТ ДЕРІЛ
 TID_CRASH_TEST_DARRYL_SKIN_SHOP,КРАШ-ТЕСТ\nДЕРІЛ
 TID_BIKER_CARL_SKIN,РОВЕРИСТ КАРЛ
-TID_BIKER_CARL_SKIN_SHOP,РОВЕРИСТ КАРЛ
+TID_BIKER_CARL_SKIN_SHOP,РОВЕРИСТ\nКАРЛ
 TID_PYRO_SPIKE_SKIN,ПІРО СПАЙК
-TID_PYRO_SPIKE_SKIN_SHOP,ПІРО СПАЙК
+TID_PYRO_SPIKE_SKIN_SHOP,ПІРО\nСПАЙК
 TID_MONSTER_TRUCK_MEG_SKIN,МОНСТР-ТРАК МЕГ
 TID_MONSTER_TRUCK_MEG_SKIN_SHOP,МОНСТР ТРАК\nМЕГ
 TID_OVERLORD_BYRON_SKIN,ПОВЕЛИТЕЛЬ БАЙРОН
@@ -6370,6 +6386,66 @@ TID_LOGIN_CALENDAR_LOYALTY_PROGRAM,LOYALTY PROGRAM
 TID_LOGIN_CALENDAR_TITLE,STARR PARK LOYALTY PROGRAM
 TID_REWARD_DESC_PLAYER_ICON_REGULAR,PLAYER ICON
 TID_CLUB_LEAGUE_CLUB_COINS_HOW_TO_GET,Earn Club Coins by competing in Club League
+TID_CLUB_EVENTS_TITLE,CLUB GAMES
+TID_CLUB_EVENTS_LEAGUE_TAB_DAY,EVENT DAY
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY,EVENT DAY <NUM>
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY_COMPLETE,COMPLETE
+TID_CLUB_EVENTS_LEAGUE_TAB_SEASON,WEEK
+TID_CLUB_EVENTS_TAB_LEAGUE,LEAGUE
+TID_CLUB_EVENTS_TAB_QUESTS,QUESTS
+TID_CLUB_EVENTS_BUTTON_CLUB_SHOP,CLUB SHOP
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_IS_TOP,Only the top <TOP> results of each club are counted. You are in position <NUM>.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_TOP,Only the top <TOP> results of each club are counted. You are in position <cF76263><NUM></c>.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_RANKED,Only the top <TOP> results of each club are counted. <cF76263>You haven't participated yet.</c>
+TID_CLUB_INFO_TOP_EVENT_DAY_PLAYER_DIVIDER,Only the top <TOP> participant results of the club are counted
+TID_CLUB_QUESTS_PLAYER_REWARD_DESC,YOUR END OF WEEK REWARD
+TID_CLUB_QUESTS_LOCKED_REWARD_DESC,COMPLETE ANY CLUB QUEST TO UNLOCK
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY,Reach <POINTS> points with your club to get this as the End of Week Reward!
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_CURRENT,This is the current Club Quest End of Week Reward.
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_LOCKED,This is the current Club Quest End of Week Reward. Complete a Club Quest to receive it at the end of week!
+TID_CLUB_QUESTS_LEAGUES_BUTTON,LEAGUES
+TID_CLUB_QUESTS_LEAGUES_DESC,Promote to a higher Club League to increase your MAX REWARD.
+TID_CLUB_QUESTS_RANKS_CURRENT_LEAGUE,CURRENT LEAGUE
+TID_CLUB_QUESTS_RANKS_MAX_REWARD,MAX REWARD
+TID_CLUB_QUESTS_RANKS_MESSAGE,Your Club League rank determines the maximum rewards for the Club Quest week. Climb the leagues to increase your Club Coin rewards!
+TID_CLUB_QUESTS_RANKS_TITLE,LEAGUES
+TID_CLUB_QUESTS_FLOW_NEW_SEASON,New Week!
+TID_CLUB_QUESTS_FLOW_SEASON_ENDED,Week has ended
+TID_CLUB_QUESTS_FLOW_CLUB_QUESTS,CLUB QUESTS
+TID_CLUB_QUESTS_FLOW_MAX_REWARD,MAX REWARD
+TID_CLUB_QUESTS_FLOW_BUTTON_GO,ACCEPT
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_START,LET'S GO
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_END,OK
+TID_CLUB_QUESTS_FLOW_SEASON_RANK,Week Rank
+TID_CLUB_QUESTS_FLOW_END_OF_SEASON_REWARD,YOUR END OF WEEK REWARD
+TID_CLUB_QUESTS_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_BADGE,<cFCF044>x2</c>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_DESC,Play with at least 1 Club Member to <cFCF044>DOUBLE</c> your Club Quest Progress
+TID_CLUB_QUESTS_ALL_COMPLETED_DESC,All Club Quests completed this week!
+TID_CLUB_QUEST_ALREADY_COMPLETED,This Club Quest has been already completed!
+TID_CLUB_QUESTS_SEASON_ENDS_IN_TIME,Week ends in:
+TID_CLUB_QUESTS_REWARD_LOCKED_DESC,1st quest unlocks reward!
+TID_CLUB_QUESTS_COMPLETED_NUM,Quests completed: <NUM>/<MAX>
+TID_CLUB_QUESTS_TITLE,CLUB QUESTS
+TID_CLUB_QUESTS_NEW_SEASON,NEW WEEK!
+TID_CLUB_QUESTS_SEASON_END_NOTIFICATION,"CLUB QUESTS END OF WEEK: As a reward from the week, you gained <COINS> <cEE1B39>Club Coins</c>!"
+TID_CLUB_QUESTS_CONTRIBUTIONS_TITLE,THIS WEEK'S CONTRIBUTIONS
+TID_CLUB_QUESTS_CONTRIBUTIONS_MEMBERS,Club members: <NUM>
+TID_CLUB_QUESTS_CLUB_TEAM_BONUS,x2 CLUB TEAM BONUS
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TITLE,TEAM UP BONUS!
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_DESC,Play with at least 1 Club Member to <cFCF044>DOUBLE</c> your Club Quest Progress!
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PROGRESS,Club Quest Progress
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_X2,x2
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PLAY_SOLO,PLAY SOLO
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_ONLINE,<NUM> Online
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TEAM_UP,TEAM UP!
+TID_CLUB_QUESTS_WARNING_NOT_AVAILABLE,You can only contribute to the club in which you started this week.\n\nWait until the next week to contribute to this Club!
+TID_CLUB_QUESTS_SEASON_END_REWARD_CLAIMED,CLAIMED
+TID_CLUB_LEAGUE_WARNING_NOT_AVAILABLE,Hey! Looks like your Club is not yet participating in a Club League week. You can compete with other clubs when the next Club League week starts.
+TID_CLUB_EVENT_TIME_LEFT,<TIME> left
+TID_SHOP_CLUB_SHOP_SEE_OFFERS,SEE OFFERS
+TID_SHOP_CLUB_SHOP_TITLE,CLUB SHOP
+TID_SHOP_CLUB_SHOP_DESC,BOOST YOUR PROGRESS
 TID_SHOP_OFFER_INFO_25,A new Player Icon!
 TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,<cFFB820>COME BACK TOMORROW</c> to CLAIM this gift or the streak will be gone!
 TID_BRAWLBALL_49,Extra Bouncy
@@ -6377,3 +6453,163 @@ TID_BRAWLBALL_50,Full Tilt
 TID_BRAWLBALL_51,High Score
 TID_BRAWLBALL_52,Ping Pong
 TID_INBOX_CAPTION_72_68,DONATION: SPRAY
+TID_SILENCER,ОТІС
+TID_SILENCER_SHORT_DESC,ВОЇН
+TID_SILENCER_DESC,"Отіс — вуличний художник, який відпочиває на глибині зі своїм приятелем - морською зіркою Сілом. Разом вони розписують графіті по всьому Старр Парку."
+TID_SILENCER_WEAPON,Чорнильний Малюнок
+TID_SILENCER_WEAPON_DESC,Отіс бризкає краплями чорнила зі свого пістолета-розпилювача.
+TID_SILENCER_ULTI,ТИХЕ МОРСЬКЕ ДНО
+TID_SILENCER_ULTI_DESC,"Отіс кидає Сіла, який хапається за першого враженого ворога й на короткий час не дає їм атакувати."
+TID_SPEC_ABI_SILENCER_1,СУПЕР КЛЕЙ
+TID_SPEC_ABI_SILENCER_1_DESC,Сіл могутньо тисне ворога з усієї сили. Заважає їм атакувати на <c00cc00><VALUE1>%</c> довше.
+TID_SPEC_ABI_SILENCER_2,ЧОРНИЛЬНА ПЕРЕЗАПРАВКА
+TID_SPEC_ABI_SILENCER_2_DESC,Отіс тепер випускає на <c00cc00><VALUE1>%</c> більше чорнила.
+TID_ACCESSORY_SILENCER_GADGET_1,ТИХА ЗІРКА
+TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Наступна морська зірка залишиться на землі, якщо ворог не влучить, залишаючись у стані бездіяльності, доки ворог не наблизиться."
+TID_ACCESSORY_SILENCER_GADGET_2,РОЗЛИТТЯ ЧОРНИЛА
+TID_ACCESSORY_SILENCER_GADGET_2_DESC,"Наступна атака Отіса стріляє гігантською чорнильною кулею, яка залишає калюжу, завдаючи <c00cc00><VALUE1></c> шкоди протягом <c00cc00><VALUE2></c> секунд."
+TID_RANDOM_GAME_MODE,ЗАГАДКА
+TID_NOTIFICATION_RANDOM,Нова карта ЗАГАДКИ вже доступна! Час вигравати нові нагороди!
+TID_SKIN_INFO_DEEPSEA,Скін Глибокого Моря
+TID_EMOTE_BUNDLE_DEEPSEA_PACK,Емозі для скінів Глибокого Моря
+TID_SUGGEST,ЗАПРОПОНУВАТИ
+TID_SUGGEST_CANCEL,СКАСУВАТИ
+TID_PURCHASE_BRAWL_PASS_INFO_SHOP,РОЗБЛОКУЙТЕ НАГОРОДИ БРАВЛ ПАСУ + ДОДАТКОВІ КВЕСТИ ТА ПОВТОРНІ ЗМІНИ!
+TID_SUGGESTED_BY,Запропоновано
+TID_SHOP_DEEPSEA_SKINS,Скін Глибокого Моря
+TID_SHOP_DEEPSEA_TITLE,ГЛИБОКЕ МОРЕ
+TID_SHOP_DEEPSEA_INFO,Набір скінів
+TID_SKIN_INFO_BT21,Скін БТ21
+TID_CLUB_EVENTS_ONBOARDING_TITLE,КЛУБОВІ ІГРИ
+TID_CLUB_EVENTS_ONBOARDING_SUBTITLE,Пришвиждуйте свій прогрес і заробляйте ексклюзивні скіни!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_1_TITLE,Ласкаво просимо до щотижневих\nКЛУБНИХ ІГР!
+TID_CLUB_EVENTS_ONBOARDING_NEW_GAME,Нова клубна гра!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_TITLE,КЛУБНА ЛІГА
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_DESCRIPTION,Змагайтеся з іншими клубами!\nПіднімайте Ліги!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_TITLE,КЛУБНІ КВЕСТИ
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_DESCRIPTION,Виконуйте квести зі своїм клубом!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_1,Грайте зі своїм клубом! 1 клубна гра на тиждень.
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_2,Заробляйте клубні монети!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_3,Купляйте речі  у Магазині Клубу!
+TID_SUGGEST_TITLE,Запропонувати Бравлера
+TID_CLUB_LEAGUE_TOP_24_REWARDS,All players are eligible to collect their end of week rewards
+TID_CLUB_LEAGUE_STARTS_IN,Club League starts in:
+TID_CLUB_QUESTS_STARTS_IN,Club Quests starts in:
+TID_SHOWDOWN_71,Jump Park
+TID_SHOWDOWN_72,Brawler Speedway
+TID_SHOWDOWN_73,Teleport Tag
+TID_CLUB_QUESTS_NOT_AVAILABLE,Club Quests are not currently available
+TID_CLUB_LEAGUE_NOT_AVAILABLE,Club League is not currently available
+TID_CLUB_QUESTS_WEEK_ACTIVE,QUESTS WEEK Active for:
+TID_CLUB_LEAGUE_WEEK_ACTIVE,LEAGUE WEEK Active for:
+TID_CLUB_EVENTS_ACTIVE,Active
+TID_CLUB_EVENTS_STARTING,Починається скоро
+TID_CLUB_EVENTS_WAITING,Очікуємо
+TID_CLUB_LEAGUE_PREVIOUS_WEEK,МИНУЛИЙ ТИЖДЕНЬ
+TID_CLUB_LEAGUE_RESULTS,Результати:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_SHORT,ТИЖДЕНЬ ЛІГИ почнеться за:
+TID_CLUB_QUESTS_WEEK_STARTS_IN_SHORT,ТИЖДЕНЬ КВЕСТІВ починається за:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN,Наступний тиждень клубної ліги починається за: <TIME>
+TID_CLUB_QUESTS_WEEK_STARTS_IN,Наступний тиждень клубних квестів починається за: <TIME>
+TID_CLUB_LEAGUE_WEEK_SCHEDULE,РОЗКЛАД
+TID_CLUB_QUESTS_PREVIOUS_WEEK_REWARD,ВИНАГОРОДА ЗА ПОПЕРЕДНІЙ ТИЖДЕНЬ
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TEXT,Наступний тиждень Клубної ліги
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TIME,Починається за: <TIME>
+TID_CLUB_EVENTS_PREVIOUS_WEEK,ТИЖДЕНЬ ЗАКІНЧИВСЯ!
+TID_BT21_SANDY_SKIN,СЕНДІ КОЙА
+TID_BT21_SANDY_SKIN_SHOP,СЕНДІ\nКОЙА
+TID_BT21_EDGAR_SKIN,ЛЮБОВНИЙ ЕДГАР
+TID_BT21_EDGAR_SKIN_SHOP,ЛЮБОВНИЙ\nЕДГАР
+TID_BT21_RUFFS_SKIN,РАФС ЧИМІ
+TID_BT21_RUFFS_SKIN_SHOP,РАФС\nЧИМІ
+TID_BT21_BULL_SKIN,БУЛ МАНГ
+TID_BT21_BULL_SKIN_SHOP,БУЛ\nМАНГ
+TID_BT21_BIBI_SKIN,БІБІ РЖ
+TID_BT21_BIBI_SKIN_SHOP,БІБІ\nРЖ
+TID_BT21_JACKY_SKIN,ДЖЕКІ ПЕЧЕНЬКО
+TID_BT21_JACKY_SKIN_SHOP,ДЖЕКІ\nПЕЧЕНЬКО
+TID_BT21_TICK_SKIN,ТІК ШУКІ
+TID_BT21_TICK_SKIN_SHOP,ТІК\nШУКІ
+TID_POSTAL_BROCK_SKIN,ПОШТОВИЙ БРОК
+TID_POSTAL_BROCK_SKIN_SHOP,ПОШТОВИЙ\nБРОК
+TID_MAKE_EMZ_SKIN,ДІДЖЕЙ 3.М.З
+TID_MAKE_EMZ_SKIN_SHOP,ДІДЖЕЙ 3.М.З
+TID_SHARK_JAW_COLT_SKIN,АКУЛОЗУБИЙ КОЛЬТ
+TID_SHARK_JAW_COLT_SKIN_SHOP,АКУЛОЗУБИЙ\nКОЛЬТ
+TID_OCTO_FANG_SKIN,ОКТО ФАНГ
+TID_OCTO_FANG_SKIN_SHOP,ОКТО\nФАНГ
+TID_CORAL_BELLE_SKIN,КОРАЛЬНА БЕЛЛЬ
+TID_CORAL_BELLE_SKIN_SHOP,КОРАЛЬНА\nБЕЛЛЬ
+TID_PHARA_OTIS_SKIN,ФАРАОТІС
+TID_PHARA_OTIS_SKIN_SHOP,ФАРАОТІС
+TID_RANKED_SUGGESTING_BRAWLER,Пропоную Бравлера для <NAME>
+TID_RANKED_BRAWLER_SUGGESTED,ПРОПОНУЄТЬСЯ БРАВЛЕР
+TID_RANKED_SUGGESTION,<NAME> запропонував <BRAWLER>
+TID_CLUB_EVENTS_STARTS_IN,Починається за:
+TID_CLUB_EVENTS_ACTIVE_FOR,Активний протягом:
+TID_GAME_MODE_28,МИСЛИВЦІ
+TID_GAME_MODE_28_DESC,"Настав сезон полювання!\n\nЗбирайте очки, вистежуючи та перемагаючи ворогів. ПЕРШИЙ гравець, який набере <MAX_SCORE> очок, виграє матч!"
+TID_DEATHMATCH_FFA_INTRO_TEXT,Знищ ворогів
+TID_NOTIFICATION_DEATHMATCH_FFA,Доступна нова карта МИСЛИВЦІВ! Час вигравати нові нагороди!
+TID_DEATHMATCH_FFA_1,Випробування та негаразди
+TID_DEATHMATCH_FFA_2,Сезон полювання
+TID_DEATHMATCH_FFA_3,Здобич
+TID_DEATHMATCH_FFA_4,Швидкий і Невгамовний
+TID_DEATHMATCH_FFA_5,Звільнення
+TID_DEATHMATCH_FFA_6,Справжній слід
+TID_DEATHMATCH_FFA_7,Омега
+TID_CLUB_EVENTS_CHANGED_CLUB,"Ви можете зробити внесок лише в той клуб, у якому ви розпочали цього тижня.\n\n Зачекайте до наступного тижня, щоб зробити внесок у цей клуб!\in\наступний тиждень починається через: <TIME>"
+TID_CLUB_QUESTS_CURRENT_CLUB_POINTS,"Загальна кількість очок, набраних вашим клубом цього тижня"
+TID_CLUB_QUESTS_THIS_WEEKS_QUESTS,КЛУБНІ КВЕСТИ ЦЬОГО ТИЖНЯ
+TID_SPEC_ABI_ARTILLERY_DUDE_1,ВАЖКІ МОНЕТИ
+TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,Після кожного удару золоті мішечки Пенні лопаються на <c00cc00><VALUE1>%</c> ширшим конусом.
+TID_SPEC_ABI_ARTILLERY_DUDE_2,ВИБУХОВИЙ БЛАСТЕР
+TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Гармата Пенні завдає <c00cc00><VALUE1></c> шкоди та відкидає ворогів поблизу під час приземлення.
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,СОЛОНА БОЧКА
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,"Пенні кидає бочку з сіллю, яка блокує ворожі снаряди. Вона також може використовувати його, щоб розірвати ним власні золоті мішечки."
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,НАДІЙНА ПІДЗОРНА ТРУБА
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2_DESC,Гармата Пенні стріляє по кожній видимій позиції ворога в радіусі.
+TID_RANDOM_GAME_MODE_DESC,"Зіграйте матч із рандомізованого пулу різних ігрових режимів, карт і модифікаторів. Що ви отримаєте - загадка!"
+TID_CLUB_QUESTS_EXPIRED,КВЕСТ ЗАКІНЧИВСЯ
+TID_CLUB_LEAGUE_ACTIVE,ТИЖДЕНЬ ЛІГИ активний
+TID_CLUB_QUESTS_TUTORIAL,"Виконайте 3 клубні квести цього тижня, щоб заробити очки для свого клубу"
+TID_CLUB_QUESTS_YOUR_QUESTS,ВАШІ КЛУБНІ КВЕСТИ ЦЬОГО ТИЖНЯ
+TID_CLUB_QUESTS_NEW_QUESTS,НОВІ КЛУБНІ КВЕСТИ
+TID_CLUB_QUESTS_REWARDS_INCREASED,Ваші максимальні винагороди зросли за Клубні ліги та Клубні завдання
+TID_BRAWLBALL_441,Подвійна небезпека
+TID_BRAWLBALL_442,Зробіть це відскоком
+TID_KNOCKOUT_441,Прихований ворог
+TID_KNOCKOUT_442,На відкритому повітрі
+TID_BANKHEIST_441,Річкові береги
+TID_BANKHEIST_442,Деревоподібна
+TID_GEMGRAB_441,Стакан наполовину повний
+TID_GEMGRAB_442,Подвійність
+TID_BOUNTY_441,Не обертайся
+TID_BOUNTY_442,Пліч-о-пліч
+TID_HOTZONE_441,Тризуб
+TID_HOTZONE_442,Дисбаланс
+TID_SHOWDOWN_441,У коробці
+TID_SHOWDOWN_442,Зменшено
+TID_TRUE_GOLD_FANG_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ ФЕНГ
+TID_TRUE_GOLD_FANG_SKIN_SHOP,СПРАВЖНІЙ ЗОЛОТИЙ\nФЕНГ
+TID_TRUE_SILVER_FANG_SKIN,СПРАВЖНІЙ СРІБНИЙ ФЕНГ
+TID_TRUE_SILVER_FANG_SKIN_SHOP,СПРАВЖНІЙ СРІБНИЙ\nФЕНГ
+TID_TRUE_GOLD_BONNIE_SKIN,СПРАВЖНЯ ЗОЛОТА БОНІ
+TID_TRUE_GOLD_BONNIE_SKIN_SHOP,СПРАВЖНЯ ЗОЛОТА\nБОНІ
+TID_TRUE_SILVER_BONNIE_SKIN,СПРАВЖНЯ СРІБНА БОНІ
+TID_TRUE_SILVER_BONNIE_SKIN_SHOP,СПРАВЖНЯ СРІБНА\nБОНІ
+TID_TRUE_GOLD_JANET_SKIN,СПРАВЖНЯ ЗОЛОТА ДЖАНЕТ
+TID_TRUE_GOLD_JANET_SKIN_SHOP,СПРАВЖНЯ ЗОЛОТА\nДЖАНЕТ
+TID_TRUE_SILVER_JANET_SKIN,СПРАВЖНЯ СРІБНА ДЖАНЕТ
+TID_TRUE_SILVER_JANET_SKIN_SHOP,СПРАВЖНЯ СРІБНА\nДЖАНЕТ
+TID_TRUE_GOLD_GROM_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ ГРОМ
+TID_TRUE_GOLD_GROM_SKIN_SHOP,СПРАВЖНІЙ ЗОЛОТИЙ\nГРОМ
+TID_TRUE_SILVER_GROM_SKIN,СПРАВЖНІЙ СРІБНИЙ ГРОМ
+TID_TRUE_SILVER_GROM_SKIN_SHOP,СПРАВЖНІЙ СРІБНИЙ\nГРОМ
+TID_TRUE_GOLD_EVE_SKIN,СПРАВЖНЯ ЗОЛОТА ІВЕ
+TID_TRUE_GOLD_EVE_SKIN_SHOP,СПРАВЖНЯ ЗОЛОТА\nІВЕ
+TID_TRUE_SILVER_EVE_SKIN,СПРАВЖНЯ СРІБНА ІВЕ
+TID_TRUE_SILVER_EVE_SKIN_SHOP,СПРАВЖНЯ СРІБНА\nІВЕ
+TID_BRAWL_PASS_SEASON_12,ГЛИБОКЕ МОРЕ
+TID_TRIPLE_TAKEDOWN,ПОТРІЙНЕ ЗНИЩЕННЯ!
+TID_QUAD_TAKEDOWN,ЧЕТВЕРТНЕ ЗНИЩЕННЯ!

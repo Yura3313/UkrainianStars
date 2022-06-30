@@ -56,17 +56,21 @@
 .method public abstract a()J
 .end method
 
-.method public final b(Lcom/google/android/play/core/appupdate/e;)Landroid/app/PendingIntent;
+.method public final b(Lcom/google/android/play/core/appupdate/d;)Landroid/app/PendingIntent;
     .locals 3
 
-    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/e;->b()I
+    move-object v0, p1
 
-    move-result v0
+    check-cast v0, Lcom/google/android/play/core/appupdate/o;
+
+    .line 1
+    iget v0, v0, Lcom/google/android/play/core/appupdate/o;->a:I
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_2
 
+    .line 2
     invoke-virtual {p0}, Lcom/google/android/play/core/appupdate/a;->j()Landroid/app/PendingIntent;
 
     move-result-object v0
@@ -80,7 +84,7 @@
     return-object p1
 
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/e;)Z
+    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/d;)Z
 
     move-result p1
 
@@ -96,10 +100,6 @@
     return-object v1
 
     :cond_2
-    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/e;->b()I
-
-    move-result v0
-
     const/4 v2, 0x1
 
     if-ne v0, v2, :cond_4
@@ -117,7 +117,7 @@
     return-object p1
 
     :cond_3
-    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/e;)Z
+    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/d;)Z
 
     move-result p1
 
@@ -139,15 +139,17 @@
 .method public abstract e()J
 .end method
 
-.method public final f(Lcom/google/android/play/core/appupdate/e;)Z
+.method public final f(Lcom/google/android/play/core/appupdate/d;)Z
     .locals 4
 
-    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/e;->a()Z
+    check-cast p1, Lcom/google/android/play/core/appupdate/o;
 
-    move-result p1
+    .line 1
+    iget-boolean p1, p1, Lcom/google/android/play/core/appupdate/o;->b:Z
 
     if-eqz p1, :cond_0
 
+    .line 2
     invoke-virtual {p0}, Lcom/google/android/play/core/appupdate/a;->a()J
 
     move-result-wide v0

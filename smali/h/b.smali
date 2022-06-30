@@ -1,14 +1,14 @@
-.class public Lh/b;
-.super Landroidx/fragment/app/t;
+.class public final Lh/b;
+.super Landroidx/fragment/app/p;
 .source "DefaultTaskExecutor.java"
 
 
 # instance fields
-.field public final g:Ljava/lang/Object;
+.field public final f:Ljava/lang/Object;
 
-.field public final h:Ljava/util/concurrent/ExecutorService;
+.field public final g:Ljava/util/concurrent/ExecutorService;
 
-.field public volatile i:Landroid/os/Handler;
+.field public volatile h:Landroid/os/Handler;
 
 
 # direct methods
@@ -16,19 +16,19 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0}, Landroidx/fragment/app/t;-><init>()V
+    invoke-direct {p0}, Landroidx/fragment/app/p;-><init>()V
 
     .line 2
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lh/b;->g:Ljava/lang/Object;
+    iput-object v0, p0, Lh/b;->f:Ljava/lang/Object;
 
     .line 3
     new-instance v0, Lh/b$a;
 
-    invoke-direct {v0, p0}, Lh/b$a;-><init>(Lh/b;)V
+    invoke-direct {v0}, Lh/b$a;-><init>()V
 
     const/4 v1, 0x4
 
@@ -36,12 +36,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lh/b;->h:Ljava/util/concurrent/ExecutorService;
+    iput-object v0, p0, Lh/b;->g:Ljava/util/concurrent/ExecutorService;
 
     return-void
 .end method
 
-.method public static l(Landroid/os/Looper;)Landroid/os/Handler;
+.method public static j(Landroid/os/Looper;)Landroid/os/Handler;
     .locals 7
 
     .line 1
@@ -130,90 +130,4 @@
     invoke-direct {v0, p0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-object v0
-.end method
-
-
-# virtual methods
-.method public h()Z
-    .locals 2
-
-    .line 1
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/os/Looper;->getThread()Ljava/lang/Thread;
-
-    move-result-object v0
-
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    move-result-object v1
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public k(Ljava/lang/Runnable;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lh/b;->i:Landroid/os/Handler;
-
-    if-nez v0, :cond_1
-
-    .line 2
-    iget-object v0, p0, Lh/b;->g:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 3
-    :try_start_0
-    iget-object v1, p0, Lh/b;->i:Landroid/os/Handler;
-
-    if-nez v1, :cond_0
-
-    .line 4
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lh/b;->l(Landroid/os/Looper;)Landroid/os/Handler;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lh/b;->i:Landroid/os/Handler;
-
-    .line 5
-    :cond_0
-    monitor-exit v0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
-
-    .line 6
-    :cond_1
-    :goto_0
-    iget-object v0, p0, Lh/b;->i:Landroid/os/Handler;
-
-    invoke-virtual {v0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    return-void
 .end method

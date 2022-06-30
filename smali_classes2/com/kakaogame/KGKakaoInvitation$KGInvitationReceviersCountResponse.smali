@@ -39,7 +39,6 @@
 .method private static getEmptyResponse()Lcom/kakaogame/KGKakaoInvitation$KGInvitationReceviersCountResponse;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/kakaogame/KGKakaoInvitation$KGInvitationReceviersCountResponse;
 
     const/4 v1, 0x0
@@ -54,7 +53,6 @@
 .method public getJoinersCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/KGKakaoInvitation$KGInvitationReceviersCountResponse;->joinersCount:I
 
     return v0
@@ -63,7 +61,6 @@
 .method public getTotalReceiversCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/KGKakaoInvitation$KGInvitationReceviersCountResponse;->totalReceiversCount:I
 
     return v0

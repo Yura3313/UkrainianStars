@@ -35,7 +35,6 @@
 .method public constructor <init>(Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGFriendLeaderboard$2;->val$leaderboardId:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/kakaogame/KGFriendLeaderboard$2;->val$callback:Lcom/kakaogame/KGResultCallback;
@@ -104,7 +103,7 @@
     const-string v1, "KGFriendLeaderboard"
 
     .line 3
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 4
     iget-object v0, p0, Lcom/kakaogame/KGFriendLeaderboard$2;->val$callback:Lcom/kakaogame/KGResultCallback;

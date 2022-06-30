@@ -29,7 +29,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -62,7 +61,6 @@
 .method private synthetic lambda$register$0(Lio/sentry/IHub;Lio/sentry/android/core/SentryAndroidOptions;Lio/sentry/android/core/ApplicationNotResponding;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p2}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
     move-result-object p2
@@ -282,7 +280,6 @@
 .method public getANRWatchDog()Lio/sentry/android/core/ANRWatchDog;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/android/core/AnrIntegration;->anrWatchDog:Lio/sentry/android/core/ANRWatchDog;
 
     return-object v0
@@ -320,7 +317,7 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    invoke-virtual {p3}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
+    invoke-virtual {p3}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 

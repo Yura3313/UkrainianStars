@@ -1,53 +1,40 @@
-.class public Lcom/google/android/material/internal/d;
-.super Ljava/lang/Object;
-.source "ManufacturerUtils.java"
+.class public final Lcom/google/android/material/internal/d;
+.super Landroidx/appcompat/view/menu/e;
+.source "NavigationMenu.java"
 
 
 # direct methods
-.method public static a()Z
-    .locals 4
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Landroidx/appcompat/view/menu/e;-><init>(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final addSubMenu(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;
+    .locals 0
 
     .line 1
-    sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
+    invoke-virtual {p0, p1, p2, p3, p4}, Landroidx/appcompat/view/menu/e;->a(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
 
-    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+    move-result-object p1
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "lge"
-
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_1
+    check-cast p1, Landroidx/appcompat/view/menu/g;
 
     .line 2
-    invoke-virtual {v0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+    new-instance p2, Lcom/google/android/material/internal/f;
 
-    move-result-object v0
+    .line 3
+    iget-object p3, p0, Landroidx/appcompat/view/menu/e;->a:Landroid/content/Context;
 
-    const-string v1, "samsung"
+    .line 4
+    invoke-direct {p2, p3, p0, p1}, Lcom/google/android/material/internal/f;-><init>(Landroid/content/Context;Lcom/google/android/material/internal/d;Landroidx/appcompat/view/menu/g;)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 5
+    invoke-virtual {p1, p2}, Landroidx/appcompat/view/menu/g;->o(Landroidx/appcompat/view/menu/l;)V
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 v0, 0x1
-
-    :goto_1
-    return v0
+    return-object p2
 .end method

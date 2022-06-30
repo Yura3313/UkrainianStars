@@ -52,7 +52,7 @@ TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,토큰 <NUM>개를 구매해 다음 티어
 TID_PURCHASE_BRAWL_PASS_TITLE,브롤 패스 구매
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,브롤 패스
 TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,브롤 패스 번들
-TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"브롤 패스 보상, 추가 퀘스트, 및 매주 2개의 추가 리롤 잠금 해제"
+TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"브롤 패스 보상, 추가 퀘스트, 및 매주 <NUM>개의 추가 리롤 잠금 해제"
 TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,브롤 패스 + <NUM> 티어
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,지난 브롤 패스 시즌은 구매할 수 없습니다.
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,현재의 브롤 패스 시즌을 찾을 수 없습니다. 나중에 다시 시도해 주세요.
@@ -69,7 +69,7 @@ TID_LFG_POPUP_INFO_TEAM,현재 팀에 참여할 플레이어 찾기
 TID_LFG_POPUP_EVENT_LABEL_MEMBER,이벤트 기준 (탭하여 변경)
 TID_LFG_POPUP_EVENT_LABEL_TEAM,플레이할 모드(탭하여 변경)
 TID_LFG_POPUP_START_SEARCH,찾기!
-TID_LFG_NO_ROOM_FOR_PLAYERS,더는 플레이어를 수용할 수 없습니다
+TID_LFG_NO_ROOM_FOR_PLAYERS,더 이상의 플레이어를 수용할 수 없는 게임 모드입니다
 TID_LOOKING_FOR_A_TEAM,팀을 찾고 있습니다
 TID_LOOKING_FOR_A_MEMBER,멤버를 찾고 있습니다
 TID_CC_TEASER_TITLE,곧 공개!
@@ -274,7 +274,7 @@ TID_LONG_RANGE_SHOTGUN_DESC,부채꼴로 산탄을 쏴 중거리까지 피해를
 TID_MEGA_BLASH_ULTI,슈퍼 쉘
 TID_MEGA_BLASH_ULTI_DESC,쉘리의 슈퍼 쉘은 적을 지형물과 함께 깔끔히 날려버립니다. 살아남은 적은 뒤로 밀려납니다.
 TID_GUNSLINGER,콜트
-TID_GUNSLINGER_DESC,양손의 리볼버를 연발합니다. 특수 공격으로 지형물을 산산조각내고 더 먼 거리까지 피해를 줄 수 있습니다!
+TID_GUNSLINGER_DESC,가끔 중요한 순간에 엉뚱한 곳에서 출현하는 조금은 어설픈 영웅입니다. 취미가 거울 보기라던데... 자신감 하나는 기막히네요!
 TID_RAPID_FIRE,6연발 리볼버
 TID_RAPID_FIRE_DESC,일직선으로 6발을 연속으로 발사합니다.
 TID_RAPID_FIRE_ULTI,불렛 스톰
@@ -286,13 +286,13 @@ TID_SHOTGUN_BLAST_DESC,"불의 이중총열 산탄총은 큰 피해를 줄 수 �
 TID_CHARGE,불도저
 TID_CHARGE_DESC,불도저처럼 빠르게 돌진해 적과 지형물을 밀어버립니다. 장애물 뒤에 숨어도 안전하지 않습니다!
 TID_ROCKET_GIRL,브록
-TID_ROCKET_GIRL_DESC,장거리 폭발 로켓을 발사합니다. 특수 공격으로 지형물을 제거하는 로켓을 집중 포화합니다!
+TID_ROCKET_GIRL_DESC,로켓포로 전투에 열기를 더합니다. 전투가 없을 땐 유연한 몸놀림을 자랑하는 춤꾼으로 변신해 무대를 뒤집어 놓곤 하죠.
 TID_FIREWORKS_WEAPON,락 앤 로켓
 TID_FIREWORKS_WEAPON_DESC,아주 먼 거리까지 날아가는 단발식 로켓포를 발사합니다.
 TID_FIREWORKS_ULTI,로켓 레인
 TID_FIREWORKS_ULTI_DESC,적과 지형물을 제거하는 로켓을 퍼부어 집중포화에 허우적대는 상대의 모습을 보며 뿌듯해 합니다.
 TID_TNT_DUDE,다이너마이크
-TID_TNT_DUDE_DESC,다이너마이트 두 개를 던집니다. 특수 공격으로 다이너마이트가 가득 찬 통을 던져 지형물까지 파괴합니다!
+TID_TNT_DUDE_DESC,깊숙한 광산 속으로 자취를 감췄던 다이너마이크가 돌아왔습니다. 그동안 참아왔던 폭발 본능을 깨워낼 참입니다!
 TID_MORTAR,다이너마이트 투척
 TID_MORTAR_DESC,경로상의 모든 지형물을 무시하며 날아가는 다이너마이트 두 개를 투척합니다. 참을성 없는 다이너마이크는 도화선도 짧게 잘라놨습니다!
 TID_MORTAR_ULTI,빅 배럴 붐
@@ -316,7 +316,7 @@ TID_CACTUS_WEAPON_DESC,폭발할 때 사방으로 가시가 튀어나오는 작�
 TID_CACTUS_ULTI,선인장 파티
 TID_CACTUS_ULTI_DESC,스파이크가 던진 가시 수류탄이 터지면서 폭발 범위 안의 적에게 피해를 주고 느리게 만듭니다.
 TID_BARKEEP,발리
-TID_BARKEEP_DESC,적에게 병을 투척해 광역 피해를 줍니다. 특수 공격으로 병을 던져 불바다를 만듭니다!
+TID_BARKEEP_DESC,"스타 파크에서 가장 맛 좋은 음료를 찾고 있다면 발리를 찾으세요. 단, 발리의 바를 어지럽히지 않도록 조심해야 합니다. 어딘가에서 병이 날아올지도 몰라요!"
 TID_BARKEEP_WEAPON,병 투척
 TID_BARKEEP_WEAPON_DESC,"발리가 던진 병이 깨지면서 적에게 피해를 주고, 쏟아져 나온 내용물 위에 서 있는 적에게 지속 피해를 줍니다."
 TID_BARKEEP_ULTI,라스트 콜
@@ -340,7 +340,7 @@ TID_UNDERTAKER_WEAPON_DESC,전방으로 돌진하며 삽을 휘두릅니다. 세
 TID_UNDERTAKER_ULTI,피의 축제
 TID_UNDERTAKER_ULTI_DESC,흡혈박쥐 떼를 불러내서 적 브롤러의 HP를 흡수해 자신의 HP를 회복합니다. 으스스하네요!
 TID_CROW,크로우
-TID_CROW_DESC,독이 묻은 단검 세 개를 던집니다. 특수 공격으로 점프하고 착지할 때 여러 개의 단검을 던집니다!
+TID_CROW_DESC,어느 날 갑자기 마을에 나타난 수수께끼의 생명체입니다. 웬만하면 크로우의 심기를 건드리지 않는 게 좋을 겁니다.
 TID_CROW_WEAPON,독 단검
 TID_CROW_WEAPON_DESC,"치명적인 단검 세 개를 던집니다. 독이 묻은 칼날에 베인 적은 일정 시간 동안 지속 피해를 입으며, 받는 모든 치유 효과가 감소합니다."
 TID_CROW_ULTI,공중 단검 투척
@@ -376,7 +376,7 @@ TID_BONE_THROWER_WEAPON_DESC,미니거너는 기관총을 자유자재로 다룹
 TID_BONE_THROWER_ULTI,밴드 디스펜서
 TID_BONE_THROWER_ULTI_DESC,치열한 총격전에서 부상을 입을 수 있습니다. 밴드 디스펜서로 전체 팀의 전투 상태를 최상으로 유지하세요!
 TID_BLACK_HOLE,타라
-TID_BLACK_HOLE_DESC,적을 관통하는 타로 카드 3장을 날립니다. 특수 공격으로 중력장을 생성해 가까이 있는 적을 끌어들여 피해를 줍니다!
+TID_BLACK_HOLE_DESC,"먼 땅에서 온 신비의 타라에게 타로 점을 보시지 않을래요? 어, 점괘가 나왔네요. 패배!"
 TID_BLACK_HOLE_WEAPON,트리플 타로
 TID_BLACK_HOLE_WEAPON_DESC,타라가 손목을 한번 까딱해 적을 관통하는 타로 카드 3장을 날립니다! 엄청난 기술이죠!
 TID_BLACK_HOLE_ULTI,중력장
@@ -670,11 +670,11 @@ TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,"크로마틱 브롤러의 획득 확률은 브롤 패스 시즌이 끝날 때마다 증가합니다. 처음에는 전설 브롤러와 동일하며, 신화 브롤러를 거쳐 최종적으로 영웅 브롤러 획득 확률까지 증가합니다.\n\n이번 시즌 <BRAWLER>의 획득 확률은 <RARITY> 획득 확률과 동일합니다."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"크로마틱 브롤러의 획득 확률은 브롤 패스 시즌이 끝날 때마다 증가합니다. 처음에는 전설 브롤러와 동일하며, 신화 브롤러를 거쳐 최종적으로 영웅 브롤러 획득 확률까지 증가합니다.\n\n시즌 <SEASON>의 티어 <TIER>에 도달해야 상자에서 <BRAWLER> 브롤러를 획득할 수 있습니다."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"크로마틱 브롤러의 획득 확률은 브롤 패스 시즌이 끝날 때마다 증가합니다. 처음에는 전설 브롤러와 동일하며, 신화 브롤러를 거쳐 최종적으로 영웅 브롤러 획득 확률까지 증가합니다.\n\n해당 브롤러(<BRAWLER>)는 시즌 <SEASON>에 공개됩니다!"
-TID_MATCHMAKE_FAILED_5,매치메이킹 실패: 이벤트가 만료되었습니다.
-TID_MATCHMAKE_FAILED_7,매치메이킹 실패: 팀 멤버의 연결이 끊어졌습니다.
-TID_MATCHMAKE_FAILED_9,매치메이킹 실패: 곧 점검이 시작됩니다.
-TID_MATCHMAKE_FAILED_11,매치메이킹 실패: 팀원이 매치메이킹을 떠났습니다.
-TID_MATCHMAKE_FAILED_12,매치메이킹 실패: 마지막 보스를 이미 처치했습니다.
+TID_MATCHMAKE_FAILED_5,매치메이킹 실패: 이벤트가 만료되었습니다
+TID_MATCHMAKE_FAILED_7,매치메이킹 실패: 팀원의 연결이 끊어졌습니다
+TID_MATCHMAKE_FAILED_9,매치메이킹 실패: 곧 점검이 시작됩니다
+TID_MATCHMAKE_FAILED_11,매치메이킹 실패: 팀원이 매치메이킹을 떠났습니다
+TID_MATCHMAKE_FAILED_12,매치메이킹 실패: 최종 보스를 이미 처치했습니다
 TID_MATCHMAKE_FAILED_14,파워 플레이는 스타 파워를 보유한 브롤러만 참가할 수 있습니다.
 TID_MATCHMAKE_FAILED_15,오늘은 더는 파워 플레이에 참가할 수 없습니다.
 TID_MATCHMAKE_FAILED_19,선택된 브롤러는 이번 시즌의 파워 플레이와 챌린지에서 제외되었습니다
@@ -717,7 +717,7 @@ TID_SKIN_REWARD_INFO_0,브롤스타즈 지원팀에서 스킨 선물을 보냈�
 TID_SKIN_REWARD_TITLE_3,지원팀에서 보낸 메시지
 TID_SKIN_REWARD_INFO_3,브롤스타즈 지원팀에서 스킨 선물을 보냈습니다.
 TID_REWARD_TITLE,지원팀에서 보낸 메시지
-TID_REWARD_INFO,아직 받지 않은 선물이 있습니다.
+TID_REWARD_INFO,아직 수령하지 않은 선물이 있습니다
 TID_REWARD_INFO_RESOURCE_FIRSTWINS,스타 토큰 <AMOUNT>개 받음
 TID_REWARD_INFO_RESOURCE_GOLD,토큰 <AMOUNT>개 받음
 TID_REWARD_INFO_RESOURCE_LEGENDARYTROPHIES,스타 포인트 <AMOUNT>점 획득
@@ -912,7 +912,7 @@ TID_CLAN_MEMBER_ONLINE_STATUS_OFFLINE_LONG,마지막 접속:\n<cf7f7f7>1달 이�
 TID_CLAN_MEMBER_ONLINE_STATUS_1,<cff1e00>전투 중</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_2,<cffffff>메뉴 화면</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_3,<cffffff>메뉴 화면</c>
-TID_CLAN_MEMBER_ONLINE_STATUS_4,<cff1e00>매치메이킹</c>
+TID_CLAN_MEMBER_ONLINE_STATUS_4,<cff1e00>매치메이킹 중</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_5,<cffffff>메뉴 화면</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_7,<cff1e00>관전 중</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_8,<cff1e00>연습 중</c>
@@ -1115,7 +1115,7 @@ TID_TEAM_MEMBER_STATUS_0,<c999999>오프라인</c>
 TID_TEAM_MEMBER_STATUS_1,<cff1e00>전투 중</c>
 TID_TEAM_MEMBER_STATUS_2,<c006cff>자리 비움</c>
 TID_TEAM_MEMBER_STATUS_3,<c999999>준비 중</c>
-TID_TEAM_MEMBER_STATUS_4,<cff1e00>매치메이킹 화면</c>
+TID_TEAM_MEMBER_STATUS_4,<cff1e00>매치메이킹 중</c>
 TID_TEAM_MEMBER_STATUS_5,<cff1e00>결과 화면</c>
 TID_TEAM_MEMBER_STATUS_6,<c999999>오프라인</c>
 TID_TEAM_MEMBER_STATUS_7,<cff1e00>관전 중</c>
@@ -1146,8 +1146,8 @@ TID_STREAM_EVENT_101,<sender> 님이 팀을 생성했습니다!
 TID_STREAM_EVENT_102,<sender> 님이 참가했습니다!
 TID_STREAM_EVENT_103,<sender> 님이 나갔습니다!
 TID_STREAM_EVENT_104,잘 가요! <sender> 님이 <target> 님을 추방했습니다!
-TID_STREAM_EVENT_105,매치메이킹 시작
-TID_STREAM_EVENT_106,매치메이킹 취소
+TID_STREAM_EVENT_105,매치메이킹이 시작되었습니다
+TID_STREAM_EVENT_106,매치메이킹이 취소되었습니다
 TID_STREAM_EVENT_107,전투 시작
 TID_STREAM_EVENT_108,전투 승리
 TID_STREAM_EVENT_109,전투 패배
@@ -1338,7 +1338,7 @@ TID_SHOP_HERO_PURCHASE_CONFIRM_LABEL,신규 브롤러
 TID_GATCHA_BOX_INFO_2,"새 브롤러, 가젯, 스타 파워, 코인 및 브롤러 2명의 PP가 포함되어 있습니다. 일부 상자에는 보너스 토큰 더블러가 들어있습니다!"
 TID_GATCHA_BOX_INFO_3,\n\n일반 브롤 상자의 <AMOUNT>배 크기
 TID_SHOP_OFFER_INFO_0,무료입니다!
-TID_SHOP_OFFER_INFO_1,코인 <AMOUNT>개.\n브롤러 업그레이드에 사용하세요!
+TID_SHOP_OFFER_INFO_1,코인 <AMOUNT>개가 들어있어요.\n브롤러 업그레이드에 사용하세요!
 TID_SHOP_OFFER_INFO_2,무작위 <RARITY> 브롤러를 잠금 해제하세요!
 TID_SHOP_OFFER_INFO_3,새 브롤러를 잠금 해제하세요!
 TID_SHOP_OFFER_INFO_6,"브롤 상자에는 브롤러, PP, 코인 등이 들어 있습니다!"
@@ -1625,11 +1625,11 @@ TID_BARREL_BOT_WEAPON_DESC,이중총열 산탄총 2정을 연발해 근거리에
 TID_BARREL_BOT_ULTI,롤링 배럴
 TID_BARREL_BOT_ULTI_DESC,"통으로 들어간 대릴이 데굴데굴 굴러가며 적을 넘어뜨리고, 받는 피해량을 줄이며 벽에 튕겨 나옵니다. 특수 공격은 시간이 지나면 충전됩니다!"
 TID_ARTILLERY_DUDE,페니
-TID_ARTILLERY_DUDE_DESC,"금화가 가득한 주머니를 쏴 적에게 피해를 주고, 그 뒤에 있던 적들에게도 피해를 줍니다. 특수 공격으로 대포를 설치합니다!"
+TID_ARTILLERY_DUDE_DESC,바다를 휘젓고 다니는 장난기 가득한 반항아 페니! 보물을 위해서라면 위험한 일도 마다하지 않는 진정한 모험가입니다.
 TID_ARTILLERY_DUDE_WEAPON,주머니 투척
 TID_ARTILLERY_DUDE_WEAPON_DESC,가짜 금화가 가득한 주머니를 쏩니다. 주머니가 적에게 적중하면 안에 있던 금화가 터져 나오며 적중한 적 뒤에 숨어있던 적들에게도 피해를 줍니다.
 TID_ARTILLERY_DUDE_ULTI,낡은 대포
-TID_ARTILLERY_DUDE_ULTI_DESC,대포를 설치해 멀리 있는 적을 공격합니다. 지형물 뒤에 숨은 적도 공격할 수 있습니다!
+TID_ARTILLERY_DUDE_ULTI_DESC,대포를 설치해 멀리 있는 적을 공격합니다. 탄착 지점은 불길에 휩싸이게 됩니다.
 TID_ITEM_NAME_SPECIAL,스타 파워
 TID_HERO_INFO_ITEM_LOCKED,<LEVEL>레벨 이후 잠금 해제할 수 있습니다.
 TID_HERO_INFO_LOCKED_INFO,브롤 상자에서\n잠금 해제하세요!
@@ -2166,7 +2166,7 @@ TID_TEAM_MEMBER_STATUS_NEW_0,<c999999>오프라인</c>
 TID_TEAM_MEMBER_STATUS_NEW_1,전투 중
 TID_TEAM_MEMBER_STATUS_NEW_2,자리 비움
 TID_TEAM_MEMBER_STATUS_NEW_3,<EMPTY>
-TID_TEAM_MEMBER_STATUS_NEW_4,매치메이킹
+TID_TEAM_MEMBER_STATUS_NEW_4,매치메이킹 중
 TID_TEAM_MEMBER_STATUS_NEW_5,결과 화면
 TID_TEAM_MEMBER_STATUS_NEW_6,<c999999>오프라인</c>
 TID_TEAM_MEMBER_STATUS_NEW_7,관전 중
@@ -2985,7 +2985,7 @@ TID_SETTINGS_BLOCK_FRIEND_REQUESTS,친구 요청 차단
 TID_SPAWNER_DUDE,미스터 P
 TID_BEE_SNIPER,비
 TID_BEE_SNIPER_SHORT_DESC,대미지 딜러
-TID_BEE_SNIPER_DESC,"비는 꿀과 꽃을 좋아합니다. 당연한가요? 사거리 내의 적에게 기계 드론을 쏘며, 특수 공격으로 성난 벌떼를 내보냅니다!"
+TID_BEE_SNIPER_DESC,"비는 꿀과 꽃을 좋아합니다. 사거리 내의 적에게 기계 드론을 쏘며, 특수 공격으로 성난 벌떼를 내보냅니다!"
 TID_BEE_SNIPER_WEAPON,거대 벌침
 TID_BEE_SNIPER_WEAPON_DESC,장거리에서 벌침을 발사합니다. 벌침이 적중할 경우 힘을 충전한 뒤 다음 공격으로 엄청난 피해를 줍니다!
 TID_BEE_SNIPER_ULTI,강철 벌떼
@@ -3281,7 +3281,7 @@ TID_NOTIFICATION_LONE_STAR,신규 론 스타 맵 플레이 가능! 새 보상을
 TID_NOTIFICATION_CTF,신규 선물 훔치기 플레이 가능! 새 보상을 획득할 시간입니다!
 TID_NOTIFICATION_KING_OF_HILL,신규 핫 존 맵 플레이 가능! 새 보상을 획득할 시간입니다!
 TID_NOTIFICATION_TOWN_CRUSHER,보스전이 돌아왔습니다! 어디까지 갈 수 있을까요?
-TID_NOTIFICATION_MULTIPLE_MODES,신규 맵 <PARAM>개 오픈! 신규 보상을 획득하세요!
+TID_NOTIFICATION_MULTIPLE_MODES,신규 맵 <PARAM>개 오픈! 새 보상을 획득하세요!
 TID_NOTIFICATION_CLUB_LEAGUE_EVENT_DAY_STARTED,신규 클럽 리그 이벤트 일이 시작되었습니다. 지금 플레이하세요!
 TID_FREE_BOX_AVAILABLE_0,무료 보상이 기다리고 있습니다!
 TID_FREE_BOX_AVAILABLE_1,지금 무료 보상을 획득하세요!
@@ -3338,6 +3338,8 @@ TID_ACCESSORY_BLOCKED_SUPER_REQUIRED,특수 공격을 충전하세요!
 TID_ACCESSORY_BLOCKED_REQUIRES_MECHA,메카 모드여야 합니다!
 TID_ACCESSORY_BLOCKED_REQUIRES_DUPLICATE,롤라의 분신이 필요합니다!
 TID_ACCESSORY_BLOCKED_DUPLICATE_TOO_FAR,롤라의 분신이 너무 멀리 있습니다!
+TID_ACCESSORY_BLOCKED_SILENCED,사용 불가!
+TID_ACCESSORY_BLOCKED_RANGE_TO_TURRET,사정거리 내에 적이 없습니다!
 TID_WALLY_SHORT_DESC,서포터
 TID_WALLY_DESC,"황무지에서 식물을 재배하기 위해 만들어진 스프라우트는 튕겨 다니는 씨앗 폭탄을 던지고, 특수 공격으로 덩굴 장애물을 생성합니다!"
 TID_WALLY_WEAPON,씨앗 폭탄
@@ -3868,13 +3870,13 @@ TID_KING_OF_HILL_28,웅장한 지배력
 TID_EMOTE_EQUIP_NOT_OWNED_SPECIAL,해당 컬렉터 핀은 일반적인 방법으로 구할 수 없습니다!
 TID_LOGIN_WITH_FACEBOOK,Facebook\n로그인
 TID_TERMS_OF_SERVICE_BUTTON_TENCENT,Tencent Games 라이센스 및 서비스 동의
-TID_PRIVACY_POLICY_BUTTON_TENCENT,Tencent Games 개인정보 보호 가이드라인
+TID_PRIVACY_POLICY_BUTTON_TENCENT,荒野乱斗隐私保护指引
 TID_PARENTS_GUIDE_BUTTON_TENCENT,Tencent Games 미성년자 개인정보 보호 가이드라인
 TID_TENCENT_LOGIN_AGREEMENTS,"<TOS>, <PP>, <CHILDREN>, 및 <THIRDPARTY>의 내용을 주의 깊게 읽었으며 이에 동의합니다."
 TID_THIRD_PARTY_SHARING_BUTTON_TENCENT,제3자 정보 공유 목록
 TID_TENCENT_THIRDPARTY_INFO,제3자 정보 공유 목록
 TID_TENCENT_LOGIN_TOS,Tencent Games 라이센스 및 서비스 동의
-TID_TENCENT_LOGIN_PP,Tencent Games 개인정보 보호 가이드라인
+TID_TENCENT_LOGIN_PP,荒野乱斗隐私保护指引
 TID_TENCENT_LOGIN_CHILDREN,Tencent Games 미성년자 개인정보 보호 가이드라인
 TID_TENCENT_LOGIN_AGREEMENT_NOTE,"게임에 접속하기 전에\n<TOS>,\n<PP>,\n<CHILDREN>, 및\n<THIRDPARTY>의 내용을\n주의 깊게 읽고 이에 동의해야 합니다."
 TID_KING_OF_HILL_29,파워 서지
@@ -3995,12 +3997,19 @@ TID_TENCENT_LOGIN_AGREEMENT_POPUP_2_TITLE,중요 공지
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_2,"게임에 접속하기 전 반드시\n<TOS>,\n<PP>,\n<CHILDREN>, 및\n<THIRDPARTY>의 내용을\n주의 깊게 읽고 이에 동의해야 합니다."
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_BACK,뒤로
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_NO,아니요
+TID_TENCENT_LOGIN_BS_PP,荒野乱斗隐私保护指引
+TID_TENCENT_LOGIN_SPECIAL_TOS,《腾讯游戏许可及服务协议》
+TID_TENCENT_LOGIN_SPECIAL_OLD_PP,《腾讯游戏隐私保护指引》
+TID_TENCENT_LOGIN_SPECIAL_BS_PP,《荒野乱斗隐私保护指引》
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1_TITLE,更新提示
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1,尊敬的腾讯游戏用户：\n为充分保障您的权利及个人信息安全，我们根据法律法规要求，\n对<OLDPP>进行了更新。我们结合本产品和业务实际，更详细、具体地向您说明我们收集和使用您个人信息的业务场景及目的，具体可参见<PP>内更新提示。\n您也可以阅读完整版\n<PP>和<TOS>\n了解详尽的个人信息处理规则和用户权利义务。如您已详细阅读并同意\n<TOS>和<PP>，\n请点击\q同意\q继续使用我们的服务。
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_2,尊敬的用户，您需要详细阅读并同意\n<TOS>、<PP>、\n<CHILDREN>和<THIRDPARTY>，\n才可进入游戏哦。
 TID_BRAWL_PASS_SEASON_2,스타 파크에 오신 걸 환영합니다!
 TID_BRAWL_PASS_INFO_TEXT_2,엄청난 추가 보상!\n\n신규 크로마틱 희귀도 브롤러: <BRAWLER>!\n\n한정판 스킨: <SKIN_1>!\n\n한정판 스킨: <SKIN_2>!\n\n한정판 핀: <BRAWLER>!\n\n메가 박스 <NUM>개!\n\n추가 코인 및 PP\n\n추가 퀘스트로 브롤 패스를 더 빠르게 완료!\n\n시즌 내내 전용 크로마틱 이름 색상 이용 가능!
 TID_BRAWL_PASS_SEASON_3,연말 휴가
 TID_BRAWL_PASS_INFO_TEXT_3,엄청난 추가 보상!\n\n신규 크로마틱 희귀도 브롤러: <BRAWLER>!\n\n한정판 스킨: <SKIN_1>!\n\n한정판 스킨: <SKIN_2>!\n\n한정판 핀: <BRAWLER>!\n\n메가 박스 <NUM>개!\n\n추가 코인 및 PP!\n\n추가 퀘스트로 브롤 패스를 더 빠르게 완료!\n\n시즌 내내 전용 크로마틱 이름 색상 이용 가능!
 TID_BRAWL_PASS_SEASON_4,스타 포스!
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,엄청난 추가 보상!\n\n<BRAWLER>- 신규 크로마틱 브롤러!\n\n기간 한정판 스킨: <SKIN_1>!\n\n기간 한정판 스킨: <SKIN_2>!\n\n기간 한정판 <BRAWLER> 핀\n\n기간 한정판 스프레이\n\n<NUM> 메가 상자!\n\n추가 코인 및 PP!\n\n\n추가 퀘스트로 브롤 패스를 더 빠르게 완료!\n\n<NUM> 매주 추가 퀘스트 리롤\n\n시즌 내내 전용 크로마틱 이름 이용 가능!
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,엄청난 추가 보상!\n\n<BRAWLER>- 신규 크로마틱 브롤러!\n\n기간 한정판 스킨: <SKIN_1>!\n\n기간 한정판 스킨: <SKIN_2>!\n\n기간 한정판 <BRAWLER> 핀\n\n기간 한정판 스프레이\n\n메가 상자 <NUM_BOX>개!\n\n추가 코인 및 PP!\n\n추가 퀘스트로 브롤 패스를 더 빠르게 완료!\n\n매주 <NUM_REROLL>개의 추가 퀘스트 리롤\n\n시즌 내내 전용 크로마틱 이름 이용 가능!
 TID_QUESTS_MORE,모든 퀘스트 보기
 TID_QUESTS_MORE_NEXT_SEASON,시즌 <THIS_SEASON> 퀘스트를 모두 완료했습니다. 시즌 <NEXT_SEASON> 시작 시 새로운 퀘스트를 받을 수 있습니다.
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,시즌 <NUM> 보상
@@ -4417,7 +4426,7 @@ TID_ACCESSORY_SNAKE_OIL_HEAL,활력소
 TID_ACCESSORY_SNAKE_OIL_HEAL_DESC,자신의 탄환 중 하나를 사용해 <c00cc00><VALUE2></c>초 동안 초당 <c00cc00><VALUE1></c>만큼 자기 자신을 치유합니다.
 TID_ENRAGER,에드거
 TID_ENRAGER_SHORT_DESC,어쌔신
-TID_ENRAGER_DESC,까칠하고 남들과 적당한 거리를 유지는 에드거는 목도리로 재빠르게 펀치를 날립니다. 특수 공격으로 목도리를 휘두르며 전투에 뛰어듭니다.
+TID_ENRAGER_DESC,웬지 다가가기 어려운 까칠한 성격의 소유자입니다. 목도리를 사용해 재빠르게 펀치를 날립니다. 특수 공격을 사용하면 누구보다 빠르게 목표로 뛰어들 수 있어요.
 TID_ENRAGER_WEAPON,파이트 클럽
 TID_ENRAGER_WEAPON_DESC,"적에게 재빠른 펀치를 날려 피해를 주고, 펀치가 적중할 때마다 자기 자신을 치유합니다."
 TID_ENRAGER_ULTI,스피드 볼트
@@ -4475,7 +4484,7 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,브롤리데이 핀
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,중요 공지
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"맵 메이커를 이용해주셔서 감사합니다. 맵 메이커 기능 이용 시 Tencent Games 라이센스 및 서비스 동의 및 기타 관련 규정을 준수해 주시길 바랍니다. 선정적, 외설적, 또는 국가 통합, 주권 및 영토 무결성을 위협하거나 법률 및 기타 규정을 위반하는 부적절한 콘텐츠를 제작하거나 유포하지 마십시오."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"맵 메이커를 이용해주셔서 감사합니다. 맵 메이커 기능 이용 시 이용 약관 및 기타 관련 규정을 준수해 주시길 바랍니다. 선정적, 외설적, 또는 국가 통합, 주권 및 영토 무결성을 위협하거나 법률 및 기타 규정을 위반하는 부적절한 콘텐츠를 제작하거나 유포하지 마십시오."
-TID_RUFFS,러프스 대령
+TID_RUFFS,러프스\n대령
 TID_RUFFS_SHORT_DESC,서포터
 TID_RUFFS_DESC,벽에 튕겨 나오는 트윈 레이저를 발사합니다. 특수 공격으로 보급품을 투하해 투하 위치의 상대에게 피해를 주고 아군이 사용할 수 있는 파워업을 생성합니다.
 TID_RUFFS_WEAPON,트윈 레이저
@@ -4649,7 +4658,7 @@ TID_RANKED_CLUB_LEAGUE_EVENT_LOCATION_INFO,랜덤 게임 모드 및 맵
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_1,팀을 구성하거나 나와 비슷한 레벨의 다른 플레이어와 3대3 전투에서 대결하세요.
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_2,두 번의 전투에 먼저 승리한 팀이 매치에서 승리합니다.
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_3,게임 모드 및 맵은 무작위로 자주 변경됩니다. 단단히 준비하세요!
-TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,시즌이 끝나면 사용한 티켓 수와 클럽의 시즌 랭킹에 따라 보상을 받습니다.
+TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,한 주가 끝나면 사용한 티켓 수와 클럽의 시즌 순위에 따라 보상을 받습니다.
 TID_RANKED_EVENT_SEASON_REWARDS_BUTTON,시즌 보상
 TID_RANKED_EVENT_SOLO,파워 리그
 TID_RANKED_EVENT_TEAMS,파워 리그
@@ -4742,6 +4751,7 @@ TID_RANKED_PICK_ERROR_BRAWLER_BANNED,해당 브롤러가 이미 금지되었습�
 TID_RANKED_PICK_ERROR_BRAWLER_PICKED,해당 브롤러가 이미 선택되었습니다. 다른 브롤러를 선택하세요!
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED,아직 파워 리그에서 해당 브롤러를 사용할 수 없습니다! 다른 브롤러를 선택하세요!
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED_CLUB_LEAGUE,이 브롤러는 아직 파워 매치에서 이용할 수 없습니다. 다른 브롤러를 선택하세요!
+TID_RANKED_ERROR_BRAWLER_BLACKLISTED,토너먼트 주최측에서 사용 금지한 브롤러입니다
 TID_RANKED_HERO_POWER,Power <NUM>
 TID_RANKED_REWARD_POPUP_SEASON,시즌 <SEASON>
 TID_RANKED_REWARDS_TOOL_TIP,파워 리그는 2개의 3대3 모드로 플레이합니다.\n\n- 솔로 모드: 자신의 리그 레벨과 비슷한 2명의 무작위 플레이어와 함께 플레이\n\n- 팀 모드: 3명으로 구성된 팀을 생성해 플레이\n\n파워 리그 보상은 해당 시즌 동안 각 모드에서 달성한 가장 높은 랭크에 따라 결정됩니다.
@@ -4789,6 +4799,8 @@ TID_RANKED_MATCH_TERMINATED_REASON_1,매치 종료: <NAME> 연결 끊김
 TID_RANKED_MATCH_TERMINATED_REASON_2,매치 종료: <NAME> 응답 없음
 TID_RANKED_MATCH_TERMINATED_REASON_3,매치 종료: 시즌 종료됨
 TID_RANKED_MATCH_TERMINATED_REASON_4,매치 종료(<CODE>). 다시 시도해 주세요.
+TID_RANKED_MATCH_TERMINATED_REASON_5,매치 종료: 매치가 너무 깁니다.
+TID_RANKED_MATCH_TERMINATED_REASON_6,매치 종료: 전투가 너무 깁니다.
 TID_RANKED_GOAL_REWARD_PURCHASE_OPTION_SKIN,한정판 스킨\n구매 옵션
 TID_RANKED_MATCH_TERMINATED_NAME_PLAYER,플레이어
 TID_RANKED2_CONFIRM_PICKED,선택됨
@@ -4985,7 +4997,7 @@ TID_UNIVERSITARIO_PRIMO_SKIN_SHOP,엘 프리모\n우니베르시타리오
 TID_NACIONAL_PRIMO_SKIN_SHOP,엘 프리모\n클루브 나시오날
 TID_CORINTHIANS_PRIMO_SKIN_SHOP,엘 프리모\n코린치앙스
 TID_BOCA_SHELLY_SKIN_SHOP,보카 주니어스 쉘리
-TID_AMERICA_SHELLY_SKIN_SHOP,아메리카\n쉘리
+TID_AMERICA_SHELLY_SKIN_SHOP,아메리카 쉘리
 TID_UDC_SHELLY_SKIN_SHOP,우니베르시다드\n쉘리
 TID_RIVER_PLATE_COLT_SKIN_SHOP,리버 플레이트\n콜트
 TID_CERRO_PORTENO_COLT_SKIN_SHOP,세로 포르테뇨\n콜트
@@ -5194,7 +5206,7 @@ TID_WIZARD_BYRON_SKIN_SHOP,마법사 바이런
 TID_PRINCESS_SHELLY_SKIN,공주 쉘리
 TID_PRINCESS_SHELLY_SKIN_SHOP,공주 쉘리
 TID_UNICORN_KNIGHT_BARLEY_SKIN,유니콘 기사 발리
-TID_UNICORN_KNIGHT_BARLEY_SKIN_SHOP,유니콘 기사\n발리
+TID_UNICORN_KNIGHT_BARLEY_SKIN_SHOP,유니콘 기사 발리
 TID_EVIL_QUEEN_PAM_SKIN,사악한 여왕 팸
 TID_EVIL_QUEEN_PAM_SKIN_SHOP,사악한 여왕 팸
 TID_BRAWL_PASS_SEASON_7,아주 먼 옛날 브롤 동화
@@ -5211,7 +5223,7 @@ TID_TRUE_GOLD_BEA_SKIN,트루 골드 비
 TID_TRUE_SILVER_BEA_SKIN_SHOP,트루 실버 비
 TID_TRUE_GOLD_BEA_SKIN_SHOP,트루 골드 비
 TID_LUNAR_PIPER_SKIN,달의 선녀 파이퍼
-TID_LUNAR_PIPER_SKIN_SHOP,달의 선녀\n파이퍼
+TID_LUNAR_PIPER_SKIN_SHOP,달의 선녀 파이퍼
 TID_HANDSOME_COLT_SKIN,핸섬맨 콜트
 TID_HANDSOME_COLT_SKIN_SHOP,핸섬맨 콜트
 TID_CHAT_BUBBLE_ELLIPSIS,. . .
@@ -5242,7 +5254,7 @@ TID_EMOTE_BUNDLE_RETRO_PACK,레트로폴리스 핀
 TID_SKIN_INFO_CAMPAIGN_RETRO,레트로폴리스 스킨
 TID_SKIN_INFO_CAMPAIGN_RETRO_TITLE,백 투 더 레트로폴리스
 TID_RETRO_SKINS_INFO,스킨 세트
-TID_EMOTE_SKINS_PACK_REWARD,이 세트의 모든 스킨을 보유하고 한정판 핀 팩을 획득할 수 있습니다!
+TID_EMOTE_SKINS_PACK_REWARD,이 세트의 모든 스킨을 보유하면 한정판 핀 팩을 획득할 수 있습니다!
 TID_RANDOM_SKIN_SWITCH_TITLE,랜덤 스킨
 TID_SKIN_GROUP_POPUP_BP,브롤 패스 한정판 스킨
 TID_SKIN_GROUP_POPUP_CHALLENGE,챌린지에서 스킨을 획득하세요!
@@ -5317,8 +5329,8 @@ TID_TRUE_SILVER_MAX_SKIN_SHOP,트루 실버 맥스
 TID_TRUE_GOLD_MAX_SKIN_SHOP,트루 골드 맥스
 TID_TRUE_SILVER_PAM_SKIN,트루 실버 팸
 TID_TRUE_GOLD_PAM_SKIN,트루 골드 팸
-TID_TRUE_SILVER_8-BIT_SKIN_SHOP,트루 실버\n8비트
-TID_TRUE_GOLD_8-BIT_SKIN_SHOP,트루 골드\n8비트
+TID_TRUE_SILVER_8-BIT_SKIN_SHOP,트루 실버 8비트
+TID_TRUE_GOLD_8-BIT_SKIN_SHOP,트루 골드 8비트
 TID_TRUE_SILVER_8-BIT_SKIN,트루 실버 8비트
 TID_TRUE_GOLD_8-BIT_SKIN,트루 골드 8비트
 TID_TRUE_SILVER_PAM_SKIN_SHOP,트루 실버 팸
@@ -5358,17 +5370,17 @@ TID_CLUB_LEAGUES_BUTTON_EVENT_DAY,이벤트 <DAY>일 차
 TID_CLUB_LEAGUES_BUTTON_DAY_NEW,새로운 날!
 TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,다음 이벤트
 TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,다음 이벤트 일까지:
-TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,다음 시즌 시작까지:
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,시즌 랭크: <RANK>
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,시즌에 랭크 안 됨
+TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,다음 주 시작까지:
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,이번 주 순위: <RANK>
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,이번 주 순위 없음
 TID_CLUB_LEAGUES_BUTTON_JOIN_CLUB_DESC,플레이하려면 클럽에 가입하세요.
 TID_CLUB_LEAGUES_BUTTON_REGISTRATION_CLOSED,등록 마감
 TID_CLUB_LEAGUE_EVENT_TIME_LEFT,남은 시간: <TIME>
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_DESC,다음 이벤트 일 시작까지:
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_TIME,<TIME>
-TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,시즌 시작까지: <TIME>
+TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,다음 주 시작까지: <TIME>
 TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TITLE,클럽 리그
-TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,다음 시즌 이벤트:
+TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,다음 주 이벤트:
 TID_CLUB_LEAGUE_TICKETS_PER_PLAY,<NUM><cA4B7E0>/플레이</c>
 TID_CLUB_LEAGUE_TROPHIES_MAX_PER_WIN,최대/승리
 TID_CLUB_LEAGUE_EVENT_TROPHY_WIN_DESC,클럽 팀과 함께 승리 시:
@@ -5408,17 +5420,17 @@ TID_CLUB_LEAGUE_MASTERS,마스터
 TID_CLUB_LEAGUE_TIER_1,I
 TID_CLUB_LEAGUE_TIER_2,II
 TID_CLUB_LEAGUE_TIER_3,III
-TID_CLUB_LEAGUE_SEASON_PROGRESS,시즌 진행 상황
+TID_CLUB_LEAGUE_SEASON_PROGRESS,주간 진행 상황
 TID_CLUB_LEAGUE_SEASON_ENDS_IN,종료까지:
 TID_CLUB_LEAGUE_WAITING_FINAL_RESULTS,최종 결과 대기 중
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,시즌 결과 대기 중
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,시즌 결과를 집계하고 있습니다. 나중에 최종 결과를 확인하세요!
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,이번 주 결과 집계 중
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,주간 결과를 집계하고 있습니다. 잠시 후에 돌아와 최종 결과를 확인하세요!
 TID_CLUB_LEAGUE_RESULTS_TITLE,결과:
-TID_CLUB_LEAGUE_SEASON_OVER,시즌 종료!
-TID_CLUB_LEAGUE_SEASON_OVER_2,시즌 종료!
+TID_CLUB_LEAGUE_SEASON_OVER,주간 종료!
+TID_CLUB_LEAGUE_SEASON_OVER_2,주간 종료
 TID_CLUB_LEAGUE_MAX_TROPHIES_AVAILABLE,최대 트로피 이용 가능
-TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,시즌 진행 상황
-TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,시즌 결과
+TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,주간 진행 상황
+TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,주간 결과
 TID_CLUB_LEAGUE_ITEM_PROMOTING,승급
 TID_CLUB_LEAGUE_ITEM_PROMOTING_MULTIPLE,승급 X<NUM>
 TID_CLUB_LEAGUE_ITEM_DEMOTING,강등
@@ -5430,15 +5442,15 @@ TID_CLUB_LEAGUE_COLUMN_MAX_REWARD,최대 보상
 TID_CLUB_LEAGUE_SHOP_DESC,더 빠르게 게임을 진행하고 한정판 스킨을 구매하세요!
 TID_CLUB_LEAGUE_SHOP_BUTTON_DESC,더 빠른 게임 진행 및 한정판 스킨 구매:
 TID_CLUB_LEAGUE_BUTTON_VISIT_CLUB_SHOP,클럽 상점으로 가기
-TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,시즌 종료 보상
+TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,주간 종료 보상
 TID_CLUB_LEAGUE_SEASON_END_REWARD_CLAIMED,획득 완료
 TID_CLUB_LEAGUE_NOT_YET_RANKED,아직 랭크 안 됨
-TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,시즌 등록 마감
-TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,이번 시즌 관전
-TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,플레이하려면 다음 시즌을 기다리세요!
-TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,다음 시즌 이벤트:
-TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,다음 시즌 시작까지: <TIME>
-TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,시즌 내에 모든 티켓을 사용해 개인 최대 보상을 받으세요!
+TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,주간 등록 마감
+TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,이번 주 관전
+TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,플레이하려면 다음 주를 기다리세요!
+TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,다음 주 이벤트:
+TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,다음 주 시작까지: <TIME>
+TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,한 주안에 모든 티켓을 사용해 개인 최대 보상을 받으세요!
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED_TITLE,사용한 티켓:
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED,<NUM>/<MAX>
 TID_CLUB_LEAGUE_SEASON_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5448,8 +5460,8 @@ TID_CLUB_LEAGUE_NOT_ENOUGH_TICKETS,티켓이 부족합니다!
 TID_CLUB_LEAGUE_NEED_MORE_GOLDEN_TICKETS,플레이하려면 골드 티켓이 <NUM>장 더 필요합니다!
 TID_CLUB_LEAGUE_NOT_ENOUGH_GOLDEN_TICKETS_AVAILABLE_TO_PURCHASE,구매할 골드 티켓이 부족합니다!
 TID_CLUB_LEAGUE_FEATURE_UNAVAILABLE,현재 해당 기능을 사용할 수 없습니다.
-TID_CLUB_LEAGUE_NOT_IN_LEAGUE,클럽이 현재 리그에 소속되지 않았습니다.
-TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,클럽이 현재 리그 시즌에 소속되지 않았습니다!
+TID_CLUB_LEAGUE_NOT_IN_LEAGUE,클럽이 현재 리그에 참가하지 않았습니다.
+TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,클럽이 이번 주 리그에 참가하지 않았습니다!
 TID_DUPLICATOR,롤라
 TID_DUPLICATOR_SHORT_DESC,대미지 딜러
 TID_DUPLICATOR_DESC,"배우이지만 파트 타임 가이드로 일하는 롤라는 자신을 브롤리우드의 여주인공이라고 생각합니다.\n\n여우 목도리로 공격하며, 특수 공격은 자기 자신의 분신입니다."
@@ -5467,7 +5479,7 @@ TID_CLUB_UNLOCK_TITLE_CLUBS,클럽
 TID_CLUB_UNLOCK_TITLE_UNLOCKED,잠금 해제!
 TID_CLUB_UNLOCK_SEARCHING_FOR_CLUB,최적의 클럽을 찾는 중...
 TID_CLUB_UNLOCK_CLUB_LEAGUE_TITLE,클럽 리그
-TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,다음 시즌에 참가해\n한정판 보상을 획득하세요!
+TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,다음 주 리그에 참가해 한정판 보상을 획득하세요!
 TID_CLUB_UNLOCK_CLUB_FOUND,클럽 발견!
 TID_CLUB_UNLOCK_WELCOME_TO_CLUB,클럽에 오신 것을 환영합니다!
 TID_CLUB_UNLOCK_LETS_GO,확인
@@ -5480,8 +5492,8 @@ TID_CLUB_UNLOCK_STAT_TYPE,유형
 TID_SHOP_BRAWLOWEEN_TITLE,브롤로윈
 TID_SHOP_BRAWLOWEEN_INFO,스킨 세트
 TID_SKIN_INFO_BRAWLOWEEN,브롤로윈 스킨
-TID_CLUB_LEAGUE_FLOW_NEW_SEASON,새 시즌!
-TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,시즌이 종료되었습니다.
+TID_CLUB_LEAGUE_FLOW_NEW_SEASON,새로운 주!
+TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,주간 종료
 TID_CLUB_LEAGUE_FLOW_CLUB_LEAGUE,클럽 리그
 TID_CLUB_LEAGUE_FLOW_DAY_NEW,신규!
 TID_CLUB_LEAGUE_FLOW_EVENT_DAY_STARTED,이벤트 <NUM>일 차 시작!
@@ -5492,8 +5504,8 @@ TID_CLUB_LEAGUE_FLOW_BUTTON_GO_SEASON_END,확인
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_START,확인
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_END,확인
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_LEAGUE_PROMOTION,확인
-TID_CLUB_LEAGUE_FLOW_SEASON_RANK,시즌 랭크
-TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,시즌 종료 보상
+TID_CLUB_LEAGUE_FLOW_SEASON_RANK,주간 순위
+TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,주간 종료 보상
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED_TITLE,사용한 티켓
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED,<NUM><cA4B7E0>/<MAX></c>
 TID_CLUB_LEAGUE_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5504,7 +5516,7 @@ TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_1,구매 실패
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_COINS,코인이 부족합니다!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_GEMS,보석이 부족합니다!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_3,구매할 수 있는 티켓이 없습니다!
-TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,시즌 종료까지: <TIME>
+TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,이번 주 종료까지: <TIME>
 TID_CLUB_LEAGUE_TICKET_SHOP_TITLE,골드 티켓
 TID_CLUB_LEAGUE_TICKET_SHOP_INFO,클럽 리그 시즌 동안 최대 <cFEA305><NUM>장까지 골드 티켓</c>을 사용하여 플레이할 수 있습니다. 골드 티켓을 사용해 추가 매치를 플레이하여 더욱 많은 클럽 트로피를 획득하세요. 골드 티켓을 사용하면 해당 이벤트 일의 클럽 일일 랭크가 올라갈 수 있습니다.\n\n시즌 종료 시에 남은 골드 티켓은 자동으로 다음 시즌으로 이월됩니다.\n\n시즌 종료 보상을 계산할 때 골드 티켓은 반영되지 않습니다.
 TID_CLUB_LEAGUE_TICKETS_GET_MORE,더 획득하기
@@ -5527,18 +5539,18 @@ TID_CLUB_LEAGUE_EVENTS_TITLE,이벤트
 TID_CLUB_LEAGUE_EVENT_UNLOCKS_AT,잠금 해제:
 TID_CLUB_LEAGUE_SHOW_TICKETS_TOGGLE,획득 가능한\n<cFFDA14>최대</c> 클럽 트로피 보기
 TID_CLUB_LEAGUE_INFO_TITLE,클럽 리그 정보
-TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,시즌 및\n이벤트 일
-TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>시즌 및 이벤트 일</c>
-TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,각 주간 시즌 동안 클럽은 같은 리그에 속한 7개의 다른 클럽과 경쟁하게 됩니다.\n\n3번의 이벤트 일 동안 클럽 리그 이벤트를 플레이해 일일 클럽 트로피를 획득하세요. 각 이벤트 일 종료 시 가장 많은 트로피를 받은 클럽이 시즌 순위표에서 가장 많은 포인트를 획득합니다.\n\n클럽 트로피는 각 이벤트 일이 끝날 때 초기화됩니다.\n\n<cFCBC22>팁: 클럽 멤버들과 팀을 구성해 보너스 클럽 트로피를 받으세요!</c>
-TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,티켓
-TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>티켓</c>
-TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,클럽 리그 이벤트를 플레이하려면 티켓이 필요합니다. 모든 클럽 멤버는 각 이벤트 일에 플레이에 사용할 수 있는 티켓을 갖게 됩니다.\n\n모든 티켓을 사용해 시즌 보상과 클럽 트로피를 최대한 많이 획득하세요!
-TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,리그
-TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>리그</c>
-TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,한 주가 끝날 때 가장 많은 시즌 포인트를 획득한 클럽은 다음 리그로 승급하고 가장 낮은 포인트를 획득한 클럽은 강등됩니다. 가장 높은 리그로 올라가 더 높은 챌린지와 보상을 노리세요.
+TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,환영합니다!
+TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>클럽 게임에 오신 것을 환영합니다</c>
+TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,클럽과 함께 플레이하여 매주 <cFCBC22>클럽 상점</c> 보상을 획득하세요!\n\n매주 1개의 클럽 이벤트가 활성화됩니다.\n<cFCBC22>클럽 리그 주간</c> - 클럽 리그에서 다른 클럽을 상대로 경쟁하여 최고 순위 보상을 획득하고 높은 리그로 올라가세요.\n<cFCBC22>클럽 퀘스트 주간</c> - 클럽 퀘스트 3개를 완료하여 클럽 포인트를 획득하세요. 클럽이 리그 주간 동안 퀘스트를 많이 완료할수록 모든 클럽원이 얻는 보상의 수준이 높아집니다.
+TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,클럽 리그
+TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>클럽 리그 주간</c>
+TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,클럽 리그 주간 동안 소속 리그에서 7개 클럽을 상대로 경쟁하세요. <cFCBC22>3일에 걸쳐</c> 클럽 리그 이벤트를 플레이해 가장 높은 <cFCBC22>클럽 트로피</c> 순위를 차지하세요. 클럽 리그 매치를 플레이하려면 <cFCBC22>티켓</c>이 필요합니다.\n\n한 주 동안 가장 성적이 높은 클럽이 가장 큰 보상을 받습니다. 한 주가 끝나면 <cFCBC22>승급</c>과 <cFCBC22>강등</c>이 이루어집니다.\n\n보너스: 다른 클럽원과 함께 플레이하면 <cFCBC22>추가 클럽 트로피</c>를 획득할 수 있습니다.
+TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,클럽 퀘스트
+TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>클럽 퀘스트 주간</c>
+TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,클럽 퀘스트 주간에는 <cFCBC22>3개의 퀘스트</c>가 주어집니다.\n\n클럽 퀘스트를 완료한 클럽은 <cFCBC22>포인트</c>를 얻습니다. 한 주가 끝날 때 클럽이 얻은 포인트가 많을수록 클럽원들은 더 높은 수준의 보상을 얻습니다. 보상을 받으려면 최소 1개 이상의 퀘스트를 완료해야 합니다.\n\n보너스: 다른 클럽원과 함께 플레이하면 <cFCBC22>퀘스트 진행 정도가 두 배로 증가합니다</c>.
 TID_CLUB_LEAGUE_INFO_PAGE_4_MARKER,클럽 상점
-TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>클럽 상점</c>
-TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,"클럽 리그에 참여하면 클럽 코인을 획득할 수 있습니다. 리그와 시즌 순위가 높을수록 더 많은 클럽 코인을 얻을 수 있습니다. 시즌 내에 모든 티켓을 사용해 클럽 코인 보상을 모두 모으세요.\n\n클럽 상점에서 클럽 코인을 사용하세요! 한정판 스킨뿐 아니라 PP, 코인, 기어 아이템도 추가로 모을 수 있습니다. 직접 확인해 보세요!"
+TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>클럽 상점이란?</c>
+TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,"클럽 리그와 클럽 퀘스트를 플레이하여 <cFCBC22>클럽 코인</c>을 획득하세요. 클럽 코인은 클럽 상점에서 사용할 수 있습니다!\n\n클럽 상점에서 최대 50%까지 <cFCBC22>진행 속도를 높일 수 있고</c>, <cFCBC22>한정판 스킨</c>을 구매할 수 있습니다!"
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_1,7개 클럽을\n상대로 경쟁
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_2,3번의 이벤트 일
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_3,이벤트를 플레이해\n클럽 트로피 획득
@@ -5576,20 +5588,20 @@ TID_CLUB_LEAGUE_ONBOARDING_DAY_3,3일 차
 TID_CLUB_LEAGUE_SEASON_MAX_REWARD,최대 보상:
 TID_CLUB_SHOP_TITLE,클럽 상점
 TID_CLUB_SHOP_BUTTON,클럽 상점
-TID_CLUB_SHOP_DESC,게임을 더욱 빠르게 진행하고 한정판 스킨을 구매하세요!
+TID_CLUB_SHOP_DESC,더 빠르게 게임을 진행하고 한정판 스킨을 구매하세요!
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED,잠금 해제하지 않은 브롤러
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED_DESC,해당 브롤러를 보유해야 구매 가능!
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,"클럽 리그 시즌 종료: 클럽이 <RANKING>위를 달성해, 보상으로 <cEE1B39>클럽 코인</c> <COINS>개를 받았습니다!"
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"클럽 리그 시즌 종료: 클럽은 <RANKING>위를 달성했지만, 이번 시즌에 참여하지 않았습니다. 다음 시즌에는 꼭 참여해 클럽 코인을 획득하세요!"
-TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,시즌 종료 최대 보상
-TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,시즌 내에 모든 티켓을 사용해\n최대 보상을 받으세요!
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,"클럽 리그 주간 종료: 클럽이 <RANKING>위를 달성해, 보상으로 <cEE1B39>클럽 코인</c> <COINS>개를 받았습니다!"
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"클럽 리그 주간 종료: 클럽이 <RANKING>위를 달성했지만, 이번 주에는 리그에 참여하지 않았군요. 다음 주에는 꼭 참여해 클럽 코인을 획득하세요!"
+TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,주간 종료 최대 보상
+TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,한 주 안에 모든 티켓을 사용해 최대 보상을 받으세요!
 TID_CLUB_LEAGUE_SEASON_REWARD_MAX,최대
 TID_CLUB_LEAGUE_SEASON_PROMOTING_DESC,더 높은 리그로 승급
 TID_CLUB_LEAGUE_SEASON_DEMOTING_DESC,더 낮은 리그로 강등
 TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,팀 찾기:
 TID_CLUB_LEAGUE_LOOKING_FOR_PLAYERS,플레이어 찾기:
 TID_CLUB_INFO_TAB_PLAYER_RANKS,플레이어 랭크
-TID_CLUB_INFO_TAB_LEAGUE_SEASON,클럽 리그 시즌
+TID_CLUB_INFO_TAB_LEAGUE_SEASON,클럽 리그 주간
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY,이벤트 <NUM>일 차
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY_NONE,이벤트 일
 TID_CLUB_MEMBER_LEAGUE_TICKETS,<NUM>/<MAX>
@@ -5624,20 +5636,24 @@ TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,클럽 트로피 보상
 TID_REWARD_DESC_GEAR_TOKENS,기어 토큰
 TID_REWARD_DESC_GEAR_TOKEN_SINGLE,기어 토큰
 TID_REWARD_DESC_GEAR_SCRAP,기어 스크랩
-TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,이번 시즌에 참여하기에는 너무 늦으신 것 같습니다!\n\n다음 시즌이 시작되기 전까지 부담 없이 둘러보면서 클럽의 대결을 관전해 보세요!
+TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,이번 주에 참여하기에는 너무 늦으신 것 같습니다!\n\n다음 주가 시작되기 전까지 부담 없이 둘러보면서 클럽의 대결을 관전해 보세요!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,클럽 상점에 준비된 상품을 확인해 보세요!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,최종 결과:
 TID_CLUB_LEAGUE_TEASER_TITLE,클럽 리그
 TID_CLUB_LEAGUE_TEASER_JOIN_CLUB,클럽 가입
 TID_CLUB_LEAGUE_TEASER_MESSAGE,클럽과 함께 경쟁에 참여해 게임을 더욱 빠르게 진행하고 한정판 스킨을 획득하세요!
 TID_CLUB_LEAGUE_TEASER_REACH_TROPHIES_TO_UNLOCK,트로피 <NUM>개를 모아\n클럽을 잠금 해제하세요!
-TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,클럽에 가입해\n다음 시즌에서 대결하세요!
+TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,플레이하려면 클럽에 가입하세요!
 TID_CLUB_LEAGUE_TEASER_FIND_OUT_MORE,자세히 알아보기
-TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,현재 시즌 일정:
-TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,다음 시즌 일정:
+TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,이번 주 일정:
+TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,다음 주 일정:
 TID_CLUB_LEAGUE_EVENTS_DAY_STARTS_IN,시작까지: <TIME>
 TID_CLUB_LEAGUE_EVENTS_DAY_ENDS_IN,종료까지: <TIME>
 TID_CLUB_LEAGUE_EVENTS_INFO_BUTTON,클럽 리그가 무엇인가요?
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_CURRENT_SEASON,이번 주
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_ENDS_IN,종료까지: <TIME>
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_NEXT_SEASON,다음 주
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_STARTS_IN,시작까지: <TIME>
 TID_CLUBS_MEMBERS_CLUB_TROPHIES,클럽 트로피
 TID_CLUBS_MEMBERS_TICKETS_USED,사용한 티켓
 TID_CLUBS_MEMBERS_POWER_LEAGUE_RANK,파워 리그 랭크
@@ -5675,7 +5691,7 @@ TID_SWAMP_GENE_SKIN_SHOP,반인반어 진
 TID_DIRECTOR_BUZZ_SKIN,영화 감독 버즈
 TID_DIRECTOR_BUZZ_SKIN_SHOP,영화 감독 버즈
 TID_CAT_BURGLAR_JESSIE_SKIN,도둑고양이 제시
-TID_CAT_BURGLAR_JESSIE_SKIN_SHOP,도둑고양이\n제시
+TID_CAT_BURGLAR_JESSIE_SKIN_SHOP,도둑고양이 제시
 TID_CAPTAIN_CROW_SKIN,캡틴 크로우
 TID_CAPTAIN_CROW_SKIN_SHOP,캡틴 크로우
 TID_SQUEAKBUSTER_GALE_SKIN,스퀴크버스터 게일
@@ -5683,21 +5699,21 @@ TID_SQUEAKBUSTER_GALE_SKIN_SHOP,스퀴크버스터\n게일
 TID_B800_BULL_SKIN,B-800
 TID_B800_BULL_SKIN_SHOP,B-800
 TID_TRUE_GOLD_BIBI_SKIN,트루 골드 비비
-TID_TRUE_GOLD_BIBI_SKIN_SHOP,트루 골드\n비비
+TID_TRUE_GOLD_BIBI_SKIN_SHOP,트루 골드 비비
 TID_TRUE_SILVER_BIBI_SKIN,트루 실버 비비
-TID_TRUE_SILVER_BIBI_SKIN_SHOP,트루 실버\n비비
+TID_TRUE_SILVER_BIBI_SKIN_SHOP,트루 실버 비비
 TID_TRUE_GOLD_CARL_SKIN,트루 골드 칼
 TID_TRUE_GOLD_CARL_SKIN_SHOP,트루 골드 칼
 TID_TRUE_SILVER_CARL_SKIN,트루 실버 칼
 TID_TRUE_SILVER_CARL_SKIN_SHOP,트루 실버 칼
 TID_TRUE_GOLD_AMBER_SKIN,트루 골드 앰버
-TID_TRUE_GOLD_AMBER_SKIN_SHOP,트루 골드\n앰버
+TID_TRUE_GOLD_AMBER_SKIN_SHOP,트루 골드 앰버
 TID_TRUE_SILVER_AMBER_SKIN,트루 실버 앰버
-TID_TRUE_SILVER_AMBER_SKIN_SHOP,트루 실버\n앰버
+TID_TRUE_SILVER_AMBER_SKIN_SHOP,트루 실버 앰버
 TID_TRUE_GOLD_COLETTE_SKIN,트루 골드 콜레트
-TID_TRUE_GOLD_COLETTE_SKIN_SHOP,트루 골드\n콜레트
+TID_TRUE_GOLD_COLETTE_SKIN_SHOP,트루 골드 콜레트
 TID_TRUE_SILVER_COLETTE_SKIN,트루 실버 콜레트
-TID_TRUE_SILVER_COLETTE_SKIN_SHOP,트루 실버\n콜레트
+TID_TRUE_SILVER_COLETTE_SKIN_SHOP,트루 실버 콜레트
 TID_TRUE_GOLD_DYNAMIKE_SKIN,트루 골드 다이너마이크
 TID_TRUE_GOLD_DYNAMIKE_SKIN_SHOP,트루 골드\n다이너마이크
 TID_TRUE_SILVER_DYNAMIKE_SKIN,트루 실버 다이너마이크
@@ -5739,7 +5755,7 @@ TID_SETTINGS_HAPTICS,햅틱 피드백
 TID_HERO_INFO_GEAR_BLOCKED,기어와 함께 <HERONAME> 파워업! 파워 레벨 <LEVEL> 도달 후 기어 슬롯 이용 가능
 TID_BRAWL_PASS_SEASON_8,브롤리우드
 TID_CHOLLA_SKIN,반항아 롤라
-TID_CHOLLA_SKIN_SHOP,반항아\n롤라
+TID_CHOLLA_SKIN_SHOP,반항아 롤라
 TID_SKIN_INFO_WF_2021,월드 파이널 2021 스킨
 TID_POTATO_SQUEAK_SKIN,감자 스퀴크
 TID_POTATO_SQUEAK_SKIN_SHOP,감자 스퀴크
@@ -5758,7 +5774,7 @@ TID_LOOKING_TOGGLE_LOOKING_FOR_A_TEAM,온라인 상태인 다른 플레이어들
 TID_LOOKING_TOGGLE_LOOKING_FOR_PLAYERS,팀이 온라인 상태인 다른 플레이어들에게\q플레이어 찾는 중\q으로 표시됩니다.
 TID_CLUB_JOIN_FAIL_FEATURE_LOCKED,클럽 가입 실패: 클럽은 트로피 <NUM>개에 잠금 해제됩니다.
 TID_CLUB_LEAGUE_LEAGUES_POPUP_CURRENT_LEAGUE,현재 리그
-TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,각 클럽 리그 시즌이 끝나면 승급과 강등이 진행됩니다!\n리그 순위를 올려 클럽 코인 보상을 늘리세요.
+TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,각 클럽 리그 주가 끝나면 승급과 강등이 진행됩니다!\n리그 순위를 올려 클럽 코인 보상을 늘리세요.
 TID_CLUB_LEAGUE_LEAGUES_POPUP_BUTTON,확인
 TID_CLUB_LEAGUE_LEAGUES_POPUP_TITLE,리그
 TID_IMPORTANT_MESSAGE_TITLE,중요 공지
@@ -5923,10 +5939,10 @@ TID_CLAIM_VOUCHER_POPUP_TITLE,보상 받기
 TID_CLAIM_VOUCHER_BUTTON_CLAIM,받기
 TID_CLAIM_VOUCHER_BUTTON_CANCEL,취소
 TID_SPELL_FACTORY_CLAIM_FAILED_TITLE,보상 획득 오류
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,<c267F00><CODE></c>의 이유로 보상을 받을 수 없습니다.
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,받을 수 없습니다.\n\n<c267F00><CODE></c> 보상을 이미 받았습니다.
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,유효하지 않은 코드\n\n<c7F0000><CODE></c>
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,보상을 받을 수 없습니다.\n\n<c267F00><CODE></c> 보상이 만료되었습니다.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,보상을 받을 수 없습니다.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,보상을 받을 수 없습니다. 보상을 이미 받았습니다.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,보상을 받을 수 없습니다. 유효하지 않은 코드입니다.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,보상을 받을 수 없습니다. 보상이 만료되었습니다.
 TID_RANKED_FRIENDLY_BEST_OF_TOGGLE_TITLE,선승제
 TID_FLEA,이브
 TID_FLEA_SHORT_DESC,대미지 딜러
@@ -5938,7 +5954,7 @@ TID_FLEA_ULTI_DESC,해츨링 한 무리를 부화시키는 커다란 알을 낳�
 TID_SPEC_ABI_FLEA_1,어색한 순서
 TID_SPEC_ABI_FLEA_1_DESC,에그 슈터가 발사하는 알의 순서를 반대로 합니다.
 TID_SPEC_ABI_FLEA_2,해피 서프라이즈
-TID_SPEC_ABI_FLEA_2_DESC,적 브롤러를 공격하면 에그 슈터의 가장 큰 알이 해츨링을 낳습니다.
+TID_SPEC_ABI_FLEA_2_DESC,"매 <c00cc00><VALUE1></c>초마다, 에그 슈터가 발사한 알 중에서 적에게 명중하는 가장 큰 알이 해츨링을 낳습니다."
 TID_ACCESSORY_FLEA_JUMP,이만 가볼게!
 TID_ACCESSORY_FLEA_JUMP_DESC,자리에 해츨링 하나를 남겨두고 점프합니다.
 TID_ACCESSORY_FLEA_SYMBIOSIS,모성애
@@ -5972,8 +5988,8 @@ TID_KILL_NUMBER_OWN,남은 테이크다운: 4!
 TID_KILL_NUMBER_OPPONENT,상대에게 남은 테이크다운: 4!
 TID_ONE_POINT_FROM_VICTORY,승리까지 남은 테이크다운: 1!
 TID_OPPONENT_ONE_POINT_FROM_VICTORY,패배까지 남은 테이크다운: 1!
-TID_VICTORY_MATCH_OVER,승리!
-TID_LOSS_MATCH_OVER,패배!
+TID_VICTORY_MATCH_OVER,승리!\n매치 종료
+TID_LOSS_MATCH_OVER,패배!\n매치 종료
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2022,2022 설날 스킨
 TID_LOGIN_CALENDAR_LEFT_TITLE,연속 일일 선물
 TID_LOGIN_CALENDAR_LEFT_SUBTITLE,<cfffc11>15일 동안 매일 로그인해</c> <cfffc11>무료 선물</c>을 획득하세요! 연속 기록을 잃지 않으려면 <cfffc11>단 하루도 놓치지 말고 로그인하세요</c>!
@@ -6090,7 +6106,7 @@ TID_TRUE_GOLD_SPROUT_SKIN_SHOP,트루 골드\n스프라우트
 TID_TRUE_GOLD_SURGE_SKIN,트루 골드 서지
 TID_TRUE_GOLD_SURGE_SKIN_SHOP,트루 골드 서지
 TID_TRUE_GOLD_RUFFS_SKIN,트루 골드 러프스
-TID_TRUE_GOLD_RUFFS_SKIN_SHOP,트루 골드\n러프스
+TID_TRUE_GOLD_RUFFS_SKIN_SHOP,트루 골드 러프스
 TID_TRUE_GOLD_BUZZ_SKIN,트루 골드 버즈
 TID_TRUE_GOLD_BUZZ_SKIN_SHOP,트루 골드 버즈
 TID_TRUE_SILVER_SPROUT_SKIN,트루 실버 스프라우트
@@ -6098,7 +6114,7 @@ TID_TRUE_SILVER_SPROUT_SKIN_SHOP,트루 실버\n스프라우트
 TID_TRUE_SILVER_SURGE_SKIN,트루 실버 서지
 TID_TRUE_SILVER_SURGE_SKIN_SHOP,트루 실버 서지
 TID_TRUE_SILVER_RUFFS_SKIN,트루 실버 러프스
-TID_TRUE_SILVER_RUFFS_SKIN_SHOP,트루 실버\n러프스
+TID_TRUE_SILVER_RUFFS_SKIN_SHOP,트루 실버 러프스
 TID_TRUE_SILVER_BUZZ_SKIN,트루 실버 버즈
 TID_TRUE_SILVER_BUZZ_SKIN_SHOP,트루 실버 버즈
 TID_DEATHMATCH_1,인피니트 둠
@@ -6143,7 +6159,7 @@ TID_SPEC_ABI_JETPACK_GIRL_1_DESC,제트팩을 이용해 공중에 떠 있는 동
 TID_SPEC_ABI_JETPACK_GIRL_2,발성연습
 TID_SPEC_ABI_JETPACK_GIRL_2_DESC,자넷의 일반 공격이 <c00cc00><VALUE1>%</c> 더 빠르게 집중됩니다.
 TID_ACCESSORY_JETPACK_GIRL_GADGET_1,강력한 베이스
-TID_ACCESSORY_JETPACK_GIRL_GADGET_1_DESC,초당 <c00cc00><VALUE1></c> 피해를 가하는 스피커를 배치합니다. 스피커는 파괴될 때까지 주변의 모든 적에게 피해를 입힙니다.
+TID_ACCESSORY_JETPACK_GIRL_GADGET_1_DESC,스피커를 배치해 파괴될 때까지 주변의 모든 적에게 초당 <c00cc00><VALUE1></c>의 피해를 입힙니다.
 TID_ACCESSORY_JETPACK_GIRL_GADGET_2,백스테이지 통행증
 TID_ACCESSORY_JETPACK_GIRL_GADGET_2_DESC,"다음 고음이 자넷을 멀리, 심지어 벽 위까지 밀어냅니다. 자넷의 공격이 더 집중될수록 더 멀리 밀려갑니다."
 TID_CANNON_GIRL,보니
@@ -6160,7 +6176,7 @@ TID_CANNON_GIRL_SMALL_ULTI_DESC,보니가 클라이드를 불러 안으로 뛰�
 TID_SPEC_ABI_CANNON_GIRL_1,검은 화약
 TID_SPEC_ABI_CANNON_GIRL_1_DESC,보니의 스타 런처 사거리가 <c00cc00><VALUE1>%</c> 증가합니다.
 TID_SPEC_ABI_CANNON_GIRL_2,사랑니
-TID_SPEC_ABI_CANNON_GIRL_2_DESC,흔들리는 치아가 적에게 명중 시 산산조각 나 근처의 적에게 <c00cc00><VALUE1>%</c>의 추가 피해를 입힙니다.
+TID_SPEC_ABI_CANNON_GIRL_2_DESC,흔들리는 치아가 적에게 명중 시 산산조각나 근처의 적에게 <c00cc00><VALUE1>%</c>의 피해를 입힙니다.
 TID_ACCESSORY_CANNON_GIRL_SPEED,슈가 러시
 TID_ACCESSORY_CANNON_GIRL_SPEED_DESC,클라이드의 이동 속도와 재장전 속도가 <c00cc00><VALUE2></c>초 동안<c00cc00><VALUE1>%</c> 증가합니다.
 TID_ACCESSORY_CANNON_GIRL_DASH,충돌 테스트
@@ -6174,7 +6190,7 @@ TID_ACCESSORY_POWER_LEVELER_SHIELD,파워 실드
 TID_ACCESSORY_POWER_LEVELER_SHIELD_DESC,다음 <c00cc00><VALUE1></c>초 동안 받는 피해를 <c00cc00><VALUE2>%</c> 줄이고 <c00cc00><VALUE3></c>개의 탄환을 재장전합니다.
 TID_GAME_MODE_27,봇 드롭
 TID_GAME_MODE_27_DESC,로봇의 침략을 방어하세요. 로봇을 파괴하고 볼트를 수집하세요. 먼저 볼트 <MAX_SCORE>개를 수집하는 팀이 전투에서 승리합니다!
-TID_INVASION_INTRO_TEXT,로봇을 파괴하라!
+TID_INVASION_INTRO_TEXT,로봇을 파괴하세요!
 TID_NOTIFICATION_INVASION,새로운 봇 드롭 맵 이용 가능! 새 보상을 획득하세요!
 TID_INVASION_1,권력 이양
 TID_INVASION_2,분열
@@ -6300,17 +6316,17 @@ TID_TRUE_GOLD_LOLA_SKIN_SHOP,트루 골드 롤라
 TID_TRUE_SILVER_LOLA_SKIN,트루 실버 롤라
 TID_TRUE_SILVER_LOLA_SKIN_SHOP,트루 실버 롤라
 TID_CRASH_TEST_DARRYL_SKIN,충돌 테스트 대릴
-TID_CRASH_TEST_DARRYL_SKIN_SHOP,충돌 테스트\n대릴
+TID_CRASH_TEST_DARRYL_SKIN_SHOP,충돌 테스트 대릴
 TID_BIKER_CARL_SKIN,바이커 칼
 TID_BIKER_CARL_SKIN_SHOP,바이커 칼
 TID_PYRO_SPIKE_SKIN,화염 스파이크
 TID_PYRO_SPIKE_SKIN_SHOP,화염 스파이크
 TID_MONSTER_TRUCK_MEG_SKIN,몬스터 트럭 메그
-TID_MONSTER_TRUCK_MEG_SKIN_SHOP,몬스터 트럭\n메그
+TID_MONSTER_TRUCK_MEG_SKIN_SHOP,몬스터 트럭 메그
 TID_OVERLORD_BYRON_SKIN,대군주 바이런
 TID_OVERLORD_BYRON_SKIN_SHOP,대군주 바이런
 TID_GALAXY_STORM_LOLA_SKIN,갤럭시 스톰 롤라
-TID_GALAXY_STORM_LOLA_SKIN_SHOP,갤럭시 스톰\n롤라
+TID_GALAXY_STORM_LOLA_SKIN_SHOP,갤럭시 스톰 롤라
 TID_EMPRESS_BONNIE_SKIN,여제 보니
 TID_EMPRESS_BONNIE_SKIN_SHOP,여제 보니
 TID_TEMPEST_TARA_SKIN,템페스트 타라
@@ -6361,12 +6377,231 @@ TID_LOGIN_CALENDAR_LOYALTY_PROGRAM,로열티 프로그램
 TID_LOGIN_CALENDAR_TITLE,스타 파크 로열티 프로그램
 TID_REWARD_DESC_PLAYER_ICON_REGULAR,플레이어 아이콘
 TID_CLUB_LEAGUE_CLUB_COINS_HOW_TO_GET,클럽 리그에서 경쟁하고 클럽 코인을 획득하세요.
+TID_CLUB_EVENTS_TITLE,클럽 게임
+TID_CLUB_EVENTS_LEAGUE_TAB_DAY,이벤트 일
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY,이벤트 <NUM>일 차
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY_COMPLETE,완료
+TID_CLUB_EVENTS_LEAGUE_TAB_SEASON,주간
+TID_CLUB_EVENTS_TAB_LEAGUE,리그
+TID_CLUB_EVENTS_TAB_QUESTS,퀘스트
+TID_CLUB_EVENTS_BUTTON_CLUB_SHOP,클럽 상점
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_IS_TOP,각 클럽의 상위 <TOP>위까지의 결과만 반영됩니다. 현재 <NUM>위 입니다.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_TOP,각 클럽의 상위 <TOP>위까지의 결과만 반영됩니다. 현재 <cF76263><NUM></c>위 입니다.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_RANKED,각 클럽의 상위 <TOP>위까지의 결과만 반영됩니다. <cF76263>아직 참여하지 않았습니다.</c>
+TID_CLUB_INFO_TOP_EVENT_DAY_PLAYER_DIVIDER,클럽의 상위 <TOP>위까지의 참여자의 결과만 반영됩니다.
+TID_CLUB_QUESTS_PLAYER_REWARD_DESC,주간 종료 보상
+TID_CLUB_QUESTS_LOCKED_REWARD_DESC,잠금 해제하려면 클럽 퀘스트를 완료하세요
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY,클럽이 <POINTS> 포인트에 도달하면 이 주간 종료 보상을 받을 수 있습니다!
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_CURRENT,현재의 클럽 퀘스트 주간 종료 보상입니다.
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_LOCKED,현재의 클럽 퀘스트 주간 종료 보상입니다. 클럽 퀘스트를 완료하여 주간 종료 시 받을 수 있습니다!
+TID_CLUB_QUESTS_LEAGUES_BUTTON,리그
+TID_CLUB_QUESTS_LEAGUES_DESC,더 높은 클럽 리그로 승급하여 최대 보상을 늘리세요.
+TID_CLUB_QUESTS_RANKS_CURRENT_LEAGUE,현재 리그
+TID_CLUB_QUESTS_RANKS_MAX_REWARD,최대 보상
+TID_CLUB_QUESTS_RANKS_MESSAGE,클럽 리그 순위에 따라 클럽 퀘스트 주간의 최대 보상이 결정됩니다. 더 높은 리그로 승급하여 더 많은 클럽 코인 보상을 획득하세요!
+TID_CLUB_QUESTS_RANKS_TITLE,리그
+TID_CLUB_QUESTS_FLOW_NEW_SEASON,새로운 주!
+TID_CLUB_QUESTS_FLOW_SEASON_ENDED,주간 종료
+TID_CLUB_QUESTS_FLOW_CLUB_QUESTS,클럽 퀘스트
+TID_CLUB_QUESTS_FLOW_MAX_REWARD,최대 보상
+TID_CLUB_QUESTS_FLOW_BUTTON_GO,수락
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_START,시작
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_END,확인
+TID_CLUB_QUESTS_FLOW_SEASON_RANK,주간 순위
+TID_CLUB_QUESTS_FLOW_END_OF_SEASON_REWARD,주간 종료 보상
+TID_CLUB_QUESTS_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_BADGE,<cFCF044>x2</c>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_DESC,최소 1명 이상의 클럽원과 함께 플레이하면 클럽 퀘스트 진행 정도가 <cFCF044>두 배</c>로 증가합니다.
+TID_CLUB_QUESTS_ALL_COMPLETED_DESC,이번 주의 클럽 퀘스트가 모두 완료되었습니다!
+TID_CLUB_QUEST_ALREADY_COMPLETED,이 클럽 퀘스트는 이미 완료되었습니다!
+TID_CLUB_QUESTS_SEASON_ENDS_IN_TIME,주 종료까지:
+TID_CLUB_QUESTS_REWARD_LOCKED_DESC,첫 퀘스트로 보상 잠금 해제!
+TID_CLUB_QUESTS_COMPLETED_NUM,완료한 퀘스트: <NUM>/<MAX>
+TID_CLUB_QUESTS_TITLE,클럽 퀘스트
+TID_CLUB_QUESTS_NEW_SEASON,새로운 주!
+TID_CLUB_QUESTS_SEASON_END_NOTIFICATION,클럽 퀘스트 주간 종료: 이번 주의 보상으로 <cEE1B39>클럽 코인</c> <COINS>개를 얻었습니다!
+TID_CLUB_QUESTS_CONTRIBUTIONS_TITLE,이번 주의 기여
+TID_CLUB_QUESTS_CONTRIBUTIONS_MEMBERS,클럽원: <NUM>명
+TID_CLUB_QUESTS_CLUB_TEAM_BONUS,클럽 팀 보너스 2배
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TITLE,팀 구성 보너스!
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_DESC,최소 1명 이상의 클럽원과 함께 플레이하여 클럽 퀘스트 진행도를 <cFCF044>두 배</c>로 만드세요!
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PROGRESS,클럽 퀘스트 진행 상황
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_X2,x2
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PLAY_SOLO,솔로 플레이
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_ONLINE,<NUM>명 온라인
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TEAM_UP,팀 구성!
+TID_CLUB_QUESTS_WARNING_NOT_AVAILABLE,이번 주간 시작 시 소속되어 있던 클럽에만 기여할 수 있습니다.\n\n이 클럽에 기여하려면 다음 주까지 기다려 주세요!
+TID_CLUB_QUESTS_SEASON_END_REWARD_CLAIMED,수령 완료
+TID_CLUB_LEAGUE_WARNING_NOT_AVAILABLE,클럽이 아직 클럽 리그에 참여하지 않는 것 같군요! 다음 클럽 리그 주간이 시작되면 다른 클럽들을 상대로 경쟁할 수 있습니다.
+TID_CLUB_EVENT_TIME_LEFT,남은 시간: <TIME>
+TID_SHOP_CLUB_SHOP_SEE_OFFERS,특별 상품 보기
+TID_SHOP_CLUB_SHOP_TITLE,클럽 상점
+TID_SHOP_CLUB_SHOP_DESC,게임 진행을 더욱 빠르게!
 TID_SHOP_OFFER_INFO_25,새로운 플레이어 아이콘!
 TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,연속 기록이 사라지지 않도록 <cFFB820>내일 다시 돌아와</c> 이 선물을 수령하세요!
 TID_BRAWLBALL_49,추가 탄성
 TID_BRAWLBALL_50,완전한 경사
 TID_BRAWLBALL_51,하이스코어
 TID_BRAWLBALL_52,핑퐁
+TID_INBOX_CAPTION_72_68,선물: 스프레이
+TID_SILENCER,오티스
+TID_SILENCER_SHORT_DESC,대미지 딜러
+TID_SILENCER_DESC,불가사리 친구 실과 함께 활동하는 거리의 예술가입니다. 둘은 함께 짝을 지어 스타 파크 곳곳에 그래피티를 잔뜩 그리고 다닙니다.
+TID_SILENCER_WEAPON,먹물 아트
+TID_SILENCER_WEAPON_DESC,팔처럼 움직이는 스프레이 건에서 먹물 방울을 발사합니다.
+TID_SILENCER_ULTI,별딱지
+TID_SILENCER_ULTI_DESC,오티스가 던진 실이 처음으로 명중한 적에게 달라붙어 짧은 시간 동안 공격을 저지합니다.
+TID_SPEC_ABI_SILENCER_1,스텐실 글루
+TID_SPEC_ABI_SILENCER_1_DESC,실이 온 힘을 다해 적에게 <c00cc00><VALUE1>%</c> 더 오래 달라붙어 공격을 저지합니다.
+TID_SPEC_ABI_SILENCER_2,먹물 리필
+TID_SPEC_ABI_SILENCER_2_DESC,오티스가 먹물 방울을 <c00cc00><VALUE1>%</c> 더 많이 발사합니다.
+TID_ACCESSORY_SILENCER_GADGET_1,잠꾸러기 별
+TID_ACCESSORY_SILENCER_GADGET_1_DESC,다음에 던진 불가사리가 적에 맞지 않으면 바닥에 붙어 적이 가까이 올 때까지 깨어나지 않습니다.
+TID_ACCESSORY_SILENCER_GADGET_2,먹물 웅덩이
+TID_ACCESSORY_SILENCER_GADGET_2_DESC,다음 공격에서 거대한 먹물 공을 발사해 웅덩이를 남깁니다. 이 먹물 웅덩이는 <c00cc00><VALUE2></c>초에 걸쳐 <c00cc00><VALUE1></c>의 피해를 줍니다.
+TID_RANDOM_GAME_MODE,미스터리
+TID_NOTIFICATION_RANDOM,신규 미스터리 맵 플레이 가능! 새 보상을 획득하세요!
+TID_SKIN_INFO_DEEPSEA,심해 브롤 스킨
+TID_EMOTE_BUNDLE_DEEPSEA_PACK,심해 브롤 스킨 핀
+TID_SUGGEST,제안
+TID_SUGGEST_CANCEL,취소
+TID_PURCHASE_BRAWL_PASS_INFO_SHOP,브롤 패스 보상 + 추가 퀘스트 및 리롤 잠금 해제!
+TID_SUGGESTED_BY,제안한 플레이어
+TID_SHOP_DEEPSEA_SKINS,심해 브롤 스킨
+TID_SHOP_DEEPSEA_TITLE,심해 브롤
+TID_SHOP_DEEPSEA_INFO,스킨 세트
+TID_SKIN_INFO_BT21,BT21 스킨
+TID_CLUB_EVENTS_ONBOARDING_TITLE,클럽 게임
+TID_CLUB_EVENTS_ONBOARDING_SUBTITLE,게임을 더욱 빠르게 진행시킬 아이템과 한정판 스킨을 구매하세요!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_1_TITLE,주간 클럽 게임에\n오신 것을 환영합니다!
+TID_CLUB_EVENTS_ONBOARDING_NEW_GAME,새로운 클럽 게임!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_TITLE,클럽 리그
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_DESCRIPTION,다른 클럽과 경쟁하세요!\n높은 리그로 올라가세요!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_TITLE,클럽 퀘스트
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_DESCRIPTION,클럽과 함께 퀘스트를 완료하세요!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_1,클럽과 함께 매주 1개의 클럽 게임을 플레이하세요!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_2,클럽 코인을 획득하세요!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_3,클럽 상점에서 게임 진행 속도를 높여줄 아이템을 구매하세요!
+TID_SUGGEST_TITLE,브롤러 제안
+TID_CLUB_LEAGUE_TOP_24_REWARDS,주간 종료 보상은 모든 플레이어가 획득할 수 있습니다
+TID_CLUB_LEAGUE_STARTS_IN,클럽 리그 시작까지:
+TID_CLUB_QUESTS_STARTS_IN,클럽 퀘스트 시작까지:
+TID_SHOWDOWN_71,점프 파크
+TID_SHOWDOWN_72,브롤러 스피드웨이
+TID_SHOWDOWN_73,텔레포트 태그
+TID_CLUB_QUESTS_NOT_AVAILABLE,현재 클럽 퀘스트를 이용할 수 없습니다
+TID_CLUB_LEAGUE_NOT_AVAILABLE,현재 클럽 리그를 이용할 수 없습니다
+TID_CLUB_QUESTS_WEEK_ACTIVE,퀘스트 주간 종료까지:
+TID_CLUB_LEAGUE_WEEK_ACTIVE,리그 주간 종료까지:
+TID_CLUB_EVENTS_ACTIVE,진행 중
+TID_CLUB_EVENTS_STARTING,곧 시작
+TID_CLUB_EVENTS_WAITING,대기 중
+TID_CLUB_LEAGUE_PREVIOUS_WEEK,이전 주
+TID_CLUB_LEAGUE_RESULTS,결과:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_SHORT,리그 주간 시작까지:
+TID_CLUB_QUESTS_WEEK_STARTS_IN_SHORT,퀘스트 주간 시작까지:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN,다음 클럽 리그 주간 시작까지: <TIME>
+TID_CLUB_QUESTS_WEEK_STARTS_IN,다음 클럽 퀘스트 주간 시작까지: <TIME>
+TID_CLUB_LEAGUE_WEEK_SCHEDULE,일정
+TID_CLUB_QUESTS_PREVIOUS_WEEK_REWARD,이전 주 보상
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TEXT,다음 클럽 리그 주간
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TIME,시작까지: <TIME>
+TID_CLUB_EVENTS_PREVIOUS_WEEK,주간 종료!
+TID_BT21_SANDY_SKIN,샌디 KOYA
+TID_BT21_SANDY_SKIN_SHOP,샌디 KOYA
+TID_BT21_EDGAR_SKIN,에드거 TATA
+TID_BT21_EDGAR_SKIN_SHOP,에드거 TATA
+TID_BT21_RUFFS_SKIN,러프스 CHIMMY
+TID_BT21_RUFFS_SKIN_SHOP,러프스 CHIMMY
+TID_BT21_BULL_SKIN,불 MANG
+TID_BT21_BULL_SKIN_SHOP,불 MANG
+TID_BT21_BIBI_SKIN,비비 RJ
+TID_BT21_BIBI_SKIN_SHOP,비비 RJ
+TID_BT21_JACKY_SKIN,재키 COOKY
+TID_BT21_JACKY_SKIN_SHOP,재키 COOKY
+TID_BT21_TICK_SKIN,틱 SHOOKY
+TID_BT21_TICK_SKIN_SHOP,틱 SHOOKY
+TID_POSTAL_BROCK_SKIN,우편배달부 브록
+TID_POSTAL_BROCK_SKIN_SHOP,우편배달부 브록
+TID_MAKE_EMZ_SKIN,DJ 엠즈
+TID_MAKE_EMZ_SKIN_SHOP,DJ 엠즈
+TID_SHARK_JAW_COLT_SKIN,상어 톱니 콜트
+TID_SHARK_JAW_COLT_SKIN_SHOP,상어 톱니 콜트
+TID_OCTO_FANG_SKIN,문어 팽
+TID_OCTO_FANG_SKIN_SHOP,문어 팽
+TID_CORAL_BELLE_SKIN,산호 벨
+TID_CORAL_BELLE_SKIN_SHOP,산호 벨
+TID_PHARA_OTIS_SKIN,파라오티스
+TID_PHARA_OTIS_SKIN_SHOP,파라오티스
+TID_RANKED_SUGGESTING_BRAWLER,<NAME>에게 브롤러 제안
+TID_RANKED_BRAWLER_SUGGESTED,브롤러를 제안했습니다
+TID_RANKED_SUGGESTION,<NAME>의 제안: <BRAWLER>
+TID_CLUB_EVENTS_STARTS_IN,시작까지:
+TID_CLUB_EVENTS_ACTIVE_FOR,종료까지:
+TID_GAME_MODE_28,헌터즈
+TID_GAME_MODE_28_DESC,사냥의 계절입니다!\n\n적을 사냥하고 처치하여 포인트를 모으세요. 가장 먼저 <MAX_SCORE>포인트에 도달한 플레이어가 매치에서 승리합니다!
+TID_DEATHMATCH_FFA_INTRO_TEXT,적을 처치하세요!
+TID_NOTIFICATION_DEATHMATCH_FFA,신규 헌터즈 맵 플레이 가능! 새 보상을 획득하세요!
+TID_DEATHMATCH_FFA_1,고난과 역경
+TID_DEATHMATCH_FFA_2,사냥의 계절
+TID_DEATHMATCH_FFA_3,먹잇감
+TID_DEATHMATCH_FFA_4,빠르고 신속하게
+TID_DEATHMATCH_FFA_5,구출
+TID_DEATHMATCH_FFA_6,선명한 자취
+TID_DEATHMATCH_FFA_7,오메가
+TID_CLUB_EVENTS_CHANGED_CLUB,이번 주간 시작 시 소속되어 있던 클럽에만 기여할 수 있습니다.\n\n이 클럽에 기여하려면 다음 주까지 기다려 주세요!\n\n다음 주간 시작까지: <TIME>
+TID_CLUB_QUESTS_CURRENT_CLUB_POINTS,이번 주에 클럽이 수집한 총 포인트
+TID_CLUB_QUESTS_THIS_WEEKS_QUESTS,이번 주의 클럽 퀘스트
+TID_SPEC_ABI_ARTILLERY_DUDE_1,두둑한 금고
+TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,금화 주머니가 명중할 때마다 금화가 <c00cc00><VALUE1>%</c> 더 넓게 원뿔 모양으로 흩어집니다.
+TID_SPEC_ABI_ARTILLERY_DUDE_2,블래스터 마스터
+TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,대포 배치 시 근처의 적을 밀어내고 <c00cc00><VALUE1></c>의 피해를 줍니다.
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,소금통
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,적의 공격을 막아내는 소금통을 놓습니다. 직접 소금통을 공격해 금화 주머니를 터뜨려 주변의 적에게 피해를 줄 수도 있습니다.
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,든든한 망원경
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2_DESC,페니의 대포가 사정거리 안에 보이는 모든 적에게 포탄을 발사합니다.
+TID_RANDOM_GAME_MODE_DESC,"게임 모드, 맵, 추가 모드가 무작위로 조합된 매치를 플레이하세요! 어떤 구성이 나타날지 기대해 봅시다!"
+TID_CLUB_QUESTS_EXPIRED,퀘스트 만료
+TID_CLUB_LEAGUE_ACTIVE,리그 주간 진행 중
+TID_CLUB_QUESTS_TUTORIAL,한 주 동안 퀘스트 3개를 완료하여 클럽 포인트를 획득하세요
+TID_CLUB_QUESTS_YOUR_QUESTS,이번 주의 클럽 퀘스트
+TID_CLUB_QUESTS_NEW_QUESTS,새로운 클럽 퀘스트
+TID_CLUB_QUESTS_REWARDS_INCREASED,클럽 리그와 클럽 퀘스트에서 받을 수 있는 최대 보상이 증가했습니다
+TID_BRAWLBALL_441,이중 위험
+TID_BRAWLBALL_442,바운스 바운스
+TID_KNOCKOUT_441,숨어 있는 적
+TID_KNOCKOUT_442,오픈 필드
+TID_BANKHEIST_441,강둑
+TID_BANKHEIST_442,트리플 포인트
+TID_GEMGRAB_441,낙관주의자
+TID_GEMGRAB_442,이중성
+TID_BOUNTY_441,돌아보지 마
+TID_BOUNTY_442,나란히 나란히
+TID_HOTZONE_441,삼지창
+TID_HOTZONE_442,불균형
+TID_SHOWDOWN_441,옴짝달싹
+TID_SHOWDOWN_442,줌 아웃
+TID_TRUE_GOLD_FANG_SKIN,트루 골드 팽
+TID_TRUE_GOLD_FANG_SKIN_SHOP,트루 골드 팽
+TID_TRUE_SILVER_FANG_SKIN,트루 실버 팽
+TID_TRUE_SILVER_FANG_SKIN_SHOP,트루 실버 팽
+TID_TRUE_GOLD_BONNIE_SKIN,트루 골드 보니
+TID_TRUE_GOLD_BONNIE_SKIN_SHOP,트루 골드 보니
+TID_TRUE_SILVER_BONNIE_SKIN,트루 실버 보니
+TID_TRUE_SILVER_BONNIE_SKIN_SHOP,트루 실버 보니
+TID_TRUE_GOLD_JANET_SKIN,트루 골드 자넷
+TID_TRUE_GOLD_JANET_SKIN_SHOP,트루 골드 자넷
+TID_TRUE_SILVER_JANET_SKIN,트루 실버 자넷
+TID_TRUE_SILVER_JANET_SKIN_SHOP,트루 실버 자넷
+TID_TRUE_GOLD_GROM_SKIN,트루 골드 그롬
+TID_TRUE_GOLD_GROM_SKIN_SHOP,트루 골드 그롬
+TID_TRUE_SILVER_GROM_SKIN,트루 실버 그롬
+TID_TRUE_SILVER_GROM_SKIN_SHOP,트루 실버 그롬
+TID_TRUE_GOLD_EVE_SKIN,트루 골드 이브
+TID_TRUE_GOLD_EVE_SKIN_SHOP,트루 골드 이브
+TID_TRUE_SILVER_EVE_SKIN,트루 실버 이브
+TID_TRUE_SILVER_EVE_SKIN_SHOP,트루 실버 이브
+TID_BRAWL_PASS_SEASON_12,심해 브롤
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

@@ -1,152 +1,96 @@
-.class public Lbe/g;
-.super Lb5/m;
-.source "IteratorsJVM.kt"
+.class public final Lbe/g;
+.super Lse/h;
+.source "FriendsStorage.kt"
+
+# interfaces
+.implements Lre/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/l<",
+        "Ljava/lang/Exception;",
+        "Lie/h;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic f:Lbe/h$a;
 
 
 # direct methods
-.method public static final v(Ljava/lang/Iterable;I)I
-    .locals 1
+.method public constructor <init>(Lbe/h$a;)V
+    .locals 0
 
-    if-eqz p0, :cond_1
+    iput-object p1, p0, Lbe/g;->f:Lbe/h$a;
 
-    .line 1
-    instance-of v0, p0, Ljava/util/Collection;
+    const/4 p1, 0x1
 
-    if-eqz v0, :cond_0
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
-    check-cast p0, Ljava/util/Collection;
-
-    invoke-interface {p0}, Ljava/util/Collection;->size()I
-
-    move-result p1
-
-    :cond_0
-    return p1
-
-    :cond_1
-    const-string p0, "$this$collectionSizeOrDefault"
-
-    .line 2
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p0, 0x0
-
-    throw p0
+    return-void
 .end method
 
-.method public static final w(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/Collection;
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
     .line 1
-    instance-of v0, p0, Ljava/util/Set;
+    check-cast p1, Ljava/lang/Exception;
 
-    if-eqz v0, :cond_0
-
-    check-cast p0, Ljava/util/Collection;
-
-    goto :goto_1
+    const-string v0, "it"
 
     .line 2
-    :cond_0
-    instance-of v0, p0, Ljava/util/Collection;
-
-    if-eqz v0, :cond_4
-
-    const/4 v0, 0x2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    check-cast p1, Ljava/util/Collection;
+    sget-object v0, Lcom/supercell/id/util/NormalizedError;->l:Lcom/supercell/id/util/NormalizedError$b;
 
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    invoke-virtual {v0, p1}, Lcom/supercell/id/util/NormalizedError$b;->a(Ljava/lang/Exception;)Lcom/supercell/id/util/NormalizedError;
 
-    move-result p1
-
-    if-ge p1, v0, :cond_1
-
-    check-cast p0, Ljava/util/Collection;
-
-    goto :goto_1
+    move-result-object p1
 
     .line 4
-    :cond_1
-    move-object p1, p0
+    iget-object v0, p0, Lbe/g;->f:Lbe/h$a;
 
-    check-cast p1, Ljava/util/Collection;
+    iget-object v0, v0, Lbe/h$a;->f:Lbe/h;
+
+    new-instance v1, Lbe/h$b$j;
+
+    invoke-direct {v1, p1}, Lbe/h$b$j;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+
+    invoke-virtual {v0, v1}, Lbe/v0;->a(Lbe/a;)V
 
     .line 5
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    iget-object p1, p0, Lbe/g;->f:Lbe/h$a;
 
-    move-result v1
-
-    if-le v1, v0, :cond_2
-
-    instance-of v0, p1, Ljava/util/ArrayList;
-
-    if-eqz v0, :cond_2
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v0, 0x0
-
-    :goto_0
-    if-eqz v0, :cond_3
+    iget-object p1, p1, Lbe/h$a;->f:Lbe/h;
 
     .line 6
-    invoke-static {p0}, Lbe/k;->U(Ljava/lang/Iterable;)Ljava/util/HashSet;
+    iget-object p1, p1, Lbe/h;->f:Lae/r1;
 
-    move-result-object p0
-
-    goto :goto_1
-
-    :cond_3
-    move-object p0, p1
-
-    goto :goto_1
+    if-eqz p1, :cond_0
 
     .line 7
-    :cond_4
-    invoke-static {p0}, Lbe/k;->U(Ljava/lang/Iterable;)Ljava/util/HashSet;
+    invoke-virtual {p1}, Lae/r1;->a()V
 
-    move-result-object p0
+    .line 8
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    :goto_1
-    return-object p0
-.end method
-
-.method public static final x(Ljava/lang/Iterable;)Ljava/util/List;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    .line 2
-    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    :goto_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Iterable;
-
-    .line 3
-    invoke-static {v0, v1}, Lbe/i;->z(Ljava/util/Collection;Ljava/lang/Iterable;)Z
-
-    goto :goto_0
+    return-object p1
 
     :cond_0
-    return-object v0
+    const-string p1, "getFriendsCache"
+
+    .line 9
+    invoke-static {p1}, Lt3/e;->g(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method

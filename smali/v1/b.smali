@@ -1,5 +1,6 @@
 .class public final Lv1/b;
 .super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-auth@@19.0.0"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -10,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/auth/api/proxy/ProxyResponse;",
+        "Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;",
         ">;"
     }
 .end annotation
@@ -20,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +29,7 @@
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 10
+    .locals 7
 
     .line 1
     invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
@@ -38,131 +38,76 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move-object v2, v1
 
-    move-object v6, v1
-
-    move-object v8, v6
-
-    move-object v9, v8
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v7, 0x0
+    move-object v3, v2
 
     .line 2
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result v1
+    move-result v4
 
-    if-ge v1, v0, :cond_6
+    if-ge v4, v0, :cond_3
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v1
+    move-result v4
 
-    const v2, 0xffff
+    const v5, 0xffff
 
-    and-int/2addr v2, v1
+    and-int/2addr v5, v4
 
-    const/4 v3, 0x1
+    const/4 v6, 0x1
 
-    if-eq v2, v3, :cond_5
+    if-eq v5, v6, :cond_2
 
-    const/4 v3, 0x2
+    const/4 v6, 0x2
 
-    if-eq v2, v3, :cond_4
+    if-eq v5, v6, :cond_1
 
-    const/4 v3, 0x3
+    const/4 v6, 0x3
 
-    if-eq v2, v3, :cond_3
-
-    const/4 v3, 0x4
-
-    if-eq v2, v3, :cond_2
-
-    const/4 v3, 0x5
-
-    if-eq v2, v3, :cond_1
-
-    const/16 v3, 0x3e8
-
-    if-eq v2, v3, :cond_0
+    if-eq v5, v6, :cond_0
 
     .line 4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     .line 5
     :cond_0
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result v4
+    move-result-object v3
 
     goto :goto_0
 
     .line 6
     :cond_1
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->e(Landroid/os/Parcel;I)[B
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v2
 
     goto :goto_0
 
     .line 7
     :cond_2
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->d(Landroid/os/Parcel;I)Landroid/os/Bundle;
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v1
 
     goto :goto_0
 
     .line 8
     :cond_3
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v7
-
-    goto :goto_0
-
-    .line 9
-    :cond_4
-    sget-object v2, Landroid/app/PendingIntent;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 10
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-
-    move-result-object v1
-
-    move-object v6, v1
-
-    check-cast v6, Landroid/app/PendingIntent;
-
-    goto :goto_0
-
-    .line 11
-    :cond_5
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v5
-
-    goto :goto_0
-
-    .line 12
-    :cond_6
     invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
 
-    .line 13
-    new-instance p1, Lcom/google/android/gms/auth/api/proxy/ProxyResponse;
+    .line 9
+    new-instance p1, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;
 
-    move-object v3, p1
-
-    invoke-direct/range {v3 .. v9}, Lcom/google/android/gms/auth/api/proxy/ProxyResponse;-><init>(IILandroid/app/PendingIntent;ILandroid/os/Bundle;[B)V
+    invoke-direct {p1, v1, v2, v3}, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object p1
 .end method
@@ -170,8 +115,7 @@
 .method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
-    new-array p1, p1, [Lcom/google/android/gms/auth/api/proxy/ProxyResponse;
+    new-array p1, p1, [Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;
 
     return-object p1
 .end method

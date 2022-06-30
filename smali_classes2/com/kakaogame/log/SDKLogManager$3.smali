@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/kakaogame/log/SDKLogManager;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/log/SDKLogManager$3;->this$0:Lcom/kakaogame/log/SDKLogManager;
 
     iput-object p2, p0, Lcom/kakaogame/log/SDKLogManager$3;->val$context:Landroid/content/Context;
@@ -241,7 +240,7 @@
     move-exception v0
 
     .line 19
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 20
     :goto_1

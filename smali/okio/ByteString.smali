@@ -282,15 +282,17 @@
 
     const-string v1, "Unexpected hex string: "
 
-    invoke-static {v1, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 8
+    invoke-static {v1, p0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
+    .line 9
     invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 8
+    .line 10
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -349,7 +351,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_2
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -546,7 +547,7 @@
     if-eqz p0, :cond_0
 
     .line 8
-    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {p0}, Ljava/nio/Buffer;->remaining()I
 
     move-result v0
 
@@ -701,15 +702,17 @@
 
     const-string v0, "byteCount < 0: "
 
-    invoke-static {v0, p1}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    .line 6
+    invoke-static {v0, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 7
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
 
-    .line 6
+    .line 8
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -757,7 +760,7 @@
     const/4 v1, 0x1
 
     .line 4
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v0, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 5
     iget-object p1, p1, Lokio/ByteString;->data:[B
@@ -814,7 +817,6 @@
 .method public asByteBuffer()Ljava/nio/ByteBuffer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ByteString;->data:[B
 
     invoke-static {v0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
@@ -831,7 +833,6 @@
 .method public base64()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ByteString;->data:[B
 
     invoke-static {v0}, Lokio/Base64;->encode([B)Ljava/lang/String;
@@ -844,7 +845,6 @@
 .method public base64Url()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ByteString;->data:[B
 
     invoke-static {v0}, Lokio/Base64;->encodeUrl([B)Ljava/lang/String;
@@ -1045,7 +1045,6 @@
 .method public getByte(I)B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ByteString;->data:[B
 
     aget-byte p1, v0, p1
@@ -1141,7 +1140,6 @@
 
     const-string v0, "HmacSHA1"
 
-    .line 1
     invoke-direct {p0, v0, p1}, Lokio/ByteString;->hmac(Ljava/lang/String;Lokio/ByteString;)Lokio/ByteString;
 
     move-result-object p1
@@ -1154,7 +1152,6 @@
 
     const-string v0, "HmacSHA256"
 
-    .line 1
     invoke-direct {p0, v0, p1}, Lokio/ByteString;->hmac(Ljava/lang/String;Lokio/ByteString;)Lokio/ByteString;
 
     move-result-object p1
@@ -1167,7 +1164,6 @@
 
     const-string v0, "HmacSHA512"
 
-    .line 1
     invoke-direct {p0, v0, p1}, Lokio/ByteString;->hmac(Ljava/lang/String;Lokio/ByteString;)Lokio/ByteString;
 
     move-result-object p1
@@ -1269,7 +1265,6 @@
 .method public internalArray()[B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ByteString;->data:[B
 
     return-object v0
@@ -1374,7 +1369,6 @@
 
     const-string v0, "MD5"
 
-    .line 1
     invoke-direct {p0, v0}, Lokio/ByteString;->digest(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object v0
@@ -1440,7 +1434,6 @@
 
     const-string v0, "SHA-1"
 
-    .line 1
     invoke-direct {p0, v0}, Lokio/ByteString;->digest(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object v0
@@ -1453,7 +1446,6 @@
 
     const-string v0, "SHA-256"
 
-    .line 1
     invoke-direct {p0, v0}, Lokio/ByteString;->digest(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object v0
@@ -1466,7 +1458,6 @@
 
     const-string v0, "SHA-512"
 
-    .line 1
     invoke-direct {p0, v0}, Lokio/ByteString;->digest(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object v0
@@ -1477,7 +1468,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ByteString;->data:[B
 
     array-length v0, v0
@@ -1614,25 +1604,29 @@
 
     const-string p2, "endIndex > length("
 
+    .line 9
     invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
+    .line 10
     iget-object v0, p0, Lokio/ByteString;->data:[B
 
     array-length v0, v0
 
     const-string v1, ")"
 
+    .line 11
     invoke-static {p2, v0, v1}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
+    .line 12
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
-    .line 9
+    .line 13
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1826,7 +1820,6 @@
 .method public toByteArray()[B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ByteString;->data:[B
 
     invoke-virtual {v0}, [B->clone()Ljava/lang/Object;
@@ -1891,6 +1884,7 @@
 
     move-result-object v0
 
+    .line 6
     invoke-virtual {p0}, Lokio/ByteString;->hex()Ljava/lang/String;
 
     move-result-object v1
@@ -1905,12 +1899,13 @@
 
     goto :goto_0
 
-    .line 6
+    .line 7
     :cond_1
     invoke-static {v5}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 8
     iget-object v2, p0, Lokio/ByteString;->data:[B
 
     array-length v2, v2
@@ -1940,7 +1935,7 @@
     :goto_0
     return-object v0
 
-    .line 7
+    .line 9
     :cond_2
     invoke-virtual {v0, v7, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
@@ -1950,7 +1945,7 @@
 
     const-string v7, "\\\\"
 
-    .line 8
+    .line 10
     invoke-virtual {v1, v3, v7}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v1
@@ -1959,7 +1954,7 @@
 
     const-string v7, "\\n"
 
-    .line 9
+    .line 11
     invoke-virtual {v1, v3, v7}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v1
@@ -1968,23 +1963,24 @@
 
     const-string v7, "\\r"
 
-    .line 10
+    .line 12
     invoke-virtual {v1, v3, v7}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 11
+    .line 13
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-ge v2, v0, :cond_3
 
-    .line 12
+    .line 14
     invoke-static {v5}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 15
     iget-object v2, p0, Lokio/ByteString;->data:[B
 
     array-length v2, v2
@@ -2008,8 +2004,8 @@
     :cond_3
     const-string v0, "[text="
 
-    .line 13
-    invoke-static {v0, v1, v6}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 16
+    invoke-static {v0, v1, v6}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

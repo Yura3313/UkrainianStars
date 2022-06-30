@@ -195,7 +195,6 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     new-instance v18, Landroid/support/v4/media/session/PlaybackStateCompat;
 
     move-object/from16 v1, v18
@@ -242,7 +241,6 @@
 .method public setActions(J)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mActions:J
 
     return-object p0
@@ -251,7 +249,6 @@
 .method public setActiveQueueItemId(J)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mActiveItemId:J
 
     return-object p0
@@ -260,7 +257,6 @@
 .method public setBufferedPosition(J)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mBufferedPosition:J
 
     return-object p0
@@ -290,7 +286,6 @@
 .method public setExtras(Landroid/os/Bundle;)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mExtras:Landroid/os/Bundle;
 
     return-object p0

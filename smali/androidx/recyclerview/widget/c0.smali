@@ -8,7 +8,7 @@
 
 .field public b:Landroid/widget/Scroller;
 
-.field public final c:Landroidx/recyclerview/widget/RecyclerView$q;
+.field public final c:Landroidx/recyclerview/widget/c0$a;
 
 
 # direct methods
@@ -23,14 +23,14 @@
 
     invoke-direct {v0, p0}, Landroidx/recyclerview/widget/c0$a;-><init>(Landroidx/recyclerview/widget/c0;)V
 
-    iput-object v0, p0, Landroidx/recyclerview/widget/c0;->c:Landroidx/recyclerview/widget/RecyclerView$q;
+    iput-object v0, p0, Landroidx/recyclerview/widget/c0;->c:Landroidx/recyclerview/widget/c0$a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroidx/recyclerview/widget/RecyclerView;)V
+.method public final a(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -49,7 +49,7 @@
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object v1, p0, Landroidx/recyclerview/widget/c0;->c:Landroidx/recyclerview/widget/RecyclerView$q;
+    iget-object v1, p0, Landroidx/recyclerview/widget/c0;->c:Landroidx/recyclerview/widget/c0$a;
 
     invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->d0(Landroidx/recyclerview/widget/RecyclerView$q;)V
 
@@ -76,7 +76,7 @@
     .line 6
     iget-object p1, p0, Landroidx/recyclerview/widget/c0;->a:Landroidx/recyclerview/widget/RecyclerView;
 
-    iget-object v0, p0, Landroidx/recyclerview/widget/c0;->c:Landroidx/recyclerview/widget/RecyclerView$q;
+    iget-object v0, p0, Landroidx/recyclerview/widget/c0;->c:Landroidx/recyclerview/widget/c0$a;
 
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->h(Landroidx/recyclerview/widget/RecyclerView$q;)V
 
@@ -90,7 +90,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/c0;->a:Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -145,7 +145,7 @@
 
     iget-object v0, p0, Landroidx/recyclerview/widget/c0;->a:Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -160,8 +160,8 @@
 .method public abstract e(Landroidx/recyclerview/widget/RecyclerView$m;II)I
 .end method
 
-.method public f()V
-    .locals 10
+.method public final f()V
+    .locals 5
 
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/c0;->a:Landroidx/recyclerview/widget/RecyclerView;
@@ -211,20 +211,14 @@
 
     .line 6
     :cond_3
-    iget-object v4, p0, Landroidx/recyclerview/widget/c0;->a:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v2, p0, Landroidx/recyclerview/widget/c0;->a:Landroidx/recyclerview/widget/RecyclerView;
 
-    aget v5, v0, v1
+    aget v4, v0, v1
 
-    aget v6, v0, v3
-
-    const/4 v9, 0x0
-
-    const/high16 v8, -0x80000000
-
-    const/4 v7, 0x0
+    aget v0, v0, v3
 
     .line 7
-    invoke-virtual/range {v4 .. v9}, Landroidx/recyclerview/widget/RecyclerView;->l0(IILandroid/view/animation/Interpolator;IZ)V
+    invoke-virtual {v2, v4, v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->l0(IIZ)V
 
     :cond_4
     return-void

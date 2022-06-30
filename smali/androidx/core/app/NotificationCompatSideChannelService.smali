@@ -15,7 +15,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     return-void
@@ -23,17 +22,17 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/String;ILjava/lang/String;)V
+.method public abstract a()V
 .end method
 
-.method public abstract b(Ljava/lang/String;)V
+.method public abstract b()V
 .end method
 
-.method public c(ILjava/lang/String;)V
+.method public final c(ILjava/lang/String;)V
     .locals 4
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/Service;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -99,10 +98,10 @@
     goto :goto_1
 .end method
 
-.method public abstract d(Ljava/lang/String;ILjava/lang/String;Landroid/app/Notification;)V
+.method public abstract d()V
 .end method
 
-.method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+.method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
 
     .line 1

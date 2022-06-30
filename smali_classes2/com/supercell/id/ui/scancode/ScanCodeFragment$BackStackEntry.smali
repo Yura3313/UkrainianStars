@@ -39,13 +39,11 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     new-instance v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$BackStackEntry$a;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$BackStackEntry$a;-><init>(Lle/g;)V
+    invoke-direct {v0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$BackStackEntry$a;-><init>()V
 
     sput-object v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$BackStackEntry;->CREATOR:Lcom/supercell/id/ui/scancode/ScanCodeFragment$BackStackEntry$a;
 
@@ -68,79 +66,31 @@
 
 
 # virtual methods
-.method public B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/supercell/id/ui/MainActivity;",
-            ")",
-            "Ljava/lang/Class<",
-            "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
-            ">;"
-        }
-    .end annotation
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    const-class p1, Lrc/j1;
-
-    return-object p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public E(Lcom/supercell/id/ui/MainActivity;III)I
+.method public final G(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
-    if-eqz p1, :cond_0
+    const-string p2, "mainActivity"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     return p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public G(Lcom/supercell/id/ui/MainActivity;III)I
+.method public final K(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
-    if-eqz p1, :cond_0
+    const-string p2, "mainActivity"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     return p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public I()Z
+.method public final N()Z
     .locals 1
 
     const/4 v0, 0x1
@@ -148,8 +98,8 @@
     return v0
 .end method
 
-.method public T(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
-    .locals 0
+.method public final Q(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -157,38 +107,21 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lrc/g1;",
+            "Lwc/a1;",
             ">;"
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "mainActivity"
 
-    .line 1
-    const-class p1, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-class p1, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
 
     return-object p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public describeContents()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public i()Ljava/lang/Class;
+.method public final a()Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -200,13 +133,20 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$BackStackEntry;->g:Ljava/lang/Class;
 
     return-object v0
 .end method
 
-.method public t()Z
+.method public final describeContents()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final l()Z
     .locals 1
 
     const/4 v0, 0x1
@@ -214,21 +154,22 @@
     return v0
 .end method
 
-.method public t0(Lcom/supercell/id/ui/MainActivity;)Z
-    .locals 1
+.method public final r0(Lcom/supercell/id/ui/MainActivity;)Z
+    .locals 2
 
-    if-eqz p1, :cond_1
+    const-string v0, "mainActivity"
 
-    const-string v0, "mainActivity.resources"
+    const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->d(Lcom/supercell/id/ui/MainActivity;)Z
+    .line 2
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->d(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result p1
 
@@ -243,20 +184,33 @@
 
     :goto_0
     return p1
-
-    :cond_1
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     return-void
+.end method
+
+.method public final x(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/supercell/id/ui/MainActivity;",
+            ")",
+            "Ljava/lang/Class<",
+            "+",
+            "Lcom/supercell/id/ui/BaseFragment;",
+            ">;"
+        }
+    .end annotation
+
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-class p1, Lwc/d1;
+
+    return-object p1
 .end method

@@ -27,7 +27,6 @@
 .method public constructor <init>(Landroid/app/AlertDialog;Lcom/kakaogame/KGApplication$KGPermissionTheme;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/ui/PermissionManager$3;->val$dialog:Landroid/app/AlertDialog;
 
     iput-object p2, p0, Lcom/kakaogame/ui/PermissionManager$3;->val$theme:Lcom/kakaogame/KGApplication$KGPermissionTheme;
@@ -42,7 +41,6 @@
 .method public onShow(Landroid/content/DialogInterface;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/kakaogame/ui/PermissionManager$3;->val$dialog:Landroid/app/AlertDialog;
 
     const/4 v0, -0x1
@@ -57,7 +55,7 @@
 
     move-result v0
 
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setTextColor(I)V
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
     return-void
 .end method

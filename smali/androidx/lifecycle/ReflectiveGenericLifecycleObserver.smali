@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
+.method public final a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
     .locals 3
 
     .line 1
@@ -49,7 +49,7 @@
     iget-object v1, p0, Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;->a:Ljava/lang/Object;
 
     .line 2
-    iget-object v2, v0, Landroidx/lifecycle/b$a;->a:Ljava/util/Map;
+    iget-object v2, v0, Landroidx/lifecycle/b$a;->a:Ljava/util/HashMap;
 
     invoke-interface {v2, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -60,7 +60,7 @@
     invoke-static {v2, p1, p2, v1}, Landroidx/lifecycle/b$a;->a(Ljava/util/List;Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;Ljava/lang/Object;)V
 
     .line 3
-    iget-object v0, v0, Landroidx/lifecycle/b$a;->a:Ljava/util/Map;
+    iget-object v0, v0, Landroidx/lifecycle/b$a;->a:Ljava/util/HashMap;
 
     sget-object v2, Landroidx/lifecycle/f$b;->ON_ANY:Landroidx/lifecycle/f$b;
 

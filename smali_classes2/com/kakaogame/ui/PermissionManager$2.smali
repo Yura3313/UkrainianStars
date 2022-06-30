@@ -31,7 +31,6 @@
 .method public constructor <init>(Landroid/app/AlertDialog$Builder;Lcom/kakaogame/KGApplication$KGPermissionTheme;Landroid/app/Activity;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/ui/PermissionManager$2;->val$builder:Landroid/app/AlertDialog$Builder;
 
     iput-object p2, p0, Lcom/kakaogame/ui/PermissionManager$2;->val$theme:Lcom/kakaogame/KGApplication$KGPermissionTheme;
@@ -50,7 +49,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/ui/PermissionManager$2;->val$builder:Landroid/app/AlertDialog$Builder;
 
     iget-object v1, p0, Lcom/kakaogame/ui/PermissionManager$2;->val$theme:Lcom/kakaogame/KGApplication$KGPermissionTheme;

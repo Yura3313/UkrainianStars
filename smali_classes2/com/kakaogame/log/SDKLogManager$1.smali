@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/log/SDKLogManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/log/SDKLogManager$1;->this$0:Lcom/kakaogame/log/SDKLogManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -179,7 +178,7 @@
     move-exception p1
 
     .line 17
-    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
     return-void

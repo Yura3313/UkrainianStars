@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/i;
+.class public final Landroidx/fragment/app/i;
 .super Ljava/lang/Object;
 .source "DefaultSpecialEffectsController.java"
 
@@ -7,23 +7,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/fragment/app/p0;
-
-.field public final synthetic h:Landroid/view/View;
-
-.field public final synthetic i:Landroid/graphics/Rect;
+.field public final synthetic f:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/c;Landroidx/fragment/app/p0;Landroid/view/View;Landroid/graphics/Rect;)V
+.method public constructor <init>(Ljava/util/ArrayList;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/fragment/app/i;->g:Landroidx/fragment/app/p0;
-
-    iput-object p3, p0, Landroidx/fragment/app/i;->h:Landroid/view/View;
-
-    iput-object p4, p0, Landroidx/fragment/app/i;->i:Landroid/graphics/Rect;
+    iput-object p1, p0, Landroidx/fragment/app/i;->f:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,17 +23,14 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public final run()V
+    .locals 2
 
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/i;->g:Landroidx/fragment/app/p0;
+    iget-object v0, p0, Landroidx/fragment/app/i;->f:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Landroidx/fragment/app/i;->h:Landroid/view/View;
+    const/4 v1, 0x4
 
-    iget-object v2, p0, Landroidx/fragment/app/i;->i:Landroid/graphics/Rect;
-
-    invoke-virtual {v0, v1, v2}, Landroidx/fragment/app/p0;->j(Landroid/view/View;Landroid/graphics/Rect;)V
+    invoke-static {v0, v1}, Landroidx/fragment/app/d0;->c(Ljava/util/ArrayList;I)V
 
     return-void
 .end method

@@ -16,7 +16,7 @@
 
 .field public static final DEFAULT_REQUEST_CODE:I = 0x271c
 
-.field private static final instance$delegate:Lae/c;
+.field private static final instance$delegate:Lie/c;
 
 
 # instance fields
@@ -37,18 +37,17 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/auth/AuthCodeClient;->Companion:Lcom/kakao/sdk/auth/AuthCodeClient$Companion;
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/AuthCodeClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/auth/AuthCodeClient$Companion$instance$2;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/auth/AuthCodeClient;->instance$delegate:Lae/c;
+    sput-object v0, Lcom/kakao/sdk/auth/AuthCodeClient;->instance$delegate:Lie/c;
 
     return-void
 .end method
@@ -70,7 +69,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/auth/AuthCodeClient;-><init>(Lcom/kakao/sdk/common/util/IntentResolveClient;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILle/g;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/auth/AuthCodeClient;-><init>(Lcom/kakao/sdk/common/util/IntentResolveClient;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILse/e;)V
 
     return-void
 .end method
@@ -78,15 +77,21 @@
 .method public constructor <init>(Lcom/kakao/sdk/common/util/IntentResolveClient;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "intentResolveClient"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_2
+    const-string v0, "applicationInfo"
 
-    if-eqz p3, :cond_1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_0
+    const-string v0, "contextInfo"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "approvalType"
+
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -100,45 +105,16 @@
     iput-object p4, p0, Lcom/kakao/sdk/auth/AuthCodeClient;->approvalType:Lcom/kakao/sdk/common/model/ApprovalType;
 
     return-void
-
-    :cond_0
-    const-string p1, "approvalType"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "contextInfo"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "applicationInfo"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "intentResolveClient"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/common/util/IntentResolveClient;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILle/g;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/common/util/IntentResolveClient;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILse/e;)V
     .locals 0
 
     and-int/lit8 p6, p5, 0x1
 
     if-eqz p6, :cond_0
 
-    .line 3
+    .line 2
     sget-object p1, Lcom/kakao/sdk/common/util/IntentResolveClient;->Companion:Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;
 
     invoke-virtual {p1}, Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;->getInstance()Lcom/kakao/sdk/common/util/IntentResolveClient;
@@ -150,7 +126,7 @@
 
     if-eqz p6, :cond_1
 
-    .line 4
+    .line 3
     sget-object p2, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p2}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -162,7 +138,7 @@
 
     if-eqz p6, :cond_2
 
-    .line 5
+    .line 4
     sget-object p3, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p3}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -174,7 +150,7 @@
 
     if-eqz p5, :cond_3
 
-    .line 6
+    .line 5
     sget-object p4, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p4}, Lcom/kakao/sdk/common/KakaoSdk;->getApprovalType()Lcom/kakao/sdk/common/model/ApprovalType;
@@ -187,16 +163,15 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lae/c;
+.method public static final synthetic access$getInstance$cp()Lie/c;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/kakao/sdk/auth/AuthCodeClient;->instance$delegate:Lae/c;
+    sget-object v0, Lcom/kakao/sdk/auth/AuthCodeClient;->instance$delegate:Lie/c;
 
     return-object v0
 .end method
 
-.method public static synthetic authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+.method public static synthetic authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
     .locals 14
 
     move/from16 v0, p11
@@ -307,13 +282,12 @@
 
     move-object/from16 v13, p10
 
-    .line 1
-    invoke-virtual/range {v3 .. v13}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;)V
+    invoke-virtual/range {v3 .. v13}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;)V
 
     return-void
 .end method
 
-.method public static synthetic authorizeWithKakaoTalk$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+.method public static synthetic authorizeWithKakaoTalk$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
     .locals 7
 
     and-int/lit8 p8, p7, 0x2
@@ -374,8 +348,7 @@
 
     move-object v6, p6
 
-    .line 1
-    invoke-virtual/range {v0 .. v6}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoTalk(Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lke/p;)V
+    invoke-virtual/range {v0 .. v6}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoTalk(Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lre/p;)V
 
     return-void
 .end method
@@ -394,7 +367,7 @@
 
 
 # virtual methods
-.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Lke/p;)V
+.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Lre/p;)V
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -414,12 +387,12 @@
             "Ljava/util/List<",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -450,12 +423,12 @@
 
     move-object/from16 v10, p7
 
-    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;)V
+.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;)V
     .locals 18
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -480,12 +453,12 @@
             "Ljava/lang/String;",
             ">;",
             "Ljava/lang/String;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -500,18 +473,22 @@
 
     move-object/from16 v4, p10
 
-    const/4 v5, 0x0
+    const-string v5, "context"
 
-    if-eqz v0, :cond_4
+    invoke-static {v0, v5}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v4, :cond_3
+    const-string v5, "callback"
+
+    invoke-static {v4, v5}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    new-instance v15, Lcom/kakao/sdk/auth/UriUtility;
+    new-instance v5, Lcom/kakao/sdk/auth/UriUtility;
+
+    const/4 v15, 0x0
 
     const/4 v6, 0x1
 
-    invoke-direct {v15, v5, v6, v5}, Lcom/kakao/sdk/auth/UriUtility;-><init>(Lcom/kakao/sdk/common/model/ServerHosts;ILle/g;)V
+    invoke-direct {v5, v15, v6, v15}, Lcom/kakao/sdk/auth/UriUtility;-><init>(Lcom/kakao/sdk/common/model/ServerHosts;ILse/e;)V
 
     .line 2
     iget-object v6, v1, Lcom/kakao/sdk/auth/AuthCodeClient;->applicationInfo:Lcom/kakao/sdk/common/model/ApplicationInfo;
@@ -546,7 +523,7 @@
     .line 6
     sget-object v6, Lcom/kakao/sdk/auth/AuthCodeClient;->Companion:Lcom/kakao/sdk/auth/AuthCodeClient$Companion;
 
-    sget-object v8, Lre/a;->a:Ljava/nio/charset/Charset;
+    sget-object v8, Lye/a;->a:Ljava/nio/charset/Charset;
 
     invoke-virtual {v3, v8}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
@@ -554,7 +531,7 @@
 
     const-string v10, "(this as java.lang.String).getBytes(charset)"
 
-    invoke-static {v8, v10}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v8, v10}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v6, v8}, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;->codeChallenge([B)Ljava/lang/String;
 
@@ -565,7 +542,7 @@
     goto :goto_0
 
     :cond_0
-    move-object/from16 v17, v5
+    move-object/from16 v17, v15
 
     :goto_0
     if-eqz v3, :cond_1
@@ -575,10 +552,10 @@
     goto :goto_1
 
     :cond_1
-    move-object v3, v5
+    move-object v3, v15
 
     :goto_1
-    move-object v6, v15
+    move-object v6, v5
 
     move-object/from16 v8, p4
 
@@ -589,8 +566,6 @@
     move-object/from16 v13, p6
 
     move-object/from16 v14, p2
-
-    move-object v5, v15
 
     move-object/from16 v15, v16
 
@@ -629,7 +604,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v1, v4}, Lcom/kakao/sdk/auth/AuthCodeClient;->resultReceiver$auth_release(Lke/p;)Landroid/os/ResultReceiver;
+    invoke-virtual {v1, v4}, Lcom/kakao/sdk/auth/AuthCodeClient;->resultReceiver$auth_release(Lre/p;)Landroid/os/ResultReceiver;
 
     move-result-object v6
 
@@ -656,32 +631,13 @@
     const/4 v2, 0x0
 
     .line 15
-    invoke-interface {v4, v2, v0}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v4, v2, v0}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_2
     return-void
-
-    :cond_3
-    move-object v2, v5
-
-    const-string v0, "callback"
-
-    .line 16
-    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v2
-
-    :cond_4
-    move-object v2, v5
-
-    const-string v0, "context"
-
-    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v2
 .end method
 
-.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Lke/p;)V
+.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Lre/p;)V
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -705,12 +661,12 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -741,12 +697,12 @@
 
     move-object/from16 v10, p9
 
-    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLke/p;)V
+.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLre/p;)V
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -766,12 +722,12 @@
             "Ljava/util/List<",
             "Ljava/lang/String;",
             ">;Z",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -802,12 +758,12 @@
 
     move-object/from16 v10, p8
 
-    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Lke/p;)V
+.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Lre/p;)V
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -824,12 +780,12 @@
             "Ljava/util/List<",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -860,12 +816,12 @@
 
     move-object/from16 v10, p6
 
-    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Lke/p;)V
+.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Lre/p;)V
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -879,12 +835,12 @@
             "Ljava/lang/String;",
             ">;",
             "Ljava/lang/String;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -915,12 +871,12 @@
 
     move-object/from16 v10, p5
 
-    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Lke/p;)V
+.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Lre/p;)V
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -933,12 +889,12 @@
             "Ljava/util/List<",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -969,12 +925,12 @@
 
     move-object/from16 v10, p4
 
-    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Lke/p;)V
+.method public final authorizeWithKakaoAccount(Landroid/content/Context;Ljava/util/List;Lre/p;)V
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -984,12 +940,12 @@
             "+",
             "Lcom/kakao/sdk/auth/model/Prompt;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1020,23 +976,23 @@
 
     move-object/from16 v10, p3
 
-    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final authorizeWithKakaoAccount(Landroid/content/Context;Lke/p;)V
+.method public final authorizeWithKakaoAccount(Landroid/content/Context;Lre/p;)V
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1067,13 +1023,13 @@
 
     move-object v10, p2
 
-    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final authorizeWithKakaoTalk(Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lke/p;)V
-    .locals 20
+.method public final authorizeWithKakaoTalk(Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lre/p;)V
+    .locals 18
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1086,12 +1042,12 @@
             "Ljava/lang/String;",
             ">;",
             "Ljava/lang/String;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1104,16 +1060,20 @@
 
     move-object/from16 v10, p6
 
-    const/4 v11, 0x0
+    const-string v3, "context"
 
-    if-eqz v0, :cond_6
+    invoke-static {v0, v3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v10, :cond_5
+    const-string v3, "callback"
+
+    invoke-static {v10, v3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual/range {p0 .. p1}, Lcom/kakao/sdk/auth/AuthCodeClient;->isKakaoTalkLoginAvailable(Landroid/content/Context;)Z
 
     move-result v3
+
+    const/4 v11, 0x0
 
     if-nez v3, :cond_0
 
@@ -1126,7 +1086,7 @@
 
     invoke-direct {v0, v2, v3}, Lcom/kakao/sdk/common/model/ClientError;-><init>(Lcom/kakao/sdk/common/model/ClientErrorCause;Ljava/lang/String;)V
 
-    invoke-interface {v10, v11, v0}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v10, v11, v0}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_0
 
@@ -1173,16 +1133,12 @@
 
     const/16 v16, 0x0
 
-    const/16 v17, 0x0
-
-    const/16 v18, 0x0
-
-    const/16 v19, 0x3e
+    const/16 v17, 0x3e
 
     move-object/from16 v12, p3
 
     .line 8
-    invoke-static/range {v12 .. v19}, Lbe/k;->K(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lke/l;I)Ljava/lang/String;
+    invoke-static/range {v12 .. v17}, Lje/j;->E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -1201,16 +1157,12 @@
 
     const/16 v16, 0x0
 
-    const/16 v17, 0x0
-
-    const/16 v18, 0x0
-
-    const/16 v19, 0x3e
+    const/16 v17, 0x3e
 
     move-object/from16 v12, p4
 
     .line 9
-    invoke-static/range {v12 .. v19}, Lbe/k;->K(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lke/l;I)Ljava/lang/String;
+    invoke-static/range {v12 .. v17}, Lje/j;->E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -1238,7 +1190,7 @@
     .line 11
     sget-object v9, Lcom/kakao/sdk/auth/AuthCodeClient;->Companion:Lcom/kakao/sdk/auth/AuthCodeClient$Companion;
 
-    sget-object v12, Lre/a;->a:Ljava/nio/charset/Charset;
+    sget-object v12, Lye/a;->a:Ljava/nio/charset/Charset;
 
     invoke-virtual {v2, v12}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
@@ -1246,7 +1198,7 @@
 
     const-string v12, "(this as java.lang.String).getBytes(charset)"
 
-    invoke-static {v2, v12}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v12}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v9, v2}, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;->codeChallenge([B)Ljava/lang/String;
 
@@ -1263,7 +1215,7 @@
 
     .line 13
     :cond_4
-    invoke-virtual {v1, v10}, Lcom/kakao/sdk/auth/AuthCodeClient;->resultReceiver$auth_release(Lke/p;)Landroid/os/ResultReceiver;
+    invoke-virtual {v1, v10}, Lcom/kakao/sdk/auth/AuthCodeClient;->resultReceiver$auth_release(Lre/p;)Landroid/os/ResultReceiver;
 
     move-result-object v9
 
@@ -1294,28 +1246,13 @@
     invoke-virtual {v2, v0}, Lcom/kakao/sdk/common/util/SdkLog$Companion;->e(Ljava/lang/Object;)V
 
     .line 17
-    invoke-interface {v10, v11, v0}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v10, v11, v0}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
     return-void
-
-    :cond_5
-    const-string v0, "callback"
-
-    .line 18
-    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v11
-
-    :cond_6
-    const-string v0, "context"
-
-    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v11
 .end method
 
-.method public final authorizeWithKakaoTalk(Landroid/content/Context;ILjava/util/List;Ljava/util/List;Lke/p;)V
+.method public final authorizeWithKakaoTalk(Landroid/content/Context;ILjava/util/List;Ljava/util/List;Lre/p;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1328,12 +1265,12 @@
             "Ljava/util/List<",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1356,12 +1293,12 @@
 
     move-object v6, p5
 
-    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoTalk$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoTalk$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final authorizeWithKakaoTalk(Landroid/content/Context;ILjava/util/List;Lke/p;)V
+.method public final authorizeWithKakaoTalk(Landroid/content/Context;ILjava/util/List;Lre/p;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1371,12 +1308,12 @@
             "Ljava/util/List<",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1399,24 +1336,24 @@
 
     move-object v6, p4
 
-    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoTalk$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoTalk$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final authorizeWithKakaoTalk(Landroid/content/Context;ILke/p;)V
+.method public final authorizeWithKakaoTalk(Landroid/content/Context;ILre/p;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
             "I",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1439,23 +1376,23 @@
 
     move-object v6, p3
 
-    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoTalk$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoTalk$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final authorizeWithKakaoTalk(Landroid/content/Context;Lke/p;)V
+.method public final authorizeWithKakaoTalk(Landroid/content/Context;Lre/p;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1478,7 +1415,7 @@
 
     move-object v6, p2
 
-    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoTalk$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoTalk$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;ILjava/util/List;Ljava/util/List;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -1486,9 +1423,10 @@
 .method public final isKakaoTalkLoginAvailable(Landroid/content/Context;)Z
     .locals 2
 
-    if-eqz p1, :cond_1
+    const-string v0, "context"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     iget-object v0, p0, Lcom/kakao/sdk/auth/AuthCodeClient;->intentResolveClient:Lcom/kakao/sdk/common/util/IntentResolveClient;
 
     sget-object v1, Lcom/kakao/sdk/auth/AuthCodeIntentFactory;->INSTANCE:Lcom/kakao/sdk/auth/AuthCodeIntentFactory;
@@ -1512,37 +1450,28 @@
 
     :goto_0
     return p1
-
-    :cond_1
-    const-string p1, "context"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public final resultReceiver$auth_release(Lke/p;)Landroid/os/ResultReceiver;
+.method public final synthetic resultReceiver$auth_release(Lre/p;)Landroid/os/ResultReceiver;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)",
             "Landroid/os/ResultReceiver;"
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "callback"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     new-instance v0, Lcom/kakao/sdk/auth/AuthCodeClient$resultReceiver$1;
 
     new-instance v1, Landroid/os/Handler;
@@ -1553,17 +1482,7 @@
 
     invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    invoke-direct {v0, p1, v1}, Lcom/kakao/sdk/auth/AuthCodeClient$resultReceiver$1;-><init>(Lke/p;Landroid/os/Handler;)V
+    invoke-direct {v0, p1, v1}, Lcom/kakao/sdk/auth/AuthCodeClient$resultReceiver$1;-><init>(Lre/p;Landroid/os/Handler;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

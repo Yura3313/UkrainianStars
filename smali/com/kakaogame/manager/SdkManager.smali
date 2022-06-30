@@ -41,7 +41,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -94,7 +93,6 @@
 .method public static getAppVersion()Lcom/kakaogame/manager/Version;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/manager/SdkManager;->appVersion:Lcom/kakaogame/manager/Version;
 
     return-object v0
@@ -103,7 +101,6 @@
 .method public static getContext()Landroid/content/Context;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/manager/SdkManager;->context:Landroid/content/Context;
 
     return-object v0
@@ -112,7 +109,6 @@
 .method public static getSdkVersion()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/manager/SdkManager;->sdkVersion:Lcom/kakaogame/manager/Version;
 
     invoke-virtual {v0}, Lcom/kakaogame/manager/Version;->getVersionString()Ljava/lang/String;
@@ -151,6 +147,7 @@
 
     move-result-object p0
 
+    .line 5
     sget-object v0, Lcom/kakaogame/manager/SdkManager;->appVersion:Lcom/kakaogame/manager/Version;
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -163,7 +160,7 @@
 
     invoke-static {v0, p0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
+    .line 6
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -188,7 +185,6 @@
 .method public static isInitialized()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/kakaogame/manager/SdkManager;->initialized:Z
 
     return v0
@@ -199,7 +195,6 @@
 
     const-string v0, "com.nzincorp.zinny.sdk.sample"
 
-    .line 1
     invoke-static {p0, v0}, Lcom/kakaogame/util/AppUtil;->isInstalledWithPackageName(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result p0
@@ -219,7 +214,6 @@
 .method public static setSdkVersion(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakaogame/manager/Version;
 
     invoke-direct {v0, p0}, Lcom/kakaogame/manager/Version;-><init>(Ljava/lang/String;)V
@@ -234,7 +228,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     sput-boolean v0, Lcom/kakaogame/manager/SdkManager;->isTestAppLaunching:Z
 
     return-void

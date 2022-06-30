@@ -1,9 +1,9 @@
 .class final Lcom/kakao/sdk/user/UserApiClient$Companion$instance$2;
-.super Lle/j;
+.super Lse/h;
 .source "UserApiClient.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
+        "Lse/h;",
+        "Lre/a<",
         "Lcom/kakao/sdk/user/UserApiClient;",
         ">;"
     }
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
@@ -65,7 +65,7 @@
 
     const/4 v2, 0x3
 
-    invoke-direct {v0, v1, v1, v2, v1}, Lcom/kakao/sdk/user/UserApiClient;-><init>(Lcom/kakao/sdk/user/UserApi;Lcom/kakao/sdk/auth/TokenManagerProvider;ILle/g;)V
+    invoke-direct {v0, v1, v1, v2, v1}, Lcom/kakao/sdk/user/UserApiClient;-><init>(Lcom/kakao/sdk/user/UserApi;Lcom/kakao/sdk/auth/TokenManagerProvider;ILse/e;)V
 
     return-object v0
 .end method

@@ -15,10 +15,9 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/viewpager2/widget/ViewPager2$a;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$g;-><init>()V
 
     return-void
@@ -26,11 +25,13 @@
 
 
 # virtual methods
-.method public final b(II)V
+.method public abstract a()V
+.end method
+
+.method public final b()V
     .locals 0
 
-    .line 1
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$g;->a()V
+    invoke-virtual {p0}, Landroidx/viewpager2/widget/ViewPager2$e;->a()V
 
     return-void
 .end method
@@ -38,8 +39,7 @@
 .method public final c(IILjava/lang/Object;)V
     .locals 0
 
-    .line 1
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$g;->a()V
+    invoke-virtual {p0}, Landroidx/viewpager2/widget/ViewPager2$e;->a()V
 
     return-void
 .end method
@@ -47,17 +47,15 @@
 .method public final d(II)V
     .locals 0
 
-    .line 1
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$g;->a()V
+    invoke-virtual {p0}, Landroidx/viewpager2/widget/ViewPager2$e;->a()V
 
     return-void
 .end method
 
-.method public final e(III)V
+.method public final e(II)V
     .locals 0
 
-    .line 1
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$g;->a()V
+    invoke-virtual {p0}, Landroidx/viewpager2/widget/ViewPager2$e;->a()V
 
     return-void
 .end method
@@ -65,8 +63,7 @@
 .method public final f(II)V
     .locals 0
 
-    .line 1
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$g;->a()V
+    invoke-virtual {p0}, Landroidx/viewpager2/widget/ViewPager2$e;->a()V
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Ll0/a;
+.class public final Ll0/a;
 .super Ljava/lang/Object;
 .source "AnimationHandler.java"
 
@@ -50,7 +50,7 @@
 
 .field public final c:Ll0/a$a;
 
-.field public d:Ll0/a$c;
+.field public d:Ll0/a$d;
 
 .field public e:J
 
@@ -61,7 +61,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V

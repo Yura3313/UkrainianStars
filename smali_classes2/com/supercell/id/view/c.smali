@@ -27,7 +27,9 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
 
-    if-eqz p1, :cond_1
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
@@ -53,7 +55,7 @@
     :goto_0
     const-string v0, "ContextCompat.getColorSt\u2026List.valueOf(Color.BLACK)"
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object p1, p0, Lcom/supercell/id/view/c;->a:Landroid/content/res/ColorStateList;
 
@@ -80,7 +82,7 @@
     const/high16 v2, 0x40400000    # 3.0f
 
     .line 7
-    sget v3, Lcom/android/billingclient/api/a0;->a:F
+    sget v3, La5/g0;->a:F
 
     mul-float v2, v2, v3
 
@@ -107,7 +109,7 @@
     const/high16 v3, 0x41200000    # 10.0f
 
     .line 12
-    sget v4, Lcom/android/billingclient/api/a0;->a:F
+    sget v4, La5/g0;->a:F
 
     mul-float v3, v3, v4
 
@@ -127,7 +129,7 @@
     const v4, 0x41842358
 
     .line 14
-    sget v5, Lcom/android/billingclient/api/a0;->a:F
+    sget v5, La5/g0;->a:F
 
     mul-float v4, v4, v5
 
@@ -145,7 +147,7 @@
     const v4, 0x41eacd52
 
     .line 16
-    sget v5, Lcom/android/billingclient/api/a0;->a:F
+    sget v5, La5/g0;->a:F
 
     mul-float v4, v4, v5
 
@@ -167,25 +169,48 @@
 
     invoke-direct {v2}, Landroid/graphics/Path;-><init>()V
 
-    .line 19
     aget-object v3, v0, v3
 
-    invoke-static {v2, v3}, Ls3/k;->o(Landroid/graphics/Path;Landroid/graphics/PointF;)V
+    const-string v5, "point"
+
+    .line 19
+    invoke-static {v3, v5}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 20
+    iget v6, v3, Landroid/graphics/PointF;->x:F
+
+    iget v3, v3, Landroid/graphics/PointF;->y:F
+
+    invoke-virtual {v2, v6, v3}, Landroid/graphics/Path;->moveTo(FF)V
+
     aget-object v3, v0, v1
 
-    invoke-static {v2, v3}, Ls3/k;->m(Landroid/graphics/Path;Landroid/graphics/PointF;)V
-
     .line 21
-    aget-object v0, v0, v4
-
-    invoke-static {v2, v0}, Ls3/k;->m(Landroid/graphics/Path;Landroid/graphics/PointF;)V
+    invoke-static {v3, v5}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 22
-    iput-object v2, p0, Lcom/supercell/id/view/c;->d:Landroid/graphics/Path;
+    iget v6, v3, Landroid/graphics/PointF;->x:F
+
+    iget v3, v3, Landroid/graphics/PointF;->y:F
+
+    invoke-virtual {v2, v6, v3}, Landroid/graphics/Path;->lineTo(FF)V
+
+    aget-object v0, v0, v4
 
     .line 23
+    invoke-static {v0, v5}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 24
+    iget v3, v0, Landroid/graphics/PointF;->x:F
+
+    iget v0, v0, Landroid/graphics/PointF;->y:F
+
+    invoke-virtual {v2, v3, v0}, Landroid/graphics/Path;->lineTo(FF)V
+
+    .line 25
+    iput-object v2, p0, Lcom/supercell/id/view/c;->d:Landroid/graphics/Path;
+
+    .line 26
     invoke-virtual {p1}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result p1
@@ -194,26 +219,16 @@
 
     const/16 p1, 0xff
 
-    .line 24
+    .line 27
     iput p1, p0, Lcom/supercell/id/view/c;->f:I
 
-    .line 25
+    .line 28
     iput p1, p0, Lcom/supercell/id/view/c;->g:I
 
-    .line 26
+    .line 29
     iput-boolean v1, p0, Lcom/supercell/id/view/c;->h:Z
 
     return-void
-
-    :cond_1
-    const-string p1, "context"
-
-    .line 27
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 
@@ -245,7 +260,7 @@
 
     iget v2, p0, Lcom/supercell/id/view/c;->e:I
 
-    invoke-static {v2, v0}, Lx/a;->d(II)I
+    invoke-static {v2, v0}, Lx/b;->d(II)I
 
     move-result v0
 
@@ -330,9 +345,19 @@
 
     aget-object v0, v0, v3
 
-    invoke-static {p1, v0}, Ls3/k;->o(Landroid/graphics/Path;Landroid/graphics/PointF;)V
+    const-string v5, "point"
 
     .line 6
+    invoke-static {v0, v5}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 7
+    iget v5, v0, Landroid/graphics/PointF;->x:F
+
+    iget v0, v0, Landroid/graphics/PointF;->y:F
+
+    invoke-virtual {p1, v5, v0}, Landroid/graphics/Path;->moveTo(FF)V
+
+    .line 8
     iget-object v0, p0, Lcom/supercell/id/view/c;->c:[Landroid/graphics/PointF;
 
     aget-object v3, v0, v3
@@ -341,13 +366,13 @@
 
     aget-object v0, v0, v5
 
-    invoke-static {p1, v3, v0, v1}, Ls3/k;->l(Landroid/graphics/Path;Landroid/graphics/PointF;Landroid/graphics/PointF;F)V
+    invoke-static {p1, v3, v0, v1}, Lj1/b;->k(Landroid/graphics/Path;Landroid/graphics/PointF;Landroid/graphics/PointF;F)V
 
     cmpl-float v0, v4, v2
 
     if-lez v0, :cond_4
 
-    .line 7
+    .line 9
     iget-object v0, p0, Lcom/supercell/id/view/c;->c:[Landroid/graphics/PointF;
 
     aget-object v1, v0, v5
@@ -356,18 +381,19 @@
 
     aget-object v0, v0, v2
 
-    invoke-static {p1, v1, v0, v4}, Ls3/k;->l(Landroid/graphics/Path;Landroid/graphics/PointF;Landroid/graphics/PointF;F)V
+    invoke-static {p1, v1, v0, v4}, Lj1/b;->k(Landroid/graphics/Path;Landroid/graphics/PointF;Landroid/graphics/PointF;F)V
 
     :cond_4
     return-void
 .end method
 
-.method public draw(Landroid/graphics/Canvas;)V
+.method public final draw(Landroid/graphics/Canvas;)V
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string v0, "canvas"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     iget-object v0, p0, Lcom/supercell/id/view/c;->d:Landroid/graphics/Path;
 
     iget-object v1, p0, Lcom/supercell/id/view/c;->b:Landroid/graphics/Paint;
@@ -375,31 +401,19 @@
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "canvas"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public getAlpha()I
+.method public final getAlpha()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/supercell/id/view/c;->f:I
 
     return v0
 .end method
 
-.method public getColorFilter()Landroid/graphics/ColorFilter;
+.method public final getColorFilter()Landroid/graphics/ColorFilter;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/supercell/id/view/c;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v0}, Landroid/graphics/Paint;->getColorFilter()Landroid/graphics/ColorFilter;
@@ -409,41 +423,47 @@
     return-object v0
 .end method
 
-.method public getIntrinsicHeight()I
-    .locals 1
+.method public final getIntrinsicHeight()I
+    .locals 2
 
     const/16 v0, 0x26
 
+    int-to-float v0, v0
+
     .line 1
-    invoke-static {v0}, Lcom/android/billingclient/api/a0;->b(I)F
+    sget v1, La5/g0;->a:F
 
-    move-result v0
+    mul-float v0, v0, v1
 
-    invoke-static {v0}, Lb5/m;->r(F)I
+    .line 2
+    invoke-static {v0}, Lcom/android/billingclient/api/z;->n(F)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public getIntrinsicWidth()I
-    .locals 1
+.method public final getIntrinsicWidth()I
+    .locals 2
 
     const/16 v0, 0x26
 
+    int-to-float v0, v0
+
     .line 1
-    invoke-static {v0}, Lcom/android/billingclient/api/a0;->b(I)F
+    sget v1, La5/g0;->a:F
 
-    move-result v0
+    mul-float v0, v0, v1
 
-    invoke-static {v0}, Lb5/m;->r(F)I
+    .line 2
+    invoke-static {v0}, Lcom/android/billingclient/api/z;->n(F)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public getOpacity()I
+.method public final getOpacity()I
     .locals 1
 
     const/4 v0, -0x3
@@ -451,7 +471,7 @@
     return v0
 .end method
 
-.method public isStateful()Z
+.method public final isStateful()Z
     .locals 1
 
     const/4 v0, 0x1
@@ -459,7 +479,7 @@
     return v0
 .end method
 
-.method public onStateChange([I)Z
+.method public final onStateChange([I)Z
     .locals 2
 
     .line 1
@@ -494,7 +514,7 @@
     return p1
 .end method
 
-.method public setAlpha(I)V
+.method public final setAlpha(I)V
     .locals 1
 
     .line 1
@@ -515,10 +535,9 @@
     return-void
 .end method
 
-.method public setColorFilter(Landroid/graphics/ColorFilter;)V
+.method public final setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/supercell/id/view/c;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;

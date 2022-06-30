@@ -147,11 +147,12 @@
 
     const-string p4, "Invalid attempt to bind an instance of "
 
+    .line 8
     invoke-static {p4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p4
 
-    .line 8
+    .line 9
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -190,7 +191,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 9
+    .line 10
     move-object v0, p1
 
     check-cast v0, Lcom/google/gson/JsonSerializer;
@@ -202,13 +203,13 @@
     :cond_4
     move-object v3, v1
 
-    .line 10
+    .line 11
     :goto_1
     instance-of v0, p1, Lcom/google/gson/JsonDeserializer;
 
     if-eqz v0, :cond_5
 
-    .line 11
+    .line 12
     move-object v1, p1
 
     check-cast v1, Lcom/google/gson/JsonDeserializer;
@@ -216,7 +217,7 @@
     :cond_5
     move-object v4, v1
 
-    .line 12
+    .line 13
     new-instance p1, Lcom/google/gson/internal/bind/TreeTypeAdapter;
 
     const/4 v7, 0x0
@@ -232,14 +233,14 @@
     :goto_2
     if-eqz p1, :cond_6
 
-    .line 13
+    .line 14
     invoke-interface {p4}, Lcom/google/gson/annotations/JsonAdapter;->nullSafe()Z
 
     move-result p2
 
     if-eqz p2, :cond_6
 
-    .line 14
+    .line 15
     invoke-virtual {p1}, Lcom/google/gson/TypeAdapter;->nullSafe()Lcom/google/gson/TypeAdapter;
 
     move-result-object p1

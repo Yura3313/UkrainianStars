@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;-><clinit>()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,8 +37,8 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 2
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,12 +48,12 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "source"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    new-instance v1, Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;
+    new-instance v0, Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;
 
     .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -63,25 +62,19 @@
 
     if-eqz p1, :cond_0
 
-    invoke-direct {v1, p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;-><init>(Ljava/lang/String;)V
 
-    return-object v1
+    return-object v0
 
     :cond_0
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    const/4 p1, 0x0
 
-    :cond_1
-    const-string p1, "source"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    throw p1
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -90,7 +83,6 @@
         }
     .end annotation
 
-    .line 1
     new-array p1, p1, [Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;
 
     return-object p1

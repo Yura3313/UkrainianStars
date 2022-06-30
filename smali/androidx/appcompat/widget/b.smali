@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/b;
+.class public final Landroidx/appcompat/widget/b;
 .super Landroid/graphics/drawable/Drawable;
 .source "ActionBarBackgroundDrawable.java"
 
@@ -22,18 +22,18 @@
 
 
 # virtual methods
-.method public draw(Landroid/graphics/Canvas;)V
+.method public final draw(Landroid/graphics/Canvas;)V
     .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/b;->a:Landroidx/appcompat/widget/ActionBarContainer;
 
-    iget-boolean v1, v0, Landroidx/appcompat/widget/ActionBarContainer;->n:Z
+    iget-boolean v1, v0, Landroidx/appcompat/widget/ActionBarContainer;->m:Z
 
     if-eqz v1, :cond_0
 
     .line 2
-    iget-object v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->m:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->l:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_2
 
@@ -44,7 +44,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->k:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->j:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_1
 
@@ -55,11 +55,11 @@
     :cond_1
     iget-object v0, p0, Landroidx/appcompat/widget/b;->a:Landroidx/appcompat/widget/ActionBarContainer;
 
-    iget-object v1, v0, Landroidx/appcompat/widget/ActionBarContainer;->l:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v0, Landroidx/appcompat/widget/ActionBarContainer;->k:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_2
 
-    iget-boolean v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->o:Z
+    iget-boolean v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->n:Z
 
     if-eqz v0, :cond_2
 
@@ -71,7 +71,7 @@
     return-void
 .end method
 
-.method public getOpacity()I
+.method public final getOpacity()I
     .locals 1
 
     const/4 v0, 0x0
@@ -79,18 +79,18 @@
     return v0
 .end method
 
-.method public getOutline(Landroid/graphics/Outline;)V
+.method public final getOutline(Landroid/graphics/Outline;)V
     .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/b;->a:Landroidx/appcompat/widget/ActionBarContainer;
 
-    iget-boolean v1, v0, Landroidx/appcompat/widget/ActionBarContainer;->n:Z
+    iget-boolean v1, v0, Landroidx/appcompat/widget/ActionBarContainer;->m:Z
 
     if-eqz v1, :cond_0
 
     .line 2
-    iget-object v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->m:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->l:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_1
 
@@ -101,7 +101,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->k:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->j:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_1
 
@@ -113,13 +113,13 @@
     return-void
 .end method
 
-.method public setAlpha(I)V
+.method public final setAlpha(I)V
     .locals 0
 
     return-void
 .end method
 
-.method public setColorFilter(Landroid/graphics/ColorFilter;)V
+.method public final setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
 
     return-void

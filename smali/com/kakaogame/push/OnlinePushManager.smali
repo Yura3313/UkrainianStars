@@ -23,7 +23,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakaogame/push/OnlinePushManager$OnlinePushListenerImpl;
 
     invoke-direct {v0}, Lcom/kakaogame/push/OnlinePushManager$OnlinePushListenerImpl;-><init>()V
@@ -36,7 +35,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +43,6 @@
 .method public static synthetic access$000(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/kakaogame/push/OnlinePushManager;->showPopup(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Z)V
 
     return-void
@@ -54,7 +51,6 @@
 .method public static synthetic access$100(Landroid/app/Activity;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/push/OnlinePushManager;->showNotification(Landroid/app/Activity;Ljava/lang/String;)V
 
     return-void
@@ -63,7 +59,6 @@
 .method public static synthetic access$200()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/push/OnlinePushManager;->refreshLocalPlayer()V
 
     return-void
@@ -224,7 +219,6 @@
 .method public static initialize(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     sget-object p0, Lcom/kakaogame/push/OnlinePushManager;->onlinePushListener:Lcom/kakaogame/server/session/SessionService$OnlinePushListener;
 
     invoke-static {p0}, Lcom/kakaogame/server/session/SessionService;->addOnlinePushListener(Lcom/kakaogame/server/session/SessionService$OnlinePushListener;)V

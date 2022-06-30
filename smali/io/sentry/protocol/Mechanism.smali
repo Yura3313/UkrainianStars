@@ -94,7 +94,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Mechanism;->unknown:Ljava/util/Map;
 
     return-void
@@ -112,7 +111,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Mechanism;->data:Ljava/util/Map;
 
     return-object v0
@@ -121,7 +119,6 @@
 .method public getDescription()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Mechanism;->description:Ljava/lang/String;
 
     return-object v0
@@ -130,7 +127,6 @@
 .method public getHelpLink()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Mechanism;->helpLink:Ljava/lang/String;
 
     return-object v0
@@ -148,7 +144,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Mechanism;->meta:Ljava/util/Map;
 
     return-object v0
@@ -157,7 +152,6 @@
 .method public getSynthetic()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Mechanism;->synthetic:Ljava/lang/Boolean;
 
     return-object v0
@@ -166,7 +160,6 @@
 .method public getThread()Ljava/lang/Thread;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Mechanism;->thread:Ljava/lang/Thread;
 
     return-object v0
@@ -175,7 +168,6 @@
 .method public getType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Mechanism;->type:Ljava/lang/String;
 
     return-object v0
@@ -184,7 +176,6 @@
 .method public isHandled()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Mechanism;->handled:Ljava/lang/Boolean;
 
     return-object v0
@@ -202,7 +193,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newHashMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
@@ -215,7 +205,6 @@
 .method public setDescription(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Mechanism;->description:Ljava/lang/String;
 
     return-void
@@ -224,7 +213,6 @@
 .method public setHandled(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Mechanism;->handled:Ljava/lang/Boolean;
 
     return-void
@@ -233,7 +221,6 @@
 .method public setHelpLink(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Mechanism;->helpLink:Ljava/lang/String;
 
     return-void
@@ -251,7 +238,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newHashMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
@@ -264,7 +250,6 @@
 .method public setSynthetic(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Mechanism;->synthetic:Ljava/lang/Boolean;
 
     return-void
@@ -273,7 +258,6 @@
 .method public setType(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Mechanism;->type:Ljava/lang/String;
 
     return-void

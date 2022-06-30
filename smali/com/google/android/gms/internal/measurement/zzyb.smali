@@ -6,7 +6,6 @@
 .method public constructor <init>(II)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v1, 0x6c

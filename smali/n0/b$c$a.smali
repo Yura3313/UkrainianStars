@@ -3,7 +3,7 @@
 .source "LoaderManagerImpl.java"
 
 # interfaces
-.implements Landroidx/lifecycle/z;
+.implements Landroidx/lifecycle/x$b;
 
 
 # annotations
@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,19 +28,18 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Class;)Landroidx/lifecycle/x;
+.method public final a(Ljava/lang/Class;)Landroidx/lifecycle/w;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Landroidx/lifecycle/x;",
+            "Landroidx/lifecycle/w;",
             ">(",
             "Ljava/lang/Class<",
             "TT;>;)TT;"
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ln0/b$c;
 
     invoke-direct {p1}, Ln0/b$c;-><init>()V

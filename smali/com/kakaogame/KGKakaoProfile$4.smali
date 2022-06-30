@@ -39,7 +39,6 @@
 .method public constructor <init>(IIILcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/KGKakaoProfile$4;->val$recommendLimit:I
 
     iput p2, p0, Lcom/kakaogame/KGKakaoProfile$4;->val$offset:I

@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/SupercellId$l;
+.class public final Lcom/supercell/titan/SupercellId$l;
 .super Ljava/lang/Object;
 .source "SupercellId.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/titan/SupercellId;->close()V
+    value = Lcom/supercell/titan/SupercellId;->requestImageDataForAvatarString(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/titan/SupercellId;
+.field public final synthetic f:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/SupercellId;)V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/supercell/titan/SupercellId$l;->g:Lcom/supercell/titan/SupercellId;
+    iput-object p1, p0, Lcom/supercell/titan/SupercellId$l;->f:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,16 +34,14 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public final run()V
+    .locals 2
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/SupercellId$l;->g:Lcom/supercell/titan/SupercellId;
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    const-wide/16 v1, 0x0
+    iget-object v1, p0, Lcom/supercell/titan/SupercellId$l;->f:Ljava/lang/String;
 
-    .line 2
-    iput-wide v1, v0, Lcom/supercell/titan/SupercellId;->a:J
+    invoke-virtual {v0, v1}, Lcom/supercell/id/SupercellId;->requestImageDataForAvatarString(Ljava/lang/String;)V
 
     return-void
 .end method

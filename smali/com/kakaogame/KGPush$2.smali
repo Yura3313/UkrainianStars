@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGPush$2;->val$activity:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/kakaogame/KGPush$2;->val$activity:Landroid/app/Activity;
 
     invoke-static {p1}, Lcom/kakaogame/KGPush;->access$100(Landroid/app/Activity;)V

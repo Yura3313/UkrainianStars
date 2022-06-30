@@ -405,7 +405,6 @@
 .method public static synthetic access$000(Lokhttp3/internal/http2/Http2Connection;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lokhttp3/internal/http2/Http2Connection;->failConnection()V
 
     return-void
@@ -414,7 +413,6 @@
 .method public static synthetic access$100(Lokhttp3/internal/http2/Http2Connection;)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lokhttp3/internal/http2/Http2Connection;->intervalPongsReceived:J
 
     return-wide v0
@@ -423,7 +421,6 @@
 .method public static synthetic access$108(Lokhttp3/internal/http2/Http2Connection;)J
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lokhttp3/internal/http2/Http2Connection;->intervalPongsReceived:J
 
     const-wide/16 v2, 0x1
@@ -438,7 +435,6 @@
 .method public static synthetic access$200(Lokhttp3/internal/http2/Http2Connection;)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lokhttp3/internal/http2/Http2Connection;->intervalPingsSent:J
 
     return-wide v0
@@ -447,7 +443,6 @@
 .method public static synthetic access$208(Lokhttp3/internal/http2/Http2Connection;)J
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lokhttp3/internal/http2/Http2Connection;->intervalPingsSent:J
 
     const-wide/16 v2, 0x1
@@ -462,7 +457,6 @@
 .method public static synthetic access$300(Lokhttp3/internal/http2/Http2Connection;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lokhttp3/internal/http2/Http2Connection;->shutdown:Z
 
     return p0
@@ -471,7 +465,6 @@
 .method public static synthetic access$302(Lokhttp3/internal/http2/Http2Connection;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lokhttp3/internal/http2/Http2Connection;->shutdown:Z
 
     return p1
@@ -480,7 +473,6 @@
 .method public static synthetic access$400()Ljava/util/concurrent/ExecutorService;
     .locals 1
 
-    .line 1
     sget-object v0, Lokhttp3/internal/http2/Http2Connection;->listenerExecutor:Ljava/util/concurrent/ExecutorService;
 
     return-object v0
@@ -489,7 +481,6 @@
 .method public static synthetic access$500(Lokhttp3/internal/http2/Http2Connection;)Ljava/util/concurrent/ScheduledExecutorService;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lokhttp3/internal/http2/Http2Connection;->writerExecutor:Ljava/util/concurrent/ScheduledExecutorService;
 
     return-object p0
@@ -498,7 +489,6 @@
 .method public static synthetic access$608(Lokhttp3/internal/http2/Http2Connection;)J
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lokhttp3/internal/http2/Http2Connection;->degradedPongsReceived:J
 
     const-wide/16 v2, 0x1
@@ -513,7 +503,6 @@
 .method public static synthetic access$708(Lokhttp3/internal/http2/Http2Connection;)J
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lokhttp3/internal/http2/Http2Connection;->awaitPongsReceived:J
 
     const-wide/16 v2, 0x1
@@ -528,7 +517,6 @@
 .method private failConnection()V
     .locals 1
 
-    .line 1
     :try_start_0
     sget-object v0, Lokhttp3/internal/http2/ErrorCode;->PROTOCOL_ERROR:Lokhttp3/internal/http2/ErrorCode;
 
@@ -761,7 +749,7 @@
     .line 2
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection;->pushExecutor:Ljava/util/concurrent/ExecutorService;
 
-    invoke-interface {v0, p1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -986,7 +974,7 @@
     :goto_4
     iget-object p2, p0, Lokhttp3/internal/http2/Http2Connection;->writerExecutor:Ljava/util/concurrent/ScheduledExecutorService;
 
-    invoke-interface {p2}, Ljava/util/concurrent/ScheduledExecutorService;->shutdown()V
+    invoke-interface {p2}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     .line 13
     iget-object p2, p0, Lokhttp3/internal/http2/Http2Connection;->pushExecutor:Ljava/util/concurrent/ExecutorService;
@@ -1027,7 +1015,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection;->writer:Lokhttp3/internal/http2/Http2Writer;
 
     invoke-virtual {v0}, Lokhttp3/internal/http2/Http2Writer;->flush()V
@@ -1038,7 +1025,6 @@
 .method public getProtocol()Lokhttp3/Protocol;
     .locals 1
 
-    .line 1
     sget-object v0, Lokhttp3/Protocol;->HTTP_2:Lokhttp3/Protocol;
 
     return-object v0
@@ -1049,7 +1035,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection;->streams:Ljava/util/Map;
 
@@ -1140,7 +1125,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection;->peerSettings:Lokhttp3/internal/http2/Settings;
 
@@ -1197,7 +1181,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection;->streams:Ljava/util/Map;
 
@@ -1328,7 +1311,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     new-instance v7, Lokhttp3/internal/http2/Http2Connection$5;
 
@@ -1481,7 +1463,6 @@
 .method public pushResetLater(ILokhttp3/internal/http2/ErrorCode;)V
     .locals 7
 
-    .line 1
     new-instance v6, Lokhttp3/internal/http2/Http2Connection$7;
 
     const/4 v0, 0x2
@@ -1681,7 +1662,7 @@
 
     invoke-direct {v1, p0, v2, v3}, Lokhttp3/internal/http2/Http2Connection$3;-><init>(Lokhttp3/internal/http2/Http2Connection;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    invoke-interface {v0, v1}, Ljava/util/concurrent/ScheduledExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
     :try_end_1
     .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -2259,7 +2240,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection;->writer:Lokhttp3/internal/http2/Http2Writer;
 
     invoke-virtual {v0, p2, p1, p3}, Lokhttp3/internal/http2/Http2Writer;->synReply(ZILjava/util/List;)V
@@ -2275,7 +2255,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection;->writer:Lokhttp3/internal/http2/Http2Writer;
 
     invoke-virtual {v0, p1, p2}, Lokhttp3/internal/http2/Http2Writer;->rstStream(ILokhttp3/internal/http2/ErrorCode;)V
@@ -2286,7 +2265,6 @@
 .method public writeSynResetLater(ILokhttp3/internal/http2/ErrorCode;)V
     .locals 8
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection;->writerExecutor:Ljava/util/concurrent/ScheduledExecutorService;
 
@@ -2322,7 +2300,7 @@
 
     invoke-direct/range {v1 .. v6}, Lokhttp3/internal/http2/Http2Connection$1;-><init>(Lokhttp3/internal/http2/Http2Connection;Ljava/lang/String;[Ljava/lang/Object;ILokhttp3/internal/http2/ErrorCode;)V
 
-    invoke-interface {v0, v7}, Ljava/util/concurrent/ScheduledExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, v7}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
     :try_end_0
     .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2371,7 +2349,7 @@
     invoke-direct/range {v1 .. v7}, Lokhttp3/internal/http2/Http2Connection$2;-><init>(Lokhttp3/internal/http2/Http2Connection;Ljava/lang/String;[Ljava/lang/Object;IJ)V
 
     .line 3
-    invoke-interface {v0, v8}, Ljava/util/concurrent/ScheduledExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, v8}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
     :try_end_0
     .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
 

@@ -1,4 +1,4 @@
-.class public synthetic Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$a;
+.class public final synthetic Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$a;
 .super Ljava/lang/Object;
 .source "CodedOutputStream.java"
 

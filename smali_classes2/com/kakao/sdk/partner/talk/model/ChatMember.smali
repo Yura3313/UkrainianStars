@@ -52,15 +52,18 @@
 .method public constructor <init>(ZLjava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "nickname"
 
-    if-eqz p3, :cond_2
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_1
+    const-string v0, "thumbnailImageUrl"
 
-    if-eqz p5, :cond_0
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    const-string v0, "uuid"
+
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Lcom/kakao/sdk/partner/talk/model/ChatMember;->appRegistered:Z
@@ -76,28 +79,6 @@
     iput-boolean p6, p0, Lcom/kakao/sdk/partner/talk/model/ChatMember;->msgBlocked:Z
 
     return-void
-
-    :cond_0
-    const-string p1, "uuid"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "thumbnailImageUrl"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "nickname"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/partner/talk/model/ChatMember;ZLjava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Lcom/kakao/sdk/partner/talk/model/ChatMember;
@@ -229,13 +210,17 @@
 .method public final copy(ZLjava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lcom/kakao/sdk/partner/talk/model/ChatMember;
     .locals 8
 
-    const/4 v0, 0x0
+    const-string v0, "nickname"
 
-    if-eqz p3, :cond_2
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_1
+    const-string v0, "thumbnailImageUrl"
 
-    if-eqz p5, :cond_0
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "uuid"
+
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/partner/talk/model/ChatMember;
 
@@ -256,28 +241,6 @@
     invoke-direct/range {v1 .. v7}, Lcom/kakao/sdk/partner/talk/model/ChatMember;-><init>(ZLjava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "uuid"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "thumbnailImageUrl"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "nickname"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -323,7 +286,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/ChatMember;->id:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -333,7 +296,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/ChatMember;->nickname:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -343,7 +306,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/ChatMember;->thumbnailImageUrl:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -353,7 +316,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/ChatMember;->uuid:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -388,7 +351,6 @@
 .method public final getAppRegistered()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakao/sdk/partner/talk/model/ChatMember;->appRegistered:Z
 
     return v0
@@ -397,7 +359,6 @@
 .method public final getId()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/ChatMember;->id:Ljava/lang/Long;
 
     return-object v0
@@ -406,7 +367,6 @@
 .method public final getMsgBlocked()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakao/sdk/partner/talk/model/ChatMember;->msgBlocked:Z
 
     return v0
@@ -415,7 +375,6 @@
 .method public final getNickname()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/ChatMember;->nickname:Ljava/lang/String;
 
     return-object v0
@@ -424,7 +383,6 @@
 .method public final getThumbnailImageUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/ChatMember;->thumbnailImageUrl:Ljava/lang/String;
 
     return-object v0
@@ -433,7 +391,6 @@
 .method public final getUuid()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/ChatMember;->uuid:Ljava/lang/String;
 
     return-object v0
@@ -542,10 +499,12 @@
 
     const-string v0, "ChatMember(appRegistered="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-boolean v1, p0, Lcom/kakao/sdk/partner/talk/model/ChatMember;->appRegistered:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
@@ -590,7 +549,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -600,7 +560,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    if-eqz p1, :cond_1
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-boolean p2, p0, Lcom/kakao/sdk/partner/talk/model/ChatMember;->appRegistered:Z
 
@@ -645,14 +607,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
-
-    :cond_1
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

@@ -1,120 +1,87 @@
-.class public abstract Lxe/l;
-.super Lxe/c0;
-.source "HttpServiceMethod.java"
+.class public final Lxe/l;
+.super Ljava/lang/Object;
+.source "Sequences.kt"
+
+# interfaces
+.implements Lxe/d;
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lxe/l$b;,
-        Lxe/l$c;,
-        Lxe/l$a;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<ResponseT:",
+        "<T:",
         "Ljava/lang/Object;",
-        "ReturnT:",
+        "R:",
         "Ljava/lang/Object;",
         ">",
-        "Lxe/c0<",
-        "TReturnT;>;"
+        "Ljava/lang/Object;",
+        "Lxe/d<",
+        "TR;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lxe/z;
-
-.field public final b:Lokhttp3/Call$Factory;
-
-.field public final c:Lxe/j;
+.field public final a:Lxe/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lxe/j<",
-            "Lokhttp3/ResponseBody;",
-            "TResponseT;>;"
+            "Lxe/d<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Lre/l;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lre/l<",
+            "TT;TR;>;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lxe/z;Lokhttp3/Call$Factory;Lxe/j;)V
-    .locals 0
+.method public constructor <init>(Lxe/d;Lre/l;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lxe/z;",
-            "Lokhttp3/Call$Factory;",
-            "Lxe/j<",
-            "Lokhttp3/ResponseBody;",
-            "TResponseT;>;)V"
+            "Lxe/d<",
+            "+TT;>;",
+            "Lre/l<",
+            "-TT;+TR;>;)V"
         }
     .end annotation
 
-    .line 1
-    invoke-direct {p0}, Lxe/c0;-><init>()V
+    const-string v0, "transformer"
 
-    .line 2
-    iput-object p1, p0, Lxe/l;->a:Lxe/z;
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 3
-    iput-object p2, p0, Lxe/l;->b:Lokhttp3/Call$Factory;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
-    iput-object p3, p0, Lxe/l;->c:Lxe/j;
+    iput-object p1, p0, Lxe/l;->a:Lxe/d;
+
+    iput-object p2, p0, Lxe/l;->b:Lre/l;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final iterator()Ljava/util/Iterator;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "([",
-            "Ljava/lang/Object;",
-            ")TReturnT;"
+            "()",
+            "Ljava/util/Iterator<",
+            "TR;>;"
         }
     .end annotation
 
-    .annotation runtime Ljavax/annotation/Nullable;
-    .end annotation
+    new-instance v0, Lxe/l$a;
 
-    .line 1
-    new-instance v0, Lxe/s;
+    invoke-direct {v0, p0}, Lxe/l$a;-><init>(Lxe/l;)V
 
-    iget-object v1, p0, Lxe/l;->a:Lxe/z;
-
-    iget-object v2, p0, Lxe/l;->b:Lokhttp3/Call$Factory;
-
-    iget-object v3, p0, Lxe/l;->c:Lxe/j;
-
-    invoke-direct {v0, v1, p1, v2, v3}, Lxe/s;-><init>(Lxe/z;[Ljava/lang/Object;Lokhttp3/Call$Factory;Lxe/j;)V
-
-    .line 2
-    invoke-virtual {p0, v0, p1}, Lxe/l;->c(Lxe/b;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public abstract c(Lxe/b;[Ljava/lang/Object;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lxe/b<",
-            "TResponseT;>;[",
-            "Ljava/lang/Object;",
-            ")TReturnT;"
-        }
-    .end annotation
-
-    .annotation runtime Ljavax/annotation/Nullable;
-    .end annotation
+    return-object v0
 .end method

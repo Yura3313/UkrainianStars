@@ -19,22 +19,22 @@
 
 
 # instance fields
-.field public a:Ljava/util/concurrent/ConcurrentMap;
+.field public a:Ljava/util/concurrent/ConcurrentHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/ConcurrentMap<",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "Lj3/nn0<",
+            "Lk3/jn0<",
             "TP;>;>;>;"
         }
     .end annotation
 .end field
 
-.field public b:Lj3/nn0;
+.field public b:Lk3/jn0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lj3/nn0<",
+            "Lk3/jn0<",
             "TP;>;"
         }
     .end annotation
@@ -56,7 +56,6 @@
 
     const-string v0, "UTF-8"
 
-    .line 1
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     move-result-object v0
@@ -66,8 +65,8 @@
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/Class;)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -76,18 +75,20 @@
         }
     .end annotation
 
+    const-class v0, Lk3/zm0;
+
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+    new-instance v1, Ljava/util/concurrent/ConcurrentHashMap;
 
-    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+    invoke-direct {v1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/v1;->a:Ljava/util/concurrent/ConcurrentMap;
+    iput-object v1, p0, Lcom/google/android/gms/internal/ads/v1;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/v1;->c:Ljava/lang/Class;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/v1;->c:Ljava/lang/Class;
 
     return-void
 .end method

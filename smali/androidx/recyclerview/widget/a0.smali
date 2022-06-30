@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/a0;
+.class public final Landroidx/recyclerview/widget/a0;
 .super Ljava/lang/Object;
 .source "ScrollbarHelper.java"
 
@@ -30,11 +30,11 @@
     if-nez p5, :cond_1
 
     .line 2
-    invoke-virtual {p4, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p4, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result p0
 
-    invoke-virtual {p4, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p4, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result p1
 
@@ -105,12 +105,12 @@
 
     .line 2
     :cond_0
-    invoke-virtual {p4, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p4, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v0
 
     .line 3
-    invoke-virtual {p4, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p4, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v2
 
@@ -120,12 +120,12 @@
     move-result v0
 
     .line 5
-    invoke-virtual {p4, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p4, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v2
 
     .line 6
-    invoke-virtual {p4, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p4, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v3
 
@@ -181,12 +181,12 @@
     move-result p5
 
     .line 13
-    invoke-virtual {p4, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p4, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result p6
 
     .line 14
-    invoke-virtual {p4, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p4, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result p3
 
@@ -283,12 +283,12 @@
     sub-int/2addr p5, p1
 
     .line 5
-    invoke-virtual {p4, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p4, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result p1
 
     .line 6
-    invoke-virtual {p4, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p4, p3}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result p2
 

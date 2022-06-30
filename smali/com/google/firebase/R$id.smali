@@ -17,51 +17,51 @@
 
 .field public static final async:I = 0x7f0a0099
 
-.field public static final blocking:I = 0x7f0a00b0
+.field public static final blocking:I = 0x7f0a00b2
 
-.field public static final cancel_action:I = 0x7f0a00d2
+.field public static final cancel_action:I = 0x7f0a00d4
 
-.field public static final chronometer:I = 0x7f0a00ec
+.field public static final chronometer:I = 0x7f0a00ee
 
-.field public static final end_padder:I = 0x7f0a0163
+.field public static final end_padder:I = 0x7f0a0166
 
-.field public static final forever:I = 0x7f0a0194
+.field public static final forever:I = 0x7f0a0197
 
-.field public static final icon:I = 0x7f0a0235
+.field public static final icon:I = 0x7f0a0238
 
-.field public static final icon_group:I = 0x7f0a0237
+.field public static final icon_group:I = 0x7f0a023a
 
-.field public static final info:I = 0x7f0a0247
+.field public static final info:I = 0x7f0a024a
 
-.field public static final italic:I = 0x7f0a0267
+.field public static final italic:I = 0x7f0a026a
 
-.field public static final line1:I = 0x7f0a0299
+.field public static final line1:I = 0x7f0a029c
 
-.field public static final line3:I = 0x7f0a029a
+.field public static final line3:I = 0x7f0a029d
 
-.field public static final media_actions:I = 0x7f0a02bf
+.field public static final media_actions:I = 0x7f0a02c2
 
-.field public static final normal:I = 0x7f0a0307
+.field public static final normal:I = 0x7f0a030a
 
-.field public static final notification_background:I = 0x7f0a030a
+.field public static final notification_background:I = 0x7f0a030d
 
-.field public static final notification_main_column:I = 0x7f0a030b
+.field public static final notification_main_column:I = 0x7f0a030e
 
-.field public static final notification_main_column_container:I = 0x7f0a030c
+.field public static final notification_main_column_container:I = 0x7f0a030f
 
-.field public static final right_icon:I = 0x7f0a03ab
+.field public static final right_icon:I = 0x7f0a03af
 
-.field public static final right_side:I = 0x7f0a03ac
+.field public static final right_side:I = 0x7f0a03b0
 
-.field public static final status_bar_latest_event_content:I = 0x7f0a0427
+.field public static final status_bar_latest_event_content:I = 0x7f0a042c
 
-.field public static final text:I = 0x7f0a0457
+.field public static final text:I = 0x7f0a045c
 
-.field public static final text2:I = 0x7f0a0458
+.field public static final text2:I = 0x7f0a045d
 
-.field public static final time:I = 0x7f0a0469
+.field public static final time:I = 0x7f0a046e
 
-.field public static final title:I = 0x7f0a046b
+.field public static final title:I = 0x7f0a0470
 
 
 # direct methods

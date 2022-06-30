@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/share/KGAnimationButton$1;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/share/KGAnimationButton$1$2;->this$1:Lcom/kakaogame/promotion/share/KGAnimationButton$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,14 +44,14 @@
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    invoke-virtual {p1, v0}, Landroid/widget/FrameLayout;->setScaleX(F)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->setScaleX(F)V
 
     .line 2
     iget-object p1, p0, Lcom/kakaogame/promotion/share/KGAnimationButton$1$2;->this$1:Lcom/kakaogame/promotion/share/KGAnimationButton$1;
 
     iget-object p1, p1, Lcom/kakaogame/promotion/share/KGAnimationButton$1;->this$0:Lcom/kakaogame/promotion/share/KGAnimationButton;
 
-    invoke-virtual {p1, v0}, Landroid/widget/FrameLayout;->setScaleY(F)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->setScaleY(F)V
 
     return-void
 .end method

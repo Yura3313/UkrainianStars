@@ -1,9 +1,9 @@
-.class public Lcom/google/android/material/bottomappbar/BottomAppBar$b;
+.class public final Lcom/google/android/material/bottomappbar/BottomAppBar$b;
 .super Ljava/lang/Object;
 .source "BottomAppBar.java"
 
 # interfaces
-.implements Lc4/i;
+.implements Ld4/j;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lc4/i<",
+        "Ld4/j<",
         "Lcom/google/android/material/floatingactionbutton/FloatingActionButton;",
         ">;"
     }
@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$b;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

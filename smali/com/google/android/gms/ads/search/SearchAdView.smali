@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final g:Lj3/z51;
+.field public final f:Lk3/r51;
 
 
 # direct methods
@@ -15,13 +15,13 @@
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 2
-    new-instance p1, Lj3/z51;
+    new-instance p1, Lk3/r51;
 
     const/4 v0, 0x0
 
-    invoke-direct {p1, p0, p2, v0}, Lj3/z51;-><init>(Landroid/view/ViewGroup;Landroid/util/AttributeSet;Z)V
+    invoke-direct {p1, p0, p2, v0}, Lk3/r51;-><init>(Landroid/view/ViewGroup;Landroid/util/AttributeSet;Z)V
 
-    iput-object p1, p0, Lcom/google/android/gms/ads/search/SearchAdView;->g:Lj3/z51;
+    iput-object p1, p0, Lcom/google/android/gms/ads/search/SearchAdView;->f:Lk3/r51;
 
     return-void
 .end method
@@ -33,27 +33,27 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    new-instance p1, Lj3/z51;
+    new-instance p1, Lk3/r51;
 
     const/4 p3, 0x0
 
-    invoke-direct {p1, p0, p2, p3}, Lj3/z51;-><init>(Landroid/view/ViewGroup;Landroid/util/AttributeSet;Z)V
+    invoke-direct {p1, p0, p2, p3}, Lk3/r51;-><init>(Landroid/view/ViewGroup;Landroid/util/AttributeSet;Z)V
 
-    iput-object p1, p0, Lcom/google/android/gms/ads/search/SearchAdView;->g:Lj3/z51;
+    iput-object p1, p0, Lcom/google/android/gms/ads/search/SearchAdView;->f:Lk3/r51;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final getAdListener()Lcom/google/android/gms/ads/c;
+.method public final getAdListener()Lcom/google/android/gms/ads/b;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->g:Lj3/z51;
+    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->f:Lk3/r51;
 
     .line 2
-    iget-object v0, v0, Lj3/z51;->e:Lcom/google/android/gms/ads/c;
+    iget-object v0, v0, Lk3/r51;->e:Lcom/google/android/gms/ads/b;
 
     return-object v0
 .end method
@@ -61,10 +61,9 @@
 .method public final getAdSize()Lcom/google/android/gms/ads/f;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->g:Lj3/z51;
+    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->f:Lk3/r51;
 
-    invoke-virtual {v0}, Lj3/z51;->a()Lcom/google/android/gms/ads/f;
+    invoke-virtual {v0}, Lk3/r51;->a()Lcom/google/android/gms/ads/f;
 
     move-result-object v0
 
@@ -74,10 +73,9 @@
 .method public final getAdUnitId()Ljava/lang/String;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->g:Lj3/z51;
+    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->f:Lk3/r51;
 
-    invoke-virtual {v0}, Lj3/z51;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lk3/r51;->b()Ljava/lang/String;
 
     move-result-object v0
 
@@ -196,7 +194,7 @@
     if-eqz v1, :cond_1
 
     .line 7
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -221,7 +219,7 @@
 
     .line 10
     :goto_1
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getSuggestedMinimumWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumWidth()I
 
     move-result v2
 
@@ -230,7 +228,7 @@
     move-result v0
 
     .line 11
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getSuggestedMinimumHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumHeight()I
 
     move-result v2
 
@@ -248,18 +246,17 @@
     move-result p2
 
     .line 13
-    invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->setMeasuredDimension(II)V
+    invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
     return-void
 .end method
 
-.method public final setAdListener(Lcom/google/android/gms/ads/c;)V
+.method public final setAdListener(Lcom/google/android/gms/ads/b;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->g:Lj3/z51;
+    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->f:Lk3/r51;
 
-    invoke-virtual {v0, p1}, Lj3/z51;->d(Lcom/google/android/gms/ads/c;)V
+    invoke-virtual {v0, p1}, Lk3/r51;->d(Lcom/google/android/gms/ads/b;)V
 
     return-void
 .end method
@@ -268,7 +265,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->g:Lj3/z51;
+    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->f:Lk3/r51;
 
     const/4 v1, 0x1
 
@@ -279,12 +276,12 @@
     aput-object p1, v1, v2
 
     .line 2
-    iget-object p1, v0, Lj3/z51;->f:[Lcom/google/android/gms/ads/f;
+    iget-object p1, v0, Lk3/r51;->f:[Lcom/google/android/gms/ads/f;
 
     if-nez p1, :cond_0
 
     .line 3
-    invoke-virtual {v0, v1}, Lj3/z51;->j([Lcom/google/android/gms/ads/f;)V
+    invoke-virtual {v0, v1}, Lk3/r51;->j([Lcom/google/android/gms/ads/f;)V
 
     return-void
 
@@ -302,10 +299,9 @@
 .method public final setAdUnitId(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->g:Lj3/z51;
+    iget-object v0, p0, Lcom/google/android/gms/ads/search/SearchAdView;->f:Lk3/r51;
 
-    invoke-virtual {v0, p1}, Lj3/z51;->e(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lk3/r51;->e(Ljava/lang/String;)V
 
     return-void
 .end method

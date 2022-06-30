@@ -17,20 +17,19 @@
 # instance fields
 .field public a:Landroid/content/Context;
 
-.field public b:Lj3/wg0;
+.field public b:Lk3/ug0;
 
 .field public c:Landroid/os/Bundle;
 
 .field public d:Ljava/lang/String;
 
-.field public e:Lj3/tg0;
+.field public e:Lk3/rg0;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,14 +38,11 @@
 
 # virtual methods
 .method public final a()Lcom/google/android/gms/internal/ads/j;
-    .locals 2
+    .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/gms/internal/ads/j;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lcom/google/android/gms/internal/ads/j;-><init>(Lcom/google/android/gms/internal/ads/j$a;Lj3/dc;)V
+    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/ads/j;-><init>(Lcom/google/android/gms/internal/ads/j$a;)V
 
     return-object v0
 .end method

@@ -72,23 +72,43 @@
     return p1
 .end method
 
-.method public final e(I)V
+.method public final e()V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;
+
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$f;->b()V
+
+    return-void
+.end method
+
+.method public final f(I)V
     .locals 3
 
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     .line 2
-    invoke-virtual {v0, p1, v1, v2}, Landroidx/recyclerview/widget/RecyclerView$f;->d(IILjava/lang/Object;)V
+    invoke-virtual {v0, p1, v2, v1}, Landroidx/recyclerview/widget/RecyclerView$f;->d(IILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public abstract f(Landroidx/recyclerview/widget/RecyclerView$z;I)V
+.method public final g(II)V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;
+
+    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$f;->e(II)V
+
+    return-void
+.end method
+
+.method public abstract h(Landroidx/recyclerview/widget/RecyclerView$z;I)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TVH;I)V"
@@ -96,7 +116,7 @@
     .end annotation
 .end method
 
-.method public abstract g(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$z;
+.method public abstract i(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$z;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -106,13 +126,33 @@
     .end annotation
 .end method
 
-.method public h(Landroidx/recyclerview/widget/RecyclerView$z;)V
+.method public j(Landroidx/recyclerview/widget/RecyclerView$z;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TVH;)V"
         }
     .end annotation
+
+    return-void
+.end method
+
+.method public final k(Landroidx/recyclerview/widget/RecyclerView$g;)V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;
+
+    invoke-virtual {v0, p1}, Landroid/database/Observable;->registerObserver(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public final l(Landroidx/recyclerview/widget/RecyclerView$g;)V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;
+
+    invoke-virtual {v0, p1}, Landroid/database/Observable;->unregisterObserver(Ljava/lang/Object;)V
 
     return-void
 .end method

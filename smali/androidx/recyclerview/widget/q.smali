@@ -1,19 +1,18 @@
-.class public Landroidx/recyclerview/widget/q;
+.class public final Landroidx/recyclerview/widget/q;
 .super Landroidx/recyclerview/widget/c0;
 .source "LinearSnapHelper.java"
 
 
 # instance fields
-.field public d:Landroidx/recyclerview/widget/v;
+.field public d:Landroidx/recyclerview/widget/u;
 
-.field public e:Landroidx/recyclerview/widget/v;
+.field public e:Landroidx/recyclerview/widget/t;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/c0;-><init>()V
 
     return-void
@@ -21,7 +20,7 @@
 
 
 # virtual methods
-.method public b(Landroidx/recyclerview/widget/RecyclerView$m;Landroid/view/View;)[I
+.method public final b(Landroidx/recyclerview/widget/RecyclerView$m;Landroid/view/View;)[I
     .locals 4
 
     const/4 v0, 0x2
@@ -85,7 +84,7 @@
     return-object v0
 .end method
 
-.method public d(Landroidx/recyclerview/widget/RecyclerView$m;)Landroid/view/View;
+.method public final d(Landroidx/recyclerview/widget/RecyclerView$m;)Landroid/view/View;
     .locals 1
 
     .line 1
@@ -131,7 +130,7 @@
     return-object p1
 .end method
 
-.method public e(Landroidx/recyclerview/widget/RecyclerView$m;II)I
+.method public final e(Landroidx/recyclerview/widget/RecyclerView$m;II)I
     .locals 8
 
     .line 1
@@ -145,7 +144,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$m;->I()I
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$m;->G()I
 
     move-result v0
 
@@ -165,7 +164,7 @@
 
     .line 4
     :cond_2
-    invoke-virtual {p1, v2}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p1, v2}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v2
 
@@ -417,7 +416,7 @@
     move-result-object v8
 
     .line 6
-    invoke-virtual {p1, v8}, Landroidx/recyclerview/widget/RecyclerView$m;->Q(Landroid/view/View;)I
+    invoke-virtual {p1, v8}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v9
 
@@ -514,11 +513,10 @@
 
     return p4
 
-    .line 13
     :cond_8
     aget p1, v0, p4
 
-    .line 14
+    .line 13
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
     move-result p1
@@ -543,7 +541,7 @@
 
     div-float/2addr p1, v2
 
-    .line 15
+    .line 14
     invoke-static {p1}, Ljava/lang/Math;->round(F)I
 
     move-result p1
@@ -631,7 +629,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/q;->e:Landroidx/recyclerview/widget/v;
+    iget-object v0, p0, Landroidx/recyclerview/widget/q;->e:Landroidx/recyclerview/widget/t;
 
     if-eqz v0, :cond_0
 
@@ -646,11 +644,11 @@
     invoke-direct {v0, p1}, Landroidx/recyclerview/widget/t;-><init>(Landroidx/recyclerview/widget/RecyclerView$m;)V
 
     .line 3
-    iput-object v0, p0, Landroidx/recyclerview/widget/q;->e:Landroidx/recyclerview/widget/v;
+    iput-object v0, p0, Landroidx/recyclerview/widget/q;->e:Landroidx/recyclerview/widget/t;
 
     .line 4
     :cond_1
-    iget-object p1, p0, Landroidx/recyclerview/widget/q;->e:Landroidx/recyclerview/widget/v;
+    iget-object p1, p0, Landroidx/recyclerview/widget/q;->e:Landroidx/recyclerview/widget/t;
 
     return-object p1
 .end method
@@ -659,7 +657,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/q;->d:Landroidx/recyclerview/widget/v;
+    iget-object v0, p0, Landroidx/recyclerview/widget/q;->d:Landroidx/recyclerview/widget/u;
 
     if-eqz v0, :cond_0
 
@@ -674,11 +672,11 @@
     invoke-direct {v0, p1}, Landroidx/recyclerview/widget/u;-><init>(Landroidx/recyclerview/widget/RecyclerView$m;)V
 
     .line 3
-    iput-object v0, p0, Landroidx/recyclerview/widget/q;->d:Landroidx/recyclerview/widget/v;
+    iput-object v0, p0, Landroidx/recyclerview/widget/q;->d:Landroidx/recyclerview/widget/u;
 
     .line 4
     :cond_1
-    iget-object p1, p0, Landroidx/recyclerview/widget/q;->d:Landroidx/recyclerview/widget/v;
+    iget-object p1, p0, Landroidx/recyclerview/widget/q;->d:Landroidx/recyclerview/widget/u;
 
     return-object p1
 .end method

@@ -30,7 +30,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/linecorp/linesdk/LineAccessToken$a;
 
     invoke-direct {v0}, Lcom/linecorp/linesdk/LineAccessToken$a;-><init>()V
@@ -181,7 +180,6 @@
 .method public getAccessToken()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineAccessToken;->accessToken:Ljava/lang/String;
 
     return-object v0
@@ -190,7 +188,6 @@
 .method public getEstimatedExpirationTimeMillis()J
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Lcom/linecorp/linesdk/LineAccessToken;->getIssuedClientTimeMillis()J
 
     move-result-wide v0
@@ -207,7 +204,6 @@
 .method public getExpiresInMillis()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/linecorp/linesdk/LineAccessToken;->expiresInMillis:J
 
     return-wide v0
@@ -216,7 +212,6 @@
 .method public getIssuedClientTimeMillis()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/linecorp/linesdk/LineAccessToken;->issuedClientTimeMillis:J
 
     return-wide v0
@@ -266,7 +261,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "LineAccessToken{accessToken=\'#####\', expiresInMillis="

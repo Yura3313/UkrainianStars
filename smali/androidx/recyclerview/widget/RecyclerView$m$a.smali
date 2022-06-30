@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/RecyclerView$m$a;
+.class public final Landroidx/recyclerview/widget/RecyclerView$m$a;
 .super Ljava/lang/Object;
 .source "RecyclerView.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView$m;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$m$a;->a:Landroidx/recyclerview/widget/RecyclerView$m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;)I
+.method public final a(Landroid/view/View;)I
     .locals 2
 
     .line 1
@@ -59,30 +58,29 @@
     return p1
 .end method
 
-.method public b()I
+.method public final b()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$m$a;->a:Landroidx/recyclerview/widget/RecyclerView$m;
 
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->N()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->L()I
 
     move-result v0
 
     return v0
 .end method
 
-.method public c()I
+.method public final c()I
     .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$m$a;->a:Landroidx/recyclerview/widget/RecyclerView$m;
 
     .line 2
-    iget v1, v0, Landroidx/recyclerview/widget/RecyclerView$m;->n:I
+    iget v1, v0, Landroidx/recyclerview/widget/RecyclerView$m;->p:I
 
     .line 3
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->O()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->M()I
 
     move-result v0
 
@@ -91,10 +89,9 @@
     return v1
 .end method
 
-.method public d(I)Landroid/view/View;
+.method public final d(I)Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$m$a;->a:Landroidx/recyclerview/widget/RecyclerView$m;
 
     invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$m;->w(I)Landroid/view/View;
@@ -104,7 +101,7 @@
     return-object p1
 .end method
 
-.method public e(Landroid/view/View;)I
+.method public final e(Landroid/view/View;)I
     .locals 2
 
     .line 1
@@ -117,7 +114,7 @@
     .line 2
     iget-object v1, p0, Landroidx/recyclerview/widget/RecyclerView$m$a;->a:Landroidx/recyclerview/widget/RecyclerView$m;
 
-    invoke-virtual {v1, p1}, Landroidx/recyclerview/widget/RecyclerView$m;->F(Landroid/view/View;)I
+    invoke-virtual {v1, p1}, Landroidx/recyclerview/widget/RecyclerView$m;->D(Landroid/view/View;)I
 
     move-result p1
 

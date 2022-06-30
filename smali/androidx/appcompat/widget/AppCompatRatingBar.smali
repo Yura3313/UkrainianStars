@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final g:Landroidx/appcompat/widget/j;
+.field public final f:Landroidx/appcompat/widget/i;
 
 
 # direct methods
@@ -26,28 +26,28 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RatingBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/RatingBar;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Landroidx/appcompat/widget/d0;->a(Landroid/view/View;Landroid/content/Context;)V
+    invoke-static {p0, p1}, Landroidx/appcompat/widget/c0;->a(Landroid/view/View;Landroid/content/Context;)V
 
     .line 4
-    new-instance p1, Landroidx/appcompat/widget/j;
+    new-instance p1, Landroidx/appcompat/widget/i;
 
-    invoke-direct {p1, p0}, Landroidx/appcompat/widget/j;-><init>(Landroid/widget/ProgressBar;)V
+    invoke-direct {p1, p0}, Landroidx/appcompat/widget/i;-><init>(Landroid/widget/ProgressBar;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->g:Landroidx/appcompat/widget/j;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->f:Landroidx/appcompat/widget/i;
 
     .line 5
-    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/j;->a(Landroid/util/AttributeSet;I)V
+    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/i;->a(Landroid/util/AttributeSet;I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public declared-synchronized onMeasure(II)V
+.method public final declared-synchronized onMeasure(II)V
     .locals 1
 
     monitor-enter p0
@@ -57,10 +57,10 @@
     invoke-super {p0, p1, p2}, Landroid/widget/RatingBar;->onMeasure(II)V
 
     .line 2
-    iget-object p2, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->g:Landroidx/appcompat/widget/j;
+    iget-object p2, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->f:Landroidx/appcompat/widget/i;
 
     .line 3
-    iget-object p2, p2, Landroidx/appcompat/widget/j;->b:Landroid/graphics/Bitmap;
+    iget-object p2, p2, Landroidx/appcompat/widget/i;->b:Landroid/graphics/Bitmap;
 
     if-eqz p2, :cond_0
 
@@ -83,12 +83,12 @@
     move-result p1
 
     .line 6
-    invoke-virtual {p0}, Landroid/widget/RatingBar;->getMeasuredHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result p2
 
     .line 7
-    invoke-virtual {p0, p1, p2}, Landroid/widget/RatingBar;->setMeasuredDimension(II)V
+    invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

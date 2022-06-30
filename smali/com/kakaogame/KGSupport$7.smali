@@ -27,7 +27,6 @@
 .method public constructor <init>(Landroid/app/Activity;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSupport$7;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/KGSupport$7;->val$uri:Ljava/lang/String;

@@ -35,7 +35,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +57,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryException;->unknown:Ljava/util/Map;
 
     return-void
@@ -67,7 +65,6 @@
 .method public getMechanism()Lio/sentry/protocol/Mechanism;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryException;->mechanism:Lio/sentry/protocol/Mechanism;
 
     return-object v0
@@ -76,7 +73,6 @@
 .method public getModule()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryException;->module:Ljava/lang/String;
 
     return-object v0
@@ -85,7 +81,6 @@
 .method public getStacktrace()Lio/sentry/protocol/SentryStackTrace;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryException;->stacktrace:Lio/sentry/protocol/SentryStackTrace;
 
     return-object v0
@@ -94,7 +89,6 @@
 .method public getThreadId()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryException;->threadId:Ljava/lang/Long;
 
     return-object v0
@@ -103,7 +97,6 @@
 .method public getType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryException;->type:Ljava/lang/String;
 
     return-object v0
@@ -112,7 +105,6 @@
 .method public getValue()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryException;->value:Ljava/lang/String;
 
     return-object v0
@@ -121,7 +113,6 @@
 .method public setMechanism(Lio/sentry/protocol/Mechanism;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryException;->mechanism:Lio/sentry/protocol/Mechanism;
 
     return-void
@@ -130,7 +121,6 @@
 .method public setModule(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryException;->module:Ljava/lang/String;
 
     return-void
@@ -139,7 +129,6 @@
 .method public setStacktrace(Lio/sentry/protocol/SentryStackTrace;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryException;->stacktrace:Lio/sentry/protocol/SentryStackTrace;
 
     return-void
@@ -148,7 +137,6 @@
 .method public setThreadId(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryException;->threadId:Ljava/lang/Long;
 
     return-void
@@ -157,7 +145,6 @@
 .method public setType(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryException;->type:Ljava/lang/String;
 
     return-void
@@ -166,7 +153,6 @@
 .method public setValue(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryException;->value:Ljava/lang/String;
 
     return-void

@@ -175,7 +175,6 @@
 .method public static synthetic access$100(I)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGKakaoInvitationJoiner;->loadInvitationJoiners(I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -186,7 +185,6 @@
 .method private static initInterfaceBroker()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/kakaogame/KGKakaoInvitationJoiner$2;
 
     invoke-direct {v0}, Lcom/kakaogame/KGKakaoInvitationJoiner$2;-><init>()V
@@ -201,7 +199,6 @@
 .method public static initialize()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/KGKakaoInvitationJoiner;->initInterfaceBroker()V
 
     return-void
@@ -414,7 +411,7 @@
 
     .line 23
     :try_start_1
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -423,7 +420,7 @@
     const/16 v1, 0xfa1
 
     .line 24
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -435,7 +432,7 @@
 
     .line 25
     :goto_2
-    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -452,7 +449,7 @@
     const/4 v1, 0x0
 
     .line 27
-    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -503,7 +500,6 @@
 
     const-string v0, "hostRewardCode"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -569,7 +565,6 @@
 
     const-string v0, "joinRewardCode"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -635,7 +630,6 @@
 
     const-string v0, "joinTime"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -654,7 +648,6 @@
 
     const-string v0, "player"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0

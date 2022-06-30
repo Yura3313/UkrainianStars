@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/x;
+.class public final Landroidx/recyclerview/widget/x;
 .super Ljava/lang/Object;
 .source "RecyclerView.java"
 
@@ -14,7 +14,6 @@
 .method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/x;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,10 +23,9 @@
 
 
 # virtual methods
-.method public a(I)Landroid/view/View;
+.method public final a(I)Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/x;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
@@ -37,10 +35,9 @@
     return-object p1
 .end method
 
-.method public b()I
+.method public final b()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/x;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
@@ -50,7 +47,19 @@
     return v0
 .end method
 
-.method public c(I)V
+.method public final c(Landroid/view/View;)I
+    .locals 1
+
+    iget-object v0, p0, Landroidx/recyclerview/widget/x;->a:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final d(I)V
     .locals 2
 
     .line 1

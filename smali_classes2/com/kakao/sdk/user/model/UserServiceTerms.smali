@@ -29,7 +29,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lcom/kakao/sdk/user/model/UserServiceTerms;->userId:J
@@ -145,7 +144,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/user/model/UserServiceTerms;->allowedServiceTerms:Ljava/util/List;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -172,7 +171,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/model/UserServiceTerms;->allowedServiceTerms:Ljava/util/List;
 
     return-object v0
@@ -181,7 +179,6 @@
 .method public final getUserId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakao/sdk/user/model/UserServiceTerms;->userId:J
 
     return-wide v0
@@ -226,10 +223,12 @@
 
     const-string v0, "UserServiceTerms(userId="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-wide v1, p0, Lcom/kakao/sdk/user/model/UserServiceTerms;->userId:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
@@ -242,7 +241,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Lt6/b;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Ltb/a;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

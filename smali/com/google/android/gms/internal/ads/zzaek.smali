@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract T()Lcom/google/android/gms/dynamic/IObjectWrapper;
+.method public abstract b0()Lcom/google/android/gms/dynamic/IObjectWrapper;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -15,7 +15,7 @@
     .end annotation
 .end method
 
-.method public abstract b()Ljava/lang/String;
+.method public abstract f()Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -23,31 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract c()Ljava/lang/String;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract d()Lcom/google/android/gms/internal/ads/zzado;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract e()Ljava/lang/String;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract f()Ljava/util/List;
+.method public abstract g()Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -63,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract j()Ljava/lang/String;
+.method public abstract h()Lcom/google/android/gms/internal/ads/zzado;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -71,7 +47,7 @@
     .end annotation
 .end method
 
-.method public abstract m()D
+.method public abstract i()Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -79,7 +55,7 @@
     .end annotation
 .end method
 
-.method public abstract p()Lcom/google/android/gms/internal/ads/zzadw;
+.method public abstract j()Ljava/util/List;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -87,7 +63,31 @@
     .end annotation
 .end method
 
-.method public abstract s()Ljava/lang/String;
+.method public abstract l()Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract o()D
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract r()Lcom/google/android/gms/internal/ads/zzadw;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract t()Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -22,11 +22,11 @@
     value = {
         "Ljava/lang/Object;",
         "Lcom/google/ads/mediation/MediationBannerAdapter<",
-        "Lk1/c;",
+        "Ll1/c;",
         "Lb1/c;",
         ">;",
         "Lcom/google/ads/mediation/MediationInterstitialAdapter<",
-        "Lk1/c;",
+        "Ll1/c;",
         "Lb1/c;",
         ">;"
     }
@@ -43,14 +43,13 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;)Ljava/lang/Object;
-    .locals 2
+.method public static a()Ljava/lang/Object;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -61,47 +60,49 @@
         }
     .end annotation
 
-    const/4 p0, 0x0
+    const/4 v0, 0x0
 
     .line 1
     :try_start_0
-    invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
     move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
-
-    move-result-object p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    return-object p0
+    return-object v0
 
     :catchall_0
-    move-exception v0
+    move-exception v1
 
     .line 2
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    const-string v1, "null"
+    const-string v2, "null"
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    add-int/lit8 v2, v2, 0x2e
+
+    .line 3
+    invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v1
 
-    add-int/lit8 v1, v1, 0x2e
+    .line 4
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-static {v0, v1}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    move-result v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    return-object p0
+    return-object v0
 .end method
 
 
@@ -136,13 +137,12 @@
         value = {
             "()",
             "Ljava/lang/Class<",
-            "Lk1/c;",
+            "Ll1/c;",
             ">;"
         }
     .end annotation
 
-    .line 1
-    const-class v0, Lk1/c;
+    const-class v0, Ll1/c;
 
     return-object v0
 .end method
@@ -166,75 +166,74 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Lb1/c;
 
     return-object v0
 .end method
 
-.method public final requestBannerAd(La1/c;Landroid/app/Activity;Lb1/c;Lcom/google/ads/AdSize;La1/a;Lk1/c;)V
-    .locals 8
+.method public final requestBannerAd(La1/c;Landroid/app/Activity;Lb1/c;Lcom/google/ads/AdSize;La1/a;Ll1/c;)V
+    .locals 9
 
     .line 1
     invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    const/4 p3, 0x0
+    invoke-static {}, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->a()Ljava/lang/Object;
 
-    invoke-static {p3}, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->a(Ljava/lang/String;)Ljava/lang/Object;
+    move-result-object p3
 
-    move-result-object v0
+    check-cast p3, Lcom/google/ads/mediation/customevent/CustomEventBanner;
 
-    check-cast v0, Lcom/google/ads/mediation/customevent/CustomEventBanner;
+    iput-object p3, p0, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->a:Lcom/google/ads/mediation/customevent/CustomEventBanner;
 
-    iput-object v0, p0, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->a:Lcom/google/ads/mediation/customevent/CustomEventBanner;
+    const/4 v0, 0x0
 
-    if-nez v0, :cond_1
+    if-nez p3, :cond_1
 
     .line 2
     sget-object p2, Lcom/google/ads/AdRequest$ErrorCode;->INTERNAL_ERROR:Lcom/google/ads/AdRequest$ErrorCode;
 
-    check-cast p1, Lj3/p6;
+    check-cast p1, Lk3/p6;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
     invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object p4
+    move-result-object p3
 
-    invoke-virtual {p4}, Ljava/lang/String;->length()I
+    invoke-virtual {p3}, Ljava/lang/String;->length()I
 
-    move-result p4
+    move-result p3
 
-    add-int/lit8 p4, p4, 0x2f
+    add-int/lit8 p3, p3, 0x2f
 
-    new-instance p5, Ljava/lang/StringBuilder;
+    new-instance p4, Ljava/lang/StringBuilder;
 
-    invoke-direct {p5, p4}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {p4, p3}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 4
-    sget-object p4, Lj3/t51;->j:Lj3/t51;
+    sget-object p3, Lk3/l51;->j:Lk3/l51;
 
-    iget-object p4, p4, Lj3/t51;->a:Lj3/bd;
+    iget-object p3, p3, Lk3/l51;->a:Lk3/ad;
 
     .line 5
-    invoke-static {}, Lj3/bd;->m()Z
+    invoke-static {}, Lk3/ad;->l()Z
 
-    move-result p4
+    move-result p3
 
-    if-nez p4, :cond_0
+    if-nez p3, :cond_0
 
-    const-string p4, "#008 Must be called on the main UI thread."
+    const-string p3, "#008 Must be called on the main UI thread."
 
     .line 6
-    invoke-static {p4, p3}, Lj3/cj;->j(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p3, v0}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 7
-    sget-object p3, Lj3/bd;->b:Landroid/os/Handler;
+    sget-object p3, Lk3/ad;->b:Lk3/qj0;
 
-    new-instance p4, Lj3/q6;
+    new-instance p4, Lk3/q6;
 
-    invoke-direct {p4, p1, p2}, Lj3/q6;-><init>(Lj3/p6;Lcom/google/ads/AdRequest$ErrorCode;)V
+    invoke-direct {p4, p1, p2}, Lk3/q6;-><init>(Lk3/p6;Lcom/google/ads/AdRequest$ErrorCode;)V
 
     invoke-virtual {p3, p4}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -243,13 +242,13 @@
     .line 8
     :cond_0
     :try_start_0
-    iget-object p1, p1, Lj3/p6;->a:Lcom/google/android/gms/internal/ads/zzana;
+    iget-object p1, p1, Lk3/p6;->a:Lcom/google/android/gms/internal/ads/zzana;
 
-    invoke-static {p2}, Lj3/s6;->a(Lcom/google/ads/AdRequest$ErrorCode;)I
+    invoke-static {p2}, Lk3/s6;->a(Lcom/google/ads/AdRequest$ErrorCode;)I
 
     move-result p2
 
-    invoke-interface {p1, p2}, Lcom/google/android/gms/internal/ads/zzana;->I0(I)V
+    invoke-interface {p1, p2}, Lcom/google/android/gms/internal/ads/zzana;->N0(I)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -261,7 +260,7 @@
     const-string p2, "#007 Could not call remote method."
 
     .line 9
-    invoke-static {p2, p1}, Lj3/cj;->j(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, p1}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return-void
@@ -273,33 +272,33 @@
 
     .line 10
     :cond_2
-    iget-object p6, p6, Lk1/c;->a:Ljava/util/HashMap;
+    iget-object p1, p6, Ll1/c;->a:Ljava/util/HashMap;
 
-    invoke-virtual {p6, p3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p3
+    move-result-object v0
 
     :goto_1
-    move-object v7, p3
+    move-object v8, v0
 
     .line 11
-    iget-object v0, p0, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->a:Lcom/google/ads/mediation/customevent/CustomEventBanner;
+    iget-object v1, p0, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->a:Lcom/google/ads/mediation/customevent/CustomEventBanner;
 
-    new-instance v1, Lcom/google/ads/mediation/customevent/CustomEventAdapter$a;
+    new-instance v2, Lcom/google/ads/mediation/customevent/CustomEventAdapter$a;
 
-    invoke-direct {v1, p0, p1}, Lcom/google/ads/mediation/customevent/CustomEventAdapter$a;-><init>(Lcom/google/ads/mediation/customevent/CustomEventAdapter;La1/c;)V
-
-    const/4 v3, 0x0
+    invoke-direct {v2}, Lcom/google/ads/mediation/customevent/CustomEventAdapter$a;-><init>()V
 
     const/4 v4, 0x0
 
-    move-object v2, p2
+    const/4 v5, 0x0
 
-    move-object v5, p4
+    move-object v3, p2
 
-    move-object v6, p5
+    move-object v6, p4
 
-    invoke-interface/range {v0 .. v7}, Lcom/google/ads/mediation/customevent/CustomEventBanner;->requestBannerAd(Lb1/a;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Lcom/google/ads/AdSize;La1/a;Ljava/lang/Object;)V
+    move-object v7, p5
+
+    invoke-interface/range {v1 .. v8}, Lcom/google/ads/mediation/customevent/CustomEventBanner;->requestBannerAd(Lb1/a;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Lcom/google/ads/AdSize;La1/a;Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -310,76 +309,76 @@
     .line 12
     check-cast p3, Lb1/c;
 
-    check-cast p6, Lk1/c;
+    check-cast p6, Ll1/c;
 
-    invoke-virtual/range {p0 .. p6}, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->requestBannerAd(La1/c;Landroid/app/Activity;Lb1/c;Lcom/google/ads/AdSize;La1/a;Lk1/c;)V
+    invoke-virtual/range {p0 .. p6}, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->requestBannerAd(La1/c;Landroid/app/Activity;Lb1/c;Lcom/google/ads/AdSize;La1/a;Ll1/c;)V
 
     return-void
 .end method
 
-.method public final requestInterstitialAd(La1/d;Landroid/app/Activity;Lb1/c;La1/a;Lk1/c;)V
-    .locals 7
+.method public final requestInterstitialAd(La1/d;Landroid/app/Activity;Lb1/c;La1/a;Ll1/c;)V
+    .locals 8
 
     .line 1
     invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    const/4 p3, 0x0
+    invoke-static {}, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->a()Ljava/lang/Object;
 
-    invoke-static {p3}, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->a(Ljava/lang/String;)Ljava/lang/Object;
+    move-result-object p3
 
-    move-result-object v0
+    check-cast p3, Lcom/google/ads/mediation/customevent/CustomEventInterstitial;
 
-    check-cast v0, Lcom/google/ads/mediation/customevent/CustomEventInterstitial;
+    iput-object p3, p0, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->b:Lcom/google/ads/mediation/customevent/CustomEventInterstitial;
 
-    iput-object v0, p0, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->b:Lcom/google/ads/mediation/customevent/CustomEventInterstitial;
+    const/4 v0, 0x0
 
-    if-nez v0, :cond_1
+    if-nez p3, :cond_1
 
     .line 2
     sget-object p2, Lcom/google/ads/AdRequest$ErrorCode;->INTERNAL_ERROR:Lcom/google/ads/AdRequest$ErrorCode;
 
-    check-cast p1, Lj3/p6;
+    check-cast p1, Lk3/p6;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
     invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object p4
+    move-result-object p3
 
-    invoke-virtual {p4}, Ljava/lang/String;->length()I
+    invoke-virtual {p3}, Ljava/lang/String;->length()I
 
-    move-result p4
+    move-result p3
 
-    add-int/lit8 p4, p4, 0x2f
+    add-int/lit8 p3, p3, 0x2f
 
-    new-instance p5, Ljava/lang/StringBuilder;
+    new-instance p4, Ljava/lang/StringBuilder;
 
-    invoke-direct {p5, p4}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {p4, p3}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 4
-    sget-object p4, Lj3/t51;->j:Lj3/t51;
+    sget-object p3, Lk3/l51;->j:Lk3/l51;
 
-    iget-object p4, p4, Lj3/t51;->a:Lj3/bd;
+    iget-object p3, p3, Lk3/l51;->a:Lk3/ad;
 
     .line 5
-    invoke-static {}, Lj3/bd;->m()Z
+    invoke-static {}, Lk3/ad;->l()Z
 
-    move-result p4
+    move-result p3
 
-    if-nez p4, :cond_0
+    if-nez p3, :cond_0
 
-    const-string p4, "#008 Must be called on the main UI thread."
+    const-string p3, "#008 Must be called on the main UI thread."
 
     .line 6
-    invoke-static {p4, p3}, Lj3/cj;->j(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p3, v0}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 7
-    sget-object p3, Lj3/bd;->b:Landroid/os/Handler;
+    sget-object p3, Lk3/ad;->b:Lk3/qj0;
 
-    new-instance p4, Lj3/r6;
+    new-instance p4, Lk3/r6;
 
-    invoke-direct {p4, p1, p2}, Lj3/r6;-><init>(Lj3/p6;Lcom/google/ads/AdRequest$ErrorCode;)V
+    invoke-direct {p4, p1, p2}, Lk3/r6;-><init>(Lk3/p6;Lcom/google/ads/AdRequest$ErrorCode;)V
 
     invoke-virtual {p3, p4}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -388,13 +387,13 @@
     .line 8
     :cond_0
     :try_start_0
-    iget-object p1, p1, Lj3/p6;->a:Lcom/google/android/gms/internal/ads/zzana;
+    iget-object p1, p1, Lk3/p6;->a:Lcom/google/android/gms/internal/ads/zzana;
 
-    invoke-static {p2}, Lj3/s6;->a(Lcom/google/ads/AdRequest$ErrorCode;)I
+    invoke-static {p2}, Lk3/s6;->a(Lcom/google/ads/AdRequest$ErrorCode;)I
 
     move-result p2
 
-    invoke-interface {p1, p2}, Lcom/google/android/gms/internal/ads/zzana;->I0(I)V
+    invoke-interface {p1, p2}, Lcom/google/android/gms/internal/ads/zzana;->N0(I)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -406,7 +405,7 @@
     const-string p2, "#007 Could not call remote method."
 
     .line 9
-    invoke-static {p2, p1}, Lj3/cj;->j(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, p1}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return-void
@@ -418,33 +417,33 @@
 
     .line 10
     :cond_2
-    iget-object p5, p5, Lk1/c;->a:Ljava/util/HashMap;
+    iget-object p1, p5, Ll1/c;->a:Ljava/util/HashMap;
 
-    invoke-virtual {p5, p3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p3
+    move-result-object v0
 
     :goto_1
-    move-object v6, p3
+    move-object v7, v0
 
     .line 11
-    iget-object v0, p0, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->b:Lcom/google/ads/mediation/customevent/CustomEventInterstitial;
+    iget-object v1, p0, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->b:Lcom/google/ads/mediation/customevent/CustomEventInterstitial;
 
     .line 12
-    new-instance v1, Lcom/google/ads/mediation/customevent/CustomEventAdapter$b;
+    new-instance v2, Lcom/google/ads/mediation/customevent/CustomEventAdapter$b;
 
-    invoke-direct {v1, p0, p0, p1}, Lcom/google/ads/mediation/customevent/CustomEventAdapter$b;-><init>(Lcom/google/ads/mediation/customevent/CustomEventAdapter;Lcom/google/ads/mediation/customevent/CustomEventAdapter;La1/d;)V
-
-    const/4 v3, 0x0
+    invoke-direct {v2}, Lcom/google/ads/mediation/customevent/CustomEventAdapter$b;-><init>()V
 
     const/4 v4, 0x0
 
-    move-object v2, p2
+    const/4 v5, 0x0
 
-    move-object v5, p4
+    move-object v3, p2
+
+    move-object v6, p4
 
     .line 13
-    invoke-interface/range {v0 .. v6}, Lcom/google/ads/mediation/customevent/CustomEventInterstitial;->requestInterstitialAd(Lb1/b;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;La1/a;Ljava/lang/Object;)V
+    invoke-interface/range {v1 .. v7}, Lcom/google/ads/mediation/customevent/CustomEventInterstitial;->requestInterstitialAd(Lb1/b;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;La1/a;Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -455,9 +454,9 @@
     .line 14
     check-cast p3, Lb1/c;
 
-    check-cast p5, Lk1/c;
+    check-cast p5, Ll1/c;
 
-    invoke-virtual/range {p0 .. p5}, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->requestInterstitialAd(La1/d;Landroid/app/Activity;Lb1/c;La1/a;Lk1/c;)V
+    invoke-virtual/range {p0 .. p5}, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->requestInterstitialAd(La1/d;Landroid/app/Activity;Lb1/c;La1/a;Ll1/c;)V
 
     return-void
 .end method
@@ -465,7 +464,6 @@
 .method public final showInterstitial()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/ads/mediation/customevent/CustomEventAdapter;->b:Lcom/google/ads/mediation/customevent/CustomEventInterstitial;
 
     invoke-interface {v0}, Lcom/google/ads/mediation/customevent/CustomEventInterstitial;->showInterstitial()V

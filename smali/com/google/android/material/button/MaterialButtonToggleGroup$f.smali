@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/button/MaterialButtonToggleGroup$f;
+.class public final Lcom/google/android/material/button/MaterialButtonToggleGroup$f;
 .super Ljava/lang/Object;
 .source "MaterialButtonToggleGroup.java"
 
@@ -22,10 +22,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;Lcom/google/android/material/button/MaterialButtonToggleGroup$a;)V
+.method public constructor <init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$f;->a:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

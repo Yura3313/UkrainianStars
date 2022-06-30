@@ -28,7 +28,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/Class;)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -37,24 +37,15 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "enumClass"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     iput-object p1, p0, Lcom/kakao/sdk/common/json/KakaoEnumTypeAdapter;->enumClass:Ljava/lang/Class;
 
     return-void
-
-    :cond_0
-    const-string p1, "enumClass"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 
@@ -130,27 +121,27 @@
 
     .line 4
     :goto_2
-    new-instance p1, Lae/d;
+    new-instance p1, Lie/d;
 
-    invoke-direct {p1, v0, v0}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p1, v0, v0}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     goto :goto_4
 
     .line 5
     :cond_4
-    new-instance v1, Lae/d;
+    new-instance v1, Lie/d;
 
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-direct {v1, v0, p1}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v0, p1}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     goto :goto_3
 
     .line 6
     :cond_5
-    new-instance v1, Lae/d;
+    new-instance v1, Lie/d;
 
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextLong()J
 
@@ -160,7 +151,7 @@
 
     move-result-object p1
 
-    invoke-direct {v1, p1, v0}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, p1, v0}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     :goto_3
     move-object p1, v1
@@ -205,7 +196,7 @@
     move-result-object v5
 
     .line 11
-    iget-object v6, p1, Lae/d;->g:Ljava/lang/Object;
+    iget-object v6, p1, Lie/d;->f:Ljava/lang/Object;
 
     if-eqz v6, :cond_7
 
@@ -221,7 +212,7 @@
     if-eqz v4, :cond_9
 
     .line 13
-    iget-object v6, p1, Lae/d;->g:Ljava/lang/Object;
+    iget-object v6, p1, Lie/d;->f:Ljava/lang/Object;
 
     .line 14
     check-cast v6, Ljava/lang/Long;
@@ -251,14 +242,14 @@
 
     .line 15
     :cond_7
-    iget-object v6, p1, Lae/d;->h:Ljava/lang/Object;
+    iget-object v6, p1, Lie/d;->g:Ljava/lang/Object;
 
     if-eqz v6, :cond_9
 
     .line 16
     check-cast v6, Ljava/lang/String;
 
-    invoke-static {v6, v4}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -279,7 +270,7 @@
     if-eqz v4, :cond_9
 
     .line 18
-    iget-object v6, p1, Lae/d;->h:Ljava/lang/Object;
+    iget-object v6, p1, Lie/d;->g:Ljava/lang/Object;
 
     .line 19
     check-cast v6, Ljava/lang/String;
@@ -288,7 +279,7 @@
 
     move-result-object v4
 
-    invoke-static {v6, v4}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -438,7 +429,7 @@
     if-eqz v5, :cond_4
 
     .line 8
-    invoke-static {v4, p2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, p2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 

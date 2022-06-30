@@ -1,4 +1,4 @@
-.class public Ll/a$a;
+.class public final Ll/a$a;
 .super Ljava/lang/Object;
 .source "CardViewApi17Impl.java"
 
@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method public constructor <init>(Ll/a;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,10 +28,9 @@
 
 
 # virtual methods
-.method public a(Landroid/graphics/Canvas;Landroid/graphics/RectF;FLandroid/graphics/Paint;)V
+.method public final a(Landroid/graphics/Canvas;Landroid/graphics/RectF;FLandroid/graphics/Paint;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1, p2, p3, p3, p4}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
     return-void

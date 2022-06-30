@@ -1,4 +1,4 @@
-.class public Landroidx/lifecycle/b$a;
+.class public final Landroidx/lifecycle/b$a;
 .super Ljava/lang/Object;
 .source "ClassesInfoCache.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/Map;
+.field public final a:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -63,7 +63,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Landroidx/lifecycle/b$a;->a:Ljava/util/Map;
+    iput-object v0, p0, Landroidx/lifecycle/b$a;->a:Ljava/util/HashMap;
 
     .line 4
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -95,7 +95,7 @@
     check-cast v1, Landroidx/lifecycle/f$b;
 
     .line 6
-    iget-object v2, p0, Landroidx/lifecycle/b$a;->a:Ljava/util/Map;
+    iget-object v2, p0, Landroidx/lifecycle/b$a;->a:Ljava/util/HashMap;
 
     invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -111,7 +111,7 @@
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 8
-    iget-object v3, p0, Landroidx/lifecycle/b$a;->a:Ljava/util/Map;
+    iget-object v3, p0, Landroidx/lifecycle/b$a;->a:Ljava/util/HashMap;
 
     invoke-interface {v3, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

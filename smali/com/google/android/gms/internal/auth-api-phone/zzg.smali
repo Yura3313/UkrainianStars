@@ -6,7 +6,7 @@
 
 
 # virtual methods
-.method public abstract H0(Lcom/google/android/gms/common/api/Status;)V
+.method public abstract a()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

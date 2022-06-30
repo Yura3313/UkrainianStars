@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/d0$a;
+.class public final Landroidx/recyclerview/widget/d0$a;
 .super Ljava/lang/Object;
 .source "ViewBoundsCheck.java"
 
@@ -43,7 +43,19 @@
 
 
 # virtual methods
-.method public a()Z
+.method public final a(I)V
+    .locals 1
+
+    iget v0, p0, Landroidx/recyclerview/widget/d0$a;->a:I
+
+    or-int/2addr p1, v0
+
+    iput p1, p0, Landroidx/recyclerview/widget/d0$a;->a:I
+
+    return-void
+.end method
+
+.method public final b()Z
     .locals 4
 
     .line 1
@@ -60,7 +72,7 @@
 
     iget v3, p0, Landroidx/recyclerview/widget/d0$a;->b:I
 
-    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/d0$a;->b(II)I
+    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/d0$a;->c(II)I
 
     move-result v1
 
@@ -85,7 +97,7 @@
 
     iget v3, p0, Landroidx/recyclerview/widget/d0$a;->c:I
 
-    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/d0$a;->b(II)I
+    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/d0$a;->c(II)I
 
     move-result v1
 
@@ -110,7 +122,7 @@
 
     iget v3, p0, Landroidx/recyclerview/widget/d0$a;->b:I
 
-    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/d0$a;->b(II)I
+    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/d0$a;->c(II)I
 
     move-result v1
 
@@ -135,7 +147,7 @@
 
     iget v3, p0, Landroidx/recyclerview/widget/d0$a;->c:I
 
-    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/d0$a;->b(II)I
+    invoke-virtual {p0, v1, v3}, Landroidx/recyclerview/widget/d0$a;->c(II)I
 
     move-result v1
 
@@ -153,7 +165,7 @@
     return v0
 .end method
 
-.method public b(II)I
+.method public final c(II)I
     .locals 0
 
     if-le p1, p2, :cond_0

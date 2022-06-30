@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;-><clinit>()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +37,7 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -49,32 +48,32 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "source"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    new-instance v1, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;
+    new-instance v0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;
 
     .line 2
-    const-class v2, Lcom/supercell/id/model/IdProfile;
+    const-class v1, Lcom/supercell/id/model/IdProfile;
 
-    invoke-virtual {v2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {p1, v2}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+    invoke-virtual {p1, v1}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
 
-    move-result-object v2
+    move-result-object v1
 
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
-    check-cast v2, Lcom/supercell/id/model/IdProfile;
+    check-cast v1, Lcom/supercell/id/model/IdProfile;
 
     .line 3
-    new-instance v0, Ljava/util/ArrayList;
+    new-instance v2, Ljava/util/ArrayList;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 4
     const-class v3, Lcom/supercell/id/ui/BackStack$Entry;
@@ -83,7 +82,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p1, v0, v3}, Landroid/os/Parcel;->readList(Ljava/util/List;Ljava/lang/ClassLoader;)V
+    invoke-virtual {p1, v2, v3}, Landroid/os/Parcel;->readList(Ljava/util/List;Ljava/lang/ClassLoader;)V
 
     .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
@@ -117,26 +116,20 @@
 
     .line 7
     :cond_1
-    invoke-direct {v1, v2, v0, v3, v4}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;-><init>(Lcom/supercell/id/model/IdProfile;Ljava/util/List;ZZ)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;-><init>(Lcom/supercell/id/model/IdProfile;Ljava/util/List;ZZ)V
 
-    return-object v1
+    return-object v0
 
     .line 8
     :cond_2
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
-    throw v0
+    const/4 p1, 0x0
 
-    :cond_3
-    const-string p1, "source"
-
-    .line 9
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    throw p1
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -145,7 +138,6 @@
         }
     .end annotation
 
-    .line 1
     new-array p1, p1, [Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;
 
     return-object p1

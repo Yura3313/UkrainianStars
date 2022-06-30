@@ -14,7 +14,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/NoOpSpan;
 
     invoke-direct {v0}, Lio/sentry/NoOpSpan;-><init>()V
@@ -27,7 +26,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
 .method public static getInstance()Lio/sentry/NoOpSpan;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/NoOpSpan;->instance:Lio/sentry/NoOpSpan;
 
     return-object v0
@@ -83,7 +80,6 @@
 .method public getSpanContext()Lio/sentry/SpanContext;
     .locals 7
 
-    .line 1
     new-instance v6, Lio/sentry/SpanContext;
 
     sget-object v1, Lio/sentry/protocol/SentryId;->EMPTY_ID:Lio/sentry/protocol/SentryId;
@@ -207,7 +203,6 @@
 .method public toSentryTrace()Lio/sentry/SentryTraceHeader;
     .locals 4
 
-    .line 1
     new-instance v0, Lio/sentry/SentryTraceHeader;
 
     sget-object v1, Lio/sentry/protocol/SentryId;->EMPTY_ID:Lio/sentry/protocol/SentryId;
@@ -224,7 +219,6 @@
 .method public toTraceStateHeader()Lio/sentry/TraceStateHeader;
     .locals 2
 
-    .line 1
     new-instance v0, Lio/sentry/TraceStateHeader;
 
     const-string v1, ""
@@ -237,7 +231,6 @@
 .method public traceState()Lio/sentry/TraceState;
     .locals 3
 
-    .line 1
     new-instance v0, Lio/sentry/TraceState;
 
     sget-object v1, Lio/sentry/protocol/SentryId;->EMPTY_ID:Lio/sentry/protocol/SentryId;

@@ -27,14 +27,13 @@
 
 
 # instance fields
-.field public g:Ljava/lang/String;
+.field public f:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/supercell/id/view/PinEntryView$SavedState$a;
 
     invoke-direct {v0}, Lcom/supercell/id/view/PinEntryView$SavedState$a;-><init>()V
@@ -44,7 +43,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/os/Parcel;Lle/g;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
 
     .line 2
@@ -55,7 +54,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView$SavedState;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView$SavedState;->f:Ljava/lang/String;
 
     return-void
 .end method
@@ -71,7 +70,7 @@
 
 
 # virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1
@@ -80,7 +79,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/view/PinEntryView$SavedState;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/view/PinEntryView$SavedState;->f:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

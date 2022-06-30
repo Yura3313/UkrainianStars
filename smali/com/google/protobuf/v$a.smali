@@ -29,20 +29,20 @@
 
 
 # virtual methods
-.method public abstract B()Z
+.method public abstract B()Lcom/google/protobuf/w1$c;
 .end method
 
-.method public abstract E(Lcom/google/protobuf/q0$a;Lcom/google/protobuf/q0;)Lcom/google/protobuf/q0$a;
+.method public abstract G()Z
 .end method
 
-.method public abstract b()I
+.method public abstract K(Lcom/google/protobuf/q0$a;Lcom/google/protobuf/q0;)Lcom/google/protobuf/q0$a;
 .end method
 
-.method public abstract k()Z
+.method public abstract d()I
 .end method
 
-.method public abstract o()Lcom/google/protobuf/x1$b;
+.method public abstract l()Z
 .end method
 
-.method public abstract y()Lcom/google/protobuf/x1$c;
+.method public abstract q()Lcom/google/protobuf/w1$b;
 .end method

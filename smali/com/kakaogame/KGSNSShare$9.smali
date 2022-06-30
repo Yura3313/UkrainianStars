@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSNSShare$9;->val$callback:Lcom/kakaogame/KGResultCallback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/kakao/KakaoAgeAuthManager$1;->val$checkAgeAuthLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -33,17 +32,17 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lae/i;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lie/h;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoAgeAuthManager$1;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lae/i;
+    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoAgeAuthManager$1;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lie/h;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lae/i;
+.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lie/h;
     .locals 2
 
     const-string v0, "KakaoAgeAuthManager"
@@ -105,6 +104,7 @@
 
     move-result-object p2
 
+    .line 7
     invoke-virtual {p1}, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -117,20 +117,20 @@
 
     invoke-static {v0, p2}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
+    .line 8
     invoke-static {p1}, Lcom/kakaogame/KGResult;->getSuccessResult(Ljava/lang/Object;)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
-    .line 8
+    .line 9
     invoke-virtual {p0, p1}, Lcom/kakaogame/util/MutexLock;->setContent(Ljava/lang/Object;)V
 
-    .line 9
+    .line 10
     invoke-virtual {p0}, Lcom/kakaogame/util/MutexLock;->unlock()V
 
-    .line 10
+    .line 11
     :goto_0
-    sget-object p0, Lae/i;->a:Lae/i;
+    sget-object p0, Lie/h;->a:Lie/h;
 
     return-object p0
 .end method
@@ -188,7 +188,7 @@
 
     invoke-direct {v4, v3}, Lcom/kakaogame/kakao/a;-><init>(Lcom/kakaogame/util/MutexLock;)V
 
-    invoke-static {v2, v0, v1, v4}, Lcom/kakao/sdk/partner/user/UserApiClientKt;->ageAuthInfo(Lcom/kakao/sdk/user/UserApiClient;Ljava/lang/Integer;Ljava/util/List;Lke/p;)V
+    invoke-static {v2, v0, v1, v4}, Lcom/kakao/sdk/partner/user/UserApiClientKt;->ageAuthInfo(Lcom/kakao/sdk/user/UserApiClient;Ljava/lang/Integer;Ljava/util/List;Lre/p;)V
 
     return-void
 .end method

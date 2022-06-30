@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/f$d;
+.class public final Landroidx/recyclerview/widget/f$d;
 .super Ljava/lang/Object;
 .source "DefaultItemAnimator.java"
 
@@ -58,7 +58,7 @@
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
     const-string v0, "ChangeInfo{oldHolder="
@@ -68,6 +68,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Landroidx/recyclerview/widget/f$d;->a:Landroidx/recyclerview/widget/RecyclerView$z;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

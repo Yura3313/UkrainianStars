@@ -73,7 +73,6 @@
 .method public getHost()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions$Proxy;->host:Ljava/lang/String;
 
     return-object v0
@@ -82,7 +81,6 @@
 .method public getPass()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions$Proxy;->pass:Ljava/lang/String;
 
     return-object v0
@@ -91,7 +89,6 @@
 .method public getPort()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions$Proxy;->port:Ljava/lang/String;
 
     return-object v0
@@ -100,7 +97,6 @@
 .method public getUser()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions$Proxy;->user:Ljava/lang/String;
 
     return-object v0
@@ -109,7 +105,6 @@
 .method public setHost(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions$Proxy;->host:Ljava/lang/String;
 
     return-void
@@ -118,7 +113,6 @@
 .method public setPass(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions$Proxy;->pass:Ljava/lang/String;
 
     return-void
@@ -127,7 +121,6 @@
 .method public setPort(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions$Proxy;->port:Ljava/lang/String;
 
     return-void
@@ -136,7 +129,6 @@
 .method public setUser(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryOptions$Proxy;->user:Ljava/lang/String;
 
     return-void

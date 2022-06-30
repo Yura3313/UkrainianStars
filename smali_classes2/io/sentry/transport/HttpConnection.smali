@@ -23,7 +23,6 @@
 
     const-string v0, "UTF-8"
 
-    .line 1
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     move-result-object v0
@@ -119,7 +118,7 @@
 
     .line 1
     :try_start_0
-    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+    invoke-virtual {p1}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v0
 
@@ -201,7 +200,7 @@
 
     check-cast v2, Ljava/lang/String;
 
-    invoke-virtual {v0, v3, v2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v2}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -214,35 +213,35 @@
     const/4 v1, 0x1
 
     .line 5
-    invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+    invoke-virtual {v0, v1}, Ljava/net/URLConnection;->setDoOutput(Z)V
 
     const-string v1, "Content-Encoding"
 
     const-string v2, "gzip"
 
     .line 6
-    invoke-virtual {v0, v1, v2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "Content-Type"
 
     const-string v2, "application/x-sentry-envelope"
 
     .line 7
-    invoke-virtual {v0, v1, v2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "Accept"
 
     const-string v2, "application/json"
 
     .line 8
-    invoke-virtual {v0, v1, v2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "Connection"
 
     const-string v2, "close"
 
     .line 9
-    invoke-virtual {v0, v1, v2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     iget-object v1, p0, Lio/sentry/transport/HttpConnection;->options:Lio/sentry/SentryOptions;
@@ -251,7 +250,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+    invoke-virtual {v0, v1}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
     .line 11
     iget-object v1, p0, Lio/sentry/transport/HttpConnection;->options:Lio/sentry/SentryOptions;
@@ -260,7 +259,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+    invoke-virtual {v0, v1}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     .line 12
     iget-object v1, p0, Lio/sentry/transport/HttpConnection;->options:Lio/sentry/SentryOptions;
@@ -304,7 +303,7 @@
 
     .line 17
     :cond_2
-    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->connect()V
+    invoke-virtual {v0}, Ljava/net/URLConnection;->connect()V
 
     return-object v0
 .end method
@@ -657,11 +656,12 @@
 
     const-string v3, "Failed to parse Sentry Proxy port: "
 
+    .line 7
     invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 7
+    .line 8
     invoke-virtual {p1}, Lio/sentry/SentryOptions$Proxy;->getPort()Ljava/lang/String;
 
     move-result-object p1
@@ -680,7 +680,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    .line 8
+    .line 9
     invoke-interface {v1, v2, v0, p1, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_0
@@ -695,7 +695,6 @@
 .method public getProxy()Ljava/net/Proxy;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/transport/HttpConnection;->proxy:Ljava/net/Proxy;
 
     return-object v0
@@ -762,7 +761,7 @@
 
     .line 2
     :try_start_0
-    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+    invoke-virtual {v0}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v1
     :try_end_0
@@ -790,7 +789,7 @@
 
     .line 5
     :try_start_3
-    invoke-virtual {v2}, Ljava/util/zip/GZIPOutputStream;->close()V
+    invoke-virtual {v2}, Ljava/io/OutputStream;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
@@ -808,7 +807,7 @@
 
     .line 6
     :try_start_5
-    invoke-virtual {v2}, Ljava/util/zip/GZIPOutputStream;->close()V
+    invoke-virtual {v2}, Ljava/io/OutputStream;->close()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
@@ -884,14 +883,14 @@
     const-string v0, "Retry-After"
 
     .line 1
-    invoke-virtual {p1, v0}, Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/net/URLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "X-Sentry-Rate-Limits"
 
     .line 2
-    invoke-virtual {p1, v1}, Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Ljava/net/URLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

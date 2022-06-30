@@ -220,7 +220,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/web/WebViewContainer;Landroid/webkit/WebView;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/web/WebViewContainer;->setWebSettings(Landroid/webkit/WebView;)V
 
     return-void
@@ -229,7 +228,6 @@
 .method public static synthetic access$300(Lcom/kakaogame/web/WebViewContainer;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/web/WebViewContainer;->clearFileChooser()V
 
     return-void
@@ -238,7 +236,6 @@
 .method public static synthetic access$400(Lcom/kakaogame/web/WebViewContainer;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/web/WebViewContainer;->openFileChooser()V
 
     return-void
@@ -247,7 +244,6 @@
 .method public static synthetic access$500(Lcom/kakaogame/web/WebViewContainer;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/web/WebViewContainer;->openFileChooser(Ljava/lang/String;)V
 
     return-void
@@ -256,7 +252,6 @@
 .method public static synthetic access$600(Lcom/kakaogame/web/WebViewContainer;Landroid/content/Intent;Ljava/lang/CharSequence;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/kakaogame/web/WebViewContainer;->openFileChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)V
 
     return-void
@@ -297,12 +292,24 @@
 .method private static getDomainUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    const-string v0, "getDomainUrl: "
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "getDomainUrl: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
 
     const-string v1, "WebViewContainer"
 
-    .line 1
-    invoke-static {v0, p0, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     :try_start_0
@@ -357,7 +364,7 @@
     move-exception p0
 
     .line 6
-    invoke-virtual {p0}, Ljava/net/URISyntaxException;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -376,7 +383,7 @@
     const-string v1, "WebViewContainer"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -532,7 +539,7 @@
     move-exception p0
 
     .line 17
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -549,7 +556,7 @@
     const-string v1, "WebViewContainer"
 
     .line 1
-    invoke-static {v0, p2, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p2, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->webAppHandlerManager:Lcom/kakaogame/web/WebAppHandlerManager;
@@ -623,7 +630,7 @@
     move-exception p0
 
     .line 3
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -644,12 +651,12 @@
 
     const-string v1, "openFileChooser"
 
-    .line 1
+    .line 13
     invoke-static {v0, v1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "image/*"
 
-    .line 2
+    .line 14
     invoke-direct {p0, v0}, Lcom/kakaogame/web/WebViewContainer;->openFileChooser(Ljava/lang/String;)V
 
     return-void
@@ -663,11 +670,12 @@
 
     const-string v0, "openFileChooser: "
 
-    .line 8
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v1
@@ -688,7 +696,7 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
+    .line 3
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -697,7 +705,7 @@
 
     const-string p2, "File Chooser"
 
-    .line 10
+    .line 4
     :cond_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -707,28 +715,28 @@
 
     const/16 v0, 0x40
 
-    .line 11
+    .line 5
     invoke-virtual {p1, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     :cond_1
     const/4 v0, 0x1
 
-    .line 12
+    .line 6
     invoke-virtual {p1, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 13
+    .line 7
     invoke-static {}, Lcom/kakaogame/auth/AuthActivityManager;->getInstance()Lcom/kakaogame/auth/AuthActivityManager;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Lcom/kakaogame/auth/AuthActivityManager;->addResultListener(Lcom/kakaogame/KGAuthActivity$KGActivityResultListener;)V
 
-    .line 14
+    .line 8
     invoke-static {p1, p2}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
 
     move-result-object p1
 
-    .line 15
+    .line 9
     iget-object p2, p0, Lcom/kakaogame/web/WebViewContainer;->activity:Landroid/app/Activity;
 
     new-instance v0, Lcom/kakaogame/web/WebViewContainer$2;
@@ -745,7 +753,7 @@
 .method private openFileChooser(Ljava/lang/String;)V
     .locals 2
 
-    .line 3
+    .line 15
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -764,7 +772,7 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
+    .line 16
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -773,7 +781,7 @@
 
     const-string p1, "image/*"
 
-    .line 5
+    .line 17
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
@@ -781,12 +789,12 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 6
+    .line 18
     invoke-virtual {v0, p1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
     const/4 p1, 0x0
 
-    .line 7
+    .line 19
     invoke-direct {p0, v0, p1}, Lcom/kakaogame/web/WebViewContainer;->openFileChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)V
 
     return-void
@@ -849,7 +857,7 @@
     const/16 v2, 0x82
 
     .line 3
-    invoke-virtual {p1, v2}, Landroid/webkit/WebView;->requestFocus(I)Z
+    invoke-virtual {p1, v2}, Landroid/view/View;->requestFocus(I)Z
 
     .line 4
     invoke-virtual {p1, v1}, Landroid/webkit/WebView;->setVerticalScrollbarOverlay(Z)V
@@ -1014,7 +1022,6 @@
 .method public final getDefaultVideoPoster()Landroid/graphics/Bitmap;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->webChromeClient:Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;
 
     invoke-virtual {v0}, Landroid/webkit/WebChromeClient;->getDefaultVideoPoster()Landroid/graphics/Bitmap;
@@ -1027,7 +1034,6 @@
 .method public final getVideoLoadingProgressView()Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->webChromeClient:Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;
 
     invoke-virtual {v0}, Landroid/webkit/WebChromeClient;->getVideoLoadingProgressView()Landroid/view/View;
@@ -1049,7 +1055,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->webChromeClient:Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;
 
     invoke-virtual {v0, p1}, Landroid/webkit/WebChromeClient;->getVisitedHistory(Landroid/webkit/ValueCallback;)V
@@ -1060,7 +1065,6 @@
 .method public getWebView()Landroid/webkit/WebView;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->webView:Landroid/webkit/WebView;
 
     return-object v0
@@ -1072,7 +1076,7 @@
     .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->innerPopupViews:Ljava/util/Stack;
 
-    invoke-virtual {v0}, Ljava/util/Stack;->lastElement()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/util/Vector;->lastElement()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1087,7 +1091,7 @@
     .line 2
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->innerPopupViews:Ljava/util/Stack;
 
-    invoke-virtual {v0}, Ljava/util/Stack;->lastElement()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/util/Vector;->lastElement()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1116,10 +1120,9 @@
 .method public hasInnerPopupView()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->innerPopupViews:Ljava/util/Stack;
 
-    invoke-virtual {v0}, Ljava/util/Stack;->size()I
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
 
@@ -1350,7 +1353,7 @@
     const-string v3, "csEmail: "
 
     .line 26
-    invoke-static {v3, v2, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v2, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz v2, :cond_7
 
@@ -1492,6 +1495,7 @@
 
     move-result-object v4
 
+    .line 41
     invoke-virtual {v2}, Lcom/kakaogame/idp/IdpAccount;->getIdpAccessToken()Ljava/lang/String;
 
     move-result-object v2
@@ -1506,7 +1510,7 @@
 
     invoke-virtual {v3, v4, v2}, Landroid/webkit/CookieManager;->setCookie(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 41
+    .line 42
     :cond_9
     invoke-static {}, Lcom/kakaogame/KGLocalPlayer;->getCurrentPlayer()Lcom/kakaogame/KGLocalPlayer;
 
@@ -1520,7 +1524,7 @@
 
     move-result-object v2
 
-    .line 42
+    .line 43
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -1529,19 +1533,19 @@
 
     const-string v3, "kakaoUserType"
 
-    .line 43
+    .line 44
     invoke-interface {v0, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 44
+    .line 45
     :cond_a
     iget-object v2, p0, Lcom/kakaogame/web/WebViewContainer;->customCookie:Ljava/util/Map;
 
     if-eqz v2, :cond_b
 
-    .line 45
+    .line 46
     invoke-interface {v0, v2}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
 
-    .line 46
+    .line 47
     :cond_b
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1559,12 +1563,12 @@
 
     invoke-static {v1, v2}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 47
+    .line 48
     invoke-static {v0}, Lcom/kakaogame/util/json/JSONValue;->toJSONString(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 48
+    .line 49
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1581,12 +1585,12 @@
 
     invoke-static {v1, v2}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 49
+    .line 50
     invoke-static {v0}, Lcom/kakaogame/util/Base64Util;->getUrlSafeBase64encode(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 50
+    .line 51
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1603,22 +1607,22 @@
 
     invoke-static {v1, v2}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 51
+    .line 52
     invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
 
     move-result-object v1
 
-    .line 52
+    .line 53
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x15
 
     if-ge v2, v3, :cond_c
 
-    .line 53
+    .line 54
     invoke-static {p1}, Landroid/webkit/CookieSyncManager;->createInstance(Landroid/content/Context;)Landroid/webkit/CookieSyncManager;
 
-    .line 54
+    .line 55
     :cond_c
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -1638,7 +1642,7 @@
 
     if-ge v2, v3, :cond_d
 
-    .line 55
+    .line 56
     invoke-static {}, Landroid/webkit/CookieSyncManager;->getInstance()Landroid/webkit/CookieSyncManager;
 
     move-result-object p1
@@ -1648,7 +1652,7 @@
     :cond_d
     const/4 p1, 0x1
 
-    .line 56
+    .line 57
     invoke-virtual {v1, p1}, Landroid/webkit/CookieManager;->setAcceptCookie(Z)V
 
     return-void
@@ -1716,11 +1720,11 @@
     .line 3
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2, p2, p3}, Landroid/app/Activity;->grantUriPermission(Ljava/lang/String;Landroid/net/Uri;I)V
+    invoke-virtual {v0, v2, p2, p3}, Landroid/content/Context;->grantUriPermission(Ljava/lang/String;Landroid/net/Uri;I)V
 
     .line 4
     :cond_2
@@ -1834,7 +1838,7 @@
     .line 2
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->webView:Landroid/webkit/WebView;
 
-    invoke-virtual {v0, p1}, Landroid/webkit/WebView;->removeView(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     :cond_0
     return-void

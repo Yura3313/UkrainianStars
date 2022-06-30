@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final g:Ljava/util/Map;
+.field public final f:Lm/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field public h:Landroid/support/customtabs/ICustomTabsService$Stub;
+.field public g:Landroidx/browser/customtabs/CustomTabsService$a;
 
 
 # direct methods
@@ -30,24 +30,24 @@
 
     invoke-direct {v0}, Lm/a;-><init>()V
 
-    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->g:Ljava/util/Map;
+    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->f:Lm/a;
 
     .line 3
     new-instance v0, Landroidx/browser/customtabs/CustomTabsService$a;
 
     invoke-direct {v0, p0}, Landroidx/browser/customtabs/CustomTabsService$a;-><init>(Landroidx/browser/customtabs/CustomTabsService;)V
 
-    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->h:Landroid/support/customtabs/ICustomTabsService$Stub;
+    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->g:Landroidx/browser/customtabs/CustomTabsService$a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+.method public abstract a()Landroid/os/Bundle;
 .end method
 
-.method public abstract b(Lk/d;Landroid/net/Uri;Landroid/os/Bundle;Ljava/util/List;)Z
+.method public abstract b()Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61,29 +61,28 @@
     .end annotation
 .end method
 
-.method public abstract c(Lk/d;)Z
+.method public abstract c()Z
 .end method
 
-.method public abstract d(Lk/d;Ljava/lang/String;Landroid/os/Bundle;)I
+.method public abstract d()I
 .end method
 
-.method public abstract e(Lk/d;Landroid/net/Uri;)Z
+.method public abstract e()Z
 .end method
 
-.method public abstract f(Lk/d;Landroid/os/Bundle;)Z
+.method public abstract f()Z
 .end method
 
-.method public abstract g(Lk/d;ILandroid/net/Uri;Landroid/os/Bundle;)Z
+.method public abstract g()Z
 .end method
 
-.method public abstract h(J)Z
+.method public abstract h()Z
 .end method
 
-.method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+.method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 0
 
-    .line 1
-    iget-object p1, p0, Landroidx/browser/customtabs/CustomTabsService;->h:Landroid/support/customtabs/ICustomTabsService$Stub;
+    iget-object p1, p0, Landroidx/browser/customtabs/CustomTabsService;->g:Landroidx/browser/customtabs/CustomTabsService$a;
 
     return-object p1
 .end method

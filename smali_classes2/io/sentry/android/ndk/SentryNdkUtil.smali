@@ -7,7 +7,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,9 +22,8 @@
     :cond_0
     const-string v0, "maven:io.sentry:sentry-android-ndk"
 
-    const-string v1, "5.7.1"
+    const-string v1, "5.7.3"
 
-    .line 1
     invoke-virtual {p0, v0, v1}, Lio/sentry/protocol/SdkVersion;->addPackage(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

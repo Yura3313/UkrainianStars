@@ -27,7 +27,6 @@
 .method public constructor <init>(Ljava/lang/String;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/Util$2;->val$name:Ljava/lang/String;
 
     iput-boolean p2, p0, Lokhttp3/internal/Util$2;->val$daemon:Z

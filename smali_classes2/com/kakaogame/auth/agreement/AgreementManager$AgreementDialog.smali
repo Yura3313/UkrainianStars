@@ -131,7 +131,6 @@
 .method public static synthetic access$300(Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;)Landroid/webkit/WebView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;->webView:Landroid/webkit/WebView;
 
     return-object p0
@@ -140,7 +139,6 @@
 .method public static synthetic access$400(Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;->showEndingPopup()V
 
     return-void
@@ -149,7 +147,6 @@
 .method public static synthetic access$500(Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;)Landroid/view/View;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;->backView:Landroid/view/View;
 
     return-object p0
@@ -158,7 +155,6 @@
 .method public static synthetic access$600(Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;)Lcom/kakaogame/auth/agreement/AgreementManager$AgreementCheckType;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;->checkType:Lcom/kakaogame/auth/agreement/AgreementManager$AgreementCheckType;
 
     return-object p0
@@ -167,7 +163,6 @@
 .method public static synthetic access$700(Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;)Lcom/kakaogame/util/MutexLock;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;->agreementLock:Lcom/kakaogame/util/MutexLock;
 
     return-object p0
@@ -176,7 +171,6 @@
 .method public static synthetic access$800(Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;)Landroid/widget/TextView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;->titleView:Landroid/widget/TextView;
 
     return-object p0
@@ -539,7 +533,7 @@
     check-cast v1, Landroid/widget/RelativeLayout;
 
     .line 5
-    invoke-virtual {v1}, Landroid/widget/RelativeLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v2
 
@@ -548,7 +542,7 @@
     .line 6
     iget-object v3, p0, Lcom/kakaogame/auth/agreement/AgreementManager$AgreementDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v3}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -563,7 +557,7 @@
     iput v3, v2, Landroid/widget/LinearLayout$LayoutParams;->height:I
 
     .line 7
-    invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_0
     return-void

@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public static synthetic me$default(Lcom/kakao/sdk/user/UserApi;ZLjava/lang/String;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic me$default(Lcom/kakao/sdk/user/UserApi;ZLjava/lang/String;ILjava/lang/Object;)Lef/b;
     .locals 0
 
     if-nez p4, :cond_2
@@ -35,7 +35,7 @@
 
     .line 1
     :cond_1
-    invoke-interface {p0, p1, p2}, Lcom/kakao/sdk/user/UserApi;->me(ZLjava/lang/String;)Lxe/b;
+    invoke-interface {p0, p1, p2}, Lcom/kakao/sdk/user/UserApi;->me(ZLjava/lang/String;)Lef/b;
 
     move-result-object p0
 
@@ -52,7 +52,7 @@
     throw p0
 .end method
 
-.method public static synthetic shippingAddresses$default(Lcom/kakao/sdk/user/UserApi;Ljava/lang/Long;Ljava/util/Date;Ljava/lang/Integer;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic shippingAddresses$default(Lcom/kakao/sdk/user/UserApi;Ljava/lang/Long;Ljava/util/Date;Ljava/lang/Integer;ILjava/lang/Object;)Lef/b;
     .locals 1
 
     if-nez p5, :cond_3
@@ -81,7 +81,7 @@
 
     .line 1
     :cond_2
-    invoke-interface {p0, p1, p2, p3}, Lcom/kakao/sdk/user/UserApi;->shippingAddresses(Ljava/lang/Long;Ljava/util/Date;Ljava/lang/Integer;)Lxe/b;
+    invoke-interface {p0, p1, p2, p3}, Lcom/kakao/sdk/user/UserApi;->shippingAddresses(Ljava/lang/Long;Ljava/util/Date;Ljava/lang/Integer;)Lef/b;
 
     move-result-object p0
 
@@ -98,7 +98,7 @@
     throw p0
 .end method
 
-.method public static synthetic signup$default(Lcom/kakao/sdk/user/UserApi;Ljava/util/Map;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic signup$default(Lcom/kakao/sdk/user/UserApi;Ljava/util/Map;ILjava/lang/Object;)Lef/b;
     .locals 0
 
     if-nez p3, :cond_1
@@ -111,7 +111,7 @@
 
     .line 1
     :cond_0
-    invoke-interface {p0, p1}, Lcom/kakao/sdk/user/UserApi;->signup(Ljava/util/Map;)Lxe/b;
+    invoke-interface {p0, p1}, Lcom/kakao/sdk/user/UserApi;->signup(Ljava/util/Map;)Lef/b;
 
     move-result-object p0
 

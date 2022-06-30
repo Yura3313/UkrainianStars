@@ -10,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,7 +30,9 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "allFactories"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     new-instance p1, Lkotlinx/coroutines/android/HandlerContext;
@@ -42,7 +43,7 @@
 
     const-string v1, "Looper.getMainLooper()"
 
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v1, 0x1
 
@@ -55,19 +56,9 @@
     invoke-direct {p1, v0, v1}, Lkotlinx/coroutines/android/HandlerContext;-><init>(Landroid/os/Handler;Ljava/lang/String;)V
 
     return-object p1
-
-    :cond_0
-    const-string p1, "allFactories"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public bridge synthetic createDispatcher(Ljava/util/List;)Lse/i1;
+.method public bridge synthetic createDispatcher(Ljava/util/List;)Lze/i1;
     .locals 0
 
     .line 1

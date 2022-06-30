@@ -1,35 +1,33 @@
-.class public interface abstract annotation Lze/t;
-.super Ljava/lang/Object;
-.source "Query.java"
+.class public abstract Lze/t;
+.super Laf/n;
+.source "CompletionHandler.kt"
 
 # interfaces
-.implements Ljava/lang/annotation/Annotation;
+.implements Lre/l;
 
 
 # annotations
-.annotation system Ldalvik/annotation/AnnotationDefault;
-    value = .subannotation Lze/t;
-        encoded = false
-    .end subannotation
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Documented;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Target;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        .enum Ljava/lang/annotation/ElementType;->PARAMETER:Ljava/lang/annotation/ElementType;
+        "Laf/n;",
+        "Lre/l<",
+        "Ljava/lang/Throwable;",
+        "Lie/h;",
+        ">;"
     }
 .end annotation
 
 
-# virtual methods
-.method public abstract encoded()Z
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Laf/n;-><init>()V
+
+    return-void
 .end method
 
-.method public abstract value()Ljava/lang/String;
+
+# virtual methods
+.method public abstract l(Ljava/lang/Throwable;)V
 .end method

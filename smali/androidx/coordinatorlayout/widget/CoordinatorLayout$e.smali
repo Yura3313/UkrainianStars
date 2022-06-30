@@ -1,4 +1,4 @@
-.class public Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
+.class public final Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
 .super Landroid/view/ViewGroup$MarginLayoutParams;
 .source "CoordinatorLayout.java"
 
@@ -207,7 +207,7 @@
 
     move-result-object v1
 
-    sget-object v3, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->z:Ljava/lang/String;
+    sget-object v3, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y:Ljava/lang/String;
 
     .line 28
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -263,7 +263,7 @@
 
     .line 32
     :cond_2
-    sget-object v4, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->z:Ljava/lang/String;
+    sget-object v4, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y:Ljava/lang/String;
 
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -289,7 +289,7 @@
     :cond_3
     :goto_0
     :try_start_0
-    sget-object v3, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->B:Ljava/lang/ThreadLocal;
+    sget-object v3, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->A:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v3}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -329,14 +329,14 @@
     move-result-object v3
 
     .line 38
-    sget-object v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->A:[Ljava/lang/Class;
+    sget-object v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->z:[Ljava/lang/Class;
 
     invoke-virtual {v3, v6}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object v3
 
     .line 39
-    invoke-virtual {v3, v5}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
+    invoke-virtual {v3, v5}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 40
     invoke-interface {v4, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -373,25 +373,27 @@
 
     const-string v0, "Could not inflate Behavior subclass "
 
-    invoke-static {v0, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 44
+    invoke-static {v0, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 45
     invoke-direct {p2, v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     throw p2
 
-    .line 44
+    .line 46
     :cond_6
     :goto_2
     invoke-virtual {v2}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 45
+    .line 47
     iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
 
     if-eqz p1, :cond_7
 
-    .line 46
+    .line 48
     invoke-virtual {p1, p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->c(Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;)V
 
     :cond_7
@@ -401,35 +403,35 @@
 .method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
 
-    .line 65
+    .line 72
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     const/4 p1, 0x0
 
-    .line 66
+    .line 73
     iput-boolean p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->b:Z
 
-    .line 67
+    .line 74
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->c:I
 
-    .line 68
+    .line 75
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->d:I
 
     const/4 v0, -0x1
 
-    .line 69
+    .line 76
     iput v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->e:I
 
-    .line 70
+    .line 77
     iput v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->f:I
 
-    .line 71
+    .line 78
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->g:I
 
-    .line 72
+    .line 79
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->h:I
 
-    .line 73
+    .line 80
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
@@ -442,35 +444,35 @@
 .method public constructor <init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
     .locals 1
 
-    .line 56
+    .line 63
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
     const/4 p1, 0x0
 
-    .line 57
+    .line 64
     iput-boolean p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->b:Z
 
-    .line 58
+    .line 65
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->c:I
 
-    .line 59
+    .line 66
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->d:I
 
     const/4 v0, -0x1
 
-    .line 60
+    .line 67
     iput v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->e:I
 
-    .line 61
+    .line 68
     iput v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->f:I
 
-    .line 62
+    .line 69
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->g:I
 
-    .line 63
+    .line 70
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->h:I
 
-    .line 64
+    .line 71
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
@@ -483,35 +485,35 @@
 .method public constructor <init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;)V
     .locals 1
 
-    .line 47
+    .line 54
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
     const/4 p1, 0x0
 
-    .line 48
+    .line 55
     iput-boolean p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->b:Z
 
-    .line 49
+    .line 56
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->c:I
 
-    .line 50
+    .line 57
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->d:I
 
     const/4 v0, -0x1
 
-    .line 51
+    .line 58
     iput v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->e:I
 
-    .line 52
+    .line 59
     iput v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->f:I
 
-    .line 53
+    .line 60
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->g:I
 
-    .line 54
+    .line 61
     iput p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->h:I
 
-    .line 55
+    .line 62
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
@@ -523,7 +525,7 @@
 
 
 # virtual methods
-.method public a(I)Z
+.method public final a(I)Z
     .locals 1
 
     if-eqz p1, :cond_1
@@ -549,7 +551,7 @@
     return p1
 .end method
 
-.method public b(Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;)V
+.method public final b(Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;)V
     .locals 1
 
     .line 1
@@ -580,7 +582,7 @@
     return-void
 .end method
 
-.method public c(IZ)V
+.method public final c(IZ)V
     .locals 1
 
     if-eqz p1, :cond_1

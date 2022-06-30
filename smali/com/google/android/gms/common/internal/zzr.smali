@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract D3(Lcom/google/android/gms/common/zzj;)Lcom/google/android/gms/common/zzl;
+.method public abstract D3(Lcom/google/android/gms/common/zzq;Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -15,7 +15,7 @@
     .end annotation
 .end method
 
-.method public abstract q()Z
+.method public abstract K3(Lcom/google/android/gms/common/zzj;)Lcom/google/android/gms/common/zzl;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -23,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract u3(Lcom/google/android/gms/common/zzq;Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
+.method public abstract a()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/transition/PathMotion;-><init>()V
 
     return-void
@@ -26,7 +25,7 @@
 
 
 # virtual methods
-.method public a(FFFF)Landroid/graphics/Path;
+.method public final a(FFFF)Landroid/graphics/Path;
     .locals 1
 
     .line 1

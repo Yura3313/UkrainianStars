@@ -33,7 +33,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/WebAppHandlerManager;Lcom/kakaogame/web/protocol/WebAppProtocolHandler;Landroid/webkit/WebView;Landroid/net/Uri;Lcom/kakaogame/web/WebAppHandlerManager$WebAppHandlerCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebAppHandlerManager$1;->this$0:Lcom/kakaogame/web/WebAppHandlerManager;
 
     iput-object p2, p0, Lcom/kakaogame/web/WebAppHandlerManager$1;->val$handler:Lcom/kakaogame/web/protocol/WebAppProtocolHandler;

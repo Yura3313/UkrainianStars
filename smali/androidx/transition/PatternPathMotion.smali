@@ -80,14 +80,14 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p1, p2, v0, v1}, Lw/f;->e(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p1, p2, v0, v1}, Lw/f;->g(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p2
 
     if-eqz p2, :cond_0
 
     .line 10
-    invoke-static {p2}, Lx/c;->d(Ljava/lang/String;)Landroid/graphics/Path;
+    invoke-static {p2}, Lx/d;->d(Ljava/lang/String;)Landroid/graphics/Path;
 
     move-result-object p2
 
@@ -126,7 +126,7 @@
 
 
 # virtual methods
-.method public a(FFFF)Landroid/graphics/Path;
+.method public final a(FFFF)Landroid/graphics/Path;
     .locals 3
 
     sub-float/2addr p3, p1
@@ -193,7 +193,7 @@
     return-object p1
 .end method
 
-.method public b(Landroid/graphics/Path;)V
+.method public final b(Landroid/graphics/Path;)V
     .locals 8
 
     .line 1
@@ -217,23 +217,19 @@
     .line 3
     invoke-virtual {v0, v2, v3, v4}, Landroid/graphics/PathMeasure;->getPosTan(F[F[F)Z
 
-    .line 4
     aget v2, v3, v1
 
     const/4 v5, 0x1
 
-    .line 5
     aget v6, v3, v5
 
     const/4 v7, 0x0
 
-    .line 6
+    .line 4
     invoke-virtual {v0, v7, v3, v4}, Landroid/graphics/PathMeasure;->getPosTan(F[F[F)Z
 
-    .line 7
     aget v0, v3, v1
 
-    .line 8
     aget v1, v3, v5
 
     cmpl-float v3, v0, v2
@@ -246,7 +242,7 @@
 
     goto :goto_0
 
-    .line 9
+    .line 5
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -256,7 +252,7 @@
 
     throw p1
 
-    .line 10
+    .line 6
     :cond_1
     :goto_0
     iget-object v3, p0, Landroidx/transition/PatternPathMotion;->b:Landroid/graphics/Matrix;
@@ -279,7 +275,7 @@
 
     float-to-double v0, v1
 
-    .line 11
+    .line 7
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
@@ -290,7 +286,7 @@
 
     div-float/2addr v1, v0
 
-    .line 12
+    .line 8
     iget-object v0, p0, Landroidx/transition/PatternPathMotion;->b:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, v1, v1}, Landroid/graphics/Matrix;->postScale(FF)Z
@@ -299,12 +295,12 @@
 
     float-to-double v2, v2
 
-    .line 13
+    .line 9
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide v0
 
-    .line 14
+    .line 10
     iget-object v2, p0, Landroidx/transition/PatternPathMotion;->b:Landroid/graphics/Matrix;
 
     neg-double v0, v0
@@ -317,7 +313,7 @@
 
     invoke-virtual {v2, v0}, Landroid/graphics/Matrix;->postRotate(F)Z
 
-    .line 15
+    .line 11
     iget-object v0, p0, Landroidx/transition/PatternPathMotion;->b:Landroid/graphics/Matrix;
 
     iget-object v1, p0, Landroidx/transition/PatternPathMotion;->a:Landroid/graphics/Path;

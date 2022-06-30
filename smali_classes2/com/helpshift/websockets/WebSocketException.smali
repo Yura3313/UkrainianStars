@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
 
 
 # direct methods
@@ -15,7 +15,7 @@
     invoke-direct {p0, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     .line 2
-    iput p1, p0, Lcom/helpshift/websockets/WebSocketException;->g:I
+    iput p1, p0, Lcom/helpshift/websockets/WebSocketException;->f:I
 
     return-void
 .end method
@@ -27,7 +27,7 @@
     invoke-direct {p0, p2, p3}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 4
-    iput p1, p0, Lcom/helpshift/websockets/WebSocketException;->g:I
+    iput p1, p0, Lcom/helpshift/websockets/WebSocketException;->f:I
 
     return-void
 .end method

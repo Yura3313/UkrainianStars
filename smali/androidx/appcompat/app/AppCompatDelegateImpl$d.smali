@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+.field public final synthetic f:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$d;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$d;->f:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,22 +34,21 @@
 
 
 # virtual methods
-.method public b(Landroidx/appcompat/view/menu/e;Z)V
+.method public final b(Landroidx/appcompat/view/menu/e;Z)V
     .locals 0
 
-    .line 1
-    iget-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$d;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iget-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$d;->f:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-virtual {p2, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->G(Landroidx/appcompat/view/menu/e;)V
 
     return-void
 .end method
 
-.method public c(Landroidx/appcompat/view/menu/e;)Z
+.method public final c(Landroidx/appcompat/view/menu/e;)Z
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$d;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$d;->f:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->Q()Landroid/view/Window$Callback;
 

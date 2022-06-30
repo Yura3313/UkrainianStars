@@ -75,7 +75,6 @@
 .method public getEventId()Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEnvelopeHeader;->eventId:Lio/sentry/protocol/SentryId;
 
     return-object v0
@@ -84,7 +83,6 @@
 .method public getSdkVersion()Lio/sentry/protocol/SdkVersion;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEnvelopeHeader;->sdkVersion:Lio/sentry/protocol/SdkVersion;
 
     return-object v0
@@ -93,7 +91,6 @@
 .method public getTrace()Lio/sentry/TraceState;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEnvelopeHeader;->trace:Lio/sentry/TraceState;
 
     return-object v0

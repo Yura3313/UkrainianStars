@@ -1,237 +1,253 @@
 .class public final Lx/b;
 .super Ljava/lang/Object;
-.source "Insets.java"
-
-
-# static fields
-.field public static final e:Lx/b;
-
-
-# instance fields
-.field public final a:I
-
-.field public final b:I
-
-.field public final c:I
-
-.field public final d:I
+.source "ColorUtils.java"
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lx/b;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1, v1, v1, v1}, Lx/b;-><init>(IIII)V
-
-    sput-object v0, Lx/b;->e:Lx/b;
-
-    return-void
-.end method
-
-.method public constructor <init>(IIII)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput p1, p0, Lx/b;->a:I
-
-    .line 3
-    iput p2, p0, Lx/b;->b:I
-
-    .line 4
-    iput p3, p0, Lx/b;->c:I
-
-    .line 5
-    iput p4, p0, Lx/b;->d:I
-
-    return-void
-.end method
-
-.method public static a(IIII)Lx/b;
     .locals 1
 
-    if-nez p0, :cond_0
+    new-instance v0, Ljava/lang/ThreadLocal;
 
-    if-nez p1, :cond_0
+    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
-    if-nez p2, :cond_0
-
-    if-nez p3, :cond_0
-
-    .line 1
-    sget-object p0, Lx/b;->e:Lx/b;
-
-    return-object p0
-
-    .line 2
-    :cond_0
-    new-instance v0, Lx/b;
-
-    invoke-direct {v0, p0, p1, p2, p3}, Lx/b;-><init>(IIII)V
-
-    return-object v0
+    return-void
 .end method
 
+.method public static a(F)I
+    .locals 7
 
-# virtual methods
-.method public equals(Ljava/lang/Object;)Z
-    .locals 4
+    const/high16 v0, 0x3f800000    # 1.0f
 
-    const/4 v0, 0x1
+    sub-float/2addr v0, p0
 
-    if-ne p0, p1, :cond_0
-
-    return v0
-
-    :cond_0
     const/4 v1, 0x0
 
-    if-eqz p1, :cond_6
-
     .line 1
-    const-class v2, Lx/b;
+    invoke-static {v1}, Landroid/graphics/Color;->alpha(I)I
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result v2
 
-    move-result-object v3
+    int-to-float v2, v2
 
-    if-eq v2, v3, :cond_1
+    mul-float v2, v2, v0
 
-    goto :goto_0
+    const/high16 v3, -0x1000000
+
+    invoke-static {v3}, Landroid/graphics/Color;->alpha(I)I
+
+    move-result v4
+
+    int-to-float v4, v4
+
+    mul-float v4, v4, p0
+
+    add-float/2addr v4, v2
 
     .line 2
-    :cond_1
-    check-cast p1, Lx/b;
+    invoke-static {v1}, Landroid/graphics/Color;->red(I)I
+
+    move-result v2
+
+    int-to-float v2, v2
+
+    mul-float v2, v2, v0
+
+    invoke-static {v3}, Landroid/graphics/Color;->red(I)I
+
+    move-result v5
+
+    int-to-float v5, v5
+
+    mul-float v5, v5, p0
+
+    add-float/2addr v5, v2
 
     .line 3
-    iget v2, p0, Lx/b;->d:I
+    invoke-static {v1}, Landroid/graphics/Color;->green(I)I
 
-    iget v3, p1, Lx/b;->d:I
+    move-result v2
 
-    if-eq v2, v3, :cond_2
+    int-to-float v2, v2
 
-    return v1
+    mul-float v2, v2, v0
+
+    invoke-static {v3}, Landroid/graphics/Color;->green(I)I
+
+    move-result v6
+
+    int-to-float v6, v6
+
+    mul-float v6, v6, p0
+
+    add-float/2addr v6, v2
 
     .line 4
-    :cond_2
-    iget v2, p0, Lx/b;->a:I
+    invoke-static {v1}, Landroid/graphics/Color;->blue(I)I
 
-    iget v3, p1, Lx/b;->a:I
+    move-result v1
 
-    if-eq v2, v3, :cond_3
+    int-to-float v1, v1
 
-    return v1
+    mul-float v1, v1, v0
+
+    invoke-static {v3}, Landroid/graphics/Color;->blue(I)I
+
+    move-result v0
+
+    int-to-float v0, v0
+
+    mul-float v0, v0, p0
+
+    add-float/2addr v0, v1
+
+    float-to-int p0, v4
+
+    float-to-int v1, v5
+
+    float-to-int v2, v6
+
+    float-to-int v0, v0
 
     .line 5
-    :cond_3
-    iget v2, p0, Lx/b;->c:I
+    invoke-static {p0, v1, v2, v0}, Landroid/graphics/Color;->argb(IIII)I
 
-    iget v3, p1, Lx/b;->c:I
+    move-result p0
 
-    if-eq v2, v3, :cond_4
-
-    return v1
-
-    .line 6
-    :cond_4
-    iget v2, p0, Lx/b;->b:I
-
-    iget p1, p1, Lx/b;->b:I
-
-    if-eq v2, p1, :cond_5
-
-    return v1
-
-    :cond_5
-    return v0
-
-    :cond_6
-    :goto_0
-    return v1
+    return p0
 .end method
 
-.method public hashCode()I
-    .locals 2
+.method public static b(II)I
+    .locals 6
 
     .line 1
-    iget v0, p0, Lx/b;->a:I
+    invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
-    mul-int/lit8 v0, v0, 0x1f
+    move-result v0
 
     .line 2
-    iget v1, p0, Lx/b;->b:I
+    invoke-static {p0}, Landroid/graphics/Color;->alpha(I)I
 
-    add-int/2addr v0, v1
+    move-result v1
 
-    mul-int/lit8 v0, v0, 0x1f
+    rsub-int v2, v0, 0xff
+
+    rsub-int v3, v1, 0xff
+
+    mul-int v3, v3, v2
 
     .line 3
-    iget v1, p0, Lx/b;->c:I
+    div-int/lit16 v3, v3, 0xff
 
-    add-int/2addr v0, v1
-
-    mul-int/lit8 v0, v0, 0x1f
+    rsub-int v2, v3, 0xff
 
     .line 4
-    iget v1, p0, Lx/b;->d:I
+    invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
-    add-int/2addr v0, v1
+    move-result v3
 
-    return v0
+    .line 5
+    invoke-static {p1}, Landroid/graphics/Color;->red(I)I
+
+    move-result v4
+
+    .line 6
+    invoke-static {v3, v1, v4, v0, v2}, Lx/b;->c(IIIII)I
+
+    move-result v3
+
+    .line 7
+    invoke-static {p0}, Landroid/graphics/Color;->green(I)I
+
+    move-result v4
+
+    .line 8
+    invoke-static {p1}, Landroid/graphics/Color;->green(I)I
+
+    move-result v5
+
+    .line 9
+    invoke-static {v4, v1, v5, v0, v2}, Lx/b;->c(IIIII)I
+
+    move-result v4
+
+    .line 10
+    invoke-static {p0}, Landroid/graphics/Color;->blue(I)I
+
+    move-result p0
+
+    .line 11
+    invoke-static {p1}, Landroid/graphics/Color;->blue(I)I
+
+    move-result p1
+
+    .line 12
+    invoke-static {p0, v1, p1, v0, v2}, Lx/b;->c(IIIII)I
+
+    move-result p0
+
+    .line 13
+    invoke-static {v2, v3, v4, p0}, Landroid/graphics/Color;->argb(IIII)I
+
+    move-result p0
+
+    return p0
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+.method public static c(IIIII)I
+    .locals 0
 
-    const-string v0, "Insets{left="
+    if-nez p4, :cond_0
 
-    .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 p0, 0x0
 
-    move-result-object v0
+    return p0
 
-    iget v1, p0, Lx/b;->a:I
+    :cond_0
+    mul-int/lit16 p0, p0, 0xff
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    mul-int p0, p0, p1
 
-    const-string v1, ", top="
+    mul-int p2, p2, p3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    rsub-int p1, p1, 0xff
 
-    iget v1, p0, Lx/b;->b:I
+    mul-int p1, p1, p2
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    add-int/2addr p1, p0
 
-    const-string v1, ", right="
+    mul-int/lit16 p4, p4, 0xff
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    div-int/2addr p1, p4
 
-    iget v1, p0, Lx/b;->c:I
+    return p1
+.end method
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+.method public static d(II)I
+    .locals 1
 
-    const-string v1, ", bottom="
+    if-ltz p1, :cond_0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/16 v0, 0xff
 
-    iget v1, p0, Lx/b;->d:I
+    if-gt p1, v0, :cond_0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const v0, 0xffffff
 
-    const/16 v1, 0x7d
+    and-int/2addr p0, v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    shl-int/lit8 p1, p1, 0x18
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    or-int/2addr p0, p1
 
-    move-result-object v0
+    return p0
 
-    return-object v0
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string p1, "alpha must be between 0 and 255."
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method

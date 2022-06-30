@@ -60,7 +60,7 @@
 .end method
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -75,7 +75,9 @@
         }
     .end annotation
 
-    if-eqz p2, :cond_0
+    const-string v0, "msg"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -91,19 +93,9 @@
     iput-object p5, p0, Lcom/kakao/sdk/common/model/ApiErrorResponse;->allowedScopes:Ljava/util/List;
 
     return-void
-
-    :cond_0
-    const-string p1, "msg"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ILle/g;)V
+.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ILse/e;)V
     .locals 7
 
     and-int/lit8 p7, p6, 0x4
@@ -140,7 +132,7 @@
 
     move-object v5, p4
 
-    .line 3
+    .line 2
     invoke-direct/range {v1 .. v6}, Lcom/kakao/sdk/common/model/ApiErrorResponse;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
     return-void
@@ -286,35 +278,27 @@
         }
     .end annotation
 
-    if-eqz p2, :cond_0
+    const-string v0, "msg"
 
-    new-instance v6, Lcom/kakao/sdk/common/model/ApiErrorResponse;
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-object v0, v6
+    new-instance v0, Lcom/kakao/sdk/common/model/ApiErrorResponse;
 
-    move v1, p1
+    move-object v1, v0
 
-    move-object v2, p2
+    move v2, p1
 
-    move-object v3, p3
+    move-object v3, p2
 
-    move-object v4, p4
+    move-object v4, p3
 
-    move-object v5, p5
+    move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lcom/kakao/sdk/common/model/ApiErrorResponse;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+    move-object v6, p5
 
-    return-object v6
+    invoke-direct/range {v1 .. v6}, Lcom/kakao/sdk/common/model/ApiErrorResponse;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
-    :cond_0
-    const-string p1, "msg"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
+    return-object v0
 .end method
 
 .method public describeContents()I
@@ -360,7 +344,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/common/model/ApiErrorResponse;->msg:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -370,7 +354,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/common/model/ApiErrorResponse;->apiType:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -380,7 +364,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/common/model/ApiErrorResponse;->requiredScopes:Ljava/util/List;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -390,7 +374,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/common/model/ApiErrorResponse;->allowedScopes:Ljava/util/List;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -417,7 +401,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/common/model/ApiErrorResponse;->allowedScopes:Ljava/util/List;
 
     return-object v0
@@ -426,7 +409,6 @@
 .method public final getApiType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/common/model/ApiErrorResponse;->apiType:Ljava/lang/String;
 
     return-object v0
@@ -435,7 +417,6 @@
 .method public final getCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/common/model/ApiErrorResponse;->code:I
 
     return v0
@@ -444,7 +425,6 @@
 .method public final getMsg()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/common/model/ApiErrorResponse;->msg:Ljava/lang/String;
 
     return-object v0
@@ -461,7 +441,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/common/model/ApiErrorResponse;->requiredScopes:Ljava/util/List;
 
     return-object v0
@@ -549,10 +528,12 @@
 
     const-string v0, "ApiErrorResponse(code="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget v1, p0, Lcom/kakao/sdk/common/model/ApiErrorResponse;->code:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -589,7 +570,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Lt6/b;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Ltb/a;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -599,7 +581,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    if-eqz p1, :cond_0
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget p2, p0, Lcom/kakao/sdk/common/model/ApiErrorResponse;->code:I
 
@@ -622,14 +606,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

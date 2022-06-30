@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/protobuf/i$a;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,7 @@
 
 
 # virtual methods
-.method public a([BII)[B
+.method public final a([BII)[B
     .locals 2
 
     .line 1

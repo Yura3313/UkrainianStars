@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/internal/b;
+.class public final Lcom/google/android/material/internal/b;
 .super Ljava/lang/Object;
 .source "DescendantOffsetUtils.java"
 

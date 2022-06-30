@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/ui/CustomUIManager;Lcom/kakaogame/KGCustomUI$KGCustomAlert;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/ui/CustomUIManager$1;->this$0:Lcom/kakaogame/ui/CustomUIManager;
 
     iput-object p2, p0, Lcom/kakaogame/ui/CustomUIManager$1;->val$alert:Lcom/kakaogame/KGCustomUI$KGCustomAlert;
@@ -42,7 +41,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/ui/CustomUIManager$1;->val$alert:Lcom/kakaogame/KGCustomUI$KGCustomAlert;
 
     invoke-virtual {v0}, Lcom/kakaogame/KGObject;->toJSONString()Ljava/lang/String;

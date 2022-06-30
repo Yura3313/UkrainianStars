@@ -27,7 +27,6 @@
 .method public getValue()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/model/ProjectApprovalType;->value:Ljava/lang/String;
 
     return-object v0

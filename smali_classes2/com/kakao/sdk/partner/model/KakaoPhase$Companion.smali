@@ -18,16 +18,14 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lle/g;)V
+.method public synthetic constructor <init>(Lse/e;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/kakao/sdk/partner/model/KakaoPhase$Companion;-><init>()V
 
     return-void
@@ -38,9 +36,10 @@
 .method public final fromName(Ljava/lang/String;)Lcom/kakao/sdk/partner/model/KakaoPhase;
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string v0, "value"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->INSTANCE:Lcom/kakao/sdk/common/util/KakaoJson;
 
     const-class v1, Lcom/kakao/sdk/partner/model/KakaoPhase;
@@ -52,14 +51,4 @@
     check-cast p1, Lcom/kakao/sdk/partner/model/KakaoPhase;
 
     return-object p1
-
-    :cond_0
-    const-string p1, "value"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

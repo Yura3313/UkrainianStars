@@ -277,7 +277,6 @@
 .method public static valueOf(Ljava/lang/String;)Lokhttp3/internal/http2/ErrorCode;
     .locals 1
 
-    .line 1
     const-class v0, Lokhttp3/internal/http2/ErrorCode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -292,7 +291,6 @@
 .method public static values()[Lokhttp3/internal/http2/ErrorCode;
     .locals 1
 
-    .line 1
     sget-object v0, Lokhttp3/internal/http2/ErrorCode;->$VALUES:[Lokhttp3/internal/http2/ErrorCode;
 
     invoke-virtual {v0}, [Lokhttp3/internal/http2/ErrorCode;->clone()Ljava/lang/Object;

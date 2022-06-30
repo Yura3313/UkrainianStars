@@ -56,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/MapObject;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -69,7 +68,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, p0, p1, v1, v1}, Lcom/kakaogame/idp/IdpAccount;->createIdpAccount(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/idp/IdpAccount;
 
     move-result-object p0
@@ -84,7 +82,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, p0, p1, v1, v1}, Lcom/kakaogame/idp/IdpAccount;->createIdpAccount(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/idp/IdpAccount;
 
     move-result-object p0
@@ -99,7 +96,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, p0, p1, v1, v1}, Lcom/kakaogame/idp/IdpAccount;->createIdpAccount(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/idp/IdpAccount;
 
     move-result-object p0
@@ -114,7 +110,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, p0, p1, v1, v1}, Lcom/kakaogame/idp/IdpAccount;->createIdpAccount(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/idp/IdpAccount;
 
     move-result-object p0
@@ -248,7 +243,6 @@
 
     const-string v0, "kakaocapri"
 
-    .line 1
     invoke-static {v0, p0, p1, p2, p3}, Lcom/kakaogame/idp/IdpAccount;->createIdpAccount(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/idp/IdpAccount;
 
     move-result-object p0
@@ -328,7 +322,6 @@
 
     const-string v0, "ci"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/MapObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -343,7 +336,6 @@
 
     const-string v0, "consumerKey"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/MapObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -358,7 +350,6 @@
 
     const-string v0, "consumerSecret"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/MapObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -373,7 +364,6 @@
 
     const-string v0, "accessToken"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/MapObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -388,7 +378,6 @@
 
     const-string v0, "idpCode"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/MapObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -430,7 +419,6 @@
 
     const-string v0, "userId"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/MapObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -445,7 +433,6 @@
 
     const-string v0, "redirectUri"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/MapObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -460,7 +447,6 @@
 
     const-string v0, "refreshToken"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/MapObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -475,7 +461,6 @@
 
     const-string v0, "tokenSecret"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/MapObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -488,7 +473,6 @@
 .method public put(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Lcom/kakaogame/MapObject;->put(Ljava/lang/String;Ljava/lang/Object;)V
 
     return-void

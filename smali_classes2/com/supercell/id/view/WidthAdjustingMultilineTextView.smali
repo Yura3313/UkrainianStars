@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public k:Ljava/lang/Float;
+.field public j:Ljava/lang/Float;
 
 
 # direct methods
@@ -20,29 +20,21 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 0
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
-
-    :cond_0
-    const-string p1, "context"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 7
 
     .line 1
@@ -73,10 +65,12 @@
 
     const/16 v4, 0xa
 
-    .line 5
-    invoke-static {v4}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float v4, v4
 
-    move-result v4
+    .line 5
+    sget v5, La5/g0;->a:F
+
+    mul-float v4, v4, v5
 
     :goto_0
     cmpl-float v5, v3, v4
@@ -102,7 +96,7 @@
 
     if-eqz v5, :cond_2
 
-    invoke-static {v5}, Lcom/supercell/id/view/o;->a(Landroid/text/Layout;)Z
+    invoke-static {v5}, Lcom/supercell/id/view/p;->a(Landroid/text/Layout;)Z
 
     move-result v5
 
@@ -123,7 +117,7 @@
 
     .line 11
     :cond_1
-    iget-object v3, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
+    iget-object v3, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
 
     if-eqz v3, :cond_2
 
@@ -166,7 +160,7 @@
     if-eqz v0, :cond_3
 
     .line 17
-    invoke-static {v0}, Lcom/supercell/id/view/o;->b(Landroid/text/Layout;)F
+    invoke-static {v0}, Lcom/supercell/id/view/p;->b(Landroid/text/Layout;)F
 
     move-result v0
 
@@ -204,11 +198,11 @@
     return-void
 .end method
 
-.method public setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
+.method public final setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
+    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
 
     if-nez v0, :cond_0
 
@@ -221,11 +215,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
+    iput-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
+    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
 
     if-eqz v0, :cond_1
 

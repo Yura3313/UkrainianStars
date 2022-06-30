@@ -3,7 +3,7 @@
 .source "AbstractMessageLite.java"
 
 # interfaces
-.implements Lcom/google/crypto/tink/shaded/protobuf/a0$a;
+.implements Lcom/google/crypto/tink/shaded/protobuf/x$a;
 
 
 # annotations
@@ -24,7 +24,7 @@
         "Lcom/google/crypto/tink/shaded/protobuf/a$a<",
         "TMessageType;TBuilderType;>;>",
         "Ljava/lang/Object;",
-        "Lcom/google/crypto/tink/shaded/protobuf/a0$a;"
+        "Lcom/google/crypto/tink/shaded/protobuf/x$a;"
     }
 .end annotation
 
@@ -33,7 +33,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

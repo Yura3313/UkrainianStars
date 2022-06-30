@@ -9,26 +9,17 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/Throwable;)V
-    .locals 0
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "origin"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/io/IOException;-><init>()V
 
     iput-object p1, p0, Lcom/kakao/sdk/network/ExceptionWrapper;->origin:Ljava/lang/Throwable;
 
     return-void
-
-    :cond_0
-    const-string p1, "origin"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 
@@ -36,7 +27,6 @@
 .method public final getOrigin()Ljava/lang/Throwable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/network/ExceptionWrapper;->origin:Ljava/lang/Throwable;
 
     return-object v0

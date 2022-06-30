@@ -4,18 +4,18 @@
 
 
 # instance fields
-.field public final g:Lcom/google/android/gms/ads/m;
+.field public final f:Lcom/google/android/gms/ads/l;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/ads/m;)V
+.method public constructor <init>(Lcom/google/android/gms/ads/l;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzyd;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzt;->g:Lcom/google/android/gms/ads/m;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzt;->f:Lcom/google/android/gms/ads/l;
 
     return-void
 .end method
@@ -23,27 +23,18 @@
 
 # virtual methods
 .method public final F5(Lcom/google/android/gms/internal/ads/zzvl;)V
-    .locals 5
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzzt;->g:Lcom/google/android/gms/ads/m;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzzt;->f:Lcom/google/android/gms/ads/l;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget v1, p1, Lcom/google/android/gms/internal/ads/zzvl;->h:I
-
-    iget-object v2, p1, Lcom/google/android/gms/internal/ads/zzvl;->i:Ljava/lang/String;
-
-    iget-wide v3, p1, Lcom/google/android/gms/internal/ads/zzvl;->j:J
+    iget p1, p1, Lcom/google/android/gms/internal/ads/zzvl;->g:I
 
     .line 3
-    new-instance p1, Lcom/google/android/gms/ads/g;
-
-    invoke-direct {p1, v1, v2, v3, v4}, Lcom/google/android/gms/ads/g;-><init>(ILjava/lang/String;J)V
-
-    .line 4
-    invoke-interface {v0, p1}, Lcom/google/android/gms/ads/m;->a(Lcom/google/android/gms/ads/g;)V
+    invoke-interface {v0}, Lcom/google/android/gms/ads/l;->a()V
 
     :cond_0
     return-void

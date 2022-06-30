@@ -24,41 +24,40 @@
 
 
 # virtual methods
-.method public l(Landroid/util/AttributeSet;)V
+.method public final l(Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/constraintlayout/widget/ConstraintHelper;->l(Landroid/util/AttributeSet;)V
 
     return-void
 .end method
 
-.method public o(Landroidx/constraintlayout/widget/ConstraintLayout;)V
-    .locals 2
+.method public final o()V
+    .locals 3
 
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-    move-result-object p1
+    move-result-object v0
 
-    check-cast p1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
+    check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
     .line 2
-    iget-object v0, p1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->l0:Lq/e;
+    iget-object v1, v0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->l0:Lq/e;
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
-    invoke-virtual {v0, v1}, Lq/e;->l0(I)V
+    invoke-virtual {v1, v2}, Lq/e;->j0(I)V
 
     .line 3
-    iget-object p1, p1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->l0:Lq/e;
+    iget-object v0, v0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->l0:Lq/e;
 
-    invoke-virtual {p1, v1}, Lq/e;->T(I)V
+    invoke-virtual {v0, v2}, Lq/e;->R(I)V
 
     return-void
 .end method
 
-.method public onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 0
 
     .line 1

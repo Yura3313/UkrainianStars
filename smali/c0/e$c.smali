@@ -1,4 +1,4 @@
-.class public Lc0/e$c;
+.class public final Lc0/e$c;
 .super Ljava/lang/Object;
 .source "FontsContractCompat.java"
 

@@ -1,93 +1,73 @@
-.class public Lcom/google/android/material/datepicker/SingleDateSelector$a;
-.super Lcom/google/android/material/datepicker/c;
+.class public final Lcom/google/android/material/datepicker/SingleDateSelector$a;
+.super Ljava/lang/Object;
 .source "SingleDateSelector.java"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/datepicker/SingleDateSelector;->L0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;Lcom/google/android/material/datepicker/CalendarConstraints;Lcom/google/android/material/datepicker/t;)Landroid/view/View;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/material/datepicker/SingleDateSelector;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1
+    accessFlags = 0x9
     name = null
 .end annotation
 
-
-# instance fields
-.field public final synthetic l:Lcom/google/android/material/datepicker/t;
-
-.field public final synthetic m:Lcom/google/android/material/datepicker/SingleDateSelector;
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/material/datepicker/SingleDateSelector;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/datepicker/SingleDateSelector;Ljava/lang/String;Ljava/text/DateFormat;Lcom/google/android/material/textfield/TextInputLayout;Lcom/google/android/material/datepicker/CalendarConstraints;Lcom/google/android/material/datepicker/t;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/datepicker/SingleDateSelector$a;->m:Lcom/google/android/material/datepicker/SingleDateSelector;
-
-    iput-object p6, p0, Lcom/google/android/material/datepicker/SingleDateSelector$a;->l:Lcom/google/android/material/datepicker/t;
-
-    invoke-direct {p0, p2, p3, p4, p5}, Lcom/google/android/material/datepicker/c;-><init>(Ljava/lang/String;Ljava/text/DateFormat;Lcom/google/android/material/textfield/TextInputLayout;Lcom/google/android/material/datepicker/CalendarConstraints;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
-    .locals 1
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/SingleDateSelector$a;->l:Lcom/google/android/material/datepicker/t;
+    new-instance v0, Lcom/google/android/material/datepicker/SingleDateSelector;
 
-    invoke-virtual {v0}, Lcom/google/android/material/datepicker/t;->a()V
-
-    return-void
-.end method
-
-.method public b(Ljava/lang/Long;)V
-    .locals 3
-
-    if-nez p1, :cond_0
-
-    .line 1
-    iget-object p1, p0, Lcom/google/android/material/datepicker/SingleDateSelector$a;->m:Lcom/google/android/material/datepicker/SingleDateSelector;
-
-    const/4 v0, 0x0
+    invoke-direct {v0}, Lcom/google/android/material/datepicker/SingleDateSelector;-><init>()V
 
     .line 2
-    iput-object v0, p1, Lcom/google/android/material/datepicker/SingleDateSelector;->g:Ljava/lang/Long;
+    const-class v1, Ljava/lang/Long;
 
-    goto :goto_0
+    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/material/datepicker/SingleDateSelector$a;->m:Lcom/google/android/material/datepicker/SingleDateSelector;
+    move-result-object v1
 
-    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v1
-
-    .line 4
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-virtual {p1, v1}, Landroid/os/Parcel;->readValue(Ljava/lang/ClassLoader;)Ljava/lang/Object;
 
     move-result-object p1
 
-    iput-object p1, v0, Lcom/google/android/material/datepicker/SingleDateSelector;->g:Ljava/lang/Long;
+    check-cast p1, Ljava/lang/Long;
 
-    .line 5
-    :goto_0
-    iget-object p1, p0, Lcom/google/android/material/datepicker/SingleDateSelector$a;->l:Lcom/google/android/material/datepicker/t;
+    .line 3
+    iput-object p1, v0, Lcom/google/android/material/datepicker/SingleDateSelector;->f:Ljava/lang/Long;
 
-    iget-object v0, p0, Lcom/google/android/material/datepicker/SingleDateSelector$a;->m:Lcom/google/android/material/datepicker/SingleDateSelector;
+    return-object v0
+.end method
 
-    .line 6
-    iget-object v0, v0, Lcom/google/android/material/datepicker/SingleDateSelector;->g:Ljava/lang/Long;
+.method public final newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-    .line 7
-    invoke-virtual {p1, v0}, Lcom/google/android/material/datepicker/t;->b(Ljava/lang/Object;)V
+    new-array p1, p1, [Lcom/google/android/material/datepicker/SingleDateSelector;
 
-    return-void
+    return-object p1
 .end method

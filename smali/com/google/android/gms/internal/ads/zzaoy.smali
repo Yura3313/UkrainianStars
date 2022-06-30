@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.mediation.client.rtb.IRewardedCallback"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,25 +19,25 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 1
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    const/4 p4, 0x2
+    const/4 v0, 0x2
 
-    if-eq p1, p4, :cond_1
+    if-eq p1, v0, :cond_1
 
-    const/4 p4, 0x3
+    const/4 v0, 0x3
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    if-eq p1, p4, :cond_0
+    if-eq p1, v0, :cond_0
 
-    return v0
+    return v1
 
     .line 1
     :cond_0
@@ -49,16 +48,16 @@
     .line 2
     move-object p2, p0
 
-    check-cast p2, Lj3/q60;
+    check-cast p2, Lk3/n60;
 
     .line 3
-    iget-object p2, p2, Lj3/q60;->g:Lj3/j40;
+    iget-object p2, p2, Lk3/n60;->f:Lk3/g40;
 
-    iget-object p2, p2, Lj3/j40;->c:Lj3/qr;
+    iget-object p2, p2, Lk3/g40;->c:Lk3/qr;
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzcso;
 
-    invoke-virtual {p2, v0, p1}, Lcom/google/android/gms/internal/ads/zzcso;->d3(ILjava/lang/String;)V
+    invoke-virtual {p2, v1, p1}, Lcom/google/android/gms/internal/ads/zzcso;->j3(ILjava/lang/String;)V
 
     goto :goto_0
 
@@ -66,16 +65,16 @@
     :cond_1
     move-object p1, p0
 
-    check-cast p1, Lj3/q60;
+    check-cast p1, Lk3/n60;
 
     .line 5
-    iget-object p1, p1, Lj3/q60;->g:Lj3/j40;
+    iget-object p1, p1, Lk3/n60;->f:Lk3/g40;
 
-    iget-object p1, p1, Lj3/j40;->c:Lj3/qr;
+    iget-object p1, p1, Lk3/g40;->c:Lk3/qr;
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzcso;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzcso;->G()V
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzcso;->J()V
 
     .line 6
     :goto_0

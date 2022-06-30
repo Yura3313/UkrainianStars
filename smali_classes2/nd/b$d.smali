@@ -1,14 +1,14 @@
 .class public final Lnd/b$d;
-.super Lle/j;
-.source "FriendsFragment.kt"
+.super Ljava/lang/Object;
+.source "MessagesTabFriendsFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Landroid/view/View$OnLayoutChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lnd/b;-><init>()V
+    value = Lnd/b;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,138 +16,71 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Ljava/util/List<",
-        "+",
-        "Lqc/i;",
-        ">;",
-        "Lae/i;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field public final synthetic g:Lnd/b;
+.field public final synthetic a:Lnd/b;
+
+.field public final synthetic b:I
 
 
 # direct methods
-.method public constructor <init>(Lnd/b;)V
+.method public constructor <init>(Lnd/b;I)V
     .locals 0
 
-    iput-object p1, p0, Lnd/b$d;->g:Lnd/b;
+    iput-object p1, p0, Lnd/b$d;->a:Lnd/b;
 
-    const/4 p1, 0x1
+    iput p2, p0, Lnd/b$d;->b:I
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 12
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 0
 
     .line 1
-    check-cast p1, Ljava/util/List;
+    iget-object p2, p0, Lnd/b$d;->a:Lnd/b;
 
-    if-eqz p1, :cond_1
+    sget p3, Lcom/supercell/id/R$id;->messagesList:I
+
+    invoke-virtual {p2, p3}, Lnd/b;->T0(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
+
+    if-eqz p2, :cond_0
+
+    const-string p3, "v"
 
     .line 2
-    iget-object v0, p0, Lnd/b$d;->g:Lnd/b;
+    invoke-static {p1, p3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
+
+    move-result p1
+
+    iget p3, p0, Lnd/b$d;->b:I
+
+    add-int/2addr p1, p3
 
     .line 3
-    new-instance v1, Ljava/util/ArrayList;
+    invoke-static {p2}, Lae/z2;->f(Landroid/view/View;)I
 
-    const/16 v2, 0xa
+    move-result p3
 
-    invoke-static {p1, v2}, Lbe/g;->v(Ljava/lang/Iterable;I)I
-
-    move-result v2
-
-    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+    if-eq p1, p3, :cond_0
 
     .line 4
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    new-instance p3, Lnd/b$d$a;
 
-    move-result-object p1
+    invoke-direct {p3, p2, p1}, Lnd/b$d$a;-><init>(Landroidx/recyclerview/widget/RecyclerView;I)V
 
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {p2, p3}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    .line 5
-    check-cast v2, Lqc/i;
-
-    .line 6
-    new-instance v11, Lnd/a;
-
-    .line 7
-    iget-object v4, v2, Lqc/i;->a:Lqc/d0;
-
-    .line 8
-    iget-object v5, v2, Lqc/i;->b:Ljava/lang/String;
-
-    .line 9
-    iget-object v6, v2, Lqc/i;->c:Lcom/supercell/id/model/ProfileImage;
-
-    .line 10
-    iget-object v7, v2, Lqc/i;->d:Lcom/supercell/id/model/IdPresenceStatus;
-
-    .line 11
-    iget-object v8, v2, Lqc/i;->e:Lcom/supercell/id/model/IdRelationshipStatus;
-
-    .line 12
-    iget v9, v2, Lqc/i;->f:I
-
-    .line 13
-    iget-boolean v10, v2, Lqc/i;->g:Z
-
-    move-object v3, v11
-
-    .line 14
-    invoke-direct/range {v3 .. v10}, Lnd/a;-><init>(Lqc/d0;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdPresenceStatus;Lcom/supercell/id/model/IdRelationshipStatus;IZ)V
-
-    invoke-virtual {v1, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    .line 15
     :cond_0
-    sget p1, Lnd/b;->h0:I
-
-    .line 16
-    invoke-virtual {v0, v1}, Lnd/b;->e1(Ljava/util/List;)V
-
-    .line 17
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "list"
-
-    .line 18
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    goto :goto_2
-
-    :goto_1
-    throw p1
-
-    :goto_2
-    goto :goto_1
+    return-void
 .end method

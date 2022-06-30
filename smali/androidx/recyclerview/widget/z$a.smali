@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/z$a;
+.class public final Landroidx/recyclerview/widget/z$a;
 .super Lf0/a;
 .source "RecyclerViewAccessibilityDelegate.java"
 
@@ -17,7 +17,7 @@
 # instance fields
 .field public final d:Landroidx/recyclerview/widget/z;
 
-.field public e:Ljava/util/Map;
+.field public e:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -41,7 +41,7 @@
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    iput-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/Map;
+    iput-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/WeakHashMap;
 
     .line 3
     iput-object p1, p0, Landroidx/recyclerview/widget/z$a;->d:Landroidx/recyclerview/widget/z;
@@ -51,13 +51,13 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+.method public final a(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/WeakHashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -74,22 +74,20 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
-
-    invoke-virtual {v0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->dispatchPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+    invoke-super {p0, p1, p2}, Lf0/a;->a(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public b(Landroid/view/View;)Lg0/c;
+.method public final b(Landroid/view/View;)Lg0/d;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/WeakHashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -98,7 +96,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0, p1}, Lf0/a;->b(Landroid/view/View;)Lg0/c;
+    invoke-virtual {v0, p1}, Lf0/a;->b(Landroid/view/View;)Lg0/d;
 
     move-result-object p1
 
@@ -106,20 +104,20 @@
 
     .line 3
     :cond_0
-    invoke-super {p0, p1}, Lf0/a;->b(Landroid/view/View;)Lg0/c;
+    invoke-super {p0, p1}, Lf0/a;->b(Landroid/view/View;)Lg0/d;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+.method public final d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/WeakHashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -134,15 +132,13 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
-
-    invoke-virtual {v0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    invoke-super {p0, p1, p2}, Lf0/a;->d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
     :goto_0
     return-void
 .end method
 
-.method public e(Landroid/view/View;Lg0/b;)V
+.method public final e(Landroid/view/View;Lg0/c;)V
     .locals 1
 
     .line 1
@@ -175,12 +171,12 @@
     move-result-object v0
 
     .line 4
-    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->d0(Landroid/view/View;Lg0/b;)V
+    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$m;->b0(Landroid/view/View;Lg0/c;)V
 
     .line 5
-    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/WeakHashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -189,7 +185,7 @@
     if-eqz v0, :cond_0
 
     .line 6
-    invoke-virtual {v0, p1, p2}, Lf0/a;->e(Landroid/view/View;Lg0/b;)V
+    invoke-virtual {v0, p1, p2}, Lf0/a;->e(Landroid/view/View;Lg0/c;)V
 
     goto :goto_0
 
@@ -198,7 +194,7 @@
     iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
 
     .line 8
-    iget-object p2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    iget-object p2, p2, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
     .line 9
     invoke-virtual {v0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
@@ -210,7 +206,7 @@
     iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
 
     .line 11
-    iget-object p2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    iget-object p2, p2, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
     .line 12
     invoke-virtual {v0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
@@ -219,13 +215,13 @@
     return-void
 .end method
 
-.method public f(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+.method public final f(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/WeakHashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -240,21 +236,19 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
-
-    invoke-virtual {v0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    invoke-super {p0, p1, p2}, Lf0/a;->f(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
     :goto_0
     return-void
 .end method
 
-.method public g(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+.method public final g(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/WeakHashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -271,16 +265,14 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
-
-    invoke-virtual {v0, p1, p2, p3}, Landroid/view/View$AccessibilityDelegate;->onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+    invoke-super {p0, p1, p2, p3}, Lf0/a;->g(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public h(Landroid/view/View;ILandroid/os/Bundle;)Z
+.method public final h(Landroid/view/View;ILandroid/os/Bundle;)Z
     .locals 2
 
     .line 1
@@ -304,9 +296,9 @@
     if-eqz v0, :cond_2
 
     .line 3
-    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/WeakHashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -348,7 +340,7 @@
     .line 7
     iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$m;->b:Landroidx/recyclerview/widget/RecyclerView;
 
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->h:Landroidx/recyclerview/widget/RecyclerView$s;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->g:Landroidx/recyclerview/widget/RecyclerView$s;
 
     const/4 p1, 0x0
 
@@ -363,13 +355,13 @@
     return p1
 .end method
 
-.method public i(Landroid/view/View;I)V
+.method public final i(Landroid/view/View;I)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/WeakHashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -384,21 +376,19 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
-
-    invoke-virtual {v0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->sendAccessibilityEvent(Landroid/view/View;I)V
+    invoke-super {p0, p1, p2}, Lf0/a;->i(Landroid/view/View;I)V
 
     :goto_0
     return-void
 .end method
 
-.method public j(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+.method public final j(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/recyclerview/widget/z$a;->e:Ljava/util/WeakHashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -413,9 +403,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
-
-    invoke-virtual {v0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->sendAccessibilityEventUnchecked(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    invoke-super {p0, p1, p2}, Lf0/a;->j(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
     :goto_0
     return-void

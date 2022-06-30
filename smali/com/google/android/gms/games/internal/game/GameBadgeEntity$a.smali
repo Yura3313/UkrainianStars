@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/games/internal/game/GameBadgeEntity$a;
-.super La3/a;
+.super Lb3/a;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 
@@ -18,8 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, La3/a;-><init>()V
+    invoke-direct {p0}, Lb3/a;-><init>()V
 
     return-void
 .end method
@@ -33,36 +32,29 @@
     sget-object v0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 2
-    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->A2()Ljava/lang/Integer;
-
-    const/4 v0, 0x0
+    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->E2()V
 
     .line 3
-    invoke-static {v0}, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->B2(Ljava/lang/Integer;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
+    sget v0, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->g:I
 
     .line 4
-    const-class v1, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;
+    const-class v0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;
 
     .line 5
-    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->z2()Z
+    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->D2()V
 
     .line 6
-    :cond_0
     invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
 
-    move-result v1
+    move-result v0
+
+    const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    move-object v2, v0
-
     move-object v3, v2
 
-    const/4 v4, 0x0
+    move-object v4, v3
 
     .line 7
     :goto_0
@@ -70,7 +62,7 @@
 
     move-result v5
 
-    if-ge v5, v1, :cond_5
+    if-ge v5, v0, :cond_4
 
     .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -83,19 +75,19 @@
 
     const/4 v7, 0x1
 
-    if-eq v6, v7, :cond_4
+    if-eq v6, v7, :cond_3
 
     const/4 v7, 0x2
 
-    if-eq v6, v7, :cond_3
+    if-eq v6, v7, :cond_2
 
     const/4 v7, 0x3
 
-    if-eq v6, v7, :cond_2
+    if-eq v6, v7, :cond_1
 
     const/4 v7, 0x4
 
-    if-eq v6, v7, :cond_1
+    if-eq v6, v7, :cond_0
 
     .line 9
     invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
@@ -103,19 +95,27 @@
     goto :goto_0
 
     .line 10
-    :cond_1
-    sget-object v3, Landroid/net/Uri;->CREATOR:Landroid/os/Parcelable$Creator;
+    :cond_0
+    sget-object v4, Landroid/net/Uri;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 11
-    invoke-static {p1, v5, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p1, v5, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
-    move-result-object v3
+    move-result-object v4
 
-    check-cast v3, Landroid/net/Uri;
+    check-cast v4, Landroid/net/Uri;
 
     goto :goto_0
 
     .line 12
+    :cond_1
+    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v3
+
+    goto :goto_0
+
+    .line 13
     :cond_2
     invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
@@ -123,30 +123,22 @@
 
     goto :goto_0
 
-    .line 13
-    :cond_3
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
     .line 14
-    :cond_4
+    :cond_3
     invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
 
-    move-result v4
+    move-result v1
 
     goto :goto_0
 
     .line 15
-    :cond_5
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    :cond_4
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
 
     .line 16
     new-instance p1, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;
 
-    invoke-direct {p1, v4, v0, v2, v3}, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;-><init>(ILjava/lang/String;Ljava/lang/String;Landroid/net/Uri;)V
+    invoke-direct {p1, v1, v2, v3, v4}, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;-><init>(ILjava/lang/String;Ljava/lang/String;Landroid/net/Uri;)V
 
     return-object p1
 .end method

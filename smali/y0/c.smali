@@ -1,4 +1,4 @@
-.class public Ly0/c;
+.class public final Ly0/c;
 .super Ljava/lang/Object;
 .source "ViewPager.java"
 
@@ -33,16 +33,16 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;Lf0/z;)Lf0/z;
+.method public final a(Landroid/view/View;Lf0/a0;)Lf0/a0;
     .locals 5
 
     .line 1
-    invoke-static {p1, p2}, Lf0/r;->u(Landroid/view/View;Lf0/z;)Lf0/z;
+    invoke-static {p1, p2}, Lf0/r;->x(Landroid/view/View;Lf0/a0;)Lf0/a0;
 
     move-result-object p1
 
     .line 2
-    invoke-virtual {p1}, Lf0/z;->k()Z
+    invoke-virtual {p1}, Lf0/a0;->k()Z
 
     move-result p2
 
@@ -55,28 +55,28 @@
     iget-object p2, p0, Ly0/c;->a:Landroid/graphics/Rect;
 
     .line 4
-    invoke-virtual {p1}, Lf0/z;->e()I
+    invoke-virtual {p1}, Lf0/a0;->e()I
 
     move-result v0
 
     iput v0, p2, Landroid/graphics/Rect;->left:I
 
     .line 5
-    invoke-virtual {p1}, Lf0/z;->g()I
+    invoke-virtual {p1}, Lf0/a0;->g()I
 
     move-result v0
 
     iput v0, p2, Landroid/graphics/Rect;->top:I
 
     .line 6
-    invoke-virtual {p1}, Lf0/z;->f()I
+    invoke-virtual {p1}, Lf0/a0;->f()I
 
     move-result v0
 
     iput v0, p2, Landroid/graphics/Rect;->right:I
 
     .line 7
-    invoke-virtual {p1}, Lf0/z;->d()I
+    invoke-virtual {p1}, Lf0/a0;->d()I
 
     move-result v0
 
@@ -102,12 +102,12 @@
 
     move-result-object v2
 
-    invoke-static {v2, p1}, Lf0/r;->e(Landroid/view/View;Lf0/z;)Lf0/z;
+    invoke-static {v2, p1}, Lf0/r;->e(Landroid/view/View;Lf0/a0;)Lf0/a0;
 
     move-result-object v2
 
     .line 11
-    invoke-virtual {v2}, Lf0/z;->e()I
+    invoke-virtual {v2}, Lf0/a0;->e()I
 
     move-result v3
 
@@ -120,7 +120,7 @@
     iput v3, p2, Landroid/graphics/Rect;->left:I
 
     .line 12
-    invoke-virtual {v2}, Lf0/z;->g()I
+    invoke-virtual {v2}, Lf0/a0;->g()I
 
     move-result v3
 
@@ -133,7 +133,7 @@
     iput v3, p2, Landroid/graphics/Rect;->top:I
 
     .line 13
-    invoke-virtual {v2}, Lf0/z;->f()I
+    invoke-virtual {v2}, Lf0/a0;->f()I
 
     move-result v3
 
@@ -146,7 +146,7 @@
     iput v3, p2, Landroid/graphics/Rect;->right:I
 
     .line 14
-    invoke-virtual {v2}, Lf0/z;->d()I
+    invoke-virtual {v2}, Lf0/a0;->d()I
 
     move-result v2
 
@@ -172,7 +172,7 @@
 
     iget p2, p2, Landroid/graphics/Rect;->bottom:I
 
-    invoke-virtual {p1, v0, v1, v2, p2}, Lf0/z;->l(IIII)Lf0/z;
+    invoke-virtual {p1, v0, v1, v2, p2}, Lf0/a0;->l(IIII)Lf0/a0;
 
     move-result-object p1
 

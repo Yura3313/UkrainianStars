@@ -1,4 +1,4 @@
-.class public Lf/a;
+.class public final Lf/a;
 .super Ljava/lang/Object;
 .source "ActionBarPolicy.java"
 
@@ -22,10 +22,9 @@
 
 
 # virtual methods
-.method public a()I
+.method public final a()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lf/a;->a:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -41,7 +40,7 @@
     return v0
 .end method
 
-.method public b()I
+.method public final b()I
     .locals 5
 
     .line 1
@@ -100,10 +99,9 @@
     return v1
 .end method
 
-.method public c()Z
+.method public final c()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lf/a;->a:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;

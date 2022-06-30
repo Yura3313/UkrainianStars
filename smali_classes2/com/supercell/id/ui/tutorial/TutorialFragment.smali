@@ -16,14 +16,13 @@
 
 
 # instance fields
-.field public j0:Ljava/util/HashMap;
+.field public h0:Ljava/util/HashMap;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/BaseFragment;-><init>()V
 
     return-void
@@ -31,10 +30,10 @@
 
 
 # virtual methods
-.method public W0()V
+.method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -44,12 +43,13 @@
     return-void
 .end method
 
-.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string p3, "inflater"
 
-    .line 1
+    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sget p3, Lcom/supercell/id/R$layout;->fragment_tutorial:I
 
     const/4 v0, 0x0
@@ -59,25 +59,14 @@
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "inflater"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public i0()V
+.method public final a0()V
     .locals 1
 
-    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->i0()V
+    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -87,10 +76,10 @@
     return-void
 .end method
 
-.method public o1(I)Landroid/view/View;
+.method public final f1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -98,10 +87,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -116,7 +105,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -130,7 +119,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -142,16 +131,18 @@
     return-object v0
 .end method
 
-.method public s0(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final k0(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 4
 
-    if-eqz p1, :cond_8
+    const-string v0, "view"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
-    invoke-static {p0}, Lrc/b;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {p0}, La2/j;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object p1
 
@@ -175,7 +166,7 @@
     .line 4
     sget p1, Lcom/supercell/id/R$id;->toolbar_logo:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -189,7 +180,7 @@
     :cond_1
     sget p1, Lcom/supercell/id/R$id;->toolbar_skip_button:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -197,11 +188,11 @@
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {v0, p2}, Landroid/widget/Button;->setVisibility(I)V
+    invoke-virtual {v0, p2}, Landroid/view/View;->setVisibility(I)V
 
     .line 6
     :cond_2
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -213,7 +204,7 @@
 
     invoke-direct {p2, p0}, Lcom/supercell/id/ui/tutorial/TutorialFragment$e;-><init>(Lcom/supercell/id/ui/tutorial/TutorialFragment;)V
 
-    invoke-virtual {p1, p2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     goto :goto_1
 
@@ -221,7 +212,7 @@
     :cond_3
     sget p1, Lcom/supercell/id/R$id;->toolbar_logo_end:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -242,14 +233,14 @@
 
     const-string v0, "childFragmentManager"
 
-    invoke-static {p2, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p1, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment$d;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
     .line 9
     sget p2, Lcom/supercell/id/R$id;->pager:I
 
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -257,20 +248,20 @@
 
     const-string v2, "pager"
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, p1}, Landroidx/viewpager/widget/RtlViewPager;->setAdapter(Ly0/b;)V
 
     .line 10
     sget v1, Lcom/supercell/id/R$id;->indicator:I
 
-    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Lcom/google/android/material/tabs/TabLayout;
 
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -278,10 +269,10 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v1, v2, v3}, Lcom/google/android/material/tabs/TabLayout;->m(Landroidx/viewpager/widget/ViewPager;Z)V
+    invoke-virtual {v1, v2, v3}, Lcom/google/android/material/tabs/TabLayout;->n(Landroidx/viewpager/widget/ViewPager;Z)V
 
     .line 11
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
 
     move-result-object p2
 
@@ -299,7 +290,7 @@
     :cond_5
     sget p2, Lcom/supercell/id/R$id;->imagePager:I
 
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -308,7 +299,7 @@
     if-eqz v1, :cond_6
 
     .line 13
-    iget-object p1, p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d;->h:[Lke/a;
+    iget-object p1, p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d;->h:[Lre/a;
 
     array-length p1, p1
 
@@ -323,7 +314,7 @@
 
     .line 15
     :cond_6
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment;->f1(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -337,7 +328,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p2, v1}, Lcom/supercell/id/ui/tutorial/TutorialFragment$c;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
@@ -345,14 +336,4 @@
 
     :cond_7
     return-void
-
-    :cond_8
-    const-string p1, "view"
-
-    .line 16
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

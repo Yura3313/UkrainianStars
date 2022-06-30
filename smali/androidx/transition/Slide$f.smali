@@ -16,27 +16,23 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, v0}, Landroidx/transition/Slide$i;-><init>(Landroidx/transition/Slide$a;)V
+    invoke-direct {p0}, Landroidx/transition/Slide$i;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/view/ViewGroup;Landroid/view/View;)F
+.method public final a(Landroid/view/ViewGroup;Landroid/view/View;)F
     .locals 0
 
-    .line 1
     invoke-virtual {p2}, Landroid/view/View;->getTranslationY()F
 
     move-result p2
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p1
 

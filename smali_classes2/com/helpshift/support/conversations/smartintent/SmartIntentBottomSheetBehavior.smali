@@ -36,8 +36,8 @@
 
 
 # virtual methods
-.method public b(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
-    .locals 0
+.method public final b(Landroid/view/View;Landroid/view/View;)Z
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,16 +49,16 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p2}, Landroid/view/View;->getId()I
+    invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
 
-    sget p2, Lcom/helpshift/R$id;->hs__si_scrollable_view_container:I
+    sget v0, Lcom/helpshift/R$id;->hs__si_scrollable_view_container:I
 
-    if-ne p1, p2, :cond_0
+    if-ne p1, v0, :cond_0
 
     .line 2
-    invoke-virtual {p3}, Landroid/view/View;->getId()I
+    invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result p1
 
@@ -76,7 +76,7 @@
     return p1
 .end method
 
-.method public d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+.method public final d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {

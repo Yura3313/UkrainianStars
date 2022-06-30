@@ -81,10 +81,10 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lae/i;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lie/h;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/kakaogame/idp/KGKakao2Auth;->lambda$refreshAccessToken$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lae/i;
+    invoke-static {p0, p1, p2}, Lcom/kakaogame/idp/KGKakao2Auth;->lambda$refreshAccessToken$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lie/h;
 
     move-result-object p0
 
@@ -94,7 +94,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/idp/KGKakao2Auth;Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/kakaogame/idp/KGKakao2Auth;->kakaoLoginWithType(Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/util/MutexLock;)V
 
     return-void
@@ -103,7 +102,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/idp/KGKakao2Auth;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/idp/KGKakao2Auth;->onFirstLogin()V
 
     return-void
@@ -112,7 +110,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/util/MutexLock;)Lcom/kakaogame/idp/KGKakao2Auth$LoginCallback;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/idp/KGKakao2Auth;->getLoginCallback(Lcom/kakaogame/util/MutexLock;)Lcom/kakaogame/idp/KGKakao2Auth$LoginCallback;
 
     move-result-object p0
@@ -123,7 +120,6 @@
 .method public static synthetic access$302(Lcom/kakaogame/idp/KGKakao2Auth;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/idp/KGKakao2Auth;->loginType:Ljava/lang/String;
 
     return-object p1
@@ -211,7 +207,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/kakaogame/idp/KGKakao2Auth$7;-><init>(Lcom/kakaogame/idp/KGKakao2Auth;[Lcom/kakaogame/idp/KGKakao2Auth$Item;Lcom/kakaogame/util/MutexLock;Landroid/app/Activity;Landroid/app/Dialog;)V
 
-    invoke-virtual {v7, p3}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v7, p3}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 9
     sget p1, Lcom/kakaogame/kakao/R$id;->login_close_button:I
@@ -227,7 +223,7 @@
 
     invoke-direct {p2, p0, p4, v6}, Lcom/kakaogame/idp/KGKakao2Auth$8;-><init>(Lcom/kakaogame/idp/KGKakao2Auth;Lcom/kakaogame/util/MutexLock;Landroid/app/Dialog;)V
 
-    invoke-virtual {p1, p2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-object v6
 .end method
@@ -245,7 +241,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/kakaogame/idp/KGKakao2Auth$9;
 
     invoke-direct {v0, p0}, Lcom/kakaogame/idp/KGKakao2Auth$9;-><init>(Lcom/kakaogame/util/MutexLock;)V
@@ -289,7 +284,7 @@
     move-exception v0
 
     .line 4
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -305,7 +300,6 @@
 .method public static isCheckAgeAuthOnGame()Z
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/infodesk/InfodeskHelper;->getAgeAuthLimit()I
 
     move-result v0
@@ -379,7 +373,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lke/p;)V
+    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lre/p;)V
 
     .line 5
     invoke-static {}, Lcom/kakaogame/KGKakaoTalk;->isKakaoTalkInstalled()Z
@@ -420,7 +414,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lke/p;)V
+    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lre/p;)V
 
     .line 11
     iput-object v1, p0, Lcom/kakaogame/idp/KGKakao2Auth;->loginType:Ljava/lang/String;
@@ -441,7 +435,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoTalk(Landroid/content/Context;Lke/p;)V
+    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoTalk(Landroid/content/Context;Lre/p;)V
 
     const-string p1, "INSTALLED_APP"
 
@@ -456,7 +450,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lke/p;)V
+    invoke-virtual {p2, p1, v0}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lre/p;)V
 
     .line 16
     iput-object v1, p0, Lcom/kakaogame/idp/KGKakao2Auth;->loginType:Ljava/lang/String;
@@ -465,7 +459,7 @@
     return-void
 .end method
 
-.method private static synthetic lambda$refreshAccessToken$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lae/i;
+.method private static synthetic lambda$refreshAccessToken$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/AccessTokenInfo;Ljava/lang/Throwable;)Lie/h;
     .locals 1
 
     if-eqz p2, :cond_0
@@ -533,7 +527,7 @@
 
     .line 9
     :goto_0
-    sget-object p0, Lae/i;->a:Lae/i;
+    sget-object p0, Lie/h;->a:Lie/h;
 
     return-object p0
 .end method
@@ -801,7 +795,7 @@
     const-string v1, "KGKakao2Auth"
 
     .line 28
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -810,7 +804,7 @@
     const/16 v1, 0xfa1
 
     .line 29
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1269,7 +1263,7 @@
     move-exception v1
 
     .line 40
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1342,7 +1336,7 @@
 
     invoke-direct {v2, p1}, Lcom/kakaogame/idp/a;-><init>(Lcom/kakaogame/util/MutexLock;)V
 
-    invoke-virtual {v1, v2}, Lcom/kakao/sdk/user/UserApiClient;->accessTokenInfo(Lke/p;)V
+    invoke-virtual {v1, v2}, Lcom/kakao/sdk/user/UserApiClient;->accessTokenInfo(Lre/p;)V
 
     .line 7
     invoke-virtual {p1}, Lcom/kakaogame/util/MutexLock;->lock()V
@@ -1582,7 +1576,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, p0, p1, v1}, Lcom/kakao/sdk/user/UserApiClient;->loginWithNewScopes(Landroid/content/Context;Ljava/util/List;Lke/p;)V
+    invoke-virtual {v2, p0, p1, v1}, Lcom/kakao/sdk/user/UserApiClient;->loginWithNewScopes(Landroid/content/Context;Ljava/util/List;Lre/p;)V
 
     .line 4
     invoke-virtual {v0}, Lcom/kakaogame/util/MutexLock;->lock()V
@@ -1884,7 +1878,7 @@
 
     .line 30
     :try_start_4
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -1893,7 +1887,7 @@
     const/16 p2, 0xfa1
 
     .line 31
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -2212,7 +2206,7 @@
     move-exception v0
 
     .line 26
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2633,7 +2627,7 @@
 
     .line 48
     :try_start_7
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p2
 
@@ -2642,7 +2636,7 @@
     const/16 p2, 0xfa1
 
     .line 49
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -2804,7 +2798,7 @@
     sput-object v2, Lcom/kakaogame/idp/KGKakao2Auth;->serverHosts:Lcom/kakao/sdk/common/model/ServerHosts;
 
     .line 14
-    invoke-virtual {p1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -3009,7 +3003,7 @@
 
     .line 11
     :try_start_1
-    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -3018,7 +3012,7 @@
     const/16 v0, 0xfa1
 
     .line 12
-    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -3436,7 +3430,7 @@
 
     .line 35
     :try_start_6
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p4
 
@@ -3445,7 +3439,7 @@
     const/16 p3, 0xfa1
 
     .line 36
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -3553,7 +3547,7 @@
 
     .line 9
     :try_start_2
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -3562,7 +3556,7 @@
     const/16 v0, 0xfa1
 
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 

@@ -3,35 +3,54 @@
 .source "R8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic g:Landroid/view/GestureDetector;
+.field public final synthetic f:Lcom/supercell/titan/TitanWebView;
+
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/view/GestureDetector;)V
+.method public synthetic constructor <init>(Lcom/supercell/titan/TitanWebView;Ljava/lang/String;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/q;->g:Landroid/view/GestureDetector;
+    iput-object p1, p0, Lcom/supercell/titan/q;->f:Lcom/supercell/titan/TitanWebView;
+
+    iput-object p2, p0, Lcom/supercell/titan/q;->g:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 0
+.method public final run()V
+    .locals 4
 
-    iget-object p1, p0, Lcom/supercell/titan/q;->g:Landroid/view/GestureDetector;
+    iget-object v0, p0, Lcom/supercell/titan/q;->f:Lcom/supercell/titan/TitanWebView;
 
-    .line 1
-    invoke-virtual {p1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+    iget-object v1, p0, Lcom/supercell/titan/q;->g:Ljava/lang/String;
 
-    move-result p1
+    iget-object v0, v0, Lcom/supercell/titan/TitanWebView;->g:Landroid/webkit/WebView;
 
-    return p1
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "javascript:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+
+    return-void
 .end method

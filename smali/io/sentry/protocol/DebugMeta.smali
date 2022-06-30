@@ -35,7 +35,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +57,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/DebugMeta;->unknown:Ljava/util/Map;
 
     return-void
@@ -75,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/DebugMeta;->images:Ljava/util/List;
 
     return-object v0
@@ -84,7 +81,6 @@
 .method public getSdkInfo()Lio/sentry/protocol/SdkInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/DebugMeta;->sdkInfo:Lio/sentry/protocol/SdkInfo;
 
     return-object v0
@@ -103,7 +99,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
@@ -122,7 +117,6 @@
 .method public setSdkInfo(Lio/sentry/protocol/SdkInfo;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/DebugMeta;->sdkInfo:Lio/sentry/protocol/SdkInfo;
 
     return-void

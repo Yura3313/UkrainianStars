@@ -15,17 +15,17 @@
 
 
 # virtual methods
-.method public abstract a(Landroidx/transition/Transition;)V
+.method public abstract a()V
 .end method
 
-.method public abstract b(Landroidx/transition/Transition;)V
+.method public abstract b()V
 .end method
 
 .method public abstract c(Landroidx/transition/Transition;)V
 .end method
 
-.method public abstract d(Landroidx/transition/Transition;)V
+.method public abstract d()V
 .end method
 
-.method public abstract e(Landroidx/transition/Transition;)V
+.method public abstract e()V
 .end method

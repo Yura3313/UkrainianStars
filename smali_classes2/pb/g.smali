@@ -1,59 +1,29 @@
-.class public Lpb/g;
-.super Ljava/lang/Object;
-.source "CameraSurface.java"
-
-
-# instance fields
-.field public a:Landroid/view/SurfaceHolder;
-
-.field public b:Landroid/graphics/SurfaceTexture;
+.class public final Lpb/g;
+.super Lpb/l0;
+.source "FinishThread.java"
 
 
 # direct methods
-.method public constructor <init>(Landroid/graphics/SurfaceTexture;)V
-    .locals 1
+.method public constructor <init>(Lpb/e0;)V
+    .locals 2
 
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Lpb/d0;->h:Lpb/d0;
 
-    if-eqz p1, :cond_0
+    const-string v1, "FinishThread"
 
-    .line 5
-    iput-object p1, p0, Lpb/g;->b:Landroid/graphics/SurfaceTexture;
+    invoke-direct {p0, v1, p1, v0}, Lpb/l0;-><init>(Ljava/lang/String;Lpb/e0;Lpb/d0;)V
 
     return-void
-
-    .line 6
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string v0, "surfaceTexture may not be null"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
-.method public constructor <init>(Landroid/view/SurfaceHolder;)V
+
+# virtual methods
+.method public final b()V
     .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget-object v0, p0, Lpb/l0;->f:Lpb/e0;
 
-    if-eqz p1, :cond_0
-
-    .line 2
-    iput-object p1, p0, Lpb/g;->a:Landroid/view/SurfaceHolder;
+    invoke-virtual {v0}, Lpb/e0;->c()V
 
     return-void
-
-    .line 3
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string v0, "surfaceHolder may not be null"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method

@@ -1,31 +1,14 @@
-.class public Lga/a;
+.class public interface abstract Lga/a;
 .super Ljava/lang/Object;
-.source "RedactionDetail.java"
+.source "HSAndroidConnectivityManager.java"
 
 
-# instance fields
-.field public final a:J
+# virtual methods
+.method public abstract a()I
+.end method
 
-.field public final b:Lga/d;
+.method public abstract b()V
+.end method
 
-.field public final c:I
-
-
-# direct methods
-.method public constructor <init>(JLga/d;I)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-wide p1, p0, Lga/a;->a:J
-
-    .line 3
-    iput-object p3, p0, Lga/a;->b:Lga/d;
-
-    .line 4
-    iput p4, p0, Lga/a;->c:I
-
-    return-void
+.method public abstract c(Lga/e;)V
 .end method

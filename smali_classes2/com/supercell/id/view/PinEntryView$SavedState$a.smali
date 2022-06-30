@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,33 +37,25 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 2
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 1
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_0
+    const-string v0, "in"
 
     .line 1
-    new-instance v1, Lcom/supercell/id/view/PinEntryView$SavedState;
-
-    invoke-direct {v1, p1, v0}, Lcom/supercell/id/view/PinEntryView$SavedState;-><init>(Landroid/os/Parcel;Lle/g;)V
-
-    return-object v1
-
-    :cond_0
-    const-string p1, "in"
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    new-instance v0, Lcom/supercell/id/view/PinEntryView$SavedState;
 
-    throw v0
+    invoke-direct {v0, p1}, Lcom/supercell/id/view/PinEntryView$SavedState;-><init>(Landroid/os/Parcel;)V
+
+    return-object v0
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Lcom/supercell/id/view/PinEntryView$SavedState;
 
     return-object p1

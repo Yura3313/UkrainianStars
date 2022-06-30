@@ -1,374 +1,472 @@
 .class public Lx/k;
 .super Ljava/lang/Object;
-.source "TypefaceCompatUtil.java"
+.source "TypefaceCompatBaseImpl.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lx/k$b;
+    }
+.end annotation
+
+
+# instance fields
+.field public a:Ljava/util/concurrent/ConcurrentHashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/ConcurrentHashMap<",
+            "Ljava/lang/Long;",
+            "Lw/c$b;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public static a(Ljava/io/File;Landroid/content/res/Resources;I)Z
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    :try_start_0
-    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
-
-    move-result-object p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    :try_start_1
-    invoke-static {p0, p1}, Lx/k;->b(Ljava/io/File;Ljava/io/InputStream;)Z
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
-    move-result p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    if-eqz p1, :cond_0
+    iput-object v0, p0, Lx/k;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    return-void
+.end method
+
+.method public static e([Ljava/lang/Object;ILx/k$b;)Ljava/lang/Object;
+    .locals 10
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">([TT;I",
+            "Lx/k$b<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    and-int/lit8 v0, p1, 0x1
+
+    if-nez v0, :cond_0
+
+    const/16 v0, 0x190
+
+    goto :goto_0
+
+    :cond_0
+    const/16 v0, 0x2bc
+
+    :goto_0
+    and-int/lit8 p1, p1, 0x2
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    if-eqz p1, :cond_1
+
+    const/4 p1, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 p1, 0x0
+
+    :goto_1
+    const/4 v3, 0x0
+
+    const v4, 0x7fffffff
+
+    .line 1
+    array-length v5, p0
+
+    const/4 v6, 0x0
+
+    :goto_2
+    if-ge v6, v5, :cond_5
+
+    aget-object v7, p0, v6
+
+    .line 2
+    invoke-interface {p2, v7}, Lx/k$b;->a(Ljava/lang/Object;)I
+
+    move-result v8
+
+    sub-int/2addr v8, v0
+
+    invoke-static {v8}, Ljava/lang/Math;->abs(I)I
+
+    move-result v8
+
+    mul-int/lit8 v8, v8, 0x2
 
     .line 3
-    :try_start_2
-    invoke-interface {p1}, Ljava/io/Closeable;->close()V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    invoke-interface {p2, v7}, Lx/k$b;->b(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-ne v9, p1, :cond_2
+
+    const/4 v9, 0x0
+
+    goto :goto_3
+
+    :cond_2
+    const/4 v9, 0x1
+
+    :goto_3
+    add-int/2addr v8, v9
+
+    if-eqz v3, :cond_3
+
+    if-le v4, v8, :cond_4
+
+    :cond_3
+    move-object v3, v7
+
+    move v4, v8
+
+    :cond_4
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_2
+
+    :cond_5
+    return-object v3
+.end method
+
+.method public static g(Landroid/graphics/Typeface;)J
+    .locals 4
+
+    const-wide/16 v0, 0x0
+
+    if-nez p0, :cond_0
+
+    return-wide v0
+
+    .line 1
+    :cond_0
+    :try_start_0
+    const-class v2, Landroid/graphics/Typeface;
+
+    const-string v3, "native_instance"
+
+    invoke-virtual {v2, v3}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    .line 2
+    invoke-virtual {v2, v3}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+
+    .line 3
+    invoke-virtual {v2, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Number;
+
+    .line 4
+    invoke-virtual {p0}, Ljava/lang/Number;->longValue()J
+
+    move-result-wide v0
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
+    return-wide v0
+.end method
+
+
+# virtual methods
+.method public a(Landroid/content/Context;Lw/c$b;Landroid/content/res/Resources;I)Landroid/graphics/Typeface;
+    .locals 3
+
+    .line 1
+    iget-object v0, p2, Lw/c$b;->a:[Lw/c$c;
+
+    .line 2
+    new-instance v1, Lx/l;
+
+    invoke-direct {v1}, Lx/l;-><init>()V
+
+    invoke-static {v0, p4, v1}, Lx/k;->e([Ljava/lang/Object;ILx/k$b;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lw/c$c;
+
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
+
+    .line 3
     :cond_0
-    return p0
+    iget v1, v0, Lw/c$c;->f:I
+
+    .line 4
+    iget-object v0, v0, Lw/c$c;->a:Ljava/lang/String;
+
+    .line 5
+    invoke-static {p1, p3, v1, v0, p4}, Lx/e;->b(Landroid/content/Context;Landroid/content/res/Resources;ILjava/lang/String;I)Landroid/graphics/Typeface;
+
+    move-result-object p1
+
+    .line 6
+    invoke-static {p1}, Lx/k;->g(Landroid/graphics/Typeface;)J
+
+    move-result-wide p3
+
+    const-wide/16 v0, 0x0
+
+    cmp-long v2, p3, v0
+
+    if-eqz v2, :cond_1
+
+    .line 7
+    iget-object v0, p0, Lx/k;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-static {p3, p4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object p3
+
+    invoke-virtual {v0, p3, p2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_1
+    return-object p1
+.end method
+
+.method public b(Landroid/content/Context;[Lc0/e$c;I)Landroid/graphics/Typeface;
+    .locals 3
+
+    .line 1
+    array-length v0, p2
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    if-ge v0, v2, :cond_0
+
+    return-object v1
+
+    .line 2
+    :cond_0
+    invoke-virtual {p0, p2, p3}, Lx/k;->f([Lc0/e$c;I)Lc0/e$c;
+
+    move-result-object p2
+
+    .line 3
+    :try_start_0
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p3
+
+    .line 4
+    iget-object p2, p2, Lc0/e$c;->a:Landroid/net/Uri;
+
+    .line 5
+    invoke-virtual {p3, p2}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
+
+    move-result-object p2
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 6
+    :try_start_1
+    invoke-virtual {p0, p1, p2}, Lx/k;->c(Landroid/content/Context;Ljava/io/InputStream;)Landroid/graphics/Typeface;
+
+    move-result-object p1
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 7
+    invoke-static {p2}, Lx/m;->a(Ljava/io/Closeable;)V
+
+    return-object p1
 
     :catchall_0
-    move-exception p0
+    move-exception p1
+
+    move-object v1, p2
 
     goto :goto_0
 
     :catchall_1
-    move-exception p0
-
-    const/4 p1, 0x0
+    move-exception p1
 
     :goto_0
-    if-eqz p1, :cond_1
-
-    :try_start_3
-    invoke-interface {p1}, Ljava/io/Closeable;->close()V
-    :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
-
-    .line 4
-    :catch_1
-    :cond_1
-    throw p0
-.end method
-
-.method public static b(Ljava/io/File;Ljava/io/InputStream;)Z
-    .locals 5
-
-    .line 1
-    invoke-static {}, Landroid/os/StrictMode;->allowThreadDiskWrites()Landroid/os/StrictMode$ThreadPolicy;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    .line 2
-    :try_start_0
-    new-instance v3, Ljava/io/FileOutputStream;
-
-    invoke-direct {v3, p0, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
-
-    invoke-static {v3, p0, v1}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;Z)Ljava/io/FileOutputStream;
-
-    move-result-object v2
-
-    const/16 p0, 0x400
-
-    new-array p0, p0, [B
-
-    .line 3
-    :goto_0
-    invoke-virtual {p1, p0}, Ljava/io/InputStream;->read([B)I
-
-    move-result v3
-
-    const/4 v4, -0x1
-
-    if-eq v3, v4, :cond_0
-
-    .line 4
-    invoke-virtual {v2, p0, v1, v3}, Ljava/io/FileOutputStream;->write([BII)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x1
-
-    if-eqz v2, :cond_1
-
-    .line 5
-    :try_start_1
-    invoke-interface {v2}, Ljava/io/Closeable;->close()V
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
-
-    .line 6
-    :catch_0
-    :cond_1
-    invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
-
-    return p0
-
-    :catchall_0
-    move-exception p0
-
-    goto :goto_1
-
-    :catch_1
-    move-exception p0
-
-    .line 7
-    :try_start_2
-    invoke-virtual {p0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    if-eqz v2, :cond_2
+    invoke-static {v1}, Lx/m;->a(Ljava/io/Closeable;)V
 
     .line 8
-    :try_start_3
-    invoke-interface {v2}, Ljava/io/Closeable;->close()V
-    :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
-
-    .line 9
-    :catch_2
-    :cond_2
-    invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
-
-    return v1
-
-    :goto_1
-    if-eqz v2, :cond_3
-
-    .line 10
-    :try_start_4
-    invoke-interface {v2}, Ljava/io/Closeable;->close()V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
-
-    .line 11
-    :catch_3
-    :cond_3
-    invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
-
-    .line 12
-    goto :goto_3
-
-    :goto_2
-    throw p0
-
-    :goto_3
-    goto :goto_2
-.end method
-
-.method public static c(Landroid/content/Context;)Ljava/io/File;
-    .locals 5
-
-    .line 1
-    invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    if-nez p0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v1, ".font"
-
-    .line 2
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    move-result v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v2, "-"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-static {}, Landroid/os/Process;->myTid()I
-
-    move-result v3
-
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    :goto_0
-    const/16 v3, 0x64
-
-    if-ge v2, v3, :cond_2
-
-    .line 3
-    new-instance v3, Ljava/io/File;
-
-    invoke-static {v1, v2}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-direct {v3, p0, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 4
-    :try_start_0
-    invoke-virtual {v3}, Ljava/io/File;->createNewFile()Z
-
-    move-result v4
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    if-eqz v4, :cond_1
-
-    return-object v3
+    throw p1
 
     :catch_0
-    :cond_1
-    add-int/lit8 v2, v2, 0x1
+    move-object p2, v1
 
-    goto :goto_0
+    .line 9
+    :catch_1
+    invoke-static {p2}, Lx/m;->a(Ljava/io/Closeable;)V
 
-    :cond_2
-    return-object v0
+    return-object v1
 .end method
 
-.method public static d(Landroid/content/Context;Landroid/os/CancellationSignal;Landroid/net/Uri;)Ljava/nio/ByteBuffer;
-    .locals 7
+.method public c(Landroid/content/Context;Ljava/io/InputStream;)Landroid/graphics/Typeface;
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    :try_start_0
-    const-string v1, "r"
-
-    .line 2
-    invoke-virtual {p0, p2, v1, p1}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/os/ParcelFileDescriptor;
-
-    move-result-object p0
-
-    if-nez p0, :cond_1
-
-    if-eqz p0, :cond_0
-
-    .line 3
-    invoke-virtual {p0}, Landroid/os/ParcelFileDescriptor;->close()V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :cond_0
-    return-object v0
-
-    .line 4
-    :cond_1
-    :try_start_1
-    new-instance p1, Ljava/io/FileInputStream;
-
-    invoke-virtual {p0}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
-
-    move-result-object p2
-
-    invoke-direct {p1, p2}, Ljava/io/FileInputStream;-><init>(Ljava/io/FileDescriptor;)V
-
-    invoke-static {p1, p2}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/FileDescriptor;)Ljava/io/FileInputStream;
+    invoke-static {p1}, Lx/m;->d(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 5
-    :try_start_2
-    invoke-virtual {p1}, Ljava/io/FileInputStream;->getChannel()Ljava/nio/channels/FileChannel;
+    const/4 v0, 0x0
 
-    move-result-object v1
+    if-nez p1, :cond_0
 
-    .line 6
-    invoke-virtual {v1}, Ljava/nio/channels/FileChannel;->size()J
+    return-object v0
 
-    move-result-wide v5
+    .line 2
+    :cond_0
+    :try_start_0
+    invoke-static {p1, p2}, Lx/m;->c(Ljava/io/File;Ljava/io/InputStream;)Z
 
-    .line 7
-    sget-object v2, Ljava/nio/channels/FileChannel$MapMode;->READ_ONLY:Ljava/nio/channels/FileChannel$MapMode;
+    move-result p2
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const-wide/16 v3, 0x0
+    if-nez p2, :cond_1
 
-    invoke-virtual/range {v1 .. v6}, Ljava/nio/channels/FileChannel;->map(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;
+    .line 3
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
+
+    return-object v0
+
+    .line 4
+    :cond_1
+    :try_start_1
+    invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object p2
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 8
-    :try_start_3
-    invoke-virtual {p1}, Ljava/io/FileInputStream;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+    invoke-static {p2}, Landroid/graphics/Typeface;->createFromFile(Ljava/lang/String;)Landroid/graphics/Typeface;
 
-    .line 9
-    :try_start_4
-    invoke-virtual {p0}, Landroid/os/ParcelFileDescriptor;->close()V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
+    move-result-object p2
+    :try_end_1
+    .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 5
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
 
     return-object p2
 
     :catchall_0
     move-exception p2
 
-    .line 10
-    :try_start_5
-    invoke-virtual {p1}, Ljava/io/FileInputStream;->close()V
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
 
-    :catchall_1
-    :try_start_6
+    .line 6
     throw p2
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
-    :catchall_2
-    move-exception p1
-
-    .line 11
-    :try_start_7
-    invoke-virtual {p0}, Landroid/os/ParcelFileDescriptor;->close()V
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_3
-
-    :catchall_3
-    :try_start_8
-    throw p1
-    :try_end_8
-    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_0
-
+    .line 7
     :catch_0
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
+
     return-object v0
+.end method
+
+.method public d(Landroid/content/Context;Landroid/content/res/Resources;ILjava/lang/String;I)Landroid/graphics/Typeface;
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lx/m;->d(Landroid/content/Context;)Ljava/io/File;
+
+    move-result-object p1
+
+    const/4 p4, 0x0
+
+    if-nez p1, :cond_0
+
+    return-object p4
+
+    .line 2
+    :cond_0
+    :try_start_0
+    invoke-static {p1, p2, p3}, Lx/m;->b(Ljava/io/File;Landroid/content/res/Resources;I)Z
+
+    move-result p2
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez p2, :cond_1
+
+    .line 3
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
+
+    return-object p4
+
+    .line 4
+    :cond_1
+    :try_start_1
+    invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {p2}, Landroid/graphics/Typeface;->createFromFile(Ljava/lang/String;)Landroid/graphics/Typeface;
+
+    move-result-object p2
+    :try_end_1
+    .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 5
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
+
+    return-object p2
+
+    :catchall_0
+    move-exception p2
+
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
+
+    .line 6
+    throw p2
+
+    .line 7
+    :catch_0
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
+
+    return-object p4
+.end method
+
+.method public f([Lc0/e$c;I)Lc0/e$c;
+    .locals 1
+
+    new-instance v0, Lx/k$a;
+
+    invoke-direct {v0}, Lx/k$a;-><init>()V
+
+    invoke-static {p1, p2, v0}, Lx/k;->e([Ljava/lang/Object;ILx/k$b;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lc0/e$c;
+
+    return-object p1
 .end method

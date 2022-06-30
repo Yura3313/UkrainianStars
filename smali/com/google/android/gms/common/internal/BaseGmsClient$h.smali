@@ -39,8 +39,8 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/common/internal/BaseGmsClient;Ljava/lang/Object;)V
-    .locals 0
+.method public constructor <init>(Lcom/google/android/gms/common/internal/BaseGmsClient;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT",
@@ -49,13 +49,15 @@
         }
     .end annotation
 
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
     .line 1
     iput-object p1, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$h;->c:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$h;->a:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$h;->a:Ljava/lang/Object;
 
     const/4 p1, 0x0
 

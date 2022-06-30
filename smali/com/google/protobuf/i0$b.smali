@@ -1,4 +1,4 @@
-.class public Lcom/google/protobuf/i0$b;
+.class public final Lcom/google/protobuf/i0$b;
 .super Ljava/lang/Object;
 .source "ManifestSchemaFactory.java"
 
@@ -36,7 +36,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Class;)Lcom/google/protobuf/o0;
+.method public final a(Ljava/lang/Class;)Lcom/google/protobuf/o0;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -84,11 +84,12 @@
 
     const-string v1, "No factory is available for message type: "
 
+    .line 5
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 5
+    .line 6
     invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p1
@@ -110,7 +111,7 @@
     goto :goto_1
 .end method
 
-.method public b(Ljava/lang/Class;)Z
+.method public final b(Ljava/lang/Class;)Z
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {

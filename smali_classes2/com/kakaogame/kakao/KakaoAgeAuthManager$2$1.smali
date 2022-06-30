@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/kakao/KakaoAgeAuthManager$2;Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/kakao/KakaoAgeAuthManager$2$1;->this$0:Lcom/kakaogame/kakao/KakaoAgeAuthManager$2;
 
     iput-object p2, p0, Lcom/kakaogame/kakao/KakaoAgeAuthManager$2$1;->val$activity:Landroid/app/Activity;
@@ -37,17 +36,17 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lae/i;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lie/h;
     .locals 0
 
-    invoke-static {p0, p1}, Lcom/kakaogame/kakao/KakaoAgeAuthManager$2$1;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lae/i;
+    invoke-static {p0, p1}, Lcom/kakaogame/kakao/KakaoAgeAuthManager$2$1;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lie/h;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lae/i;
+.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lie/h;
     .locals 3
 
     const-string v0, "KakaoAgeAuthManager"
@@ -120,7 +119,7 @@
 
     .line 10
     :goto_0
-    sget-object p0, Lae/i;->a:Lae/i;
+    sget-object p0, Lie/h;->a:Lie/h;
 
     return-object p0
 .end method
@@ -130,7 +129,6 @@
 .method public run()V
     .locals 8
 
-    .line 1
     invoke-static {}, Lcom/kakao/sdk/auth/AuthApiClient;->getInstance()Lcom/kakao/sdk/auth/AuthApiClient;
 
     move-result-object v0
@@ -161,7 +159,7 @@
 
     const/4 v6, 0x0
 
-    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/partner/auth/AuthApiClientKt;->verifyAge(Lcom/kakao/sdk/auth/AuthApiClient;Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lke/l;)V
+    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/partner/auth/AuthApiClientKt;->verifyAge(Lcom/kakao/sdk/auth/AuthApiClient;Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lre/l;)V
 
     return-void
 .end method

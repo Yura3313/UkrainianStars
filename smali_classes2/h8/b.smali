@@ -1,323 +1,80 @@
-.class public Lh8/b;
+.class public final Lh8/b;
 .super Ljava/lang/Object;
-.source "HSDateFormatSpec.java"
+.source "ExponentialBackoff.java"
 
 
-# static fields
-.field public static final a:Lcom/helpshift/util/o;
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lh8/b$a;
+    }
+.end annotation
 
-.field public static final b:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lcom/helpshift/util/o;",
-            ">;"
-        }
-    .end annotation
-.end field
+
+# instance fields
+.field public final a:J
+
+.field public final b:J
+
+.field public final c:F
+
+.field public final d:F
+
+.field public final e:I
+
+.field public final f:Ljava/security/SecureRandom;
+
+.field public g:J
+
+.field public h:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
-
-    .line 1
-    new-instance v0, Lcom/helpshift/util/o;
-
-    const-string v1, "yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'"
-
-    const-string v2, "GMT"
-
-    invoke-direct {v0, v1, v2}, Lcom/helpshift/util/o;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    sput-object v0, Lh8/b;->a:Lcom/helpshift/util/o;
-
-    .line 2
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    sput-object v0, Lh8/b;->b:Ljava/util/Map;
-
-    return-void
-.end method
-
-.method public static a(Lcom/helpshift/util/o;Ljava/lang/String;I)Ljava/lang/String;
-    .locals 5
-
-    .line 1
-    :try_start_0
-    invoke-virtual {p0, p1}, Lcom/helpshift/util/o;->b(Ljava/lang/String;)Ljava/util/Date;
-
-    move-result-object v0
-
-    .line 2
-    invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
-
-    move-result-object v1
-
-    .line 3
-    invoke-virtual {v1, v0}, Ljava/util/Calendar;->setTime(Ljava/util/Date;)V
-
-    .line 4
-    new-instance v0, Ljava/util/Date;
-
-    invoke-virtual {v1}, Ljava/util/Calendar;->getTimeInMillis()J
-
-    move-result-wide v1
-
-    int-to-long v3, p2
-
-    add-long/2addr v1, v3
-
-    invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
-
-    .line 5
-    invoke-virtual {p0, v0}, Lcom/helpshift/util/o;->a(Ljava/util/Date;)Ljava/lang/String;
-
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p0
-
-    :catch_0
-    move-exception p0
-
-    const-string p2, "Helpshift_DFSpec"
-
-    const-string v0, "Parsing exception on adding millisecond"
-
-    .line 6
-    invoke-static {p2, v0, p0}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    return-object p1
-.end method
-
-.method public static b(Ljava/lang/String;)J
-    .locals 2
-
-    .line 1
-    :try_start_0
-    sget-object v0, Lh8/b;->a:Lcom/helpshift/util/o;
-
-    invoke-virtual {v0, p0}, Lcom/helpshift/util/o;->b(Ljava/lang/String;)Ljava/util/Date;
-
-    move-result-object p0
-
-    .line 2
-    invoke-virtual {p0}, Ljava/util/Date;->getTime()J
-
-    move-result-wide v0
-    :try_end_0
-    .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p0
-
-    const-string v0, "Helpshift_DFSpec"
-
-    const-string v1, "Parsing exception on converting storageTimeFormat to epochTime"
-
-    .line 3
-    invoke-static {v0, v1, p0}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    const-wide/16 v0, -0x1
-
-    :goto_0
-    return-wide v0
-.end method
-
-.method public static c(Ld8/r;)Lcom/helpshift/util/a0;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ld8/r;",
-            ")",
-            "Lcom/helpshift/util/a0<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Long;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p0}, Lh8/b;->d(Ld8/r;)J
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p0
-
-    .line 2
-    new-instance v0, Ljava/util/Date;
-
-    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v1
-
-    invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
-
-    .line 3
-    sget-object v1, Lh8/b;->a:Lcom/helpshift/util/o;
-
-    invoke-virtual {v1, v0}, Lcom/helpshift/util/o;->a(Ljava/util/Date;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 4
-    new-instance v1, Lcom/helpshift/util/a0;
-
-    invoke-direct {v1, v0, p0}, Lcom/helpshift/util/a0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    return-object v1
-.end method
-
-.method public static d(Ld8/r;)J
+.method public constructor <init>(Lh8/b$a;)V
     .locals 4
 
     .line 1
-    check-cast p0, Ld8/j;
-
-    invoke-virtual {p0}, Ld8/j;->a()Le8/e;
-
-    move-result-object p0
-
-    check-cast p0, Ld8/i;
-
-    invoke-virtual {p0}, Ld8/i;->a()F
-
-    move-result p0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    iget-wide v0, p1, Lh8/b$a;->a:J
 
-    move-result-wide v0
-
-    const v2, -0x457ced91
-
-    cmpl-float v2, p0, v2
-
-    if-lez v2, :cond_0
-
-    const v2, 0x3a83126f
-
-    cmpg-float v2, p0, v2
-
-    if-gez v2, :cond_0
-
-    const-wide/16 v2, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const/high16 v2, 0x447a0000    # 1000.0f
-
-    mul-float p0, p0, v2
-
-    float-to-long v2, p0
-
-    :goto_0
-    add-long/2addr v0, v2
-
-    return-wide v0
-.end method
-
-.method public static e(Ljava/lang/String;Ljava/util/Locale;)Lcom/helpshift/util/o;
-    .locals 3
-
-    const-string v0, "_"
-
-    .line 1
-    invoke-static {p0, v0}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 2
-    sget-object v1, Lh8/b;->b:Ljava/util/Map;
-
-    check-cast v1, Ljava/util/HashMap;
-
-    invoke-virtual {v1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/helpshift/util/o;
-
-    if-nez v2, :cond_0
+    iput-wide v0, p0, Lh8/b;->a:J
 
     .line 3
-    new-instance v2, Lcom/helpshift/util/o;
+    iget-wide v2, p1, Lh8/b$a;->b:J
 
-    invoke-direct {v2, p0, p1}, Lcom/helpshift/util/o;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
-
-    .line 4
-    invoke-virtual {v1, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_0
-    return-object v2
-.end method
-
-.method public static f(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;)Lcom/helpshift/util/o;
-    .locals 3
-
-    const-string v0, "_"
-
-    .line 1
-    invoke-static {p0, v0}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p1}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 2
-    sget-object v1, Lh8/b;->b:Ljava/util/Map;
-
-    check-cast v1, Ljava/util/HashMap;
-
-    invoke-virtual {v1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/helpshift/util/o;
-
-    if-nez v2, :cond_0
-
-    .line 3
-    new-instance v2, Lcom/helpshift/util/o;
-
-    invoke-direct {v2, p0, p1, p2}, Lcom/helpshift/util/o;-><init>(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;)V
+    iput-wide v2, p0, Lh8/b;->b:J
 
     .line 4
-    invoke-virtual {v1, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget v2, p1, Lh8/b$a;->c:F
 
-    :cond_0
-    return-object v2
+    iput v2, p0, Lh8/b;->c:F
+
+    .line 5
+    iget v2, p1, Lh8/b$a;->d:F
+
+    iput v2, p0, Lh8/b;->d:F
+
+    .line 6
+    iget p1, p1, Lh8/b$a;->e:I
+
+    iput p1, p0, Lh8/b;->e:I
+
+    .line 7
+    new-instance p1, Ljava/security/SecureRandom;
+
+    invoke-direct {p1}, Ljava/security/SecureRandom;-><init>()V
+
+    iput-object p1, p0, Lh8/b;->f:Ljava/security/SecureRandom;
+
+    .line 8
+    iput-wide v0, p0, Lh8/b;->g:J
+
+    const/4 p1, 0x0
+
+    .line 9
+    iput p1, p0, Lh8/b;->h:I
+
+    return-void
 .end method

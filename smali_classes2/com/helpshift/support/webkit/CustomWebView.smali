@@ -11,7 +11,7 @@
     invoke-direct {p0, p1, p2}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 2
-    invoke-virtual {p0}, Landroid/webkit/WebView;->isInEditMode()Z
+    invoke-virtual {p0}, Landroid/view/View;->isInEditMode()Z
 
     move-result p1
 

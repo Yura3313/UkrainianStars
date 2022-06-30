@@ -30,38 +30,36 @@
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 14
 
-    const/4 v0, 0x0
+    const-string v0, "in"
 
-    if-eqz p1, :cond_8
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v12, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;
+    new-instance v0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
+    const/4 v2, 0x0
+
     if-eqz v1, :cond_0
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
-    move-result-wide v1
+    move-result-wide v3
 
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v1
 
-    move-object v2, v1
+    move-object v3, v1
 
     goto :goto_0
 
     :cond_0
-    move-object v2, v0
+    move-object v3, v2
 
     :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v3
-
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v4
@@ -70,22 +68,26 @@
 
     move-result-object v5
 
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v6
+
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    const/4 v6, 0x1
+    const/4 v7, 0x1
 
-    const/4 v7, 0x0
+    const/4 v8, 0x0
 
     if-eqz v1, :cond_1
 
-    const/4 v8, 0x1
+    const/4 v9, 0x1
 
     goto :goto_1
 
     :cond_1
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
     :goto_1
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -96,18 +98,18 @@
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
-    move-result-wide v9
+    move-result-wide v10
 
-    invoke-static {v9, v10}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v1
 
-    move-object v9, v1
+    move-object v10, v1
 
     goto :goto_2
 
     :cond_2
-    move-object v9, v0
+    move-object v10, v2
 
     :goto_2
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -134,12 +136,12 @@
 
     move-result-object v1
 
-    move-object v10, v1
+    move-object v11, v1
 
     goto :goto_4
 
     :cond_4
-    move-object v10, v0
+    move-object v11, v2
 
     :goto_4
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -156,12 +158,12 @@
 
     check-cast v1, Lcom/kakao/sdk/partner/talk/model/FriendRelation;
 
-    move-object v11, v1
+    move-object v12, v1
 
     goto :goto_5
 
     :cond_5
-    move-object v11, v0
+    move-object v12, v2
 
     :goto_5
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -183,39 +185,44 @@
     goto :goto_6
 
     :cond_6
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
     :goto_6
-    invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object v0
+    move-result-object p1
+
+    goto :goto_7
 
     :cond_7
-    move-object v1, v12
+    move-object p1, v2
 
-    move v6, v8
+    :goto_7
+    move-object v1, v0
 
-    move-object v7, v9
+    move-object v2, v3
 
-    move-object v8, v10
+    move-object v3, v4
 
-    move-object v9, v11
+    move-object v4, v5
+
+    move-object v5, v6
+
+    move v6, v9
+
+    move-object v7, v10
+
+    move-object v8, v11
+
+    move-object v9, v12
 
     move-object v10, v13
 
-    move-object v11, v0
+    move-object v11, p1
 
     invoke-direct/range {v1 .. v11}, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;-><init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Long;Ljava/lang/Boolean;Lcom/kakao/sdk/partner/talk/model/FriendRelation;Ljava/lang/String;Ljava/lang/Boolean;)V
 
-    return-object v12
-
-    :cond_8
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

@@ -1,4 +1,4 @@
-.class public Lcom/google/protobuf/c0$c;
+.class public final Lcom/google/protobuf/c0$c;
 .super Ljava/lang/Object;
 .source "LazyField.java"
 
@@ -32,7 +32,7 @@
 
 
 # instance fields
-.field public g:Ljava/util/Iterator;
+.field public f:Ljava/util/Iterator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Iterator<",
@@ -63,18 +63,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/protobuf/c0$c;->g:Ljava/util/Iterator;
+    iput-object p1, p0, Lcom/google/protobuf/c0$c;->f:Ljava/util/Iterator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public hasNext()Z
+.method public final hasNext()Z
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/protobuf/c0$c;->g:Ljava/util/Iterator;
+    iget-object v0, p0, Lcom/google/protobuf/c0$c;->f:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -83,11 +82,11 @@
     return v0
 .end method
 
-.method public next()Ljava/lang/Object;
+.method public final next()Ljava/lang/Object;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/c0$c;->g:Ljava/util/Iterator;
+    iget-object v0, p0, Lcom/google/protobuf/c0$c;->f:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -117,11 +116,10 @@
     return-object v0
 .end method
 
-.method public remove()V
+.method public final remove()V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/protobuf/c0$c;->g:Ljava/util/Iterator;
+    iget-object v0, p0, Lcom/google/protobuf/c0$c;->f:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 

@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.client.IAdClickListener"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,7 +19,7 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -38,9 +37,9 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzuv;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzuv;->g:Lj3/a51;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzuv;->f:Lk3/s41;
 
-    invoke-interface {p1}, Lj3/a51;->o()V
+    invoke-interface {p1}, Lk3/s41;->q()V
 
     .line 3
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V

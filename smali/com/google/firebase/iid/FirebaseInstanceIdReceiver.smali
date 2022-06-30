@@ -3,13 +3,13 @@
 
 
 # static fields
-.field public static c:Lw5/y;
+.field public static c:Ly5/y;
     .annotation build Ljavax/annotation/concurrent/GuardedBy;
         value = "FirebaseInstanceIdReceiver.class"
     .end annotation
 .end field
 
-.field public static d:Lw5/y;
+.field public static d:Ly5/y;
     .annotation build Ljavax/annotation/concurrent/GuardedBy;
         value = "FirebaseInstanceIdReceiver.class"
     .end annotation
@@ -20,14 +20,13 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/legacy/content/WakefulBroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
-.method public static f(Landroid/content/BroadcastReceiver;Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;)I
-    .locals 3
+.method public static f(Landroid/content/BroadcastReceiver;Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;)V
+    .locals 2
 
     const-string v0, "FirebaseInstanceId"
 
@@ -43,17 +42,13 @@
     const-string v0, "Binding to service: "
 
     .line 2
-    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
 
-    move-result-object v1
+    move-result v1
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    if-eqz v1, :cond_0
 
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 3
     :cond_0
@@ -75,30 +70,30 @@
     monitor-enter v0
 
     :try_start_0
-    const-string v2, "com.google.firebase.MESSAGING_EVENT"
+    const-string v1, "com.google.firebase.MESSAGING_EVENT"
 
     .line 6
-    invoke-virtual {v2, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_3
+    if-eqz v1, :cond_3
 
     .line 7
-    sget-object v2, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->d:Lw5/y;
+    sget-object v1, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->d:Ly5/y;
 
-    if-nez v2, :cond_2
+    if-nez v1, :cond_2
 
     .line 8
-    new-instance v2, Lw5/y;
+    new-instance v1, Ly5/y;
 
-    invoke-direct {v2, p1, p2}, Lw5/y;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v1, p1, p2}, Ly5/y;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    sput-object v2, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->d:Lw5/y;
+    sput-object v1, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->d:Ly5/y;
 
     .line 9
     :cond_2
-    sget-object p1, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->d:Lw5/y;
+    sget-object p1, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->d:Ly5/y;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -109,20 +104,20 @@
     .line 10
     :cond_3
     :try_start_1
-    sget-object v2, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->c:Lw5/y;
+    sget-object v1, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->c:Ly5/y;
 
-    if-nez v2, :cond_4
+    if-nez v1, :cond_4
 
     .line 11
-    new-instance v2, Lw5/y;
+    new-instance v1, Ly5/y;
 
-    invoke-direct {v2, p1, p2}, Lw5/y;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v1, p1, p2}, Ly5/y;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    sput-object v2, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->c:Lw5/y;
+    sput-object v1, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->c:Ly5/y;
 
     .line 12
     :cond_4
-    sget-object p1, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->c:Lw5/y;
+    sget-object p1, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->c:Ly5/y;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -134,9 +129,9 @@
 
     move-result-object p0
 
-    invoke-virtual {p1, p3, p0}, Lw5/y;->a(Landroid/content/Intent;Landroid/content/BroadcastReceiver$PendingResult;)V
+    invoke-virtual {p1, p3, p0}, Ly5/y;->a(Landroid/content/Intent;Landroid/content/BroadcastReceiver$PendingResult;)V
 
-    return v1
+    return-void
 
     :catchall_0
     move-exception p0
@@ -150,7 +145,7 @@
 
 # virtual methods
 .method public final e(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;)V
-    .locals 9
+    .locals 10
 
     const/4 v0, 0x0
 
@@ -219,7 +214,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_4
+    if-nez v1, :cond_5
 
     const-string v1, "com.google.firebase.INSTANCE_ID_EVENT"
 
@@ -229,7 +224,7 @@
 
     if-eqz v1, :cond_2
 
-    goto :goto_0
+    goto :goto_1
 
     :cond_2
     const-string v1, "com.google.android.c2dm.intent.RECEIVE"
@@ -239,7 +234,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_3
+    if-nez v1, :cond_4
 
     const-string v1, "com.google.firebase.MESSAGING_EVENT"
 
@@ -248,333 +243,344 @@
 
     move-result p3
 
-    if-eqz p3, :cond_5
+    if-eqz p3, :cond_3
+
+    goto :goto_0
 
     :cond_3
-    const-string v0, "com.google.firebase.MESSAGING_EVENT"
+    move-object p3, v0
 
-    goto :goto_1
+    goto :goto_2
 
     :cond_4
     :goto_0
-    const-string v0, "com.google.firebase.INSTANCE_ID_EVENT"
+    const-string p3, "com.google.firebase.MESSAGING_EVENT"
+
+    goto :goto_2
 
     :cond_5
     :goto_1
-    const/4 p3, -0x1
+    const-string p3, "com.google.firebase.INSTANCE_ID_EVENT"
 
-    if-eqz v0, :cond_17
+    :goto_2
+    const/4 v1, -0x1
+
+    if-eqz p3, :cond_17
 
     .line 12
-    invoke-static {}, Lk2/m;->c()Z
+    invoke-static {}, Ll2/j;->c()Z
 
-    move-result v1
+    move-result v3
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    if-eqz v1, :cond_6
+    if-eqz v3, :cond_6
 
     .line 13
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
-    move-result-object v1
+    move-result-object v3
 
-    iget v1, v1, Landroid/content/pm/ApplicationInfo;->targetSdkVersion:I
+    iget v3, v3, Landroid/content/pm/ApplicationInfo;->targetSdkVersion:I
 
-    const/16 v4, 0x1a
+    const/16 v5, 0x1a
 
-    if-lt v1, v4, :cond_6
+    if-lt v3, v5, :cond_6
 
-    const/4 v1, 0x1
-
-    goto :goto_2
-
-    :cond_6
-    const/4 v1, 0x0
-
-    .line 14
-    :goto_2
-    invoke-virtual {p2}, Landroid/content/Intent;->getFlags()I
-
-    move-result v4
-
-    const/high16 v5, 0x10000000
-
-    and-int/2addr v4, v5
-
-    if-eqz v4, :cond_7
+    const/4 v3, 0x1
 
     goto :goto_3
 
-    :cond_7
+    :cond_6
     const/4 v3, 0x0
 
+    .line 14
     :goto_3
-    if-eqz v1, :cond_8
-
-    if-nez v3, :cond_8
-
-    .line 15
-    invoke-static {p0, p1, v0, p2}, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->f(Landroid/content/BroadcastReceiver;Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;)I
-
-    goto/16 :goto_b
-
-    .line 16
-    :cond_8
-    invoke-static {}, Lw5/o;->b()Lw5/o;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const-string v3, "FirebaseInstanceId"
-
-    const/4 v4, 0x3
-
-    .line 17
-    invoke-static {v3, v4}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_9
-
-    const-string v3, "Starting service: "
-
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    invoke-virtual {p2}, Landroid/content/Intent;->getFlags()I
 
     move-result v5
 
-    if-eqz v5, :cond_9
+    const/high16 v6, 0x10000000
 
-    invoke-virtual {v3, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    and-int/2addr v5, v6
+
+    if-eqz v5, :cond_7
+
+    goto :goto_4
+
+    :cond_7
+    const/4 v4, 0x0
+
+    :goto_4
+    if-eqz v3, :cond_8
+
+    if-nez v4, :cond_8
+
+    .line 15
+    invoke-static {p0, p1, p3, p2}, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->f(Landroid/content/BroadcastReceiver;Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;)V
+
+    goto/16 :goto_c
+
+    .line 16
+    :cond_8
+    invoke-static {}, Ly5/o;->b()Ly5/o;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const-string v4, "FirebaseInstanceId"
+
+    const/4 v5, 0x3
+
+    .line 17
+    invoke-static {v4, v5}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_9
+
+    const-string v4, "Starting service: "
+
+    .line 18
+    invoke-virtual {p3}, Ljava/lang/String;->length()I
+
+    move-result v6
+
+    if-eqz v6, :cond_9
+
+    invoke-virtual {v4, p3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     :cond_9
-    const-string v3, "com.google.firebase.INSTANCE_ID_EVENT"
+    const-string v4, "com.google.firebase.INSTANCE_ID_EVENT"
 
     .line 19
-    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v3
+    move-result v4
 
-    const/16 v5, 0x192
+    const/16 v6, 0x192
 
-    if-nez v3, :cond_c
+    if-nez v4, :cond_c
 
-    const-string v3, "com.google.firebase.MESSAGING_EVENT"
+    const-string v4, "com.google.firebase.MESSAGING_EVENT"
 
-    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v3
+    move-result v4
 
-    if-nez v3, :cond_b
+    if-nez v4, :cond_b
 
-    const-string p3, "Unknown service action: "
+    const-string v0, "Unknown service action: "
 
     .line 20
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    invoke-virtual {p3}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-eqz v1, :cond_a
 
-    invoke-virtual {p3, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     :cond_a
-    const/16 p3, 0x1f4
+    const/16 v0, 0x1f4
 
-    goto/16 :goto_a
+    const/16 v1, 0x1f4
+
+    goto/16 :goto_b
 
     .line 21
     :cond_b
-    iget-object v3, v1, Lw5/o;->e:Ljava/util/Queue;
+    iget-object v4, v3, Ly5/o;->e:Ljava/util/ArrayDeque;
 
-    invoke-interface {v3, p2}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
+    invoke-interface {v4, p2}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
 
-    goto :goto_4
+    goto :goto_5
 
     .line 22
     :cond_c
-    iget-object v3, v1, Lw5/o;->d:Ljava/util/Queue;
+    iget-object v4, v3, Ly5/o;->d:Ljava/util/ArrayDeque;
 
-    invoke-interface {v3, p2}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
+    invoke-interface {v4, p2}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
 
     .line 23
-    :goto_4
-    new-instance v3, Landroid/content/Intent;
+    :goto_5
+    new-instance v4, Landroid/content/Intent;
 
-    invoke-direct {v3, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, p3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 24
     invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v3, v6}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v4, v7}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 25
-    iget-object v6, v1, Lw5/o;->a:Lm/g;
+    iget-object v7, v3, Ly5/o;->a:Lm/g;
 
-    monitor-enter v6
+    monitor-enter v7
 
     .line 26
     :try_start_0
-    iget-object v7, v1, Lw5/o;->a:Lm/g;
+    iget-object v8, v3, Ly5/o;->a:Lm/g;
 
-    invoke-virtual {v3}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    invoke-virtual {v4}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    move-result-object v8
-
-    invoke-virtual {v7, v8}, Lm/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ljava/lang/String;
+    move-result-object v9
 
     .line 27
-    monitor-exit v6
+    invoke-virtual {v8, v9, v0}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 28
+    check-cast v0, Ljava/lang/String;
+
+    .line 29
+    monitor-exit v7
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    if-nez v7, :cond_12
-
-    .line 28
-    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v3, v2}, Landroid/content/pm/PackageManager;->resolveService(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_14
-
-    .line 29
-    iget-object v2, v2, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
-
-    if-nez v2, :cond_d
-
-    goto/16 :goto_8
+    if-nez v0, :cond_12
 
     .line 30
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v4, v2}, Landroid/content/pm/PackageManager;->resolveService(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_14
+
+    .line 31
+    iget-object v0, v0, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
+
+    if-nez v0, :cond_d
+
+    goto/16 :goto_9
+
+    .line 32
     :cond_d
     invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v2
 
-    iget-object v7, v2, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+    iget-object v7, v0, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
 
-    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_11
-
-    iget-object v6, v2, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
-
-    if-nez v6, :cond_e
-
-    goto :goto_6
-
-    :cond_e
-    const-string v2, "."
-
-    .line 31
-    invoke-virtual {v6, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-virtual {v2, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_10
+    if-eqz v2, :cond_11
+
+    iget-object v2, v0, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
+
+    if-nez v2, :cond_e
+
+    goto :goto_7
+
+    :cond_e
+    const-string v0, "."
+
+    .line 33
+    invoke-virtual {v2, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_10
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v0
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v0
 
-    invoke-virtual {v6}, Ljava/lang/String;->length()I
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     move-result v7
 
     if-eqz v7, :cond_f
 
-    invoke-virtual {v2, v6}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v0
 
-    move-object v7, v2
-
-    goto :goto_5
+    goto :goto_6
 
     :cond_f
-    new-instance v6, Ljava/lang/String;
+    new-instance v2, Ljava/lang/String;
 
-    invoke-direct {v6, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
     :cond_10
-    move-object v7, v6
+    move-object v0, v2
 
-    .line 32
-    :goto_5
-    iget-object v6, v1, Lw5/o;->a:Lm/g;
+    .line 34
+    :goto_6
+    iget-object v2, v3, Ly5/o;->a:Lm/g;
 
-    monitor-enter v6
+    monitor-enter v2
 
-    .line 33
+    .line 35
     :try_start_1
-    iget-object v2, v1, Lw5/o;->a:Lm/g;
+    iget-object v7, v3, Ly5/o;->a:Lm/g;
 
-    invoke-virtual {v3}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    invoke-virtual {v4}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v8
 
-    invoke-virtual {v2, v8, v7}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v7, v8, v0}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 34
-    monitor-exit v6
+    .line 36
+    monitor-exit v2
 
-    goto :goto_7
+    goto :goto_8
 
     :catchall_0
     move-exception p1
 
-    monitor-exit v6
+    monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
 
-    .line 35
+    .line 37
     :cond_11
-    :goto_6
-    iget-object v4, v2, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+    :goto_7
+    iget-object v2, v0, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
 
-    iget-object v2, v2, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
+    iget-object v0, v0, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
 
-    const/16 v6, 0x5e
+    const/16 v5, 0x5e
 
-    invoke-static {v4, v6}, La1/e;->a(Ljava/lang/String;I)I
-
-    move-result v4
-
-    invoke-static {v2, v4}, La1/e;->a(Ljava/lang/String;I)I
+    .line 38
+    invoke-static {v2, v5}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v2
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    invoke-static {v0, v2}, La1/e;->a(Ljava/lang/String;I)I
 
-    invoke-direct {v4, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+    move-result v0
 
-    goto :goto_8
+    .line 39
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    goto :goto_9
 
     :cond_12
-    :goto_7
+    :goto_8
     const-string v2, "FirebaseInstanceId"
 
-    .line 36
-    invoke-static {v2, v4}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    .line 40
+    invoke-static {v2, v5}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v2
 
@@ -582,125 +588,131 @@
 
     const-string v2, "Restricting intent to a specific service: "
 
-    .line 37
-    invoke-static {v7}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 41
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4}, Ljava/lang/String;->length()I
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
 
-    move-result v6
+    move-result v7
 
-    if-eqz v6, :cond_13
+    if-eqz v7, :cond_13
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v5}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 38
+    .line 42
     :cond_13
     invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v3, v2, v7}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v4, v2, v0}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 39
+    .line 43
     :cond_14
-    :goto_8
+    :goto_9
     :try_start_2
-    invoke-virtual {v1, p1}, Lw5/o;->c(Landroid/content/Context;)Z
+    invoke-virtual {v3, p1}, Ly5/o;->c(Landroid/content/Context;)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_15
+    if-eqz v0, :cond_15
 
-    .line 40
-    invoke-static {p1, v3}, Landroidx/legacy/content/WakefulBroadcastReceiver;->d(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/ComponentName;
+    .line 44
+    invoke-static {p1, v4}, Landroidx/legacy/content/WakefulBroadcastReceiver;->d(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    move-result-object v1
+    move-result-object v0
 
-    goto :goto_9
+    goto :goto_a
 
-    .line 41
+    .line 45
     :cond_15
-    invoke-virtual {p1, v3}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {p1, v4}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    move-result-object v1
+    move-result-object v0
     :try_end_2
     .catch Ljava/lang/SecurityException; {:try_start_2 .. :try_end_2} :catch_1
     .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_0
 
-    :goto_9
-    if-nez v1, :cond_16
+    :goto_a
+    if-nez v0, :cond_16
 
-    const/16 p3, 0x194
+    const/16 v0, 0x194
 
-    goto :goto_a
+    const/16 v1, 0x194
+
+    goto :goto_b
 
     :catch_0
-    move-exception p3
+    move-exception v0
 
-    .line 42
-    invoke-static {p3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 46
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object p3
+    move-result-object v0
 
-    invoke-virtual {p3}, Ljava/lang/String;->length()I
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    move-result p3
+    move-result v0
 
-    add-int/lit8 p3, p3, 0x2d
+    add-int/lit8 v0, v0, 0x2d
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, p3}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const/16 p3, 0x192
+    const/16 v0, 0x192
 
-    goto :goto_a
-
-    :catch_1
-    const/16 p3, 0x191
-
-    .line 43
-    :cond_16
-    :goto_a
-    invoke-static {}, Lk2/m;->c()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_17
-
-    if-ne p3, v5, :cond_17
-
-    .line 44
-    invoke-static {p0, p1, v0, p2}, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->f(Landroid/content/BroadcastReceiver;Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;)I
-
-    const/16 p3, 0x193
+    const/16 v1, 0x192
 
     goto :goto_b
+
+    :catch_1
+    const/16 v0, 0x191
+
+    const/16 v1, 0x191
+
+    .line 47
+    :cond_16
+    :goto_b
+    invoke-static {}, Ll2/j;->c()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_17
+
+    if-ne v1, v6, :cond_17
+
+    .line 48
+    invoke-static {p0, p1, p3, p2}, Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->f(Landroid/content/BroadcastReceiver;Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;)V
+
+    const/16 v1, 0x193
+
+    goto :goto_c
 
     :catchall_1
     move-exception p1
 
-    .line 45
+    .line 49
     :try_start_3
-    monitor-exit v6
+    monitor-exit v7
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     throw p1
 
-    .line 46
+    .line 50
     :cond_17
-    :goto_b
+    :goto_c
     invoke-virtual {p0}, Landroid/content/BroadcastReceiver;->isOrderedBroadcast()Z
 
     move-result p1
 
     if-eqz p1, :cond_18
 
-    .line 47
-    invoke-virtual {p0, p3}, Landroid/content/BroadcastReceiver;->setResultCode(I)V
+    .line 51
+    invoke-virtual {p0, v1}, Landroid/content/BroadcastReceiver;->setResultCode(I)V
 
     :cond_18
     return-void

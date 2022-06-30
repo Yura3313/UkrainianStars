@@ -1,4 +1,4 @@
-.class public Landroidx/core/app/FrameMetricsAggregator$a$a;
+.class public final Landroidx/core/app/FrameMetricsAggregator$a$a;
 .super Ljava/lang/Object;
 .source "FrameMetricsAggregator.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroidx/core/app/FrameMetricsAggregator$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/core/app/FrameMetricsAggregator$a$a;->a:Landroidx/core/app/FrameMetricsAggregator$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public onFrameMetricsAvailable(Landroid/view/Window;Landroid/view/FrameMetrics;I)V
+.method public final onFrameMetricsAvailable(Landroid/view/Window;Landroid/view/FrameMetrics;I)V
     .locals 8
 
     .line 1

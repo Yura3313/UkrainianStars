@@ -17,7 +17,7 @@
 
     const/4 v0, 0x0
 
-    .line 1
+    .line 9
     invoke-direct {p0, p1, v0}, Lio/sentry/exception/InvalidSentryTraceHeaderException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
@@ -28,11 +28,12 @@
 
     const-string v0, "sentry-trace header does not conform to expected format: "
 
-    .line 2
-    invoke-static {v0, p1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 1
+    invoke-static {v0, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 2
     invoke-direct {p0, v0, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 3
@@ -46,7 +47,6 @@
 .method public getSentryTraceHeader()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/exception/InvalidSentryTraceHeaderException;->sentryTraceHeader:Ljava/lang/String;
 
     return-object v0

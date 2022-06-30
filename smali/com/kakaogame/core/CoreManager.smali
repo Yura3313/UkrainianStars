@@ -274,7 +274,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/core/CoreManager;)Lcom/kakaogame/player/LocalPlayer;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/core/CoreManager;->localPlayer:Lcom/kakaogame/player/LocalPlayer;
 
     return-object p0
@@ -283,7 +282,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/core/CoreManager;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/core/CoreManager;->onlineNotificationId:Ljava/lang/String;
 
     return-object p0
@@ -292,7 +290,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/core/CoreManager;)Landroid/app/Activity;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/core/CoreManager;->activity:Landroid/app/Activity;
 
     return-object p0
@@ -301,7 +298,6 @@
 .method public static synthetic access$300(Lcom/kakaogame/core/CoreManager;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/core/CoreManager;->requestInfodesk()V
 
     return-void
@@ -310,7 +306,6 @@
 .method public static synthetic access$400(Lcom/kakaogame/core/CoreManager;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/core/CoreManager;->pauseInternal()V
 
     return-void
@@ -402,7 +397,7 @@
     if-eqz v2, :cond_0
 
     .line 4
-    invoke-interface {v2, v1}, Ljava/util/concurrent/ScheduledFuture;->cancel(Z)Z
+    invoke-interface {v2, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     const/4 v1, 0x0
 
@@ -417,7 +412,7 @@
     move-exception v1
 
     .line 6
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -431,12 +426,24 @@
 .method private static getFirebase(Ljava/lang/String;)Lcom/kakaogame/log/IFirebase;
     .locals 3
 
-    const-string v0, "getFirebase: "
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "getFirebase: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
 
     const-string v1, "CoreManager"
 
-    .line 1
-    invoke-static {v0, p0, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     :try_start_0
@@ -481,7 +488,6 @@
 .method public static getInstance()Lcom/kakaogame/core/CoreManager;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/core/CoreManager;->instance:Lcom/kakaogame/core/CoreManager;
 
     return-object v0
@@ -543,7 +549,7 @@
 
     iget-object v1, p0, Lcom/kakaogame/core/CoreManager;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1582,7 +1588,7 @@
     const-string v1, "CoreManager"
 
     .line 8
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -2685,7 +2691,7 @@
     move-exception v1
 
     .line 6
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -2817,7 +2823,8 @@
 
     move-result-object p2
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 4
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -2973,7 +2980,7 @@
     const/16 v1, 0xfa1
 
     .line 13
-    invoke-static {p2, v0, p2, v1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p2, v0, p2, v1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p2
 
@@ -3089,7 +3096,7 @@
     const/16 p2, 0xfa1
 
     .line 9
-    invoke-static {p1, v0, p1, p2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, v0, p1, p2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -3527,7 +3534,7 @@
     const/16 v0, 0xfa1
 
     .line 18
-    invoke-static {p1, p2, p1, v0}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, p2, p1, v0}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -3611,7 +3618,6 @@
 .method public getActivity()Landroid/app/Activity;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->activity:Landroid/app/Activity;
 
     return-object v0
@@ -3662,7 +3668,6 @@
 .method public getAuthData()Lcom/kakaogame/idp/IdpAccount;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/auth/AuthDataManager;->getAccount()Lcom/kakaogame/idp/IdpAccount;
 
     move-result-object v0
@@ -3673,7 +3678,6 @@
 .method public getConfiguration()Lcom/kakaogame/config/Configuration;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->configuration:Lcom/kakaogame/config/Configuration;
 
     return-object v0
@@ -3682,7 +3686,6 @@
 .method public getContext()Landroid/content/Context;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->activity:Landroid/app/Activity;
 
     return-object v0
@@ -3712,7 +3715,6 @@
 .method public getInfodesk()Lcom/kakaogame/infodesk/InfodeskData;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->infodesk:Lcom/kakaogame/infodesk/InfodeskData;
 
     return-object v0
@@ -3743,7 +3745,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->marketRefundInfoList:Ljava/util/List;
 
     return-object v0
@@ -3752,7 +3753,6 @@
 .method public getPlayer()Lcom/kakaogame/player/LocalPlayer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->localPlayer:Lcom/kakaogame/player/LocalPlayer;
 
     return-object v0
@@ -3836,7 +3836,7 @@
     const-string v2, "_"
 
     .line 4
-    invoke-static {v1, v2, v0}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4300,7 +4300,7 @@
     const/16 v1, 0xfa1
 
     .line 10
-    invoke-static {p1, v0, p1, v1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -4541,7 +4541,7 @@
     const/16 p2, 0xfa1
 
     .line 23
-    invoke-static {p1, v0, p1, p2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, v0, p1, p2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -4648,7 +4648,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     invoke-virtual {p1}, Lcom/kakaogame/KGResult;->getCode()I
 
@@ -4697,7 +4696,6 @@
 .method public isAuthorized()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->coreState:Lcom/kakaogame/core/CoreManager$CoreState;
 
     sget-object v1, Lcom/kakaogame/core/CoreManager$CoreState;->LOGIN:Lcom/kakaogame/core/CoreManager$CoreState;
@@ -4741,7 +4739,6 @@
 .method public isGameShopPaymentOnly()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/core/CoreManager;->isGameShopPaymentOnly:Z
 
     return v0
@@ -4750,7 +4747,6 @@
 .method public isKakaoCacheMode()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/core/CoreManager;->kakaoCacheMode:Z
 
     return v0
@@ -4759,7 +4755,6 @@
 .method public isPaused()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/core/CoreManager;->paused:Z
 
     return v0
@@ -4768,7 +4763,6 @@
 .method public isStarted()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->coreState:Lcom/kakaogame/core/CoreManager$CoreState;
 
     sget-object v1, Lcom/kakaogame/core/CoreManager$CoreState;->START:Lcom/kakaogame/core/CoreManager$CoreState;
@@ -4796,7 +4790,6 @@
 .method public isUnity()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/core/CoreManager;->isUnity:Z
 
     return v0
@@ -4918,7 +4911,7 @@
     const/16 v1, 0xfa1
 
     .line 17
-    invoke-static {p1, v0, p1, v1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -5049,7 +5042,7 @@
     const/16 v2, 0xfa1
 
     .line 13
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -5061,7 +5054,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lcom/kakaogame/core/CoreManager;->kakaoCacheMode:Z
 
     return-void
@@ -5070,7 +5062,6 @@
 .method public onCustomUICallback(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->customUIManager:Lcom/kakaogame/ui/CustomUIManager;
 
     invoke-virtual {v0, p1}, Lcom/kakaogame/ui/CustomUIManager;->onCustomUICallbackOnUnity(Ljava/lang/String;)V
@@ -5300,7 +5291,7 @@
     const/16 v2, 0xfa1
 
     .line 6
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -5312,7 +5303,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->eventListeners:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -5448,7 +5438,7 @@
     const/16 v2, 0xfa1
 
     .line 8
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -5642,7 +5632,7 @@
     const/16 p2, 0xfa1
 
     .line 10
-    invoke-static {p1, v0, p1, p2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p1, v0, p1, p2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -5875,7 +5865,7 @@
     const/16 v2, 0xfa1
 
     .line 20
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -5935,7 +5925,7 @@
     const/16 v2, 0xfa1
 
     .line 4
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -6204,7 +6194,8 @@
 
     move-result-object p2
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -6226,7 +6217,6 @@
 .method public setActivity(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/CoreManager;->activity:Landroid/app/Activity;
 
     return-void
@@ -6235,7 +6225,6 @@
 .method public setCaptureDialog(Lcom/kakaogame/promotion/share/ScreenShotDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/CoreManager;->captureDialog:Lcom/kakaogame/promotion/share/ScreenShotDialog;
 
     return-void
@@ -6244,7 +6233,6 @@
 .method public setConfiguration(Lcom/kakaogame/config/Configuration;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/CoreManager;->configuration:Lcom/kakaogame/config/Configuration;
 
     return-void
@@ -6255,7 +6243,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/kakaogame/core/CoreManager;->isGameShopPaymentOnly:Z
 
     return-void
@@ -6290,7 +6277,7 @@
     const-string v1, "CoreManager"
 
     .line 3
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     if-nez p1, :cond_1
 
@@ -6315,7 +6302,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/CoreManager;->marketRefundInfoList:Ljava/util/List;
 
     return-void
@@ -6402,7 +6388,8 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 5
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -6462,7 +6449,8 @@
 
     move-result-object p2
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 4
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -6492,10 +6480,11 @@
     const-string v3, ", interval: "
 
     .line 1
-    invoke-static {v1, p1, v2, p2, v3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, p1, v2, p2, v3}, Lcom/kakaogame/c;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 2
     invoke-virtual {v1, p3, p4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     const-string v2, ", endTime: "
@@ -6510,18 +6499,18 @@
 
     invoke-static {v0, v1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->onlineAlarmLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 3
+    .line 4
     :try_start_0
     iget-object v1, p0, Lcom/kakaogame/core/CoreManager;->onlineAlarmTimer:Lcom/kakaogame/core/TimerManager;
 
     if-eqz v1, :cond_1
 
-    .line 4
+    .line 5
     iget-object v1, p0, Lcom/kakaogame/core/CoreManager;->onlineNotificationId:Ljava/lang/String;
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
@@ -6534,30 +6523,30 @@
 
     const-string p2, "startOnlineAlarmTimer: Already started."
 
-    .line 5
+    .line 6
     invoke-static {p1, p2}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
+    .line 7
     monitor-exit v0
 
     return-void
 
-    .line 7
+    .line 8
     :cond_0
     iget-object v1, p0, Lcom/kakaogame/core/CoreManager;->onlineNotificationId:Ljava/lang/String;
 
     invoke-virtual {p0, v1}, Lcom/kakaogame/core/CoreManager;->stopOnlineAlarmTimer(Ljava/lang/String;)V
 
-    .line 8
+    .line 9
     :cond_1
     iput-object p1, p0, Lcom/kakaogame/core/CoreManager;->onlineNotificationId:Ljava/lang/String;
 
-    .line 9
+    .line 10
     new-instance v2, Lcom/kakaogame/core/CoreManager$3;
 
     invoke-direct {v2, p0, p7, p8, p2}, Lcom/kakaogame/core/CoreManager$3;-><init>(Lcom/kakaogame/core/CoreManager;JLjava/lang/String;)V
 
-    .line 10
+    .line 11
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object p1
@@ -6582,12 +6571,12 @@
 
     if-gez p1, :cond_3
 
-    .line 11
+    .line 12
     iget-object p1, p0, Lcom/kakaogame/core/CoreManager;->activity:Landroid/app/Activity;
 
     invoke-static {p1, p2}, Lcom/kakaogame/push/OnlinePushManager;->showToast(Landroid/app/Activity;Ljava/lang/String;)V
 
-    .line 12
+    .line 13
     :cond_3
     new-instance p1, Lcom/kakaogame/core/TimerManager;
 
@@ -6599,10 +6588,10 @@
 
     iput-object p1, p0, Lcom/kakaogame/core/CoreManager;->onlineAlarmTimer:Lcom/kakaogame/core/TimerManager;
 
-    .line 13
+    .line 14
     invoke-virtual {p1}, Lcom/kakaogame/core/TimerManager;->startTimer()V
 
-    .line 14
+    .line 15
     monitor-exit v0
 
     return-void
@@ -6764,7 +6753,8 @@
 
     move-result-object p2
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -6820,7 +6810,8 @@
 
     move-result-object p2
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 4
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -6847,7 +6838,7 @@
     const-string v1, "stopOnlineAlarmTimer: "
 
     .line 1
-    invoke-static {v1, p1, v0}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p1, v0}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     iget-object v0, p0, Lcom/kakaogame/core/CoreManager;->onlineAlarmLock:Ljava/lang/Object;
@@ -7097,7 +7088,7 @@
     const/16 v2, 0xfa1
 
     .line 7
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -7119,7 +7110,7 @@
 
     const-string v0, "CoreManager"
 
-    .line 8
+    .line 12
     :try_start_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -7137,7 +7128,7 @@
 
     invoke-static {v0, v1}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
+    .line 13
     iget-object v1, p0, Lcom/kakaogame/core/CoreManager;->coreState:Lcom/kakaogame/core/CoreManager$CoreState;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
@@ -7154,7 +7145,7 @@
 
     const/16 p1, 0xbb9
 
-    .line 10
+    .line 14
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -7177,7 +7168,7 @@
 
     return-object p1
 
-    .line 11
+    .line 15
     :cond_0
     invoke-virtual {p0}, Lcom/kakaogame/core/CoreManager;->getPlayerId()Ljava/lang/String;
 
@@ -7185,30 +7176,30 @@
 
     if-eqz p1, :cond_1
 
-    .line 12
+    .line 16
     invoke-static {p1}, Lcom/kakaogame/idp/IdpAuthManager;->unregister(Lcom/kakaogame/idp/IdpAccount;)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
-    .line 13
+    .line 17
     invoke-virtual {p1}, Lcom/kakaogame/KGResult;->isSuccess()Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 14
+    .line 18
     invoke-static {p1}, Lcom/kakaogame/KGResult;->getResult(Ljava/util/Map;)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
     return-object p1
 
-    .line 15
+    .line 19
     :cond_1
     invoke-direct {p0, v1}, Lcom/kakaogame/core/CoreManager;->onUnregister(Ljava/lang/String;)V
 
-    .line 16
+    .line 20
     invoke-static {}, Lcom/kakaogame/KGResult;->getSuccessResult()Lcom/kakaogame/KGResult;
 
     move-result-object p1
@@ -7222,8 +7213,8 @@
 
     const/16 v1, 0xfa1
 
-    .line 17
-    invoke-static {p1, v0, p1, v1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    .line 21
+    invoke-static {p1, v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
@@ -7283,7 +7274,6 @@
 .method public useFirebase()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/core/CoreManager;->firebaseFlag:Z
 
     return v0

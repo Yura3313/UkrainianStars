@@ -1,4 +1,4 @@
-.class public Li/b$c;
+.class public final Li/b$c;
 .super Ljava/lang/Object;
 .source "SafeIterableMap.java"
 
@@ -31,7 +31,7 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/Object;
+.field public final f:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TK;"
@@ -39,7 +39,7 @@
     .end annotation
 .end field
 
-.field public final h:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TV;"
@@ -47,7 +47,7 @@
     .end annotation
 .end field
 
-.field public i:Li/b$c;
+.field public h:Li/b$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Li/b$c<",
@@ -56,7 +56,7 @@
     .end annotation
 .end field
 
-.field public j:Li/b$c;
+.field public i:Li/b$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Li/b$c<",
@@ -79,17 +79,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Li/b$c;->g:Ljava/lang/Object;
+    iput-object p1, p0, Li/b$c;->f:Ljava/lang/Object;
 
     .line 3
-    iput-object p2, p0, Li/b$c;->h:Ljava/lang/Object;
+    iput-object p2, p0, Li/b$c;->g:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
     const/4 v0, 0x1
@@ -113,9 +113,9 @@
     check-cast p1, Li/b$c;
 
     .line 3
-    iget-object v1, p0, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v1, p0, Li/b$c;->f:Ljava/lang/Object;
 
-    iget-object v3, p1, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v3, p1, Li/b$c;->f:Ljava/lang/Object;
 
     invoke-virtual {v1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -123,9 +123,9 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Li/b$c;->h:Ljava/lang/Object;
+    iget-object v1, p0, Li/b$c;->g:Ljava/lang/Object;
 
-    iget-object p1, p1, Li/b$c;->h:Ljava/lang/Object;
+    iget-object p1, p1, Li/b$c;->g:Ljava/lang/Object;
 
     invoke-virtual {v1, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -142,7 +142,7 @@
     return v0
 .end method
 
-.method public getKey()Ljava/lang/Object;
+.method public final getKey()Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -150,13 +150,12 @@
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v0, p0, Li/b$c;->f:Ljava/lang/Object;
 
     return-object v0
 .end method
 
-.method public getValue()Ljava/lang/Object;
+.method public final getValue()Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -164,23 +163,21 @@
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Li/b$c;->h:Ljava/lang/Object;
+    iget-object v0, p0, Li/b$c;->g:Ljava/lang/Object;
 
     return-object v0
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v0, p0, Li/b$c;->f:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
 
-    iget-object v1, p0, Li/b$c;->h:Ljava/lang/Object;
+    iget-object v1, p0, Li/b$c;->g:Ljava/lang/Object;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -191,7 +188,7 @@
     return v0
 .end method
 
-.method public setValue(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final setValue(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -199,7 +196,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "An entry modification is not supported"
@@ -209,15 +205,14 @@
     throw p1
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v1, p0, Li/b$c;->f:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -225,7 +220,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Li/b$c;->h:Ljava/lang/Object;
+    iget-object v1, p0, Li/b$c;->g:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

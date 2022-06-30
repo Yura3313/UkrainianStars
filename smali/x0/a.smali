@@ -1,4 +1,4 @@
-.class public Lx0/a;
+.class public final Lx0/a;
 .super Landroidx/versionedparcelable/VersionedParcel;
 .source "VersionedParcelParcel.java"
 
@@ -95,27 +95,22 @@
     .line 4
     iput p5, p0, Lx0/a;->i:I
 
-    const/4 p6, 0x0
-
     .line 5
-    iput p6, p0, Lx0/a;->j:I
-
-    .line 6
     iput p5, p0, Lx0/a;->k:I
 
-    .line 7
+    .line 6
     iput-object p1, p0, Lx0/a;->e:Landroid/os/Parcel;
 
-    .line 8
+    .line 7
     iput p2, p0, Lx0/a;->f:I
 
-    .line 9
+    .line 8
     iput p3, p0, Lx0/a;->g:I
 
-    .line 10
+    .line 9
     iput p2, p0, Lx0/a;->j:I
 
-    .line 11
+    .line 10
     iput-object p4, p0, Lx0/a;->h:Ljava/lang/String;
 
     return-void
@@ -123,7 +118,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 4
 
     .line 1
@@ -166,7 +161,7 @@
     return-void
 .end method
 
-.method public b()Landroidx/versionedparcelable/VersionedParcel;
+.method public final b()Landroidx/versionedparcelable/VersionedParcel;
     .locals 9
 
     .line 1
@@ -197,10 +192,12 @@
 
     const-string v5, "  "
 
-    invoke-static {v0, v4, v5}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 2
+    invoke-static {v0, v4, v5}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
+    .line 3
     iget-object v5, p0, Landroidx/versionedparcelable/VersionedParcel;->a:Lm/a;
 
     iget-object v6, p0, Landroidx/versionedparcelable/VersionedParcel;->b:Lm/a;
@@ -214,10 +211,9 @@
     return-object v8
 .end method
 
-.method public f()Z
+.method public final f()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lx0/a;->e:Landroid/os/Parcel;
 
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
@@ -237,7 +233,7 @@
     return v0
 .end method
 
-.method public g()[B
+.method public final g()[B
     .locals 2
 
     .line 1
@@ -265,10 +261,9 @@
     return-object v0
 .end method
 
-.method public h()Ljava/lang/CharSequence;
+.method public final h()Ljava/lang/CharSequence;
     .locals 2
 
-    .line 1
     sget-object v0, Landroid/text/TextUtils;->CHAR_SEQUENCE_CREATOR:Landroid/os/Parcelable$Creator;
 
     iget-object v1, p0, Lx0/a;->e:Landroid/os/Parcel;
@@ -282,7 +277,7 @@
     return-object v0
 .end method
 
-.method public i(I)Z
+.method public final i(I)Z
     .locals 4
 
     .line 1
@@ -370,10 +365,9 @@
     return v2
 .end method
 
-.method public j()I
+.method public final j()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lx0/a;->e:Landroid/os/Parcel;
 
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
@@ -383,7 +377,7 @@
     return v0
 .end method
 
-.method public l()Landroid/os/Parcelable;
+.method public final l()Landroid/os/Parcelable;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -393,7 +387,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lx0/a;->e:Landroid/os/Parcel;
 
     const-class v1, Lx0/a;
@@ -409,10 +402,9 @@
     return-object v0
 .end method
 
-.method public n()Ljava/lang/String;
+.method public final n()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lx0/a;->e:Landroid/os/Parcel;
 
     invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -422,7 +414,7 @@
     return-object v0
 .end method
 
-.method public p(I)V
+.method public final p(I)V
     .locals 2
 
     .line 1
@@ -442,25 +434,20 @@
 
     invoke-virtual {v0, p1, v1}, Landroid/util/SparseIntArray;->put(II)V
 
+    const/4 v0, 0x0
+
     .line 4
-    iget-object v0, p0, Lx0/a;->e:Landroid/os/Parcel;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p0, v0}, Lx0/a;->t(I)V
 
     .line 5
-    iget-object v0, p0, Lx0/a;->e:Landroid/os/Parcel;
-
-    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p0, p1}, Lx0/a;->t(I)V
 
     return-void
 .end method
 
-.method public q(Z)V
+.method public final q(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lx0/a;->e:Landroid/os/Parcel;
 
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
@@ -468,7 +455,7 @@
     return-void
 .end method
 
-.method public r([B)V
+.method public final r([B)V
     .locals 2
 
     if-eqz p1, :cond_0
@@ -499,10 +486,9 @@
     return-void
 .end method
 
-.method public s(Ljava/lang/CharSequence;)V
+.method public final s(Ljava/lang/CharSequence;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lx0/a;->e:Landroid/os/Parcel;
 
     const/4 v1, 0x0
@@ -512,10 +498,9 @@
     return-void
 .end method
 
-.method public t(I)V
+.method public final t(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lx0/a;->e:Landroid/os/Parcel;
 
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
@@ -523,10 +508,9 @@
     return-void
 .end method
 
-.method public u(Landroid/os/Parcelable;)V
+.method public final v(Landroid/os/Parcelable;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lx0/a;->e:Landroid/os/Parcel;
 
     const/4 v1, 0x0
@@ -536,10 +520,9 @@
     return-void
 .end method
 
-.method public v(Ljava/lang/String;)V
+.method public final x(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lx0/a;->e:Landroid/os/Parcel;
 
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V

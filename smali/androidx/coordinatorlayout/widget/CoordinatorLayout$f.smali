@@ -1,4 +1,4 @@
-.class public Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+.class public final Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 .super Ljava/lang/Object;
 .source "CoordinatorLayout.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+.field public final synthetic f:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;->g:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;->f:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +34,10 @@
 
 
 # virtual methods
-.method public onPreDraw()Z
+.method public final onPreDraw()Z
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;->g:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;->f:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
     const/4 v1, 0x0
 

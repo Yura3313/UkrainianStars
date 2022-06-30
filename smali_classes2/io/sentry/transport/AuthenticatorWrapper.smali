@@ -11,7 +11,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/transport/AuthenticatorWrapper;
 
     invoke-direct {v0}, Lio/sentry/transport/AuthenticatorWrapper;-><init>()V
@@ -24,7 +23,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,7 +31,6 @@
 .method public static getInstance()Lio/sentry/transport/AuthenticatorWrapper;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/transport/AuthenticatorWrapper;->instance:Lio/sentry/transport/AuthenticatorWrapper;
 
     return-object v0
@@ -44,7 +41,6 @@
 .method public setDefault(Ljava/net/Authenticator;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/net/Authenticator;->setDefault(Ljava/net/Authenticator;)V
 
     return-void

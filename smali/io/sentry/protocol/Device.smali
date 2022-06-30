@@ -100,7 +100,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -109,157 +108,157 @@
 .method public constructor <init>(Lio/sentry/protocol/Device;)V
     .locals 2
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 2
     iget-object v0, p1, Lio/sentry/protocol/Device;->name:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->name:Ljava/lang/String;
 
-    .line 4
+    .line 3
     iget-object v0, p1, Lio/sentry/protocol/Device;->manufacturer:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->manufacturer:Ljava/lang/String;
 
-    .line 5
+    .line 4
     iget-object v0, p1, Lio/sentry/protocol/Device;->brand:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->brand:Ljava/lang/String;
 
-    .line 6
+    .line 5
     iget-object v0, p1, Lio/sentry/protocol/Device;->family:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->family:Ljava/lang/String;
 
-    .line 7
+    .line 6
     iget-object v0, p1, Lio/sentry/protocol/Device;->model:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->model:Ljava/lang/String;
 
-    .line 8
+    .line 7
     iget-object v0, p1, Lio/sentry/protocol/Device;->modelId:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->modelId:Ljava/lang/String;
 
-    .line 9
+    .line 8
     iget-object v0, p1, Lio/sentry/protocol/Device;->charging:Ljava/lang/Boolean;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->charging:Ljava/lang/Boolean;
 
-    .line 10
+    .line 9
     iget-object v0, p1, Lio/sentry/protocol/Device;->online:Ljava/lang/Boolean;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->online:Ljava/lang/Boolean;
 
-    .line 11
+    .line 10
     iget-object v0, p1, Lio/sentry/protocol/Device;->orientation:Lio/sentry/protocol/Device$DeviceOrientation;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->orientation:Lio/sentry/protocol/Device$DeviceOrientation;
 
-    .line 12
+    .line 11
     iget-object v0, p1, Lio/sentry/protocol/Device;->simulator:Ljava/lang/Boolean;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->simulator:Ljava/lang/Boolean;
 
-    .line 13
+    .line 12
     iget-object v0, p1, Lio/sentry/protocol/Device;->memorySize:Ljava/lang/Long;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->memorySize:Ljava/lang/Long;
 
-    .line 14
+    .line 13
     iget-object v0, p1, Lio/sentry/protocol/Device;->freeMemory:Ljava/lang/Long;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->freeMemory:Ljava/lang/Long;
 
-    .line 15
+    .line 14
     iget-object v0, p1, Lio/sentry/protocol/Device;->usableMemory:Ljava/lang/Long;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->usableMemory:Ljava/lang/Long;
 
-    .line 16
+    .line 15
     iget-object v0, p1, Lio/sentry/protocol/Device;->lowMemory:Ljava/lang/Boolean;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->lowMemory:Ljava/lang/Boolean;
 
-    .line 17
+    .line 16
     iget-object v0, p1, Lio/sentry/protocol/Device;->storageSize:Ljava/lang/Long;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->storageSize:Ljava/lang/Long;
 
-    .line 18
+    .line 17
     iget-object v0, p1, Lio/sentry/protocol/Device;->freeStorage:Ljava/lang/Long;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->freeStorage:Ljava/lang/Long;
 
-    .line 19
+    .line 18
     iget-object v0, p1, Lio/sentry/protocol/Device;->externalStorageSize:Ljava/lang/Long;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->externalStorageSize:Ljava/lang/Long;
 
-    .line 20
+    .line 19
     iget-object v0, p1, Lio/sentry/protocol/Device;->externalFreeStorage:Ljava/lang/Long;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->externalFreeStorage:Ljava/lang/Long;
 
-    .line 21
+    .line 20
     iget-object v0, p1, Lio/sentry/protocol/Device;->screenWidthPixels:Ljava/lang/Integer;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->screenWidthPixels:Ljava/lang/Integer;
 
-    .line 22
+    .line 21
     iget-object v0, p1, Lio/sentry/protocol/Device;->screenHeightPixels:Ljava/lang/Integer;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->screenHeightPixels:Ljava/lang/Integer;
 
-    .line 23
+    .line 22
     iget-object v0, p1, Lio/sentry/protocol/Device;->screenDensity:Ljava/lang/Float;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->screenDensity:Ljava/lang/Float;
 
-    .line 24
+    .line 23
     iget-object v0, p1, Lio/sentry/protocol/Device;->screenDpi:Ljava/lang/Integer;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->screenDpi:Ljava/lang/Integer;
 
-    .line 25
+    .line 24
     iget-object v0, p1, Lio/sentry/protocol/Device;->bootTime:Ljava/util/Date;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->bootTime:Ljava/util/Date;
 
-    .line 26
+    .line 25
     iget-object v0, p1, Lio/sentry/protocol/Device;->id:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->id:Ljava/lang/String;
 
-    .line 27
+    .line 26
     iget-object v0, p1, Lio/sentry/protocol/Device;->language:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->language:Ljava/lang/String;
 
-    .line 28
+    .line 27
     iget-object v0, p1, Lio/sentry/protocol/Device;->connectionType:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->connectionType:Ljava/lang/String;
 
-    .line 29
+    .line 28
     iget-object v0, p1, Lio/sentry/protocol/Device;->batteryTemperature:Ljava/lang/Float;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->batteryTemperature:Ljava/lang/Float;
 
-    .line 30
+    .line 29
     iget-object v0, p1, Lio/sentry/protocol/Device;->batteryLevel:Ljava/lang/Float;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->batteryLevel:Ljava/lang/Float;
 
-    .line 31
+    .line 30
     iget-object v0, p1, Lio/sentry/protocol/Device;->archs:[Ljava/lang/String;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 32
+    .line 31
     invoke-virtual {v0}, [Ljava/lang/String;->clone()Ljava/lang/Object;
 
     move-result-object v0
@@ -274,17 +273,17 @@
     :goto_0
     iput-object v0, p0, Lio/sentry/protocol/Device;->archs:[Ljava/lang/String;
 
-    .line 33
+    .line 32
     iget-object v0, p1, Lio/sentry/protocol/Device;->locale:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Device;->locale:Ljava/lang/String;
 
-    .line 34
+    .line 33
     iget-object v0, p1, Lio/sentry/protocol/Device;->timezone:Ljava/util/TimeZone;
 
     if-eqz v0, :cond_1
 
-    .line 35
+    .line 34
     invoke-virtual {v0}, Ljava/util/TimeZone;->clone()Ljava/lang/Object;
 
     move-result-object v0
@@ -296,7 +295,7 @@
     :cond_1
     iput-object v1, p0, Lio/sentry/protocol/Device;->timezone:Ljava/util/TimeZone;
 
-    .line 36
+    .line 35
     iget-object p1, p1, Lio/sentry/protocol/Device;->unknown:Ljava/util/Map;
 
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -325,7 +324,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(Ljava/util/Map;)V
@@ -338,7 +336,6 @@
 .method public getArchs()[Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->archs:[Ljava/lang/String;
 
     return-object v0
@@ -347,7 +344,6 @@
 .method public getBatteryLevel()Ljava/lang/Float;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->batteryLevel:Ljava/lang/Float;
 
     return-object v0
@@ -356,7 +352,6 @@
 .method public getBatteryTemperature()Ljava/lang/Float;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->batteryTemperature:Ljava/lang/Float;
 
     return-object v0
@@ -389,7 +384,6 @@
 .method public getBrand()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->brand:Ljava/lang/String;
 
     return-object v0
@@ -398,7 +392,6 @@
 .method public getConnectionType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->connectionType:Ljava/lang/String;
 
     return-object v0
@@ -407,7 +400,6 @@
 .method public getExternalFreeStorage()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->externalFreeStorage:Ljava/lang/Long;
 
     return-object v0
@@ -416,7 +408,6 @@
 .method public getExternalStorageSize()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->externalStorageSize:Ljava/lang/Long;
 
     return-object v0
@@ -425,7 +416,6 @@
 .method public getFamily()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->family:Ljava/lang/String;
 
     return-object v0
@@ -434,7 +424,6 @@
 .method public getFreeMemory()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->freeMemory:Ljava/lang/Long;
 
     return-object v0
@@ -443,7 +432,6 @@
 .method public getFreeStorage()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->freeStorage:Ljava/lang/Long;
 
     return-object v0
@@ -452,7 +440,6 @@
 .method public getId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->id:Ljava/lang/String;
 
     return-object v0
@@ -461,7 +448,6 @@
 .method public getLanguage()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->language:Ljava/lang/String;
 
     return-object v0
@@ -470,7 +456,6 @@
 .method public getLocale()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->locale:Ljava/lang/String;
 
     return-object v0
@@ -479,7 +464,6 @@
 .method public getManufacturer()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->manufacturer:Ljava/lang/String;
 
     return-object v0
@@ -488,7 +472,6 @@
 .method public getMemorySize()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->memorySize:Ljava/lang/Long;
 
     return-object v0
@@ -497,7 +480,6 @@
 .method public getModel()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->model:Ljava/lang/String;
 
     return-object v0
@@ -506,7 +488,6 @@
 .method public getModelId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->modelId:Ljava/lang/String;
 
     return-object v0
@@ -515,7 +496,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->name:Ljava/lang/String;
 
     return-object v0
@@ -524,7 +504,6 @@
 .method public getOrientation()Lio/sentry/protocol/Device$DeviceOrientation;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->orientation:Lio/sentry/protocol/Device$DeviceOrientation;
 
     return-object v0
@@ -533,7 +512,6 @@
 .method public getScreenDensity()Ljava/lang/Float;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->screenDensity:Ljava/lang/Float;
 
     return-object v0
@@ -542,7 +520,6 @@
 .method public getScreenDpi()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->screenDpi:Ljava/lang/Integer;
 
     return-object v0
@@ -551,7 +528,6 @@
 .method public getScreenHeightPixels()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->screenHeightPixels:Ljava/lang/Integer;
 
     return-object v0
@@ -560,7 +536,6 @@
 .method public getScreenWidthPixels()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->screenWidthPixels:Ljava/lang/Integer;
 
     return-object v0
@@ -569,7 +544,6 @@
 .method public getStorageSize()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->storageSize:Ljava/lang/Long;
 
     return-object v0
@@ -578,7 +552,6 @@
 .method public getTimezone()Ljava/util/TimeZone;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->timezone:Ljava/util/TimeZone;
 
     return-object v0
@@ -596,7 +569,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->unknown:Ljava/util/Map;
 
     return-object v0
@@ -605,7 +577,6 @@
 .method public getUsableMemory()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->usableMemory:Ljava/lang/Long;
 
     return-object v0
@@ -614,7 +585,6 @@
 .method public isCharging()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->charging:Ljava/lang/Boolean;
 
     return-object v0
@@ -623,7 +593,6 @@
 .method public isLowMemory()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->lowMemory:Ljava/lang/Boolean;
 
     return-object v0
@@ -632,7 +601,6 @@
 .method public isOnline()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->online:Ljava/lang/Boolean;
 
     return-object v0
@@ -641,7 +609,6 @@
 .method public isSimulator()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->simulator:Ljava/lang/Boolean;
 
     return-object v0
@@ -650,7 +617,6 @@
 .method public setArchs([Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->archs:[Ljava/lang/String;
 
     return-void
@@ -659,7 +625,6 @@
 .method public setBatteryLevel(Ljava/lang/Float;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->batteryLevel:Ljava/lang/Float;
 
     return-void
@@ -668,7 +633,6 @@
 .method public setBatteryTemperature(Ljava/lang/Float;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->batteryTemperature:Ljava/lang/Float;
 
     return-void
@@ -677,7 +641,6 @@
 .method public setBootTime(Ljava/util/Date;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->bootTime:Ljava/util/Date;
 
     return-void
@@ -686,7 +649,6 @@
 .method public setBrand(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->brand:Ljava/lang/String;
 
     return-void
@@ -695,7 +657,6 @@
 .method public setCharging(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->charging:Ljava/lang/Boolean;
 
     return-void
@@ -704,7 +665,6 @@
 .method public setConnectionType(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->connectionType:Ljava/lang/String;
 
     return-void
@@ -713,7 +673,6 @@
 .method public setExternalFreeStorage(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->externalFreeStorage:Ljava/lang/Long;
 
     return-void
@@ -722,7 +681,6 @@
 .method public setExternalStorageSize(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->externalStorageSize:Ljava/lang/Long;
 
     return-void
@@ -731,7 +689,6 @@
 .method public setFamily(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->family:Ljava/lang/String;
 
     return-void
@@ -740,7 +697,6 @@
 .method public setFreeMemory(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->freeMemory:Ljava/lang/Long;
 
     return-void
@@ -749,7 +705,6 @@
 .method public setFreeStorage(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->freeStorage:Ljava/lang/Long;
 
     return-void
@@ -758,7 +713,6 @@
 .method public setId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->id:Ljava/lang/String;
 
     return-void
@@ -767,7 +721,6 @@
 .method public setLanguage(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->language:Ljava/lang/String;
 
     return-void
@@ -776,7 +729,6 @@
 .method public setLocale(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->locale:Ljava/lang/String;
 
     return-void
@@ -785,7 +737,6 @@
 .method public setLowMemory(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->lowMemory:Ljava/lang/Boolean;
 
     return-void
@@ -794,7 +745,6 @@
 .method public setManufacturer(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->manufacturer:Ljava/lang/String;
 
     return-void
@@ -803,7 +753,6 @@
 .method public setMemorySize(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->memorySize:Ljava/lang/Long;
 
     return-void
@@ -812,7 +761,6 @@
 .method public setModel(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->model:Ljava/lang/String;
 
     return-void
@@ -821,7 +769,6 @@
 .method public setModelId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->modelId:Ljava/lang/String;
 
     return-void
@@ -830,7 +777,6 @@
 .method public setName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->name:Ljava/lang/String;
 
     return-void
@@ -839,7 +785,6 @@
 .method public setOnline(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->online:Ljava/lang/Boolean;
 
     return-void
@@ -848,7 +793,6 @@
 .method public setOrientation(Lio/sentry/protocol/Device$DeviceOrientation;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->orientation:Lio/sentry/protocol/Device$DeviceOrientation;
 
     return-void
@@ -857,7 +801,6 @@
 .method public setScreenDensity(Ljava/lang/Float;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->screenDensity:Ljava/lang/Float;
 
     return-void
@@ -866,7 +809,6 @@
 .method public setScreenDpi(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->screenDpi:Ljava/lang/Integer;
 
     return-void
@@ -875,7 +817,6 @@
 .method public setScreenHeightPixels(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->screenHeightPixels:Ljava/lang/Integer;
 
     return-void
@@ -884,7 +825,6 @@
 .method public setScreenWidthPixels(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->screenWidthPixels:Ljava/lang/Integer;
 
     return-void
@@ -893,7 +833,6 @@
 .method public setSimulator(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->simulator:Ljava/lang/Boolean;
 
     return-void
@@ -902,7 +841,6 @@
 .method public setStorageSize(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->storageSize:Ljava/lang/Long;
 
     return-void
@@ -911,7 +849,6 @@
 .method public setTimezone(Ljava/util/TimeZone;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->timezone:Ljava/util/TimeZone;
 
     return-void
@@ -920,7 +857,6 @@
 .method public setUsableMemory(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->usableMemory:Ljava/lang/Long;
 
     return-void

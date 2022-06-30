@@ -248,11 +248,12 @@
 
     const-string v2, "default UncaughtExceptionHandler class=\'"
 
+    .line 15
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 15
+    .line 16
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v3
@@ -273,22 +274,22 @@
 
     new-array v3, v1, [Ljava/lang/Object;
 
-    .line 16
+    .line 17
     invoke-interface {v0, p2, v2, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 17
+    .line 18
     iput-object p1, p0, Lio/sentry/UncaughtExceptionHandlerIntegration;->defaultExceptionHandler:Ljava/lang/Thread$UncaughtExceptionHandler;
 
-    .line 18
+    .line 19
     :cond_1
     iget-object p1, p0, Lio/sentry/UncaughtExceptionHandlerIntegration;->threadAdapter:Lio/sentry/UncaughtExceptionHandler;
 
     invoke-interface {p1, p0}, Lio/sentry/UncaughtExceptionHandler;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
-    .line 19
+    .line 20
     iget-object p1, p0, Lio/sentry/UncaughtExceptionHandlerIntegration;->options:Lio/sentry/SentryOptions;
 
-    .line 20
+    .line 21
     invoke-virtual {p1}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
     move-result-object p1
@@ -297,7 +298,7 @@
 
     const-string v1, "UncaughtExceptionHandlerIntegration installed."
 
-    .line 21
+    .line 22
     invoke-interface {p1, p2, v1, v0}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_2

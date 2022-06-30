@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public abstract l1()Landroid/accounts/Account;
+.method public abstract t1()Landroid/accounts/Account;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end method

@@ -1,4 +1,4 @@
-.class public Lp/f$b;
+.class public final Lp/f$b;
 .super Ljava/lang/Object;
 .source "PriorityGoalRow.java"
 
@@ -18,17 +18,16 @@
 
 
 # instance fields
-.field public g:Lp/h;
+.field public f:Lp/h;
 
-.field public final synthetic h:Lp/f;
+.field public final synthetic g:Lp/f;
 
 
 # direct methods
-.method public constructor <init>(Lp/f;Lp/f;)V
+.method public constructor <init>(Lp/f;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lp/f$b;->h:Lp/f;
+    iput-object p1, p0, Lp/f$b;->g:Lp/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,14 +36,14 @@
 
 
 # virtual methods
-.method public compareTo(Ljava/lang/Object;)I
+.method public final compareTo(Ljava/lang/Object;)I
     .locals 1
 
     .line 1
     check-cast p1, Lp/h;
 
     .line 2
-    iget-object v0, p0, Lp/f$b;->g:Lp/h;
+    iget-object v0, p0, Lp/f$b;->f:Lp/h;
 
     iget v0, v0, Lp/h;->b:I
 
@@ -55,11 +54,11 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lp/f$b;->g:Lp/h;
+    iget-object v0, p0, Lp/f$b;->f:Lp/h;
 
     const-string v1, "[ "
 
@@ -77,7 +76,8 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lp/f$b;->g:Lp/h;
+    .line 3
+    iget-object v2, p0, Lp/f$b;->f:Lp/h;
 
     iget-object v2, v2, Lp/h;->h:[F
 
@@ -100,12 +100,13 @@
     :cond_0
     const-string v0, "] "
 
-    .line 3
+    .line 4
     invoke-static {v1, v0}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lp/f$b;->g:Lp/h;
+    .line 5
+    iget-object v1, p0, Lp/f$b;->f:Lp/h;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

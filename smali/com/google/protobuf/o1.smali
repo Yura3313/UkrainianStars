@@ -1,186 +1,203 @@
-.class public final enum Lcom/google/protobuf/o1;
-.super Ljava/lang/Enum;
-.source "Syntax.java"
-
-# interfaces
-.implements Lcom/google/protobuf/a0$c;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lcom/google/protobuf/o1;",
-        ">;",
-        "Lcom/google/protobuf/a0$c;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum h:Lcom/google/protobuf/o1;
-
-.field public static final enum i:Lcom/google/protobuf/o1;
-
-.field public static final enum j:Lcom/google/protobuf/o1;
-
-.field public static final synthetic k:[Lcom/google/protobuf/o1;
-
-
-# instance fields
-.field public final g:I
+.class public final Lcom/google/protobuf/o1;
+.super Ljava/lang/Object;
+.source "TextFormatEscaper.java"
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 8
+.method public static a(Lcom/google/protobuf/i;)Ljava/lang/String;
+    .locals 5
 
     .line 1
-    new-instance v0, Lcom/google/protobuf/o1;
-
-    const-string v1, "SYNTAX_PROTO2"
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2, v2}, Lcom/google/protobuf/o1;-><init>(Ljava/lang/String;II)V
-
-    sput-object v0, Lcom/google/protobuf/o1;->h:Lcom/google/protobuf/o1;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
-    new-instance v1, Lcom/google/protobuf/o1;
+    invoke-virtual {p0}, Lcom/google/protobuf/i;->size()I
 
-    const-string v3, "SYNTAX_PROTO3"
-
-    const/4 v4, 0x1
-
-    invoke-direct {v1, v3, v4, v4}, Lcom/google/protobuf/o1;-><init>(Ljava/lang/String;II)V
-
-    sput-object v1, Lcom/google/protobuf/o1;->i:Lcom/google/protobuf/o1;
+    move-result v1
 
     .line 3
-    new-instance v3, Lcom/google/protobuf/o1;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const-string v5, "UNRECOGNIZED"
-
-    const/4 v6, 0x2
-
-    const/4 v7, -0x1
-
-    invoke-direct {v3, v5, v6, v7}, Lcom/google/protobuf/o1;-><init>(Ljava/lang/String;II)V
-
-    sput-object v3, Lcom/google/protobuf/o1;->j:Lcom/google/protobuf/o1;
-
-    const/4 v5, 0x3
-
-    new-array v5, v5, [Lcom/google/protobuf/o1;
-
-    aput-object v0, v5, v2
-
-    aput-object v1, v5, v4
-
-    aput-object v3, v5, v6
+    const/4 v1, 0x0
 
     .line 4
-    sput-object v5, Lcom/google/protobuf/o1;->k:[Lcom/google/protobuf/o1;
+    :goto_0
+    invoke-virtual {p0}, Lcom/google/protobuf/i;->size()I
 
-    return-void
-.end method
+    move-result v2
 
-.method public constructor <init>(Ljava/lang/String;II)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I)V"
-        }
-    .end annotation
+    if-ge v1, v2, :cond_4
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    .line 5
+    invoke-virtual {p0, v1}, Lcom/google/protobuf/i;->b(I)B
 
-    .line 2
-    iput p3, p0, Lcom/google/protobuf/o1;->g:I
+    move-result v2
 
-    return-void
-.end method
+    const/16 v3, 0x22
 
-.method public static a(I)Lcom/google/protobuf/o1;
-    .locals 1
+    if-eq v2, v3, :cond_3
 
-    if-eqz p0, :cond_1
+    const/16 v3, 0x27
 
-    const/4 v0, 0x1
+    if-eq v2, v3, :cond_2
 
-    if-eq p0, v0, :cond_0
+    const/16 v3, 0x5c
 
-    const/4 p0, 0x0
+    if-eq v2, v3, :cond_1
 
-    return-object p0
+    packed-switch v2, :pswitch_data_0
 
-    .line 1
+    const/16 v4, 0x20
+
+    if-lt v2, v4, :cond_0
+
+    const/16 v4, 0x7e
+
+    if-gt v2, v4, :cond_0
+
+    int-to-char v2, v2
+
+    .line 6
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_0
+    const-string v2, "\\r"
+
+    .line 7
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_1
+    const-string v2, "\\f"
+
+    .line 8
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_2
+    const-string v2, "\\v"
+
+    .line 9
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_3
+    const-string v2, "\\n"
+
+    .line 10
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_4
+    const-string v2, "\\t"
+
+    .line 11
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_5
+    const-string v2, "\\b"
+
+    .line 12
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_6
+    const-string v2, "\\a"
+
+    .line 13
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    .line 14
     :cond_0
-    sget-object p0, Lcom/google/protobuf/o1;->i:Lcom/google/protobuf/o1;
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    return-object p0
+    ushr-int/lit8 v3, v2, 0x6
 
-    .line 2
+    and-int/lit8 v3, v3, 0x3
+
+    add-int/lit8 v3, v3, 0x30
+
+    int-to-char v3, v3
+
+    .line 15
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    ushr-int/lit8 v3, v2, 0x3
+
+    and-int/lit8 v3, v3, 0x7
+
+    add-int/lit8 v3, v3, 0x30
+
+    int-to-char v3, v3
+
+    .line 16
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    and-int/lit8 v2, v2, 0x7
+
+    add-int/lit8 v2, v2, 0x30
+
+    int-to-char v2, v2
+
+    .line 17
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
     :cond_1
-    sget-object p0, Lcom/google/protobuf/o1;->h:Lcom/google/protobuf/o1;
+    const-string v2, "\\\\"
 
-    return-object p0
-.end method
+    .line 18
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method public static valueOf(Ljava/lang/String;)Lcom/google/protobuf/o1;
-    .locals 1
+    goto :goto_1
 
-    .line 1
-    const-class v0, Lcom/google/protobuf/o1;
+    :cond_2
+    const-string v2, "\\\'"
 
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    .line 19
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :cond_3
+    const-string v2, "\\\""
+
+    .line 20
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    :goto_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto/16 :goto_0
+
+    .line 21
+    :cond_4
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    check-cast p0, Lcom/google/protobuf/o1;
-
     return-object p0
-.end method
 
-.method public static values()[Lcom/google/protobuf/o1;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lcom/google/protobuf/o1;->k:[Lcom/google/protobuf/o1;
-
-    invoke-virtual {v0}, [Lcom/google/protobuf/o1;->clone()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Lcom/google/protobuf/o1;
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final b()I
-    .locals 2
-
-    .line 1
-    sget-object v0, Lcom/google/protobuf/o1;->j:Lcom/google/protobuf/o1;
-
-    if-eq p0, v0, :cond_0
-
-    .line 2
-    iget v0, p0, Lcom/google/protobuf/o1;->g:I
-
-    return v0
-
-    .line 3
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    const-string v1, "Can\'t get the number of an unknown enum value."
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    :pswitch_data_0
+    .packed-switch 0x7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

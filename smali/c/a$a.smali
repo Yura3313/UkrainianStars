@@ -1,4 +1,4 @@
-.class public Lc/a$a;
+.class public final Lc/a$a;
 .super Ljava/lang/Object;
 .source "AppCompatResources.java"
 

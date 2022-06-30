@@ -1,106 +1,85 @@
 .class public final Lg5/a;
-.super Ld5/i;
-.source "AesSivKeyManager.java"
+.super Ljava/lang/Object;
+.source "AeadConfig.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ld5/i<",
-        "Ll5/t;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final a:Ljava/lang/String;
+
+.field public static final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 4
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    const-class v0, Ll5/t;
+    new-instance v0, Lg5/c;
 
-    const/4 v1, 0x1
+    invoke-direct {v0}, Lg5/c;-><init>()V
 
-    new-array v1, v1, [Ld5/i$b;
+    const-string v0, "type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey"
 
-    new-instance v2, Lg5/a$a;
+    .line 2
+    sput-object v0, Lg5/a;->a:Ljava/lang/String;
 
-    const-class v3, Ld5/c;
+    .line 3
+    new-instance v0, Lg5/f;
 
-    invoke-direct {v2, v3}, Lg5/a$a;-><init>(Ljava/lang/Class;)V
+    invoke-direct {v0}, Lg5/f;-><init>()V
 
-    const/4 v3, 0x0
+    const-string v0, "type.googleapis.com/google.crypto.tink.AesGcmKey"
 
-    aput-object v2, v1, v3
+    sput-object v0, Lg5/a;->b:Ljava/lang/String;
 
-    invoke-direct {p0, v0, v1}, Ld5/i;-><init>(Ljava/lang/Class;[Ld5/i$b;)V
+    .line 4
+    new-instance v0, Lg5/e;
+
+    invoke-direct {v0}, Lg5/e;-><init>()V
+
+    .line 5
+    new-instance v0, Lg5/h;
+
+    invoke-direct {v0}, Lg5/h;-><init>()V
+
+    .line 6
+    new-instance v0, Lg5/j;
+
+    invoke-direct {v0}, Lg5/j;-><init>()V
+
+    .line 7
+    new-instance v0, Lg5/g;
+
+    invoke-direct {v0}, Lg5/g;-><init>()V
+
+    .line 8
+    new-instance v0, Lg5/k;
+
+    invoke-direct {v0}, Lg5/k;-><init>()V
+
+    .line 9
+    sget v0, Ln5/g1;->CONFIG_NAME_FIELD_NUMBER:I
+
+    .line 10
+    :try_start_0
+    invoke-static {}, Lg5/a;->a()V
+    :try_end_0
+    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
+
+    :catch_0
+    move-exception v0
+
+    .line 11
+    new-instance v1, Ljava/lang/ExceptionInInitializerError;
+
+    invoke-direct {v1, v0}, Ljava/lang/ExceptionInInitializerError;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
 .end method
 
-
-# virtual methods
-.method public a()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "type.googleapis.com/google.crypto.tink.AesSivKey"
-
-    return-object v0
-.end method
-
-.method public c()Ld5/i$a;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ld5/i$a<",
-            "Ll5/u;",
-            "Ll5/t;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lg5/a$b;
-
-    const-class v1, Ll5/u;
-
-    invoke-direct {v0, p0, v1}, Lg5/a$b;-><init>(Lg5/a;Ljava/lang/Class;)V
-
-    return-object v0
-.end method
-
-.method public d()Ll5/v0$c;
-    .locals 1
-
-    .line 1
-    sget-object v0, Ll5/v0$c;->i:Ll5/v0$c;
-
-    return-object v0
-.end method
-
-.method public e(Lm5/c;)Lcom/google/crypto/tink/shaded/protobuf/a0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/j;->a()Lcom/google/crypto/tink/shaded/protobuf/j;
-
-    move-result-object v0
-
-    invoke-static {p1, v0}, Ll5/t;->w(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/t;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public g(Lcom/google/crypto/tink/shaded/protobuf/a0;)V
+.method public static a()V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -109,62 +88,65 @@
     .end annotation
 
     .line 1
-    check-cast p1, Ll5/t;
+    invoke-static {}, Ll5/c;->a()V
 
     .line 2
-    invoke-virtual {p1}, Ll5/t;->u()I
+    new-instance v0, Lg5/c;
 
-    move-result v0
+    invoke-direct {v0}, Lg5/c;-><init>()V
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lp5/m0;->e(II)V
+    invoke-static {v0, v1}, Lf5/x;->h(Lf5/i;Z)V
 
     .line 3
-    invoke-virtual {p1}, Ll5/t;->t()Lm5/c;
+    new-instance v0, Lg5/e;
 
-    move-result-object v0
+    invoke-direct {v0}, Lg5/e;-><init>()V
 
-    invoke-virtual {v0}, Lm5/c;->size()I
-
-    move-result v0
-
-    const/16 v1, 0x40
-
-    if-ne v0, v1, :cond_0
-
-    return-void
+    invoke-static {v0, v1}, Lf5/x;->h(Lf5/i;Z)V
 
     .line 4
-    :cond_0
-    new-instance v0, Ljava/security/InvalidKeyException;
+    new-instance v0, Lg5/f;
 
-    const-string v1, "invalid key size: "
+    invoke-direct {v0}, Lg5/f;-><init>()V
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    invoke-static {v0, v1}, Lf5/x;->h(Lf5/i;Z)V
 
     .line 5
-    invoke-virtual {p1}, Ll5/t;->t()Lm5/c;
+    new-instance v0, Lg5/g;
 
-    move-result-object p1
+    invoke-direct {v0}, Lg5/g;-><init>()V
 
-    invoke-virtual {p1}, Lm5/c;->size()I
+    invoke-static {v0, v1}, Lf5/x;->h(Lf5/i;Z)V
 
-    move-result p1
+    .line 6
+    new-instance v0, Lg5/h;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v0}, Lg5/h;-><init>()V
 
-    const-string p1, ". Valid keys must have 64 bytes."
+    invoke-static {v0, v1}, Lf5/x;->h(Lf5/i;Z)V
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 7
+    new-instance v0, Lg5/j;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v0}, Lg5/j;-><init>()V
 
-    move-result-object p1
+    invoke-static {v0, v1}, Lf5/x;->h(Lf5/i;Z)V
 
-    invoke-direct {v0, p1}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
+    .line 8
+    new-instance v0, Lg5/k;
 
-    throw v0
+    invoke-direct {v0}, Lg5/k;-><init>()V
+
+    invoke-static {v0, v1}, Lf5/x;->h(Lf5/i;Z)V
+
+    .line 9
+    new-instance v0, Lg5/b;
+
+    invoke-direct {v0}, Lg5/b;-><init>()V
+
+    invoke-static {v0}, Lf5/x;->i(Lf5/p;)V
+
+    return-void
 .end method

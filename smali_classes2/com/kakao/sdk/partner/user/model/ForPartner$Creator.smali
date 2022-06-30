@@ -30,34 +30,36 @@
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 5
 
-    const/4 v0, 0x0
+    const-string v0, "in"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v1, Lcom/kakao/sdk/partner/user/model/ForPartner;
+    new-instance v0, Lcom/kakao/sdk/partner/user/model/ForPartner;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
+    move-result-object v1
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     move-result-object v2
-
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v3
-
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
 
     goto :goto_0
 
     :cond_0
-    move-object v3, v0
+    move-object v2, v3
 
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -72,20 +74,12 @@
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v0
+    move-result-object v3
 
     :cond_1
-    invoke-direct {v1, v2, v3, v0}, Lcom/kakao/sdk/partner/user/model/ForPartner;-><init>(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/kakao/sdk/partner/user/model/ForPartner;-><init>(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)V
 
-    return-object v1
-
-    :cond_2
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

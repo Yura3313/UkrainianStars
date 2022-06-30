@@ -1,111 +1,45 @@
-.class public Ln8/h;
-.super Ln8/w;
-.source "AdminMessageDM.java"
+.class public final Ln8/h;
+.super La8/g;
+.source "ConversationManager.java"
+
+
+# instance fields
+.field public final synthetic b:Lo8/v;
+
+.field public final synthetic c:Lq8/d;
+
+.field public final synthetic d:Ln8/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLn8/m;)V
-    .locals 8
-
-    const/4 v6, 0x1
-
-    const/4 v7, 0x2
-
-    move-object v0, p0
-
-    move-object v1, p2
-
-    move-object v2, p3
-
-    move-wide v3, p4
-
-    move-object v5, p6
-
-    .line 1
-    invoke-direct/range {v0 .. v7}, Ln8/w;-><init>(Ljava/lang/String;Ljava/lang/String;JLn8/m;ZI)V
-
-    .line 2
-    iput-object p1, p0, Ln8/w;->j:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLn8/m;I)V
-    .locals 8
-
-    const/4 v6, 0x1
-
-    move-object v0, p0
-
-    move-object v1, p2
-
-    move-object v2, p3
-
-    move-wide v3, p4
-
-    move-object v5, p6
-
-    move v7, p7
-
-    .line 3
-    invoke-direct/range {v0 .. v7}, Ln8/w;-><init>(Ljava/lang/String;Ljava/lang/String;JLn8/m;ZI)V
-
-    .line 4
-    iput-object p1, p0, Ln8/w;->j:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ln8/h;)V
+.method public constructor <init>(Ln8/c;Lo8/v;Lq8/d;)V
     .locals 0
 
-    .line 5
-    invoke-direct {p0, p1}, Ln8/w;-><init>(Ln8/w;)V
+    iput-object p1, p0, Ln8/h;->d:Ln8/c;
+
+    iput-object p2, p0, Ln8/h;->b:Lo8/v;
+
+    iput-object p3, p0, Ln8/h;->c:Lq8/d;
+
+    invoke-direct {p0}, La8/g;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic a()Ljava/lang/Object;
-    .locals 1
+.method public final a()V
+    .locals 3
 
-    .line 1
-    invoke-virtual {p0}, Ln8/h;->q()Ln8/h;
+    iget-object v0, p0, Ln8/h;->b:Lo8/v;
 
-    move-result-object v0
+    iget-object v1, p0, Ln8/h;->d:Ln8/c;
 
-    return-object v0
-.end method
+    iget-object v1, v1, Ln8/c;->c:Li7/c;
 
-.method public bridge synthetic b()Ln8/w;
-    .locals 1
+    iget-object v2, p0, Ln8/h;->c:Lq8/d;
 
-    .line 1
-    invoke-virtual {p0}, Ln8/h;->q()Ln8/h;
+    invoke-virtual {v0, v1, v2}, Lo8/v;->q(Li7/c;Ln8/j;)V
 
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public j()Z
-    .locals 0
-
-    instance-of p0, p0, Ln8/e;
-
-    xor-int/lit8 p0, p0, 0x1
-
-    return p0
-.end method
-
-.method public q()Ln8/h;
-    .locals 1
-
-    .line 1
-    new-instance v0, Ln8/h;
-
-    invoke-direct {v0, p0}, Ln8/h;-><init>(Ln8/h;)V
-
-    return-object v0
+    return-void
 .end method

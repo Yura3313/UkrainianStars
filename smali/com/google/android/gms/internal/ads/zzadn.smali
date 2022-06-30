@@ -12,13 +12,12 @@
 
     const-string v0, "com.google.android.gms.ads.internal.formats.client.IAttributionInfo"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public static y7(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzado;
+.method public static u7(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzado;
     .locals 2
 
     if-nez p0, :cond_0
@@ -56,7 +55,7 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -83,7 +82,7 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzadd;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzadd;->i:Ljava/util/List;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/ArrayList;
 
     .line 3
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
@@ -100,7 +99,7 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzadd;
 
     .line 6
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzadd;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzadd;->f:Ljava/lang/String;
 
     .line 7
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V

@@ -25,7 +25,6 @@
 
     const-string v0, "; filename="
 
-    .line 1
     invoke-static {v0}, Lcom/kakaogame/kakao/model/MultipartRequestEntity;->getAsciiBytes(Ljava/lang/String;)[B
 
     move-result-object v0

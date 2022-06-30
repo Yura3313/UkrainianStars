@@ -39,7 +39,6 @@
 .method public constructor <init>(Landroid/app/Activity;Lcom/kakaogame/KGAppOption$UpdatePopupParamBuilder;Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/log/FirebaseEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGAppOption$1;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/KGAppOption$1;->val$popupInfo:Lcom/kakaogame/KGAppOption$UpdatePopupParamBuilder;

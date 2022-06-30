@@ -57,7 +57,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/support/v4/media/RatingCompat$1;
 
     invoke-direct {v0}, Landroid/support/v4/media/RatingCompat$1;-><init>()V
@@ -195,7 +194,6 @@
 .method public static newHeartRating(Z)Landroid/support/v4/media/RatingCompat;
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/support/v4/media/RatingCompat;
 
     if-eqz p0, :cond_0
@@ -232,7 +230,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     new-instance v0, Landroid/support/v4/media/RatingCompat;
 
@@ -294,7 +291,6 @@
 
     goto :goto_1
 
-    .line 1
     :cond_3
     new-instance v0, Landroid/support/v4/media/RatingCompat;
 
@@ -310,7 +306,6 @@
 .method public static newThumbRating(Z)Landroid/support/v4/media/RatingCompat;
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/support/v4/media/RatingCompat;
 
     if-eqz p0, :cond_0
@@ -339,7 +334,6 @@
 
     return-object p0
 
-    .line 1
     :pswitch_0
     new-instance v0, Landroid/support/v4/media/RatingCompat;
 
@@ -367,7 +361,6 @@
 .method public describeContents()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/RatingCompat;->mRatingStyle:I
 
     return v0
@@ -522,7 +515,6 @@
 .method public getRatingStyle()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/RatingCompat;->mRatingStyle:I
 
     return v0
@@ -601,7 +593,6 @@
 .method public isRated()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/RatingCompat;->mRatingValue:F
 
     const/4 v1, 0x0
@@ -661,6 +652,7 @@
 
     move-result-object v0
 
+    .line 2
     iget v1, p0, Landroid/support/v4/media/RatingCompat;->mRatingStyle:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -681,7 +673,7 @@
 
     goto :goto_0
 
-    .line 2
+    .line 3
     :cond_0
     invoke-static {v1}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
 

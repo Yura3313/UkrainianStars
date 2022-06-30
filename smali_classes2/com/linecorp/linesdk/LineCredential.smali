@@ -36,7 +36,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/linecorp/linesdk/LineCredential$a;
 
     invoke-direct {v0}, Lcom/linecorp/linesdk/LineCredential$a;-><init>()V
@@ -194,7 +193,6 @@
 .method public getAccessToken()Lcom/linecorp/linesdk/LineAccessToken;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineCredential;->accessToken:Lcom/linecorp/linesdk/LineAccessToken;
 
     return-object v0
@@ -211,7 +209,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineCredential;->permission:Ljava/util/List;
 
     return-object v0
@@ -244,7 +241,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "LineCredential{accessToken="

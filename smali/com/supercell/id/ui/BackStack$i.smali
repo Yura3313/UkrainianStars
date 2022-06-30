@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/BackStack$i;
-.super Lle/j;
+.super Lse/h;
 .source "BackStack.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/p;
 
 
 # annotations
@@ -18,18 +18,18 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
+        "Lse/h;",
+        "Lre/p<",
         "Lcom/supercell/id/ui/BackStack;",
         "Ljava/lang/Object;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/BackStack$i;
+.field public static final f:Lcom/supercell/id/ui/BackStack$i;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/BackStack$i;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/BackStack$i;->g:Lcom/supercell/id/ui/BackStack$i;
+    sput-object v0, Lcom/supercell/id/ui/BackStack$i;->f:Lcom/supercell/id/ui/BackStack$i;
 
     return-void
 .end method
@@ -50,39 +50,32 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 1
     check-cast p1, Lcom/supercell/id/ui/BackStack;
 
-    if-eqz p1, :cond_0
+    const-string p2, "$receiver"
 
     .line 2
-    iget-object p1, p1, Lcom/supercell/id/ui/BackStack;->e:Lke/a;
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-interface {p1}, Lke/a;->invoke()Ljava/lang/Object;
+    iget-object p1, p1, Lcom/supercell/id/ui/BackStack;->e:Lre/a;
 
     .line 4
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_0
-    const-string p1, "$receiver"
+    invoke-interface {p1}, Lre/a;->invoke()Ljava/lang/Object;
 
     .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    const/4 p1, 0x0
-
-    throw p1
+    return-object p1
 .end method

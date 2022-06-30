@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.rewarded.client.IRewardedAdLoadCallback"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,25 +19,25 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 1
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    const/4 p4, 0x1
+    const/4 v0, 0x1
 
-    if-eq p1, p4, :cond_2
+    if-eq p1, v0, :cond_2
 
-    const/4 v0, 0x2
+    const/4 v1, 0x2
 
-    if-eq p1, v0, :cond_1
+    if-eq p1, v1, :cond_1
 
-    const/4 v0, 0x3
+    const/4 v1, 0x3
 
-    if-eq p1, v0, :cond_0
+    if-eq p1, v1, :cond_0
 
     const/4 p1, 0x0
 
@@ -48,14 +47,14 @@
     :cond_0
     sget-object p1, Lcom/google/android/gms/internal/ads/zzuw;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lj3/mw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lk3/cw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzuw;
 
     .line 2
-    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaut;->L4(Lcom/google/android/gms/internal/ads/zzuw;)V
+    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaut;->M4(Lcom/google/android/gms/internal/ads/zzuw;)V
 
     goto :goto_0
 
@@ -66,17 +65,17 @@
     move-result p1
 
     .line 4
-    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaut;->x5(I)V
+    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaut;->v5(I)V
 
     goto :goto_0
 
     .line 5
     :cond_2
-    invoke-interface {p0}, Lcom/google/android/gms/internal/ads/zzaut;->z1()V
+    invoke-interface {p0}, Lcom/google/android/gms/internal/ads/zzaut;->E1()V
 
     .line 6
     :goto_0
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    return p4
+    return v0
 .end method

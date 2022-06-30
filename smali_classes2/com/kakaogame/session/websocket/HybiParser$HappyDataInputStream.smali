@@ -18,7 +18,6 @@
 .method public constructor <init>(Ljava/io/InputStream;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/io/DataInputStream;-><init>(Ljava/io/InputStream;)V
 
     return-void
@@ -47,7 +46,7 @@
     sub-int v3, p1, v2
 
     .line 2
-    invoke-virtual {p0, v0, v2, v3}, Ljava/io/DataInputStream;->read([BII)I
+    invoke-virtual {p0, v0, v2, v3}, Ljava/io/InputStream;->read([BII)I
 
     move-result v3
 

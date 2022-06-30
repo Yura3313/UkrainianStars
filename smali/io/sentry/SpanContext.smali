@@ -242,7 +242,6 @@
 .method public getDescription()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SpanContext;->description:Ljava/lang/String;
 
     return-object v0
@@ -251,7 +250,6 @@
 .method public getOperation()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SpanContext;->op:Ljava/lang/String;
 
     return-object v0
@@ -260,7 +258,6 @@
 .method public getParentSpanId()Lio/sentry/SpanId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SpanContext;->parentSpanId:Lio/sentry/SpanId;
 
     return-object v0
@@ -269,7 +266,6 @@
 .method public getSampled()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SpanContext;->sampled:Ljava/lang/Boolean;
 
     return-object v0
@@ -278,7 +274,6 @@
 .method public getSpanId()Lio/sentry/SpanId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SpanContext;->spanId:Lio/sentry/SpanId;
 
     return-object v0
@@ -287,7 +282,6 @@
 .method public getStatus()Lio/sentry/SpanStatus;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SpanContext;->status:Lio/sentry/SpanStatus;
 
     return-object v0
@@ -305,7 +299,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SpanContext;->tags:Ljava/util/Map;
 
     return-object v0
@@ -314,7 +307,6 @@
 .method public getTraceId()Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SpanContext;->traceId:Lio/sentry/protocol/SentryId;
 
     return-object v0
@@ -323,7 +315,6 @@
 .method public setDescription(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SpanContext;->description:Ljava/lang/String;
 
     return-void
@@ -334,7 +325,6 @@
 
     const-string v0, "operation is required"
 
-    .line 1
     invoke-static {p1, v0}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -351,7 +341,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SpanContext;->sampled:Ljava/lang/Boolean;
 
     return-void
@@ -360,7 +349,6 @@
 .method public setStatus(Lio/sentry/SpanStatus;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SpanContext;->status:Lio/sentry/SpanStatus;
 
     return-void

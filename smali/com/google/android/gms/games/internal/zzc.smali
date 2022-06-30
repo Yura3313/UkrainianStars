@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zzbp;-><init>()V
 
     return-void
@@ -15,7 +14,7 @@
 
 
 # virtual methods
-.method public K1()Lcom/google/android/gms/games/internal/zzbq;
+.method public N1()Lcom/google/android/gms/games/internal/zzbq;
     .locals 1
 
     const/4 v0, 0x0

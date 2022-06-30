@@ -90,29 +90,24 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 18
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v0, "event.attachment"
-
     .line 19
-    iput-object v0, p0, Lio/sentry/Attachment;->attachmentType:Ljava/lang/String;
-
-    .line 20
     iput-object p1, p0, Lio/sentry/Attachment;->pathname:Ljava/lang/String;
 
-    .line 21
+    .line 20
     iput-object p2, p0, Lio/sentry/Attachment;->filename:Ljava/lang/String;
 
-    .line 22
+    .line 21
     iput-object p3, p0, Lio/sentry/Attachment;->contentType:Ljava/lang/String;
 
-    .line 23
+    .line 22
     iput-boolean p4, p0, Lio/sentry/Attachment;->addToTransactions:Z
 
-    .line 24
+    .line 23
     iput-object p5, p0, Lio/sentry/Attachment;->attachmentType:Ljava/lang/String;
 
     return-void
@@ -171,7 +166,6 @@
 .method public getAttachmentType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Attachment;->attachmentType:Ljava/lang/String;
 
     return-object v0
@@ -180,7 +174,6 @@
 .method public getBytes()[B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Attachment;->bytes:[B
 
     return-object v0
@@ -189,7 +182,6 @@
 .method public getContentType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Attachment;->contentType:Ljava/lang/String;
 
     return-object v0
@@ -198,7 +190,6 @@
 .method public getFilename()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Attachment;->filename:Ljava/lang/String;
 
     return-object v0
@@ -207,7 +198,6 @@
 .method public getPathname()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Attachment;->pathname:Ljava/lang/String;
 
     return-object v0
@@ -216,7 +206,6 @@
 .method public isAddToTransactions()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/Attachment;->addToTransactions:Z
 
     return v0

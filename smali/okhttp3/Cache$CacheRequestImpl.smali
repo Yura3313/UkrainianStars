@@ -132,7 +132,6 @@
 .method public body()Lokio/Sink;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Cache$CacheRequestImpl;->body:Lokio/Sink;
 
     return-object v0

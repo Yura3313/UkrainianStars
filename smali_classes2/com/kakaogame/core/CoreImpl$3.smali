@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/CoreImpl$3;->val$activity:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -133,7 +132,8 @@
 
     move-result-object v1
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 9
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -145,7 +145,7 @@
 
     invoke-static {v0, p1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
+    .line 10
     :cond_3
     :goto_0
     invoke-static {}, Lcom/kakaogame/core/CoreImpl;->access$000()Lcom/android/installreferrer/api/InstallReferrerClient;
@@ -154,7 +154,7 @@
 
     if-eqz p1, :cond_4
 
-    .line 10
+    .line 11
     invoke-static {}, Lcom/kakaogame/core/CoreImpl;->access$000()Lcom/android/installreferrer/api/InstallReferrerClient;
 
     move-result-object p1

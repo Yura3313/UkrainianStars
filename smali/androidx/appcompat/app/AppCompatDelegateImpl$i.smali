@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/AppCompatDelegateImpl$i;
+.class public final Landroidx/appcompat/app/AppCompatDelegateImpl$i;
 .super Landroidx/appcompat/app/AppCompatDelegateImpl$h;
 .source "AppCompatDelegateImpl.java"
 
@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public final c:Landroidx/appcompat/app/u;
+.field public final c:Landroidx/appcompat/app/v;
 
 .field public final synthetic d:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;Landroidx/appcompat/app/u;)V
+.method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;Landroidx/appcompat/app/v;)V
     .locals 0
 
     .line 1
@@ -30,14 +30,14 @@
     invoke-direct {p0, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl$h;-><init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
 
     .line 2
-    iput-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$i;->c:Landroidx/appcompat/app/u;
+    iput-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$i;->c:Landroidx/appcompat/app/v;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b()Landroid/content/IntentFilter;
+.method public final b()Landroid/content/IntentFilter;
     .locals 2
 
     .line 1
@@ -63,19 +63,29 @@
     return-object v0
 .end method
 
-.method public c()I
+.method public final c()V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$i;->d:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->C()Z
+
+    return-void
+.end method
+
+.method public final e()I
     .locals 22
 
     move-object/from16 v0, p0
 
     .line 1
-    iget-object v1, v0, Landroidx/appcompat/app/AppCompatDelegateImpl$i;->c:Landroidx/appcompat/app/u;
+    iget-object v1, v0, Landroidx/appcompat/app/AppCompatDelegateImpl$i;->c:Landroidx/appcompat/app/v;
 
     .line 2
-    iget-object v2, v1, Landroidx/appcompat/app/u;->c:Landroidx/appcompat/app/u$a;
+    iget-object v2, v1, Landroidx/appcompat/app/v;->c:Landroidx/appcompat/app/v$a;
 
     .line 3
-    iget-wide v3, v2, Landroidx/appcompat/app/u$a;->b:J
+    iget-wide v3, v2, Landroidx/appcompat/app/v$a;->b:J
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -100,17 +110,17 @@
     if-eqz v3, :cond_1
 
     .line 4
-    iget-boolean v1, v2, Landroidx/appcompat/app/u$a;->a:Z
+    iget-boolean v1, v2, Landroidx/appcompat/app/v$a;->a:Z
 
     goto/16 :goto_7
 
     .line 5
     :cond_1
-    iget-object v3, v1, Landroidx/appcompat/app/u;->a:Landroid/content/Context;
+    iget-object v3, v1, Landroidx/appcompat/app/v;->a:Landroid/content/Context;
 
     const-string v4, "android.permission.ACCESS_COARSE_LOCATION"
 
-    invoke-static {v3, v4}, Ls3/k;->f(Landroid/content/Context;Ljava/lang/String;)I
+    invoke-static {v3, v4}, Lbc/a;->a(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v3
 
@@ -122,7 +132,7 @@
 
     .line 6
     :try_start_0
-    iget-object v5, v1, Landroidx/appcompat/app/u;->b:Landroid/location/LocationManager;
+    iget-object v5, v1, Landroidx/appcompat/app/v;->b:Landroid/location/LocationManager;
 
     invoke-virtual {v5, v3}, Landroid/location/LocationManager;->isProviderEnabled(Ljava/lang/String;)Z
 
@@ -131,7 +141,7 @@
     if-eqz v5, :cond_2
 
     .line 7
-    iget-object v5, v1, Landroidx/appcompat/app/u;->b:Landroid/location/LocationManager;
+    iget-object v5, v1, Landroidx/appcompat/app/v;->b:Landroid/location/LocationManager;
 
     invoke-virtual {v5, v3}, Landroid/location/LocationManager;->getLastKnownLocation(Ljava/lang/String;)Landroid/location/Location;
 
@@ -147,11 +157,11 @@
 
     .line 8
     :goto_1
-    iget-object v5, v1, Landroidx/appcompat/app/u;->a:Landroid/content/Context;
+    iget-object v5, v1, Landroidx/appcompat/app/v;->a:Landroid/content/Context;
 
     const-string v6, "android.permission.ACCESS_FINE_LOCATION"
 
-    invoke-static {v5, v6}, Ls3/k;->f(Landroid/content/Context;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Lbc/a;->a(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v5
 
@@ -161,7 +171,7 @@
 
     .line 9
     :try_start_1
-    iget-object v6, v1, Landroidx/appcompat/app/u;->b:Landroid/location/LocationManager;
+    iget-object v6, v1, Landroidx/appcompat/app/v;->b:Landroid/location/LocationManager;
 
     invoke-virtual {v6, v5}, Landroid/location/LocationManager;->isProviderEnabled(Ljava/lang/String;)Z
 
@@ -170,7 +180,7 @@
     if-eqz v6, :cond_3
 
     .line 10
-    iget-object v6, v1, Landroidx/appcompat/app/u;->b:Landroid/location/LocationManager;
+    iget-object v6, v1, Landroidx/appcompat/app/v;->b:Landroid/location/LocationManager;
 
     invoke-virtual {v6, v5}, Landroid/location/LocationManager;->getLastKnownLocation(Ljava/lang/String;)Landroid/location/Location;
 
@@ -214,7 +224,7 @@
     if-eqz v3, :cond_c
 
     .line 12
-    iget-object v1, v1, Landroidx/appcompat/app/u;->c:Landroidx/appcompat/app/u$a;
+    iget-object v1, v1, Landroidx/appcompat/app/v;->c:Landroidx/appcompat/app/v$a;
 
     .line 13
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -222,20 +232,20 @@
     move-result-wide v4
 
     .line 14
-    sget-object v6, Landroidx/appcompat/app/t;->d:Landroidx/appcompat/app/t;
+    sget-object v6, Landroidx/appcompat/app/u;->d:Landroidx/appcompat/app/u;
 
     if-nez v6, :cond_6
 
     .line 15
-    new-instance v6, Landroidx/appcompat/app/t;
+    new-instance v6, Landroidx/appcompat/app/u;
 
-    invoke-direct {v6}, Landroidx/appcompat/app/t;-><init>()V
+    invoke-direct {v6}, Landroidx/appcompat/app/u;-><init>()V
 
-    sput-object v6, Landroidx/appcompat/app/t;->d:Landroidx/appcompat/app/t;
+    sput-object v6, Landroidx/appcompat/app/u;->d:Landroidx/appcompat/app/u;
 
     .line 16
     :cond_6
-    sget-object v6, Landroidx/appcompat/app/t;->d:Landroidx/appcompat/app/t;
+    sget-object v6, Landroidx/appcompat/app/u;->d:Landroidx/appcompat/app/u;
 
     const-wide/32 v16, 0x5265c00
 
@@ -253,7 +263,7 @@
     move-object v9, v6
 
     .line 18
-    invoke-virtual/range {v9 .. v15}, Landroidx/appcompat/app/t;->a(JDD)V
+    invoke-virtual/range {v9 .. v15}, Landroidx/appcompat/app/u;->a(JDD)V
 
     .line 19
     invoke-virtual {v3}, Landroid/location/Location;->getLatitude()D
@@ -266,10 +276,10 @@
 
     move-wide v10, v4
 
-    invoke-virtual/range {v9 .. v15}, Landroidx/appcompat/app/t;->a(JDD)V
+    invoke-virtual/range {v9 .. v15}, Landroidx/appcompat/app/u;->a(JDD)V
 
     .line 20
-    iget v9, v6, Landroidx/appcompat/app/t;->c:I
+    iget v9, v6, Landroidx/appcompat/app/u;->c:I
 
     if-ne v9, v8, :cond_7
 
@@ -277,10 +287,10 @@
 
     .line 21
     :cond_7
-    iget-wide v14, v6, Landroidx/appcompat/app/t;->b:J
+    iget-wide v14, v6, Landroidx/appcompat/app/u;->b:J
 
     .line 22
-    iget-wide v12, v6, Landroidx/appcompat/app/t;->a:J
+    iget-wide v12, v6, Landroidx/appcompat/app/u;->a:J
 
     add-long v10, v4, v16
 
@@ -304,10 +314,10 @@
     move-wide/from16 v14, v18
 
     .line 24
-    invoke-virtual/range {v9 .. v15}, Landroidx/appcompat/app/t;->a(JDD)V
+    invoke-virtual/range {v9 .. v15}, Landroidx/appcompat/app/u;->a(JDD)V
 
     .line 25
-    iget-wide v9, v6, Landroidx/appcompat/app/t;->b:J
+    iget-wide v9, v6, Landroidx/appcompat/app/u;->b:J
 
     const-wide/16 v11, 0x0
 
@@ -359,13 +369,13 @@
 
     .line 26
     :goto_6
-    iput-boolean v7, v1, Landroidx/appcompat/app/u$a;->a:Z
+    iput-boolean v7, v1, Landroidx/appcompat/app/v$a;->a:Z
 
     .line 27
-    iput-wide v9, v1, Landroidx/appcompat/app/u$a;->b:J
+    iput-wide v9, v1, Landroidx/appcompat/app/v$a;->b:J
 
     .line 28
-    iget-boolean v1, v2, Landroidx/appcompat/app/u$a;->a:Z
+    iget-boolean v1, v2, Landroidx/appcompat/app/v$a;->a:Z
 
     goto :goto_7
 
@@ -403,15 +413,4 @@
 
     :cond_f
     return v8
-.end method
-
-.method public d()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$i;->d:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->C()Z
-
-    return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/internal/CheckableImageButton$a;
+.class public final Lcom/google/android/material/internal/CheckableImageButton$a;
 .super Lf0/a;
 .source "CheckableImageButton.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Lcom/google/android/material/internal/CheckableImageButton;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/internal/CheckableImageButton$a;->d:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-direct {p0}, Lf0/a;-><init>()V
@@ -32,13 +31,11 @@
 
 
 # virtual methods
-.method public d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
-    .locals 1
+.method public final d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
-
-    invoke-virtual {v0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    invoke-super {p0, p1, p2}, Lf0/a;->d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
     .line 2
     iget-object p1, p0, Lcom/google/android/material/internal/CheckableImageButton$a;->d:Lcom/google/android/material/internal/CheckableImageButton;
@@ -47,19 +44,19 @@
 
     move-result p1
 
-    invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityEvent;->setChecked(Z)V
+    invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityRecord;->setChecked(Z)V
 
     return-void
 .end method
 
-.method public e(Landroid/view/View;Lg0/b;)V
+.method public final e(Landroid/view/View;Lg0/c;)V
     .locals 2
 
     .line 1
     iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
 
     .line 2
-    iget-object v1, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    iget-object v1, p2, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
     .line 3
     invoke-virtual {v0, p1, v1}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
@@ -68,12 +65,10 @@
     iget-object p1, p0, Lcom/google/android/material/internal/CheckableImageButton$a;->d:Lcom/google/android/material/internal/CheckableImageButton;
 
     .line 5
-    iget-boolean p1, p1, Lcom/google/android/material/internal/CheckableImageButton;->j:Z
+    iget-boolean p1, p1, Lcom/google/android/material/internal/CheckableImageButton;->i:Z
 
     .line 6
-    iget-object v0, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setCheckable(Z)V
+    invoke-virtual {p2, p1}, Lg0/c;->D(Z)V
 
     .line 7
     iget-object p1, p0, Lcom/google/android/material/internal/CheckableImageButton$a;->d:Lcom/google/android/material/internal/CheckableImageButton;
@@ -83,7 +78,7 @@
     move-result p1
 
     .line 8
-    iget-object p2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    iget-object p2, p2, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setChecked(Z)V
 

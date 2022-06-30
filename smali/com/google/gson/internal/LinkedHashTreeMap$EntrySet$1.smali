@@ -32,7 +32,6 @@
 .method public constructor <init>(Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet$1;->this$1:Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet;
 
     iget-object p1, p1, Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet;->this$0:Lcom/google/gson/internal/LinkedHashTreeMap;

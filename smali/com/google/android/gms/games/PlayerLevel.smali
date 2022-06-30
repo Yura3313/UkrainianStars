@@ -16,21 +16,20 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
+
+.field public final g:J
 
 .field public final h:J
-
-.field public final i:J
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lu2/h;
+    new-instance v0, Lv2/h;
 
-    invoke-direct {v0}, Lu2/h;-><init>()V
+    invoke-direct {v0}, Lv2/h;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/games/PlayerLevel;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -64,7 +63,7 @@
     const-string v3, "Min XP must be positive!"
 
     .line 2
-    invoke-static {v2, v3}, Lc2/h;->k(ZLjava/lang/Object;)V
+    invoke-static {v2, v3}, Ld2/h;->k(ZLjava/lang/Object;)V
 
     cmp-long v2, p4, p2
 
@@ -79,16 +78,16 @@
     const-string v1, "Max XP must be more than min XP!"
 
     .line 3
-    invoke-static {v0, v1}, Lc2/h;->k(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Ld2/h;->k(ZLjava/lang/Object;)V
 
     .line 4
-    iput p1, p0, Lcom/google/android/gms/games/PlayerLevel;->g:I
+    iput p1, p0, Lcom/google/android/gms/games/PlayerLevel;->f:I
 
     .line 5
-    iput-wide p2, p0, Lcom/google/android/gms/games/PlayerLevel;->h:J
+    iput-wide p2, p0, Lcom/google/android/gms/games/PlayerLevel;->g:J
 
     .line 6
-    iput-wide p4, p0, Lcom/google/android/gms/games/PlayerLevel;->i:J
+    iput-wide p4, p0, Lcom/google/android/gms/games/PlayerLevel;->h:J
 
     return-void
 .end method
@@ -119,7 +118,7 @@
     check-cast p1, Lcom/google/android/gms/games/PlayerLevel;
 
     .line 3
-    iget v2, p1, Lcom/google/android/gms/games/PlayerLevel;->g:I
+    iget v2, p1, Lcom/google/android/gms/games/PlayerLevel;->f:I
 
     .line 4
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -127,21 +126,21 @@
     move-result-object v2
 
     .line 5
-    iget v3, p0, Lcom/google/android/gms/games/PlayerLevel;->g:I
+    iget v3, p0, Lcom/google/android/gms/games/PlayerLevel;->f:I
 
     .line 6
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 7
-    iget-wide v2, p1, Lcom/google/android/gms/games/PlayerLevel;->h:J
+    iget-wide v2, p1, Lcom/google/android/gms/games/PlayerLevel;->g:J
 
     .line 8
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -149,21 +148,21 @@
     move-result-object v2
 
     .line 9
-    iget-wide v3, p0, Lcom/google/android/gms/games/PlayerLevel;->h:J
+    iget-wide v3, p0, Lcom/google/android/gms/games/PlayerLevel;->g:J
 
     .line 10
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 11
-    iget-wide v2, p1, Lcom/google/android/gms/games/PlayerLevel;->i:J
+    iget-wide v2, p1, Lcom/google/android/gms/games/PlayerLevel;->h:J
 
     .line 12
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -171,14 +170,14 @@
     move-result-object p1
 
     .line 13
-    iget-wide v2, p0, Lcom/google/android/gms/games/PlayerLevel;->i:J
+    iget-wide v2, p0, Lcom/google/android/gms/games/PlayerLevel;->h:J
 
     .line 14
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v2
 
-    invoke-static {p1, v2}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -198,7 +197,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget v1, p0, Lcom/google/android/gms/games/PlayerLevel;->g:I
+    iget v1, p0, Lcom/google/android/gms/games/PlayerLevel;->f:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -208,7 +207,7 @@
 
     aput-object v1, v0, v2
 
-    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevel;->h:J
+    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevel;->g:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -218,7 +217,7 @@
 
     aput-object v1, v0, v2
 
-    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevel;->i:J
+    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevel;->h:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -240,14 +239,12 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lc2/f$a;
+    new-instance v0, Ld2/f$a;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lc2/f$a;-><init>(Ljava/lang/Object;Lc2/n0;)V
+    invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/games/PlayerLevel;->g:I
+    iget v1, p0, Lcom/google/android/gms/games/PlayerLevel;->f:I
 
     .line 3
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -256,10 +253,10 @@
 
     const-string v2, "LevelNumber"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 4
-    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevel;->h:J
+    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevel;->g:J
 
     .line 5
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -268,10 +265,10 @@
 
     const-string v2, "MinXp"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 6
-    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevel;->i:J
+    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevel;->h:J
 
     .line 7
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -280,10 +277,10 @@
 
     const-string v2, "MaxXp"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 8
-    invoke-virtual {v0}, Lc2/f$a;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ld2/f$a;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -296,49 +293,49 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x1
-
     .line 2
-    iget v1, p0, Lcom/google/android/gms/games/PlayerLevel;->g:I
+    iget v0, p0, Lcom/google/android/gms/games/PlayerLevel;->f:I
+
+    const/4 v1, 0x1
 
     const/4 v2, 0x4
 
     .line 3
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 4
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/4 v0, 0x2
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevel;->h:J
+    iget-wide v0, p0, Lcom/google/android/gms/games/PlayerLevel;->g:J
+
+    const/4 v2, 0x2
 
     const/16 v3, 0x8
 
     .line 6
-    invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v3}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 7
-    invoke-virtual {p1, v1, v2}, Landroid/os/Parcel;->writeLong(J)V
-
-    const/4 v0, 0x3
+    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 8
-    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevel;->i:J
+    iget-wide v0, p0, Lcom/google/android/gms/games/PlayerLevel;->h:J
+
+    const/4 v2, 0x3
 
     .line 9
-    invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v3}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 10
-    invoke-virtual {p1, v1, v2}, Landroid/os/Parcel;->writeLong(J)V
+    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 11
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

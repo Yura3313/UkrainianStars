@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/MaintenanceModeFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/MaintenanceModeFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/MaintenanceModeFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/MaintenanceModeFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/MaintenanceModeFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/MaintenanceModeFragment$b;->g:Lcom/supercell/id/ui/MaintenanceModeFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/MaintenanceModeFragment$b;->f:Lcom/supercell/id/ui/MaintenanceModeFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,10 +37,9 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/MaintenanceModeFragment$b;->g:Lcom/supercell/id/ui/MaintenanceModeFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/MaintenanceModeFragment$b;->f:Lcom/supercell/id/ui/MaintenanceModeFragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 

@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/support/customtabs/ICustomTabsService;Landroid/content/ComponentName;)V
+.method public constructor <init>(Landroid/support/customtabs/ICustomTabsService;)V
     .locals 0
 
     .line 1

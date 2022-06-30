@@ -1,4 +1,4 @@
-.class public Lr0/g$a;
+.class public final Lr0/g$a;
 .super Ljava/io/File;
 .source "MultiDexExtractor.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public g:J
+.field public f:J
 
 
 # direct methods
@@ -28,7 +28,7 @@
     const-wide/16 p1, -0x1
 
     .line 2
-    iput-wide p1, p0, Lr0/g$a;->g:J
+    iput-wide p1, p0, Lr0/g$a;->f:J
 
     return-void
 .end method

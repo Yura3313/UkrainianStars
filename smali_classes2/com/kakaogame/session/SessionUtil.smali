@@ -11,7 +11,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,6 +59,7 @@
 
     move-result-object v1
 
+    .line 4
     invoke-static {p0}, Lcom/kakaogame/session/SessionUtil;->getCompressedMessage(Lcom/kakaogame/server/ServerRequest;)Ljava/lang/String;
 
     move-result-object p0
@@ -72,7 +72,7 @@
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 4
+    .line 5
     :cond_0
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 

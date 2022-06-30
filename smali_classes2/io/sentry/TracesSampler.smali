@@ -56,7 +56,7 @@
 
     iget-object p1, p0, Lio/sentry/TracesSampler;->random:Ljava/security/SecureRandom;
 
-    invoke-virtual {p1}, Ljava/security/SecureRandom;->nextDouble()D
+    invoke-virtual {p1}, Ljava/util/Random;->nextDouble()D
 
     move-result-wide v2
 

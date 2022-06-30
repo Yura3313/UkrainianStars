@@ -39,7 +39,6 @@
 .method public constructor <init>(Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/log/FirebaseEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSupport$4;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/KGSupport$4;->val$url:Ljava/lang/String;

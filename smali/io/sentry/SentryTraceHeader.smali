@@ -151,7 +151,6 @@
 .method public getSpanId()Lio/sentry/SpanId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTraceHeader;->spanId:Lio/sentry/SpanId;
 
     return-object v0
@@ -160,7 +159,6 @@
 .method public getTraceId()Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTraceHeader;->traceId:Lio/sentry/protocol/SentryId;
 
     return-object v0
@@ -241,7 +239,6 @@
 .method public isSampled()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTraceHeader;->sampled:Ljava/lang/Boolean;
 
     return-object v0

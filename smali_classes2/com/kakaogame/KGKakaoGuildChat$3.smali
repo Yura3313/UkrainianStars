@@ -35,7 +35,6 @@
 .method public constructor <init>(Landroid/app/Activity;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGKakaoGuildChat$3;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/KGKakaoGuildChat$3;->val$callback:Lcom/kakaogame/KGResultCallback;

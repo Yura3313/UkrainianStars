@@ -7,31 +7,17 @@
 .method public static final withPhase(Lcom/kakao/sdk/common/model/ServerHosts$Companion;Lcom/kakao/sdk/partner/model/KakaoPhase;)Lcom/kakao/sdk/common/model/ServerHosts;
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "$this$withPhase"
 
-    if-eqz p0, :cond_1
+    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p1, :cond_0
+    const-string p0, "phase"
 
-    .line 1
+    invoke-static {p1, p0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     new-instance p0, Lcom/kakao/sdk/partner/model/PhasedServerHosts;
 
     invoke-direct {p0, p1}, Lcom/kakao/sdk/partner/model/PhasedServerHosts;-><init>(Lcom/kakao/sdk/partner/model/KakaoPhase;)V
 
     return-object p0
-
-    :cond_0
-    const-string p0, "phase"
-
-    .line 2
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p0, "$this$withPhase"
-
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

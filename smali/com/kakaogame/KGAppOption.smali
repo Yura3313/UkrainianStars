@@ -19,7 +19,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +29,6 @@
 
     const-string v0, "cdnAddr"
 
-    .line 1
     invoke-static {v0}, Lcom/kakaogame/KGAppOption;->getValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -43,7 +41,6 @@
 
     const-string v0, "gameServerAddr"
 
-    .line 1
     invoke-static {v0}, Lcom/kakaogame/KGAppOption;->getValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -68,7 +65,7 @@
 
     const-string v1, "titleMessage"
 
-    invoke-virtual {p0, v1, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v1, v0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "zinny_sdk_app_update_button_now"
 
@@ -79,7 +76,7 @@
 
     const-string v1, "updateButton"
 
-    invoke-virtual {p0, v1, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v1, v0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "zinny_sdk_app_update_button_later"
 
@@ -90,7 +87,7 @@
 
     const-string v1, "laterButton"
 
-    invoke-virtual {p0, v1, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v1, v0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     new-instance v0, Lcom/kakaogame/KGAppOption$UpdatePopupParamBuilder;
@@ -105,7 +102,6 @@
 
     const-string v0, ""
 
-    .line 1
     invoke-static {p0, v0}, Lcom/kakaogame/infodesk/InfodeskHelper;->getValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -176,7 +172,6 @@
 .method public static initialize()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/KGAppOption;->initInterfaceBroker()V
 
     return-void

@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/AppCompatDelegateImpl$g;
+.class public final Landroidx/appcompat/app/AppCompatDelegateImpl$g;
 .super Landroidx/appcompat/app/AppCompatDelegateImpl$h;
 .source "AppCompatDelegateImpl.java"
 
@@ -50,7 +50,7 @@
 
 
 # virtual methods
-.method public b()Landroid/content/IntentFilter;
+.method public final b()Landroid/content/IntentFilter;
     .locals 2
 
     .line 1
@@ -78,7 +78,17 @@
     return-object v0
 .end method
 
-.method public c()I
+.method public final c()V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->d:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->C()Z
+
+    return-void
+.end method
+
+.method public final e()I
     .locals 3
 
     .line 1
@@ -103,15 +113,4 @@
 
     :cond_0
     return v1
-.end method
-
-.method public d()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->d:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->C()Z
-
-    return-void
 .end method

@@ -614,7 +614,7 @@
     if-eqz p2, :cond_3
 
     .line 5
-    invoke-virtual {p1}, Ljava/io/IOException;->getCause()Ljava/lang/Throwable;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object p2
 
@@ -696,7 +696,6 @@
 .method private requestIsUnrepeatable(Ljava/io/IOException;Lokhttp3/Request;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p2}, Lokhttp3/Request;->body()Lokhttp3/RequestBody;
 
     move-result-object p2
@@ -1123,10 +1122,12 @@
 
     const-string v0, "Too many follow-up requests: "
 
-    invoke-static {v0, v13}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    .line 31
+    invoke-static {v0, v13}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 32
     invoke-direct {p1, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     throw p1
@@ -1134,10 +1135,10 @@
     :catch_0
     move-exception p1
 
-    .line 31
+    .line 33
     invoke-virtual {v9}, Lokhttp3/internal/connection/StreamAllocation;->release()V
 
-    .line 32
+    .line 34
     throw p1
 
     :catchall_0
@@ -1148,7 +1149,7 @@
     :catch_1
     move-exception v3
 
-    .line 33
+    .line 35
     :try_start_2
     instance-of v4, v3, Lokhttp3/internal/http2/ConnectionShutdownException;
 
@@ -1161,7 +1162,7 @@
     :cond_6
     const/4 v4, 0x0
 
-    .line 34
+    .line 36
     :goto_2
     invoke-direct {p0, v3, v9, v4, v0}, Lokhttp3/internal/http/RetryAndFollowUpInterceptor;->recover(Ljava/io/IOException;Lokhttp3/internal/connection/StreamAllocation;ZLokhttp3/Request;)Z
 
@@ -1177,7 +1178,7 @@
     :catch_2
     move-exception v3
 
-    .line 35
+    .line 37
     invoke-virtual {v3}, Lokhttp3/internal/connection/RouteException;->getLastConnectException()Ljava/io/IOException;
 
     move-result-object v4
@@ -1190,7 +1191,7 @@
 
     goto/16 :goto_0
 
-    .line 36
+    .line 38
     :cond_8
     invoke-virtual {v3}, Lokhttp3/internal/connection/RouteException;->getFirstConnectException()Ljava/io/IOException;
 
@@ -1200,20 +1201,20 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 37
+    .line 39
     :goto_3
     invoke-virtual {v9, v11}, Lokhttp3/internal/connection/StreamAllocation;->streamFailed(Ljava/io/IOException;)V
 
-    .line 38
+    .line 40
     invoke-virtual {v9}, Lokhttp3/internal/connection/StreamAllocation;->release()V
 
     throw p1
 
-    .line 39
+    .line 41
     :cond_9
     invoke-virtual {v9}, Lokhttp3/internal/connection/StreamAllocation;->release()V
 
-    .line 40
+    .line 42
     new-instance p1, Ljava/io/IOException;
 
     const-string v0, "Canceled"
@@ -1232,7 +1233,6 @@
 .method public isCanceled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/internal/http/RetryAndFollowUpInterceptor;->canceled:Z
 
     return v0
@@ -1241,7 +1241,6 @@
 .method public setCallStackTrace(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/http/RetryAndFollowUpInterceptor;->callStackTrace:Ljava/lang/Object;
 
     return-void
@@ -1250,7 +1249,6 @@
 .method public streamAllocation()Lokhttp3/internal/connection/StreamAllocation;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http/RetryAndFollowUpInterceptor;->streamAllocation:Lokhttp3/internal/connection/StreamAllocation;
 
     return-object v0

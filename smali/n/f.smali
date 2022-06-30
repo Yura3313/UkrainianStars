@@ -1,4 +1,4 @@
-.class public Ln/f;
+.class public final Ln/f;
 .super Ljava/lang/Object;
 .source "Oscillator.java"
 
@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public a(DF)V
+.method public final a(DF)V
     .locals 4
 
     .line 1
@@ -108,7 +108,7 @@
     return-void
 .end method
 
-.method public b(D)D
+.method public final b(D)D
     .locals 10
 
     const-wide/16 v0, 0x0
@@ -196,7 +196,7 @@
     return-wide v0
 .end method
 
-.method public c(D)D
+.method public final c(D)D
     .locals 10
 
     const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
@@ -315,7 +315,7 @@
     return-wide v0
 .end method
 
-.method public d(D)D
+.method public final d(D)D
     .locals 9
 
     .line 1
@@ -364,10 +364,7 @@
 
     mul-double p1, p1, p1
 
-    :goto_0
-    sub-double/2addr v7, p1
-
-    return-wide v7
+    goto :goto_0
 
     .line 4
     :pswitch_1
@@ -431,7 +428,10 @@
 
     move-result-wide p1
 
-    goto :goto_0
+    :goto_0
+    sub-double/2addr v7, p1
+
+    return-wide v7
 
     :pswitch_5
     const-wide/high16 v0, 0x3fe0000000000000L    # 0.5
@@ -462,7 +462,7 @@
     .end packed-switch
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
     const-string v0, "pos ="
@@ -472,6 +472,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Ln/f;->b:[D
 
     invoke-static {v1}, Ljava/util/Arrays;->toString([D)Ljava/lang/String;

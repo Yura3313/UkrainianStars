@@ -1,4 +1,4 @@
-.class public Lt/b;
+.class public final Lt/b;
 .super Ljava/lang/Object;
 .source "ViewGroupUtils.java"
 

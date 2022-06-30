@@ -13,7 +13,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -22,7 +21,6 @@
 .method private static initInterfaceBroker()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/kakaogame/KGCoupon$2;
 
     invoke-direct {v0}, Lcom/kakaogame/KGCoupon$2;-><init>()V
@@ -37,7 +35,6 @@
 .method public static initialize()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/KGCoupon;->initInterfaceBroker()V
 
     return-void

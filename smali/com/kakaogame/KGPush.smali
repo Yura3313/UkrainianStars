@@ -21,7 +21,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +29,6 @@
 .method public static synthetic access$000(Ljava/lang/String;Z)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/KGPush;->enablePush(Ljava/lang/String;Z)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -41,7 +39,6 @@
 .method public static synthetic access$100(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGPush;->goToNotificationSettings(Landroid/app/Activity;)V
 
     return-void
@@ -399,7 +396,7 @@
 
     .line 46
     :try_start_5
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -408,7 +405,7 @@
     const/16 p1, 0xfa1
 
     .line 47
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -659,7 +656,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v1, v3, v4}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3, v4}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -672,7 +669,7 @@
     move-exception v2
 
     .line 7
-    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -706,7 +703,7 @@
     move-result-object v0
 
     .line 4
-    invoke-virtual {p0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
@@ -722,7 +719,7 @@
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
@@ -775,7 +772,6 @@
 .method public static initialize()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/KGPush;->initInterfaceBroker()V
 
     return-void
@@ -904,7 +900,7 @@
     move-exception p0
 
     .line 11
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 

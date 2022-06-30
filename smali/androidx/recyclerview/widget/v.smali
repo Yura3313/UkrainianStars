@@ -12,23 +12,23 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView$m;Landroidx/recyclerview/widget/t;)V
-    .locals 0
+.method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView$m;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/high16 p2, -0x80000000
+    const/high16 v0, -0x80000000
 
     .line 2
-    iput p2, p0, Landroidx/recyclerview/widget/v;->b:I
+    iput v0, p0, Landroidx/recyclerview/widget/v;->b:I
 
     .line 3
-    new-instance p2, Landroid/graphics/Rect;
+    new-instance v0, Landroid/graphics/Rect;
 
-    invoke-direct {p2}, Landroid/graphics/Rect;-><init>()V
+    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p2, p0, Landroidx/recyclerview/widget/v;->c:Landroid/graphics/Rect;
+    iput-object v0, p0, Landroidx/recyclerview/widget/v;->c:Landroid/graphics/Rect;
 
     .line 4
     iput-object p1, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
@@ -106,10 +106,9 @@
 .method public abstract l()I
 .end method
 
-.method public m()I
+.method public final m()I
     .locals 2
 
-    .line 1
     iget v0, p0, Landroidx/recyclerview/widget/v;->b:I
 
     const/high16 v1, -0x80000000

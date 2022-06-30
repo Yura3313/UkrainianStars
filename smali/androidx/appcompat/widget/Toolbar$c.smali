@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/Toolbar$c;
+.class public final Landroidx/appcompat/widget/Toolbar$c;
 .super Ljava/lang/Object;
 .source "Toolbar.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/Toolbar;
+.field public final synthetic f:Landroidx/appcompat/widget/Toolbar;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/Toolbar;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/Toolbar$c;->g:Landroidx/appcompat/widget/Toolbar;
+    iput-object p1, p0, Landroidx/appcompat/widget/Toolbar$c;->f:Landroidx/appcompat/widget/Toolbar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,14 +34,14 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public final onClick(Landroid/view/View;)V
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$c;->g:Landroidx/appcompat/widget/Toolbar;
+    iget-object p1, p0, Landroidx/appcompat/widget/Toolbar$c;->f:Landroidx/appcompat/widget/Toolbar;
 
     .line 2
-    iget-object p1, p1, Landroidx/appcompat/widget/Toolbar;->Q:Landroidx/appcompat/widget/Toolbar$d;
+    iget-object p1, p1, Landroidx/appcompat/widget/Toolbar;->P:Landroidx/appcompat/widget/Toolbar$d;
 
     if-nez p1, :cond_0
 
@@ -52,7 +51,7 @@
 
     .line 3
     :cond_0
-    iget-object p1, p1, Landroidx/appcompat/widget/Toolbar$d;->h:Landroidx/appcompat/view/menu/g;
+    iget-object p1, p1, Landroidx/appcompat/widget/Toolbar$d;->g:Landroidx/appcompat/view/menu/g;
 
     :goto_0
     if-eqz p1, :cond_1

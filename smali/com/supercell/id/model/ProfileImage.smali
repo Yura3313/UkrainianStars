@@ -11,7 +11,8 @@
     value = {
         Lcom/supercell/id/model/ProfileImage$Empty;,
         Lcom/supercell/id/model/ProfileImage$Avatar;,
-        Lcom/supercell/id/model/ProfileImage$Image;
+        Lcom/supercell/id/model/ProfileImage$Image;,
+        Lcom/supercell/id/model/ProfileImage$b;
     }
 .end annotation
 
@@ -27,12 +28,22 @@
     .end annotation
 .end field
 
+.field public static final f:Lcom/supercell/id/model/ProfileImage$b;
+
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
+    new-instance v0, Lcom/supercell/id/model/ProfileImage$b;
+
     .line 1
+    invoke-direct {v0}, Lcom/supercell/id/model/ProfileImage$b;-><init>()V
+
+    .line 2
+    sput-object v0, Lcom/supercell/id/model/ProfileImage;->f:Lcom/supercell/id/model/ProfileImage$b;
+
+    .line 3
     new-instance v0, Lcom/supercell/id/model/ProfileImage$a;
 
     invoke-direct {v0}, Lcom/supercell/id/model/ProfileImage$a;-><init>()V
@@ -45,16 +56,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lle/g;)V
-    .locals 0
-
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,13 +63,13 @@
 
 
 # virtual methods
-.method public final b()Ljava/lang/String;
+.method public final a()Ljava/lang/String;
     .locals 1
 
     .line 1
     sget-object v0, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
 
-    invoke-static {p0, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -118,7 +119,7 @@
     throw v0
 .end method
 
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -126,10 +127,12 @@
     return v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    if-eqz p1, :cond_3
+    const-string p2, "dest"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -145,7 +148,7 @@
     .line 2
     sget-object p2, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
 
-    invoke-static {p0, p2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p2
 
@@ -192,14 +195,4 @@
     :cond_2
     :goto_0
     return-void
-
-    :cond_3
-    const-string p1, "dest"
-
-    .line 11
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

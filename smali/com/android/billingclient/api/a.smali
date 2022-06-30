@@ -11,11 +11,3 @@
 
     return-void
 .end method
-
-
-# virtual methods
-.method public abstract a()Z
-.end method
-
-.method public abstract b(Lcom/android/billingclient/api/i;Lcom/android/billingclient/api/j;)V
-.end method

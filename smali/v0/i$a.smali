@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/graphics/Matrix;-><init>()V
 
     return-void
@@ -26,10 +25,9 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "Matrix can not be modified"
@@ -39,10 +37,9 @@
     throw v0
 .end method
 
-.method public postConcat(Landroid/graphics/Matrix;)Z
+.method public final postConcat(Landroid/graphics/Matrix;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lv0/i$a;->a()V
 
     const/4 p1, 0x0
@@ -50,29 +47,7 @@
     throw p1
 .end method
 
-.method public postRotate(F)Z
-    .locals 0
-
-    .line 2
-    invoke-virtual {p0}, Lv0/i$a;->a()V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public postRotate(FFF)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lv0/i$a;->a()V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public postScale(FF)Z
+.method public final postRotate(F)Z
     .locals 0
 
     .line 2
@@ -83,7 +58,7 @@
     throw p1
 .end method
 
-.method public postScale(FFFF)Z
+.method public final postRotate(FFF)Z
     .locals 0
 
     .line 1
@@ -94,7 +69,7 @@
     throw p1
 .end method
 
-.method public postSkew(FF)Z
+.method public final postScale(FF)Z
     .locals 0
 
     .line 2
@@ -105,7 +80,7 @@
     throw p1
 .end method
 
-.method public postSkew(FFFF)Z
+.method public final postScale(FFFF)Z
     .locals 0
 
     .line 1
@@ -116,29 +91,7 @@
     throw p1
 .end method
 
-.method public postTranslate(FF)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lv0/i$a;->a()V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public preConcat(Landroid/graphics/Matrix;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lv0/i$a;->a()V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public preRotate(F)Z
+.method public final postSkew(FF)Z
     .locals 0
 
     .line 2
@@ -149,7 +102,7 @@
     throw p1
 .end method
 
-.method public preRotate(FFF)Z
+.method public final postSkew(FFFF)Z
     .locals 0
 
     .line 1
@@ -160,7 +113,27 @@
     throw p1
 .end method
 
-.method public preScale(FF)Z
+.method public final postTranslate(FF)Z
+    .locals 0
+
+    invoke-virtual {p0}, Lv0/i$a;->a()V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final preConcat(Landroid/graphics/Matrix;)Z
+    .locals 0
+
+    invoke-virtual {p0}, Lv0/i$a;->a()V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final preRotate(F)Z
     .locals 0
 
     .line 2
@@ -171,7 +144,7 @@
     throw p1
 .end method
 
-.method public preScale(FFFF)Z
+.method public final preRotate(FFF)Z
     .locals 0
 
     .line 1
@@ -182,7 +155,7 @@
     throw p1
 .end method
 
-.method public preSkew(FF)Z
+.method public final preScale(FF)Z
     .locals 0
 
     .line 2
@@ -193,7 +166,7 @@
     throw p1
 .end method
 
-.method public preSkew(FFFF)Z
+.method public final preScale(FFFF)Z
     .locals 0
 
     .line 1
@@ -204,7 +177,18 @@
     throw p1
 .end method
 
-.method public preTranslate(FF)Z
+.method public final preSkew(FF)Z
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0}, Lv0/i$a;->a()V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final preSkew(FFFF)Z
     .locals 0
 
     .line 1
@@ -215,10 +199,19 @@
     throw p1
 .end method
 
-.method public reset()V
+.method public final preTranslate(FF)Z
+    .locals 0
+
+    invoke-virtual {p0}, Lv0/i$a;->a()V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final reset()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lv0/i$a;->a()V
 
     const/4 v0, 0x0
@@ -226,10 +219,9 @@
     throw v0
 .end method
 
-.method public set(Landroid/graphics/Matrix;)V
+.method public final set(Landroid/graphics/Matrix;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lv0/i$a;->a()V
 
     const/4 p1, 0x0
@@ -237,10 +229,9 @@
     throw p1
 .end method
 
-.method public setConcat(Landroid/graphics/Matrix;Landroid/graphics/Matrix;)Z
+.method public final setConcat(Landroid/graphics/Matrix;Landroid/graphics/Matrix;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lv0/i$a;->a()V
 
     const/4 p1, 0x0
@@ -248,10 +239,9 @@
     throw p1
 .end method
 
-.method public setPolyToPoly([FI[FII)Z
+.method public final setPolyToPoly([FI[FII)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lv0/i$a;->a()V
 
     const/4 p1, 0x0
@@ -259,10 +249,9 @@
     throw p1
 .end method
 
-.method public setRectToRect(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z
+.method public final setRectToRect(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lv0/i$a;->a()V
 
     const/4 p1, 0x0
@@ -270,7 +259,7 @@
     throw p1
 .end method
 
-.method public setRotate(F)V
+.method public final setRotate(F)V
     .locals 0
 
     .line 2
@@ -281,7 +270,7 @@
     throw p1
 .end method
 
-.method public setRotate(FFF)V
+.method public final setRotate(FFF)V
     .locals 0
 
     .line 1
@@ -292,7 +281,7 @@
     throw p1
 .end method
 
-.method public setScale(FF)V
+.method public final setScale(FF)V
     .locals 0
 
     .line 2
@@ -303,7 +292,7 @@
     throw p1
 .end method
 
-.method public setScale(FFFF)V
+.method public final setScale(FFFF)V
     .locals 0
 
     .line 1
@@ -314,7 +303,7 @@
     throw p1
 .end method
 
-.method public setSinCos(FF)V
+.method public final setSinCos(FF)V
     .locals 0
 
     .line 2
@@ -325,7 +314,7 @@
     throw p1
 .end method
 
-.method public setSinCos(FFFF)V
+.method public final setSinCos(FFFF)V
     .locals 0
 
     .line 1
@@ -336,7 +325,7 @@
     throw p1
 .end method
 
-.method public setSkew(FF)V
+.method public final setSkew(FF)V
     .locals 0
 
     .line 2
@@ -347,7 +336,7 @@
     throw p1
 .end method
 
-.method public setSkew(FFFF)V
+.method public final setSkew(FFFF)V
     .locals 0
 
     .line 1
@@ -358,10 +347,9 @@
     throw p1
 .end method
 
-.method public setTranslate(FF)V
+.method public final setTranslate(FF)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lv0/i$a;->a()V
 
     const/4 p1, 0x0
@@ -369,10 +357,9 @@
     throw p1
 .end method
 
-.method public setValues([F)V
+.method public final setValues([F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lv0/i$a;->a()V
 
     const/4 p1, 0x0

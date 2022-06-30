@@ -1,519 +1,325 @@
-.class public Lra/a;
+.class public final Lra/a;
 .super Ljava/lang/Object;
-.source "SmartIntentRendererImpl.java"
+.source "AdminActionCardMessageViewDataBinder.java"
 
 # interfaces
-.implements Lm8/p;
-.implements Lra/n$c;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field public A:Landroid/view/View$OnClickListener;
+.field public final synthetic f:Lo8/c;
 
-.field public B:Landroid/view/View$OnClickListener;
-
-.field public a:Landroid/content/Context;
-
-.field public b:Lra/m;
-
-.field public c:Z
-
-.field public d:Landroid/view/View;
-
-.field public e:Landroid/view/View;
-
-.field public f:Landroid/view/View;
-
-.field public g:Landroid/view/View;
-
-.field public h:Landroid/widget/TextView;
-
-.field public i:Landroid/widget/ImageView;
-
-.field public j:Landroid/view/View;
-
-.field public k:Landroid/view/View;
-
-.field public l:Landroid/widget/TextView;
-
-.field public m:Landroid/widget/ImageView;
-
-.field public n:Landroid/widget/ImageButton;
-
-.field public o:Landroid/widget/ImageView;
-
-.field public p:Landroid/widget/ImageView;
-
-.field public q:Landroid/widget/TextView;
-
-.field public r:Landroid/widget/EditText;
-
-.field public s:Landroid/widget/TextView;
-
-.field public t:Landroidx/recyclerview/widget/RecyclerView;
-
-.field public u:Landroid/widget/ImageButton;
-
-.field public v:Lra/n;
-
-.field public w:Landroid/view/animation/Animation;
-
-.field public x:Landroid/view/animation/LayoutAnimationController;
-
-.field public y:Landroid/view/animation/LayoutAnimationController;
-
-.field public z:La9/b;
+.field public final synthetic g:Lra/b;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lra/m;Z)V
-    .locals 1
+.method public constructor <init>(Lra/b;Lo8/c;)V
+    .locals 0
 
-    .line 1
+    iput-object p1, p0, Lra/a;->g:Lra/b;
+
+    iput-object p2, p0, Lra/a;->f:Lo8/c;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Lra/a$a;
-
-    invoke-direct {v0, p0}, Lra/a$a;-><init>(Lra/a;)V
-
-    iput-object v0, p0, Lra/a;->A:Landroid/view/View$OnClickListener;
-
-    .line 3
-    new-instance v0, Lra/a$b;
-
-    invoke-direct {v0, p0}, Lra/a$b;-><init>(Lra/a;)V
-
-    iput-object v0, p0, Lra/a;->B:Landroid/view/View$OnClickListener;
-
-    .line 4
-    iput-object p1, p0, Lra/a;->a:Landroid/content/Context;
-
-    .line 5
-    iput-object p2, p0, Lra/a;->b:Lra/m;
-
-    .line 6
-    iput-boolean p3, p0, Lra/a;->c:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(La9/f;)V
-    .locals 5
+.method public final onClick(Landroid/view/View;)V
+    .locals 13
 
     .line 1
-    invoke-virtual {p0}, Lra/a;->g()V
+    iget-object p1, p0, Lra/a;->g:Lra/b;
+
+    iget-object p1, p1, Lra/u;->b:Lra/u$a;
+
+    iget-object v0, p0, Lra/a;->f:Lo8/c;
+
+    check-cast p1, Lqa/p0;
 
     .line 2
-    iget-object v0, p0, Lra/a;->j:Landroid/view/View;
+    iget-object p1, p1, Lqa/p0;->e:Lra/x;
 
-    const/16 v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    if-eqz p1, :cond_7
 
     .line 3
-    iget-object v0, p0, Lra/a;->f:Landroid/view/View;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    check-cast p1, Lqa/t;
 
     .line 4
-    iget-object v0, p0, Lra/a;->h:Landroid/widget/TextView;
-
-    iget-object v2, p1, La9/b;->a:Ljava/lang/String;
-
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    iget-object p1, p1, Lqa/t;->m0:Lf9/i;
 
     .line 5
-    iget-object v0, p0, Lra/a;->g:Landroid/view/View;
+    sget-object v1, Lq8/c;->h:Lq8/c;
 
-    invoke-static {v0, v1}, Lcom/helpshift/util/i;->b(Landroid/view/View;I)V
+    iget-object v2, p1, Lf9/i;->k:Ln8/p;
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
-    iget-object v0, p0, Lra/a;->l:Landroid/widget/TextView;
+    iget-object v3, v0, Lo8/y;->l:Ljava/lang/Long;
 
-    iget-object v2, p1, La9/b;->a:Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
 
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    move-result-wide v3
 
     .line 7
-    iget-object v0, p0, Lra/a;->t:Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
-
-    .line 8
-    iget-object v0, p0, Lra/a;->v:Lra/n;
-
-    new-instance v2, Ljava/util/ArrayList;
-
-    iget-object v3, p1, La9/f;->d:Ljava/util/List;
-
-    invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    .line 9
-    iget-object v3, v0, Lra/n;->c:Ljava/util/List;
-
-    invoke-interface {v3}, Ljava/util/List;->clear()V
-
-    .line 10
-    iget-object v3, v0, Lra/n;->c:Ljava/util/List;
-
-    invoke-interface {v3, v2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
-
-    .line 11
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$f;->b()V
-
-    .line 12
-    iget-object v0, p0, Lra/a;->r:Landroid/widget/EditText;
-
-    iget-object v2, p1, La9/f;->c:Ljava/lang/String;
-
-    invoke-virtual {v0, v2}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
-
-    .line 13
-    invoke-virtual {p0}, Lra/a;->f()Lcom/helpshift/support/conversations/smartintent/SmartIntentBottomSheetBehavior;
-
-    move-result-object v0
-
-    .line 14
-    iget v2, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->y:I
-
-    const/4 v3, 0x4
-
-    if-eq v2, v3, :cond_0
-
-    .line 15
-    invoke-virtual {v0, v3}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->E(I)V
-
-    .line 16
-    :cond_0
-    iget-object v2, p0, Lra/a;->a:Landroid/content/Context;
-
-    iget-object v3, p0, Lra/a;->i:Landroid/widget/ImageView;
-
-    invoke-virtual {v3}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v3
-
-    const v4, 0x1010036
-
-    invoke-static {v2, v3, v4}, Lcom/helpshift/util/z;->d(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
-
-    .line 17
-    iget-boolean v2, p0, Lra/a;->c:Z
-
-    const/4 v3, 0x1
-
-    if-eqz v2, :cond_1
-
-    .line 18
-    iput-boolean v1, v0, Lcom/helpshift/views/bottomsheet/HSBottomSheetBehaviour;->Q:Z
-
-    goto :goto_0
-
-    .line 19
-    :cond_1
-    iput-boolean v3, v0, Lcom/helpshift/views/bottomsheet/HSBottomSheetBehaviour;->Q:Z
-
-    .line 20
-    :goto_0
-    iget-object v0, p0, Lra/a;->a:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    sget v2, Lcom/helpshift/R$string;->hs__picker_options_expand_header_voice_over:I
-
-    new-array v3, v3, [Ljava/lang/Object;
-
-    iget-object p1, p1, La9/b;->a:Ljava/lang/String;
-
-    aput-object p1, v3, v1
-
-    invoke-virtual {v0, v2, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 21
-    iget-object v0, p0, Lra/a;->f:Landroid/view/View;
-
-    invoke-virtual {v0, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    return-void
-.end method
-
-.method public final b()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lra/a;->f:Landroid/view/View;
-
-    invoke-static {v0}, Lcom/helpshift/util/p;->c(Landroid/view/View;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lra/a;->j:Landroid/view/View;
-
-    .line 2
-    invoke-static {v0}, Lcom/helpshift/util/p;->a(Landroid/view/View;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lra/a;->f:Landroid/view/View;
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lcom/helpshift/util/i;->b(Landroid/view/View;I)V
-
-    .line 4
-    iget-object v0, p0, Lra/a;->j:Landroid/view/View;
-
-    invoke-static {v0, v1}, Lcom/helpshift/util/i;->a(Landroid/view/View;I)V
-
-    return-void
-.end method
-
-.method public final c()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lra/a;->u:Landroid/widget/ImageButton;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setEnabled(Z)V
-
-    .line 2
-    iget-object v0, p0, Lra/a;->a:Landroid/content/Context;
-
-    sget v2, Lcom/helpshift/R$attr;->hs__reply_button_disabled_alpha:I
-
-    .line 3
-    invoke-static {v0, v2}, Lgb/f;->b(Landroid/content/Context;I)I
-
-    move-result v0
-
-    .line 4
-    iget-object v2, p0, Lra/a;->u:Landroid/widget/ImageButton;
-
-    .line 5
-    invoke-virtual {v2, v0}, Landroid/widget/ImageButton;->setImageAlpha(I)V
-
-    .line 6
-    iget-object v0, p0, Lra/a;->a:Landroid/content/Context;
-
-    iget-object v2, p0, Lra/a;->u:Landroid/widget/ImageButton;
-
-    .line 7
-    invoke-virtual {v2}, Landroid/widget/ImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v2}, Ln8/p;->d()Ljava/util/List;
 
     move-result-object v2
 
-    invoke-static {v0, v2, v1}, Lgb/f;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;Z)V
+    .line 8
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    return-void
-.end method
+    move-result-object v2
 
-.method public d(Z)V
-    .locals 4
-
-    const/4 v0, 0x0
-
-    .line 1
-    iput-object v0, p0, Lra/a;->z:La9/b;
-
-    if-eqz p1, :cond_0
-
-    .line 2
-    iget-object p1, p0, Lra/a;->d:Landroid/view/View;
-
-    if-eqz p1, :cond_0
-
-    iget-object v1, p0, Lra/a;->w:Landroid/view/animation/Animation;
-
-    if-eqz v1, :cond_0
-
-    .line 3
-    invoke-virtual {p1, v1}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
-
-    .line 4
     :cond_0
-    iget-object p1, p0, Lra/a;->b:Lra/m;
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    check-cast p1, Loa/t;
+    move-result v5
 
-    .line 5
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
+    if-eqz v5, :cond_1
 
-    .line 6
-    check-cast p1, Lya/p;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 7
-    iget-object v1, p1, Lya/p;->H0:Landroid/widget/FrameLayout;
+    move-result-object v5
 
-    invoke-virtual {v1}, Landroid/widget/FrameLayout;->getVisibility()I
+    check-cast v5, Lq8/d;
 
-    move-result v1
+    .line 9
+    iget-object v6, v5, Lq8/d;->g:Ljava/lang/Long;
 
-    const/16 v2, 0x8
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    if-ne v1, v2, :cond_1
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Ljava/lang/Long;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_0
 
     goto :goto_0
 
     :cond_1
-    const-string v1, "Helpshift_SupportFrag"
-
-    const-string v3, "hideBottomSheetViewContainer called"
-
-    .line 8
-    invoke-static {v1, v3, v0, v0}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
-
-    .line 9
-    iget-object v0, p1, Lya/p;->H0:Landroid/widget/FrameLayout;
-
-    invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
+    const/4 v5, 0x0
 
     .line 10
-    iget-object v0, p1, Lya/p;->H0:Landroid/widget/FrameLayout;
+    :goto_0
+    iget-object v2, v0, Lo8/c;->A:Lq8/b;
 
-    invoke-virtual {v0, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
+    iget-object v2, v2, Lq8/b;->j:Lq8/a;
 
     .line 11
-    iget-object v0, p1, Lya/p;->I0:Landroid/widget/LinearLayout;
+    iget-object v3, v2, Lq8/a;->j:Lq8/c;
 
-    const/4 v1, 0x0
+    sget-object v4, Lq8/c;->g:Lq8/c;
 
-    const/16 v2, 0x12c
+    const-string v6, "url"
+
+    const-string v7, ""
+
+    const-string v8, "phone_number"
+
+    if-ne v3, v4, :cond_2
 
     .line 12
-    new-instance v3, Lya/q;
+    iget-object v3, v2, Lq8/a;->i:Ljava/util/Map;
 
-    invoke-direct {v3, p1, v0, v1}, Lya/q;-><init>(Lya/p;Landroid/view/View;I)V
+    invoke-interface {v3, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    int-to-long v0, v2
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    goto :goto_1
+
+    :cond_2
+    if-ne v3, v1, :cond_3
 
     .line 13
-    invoke-virtual {v3, v0, v1}, Landroid/view/animation/Animation;->setDuration(J)V
+    iget-object v3, v2, Lq8/a;->i:Ljava/util/Map;
+
+    invoke-interface {v3, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    goto :goto_1
+
+    :cond_3
+    move-object v3, v7
 
     .line 14
-    iget-object p1, p1, Lya/p;->I0:Landroid/widget/LinearLayout;
+    :goto_1
+    iget-object v9, v0, Lo8/y;->t:La8/f;
 
-    invoke-virtual {p1, v3}, Landroid/widget/LinearLayout;->startAnimation(Landroid/view/animation/Animation;)V
+    .line 15
+    iget-object v9, v9, La8/f;->j:Ls9/h;
 
-    :goto_0
-    return-void
-.end method
+    .line 16
+    iget-object v10, v2, Lq8/a;->j:Lq8/c;
 
-.method public final e()V
-    .locals 3
+    .line 17
+    iget-object v11, v9, Ls9/h;->b:Ls9/b;
 
-    .line 1
-    iget-object v0, p0, Lra/a;->f:Landroid/view/View;
+    if-eqz v11, :cond_4
 
-    invoke-static {v0}, Lcom/helpshift/util/p;->a(Landroid/view/View;)Z
+    .line 18
+    iget-object v11, v9, Ls9/h;->a:La8/f;
 
-    move-result v0
+    new-instance v12, Ls9/c;
 
-    if-eqz v0, :cond_0
+    invoke-direct {v12, v9, v10, v3}, Ls9/c;-><init>(Ls9/h;Lq8/c;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lra/a;->j:Landroid/view/View;
+    invoke-virtual {v11, v12}, La8/f;->g(La8/g;)V
 
-    .line 2
-    invoke-static {v0}, Lcom/helpshift/util/p;->c(Landroid/view/View;)Z
+    .line 19
+    :cond_4
+    new-instance v3, Ljava/util/HashMap;
 
-    move-result v0
+    invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    if-eqz v0, :cond_0
+    .line 20
+    iget-object v5, v5, Lq8/d;->h:Ljava/lang/String;
 
-    return-void
+    const-string v9, "issue_id"
 
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lra/a;->f:Landroid/view/View;
+    .line 21
+    invoke-virtual {v3, v9, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v1, 0x0
+    .line 22
+    iget-object v5, v0, Lo8/c;->z:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lcom/helpshift/util/i;->a(Landroid/view/View;I)V
+    const-string v9, "mid"
 
-    .line 4
-    iget-object v0, p0, Lra/a;->j:Landroid/view/View;
+    invoke-virtual {v3, v9, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/helpshift/util/i;->b(Landroid/view/View;I)V
+    .line 23
+    iget-object v5, v2, Lq8/a;->g:Ljava/lang/String;
 
-    .line 5
-    iget-object v0, p0, Lra/a;->o:Landroid/widget/ImageView;
+    const-string v9, "a"
 
-    const/16 v1, 0x64
+    invoke-virtual {v3, v9, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v2, 0x0
+    .line 24
+    iget-object v2, v2, Lq8/a;->j:Lq8/c;
 
-    invoke-static {v0, v1, v2}, Lcom/helpshift/util/i;->c(Landroid/view/View;IF)V
+    .line 25
+    iget-object v2, v2, Lq8/c;->f:Ljava/lang/String;
 
-    return-void
-.end method
+    const-string v5, "type"
 
-.method public f()Lcom/helpshift/support/conversations/smartintent/SmartIntentBottomSheetBehavior;
-    .locals 1
+    .line 26
+    invoke-virtual {v3, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1
-    iget-object v0, p0, Lra/a;->d:Landroid/view/View;
+    .line 27
+    iget-object v2, v0, Lo8/y;->t:La8/f;
 
-    invoke-static {v0}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->z(Landroid/view/View;)Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    .line 28
+    iget-object v2, v2, La8/f;->h:Lk7/a;
+
+    const/16 v5, 0x1f
+
+    .line 29
+    invoke-virtual {v2, v5, v3}, Lk7/a;->d(ILjava/util/Map;)V
+
+    .line 30
+    iget-object p1, p1, Lf9/i;->n:Ln8/l;
+
+    .line 31
+    iget-object v0, v0, Lo8/c;->A:Lq8/b;
+
+    iget-object v0, v0, Lq8/b;->j:Lq8/a;
+
+    .line 32
+    iget-object v2, v0, Lq8/a;->j:Lq8/c;
+
+    if-ne v2, v4, :cond_5
+
+    const-string v1, "tel:"
+
+    .line 33
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    .line 34
+    iget-object v0, v0, Lq8/a;->i:Ljava/util/Map;
+
+    invoke-interface {v0, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/helpshift/support/conversations/smartintent/SmartIntentBottomSheetBehavior;
+    check-cast v0, Ljava/lang/String;
 
-    return-object v0
-.end method
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method public final g()V
-    .locals 2
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 1
-    iget-object v0, p0, Lra/a;->r:Landroid/widget/EditText;
+    move-result-object v7
 
-    if-eqz v0, :cond_0
+    goto :goto_2
 
-    .line 2
-    iget-object v1, p0, Lra/a;->a:Landroid/content/Context;
+    :cond_5
+    if-ne v2, v1, :cond_6
 
-    invoke-static {v1, v0}, Lr5/a;->a(Landroid/content/Context;Landroid/view/View;)V
+    .line 35
+    iget-object v0, v0, Lq8/a;->i:Ljava/util/Map;
 
-    :cond_0
+    invoke-interface {v0, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v7, v0
+
+    check-cast v7, Ljava/lang/String;
+
+    .line 36
+    :cond_6
+    :goto_2
+    check-cast p1, Lqa/e0;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 37
+    invoke-static {v7}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    .line 38
+    new-instance v1, Landroid/content/Intent;
+
+    const-string v2, "android.intent.action.VIEW"
+
+    invoke-direct {v1, v2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    const-string v0, "origin"
+
+    const-string v2, "helpshift"
+
+    .line 39
+    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 40
+    :try_start_0
+    iget-object v0, p1, Lqa/e0;->g:Landroid/content/Context;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_3
+
+    .line 41
+    :catch_0
+    sget-object v0, Ld8/d;->f:Ld8/d;
+
+    invoke-virtual {p1, v0}, Lqa/e0;->t(Ld8/a;)V
+
+    :cond_7
+    :goto_3
     return-void
-.end method
-
-.method public final h()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lra/a;->z:La9/b;
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
 .end method

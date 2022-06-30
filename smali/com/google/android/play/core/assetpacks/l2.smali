@@ -6,7 +6,7 @@
 
 
 # static fields
-.field public static final a:Ljava/util/concurrent/ThreadFactory;
+.field public static final a:Lcom/google/android/play/core/assetpacks/l2;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/l2;-><init>()V
 
-    sput-object v0, Lcom/google/android/play/core/assetpacks/l2;->a:Ljava/util/concurrent/ThreadFactory;
+    sput-object v0, Lcom/google/android/play/core/assetpacks/l2;->a:Lcom/google/android/play/core/assetpacks/l2;
 
     return-void
 .end method
@@ -37,7 +37,7 @@
 
     new-instance v0, Ljava/lang/Thread;
 
-    const-string v1, "UpdateListenerExecutor"
+    const-string v1, "AssetPackBackgroundExecutor"
 
     invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 

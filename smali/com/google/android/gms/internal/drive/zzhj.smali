@@ -13,7 +13,7 @@
 
 
 # virtual methods
-.method public final H6(Lcom/google/android/gms/internal/drive/zzfn;)V
+.method public final D6(Lcom/google/android/gms/internal/drive/zzfn;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -22,10 +22,10 @@
     .end annotation
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfn;->g:Lcom/google/android/gms/drive/DriveId;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfn;->f:Lcom/google/android/gms/drive/DriveId;
 
     .line 2
-    iget p1, p1, Lcom/google/android/gms/drive/DriveId;->j:I
+    iget p1, p1, Lcom/google/android/gms/drive/DriveId;->i:I
 
     const/4 v0, 0x1
 

@@ -66,11 +66,11 @@
 
     invoke-direct {p2, p0}, Lcom/unbotify/mobile/sdk/managers/ReportManager$1;-><init>(Lcom/unbotify/mobile/sdk/managers/ReportManager;)V
 
-    invoke-virtual {p1, p2}, Landroid/os/HandlerThread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
+    invoke-virtual {p1, p2}, Ljava/lang/Thread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
     iget-object p1, p0, Lcom/unbotify/mobile/sdk/managers/ReportManager;->thread:Landroid/os/HandlerThread;
 
-    invoke-virtual {p1}, Landroid/os/HandlerThread;->start()V
+    invoke-virtual {p1}, Ljava/lang/Thread;->start()V
 
     new-instance p1, Lcom/unbotify/mobile/sdk/managers/ReportManager$ReportHandler;
 

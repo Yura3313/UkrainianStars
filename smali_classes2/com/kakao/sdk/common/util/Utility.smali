@@ -11,7 +11,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakao/sdk/common/util/Utility;
 
     invoke-direct {v0}, Lcom/kakao/sdk/common/util/Utility;-><init>()V
@@ -24,7 +23,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -50,9 +48,9 @@
 
     const-string v1, "(this as java.lang.String).getBytes(charset)"
 
-    const/4 v2, 0x0
+    const-string v2, "context"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     :try_start_0
@@ -60,56 +58,59 @@
 
     move-result-object p1
 
-    const-string v3, "android_id"
+    const-string v2, "android_id"
 
-    invoke-static {p1, v3}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v2}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    const-string v3, "androidId"
+    const-string v2, "androidId"
 
     .line 2
-    invoke-static {p1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v3, "[0\\s]"
+    const-string v2, "[0\\s]"
 
     .line 3
-    invoke-static {v3}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+    invoke-static {v2}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
-    move-result-object v3
+    move-result-object v2
 
-    const-string v4, "Pattern.compile(pattern)"
+    const-string v3, "Pattern.compile(pattern)"
 
-    invoke-static {v3, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v3, :cond_1
-
-    const-string v2, ""
+    const-string v3, "nativePattern"
 
     .line 4
-    invoke-virtual {v3, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    invoke-static {v2, v3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v3, ""
+
+    .line 5
+    invoke-virtual {v2, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object p1
 
-    invoke-virtual {p1, v2}, Ljava/util/regex/Matcher;->replaceAll(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v3}, Ljava/util/regex/Matcher;->replaceAll(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     const-string v2, "nativePattern.matcher(in\u2026).replaceAll(replacement)"
 
-    invoke-static {p1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v2, "SHA-256"
 
-    .line 5
+    .line 6
     invoke-static {v2}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object v2
 
-    .line 6
+    .line 7
     invoke-virtual {v2}, Ljava/security/MessageDigest;->reset()V
 
-    .line 7
+    .line 8
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -124,7 +125,7 @@
 
     move-result-object p1
 
-    sget-object v3, Lre/a;->a:Ljava/nio/charset/Charset;
+    sget-object v3, Lye/a;->a:Ljava/nio/charset/Charset;
 
     if-eqz p1, :cond_0
 
@@ -132,36 +133,28 @@
 
     move-result-object p1
 
-    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2, p1}, Ljava/security/MessageDigest;->update([B)V
 
-    .line 8
+    .line 9
     invoke-virtual {v2}, Ljava/security/MessageDigest;->digest()[B
 
     move-result-object p1
 
     const-string v2, "md.digest()"
 
-    invoke-static {p1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 9
+    .line 10
     :cond_0
     new-instance p1, Lkotlin/TypeCastException;
 
     invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
 
     throw p1
-
-    :cond_1
-    const-string p1, "nativePattern"
-
-    .line 10
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v2
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -175,41 +168,36 @@
 
     move-result-object p1
 
+    .line 12
     sget-object v2, Landroid/os/Build;->PRODUCT:Ljava/lang/String;
 
     const-string v3, "a23456789012345bcdefg"
 
-    invoke-static {p1, v2, v3}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 13
+    invoke-static {p1, v2, v3}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    sget-object v2, Lre/a;->a:Ljava/nio/charset/Charset;
+    .line 14
+    sget-object v2, Lye/a;->a:Ljava/nio/charset/Charset;
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_1
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
     move-result-object p1
 
-    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_0
     return-object p1
 
-    :cond_2
+    :cond_1
     new-instance p1, Lkotlin/TypeCastException;
 
     invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
 
     throw p1
-
-    :cond_3
-    const-string p1, "context"
-
-    .line 12
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v2
 .end method
 
 .method public final buildQuery(Ljava/util/Map;)Ljava/lang/String;
@@ -382,11 +370,13 @@
 .method public final getExtras(Landroid/content/Context;Lcom/kakao/sdk/common/KakaoSdk$Type;)Lcom/google/gson/JsonObject;
     .locals 3
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string v0, "sdkType"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lcom/google/gson/JsonObject;
@@ -423,130 +413,117 @@
     invoke-virtual {v0, p2, p1}, Lcom/google/gson/JsonObject;->addProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "sdkType"
-
-    .line 7
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public final getJson(Ljava/lang/String;)Ljava/lang/String;
-    .locals 10
+    .locals 9
 
-    const/4 v0, 0x0
+    const-string v0, "path"
 
-    if-eqz p1, :cond_6
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    const-class v1, Lcom/kakao/sdk/common/util/Utility;
+    const-class v0, Lcom/kakao/sdk/common/util/Utility;
 
-    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    invoke-virtual {v1, p1}, Ljava/lang/ClassLoader;->getResource(Ljava/lang/String;)Ljava/net/URL;
+    invoke-virtual {v0, p1}, Ljava/lang/ClassLoader;->getResource(Ljava/lang/String;)Ljava/net/URL;
 
     move-result-object p1
 
     .line 3
-    new-instance v1, Ljava/io/File;
+    new-instance v0, Ljava/io/File;
 
-    const-string v2, "uri"
+    const-string v1, "uri"
 
-    invoke-static {p1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljava/net/URL;->getPath()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 4
     new-instance p1, Ljava/io/FileInputStream;
 
-    invoke-direct {p1, v1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+    invoke-direct {p1, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    invoke-static {p1, v1}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
+    invoke-static {p1, v0}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
 
     move-result-object p1
 
     .line 5
     :try_start_0
-    invoke-virtual {v1}, Ljava/io/File;->length()J
+    invoke-virtual {v0}, Ljava/io/File;->length()J
 
-    move-result-wide v2
+    move-result-wide v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const v4, 0x7fffffff
+    const v3, 0x7fffffff
 
-    int-to-long v4, v4
+    int-to-long v3, v3
 
-    const-string v6, "File "
+    const-string v5, "File "
 
-    cmp-long v7, v2, v4
+    cmp-long v6, v1, v3
 
-    if-gtz v7, :cond_5
+    if-gtz v6, :cond_5
 
-    long-to-int v3, v2
+    long-to-int v2, v1
 
     .line 6
     :try_start_1
-    new-array v2, v3, [B
+    new-array v1, v2, [B
 
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
-    move v5, v3
+    move v4, v2
 
-    const/4 v7, 0x0
+    const/4 v6, 0x0
 
     :goto_0
-    if-lez v5, :cond_1
+    if-lez v4, :cond_1
 
     .line 7
-    invoke-virtual {p1, v2, v7, v5}, Ljava/io/FileInputStream;->read([BII)I
+    invoke-virtual {p1, v1, v6, v4}, Ljava/io/FileInputStream;->read([BII)I
 
-    move-result v8
+    move-result v7
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    if-gez v8, :cond_0
+    if-gez v7, :cond_0
 
     goto :goto_1
 
     :cond_0
-    sub-int/2addr v5, v8
+    sub-int/2addr v4, v7
 
-    add-int/2addr v7, v8
+    add-int/2addr v6, v7
 
     goto :goto_0
 
     :cond_1
     :goto_1
-    const-string v8, "java.util.Arrays.copyOf(this, newSize)"
+    const-string v7, "java.util.Arrays.copyOf(this, newSize)"
 
-    if-lez v5, :cond_2
+    const/4 v8, 0x0
+
+    if-lez v4, :cond_2
 
     .line 8
     :try_start_2
-    invoke-static {v2, v7}, Ljava/util/Arrays;->copyOf([BI)[B
+    invoke-static {v1, v6}, Ljava/util/Arrays;->copyOf([BI)[B
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-static {v2, v8}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_2
 
@@ -554,130 +531,126 @@
     :cond_2
     invoke-virtual {p1}, Ljava/io/FileInputStream;->read()I
 
-    move-result v5
+    move-result v4
 
-    const/4 v7, -0x1
+    const/4 v6, -0x1
 
-    if-ne v5, v7, :cond_3
+    if-ne v4, v6, :cond_3
 
     goto :goto_2
 
     .line 10
     :cond_3
-    new-instance v7, Lie/b;
+    new-instance v6, Lpe/b;
 
-    const/16 v9, 0x2001
-
-    invoke-direct {v7, v9}, Lie/b;-><init>(I)V
+    invoke-direct {v6}, Lpe/b;-><init>()V
 
     .line 11
-    invoke-virtual {v7, v5}, Ljava/io/ByteArrayOutputStream;->write(I)V
-
-    const/4 v5, 0x2
+    invoke-virtual {v6, v4}, Ljava/io/OutputStream;->write(I)V
 
     .line 12
-    invoke-static {p1, v7, v4, v5}, Lie/a;->d(Ljava/io/InputStream;Ljava/io/OutputStream;II)J
+    invoke-static {p1, v6}, Lpe/a;->a(Ljava/io/InputStream;Ljava/io/OutputStream;)J
 
     .line 13
-    invoke-virtual {v7}, Ljava/io/ByteArrayOutputStream;->size()I
+    invoke-virtual {v6}, Ljava/io/ByteArrayOutputStream;->size()I
 
-    move-result v5
+    move-result v4
 
-    add-int/2addr v5, v3
+    add-int/2addr v4, v2
 
-    if-ltz v5, :cond_4
+    if-ltz v4, :cond_4
 
     .line 14
-    invoke-virtual {v7}, Lie/b;->a()[B
+    invoke-virtual {v6}, Lpe/b;->a()[B
+
+    move-result-object v0
+
+    .line 15
+    invoke-static {v1, v4}, Ljava/util/Arrays;->copyOf([BI)[B
 
     move-result-object v1
 
-    .line 15
-    invoke-static {v2, v5}, Ljava/util/Arrays;->copyOf([BI)[B
-
-    move-result-object v2
-
-    invoke-static {v2, v8}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 16
-    invoke-virtual {v7}, Ljava/io/ByteArrayOutputStream;->size()I
+    invoke-virtual {v6}, Ljava/io/ByteArrayOutputStream;->size()I
 
-    move-result v5
+    move-result v4
 
-    sub-int/2addr v5, v4
+    sub-int/2addr v4, v3
 
     .line 17
-    invoke-static {v1, v4, v2, v3, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v0, v3, v1, v2, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 18
     :goto_2
-    invoke-static {p1, v0}, Ls3/b;->d(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {p1, v8}, Lud/l;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 19
     new-instance p1, Ljava/lang/String;
 
-    sget-object v0, Lre/a;->a:Ljava/nio/charset/Charset;
+    sget-object v0, Lye/a;->a:Ljava/nio/charset/Charset;
 
-    invoke-direct {p1, v2, v0}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+    invoke-direct {p1, v1, v0}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
     return-object p1
 
     .line 20
     :cond_4
     :try_start_3
-    new-instance v0, Ljava/lang/OutOfMemoryError;
+    new-instance v1, Ljava/lang/OutOfMemoryError;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, " is too big to fit in memory."
+    const-string v0, " is too big to fit in memory."
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-direct {v0, v1}, Ljava/lang/OutOfMemoryError;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Ljava/lang/OutOfMemoryError;-><init>(Ljava/lang/String;)V
 
-    throw v0
+    throw v1
 
     .line 21
     :cond_5
-    new-instance v0, Ljava/lang/OutOfMemoryError;
+    new-instance v3, Ljava/lang/OutOfMemoryError;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, " is too big ("
+    const-string v0, " is too big ("
 
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    const-string v1, " bytes) to fit in memory."
+    const-string v0, " bytes) to fit in memory."
 
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-direct {v0, v1}, Ljava/lang/OutOfMemoryError;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v0}, Ljava/lang/OutOfMemoryError;-><init>(Ljava/lang/String;)V
 
-    throw v0
+    throw v3
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -693,20 +666,12 @@
     :catchall_1
     move-exception v1
 
-    invoke-static {p1, v0}, Ls3/b;->d(Ljava/io/Closeable;Ljava/lang/Throwable;)V
-
-    throw v1
-
-    :cond_6
-    const-string p1, "path"
-
-    .line 23
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lud/l;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     goto :goto_4
 
     :goto_3
-    throw v0
+    throw v1
 
     :goto_4
     goto :goto_3
@@ -715,9 +680,10 @@
 .method public final getJsonArray(Ljava/lang/String;)Lcom/google/gson/JsonArray;
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string v0, "path"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->INSTANCE:Lcom/kakao/sdk/common/util/KakaoJson;
 
     invoke-virtual {p0, p1}, Lcom/kakao/sdk/common/util/Utility;->getJson(Ljava/lang/String;)Ljava/lang/String;
@@ -733,24 +699,15 @@
     check-cast p1, Lcom/google/gson/JsonArray;
 
     return-object p1
-
-    :cond_0
-    const-string p1, "path"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final getJsonObject(Ljava/lang/String;)Lcom/google/gson/JsonObject;
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string v0, "path"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->INSTANCE:Lcom/kakao/sdk/common/util/KakaoJson;
 
     invoke-virtual {p0, p1}, Lcom/kakao/sdk/common/util/Utility;->getJson(Ljava/lang/String;)Ljava/lang/String;
@@ -766,26 +723,18 @@
     check-cast p1, Lcom/google/gson/JsonObject;
 
     return-object p1
-
-    :cond_0
-    const-string p1, "path"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final getKAHeader(Landroid/content/Context;Lcom/kakao/sdk/common/KakaoSdk$Type;)Ljava/lang/String;
     .locals 7
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "sdkType"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v0, 0x11
 
@@ -809,16 +758,14 @@
 
     aput-object v5, v1, v2
 
-    const/4 v2, 0x3
-
     .line 1
-    sget-object v5, Lcom/kakao/sdk/common/util/Utility$WhenMappings;->$EnumSwitchMapping$0:[I
+    sget-object v2, Lcom/kakao/sdk/common/util/Utility$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
 
     move-result p2
 
-    aget p2, v5, p2
+    aget p2, v2, p2
 
     if-eq p2, v4, :cond_0
 
@@ -830,6 +777,8 @@
     const-string p2, "rx-kotlin"
 
     :goto_0
+    const/4 v2, 0x3
+
     aput-object p2, v1, v2
 
     const/4 p2, 0x4
@@ -864,7 +813,7 @@
 
     const-string v4, "Locale.getDefault()"
 
-    invoke-static {v2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
 
@@ -872,7 +821,7 @@
 
     const-string v5, "Locale.getDefault().language"
 
-    invoke-static {v2, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -880,7 +829,7 @@
 
     const-string v5, "(this as java.lang.String).toLowerCase()"
 
-    invoke-static {v2, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     aput-object v2, v1, p2
 
@@ -891,7 +840,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
 
@@ -899,7 +848,7 @@
 
     const-string v4, "Locale.getDefault().country"
 
-    invoke-static {v2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
@@ -907,7 +856,7 @@
 
     const-string v4, "(this as java.lang.String).toUpperCase()"
 
-    invoke-static {v2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     aput-object v2, v1, p2
 
@@ -939,7 +888,7 @@
 
     const-string v5, "Build.MODEL"
 
-    invoke-static {v2, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v5, "\\s"
 
@@ -950,7 +899,7 @@
 
     const-string v6, "Pattern.compile(pattern)"
 
-    invoke-static {v5, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 8
     invoke-virtual {v5, v2}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
@@ -965,14 +914,14 @@
 
     const-string v5, "nativePattern.matcher(in\u2026).replaceAll(replacement)"
 
-    invoke-static {v2, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     invoke-virtual {v2}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     aput-object v2, v1, p2
 
@@ -1029,50 +978,26 @@
 
     const-string p2, "java.lang.String.format(format, *args)"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
-
-    :cond_1
-    const-string p1, "sdkType"
-
-    .line 13
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public final getKeyHash(Landroid/content/Context;)Ljava/lang/String;
-    .locals 0
+    .locals 1
     .annotation build Landroid/annotation/TargetApi;
         value = 0x1c
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "context"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-virtual {p0, p1}, Lcom/kakao/sdk/common/util/Utility;->getKeyHashDeprecated(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "context"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final getKeyHashDeprecated(Landroid/content/Context;)Ljava/lang/String;
@@ -1083,7 +1008,9 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_1
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -1106,11 +1033,11 @@
 
     array-length v0, p1
 
-    const/4 v1, 0x0
-
     if-lez v0, :cond_0
 
-    aget-object p1, p1, v1
+    const/4 v0, 0x0
+
+    aget-object p1, p1, v0
 
     const-string v0, "SHA"
 
@@ -1139,7 +1066,7 @@
 
     const-string v0, "Base64.encodeToString(md.digest(), Base64.NO_WRAP)"
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 
@@ -1150,26 +1077,18 @@
     invoke-direct {p1}, Ljava/lang/IllegalStateException;-><init>()V
 
     throw p1
-
-    :cond_1
-    const-string p1, "context"
-
-    .line 8
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final getMetadata(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string v0, "key"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -1190,7 +1109,7 @@
 
     const-string v0, "context.packageManager.g\u2026r.GET_META_DATA\n        )"
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     iget-object p1, p1, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
@@ -1200,33 +1119,19 @@
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "key"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public final hasAndNotNull(Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "jsonObject"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "key"
 
-    .line 1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-virtual {p1, p2}, Lcom/google/gson/JsonObject;->has(Ljava/lang/String;)Z
 
     move-result v0
@@ -1250,21 +1155,6 @@
 
     :goto_0
     return p1
-
-    :cond_1
-    const-string p1, "key"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "jsonObject"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public final parseQuery(Ljava/lang/String;)Ljava/util/Map;
@@ -1284,7 +1174,7 @@
     if-nez p1, :cond_0
 
     .line 1
-    sget-object p1, Lbe/n;->g:Lbe/n;
+    sget-object p1, Lje/m;->f:Lje/m;
 
     return-object p1
 
@@ -1293,16 +1183,16 @@
 
     new-array v1, v0, [Ljava/lang/String;
 
-    const-string v2, "&"
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    const-string v3, "&"
 
-    aput-object v2, v1, v3
+    aput-object v3, v1, v2
 
-    const/4 v2, 0x6
+    const/4 v3, 0x6
 
     .line 2
-    invoke-static {p1, v1, v3, v3, v2}, Lre/r;->A(Ljava/lang/CharSequence;[Ljava/lang/String;ZII)Ljava/util/List;
+    invoke-static {p1, v1, v2, v3}, Lye/r;->z(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
     move-result-object p1
 
@@ -1311,7 +1201,7 @@
 
     const/16 v4, 0xa
 
-    invoke-static {p1, v4}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v4}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
     move-result v5
 
@@ -1340,14 +1230,14 @@
 
     const-string v7, "="
 
-    aput-object v7, v6, v3
+    aput-object v7, v6, v2
 
     .line 6
-    invoke-static {v5, v6, v3, v3, v2}, Lre/r;->A(Ljava/lang/CharSequence;[Ljava/lang/String;ZII)Ljava/util/List;
+    invoke-static {v5, v6, v2, v3}, Lye/r;->z(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
     move-result-object v5
 
-    invoke-interface {v1, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
@@ -1358,7 +1248,7 @@
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     .line 8
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
@@ -1366,15 +1256,15 @@
     :goto_1
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_4
+    if-eqz v3, :cond_4
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    move-object v5, v2
+    move-object v5, v3
 
     check-cast v5, Ljava/util/List;
 
@@ -1395,7 +1285,7 @@
     :goto_2
     if-eqz v5, :cond_2
 
-    invoke-interface {p1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
@@ -1403,45 +1293,45 @@
     :cond_4
     new-instance v1, Ljava/util/ArrayList;
 
-    invoke-static {p1, v4}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v4}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
-    move-result v2
+    move-result v3
 
-    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 11
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
     :goto_3
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_5
+    if-eqz v3, :cond_5
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
     .line 12
-    check-cast v2, Ljava/util/List;
+    check-cast v3, Ljava/util/List;
 
     .line 13
-    new-instance v4, Lae/d;
+    new-instance v4, Lie/d;
 
-    invoke-interface {v2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v3, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-direct {v4, v5, v2}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, v5, v3}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    invoke-interface {v1, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
@@ -1452,7 +1342,7 @@
     invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
 
     .line 15
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -1467,13 +1357,13 @@
 
     move-result-object v1
 
-    check-cast v1, Lae/d;
+    check-cast v1, Lie/d;
 
     .line 16
-    iget-object v2, v1, Lae/d;->g:Ljava/lang/Object;
+    iget-object v2, v1, Lie/d;->f:Ljava/lang/Object;
 
     .line 17
-    iget-object v1, v1, Lae/d;->h:Ljava/lang/Object;
+    iget-object v1, v1, Lie/d;->g:Ljava/lang/Object;
 
     .line 18
     check-cast v1, Ljava/lang/String;
@@ -1486,7 +1376,7 @@
 
     const-string v3, "URLDecoder.decode(pair.second, \"UTF-8\")"
 
-    invoke-static {v1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-interface {p1, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

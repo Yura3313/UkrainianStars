@@ -25,7 +25,6 @@
 .method public constructor <init>(Ljava/util/Map;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/agreement/AgreementManager$2;->val$agreements:Ljava/util/Map;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

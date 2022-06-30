@@ -1,16 +1,15 @@
-.class public Lo/v;
+.class public final Lo/v;
 .super Ljava/lang/Object;
 .source "TouchResponse.java"
 
 # interfaces
-.implements Landroidx/core/widget/NestedScrollView$b;
+.implements Landroid/view/View$OnTouchListener;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/constraintlayout/motion/widget/b;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -18,8 +17,10 @@
 
 
 # virtual methods
-.method public a(Landroidx/core/widget/NestedScrollView;IIII)V
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
-    return-void
+    const/4 p1, 0x0
+
+    return p1
 .end method

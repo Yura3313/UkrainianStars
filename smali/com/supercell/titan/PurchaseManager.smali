@@ -63,7 +63,7 @@
     .end annotation
 .end field
 
-.field public final h:Ljava/util/Map;
+.field public final h:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -94,74 +94,74 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/GameApp;)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance p1, Ljava/util/Vector;
+    new-instance v0, Ljava/util/Vector;
 
-    invoke-direct {p1}, Ljava/util/Vector;-><init>()V
+    invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/PurchaseManager;->a:Ljava/util/Vector;
+    iput-object v0, p0, Lcom/supercell/titan/PurchaseManager;->a:Ljava/util/Vector;
 
     .line 3
-    new-instance p1, Ljava/util/Vector;
+    new-instance v0, Ljava/util/Vector;
 
-    invoke-direct {p1}, Ljava/util/Vector;-><init>()V
+    invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/PurchaseManager;->b:Ljava/util/Vector;
+    iput-object v0, p0, Lcom/supercell/titan/PurchaseManager;->b:Ljava/util/Vector;
 
     .line 4
-    new-instance p1, Ljava/util/Vector;
+    new-instance v0, Ljava/util/Vector;
 
-    invoke-direct {p1}, Ljava/util/Vector;-><init>()V
+    invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/PurchaseManager;->c:Ljava/util/Vector;
+    iput-object v0, p0, Lcom/supercell/titan/PurchaseManager;->c:Ljava/util/Vector;
 
-    const-string p1, ""
+    const-string v0, ""
 
     .line 5
-    iput-object p1, p0, Lcom/supercell/titan/PurchaseManager;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/supercell/titan/PurchaseManager;->d:Ljava/lang/String;
 
     .line 6
-    iput-object p1, p0, Lcom/supercell/titan/PurchaseManager;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/supercell/titan/PurchaseManager;->e:Ljava/lang/String;
 
-    const/4 v0, -0x1
+    const/4 v1, -0x1
 
     .line 7
-    iput v0, p0, Lcom/supercell/titan/PurchaseManager;->f:I
+    iput v1, p0, Lcom/supercell/titan/PurchaseManager;->f:I
 
     .line 8
-    new-instance v0, Ljava/util/Vector;
+    new-instance v1, Ljava/util/Vector;
 
-    invoke-direct {v0}, Ljava/util/Vector;-><init>()V
+    invoke-direct {v1}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/titan/PurchaseManager;->g:Ljava/util/Vector;
+    iput-object v1, p0, Lcom/supercell/titan/PurchaseManager;->g:Ljava/util/Vector;
 
     .line 9
-    new-instance v0, Ljava/util/HashMap;
+    new-instance v1, Ljava/util/HashMap;
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/titan/PurchaseManager;->h:Ljava/util/Map;
+    iput-object v1, p0, Lcom/supercell/titan/PurchaseManager;->h:Ljava/util/HashMap;
 
     .line 10
-    new-instance v0, Ljava/util/Vector;
+    new-instance v1, Ljava/util/Vector;
 
-    invoke-direct {v0}, Ljava/util/Vector;-><init>()V
+    invoke-direct {v1}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/titan/PurchaseManager;->j:Ljava/util/Vector;
+    iput-object v1, p0, Lcom/supercell/titan/PurchaseManager;->j:Ljava/util/Vector;
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
     .line 11
-    iput-boolean v0, p0, Lcom/supercell/titan/PurchaseManager;->k:Z
+    iput-boolean v1, p0, Lcom/supercell/titan/PurchaseManager;->k:Z
 
     .line 12
-    iput-object p1, p0, Lcom/supercell/titan/PurchaseManager;->m:Ljava/lang/String;
+    iput-object v0, p0, Lcom/supercell/titan/PurchaseManager;->m:Ljava/lang/String;
 
     .line 13
     sput-object p0, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
@@ -201,7 +201,7 @@
     .line 3
     sget-object p1, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
 
-    iget-object p1, p1, Lcom/supercell/titan/PurchaseManager;->h:Ljava/util/Map;
+    iget-object p1, p1, Lcom/supercell/titan/PurchaseManager;->h:Ljava/util/HashMap;
 
     const-string v0, "subs"
 
@@ -214,7 +214,6 @@
 .method public static arePaymentsAvailable()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
 
     invoke-virtual {v0}, Lcom/supercell/titan/PurchaseManager;->a()Z
@@ -242,7 +241,6 @@
 .method public static buyProduct(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
 
     invoke-virtual {v0, p0}, Lcom/supercell/titan/PurchaseManager;->b(Ljava/lang/String;)V
@@ -253,7 +251,6 @@
 .method public static cppBillingCreated()V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
 
     const/4 v1, 0x1
@@ -266,7 +263,6 @@
 .method public static cppBillingDestroyed()V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
 
     const/4 v1, 0x0
@@ -279,7 +275,6 @@
 .method public static finishTransaction(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
 
     invoke-virtual {v0, p0}, Lcom/supercell/titan/PurchaseManager;->c(Ljava/lang/String;)V
@@ -290,7 +285,6 @@
 .method public static getProductDetails(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
 
     invoke-virtual {v0, p0}, Lcom/supercell/titan/PurchaseManager;->getProductDetailsImplementation(Ljava/lang/String;)Ljava/lang/String;
@@ -368,12 +362,11 @@
 .end method
 
 .method public static setAccountId(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
-    .line 1
-    sget-object v0, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
+    sget-object p1, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
 
-    invoke-virtual {v0, p0, p1}, Lcom/supercell/titan/PurchaseManager;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, p0}, Lcom/supercell/titan/PurchaseManager;->d(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -419,7 +412,6 @@
 .method public static stopBillingTransactions()V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
 
     const/4 v1, 0x0
@@ -435,7 +427,6 @@
 .method public static updateDetails()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
 
     invoke-virtual {v0}, Lcom/supercell/titan/PurchaseManager;->e()V
@@ -454,7 +445,7 @@
 .method public abstract c(Ljava/lang/String;)V
 .end method
 
-.method public d(Ljava/lang/String;Ljava/lang/String;)V
+.method public d(Ljava/lang/String;)V
     .locals 0
 
     return-void
@@ -475,8 +466,7 @@
 .method public getProductType(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/PurchaseManager;->h:Ljava/util/Map;
+    iget-object v0, p0, Lcom/supercell/titan/PurchaseManager;->h:Ljava/util/HashMap;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -495,7 +485,6 @@
 .method public getSkuCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/supercell/titan/PurchaseManager;->g:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
@@ -516,7 +505,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     sput-object v0, Lcom/supercell/titan/PurchaseManager;->n:Lcom/supercell/titan/PurchaseManager;
 
     return-void

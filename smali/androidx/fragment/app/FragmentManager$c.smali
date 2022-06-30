@@ -1,5 +1,5 @@
-.class public Landroidx/fragment/app/FragmentManager$c;
-.super Landroidx/activity/b;
+.class public final Landroidx/fragment/app/FragmentManager$c;
+.super Landroidx/activity/d;
 .source "FragmentManager.java"
 
 
@@ -19,20 +19,19 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/FragmentManager;Z)V
+.method public constructor <init>(Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentManager$c;->c:Landroidx/fragment/app/FragmentManager;
 
-    invoke-direct {p0, p2}, Landroidx/activity/b;-><init>(Z)V
+    invoke-direct {p0}, Landroidx/activity/d;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 2
 
     .line 1
@@ -41,18 +40,18 @@
     const/4 v1, 0x1
 
     .line 2
-    invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->C(Z)Z
+    invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->z(Z)Z
 
     .line 3
-    iget-object v1, v0, Landroidx/fragment/app/FragmentManager;->h:Landroidx/activity/b;
+    iget-object v1, v0, Landroidx/fragment/app/FragmentManager;->h:Landroidx/fragment/app/FragmentManager$c;
 
     .line 4
-    iget-boolean v1, v1, Landroidx/activity/b;->a:Z
+    iget-boolean v1, v1, Landroidx/activity/d;->a:Z
 
     if-eqz v1, :cond_0
 
     .line 5
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->a0()Z
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->W()Z
 
     goto :goto_0
 

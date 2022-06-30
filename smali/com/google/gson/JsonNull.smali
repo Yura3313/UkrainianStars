@@ -11,7 +11,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/gson/JsonNull;
 
     invoke-direct {v0}, Lcom/google/gson/JsonNull;-><init>()V
@@ -26,7 +25,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/gson/JsonElement;-><init>()V
 
     return-void
@@ -59,7 +57,6 @@
 
     if-eq p0, p1, :cond_1
 
-    .line 1
     instance-of p1, p1, Lcom/google/gson/JsonNull;
 
     if-eqz p1, :cond_0
@@ -82,7 +79,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/gson/JsonNull;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I

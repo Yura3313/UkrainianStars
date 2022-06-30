@@ -1,74 +1,116 @@
-.class public final Ljd/d;
-.super Lle/j;
-.source "OnboardingInviteFriendsPageFragment.kt"
+.class public final synthetic Ljd/d;
+.super Lse/g;
+.source "EmbeddedIngameChatDialog.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Landroid/widget/TextView;",
-        "Lae/i;",
+        "Lse/g;",
+        "Lre/l<",
+        "Lae/e2;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Ljd/c$b$c;
-
-.field public final synthetic h:Landroid/graphics/drawable/BitmapDrawable;
-
-
 # direct methods
-.method public constructor <init>(Ljd/c$b$c;Landroid/graphics/drawable/BitmapDrawable;)V
-    .locals 0
+.method public constructor <init>(Ljd/c$a;)V
+    .locals 1
 
-    iput-object p1, p0, Ljd/d;->g:Ljd/c$b$c;
+    const/4 v0, 0x1
 
-    iput-object p2, p0, Ljd/d;->h:Landroid/graphics/drawable/BitmapDrawable;
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0, p1}, Lse/g;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final getName()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "updateData"
+
+    return-object v0
+.end method
+
+.method public final getOwner()Lwe/d;
+    .locals 1
+
+    const-class v0, Ljd/c$a;
+
+    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getSignature()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "updateData(Lcom/supercell/id/util/RowDiffUtilResult;)V"
+
+    return-object v0
+.end method
+
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    check-cast p1, Landroid/widget/TextView;
+    check-cast p1, Lae/e2;
+
+    const-string v0, "p1"
 
     .line 2
-    iget-object p1, p0, Ljd/d;->g:Ljd/c$b$c;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object p1, p1, Ljd/c$b$c;->i:Landroid/view/View;
+    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
 
-    sget v0, Lcom/supercell/id/R$id;->friend_playing_name_label:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/TextView;
-
-    iget-object v0, p0, Ljd/d;->h:Landroid/graphics/drawable/BitmapDrawable;
-
-    const/4 v1, 0x0
+    check-cast v0, Ljd/c$a;
 
     .line 3
-    invoke-virtual {p1, v0, v1, v1, v1}, Landroid/widget/TextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+    iget-object v1, v0, Lae/c2;->d:Ljava/util/List;
 
     .line 4
-    sget-object p1, Lae/i;->a:Lae/i;
+    iget-object v2, p1, Lae/e2;->a:Ljava/util/List;
+
+    .line 5
+    invoke-static {v1, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 6
+    iget-object v1, p1, Lae/e2;->b:Ljava/util/List;
+
+    if-eqz v1, :cond_0
+
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    sget-object v1, Lje/l;->f:Lje/l;
+
+    .line 8
+    :goto_0
+    iput-object v1, v0, Lae/c2;->d:Ljava/util/List;
+
+    .line 9
+    iget-object p1, p1, Lae/e2;->c:Landroidx/recyclerview/widget/l$c;
+
+    .line 10
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/l$c;->a(Landroidx/recyclerview/widget/RecyclerView$e;)V
+
+    .line 11
+    :cond_1
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
 .end method

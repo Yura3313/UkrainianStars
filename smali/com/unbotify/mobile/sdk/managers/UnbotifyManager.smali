@@ -400,11 +400,11 @@
 
     invoke-direct {p5, p0}, Lcom/unbotify/mobile/sdk/managers/UnbotifyManager$1;-><init>(Lcom/unbotify/mobile/sdk/managers/UnbotifyManager;)V
 
-    invoke-virtual {p3, p5}, Landroid/os/HandlerThread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
+    invoke-virtual {p3, p5}, Ljava/lang/Thread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
     iget-object p3, p0, Lcom/unbotify/mobile/sdk/managers/UnbotifyManager;->thread:Landroid/os/HandlerThread;
 
-    invoke-virtual {p3}, Landroid/os/HandlerThread;->start()V
+    invoke-virtual {p3}, Ljava/lang/Thread;->start()V
 
     iget-object p3, p0, Lcom/unbotify/mobile/sdk/managers/UnbotifyManager;->thread:Landroid/os/HandlerThread;
 

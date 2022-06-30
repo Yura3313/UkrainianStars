@@ -7,7 +7,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/appcompat/view/menu/e;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -15,7 +14,7 @@
 
 
 # virtual methods
-.method public a(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
+.method public final a(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 3
 
     .line 1
@@ -32,7 +31,7 @@
     if-gt v0, v2, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Landroidx/appcompat/view/menu/e;->B()V
+    invoke-virtual {p0}, Landroidx/appcompat/view/menu/e;->D()V
 
     .line 3
     invoke-super {p0, p1, p2, p3, p4}, Landroidx/appcompat/view/menu/e;->a(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
@@ -47,7 +46,7 @@
     invoke-virtual {p2, v1}, Landroidx/appcompat/view/menu/g;->m(Z)V
 
     .line 5
-    invoke-virtual {p0}, Landroidx/appcompat/view/menu/e;->A()V
+    invoke-virtual {p0}, Landroidx/appcompat/view/menu/e;->C()V
 
     return-object p1
 
@@ -62,10 +61,9 @@
     throw p1
 .end method
 
-.method public addSubMenu(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;
+.method public final addSubMenu(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "BottomNavigationView does not support submenus"

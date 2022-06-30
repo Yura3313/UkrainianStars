@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/view/menu/h$a;
+.class public final Landroidx/appcompat/view/menu/h$a;
 .super Ljava/lang/Object;
 .source "MenuPopupHelper.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/view/menu/h;
+.field public final synthetic f:Landroidx/appcompat/view/menu/h;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/view/menu/h;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/view/menu/h$a;->g:Landroidx/appcompat/view/menu/h;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/h$a;->f:Landroidx/appcompat/view/menu/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +34,10 @@
 
 
 # virtual methods
-.method public onDismiss()V
+.method public final onDismiss()V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/h$a;->g:Landroidx/appcompat/view/menu/h;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/h$a;->f:Landroidx/appcompat/view/menu/h;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/h;->c()V
 

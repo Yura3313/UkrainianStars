@@ -13,7 +13,6 @@
 
     const-string v0, "shareLink"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/kakaogame/web/protocol/WebAppProtocolHandler;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -73,7 +72,7 @@
     .line 7
     new-instance p2, Landroid/content/Intent;
 
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -82,7 +81,7 @@
     invoke-direct {p2, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 8
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -95,7 +94,7 @@
     move-result-object p2
 
     .line 9
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -122,7 +121,7 @@
     move-result-object p2
 
     .line 12
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
@@ -132,7 +131,7 @@
 
     .line 13
     :cond_0
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 

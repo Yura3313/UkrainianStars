@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +31,6 @@
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 0
 
-    .line 1
     invoke-static {p1, p2, p3}, Lcom/kakaogame/core/CoreImpl;->onActivityResult(IILandroid/content/Intent;)V
 
     return-void

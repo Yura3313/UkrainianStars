@@ -1,61 +1,75 @@
 .class public final Lvd/e;
-.super Landroid/text/style/ClickableSpan;
-.source "Spannables.kt"
+.super Lse/h;
+.source "SettingsGeneralTabFragment.kt"
+
+# interfaces
+.implements Lre/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/a<",
+        "Lze/e0<",
+        "+",
+        "Lvc/v;",
+        ">;>;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final g:Lke/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lke/a<",
-            "Lae/i;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic f:Z
 
 
 # direct methods
-.method public constructor <init>(Lke/a;)V
+.method public constructor <init>(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lke/a<",
-            "Lae/i;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
-    invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
+    iput-boolean p1, p0, Lvd/e;->f:Z
 
-    iput-object p1, p0, Lvd/e;->g:Lke/a;
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 0
+.method public final invoke()Ljava/lang/Object;
+    .locals 7
 
-    if-eqz p1, :cond_0
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    .line 1
-    iget-object p1, p0, Lvd/e;->g:Lke/a;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    invoke-interface {p1}, Lke/a;->invoke()Ljava/lang/Object;
+    move-result-object v0
 
-    return-void
+    invoke-virtual {v0}, Lae/u;->i()Lbe/y;
 
-    :cond_0
-    const-string p1, "widget"
+    move-result-object v1
 
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    iget-boolean v0, p0, Lvd/e;->f:Z
 
-    const/4 p1, 0x0
+    xor-int/lit8 v0, v0, 0x1
 
-    throw p1
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v5
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x7
+
+    invoke-static/range {v1 .. v6}, Lbe/y;->j(Lbe/y;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)Lze/e0;
+
+    move-result-object v0
+
+    return-object v0
 .end method

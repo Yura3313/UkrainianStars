@@ -1,317 +1,190 @@
-.class public Ls3/b;
+.class public final Ls3/b;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-games@@20.0.1"
 
-# interfaces
-.implements Ly4/o0;
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ls3/b$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Lb2/a0;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 6
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    const-string v1, "android.os.Build$VERSION"
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    return-void
-.end method
+    move-result-object v1
 
-.method public static b(Ljava/lang/Object;Ljava/lang/Object;)Z
-    .locals 0
-
-    if-nez p0, :cond_1
-
-    if-nez p1, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    goto :goto_0
-
-    .line 1
-    :cond_1
-    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    :goto_0
-    return p0
-.end method
-
-.method public static c(Ljava/lang/Object;Ljava/lang/String;)V
-    .locals 1
-
-    if-eqz p0, :cond_0
-
-    return-void
-
-    .line 1
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalStateException;
-
-    const-string v0, " must not be null"
-
-    invoke-static {p1, v0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    const-string v2, "SDK_INT"
 
     .line 2
-    const-class p1, Ls3/b;
+    invoke-virtual {v1, v2}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p0, p1}, Ls3/b;->f(Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/Throwable;
+    move-result-object v1
 
     .line 3
-    throw p0
-.end method
+    invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-.method public static final d(Ljava/io/Closeable;Ljava/lang/Throwable;)V
-    .locals 0
+    move-result-object v1
 
-    if-nez p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    if-nez p1, :cond_1
-
-    .line 1
-    invoke-interface {p0}, Ljava/io/Closeable;->close()V
-
-    goto :goto_0
-
-    .line 2
-    :cond_1
-    :try_start_0
-    invoke-interface {p0}, Ljava/io/Closeable;->close()V
+    check-cast v1, Ljava/lang/Integer;
     :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    move-object v0, v1
+
     goto :goto_0
 
-    :catchall_0
-    move-exception p0
+    :catch_0
+    move-exception v1
 
-    .line 3
-    invoke-static {p1, p0}, Lae/a;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    .line 4
+    :try_start_1
+    sget-object v2, Ljava/lang/System;->err:Ljava/io/PrintStream;
+
+    const-string v3, "Failed to retrieve value from android.os.Build$VERSION.SDK_INT due to the following exception."
+
+    invoke-virtual {v2, v3}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 5
+    sget-object v2, Ljava/lang/System;->err:Ljava/io/PrintStream;
+
+    invoke-virtual {v1, v2}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintStream;)V
 
     :goto_0
-    return-void
-.end method
+    if-eqz v0, :cond_0
 
-.method public static e(II)I
-    .locals 0
+    .line 6
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
-    if-ge p0, p1, :cond_0
+    move-result v1
 
-    const/4 p0, -0x1
+    const/16 v2, 0x13
 
-    goto :goto_0
+    if-lt v1, v2, :cond_0
+
+    .line 7
+    new-instance v1, Ls3/e;
+
+    invoke-direct {v1}, Ls3/e;-><init>()V
+
+    goto :goto_1
 
     :cond_0
-    if-ne p0, p1, :cond_1
+    const-string v1, "com.google.devtools.build.android.desugar.runtime.twr_disable_mimic"
 
-    const/4 p0, 0x0
+    .line 8
+    invoke-static {v1}, Ljava/lang/Boolean;->getBoolean(Ljava/lang/String;)Z
 
-    goto :goto_0
+    move-result v1
 
+    xor-int/lit8 v1, v1, 0x1
+
+    if-eqz v1, :cond_1
+
+    .line 9
+    new-instance v1, Ls3/d;
+
+    invoke-direct {v1}, Ls3/d;-><init>()V
+
+    goto :goto_1
+
+    .line 10
     :cond_1
-    const/4 p0, 0x1
+    new-instance v1, Ls3/b$a;
 
-    :goto_0
-    return p0
-.end method
+    invoke-direct {v1}, Ls3/b$a;-><init>()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-.method public static f(Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/Throwable;
-    .locals 5
+    goto :goto_1
 
-    .line 1
-    invoke-virtual {p0}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
+    :catchall_0
+    move-exception v1
 
-    move-result-object v0
+    .line 11
+    sget-object v2, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
-    .line 2
-    array-length v1, v0
+    const-class v3, Ls3/b$a;
 
-    const/4 v2, -0x1
+    .line 12
+    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    const/4 v3, 0x0
+    move-result-object v3
 
-    :goto_0
-    if-ge v3, v1, :cond_1
-
-    .line 3
-    aget-object v4, v0, v3
-
-    invoke-virtual {v4}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {p1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
 
     move-result v4
 
-    if-eqz v4, :cond_0
+    add-int/lit16 v4, v4, 0x85
 
-    move v2, v3
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    :cond_0
-    add-int/lit8 v3, v3, 0x1
+    invoke-direct {v5, v4}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    goto :goto_0
+    const-string v4, "An error has occurred when initializing the try-with-resources desuguring strategy. The default strategy "
 
-    :cond_1
-    add-int/lit8 v2, v2, 0x1
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4
-    invoke-static {v0, v2, v1}, Ljava/util/Arrays;->copyOfRange([Ljava/lang/Object;II)[Ljava/lang/Object;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    const-string v3, "will be used. The error is: "
 
-    check-cast p1, [Ljava/lang/StackTraceElement;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
-    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    return-object p0
+    move-result-object v3
+
+    .line 13
+    invoke-virtual {v2, v3}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 14
+    sget-object v2, Ljava/lang/System;->err:Ljava/io/PrintStream;
+
+    invoke-virtual {v1, v2}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintStream;)V
+
+    .line 15
+    new-instance v1, Ls3/b$a;
+
+    invoke-direct {v1}, Ls3/b$a;-><init>()V
+
+    .line 16
+    :goto_1
+    sput-object v1, Ls3/b;->a:Lb2/a0;
+
+    if-nez v0, :cond_2
+
+    goto :goto_2
+
+    .line 17
+    :cond_2
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    :goto_2
+    return-void
 .end method
 
-.method public static g()V
-    .locals 2
+.method public static a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    .locals 1
 
-    .line 1
-    new-instance v0, Lkotlin/KotlinNullPointerException;
+    sget-object v0, Ls3/b;->a:Lb2/a0;
 
-    invoke-direct {v0}, Lkotlin/KotlinNullPointerException;-><init>()V
+    invoke-virtual {v0, p0, p1}, Lb2/a0;->x(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
-    .line 2
-    const-class v1, Ls3/b;
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Ls3/b;->f(Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/Throwable;
-
-    .line 3
-    throw v0
-.end method
-
-.method public static h(Ljava/lang/String;)V
-    .locals 6
-
-    .line 1
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Thread;->getStackTrace()[Ljava/lang/StackTraceElement;
-
-    move-result-object v0
-
-    const/4 v1, 0x3
-
-    .line 2
-    aget-object v0, v0, v1
-
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 4
-    invoke-virtual {v0}, Ljava/lang/StackTraceElement;->getMethodName()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 5
-    new-instance v2, Ljava/lang/IllegalArgumentException;
-
-    const-string v3, "Parameter specified as non-null is null: method "
-
-    const-string v4, "."
-
-    const-string v5, ", parameter "
-
-    invoke-static {v3, v1, v4, v0, v5}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v2, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    const-class p0, Ls3/b;
-
-    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v2, p0}, Ls3/b;->f(Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/Throwable;
-
-    .line 7
-    throw v2
-.end method
-
-.method public static i(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "lateinit property "
-
-    const-string v1, " has not been initialized"
-
-    .line 1
-    invoke-static {v0, p0, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 2
-    new-instance v0, Lkotlin/UninitializedPropertyAccessException;
-
-    invoke-direct {v0, p0}, Lkotlin/UninitializedPropertyAccessException;-><init>(Ljava/lang/String;)V
-
-    .line 3
-    const-class p0, Ls3/b;
-
-    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0, p0}, Ls3/b;->f(Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/Throwable;
-
-    .line 4
-    throw v0
-.end method
-
-
-# virtual methods
-.method public a()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    sget-object v0, Lcom/google/android/play/core/assetpacks/k2;->a:Ljava/util/concurrent/ThreadFactory;
-
-    invoke-static {v0}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
-
-    move-result-object v0
-
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
-
-    invoke-static {v0, v1}, Ly4/b0;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-object v0
+    return-void
 .end method

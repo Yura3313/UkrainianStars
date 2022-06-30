@@ -1,4 +1,4 @@
-.class public Lv0/p;
+.class public final Lv0/p;
 .super Ljava/lang/Object;
 .source "Styleable.java"
 

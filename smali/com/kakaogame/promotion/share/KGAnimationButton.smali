@@ -13,7 +13,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -22,7 +21,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/promotion/share/KGAnimationButton;)Landroid/view/animation/Animation;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/share/KGAnimationButton;->scaleAnim:Landroid/view/animation/Animation;
 
     return-object p0
@@ -31,7 +29,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/promotion/share/KGAnimationButton;)Landroid/view/animation/Animation;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/share/KGAnimationButton;->scaleReverseAnim:Landroid/view/animation/Animation;
 
     return-object p0
@@ -65,7 +62,7 @@
 
     invoke-direct {p1, p0}, Lcom/kakaogame/promotion/share/KGAnimationButton$1;-><init>(Lcom/kakaogame/promotion/share/KGAnimationButton;)V
 
-    invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     return-void
 .end method

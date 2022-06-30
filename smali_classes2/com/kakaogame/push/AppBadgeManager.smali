@@ -29,7 +29,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -42,7 +41,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -224,7 +222,7 @@
 
     .line 4
     :try_start_1
-    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -236,13 +234,13 @@
     if-lez p1, :cond_2
 
     .line 5
-    sget-object v3, Lve/b;->a:Ljava/util/List;
+    sget-object v3, Lcf/b;->a:Ljava/util/LinkedList;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
 
     .line 6
     :try_start_2
-    invoke-static {p0, p1}, Lve/b;->a(Landroid/content/Context;I)V
+    invoke-static {p0, p1}, Lcf/b;->a(Landroid/content/Context;I)V
     :try_end_2
     .catch Lme/leolin/shortcutbadger/ShortcutBadgeException; {:try_start_2 .. :try_end_2} :catch_1
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
@@ -256,7 +254,7 @@
 
     .line 7
     :try_start_3
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 8
     :goto_1
@@ -280,13 +278,13 @@
 
     .line 9
     :cond_2
-    sget-object v3, Lve/b;->a:Ljava/util/List;
+    sget-object v3, Lcf/b;->a:Ljava/util/LinkedList;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 10
     :try_start_4
-    invoke-static {p0, v0}, Lve/b;->a(Landroid/content/Context;I)V
+    invoke-static {p0, v0}, Lcf/b;->a(Landroid/content/Context;I)V
     :try_end_4
     .catch Lme/leolin/shortcutbadger/ShortcutBadgeException; {:try_start_4 .. :try_end_4} :catch_2
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
@@ -300,7 +298,7 @@
 
     .line 11
     :try_start_5
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 12
     :goto_2
@@ -334,7 +332,7 @@
     move-exception p0
 
     .line 14
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 

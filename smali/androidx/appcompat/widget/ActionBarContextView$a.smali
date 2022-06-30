@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/ActionBarContextView$a;
+.class public final Landroidx/appcompat/widget/ActionBarContextView$a;
 .super Ljava/lang/Object;
 .source "ActionBarContextView.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lf/b;
+.field public final synthetic f:Lf/b;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/widget/ActionBarContextView;Lf/b;)V
+.method public constructor <init>(Lf/b;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->g:Lf/b;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->f:Lf/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +34,10 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public final onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->g:Lf/b;
+    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->f:Lf/b;
 
     invoke-virtual {p1}, Lf/b;->c()V
 

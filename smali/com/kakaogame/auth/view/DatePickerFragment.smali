@@ -54,7 +54,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/auth/view/DatePickerFragment;)Lcom/kakaogame/auth/view/DatePickerFragment$DatePickerListener;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/auth/view/DatePickerFragment;->callbackListener:Lcom/kakaogame/auth/view/DatePickerFragment$DatePickerListener;
 
     return-object p0
@@ -63,7 +62,6 @@
 .method public static synthetic access$002(Lcom/kakaogame/auth/view/DatePickerFragment;Lcom/kakaogame/auth/view/DatePickerFragment$DatePickerListener;)Lcom/kakaogame/auth/view/DatePickerFragment$DatePickerListener;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/DatePickerFragment;->callbackListener:Lcom/kakaogame/auth/view/DatePickerFragment$DatePickerListener;
 
     return-object p1
@@ -72,7 +70,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/auth/view/DatePickerFragment;)Landroid/widget/DatePicker;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/auth/view/DatePickerFragment;->datePicker:Landroid/widget/DatePicker;
 
     return-object p0
@@ -81,7 +78,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/auth/view/DatePickerFragment;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/auth/view/DatePickerFragment;->getDate()Ljava/lang/String;
 
     move-result-object p0
@@ -92,7 +88,6 @@
 .method public static synthetic access$300(Lcom/kakaogame/auth/view/DatePickerFragment;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/auth/view/DatePickerFragment;->showSelectedDate(Ljava/lang/String;)V
 
     return-void
@@ -203,7 +198,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {v5, v6}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 9
     new-instance v6, Ljava/text/SimpleDateFormat;
@@ -217,15 +212,15 @@
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {v6, v7}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 11
-    invoke-virtual {v6, v3}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+    invoke-virtual {v6, v3}, Ljava/text/DateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object v3
 
     .line 12
-    invoke-virtual {v5, v3}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v5, v3}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v0
     :try_end_0
@@ -260,7 +255,7 @@
     .locals 9
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -423,7 +418,7 @@
 
     .line 18
     :cond_1
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -451,7 +446,7 @@
 
     invoke-direct {v2, p0}, Lcom/kakaogame/auth/view/DatePickerFragment$3;-><init>(Lcom/kakaogame/auth/view/DatePickerFragment;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     goto :goto_1
 
@@ -466,7 +461,7 @@
     check-cast v1, Landroid/widget/TextView;
 
     .line 23
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -505,7 +500,7 @@
 
     invoke-direct {v2, p0}, Lcom/kakaogame/auth/view/DatePickerFragment$4;-><init>(Lcom/kakaogame/auth/view/DatePickerFragment;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :goto_1
     return-object v0
@@ -562,7 +557,6 @@
 .method private registDatePickerListener(Lcom/kakaogame/auth/view/DatePickerFragment$DatePickerListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/DatePickerFragment;->callbackListener:Lcom/kakaogame/auth/view/DatePickerFragment$DatePickerListener;
 
     return-void
@@ -572,7 +566,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -583,7 +577,7 @@
     move-result-object v0
 
     .line 2
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -594,7 +588,7 @@
     move-result-object v1
 
     .line 3
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -651,10 +645,10 @@
     const/4 v0, 0x0
 
     .line 9
-    invoke-virtual {p1, v0}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
+    invoke-virtual {p1, v0}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
     .line 10
-    invoke-virtual {p1}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {p1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -667,7 +661,7 @@
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
     .line 11
-    invoke-virtual {p1}, Landroid/app/AlertDialog;->show()V
+    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -677,7 +671,7 @@
     move-exception p1
 
     .line 12
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -695,7 +689,7 @@
     .locals 2
 
     .line 1
-    invoke-super {p0, p1}, Landroid/app/DialogFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 2
     iget v0, p0, Lcom/kakaogame/auth/view/DatePickerFragment;->preOrientation:I
@@ -732,6 +726,7 @@
 
     move-result-object v0
 
+    .line 7
     invoke-virtual {p1}, Landroid/content/res/Configuration;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -782,7 +777,7 @@
 
     new-instance v1, Landroid/view/ContextThemeWrapper;
 
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -806,7 +801,7 @@
     :cond_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -855,7 +850,7 @@
 
     .line 4
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Landroid/app/DialogFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object p1
 

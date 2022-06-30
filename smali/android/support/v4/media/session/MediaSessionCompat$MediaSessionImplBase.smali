@@ -90,7 +90,7 @@
 
 .field public final mRcc:Landroid/media/RemoteControlClient;
 
-.field private mRemoteUserInfo:Lp0/i;
+.field private mRemoteUserInfo:Lp0/d;
 
 .field public mRepeatMode:I
 
@@ -106,9 +106,9 @@
 
 .field private final mToken:Landroid/support/v4/media/session/MediaSessionCompat$Token;
 
-.field private mVolumeCallback:Lp0/m$a;
+.field private mVolumeCallback:Lp0/h$a;
 
-.field public mVolumeProvider:Lp0/m;
+.field public mVolumeProvider:Lp0/h;
 
 .field public mVolumeType:I
 
@@ -153,7 +153,7 @@
 
     invoke-direct {v1, p0}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$1;-><init>(Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;)V
 
-    iput-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mVolumeCallback:Lp0/m$a;
+    iput-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mVolumeCallback:Lp0/h$a;
 
     if-eqz p3, :cond_0
 
@@ -1068,7 +1068,7 @@
     return-object v0
 .end method
 
-.method public getCurrentControllerInfo()Lp0/i;
+.method public getCurrentControllerInfo()Lp0/d;
     .locals 2
 
     .line 1
@@ -1078,7 +1078,7 @@
 
     .line 2
     :try_start_0
-    iget-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lp0/i;
+    iget-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lp0/d;
 
     monitor-exit v0
 
@@ -1320,7 +1320,6 @@
 .method public getSessionToken()Landroid/support/v4/media/session/MediaSessionCompat$Token;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mToken:Landroid/support/v4/media/session/MediaSessionCompat$Token;
 
     return-object v0
@@ -1329,7 +1328,6 @@
 .method public isActive()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mIsActive:Z
 
     return v0
@@ -1417,7 +1415,6 @@
 .method public registerMediaButtonEventReceiver(Landroid/app/PendingIntent;Landroid/content/ComponentName;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {p1, p2}, Landroid/media/AudioManager;->registerMediaButtonEventReceiver(Landroid/content/ComponentName;)V
@@ -1450,7 +1447,6 @@
 .method public sendSessionEvent(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->sendEvent(Ljava/lang/String;Landroid/os/Bundle;)V
 
     return-void
@@ -1621,7 +1617,7 @@
     return-void
 .end method
 
-.method public setCurrentControllerInfo(Lp0/i;)V
+.method public setCurrentControllerInfo(Lp0/d;)V
     .locals 1
 
     .line 1
@@ -1631,7 +1627,7 @@
 
     .line 2
     :try_start_0
-    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lp0/i;
+    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lp0/d;
 
     .line 3
     monitor-exit v0
@@ -1901,10 +1897,9 @@
     return-void
 .end method
 
-.method public setPlaybackToRemote(Lp0/m;)V
+.method public setPlaybackToRemote(Lp0/h;)V
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "volumeProvider may not be null"
@@ -1949,7 +1944,6 @@
 .method public setRatingType(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRatingType:I
 
     return-void
@@ -1958,7 +1952,6 @@
 .method public setRccState(Landroid/support/v4/media/session/PlaybackStateCompat;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRcc:Landroid/media/RemoteControlClient;
 
     invoke-virtual {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->getState()I
@@ -2064,7 +2057,6 @@
 .method public unregisterMediaButtonEventReceiver(Landroid/app/PendingIntent;Landroid/content/ComponentName;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {p1, p2}, Landroid/media/AudioManager;->unregisterMediaButtonEventReceiver(Landroid/content/ComponentName;)V

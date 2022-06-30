@@ -43,7 +43,6 @@
 .method public final synthetic a(Ljava/io/InputStream;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/linecorp/linesdk/a/a/a/b;->b(Ljava/io/InputStream;)Lorg/json/JSONObject;
 
     move-result-object p1

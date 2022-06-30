@@ -115,7 +115,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/infodesk/InfodeskHelper$InfodeskAppUpdateStatus;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/infodesk/InfodeskHelper$InfodeskAppUpdateStatus;->value:Ljava/lang/String;
 
     return-object p0
@@ -124,7 +123,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/kakaogame/infodesk/InfodeskHelper$InfodeskAppUpdateStatus;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/kakaogame/infodesk/InfodeskHelper$InfodeskAppUpdateStatus;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -139,7 +137,6 @@
 .method public static values()[Lcom/kakaogame/infodesk/InfodeskHelper$InfodeskAppUpdateStatus;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/infodesk/InfodeskHelper$InfodeskAppUpdateStatus;->$VALUES:[Lcom/kakaogame/infodesk/InfodeskHelper$InfodeskAppUpdateStatus;
 
     invoke-virtual {v0}, [Lcom/kakaogame/infodesk/InfodeskHelper$InfodeskAppUpdateStatus;->clone()Ljava/lang/Object;

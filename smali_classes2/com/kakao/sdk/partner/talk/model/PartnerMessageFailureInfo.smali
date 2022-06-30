@@ -59,13 +59,14 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "msg"
 
-    if-eqz p2, :cond_1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p3, :cond_0
+    const-string v0, "receiverIds"
 
-    .line 1
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;->code:I
@@ -75,21 +76,6 @@
     iput-object p3, p0, Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;->receiverIds:Ljava/util/List;
 
     return-void
-
-    :cond_0
-    const-string p1, "receiverIds"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "msg"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;ILjava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;
@@ -170,32 +156,19 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "msg"
 
-    if-eqz p2, :cond_1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p3, :cond_0
+    const-string v0, "receiverIds"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;
 
     invoke-direct {v0, p1, p2, p3}, Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;-><init>(ILjava/lang/String;Ljava/util/List;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "receiverIds"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "msg"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -241,7 +214,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;->msg:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -251,7 +224,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;->receiverIds:Ljava/util/List;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -270,7 +243,6 @@
 .method public final getCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;->code:I
 
     return v0
@@ -279,7 +251,6 @@
 .method public final getMsg()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;->msg:Ljava/lang/String;
 
     return-object v0
@@ -296,7 +267,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;->receiverIds:Ljava/util/List;
 
     return-object v0
@@ -348,10 +318,12 @@
 
     const-string v0, "PartnerMessageFailureInfo(code="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget v1, p0, Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;->code:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -372,7 +344,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Lt6/b;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Ltb/a;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -382,7 +355,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    if-eqz p1, :cond_0
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget p2, p0, Lcom/kakao/sdk/partner/talk/model/PartnerMessageFailureInfo;->code:I
 
@@ -397,14 +372,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

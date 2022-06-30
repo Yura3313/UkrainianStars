@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$a;
+.class public final Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$a;
 .super Ljava/lang/Object;
 .source "BottomAppBar.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior$a;->a:Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
     .locals 0
 
     .line 1
@@ -45,7 +44,7 @@
     iget-object p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->f:Ljava/lang/ref/WeakReference;
 
     .line 3
-    invoke-virtual {p2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object p2
 
@@ -73,11 +72,11 @@
     iget-object p4, p4, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->e:Landroid/graphics/Rect;
 
     .line 8
-    invoke-virtual {p3}, Landroid/widget/ImageButton;->getMeasuredWidth()I
+    invoke-virtual {p3}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p5
 
-    invoke-virtual {p3}, Landroid/widget/ImageButton;->getMeasuredHeight()I
+    invoke-virtual {p3}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result p6
 
@@ -100,7 +99,7 @@
     move-result p4
 
     .line 13
-    invoke-virtual {p2, p4}, Lcom/google/android/material/bottomappbar/BottomAppBar;->S(I)Z
+    invoke-virtual {p2, p4}, Lcom/google/android/material/bottomappbar/BottomAppBar;->R(I)Z
 
     .line 14
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -118,7 +117,7 @@
     if-nez p5, :cond_2
 
     .line 17
-    invoke-virtual {p3}, Landroid/widget/ImageButton;->getMeasuredHeight()I
+    invoke-virtual {p3}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result p5
 
@@ -127,7 +126,7 @@
     div-int/lit8 p5, p5, 0x2
 
     .line 18
-    invoke-virtual {p2}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p2}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p4
 
@@ -141,7 +140,7 @@
     sub-int/2addr p4, p5
 
     .line 20
-    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->G(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
+    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->F(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
 
     move-result p5
 
@@ -150,21 +149,21 @@
     iput p5, p1, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
     .line 21
-    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->H(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
+    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->G(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
 
     move-result p4
 
     iput p4, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 22
-    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->I(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
+    invoke-static {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->H(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
 
     move-result p4
 
     iput p4, p1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     .line 23
-    invoke-static {p3}, Lcom/google/android/material/internal/p;->f(Landroid/view/View;)Z
+    invoke-static {p3}, Lcom/google/android/material/internal/o;->f(Landroid/view/View;)Z
 
     move-result p3
 
@@ -174,7 +173,7 @@
     iget p3, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 25
-    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:I
+    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->U:I
 
     add-int/2addr p3, p2
 
@@ -188,7 +187,7 @@
     iget p3, p1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     .line 28
-    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:I
+    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->U:I
 
     add-int/2addr p3, p2
 

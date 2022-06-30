@@ -79,7 +79,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -88,7 +87,6 @@
 .method public static synthetic access$000(Ljava/util/Map;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/log/ErrorLogManager;->saveFailLogData(Ljava/util/Map;)V
 
     return-void
@@ -97,7 +95,6 @@
 .method public static synthetic access$100(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/log/ErrorLogManager;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object p0
@@ -108,7 +105,6 @@
 .method public static synthetic access$200(Ljava/lang/String;ILcom/kakaogame/server/ServerRequest;Lcom/kakaogame/server/ServerResponse;Lcom/kakaogame/KGResult;Lcom/kakaogame/auth/LoginData;Lcom/kakaogame/idp/IdpAccount;Ljava/lang/Throwable;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static/range {p0 .. p8}, Lcom/kakaogame/log/ErrorLogManager;->sendErrorLog(Ljava/lang/String;ILcom/kakaogame/server/ServerRequest;Lcom/kakaogame/server/ServerResponse;Lcom/kakaogame/KGResult;Lcom/kakaogame/auth/LoginData;Lcom/kakaogame/idp/IdpAccount;Ljava/lang/Throwable;Ljava/lang/String;)V
 
     return-void
@@ -326,7 +322,7 @@
     check-cast v0, Ljava/util/LinkedList;
 
     .line 12
-    invoke-virtual {v0}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -359,7 +355,7 @@
     move-exception v0
 
     .line 14
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -438,7 +434,7 @@
     invoke-direct {v1, p0, v2}, Landroid/util/Base64OutputStream;-><init>(Ljava/io/OutputStream;I)V
 
     .line 11
-    invoke-virtual {v1, v0}, Landroid/util/Base64OutputStream;->write([B)V
+    invoke-virtual {v1, v0}, Ljava/io/OutputStream;->write([B)V
 
     .line 12
     invoke-virtual {v1}, Landroid/util/Base64OutputStream;->close()V
@@ -495,7 +491,7 @@
     move-exception p0
 
     .line 17
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -710,7 +706,7 @@
     .line 1
     sget-object v0, Lcom/kakaogame/log/ErrorLogManager;->failQueue:Ljava/util/Queue;
 
-    invoke-interface {v0}, Ljava/util/Queue;->size()I
+    invoke-interface {v0}, Ljava/util/Collection;->size()I
 
     move-result v1
 
@@ -720,7 +716,7 @@
 
     .line 2
     :cond_0
-    invoke-interface {v0}, Ljava/util/Queue;->size()I
+    invoke-interface {v0}, Ljava/util/Collection;->size()I
 
     move-result v0
 
@@ -841,7 +837,6 @@
 
     move-object v8, p5
 
-    .line 1
     invoke-static/range {v0 .. v8}, Lcom/kakaogame/log/ErrorLogManager;->sendErrorLog(Ljava/lang/String;ILcom/kakaogame/server/ServerRequest;Lcom/kakaogame/server/ServerResponse;Lcom/kakaogame/KGResult;Lcom/kakaogame/auth/LoginData;Lcom/kakaogame/idp/IdpAccount;Ljava/lang/Throwable;Ljava/lang/String;)V
 
     return-void
@@ -868,7 +863,6 @@
 
     move-object v8, p4
 
-    .line 1
     invoke-static/range {v0 .. v8}, Lcom/kakaogame/log/ErrorLogManager;->sendErrorLog(Ljava/lang/String;ILcom/kakaogame/server/ServerRequest;Lcom/kakaogame/server/ServerResponse;Lcom/kakaogame/KGResult;Lcom/kakaogame/auth/LoginData;Lcom/kakaogame/idp/IdpAccount;Ljava/lang/Throwable;Ljava/lang/String;)V
 
     return-void
@@ -895,7 +889,6 @@
 
     move-object v8, p4
 
-    .line 1
     invoke-static/range {v0 .. v8}, Lcom/kakaogame/log/ErrorLogManager;->sendErrorLogData(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Lcom/kakaogame/KGResult;Lcom/kakaogame/auth/LoginData;Lcom/kakaogame/idp/IdpAccount;Ljava/lang/Throwable;Ljava/lang/String;)V
 
     return-void
@@ -932,7 +925,6 @@
 
     move-object/from16 v9, p6
 
-    .line 1
     invoke-static/range {v1 .. v9}, Lcom/kakaogame/log/ErrorLogManager;->sendErrorLog(Ljava/lang/String;ILcom/kakaogame/server/ServerRequest;Lcom/kakaogame/server/ServerResponse;Lcom/kakaogame/KGResult;Lcom/kakaogame/auth/LoginData;Lcom/kakaogame/idp/IdpAccount;Ljava/lang/Throwable;Ljava/lang/String;)V
 
     return-void
@@ -995,6 +987,7 @@
 
     move-result-object p0
 
+    .line 7
     sget-boolean v0, Lcom/kakaogame/log/ErrorLogManager;->enableSendErrorLog:Z
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;

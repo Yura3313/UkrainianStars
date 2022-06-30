@@ -13,13 +13,13 @@
 
 
 # instance fields
-.field public g:Lcom/journeyapps/barcodescanner/BarcodeView;
+.field public f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
-.field public h:Lcom/journeyapps/barcodescanner/ViewfinderView;
+.field public g:Lcom/journeyapps/barcodescanner/ViewfinderView;
 
-.field public i:Landroid/widget/TextView;
+.field public h:Landroid/widget/TextView;
 
-.field public j:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$a;
+.field public i:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$a;
 
 
 # direct methods
@@ -53,7 +53,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -76,22 +76,22 @@
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 4
-    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0, v1, p0}, Landroid/widget/FrameLayout;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
+    invoke-static {v0, v1, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     .line 5
     sget v0, Lcom/google/zxing/client/android/R$id;->zxing_barcode_surface:I
 
-    invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Lcom/journeyapps/barcodescanner/BarcodeView;
 
-    iput-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iput-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     if-eqz v0, :cond_1
 
@@ -101,31 +101,31 @@
     .line 7
     sget p1, Lcom/google/zxing/client/android/R$id;->zxing_viewfinder_view:I
 
-    invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Lcom/journeyapps/barcodescanner/ViewfinderView;
 
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->h:Lcom/journeyapps/barcodescanner/ViewfinderView;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/ViewfinderView;
 
     if-eqz p1, :cond_0
 
     .line 8
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     invoke-virtual {p1, v0}, Lcom/journeyapps/barcodescanner/ViewfinderView;->setCameraPreview(Lcom/journeyapps/barcodescanner/CameraPreview;)V
 
     .line 9
     sget p1, Lcom/google/zxing/client/android/R$id;->zxing_status_view:I
 
-    invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->i:Landroid/widget/TextView;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->h:Landroid/widget/TextView;
 
     return-void
 
@@ -150,13 +150,22 @@
     throw p1
 .end method
 
+.method public final b()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
+
+    invoke-virtual {v0}, Lcom/journeyapps/barcodescanner/CameraPreview;->f()V
+
+    return-void
+.end method
+
 .method public getBarcodeView()Lcom/journeyapps/barcodescanner/BarcodeView;
     .locals 1
 
-    .line 1
     sget v0, Lcom/google/zxing/client/android/R$id;->zxing_barcode_surface:I
 
-    invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -168,8 +177,7 @@
 .method public getStatusView()Landroid/widget/TextView;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->i:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->h:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -177,13 +185,12 @@
 .method public getViewFinder()Lcom/journeyapps/barcodescanner/ViewfinderView;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->h:Lcom/journeyapps/barcodescanner/ViewfinderView;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/ViewfinderView;
 
     return-object v0
 .end method
 
-.method public onKeyDown(ILandroid/view/KeyEvent;)Z
+.method public final onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
 
     const/16 v0, 0x18
@@ -205,7 +212,7 @@
     if-eq p1, v0, :cond_0
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Landroid/view/View;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result p1
 
@@ -216,14 +223,14 @@
 
     .line 2
     :cond_1
-    iget-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     const/4 p2, 0x0
 
     invoke-virtual {p1, p2}, Lcom/journeyapps/barcodescanner/CameraPreview;->setTorch(Z)V
 
     .line 3
-    iget-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->j:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$a;
+    iget-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->i:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$a;
 
     if-eqz p1, :cond_2
 
@@ -235,12 +242,12 @@
 
     .line 5
     :cond_3
-    iget-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     invoke-virtual {p1, v1}, Lcom/journeyapps/barcodescanner/CameraPreview;->setTorch(Z)V
 
     .line 6
-    iget-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->j:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$a;
+    iget-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->i:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$a;
 
     if-eqz p1, :cond_4
 
@@ -255,7 +262,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->i:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->h:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
@@ -269,8 +276,7 @@
 .method public setTorchListener(Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$a;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->j:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$a;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->i:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$a;
 
     return-void
 .end method

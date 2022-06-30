@@ -1,17 +1,8 @@
 .class public interface abstract Landroidx/lifecycle/z;
 .super Ljava/lang/Object;
-.source "ViewModelProvider.java"
+.source "ViewModelStoreOwner.java"
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/Class;)Landroidx/lifecycle/x;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Landroidx/lifecycle/x;",
-            ">(",
-            "Ljava/lang/Class<",
-            "TT;>;)TT;"
-        }
-    .end annotation
+.method public abstract getViewModelStore()Landroidx/lifecycle/y;
 .end method

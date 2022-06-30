@@ -6,14 +6,14 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/google/android/gms/internal/drive/zzhh<",
-        "La2/a0;",
+        "Lb2/a0;",
         ">;"
     }
 .end annotation
 
 
 # virtual methods
-.method public final G3(Lcom/google/android/gms/internal/drive/zzfy;)V
+.method public final N3(Lcom/google/android/gms/internal/drive/zzfy;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -22,7 +22,7 @@
     .end annotation
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfy;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfy;->f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     const/4 p1, 0x0
 

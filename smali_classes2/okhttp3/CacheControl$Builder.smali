@@ -58,7 +58,6 @@
 .method public build()Lokhttp3/CacheControl;
     .locals 1
 
-    .line 1
     new-instance v0, Lokhttp3/CacheControl;
 
     invoke-direct {v0, p0}, Lokhttp3/CacheControl;-><init>(Lokhttp3/CacheControl$Builder;)V
@@ -71,7 +70,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->immutable:Z
 
     return-object p0
@@ -114,10 +112,12 @@
 
     const-string v0, "maxAge < 0: "
 
-    invoke-static {v0, p1}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    .line 4
+    invoke-static {v0, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 5
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
@@ -160,10 +160,12 @@
 
     const-string v0, "maxStale < 0: "
 
-    invoke-static {v0, p1}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    .line 4
+    invoke-static {v0, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 5
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
@@ -206,10 +208,12 @@
 
     const-string v0, "minFresh < 0: "
 
-    invoke-static {v0, p1}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    .line 4
+    invoke-static {v0, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 5
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p2
@@ -220,7 +224,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->noCache:Z
 
     return-object p0
@@ -231,7 +234,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->noStore:Z
 
     return-object p0
@@ -242,7 +244,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->noTransform:Z
 
     return-object p0
@@ -253,7 +254,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lokhttp3/CacheControl$Builder;->onlyIfCached:Z
 
     return-object p0

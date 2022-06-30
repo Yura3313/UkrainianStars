@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroid/support/v4/media/MediaBrowserCompat$ConnectionCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/MediaBrowserCompat$ConnectionCallback$StubApi21;->this$0:Landroid/support/v4/media/MediaBrowserCompat$ConnectionCallback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

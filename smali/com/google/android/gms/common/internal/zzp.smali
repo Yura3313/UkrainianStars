@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.common.internal.IGmsCallbacks"
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/common/zzb;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
 
     return-void

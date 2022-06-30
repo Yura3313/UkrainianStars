@@ -33,13 +33,13 @@
 
     const-string v0, "Client-SDK"
 
-    invoke-virtual {p1, v0, p2}, Ljavax/net/ssl/HttpsURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, p2}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const p2, 0xea60
 
-    invoke-virtual {p1, p2}, Ljavax/net/ssl/HttpsURLConnection;->setConnectTimeout(I)V
+    invoke-virtual {p1, p2}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
-    invoke-virtual {p1, p2}, Ljavax/net/ssl/HttpsURLConnection;->setReadTimeout(I)V
+    invoke-virtual {p1, p2}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     invoke-static {}, Lcom/adjust/sdk/UtilNetworking;->access$000()Ljava/lang/String;
 
@@ -53,7 +53,7 @@
 
     const-string v0, "User-Agent"
 
-    invoke-virtual {p1, v0, p2}, Ljavax/net/ssl/HttpsURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, p2}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     return-void

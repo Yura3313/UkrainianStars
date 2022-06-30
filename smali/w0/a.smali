@@ -1,4 +1,4 @@
-.class public Lw0/a;
+.class public final Lw0/a;
 .super Ljava/lang/Object;
 .source "AndroidResources.java"
 

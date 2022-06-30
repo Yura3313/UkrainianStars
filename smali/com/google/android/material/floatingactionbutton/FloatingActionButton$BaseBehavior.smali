@@ -79,60 +79,60 @@
 
 
 # virtual methods
-.method public a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/graphics/Rect;)Z
-    .locals 4
+.method public final a(Landroid/view/View;Landroid/graphics/Rect;)Z
+    .locals 5
 
     .line 1
-    check-cast p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+    check-cast p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
     .line 2
-    iget-object p1, p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->s:Landroid/graphics/Rect;
+    iget-object v0, p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->r:Landroid/graphics/Rect;
 
     .line 3
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getLeft()I
-
-    move-result v0
-
-    iget v1, p1, Landroid/graphics/Rect;->left:I
-
-    add-int/2addr v0, v1
-
-    .line 4
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getTop()I
+    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
     move-result v1
 
-    iget v2, p1, Landroid/graphics/Rect;->top:I
+    iget v2, v0, Landroid/graphics/Rect;->left:I
 
     add-int/2addr v1, v2
 
-    .line 5
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getRight()I
+    .line 4
+    invoke-virtual {p1}, Landroid/view/View;->getTop()I
 
     move-result v2
 
-    iget v3, p1, Landroid/graphics/Rect;->right:I
+    iget v3, v0, Landroid/graphics/Rect;->top:I
 
-    sub-int/2addr v2, v3
+    add-int/2addr v2, v3
+
+    .line 5
+    invoke-virtual {p1}, Landroid/view/View;->getRight()I
+
+    move-result v3
+
+    iget v4, v0, Landroid/graphics/Rect;->right:I
+
+    sub-int/2addr v3, v4
 
     .line 6
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getBottom()I
+    invoke-virtual {p1}, Landroid/view/View;->getBottom()I
 
-    move-result p2
+    move-result p1
 
-    iget p1, p1, Landroid/graphics/Rect;->bottom:I
+    iget v0, v0, Landroid/graphics/Rect;->bottom:I
 
-    sub-int/2addr p2, p1
+    sub-int/2addr p1, v0
 
     .line 7
-    invoke-virtual {p3, v0, v1, v2, p2}, Landroid/graphics/Rect;->set(IIII)V
+    invoke-virtual {p2, v1, v2, v3, p1}, Landroid/graphics/Rect;->set(IIII)V
 
     const/4 p1, 0x1
 
     return p1
 .end method
 
-.method public c(Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;)V
+.method public final c(Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;)V
     .locals 1
 
     .line 1
@@ -149,7 +149,7 @@
     return-void
 .end method
 
-.method public d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+.method public final d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -205,7 +205,7 @@
     return v1
 .end method
 
-.method public h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
+.method public final h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
     .locals 7
 
     .line 1
@@ -217,7 +217,9 @@
     move-result-object v0
 
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    check-cast v0, Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v1
 
@@ -299,7 +301,7 @@
     invoke-virtual {p1, p2, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v(Landroid/view/View;I)V
 
     .line 14
-    iget-object p3, p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->s:Landroid/graphics/Rect;
+    iget-object p3, p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->r:Landroid/graphics/Rect;
 
     if-eqz p3, :cond_9
 
@@ -317,18 +319,18 @@
     if-lez v0, :cond_9
 
     .line 16
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
 
     .line 17
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getRight()I
+    invoke-virtual {p2}, Landroid/view/View;->getRight()I
 
     move-result v1
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v3
 
@@ -345,7 +347,7 @@
 
     .line 19
     :cond_4
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getLeft()I
+    invoke-virtual {p2}, Landroid/view/View;->getLeft()I
 
     move-result v1
 
@@ -365,11 +367,11 @@
 
     .line 21
     :goto_3
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getBottom()I
+    invoke-virtual {p2}, Landroid/view/View;->getBottom()I
 
     move-result v3
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p1
 
@@ -386,7 +388,7 @@
 
     .line 23
     :cond_6
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getTop()I
+    invoke-virtual {p2}, Landroid/view/View;->getTop()I
 
     move-result p1
 
@@ -404,13 +406,13 @@
     if-eqz v2, :cond_8
 
     .line 25
-    invoke-static {p2, v2}, Lf0/r;->t(Landroid/view/View;I)V
+    invoke-static {p2, v2}, Lf0/r;->w(Landroid/view/View;I)V
 
     :cond_8
     if-eqz v1, :cond_9
 
     .line 26
-    invoke-static {p2, v1}, Lf0/r;->s(Landroid/view/View;I)V
+    invoke-static {p2, v1}, Lf0/r;->v(Landroid/view/View;I)V
 
     :cond_9
     const/4 p1, 0x1
@@ -422,7 +424,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
@@ -542,7 +544,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
@@ -553,7 +555,7 @@
 
     move-result p1
 
-    invoke-virtual {p2}, Landroid/widget/ImageButton;->getHeight()I
+    invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result v2
 

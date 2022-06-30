@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/view/c;
+.field public final synthetic f:Lcom/supercell/id/view/c;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/c;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/a;->g:Lcom/supercell/id/view/c;
+    iput-object p1, p0, Lcom/supercell/id/view/a;->f:Lcom/supercell/id/view/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,11 +27,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/a;->g:Lcom/supercell/id/view/c;
+    iget-object v0, p0, Lcom/supercell/id/view/a;->f:Lcom/supercell/id/view/c;
 
     const-string v1, "it"
 
-    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -62,7 +62,7 @@
     invoke-virtual {v0, p1}, Lcom/supercell/id/view/c;->b(F)V
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/id/view/a;->g:Lcom/supercell/id/view/c;
+    iget-object p1, p0, Lcom/supercell/id/view/a;->f:Lcom/supercell/id/view/c;
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 

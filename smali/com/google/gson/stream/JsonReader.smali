@@ -159,12 +159,9 @@
     .line 9
     iput-object v2, p0, Lcom/google/gson/stream/JsonReader;->stack:[I
 
-    .line 10
-    iput v0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
-
     add-int/lit8 v3, v0, 0x1
 
-    .line 11
+    .line 10
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
     const/4 v3, 0x6
@@ -173,22 +170,22 @@
 
     new-array v0, v1, [Ljava/lang/String;
 
-    .line 12
+    .line 11
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathNames:[Ljava/lang/String;
 
     new-array v0, v1, [I
 
-    .line 13
+    .line 12
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     if-eqz p1, :cond_0
 
-    .line 14
+    .line 13
     iput-object p1, p0, Lcom/google/gson/stream/JsonReader;->in:Ljava/io/Reader;
 
     return-void
 
-    .line 15
+    .line 14
     :cond_0
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -488,7 +485,6 @@
 
     return p1
 
-    .line 1
     :cond_0
     :pswitch_0
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
@@ -551,10 +547,12 @@
 
     const-string v0, "End of input"
 
+    .line 7
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 8
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
 
     move-result-object v1
@@ -569,31 +567,31 @@
 
     throw p1
 
-    .line 7
+    .line 9
     :cond_1
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 8
+    .line 10
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     :cond_2
     add-int/lit8 v4, v1, 0x1
 
-    .line 9
+    .line 11
     aget-char v1, v0, v1
 
     const/16 v5, 0xa
 
     if-ne v1, v5, :cond_3
 
-    .line 10
+    .line 12
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
     add-int/2addr v1, v3
 
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
-    .line 11
+    .line 13
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
 
     goto/16 :goto_1
@@ -618,7 +616,7 @@
 
     if-ne v1, v5, :cond_9
 
-    .line 12
+    .line 14
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     const/4 v6, 0x2
@@ -627,15 +625,15 @@
 
     add-int/lit8 v4, v4, -0x1
 
-    .line 13
+    .line 15
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 14
+    .line 16
     invoke-direct {p0, v6}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
 
     move-result v2
 
-    .line 15
+    .line 17
     iget v4, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     add-int/2addr v4, v3
@@ -646,11 +644,11 @@
 
     return v1
 
-    .line 16
+    .line 18
     :cond_5
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    .line 17
+    .line 19
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     aget-char v3, v0, v2
@@ -666,16 +664,16 @@
     :cond_6
     add-int/lit8 v2, v2, 0x1
 
-    .line 18
+    .line 20
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 19
+    .line 21
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->skipToEndOfLine()V
 
-    .line 20
+    .line 22
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 21
+    .line 23
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     goto :goto_0
@@ -683,24 +681,24 @@
     :cond_7
     add-int/lit8 v2, v2, 0x1
 
-    .line 22
+    .line 24
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     const-string v1, "*/"
 
-    .line 23
+    .line 25
     invoke-direct {p0, v1}, Lcom/google/gson/stream/JsonReader;->skipTo(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_8
 
-    .line 24
+    .line 26
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     add-int/2addr v1, v6
 
-    .line 25
+    .line 27
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     goto/16 :goto_0
@@ -708,7 +706,7 @@
     :cond_8
     const-string p1, "Unterminated comment"
 
-    .line 26
+    .line 28
     invoke-direct {p0, p1}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
 
     move-result-object p1
@@ -720,24 +718,24 @@
 
     if-ne v1, v2, :cond_a
 
-    .line 27
+    .line 29
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 28
+    .line 30
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    .line 29
+    .line 31
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->skipToEndOfLine()V
 
-    .line 30
+    .line 32
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 31
+    .line 33
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     goto/16 :goto_0
 
-    .line 32
+    .line 34
     :cond_a
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
@@ -1969,10 +1967,12 @@
 
     const-string v2, "\\u"
 
+    .line 9
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 10
     new-instance v3, Ljava/lang/String;
 
     iget-object v4, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
@@ -1991,7 +1991,7 @@
 
     throw v1
 
-    .line 9
+    .line 11
     :cond_7
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
@@ -2004,7 +2004,7 @@
     :cond_8
     const-string v0, "Invalid escape sequence"
 
-    .line 10
+    .line 12
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
 
     move-result-object v0
@@ -2034,7 +2034,7 @@
 
     return v0
 
-    .line 11
+    .line 13
     :cond_e
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
@@ -2042,7 +2042,7 @@
 
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
-    .line 12
+    .line 14
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
 
     :cond_f
@@ -2456,10 +2456,12 @@
     .line 1
     new-instance v0, Lcom/google/gson/stream/MalformedJsonException;
 
+    .line 2
     invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
+    .line 3
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
 
     move-result-object v1
@@ -2527,10 +2529,12 @@
 
     const-string v1, "Expected BEGIN_ARRAY but was "
 
+    .line 7
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 8
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v2
@@ -2593,10 +2597,12 @@
 
     const-string v1, "Expected BEGIN_OBJECT but was "
 
+    .line 6
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 7
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v2
@@ -3215,10 +3221,12 @@
 
     const-string v1, "Expected END_ARRAY but was "
 
+    .line 7
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 8
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v2
@@ -3301,10 +3309,12 @@
 
     const-string v1, "Expected END_OBJECT but was "
 
+    .line 8
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 9
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v2
@@ -3465,7 +3475,6 @@
 .method public final isLenient()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/gson/stream/JsonReader;->lenient:Z
 
     return v0
@@ -3596,10 +3605,12 @@
 
     const-string v1, "Expected a boolean but was "
 
+    .line 8
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 9
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v2
@@ -3736,10 +3747,12 @@
 
     const-string v1, "Expected a double but was "
 
+    .line 10
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 11
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v2
@@ -3771,7 +3784,7 @@
     :cond_7
     const/16 v0, 0x22
 
-    .line 10
+    .line 12
     :goto_1
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextQuotedValue(C)Ljava/lang/String;
 
@@ -3779,18 +3792,18 @@
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 11
+    .line 13
     :goto_2
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 12
+    .line 14
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
     move-result-wide v0
 
-    .line 13
+    .line 15
     iget-boolean v3, p0, Lcom/google/gson/stream/JsonReader;->lenient:Z
 
     if-nez v3, :cond_9
@@ -3809,7 +3822,7 @@
 
     goto :goto_3
 
-    .line 14
+    .line 16
     :cond_8
     new-instance v2, Lcom/google/gson/stream/MalformedJsonException;
 
@@ -3823,7 +3836,7 @@
 
     invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
-    .line 15
+    .line 17
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
 
     move-result-object v0
@@ -3842,13 +3855,13 @@
     :goto_3
     const/4 v3, 0x0
 
-    .line 16
+    .line 18
     iput-object v3, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 17
+    .line 19
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 18
+    .line 20
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget v3, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -3924,10 +3937,12 @@
     :cond_1
     new-instance v0, Ljava/lang/NumberFormatException;
 
+    .line 7
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 8
     iget-wide v2, p0, Lcom/google/gson/stream/JsonReader;->peekedLong:J
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
@@ -3951,7 +3966,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 7
+    .line 9
     new-instance v0, Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
@@ -3964,7 +3979,7 @@
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 8
+    .line 10
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->peekedNumberLength:I
@@ -3990,14 +4005,16 @@
 
     goto :goto_0
 
-    .line 9
+    .line 11
     :cond_4
     new-instance v0, Ljava/lang/IllegalStateException;
 
+    .line 12
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 13
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v2
@@ -4022,7 +4039,7 @@
     :goto_0
     if-ne v0, v1, :cond_6
 
-    .line 10
+    .line 14
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->nextUnquotedValue()Ljava/lang/String;
 
     move-result-object v0
@@ -4041,7 +4058,7 @@
     :cond_7
     const/16 v0, 0x22
 
-    .line 11
+    .line 15
     :goto_1
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextQuotedValue(C)Ljava/lang/String;
 
@@ -4049,7 +4066,7 @@
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 12
+    .line 16
     :goto_2
     :try_start_0
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
@@ -4058,10 +4075,10 @@
 
     move-result v0
 
-    .line 13
+    .line 17
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 14
+    .line 18
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget v4, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -4084,10 +4101,10 @@
     :goto_3
     const/16 v0, 0xb
 
-    .line 15
+    .line 19
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 16
+    .line 20
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
@@ -4104,13 +4121,13 @@
 
     const/4 v0, 0x0
 
-    .line 17
+    .line 21
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 18
+    .line 22
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 19
+    .line 23
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -4125,14 +4142,16 @@
 
     return v4
 
-    .line 20
+    .line 24
     :cond_8
     new-instance v0, Ljava/lang/NumberFormatException;
 
+    .line 25
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 26
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -4248,10 +4267,12 @@
     :cond_3
     new-instance v0, Ljava/lang/IllegalStateException;
 
+    .line 9
     invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 10
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v2
@@ -4276,7 +4297,7 @@
     :goto_0
     if-ne v0, v1, :cond_5
 
-    .line 9
+    .line 11
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->nextUnquotedValue()Ljava/lang/String;
 
     move-result-object v0
@@ -4295,7 +4316,7 @@
     :cond_6
     const/16 v0, 0x22
 
-    .line 10
+    .line 12
     :goto_1
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextQuotedValue(C)Ljava/lang/String;
 
@@ -4303,7 +4324,7 @@
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 11
+    .line 13
     :goto_2
     :try_start_0
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
@@ -4312,10 +4333,10 @@
 
     move-result-wide v0
 
-    .line 12
+    .line 14
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 13
+    .line 15
     iget-object v4, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget v5, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -4338,10 +4359,10 @@
     :goto_3
     const/16 v0, 0xb
 
-    .line 14
+    .line 16
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 15
+    .line 17
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
@@ -4358,13 +4379,13 @@
 
     const/4 v0, 0x0
 
-    .line 16
+    .line 18
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 17
+    .line 19
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 18
+    .line 20
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -4379,14 +4400,16 @@
 
     return-wide v4
 
-    .line 19
+    .line 21
     :cond_7
     new-instance v0, Ljava/lang/NumberFormatException;
 
+    .line 22
     invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 23
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -4485,10 +4508,12 @@
 
     const-string v1, "Expected a name but was "
 
+    .line 9
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 10
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v2
@@ -4559,10 +4584,12 @@
 
     const-string v1, "Expected null but was "
 
+    .line 6
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 7
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v2
@@ -4723,10 +4750,12 @@
 
     const-string v1, "Expected a string but was "
 
+    .line 14
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 15
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v2
@@ -4863,7 +4892,6 @@
 .method public final setLenient(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/gson/stream/JsonReader;->lenient:Z
 
     return-void
@@ -5053,7 +5081,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

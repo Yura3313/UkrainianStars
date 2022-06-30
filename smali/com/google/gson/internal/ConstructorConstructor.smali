@@ -72,7 +72,7 @@
     move-result-object p1
 
     .line 2
-    invoke-virtual {p1}, Ljava/lang/reflect/Constructor;->isAccessible()Z
+    invoke-virtual {p1}, Ljava/lang/reflect/AccessibleObject;->isAccessible()Z
 
     move-result v0
 
@@ -328,7 +328,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/gson/internal/ConstructorConstructor$14;
 
     invoke-direct {v0, p0, p2, p1}, Lcom/google/gson/internal/ConstructorConstructor$14;-><init>(Lcom/google/gson/internal/ConstructorConstructor;Ljava/lang/Class;Ljava/lang/reflect/Type;)V
@@ -432,7 +431,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/internal/ConstructorConstructor;->instanceCreators:Ljava/util/Map;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;

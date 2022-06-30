@@ -11,7 +11,6 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->getProperties()Ljava/util/Properties;
 
     move-result-object v0

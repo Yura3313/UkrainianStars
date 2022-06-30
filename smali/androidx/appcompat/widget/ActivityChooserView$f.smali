@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/ActivityChooserView$f;
+.class public final Landroidx/appcompat/widget/ActivityChooserView$f;
 .super Landroid/widget/BaseAdapter;
 .source "ActivityChooserView.java"
 
@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public g:I
+.field public f:I
+
+.field public g:Z
 
 .field public h:Z
 
-.field public i:Z
-
-.field public final synthetic j:Landroidx/appcompat/widget/ActivityChooserView;
+.field public final synthetic i:Landroidx/appcompat/widget/ActivityChooserView;
 
 
 # direct methods
@@ -29,41 +29,38 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->j:Landroidx/appcompat/widget/ActivityChooserView;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->i:Landroidx/appcompat/widget/ActivityChooserView;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     const/4 p1, 0x4
 
     .line 2
-    iput p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->g:I
+    iput p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->f:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getCount()I
+.method public final getCount()I
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 1
     throw v0
 .end method
 
-.method public getItem(I)Ljava/lang/Object;
+.method public final getItem(I)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-boolean p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->i:Z
-
-    const/4 v0, 0x0
-
-    if-nez p1, :cond_1
+    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ActivityChooserView$f;->getItemViewType(I)I
 
     .line 2
-    iget-boolean p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->h:Z
+    iget-boolean p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->g:Z
+
+    const/4 v0, 0x0
 
     if-nez p1, :cond_0
 
@@ -72,13 +69,9 @@
     .line 3
     :cond_0
     throw v0
-
-    .line 4
-    :cond_1
-    throw v0
 .end method
 
-.method public getItemId(I)J
+.method public final getItemId(I)J
     .locals 2
 
     int-to-long v0, p1
@@ -86,11 +79,11 @@
     return-wide v0
 .end method
 
-.method public getItemViewType(I)I
+.method public final getItemViewType(I)I
     .locals 0
 
     .line 1
-    iget-boolean p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->i:Z
+    iget-boolean p1, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->h:Z
 
     if-nez p1, :cond_0
 
@@ -105,15 +98,11 @@
     throw p1
 .end method
 
-.method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 3
+.method public final getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    .locals 2
 
     .line 1
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->i:Z
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_2
+    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ActivityChooserView$f;->getItemViewType(I)I
 
     if-eqz p2, :cond_0
 
@@ -122,15 +111,15 @@
 
     move-result v0
 
-    sget v2, Landroidx/appcompat/R$id;->list_item:I
+    sget v1, Landroidx/appcompat/R$id;->list_item:I
 
-    if-eq v0, v2, :cond_1
+    if-eq v0, v1, :cond_1
 
     .line 3
     :cond_0
-    iget-object p2, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->j:Landroidx/appcompat/widget/ActivityChooserView;
+    iget-object p2, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->i:Landroidx/appcompat/widget/ActivityChooserView;
 
-    invoke-virtual {p2}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -140,17 +129,17 @@
 
     sget v0, Landroidx/appcompat/R$layout;->abc_activity_chooser_view_list_item:I
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    invoke-virtual {p2, v0, p3, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-virtual {p2, v0, p3, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p2
 
     .line 4
     :cond_1
-    iget-object p3, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->j:Landroidx/appcompat/widget/ActivityChooserView;
+    iget-object p3, p0, Landroidx/appcompat/widget/ActivityChooserView$f;->i:Landroidx/appcompat/widget/ActivityChooserView;
 
-    invoke-virtual {p3}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p3
 
@@ -168,14 +157,12 @@
     .line 6
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ActivityChooserView$f;->getItem(I)Ljava/lang/Object;
 
-    throw v1
+    const/4 p1, 0x0
 
-    .line 7
-    :cond_2
-    throw v1
+    throw p1
 .end method
 
-.method public getViewTypeCount()I
+.method public final getViewTypeCount()I
     .locals 1
 
     const/4 v0, 0x3

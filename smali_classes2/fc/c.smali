@@ -1,148 +1,67 @@
-.class public Lfc/c;
-.super Ljava/lang/Object;
-.source "NonViewAware.java"
-
-# interfaces
-.implements Lfc/a;
-
-
-# instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Lac/d;
+.class public final Lfc/c;
+.super Ljava/io/FilterInputStream;
+.source "FlushedInputStream.java"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lac/d;I)V
+.method public constructor <init>(Ljava/io/InputStream;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    if-eqz p2, :cond_1
-
-    if-eqz p3, :cond_0
-
-    .line 2
-    iput-object p1, p0, Lfc/c;->a:Ljava/lang/String;
-
-    .line 3
-    iput-object p2, p0, Lfc/c;->b:Lac/d;
+    invoke-direct {p0, p1}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
 
     return-void
-
-    .line 4
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string p2, "scaleType must not be null"
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 5
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string p2, "imageSize must not be null"
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public a(Landroid/graphics/drawable/Drawable;)Z
-    .locals 0
+.method public final skip(J)J
+    .locals 7
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    const/4 p1, 0x1
+    const-wide/16 v0, 0x0
 
-    return p1
-.end method
+    move-wide v2, v0
 
-.method public b()Landroid/view/View;
-    .locals 1
+    :goto_0
+    cmp-long v4, v2, p1
 
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public c()Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public d()I
-    .locals 1
-
-    const/4 v0, 0x2
-
-    return v0
-.end method
-
-.method public e(Landroid/graphics/Bitmap;)Z
-    .locals 0
-
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public getHeight()I
-    .locals 1
+    if-gez v4, :cond_2
 
     .line 1
-    iget-object v0, p0, Lfc/c;->b:Lac/d;
+    iget-object v4, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
+
+    sub-long v5, p1, v2
+
+    invoke-virtual {v4, v5, v6}, Ljava/io/InputStream;->skip(J)J
+
+    move-result-wide v4
+
+    cmp-long v6, v4, v0
+
+    if-nez v6, :cond_1
 
     .line 2
-    iget v0, v0, Lac/d;->b:I
+    invoke-virtual {p0}, Ljava/io/InputStream;->read()I
 
-    return v0
-.end method
+    move-result v4
 
-.method public getId()I
-    .locals 1
+    if-gez v4, :cond_0
 
-    .line 1
-    iget-object v0, p0, Lfc/c;->a:Ljava/lang/String;
+    goto :goto_1
 
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    :cond_0
+    const-wide/16 v4, 0x1
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
-
-    move-result v0
+    :cond_1
+    add-long/2addr v2, v4
 
     goto :goto_0
 
-    :cond_0
-    iget-object v0, p0, Lfc/c;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    move-result v0
-
-    :goto_0
-    return v0
-.end method
-
-.method public getWidth()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lfc/c;->b:Lac/d;
-
-    .line 2
-    iget v0, v0, Lac/d;->a:I
-
-    return v0
+    :cond_2
+    :goto_1
+    return-wide v2
 .end method

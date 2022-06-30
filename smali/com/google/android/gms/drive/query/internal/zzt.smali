@@ -18,10 +18,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Ls2/k;
+    new-instance v0, Lt2/k;
 
-    invoke-direct {v0}, Ls2/k;-><init>()V
+    invoke-direct {v0}, Lt2/k;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/query/internal/zzt;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -31,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/drive/query/internal/zza;-><init>()V
 
     return-void
@@ -39,20 +37,17 @@
 
 
 # virtual methods
-.method public final B1(Lj3/y1;)Ljava/lang/Object;
+.method public final I1(Lef/t;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
             "Ljava/lang/Object;",
             ">(",
-            "Lj3/y1;",
+            "Lef/t;",
             ")TF;"
         }
     .end annotation
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     const-string p1, "all()"
 
@@ -65,12 +60,12 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
     .line 2
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

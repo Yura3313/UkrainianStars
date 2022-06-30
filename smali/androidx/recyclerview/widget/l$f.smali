@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/l$f;
+.class public final Landroidx/recyclerview/widget/l$f;
 .super Ljava/lang/Object;
 .source "DiffUtil.java"
 
@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

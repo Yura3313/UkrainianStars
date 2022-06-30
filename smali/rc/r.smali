@@ -1,69 +1,83 @@
-.class public final Lrc/r;
-.super Ljava/lang/Object;
-.source "DebugMenu.kt"
+.class public final synthetic Lrc/r;
+.super Lse/g;
+.source "InventoryApiClient.kt"
+
+# interfaces
+.implements Lre/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/g;",
+        "Lre/l<",
+        "Lorg/json/JSONObject;",
+        "Lorg/json/JSONObject;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static final a(Landroidx/fragment/app/Fragment;Ljava/lang/String;Landroid/os/Parcelable;)Landroidx/fragment/app/Fragment;
+.method public constructor <init>(Lrc/i;)V
     .locals 1
 
-    if-eqz p0, :cond_1
+    const/4 v0, 0x1
 
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    invoke-direct {p0, v0, p1}, Lse/g;-><init>(ILjava/lang/Object;)V
 
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    new-instance v0, Landroid/os/Bundle;
-
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    .line 3
-    :goto_0
-    invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
-
-    .line 4
-    invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->J0(Landroid/os/Bundle;)V
-
-    return-object p0
-
-    :cond_1
-    const-string p0, "$this$addArgument"
-
-    .line 5
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p0, 0x0
-
-    throw p0
+    return-void
 .end method
 
-.method public static final b(Landroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+
+# virtual methods
+.method public final getName()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "handleResponseData"
+
+    return-object v0
+.end method
+
+.method public final getOwner()Lwe/d;
+    .locals 1
+
+    const-class v0, Lrc/i;
+
+    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getSignature()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "handleResponseData(Lorg/json/JSONObject;)Lorg/json/JSONObject;"
+
+    return-object v0
+.end method
+
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    check-cast p1, Lorg/json/JSONObject;
 
-    if-eqz v0, :cond_0
-
-    goto :goto_0
+    const-string v0, "p1"
 
     .line 2
-    :cond_0
-    new-instance v0, Landroid/os/Bundle;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
+
+    check-cast v0, Lrc/i;
 
     .line 3
-    :goto_0
-    invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lrc/f;->c(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
-    .line 4
-    invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->J0(Landroid/os/Bundle;)V
+    move-result-object p1
 
-    return-object p0
+    return-object p1
 .end method

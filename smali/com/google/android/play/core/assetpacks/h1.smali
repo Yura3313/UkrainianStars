@@ -1,76 +1,114 @@
-.class public final synthetic Lcom/google/android/play/core/assetpacks/h1;
+.class public final Lcom/google/android/play/core/assetpacks/h1;
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements La5/u0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "La5/u0<",
+        "Lcom/google/android/play/core/assetpacks/g1;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final g:Lcom/google/android/play/core/assetpacks/k1;
+.field public final f:La5/u0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "La5/u0<",
+            "Lcom/google/android/play/core/assetpacks/d1;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final h:I
+.field public final g:La5/u0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "La5/u0<",
+            "Lcom/google/android/play/core/assetpacks/z;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final i:Ljava/lang/String;
+.field public final h:La5/u0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "La5/u0<",
+            "Lcom/google/android/play/core/assetpacks/i0;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/play/core/assetpacks/k1;ILjava/lang/String;)V
+.method public constructor <init>(La5/u0;La5/u0;La5/u0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "La5/u0<",
+            "Lcom/google/android/play/core/assetpacks/d1;",
+            ">;",
+            "La5/u0<",
+            "Lcom/google/android/play/core/assetpacks/z;",
+            ">;",
+            "La5/u0<",
+            "Lcom/google/android/play/core/assetpacks/i0;",
+            ">;)V"
+        }
+    .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/h1;->g:Lcom/google/android/play/core/assetpacks/k1;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/h1;->f:La5/u0;
 
-    iput p2, p0, Lcom/google/android/play/core/assetpacks/h1;->h:I
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/h1;->g:La5/u0;
 
-    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/h1;->i:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/h1;->h:La5/u0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
+.method public final bridge synthetic e()Ljava/lang/Object;
     .locals 4
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/h1;->g:Lcom/google/android/play/core/assetpacks/k1;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/h1;->f:La5/u0;
 
-    iget v1, p0, Lcom/google/android/play/core/assetpacks/h1;->h:I
+    invoke-interface {v0}, La5/u0;->e()Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/h1;->i:Ljava/lang/String;
+    move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/h1;->g:La5/u0;
 
-    const/4 v3, 0x4
+    invoke-interface {v1}, La5/u0;->e()Ljava/lang/Object;
 
-    .line 1
-    :try_start_0
-    invoke-virtual {v0, v1, v2, v3}, Lcom/google/android/play/core/assetpacks/k1;->d(ILjava/lang/String;I)V
-    :try_end_0
-    .catch Lcom/google/android/play/core/common/LocalTestingException; {:try_start_0 .. :try_end_0} :catch_0
+    move-result-object v1
 
-    goto :goto_0
+    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/h1;->h:La5/u0;
 
-    :catch_0
-    move-exception v0
+    invoke-interface {v2}, La5/u0;->e()Ljava/lang/Object;
 
-    sget-object v1, Lcom/google/android/play/core/assetpacks/k1;->g:Ly4/b;
+    move-result-object v2
 
-    const/4 v2, 0x1
+    new-instance v3, Lcom/google/android/play/core/assetpacks/g1;
 
-    new-array v2, v2, [Ljava/lang/Object;
+    check-cast v0, Lcom/google/android/play/core/assetpacks/d1;
 
-    const/4 v3, 0x0
+    check-cast v1, Lcom/google/android/play/core/assetpacks/z;
 
-    aput-object v0, v2, v3
+    check-cast v2, Lcom/google/android/play/core/assetpacks/i0;
 
-    const/4 v0, 0x5
+    invoke-direct {v3, v0, v1, v2}, Lcom/google/android/play/core/assetpacks/g1;-><init>(Lcom/google/android/play/core/assetpacks/d1;Lcom/google/android/play/core/assetpacks/z;Lcom/google/android/play/core/assetpacks/i0;)V
 
-    const-string v3, "notifyModuleCompleted failed"
-
-    .line 2
-    invoke-virtual {v1, v0, v3, v2}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
-
-    :goto_0
-    return-void
+    return-object v3
 .end method

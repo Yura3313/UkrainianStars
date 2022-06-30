@@ -52,7 +52,7 @@ TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,<NUM> jeton alıp bir sonraki kademeye ge�
 TID_PURCHASE_BRAWL_PASS_TITLE,BRAWL PASS AL!
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,BRAWL PASS
 TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,BRAWL PASS PAKETİ
-TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"Brawl Pass ödülleri, ekstra görevler ve haftada +2 görev değiştirme hakkı"
+TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"Brawl Pass ödülleri, ekstra görevler ve haftada <NUM> görev değiştirme hakkı"
 TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,BRAWL PASS + <NUM> KADEME
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,Geçmiş sezonlar için Brawl Pass alınamaz.
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,Şu anda Brawl Pass sezonu yok. Daha sonra tekrar dene.
@@ -274,7 +274,7 @@ TID_LONG_RANGE_SHOTGUN_DESC,Shelly'nin av tüfeği orta menzilde geniş bir alan
 TID_MEGA_BLASH_ULTI,SÜPER FİŞEK
 TID_MEGA_BLASH_ULTI_DESC,Shelly'nin süper fişeği hem siperleri hem düşmanları mahveder. Hayatta kalan düşmanları da geri püskürtür.
 TID_GUNSLINGER,COLT
-TID_GUNSLINGER_DESC,"Colt, çift tabancasıyla isabetli bir dizi atış yapar. Süper atışı da siperleri yok eder ve daha uzun menzillidir!"
+TID_GUNSLINGER_DESC,Kendini yanlış zamanda yanlış yerde bulan beklenmedik bir kahraman. Aynaya bakmaktan çekinmez ve öz güveni tamdır!
 TID_RAPID_FIRE,ALTIPATLAR
 TID_RAPID_FIRE_DESC,"Colt, tabancalarıyla altı seri ve uzun mesafeli atış yapar."
 TID_RAPID_FIRE_ULTI,MERMİ FIRTINASI
@@ -286,13 +286,13 @@ TID_SHOTGUN_BLAST_DESC,Bull'un çift namlulu av tüfeği ağır hasar verir ama 
 TID_CHARGE,BULDOZER
 TID_CHARGE_DESC,"Bull, koşmaya başlar, yolundaki rakipleri ve engelleri ezip geçer. Kafasını kullanmayı iyi biliyor!"
 TID_ROCKET_GIRL,BROCK
-TID_ROCKET_GIRL_DESC,"Brock, düşmanlara uzun menzilli, patlayıcı roketlerle saldırır. Süper saldırısında da siperleri yok eden balistik bir roket yağmuru ateşler!"
+TID_ROCKET_GIRL_DESC,"Brock, savaş alanını roketlerle aydınlatmadığı zamanlarda dans pistini şık hareketleriyle şenlendirir."
 TID_FIREWORKS_WEAPON,TEK ROKET
 TID_FIREWORKS_WEAPON_DESC,"Brock, uzun menzilli tek bir roket atar."
 TID_FIREWORKS_ULTI,ROKET YAĞMURU
 TID_FIREWORKS_ULTI_DESC,"Brock, düşmanları ve engelleri yok eden bir sürü roket ateşler. Bu roket yağmuruna yakalananlar mahvolur!"
 TID_TNT_DUDE,DYNAMIKE
-TID_TNT_DUDE_DESC,"Dynamike, düşmanlara iki dinamit fırlatır. Süper saldırısı da siperleri de yok eden koca bir bomba fıçısıdır!"
+TID_TNT_DUDE_DESC,Uzun zamandır bir madenin derinliklerinde kaybolduğu düşünülüyordu ama Çılgın Dynamike geri döndü ve her şeyi havaya uçurup paramparça etmeye can atıyor!
 TID_MORTAR,KISA FÜNYE
 TID_MORTAR_DESC,Mike hedefine iki paket dinamit atar. Yüksekten attığı bu dinamitler engellere takılmaz. Fünyeleri de Mike'ın boyu gibi kısadır.
 TID_MORTAR_ULTI,FIÇI BOMBA
@@ -316,7 +316,7 @@ TID_CACTUS_WEAPON_DESC,"Spike, patlayıp etrafa diken saçan küçük bir kaktü
 TID_CACTUS_ULTI,HER YER KAKTÜS!
 TID_CACTUS_ULTI_DESC,"Spike, dikenli bir el bombası atar. Patlama alanında kalan düşmanlar zarar görür ve yavaşlar."
 TID_BARKEEP,BARLEY
-TID_BARKEEP_DESC,"Barley, düşmanlara şişe atarak saldırır ve alan hasarı verir. Süper saldırısında ise çok sayıda yanan şişe fırlatır!"
+TID_BARKEEP_DESC,"Barley, Starr Park'taki en iyi içecekleri servis eder. Ama barını kirletirseniz dumanlar çıkmaya ve şişeler havada uçuşmaya başlar!"
 TID_BARKEEP_WEAPON,ŞİŞE
 TID_BARKEEP_WEAPON_DESC,"Barley, bir şişe fırlatır ve kırılan şişeden saçılan sıvı düşmanlara zarar verir. Sıvı birikintisinin içinde kalan düşmanlar hasar görmeye devam eder."
 TID_BARKEEP_ULTI,SON SİPARİŞLER
@@ -340,7 +340,7 @@ TID_UNDERTAKER_WEAPON_DESC,"Mortis ileri atılıp bir kürek darbesi indirir, gi
 TID_UNDERTAKER_ULTI,CAN SUYU
 TID_UNDERTAKER_ULTI_DESC,"Mortis, düşman savaşçıların sağlığını emip kendi sağlığını artıran bir vampir yarasa sürüsü çağırır. Tüyler ürpertici!"
 TID_CROW,CROW
-TID_CROW_DESC,"Crow, düşmanlarına üç ayrı zehirli hançer fırlatır. Süper saldırısında ise sıçrar ve sıçramanın hem öncesinde hem de sonrasında etrafa hançer fırlatır."
+TID_CROW_DESC,Bu esrarengiz yaratık bir gün ansızın kasabada belirdi. Kimse onu kızdırmaya cesaret edemiyor.
 TID_CROW_WEAPON,HANÇER
 TID_CROW_WEAPON_DESC,"Crow, düşmanlarına üç hançer fırlatır. Zehirli hançerlerin isabet ettiği düşmanlar bir süre daha hasar görmeye devam eder ve bu süre boyunca üzerlerindeki tüm iyileştirme etkileri azalır."
 TID_CROW_ULTI,PİKE
@@ -376,7 +376,7 @@ TID_BONE_THROWER_WEAPON_DESC,Makinelici için bu dev makineli tüfeği kullanmak
 TID_BONE_THROWER_ULTI,BANDAJ TAŞIYICI
 TID_BONE_THROWER_ULTI_DESC,Yüksek yoğunluklu bir çatışmada bazen birkaç sıyrık ve yarayla uğraşmak gerekebilir. Bu bandajlar tüm takımı ayakta tutmaya yardımcı olur.
 TID_BLACK_HOLE,TARA
-TID_BLACK_HOLE_DESC,Tara'nın üçlü tarot kartı saldırısı düşmanlarını delip geçer. Süper saldırısı ise yakınlardaki tüm düşmanları içine çeken ve hasar veren bir kara deliktir!
+TID_BLACK_HOLE_DESC,"Kartlarda senin için ne mi görünüyor? Bu falcı, uzak diyarlardan falına bakmak için geldi. Tek bir şey görüyor: YENİLGİ!"
 TID_BLACK_HOLE_WEAPON,ÜÇLÜ TAROT
 TID_BLACK_HOLE_WEAPON_DESC,Tara bir bilek hareketiyle düşmanlara üç kart fırlatır. Kartlar hedefleri delip geçer. Güzel numara!
 TID_BLACK_HOLE_ULTI,YER ÇEKİMİ
@@ -1422,7 +1422,7 @@ TID_ERROR_POP_UP_UNLOCK_UNAVAILABLE,Hesap şu anda açılamıyor. Lütfen daha s
 TID_ERROR_POP_UP_UNLOCK_UNAVAILABLE_BUTTON,Tekrar dene
 TID_ACCOUNT_LOCKED_INVALID_CODE,Geçersiz kilit açma kodu!
 TID_ACCOUNT_LOCKED_TITLE,Hesap Kilitli
-TID_ACCONT_LOCKED_TEXT,Güvenlik sebeplerinden ötürü hesabın kilitlendi. Hesabını geri almak için destek ekibiyle iletişime geç.
+TID_ACCONT_LOCKED_TEXT,Güvenlik nedeniyle hesabın kilitlendi. Hesabını geri almak için Destek ekibiyle iletişime geç.
 TID_ACCOUNT_LOCKED_TEXT2,Kilit açma kodunu buraya gir:
 TID_HERO_LIST_CONFIRM_GEM_GATCHA,Onaylamak için dokun
 TID_NOT_ENOUGH_GEMS_TITLE,Elmas yetersiz
@@ -1625,11 +1625,11 @@ TID_BARREL_BOT_WEAPON_DESC,Darryl çift namlulu av tüfeklerinden kısa menzilde
 TID_BARREL_BOT_ULTI,FIÇIYLA YUVARLANMA
 TID_BARREL_BOT_ULTI_DESC,"Darryl fıçısının içinde ileriye doğru yuvarlanır, düşmanları geri püskürtür, aldığı hasarı düşürür ve duvarlardan seker. Süper saldırısı zamanla tekrar dolar!"
 TID_ARTILLERY_DUDE,PENNY
-TID_ARTILLERY_DUDE_DESC,"Penny bir altın kesesi ateşler, hedefine ve hedefinin arkasındaki herkese zarar verir. Süper özelliğiyle de havan tarzında bir top yerleştirir!"
+TID_ARTILLERY_DUDE_DESC,"Her şeye muhalif olan yaramaz Penny, \qaçık denizlere\q hükmetmektedir. Sürekli macera arayan tam bir baş belasıdır ve hiçbir şey ortalığı talan etmesine engel olamaz."
 TID_ARTILLERY_DUDE_WEAPON,ALTIN MERMİ
 TID_ARTILLERY_DUDE_WEAPON_DESC,Bir altın kesesi ateşler. Kese bir düşmana çarparsa patlar ve içindeki altınlar arkadaki düşmanlara saçılır.
 TID_ARTILLERY_DUDE_ULTI,YAŞLI TOPÇU
-TID_ARTILLERY_DUDE_ULTI_DESC,"Penny topunu yerleştirir! Bu top uzun menzilde düşmanları vurabilir, siper almış olsalar bile."
+TID_ARTILLERY_DUDE_ULTI_DESC,"Penny topunu yerleştirir! Bu uzun menzilli top, engellerin arkasındaki düşmanları vurabilir ve düştüğü yeri yakar."
 TID_ITEM_NAME_SPECIAL,YILDIZ GÜCÜ
 TID_HERO_INFO_ITEM_LOCKED,Bunu <LEVEL>. seviyeye ulaştıktan sonra bulabilirsin.
 TID_HERO_INFO_LOCKED_INFO,Bu savaşçıyı savaş kutularından bulabilirsin.
@@ -2166,7 +2166,7 @@ TID_TEAM_MEMBER_STATUS_NEW_0,<c999999>ÇEVRİMDIŞI</c>
 TID_TEAM_MEMBER_STATUS_NEW_1,SAVAŞIYOR
 TID_TEAM_MEMBER_STATUS_NEW_2,UZAKTA
 TID_TEAM_MEMBER_STATUS_NEW_3,<EMPTY>
-TID_TEAM_MEMBER_STATUS_NEW_4,EŞLEŞTİRMEDE
+TID_TEAM_MEMBER_STATUS_NEW_4,EŞLEŞTİRME
 TID_TEAM_MEMBER_STATUS_NEW_5,SON EKRANDA
 TID_TEAM_MEMBER_STATUS_NEW_6,<c999999>ÇEVRİMDIŞI</c>
 TID_TEAM_MEMBER_STATUS_NEW_7,İZLİYOR
@@ -2260,7 +2260,7 @@ TID_COOP_6,Dikkat
 TID_RAID_2,Makine Bölgesi
 TID_RAID_3,Hurda Metal
 TID_BUTTON_INVITE_PLAYER,DAVET ET
-TID_BUTTON_JOIN_TEAM,KATIL
+TID_BUTTON_JOIN_TEAM,DAVET ET
 TID_BUTTON_TEAM_FULL,DOLU
 TID_DECIMAL_MARK,.
 TID_RARITY_HEADER_0,KUPA YOLU ÖDÜLÜ
@@ -2532,8 +2532,8 @@ TID_CONTENT_UPDATE,İçerik indiriliyor...
 TID_BATTLE_ROYALE_28,Fantastik Uçuşlar
 TID_SHAMAN_SHIBA_SKIN,SHIBA NITA
 TID_PENNY_BUNNY_SKIN,TAVŞAN PENNY
-TID_SHAMAN_SHIBA_SKIN_SHOP,SHIBA NITA
-TID_PENNY_BUNNY_SKIN_SHOP,TAVŞAN PENNY
+TID_SHAMAN_SHIBA_SKIN_SHOP,SHIBA\nNITA
+TID_PENNY_BUNNY_SKIN_SHOP,TAVŞAN\nPENNY
 TID_PURCHASE_POPUP_CONFIRM_OFFER,TEKLİFİ ALIYOR MUSUN?
 TID_PURCHASE_POPUP_CONFIRM_SKIN,KOSTÜMÜ ALIYOR MUSUN?
 TID_PURCHASE_POPUP_CONFIRM_HERO,SAVAŞÇIYI ALIYOR MUSUN?
@@ -3145,7 +3145,7 @@ TID_POCO_PIRATE_SKIN_SHOP,KORSAN\nPOCO
 TID_BEA_LADYBUG_SKIN,UĞUR BÖCEĞİ BEA
 TID_BEA_LADYBUG_SKIN_SHOP,UĞUR BÖCEĞİ\nBEA
 TID_MAX_BLUE_SKIN,TURBO MAX
-TID_MAX_BLUE_SKIN_SHOP,TURBO\nMAX
+TID_MAX_BLUE_SKIN_SHOP,TURBO MAX
 TID_CTF_3,Kıymetli Hediyeler
 TID_CTF_4,Tatil Soygunu
 TID_CTF_5,Neşeli Kaçış
@@ -3338,6 +3338,8 @@ TID_ACCESSORY_BLOCKED_SUPER_REQUIRED,Süper dolum gerekiyor!
 TID_ACCESSORY_BLOCKED_REQUIRES_MECHA,"Savaşçı, robot modunda olmalı!"
 TID_ACCESSORY_BLOCKED_REQUIRES_DUPLICATE,Lola'nın Ego'su gerekiyor!
 TID_ACCESSORY_BLOCKED_DUPLICATE_TOO_FAR,Lola'nın Ego'su çok uzak!
+TID_ACCESSORY_BLOCKED_SILENCED,Susturuldun!
+TID_ACCESSORY_BLOCKED_RANGE_TO_TURRET,Yakında düşman yok!
 TID_WALLY_SHORT_DESC,DESTEK
 TID_WALLY_DESC,"Sprout, yaşam filizlendirmek için tasarlanmış bir robottur. Zıplayan tohum bombalarını etrafa pervasızca saçar. Süper özelliği de düşmanları engelleyen bir bitki duvarıdır."
 TID_WALLY_WEAPON,TOHUM BOMBASI
@@ -3774,7 +3776,7 @@ TID_BRAWLPASS_POPUP_UNLOCKED,BRAWL PASS AÇILDI!
 TID_BRAWL_PASS_SEASON_1,YAZ CANAVARLARI
 TID_BRAWL_PASS_INFO_TEXT_1,Pek çok ek ödül seni bekliyor!\n\nSURGE- Yeni kromatik savaşçı!\n\nÖZEL KOSTÜM: <SKIN_1>!\n\nÖZEL KOSTÜM: <SKIN_2>!\n\nSURGE İÇİN ÖZEL ROZETLER\n\n<NUM> MEGA KUTULAR!\n\nEKSTRA ALTIN ve GÜÇ PUANI!\n\n\nBrawl Pass'ı daha hızlı tamamlamanı sağlayacak EKSTRA GÖREVLER!\n\nSezon boyunca ÖZEL KROMATİK AD!
 TID_EMOTE_EQUIP_NOT_OWNED,"Bu rozeti, rozet paketlerinde bulabilirsin."
-TID_RAID_BOSS_TOWN_CRUSHER_INTRO_TEXT,MEGA CANAVARI YOK ET!
+TID_RAID_BOSS_TOWN_CRUSHER_INTRO_TEXT,Mega Canavarı yok et!
 TID_EMOTE_CATEGORY_1,1. BÖLME
 TID_EMOTE_CATEGORY_2,2. BÖLME
 TID_EMOTE_CATEGORY_3,3. BÖLME
@@ -3868,13 +3870,13 @@ TID_KING_OF_HILL_28,Büyük Kontrol
 TID_EMOTE_EQUIP_NOT_OWNED_SPECIAL,Koleksiyoncular için özel rozet! Bu rozet kolay kolay bulunmuyor!
 TID_LOGIN_WITH_FACEBOOK,Facebook ile giriş yap
 TID_TERMS_OF_SERVICE_BUTTON_TENCENT,Tencent Games Lisans ve Hizmet Sözleşmesi
-TID_PRIVACY_POLICY_BUTTON_TENCENT,Tencent Games Gizliliği Koruma Yönergeleri
+TID_PRIVACY_POLICY_BUTTON_TENCENT,荒野乱斗隐私保护指引
 TID_PARENTS_GUIDE_BUTTON_TENCENT,Tencent Games Çocukların Gizliliğini Koruma Yönergeleri
 TID_TENCENT_LOGIN_AGREEMENTS,"<TOS>, <PP>, <CHILDREN> ve <THIRDPARTY>'ni dikkatlice okudum ve kabul ediyorum."
 TID_THIRD_PARTY_SHARING_BUTTON_TENCENT,Üçüncü Taraf Bilgi Paylaşım Listesi
 TID_TENCENT_THIRDPARTY_INFO,Üçüncü Taraf Bilgi Paylaşım Listesi
 TID_TENCENT_LOGIN_TOS,Tencent Games Lisans ve Hizmet Sözleşmesi
-TID_TENCENT_LOGIN_PP,Tencent Games Gizliliği Koruma Yönergeleri
+TID_TENCENT_LOGIN_PP,荒野乱斗隐私保护指引
 TID_TENCENT_LOGIN_CHILDREN,Tencent Games Çocukların Gizliliğini Koruma Yönergeleri
 TID_TENCENT_LOGIN_AGREEMENT_NOTE,"Oyuna girmeden önce\n<TOS>,\n<PP>,\n<CHILDREN> ve\n<THIRDPARTY>'ni\ndikkatlice okuyup kabul etmeniz gerekir."
 TID_KING_OF_HILL_29,Elektrik Atlaması
@@ -3995,12 +3997,19 @@ TID_TENCENT_LOGIN_AGREEMENT_POPUP_2_TITLE,Önemli duyuru
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_2,"Önemli: Oyuna girmeden önce\n<TOS>\n<PP>,\n<CHILDREN> ve\n<THIRDPARTY>'ni\ndikkatlice okuyup kabul etmeniz gerekir."
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_BACK,Geri
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_NO,Hayır
+TID_TENCENT_LOGIN_BS_PP,荒野乱斗隐私保护指引
+TID_TENCENT_LOGIN_SPECIAL_TOS,《腾讯游戏许可及服务协议》
+TID_TENCENT_LOGIN_SPECIAL_OLD_PP,《腾讯游戏隐私保护指引》
+TID_TENCENT_LOGIN_SPECIAL_BS_PP,《荒野乱斗隐私保护指引》
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1_TITLE,更新提示
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1,尊敬的腾讯游戏用户：\n为充分保障您的权利及个人信息安全，我们根据法律法规要求，\n对<OLDPP>进行了更新。我们结合本产品和业务实际，更详细、具体地向您说明我们收集和使用您个人信息的业务场景及目的，具体可参见<PP>内更新提示。\n您也可以阅读完整版\n<PP>和<TOS>\n了解详尽的个人信息处理规则和用户权利义务。如您已详细阅读并同意\n<TOS>和<PP>，\n请点击\q同意\q继续使用我们的服务。
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_2,尊敬的用户，您需要详细阅读并同意\n<TOS>、<PP>、\n<CHILDREN>和<THIRDPARTY>，\n才可进入游戏哦。
 TID_BRAWL_PASS_SEASON_2,STARR PARK'A HOŞ GELDİN!
 TID_BRAWL_PASS_INFO_TEXT_2,Pek çok ek ödül seni bekliyor!\n\n<BRAWLER>- Yeni kromatik savaşçı!\n\nÖZEL KOSTÜM: <SKIN_1>!\n\nÖZEL KOSTÜM: <SKIN_2>!\n\n<BRAWLER> İÇİN ÖZEL ROZETLER\n\n<NUM> MEGA KUTU!\n\nEKSTRA ALTIN ve GÜÇ PUANI!\n\n\nBrawl Pass'ı daha hızlı tamamlamanı sağlayacak EKSTRA GÖREVLER!\n\nSezon boyunca ÖZEL KROMATİK AD!
 TID_BRAWL_PASS_SEASON_3,TATİL KAÇIŞI
 TID_BRAWL_PASS_INFO_TEXT_3,Pek çok ek ödül seni bekliyor!\n\n<BRAWLER>- Yeni Kromatik savaşçı!\n\nÖZEL KOSTÜM: <SKIN_1>!\n\nÖZEL KOSTÜM: <SKIN_2>!\n\n<BRAWLER> İÇİN ÖZEL ROZETLER\n\n<NUM> MEGA KUTU!\n\nEKSTRA ALTIN ve GÜÇ PUANI!\n\n\nBrawl Pass'ı daha hızlı tamamlamanı sağlayacak EKSTRA GÖREVLER!\n\nSezon boyunca ÖZEL KROMATİK AD!
 TID_BRAWL_PASS_SEASON_4,STARR SAVAŞLARI
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,Pek çok ek ödül seni bekliyor!\n\n<BRAWLER>- Yeni Kromatik savaşçı!\n\nSINIRLI SÜRELİ ÖZEL KOSTÜM: <SKIN_1>!\n\nSINIRLI SÜRELİ ÖZEL KOSTÜM: <SKIN_2>!\n\n<BRAWLER> İÇİN SINIRLI SÜRELİ ÖZEL ROZETLER\n\nSINIRLI SÜRELİ ÖZEL SPREYLER\n\n<NUM> MEGA KUTU!\n\nEKSTRA ALTIN ve GÜÇ PUANI!\n\n\nBrawl Pass'i daha hızlı tamamlamanı sağlayacak EKSTRA GÖREVLER!\n\nHAFTADA EKSTRA <NUM> GÖREV YENİLEME HAKKI\n\nSezon boyunca ÖZEL KROMATİK AD!
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,Bir sürü ekstra ödül seni bekliyor!\n\n<BRAWLER>- Yeni kromatik savaşçı!\n\nSINIRLI SÜRELİ ÖZEL KOSTÜM: <SKIN_1>!\n\nSINIRLI SÜRELİ ÖZEL KOSTÜM: <SKIN_2>!\n\n<BRAWLER> İÇİN SINIRLI SÜRELİ ÖZEL ROZETLER\n\nSINIRLI SÜRELİ ÖZEL SPREYLER\n\n<NUM_BOX> MEGA KUTU!\n\nEKSTRA ALTIN ve GÜÇ PUANI!\n\nBrawl Pass'i daha hızlı tamamlamanı sağlayacak EKSTRA GÖREVLER!\n\n<NUM_REROLL>HER HAFTA EKSTRA GÖREV YENİLEME HAKLARI\n\nSezon boyunca ÖZEL KROMATİK AD!
 TID_QUESTS_MORE,Tüm görevleri göster
 TID_QUESTS_MORE_NEXT_SEASON,<THIS_SEASON> sezonunun tüm görevlerini tamamladın. <NEXT_SEASON> sezonu başladığında yeni görevler gelecek.
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,<NUM>. Sezonun Ödülleri
@@ -4475,7 +4484,7 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,BRAWL YENİ YILI ROZETLERİ
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,Önemli duyuru
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Harita oluşturucuyu kullandığınız için teşekkürler. Harita oluşturucuyu kullanırken lütfen Tencent Games Lisans ve Hizmet Sözleşmesi'ne ve ilgili diğer kurallara uymaya özen gösterin. Erotik veya müstehcen olan, ulusal birliği, egemenliği ve toprak bütünlüğünü tehlikeye atan ya da yasaları ve diğer kuralları ihlal eden uygunsuz içerikler oluşturmayın ve yaymayın."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Harita oluşturucuyu kullandığınız için teşekkürler. Harita oluşturucuyu kullanırken lütfen Kullanıcı Sözleşmesi'ne ve ilgili diğer kurallara uymaya özen gösterin. Erotik veya müstehcen olan, ulusal birliği, egemenliği ve toprak bütünlüğünü tehlikeye atan ya da yasaları ve diğer kuralları ihlal eden uygunsuz içerikler oluşturmayın ve yaymayın."
-TID_RUFFS,COLONEL RUFFS
+TID_RUFFS,COLONEL\nRUFFS
 TID_RUFFS_SHORT_DESC,DESTEK
 TID_RUFFS_DESC,Ruffs duvarlardan seken ikili lazer atışları yapar. Süper özelliğiyle de düştüğü yerde patlayıp çevresindeki düşmanlara hasar veren bir ikmal kutusu çağırır. Kutudan takımındakilerin kullanabileceği bir güçlendirici çıkar.
 TID_RUFFS_WEAPON,ÇİFT NAMLULU LAZER
@@ -4649,7 +4658,7 @@ TID_RANKED_CLUB_LEAGUE_EVENT_LOCATION_INFO,Rastgele oyun modu ve harita
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_1,Bir takımla veya benzer seviyede diğer oyuncularla 3'e 3 savaşlara katıl.
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_2,İki savaş kazanan ilk takım maçı alır!
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_3,"Oyun modları ve haritalar rastgele ve sık sık değişir, dikkati ol!"
-TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"Sezon sona erdiğinde, kullandığın bilet sayısına ve kulübünün sıralamasına göre çeşitli ödüller kazanırsın."
+TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"Hafta sona erdiğinde, kullandığın Bilet sayısına ve Kulübünün sıralamasına göre çeşitli ödüller kazanırsın."
 TID_RANKED_EVENT_SEASON_REWARDS_BUTTON,SEZON ÖDÜLLERİ
 TID_RANKED_EVENT_SOLO,GÜÇ LİGİ
 TID_RANKED_EVENT_TEAMS,GÜÇ LİGİ
@@ -4742,6 +4751,7 @@ TID_RANKED_PICK_ERROR_BRAWLER_BANNED,"Bu savaşçı yasaklandı, başka seç!"
 TID_RANKED_PICK_ERROR_BRAWLER_PICKED,"Bu savaşçı zaten seçildi, başka seç!"
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED,Bu savaşçı henüz Güç Liginde kullanılamıyor. Başkasını seç!
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED_CLUB_LEAGUE,Bu savaşçı henüz güç maçlarında kullanılamıyor. Başka bir savaşçı seç!
+TID_RANKED_ERROR_BRAWLER_BLACKLISTED,"Bu savaşçı, turnuva organizatörü tarafından devre dışı bırakıldı."
 TID_RANKED_HERO_POWER,GÜÇ <NUM>
 TID_RANKED_REWARD_POPUP_SEASON,<SEASON>. SEZON
 TID_RANKED_REWARDS_TOOL_TIP,GÜÇ LİGİ iki 3'e 3 mod içerir:\n\n- Solo modda sana yakın lig seviyesinde iki rastgele oyuncuyla takım olursun.\n\n- Takım modunda önce takımını kurup öyle savaşa başlarsın.\n\nGÜÇ LİGİ ödüllerin bu iki modda ulaştığın en yüksek rütbeye göre belirlenir.
@@ -4789,6 +4799,8 @@ TID_RANKED_MATCH_TERMINATED_REASON_1,Maç sonlandırıldı: <NAME> bağlantısı
 TID_RANKED_MATCH_TERMINATED_REASON_2,Maç sonlandırıldı: <NAME> yanıt vermiyor.
 TID_RANKED_MATCH_TERMINATED_REASON_3,Maç sonlandırıldı: Sezon bitti
 TID_RANKED_MATCH_TERMINATED_REASON_4,Maç sonlandırıldı (<CODE>). Tekrar dene.
+TID_RANKED_MATCH_TERMINATED_REASON_5,Maç sonlandırıldı: Maç çok uzun sürdü.
+TID_RANKED_MATCH_TERMINATED_REASON_6,Maç sonlandırıldı: Savaş çok uzun sürdü.
 TID_RANKED_GOAL_REWARD_PURCHASE_OPTION_SKIN,ÖZEL KOSTÜM ALMA SEÇENEĞİ
 TID_RANKED_MATCH_TERMINATED_NAME_PLAYER,bir oyuncu
 TID_RANKED2_CONFIRM_PICKED,SEÇİLDİ
@@ -5358,17 +5370,17 @@ TID_CLUB_LEAGUES_BUTTON_EVENT_DAY,<DAY>. gün
 TID_CLUB_LEAGUES_BUTTON_DAY_NEW,YENİ GÜN!
 TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,SONRAKİ ETKİNLİKLER
 TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,Sonraki etkinlik gününe:
-TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Sıradaki sezonun başlamasına:
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Sezon sıralaması: <RANK>
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Sezon sıralaman yok.
+TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Gelecek haftanın başlamasına:
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Bu haftaki sıralama: <RANK>
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Bu hafta bir sıralaman yok.
 TID_CLUB_LEAGUES_BUTTON_JOIN_CLUB_DESC,Oynamak için bir kulübe katıl.
 TID_CLUB_LEAGUES_BUTTON_REGISTRATION_CLOSED,Kayıtlar kapandı.
 TID_CLUB_LEAGUE_EVENT_TIME_LEFT,<TIME> kaldı
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_DESC,Sonraki etkinlik gününün başlamasına:
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_TIME,<TIME>
-TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,Sezonun başlamasına: <TIME>
+TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,Gelecek haftanın başlamasına: <TIME>
 TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TITLE,KULÜP LİGİ
-TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,Sıradaki sezonun etkinlikleri:
+TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,Gelecek haftanın etkinlikleri:
 TID_CLUB_LEAGUE_TICKETS_PER_PLAY,<NUM><cA4B7E0>/MAÇ</c>
 TID_CLUB_LEAGUE_TROPHIES_MAX_PER_WIN,Maks/Zafer
 TID_CLUB_LEAGUE_EVENT_TROPHY_WIN_DESC,Kulüp takımıyla zafer:
@@ -5408,17 +5420,17 @@ TID_CLUB_LEAGUE_MASTERS,USTALAR
 TID_CLUB_LEAGUE_TIER_1,I
 TID_CLUB_LEAGUE_TIER_2,II
 TID_CLUB_LEAGUE_TIER_3,III
-TID_CLUB_LEAGUE_SEASON_PROGRESS,SEZON DURUMU
+TID_CLUB_LEAGUE_SEASON_PROGRESS,HAFTA DURUMU
 TID_CLUB_LEAGUE_SEASON_ENDS_IN,Bitmesine:
 TID_CLUB_LEAGUE_WAITING_FINAL_RESULTS,Son sonuçlar bekleniyor.
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,Sezon sonuçları bekleniyor.
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,Sezon sonuçları işleniyor. Son sonuçları görmek için daha sonra tekrar dene.
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,Bu haftanın sonuçları bekleniyor.
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,Haftanın sonuçları işleniyor. Son sonuçları görmek için daha sonra tekrar dene!
 TID_CLUB_LEAGUE_RESULTS_TITLE,Sonuçlar:
-TID_CLUB_LEAGUE_SEASON_OVER,SEZON BİTTİ!
-TID_CLUB_LEAGUE_SEASON_OVER_2,SEZON BİTTİ
+TID_CLUB_LEAGUE_SEASON_OVER,HAFTA SONA ERDİ!
+TID_CLUB_LEAGUE_SEASON_OVER_2,HAFTA SONA ERDİ
 TID_CLUB_LEAGUE_MAX_TROPHIES_AVAILABLE,Elde edilebilecek maksimum kupa sayısı
-TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,SEZON DURUMU
-TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,SEZON SONUÇLARI
+TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,HAFTA DURUMU
+TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,HAFTA SONUÇLARI
 TID_CLUB_LEAGUE_ITEM_PROMOTING,YÜKSELİYOR
 TID_CLUB_LEAGUE_ITEM_PROMOTING_MULTIPLE,YÜKSELDİĞİ LİG SAYISI: <NUM>
 TID_CLUB_LEAGUE_ITEM_DEMOTING,DÜŞÜRÜLEN
@@ -5430,15 +5442,15 @@ TID_CLUB_LEAGUE_COLUMN_MAX_REWARD,MAKSİMUM ÖDÜL
 TID_CLUB_LEAGUE_SHOP_DESC,İlerlemeni hızlandırma ve özel kostümler satın alma fırsatı!
 TID_CLUB_LEAGUE_SHOP_BUTTON_DESC,İLERLEMENİ HIZLANDIR VE ÖZEL KOSTÜMLER SATIN AL:
 TID_CLUB_LEAGUE_BUTTON_VISIT_CLUB_SHOP,KULÜP DÜKKANINA GÖZ AT
-TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,SEZON SONU ÖDÜLÜN
+TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,HAFTA SONU ÖDÜLÜN
 TID_CLUB_LEAGUE_SEASON_END_REWARD_CLAIMED,ALINDI
 TID_CLUB_LEAGUE_NOT_YET_RANKED,HENÜZ SIRALAMAN YOK
-TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,SEZON KAYITLARI KAPANDI
-TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,BU SEZONU İZLE
-TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,Oynamak için sıradaki sezonu bekle!
-TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,Sıradaki sezonun etkinlikleri:
-TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,Sıradaki sezonun başlamasına: <TIME>
-TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,Alabileceğin maksimum ödülü almak için sezon içinde tüm biletlerini kullan!
+TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,HAFTA KAYITLARI KAPANDI
+TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,BU HAFTAYI İZLE
+TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,Oynamak için gelecek haftayı bekle!
+TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,Gelecek haftanın etkinlikleri:
+TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,Gelecek haftanın başlamasına: <TIME>
+TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,Alabileceğin maksimum ödüle ulaşmak için hafta içinde tüm biletlerini kullan!
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED_TITLE,KULLANILAN BİLET:
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED,<NUM>/<MAX>
 TID_CLUB_LEAGUE_SEASON_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5449,7 +5461,7 @@ TID_CLUB_LEAGUE_NEED_MORE_GOLDEN_TICKETS,Oynamak için <NUM> altın bilet gereki
 TID_CLUB_LEAGUE_NOT_ENOUGH_GOLDEN_TICKETS_AVAILABLE_TO_PURCHASE,Satın alınabilecek yeterli altın bilet yok.
 TID_CLUB_LEAGUE_FEATURE_UNAVAILABLE,Bu özellik şu anda kullanılamıyor.
 TID_CLUB_LEAGUE_NOT_IN_LEAGUE,Kulüp şu anda ligde değil.
-TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,Kulüp şu anki lig sezonunda değil.
+TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,Kulüp şu anki lig haftasında değil.
 TID_DUPLICATOR,LOLA
 TID_DUPLICATOR_SHORT_DESC,YÜKSEK HASAR
 TID_DUPLICATOR_DESC,"Yarı zamanlı rehberlik, yarı zamanlı da oyunculuk yapan ama tam zamanlı bir diva olan Lola, Brawlywood'un en önemli yıldızıdır.\n\nEşarbıyla saldırır ve süper özelliği de Ego'sunun bir dışa vurumudur."
@@ -5467,7 +5479,7 @@ TID_CLUB_UNLOCK_TITLE_CLUBS,KULÜPLER
 TID_CLUB_UNLOCK_TITLE_UNLOCKED,Açıldı!
 TID_CLUB_UNLOCK_SEARCHING_FOR_CLUB,En uygun kulüp aranıyor...
 TID_CLUB_UNLOCK_CLUB_LEAGUE_TITLE,KULÜP LİGİ
-TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,Özel ödüller kazanmak için sıradaki sezona katıl.
+TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,Özel ödüller kazanmak için gelecek hafta katıl!
 TID_CLUB_UNLOCK_CLUB_FOUND,KULÜP BULUNDU!
 TID_CLUB_UNLOCK_WELCOME_TO_CLUB,KULÜBE HOŞ GELDİN!
 TID_CLUB_UNLOCK_LETS_GO,HAYDİ
@@ -5480,8 +5492,8 @@ TID_CLUB_UNLOCK_STAT_TYPE,Tür
 TID_SHOP_BRAWLOWEEN_TITLE,CADILAR BAYRAMI
 TID_SHOP_BRAWLOWEEN_INFO,Kostüm seti
 TID_SKIN_INFO_BRAWLOWEEN,Cadılar bayramı kostümleri
-TID_CLUB_LEAGUE_FLOW_NEW_SEASON,Yeni sezon!
-TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Sezon sona erdi.
+TID_CLUB_LEAGUE_FLOW_NEW_SEASON,Yeni Hafta!
+TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Hafta sona erdi.
 TID_CLUB_LEAGUE_FLOW_CLUB_LEAGUE,KULÜP LİGİ
 TID_CLUB_LEAGUE_FLOW_DAY_NEW,YENİ!
 TID_CLUB_LEAGUE_FLOW_EVENT_DAY_STARTED,<NUM>. ETKİNLİK GÜNÜ BAŞLADI!
@@ -5492,8 +5504,8 @@ TID_CLUB_LEAGUE_FLOW_BUTTON_GO_SEASON_END,TAMAM
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_START,HAYDİ
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_END,TAMAM
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_LEAGUE_PROMOTION,TAMAM
-TID_CLUB_LEAGUE_FLOW_SEASON_RANK,Sezon sıralaması
-TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,SEZON SONU ÖDÜLÜN
+TID_CLUB_LEAGUE_FLOW_SEASON_RANK,Hafta Sıralaması
+TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,HAFTA SONU ÖDÜLÜN
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED_TITLE,Kullanılan bilet sayısı
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED,<NUM><cA4B7E0>/<MAX></c>
 TID_CLUB_LEAGUE_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5504,7 +5516,7 @@ TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_1,Satın alınamadı.
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_COINS,Altın yetersiz!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_GEMS,Elmas yetersiz!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_3,Satın alınabilecek bilet yok!
-TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,Sezonun bitmesine: <TIME>
+TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,Haftanın bitmesine: <TIME>
 TID_CLUB_LEAGUE_TICKET_SHOP_TITLE,ALTIN BİLET
 TID_CLUB_LEAGUE_TICKET_SHOP_INFO,"Bir kulüp ligi sezonu boyunca <cFEA305><NUM> altın bilete kadar</c> kullanabilirsin. Altın biletlerle ekstra maçlar yapıp daha fazla kulüp kupası kazanırsın. Etkinlik günlerinde altın biletler kullanıp kulübünün günlük sıralamasını yükseltebilirsin.\n\nSezon bittiğinde, kullanılmamış tüm altın biletler otomatik olarak sonraki sezona aktarılır.\n\nSezon sonu ödülleri hesaplanırken altın biletler hesaba katılmaz."
 TID_CLUB_LEAGUE_TICKETS_GET_MORE,Alma seçenekleri
@@ -5527,18 +5539,18 @@ TID_CLUB_LEAGUE_EVENTS_TITLE,ETKİNLİKLER
 TID_CLUB_LEAGUE_EVENT_UNLOCKS_AT,Açılması için gereken:
 TID_CLUB_LEAGUE_SHOW_TICKETS_TOGGLE,Alınabilecek <cFFDA14>maksimum</c> kulüp kupasını göster
 TID_CLUB_LEAGUE_INFO_TITLE,KULÜP LİGİ HAKKINDA BİLGİLER
-TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Sezonlar ve etkinlik günleri
-TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>SEZONLAR VE ETKİNLİK GÜNLERİ</c>
-TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Her haftalık sezonda, kulübün bulunduğu ligdeki diğer 7 kulüple yarışır.\n\nÜç farklı etkinlik gününe katılıp kulübün için günlük kulüp kupası kazanırsın. Her günün sonunda en çok kupası olan kulüpler en fazla puanı alır ve sezonun liderlik tablosunda üst sıralara tırmanır.\n\nKulüp kupaları, her etkinlik gününün sonunda SIFIRLANIR.\n\n<cFCBC22>İPUCU: Kulübündeki diğer üyelerle takım kurduğunda bonus kulüp kupası kazanırsın.</c>"
-TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Biletler
-TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>BİLETLER</c>
-TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,Kulüp ligi etkinliklerine katılmak için bilet gerekir. Kulüp üyelerinin her etkinlik gününde oynamalarını sağlayacak biletleri olacaktır.\n\nSezon ödülünü artırmak ve kulübün için olabildiğince fazla kulüp kupası kazanmak için tüm biletlerini kullanmayı unutma!
-TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,Ligler
-TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>LİGLER</c>
-TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,"Haftanın sonunda en çok sezon puanına sahip olan kulüpler üst lige yükselir, en az puana sahip olan kulüpler alt lige düşer. Liglerde yükseldikçe daha güçlü rakiplerle karşılaşırsın ve kazanacağın ödül artar."
+TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Hoş geldin
+TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>KULÜP OYUNLARINA HOŞ GELDİN!</c>
+TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,Kulübünle oyna ve her hafta <cFCBC22>kulüp dükkanı</c> ödülleri kazan!\n\nHer hafta bir kulüp oyunu aktif olur:\n<cFCBC22>KULÜP LİGİ HAFTASI</c> - En yüksek sıralama ödülünü almak ve lig sıralamasında tırmanmak için diğer kulüplerle rekabet edersin.\n<cFCBC22>KULÜP GÖREVLERİ HAFTASI</c> - Üç kulüp görevi tamamlayarak kulübüne puan kazandırırsın. Hafta boyunca görevleri tamamladıkça kulüpteki herkesin alacağı ödül artar.
+TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Kulüp Ligi
+TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>KULÜP LİGİ HAFTASI</c>
+TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,"Kulüp ligi haftasında aynı ligdeki yedi kulüple mücadele edersin. Kulüp ligi etkinlikleri <cFCBC22>üç farklı günde</c> oynanır ve kulüpler en yüksek <cFCBC22>kulüp kupası</c> sayısına ulaşmaya çalışır. Kulüp ligi maçları için <cFCBC22>bilet</c> kullanman gerekir.\n\nHafta boyunca en iyi performansı sergileyen kulüp en fazla ödülü alır. <cFCBC22>Üst lige çıkma</c> ve <cFCBC22>alt lige düşme</c>, hafta bitiminde gerçekleşir.\n\nBonus: Kulüp arkadaşlarınla birlikte oynadığında maçlardan <cFCBC22>ekstra kulüp kupası</c> kazanırsın."
+TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,Kulüp Görevleri
+TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>KULÜP GÖREVLERİ HAFTASI</c>
+TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,Kulüp görevleri haftasında yapacak <cFCBC22>üç görevin</c> olur.\n\nKulüp görevlerini tamamladığında kulübün <cFCBC22>puan</c> kazanır. Hafta bitene kadar kulübün ne kadar fazla puan kazanırsa herkesin alacağı ödül o kadar büyük olur. Ödülünü almak için en az bir kulüp görevi tamamlaman gerekir.\n\nBonus: Kulüp arkadaşınla birlikte oynayarak <cFCBC22>görevlerde ilerleme hızını iki katına çıkarabilirsin</c>.
 TID_CLUB_LEAGUE_INFO_PAGE_4_MARKER,Kulüp dükkanı
-TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>KULÜP DÜKKANI</c>
-TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,"Kulüp liglerine katılarak kulüp altını kazanırsın. Kazanacağın altın miktarı ligine ve sezonda ulaştığın sıralamaya bağlıdır. Tüm kulüp altını ödüllerini almak için sezon boyunca tüm biletlerini kullan.\n\nKulüp altınları kulüp dükkanında kullanılır. Bu dükkandan özel kostümler, ekstra güç puanı, altın ve eşya alabilirsin. Bir göz at!"
+TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>KULÜP DÜKKANI NEDİR?</c>
+TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,Kulüp ligini ve kulüp görevlerini oynayarak <cFCBC22>kulüp altını</c> kazanırsın. Kazandığın kulüp altınlarını kulüp dükkanında harcayabilirsin!\n\nKulüp dükkanında <cFCBC22>ilerlemeni %50'ye kadar hızlandırabilir</c> ve <cFCBC22>özel kostümler</c> satın alabilirsin!
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_1,7 KULÜPLE YARIŞ
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_2,3 ETKİNLİK GÜNÜ
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_3,KULÜP KUPASI KAZANMAK İÇİN ETKİNLİKLERE KATIL
@@ -5579,17 +5591,17 @@ TID_CLUB_SHOP_BUTTON,KULÜP DÜKKANI
 TID_CLUB_SHOP_DESC,İlerlemeni hızlandırma ve özel kostümler satın alma fırsatı!
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED,Savaşçı kilitli
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED_DESC,Bu kostümü satın almak için savaşçıyı açmalısın!
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,"KULÜP LİGİ SEZONU SONU: Kulübün, sezonu <RANKING>. sırada tamamladı ve ödül olarak <COINS> <cEE1B39>kulüp altını</c> kazandın."
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"KULÜP LİGİ SEZONU SONU: Kulübün, sezonu <RANKING>. sırada tamamladı ama sen bu sezona katılmadın. Kulüp altını kazanmak için bir sonraki sezona katılmalısın."
-TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,SEZON SONUNDA MAKSİMUM ÖDÜLLER
-TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,Alabileceğin maksimum ödülü almak için sezon içinde tüm biletlerini kullan!
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,"KULÜP LİGİ HAFTA BİTİMİ: Kulübün, haftayı <RANKING>. sırada tamamladı ve ödül olarak <COINS> <cEE1B39>kulüp altını</c> kazandın!"
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"KULÜP LİGİ HAFTA BİTİMİ: Kulübün, haftayı <RANKING>. sırada tamamladı ama sen bu hafta lige katılmadın. Kulüp altını kazanmak için gelecek hafta katıl!"
+TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,HAFTA BİTİMİNDE MAKSİMUM ÖDÜLLER
+TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,Alabileceğin maksimum ödülü almak için hafta içinde tüm biletlerini kullan!
 TID_CLUB_LEAGUE_SEASON_REWARD_MAX,MAKS
 TID_CLUB_LEAGUE_SEASON_PROMOTING_DESC,Üst lige yükselme
 TID_CLUB_LEAGUE_SEASON_DEMOTING_DESC,Alt lige düşme
 TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,Takım arıyorum:
 TID_CLUB_LEAGUE_LOOKING_FOR_PLAYERS,Oyuncu arıyorum:
 TID_CLUB_INFO_TAB_PLAYER_RANKS,OYUNCU SIRALAMASI
-TID_CLUB_INFO_TAB_LEAGUE_SEASON,KULÜP LİGİ SEZONU
+TID_CLUB_INFO_TAB_LEAGUE_SEASON,KULÜP LİGİ HAFTASI
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY,<NUM>. ETKİNLİK GÜNÜ
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY_NONE,ETKİNLİK GÜNÜ
 TID_CLUB_MEMBER_LEAGUE_TICKETS,<NUM>/<MAX>
@@ -5624,20 +5636,24 @@ TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,KULÜP KUPASI ÖDÜLLERİ
 TID_REWARD_DESC_GEAR_TOKENS,EŞYA JETONU
 TID_REWARD_DESC_GEAR_TOKEN_SINGLE,EŞYA JETONU
 TID_REWARD_DESC_GEAR_SCRAP,EŞYA PARÇASI
-TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Merhaba! Bu sezona katılmak için çok geç kalmışsın.\n\nYine de sıradaki sezon başlayana kadar kulübünün maçlarını izleyebilirsin.
+TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Merhaba! Bu hafta oynamak için geç kalmışsın.\n\nYine de gelecek hafta başlayana kadar kulübünün maçlarını izleyebilirsin.
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Kulüp dükkanına bir göz at!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Son sonuçlar:
 TID_CLUB_LEAGUE_TEASER_TITLE,KULÜP LİGİ
 TID_CLUB_LEAGUE_TEASER_JOIN_CLUB,BİR KULÜBE KATIL
 TID_CLUB_LEAGUE_TEASER_MESSAGE,İlerlemeni hızlandırmak ve özel kostümler kazanmak için kulübünle birlikte katıl!
 TID_CLUB_LEAGUE_TEASER_REACH_TROPHIES_TO_UNLOCK,Kulüpleri açmak için <NUM> kupaya ulaşmalısın!
-TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,Sıradaki sezonda yer almak için bir kulübe katıl.
+TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,Oynamak için bir kulübe katıl!
 TID_CLUB_LEAGUE_TEASER_FIND_OUT_MORE,DAHA FAZLA BİLGİ
-TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,Sezonun programı:
-TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,Sıradaki sezonun programı:
+TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,Bu Haftanın Takvimi:
+TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,Gelecek Haftanın Takvimi:
 TID_CLUB_LEAGUE_EVENTS_DAY_STARTS_IN,Başlamasına: <TIME>
 TID_CLUB_LEAGUE_EVENTS_DAY_ENDS_IN,Bitmesine: <TIME>
 TID_CLUB_LEAGUE_EVENTS_INFO_BUTTON,KULÜP LİGİ NEDİR?
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_CURRENT_SEASON,BU HAFTA
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_ENDS_IN,Bitmesine: <TIME>
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_NEXT_SEASON,GELECEK HAFTA
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_STARTS_IN,Başlamasına: <TIME>
 TID_CLUBS_MEMBERS_CLUB_TROPHIES,Kulüp kupası
 TID_CLUBS_MEMBERS_TICKETS_USED,Kullanılan bilet
 TID_CLUBS_MEMBERS_POWER_LEAGUE_RANK,Güç ligi seviyesi
@@ -5663,12 +5679,12 @@ TID_GATCHA_SCREEN_GEAR_SCRAP_DROP_DESC,Eşyaları yükseltmek için eşya parça
 TID_TEAM_ERROR_49,Takıma katılma isteği gönderilemedi: Aynı kulüpte değilsiniz.
 TID_TEAM_ERROR_50,Takıma katılınamıyor: Aynı kulüpte değilsiniz.
 TID_GHOST_SQUEAK_SKIN,HAYALET SQUEAK
-TID_SURGE_KONG_SKIN,SURGE KONG
+TID_SURGE_KONG_SKIN,KONG SURGE
 TID_HEADLESS_RIDER_STU_SKIN,BAŞSIZ STU
 TID_COUNT_PENGULA_MRP_SKIN,KONT PENGULA
 TID_SWAMP_GENE_SKIN,BATAKLIK GENE
 TID_GHOST_SQUEAK_SKIN_SHOP,HAYALET\nSQUEAK
-TID_SURGE KONG_SKIN_SHOP,SURGE KONG
+TID_SURGE KONG_SKIN_SHOP,SURGE\nKONG
 TID_HEADLESS_RIDER_STU_SKIN_SHOP,BAŞSIZ\nSTU
 TID_COUNT_PENGULA_MRP_SKIN_SHOP,KONT\nPENGULA
 TID_SWAMP_GENE_SKIN_SHOP,BATAKLIK\nGENE
@@ -5758,7 +5774,7 @@ TID_LOOKING_TOGGLE_LOOKING_FOR_A_TEAM,Diğer oyunculara TAKIM ARIYOR notuyla gö
 TID_LOOKING_TOGGLE_LOOKING_FOR_PLAYERS,Kulübün diğer oyunculara OYUNCU ARANIYOR notuyla gösterilecek.
 TID_CLUB_JOIN_FAIL_FEATURE_LOCKED,Kulübe katılamadın. Kulüpler <NUM> kupada açılır.
 TID_CLUB_LEAGUE_LEAGUES_POPUP_CURRENT_LEAGUE,ŞU ANKİ LİG
-TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,Lig değişiklikleri kulüp ligi sezonlarının sonunda gerçekleşir.\nÜst liglere çıktıkça kazanabileceğin kulüp altını artar.
+TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,Lig değişiklikleri kulüp ligi haftasının sonunda gerçekleşir.\nÜst liglere çıktıkça kazanabileceğin kulüp altını sayısı artar.
 TID_CLUB_LEAGUE_LEAGUES_POPUP_BUTTON,TAMAM
 TID_CLUB_LEAGUE_LEAGUES_POPUP_TITLE,LİGLER
 TID_IMPORTANT_MESSAGE_TITLE,ÖNEMLİ DUYURU
@@ -5775,7 +5791,7 @@ TID_TEAM_REQUEST_INVITE_FAIL_NOT_ENOUGH_TICKETS_YOU,Davet edilemedi. Kulüp bile
 TID_TEAM_REQUEST_INVITE_FAIL_NOT_ENOUGH_TICKETS_PLAYER,Davet edilemedi. Oyuncunun kulüp bileti yetersiz.
 TID_KICKER_DUDE,FANG
 TID_KICKER_DUDE_SHORT_DESC,YÜKSEK HASAR
-TID_KICKER_DUDE_DESC,"Fang, amansız ve hızlı tekmeleriyle nam salmıştır. Asıl saldırısında ayakkabısını uçuran sağlam bir tekme sallar. Süper saldırısında ise çok güçlü bir tekmeyle yakın düşmanlarına zincir saldırı yapar."
+TID_KICKER_DUDE_DESC,"Fang, amansız ve hızlı tekmeleriyle nam salmıştır. Asıl saldırısında bir tekme atar ve ayakkabısı uçar! Süper saldırısında ise çok güçlü bir tekmeyle yakın düşmanlarına zincir saldırı yapar."
 TID_KICKER_DUDE_WEAPON,KUNG FU AYAKKABISI
 TID_KICKER_DUDE_WEAPON_DESC,"Fang, hızlı bir tekme atar ve gizli bir teknik kullanır. Tekme hedefini vuramazsa ayakkabıları ayağından uçar!"
 TID_KICKER_DUDE_ULTI,ZİNCİR TEKME
@@ -5835,8 +5851,8 @@ TID_FURIOUS_FANG_SKIN,ÖFKELİ FANG
 TID_FURIOUS_FANG_SKIN_SHOP,ÖFKELİ\nFANG
 TID_CLASSIC MIKE_SKIN,KLASİK DYNAMIKE
 TID_CLASSIC MIKE_SKIN_SHOP,KLASİK\nDYNAMIKE
-TID_EL_PRIMO_VALENTINES,AŞIK EL PRIMO
-TID_EL_PRIMO_VALENTINES_SHOP,AŞIK\nEL PRIMO
+TID_EL_PRIMO_VALENTINES,EL CORAZÓN
+TID_EL_PRIMO_VALENTINES_SHOP,EL\nCORAZÓN
 TID_GRIFF_SLEIGH_SKIN,KIZAKÇI GRIFF
 TID_GRIFF_SLEIGH_SKIN_SHOP,KIZAKÇI\nGRIFF
 TID_SANTA_BO_SKIN,HO HO HO BO
@@ -5923,10 +5939,10 @@ TID_CLAIM_VOUCHER_POPUP_TITLE,Ödülü al
 TID_CLAIM_VOUCHER_BUTTON_CLAIM,Al
 TID_CLAIM_VOUCHER_BUTTON_CANCEL,İptal
 TID_SPELL_FACTORY_CLAIM_FAILED_TITLE,Ödül alınırken hata oluştu.
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,<c267F00><CODE></c> ödülü alınamadı.
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,Alınamadı.\n\n<c267F00><CODE></c> ödülü zaten alınmış.
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,GEÇERSİZ KOD\n\n<c7F0000><CODE></c>
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,Ödül alınamadı.\n\n<c267F00><CODE></c> ödülünün süresi dolmuş.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,Ödül alınamadı.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,Alınamadı. Ödül zaten alınmış.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,Alınamadı. Kod geçersiz.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,Alınamadı. Ödülün süresi dolmuş.
 TID_RANKED_FRIENDLY_BEST_OF_TOGGLE_TITLE,SAVAŞ SAYISI
 TID_FLEA,EVE
 TID_FLEA_SHORT_DESC,YÜKSEK HASAR
@@ -5938,7 +5954,7 @@ TID_FLEA_ULTI_DESC,"Eve, içinde bir grup yavru olan büyük bir yumurta bırak�
 TID_SPEC_ABI_FLEA_1,SIRA DIŞI SIRA
 TID_SPEC_ABI_FLEA_1_DESC,Yumurta atıcısının attığı yumurtaların sırasını tersine çevirir.
 TID_SPEC_ABI_FLEA_2,HOŞ SÜRPRİZ
-TID_SPEC_ABI_FLEA_2_DESC,Yumurta atıcısının attığı en büyük yumurta bir düşman savaşçısına isabet ettiğinde içinden bir yavru çıkar.
+TID_SPEC_ABI_FLEA_2_DESC,"Her <c00cc00><VALUE1></c> saniyede bir, yumurta atıcının attığı en büyük yumurta bir düşmana isabet ettiğinde içinden bir yavru çıkar."
 TID_ACCESSORY_FLEA_JUMP,HOŞÇAKAL!
 TID_ACCESSORY_FLEA_JUMP_DESC,"Eve, bir yavru bırakıp sıçrayarak uzaklaşır."
 TID_ACCESSORY_FLEA_SYMBIOSIS,ANA SEVGİSİ
@@ -5950,7 +5966,7 @@ TID_HATCHLING_HEALTH,Yavru sağlığı
 TID_HATCHLING_DAMAGE,Yavru hasarı
 TID_HATCHLING_COUNT,Yavru sayısı
 TID_ACCESSORY_DUPLICATOR_SWAP,DUBLÖR
-TID_ACCESSORY_DUPLICATOR_SWAP_DESC,Lola ve Ego'su yer değiştirir ve <c00cc00><VALUE1></c> puan iyileşir.
+TID_ACCESSORY_DUPLICATOR_SWAP_DESC,Lola ve Ego'su yer değiştirir ve Lola <c00cc00><VALUE1></c> puan iyileşir.
 TID_ACCESSORY_BLOCKED_EGO_TOO_FAR,Ego çok uzakta!
 TID_ACCESSORY_BLOCKED_MISSING_EGO,Ego yokken kullanılamaz!
 TID_GAME_MODE_25,TEMİZLİK
@@ -5967,13 +5983,13 @@ TID_ACCESSORY_BASEBALL_STICKY,YAPIŞ YAPIŞ
 TID_ACCESSORY_BASEBALL_STICKY_DESC,"Bibi'nin bir sonraki sakız topu, isabet ettiği düşmanları <c00cc00><VALUE1></c> saniye yavaşlatır."
 TID_ACCESSORY_MUMMY_ACID,ASİT SPREYİ
 TID_ACCESSORY_MUMMY_ACID_DESC,"Emz'nin bir sonraki sprey atışı duvarlardan geçebilir, ama <ccc0000>%<VALUE1></c> daha az hasar verir."
-TID_FIRST_BLOOD,<name> İLK PUAN!
-TID_KILL_NUMBER_OWN,DÖRT PUAN KALDI!
-TID_KILL_NUMBER_OPPONENT,RAKİBİN DÖRT PUANI KALDI!
-TID_ONE_POINT_FROM_VICTORY,ZAFERE BİR PUAN KALDI!
-TID_OPPONENT_ONE_POINT_FROM_VICTORY,YENİLGİYE BİR PUAN KALDI!
-TID_VICTORY_MATCH_OVER,ZAFER!
-TID_LOSS_MATCH_OVER,YENİLGİ!
+TID_FIRST_BLOOD,<name> İlk puan!
+TID_KILL_NUMBER_OWN,4 puan kaldı!
+TID_KILL_NUMBER_OPPONENT,Düşman için 4 puan kaldı!
+TID_ONE_POINT_FROM_VICTORY,Zafere 1 puan kaldı!
+TID_OPPONENT_ONE_POINT_FROM_VICTORY,Yenilgiye 1 puan kaldı!
+TID_VICTORY_MATCH_OVER,ZAFER!\nMaç bitti
+TID_LOSS_MATCH_OVER,YENİLGİ!\nMaç bitti
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2022,Yeni ay yılı 2022 kostümü
 TID_LOGIN_CALENDAR_LEFT_TITLE,GÜNLÜK HEDİYE SERİSİ
 TID_LOGIN_CALENDAR_LEFT_SUBTITLE,"<cfffc11>15 GÜN BOYUNCA HER GÜN GİRİŞ YAP</c>, <cfffc11>ÜCRETSİZ HEDİYELER</c> kazan! <cfffc11>BİR GÜN BİLE KAÇIRIRSAN</c> seri bozulur!"
@@ -6066,25 +6082,25 @@ TID_LOGIN_CALENDAR_REWARD_DESC_BRAWLER,<HERONAME>
 TID_DOCTOR_EDGAR_SKIN,DOKTOR EDGAR
 TID_DOCTOR_EDGAR_SKIN_SHOP,DOKTOR\nEDGAR
 TID_FIREFLY_RICO_SKIN,ATEŞ BÖCEĞİ RICO
-TID_FIREFLY_RICO_SKIN_SHOP,ATEŞ BÖCEĞİ RICO
+TID_FIREFLY_RICO_SKIN_SHOP,ATEŞ BÖCEĞİ\nRICO
 TID_STAG_BEETLE_MEG_SKIN,BÖCEK MEG
-TID_STAG_BEETLE_MEG_SKIN_SHOP,BÖCEK MEG
+TID_STAG_BEETLE_MEG_SKIN_SHOP,BÖCEK\nMEG
 TID_SAVAGE_BULL_SKIN,ASLAN BULL
-TID_SAVAGE_BULL_SKIN_SHOP,ASLAN BULL
+TID_SAVAGE_BULL_SKIN_SHOP,ASLAN\nBULL
 TID_WASP_BO_SKIN,ARI BO
-TID_WASP_BO_SKIN_SHOP,ARI BO
+TID_WASP_BO_SKIN_SHOP,ARI\nBO
 TID_MR_FLY_SKIN,BAY SİNEK
 TID_MR_FLY_SKIN_SHOP,BAY SİNEK
 TID_BUNNY_GROM_SKIN,TAVŞAN GROM
-TID_BUNNY_GROM_SKIN_SHOP,TAVŞAN GROM
+TID_BUNNY_GROM_SKIN_SHOP,TAVŞAN\nGROM
 TID_MANTIS_ROSA_SKIN,MANTIS ROSA
-TID_MANTIS_ROSA_SKIN_SHOP,MANTIS ROSA
+TID_MANTIS_ROSA_SKIN_SHOP,MANTİS\nROSA
 TID_SPIKY_EVE_SKIN,DİKENLİ EVE
-TID_SPIKY_EVE_SKIN_SHOP,DİKENLİ EVE
+TID_SPIKY_EVE_SKIN_SHOP,DİKENLİ\nEVE
 TID_CORRUPTED_SPROUT_SKIN,ŞEYTANİ SPROUT
 TID_CORRUPTED_SPROUT_SKIN_SHOP,ŞEYTANİ\nSPROUT
 TID_IVY_BELLE_SKIN,SARMAŞIK BELLE
-TID_IVY_BELLE_SKIN_SHOP,SARMAŞIK BELLE
+TID_IVY_BELLE_SKIN_SHOP,SARMAŞIK\nBELLE
 TID_TRUE_GOLD_SPROUT_SKIN,SAF ALTIN SPROUT
 TID_TRUE_GOLD_SPROUT_SKIN_SHOP,SAF ALTIN\nSPROUT
 TID_TRUE_GOLD_SURGE_SKIN,SAF ALTIN SURGE
@@ -6302,9 +6318,9 @@ TID_TRUE_SILVER_LOLA_SKIN_SHOP,SAF GÜMÜŞ\nLOLA
 TID_CRASH_TEST_DARRYL_SKIN,ÇARPIŞMAYA HAZIR DARRYL
 TID_CRASH_TEST_DARRYL_SKIN_SHOP,ÇARPIŞMA TESTİ\nDARRYL
 TID_BIKER_CARL_SKIN,MOTORCU CARL
-TID_BIKER_CARL_SKIN_SHOP,MOTORCU CARL
+TID_BIKER_CARL_SKIN_SHOP,MOTORCU\nCARL
 TID_PYRO_SPIKE_SKIN,KUNDAKÇI SPIKE
-TID_PYRO_SPIKE_SKIN_SHOP,KUNDAKÇI SPIKE
+TID_PYRO_SPIKE_SKIN_SHOP,KUNDAKÇI\nSPIKE
 TID_MONSTER_TRUCK_MEG_SKIN,CANAVAR KAMYON MEG
 TID_MONSTER_TRUCK_MEG_SKIN_SHOP,CANAVAR KAMYON\nMEG
 TID_OVERLORD_BYRON_SKIN,PATRON BYRON
@@ -6361,12 +6377,231 @@ TID_LOGIN_CALENDAR_LOYALTY_PROGRAM,SADAKAT PROGRAMI
 TID_LOGIN_CALENDAR_TITLE,STARR PARK SADAKAT PROGRAMI
 TID_REWARD_DESC_PLAYER_ICON_REGULAR,OYUNCU SİMGESİ
 TID_CLUB_LEAGUE_CLUB_COINS_HOW_TO_GET,"Kulüp altını, kulüp liginden kazanılır."
+TID_CLUB_EVENTS_TITLE,KULÜP OYUNLARI
+TID_CLUB_EVENTS_LEAGUE_TAB_DAY,ETKİNLİK GÜNÜ
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY,<NUM>. ETKİNLİK GÜNÜ
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY_COMPLETE,TAMAMLANDI
+TID_CLUB_EVENTS_LEAGUE_TAB_SEASON,HAFTA
+TID_CLUB_EVENTS_TAB_LEAGUE,LİG
+TID_CLUB_EVENTS_TAB_QUESTS,GÖREVLER
+TID_CLUB_EVENTS_BUTTON_CLUB_SHOP,KULÜP DÜKKANI
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_IS_TOP,Kulüplerin sadece en iyi <TOP> sonucu sayılır. <NUM>. sıradasın.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_TOP,Kulüplerin sadece en iyi <TOP> sonucu sayılır. <cF76263><NUM></c>. sıradasın.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_RANKED,Kulüplerin sadece en iyi <TOP> sonucu sayılır. <cF76263>Henüz katılmadın.</c>
+TID_CLUB_INFO_TOP_EVENT_DAY_PLAYER_DIVIDER,Kulüpteki sadece en iyi <TOP> katılımcının sonuçları sayılır.
+TID_CLUB_QUESTS_PLAYER_REWARD_DESC,HAFTA BİTİMİ ÖDÜLÜN
+TID_CLUB_QUESTS_LOCKED_REWARD_DESC,AÇMAK İÇİN HERHANGİ BİR KULÜP GÖREVİNİ TAMAMLA
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY,Hafta bitimi ödülü olarak bunu almak için kulübünle <POINTS> puana ulaş!
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_CURRENT,Şu anki kulüp görevi hafta bitimi ödülü.
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_LOCKED,Şu anki kulüp görevi hafta bitimi ödülü. Hafta bittiğinde bir kulüp görevi tamamlayarak alabilirsin!
+TID_CLUB_QUESTS_LEAGUES_BUTTON,LİGLER
+TID_CLUB_QUESTS_LEAGUES_DESC,Kulüp liglerinde yükseldikçe alabileceğin maksimum ödül miktarı artar.
+TID_CLUB_QUESTS_RANKS_CURRENT_LEAGUE,ŞU ANKİ LİG
+TID_CLUB_QUESTS_RANKS_MAX_REWARD,MAKS. ÖDÜL
+TID_CLUB_QUESTS_RANKS_MESSAGE,"Kulüp ligi sıralaması, kulüp görevi haftasında alabileceğiniz maksimum ödülü belirler. Üst liglere tırmandıkça daha fazla kulüp altını kazanırsın."
+TID_CLUB_QUESTS_RANKS_TITLE,LİGLER
+TID_CLUB_QUESTS_FLOW_NEW_SEASON,Yeni hafta!
+TID_CLUB_QUESTS_FLOW_SEASON_ENDED,Hafta sona erdi.
+TID_CLUB_QUESTS_FLOW_CLUB_QUESTS,KULÜP GÖREVLERİ
+TID_CLUB_QUESTS_FLOW_MAX_REWARD,MAKS. ÖDÜL
+TID_CLUB_QUESTS_FLOW_BUTTON_GO,KABUL ET
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_START,HAYDİ
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_END,TAMAM
+TID_CLUB_QUESTS_FLOW_SEASON_RANK,Hafta Sıralaması
+TID_CLUB_QUESTS_FLOW_END_OF_SEASON_REWARD,HAFTA BİTİMİ ÖDÜLÜN
+TID_CLUB_QUESTS_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_BADGE,<cFCF044>x2</c>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_DESC,En az bir kulüp üyesiyle birlikte oynayarak kulüp görevlerinde <cFCF044>İKİ KAT</c> hızlı ilerleyebilirsin.
+TID_CLUB_QUESTS_ALL_COMPLETED_DESC,Bu hafta tüm kulüp görevleri tamamlandı!
+TID_CLUB_QUEST_ALREADY_COMPLETED,Bu kulüp görevi zaten tamamlandı!
+TID_CLUB_QUESTS_SEASON_ENDS_IN_TIME,Haftanın bitmesine:
+TID_CLUB_QUESTS_REWARD_LOCKED_DESC,İlk görevi yaptığında ödül açılır!
+TID_CLUB_QUESTS_COMPLETED_NUM,Tamamlanan görevler: <NUM>/<MAX>
+TID_CLUB_QUESTS_TITLE,KULÜP GÖREVLERİ
+TID_CLUB_QUESTS_NEW_SEASON,YENİ HAFTA!
+TID_CLUB_QUESTS_SEASON_END_NOTIFICATION,KULÜP GÖREVLERİ HAFTA BİTİMİ: Haftanın ödülü olarak <COINS> <cEE1B39>kulüp altını</c> kazandın!
+TID_CLUB_QUESTS_CONTRIBUTIONS_TITLE,BU HAFTANIN KATKILARI
+TID_CLUB_QUESTS_CONTRIBUTIONS_MEMBERS,Kulüp üyeleri: <NUM>
+TID_CLUB_QUESTS_CLUB_TEAM_BONUS,x2 KULÜP TAKIMI BONUSU
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TITLE,TAKIM KURMA BONUSU!
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_DESC,En az bir kulüp üyesiyle birlikte oynayarak kulüp görevlerinde <cFCF044>İKİ KAT</c> hızlı ilerleyebilirsin!
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PROGRESS,Kulüp Görevi İlerleme Durumu
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_X2,x2
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PLAY_SOLO,TEK BAŞINA OYNA
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_ONLINE,<NUM> Çevrimiçi
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TEAM_UP,TAKIM KUR!
+TID_CLUB_QUESTS_WARNING_NOT_AVAILABLE,Sadece haftaya başlarken üyesi olduğun kulübe katkıda bulunabilirsin.\n\nBu kulübe katkıda bulunmak için gelecek haftayı bekle!
+TID_CLUB_QUESTS_SEASON_END_REWARD_CLAIMED,ALINDI
+TID_CLUB_LEAGUE_WARNING_NOT_AVAILABLE,Kulübün henüz bir kulüp ligi haftasına katılmadı. Sıradaki kulüp ligi haftası başladığında diğer kulüplerle rekabet edebilirsin.
+TID_CLUB_EVENT_TIME_LEFT,<TIME> kaldı
+TID_SHOP_CLUB_SHOP_SEE_OFFERS,TEKLİFLERİ GÖR
+TID_SHOP_CLUB_SHOP_TITLE,KULÜP DÜKKANI
+TID_SHOP_CLUB_SHOP_DESC,İLERLEMENİ HIZLANDIR
 TID_SHOP_OFFER_INFO_25,Yeni oyuncu simgesi!
 TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,Bu ödülü almak için oyuna <cFFB820>YARIN DA GİRİŞ YAP</c> yoksa seri bozulur!
 TID_BRAWLBALL_49,Elastik
 TID_BRAWLBALL_50,Tam Eğim
 TID_BRAWLBALL_51,Yüksek Puan
 TID_BRAWLBALL_52,Pinpon
+TID_INBOX_CAPTION_72_68,HEDİYE: SPREY
+TID_SILENCER,OTIS
+TID_SILENCER_SHORT_DESC,YÜKSEK HASAR
+TID_SILENCER_DESC,"Otis, denizyıldızı dostu Cil ile birlikte derinlerde takılan bir sokak sanatçısıdır. Birlikte Starr Park'ın her yerine grafiti yapıyorlar."
+TID_SILENCER_WEAPON,MÜREKKEP SANATI
+TID_SILENCER_WEAPON_DESC,"Otis, sprey tabanca koluyla mürekkep damlaları püskürtür."
+TID_SILENCER_ULTI,SESSİZ DENİZ YATAĞI
+TID_SILENCER_ULTI_DESC,"Otis, Cil'i fırlatır ve Cil, isabet ettiği ilk düşmanı tutup onun kısa bir süreliğine saldırmasını engeller."
+TID_SPEC_ABI_SILENCER_1,ŞABLON YAPIŞTIRICI
+TID_SPEC_ABI_SILENCER_1_DESC,"Cil, rakip savaşçıyı tüm gücüyle sıkıştırır ve rakibin <c00cc00>%<VALUE1></c> daha uzun süre saldırmasını engeller."
+TID_SPEC_ABI_SILENCER_2,MÜREKKEP DOLUMU
+TID_SPEC_ABI_SILENCER_2_DESC,Otis <c00cc00>%<VALUE1></c> daha fazla mürekkep damlası atar.
+TID_ACCESSORY_SILENCER_GADGET_1,UYUYAN YILDIZ
+TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Bir sonraki denizyıldızı, düşmana isabet etmezse yerde kalır, bir rakip savaşçı yakınına girdiğinde etkinleşir."
+TID_ACCESSORY_SILENCER_GADGET_2,ŞIK SIÇRATMA
+TID_ACCESSORY_SILENCER_GADGET_2_DESC,"Otis'in sonraki saldırısı, dev bir mürekkep topu atar ve <c00cc00><VALUE2></c> saniye içinde <c00cc00><VALUE1></c> hasar veren bir birikinti bırakır."
+TID_RANDOM_GAME_MODE,GİZEM
+TID_NOTIFICATION_RANDOM,Yeni GİZEM haritası açıldı! Yeni ödüller kazanma zamanı!
+TID_SKIN_INFO_DEEPSEA,Derin deniz savaşı kostümü
+TID_EMOTE_BUNDLE_DEEPSEA_PACK,Derin deniz savaşı kostüm rozetleri
+TID_SUGGEST,ÖNER
+TID_SUGGEST_CANCEL,İPTAL
+TID_PURCHASE_BRAWL_PASS_INFO_SHOP,"BRAWL PASS ÖDÜLLERİ, EKSTRA GÖREVLER, GÖREV DEĞİŞTİRME HAKLARI!"
+TID_SUGGESTED_BY,Öneren:
+TID_SHOP_DEEPSEA_SKINS,Derin deniz savaşı kostümü
+TID_SHOP_DEEPSEA_TITLE,DERİN DENİZ SAVAŞI
+TID_SHOP_DEEPSEA_INFO,Kostüm seti
+TID_SKIN_INFO_BT21,BT21 kostümü
+TID_CLUB_EVENTS_ONBOARDING_TITLE,KULÜP OYUNLARI
+TID_CLUB_EVENTS_ONBOARDING_SUBTITLE,İlerlemeni hızlandır ve özel kostümler kazan!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_1_TITLE,Haftalık\nKULÜP OYUNLARINA hoş geldin!
+TID_CLUB_EVENTS_ONBOARDING_NEW_GAME,Yeni kulüp oyunu!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_TITLE,KULÜP LİGİ
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_DESCRIPTION,Başka kulüplerle karşı karşıya gel!\nÜst liglere tırman!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_TITLE,KULÜP GÖREVLERİ
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_DESCRIPTION,Kulübünle birlikte görevleri tamamla!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_1,Kulübünle birlikte oyna! Her hafta 1 kulüp oyunu.
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_2,Kulüp altını kazan!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_3,Kulüp dükkanında ilerlemeni hızlandır!
+TID_SUGGEST_TITLE,Savaşçı Öner
+TID_CLUB_LEAGUE_TOP_24_REWARDS,Tüm oyuncular hafta bitimi ödüllerini almaya hak kazandı.
+TID_CLUB_LEAGUE_STARTS_IN,Kulüp liginin başlamasına:
+TID_CLUB_QUESTS_STARTS_IN,Kulüp görevlerinin başlamasına:
+TID_SHOWDOWN_71,Trambolin
+TID_SHOWDOWN_72,Yarış Pisti
+TID_SHOWDOWN_73,Işınlanma Bileti
+TID_CLUB_QUESTS_NOT_AVAILABLE,Kulüp görevleri şu anda kullanılamıyor.
+TID_CLUB_LEAGUE_NOT_AVAILABLE,Kulüp ligi şu anda kullanılamıyor.
+TID_CLUB_QUESTS_WEEK_ACTIVE,GÖREVLER HAFTASI şu kadar süreliğine etkin:
+TID_CLUB_LEAGUE_WEEK_ACTIVE,LİG HAFTASI şu kadar süreliğine etkin:
+TID_CLUB_EVENTS_ACTIVE,Etkin
+TID_CLUB_EVENTS_STARTING,Yakında başlıyor
+TID_CLUB_EVENTS_WAITING,Bekleniyor
+TID_CLUB_LEAGUE_PREVIOUS_WEEK,ÖNCEKİ HAFTA
+TID_CLUB_LEAGUE_RESULTS,Sonuçlar:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_SHORT,LİG HAFTASININ başlamasına:
+TID_CLUB_QUESTS_WEEK_STARTS_IN_SHORT,GÖREVLER HAFTASININ başlamasına:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN,Sonraki kulüp ligi haftasının başlamasına: <TIME>
+TID_CLUB_QUESTS_WEEK_STARTS_IN,Sonraki kulüp görevleri haftasının başlamasına: <TIME>
+TID_CLUB_LEAGUE_WEEK_SCHEDULE,TAKVİM
+TID_CLUB_QUESTS_PREVIOUS_WEEK_REWARD,ÖNCEKİ HAFTA ÖDÜLÜ
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TEXT,Sonraki kulüp ligi haftası
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TIME,Başlamasına: <TIME>
+TID_CLUB_EVENTS_PREVIOUS_WEEK,HAFTA SONA ERDİ!
+TID_BT21_SANDY_SKIN,KOYA SANDY
+TID_BT21_SANDY_SKIN_SHOP,KOYA\nSANDY
+TID_BT21_EDGAR_SKIN,TATA EDGAR
+TID_BT21_EDGAR_SKIN_SHOP,TATA\nEDGAR
+TID_BT21_RUFFS_SKIN,CHIMMY RUFFS
+TID_BT21_RUFFS_SKIN_SHOP,CHIMMY\nRUFFS
+TID_BT21_BULL_SKIN,MANG BULL
+TID_BT21_BULL_SKIN_SHOP,MANG\nBULL
+TID_BT21_BIBI_SKIN,RJ BIBI
+TID_BT21_BIBI_SKIN_SHOP,RJ\nBIBI
+TID_BT21_JACKY_SKIN,COOKY JACKY
+TID_BT21_JACKY_SKIN_SHOP,COOKY\nJACKY
+TID_BT21_TICK_SKIN,SHOOKY TICK
+TID_BT21_TICK_SKIN_SHOP,SHOOKY\nTICK
+TID_POSTAL_BROCK_SKIN,POSTACI BROCK
+TID_POSTAL_BROCK_SKIN_SHOP,POSTAL\nBROCK
+TID_MAKE_EMZ_SKIN,DJ 3.M.Z
+TID_MAKE_EMZ_SKIN_SHOP,DJ 3.M.Z
+TID_SHARK_JAW_COLT_SKIN,KÖPEK BALIĞI COLT
+TID_SHARK_JAW_COLT_SKIN_SHOP,KÖPEK BALIĞI\nCOLT
+TID_OCTO_FANG_SKIN,AHTAPOT FANG
+TID_OCTO_FANG_SKIN_SHOP,AHTAPOT\nFANG
+TID_CORAL_BELLE_SKIN,MERCAN BELLE
+TID_CORAL_BELLE_SKIN_SHOP,MERCAN\nBELLE
+TID_PHARA_OTIS_SKIN,FİRAVUN OTIS
+TID_PHARA_OTIS_SKIN_SHOP,FİRAVUN\nOTIS
+TID_RANKED_SUGGESTING_BRAWLER,<NAME> için savaşçı öneriliyor
+TID_RANKED_BRAWLER_SUGGESTED,SAVAŞÇI ÖNERİLDİ
+TID_RANKED_SUGGESTION,"<NAME>, <BRAWLER> öneriyor"
+TID_CLUB_EVENTS_STARTS_IN,Başlamasına:
+TID_CLUB_EVENTS_ACTIVE_FOR,Şu kadar süreliğine etkin:
+TID_GAME_MODE_28,AVCILAR
+TID_GAME_MODE_28_DESC,Av sezonu başladı!\n\nRakiplerini yakalayıp yenerek puan kazan! <MAX_SCORE> puan alan İLK oyuncu kazanır!
+TID_DEATHMATCH_FFA_INTRO_TEXT,Rakipleri yok et!
+TID_NOTIFICATION_DEATHMATCH_FFA,Yeni AVCILAR haritası açıldı! Yeni ödüller kazanma zamanı!
+TID_DEATHMATCH_FFA_1,Yargı ve Ceza
+TID_DEATHMATCH_FFA_2,Av Sezonu
+TID_DEATHMATCH_FFA_3,Av Hedefi
+TID_DEATHMATCH_FFA_4,Hızlı ve Huzursuz
+TID_DEATHMATCH_FFA_5,Hüküm
+TID_DEATHMATCH_FFA_6,Doğru Patika
+TID_DEATHMATCH_FFA_7,Omega
+TID_CLUB_EVENTS_CHANGED_CLUB,Sadece haftaya başlarken üyesi olduğun kulübe katkıda bulunabilirsin.\n\nBu kulübe katkıda bulunmak için gelecek haftayı bekle!\n\nGelecek haftanın başlamasına: <TIME>
+TID_CLUB_QUESTS_CURRENT_CLUB_POINTS,Bu hafta kulübünün topladığı puan
+TID_CLUB_QUESTS_THIS_WEEKS_QUESTS,BU HAFTAKİ KULÜP GÖREVLERİ
+TID_SPEC_ABI_ARTILLERY_DUDE_1,BÜYÜK KESE
+TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,"Penny'nin altın dolu keseleri, rakibe isabet ettiğinde <c00cc00>%<VALUE1></c> daha geniş bir koniye saçılır."
+TID_SPEC_ABI_ARTILLERY_DUDE_2,AĞIR TOP
+TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Penny'nin topu savaş alanına inerken <c00cc00><VALUE1></c> hasar verir ve yakındaki düşmanları geri püskürtür.
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,TUZ FIÇISI
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,"Penny, düşman mermilerini engelleyen bir tuz fıçısı bırakır. Bu fıçıyı vurarak kendi altın keselerini de patlatabilir."
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,GÜVENİLİR DÜRBÜN
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2_DESC,"Penny´nin topu, menzildeki görünen tüm düşman konumlarına ateş eder."
+TID_RANDOM_GAME_MODE_DESC,"Oyun modu, harita ve dış etkenler rastgele seçiliyor. Nelerle karşılaşacağın tam bir sır!"
+TID_CLUB_QUESTS_EXPIRED,GÖREVİN SÜRESİ DOLDU
+TID_CLUB_LEAGUE_ACTIVE,LİG HAFTASI etkin
+TID_CLUB_QUESTS_TUTORIAL,Kulübüne puan kazandırmak için bu hafta üç kulüp görevi tamamlamalısın.
+TID_CLUB_QUESTS_YOUR_QUESTS,BU HAFTAKİ KULÜP GÖREVLERİ
+TID_CLUB_QUESTS_NEW_QUESTS,YENİ KULÜP GÖREVLERİ
+TID_CLUB_QUESTS_REWARDS_INCREASED,Kulüp ligi ve kulüp görevleri için alacağın maksimum ödüller arttı.
+TID_BRAWLBALL_441,Çifte Tehlike
+TID_BRAWLBALL_442,Zıplat Topu
+TID_KNOCKOUT_441,Saklı Düşman
+TID_KNOCKOUT_442,Açıkta
+TID_BANKHEIST_441,Nehir Kıyısı
+TID_BANKHEIST_442,Yaşlı Ağaç
+TID_GEMGRAB_441,Bardağın Dolu Tarafı
+TID_GEMGRAB_442,İkili
+TID_BOUNTY_441,Arkana Bakma
+TID_BOUNTY_442,Yan Yana
+TID_HOTZONE_441,Üçlü Mızrak
+TID_HOTZONE_442,Dengesiz
+TID_SHOWDOWN_441,Köşe Bucak
+TID_SHOWDOWN_442,Uzaktan Bakış
+TID_TRUE_GOLD_FANG_SKIN,SAF ALTIN FANG
+TID_TRUE_GOLD_FANG_SKIN_SHOP,SAF ALTIN\nFANG
+TID_TRUE_SILVER_FANG_SKIN,SAF GÜMÜŞ FANG
+TID_TRUE_SILVER_FANG_SKIN_SHOP,SAF GÜMÜŞ\nFANG
+TID_TRUE_GOLD_BONNIE_SKIN,SAF ALTIN BONNIE
+TID_TRUE_GOLD_BONNIE_SKIN_SHOP,SAF ALTIN\nBONNIE
+TID_TRUE_SILVER_BONNIE_SKIN,SAF GÜMÜŞ BONNIE
+TID_TRUE_SILVER_BONNIE_SKIN_SHOP,SAF GÜMÜŞ\nBONNIE
+TID_TRUE_GOLD_JANET_SKIN,SAF ALTIN JANET
+TID_TRUE_GOLD_JANET_SKIN_SHOP,SAF ALTIN\nJANET
+TID_TRUE_SILVER_JANET_SKIN,SAF GÜMÜŞ JANET
+TID_TRUE_SILVER_JANET_SKIN_SHOP,SAF GÜMÜŞ\nJANET
+TID_TRUE_GOLD_GROM_SKIN,SAF ALTIN GROM
+TID_TRUE_GOLD_GROM_SKIN_SHOP,SAF ALTIN\nGROM
+TID_TRUE_SILVER_GROM_SKIN,SAF GÜMÜŞ GROM
+TID_TRUE_SILVER_GROM_SKIN_SHOP,SAF GÜMÜŞ\nGROM
+TID_TRUE_GOLD_EVE_SKIN,SAF ALTIN EVE
+TID_TRUE_GOLD_EVE_SKIN_SHOP,SAF ALTIN\nEVE
+TID_TRUE_SILVER_EVE_SKIN,SAF GÜMÜŞ EVE
+TID_TRUE_SILVER_EVE_SKIN_SHOP,SAF GÜMÜŞ\nEVE
+TID_BRAWL_PASS_SEASON_12,DERİN DENİZ SAVAŞI
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

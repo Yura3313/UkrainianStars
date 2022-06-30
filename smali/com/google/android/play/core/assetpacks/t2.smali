@@ -1,53 +1,70 @@
-.class public interface abstract Lcom/google/android/play/core/assetpacks/t2;
+.class public final Lcom/google/android/play/core/assetpacks/t2;
 .super Ljava/lang/Object;
 
+# interfaces
+.implements La5/u0;
 
-# virtual methods
-.method public abstract a()Lcom/google/android/play/core/tasks/Task;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "La5/u0<",
+        "Le5/l;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final f:La5/u0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
-            "Lcom/google/android/play/core/tasks/Task<",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;>;"
-        }
-    .end annotation
-.end method
-
-.method public abstract b(ILjava/lang/String;)V
-.end method
-
-.method public abstract g0()V
-.end method
-
-.method public abstract v(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-.end method
-
-.method public abstract x0(I)V
-.end method
-
-.method public abstract y0(ILjava/lang/String;Ljava/lang/String;I)Lcom/google/android/play/core/tasks/Task;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "I)",
-            "Lcom/google/android/play/core/tasks/Task<",
-            "Landroid/os/ParcelFileDescriptor;",
+            "La5/u0<",
+            "Landroid/content/Context;",
             ">;"
         }
     .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(La5/u0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "La5/u0<",
+            "Landroid/content/Context;",
+            ">;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/t2;->f:La5/u0;
+
+    return-void
 .end method
 
-.method public abstract z0(ILjava/lang/String;Ljava/lang/String;I)V
+
+# virtual methods
+.method public final bridge synthetic e()Ljava/lang/Object;
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/t2;->f:La5/u0;
+
+    check-cast v0, Lcom/google/android/play/core/assetpacks/r2;
+
+    invoke-virtual {v0}, Lcom/google/android/play/core/assetpacks/r2;->a()Landroid/content/Context;
+
+    move-result-object v0
+
+    new-instance v1, Le5/l;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    invoke-direct {v1}, Le5/l;-><init>()V
+
+    return-object v1
 .end method

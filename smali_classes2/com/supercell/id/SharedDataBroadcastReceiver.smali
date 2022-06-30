@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -15,14 +14,16 @@
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_2
+    const-string v0, "intent"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     :try_start_0
     const-string v0, "sender"
@@ -60,49 +61,34 @@
 
     .line 6
     :cond_0
-    sget-object v2, Llc/g;->d:Llc/g$a;
+    sget-object v2, Lpc/f;->d:Lpc/f$a;
 
-    invoke-virtual {v2, p1}, Lvd/t1;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, p1}, Lae/k2;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Llc/g;
+    check-cast v2, Lpc/f;
 
     .line 7
-    iget-object v2, v2, Llc/g;->b:Lse/f0;
+    iget-object v2, v2, Lpc/f;->b:Lze/p;
 
     .line 8
     new-instance v3, Lcom/supercell/id/SharedDataBroadcastReceiver$a;
 
     invoke-direct {v3, v1, p2, p1, v0}, Lcom/supercell/id/SharedDataBroadcastReceiver$a;-><init>(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Landroid/app/PendingIntent;)V
 
-    invoke-static {v2, v3}, Lvd/e1;->k(Lse/f0;Lke/l;)Lse/f0;
+    invoke-static {v2, v3}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
 
     .line 9
     new-instance p1, Lcom/supercell/id/SharedDataBroadcastReceiver$b;
 
     invoke-direct {p1, v0}, Lcom/supercell/id/SharedDataBroadcastReceiver$b;-><init>(Landroid/app/PendingIntent;)V
 
-    invoke-static {v2, p1}, Lvd/e1;->b(Lse/f0;Lke/l;)Lse/f0;
+    invoke-static {v2, p1}, Lae/u1;->c(Lze/e0;Lre/l;)Lze/e0;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
     :cond_1
     return-void
-
-    :cond_2
-    const-string p1, "intent"
-
-    .line 10
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

@@ -1,22 +1,16 @@
-.class public final Lw5/c;
-.super Ljava/lang/Exception;
+.class public interface abstract Lw5/c;
+.super Ljava/lang/Object;
+.source "com.google.firebase:firebase-common@@16.0.2"
 
 
-# direct methods
-.method public constructor <init>(Ljava/lang/Exception;)V
-    .locals 0
-
-    .line 2
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/Throwable;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
-
-    return-void
+# virtual methods
+.method public abstract getComponents()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lw5/a<",
+            "*>;>;"
+        }
+    .end annotation
 .end method

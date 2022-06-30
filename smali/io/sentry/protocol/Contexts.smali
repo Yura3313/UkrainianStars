@@ -35,7 +35,7 @@
     invoke-direct {p0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     .line 3
-    invoke-virtual {p1}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+    invoke-virtual {p1}, Ljava/util/AbstractMap;->entrySet()Ljava/util/Set;
 
     move-result-object p1
 
@@ -274,7 +274,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-virtual {p0, v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_0
 
@@ -296,7 +296,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -325,7 +325,6 @@
 .method public getApp()Lio/sentry/protocol/App;
     .locals 2
 
-    .line 1
     const-class v0, Lio/sentry/protocol/App;
 
     const-string v1, "app"
@@ -342,7 +341,6 @@
 .method public getBrowser()Lio/sentry/protocol/Browser;
     .locals 2
 
-    .line 1
     const-class v0, Lio/sentry/protocol/Browser;
 
     const-string v1, "browser"
@@ -359,7 +357,6 @@
 .method public getDevice()Lio/sentry/protocol/Device;
     .locals 2
 
-    .line 1
     const-class v0, Lio/sentry/protocol/Device;
 
     const-string v1, "device"
@@ -376,7 +373,6 @@
 .method public getGpu()Lio/sentry/protocol/Gpu;
     .locals 2
 
-    .line 1
     const-class v0, Lio/sentry/protocol/Gpu;
 
     const-string v1, "gpu"
@@ -393,7 +389,6 @@
 .method public getOperatingSystem()Lio/sentry/protocol/OperatingSystem;
     .locals 2
 
-    .line 1
     const-class v0, Lio/sentry/protocol/OperatingSystem;
 
     const-string v1, "os"
@@ -410,7 +405,6 @@
 .method public getRuntime()Lio/sentry/protocol/SentryRuntime;
     .locals 2
 
-    .line 1
     const-class v0, Lio/sentry/protocol/SentryRuntime;
 
     const-string v1, "runtime"
@@ -427,7 +421,6 @@
 .method public getTrace()Lio/sentry/SpanContext;
     .locals 2
 
-    .line 1
     const-class v0, Lio/sentry/SpanContext;
 
     const-string v1, "trace"
@@ -446,8 +439,7 @@
 
     const-string v0, "app"
 
-    .line 1
-    invoke-virtual {p0, v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -457,8 +449,7 @@
 
     const-string v0, "browser"
 
-    .line 1
-    invoke-virtual {p0, v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -468,8 +459,7 @@
 
     const-string v0, "device"
 
-    .line 1
-    invoke-virtual {p0, v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -479,8 +469,7 @@
 
     const-string v0, "gpu"
 
-    .line 1
-    invoke-virtual {p0, v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -490,8 +479,7 @@
 
     const-string v0, "os"
 
-    .line 1
-    invoke-virtual {p0, v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -501,8 +489,7 @@
 
     const-string v0, "runtime"
 
-    .line 1
-    invoke-virtual {p0, v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -518,7 +505,7 @@
     const-string v0, "trace"
 
     .line 2
-    invoke-virtual {p0, v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

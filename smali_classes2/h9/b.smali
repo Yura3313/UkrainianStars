@@ -1,40 +1,47 @@
-.class public Lh9/b;
+.class public interface abstract Lh9/b;
 .super Ljava/lang/Object;
-.source "ConversationDbMigration_11_to_12.java"
-
-# interfaces
-.implements Lf9/d;
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
+.source "DatabaseContract.java"
 
 
 # virtual methods
-.method public a(Landroid/database/sqlite/SQLiteDatabase;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
+.method public abstract c()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Ljava/lang/Exception;
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
         }
     .end annotation
+.end method
 
-    const-string v0, "ALTER TABLE issues ADD COLUMN feedback_bots_enabled INTEGER ;"
+.method public abstract getTag()Ljava/lang/String;
+.end method
 
-    .line 1
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+.method public abstract i()Ljava/lang/String;
+.end method
 
-    const-string v0, "ALTER TABLE issues ADD COLUMN can_start_new_conversation INTEGER ;"
+.method public abstract n()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    .line 2
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+.method public abstract o(I)Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)",
+            "Ljava/util/List<",
+            "Lh9/d;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    return-void
+.method public abstract p()I
 .end method

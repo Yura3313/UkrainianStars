@@ -8,17 +8,17 @@
     .locals 6
 
     .line 1
-    sget-object v0, Lcom/google/android/material/circularreveal/c$c;->a:Landroid/util/Property;
+    sget-object v0, Lcom/google/android/material/circularreveal/c$b;->a:Lcom/google/android/material/circularreveal/c$b;
 
-    sget-object v1, Lcom/google/android/material/circularreveal/c$b;->b:Landroid/animation/TypeEvaluator;
+    sget-object v1, Lcom/google/android/material/circularreveal/c$a;->b:Lcom/google/android/material/circularreveal/c$a;
 
     const/4 v2, 0x1
 
-    new-array v3, v2, [Lcom/google/android/material/circularreveal/c$e;
+    new-array v3, v2, [Lcom/google/android/material/circularreveal/c$d;
 
-    new-instance v4, Lcom/google/android/material/circularreveal/c$e;
+    new-instance v4, Lcom/google/android/material/circularreveal/c$d;
 
-    invoke-direct {v4, p1, p2, p3}, Lcom/google/android/material/circularreveal/c$e;-><init>(FFF)V
+    invoke-direct {v4, p1, p2, p3}, Lcom/google/android/material/circularreveal/c$d;-><init>(FFF)V
 
     const/4 v5, 0x0
 
@@ -37,14 +37,14 @@
     if-lt v1, v3, :cond_1
 
     .line 4
-    invoke-interface {p0}, Lcom/google/android/material/circularreveal/c;->getRevealInfo()Lcom/google/android/material/circularreveal/c$e;
+    invoke-interface {p0}, Lcom/google/android/material/circularreveal/c;->getRevealInfo()Lcom/google/android/material/circularreveal/c$d;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
     .line 5
-    iget v1, v1, Lcom/google/android/material/circularreveal/c$e;->c:F
+    iget v1, v1, Lcom/google/android/material/circularreveal/c$d;->c:F
 
     .line 6
     check-cast p0, Landroid/view/View;

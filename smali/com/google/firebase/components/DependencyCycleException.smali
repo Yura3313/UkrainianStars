@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final g:Ljava/util/List;
+.field public final f:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lu5/a<",
+            "Lw5/a<",
             "*>;>;"
         }
     .end annotation
@@ -22,7 +22,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lu5/a<",
+            "Lw5/a<",
             "*>;>;)V"
         }
     .end annotation
@@ -51,7 +51,7 @@
     invoke-direct {p0, v0}, Lcom/google/firebase/components/DependencyException;-><init>(Ljava/lang/String;)V
 
     .line 2
-    iput-object p1, p0, Lcom/google/firebase/components/DependencyCycleException;->g:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/firebase/components/DependencyCycleException;->f:Ljava/util/List;
 
     return-void
 .end method

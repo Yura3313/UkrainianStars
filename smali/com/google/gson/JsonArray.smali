@@ -184,7 +184,6 @@
 .method public addAll(Lcom/google/gson/JsonArray;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/List;
 
     iget-object p1, p1, Lcom/google/gson/JsonArray;->elements:Ljava/util/List;
@@ -197,7 +196,6 @@
 .method public contains(Lcom/google/gson/JsonElement;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -287,7 +285,6 @@
 
     if-eq p1, p0, :cond_1
 
-    .line 1
     instance-of v0, p1, Lcom/google/gson/JsonArray;
 
     if-eqz v0, :cond_0
@@ -322,7 +319,6 @@
 .method public get(I)Lcom/google/gson/JsonElement;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -817,7 +813,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->hashCode()I
@@ -838,7 +833,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -879,7 +873,6 @@
 .method public set(ILcom/google/gson/JsonElement;)Lcom/google/gson/JsonElement;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/List;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
@@ -894,7 +887,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I

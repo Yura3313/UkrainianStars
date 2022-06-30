@@ -38,7 +38,6 @@
 .method public getPath(Lio/sentry/SentryOptions;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lio/sentry/SentryOptions;->getOutboxPath()Ljava/lang/String;
 
     move-result-object p1

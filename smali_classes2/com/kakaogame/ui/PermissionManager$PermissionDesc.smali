@@ -144,7 +144,7 @@
     move-exception p1
 
     .line 12
-    invoke-virtual {p1}, Lorg/json/JSONException;->printStackTrace()V
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_1
     return-void

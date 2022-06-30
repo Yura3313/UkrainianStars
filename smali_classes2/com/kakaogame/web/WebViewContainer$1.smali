@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/WebViewContainer;Landroid/webkit/WebView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebViewContainer$1;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     iput-object p2, p0, Lcom/kakaogame/web/WebViewContainer$1;->val$view:Landroid/webkit/WebView;
@@ -79,7 +78,7 @@
     const-string v0, "[onHandle] javascript: "
 
     .line 3
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 

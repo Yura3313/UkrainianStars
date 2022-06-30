@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$d;
-.super Lle/j;
+.super Lse/h;
 .source "InviteFriendsFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,97 +18,92 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
+        "Lse/h;",
+        "Lre/l<",
         "Ljava/lang/String;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Ljava/lang/ref/WeakReference;
+.field public final synthetic f:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$d;->g:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$d;->f:Ljava/lang/ref/WeakReference;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
     check-cast p1, Ljava/lang/String;
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
+    const-string v0, "it"
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$d;->g:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
-
-    if-eqz v1, :cond_0
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    sget v2, Lcom/supercell/id/R$id;->invite_ingame_friends_title:I
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$d;->f:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v1, v2}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v0
 
-    check-cast v1, Landroid/widget/TextView;
+    check-cast v0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
-    if-eqz v1, :cond_0
-
-    const/4 v2, 0x1
-
-    new-array v2, v2, [Lae/d;
-
-    const/4 v3, 0x0
+    if-eqz v0, :cond_0
 
     .line 4
-    new-instance v4, Lae/d;
+    sget v1, Lcom/supercell/id/R$id;->invite_ingame_friends_title:I
 
-    const-string v5, "game"
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->f1(I)Landroid/view/View;
 
-    invoke-direct {v4, v5, p1}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    move-result-object v0
 
-    aput-object v4, v2, v3
+    check-cast v0, Landroid/widget/TextView;
 
-    const-string p1, "account_invite_friends_ingame_title"
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Lie/d;
+
+    const/4 v2, 0x0
 
     .line 5
-    invoke-static {v1, p1, v2, v0}, Lpd/d0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lae/d;Lke/l;)V
+    new-instance v3, Lie/d;
+
+    const-string v4, "game"
+
+    invoke-direct {v3, v4, p1}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v3, v1, v2
+
+    const/4 p1, 0x0
+
+    const-string v2, "account_invite_friends_ingame_title"
 
     .line 6
-    :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "it"
+    invoke-static {v0, v2, v1, p1}, Lud/f0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
 
     .line 7
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    :cond_0
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    throw v0
+    return-object p1
 .end method

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/Runnable;
+.field public final f:Landroidx/core/widget/ContentLoadingProgressBar$a;
 
-.field public final h:Ljava/lang/Runnable;
+.field public final g:Landroidx/core/widget/ContentLoadingProgressBar$b;
 
 
 # direct methods
@@ -23,54 +23,54 @@
 
     invoke-direct {p1, p0}, Landroidx/core/widget/ContentLoadingProgressBar$a;-><init>(Landroidx/core/widget/ContentLoadingProgressBar;)V
 
-    iput-object p1, p0, Landroidx/core/widget/ContentLoadingProgressBar;->g:Ljava/lang/Runnable;
+    iput-object p1, p0, Landroidx/core/widget/ContentLoadingProgressBar;->f:Landroidx/core/widget/ContentLoadingProgressBar$a;
 
     .line 3
     new-instance p1, Landroidx/core/widget/ContentLoadingProgressBar$b;
 
     invoke-direct {p1, p0}, Landroidx/core/widget/ContentLoadingProgressBar$b;-><init>(Landroidx/core/widget/ContentLoadingProgressBar;)V
 
-    iput-object p1, p0, Landroidx/core/widget/ContentLoadingProgressBar;->h:Ljava/lang/Runnable;
+    iput-object p1, p0, Landroidx/core/widget/ContentLoadingProgressBar;->g:Landroidx/core/widget/ContentLoadingProgressBar$b;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 1
 
     .line 1
     invoke-super {p0}, Landroid/widget/ProgressBar;->onAttachedToWindow()V
 
     .line 2
-    iget-object v0, p0, Landroidx/core/widget/ContentLoadingProgressBar;->g:Ljava/lang/Runnable;
+    iget-object v0, p0, Landroidx/core/widget/ContentLoadingProgressBar;->f:Landroidx/core/widget/ContentLoadingProgressBar$a;
 
-    invoke-virtual {p0, v0}, Landroid/widget/ProgressBar;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 3
-    iget-object v0, p0, Landroidx/core/widget/ContentLoadingProgressBar;->h:Ljava/lang/Runnable;
+    iget-object v0, p0, Landroidx/core/widget/ContentLoadingProgressBar;->g:Landroidx/core/widget/ContentLoadingProgressBar$b;
 
-    invoke-virtual {p0, v0}, Landroid/widget/ProgressBar;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     return-void
 .end method
 
-.method public onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 1
 
     .line 1
     invoke-super {p0}, Landroid/widget/ProgressBar;->onDetachedFromWindow()V
 
     .line 2
-    iget-object v0, p0, Landroidx/core/widget/ContentLoadingProgressBar;->g:Ljava/lang/Runnable;
+    iget-object v0, p0, Landroidx/core/widget/ContentLoadingProgressBar;->f:Landroidx/core/widget/ContentLoadingProgressBar$a;
 
-    invoke-virtual {p0, v0}, Landroid/widget/ProgressBar;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 3
-    iget-object v0, p0, Landroidx/core/widget/ContentLoadingProgressBar;->h:Ljava/lang/Runnable;
+    iget-object v0, p0, Landroidx/core/widget/ContentLoadingProgressBar;->g:Landroidx/core/widget/ContentLoadingProgressBar$b;
 
-    invoke-virtual {p0, v0}, Landroid/widget/ProgressBar;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     return-void
 .end method

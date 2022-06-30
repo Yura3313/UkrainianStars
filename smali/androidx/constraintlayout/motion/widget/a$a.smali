@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/motion/widget/a$a;
+.class public final Landroidx/constraintlayout/motion/widget/a$a;
 .super Ljava/lang/Object;
 .source "MotionScene.java"
 
@@ -22,11 +22,10 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/constraintlayout/motion/widget/a;Ln/c;)V
+.method public constructor <init>(Ln/c;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/constraintlayout/motion/widget/a$a;->a:Ln/c;
+    iput-object p1, p0, Landroidx/constraintlayout/motion/widget/a$a;->a:Ln/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,10 +34,9 @@
 
 
 # virtual methods
-.method public getInterpolation(F)F
+.method public final getInterpolation(F)F
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/a$a;->a:Ln/c;
 
     float-to-double v1, p1

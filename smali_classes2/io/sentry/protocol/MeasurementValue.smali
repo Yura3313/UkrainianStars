@@ -30,7 +30,6 @@
 .method public getValue()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/sentry/protocol/MeasurementValue;->value:F
 
     return v0

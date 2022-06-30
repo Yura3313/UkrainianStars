@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract o4(Lcom/google/android/gms/common/api/Status;Lcom/google/android/gms/auth/api/identity/SavePasswordResult;)V
+.method public abstract p3()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

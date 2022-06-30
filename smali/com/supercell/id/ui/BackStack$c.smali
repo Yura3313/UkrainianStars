@@ -18,10 +18,10 @@
 
 
 # instance fields
-.field public final a:Lse/f0;
+.field public final a:Lze/f0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lse/f0<",
+            "Lze/e0<",
             "*>;"
         }
     .end annotation
@@ -32,7 +32,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/util/List;)V
-    .locals 8
+    .locals 3
 
     .line 1
     iput-object p1, p0, Lcom/supercell/id/ui/BackStack$c;->b:Ljava/util/List;
@@ -44,7 +44,7 @@
 
     const/16 v1, 0xa
 
-    invoke-static {p1, v1}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v1}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
     move-result v1
 
@@ -70,7 +70,7 @@
     check-cast v1, Lcom/supercell/id/ui/BaseFragment;
 
     .line 5
-    iget-object v1, v1, Lcom/supercell/id/ui/BaseFragment;->d0:Lse/o;
+    iget-object v1, v1, Lcom/supercell/id/ui/BaseFragment;->b0:Lze/p;
 
     .line 6
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -79,45 +79,40 @@
 
     .line 7
     :cond_0
-    sget-object v2, Lse/u0;->g:Lse/u0;
+    sget-object p1, Lze/u0;->f:Lze/u0;
 
-    const/4 v3, 0x0
+    new-instance v1, Lae/t1;
 
-    new-instance v5, Lvd/c1;
+    const/4 v2, 0x0
 
-    const/4 p1, 0x0
+    invoke-direct {v1, v0, v2}, Lae/t1;-><init>(Ljava/util/Collection;Lke/d;)V
 
-    invoke-direct {v5, v0, p1}, Lvd/c1;-><init>(Ljava/util/Collection;Lde/d;)V
+    const/4 v0, 0x3
 
-    const/4 v6, 0x3
-
-    const/4 v7, 0x0
-
-    const/4 v4, 0x0
-
-    invoke-static/range {v2 .. v7}, Lb5/m;->e(Lse/a0;Lde/f;ILke/p;ILjava/lang/Object;)Lse/f0;
+    invoke-static {p1, v2, v1, v0}, La5/g0;->j(Lze/a0;Lke/f;Lre/p;I)Lze/e0;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/supercell/id/ui/BackStack$c;->a:Lse/f0;
+    check-cast p1, Lze/f0;
+
+    iput-object p1, p0, Lcom/supercell/id/ui/BackStack$c;->a:Lze/f0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Lse/f0;
+.method public final a()Lze/e0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lse/f0<",
+            "Lze/e0<",
             "*>;"
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$c;->a:Lse/f0;
+    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$c;->a:Lze/f0;
 
     return-object v0
 .end method

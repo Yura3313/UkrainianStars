@@ -1,4 +1,4 @@
-.class public La1/a;
+.class public final La1/a;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
@@ -9,7 +9,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Date;Lcom/google/ads/AdRequest$Gender;Ljava/util/Set;ZLandroid/location/Location;)V
+.method public constructor <init>()V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -24,7 +24,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

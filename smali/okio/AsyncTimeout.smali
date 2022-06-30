@@ -65,7 +65,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lokio/Timeout;-><init>()V
 
     return-void
@@ -242,7 +241,6 @@
 .method private remainingNanos(J)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lokio/AsyncTimeout;->timeoutAt:J
 
     sub-long/2addr v0, p1
@@ -565,7 +563,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    invoke-virtual {v0, p1}, Ljava/io/InterruptedIOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v0, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     :cond_0
     return-object v0
@@ -574,7 +572,6 @@
 .method public final sink(Lokio/Sink;)Lokio/Sink;
     .locals 1
 
-    .line 1
     new-instance v0, Lokio/AsyncTimeout$1;
 
     invoke-direct {v0, p0, p1}, Lokio/AsyncTimeout$1;-><init>(Lokio/AsyncTimeout;Lokio/Sink;)V
@@ -585,7 +582,6 @@
 .method public final source(Lokio/Source;)Lokio/Source;
     .locals 1
 
-    .line 1
     new-instance v0, Lokio/AsyncTimeout$2;
 
     invoke-direct {v0, p0, p1}, Lokio/AsyncTimeout$2;-><init>(Lokio/AsyncTimeout;Lokio/Source;)V

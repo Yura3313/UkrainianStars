@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/faq/FaqFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/faq/FaqFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -48,10 +48,10 @@
     .end annotation
 
     .line 1
-    check-cast p1, Lae/g;
+    check-cast p1, Lie/g;
 
     .line 2
-    iget-object p1, p1, Lae/g;->g:Ljava/lang/Object;
+    iget-object p1, p1, Lie/g;->f:Ljava/lang/Object;
 
     .line 3
     check-cast p1, Ljava/lang/Number;
@@ -64,10 +64,10 @@
 
     move-result-object p1
 
-    check-cast p2, Lae/g;
+    check-cast p2, Lie/g;
 
     .line 4
-    iget-object p2, p2, Lae/g;->g:Ljava/lang/Object;
+    iget-object p2, p2, Lie/g;->f:Ljava/lang/Object;
 
     .line 5
     check-cast p2, Ljava/lang/Number;
@@ -80,7 +80,7 @@
 
     move-result-object p2
 
-    invoke-static {p1, p2}, Lce/a;->a(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    invoke-static {p1, p2}, Lid/h;->b(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
     move-result p1
 

@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/SupercellId$d;
+.class public final Lcom/supercell/titan/SupercellId$d;
 .super Ljava/lang/Object;
 .source "SupercellId.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/titan/SupercellId;->openPublicProfile(Ljava/lang/String;Ljava/lang/String;)V
+    value = Lcom/supercell/titan/SupercellId;->openChat(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,23 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic f:Ljava/lang/String;
 
-.field public final synthetic h:Lcom/supercell/titan/GameApp;
-
-.field public final synthetic i:Ljava/lang/String;
+.field public final synthetic g:Lcom/supercell/titan/GameApp;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;Lcom/supercell/titan/GameApp;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Lcom/supercell/titan/GameApp;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Lcom/supercell/titan/SupercellId$d;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/SupercellId$d;->f:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/titan/SupercellId$d;->h:Lcom/supercell/titan/GameApp;
-
-    iput-object p4, p0, Lcom/supercell/titan/SupercellId$d;->i:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/titan/SupercellId$d;->g:Lcom/supercell/titan/GameApp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,20 +38,18 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 4
+.method public final run()V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/SupercellId$d;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/titan/SupercellId$d;->f:Ljava/lang/String;
 
     .line 2
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    iget-object v2, p0, Lcom/supercell/titan/SupercellId$d;->h:Lcom/supercell/titan/GameApp;
+    iget-object v2, p0, Lcom/supercell/titan/SupercellId$d;->g:Lcom/supercell/titan/GameApp;
 
-    iget-object v3, p0, Lcom/supercell/titan/SupercellId$d;->i:Ljava/lang/String;
-
-    invoke-virtual {v1, v2, v0, v3}, Lcom/supercell/id/SupercellId;->presentPublicProfile(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0}, Lcom/supercell/id/SupercellId;->presentChat(Landroid/app/Activity;Ljava/lang/String;)V
 
     return-void
 .end method

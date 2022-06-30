@@ -7,15 +7,7 @@
 
 
 # virtual methods
-.method public abstract D6(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract E4(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+.method public abstract G4(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -31,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract M1(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/internal/ads/zzaue;)V
+.method public abstract K0(Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -39,7 +31,7 @@
     .end annotation
 .end method
 
-.method public abstract O(Landroid/os/Bundle;)V
+.method public abstract P1(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/internal/ads/zzaue;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -47,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract O2(Lcom/google/android/gms/dynamic/IObjectWrapper;I)V
+.method public abstract T2(Lcom/google/android/gms/dynamic/IObjectWrapper;I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -55,7 +47,7 @@
     .end annotation
 .end method
 
-.method public abstract R1(Lcom/google/android/gms/dynamic/IObjectWrapper;I)V
+.method public abstract U1(Lcom/google/android/gms/dynamic/IObjectWrapper;I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -63,7 +55,7 @@
     .end annotation
 .end method
 
-.method public abstract W2(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+.method public abstract W6(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -71,7 +63,7 @@
     .end annotation
 .end method
 
-.method public abstract c4(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+.method public abstract c3(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -79,7 +71,7 @@
     .end annotation
 .end method
 
-.method public abstract d7(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+.method public abstract e4(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -87,7 +79,7 @@
     .end annotation
 .end method
 
-.method public abstract q2(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+.method public abstract u2(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -95,7 +87,15 @@
     .end annotation
 .end method
 
-.method public abstract r1(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+.method public abstract w1(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract z6(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

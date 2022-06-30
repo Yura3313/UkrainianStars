@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/transformation/FabTransformationBehavior$b;
+.class public final Lcom/google/android/material/transformation/FabTransformationBehavior$b;
 .super Ljava/lang/Object;
 .source "FabTransformationBehavior.java"
 
@@ -15,16 +15,15 @@
 
 
 # instance fields
-.field public a:Lc4/g;
+.field public a:Ld4/g;
 
-.field public b:Lr5/a;
+.field public b:Ld4/i;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

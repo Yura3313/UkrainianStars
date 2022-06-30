@@ -104,25 +104,38 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "id"
 
-    if-eqz p1, :cond_7
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_6
+    const-string v0, "url"
 
-    if-eqz p3, :cond_5
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_4
+    const-string v0, "mediaType"
 
-    if-eqz p7, :cond_3
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p8, :cond_2
+    const-string v0, "createdAt"
 
-    if-eqz p10, :cond_1
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p11, :cond_0
+    const-string v0, "content"
 
-    .line 1
+    invoke-static {p7, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "permission"
+
+    invoke-static {p8, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "likes"
+
+    invoke-static {p10, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "comments"
+
+    invoke-static {p11, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/kakao/sdk/story/model/Story;->id:Ljava/lang/String;
@@ -148,63 +161,6 @@
     iput-object p11, p0, Lcom/kakao/sdk/story/model/Story;->comments:Ljava/util/List;
 
     return-void
-
-    :cond_0
-    const-string p1, "comments"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "likes"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "permission"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "content"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_4
-    const-string p1, "createdAt"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_5
-    const-string p1, "mediaType"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_6
-    const-string p1, "url"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_7
-    const-string p1, "id"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/story/model/Story;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;IILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;ILjava/lang/Object;)Lcom/kakao/sdk/story/model/Story;
@@ -514,110 +470,67 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "id"
 
-    if-eqz p1, :cond_7
+    move-object v2, p1
 
-    if-eqz p2, :cond_6
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p3, :cond_5
+    const-string v0, "url"
 
-    if-eqz p4, :cond_4
+    move-object v3, p2
 
-    if-eqz p7, :cond_3
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p8, :cond_2
+    const-string v0, "mediaType"
 
-    if-eqz p10, :cond_1
+    move-object/from16 v4, p3
 
-    if-eqz p11, :cond_0
+    invoke-static {v4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "createdAt"
+
+    move-object/from16 v5, p4
+
+    invoke-static {v5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "content"
+
+    move-object/from16 v8, p7
+
+    invoke-static {v8, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "permission"
+
+    move-object/from16 v9, p8
+
+    invoke-static {v9, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "likes"
+
+    move-object/from16 v11, p10
+
+    invoke-static {v11, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "comments"
+
+    move-object/from16 v12, p11
+
+    invoke-static {v12, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/story/model/Story;
 
     move-object v1, v0
 
-    move-object v2, p1
-
-    move-object v3, p2
-
-    move-object/from16 v4, p3
-
-    move-object/from16 v5, p4
-
     move/from16 v6, p5
 
     move/from16 v7, p6
 
-    move-object/from16 v8, p7
-
-    move-object/from16 v9, p8
-
     move-object/from16 v10, p9
-
-    move-object/from16 v11, p10
-
-    move-object/from16 v12, p11
 
     invoke-direct/range {v1 .. v12}, Lcom/kakao/sdk/story/model/Story;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;IILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
     return-object v0
-
-    :cond_0
-    const-string v1, "comments"
-
-    .line 1
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string v1, "likes"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string v1, "permission"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string v1, "content"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_4
-    const-string v1, "createdAt"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_5
-    const-string v1, "mediaType"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_6
-    const-string v1, "url"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_7
-    const-string v1, "id"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -647,7 +560,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/story/model/Story;->id:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -657,7 +570,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/story/model/Story;->url:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -667,7 +580,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/story/model/Story;->mediaType:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -677,7 +590,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/story/model/Story;->createdAt:Ljava/util/Date;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -719,7 +632,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/story/model/Story;->content:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -729,7 +642,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/story/model/Story;->permission:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -739,7 +652,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/story/model/Story;->media:Ljava/util/List;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -749,7 +662,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/story/model/Story;->likes:Ljava/util/List;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -759,7 +672,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/story/model/Story;->comments:Ljava/util/List;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -778,7 +691,6 @@
 .method public final getCommentCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/story/model/Story;->commentCount:I
 
     return v0
@@ -795,7 +707,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/story/model/Story;->comments:Ljava/util/List;
 
     return-object v0
@@ -804,7 +715,6 @@
 .method public final getContent()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/story/model/Story;->content:Ljava/lang/String;
 
     return-object v0
@@ -813,7 +723,6 @@
 .method public final getCreatedAt()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/story/model/Story;->createdAt:Ljava/util/Date;
 
     return-object v0
@@ -822,7 +731,6 @@
 .method public final getId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/story/model/Story;->id:Ljava/lang/String;
 
     return-object v0
@@ -831,7 +739,6 @@
 .method public final getLikeCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/story/model/Story;->likeCount:I
 
     return v0
@@ -848,7 +755,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/story/model/Story;->likes:Ljava/util/List;
 
     return-object v0
@@ -865,7 +771,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/story/model/Story;->media:Ljava/util/List;
 
     return-object v0
@@ -874,7 +779,6 @@
 .method public final getMediaType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/story/model/Story;->mediaType:Ljava/lang/String;
 
     return-object v0
@@ -883,7 +787,6 @@
 .method public final getPermission()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/story/model/Story;->permission:Ljava/lang/String;
 
     return-object v0
@@ -892,7 +795,6 @@
 .method public final getUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/story/model/Story;->url:Ljava/lang/String;
 
     return-object v0
@@ -1076,10 +978,12 @@
 
     const-string v0, "Story(id="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakao/sdk/story/model/Story;->id:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -1164,7 +1068,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Lt6/b;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Ltb/a;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1174,7 +1079,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    if-eqz p1, :cond_4
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/story/model/Story;->id:Ljava/lang/String;
 
@@ -1310,20 +1217,4 @@
 
     :cond_3
     return-void
-
-    :cond_4
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    goto :goto_4
-
-    :goto_3
-    throw p1
-
-    :goto_4
-    goto :goto_3
 .end method

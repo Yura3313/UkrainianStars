@@ -74,7 +74,6 @@
 
     const-wide/16 v0, -0x1
 
-    .line 1
     :try_start_0
     iget-object v2, p0, Lokhttp3/Cache$CacheResponseBody;->contentLength:Ljava/lang/String;
 
@@ -94,7 +93,6 @@
 .method public contentType()Lokhttp3/MediaType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Cache$CacheResponseBody;->contentType:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -115,7 +113,6 @@
 .method public source()Lokio/BufferedSource;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Cache$CacheResponseBody;->bodySource:Lokio/BufferedSource;
 
     return-object v0

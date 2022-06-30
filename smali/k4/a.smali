@@ -1,174 +1,122 @@
-.class public Lk4/a;
+.class public final Lk4/a;
 .super Ljava/lang/Object;
-.source "ElevationOverlayProvider.java"
-
-
-# instance fields
-.field public final a:Z
-
-.field public final b:I
-
-.field public final c:I
-
-.field public final d:F
+.source "DrawableUtils.java"
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 2
+.method public static a(Landroid/graphics/drawable/RippleDrawable;I)V
+    .locals 6
+    .annotation build Landroid/annotation/TargetApi;
+        value = 0x15
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x17
+
+    if-lt v0, v1, :cond_0
 
     .line 2
-    sget v0, Lcom/google/android/material/R$attr;->elevationOverlayEnabled:I
-
-    const/4 v1, 0x0
-
-    .line 3
-    invoke-static {p1, v0, v1}, Lo4/b;->b(Landroid/content/Context;IZ)Z
-
-    move-result v0
-
-    iput-boolean v0, p0, Lk4/a;->a:Z
-
-    .line 4
-    sget v0, Lcom/google/android/material/R$attr;->elevationOverlayColor:I
-
-    .line 5
-    invoke-static {p1, v0, v1}, Lh4/a;->d(Landroid/content/Context;II)I
-
-    move-result v0
-
-    iput v0, p0, Lk4/a;->b:I
-
-    .line 6
-    sget v0, Lcom/google/android/material/R$attr;->colorSurface:I
-
-    invoke-static {p1, v0, v1}, Lh4/a;->d(Landroid/content/Context;II)I
-
-    move-result v0
-
-    iput v0, p0, Lk4/a;->c:I
-
-    .line 7
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    move-result-object p1
-
-    iget p1, p1, Landroid/util/DisplayMetrics;->density:F
-
-    iput p1, p0, Lk4/a;->d:F
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(IF)I
-    .locals 4
-
-    .line 1
-    iget-boolean v0, p0, Lk4/a;->a:Z
-
-    if-eqz v0, :cond_3
-
-    const/16 v0, 0xff
-
-    .line 2
-    invoke-static {p1, v0}, Lx/a;->d(II)I
-
-    move-result v1
-
-    iget v2, p0, Lk4/a;->c:I
-
-    if-ne v1, v2, :cond_0
-
-    const/4 v1, 0x1
+    invoke-virtual {p0, p1}, Landroid/graphics/drawable/RippleDrawable;->setRadius(I)V
 
     goto :goto_0
 
+    .line 3
     :cond_0
-    const/4 v1, 0x0
+    :try_start_0
+    const-class v0, Landroid/graphics/drawable/RippleDrawable;
+
+    const-string v1, "setMaxRadius"
+
+    const/4 v2, 0x1
+
+    new-array v3, v2, [Ljava/lang/Class;
+
+    sget-object v4, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    const/4 v5, 0x0
+
+    aput-object v4, v3, v5
+
+    .line 4
+    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    new-array v1, v2, [Ljava/lang/Object;
+
+    .line 5
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    aput-object p1, v1, v5
+
+    invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
-    if-eqz v1, :cond_3
+    return-void
 
-    .line 3
-    iget v1, p0, Lk4/a;->d:F
-
-    const/4 v2, 0x0
-
-    cmpg-float v3, v1, v2
-
-    if-lez v3, :cond_2
-
-    cmpg-float v3, p2, v2
-
-    if-gtz v3, :cond_1
+    :catch_0
+    move-exception p0
 
     goto :goto_1
 
-    :cond_1
-    div-float/2addr p2, v1
+    :catch_1
+    move-exception p0
 
-    const/high16 v1, 0x40900000    # 4.5f
+    goto :goto_1
 
-    float-to-double v2, p2
-
-    .line 4
-    invoke-static {v2, v3}, Ljava/lang/Math;->log1p(D)D
-
-    move-result-wide v2
-
-    double-to-float p2, v2
-
-    mul-float p2, p2, v1
-
-    const/high16 v1, 0x40000000    # 2.0f
-
-    add-float/2addr p2, v1
-
-    const/high16 v1, 0x42c80000    # 100.0f
-
-    div-float/2addr p2, v1
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    .line 5
-    invoke-static {p2, v1}, Ljava/lang/Math;->min(FF)F
-
-    move-result v2
+    :catch_2
+    move-exception p0
 
     .line 6
-    :cond_2
     :goto_1
-    invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    move-result p2
+    const-string v0, "Couldn\'t set RippleDrawable radius"
 
-    .line 7
-    invoke-static {p1, v0}, Lx/a;->d(II)I
+    invoke-direct {p1, v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    move-result p1
+    throw p1
+.end method
 
-    .line 8
-    iget v0, p0, Lk4/a;->b:I
+.method public static b(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
+    .locals 1
 
-    .line 9
-    invoke-static {p1, v0, v2}, Lh4/a;->f(IIF)I
+    if-eqz p1, :cond_1
 
-    move-result p1
+    if-nez p2, :cond_0
 
-    .line 10
-    invoke-static {p1, p2}, Lx/a;->d(II)I
+    goto :goto_0
 
-    move-result p1
+    .line 1
+    :cond_0
+    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
 
-    :cond_3
-    return p1
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p0, v0}, Landroid/content/res/ColorStateList;->getColorForState([II)I
+
+    move-result p0
+
+    .line 2
+    new-instance p1, Landroid/graphics/PorterDuffColorFilter;
+
+    invoke-direct {p1, p0, p2}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
+
+    return-object p1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x0
+
+    return-object p0
 .end method

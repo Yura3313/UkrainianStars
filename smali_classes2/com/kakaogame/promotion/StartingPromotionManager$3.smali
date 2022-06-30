@@ -29,7 +29,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/KGPromotionData;Lcom/kakaogame/util/MutexLock;Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/StartingPromotionManager$3;->val$promotion:Lcom/kakaogame/promotion/KGPromotionData;
 
     iput-object p2, p0, Lcom/kakaogame/promotion/StartingPromotionManager$3;->val$dismissLock:Lcom/kakaogame/util/MutexLock;
@@ -53,6 +52,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakaogame/promotion/StartingPromotionManager$3;->val$promotion:Lcom/kakaogame/promotion/KGPromotionData;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -65,7 +65,7 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/kakaogame/promotion/StartingPromotionManager$3;->val$promotion:Lcom/kakaogame/promotion/KGPromotionData;
 
@@ -73,22 +73,22 @@
 
     move-result-object v0
 
-    .line 3
+    .line 4
     new-instance v2, Lcom/kakaogame/promotion/StartingPromotionManager$3$1;
 
     invoke-direct {v2, p0}, Lcom/kakaogame/promotion/StartingPromotionManager$3$1;-><init>(Lcom/kakaogame/promotion/StartingPromotionManager$3;)V
 
-    .line 4
+    .line 5
     invoke-virtual {v0, v2}, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->setCallbackListener(Lcom/kakaogame/promotion/view/StartingPromotionFragment$StartingPromotionDialogListener;)V
 
-    .line 5
+    .line 6
     iget-object v2, p0, Lcom/kakaogame/promotion/StartingPromotionManager$3;->val$activity:Landroid/app/Activity;
 
     invoke-virtual {v2}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 
-    .line 6
+    .line 7
     new-instance v3, Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -113,7 +113,7 @@
 
     invoke-direct {v3, v4}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
-    .line 7
+    .line 8
     invoke-virtual {v2}, Landroid/app/FragmentManager;->beginTransaction()Landroid/app/FragmentTransaction;
 
     move-result-object v2
@@ -131,7 +131,7 @@
     :catch_0
     move-exception v0
 
-    .line 8
+    .line 9
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -148,7 +148,7 @@
 
     invoke-static {v1, v2, v0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 9
+    .line 10
     iget-object v0, p0, Lcom/kakaogame/promotion/StartingPromotionManager$3;->val$dismissLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {v0}, Lcom/kakaogame/util/MutexLock;->unlock()V

@@ -86,7 +86,6 @@
 .method public static synthetic access$000(Lorg/fmod/MediaCodec;)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/fmod/MediaCodec;->mCodecPtr:J
 
     return-wide v0
@@ -95,7 +94,6 @@
 .method public static synthetic access$100(JJ[BII)I
     .locals 0
 
-    .line 1
     invoke-static/range {p0 .. p6}, Lorg/fmod/MediaCodec;->fmodReadAt(JJ[BII)I
 
     move-result p0
@@ -106,7 +104,6 @@
 .method public static synthetic access$200(J)J
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lorg/fmod/MediaCodec;->fmodGetSize(J)J
 
     move-result-wide p0
@@ -125,7 +122,6 @@
 .method public getChannelCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/fmod/MediaCodec;->mChannelCount:I
 
     return v0
@@ -134,7 +130,6 @@
 .method public getLength()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/fmod/MediaCodec;->mLength:J
 
     return-wide v0
@@ -143,7 +138,6 @@
 .method public getSampleRate()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/fmod/MediaCodec;->mSampleRate:I
 
     return v0
@@ -238,7 +232,7 @@
     move-exception p1
 
     .line 9
-    invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     return v1
 
@@ -246,7 +240,7 @@
     move-exception p1
 
     .line 10
-    invoke-virtual {p1}, Ljava/lang/IllegalAccessException;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     return v1
 
@@ -254,7 +248,7 @@
     move-exception p1
 
     .line 11
-    invoke-virtual {p1}, Ljava/lang/NoSuchMethodException;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     return v1
 
@@ -262,7 +256,7 @@
     move-exception p1
 
     .line 12
-    invoke-virtual {p1}, Ljava/lang/ClassNotFoundException;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     return v1
 
@@ -456,7 +450,7 @@
     move-exception p1
 
     .line 33
-    invoke-virtual {p1}, Ljava/io/IOException;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     return v1
 
@@ -472,7 +466,7 @@
     move-exception p1
 
     .line 34
-    invoke-virtual {p1}, Ljava/io/IOException;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     return v1
 .end method
@@ -656,7 +650,7 @@
 
     move-result-object v6
 
-    invoke-static {v6}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {v6}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 17
     :cond_5
@@ -682,7 +676,7 @@
     aget-object v1, v1, v4
 
     .line 21
-    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {v1}, Ljava/nio/Buffer;->remaining()I
 
     move-result v4
 
@@ -698,7 +692,7 @@
     invoke-virtual {v1, v5, v2, v4}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
 
     .line 23
-    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->hasRemaining()Z
+    invoke-virtual {v1}, Ljava/nio/Buffer;->hasRemaining()Z
 
     move-result v5
 

@@ -159,7 +159,6 @@
 .method private isCachedHint(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     instance-of p1, p1, Lio/sentry/hints/Cached;
 
     return p1
@@ -253,7 +252,6 @@
 .method private setCommons(Lio/sentry/SentryBaseEvent;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lio/sentry/MainEventProcessor;->setPlatform(Lio/sentry/SentryBaseEvent;)V
 
     return-void
@@ -836,7 +834,6 @@
     .annotation build Lorg/jetbrains/annotations/VisibleForTesting;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/MainEventProcessor;->hostnameCache:Lio/sentry/HostnameCache;
 
     return-object v0

@@ -1,6 +1,9 @@
-.class public Landroidx/media/MediaBrowserServiceCompat$h;
+.class public final Landroidx/media/MediaBrowserServiceCompat$h;
 .super Ljava/lang/Object;
 .source "MediaBrowserServiceCompat.java"
+
+# interfaces
+.implements Landroidx/media/MediaBrowserServiceCompat$c;
 
 
 # annotations
@@ -9,68 +12,73 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
+    accessFlags = 0x1
     name = "h"
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
 .end annotation
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public a:Landroid/os/Messenger;
 
-.field public b:Z
-
-.field public c:Z
-
-.field public d:I
+.field public final synthetic b:Landroidx/media/MediaBrowserServiceCompat;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;)V
+.method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$h;->b:Landroidx/media/MediaBrowserServiceCompat;
 
-    .line 2
-    iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$h;->a:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Z
+.method public final a()V
+    .locals 2
+
+    new-instance v0, Landroid/os/Messenger;
+
+    iget-object v1, p0, Landroidx/media/MediaBrowserServiceCompat$h;->b:Landroidx/media/MediaBrowserServiceCompat;
+
+    iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat;->h:Landroidx/media/MediaBrowserServiceCompat$l;
+
+    invoke-direct {v0, v1}, Landroid/os/Messenger;-><init>(Landroid/os/Handler;)V
+
+    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$h;->a:Landroid/os/Messenger;
+
+    return-void
+.end method
+
+.method public final d(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/media/MediaBrowserServiceCompat$h;->b:Z
+    invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    if-nez v0, :cond_1
+    move-result-object p1
 
-    iget-boolean v0, p0, Landroidx/media/MediaBrowserServiceCompat$h;->c:Z
+    const-string v0, "android.media.browse.MediaBrowserService"
 
-    if-eqz v0, :cond_0
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    goto :goto_0
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    iget-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$h;->a:Landroid/os/Messenger;
+
+    invoke-virtual {p1}, Landroid/os/Messenger;->getBinder()Landroid/os/IBinder;
+
+    move-result-object p1
+
+    return-object p1
 
     :cond_0
-    const/4 v0, 0x0
+    const/4 p1, 0x0
 
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 v0, 0x1
-
-    :goto_1
-    return v0
+    return-object p1
 .end method

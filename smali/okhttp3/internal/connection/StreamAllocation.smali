@@ -807,7 +807,6 @@
 .method private routeDatabase()Lokhttp3/internal/connection/RouteDatabase;
     .locals 2
 
-    .line 1
     sget-object v0, Lokhttp3/internal/Internal;->instance:Lokhttp3/internal/Internal;
 
     iget-object v1, p0, Lokhttp3/internal/connection/StreamAllocation;->connectionPool:Lokhttp3/ConnectionPool;
@@ -943,7 +942,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/connection/StreamAllocation;->connection:Lokhttp3/internal/connection/RealConnection;
     :try_end_0
@@ -1286,7 +1284,6 @@
 .method public route()Lokhttp3/Route;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/connection/StreamAllocation;->route:Lokhttp3/Route;
 
     return-object v0

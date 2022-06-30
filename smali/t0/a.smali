@@ -1,4 +1,4 @@
-.class public Lt0/a;
+.class public final Lt0/a;
 .super Landroid/widget/ImageView;
 .source "CircleImageView.java"
 
@@ -12,20 +12,20 @@
 
 
 # instance fields
-.field public g:Landroid/view/animation/Animation$AnimationListener;
+.field public f:Landroid/view/animation/Animation$AnimationListener;
 
-.field public h:I
+.field public g:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;I)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 5
 
     .line 1
     invoke-direct {p0, p1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
     .line 2
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
@@ -58,7 +58,7 @@
     float-to-int v2, v2
 
     .line 3
-    iput v2, p0, Lt0/a;->h:I
+    iput v2, p0, Lt0/a;->g:I
 
     .line 4
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -93,7 +93,7 @@
     mul-float p1, p1, v1
 
     .line 6
-    invoke-static {p0, p1}, Lf0/r;->C(Landroid/view/View;F)V
+    invoke-static {p0, p1}, Lf0/r;->H(Landroid/view/View;F)V
 
     goto :goto_1
 
@@ -101,7 +101,7 @@
     :cond_1
     new-instance p1, Lt0/a$a;
 
-    iget v2, p0, Lt0/a;->h:I
+    iget v2, p0, Lt0/a;->g:I
 
     invoke-direct {p1, p0, v2}, Lt0/a$a;-><init>(Lt0/a;I)V
 
@@ -115,14 +115,14 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, v3, p1}, Landroid/widget/ImageView;->setLayerType(ILandroid/graphics/Paint;)V
+    invoke-virtual {p0, v3, p1}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
     .line 10
     invoke-virtual {v2}, Landroid/graphics/drawable/ShapeDrawable;->getPaint()Landroid/graphics/Paint;
 
     move-result-object p1
 
-    iget v3, p0, Lt0/a;->h:I
+    iget v3, p0, Lt0/a;->g:I
 
     int-to-float v3, v3
 
@@ -135,10 +135,10 @@
     invoke-virtual {p1, v3, v1, v0, v4}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
 
     .line 11
-    iget p1, p0, Lt0/a;->h:I
+    iget p1, p0, Lt0/a;->g:I
 
     .line 12
-    invoke-virtual {p0, p1, p1, p1, p1}, Landroid/widget/ImageView;->setPadding(IIII)V
+    invoke-virtual {p0, p1, p1, p1, p1}, Landroid/view/View;->setPadding(IIII)V
 
     move-object v0, v2
 
@@ -148,7 +148,9 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setColor(I)V
+    const v1, -0x50506
+
+    invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 14
     sget-object p1, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -161,19 +163,19 @@
 
 
 # virtual methods
-.method public onAnimationEnd()V
+.method public final onAnimationEnd()V
     .locals 2
 
     .line 1
-    invoke-super {p0}, Landroid/widget/ImageView;->onAnimationEnd()V
+    invoke-super {p0}, Landroid/view/View;->onAnimationEnd()V
 
     .line 2
-    iget-object v0, p0, Lt0/a;->g:Landroid/view/animation/Animation$AnimationListener;
+    iget-object v0, p0, Lt0/a;->f:Landroid/view/animation/Animation$AnimationListener;
 
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getAnimation()Landroid/view/animation/Animation;
+    invoke-virtual {p0}, Landroid/view/View;->getAnimation()Landroid/view/animation/Animation;
 
     move-result-object v1
 
@@ -183,19 +185,19 @@
     return-void
 .end method
 
-.method public onAnimationStart()V
+.method public final onAnimationStart()V
     .locals 2
 
     .line 1
-    invoke-super {p0}, Landroid/widget/ImageView;->onAnimationStart()V
+    invoke-super {p0}, Landroid/view/View;->onAnimationStart()V
 
     .line 2
-    iget-object v0, p0, Lt0/a;->g:Landroid/view/animation/Animation$AnimationListener;
+    iget-object v0, p0, Lt0/a;->f:Landroid/view/animation/Animation$AnimationListener;
 
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getAnimation()Landroid/view/animation/Animation;
+    invoke-virtual {p0}, Landroid/view/View;->getAnimation()Landroid/view/animation/Animation;
 
     move-result-object v1
 
@@ -205,7 +207,7 @@
     return-void
 .end method
 
-.method public onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 1
 
     .line 1
@@ -229,37 +231,37 @@
     if-nez p1, :cond_1
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getMeasuredWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p1
 
-    iget p2, p0, Lt0/a;->h:I
+    iget p2, p0, Lt0/a;->g:I
 
     mul-int/lit8 p2, p2, 0x2
 
     add-int/2addr p2, p1
 
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getMeasuredHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result p1
 
-    iget v0, p0, Lt0/a;->h:I
+    iget v0, p0, Lt0/a;->g:I
 
     mul-int/lit8 v0, v0, 0x2
 
     add-int/2addr v0, p1
 
-    invoke-virtual {p0, p2, v0}, Landroid/widget/ImageView;->setMeasuredDimension(II)V
+    invoke-virtual {p0, p2, v0}, Landroid/view/View;->setMeasuredDimension(II)V
 
     :cond_1
     return-void
 .end method
 
-.method public setBackgroundColor(I)V
+.method public final setBackgroundColor(I)V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getBackground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -268,7 +270,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getBackground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 

@@ -54,7 +54,6 @@
 .method public getRequestUri()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/session/SyncServerRequest;->request:Lcom/kakaogame/server/ServerRequest;
 
     invoke-virtual {v0}, Lcom/kakaogame/server/ServerRequest;->getRequestUri()Ljava/lang/String;
@@ -131,6 +130,7 @@
 
     move-result-object p1
 
+    .line 7
     iget-object p2, p0, Lcom/kakaogame/session/SyncServerRequest;->request:Lcom/kakaogame/server/ServerRequest;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -153,7 +153,7 @@
 
     invoke-static {v1, p1}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
+    .line 8
     iget-object p1, p0, Lcom/kakaogame/session/SyncServerRequest;->lock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {p1}, Lcom/kakaogame/util/MutexLock;->isTimeout()Z
@@ -164,12 +164,12 @@
 
     const/16 p1, 0x7d1
 
-    .line 8
+    .line 9
     invoke-static {p1}, Lcom/kakaogame/server/KeyBaseResult;->getResult(I)Lcom/kakaogame/server/KeyBaseResult;
 
     move-result-object p1
 
-    .line 9
+    .line 10
     iget-object p2, p0, Lcom/kakaogame/session/SyncServerRequest;->request:Lcom/kakaogame/server/ServerRequest;
 
     invoke-static {p1, p2}, Lcom/kakaogame/server/ServerResult;->getServerErrorResult(Lcom/kakaogame/server/KeyBaseResult;Lcom/kakaogame/server/ServerRequest;)Lcom/kakaogame/server/ServerResult;
@@ -181,12 +181,12 @@
     :cond_0
     const/16 p1, 0x7d4
 
-    .line 10
+    .line 11
     invoke-static {p1}, Lcom/kakaogame/server/KeyBaseResult;->getResult(I)Lcom/kakaogame/server/KeyBaseResult;
 
     move-result-object p1
 
-    .line 11
+    .line 12
     iget-object p2, p0, Lcom/kakaogame/session/SyncServerRequest;->request:Lcom/kakaogame/server/ServerRequest;
 
     invoke-static {p1, p2}, Lcom/kakaogame/server/ServerResult;->getServerErrorResult(Lcom/kakaogame/server/KeyBaseResult;Lcom/kakaogame/server/ServerRequest;)Lcom/kakaogame/server/ServerResult;
@@ -195,7 +195,7 @@
 
     return-object p1
 
-    .line 12
+    .line 13
     :cond_1
     iget-object p2, p0, Lcom/kakaogame/session/SyncServerRequest;->request:Lcom/kakaogame/server/ServerRequest;
 
@@ -209,7 +209,6 @@
 .method public getTransactionNo()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/session/SyncServerRequest;->request:Lcom/kakaogame/server/ServerRequest;
 
     invoke-virtual {v0}, Lcom/kakaogame/server/ServerRequest;->getTransactionNo()I

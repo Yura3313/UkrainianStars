@@ -1,763 +1,586 @@
 .class public final Lbe/y;
-.super Lfe/h;
-.source "SlidingWindow.kt"
-
-# interfaces
-.implements Lke/p;
+.super Lbe/v0;
+.source "ProfileStorage.kt"
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lbe/y$a;,
+        Lbe/y$b;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lfe/h;",
-        "Lke/p<",
-        "Lqe/f<",
-        "-",
-        "Ljava/util/List<",
-        "Ljava/lang/Object;",
-        ">;>;",
-        "Lde/d<",
-        "-",
-        "Lae/i;",
-        ">;",
-        "Ljava/lang/Object;",
+        "Lbe/v0<",
+        "Lbe/w;",
         ">;"
     }
 .end annotation
 
-.annotation runtime Lfe/e;
-    c = "kotlin.collections.SlidingWindowKt$windowedIterator$1"
-    f = "SlidingWindow.kt"
-    l = {
-        0x22,
-        0x28,
-        0x31,
-        0x37,
-        0x3a
-    }
-    m = "invokeSuspend"
-.end annotation
+
+# static fields
+.field public static final f:Lbe/y$b;
 
 
 # instance fields
-.field public i:Lqe/f;
+.field public final d:Landroid/content/Context;
 
-.field public j:Ljava/lang/Object;
-
-.field public k:Ljava/lang/Object;
-
-.field public l:Ljava/lang/Object;
-
-.field public m:Ljava/lang/Object;
-
-.field public n:I
-
-.field public o:I
-
-.field public p:I
-
-.field public final synthetic q:I
-
-.field public final synthetic r:I
-
-.field public final synthetic s:Ljava/util/Iterator;
-
-.field public final synthetic t:Z
-
-.field public final synthetic u:Z
+.field public final e:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(IILjava/util/Iterator;ZZLde/d;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput p1, p0, Lbe/y;->q:I
+    new-instance v0, Lbe/y$b;
 
-    iput p2, p0, Lbe/y;->r:I
+    invoke-direct {v0}, Lbe/y$b;-><init>()V
 
-    iput-object p3, p0, Lbe/y;->s:Ljava/util/Iterator;
-
-    iput-boolean p4, p0, Lbe/y;->t:Z
-
-    iput-boolean p5, p0, Lbe/y;->u:Z
-
-    const/4 p1, 0x2
-
-    invoke-direct {p0, p1, p6}, Lfe/h;-><init>(ILde/d;)V
+    sput-object v0, Lbe/y;->f:Lbe/y$b;
 
     return-void
 .end method
 
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-direct {p0}, Lbe/v0;-><init>()V
+
+    iput-object p1, p0, Lbe/y;->d:Landroid/content/Context;
+
+    iput-object p2, p0, Lbe/y;->e:Ljava/lang/String;
+
+    if-eqz p2, :cond_1
+
+    .line 2
+    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    :goto_1
+    if-eqz p1, :cond_2
+
+    goto :goto_2
+
+    .line 3
+    :cond_2
+    new-instance p1, Lbe/e0;
+
+    invoke-direct {p1, p0}, Lbe/e0;-><init>(Lbe/y;)V
+
+    invoke-static {p1}, Lae/u1;->o(Lre/a;)Lze/e0;
+
+    :goto_2
+    return-void
+.end method
+
+.method public static final f(Lbe/y;Ljava/lang/String;)Lze/e0;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    new-instance v0, Lse/q;
+
+    invoke-direct {v0}, Lse/q;-><init>()V
+
+    const/4 v1, 0x0
+
+    iput-object v1, v0, Lse/q;->f:Ljava/lang/Object;
+
+    .line 3
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object v1
+
+    .line 4
+    iget-object v1, v1, Lae/u;->o:Lrc/d0;
+
+    .line 5
+    invoke-virtual {v1, p1}, Lrc/d0;->m(Ljava/lang/String;)Lze/e0;
+
+    move-result-object v1
+
+    .line 6
+    new-instance v2, Lbe/c0;
+
+    invoke-direct {v2, p0, p1, v0}, Lbe/c0;-><init>(Lbe/y;Ljava/lang/String;Lse/q;)V
+
+    invoke-static {v1, v2}, Lae/u1;->q(Lze/e0;Lre/l;)Lze/e0;
+
+    move-result-object p0
+
+    .line 7
+    new-instance p1, Lbe/d0;
+
+    invoke-direct {p1, v0, v1}, Lbe/d0;-><init>(Lse/q;Lze/e0;)V
+
+    invoke-static {p0, p1}, Lae/u1;->h(Lze/e0;Lre/l;)Lze/e0;
+
+    return-object p0
+.end method
+
+.method public static j(Lbe/y;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)Lze/e0;
+    .locals 16
+
+    move-object/from16 v0, p0
+
+    and-int/lit8 v1, p5, 0x1
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
+
+    move-object v1, v2
+
+    goto :goto_0
+
+    :cond_0
+    move-object/from16 v1, p1
+
+    :goto_0
+    and-int/lit8 v3, p5, 0x2
+
+    if-eqz v3, :cond_1
+
+    move-object v13, v2
+
+    goto :goto_1
+
+    :cond_1
+    move-object/from16 v13, p2
+
+    :goto_1
+    and-int/lit8 v3, p5, 0x4
+
+    if-eqz v3, :cond_2
+
+    move-object v14, v2
+
+    goto :goto_2
+
+    :cond_2
+    move-object/from16 v14, p3
+
+    :goto_2
+    and-int/lit8 v3, p5, 0x8
+
+    if-eqz v3, :cond_3
+
+    goto :goto_3
+
+    :cond_3
+    move-object/from16 v2, p4
+
+    .line 1
+    :goto_3
+    invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    new-instance v15, Lbe/y$a$f;
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    const/16 v12, 0x3c
+
+    move-object v3, v15
+
+    move-object v4, v1
+
+    move-object v5, v13
+
+    move-object v10, v14
+
+    move-object v11, v2
+
+    invoke-direct/range {v3 .. v12}, Lbe/y$a$f;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)V
+
+    invoke-virtual {v0, v15}, Lbe/v0;->a(Lbe/a;)V
+
+    .line 3
+    sget-object v3, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v3}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object v3
+
+    .line 4
+    iget-object v3, v3, Lae/u;->o:Lrc/d0;
+
+    .line 5
+    invoke-virtual {v3, v1, v13, v14, v2}, Lrc/d0;->s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lze/e0;
+
+    move-result-object v1
+
+    .line 6
+    new-instance v2, Lbe/g0;
+
+    invoke-direct {v2, v0}, Lbe/g0;-><init>(Lbe/y;)V
+
+    invoke-static {v1, v2}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
+
+    .line 7
+    new-instance v2, Lbe/h0;
+
+    invoke-direct {v2, v0}, Lbe/h0;-><init>(Lbe/y;)V
+
+    invoke-static {v1, v2}, Lae/u1;->c(Lze/e0;Lre/l;)Lze/e0;
+
+    return-object v1
+.end method
+
 
 # virtual methods
-.method public final e(Ljava/lang/Object;Lde/d;)Lde/d;
-    .locals 8
+.method public final c(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    check-cast p1, Lbe/w;
+
+    check-cast p2, Lbe/w;
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    invoke-virtual {p1}, Lbe/w;->b()Lcom/supercell/id/model/IdProfile;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    :cond_0
+    move-object p1, v0
+
+    :goto_0
+    if-eqz p2, :cond_1
+
+    .line 3
+    invoke-virtual {p2}, Lbe/w;->b()Lcom/supercell/id/model/IdProfile;
+
+    move-result-object v0
+
+    .line 4
+    :cond_1
+    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_6
+
+    if-nez v0, :cond_2
+
+    goto :goto_3
+
+    .line 5
+    :cond_2
+    iget-object p1, p0, Lbe/y;->e:Ljava/lang/String;
+
+    if-eqz p1, :cond_4
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result p1
+
+    if-nez p1, :cond_3
+
+    goto :goto_1
+
+    :cond_3
+    const/4 p1, 0x0
+
+    goto :goto_2
+
+    :cond_4
+    :goto_1
+    const/4 p1, 0x1
+
+    :goto_2
+    if-eqz p1, :cond_5
+
+    goto :goto_3
+
+    .line 6
+    :cond_5
+    new-instance p1, Lbe/f0;
+
+    invoke-direct {p1, p0, v0}, Lbe/f0;-><init>(Lbe/y;Lcom/supercell/id/model/IdProfile;)V
+
+    invoke-static {p1}, Lae/u1;->o(Lre/a;)Lze/e0;
+
+    :cond_6
+    :goto_3
+    return-void
+.end method
+
+.method public final g(Ljava/lang/String;)Lze/e0;
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/lang/Object;",
-            "Lde/d<",
-            "*>;)",
-            "Lde/d<",
-            "Lae/i;",
+            "Ljava/lang/String;",
+            ")",
+            "Lze/e0<",
+            "Lie/h;",
             ">;"
         }
     .end annotation
 
-    if-eqz p2, :cond_0
+    const-string v0, "imageId"
 
-    new-instance v7, Lbe/y;
-
-    iget v1, p0, Lbe/y;->q:I
-
-    iget v2, p0, Lbe/y;->r:I
-
-    iget-object v3, p0, Lbe/y;->s:Ljava/util/Iterator;
-
-    iget-boolean v4, p0, Lbe/y;->t:Z
-
-    iget-boolean v5, p0, Lbe/y;->u:Z
-
-    move-object v0, v7
-
-    move-object v6, p2
-
-    invoke-direct/range {v0 .. v6}, Lbe/y;-><init>(IILjava/util/Iterator;ZZLde/d;)V
-
-    check-cast p1, Lqe/f;
-
-    iput-object p1, v7, Lbe/y;->i:Lqe/f;
-
-    return-object v7
-
-    :cond_0
-    const-string p1, "completion"
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    sget-object v0, Lbe/y$a$a;->a:Lbe/y$a$a;
 
-    const/4 p1, 0x0
+    invoke-virtual {p0, v0}, Lbe/v0;->a(Lbe/a;)V
 
-    throw p1
+    .line 2
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object v0
+
+    .line 3
+    iget-object v0, v0, Lae/u;->o:Lrc/d0;
+
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-virtual {v0, p1, v1}, Lrc/d0;->h(Ljava/lang/String;Z)Lze/e0;
+
+    move-result-object p1
+
+    .line 5
+    new-instance v0, Lbe/y$c;
+
+    invoke-direct {v0, p0}, Lbe/y$c;-><init>(Lbe/y;)V
+
+    invoke-static {p1, v0}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+
+    move-result-object p1
+
+    .line 6
+    sget-object v0, Lbe/y$d;->f:Lbe/y$d;
+
+    invoke-static {p1, v0}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+
+    move-result-object p1
+
+    .line 7
+    new-instance v0, Lbe/y$e;
+
+    invoke-direct {v0, p0}, Lbe/y$e;-><init>(Lbe/y;)V
+
+    invoke-static {p1, v0}, Lae/u1;->c(Lze/e0;Lre/l;)Lze/e0;
+
+    return-object p1
 .end method
 
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 19
+.method public final h(Ljava/lang/String;Ljava/lang/String;Z)Lze/e0;
+    .locals 14
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Z)",
+            "Lze/e0<",
+            "Lie/h;",
+            ">;"
+        }
+    .end annotation
 
-    move-object/from16 v0, p0
+    move-object v0, p0
 
-    sget-object v1, Lee/a;->g:Lee/a;
+    move-object v11, p1
+
+    const-string v1, "imageId"
+
+    invoke-static {p1, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v1, "imageUrl"
+
+    move-object/from16 v6, p2
+
+    invoke-static {v6, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p3, :cond_0
 
     .line 1
-    iget v2, v0, Lbe/y;->p:I
+    new-instance v12, Lbe/y$a$f;
 
-    const/4 v3, 0x2
+    const/4 v2, 0x0
 
-    const/4 v4, 0x3
+    const/4 v3, 0x0
 
-    const/4 v5, 0x4
+    const/4 v4, 0x0
 
-    const/4 v6, 0x5
+    const/4 v5, 0x0
 
-    const/4 v7, 0x0
+    const/4 v8, 0x0
 
-    const/4 v8, 0x1
+    const/4 v9, 0x0
 
-    if-eqz v2, :cond_5
+    const/16 v10, 0xcf
 
-    if-eq v2, v8, :cond_4
+    move-object v1, v12
 
-    if-eq v2, v3, :cond_3
+    move-object/from16 v6, p2
 
-    if-eq v2, v4, :cond_2
+    move-object v7, p1
 
-    if-eq v2, v5, :cond_1
+    invoke-direct/range {v1 .. v10}, Lbe/y$a$f;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)V
 
-    if-ne v2, v6, :cond_0
-
-    iget-object v1, v0, Lbe/y;->k:Ljava/lang/Object;
-
-    check-cast v1, Lbe/v;
+    invoke-virtual {p0, v12}, Lbe/v0;->a(Lbe/a;)V
 
     goto :goto_0
 
     .line 2
     :cond_0
-    new-instance v1, Ljava/lang/IllegalStateException;
+    new-instance v12, Lbe/y$a$f;
 
-    const-string v2, "call to \'resume\' before \'invoke\' with coroutine"
+    const/4 v2, 0x0
 
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 3
-    :cond_1
-    iget-object v2, v0, Lbe/y;->k:Ljava/lang/Object;
-
-    check-cast v2, Lbe/v;
-
-    iget v3, v0, Lbe/y;->o:I
-
-    iget v4, v0, Lbe/y;->n:I
-
-    iget-object v7, v0, Lbe/y;->j:Ljava/lang/Object;
-
-    check-cast v7, Lqe/f;
-
-    invoke-static/range {p1 .. p1}, Lcom/android/billingclient/api/v;->e(Ljava/lang/Object;)V
-
-    move-object v12, v0
-
-    const/4 v6, 0x4
-
-    goto/16 :goto_f
-
-    :cond_2
-    iget-object v2, v0, Lbe/y;->m:Ljava/lang/Object;
-
-    check-cast v2, Ljava/util/Iterator;
-
-    iget-object v3, v0, Lbe/y;->k:Ljava/lang/Object;
-
-    check-cast v3, Lbe/v;
-
-    iget v9, v0, Lbe/y;->o:I
-
-    iget v10, v0, Lbe/y;->n:I
-
-    iget-object v11, v0, Lbe/y;->j:Ljava/lang/Object;
-
-    check-cast v11, Lqe/f;
-
-    invoke-static/range {p1 .. p1}, Lcom/android/billingclient/api/v;->e(Ljava/lang/Object;)V
-
-    move-object v12, v0
-
-    goto/16 :goto_b
-
-    :cond_3
-    iget-object v1, v0, Lbe/y;->k:Ljava/lang/Object;
-
-    check-cast v1, Ljava/util/ArrayList;
-
-    :goto_0
-    iget-object v1, v0, Lbe/y;->j:Ljava/lang/Object;
-
-    check-cast v1, Lqe/f;
-
-    invoke-static/range {p1 .. p1}, Lcom/android/billingclient/api/v;->e(Ljava/lang/Object;)V
-
-    goto/16 :goto_10
-
-    :cond_4
-    iget-object v2, v0, Lbe/y;->m:Ljava/lang/Object;
-
-    check-cast v2, Ljava/util/Iterator;
-
-    iget-object v4, v0, Lbe/y;->k:Ljava/lang/Object;
-
-    check-cast v4, Ljava/util/ArrayList;
-
-    iget v5, v0, Lbe/y;->o:I
-
-    iget v6, v0, Lbe/y;->n:I
-
-    iget-object v7, v0, Lbe/y;->j:Ljava/lang/Object;
-
-    check-cast v7, Lqe/f;
-
-    invoke-static/range {p1 .. p1}, Lcom/android/billingclient/api/v;->e(Ljava/lang/Object;)V
-
-    move-object v9, v0
-
-    move v11, v5
-
-    move-object v5, v7
-
-    goto :goto_3
-
-    :cond_5
-    invoke-static/range {p1 .. p1}, Lcom/android/billingclient/api/v;->e(Ljava/lang/Object;)V
-
-    iget-object v2, v0, Lbe/y;->i:Lqe/f;
-
-    .line 4
-    iget v9, v0, Lbe/y;->q:I
-
-    const/16 v10, 0x400
-
-    if-le v9, v10, :cond_6
-
-    goto :goto_1
-
-    :cond_6
-    move v10, v9
-
-    .line 5
-    :goto_1
-    iget v11, v0, Lbe/y;->r:I
-
-    sub-int/2addr v11, v9
-
-    if-ltz v11, :cond_d
-
-    .line 6
-    new-instance v4, Ljava/util/ArrayList;
-
-    invoke-direct {v4, v10}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 7
-    iget-object v5, v0, Lbe/y;->s:Ljava/util/Iterator;
-
-    move-object v9, v0
-
-    move v6, v10
-
-    move-object/from16 v18, v5
-
-    move-object v5, v2
-
-    move-object/from16 v2, v18
-
-    :cond_7
-    :goto_2
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v10
-
-    if-eqz v10, :cond_b
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v10
-
-    if-lez v7, :cond_8
-
-    add-int/lit8 v7, v7, -0x1
-
-    goto :goto_2
-
-    .line 8
-    :cond_8
-    invoke-virtual {v4, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 9
-    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
-
-    move-result v12
-
-    iget v13, v9, Lbe/y;->q:I
-
-    if-ne v12, v13, :cond_7
-
-    .line 10
-    iput-object v5, v9, Lbe/y;->j:Ljava/lang/Object;
-
-    iput v6, v9, Lbe/y;->n:I
-
-    iput v11, v9, Lbe/y;->o:I
-
-    iput-object v4, v9, Lbe/y;->k:Ljava/lang/Object;
-
-    iput-object v10, v9, Lbe/y;->l:Ljava/lang/Object;
-
-    iput-object v2, v9, Lbe/y;->m:Ljava/lang/Object;
-
-    iput v8, v9, Lbe/y;->p:I
-
-    invoke-virtual {v5, v4, v9}, Lqe/f;->d(Ljava/lang/Object;Lde/d;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    if-ne v7, v1, :cond_9
-
-    return-object v1
-
-    .line 11
-    :cond_9
-    :goto_3
-    iget-boolean v7, v9, Lbe/y;->t:Z
-
-    if-eqz v7, :cond_a
-
-    invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
-
-    goto :goto_4
-
-    :cond_a
-    new-instance v4, Ljava/util/ArrayList;
-
-    iget v7, v9, Lbe/y;->q:I
-
-    invoke-direct {v4, v7}, Ljava/util/ArrayList;-><init>(I)V
-
-    :goto_4
-    move v7, v11
-
-    goto :goto_2
-
-    .line 12
-    :cond_b
-    invoke-interface {v4}, Ljava/util/Collection;->isEmpty()Z
-
-    move-result v2
-
-    xor-int/2addr v2, v8
-
-    if-eqz v2, :cond_1b
-
-    .line 13
-    iget-boolean v2, v9, Lbe/y;->u:Z
-
-    if-nez v2, :cond_c
-
-    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
-
-    move-result v2
-
-    iget v7, v9, Lbe/y;->q:I
-
-    if-ne v2, v7, :cond_1b
-
-    :cond_c
-    iput-object v5, v9, Lbe/y;->j:Ljava/lang/Object;
-
-    iput v6, v9, Lbe/y;->n:I
-
-    iput v11, v9, Lbe/y;->o:I
-
-    iput-object v4, v9, Lbe/y;->k:Ljava/lang/Object;
-
-    iput v3, v9, Lbe/y;->p:I
-
-    invoke-virtual {v5, v4, v9}, Lqe/f;->d(Ljava/lang/Object;Lde/d;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-ne v2, v1, :cond_1b
-
-    return-object v1
-
-    .line 14
-    :cond_d
-    new-instance v3, Lbe/v;
-
-    .line 15
-    new-array v9, v10, [Ljava/lang/Object;
-
-    invoke-direct {v3, v9, v7}, Lbe/v;-><init>([Ljava/lang/Object;I)V
-
-    .line 16
-    iget-object v9, v0, Lbe/y;->s:Ljava/util/Iterator;
-
-    move-object v12, v0
-
-    move/from16 v18, v11
-
-    move-object v11, v2
-
-    move-object v2, v9
-
-    move/from16 v9, v18
-
-    :goto_5
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v13
-
-    if-eqz v13, :cond_17
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v13
-
-    .line 17
-    iget v14, v3, Lbe/v;->i:I
-
-    .line 18
-    iget v15, v3, Lbe/v;->g:I
-
-    if-ne v14, v15, :cond_e
-
-    const/16 v16, 0x1
-
-    goto :goto_6
-
-    :cond_e
-    const/16 v16, 0x0
-
-    :goto_6
-    if-nez v16, :cond_16
-
-    .line 19
-    iget-object v7, v3, Lbe/v;->j:[Ljava/lang/Object;
-
-    iget v6, v3, Lbe/v;->h:I
-
-    add-int v17, v14, v6
-
-    .line 20
-    rem-int v17, v17, v15
-
-    aput-object v13, v7, v17
-
-    add-int/lit8 v14, v14, 0x1
-
-    .line 21
-    iput v14, v3, Lbe/v;->i:I
-
-    if-ne v14, v15, :cond_f
-
-    const/16 v17, 0x1
-
-    goto :goto_7
-
-    :cond_f
-    const/16 v17, 0x0
-
-    :goto_7
-    if-eqz v17, :cond_15
-
-    .line 22
-    iget v5, v12, Lbe/y;->q:I
-
-    if-ge v14, v5, :cond_12
-
-    shr-int/lit8 v13, v15, 0x1
-
-    add-int/2addr v15, v13
-
-    add-int/2addr v15, v8
-
-    if-le v15, v5, :cond_10
-
-    goto :goto_8
-
-    :cond_10
-    move v5, v15
-
-    :goto_8
-    if-nez v6, :cond_11
-
-    .line 23
-    invoke-static {v7, v5}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
-
-    move-result-object v5
-
-    const-string v6, "java.util.Arrays.copyOf(this, newSize)"
-
-    invoke-static {v5, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto :goto_9
-
-    :cond_11
-    new-array v5, v5, [Ljava/lang/Object;
-
-    invoke-virtual {v3, v5}, Lbe/v;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object v5
-
-    .line 24
-    :goto_9
-    new-instance v6, Lbe/v;
-
-    .line 25
-    iget v3, v3, Lbe/v;->i:I
-
-    .line 26
-    invoke-direct {v6, v5, v3}, Lbe/v;-><init>([Ljava/lang/Object;I)V
-
-    move-object v3, v6
-
-    goto :goto_c
-
-    .line 27
-    :cond_12
-    iget-boolean v5, v12, Lbe/y;->t:Z
-
-    if-eqz v5, :cond_13
-
-    move-object v5, v3
-
-    goto :goto_a
-
-    :cond_13
-    new-instance v5, Ljava/util/ArrayList;
-
-    invoke-direct {v5, v3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    :goto_a
-    iput-object v11, v12, Lbe/y;->j:Ljava/lang/Object;
-
-    iput v10, v12, Lbe/y;->n:I
-
-    iput v9, v12, Lbe/y;->o:I
-
-    iput-object v3, v12, Lbe/y;->k:Ljava/lang/Object;
-
-    iput-object v13, v12, Lbe/y;->l:Ljava/lang/Object;
-
-    iput-object v2, v12, Lbe/y;->m:Ljava/lang/Object;
-
-    iput v4, v12, Lbe/y;->p:I
-
-    invoke-virtual {v11, v5, v12}, Lqe/f;->d(Ljava/lang/Object;Lde/d;)Ljava/lang/Object;
-
-    move-result-object v5
-
-    if-ne v5, v1, :cond_14
-
-    return-object v1
-
-    .line 28
-    :cond_14
-    :goto_b
-    iget v5, v12, Lbe/y;->r:I
-
-    invoke-virtual {v3, v5}, Lbe/v;->c(I)V
-
-    :goto_c
-    const/4 v5, 0x4
-
-    :cond_15
-    const/4 v6, 0x5
+    const/4 v3, 0x0
 
     const/4 v7, 0x0
 
-    goto :goto_5
+    const/4 v8, 0x0
 
-    .line 29
-    :cond_16
-    new-instance v1, Ljava/lang/IllegalStateException;
+    const/4 v9, 0x0
 
-    const-string v2, "ring buffer is full"
+    const/4 v10, 0x0
 
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    const/16 v13, 0xf3
 
-    throw v1
+    move-object v1, v12
 
-    .line 30
-    :cond_17
-    iget-boolean v2, v12, Lbe/y;->u:Z
+    move-object/from16 v4, p2
 
-    if-eqz v2, :cond_1b
+    move-object v5, p1
 
-    move-object v2, v3
+    move-object v6, v7
 
-    move v3, v9
+    move-object v7, v8
 
-    move v4, v10
+    move-object v8, v9
 
-    move-object v7, v11
+    move-object v9, v10
 
-    .line 31
-    :goto_d
-    iget v5, v2, Lbe/v;->i:I
+    move v10, v13
 
-    .line 32
-    iget v6, v12, Lbe/y;->r:I
+    invoke-direct/range {v1 .. v10}, Lbe/y$a$f;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)V
 
-    if-le v5, v6, :cond_1a
+    invoke-virtual {p0, v12}, Lbe/v0;->a(Lbe/a;)V
 
-    .line 33
-    iget-boolean v5, v12, Lbe/y;->t:Z
+    .line 3
+    :goto_0
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    if-eqz v5, :cond_18
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    move-object v5, v2
+    move-result-object v1
 
-    goto :goto_e
+    .line 4
+    iget-object v1, v1, Lae/u;->o:Lrc/d0;
 
-    :cond_18
-    new-instance v5, Ljava/util/ArrayList;
+    const/4 v2, 0x1
 
-    invoke-direct {v5, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    .line 5
+    invoke-virtual {v1, p1, v2}, Lrc/d0;->h(Ljava/lang/String;Z)Lze/e0;
 
-    :goto_e
-    iput-object v7, v12, Lbe/y;->j:Ljava/lang/Object;
+    move-result-object v1
 
-    iput v4, v12, Lbe/y;->n:I
+    .line 6
+    new-instance v2, Lbe/y$f;
 
-    iput v3, v12, Lbe/y;->o:I
+    invoke-direct {v2, p0}, Lbe/y$f;-><init>(Lbe/y;)V
 
-    iput-object v2, v12, Lbe/y;->k:Ljava/lang/Object;
+    invoke-static {v1, v2}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
 
-    const/4 v6, 0x4
+    move-result-object v1
 
-    iput v6, v12, Lbe/y;->p:I
+    .line 7
+    sget-object v2, Lbe/y$g;->f:Lbe/y$g;
 
-    invoke-virtual {v7, v5, v12}, Lqe/f;->d(Ljava/lang/Object;Lde/d;)Ljava/lang/Object;
+    invoke-static {v1, v2}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
 
-    move-result-object v5
+    move-result-object v1
 
-    if-ne v5, v1, :cond_19
+    .line 8
+    new-instance v2, Lbe/y$h;
 
-    return-object v1
+    invoke-direct {v2, p0}, Lbe/y$h;-><init>(Lbe/y;)V
 
-    .line 34
-    :cond_19
-    :goto_f
-    iget v5, v12, Lbe/y;->r:I
-
-    invoke-virtual {v2, v5}, Lbe/v;->c(I)V
-
-    goto :goto_d
-
-    .line 35
-    :cond_1a
-    invoke-virtual {v2}, Lbe/a;->isEmpty()Z
-
-    move-result v5
-
-    xor-int/2addr v5, v8
-
-    if-eqz v5, :cond_1b
-
-    iput-object v7, v12, Lbe/y;->j:Ljava/lang/Object;
-
-    iput v4, v12, Lbe/y;->n:I
-
-    iput v3, v12, Lbe/y;->o:I
-
-    iput-object v2, v12, Lbe/y;->k:Ljava/lang/Object;
-
-    const/4 v3, 0x5
-
-    iput v3, v12, Lbe/y;->p:I
-
-    invoke-virtual {v7, v2, v12}, Lqe/f;->d(Ljava/lang/Object;Lde/d;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-ne v2, v1, :cond_1b
-
-    return-object v1
-
-    .line 36
-    :cond_1b
-    :goto_10
-    sget-object v1, Lae/i;->a:Lae/i;
+    invoke-static {v1, v2}, Lae/u1;->c(Lze/e0;Lre/l;)Lze/e0;
 
     return-object v1
 .end method
 
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final i()Lze/e0;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lze/e0<",
+            "Lcom/supercell/id/model/IdProfile;",
+            ">;"
+        }
+    .end annotation
 
-    check-cast p2, Lde/d;
+    .line 1
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p0, p1, p2}, Lbe/y;->e(Ljava/lang/Object;Lde/d;)Lde/d;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    move-result-object p1
+    move-result-object v0
 
-    check-cast p1, Lbe/y;
+    .line 2
+    iget-object v0, v0, Lae/u;->o:Lrc/d0;
 
-    sget-object p2, Lae/i;->a:Lae/i;
+    .line 3
+    invoke-virtual {v0}, Lrc/d0;->k()Lze/e0;
 
-    invoke-virtual {p1, p2}, Lbe/y;->f(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v0
 
-    move-result-object p1
+    .line 4
+    new-instance v1, Lbe/y$i;
 
-    return-object p1
+    invoke-direct {v1, p0}, Lbe/y$i;-><init>(Lbe/y;)V
+
+    invoke-static {v0, v1}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
+
+    return-object v0
 .end method

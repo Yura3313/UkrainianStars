@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/idp/KGKakao2Auth$9;->val$idpLoginLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lae/i;
+.method public invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lie/h;
     .locals 2
 
     const-string v0, "KGKakao2Auth"
@@ -134,7 +133,7 @@
 
     .line 12
     :goto_1
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
 .end method
@@ -147,7 +146,7 @@
 
     check-cast p2, Ljava/lang/Throwable;
 
-    invoke-virtual {p0, p1, p2}, Lcom/kakaogame/idp/KGKakao2Auth$9;->invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lae/i;
+    invoke-virtual {p0, p1, p2}, Lcom/kakaogame/idp/KGKakao2Auth$9;->invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lie/h;
 
     move-result-object p1
 

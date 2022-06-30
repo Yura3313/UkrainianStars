@@ -45,7 +45,6 @@
 .method public static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/util/Random;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -130,7 +129,7 @@
     const-string v0, "uri"
 
     .line 2
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -139,7 +138,7 @@
     const-string v1, "method"
 
     .line 3
-    invoke-virtual {p0, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -148,7 +147,7 @@
     const-string v2, "header"
 
     .line 4
-    invoke-virtual {p0, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -157,7 +156,7 @@
     const-string v3, "body"
 
     .line 5
-    invoke-virtual {p0, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -201,7 +200,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/server/ServerRequest;->body:Ljava/util/Map;
 
     return-object v0
@@ -219,7 +217,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/server/ServerRequest;->header:Ljava/util/Map;
 
     return-object v0
@@ -228,7 +225,6 @@
 .method public getMethod()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/server/ServerRequest;->method:Ljava/lang/String;
 
     return-object v0
@@ -246,17 +242,17 @@
     .line 2
     iget-object v1, p0, Lcom/kakaogame/server/ServerRequest;->requestUri:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
     .line 3
     iget-object v1, p0, Lcom/kakaogame/server/ServerRequest;->header:Ljava/util/Map;
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
     .line 4
     iget-object v1, p0, Lcom/kakaogame/server/ServerRequest;->body:Ljava/util/Map;
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
     .line 5
     invoke-virtual {v0}, Lcom/kakaogame/util/json/JSONArray;->toJSONString()Ljava/lang/String;
@@ -271,7 +267,7 @@
     move-exception v0
 
     .line 6
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -287,7 +283,6 @@
 .method public getRequestUri()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/server/ServerRequest;->requestUri:Ljava/lang/String;
 
     return-object v0
@@ -296,7 +291,6 @@
 .method public getTimeout()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/server/ServerRequest;->timeout:J
 
     return-wide v0
@@ -352,7 +346,6 @@
 .method public isIgnoreTimeout()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/kakaogame/server/ServerRequest;->ignoreTimeout:Z
 
     return v0
@@ -374,7 +367,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/kakaogame/server/ServerRequest;->body:Ljava/util/Map;
 
@@ -399,7 +391,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/kakaogame/server/ServerRequest;->header:Ljava/util/Map;
 
@@ -473,7 +464,6 @@
 .method public setIgnoreTimeout(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/server/ServerRequest;->ignoreTimeout:Z
 
     return-void
@@ -501,7 +491,6 @@
 .method public setTimeout(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/kakaogame/server/ServerRequest;->timeout:J
 
     return-void

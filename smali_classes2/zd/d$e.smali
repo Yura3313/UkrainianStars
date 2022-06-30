@@ -1,98 +1,66 @@
 .class public final Lzd/d$e;
-.super Lzd/d$g;
-.source "-ViewPumpLayoutInflater.kt"
+.super Ljava/lang/Object;
+.source "YoungPlayerRegisterEnterEmailPageFragment.kt"
+
+# interfaces
+.implements Landroid/text/TextWatcher;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lzd/d;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lzd/d;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = "e"
+    name = null
 .end annotation
 
 
 # instance fields
-.field public final h:Lzd/d$f;
+.field public final synthetic f:Lzd/d;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/LayoutInflater$Factory2;Lzd/d;)V
-    .locals 1
+.method public constructor <init>(Lzd/d;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
-    .line 1
-    invoke-direct {p0, p1}, Lzd/d$g;-><init>(Landroid/view/LayoutInflater$Factory2;)V
+    iput-object p1, p0, Lzd/d$e;->f:Lzd/d;
 
-    .line 2
-    new-instance v0, Lzd/d$f;
-
-    invoke-direct {v0, p1, p2}, Lzd/d$f;-><init>(Landroid/view/LayoutInflater$Factory2;Lzd/d;)V
-
-    iput-object v0, p0, Lzd/d$e;->h:Lzd/d$f;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onCreateView(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
-    .locals 8
-
-    const/4 v0, 0x0
-
-    if-eqz p2, :cond_1
-
-    if-eqz p3, :cond_0
+.method public final afterTextChanged(Landroid/text/Editable;)V
+    .locals 1
 
     .line 1
-    sget-object v0, Lyd/e;->g:Lyd/e;
+    iget-object p1, p0, Lzd/d$e;->f:Lzd/d;
 
-    invoke-static {}, Lyd/e;->a()Lyd/e;
-
-    move-result-object v0
+    sget v0, Lzd/d;->f0:I
 
     .line 2
-    new-instance v7, Lyd/b;
+    invoke-virtual {p1}, Lzd/d;->X0()V
 
-    .line 3
-    iget-object v6, p0, Lzd/d$e;->h:Lzd/d$f;
+    return-void
+.end method
 
-    move-object v1, v7
+.method public final beforeTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
 
-    move-object v2, p2
+    return-void
+.end method
 
-    move-object v3, p3
+.method public final onTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
 
-    move-object v4, p4
-
-    move-object v5, p1
-
-    .line 4
-    invoke-direct/range {v1 .. v6}, Lyd/b;-><init>(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;Landroid/view/View;Lyd/a;)V
-
-    invoke-virtual {v0, v7}, Lyd/e;->b(Lyd/b;)Lyd/c;
-
-    move-result-object p1
-
-    .line 5
-    iget-object p1, p1, Lyd/c;->a:Landroid/view/View;
-
-    return-object p1
-
-    :cond_0
-    const-string p1, "context"
-
-    .line 6
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "name"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return-void
 .end method

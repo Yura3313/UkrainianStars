@@ -29,7 +29,6 @@
 .method public constructor <init>(Lcom/kakaogame/core/CoreManager;JLjava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/CoreManager$3;->this$0:Lcom/kakaogame/core/CoreManager;
 
     iput-wide p2, p0, Lcom/kakaogame/core/CoreManager$3;->val$endTime:J

@@ -39,7 +39,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakao/sdk/partner/auth/Constants;
 
     invoke-direct {v0}, Lcom/kakao/sdk/partner/auth/Constants;-><init>()V
@@ -52,7 +51,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

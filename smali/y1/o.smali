@@ -1,40 +1,36 @@
 .class public final Ly1/o;
-.super Ly1/l;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.super Lcom/google/android/gms/auth/api/signin/internal/zzc;
+.source "com.google.android.gms:play-services-auth@@19.0.0"
 
 
 # instance fields
-.field public final i:[B
+.field public final synthetic f:Ly1/l;
 
 
 # direct methods
-.method public constructor <init>([B)V
-    .locals 2
+.method public constructor <init>(Ly1/l;)V
+    .locals 0
 
-    const/4 v0, 0x0
+    iput-object p1, p0, Ly1/o;->f:Ly1/l;
 
-    const/16 v1, 0x19
-
-    .line 1
-    invoke-static {p1, v0, v1}, Ljava/util/Arrays;->copyOfRange([BII)[B
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Ly1/l;-><init>([B)V
-
-    .line 2
-    iput-object p1, p0, Ly1/o;->i:[B
+    invoke-direct {p0}, Lcom/google/android/gms/auth/api/signin/internal/zzc;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final Q0()[B
+.method public final g2(Lcom/google/android/gms/common/api/Status;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Ly1/o;->i:[B
+    iget-object v0, p0, Ly1/o;->f:Ly1/l;
 
-    return-object v0
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->g(La2/g;)V
+
+    return-void
 .end method

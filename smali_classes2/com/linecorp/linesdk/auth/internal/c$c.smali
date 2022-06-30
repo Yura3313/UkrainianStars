@@ -30,10 +30,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/linecorp/linesdk/auth/internal/c;B)V
+.method public constructor <init>(Lcom/linecorp/linesdk/auth/internal/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/linecorp/linesdk/auth/internal/c$c;->a:Lcom/linecorp/linesdk/auth/internal/c;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -137,7 +136,7 @@
     iget-object v1, v0, Lcom/linecorp/linesdk/auth/internal/c;->h:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 5
-    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->j:I
+    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->i:I
 
     .line 6
     iget-object v0, v0, Lcom/linecorp/linesdk/auth/internal/c;->a:Lcom/linecorp/linesdk/auth/internal/LineAuthenticationActivity;
@@ -166,7 +165,7 @@
     iget-object v3, v1, Lcom/linecorp/linesdk/auth/internal/c;->h:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 11
-    iput-object p1, v3, Lcom/linecorp/linesdk/auth/internal/d;->g:Lcom/linecorp/linesdk/a/f;
+    iput-object p1, v3, Lcom/linecorp/linesdk/auth/internal/d;->f:Lcom/linecorp/linesdk/a/f;
 
     .line 12
     :try_start_0
@@ -190,7 +189,7 @@
 
     invoke-direct {v8}, Ljava/security/SecureRandom;-><init>()V
 
-    invoke-virtual {v8}, Ljava/security/SecureRandom;->nextLong()J
+    invoke-virtual {v8}, Ljava/util/Random;->nextLong()J
 
     move-result-wide v8
 
@@ -226,7 +225,7 @@
     iget-object v3, v3, Lcom/linecorp/linesdk/auth/internal/a;->a:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 20
-    iput-object v6, v3, Lcom/linecorp/linesdk/auth/internal/d;->i:Ljava/lang/String;
+    iput-object v6, v3, Lcom/linecorp/linesdk/auth/internal/d;->h:Ljava/lang/String;
 
     .line 21
     new-instance v3, Ljava/lang/StringBuilder;
@@ -385,7 +384,7 @@
     .line 42
     new-instance p1, Lcom/linecorp/linesdk/auth/internal/a$a;
 
-    invoke-direct {p1, v5, v8, v10}, Lcom/linecorp/linesdk/auth/internal/a$a;-><init>(Landroid/content/Intent;Landroid/os/Bundle;Z)V
+    invoke-direct {p1, v5, v10}, Lcom/linecorp/linesdk/auth/internal/a$a;-><init>(Landroid/content/Intent;Z)V
 
     goto/16 :goto_4
 
@@ -458,7 +457,7 @@
     .line 49
     new-instance p1, Lcom/linecorp/linesdk/auth/internal/a$a;
 
-    invoke-direct {p1, v1, v8, v7}, Lcom/linecorp/linesdk/auth/internal/a$a;-><init>(Landroid/content/Intent;Landroid/os/Bundle;Z)V
+    invoke-direct {p1, v1, v7}, Lcom/linecorp/linesdk/auth/internal/a$a;-><init>(Landroid/content/Intent;Z)V
 
     goto :goto_4
 
@@ -513,7 +512,7 @@
 
     check-cast v0, Landroid/content/Intent;
 
-    invoke-direct {p1, v0, v8, v10}, Lcom/linecorp/linesdk/auth/internal/a$a;-><init>(Landroid/content/Intent;Landroid/os/Bundle;Z)V
+    invoke-direct {p1, v0, v10}, Lcom/linecorp/linesdk/auth/internal/a$a;-><init>(Landroid/content/Intent;Z)V
 
     goto :goto_4
 
@@ -550,7 +549,7 @@
     .line 59
     new-instance v0, Lcom/linecorp/linesdk/auth/internal/a$a;
 
-    invoke-direct {v0, p1, v8, v10}, Lcom/linecorp/linesdk/auth/internal/a$a;-><init>(Landroid/content/Intent;Landroid/os/Bundle;Z)V
+    invoke-direct {v0, p1, v10}, Lcom/linecorp/linesdk/auth/internal/a$a;-><init>(Landroid/content/Intent;Z)V
 
     move-object p1, v0
 
@@ -570,7 +569,7 @@
     iget-object p1, p1, Lcom/linecorp/linesdk/auth/internal/c;->a:Lcom/linecorp/linesdk/auth/internal/LineAuthenticationActivity;
 
     .line 64
-    invoke-virtual {p1, v0, v8}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;Landroid/os/Bundle;)V
+    invoke-virtual {p1, v0, v8}, Landroid/content/Context;->startActivity(Landroid/content/Intent;Landroid/os/Bundle;)V
 
     goto :goto_5
 
@@ -594,7 +593,7 @@
     iget-object p1, p1, Lcom/linecorp/linesdk/auth/internal/c;->h:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 70
-    iput-object v3, p1, Lcom/linecorp/linesdk/auth/internal/d;->h:Ljava/lang/String;
+    iput-object v3, p1, Lcom/linecorp/linesdk/auth/internal/d;->g:Ljava/lang/String;
 
     return-void
 
@@ -630,7 +629,7 @@
     iget-object v1, v0, Lcom/linecorp/linesdk/auth/internal/c;->h:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 74
-    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->j:I
+    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->i:I
 
     .line 75
     iget-object v0, v0, Lcom/linecorp/linesdk/auth/internal/c;->a:Lcom/linecorp/linesdk/auth/internal/LineAuthenticationActivity;

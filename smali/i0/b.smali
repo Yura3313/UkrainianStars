@@ -1,4 +1,4 @@
-.class public Li0/b;
+.class public final Li0/b;
 .super Landroid/widget/Filter;
 .source "CursorFilter.java"
 
@@ -30,30 +30,29 @@
 
 
 # virtual methods
-.method public convertResultToString(Ljava/lang/Object;)Ljava/lang/CharSequence;
+.method public final convertResultToString(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Li0/b;->a:Li0/b$a;
 
     check-cast p1, Landroid/database/Cursor;
 
-    check-cast v0, Landroidx/appcompat/widget/c0;
+    check-cast v0, Landroidx/appcompat/widget/b0;
 
-    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/c0;->c(Landroid/database/Cursor;)Ljava/lang/CharSequence;
+    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/b0;->d(Landroid/database/Cursor;)Ljava/lang/CharSequence;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public performFiltering(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;
-    .locals 4
+.method public final performFiltering(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;
+    .locals 3
 
     .line 1
     iget-object v0, p0, Li0/b;->a:Li0/b$a;
 
-    check-cast v0, Landroidx/appcompat/widget/c0;
+    check-cast v0, Landroidx/appcompat/widget/b0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -71,9 +70,9 @@
 
     .line 3
     :goto_0
-    iget-object v1, v0, Landroidx/appcompat/widget/c0;->r:Landroidx/appcompat/widget/SearchView;
+    iget-object v1, v0, Landroidx/appcompat/widget/b0;->q:Landroidx/appcompat/widget/SearchView;
 
-    invoke-virtual {v1}, Landroid/view/ViewGroup;->getVisibility()I
+    invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
 
     move-result v1
 
@@ -81,10 +80,10 @@
 
     if-nez v1, :cond_2
 
-    iget-object v1, v0, Landroidx/appcompat/widget/c0;->r:Landroidx/appcompat/widget/SearchView;
+    iget-object v1, v0, Landroidx/appcompat/widget/b0;->q:Landroidx/appcompat/widget/SearchView;
 
     .line 4
-    invoke-virtual {v1}, Landroid/view/ViewGroup;->getWindowVisibility()I
+    invoke-virtual {v1}, Landroid/view/View;->getWindowVisibility()I
 
     move-result v1
 
@@ -95,11 +94,9 @@
     .line 5
     :cond_1
     :try_start_0
-    iget-object v1, v0, Landroidx/appcompat/widget/c0;->s:Landroid/app/SearchableInfo;
+    iget-object v1, v0, Landroidx/appcompat/widget/b0;->r:Landroid/app/SearchableInfo;
 
-    const/16 v3, 0x32
-
-    invoke-virtual {v0, v1, p1, v3}, Landroidx/appcompat/widget/c0;->g(Landroid/app/SearchableInfo;Ljava/lang/String;I)Landroid/database/Cursor;
+    invoke-virtual {v0, v1, p1}, Landroidx/appcompat/widget/b0;->h(Landroid/app/SearchableInfo;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p1
 
@@ -150,7 +147,7 @@
     return-object v0
 .end method
 
-.method public publishResults(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V
+.method public final publishResults(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V
     .locals 1
 
     .line 1
@@ -161,7 +158,7 @@
     check-cast v0, Li0/a;
 
     .line 2
-    iget-object v0, v0, Li0/a;->i:Landroid/database/Cursor;
+    iget-object v0, v0, Li0/a;->h:Landroid/database/Cursor;
 
     .line 3
     iget-object p2, p2, Landroid/widget/Filter$FilterResults;->values:Ljava/lang/Object;
@@ -173,9 +170,9 @@
     .line 4
     check-cast p2, Landroid/database/Cursor;
 
-    check-cast p1, Landroidx/appcompat/widget/c0;
+    check-cast p1, Landroidx/appcompat/widget/b0;
 
-    invoke-virtual {p1, p2}, Landroidx/appcompat/widget/c0;->b(Landroid/database/Cursor;)V
+    invoke-virtual {p1, p2}, Landroidx/appcompat/widget/b0;->c(Landroid/database/Cursor;)V
 
     :cond_0
     return-void

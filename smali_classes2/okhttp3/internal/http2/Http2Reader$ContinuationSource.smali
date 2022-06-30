@@ -266,7 +266,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/Source;->timeout()Lokio/Timeout;

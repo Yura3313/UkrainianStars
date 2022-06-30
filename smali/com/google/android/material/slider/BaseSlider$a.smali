@@ -1,9 +1,6 @@
-.class public Lcom/google/android/material/slider/BaseSlider$a;
+.class public final Lcom/google/android/material/slider/BaseSlider$a;
 .super Ljava/lang/Object;
 .source "BaseSlider.java"
-
-# interfaces
-.implements Lcom/google/android/material/slider/BaseSlider$d;
 
 
 # annotations
@@ -29,7 +26,6 @@
 .method public constructor <init>(Lcom/google/android/material/slider/BaseSlider;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/slider/BaseSlider$a;->c:Lcom/google/android/material/slider/BaseSlider;
 
     iput-object p2, p0, Lcom/google/android/material/slider/BaseSlider$a;->a:Landroid/util/AttributeSet;

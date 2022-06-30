@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/textfield/a$b;
+.class public final Lcom/google/android/material/textfield/a$b;
 .super Ljava/lang/Object;
 .source "ClearTextEndIconDelegate.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/textfield/a;
+.field public final synthetic f:Lcom/google/android/material/textfield/a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/a;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/a$b;->g:Lcom/google/android/material/textfield/a;
+    iput-object p1, p0, Lcom/google/android/material/textfield/a$b;->f:Lcom/google/android/material/textfield/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public onFocusChange(Landroid/view/View;Z)V
+.method public final onFocusChange(Landroid/view/View;Z)V
     .locals 2
 
     .line 1
@@ -54,7 +53,7 @@
     xor-int/2addr p1, v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/material/textfield/a$b;->g:Lcom/google/android/material/textfield/a;
+    iget-object v1, p0, Lcom/google/android/material/textfield/a$b;->f:Lcom/google/android/material/textfield/a;
 
     if-eqz p1, :cond_0
 

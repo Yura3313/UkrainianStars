@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
-.super Lle/j;
+.super Lse/h;
 .source "TutorialFragment.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,16 +18,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
-        "Lsd/a;",
+        "Lse/h;",
+        "Lre/a<",
+        "Lxd/a;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
+.field public static final f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
+    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
 
     return-void
 .end method
@@ -48,28 +48,29 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
-    .locals 5
+.method public final invoke()Ljava/lang/Object;
+    .locals 6
 
-    const-string v0, "tutorial_2.png"
+    sget-object v0, Lxd/a;->f0:Lxd/a$a;
 
-    const-string v1, "tutorial_title_page_1"
+    const-string v1, "tutorial_2.png"
 
-    const-string v2, "tutorial_content_page_1"
+    const-string v2, "tutorial_title_page_1"
 
-    const-string v3, "tutorial_action_btn_page_1"
+    const-string v3, "tutorial_content_page_1"
 
-    const-string v4, "Intro 2"
+    const-string v4, "tutorial_action_btn_page_1"
 
-    .line 1
-    invoke-static {v0, v1, v2, v3, v4}, Lsd/a;->d1(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lsd/a;
+    const-string v5, "Intro 2"
+
+    invoke-virtual/range {v0 .. v5}, Lxd/a$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lxd/a;
 
     move-result-object v0
 

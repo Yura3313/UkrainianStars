@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/auth/view/DatePickerFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/DatePickerFragment$2;->this$0:Lcom/kakaogame/auth/view/DatePickerFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     return-void

@@ -1,4 +1,4 @@
-.class public Landroidx/cardview/widget/CardView$a;
+.class public final Landroidx/cardview/widget/CardView$a;
 .super Ljava/lang/Object;
 .source "CardView.java"
 
@@ -27,7 +27,6 @@
 .method public constructor <init>(Landroidx/cardview/widget/CardView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,10 +36,9 @@
 
 
 # virtual methods
-.method public a()Z
+.method public final a()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
     invoke-virtual {v0}, Landroidx/cardview/widget/CardView;->getPreventCornerOverlap()Z
@@ -50,20 +48,20 @@
     return v0
 .end method
 
-.method public b(IIII)V
+.method public final b(IIII)V
     .locals 3
 
     .line 1
     iget-object v0, p0, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
-    iget-object v0, v0, Landroidx/cardview/widget/CardView;->l:Landroid/graphics/Rect;
+    iget-object v0, v0, Landroidx/cardview/widget/CardView;->k:Landroid/graphics/Rect;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 2
     iget-object v0, p0, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
-    iget-object v1, v0, Landroidx/cardview/widget/CardView;->k:Landroid/graphics/Rect;
+    iget-object v1, v0, Landroidx/cardview/widget/CardView;->j:Landroid/graphics/Rect;
 
     iget v2, v1, Landroid/graphics/Rect;->left:I
 

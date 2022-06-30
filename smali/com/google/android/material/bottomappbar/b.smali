@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/bottomappbar/b;
+.class public final Lcom/google/android/material/bottomappbar/b;
 .super Lcom/google/android/material/floatingactionbutton/FloatingActionButton$a;
 .source "BottomAppBar.java"
 
@@ -13,7 +13,6 @@
 .method public constructor <init>(Lcom/google/android/material/bottomappbar/BottomAppBar;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomappbar/b;->b:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     iput p2, p0, Lcom/google/android/material/bottomappbar/b;->a:I
@@ -25,7 +24,7 @@
 
 
 # virtual methods
-.method public a(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V
+.method public final a(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V
     .locals 3
 
     .line 1
@@ -33,10 +32,10 @@
 
     iget v1, p0, Lcom/google/android/material/bottomappbar/b;->a:I
 
-    sget v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->q0:I
+    sget v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->o0:I
 
     .line 2
-    invoke-virtual {v0, v1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->N(I)F
+    invoke-virtual {v0, v1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->M(I)F
 
     move-result v0
 

@@ -66,7 +66,6 @@
 .method private static getEmptyResponse()Lcom/kakaogame/KGKakaoInvitation$KGInvitationReceviersResponse;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/kakaogame/KGKakaoInvitation$KGInvitationReceviersResponse;
 
     new-instance v1, Ljava/util/ArrayList;
@@ -95,7 +94,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGKakaoInvitation$KGInvitationReceviersResponse;->invitees:Ljava/util/List;
 
     return-object v0
@@ -112,7 +110,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGKakaoInvitation$KGInvitationReceviersResponse;->joiners:Ljava/util/List;
 
     return-object v0

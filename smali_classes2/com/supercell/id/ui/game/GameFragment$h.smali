@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/game/GameFragment$h;
-.super Lle/j;
+.super Lse/h;
 .source "GameFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/game/GameFragment;->o0()V
+    value = Lcom/supercell/id/ui/game/GameFragment;->g0()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,46 +18,49 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lrc/e;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/l<",
+        "Lwc/e;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/game/GameFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$h;->g:Lcom/supercell/id/ui/game/GameFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$h;->f:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    check-cast p1, Lrc/e;
+    check-cast p1, Lwc/e;
 
-    if-eqz p1, :cond_1
+    const-string v0, "it"
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$h;->g:Lcom/supercell/id/ui/game/GameFragment;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    .line 3
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$h;->f:Lcom/supercell/id/ui/game/GameFragment;
+
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -65,19 +68,9 @@
 
     invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->f()V
 
-    .line 3
+    .line 4
     :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
-
-    :cond_1
-    const-string p1, "it"
-
-    .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

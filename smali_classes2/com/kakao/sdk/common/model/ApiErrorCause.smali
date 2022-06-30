@@ -710,7 +710,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     iput p3, p0, Lcom/kakao/sdk/common/model/ApiErrorCause;->errorCode:I
@@ -751,7 +750,6 @@
 .method public final getErrorCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/common/model/ApiErrorCause;->errorCode:I
 
     return v0

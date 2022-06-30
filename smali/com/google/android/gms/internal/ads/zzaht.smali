@@ -16,31 +16,30 @@
 
 
 # instance fields
-.field public final g:Z
+.field public final f:Z
 
-.field public final h:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final i:I
+.field public final h:I
 
-.field public final j:[B
+.field public final i:[B
+
+.field public final j:[Ljava/lang/String;
 
 .field public final k:[Ljava/lang/String;
 
-.field public final l:[Ljava/lang/String;
+.field public final l:Z
 
-.field public final m:Z
-
-.field public final n:J
+.field public final m:J
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lj3/m3;
+    new-instance v0, Lk3/l3;
 
-    invoke-direct {v0}, Lj3/m3;-><init>()V
+    invoke-direct {v0}, Lk3/l3;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzaht;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -54,28 +53,28 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/gms/internal/ads/zzaht;->g:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/internal/ads/zzaht;->f:Z
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzaht;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzaht;->g:Ljava/lang/String;
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/internal/ads/zzaht;->i:I
+    iput p3, p0, Lcom/google/android/gms/internal/ads/zzaht;->h:I
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzaht;->j:[B
+    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzaht;->i:[B
 
     .line 6
-    iput-object p5, p0, Lcom/google/android/gms/internal/ads/zzaht;->k:[Ljava/lang/String;
+    iput-object p5, p0, Lcom/google/android/gms/internal/ads/zzaht;->j:[Ljava/lang/String;
 
     .line 7
-    iput-object p6, p0, Lcom/google/android/gms/internal/ads/zzaht;->l:[Ljava/lang/String;
+    iput-object p6, p0, Lcom/google/android/gms/internal/ads/zzaht;->k:[Ljava/lang/String;
 
     .line 8
-    iput-boolean p7, p0, Lcom/google/android/gms/internal/ads/zzaht;->m:Z
+    iput-boolean p7, p0, Lcom/google/android/gms/internal/ads/zzaht;->l:Z
 
     .line 9
-    iput-wide p8, p0, Lcom/google/android/gms/internal/ads/zzaht;->n:J
+    iput-wide p8, p0, Lcom/google/android/gms/internal/ads/zzaht;->m:J
 
     return-void
 .end method
@@ -88,86 +87,86 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x1
-
     .line 2
-    iget-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzaht;->g:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzaht;->f:Z
+
+    const/4 v1, 0x1
 
     const/4 v2, 0x4
 
     .line 3
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 4
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/4 v0, 0x2
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaht;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzaht;->g:Ljava/lang/String;
+
+    const/4 v1, 0x2
 
     const/4 v3, 0x0
 
-    invoke-static {p1, v0, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    const/4 v0, 0x3
+    invoke-static {p1, v1, v0, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzaht;->i:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzaht;->h:I
+
+    const/4 v1, 0x3
 
     .line 7
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 8
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 9
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzaht;->j:[B
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzaht;->i:[B
 
-    invoke-static {p1, v2, v0, v3}, Ld2/b;->e(Landroid/os/Parcel;I[BZ)V
-
-    const/4 v0, 0x5
+    invoke-static {p1, v2, v0, v3}, Le2/b;->e(Landroid/os/Parcel;I[BZ)V
 
     .line 10
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaht;->k:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzaht;->j:[Ljava/lang/String;
 
-    invoke-static {p1, v0, v1, v3}, Ld2/b;->n(Landroid/os/Parcel;I[Ljava/lang/String;Z)V
+    const/4 v1, 0x5
 
-    const/4 v0, 0x6
+    invoke-static {p1, v1, v0}, Le2/b;->n(Landroid/os/Parcel;I[Ljava/lang/String;)V
 
     .line 11
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaht;->l:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzaht;->k:[Ljava/lang/String;
 
-    invoke-static {p1, v0, v1, v3}, Ld2/b;->n(Landroid/os/Parcel;I[Ljava/lang/String;Z)V
+    const/4 v1, 0x6
 
-    const/4 v0, 0x7
+    invoke-static {p1, v1, v0}, Le2/b;->n(Landroid/os/Parcel;I[Ljava/lang/String;)V
 
     .line 12
-    iget-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzaht;->m:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzaht;->l:Z
+
+    const/4 v1, 0x7
 
     .line 13
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 14
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 15
-    iget-wide v0, p0, Lcom/google/android/gms/internal/ads/zzaht;->n:J
+    iget-wide v0, p0, Lcom/google/android/gms/internal/ads/zzaht;->m:J
 
     const/16 v2, 0x8
 
     .line 16
-    invoke-static {p1, v2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 17
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 18
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

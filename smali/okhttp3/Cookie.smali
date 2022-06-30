@@ -219,7 +219,6 @@
     :goto_0
     if-ge p1, p2, :cond_7
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -1409,7 +1408,6 @@
 .method public domain()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Cookie;->domain:Ljava/lang/String;
 
     return-object v0
@@ -1520,103 +1518,113 @@
 .method public expiresAt()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lokhttp3/Cookie;->expiresAt:J
 
     return-wide v0
 .end method
 
 .method public hashCode()I
-    .locals 5
+    .locals 6
 
     .line 1
     iget-object v0, p0, Lokhttp3/Cookie;->name:Ljava/lang/String;
 
-    const/16 v1, 0x20f
-
-    const/16 v2, 0x1f
-
-    invoke-static {v0, v1, v2}, Lcom/kakaogame/d;->a(Ljava/lang/String;II)I
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
+
+    add-int/lit16 v0, v0, 0x20f
+
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 2
     iget-object v1, p0, Lokhttp3/Cookie;->value:Ljava/lang/String;
 
-    invoke-static {v1, v0, v2}, Lcom/kakaogame/d;->a(Ljava/lang/String;II)I
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
-    move-result v0
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 3
-    iget-object v1, p0, Lokhttp3/Cookie;->domain:Ljava/lang/String;
+    iget-object v0, p0, Lokhttp3/Cookie;->domain:Ljava/lang/String;
 
-    invoke-static {v1, v0, v2}, Lcom/kakaogame/d;->a(Ljava/lang/String;II)I
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 4
     iget-object v1, p0, Lokhttp3/Cookie;->path:Ljava/lang/String;
 
-    invoke-static {v1, v0, v2}, Lcom/kakaogame/d;->a(Ljava/lang/String;II)I
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
-    move-result v0
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 5
-    iget-wide v1, p0, Lokhttp3/Cookie;->expiresAt:J
+    iget-wide v2, p0, Lokhttp3/Cookie;->expiresAt:J
 
-    const/16 v3, 0x20
+    const/16 v0, 0x20
 
-    ushr-long v3, v1, v3
+    ushr-long v4, v2, v0
 
-    xor-long/2addr v1, v3
+    xor-long/2addr v2, v4
 
-    long-to-int v2, v1
+    long-to-int v0, v2
 
-    add-int/2addr v0, v2
+    add-int/2addr v1, v0
 
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 6
-    iget-boolean v1, p0, Lokhttp3/Cookie;->secure:Z
+    iget-boolean v0, p0, Lokhttp3/Cookie;->secure:Z
 
-    xor-int/lit8 v1, v1, 0x1
+    xor-int/lit8 v0, v0, 0x1
 
-    add-int/2addr v0, v1
+    add-int/2addr v1, v0
 
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 7
-    iget-boolean v1, p0, Lokhttp3/Cookie;->httpOnly:Z
+    iget-boolean v0, p0, Lokhttp3/Cookie;->httpOnly:Z
 
-    xor-int/lit8 v1, v1, 0x1
+    xor-int/lit8 v0, v0, 0x1
 
-    add-int/2addr v0, v1
+    add-int/2addr v1, v0
 
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 8
-    iget-boolean v1, p0, Lokhttp3/Cookie;->persistent:Z
+    iget-boolean v0, p0, Lokhttp3/Cookie;->persistent:Z
 
-    xor-int/lit8 v1, v1, 0x1
+    xor-int/lit8 v0, v0, 0x1
 
-    add-int/2addr v0, v1
+    add-int/2addr v1, v0
 
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 9
-    iget-boolean v1, p0, Lokhttp3/Cookie;->hostOnly:Z
+    iget-boolean v0, p0, Lokhttp3/Cookie;->hostOnly:Z
 
-    xor-int/lit8 v1, v1, 0x1
+    xor-int/lit8 v0, v0, 0x1
 
-    add-int/2addr v0, v1
+    add-int/2addr v1, v0
 
-    return v0
+    return v1
 .end method
 
 .method public hostOnly()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/Cookie;->hostOnly:Z
 
     return v0
@@ -1625,7 +1633,6 @@
 .method public httpOnly()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/Cookie;->httpOnly:Z
 
     return v0
@@ -1706,7 +1713,6 @@
 .method public name()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Cookie;->name:Ljava/lang/String;
 
     return-object v0
@@ -1715,7 +1721,6 @@
 .method public path()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Cookie;->path:Ljava/lang/String;
 
     return-object v0
@@ -1724,7 +1729,6 @@
 .method public persistent()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/Cookie;->persistent:Z
 
     return v0
@@ -1733,7 +1737,6 @@
 .method public secure()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/Cookie;->secure:Z
 
     return v0
@@ -1882,7 +1885,6 @@
 .method public value()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Cookie;->value:Ljava/lang/String;
 
     return-object v0

@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/FragmentManager$g;
+.class public final Landroidx/fragment/app/FragmentManager$g;
 .super Ljava/lang/Object;
 .source "FragmentManager.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/fragment/app/FragmentManager;
+.field public final synthetic f:Landroidx/fragment/app/FragmentManager;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/fragment/app/FragmentManager$g;->g:Landroidx/fragment/app/FragmentManager;
+    iput-object p1, p0, Landroidx/fragment/app/FragmentManager$g;->f:Landroidx/fragment/app/FragmentManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,15 +34,14 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentManager$g;->g:Landroidx/fragment/app/FragmentManager;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentManager$g;->f:Landroidx/fragment/app/FragmentManager;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->C(Z)Z
+    invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->z(Z)Z
 
     return-void
 .end method

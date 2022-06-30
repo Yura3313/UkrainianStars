@@ -110,7 +110,6 @@
 .method public getInvitationEventId()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationSender;->invitationEventId:Ljava/lang/Integer;
 
     return-object v0
@@ -119,7 +118,6 @@
 .method public getInvitationUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationSender;->invitationUrl:Ljava/lang/String;
 
     return-object v0
@@ -128,7 +126,6 @@
 .method public getNickname()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationSender;->nickname:Ljava/lang/String;
 
     return-object v0
@@ -137,7 +134,6 @@
 .method public getProfileImageUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationSender;->profileImageUrl:Ljava/lang/String;
 
     return-object v0
@@ -146,7 +142,6 @@
 .method public getTotalReceiversCount()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationSender;->totalReceiversCount:Ljava/lang/Integer;
 
     return-object v0
@@ -155,7 +150,6 @@
 .method public getUserId()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/game/model/InvitationSender;->userId:Ljava/lang/Long;
 
     return-object v0

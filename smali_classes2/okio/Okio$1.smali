@@ -27,7 +27,6 @@
 .method public constructor <init>(Lokio/Timeout;Ljava/io/OutputStream;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokio/Okio$1;->val$timeout:Lokio/Timeout;
 
     iput-object p2, p0, Lokio/Okio$1;->val$out:Ljava/io/OutputStream;
@@ -47,7 +46,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/Okio$1;->val$out:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
@@ -63,7 +61,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/Okio$1;->val$out:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
@@ -74,7 +71,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/Okio$1;->val$timeout:Lokio/Timeout;
 
     return-object v0
@@ -90,6 +86,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lokio/Okio$1;->val$out:Ljava/io/OutputStream;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

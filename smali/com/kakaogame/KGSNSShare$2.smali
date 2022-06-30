@@ -37,7 +37,6 @@
 .method public constructor <init>(Landroid/app/Activity;Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/log/FirebaseEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSNSShare$2;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/KGSNSShare$2;->val$callback:Lcom/kakaogame/KGResultCallback;
@@ -138,10 +137,12 @@
     :cond_2
     const-string v2, "/"
 
-    invoke-static {v2, v0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 9
+    invoke-static {v2, v0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 10
     :goto_0
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -149,12 +150,12 @@
 
     move-result-object v0
 
-    .line 9
+    .line 11
     invoke-virtual {p1}, Lcom/kakaogame/promotion/SNSShareData;->getSeq()J
 
     move-result-wide v1
 
-    .line 10
+    .line 12
     iget-object p1, p0, Lcom/kakaogame/KGSNSShare$2;->val$activity:Landroid/app/Activity;
 
     invoke-static {p1, v1, v2, v0}, Lcom/kakaogame/KGSNSShare;->access$100(Landroid/app/Activity;JLjava/lang/String;)Lcom/kakaogame/KGResult;

@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/RecyclerView$f;
+.class public final Landroidx/recyclerview/widget/RecyclerView$f;
 .super Landroid/database/Observable;
 .source "RecyclerView.java"
 
@@ -26,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/database/Observable;-><init>()V
 
     return-void
@@ -34,10 +33,9 @@
 
 
 # virtual methods
-.method public a()Z
+.method public final a()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -49,7 +47,7 @@
     return v0
 .end method
 
-.method public b()V
+.method public final b()V
     .locals 2
 
     .line 1
@@ -83,8 +81,8 @@
     return-void
 .end method
 
-.method public c(II)V
-    .locals 3
+.method public final c(II)V
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
@@ -93,23 +91,21 @@
 
     move-result v0
 
-    const/4 v1, 0x1
-
-    sub-int/2addr v0, v1
+    add-int/lit8 v0, v0, -0x1
 
     :goto_0
     if-ltz v0, :cond_0
 
     .line 2
-    iget-object v2, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
-    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v1
 
-    check-cast v2, Landroidx/recyclerview/widget/RecyclerView$g;
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView$g;
 
-    invoke-virtual {v2, p1, p2, v1}, Landroidx/recyclerview/widget/RecyclerView$g;->e(III)V
+    invoke-virtual {v1, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$g;->e(II)V
 
     add-int/lit8 v0, v0, -0x1
 
@@ -119,7 +115,7 @@
     return-void
 .end method
 
-.method public d(IILjava/lang/Object;)V
+.method public final d(IILjava/lang/Object;)V
     .locals 2
 
     .line 1
@@ -153,7 +149,7 @@
     return-void
 .end method
 
-.method public e(II)V
+.method public final e(II)V
     .locals 2
 
     .line 1
@@ -187,7 +183,7 @@
     return-void
 .end method
 
-.method public f(II)V
+.method public final f(II)V
     .locals 2
 
     .line 1

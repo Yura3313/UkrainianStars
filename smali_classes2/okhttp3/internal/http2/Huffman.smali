@@ -715,7 +715,6 @@
 .method public static get()Lokhttp3/internal/http2/Huffman;
     .locals 1
 
-    .line 1
     sget-object v0, Lokhttp3/internal/http2/Huffman;->INSTANCE:Lokhttp3/internal/http2/Huffman;
 
     return-object v0

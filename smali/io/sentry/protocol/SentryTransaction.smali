@@ -153,7 +153,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+    invoke-virtual {v1}, Ljava/util/AbstractMap;->entrySet()Ljava/util/Set;
 
     move-result-object v1
 
@@ -185,7 +185,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v3, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, v2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_1
 
@@ -353,7 +353,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryTransaction;->measurements:Ljava/util/Map;
 
     return-object v0
@@ -370,7 +369,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryTransaction;->spans:Ljava/util/List;
 
     return-object v0
@@ -379,7 +377,6 @@
 .method public getStartTimestamp()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryTransaction;->startTimestamp:Ljava/util/Date;
 
     return-object v0
@@ -416,7 +413,6 @@
 .method public getTimestamp()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryTransaction;->timestamp:Ljava/util/Date;
 
     return-object v0
@@ -425,7 +421,6 @@
 .method public getTransaction()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryTransaction;->transaction:Ljava/lang/String;
 
     return-object v0
@@ -442,7 +437,6 @@
 .method public isFinished()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryTransaction;->timestamp:Ljava/util/Date;
 
     if-eqz v0, :cond_0

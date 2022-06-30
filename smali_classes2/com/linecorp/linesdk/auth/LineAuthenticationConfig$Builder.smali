@@ -77,7 +77,6 @@
 .method public static synthetic access$100(Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;->channelId:Ljava/lang/String;
 
     return-object p0
@@ -86,7 +85,6 @@
 .method public static synthetic access$200(Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;)Landroid/net/Uri;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;->endPointBaseUrl:Landroid/net/Uri;
 
     return-object p0
@@ -95,7 +93,6 @@
 .method public static synthetic access$300(Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;)Landroid/net/Uri;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;->webLoginPageUrl:Landroid/net/Uri;
 
     return-object p0
@@ -104,7 +101,6 @@
 .method public static synthetic access$400(Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;->isLineAppAuthenticationDisabled:Z
 
     return p0
@@ -113,7 +109,6 @@
 .method public static synthetic access$500(Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;->isEncryptorPreparationDisabled:Z
 
     return p0
@@ -124,7 +119,6 @@
 .method public build()Lcom/linecorp/linesdk/auth/LineAuthenticationConfig;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig;
 
     const/4 v1, 0x0
@@ -139,7 +133,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;->isEncryptorPreparationDisabled:Z
 
     return-object p0
@@ -150,7 +143,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$Builder;->isLineAppAuthenticationDisabled:Z
 
     return-object p0
@@ -163,7 +155,6 @@
 
     const-string p1, "https://access.line.me/v2"
 
-    .line 1
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p1
@@ -181,7 +172,6 @@
 
     const-string p1, "https://access.line.me/dialog/oauth/weblogin"
 
-    .line 1
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p1

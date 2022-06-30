@@ -1,9 +1,9 @@
-.class public Lcom/supercell/titan/GoogleServiceClient$f;
+.class public final Lcom/supercell/titan/GoogleServiceClient$f;
 .super Ljava/lang/Object;
 .source "GoogleServiceClient.java"
 
 # interfaces
-.implements Lb4/e;
+.implements Lc4/e;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lb4/e<",
+        "Lc4/e<",
         "Landroid/content/Intent;",
         ">;"
     }
@@ -27,15 +27,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroid/app/Activity;
+.field public final synthetic f:Landroid/app/Activity;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/GoogleServiceClient;Landroid/app/Activity;)V
+.method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Lcom/supercell/titan/GoogleServiceClient$f;->g:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/supercell/titan/GoogleServiceClient$f;->f:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,14 +43,14 @@
 
 
 # virtual methods
-.method public onSuccess(Ljava/lang/Object;)V
+.method public final onSuccess(Ljava/lang/Object;)V
     .locals 2
 
     .line 1
     check-cast p1, Landroid/content/Intent;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$f;->g:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$f;->f:Landroid/app/Activity;
 
     const v1, 0x10c90b
 

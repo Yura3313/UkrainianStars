@@ -7,39 +7,37 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const-string v0, "com.google.android.gms.auth.api.phone.internal.ISmsRetrieverResultCallback"
-
-    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/auth-api-phone/zzb;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0}, Lcom/google/android/gms/internal/auth-api-phone/zzb;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final F0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 0
+.method public final J0(ILandroid/os/Parcel;)Z
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    const/4 p3, 0x1
+    const/4 v0, 0x1
 
-    if-ne p1, p3, :cond_1
+    if-ne p1, v0, :cond_1
 
     sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    sget p4, Ln3/a;->a:I
+    sget v1, Lo3/a;->a:I
 
     .line 1
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
-    move-result p4
+    move-result v1
 
-    if-nez p4, :cond_0
+    if-nez v1, :cond_0
 
     const/4 p1, 0x0
 
@@ -56,9 +54,9 @@
     :goto_0
     check-cast p1, Lcom/google/android/gms/common/api/Status;
 
-    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/auth-api-phone/zzg;->H0(Lcom/google/android/gms/common/api/Status;)V
+    invoke-interface {p0}, Lcom/google/android/gms/internal/auth-api-phone/zzg;->a()V
 
-    return p3
+    return v0
 
     :cond_1
     const/4 p1, 0x0

@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/FragmentManager$m;
+.class public final Landroidx/fragment/app/FragmentManager$m;
 .super Ljava/lang/Object;
 .source "FragmentManager.java"
 
@@ -50,13 +50,13 @@
 
 
 # virtual methods
-.method public a(Ljava/util/ArrayList;Ljava/util/ArrayList;)Z
+.method public final a(Ljava/util/ArrayList;Ljava/util/ArrayList;)Z
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/ArrayList<",
-            "Landroidx/fragment/app/b;",
+            "Landroidx/fragment/app/a;",
             ">;",
             "Ljava/util/ArrayList<",
             "Ljava/lang/Boolean;",
@@ -67,7 +67,7 @@
     .line 1
     iget-object v0, p0, Landroidx/fragment/app/FragmentManager$m;->d:Landroidx/fragment/app/FragmentManager;
 
-    iget-object v0, v0, Landroidx/fragment/app/FragmentManager;->t:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/FragmentManager;->s:Landroidx/fragment/app/Fragment;
 
     if-eqz v0, :cond_0
 
@@ -85,7 +85,7 @@
     move-result-object v0
 
     .line 3
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->a0()Z
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->W()Z
 
     move-result v0
 
@@ -109,7 +109,7 @@
 
     move-object v2, p2
 
-    invoke-virtual/range {v0 .. v5}, Landroidx/fragment/app/FragmentManager;->c0(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;II)Z
+    invoke-virtual/range {v0 .. v5}, Landroidx/fragment/app/FragmentManager;->Y(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;II)Z
 
     move-result p1
 

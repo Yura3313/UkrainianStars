@@ -1,4 +1,4 @@
-.class public Lcom/google/android/gms/internal/ads/y0;
+.class public final Lcom/google/android/gms/internal/ads/y0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/y0$a;Lj3/s5;)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/y0$a;)V
     .locals 0
 
     .line 1

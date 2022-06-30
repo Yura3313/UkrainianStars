@@ -27,14 +27,13 @@
 
 
 # instance fields
-.field public g:I
+.field public f:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/core/widget/NestedScrollView$SavedState$a;
 
     invoke-direct {v0}, Landroidx/core/widget/NestedScrollView$SavedState$a;-><init>()V
@@ -55,7 +54,7 @@
 
     move-result p1
 
-    iput p1, p0, Landroidx/core/widget/NestedScrollView$SavedState;->g:I
+    iput p1, p0, Landroidx/core/widget/NestedScrollView$SavedState;->f:I
 
     return-void
 .end method
@@ -71,7 +70,7 @@
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
     const-string v0, "HorizontalScrollView.SavedState{"
@@ -96,10 +95,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Landroidx/core/widget/NestedScrollView$SavedState;->g:I
+    iget v1, p0, Landroidx/core/widget/NestedScrollView$SavedState;->f:I
 
     const-string v2, "}"
 
+    .line 3
     invoke-static {v0, v1, v2}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -107,14 +107,14 @@
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
-    iget p2, p0, Landroidx/core/widget/NestedScrollView$SavedState;->g:I
+    iget p2, p0, Landroidx/core/widget/NestedScrollView$SavedState;->f:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

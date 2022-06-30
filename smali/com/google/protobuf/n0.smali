@@ -6,7 +6,7 @@
 # static fields
 .field public static final a:Lcom/google/protobuf/l0;
 
-.field public static final b:Lcom/google/protobuf/l0;
+.field public static final b:Lcom/google/protobuf/m0;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     invoke-direct {v0}, Lcom/google/protobuf/m0;-><init>()V
 
-    sput-object v0, Lcom/google/protobuf/n0;->b:Lcom/google/protobuf/l0;
+    sput-object v0, Lcom/google/protobuf/n0;->b:Lcom/google/protobuf/m0;
 
     return-void
 .end method

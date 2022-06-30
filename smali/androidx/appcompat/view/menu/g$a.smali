@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/view/menu/g$a;
+.class public final Landroidx/appcompat/view/menu/g$a;
 .super Ljava/lang/Object;
 .source "MenuItemImpl.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroidx/appcompat/view/menu/g;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/g$a;->a:Landroidx/appcompat/view/menu/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

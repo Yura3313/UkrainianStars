@@ -1,97 +1,56 @@
 .class public final Lrd/d;
-.super Lle/j;
-.source "TokenLoginConfirmPageFragment.kt"
+.super Lse/h;
+.source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lrd/e;",
-        "Ljava/lang/Exception;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/a<",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lrd/d;
+# instance fields
+.field public final synthetic f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
+    .locals 0
 
-    new-instance v0, Lrd/d;
+    iput-object p1, p0, Lrd/d;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    invoke-direct {v0}, Lrd/d;-><init>()V
+    const/4 p1, 0x0
 
-    sput-object v0, Lrd/d;->g:Lrd/d;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke()Ljava/lang/Object;
     .locals 2
 
     .line 1
-    check-cast p1, Lrd/e;
+    iget-object v0, p0, Lrd/d;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    check-cast p2, Ljava/lang/Exception;
+    sget v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->q0:I
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
+    const/4 v1, 0x0
 
     .line 2
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h1(Z)V
 
     .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
+    sget-object v0, Lie/h;->a:Lie/h;
 
-    .line 4
-    :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "it"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return-object v0
 .end method

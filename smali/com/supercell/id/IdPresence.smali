@@ -4,45 +4,36 @@
 
 
 # instance fields
-.field public final a:Lqc/d0;
+.field public final a:Lcom/supercell/id/model/IdSocialAccount;
 
 .field public final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lqc/d0;Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)V
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "account"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/IdPresence;->a:Lqc/d0;
+    iput-object p1, p0, Lcom/supercell/id/IdPresence;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     iput-object p2, p0, Lcom/supercell/id/IdPresence;->b:Ljava/lang/String;
 
     return-void
-
-    :cond_0
-    const-string p1, "account"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public static synthetic copy$default(Lcom/supercell/id/IdPresence;Lqc/d0;Ljava/lang/String;ILjava/lang/Object;)Lcom/supercell/id/IdPresence;
+.method public static synthetic copy$default(Lcom/supercell/id/IdPresence;Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;ILjava/lang/Object;)Lcom/supercell/id/IdPresence;
     .locals 0
 
     and-int/lit8 p4, p3, 0x1
 
     if-eqz p4, :cond_0
 
-    iget-object p1, p0, Lcom/supercell/id/IdPresence;->a:Lqc/d0;
+    iget-object p1, p0, Lcom/supercell/id/IdPresence;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     :cond_0
     and-int/lit8 p3, p3, 0x2
@@ -52,7 +43,7 @@
     iget-object p2, p0, Lcom/supercell/id/IdPresence;->b:Ljava/lang/String;
 
     :cond_1
-    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/IdPresence;->copy(Lqc/d0;Ljava/lang/String;)Lcom/supercell/id/IdPresence;
+    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/IdPresence;->copy(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)Lcom/supercell/id/IdPresence;
 
     move-result-object p0
 
@@ -61,10 +52,10 @@
 
 
 # virtual methods
-.method public final component1()Lqc/d0;
+.method public final component1()Lcom/supercell/id/model/IdSocialAccount;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lqc/d0;
+    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     return-object v0
 .end method
@@ -77,26 +68,18 @@
     return-object v0
 .end method
 
-.method public final copy(Lqc/d0;Ljava/lang/String;)Lcom/supercell/id/IdPresence;
+.method public final copy(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)Lcom/supercell/id/IdPresence;
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "account"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/supercell/id/IdPresence;
 
-    invoke-direct {v0, p1, p2}, Lcom/supercell/id/IdPresence;-><init>(Lqc/d0;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lcom/supercell/id/IdPresence;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "account"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -110,11 +93,11 @@
 
     check-cast p1, Lcom/supercell/id/IdPresence;
 
-    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lqc/d0;
+    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    iget-object v1, p1, Lcom/supercell/id/IdPresence;->a:Lqc/d0;
+    iget-object v1, p1, Lcom/supercell/id/IdPresence;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -124,7 +107,7 @@
 
     iget-object p1, p1, Lcom/supercell/id/IdPresence;->b:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -144,11 +127,10 @@
     return p1
 .end method
 
-.method public final getAccount()Lqc/d0;
+.method public final getAccount()Lcom/supercell/id/model/IdSocialAccount;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lqc/d0;
+    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     return-object v0
 .end method
@@ -157,16 +139,16 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lqc/d0;
+    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-virtual {v0}, Lqc/d0;->a()Lqc/e;
+    invoke-virtual {v0}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lqc/e;->a:Ljava/lang/String;
+    iget-object v0, v0, Lvc/e;->a:Ljava/lang/String;
 
     goto :goto_0
 
@@ -180,10 +162,9 @@
 .method public final getSupercellId()Ljava/lang/String;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lqc/d0;
+    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-virtual {v0}, Lqc/d0;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/supercell/id/model/IdSocialAccount;->d()Ljava/lang/String;
 
     move-result-object v0
 
@@ -193,7 +174,6 @@
 .method public final getSystemName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/supercell/id/IdPresence;->b:Ljava/lang/String;
 
     return-object v0
@@ -202,7 +182,7 @@
 .method public hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lqc/d0;
+    iget-object v0, p0, Lcom/supercell/id/IdPresence;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     const/4 v1, 0x0
 
@@ -239,11 +219,13 @@
 
     const-string v0, "IdPresence(account="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/IdPresence;->a:Lqc/d0;
+    .line 2
+    iget-object v1, p0, Lcom/supercell/id/IdPresence;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -255,7 +237,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

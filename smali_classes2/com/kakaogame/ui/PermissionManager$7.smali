@@ -29,7 +29,6 @@
 .method public constructor <init>(ZILandroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/ui/PermissionManager$7;->val$finish:Z
 
     iput p2, p0, Lcom/kakaogame/ui/PermissionManager$7;->val$msgResId:I

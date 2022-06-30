@@ -33,7 +33,6 @@
 .method public constructor <init>(Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSessionForCustomUI$6;->val$callback:Lcom/kakaogame/KGResultCallback;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -101,7 +100,7 @@
     const-string v2, "KGSessionForCustomUI"
 
     .line 4
-    invoke-static {v1, p1, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v1, p1, v2}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 5
     iget-object v1, p0, Lcom/kakaogame/KGSessionForCustomUI$6;->val$callback:Lcom/kakaogame/KGResultCallback;

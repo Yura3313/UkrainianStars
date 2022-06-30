@@ -13,7 +13,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,6 +48,7 @@
 
     move-result-object v3
 
+    .line 4
     invoke-virtual {v2}, Lcom/kakaogame/config/Configuration;->getAppId()Ljava/lang/String;
 
     move-result-object v4
@@ -59,12 +59,12 @@
 
     move-result-object v3
 
-    .line 4
+    .line 5
     invoke-virtual {v2}, Lcom/kakaogame/config/Configuration;->getServerTypeString()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 5
+    .line 6
     sget-object v4, Lcom/kakaogame/config/Configuration$KGServerType;->LIVE:Lcom/kakaogame/config/Configuration$KGServerType;
 
     invoke-virtual {v4}, Lcom/kakaogame/config/Configuration$KGServerType;->getValue()Ljava/lang/String;
@@ -79,15 +79,15 @@
 
     const-string v4, "-"
 
-    .line 6
-    invoke-static {v3, v4, v2}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 7
+    invoke-static {v3, v4, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     :cond_0
     const/4 v2, 0x0
 
-    .line 7
+    .line 8
     :try_start_0
     invoke-static {v1, v3, v0}, Lcom/kakaogame/util/PreferenceUtil;->contains(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -95,22 +95,22 @@
 
     if-eqz v4, :cond_5
 
-    .line 8
+    .line 9
     invoke-static {v1, v3, v0}, Lcom/kakaogame/util/PreferenceUtil;->getString(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 9
+    .line 10
     invoke-static {v0}, Lcom/kakaogame/util/json/JSONValue;->parse(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 10
+    .line 11
     instance-of v1, v0, Lcom/kakaogame/util/json/JSONObject;
 
     if-eqz v1, :cond_5
 
-    .line 11
+    .line 12
     new-instance v1, Lcom/kakaogame/infodesk/InfodeskData;
 
     check-cast v0, Lcom/kakaogame/util/json/JSONObject;
@@ -119,7 +119,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 12
+    .line 13
     invoke-static {v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getInfodeskCacheHour(Lcom/kakaogame/infodesk/InfodeskData;)J
 
     move-result-wide v3
@@ -143,7 +143,7 @@
 
     return-object v2
 
-    .line 13
+    .line 14
     :cond_2
     :goto_0
     invoke-static {v1}, Lcom/kakaogame/infodesk/InfodeskHelper;->getInfodeskDataTime(Lcom/kakaogame/infodesk/InfodeskData;)J
@@ -158,13 +158,13 @@
 
     return-object v1
 
-    .line 14
+    .line 15
     :cond_3
     new-instance v0, Lcom/kakaogame/server/SNTPClient;
 
     invoke-direct {v0}, Lcom/kakaogame/server/SNTPClient;-><init>()V
 
-    .line 15
+    .line 16
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v7
@@ -173,24 +173,24 @@
 
     const-string v10, "time.google.com"
 
-    .line 16
+    .line 17
     invoke-virtual {v0, v10, v9}, Lcom/kakaogame/server/SNTPClient;->requestTime(Ljava/lang/String;I)Z
 
     move-result v9
 
     if-eqz v9, :cond_5
 
-    .line 17
+    .line 18
     invoke-virtual {v0}, Lcom/kakaogame/server/SNTPClient;->getNtpTime()J
 
     move-result-wide v9
 
-    .line 18
+    .line 19
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v11
 
-    .line 19
+    .line 20
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -217,7 +217,7 @@
 
     invoke-static {v7, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 20
+    .line 21
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -248,7 +248,7 @@
 
     return-object v2
 
-    .line 21
+    .line 22
     :cond_4
     invoke-virtual {v1, v9, v10}, Lcom/kakaogame/infodesk/InfodeskData;->setServerTimeStamp(J)V
 
@@ -287,6 +287,7 @@
 
     move-result-object v2
 
+    .line 4
     invoke-virtual {v1}, Lcom/kakaogame/config/Configuration;->getAppId()Ljava/lang/String;
 
     move-result-object v3
@@ -297,12 +298,12 @@
 
     move-result-object v2
 
-    .line 4
+    .line 5
     invoke-virtual {v1}, Lcom/kakaogame/config/Configuration;->getServerTypeString()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 5
+    .line 6
     sget-object v3, Lcom/kakaogame/config/Configuration$KGServerType;->LIVE:Lcom/kakaogame/config/Configuration$KGServerType;
 
     invoke-virtual {v3}, Lcom/kakaogame/config/Configuration$KGServerType;->getValue()Ljava/lang/String;
@@ -317,18 +318,18 @@
 
     const-string v3, "-"
 
-    .line 6
-    invoke-static {v2, v3, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 7
+    invoke-static {v2, v3, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 7
+    .line 8
     :cond_0
     new-instance v1, Lcom/kakaogame/util/json/JSONObject;
 
     invoke-direct {v1, p0}, Lcom/kakaogame/util/json/JSONObject;-><init>(Ljava/util/Map;)V
 
-    .line 8
+    .line 9
     invoke-virtual {v1}, Lcom/kakaogame/util/json/JSONObject;->toJSONString()Ljava/lang/String;
 
     move-result-object p0

@@ -211,7 +211,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/Pipe$PipeSink;->timeout:Lokio/Timeout;
 
     return-object v0

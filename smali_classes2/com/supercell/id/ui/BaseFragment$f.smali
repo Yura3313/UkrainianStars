@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/BaseFragment$f;
-.super Lle/j;
+.super Lse/h;
 .source "BaseFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/BaseFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,46 +18,49 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
+        "Lse/h;",
+        "Lre/l<",
         "Landroid/view/View;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/BaseFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/BaseFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/BaseFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->g:Lcom/supercell/id/ui/BaseFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->f:Lcom/supercell/id/ui/BaseFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
     check-cast p1, Landroid/view/View;
 
-    if-eqz p1, :cond_1
+    const-string v0, "it"
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->g:Lcom/supercell/id/ui/BaseFragment;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->U()Z
+    .line 3
+    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->f:Lcom/supercell/id/ui/BaseFragment;
+
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->N()Z
 
     move-result p1
 
@@ -65,32 +68,22 @@
 
     goto :goto_0
 
-    .line 3
-    :cond_0
-    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->g:Lcom/supercell/id/ui/BaseFragment;
-
     .line 4
-    iget-object p1, p1, Lcom/supercell/id/ui/BaseFragment;->d0:Lse/o;
+    :cond_0
+    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->f:Lcom/supercell/id/ui/BaseFragment;
 
     .line 5
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    iget-object p1, p1, Lcom/supercell/id/ui/BaseFragment;->b0:Lze/p;
 
     .line 6
-    invoke-interface {p1, v0}, Lse/o;->j(Ljava/lang/Object;)Z
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     .line 7
-    :goto_0
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "it"
+    invoke-virtual {p1, v0}, Lze/e1;->G(Ljava/lang/Object;)Z
 
     .line 8
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    :goto_0
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    const/4 p1, 0x0
-
-    throw p1
+    return-object p1
 .end method

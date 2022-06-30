@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialogManager$1;->val$showLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

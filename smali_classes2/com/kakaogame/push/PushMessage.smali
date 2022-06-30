@@ -425,7 +425,6 @@
 .method public getBigPictureUrl()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/push/PushMessage;->bundle:Landroid/os/Bundle;
 
     const-string v1, "bigImageUrl"
@@ -659,7 +658,6 @@
 .method public getPushBundle()Landroid/os/Bundle;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/push/PushMessage;->bundle:Landroid/os/Bundle;
 
     return-object v0
@@ -668,7 +666,6 @@
 .method public getPushType()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/push/PushMessage;->bundle:Landroid/os/Bundle;
 
     const-string v1, "pushType"
@@ -795,7 +792,6 @@
 .method public getTargetType()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/push/PushMessage;->bundle:Landroid/os/Bundle;
 
     const-string v1, "targetType"
@@ -886,7 +882,6 @@
 .method public getUrlScheme()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/push/PushMessage;->bundle:Landroid/os/Bundle;
 
     const-string v1, "link"
@@ -1001,6 +996,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakaogame/push/PushMessage;->bundle:Landroid/os/Bundle;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

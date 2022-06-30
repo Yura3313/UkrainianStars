@@ -102,7 +102,7 @@
     const-string v8, "subs"
 
     .line 8
-    invoke-interface {v7, v5, v3, v8}, Lcom/google/android/gms/internal/play_billing/zzd;->v1(ILjava/lang/String;Ljava/lang/String;)I
+    invoke-interface {v7, v5, v3, v8}, Lcom/google/android/gms/internal/play_billing/zzd;->A1(ILjava/lang/String;Ljava/lang/String;)I
 
     move-result v6
 
@@ -161,7 +161,7 @@
     if-ge v5, v1, :cond_4
 
     .line 11
-    sget v5, Lv3/a;->a:I
+    sget v5, Lw3/a;->a:I
 
     :cond_4
     const/16 v5, 0x10
@@ -179,7 +179,7 @@
     const-string v8, "inapp"
 
     .line 13
-    invoke-interface {v7, v5, v3, v8}, Lcom/google/android/gms/internal/play_billing/zzd;->v1(ILjava/lang/String;Ljava/lang/String;)I
+    invoke-interface {v7, v5, v3, v8}, Lcom/google/android/gms/internal/play_billing/zzd;->A1(ILjava/lang/String;Ljava/lang/String;)I
 
     move-result v6
 
@@ -298,7 +298,7 @@
     if-ge v5, v1, :cond_d
 
     .line 23
-    sget v1, Lv3/a;->a:I
+    sget v1, Lw3/a;->a:I
 
     :cond_d
     if-nez v6, :cond_e
@@ -324,7 +324,7 @@
     .line 27
     :catch_1
     :goto_c
-    sget v3, Lv3/a;->a:I
+    sget v3, Lw3/a;->a:I
 
     iget-object v3, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
 
@@ -345,7 +345,7 @@
     iget-object v1, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
 
     .line 31
-    sget-object v2, Lcom/android/billingclient/api/s;->i:Lcom/android/billingclient/api/e;
+    sget-object v2, Lcom/android/billingclient/api/t;->i:Lcom/android/billingclient/api/e;
 
     invoke-static {v1, v2}, Lcom/android/billingclient/api/r;->a(Lcom/android/billingclient/api/r;Lcom/android/billingclient/api/e;)V
 
@@ -355,7 +355,7 @@
     iget-object v1, p0, Lcom/android/billingclient/api/p;->a:Lcom/android/billingclient/api/r;
 
     .line 32
-    sget-object v2, Lcom/android/billingclient/api/s;->a:Lcom/android/billingclient/api/e;
+    sget-object v2, Lcom/android/billingclient/api/t;->a:Lcom/android/billingclient/api/e;
 
     invoke-static {v1, v2}, Lcom/android/billingclient/api/r;->a(Lcom/android/billingclient/api/r;Lcom/android/billingclient/api/e;)V
 

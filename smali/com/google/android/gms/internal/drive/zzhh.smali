@@ -14,7 +14,7 @@
 
 
 # virtual methods
-.method public final H0(Lcom/google/android/gms/common/api/Status;)V
+.method public final B5(Lcom/google/android/gms/common/api/Status;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -22,7 +22,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/android/gms/common/api/ApiException;
 
     invoke-direct {v0, p1}, Lcom/google/android/gms/common/api/ApiException;-><init>(Lcom/google/android/gms/common/api/Status;)V

@@ -1,6 +1,6 @@
-.class public Landroidx/appcompat/widget/b0$a;
-.super Landroid/widget/LinearLayout;
-.source "ScrollingTabContainerView.java"
+.class public final Landroidx/appcompat/widget/b0$a;
+.super Ljava/lang/Object;
+.source "SuggestionsAdapter.java"
 
 
 # annotations
@@ -9,99 +9,84 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1
+    accessFlags = 0x19
     name = "a"
 .end annotation
 
 
 # instance fields
-.field public g:Landroidx/appcompat/app/ActionBar$b;
+.field public final a:Landroid/widget/TextView;
 
-.field public final synthetic h:Landroidx/appcompat/widget/b0;
+.field public final b:Landroid/widget/TextView;
+
+.field public final c:Landroid/widget/ImageView;
+
+.field public final d:Landroid/widget/ImageView;
+
+.field public final e:Landroid/widget/ImageView;
 
 
-# virtual methods
-.method public a()Landroidx/appcompat/app/ActionBar$b;
+# direct methods
+.method public constructor <init>(Landroid/view/View;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/b0$a;->g:Landroidx/appcompat/app/ActionBar$b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-object v0
-.end method
-
-.method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
-    .locals 1
-
-    .line 1
-    invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
-
-    const-string v0, "androidx.appcompat.app.ActionBar$Tab"
+    const v0, 0x1020014
 
     .line 2
-    invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityEvent;->setClassName(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    return-void
-.end method
+    move-result-object v0
 
-.method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
-    .locals 1
+    check-cast v0, Landroid/widget/TextView;
 
-    .line 1
-    invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
+    iput-object v0, p0, Landroidx/appcompat/widget/b0$a;->a:Landroid/widget/TextView;
 
-    const-string v0, "androidx.appcompat.app.ActionBar$Tab"
-
-    .line 2
-    invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
-
-    return-void
-.end method
-
-.method public onMeasure(II)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
-
-    .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/b0$a;->h:Landroidx/appcompat/widget/b0;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    return-void
-.end method
-
-.method public setSelected(Z)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->isSelected()Z
-
-    move-result v0
-
-    if-eq v0, p1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 2
-    :goto_0
-    invoke-super {p0, p1}, Landroid/widget/LinearLayout;->setSelected(Z)V
-
-    if-eqz v0, :cond_1
-
-    if-eqz p1, :cond_1
-
-    const/4 p1, 0x4
+    const v0, 0x1020015
 
     .line 3
-    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->sendAccessibilityEvent(I)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    :cond_1
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Landroidx/appcompat/widget/b0$a;->b:Landroid/widget/TextView;
+
+    const v0, 0x1020007
+
+    .line 4
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    iput-object v0, p0, Landroidx/appcompat/widget/b0$a;->c:Landroid/widget/ImageView;
+
+    const v0, 0x1020008
+
+    .line 5
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    iput-object v0, p0, Landroidx/appcompat/widget/b0$a;->d:Landroid/widget/ImageView;
+
+    .line 6
+    sget v0, Landroidx/appcompat/R$id;->edit_query:I
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/ImageView;
+
+    iput-object p1, p0, Landroidx/appcompat/widget/b0$a;->e:Landroid/widget/ImageView;
+
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "KGApplication.java"
 
 # interfaces
-.implements Lgc/a;
+.implements Lkc/a;
 
 
 # annotations
@@ -29,7 +29,6 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGApplication$7;->val$scheme:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/kakaogame/KGApplication$7;->val$shortcutName:Ljava/lang/String;
@@ -118,7 +117,7 @@
     .line 10
     iget-object p1, p0, Lcom/kakaogame/KGApplication$7;->val$activity:Landroid/app/Activity;
 
-    invoke-virtual {p1, p2}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p1, p2}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -136,7 +135,7 @@
     return-void
 .end method
 
-.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Lac/b;)V
+.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Lfc/b;)V
     .locals 0
 
     return-void

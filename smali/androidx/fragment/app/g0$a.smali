@@ -1,89 +1,108 @@
 .class public final Landroidx/fragment/app/g0$a;
 .super Ljava/lang/Object;
-.source "FragmentTransaction.java"
+.source "FragmentTransitionImpl.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroidx/fragment/app/g0;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/fragment/app/g0;->q(Landroid/view/View;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/Map;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
-    name = "a"
+    accessFlags = 0x1
+    name = null
 .end annotation
 
 
 # instance fields
-.field public a:I
+.field public final synthetic f:I
 
-.field public b:Landroidx/fragment/app/Fragment;
+.field public final synthetic g:Ljava/util/ArrayList;
 
-.field public c:I
+.field public final synthetic h:Ljava/util/ArrayList;
 
-.field public d:I
+.field public final synthetic i:Ljava/util/ArrayList;
 
-.field public e:I
-
-.field public f:I
-
-.field public g:Landroidx/lifecycle/f$c;
-
-.field public h:Landroidx/lifecycle/f$c;
+.field public final synthetic j:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(ILjava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
+
+    iput p1, p0, Landroidx/fragment/app/g0$a;->f:I
+
+    iput-object p2, p0, Landroidx/fragment/app/g0$a;->g:Ljava/util/ArrayList;
+
+    iput-object p3, p0, Landroidx/fragment/app/g0$a;->h:Ljava/util/ArrayList;
+
+    iput-object p4, p0, Landroidx/fragment/app/g0$a;->i:Ljava/util/ArrayList;
+
+    iput-object p5, p0, Landroidx/fragment/app/g0$a;->j:Ljava/util/ArrayList;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    :goto_0
+    iget v1, p0, Landroidx/fragment/app/g0$a;->f:I
 
-    return-void
-.end method
-
-.method public constructor <init>(ILandroidx/fragment/app/Fragment;)V
-    .locals 0
+    if-ge v0, v1, :cond_0
 
     .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget-object v1, p0, Landroidx/fragment/app/g0$a;->g:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/View;
+
+    iget-object v2, p0, Landroidx/fragment/app/g0$a;->h:Ljava/util/ArrayList;
+
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-static {v1, v2}, Lf0/r;->N(Landroid/view/View;Ljava/lang/String;)V
 
     .line 3
-    iput p1, p0, Landroidx/fragment/app/g0$a;->a:I
+    iget-object v1, p0, Landroidx/fragment/app/g0$a;->i:Ljava/util/ArrayList;
 
-    .line 4
-    iput-object p2, p0, Landroidx/fragment/app/g0$a;->b:Landroidx/fragment/app/Fragment;
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    .line 5
-    sget-object p1, Landroidx/lifecycle/f$c;->k:Landroidx/lifecycle/f$c;
+    move-result-object v1
 
-    iput-object p1, p0, Landroidx/fragment/app/g0$a;->g:Landroidx/lifecycle/f$c;
+    check-cast v1, Landroid/view/View;
 
-    .line 6
-    iput-object p1, p0, Landroidx/fragment/app/g0$a;->h:Landroidx/lifecycle/f$c;
+    iget-object v2, p0, Landroidx/fragment/app/g0$a;->j:Ljava/util/ArrayList;
 
-    return-void
-.end method
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-.method public constructor <init>(ILandroidx/fragment/app/Fragment;Landroidx/lifecycle/f$c;)V
-    .locals 0
+    move-result-object v2
 
-    .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    check-cast v2, Ljava/lang/String;
 
-    .line 8
-    iput p1, p0, Landroidx/fragment/app/g0$a;->a:I
+    invoke-static {v1, v2}, Lf0/r;->N(Landroid/view/View;Ljava/lang/String;)V
 
-    .line 9
-    iput-object p2, p0, Landroidx/fragment/app/g0$a;->b:Landroidx/fragment/app/Fragment;
+    add-int/lit8 v0, v0, 0x1
 
-    .line 10
-    iget-object p1, p2, Landroidx/fragment/app/Fragment;->U:Landroidx/lifecycle/f$c;
+    goto :goto_0
 
-    iput-object p1, p0, Landroidx/fragment/app/g0$a;->g:Landroidx/lifecycle/f$c;
-
-    .line 11
-    iput-object p3, p0, Landroidx/fragment/app/g0$a;->h:Landroidx/lifecycle/f$c;
-
+    :cond_0
     return-void
 .end method

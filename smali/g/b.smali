@@ -128,22 +128,26 @@
     :cond_0
     iget-object v0, p0, Lg/b;->c:Lm/g;
 
-    invoke-virtual {v0, p1}, Lm/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v1, 0x0
+
+    .line 6
+    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
+    .line 7
     check-cast v0, Landroid/view/SubMenu;
 
     if-nez v0, :cond_1
 
-    .line 6
+    .line 8
     new-instance v0, Lg/g;
 
     iget-object v1, p0, Lg/b;->a:Landroid/content/Context;
 
     invoke-direct {v0, v1, p1}, Lg/g;-><init>(Landroid/content/Context;Lz/c;)V
 
-    .line 7
+    .line 9
     iget-object v1, p0, Lg/b;->c:Lm/g;
 
     invoke-virtual {v1, p1, v0}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

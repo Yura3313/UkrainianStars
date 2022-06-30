@@ -59,7 +59,7 @@
 
 
 # virtual methods
-.method public A(Ljava/util/List;)Lcom/google/android/material/appbar/AppBarLayout;
+.method public final A(Ljava/util/List;)Lcom/google/android/material/appbar/AppBarLayout;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -109,16 +109,15 @@
     return-object p1
 .end method
 
-.method public b(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+.method public final b(Landroid/view/View;Landroid/view/View;)Z
     .locals 0
 
-    .line 1
-    instance-of p1, p3, Lcom/google/android/material/appbar/AppBarLayout;
+    instance-of p1, p2, Lcom/google/android/material/appbar/AppBarLayout;
 
     return p1
 .end method
 
-.method public d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+.method public final d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -168,7 +167,7 @@
     sub-int/2addr v0, p1
 
     .line 9
-    invoke-static {p2, v0}, Lf0/r;->t(Landroid/view/View;I)V
+    invoke-static {p2, v0}, Lf0/r;->w(Landroid/view/View;I)V
 
     .line 10
     :cond_0
@@ -180,7 +179,7 @@
     check-cast p3, Lcom/google/android/material/appbar/AppBarLayout;
 
     .line 12
-    iget-boolean p1, p3, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
+    iget-boolean p1, p3, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
 
     if-eqz p1, :cond_1
 
@@ -197,37 +196,37 @@
     return p1
 .end method
 
-.method public e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)V
+.method public final e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)V
     .locals 0
 
     .line 1
-    instance-of p2, p3, Lcom/google/android/material/appbar/AppBarLayout;
+    instance-of p2, p2, Lcom/google/android/material/appbar/AppBarLayout;
 
     if-eqz p2, :cond_0
 
     .line 2
-    sget-object p2, Lg0/b$a;->h:Lg0/b$a;
+    sget-object p2, Lg0/c$a;->h:Lg0/c$a;
 
-    invoke-virtual {p2}, Lg0/b$a;->b()I
+    invoke-virtual {p2}, Lg0/c$a;->b()I
 
     move-result p2
 
-    invoke-static {p1, p2}, Lf0/r;->v(Landroid/view/View;I)V
+    invoke-static {p1, p2}, Lf0/r;->y(Landroid/view/View;I)V
 
     .line 3
-    sget-object p2, Lg0/b$a;->i:Lg0/b$a;
+    sget-object p2, Lg0/c$a;->i:Lg0/c$a;
 
-    invoke-virtual {p2}, Lg0/b$a;->b()I
+    invoke-virtual {p2}, Lg0/c$a;->b()I
 
     move-result p2
 
-    invoke-static {p1, p2}, Lf0/r;->v(Landroid/view/View;I)V
+    invoke-static {p1, p2}, Lf0/r;->y(Landroid/view/View;I)V
 
     :cond_0
     return-void
 .end method
 
-.method public n(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/graphics/Rect;Z)Z
+.method public final n(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/graphics/Rect;Z)Z
     .locals 3
 
     .line 1
@@ -258,11 +257,11 @@
     iget-object p2, p0, Lcom/google/android/material/appbar/HeaderScrollingViewBehavior;->c:Landroid/graphics/Rect;
 
     .line 4
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p1
 
@@ -288,10 +287,9 @@
     return v1
 .end method
 
-.method public bridge synthetic w(Ljava/util/List;)Landroid/view/View;
+.method public final bridge synthetic w(Ljava/util/List;)Landroid/view/View;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/appbar/AppBarLayout$ScrollingViewBehavior;->A(Ljava/util/List;)Lcom/google/android/material/appbar/AppBarLayout;
 
     move-result-object p1
@@ -299,7 +297,7 @@
     return-object p1
 .end method
 
-.method public y(Landroid/view/View;)F
+.method public final y(Landroid/view/View;)F
     .locals 4
 
     .line 1
@@ -323,7 +321,7 @@
     move-result v2
 
     .line 5
-    invoke-virtual {p1}, Landroid/widget/LinearLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
 
@@ -379,7 +377,7 @@
     return v1
 .end method
 
-.method public z(Landroid/view/View;)I
+.method public final z(Landroid/view/View;)I
     .locals 1
 
     .line 1

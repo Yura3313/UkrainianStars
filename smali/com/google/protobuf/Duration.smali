@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/protobuf/Duration$b;
+        Lcom/google/protobuf/Duration$a;
     }
 .end annotation
 
@@ -17,7 +17,7 @@
     value = {
         "Lcom/google/protobuf/GeneratedMessageLite<",
         "Lcom/google/protobuf/Duration;",
-        "Lcom/google/protobuf/Duration$b;",
+        "Lcom/google/protobuf/Duration$a;",
         ">;",
         "Lcom/google/protobuf/r0;"
     }
@@ -71,7 +71,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
     return-void
@@ -80,7 +79,6 @@
 .method public static synthetic access$000()Lcom/google/protobuf/Duration;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Duration;->DEFAULT_INSTANCE:Lcom/google/protobuf/Duration;
 
     return-object v0
@@ -89,7 +87,6 @@
 .method public static synthetic access$100(Lcom/google/protobuf/Duration;J)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/protobuf/Duration;->setSeconds(J)V
 
     return-void
@@ -98,7 +95,6 @@
 .method public static synthetic access$200(Lcom/google/protobuf/Duration;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/Duration;->clearSeconds()V
 
     return-void
@@ -107,7 +103,6 @@
 .method public static synthetic access$300(Lcom/google/protobuf/Duration;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/protobuf/Duration;->setNanos(I)V
 
     return-void
@@ -116,7 +111,6 @@
 .method public static synthetic access$400(Lcom/google/protobuf/Duration;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/Duration;->clearNanos()V
 
     return-void
@@ -127,7 +121,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Lcom/google/protobuf/Duration;->nanos_:I
 
     return-void
@@ -138,7 +131,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 1
     iput-wide v0, p0, Lcom/google/protobuf/Duration;->seconds_:J
 
     return-void
@@ -147,38 +139,37 @@
 .method public static getDefaultInstance()Lcom/google/protobuf/Duration;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Duration;->DEFAULT_INSTANCE:Lcom/google/protobuf/Duration;
 
     return-object v0
 .end method
 
-.method public static newBuilder()Lcom/google/protobuf/Duration$b;
+.method public static newBuilder()Lcom/google/protobuf/Duration$a;
     .locals 1
 
     .line 1
     sget-object v0, Lcom/google/protobuf/Duration;->DEFAULT_INSTANCE:Lcom/google/protobuf/Duration;
 
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$b;
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$a;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/protobuf/Duration$b;
+    check-cast v0, Lcom/google/protobuf/Duration$a;
 
     return-object v0
 .end method
 
-.method public static newBuilder(Lcom/google/protobuf/Duration;)Lcom/google/protobuf/Duration$b;
+.method public static newBuilder(Lcom/google/protobuf/Duration;)Lcom/google/protobuf/Duration$a;
     .locals 1
 
     .line 2
     sget-object v0, Lcom/google/protobuf/Duration;->DEFAULT_INSTANCE:Lcom/google/protobuf/Duration;
 
-    invoke-virtual {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+    invoke-virtual {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$a;
 
     move-result-object p0
 
-    check-cast p0, Lcom/google/protobuf/Duration$b;
+    check-cast p0, Lcom/google/protobuf/Duration$a;
 
     return-object p0
 .end method
@@ -434,7 +425,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Duration;->DEFAULT_INSTANCE:Lcom/google/protobuf/Duration;
 
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/c1;
@@ -447,7 +437,6 @@
 .method private setNanos(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/protobuf/Duration;->nanos_:I
 
     return-void
@@ -456,7 +445,6 @@
 .method private setSeconds(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/google/protobuf/Duration;->seconds_:J
 
     return-void
@@ -464,7 +452,7 @@
 
 
 # virtual methods
-.method public final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$f;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
@@ -473,8 +461,6 @@
     move-result p1
 
     const/4 p2, 0x1
-
-    const/4 p3, 0x0
 
     packed-switch p1, :pswitch_data_0
 
@@ -486,7 +472,9 @@
     throw p1
 
     :pswitch_0
-    return-object p3
+    const/4 p1, 0x0
+
+    return-object p1
 
     .line 3
     :pswitch_1
@@ -514,11 +502,11 @@
     if-nez p1, :cond_0
 
     .line 7
-    new-instance p1, Lcom/google/protobuf/GeneratedMessageLite$c;
+    new-instance p1, Lcom/google/protobuf/GeneratedMessageLite$b;
 
     sget-object p3, Lcom/google/protobuf/Duration;->DEFAULT_INSTANCE:Lcom/google/protobuf/Duration;
 
-    invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$c;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+    invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$b;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
 
     .line 8
     sput-object p1, Lcom/google/protobuf/Duration;->PARSER:Lcom/google/protobuf/c1;
@@ -576,13 +564,14 @@
 
     .line 12
     :pswitch_5
-    new-instance p1, Lcom/google/protobuf/Duration$b;
+    new-instance p1, Lcom/google/protobuf/Duration$a;
 
-    invoke-direct {p1, p3}, Lcom/google/protobuf/Duration$b;-><init>(Lcom/google/protobuf/Duration$a;)V
+    .line 13
+    invoke-direct {p1}, Lcom/google/protobuf/Duration$a;-><init>()V
 
     return-object p1
 
-    .line 13
+    .line 14
     :pswitch_6
     new-instance p1, Lcom/google/protobuf/Duration;
 
@@ -607,7 +596,6 @@
 .method public getNanos()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/Duration;->nanos_:I
 
     return v0
@@ -616,7 +604,6 @@
 .method public getSeconds()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/protobuf/Duration;->seconds_:J
 
     return-wide v0

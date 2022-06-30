@@ -493,7 +493,6 @@
 .method private isHttps()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Cache$Entry;->url:Ljava/lang/String;
 
     const-string v1, "https://"
@@ -602,7 +601,7 @@
     .line 9
     new-instance v0, Ljava/io/IOException;
 
-    invoke-virtual {p1}, Ljava/security/cert/CertificateException;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 
@@ -705,7 +704,7 @@
     .line 8
     new-instance p2, Ljava/io/IOException;
 
-    invoke-virtual {p1}, Ljava/security/cert/CertificateEncodingException;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 

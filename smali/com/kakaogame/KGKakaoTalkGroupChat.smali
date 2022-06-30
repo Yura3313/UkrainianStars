@@ -116,7 +116,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -148,7 +148,6 @@
 .method public static synthetic access$100(II)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/KGKakaoTalkGroupChat;->loadGroupChats(II)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -159,7 +158,6 @@
 .method private static initInterfaceBroker()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/kakaogame/KGKakaoTalkGroupChat$2;
 
     invoke-direct {v0}, Lcom/kakaogame/KGKakaoTalkGroupChat$2;-><init>()V
@@ -174,7 +172,6 @@
 .method public static initialize()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/KGKakaoTalkGroupChat;->initInterfaceBroker()V
 
     return-void
@@ -369,7 +366,7 @@
     const-string p1, "KGKakaoTalkGroupChat"
 
     .line 20
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -378,7 +375,7 @@
     const/16 p1, 0xfa1
 
     .line 21
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -390,7 +387,7 @@
 
     .line 22
     :goto_0
-    invoke-static {v0, p0}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -405,7 +402,7 @@
 
     .line 24
     :goto_1
-    invoke-static {v0, v1}, Lcom/kakaogame/e;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -449,7 +446,6 @@
 
     const-string v0, "chatId"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -521,7 +517,6 @@
 
     const-string v0, "memberCount"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -548,7 +543,6 @@
 
     const-string v0, "memberThumbnailImageUrls"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -563,7 +557,6 @@
 
     const-string v0, "thumbnailImageUrl"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -578,7 +571,6 @@
 
     const-string v0, "title"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0

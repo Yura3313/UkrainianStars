@@ -9,16 +9,15 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/protobuf/f$b;
+        Lcom/google/protobuf/f$a;
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/protobuf/f$a;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

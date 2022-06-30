@@ -52,7 +52,7 @@ TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,Wil je <NUM> tokens kopen en doorgaan naar
 TID_PURCHASE_BRAWL_PASS_TITLE,KOOP DE BRAWL PASS!
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,BRAWL PASS
 TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,BRAWL PASS-BUNDEL
-TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"Ontgrendel Brawl Pass-beloningen, extra opdrachten en 2 extra opdrachtwissels per week."
+TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"Ontgrendel Brawl Pass-beloningen, extra opdrachten en <NUM> opdrachtwissels per week."
 TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,BRAWL PASS + <NUM> DREMPELS
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,Het is niet mogelijk om een Brawl Pass uit een voorgaand seizoen te kopen.
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,De Brawl Pass voor het huidige seizoen kan niet worden gevonden. Probeer het later opnieuw.
@@ -274,7 +274,7 @@ TID_LONG_RANGE_SHOTGUN_DESC,"Shelly's schietijzer vuurt kogeltjes af met een mid
 TID_MEGA_BLASH_ULTI,SUPERHULS
 TID_MEGA_BLASH_ULTI_DESC,Shelly's superhuls vernietigt zowel beschutting als vijanden. Eventuele overlevenden worden teruggeslagen.
 TID_GUNSLINGER,COLT
-TID_GUNSLINGER_DESC,Colt vuurt met zijn twee revolvers een nauwkeurig salvo van kogels af. Met zijn superaanval kan hij extra ver schieten en beschutting vernietigen!
+TID_GUNSLINGER_DESC,Een onwaarschijnlijke held die vaak op het juiste moment op de verkeerde plek is. Hij is dol op zijn spiegelbeeld en loopt over van zelfvertrouwen!
 TID_RAPID_FIRE,ZESSCHUTTER
 TID_RAPID_FIRE_DESC,Colt vuurt zes rechte langeafstandsschoten af met zijn revolvers.
 TID_RAPID_FIRE_ULTI,KOGELSTORM
@@ -286,13 +286,13 @@ TID_SHOTGUN_BLAST_DESC,"Het dubbelloopsgeweer van Bull richt zware schade aan. H
 TID_CHARGE,BULLDOZER
 TID_CHARGE_DESC,Bull houdt zijn hoofd naar beneden en bulldozert over zijn vijanden en obstakels heen. Hij is gewoon een heethoofd.
 TID_ROCKET_GIRL,BROCK
-TID_ROCKET_GIRL_DESC,Brock vuurt een explosieve langeafstandsraket af op zijn vijanden. Zijn superaanval is een spervuur van raketten die beschutting vernietigen!
+TID_ROCKET_GIRL_DESC,"Wanneer Brock het gevecht niet met raketten verlicht, dan straalt hij op de dansvloer met zijn soepele moves."
 TID_FIREWORKS_WEAPON,ROCKENDE RAKET
 TID_FIREWORKS_WEAPON_DESC,Brock vuurt een enkele rockende raket af die echt tot het uiterste gaat.
 TID_FIREWORKS_ULTI,RAKETTENREGEN
 TID_FIREWORKS_ULTI_DESC,Brock vuurt een spervuur van raketten af die vijanden en obstakels uitschakelen. Hij wil je zien dansen in de rakettenregen.
 TID_TNT_DUDE,DYNAMIKE
-TID_TNT_DUDE_DESC,Dynamike gooit twee dynamietstaven. Zijn superaanval bestaat uit een ton met dynamiet die beschutting opblaast!
+TID_TNT_DUDE_DESC,Er is lang gedacht dat hij diep in een mijn was verdwenen. Maar die gekke Dynamike is terug en hij heeft nog steeds zin om alles tot gruzelementen op te blazen!
 TID_MORTAR,KORT LONTJE
 TID_MORTAR_DESC,"Mike gooit twee dynamietstaven, over obstakels heen als het moet. De lontjes zijn net zo kort als Mikes eigen lontje."
 TID_MORTAR_ULTI,GROTE BOEMTON
@@ -316,7 +316,7 @@ TID_CACTUS_WEAPON_DESC,Spike vuurt een kleine cactus af die explodeert waardoor 
 TID_CACTUS_ULTI,BLIJF PLAKKEN!
 TID_CACTUS_ULTI_DESC,Spike gooit een netelige granaat. Vijanden in het ontploffingsgebied lopen schade op en worden vertraagd.
 TID_BARKEEP,BARLEY
-TID_BARKEEP_DESC,Barley valt zijn vijanden aan door flessen te gooien die gebiedsschade aanrichten. Zijn superaanval bestaat uit een spervuur van ontvlambare flessen!
+TID_BARKEEP_DESC,"Barley serveert bereidwillig de beste drankjes in Starr Park. Maar als je zijn bar vies maakt, komt er stoom uit zijn oren en vliegen de flessen door de lucht!"
 TID_BARKEEP_WEAPON,ONVERDUND
 TID_BARKEEP_WEAPON_DESC,Barley gooit een fles die op de grond breekt. Vijanden lopen schade op door de spetters en nog meer schade naarmate de tijd verstrijkt als ze in de plas blijven staan.
 TID_BARKEEP_ULTI,LAATSTE RONDJE
@@ -340,7 +340,7 @@ TID_UNDERTAKER_WEAPON_DESC,"Mortis sprint naar voren met een scherpe zwaai van z
 TID_UNDERTAKER_ULTI,LEVENSBLOED
 TID_UNDERTAKER_ULTI_DESC,Mortis roept een zwerm vampiervleermuizen op die de gezondheid van vijandelijke knokkers aftappen terwijl ze de zijne herstellen. Eng hoor!
 TID_CROW,CROW
-TID_CROW_DESC,Crow gooit een trio van giftige dolken. Met zijn superaanval springt hij de lucht in en vuurt hij zowel bij het opstijgen als bij het landen dolken af!
+TID_CROW_DESC,Dit raadselachtig figuur verscheen op een dag in de stad. Niemand durft hem achter de veren te zitten.
 TID_CROW_WEAPON,STILETTO
 TID_CROW_WEAPON_DESC,Crow gooit een trio aan dolken. Vijanden die worden geraakt door de met gif doordrenkte lemmeten lopen geleidelijk aan schade op en zijn minder vatbaar voor genezende effecten.
 TID_CROW_ULTI,DUIKVLUCHT
@@ -376,7 +376,7 @@ TID_BONE_THROWER_WEAPON_DESC,De minischutter hanteert dit enorme machinegeweer a
 TID_BONE_THROWER_ULTI,PLEISTERDISPENSER
 TID_BONE_THROWER_ULTI_DESC,Soms loop je schrammen of vleeswonden op in een vuurgevecht. De pleisterdispenser houdt je hele team in vorm.
 TID_BLACK_HOLE,TARA
-TID_BLACK_HOLE_DESC,Tara's driedubbele tarotkaartenaanval doorboort haar vijanden. Met haar superaanval creëert ze een zwart gat dat vijanden naar het midden trekt waardoor ze schade oplopen!
+TID_BLACK_HOLE_DESC,Wat heeft de toekomst voor jou in petto? Deze waarzegster uit een ver land kan het je vertellen: een NEDERLAAG!
 TID_BLACK_HOLE_WEAPON,DRIEDUBBELE TAROT
 TID_BLACK_HOLE_WEAPON_DESC,Tara gooit vliegensvlug drie tarotkaarten die vijanden doorboren. Knap trucje!
 TID_BLACK_HOLE_ULTI,ZWAARTEKRACHT
@@ -670,11 +670,11 @@ TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Chromatische knokkers kunnen verschillende zeldzaamheden aannemen, gaande van legendarisch, naar mythisch en uiteindelijk episch. De kans om ze te ontgrendelen neemt met elk Brawl Pass-seizoen toe.\n\nDit seizoen heeft <BRAWLER> de zeldzaamheid <RARITY>."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"Chromatische knokkers kunnen verschillende zeldzaamheden aannemen, gaande van legendarisch, naar mythisch en uiteindelijk episch. De kans om ze te ontgrendelen neemt met elk Brawl Pass-seizoen toe.\n\nJe moet drempel <TIER> van seizoen <SEASON> bereiken om <BRAWLER> in dozen te kunnen vinden."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"Chromatische knokkers kunnen verschillende zeldzaamheden aannemen, gaande van legendarisch, naar mythisch en uiteindelijk episch. De kans om ze te ontgrendelen neemt met elk Brawl Pass-seizoen toe.\n\n<BRAWLER> kan ontgrendeld worden in seizoen <SEASON>."
-TID_MATCHMAKE_FAILED_5,Koppeling mislukt: evenement is verlopen.
-TID_MATCHMAKE_FAILED_7,Koppelen mislukt: verbinding van teamlid werd verbroken.
-TID_MATCHMAKE_FAILED_9,Koppeling mislukt: onderhoud begint.
-TID_MATCHMAKE_FAILED_11,Koppeling mislukt: teamlid heeft koppelprocedure verlaten.
-TID_MATCHMAKE_FAILED_12,Koppeling mislukt: je hebt de laatste baas al verslagen.
+TID_MATCHMAKE_FAILED_5,Koppelen mislukt: het evenement is verlopen.
+TID_MATCHMAKE_FAILED_7,Koppelen mislukt: de verbinding van een teamlid werd verbroken.
+TID_MATCHMAKE_FAILED_9,Koppelen mislukt: er begint onderhoud.
+TID_MATCHMAKE_FAILED_11,Koppelen mislukt: een teamlid heeft de koppelprocedure verlaten.
+TID_MATCHMAKE_FAILED_12,Koppelen mislukt: je hebt de laatste baas al verslagen.
 TID_MATCHMAKE_FAILED_14,KRACHTSPEL kan alleen worden gespeeld met knokkers met een sterrenkracht.
 TID_MATCHMAKE_FAILED_15,Je kunt vandaag geen KRACHTSPELLEN meer spelen.
 TID_MATCHMAKE_FAILED_19,De gekozen knokker kan dit seizoen niet worden gebruikt voor KRACHTSPEL en uitdagingen.
@@ -1146,8 +1146,8 @@ TID_STREAM_EVENT_101,<sender> heeft het team gevormd.
 TID_STREAM_EVENT_102,Speler <sender> heeft zich aangesloten.
 TID_STREAM_EVENT_103,<sender> heeft het team verlaten.
 TID_STREAM_EVENT_104,Doei! <sender> heeft <target> eruit gezet.
-TID_STREAM_EVENT_105,koppeling gestart
-TID_STREAM_EVENT_106,koppeling geannuleerd
+TID_STREAM_EVENT_105,koppelprocedure gestart
+TID_STREAM_EVENT_106,koppelprocedure geannuleerd
 TID_STREAM_EVENT_107,gevecht is begonnen
 TID_STREAM_EVENT_108,gevecht gewonnen
 TID_STREAM_EVENT_109,gevecht verloren
@@ -1625,11 +1625,11 @@ TID_BARREL_BOT_WEAPON_DESC,Darryls dubbelloopsgeweren schieten twee enorme schot
 TID_BARREL_BOT_ULTI,ROLLENDE TONNEN
 TID_BARREL_BOT_ULTI_DESC,"Darryl rolt naar voren met zijn ton, waarbij hij vijanden omver kan beuken, tegen muren kan stuiteren en minder schade oploopt. Zijn super wordt geleidelijk aan opgeladen."
 TID_ARTILLERY_DUDE,PENNY
-TID_ARTILLERY_DUDE_DESC,Penny schiet buidels met munten die schade toebrengen aan het doelwit en iedereen die erachter staat. Haar superaanval is een kanonnengeschut dat als een mortier projectielen afvuurt.
+TID_ARTILLERY_DUDE_DESC,Als een rebel zonder doel heerst de boosaardige Penny over de open zee. Ze is een ware lastpak die op zoek is naar avontuur en alles doet om te kunnen plunderen.
 TID_ARTILLERY_DUDE_WEAPON,PLUNDERBUS
 TID_ARTILLERY_DUDE_WEAPON_DESC,"Schiet een buidel met het goud der dwazen. Als de buidel een vijand raakt, barst hij open en de munten raken doelwitten achter de eerste vijand."
 TID_ARTILLERY_DUDE_ULTI,OUDE WERPER
-TID_ARTILLERY_DUDE_ULTI_DESC,"Penny zet haar kanon klaar. Dit schiet op vijanden vanaf lange afstand, zelfs als ze achter beschutting staan."
+TID_ARTILLERY_DUDE_ULTI_DESC,"Penny zet haar kanon klaar, dat op vijanden vanaf lange afstand en achter beschutting kan schieten en de grond in brand kan zetten."
 TID_ITEM_NAME_SPECIAL,STERRENKRACHT
 TID_HERO_INFO_ITEM_LOCKED,Je kunt dit vanaf level <LEVEL> vinden.
 TID_HERO_INFO_LOCKED_INFO,Ontgrendel knokker in knokdozen
@@ -2161,7 +2161,7 @@ TID_RAID_BOSS_DIFFICULTY_18,Waanzinnig XV
 TID_RAID_BOSS_DIFFICULTY_19,Waanzinnig XVI
 TID_RAID_BOSS_DIFFICULTY_20,JULLIE ZIJN TE GEK!
 TID_MODES_NEW_EVENT,NIEUW EVENEMENT
-TID_MODES_NEW_EVENTS,NIEUWE EVENEMENTEN!
+TID_MODES_NEW_EVENTS,NIEUWE EVENEMENTEN
 TID_TEAM_MEMBER_STATUS_NEW_0,<c999999>OFFLINE</c>
 TID_TEAM_MEMBER_STATUS_NEW_1,IN GEVECHT
 TID_TEAM_MEMBER_STATUS_NEW_2,WEG
@@ -2532,8 +2532,8 @@ TID_CONTENT_UPDATE,Content downloaden...
 TID_BATTLE_ROYALE_28,Vliegende fantasieën
 TID_SHAMAN_SHIBA_SKIN,SHIBA-NITA
 TID_PENNY_BUNNY_SKIN,KONIJNEN-PENNY
-TID_SHAMAN_SHIBA_SKIN_SHOP,SHIBA-NITA
-TID_PENNY_BUNNY_SKIN_SHOP,KONIJNEN-PENNY
+TID_SHAMAN_SHIBA_SKIN_SHOP,SHIBA-\nNITA
+TID_PENNY_BUNNY_SKIN_SHOP,KONIJN-\nPENNY
 TID_PURCHASE_POPUP_CONFIRM_OFFER,AANBIEDING KOPEN?
 TID_PURCHASE_POPUP_CONFIRM_SKIN,SKIN KOPEN?
 TID_PURCHASE_POPUP_CONFIRM_HERO,KNOKKER KOPEN?
@@ -3338,6 +3338,8 @@ TID_ACCESSORY_BLOCKED_SUPER_REQUIRED,Je super moet opgeladen zijn!
 TID_ACCESSORY_BLOCKED_REQUIRES_MECHA,Mecha vereist!
 TID_ACCESSORY_BLOCKED_REQUIRES_DUPLICATE,Lola's ego is vereist!
 TID_ACCESSORY_BLOCKED_DUPLICATE_TOO_FAR,Lola's ego is te ver weg!
+TID_ACCESSORY_BLOCKED_SILENCED,Onderdrukt!
+TID_ACCESSORY_BLOCKED_RANGE_TO_TURRET,Geen vijanden binnen bereik!
 TID_WALLY_SHORT_DESC,HELPER
 TID_WALLY_DESC,Sprout is gebouwd om nieuw leven te zaaien en lanceert al rollend zaadbommen. Met zijn super plant hij een obstakel van klimplanten!
 TID_WALLY_WEAPON,ZAADBOM
@@ -3774,7 +3776,7 @@ TID_BRAWLPASS_POPUP_UNLOCKED,BRAWL PASS ONTGRENDELD!
 TID_BRAWL_PASS_SEASON_1,MONSTERZOMER
 TID_BRAWL_PASS_INFO_TEXT_1,"Verdien tal van extra beloningen, waaronder:\n\nSURGE, de nieuwe chromatische knokker!\n\nEXCLUSIEVE SKIN: <SKIN_1>!\n\nEXCLUSIEVE SKIN: <SKIN_2>!\n\nEXCLUSIEVE en COOLE REACTIES voor SURGE!\n\n<NUM> MEGADOZEN!\n\nEXTRA MUNTEN en KRACHTPUNTEN!\n\n\nEXTRA OPDRACHTEN om je Brawl Pass sneller te voltooien!\n\nEXCLUSIEVE CHROMATISCHE NAAM tijdens het hele seizoen!"
 TID_EMOTE_EQUIP_NOT_OWNED,Vind deze reactie in reactiepakketten!
-TID_RAID_BOSS_TOWN_CRUSHER_INTRO_TEXT,VERSLA HET MEGAMONSTER!
+TID_RAID_BOSS_TOWN_CRUSHER_INTRO_TEXT,Versla het megamonster!
 TID_EMOTE_CATEGORY_1,VAK 1
 TID_EMOTE_CATEGORY_2,VAK 2
 TID_EMOTE_CATEGORY_3,VAK 3
@@ -3868,13 +3870,13 @@ TID_KING_OF_HILL_28,Meesterlijke controle
 TID_EMOTE_EQUIP_NOT_OWNED_SPECIAL,Luxueuze reactie! Deze reactie is niet standaard verkrijgbaar!
 TID_LOGIN_WITH_FACEBOOK,Aanmelden met Facebook
 TID_TERMS_OF_SERVICE_BUTTON_TENCENT,Licentie- en serviceovereenkomst van Tencent Games
-TID_PRIVACY_POLICY_BUTTON_TENCENT,Richtlijnen betreffende privacybescherming van Tencent Games
+TID_PRIVACY_POLICY_BUTTON_TENCENT,荒野乱斗隐私保护指引
 TID_PARENTS_GUIDE_BUTTON_TENCENT,Richtlijnen betreffende de privacybescherming van kinderen van Tencent Games
 TID_TENCENT_LOGIN_AGREEMENTS,"Ik heb de <TOS>, het <PP>, de <CHILDREN> en de <THIRDPARTY> zorgvuldig gelezen en ga ermee akkoord."
 TID_THIRD_PARTY_SHARING_BUTTON_TENCENT,Lijst van gedeelde info met derden
 TID_TENCENT_THIRDPARTY_INFO,Lijst van gedeelde info met derden
 TID_TENCENT_LOGIN_TOS,Licentie- en serviceovereenkomst van Tencent Games
-TID_TENCENT_LOGIN_PP,Richtlijnen betreffende privacybescherming van Tencent Games
+TID_TENCENT_LOGIN_PP,荒野乱斗隐私保护指引
 TID_TENCENT_LOGIN_CHILDREN,Richtlijnen betreffende de privacybescherming van kinderen van Tencent Games
 TID_TENCENT_LOGIN_AGREEMENT_NOTE,"Je dient\nde <TOS>,\nhet <PP>,\nde <CHILDREN>\nen de <THIRDPARTY>\nzorgvuldig te lezen en ermee akkoord te gaan voordat je toegang krijgt tot het spel."
 TID_KING_OF_HILL_29,Stroomstoring
@@ -3995,12 +3997,19 @@ TID_TENCENT_LOGIN_AGREEMENT_POPUP_2_TITLE,Belangrijk bericht
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_2,"Je dient\nde <TOS>,\nhet <PP>,\nde <CHILDREN>\nen de <THIRDPARTY>\nzorgvuldig te lezen en ermee akkoord te gaan voordat je toegang krijgt tot het spel."
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_BACK,Terug
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_NO,Nee
+TID_TENCENT_LOGIN_BS_PP,荒野乱斗隐私保护指引
+TID_TENCENT_LOGIN_SPECIAL_TOS,《腾讯游戏许可及服务协议》
+TID_TENCENT_LOGIN_SPECIAL_OLD_PP,《腾讯游戏隐私保护指引》
+TID_TENCENT_LOGIN_SPECIAL_BS_PP,《荒野乱斗隐私保护指引》
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1_TITLE,更新提示
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1,尊敬的腾讯游戏用户：\n为充分保障您的权利及个人信息安全，我们根据法律法规要求，\n对<OLDPP>进行了更新。我们结合本产品和业务实际，更详细、具体地向您说明我们收集和使用您个人信息的业务场景及目的，具体可参见<PP>内更新提示。\n您也可以阅读完整版\n<PP>和<TOS>\n了解详尽的个人信息处理规则和用户权利义务。如您已详细阅读并同意\n<TOS>和<PP>，\n请点击\q同意\q继续使用我们的服务。
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_2,尊敬的用户，您需要详细阅读并同意\n<TOS>、<PP>、\n<CHILDREN>和<THIRDPARTY>，\n才可进入游戏哦。
 TID_BRAWL_PASS_SEASON_2,WELKOM BIJ STARR PARK!
 TID_BRAWL_PASS_INFO_TEXT_2,"Verdien tal van extra beloningen, waaronder:\n\n<BRAWLER>, de nieuwe chromatische knokker!\n\nEXCLUSIEVE SKIN: <SKIN_1>!\n\nEXCLUSIEVE SKIN: <SKIN_2>!\n\nEXCLUSIEVE en COOLE REACTIES voor <BRAWLER>!\n\n<NUM> MEGADOZEN!\n\nEXTRA MUNTEN en KRACHTPUNTEN!\n\n\nEXTRA OPDRACHTEN om je Brawl Pass sneller te voltooien!\n\nEXCLUSIEVE CHROMATISCHE NAAM tijdens het hele seizoen!"
 TID_BRAWL_PASS_SEASON_3,WINTERUITJE
 TID_BRAWL_PASS_INFO_TEXT_3,"Verdien tal van extra beloningen, waaronder:\n\n<BRAWLER>, de nieuwe chromatische knokker!\n\nEXCLUSIEVE SKIN: <SKIN_1>!\n\nEXCLUSIEVE SKIN: <SKIN_2>!\n\nEXCLUSIEVE en COOLE REACTIES voor <BRAWLER>!\n\n<NUM> MEGADOZEN!\n\nEXTRA MUNTEN en KRACHTPUNTEN!\n\n\nEXTRA OPDRACHTEN om je Brawl Pass sneller te voltooien!\n\nEXCLUSIEVE CHROMATISCHE NAAM tijdens het hele seizoen!"
 TID_BRAWL_PASS_SEASON_4,STARR FORCE!
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,"Verdien tal van extra beloningen, waaronder:\n\n<BRAWLER>, de nieuwe chromatische knokker!\n\nTIJDELIJKE EXCLUSIEVE SKIN: <SKIN_1>!\n\nTIJDELIJKE EXCLUSIEVE SKIN: <SKIN_2>!\n\nTIJDELIJKE EXCLUSIEVE en COOLE REACTIES voor <BRAWLER>!\n\nTIJDELIJKE EXCLUSIEVE SPRAYS!\n\n<NUM>MEGADOZEN!\n\nEXTRA MUNTEN en KRACHTPUNTEN!\n\n\nEXTRA OPDRACHTEN om je Brawl Pass sneller te voltooien!\n\n<NUM>EXTRA OPDRACHTWISSELS PER WEEK!\n\nEXCLUSIEVE CHROMATISCHE NAAM tijdens het hele seizoen!"
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,"Verdien tal van extra beloningen, waaronder:\n\n<BRAWLER>, de nieuwe chromatische knokker!\n\nTIJDELIJKE EXCLUSIEVE SKIN: <SKIN_1>!\n\nTIJDELIJKE EXCLUSIEVE SKIN: <SKIN_2>!\n\nTIJDELIJKE EXCLUSIEVE en COOLE REACTIES voor <BRAWLER>!\n\nTIJDELIJKE EXCLUSIEVE SPRAYS!\n\n<NUM_BOX> MEGADOZEN!\n\nEXTRA MUNTEN en KRACHTPUNTEN!\n\nEXTRA OPDRACHTEN om je Brawl Pass sneller te voltooien!\n\n<NUM_REROLL> EXTRA OPDRACHTWISSELS PER WEEK!\n\nEXCLUSIEVE CHROMATISCHE NAAM tijdens het hele seizoen!"
 TID_QUESTS_MORE,Alle opdrachten tonen
 TID_QUESTS_MORE_NEXT_SEASON,Je hebt alle opdrachten van seizoen <THIS_SEASON> voltooid. Er komen nieuwe opdrachten beschikbaar wanneer seizoen <NEXT_SEASON> begint.
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,Beloningen van seizoen <NUM>
@@ -4475,7 +4484,7 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,KNOKFEESTDAGEN-REACTIES
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,Belangrijk bericht
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Bedankt voor het gebruiken van de kaartenmaker. Zorg ervoor dat je je bij het gebruik van de kaartenmaker aan de licentie- en serviceovereenkomst van Tencent Games en andere gerelateerde voorschriften houdt. Maak of verspreid geen ongepaste content die erotisch of obsceen is, een gevaar vormt voor nationale eenheid, soevereiniteit en territoriale integriteit, of wetten en andere voorschriften schendt."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Bedankt voor het gebruiken van de kaartenmaker. Zorg ervoor dat je je bij het gebruik van de kaartenmaker aan de gebruikersovereenkomst en andere gerelateerde voorschriften houdt. Maak of verspreid geen ongepaste content die erotisch of obsceen is, een gevaar vormt voor nationale eenheid, soevereiniteit en territoriale integriteit, of wetten en andere voorschriften schendt."
-TID_RUFFS,KOLONEL RUFFS
+TID_RUFFS,KOLONEL\nRUFFS
 TID_RUFFS_SHORT_DESC,HELPER
 TID_RUFFS_DESC,Ruffs vuurt dubbele laserstralen af die tegen muren kaatsen. Met zijn super vraagt hij om luchtbevoorrading die tegenstanders beschadigt bij impact en een boost achterlaat voor teamgenoten.
 TID_RUFFS_WEAPON,DUBBELLOOPSE LASER
@@ -4649,7 +4658,7 @@ TID_RANKED_CLUB_LEAGUE_EVENT_LOCATION_INFO,Willekeurige spelmodus en kaart
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_1,Neem deel aan 3-tegen-3-gevechten in een team of met andere spelers van een vergelijkbaar level.
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_2,"Het eerste team dat twee gevechten wint, wint de wedstrijd."
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_3,Houd er rekening mee dat spelmodi en kaarten vaak en willekeurig wisselen.
-TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"Wanneer het seizoen eindigt, krijg je beloningen gebaseerd op het aantal tickets dat je hebt gebruikt en de eindpositie van je club."
+TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"Wanneer de week eindigt, krijg je beloningen gebaseerd op het aantal tickets dat je hebt gebruikt en de eindpositie van je club."
 TID_RANKED_EVENT_SEASON_REWARDS_BUTTON,SEIZOENSBELONINGEN
 TID_RANKED_EVENT_SOLO,KRACHTDIVISIE
 TID_RANKED_EVENT_TEAMS,KRACHTDIVISIE
@@ -4742,6 +4751,7 @@ TID_RANKED_PICK_ERROR_BRAWLER_BANNED,Deze knokker is geblokkeerd. Kies een ander
 TID_RANKED_PICK_ERROR_BRAWLER_PICKED,Iemand anders heeft deze knokker al gekozen. Kies een andere knokker.
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED,Deze knokker is nog niet beschikbaar in de krachtdivisie. Kies een andere knokker!
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED_CLUB_LEAGUE,Deze knokker is nog niet beschikbaar voor krachtwedstrijden. Kies een andere knokker!
+TID_RANKED_ERROR_BRAWLER_BLACKLISTED,Deze knokker is uitgeschakeld door de organisator van het toernooi.
 TID_RANKED_HERO_POWER,KRACHT <NUM>
 TID_RANKED_REWARD_POPUP_SEASON,SEIZOEN <SEASON>
 TID_RANKED_REWARDS_TOOL_TIP,De KRACHTDIVISIE bestaat uit twee 3-tegen-3-modi:\n\n- Solomodus: je wordt in een team geplaatst met twee willekeurige spelers van een vergelijkbaar level.\n\n- Teammodus: je vormt eerst een team van drie spelers voordat je een wedstrijd begint.\n\nJe seizoensbeloningen worden gebaseerd op de hoogste rang die je in een van de modi hebt bereikt.
@@ -4789,6 +4799,8 @@ TID_RANKED_MATCH_TERMINATED_REASON_1,Wedstrijd afgebroken: de verbinding van <NA
 TID_RANKED_MATCH_TERMINATED_REASON_2,Wedstrijd afgebroken: <NAME> was niet actief.
 TID_RANKED_MATCH_TERMINATED_REASON_3,Wedstrijd afgebroken: het seizoen is afgelopen.
 TID_RANKED_MATCH_TERMINATED_REASON_4,Wedstrijd afgebroken (<CODE>). Probeer het opnieuw.
+TID_RANKED_MATCH_TERMINATED_REASON_5,Wedstrijd afgebroken: de wedstrijd duurde te lang.
+TID_RANKED_MATCH_TERMINATED_REASON_6,Wedstrijd afgebroken: het gevecht duurde te lang.
 TID_RANKED_GOAL_REWARD_PURCHASE_OPTION_SKIN,EXCLUSIEVE AANKOOPOPTIE: SKIN
 TID_RANKED_MATCH_TERMINATED_NAME_PLAYER,een speler
 TID_RANKED2_CONFIRM_PICKED,GEKOZEN
@@ -5358,17 +5370,17 @@ TID_CLUB_LEAGUES_BUTTON_EVENT_DAY,Dag <DAY>
 TID_CLUB_LEAGUES_BUTTON_DAY_NEW,NIEUWE DAG!
 TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,VOLGENDE EVENEMENTEN
 TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,Volgende evenementdag:
-TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Volgende seizoen:
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Positie in het seizoen: <RANK>
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Niet geklasseerd
+TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,De volgende week begint over:
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Positie deze week: <RANK>
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Niet geklasseerd in deze week
 TID_CLUB_LEAGUES_BUTTON_JOIN_CLUB_DESC,Sluit je aan bij een club.
 TID_CLUB_LEAGUES_BUTTON_REGISTRATION_CLOSED,Aanmelding gesloten
 TID_CLUB_LEAGUE_EVENT_TIME_LEFT,<TIME> over
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_DESC,Volgende evenementdag begint over:
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_TIME,<TIME>
-TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,Seizoen begint over: <TIME>
+TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,De volgende week begint over: <TIME>
 TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TITLE,CLUBCOMPETITIE
-TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,Volgende seizoensevenementen:
+TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,Evenementen van de volgende week:
 TID_CLUB_LEAGUE_TICKETS_PER_PLAY,<NUM><cA4B7E0>/WEDSTRIJD</c>
 TID_CLUB_LEAGUE_TROPHIES_MAX_PER_WIN,Max./zege
 TID_CLUB_LEAGUE_EVENT_TROPHY_WIN_DESC,Overwinning met clubteam:
@@ -5408,17 +5420,17 @@ TID_CLUB_LEAGUE_MASTERS,MEESTER
 TID_CLUB_LEAGUE_TIER_1,I
 TID_CLUB_LEAGUE_TIER_2,II
 TID_CLUB_LEAGUE_TIER_3,III
-TID_CLUB_LEAGUE_SEASON_PROGRESS,SEIZOENSVOORTGANG
+TID_CLUB_LEAGUE_SEASON_PROGRESS,WEEKVOORTGANG
 TID_CLUB_LEAGUE_SEASON_ENDS_IN,Eindigt over:
 TID_CLUB_LEAGUE_WAITING_FINAL_RESULTS,Wachten op eindresultaten...
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,Wachten op seizoensresultaten...
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,De seizoensresultaten worden verwerkt. Kom later terug voor de eindresultaten!
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,Wachten op de resultaten van deze week
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,De weekresultaten worden verwerkt. Kom later terug voor de eindresultaten!
 TID_CLUB_LEAGUE_RESULTS_TITLE,Resultaten:
-TID_CLUB_LEAGUE_SEASON_OVER,SEIZOEN AFGELOPEN!
-TID_CLUB_LEAGUE_SEASON_OVER_2,SEIZOEN AFGELOPEN
+TID_CLUB_LEAGUE_SEASON_OVER,WEEK AFGELOPEN!
+TID_CLUB_LEAGUE_SEASON_OVER_2,WEEK AFGELOPEN
 TID_CLUB_LEAGUE_MAX_TROPHIES_AVAILABLE,Maximale beschikbare trofeeën
-TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,SEIZOENSVOORTGANG
-TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,SEIZOENSRESULTATEN
+TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,WEEKVOORTGANG
+TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,WEEKRESULTATEN
 TID_CLUB_LEAGUE_ITEM_PROMOTING,PROMOTIE
 TID_CLUB_LEAGUE_ITEM_PROMOTING_MULTIPLE,PROMOTIE: X<NUM>
 TID_CLUB_LEAGUE_ITEM_DEMOTING,DEGRADATIE
@@ -5430,15 +5442,15 @@ TID_CLUB_LEAGUE_COLUMN_MAX_REWARD,MAXIMALE BELONING
 TID_CLUB_LEAGUE_SHOP_DESC,Versnel je voortgang en koop exclusieve skins!
 TID_CLUB_LEAGUE_SHOP_BUTTON_DESC,VERSNEL JE VOORTGANG EN KOOP EXCLUSIEVE SKINS:
 TID_CLUB_LEAGUE_BUTTON_VISIT_CLUB_SHOP,NAAR CLUBWINKEL
-TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,JOUW SEIZOENSBELONING
+TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,JE WEEKBELONING
 TID_CLUB_LEAGUE_SEASON_END_REWARD_CLAIMED,OPGEHAALD
 TID_CLUB_LEAGUE_NOT_YET_RANKED,NOG NIET GEKLASSEERD
-TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,AANMELDING VOOR SEIZOEN GESLOTEN
-TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,TOEKIJKEN BIJ DIT SEIZOEN
-TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,Wacht tot het volgende seizoen om te kunnen spelen!
-TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,Evenementen in het volgende seizoen:
-TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,Volgende seizoen begint over <TIME>
-TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,Gebruik alle tickets in een seizoen om de hoogst mogelijke individuele beloning te krijgen!
+TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,AANMELDING VOOR DEZE WEEK GESLOTEN
+TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,TOEKIJKEN BIJ DEZE WEEK
+TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,Wacht tot de volgende week om te kunnen spelen!
+TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,Evenementen van de volgende week:
+TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,De volgende week begint over: <TIME>
+TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,Gebruik alle tickets in een week om de hoogst mogelijke individuele beloning te krijgen!
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED_TITLE,GEBRUIKTE TICKETS:
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED,<NUM>/<MAX>
 TID_CLUB_LEAGUE_SEASON_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5449,7 +5461,7 @@ TID_CLUB_LEAGUE_NEED_MORE_GOLDEN_TICKETS,Je hebt nog <NUM> gouden ticket(s) nodi
 TID_CLUB_LEAGUE_NOT_ENOUGH_GOLDEN_TICKETS_AVAILABLE_TO_PURCHASE,Niet genoeg gouden tickets beschikbaar om te kopen.
 TID_CLUB_LEAGUE_FEATURE_UNAVAILABLE,Deze functie is momenteel niet beschikbaar.
 TID_CLUB_LEAGUE_NOT_IN_LEAGUE,Club doet momenteel niet mee met de competitie
-TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,Club doet niet mee met het huidige competitieseizoen
+TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,Club doet niet mee aan de huidige competitieweek!
 TID_DUPLICATOR,LOLA
 TID_DUPLICATOR_SHORT_DESC,BESCHADIGER
 TID_DUPLICATOR_DESC,"Lola is een parttime gids, parttime actrice en fulltime diva die zich voordoet als dé ster van Brawlywood.\n\nZe valt aan met haar sjaal en met haar super creëert ze een manifestatie van haar ego."
@@ -5467,7 +5479,7 @@ TID_CLUB_UNLOCK_TITLE_CLUBS,CLUBS
 TID_CLUB_UNLOCK_TITLE_UNLOCKED,ontgrendeld!
 TID_CLUB_UNLOCK_SEARCHING_FOR_CLUB,Op zoek naar een geschikte club...
 TID_CLUB_UNLOCK_CLUB_LEAGUE_TITLE,CLUB-\nCOMPETITIE
-TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,Neem deel aan het volgende seizoen om exclusieve beloningen te winnen!
+TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,Doe volgende week mee om exclusieve beloningen te winnen!
 TID_CLUB_UNLOCK_CLUB_FOUND,CLUB GEVONDEN!
 TID_CLUB_UNLOCK_WELCOME_TO_CLUB,WELKOM BIJ DE CLUB!
 TID_CLUB_UNLOCK_LETS_GO,GAAN
@@ -5480,8 +5492,8 @@ TID_CLUB_UNLOCK_STAT_TYPE,Type
 TID_SHOP_BRAWLOWEEN_TITLE,BRAWL-O-WEEN
 TID_SHOP_BRAWLOWEEN_INFO,Set van skins
 TID_SKIN_INFO_BRAWLOWEEN,Brawl-o-ween-skin
-TID_CLUB_LEAGUE_FLOW_NEW_SEASON,Nieuw seizoen!
-TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Seizoen afgelopen
+TID_CLUB_LEAGUE_FLOW_NEW_SEASON,Nieuwe week!
+TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Week afgelopen
 TID_CLUB_LEAGUE_FLOW_CLUB_LEAGUE,CLUBCOMPETITIE
 TID_CLUB_LEAGUE_FLOW_DAY_NEW,NIEUW!
 TID_CLUB_LEAGUE_FLOW_EVENT_DAY_STARTED,EVENEMENTDAG <NUM> IS BEGONNEN!
@@ -5492,8 +5504,8 @@ TID_CLUB_LEAGUE_FLOW_BUTTON_GO_SEASON_END,ACCEPTEREN
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_START,GAAN
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_END,ACCEPTEREN
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_LEAGUE_PROMOTION,ACCEPTEREN
-TID_CLUB_LEAGUE_FLOW_SEASON_RANK,Seizoensrang
-TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,JOUW SEIZOENSBELONING
+TID_CLUB_LEAGUE_FLOW_SEASON_RANK,Weekpositie
+TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,JE WEEKBELONING
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED_TITLE,Gebruikte tickets:
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED,<NUM><cA4B7E0>/<MAX></c>
 TID_CLUB_LEAGUE_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5504,7 +5516,7 @@ TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_1,Aankoop mislukt
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_COINS,Niet genoeg munten!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_GEMS,Niet genoeg edelstenen!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_3,Er zijn geen tickets beschikbaar!
-TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,Seizoen eindigt over <TIME>
+TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,De week eindigt over: <TIME>
 TID_CLUB_LEAGUE_TICKET_SHOP_TITLE,GOUDEN TICKETS
 TID_CLUB_LEAGUE_TICKET_SHOP_INFO,"Je kunt tot <cFEA305><NUM> gouden tickets</c> gebruiken tijdens een clubcompetitieseizoen om extra wedstrijden te spelen en meer clubtrofeeën te verdienen. Met gouden tickets kun je de dagelijkse positie van je club verbeteren.\n\nAls je gouden tickets overhebt wanneer het seizoen afloopt, worden ze automatisch overgezet naar het volgende seizoen.\n\nBij de berekening van de seizoensbeloningen wordt geen rekening gehouden met gouden tickets."
 TID_CLUB_LEAGUE_TICKETS_GET_MORE,Koop er meer!
@@ -5527,18 +5539,18 @@ TID_CLUB_LEAGUE_EVENTS_TITLE,EVENEMENTEN
 TID_CLUB_LEAGUE_EVENT_UNLOCKS_AT,wordt ontgrendeld bij
 TID_CLUB_LEAGUE_SHOW_TICKETS_TOGGLE,Tonen hoeveel clubtrofeeën er <cFFDA14>maximaal</c> kunnen worden verzameld
 TID_CLUB_LEAGUE_INFO_TITLE,INFO OVER CLUBCOMPETITIE
-TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Seizoenen en evenementdagen
-TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>SEIZOENEN EN EVENEMENTDAGEN</c>
-TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Tijdens elk wekelijkse seizoen neemt je club het op tegen zeven andere clubs in je divisie.\n\nWin dagelijkse clubtrofeeën voor je club door op drie verschillende evenementdagen mee te doen aan evenementen in de clubcompetitie. De clubs die aan het einde van elke dag de meeste trofeeën hebben verzameld, worden met de meeste punten beloond voor het seizoensklassement.\n\nDe clubtrofeeën worden aan het einde van elke evenementdag GERESET.\n\n<cFCBC22>TIP: vorm een team met clubgenoten om extra clubtrofeeën te verdienen!</c>"
-TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Tickets
-TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>TICKETS</c>
-TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,Je hebt tickets nodig om aan evenementen in de clubcompetitie deel te nemen. Elk clublid krijgt een aantal tickets voor elke evenementdag.\n\nGebruik al je tickets om je seizoensbeloning te maximaliseren en win zoveel clubtrofeeën voor je club als je kunt!
-TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,Divisies
-TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>DIVISIES</c>
-TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,"De clubs die aan het einde van de week de meeste seizoenspunten hebben verzameld, promoveren naar de volgende divisie terwijl de clubs met de minste punten degraderen. Bereik hogere divisies voor meer uitdaging en betere beloningen."
+TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Welkom
+TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>WELKOM BIJ DE CLUBSPELEN</c>
+TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Speel met je club en verdien elke week beloningen in de <cFCBC22>clubwinkel</c>!\n\nEr is elke week 1 clubspel actief:\n<cFCBC22>CLUBCOMPETITIEWEEK</c> - Neem het op tegen andere clubs in de clubcompetitie om de beste beloning te verdienen en hogere divisies te bereiken.\n<cFCBC22>CLUBOPDRACHTENWEEK</c> - Voltooi je 3 clubopdrachten om punten voor je club te verdienen. Hoe meer opdrachten je club tijdens de week voltooit, des te hoger ieders beloning zal zijn."
+TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Club-\ncompetitie
+TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>CLUBCOMPETITIEWEEK</c>
+TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,"Tijdens een clubcompetitieweek neem je het op tegen 7 clubs in je divisie. Je kunt op <cFCBC22>3 verschillende dagen</c> aan evenementen in de clubcompetitie deelnemen om de meeste <cFCBC22>clubtrofeeën</c> proberen te behalen. Het spelen van clubcompetitiewedstrijden kost <cFCBC22>tickets</c>.\n\nDe club die gedurende de week het beste presteert, verdient de hoogste beloningen. <cFCBC22>Promoties</c> en <cFCBC22>degradaties</c> vinden aan het einde van de week plaats.\n\nBonus: speel met andere clubgenoten om <cFCBC22>extra clubtrofeeën</c> in wedstrijden te verdienen."
+TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,Club-\nopdrachten
+TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>CLUBOPDRACHTENWEEK</c>
+TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,"Tijdens een clubopdrachtenweek kun je <cFCBC22>3 opdrachten</c> voltooien.\n\nDoor clubopdrachten te voltooien, kun je <cFCBC22>punten</c> verdienen voor je club. Hoe meer punten de club aan het einde van de week heeft verdiend, des te hoger ieders beloning zal zijn. Voltooi ten minste 1 clubopdracht om je beloning op te halen.\n\nBonus: speel met een clubgenoot om je <cFCBC22>opdrachtvoortgang te verdubbelen</c>."
 TID_CLUB_LEAGUE_INFO_PAGE_4_MARKER,Clubwinkel
-TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>CLUBWINKEL</c>
-TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,"Door mee te doen aan de clubcompetitie kun je clubmunten verdienen. Hoe hoger je divisie en klassering tijdens het seizoen, hoe meer clubmunten je kunt winnen. Gebruik tijdens het seizoen al je tickets om al je gewonnen clubmunten op te halen.\n\nJe kunt je clubmunten uitgeven in de clubwinkel! Hier kun je exclusieve skins vinden en extra krachtpunten, munten en uitrustingsitems kopen. Neem snel een kijkje!"
+TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>WAT IS DE CLUBWINKEL?</c>
+TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,Vecht in de clubcompetitie en voltooi clubopdrachten om <cFCBC22>clubmunten</c> te verdienen. Je kunt je clubmunten uitgeven in de clubwinkel.\n\nVia de clubwinkel kun je <cFCBC22>exclusieve skins</c> kopen en <cFCBC22>je voortgang versnellen</c> met maximaal 50%!
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_1,GA DE STRIJD AAN MET 7 CLUBS
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_2,3 EVENEMENTDAGEN
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_3,SPEEL EVENEMENTEN EN WIN CLUBTROFEEËN
@@ -5579,17 +5591,17 @@ TID_CLUB_SHOP_BUTTON,CLUBWINKEL
 TID_CLUB_SHOP_DESC,Versnel je voortgang en koop exclusieve skins!
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED,Knokker vergrendeld
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED_DESC,Ontgrendel de bijbehorende knokker om deze skin te kunnen kopen.
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,HET CLUBCOMPETITIESEIZOEN IS AFGELOPEN: je club is op positie <RANKING> geëindigd. Als beloning heb je <COINS> <cEE1B39>clubmunten</c> gekregen!
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"HET CLUBCOMPETITIESEIZOEN IS AFGELOPEN: je club is op positie <RANKING> geëindigd, maar je bent tijdens het seizoen niet actief geweest. Doe volgend seizoen mee om clubmunten te verdienen!"
-TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,MAXIMALE SEIZOENSBELONINGEN
-TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,Gebruik al je tickets in een seizoen om de hoogst mogelijke beloning te krijgen!
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,DE CLUBCOMPETITIEWEEK IS AFGELOPEN: je club is op positie <RANKING> geëindigd. Als beloning heb je <COINS> <cEE1B39>clubmunten</c> gekregen!
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"DE CLUBCOMPETITIEWEEK IS AFGELOPEN: je club is op positie <RANKING> geëindigd, maar je bent tijdens deze week niet actief geweest. Doe de volgende week mee om clubmunten te verdienen!"
+TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,MAXIMALE WEEKBELONINGEN
+TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,Gebruik al je tickets in een week om de hoogst mogelijke beloning te krijgen!
 TID_CLUB_LEAGUE_SEASON_REWARD_MAX,MAX.
 TID_CLUB_LEAGUE_SEASON_PROMOTING_DESC,Promotie naar hogere divisie
 TID_CLUB_LEAGUE_SEASON_DEMOTING_DESC,Degradatie naar lagere divisie
 TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,Op zoek naar een team:
 TID_CLUB_LEAGUE_LOOKING_FOR_PLAYERS,Op zoek naar spelers:
 TID_CLUB_INFO_TAB_PLAYER_RANKS,SPELERRANGEN
-TID_CLUB_INFO_TAB_LEAGUE_SEASON,COMPETITIESEIZOEN
+TID_CLUB_INFO_TAB_LEAGUE_SEASON,CLUBCOMPETITIEWEEK
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY,DAG <NUM>
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY_NONE,EVENEMENTDAG
 TID_CLUB_MEMBER_LEAGUE_TICKETS,<NUM>/<MAX>
@@ -5624,20 +5636,24 @@ TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,CLUBTROFEEËN
 TID_REWARD_DESC_GEAR_TOKENS,UITRUSTINGSTOKENS
 TID_REWARD_DESC_GEAR_TOKEN_SINGLE,UITRUSTINGSTOKEN
 TID_REWARD_DESC_GEAR_SCRAP,SCHROOT
-TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hoi! Het lijkt erop dat je te laat bent om dit seizoen te spelen.\n\nJe kunt toekijken hoe je club het ervanaf brengt voordat het volgende seizoen begint!
+TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hoi! Het lijkt erop dat je te laat bent om deze week te spelen.\n\nJe kunt toekijken hoe je club het ervan afbrengt voordat de volgende week begint!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Ontdek wat er verkrijgbaar is in de clubwinkel!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Eindresultaten:
 TID_CLUB_LEAGUE_TEASER_TITLE,CLUBCOMPETITIE
 TID_CLUB_LEAGUE_TEASER_JOIN_CLUB,EEN CLUB ZOEKEN
 TID_CLUB_LEAGUE_TEASER_MESSAGE,Neem deel met je club om je voortgang te versnellen en exclusieve skins te verdienen!
 TID_CLUB_LEAGUE_TEASER_REACH_TROPHIES_TO_UNLOCK,Behaal <NUM> trofeeën om clubs te ontgrendelen.
-TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,Sluit je aan bij een club om het volgende seizoen te kunnen spelen.
+TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,Sluit je aan bij een club!
 TID_CLUB_LEAGUE_TEASER_FIND_OUT_MORE,MEER LEZEN
-TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,Schema van het huidige seizoen:
-TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,Schema van het volgende seizoen:
+TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,Schema van de huidige week:
+TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,Schema van de volgende week:
 TID_CLUB_LEAGUE_EVENTS_DAY_STARTS_IN,Begint over: <TIME>
 TID_CLUB_LEAGUE_EVENTS_DAY_ENDS_IN,Eindigt over: <TIME>
 TID_CLUB_LEAGUE_EVENTS_INFO_BUTTON,WAT IS DE CLUBCOMPETITIE?
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_CURRENT_SEASON,HUIDIGE WEEK
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_ENDS_IN,Eindigt over: <TIME>
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_NEXT_SEASON,VOLGENDE WEEK
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_STARTS_IN,Begint over: <TIME>
 TID_CLUBS_MEMBERS_CLUB_TROPHIES,Clubtrofeeën
 TID_CLUBS_MEMBERS_TICKETS_USED,Tickets gebruikt
 TID_CLUBS_MEMBERS_POWER_LEAGUE_RANK,Krachtdivisierang
@@ -5668,7 +5684,7 @@ TID_HEADLESS_RIDER_STU_SKIN,HOOFDLOZE STU
 TID_COUNT_PENGULA_MRP_SKIN,GRAAF P
 TID_SWAMP_GENE_SKIN,MOERAS-GENE
 TID_GHOST_SQUEAK_SKIN_SHOP,SPOOK-\nSQUEAK
-TID_SURGE KONG_SKIN_SHOP,SURGE KONG
+TID_SURGE KONG_SKIN_SHOP,SURGE\nKONG
 TID_HEADLESS_RIDER_STU_SKIN_SHOP,HOOFDLOZE\nSTU
 TID_COUNT_PENGULA_MRP_SKIN_SHOP,GRAAF P
 TID_SWAMP_GENE_SKIN_SHOP,MOERAS-\nGENE
@@ -5758,7 +5774,7 @@ TID_LOOKING_TOGGLE_LOOKING_FOR_A_TEAM,Online spelers kunnen nu zien dat je op zo
 TID_LOOKING_TOGGLE_LOOKING_FOR_PLAYERS,Online spelers kunnen nu zien dat je team op zoek is naar spelers.
 TID_CLUB_JOIN_FAIL_FEATURE_LOCKED,Aansluiten bij club mislukt. Clubs worden ontgrendeld bij <NUM> trofeeën.
 TID_CLUB_LEAGUE_LEAGUES_POPUP_CURRENT_LEAGUE,HUIDIGE DIVISIE
-TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,Clubs promoveren of degraderen aan het einde van een competitieseizoen!\nBereik hogere divisies om meer clubmunten te verdienen!
+TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,Clubs promoveren of degraderen aan het einde van een clubcompetitieweek!\nBereik hogere divisies om meer clubmunten te verdienen!
 TID_CLUB_LEAGUE_LEAGUES_POPUP_BUTTON,OK
 TID_CLUB_LEAGUE_LEAGUES_POPUP_TITLE,DIVISIES
 TID_IMPORTANT_MESSAGE_TITLE,BELANGRIJK BERICHT
@@ -5923,10 +5939,10 @@ TID_CLAIM_VOUCHER_POPUP_TITLE,Beloning ophalen
 TID_CLAIM_VOUCHER_BUTTON_CLAIM,Ophalen
 TID_CLAIM_VOUCHER_BUTTON_CANCEL,Annuleren
 TID_SPELL_FACTORY_CLAIM_FAILED_TITLE,Fout bij beloning ophalen
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,Beloning voor <c267F00><CODE></c> kan niet worden opgehaald.
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,Kan niet worden opgehaald.\n\nBeloning voor <c267F00><CODE></c> is al opgehaald.
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,ONGELDIGE CODE\n\n<c7F0000><CODE></c>
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,Beloning kan niet worden opgehaald.\n\nBeloning voor <c267F00><CODE></c> is verlopen.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,Beloning kan niet worden opgehaald.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,Kan niet worden opgehaald. De beloning is al opgehaald.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,Kan niet worden opgehaald. De code is ongeldig.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,Kan niet worden opgehaald. De beloning is verlopen.
 TID_RANKED_FRIENDLY_BEST_OF_TOGGLE_TITLE,BESTE VAN
 TID_FLEA,EVE
 TID_FLEA_SHORT_DESC,BESCHADIGER
@@ -5938,7 +5954,7 @@ TID_FLEA_ULTI_DESC,Eve brengt een groot ei voort waaruit een groep broedsels tev
 TID_SPEC_ABI_FLEA_1,ONNATUURLIJKE VOLGORDE
 TID_SPEC_ABI_FLEA_1_DESC,"De eierschieter van Eve schiet eieren in omgekeerde volgorde, van groot naar klein."
 TID_SPEC_ABI_FLEA_2,VERRASSINGSEI
-TID_SPEC_ABI_FLEA_2_DESC,"Wanneer Eve een vijandelijke knokker raakt met haar eierschieter, verschijnt er een broedsel uit het grootste ei."
+TID_SPEC_ABI_FLEA_2_DESC,Elke <c00cc00><VALUE1></c> seconden verschijnt er een broedsel uit het volgende grootste ei wanneer Eve een vijand raakt met haar eierschieter.
 TID_ACCESSORY_FLEA_JUMP,K-EI-K UIT!
 TID_ACCESSORY_FLEA_JUMP_DESC,Eve springt weg en laat een broedsel achter.
 TID_ACCESSORY_FLEA_SYMBIOSIS,MOEDERLIEFDE
@@ -5950,7 +5966,7 @@ TID_HATCHLING_HEALTH,Gezondheid broedsel
 TID_HATCHLING_DAMAGE,Schade broedsel
 TID_HATCHLING_COUNT,Aantal broedsels
 TID_ACCESSORY_DUPLICATOR_SWAP,STUNTDUBBEL
-TID_ACCESSORY_DUPLICATOR_SWAP_DESC,Lola en haar ego wisselen van locatie en herstellen <c00cc00><VALUE1></c> levenspunten.
+TID_ACCESSORY_DUPLICATOR_SWAP_DESC,"Lola en haar ego wisselen van locatie, waarbij Lola <c00cc00><VALUE1></c> levenspunten herstelt."
 TID_ACCESSORY_BLOCKED_EGO_TOO_FAR,Ego is te ver weg!
 TID_ACCESSORY_BLOCKED_MISSING_EGO,Kan niet worden geactiveerd zonder ego!
 TID_GAME_MODE_25,KLOPJACHT
@@ -5967,13 +5983,13 @@ TID_ACCESSORY_BASEBALL_STICKY,EXTRA PLAKKERIG
 TID_ACCESSORY_BASEBALL_STICKY_DESC,"Vijanden die door Bibi's volgende kauwgumbal worden geraakt, worden <c00cc00><VALUE1></c> seconden lang vertraagd."
 TID_ACCESSORY_MUMMY_ACID,ZURE LAK
 TID_ACCESSORY_MUMMY_ACID_DESC,"Emz' volgende aanval kan door muren gaan, maar brengt <ccc0000><VALUE1>%</c> minder schade toe."
-TID_FIRST_BLOOD,EERSTE UITSCHAKELING: <name>!
-TID_KILL_NUMBER_OWN,NOG VIER UITSCHAKELINGEN!
-TID_KILL_NUMBER_OPPONENT,NOG VIER UITSCHAKELINGEN VOOR JE VIJANDEN!
-TID_ONE_POINT_FROM_VICTORY,NOG ÉÉN UITSCHAKELING VERWIJDERD VAN EEN OVERWINNING!
-TID_OPPONENT_ONE_POINT_FROM_VICTORY,NOG ÉÉN UITSCHAKELING VERWIJDERD VAN EEN NEDERLAAG!
-TID_VICTORY_MATCH_OVER,GEWONNEN!
-TID_LOSS_MATCH_OVER,VERSLAGEN!
+TID_FIRST_BLOOD,Eerste uitschakeling: <name>!
+TID_KILL_NUMBER_OWN,Nog 4 uitschakelingen!
+TID_KILL_NUMBER_OPPONENT,Nog 4 uitschakelingen voor je vijanden!
+TID_ONE_POINT_FROM_VICTORY,Nog 1 uitschakeling verwijderd van een overwinning!
+TID_OPPONENT_ONE_POINT_FROM_VICTORY,Nog 1 uitschakeling verwijderd van een nederlaag!
+TID_VICTORY_MATCH_OVER,GEWONNEN!\nWedstrijd afgelopen
+TID_LOSS_MATCH_OVER,VERLOREN!\nWedstrijd afgelopen
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2022,Lunaire knokskin 2022
 TID_LOGIN_CALENDAR_LEFT_TITLE,REEKS VAN DAGELIJKSE CADEAUS
 TID_LOGIN_CALENDAR_LEFT_SUBTITLE,<cfffc11>MELD JE 15 DAGEN LANG ELKE DAG AAN</c> om je <cfffc11>GRATIS CADEAUS</c> op te halen! <cfffc11>MIS GEEN ENKELE DAG</c> of je reeks is voorbij!
@@ -6066,25 +6082,25 @@ TID_LOGIN_CALENDAR_REWARD_DESC_BRAWLER,Ontgrendel <HERONAME>
 TID_DOCTOR_EDGAR_SKIN,DOKTER EDGAR
 TID_DOCTOR_EDGAR_SKIN_SHOP,DOKTER\nEDGAR
 TID_FIREFLY_RICO_SKIN,VUURVLIEG-RICO
-TID_FIREFLY_RICO_SKIN_SHOP,VUURVLIEG-RICO
+TID_FIREFLY_RICO_SKIN_SHOP,VUURVLIEG-\nRICO
 TID_STAG_BEETLE_MEG_SKIN,KEVER-MEG
-TID_STAG_BEETLE_MEG_SKIN_SHOP,KEVER-MEG
+TID_STAG_BEETLE_MEG_SKIN_SHOP,KEVER-\nMEG
 TID_SAVAGE_BULL_SKIN,LEEUW-BULL
-TID_SAVAGE_BULL_SKIN_SHOP,LEEUW-BULL
+TID_SAVAGE_BULL_SKIN_SHOP,LEEUW-\nBULL
 TID_WASP_BO_SKIN,WESP-BO
-TID_WASP_BO_SKIN_SHOP,WESP-BO
+TID_WASP_BO_SKIN_SHOP,WESP-\nBO
 TID_MR_FLY_SKIN,MENEER VLIEG
 TID_MR_FLY_SKIN_SHOP,MENEER\nVLIEG
 TID_BUNNY_GROM_SKIN,KONIJN-GROM
-TID_BUNNY_GROM_SKIN_SHOP,KONIJN-GROM
+TID_BUNNY_GROM_SKIN_SHOP,KONIJN-\nGROM
 TID_MANTIS_ROSA_SKIN,SPRINKHAAN-ROSA
-TID_MANTIS_ROSA_SKIN_SHOP,SPRINKHAAN-ROSA
+TID_MANTIS_ROSA_SKIN_SHOP,SPRINKHAAN-\nROSA
 TID_SPIKY_EVE_SKIN,STEKELIGE EVE
-TID_SPIKY_EVE_SKIN_SHOP,STEKELIGE EVE
+TID_SPIKY_EVE_SKIN_SHOP,STEKELIGE\nEVE
 TID_CORRUPTED_SPROUT_SKIN,GEÏNFECTEERDE SPROUT
 TID_CORRUPTED_SPROUT_SKIN_SHOP,GEÏNFECTEERDE\nSPROUT
 TID_IVY_BELLE_SKIN,KLIMOP-BELLE
-TID_IVY_BELLE_SKIN_SHOP,KLIMOP-BELLE
+TID_IVY_BELLE_SKIN_SHOP,KLIMOP-\nBELLE
 TID_TRUE_GOLD_SPROUT_SKIN,MASSIEF GOUDEN SPROUT
 TID_TRUE_GOLD_SPROUT_SKIN_SHOP,MASSIEF GOUDEN\nSPROUT
 TID_TRUE_GOLD_SURGE_SKIN,MASSIEF GOUDEN SURGE
@@ -6205,7 +6221,7 @@ TID_QUEST_REROLL_ACCEPT,ACCEPTEREN
 TID_QUEST_REROLL_REJECT,AFWIJZEN
 TID_REROLL_NOT_POSSIBLE_FOR_ITEM,Dit item kan niet gewisseld worden.
 TID_CONFIRM_QUEST_REROLL,OPDRACHT WISSELEN?
-TID_CONFIRM_QUEST_REROLL_DESC,Je nieuwe opdracht zal niet meer het volgende vereisen: <char> of <type>.\nResterende wissels: <rerolls>
+TID_CONFIRM_QUEST_REROLL_DESC,Je nieuwe opdracht zal niet meer het volgende vereisen:\n<char> of <type>.\nResterende wissels: <rerolls>
 TID_CONFIRM_QUEST_REROLL_DESC_ONLY_TYPE,Je nieuwe opdracht zal niet meer het volgende vereisen:\n<type>.\nResterende wissels: <rerolls>
 TID_QUEST_TYPE_REQ_WIN,OVERWINNING
 TID_QUEST_TYPE_REQ_KILL,VERSLA VIJANDEN
@@ -6302,9 +6318,9 @@ TID_TRUE_SILVER_LOLA_SKIN_SHOP,MASSIEF ZILVEREN\nLOLA
 TID_CRASH_TEST_DARRYL_SKIN,CRASHTEST-DARRYL
 TID_CRASH_TEST_DARRYL_SKIN_SHOP,CRASHTEST-\nDARRYL
 TID_BIKER_CARL_SKIN,BIKER-CARL
-TID_BIKER_CARL_SKIN_SHOP,BIKER-CARL
+TID_BIKER_CARL_SKIN_SHOP,BIKER-\nCARL
 TID_PYRO_SPIKE_SKIN,PYRO-SPIKE
-TID_PYRO_SPIKE_SKIN_SHOP,PYRO-SPIKE
+TID_PYRO_SPIKE_SKIN_SHOP,PYRO-\nSPIKE
 TID_MONSTER_TRUCK_MEG_SKIN,MONSTERTRUCK-MEG
 TID_MONSTER_TRUCK_MEG_SKIN_SHOP,MONSTERTRUCK-\nMEG
 TID_OVERLORD_BYRON_SKIN,OPPERHEER BYRON
@@ -6361,12 +6377,231 @@ TID_LOGIN_CALENDAR_LOYALTY_PROGRAM,LOYALITEITSPROGRAMMA
 TID_LOGIN_CALENDAR_TITLE,LOYALITEITSPROGRAMMA VAN STARR PARK
 TID_REWARD_DESC_PLAYER_ICON_REGULAR,SPELERPICTOGRAM
 TID_CLUB_LEAGUE_CLUB_COINS_HOW_TO_GET,Verdien clubmunten door deel te nemen aan de clubcompetitie.
+TID_CLUB_EVENTS_TITLE,CLUBSPELEN
+TID_CLUB_EVENTS_LEAGUE_TAB_DAY,EVENEMENTDAG
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY,EVENEMENTDAG <NUM>
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY_COMPLETE,VOLTOOID
+TID_CLUB_EVENTS_LEAGUE_TAB_SEASON,WEEK
+TID_CLUB_EVENTS_TAB_LEAGUE,DIVISIE
+TID_CLUB_EVENTS_TAB_QUESTS,OPDRACHTEN
+TID_CLUB_EVENTS_BUTTON_CLUB_SHOP,CLUBWINKEL
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_IS_TOP,Alleen de resultaten van de top <TOP> van elke club worden meegeteld. Jij staat op positie <NUM>.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_TOP,Alleen de resultaten van de top <TOP> van elke club worden meegeteld. Jij staat op positie <cF76263><NUM></c>.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_RANKED,Alleen de resultaten van de top <TOP> van elke club worden meegeteld. <cF76263>Jij hebt nog niet deelgenomen.</c>
+TID_CLUB_INFO_TOP_EVENT_DAY_PLAYER_DIVIDER,Alleen de resultaten van de top <TOP> van de club worden meegeteld.
+TID_CLUB_QUESTS_PLAYER_REWARD_DESC,JE WEEKBELONING
+TID_CLUB_QUESTS_LOCKED_REWARD_DESC,VOLTOOI EEN OPDRACHT VOOR CLUBMUNTEN
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY,Behaal <POINTS> punten met je club om dit als de weekbeloning te krijgen!
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_CURRENT,Dit is de huidige weekbeloning voor clubopdrachten.
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_LOCKED,Dit is de huidige weekbeloning voor clubopdrachten. Voltooi een clubopdracht om de beloning aan het einde van de week te ontvangen!
+TID_CLUB_QUESTS_LEAGUES_BUTTON,DIVISIES
+TID_CLUB_QUESTS_LEAGUES_DESC,Promoveer naar een hogere clubdivisie om je MAXIMALE BELONING te verhogen.
+TID_CLUB_QUESTS_RANKS_CURRENT_LEAGUE,HUIDIGE DIVISIE
+TID_CLUB_QUESTS_RANKS_MAX_REWARD,MAXIMALE BELONING
+TID_CLUB_QUESTS_RANKS_MESSAGE,Je positie in de clubcompetitie bepaalt de maximale beloningen voor de clubopdrachtenweek. Bereik hogere divisies om meer clubmunten als beloning te ontvangen!
+TID_CLUB_QUESTS_RANKS_TITLE,DIVISIES
+TID_CLUB_QUESTS_FLOW_NEW_SEASON,Nieuwe week!
+TID_CLUB_QUESTS_FLOW_SEASON_ENDED,Week afgelopen
+TID_CLUB_QUESTS_FLOW_CLUB_QUESTS,CLUBOPDRACHTEN
+TID_CLUB_QUESTS_FLOW_MAX_REWARD,MAXIMALE BELONING
+TID_CLUB_QUESTS_FLOW_BUTTON_GO,ACCEPTEREN
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_START,GAAN
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_END,OK
+TID_CLUB_QUESTS_FLOW_SEASON_RANK,Weekpositie
+TID_CLUB_QUESTS_FLOW_END_OF_SEASON_REWARD,JE WEEKBELONING
+TID_CLUB_QUESTS_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_BADGE,<cFCF044>x2</c>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_DESC,Speel met ten minste 1 clublid om je voortgang voor een clubopdracht te <cFCF044>VERDUBBELEN</c>.
+TID_CLUB_QUESTS_ALL_COMPLETED_DESC,Alle clubopdrachten van deze week voltooid!
+TID_CLUB_QUEST_ALREADY_COMPLETED,Deze clubopdracht is al voltooid!
+TID_CLUB_QUESTS_SEASON_ENDS_IN_TIME,De week eindigt over:
+TID_CLUB_QUESTS_REWARD_LOCKED_DESC,Beloning na eerste opdracht!
+TID_CLUB_QUESTS_COMPLETED_NUM,Opdrachten voltooid: <NUM>/<MAX>
+TID_CLUB_QUESTS_TITLE,CLUBOPDRACHTEN
+TID_CLUB_QUESTS_NEW_SEASON,NIEUWE WEEK!
+TID_CLUB_QUESTS_SEASON_END_NOTIFICATION,DE CLUBOPDRACHTENWEEK IS AFGELOPEN: als beloning heb je <COINS> <cEE1B39>clubmunten</c> gekregen!
+TID_CLUB_QUESTS_CONTRIBUTIONS_TITLE,BIJDRAGEN VAN DEZE WEEK
+TID_CLUB_QUESTS_CONTRIBUTIONS_MEMBERS,Clubleden: <NUM>
+TID_CLUB_QUESTS_CLUB_TEAM_BONUS,CLUBTEAMBONUS x2
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TITLE,SAMENWERKINGSBONUS!
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_DESC,Speel met ten minste 1 clublid om je voortgang voor clubopdrachten te <cFCF044>VERDUBBELEN</c>!
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PROGRESS,Voortgang voor clubopdrachten
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_X2,x2
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PLAY_SOLO,SOLO SPELEN
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_ONLINE,Online: <NUM>
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TEAM_UP,TEAM VORMEN!
+TID_CLUB_QUESTS_WARNING_NOT_AVAILABLE,Je kunt alleen bijdragen aan de club waarin je deze week bent gestart.\n\nWacht tot de volgende week om aan deze club bij te dragen!
+TID_CLUB_QUESTS_SEASON_END_REWARD_CLAIMED,OPGEHAALD
+TID_CLUB_LEAGUE_WARNING_NOT_AVAILABLE,Hé! Het lijkt erop dat je club nog niet deelneemt aan een clubcompetitieweek. Je kunt het tegen andere clubs opnemen wanneer de volgende clubcompetitieweek begint.
+TID_CLUB_EVENT_TIME_LEFT,Tijd over: <TIME>
+TID_SHOP_CLUB_SHOP_SEE_OFFERS,AANBIEDINGEN BEKIJKEN
+TID_SHOP_CLUB_SHOP_TITLE,CLUBWINKEL
+TID_SHOP_CLUB_SHOP_DESC,VERSNEL JE VOORTGANG
 TID_SHOP_OFFER_INFO_25,Een nieuw spelerpictogram!
 TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,"<cFFB820>KOM MORGEN TERUG</c> om dit cadeau OP TE HALEN, anders is je reeks voorbij!"
 TID_BRAWLBALL_49,Harde stuiter
 TID_BRAWLBALL_50,Op volle toeren
 TID_BRAWLBALL_51,Topscore
 TID_BRAWLBALL_52,Pingpong
+TID_INBOX_CAPTION_72_68,DONATIE: SPRAY
+TID_SILENCER,OTIS
+TID_SILENCER_SHORT_DESC,BESCHADIGER
+TID_SILENCER_DESC,Otis is een straatartiest die diep in de zee uithangt met zijn zeestervriend Cil. Samen maken ze graffitiwerken in heel Starr Park.
+TID_SILENCER_WEAPON,INKTKUNST
+TID_SILENCER_WEAPON_DESC,Otis spuit een salvo van inktdruppels uit zijn spuitbusarm.
+TID_SILENCER_ULTI,STILLE ZEEBODEM
+TID_SILENCER_ULTI_DESC,"Otis gooit met Cil, die zich aan de eerst geraakte vijand vastklampt en voorkomt dat deze gedurende korte tijd kan aanvallen."
+TID_SPEC_ABI_SILENCER_1,ZUIGNAPJES
+TID_SPEC_ABI_SILENCER_1_DESC,"Cil klampt zich stevig aan een vijand vast, waardoor deze <c00cc00><VALUE1>%</c> langer niet kan aanvallen."
+TID_SPEC_ABI_SILENCER_2,INKTVULLING
+TID_SPEC_ABI_SILENCER_2_DESC,Otis schiet nu <c00cc00><VALUE1>%</c> meer inktdruppels.
+TID_ACCESSORY_SILENCER_GADGET_1,SLUIMERENDE STER
+TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Als er geen doelwit wordt geraakt, blijft de volgende zeester in sluimertoestand op de grond liggen tot er een vijand in de buurt komt."
+TID_ACCESSORY_SILENCER_GADGET_2,VET GESPETTER
+TID_ACCESSORY_SILENCER_GADGET_2_DESC,"Otis schiet met zijn volgende aanval een reuzeninktbal af. De inktpoel die achterblijft, brengt geleidelijk aan <c00cc00><VALUE1></c> schade toe gedurende <c00cc00><VALUE2></c> seconden."
+TID_RANDOM_GAME_MODE,MYSTERIE
+TID_NOTIFICATION_RANDOM,Nieuwe kaart voor MYSTERIE beschikbaar! Tijd om nieuwe beloningen te winnen!
+TID_SKIN_INFO_DEEPSEA,Diepzeeskin
+TID_EMOTE_BUNDLE_DEEPSEA_PACK,Reacties van diepzeeskins
+TID_SUGGEST,VOORSTELLEN
+TID_SUGGEST_CANCEL,ANNULEREN
+TID_PURCHASE_BRAWL_PASS_INFO_SHOP,ONTGRENDEL BRAWL PASS-BELONINGEN + EXTRA OPDRACHTEN EN OPDRACHTWISSELS!
+TID_SUGGESTED_BY,Voorgesteld door
+TID_SHOP_DEEPSEA_SKINS,Diepzeeskin
+TID_SHOP_DEEPSEA_TITLE,DIEPZEEKNOKPARTIJ
+TID_SHOP_DEEPSEA_INFO,Set van skins
+TID_SKIN_INFO_BT21,BT21-skin
+TID_CLUB_EVENTS_ONBOARDING_TITLE,CLUBSPELEN
+TID_CLUB_EVENTS_ONBOARDING_SUBTITLE,Versnel je voortgang en verdien exclusieve skins!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_1_TITLE,Welkom bij de wekelijkse\nCLUBSPELEN!
+TID_CLUB_EVENTS_ONBOARDING_NEW_GAME,Nieuw clubspel!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_TITLE,CLUBCOMPETITIE
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_DESCRIPTION,Neem het op tegen andere clubs!\nBereik hogere divisies!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_TITLE,CLUBOPDRACHTEN
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_DESCRIPTION,Voltooi opdrachten met je club!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_1,Speel met je club! Er is 1 clubspel per week.
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_2,Verdien clubmunten!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_3,Versnel je voortgang via de clubwinkel!
+TID_SUGGEST_TITLE,Knokker voorstellen
+TID_CLUB_LEAGUE_TOP_24_REWARDS,Alle spelers komen in aanmerking voor weekbeloningen.
+TID_CLUB_LEAGUE_STARTS_IN,Clubcompetitie begint over:
+TID_CLUB_QUESTS_STARTS_IN,Clubopdrachten beginnen over:
+TID_SHOWDOWN_71,Springpark
+TID_SHOWDOWN_72,Knokkerracebaan
+TID_SHOWDOWN_73,Teleportatieveld
+TID_CLUB_QUESTS_NOT_AVAILABLE,Clubopdrachten zijn momenteel niet beschikbaar
+TID_CLUB_LEAGUE_NOT_AVAILABLE,Clubcompetitie is momenteel niet beschikbaar
+TID_CLUB_QUESTS_WEEK_ACTIVE,OPDRACHTENWEEK actief gedurende:
+TID_CLUB_LEAGUE_WEEK_ACTIVE,COMPETITIEWEEK actief gedurende:
+TID_CLUB_EVENTS_ACTIVE,Actief
+TID_CLUB_EVENTS_STARTING,Begint binnenkort
+TID_CLUB_EVENTS_WAITING,Wachten
+TID_CLUB_LEAGUE_PREVIOUS_WEEK,VORIGE WEEK
+TID_CLUB_LEAGUE_RESULTS,Resultaten:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_SHORT,COMPETITIEWEEK begint over:
+TID_CLUB_QUESTS_WEEK_STARTS_IN_SHORT,OPDRACHTENWEEK begint over:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN,Volgende clubcompetitieweek begint over: <TIME>
+TID_CLUB_QUESTS_WEEK_STARTS_IN,Volgende clubopdrachtenweek begint over: <TIME>
+TID_CLUB_LEAGUE_WEEK_SCHEDULE,SCHEMA
+TID_CLUB_QUESTS_PREVIOUS_WEEK_REWARD,BELONING VOOR VORIGE WEEK
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TEXT,Volgende clubcompetitieweek
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TIME,Begint over: <TIME>
+TID_CLUB_EVENTS_PREVIOUS_WEEK,WEEK AFGELOPEN!
+TID_BT21_SANDY_SKIN,SANDY-KOYA
+TID_BT21_SANDY_SKIN_SHOP,SANDY-\nKOYA
+TID_BT21_EDGAR_SKIN,EDGAR-TATA
+TID_BT21_EDGAR_SKIN_SHOP,EDGAR-\nTATA
+TID_BT21_RUFFS_SKIN,RUFFS-CHIMMY
+TID_BT21_RUFFS_SKIN_SHOP,RUFFS-\nCHIMMY
+TID_BT21_BULL_SKIN,BULL-MANG
+TID_BT21_BULL_SKIN_SHOP,BULL-\nMANG
+TID_BT21_BIBI_SKIN,BIBI-RJ
+TID_BT21_BIBI_SKIN_SHOP,BIBI-\nRJ
+TID_BT21_JACKY_SKIN,JACKY-COOKY
+TID_BT21_JACKY_SKIN_SHOP,JACKY-\nCOOKY
+TID_BT21_TICK_SKIN,TICK-SHOOKY
+TID_BT21_TICK_SKIN_SHOP,TICK-\nSHOOKY
+TID_POSTAL_BROCK_SKIN,POSTBODE-BROCK
+TID_POSTAL_BROCK_SKIN_SHOP,POSTBODE-\nBROCK
+TID_MAKE_EMZ_SKIN,DJ 3.M.Z
+TID_MAKE_EMZ_SKIN_SHOP,DJ 3.M.Z
+TID_SHARK_JAW_COLT_SKIN,HAAIENTAND-COLT
+TID_SHARK_JAW_COLT_SKIN_SHOP,HAAIENTAND-\nCOLT
+TID_OCTO_FANG_SKIN,OCTO-FANG
+TID_OCTO_FANG_SKIN_SHOP,OCTO-\nFANG
+TID_CORAL_BELLE_SKIN,KORAAL-BELLE
+TID_CORAL_BELLE_SKIN_SHOP,KORAAL-\nBELLE
+TID_PHARA_OTIS_SKIN,FARAOTIS
+TID_PHARA_OTIS_SKIN_SHOP,FARAOTIS
+TID_RANKED_SUGGESTING_BRAWLER,Knokker voorstellen voor <NAME>
+TID_RANKED_BRAWLER_SUGGESTED,KNOKKER VOORGESTELD
+TID_RANKED_SUGGESTION,<NAME> heeft <BRAWLER> voorgesteld
+TID_CLUB_EVENTS_STARTS_IN,Begint over:
+TID_CLUB_EVENTS_ACTIVE_FOR,Actief gedurende:
+TID_GAME_MODE_28,JAGERS
+TID_GAME_MODE_28_DESC,"Het jachtseizoen is begonnen!\n\nVerzamel punten door op vijanden te jagen en ze te verslaan. De EERSTE speler die <MAX_SCORE> punten behaalt, wint de wedstrijd!"
+TID_DEATHMATCH_FFA_INTRO_TEXT,Versla tegenstanders!
+TID_NOTIFICATION_DEATHMATCH_FFA,Nieuwe kaart voor JAGERS beschikbaar! Tijd om nieuwe beloningen te winnen!
+TID_DEATHMATCH_FFA_1,Zorgen en problemen
+TID_DEATHMATCH_FFA_2,Jachtseizoen
+TID_DEATHMATCH_FFA_3,De prooi
+TID_DEATHMATCH_FFA_4,Rap en rusteloos
+TID_DEATHMATCH_FFA_5,Bevrijding
+TID_DEATHMATCH_FFA_6,Het ware spoor
+TID_DEATHMATCH_FFA_7,Omega
+TID_CLUB_EVENTS_CHANGED_CLUB,Je kunt alleen bijdragen aan de club waarin je deze week bent gestart.\n\nWacht tot de volgende week om aan deze club bij te dragen!\n\nDe volgende week begint over: <TIME>
+TID_CLUB_QUESTS_CURRENT_CLUB_POINTS,Totale aantal punten dat deze week door je club is verzameld
+TID_CLUB_QUESTS_THIS_WEEKS_QUESTS,CLUBOPDRACHTEN VAN DEZE WEEK
+TID_SPEC_ABI_ARTILLERY_DUDE_1,GEVAARLIJK GOUD
+TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,De goudzakken van Penny barsten met een <c00cc00><VALUE1>%</c> bredere waaier na elke treffer.
+TID_SPEC_ABI_ARTILLERY_DUDE_2,KNALKANON
+TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Penny's kanon brengt <c00cc00><VALUE1></c> schade toe en stoot nabije vijanden terug bij impact.
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,ZOUTVAT
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,Penny laat een vat met zout vallen dat vijandelijke projectielen blokkeert. Ze kan het ook gebruiken om haar eigen goudzakken te laten barsten.
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,HOUWITSER
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2_DESC,Penny's kanon schiet op elke zichtbare vijand die binnen bereik is.
+TID_RANDOM_GAME_MODE_DESC,"Speel een wedstrijd gebaseerd op een willekeurige selectie van verschillende spelmodi, kaarten en aanpassingen. Wat je krijgt is een mysterie!"
+TID_CLUB_QUESTS_EXPIRED,OPDRACHT VERLOPEN
+TID_CLUB_LEAGUE_ACTIVE,COMPETITIEWEEK actief
+TID_CLUB_QUESTS_TUTORIAL,Voltooi je 3 clubopdrachten van deze week om punten voor je club te verdienen.
+TID_CLUB_QUESTS_YOUR_QUESTS,JE CLUBOPDRACHTEN VAN DEZE WEEK
+TID_CLUB_QUESTS_NEW_QUESTS,NIEUWE CLUBOPDRACHTEN
+TID_CLUB_QUESTS_REWARDS_INCREASED,Je maximale beloningen zijn toegenomen voor de clubcompetitie- en clubopdrachtenweek.
+TID_BRAWLBALL_441,Dubbel gevaar
+TID_BRAWLBALL_442,Stuitereffect
+TID_KNOCKOUT_441,Verborgen vijand
+TID_KNOCKOUT_442,Openlucht
+TID_BANKHEIST_441,Rivieroevers
+TID_BANKHEIST_442,Drietal
+TID_GEMGRAB_441,Glas halfvol
+TID_GEMGRAB_442,Dualiteit
+TID_BOUNTY_441,Niet omdraaien
+TID_BOUNTY_442,Zij aan zij
+TID_HOTZONE_441,Drietand
+TID_HOTZONE_442,Onbalans
+TID_SHOWDOWN_441,Geen kant op
+TID_SHOWDOWN_442,Uitgezoomd
+TID_TRUE_GOLD_FANG_SKIN,MASSIEF GOUDEN FANG
+TID_TRUE_GOLD_FANG_SKIN_SHOP,MASSIEF GOUDEN\nFANG
+TID_TRUE_SILVER_FANG_SKIN,MASSIEF ZILVEREN FANG
+TID_TRUE_SILVER_FANG_SKIN_SHOP,MASSIEF ZILVEREN\nFANG
+TID_TRUE_GOLD_BONNIE_SKIN,MASSIEF GOUDEN BONNIE
+TID_TRUE_GOLD_BONNIE_SKIN_SHOP,MASSIEF GOUDEN\nBONNIE
+TID_TRUE_SILVER_BONNIE_SKIN,MASSIEF ZILVEREN BONNIE
+TID_TRUE_SILVER_BONNIE_SKIN_SHOP,MASSIEF ZILVEREN\nBONNIE
+TID_TRUE_GOLD_JANET_SKIN,MASSIEF GOUDEN JANET
+TID_TRUE_GOLD_JANET_SKIN_SHOP,MASSIEF GOUDEN\nJANET
+TID_TRUE_SILVER_JANET_SKIN,MASSIEF ZILVEREN JANET
+TID_TRUE_SILVER_JANET_SKIN_SHOP,MASSIEF ZILVEREN\nJANET
+TID_TRUE_GOLD_GROM_SKIN,MASSIEF GOUDEN GROM
+TID_TRUE_GOLD_GROM_SKIN_SHOP,MASSIEF GOUDEN\nGROM
+TID_TRUE_SILVER_GROM_SKIN,MASSIEF ZILVEREN GROM
+TID_TRUE_SILVER_GROM_SKIN_SHOP,MASSIEF ZILVEREN\nGROM
+TID_TRUE_GOLD_EVE_SKIN,MASSIEF GOUDEN EVE
+TID_TRUE_GOLD_EVE_SKIN_SHOP,MASSIEF GOUDEN\nEVE
+TID_TRUE_SILVER_EVE_SKIN,MASSIEF ZILVEREN EVE
+TID_TRUE_SILVER_EVE_SKIN_SHOP,MASSIEF ZILVEREN\nEVE
+TID_BRAWL_PASS_SEASON_12,DIEPZEEKNOKPARTIJ
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

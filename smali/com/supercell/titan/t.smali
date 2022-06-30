@@ -7,20 +7,40 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/titan/TitanWebView;
+.field public final synthetic f:Lcom/supercell/titan/TitanWebView;
 
-.field public final synthetic h:Ljava/lang/String;
+.field public final synthetic g:Z
+
+.field public final synthetic h:F
+
+.field public final synthetic i:F
+
+.field public final synthetic j:F
+
+.field public final synthetic k:F
+
+.field public final synthetic l:F
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/supercell/titan/TitanWebView;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lcom/supercell/titan/TitanWebView;ZFFFFF)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/t;->g:Lcom/supercell/titan/TitanWebView;
+    iput-object p1, p0, Lcom/supercell/titan/t;->f:Lcom/supercell/titan/TitanWebView;
 
-    iput-object p2, p0, Lcom/supercell/titan/t;->h:Ljava/lang/String;
+    iput-boolean p2, p0, Lcom/supercell/titan/t;->g:Z
+
+    iput p3, p0, Lcom/supercell/titan/t;->h:F
+
+    iput p4, p0, Lcom/supercell/titan/t;->i:F
+
+    iput p5, p0, Lcom/supercell/titan/t;->j:F
+
+    iput p6, p0, Lcom/supercell/titan/t;->k:F
+
+    iput p7, p0, Lcom/supercell/titan/t;->l:F
 
     return-void
 .end method
@@ -28,30 +48,99 @@
 
 # virtual methods
 .method public final run()V
-    .locals 4
+    .locals 8
 
-    iget-object v0, p0, Lcom/supercell/titan/t;->g:Lcom/supercell/titan/TitanWebView;
+    iget-object v0, p0, Lcom/supercell/titan/t;->f:Lcom/supercell/titan/TitanWebView;
 
-    iget-object v1, p0, Lcom/supercell/titan/t;->h:Ljava/lang/String;
+    iget-boolean v1, p0, Lcom/supercell/titan/t;->g:Z
+
+    iget v2, p0, Lcom/supercell/titan/t;->h:F
+
+    iget v3, p0, Lcom/supercell/titan/t;->i:F
+
+    iget v4, p0, Lcom/supercell/titan/t;->j:F
+
+    iget v5, p0, Lcom/supercell/titan/t;->k:F
+
+    iget v6, p0, Lcom/supercell/titan/t;->l:F
 
     .line 1
-    iget-object v0, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
+    iget-boolean v7, v0, Lcom/supercell/titan/TitanWebView;->k:Z
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    if-eqz v7, :cond_0
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    iget-boolean v7, v0, Lcom/supercell/titan/TitanWebView;->l:Z
 
-    const-string v3, "javascript:"
+    if-eqz v7, :cond_0
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v1, :cond_1
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 2
+    iget-object v1, v0, Lcom/supercell/titan/TitanWebView;->g:Landroid/webkit/WebView;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/16 v2, 0x8
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 3
+    iget-object v1, v0, Lcom/supercell/titan/TitanWebView;->g:Landroid/webkit/WebView;
+
+    invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+    check-cast v1, Landroid/view/View;
 
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 4
+    invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/supercell/titan/u;
+
+    invoke-direct {v2, v0}, Lcom/supercell/titan/u;-><init>(Lcom/supercell/titan/TitanWebView;)V
+
+    invoke-virtual {v1, v2}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    new-instance v7, Landroid/view/animation/TranslateAnimation;
+
+    invoke-direct {v7, v2, v3, v4, v5}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
+
+    const/high16 v2, 0x447a0000    # 1000.0f
+
+    mul-float v6, v6, v2
+
+    float-to-int v2, v6
+
+    int-to-long v2, v2
+
+    .line 6
+    invoke-virtual {v7, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
+
+    const/4 v2, 0x1
+
+    .line 7
+    invoke-virtual {v7, v2}, Landroid/view/animation/Animation;->setFillAfter(Z)V
+
+    .line 8
+    new-instance v2, Lcom/supercell/titan/e0;
+
+    invoke-direct {v2, v0, v1}, Lcom/supercell/titan/e0;-><init>(Lcom/supercell/titan/TitanWebView;Z)V
+
+    invoke-virtual {v7, v2}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+
+    .line 9
+    iget-object v0, v0, Lcom/supercell/titan/TitanWebView;->g:Landroid/webkit/WebView;
+
+    invoke-virtual {v0, v7}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
+
+    :cond_1
+    :goto_0
     return-void
 .end method

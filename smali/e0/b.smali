@@ -1,4 +1,4 @@
-.class public Le0/b;
+.class public final Le0/b;
 .super Ljava/lang/Object;
 .source "ObjectsCompat.java"
 

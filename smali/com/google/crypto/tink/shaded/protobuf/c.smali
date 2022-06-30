@@ -3,7 +3,7 @@
 .source "AbstractProtobufList.java"
 
 # interfaces
-.implements Lcom/google/crypto/tink/shaded/protobuf/q$c;
+.implements Lcom/google/crypto/tink/shaded/protobuf/p$c;
 
 
 # annotations
@@ -14,14 +14,14 @@
         ">",
         "Ljava/util/AbstractList<",
         "TE;>;",
-        "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
+        "Lcom/google/crypto/tink/shaded/protobuf/p$c<",
         "TE;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public g:Z
+.field public f:Z
 
 
 # direct methods
@@ -34,39 +34,19 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
+    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->f:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public C()Z
+.method public final N()Z
     .locals 1
 
-    .line 1
-    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
+    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->f:Z
 
     return v0
-.end method
-
-.method public a()V
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw v0
 .end method
 
 .method public add(Ljava/lang/Object;)Z
@@ -78,7 +58,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->b()V
 
     .line 2
     invoke-super {p0, p1}, Ljava/util/AbstractList;->add(Ljava/lang/Object;)Z
@@ -99,7 +79,7 @@
     .end annotation
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->b()V
 
     .line 4
     invoke-super {p0, p1, p2}, Ljava/util/AbstractList;->addAll(ILjava/util/Collection;)Z
@@ -120,24 +100,53 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->b()V
 
     .line 2
-    invoke-super {p0, p1}, Ljava/util/AbstractList;->addAll(Ljava/util/Collection;)Z
+    invoke-super {p0, p1}, Ljava/util/AbstractCollection;->addAll(Ljava/util/Collection;)Z
 
     move-result p1
 
     return p1
 .end method
 
+.method public final b()V
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->f:Z
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw v0
+.end method
+
 .method public clear()V
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->b()V
 
     .line 2
     invoke-super {p0}, Ljava/util/AbstractList;->clear()V
+
+    return-void
+.end method
+
+.method public final d()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->f:Z
 
     return-void
 .end method
@@ -179,7 +188,7 @@
     check-cast p1, Ljava/util/List;
 
     .line 5
-    invoke-virtual {p0}, Ljava/util/AbstractList;->size()I
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v1
 
@@ -228,7 +237,7 @@
     .locals 4
 
     .line 1
-    invoke-virtual {p0}, Ljava/util/AbstractList;->size()I
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
 
@@ -260,32 +269,21 @@
     return v1
 .end method
 
-.method public final k()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
-
-    return-void
-.end method
-
 .method public remove(Ljava/lang/Object;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->b()V
 
     .line 2
-    invoke-super {p0, p1}, Ljava/util/AbstractList;->remove(Ljava/lang/Object;)Z
+    invoke-super {p0, p1}, Ljava/util/AbstractCollection;->remove(Ljava/lang/Object;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public removeAll(Ljava/util/Collection;)Z
+.method public final removeAll(Ljava/util/Collection;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -296,17 +294,17 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->b()V
 
     .line 2
-    invoke-super {p0, p1}, Ljava/util/AbstractList;->removeAll(Ljava/util/Collection;)Z
+    invoke-super {p0, p1}, Ljava/util/AbstractCollection;->removeAll(Ljava/util/Collection;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public retainAll(Ljava/util/Collection;)Z
+.method public final retainAll(Ljava/util/Collection;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -317,10 +315,10 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->b()V
 
     .line 2
-    invoke-super {p0, p1}, Ljava/util/AbstractList;->retainAll(Ljava/util/Collection;)Z
+    invoke-super {p0, p1}, Ljava/util/AbstractCollection;->retainAll(Ljava/util/Collection;)Z
 
     move-result p1
 

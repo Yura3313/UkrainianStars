@@ -1,4 +1,4 @@
-.class public Landroidx/media/MediaBrowserServiceCompat$k;
+.class public final Landroidx/media/MediaBrowserServiceCompat$k;
 .super Ljava/lang/Object;
 .source "MediaBrowserServiceCompat.java"
 
@@ -36,10 +36,9 @@
 
 
 # virtual methods
-.method public a()Landroid/os/IBinder;
+.method public final a()Landroid/os/IBinder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$k;->a:Landroid/os/Messenger;
 
     invoke-virtual {v0}, Landroid/os/Messenger;->getBinder()Landroid/os/IBinder;

@@ -1,14 +1,25 @@
-.class public final Li1/c;
-.super Ljava/lang/Exception;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.class public abstract Li1/c;
+.super Lcom/google/android/gms/common/internal/BaseGmsClient;
+.source "com.google.android.gms:play-services-gass@@19.3.0"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T::",
+        "Landroid/os/IInterface;",
+        ">",
+        "Lcom/google/android/gms/common/internal/BaseGmsClient<",
+        "TT;>;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;ILcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+    invoke-direct/range {p0 .. p5}, Lcom/google/android/gms/common/internal/BaseGmsClient;-><init>(Landroid/content/Context;Landroid/os/Looper;ILcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
 
     return-void
 .end method

@@ -1,9 +1,9 @@
-.class public Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;
+.class public final Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;
 .super Ljava/lang/Object;
 .source "DecoratedBarcodeView.java"
 
 # interfaces
-.implements Lob/a;
+.implements Lrb/a;
 
 
 # annotations
@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field public a:Lob/a;
+.field public a:Lrb/a;
 
 .field public final synthetic b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
 
 # direct methods
-.method public constructor <init>(Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;Lob/a;)V
+.method public constructor <init>(Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;Lrb/a;)V
     .locals 0
 
     .line 1
@@ -33,31 +33,20 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;->a:Lob/a;
+    iput-object p2, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;->a:Lrb/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lob/b;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;->a:Lob/a;
-
-    invoke-interface {v0, p1}, Lob/a;->a(Lob/b;)V
-
-    return-void
-.end method
-
-.method public b(Ljava/util/List;)V
+.method public final a(Ljava/util/List;)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "Lc6/l;",
+            "Le6/l;",
             ">;)V"
         }
     .end annotation
@@ -79,16 +68,16 @@
 
     move-result-object v1
 
-    check-cast v1, Lc6/l;
+    check-cast v1, Le6/l;
 
     .line 2
     iget-object v2, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     .line 3
-    iget-object v2, v2, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->h:Lcom/journeyapps/barcodescanner/ViewfinderView;
+    iget-object v2, v2, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/ViewfinderView;
 
     .line 4
-    iget-object v3, v2, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
+    iget-object v3, v2, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -99,7 +88,7 @@
     if-ge v3, v4, :cond_0
 
     .line 5
-    iget-object v2, v2, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
+    iget-object v2, v2, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -107,9 +96,19 @@
 
     .line 6
     :cond_1
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;->a:Lob/a;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;->a:Lrb/a;
 
-    invoke-interface {v0, p1}, Lob/a;->b(Ljava/util/List;)V
+    invoke-interface {v0, p1}, Lrb/a;->a(Ljava/util/List;)V
+
+    return-void
+.end method
+
+.method public final b(Lrb/b;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;->a:Lrb/a;
+
+    invoke-interface {v0, p1}, Lrb/a;->b(Lrb/b;)V
 
     return-void
 .end method

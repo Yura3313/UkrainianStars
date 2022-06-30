@@ -58,7 +58,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/talk/model/Friends$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/talk/model/Friends$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/talk/model/Friends;->Companion:Lcom/kakao/sdk/talk/model/Friends$Companion;
 
@@ -72,7 +72,7 @@
 .end method
 
 .method public constructor <init>(ILjava/util/List;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -85,9 +85,10 @@
         }
     .end annotation
 
-    if-eqz p2, :cond_0
+    const-string v0, "elements"
 
-    .line 1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lcom/kakao/sdk/talk/model/Friends;->totalCount:I
@@ -101,16 +102,6 @@
     iput-object p5, p0, Lcom/kakao/sdk/talk/model/Friends;->afterUrl:Ljava/lang/String;
 
     return-void
-
-    :cond_0
-    const-string p1, "elements"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/talk/model/Friends;ILjava/util/List;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/kakao/sdk/talk/model/Friends;
@@ -243,35 +234,27 @@
         }
     .end annotation
 
-    if-eqz p2, :cond_0
+    const-string v0, "elements"
 
-    new-instance v6, Lcom/kakao/sdk/talk/model/Friends;
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-object v0, v6
+    new-instance v0, Lcom/kakao/sdk/talk/model/Friends;
 
-    move v1, p1
+    move-object v1, v0
 
-    move-object v2, p2
+    move v2, p1
 
-    move-object v3, p3
+    move-object v3, p2
 
-    move-object v4, p4
+    move-object v4, p3
 
-    move-object v5, p5
+    move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lcom/kakao/sdk/talk/model/Friends;-><init>(ILjava/util/List;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)V
+    move-object v6, p5
 
-    return-object v6
+    invoke-direct/range {v1 .. v6}, Lcom/kakao/sdk/talk/model/Friends;-><init>(ILjava/util/List;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_0
-    const-string p1, "elements"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
+    return-object v0
 .end method
 
 .method public describeContents()I
@@ -317,7 +300,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/talk/model/Friends;->elements:Ljava/util/List;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -327,7 +310,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/talk/model/Friends;->favoriteCount:Ljava/lang/Integer;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -337,7 +320,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/talk/model/Friends;->beforeUrl:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -347,7 +330,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/talk/model/Friends;->afterUrl:Ljava/lang/String;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -366,7 +349,6 @@
 .method public final getAfterUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/model/Friends;->afterUrl:Ljava/lang/String;
 
     return-object v0
@@ -375,7 +357,6 @@
 .method public final getBeforeUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/model/Friends;->beforeUrl:Ljava/lang/String;
 
     return-object v0
@@ -391,7 +372,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/model/Friends;->elements:Ljava/util/List;
 
     return-object v0
@@ -400,7 +380,6 @@
 .method public final getFavoriteCount()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/model/Friends;->favoriteCount:Ljava/lang/Integer;
 
     return-object v0
@@ -409,7 +388,6 @@
 .method public final getTotalCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/talk/model/Friends;->totalCount:I
 
     return v0
@@ -497,10 +475,12 @@
 
     const-string v0, "Friends(totalCount="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget v1, p0, Lcom/kakao/sdk/talk/model/Friends;->totalCount:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -537,7 +517,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -547,7 +528,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    if-eqz p1, :cond_2
+    const-string v0, "parcel"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget v0, p0, Lcom/kakao/sdk/talk/model/Friends;->totalCount:I
 
@@ -612,20 +595,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     return-void
-
-    :cond_2
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    goto :goto_3
-
-    :goto_2
-    throw p1
-
-    :goto_3
-    goto :goto_2
 .end method

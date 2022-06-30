@@ -206,7 +206,6 @@
 .method public static valueOf(Ljava/lang/String;)Lio/sentry/transport/RateLimiter$DataCategory;
     .locals 1
 
-    .line 1
     const-class v0, Lio/sentry/transport/RateLimiter$DataCategory;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -221,7 +220,6 @@
 .method public static values()[Lio/sentry/transport/RateLimiter$DataCategory;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/transport/RateLimiter$DataCategory;->$VALUES:[Lio/sentry/transport/RateLimiter$DataCategory;
 
     invoke-virtual {v0}, [Lio/sentry/transport/RateLimiter$DataCategory;->clone()Ljava/lang/Object;
@@ -238,7 +236,6 @@
 .method public getCategory()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/transport/RateLimiter$DataCategory;->category:Ljava/lang/String;
 
     return-object v0

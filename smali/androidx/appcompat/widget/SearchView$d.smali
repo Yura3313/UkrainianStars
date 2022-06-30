@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/SearchView$d;
+.class public final Landroidx/appcompat/widget/SearchView$d;
 .super Ljava/lang/Object;
 .source "SearchView.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/SearchView;
+.field public final synthetic f:Landroidx/appcompat/widget/SearchView;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$d;->g:Landroidx/appcompat/widget/SearchView;
+    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$d;->f:Landroidx/appcompat/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,13 +34,13 @@
 
 
 # virtual methods
-.method public onFocusChange(Landroid/view/View;Z)V
+.method public final onFocusChange(Landroid/view/View;Z)V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$d;->g:Landroidx/appcompat/widget/SearchView;
+    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$d;->f:Landroidx/appcompat/widget/SearchView;
 
-    iget-object v0, p1, Landroidx/appcompat/widget/SearchView;->S:Landroid/view/View$OnFocusChangeListener;
+    iget-object v0, p1, Landroidx/appcompat/widget/SearchView;->R:Landroid/view/View$OnFocusChangeListener;
 
     if-eqz v0, :cond_0
 

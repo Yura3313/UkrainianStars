@@ -29,7 +29,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/protocol/CopyToClipboardHandler;Landroid/net/Uri;Landroid/webkit/WebView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/protocol/CopyToClipboardHandler$1;->this$0:Lcom/kakaogame/web/protocol/CopyToClipboardHandler;
 
     iput-object p2, p0, Lcom/kakaogame/web/protocol/CopyToClipboardHandler$1;->val$webUri:Landroid/net/Uri;
@@ -60,12 +59,12 @@
     const-string v2, "CopyToClipboardHandler"
 
     .line 2
-    invoke-static {v1, v0, v2}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3
     iget-object v1, p0, Lcom/kakaogame/web/protocol/CopyToClipboardHandler$1;->val$webView:Landroid/webkit/WebView;
 
-    invoke-virtual {v1}, Landroid/webkit/WebView;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 

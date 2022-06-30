@@ -32,7 +32,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/log/APILatencyLogManager$1;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -80,7 +79,6 @@
 .method public bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Lcom/kakaogame/log/APILatencyLogManager$1;->onPostExecute(Ljava/lang/Integer;)V

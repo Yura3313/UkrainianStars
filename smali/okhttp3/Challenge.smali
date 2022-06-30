@@ -199,7 +199,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
 
     return-object v0
@@ -287,18 +286,18 @@
 .end method
 
 .method public hashCode()I
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Lokhttp3/Challenge;->scheme:Ljava/lang/String;
 
-    const/16 v1, 0x383
-
-    const/16 v2, 0x1f
-
-    invoke-static {v0, v1, v2}, Lcom/kakaogame/d;->a(Ljava/lang/String;II)I
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
+
+    add-int/lit16 v0, v0, 0x383
+
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 2
     iget-object v1, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
@@ -315,7 +314,6 @@
 .method public realm()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
 
     const-string v1, "realm"
@@ -332,7 +330,6 @@
 .method public scheme()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Challenge;->scheme:Ljava/lang/String;
 
     return-object v0
@@ -341,7 +338,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

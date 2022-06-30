@@ -11,7 +11,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lokio/Okio;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -30,7 +29,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -77,7 +75,6 @@
 .method public static blackhole()Lokio/Sink;
     .locals 1
 
-    .line 1
     new-instance v0, Lokio/Okio$3;
 
     invoke-direct {v0}, Lokio/Okio$3;-><init>()V
@@ -111,20 +108,20 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Ljava/lang/AssertionError;->getCause()Ljava/lang/Throwable;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Ljava/lang/AssertionError;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Ljava/lang/AssertionError;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
@@ -510,7 +507,6 @@
 .method private static timeout(Ljava/net/Socket;)Lokio/AsyncTimeout;
     .locals 1
 
-    .line 1
     new-instance v0, Lokio/Okio$4;
 
     invoke-direct {v0, p0}, Lokio/Okio$4;-><init>(Ljava/net/Socket;)V

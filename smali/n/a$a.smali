@@ -1,4 +1,4 @@
-.class public Ln/a$a;
+.class public final Ln/a$a;
 .super Ljava/lang/Object;
 .source "ArcCurveFit.java"
 
@@ -64,14 +64,13 @@
 
     new-array v0, v0, [D
 
-    .line 1
     sput-object v0, Ln/a$a;->s:[D
 
     return-void
 .end method
 
 .method public constructor <init>(IDDDDDD)V
-    .locals 20
+    .locals 21
 
     move-object/from16 v0, p0
 
@@ -113,11 +112,11 @@
     .line 5
     iput-wide v4, v0, Ln/a$a;->d:D
 
-    const-wide/high16 v16, 0x3ff0000000000000L    # 1.0
+    const-wide/high16 v17, 0x3ff0000000000000L    # 1.0
 
     sub-double v2, v4, v2
 
-    div-double v2, v16, v2
+    div-double v2, v17, v2
 
     .line 6
     iput-wide v2, v0, Ln/a$a;->i:D
@@ -141,19 +140,19 @@
 
     invoke-static {v1, v2}, Ljava/lang/Math;->abs(D)D
 
-    move-result-wide v16
+    move-result-wide v17
 
-    const-wide v18, 0x3f50624dd2f1a9fcL    # 0.001
+    const-wide v19, 0x3f50624dd2f1a9fcL    # 0.001
 
-    cmpg-double v5, v16, v18
+    cmpg-double v5, v17, v19
 
     if-ltz v5, :cond_d
 
     invoke-static {v3, v4}, Ljava/lang/Math;->abs(D)D
 
-    move-result-wide v16
+    move-result-wide v17
 
-    cmpg-double v5, v16, v18
+    cmpg-double v5, v17, v19
 
     if-gez v5, :cond_2
 
@@ -237,11 +236,11 @@
     :goto_2
     sget-object v14, Ln/a$a;->s:[D
 
-    array-length v15, v14
+    const/16 v15, 0x5b
 
     if-ge v7, v15, :cond_8
 
-    const-wide v16, 0x4056800000000000L    # 90.0
+    const-wide v17, 0x4056800000000000L    # 90.0
 
     int-to-double v5, v7
 
@@ -250,15 +249,11 @@
 
     invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
 
-    mul-double v5, v5, v16
-
-    array-length v15, v14
-
-    const/16 v16, -0x1
-
-    add-int/lit8 v15, v15, -0x1
+    mul-double v5, v5, v17
 
     move-object/from16 p4, v14
+
+    const/16 v15, 0x5a
 
     int-to-double v14, v15
 
@@ -321,9 +316,7 @@
     :goto_3
     sget-object v2, Ln/a$a;->s:[D
 
-    array-length v3, v2
-
-    if-ge v1, v3, :cond_9
+    if-ge v1, v15, :cond_9
 
     .line 22
     aget-wide v3, v2, v1
@@ -378,21 +371,17 @@
     if-ltz v4, :cond_a
 
     .line 26
-    iget-object v2, v0, Ln/a$a;->a:[D
+    iget-object v1, v0, Ln/a$a;->a:[D
 
-    array-length v1, v1
+    div-int/lit8 v4, v4, 0x5a
+
+    int-to-double v2, v4
+
+    aput-wide v2, v1, v14
+
+    const/16 v1, 0x5a
 
     const/4 v5, -0x1
-
-    add-int/2addr v1, v5
-
-    div-int/2addr v4, v1
-
-    int-to-double v3, v4
-
-    aput-wide v3, v2, v14
-
-    const/4 v4, -0x1
 
     const-wide/16 v6, 0x0
 
@@ -410,7 +399,7 @@
 
     aput-wide v6, v1, v14
 
-    const/4 v4, -0x1
+    const/16 v1, 0x5a
 
     goto :goto_5
 
@@ -430,13 +419,13 @@
 
     sub-double/2addr v2, v11
 
-    aget-wide v4, v1, v4
+    aget-wide v11, v1, v4
 
-    aget-wide v11, v1, v8
+    aget-wide v15, v1, v8
 
-    sub-double/2addr v4, v11
+    sub-double/2addr v11, v15
 
-    div-double/2addr v2, v4
+    div-double/2addr v2, v11
 
     invoke-static {v9, v10}, Ljava/lang/Double;->isNaN(D)Z
 
@@ -444,11 +433,7 @@
 
     add-double/2addr v2, v9
 
-    array-length v1, v1
-
-    const/4 v4, -0x1
-
-    add-int/2addr v1, v4
+    const/16 v1, 0x5a
 
     int-to-double v8, v1
 
@@ -459,9 +444,9 @@
     div-double/2addr v2, v8
 
     .line 29
-    iget-object v1, v0, Ln/a$a;->a:[D
+    iget-object v4, v0, Ln/a$a;->a:[D
 
-    aput-wide v2, v1, v14
+    aput-wide v2, v4, v14
 
     :goto_5
     add-int/lit8 v14, v14, 0x1
@@ -536,7 +521,7 @@
 
 
 # virtual methods
-.method public a()D
+.method public final a()D
     .locals 6
 
     .line 1
@@ -577,7 +562,7 @@
     return-wide v0
 .end method
 
-.method public b()D
+.method public final b()D
     .locals 6
 
     .line 1
@@ -623,7 +608,7 @@
     return-wide v0
 .end method
 
-.method public c(D)D
+.method public final c(D)D
     .locals 4
 
     .line 1
@@ -649,7 +634,7 @@
     return-wide v2
 .end method
 
-.method public d(D)D
+.method public final d(D)D
     .locals 4
 
     .line 1
@@ -675,10 +660,9 @@
     return-wide v2
 .end method
 
-.method public e()D
+.method public final e()D
     .locals 6
 
-    .line 1
     iget-wide v0, p0, Ln/a$a;->l:D
 
     iget-wide v2, p0, Ln/a$a;->j:D
@@ -692,10 +676,9 @@
     return-wide v2
 .end method
 
-.method public f()D
+.method public final f()D
     .locals 6
 
-    .line 1
     iget-wide v0, p0, Ln/a$a;->m:D
 
     iget-wide v2, p0, Ln/a$a;->k:D
@@ -709,7 +692,7 @@
     return-wide v2
 .end method
 
-.method public g(D)V
+.method public final g(D)V
     .locals 10
 
     .line 1

@@ -48,7 +48,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lo0/c;->l:Ljava/util/concurrent/Executor;
+    sget-object v0, Lo0/c;->m:Ljava/util/concurrent/ThreadPoolExecutor;
 
     .line 2
     invoke-direct {p0, p1}, Lo0/b;-><init>(Landroid/content/Context;)V
@@ -61,7 +61,7 @@
 
 
 # virtual methods
-.method public b(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+.method public final b(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
@@ -216,7 +216,7 @@
     return-void
 .end method
 
-.method public c()Z
+.method public final c()Z
     .locals 5
 
     .line 1
@@ -264,12 +264,12 @@
     iget-object v0, p0, Lo0/a;->h:Lo0/a$a;
 
     .line 9
-    iget-object v4, v0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v4, v0, Lo0/c;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v4, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 10
-    iget-object v0, v0, Lo0/c;->h:Ljava/util/concurrent/FutureTask;
+    iget-object v0, v0, Lo0/c;->g:Lo0/c$c;
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/FutureTask;->cancel(Z)Z
 
@@ -292,7 +292,7 @@
     return v1
 .end method
 
-.method public e(Lo0/a$a;Ljava/lang/Object;)V
+.method public final e(Lo0/a$a;Ljava/lang/Object;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -397,23 +397,20 @@
 
     .line 17
     :cond_4
-    invoke-static {}, Lh/a;->l()Lh/a;
+    invoke-static {}, Lh/a;->j()Lh/a;
 
     move-result-object p1
 
-    iget-object p2, v0, Landroidx/lifecycle/LiveData;->j:Ljava/lang/Runnable;
+    iget-object p2, v0, Landroidx/lifecycle/LiveData;->j:Landroidx/lifecycle/LiveData$a;
 
-    .line 18
-    iget-object p1, p1, Lh/a;->g:Landroidx/fragment/app/t;
-
-    invoke-virtual {p1, p2}, Landroidx/fragment/app/t;->k(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, p2}, Lh/a;->l(Ljava/lang/Runnable;)V
 
     goto :goto_0
 
     :catchall_0
     move-exception p1
 
-    .line 19
+    .line 18
     :try_start_1
     monitor-exit v1
     :try_end_1
@@ -426,7 +423,7 @@
     return-void
 .end method
 
-.method public f()V
+.method public final f()V
     .locals 6
 
     .line 1
@@ -451,7 +448,7 @@
     iget-object v2, p0, Lo0/a;->g:Ljava/util/concurrent/Executor;
 
     .line 4
-    iget v3, v1, Lo0/c;->i:I
+    iget v3, v1, Lo0/c;->h:I
 
     const/4 v4, 0x2
 
@@ -460,7 +457,7 @@
     if-eq v3, v5, :cond_2
 
     .line 5
-    iget v0, v1, Lo0/c;->i:I
+    iget v0, v1, Lo0/c;->h:I
 
     invoke-static {v0}, Lp/g;->b(I)I
 
@@ -501,15 +498,15 @@
 
     .line 9
     :cond_2
-    iput v4, v1, Lo0/c;->i:I
+    iput v4, v1, Lo0/c;->h:I
 
     .line 10
-    iget-object v3, v1, Lo0/c;->g:Lo0/c$f;
+    iget-object v3, v1, Lo0/c;->f:Lo0/c$b;
 
     iput-object v0, v3, Lo0/c$f;->a:[Ljava/lang/Object;
 
     .line 11
-    iget-object v0, v1, Lo0/c;->h:Ljava/util/concurrent/FutureTask;
+    iget-object v0, v1, Lo0/c;->g:Lo0/c$c;
 
     invoke-interface {v2, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -517,7 +514,7 @@
     return-void
 .end method
 
-.method public g()V
+.method public final g()V
     .locals 1
 
     .line 1
@@ -536,7 +533,7 @@
     return-void
 .end method
 
-.method public h()Ljava/lang/Object;
+.method public final h()V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -547,10 +544,10 @@
     .line 1
     move-object v0, p0
 
-    check-cast v0, Lx1/d;
+    check-cast v0, Ly1/d;
 
     .line 2
-    iget-object v1, v0, Lx1/d;->k:Ljava/util/Set;
+    iget-object v1, v0, Ly1/d;->k:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -564,7 +561,7 @@
 
     .line 3
     :try_start_0
-    iget-object v0, v0, Lx1/d;->j:Ljava/util/concurrent/Semaphore;
+    iget-object v0, v0, Ly1/d;->j:Ljava/util/concurrent/Semaphore;
 
     const-wide/16 v1, 0x5
 
@@ -587,9 +584,7 @@
     invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
 
     :goto_0
-    const/4 v0, 0x0
-
-    return-object v0
+    return-void
 
     .line 5
     :cond_0

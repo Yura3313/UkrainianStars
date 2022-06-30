@@ -13,7 +13,6 @@
 
     const-string v0, "UTF-8"
 
-    .line 1
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     move-result-object v0
@@ -26,7 +25,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +42,6 @@
 
     add-int v2, v1, p1
 
-    .line 1
     aget-byte v2, p0, v2
 
     add-int v3, v1, p3
@@ -270,7 +267,6 @@
 .method public static sneakyRethrow(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lokio/Util;->sneakyThrow2(Ljava/lang/Throwable;)V
 
     return-void
@@ -294,6 +290,5 @@
         }
     .end annotation
 
-    .line 1
     throw p0
 .end method

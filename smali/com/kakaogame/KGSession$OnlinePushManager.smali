@@ -67,7 +67,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -76,7 +75,6 @@
 .method public synthetic constructor <init>(Lcom/kakaogame/KGSession$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/kakaogame/KGSession$OnlinePushManager;-><init>()V
 
     return-void
@@ -85,7 +83,6 @@
 .method public static synthetic access$300()Ljava/util/Set;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/KGSession$OnlinePushManager;->onlinePushListeners:Ljava/util/Set;
 
     return-object v0
@@ -94,7 +91,6 @@
 .method public static synthetic access$500(Lcom/kakaogame/KGSession$OnlinePushManager;)Ljava/util/Map;
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/KGSession$OnlinePushManager;->getMessage()Ljava/util/Map;
 
     move-result-object p0
@@ -153,7 +149,7 @@
 
     .line 5
     :try_start_2
-    invoke-virtual {v1}, Ljava/lang/InterruptedException;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
@@ -309,7 +305,7 @@
     const-string v3, "KGSession"
 
     .line 11
-    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -386,7 +382,7 @@
     move-exception p1
 
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p2
 

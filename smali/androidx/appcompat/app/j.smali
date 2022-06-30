@@ -1,73 +1,41 @@
-.class public Landroidx/appcompat/app/j;
+.class public final synthetic Landroidx/appcompat/app/j;
 .super Ljava/lang/Object;
-.source "AppCompatDelegateImpl.java"
-
-# interfaces
-.implements Lf0/n;
-
-
-# instance fields
-.field public final synthetic a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
+.method public static a(Lcom/kakaogame/KGResult;Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/util/LinkedHashMap;)Lcom/kakaogame/KGResult;
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/app/j;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    invoke-virtual {p0}, Lcom/kakaogame/KGResult;->getContent()Ljava/lang/Object;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(Landroid/view/View;Lf0/z;)Lf0/z;
-    .locals 4
-
-    .line 1
-    invoke-virtual {p2}, Lf0/z;->g()I
-
-    move-result v0
+    move-result-object p0
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/app/j;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v1, p2, v2}, Landroidx/appcompat/app/AppCompatDelegateImpl;->Z(Lf0/z;Landroid/graphics/Rect;)I
-
-    move-result v1
-
-    if-eq v0, v1, :cond_0
+    invoke-interface {p1, p2, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    invoke-virtual {p2}, Lf0/z;->e()I
+    invoke-static {p3}, Lcom/kakaogame/KGResult;->getSuccessResult(Ljava/lang/Object;)Lcom/kakaogame/KGResult;
 
-    move-result v0
+    move-result-object p0
 
-    .line 4
-    invoke-virtual {p2}, Lf0/z;->f()I
+    return-object p0
+.end method
 
-    move-result v2
+.method public static b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    .locals 0
 
-    .line 5
-    invoke-virtual {p2}, Lf0/z;->d()I
+    .line 1
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result v3
+    .line 2
+    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6
-    invoke-virtual {p2, v0, v1, v2, v3}, Lf0/z;->l(IIII)Lf0/z;
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p2
+    move-result-object p0
 
-    .line 7
-    :cond_0
-    invoke-static {p1, p2}, Lf0/r;->u(Landroid/view/View;Lf0/z;)Lf0/z;
-
-    move-result-object p1
-
-    return-object p1
+    return-object p0
 .end method

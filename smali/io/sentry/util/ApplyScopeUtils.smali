@@ -12,7 +12,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -21,7 +20,6 @@
 .method public static shouldApplyScopeData(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p0, Lio/sentry/hints/Cached;
 
     if-eqz v0, :cond_1

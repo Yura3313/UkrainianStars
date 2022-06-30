@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/recyclerview/widget/RecyclerView;
+.field public final synthetic f:Landroidx/recyclerview/widget/RecyclerView;
 
-.field public final synthetic h:Lcom/supercell/id/view/FastScroll;
+.field public final synthetic g:Lcom/supercell/id/view/FastScroll;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView;Lcom/supercell/id/view/FastScroll;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/d;->g:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object p1, p0, Lcom/supercell/id/view/d;->f:Landroidx/recyclerview/widget/RecyclerView;
 
-    iput-object p2, p0, Lcom/supercell/id/view/d;->h:Lcom/supercell/id/view/FastScroll;
+    iput-object p2, p0, Lcom/supercell/id/view/d;->g:Lcom/supercell/id/view/FastScroll;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,16 +31,16 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/d;->g:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lcom/supercell/id/view/d;->f:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->computeVerticalScrollRange()I
 
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/view/d;->g:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, p0, Lcom/supercell/id/view/d;->f:Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-virtual {v1}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
     move-result v1
 
@@ -62,9 +62,9 @@
 
     .line 4
     :goto_0
-    iget-object v2, p0, Lcom/supercell/id/view/d;->h:Lcom/supercell/id/view/FastScroll;
+    iget-object v2, p0, Lcom/supercell/id/view/d;->g:Lcom/supercell/id/view/FastScroll;
 
-    invoke-virtual {v2}, Landroid/widget/LinearLayout;->getHeight()I
+    invoke-virtual {v2}, Landroid/view/View;->getHeight()I
 
     move-result v2
 
@@ -74,21 +74,25 @@
 
     const/16 v0, 0x1e
 
-    invoke-static {v0}, Lcom/android/billingclient/api/a0;->b(I)F
-
-    move-result v0
-
-    invoke-static {v0}, Lb5/m;->r(F)I
-
-    move-result v0
+    int-to-float v0, v0
 
     .line 5
+    sget v1, La5/g0;->a:F
+
+    mul-float v0, v0, v1
+
+    .line 6
+    invoke-static {v0}, Lcom/android/billingclient/api/z;->n(F)I
+
+    move-result v0
+
+    .line 7
     invoke-static {v2, v0}, Ljava/lang/Math;->max(II)I
 
     move-result v0
 
-    .line 6
-    iget-object v1, p0, Lcom/supercell/id/view/d;->h:Lcom/supercell/id/view/FastScroll;
+    .line 8
+    iget-object v1, p0, Lcom/supercell/id/view/d;->g:Lcom/supercell/id/view/FastScroll;
 
     sget v2, Lcom/supercell/id/R$id;->fastscroll_thumb:I
 
@@ -100,9 +104,9 @@
 
     const-string v3, "fastscroll_thumb"
 
-    invoke-static {v1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v4, p0, Lcom/supercell/id/view/d;->h:Lcom/supercell/id/view/FastScroll;
+    iget-object v4, p0, Lcom/supercell/id/view/d;->g:Lcom/supercell/id/view/FastScroll;
 
     invoke-virtual {v4, v2}, Lcom/supercell/id/view/FastScroll;->a(I)Landroid/view/View;
 
@@ -110,17 +114,17 @@
 
     check-cast v2, Landroid/widget/ImageView;
 
-    invoke-static {v2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v2}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v2
 
-    .line 7
+    .line 9
     iput v0, v2, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 8
-    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    .line 10
+    invoke-virtual {v1, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-void
 .end method

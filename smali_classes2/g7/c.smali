@@ -1,136 +1,97 @@
-.class public Lg7/c;
-.super Ljava/util/Observable;
-.source "UserDM.java"
-
-# interfaces
-.implements Ld7/b;
+.class public final Lg7/c;
+.super Ljava/lang/Object;
+.source "AndroidUserManagerDAO.java"
 
 
 # instance fields
-.field public g:Ljava/lang/Long;
-
-.field public h:Ljava/lang/String;
-
-.field public i:Ljava/lang/String;
-
-.field public j:Ljava/lang/String;
-
-.field public k:Ljava/lang/String;
-
-.field public l:Z
-
-.field public m:Z
-
-.field public n:Z
-
-.field public o:Ljava/lang/String;
-
-.field public p:Z
-
-.field public q:Lg7/h;
+.field public a:Lk3/s9;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/String;ZLg7/h;)V
+.method public synthetic constructor <init>(Lk3/s9;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/util/Observable;-><init>()V
+    iput-object p1, p0, Lg7/c;->a:Lk3/s9;
 
-    .line 2
-    iput-object p1, p0, Lg7/c;->g:Ljava/lang/Long;
-
-    .line 3
-    iput-object p2, p0, Lg7/c;->h:Ljava/lang/String;
-
-    .line 4
-    iput-object p3, p0, Lg7/c;->i:Ljava/lang/String;
-
-    .line 5
-    iput-object p4, p0, Lg7/c;->j:Ljava/lang/String;
-
-    .line 6
-    iput-object p5, p0, Lg7/c;->k:Ljava/lang/String;
-
-    .line 7
-    iput-boolean p6, p0, Lg7/c;->l:Z
-
-    .line 8
-    iput-boolean p7, p0, Lg7/c;->m:Z
-
-    .line 9
-    iput-boolean p8, p0, Lg7/c;->n:Z
-
-    .line 10
-    iput-object p9, p0, Lg7/c;->o:Ljava/lang/String;
-
-    .line 11
-    iput-boolean p10, p0, Lg7/c;->p:Z
-
-    .line 12
-    iput-object p11, p0, Lg7/c;->q:Lg7/h;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lg7/c;Lg7/c;)V
-    .locals 0
+.method public final declared-synchronized a()Ljava/util/HashMap;
+    .locals 2
+
+    monitor-enter p0
 
     .line 1
-    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    :try_start_0
+    iget-object v0, p0, Lg7/c;->a:Lk3/s9;
 
-    move-result p1
+    const-string v1, "key_faq_mark_event"
 
-    if-eqz p1, :cond_0
+    invoke-virtual {v0, v1}, Lk3/s9;->f(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
 
     .line 2
-    iget-boolean p1, p2, Lg7/c;->p:Z
+    instance-of v1, v0, Ljava/util/HashMap;
+
+    if-eqz v1, :cond_0
 
     .line 3
-    iput-boolean p1, p0, Lg7/c;->p:Z
+    check-cast v0, Ljava/util/HashMap;
+
+    goto :goto_0
 
     .line 4
-    iget-object p1, p2, Lg7/c;->o:Ljava/lang/String;
+    :cond_0
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 5
-    iput-object p1, p0, Lg7/c;->o:Ljava/lang/String;
+    :goto_0
+    monitor-exit p0
 
-    .line 6
-    iget-object p1, p2, Lg7/c;->j:Ljava/lang/String;
+    return-object v0
 
-    .line 7
-    iput-object p1, p0, Lg7/c;->j:Ljava/lang/String;
+    :catchall_0
+    move-exception v0
 
-    .line 8
-    iget-object p1, p2, Lg7/c;->i:Ljava/lang/String;
+    monitor-exit p0
 
-    .line 9
-    iput-object p1, p0, Lg7/c;->i:Ljava/lang/String;
+    throw v0
+.end method
 
-    .line 10
-    iget-object p1, p2, Lg7/c;->q:Lg7/h;
+.method public final b(Ljava/lang/String;)V
+    .locals 2
 
-    .line 11
-    iput-object p1, p0, Lg7/c;->q:Lg7/h;
+    .line 1
+    invoke-virtual {p0}, Lg7/c;->a()Ljava/util/HashMap;
 
-    .line 12
-    iget-boolean p1, p2, Lg7/c;->l:Z
+    move-result-object v0
 
-    .line 13
-    iput-boolean p1, p0, Lg7/c;->l:Z
+    .line 2
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
-    .line 14
-    iget-boolean p1, p2, Lg7/c;->n:Z
+    move-result v1
 
-    iput-boolean p1, p0, Lg7/c;->n:Z
+    if-eqz v1, :cond_0
 
-    .line 15
-    invoke-virtual {p0}, Ljava/util/Observable;->setChanged()V
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 16
-    invoke-virtual {p0}, Ljava/util/Observable;->notifyObservers()V
+    .line 4
+    iget-object p1, p0, Lg7/c;->a:Lk3/s9;
+
+    const-string v1, "key_faq_mark_event"
+
+    .line 5
+    invoke-virtual {p1, v1, v0}, Lk3/s9;->j(Ljava/lang/String;Ljava/io/Serializable;)V
 
     :cond_0
     return-void

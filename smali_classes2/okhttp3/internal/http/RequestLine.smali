@@ -7,7 +7,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -78,7 +77,6 @@
 .method private static includeAuthorityInRequestLine(Lokhttp3/Request;Ljava/net/Proxy$Type;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lokhttp3/Request;->isHttps()Z
 
     move-result p0

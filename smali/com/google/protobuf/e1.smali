@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field public final a:Lcom/google/protobuf/j1;
+.field public final a:Lcom/google/protobuf/i0;
 
-.field public final b:Ljava/util/concurrent/ConcurrentMap;
+.field public final b:Ljava/util/concurrent/ConcurrentHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/ConcurrentMap<",
@@ -27,7 +27,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/e1;
 
     invoke-direct {v0}, Lcom/google/protobuf/e1;-><init>()V
@@ -48,21 +47,21 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/google/protobuf/e1;->b:Ljava/util/concurrent/ConcurrentMap;
+    iput-object v0, p0, Lcom/google/protobuf/e1;->b:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 3
     new-instance v0, Lcom/google/protobuf/i0;
 
     invoke-direct {v0}, Lcom/google/protobuf/i0;-><init>()V
 
-    iput-object v0, p0, Lcom/google/protobuf/e1;->a:Lcom/google/protobuf/j1;
+    iput-object v0, p0, Lcom/google/protobuf/e1;->a:Lcom/google/protobuf/i0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/lang/Class;)Lcom/google/protobuf/i1;
+.method public final a(Ljava/lang/Class;)Lcom/google/protobuf/i1;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -82,9 +81,9 @@
     if-eqz p1, :cond_c
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/e1;->b:Ljava/util/concurrent/ConcurrentMap;
+    iget-object v0, p0, Lcom/google/protobuf/e1;->b:Ljava/util/concurrent/ConcurrentHashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -93,16 +92,14 @@
     if-nez v0, :cond_b
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/e1;->a:Lcom/google/protobuf/j1;
-
-    check-cast v0, Lcom/google/protobuf/i0;
+    iget-object v0, p0, Lcom/google/protobuf/e1;->a:Lcom/google/protobuf/i0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     const-class v1, Lcom/google/protobuf/GeneratedMessageLite;
 
-    sget-object v2, Lcom/google/protobuf/k1;->a:Ljava/lang/Class;
+    sget-object v2, Lcom/google/protobuf/j1;->a:Ljava/lang/Class;
 
     .line 5
     invoke-virtual {v1, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -111,7 +108,7 @@
 
     if-nez v2, :cond_1
 
-    sget-object v2, Lcom/google/protobuf/k1;->a:Ljava/lang/Class;
+    sget-object v2, Lcom/google/protobuf/j1;->a:Ljava/lang/Class;
 
     if-eqz v2, :cond_1
 
@@ -160,12 +157,12 @@
     if-eqz v0, :cond_2
 
     .line 11
-    sget-object v0, Lcom/google/protobuf/k1;->d:Lcom/google/protobuf/q1;
+    sget-object v0, Lcom/google/protobuf/j1;->d:Lcom/google/protobuf/r1;
 
     .line 12
-    sget-object v1, Lcom/google/protobuf/t;->a:Lcom/google/protobuf/r;
+    sget-object v1, Lcom/google/protobuf/t;->a:Lcom/google/protobuf/s;
 
-    sget-object v1, Lcom/google/protobuf/t;->a:Lcom/google/protobuf/r;
+    sget-object v1, Lcom/google/protobuf/t;->a:Lcom/google/protobuf/s;
 
     .line 13
     invoke-interface {v2}, Lcom/google/protobuf/o0;->b()Lcom/google/protobuf/q0;
@@ -175,13 +172,13 @@
     .line 14
     new-instance v3, Lcom/google/protobuf/u0;
 
-    invoke-direct {v3, v0, v1, v2}, Lcom/google/protobuf/u0;-><init>(Lcom/google/protobuf/q1;Lcom/google/protobuf/r;Lcom/google/protobuf/q0;)V
+    invoke-direct {v3, v0, v1, v2}, Lcom/google/protobuf/u0;-><init>(Lcom/google/protobuf/p1;Lcom/google/protobuf/r;Lcom/google/protobuf/q0;)V
 
     goto :goto_1
 
     .line 15
     :cond_2
-    sget-object v0, Lcom/google/protobuf/k1;->b:Lcom/google/protobuf/q1;
+    sget-object v0, Lcom/google/protobuf/j1;->b:Lcom/google/protobuf/p1;
 
     .line 16
     sget-object v1, Lcom/google/protobuf/t;->b:Lcom/google/protobuf/r;
@@ -196,7 +193,7 @@
     .line 18
     new-instance v3, Lcom/google/protobuf/u0;
 
-    invoke-direct {v3, v0, v1, v2}, Lcom/google/protobuf/u0;-><init>(Lcom/google/protobuf/q1;Lcom/google/protobuf/r;Lcom/google/protobuf/q0;)V
+    invoke-direct {v3, v0, v1, v2}, Lcom/google/protobuf/u0;-><init>(Lcom/google/protobuf/p1;Lcom/google/protobuf/r;Lcom/google/protobuf/q0;)V
 
     :goto_1
     move-object v0, v3
@@ -236,24 +233,24 @@
     if-eqz v1, :cond_6
 
     .line 22
-    sget-object v3, Lcom/google/protobuf/z0;->b:Lcom/google/protobuf/x0;
+    sget-object v3, Lcom/google/protobuf/z0;->b:Lcom/google/protobuf/y0;
 
     .line 23
-    sget-object v4, Lcom/google/protobuf/g0;->b:Lcom/google/protobuf/g0;
+    sget-object v4, Lcom/google/protobuf/g0;->b:Lcom/google/protobuf/g0$b;
 
     .line 24
-    sget-object v5, Lcom/google/protobuf/k1;->d:Lcom/google/protobuf/q1;
+    sget-object v5, Lcom/google/protobuf/j1;->d:Lcom/google/protobuf/r1;
 
     .line 25
-    sget-object v0, Lcom/google/protobuf/t;->a:Lcom/google/protobuf/r;
+    sget-object v0, Lcom/google/protobuf/t;->a:Lcom/google/protobuf/s;
 
-    sget-object v6, Lcom/google/protobuf/t;->a:Lcom/google/protobuf/r;
+    sget-object v6, Lcom/google/protobuf/t;->a:Lcom/google/protobuf/s;
 
     .line 26
-    sget-object v7, Lcom/google/protobuf/n0;->b:Lcom/google/protobuf/l0;
+    sget-object v7, Lcom/google/protobuf/n0;->b:Lcom/google/protobuf/m0;
 
     .line 27
-    invoke-static/range {v2 .. v7}, Lcom/google/protobuf/t0;->B(Lcom/google/protobuf/o0;Lcom/google/protobuf/x0;Lcom/google/protobuf/g0;Lcom/google/protobuf/q1;Lcom/google/protobuf/r;Lcom/google/protobuf/l0;)Lcom/google/protobuf/t0;
+    invoke-static/range {v2 .. v7}, Lcom/google/protobuf/t0;->A(Lcom/google/protobuf/o0;Lcom/google/protobuf/x0;Lcom/google/protobuf/g0;Lcom/google/protobuf/p1;Lcom/google/protobuf/r;Lcom/google/protobuf/l0;)Lcom/google/protobuf/t0;
 
     move-result-object v0
 
@@ -261,21 +258,21 @@
 
     .line 28
     :cond_6
-    sget-object v3, Lcom/google/protobuf/z0;->b:Lcom/google/protobuf/x0;
+    sget-object v3, Lcom/google/protobuf/z0;->b:Lcom/google/protobuf/y0;
 
     .line 29
-    sget-object v4, Lcom/google/protobuf/g0;->b:Lcom/google/protobuf/g0;
+    sget-object v4, Lcom/google/protobuf/g0;->b:Lcom/google/protobuf/g0$b;
 
     .line 30
-    sget-object v5, Lcom/google/protobuf/k1;->d:Lcom/google/protobuf/q1;
+    sget-object v5, Lcom/google/protobuf/j1;->d:Lcom/google/protobuf/r1;
 
     const/4 v6, 0x0
 
     .line 31
-    sget-object v7, Lcom/google/protobuf/n0;->b:Lcom/google/protobuf/l0;
+    sget-object v7, Lcom/google/protobuf/n0;->b:Lcom/google/protobuf/m0;
 
     .line 32
-    invoke-static/range {v2 .. v7}, Lcom/google/protobuf/t0;->B(Lcom/google/protobuf/o0;Lcom/google/protobuf/x0;Lcom/google/protobuf/g0;Lcom/google/protobuf/q1;Lcom/google/protobuf/r;Lcom/google/protobuf/l0;)Lcom/google/protobuf/t0;
+    invoke-static/range {v2 .. v7}, Lcom/google/protobuf/t0;->A(Lcom/google/protobuf/o0;Lcom/google/protobuf/x0;Lcom/google/protobuf/g0;Lcom/google/protobuf/p1;Lcom/google/protobuf/r;Lcom/google/protobuf/l0;)Lcom/google/protobuf/t0;
 
     move-result-object v0
 
@@ -298,10 +295,10 @@
     sget-object v0, Lcom/google/protobuf/z0;->a:Lcom/google/protobuf/x0;
 
     .line 35
-    sget-object v4, Lcom/google/protobuf/g0;->a:Lcom/google/protobuf/g0;
+    sget-object v4, Lcom/google/protobuf/g0;->a:Lcom/google/protobuf/g0$a;
 
     .line 36
-    sget-object v5, Lcom/google/protobuf/k1;->b:Lcom/google/protobuf/q1;
+    sget-object v5, Lcom/google/protobuf/j1;->b:Lcom/google/protobuf/p1;
 
     .line 37
     sget-object v6, Lcom/google/protobuf/t;->b:Lcom/google/protobuf/r;
@@ -314,7 +311,7 @@
     move-object v3, v0
 
     .line 39
-    invoke-static/range {v2 .. v7}, Lcom/google/protobuf/t0;->B(Lcom/google/protobuf/o0;Lcom/google/protobuf/x0;Lcom/google/protobuf/g0;Lcom/google/protobuf/q1;Lcom/google/protobuf/r;Lcom/google/protobuf/l0;)Lcom/google/protobuf/t0;
+    invoke-static/range {v2 .. v7}, Lcom/google/protobuf/t0;->A(Lcom/google/protobuf/o0;Lcom/google/protobuf/x0;Lcom/google/protobuf/g0;Lcom/google/protobuf/p1;Lcom/google/protobuf/r;Lcom/google/protobuf/l0;)Lcom/google/protobuf/t0;
 
     move-result-object v0
 
@@ -333,10 +330,10 @@
     sget-object v3, Lcom/google/protobuf/z0;->a:Lcom/google/protobuf/x0;
 
     .line 42
-    sget-object v4, Lcom/google/protobuf/g0;->a:Lcom/google/protobuf/g0;
+    sget-object v4, Lcom/google/protobuf/g0;->a:Lcom/google/protobuf/g0$a;
 
     .line 43
-    sget-object v5, Lcom/google/protobuf/k1;->c:Lcom/google/protobuf/q1;
+    sget-object v5, Lcom/google/protobuf/j1;->c:Lcom/google/protobuf/p1;
 
     const/4 v6, 0x0
 
@@ -344,13 +341,13 @@
     sget-object v7, Lcom/google/protobuf/n0;->a:Lcom/google/protobuf/l0;
 
     .line 45
-    invoke-static/range {v2 .. v7}, Lcom/google/protobuf/t0;->B(Lcom/google/protobuf/o0;Lcom/google/protobuf/x0;Lcom/google/protobuf/g0;Lcom/google/protobuf/q1;Lcom/google/protobuf/r;Lcom/google/protobuf/l0;)Lcom/google/protobuf/t0;
+    invoke-static/range {v2 .. v7}, Lcom/google/protobuf/t0;->A(Lcom/google/protobuf/o0;Lcom/google/protobuf/x0;Lcom/google/protobuf/g0;Lcom/google/protobuf/p1;Lcom/google/protobuf/r;Lcom/google/protobuf/l0;)Lcom/google/protobuf/t0;
 
     move-result-object v0
 
     .line 46
     :goto_2
-    iget-object v1, p0, Lcom/google/protobuf/e1;->b:Ljava/util/concurrent/ConcurrentMap;
+    iget-object v1, p0, Lcom/google/protobuf/e1;->b:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-interface {v1, p1, v0}, Ljava/util/concurrent/ConcurrentMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -376,7 +373,7 @@
     throw p1
 .end method
 
-.method public b(Ljava/lang/Object;)Lcom/google/protobuf/i1;
+.method public final b(Ljava/lang/Object;)Lcom/google/protobuf/i1;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -388,7 +385,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1

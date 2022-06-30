@@ -1,20 +1,11 @@
-.class public interface abstract Lp0/h;
+.class public abstract Lp0/h;
 .super Ljava/lang/Object;
-.source "MediaBrowserServiceCompatApi23.java"
-
-# interfaces
-.implements Lp0/f;
+.source "VolumeProviderCompat.java"
 
 
-# virtual methods
-.method public abstract a(Ljava/lang/String;Lp0/e;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Lp0/e<",
-            "Landroid/os/Parcel;",
-            ">;)V"
-        }
-    .end annotation
-.end method
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lp0/h$a;
+    }
+.end annotation

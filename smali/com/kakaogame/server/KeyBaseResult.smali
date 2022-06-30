@@ -418,8 +418,7 @@
 
     const-string v0, "code"
 
-    .line 1
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -442,8 +441,7 @@
 
     const-string v0, "content"
 
-    .line 1
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -456,7 +454,7 @@
     const-string v0, "desc"
 
     .line 1
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -494,7 +492,7 @@
     const-string v0, "header"
 
     .line 1
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -520,7 +518,6 @@
 .method public isSuccess()Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/kakaogame/server/KeyBaseResult;->getCode()I
 
     move-result v0
@@ -557,7 +554,7 @@
     .locals 0
 
     .line 2
-    invoke-super {p0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-super {p0, p1, p2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -567,7 +564,6 @@
 .method public toJSONString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/util/json/JSONValue;->toJSONString(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -597,6 +593,7 @@
 
     move-result-object v0
 
+    .line 3
     invoke-virtual {p0}, Lcom/kakaogame/server/KeyBaseResult;->getCode()I
 
     move-result v1

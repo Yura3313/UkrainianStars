@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/ApplicationUtilBase$b;
+.class public final Lcom/supercell/titan/ApplicationUtilBase$b;
 .super Ljava/lang/Object;
 .source "ApplicationUtilBase.java"
 
@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/supercell/titan/GameApp;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/titan/ApplicationUtilBase$b;->a:Lcom/supercell/titan/GameApp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +43,7 @@
 
 
 # virtual methods
-.method public call()Ljava/lang/Object;
+.method public final call()Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -60,7 +59,7 @@
 
     const-string v2, "clipboard"
 
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 

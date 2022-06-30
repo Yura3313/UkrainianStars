@@ -51,23 +51,18 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    goto :goto_1
-
     :catchall_1
-    nop
-
-    :goto_1
     if-eqz v1, :cond_0
 
     const/4 v0, 0x1
 
-    goto :goto_2
+    goto :goto_1
 
     :cond_0
     const/4 v0, 0x0
 
     .line 4
-    :goto_2
+    :goto_1
     sput-boolean v0, Lcom/google/protobuf/d;->b:Z
 
     return-void
@@ -76,7 +71,6 @@
 .method public static a()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/d;->a:Ljava/lang/Class;
 
     if-eqz v0, :cond_0

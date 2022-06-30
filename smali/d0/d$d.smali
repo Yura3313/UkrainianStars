@@ -1,4 +1,4 @@
-.class public Ld0/d$d;
+.class public final Ld0/d$d;
 .super Ld0/d$c;
 .source "TextDirectionHeuristicsCompat.java"
 
@@ -33,10 +33,9 @@
 
 
 # virtual methods
-.method public a()Z
+.method public final a()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Ld0/d$d;->b:Z
 
     return v0

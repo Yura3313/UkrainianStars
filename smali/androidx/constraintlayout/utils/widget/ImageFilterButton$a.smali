@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/utils/widget/ImageFilterButton$a;
+.class public final Landroidx/constraintlayout/utils/widget/ImageFilterButton$a;
 .super Landroid/view/ViewOutlineProvider;
 .source "ImageFilterButton.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Landroidx/constraintlayout/utils/widget/ImageFilterButton;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/constraintlayout/utils/widget/ImageFilterButton$a;->a:Landroidx/constraintlayout/utils/widget/ImageFilterButton;
 
     invoke-direct {p0}, Landroid/view/ViewOutlineProvider;-><init>()V
@@ -32,20 +31,20 @@
 
 
 # virtual methods
-.method public getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
+.method public final getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
     .locals 6
 
     .line 1
     iget-object p1, p0, Landroidx/constraintlayout/utils/widget/ImageFilterButton$a;->a:Landroidx/constraintlayout/utils/widget/ImageFilterButton;
 
-    invoke-virtual {p1}, Landroid/widget/ImageButton;->getWidth()I
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v3
 
     .line 2
     iget-object p1, p0, Landroidx/constraintlayout/utils/widget/ImageFilterButton$a;->a:Landroidx/constraintlayout/utils/widget/ImageFilterButton;
 
-    invoke-virtual {p1}, Landroid/widget/ImageButton;->getHeight()I
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result v4
 
@@ -59,7 +58,7 @@
     iget-object v0, p0, Landroidx/constraintlayout/utils/widget/ImageFilterButton$a;->a:Landroidx/constraintlayout/utils/widget/ImageFilterButton;
 
     .line 4
-    iget v0, v0, Landroidx/constraintlayout/utils/widget/ImageFilterButton;->k:F
+    iget v0, v0, Landroidx/constraintlayout/utils/widget/ImageFilterButton;->j:F
 
     mul-float p1, p1, v0
 

@@ -1,6 +1,9 @@
-.class public Ld/b$b;
-.super Ld/b$g;
-.source "AnimatedStateListDrawableCompat.java"
+.class public final Ld/b$b;
+.super Ljava/lang/Object;
+.source "DrawableContainer.java"
+
+# interfaces
+.implements Landroid/graphics/drawable/Drawable$Callback;
 
 
 # annotations
@@ -15,44 +18,52 @@
 
 
 # instance fields
-.field public final a:Landroid/graphics/drawable/Animatable;
+.field public f:Landroid/graphics/drawable/Drawable$Callback;
 
 
 # direct methods
-.method public constructor <init>(Landroid/graphics/drawable/Animatable;)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, v0}, Ld/b$g;-><init>(Ld/b$a;)V
-
-    .line 2
-    iput-object p1, p0, Ld/b$b;->a:Landroid/graphics/drawable/Animatable;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public c()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ld/b$b;->a:Landroid/graphics/drawable/Animatable;
-
-    invoke-interface {v0}, Landroid/graphics/drawable/Animatable;->start()V
+.method public final invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
+    .locals 0
 
     return-void
 .end method
 
-.method public d()V
+.method public final scheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Ld/b$b;->a:Landroid/graphics/drawable/Animatable;
+    iget-object v0, p0, Ld/b$b;->f:Landroid/graphics/drawable/Drawable$Callback;
 
-    invoke-interface {v0}, Landroid/graphics/drawable/Animatable;->stop()V
+    if-eqz v0, :cond_0
 
+    .line 2
+    invoke-interface {v0, p1, p2, p3, p4}, Landroid/graphics/drawable/Drawable$Callback;->scheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final unscheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ld/b$b;->f:Landroid/graphics/drawable/Drawable$Callback;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-interface {v0, p1, p2}, Landroid/graphics/drawable/Drawable$Callback;->unscheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V
+
+    :cond_0
     return-void
 .end method

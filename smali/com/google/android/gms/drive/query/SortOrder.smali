@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final g:Ljava/util/List;
+.field public final f:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -25,17 +25,16 @@
     .end annotation
 .end field
 
-.field public final h:Z
+.field public final g:Z
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lr2/b;
+    new-instance v0, Ls2/b;
 
-    invoke-direct {v0}, Lr2/b;-><init>()V
+    invoke-direct {v0}, Ls2/b;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/query/SortOrder;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -57,17 +56,17 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/gms/drive/query/SortOrder;->f:Ljava/util/List;
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/drive/query/SortOrder;->h:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -77,7 +76,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/android/gms/drive/query/SortOrder;->f:Ljava/util/List;
 
     const-string v3, ","
 
@@ -90,7 +89,7 @@
 
     aput-object v2, v1, v3
 
-    iget-boolean v2, p0, Lcom/google/android/gms/drive/query/SortOrder;->h:Z
+    iget-boolean v2, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Z
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -110,40 +109,38 @@
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 3
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 6
 
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
-    move-result p2
+    move-result v5
+
+    .line 2
+    iget-object p2, p0, Lcom/google/android/gms/drive/query/SortOrder;->f:Ljava/util/List;
 
     const/4 v0, 0x1
 
-    .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Ljava/util/List;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
-
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
-
-    const/4 v0, 0x2
+    invoke-static {p1, v0, p2, v1}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 3
-    iget-boolean v1, p0, Lcom/google/android/gms/drive/query/SortOrder;->h:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Z
+
+    const/4 v1, 0x2
 
     const/4 v2, 0x4
 
+    move-object v0, p1
+
+    move-object v4, p1
+
     .line 4
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
-
-    .line 5
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 6
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static/range {v0 .. v5}, Li1/i;->b(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
 
     return-void
 .end method

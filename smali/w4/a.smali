@@ -1,51 +1,35 @@
-.class public abstract Lw4/a;
-.super Ljava/lang/Object;
+.class public final Lw4/a;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "ExpandableTransformationBehavior.java"
+
+
+# instance fields
+.field public final synthetic f:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lcom/google/android/material/transformation/ExpandableTransformationBehavior;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lw4/a;->f:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
+
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
-.method public static a(IJJILjava/lang/String;)Lw4/a;
-    .locals 9
-
-    new-instance v8, Lw4/c;
-
-    move-object v0, v8
-
-    move v1, p0
-
-    move-wide v2, p1
-
-    move-wide v4, p3
-
-    move v6, p5
-
-    move-object v7, p6
-
-    invoke-direct/range {v0 .. v7}, Lw4/c;-><init>(IJJILjava/lang/String;)V
-
-    return-object v8
-.end method
-
 
 # virtual methods
-.method public abstract b()J
-.end method
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
 
-.method public abstract c()I
-.end method
+    .line 1
+    iget-object p1, p0, Lw4/a;->f:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
 
-.method public abstract d()I
-.end method
+    const/4 v0, 0x0
 
-.method public abstract e()Ljava/lang/String;
-.end method
+    .line 2
+    iput-object v0, p1, Lcom/google/android/material/transformation/ExpandableTransformationBehavior;->b:Landroid/animation/AnimatorSet;
 
-.method public abstract f()J
+    return-void
 .end method

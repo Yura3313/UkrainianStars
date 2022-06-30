@@ -1,133 +1,703 @@
 .class public final Le2/b;
-.super Lcom/google/android/gms/common/api/b;
-.source "com.google.android.gms:play-services-base@@17.5.0"
-
-# interfaces
-.implements Lc2/m;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/android/gms/common/api/b<",
-        "Lcom/google/android/gms/common/api/a$d$c;",
-        ">;",
-        "Lc2/m;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final k:Lcom/google/android/gms/common/api/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/android/gms/common/api/a<",
-            "Lcom/google/android/gms/common/api/a$d$c;",
-            ">;"
-        }
-    .end annotation
-.end field
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@17.5.0"
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 4
+.method public static a(Landroid/os/Parcel;)I
+    .locals 1
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    const/16 v0, 0x4f45
+
+    invoke-static {p0, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static b(Landroid/os/Parcel;I)V
+    .locals 0
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    invoke-static {p0, p1}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static c(Landroid/os/Parcel;IZ)V
+    .locals 1
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x4
 
     .line 1
-    new-instance v0, Lcom/google/android/gms/common/api/a$g;
-
-    invoke-direct {v0}, Lcom/google/android/gms/common/api/a$g;-><init>()V
+    invoke-static {p0, p1, v0}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 2
-    new-instance v1, Le2/d;
-
-    invoke-direct {v1}, Le2/d;-><init>()V
-
-    .line 3
-    new-instance v2, Lcom/google/android/gms/common/api/a;
-
-    const-string v3, "ClientTelemetry.API"
-
-    invoke-direct {v2, v3, v1, v0}, Lcom/google/android/gms/common/api/a;-><init>(Ljava/lang/String;Lcom/google/android/gms/common/api/a$a;Lcom/google/android/gms/common/api/a$g;)V
-
-    sput-object v2, Le2/b;->k:Lcom/google/android/gms/common/api/a;
+    invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 3
+.method public static d(Landroid/os/Parcel;ILandroid/os/Bundle;)V
+    .locals 0
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    if-nez p2, :cond_0
+
+    return-void
 
     .line 1
-    sget-object v0, Le2/b;->k:Lcom/google/android/gms/common/api/a;
+    :cond_0
+    invoke-static {p0, p1}, Le2/b;->r(Landroid/os/Parcel;I)I
 
-    sget-object v1, Lcom/google/android/gms/common/api/a$d;->b:Lcom/google/android/gms/common/api/a$d$c;
+    move-result p1
 
-    sget-object v2, Lcom/google/android/gms/common/api/b$a;->c:Lcom/google/android/gms/common/api/b$a;
+    .line 2
+    invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
 
-    invoke-direct {p0, p1, v0, v1, v2}, Lcom/google/android/gms/common/api/b;-><init>(Landroid/content/Context;Lcom/google/android/gms/common/api/a;Lcom/google/android/gms/common/api/a$d;Lcom/google/android/gms/common/api/b$a;)V
+    .line 3
+    invoke-static {p0, p1}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method
 
+.method public static e(Landroid/os/Parcel;I[BZ)V
+    .locals 0
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # [B
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 
-# virtual methods
-.method public final P0(Lcom/google/android/gms/common/internal/zaaa;)Lb4/f;
-    .locals 4
+    if-nez p2, :cond_1
+
+    if-eqz p3, :cond_0
+
+    const/4 p2, 0x0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Le2/b;->s(Landroid/os/Parcel;II)V
+
+    :cond_0
+    return-void
+
+    .line 2
+    :cond_1
+    invoke-static {p0, p1}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result p1
+
+    .line 3
+    invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeByteArray([B)V
+
+    .line 4
+    invoke-static {p0, p1}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static f(Landroid/os/Parcel;ILandroid/os/IBinder;)V
+    .locals 0
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/os/IBinder;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    if-nez p2, :cond_0
+
+    return-void
+
+    .line 1
+    :cond_0
+    invoke-static {p0, p1}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result p1
+
+    .line 2
+    invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
+
+    .line 3
+    invoke-static {p0, p1}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static g(Landroid/os/Parcel;II)V
+    .locals 1
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x4
+
+    .line 1
+    invoke-static {p0, p1, v0}, Le2/b;->s(Landroid/os/Parcel;II)V
+
+    .line 2
+    invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    return-void
+.end method
+
+.method public static h(Landroid/os/Parcel;[I)V
+    .locals 1
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p1    # [I
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x4
+
+    .line 1
+    invoke-static {p0, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v0
+
+    .line 2
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeIntArray([I)V
+
+    .line 3
+    invoke-static {p0, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static i(Landroid/os/Parcel;ILjava/lang/Integer;)V
+    .locals 1
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Integer;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    if-nez p2, :cond_0
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x4
+
+    .line 1
+    invoke-static {p0, p1, v0}, Le2/b;->s(Landroid/os/Parcel;II)V
+
+    .line 2
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
+
+    return-void
+.end method
+
+.method public static j(Landroid/os/Parcel;IJ)V
+    .locals 1
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    const/16 v0, 0x8
+
+    .line 1
+    invoke-static {p0, p1, v0}, Le2/b;->s(Landroid/os/Parcel;II)V
+
+    .line 2
+    invoke-virtual {p0, p2, p3}, Landroid/os/Parcel;->writeLong(J)V
+
+    return-void
+.end method
+
+.method public static k(Landroid/os/Parcel;ILjava/lang/Long;)V
+    .locals 1
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Long;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    if-nez p2, :cond_0
+
+    return-void
+
+    :cond_0
+    const/16 v0, 0x8
+
+    .line 1
+    invoke-static {p0, p1, v0}, Le2/b;->s(Landroid/os/Parcel;II)V
+
+    .line 2
+    invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide p1
+
+    invoke-virtual {p0, p1, p2}, Landroid/os/Parcel;->writeLong(J)V
+
+    return-void
+.end method
+
+.method public static l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    .locals 0
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/os/Parcelable;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    if-nez p2, :cond_1
+
+    if-eqz p4, :cond_0
+
+    const/4 p2, 0x0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Le2/b;->s(Landroid/os/Parcel;II)V
+
+    :cond_0
+    return-void
+
+    .line 2
+    :cond_1
+    invoke-static {p0, p1}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result p1
+
+    .line 3
+    invoke-interface {p2, p0, p3}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
+
+    .line 4
+    invoke-static {p0, p1}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    .locals 0
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    if-nez p2, :cond_1
+
+    if-eqz p3, :cond_0
+
+    const/4 p2, 0x0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Le2/b;->s(Landroid/os/Parcel;II)V
+
+    :cond_0
+    return-void
+
+    .line 2
+    :cond_1
+    invoke-static {p0, p1}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result p1
+
+    .line 3
+    invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 4
+    invoke-static {p0, p1}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static n(Landroid/os/Parcel;I[Ljava/lang/String;)V
+    .locals 0
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # [Ljava/lang/String;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    if-nez p2, :cond_0
+
+    return-void
+
+    .line 1
+    :cond_0
+    invoke-static {p0, p1}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result p1
+
+    .line 2
+    invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeStringArray([Ljava/lang/String;)V
+
+    .line 3
+    invoke-static {p0, p1}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static o(Landroid/os/Parcel;ILjava/util/List;)V
+    .locals 0
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/util/List;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/android/gms/common/internal/zaaa;",
-            ")",
-            "Lb4/f<",
-            "Ljava/lang/Void;",
-            ">;"
+            "Landroid/os/Parcel;",
+            "I",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;Z)V"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    return-void
+
+    .line 1
+    :cond_0
+    invoke-static {p0, p1}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result p1
+
+    .line 2
+    invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
+
+    .line 3
+    invoke-static {p0, p1}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static p(Landroid/os/Parcel;I[Landroid/os/Parcelable;I)V
+    .locals 4
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # [Landroid/os/Parcelable;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T::",
+            "Landroid/os/Parcelable;",
+            ">(",
+            "Landroid/os/Parcel;",
+            "I[TT;IZ)V"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    return-void
+
+    .line 1
+    :cond_0
+    invoke-static {p0, p1}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result p1
+
+    .line 2
+    array-length v0, p2
+
+    .line 3
+    invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v0, :cond_2
+
+    .line 4
+    aget-object v3, p2, v2
+
+    if-nez v3, :cond_1
+
+    .line 5
+    invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
+
+    goto :goto_1
+
+    .line 6
+    :cond_1
+    invoke-static {p0, v3, p3}, Le2/b;->t(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
+
+    :goto_1
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 7
+    :cond_2
+    invoke-static {p0, p1}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static q(Landroid/os/Parcel;ILjava/util/List;Z)V
+    .locals 3
+    .param p0    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/util/List;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T::",
+            "Landroid/os/Parcelable;",
+            ">(",
+            "Landroid/os/Parcel;",
+            "I",
+            "Ljava/util/List<",
+            "TT;>;Z)V"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    if-nez p2, :cond_1
+
+    if-eqz p3, :cond_0
+
+    .line 1
+    invoke-static {p0, p1, v0}, Le2/b;->s(Landroid/os/Parcel;II)V
+
+    :cond_0
+    return-void
+
+    .line 2
+    :cond_1
+    invoke-static {p0, p1}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result p1
+
+    .line 3
+    invoke-interface {p2}, Ljava/util/List;->size()I
+
+    move-result p3
+
+    .line 4
+    invoke-virtual {p0, p3}, Landroid/os/Parcel;->writeInt(I)V
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, p3, :cond_3
+
+    .line 5
+    invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/os/Parcelable;
+
+    if-nez v2, :cond_2
+
+    .line 6
+    invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    goto :goto_1
+
+    .line 7
+    :cond_2
+    invoke-static {p0, v2, v0}, Le2/b;->t(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
+
+    :goto_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 8
+    :cond_3
+    invoke-static {p0, p1}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static r(Landroid/os/Parcel;I)I
+    .locals 1
+
+    const/high16 v0, -0x10000
+
+    or-int/2addr p1, v0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
+
+    const/4 p1, 0x0
+
+    .line 2
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 3
+    invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static s(Landroid/os/Parcel;II)V
+    .locals 1
+
+    const v0, 0xffff
+
+    if-lt p2, v0, :cond_0
+
+    const/high16 v0, -0x10000
+
+    or-int/2addr p1, v0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 2
+    invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    return-void
+
+    :cond_0
+    shl-int/lit8 p2, p2, 0x10
+
+    or-int/2addr p1, p2
+
+    .line 3
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
+
+    return-void
+.end method
+
+.method public static t(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T::",
+            "Landroid/os/Parcelable;",
+            ">(",
+            "Landroid/os/Parcel;",
+            "TT;I)V"
         }
     .end annotation
 
     .line 1
-    new-instance v0, La2/p$a;
+    invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, La2/p$a;-><init>(Lb5/m;)V
+    move-result v0
 
     const/4 v1, 0x1
 
-    new-array v1, v1, [Lcom/google/android/gms/common/Feature;
-
     .line 2
-    sget-object v2, Lo3/b;->a:Lcom/google/android/gms/common/Feature;
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
+    invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 3
-    iput-object v1, v0, La2/p$a;->c:[Lcom/google/android/gms/common/Feature;
+    invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v1
 
     .line 4
-    iput-boolean v3, v0, La2/p$a;->b:Z
+    invoke-interface {p1, p0, p2}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 5
-    new-instance v1, Le2/a;
+    invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
-    invoke-direct {v1, p1}, Le2/a;-><init>(Lcom/google/android/gms/common/internal/zaaa;)V
+    move-result p1
 
     .line 6
-    iput-object v1, v0, La2/p$a;->a:La2/n;
+    invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
+
+    sub-int p2, p1, v1
 
     .line 7
-    invoke-virtual {v0}, La2/p$a;->a()La2/p;
-
-    move-result-object p1
-
-    const/4 v0, 0x2
+    invoke-virtual {p0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/common/api/b;->b(ILa2/p;)Lb4/f;
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->setDataPosition(I)V
 
-    move-result-object p1
+    return-void
+.end method
 
-    return-object p1
+.method public static u(Landroid/os/Parcel;I)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v0
+
+    sub-int v1, v0, p1
+
+    add-int/lit8 p1, p1, -0x4
+
+    .line 2
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->setDataPosition(I)V
+
+    .line 3
+    invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 4
+    invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
+
+    return-void
 .end method

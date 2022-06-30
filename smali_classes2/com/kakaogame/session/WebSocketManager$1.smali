@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/session/WebSocketManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/session/WebSocketManager$1;->this$0:Lcom/kakaogame/session/WebSocketManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -118,7 +117,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v4
 

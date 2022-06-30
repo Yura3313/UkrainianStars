@@ -33,12 +33,11 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/android/gms/common/api/a$d$c;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/google/android/gms/common/api/a$d$c;-><init>(Lce/a;)V
+    invoke-direct {v0, v1}, Lcom/google/android/gms/common/api/a$d$c;-><init>(La2/j;)V
 
     sput-object v0, Lcom/google/android/gms/common/api/a$d;->b:Lcom/google/android/gms/common/api/a$d$c;
 

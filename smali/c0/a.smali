@@ -83,7 +83,7 @@
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 6
 
     .line 1
@@ -98,6 +98,7 @@
 
     move-result-object v1
 
+    .line 3
     iget-object v2, p0, Lc0/a;->a:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -132,7 +133,7 @@
 
     const/4 v2, 0x0
 
-    .line 3
+    .line 4
     :goto_0
     iget-object v3, p0, Lc0/a;->d:Ljava/util/List;
 
@@ -144,10 +145,10 @@
 
     const-string v3, " ["
 
-    .line 4
+    .line 5
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
+    .line 6
     iget-object v3, p0, Lc0/a;->d:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -158,7 +159,7 @@
 
     const/4 v4, 0x0
 
-    .line 6
+    .line 7
     :goto_1
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -168,17 +169,17 @@
 
     const-string v5, " \""
 
-    .line 7
+    .line 8
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
+    .line 9
     invoke-interface {v3, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, [B
 
-    .line 9
+    .line 10
     invoke-static {v5, v1}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
     move-result-object v5
@@ -187,7 +188,7 @@
 
     const-string v5, "\""
 
-    .line 10
+    .line 11
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     add-int/lit8 v4, v4, 0x1
@@ -197,7 +198,7 @@
     :cond_0
     const-string v3, " ]"
 
-    .line 11
+    .line 12
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     add-int/lit8 v2, v2, 0x1
@@ -209,8 +210,8 @@
 
     const-string v2, "mCertificatesArray: 0"
 
-    .line 12
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 13
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

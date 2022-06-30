@@ -7,14 +7,13 @@
 
 
 # instance fields
-.field public g:Landroid/graphics/drawable/Drawable;
+.field public f:Landroid/graphics/drawable/Drawable;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
     return-void
@@ -23,32 +22,25 @@
 
 # virtual methods
 .method public applyTheme(Landroid/content/res/Resources$Theme;)V
-    .locals 3
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
     .line 2
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x15
-
-    if-lt v1, v2, :cond_0
-
-    .line 3
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->applyTheme(Landroid/content/res/Resources$Theme;)V
+    invoke-static {v0, p1}, Ly/a;->a(Landroid/graphics/drawable/Drawable;Landroid/content/res/Resources$Theme;)V
 
     :cond_0
     return-void
 .end method
 
-.method public clearColorFilter()V
+.method public final clearColorFilter()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -64,11 +56,11 @@
     return-void
 .end method
 
-.method public getCurrent()Landroid/graphics/drawable/Drawable;
+.method public final getCurrent()Landroid/graphics/drawable/Drawable;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -88,11 +80,11 @@
     return-object v0
 .end method
 
-.method public getMinimumHeight()I
+.method public final getMinimumHeight()I
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -112,11 +104,11 @@
     return v0
 .end method
 
-.method public getMinimumWidth()I
+.method public final getMinimumWidth()I
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -136,11 +128,11 @@
     return v0
 .end method
 
-.method public getPadding(Landroid/graphics/Rect;)Z
+.method public final getPadding(Landroid/graphics/Rect;)Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -160,11 +152,11 @@
     return p1
 .end method
 
-.method public getState()[I
+.method public final getState()[I
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -184,11 +176,11 @@
     return-object v0
 .end method
 
-.method public getTransparentRegion()Landroid/graphics/Region;
+.method public final getTransparentRegion()Landroid/graphics/Region;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -208,11 +200,11 @@
     return-object v0
 .end method
 
-.method public jumpToCurrentState()V
+.method public final jumpToCurrentState()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -227,7 +219,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -247,11 +239,11 @@
     return p1
 .end method
 
-.method public setChangingConfigurations(I)V
+.method public final setChangingConfigurations(I)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -267,11 +259,11 @@
     return-void
 .end method
 
-.method public setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
+.method public final setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -287,11 +279,11 @@
     return-void
 .end method
 
-.method public setFilterBitmap(Z)V
+.method public final setFilterBitmap(Z)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -302,41 +294,41 @@
     return-void
 .end method
 
-.method public setHotspot(FF)V
+.method public final setHotspot(FF)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-static {v0, p1, p2}, Ly/a;->e(Landroid/graphics/drawable/Drawable;FF)V
+    invoke-static {v0, p1, p2}, Ly/a;->j(Landroid/graphics/drawable/Drawable;FF)V
 
     :cond_0
     return-void
 .end method
 
-.method public setHotspotBounds(IIII)V
+.method public final setHotspotBounds(IIII)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-static {v0, p1, p2, p3, p4}, Ly/a;->f(Landroid/graphics/drawable/Drawable;IIII)V
+    invoke-static {v0, p1, p2, p3, p4}, Ly/a;->k(Landroid/graphics/drawable/Drawable;IIII)V
 
     :cond_0
     return-void
 .end method
 
-.method public setState([I)Z
+.method public final setState([I)Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 

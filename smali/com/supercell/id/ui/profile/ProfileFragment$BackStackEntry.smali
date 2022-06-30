@@ -73,57 +73,12 @@
 
 
 # virtual methods
-.method public B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/supercell/id/ui/MainActivity;",
-            ")",
-            "Ljava/lang/Class<",
-            "+",
-            "Lcom/supercell/id/ui/BaseFragment;",
-            ">;"
-        }
-    .end annotation
-
-    if-eqz p1, :cond_1
-
-    const-string v0, "mainActivity.resources"
-
-    .line 1
-    invoke-static {p1, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    const-class p1, Lrc/f0;
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    const-class p1, Lcom/supercell/id/ui/profile/ProfileFragment$a;
-
-    :goto_0
-    return-object p1
-
-    :cond_1
-    const-string p1, "mainActivity"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public E(Lcom/supercell/id/ui/MainActivity;III)I
+.method public final G(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 1
 
-    if-eqz p1, :cond_2
+    const-string p2, "mainActivity"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -132,7 +87,7 @@
 
     const-string p4, "mainActivity.resources"
 
-    invoke-static {p2, p4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     sget v0, Lcom/supercell/id/R$bool;->isSmallScreen:I
@@ -145,13 +100,15 @@
 
     const/16 p1, 0x50
 
-    .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float p1, p1
 
-    move-result p1
+    .line 3
+    sget p2, La5/g0;->a:F
+
+    mul-float p1, p1, p2
 
     .line 4
-    invoke-static {p1}, Lb5/m;->r(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
 
     move-result p1
 
@@ -163,7 +120,7 @@
 
     move-result-object p1
 
-    invoke-static {p1, p4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 6
     sget p2, Lcom/supercell/id/R$bool;->isSortOfATablet:I
@@ -176,13 +133,15 @@
 
     const/16 p1, 0x96
 
-    .line 7
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float p1, p1
 
-    move-result p1
+    .line 7
+    sget p2, La5/g0;->a:F
+
+    mul-float p1, p1, p2
 
     .line 8
-    invoke-static {p1}, Lb5/m;->r(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
 
     move-result p1
 
@@ -194,55 +153,40 @@
     :cond_1
     const/16 p1, 0x57
 
-    .line 9
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float p1, p1
 
-    move-result p1
+    .line 9
+    sget p2, La5/g0;->a:F
+
+    mul-float p1, p1, p2
 
     .line 10
-    invoke-static {p1}, Lb5/m;->r(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
 
     move-result p1
 
     :goto_1
     return p1
-
-    :cond_2
-    const-string p1, "mainActivity"
-
-    .line 11
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public G(Lcom/supercell/id/ui/MainActivity;III)I
-    .locals 0
+.method public final K(Lcom/supercell/id/ui/MainActivity;III)I
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "mainActivity"
 
-    .line 1
-    invoke-static {p2, p3, p4}, Lrc/f0;->q1(III)I
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object p1, Lwc/g1;->p0:Lwc/g1$a;
+
+    invoke-virtual {p1, p2, p3, p4}, Lwc/g1$a;->a(III)I
 
     move-result p1
 
     return p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public T(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
-    .locals 1
+.method public final Q(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -250,53 +194,36 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lrc/g1;",
+            "Lwc/a1;",
             ">;"
         }
     .end annotation
 
-    if-eqz p1, :cond_1
+    const-string v0, "mainActivity"
 
-    const-string v0, "mainActivity.resources"
+    const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    const-class p1, Lrc/b0;
+    .line 2
+    const-class p1, Lwc/b0;
 
     goto :goto_0
 
-    .line 2
+    .line 3
     :cond_0
-    const-class p1, Lrc/i1;
+    const-class p1, Lwc/c1;
 
     :goto_0
     return-object p1
-
-    :cond_1
-    const-string p1, "mainActivity"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public describeContents()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public i()Ljava/lang/Class;
+.method public final a()Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -308,37 +235,49 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$BackStackEntry;->g:Ljava/lang/Class;
 
     return-object v0
 .end method
 
-.method public k0(Lcom/supercell/id/ui/MainActivity;III)I
-    .locals 0
+.method public final describeContents()I
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const/4 v0, 0x0
 
-    .line 1
-    invoke-static {p2, p3, p4}, Lrc/f0;->s1(III)I
+    return v0
+.end method
+
+.method public final k0(Lcom/supercell/id/ui/MainActivity;III)I
+    .locals 1
+
+    const-string v0, "mainActivity"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object p1, Lwc/g1;->p0:Lwc/g1$a;
+
+    invoke-virtual {p1, p2, p3, p4}, Lwc/g1$a;->b(III)I
 
     move-result p1
 
     return p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public n0(Lcom/supercell/id/ui/MainActivity;III)I
+.method public final l()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final o0(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
+
+    const-string p2, "mainActivity"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -347,7 +286,7 @@
 
     const-string p2, "mainActivity.resources"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     sget p2, Lcom/supercell/id/R$bool;->isSmallScreen:I
@@ -365,13 +304,15 @@
     :cond_0
     const/16 p1, 0x96
 
-    .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float p1, p1
 
-    move-result p1
+    .line 3
+    sget p2, La5/g0;->a:F
+
+    mul-float p1, p1, p2
 
     .line 4
-    invoke-static {p1}, Lb5/m;->r(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
 
     move-result p1
 
@@ -379,13 +320,15 @@
 
     const/16 p2, 0x57
 
-    .line 5
-    invoke-static {p2}, Lcom/android/billingclient/api/a0;->b(I)F
+    int-to-float p2, p2
 
-    move-result p2
+    .line 5
+    sget p3, La5/g0;->a:F
+
+    mul-float p2, p2, p3
 
     .line 6
-    invoke-static {p2}, Lb5/m;->r(F)I
+    invoke-static {p2}, Lcom/android/billingclient/api/z;->n(F)I
 
     move-result p2
 
@@ -395,55 +338,67 @@
     return p1
 .end method
 
-.method public t()Z
-    .locals 1
+.method public final r0(Lcom/supercell/id/ui/MainActivity;)Z
+    .locals 2
 
-    const/4 v0, 0x0
+    const-string v0, "mainActivity"
 
-    return v0
-.end method
-
-.method public t0(Lcom/supercell/id/ui/MainActivity;)Z
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    const-string v0, "mainActivity.resources"
+    const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     xor-int/lit8 p1, p1, 0x1
 
     return p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
+
+    const-string p2, "dest"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final x(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/supercell/id/ui/MainActivity;",
+            ")",
+            "Ljava/lang/Class<",
+            "+",
+            "Lcom/supercell/id/ui/BaseFragment;",
+            ">;"
+        }
+    .end annotation
+
+    const-string v0, "mainActivity"
+
+    const-string v1, "mainActivity.resources"
+
+    .line 1
+    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result p1
 
     if-eqz p1, :cond_0
 
-    return-void
+    .line 2
+    const-class p1, Lwc/g1;
 
+    goto :goto_0
+
+    .line 3
     :cond_0
-    const-string p1, "dest"
+    const-class p1, Lcom/supercell/id/ui/profile/ProfileFragment$b;
 
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
+    :goto_0
+    return-object p1
 .end method

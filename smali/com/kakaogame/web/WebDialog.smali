@@ -311,7 +311,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/web/WebDialog;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/web/WebDialog;->setDialogVisibility()V
 
     return-void
@@ -320,7 +319,6 @@
 .method public static synthetic access$300(Lcom/kakaogame/web/WebDialog;)Landroid/widget/TextView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/web/WebDialog;->titleView:Landroid/widget/TextView;
 
     return-object p0
@@ -329,7 +327,6 @@
 .method public static synthetic access$402(Lcom/kakaogame/web/WebDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog;->deepLinkUrl:Ljava/lang/String;
 
     return-object p1
@@ -338,7 +335,6 @@
 .method public static synthetic access$500(Lcom/kakaogame/web/WebDialog;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/web/WebDialog;->changeTitleText(Ljava/lang/String;)V
 
     return-void
@@ -347,7 +343,6 @@
 .method public static synthetic access$700(Lcom/kakaogame/web/WebDialog;Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/kakaogame/web/WebDialog;->checkRequiredPermission(Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
 
     return-void
@@ -397,7 +392,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/kakaogame/web/WebDialog$1;
 
     invoke-direct {v0, p0, p3, p1, p2}, Lcom/kakaogame/web/WebDialog$1;-><init>(Lcom/kakaogame/web/WebDialog;Lcom/kakaogame/KGResultCallback;Landroid/app/Activity;Ljava/lang/String;)V
@@ -684,7 +678,6 @@
 .method public getDeepLinkUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog;->deepLinkUrl:Ljava/lang/String;
 
     return-object v0
@@ -978,7 +971,7 @@
 
     sget-object v4, Lcom/kakaogame/web/WebDialog$Settings$CloseButtonColor;->GREY:Lcom/kakaogame/web/WebDialog$Settings$CloseButtonColor;
 
-    invoke-virtual {v3, v4}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -1016,7 +1009,7 @@
 
     sget-object v4, Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;->GREY:Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;
 
-    invoke-virtual {v3, v4}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -1224,7 +1217,6 @@
 .method public loadUrl(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog;->webView:Landroid/webkit/WebView;
 
     invoke-virtual {v0, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
@@ -1751,7 +1743,7 @@
     .line 27
     iget-object v3, p0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v3}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -1783,7 +1775,7 @@
     .line 30
     iget-object v1, p0, Lcom/kakaogame/web/WebDialog;->activity:Landroid/app/Activity;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 

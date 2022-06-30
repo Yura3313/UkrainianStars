@@ -1,4 +1,4 @@
-.class public Lcom/google/protobuf/y;
+.class public final Lcom/google/protobuf/y;
 .super Ljava/lang/Object;
 .source "GeneratedMessageInfoFactory.java"
 
@@ -14,7 +14,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/y;
 
     invoke-direct {v0}, Lcom/google/protobuf/y;-><init>()V
@@ -27,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +33,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Class;)Lcom/google/protobuf/o0;
+.method public final a(Ljava/lang/Class;)Lcom/google/protobuf/o0;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -85,10 +83,12 @@
 
     const-string v2, "Unable to get message info for "
 
+    .line 6
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 7
     invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p1
@@ -103,16 +103,18 @@
 
     throw v1
 
-    .line 6
+    .line 8
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Unsupported message type: "
 
+    .line 9
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 10
     invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p1
@@ -128,7 +130,7 @@
     throw v0
 .end method
 
-.method public b(Ljava/lang/Class;)Z
+.method public final b(Ljava/lang/Class;)Z
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -138,7 +140,6 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {v0, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z

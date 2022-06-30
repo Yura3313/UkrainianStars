@@ -1,4 +1,4 @@
-.class public Ld0/b;
+.class public final Ld0/b;
 .super Ljava/lang/Object;
 .source "PrecomputedTextCompat.java"
 
@@ -15,43 +15,39 @@
 
 
 # virtual methods
-.method public charAt(I)C
+.method public final charAt(I)C
     .locals 0
 
     const/4 p1, 0x0
 
-    .line 1
     throw p1
 .end method
 
-.method public getSpanEnd(Ljava/lang/Object;)I
+.method public final getSpanEnd(Ljava/lang/Object;)I
     .locals 0
 
     const/4 p1, 0x0
 
-    .line 1
     throw p1
 .end method
 
-.method public getSpanFlags(Ljava/lang/Object;)I
+.method public final getSpanFlags(Ljava/lang/Object;)I
     .locals 0
 
     const/4 p1, 0x0
 
-    .line 1
     throw p1
 .end method
 
-.method public getSpanStart(Ljava/lang/Object;)I
+.method public final getSpanStart(Ljava/lang/Object;)I
     .locals 0
 
     const/4 p1, 0x0
 
-    .line 1
     throw p1
 .end method
 
-.method public getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
+.method public final getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
     .locals 0
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -86,25 +82,23 @@
     throw p2
 .end method
 
-.method public length()I
+.method public final length()I
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 1
     throw v0
 .end method
 
-.method public nextSpanTransition(IILjava/lang/Class;)I
+.method public final nextSpanTransition(IILjava/lang/Class;)I
     .locals 0
 
     const/4 p1, 0x0
 
-    .line 1
     throw p1
 .end method
 
-.method public removeSpan(Ljava/lang/Object;)V
+.method public final removeSpan(Ljava/lang/Object;)V
     .locals 2
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -144,7 +138,7 @@
     throw p1
 .end method
 
-.method public setSpan(Ljava/lang/Object;III)V
+.method public final setSpan(Ljava/lang/Object;III)V
     .locals 0
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -184,20 +178,18 @@
     throw p1
 .end method
 
-.method public subSequence(II)Ljava/lang/CharSequence;
+.method public final subSequence(II)Ljava/lang/CharSequence;
     .locals 0
 
     const/4 p1, 0x0
 
-    .line 1
     throw p1
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 1
     throw v0
 .end method

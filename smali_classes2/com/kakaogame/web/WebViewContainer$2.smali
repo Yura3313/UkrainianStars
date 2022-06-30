@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/WebViewContainer;Landroid/content/Intent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebViewContainer$2;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     iput-object p2, p0, Lcom/kakaogame/web/WebViewContainer$2;->val$chooserIntent:Landroid/content/Intent;
@@ -42,7 +41,6 @@
 .method public onActivityAction(Landroid/app/Activity;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$2;->val$chooserIntent:Landroid/content/Intent;
 
     const/16 v1, 0x75f

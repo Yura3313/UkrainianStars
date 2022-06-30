@@ -1,4 +1,4 @@
-.class public Lw/c;
+.class public final Lw/c;
 .super Ljava/lang/Object;
 .source "FontResourcesParserCompat.java"
 
@@ -598,7 +598,6 @@
     :goto_0
     if-lez v0, :cond_2
 
-    .line 1
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v1

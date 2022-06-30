@@ -1,88 +1,112 @@
 .class public final Ld5/n;
 .super Ljava/lang/Object;
-.source "KmsClients.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field public static final a:Ljava/util/concurrent/CopyOnWriteArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/CopyOnWriteArrayList<",
-            "Ld5/m;",
-            ">;"
-        }
-    .end annotation
-.end field
+# instance fields
+.field public final synthetic f:I
+
+.field public final g:Ljava/lang/Object;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
 
-    .line 1
-    new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+    iput p2, p0, Ld5/n;->f:I
 
-    invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
+    iput-object p1, p0, Ld5/n;->g:Ljava/lang/Object;
 
-    sput-object v0, Ld5/n;->a:Ljava/util/concurrent/CopyOnWriteArrayList;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;)Ld5/m;
+
+# virtual methods
+.method public final run()V
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+
+    iget v0, p0, Ld5/n;->f:I
+
+    const/4 v1, 0x1
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
 
     .line 1
-    sget-object v0, Ld5/n;->a:Ljava/util/concurrent/CopyOnWriteArrayList;
+    :pswitch_0
+    iget-object v0, p0, Ld5/n;->g:Ljava/lang/Object;
 
-    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    check-cast v0, Landroid/content/Context;
+
+    invoke-static {v0}, Le5/e;->d(Landroid/content/Context;)Le5/e;
 
     move-result-object v0
 
-    :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ld5/m;
-
     .line 2
-    invoke-interface {v1, p0}, Ld5/m;->a(Ljava/lang/String;)Z
+    monitor-enter v0
 
-    move-result v2
+    :try_start_0
+    iput-boolean v1, v0, Lb5/c;->f:Z
 
-    if-eqz v2, :cond_0
+    invoke-virtual {v0}, Lb5/c;->c()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    return-object v1
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+
+    throw v1
 
     .line 3
-    :cond_1
-    new-instance v0, Ljava/security/GeneralSecurityException;
-
-    const-string v1, "No KMS client does support: "
-
-    invoke-static {v1, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    goto :goto_1
-
     :goto_0
-    throw v0
+    iget-object v0, p0, Ld5/n;->g:Ljava/lang/Object;
 
-    :goto_1
-    goto :goto_0
+    check-cast v0, Ly5/e;
+
+    .line 4
+    monitor-enter v0
+
+    .line 5
+    :try_start_1
+    iget v2, v0, Ly5/e;->a:I
+
+    if-ne v2, v1, :cond_0
+
+    const-string v2, "Timed out while binding"
+
+    .line 6
+    invoke-virtual {v0, v1, v2}, Ly5/e;->a(ILjava/lang/String;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 7
+    :cond_0
+    monitor-exit v0
+
+    return-void
+
+    :catchall_1
+    move-exception v1
+
+    monitor-exit v0
+
+    throw v1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

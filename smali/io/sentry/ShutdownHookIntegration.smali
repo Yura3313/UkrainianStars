@@ -58,7 +58,6 @@
 .method private static synthetic lambda$register$0(Lio/sentry/IHub;Lio/sentry/SentryOptions;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Lio/sentry/SentryOptions;->getFlushTimeoutMillis()J
 
     move-result-wide v0
@@ -97,14 +96,13 @@
     .annotation build Lorg/jetbrains/annotations/VisibleForTesting;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/ShutdownHookIntegration;->thread:Ljava/lang/Thread;
 
     return-object v0
 .end method
 
 .method public register(Lio/sentry/IHub;Lio/sentry/SentryOptions;)V
-    .locals 4
+    .locals 3
 
     const-string v0, "Hub is required"
 
@@ -128,11 +126,9 @@
     .line 4
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v2, Lcom/supercell/titan/v;
+    new-instance v2, Lio/sentry/d0;
 
-    const/4 v3, 0x1
-
-    invoke-direct {v2, p1, p2, v3}, Lcom/supercell/titan/v;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v2, p1, p2}, Lio/sentry/d0;-><init>(Lio/sentry/IHub;Lio/sentry/SentryOptions;)V
 
     invoke-direct {v0, v2}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 

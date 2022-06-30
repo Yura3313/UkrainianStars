@@ -30,30 +30,32 @@
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 6
 
-    const/4 v0, 0x0
+    const-string v0, "in"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v1, Lcom/kakao/sdk/partner/talk/model/ChatMembers;
+    new-instance v0, Lcom/kakao/sdk/partner/talk/model/ChatMembers;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_0
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
-    move-result-wide v2
+    move-result-wide v3
 
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v2
+    move-result-object v1
 
     goto :goto_0
 
     :cond_0
-    move-object v2, v0
+    move-object v1, v2
 
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -64,11 +66,11 @@
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
-    move-result-wide v3
+    move-result-wide v2
 
-    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v0
+    move-result-object v2
 
     :cond_1
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -109,23 +111,9 @@
 
     check-cast p1, Lcom/kakao/sdk/partner/talk/model/ChatMembers$Type;
 
-    invoke-direct {v1, v2, v0, v4, p1}, Lcom/kakao/sdk/partner/talk/model/ChatMembers;-><init>(Ljava/lang/Long;Ljava/lang/Long;Ljava/util/List;Lcom/kakao/sdk/partner/talk/model/ChatMembers$Type;)V
+    invoke-direct {v0, v1, v2, v4, p1}, Lcom/kakao/sdk/partner/talk/model/ChatMembers;-><init>(Ljava/lang/Long;Ljava/lang/Long;Ljava/util/List;Lcom/kakao/sdk/partner/talk/model/ChatMembers$Type;)V
 
-    return-object v1
-
-    :cond_3
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    goto :goto_3
-
-    :goto_2
-    throw v0
-
-    :goto_3
-    goto :goto_2
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

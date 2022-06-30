@@ -99,7 +99,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/config/Configuration$KGServerType;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/config/Configuration$KGServerType;->value:Ljava/lang/String;
 
     return-object p0
@@ -108,7 +107,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/kakaogame/config/Configuration$KGServerType;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/kakaogame/config/Configuration$KGServerType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -123,7 +121,6 @@
 .method public static values()[Lcom/kakaogame/config/Configuration$KGServerType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/config/Configuration$KGServerType;->$VALUES:[Lcom/kakaogame/config/Configuration$KGServerType;
 
     invoke-virtual {v0}, [Lcom/kakaogame/config/Configuration$KGServerType;->clone()Ljava/lang/Object;
@@ -140,7 +137,6 @@
 .method public getValue()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/config/Configuration$KGServerType;->value:Ljava/lang/String;
 
     return-object v0

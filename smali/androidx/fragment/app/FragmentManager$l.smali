@@ -20,7 +20,7 @@
         value = {
             "(",
             "Ljava/util/ArrayList<",
-            "Landroidx/fragment/app/b;",
+            "Landroidx/fragment/app/a;",
             ">;",
             "Ljava/util/ArrayList<",
             "Ljava/lang/Boolean;",

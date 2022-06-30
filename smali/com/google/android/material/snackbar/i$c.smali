@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/snackbar/i$c;
+.class public final Lcom/google/android/material/snackbar/i$c;
 .super Ljava/lang/Object;
 .source "SnackbarManager.java"
 

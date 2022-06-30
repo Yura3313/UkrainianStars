@@ -135,7 +135,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/sentry/SynchronizedCollection;
 
     invoke-direct {v0, p0}, Lio/sentry/SynchronizedCollection;-><init>(Ljava/util/Collection;)V
@@ -337,7 +336,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SynchronizedCollection;->collection:Ljava/util/Collection;
 
     return-object v0
@@ -476,7 +474,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/sentry/SynchronizedCollection;->decorated()Ljava/util/Collection;
 
     move-result-object v0

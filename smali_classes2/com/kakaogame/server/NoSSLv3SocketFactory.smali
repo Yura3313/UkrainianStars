@@ -81,7 +81,7 @@
     .line 2
     iget-object v0, p0, Lcom/kakaogame/server/NoSSLv3SocketFactory;->delegate:Ljavax/net/ssl/SSLSocketFactory;
 
-    invoke-virtual {v0, p1, p2}, Ljavax/net/ssl/SSLSocketFactory;->createSocket(Ljava/lang/String;I)Ljava/net/Socket;
+    invoke-virtual {v0, p1, p2}, Ljavax/net/SocketFactory;->createSocket(Ljava/lang/String;I)Ljava/net/Socket;
 
     move-result-object p1
 
@@ -103,7 +103,7 @@
     .line 3
     iget-object v0, p0, Lcom/kakaogame/server/NoSSLv3SocketFactory;->delegate:Ljavax/net/ssl/SSLSocketFactory;
 
-    invoke-virtual {v0, p1, p2, p3, p4}, Ljavax/net/ssl/SSLSocketFactory;->createSocket(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;
+    invoke-virtual {v0, p1, p2, p3, p4}, Ljavax/net/SocketFactory;->createSocket(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;
 
     move-result-object p1
 
@@ -125,7 +125,7 @@
     .line 4
     iget-object v0, p0, Lcom/kakaogame/server/NoSSLv3SocketFactory;->delegate:Ljavax/net/ssl/SSLSocketFactory;
 
-    invoke-virtual {v0, p1, p2}, Ljavax/net/ssl/SSLSocketFactory;->createSocket(Ljava/net/InetAddress;I)Ljava/net/Socket;
+    invoke-virtual {v0, p1, p2}, Ljavax/net/SocketFactory;->createSocket(Ljava/net/InetAddress;I)Ljava/net/Socket;
 
     move-result-object p1
 
@@ -147,7 +147,7 @@
     .line 5
     iget-object v0, p0, Lcom/kakaogame/server/NoSSLv3SocketFactory;->delegate:Ljavax/net/ssl/SSLSocketFactory;
 
-    invoke-virtual {v0, p1, p2, p3, p4}, Ljavax/net/ssl/SSLSocketFactory;->createSocket(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;
+    invoke-virtual {v0, p1, p2, p3, p4}, Ljavax/net/SocketFactory;->createSocket(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;
 
     move-result-object p1
 
@@ -183,7 +183,6 @@
 .method public getDefaultCipherSuites()[Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/server/NoSSLv3SocketFactory;->delegate:Ljavax/net/ssl/SSLSocketFactory;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocketFactory;->getDefaultCipherSuites()[Ljava/lang/String;
@@ -196,7 +195,6 @@
 .method public getSupportedCipherSuites()[Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/server/NoSSLv3SocketFactory;->delegate:Ljavax/net/ssl/SSLSocketFactory;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocketFactory;->getSupportedCipherSuites()[Ljava/lang/String;

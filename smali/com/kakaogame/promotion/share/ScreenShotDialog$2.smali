@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/share/ScreenShotDialog;Landroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog$2;->this$0:Lcom/kakaogame/promotion/share/ScreenShotDialog;
 
     iput-object p2, p0, Lcom/kakaogame/promotion/share/ScreenShotDialog$2;->val$bmp:Landroid/graphics/Bitmap;

@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Lj1/f;
+.implements Lk1/f;
 
 
 # static fields
@@ -11,13 +11,13 @@
 
 
 # virtual methods
-.method public abstract initialize(Landroid/content/Context;Lj1/e;Ljava/lang/String;Lp1/a;Landroid/os/Bundle;Landroid/os/Bundle;)V
+.method public abstract initialize(Landroid/content/Context;Lk1/e;Ljava/lang/String;Lq1/a;Landroid/os/Bundle;Landroid/os/Bundle;)V
 .end method
 
 .method public abstract isInitialized()Z
 .end method
 
-.method public abstract loadAd(Lj1/e;Landroid/os/Bundle;Landroid/os/Bundle;)V
+.method public abstract loadAd(Lk1/e;Landroid/os/Bundle;Landroid/os/Bundle;)V
 .end method
 
 .method public abstract synthetic onDestroy()V

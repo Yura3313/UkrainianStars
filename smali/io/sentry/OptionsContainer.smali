@@ -62,7 +62,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/sentry/OptionsContainer;
 
     invoke-direct {v0, p0}, Lio/sentry/OptionsContainer;-><init>(Ljava/lang/Class;)V
@@ -89,7 +88,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/OptionsContainer;->clazz:Ljava/lang/Class;
 
     const/4 v1, 0x0

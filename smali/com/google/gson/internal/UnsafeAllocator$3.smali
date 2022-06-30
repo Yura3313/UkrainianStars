@@ -22,7 +22,6 @@
 .method public constructor <init>(Ljava/lang/reflect/Method;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/internal/UnsafeAllocator$3;->val$newInstance:Ljava/lang/reflect/Method;
 
     invoke-direct {p0}, Lcom/google/gson/internal/UnsafeAllocator;-><init>()V

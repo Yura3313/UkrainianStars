@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup;
+.class public final Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup;
 .super Ljava/lang/Object;
 .source "StaggeredGridLayoutManager.java"
 
@@ -38,7 +38,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +45,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 2
 
     .line 1
@@ -68,7 +67,7 @@
     return-void
 .end method
 
-.method public b(I)V
+.method public final b(I)V
     .locals 4
 
     .line 1
@@ -139,7 +138,7 @@
     return-void
 .end method
 
-.method public c(I)Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;
+.method public final c(I)Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;
     .locals 4
 
     .line 1
@@ -172,7 +171,7 @@
     check-cast v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;
 
     .line 4
-    iget v3, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->g:I
+    iget v3, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->f:I
 
     if-ne v3, p1, :cond_1
 
@@ -187,7 +186,7 @@
     return-object v1
 .end method
 
-.method public d(I)I
+.method public final d(I)I
     .locals 4
 
     .line 1
@@ -254,7 +253,7 @@
     check-cast v3, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;
 
     .line 8
-    iget v3, v3, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->g:I
+    iget v3, v3, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->f:I
 
     if-lt v3, p1, :cond_5
 
@@ -286,7 +285,7 @@
     invoke-interface {v3, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 11
-    iget v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->g:I
+    iget v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->f:I
 
     :goto_2
     if-ne v0, v1, :cond_7
@@ -316,7 +315,7 @@
     return v0
 .end method
 
-.method public e(II)V
+.method public final e(II)V
     .locals 3
 
     .line 1
@@ -382,7 +381,7 @@
     check-cast v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;
 
     .line 8
-    iget v2, v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->g:I
+    iget v2, v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->f:I
 
     if-ge v2, p1, :cond_2
 
@@ -392,7 +391,7 @@
     add-int/2addr v2, p2
 
     .line 9
-    iput v2, v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->g:I
+    iput v2, v1, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->f:I
 
     :goto_1
     add-int/lit8 v0, v0, -0x1
@@ -404,7 +403,7 @@
     return-void
 .end method
 
-.method public f(II)V
+.method public final f(II)V
     .locals 5
 
     .line 1
@@ -476,7 +475,7 @@
     check-cast v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;
 
     .line 8
-    iget v3, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->g:I
+    iget v3, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->f:I
 
     if-ge v3, p1, :cond_2
 
@@ -496,7 +495,7 @@
     sub-int/2addr v3, p2
 
     .line 10
-    iput v3, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->g:I
+    iput v3, v2, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->f:I
 
     :goto_1
     add-int/lit8 v1, v1, -0x1

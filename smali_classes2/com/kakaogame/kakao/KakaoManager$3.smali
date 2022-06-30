@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/kakao/KakaoManager$3;->val$signupLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -33,17 +32,17 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lae/i;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lie/h;
     .locals 0
 
-    invoke-static {p0, p1}, Lcom/kakaogame/kakao/KakaoManager$3;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lae/i;
+    invoke-static {p0, p1}, Lcom/kakaogame/kakao/KakaoManager$3;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lie/h;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lae/i;
+.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lie/h;
     .locals 3
 
     const-string v0, "KakaoManager"
@@ -116,7 +115,7 @@
 
     .line 10
     :goto_0
-    sget-object p0, Lae/i;->a:Lae/i;
+    sget-object p0, Lie/h;->a:Lie/h;
 
     return-object p0
 .end method
@@ -126,7 +125,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/kakao/sdk/user/UserApiClient;->getInstance()Lcom/kakao/sdk/user/UserApiClient;
 
     move-result-object v0
@@ -137,7 +135,7 @@
 
     invoke-direct {v2, v1}, Lcom/kakaogame/kakao/j;-><init>(Lcom/kakaogame/util/MutexLock;)V
 
-    invoke-static {v0, v2}, Lcom/kakao/sdk/partner/user/UserApiClientKt;->signupForPartner(Lcom/kakao/sdk/user/UserApiClient;Lke/l;)V
+    invoke-static {v0, v2}, Lcom/kakao/sdk/partner/user/UserApiClientKt;->signupForPartner(Lcom/kakao/sdk/user/UserApiClient;Lre/l;)V
 
     return-void
 .end method

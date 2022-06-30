@@ -1,4 +1,4 @@
-.class public Lo0/c$d;
+.class public final Lo0/c$d;
 .super Ljava/lang/Object;
 .source "ModernAsyncTask.java"
 

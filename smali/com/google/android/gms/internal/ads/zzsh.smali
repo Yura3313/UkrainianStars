@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.appopen.client.IAppOpenAdLoadCallback"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,8 +19,8 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 0
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -30,7 +29,7 @@
 
     const/4 p3, 0x1
 
-    const/4 p4, 0x0
+    const/4 v0, 0x0
 
     if-eq p1, p3, :cond_2
 
@@ -50,21 +49,21 @@
     :cond_0
     sget-object p1, Lcom/google/android/gms/internal/ads/zzuw;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lj3/mw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lk3/cw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzuw;
 
     .line 2
-    throw p4
+    throw v0
 
     .line 3
     :cond_1
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     .line 4
-    throw p4
+    throw v0
 
     .line 5
     :cond_2
@@ -91,5 +90,5 @@
 
     .line 9
     :cond_3
-    throw p4
+    throw v0
 .end method

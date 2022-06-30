@@ -23,7 +23,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +35,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +43,6 @@
 .method public static synthetic access$000(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/log/APILatencyLogManager;->uploadFile(Landroid/content/Context;)V
 
     return-void
@@ -54,7 +51,6 @@
 .method public static setNewFileName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/kakaogame/log/APILatencyLogManager;->fileName:Ljava/lang/String;
 
     return-void
@@ -63,7 +59,6 @@
 .method public static setPostFix(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/kakaogame/log/APILatencyLogManager;->postFix:Ljava/lang/String;
 
     return-void
@@ -196,10 +191,10 @@
     const/16 v3, 0x4e20
 
     .line 10
-    invoke-virtual {v1, v3}, Ljavax/net/ssl/HttpsURLConnection;->setConnectTimeout(I)V
+    invoke-virtual {v1, v3}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
     .line 11
-    invoke-virtual {v1, v3}, Ljavax/net/ssl/HttpsURLConnection;->setReadTimeout(I)V
+    invoke-virtual {v1, v3}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     .line 12
     invoke-static {v2}, Lcom/kakaogame/server/ServerSecurityManager;->getHostnameVerifier(Ljava/net/URL;)Ljavax/net/ssl/HostnameVerifier;
@@ -218,26 +213,26 @@
     const/4 v2, 0x1
 
     .line 14
-    invoke-virtual {v1, v2}, Ljavax/net/ssl/HttpsURLConnection;->setDoOutput(Z)V
+    invoke-virtual {v1, v2}, Ljava/net/URLConnection;->setDoOutput(Z)V
 
     const-string v2, "PUT"
 
     .line 15
-    invoke-virtual {v1, v2}, Ljavax/net/ssl/HttpsURLConnection;->setRequestMethod(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
     const-string v2, "Connection"
 
     const-string v3, "close"
 
     .line 16
-    invoke-virtual {v1, v2, v3}, Ljavax/net/ssl/HttpsURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
     .line 17
     new-instance v3, Ljava/io/DataOutputStream;
 
-    invoke-virtual {v1}, Ljavax/net/ssl/HttpsURLConnection;->getOutputStream()Ljava/io/OutputStream;
+    invoke-virtual {v1}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v4
 
@@ -303,7 +298,7 @@
     invoke-virtual {v3}, Ljava/io/DataOutputStream;->flush()V
 
     .line 24
-    invoke-virtual {v3}, Ljava/io/DataOutputStream;->close()V
+    invoke-virtual {v3}, Ljava/io/OutputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_6
@@ -344,7 +339,7 @@
 
     .line 27
     :try_start_6
-    invoke-virtual {v4}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/Object;->toString()Ljava/lang/String;
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
@@ -353,7 +348,7 @@
     invoke-virtual {v3}, Ljava/io/DataOutputStream;->flush()V
 
     .line 29
-    invoke-virtual {v3}, Ljava/io/DataOutputStream;->close()V
+    invoke-virtual {v3}, Ljava/io/OutputStream;->close()V
     :try_end_7
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_3
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_6
@@ -378,7 +373,7 @@
     .line 31
     :goto_4
     :try_start_9
-    invoke-virtual {v1}, Ljavax/net/ssl/HttpsURLConnection;->getResponseCode()I
+    invoke-virtual {v1}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result v1
 
@@ -426,7 +421,7 @@
     invoke-virtual {v3}, Ljava/io/DataOutputStream;->flush()V
 
     .line 35
-    invoke-virtual {v3}, Ljava/io/DataOutputStream;->close()V
+    invoke-virtual {v3}, Ljava/io/OutputStream;->close()V
     :try_end_a
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_4
     .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_6
@@ -461,7 +456,7 @@
     move-exception p0
 
     .line 39
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     :cond_5
     :goto_7

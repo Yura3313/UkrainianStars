@@ -98,18 +98,17 @@
 
 
 # virtual methods
-.method public bridge synthetic a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/graphics/Rect;)Z
+.method public final bridge synthetic a(Landroid/view/View;Landroid/graphics/Rect;)Z
     .locals 0
 
-    .line 1
-    check-cast p2, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
+    check-cast p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     const/4 p1, 0x0
 
     return p1
 .end method
 
-.method public c(Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;)V
+.method public final c(Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;)V
     .locals 1
 
     .line 1
@@ -126,7 +125,7 @@
     return-void
 .end method
 
-.method public d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+.method public final d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
     .locals 2
 
     .line 1
@@ -182,7 +181,7 @@
     return v1
 .end method
 
-.method public h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
+.method public final h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
     .locals 7
 
     .line 1
@@ -194,7 +193,9 @@
     move-result-object v0
 
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    check-cast v0, Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v1
 
@@ -284,7 +285,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p2}, Landroid/widget/Button;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p2
 
@@ -371,17 +372,17 @@
     if-eqz p1, :cond_2
 
     .line 8
-    iget-object p1, p3, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/f;
+    iget-object p1, p3, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     goto :goto_0
 
     .line 9
     :cond_2
-    iget-object p1, p3, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->B:Lcom/google/android/material/floatingactionbutton/f;
+    iget-object p1, p3, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->A:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;
 
     .line 10
     :goto_0
-    invoke-static {p3, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->e(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lcom/google/android/material/floatingactionbutton/f;)V
+    invoke-static {p3, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->e(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Ln4/g;)V
 
     goto :goto_2
 
@@ -392,17 +393,17 @@
     if-eqz p1, :cond_4
 
     .line 12
-    iget-object p1, p3, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->z:Lcom/google/android/material/floatingactionbutton/f;
+    iget-object p1, p3, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     goto :goto_1
 
     .line 13
     :cond_4
-    iget-object p1, p3, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->A:Lcom/google/android/material/floatingactionbutton/f;
+    iget-object p1, p3, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->z:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;
 
     .line 14
     :goto_1
-    invoke-static {p3, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->e(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lcom/google/android/material/floatingactionbutton/f;)V
+    invoke-static {p3, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->e(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Ln4/g;)V
 
     :goto_2
     const/4 p1, 0x1
@@ -426,7 +427,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {p2}, Landroid/widget/Button;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
@@ -437,7 +438,7 @@
 
     move-result p1
 
-    invoke-virtual {p2}, Landroid/widget/Button;->getHeight()I
+    invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result v1
 
@@ -455,17 +456,17 @@
     if-eqz p1, :cond_1
 
     .line 5
-    iget-object p1, p2, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/f;
+    iget-object p1, p2, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     goto :goto_0
 
     .line 6
     :cond_1
-    iget-object p1, p2, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->B:Lcom/google/android/material/floatingactionbutton/f;
+    iget-object p1, p2, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->A:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;
 
     .line 7
     :goto_0
-    invoke-static {p2, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->e(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lcom/google/android/material/floatingactionbutton/f;)V
+    invoke-static {p2, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->e(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Ln4/g;)V
 
     goto :goto_2
 
@@ -476,17 +477,17 @@
     if-eqz p1, :cond_3
 
     .line 9
-    iget-object p1, p2, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->z:Lcom/google/android/material/floatingactionbutton/f;
+    iget-object p1, p2, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     goto :goto_1
 
     .line 10
     :cond_3
-    iget-object p1, p2, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->A:Lcom/google/android/material/floatingactionbutton/f;
+    iget-object p1, p2, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->z:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;
 
     .line 11
     :goto_1
-    invoke-static {p2, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->e(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lcom/google/android/material/floatingactionbutton/f;)V
+    invoke-static {p2, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->e(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Ln4/g;)V
 
     :goto_2
     const/4 p1, 0x1

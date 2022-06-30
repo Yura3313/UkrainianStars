@@ -13,7 +13,6 @@
 .method public static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -30,7 +29,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -54,7 +52,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     new-instance v0, Lcom/kakaogame/core/UiThreadManager$2;
 
@@ -68,7 +65,6 @@
 .method public static runOnUiThread(Ljava/lang/Runnable;)V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/kakaogame/core/UiThreadManager;->handler:Landroid/os/Handler;
 
     new-instance v1, Lcom/kakaogame/core/UiThreadManager$1;

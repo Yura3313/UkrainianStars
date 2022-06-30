@@ -60,7 +60,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity$a;
 
     invoke-direct {v0}, Lcom/google/android/gms/games/multiplayer/ParticipantEntity$a;-><init>()V
@@ -74,7 +73,7 @@
     .locals 2
 
     .line 1
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->l()Lcom/google/android/gms/games/Player;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->m()Lcom/google/android/gms/games/Player;
 
     move-result-object v0
 
@@ -97,7 +96,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;-><init>()V
 
     .line 4
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->K()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->Y()Ljava/lang/String;
 
     move-result-object v1
 
@@ -111,14 +110,14 @@
     iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->i:Ljava/lang/String;
 
     .line 6
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->a()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->c()Landroid/net/Uri;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->j:Landroid/net/Uri;
 
     .line 7
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->h()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->i()Landroid/net/Uri;
 
     move-result-object v1
 
@@ -132,14 +131,14 @@
     iput v1, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->l:I
 
     .line 9
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->C1()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->L1()Ljava/lang/String;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->m:Ljava/lang/String;
 
     .line 10
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->U()Z
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->i0()Z
 
     move-result v1
 
@@ -149,14 +148,14 @@
     iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->o:Lcom/google/android/gms/games/PlayerEntity;
 
     .line 12
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->a1()I
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->h1()I
 
     move-result v0
 
     iput v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->p:I
 
     .line 13
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->e1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->l1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
 
     move-result-object v0
 
@@ -224,7 +223,7 @@
     return-void
 .end method
 
-.method public static C2(Lcom/google/android/gms/games/multiplayer/Participant;)I
+.method public static F2(Lcom/google/android/gms/games/multiplayer/Participant;)I
     .locals 3
 
     const/16 v0, 0xa
@@ -232,7 +231,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->l()Lcom/google/android/gms/games/Player;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->m()Lcom/google/android/gms/games/Player;
 
     move-result-object v1
 
@@ -254,7 +253,7 @@
     aput-object v1, v0, v2
 
     .line 3
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->C1()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->L1()Ljava/lang/String;
 
     move-result-object v1
 
@@ -263,7 +262,7 @@
     aput-object v1, v0, v2
 
     .line 4
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->U()Z
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->i0()Z
 
     move-result v1
 
@@ -285,7 +284,7 @@
     aput-object v1, v0, v2
 
     .line 6
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->a()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->c()Landroid/net/Uri;
 
     move-result-object v1
 
@@ -294,7 +293,7 @@
     aput-object v1, v0, v2
 
     .line 7
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->h()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->i()Landroid/net/Uri;
 
     move-result-object v1
 
@@ -303,7 +302,7 @@
     aput-object v1, v0, v2
 
     .line 8
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->a1()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->h1()I
 
     move-result v1
 
@@ -316,7 +315,7 @@
     aput-object v1, v0, v2
 
     .line 9
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->e1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->l1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
 
     move-result-object v1
 
@@ -325,7 +324,7 @@
     aput-object v1, v0, v2
 
     .line 10
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->K()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->Y()Ljava/lang/String;
 
     move-result-object p0
 
@@ -341,7 +340,7 @@
     return p0
 .end method
 
-.method public static D2(Ljava/util/List;)Ljava/util/ArrayList;
+.method public static G2(Ljava/util/List;)Ljava/util/ArrayList;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -411,7 +410,7 @@
     return-object v1
 .end method
 
-.method public static E2(Lcom/google/android/gms/games/multiplayer/Participant;Ljava/lang/Object;)Z
+.method public static H2(Lcom/google/android/gms/games/multiplayer/Participant;Ljava/lang/Object;)Z
     .locals 4
 
     .line 1
@@ -435,15 +434,15 @@
     check-cast p1, Lcom/google/android/gms/games/multiplayer/Participant;
 
     .line 3
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->l()Lcom/google/android/gms/games/Player;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->m()Lcom/google/android/gms/games/Player;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->l()Lcom/google/android/gms/games/Player;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->m()Lcom/google/android/gms/games/Player;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -466,29 +465,29 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 5
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->C1()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->L1()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->C1()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->L1()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 6
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->U()Z
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->i0()Z
 
     move-result v2
 
@@ -496,7 +495,7 @@
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->U()Z
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->i0()Z
 
     move-result v3
 
@@ -504,7 +503,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -519,44 +518,44 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 8
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->a()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->c()Landroid/net/Uri;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->a()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->c()Landroid/net/Uri;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 9
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->h()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->i()Landroid/net/Uri;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->h()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->i()Landroid/net/Uri;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 10
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->a1()I
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->h1()I
 
     move-result v2
 
@@ -564,7 +563,7 @@
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->a1()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->h1()I
 
     move-result v3
 
@@ -572,37 +571,37 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 11
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->e1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->l1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->e1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->l1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 12
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->K()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Participant;->Y()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->K()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->Y()Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-static {p1, p0}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p0}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -614,33 +613,31 @@
     return v1
 .end method
 
-.method public static F2(Lcom/google/android/gms/games/multiplayer/Participant;)Ljava/lang/String;
+.method public static I2(Lcom/google/android/gms/games/multiplayer/Participant;)Ljava/lang/String;
     .locals 3
 
     .line 1
-    new-instance v0, Lc2/f$a;
+    new-instance v0, Ld2/f$a;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lc2/f$a;-><init>(Ljava/lang/Object;Lc2/n0;)V
+    invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->K()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->Y()Ljava/lang/String;
 
     move-result-object v1
 
     const-string v2, "ParticipantId"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 3
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->l()Lcom/google/android/gms/games/Player;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->m()Lcom/google/android/gms/games/Player;
 
     move-result-object v1
 
     const-string v2, "Player"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 4
     invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->getStatus()I
@@ -653,19 +650,19 @@
 
     const-string v2, "Status"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 5
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->C1()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->L1()Ljava/lang/String;
 
     move-result-object v1
 
     const-string v2, "ClientAddress"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 6
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->U()Z
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->i0()Z
 
     move-result v1
 
@@ -675,7 +672,7 @@
 
     const-string v2, "ConnectedToRoom"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 7
     invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->getDisplayName()Ljava/lang/String;
@@ -684,16 +681,16 @@
 
     const-string v2, "DisplayName"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 8
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->a()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->c()Landroid/net/Uri;
 
     move-result-object v1
 
     const-string v2, "IconImage"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 9
     invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->getIconImageUrl()Ljava/lang/String;
@@ -702,16 +699,16 @@
 
     const-string v2, "IconImageUrl"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 10
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->h()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->i()Landroid/net/Uri;
 
     move-result-object v1
 
     const-string v2, "HiResImage"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 11
     invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->getHiResImageUrl()Ljava/lang/String;
@@ -720,10 +717,10 @@
 
     const-string v2, "HiResImageUrl"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 12
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->a1()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->h1()I
 
     move-result v1
 
@@ -733,19 +730,19 @@
 
     const-string v2, "Capabilities"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 13
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->e1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/Participant;->l1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
 
     move-result-object p0
 
     const-string v1, "Result"
 
-    invoke-virtual {v0, v1, p0}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v1, p0}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 14
-    invoke-virtual {v0}, Lc2/f$a;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ld2/f$a;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -754,34 +751,23 @@
 
 
 # virtual methods
-.method public final C1()Ljava/lang/String;
+.method public final L1()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->m:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public final K()Ljava/lang/String;
+.method public final Y()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->h:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public final U()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->n:Z
-
-    return v0
-.end method
-
-.method public final a()Landroid/net/Uri;
+.method public final c()Landroid/net/Uri;
     .locals 1
 
     .line 1
@@ -801,29 +787,10 @@
     return-object v0
 .end method
 
-.method public final a1()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->p:I
-
-    return v0
-.end method
-
-.method public final e1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->q:Lcom/google/android/gms/games/multiplayer/ParticipantResult;
-
-    return-object v0
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->E2(Lcom/google/android/gms/games/multiplayer/Participant;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->H2(Lcom/google/android/gms/games/multiplayer/Participant;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -893,13 +860,30 @@
 .method public final getStatus()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->l:I
 
     return v0
 .end method
 
-.method public final h()Landroid/net/Uri;
+.method public final h1()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->p:I
+
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->F2(Lcom/google/android/gms/games/multiplayer/Participant;)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final i()Landroid/net/Uri;
     .locals 1
 
     .line 1
@@ -919,21 +903,25 @@
     return-object v0
 .end method
 
-.method public final hashCode()I
+.method public final i0()Z
     .locals 1
 
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->C2(Lcom/google/android/gms/games/multiplayer/Participant;)I
-
-    move-result v0
+    iget-boolean v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->n:Z
 
     return v0
 .end method
 
-.method public final l()Lcom/google/android/gms/games/Player;
+.method public final l1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
     .locals 1
 
-    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->q:Lcom/google/android/gms/games/multiplayer/ParticipantResult;
+
+    return-object v0
+.end method
+
+.method public final m()Lcom/google/android/gms/games/Player;
+    .locals 1
+
     iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->o:Lcom/google/android/gms/games/PlayerEntity;
 
     return-object v0
@@ -942,8 +930,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->F2(Lcom/google/android/gms/games/multiplayer/Participant;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->I2(Lcom/google/android/gms/games/multiplayer/Participant;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -956,7 +943,7 @@
     const/16 v0, 0x4f45
 
     .line 1
-    invoke-static {p1, v0}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v0
 
@@ -968,7 +955,7 @@
     const/4 v3, 0x0
 
     .line 3
-    invoke-static {p1, v1, v2, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v1, 0x2
 
@@ -978,27 +965,27 @@
     move-result-object v2
 
     .line 5
-    invoke-static {p1, v1, v2, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v1, 0x3
 
     .line 6
-    invoke-virtual {p0}, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->a()Landroid/net/Uri;
+    invoke-virtual {p0}, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->c()Landroid/net/Uri;
 
     move-result-object v2
 
     .line 7
-    invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 8
-    invoke-virtual {p0}, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->h()Landroid/net/Uri;
+    invoke-virtual {p0}, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->i()Landroid/net/Uri;
 
     move-result-object v1
 
     const/4 v2, 0x4
 
     .line 9
-    invoke-static {p1, v2, v1, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v2, v1, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/4 v1, 0x5
 
@@ -1006,7 +993,7 @@
     iget v4, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->l:I
 
     .line 11
-    invoke-static {p1, v1, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 12
     invoke-virtual {p1, v4}, Landroid/os/Parcel;->writeInt(I)V
@@ -1017,7 +1004,7 @@
     iget-object v4, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->m:Ljava/lang/String;
 
     .line 14
-    invoke-static {p1, v1, v4, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v4, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v1, 0x7
 
@@ -1025,7 +1012,7 @@
     iget-boolean v4, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->n:Z
 
     .line 16
-    invoke-static {p1, v1, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 17
     invoke-virtual {p1, v4}, Landroid/os/Parcel;->writeInt(I)V
@@ -1036,7 +1023,7 @@
     iget-object v4, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->o:Lcom/google/android/gms/games/PlayerEntity;
 
     .line 19
-    invoke-static {p1, v1, v4, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v4, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/16 v1, 0x9
 
@@ -1044,7 +1031,7 @@
     iget v4, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->p:I
 
     .line 21
-    invoke-static {p1, v1, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 22
     invoke-virtual {p1, v4}, Landroid/os/Parcel;->writeInt(I)V
@@ -1055,7 +1042,7 @@
     iget-object v2, p0, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->q:Lcom/google/android/gms/games/multiplayer/ParticipantResult;
 
     .line 24
-    invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/16 p2, 0xb
 
@@ -1065,7 +1052,7 @@
     move-result-object v1
 
     .line 26
-    invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, p2, v1, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/16 p2, 0xc
 
@@ -1075,10 +1062,10 @@
     move-result-object v1
 
     .line 28
-    invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, p2, v1, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 29
-    invoke-static {p1, v0}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

@@ -179,7 +179,6 @@
 
     const-string v0, "."
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -790,7 +789,6 @@
     :goto_0
     if-ge p1, p2, :cond_1
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -1156,7 +1154,6 @@
 .method public effectivePort()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lokhttp3/HttpUrl$Builder;->port:I
 
     const/4 v1, -0x1
@@ -1282,15 +1279,17 @@
 
     const-string v1, "unexpected encodedPath: "
 
-    invoke-static {v1, p1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 4
+    invoke-static {v1, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 5
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 4
+    .line 6
     :cond_1
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -1448,15 +1447,17 @@
 
     const-string v1, "unexpected host: "
 
-    invoke-static {v1, p1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 4
+    invoke-static {v1, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 5
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 4
+    .line 6
     :cond_1
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -1572,11 +1573,12 @@
 
     const-string v2, "Expected URL scheme \'http\' or \'https\' but was \'"
 
+    .line 9
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 9
+    .line 10
     invoke-virtual {v10, v8, v12}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v3
@@ -1598,12 +1600,12 @@
     :cond_2
     if-eqz v1, :cond_12
 
-    .line 10
+    .line 11
     iget-object v2, v1, Lokhttp3/HttpUrl;->scheme:Ljava/lang/String;
 
     iput-object v2, v0, Lokhttp3/HttpUrl$Builder;->scheme:Ljava/lang/String;
 
-    .line 11
+    .line 12
     :goto_0
     invoke-static {v10, v9, v11}, Lokhttp3/HttpUrl$Builder;->slashCount(Ljava/lang/String;II)I
 
@@ -1619,7 +1621,7 @@
 
     if-eqz v1, :cond_5
 
-    .line 12
+    .line 13
     iget-object v3, v1, Lokhttp3/HttpUrl;->scheme:Ljava/lang/String;
 
     iget-object v6, v0, Lokhttp3/HttpUrl$Builder;->scheme:Ljava/lang/String;
@@ -1632,7 +1634,7 @@
 
     goto :goto_1
 
-    .line 13
+    .line 14
     :cond_3
     invoke-virtual/range {p1 .. p1}, Lokhttp3/HttpUrl;->encodedUsername()Ljava/lang/String;
 
@@ -1640,29 +1642,29 @@
 
     iput-object v2, v0, Lokhttp3/HttpUrl$Builder;->encodedUsername:Ljava/lang/String;
 
-    .line 14
+    .line 15
     invoke-virtual/range {p1 .. p1}, Lokhttp3/HttpUrl;->encodedPassword()Ljava/lang/String;
 
     move-result-object v2
 
     iput-object v2, v0, Lokhttp3/HttpUrl$Builder;->encodedPassword:Ljava/lang/String;
 
-    .line 15
+    .line 16
     iget-object v2, v1, Lokhttp3/HttpUrl;->host:Ljava/lang/String;
 
     iput-object v2, v0, Lokhttp3/HttpUrl$Builder;->host:Ljava/lang/String;
 
-    .line 16
+    .line 17
     iget v2, v1, Lokhttp3/HttpUrl;->port:I
 
     iput v2, v0, Lokhttp3/HttpUrl$Builder;->port:I
 
-    .line 17
+    .line 18
     iget-object v2, v0, Lokhttp3/HttpUrl$Builder;->encodedPathSegments:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->clear()V
 
-    .line 18
+    .line 19
     iget-object v2, v0, Lokhttp3/HttpUrl$Builder;->encodedPathSegments:Ljava/util/List;
 
     invoke-virtual/range {p1 .. p1}, Lokhttp3/HttpUrl;->encodedPathSegments()Ljava/util/List;
@@ -1673,14 +1675,14 @@
 
     if-eq v9, v11, :cond_4
 
-    .line 19
+    .line 20
     invoke-virtual {v10, v9}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
 
     if-ne v2, v5, :cond_e
 
-    .line 20
+    .line 21
     :cond_4
     invoke-virtual/range {p1 .. p1}, Lokhttp3/HttpUrl;->encodedQuery()Ljava/lang/String;
 
@@ -1707,14 +1709,14 @@
     :goto_2
     const-string v1, "@/\\?#"
 
-    .line 21
+    .line 22
     invoke-static {v10, v2, v11, v1}, Lokhttp3/internal/Util;->delimiterOffset(Ljava/lang/String;IILjava/lang/String;)I
 
     move-result v15
 
     if-eq v15, v11, :cond_6
 
-    .line 22
+    .line 23
     invoke-virtual {v10, v15}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -1752,7 +1754,7 @@
 
     const/16 v1, 0x3a
 
-    .line 23
+    .line 24
     invoke-static {v10, v2, v15, v1}, Lokhttp3/internal/Util;->delimiterOffset(Ljava/lang/String;IIC)I
 
     move-result v8
@@ -1783,25 +1785,31 @@
 
     move-object/from16 v9, v17
 
-    .line 24
+    .line 25
     invoke-static/range {v1 .. v9}, Lokhttp3/HttpUrl;->canonicalize(Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v14, :cond_8
 
-    .line 25
+    .line 26
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     iget-object v3, v0, Lokhttp3/HttpUrl$Builder;->encodedUsername:Ljava/lang/String;
 
-    invoke-static {v2, v3, v12, v1}, Landroidx/fragment/app/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 26
+    .line 27
     :cond_8
     iput-object v1, v0, Lokhttp3/HttpUrl$Builder;->encodedUsername:Ljava/lang/String;
 
@@ -1825,7 +1833,7 @@
 
     move v3, v15
 
-    .line 27
+    .line 28
     invoke-static/range {v1 .. v9}, Lokhttp3/HttpUrl;->canonicalize(Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object v1
@@ -1851,7 +1859,7 @@
 
     move-object v12, v9
 
-    .line 28
+    .line 29
     new-instance v13, Ljava/lang/StringBuilder;
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
@@ -1904,7 +1912,7 @@
 
     goto/16 :goto_2
 
-    .line 29
+    .line 30
     :cond_b
     invoke-static {v10, v2, v15}, Lokhttp3/HttpUrl$Builder;->portColonOffset(Ljava/lang/String;II)I
 
@@ -1916,14 +1924,14 @@
 
     if-ge v3, v15, :cond_d
 
-    .line 30
+    .line 31
     invoke-static {v10, v2, v1}, Lokhttp3/HttpUrl$Builder;->canonicalizeHost(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v5
 
     iput-object v5, v0, Lokhttp3/HttpUrl$Builder;->host:Ljava/lang/String;
 
-    .line 31
+    .line 32
     invoke-static {v10, v3, v15}, Lokhttp3/HttpUrl$Builder;->parsePort(Ljava/lang/String;II)I
 
     move-result v5
@@ -1936,17 +1944,18 @@
 
     goto :goto_7
 
-    .line 32
+    .line 33
     :cond_c
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     const-string v2, "Invalid URL port: \""
 
+    .line 34
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 33
+    .line 35
     invoke-virtual {v10, v3, v15}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v3
@@ -1963,7 +1972,7 @@
 
     throw v1
 
-    .line 34
+    .line 36
     :cond_d
     invoke-static {v10, v2, v1}, Lokhttp3/HttpUrl$Builder;->canonicalizeHost(Ljava/lang/String;II)Ljava/lang/String;
 
@@ -1971,7 +1980,7 @@
 
     iput-object v3, v0, Lokhttp3/HttpUrl$Builder;->host:Ljava/lang/String;
 
-    .line 35
+    .line 37
     iget-object v3, v0, Lokhttp3/HttpUrl$Builder;->scheme:Ljava/lang/String;
 
     invoke-static {v3}, Lokhttp3/HttpUrl;->defaultPort(Ljava/lang/String;)I
@@ -1980,7 +1989,7 @@
 
     iput v3, v0, Lokhttp3/HttpUrl$Builder;->port:I
 
-    .line 36
+    .line 38
     :goto_7
     iget-object v3, v0, Lokhttp3/HttpUrl$Builder;->host:Ljava/lang/String;
 
@@ -1992,17 +2001,17 @@
     :goto_8
     const-string v1, "?#"
 
-    .line 37
+    .line 39
     invoke-static {v10, v9, v11, v1}, Lokhttp3/internal/Util;->delimiterOffset(Ljava/lang/String;IILjava/lang/String;)I
 
     move-result v1
 
-    .line 38
+    .line 40
     invoke-direct {v0, v10, v9, v1}, Lokhttp3/HttpUrl$Builder;->resolvePath(Ljava/lang/String;II)V
 
     if-ge v1, v11, :cond_f
 
-    .line 39
+    .line 41
     invoke-virtual {v10, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -2013,7 +2022,7 @@
 
     const/16 v2, 0x23
 
-    .line 40
+    .line 42
     invoke-static {v10, v1, v11, v2}, Lokhttp3/internal/Util;->delimiterOffset(Ljava/lang/String;IIC)I
 
     move-result v12
@@ -2036,7 +2045,7 @@
 
     move v3, v12
 
-    .line 41
+    .line 43
     invoke-static/range {v1 .. v9}, Lokhttp3/HttpUrl;->canonicalize(Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object v1
@@ -2052,7 +2061,7 @@
     :cond_f
     if-ge v1, v11, :cond_10
 
-    .line 42
+    .line 44
     invoke-virtual {v10, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -2079,7 +2088,7 @@
 
     move v3, v11
 
-    .line 43
+    .line 45
     invoke-static/range {v1 .. v9}, Lokhttp3/HttpUrl;->canonicalize(Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object v1
@@ -2089,17 +2098,18 @@
     :cond_10
     return-object v0
 
-    .line 44
+    .line 46
     :cond_11
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
     const-string v5, "Invalid URL host: \""
 
+    .line 47
     invoke-static {v5}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 45
+    .line 48
     invoke-virtual {v10, v2, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v1
@@ -2116,7 +2126,7 @@
 
     throw v3
 
-    .line 46
+    .line 49
     :cond_12
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -2190,10 +2200,12 @@
 
     const-string v1, "unexpected port: "
 
-    invoke-static {v1, p1}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    .line 3
+    invoke-static {v1, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 4
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -2535,15 +2547,17 @@
 
     const-string v1, "unexpected scheme: "
 
-    invoke-static {v1, p1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 6
+    invoke-static {v1, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 7
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 6
+    .line 8
     :cond_2
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -2611,15 +2625,17 @@
 
     const-string v0, "unexpected path segment: "
 
-    invoke-static {v0, p2}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 6
+    invoke-static {v0, p2}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
+    .line 7
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
-    .line 6
+    .line 8
     :cond_1
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -2703,15 +2719,17 @@
 
     const-string v0, "unexpected path segment: "
 
-    invoke-static {v0, p2}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 6
+    invoke-static {v0, p2}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
+    .line 7
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
-    .line 6
+    .line 8
     :cond_1
     new-instance p1, Ljava/lang/NullPointerException;
 

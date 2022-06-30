@@ -351,7 +351,6 @@
 .method public getDescription()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0}, Lio/sentry/SpanContext;->getDescription()Ljava/lang/String;
@@ -364,7 +363,6 @@
 .method public getOperation()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0}, Lio/sentry/SpanContext;->getOperation()Ljava/lang/String;
@@ -377,7 +375,6 @@
 .method public getParentSpanId()Lio/sentry/SpanId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0}, Lio/sentry/SpanContext;->getParentSpanId()Lio/sentry/SpanId;
@@ -390,7 +387,6 @@
 .method public getSpanContext()Lio/sentry/SpanContext;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     return-object v0
@@ -399,7 +395,6 @@
 .method public getSpanId()Lio/sentry/SpanId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0}, Lio/sentry/SpanContext;->getSpanId()Lio/sentry/SpanId;
@@ -412,7 +407,6 @@
 .method public getStartTimestamp()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->startTimestamp:Ljava/util/Date;
 
     return-object v0
@@ -421,7 +415,6 @@
 .method public getStatus()Lio/sentry/SpanStatus;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0}, Lio/sentry/SpanContext;->getStatus()Lio/sentry/SpanStatus;
@@ -434,7 +427,6 @@
 .method public getTag(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0}, Lio/sentry/SpanContext;->getTags()Ljava/util/Map;
@@ -462,7 +454,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0}, Lio/sentry/SpanContext;->getTags()Ljava/util/Map;
@@ -475,7 +466,6 @@
 .method public getThrowable()Ljava/lang/Throwable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->throwable:Ljava/lang/Throwable;
 
     return-object v0
@@ -484,7 +474,6 @@
 .method public getTimestamp()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->timestamp:Ljava/util/Date;
 
     return-object v0
@@ -493,7 +482,6 @@
 .method public getTraceId()Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0}, Lio/sentry/SpanContext;->getTraceId()Lio/sentry/protocol/SentryId;
@@ -506,7 +494,6 @@
 .method public isFinished()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -519,7 +506,6 @@
 .method public isSampled()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0}, Lio/sentry/SpanContext;->getSampled()Ljava/lang/Boolean;
@@ -753,7 +739,6 @@
 .method public toSentryTrace()Lio/sentry/SentryTraceHeader;
     .locals 4
 
-    .line 1
     new-instance v0, Lio/sentry/SentryTraceHeader;
 
     iget-object v1, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
@@ -782,7 +767,6 @@
 .method public toTraceStateHeader()Lio/sentry/TraceStateHeader;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->transaction:Lio/sentry/SentryTracer;
 
     invoke-virtual {v0}, Lio/sentry/SentryTracer;->toTraceStateHeader()Lio/sentry/TraceStateHeader;
@@ -795,7 +779,6 @@
 .method public traceState()Lio/sentry/TraceState;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Span;->transaction:Lio/sentry/SentryTracer;
 
     invoke-virtual {v0}, Lio/sentry/SentryTracer;->traceState()Lio/sentry/TraceState;

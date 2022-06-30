@@ -27,15 +27,15 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field public final h:Lqc/d0;
+.field public final g:Lcom/supercell/id/model/IdSocialAccount;
 
-.field public final i:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final j:Lcom/supercell/id/model/ProfileImage;
+.field public final i:Lcom/supercell/id/model/ProfileImage;
 
-.field public final k:Ljava/lang/String;
+.field public final j:Ljava/lang/String;
 
 
 # direct methods
@@ -53,78 +53,63 @@
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Lqc/d0;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Ljava/lang/String;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "image"
 
-    if-eqz p4, :cond_0
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0, v0}, Lcom/supercell/id/PresentationInfo;-><init>(Lle/g;)V
-
-    iput-object p1, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->g:Ljava/lang/String;
-
-    iput-object p2, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->h:Lqc/d0;
-
-    iput-object p3, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->i:Ljava/lang/String;
-
-    iput-object p4, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->j:Lcom/supercell/id/model/ProfileImage;
-
-    iput-object p5, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->k:Ljava/lang/String;
-
-    return-void
-
-    :cond_0
-    const-string p1, "image"
+    invoke-direct {p0}, Lcom/supercell/id/PresentationInfo;-><init>()V
 
     .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    iput-object p1, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->f:Ljava/lang/String;
 
-    throw v0
+    iput-object p2, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->g:Lcom/supercell/id/model/IdSocialAccount;
+
+    iput-object p3, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->h:Ljava/lang/String;
+
+    iput-object p4, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->i:Lcom/supercell/id/model/ProfileImage;
+
+    iput-object p5, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->j:Ljava/lang/String;
+
+    return-void
 .end method
 
 
 # virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "dest"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->f:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->h:Lqc/d0;
+    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->g:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {p1, v0}, Lqc/e0;->b(Landroid/os/Parcel;Lqc/d0;)V
+    invoke-static {p1, v0}, Lvc/b0;->b(Landroid/os/Parcel;Lcom/supercell/id/model/IdSocialAccount;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->h:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->j:Lcom/supercell/id/model/ProfileImage;
+    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->i:Lcom/supercell/id/model/ProfileImage;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 5
-    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->k:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->j:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "dest"
-
-    .line 6
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

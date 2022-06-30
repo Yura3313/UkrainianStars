@@ -65,7 +65,6 @@
 .method public get(I)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Settings;->values:[I
 
     aget p1, v0, p1
@@ -76,7 +75,6 @@
 .method public getEnablePush(Z)Z
     .locals 3
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit8 v0, v0, 0x4
@@ -117,7 +115,6 @@
 .method public getHeaderTableSize()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit8 v0, v0, 0x2
@@ -142,7 +139,6 @@
 .method public getInitialWindowSize()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit16 v0, v0, 0x80
@@ -167,7 +163,6 @@
 .method public getMaxConcurrentStreams(I)I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit8 v0, v0, 0x10
@@ -187,7 +182,6 @@
 .method public getMaxFrameSize(I)I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit8 v0, v0, 0x20
@@ -207,7 +201,6 @@
 .method public getMaxHeaderListSize(I)I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/lit8 v0, v0, 0x40
@@ -231,7 +224,6 @@
 
     shl-int p1, v0, p1
 
-    .line 1
     iget v1, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     and-int/2addr p1, v1
@@ -320,7 +312,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http2/Settings;->set:I
 
     invoke-static {v0}, Ljava/lang/Integer;->bitCount(I)I

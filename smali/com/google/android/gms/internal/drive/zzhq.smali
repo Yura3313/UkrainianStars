@@ -13,7 +13,7 @@
 
 
 # virtual methods
-.method public final u0()V
+.method public final A0()V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -23,6 +23,5 @@
 
     const/4 v0, 0x0
 
-    .line 1
     throw v0
 .end method

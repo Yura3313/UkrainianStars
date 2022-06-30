@@ -1,4 +1,4 @@
-.class public Lp/f;
+.class public final Lp/f;
 .super Lp/b;
 .source "PriorityGoalRow.java"
 
@@ -48,7 +48,7 @@
     .line 5
     new-instance p1, Lp/f$b;
 
-    invoke-direct {p1, p0, p0}, Lp/f$b;-><init>(Lp/f;Lp/f;)V
+    invoke-direct {p1, p0}, Lp/f$b;-><init>(Lp/f;)V
 
     iput-object p1, p0, Lp/f;->i:Lp/f$b;
 
@@ -57,171 +57,140 @@
 
 
 # virtual methods
-.method public a(Lp/h;)V
-    .locals 3
+.method public final a([Z)Lp/h;
+    .locals 11
 
-    .line 1
-    iget-object v0, p0, Lp/f;->i:Lp/f$b;
+    const/4 v0, 0x0
 
-    .line 2
-    iput-object p1, v0, Lp/f$b;->g:Lp/h;
+    const/4 v1, -0x1
 
-    .line 3
-    iget-object v0, p1, Lp/h;->h:[F
+    const/4 v2, 0x0
 
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Ljava/util/Arrays;->fill([FF)V
-
-    .line 4
-    iget-object v0, p1, Lp/h;->h:[F
-
-    iget v1, p1, Lp/h;->d:I
-
-    const/high16 v2, 0x3f800000    # 1.0f
-
-    aput v2, v0, v1
-
-    .line 5
-    invoke-virtual {p0, p1}, Lp/f;->m(Lp/h;)V
-
-    return-void
-.end method
-
-.method public b(Lp/d;[Z)Lp/h;
-    .locals 10
-
-    const/4 p1, 0x0
-
-    const/4 v0, -0x1
-
-    const/4 v1, 0x0
-
-    const/4 v2, -0x1
+    const/4 v3, -0x1
 
     .line 1
     :goto_0
-    iget v3, p0, Lp/f;->h:I
+    iget v4, p0, Lp/f;->h:I
 
-    if-ge v1, v3, :cond_8
+    if-ge v2, v4, :cond_8
 
     .line 2
-    iget-object v3, p0, Lp/f;->f:[Lp/h;
+    iget-object v4, p0, Lp/f;->f:[Lp/h;
 
-    aget-object v4, v3, v1
+    aget-object v5, v4, v2
 
     .line 3
-    iget v5, v4, Lp/h;->b:I
+    iget v6, v5, Lp/h;->b:I
 
-    aget-boolean v5, p2, v5
+    aget-boolean v6, p1, v6
 
-    if-eqz v5, :cond_0
+    if-eqz v6, :cond_0
 
     goto :goto_7
 
     .line 4
     :cond_0
-    iget-object v5, p0, Lp/f;->i:Lp/f$b;
+    iget-object v6, p0, Lp/f;->i:Lp/f$b;
 
     .line 5
-    iput-object v4, v5, Lp/f$b;->g:Lp/h;
+    iput-object v5, v6, Lp/f$b;->f:Lp/h;
 
-    const/16 v4, 0x8
+    const/16 v5, 0x8
 
-    const/4 v6, 0x1
+    const/4 v7, 0x1
 
-    if-ne v2, v0, :cond_4
+    if-ne v3, v1, :cond_4
 
     :goto_1
-    if-ltz v4, :cond_3
+    if-ltz v5, :cond_3
 
     .line 6
-    iget-object v3, v5, Lp/f$b;->g:Lp/h;
+    iget-object v4, v6, Lp/f$b;->f:Lp/h;
 
-    iget-object v3, v3, Lp/h;->h:[F
+    iget-object v4, v4, Lp/h;->h:[F
 
-    aget v3, v3, v4
+    aget v4, v4, v5
 
-    const/4 v7, 0x0
+    const/4 v8, 0x0
 
-    cmpl-float v8, v3, v7
+    cmpl-float v9, v4, v8
 
-    if-lez v8, :cond_1
+    if-lez v9, :cond_1
 
     goto :goto_2
 
     :cond_1
-    cmpg-float v3, v3, v7
+    cmpg-float v4, v4, v8
 
-    if-gez v3, :cond_2
+    if-gez v4, :cond_2
 
     goto :goto_3
 
     :cond_2
-    add-int/lit8 v4, v4, -0x1
+    add-int/lit8 v5, v5, -0x1
 
     goto :goto_1
 
     :cond_3
     :goto_2
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
     :goto_3
-    if-eqz v6, :cond_7
+    if-eqz v7, :cond_7
 
     goto :goto_6
 
     .line 7
     :cond_4
-    aget-object v3, v3, v2
+    aget-object v4, v4, v3
 
     :goto_4
-    if-ltz v4, :cond_6
+    if-ltz v5, :cond_6
 
     .line 8
-    iget-object v7, v3, Lp/h;->h:[F
+    iget-object v8, v4, Lp/h;->h:[F
 
-    aget v7, v7, v4
+    aget v8, v8, v5
 
     .line 9
-    iget-object v8, v5, Lp/f$b;->g:Lp/h;
+    iget-object v9, v6, Lp/f$b;->f:Lp/h;
 
-    iget-object v8, v8, Lp/h;->h:[F
+    iget-object v9, v9, Lp/h;->h:[F
 
-    aget v8, v8, v4
+    aget v9, v9, v5
 
-    cmpl-float v9, v8, v7
+    cmpl-float v10, v9, v8
 
-    if-nez v9, :cond_5
+    if-nez v10, :cond_5
 
-    add-int/lit8 v4, v4, -0x1
+    add-int/lit8 v5, v5, -0x1
 
     goto :goto_4
 
     :cond_5
-    cmpg-float v3, v8, v7
+    cmpg-float v4, v9, v8
 
-    if-gez v3, :cond_6
+    if-gez v4, :cond_6
 
     goto :goto_5
 
     :cond_6
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
     :goto_5
-    if-eqz v6, :cond_7
+    if-eqz v7, :cond_7
 
     :goto_6
-    move v2, v1
+    move v3, v2
 
     :cond_7
     :goto_7
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
     :cond_8
-    if-ne v2, v0, :cond_9
+    if-ne v3, v1, :cond_9
 
     const/4 p1, 0x0
 
@@ -231,31 +200,14 @@
     :cond_9
     iget-object p1, p0, Lp/f;->f:[Lp/h;
 
-    aget-object p1, p1, v2
+    aget-object p1, p1, v3
 
     return-object p1
 .end method
 
-.method public clear()V
+.method public final g()Z
     .locals 1
 
-    const/4 v0, 0x0
-
-    .line 1
-    iput v0, p0, Lp/f;->h:I
-
-    const/4 v0, 0x0
-
-    .line 2
-    iput v0, p0, Lp/b;->b:F
-
-    return-void
-.end method
-
-.method public isEmpty()Z
-    .locals 1
-
-    .line 1
     iget v0, p0, Lp/f;->h:I
 
     if-nez v0, :cond_0
@@ -271,7 +223,7 @@
     return v0
 .end method
 
-.method public l(Lp/d;Lp/b;Z)V
+.method public final k(Lp/d;Lp/b;Z)V
     .locals 17
 
     move-object/from16 v0, p0
@@ -313,7 +265,7 @@
     iget-object v9, v0, Lp/f;->i:Lp/f$b;
 
     .line 7
-    iput-object v7, v9, Lp/f$b;->g:Lp/h;
+    iput-object v7, v9, Lp/f$b;->f:Lp/h;
 
     .line 8
     iget-boolean v10, v7, Lp/h;->a:Z
@@ -334,7 +286,7 @@
     if-ge v10, v12, :cond_2
 
     .line 9
-    iget-object v15, v9, Lp/f$b;->g:Lp/h;
+    iget-object v15, v9, Lp/f$b;->f:Lp/h;
 
     iget-object v15, v15, Lp/h;->h:[F
 
@@ -363,7 +315,7 @@
     if-gez v5, :cond_1
 
     .line 12
-    iget-object v5, v9, Lp/f$b;->g:Lp/h;
+    iget-object v5, v9, Lp/f$b;->f:Lp/h;
 
     iget-object v5, v5, Lp/h;->h:[F
 
@@ -383,12 +335,12 @@
     if-eqz v14, :cond_3
 
     .line 13
-    iget-object v5, v9, Lp/f$b;->h:Lp/f;
+    iget-object v5, v9, Lp/f$b;->g:Lp/f;
 
-    iget-object v9, v9, Lp/f$b;->g:Lp/h;
+    iget-object v9, v9, Lp/f$b;->f:Lp/h;
 
     .line 14
-    invoke-virtual {v5, v9}, Lp/f;->n(Lp/h;)V
+    invoke-virtual {v5, v9}, Lp/f;->m(Lp/h;)V
 
     :cond_3
     const/4 v14, 0x0
@@ -425,7 +377,7 @@
 
     .line 17
     :cond_5
-    iget-object v15, v9, Lp/f$b;->g:Lp/h;
+    iget-object v15, v9, Lp/f$b;->f:Lp/h;
 
     iget-object v15, v15, Lp/h;->h:[F
 
@@ -435,7 +387,7 @@
 
     .line 18
     :cond_6
-    iget-object v10, v9, Lp/f$b;->g:Lp/h;
+    iget-object v10, v9, Lp/f$b;->f:Lp/h;
 
     iget-object v10, v10, Lp/h;->h:[F
 
@@ -451,7 +403,7 @@
     if-eqz v14, :cond_8
 
     .line 19
-    invoke-virtual {v0, v7}, Lp/f;->m(Lp/h;)V
+    invoke-virtual {v0, v7}, Lp/f;->l(Lp/h;)V
 
     .line 20
     :cond_8
@@ -471,12 +423,12 @@
 
     .line 21
     :cond_9
-    invoke-virtual {v0, v2}, Lp/f;->n(Lp/h;)V
+    invoke-virtual {v0, v2}, Lp/f;->m(Lp/h;)V
 
     return-void
 .end method
 
-.method public final m(Lp/h;)V
+.method public final l(Lp/h;)V
     .locals 5
 
     .line 1
@@ -573,7 +525,7 @@
 
     new-instance v4, Lp/f$a;
 
-    invoke-direct {v4, p0}, Lp/f$a;-><init>(Lp/f;)V
+    invoke-direct {v4}, Lp/f$a;-><init>()V
 
     invoke-static {v2, v0, v3, v4}, Ljava/util/Arrays;->sort([Ljava/lang/Object;IILjava/util/Comparator;)V
 
@@ -606,7 +558,7 @@
     return-void
 .end method
 
-.method public final n(Lp/h;)V
+.method public final m(Lp/h;)V
     .locals 5
 
     const/4 v0, 0x0
@@ -667,7 +619,7 @@
     return-void
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 4
 
     const-string v0, ""
@@ -679,6 +631,7 @@
 
     move-result-object v0
 
+    .line 2
     iget v1, p0, Lp/b;->b:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
@@ -693,28 +646,29 @@
 
     const/4 v1, 0x0
 
-    .line 2
+    .line 3
     :goto_0
     iget v2, p0, Lp/f;->h:I
 
     if-ge v1, v2, :cond_0
 
-    .line 3
+    .line 4
     iget-object v2, p0, Lp/f;->f:[Lp/h;
 
     aget-object v2, v2, v1
 
-    .line 4
+    .line 5
     iget-object v3, p0, Lp/f;->i:Lp/f$b;
 
-    .line 5
-    iput-object v2, v3, Lp/f$b;->g:Lp/h;
-
     .line 6
+    iput-object v2, v3, Lp/f$b;->f:Lp/h;
+
+    .line 7
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 8
     iget-object v2, p0, Lp/f;->i:Lp/f$b;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

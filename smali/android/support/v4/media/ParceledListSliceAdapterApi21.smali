@@ -51,7 +51,7 @@
 
     .line 3
     :goto_0
-    invoke-virtual {v0}, Ljava/lang/ReflectiveOperationException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_1
     return-void
@@ -60,7 +60,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -115,7 +114,7 @@
 
     .line 2
     :goto_0
-    invoke-virtual {p0}, Ljava/lang/ReflectiveOperationException;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p0, 0x0
 

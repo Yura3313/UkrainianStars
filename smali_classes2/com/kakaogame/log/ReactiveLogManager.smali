@@ -29,7 +29,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +41,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,6 +58,7 @@
 
     move-result-object v1
 
+    .line 2
     sget-boolean v2, Lcom/kakaogame/log/ReactiveLogManager;->enableSendInternalLog:Z
 
     if-eqz v2, :cond_0
@@ -80,14 +79,14 @@
 
     invoke-static {v0, v1}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     sget-boolean v0, Lcom/kakaogame/log/ReactiveLogManager;->enableSendInternalLog:Z
 
     if-nez v0, :cond_1
 
     return-void
 
-    .line 3
+    .line 4
     :cond_1
     :try_start_0
     sget-object v0, Lcom/kakaogame/log/ReactiveLogManager;->lock:Ljava/lang/Object;
@@ -96,13 +95,13 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 4
+    .line 5
     :try_start_1
     invoke-static {p0}, Lcom/kakaogame/log/ReactiveLogManager;->getPushId(Landroid/app/Activity;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 5
+    .line 6
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -119,10 +118,10 @@
 
     move-object v1, p0
 
-    .line 6
+    .line 7
     invoke-static/range {v1 .. v7}, Lcom/kakaogame/log/ReactiveLogManager;->writeActionLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 
-    .line 7
+    .line 8
     :cond_2
     monitor-exit v0
 
@@ -145,8 +144,8 @@
 
     const-string v0, "ReactiveLogManager"
 
-    .line 8
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 9
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -382,7 +381,7 @@
     const-string p1, "ReactiveLogManager"
 
     .line 11
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -478,6 +477,7 @@
 
     move-result-object p0
 
+    .line 7
     sget-boolean v0, Lcom/kakaogame/log/ReactiveLogManager;->enableSendInternalLog:Z
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
@@ -706,7 +706,7 @@
     const-string v0, "ReactiveLogManager"
 
     .line 18
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -728,6 +728,7 @@
 
     move-result-object v1
 
+    .line 2
     sget-boolean v2, Lcom/kakaogame/log/ReactiveLogManager;->enableSendInternalLog:Z
 
     if-eqz v2, :cond_0
@@ -748,14 +749,14 @@
 
     invoke-static {v0, v1}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     sget-boolean v0, Lcom/kakaogame/log/ReactiveLogManager;->enableSendInternalLog:Z
 
     if-nez v0, :cond_1
 
     return-void
 
-    .line 3
+    .line 4
     :cond_1
     :try_start_0
     sget-object v0, Lcom/kakaogame/log/ReactiveLogManager;->lock:Ljava/lang/Object;
@@ -764,16 +765,16 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 4
+    .line 5
     :try_start_1
     sget-object v1, Lcom/kakaogame/log/ReactiveLogManager;->playStopwatch:Lcom/kakaogame/util/Stopwatch;
 
     if-eqz v1, :cond_2
 
-    .line 5
+    .line 6
     invoke-virtual {v1}, Lcom/kakaogame/util/Stopwatch;->stop()V
 
-    .line 6
+    .line 7
     sget-object v1, Lcom/kakaogame/log/ReactiveLogManager;->playStopwatch:Lcom/kakaogame/util/Stopwatch;
 
     invoke-virtual {v1}, Lcom/kakaogame/util/Stopwatch;->getDurationMs()J
@@ -782,17 +783,17 @@
 
     const/4 v1, 0x0
 
-    .line 7
+    .line 8
     sput-object v1, Lcom/kakaogame/log/ReactiveLogManager;->playStopwatch:Lcom/kakaogame/util/Stopwatch;
 
-    .line 8
+    .line 9
     sget-object v1, Lcom/kakaogame/log/ReactiveLogManager;->currentActivity:Landroid/app/Activity;
 
     invoke-static {v1}, Lcom/kakaogame/log/ReactiveLogManager;->getPushId(Landroid/app/Activity;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 9
+    .line 10
     sget-object v2, Lcom/kakaogame/log/ReactiveLogManager;->currentActivity:Landroid/app/Activity;
 
     const-string v3, "app"
@@ -803,13 +804,13 @@
 
     invoke-static/range {v2 .. v8}, Lcom/kakaogame/log/ReactiveLogManager;->writeActionLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 
-    .line 10
+    .line 11
     :cond_2
     sget-object v1, Lcom/kakaogame/log/ReactiveLogManager;->currentActivity:Landroid/app/Activity;
 
     invoke-static {v1}, Lcom/kakaogame/log/ReactiveLogManager;->removePushId(Landroid/app/Activity;)V
 
-    .line 11
+    .line 12
     monitor-exit v0
 
     goto :goto_1
@@ -831,8 +832,8 @@
 
     const-string v1, "ReactiveLogManager"
 
-    .line 12
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -850,12 +851,14 @@
     const-string v1, " : "
 
     .line 1
-    invoke-static {v0, p1, v1, p2, v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, v1, p2, v1}, Lcom/kakaogame/c;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     invoke-static {v0, p3, v1, p4, v1}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 3
     invoke-virtual {v0, p5, p6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -870,12 +873,12 @@
 
     const-string p0, "context is null"
 
-    .line 2
+    .line 4
     invoke-static {v1, p0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 3
+    .line 5
     :cond_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -885,12 +888,12 @@
 
     const-string p0, "category is null"
 
-    .line 4
+    .line 6
     invoke-static {v1, p0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 5
+    .line 7
     :cond_1
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -900,12 +903,12 @@
 
     const-string p0, "action is null"
 
-    .line 6
+    .line 8
     invoke-static {v1, p0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 7
+    .line 9
     :cond_2
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
@@ -919,7 +922,7 @@
 
     move-result-object v0
 
-    .line 8
+    .line 10
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v2
@@ -932,7 +935,7 @@
 
     move-result-object v2
 
-    .line 9
+    .line 11
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v3
@@ -945,7 +948,7 @@
 
     move-result-object v3
 
-    .line 10
+    .line 12
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v4
@@ -954,19 +957,19 @@
 
     move-result-object v4
 
-    .line 11
+    .line 13
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
     if-eqz v5, :cond_3
 
-    .line 12
+    .line 14
     invoke-static {p0}, Lcom/kakaogame/auth/AuthDataManager;->getLastPlayerId(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 13
+    .line 15
     :cond_3
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -976,68 +979,68 @@
 
     const-string p0, "player id is null"
 
-    .line 14
+    .line 16
     invoke-static {v1, p0}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 15
+    .line 17
     :cond_4
     invoke-static {}, Lcom/kakaogame/KGSystem;->getDeviceId()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 16
+    .line 18
     invoke-static {p0}, Lcom/kakaogame/core/LocaleManager;->getCountryCode(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 17
+    .line 19
     new-instance v5, Ljava/util/LinkedHashMap;
 
     invoke-direct {v5}, Ljava/util/LinkedHashMap;-><init>()V
 
     const-string v6, "appId"
 
-    .line 18
+    .line 20
     invoke-interface {v5, v6, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v7, "appSecret"
 
-    .line 19
+    .line 21
     invoke-interface {v5, v7, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v2, "playerId"
 
-    .line 20
+    .line 22
     invoke-interface {v5, v2, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 21
+    .line 23
     new-instance v7, Ljava/util/LinkedHashMap;
 
     invoke-direct {v7}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 22
+    .line 24
     invoke-interface {v7, v6, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 23
+    .line 25
     invoke-interface {v7, v2, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "category"
 
-    .line 24
+    .line 26
     invoke-interface {v7, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p1, "action"
 
-    .line 25
+    .line 27
     invoke-interface {v7, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     if-eqz p3, :cond_5
 
     const-string p1, "label"
 
-    .line 26
+    .line 28
     invoke-interface {v7, p1, p3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_5
@@ -1045,10 +1048,10 @@
 
     const-string p1, "valueStr"
 
-    .line 27
+    .line 29
     invoke-interface {v7, p1, p4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 28
+    .line 30
     :cond_6
     invoke-static {p5, p6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -1060,20 +1063,20 @@
 
     const-string p1, "memo"
 
-    .line 29
+    .line 31
     invoke-interface {v7, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p1, "country"
 
-    .line 30
+    .line 32
     invoke-interface {v7, p1, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p0, "market"
 
-    .line 31
+    .line 33
     invoke-interface {v7, p0, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 32
+    .line 34
     invoke-static {}, Lcom/kakaogame/KGSystem;->getOSName()Ljava/lang/String;
 
     move-result-object p0
@@ -1082,7 +1085,7 @@
 
     invoke-interface {v7, p1, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 33
+    .line 35
     new-instance p0, Lcom/kakaogame/log/ReactiveLogManager$1;
 
     invoke-direct {p0, v5, v7}, Lcom/kakaogame/log/ReactiveLogManager$1;-><init>(Ljava/util/Map;Ljava/util/Map;)V

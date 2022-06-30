@@ -43,7 +43,6 @@
 .method public static constructor <clinit>()V
     .locals 4
 
-    .line 1
     new-instance v0, Lcom/linecorp/linesdk/LineApiResponse;
 
     sget-object v1, Lcom/linecorp/linesdk/LineApiResponseCode;->SUCCESS:Lcom/linecorp/linesdk/LineApiResponseCode;
@@ -101,7 +100,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/linecorp/linesdk/LineApiResponse;
 
     const/4 v1, 0x0
@@ -125,7 +123,6 @@
 
     if-nez p0, :cond_0
 
-    .line 1
     sget-object p0, Lcom/linecorp/linesdk/LineApiResponse;->EMPTY_RESULT_SUCCESS:Lcom/linecorp/linesdk/LineApiResponse;
 
     return-object p0
@@ -228,7 +225,6 @@
 .method public getErrorData()Lcom/linecorp/linesdk/LineApiError;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineApiResponse;->errorData:Lcom/linecorp/linesdk/LineApiError;
 
     return-object v0
@@ -237,7 +233,6 @@
 .method public getResponseCode()Lcom/linecorp/linesdk/LineApiResponseCode;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineApiResponse;->responseCode:Lcom/linecorp/linesdk/LineApiResponseCode;
 
     return-object v0
@@ -275,7 +270,7 @@
     .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineApiResponse;->responseCode:Lcom/linecorp/linesdk/LineApiResponseCode;
 
-    invoke-virtual {v0}, Ljava/lang/Enum;->hashCode()I
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
 
@@ -315,7 +310,6 @@
 .method public isNetworkError()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineApiResponse;->responseCode:Lcom/linecorp/linesdk/LineApiResponseCode;
 
     sget-object v1, Lcom/linecorp/linesdk/LineApiResponseCode;->NETWORK_ERROR:Lcom/linecorp/linesdk/LineApiResponseCode;
@@ -335,7 +329,6 @@
 .method public isServerError()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineApiResponse;->responseCode:Lcom/linecorp/linesdk/LineApiResponseCode;
 
     sget-object v1, Lcom/linecorp/linesdk/LineApiResponseCode;->SERVER_ERROR:Lcom/linecorp/linesdk/LineApiResponseCode;
@@ -355,7 +348,6 @@
 .method public isSuccess()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineApiResponse;->responseCode:Lcom/linecorp/linesdk/LineApiResponseCode;
 
     sget-object v1, Lcom/linecorp/linesdk/LineApiResponseCode;->SUCCESS:Lcom/linecorp/linesdk/LineApiResponseCode;
@@ -375,7 +367,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "LineApiResponse{errorData="

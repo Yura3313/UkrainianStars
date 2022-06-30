@@ -37,7 +37,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lokhttp3/CertificatePinner$Builder;
 
     invoke-direct {v0}, Lokhttp3/CertificatePinner$Builder;-><init>()V
@@ -95,6 +94,7 @@
 
     move-result-object v0
 
+    .line 3
     check-cast p0, Ljava/security/cert/X509Certificate;
 
     invoke-static {p0}, Lokhttp3/CertificatePinner;->sha256(Ljava/security/cert/X509Certificate;)Lokio/ByteString;
@@ -113,7 +113,7 @@
 
     return-object p0
 
-    .line 3
+    .line 4
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -127,12 +127,11 @@
 .method public static sha1(Ljava/security/cert/X509Certificate;)Lokio/ByteString;
     .locals 0
 
-    .line 1
-    invoke-virtual {p0}, Ljava/security/cert/X509Certificate;->getPublicKey()Ljava/security/PublicKey;
+    invoke-virtual {p0}, Ljava/security/cert/Certificate;->getPublicKey()Ljava/security/PublicKey;
 
     move-result-object p0
 
-    invoke-interface {p0}, Ljava/security/PublicKey;->getEncoded()[B
+    invoke-interface {p0}, Ljava/security/Key;->getEncoded()[B
 
     move-result-object p0
 
@@ -150,12 +149,11 @@
 .method public static sha256(Ljava/security/cert/X509Certificate;)Lokio/ByteString;
     .locals 0
 
-    .line 1
-    invoke-virtual {p0}, Ljava/security/cert/X509Certificate;->getPublicKey()Ljava/security/PublicKey;
+    invoke-virtual {p0}, Ljava/security/cert/Certificate;->getPublicKey()Ljava/security/PublicKey;
 
     move-result-object p0
 
-    invoke-interface {p0}, Ljava/security/PublicKey;->getEncoded()[B
+    invoke-interface {p0}, Ljava/security/Key;->getEncoded()[B
 
     move-result-object p0
 
@@ -330,10 +328,12 @@
 
     const-string p2, "unsupported hashAlgorithm: "
 
+    .line 16
     invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
+    .line 17
     iget-object v0, v9, Lokhttp3/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -356,12 +356,12 @@
 
     const-string v3, "\n  Peer certificate chain:"
 
-    .line 16
+    .line 18
     invoke-static {v1, v3}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 17
+    .line 19
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result v3
@@ -373,14 +373,14 @@
 
     if-ge v4, v3, :cond_9
 
-    .line 18
+    .line 20
     invoke-interface {p2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
     check-cast v6, Ljava/security/cert/X509Certificate;
 
-    .line 19
+    .line 21
     invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-static {v6}, Lokhttp3/CertificatePinner;->pin(Ljava/security/cert/Certificate;)Ljava/lang/String;
@@ -391,7 +391,7 @@
 
     const-string v5, ": "
 
-    .line 20
+    .line 22
     invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v6}, Ljava/security/cert/X509Certificate;->getSubjectDN()Ljava/security/Principal;
@@ -411,7 +411,7 @@
     :cond_9
     const-string p2, "\n  Pinned certificates for "
 
-    .line 21
+    .line 23
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -420,7 +420,7 @@
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 22
+    .line 24
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result p1
@@ -428,14 +428,14 @@
     :goto_3
     if-ge v2, p1, :cond_a
 
-    .line 23
+    .line 25
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p2
 
     check-cast p2, Lokhttp3/CertificatePinner$Pin;
 
-    .line 24
+    .line 26
     invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -444,7 +444,7 @@
 
     goto :goto_3
 
-    .line 25
+    .line 27
     :cond_a
     new-instance p1, Ljavax/net/ssl/SSLPeerUnverifiedException;
 
@@ -471,7 +471,7 @@
         }
     .end annotation
 
-    .line 26
+    .line 35
     invoke-static {p2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p2

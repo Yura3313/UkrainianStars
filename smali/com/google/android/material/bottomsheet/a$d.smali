@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/bottomsheet/a$d;
+.class public final Lcom/google/android/material/bottomsheet/a$d;
 .super Lcom/google/android/material/bottomsheet/BottomSheetBehavior$d;
 .source "BottomSheetDialog.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Lcom/google/android/material/bottomsheet/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomsheet/a$d;->a:Lcom/google/android/material/bottomsheet/a;
 
     invoke-direct {p0}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$d;-><init>()V
@@ -32,20 +31,19 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;F)V
+.method public final a(Landroid/view/View;F)V
     .locals 0
 
     return-void
 .end method
 
-.method public b(Landroid/view/View;I)V
+.method public final b(Landroid/view/View;I)V
     .locals 0
 
     const/4 p1, 0x5
 
     if-ne p2, p1, :cond_0
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/bottomsheet/a$d;->a:Lcom/google/android/material/bottomsheet/a;
 
     invoke-virtual {p1}, Lcom/google/android/material/bottomsheet/a;->cancel()V

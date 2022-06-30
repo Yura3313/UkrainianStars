@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/view/MyAvatarEditView$a;
-.super Lle/j;
+.super Lse/h;
 .source "MyAvatarEditView.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
+        "Lse/h;",
+        "Lre/a<",
         "Lcom/supercell/id/view/AvatarEditView;",
         ">;"
     }
@@ -27,33 +27,32 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/view/MyAvatarEditView;
+.field public final synthetic f:Lcom/supercell/id/view/MyAvatarEditView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/MyAvatarEditView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarEditView$a;->g:Lcom/supercell/id/view/MyAvatarEditView;
+    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarEditView$a;->f:Lcom/supercell/id/view/MyAvatarEditView;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
+.method public final invoke()Ljava/lang/Object;
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarEditView$a;->g:Lcom/supercell/id/view/MyAvatarEditView;
+    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarEditView$a;->f:Lcom/supercell/id/view/MyAvatarEditView;
 
     sget v1, Lcom/supercell/id/R$id;->image:I
 
-    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 

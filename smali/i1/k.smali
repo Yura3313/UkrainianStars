@@ -2,39 +2,43 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Landroid/view/View$OnTouchListener;
+
 
 # instance fields
-.field public a:I
-
-.field public b:I
-
-.field public c:I
-
-.field public d:I
+.field public final synthetic f:Lcom/google/android/gms/ads/internal/zzj;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lcom/google/android/gms/ads/internal/zzj;)V
+    .locals 0
 
-    .line 1
+    iput-object p1, p0, Li1/k;->f:Lcom/google/android/gms/ads/internal/zzj;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Li1/k;->f:Lcom/google/android/gms/ads/internal/zzj;
 
     .line 2
-    iput v0, p0, Li1/k;->a:I
+    iget-object p1, p1, Lcom/google/android/gms/ads/internal/zzj;->m:Lk3/gr0;
+
+    if-eqz p1, :cond_0
 
     .line 3
-    iput v0, p0, Li1/k;->b:I
+    invoke-virtual {p1, p2}, Lk3/gr0;->c(Landroid/view/MotionEvent;)V
 
-    .line 4
-    iput v0, p0, Li1/k;->c:I
+    :cond_0
+    const/4 p1, 0x0
 
-    const/16 v0, 0x20
-
-    .line 5
-    iput v0, p0, Li1/k;->d:I
-
-    return-void
+    return p1
 .end method

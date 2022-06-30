@@ -22,7 +22,6 @@
 .method public static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;->values()[Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;
 
     move-result-object v0

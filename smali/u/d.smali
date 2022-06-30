@@ -1,138 +1,60 @@
-.class public Lu/d;
+.class public final Lu/d;
 .super Ljava/lang/Object;
-.source "ActivityRecreator.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic g:Ljava/lang/Object;
-
-.field public final synthetic h:Ljava/lang/Object;
+.source "AppOpsManagerCompat.java"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Lu/d;->g:Ljava/lang/Object;
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    iput-object p2, p0, Lu/d;->h:Ljava/lang/Object;
+    const/16 v1, 0x17
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public run()V
-    .locals 7
-
-    .line 1
-    :try_start_0
-    sget-object v0, Lu/c;->d:Ljava/lang/reflect/Method;
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x2
-
-    if-eqz v0, :cond_0
+    if-lt v0, v1, :cond_0
 
     .line 2
-    iget-object v4, p0, Lu/d;->g:Ljava/lang/Object;
+    const-class v0, Landroid/app/AppOpsManager;
 
-    const/4 v5, 0x3
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
 
-    new-array v5, v5, [Ljava/lang/Object;
+    move-result-object p0
 
-    iget-object v6, p0, Lu/d;->h:Ljava/lang/Object;
-
-    aput-object v6, v5, v2
+    check-cast p0, Landroid/app/AppOpsManager;
 
     .line 3
-    sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    invoke-virtual {p0, p1, p2}, Landroid/app/AppOpsManager;->noteProxyOpNoThrow(Ljava/lang/String;Ljava/lang/String;)I
 
-    aput-object v2, v5, v1
+    move-result p0
 
-    const-string v1, "AppCompat recreation"
+    return p0
 
-    aput-object v1, v5, v3
-
-    .line 4
-    invoke-virtual {v0, v4, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_0
-
-    .line 5
     :cond_0
-    sget-object v0, Lu/c;->e:Ljava/lang/reflect/Method;
+    const/4 p0, 0x1
 
-    iget-object v4, p0, Lu/d;->g:Ljava/lang/Object;
+    return p0
+.end method
 
-    new-array v3, v3, [Ljava/lang/Object;
+.method public static b(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
 
-    iget-object v5, p0, Lu/d;->h:Ljava/lang/Object;
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    aput-object v5, v3, v2
+    const/16 v1, 0x17
 
-    .line 6
-    sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    if-lt v0, v1, :cond_0
 
-    aput-object v2, v3, v1
+    .line 2
+    invoke-static {p0}, Landroid/app/AppOpsManager;->permissionToOp(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 7
-    invoke-virtual {v0, v4, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_0
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    move-result-object p0
 
-    goto :goto_0
+    return-object p0
 
-    :catch_0
-    move-exception v0
+    :cond_0
+    const/4 p0, 0x0
 
-    .line 8
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v1
-
-    const-class v2, Ljava/lang/RuntimeException;
-
-    if-ne v1, v2, :cond_2
-
-    .line 9
-    invoke-virtual {v0}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_2
-
-    .line 10
-    invoke-virtual {v0}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "Unable to stop"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    goto :goto_0
-
-    .line 11
-    :cond_1
-    throw v0
-
-    :catchall_0
-    :cond_2
-    :goto_0
-    return-void
+    return-object p0
 .end method

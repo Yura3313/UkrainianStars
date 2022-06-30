@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/snackbar/Snackbar;
+.class public final Lcom/google/android/material/snackbar/Snackbar;
 .super Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 .source "Snackbar.java"
 
@@ -56,14 +56,14 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/view/ViewGroup;Landroid/view/View;Ls4/f;)V
+.method public constructor <init>(Landroid/view/ViewGroup;Landroid/view/View;Lt4/f;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;-><init>(Landroid/view/ViewGroup;Landroid/view/View;Ls4/f;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;-><init>(Landroid/view/ViewGroup;Landroid/view/View;Lt4/f;)V
 
     .line 2
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
@@ -82,18 +82,17 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 1
 
     const/4 v0, 0x3
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->b(I)V
 
     return-void
 .end method
 
-.method public i()I
+.method public final h()I
     .locals 4
 
     .line 1
@@ -159,7 +158,7 @@
     return v0
 .end method
 
-.method public j()Z
+.method public final i()Z
     .locals 3
 
     .line 1
@@ -167,7 +166,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->m:Lcom/google/android/material/snackbar/i$b;
+    iget-object v1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->m:Lcom/google/android/material/snackbar/BaseTransientBottomBar$e;
 
     .line 2
     iget-object v2, v0, Lcom/google/android/material/snackbar/i;->a:Ljava/lang/Object;
@@ -195,7 +194,7 @@
     throw v0
 .end method
 
-.method public k(ILandroid/view/View$OnClickListener;)Lcom/google/android/material/snackbar/Snackbar;
+.method public final j(ILandroid/view/View$OnClickListener;)Lcom/google/android/material/snackbar/Snackbar;
     .locals 3
 
     .line 1
@@ -211,7 +210,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -235,17 +234,17 @@
     iput-boolean v2, p0, Lcom/google/android/material/snackbar/Snackbar;->s:Z
 
     .line 7
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 8
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 9
-    new-instance p1, Ls4/g;
+    new-instance p1, Lt4/g;
 
-    invoke-direct {p1, p0, p2}, Ls4/g;-><init>(Lcom/google/android/material/snackbar/Snackbar;Landroid/view/View$OnClickListener;)V
+    invoke-direct {p1, p0, p2}, Lt4/g;-><init>(Lcom/google/android/material/snackbar/Snackbar;Landroid/view/View$OnClickListener;)V
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     goto :goto_0
 
@@ -253,12 +252,12 @@
     const/16 p1, 0x8
 
     .line 10
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->setVisibility(I)V
 
     const/4 p1, 0x0
 
     .line 11
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 12
     iput-boolean v1, p0, Lcom/google/android/material/snackbar/Snackbar;->s:Z
@@ -267,7 +266,7 @@
     return-object p0
 .end method
 
-.method public l()V
+.method public final k()V
     .locals 5
 
     .line 1
@@ -275,11 +274,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar;->i()I
+    invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar;->h()I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->m:Lcom/google/android/material/snackbar/i$b;
+    iget-object v2, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->m:Lcom/google/android/material/snackbar/BaseTransientBottomBar$e;
 
     .line 2
     iget-object v3, v0, Lcom/google/android/material/snackbar/i;->a:Ljava/lang/Object;

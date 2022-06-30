@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final y:Lcom/google/android/material/circularreveal/b;
+.field public final x:Lcom/google/android/material/circularreveal/b;
 
 
 # direct methods
@@ -22,60 +22,56 @@
 
     invoke-direct {p1, p0}, Lcom/google/android/material/circularreveal/b;-><init>(Lcom/google/android/material/circularreveal/b$a;)V
 
-    iput-object p1, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->y:Lcom/google/android/material/circularreveal/b;
+    iput-object p1, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->x:Lcom/google/android/material/circularreveal/b;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->y:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->x:Lcom/google/android/material/circularreveal/b;
 
     invoke-virtual {v0}, Lcom/google/android/material/circularreveal/b;->a()V
 
     return-void
 .end method
 
-.method public b()V
+.method public final b()V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->y:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->x:Lcom/google/android/material/circularreveal/b;
 
     invoke-virtual {v0}, Lcom/google/android/material/circularreveal/b;->b()V
 
     return-void
 .end method
 
-.method public c(Landroid/graphics/Canvas;)V
+.method public final c(Landroid/graphics/Canvas;)V
     .locals 0
 
-    .line 1
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->draw(Landroid/graphics/Canvas;)V
+    invoke-super {p0, p1}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V
 
     return-void
 .end method
 
-.method public d()Z
+.method public final d()Z
     .locals 1
 
-    .line 1
-    invoke-super {p0}, Landroid/widget/FrameLayout;->isOpaque()Z
+    invoke-super {p0}, Landroid/view/View;->isOpaque()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public draw(Landroid/graphics/Canvas;)V
+.method public final draw(Landroid/graphics/Canvas;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->y:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->x:Lcom/google/android/material/circularreveal/b;
 
     if-eqz v0, :cond_0
 
@@ -86,7 +82,7 @@
 
     .line 3
     :cond_0
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->draw(Landroid/graphics/Canvas;)V
+    invoke-super {p0, p1}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V
 
     :goto_0
     return-void
@@ -96,7 +92,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->y:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->x:Lcom/google/android/material/circularreveal/b;
 
     .line 2
     iget-object v0, v0, Lcom/google/android/material/circularreveal/b;->g:Landroid/graphics/drawable/Drawable;
@@ -107,8 +103,7 @@
 .method public getCircularRevealScrimColor()I
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->y:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->x:Lcom/google/android/material/circularreveal/b;
 
     invoke-virtual {v0}, Lcom/google/android/material/circularreveal/b;->d()I
 
@@ -117,24 +112,23 @@
     return v0
 .end method
 
-.method public getRevealInfo()Lcom/google/android/material/circularreveal/c$e;
+.method public getRevealInfo()Lcom/google/android/material/circularreveal/c$d;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->y:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->x:Lcom/google/android/material/circularreveal/b;
 
-    invoke-virtual {v0}, Lcom/google/android/material/circularreveal/b;->f()Lcom/google/android/material/circularreveal/c$e;
+    invoke-virtual {v0}, Lcom/google/android/material/circularreveal/b;->f()Lcom/google/android/material/circularreveal/c$d;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public isOpaque()Z
+.method public final isOpaque()Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->y:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->x:Lcom/google/android/material/circularreveal/b;
 
     if-eqz v0, :cond_0
 
@@ -147,7 +141,7 @@
 
     .line 3
     :cond_0
-    invoke-super {p0}, Landroid/widget/FrameLayout;->isOpaque()Z
+    invoke-super {p0}, Landroid/view/View;->isOpaque()Z
 
     move-result v0
 
@@ -157,46 +151,29 @@
 .method public setCircularRevealOverlayDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->y:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->x:Lcom/google/android/material/circularreveal/b;
 
-    .line 2
-    iput-object p1, v0, Lcom/google/android/material/circularreveal/b;->g:Landroid/graphics/drawable/Drawable;
-
-    .line 3
-    iget-object p1, v0, Lcom/google/android/material/circularreveal/b;->b:Landroid/view/View;
-
-    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v0, p1}, Lcom/google/android/material/circularreveal/b;->h(Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method
 
 .method public setCircularRevealScrimColor(I)V
-    .locals 2
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->y:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->x:Lcom/google/android/material/circularreveal/b;
 
-    .line 2
-    iget-object v1, v0, Lcom/google/android/material/circularreveal/b;->e:Landroid/graphics/Paint;
-
-    invoke-virtual {v1, p1}, Landroid/graphics/Paint;->setColor(I)V
-
-    .line 3
-    iget-object p1, v0, Lcom/google/android/material/circularreveal/b;->b:Landroid/view/View;
-
-    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v0, p1}, Lcom/google/android/material/circularreveal/b;->i(I)V
 
     return-void
 .end method
 
-.method public setRevealInfo(Lcom/google/android/material/circularreveal/c$e;)V
+.method public setRevealInfo(Lcom/google/android/material/circularreveal/c$d;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->y:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/cardview/CircularRevealCardView;->x:Lcom/google/android/material/circularreveal/b;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/material/circularreveal/b;->h(Lcom/google/android/material/circularreveal/c$e;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/material/circularreveal/b;->j(Lcom/google/android/material/circularreveal/c$d;)V
 
     return-void
 .end method

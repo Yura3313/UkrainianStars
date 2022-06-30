@@ -14,7 +14,6 @@
 .method public constructor <init>(Landroidx/fragment/app/Fragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/Fragment$5;->a:Landroidx/fragment/app/Fragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,7 +23,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
+.method public final a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
     .locals 0
 
     .line 1
@@ -35,7 +34,7 @@
     .line 2
     iget-object p1, p0, Landroidx/fragment/app/Fragment$5;->a:Landroidx/fragment/app/Fragment;
 
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object p1, p1, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-eqz p1, :cond_0
 

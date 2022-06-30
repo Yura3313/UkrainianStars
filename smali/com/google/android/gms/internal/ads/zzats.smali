@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.reward.client.IRewardedVideoAdListener"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,8 +19,8 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 0
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -40,7 +39,7 @@
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzatw;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->h0()V
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->p0()V
 
     goto :goto_1
 
@@ -55,7 +54,7 @@
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzatw;
 
-    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/ads/zzatw;->X1(I)V
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/ads/zzatw;->b2(I)V
 
     goto :goto_1
 
@@ -65,7 +64,7 @@
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzatw;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->M2()V
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->R2()V
 
     goto :goto_1
 
@@ -90,9 +89,9 @@
     move-result-object p2
 
     .line 7
-    instance-of p4, p2, Lcom/google/android/gms/internal/ads/zzatj;
+    instance-of v0, p2, Lcom/google/android/gms/internal/ads/zzatj;
 
-    if-eqz p4, :cond_1
+    if-eqz v0, :cond_1
 
     .line 8
     move-object p1, p2
@@ -115,7 +114,7 @@
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzatw;
 
-    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/ads/zzatw;->D2(Lcom/google/android/gms/internal/ads/zzatj;)V
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/ads/zzatw;->I2(Lcom/google/android/gms/internal/ads/zzatj;)V
 
     goto :goto_1
 
@@ -125,7 +124,7 @@
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzatw;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->Z5()V
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->X5()V
 
     goto :goto_1
 
@@ -135,7 +134,7 @@
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzatw;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->f0()V
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->n0()V
 
     goto :goto_1
 
@@ -145,7 +144,7 @@
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzatw;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->n6()V
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->j6()V
 
     goto :goto_1
 
@@ -155,7 +154,7 @@
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzatw;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->V6()V
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzatw;->O6()V
 
     .line 15
     :goto_1

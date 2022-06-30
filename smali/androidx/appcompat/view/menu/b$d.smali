@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/view/menu/b$d;
+.class public final Landroidx/appcompat/view/menu/b$d;
 .super Ljava/lang/Object;
 .source "CascadingMenuPopup.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:Landroidx/appcompat/widget/x;
+.field public final a:Landroidx/appcompat/widget/w;
 
 .field public final b:Landroidx/appcompat/view/menu/e;
 
@@ -23,14 +23,14 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/widget/x;Landroidx/appcompat/view/menu/e;I)V
+.method public constructor <init>(Landroidx/appcompat/widget/w;Landroidx/appcompat/view/menu/e;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Landroidx/appcompat/view/menu/b$d;->a:Landroidx/appcompat/widget/x;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/b$d;->a:Landroidx/appcompat/widget/w;
 
     .line 3
     iput-object p2, p0, Landroidx/appcompat/view/menu/b$d;->b:Landroidx/appcompat/view/menu/e;

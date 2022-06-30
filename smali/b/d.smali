@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lb/a;-><init>()V
 
     return-void
@@ -26,19 +25,17 @@
 
 
 # virtual methods
-.method public a(Landroid/content/Context;Ljava/lang/Object;)Landroid/content/Intent;
+.method public final a(Ljava/lang/Object;)Landroid/content/Intent;
     .locals 0
 
-    .line 1
-    check-cast p2, Landroid/content/Intent;
+    check-cast p1, Landroid/content/Intent;
 
-    return-object p2
+    return-object p1
 .end method
 
-.method public c(ILandroid/content/Intent;)Ljava/lang/Object;
+.method public final c(ILandroid/content/Intent;)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/activity/result/ActivityResult;
 
     invoke-direct {v0, p1, p2}, Landroidx/activity/result/ActivityResult;-><init>(ILandroid/content/Intent;)V

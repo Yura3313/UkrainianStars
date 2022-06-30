@@ -46,7 +46,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakaogame/auth/AuthActivityManager;
 
     invoke-direct {v0}, Lcom/kakaogame/auth/AuthActivityManager;-><init>()V
@@ -89,7 +88,6 @@
 .method public static getInstance()Lcom/kakaogame/auth/AuthActivityManager;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/auth/AuthActivityManager;->instance:Lcom/kakaogame/auth/AuthActivityManager;
 
     return-object v0
@@ -161,7 +159,7 @@
     const-string v0, "AuthActivityManager"
 
     .line 5
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -374,7 +372,7 @@
     const-string v3, "AuthActivityManager"
 
     .line 4
-    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -760,7 +758,7 @@
     const-string v0, "AuthActivityManager"
 
     .line 5
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 

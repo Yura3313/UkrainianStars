@@ -67,7 +67,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)Lcom/kakaogame/promotion/view/StartingPromotionFragment$StartingPromotionDialogListener;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->callbackListener:Lcom/kakaogame/promotion/view/StartingPromotionFragment$StartingPromotionDialogListener;
 
     return-object p0
@@ -76,7 +75,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)Landroid/widget/ImageView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->checkImageView:Landroid/widget/ImageView;
 
     return-object p0
@@ -85,7 +83,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->applyClick:Z
 
     return p0
@@ -94,7 +91,6 @@
 .method public static synthetic access$300(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)Lcom/kakaogame/promotion/KGPromotionData;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->promotion:Lcom/kakaogame/promotion/KGPromotionData;
 
     return-object p0
@@ -103,7 +99,6 @@
 .method public static synthetic access$400(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->clickLink:Ljava/lang/String;
 
     return-object p0
@@ -112,7 +107,6 @@
 .method public static synthetic access$402(Lcom/kakaogame/promotion/view/StartingPromotionFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->clickLink:Ljava/lang/String;
 
     return-object p1
@@ -121,7 +115,6 @@
 .method public static synthetic access$500(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)Landroid/widget/ImageView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->progressView:Landroid/widget/ImageView;
 
     return-object p0
@@ -130,7 +123,6 @@
 .method public static synthetic access$600(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->handleClick()V
 
     return-void
@@ -139,7 +131,6 @@
 .method public static synthetic access$700(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)Landroid/widget/ImageView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->promotionImageView:Landroid/widget/ImageView;
 
     return-object p0
@@ -148,7 +139,6 @@
 .method public static synthetic access$800(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)Landroid/view/animation/Animation;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->anim:Landroid/view/animation/Animation;
 
     return-object p0
@@ -171,7 +161,7 @@
     move-result-object v0
 
     .line 2
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -180,7 +170,7 @@
     move-result v1
 
     .line 3
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -189,11 +179,11 @@
     move-result v2
 
     .line 4
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -204,11 +194,11 @@
     move-result v3
 
     .line 5
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -219,7 +209,7 @@
     move-result v4
 
     .line 6
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -234,11 +224,11 @@
     sub-int/2addr v1, v3
 
     .line 7
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -249,11 +239,11 @@
     move-result v5
 
     .line 8
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -290,11 +280,11 @@
     sub-int/2addr v2, v3
 
     .line 12
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -305,11 +295,11 @@
     move-result v5
 
     .line 13
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -383,7 +373,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -418,7 +408,7 @@
 
     invoke-direct {v2, p0}, Lcom/kakaogame/promotion/view/StartingPromotionFragment$6;-><init>(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)V
 
-    invoke-static {v0, v1, v2}, Lcom/kakaogame/ui/ImageDownloader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Lgc/a;)V
+    invoke-static {v0, v1, v2}, Lcom/kakaogame/ui/ImageDownloader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Lkc/a;)V
 
     return-void
 .end method
@@ -427,7 +417,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -511,7 +501,7 @@
     iput-object v1, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->progressView:Landroid/widget/ImageView;
 
     .line 9
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -563,6 +553,7 @@
 
     move-result-object v0
 
+    .line 4
     iget-boolean v1, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->applyClick:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
@@ -575,21 +566,21 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
+    .line 5
     new-instance v0, Lcom/kakaogame/ui/CustomProgressDialog;
 
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Lcom/kakaogame/ui/CustomProgressDialog;-><init>(Landroid/content/Context;)V
 
-    .line 5
+    .line 6
     new-instance v1, Lcom/kakaogame/promotion/view/StartingPromotionFragment$3;
 
     invoke-direct {v1, p0, v0}, Lcom/kakaogame/promotion/view/StartingPromotionFragment$3;-><init>(Lcom/kakaogame/promotion/view/StartingPromotionFragment;Lcom/kakaogame/ui/CustomProgressDialog;)V
 
-    .line 6
+    .line 7
     invoke-static {v1}, Lcom/kakaogame/manager/AsyncTaskManager;->execute(Landroid/os/AsyncTask;)V
 
     return-void
@@ -615,7 +606,7 @@
     .locals 2
 
     .line 1
-    invoke-super {p0, p1}, Landroid/app/DialogFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 2
     iget v0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->preOrientation:I
@@ -658,6 +649,7 @@
 
     move-result-object v0
 
+    .line 9
     invoke-virtual {p1}, Landroid/content/res/Configuration;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -700,7 +692,7 @@
 
     new-instance v1, Landroid/view/ContextThemeWrapper;
 
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -724,7 +716,7 @@
     :cond_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -867,7 +859,7 @@
     invoke-direct {p0}, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->downloadImage()V
 
     .line 16
-    invoke-super {p0, p1, p2, p3}, Landroid/app/DialogFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object p1
 
@@ -889,7 +881,7 @@
 
     .line 3
     :cond_0
-    invoke-super {p0}, Landroid/app/DialogFragment;->onResume()V
+    invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     return-void
 .end method
@@ -963,7 +955,6 @@
 .method public setCallbackListener(Lcom/kakaogame/promotion/view/StartingPromotionFragment$StartingPromotionDialogListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment;->callbackListener:Lcom/kakaogame/promotion/view/StartingPromotionFragment$StartingPromotionDialogListener;
 
     return-void

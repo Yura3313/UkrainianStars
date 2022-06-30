@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,7 +64,7 @@
     invoke-virtual {p1, v0}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
 
     .line 4
-    invoke-virtual {p1, p0}, Landroidx/versionedparcelable/VersionedParcel;->w(Lx0/b;)V
+    invoke-virtual {p1, p0}, Landroidx/versionedparcelable/VersionedParcel;->y(Lx0/b;)V
 
     return-void
 .end method

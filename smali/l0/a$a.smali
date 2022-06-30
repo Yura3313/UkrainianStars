@@ -1,4 +1,4 @@
-.class public Ll0/a$a;
+.class public final Ll0/a$a;
 .super Ljava/lang/Object;
 .source "AnimationHandler.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Ll0/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Ll0/a$a;->a:Ll0/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -32,7 +31,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 11
 
     .line 1
@@ -189,7 +188,7 @@
     iget-object v0, p0, Ll0/a$a;->a:Ll0/a;
 
     .line 19
-    iget-object v1, v0, Ll0/a;->d:Ll0/a$c;
+    iget-object v1, v0, Ll0/a;->d:Ll0/a$d;
 
     if-nez v1, :cond_8
 
@@ -200,19 +199,16 @@
 
     invoke-direct {v1, v2}, Ll0/a$d;-><init>(Ll0/a$a;)V
 
-    iput-object v1, v0, Ll0/a;->d:Ll0/a$c;
+    iput-object v1, v0, Ll0/a;->d:Ll0/a$d;
 
     .line 21
     :cond_8
-    iget-object v0, v0, Ll0/a;->d:Ll0/a$c;
+    iget-object v0, v0, Ll0/a;->d:Ll0/a$d;
 
     .line 22
-    check-cast v0, Ll0/a$d;
-
-    .line 23
     iget-object v1, v0, Ll0/a$d;->b:Landroid/view/Choreographer;
 
-    iget-object v0, v0, Ll0/a$d;->c:Landroid/view/Choreographer$FrameCallback;
+    iget-object v0, v0, Ll0/a$d;->c:Ll0/a$d$a;
 
     invoke-virtual {v1, v0}, Landroid/view/Choreographer;->postFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
 

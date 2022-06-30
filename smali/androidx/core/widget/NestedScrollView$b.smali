@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract a(Landroidx/core/widget/NestedScrollView;IIII)V
+.method public abstract a(Landroidx/core/widget/NestedScrollView;II)V
 .end method

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkotlinx/coroutines/android/HandlerDispatcherKt;->awaitFrame(Lde/d;)Ljava/lang/Object;
+    value = Lkotlinx/coroutines/android/HandlerDispatcherKt;->awaitFrame(Lke/d;)Ljava/lang/Object;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic $cont$inlined:Lse/f;
+.field public final synthetic $cont$inlined:Lze/f;
 
 
 # direct methods
-.method public constructor <init>(Lse/f;)V
+.method public constructor <init>(Lze/f;)V
     .locals 0
 
-    iput-object p1, p0, Lkotlinx/coroutines/android/HandlerDispatcherKt$$special$$inlined$Runnable$1;->$cont$inlined:Lse/f;
+    iput-object p1, p0, Lkotlinx/coroutines/android/HandlerDispatcherKt$$special$$inlined$Runnable$1;->$cont$inlined:Lze/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,10 +37,9 @@
 .method public final run()V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lkotlinx/coroutines/android/HandlerDispatcherKt$$special$$inlined$Runnable$1;->$cont$inlined:Lse/f;
+    iget-object v0, p0, Lkotlinx/coroutines/android/HandlerDispatcherKt$$special$$inlined$Runnable$1;->$cont$inlined:Lze/f;
 
-    invoke-static {v0}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->access$updateChoreographerAndPostFrameCallback(Lse/f;)V
+    invoke-static {v0}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->access$updateChoreographerAndPostFrameCallback(Lze/f;)V
 
     return-void
 .end method

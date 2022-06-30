@@ -1,103 +1,112 @@
 .class public final Lrc/t0;
-.super Ljava/lang/Object;
-.source "MainActivity.kt"
+.super Lse/h;
+.source "SocialApiClient.kt"
 
 # interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.implements Lre/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/l<",
+        "Ljava/lang/Exception;",
+        "Ljava/util/Map<",
+        "Lcom/supercell/id/model/IdSocialAccount;",
+        "+",
+        "Lae/m$b<",
+        "Ljava/lang/Exception;",
+        ">;>;>;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic g:Landroid/animation/ValueAnimator;
-
-.field public final synthetic h:Lrc/y0;
-
-.field public final synthetic i:I
-
-.field public final synthetic j:I
+.field public final synthetic f:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Landroid/animation/ValueAnimator;Lrc/y0;II)V
+.method public constructor <init>(Ljava/util/List;)V
     .locals 0
 
-    iput-object p1, p0, Lrc/t0;->g:Landroid/animation/ValueAnimator;
+    iput-object p1, p0, Lrc/t0;->f:Ljava/util/List;
 
-    iput-object p2, p0, Lrc/t0;->h:Lrc/y0;
+    const/4 p1, 0x1
 
-    iput p3, p0, Lrc/t0;->i:I
-
-    iput p4, p0, Lrc/t0;->j:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 5
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iget-object p1, p0, Lrc/t0;->h:Lrc/y0;
+    check-cast p1, Ljava/lang/Exception;
 
-    iget-object p1, p1, Lrc/y0;->g:Lcom/supercell/id/ui/MainActivity;
-
-    sget v0, Lcom/supercell/id/R$id;->panel:I
-
-    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/FrameLayout;
-
-    const-string v1, "panel"
-
-    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object p1
-
-    iget v1, p0, Lrc/t0;->i:I
-
-    iget v2, p0, Lrc/t0;->j:I
-
-    iget-object v3, p0, Lrc/t0;->g:Landroid/animation/ValueAnimator;
-
-    invoke-virtual {v3}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
-
-    move-result v3
-
-    int-to-float v4, v1
-
-    sub-int/2addr v2, v1
-
-    int-to-float v1, v2
-
-    mul-float v1, v1, v3
-
-    add-float/2addr v1, v4
+    const-string v0, "error"
 
     .line 2
-    invoke-static {v1}, Lb5/m;->r(F)I
-
-    move-result v1
-
-    iput v1, p1, Landroid/view/ViewGroup$LayoutParams;->width:I
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lrc/t0;->h:Lrc/y0;
+    iget-object v0, p0, Lrc/t0;->f:Ljava/util/List;
 
-    iget-object p1, p1, Lrc/y0;->g:Lcom/supercell/id/ui/MainActivity;
+    .line 4
+    new-instance v1, Ljava/util/LinkedHashMap;
 
-    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
+    const/16 v2, 0xa
 
-    move-result-object p1
+    invoke-static {v0, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
-    check-cast p1, Landroid/widget/FrameLayout;
+    move-result v2
 
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->requestLayout()V
+    invoke-static {v2}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
 
-    return-void
+    move-result v2
+
+    const/16 v3, 0x10
+
+    if-ge v2, v3, :cond_0
+
+    const/16 v2, 0x10
+
+    :cond_0
+    invoke-direct {v1, v2}, Ljava/util/LinkedHashMap;-><init>(I)V
+
+    .line 5
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 6
+    move-object v3, v2
+
+    check-cast v3, Lcom/supercell/id/model/IdSocialAccount;
+
+    .line 7
+    new-instance v3, Lae/m$b;
+
+    invoke-direct {v3, p1}, Lae/m$b;-><init>(Ljava/lang/Object;)V
+
+    invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_1
+    return-object v1
 .end method

@@ -1,5 +1,5 @@
-.class public Landroidx/constraintlayout/motion/widget/MotionLayout$b;
-.super Lo/q;
+.class public final Landroidx/constraintlayout/motion/widget/MotionLayout$b;
+.super Lo/r;
 .source "MotionLayout.java"
 
 
@@ -31,7 +31,7 @@
     .line 1
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
-    invoke-direct {p0}, Lo/q;-><init>()V
+    invoke-direct {p0}, Lo/r;-><init>()V
 
     const/4 p1, 0x0
 
@@ -46,18 +46,17 @@
 
 
 # virtual methods
-.method public a()F
+.method public final a()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
-    iget v0, v0, Landroidx/constraintlayout/motion/widget/MotionLayout;->B:F
+    iget v0, v0, Landroidx/constraintlayout/motion/widget/MotionLayout;->A:F
 
     return v0
 .end method
 
-.method public getInterpolation(F)F
+.method public final getInterpolation(F)F
     .locals 5
 
     .line 1
@@ -90,7 +89,7 @@
 
     sub-float v4, v0, v4
 
-    iput v4, v3, Landroidx/constraintlayout/motion/widget/MotionLayout;->B:F
+    iput v4, v3, Landroidx/constraintlayout/motion/widget/MotionLayout;->A:F
 
     mul-float v0, v0, p1
 
@@ -133,7 +132,7 @@
 
     add-float/2addr v4, v0
 
-    iput v4, v2, Landroidx/constraintlayout/motion/widget/MotionLayout;->B:F
+    iput v4, v2, Landroidx/constraintlayout/motion/widget/MotionLayout;->A:F
 
     mul-float v0, v0, p1
 

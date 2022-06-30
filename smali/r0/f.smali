@@ -1,4 +1,4 @@
-.class public Lr0/f;
+.class public final Lr0/f;
 .super Ljava/lang/Object;
 .source "MultiDexExtractor.java"
 
@@ -7,10 +7,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lr0/g;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -18,10 +17,9 @@
 
 
 # virtual methods
-.method public accept(Ljava/io/File;)Z
+.method public final accept(Ljava/io/File;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p1

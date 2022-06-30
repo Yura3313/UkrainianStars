@@ -11,7 +11,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lv0/d0;-><init>()V
 
     return-void
@@ -19,7 +18,7 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;)V
+.method public final a(Landroid/view/View;)V
     .locals 0
 
     return-void
@@ -63,7 +62,7 @@
     return p1
 .end method
 
-.method public c(Landroid/view/View;)V
+.method public final c(Landroid/view/View;)V
     .locals 0
 
     return-void

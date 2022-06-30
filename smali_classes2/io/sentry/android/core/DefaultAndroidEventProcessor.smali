@@ -137,7 +137,6 @@
 .method private getAbi()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
 
     return-object v0
@@ -146,7 +145,6 @@
 .method private getAbi2()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/os/Build;->CPU_ABI2:Ljava/lang/String;
 
     return-object v0
@@ -230,7 +228,6 @@
 .method private getAvailableBlocksDep(Landroid/os/StatFs;)I
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroid/os/StatFs;->getAvailableBlocks()I
 
     move-result p1
@@ -241,7 +238,6 @@
 .method private getAvailableBlocksLong(Landroid/os/StatFs;)J
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Landroid/os/StatFs;->getAvailableBlocksLong()J
 
     move-result-wide v0
@@ -252,7 +248,6 @@
 .method private getBatteryIntent()Landroid/content/Intent;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->context:Landroid/content/Context;
 
     new-instance v1, Landroid/content/IntentFilter;
@@ -388,7 +383,6 @@
 .method private getBlockCountDep(Landroid/os/StatFs;)I
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroid/os/StatFs;->getBlockCount()I
 
     move-result p1
@@ -399,7 +393,6 @@
 .method private getBlockCountLong(Landroid/os/StatFs;)J
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Landroid/os/StatFs;->getBlockCountLong()J
 
     move-result-wide v0
@@ -410,7 +403,6 @@
 .method private getBlockSizeDep(Landroid/os/StatFs;)I
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroid/os/StatFs;->getBlockSize()I
 
     move-result p1
@@ -421,7 +413,6 @@
 .method private getBlockSizeLong(Landroid/os/StatFs;)J
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Landroid/os/StatFs;->getBlockSizeLong()J
 
     move-result-wide v0
@@ -718,7 +709,6 @@
 .method private getDeviceName()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -1150,7 +1140,6 @@
 .method private getMemorySize(Landroid/app/ActivityManager$MemoryInfo;)Ljava/lang/Long;
     .locals 2
 
-    .line 1
     iget-wide v0, p1, Landroid/app/ActivityManager$MemoryInfo;->totalMem:J
 
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -1971,7 +1960,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->loadContextData()Ljava/util/Map;
 
     move-result-object v0
@@ -2096,6 +2084,7 @@
 
     move-result-object v2
 
+    .line 7
     invoke-virtual {v1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v1
@@ -2117,13 +2106,13 @@
     :cond_0
     const-string v1, "os_1"
 
-    .line 7
+    .line 8
     :goto_0
     invoke-virtual {p1}, Lio/sentry/SentryBaseEvent;->getContexts()Lio/sentry/protocol/Contexts;
 
     move-result-object p1
 
-    invoke-virtual {p1, v1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_1
     return-void

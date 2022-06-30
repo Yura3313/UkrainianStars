@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/recyclerview/widget/RecyclerView$z;Landroidx/recyclerview/widget/RecyclerView$z;Landroidx/recyclerview/widget/RecyclerView$j$c;Landroidx/recyclerview/widget/RecyclerView$j$c;)Z
+.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Landroidx/recyclerview/widget/RecyclerView$z;Landroidx/recyclerview/widget/RecyclerView$j$c;Landroidx/recyclerview/widget/RecyclerView$j$c;)Z
     .locals 7
 
     .line 1
@@ -71,21 +71,21 @@
     move-object v2, p2
 
     .line 8
-    invoke-virtual/range {v0 .. v6}, Landroidx/recyclerview/widget/b0;->l(Landroidx/recyclerview/widget/RecyclerView$z;Landroidx/recyclerview/widget/RecyclerView$z;IIII)Z
+    invoke-virtual/range {v0 .. v6}, Landroidx/recyclerview/widget/b0;->k(Landroidx/recyclerview/widget/RecyclerView$z;Landroidx/recyclerview/widget/RecyclerView$z;IIII)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public abstract k(Landroidx/recyclerview/widget/RecyclerView$z;)Z
+.method public abstract j(Landroidx/recyclerview/widget/RecyclerView$z;)V
 .end method
 
-.method public abstract l(Landroidx/recyclerview/widget/RecyclerView$z;Landroidx/recyclerview/widget/RecyclerView$z;IIII)Z
+.method public abstract k(Landroidx/recyclerview/widget/RecyclerView$z;Landroidx/recyclerview/widget/RecyclerView$z;IIII)Z
 .end method
 
-.method public abstract m(Landroidx/recyclerview/widget/RecyclerView$z;IIII)Z
+.method public abstract l(Landroidx/recyclerview/widget/RecyclerView$z;IIII)Z
 .end method
 
-.method public abstract n(Landroidx/recyclerview/widget/RecyclerView$z;)Z
+.method public abstract m(Landroidx/recyclerview/widget/RecyclerView$z;)V
 .end method

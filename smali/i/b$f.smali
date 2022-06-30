@@ -26,7 +26,7 @@
 
 
 # virtual methods
-.method public abstract b(Li/b$c;)V
+.method public abstract a(Li/b$c;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

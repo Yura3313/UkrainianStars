@@ -1,4 +1,4 @@
-.class public Ll/g;
+.class public final Ll/g;
 .super Landroid/graphics/drawable/Drawable;
 .source "RoundRectDrawableWithShadow.java"
 
@@ -57,7 +57,6 @@
 
     const-wide v0, 0x4046800000000000L    # 45.0
 
-    .line 1
     invoke-static {v0, v1}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v0
@@ -186,7 +185,6 @@
 
     const-wide/high16 v2, 0x3ff0000000000000L    # 1.0
 
-    .line 1
     sget-wide v4, Ll/g;->q:D
 
     sub-double/2addr v2, v4
@@ -220,7 +218,6 @@
 
     const-wide/high16 v2, 0x3ff0000000000000L    # 1.0
 
-    .line 1
     sget-wide v4, Ll/g;->q:D
 
     sub-double/2addr v2, v4
@@ -445,7 +442,7 @@
     throw p2
 .end method
 
-.method public draw(Landroid/graphics/Canvas;)V
+.method public final draw(Landroid/graphics/Canvas;)V
     .locals 28
 
     move-object/from16 v0, p0
@@ -1069,7 +1066,7 @@
     .end array-data
 .end method
 
-.method public getOpacity()I
+.method public final getOpacity()I
     .locals 1
 
     const/4 v0, -0x3
@@ -1077,7 +1074,7 @@
     return v0
 .end method
 
-.method public getPadding(Landroid/graphics/Rect;)Z
+.method public final getPadding(Landroid/graphics/Rect;)Z
     .locals 4
 
     .line 1
@@ -1126,10 +1123,9 @@
     return p1
 .end method
 
-.method public isStateful()Z
+.method public final isStateful()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ll/g;->k:Landroid/content/res/ColorStateList;
 
     if-eqz v0, :cond_0
@@ -1159,7 +1155,7 @@
     return v0
 .end method
 
-.method public onBoundsChange(Landroid/graphics/Rect;)V
+.method public final onBoundsChange(Landroid/graphics/Rect;)V
     .locals 0
 
     .line 1
@@ -1173,7 +1169,7 @@
     return-void
 .end method
 
-.method public onStateChange([I)Z
+.method public final onStateChange([I)Z
     .locals 2
 
     .line 1
@@ -1217,7 +1213,7 @@
     return p1
 .end method
 
-.method public setAlpha(I)V
+.method public final setAlpha(I)V
     .locals 1
 
     .line 1
@@ -1238,10 +1234,9 @@
     return-void
 .end method
 
-.method public setColorFilter(Landroid/graphics/ColorFilter;)V
+.method public final setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ll/g;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;

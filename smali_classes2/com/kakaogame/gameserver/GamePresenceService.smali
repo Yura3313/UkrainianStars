@@ -52,7 +52,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,7 +60,6 @@
 .method public static synthetic access$100()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/gameserver/GamePresenceService;->sendPing()V
 
     return-void

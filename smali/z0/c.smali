@@ -1,4 +1,4 @@
-.class public Lz0/c;
+.class public final Lz0/c;
 .super Ljava/lang/Object;
 .source "Property.java"
 

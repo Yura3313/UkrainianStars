@@ -1,4 +1,4 @@
-.class public Lm/b;
+.class public final Lm/b;
 .super Lm/f;
 .source "ArraySet.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Lm/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lm/b;->d:Lm/c;
 
     invoke-direct {p0}, Lm/f;-><init>()V
@@ -32,10 +31,9 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lm/b;->d:Lm/c;
 
     invoke-virtual {v0}, Lm/c;->clear()V
@@ -43,20 +41,19 @@
     return-void
 .end method
 
-.method public b(II)Ljava/lang/Object;
+.method public final b(II)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iget-object p2, p0, Lm/b;->d:Lm/c;
 
-    iget-object p2, p2, Lm/c;->h:[Ljava/lang/Object;
+    iget-object p2, p2, Lm/c;->g:[Ljava/lang/Object;
 
     aget-object p1, p2, p1
 
     return-object p1
 .end method
 
-.method public c()Ljava/util/Map;
+.method public final c()Ljava/util/Map;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -68,7 +65,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "not a map"
@@ -78,21 +74,19 @@
     throw v0
 .end method
 
-.method public d()I
+.method public final d()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lm/b;->d:Lm/c;
 
-    iget v0, v0, Lm/c;->i:I
+    iget v0, v0, Lm/c;->h:I
 
     return v0
 .end method
 
-.method public e(Ljava/lang/Object;)I
+.method public final e(Ljava/lang/Object;)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lm/b;->d:Lm/c;
 
     invoke-virtual {v0, p1}, Lm/c;->indexOf(Ljava/lang/Object;)I
@@ -102,10 +96,9 @@
     return p1
 .end method
 
-.method public f(Ljava/lang/Object;)I
+.method public final f(Ljava/lang/Object;)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lm/b;->d:Lm/c;
 
     invoke-virtual {v0, p1}, Lm/c;->indexOf(Ljava/lang/Object;)I
@@ -115,7 +108,7 @@
     return p1
 .end method
 
-.method public g(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final g(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -126,7 +119,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p2, p0, Lm/b;->d:Lm/c;
 
     invoke-virtual {p2, p1}, Lm/c;->add(Ljava/lang/Object;)Z
@@ -134,18 +126,17 @@
     return-void
 .end method
 
-.method public h(I)V
+.method public final h(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lm/b;->d:Lm/c;
 
-    invoke-virtual {v0, p1}, Lm/c;->f(I)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lm/c;->g(I)Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public i(ILjava/lang/Object;)Ljava/lang/Object;
+.method public final i(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -156,7 +147,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "not a map"

@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
 
-.field public final h:Z
+.field public final g:Z
 
-.field public final i:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -34,10 +34,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lo2/c;
+    new-instance v0, Lp2/c;
 
-    invoke-direct {v0}, Lo2/c;-><init>()V
+    invoke-direct {v0}, Lp2/c;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/events/zze;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -59,13 +58,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/drive/events/zze;->g:I
+    iput p1, p0, Lcom/google/android/gms/drive/events/zze;->f:I
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/drive/events/zze;->h:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/drive/events/zze;->g:Z
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/drive/events/zze;->i:Ljava/util/List;
+    iput-object p3, p0, Lcom/google/android/gms/drive/events/zze;->h:Ljava/util/List;
 
     return-void
 .end method
@@ -102,25 +101,25 @@
     check-cast p1, Lcom/google/android/gms/drive/events/zze;
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/drive/events/zze;->i:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/android/gms/drive/events/zze;->h:Ljava/util/List;
 
-    iget-object v3, p1, Lcom/google/android/gms/drive/events/zze;->i:Ljava/util/List;
+    iget-object v3, p1, Lcom/google/android/gms/drive/events/zze;->h:Ljava/util/List;
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    iget v2, p0, Lcom/google/android/gms/drive/events/zze;->g:I
+    iget v2, p0, Lcom/google/android/gms/drive/events/zze;->f:I
 
-    iget v3, p1, Lcom/google/android/gms/drive/events/zze;->g:I
+    iget v3, p1, Lcom/google/android/gms/drive/events/zze;->f:I
 
     if-ne v2, v3, :cond_2
 
-    iget-boolean v2, p0, Lcom/google/android/gms/drive/events/zze;->h:Z
+    iget-boolean v2, p0, Lcom/google/android/gms/drive/events/zze;->g:Z
 
-    iget-boolean p1, p1, Lcom/google/android/gms/drive/events/zze;->h:Z
+    iget-boolean p1, p1, Lcom/google/android/gms/drive/events/zze;->g:Z
 
     if-ne v2, p1, :cond_2
 
@@ -139,13 +138,13 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/zze;->i:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/zze;->h:Ljava/util/List;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget v1, p0, Lcom/google/android/gms/drive/events/zze;->g:I
+    iget v1, p0, Lcom/google/android/gms/drive/events/zze;->f:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -155,7 +154,7 @@
 
     aput-object v1, v0, v2
 
-    iget-boolean v1, p0, Lcom/google/android/gms/drive/events/zze;->h:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/drive/events/zze;->g:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -179,43 +178,43 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x2
-
     .line 2
-    iget v1, p0, Lcom/google/android/gms/drive/events/zze;->g:I
+    iget v0, p0, Lcom/google/android/gms/drive/events/zze;->f:I
+
+    const/4 v1, 0x2
 
     const/4 v2, 0x4
 
     .line 3
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 4
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/4 v0, 0x3
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-boolean v1, p0, Lcom/google/android/gms/drive/events/zze;->h:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/drive/events/zze;->g:Z
+
+    const/4 v1, 0x3
 
     .line 6
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 7
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget-object v0, p0, Lcom/google/android/gms/drive/events/zze;->i:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/drive/events/zze;->h:Ljava/util/List;
 
     const/4 v1, 0x0
 
-    invoke-static {p1, v2, v0, v1}, Ld2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, v2, v0, v1}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 9
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

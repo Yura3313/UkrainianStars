@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/textfield/a$a;
+.class public final Lcom/google/android/material/textfield/a$a;
 .super Ljava/lang/Object;
 .source "ClearTextEndIconDelegate.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/textfield/a;
+.field public final synthetic f:Lcom/google/android/material/textfield/a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/a;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/a$a;->g:Lcom/google/android/material/textfield/a;
+    iput-object p1, p0, Lcom/google/android/material/textfield/a$a;->f:Lcom/google/android/material/textfield/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,13 +34,13 @@
 
 
 # virtual methods
-.method public afterTextChanged(Landroid/text/Editable;)V
+.method public final afterTextChanged(Landroid/text/Editable;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/a$a;->g:Lcom/google/android/material/textfield/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/a$a;->f:Lcom/google/android/material/textfield/a;
 
-    iget-object v0, v0, Lcom/google/android/material/textfield/m;->a:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object v0, v0, Lcom/google/android/material/textfield/k;->a:Lcom/google/android/material/textfield/TextInputLayout;
 
     invoke-virtual {v0}, Lcom/google/android/material/textfield/TextInputLayout;->getSuffixText()Ljava/lang/CharSequence;
 
@@ -53,10 +52,10 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/textfield/a$a;->g:Lcom/google/android/material/textfield/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/a$a;->f:Lcom/google/android/material/textfield/a;
 
     .line 3
-    invoke-interface {p1}, Landroid/text/Editable;->length()I
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result p1
 
@@ -76,13 +75,13 @@
     return-void
 .end method
 
-.method public beforeTextChanged(Ljava/lang/CharSequence;III)V
+.method public final beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
 
     return-void
 .end method
 
-.method public onTextChanged(Ljava/lang/CharSequence;III)V
+.method public final onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
 
     return-void

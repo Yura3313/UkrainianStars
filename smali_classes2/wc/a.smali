@@ -1,82 +1,216 @@
-.class public final Lwc/a;
-.super Ljava/lang/Object;
-.source "Comparisons.kt"
-
-# interfaces
-.implements Ljava/util/Comparator;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "TT;>;"
-    }
-.end annotation
+.class public Lwc/a;
+.super Lwc/a1;
+.source "NavigationFragments.kt"
 
 
 # instance fields
-.field public final synthetic g:Ljava/util/Comparator;
+.field public n0:Ljava/util/HashMap;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Comparator;)V
+.method static constructor <clinit>()V
+    .locals 3
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [Ljava/lang/Integer;
+
+    sget v1, Lcom/supercell/id/R$id;->navigation_back_button:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    sget v1, Lcom/supercell/id/R$id;->navigation_close_button:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    invoke-static {v0}, Lcom/helpshift/util/r;->f([Ljava/lang/Object;)Ljava/util/Set;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Lwc/a;->g:Ljava/util/Comparator;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lwc/a1;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)I"
-        }
-    .end annotation
+.method public N0()V
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lwc/a;->g:Ljava/util/Comparator;
+    iget-object v0, p0, Lwc/a;->n0:Ljava/util/HashMap;
 
-    check-cast p1, Lwc/e;
+    if-eqz v0, :cond_0
 
-    .line 2
-    iget-object p1, p1, Lwc/e;->c:Ljava/lang/String;
-
-    const-string v1, ""
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
     :cond_0
-    move-object p1, v1
+    return-void
+.end method
+
+.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
+
+    const-string p3, "inflater"
+
+    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget p3, Lcom/supercell/id/R$layout;->fragment_navigation_back:I
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public synthetic a0()V
+    .locals 0
+
+    invoke-super {p0}, Lwc/a1;->a0()V
+
+    invoke-virtual {p0}, Lwc/a;->N0()V
+
+    return-void
+.end method
+
+.method public final h1()Landroid/view/View;
+    .locals 1
+
+    sget v0, Lcom/supercell/id/R$id;->navigation_back_button:I
+
+    invoke-virtual {p0, v0}, Lwc/a;->l1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageButton;
+
+    return-object v0
+.end method
+
+.method public final i1()Landroid/view/View;
+    .locals 1
+
+    sget v0, Lcom/supercell/id/R$id;->navigation_close_button:I
+
+    invoke-virtual {p0, v0}, Lwc/a;->l1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageButton;
+
+    return-object v0
+.end method
+
+.method public final k0(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 3
+
+    const-string v0, "view"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [Landroid/view/View;
+
+    .line 1
+    invoke-virtual {p0}, Lwc/a;->h1()Landroid/view/View;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    invoke-virtual {p0}, Lwc/a;->i1()Landroid/view/View;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    invoke-static {v0}, Lcom/android/billingclient/api/z;->k([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    .line 2
+    iput-object v0, p0, Lwc/a1;->l0:Ljava/util/Collection;
 
     .line 3
-    :goto_0
-    check-cast p2, Lwc/e;
+    invoke-super {p0, p1, p2}, Lwc/a1;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 
-    .line 4
-    iget-object p2, p2, Lwc/e;->c:Ljava/lang/String;
+    return-void
+.end method
 
-    if-eqz p2, :cond_1
+.method public l1(I)Landroid/view/View;
+    .locals 2
 
-    move-object v1, p2
+    iget-object v0, p0, Lwc/a;->n0:Ljava/util/HashMap;
 
-    .line 5
+    if-nez v0, :cond_0
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lwc/a;->n0:Ljava/util/HashMap;
+
+    :cond_0
+    iget-object v0, p0, Lwc/a;->n0:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    if-nez v0, :cond_2
+
+    .line 1
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+
+    if-nez v0, :cond_1
+
+    const/4 p1, 0x0
+
+    return-object p1
+
+    .line 2
     :cond_1
-    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result p1
+    move-result-object v0
 
-    return p1
+    iget-object v1, p0, Lwc/a;->n0:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_2
+    return-object v0
 .end method

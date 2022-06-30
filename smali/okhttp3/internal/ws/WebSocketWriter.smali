@@ -571,7 +571,6 @@
 
     const/16 v0, 0x9
 
-    .line 1
     invoke-direct {p0, v0, p1}, Lokhttp3/internal/ws/WebSocketWriter;->writeControlFrame(ILokio/ByteString;)V
 
     return-void
@@ -587,7 +586,6 @@
 
     const/16 v0, 0xa
 
-    .line 1
     invoke-direct {p0, v0, p1}, Lokhttp3/internal/ws/WebSocketWriter;->writeControlFrame(ILokio/ByteString;)V
 
     return-void

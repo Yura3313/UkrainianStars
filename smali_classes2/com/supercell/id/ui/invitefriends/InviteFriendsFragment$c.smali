@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;
-.super Lle/j;
+.super Lse/h;
 .source "InviteFriendsFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
@@ -18,44 +18,44 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lwd/x;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/l<",
+        "Lbe/w;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;->g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;->f:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
 
     .line 1
-    check-cast p1, Lwd/x;
+    check-cast p1, Lbe/w;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;->g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;->f:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->U()Z
+    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->N()Z
 
     move-result v0
 
@@ -67,42 +67,42 @@
     if-eqz p1, :cond_2
 
     .line 3
-    invoke-virtual {p1}, Lwd/x;->a()Lcom/supercell/id/model/IdProfile;
+    invoke-virtual {p1}, Lbe/w;->a()Lcom/supercell/id/model/IdProfile;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
     .line 4
-    iget-object v0, v0, Lcom/supercell/id/model/IdProfile;->r:Ljava/lang/String;
+    iget-object v0, v0, Lcom/supercell/id/model/IdProfile;->q:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
     .line 5
-    sget-object v1, Lvd/x;->c:Lvd/x;
+    sget-object v1, Lae/b0;->e:Lae/b0;
 
-    invoke-virtual {v1, v0}, Lvd/x;->a(Ljava/lang/String;)Lse/f0;
+    invoke-virtual {v1, v0}, Lae/b0;->a(Ljava/lang/String;)Lze/e0;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;->g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;->f:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
-    sget-object v2, Lfd/a;->g:Lfd/a;
+    sget-object v2, Lkd/a;->f:Lkd/a;
 
-    invoke-static {v0, v1, v2}, Lvd/e1;->m(Lse/f0;Ljava/lang/Object;Lke/p;)Lse/f0;
+    invoke-static {v0, v1, v2}, Lae/u1;->n(Lze/e0;Ljava/lang/Object;Lre/p;)Lze/e0;
 
     .line 6
     :cond_1
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;->g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$c;->f:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
-    invoke-static {v0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->p1(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;Lwd/x;)V
+    invoke-static {v0, p1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->g1(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;Lbe/w;)V
 
     .line 7
     :cond_2
     :goto_0
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
 .end method

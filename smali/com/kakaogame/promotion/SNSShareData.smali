@@ -73,14 +73,14 @@
     const-string v2, "shareInfoMap"
 
     .line 5
-    invoke-virtual {p1, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/kakaogame/util/json/JSONObject;
 
     .line 6
-    invoke-virtual {v2}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
+    invoke-virtual {v2}, Ljava/util/AbstractMap;->keySet()Ljava/util/Set;
 
     move-result-object v3
 
@@ -106,7 +106,7 @@
 
     new-instance v6, Lcom/kakaogame/promotion/SNSShareData$ShareInfo;
 
-    invoke-virtual {v2, v4}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v7
 
@@ -122,7 +122,7 @@
     const-string v2, "webUrlMap"
 
     .line 8
-    invoke-virtual {p1, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -131,7 +131,7 @@
     const-string v3, "snsShareHostUrl"
 
     .line 9
-    invoke-virtual {v2, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v3}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -142,7 +142,7 @@
     const-string v3, "snsShareGuestUrl"
 
     .line 10
-    invoke-virtual {v2, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v3}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -164,7 +164,7 @@
     const-string v2, "seq"
 
     .line 12
-    invoke-virtual {p1, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -204,6 +204,7 @@
 
     move-result-object v1
 
+    .line 3
     invoke-virtual {v0}, Lcom/kakaogame/KGResult;->toString()Ljava/lang/String;
 
     move-result-object v2
@@ -218,14 +219,14 @@
 
     invoke-static {v2, v1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
+    .line 4
     invoke-virtual {v0}, Lcom/kakaogame/KGResult;->isSuccess()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 4
+    .line 5
     invoke-virtual {v0}, Lcom/kakaogame/KGResult;->getContent()Ljava/lang/Object;
 
     move-result-object v0
@@ -245,7 +246,6 @@
 .method public getInvitationGuestUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/promotion/SNSShareData;->snsShareGuestUrl:Ljava/lang/String;
 
     return-object v0
@@ -254,7 +254,6 @@
 .method public getInvitationHostUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/promotion/SNSShareData;->snsShareHostUrl:Ljava/lang/String;
 
     return-object v0
@@ -263,7 +262,6 @@
 .method public getSeq()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/promotion/SNSShareData;->seq:J
 
     return-wide v0
@@ -272,7 +270,6 @@
 .method public getShareData(Lcom/kakaogame/promotion/SNSShareData$SNSShareType;)Lcom/kakaogame/promotion/SNSShareData$ShareInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/promotion/SNSShareData;->shareInfoMap:Ljava/util/Map;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;

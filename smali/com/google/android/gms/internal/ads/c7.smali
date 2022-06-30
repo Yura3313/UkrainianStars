@@ -4,8 +4,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/d6;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/a0$a;I)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/d6;Lcom/google/android/gms/internal/ads/a0$a;I)V
     .locals 7
+
+    const-string v2, "PodJLO62QvFjTRyT1s1j7Q9gO2vYuekX/f9fSujDgK0lEz9+ovbaOYnK8KkglxI5"
+
+    const-string v3, "YNaCscR40XE3jUfiuSQHOi4SzYzHuKIdiPgG8VTOtns="
 
     const/16 v6, 0x30
 
@@ -13,15 +17,10 @@
 
     move-object v1, p1
 
-    move-object v2, p2
+    move-object v4, p2
 
-    move-object v3, p3
+    move v5, p3
 
-    move-object v4, p4
-
-    move v5, p5
-
-    .line 1
     invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/internal/ads/d7;-><init>(Lcom/google/android/gms/internal/ads/d6;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/a0$a;II)V
 
     return-void

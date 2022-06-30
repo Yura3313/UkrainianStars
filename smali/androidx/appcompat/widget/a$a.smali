@@ -1,9 +1,9 @@
-.class public Landroidx/appcompat/widget/a$a;
+.class public final Landroidx/appcompat/widget/a$a;
 .super Ljava/lang/Object;
 .source "AbsActionBarView.java"
 
 # interfaces
-.implements Lf0/x;
+.implements Lf0/y;
 
 
 # annotations
@@ -44,52 +44,51 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;)V
-    .locals 0
-
-    const/4 p1, 0x1
+.method public final a()V
+    .locals 2
 
     .line 1
-    iput-boolean p1, p0, Landroidx/appcompat/widget/a$a;->a:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/a$a;->a:Z
 
-    return-void
-.end method
-
-.method public b(Landroid/view/View;)V
-    .locals 1
-
-    .line 1
-    iget-boolean p1, p0, Landroidx/appcompat/widget/a$a;->a:Z
-
-    if-eqz p1, :cond_0
+    if-eqz v0, :cond_0
 
     return-void
 
     .line 2
     :cond_0
-    iget-object p1, p0, Landroidx/appcompat/widget/a$a;->c:Landroidx/appcompat/widget/a;
+    iget-object v0, p0, Landroidx/appcompat/widget/a$a;->c:Landroidx/appcompat/widget/a;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    iput-object v0, p1, Landroidx/appcompat/widget/a;->l:Lf0/w;
+    iput-object v1, v0, Landroidx/appcompat/widget/a;->k:Lf0/x;
 
     .line 3
-    iget v0, p0, Landroidx/appcompat/widget/a$a;->b:I
+    iget v1, p0, Landroidx/appcompat/widget/a$a;->b:I
 
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/a;->b(Landroidx/appcompat/widget/a;I)V
+    invoke-static {v0, v1}, Landroidx/appcompat/widget/a;->b(Landroidx/appcompat/widget/a;I)V
 
     return-void
 .end method
 
-.method public c(Landroid/view/View;)V
+.method public final b(Landroid/view/View;)V
+    .locals 0
+
+    const/4 p1, 0x1
+
+    iput-boolean p1, p0, Landroidx/appcompat/widget/a$a;->a:Z
+
+    return-void
+.end method
+
+.method public final c()V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/a$a;->c:Landroidx/appcompat/widget/a;
+    iget-object v0, p0, Landroidx/appcompat/widget/a$a;->c:Landroidx/appcompat/widget/a;
+
+    invoke-static {v0}, Landroidx/appcompat/widget/a;->a(Landroidx/appcompat/widget/a;)V
 
     const/4 v0, 0x0
-
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/a;->a(Landroidx/appcompat/widget/a;I)V
 
     .line 2
     iput-boolean v0, p0, Landroidx/appcompat/widget/a$a;->a:Z
@@ -97,13 +96,13 @@
     return-void
 .end method
 
-.method public d(Lf0/w;I)Landroidx/appcompat/widget/a$a;
+.method public final d(Lf0/x;I)Landroidx/appcompat/widget/a$a;
     .locals 1
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/a$a;->c:Landroidx/appcompat/widget/a;
 
-    iput-object p1, v0, Landroidx/appcompat/widget/a;->l:Lf0/w;
+    iput-object p1, v0, Landroidx/appcompat/widget/a;->k:Lf0/x;
 
     .line 2
     iput p2, p0, Landroidx/appcompat/widget/a$a;->b:I

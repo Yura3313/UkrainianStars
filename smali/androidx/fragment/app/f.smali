@@ -1,29 +1,28 @@
-.class public Landroidx/fragment/app/f;
+.class public final Landroidx/fragment/app/f;
 .super Ljava/lang/Object;
 .source "DefaultSpecialEffectsController.java"
 
 # interfaces
-.implements Landroid/view/animation/Animation$AnimationListener;
+.implements Lb0/a$a;
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/ViewGroup;
+.field public final synthetic a:Landroid/view/View;
 
-.field public final synthetic b:Landroid/view/View;
+.field public final synthetic b:Landroid/view/ViewGroup;
 
-.field public final synthetic c:Landroidx/fragment/app/c$b;
+.field public final synthetic c:Landroidx/fragment/app/b$b;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/c;Landroid/view/ViewGroup;Landroid/view/View;Landroidx/fragment/app/c$b;)V
+.method public constructor <init>(Landroid/view/View;Landroid/view/ViewGroup;Landroidx/fragment/app/b$b;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/fragment/app/f;->a:Landroid/view/ViewGroup;
+    iput-object p1, p0, Landroidx/fragment/app/f;->a:Landroid/view/View;
 
-    iput-object p3, p0, Landroidx/fragment/app/f;->b:Landroid/view/View;
+    iput-object p2, p0, Landroidx/fragment/app/f;->b:Landroid/view/ViewGroup;
 
-    iput-object p4, p0, Landroidx/fragment/app/f;->c:Landroidx/fragment/app/c$b;
+    iput-object p3, p0, Landroidx/fragment/app/f;->c:Landroidx/fragment/app/b$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,29 +31,25 @@
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/view/animation/Animation;)V
-    .locals 1
+.method public final a()V
+    .locals 2
 
     .line 1
-    iget-object p1, p0, Landroidx/fragment/app/f;->a:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/fragment/app/f;->a:Landroid/view/View;
 
-    new-instance v0, Landroidx/fragment/app/f$a;
+    invoke-virtual {v0}, Landroid/view/View;->clearAnimation()V
 
-    invoke-direct {v0, p0}, Landroidx/fragment/app/f$a;-><init>(Landroidx/fragment/app/f;)V
+    .line 2
+    iget-object v0, p0, Landroidx/fragment/app/f;->b:Landroid/view/ViewGroup;
 
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
+    iget-object v1, p0, Landroidx/fragment/app/f;->a:Landroid/view/View;
 
-    return-void
-.end method
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
 
-.method public onAnimationRepeat(Landroid/view/animation/Animation;)V
-    .locals 0
+    .line 3
+    iget-object v0, p0, Landroidx/fragment/app/f;->c:Landroidx/fragment/app/b$b;
 
-    return-void
-.end method
-
-.method public onAnimationStart(Landroid/view/animation/Animation;)V
-    .locals 0
+    invoke-virtual {v0}, Landroidx/fragment/app/b$c;->a()V
 
     return-void
 .end method

@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public g:Lib/c;
+.field public f:Llb/c;
 
-.field public h:Landroid/widget/RatingBar;
+.field public g:Landroid/widget/RatingBar;
 
-.field public i:Lcom/helpshift/support/widget/CSATView$a;
+.field public h:Lcom/helpshift/support/widget/CSATView$a;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     const/4 p2, 0x0
 
     .line 2
-    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->i:Lcom/helpshift/support/widget/CSATView$a;
+    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->h:Lcom/helpshift/support/widget/CSATView$a;
 
     .line 3
     sget p2, Lcom/helpshift/R$layout;->hs__csat_view:I
@@ -40,11 +40,11 @@
     invoke-static {p1, p2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     .line 4
-    new-instance p2, Lib/c;
+    new-instance p2, Llb/c;
 
-    invoke-direct {p2, p1}, Lib/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {p2, p1}, Llb/c;-><init>(Landroid/content/Context;)V
 
-    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->g:Lib/c;
+    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->f:Llb/c;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     const/4 p2, 0x0
 
     .line 6
-    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->i:Lcom/helpshift/support/widget/CSATView$a;
+    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->h:Lcom/helpshift/support/widget/CSATView$a;
 
     .line 7
     sget p2, Lcom/helpshift/R$layout;->hs__csat_view:I
@@ -66,11 +66,11 @@
     invoke-static {p1, p2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     .line 8
-    new-instance p2, Lib/c;
+    new-instance p2, Llb/c;
 
-    invoke-direct {p2, p1}, Lib/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {p2, p1}, Llb/c;-><init>(Landroid/content/Context;)V
 
-    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->g:Lib/c;
+    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->f:Llb/c;
 
     return-void
 .end method
@@ -80,63 +80,59 @@
 .method public getRatingBar()Landroid/widget/RatingBar;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/helpshift/support/widget/CSATView;->h:Landroid/widget/RatingBar;
+    iget-object v0, p0, Lcom/helpshift/support/widget/CSATView;->g:Landroid/widget/RatingBar;
 
     return-object v0
 .end method
 
-.method public onFinishInflate()V
-    .locals 3
+.method public final onFinishInflate()V
+    .locals 2
 
     .line 1
-    invoke-super {p0}, Landroid/widget/RelativeLayout;->onFinishInflate()V
+    invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 2
     sget v0, Lcom/helpshift/R$id;->ratingBar:I
 
-    invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/RatingBar;
 
-    iput-object v0, p0, Lcom/helpshift/support/widget/CSATView;->h:Landroid/widget/RatingBar;
+    iput-object v0, p0, Lcom/helpshift/support/widget/CSATView;->g:Landroid/widget/RatingBar;
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/RelativeLayout;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/helpshift/support/widget/CSATView;->h:Landroid/widget/RatingBar;
+    iget-object v1, p0, Lcom/helpshift/support/widget/CSATView;->g:Landroid/widget/RatingBar;
 
-    invoke-virtual {v1}, Landroid/widget/RatingBar;->getProgressDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1}, Landroid/widget/ProgressBar;->getProgressDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
+    invoke-static {v0, v1}, Lib/g;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)V
+
     .line 4
-    sget v2, Lcom/helpshift/R$attr;->colorAccent:I
-
-    invoke-static {v0, v1, v2}, Lcom/helpshift/util/z;->d(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
-
-    .line 5
-    iget-object v0, p0, Lcom/helpshift/support/widget/CSATView;->h:Landroid/widget/RatingBar;
+    iget-object v0, p0, Lcom/helpshift/support/widget/CSATView;->g:Landroid/widget/RatingBar;
 
     invoke-virtual {v0, p0}, Landroid/widget/RatingBar;->setOnRatingBarChangeListener(Landroid/widget/RatingBar$OnRatingBarChangeListener;)V
 
     return-void
 .end method
 
-.method public onRatingChanged(Landroid/widget/RatingBar;FZ)V
+.method public final onRatingChanged(Landroid/widget/RatingBar;FZ)V
     .locals 0
 
     if-eqz p3, :cond_0
 
     .line 1
-    iget-object p1, p0, Lcom/helpshift/support/widget/CSATView;->g:Lib/c;
+    iget-object p1, p0, Lcom/helpshift/support/widget/CSATView;->f:Llb/c;
 
     .line 2
-    iput-object p0, p1, Lib/c;->h:Lcom/helpshift/support/widget/CSATView;
+    iput-object p0, p1, Llb/c;->g:Lcom/helpshift/support/widget/CSATView;
 
     .line 3
     invoke-virtual {p0}, Lcom/helpshift/support/widget/CSATView;->getRatingBar()Landroid/widget/RatingBar;
@@ -147,7 +143,7 @@
 
     move-result p2
 
-    iput p2, p1, Lib/c;->l:F
+    iput p2, p1, Llb/c;->k:F
 
     .line 4
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
@@ -159,8 +155,7 @@
 .method public setCSATListener(Lcom/helpshift/support/widget/CSATView$a;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/helpshift/support/widget/CSATView;->i:Lcom/helpshift/support/widget/CSATView$a;
+    iput-object p1, p0, Lcom/helpshift/support/widget/CSATView;->h:Lcom/helpshift/support/widget/CSATView$a;
 
     return-void
 .end method

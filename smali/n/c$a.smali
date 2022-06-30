@@ -1,4 +1,4 @@
-.class public Ln/c$a;
+.class public final Ln/c$a;
 .super Ln/c;
 .source "Easing.java"
 
@@ -138,7 +138,7 @@
 
 
 # virtual methods
-.method public a(D)D
+.method public final a(D)D
     .locals 9
 
     const-wide/16 v0, 0x0
@@ -232,7 +232,7 @@
     return-wide p1
 .end method
 
-.method public b(D)D
+.method public final b(D)D
     .locals 9
 
     const-wide/high16 v0, 0x3fe0000000000000L    # 0.5
@@ -325,7 +325,6 @@
 
     mul-double v4, v4, p1
 
-    .line 1
     iget-wide p1, p0, Ln/c$a;->d:D
 
     mul-double p1, p1, v0
@@ -364,7 +363,6 @@
 
     mul-double v4, v4, p1
 
-    .line 1
     iget-wide p1, p0, Ln/c$a;->e:D
 
     mul-double p1, p1, v0

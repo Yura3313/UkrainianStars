@@ -53,7 +53,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,70 +60,11 @@
 
 
 # virtual methods
-.method public a(Lcom/google/android/gms/common/api/internal/a;)Lcom/google/android/gms/common/api/internal/a;
-    .locals 0
-    .param p1    # Lcom/google/android/gms/common/api/internal/a;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<A::",
-            "Lcom/google/android/gms/common/api/a$b;",
-            "R::",
-            "Lz1/g;",
-            "T:",
-            "Lcom/google/android/gms/common/api/internal/a<",
-            "TR;TA;>;>(TT;)TT;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public b(Lcom/google/android/gms/common/api/internal/a;)Lcom/google/android/gms/common/api/internal/a;
-    .locals 0
-    .param p1    # Lcom/google/android/gms/common/api/internal/a;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<A::",
-            "Lcom/google/android/gms/common/api/a$b;",
-            "T:",
-            "Lcom/google/android/gms/common/api/internal/a<",
-            "+",
-            "Lz1/g;",
-            "TA;>;>(TT;)TT;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public c()Landroid/os/Looper;
+.method public a()Landroid/os/Looper;
     .locals 1
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V

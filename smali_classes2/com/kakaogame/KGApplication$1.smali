@@ -37,7 +37,6 @@
 .method public constructor <init>(Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGApplication$1;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/KGApplication$1;->val$permission:Ljava/lang/String;
@@ -102,10 +101,10 @@
 
     const-string v1, "KGApplication"
 
-    .line 2
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    .line 1
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
-    .line 3
+    .line 2
     iget-object v0, p0, Lcom/kakaogame/KGApplication$1;->val$callback:Lcom/kakaogame/KGResultCallback;
 
     invoke-static {v0, p1}, Lcom/kakaogame/KGApplication;->access$000(Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/KGResult;)V
@@ -116,7 +115,7 @@
 .method public bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
+    .line 9
     check-cast p1, Lcom/kakaogame/KGResult;
 
     invoke-virtual {p0, p1}, Lcom/kakaogame/KGApplication$1;->onPostExecute(Lcom/kakaogame/KGResult;)V

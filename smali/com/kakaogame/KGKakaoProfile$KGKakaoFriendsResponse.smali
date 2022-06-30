@@ -55,7 +55,6 @@
 .method private static getEmptyResponse()Lcom/kakaogame/KGKakaoProfile$KGKakaoFriendsResponse;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/kakaogame/KGKakaoProfile$KGKakaoFriendsResponse;
 
     new-instance v1, Ljava/util/ArrayList;
@@ -82,7 +81,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGKakaoProfile$KGKakaoFriendsResponse;->kakaoFriendList:Ljava/util/List;
 
     return-object v0
@@ -91,7 +89,6 @@
 .method public getTotalCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/KGKakaoProfile$KGKakaoFriendsResponse;->totalCount:I
 
     return v0

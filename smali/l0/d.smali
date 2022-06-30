@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Ll0/c;F)V
+.method public constructor <init>(Ljava/lang/Object;Ll0/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -48,7 +48,7 @@
     .line 4
     new-instance p1, Ll0/e;
 
-    invoke-direct {p1, p3}, Ll0/e;-><init>(F)V
+    invoke-direct {p1}, Ll0/e;-><init>()V
 
     iput-object p1, p0, Ll0/d;->q:Ll0/e;
 
@@ -57,16 +57,15 @@
 
 
 # virtual methods
-.method public d()Ll0/e;
+.method public final d()Ll0/e;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ll0/d;->q:Ll0/e;
 
     return-object v0
 .end method
 
-.method public e()V
+.method public final e()V
     .locals 7
 
     .line 1
@@ -108,9 +107,6 @@
     float-to-double v1, v1
 
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 6
     invoke-static {v1, v2}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v1
@@ -121,10 +117,10 @@
 
     mul-double v1, v1, v4
 
-    .line 7
+    .line 6
     iput-wide v1, v0, Ll0/e;->e:D
 
-    .line 8
+    .line 7
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -135,7 +131,7 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 9
+    .line 8
     iget-boolean v0, p0, Ll0/b;->e:Z
 
     if-nez v0, :cond_3
@@ -144,10 +140,10 @@
 
     const/4 v0, 0x1
 
-    .line 10
+    .line 9
     iput-boolean v0, p0, Ll0/b;->e:Z
 
-    .line 11
+    .line 10
     iget-object v0, p0, Ll0/b;->d:Ll0/c;
 
     iget-object v1, p0, Ll0/b;->c:Ljava/lang/Object;
@@ -156,26 +152,26 @@
 
     move-result v0
 
-    .line 12
+    .line 11
     iput v0, p0, Ll0/b;->b:F
 
     cmpl-float v1, v0, v3
 
     if-gtz v1, :cond_2
 
-    .line 13
+    .line 12
     iget v1, p0, Ll0/b;->f:F
 
     cmpg-float v0, v0, v1
 
     if-ltz v0, :cond_2
 
-    .line 14
+    .line 13
     invoke-static {}, Ll0/a;->a()Ll0/a;
 
     move-result-object v0
 
-    .line 15
+    .line 14
     iget-object v1, v0, Ll0/a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
@@ -184,35 +180,32 @@
 
     if-nez v1, :cond_1
 
-    .line 16
-    iget-object v1, v0, Ll0/a;->d:Ll0/a$c;
+    .line 15
+    iget-object v1, v0, Ll0/a;->d:Ll0/a$d;
 
     if-nez v1, :cond_0
 
-    .line 17
+    .line 16
     new-instance v1, Ll0/a$d;
 
     iget-object v2, v0, Ll0/a;->c:Ll0/a$a;
 
     invoke-direct {v1, v2}, Ll0/a$d;-><init>(Ll0/a$a;)V
 
-    iput-object v1, v0, Ll0/a;->d:Ll0/a$c;
+    iput-object v1, v0, Ll0/a;->d:Ll0/a$d;
+
+    .line 17
+    :cond_0
+    iget-object v1, v0, Ll0/a;->d:Ll0/a$d;
 
     .line 18
-    :cond_0
-    iget-object v1, v0, Ll0/a;->d:Ll0/a$c;
-
-    .line 19
-    check-cast v1, Ll0/a$d;
-
-    .line 20
     iget-object v2, v1, Ll0/a$d;->b:Landroid/view/Choreographer;
 
-    iget-object v1, v1, Ll0/a$d;->c:Landroid/view/Choreographer$FrameCallback;
+    iget-object v1, v1, Ll0/a$d;->c:Ll0/a$d$a;
 
     invoke-virtual {v2, v1}, Landroid/view/Choreographer;->postFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
 
-    .line 21
+    .line 19
     :cond_1
     iget-object v1, v0, Ll0/a;->b:Ljava/util/ArrayList;
 
@@ -222,14 +215,14 @@
 
     if-nez v1, :cond_3
 
-    .line 22
+    .line 20
     iget-object v0, v0, Ll0/a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 23
+    .line 21
     :cond_2
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -243,7 +236,7 @@
     :goto_0
     return-void
 
-    .line 24
+    .line 22
     :cond_4
     new-instance v0, Landroid/util/AndroidRuntimeException;
 
@@ -253,7 +246,7 @@
 
     throw v0
 
-    .line 25
+    .line 23
     :cond_5
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -263,7 +256,7 @@
 
     throw v0
 
-    .line 26
+    .line 24
     :cond_6
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -273,7 +266,7 @@
 
     throw v0
 
-    .line 27
+    .line 25
     :cond_7
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 

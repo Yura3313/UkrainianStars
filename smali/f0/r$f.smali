@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract a(Landroid/view/View;Landroid/view/KeyEvent;)Z
+.method public abstract a()Z
 .end method

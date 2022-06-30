@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public H0:[Lq/e;
+.field public o0:[Lq/e;
 
-.field public I0:I
+.field public p0:I
 
 
 # direct methods
@@ -24,19 +24,19 @@
     new-array v0, v0, [Lq/e;
 
     .line 2
-    iput-object v0, p0, Lq/j;->H0:[Lq/e;
+    iput-object v0, p0, Lq/j;->o0:[Lq/e;
 
     const/4 v0, 0x0
 
     .line 3
-    iput v0, p0, Lq/j;->I0:I
+    iput v0, p0, Lq/j;->p0:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lq/e;)V
+.method public final a(Lq/e;)V
     .locals 3
 
     if-eq p1, p0, :cond_2
@@ -47,11 +47,11 @@
 
     .line 1
     :cond_0
-    iget v0, p0, Lq/j;->I0:I
+    iget v0, p0, Lq/j;->p0:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iget-object v1, p0, Lq/j;->H0:[Lq/e;
+    iget-object v1, p0, Lq/j;->o0:[Lq/e;
 
     array-length v2, v1
 
@@ -68,36 +68,36 @@
 
     check-cast v0, [Lq/e;
 
-    iput-object v0, p0, Lq/j;->H0:[Lq/e;
+    iput-object v0, p0, Lq/j;->o0:[Lq/e;
 
     .line 3
     :cond_1
-    iget-object v0, p0, Lq/j;->H0:[Lq/e;
+    iget-object v0, p0, Lq/j;->o0:[Lq/e;
 
-    iget v1, p0, Lq/j;->I0:I
+    iget v1, p0, Lq/j;->p0:I
 
     aput-object p1, v0, v1
 
     add-int/lit8 v1, v1, 0x1
 
     .line 4
-    iput v1, p0, Lq/j;->I0:I
+    iput v1, p0, Lq/j;->p0:I
 
     :cond_2
     :goto_0
     return-void
 .end method
 
-.method public b()V
+.method public final b()V
     .locals 2
 
     const/4 v0, 0x0
 
     .line 1
-    iput v0, p0, Lq/j;->I0:I
+    iput v0, p0, Lq/j;->p0:I
 
     .line 2
-    iget-object v0, p0, Lq/j;->H0:[Lq/e;
+    iget-object v0, p0, Lq/j;->o0:[Lq/e;
 
     const/4 v1, 0x0
 
@@ -106,7 +106,7 @@
     return-void
 .end method
 
-.method public c(Lq/f;)V
+.method public c()V
     .locals 0
 
     return-void
@@ -134,16 +134,16 @@
     const/4 v0, 0x0
 
     .line 3
-    iput v0, p0, Lq/j;->I0:I
+    iput v0, p0, Lq/j;->p0:I
 
     .line 4
-    iget v1, p1, Lq/j;->I0:I
+    iget v1, p1, Lq/j;->p0:I
 
     :goto_0
     if-ge v0, v1, :cond_0
 
     .line 5
-    iget-object v2, p1, Lq/j;->H0:[Lq/e;
+    iget-object v2, p1, Lq/j;->o0:[Lq/e;
 
     aget-object v2, v2, v0
 
@@ -163,15 +163,15 @@
     return-void
 .end method
 
-.method public q0(Ljava/util/ArrayList;ILr/o;)V
+.method public final o0(Ljava/util/ArrayList;ILr/p;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/ArrayList<",
-            "Lr/o;",
+            "Lr/p;",
             ">;I",
-            "Lr/o;",
+            "Lr/p;",
             ")V"
         }
     .end annotation
@@ -182,17 +182,17 @@
 
     .line 1
     :goto_0
-    iget v2, p0, Lq/j;->I0:I
+    iget v2, p0, Lq/j;->p0:I
 
     if-ge v1, v2, :cond_0
 
     .line 2
-    iget-object v2, p0, Lq/j;->H0:[Lq/e;
+    iget-object v2, p0, Lq/j;->o0:[Lq/e;
 
     aget-object v2, v2, v1
 
     .line 3
-    invoke-virtual {p3, v2}, Lr/o;->a(Lq/e;)Z
+    invoke-virtual {p3, v2}, Lr/p;->a(Lq/e;)Z
 
     add-int/lit8 v1, v1, 0x1
 
@@ -201,17 +201,17 @@
     .line 4
     :cond_0
     :goto_1
-    iget v1, p0, Lq/j;->I0:I
+    iget v1, p0, Lq/j;->p0:I
 
     if-ge v0, v1, :cond_1
 
     .line 5
-    iget-object v1, p0, Lq/j;->H0:[Lq/e;
+    iget-object v1, p0, Lq/j;->o0:[Lq/e;
 
     aget-object v1, v1, v0
 
     .line 6
-    invoke-static {v1, p2, p1, p3}, Lr/i;->a(Lq/e;ILjava/util/ArrayList;Lr/o;)Lr/o;
+    invoke-static {v1, p2, p1, p3}, Lr/j;->a(Lq/e;ILjava/util/ArrayList;Lr/p;)Lr/p;
 
     add-int/lit8 v0, v0, 0x1
 

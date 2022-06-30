@@ -1,9 +1,9 @@
-.class public Landroidx/viewpager2/widget/ViewPager2$h$a;
+.class public final Landroidx/viewpager2/widget/ViewPager2$h$a;
 .super Ljava/lang/Object;
 .source "ViewPager2.java"
 
 # interfaces
-.implements Lg0/d;
+.implements Lg0/e;
 
 
 # annotations
@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroidx/viewpager2/widget/ViewPager2$h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$h$a;->a:Landroidx/viewpager2/widget/ViewPager2$h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,24 +34,24 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;Lg0/d$a;)Z
-    .locals 1
+.method public final a(Landroid/view/View;)Z
+    .locals 2
 
     .line 1
     check-cast p1, Landroidx/viewpager2/widget/ViewPager2;
 
     .line 2
-    iget-object p2, p0, Landroidx/viewpager2/widget/ViewPager2$h$a;->a:Landroidx/viewpager2/widget/ViewPager2$h;
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$h$a;->a:Landroidx/viewpager2/widget/ViewPager2$h;
 
     invoke-virtual {p1}, Landroidx/viewpager2/widget/ViewPager2;->getCurrentItem()I
 
     move-result p1
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
-    add-int/2addr p1, v0
+    add-int/2addr p1, v1
 
-    invoke-virtual {p2, p1}, Landroidx/viewpager2/widget/ViewPager2$h;->c(I)V
+    invoke-virtual {v0, p1}, Landroidx/viewpager2/widget/ViewPager2$h;->b(I)V
 
-    return v0
+    return v1
 .end method

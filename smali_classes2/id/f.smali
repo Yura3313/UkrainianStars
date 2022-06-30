@@ -1,97 +1,68 @@
 .class public final Lid/f;
-.super Lle/j;
-.source "MessagesTabFriendsFragment.kt"
+.super Ljava/lang/Object;
+.source "DonationReceivedDialog.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lid/b;",
-        "Ljava/lang/Exception;",
-        "Lae/i;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final g:Lid/f;
+# instance fields
+.field public final synthetic f:Lid/e$f;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lid/e$f;)V
+    .locals 0
 
-    new-instance v0, Lid/f;
+    iput-object p1, p0, Lid/f;->f:Lid/e$f;
 
-    invoke-direct {v0}, Lid/f;-><init>()V
-
-    sput-object v0, Lid/f;->g:Lid/f;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final run()V
+    .locals 3
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [F
 
     .line 1
-    check-cast p1, Lid/b;
+    fill-array-data v0, :array_0
 
-    check-cast p2, Ljava/lang/Exception;
+    invoke-static {v0}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
-    const/4 v0, 0x0
+    move-result-object v0
 
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
+    const-wide/16 v1, 0x12c
 
     .line 2
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
+    sget-object v1, Ltc/a;->d:Landroid/view/animation/Interpolator;
 
     .line 4
-    :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "it"
+    invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    new-instance v1, Lid/f$a;
 
-    throw v0
+    invoke-direct {v1, p0}, Lid/f$a;-><init>(Lid/f;)V
 
-    :cond_2
-    const-string p1, "$receiver"
+    invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    .line 6
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
 
-    throw v0
+    return-void
+
+    :array_0
+    .array-data 4
+        0x0
+        0x3ecccccd
+    .end array-data
 .end method

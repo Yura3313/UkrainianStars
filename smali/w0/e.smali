@@ -1,4 +1,4 @@
-.class public Lw0/e;
+.class public final Lw0/e;
 .super Ljava/lang/Object;
 .source "ArgbEvaluator.java"
 
@@ -14,7 +14,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lw0/e;
 
     invoke-direct {v0}, Lw0/e;-><init>()V
@@ -27,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +33,7 @@
 
 
 # virtual methods
-.method public evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 11
 
     .line 1
@@ -170,19 +168,19 @@
 
     double-to-float p3, v7
 
-    invoke-static {v4, v0, p1, v0}, Lo/o;->a(FFFF)F
+    invoke-static {v4, v0, p1, v0}, Lo/p;->a(FFFF)F
 
     move-result v0
 
-    invoke-static {v5, v2, p1, v2}, Lo/o;->a(FFFF)F
+    invoke-static {v5, v2, p1, v2}, Lo/p;->a(FFFF)F
 
     move-result v2
 
-    invoke-static {v6, v3, p1, v3}, Lo/o;->a(FFFF)F
+    invoke-static {v6, v3, p1, v3}, Lo/p;->a(FFFF)F
 
     move-result v3
 
-    invoke-static {p3, p2, p1, p2}, Lo/o;->a(FFFF)F
+    invoke-static {p3, p2, p1, p2}, Lo/p;->a(FFFF)F
 
     move-result p1
 

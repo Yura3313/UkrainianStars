@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/ui/CustomProgressDialog$CustomProgressDialogImpl;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/ui/CustomProgressDialog$CustomProgressDialogImpl$2;->this$0:Lcom/kakaogame/ui/CustomProgressDialog$CustomProgressDialogImpl;
 
     iput-object p2, p0, Lcom/kakaogame/ui/CustomProgressDialog$CustomProgressDialogImpl$2;->val$progressView:Landroid/view/View;
@@ -42,7 +41,6 @@
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/kakaogame/ui/CustomProgressDialog$CustomProgressDialogImpl$2;->val$progressView:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->clearAnimation()V

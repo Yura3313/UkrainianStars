@@ -1,95 +1,72 @@
-.class public final enum Lc8/e;
-.super Ljava/lang/Enum;
-.source "PollerException.java"
+.class public final Lc8/e;
+.super Ljava/lang/Object;
+.source "FailedAPICallNetworkDecorator.java"
 
 # interfaces
-.implements Lc8/a;
+.implements Lc8/j;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lc8/e;",
-        ">;",
-        "Lc8/a;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum g:Lc8/e;
-
-.field public static final synthetic h:[Lc8/e;
+# instance fields
+.field public final f:Lc8/j;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>(Lc8/j;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lc8/e;->f:Lc8/j;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b(Lf8/h;)Lf8/i;
     .locals 3
 
     .line 1
-    new-instance v0, Lc8/e;
+    iget-object v0, p0, Lc8/e;->f:Lc8/j;
 
-    const-string v1, "SYNC_FAILURE_MAX_LIMIT_REACHED"
+    invoke-interface {v0, p1}, Lc8/j;->b(Lf8/h;)Lf8/i;
 
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Lc8/e;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lc8/e;->g:Lc8/e;
-
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Lc8/e;
-
-    aput-object v0, v1, v2
+    move-result-object p1
 
     .line 2
-    sput-object v1, Lc8/e;->h:[Lc8/e;
+    iget v0, p1, Lf8/i;->a:I
 
-    return-void
-.end method
+    .line 3
+    sget-object v1, Lc8/k;->l:Ljava/util/HashSet;
 
-.method public constructor <init>(Ljava/lang/String;I)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-result-object v2
 
-    return-void
-.end method
+    invoke-virtual {v1, v2}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
-.method public static valueOf(Ljava/lang/String;)Lc8/e;
-    .locals 1
+    move-result v1
 
-    .line 1
-    const-class v0, Lc8/e;
+    if-nez v1, :cond_0
 
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    return-object p1
 
-    move-result-object p0
+    .line 4
+    :cond_0
+    sget-object p1, Ld8/b;->s:Ld8/b;
 
-    check-cast p0, Lc8/e;
+    .line 5
+    iput v0, p1, Ld8/b;->f:I
 
-    return-object p0
-.end method
+    const/4 v0, 0x0
 
-.method public static values()[Lc8/e;
-    .locals 1
+    .line 6
+    invoke-static {v0, p1, v0}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
 
-    .line 1
-    sget-object v0, Lc8/e;->h:[Lc8/e;
+    move-result-object p1
 
-    invoke-virtual {v0}, [Lc8/e;->clone()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Lc8/e;
-
-    return-object v0
+    .line 7
+    throw p1
 .end method

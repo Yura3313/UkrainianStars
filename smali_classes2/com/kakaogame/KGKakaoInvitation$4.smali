@@ -35,7 +35,6 @@
 .method public constructor <init>(ILcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/KGKakaoInvitation$4;->val$eventId:I
 
     iput-object p2, p0, Lcom/kakaogame/KGKakaoInvitation$4;->val$callback:Lcom/kakaogame/KGResultCallback;

@@ -1,10 +1,10 @@
-.class public Lv0/o;
+.class public final Lv0/o;
 .super Lv0/e0;
 .source "SidePropagation.java"
 
 
 # instance fields
-.field public h:I
+.field public g:I
 
 
 # direct methods
@@ -17,14 +17,14 @@
     const/16 v0, 0x50
 
     .line 2
-    iput v0, p0, Lv0/o;->h:I
+    iput v0, p0, Lv0/o;->g:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public g(Landroid/view/ViewGroup;Landroidx/transition/Transition;Lv0/s;Lv0/s;)J
+.method public final g(Landroid/view/ViewGroup;Landroidx/transition/Transition;Lv0/s;Lv0/s;)J
     .locals 17
 
     move-object/from16 v0, p0
@@ -50,7 +50,7 @@
     if-eqz p4, :cond_2
 
     .line 2
-    invoke-virtual {v0, v1}, Lv0/e0;->m(Lv0/s;)I
+    invoke-virtual {v0, v1}, Lv0/e0;->j(Lv0/s;)I
 
     move-result v6
 
@@ -69,32 +69,32 @@
     :goto_0
     const/4 v6, -0x1
 
-    :goto_1
-    const/4 v7, 0x0
-
     .line 3
-    invoke-static {v1, v7}, Lv0/e0;->l(Lv0/s;I)I
+    :goto_1
+    invoke-virtual {v0, v1}, Lv0/e0;->k(Lv0/s;)I
 
-    move-result v8
+    move-result v7
 
     .line 4
-    invoke-static {v1, v5}, Lv0/e0;->l(Lv0/s;I)I
+    invoke-virtual {v0, v1}, Lv0/e0;->l(Lv0/s;)I
 
     move-result v1
 
-    const/4 v9, 0x2
+    const/4 v8, 0x2
 
-    new-array v10, v9, [I
+    new-array v9, v8, [I
 
-    move-object/from16 v11, p1
+    move-object/from16 v10, p1
 
     .line 5
-    invoke-virtual {v11, v10}, Landroid/view/ViewGroup;->getLocationOnScreen([I)V
+    invoke-virtual {v10, v9}, Landroid/view/View;->getLocationOnScreen([I)V
+
+    const/4 v11, 0x0
+
+    aget v12, v9, v11
 
     .line 6
-    aget v12, v10, v7
-
-    invoke-virtual/range {p1 .. p1}, Landroid/view/ViewGroup;->getTranslationX()F
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTranslationX()F
 
     move-result v13
 
@@ -104,10 +104,10 @@
 
     add-int/2addr v13, v12
 
-    .line 7
-    aget v10, v10, v5
+    aget v9, v9, v5
 
-    invoke-virtual/range {p1 .. p1}, Landroid/view/ViewGroup;->getTranslationY()F
+    .line 7
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTranslationY()F
 
     move-result v12
 
@@ -115,17 +115,17 @@
 
     move-result v12
 
-    add-int/2addr v12, v10
+    add-int/2addr v12, v9
 
     .line 8
-    invoke-virtual/range {p1 .. p1}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getWidth()I
 
-    move-result v10
+    move-result v9
 
-    add-int/2addr v10, v13
+    add-int/2addr v9, v13
 
     .line 9
-    invoke-virtual/range {p1 .. p1}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getHeight()I
 
     move-result v14
 
@@ -136,7 +136,7 @@
     .line 10
     invoke-virtual {v4}, Landroid/graphics/Rect;->centerX()I
 
-    move-result v9
+    move-result v8
 
     .line 11
     invoke-virtual {v4}, Landroid/graphics/Rect;->centerY()I
@@ -146,27 +146,27 @@
     goto :goto_2
 
     :cond_3
-    add-int v4, v13, v10
+    add-int v4, v13, v9
 
     .line 12
-    div-int/2addr v4, v9
+    div-int/2addr v4, v8
 
     add-int v15, v12, v14
 
     .line 13
-    div-int/lit8 v9, v15, 0x2
+    div-int/lit8 v8, v15, 0x2
 
-    move/from16 v16, v9
+    move/from16 v16, v8
 
-    move v9, v4
+    move v8, v4
 
     move/from16 v4, v16
 
     .line 14
     :goto_2
-    iget v15, v0, Lv0/o;->h:I
+    iget v15, v0, Lv0/o;->g:I
 
-    const v7, 0x800005
+    const v11, 0x800005
 
     const v2, 0x800003
 
@@ -195,7 +195,7 @@
     goto :goto_5
 
     :cond_5
-    if-ne v15, v7, :cond_9
+    if-ne v15, v11, :cond_9
 
     .line 17
     sget-object v15, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -247,10 +247,10 @@
     :cond_a
     sub-int/2addr v1, v12
 
-    sub-int/2addr v9, v8
+    sub-int/2addr v8, v7
 
     .line 19
-    invoke-static {v9}, Ljava/lang/Math;->abs(I)I
+    invoke-static {v8}, Ljava/lang/Math;->abs(I)I
 
     move-result v4
 
@@ -261,10 +261,10 @@
     :cond_b
     sub-int/2addr v14, v1
 
-    sub-int/2addr v9, v8
+    sub-int/2addr v8, v7
 
     .line 20
-    invoke-static {v9}, Ljava/lang/Math;->abs(I)I
+    invoke-static {v8}, Ljava/lang/Math;->abs(I)I
 
     move-result v1
 
@@ -273,7 +273,7 @@
     goto :goto_7
 
     :cond_c
-    sub-int/2addr v8, v13
+    sub-int/2addr v7, v13
 
     sub-int/2addr v4, v1
 
@@ -282,12 +282,12 @@
 
     move-result v1
 
-    add-int/2addr v1, v8
+    add-int/2addr v1, v7
 
     goto :goto_7
 
     :cond_d
-    sub-int/2addr v10, v8
+    sub-int/2addr v9, v7
 
     sub-int/2addr v4, v1
 
@@ -296,13 +296,13 @@
 
     move-result v1
 
-    add-int/2addr v1, v10
+    add-int/2addr v1, v9
 
     :goto_7
     int-to-float v1, v1
 
     .line 23
-    iget v4, v0, Lv0/o;->h:I
+    iget v4, v0, Lv0/o;->g:I
 
     if-eq v4, v3, :cond_e
 
@@ -312,10 +312,10 @@
 
     if-eq v4, v2, :cond_e
 
-    if-eq v4, v7, :cond_e
+    if-eq v4, v11, :cond_e
 
     .line 24
-    invoke-virtual/range {p1 .. p1}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getHeight()I
 
     move-result v2
 
@@ -323,7 +323,7 @@
 
     .line 25
     :cond_e
-    invoke-virtual/range {p1 .. p1}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
@@ -335,7 +335,7 @@
     move-object/from16 v2, p2
 
     .line 26
-    iget-wide v2, v2, Landroidx/transition/Transition;->i:J
+    iget-wide v2, v2, Landroidx/transition/Transition;->h:J
 
     const-wide/16 v4, 0x0
 

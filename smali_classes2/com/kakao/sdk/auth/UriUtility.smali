@@ -15,15 +15,17 @@
 
     const/4 v1, 0x1
 
-    invoke-direct {p0, v0, v1, v0}, Lcom/kakao/sdk/auth/UriUtility;-><init>(Lcom/kakao/sdk/common/model/ServerHosts;ILle/g;)V
+    invoke-direct {p0, v0, v1, v0}, Lcom/kakao/sdk/auth/UriUtility;-><init>(Lcom/kakao/sdk/common/model/ServerHosts;ILse/e;)V
 
     return-void
 .end method
 
 .method public constructor <init>(Lcom/kakao/sdk/common/model/ServerHosts;)V
-    .locals 0
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "hosts"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -31,26 +33,16 @@
     iput-object p1, p0, Lcom/kakao/sdk/auth/UriUtility;->hosts:Lcom/kakao/sdk/common/model/ServerHosts;
 
     return-void
-
-    :cond_0
-    const-string p1, "hosts"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/common/model/ServerHosts;ILle/g;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/common/model/ServerHosts;ILse/e;)V
     .locals 0
 
     and-int/lit8 p2, p2, 0x1
 
     if-eqz p2, :cond_0
 
-    .line 3
+    .line 2
     sget-object p1, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p1}, Lcom/kakao/sdk/common/KakaoSdk;->getHosts()Lcom/kakao/sdk/common/model/ServerHosts;
@@ -72,7 +64,6 @@
 
     const/4 p2, 0x0
 
-    .line 1
     :cond_0
     invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/auth/UriUtility;->accountLoginAndAuthorize(Landroid/net/Uri;Ljava/util/Map;)Landroid/net/Uri;
 
@@ -202,7 +193,6 @@
 
     move-object/from16 v6, p3
 
-    .line 1
     invoke-virtual/range {v3 .. v14}, Lcom/kakao/sdk/auth/UriUtility;->authorize(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
@@ -226,7 +216,9 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_1
+    const-string v0, "authorizeUri"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Landroid/net/Uri$Builder;
@@ -318,29 +310,13 @@
 
     const-string p2, "Uri.Builder()\n          \u2026  }\n            }.build()"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
-
-    :cond_1
-    const-string p1, "authorizeUri"
-
-    .line 9
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    goto :goto_2
-
-    :goto_1
-    throw p1
-
-    :goto_2
-    goto :goto_1
 .end method
 
 .method public final authorize(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
-    .locals 16
+    .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -369,7 +345,7 @@
         }
     .end annotation
 
-    move-object/from16 v0, p1
+    move-object v0, p1
 
     move-object/from16 v1, p2
 
@@ -381,11 +357,13 @@
 
     move-object/from16 v5, p11
 
-    const/4 v6, 0x0
+    const-string v6, "clientId"
 
-    if-eqz v0, :cond_b
+    invoke-static {p1, v6}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v2, :cond_a
+    const-string v6, "redirectUri"
+
+    invoke-static {v2, v6}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v6, Landroid/net/Uri$Builder;
@@ -399,7 +377,7 @@
 
     move-result-object v6
 
-    move-object/from16 v7, p0
+    move-object v7, p0
 
     .line 3
     iget-object v8, v7, Lcom/kakao/sdk/auth/UriUtility;->hosts:Lcom/kakao/sdk/common/model/ServerHosts;
@@ -421,7 +399,7 @@
     const-string v8, "client_id"
 
     .line 4
-    invoke-virtual {v6, v8, v0}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
+    invoke-virtual {v6, v8, p1}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     move-result-object v0
 
@@ -478,18 +456,14 @@
 
     const/4 v12, 0x0
 
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
-
-    const/16 v15, 0x3e
+    const/16 v13, 0x3e
 
     const-string v9, ","
 
     move-object/from16 v8, p4
 
     .line 9
-    invoke-static/range {v8 .. v15}, Lbe/k;->K(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lke/l;I)Ljava/lang/String;
+    invoke-static/range {v8 .. v13}, Lje/j;->E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -506,18 +480,14 @@
 
     const/4 v12, 0x0
 
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
-
-    const/16 v15, 0x3e
+    const/16 v13, 0x3e
 
     const-string v9, ","
 
     move-object/from16 v8, p6
 
     .line 10
-    invoke-static/range {v8 .. v15}, Lbe/k;->K(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lke/l;I)Ljava/lang/String;
+    invoke-static/range {v8 .. v13}, Lje/j;->E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -534,18 +504,14 @@
 
     const/4 v12, 0x0
 
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
-
-    const/16 v15, 0x3e
+    const/16 v13, 0x3e
 
     const-string v9, ","
 
     move-object/from16 v8, p7
 
     .line 11
-    invoke-static/range {v8 .. v15}, Lbe/k;->K(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lke/l;I)Ljava/lang/String;
+    invoke-static/range {v8 .. v13}, Lje/j;->E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -560,20 +526,16 @@
 
     const/4 v11, 0x0
 
-    const/4 v12, 0x0
-
-    const/4 v13, 0x0
-
     .line 12
-    sget-object v14, Lcom/kakao/sdk/auth/UriUtility$authorize$1$4$1;->INSTANCE:Lcom/kakao/sdk/auth/UriUtility$authorize$1$4$1;
+    sget-object v12, Lcom/kakao/sdk/auth/UriUtility$authorize$1$4$1;->INSTANCE:Lcom/kakao/sdk/auth/UriUtility$authorize$1$4$1;
 
-    const/16 v15, 0x1e
+    const/16 v13, 0x1e
 
     const-string v9, ","
 
     move-object/from16 v8, p8
 
-    invoke-static/range {v8 .. v15}, Lbe/k;->K(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lke/l;I)Ljava/lang/String;
+    invoke-static/range {v8 .. v13}, Lje/j;->E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -623,26 +585,7 @@
 
     const-string v1, "Uri.Builder()\n          \u2026der)\n            .build()"
 
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
-
-    :cond_a
-    move-object/from16 v7, p0
-
-    const-string v0, "redirectUri"
-
-    .line 19
-    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v6
-
-    :cond_b
-    move-object/from16 v7, p0
-
-    const-string v0, "clientId"
-
-    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v6
 .end method

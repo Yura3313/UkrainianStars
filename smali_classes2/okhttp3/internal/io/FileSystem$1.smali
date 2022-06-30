@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -217,7 +216,6 @@
 .method public exists(Ljava/io/File;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result p1
@@ -311,7 +309,6 @@
 .method public size(Ljava/io/File;)J
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->length()J
 
     move-result-wide v0
@@ -327,7 +324,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lokio/Okio;->source(Ljava/io/File;)Lokio/Source;
 
     move-result-object p1

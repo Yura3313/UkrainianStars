@@ -78,7 +78,7 @@
     if-eqz v0, :cond_0
 
     .line 4
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->putAll(Ljava/util/Map;)V
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->putAll(Ljava/util/Map;)V
 
     :cond_0
     const-string v0, "publisher"
@@ -93,7 +93,7 @@
     if-eqz v0, :cond_1
 
     .line 6
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->putAll(Ljava/util/Map;)V
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->putAll(Ljava/util/Map;)V
 
     :cond_1
     const-string v0, "appOption"
@@ -108,7 +108,7 @@
     if-eqz v0, :cond_2
 
     .line 8
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->putAll(Ljava/util/Map;)V
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->putAll(Ljava/util/Map;)V
 
     :cond_2
     const-string v0, "capriAppOption"
@@ -123,7 +123,7 @@
     if-eqz p1, :cond_3
 
     .line 10
-    invoke-virtual {p0, p1}, Ljava/util/LinkedHashMap;->putAll(Ljava/util/Map;)V
+    invoke-virtual {p0, p1}, Ljava/util/AbstractMap;->putAll(Ljava/util/Map;)V
 
     .line 11
     :cond_3
@@ -202,14 +202,14 @@
 
     .line 1
     :try_start_0
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 2
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -227,7 +227,7 @@
     move-exception v0
 
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -262,7 +262,7 @@
     const-string v1, "onlineNotifications"
 
     .line 2
-    invoke-virtual {p0, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -271,7 +271,7 @@
     if-eqz v1, :cond_0
 
     .line 3
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v1}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
@@ -323,7 +323,7 @@
     const-string v1, "notices"
 
     .line 2
-    invoke-virtual {p0, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -332,7 +332,7 @@
     if-eqz v1, :cond_0
 
     .line 3
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v1}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
@@ -432,7 +432,6 @@
 .method public getServerTimestamp()J
     .locals 4
 
-    .line 1
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
@@ -481,7 +480,7 @@
     move-exception v1
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -507,7 +506,7 @@
 
     const-string v1, "getDataTime"
 
-    invoke-virtual {p0, v1, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v1, v0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

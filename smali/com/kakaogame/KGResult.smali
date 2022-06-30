@@ -567,8 +567,7 @@
 
     const-string v0, "code"
 
-    .line 1
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -591,8 +590,7 @@
 
     const-string v0, "content"
 
-    .line 1
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -605,7 +603,7 @@
     const-string v0, "desc"
 
     .line 1
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -633,7 +631,7 @@
     const-string v0, "message"
 
     .line 1
-    invoke-virtual {p0, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -645,7 +643,6 @@
 .method public isNeedToWaitError()Z
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/kakaogame/KGResult;->getCode()I
 
     move-result v0
@@ -686,7 +683,6 @@
 .method public isNetworkError()Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/kakaogame/KGResult;->getCode()I
 
     move-result v0
@@ -720,7 +716,6 @@
 .method public isSuccess()Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/kakaogame/KGResult;->getCode()I
 
     move-result v0
@@ -757,7 +752,7 @@
     .locals 1
 
     .line 2
-    invoke-super {p0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-super {p0, p1, p2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
@@ -794,7 +789,6 @@
 
     const-string v0, "message"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lcom/kakaogame/KGResult;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
@@ -804,7 +798,6 @@
 .method public toJSONString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/util/json/JSONValue;->toJSONString(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -829,6 +822,7 @@
 
     move-result-object v0
 
+    .line 3
     invoke-virtual {p0}, Lcom/kakaogame/KGResult;->getContent()Ljava/lang/Object;
 
     move-result-object v1
@@ -860,11 +854,12 @@
     :cond_1
     const-string v0, "KGResult [code="
 
-    .line 3
+    .line 4
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 5
     invoke-virtual {p0}, Lcom/kakaogame/KGResult;->getCode()I
 
     move-result v1

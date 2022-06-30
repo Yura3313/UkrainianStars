@@ -227,17 +227,19 @@
 
     aget-object v10, v11, v10
 
-    invoke-static {v13, v10, v8}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 12
+    invoke-static {v13, v10, v8}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
+    .line 13
     aput-object v8, v11, v12
 
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 12
+    .line 14
     :cond_1
     sget-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
@@ -245,19 +247,19 @@
 
     aput-object v10, v0, v6
 
-    .line 13
+    .line 15
     aput-object v4, v0, v9
 
     const/16 v4, 0x24
 
     const-string v6, "END_HEADERS|PRIORITY"
 
-    .line 14
+    .line 16
     aput-object v6, v0, v4
 
     new-array v0, v5, [I
 
-    .line 15
+    .line 17
     fill-array-data v0, :array_0
 
     const/4 v4, 0x0
@@ -265,7 +267,7 @@
     :goto_2
     if-ge v4, v5, :cond_3
 
-    .line 16
+    .line 18
     aget v6, v0, v4
 
     const/4 v9, 0x0
@@ -273,10 +275,10 @@
     :goto_3
     if-ge v9, v3, :cond_2
 
-    .line 17
+    .line 19
     aget v10, v1, v9
 
-    .line 18
+    .line 20
     sget-object v11, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
     or-int v12, v10, v6
@@ -305,7 +307,7 @@
 
     or-int/2addr v12, v7
 
-    .line 19
+    .line 21
     new-instance v13, Ljava/lang/StringBuilder;
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
@@ -318,10 +320,12 @@
 
     aget-object v10, v11, v6
 
-    invoke-static {v13, v10, v8}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 22
+    invoke-static {v13, v10, v8}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
+    .line 23
     aput-object v10, v11, v12
 
     add-int/lit8 v9, v9, 0x1
@@ -333,7 +337,7 @@
 
     goto :goto_2
 
-    .line 20
+    .line 24
     :cond_3
     :goto_4
     sget-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
@@ -342,7 +346,7 @@
 
     if-ge v2, v1, :cond_5
 
-    .line 21
+    .line 25
     aget-object v1, v0, v2
 
     if-nez v1, :cond_4
@@ -372,7 +376,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -586,7 +589,6 @@
 .method public static varargs illegalArgument(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-static {p0, p1}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
@@ -606,7 +608,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/io/IOException;
 
     invoke-static {p0, p1}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;

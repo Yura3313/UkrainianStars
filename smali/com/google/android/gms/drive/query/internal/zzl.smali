@@ -15,17 +15,16 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Ls2/g;
+    new-instance v0, Lt2/g;
 
-    invoke-direct {v0}, Ls2/g;-><init>()V
+    invoke-direct {v0}, Lt2/g;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/query/internal/zzl;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -39,42 +38,40 @@
     invoke-direct {p0}, Lcom/google/android/gms/drive/query/internal/zza;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzl;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzl;->f:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final B1(Lj3/y1;)Ljava/lang/Object;
+.method public final I1(Lef/t;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
             "Ljava/lang/Object;",
             ">(",
-            "Lj3/y1;",
+            "Lef/t;",
             ")TF;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/query/internal/zzl;->g:Ljava/lang/String;
+    iget-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzl;->f:Ljava/lang/String;
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v0, 0x1
 
-    const/4 p1, 0x1
-
-    new-array p1, p1, [Ljava/lang/Object;
+    new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
 
-    aput-object v0, p1, v1
+    aput-object p1, v0, v1
 
-    const-string v0, "fullTextSearch(%s)"
+    const-string p1, "fullTextSearch(%s)"
 
     .line 2
-    invoke-static {v0, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -87,21 +84,21 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x1
-
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzl;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/query/internal/zzl;->f:Ljava/lang/String;
+
+    const/4 v1, 0x1
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 3
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

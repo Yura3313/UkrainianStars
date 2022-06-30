@@ -95,6 +95,7 @@
 
     move-result-object v0
 
+    .line 9
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v2
@@ -109,7 +110,7 @@
 
     invoke-static {v2, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
+    .line 10
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -130,7 +131,7 @@
 
     const-string v2, "noticeType"
 
-    .line 10
+    .line 11
     invoke-virtual {v0, v2}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -143,7 +144,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 11
+    .line 12
     sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     invoke-virtual {p0, v1, v0}, Lcom/kakaogame/KGObject;->put(Ljava/lang/String;Ljava/lang/Object;)V

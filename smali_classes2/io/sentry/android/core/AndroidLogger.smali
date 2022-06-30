@@ -14,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,7 +22,6 @@
 .method private toLogcatLevel(Lio/sentry/SentryLevel;)I
     .locals 2
 
-    .line 1
     sget-object v0, Lio/sentry/android/core/AndroidLogger$1;->$SwitchMap$io$sentry$SentryLevel:[I
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I

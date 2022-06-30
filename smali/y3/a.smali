@@ -1,347 +1,355 @@
-.class public final Ly3/a;
-.super Ly3/y1;
+.class public Ly3/a;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
+
+# interfaces
+.implements Lz3/g1;
 
 
 # instance fields
-.field public final h:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Long;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final i:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public j:J
+.field public final a:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Ly3/q0;)V
+.method public synthetic constructor <init>(Lv3/s4;)V
+    .locals 0
+
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    iput-object p1, p0, Ly3/a;->a:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lz3/p0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Ly3/y1;-><init>(Ly3/q0;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance p1, Lm/a;
-
-    invoke-direct {p1}, Lm/a;-><init>()V
-
-    iput-object p1, p0, Ly3/a;->i:Ljava/util/Map;
+    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    new-instance p1, Lm/a;
-
-    invoke-direct {p1}, Lm/a;-><init>()V
-
-    iput-object p1, p0, Ly3/a;->h:Ljava/util/Map;
+    iput-object p1, p0, Ly3/a;->a:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final D(JLy3/v1;)V
-    .locals 3
-
-    if-nez p3, :cond_0
+.method public final a()Lk3/c9;
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lx3/a;->e()Ly3/o;
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    move-result-object p1
+    check-cast v0, Lz3/p0;
 
     .line 2
-    iget-object p1, p1, Ly3/o;->t:Ly3/q;
+    iget-object v0, v0, Lz3/p0;->f:Lk3/c9;
 
-    const-string p2, "Not logging ad exposure. No active activity"
+    return-object v0
+.end method
 
-    .line 3
-    invoke-virtual {p1, p2}, Ly3/q;->a(Ljava/lang/String;)V
+.method public final b()Lz3/l0;
+    .locals 1
 
-    return-void
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    :cond_0
-    const-wide/16 v0, 0x3e8
+    check-cast v0, Lz3/p0;
 
-    cmp-long v2, p1, v0
+    invoke-virtual {v0}, Lz3/p0;->b()Lz3/l0;
 
-    if-gez v2, :cond_1
+    move-result-object v0
 
-    .line 4
-    invoke-virtual {p0}, Lx3/a;->e()Ly3/o;
+    return-object v0
+.end method
 
-    move-result-object p3
+.method public final d()Ll2/c;
+    .locals 1
 
-    .line 5
-    iget-object p3, p3, Ly3/o;->t:Ly3/q;
+    .line 1
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    .line 6
-    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    check-cast v0, Lz3/p0;
 
-    move-result-object p1
+    .line 2
+    iget-object v0, v0, Lz3/p0;->o:Ll2/d;
 
-    const-string p2, "Not logging ad exposure. Less than 1000 ms. exposure"
+    return-object v0
+.end method
 
-    invoke-virtual {p3, p2, p1}, Ly3/q;->d(Ljava/lang/String;Ljava/lang/Object;)V
+.method public final e()Lz3/o;
+    .locals 1
 
-    return-void
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    .line 7
-    :cond_1
-    new-instance v0, Landroid/os/Bundle;
+    check-cast v0, Lz3/p0;
 
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+    invoke-virtual {v0}, Lz3/p0;->e()Lz3/o;
 
-    const-string v1, "_xt"
+    move-result-object v0
 
-    .line 8
-    invoke-virtual {v0, v1, p1, p2}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    return-object v0
+.end method
 
-    const/4 p1, 0x1
+.method public f(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    .locals 2
 
-    .line 9
-    invoke-static {p3, v0, p1}, Ly3/w1;->I(Ly3/v1;Landroid/os/Bundle;Z)V
+    .line 1
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    .line 10
-    invoke-virtual {p0}, Ly3/y1;->x()Ly3/l1;
+    check-cast v0, Lv3/s4;
 
-    move-result-object p1
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    const-string p2, "am"
+    .line 2
+    new-instance v1, Lv3/x5;
 
-    const-string p3, "_xa"
+    invoke-direct {v1, v0, p1, p2, p3}, Lv3/x5;-><init>(Lv3/s4;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
 
-    invoke-virtual {p1, p2, p3, v0}, Ly3/l1;->l(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-virtual {v0, v1}, Lv3/s4;->f(Lv3/s4$a;)V
 
     return-void
 .end method
 
-.method public final E(Ljava/lang/String;JLy3/v1;)V
-    .locals 3
+.method public g(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
+    .locals 1
 
-    if-nez p4, :cond_0
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+
+    check-cast v0, Lv3/s4;
+
+    invoke-virtual {v0, p1, p2}, Lv3/s4;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final getContext()Landroid/content/Context;
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lx3/a;->e()Ly3/o;
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    move-result-object p1
+    check-cast v0, Lz3/p0;
 
     .line 2
-    iget-object p1, p1, Ly3/o;->t:Ly3/q;
+    iget-object v0, v0, Lz3/p0;->a:Landroid/content/Context;
 
-    const-string p2, "Not logging ad unit exposure. No active activity"
+    return-object v0
+.end method
 
-    .line 3
-    invoke-virtual {p1, p2}, Ly3/q;->a(Ljava/lang/String;)V
+.method public h()Ljava/lang/String;
+    .locals 1
 
-    return-void
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    :cond_0
-    const-wide/16 v0, 0x3e8
+    check-cast v0, Lv3/s4;
 
-    cmp-long v2, p2, v0
+    invoke-virtual {v0}, Lv3/s4;->n()Ljava/lang/String;
 
-    if-gez v2, :cond_1
+    move-result-object v0
 
-    .line 4
-    invoke-virtual {p0}, Lx3/a;->e()Ly3/o;
+    return-object v0
+.end method
 
-    move-result-object p1
+.method public i()Ljava/lang/String;
+    .locals 1
 
-    .line 5
-    iget-object p1, p1, Ly3/o;->t:Ly3/q;
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    .line 6
-    invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    check-cast v0, Lv3/s4;
 
-    move-result-object p2
+    invoke-virtual {v0}, Lv3/s4;->m()Ljava/lang/String;
 
-    const-string p3, "Not logging ad unit exposure. Less than 1000 ms. exposure"
+    move-result-object v0
 
-    invoke-virtual {p1, p3, p2}, Ly3/q;->d(Ljava/lang/String;Ljava/lang/Object;)V
+    return-object v0
+.end method
 
-    return-void
+.method public j()Ljava/lang/String;
+    .locals 1
 
-    .line 7
-    :cond_1
-    new-instance v0, Landroid/os/Bundle;
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+    check-cast v0, Lv3/s4;
 
-    const-string v1, "_ai"
+    invoke-virtual {v0}, Lv3/s4;->h()Ljava/lang/String;
 
-    .line 8
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object v0
 
-    const-string p1, "_xt"
+    return-object v0
+.end method
 
-    .line 9
-    invoke-virtual {v0, p1, p2, p3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+.method public k(Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Map;
+    .locals 1
 
-    const/4 p1, 0x1
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    .line 10
-    invoke-static {p4, v0, p1}, Ly3/w1;->I(Ly3/v1;Landroid/os/Bundle;Z)V
+    check-cast v0, Lv3/s4;
 
-    .line 11
-    invoke-virtual {p0}, Ly3/y1;->x()Ly3/l1;
+    invoke-virtual {v0, p1, p2, p3}, Lv3/s4;->c(Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Map;
 
     move-result-object p1
 
-    const-string p2, "am"
+    return-object p1
+.end method
 
-    const-string p3, "_xu"
+.method public l(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    .locals 2
 
-    invoke-virtual {p1, p2, p3, v0}, Ly3/l1;->l(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    .line 1
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+
+    check-cast v0, Lv3/s4;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    new-instance v1, Lv3/p;
+
+    invoke-direct {v1, v0, p1, p2, p3}, Lv3/p;-><init>(Lv3/s4;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+
+    invoke-virtual {v0, v1}, Lv3/s4;->f(Lv3/s4$a;)V
 
     return-void
 .end method
 
-.method public final F(J)V
-    .locals 5
+.method public m(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Ly3/y1;->A()Ly3/w1;
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    move-result-object v0
+    check-cast v0, Lv3/s4;
 
-    invoke-virtual {v0}, Ly3/w1;->M()Ly3/v1;
-
-    move-result-object v0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    iget-object v1, p0, Ly3/a;->h:Ljava/util/Map;
+    new-instance v1, Lv3/c;
 
-    invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
+    invoke-direct {v1, v0, p1, p2, p3}, Lv3/c;-><init>(Lv3/s4;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v1
-
-    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    .line 3
-    iget-object v3, p0, Ly3/a;->h:Ljava/util/Map;
-
-    invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/Long;
-
-    invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v3
-
-    sub-long v3, p1, v3
-
-    .line 4
-    invoke-virtual {p0, v2, v3, v4, v0}, Ly3/a;->E(Ljava/lang/String;JLy3/v1;)V
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    iget-object v1, p0, Ly3/a;->h:Ljava/util/Map;
-
-    invoke-interface {v1}, Ljava/util/Map;->isEmpty()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    .line 6
-    iget-wide v1, p0, Ly3/a;->j:J
-
-    sub-long v1, p1, v1
-
-    invoke-virtual {p0, v1, v2, v0}, Ly3/a;->D(JLy3/v1;)V
-
-    .line 7
-    :cond_1
-    invoke-virtual {p0, p1, p2}, Ly3/a;->G(J)V
+    invoke-virtual {v0, v1}, Lv3/s4;->f(Lv3/s4$a;)V
 
     return-void
 .end method
 
-.method public final G(J)V
-    .locals 4
+.method public n()V
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->b()Lz3/l0;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lz3/l0;->n()V
+
+    return-void
+.end method
+
+.method public o()V
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    return-void
+.end method
+
+.method public p()V
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->b()Lz3/l0;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lz3/l0;->p()V
+
+    return-void
+.end method
+
+.method public final q()Lz3/b;
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->p()Lz3/b;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final r()Lz3/m;
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->q()Lz3/m;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final s()Lz3/f3;
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->r()Lz3/f3;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final t()Lz3/y;
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->s()Lz3/y;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final u()Lz3/m3;
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Ly3/a;->h:Ljava/util/Map;
+    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
 
-    invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
+    check-cast v0, Lz3/p0;
 
     .line 2
-    iget-object v2, p0, Ly3/a;->h:Ljava/util/Map;
+    iget-object v0, v0, Lz3/p0;->g:Lz3/m3;
 
-    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v3
-
-    invoke-interface {v2, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Ly3/a;->h:Ljava/util/Map;
-
-    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 4
-    iput-wide p1, p0, Ly3/a;->j:J
-
-    :cond_1
-    return-void
+    return-object v0
 .end method

@@ -1,40 +1,13 @@
-.class public Ll9/a;
-.super Ljava/lang/Object;
-.source "LegacyProfileDbMigration_1_to_2.java"
-
-# interfaces
-.implements Lf9/d;
+.class public final Ll9/a;
+.super Lh9/a;
+.source "KeyValueDbStorageHelper.java"
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>(Landroid/content/Context;Lh9/b;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(Landroid/database/sqlite/SQLiteDatabase;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-
-    const-string v0, "ALTER TABLE profiles ADD uid TEXT"
-
-    .line 1
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "ALTER TABLE profiles ADD did TEXT"
-
-    .line 2
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lh9/a;-><init>(Landroid/content/Context;Lh9/b;)V
 
     return-void
 .end method

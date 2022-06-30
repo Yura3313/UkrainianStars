@@ -53,10 +53,12 @@
 
     const-string p3, "_"
 
+    .line 1
     invoke-static {p1, p3}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
+    .line 2
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p3
@@ -275,10 +277,12 @@
 
     const-string v1, "\t ContextName = \""
 
+    .line 1
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 2
     iget-object v2, p0, Lcom/unbotify/mobile/sdk/engine/features/Flow;->contextReport:Lcom/unbotify/mobile/sdk/reports/ContextReport;
 
     iget-object v2, v2, Lcom/unbotify/mobile/sdk/reports/ContextReport;->contextName:Ljava/lang/String;
@@ -560,10 +564,12 @@
 
     const-string p3, "[!] ERROR: ContextName = \""
 
+    .line 1
     invoke-static {p3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p3
 
+    .line 2
     iget-object p4, p0, Lcom/unbotify/mobile/sdk/engine/features/Flow;->contextReport:Lcom/unbotify/mobile/sdk/reports/ContextReport;
 
     iget-object p4, p4, Lcom/unbotify/mobile/sdk/reports/ContextReport;->contextName:Ljava/lang/String;
@@ -593,10 +599,12 @@
 
     const-string p3, "\t[END CONTEXT] = \""
 
+    .line 3
     invoke-static {p3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p3
 
+    .line 4
     iget-object p4, p0, Lcom/unbotify/mobile/sdk/engine/features/Flow;->contextReport:Lcom/unbotify/mobile/sdk/reports/ContextReport;
 
     iget-object p4, p4, Lcom/unbotify/mobile/sdk/reports/ContextReport;->contextName:Ljava/lang/String;
@@ -737,10 +745,12 @@
 
     const-string v3, "[!] ERROR: ContextName = \""
 
+    .line 1
     invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
+    .line 2
     iget-object v4, v12, Lcom/unbotify/mobile/sdk/engine/features/Flow;->contextReport:Lcom/unbotify/mobile/sdk/reports/ContextReport;
 
     iget-object v4, v4, Lcom/unbotify/mobile/sdk/reports/ContextReport;->contextName:Ljava/lang/String;
@@ -774,10 +784,12 @@
 
     const-string v3, "\t[END CONTEXT] = \""
 
+    .line 3
     invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
+    .line 4
     iget-object v4, v12, Lcom/unbotify/mobile/sdk/engine/features/Flow;->contextReport:Lcom/unbotify/mobile/sdk/reports/ContextReport;
 
     iget-object v4, v4, Lcom/unbotify/mobile/sdk/reports/ContextReport;->contextName:Ljava/lang/String;
@@ -812,10 +824,12 @@
 
     const-string v3, "\t[START CONTEXT] = \""
 
+    .line 5
     invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
+    .line 6
     iget-object v4, v0, Lcom/unbotify/mobile/sdk/contexts/UnbotifyContext;->contextName:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -877,10 +891,12 @@
 
     const-string v2, "Error: At Flow = "
 
+    .line 7
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 8
     iget-object v3, v12, Lcom/unbotify/mobile/sdk/engine/listeners/OnFlowListener;->name:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -889,7 +905,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -944,10 +960,12 @@
 
     const-string v1, "\t ContextName = \""
 
+    .line 1
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 2
     iget-object v2, p0, Lcom/unbotify/mobile/sdk/engine/features/Flow;->contextReport:Lcom/unbotify/mobile/sdk/reports/ContextReport;
 
     iget-object v2, v2, Lcom/unbotify/mobile/sdk/reports/ContextReport;->contextName:Ljava/lang/String;
@@ -1004,10 +1022,12 @@
 
     const-string v1, "\t ContextName = \""
 
+    .line 1
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 2
     iget-object v2, p0, Lcom/unbotify/mobile/sdk/engine/features/Flow;->contextReport:Lcom/unbotify/mobile/sdk/reports/ContextReport;
 
     iget-object v2, v2, Lcom/unbotify/mobile/sdk/reports/ContextReport;->contextName:Ljava/lang/String;

@@ -4,14 +4,13 @@
 
 
 # instance fields
-.field public g:Lcom/google/android/gms/internal/ads/zzwl;
+.field public f:Lcom/google/android/gms/internal/ads/zzwl;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzwq;-><init>()V
 
     return-void
@@ -19,7 +18,7 @@
 
 
 # virtual methods
-.method public final C3(Lcom/google/android/gms/internal/ads/zzaiz;)V
+.method public final B3(Lcom/google/android/gms/internal/ads/zzaex;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -30,21 +29,7 @@
     return-void
 .end method
 
-.method public final K3(Lcom/google/android/gms/internal/ads/zzwl;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    .line 1
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzg;->g:Lcom/google/android/gms/internal/ads/zzwl;
-
-    return-void
-.end method
-
-.method public final N1(Lcom/google/android/gms/internal/ads/zzafl;)V
+.method public final J3(Lcom/google/android/gms/internal/ads/zzaiz;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -55,7 +40,7 @@
     return-void
 .end method
 
-.method public final V3(Lcom/google/android/gms/internal/ads/zzair;)V
+.method public final Q1(Lcom/google/android/gms/internal/ads/zzafl;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -66,7 +51,31 @@
     return-void
 .end method
 
-.method public final Y6(Lcom/google/android/gms/internal/ads/zzafk;Lcom/google/android/gms/internal/ads/zzvj;)V
+.method public final R3(Lcom/google/android/gms/internal/ads/zzwl;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzg;->f:Lcom/google/android/gms/internal/ads/zzwl;
+
+    return-void
+.end method
+
+.method public final S6(Lcom/google/android/gms/internal/ads/zzafk;Lcom/google/android/gms/internal/ads/zzvj;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public final a4(Lcom/google/android/gms/internal/ads/zzair;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -78,19 +87,16 @@
 .end method
 
 .method public final a5()Lcom/google/android/gms/internal/ads/zzwm;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    .line 1
-    new-instance v0, Lj3/g61;
+    new-instance v0, Lk3/x51;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lj3/g61;-><init>(Lcom/google/android/gms/internal/ads/zzzg;Lj3/tj;)V
+    invoke-direct {v0, p0}, Lk3/x51;-><init>(Lcom/google/android/gms/internal/ads/zzzg;)V
 
     return-object v0
 .end method
@@ -106,18 +112,7 @@
     return-void
 .end method
 
-.method public final k4(Lcom/google/android/gms/internal/ads/zzaew;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public final m2(Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;)V
+.method public final l4(Lcom/google/android/gms/internal/ads/zzaew;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -139,7 +134,7 @@
     return-void
 .end method
 
-.method public final p2(Lcom/google/android/gms/internal/ads/zzadm;)V
+.method public final p2(Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -150,7 +145,7 @@
     return-void
 .end method
 
-.method public final s3(Lcom/google/android/gms/internal/ads/zzaex;)V
+.method public final t2(Lcom/google/android/gms/internal/ads/zzadm;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

@@ -1,19 +1,34 @@
-.class public interface abstract Lob/a;
+.class public final Lob/a;
 .super Ljava/lang/Object;
-.source "BarcodeCallback.java"
+.source "HSBottomSheet.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic f:Lob/c;
+
+
+# direct methods
+.method public constructor <init>(Lob/c;)V
+    .locals 0
+
+    iput-object p1, p0, Lob/a;->f:Lob/c;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract a(Lob/b;)V
-.end method
+.method public final run()V
+    .locals 1
 
-.method public abstract b(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lc6/l;",
-            ">;)V"
-        }
-    .end annotation
+    iget-object v0, p0, Lob/a;->f:Lob/c;
+
+    invoke-virtual {v0}, Lob/c;->c()V
+
+    return-void
 .end method

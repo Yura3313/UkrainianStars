@@ -31,13 +31,13 @@
 
 
 # virtual methods
-.method public abstract C()Z
+.method public abstract N()Z
 .end method
 
-.method public abstract k()V
+.method public abstract d()V
 .end method
 
-.method public abstract o(I)Lcom/google/protobuf/a0$i;
+.method public abstract l(I)Lcom/google/protobuf/a0$i;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",

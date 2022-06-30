@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$a;
-.super Lle/j;
+.super Lse/h;
 .source "OnboardingFlow.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,73 +18,73 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
+        "Lse/h;",
+        "Lre/a<",
         "[",
-        "Lke/a<",
+        "Lre/a<",
         "+",
-        "Lrc/w;",
+        "Lwc/w;",
         ">;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$a;->g:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$a;->f:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
+.method public final invoke()Ljava/lang/Object;
     .locals 6
 
     const/4 v0, 0x4
 
-    new-array v0, v0, [Lke/a;
+    new-array v0, v0, [Lre/a;
 
     .line 1
-    sget-object v1, Lcom/supercell/id/ui/onboarding/a;->g:Lcom/supercell/id/ui/onboarding/a;
+    sget-object v1, Lcom/supercell/id/ui/onboarding/a;->f:Lcom/supercell/id/ui/onboarding/a;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
     .line 2
-    sget-object v1, Lcom/supercell/id/ui/onboarding/b;->g:Lcom/supercell/id/ui/onboarding/b;
+    sget-object v1, Lcom/supercell/id/ui/onboarding/b;->f:Lcom/supercell/id/ui/onboarding/b;
 
     const/4 v3, 0x1
 
     aput-object v1, v0, v3
 
     .line 3
-    sget-object v1, Lcom/supercell/id/ui/onboarding/c;->g:Lcom/supercell/id/ui/onboarding/c;
+    sget-object v1, Lcom/supercell/id/ui/onboarding/c;->f:Lcom/supercell/id/ui/onboarding/c;
 
     const/4 v3, 0x2
 
     aput-object v1, v0, v3
 
     .line 4
-    sget-object v1, Lcom/supercell/id/ui/onboarding/d;->g:Lcom/supercell/id/ui/onboarding/d;
+    sget-object v1, Lcom/supercell/id/ui/onboarding/d;->f:Lcom/supercell/id/ui/onboarding/d;
 
-    iget-object v3, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$a;->g:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
+    iget-object v3, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$a;->f:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
 
-    sget v4, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->o0:I
+    sget v4, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->m0:I
 
     .line 5
-    invoke-static {v3}, Lrc/b;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {v3}, La2/j;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v3
 
@@ -111,7 +111,7 @@
     :goto_0
     sget-object v5, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {v3, v5}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -128,11 +128,11 @@
     aput-object v1, v0, v3
 
     .line 9
-    invoke-static {v0}, Lb5/m;->o([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/billingclient/api/z;->k([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
-    new-array v1, v2, [Lke/a;
+    new-array v1, v2, [Lre/a;
 
     .line 10
     check-cast v0, Ljava/util/ArrayList;
@@ -143,7 +143,7 @@
 
     if-eqz v0, :cond_2
 
-    check-cast v0, [Lke/a;
+    check-cast v0, [Lre/a;
 
     return-object v0
 

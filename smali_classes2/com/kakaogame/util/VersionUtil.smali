@@ -11,7 +11,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -20,7 +19,6 @@
 .method public static getAPIVersion()I
     .locals 1
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     return v0
@@ -57,7 +55,6 @@
 .method public static getOSVersion()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
 
     return-object v0

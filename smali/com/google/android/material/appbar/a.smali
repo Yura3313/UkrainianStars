@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/appbar/a;
+.class public final Lcom/google/android/material/appbar/a;
 .super Ljava/lang/Object;
 .source "AppBarLayout.java"
 
@@ -7,15 +7,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lr4/g;
+.field public final synthetic f:Ls4/g;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/appbar/AppBarLayout;Lr4/g;)V
+.method public constructor <init>(Ls4/g;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Lcom/google/android/material/appbar/a;->g:Lr4/g;
+    iput-object p1, p0, Lcom/google/android/material/appbar/a;->f:Ls4/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,11 +23,10 @@
 
 
 # virtual methods
-.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/appbar/a;->g:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/appbar/a;->f:Ls4/g;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -40,7 +38,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lr4/g;->p(F)V
+    invoke-virtual {v0, p1}, Ls4/g;->n(F)V
 
     return-void
 .end method

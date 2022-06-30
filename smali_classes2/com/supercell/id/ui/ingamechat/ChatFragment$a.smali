@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
-.super Lvd/q;
+.super Lae/s;
 .source "IngameChatFragment.kt"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lvd/q<",
+        "Lae/s<",
         "Lcom/supercell/id/ui/ingamechat/ChatFragment;",
         ">;"
     }
@@ -23,149 +23,148 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/ingamechat/ChatFragment;Ljava/util/List;)V
-    .locals 0
+.method public constructor <init>(Lcom/supercell/id/ui/ingamechat/ChatFragment;)V
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/supercell/id/ui/ingamechat/ChatFragment;",
             "Ljava/util/List<",
             "+",
-            "Lvd/j1;",
+            "Lae/b2;",
             ">;)V"
         }
     .end annotation
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Lvd/q;-><init>(Landroidx/fragment/app/Fragment;Ljava/util/List;)V
+    sget-object v0, Lje/l;->f:Lje/l;
+
+    const-string v1, "fragment"
+
+    invoke-static {p1, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0, p1, v0}, Lae/s;-><init>(Landroidx/fragment/app/Fragment;Ljava/util/List;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public i(Lvd/k1$a;ILvd/j1;)V
-    .locals 8
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_13
-
-    if-eqz p3, :cond_12
+.method public final n(Lae/c2$a;ILae/b2;)V
+    .locals 7
 
     .line 1
-    iget-object p1, p1, Lvd/k1$a;->B:Landroid/view/View;
+    iget-object p1, p1, Lae/c2$a;->A:Landroid/view/View;
 
     .line 2
-    instance-of v1, p3, Led/a;
+    instance-of v0, p3, Ljd/a;
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    if-eqz v1, :cond_f
+    if-eqz v0, :cond_e
 
     .line 3
-    sget-object v1, Led/f;->a:Lvd/j;
+    sget-object v0, Ljd/h;->a:Lae/k;
 
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
     if-eqz p2, :cond_0
 
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     :goto_0
-    if-eqz v3, :cond_1
+    if-eqz v2, :cond_1
 
     invoke-virtual {p1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v3
+    move-result-object v2
 
     .line 4
-    sget v4, Lcom/supercell/id/R$dimen;->list_padding_horizontal:I
+    sget v3, Lcom/supercell/id/R$dimen;->list_padding_horizontal:I
 
     .line 5
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
-    move-result v3
+    move-result v2
 
     goto :goto_1
 
     :cond_1
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 6
     :goto_1
-    iget-object v4, p0, Lvd/k1;->d:Ljava/util/List;
+    iget-object v3, p0, Lae/c2;->d:Ljava/util/List;
 
     .line 7
-    invoke-interface {v4}, Ljava/util/List;->size()I
+    invoke-interface {v3}, Ljava/util/List;->size()I
 
-    move-result v4
+    move-result v3
 
-    sub-int/2addr v4, v1
+    sub-int/2addr v3, v0
 
-    if-eq p2, v4, :cond_2
+    if-eq p2, v3, :cond_2
 
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
     goto :goto_2
 
     :cond_2
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
     :goto_2
-    if-eqz v4, :cond_3
+    if-eqz v3, :cond_3
 
     .line 8
     invoke-virtual {p1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v4
+    move-result-object v3
 
     .line 9
-    sget v5, Lcom/supercell/id/R$dimen;->list_padding_horizontal:I
+    sget v4, Lcom/supercell/id/R$dimen;->list_padding_horizontal:I
 
     .line 10
-    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
-    move-result v4
+    move-result v3
 
     goto :goto_3
 
     :cond_3
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
     .line 11
     :goto_3
-    sget v5, Lcom/supercell/id/R$id;->messageContainer:I
+    sget v4, Lcom/supercell/id/R$id;->messageContainer:I
 
-    invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v5
+    move-result-object v4
 
-    check-cast v5, Landroidx/constraintlayout/widget/ConstraintLayout;
+    check-cast v4, Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 12
-    iget-object v6, p0, Lvd/k1;->d:Ljava/util/List;
+    iget-object v5, p0, Lae/c2;->d:Ljava/util/List;
 
     .line 13
-    invoke-static {v6, p2}, Lvd/h1;->d(Ljava/util/List;I)Z
+    invoke-static {v5, p2}, Lae/y1;->d(Ljava/util/List;I)Z
 
-    move-result v6
+    move-result v5
 
     .line 14
-    iget-object v7, p0, Lvd/k1;->d:Ljava/util/List;
+    iget-object v6, p0, Lae/c2;->d:Ljava/util/List;
 
     .line 15
-    invoke-static {v7, p2}, Lvd/h1;->c(Ljava/util/List;I)Z
+    invoke-static {v6, p2}, Lae/y1;->c(Ljava/util/List;I)Z
 
     move-result p2
 
     .line 16
-    invoke-static {v5, v6, p2, v3, v4}, Lhd/g;->b(Landroid/view/View;ZZII)V
+    invoke-static {v4, v5, p2, v2, v3}, Lt2/f;->b(Landroid/view/View;ZZII)V
 
     .line 17
     sget p2, Lcom/supercell/id/R$id;->senderImageView:I
@@ -176,94 +175,97 @@
 
     check-cast p2, Lcom/google/android/material/imageview/ShapeableImageView;
 
-    const-string v3, "containerView.senderImageView"
+    const-string v2, "containerView.senderImageView"
 
-    invoke-static {p2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 18
-    check-cast p3, Led/a;
+    check-cast p3, Ljd/a;
 
     .line 19
-    iget-object v3, p3, Led/a;->c:Lqc/f;
+    iget-object v2, p3, Ljd/a;->c:Lvc/f;
 
     .line 20
-    iget-object v3, v3, Lqc/f;->d:Ljava/lang/String;
+    iget-object v2, v2, Lvc/f;->d:Ljava/lang/String;
 
-    if-eqz v3, :cond_5
+    if-eqz v2, :cond_5
 
     .line 21
-    invoke-virtual {v3}, Ljava/lang/String;->length()I
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
 
-    move-result v3
+    move-result v2
 
-    if-nez v3, :cond_4
+    if-nez v2, :cond_4
 
     goto :goto_4
 
     :cond_4
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     goto :goto_5
 
     :cond_5
     :goto_4
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
     :goto_5
-    const/4 v4, 0x2
+    const/4 v3, 0x2
 
-    if-eqz v3, :cond_c
+    if-eqz v2, :cond_b
 
     .line 22
-    iget-object v3, p3, Led/a;->c:Lqc/f;
+    iget-object v2, p3, Ljd/a;->c:Lvc/f;
 
     .line 23
-    iget-object v3, v3, Lqc/f;->e:Ljava/lang/String;
+    iget-object v2, v2, Lvc/f;->e:Ljava/lang/String;
 
-    if-eqz v3, :cond_7
+    if-eqz v2, :cond_7
 
     .line 24
-    invoke-virtual {v3}, Ljava/lang/String;->length()I
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
 
-    move-result v3
+    move-result v2
 
-    if-nez v3, :cond_6
+    if-nez v2, :cond_6
 
     goto :goto_6
 
     :cond_6
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     goto :goto_7
 
     :cond_7
     :goto_6
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
     :goto_7
-    if-eqz v3, :cond_c
+    if-eqz v2, :cond_b
 
     .line 25
-    iget-object v3, p3, Led/a;->c:Lqc/f;
+    iget-object v2, p3, Ljd/a;->c:Lvc/f;
 
     .line 26
-    iget-object v3, v3, Lqc/f;->c:Ljava/lang/String;
+    iget-object v2, v2, Lvc/f;->c:Ljava/lang/String;
 
-    if-eqz v3, :cond_b
+    const-string v4, "string"
 
-    const/4 v0, 0x0
+    .line 27
+    invoke-static {v2, v4}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v4, 0x0
 
     const/4 v5, 0x0
 
-    .line 27
+    .line 28
     :goto_8
-    invoke-virtual {v3}, Ljava/lang/String;->length()I
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     move-result v6
 
-    if-ge v0, v6, :cond_8
+    if-ge v4, v6, :cond_8
 
-    invoke-virtual {v3, v0}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {v2, v4}, Ljava/lang/String;->charAt(I)C
 
     move-result v6
 
@@ -271,26 +273,26 @@
 
     add-int/2addr v5, v6
 
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_8
 
-    .line 28
+    .line 29
     :cond_8
     invoke-static {v5}, Ljava/lang/Math;->abs(I)I
 
-    move-result v0
+    move-result v2
 
-    .line 29
-    sget-object v3, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    .line 30
+    sget-object v4, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v3}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lvd/h;
+    invoke-virtual {v4}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lae/i;
 
     move-result-object v5
 
     const/16 v6, 0x12
 
-    invoke-virtual {v5, v6}, Lvd/h;->d(I)Ljava/util/List;
+    invoke-virtual {v5, v6}, Lae/i;->d(I)Ljava/util/List;
 
     move-result-object v5
 
@@ -301,17 +303,17 @@
     :cond_9
     const-string v5, "archer"
 
-    invoke-static {v5}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v5}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v5
 
-    .line 30
+    .line 31
     :goto_9
     invoke-interface {v5}, Ljava/util/List;->size()I
 
     move-result v6
 
-    rem-int v6, v0, v6
+    rem-int v6, v2, v6
 
     invoke-interface {v5, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -319,148 +321,136 @@
 
     check-cast v5, Ljava/lang/String;
 
-    .line 31
-    invoke-virtual {v3}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lvd/h;
+    .line 32
+    invoke-virtual {v4}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lae/i;
 
-    move-result-object v3
+    move-result-object v4
 
-    const/16 v6, 0x14
+    invoke-virtual {v4}, Lae/i;->c()Ljava/util/List;
 
-    invoke-virtual {v3, v6}, Lvd/h;->c(I)Ljava/util/List;
+    move-result-object v4
 
-    move-result-object v3
-
-    if-eqz v3, :cond_a
+    if-eqz v4, :cond_a
 
     goto :goto_a
 
     :cond_a
-    new-array v3, v4, [Ljava/lang/String;
+    new-array v3, v3, [Ljava/lang/String;
 
-    const-string v6, "#E9E9E9"
+    const-string v4, "#E9E9E9"
 
-    aput-object v6, v3, v2
+    aput-object v4, v3, v1
 
-    aput-object v6, v3, v1
+    aput-object v4, v3, v0
 
-    .line 32
-    invoke-static {v3}, Lbe/f;->d([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v3}, Lcom/android/billingclient/api/z;->i([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v3
+
+    invoke-static {v3}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v4
 
     .line 33
-    invoke-static {v3}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
+    :goto_a
+    invoke-interface {v4}, Ljava/util/List;->size()I
 
-    move-result-object v3
+    move-result v3
+
+    rem-int/2addr v2, v3
+
+    invoke-interface {v4, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/List;
 
     .line 34
-    :goto_a
-    invoke-interface {v3}, Ljava/util/List;->size()I
+    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result v6
+    move-result-object v1
 
-    rem-int/2addr v0, v6
-
-    invoke-interface {v3, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/List;
+    check-cast v1, Ljava/lang/String;
 
     .line 35
-    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/String;
-
-    .line 36
-    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    .line 37
-    new-instance v1, Lcom/supercell/id/model/ProfileImage$Avatar;
+    .line 36
+    new-instance v2, Lcom/supercell/id/model/ProfileImage$Avatar;
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "0,"
+    const-string v4, "0,"
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 v5, 0x2c
+    const/16 v4, 0x2c
 
-    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {v1, v0}, Lcom/supercell/id/model/ProfileImage$Avatar;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v0}, Lcom/supercell/id/model/ProfileImage$Avatar;-><init>(Ljava/lang/String;)V
 
     goto :goto_c
 
+    .line 37
     :cond_b
-    const-string p1, "string"
+    iget-object v0, p3, Ljd/a;->c:Lvc/f;
 
     .line 38
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    iget-object v1, v0, Lvc/f;->d:Ljava/lang/String;
 
     .line 39
-    :cond_c
-    iget-object v0, p3, Led/a;->c:Lqc/f;
+    iget-object v0, v0, Lvc/f;->e:Ljava/lang/String;
+
+    if-eqz v0, :cond_c
 
     .line 40
-    iget-object v1, v0, Lqc/f;->d:Ljava/lang/String;
+    new-instance v2, Lcom/supercell/id/model/ProfileImage$Image;
 
-    .line 41
-    iget-object v0, v0, Lqc/f;->e:Ljava/lang/String;
-
-    if-eqz v0, :cond_d
-
-    .line 42
-    new-instance v1, Lcom/supercell/id/model/ProfileImage$Image;
-
-    invoke-direct {v1, v0}, Lcom/supercell/id/model/ProfileImage$Image;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v0}, Lcom/supercell/id/model/ProfileImage$Image;-><init>(Ljava/lang/String;)V
 
     goto :goto_c
 
-    :cond_d
-    if-eqz v1, :cond_e
+    :cond_c
+    if-eqz v1, :cond_d
 
-    .line 43
+    .line 41
     new-instance v0, Lcom/supercell/id/model/ProfileImage$Avatar;
 
     invoke-direct {v0, v1}, Lcom/supercell/id/model/ProfileImage$Avatar;-><init>(Ljava/lang/String;)V
 
     goto :goto_b
 
-    .line 44
-    :cond_e
+    .line 42
+    :cond_d
     sget-object v0, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
 
     :goto_b
-    move-object v1, v0
+    move-object v2, v0
 
-    .line 45
+    .line 43
     :goto_c
-    invoke-static {p2, v1, v2, v4}, Lpd/d0;->g(Landroid/widget/ImageView;Lcom/supercell/id/model/ProfileImage;ZI)V
+    invoke-static {p2, v2}, Lud/f0;->g(Landroid/widget/ImageView;Lcom/supercell/id/model/ProfileImage;)V
 
-    .line 46
+    .line 44
     sget p2, Lcom/supercell/id/R$id;->senderNameLabel:I
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -471,18 +461,18 @@
 
     const-string v0, "containerView.senderNameLabel"
 
-    invoke-static {p2, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 45
+    iget-object v0, p3, Ljd/a;->c:Lvc/f;
+
+    .line 46
+    iget-object v0, v0, Lvc/f;->c:Ljava/lang/String;
 
     .line 47
-    iget-object v0, p3, Led/a;->c:Lqc/f;
-
-    .line 48
-    iget-object v0, v0, Lqc/f;->c:Ljava/lang/String;
-
-    .line 49
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 50
+    .line 48
     sget p2, Lcom/supercell/id/R$id;->messageLabel:I
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -493,26 +483,26 @@
 
     const-string p2, "containerView.messageLabel"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 49
+    iget-object p2, p3, Ljd/a;->b:Lvc/g;
+
+    .line 50
+    iget-object p2, p2, Lvc/g;->d:Ljava/lang/String;
 
     .line 51
-    iget-object p2, p3, Led/a;->b:Lqc/g;
-
-    .line 52
-    iget-object p2, p2, Lqc/g;->d:Ljava/lang/String;
-
-    .line 53
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_d
 
-    .line 54
-    :cond_f
-    instance-of p2, p3, Lvd/o;
+    .line 52
+    :cond_e
+    instance-of p2, p3, Lae/q;
 
-    if-eqz p2, :cond_11
+    if-eqz p2, :cond_10
 
-    .line 55
+    .line 53
     sget p2, Lcom/supercell/id/R$id;->errorContainer:I
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -521,20 +511,20 @@
 
     check-cast p2, Landroid/widget/LinearLayout;
 
-    .line 56
-    invoke-static {p2}, Lvd/g2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
+    .line 54
+    invoke-static {p2}, Lae/z2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
     move-result-object p3
 
-    if-eqz p3, :cond_10
+    if-eqz p3, :cond_f
 
-    iput v2, p3, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+    iput v1, p3, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
-    .line 57
-    :cond_10
-    invoke-virtual {p2}, Landroid/widget/LinearLayout;->requestLayout()V
+    .line 55
+    :cond_f
+    invoke-virtual {p2}, Landroid/view/View;->requestLayout()V
 
-    .line 58
+    .line 56
     sget p2, Lcom/supercell/id/R$id;->errorRetryButton:I
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -547,30 +537,9 @@
 
     invoke-direct {p2, p0}, Lcom/supercell/id/ui/ingamechat/ChatFragment$a$a;-><init>(Lcom/supercell/id/ui/ingamechat/ChatFragment$a;)V
 
-    invoke-virtual {p1, p2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    :cond_11
+    :cond_10
     :goto_d
     return-void
-
-    :cond_12
-    const-string p1, "item"
-
-    .line 59
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_13
-    const-string p1, "holder"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    goto :goto_f
-
-    :goto_e
-    throw v0
-
-    :goto_f
-    goto :goto_e
 .end method

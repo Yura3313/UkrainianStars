@@ -30,38 +30,40 @@
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 6
 
-    const/4 v0, 0x0
+    const-string v0, "in"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v1, Lcom/kakao/sdk/template/model/FeedTemplate;
+    new-instance v0, Lcom/kakao/sdk/template/model/FeedTemplate;
 
-    sget-object v2, Lcom/kakao/sdk/template/model/Content;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object v1, Lcom/kakao/sdk/template/model/Content;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-interface {v1, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/kakao/sdk/template/model/Content;
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_0
+
+    sget-object v2, Lcom/kakao/sdk/template/model/Social;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {v2, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lcom/kakao/sdk/template/model/Content;
-
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    sget-object v3, Lcom/kakao/sdk/template/model/Social;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    invoke-interface {v3, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lcom/kakao/sdk/template/model/Social;
+    check-cast v2, Lcom/kakao/sdk/template/model/Social;
 
     goto :goto_0
 
     :cond_0
-    move-object v3, v0
+    move-object v2, v3
 
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -72,14 +74,14 @@
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v0
+    move-result v3
 
     new-instance v4, Ljava/util/ArrayList;
 
-    invoke-direct {v4, v0}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v4, v3}, Ljava/util/ArrayList;-><init>(I)V
 
     :goto_1
-    if-eqz v0, :cond_1
+    if-eqz v3, :cond_1
 
     sget-object v5, Lcom/kakao/sdk/template/model/Button;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -91,35 +93,21 @@
 
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    add-int/lit8 v0, v0, -0x1
+    add-int/lit8 v3, v3, -0x1
 
     goto :goto_1
 
     :cond_1
-    move-object v0, v4
+    move-object v3, v4
 
     :cond_2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-direct {v1, v2, v3, v0, p1}, Lcom/kakao/sdk/template/model/FeedTemplate;-><init>(Lcom/kakao/sdk/template/model/Content;Lcom/kakao/sdk/template/model/Social;Ljava/util/List;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2, v3, p1}, Lcom/kakao/sdk/template/model/FeedTemplate;-><init>(Lcom/kakao/sdk/template/model/Content;Lcom/kakao/sdk/template/model/Social;Ljava/util/List;Ljava/lang/String;)V
 
-    return-object v1
-
-    :cond_3
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    goto :goto_3
-
-    :goto_2
-    throw v0
-
-    :goto_3
-    goto :goto_2
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

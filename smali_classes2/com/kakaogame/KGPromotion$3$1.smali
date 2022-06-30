@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/kakaogame/KGPromotion$3;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGPromotion$3$1;->this$0:Lcom/kakaogame/KGPromotion$3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -55,7 +54,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGPromotion$3$1;->this$0:Lcom/kakaogame/KGPromotion$3;
 
     iget-object v1, v0, Lcom/kakaogame/KGPromotion$3;->val$callback:Lcom/kakaogame/KGResultCallback;

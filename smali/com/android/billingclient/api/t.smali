@@ -1,879 +1,438 @@
-.class public synthetic Lcom/android/billingclient/api/t;
+.class public final Lcom/android/billingclient/api/t;
 .super Ljava/lang/Object;
 .source "com.android.billingclient:billing@@3.0.3"
 
 
+# static fields
+.field public static final a:Lcom/android/billingclient/api/e;
+
+.field public static final b:Lcom/android/billingclient/api/e;
+
+.field public static final c:Lcom/android/billingclient/api/e;
+
+.field public static final d:Lcom/android/billingclient/api/e;
+
+.field public static final e:Lcom/android/billingclient/api/e;
+
+.field public static final f:Lcom/android/billingclient/api/e;
+
+.field public static final g:Lcom/android/billingclient/api/e;
+
+.field public static final h:Lcom/android/billingclient/api/e;
+
+.field public static final i:Lcom/android/billingclient/api/e;
+
+.field public static final j:Lcom/android/billingclient/api/e;
+
+.field public static final k:Lcom/android/billingclient/api/e;
+
+.field public static final l:Lcom/android/billingclient/api/e;
+
+.field public static final m:Lcom/android/billingclient/api/e;
+
+.field public static final n:Lcom/android/billingclient/api/e;
+
+
 # direct methods
-.method public static final a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 4
 
-    if-eqz p0, :cond_1
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    .line 1
-    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
+    move-result-object v0
 
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 v0, 0x1
-
-    :goto_1
-    if-eqz v0, :cond_2
-
-    const/4 p0, 0x0
-
-    :cond_2
-    return-object p0
-.end method
-
-.method public static b(Landroid/view/View;IFFFLpc/k$b;I)V
-    .locals 23
-
-    and-int/lit8 v0, p6, 0x1
-
-    if-eqz v0, :cond_0
-
-    const/high16 v0, 0x14000000
-
-    goto :goto_0
-
-    :cond_0
-    move/from16 v0, p1
-
-    :goto_0
-    and-int/lit8 v1, p6, 0x2
-
-    if-eqz v1, :cond_1
-
-    const/16 v1, 0x8
+    const/4 v1, 0x3
 
     .line 1
-    invoke-static {v1}, Lcom/android/billingclient/api/a0;->b(I)F
+    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    move-result v1
-
-    goto :goto_1
-
-    :cond_1
-    move/from16 v1, p2
-
-    :goto_1
-    and-int/lit8 v2, p6, 0x4
-
-    const/4 v3, 0x3
-
-    if-eqz v2, :cond_2
+    const-string v2, "Google Play In-app Billing API version is less than 3"
 
     .line 2
-    invoke-static {v3}, Lcom/android/billingclient/api/a0;->b(I)F
-
-    move-result v2
-
-    goto :goto_2
-
-    :cond_2
-    move/from16 v2, p3
-
-    :goto_2
-    and-int/lit8 v4, p6, 0x8
-
-    if-eqz v4, :cond_3
-
-    const/16 v4, 0xc
+    iput-object v2, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
     .line 3
-    invoke-static {v4}, Lcom/android/billingclient/api/a0;->b(I)F
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    move-result v4
+    move-result-object v0
 
-    goto :goto_3
+    sput-object v0, Lcom/android/billingclient/api/t;->a:Lcom/android/billingclient/api/e;
 
-    :cond_3
-    move/from16 v4, p4
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    :goto_3
-    and-int/lit8 v5, p6, 0x10
-
-    if-eqz v5, :cond_4
+    move-result-object v0
 
     .line 4
-    sget-object v5, Lpc/k$b;->j:Lpc/k$b;
+    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    goto :goto_4
-
-    :cond_4
-    move-object/from16 v5, p5
-
-    :goto_4
-    const-string v6, "shape"
-
-    if-eqz v5, :cond_1b
-
-    const v6, 0x3fb33333
-
-    mul-float v1, v1, v6
+    const-string v2, "Google Play In-app Billing API version is less than 9"
 
     .line 5
-    sget-object v6, Lpc/k;->b:Lpc/k;
-
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v7
-
-    const-string v8, "resources"
-
-    invoke-static {v7, v8}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iput-object v2, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
     .line 6
-    new-instance v8, Lpc/k$a;
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    invoke-direct {v8, v0, v1, v4, v5}, Lpc/k$a;-><init>(IFFLpc/k$b;)V
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+
+    move-result-object v0
 
     .line 7
-    sget-object v9, Lpc/k;->a:Ljava/util/Map;
+    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    invoke-interface {v9, v8}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    const/4 v11, 0x1
-
-    const/4 v12, 0x2
-
-    if-nez v10, :cond_d
+    const-string v2, "Billing service unavailable on device."
 
     .line 8
-    monitor-enter v6
+    iput-object v2, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
     .line 9
-    :try_start_0
-    invoke-interface {v9, v8}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    move-result v10
+    move-result-object v0
 
-    if-nez v10, :cond_c
+    sput-object v0, Lcom/android/billingclient/api/t;->b:Lcom/android/billingclient/api/e;
 
-    const/high16 v10, 0x40000000    # 2.0f
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    div-float v13, v1, v10
+    move-result-object v0
 
-    sub-float/2addr v4, v13
-
-    const/4 v13, 0x0
+    const/4 v2, 0x5
 
     .line 10
-    invoke-static {v13, v4}, Ljava/lang/Math;->max(FF)F
+    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    move-result v4
-
-    add-float v13, v1, v4
+    const-string v3, "Client is already in the process of connecting to billing service."
 
     .line 11
-    invoke-static {v13}, Lb5/m;->r(F)I
-
-    move-result v14
-
-    mul-int/lit8 v14, v14, 0x2
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
     .line 12
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    move-result v15
+    move-result-object v0
 
-    if-eqz v15, :cond_7
+    sput-object v0, Lcom/android/billingclient/api/t;->c:Lcom/android/billingclient/api/e;
 
-    if-eq v15, v11, :cond_6
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    if-eq v15, v12, :cond_7
-
-    if-ne v15, v3, :cond_5
-
-    move v15, v14
-
-    goto :goto_5
+    move-result-object v0
 
     .line 13
-    :cond_5
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
+    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw v0
-
-    :cond_6
-    const/4 v15, 0x2
-
-    goto :goto_5
+    const-string v1, "Play Store version installed does not support cross selling products."
 
     .line 14
-    :cond_7
-    div-int/lit8 v15, v14, 0x2
-
-    add-int/2addr v15, v11
+    iput-object v1, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
     .line 15
-    :goto_5
-    sget-object v3, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    invoke-static {v14, v15, v3}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    move-result-object v3
-
-    int-to-float v14, v14
-
-    div-float v19, v14, v10
+    move-result-object v0
 
     .line 16
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    move-result v14
-
-    const/high16 v16, 0x3f800000    # 1.0f
-
-    if-eqz v14, :cond_b
-
-    if-eq v14, v11, :cond_a
-
-    if-eq v14, v12, :cond_9
-
-    const/4 v12, 0x3
-
-    if-ne v14, v12, :cond_8
-
-    goto :goto_6
+    const-string v1, "The list of SKUs can\'t be empty."
 
     .line 17
-    :cond_8
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw v0
-
-    :cond_9
-    const/high16 v10, 0x3f800000    # 1.0f
-
-    const/high16 v18, 0x3f800000    # 1.0f
-
-    goto :goto_8
-
-    :cond_a
-    :goto_6
-    int-to-float v12, v15
-
-    div-float/2addr v12, v10
-
-    goto :goto_7
-
-    :cond_b
-    int-to-float v10, v15
-
-    sub-float v12, v10, v16
-
-    :goto_7
-    move/from16 v18, v12
+    iput-object v1, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
     .line 18
-    :goto_8
-    new-instance v10, Landroid/graphics/Paint;
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    const/4 v12, 0x5
+    move-result-object v0
 
-    invoke-direct {v10, v12}, Landroid/graphics/Paint;-><init>(I)V
+    sput-object v0, Lcom/android/billingclient/api/t;->d:Lcom/android/billingclient/api/e;
 
-    div-float/2addr v4, v13
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+
+    move-result-object v0
 
     .line 19
-    sget-object v12, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    invoke-virtual {v10, v12}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+    const-string v1, "SKU type can\'t be empty."
 
     .line 20
-    new-instance v12, Landroid/graphics/RadialGradient;
-
-    const/4 v13, 0x3
-
-    new-array v13, v13, [I
-
-    const/4 v14, 0x0
-
-    aput v0, v13, v14
-
-    aput v0, v13, v11
+    iput-object v1, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
     .line 21
-    invoke-static {v0, v14}, Lx/a;->d(II)I
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    move-result v0
+    move-result-object v0
 
-    const/4 v15, 0x2
+    sput-object v0, Lcom/android/billingclient/api/t;->e:Lcom/android/billingclient/api/e;
 
-    aput v0, v13, v15
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    const/4 v0, 0x3
+    move-result-object v0
 
-    new-array v0, v0, [F
-
-    const/4 v15, 0x0
-
-    aput v15, v0, v14
-
-    aput v4, v0, v11
-
-    const/4 v4, 0x2
-
-    aput v16, v0, v4
+    const/4 v1, -0x2
 
     .line 22
-    sget-object v22, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
+    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    move-object/from16 v16, v12
-
-    move/from16 v17, v19
-
-    move-object/from16 v20, v13
-
-    move-object/from16 v21, v0
+    const-string v3, "Client does not support extra params."
 
     .line 23
-    invoke-direct/range {v16 .. v22}, Landroid/graphics/RadialGradient;-><init>(FFF[I[FLandroid/graphics/Shader$TileMode;)V
-
-    invoke-virtual {v10, v12}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
     .line 24
-    new-instance v0, Landroid/graphics/Canvas;
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    invoke-direct {v0, v3}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
+    move-result-object v0
+
+    sput-object v0, Lcom/android/billingclient/api/t;->f:Lcom/android/billingclient/api/e;
+
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+
+    move-result-object v0
 
     .line 25
-    invoke-virtual {v0, v10}, Landroid/graphics/Canvas;->drawPaint(Landroid/graphics/Paint;)V
+    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    const-string v0, "Bitmap.createBitmap(widt\u2026nt)\n                    }"
+    const-string v3, "Client does not support the feature."
 
     .line 26
-    invoke-static {v3, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-interface {v9, v8, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
     .line 27
-    :cond_c
-    monitor-exit v6
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    goto :goto_9
+    move-result-object v0
 
-    :catchall_0
-    move-exception v0
+    sput-object v0, Lcom/android/billingclient/api/t;->g:Lcom/android/billingclient/api/e;
 
-    monitor-exit v6
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    throw v0
+    move-result-object v0
 
     .line 28
-    :cond_d
-    :goto_9
-    invoke-interface {v9, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    move-result-object v0
-
-    check-cast v0, Landroid/graphics/Bitmap;
-
-    if-eqz v0, :cond_16
+    const-string v3, "Client does not support get purchase history."
 
     .line 29
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v3
-
-    const/4 v4, 0x2
-
-    div-int/2addr v3, v4
-
-    add-int/lit8 v3, v3, -0x1
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
     .line 30
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    move-result v6
-
-    if-eqz v6, :cond_11
-
-    if-eq v6, v11, :cond_10
-
-    if-eq v6, v4, :cond_f
-
-    const/4 v8, 0x3
-
-    if-ne v6, v8, :cond_e
-
-    goto :goto_a
-
-    .line 31
-    :cond_e
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw v0
-
-    :cond_f
-    const/4 v6, 0x0
-
-    goto :goto_b
-
-    .line 32
-    :cond_10
-    :goto_a
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v6
-
-    div-int/2addr v6, v4
-
-    sub-int/2addr v6, v11
-
-    goto :goto_b
-
-    .line 33
-    :cond_11
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v6
-
-    sub-int/2addr v6, v4
-
-    .line 34
-    :goto_b
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v8
-
-    if-eqz v8, :cond_15
-
-    if-eq v8, v11, :cond_14
-
-    if-eq v8, v4, :cond_13
-
-    const/4 v4, 0x3
-
-    if-ne v8, v4, :cond_12
-
-    goto :goto_c
-
-    .line 35
-    :cond_12
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw v0
-
-    :cond_13
-    const/4 v4, 0x2
-
-    goto :goto_d
-
-    .line 36
-    :cond_14
-    :goto_c
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v4
-
-    sub-int/2addr v4, v6
-
-    goto :goto_d
-
-    .line 37
-    :cond_15
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v4
-
-    .line 38
-    :goto_d
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v8
-
-    sub-int/2addr v8, v3
-
-    const/16 v9, 0x54
-
-    .line 39
-    invoke-static {v9}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
-
-    move-result-object v9
-
-    invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
-
-    move-result-object v10
-
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
-
-    move-result-object v9
-
-    int-to-byte v10, v11
-
-    .line 40
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
-
-    const/4 v10, 0x2
-
-    int-to-byte v10, v10
-
-    .line 41
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
-
-    .line 42
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
-
-    const/16 v10, 0x9
-
-    int-to-byte v10, v10
-
-    .line 43
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
-
-    const/4 v10, 0x0
-
-    .line 44
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 45
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 46
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 47
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 48
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 49
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 50
-    invoke-virtual {v9, v10}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 51
-    invoke-virtual {v9, v3}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 52
-    invoke-virtual {v9, v8}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 53
-    invoke-virtual {v9, v6}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 54
-    invoke-virtual {v9, v4}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 55
-    invoke-virtual {v9, v11}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 56
-    invoke-virtual {v9, v11}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 57
-    invoke-virtual {v9, v11}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 58
-    invoke-virtual {v9, v11}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 59
-    invoke-virtual {v9, v11}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 60
-    invoke-virtual {v9, v11}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 61
-    invoke-virtual {v9, v11}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 62
-    invoke-virtual {v9, v11}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 63
-    invoke-virtual {v9, v11}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
-
-    .line 64
-    new-instance v3, Landroid/graphics/drawable/NinePatchDrawable;
-
-    invoke-virtual {v9}, Ljava/nio/ByteBuffer;->array()[B
-
-    move-result-object v4
-
-    new-instance v6, Landroid/graphics/Rect;
-
-    invoke-direct {v6}, Landroid/graphics/Rect;-><init>()V
-
-    const/4 v8, 0x0
-
-    move-object/from16 p1, v3
-
-    move-object/from16 p2, v7
-
-    move-object/from16 p3, v0
-
-    move-object/from16 p4, v4
-
-    move-object/from16 p5, v6
-
-    move-object/from16 p6, v8
-
-    invoke-direct/range {p1 .. p6}, Landroid/graphics/drawable/NinePatchDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;[BLandroid/graphics/Rect;Ljava/lang/String;)V
-
-    goto :goto_e
-
-    :cond_16
-    const/4 v3, 0x0
-
-    :goto_e
-    move-object v8, v3
-
-    if-eqz v8, :cond_1a
-
-    .line 65
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
     move-result-object v0
 
-    instance-of v0, v0, Lpc/b;
+    .line 31
+    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    if-eqz v0, :cond_17
+    const-string v3, "Invalid purchase token."
 
-    goto :goto_11
+    .line 32
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
-    :cond_17
-    const/4 v0, 0x2
+    .line 33
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    int-to-float v0, v0
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    div-float/2addr v1, v0
+    move-result-object v0
 
-    .line 66
-    invoke-static {v1}, Lb5/m;->r(F)I
+    const/4 v3, 0x6
 
-    move-result v10
+    .line 34
+    iput v3, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    .line 67
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    const-string v3, "An internal error occurred."
 
-    move-result v0
+    .line 35
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
-    const/4 v3, 0x3
+    .line 36
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    if-eqz v0, :cond_18
+    move-result-object v0
 
-    if-eq v0, v3, :cond_18
+    sput-object v0, Lcom/android/billingclient/api/t;->h:Lcom/android/billingclient/api/e;
 
-    const/4 v0, 0x0
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    const/4 v11, 0x0
+    move-result-object v0
 
-    goto :goto_f
+    const/4 v3, 0x4
 
-    :cond_18
-    sub-float v0, v1, v2
+    .line 37
+    iput v3, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    .line 68
-    invoke-static {v0}, Lb5/m;->r(F)I
+    const-string v3, "Item is unavailable for purchase."
 
-    move-result v0
+    .line 38
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
-    move v11, v0
+    .line 39
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    .line 69
-    :goto_f
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    move-result v0
+    move-result-object v0
 
-    const/4 v4, 0x2
+    .line 40
+    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    if-eq v0, v4, :cond_19
+    const-string v3, "SKU can\'t be null."
 
-    if-eq v0, v3, :cond_19
+    .line 41
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
-    const/4 v0, 0x0
+    .line 42
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    const/4 v12, 0x0
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    goto :goto_10
+    move-result-object v0
 
-    :cond_19
-    add-float/2addr v1, v2
+    .line 43
+    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    .line 70
-    invoke-static {v1}, Lb5/m;->r(F)I
+    const-string v3, "SKU type can\'t be null."
 
-    move-result v0
+    .line 44
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
 
-    move v12, v0
+    .line 45
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    .line 71
-    :goto_10
-    new-instance v0, Lpc/b;
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+    move-result-object v0
 
-    move-result-object v7
+    const/4 v3, 0x0
 
-    const-string v1, "this.background"
+    .line 46
+    iput v3, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    invoke-static {v7, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 47
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
 
-    move-object v6, v0
+    move-result-object v0
 
-    move v9, v10
+    sput-object v0, Lcom/android/billingclient/api/t;->i:Lcom/android/billingclient/api/e;
 
-    invoke-direct/range {v6 .. v12}, Lpc/b;-><init>(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;IIII)V
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
 
-    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    move-result-object v0
 
-    move-object/from16 v1, p0
+    const/4 v3, -0x1
 
-    .line 72
-    invoke-virtual {v1, v0}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    .line 48
+    iput v3, v0, Lcom/android/billingclient/api/e$a;->a:I
 
-    :cond_1a
-    :goto_11
+    const-string v3, "Service connection is disconnected."
+
+    .line 49
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+
+    .line 50
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/billingclient/api/t;->j:Lcom/android/billingclient/api/e;
+
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+
+    move-result-object v0
+
+    const/4 v3, -0x3
+
+    .line 51
+    iput v3, v0, Lcom/android/billingclient/api/e$a;->a:I
+
+    const-string v3, "Timeout communicating with service."
+
+    .line 52
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+
+    .line 53
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/billingclient/api/t;->k:Lcom/android/billingclient/api/e;
+
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+
+    move-result-object v0
+
+    .line 54
+    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
+
+    const-string v3, "Client doesn\'t support subscriptions."
+
+    .line 55
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+
+    .line 56
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/billingclient/api/t;->l:Lcom/android/billingclient/api/e;
+
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+
+    move-result-object v0
+
+    .line 57
+    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
+
+    const-string v3, "Client doesn\'t support subscriptions update."
+
+    .line 58
+    iput-object v3, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+
+    .line 59
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/billingclient/api/t;->m:Lcom/android/billingclient/api/e;
+
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+
+    move-result-object v0
+
+    .line 60
+    iput v1, v0, Lcom/android/billingclient/api/e$a;->a:I
+
+    const-string v1, "Client doesn\'t support multi-item purchases."
+
+    .line 61
+    iput-object v1, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+
+    .line 62
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/billingclient/api/t;->n:Lcom/android/billingclient/api/e;
+
+    invoke-static {}, Lcom/android/billingclient/api/e;->a()Lcom/android/billingclient/api/e$a;
+
+    move-result-object v0
+
+    .line 63
+    iput v2, v0, Lcom/android/billingclient/api/e$a;->a:I
+
+    const-string v1, "Unknown feature"
+
+    .line 64
+    iput-object v1, v0, Lcom/android/billingclient/api/e$a;->b:Ljava/lang/String;
+
+    .line 65
+    invoke-virtual {v0}, Lcom/android/billingclient/api/e$a;->a()Lcom/android/billingclient/api/e;
+
     return-void
-
-    .line 73
-    :cond_1b
-    invoke-static {v6}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public static final c(Lke/a;)Lae/c;
-    .locals 3
-
-    const/4 v0, 0x0
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    new-instance v1, Lae/f;
-
-    const/4 v2, 0x2
-
-    invoke-direct {v1, p0, v0, v2}, Lae/f;-><init>(Lke/a;Ljava/lang/Object;I)V
-
-    return-object v1
-
-    :cond_0
-    const-string p0, "initializer"
-
-    .line 2
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public static final d(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    instance-of v0, p0, Lae/e$a;
-
-    xor-int/lit8 v0, v0, 0x1
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-static {p0}, Lcom/android/billingclient/api/v;->e(Ljava/lang/Object;)V
-
-    goto :goto_0
-
-    :cond_0
-    new-instance v0, Lse/q;
-
-    invoke-static {p0}, Lae/e;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_1
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x2
-
-    invoke-direct {v0, p0, v1, v2}, Lse/q;-><init>(Ljava/lang/Throwable;ZI)V
-
-    move-object p0, v0
-
-    :goto_0
-    return-object p0
-
-    :cond_1
-    invoke-static {}, Ls3/b;->g()V
-
-    const/4 p0, 0x0
-
-    throw p0
-.end method
-
-.method public static final e(Ljava/io/File;[B)V
-    .locals 2
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    new-instance v1, Ljava/io/FileOutputStream;
-
-    invoke-direct {v1, p0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
-
-    invoke-static {v1, p0}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
-
-    move-result-object p0
-
-    :try_start_0
-    invoke-virtual {p0, p1}, Ljava/io/FileOutputStream;->write([B)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    invoke-static {p0, v0}, Ls3/b;->d(Ljava/io/Closeable;Ljava/lang/Throwable;)V
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    :try_start_1
-    throw p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    :catchall_1
-    move-exception v0
-
-    invoke-static {p0, p1}, Ls3/b;->d(Ljava/io/Closeable;Ljava/lang/Throwable;)V
-
-    throw v0
-
-    :cond_0
-    const-string p0, "array"
-
-    .line 2
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

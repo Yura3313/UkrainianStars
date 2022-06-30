@@ -2,9 +2,6 @@
 .super Ljava/lang/Object;
 .source "ManifestSchemaFactory.java"
 
-# interfaces
-.implements Lcom/google/protobuf/j1;
-
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
@@ -15,7 +12,7 @@
 
 
 # static fields
-.field public static final b:Lcom/google/protobuf/p0;
+.field public static final b:Lcom/google/protobuf/i0$a;
 
 
 # instance fields
@@ -26,12 +23,11 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/i0$a;
 
     invoke-direct {v0}, Lcom/google/protobuf/i0$a;-><init>()V
 
-    sput-object v0, Lcom/google/protobuf/i0;->b:Lcom/google/protobuf/p0;
+    sput-object v0, Lcom/google/protobuf/i0;->b:Lcom/google/protobuf/i0$a;
 
     return-void
 .end method
@@ -86,7 +82,7 @@
 
     .line 5
     :catch_0
-    sget-object v2, Lcom/google/protobuf/i0;->b:Lcom/google/protobuf/p0;
+    sget-object v2, Lcom/google/protobuf/i0;->b:Lcom/google/protobuf/i0$a;
 
     :goto_0
     const/4 v3, 0x1

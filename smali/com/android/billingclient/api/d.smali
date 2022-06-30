@@ -1,4 +1,4 @@
-.class public Lcom/android/billingclient/api/d;
+.class public final Lcom/android/billingclient/api/d;
 .super Ljava/lang/Object;
 .source "com.android.billingclient:billing@@3.0.3"
 

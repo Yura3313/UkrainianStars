@@ -1,67 +1,47 @@
-.class public Lcom/supercell/titan/k;
-.super Landroid/widget/RelativeLayout;
-.source "KeyboardDialog.java"
+.class public final Lcom/supercell/titan/k;
+.super Ljava/lang/Object;
+.source "PurchaseManagerGoogle.java"
+
+# interfaces
+.implements Lcom/android/billingclient/api/c;
+
+
+# instance fields
+.field public final synthetic a:Lcom/supercell/titan/PurchaseManagerGoogle;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Lcom/supercell/titan/PurchaseManagerGoogle;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
+    iput-object p1, p0, Lcom/supercell/titan/k;->a:Lcom/supercell/titan/PurchaseManagerGoogle;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public dispatchKeyEventPreIme(Landroid/view/KeyEvent;)Z
-    .locals 4
+.method public final a(Lcom/android/billingclient/api/e;)V
+    .locals 2
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+    iget v0, p1, Lcom/android/billingclient/api/e;->a:I
 
-    move-result v0
-
-    const/4 v1, 0x4
-
-    if-ne v0, v1, :cond_1
-
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
-
-    move-result v0
+    .line 2
+    iget-object v0, p0, Lcom/supercell/titan/k;->a:Lcom/supercell/titan/PurchaseManagerGoogle;
 
     const/4 v1, 0x1
 
-    if-ne v0, v1, :cond_1
-
-    .line 2
-    sget-object v0, Lcom/supercell/titan/VirtualKeyboardHandler;->d:Lcom/supercell/titan/KeyboardDialog;
-
-    const/4 v2, 0x0
-
-    if-eqz v0, :cond_0
-
     .line 3
-    invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
-
-    move-result-object v0
-
-    new-instance v3, Lcom/supercell/titan/n0;
-
-    invoke-direct {v3, v1, v2}, Lcom/supercell/titan/n0;-><init>(ZZ)V
-
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+    iput-boolean v1, v0, Lcom/supercell/titan/PurchaseManagerGoogle;->w:Z
 
     .line 4
-    :cond_0
-    sput-boolean v2, Lcom/supercell/titan/VirtualKeyboardHandler;->a:Z
+    iput-object p1, v0, Lcom/supercell/titan/PurchaseManagerGoogle;->v:Lcom/android/billingclient/api/e;
 
     .line 5
-    :cond_1
-    invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->dispatchKeyEventPreIme(Landroid/view/KeyEvent;)Z
+    invoke-virtual {v0}, Lcom/supercell/titan/PurchaseManagerGoogle;->g()V
 
-    move-result p1
-
-    return p1
+    return-void
 .end method

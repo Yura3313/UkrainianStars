@@ -1,4 +1,4 @@
-.class public Lcom/google/protobuf/GeneratedMessageLite$ExtendableMessage$a;
+.class public final Lcom/google/protobuf/GeneratedMessageLite$ExtendableMessage$a;
 .super Ljava/lang/Object;
 .source "GeneratedMessageLite.java"
 
@@ -20,7 +20,7 @@
         value = {
             "Ljava/util/Iterator<",
             "Ljava/util/Map$Entry<",
-            "Lcom/google/protobuf/GeneratedMessageLite$d;",
+            "Lcom/google/protobuf/GeneratedMessageLite$c;",
             "Ljava/lang/Object;",
             ">;>;"
         }
@@ -29,8 +29,8 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/protobuf/GeneratedMessageLite$ExtendableMessage;ZLcom/google/protobuf/GeneratedMessageLite$a;)V
-    .locals 0
+.method public constructor <init>(Lcom/google/protobuf/GeneratedMessageLite$ExtendableMessage;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,9 +47,9 @@
     .line 3
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result p2
+    move-result v0
 
-    if-eqz p2, :cond_0
+    if-eqz v0, :cond_0
 
     .line 4
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;

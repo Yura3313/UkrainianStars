@@ -94,7 +94,7 @@
 
     move-result-object p3
 
-    invoke-virtual {p3}, Ljava/lang/Thread$State;->name()Ljava/lang/String;
+    invoke-virtual {p3}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
     move-result-object p3
 

@@ -82,7 +82,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getEncoded()[B
+    invoke-virtual {p1}, Ljava/security/cert/Certificate;->getEncoded()[B
 
     move-result-object p1
 
@@ -121,7 +121,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    invoke-virtual {p1}, Ljava/security/cert/CertificateEncodingException;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 
@@ -140,7 +140,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    invoke-virtual {p1}, Ljava/security/NoSuchAlgorithmException;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 

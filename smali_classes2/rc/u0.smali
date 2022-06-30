@@ -1,110 +1,140 @@
 .class public final Lrc/u0;
-.super Ljava/lang/Object;
-.source "MainActivity.kt"
+.super Lse/h;
+.source "SocialApiClient.kt"
 
 # interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.implements Lre/l;
 
 
-# instance fields
-.field public final synthetic g:Landroid/animation/ValueAnimator;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/l<",
+        "Ljava/util/List<",
+        "+",
+        "Ljava/util/Map<",
+        "Lcom/supercell/id/model/IdSocialAccount;",
+        "+",
+        "Lae/m<",
+        "+",
+        "Ljava/lang/Boolean;",
+        "+",
+        "Ljava/lang/Exception;",
+        ">;>;>;",
+        "Ljava/util/Map<",
+        "Lcom/supercell/id/model/IdSocialAccount;",
+        "+",
+        "Lae/m<",
+        "+",
+        "Ljava/lang/Boolean;",
+        "+",
+        "Ljava/lang/Exception;",
+        ">;>;>;"
+    }
+.end annotation
 
-.field public final synthetic h:I
 
-.field public final synthetic i:Lrc/y0;
+# static fields
+.field public static final f:Lrc/u0;
 
 
 # direct methods
-.method public constructor <init>(Landroid/animation/ValueAnimator;ILrc/y0;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lrc/u0;->g:Landroid/animation/ValueAnimator;
+    new-instance v0, Lrc/u0;
 
-    iput p2, p0, Lrc/u0;->h:I
+    invoke-direct {v0}, Lrc/u0;-><init>()V
 
-    iput-object p3, p0, Lrc/u0;->i:Lrc/y0;
+    sput-object v0, Lrc/u0;->f:Lrc/u0;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 5
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object p1, p0, Lrc/u0;->i:Lrc/y0;
+    check-cast p1, Ljava/util/List;
 
-    iget-object p1, p1, Lrc/y0;->g:Lcom/supercell/id/ui/MainActivity;
-
-    sget v0, Lcom/supercell/id/R$id;->panel:I
-
-    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/FrameLayout;
-
-    const-string v1, "panel"
-
-    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {p1}, Lvd/g2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    iget v1, p0, Lrc/u0;->h:I
-
-    iget-object v2, p0, Lrc/u0;->i:Lrc/y0;
-
-    iget-object v2, v2, Lrc/y0;->g:Lcom/supercell/id/ui/MainActivity;
+    const-string v0, "data"
 
     .line 2
-    invoke-virtual {v2}, Lcom/supercell/id/ui/MainActivity;->t()I
-
-    move-result v2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v3, p0, Lrc/u0;->g:Landroid/animation/ValueAnimator;
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    invoke-virtual {v3}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
-
-    move-result v3
-
-    int-to-float v4, v1
-
-    sub-int/2addr v2, v1
-
-    int-to-float v1, v2
-
-    mul-float v1, v1, v3
-
-    add-float/2addr v1, v4
+    move-result-object p1
 
     .line 4
-    invoke-static {v1}, Lb5/m;->r(F)I
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 5
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 6
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
-    iput v1, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
+    if-eqz v1, :cond_0
 
-    .line 5
+    .line 7
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Map;
+
+    check-cast v0, Ljava/util/Map;
+
+    .line 8
+    invoke-static {v0, v1}, Lje/t;->o(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 9
     :cond_0
-    iget-object p1, p0, Lrc/u0;->i:Lrc/y0;
+    check-cast v0, Ljava/util/Map;
 
-    iget-object p1, p1, Lrc/y0;->g:Lcom/supercell/id/ui/MainActivity;
+    return-object v0
 
-    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
+    .line 10
+    :cond_1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    move-result-object p1
+    const-string v0, "Empty collection can\'t be reduced."
 
-    check-cast p1, Landroid/widget/FrameLayout;
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->requestLayout()V
+    goto :goto_2
 
-    return-void
+    :goto_1
+    throw p1
+
+    :goto_2
+    goto :goto_1
 .end method

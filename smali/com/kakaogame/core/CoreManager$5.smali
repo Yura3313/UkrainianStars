@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/core/CoreManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/CoreManager$5;->this$0:Lcom/kakaogame/core/CoreManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

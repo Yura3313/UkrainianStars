@@ -3,42 +3,22 @@
 .source "ProgressBar.kt"
 
 # interfaces
-.implements Landroid/animation/TypeEvaluator;
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Landroid/animation/TypeEvaluator<",
-        "Ljava/lang/Object;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic f:Landroid/graphics/drawable/Drawable;
 
-
-# static fields
-.field public static final a:Lcom/supercell/id/view/i;
+.field public final synthetic g:Lcom/supercell/id/view/ProgressBarIcon;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/supercell/id/view/i;
-
-    invoke-direct {v0}, Lcom/supercell/id/view/i;-><init>()V
-
-    sput-object v0, Lcom/supercell/id/view/i;->a:Lcom/supercell/id/view/i;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/graphics/drawable/Drawable;Lcom/supercell/id/view/ProgressBarIcon;)V
     .locals 0
+
+    iput-object p1, p0, Lcom/supercell/id/view/i;->f:Landroid/graphics/drawable/Drawable;
+
+    iput-object p2, p0, Lcom/supercell/id/view/i;->g:Lcom/supercell/id/view/ProgressBarIcon;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,23 +27,42 @@
 
 
 # virtual methods
-.method public final evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+    .locals 2
 
-    const/high16 v0, 0x3d800000    # 0.0625f
+    .line 1
+    iget-object v0, p0, Lcom/supercell/id/view/i;->g:Lcom/supercell/id/view/ProgressBarIcon;
 
-    cmpl-float v0, p1, v0
+    .line 2
+    iget-object v0, v0, Lcom/supercell/id/view/ProgressBarIcon;->f:Landroid/widget/ImageView;
 
-    if-ltz v0, :cond_0
+    const-string v1, "it"
 
-    const/high16 v0, 0x3f300000    # 0.6875f
+    .line 3
+    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    cmpg-float p1, p1, v0
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
-    if-gtz p1, :cond_0
+    move-result-object p1
 
-    move-object p2, p3
+    instance-of v1, p1, Landroid/graphics/drawable/Drawable;
+
+    if-nez v1, :cond_0
+
+    const/4 p1, 0x0
 
     :cond_0
-    return-object p2
+    check-cast p1, Landroid/graphics/drawable/Drawable;
+
+    if-eqz p1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    iget-object p1, p0, Lcom/supercell/id/view/i;->f:Landroid/graphics/drawable/Drawable;
+
+    :goto_0
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    return-void
 .end method

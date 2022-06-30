@@ -1,4 +1,4 @@
-.class public Lcom/android/billingclient/api/SkuDetails;
+.class public final Lcom/android/billingclient/api/SkuDetails;
 .super Ljava/lang/Object;
 .source "com.android.billingclient:billing@@3.0.3"
 
@@ -81,14 +81,13 @@
 
 
 # virtual methods
-.method public a()Ljava/lang/String;
+.method public final a()Ljava/lang/String;
     .locals 2
 
     iget-object v0, p0, Lcom/android/billingclient/api/SkuDetails;->b:Lorg/json/JSONObject;
 
     const-string v1, "productId"
 
-    .line 1
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -96,14 +95,13 @@
     return-object v0
 .end method
 
-.method public b()Ljava/lang/String;
+.method public final b()Ljava/lang/String;
     .locals 2
 
     iget-object v0, p0, Lcom/android/billingclient/api/SkuDetails;->b:Lorg/json/JSONObject;
 
     const-string v1, "type"
 
-    .line 1
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -118,7 +116,6 @@
 
     const-string v1, "packageName"
 
-    .line 1
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -126,7 +123,7 @@
     return-object v0
 .end method
 
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
     if-ne p0, p1, :cond_0
@@ -161,12 +158,11 @@
     return p1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 1
 
     iget-object v0, p0, Lcom/android/billingclient/api/SkuDetails;->a:Ljava/lang/String;
 
-    .line 1
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
@@ -174,12 +170,11 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
     iget-object v0, p0, Lcom/android/billingclient/api/SkuDetails;->a:Ljava/lang/String;
 
-    .line 1
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0

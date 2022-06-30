@@ -134,7 +134,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/TransactionContext;->name:Ljava/lang/String;
 
     return-object v0
@@ -143,7 +142,6 @@
 .method public getParentSampled()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/TransactionContext;->parentSampled:Ljava/lang/Boolean;
 
     return-object v0
@@ -152,7 +150,6 @@
 .method public setParentSampled(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/TransactionContext;->parentSampled:Ljava/lang/Boolean;
 
     return-void

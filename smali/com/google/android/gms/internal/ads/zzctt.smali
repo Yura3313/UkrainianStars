@@ -4,13 +4,14 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 2
 
     const/4 v0, 0x3
 
-    .line 1
-    invoke-direct {p0, v0, p1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
+    const-string v1, "unable to instantiate mediation adapter class"
+
+    invoke-direct {p0, v0, v1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
 
     return-void
 .end method

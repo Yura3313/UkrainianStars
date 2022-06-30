@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/LinearLayoutManager$a;
+.class public final Landroidx/recyclerview/widget/LinearLayoutManager$a;
 .super Ljava/lang/Object;
 .source "LinearLayoutManager.java"
 
@@ -41,7 +41,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 1
 
     .line 1
@@ -72,7 +72,7 @@
     return-void
 .end method
 
-.method public b(Landroid/view/View;I)V
+.method public final b(Landroid/view/View;I)V
     .locals 1
 
     .line 1
@@ -117,7 +117,7 @@
     return-void
 .end method
 
-.method public c(Landroid/view/View;I)V
+.method public final c(Landroid/view/View;I)V
     .locals 4
 
     .line 1
@@ -317,7 +317,7 @@
     return-void
 .end method
 
-.method public d()V
+.method public final d()V
     .locals 1
 
     const/4 v0, -0x1
@@ -341,7 +341,7 @@
     return-void
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
     const-string v0, "AnchorInfo{mPosition="
@@ -351,6 +351,7 @@
 
     move-result-object v0
 
+    .line 2
     iget v1, p0, Landroidx/recyclerview/widget/LinearLayoutManager$a;->b:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;

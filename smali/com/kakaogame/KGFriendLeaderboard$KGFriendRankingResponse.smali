@@ -85,7 +85,7 @@
     const-string v0, "scores"
 
     .line 7
-    invoke-virtual {p1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -95,14 +95,14 @@
 
     .line 8
     :goto_0
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
 
     move-result v1
 
     if-ge v0, v1, :cond_1
 
     .line 9
-    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -169,7 +169,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/KGFriendLeaderboard$KGFriendRankingResponse;)I
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/KGFriendLeaderboard$KGFriendRankingResponse;->getTotalPlayerCount()I
 
     move-result p0
@@ -180,7 +179,6 @@
 .method public static synthetic access$300(Lcom/kakaogame/KGFriendLeaderboard$KGFriendRankingResponse;)I
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/KGFriendLeaderboard$KGFriendRankingResponse;->getSeasonSeq()I
 
     move-result p0
@@ -247,7 +245,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGFriendLeaderboard$KGFriendRankingResponse;->rankingInfos:Ljava/util/List;
 
     return-object v0
@@ -256,7 +253,6 @@
 .method public getSortOrder()Lcom/kakaogame/KGLeaderboard$KGRankingSortOrder;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGFriendLeaderboard$KGFriendRankingResponse;->object:Lcom/kakaogame/util/json/JSONObject;
 
     const-string v1, "sortingType"

@@ -3,7 +3,7 @@
 .source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Lvd/j1;
+.implements Lae/b2;
 
 
 # annotations
@@ -45,7 +45,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -53,39 +52,32 @@
 
 
 # virtual methods
-.method public a(Lvd/j1;)Z
-    .locals 0
+.method public final a(Lae/b2;)Z
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "other"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x1
 
     return p1
-
-    :cond_0
-    const-string p1, "other"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public c()I
+.method public final c()I
     .locals 1
 
-    .line 1
     sget v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$k;->a:I
 
     return v0
 .end method
 
-.method public d(Lvd/j1;)Z
-    .locals 0
+.method public final d(Lae/b2;)Z
+    .locals 1
 
-    if-eqz p1, :cond_1
+    const-string v0, "other"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-ne p1, p0, :cond_0
 
@@ -98,14 +90,4 @@
 
     :goto_0
     return p1
-
-    :cond_1
-    const-string p1, "other"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

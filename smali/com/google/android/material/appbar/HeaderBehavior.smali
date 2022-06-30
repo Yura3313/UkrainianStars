@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field public c:Ljava/lang/Runnable;
+.field public c:Lcom/google/android/material/appbar/HeaderBehavior$a;
 
 .field public d:Landroid/widget/OverScroller;
 
@@ -122,7 +122,7 @@
     return p1
 .end method
 
-.method public C(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)I
+.method public final C(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)I
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -144,7 +144,6 @@
 
     move v3, p3
 
-    .line 1
     invoke-virtual/range {v0 .. v5}, Lcom/google/android/material/appbar/HeaderBehavior;->D(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)I
 
     move-result p1
@@ -174,7 +173,7 @@
     if-gt p1, p5, :cond_0
 
     .line 2
-    invoke-static {p3, p4, p5}, La0/a;->b(III)I
+    invoke-static {p3, p4, p5}, La0/a;->e(III)I
 
     move-result p2
 
@@ -194,7 +193,7 @@
     return p1
 .end method
 
-.method public g(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public final g(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -212,7 +211,7 @@
     if-gez v0, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -394,7 +393,7 @@
     return v3
 .end method
 
-.method public s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public final s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 19
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -562,7 +561,7 @@
     const/16 v18, 0x0
 
     .line 15
-    iget-object v5, v6, Lcom/google/android/material/appbar/HeaderBehavior;->c:Ljava/lang/Runnable;
+    iget-object v5, v6, Lcom/google/android/material/appbar/HeaderBehavior;->c:Lcom/google/android/material/appbar/HeaderBehavior$a;
 
     if-eqz v5, :cond_5
 
@@ -570,7 +569,7 @@
     invoke-virtual {v2, v5}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 17
-    iput-object v1, v6, Lcom/google/android/material/appbar/HeaderBehavior;->c:Ljava/lang/Runnable;
+    iput-object v1, v6, Lcom/google/android/material/appbar/HeaderBehavior;->c:Lcom/google/android/material/appbar/HeaderBehavior$a;
 
     .line 18
     :cond_5
@@ -632,7 +631,7 @@
 
     invoke-direct {v0, v6, v4, v2}, Lcom/google/android/material/appbar/HeaderBehavior$a;-><init>(Lcom/google/android/material/appbar/HeaderBehavior;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)V
 
-    iput-object v0, v6, Lcom/google/android/material/appbar/HeaderBehavior;->c:Ljava/lang/Runnable;
+    iput-object v0, v6, Lcom/google/android/material/appbar/HeaderBehavior;->c:Lcom/google/android/material/appbar/HeaderBehavior$a;
 
     .line 26
     sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -723,7 +722,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p1
@@ -741,7 +739,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p1
@@ -752,7 +749,6 @@
 .method public z()I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/appbar/ViewOffsetBehavior;->t()I
 
     move-result v0

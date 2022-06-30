@@ -18,7 +18,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +26,6 @@
 .method public static getAction(Ljava/lang/Object;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState$CustomAction;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState$CustomAction;->getAction()Ljava/lang/String;
@@ -40,7 +38,6 @@
 .method public static getExtras(Ljava/lang/Object;)Landroid/os/Bundle;
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState$CustomAction;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState$CustomAction;->getExtras()Landroid/os/Bundle;
@@ -53,7 +50,6 @@
 .method public static getIcon(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState$CustomAction;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState$CustomAction;->getIcon()I
@@ -66,7 +62,6 @@
 .method public static getName(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState$CustomAction;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState$CustomAction;->getName()Ljava/lang/CharSequence;

@@ -31,7 +31,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,20 +39,20 @@
 .method public constructor <init>(Lio/sentry/protocol/Browser;)V
     .locals 1
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 2
     iget-object v0, p1, Lio/sentry/protocol/Browser;->name:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Browser;->name:Ljava/lang/String;
 
-    .line 4
+    .line 3
     iget-object v0, p1, Lio/sentry/protocol/Browser;->version:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Browser;->version:Ljava/lang/String;
 
-    .line 5
+    .line 4
     iget-object p1, p1, Lio/sentry/protocol/Browser;->unknown:Ljava/util/Map;
 
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -82,7 +81,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(Ljava/util/Map;)V
@@ -95,7 +93,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Browser;->name:Ljava/lang/String;
 
     return-object v0
@@ -113,7 +110,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Browser;->unknown:Ljava/util/Map;
 
     return-object v0
@@ -122,7 +118,6 @@
 .method public getVersion()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Browser;->version:Ljava/lang/String;
 
     return-object v0
@@ -131,7 +126,6 @@
 .method public setName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Browser;->name:Ljava/lang/String;
 
     return-void
@@ -140,7 +134,6 @@
 .method public setVersion(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Browser;->version:Ljava/lang/String;
 
     return-void

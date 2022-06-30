@@ -1,5 +1,5 @@
 .class public Lcom/google/android/gms/games/internal/player/StockProfileImageRef;
-.super Lb2/d;
+.super Lc2/d;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 # interfaces
@@ -7,10 +7,9 @@
 
 
 # virtual methods
-.method public describeContents()I
+.method public final E()Landroid/net/Uri;
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/NoSuchMethodError;
 
     invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
@@ -18,43 +17,34 @@
     throw v0
 .end method
 
-.method public getImageUrl()Ljava/lang/String;
-    .locals 4
+.method public final describeContents()I
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+    new-instance v0, Ljava/lang/NoSuchMethodError;
 
-    iget v1, p0, Lb2/d;->h:I
+    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
 
-    iget v2, p0, Lb2/d;->i:I
+    throw v0
+.end method
 
-    const-string v3, "image_url"
+.method public final getImageUrl()Ljava/lang/String;
+    .locals 1
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
+    const-string v0, "image_url"
+
+    invoke-virtual {p0, v0}, Lc2/d;->x(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/NoSuchMethodError;
 
     invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
 
     throw p1
-.end method
-
-.method public final x()Landroid/net/Uri;
-    .locals 1
-
-    .line 1
-    new-instance v0, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw v0
 .end method

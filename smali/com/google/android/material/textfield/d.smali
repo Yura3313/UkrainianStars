@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/textfield/d;
+.class public final Lcom/google/android/material/textfield/d;
 .super Ljava/lang/Object;
 .source "ClearTextEndIconDelegate.java"
 
@@ -7,15 +7,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/textfield/a;
+.field public final synthetic f:Lcom/google/android/material/textfield/a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/a;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/d;->g:Lcom/google/android/material/textfield/a;
+    iput-object p1, p0, Lcom/google/android/material/textfield/d;->f:Lcom/google/android/material/textfield/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,7 +23,7 @@
 
 
 # virtual methods
-.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
     .line 1
@@ -39,11 +38,18 @@
     move-result p1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/d;->g:Lcom/google/android/material/textfield/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/d;->f:Lcom/google/android/material/textfield/a;
 
-    iget-object v0, v0, Lcom/google/android/material/textfield/m;->c:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, v0, Lcom/google/android/material/textfield/k;->c:Lcom/google/android/material/internal/CheckableImageButton;
 
-    invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setAlpha(F)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->setScaleX(F)V
+
+    .line 3
+    iget-object v0, p0, Lcom/google/android/material/textfield/d;->f:Lcom/google/android/material/textfield/a;
+
+    iget-object v0, v0, Lcom/google/android/material/textfield/k;->c:Lcom/google/android/material/internal/CheckableImageButton;
+
+    invoke-virtual {v0, p1}, Landroid/view/View;->setScaleY(F)V
 
     return-void
 .end method

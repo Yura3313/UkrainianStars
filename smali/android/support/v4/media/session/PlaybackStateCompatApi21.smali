@@ -15,7 +15,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +23,6 @@
 .method public static getActions(Ljava/lang/Object;)J
     .locals 2
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState;->getActions()J
@@ -37,7 +35,6 @@
 .method public static getActiveQueueItemId(Ljava/lang/Object;)J
     .locals 2
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState;->getActiveQueueItemId()J
@@ -50,7 +47,6 @@
 .method public static getBufferedPosition(Ljava/lang/Object;)J
     .locals 2
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState;->getBufferedPosition()J
@@ -73,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState;->getCustomActions()Ljava/util/List;
@@ -86,7 +81,6 @@
 .method public static getErrorMessage(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState;->getErrorMessage()Ljava/lang/CharSequence;
@@ -99,7 +93,6 @@
 .method public static getLastPositionUpdateTime(Ljava/lang/Object;)J
     .locals 2
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState;->getLastPositionUpdateTime()J
@@ -112,7 +105,6 @@
 .method public static getPlaybackSpeed(Ljava/lang/Object;)F
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState;->getPlaybackSpeed()F
@@ -125,7 +117,6 @@
 .method public static getPosition(Ljava/lang/Object;)J
     .locals 2
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState;->getPosition()J
@@ -138,7 +129,6 @@
 .method public static getState(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/PlaybackState;
 
     invoke-virtual {p0}, Landroid/media/session/PlaybackState;->getState()I

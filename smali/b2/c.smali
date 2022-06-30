@@ -1,158 +1,462 @@
-.class public Lb2/c;
+.class public final Lb2/c;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.source "com.google.android.gms:play-services-basement@@17.5.0"
 
 # interfaces
-.implements Ljava/util/Iterator;
+.implements Landroid/app/Application$ActivityLifecycleCallbacks;
+.implements Landroid/content/ComponentCallbacks2;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Iterator<",
-        "TT;>;"
+        Lb2/c$a;
     }
 .end annotation
 
 
-# instance fields
-.field public final g:Lb2/b;
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
+# static fields
+.field public static final j:Lb2/c;
 
+
+# instance fields
+.field public final f:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field public final g:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field public final h:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lb2/b<",
-            "TT;>;"
+            "Ljava/util/ArrayList<",
+            "Lb2/c$a;",
+            ">;"
         }
+    .end annotation
+
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "sInstance"
     .end annotation
 .end field
 
-.field public h:I
+.field public i:Z
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "sInstance"
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lb2/b;)V
-    .locals 0
-    .param p1    # Lb2/b;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lb2/b<",
-            "TT;>;)V"
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lb2/c;
+
+    invoke-direct {v0}, Lb2/c;-><init>()V
+
+    sput-object v0, Lb2/c;->j:Lb2/c;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lb2/c;->g:Lb2/b;
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    const/4 p1, -0x1
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
+
+    iput-object v0, p0, Lb2/c;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 3
-    iput p1, p0, Lb2/c;->h:I
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
+
+    iput-object v0, p0, Lb2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 4
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lb2/c;->h:Ljava/util/ArrayList;
+
+    const/4 v0, 0x0
+
+    .line 5
+    iput-boolean v0, p0, Lb2/c;->i:Z
 
     return-void
 .end method
 
+.method public static b()Lb2/c;
+    .locals 1
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
 
-# virtual methods
-.method public hasNext()Z
-    .locals 3
+    sget-object v0, Lb2/c;->j:Lb2/c;
+
+    return-object v0
+.end method
+
+.method public static c(Landroid/app/Application;)V
+    .locals 2
+    .param p0    # Landroid/app/Application;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 
     .line 1
-    iget v0, p0, Lb2/c;->h:I
+    sget-object v0, Lb2/c;->j:Lb2/c;
 
-    iget-object v1, p0, Lb2/c;->g:Lb2/b;
+    monitor-enter v0
 
-    invoke-interface {v1}, Lb2/b;->getCount()I
+    .line 2
+    :try_start_0
+    iget-boolean v1, v0, Lb2/c;->i:Z
 
-    move-result v1
+    if-nez v1, :cond_0
+
+    .line 3
+    invoke-virtual {p0, v0}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
+
+    .line 4
+    invoke-virtual {p0, v0}, Landroid/app/Application;->registerComponentCallbacks(Landroid/content/ComponentCallbacks;)V
+
+    const/4 p0, 0x1
+
+    .line 5
+    iput-boolean p0, v0, Lb2/c;->i:Z
+
+    .line 6
+    :cond_0
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public final a(Lb2/c$a;)V
+    .locals 2
+    .param p1    # Lb2/c$a;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget-object v0, Lb2/c;->j:Lb2/c;
+
+    monitor-enter v0
+
+    .line 2
+    :try_start_0
+    iget-object v1, p0, Lb2/c;->h:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 3
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public final d()Z
+    .locals 3
+    .annotation build Landroid/annotation/TargetApi;
+        value = 0x10
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lb2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 2
+    new-instance v0, Landroid/app/ActivityManager$RunningAppProcessInfo;
+
+    invoke-direct {v0}, Landroid/app/ActivityManager$RunningAppProcessInfo;-><init>()V
+
+    .line 3
+    invoke-static {v0}, Landroid/app/ActivityManager;->getMyMemoryState(Landroid/app/ActivityManager$RunningAppProcessInfo;)V
+
+    .line 4
+    iget-object v1, p0, Lb2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v2, 0x1
 
-    sub-int/2addr v1, v2
+    invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->getAndSet(Z)Z
 
-    if-ge v0, v1, :cond_0
+    move-result v1
 
-    return v2
+    if-nez v1, :cond_0
 
+    iget v0, v0, Landroid/app/ActivityManager$RunningAppProcessInfo;->importance:I
+
+    const/16 v1, 0x64
+
+    if-le v0, v1, :cond_0
+
+    .line 5
+    iget-object v0, p0, Lb2/c;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 6
     :cond_0
-    const/4 v0, 0x0
+    iget-object v0, p0, Lb2/c;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
 
     return v0
 .end method
 
-.method public next()Ljava/lang/Object;
-    .locals 4
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
+.method public final e(Z)V
+    .locals 5
 
     .line 1
-    invoke-virtual {p0}, Lb2/c;->hasNext()Z
+    sget-object v0, Lb2/c;->j:Lb2/c;
 
-    move-result v0
-
-    if-eqz v0, :cond_0
+    monitor-enter v0
 
     .line 2
-    iget-object v0, p0, Lb2/c;->g:Lb2/b;
+    :try_start_0
+    iget-object v1, p0, Lb2/c;->h:Ljava/util/ArrayList;
 
-    iget v1, p0, Lb2/c;->h:I
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
-    add-int/lit8 v1, v1, 0x1
+    move-result v2
 
-    iput v1, p0, Lb2/c;->h:I
+    const/4 v3, 0x0
 
-    invoke-interface {v0, v1}, Lb2/b;->get(I)Ljava/lang/Object;
+    :goto_0
+    if-ge v3, v2, :cond_0
 
-    move-result-object v0
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    return-object v0
+    move-result-object v4
+
+    add-int/lit8 v3, v3, 0x1
+
+    check-cast v4, Lb2/c$a;
 
     .line 3
+    invoke-interface {v4, p1}, Lb2/c$a;->a(Z)V
+
+    goto :goto_0
+
+    .line 4
     :cond_0
-    new-instance v0, Ljava/util/NoSuchElementException;
+    monitor-exit v0
 
-    iget v1, p0, Lb2/c;->h:I
+    return-void
 
-    const/16 v2, 0x2e
+    :catchall_0
+    move-exception p1
 
-    const-string v3, "Cannot advance the iterator beyond "
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-static {v2, v3, v1}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
+    goto :goto_2
 
-    move-result-object v1
+    :goto_1
+    throw p1
 
-    invoke-direct {v0, v1}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    :goto_2
+    goto :goto_1
 .end method
 
-.method public remove()V
+.method public final onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    iget-object p1, p0, Lb2/c;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    const-string v1, "Cannot remove elements from a DataBufferIterator"
+    const/4 p2, 0x1
 
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    const/4 v0, 0x0
 
-    throw v0
+    invoke-virtual {p1, p2, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+
+    move-result p1
+
+    .line 2
+    iget-object v1, p0, Lb2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    invoke-virtual {p0, v0}, Lb2/c;->e(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final onActivityDestroyed(Landroid/app/Activity;)V
+    .locals 0
+    .param p1    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    return-void
+.end method
+
+.method public final onActivityPaused(Landroid/app/Activity;)V
+    .locals 0
+    .param p1    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    return-void
+.end method
+
+.method public final onActivityResumed(Landroid/app/Activity;)V
+    .locals 3
+    .param p1    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    iget-object p1, p0, Lb2/c;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+
+    move-result p1
+
+    .line 2
+    iget-object v2, p0, Lb2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v2, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    invoke-virtual {p0, v1}, Lb2/c;->e(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
+    .locals 0
+    .param p1    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    return-void
+.end method
+
+.method public final onActivityStarted(Landroid/app/Activity;)V
+    .locals 0
+    .param p1    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    return-void
+.end method
+
+.method public final onActivityStopped(Landroid/app/Activity;)V
+    .locals 0
+    .param p1    # Landroid/app/Activity;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    return-void
+.end method
+
+.method public final onConfigurationChanged(Landroid/content/res/Configuration;)V
+    .locals 0
+    .param p1    # Landroid/content/res/Configuration;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    return-void
+.end method
+
+.method public final onLowMemory()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onTrimMemory(I)V
+    .locals 2
+
+    const/16 v0, 0x14
+
+    if-ne p1, v0, :cond_0
+
+    .line 1
+    iget-object p1, p0, Lb2/c;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {p1, v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    iget-object p1, p0, Lb2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {p1, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 3
+    invoke-virtual {p0, v1}, Lb2/c;->e(Z)V
+
+    :cond_0
+    return-void
 .end method

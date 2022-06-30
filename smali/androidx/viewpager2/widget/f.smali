@@ -50,7 +50,7 @@
     iput-object p1, p0, Landroidx/viewpager2/widget/f;->b:Landroidx/viewpager2/widget/ViewPager2;
 
     .line 3
-    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->p:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->o:Landroidx/viewpager2/widget/ViewPager2$k;
 
     iput-object p1, p0, Landroidx/viewpager2/widget/f;->c:Landroidx/recyclerview/widget/RecyclerView;
 
@@ -78,7 +78,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/recyclerview/widget/RecyclerView;I)V
+.method public final a(Landroidx/recyclerview/widget/RecyclerView;I)V
     .locals 6
 
     .line 1
@@ -127,7 +127,7 @@
     .line 8
     iget-object p1, p0, Landroidx/viewpager2/widget/f;->d:Landroidx/recyclerview/widget/LinearLayoutManager;
 
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->W0()I
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->V0()I
 
     move-result p1
 
@@ -309,7 +309,7 @@
     return-void
 .end method
 
-.method public b(Landroidx/recyclerview/widget/RecyclerView;II)V
+.method public final b(Landroidx/recyclerview/widget/RecyclerView;II)V
     .locals 4
 
     const/4 p1, 0x1
@@ -577,7 +577,7 @@
     .line 2
     iget-object v1, p0, Landroidx/viewpager2/widget/f;->d:Landroidx/recyclerview/widget/LinearLayoutManager;
 
-    invoke-virtual {v1}, Landroidx/recyclerview/widget/LinearLayoutManager;->W0()I
+    invoke-virtual {v1}, Landroidx/recyclerview/widget/LinearLayoutManager;->V0()I
 
     move-result v1
 
@@ -728,7 +728,7 @@
     iget-object v3, p0, Landroidx/viewpager2/widget/f;->d:Landroidx/recyclerview/widget/LinearLayoutManager;
 
     .line 24
-    iget v3, v3, Landroidx/recyclerview/widget/LinearLayoutManager;->p:I
+    iget v3, v3, Landroidx/recyclerview/widget/LinearLayoutManager;->r:I
 
     const/4 v7, 0x0
 
@@ -755,7 +755,7 @@
 
     iget-object v2, p0, Landroidx/viewpager2/widget/f;->c:Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getPaddingLeft()I
+    invoke-virtual {v2}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v2
 
@@ -787,7 +787,7 @@
 
     iget-object v2, p0, Landroidx/viewpager2/widget/f;->c:Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getPaddingTop()I
+    invoke-virtual {v2}, Landroid/view/View;->getPaddingTop()I
 
     move-result v2
 
@@ -822,7 +822,7 @@
     iget-object v3, v1, Landroidx/viewpager2/widget/b;->a:Landroidx/recyclerview/widget/LinearLayoutManager;
 
     .line 32
-    iget v3, v3, Landroidx/recyclerview/widget/LinearLayoutManager;->p:I
+    iget v3, v3, Landroidx/recyclerview/widget/LinearLayoutManager;->r:I
 
     if-nez v3, :cond_7
 
@@ -957,7 +957,7 @@
     :cond_c
     new-instance v3, Landroidx/viewpager2/widget/a;
 
-    invoke-direct {v3, v1}, Landroidx/viewpager2/widget/a;-><init>(Landroidx/viewpager2/widget/b;)V
+    invoke-direct {v3}, Landroidx/viewpager2/widget/a;-><init>()V
 
     invoke-static {v4, v3}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 

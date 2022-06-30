@@ -149,7 +149,6 @@
 .method public getEnvironment()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/TraceState;->environment:Ljava/lang/String;
 
     return-object v0
@@ -158,7 +157,6 @@
 .method public getPublicKey()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/TraceState;->publicKey:Ljava/lang/String;
 
     return-object v0
@@ -167,7 +165,6 @@
 .method public getRelease()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/TraceState;->release:Ljava/lang/String;
 
     return-object v0
@@ -176,7 +173,6 @@
 .method public getTraceId()Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/TraceState;->traceId:Lio/sentry/protocol/SentryId;
 
     return-object v0
@@ -185,7 +181,6 @@
 .method public getTransaction()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/TraceState;->transaction:Ljava/lang/String;
 
     return-object v0
@@ -194,7 +189,6 @@
 .method public getUser()Lio/sentry/TraceState$TraceStateUser;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/TraceState;->user:Lio/sentry/TraceState$TraceStateUser;
 
     return-object v0

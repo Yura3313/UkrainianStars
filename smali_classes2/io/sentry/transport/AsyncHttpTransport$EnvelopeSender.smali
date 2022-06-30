@@ -76,7 +76,6 @@
 .method public static synthetic access$400(Lio/sentry/transport/AsyncHttpTransport$EnvelopeSender;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/sentry/transport/AsyncHttpTransport$EnvelopeSender;->hint:Ljava/lang/Object;
 
     return-object p0
@@ -85,7 +84,6 @@
 .method public static synthetic access$500(Lio/sentry/transport/AsyncHttpTransport$EnvelopeSender;)Lio/sentry/SentryEnvelope;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/sentry/transport/AsyncHttpTransport$EnvelopeSender;->envelope:Lio/sentry/SentryEnvelope;
 
     return-object p0

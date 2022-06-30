@@ -1,4 +1,4 @@
-.class public Lh/b$a;
+.class public final Lh/b$a;
 .super Ljava/lang/Object;
 .source "DefaultTaskExecutor.java"
 
@@ -22,27 +22,27 @@
 
 
 # direct methods
-.method public constructor <init>(Lh/b;)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicInteger;
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    invoke-direct {p1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    iput-object p1, p0, Lh/b$a;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object v0, p0, Lh/b$a;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 3
 
     .line 1

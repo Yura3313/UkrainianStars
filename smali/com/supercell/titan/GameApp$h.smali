@@ -1,84 +1,55 @@
-.class public Lcom/supercell/titan/GameApp$h;
+.class public final Lcom/supercell/titan/GameApp$h;
 .super Ljava/lang/Object;
 .source "GameApp.java"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/supercell/titan/GameApp;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/supercell/titan/GameApp;->hapticFeedback(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
-    name = "h"
+    accessFlags = 0x1
+    name = null
 .end annotation
 
 
 # instance fields
-.field public a:Landroid/app/PendingIntent;
-
-.field public b:Ljava/lang/String;
-
-.field public c:I
-
-.field public d:Ljava/lang/String;
-
-.field public e:Ljava/lang/String;
-
-.field public f:Ljava/lang/String;
-
-.field public g:Ljava/lang/String;
+.field public final synthetic f:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(I)V
+    .locals 0
 
-    .line 1
+    iput p1, p0, Lcom/supercell/titan/GameApp$h;->f:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const-string v0, ""
-
-    .line 2
-    iput-object v0, p0, Lcom/supercell/titan/GameApp$h;->b:Ljava/lang/String;
-
-    .line 3
-    iput-object v0, p0, Lcom/supercell/titan/GameApp$h;->d:Ljava/lang/String;
-
-    .line 4
-    iput-object v0, p0, Lcom/supercell/titan/GameApp$h;->e:Ljava/lang/String;
-
-    .line 5
-    iput-object v0, p0, Lcom/supercell/titan/GameApp$h;->f:Ljava/lang/String;
-
-    .line 6
-    iput-object v0, p0, Lcom/supercell/titan/GameApp$h;->g:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public constructor <init>(Lcom/supercell/titan/GameApp$b;)V
-    .locals 0
 
-    .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+# virtual methods
+.method public final run()V
+    .locals 3
 
-    const-string p1, ""
+    invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
-    .line 8
-    iput-object p1, p0, Lcom/supercell/titan/GameApp$h;->b:Ljava/lang/String;
+    move-result-object v0
 
-    .line 9
-    iput-object p1, p0, Lcom/supercell/titan/GameApp$h;->d:Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/supercell/titan/GameApp;->getView()Lcom/supercell/titan/GL2JNISurfaceView;
 
-    .line 10
-    iput-object p1, p0, Lcom/supercell/titan/GameApp$h;->e:Ljava/lang/String;
+    move-result-object v0
 
-    .line 11
-    iput-object p1, p0, Lcom/supercell/titan/GameApp$h;->f:Ljava/lang/String;
+    iget v1, p0, Lcom/supercell/titan/GameApp$h;->f:I
 
-    .line 12
-    iput-object p1, p0, Lcom/supercell/titan/GameApp$h;->g:Ljava/lang/String;
+    const/4 v2, 0x2
+
+    invoke-virtual {v0, v1, v2}, Landroid/view/View;->performHapticFeedback(II)Z
 
     return-void
 .end method

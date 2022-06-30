@@ -25,7 +25,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/UncaughtExceptionHandler$Adapter;
 
     invoke-direct {v0}, Lio/sentry/UncaughtExceptionHandler$Adapter;-><init>()V
@@ -38,7 +37,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,7 +45,6 @@
 .method public static getInstance()Lio/sentry/UncaughtExceptionHandler;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/UncaughtExceptionHandler$Adapter;->INSTANCE:Lio/sentry/UncaughtExceptionHandler$Adapter;
 
     return-object v0
@@ -58,7 +55,6 @@
 .method public getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
     .locals 1
 
-    .line 1
     invoke-static {}, Ljava/lang/Thread;->getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
 
     move-result-object v0
@@ -69,7 +65,6 @@
 .method public setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Thread;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
     return-void

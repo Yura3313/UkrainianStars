@@ -77,7 +77,7 @@
 
     iput-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/IDebugImagesLoader;
 
-    const-string v0, "sentry.java.android/5.7.1"
+    const-string v0, "sentry.java.android/5.7.3"
 
     .line 13
     invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setSentryClientName(Ljava/lang/String;)V
@@ -105,7 +105,7 @@
 
     const-string v1, "sentry.java.android"
 
-    const-string v2, "5.7.1"
+    const-string v2, "5.7.3"
 
     .line 2
     invoke-static {v0, v1, v2}, Lio/sentry/protocol/SdkVersion;->updateSdkVersion(Lio/sentry/protocol/SdkVersion;Ljava/lang/String;Ljava/lang/String;)Lio/sentry/protocol/SdkVersion;
@@ -146,7 +146,6 @@
 .method public getAnrTimeoutIntervalMillis()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrTimeoutIntervalMillis:J
 
     return-wide v0
@@ -155,7 +154,6 @@
 .method public getDebugImagesLoader()Lio/sentry/android/core/IDebugImagesLoader;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/IDebugImagesLoader;
 
     return-object v0
@@ -164,7 +162,6 @@
 .method public isAnrEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrEnabled:Z
 
     return v0
@@ -173,7 +170,6 @@
 .method public isAnrReportInDebug()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrReportInDebug:Z
 
     return v0
@@ -182,7 +178,6 @@
 .method public isEnableActivityLifecycleBreadcrumbs()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleBreadcrumbs:Z
 
     return v0
@@ -191,7 +186,6 @@
 .method public isEnableActivityLifecycleTracingAutoFinish()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleTracingAutoFinish:Z
 
     return v0
@@ -200,7 +194,6 @@
 .method public isEnableAppComponentBreadcrumbs()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppComponentBreadcrumbs:Z
 
     return v0
@@ -209,7 +202,6 @@
 .method public isEnableAppLifecycleBreadcrumbs()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppLifecycleBreadcrumbs:Z
 
     return v0
@@ -218,7 +210,6 @@
 .method public isEnableAutoActivityLifecycleTracing()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoActivityLifecycleTracing:Z
 
     return v0
@@ -227,7 +218,6 @@
 .method public isEnableSystemEventBreadcrumbs()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbs:Z
 
     return v0
@@ -236,7 +226,6 @@
 .method public isEnableUserInteractionBreadcrumbs()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableUserInteractionBreadcrumbs:Z
 
     return v0
@@ -245,7 +234,6 @@
 .method public setAnrEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrEnabled:Z
 
     return-void
@@ -254,7 +242,6 @@
 .method public setAnrReportInDebug(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrReportInDebug:Z
 
     return-void
@@ -263,7 +250,6 @@
 .method public setAnrTimeoutIntervalMillis(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrTimeoutIntervalMillis:J
 
     return-void
@@ -276,7 +262,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-static {}, Lio/sentry/android/core/NoOpDebugImagesLoader;->getInstance()Lio/sentry/android/core/NoOpDebugImagesLoader;
 
@@ -291,7 +276,6 @@
 .method public setEnableActivityLifecycleBreadcrumbs(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleBreadcrumbs:Z
 
     return-void
@@ -300,7 +284,6 @@
 .method public setEnableActivityLifecycleTracingAutoFinish(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleTracingAutoFinish:Z
 
     return-void
@@ -309,7 +292,6 @@
 .method public setEnableAppComponentBreadcrumbs(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppComponentBreadcrumbs:Z
 
     return-void
@@ -318,7 +300,6 @@
 .method public setEnableAppLifecycleBreadcrumbs(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppLifecycleBreadcrumbs:Z
 
     return-void
@@ -327,7 +308,6 @@
 .method public setEnableAutoActivityLifecycleTracing(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoActivityLifecycleTracing:Z
 
     return-void
@@ -336,7 +316,6 @@
 .method public setEnableSystemEventBreadcrumbs(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbs:Z
 
     return-void
@@ -345,7 +324,6 @@
 .method public setEnableUserInteractionBreadcrumbs(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableUserInteractionBreadcrumbs:Z
 
     return-void

@@ -28,9 +28,9 @@
 
 
 # instance fields
-.field public final n:Ljava/util/concurrent/CountDownLatch;
+.field public final o:Ljava/util/concurrent/CountDownLatch;
 
-.field public final synthetic o:Lo0/a;
+.field public final synthetic p:Lo0/a;
 
 
 # direct methods
@@ -38,7 +38,7 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lo0/a$a;->o:Lo0/a;
+    iput-object p1, p0, Lo0/a$a;->p:Lo0/a;
 
     invoke-direct {p0}, Lo0/c;-><init>()V
 
@@ -49,14 +49,14 @@
 
     invoke-direct {p1, v0}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    iput-object p1, p0, Lo0/a$a;->n:Ljava/util/concurrent/CountDownLatch;
+    iput-object p1, p0, Lo0/a$a;->o:Ljava/util/concurrent/CountDownLatch;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a([Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a([Ljava/lang/Object;)V
     .locals 1
 
     .line 1
@@ -64,9 +64,9 @@
 
     .line 2
     :try_start_0
-    iget-object p1, p0, Lo0/a$a;->o:Lo0/a;
+    iget-object p1, p0, Lo0/a$a;->p:Lo0/a;
 
-    invoke-virtual {p1}, Lo0/a;->h()Ljava/lang/Object;
+    invoke-virtual {p1}, Lo0/a;->h()V
     :try_end_0
     .catch Landroidx/core/os/OperationCanceledException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -76,7 +76,7 @@
     move-exception p1
 
     .line 3
-    iget-object v0, p0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lo0/c;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -85,17 +85,15 @@
     if-eqz v0, :cond_0
 
     :goto_0
-    const/4 p1, 0x0
-
-    return-object p1
+    return-void
 
     .line 4
     :cond_0
     throw p1
 .end method
 
-.method public b(Ljava/lang/Object;)V
-    .locals 1
+.method public final b()V
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TD;)V"
@@ -104,45 +102,45 @@
 
     .line 1
     :try_start_0
-    iget-object p1, p0, Lo0/a$a;->o:Lo0/a;
+    iget-object v0, p0, Lo0/a$a;->p:Lo0/a;
 
     .line 2
-    iget-object v0, p1, Lo0/a;->i:Lo0/a$a;
+    iget-object v1, v0, Lo0/a;->i:Lo0/a$a;
 
-    if-ne v0, p0, :cond_0
+    if-ne v1, p0, :cond_0
 
     .line 3
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
     .line 4
-    iput-object v0, p1, Lo0/a;->i:Lo0/a$a;
+    iput-object v1, v0, Lo0/a;->i:Lo0/a$a;
 
     .line 5
-    invoke-virtual {p1}, Lo0/a;->f()V
+    invoke-virtual {v0}, Lo0/a;->f()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 6
     :cond_0
-    iget-object p1, p0, Lo0/a$a;->n:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lo0/a$a;->o:Ljava/util/concurrent/CountDownLatch;
 
-    invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
+    invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
     return-void
 
     :catchall_0
-    move-exception p1
+    move-exception v0
 
-    iget-object v0, p0, Lo0/a$a;->n:Ljava/util/concurrent/CountDownLatch;
+    iget-object v1, p0, Lo0/a$a;->o:Ljava/util/concurrent/CountDownLatch;
 
-    invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
+    invoke-virtual {v1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
-    throw p1
+    throw v0
 .end method
 
-.method public c(Ljava/lang/Object;)V
+.method public final c(Ljava/lang/Object;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -152,14 +150,14 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lo0/a$a;->o:Lo0/a;
+    iget-object v0, p0, Lo0/a$a;->p:Lo0/a;
 
     invoke-virtual {v0, p0, p1}, Lo0/a;->e(Lo0/a$a;Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 2
-    iget-object p1, p0, Lo0/a$a;->n:Ljava/util/concurrent/CountDownLatch;
+    iget-object p1, p0, Lo0/a$a;->o:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
@@ -168,18 +166,17 @@
     :catchall_0
     move-exception p1
 
-    iget-object v0, p0, Lo0/a$a;->n:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lo0/a$a;->o:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
     throw p1
 .end method
 
-.method public run()V
+.method public final run()V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lo0/a$a;->o:Lo0/a;
+    iget-object v0, p0, Lo0/a$a;->p:Lo0/a;
 
     invoke-virtual {v0}, Lo0/a;->f()V
 

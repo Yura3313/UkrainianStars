@@ -7,23 +7,22 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Landroidx/core/app/JobIntentService$a;,
+        Landroidx/core/app/JobIntentService$c;,
         Landroidx/core/app/JobIntentService$d;,
         Landroidx/core/app/JobIntentService$e;,
-        Landroidx/core/app/JobIntentService$f;,
-        Landroidx/core/app/JobIntentService$c;,
         Landroidx/core/app/JobIntentService$b;,
-        Landroidx/core/app/JobIntentService$g;
+        Landroidx/core/app/JobIntentService$f;
     }
 .end annotation
 
 
 # static fields
-.field public static final l:Ljava/util/HashMap;
+.field public static final k:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
             "Landroid/content/ComponentName;",
-            "Landroidx/core/app/JobIntentService$g;",
+            "Landroidx/core/app/JobIntentService$f;",
             ">;"
         }
     .end annotation
@@ -31,19 +30,19 @@
 
 
 # instance fields
-.field public g:Landroidx/core/app/JobIntentService$b;
+.field public f:Landroidx/core/app/JobIntentService$e;
 
-.field public h:Landroidx/core/app/JobIntentService$g;
+.field public g:Landroidx/core/app/JobIntentService$f;
 
-.field public i:Landroidx/core/app/JobIntentService$a;
+.field public h:Landroidx/core/app/JobIntentService$a;
 
-.field public j:Z
+.field public i:Z
 
-.field public final k:Ljava/util/ArrayList;
+.field public final j:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Landroidx/core/app/JobIntentService$d;",
+            "Landroidx/core/app/JobIntentService$c;",
             ">;"
         }
     .end annotation
@@ -54,12 +53,11 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Landroidx/core/app/JobIntentService;->l:Ljava/util/HashMap;
+    sput-object v0, Landroidx/core/app/JobIntentService;->k:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -73,7 +71,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Landroidx/core/app/JobIntentService;->j:Z
+    iput-boolean v0, p0, Landroidx/core/app/JobIntentService;->i:Z
 
     .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -85,7 +83,7 @@
     const/4 v0, 0x0
 
     .line 4
-    iput-object v0, p0, Landroidx/core/app/JobIntentService;->k:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/core/app/JobIntentService;->j:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -95,7 +93,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroidx/core/app/JobIntentService;->k:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/core/app/JobIntentService;->j:Ljava/util/ArrayList;
 
     :goto_0
     return-void
@@ -103,11 +101,11 @@
 
 
 # virtual methods
-.method public a(Z)V
+.method public final a(Z)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/core/app/JobIntentService;->i:Landroidx/core/app/JobIntentService$a;
+    iget-object v0, p0, Landroidx/core/app/JobIntentService;->h:Landroidx/core/app/JobIntentService$a;
 
     if-nez v0, :cond_1
 
@@ -116,21 +114,21 @@
 
     invoke-direct {v0, p0}, Landroidx/core/app/JobIntentService$a;-><init>(Landroidx/core/app/JobIntentService;)V
 
-    iput-object v0, p0, Landroidx/core/app/JobIntentService;->i:Landroidx/core/app/JobIntentService$a;
+    iput-object v0, p0, Landroidx/core/app/JobIntentService;->h:Landroidx/core/app/JobIntentService$a;
 
     .line 3
-    iget-object v0, p0, Landroidx/core/app/JobIntentService;->h:Landroidx/core/app/JobIntentService$g;
+    iget-object v0, p0, Landroidx/core/app/JobIntentService;->g:Landroidx/core/app/JobIntentService$f;
 
     if-eqz v0, :cond_0
 
     if-eqz p1, :cond_0
 
     .line 4
-    invoke-virtual {v0}, Landroidx/core/app/JobIntentService$g;->b()V
+    invoke-virtual {v0}, Landroidx/core/app/JobIntentService$f;->b()V
 
     .line 5
     :cond_0
-    iget-object p1, p0, Landroidx/core/app/JobIntentService;->i:Landroidx/core/app/JobIntentService$a;
+    iget-object p1, p0, Landroidx/core/app/JobIntentService;->h:Landroidx/core/app/JobIntentService$a;
 
     sget-object v0, Landroid/os/AsyncTask;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
 
@@ -144,14 +142,14 @@
     return-void
 .end method
 
-.method public abstract b(Landroid/content/Intent;)V
+.method public abstract b()V
 .end method
 
-.method public c()V
+.method public final c()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/core/app/JobIntentService;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/core/app/JobIntentService;->j:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_2
 
@@ -162,10 +160,10 @@
 
     .line 3
     :try_start_0
-    iput-object v1, p0, Landroidx/core/app/JobIntentService;->i:Landroidx/core/app/JobIntentService$a;
+    iput-object v1, p0, Landroidx/core/app/JobIntentService;->h:Landroidx/core/app/JobIntentService$a;
 
     .line 4
-    iget-object v1, p0, Landroidx/core/app/JobIntentService;->k:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/core/app/JobIntentService;->j:Ljava/util/ArrayList;
 
     if-eqz v1, :cond_0
 
@@ -184,14 +182,14 @@
 
     .line 6
     :cond_0
-    iget-boolean v1, p0, Landroidx/core/app/JobIntentService;->j:Z
+    iget-boolean v1, p0, Landroidx/core/app/JobIntentService;->i:Z
 
     if-nez v1, :cond_1
 
     .line 7
-    iget-object v1, p0, Landroidx/core/app/JobIntentService;->h:Landroidx/core/app/JobIntentService$g;
+    iget-object v1, p0, Landroidx/core/app/JobIntentService;->g:Landroidx/core/app/JobIntentService$f;
 
-    invoke-virtual {v1}, Landroidx/core/app/JobIntentService$g;->a()V
+    invoke-virtual {v1}, Landroidx/core/app/JobIntentService$f;->a()V
 
     .line 8
     :cond_1
@@ -214,18 +212,15 @@
     return-void
 .end method
 
-.method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+.method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/core/app/JobIntentService;->g:Landroidx/core/app/JobIntentService$b;
+    iget-object p1, p0, Landroidx/core/app/JobIntentService;->f:Landroidx/core/app/JobIntentService$e;
 
     if-eqz p1, :cond_0
 
     .line 2
-    check-cast p1, Landroidx/core/app/JobIntentService$f;
-
-    .line 3
     invoke-virtual {p1}, Landroid/app/job/JobServiceEngine;->getBinder()Landroid/os/IBinder;
 
     move-result-object p1
@@ -238,7 +233,7 @@
     return-object p1
 .end method
 
-.method public onCreate()V
+.method public final onCreate()V
     .locals 5
 
     .line 1
@@ -254,20 +249,20 @@
     if-lt v0, v2, :cond_0
 
     .line 3
-    new-instance v0, Landroidx/core/app/JobIntentService$f;
+    new-instance v0, Landroidx/core/app/JobIntentService$e;
 
-    invoke-direct {v0, p0}, Landroidx/core/app/JobIntentService$f;-><init>(Landroidx/core/app/JobIntentService;)V
+    invoke-direct {v0, p0}, Landroidx/core/app/JobIntentService$e;-><init>(Landroidx/core/app/JobIntentService;)V
 
-    iput-object v0, p0, Landroidx/core/app/JobIntentService;->g:Landroidx/core/app/JobIntentService$b;
+    iput-object v0, p0, Landroidx/core/app/JobIntentService;->f:Landroidx/core/app/JobIntentService$e;
 
     .line 4
-    iput-object v1, p0, Landroidx/core/app/JobIntentService;->h:Landroidx/core/app/JobIntentService$g;
+    iput-object v1, p0, Landroidx/core/app/JobIntentService;->g:Landroidx/core/app/JobIntentService$f;
 
     goto :goto_1
 
     .line 5
     :cond_0
-    iput-object v1, p0, Landroidx/core/app/JobIntentService;->g:Landroidx/core/app/JobIntentService$b;
+    iput-object v1, p0, Landroidx/core/app/JobIntentService;->f:Landroidx/core/app/JobIntentService$e;
 
     .line 6
     new-instance v1, Landroid/content/ComponentName;
@@ -279,22 +274,22 @@
     invoke-direct {v1, p0, v3}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 7
-    sget-object v3, Landroidx/core/app/JobIntentService;->l:Ljava/util/HashMap;
+    sget-object v3, Landroidx/core/app/JobIntentService;->k:Ljava/util/HashMap;
 
     invoke-virtual {v3, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
-    check-cast v4, Landroidx/core/app/JobIntentService$g;
+    check-cast v4, Landroidx/core/app/JobIntentService$f;
 
     if-nez v4, :cond_2
 
     if-ge v0, v2, :cond_1
 
     .line 8
-    new-instance v4, Landroidx/core/app/JobIntentService$c;
+    new-instance v4, Landroidx/core/app/JobIntentService$b;
 
-    invoke-direct {v4, p0, v1}, Landroidx/core/app/JobIntentService$c;-><init>(Landroid/content/Context;Landroid/content/ComponentName;)V
+    invoke-direct {v4, p0, v1}, Landroidx/core/app/JobIntentService$b;-><init>(Landroid/content/Context;Landroid/content/ComponentName;)V
 
     .line 9
     invoke-virtual {v3, v1, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -314,20 +309,20 @@
     .line 11
     :cond_2
     :goto_0
-    iput-object v4, p0, Landroidx/core/app/JobIntentService;->h:Landroidx/core/app/JobIntentService$g;
+    iput-object v4, p0, Landroidx/core/app/JobIntentService;->g:Landroidx/core/app/JobIntentService$f;
 
     :goto_1
     return-void
 .end method
 
-.method public onDestroy()V
+.method public final onDestroy()V
     .locals 2
 
     .line 1
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
 
     .line 2
-    iget-object v0, p0, Landroidx/core/app/JobIntentService;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/core/app/JobIntentService;->j:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
@@ -338,12 +333,12 @@
 
     .line 4
     :try_start_0
-    iput-boolean v1, p0, Landroidx/core/app/JobIntentService;->j:Z
+    iput-boolean v1, p0, Landroidx/core/app/JobIntentService;->i:Z
 
     .line 5
-    iget-object v1, p0, Landroidx/core/app/JobIntentService;->h:Landroidx/core/app/JobIntentService$g;
+    iget-object v1, p0, Landroidx/core/app/JobIntentService;->g:Landroidx/core/app/JobIntentService$f;
 
-    invoke-virtual {v1}, Landroidx/core/app/JobIntentService$g;->a()V
+    invoke-virtual {v1}, Landroidx/core/app/JobIntentService$f;->a()V
 
     .line 6
     monitor-exit v0
@@ -364,29 +359,29 @@
     return-void
 .end method
 
-.method public onStartCommand(Landroid/content/Intent;II)I
+.method public final onStartCommand(Landroid/content/Intent;II)I
     .locals 2
 
     .line 1
-    iget-object p2, p0, Landroidx/core/app/JobIntentService;->k:Ljava/util/ArrayList;
+    iget-object p2, p0, Landroidx/core/app/JobIntentService;->j:Ljava/util/ArrayList;
 
     if-eqz p2, :cond_1
 
     .line 2
-    iget-object p2, p0, Landroidx/core/app/JobIntentService;->h:Landroidx/core/app/JobIntentService$g;
+    iget-object p2, p0, Landroidx/core/app/JobIntentService;->g:Landroidx/core/app/JobIntentService$f;
 
-    invoke-virtual {p2}, Landroidx/core/app/JobIntentService$g;->c()V
+    invoke-virtual {p2}, Landroidx/core/app/JobIntentService$f;->c()V
 
     .line 3
-    iget-object p2, p0, Landroidx/core/app/JobIntentService;->k:Ljava/util/ArrayList;
+    iget-object p2, p0, Landroidx/core/app/JobIntentService;->j:Ljava/util/ArrayList;
 
     monitor-enter p2
 
     .line 4
     :try_start_0
-    iget-object v0, p0, Landroidx/core/app/JobIntentService;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/core/app/JobIntentService;->j:Ljava/util/ArrayList;
 
-    new-instance v1, Landroidx/core/app/JobIntentService$d;
+    new-instance v1, Landroidx/core/app/JobIntentService$c;
 
     if-eqz p1, :cond_0
 
@@ -398,7 +393,7 @@
     invoke-direct {p1}, Landroid/content/Intent;-><init>()V
 
     :goto_0
-    invoke-direct {v1, p0, p1, p3}, Landroidx/core/app/JobIntentService$d;-><init>(Landroidx/core/app/JobIntentService;Landroid/content/Intent;I)V
+    invoke-direct {v1, p0, p1, p3}, Landroidx/core/app/JobIntentService$c;-><init>(Landroidx/core/app/JobIntentService;Landroid/content/Intent;I)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

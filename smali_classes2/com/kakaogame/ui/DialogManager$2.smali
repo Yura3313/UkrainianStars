@@ -27,7 +27,6 @@
 .method public constructor <init>(Landroid/app/AlertDialog$Builder;Landroid/content/DialogInterface$OnDismissListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/ui/DialogManager$2;->val$builder:Landroid/app/AlertDialog$Builder;
 
     iput-object p2, p0, Lcom/kakaogame/ui/DialogManager$2;->val$listener:Landroid/content/DialogInterface$OnDismissListener;
@@ -56,16 +55,16 @@
     if-eqz v1, :cond_0
 
     .line 3
-    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     :cond_0
     const/4 v1, 0x0
 
     .line 4
-    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
+    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
     .line 5
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -78,7 +77,7 @@
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
     .line 6
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
+    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -88,7 +87,7 @@
     move-exception v0
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 

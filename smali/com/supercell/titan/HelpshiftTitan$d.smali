@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/HelpshiftTitan$d;
+.class public final Lcom/supercell/titan/HelpshiftTitan$d;
 .super Ljava/lang/Object;
 .source "HelpshiftTitan.java"
 
@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,7 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 1
 
     .line 1

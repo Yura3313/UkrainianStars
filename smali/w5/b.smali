@@ -1,60 +1,26 @@
 .class public interface abstract Lw5/b;
 .super Ljava/lang/Object;
+.source "com.google.firebase:firebase-common@@16.0.2"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lb4/f;
+.method public abstract a(Landroidx/fragment/app/p;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ")",
-            "Lb4/f<",
-            "Ljava/lang/Void;",
-            ">;"
+            "Landroidx/fragment/app/p;",
+            ")TT;"
         }
     .end annotation
-.end method
-
-.method public abstract b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lb4/f;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ")",
-            "Lb4/f<",
-            "Ljava/lang/Void;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lb4/f;
-    .param p2    # Ljava/lang/String;
-        .annotation runtime Ljavax/annotation/Nullable;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ")",
-            "Lb4/f<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract d()Z
-.end method
-
-.method public abstract e()Z
 .end method

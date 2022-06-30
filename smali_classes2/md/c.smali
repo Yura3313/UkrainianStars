@@ -1,260 +1,159 @@
 .class public final Lmd/c;
-.super Lle/j;
-.source "ProfileSelectorFragment.kt"
+.super Lse/h;
+.source "LoginConfirmPageFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Ljava/util/List<",
-        "+",
-        "Lqc/x;",
-        ">;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/p<",
+        "Lmd/e;",
+        "Lvc/d0;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+# static fields
+.field public static final f:Lmd/c;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lmd/c;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    new-instance v0, Lmd/c;
 
-    const/4 p1, 0x1
+    invoke-direct {v0}, Lmd/c;-><init>()V
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    sput-object v0, Lmd/c;->f:Lmd/c;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 9
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    check-cast p1, Ljava/util/List;
+    move-object v1, p1
 
-    const/4 v0, 0x0
+    check-cast v1, Lmd/e;
 
-    if-eqz p1, :cond_9
+    check-cast p2, Lvc/d0;
+
+    const-string p1, "$receiver"
 
     .line 2
-    new-instance v1, Ljava/util/ArrayList;
+    invoke-static {v1, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    const-string p1, "data"
+
+    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    instance-of p1, p2, Lvc/d0$c;
 
-    move-result-object p1
+    if-eqz p1, :cond_0
 
-    :cond_0
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    .line 4
+    iget-object p1, p2, Lvc/d0;->a:Ljava/lang/String;
 
-    move-result v2
+    .line 5
+    sget p2, Lmd/e;->c0:I
 
-    const/4 v3, 0x1
+    .line 6
+    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    if-eqz v2, :cond_4
+    invoke-virtual {v1}, Lmd/u;->V0()Ljava/lang/String;
 
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v0
+
+    invoke-virtual {v1}, Lmd/u;->Y0()Ljava/lang/String;
 
     move-result-object v2
 
-    move-object v4, v2
+    invoke-virtual {v1}, Lmd/u;->Z0()Z
 
-    check-cast v4, Lqc/x;
+    move-result v1
 
-    .line 4
-    iget-object v5, p0, Lmd/c;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
-
-    .line 5
-    iget-object v5, v5, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/List;
-
-    .line 6
-    invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v5
-
-    :cond_1
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_2
-
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v6
-
-    move-object v7, v6
-
-    check-cast v7, Lqc/c;
+    invoke-virtual {p2, v0, v2, p1, v1}, Lcom/supercell/id/SupercellId;->loadAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 7
-    iget-object v7, v7, Lqc/c;->a:Lcom/supercell/id/IdAccount;
-
-    .line 8
-    invoke-virtual {v7}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 9
-    iget-object v8, v4, Lqc/x;->b:Ljava/lang/String;
-
-    .line 10
-    invoke-static {v7, v8}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_1
-
-    goto :goto_1
-
-    :cond_2
-    move-object v6, v0
-
-    :goto_1
-    if-nez v6, :cond_3
-
-    goto :goto_2
-
-    :cond_3
-    const/4 v3, 0x0
-
-    :goto_2
-    if-eqz v3, :cond_0
-
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->dismiss()V
 
     goto :goto_0
 
+    .line 8
+    :cond_0
+    instance-of p1, p2, Lvc/d0$a;
+
+    if-eqz p1, :cond_1
+
+    move-object p1, p2
+
+    check-cast p1, Lvc/d0$a;
+
+    .line 9
+    iget-object v3, p1, Lvc/d0$a;->c:Ljava/lang/String;
+
+    .line 10
+    iget-object v4, p2, Lvc/d0;->a:Ljava/lang/String;
+
     .line 11
-    :cond_4
-    iget-object p1, p0, Lmd/c;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    sget p1, Lmd/e;->c0:I
 
     .line 12
-    new-instance v0, Ljava/util/ArrayList;
+    sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-virtual {v1}, Lmd/u;->V0()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v1}, Lmd/u;->Y0()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v1}, Lmd/u;->Z0()Z
+
+    move-result v7
+
+    invoke-virtual/range {v2 .. v7}, Lcom/supercell/id/SupercellId;->bindAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lze/e0;
+
+    move-result-object v0
+
+    sget-object v2, Lmd/a;->f:Lmd/a;
 
     .line 13
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    sget-object v3, Lmd/b;->f:Lmd/b;
 
-    move-result-object v2
+    const/4 v4, 0x0
 
-    :cond_5
-    :goto_3
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_6
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    move-object v5, v4
-
-    check-cast v5, Lqc/x;
+    const/16 v5, 0x8
 
     .line 14
-    invoke-virtual {v5}, Lqc/x;->b()Z
-
-    move-result v5
-
-    xor-int/2addr v5, v3
-
-    if-eqz v5, :cond_5
-
-    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_3
+    invoke-static/range {v0 .. v5}, Lae/u1;->k(Lze/e0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/e0;
 
     .line 15
-    :cond_6
-    iput-object v0, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
-
-    .line 16
-    iget-object p1, p0, Lmd/c;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
-
-    .line 17
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    .line 18
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_7
-    :goto_4
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_8
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    move-object v3, v2
-
-    check-cast v3, Lqc/x;
-
-    .line 19
-    invoke-virtual {v3}, Lqc/x;->b()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_7
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_4
-
-    .line 20
-    :cond_8
-    iput-object v0, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o0:Ljava/util/List;
-
-    .line 21
-    iget-object p1, p0, Lmd/c;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
-
-    .line 22
-    invoke-virtual {p1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->r1()V
-
-    .line 23
-    sget-object p1, Lae/i;->a:Lae/i;
+    :cond_1
+    :goto_0
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
-
-    :cond_9
-    const-string p1, "sharedProfiles"
-
-    .line 24
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    goto :goto_6
-
-    :goto_5
-    throw v0
-
-    :goto_6
-    goto :goto_5
 .end method

@@ -153,13 +153,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
 .end method
 
-.method public static c(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
+.method public static e(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
     .locals 1
 
     .line 1
@@ -205,7 +204,6 @@
 .method public static valueOf(Ljava/lang/String;)Landroidx/lifecycle/f$b;
     .locals 1
 
-    .line 1
     const-class v0, Landroidx/lifecycle/f$b;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -220,7 +218,6 @@
 .method public static values()[Landroidx/lifecycle/f$b;
     .locals 1
 
-    .line 1
     sget-object v0, Landroidx/lifecycle/f$b;->$VALUES:[Landroidx/lifecycle/f$b;
 
     invoke-virtual {v0}, [Landroidx/lifecycle/f$b;->clone()Ljava/lang/Object;
@@ -234,7 +231,7 @@
 
 
 # virtual methods
-.method public a()Landroidx/lifecycle/f$c;
+.method public final c()Landroidx/lifecycle/f$c;
     .locals 3
 
     .line 1
@@ -271,25 +268,25 @@
 
     .line 3
     :pswitch_0
-    sget-object v0, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->f:Landroidx/lifecycle/f$c;
 
     return-object v0
 
     .line 4
     :pswitch_1
-    sget-object v0, Landroidx/lifecycle/f$c;->k:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
     return-object v0
 
     .line 5
     :pswitch_2
-    sget-object v0, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
 
     return-object v0
 
     .line 6
     :pswitch_3
-    sget-object v0, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
 
     return-object v0
 

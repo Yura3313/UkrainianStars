@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;
-.super Lle/j;
+.super Lse/h;
 .source "ScanCodeFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->a(Lob/b;)V
+    value = Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->P0(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment$b;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,64 +18,107 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lrc/e;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/l<",
+        "Landroid/view/View;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
+.field public final synthetic f:Landroid/view/View;
+
+.field public final synthetic g:F
+
+.field public final synthetic h:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;)V
+.method public constructor <init>(Landroid/view/View;FLcom/supercell/id/ui/scancode/ScanCodeFragment$b;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->g:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
+    iput-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->f:Landroid/view/View;
+
+    iput p2, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->g:F
+
+    iput-object p3, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->h:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    check-cast p1, Lrc/e;
+    check-cast p1, Landroid/view/View;
 
-    if-eqz p1, :cond_0
+    const-string v0, "it"
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->g:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
-
-    iget-object p1, p1, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
-
-    sget v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->p0:I
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {p1}, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->p1()V
+    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->h:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
+
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->N()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
 
     .line 4
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
     :cond_0
-    const-string p1, "it"
+    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->f:Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+
+    move-result-object p1
+
+    iget v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->g:F
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewPropertyAnimator;->scaleX(F)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object p1
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewPropertyAnimator;->scaleY(F)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object p1
+
+    const-wide/16 v0, 0x12c
+
+    invoke-virtual {p1, v0, v1}, Landroid/view/ViewPropertyAnimator;->setStartDelay(J)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v0, v1}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object p1
 
     .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    sget-object v0, Ltc/a;->b:Landroid/view/animation/Interpolator;
 
-    const/4 p1, 0x0
+    .line 6
+    invoke-virtual {p1, v0}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
 
-    throw p1
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V
+
+    .line 7
+    :goto_0
+    sget-object p1, Lie/h;->a:Lie/h;
+
+    return-object p1
 .end method

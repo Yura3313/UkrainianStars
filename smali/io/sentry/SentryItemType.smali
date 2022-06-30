@@ -204,7 +204,6 @@
 .method public static valueOf(Ljava/lang/String;)Lio/sentry/SentryItemType;
     .locals 1
 
-    .line 1
     const-class v0, Lio/sentry/SentryItemType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -219,7 +218,6 @@
 .method public static values()[Lio/sentry/SentryItemType;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/SentryItemType;->$VALUES:[Lio/sentry/SentryItemType;
 
     invoke-virtual {v0}, [Lio/sentry/SentryItemType;->clone()Ljava/lang/Object;
@@ -236,7 +234,6 @@
 .method public getItemType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryItemType;->itemType:Ljava/lang/String;
 
     return-object v0

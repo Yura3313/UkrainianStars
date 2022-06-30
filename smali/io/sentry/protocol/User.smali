@@ -42,7 +42,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -51,30 +50,30 @@
 .method public constructor <init>(Lio/sentry/protocol/User;)V
     .locals 1
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 2
     iget-object v0, p1, Lio/sentry/protocol/User;->email:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/User;->email:Ljava/lang/String;
 
-    .line 4
+    .line 3
     iget-object v0, p1, Lio/sentry/protocol/User;->username:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/User;->username:Ljava/lang/String;
 
-    .line 5
+    .line 4
     iget-object v0, p1, Lio/sentry/protocol/User;->id:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/User;->id:Ljava/lang/String;
 
-    .line 6
+    .line 5
     iget-object v0, p1, Lio/sentry/protocol/User;->ipAddress:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/User;->ipAddress:Ljava/lang/String;
 
-    .line 7
+    .line 6
     iget-object v0, p1, Lio/sentry/protocol/User;->other:Ljava/util/Map;
 
     invoke-static {v0}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -83,7 +82,7 @@
 
     iput-object v0, p0, Lio/sentry/protocol/User;->other:Ljava/util/Map;
 
-    .line 8
+    .line 7
     iget-object p1, p1, Lio/sentry/protocol/User;->unknown:Ljava/util/Map;
 
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -112,7 +111,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(Ljava/util/Map;)V
@@ -125,7 +123,6 @@
 .method public getEmail()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/User;->email:Ljava/lang/String;
 
     return-object v0
@@ -134,7 +131,6 @@
 .method public getId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/User;->id:Ljava/lang/String;
 
     return-object v0
@@ -143,7 +139,6 @@
 .method public getIpAddress()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/User;->ipAddress:Ljava/lang/String;
 
     return-object v0
@@ -161,7 +156,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/User;->other:Ljava/util/Map;
 
     return-object v0
@@ -179,7 +173,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/User;->unknown:Ljava/util/Map;
 
     return-object v0
@@ -188,7 +181,6 @@
 .method public getUsername()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/User;->username:Ljava/lang/String;
 
     return-object v0
@@ -197,7 +189,6 @@
 .method public setEmail(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/User;->email:Ljava/lang/String;
 
     return-void
@@ -206,7 +197,6 @@
 .method public setId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/User;->id:Ljava/lang/String;
 
     return-void
@@ -215,7 +205,6 @@
 .method public setIpAddress(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/User;->ipAddress:Ljava/lang/String;
 
     return-void
@@ -233,7 +222,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
@@ -246,7 +234,6 @@
 .method public setUsername(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/User;->username:Ljava/lang/String;
 
     return-void

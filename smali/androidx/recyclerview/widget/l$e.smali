@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/l$e;
+.class public final Landroidx/recyclerview/widget/l$e;
 .super Ljava/lang/Object;
 .source "DiffUtil.java"
 
@@ -34,23 +34,25 @@
     return-void
 .end method
 
-.method public constructor <init>(IIII)V
-    .locals 0
+.method public constructor <init>(II)V
+    .locals 1
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/4 v0, 0x0
+
     .line 3
-    iput p1, p0, Landroidx/recyclerview/widget/l$e;->a:I
+    iput v0, p0, Landroidx/recyclerview/widget/l$e;->a:I
 
     .line 4
-    iput p2, p0, Landroidx/recyclerview/widget/l$e;->b:I
+    iput p1, p0, Landroidx/recyclerview/widget/l$e;->b:I
 
     .line 5
-    iput p3, p0, Landroidx/recyclerview/widget/l$e;->c:I
+    iput v0, p0, Landroidx/recyclerview/widget/l$e;->c:I
 
     .line 6
-    iput p4, p0, Landroidx/recyclerview/widget/l$e;->d:I
+    iput p2, p0, Landroidx/recyclerview/widget/l$e;->d:I
 
     return-void
 .end method

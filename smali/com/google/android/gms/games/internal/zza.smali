@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zzbn;-><init>()V
 
     return-void
@@ -15,13 +14,13 @@
 
 
 # virtual methods
-.method public V0()V
+.method public X0()V
     .locals 0
 
     return-void
 .end method
 
-.method public Z3(ILjava/lang/String;)V
+.method public v0(I)V
     .locals 0
 
     return-void

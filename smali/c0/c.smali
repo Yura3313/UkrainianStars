@@ -1,4 +1,4 @@
-.class public Lc0/c;
+.class public final Lc0/c;
 .super Ljava/lang/Object;
 .source "FontsContractCompat.java"
 
@@ -24,13 +24,14 @@
 
 
 # direct methods
-.method public constructor <init>(Lw/e$a;Landroid/os/Handler;)V
+.method public constructor <init>(Lw/e$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lc0/c;->a:Lw/e$a;
 
-    iput-object p2, p0, Lc0/c;->b:Landroid/os/Handler;
+    const/4 p1, 0x0
+
+    iput-object p1, p0, Lc0/c;->b:Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +40,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)V
+.method public final a(Ljava/lang/Object;)V
     .locals 2
 
     .line 1

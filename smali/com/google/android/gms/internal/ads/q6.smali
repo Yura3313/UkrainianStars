@@ -4,8 +4,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/d6;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/a0$a;I)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/d6;Lcom/google/android/gms/internal/ads/a0$a;I)V
     .locals 7
+
+    const-string v2, "KPLQ0fePjwRZEMYpyhf3z9wME5WAXo6nyi3l+jJDepzY4MR9ieVKu+2i7JuNsveg"
+
+    const-string v3, "17DwGTsvrSwrOOIos7QWdg74ixLWLGA2Yzsqu+WYLrw="
 
     const/16 v6, 0x4c
 
@@ -13,15 +17,10 @@
 
     move-object v1, p1
 
-    move-object v2, p2
+    move-object v4, p2
 
-    move-object v3, p3
+    move v5, p3
 
-    move-object v4, p4
-
-    move v5, p5
-
-    .line 1
     invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/internal/ads/d7;-><init>(Lcom/google/android/gms/internal/ads/d6;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/a0$a;II)V
 
     return-void
@@ -76,7 +75,7 @@
 
     .line 5
     :cond_0
-    iget-boolean v0, v2, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iget-boolean v0, v2, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     if-eqz v0, :cond_1
 
@@ -84,15 +83,15 @@
     invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
 
     .line 7
-    iput-boolean v4, v2, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iput-boolean v4, v2, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     .line 8
     :cond_1
-    iget-object v0, v2, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+    iget-object v0, v2, Lcom/google/android/gms/internal/ads/v5$b;->g:Lcom/google/android/gms/internal/ads/v5;
 
     check-cast v0, Lcom/google/android/gms/internal/ads/a0;
 
-    invoke-static {v0, v1}, Lcom/google/android/gms/internal/ads/a0;->i0(Lcom/google/android/gms/internal/ads/a0;I)V
+    invoke-static {v0, v1}, Lcom/google/android/gms/internal/ads/a0;->g0(Lcom/google/android/gms/internal/ads/a0;I)V
 
     return-void
 .end method

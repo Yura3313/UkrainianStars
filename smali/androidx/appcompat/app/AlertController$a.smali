@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/AlertController$a;
+.class public final Landroidx/appcompat/app/AlertController$a;
 .super Ljava/lang/Object;
 .source "AlertController.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/app/AlertController;
+.field public final synthetic f:Landroidx/appcompat/app/AlertController;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/app/AlertController;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/app/AlertController$a;->g:Landroidx/appcompat/app/AlertController;
+    iput-object p1, p0, Landroidx/appcompat/app/AlertController$a;->f:Landroidx/appcompat/app/AlertController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,17 +34,17 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public final onClick(Landroid/view/View;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/AlertController$a;->g:Landroidx/appcompat/app/AlertController;
+    iget-object v0, p0, Landroidx/appcompat/app/AlertController$a;->f:Landroidx/appcompat/app/AlertController;
 
-    iget-object v1, v0, Landroidx/appcompat/app/AlertController;->o:Landroid/widget/Button;
+    iget-object v1, v0, Landroidx/appcompat/app/AlertController;->i:Landroid/widget/Button;
 
     if-ne p1, v1, :cond_0
 
-    iget-object v1, v0, Landroidx/appcompat/app/AlertController;->q:Landroid/os/Message;
+    iget-object v1, v0, Landroidx/appcompat/app/AlertController;->k:Landroid/os/Message;
 
     if-eqz v1, :cond_0
 
@@ -58,11 +57,11 @@
 
     .line 3
     :cond_0
-    iget-object v1, v0, Landroidx/appcompat/app/AlertController;->s:Landroid/widget/Button;
+    iget-object v1, v0, Landroidx/appcompat/app/AlertController;->m:Landroid/widget/Button;
 
     if-ne p1, v1, :cond_1
 
-    iget-object v1, v0, Landroidx/appcompat/app/AlertController;->u:Landroid/os/Message;
+    iget-object v1, v0, Landroidx/appcompat/app/AlertController;->o:Landroid/os/Message;
 
     if-eqz v1, :cond_1
 
@@ -75,11 +74,11 @@
 
     .line 5
     :cond_1
-    iget-object v1, v0, Landroidx/appcompat/app/AlertController;->w:Landroid/widget/Button;
+    iget-object v1, v0, Landroidx/appcompat/app/AlertController;->q:Landroid/widget/Button;
 
     if-ne p1, v1, :cond_2
 
-    iget-object p1, v0, Landroidx/appcompat/app/AlertController;->y:Landroid/os/Message;
+    iget-object p1, v0, Landroidx/appcompat/app/AlertController;->s:Landroid/os/Message;
 
     if-eqz p1, :cond_2
 
@@ -101,13 +100,13 @@
 
     .line 8
     :cond_3
-    iget-object p1, p0, Landroidx/appcompat/app/AlertController$a;->g:Landroidx/appcompat/app/AlertController;
+    iget-object p1, p0, Landroidx/appcompat/app/AlertController$a;->f:Landroidx/appcompat/app/AlertController;
 
-    iget-object v0, p1, Landroidx/appcompat/app/AlertController;->Q:Landroid/os/Handler;
+    iget-object v0, p1, Landroidx/appcompat/app/AlertController;->K:Landroidx/appcompat/app/AlertController$c;
 
     const/4 v1, 0x1
 
-    iget-object p1, p1, Landroidx/appcompat/app/AlertController;->b:Landroidx/appcompat/app/o;
+    iget-object p1, p1, Landroidx/appcompat/app/AlertController;->b:Landroidx/appcompat/app/p;
 
     invoke-virtual {v0, v1, p1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 

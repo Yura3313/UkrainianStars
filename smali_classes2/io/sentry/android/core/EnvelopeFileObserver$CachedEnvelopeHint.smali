@@ -66,7 +66,6 @@
 .method public isRetry()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/EnvelopeFileObserver$CachedEnvelopeHint;->retry:Z
 
     return v0
@@ -75,7 +74,6 @@
 .method public isSuccess()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/EnvelopeFileObserver$CachedEnvelopeHint;->succeeded:Z
 
     return v0
@@ -121,7 +119,6 @@
 .method public setRetry(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/EnvelopeFileObserver$CachedEnvelopeHint;->retry:Z
 
     return-void

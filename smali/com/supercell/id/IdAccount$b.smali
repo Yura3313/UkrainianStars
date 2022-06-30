@@ -15,10 +15,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lle/g;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +26,7 @@
 
 # virtual methods
 .method public final a(Lorg/json/JSONArray;)Ljava/util/List;
-    .locals 4
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -39,14 +38,14 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
-
     .line 1
     invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
 
-    move-result v1
+    move-result v0
 
-    invoke-static {v0, v1}, Lc2/n0;->e(II)Loe/c;
+    const/4 v1, 0x0
+
+    invoke-static {v1, v0}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
 
     move-result-object v0
 
@@ -56,7 +55,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 3
-    invoke-virtual {v0}, Loe/a;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Lve/a;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -70,11 +69,13 @@
 
     move-object v2, v0
 
-    check-cast v2, Lbe/t;
+    check-cast v2, Lje/s;
 
-    invoke-virtual {v2}, Lbe/t;->b()I
+    invoke-virtual {v2}, Lje/s;->a()I
 
     move-result v2
+
+    const/4 v3, 0x0
 
     .line 4
     :try_start_0
@@ -85,11 +86,13 @@
     if-eqz v2, :cond_1
 
     .line 5
-    new-instance v3, Lcom/supercell/id/IdAccount;
+    new-instance v4, Lcom/supercell/id/IdAccount;
 
-    invoke-direct {v3, v2}, Lcom/supercell/id/IdAccount;-><init>(Lorg/json/JSONObject;)V
+    invoke-direct {v4, v2}, Lcom/supercell/id/IdAccount;-><init>(Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-object v3, v4
 
     goto :goto_1
 
@@ -97,11 +100,9 @@
     move-exception v2
 
     .line 6
-    invoke-virtual {v2}, Lorg/json/JSONException;->getLocalizedMessage()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
 
     :cond_1
-    const/4 v3, 0x0
-
     :goto_1
     if-eqz v3, :cond_0
 

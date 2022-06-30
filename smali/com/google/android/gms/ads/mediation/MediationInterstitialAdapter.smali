@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Lj1/f;
+.implements Lk1/f;
 
 
 # virtual methods
@@ -16,7 +16,7 @@
 .method public abstract synthetic onResume()V
 .end method
 
-.method public abstract requestInterstitialAd(Landroid/content/Context;Lj1/k;Landroid/os/Bundle;Lj1/e;Landroid/os/Bundle;)V
+.method public abstract requestInterstitialAd(Landroid/content/Context;Lk1/k;Landroid/os/Bundle;Lk1/e;Landroid/os/Bundle;)V
 .end method
 
 .method public abstract showInterstitial()V

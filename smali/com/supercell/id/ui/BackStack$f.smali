@@ -1,9 +1,9 @@
 .class public final synthetic Lcom/supercell/id/ui/BackStack$f;
-.super Lle/i;
+.super Lse/g;
 .source "BackStack.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/a;
 
 
 # annotations
@@ -18,9 +18,9 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/i;",
-        "Lke/a<",
-        "Lae/i;",
+        "Lse/g;",
+        "Lre/a<",
+        "Lie/h;",
         ">;"
     }
 .end annotation
@@ -32,7 +32,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0, p1}, Lle/i;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p0, v0, p1}, Lse/g;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -47,12 +47,12 @@
     return-object v0
 .end method
 
-.method public final getOwner()Lpe/d;
+.method public final getOwner()Lwe/d;
     .locals 1
 
     const-class v0, Lcom/supercell/id/ui/BackStack$b;
 
-    invoke-static {v0}, Lle/t;->a(Ljava/lang/Class;)Lpe/c;
+    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
 
     move-result-object v0
 
@@ -67,11 +67,11 @@
     return-object v0
 .end method
 
-.method public invoke()Ljava/lang/Object;
+.method public final invoke()Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lle/c;->receiver:Ljava/lang/Object;
+    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
 
     check-cast v0, Lcom/supercell/id/ui/BackStack$b;
 
@@ -79,7 +79,7 @@
     invoke-interface {v0}, Lcom/supercell/id/ui/BackStack$b;->b()V
 
     .line 3
-    sget-object v0, Lae/i;->a:Lae/i;
+    sget-object v0, Lie/h;->a:Lie/h;
 
     return-object v0
 .end method

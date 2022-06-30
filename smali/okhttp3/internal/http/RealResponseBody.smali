@@ -42,7 +42,6 @@
 .method public contentLength()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lokhttp3/internal/http/RealResponseBody;->contentLength:J
 
     return-wide v0
@@ -51,7 +50,6 @@
 .method public contentType()Lokhttp3/MediaType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http/RealResponseBody;->contentTypeString:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -72,7 +70,6 @@
 .method public source()Lokio/BufferedSource;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http/RealResponseBody;->source:Lokio/BufferedSource;
 
     return-object v0

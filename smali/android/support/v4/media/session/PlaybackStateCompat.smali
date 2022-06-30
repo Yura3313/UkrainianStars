@@ -190,7 +190,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/support/v4/media/session/PlaybackStateCompat$1;
 
     invoke-direct {v0}, Landroid/support/v4/media/session/PlaybackStateCompat$1;-><init>()V
@@ -626,7 +625,6 @@
 .method public getActions()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->mActions:J
 
     return-wide v0
@@ -635,7 +633,6 @@
 .method public getActiveQueueItemId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->mActiveItemId:J
 
     return-wide v0
@@ -644,7 +641,6 @@
 .method public getBufferedPosition()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->mBufferedPosition:J
 
     return-wide v0
@@ -706,7 +702,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->mCustomActions:Ljava/util/List;
 
     return-object v0
@@ -715,7 +710,6 @@
 .method public getErrorCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->mErrorCode:I
 
     return v0
@@ -724,7 +718,6 @@
 .method public getErrorMessage()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->mErrorMessage:Ljava/lang/CharSequence;
 
     return-object v0
@@ -733,7 +726,6 @@
 .method public getExtras()Landroid/os/Bundle;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->mExtras:Landroid/os/Bundle;
 
     return-object v0
@@ -742,7 +734,6 @@
 .method public getLastPositionUpdateTime()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->mUpdateTime:J
 
     return-wide v0
@@ -751,7 +742,6 @@
 .method public getPlaybackSpeed()F
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->mSpeed:F
 
     return v0
@@ -898,7 +888,6 @@
 .method public getPosition()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->mPosition:J
 
     return-wide v0
@@ -907,7 +896,6 @@
 .method public getState()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->mState:I
 
     return v0

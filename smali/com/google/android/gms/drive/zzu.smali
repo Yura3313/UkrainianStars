@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public volatile transient g:Z
+.field public volatile transient f:Z
 
 
 # direct methods
@@ -16,34 +16,34 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/android/gms/drive/zzu;->g:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/drive/zzu;->f:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public abstract D2(Landroid/os/Parcel;I)V
+.end method
+
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/gms/drive/zzu;->g:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/drive/zzu;->f:Z
 
     const/4 v1, 0x1
 
     xor-int/2addr v0, v1
 
     .line 2
-    invoke-static {v0}, Lc2/h;->j(Z)V
+    invoke-static {v0}, Ld2/h;->j(Z)V
 
     .line 3
-    iput-boolean v1, p0, Lcom/google/android/gms/drive/zzu;->g:Z
+    iput-boolean v1, p0, Lcom/google/android/gms/drive/zzu;->f:Z
 
     .line 4
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/drive/zzu;->z2(Landroid/os/Parcel;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/drive/zzu;->D2(Landroid/os/Parcel;I)V
 
     return-void
-.end method
-
-.method public abstract z2(Landroid/os/Parcel;I)V
 .end method

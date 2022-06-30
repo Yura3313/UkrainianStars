@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -154,6 +153,7 @@
 
     const/16 v1, 0x10
 
+    .line 5
     invoke-static {v0, v1}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
 
     move-result-object v0
@@ -182,7 +182,6 @@
 
     return p0
 
-    .line 1
     :cond_0
     const-class p1, Landroidx/core/view/ScrollingView;
 
@@ -255,7 +254,6 @@
 .method public static isViewTappable(Landroid/view/View;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->isClickable()Z
 
     move-result v0

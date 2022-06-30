@@ -1,28 +1,17 @@
 .class public interface abstract Lkc/a;
 .super Ljava/lang/Object;
-.source "ContainerFactory.java"
+.source "ImageLoadingListener.java"
 
 
 # virtual methods
-.method public abstract creatArrayContainer()Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
+.method public abstract onLoadingCancelled(Ljava/lang/String;Landroid/view/View;)V
 .end method
 
-.method public abstract createObjectContainer()Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
+.method public abstract onLoadingComplete(Ljava/lang/String;Landroid/view/View;Landroid/graphics/Bitmap;)V
+.end method
+
+.method public abstract onLoadingFailed(Ljava/lang/String;Landroid/view/View;Lfc/b;)V
+.end method
+
+.method public abstract onLoadingStarted(Ljava/lang/String;Landroid/view/View;)V
 .end method

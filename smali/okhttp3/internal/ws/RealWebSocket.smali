@@ -112,7 +112,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     sget-object v0, Lokhttp3/Protocol;->HTTP_1_1:Lokhttp3/Protocol;
 
     invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
@@ -207,10 +206,12 @@
 
     const-string p3, "Request must be GET: "
 
+    .line 14
     invoke-static {p3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p3
 
+    .line 15
     invoke-virtual {p1}, Lokhttp3/Request;->method()Ljava/lang/String;
 
     move-result-object p1
@@ -237,7 +238,7 @@
     .line 2
     iget-object v1, p0, Lokhttp3/internal/ws/RealWebSocket;->writerRunnable:Ljava/lang/Runnable;
 
-    invoke-interface {v0, v1}, Ljava/util/concurrent/ScheduledExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     :cond_0
     return-void
@@ -355,12 +356,11 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket;->executor:Ljava/util/concurrent/ScheduledExecutorService;
 
     int-to-long v1, p1
 
-    invoke-interface {v0, v1, v2, p2}, Ljava/util/concurrent/ScheduledExecutorService;->awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
+    invoke-interface {v0, v1, v2, p2}, Ljava/util/concurrent/ExecutorService;->awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
 
     return-void
 .end method
@@ -368,7 +368,6 @@
 .method public cancel()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket;->call:Lokhttp3/Call;
 
     invoke-interface {v0}, Lokhttp3/Call;->cancel()V
@@ -507,39 +506,44 @@
 
     const-string v2, "Expected \'Upgrade\' header value \'websocket\' but was \'"
 
-    invoke-static {v2, v0, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 12
+    invoke-static {v2, v0, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 13
     invoke-direct {p1, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
-    .line 12
+    .line 14
     :cond_2
     new-instance p1, Ljava/net/ProtocolException;
 
     const-string v2, "Expected \'Connection\' header value \'Upgrade\' but was \'"
 
-    invoke-static {v2, v0, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 15
+    invoke-static {v2, v0, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 16
     invoke-direct {p1, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
-    .line 13
+    .line 17
     :cond_3
     new-instance v0, Ljava/net/ProtocolException;
 
     const-string v2, "Expected HTTP 101 response but was \'"
 
+    .line 18
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 14
+    .line 19
     invoke-virtual {p1}, Lokhttp3/Response;->code()I
 
     move-result v3
@@ -832,7 +836,7 @@
 
     const/4 v2, 0x0
 
-    invoke-interface {v1, v2}, Ljava/util/concurrent/ScheduledFuture;->cancel(Z)Z
+    invoke-interface {v1, v2}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     .line 7
     :cond_1
@@ -840,7 +844,7 @@
 
     if-eqz v1, :cond_2
 
-    invoke-interface {v1}, Ljava/util/concurrent/ScheduledExecutorService;->shutdown()V
+    invoke-interface {v1}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     .line 8
     :cond_2
@@ -1066,13 +1070,13 @@
 
     const/4 v2, 0x0
 
-    invoke-interface {v1, v2}, Ljava/util/concurrent/ScheduledFuture;->cancel(Z)Z
+    invoke-interface {v1, v2}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     .line 9
     :cond_0
     iget-object v1, p0, Lokhttp3/internal/ws/RealWebSocket;->executor:Ljava/util/concurrent/ScheduledExecutorService;
 
-    invoke-interface {v1}, Ljava/util/concurrent/ScheduledExecutorService;->shutdown()V
+    invoke-interface {v1}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     move-object v1, v0
 
@@ -1374,7 +1378,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-wide v0, p0, Lokhttp3/internal/ws/RealWebSocket;->queueSize:J
     :try_end_0
@@ -1397,7 +1400,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget v0, p0, Lokhttp3/internal/ws/RealWebSocket;->receivedPingCount:I
     :try_end_0
@@ -1420,7 +1422,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget v0, p0, Lokhttp3/internal/ws/RealWebSocket;->receivedPongCount:I
     :try_end_0
@@ -1441,7 +1442,6 @@
 .method public request()Lokhttp3/Request;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket;->originalRequest:Lokhttp3/Request;
 
     return-object v0
@@ -1506,7 +1506,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget v0, p0, Lokhttp3/internal/ws/RealWebSocket;->sentPingCount:I
     :try_end_0
@@ -1540,13 +1539,13 @@
     const/4 v1, 0x0
 
     .line 2
-    invoke-interface {v0, v1}, Ljava/util/concurrent/ScheduledFuture;->cancel(Z)Z
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     .line 3
     :cond_0
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket;->executor:Ljava/util/concurrent/ScheduledExecutorService;
 
-    invoke-interface {v0}, Ljava/util/concurrent/ScheduledExecutorService;->shutdown()V
+    invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     .line 4
     iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket;->executor:Ljava/util/concurrent/ScheduledExecutorService;
@@ -1555,7 +1554,7 @@
 
     sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    invoke-interface {v0, v1, v2, v3}, Ljava/util/concurrent/ScheduledExecutorService;->awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
+    invoke-interface {v0, v1, v2, v3}, Ljava/util/concurrent/ExecutorService;->awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
 
     return-void
 .end method
@@ -1632,7 +1631,7 @@
     .line 12
     iget-object v4, p0, Lokhttp3/internal/ws/RealWebSocket;->executor:Ljava/util/concurrent/ScheduledExecutorService;
 
-    invoke-interface {v4}, Ljava/util/concurrent/ScheduledExecutorService;->shutdown()V
+    invoke-interface {v4}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     move-object v4, v5
 
@@ -1909,10 +1908,12 @@
 
     const-string v2, "sent ping but didn\'t receive pong within "
 
+    .line 9
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 10
     iget-wide v5, p0, Lokhttp3/internal/ws/RealWebSocket;->pingIntervalMillis:J
 
     invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
@@ -1939,7 +1940,7 @@
 
     return-void
 
-    .line 9
+    .line 11
     :cond_2
     :try_start_1
     sget-object v1, Lokio/ByteString;->EMPTY:Lokio/ByteString;
@@ -1953,7 +1954,7 @@
     :catch_0
     move-exception v0
 
-    .line 10
+    .line 12
     invoke-virtual {p0, v0, v3}, Lokhttp3/internal/ws/RealWebSocket;->failWebSocket(Ljava/lang/Exception;Lokhttp3/Response;)V
 
     :goto_1
@@ -1962,7 +1963,7 @@
     :catchall_0
     move-exception v0
 
-    .line 11
+    .line 13
     :try_start_2
     monitor-exit p0
     :try_end_2

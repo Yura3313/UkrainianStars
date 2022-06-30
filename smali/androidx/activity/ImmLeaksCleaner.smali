@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
+.method public final a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
     .locals 2
 
     .line 1
@@ -71,7 +71,7 @@
     sput-object p1, Landroidx/activity/ImmLeaksCleaner;->d:Ljava/lang/reflect/Field;
 
     .line 5
-    invoke-virtual {p1, p2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {p1, p2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 6
     const-class p1, Landroid/view/inputmethod/InputMethodManager;
@@ -85,7 +85,7 @@
     sput-object p1, Landroidx/activity/ImmLeaksCleaner;->e:Ljava/lang/reflect/Field;
 
     .line 7
-    invoke-virtual {p1, p2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {p1, p2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 8
     const-class p1, Landroid/view/inputmethod/InputMethodManager;
@@ -99,7 +99,7 @@
     sput-object p1, Landroidx/activity/ImmLeaksCleaner;->c:Ljava/lang/reflect/Field;
 
     .line 9
-    invoke-virtual {p1, p2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {p1, p2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 10
     sput p2, Landroidx/activity/ImmLeaksCleaner;->b:I

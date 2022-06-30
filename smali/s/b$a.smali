@@ -1,4 +1,4 @@
-.class public Ls/b$a;
+.class public final Ls/b$a;
 .super Ljava/lang/Object;
 .source "ConstraintLayoutStates.java"
 
@@ -165,7 +165,7 @@
 
 
 # virtual methods
-.method public a(FF)I
+.method public final a(FF)I
     .locals 2
 
     const/4 v0, 0x0

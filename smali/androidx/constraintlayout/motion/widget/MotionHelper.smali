@@ -3,17 +3,17 @@
 .source "MotionHelper.java"
 
 # interfaces
-.implements Landroidx/constraintlayout/motion/widget/MotionLayout$h;
+.implements Landroidx/constraintlayout/motion/widget/MotionLayout$g;
 
 
 # instance fields
+.field public n:Z
+
 .field public o:Z
 
-.field public p:Z
+.field public p:F
 
-.field public q:F
-
-.field public r:[Landroid/view/View;
+.field public q:[Landroid/view/View;
 
 
 # direct methods
@@ -26,10 +26,10 @@
     const/4 p1, 0x0
 
     .line 2
-    iput-boolean p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->o:Z
+    iput-boolean p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->n:Z
 
     .line 3
-    iput-boolean p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->p:Z
+    iput-boolean p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->o:Z
 
     .line 4
     invoke-virtual {p0, p2}, Landroidx/constraintlayout/motion/widget/MotionHelper;->l(Landroid/util/AttributeSet;)V
@@ -46,10 +46,10 @@
     const/4 p1, 0x0
 
     .line 6
-    iput-boolean p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->o:Z
+    iput-boolean p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->n:Z
 
     .line 7
-    iput-boolean p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->p:Z
+    iput-boolean p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->o:Z
 
     .line 8
     invoke-virtual {p0, p2}, Landroidx/constraintlayout/motion/widget/MotionHelper;->l(Landroid/util/AttributeSet;)V
@@ -59,25 +59,25 @@
 
 
 # virtual methods
-.method public a(Landroidx/constraintlayout/motion/widget/MotionLayout;IIF)V
+.method public final a()V
     .locals 0
 
     return-void
 .end method
 
-.method public b(Landroidx/constraintlayout/motion/widget/MotionLayout;II)V
+.method public final b()V
     .locals 0
 
     return-void
 .end method
 
-.method public c(Landroidx/constraintlayout/motion/widget/MotionLayout;IZF)V
+.method public final c()V
     .locals 0
 
     return-void
 .end method
 
-.method public d(Landroidx/constraintlayout/motion/widget/MotionLayout;I)V
+.method public final d()V
     .locals 0
 
     return-void
@@ -86,13 +86,12 @@
 .method public getProgress()F
     .locals 1
 
-    .line 1
-    iget v0, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->q:F
+    iget v0, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->p:F
 
     return v0
 .end method
 
-.method public l(Landroid/util/AttributeSet;)V
+.method public final l(Landroid/util/AttributeSet;)V
     .locals 4
 
     .line 1
@@ -132,13 +131,13 @@
     if-ne v2, v3, :cond_0
 
     .line 6
-    iget-boolean v3, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->o:Z
+    iget-boolean v3, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->n:Z
 
     invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result v2
 
-    iput-boolean v2, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->o:Z
+    iput-boolean v2, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->n:Z
 
     goto :goto_1
 
@@ -149,13 +148,13 @@
     if-ne v2, v3, :cond_1
 
     .line 8
-    iget-boolean v3, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->p:Z
+    iget-boolean v3, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->o:Z
 
     invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result v2
 
-    iput-boolean v2, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->p:Z
+    iput-boolean v2, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->o:Z
 
     :cond_1
     :goto_1
@@ -175,10 +174,10 @@
     .locals 3
 
     .line 1
-    iput p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->q:F
+    iput p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->p:F
 
     .line 2
-    iget p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->h:I
+    iget p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->g:I
 
     const/4 v0, 0x0
 
@@ -195,16 +194,16 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->r:[Landroid/view/View;
+    iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->q:[Landroid/view/View;
 
     .line 4
     :goto_0
-    iget p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->h:I
+    iget p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->g:I
 
     if-ge v0, p1, :cond_1
 
     .line 5
-    iget-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->r:[Landroid/view/View;
+    iget-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionHelper;->q:[Landroid/view/View;
 
     aget-object p1, p1, v0
 

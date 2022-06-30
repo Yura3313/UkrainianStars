@@ -29,25 +29,15 @@
 
 # direct methods
 .method public constructor <init>(ILjava/lang/Object;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
     .line 2
-    iput v0, p0, Lcom/kakaogame/util/json/parser/Yytoken;->type:I
-
-    const/4 v0, 0x0
-
-    .line 3
-    iput-object v0, p0, Lcom/kakaogame/util/json/parser/Yytoken;->value:Ljava/lang/Object;
-
-    .line 4
     iput p1, p0, Lcom/kakaogame/util/json/parser/Yytoken;->type:I
 
-    .line 5
+    .line 3
     iput-object p2, p0, Lcom/kakaogame/util/json/parser/Yytoken;->value:Ljava/lang/Object;
 
     return-void

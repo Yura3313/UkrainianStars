@@ -7,5 +7,5 @@
 .method public abstract a()Ljava/lang/Object;
 .end method
 
-.method public abstract get(I)Ljava/util/Locale;
+.method public abstract get()Ljava/util/Locale;
 .end method

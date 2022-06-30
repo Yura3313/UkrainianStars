@@ -27,7 +27,6 @@
 .method public constructor <init>(Ljava/lang/String;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/LoginUIManager$17;->val$emailAddress:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/kakaogame/auth/view/LoginUIManager$17;->val$dialogLock:Lcom/kakaogame/util/MutexLock;

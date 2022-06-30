@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/Class;)Lj3/fn0;
+.method public abstract a(Ljava/lang/Class;)Lk3/bn0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<P:",
@@ -23,7 +23,7 @@
             ">(",
             "Ljava/lang/Class<",
             "TP;>;)",
-            "Lj3/fn0<",
+            "Lk3/bn0<",
             "TP;>;"
         }
     .end annotation
@@ -56,11 +56,11 @@
     .end annotation
 .end method
 
-.method public abstract d()Lj3/fn0;
+.method public abstract d()Lk3/bn0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lj3/fn0<",
+            "Lk3/bn0<",
             "*>;"
         }
     .end annotation

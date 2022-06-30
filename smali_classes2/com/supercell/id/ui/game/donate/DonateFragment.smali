@@ -13,23 +13,23 @@
 
 
 # static fields
-.field public static final synthetic s0:I
+.field public static final synthetic q0:I
 
 
 # instance fields
-.field public final j0:F
+.field public final h0:F
 
-.field public final k0:Lae/c;
+.field public final i0:Lie/f;
 
-.field public l0:Lwd/n0;
+.field public j0:Lbe/l0;
 
-.field public m0:Lvd/k;
+.field public k0:Lae/m;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lvd/k<",
+            "Lae/m<",
             "+",
             "Ljava/util/List<",
-            "Lwc/e;",
+            "Lbd/e;",
             ">;",
             "Lcom/supercell/id/util/NormalizedError;",
             ">;"
@@ -37,49 +37,49 @@
     .end annotation
 .end field
 
-.field public n0:Ljava/util/List;
+.field public l0:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
             "+",
-            "Lvd/j1;",
+            "Lae/b2;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final o0:Lke/l;
+.field public final m0:Lcom/supercell/id/ui/game/donate/DonateFragment$f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lke/l<",
-            "Lwd/n0;",
-            "Lae/i;",
+            "Lre/l<",
+            "Lbe/l0;",
+            "Lie/h;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final p0:Lke/l;
+.field public final n0:Lcom/supercell/id/ui/game/donate/DonateFragment$d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lke/l<",
-            "Lvd/k<",
-            "Lqc/j;",
+            "Lre/l<",
+            "Lae/m<",
+            "Lvc/j;",
             "Lcom/supercell/id/util/NormalizedError;",
             ">;",
-            "Lae/i;",
+            "Lie/h;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final q0:Lvd/w1;
+.field public final o0:Lae/o2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lvd/w1<",
-            "Lvd/k<",
+            "Lae/o2<",
+            "Lae/m<",
             "Ljava/util/List<",
-            "Lwc/e;",
+            "Lbd/e;",
             ">;",
             "Lcom/supercell/id/util/NormalizedError;",
             ">;>;"
@@ -87,7 +87,7 @@
     .end annotation
 .end field
 
-.field public r0:Ljava/util/HashMap;
+.field public p0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -99,57 +99,62 @@
 
     const/16 v0, 0x14
 
+    int-to-float v0, v0
+
     .line 2
-    invoke-static {v0}, Lcom/android/billingclient/api/a0;->b(I)F
+    sget v1, La5/g0;->a:F
 
-    move-result v0
-
-    iput v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->j0:F
+    mul-float v0, v0, v1
 
     .line 3
+    iput v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->h0:F
+
+    .line 4
     new-instance v0, Lcom/supercell/id/ui/game/donate/DonateFragment$g;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/game/donate/DonateFragment$g;-><init>(Lcom/supercell/id/ui/game/donate/DonateFragment;)V
 
-    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->k0:Lae/c;
+    check-cast v0, Lie/f;
 
-    .line 4
+    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->i0:Lie/f;
+
+    .line 5
     new-instance v0, Lcom/supercell/id/ui/game/donate/DonateFragment$f;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/game/donate/DonateFragment$f;-><init>(Lcom/supercell/id/ui/game/donate/DonateFragment;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->o0:Lke/l;
+    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->m0:Lcom/supercell/id/ui/game/donate/DonateFragment$f;
 
-    .line 5
+    .line 6
     new-instance v0, Lcom/supercell/id/ui/game/donate/DonateFragment$d;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/game/donate/DonateFragment$d;-><init>(Lcom/supercell/id/ui/game/donate/DonateFragment;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->p0:Lke/l;
+    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->n0:Lcom/supercell/id/ui/game/donate/DonateFragment$d;
 
-    .line 6
-    new-instance v0, Lvd/w1;
+    .line 7
+    new-instance v0, Lae/o2;
 
     new-instance v1, Lcom/supercell/id/ui/game/donate/DonateFragment$b;
 
     invoke-direct {v1, p0}, Lcom/supercell/id/ui/game/donate/DonateFragment$b;-><init>(Lcom/supercell/id/ui/game/donate/DonateFragment;)V
 
-    .line 7
-    sget-object v2, Lcom/supercell/id/ui/game/donate/DonateFragment$c;->g:Lcom/supercell/id/ui/game/donate/DonateFragment$c;
-
     .line 8
-    invoke-direct {v0, v1, v2}, Lvd/w1;-><init>(Lke/l;Lke/l;)V
+    sget-object v2, Lcom/supercell/id/ui/game/donate/DonateFragment$c;->f:Lcom/supercell/id/ui/game/donate/DonateFragment$c;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->q0:Lvd/w1;
+    .line 9
+    invoke-direct {v0, v1, v2}, Lae/o2;-><init>(Lre/l;Lre/l;)V
+
+    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->o0:Lae/o2;
 
     return-void
 .end method
 
-.method public static final p1(Lcom/supercell/id/ui/game/donate/DonateFragment;Ljava/util/List;Ljava/util/List;Ljava/lang/String;)Ljava/util/List;
+.method public static final g1(Lcom/supercell/id/ui/game/donate/DonateFragment;Ljava/util/List;Ljava/util/List;Ljava/lang/String;)Ljava/util/List;
     .locals 9
 
     .line 1
@@ -158,11 +163,11 @@
     const/16 p0, 0xa
 
     .line 2
-    invoke-static {p2, p0}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {p2, p0}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
     move-result p0
 
-    invoke-static {p0}, Lcom/google/android/play/core/appupdate/d;->e(I)I
+    invoke-static {p0}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
 
     move-result p0
 
@@ -197,10 +202,10 @@
     .line 5
     move-object v1, p2
 
-    check-cast v1, Lqc/u;
+    check-cast v1, Lvc/t;
 
     .line 6
-    iget-object v1, v1, Lqc/u;->a:Lqc/d0;
+    iget-object v1, v1, Lvc/t;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 7
     invoke-interface {v0, v1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -231,13 +236,13 @@
     move-result-object p2
 
     .line 10
-    check-cast p2, Lqc/i;
+    check-cast p2, Lvc/i;
 
     .line 11
-    iget-object v1, p2, Lqc/i;->a:Lqc/d0;
+    iget-object v1, p2, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 12
-    invoke-virtual {v1}, Lqc/d0;->b()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/supercell/id/model/IdSocialAccount;->d()Ljava/lang/String;
 
     move-result-object v3
 
@@ -246,19 +251,19 @@
     if-eqz v3, :cond_7
 
     .line 13
-    iget-object v2, p2, Lqc/i;->a:Lqc/d0;
+    iget-object v2, p2, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 14
     invoke-virtual {v0, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lqc/u;
+    check-cast v2, Lvc/t;
 
     if-eqz v2, :cond_5
 
     .line 15
-    iget-object v2, v2, Lqc/u;->h:Ljava/util/List;
+    iget-object v2, v2, Lvc/t;->h:Ljava/util/List;
 
     if-eqz v2, :cond_5
 
@@ -283,10 +288,10 @@
     check-cast v5, Lcom/supercell/id/model/IdConnectedSystem;
 
     .line 17
-    iget-object v5, v5, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
+    iget-object v5, v5, Lcom/supercell/id/model/IdConnectedSystem;->f:Ljava/lang/String;
 
     .line 18
-    invoke-static {v5, p3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v5, p3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -307,21 +312,21 @@
 
     .line 19
     :goto_3
-    new-instance v8, Lwc/e;
+    new-instance v8, Lbd/e;
 
     .line 20
-    iget-object v5, p2, Lqc/i;->b:Ljava/lang/String;
+    iget-object v5, p2, Lvc/i;->b:Ljava/lang/String;
 
     .line 21
-    iget-object v6, p2, Lqc/i;->c:Lcom/supercell/id/model/ProfileImage;
+    iget-object v6, p2, Lvc/i;->c:Lcom/supercell/id/model/ProfileImage;
 
     .line 22
-    iget-object p2, p2, Lqc/i;->e:Lcom/supercell/id/model/IdRelationshipStatus;
+    iget-object p2, p2, Lvc/i;->e:Lcom/supercell/id/model/IdRelationshipStatus;
 
     if-eqz v4, :cond_6
 
     .line 23
-    iget-object v1, v4, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/lang/String;
+    iget-object v1, v4, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
     :cond_6
     move-object v7, v1
@@ -335,7 +340,7 @@
     move-object v6, p2
 
     .line 24
-    invoke-direct/range {v2 .. v7}, Lwc/e;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Ljava/lang/String;)V
+    invoke-direct/range {v2 .. v7}, Lbd/e;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Ljava/lang/String;)V
 
     move-object v1, v8
 
@@ -351,30 +356,30 @@
     :cond_8
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object p1
 
     .line 27
-    iget-object p1, p1, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object p1, p1, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 28
     invoke-virtual {p1}, Lcom/supercell/id/IdConfiguration;->getCollator()Ljava/text/Collator;
 
     move-result-object p1
 
-    new-instance p2, Lwc/a;
+    new-instance p2, Lbd/a;
 
-    invoke-direct {p2, p1}, Lwc/a;-><init>(Ljava/util/Comparator;)V
+    invoke-direct {p2, p1}, Lbd/a;-><init>(Ljava/util/Comparator;)V
 
-    invoke-static {p0, p2}, Lbe/k;->R(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {p0, p2}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object p0
 
     .line 29
-    sget-object p1, Lwc/b;->g:Lwc/b;
+    sget-object p1, Lbd/b;->f:Lbd/b;
 
-    invoke-static {p0, p1}, Lbe/k;->R(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {p0, p1}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object p0
 
@@ -383,10 +388,10 @@
 
 
 # virtual methods
-.method public W0()V
+.method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->r0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->p0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -396,13 +401,12 @@
     return-void
 .end method
 
-.method public e1()Landroidx/recyclerview/widget/RecyclerView;
+.method public final V0()Landroidx/recyclerview/widget/RecyclerView;
     .locals 1
 
-    .line 1
     sget v0, Lcom/supercell/id/R$id;->friendsList:I
 
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->f1(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -411,13 +415,12 @@
     return-object v0
 .end method
 
-.method public f1()Landroid/view/View;
+.method public final W0()Landroid/view/View;
     .locals 1
 
-    .line 1
     sget v0, Lcom/supercell/id/R$id;->toolbar_wrapper:I
 
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->f1(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -426,12 +429,21 @@
     return-object v0
 .end method
 
-.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final X0()F
     .locals 1
 
-    if-eqz p1, :cond_0
+    iget v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->h0:F
 
-    .line 1
+    return v0
+.end method
+
+.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
+
+    const-string p3, "inflater"
+
+    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sget p3, Lcom/supercell/id/R$layout;->fragment_donate:I
 
     const/4 v0, 0x0
@@ -441,63 +453,44 @@
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "inflater"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public g1()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->j0:F
-
-    return v0
-.end method
-
-.method public i0()V
+.method public final a0()V
     .locals 3
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lvd/r;->k()Lwd/q0;
+    invoke-virtual {v1}, Lae/u;->k()Lbe/o0;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->o0:Lke/l;
+    iget-object v2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->m0:Lcom/supercell/id/ui/game/donate/DonateFragment$f;
 
-    invoke-virtual {v1, v2}, Lwd/u0;->e(Lke/l;)V
+    invoke-virtual {v1, v2}, Lbe/v0;->e(Lre/l;)V
 
     .line 2
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lvd/r;->d()Lwd/i;
+    invoke-virtual {v0}, Lae/u;->d()Lbe/h;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->p0:Lke/l;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->n0:Lcom/supercell/id/ui/game/donate/DonateFragment$d;
 
-    invoke-virtual {v0, v1}, Lwd/u0;->e(Lke/l;)V
+    invoke-virtual {v0, v1}, Lbe/v0;->e(Lre/l;)V
 
     .line 3
-    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->i0()V
+    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->r0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->p0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -507,77 +500,10 @@
     return-void
 .end method
 
-.method public o0()V
-    .locals 3
-
-    const/4 v0, 0x1
-
-    .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
-
-    .line 2
-    invoke-virtual {p0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->q1()Lcom/supercell/id/model/IdSystem;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    .line 3
-    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    new-instance v1, Lcom/supercell/id/ui/game/donate/DonateFragment$e;
-
-    invoke-direct {v1, p0}, Lcom/supercell/id/ui/game/donate/DonateFragment$e;-><init>(Lcom/supercell/id/ui/game/donate/DonateFragment;)V
-
-    const-string v2, "generic"
-
-    invoke-virtual {v0, v2, v1}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/String;Lke/l;)V
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object v1
-
-    .line 5
-    iget-object v1, v1, Lvd/r;->m:Lcom/supercell/titan/h;
-
-    const-string v2, "Donate "
-
-    .line 6
-    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v0}, Lcom/supercell/id/model/IdSystem;->b()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Lcom/supercell/titan/h;->b(Ljava/lang/String;)V
-
-    :cond_1
-    :goto_0
-    return-void
-.end method
-
-.method public o1(I)Landroid/view/View;
+.method public final f1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->r0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->p0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -585,10 +511,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->r0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->p0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->r0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->p0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -603,7 +529,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -617,7 +543,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->r0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->p0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -629,12 +555,80 @@
     return-object v0
 .end method
 
-.method public final q1()Lcom/supercell/id/model/IdSystem;
+.method public final g0()V
+    .locals 3
+
+    const/4 v0, 0x1
+
+    .line 1
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+
+    .line 2
+    invoke-virtual {p0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->h1()Lcom/supercell/id/model/IdSystem;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    .line 3
+    invoke-static {p0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    new-instance v1, Lcom/supercell/id/ui/game/donate/DonateFragment$e;
+
+    invoke-direct {v1, p0}, Lcom/supercell/id/ui/game/donate/DonateFragment$e;-><init>(Lcom/supercell/id/ui/game/donate/DonateFragment;)V
+
+    const-string v2, "generic"
+
+    invoke-virtual {v0, v2, v1}, Lcom/supercell/id/ui/MainActivity;->H(Ljava/lang/String;Lre/l;)V
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object v1
+
+    .line 5
+    iget-object v1, v1, Lae/u;->m:La5/d0;
+
+    const-string v2, "Donate "
+
+    .line 6
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 7
+    invoke-virtual {v0}, Lcom/supercell/id/model/IdSystem;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, La5/d0;->d(Ljava/lang/String;)V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public final h1()Lcom/supercell/id/model/IdSystem;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->k0:Lae/c;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->i0:Lie/f;
 
-    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -643,220 +637,44 @@
     return-object v0
 .end method
 
-.method public final r1()V
+.method public final i1()V
     .locals 2
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lvd/r;->k()Lwd/q0;
+    invoke-virtual {v1}, Lae/u;->k()Lbe/o0;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lwd/q0;->h()Lse/f0;
+    invoke-virtual {v1}, Lbe/o0;->h()Lze/e0;
 
     .line 2
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lvd/r;->d()Lwd/i;
+    invoke-virtual {v0}, Lae/u;->d()Lbe/h;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lwd/i;->m()Lse/f0;
+    invoke-virtual {v0}, Lbe/h;->l()Lze/e0;
 
     return-void
 .end method
 
-.method public s0(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 4
-
-    if-eqz p1, :cond_2
-
-    .line 1
-    invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
-
-    .line 2
-    invoke-virtual {p0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->q1()Lcom/supercell/id/model/IdSystem;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    const-string p2, "account_donate_title_"
-
-    .line 3
-    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    .line 4
-    iget-object v0, p1, Lcom/supercell/id/model/IdSystem;->g:Ljava/lang/String;
-
-    .line 5
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const/16 v0, 0x5f
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    const-string v0, "SEASON_PASS"
-
-    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
-
-    const-string v2, "Locale.ENGLISH"
-
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "(this as java.lang.String).toLowerCase(locale)"
-
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    .line 6
-    sget v0, Lcom/supercell/id/R$id;->toolbar_tabs:I
-
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->o1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/supercell/id/view/SubPageTabLayout;
-
-    const/4 v1, 0x0
-
-    new-array v1, v1, [Lae/d;
-
-    invoke-static {v0, p2, v1}, Lvd/z1;->b(Landroid/view/View;Ljava/lang/String;[Lae/d;)V
-
-    .line 7
-    invoke-virtual {p0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->s1()V
-
-    .line 8
-    sget p2, Lcom/supercell/id/R$id;->friendsList:I
-
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/game/donate/DonateFragment;->o1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setHasFixedSize(Z)V
-
-    .line 9
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/game/donate/DonateFragment;->o1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
-
-    const-string v1, "friendsList"
-
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    new-instance v2, Lcom/supercell/id/ui/profile/LinearLayoutManagerWrapper;
-
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-direct {v2, v3}, Lcom/supercell/id/ui/profile/LinearLayoutManagerWrapper;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$m;)V
-
-    .line 10
-    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/game/donate/DonateFragment;->o1(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-static {p2, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    new-instance v0, Lcom/supercell/id/ui/game/donate/DonateFragment$a;
-
-    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->n0:Ljava/util/List;
-
-    if-eqz v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    sget-object v1, Lbe/m;->g:Lbe/m;
-
-    :goto_0
-    invoke-direct {v0, p0, v1, p1}, Lcom/supercell/id/ui/game/donate/DonateFragment$a;-><init>(Lcom/supercell/id/ui/game/donate/DonateFragment;Ljava/util/List;Lcom/supercell/id/model/IdSystem;)V
-
-    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$e;)V
-
-    .line 11
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Lvd/r;->k()Lwd/q0;
-
-    move-result-object p2
-
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->o0:Lke/l;
-
-    invoke-virtual {p2, v0}, Lwd/u0;->b(Lke/l;)V
-
-    .line 12
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lvd/r;->d()Lwd/i;
-
-    move-result-object p1
-
-    iget-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->p0:Lke/l;
-
-    invoke-virtual {p1, p2}, Lwd/u0;->b(Lke/l;)V
-
-    .line 13
-    invoke-virtual {p0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->r1()V
-
-    :cond_1
-    return-void
-
-    :cond_2
-    const-string p1, "view"
-
-    .line 14
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public final s1()V
+.method public final j1()V
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->m0:Lvd/k;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->k0:Lae/m;
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->l0:Lwd/n0;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->j0:Lbe/l0;
 
     const/4 v2, 0x0
 
@@ -870,23 +688,23 @@
 
     .line 3
     :cond_0
-    instance-of v4, v0, Lvd/k$b;
+    instance-of v4, v0, Lae/m$b;
 
     if-eqz v4, :cond_1
 
-    new-instance v1, Lvd/o;
+    new-instance v1, Lae/q;
 
-    check-cast v0, Lvd/k$b;
+    check-cast v0, Lae/m$b;
 
     .line 4
-    iget-object v0, v0, Lvd/k$b;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lae/m$b;->a:Ljava/lang/Object;
 
     .line 5
     check-cast v0, Lcom/supercell/id/util/NormalizedError;
 
-    invoke-direct {v1, v0}, Lvd/o;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+    invoke-direct {v1, v0}, Lae/q;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v1}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
@@ -894,26 +712,26 @@
 
     .line 6
     :cond_1
-    iget-object v1, v1, Lwd/n0;->a:Lvd/k;
+    iget-object v1, v1, Lbe/l0;->a:Lae/m;
 
     .line 7
-    instance-of v4, v1, Lvd/k$b;
+    instance-of v4, v1, Lae/m$b;
 
     if-eqz v4, :cond_2
 
-    new-instance v0, Lvd/o;
+    new-instance v0, Lae/q;
 
-    check-cast v1, Lvd/k$b;
+    check-cast v1, Lae/m$b;
 
     .line 8
-    iget-object v1, v1, Lvd/k$b;->a:Ljava/lang/Object;
+    iget-object v1, v1, Lae/m$b;->a:Ljava/lang/Object;
 
     .line 9
     check-cast v1, Lcom/supercell/id/util/NormalizedError;
 
-    invoke-direct {v0, v1}, Lvd/o;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+    invoke-direct {v0, v1}, Lae/q;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v0}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
@@ -921,13 +739,13 @@
 
     .line 10
     :cond_2
-    sget-object v1, Lwc/f;->b:Lwc/f;
+    sget-object v1, Lbd/f;->b:Lbd/f;
 
-    invoke-static {v1}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
 
-    invoke-virtual {v0}, Lvd/k;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, Lae/m;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -938,10 +756,10 @@
     goto :goto_0
 
     :cond_3
-    sget-object v0, Lbe/m;->g:Lbe/m;
+    sget-object v0, Lje/l;->f:Lje/l;
 
     :goto_0
-    sget-object v4, Lwc/d;->a:Lvd/j;
+    sget-object v4, Lbd/d;->a:Lae/k;
 
     .line 11
     new-instance v4, Ljava/util/ArrayList;
@@ -970,24 +788,24 @@
 
     if-ltz v5, :cond_5
 
-    check-cast v6, Lvd/j1;
+    check-cast v6, Lae/b2;
 
     if-eqz v5, :cond_4
 
     .line 13
-    instance-of v5, v6, Lvd/o;
+    instance-of v5, v6, Lae/q;
 
     if-nez v5, :cond_4
 
-    invoke-static {v4}, Lbe/k;->M(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v4}, Lje/j;->G(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v5
 
-    instance-of v5, v5, Lvd/o;
+    instance-of v5, v5, Lae/q;
 
     if-nez v5, :cond_4
 
-    sget-object v5, Lwc/d;->a:Lvd/j;
+    sget-object v5, Lbd/d;->a:Lae/k;
 
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1001,13 +819,13 @@
 
     .line 15
     :cond_5
-    invoke-static {}, Lb5/m;->t()V
+    invoke-static {}, Lcom/android/billingclient/api/z;->p()V
 
     throw v3
 
     .line 16
     :cond_6
-    invoke-static {v1, v4}, Lbe/k;->O(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v1, v4}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v0
 
@@ -1019,7 +837,7 @@
 
     .line 17
     :goto_3
-    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->n0:Ljava/util/List;
+    iput-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->l0:Ljava/util/List;
 
     const/4 v1, 0x4
 
@@ -1028,7 +846,7 @@
     .line 18
     sget v4, Lcom/supercell/id/R$id;->friendsList:I
 
-    invoke-virtual {p0, v4}, Lcom/supercell/id/ui/game/donate/DonateFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, v4}, Lcom/supercell/id/ui/game/donate/DonateFragment;->f1(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -1036,13 +854,13 @@
 
     if-eqz v4, :cond_8
 
-    invoke-virtual {v4, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {v4, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 19
     :cond_8
     sget v1, Lcom/supercell/id/R$id;->progressBar:I
 
-    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/game/donate/DonateFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/game/donate/DonateFragment;->f1(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -1056,7 +874,7 @@
     :cond_9
     sget v4, Lcom/supercell/id/R$id;->friendsList:I
 
-    invoke-virtual {p0, v4}, Lcom/supercell/id/ui/game/donate/DonateFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, v4}, Lcom/supercell/id/ui/game/donate/DonateFragment;->f1(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -1064,13 +882,13 @@
 
     if-eqz v4, :cond_a
 
-    invoke-virtual {v4, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {v4, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 21
     :cond_a
     sget v2, Lcom/supercell/id/R$id;->progressBar:I
 
-    invoke-virtual {p0, v2}, Lcom/supercell/id/ui/game/donate/DonateFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/supercell/id/ui/game/donate/DonateFragment;->f1(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -1083,7 +901,7 @@
     :goto_4
     sget v1, Lcom/supercell/id/R$id;->friendsList:I
 
-    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/game/donate/DonateFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/game/donate/DonateFragment;->f1(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -1115,8 +933,177 @@
 
     if-eqz v3, :cond_e
 
-    invoke-virtual {v3, v0}, Lvd/q;->k(Ljava/util/List;)V
+    invoke-virtual {v3, v0}, Lae/s;->p(Ljava/util/List;)V
 
     :cond_e
+    return-void
+.end method
+
+.method public final k0(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 4
+
+    const-string v0, "view"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+
+    .line 2
+    invoke-virtual {p0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->h1()Lcom/supercell/id/model/IdSystem;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    const-string p2, "account_donate_title_"
+
+    .line 3
+    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    .line 4
+    iget-object v0, p1, Lcom/supercell/id/model/IdSystem;->f:Ljava/lang/String;
+
+    .line 5
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v0, 0x5f
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 6
+    sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
+    const-string v1, "Locale.ENGLISH"
+
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v1, "SEASON_PASS"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "(this as java.lang.String).toLowerCase(locale)"
+
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 7
+    sget v0, Lcom/supercell/id/R$id;->toolbar_tabs:I
+
+    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->f1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/supercell/id/view/SubPageTabLayout;
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Lie/d;
+
+    invoke-static {v0, p2, v1}, Lae/r2;->b(Landroid/view/View;Ljava/lang/String;[Lie/d;)V
+
+    .line 8
+    invoke-virtual {p0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->j1()V
+
+    .line 9
+    sget p2, Lcom/supercell/id/R$id;->friendsList:I
+
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/game/donate/DonateFragment;->f1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setHasFixedSize(Z)V
+
+    .line 10
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/game/donate/DonateFragment;->f1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
+
+    const-string v1, "friendsList"
+
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v2, Lcom/supercell/id/ui/profile/LinearLayoutManagerWrapper;
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Lcom/supercell/id/ui/profile/LinearLayoutManagerWrapper;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$m;)V
+
+    .line 11
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/game/donate/DonateFragment;->f1(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-static {p2, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lcom/supercell/id/ui/game/donate/DonateFragment$a;
+
+    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->l0:Ljava/util/List;
+
+    if-eqz v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v1, Lje/l;->f:Lje/l;
+
+    :goto_0
+    invoke-direct {v0, p0, v1, p1}, Lcom/supercell/id/ui/game/donate/DonateFragment$a;-><init>(Lcom/supercell/id/ui/game/donate/DonateFragment;Ljava/util/List;Lcom/supercell/id/model/IdSystem;)V
+
+    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$e;)V
+
+    .line 12
+    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Lae/u;->k()Lbe/o0;
+
+    move-result-object p2
+
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->m0:Lcom/supercell/id/ui/game/donate/DonateFragment$f;
+
+    invoke-virtual {p2, v0}, Lbe/v0;->b(Lre/l;)V
+
+    .line 13
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lae/u;->d()Lbe/h;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment;->n0:Lcom/supercell/id/ui/game/donate/DonateFragment$d;
+
+    invoke-virtual {p1, p2}, Lbe/v0;->b(Lre/l;)V
+
+    .line 14
+    invoke-virtual {p0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->i1()V
+
+    :cond_1
     return-void
 .end method

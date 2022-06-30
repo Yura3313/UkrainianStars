@@ -1,95 +1,86 @@
 .class public final Lkd/a;
-.super Ljava/lang/Object;
-.source "FriendsFragment.kt"
+.super Lse/h;
+.source "InviteFriendsFragment.kt"
 
 # interfaces
-.implements Lvd/j1;
+.implements Lre/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/p<",
+        "Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;",
+        "Landroid/graphics/Bitmap;",
+        "Lie/h;",
+        ">;"
+    }
+.end annotation
 
 
 # static fields
-.field public static final a:I
-
-.field public static final b:Lkd/a;
+.field public static final f:Lkd/a;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lkd/a;
 
     invoke-direct {v0}, Lkd/a;-><init>()V
 
-    sput-object v0, Lkd/a;->b:Lkd/a;
-
-    .line 2
-    sget v0, Lcom/supercell/id/R$layout;->fragment_profile_list_item_friend_add:I
-
-    sput v0, Lkd/a;->a:I
+    sput-object v0, Lkd/a;->f:Lkd/a;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lvd/j1;)Z
-    .locals 0
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_0
-    const-string p1, "other"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public c()I
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    sget v0, Lkd/a;->a:I
+    check-cast p1, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
-    return v0
-.end method
+    check-cast p2, Landroid/graphics/Bitmap;
 
-.method public d(Lvd/j1;)Z
-    .locals 0
+    const-string v0, "$receiver"
+
+    .line 2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "it"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    sget v0, Lcom/supercell/id/R$id;->qr_code:I
+
+    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->f1(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/ImageView;
 
     if-eqz p1, :cond_0
 
-    .line 1
-    invoke-static {p1, p0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    move-result p1
-
-    return p1
-
+    .line 4
     :cond_0
-    const-string p1, "other"
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
+    return-object p1
 .end method

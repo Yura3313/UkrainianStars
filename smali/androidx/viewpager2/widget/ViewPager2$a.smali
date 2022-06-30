@@ -1,4 +1,4 @@
-.class public Landroidx/viewpager2/widget/ViewPager2$a;
+.class public final Landroidx/viewpager2/widget/ViewPager2$a;
 .super Landroidx/viewpager2/widget/ViewPager2$e;
 .source "ViewPager2.java"
 
@@ -22,19 +22,16 @@
 .method public constructor <init>(Landroidx/viewpager2/widget/ViewPager2;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$a;->a:Landroidx/viewpager2/widget/ViewPager2;
 
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Landroidx/viewpager2/widget/ViewPager2$e;-><init>(Landroidx/viewpager2/widget/ViewPager2$a;)V
+    invoke-direct {p0}, Landroidx/viewpager2/widget/ViewPager2$e;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 2
 
     .line 1
@@ -42,10 +39,10 @@
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Landroidx/viewpager2/widget/ViewPager2;->k:Z
+    iput-boolean v1, v0, Landroidx/viewpager2/widget/ViewPager2;->j:Z
 
     .line 2
-    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->r:Landroidx/viewpager2/widget/f;
+    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->q:Landroidx/viewpager2/widget/f;
 
     .line 3
     iput-boolean v1, v0, Landroidx/viewpager2/widget/f;->l:Z

@@ -1,4 +1,4 @@
-.class public Lcom/linecorp/nova/security/StringCipher$a;
+.class public final Lcom/linecorp/nova/security/StringCipher$a;
 .super Ljava/lang/Object;
 .source "StringCipher.java"
 

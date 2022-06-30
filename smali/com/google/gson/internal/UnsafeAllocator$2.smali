@@ -24,7 +24,6 @@
 .method public constructor <init>(Ljava/lang/reflect/Method;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/internal/UnsafeAllocator$2;->val$newInstance:Ljava/lang/reflect/Method;
 
     iput p2, p0, Lcom/google/gson/internal/UnsafeAllocator$2;->val$constructorId:I

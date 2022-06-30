@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
+    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->n(Lae/c2$a;ILae/b2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$e;
+.field public static final f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$e;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$e;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$e;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$e;
+    sput-object v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$e;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$e;
 
     return-void
 .end method
@@ -45,43 +45,39 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 8
+    .locals 5
 
     .line 1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, v0, Lvd/r;->m:Lcom/supercell/titan/h;
+    iget-object v0, v0, Lae/u;->m:La5/d0;
 
-    const/4 v5, 0x0
+    const-string v1, "Invite to Play"
 
-    const/4 v6, 0x0
+    const-string v2, "click"
 
-    const/16 v7, 0x18
+    const/4 v3, 0x0
 
-    const-string v2, "Invite to Play"
-
-    const-string v3, "click"
-
-    const-string v4, "Retry"
+    const/16 v4, 0x18
 
     .line 3
-    invoke-static/range {v1 .. v7}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lvd/r;->d()Lwd/i;
+    invoke-virtual {p1}, Lae/u;->d()Lbe/h;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lwd/i;->m()Lse/f0;
+    invoke-virtual {p1}, Lbe/h;->l()Lze/e0;
 
     return-void
 .end method

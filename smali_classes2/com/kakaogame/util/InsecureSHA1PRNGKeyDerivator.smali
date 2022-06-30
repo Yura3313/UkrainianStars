@@ -327,11 +327,13 @@
     .line 8
     aget v13, p0, v10
 
-    const v14, 0x5a827999
+    add-int/2addr v9, v13
 
-    invoke-static {v9, v13, v14, v12}, Landroidx/appcompat/widget/c;->a(IIII)I
+    const v13, 0x5a827999
 
-    move-result v9
+    add-int/2addr v9, v13
+
+    add-int/2addr v9, v12
 
     shl-int/lit8 v12, v3, 0x1e
 
@@ -376,11 +378,13 @@
     .line 9
     aget v13, p0, v12
 
-    const v14, 0x6ed9eba1
+    add-int/2addr v9, v13
 
-    invoke-static {v9, v13, v14, v10}, Landroidx/appcompat/widget/c;->a(IIII)I
+    const v13, 0x6ed9eba1
 
-    move-result v9
+    add-int/2addr v9, v13
+
+    add-int/2addr v9, v10
 
     shl-int/lit8 v10, v3, 0x1e
 
@@ -431,11 +435,13 @@
     .line 10
     aget v13, p0, v10
 
-    const v14, -0x70e44324
+    add-int/2addr v9, v13
 
-    invoke-static {v9, v13, v14, v12}, Landroidx/appcompat/widget/c;->a(IIII)I
+    const v13, -0x70e44324
 
-    move-result v9
+    add-int/2addr v9, v13
+
+    add-int/2addr v9, v12
 
     shl-int/lit8 v12, v3, 0x1e
 
@@ -478,11 +484,13 @@
     .line 11
     aget v13, p0, v12
 
-    const v14, -0x359d3e2a    # -3715189.5f
+    add-int/2addr v9, v13
 
-    invoke-static {v9, v13, v14, v10}, Landroidx/appcompat/widget/c;->a(IIII)I
+    const v13, -0x359d3e2a    # -3715189.5f
 
-    move-result v9
+    add-int/2addr v9, v13
+
+    add-int/2addr v9, v10
 
     shl-int/lit8 v10, v3, 0x1e
 

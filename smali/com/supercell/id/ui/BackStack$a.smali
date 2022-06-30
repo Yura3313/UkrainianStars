@@ -18,43 +18,43 @@
 
 
 # instance fields
-.field public final a:Lse/o;
+.field public final a:Lze/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lse/o<",
-            "Lae/i;",
+            "Lze/o<",
+            "Lie/h;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final b:Lse/o;
+.field public final b:Lze/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lse/o<",
-            "Lae/i;",
+            "Lze/o<",
+            "Lie/h;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final c:Lse/o;
+.field public final c:Lze/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lse/o<",
-            "Lae/i;",
+            "Lze/o<",
+            "Lie/h;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final d:Lse/f0;
+.field public final d:Lze/f0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lse/f0<",
-            "Lae/d<",
-            "Lae/i;",
-            "Lae/i;",
+            "Lze/e0<",
+            "Lie/d<",
+            "Lie/h;",
+            "Lie/h;",
             ">;>;"
         }
     .end annotation
@@ -63,87 +63,90 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 9
+    .locals 5
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
-    const/4 v1, 0x1
-
     .line 2
-    invoke-static {v0, v1}, Lp5/h;->d(Lse/b1;I)Lse/o;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lcom/supercell/id/ui/BackStack$a;->a:Lse/o;
-
-    .line 3
-    invoke-static {v0, v1}, Lp5/h;->d(Lse/b1;I)Lse/o;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lcom/supercell/id/ui/BackStack$a;->b:Lse/o;
-
-    .line 4
-    invoke-static {v0, v1}, Lp5/h;->d(Lse/b1;I)Lse/o;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/supercell/id/ui/BackStack$a;->c:Lse/o;
-
-    .line 5
-    sget-object v3, Lse/u0;->g:Lse/u0;
-
-    new-instance v6, Lvd/f1;
-
-    invoke-direct {v6, v2, v1, v0}, Lvd/f1;-><init>(Lse/f0;Lse/f0;Lde/d;)V
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v7, 0x3
-
-    const/4 v8, 0x0
-
-    invoke-static/range {v3 .. v8}, Lb5/m;->e(Lse/a0;Lde/f;ILke/p;ILjava/lang/Object;)Lse/f0;
+    invoke-static {}, Lbf/g;->c()Lze/o;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->d:Lse/f0;
+    check-cast v0, Lze/p;
+
+    iput-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->a:Lze/p;
+
+    .line 3
+    invoke-static {}, Lbf/g;->c()Lze/o;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    check-cast v1, Lze/p;
+
+    iput-object v1, p0, Lcom/supercell/id/ui/BackStack$a;->b:Lze/p;
+
+    .line 4
+    invoke-static {}, Lbf/g;->c()Lze/o;
+
+    move-result-object v1
+
+    move-object v2, v1
+
+    check-cast v2, Lze/p;
+
+    iput-object v2, p0, Lcom/supercell/id/ui/BackStack$a;->c:Lze/p;
+
+    .line 5
+    sget-object v2, Lze/u0;->f:Lze/u0;
+
+    new-instance v3, Lae/v1;
+
+    const/4 v4, 0x0
+
+    invoke-direct {v3, v0, v1, v4}, Lae/v1;-><init>(Lze/e0;Lze/e0;Lke/d;)V
+
+    const/4 v0, 0x3
+
+    invoke-static {v2, v4, v3, v0}, La5/g0;->j(Lze/a0;Lke/f;Lre/p;I)Lze/e0;
+
+    move-result-object v0
+
+    check-cast v0, Lze/f0;
+
+    iput-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->d:Lze/f0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Lse/f0;
+.method public final a()Lze/e0;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->a:Lse/o;
+    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->a:Lze/p;
 
     return-object v0
 .end method
 
-.method public b()V
+.method public final b()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->c:Lse/o;
+    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->c:Lze/p;
 
-    sget-object v1, Lae/i;->a:Lae/i;
+    sget-object v1, Lie/h;->a:Lie/h;
 
     .line 2
-    invoke-interface {v0, v1}, Lse/o;->j(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lze/e1;->G(Ljava/lang/Object;)Z
 
     return-void
 .end method
 
-.method public c(Ljava/util/List;)V
-    .locals 8
+.method public final c(Ljava/util/List;)V
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -159,14 +162,16 @@
 
     const/16 v1, 0xa
 
-    invoke-static {p1, v1}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v1}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
     move-result v1
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 2
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    check-cast p1, Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
@@ -185,7 +190,7 @@
     check-cast v1, Lcom/supercell/id/ui/BaseFragment;
 
     .line 4
-    iget-object v1, v1, Lcom/supercell/id/ui/BaseFragment;->d0:Lse/o;
+    iget-object v1, v1, Lcom/supercell/id/ui/BaseFragment;->b0:Lze/p;
 
     .line 5
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -194,23 +199,17 @@
 
     .line 6
     :cond_0
-    sget-object v2, Lse/u0;->g:Lse/u0;
+    sget-object p1, Lze/u0;->f:Lze/u0;
 
-    const/4 v3, 0x0
+    new-instance v1, Lae/t1;
 
-    new-instance v5, Lvd/c1;
+    const/4 v2, 0x0
 
-    const/4 p1, 0x0
+    invoke-direct {v1, v0, v2}, Lae/t1;-><init>(Ljava/util/Collection;Lke/d;)V
 
-    invoke-direct {v5, v0, p1}, Lvd/c1;-><init>(Ljava/util/Collection;Lde/d;)V
+    const/4 v0, 0x3
 
-    const/4 v6, 0x3
-
-    const/4 v7, 0x0
-
-    const/4 v4, 0x0
-
-    invoke-static/range {v2 .. v7}, Lb5/m;->e(Lse/a0;Lde/f;ILke/p;ILjava/lang/Object;)Lse/f0;
+    invoke-static {p1, v2, v1, v0}, La5/g0;->j(Lze/a0;Lke/f;Lre/p;I)Lze/e0;
 
     move-result-object p1
 
@@ -219,16 +218,16 @@
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/BackStack$a$a;-><init>(Lcom/supercell/id/ui/BackStack$a;)V
 
-    invoke-static {p1, v0}, Lvd/e1;->k(Lse/f0;Lke/l;)Lse/f0;
+    invoke-static {p1, v0}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
 
     return-void
 .end method
 
-.method public cancel()V
+.method public final cancel()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->a:Lse/o;
+    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->a:Lze/p;
 
     .line 2
     new-instance v1, Ljava/util/concurrent/CancellationException;
@@ -236,74 +235,73 @@
     invoke-direct {v1}, Ljava/util/concurrent/CancellationException;-><init>()V
 
     .line 3
-    invoke-interface {v0, v1}, Lse/o;->h(Ljava/lang/Throwable;)Z
+    invoke-virtual {v0, v1}, Lze/p;->l(Ljava/lang/Throwable;)Z
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->b:Lse/o;
+    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->b:Lze/p;
 
     new-instance v1, Ljava/util/concurrent/CancellationException;
 
     invoke-direct {v1}, Ljava/util/concurrent/CancellationException;-><init>()V
 
     .line 5
-    invoke-interface {v0, v1}, Lse/o;->h(Ljava/lang/Throwable;)Z
+    invoke-virtual {v0, v1}, Lze/p;->l(Ljava/lang/Throwable;)Z
 
     .line 6
-    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->c:Lse/o;
+    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->c:Lze/p;
 
     new-instance v1, Ljava/util/concurrent/CancellationException;
 
     invoke-direct {v1}, Ljava/util/concurrent/CancellationException;-><init>()V
 
     .line 7
-    invoke-interface {v0, v1}, Lse/o;->h(Ljava/lang/Throwable;)Z
+    invoke-virtual {v0, v1}, Lze/p;->l(Ljava/lang/Throwable;)Z
 
     return-void
 .end method
 
-.method public d()V
+.method public final d()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->b:Lse/o;
+    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->b:Lze/p;
 
-    sget-object v1, Lae/i;->a:Lae/i;
+    sget-object v1, Lie/h;->a:Lie/h;
 
     .line 2
-    invoke-interface {v0, v1}, Lse/o;->j(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lze/e1;->G(Ljava/lang/Object;)Z
 
     return-void
 .end method
 
-.method public e()Z
+.method public final e()Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->d:Lse/f0;
+    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->d:Lze/f0;
 
     .line 2
-    invoke-interface {v0}, Lse/b1;->isActive()Z
+    invoke-virtual {v0}, Lze/a;->isActive()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public f()Lse/f0;
+.method public final f()Lze/e0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lse/f0<",
-            "Lae/d<",
-            "Lae/i;",
-            "Lae/i;",
+            "Lze/e0<",
+            "Lie/d<",
+            "Lie/h;",
+            "Lie/h;",
             ">;>;"
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->d:Lse/f0;
+    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$a;->d:Lze/f0;
 
     return-object v0
 .end method

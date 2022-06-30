@@ -1,82 +1,165 @@
 .class public final Lgd/e;
-.super Ljava/lang/Object;
-.source "Comparisons.kt"
+.super Lse/h;
+.source "IngameInviteToPlayFragment.kt"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "TT;>;"
+        "Lse/h;",
+        "Lre/p<",
+        "Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;",
+        "Ljava/util/Map<",
+        "Lcom/supercell/id/model/IdSocialAccount;",
+        "+",
+        "Lae/m<",
+        "+",
+        "Ljava/lang/Boolean;",
+        "+",
+        "Ljava/lang/Exception;",
+        ">;>;",
+        "Lie/h;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Ljava/util/Comparator;
+# static fields
+.field public static final f:Lgd/e;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Comparator;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lgd/e;->g:Ljava/util/Comparator;
+    new-instance v0, Lgd/e;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Lgd/e;-><init>()V
+
+    sput-object v0, Lgd/e;->f:Lgd/e;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)I"
-        }
-    .end annotation
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lgd/e;->g:Ljava/util/Comparator;
+    check-cast p1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
-    check-cast p1, Lgd/c;
+    check-cast p2, Ljava/util/Map;
+
+    const-string v0, "$receiver"
 
     .line 2
-    iget-object p1, p1, Lgd/c;->b:Ljava/lang/String;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v1, ""
+    const-string p1, "it"
 
-    if-eqz p1, :cond_0
+    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    new-instance p1, Ljava/util/LinkedHashMap;
+
+    invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
+
+    .line 4
+    invoke-interface {p2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object p2
+
+    invoke-interface {p2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object p2
+
+    :cond_0
+    :goto_0
+    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Map$Entry;
+
+    .line 5
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lae/m;
+
+    .line 6
+    invoke-virtual {v2}, Lae/m;->b()Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v1, 0x0
+
+    :goto_1
+    if-eqz v1, :cond_0
+
+    .line 7
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    :cond_0
-    move-object p1, v1
+    .line 8
+    :cond_2
+    invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
 
-    .line 3
-    :goto_0
-    check-cast p2, Lgd/c;
+    move-result p2
 
-    .line 4
-    iget-object p2, p2, Lgd/c;->b:Ljava/lang/String;
+    xor-int/2addr p2, v1
 
-    if-eqz p2, :cond_1
+    if-eqz p2, :cond_3
 
-    move-object v1, p2
+    .line 9
+    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    .line 5
-    :cond_1
-    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    invoke-virtual {p1}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
 
-    move-result p1
+    move-result-object p1
 
-    return p1
+    invoke-virtual {p2, p1}, Lcom/supercell/id/SupercellId;->inviteToPlayFailed$supercellId_release(Ljava/util/Collection;)V
+
+    .line 10
+    :cond_3
+    sget-object p1, Lie/h;->a:Lie/h;
+
+    return-object p1
 .end method

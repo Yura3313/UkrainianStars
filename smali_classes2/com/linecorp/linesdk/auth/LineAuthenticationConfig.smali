@@ -46,7 +46,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$a;
 
     invoke-direct {v0}, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig$a;-><init>()V
@@ -313,7 +312,6 @@
 .method public getChannelId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig;->channelId:Ljava/lang/String;
 
     return-object v0
@@ -322,7 +320,6 @@
 .method public getEndPointBaseUrl()Landroid/net/Uri;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig;->endPointBaseUrl:Landroid/net/Uri;
 
     return-object v0
@@ -331,7 +328,6 @@
 .method public getWebLoginPageUrl()Landroid/net/Uri;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig;->webLoginPageUrl:Landroid/net/Uri;
 
     return-object v0
@@ -389,7 +385,6 @@
 .method public isEncryptorPreparationDisabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig;->isEncryptorPreparationDisabled:Z
 
     return v0
@@ -398,7 +393,6 @@
 .method public isLineAppAuthenticationDisabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/linecorp/linesdk/auth/LineAuthenticationConfig;->isLineAppAuthenticationDisabled:Z
 
     return v0
@@ -407,7 +401,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "LineAuthenticationConfig{channelId="

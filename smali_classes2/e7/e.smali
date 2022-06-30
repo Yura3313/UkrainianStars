@@ -1,64 +1,93 @@
-.class public Le7/e;
-.super Ljava/lang/Object;
-.source "ProfileDTO.java"
-
-# interfaces
-.implements Ljava/io/Serializable;
+.class public final Le7/e;
+.super La8/g;
+.source "JavaCore.java"
 
 
 # instance fields
-.field public final g:Ljava/lang/Long;
+.field public final synthetic b:Lcom/helpshift/util/h;
 
-.field public final h:Ljava/lang/String;
-
-.field public final i:Ljava/lang/String;
-
-.field public final j:Ljava/lang/String;
-
-.field public final k:Ljava/lang/String;
-
-.field public final l:Ljava/lang/String;
-
-.field public final m:Ljava/lang/String;
-
-.field public final n:Ljava/lang/String;
-
-.field public final o:Z
+.field public final synthetic c:Le7/g;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+.method public constructor <init>(Le7/g;Lcom/helpshift/util/h;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Le7/e;->c:Le7/g;
 
-    .line 2
-    iput-object p1, p0, Le7/e;->g:Ljava/lang/Long;
+    iput-object p2, p0, Le7/e;->b:Lcom/helpshift/util/h;
 
-    .line 3
-    iput-object p3, p0, Le7/e;->h:Ljava/lang/String;
-
-    .line 4
-    iput-object p2, p0, Le7/e;->i:Ljava/lang/String;
-
-    .line 5
-    iput-object p4, p0, Le7/e;->j:Ljava/lang/String;
-
-    .line 6
-    iput-object p5, p0, Le7/e;->k:Ljava/lang/String;
-
-    .line 7
-    iput-object p6, p0, Le7/e;->l:Ljava/lang/String;
-
-    .line 8
-    iput-object p7, p0, Le7/e;->m:Ljava/lang/String;
-
-    .line 9
-    iput-object p8, p0, Le7/e;->n:Ljava/lang/String;
-
-    .line 10
-    iput-boolean p9, p0, Le7/e;->o:Z
+    invoke-direct {p0}, La8/g;-><init>()V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 3
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Le7/e;->c:Le7/g;
+
+    invoke-virtual {v0}, Le7/g;->e()Lt8/b;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lt8/b;->n()Lcom/helpshift/util/h0;
+
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 2
+    iget-object v1, p0, Le7/e;->b:Lcom/helpshift/util/h;
+
+    if-eqz v1, :cond_1
+
+    .line 3
+    iget-object v1, v0, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+
+    check-cast v1, Ljava/lang/Integer;
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    if-ltz v1, :cond_0
+
+    .line 4
+    iget-object v1, p0, Le7/e;->b:Lcom/helpshift/util/h;
+
+    invoke-interface {v1, v0}, Lcom/helpshift/util/h;->d(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    iget-object v1, p0, Le7/e;->b:Lcom/helpshift/util/h;
+
+    invoke-interface {v1, v0}, Lcom/helpshift/util/h;->a(Ljava/lang/Object;)V
+
+    :cond_1
+    :goto_0
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    .line 6
+    iget-object v1, p0, Le7/e;->b:Lcom/helpshift/util/h;
+
+    if-eqz v1, :cond_2
+
+    const/4 v2, 0x0
+
+    .line 7
+    invoke-interface {v1, v2}, Lcom/helpshift/util/h;->a(Ljava/lang/Object;)V
+
+    .line 8
+    :cond_2
+    throw v0
 .end method

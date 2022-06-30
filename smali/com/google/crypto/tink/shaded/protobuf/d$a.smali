@@ -21,11 +21,11 @@
 
 .field public c:Ljava/lang/Object;
 
-.field public final d:Lcom/google/crypto/tink/shaded/protobuf/j;
+.field public final d:Lcom/google/crypto/tink/shaded/protobuf/i;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/crypto/tink/shaded/protobuf/j;)V
+.method public constructor <init>(Lcom/google/crypto/tink/shaded/protobuf/i;)V
     .locals 0
 
     .line 1
@@ -35,7 +35,7 @@
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/d$a;->d:Lcom/google/crypto/tink/shaded/protobuf/j;
+    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/d$a;->d:Lcom/google/crypto/tink/shaded/protobuf/i;
 
     return-void
 .end method

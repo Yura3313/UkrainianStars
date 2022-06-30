@@ -4,17 +4,16 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/supercell/id/api/ApiError;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/api/ApiError;->f:Ljava/lang/String;
 
     return-void
 .end method

@@ -1,79 +1,128 @@
 .class public final Lx1/h;
-.super Lx1/n;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-auth@@19.0.0"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lx1/n<",
-        "Lw1/c;",
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/auth/api/signin/SignInAccount;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic l:Landroid/content/Context;
-
-.field public final synthetic m:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
-
-
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/common/api/c;Landroid/content/Context;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Lx1/h;->l:Landroid/content/Context;
-
-    iput-object p3, p0, Lx1/h;->m:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
-
-    invoke-direct {p0, p1}, Lx1/n;-><init>(Lcom/google/android/gms/common/api/c;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic d(Lcom/google/android/gms/common/api/Status;)Lz1/g;
-    .locals 2
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 7
 
     .line 1
-    new-instance v0, Lw1/c;
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
 
-    const/4 v1, 0x0
+    move-result v0
 
-    invoke-direct {v0, v1, p1}, Lw1/c;-><init>(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
+    const-string v1, ""
 
-    return-object v0
-.end method
+    const/4 v2, 0x0
 
-.method public final synthetic k(Lcom/google/android/gms/common/api/a$b;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+    move-object v3, v2
 
-    .line 1
-    check-cast p1, Lx1/f;
+    move-object v2, v1
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->v()Landroid/os/IInterface;
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result-object p1
+    move-result v4
 
-    check-cast p1, Lcom/google/android/gms/auth/api/signin/internal/zzt;
-
-    new-instance v0, Lx1/k;
-
-    invoke-direct {v0, p0}, Lx1/k;-><init>(Lx1/h;)V
-
-    iget-object v1, p0, Lx1/h;->m:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    if-ge v4, v0, :cond_3
 
     .line 3
-    invoke-interface {p1, v0, v1}, Lcom/google/android/gms/auth/api/signin/internal/zzt;->r3(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    return-void
+    move-result v4
+
+    const v5, 0xffff
+
+    and-int/2addr v5, v4
+
+    const/4 v6, 0x4
+
+    if-eq v5, v6, :cond_2
+
+    const/4 v6, 0x7
+
+    if-eq v5, v6, :cond_1
+
+    const/16 v6, 0x8
+
+    if-eq v5, v6, :cond_0
+
+    .line 4
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    sget-object v3, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 7
+    invoke-static {p1, v4, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+
+    goto :goto_0
+
+    .line 8
+    :cond_2
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    .line 9
+    :cond_3
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+
+    .line 10
+    new-instance p1, Lcom/google/android/gms/auth/api/signin/SignInAccount;
+
+    invoke-direct {p1, v1, v3, v2}, Lcom/google/android/gms/auth/api/signin/SignInAccount;-><init>(Ljava/lang/String;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Ljava/lang/String;)V
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/auth/api/signin/SignInAccount;
+
+    return-object p1
 .end method

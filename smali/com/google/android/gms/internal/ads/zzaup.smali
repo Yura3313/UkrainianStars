@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.rewarded.client.IRewardedAdCallback"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,33 +19,33 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 1
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    const/4 p4, 0x1
+    const/4 v0, 0x1
 
-    if-eq p1, p4, :cond_6
+    if-eq p1, v0, :cond_6
 
-    const/4 v0, 0x2
+    const/4 v1, 0x2
 
-    if-eq p1, v0, :cond_5
+    if-eq p1, v1, :cond_5
 
-    const/4 v0, 0x3
+    const/4 v1, 0x3
 
-    if-eq p1, v0, :cond_2
+    if-eq p1, v1, :cond_2
 
-    const/4 v0, 0x4
+    const/4 v1, 0x4
 
-    if-eq p1, v0, :cond_1
+    if-eq p1, v1, :cond_1
 
-    const/4 v0, 0x5
+    const/4 v1, 0x5
 
-    if-eq p1, v0, :cond_0
+    if-eq p1, v1, :cond_0
 
     const/4 p1, 0x0
 
@@ -56,14 +55,14 @@
     :cond_0
     sget-object p1, Lcom/google/android/gms/internal/ads/zzuw;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lj3/mw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lk3/cw0;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzuw;
 
     .line 2
-    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaum;->z5(Lcom/google/android/gms/internal/ads/zzuw;)V
+    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaum;->x5(Lcom/google/android/gms/internal/ads/zzuw;)V
 
     goto :goto_1
 
@@ -74,7 +73,7 @@
     move-result p1
 
     .line 4
-    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaum;->O6(I)V
+    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaum;->J6(I)V
 
     goto :goto_1
 
@@ -99,9 +98,9 @@
     move-result-object p2
 
     .line 7
-    instance-of v0, p2, Lcom/google/android/gms/internal/ads/zzaug;
+    instance-of v1, p2, Lcom/google/android/gms/internal/ads/zzaug;
 
-    if-eqz v0, :cond_4
+    if-eqz v1, :cond_4
 
     .line 8
     move-object p1, p2
@@ -120,23 +119,23 @@
 
     .line 10
     :goto_0
-    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaum;->X(Lcom/google/android/gms/internal/ads/zzaug;)V
+    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/ads/zzaum;->e0(Lcom/google/android/gms/internal/ads/zzaug;)V
 
     goto :goto_1
 
     .line 11
     :cond_5
-    invoke-interface {p0}, Lcom/google/android/gms/internal/ads/zzaum;->B1()V
+    invoke-interface {p0}, Lcom/google/android/gms/internal/ads/zzaum;->G1()V
 
     goto :goto_1
 
     .line 12
     :cond_6
-    invoke-interface {p0}, Lcom/google/android/gms/internal/ads/zzaum;->d2()V
+    invoke-interface {p0}, Lcom/google/android/gms/internal/ads/zzaum;->h2()V
 
     .line 13
     :goto_1
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    return p4
+    return v0
 .end method

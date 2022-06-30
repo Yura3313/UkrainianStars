@@ -134,7 +134,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -149,7 +148,6 @@
 .method public static values()[Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;->$VALUES:[Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;
 
     invoke-virtual {v0}, [Lcom/kakaogame/web/WebDialog$Settings$PreviousButtonColor;->clone()Ljava/lang/Object;

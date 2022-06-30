@@ -85,7 +85,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;)Landroid/view/View;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;->customView:Landroid/view/View;
 
     return-object p0
@@ -94,7 +93,6 @@
 .method public static synthetic access$600(Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;)Landroid/view/ViewGroup;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;->customViewContainer:Landroid/view/ViewGroup;
 
     return-object p0
@@ -170,7 +168,7 @@
     .line 11
     iget-object v2, p0, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;->customViewContainer:Landroid/view/ViewGroup;
 
-    invoke-virtual {v2, v1}, Landroid/view/ViewGroup;->startAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v2, v1}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 12
     iget-object v1, p0, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;->customViewCallback:Landroid/webkit/WebChromeClient$CustomViewCallback;
@@ -250,7 +248,7 @@
     if-eqz p2, :cond_0
 
     .line 2
-    iget-boolean v1, p2, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->i:Z
+    iget-boolean v1, p2, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->h:Z
 
     if-eqz v1, :cond_0
 
@@ -534,7 +532,7 @@
     iput-object v1, p0, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;->customViewContainer:Landroid/view/ViewGroup;
 
     .line 8
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->setBackgroundResource(I)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 9
     :cond_1
@@ -561,7 +559,7 @@
 
     const/4 p2, 0x0
 
-    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
 
     .line 15
     iget-object p1, p0, Lcom/kakaogame/web/WebViewContainer;->activity:Landroid/app/Activity;

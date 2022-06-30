@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/auth/view/LoginUIManager$18;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/LoginUIManager$18$1;->this$0:Lcom/kakaogame/auth/view/LoginUIManager$18;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/auth/view/LoginUIManager$18$1;->this$0:Lcom/kakaogame/auth/view/LoginUIManager$18;
 
     iget-object v0, v0, Lcom/kakaogame/auth/view/LoginUIManager$18;->val$dialogLock:Lcom/kakaogame/util/MutexLock;

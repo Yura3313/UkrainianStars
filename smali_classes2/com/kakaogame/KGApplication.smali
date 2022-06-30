@@ -20,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/KGResult;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/KGApplication;->returnResultOnCallback(Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/KGResult;)V
 
     return-void
@@ -38,7 +36,6 @@
 .method public static synthetic access$100(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/kakaogame/KGApplication;->addShortcutV26(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
     return-void
@@ -47,12 +44,11 @@
 .method public static addShortcut(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakaogame/KGApplication$7;
 
     invoke-direct {v0, p1, p2, p0}, Lcom/kakaogame/KGApplication$7;-><init>(Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;)V
 
-    invoke-static {p3, v0}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Lgc/a;)V
+    invoke-static {p3, v0}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Lkc/a;)V
 
     return-void
 .end method
@@ -815,7 +811,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-interface {p0, p1}, Lcom/kakaogame/KGResultCallback;->onResult(Lcom/kakaogame/KGResult;)V
 
     :cond_0

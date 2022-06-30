@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/os/Parcelable;
-.implements Lb2/e;
+.implements Lc2/e;
 
 
 # annotations
@@ -12,7 +12,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable;",
-        "Lb2/e<",
+        "Lc2/e<",
         "Lcom/google/android/gms/games/snapshot/Snapshot;",
         ">;"
     }
@@ -23,5 +23,5 @@
 .method public abstract getMetadata()Lcom/google/android/gms/games/snapshot/SnapshotMetadata;
 .end method
 
-.method public abstract u2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
+.method public abstract y2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
 .end method

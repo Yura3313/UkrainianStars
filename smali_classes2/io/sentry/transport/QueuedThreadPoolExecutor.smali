@@ -63,7 +63,6 @@
 .method private isSchedulingAllowed()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/sentry/transport/QueuedThreadPoolExecutor;->unfinishedTasksCount:Lio/sentry/transport/ReusableCountLatch;
 
     invoke-virtual {v0}, Lio/sentry/transport/ReusableCountLatch;->getCount()I
@@ -139,7 +138,7 @@
     invoke-virtual {v0}, Lio/sentry/transport/ReusableCountLatch;->increment()V
 
     .line 3
-    invoke-super {p0, p1}, Ljava/util/concurrent/ThreadPoolExecutor;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+    invoke-super {p0, p1}, Ljava/util/concurrent/AbstractExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
     move-result-object p1
 

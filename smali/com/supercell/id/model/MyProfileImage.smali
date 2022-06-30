@@ -33,7 +33,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/supercell/id/model/MyProfileImage$a;
 
     invoke-direct {v0}, Lcom/supercell/id/model/MyProfileImage$a;-><init>()V
@@ -46,16 +45,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lle/g;)V
-    .locals 0
-
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,7 +52,7 @@
 
 
 # virtual methods
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -71,10 +60,12 @@
     return v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    if-eqz p1, :cond_4
+    const-string p2, "dest"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -88,9 +79,9 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    sget-object p2, Lcom/supercell/id/model/MyProfileImage$Empty;->g:Lcom/supercell/id/model/MyProfileImage$Empty;
+    sget-object p2, Lcom/supercell/id/model/MyProfileImage$Empty;->f:Lcom/supercell/id/model/MyProfileImage$Empty;
 
-    invoke-static {p0, p2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p2
 
@@ -110,7 +101,7 @@
     check-cast p2, Lcom/supercell/id/model/MyProfileImage$Avatar;
 
     .line 5
-    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$Avatar;->g:Ljava/lang/String;
+    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$Avatar;->f:Ljava/lang/String;
 
     .line 6
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
@@ -129,13 +120,13 @@
     check-cast p2, Lcom/supercell/id/model/MyProfileImage$Image;
 
     .line 9
-    iget-object v0, p2, Lcom/supercell/id/model/MyProfileImage$Image;->g:Ljava/lang/String;
+    iget-object v0, p2, Lcom/supercell/id/model/MyProfileImage$Image;->f:Ljava/lang/String;
 
     .line 10
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 11
-    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$Image;->h:Ljava/lang/String;
+    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$Image;->g:Ljava/lang/String;
 
     .line 12
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
@@ -154,13 +145,13 @@
     check-cast p2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;
 
     .line 15
-    iget-object v0, p2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->g:Ljava/lang/String;
+    iget-object v0, p2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->f:Ljava/lang/String;
 
     .line 16
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 17
-    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->h:Ljava/lang/String;
+    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->g:Ljava/lang/String;
 
     .line 18
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
@@ -168,14 +159,4 @@
     :cond_3
     :goto_0
     return-void
-
-    :cond_4
-    const-string p1, "dest"
-
-    .line 19
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

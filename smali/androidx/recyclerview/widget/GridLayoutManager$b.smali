@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public a(II)I
+.method public final a(II)I
     .locals 5
 
     const/4 v0, 0x0
@@ -94,4 +94,24 @@
 
     :cond_3
     return v3
+.end method
+
+.method public final b()V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/recyclerview/widget/GridLayoutManager$b;->b:Landroid/util/SparseIntArray;
+
+    invoke-virtual {v0}, Landroid/util/SparseIntArray;->clear()V
+
+    return-void
+.end method
+
+.method public final c()V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/recyclerview/widget/GridLayoutManager$b;->a:Landroid/util/SparseIntArray;
+
+    invoke-virtual {v0}, Landroid/util/SparseIntArray;->clear()V
+
+    return-void
 .end method

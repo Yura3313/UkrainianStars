@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->o0()V
+    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->g0()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
     return-void
@@ -26,21 +25,20 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lvd/r;->d()Lwd/i;
+    invoke-virtual {v0}, Lae/u;->d()Lbe/h;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lwd/i;->m()Lse/f0;
+    invoke-virtual {v0}, Lbe/h;->l()Lze/e0;
 
     return-void
 .end method

@@ -591,7 +591,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/GzipSource;->inflaterSource:Lokio/InflaterSource;
 
     invoke-virtual {v0}, Lokio/InflaterSource;->close()V
@@ -717,10 +716,12 @@
 
     const-string v0, "byteCount < 0: "
 
+    .line 15
     invoke-static {v0, p2, p3}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p2
 
+    .line 16
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1
@@ -729,7 +730,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/GzipSource;->source:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/Source;->timeout()Lokio/Timeout;

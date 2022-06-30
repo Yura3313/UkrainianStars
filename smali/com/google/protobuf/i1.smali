@@ -71,11 +71,11 @@
     .end annotation
 .end method
 
-.method public abstract h(Ljava/lang/Object;Lcom/google/protobuf/y1;)V
+.method public abstract h(Ljava/lang/Object;Lcom/google/protobuf/x1;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
-            "Lcom/google/protobuf/y1;",
+            "Lcom/google/protobuf/x1;",
             ")V"
         }
     .end annotation

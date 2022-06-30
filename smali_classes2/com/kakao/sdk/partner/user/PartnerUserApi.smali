@@ -12,14 +12,14 @@
 
 
 # virtual methods
-.method public abstract ageAuthInfo(Ljava/lang/Integer;Ljava/lang/String;)Lxe/b;
+.method public abstract ageAuthInfo(Ljava/lang/Integer;Ljava/lang/String;)Lef/b;
     .param p1    # Ljava/lang/Integer;
-        .annotation runtime Lze/t;
+        .annotation runtime Lgf/t;
             value = "age_limit"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lze/t;
+        .annotation runtime Lgf/t;
             value = "property_keys"
         .end annotation
     .end param
@@ -29,25 +29,25 @@
             "Ljava/lang/Integer;",
             "Ljava/lang/String;",
             ")",
-            "Lxe/b<",
+            "Lef/b<",
             "Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;",
             ">;"
         }
     .end annotation
 
-    .annotation runtime Lze/f;
+    .annotation runtime Lgf/f;
         value = "/v1/user/age_auth"
     .end annotation
 .end method
 
-.method public abstract me(Ljava/lang/String;Z)Lxe/b;
+.method public abstract me(Ljava/lang/String;Z)Lef/b;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lze/t;
+        .annotation runtime Lgf/t;
             value = "propertyKeys"
         .end annotation
     .end param
     .param p2    # Z
-        .annotation runtime Lze/t;
+        .annotation runtime Lgf/t;
             value = "secure_resource"
         .end annotation
     .end param
@@ -56,13 +56,13 @@
             "(",
             "Ljava/lang/String;",
             "Z)",
-            "Lxe/b<",
+            "Lef/b<",
             "Lcom/kakao/sdk/partner/user/model/PartnerUser;",
             ">;"
         }
     .end annotation
 
-    .annotation runtime Lze/f;
+    .annotation runtime Lgf/f;
         value = "/v2/user/me"
     .end annotation
 .end method

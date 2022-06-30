@@ -16,19 +16,18 @@
 
 
 # instance fields
-.field public final h:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final i:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lj3/a01;
+    new-instance v0, Lk3/pz0;
 
-    invoke-direct {v0}, Lj3/a01;-><init>()V
+    invoke-direct {v0}, Lk3/pz0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzmm;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -50,14 +49,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzmm;->g:Ljava/lang/String;
 
     .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmm;->i:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -71,10 +70,10 @@
     const/4 p1, 0x0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmm;->g:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzmm;->i:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -111,9 +110,9 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzmm;
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzmj;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzmj;->f:Ljava/lang/String;
 
-    iget-object v3, p1, Lcom/google/android/gms/internal/ads/zzmj;->g:Ljava/lang/String;
+    iget-object v3, p1, Lcom/google/android/gms/internal/ads/zzmj;->f:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -121,22 +120,22 @@
 
     if-eqz v2, :cond_2
 
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzmm;->g:Ljava/lang/String;
 
-    iget-object v3, p1, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
+    iget-object v3, p1, Lcom/google/android/gms/internal/ads/zzmm;->g:Ljava/lang/String;
 
-    invoke-static {v2, v3}, Lj3/g21;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lk3/v11;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzmm;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzmm;->i:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
 
     .line 4
-    invoke-static {v2, p1}, Lj3/g21;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p1}, Lk3/v11;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -153,18 +152,18 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzmj;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzmj;->f:Ljava/lang/String;
 
-    const/16 v1, 0x20f
-
-    const/16 v2, 0x1f
-
-    invoke-static {v0, v1, v2}, Lcom/kakaogame/d;->a(Ljava/lang/String;II)I
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
 
+    add-int/lit16 v0, v0, 0x20f
+
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzmm;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -185,7 +184,7 @@
     mul-int/lit8 v0, v0, 0x1f
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzmm;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
@@ -203,17 +202,17 @@
     .locals 0
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzmj;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzmj;->f:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzmm;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 3
-    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzmm;->i:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzmm;->h:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

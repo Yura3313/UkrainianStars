@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/AppCompatDelegateImpl$c;
+.class public final Landroidx/appcompat/app/AppCompatDelegateImpl$c;
 .super Ljava/lang/Object;
 .source "AppCompatDelegateImpl.java"
 
@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

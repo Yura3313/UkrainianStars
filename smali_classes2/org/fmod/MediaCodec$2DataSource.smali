@@ -22,7 +22,6 @@
 .method public constructor <init>(Lorg/fmod/MediaCodec;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/fmod/MediaCodec$2DataSource;->this$0:Lorg/fmod/MediaCodec;
 
     invoke-direct {p0}, Landroid/media/MediaDataSource;-><init>()V
@@ -41,7 +40,6 @@
 .method public getSize()J
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/fmod/MediaCodec$2DataSource;->this$0:Lorg/fmod/MediaCodec;
 
     invoke-static {v0}, Lorg/fmod/MediaCodec;->access$000(Lorg/fmod/MediaCodec;)J
@@ -58,7 +56,6 @@
 .method public readAt(J[BII)I
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lorg/fmod/MediaCodec$2DataSource;->this$0:Lorg/fmod/MediaCodec;
 
     invoke-static {v0}, Lorg/fmod/MediaCodec;->access$000(Lorg/fmod/MediaCodec;)J

@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/protobuf/StringValue$b;
+        Lcom/google/protobuf/StringValue$a;
     }
 .end annotation
 
@@ -17,7 +17,7 @@
     value = {
         "Lcom/google/protobuf/GeneratedMessageLite<",
         "Lcom/google/protobuf/StringValue;",
-        "Lcom/google/protobuf/StringValue$b;",
+        "Lcom/google/protobuf/StringValue$a;",
         ">;",
         "Lcom/google/protobuf/r0;"
     }
@@ -81,7 +81,6 @@
 .method public static synthetic access$000()Lcom/google/protobuf/StringValue;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/StringValue;->DEFAULT_INSTANCE:Lcom/google/protobuf/StringValue;
 
     return-object v0
@@ -90,7 +89,6 @@
 .method public static synthetic access$100(Lcom/google/protobuf/StringValue;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/protobuf/StringValue;->setValue(Ljava/lang/String;)V
 
     return-void
@@ -99,7 +97,6 @@
 .method public static synthetic access$200(Lcom/google/protobuf/StringValue;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/StringValue;->clearValue()V
 
     return-void
@@ -108,7 +105,6 @@
 .method public static synthetic access$300(Lcom/google/protobuf/StringValue;Lcom/google/protobuf/i;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/protobuf/StringValue;->setValueBytes(Lcom/google/protobuf/i;)V
 
     return-void
@@ -117,7 +113,6 @@
 .method private clearValue()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
 
     move-result-object v0
@@ -134,38 +129,37 @@
 .method public static getDefaultInstance()Lcom/google/protobuf/StringValue;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/StringValue;->DEFAULT_INSTANCE:Lcom/google/protobuf/StringValue;
 
     return-object v0
 .end method
 
-.method public static newBuilder()Lcom/google/protobuf/StringValue$b;
+.method public static newBuilder()Lcom/google/protobuf/StringValue$a;
     .locals 1
 
     .line 1
     sget-object v0, Lcom/google/protobuf/StringValue;->DEFAULT_INSTANCE:Lcom/google/protobuf/StringValue;
 
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$b;
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$a;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/protobuf/StringValue$b;
+    check-cast v0, Lcom/google/protobuf/StringValue$a;
 
     return-object v0
 .end method
 
-.method public static newBuilder(Lcom/google/protobuf/StringValue;)Lcom/google/protobuf/StringValue$b;
+.method public static newBuilder(Lcom/google/protobuf/StringValue;)Lcom/google/protobuf/StringValue$a;
     .locals 1
 
     .line 2
     sget-object v0, Lcom/google/protobuf/StringValue;->DEFAULT_INSTANCE:Lcom/google/protobuf/StringValue;
 
-    invoke-virtual {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+    invoke-virtual {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$a;
 
     move-result-object p0
 
-    check-cast p0, Lcom/google/protobuf/StringValue$b;
+    check-cast p0, Lcom/google/protobuf/StringValue$a;
 
     return-object p0
 .end method
@@ -174,22 +168,22 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lcom/google/protobuf/StringValue;->newBuilder()Lcom/google/protobuf/StringValue$b;
+    invoke-static {}, Lcom/google/protobuf/StringValue;->newBuilder()Lcom/google/protobuf/StringValue$a;
 
     move-result-object v0
 
     .line 2
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$b;->d()V
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$a;->d()V
 
     .line 3
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->h:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
 
     check-cast v1, Lcom/google/protobuf/StringValue;
 
     invoke-static {v1, p0}, Lcom/google/protobuf/StringValue;->access$100(Lcom/google/protobuf/StringValue;Ljava/lang/String;)V
 
     .line 4
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$b;->b()Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$a;->b()Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
@@ -449,7 +443,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/StringValue;->DEFAULT_INSTANCE:Lcom/google/protobuf/StringValue;
 
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/c1;
@@ -478,7 +471,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
 
     move-result-object p1
 
@@ -489,7 +482,7 @@
 
 
 # virtual methods
-.method public final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$f;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 1
@@ -498,8 +491,6 @@
     move-result p1
 
     const/4 p2, 0x1
-
-    const/4 p3, 0x0
 
     packed-switch p1, :pswitch_data_0
 
@@ -511,7 +502,9 @@
     throw p1
 
     :pswitch_0
-    return-object p3
+    const/4 p1, 0x0
+
+    return-object p1
 
     .line 3
     :pswitch_1
@@ -539,11 +532,11 @@
     if-nez p1, :cond_0
 
     .line 7
-    new-instance p1, Lcom/google/protobuf/GeneratedMessageLite$c;
+    new-instance p1, Lcom/google/protobuf/GeneratedMessageLite$b;
 
     sget-object p3, Lcom/google/protobuf/StringValue;->DEFAULT_INSTANCE:Lcom/google/protobuf/StringValue;
 
-    invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$c;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+    invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$b;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
 
     .line 8
     sput-object p1, Lcom/google/protobuf/StringValue;->PARSER:Lcom/google/protobuf/c1;
@@ -595,13 +588,14 @@
 
     .line 12
     :pswitch_5
-    new-instance p1, Lcom/google/protobuf/StringValue$b;
+    new-instance p1, Lcom/google/protobuf/StringValue$a;
 
-    invoke-direct {p1, p3}, Lcom/google/protobuf/StringValue$b;-><init>(Lcom/google/protobuf/StringValue$a;)V
+    .line 13
+    invoke-direct {p1}, Lcom/google/protobuf/StringValue$a;-><init>()V
 
     return-object p1
 
-    .line 13
+    .line 14
     :pswitch_6
     new-instance p1, Lcom/google/protobuf/StringValue;
 
@@ -624,7 +618,6 @@
 .method public getValue()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/StringValue;->value_:Ljava/lang/String;
 
     return-object v0
@@ -633,10 +626,9 @@
 .method public getValueBytes()Lcom/google/protobuf/i;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/StringValue;->value_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->g(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 

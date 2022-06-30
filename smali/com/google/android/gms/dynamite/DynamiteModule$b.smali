@@ -22,17 +22,15 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>(Lt2/a;)V
+.method public synthetic constructor <init>(Lu2/a;)V
     .locals 0
 
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/google/android/gms/dynamite/DynamiteModule$b;-><init>()V
 
     return-void
 .end method

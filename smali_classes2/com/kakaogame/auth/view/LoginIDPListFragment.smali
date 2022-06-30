@@ -53,7 +53,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/auth/view/LoginIDPListFragment;)Lcom/kakaogame/auth/view/LoginIDPListFragment$LoginIDPListListener;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/auth/view/LoginIDPListFragment;->callbackListener:Lcom/kakaogame/auth/view/LoginIDPListFragment$LoginIDPListListener;
 
     return-object p0
@@ -76,7 +75,7 @@
     move-result-object v0
 
     .line 2
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -87,7 +86,7 @@
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 3
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -115,7 +114,7 @@
     .locals 5
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -212,7 +211,7 @@
 
     .line 12
     :cond_2
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -261,7 +260,7 @@
 
     check-cast v1, Landroid/view/ViewGroup;
 
-    invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 17
     sget v1, Lcom/kakaogame/R$id;->kakao_game_login_idp_list1:I
@@ -298,7 +297,7 @@
 
     check-cast v1, Landroid/view/ViewGroup;
 
-    invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 21
     sget v1, Lcom/kakaogame/R$id;->kakao_game_login_idp_list:I
@@ -364,7 +363,7 @@
     .locals 11
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -963,7 +962,7 @@
     .locals 10
 
     .line 70
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1515,7 +1514,7 @@
     .locals 2
 
     .line 1
-    invoke-super {p0, p1}, Landroid/app/DialogFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     const-string v0, "onConfigurationChanged!! : "
 
@@ -1524,6 +1523,7 @@
 
     move-result-object v0
 
+    .line 3
     iget v1, p1, Landroid/content/res/Configuration;->orientation:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -1544,7 +1544,7 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
+    .line 4
     iget v0, p0, Lcom/kakaogame/auth/view/LoginIDPListFragment;->preOrientation:I
 
     if-ltz v0, :cond_0
@@ -1553,7 +1553,7 @@
 
     if-eq v1, v0, :cond_1
 
-    .line 4
+    .line 5
     :cond_0
     invoke-virtual {p0}, Landroid/app/DialogFragment;->getDialog()Landroid/app/Dialog;
 
@@ -1561,22 +1561,22 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
+    .line 6
     invoke-direct {p0}, Lcom/kakaogame/auth/view/LoginIDPListFragment;->getLayoutView()Landroid/view/View;
 
     move-result-object v0
 
-    .line 6
+    .line 7
     invoke-direct {p0}, Lcom/kakaogame/auth/view/LoginIDPListFragment;->calculateViewSize()V
 
-    .line 7
+    .line 8
     invoke-virtual {p0}, Landroid/app/DialogFragment;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V
 
-    .line 8
+    .line 9
     :cond_1
     iget p1, p1, Landroid/content/res/Configuration;->orientation:I
 
@@ -1636,7 +1636,7 @@
 
     new-instance v1, Landroid/view/ContextThemeWrapper;
 
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1658,7 +1658,7 @@
 
     .line 8
     :cond_2
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1667,7 +1667,7 @@
     .line 9
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1740,7 +1740,7 @@
 
     .line 6
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Landroid/app/DialogFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object p1
 
@@ -1774,7 +1774,7 @@
 
     .line 5
     :cond_0
-    invoke-super {p0}, Landroid/app/DialogFragment;->onResume()V
+    invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     return-void
 .end method
@@ -1782,7 +1782,6 @@
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     return-void
@@ -1837,7 +1836,6 @@
 .method public setCallbackListener(Lcom/kakaogame/auth/view/LoginIDPListFragment$LoginIDPListListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/LoginIDPListFragment;->callbackListener:Lcom/kakaogame/auth/view/LoginIDPListFragment$LoginIDPListListener;
 
     return-void

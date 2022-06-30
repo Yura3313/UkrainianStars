@@ -1,4 +1,4 @@
-.class public Lcom/supercell/id/util/SecurePreferences;
+.class public final Lcom/supercell/id/util/SecurePreferences;
 .super Ljava/lang/Object;
 .source "SecurePreferences.java"
 
@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -82,8 +82,10 @@
 
     iput-object p1, p0, Lcom/supercell/id/util/SecurePreferences;->f:Landroid/content/SharedPreferences;
 
+    const/4 p1, 0x1
+
     .line 8
-    iput-boolean p4, p0, Lcom/supercell/id/util/SecurePreferences;->a:Z
+    iput-boolean p1, p0, Lcom/supercell/id/util/SecurePreferences;->a:Z
     :try_end_0
     .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0

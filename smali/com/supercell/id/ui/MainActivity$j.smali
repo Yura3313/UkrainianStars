@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/ui/MainActivity$j;
+.field public static final f:Lcom/supercell/id/ui/MainActivity$j;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/MainActivity$j;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/MainActivity$j;->g:Lcom/supercell/id/ui/MainActivity$j;
+    sput-object v0, Lcom/supercell/id/ui/MainActivity$j;->f:Lcom/supercell/id/ui/MainActivity$j;
 
     return-void
 .end method
@@ -47,7 +47,6 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
     invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->dismiss()V

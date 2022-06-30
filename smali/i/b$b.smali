@@ -1,4 +1,4 @@
-.class public Li/b$b;
+.class public final Li/b$b;
 .super Li/b$e;
 .source "SafeIterableMap.java"
 
@@ -39,7 +39,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Li/b$e;-><init>(Li/b$c;Li/b$c;)V
 
     return-void
@@ -47,7 +46,7 @@
 
 
 # virtual methods
-.method public c(Li/b$c;)Li/b$c;
+.method public final c(Li/b$c;)Li/b$c;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -59,13 +58,12 @@
         }
     .end annotation
 
-    .line 1
-    iget-object p1, p1, Li/b$c;->i:Li/b$c;
+    iget-object p1, p1, Li/b$c;->h:Li/b$c;
 
     return-object p1
 .end method
 
-.method public d(Li/b$c;)Li/b$c;
+.method public final d(Li/b$c;)Li/b$c;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -77,8 +75,7 @@
         }
     .end annotation
 
-    .line 1
-    iget-object p1, p1, Li/b$c;->j:Li/b$c;
+    iget-object p1, p1, Li/b$c;->i:Li/b$c;
 
     return-object p1
 .end method

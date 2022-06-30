@@ -36,7 +36,6 @@
 .method public constructor <init>(Lcom/kakaogame/broker/InterfaceBrokerManager$24;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/broker/InterfaceBrokerManager$24$1;->this$0:Lcom/kakaogame/broker/InterfaceBrokerManager$24;
 
     iput-object p2, p0, Lcom/kakaogame/broker/InterfaceBrokerManager$24$1;->val$lock:Lcom/kakaogame/util/MutexLock;

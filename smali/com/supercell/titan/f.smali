@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/f;
+.class public final Lcom/supercell/titan/f;
 .super Ljava/lang/Object;
 .source "GameApp.java"
 
@@ -14,7 +14,6 @@
 .method public constructor <init>(Lcom/supercell/titan/GameApp;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/titan/f;->a:Lcom/supercell/titan/GameApp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,7 +23,7 @@
 
 
 # virtual methods
-.method public onApplyWindowInsets(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+.method public final onApplyWindowInsets(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
     .locals 2
 
     .line 1
@@ -39,7 +38,7 @@
 
     new-instance v1, Lcom/supercell/titan/f$a;
 
-    invoke-direct {v1, p0, p1}, Lcom/supercell/titan/f$a;-><init>(Lcom/supercell/titan/f;Landroid/view/DisplayCutout;)V
+    invoke-direct {v1, p1}, Lcom/supercell/titan/f$a;-><init>(Landroid/view/DisplayCutout;)V
 
     invoke-virtual {v0, v1}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 

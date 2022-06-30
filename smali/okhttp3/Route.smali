@@ -71,7 +71,6 @@
 .method public address()Lokhttp3/Address;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
 
     return-object v0
@@ -175,7 +174,6 @@
 .method public proxy()Ljava/net/Proxy;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Route;->proxy:Ljava/net/Proxy;
 
     return-object v0
@@ -184,7 +182,6 @@
 .method public requiresTunnel()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
 
     iget-object v0, v0, Lokhttp3/Address;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
@@ -215,7 +212,6 @@
 .method public socketAddress()Ljava/net/InetSocketAddress;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Route;->inetSocketAddress:Ljava/net/InetSocketAddress;
 
     return-object v0
@@ -231,6 +227,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lokhttp3/Route;->inetSocketAddress:Ljava/net/InetSocketAddress;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

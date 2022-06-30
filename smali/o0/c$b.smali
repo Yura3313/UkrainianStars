@@ -1,4 +1,4 @@
-.class public Lo0/c$b;
+.class public final Lo0/c$b;
 .super Lo0/c$f;
 .source "ModernAsyncTask.java"
 
@@ -29,7 +29,6 @@
 .method public constructor <init>(Lo0/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lo0/c$b;->b:Lo0/c;
 
     invoke-direct {p0}, Lo0/c$f;-><init>()V
@@ -39,7 +38,7 @@
 
 
 # virtual methods
-.method public call()Ljava/lang/Object;
+.method public final call()Ljava/lang/Object;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -56,28 +55,26 @@
     .line 1
     iget-object v0, p0, Lo0/c$b;->b:Lo0/c;
 
-    iget-object v0, v0, Lo0/c;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, v0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    const/16 v0, 0xa
+    const/4 v0, 0x0
 
-    const/4 v2, 0x0
+    const/16 v2, 0xa
 
     .line 2
     :try_start_0
-    invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
+    invoke-static {v2}, Landroid/os/Process;->setThreadPriority(I)V
 
     .line 3
-    iget-object v0, p0, Lo0/c$b;->b:Lo0/c;
+    iget-object v2, p0, Lo0/c$b;->b:Lo0/c;
 
     iget-object v3, p0, Lo0/c$f;->a:[Ljava/lang/Object;
 
-    invoke-virtual {v0, v3}, Lo0/c;->a([Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
+    invoke-virtual {v2, v3}, Lo0/c;->a([Ljava/lang/Object;)V
 
     .line 4
     invoke-static {}, Landroid/os/Binder;->flushPendingCommands()V
@@ -85,35 +82,35 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 5
-    iget-object v0, p0, Lo0/c$b;->b:Lo0/c;
+    iget-object v1, p0, Lo0/c$b;->b:Lo0/c;
 
-    invoke-virtual {v0, v2}, Lo0/c;->d(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Lo0/c;->d(Ljava/lang/Object;)Ljava/lang/Object;
 
-    return-object v2
+    return-object v0
 
     :catchall_0
-    move-exception v0
+    move-exception v2
 
     .line 6
     :try_start_1
     iget-object v3, p0, Lo0/c$b;->b:Lo0/c;
 
-    iget-object v3, v3, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v3, v3, Lo0/c;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v3, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 7
-    throw v0
+    throw v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :catchall_1
-    move-exception v0
+    move-exception v1
 
     .line 8
-    iget-object v1, p0, Lo0/c$b;->b:Lo0/c;
+    iget-object v2, p0, Lo0/c$b;->b:Lo0/c;
 
-    invoke-virtual {v1, v2}, Lo0/c;->d(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v0}, Lo0/c;->d(Ljava/lang/Object;)Ljava/lang/Object;
 
-    throw v0
+    throw v1
 .end method

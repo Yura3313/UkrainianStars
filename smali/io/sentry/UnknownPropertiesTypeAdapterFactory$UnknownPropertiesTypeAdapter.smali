@@ -74,7 +74,6 @@
 .method public static synthetic access$000(Ljava/lang/Class;Lcom/google/gson/TypeAdapter;Lcom/google/gson/internal/Excluder;Lcom/google/gson/FieldNamingStrategy;)Lcom/google/gson/TypeAdapter;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lio/sentry/UnknownPropertiesTypeAdapterFactory$UnknownPropertiesTypeAdapter;->create(Ljava/lang/Class;Lcom/google/gson/TypeAdapter;Lcom/google/gson/internal/Excluder;Lcom/google/gson/FieldNamingStrategy;)Lcom/google/gson/TypeAdapter;
 
     move-result-object p0

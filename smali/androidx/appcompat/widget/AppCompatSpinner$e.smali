@@ -36,7 +36,7 @@
 .method public abstract h(Ljava/lang/CharSequence;)V
 .end method
 
-.method public abstract i(Landroid/graphics/drawable/Drawable;)V
+.method public abstract j(Landroid/graphics/drawable/Drawable;)V
 .end method
 
 .method public abstract k(I)V

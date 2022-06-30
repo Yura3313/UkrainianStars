@@ -19,21 +19,21 @@
 
 
 # direct methods
-.method public constructor <init>(II)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 3
-    invoke-direct {p0, p1, p2}, Landroidx/appcompat/app/ActionBar$LayoutParams;-><init>(II)V
+    invoke-direct {p0}, Landroidx/appcompat/app/ActionBar$LayoutParams;-><init>()V
 
-    const/4 p1, 0x0
+    const/4 v0, 0x0
 
     .line 4
-    iput p1, p0, Landroidx/appcompat/widget/Toolbar$LayoutParams;->b:I
+    iput v0, p0, Landroidx/appcompat/widget/Toolbar$LayoutParams;->b:I
 
-    const p1, 0x800013
+    const v0, 0x800013
 
     .line 5
-    iput p1, p0, Landroidx/appcompat/app/ActionBar$LayoutParams;->a:I
+    iput v0, p0, Landroidx/appcompat/app/ActionBar$LayoutParams;->a:I
 
     return-void
 .end method

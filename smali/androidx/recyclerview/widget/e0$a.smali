@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/e0$a;
+.class public final Landroidx/recyclerview/widget/e0$a;
 .super Ljava/lang/Object;
 .source "ViewInfoStore.java"
 
@@ -36,7 +36,6 @@
 .method public static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Le0/d;
 
     const/16 v1, 0x14
@@ -51,7 +50,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

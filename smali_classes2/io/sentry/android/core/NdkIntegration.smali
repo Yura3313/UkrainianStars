@@ -180,7 +180,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/NdkIntegration;->sentryNdkClass:Ljava/lang/Class;
 
     return-object v0

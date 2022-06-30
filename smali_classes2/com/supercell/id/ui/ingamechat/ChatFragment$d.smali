@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/ingamechat/ChatFragment$d;
-.super Lle/j;
+.super Lse/h;
 .source "IngameChatFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
@@ -18,67 +18,67 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lvd/k<",
+        "Lse/h;",
+        "Lre/l<",
+        "Lae/m<",
         "+",
-        "Lqc/h;",
+        "Lvc/h;",
         "+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/ingamechat/ChatFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingamechat/ChatFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$d;->g:Lcom/supercell/id/ui/ingamechat/ChatFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$d;->f:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 9
 
     .line 1
-    check-cast p1, Lvd/k;
+    check-cast p1, Lae/m;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$d;->g:Lcom/supercell/id/ui/ingamechat/ChatFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$d;->f:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
     const/4 v1, 0x0
 
     if-eqz p1, :cond_7
 
     .line 3
-    instance-of v2, p1, Lvd/k$a;
+    instance-of v2, p1, Lae/m$a;
 
     if-eqz v2, :cond_5
 
-    check-cast p1, Lvd/k$a;
+    check-cast p1, Lae/m$a;
 
     .line 4
-    iget-object p1, p1, Lvd/k$a;->a:Ljava/lang/Object;
+    iget-object p1, p1, Lae/m$a;->a:Ljava/lang/Object;
 
     .line 5
-    check-cast p1, Lqc/h;
+    check-cast p1, Lvc/h;
 
     .line 6
-    iget-object v2, p1, Lqc/h;->b:Ljava/util/List;
+    iget-object v2, p1, Lvc/h;->b:Ljava/util/List;
 
     .line 7
     new-instance v3, Ljava/util/ArrayList;
@@ -103,10 +103,10 @@
     move-result-object v4
 
     .line 9
-    check-cast v4, Lqc/g;
+    check-cast v4, Lvc/g;
 
     .line 10
-    iget-object v5, p1, Lqc/h;->a:Ljava/util/List;
+    iget-object v5, p1, Lvc/h;->a:Ljava/util/List;
 
     .line 11
     invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -126,16 +126,16 @@
 
     move-object v7, v6
 
-    check-cast v7, Lqc/f;
+    check-cast v7, Lvc/f;
 
     .line 12
-    iget-object v7, v7, Lqc/f;->a:Ljava/lang/String;
+    iget-object v7, v7, Lvc/f;->a:Ljava/lang/String;
 
     .line 13
-    iget-object v8, v4, Lqc/g;->a:Ljava/lang/String;
+    iget-object v8, v4, Lvc/g;->a:Ljava/lang/String;
 
     .line 14
-    invoke-static {v7, v8}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v8}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -147,14 +147,14 @@
     move-object v6, v1
 
     :goto_1
-    check-cast v6, Lqc/f;
+    check-cast v6, Lvc/f;
 
     if-eqz v6, :cond_3
 
     .line 15
-    new-instance v5, Led/a;
+    new-instance v5, Ljd/a;
 
-    invoke-direct {v5, v4, v6}, Led/a;-><init>(Lqc/g;Lqc/f;)V
+    invoke-direct {v5, v4, v6}, Ljd/a;-><init>(Lvc/g;Lvc/f;)V
 
     goto :goto_2
 
@@ -171,27 +171,27 @@
 
     .line 17
     :cond_4
-    new-instance p1, Lvd/k$a;
+    new-instance p1, Lae/m$a;
 
-    invoke-direct {p1, v3}, Lvd/k$a;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p1, v3}, Lae/m$a;-><init>(Ljava/lang/Object;)V
 
     goto :goto_3
 
     .line 18
     :cond_5
-    instance-of v2, p1, Lvd/k$b;
+    instance-of v2, p1, Lae/m$b;
 
     if-eqz v2, :cond_6
 
-    new-instance v2, Lvd/k$b;
+    new-instance v2, Lae/m$b;
 
-    check-cast p1, Lvd/k$b;
+    check-cast p1, Lae/m$b;
 
     .line 19
-    iget-object p1, p1, Lvd/k$b;->a:Ljava/lang/Object;
+    iget-object p1, p1, Lae/m$b;->a:Ljava/lang/Object;
 
     .line 20
-    invoke-direct {v2, p1}, Lvd/k$b;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v2, p1}, Lae/m$b;-><init>(Ljava/lang/Object;)V
 
     move-object p1, v2
 
@@ -209,7 +209,7 @@
 
     .line 21
     :goto_3
-    iput-object p1, v0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->j0:Lvd/k;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     const/4 v2, 0x0
 
@@ -221,23 +221,23 @@
 
     .line 22
     :cond_8
-    instance-of v3, p1, Lvd/k$b;
+    instance-of v3, p1, Lae/m$b;
 
     if-eqz v3, :cond_9
 
-    new-instance v3, Lvd/o;
+    new-instance v3, Lae/q;
 
-    check-cast p1, Lvd/k$b;
+    check-cast p1, Lae/m$b;
 
     .line 23
-    iget-object p1, p1, Lvd/k$b;->a:Ljava/lang/Object;
+    iget-object p1, p1, Lae/m$b;->a:Ljava/lang/Object;
 
     .line 24
     check-cast p1, Lcom/supercell/id/util/NormalizedError;
 
-    invoke-direct {v3, p1}, Lvd/o;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+    invoke-direct {v3, p1}, Lae/q;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v3}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v3}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -245,7 +245,7 @@
 
     .line 25
     :cond_9
-    invoke-virtual {p1}, Lvd/k;->a()Ljava/lang/Object;
+    invoke-virtual {p1}, Lae/m;->a()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -274,7 +274,7 @@
     goto :goto_5
 
     :cond_b
-    sget-object p1, Lbe/m;->g:Lbe/m;
+    sget-object p1, Lje/l;->f:Lje/l;
 
     .line 26
     :goto_5
@@ -285,13 +285,13 @@
     if-eqz v4, :cond_c
 
     .line 27
-    new-instance p1, Lvd/u;
+    new-instance p1, Lae/y;
 
     const-string v3, "account_messages_no_new_messages"
 
-    invoke-direct {p1, v3}, Lvd/u;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v3}, Lae/y;-><init>(Ljava/lang/String;)V
 
-    invoke-static {p1}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -299,10 +299,10 @@
 
     .line 28
     :cond_c
-    sget-object v4, Led/f;->a:Lvd/j;
+    sget-object v4, Ljd/h;->a:Lae/k;
 
     .line 29
-    invoke-static {p1}, Lbe/k;->a0(Ljava/lang/Iterable;)Ljava/lang/Iterable;
+    invoke-static {p1}, Lje/j;->V(Ljava/lang/Iterable;)Ljava/lang/Iterable;
 
     move-result-object v4
 
@@ -312,32 +312,32 @@
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     .line 31
-    check-cast v4, Lbe/r;
+    check-cast v4, Lje/q;
 
-    invoke-virtual {v4}, Lbe/r;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v4}, Lje/q;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
 
     :goto_6
     move-object v6, v4
 
-    check-cast v6, Lbe/s;
+    check-cast v6, Lje/r;
 
-    invoke-virtual {v6}, Lbe/s;->hasNext()Z
+    invoke-virtual {v6}, Lje/r;->hasNext()Z
 
     move-result v7
 
     if-eqz v7, :cond_e
 
-    invoke-virtual {v6}, Lbe/s;->next()Ljava/lang/Object;
+    invoke-virtual {v6}, Lje/r;->next()Ljava/lang/Object;
 
     move-result-object v6
 
     .line 32
-    check-cast v6, Lbe/q;
+    check-cast v6, Lje/p;
 
     .line 33
-    iget v7, v6, Lbe/q;->a:I
+    iget v7, v6, Lje/p;->a:I
 
     if-lez v7, :cond_d
 
@@ -353,14 +353,14 @@
     move-result-object v7
 
     .line 35
-    iget-object v8, v6, Lbe/q;->b:Ljava/lang/Object;
+    iget-object v8, v6, Lje/p;->b:Ljava/lang/Object;
 
     .line 36
     invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v8
 
-    invoke-static {v7, v8}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v8}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -368,22 +368,22 @@
 
     const/4 v7, 0x2
 
-    new-array v7, v7, [Lvd/j1;
+    new-array v7, v7, [Lae/b2;
 
     .line 37
-    sget-object v8, Led/f;->a:Lvd/j;
+    sget-object v8, Ljd/h;->a:Lae/k;
 
     aput-object v8, v7, v2
 
     .line 38
-    iget-object v6, v6, Lbe/q;->b:Ljava/lang/Object;
+    iget-object v6, v6, Lje/p;->b:Ljava/lang/Object;
 
     .line 39
-    check-cast v6, Lvd/j1;
+    check-cast v6, Lae/b2;
 
     aput-object v6, v7, v3
 
-    invoke-static {v7}, Lb5/m;->m([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v7}, Lcom/android/billingclient/api/z;->i([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v6
 
@@ -391,16 +391,16 @@
 
     .line 40
     :cond_d
-    iget-object v6, v6, Lbe/q;->b:Ljava/lang/Object;
+    iget-object v6, v6, Lje/p;->b:Ljava/lang/Object;
 
     .line 41
-    invoke-static {v6}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v6}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v6
 
     .line 42
     :goto_7
-    invoke-static {v5, v6}, Lbe/i;->z(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {v5, v6}, Lje/h;->u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_6
 
@@ -409,7 +409,7 @@
 
     .line 43
     :goto_8
-    iput-object p1, v0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->l0:Ljava/util/List;
+    iput-object p1, v0, Lcom/supercell/id/ui/ingamechat/ChatFragment;->i0:Ljava/util/List;
 
     const/4 v3, 0x4
 
@@ -418,7 +418,7 @@
     .line 44
     sget v4, Lcom/supercell/id/R$id;->messagesList:I
 
-    invoke-virtual {v0, v4}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {v0, v4}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -426,13 +426,13 @@
 
     if-eqz v4, :cond_f
 
-    invoke-virtual {v4, v3}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {v4, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 45
     :cond_f
     sget v3, Lcom/supercell/id/R$id;->progressBar:I
 
-    invoke-virtual {v0, v3}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {v0, v3}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -440,7 +440,7 @@
 
     if-eqz v3, :cond_12
 
-    invoke-virtual {v3, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {v3, v2}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_9
 
@@ -448,7 +448,7 @@
     :cond_10
     sget v4, Lcom/supercell/id/R$id;->messagesList:I
 
-    invoke-virtual {v0, v4}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {v0, v4}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -456,13 +456,13 @@
 
     if-eqz v4, :cond_11
 
-    invoke-virtual {v4, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {v4, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 47
     :cond_11
     sget v2, Lcom/supercell/id/R$id;->progressBar:I
 
-    invoke-virtual {v0, v2}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {v0, v2}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -470,14 +470,14 @@
 
     if-eqz v2, :cond_12
 
-    invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 48
     :cond_12
     :goto_9
     sget v2, Lcom/supercell/id/R$id;->messagesList:I
 
-    invoke-virtual {v0, v2}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {v0, v2}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -509,11 +509,11 @@
 
     if-eqz v1, :cond_15
 
-    invoke-virtual {v1, p1}, Lvd/q;->k(Ljava/util/List;)V
+    invoke-virtual {v1, p1}, Lae/s;->p(Ljava/util/List;)V
 
     .line 49
     :cond_15
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
 .end method

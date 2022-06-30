@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final E:[Ljava/lang/String;
+.field public static final D:[Ljava/lang/String;
 
 
 # direct methods
@@ -27,8 +27,7 @@
 
     aput-object v2, v0, v1
 
-    .line 1
-    sput-object v0, Landroidx/transition/ChangeScroll;->E:[Ljava/lang/String;
+    sput-object v0, Landroidx/transition/ChangeScroll;->D:[Ljava/lang/String;
 
     return-void
 .end method
@@ -53,11 +52,11 @@
 
 
 # virtual methods
-.method public final J(Lv0/s;)V
+.method public final L(Lv0/s;)V
     .locals 3
 
     .line 1
-    iget-object v0, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object v0, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     iget-object v1, p1, Lv0/s;->b:Landroid/view/View;
 
@@ -71,10 +70,10 @@
 
     const-string v2, "android:changeScroll:x"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    iget-object v0, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object v0, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     iget-object p1, p1, Lv0/s;->b:Landroid/view/View;
 
@@ -88,30 +87,28 @@
 
     const-string v1, "android:changeScroll:y"
 
-    invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public d(Lv0/s;)V
+.method public final d(Lv0/s;)V
     .locals 0
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeScroll;->J(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeScroll;->L(Lv0/s;)V
 
     return-void
 .end method
 
-.method public g(Lv0/s;)V
+.method public final g(Lv0/s;)V
     .locals 0
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeScroll;->J(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeScroll;->L(Lv0/s;)V
 
     return-void
 .end method
 
-.method public l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public final l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
     .locals 7
 
     const/4 p1, 0x0
@@ -127,11 +124,11 @@
     iget-object v0, p3, Lv0/s;->b:Landroid/view/View;
 
     .line 2
-    iget-object v1, p2, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, p2, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v2, "android:changeScroll:x"
 
-    invoke-interface {v1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -142,9 +139,9 @@
     move-result v1
 
     .line 3
-    iget-object v3, p3, Lv0/s;->a:Ljava/util/Map;
+    iget-object v3, p3, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -155,11 +152,11 @@
     move-result v2
 
     .line 4
-    iget-object p2, p2, Lv0/s;->a:Ljava/util/Map;
+    iget-object p2, p2, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v3, "android:changeScroll:y"
 
-    invoke-interface {p2, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
@@ -170,9 +167,9 @@
     move-result p2
 
     .line 5
-    iget-object p3, p3, Lv0/s;->a:Ljava/util/Map;
+    iget-object p3, p3, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {p3, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p3, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p3
 
@@ -241,11 +238,10 @@
     return-object p1
 .end method
 
-.method public r()[Ljava/lang/String;
+.method public final r()[Ljava/lang/String;
     .locals 1
 
-    .line 1
-    sget-object v0, Landroidx/transition/ChangeScroll;->E:[Ljava/lang/String;
+    sget-object v0, Landroidx/transition/ChangeScroll;->D:[Ljava/lang/String;
 
     return-object v0
 .end method

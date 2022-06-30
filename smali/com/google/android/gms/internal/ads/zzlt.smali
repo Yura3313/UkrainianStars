@@ -41,7 +41,7 @@
     invoke-direct {p0, v0, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzho;->l:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzho;->k:Ljava/lang/String;
 
     if-gez p3, :cond_0
 
@@ -79,10 +79,12 @@
 
     const/16 v1, 0x17
 
+    .line 5
     invoke-static {p3, v1}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v1
 
+    .line 6
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -111,22 +113,22 @@
 
     invoke-direct {p0, p3, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 5
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzho;->l:Ljava/lang/String;
+    .line 7
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzho;->k:Ljava/lang/String;
 
-    .line 6
-    sget p1, Lj3/g21;->a:I
+    .line 8
+    sget p1, Lk3/v11;->a:I
 
     const/16 p3, 0x15
 
     if-lt p1, p3, :cond_0
 
-    .line 7
+    .line 9
     instance-of p1, p2, Landroid/media/MediaCodec$CodecException;
 
     if-eqz p1, :cond_0
 
-    .line 8
+    .line 10
     check-cast p2, Landroid/media/MediaCodec$CodecException;
 
     invoke-virtual {p2}, Landroid/media/MediaCodec$CodecException;->getDiagnosticInfo()Ljava/lang/String;

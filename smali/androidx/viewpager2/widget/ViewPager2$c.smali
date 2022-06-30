@@ -1,4 +1,4 @@
-.class public Landroidx/viewpager2/widget/ViewPager2$c;
+.class public final Landroidx/viewpager2/widget/ViewPager2$c;
 .super Landroidx/viewpager2/widget/ViewPager2$g;
 .source "ViewPager2.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Landroidx/viewpager2/widget/ViewPager2;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$c;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-direct {p0}, Landroidx/viewpager2/widget/ViewPager2$g;-><init>()V
@@ -32,18 +31,18 @@
 
 
 # virtual methods
-.method public c(I)V
+.method public final c(I)V
     .locals 1
 
     .line 1
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$c;->a:Landroidx/viewpager2/widget/ViewPager2;
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->clearFocus()V
+    invoke-virtual {p1}, Landroid/view/View;->clearFocus()V
 
     .line 2
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$c;->a:Landroidx/viewpager2/widget/ViewPager2;
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->hasFocus()Z
+    invoke-virtual {p1}, Landroid/view/View;->hasFocus()Z
 
     move-result p1
 
@@ -52,11 +51,11 @@
     .line 3
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$c;->a:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->p:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->o:Landroidx/viewpager2/widget/ViewPager2$k;
 
     const/4 v0, 0x2
 
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->requestFocus(I)Z
+    invoke-virtual {p1, v0}, Landroid/view/View;->requestFocus(I)Z
 
     :cond_0
     return-void

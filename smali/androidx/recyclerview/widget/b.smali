@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public a(II)V
+.method public final a(II)V
     .locals 1
 
     .line 1
@@ -39,21 +39,17 @@
     return-void
 .end method
 
-.method public b(II)V
+.method public final b(II)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/b;->a:Landroidx/recyclerview/widget/RecyclerView$e;
 
-    .line 2
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;
-
-    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$f;->e(II)V
+    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$e;->g(II)V
 
     return-void
 .end method
 
-.method public c(II)V
+.method public final c(II)V
     .locals 1
 
     .line 1
@@ -67,7 +63,7 @@
     return-void
 .end method
 
-.method public d(IILjava/lang/Object;)V
+.method public final d(IILjava/lang/Object;)V
     .locals 1
 
     .line 1

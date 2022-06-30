@@ -3,7 +3,7 @@
 .source "PushNotificationHandler.java"
 
 # interfaces
-.implements Lgc/a;
+.implements Lkc/a;
 
 
 # annotations
@@ -27,7 +27,6 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/kakaogame/push/PushMessage;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/push/PushNotificationHandler$1;->val$context:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/kakaogame/push/PushNotificationHandler$1;->val$pushMessage:Lcom/kakaogame/push/PushMessage;
@@ -42,7 +41,6 @@
 .method public onLoadingCancelled(Ljava/lang/String;Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/kakaogame/push/PushNotificationHandler$1;->val$context:Landroid/content/Context;
 
     iget-object p2, p0, Lcom/kakaogame/push/PushNotificationHandler$1;->val$pushMessage:Lcom/kakaogame/push/PushMessage;
@@ -58,7 +56,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p3}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {p3}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 2
     iget-object p1, p0, Lcom/kakaogame/push/PushNotificationHandler$1;->val$context:Landroid/content/Context;
@@ -70,11 +68,11 @@
     return-void
 .end method
 
-.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Lac/b;)V
+.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Lfc/b;)V
     .locals 0
 
     .line 1
-    invoke-static {p3}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {p3}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 2
     iget-object p1, p0, Lcom/kakaogame/push/PushNotificationHandler$1;->val$context:Landroid/content/Context;

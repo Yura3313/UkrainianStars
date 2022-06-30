@@ -13,9 +13,9 @@
 
 
 # instance fields
-.field public final j:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
-.field public final synthetic k:Lcom/google/android/play/core/appupdate/m;
+.field public final synthetic j:Lcom/google/android/play/core/appupdate/m;
 
 
 # direct methods
@@ -32,24 +32,24 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/google/android/play/core/appupdate/l;->k:Lcom/google/android/play/core/appupdate/m;
+    iput-object p1, p0, Lcom/google/android/play/core/appupdate/l;->j:Lcom/google/android/play/core/appupdate/m;
 
-    new-instance v0, Ly4/b;
+    new-instance v0, La5/b;
 
     const-string v1, "OnRequestInstallCallback"
 
-    invoke-direct {v0, v1}, Ly4/b;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {p0, p1, v0, p2}, Lcom/google/android/play/core/appupdate/j;-><init>(Lcom/google/android/play/core/appupdate/m;Ly4/b;Lcom/google/android/play/core/tasks/i;)V
+    invoke-direct {p0, p1, v0, p2}, Lcom/google/android/play/core/appupdate/j;-><init>(Lcom/google/android/play/core/appupdate/m;La5/b;Lcom/google/android/play/core/tasks/i;)V
 
-    iput-object p3, p0, Lcom/google/android/play/core/appupdate/l;->j:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/play/core/appupdate/l;->i:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final h(Landroid/os/Bundle;)V
+.method public final c(Landroid/os/Bundle;)V
     .locals 24
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -62,13 +62,13 @@
     move-object/from16 v1, p1
 
     .line 1
-    iget-object v2, v0, Lcom/google/android/play/core/appupdate/j;->i:Lcom/google/android/play/core/appupdate/m;
+    iget-object v2, v0, Lcom/google/android/play/core/appupdate/j;->h:Lcom/google/android/play/core/appupdate/m;
 
-    iget-object v2, v2, Lcom/google/android/play/core/appupdate/m;->a:Ly4/l;
+    iget-object v2, v2, Lcom/google/android/play/core/appupdate/m;->a:La5/l;
 
-    invoke-virtual {v2}, Ly4/l;->a()V
+    invoke-virtual {v2}, La5/l;->a()V
 
-    iget-object v2, v0, Lcom/google/android/play/core/appupdate/j;->g:Ly4/b;
+    iget-object v2, v0, Lcom/google/android/play/core/appupdate/j;->f:La5/b;
 
     const/4 v3, 0x0
 
@@ -79,7 +79,7 @@
     const-string v6, "onRequestInfo"
 
     .line 2
-    invoke-virtual {v2, v5, v6, v4}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v2, v5, v6, v4}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     const-string v2, "error.code"
 
@@ -101,7 +101,7 @@
     if-eq v5, v6, :cond_0
 
     .line 4
-    iget-object v3, v0, Lcom/google/android/play/core/appupdate/j;->h:Lcom/google/android/play/core/tasks/i;
+    iget-object v3, v0, Lcom/google/android/play/core/appupdate/j;->g:Lcom/google/android/play/core/tasks/i;
 
     new-instance v5, Lcom/google/android/play/core/install/InstallException;
 
@@ -118,11 +118,11 @@
     return-void
 
     :cond_0
-    iget-object v2, v0, Lcom/google/android/play/core/appupdate/j;->h:Lcom/google/android/play/core/tasks/i;
+    iget-object v2, v0, Lcom/google/android/play/core/appupdate/j;->g:Lcom/google/android/play/core/tasks/i;
 
-    iget-object v4, v0, Lcom/google/android/play/core/appupdate/l;->k:Lcom/google/android/play/core/appupdate/m;
+    iget-object v4, v0, Lcom/google/android/play/core/appupdate/l;->j:Lcom/google/android/play/core/appupdate/m;
 
-    iget-object v5, v0, Lcom/google/android/play/core/appupdate/l;->j:Ljava/lang/String;
+    iget-object v5, v0, Lcom/google/android/play/core/appupdate/l;->i:Ljava/lang/String;
 
     const/4 v6, -0x1
 
@@ -193,17 +193,17 @@
 
     move-result-wide v15
 
-    iget-object v3, v4, Lcom/google/android/play/core/appupdate/m;->d:Lcom/google/android/play/core/assetpacks/z;
+    iget-object v3, v4, Lcom/google/android/play/core/appupdate/m;->d:Lcom/google/android/play/core/assetpacks/a0;
 
     .line 8
-    iget-object v3, v3, Lcom/google/android/play/core/assetpacks/z;->a:Lcom/google/android/play/core/assetpacks/y;
+    iget-object v3, v3, Lcom/google/android/play/core/assetpacks/a0;->a:Lcom/google/android/play/core/assetpacks/z;
 
     .line 9
-    invoke-virtual {v3}, Lcom/google/android/play/core/assetpacks/y;->q()Ljava/io/File;
+    invoke-virtual {v3}, Lcom/google/android/play/core/assetpacks/z;->q()Ljava/io/File;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/google/android/play/core/assetpacks/y;->k(Ljava/io/File;)J
+    invoke-static {v3}, Lcom/google/android/play/core/assetpacks/z;->k(Ljava/io/File;)J
 
     move-result-wide v17
 

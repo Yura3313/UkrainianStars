@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/EndingPromotionManager$2;->val$popupDialog:Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

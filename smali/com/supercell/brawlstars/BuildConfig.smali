@@ -20,16 +20,15 @@
 
 .field public static final UNBOTIFY_LABEL:I = 0x0
 
-.field public static final VERSION_CODE:I = 0xa8f0
+.field public static final VERSION_CODE:I = 0xacc2
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "43.248"
+.field public static final VERSION_NAME:Ljava/lang/String; = "44.226"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

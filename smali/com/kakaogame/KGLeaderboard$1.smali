@@ -37,7 +37,6 @@
 .method public constructor <init>(Ljava/lang/String;JLcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGLeaderboard$1;->val$leaderboardId:Ljava/lang/String;
 
     iput-wide p2, p0, Lcom/kakaogame/KGLeaderboard$1;->val$score:J

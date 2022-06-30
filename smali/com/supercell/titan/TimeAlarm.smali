@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -44,19 +43,19 @@
     const/16 v1, 0x1388
 
     .line 4
-    invoke-virtual {p0, v1}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+    invoke-virtual {p0, v1}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
     .line 5
-    invoke-virtual {p0, v1}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+    invoke-virtual {p0, v1}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     .line 6
-    invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getDoInput()Z
+    invoke-virtual {p0}, Ljava/net/URLConnection;->getDoInput()Z
 
     .line 7
-    invoke-virtual {p0}, Ljava/net/HttpURLConnection;->connect()V
+    invoke-virtual {p0}, Ljava/net/URLConnection;->connect()V
 
     .line 8
-    invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+    invoke-virtual {p0}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v0
 
@@ -88,7 +87,7 @@
 
     .line 12
     :cond_0
-    invoke-virtual {p0}, Ljava/io/ByteArrayOutputStream;->flush()V
+    invoke-virtual {p0}, Ljava/io/OutputStream;->flush()V
 
     .line 13
     invoke-virtual {p0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
@@ -375,10 +374,8 @@
     .line 25
     iput-object v0, v12, Lu/f$c;->k:Ljava/lang/String;
 
-    const/4 v8, 0x1
-
     .line 26
-    invoke-virtual {v12, v8}, Lu/f$c;->c(Z)Lu/f$c;
+    invoke-virtual {v12}, Lu/f$c;->c()Lu/f$c;
 
     :try_start_0
     const-string v0, "ic_notification"
@@ -391,9 +388,9 @@
     if-eqz v0, :cond_c
 
     .line 28
-    iget-object v11, v12, Lu/f$c;->q:Landroid/app/Notification;
+    iget-object v8, v12, Lu/f$c;->q:Landroid/app/Notification;
 
-    iput v0, v11, Landroid/app/Notification;->icon:I
+    iput v0, v8, Landroid/app/Notification;->icon:I
     :try_end_0
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -404,6 +401,8 @@
 
     :cond_c
     :goto_6
+    const/4 v8, 0x1
+
     if-eqz p5, :cond_d
 
     .line 29
@@ -439,7 +438,7 @@
     move-exception v0
 
     .line 33
-    invoke-virtual {v0}, Ljava/io/IOException;->getLocalizedMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
 
     :cond_d
     :goto_7
@@ -496,13 +495,7 @@
     invoke-virtual {v12, v2}, Lu/f$c;->d(Ljava/lang/CharSequence;)Lu/f$c;
 
     .line 41
-    iget-object v0, v12, Lu/f$c;->q:Landroid/app/Notification;
-
-    invoke-static/range {p1 .. p1}, Lu/f$c;->b(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
-
-    move-result-object v4
-
-    iput-object v4, v0, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;
+    invoke-virtual {v12, v2}, Lu/f$c;->j(Ljava/lang/CharSequence;)Lu/f$c;
 
     .line 42
     new-instance v0, Lu/f$b;
@@ -902,7 +895,6 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
 
-    .line 1
     invoke-static {p1, p2}, Lcom/supercell/titan/TimeAlarm;->handleLocalNotification(Landroid/content/Context;Landroid/content/Intent;)V
 
     return-void

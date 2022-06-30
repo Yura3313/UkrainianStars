@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/CharSequence;
+.field public final f:Ljava/lang/CharSequence;
 
-.field public final h:Landroid/graphics/drawable/Drawable;
+.field public final g:Landroid/graphics/drawable/Drawable;
 
-.field public final i:I
+.field public final h:I
 
 
 # direct methods
@@ -35,7 +35,7 @@
     move-result-object v0
 
     .line 6
-    iput-object v0, p0, Lcom/google/android/material/tabs/TabItem;->g:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/google/android/material/tabs/TabItem;->f:Ljava/lang/CharSequence;
 
     .line 7
     sget v0, Lcom/google/android/material/R$styleable;->TabItem_android_icon:I
@@ -71,7 +71,7 @@
 
     .line 12
     :goto_0
-    iput-object p1, p0, Lcom/google/android/material/tabs/TabItem;->h:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/google/android/material/tabs/TabItem;->g:Landroid/graphics/drawable/Drawable;
 
     .line 13
     sget p1, Lcom/google/android/material/R$styleable;->TabItem_android_layout:I
@@ -82,7 +82,7 @@
     move-result p1
 
     .line 15
-    iput p1, p0, Lcom/google/android/material/tabs/TabItem;->i:I
+    iput p1, p0, Lcom/google/android/material/tabs/TabItem;->h:I
 
     .line 16
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V

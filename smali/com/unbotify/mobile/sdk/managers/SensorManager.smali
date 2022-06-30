@@ -187,7 +187,7 @@
 
     iput-object p1, p0, Lcom/unbotify/mobile/sdk/managers/SensorManager;->handlerThread:Landroid/os/HandlerThread;
 
-    invoke-virtual {p1}, Landroid/os/HandlerThread;->start()V
+    invoke-virtual {p1}, Ljava/lang/Thread;->start()V
 
     new-instance p1, Landroid/os/Handler;
 
@@ -756,7 +756,7 @@
     goto :goto_0
 
     :cond_4
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

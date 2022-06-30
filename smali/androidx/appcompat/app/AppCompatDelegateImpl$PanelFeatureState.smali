@@ -29,7 +29,7 @@
 
 .field public d:I
 
-.field public e:Landroid/view/ViewGroup;
+.field public e:Landroidx/appcompat/app/AppCompatDelegateImpl$l;
 
 .field public f:Landroid/view/View;
 
@@ -39,7 +39,7 @@
 
 .field public i:Landroidx/appcompat/view/menu/c;
 
-.field public j:Landroid/content/Context;
+.field public j:Lf/d;
 
 .field public k:Z
 
@@ -74,7 +74,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/appcompat/view/menu/i$a;)Landroidx/appcompat/view/menu/j;
+.method public final a(Landroidx/appcompat/view/menu/i$a;)Landroidx/appcompat/view/menu/j;
     .locals 3
 
     .line 1
@@ -95,7 +95,7 @@
     .line 3
     new-instance v0, Landroidx/appcompat/view/menu/c;
 
-    iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->j:Landroid/content/Context;
+    iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->j:Lf/d;
 
     sget v2, Landroidx/appcompat/R$layout;->abc_list_menu_item_layout:I
 
@@ -104,7 +104,7 @@
     iput-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->i:Landroidx/appcompat/view/menu/c;
 
     .line 4
-    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/c;->g(Landroidx/appcompat/view/menu/i$a;)V
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/c;->e(Landroidx/appcompat/view/menu/i$a;)V
 
     .line 5
     iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->h:Landroidx/appcompat/view/menu/e;
@@ -117,16 +117,16 @@
     :cond_1
     iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->i:Landroidx/appcompat/view/menu/c;
 
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->e:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->e:Landroidx/appcompat/app/AppCompatDelegateImpl$l;
 
-    invoke-virtual {p1, v0}, Landroidx/appcompat/view/menu/c;->j(Landroid/view/ViewGroup;)Landroidx/appcompat/view/menu/j;
+    invoke-virtual {p1, v0}, Landroidx/appcompat/view/menu/c;->i(Landroid/view/ViewGroup;)Landroidx/appcompat/view/menu/j;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public b()Z
+.method public final b()Z
     .locals 3
 
     .line 1
@@ -156,7 +156,7 @@
 
     move-result-object v0
 
-    invoke-interface {v0}, Landroid/widget/ListAdapter;->getCount()I
+    invoke-interface {v0}, Landroid/widget/Adapter;->getCount()I
 
     move-result v0
 
@@ -168,7 +168,7 @@
     return v1
 .end method
 
-.method public c(Landroidx/appcompat/view/menu/e;)V
+.method public final c(Landroidx/appcompat/view/menu/e;)V
     .locals 2
 
     .line 1
@@ -184,7 +184,7 @@
     .line 2
     iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->i:Landroidx/appcompat/view/menu/c;
 
-    invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/e;->u(Landroidx/appcompat/view/menu/i;)V
+    invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/e;->v(Landroidx/appcompat/view/menu/i;)V
 
     .line 3
     :cond_1
@@ -203,7 +203,7 @@
     return-void
 .end method
 
-.method public d(Landroid/content/Context;)V
+.method public final d(Landroid/content/Context;)V
     .locals 4
 
     .line 1
@@ -280,7 +280,7 @@
     invoke-virtual {p1, v1}, Landroid/content/res/Resources$Theme;->setTo(Landroid/content/res/Resources$Theme;)V
 
     .line 13
-    iput-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->j:Landroid/content/Context;
+    iput-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState;->j:Lf/d;
 
     .line 14
     sget-object p1, Landroidx/appcompat/R$styleable;->AppCompatTheme:[I

@@ -1,151 +1,138 @@
-.class public Lz1/a;
+.class public final Lz1/a;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
+# interfaces
+.implements Landroid/content/ServiceConnection;
+
+
+# instance fields
+.field public a:Z
+
+.field public final b:Ljava/util/concurrent/LinkedBlockingQueue;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/BlockingQueue<",
+            "Landroid/os/IBinder;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
-.method public static a(I)Ljava/lang/String;
-    .locals 2
-
-    packed-switch p0, :pswitch_data_0
-
-    :pswitch_0
-    const/16 v0, 0x20
-
-    const-string v1, "unknown status code: "
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-static {v0, v1, p0}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object p0
+    const/4 v0, 0x0
 
-    return-object p0
+    .line 2
+    iput-boolean v0, p0, Lz1/a;->a:Z
 
-    :pswitch_1
-    const-string p0, "RECONNECTION_TIMED_OUT"
+    .line 3
+    new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
-    return-object p0
+    invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
-    :pswitch_2
-    const-string p0, "RECONNECTION_TIMED_OUT_DURING_UPDATE"
+    iput-object v0, p0, Lz1/a;->b:Ljava/util/concurrent/LinkedBlockingQueue;
 
-    return-object p0
+    return-void
+.end method
 
-    :pswitch_3
-    const-string p0, "CONNECTION_SUSPENDED_DURING_CALL"
 
-    return-object p0
+# virtual methods
+.method public final a()Landroid/os/IBinder;
+    .locals 4
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
 
-    :pswitch_4
-    const-string p0, "REMOTE_EXCEPTION"
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/InterruptedException;,
+            Ljava/util/concurrent/TimeoutException;
+        }
+    .end annotation
 
-    return-object p0
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
-    :pswitch_5
-    const-string p0, "DEAD_CLIENT"
+    const-string v1, "BlockingServiceConnection.getServiceWithTimeout() called on main thread"
 
-    return-object p0
+    .line 1
+    invoke-static {v1}, Ld2/h;->g(Ljava/lang/String;)V
 
-    :pswitch_6
-    const-string p0, "API_NOT_CONNECTED"
+    .line 2
+    iget-boolean v1, p0, Lz1/a;->a:Z
 
-    return-object p0
+    if-nez v1, :cond_1
 
-    :pswitch_7
-    const-string p0, "CANCELED"
+    const/4 v1, 0x1
 
-    return-object p0
+    .line 3
+    iput-boolean v1, p0, Lz1/a;->a:Z
 
-    :pswitch_8
-    const-string p0, "TIMEOUT"
+    .line 4
+    iget-object v1, p0, Lz1/a;->b:Ljava/util/concurrent/LinkedBlockingQueue;
 
-    return-object p0
+    const-wide/16 v2, 0x2710
 
-    :pswitch_9
-    const-string p0, "INTERRUPTED"
+    invoke-interface {v1, v2, v3, v0}, Ljava/util/concurrent/BlockingQueue;->poll(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
 
-    return-object p0
+    move-result-object v0
 
-    :pswitch_a
-    const-string p0, "ERROR"
+    check-cast v0, Landroid/os/IBinder;
 
-    return-object p0
+    if-eqz v0, :cond_0
 
-    :pswitch_b
-    const-string p0, "DEVELOPER_ERROR"
+    return-object v0
 
-    return-object p0
+    .line 5
+    :cond_0
+    new-instance v0, Ljava/util/concurrent/TimeoutException;
 
-    :pswitch_c
-    const-string p0, "INTERNAL_ERROR"
+    const-string v1, "Timed out waiting for the service connection"
 
-    return-object p0
+    invoke-direct {v0, v1}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
 
-    :pswitch_d
-    const-string p0, "NETWORK_ERROR"
+    throw v0
 
-    return-object p0
+    .line 6
+    :cond_1
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    :pswitch_e
-    const-string p0, "RESOLUTION_REQUIRED"
+    const-string v1, "Cannot call get on this connection more than once"
 
-    return-object p0
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    :pswitch_f
-    const-string p0, "INVALID_ACCOUNT"
+    throw v0
+.end method
 
-    return-object p0
+.method public final onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
+    .locals 0
+    .param p1    # Landroid/content/ComponentName;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/os/IBinder;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 
-    :pswitch_10
-    const-string p0, "SIGN_IN_REQUIRED"
+    iget-object p1, p0, Lz1/a;->b:Ljava/util/concurrent/LinkedBlockingQueue;
 
-    return-object p0
+    invoke-interface {p1, p2}, Ljava/util/concurrent/BlockingQueue;->add(Ljava/lang/Object;)Z
 
-    :pswitch_11
-    const-string p0, "SERVICE_DISABLED"
+    return-void
+.end method
 
-    return-object p0
+.method public final onServiceDisconnected(Landroid/content/ComponentName;)V
+    .locals 0
+    .param p1    # Landroid/content/ComponentName;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 
-    :pswitch_12
-    const-string p0, "SERVICE_VERSION_UPDATE_REQUIRED"
-
-    return-object p0
-
-    :pswitch_13
-    const-string p0, "SUCCESS"
-
-    return-object p0
-
-    :pswitch_14
-    const-string p0, "SUCCESS_CACHE"
-
-    return-object p0
-
-    :pswitch_data_0
-    .packed-switch -0x1
-        :pswitch_14
-        :pswitch_13
-        :pswitch_0
-        :pswitch_12
-        :pswitch_11
-        :pswitch_10
-        :pswitch_f
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
-        :pswitch_0
-        :pswitch_b
-        :pswitch_0
-        :pswitch_0
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-    .end packed-switch
+    return-void
 .end method

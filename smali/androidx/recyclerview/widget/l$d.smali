@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/l$d;
+.class public final Landroidx/recyclerview/widget/l$d;
 .super Ljava/lang/Object;
 .source "DiffUtil.java"
 

@@ -771,7 +771,6 @@
 
     const-string v0, "If-Modified-Since"
 
-    .line 1
     invoke-virtual {p0, v0}, Lokhttp3/Request;->header(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -804,7 +803,6 @@
 .method private isFreshnessLifetimeHeuristic()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/cache/CacheStrategy$Factory;->cacheResponse:Lokhttp3/Response;
 
     invoke-virtual {v0}, Lokhttp3/Response;->cacheControl()Lokhttp3/CacheControl;

@@ -1,8 +1,14 @@
 .class public interface abstract Lza/e;
 .super Ljava/lang/Object;
-.source "ImageLoaderCallback.java"
+.source "Flow.java"
 
 
 # virtual methods
-.method public abstract u0()V
+.method public abstract a()V
+.end method
+
+.method public abstract b()V
+.end method
+
+.method public abstract c()V
 .end method

@@ -491,7 +491,6 @@
 .method public isClosed()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/cache2/Relay;->file:Ljava/io/RandomAccessFile;
 
     if-nez v0, :cond_0
@@ -510,7 +509,6 @@
 .method public metadata()Lokio/ByteString;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/cache2/Relay;->metadata:Lokio/ByteString;
 
     return-object v0

@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +37,7 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
 
     const/4 v0, 0x0
@@ -51,7 +50,7 @@
     if-nez p1, :cond_0
 
     .line 2
-    sget-object p1, Landroidx/customview/view/AbsSavedState;->h:Landroidx/customview/view/AbsSavedState;
+    sget-object p1, Landroidx/customview/view/AbsSavedState;->g:Landroidx/customview/view/AbsSavedState;
 
     return-object p1
 
@@ -66,7 +65,7 @@
     throw p1
 .end method
 
-.method public createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
+.method public final createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
     .locals 0
 
     .line 4
@@ -77,7 +76,7 @@
     if-nez p1, :cond_0
 
     .line 5
-    sget-object p1, Landroidx/customview/view/AbsSavedState;->h:Landroidx/customview/view/AbsSavedState;
+    sget-object p1, Landroidx/customview/view/AbsSavedState;->g:Landroidx/customview/view/AbsSavedState;
 
     return-object p1
 
@@ -92,10 +91,9 @@
     throw p1
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Landroidx/customview/view/AbsSavedState;
 
     return-object p1

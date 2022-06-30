@@ -1,4 +1,4 @@
-.class public Lw0/f;
+.class public final Lw0/f;
 .super Ljava/lang/Object;
 .source "PathInterpolatorCompat.java"
 
@@ -31,14 +31,14 @@
     .line 3
     sget-object v1, Lw0/a;->l:[I
 
-    invoke-static {v0, p1, p2, v1}, Lw/f;->g(Landroid/content/res/Resources;Landroid/content/res/Resources$Theme;Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+    invoke-static {v0, p1, p2, v1}, Lw/f;->i(Landroid/content/res/Resources;Landroid/content/res/Resources$Theme;Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
     const-string p2, "pathData"
 
     .line 4
-    invoke-static {p3, p2}, Lw/f;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p3, p2}, Lw/f;->h(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -47,12 +47,12 @@
     const/4 v0, 0x4
 
     .line 5
-    invoke-static {p1, p3, p2, v0}, Lw/f;->e(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p1, p3, p2, v0}, Lw/f;->g(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p2
 
     .line 6
-    invoke-static {p2}, Lx/c;->d(Ljava/lang/String;)Landroid/graphics/Path;
+    invoke-static {p2}, Lx/d;->d(Ljava/lang/String;)Landroid/graphics/Path;
 
     move-result-object p3
 
@@ -61,7 +61,7 @@
     .line 7
     invoke-virtual {p0, p3}, Lw0/f;->a(Landroid/graphics/Path;)V
 
-    goto/16 :goto_4
+    goto :goto_0
 
     .line 8
     :cond_0
@@ -69,10 +69,12 @@
 
     const-string p3, "The path is null, which is created from "
 
-    invoke-static {p3, p2}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 9
+    invoke-static {p3, p2}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
+    .line 10
     invoke-direct {p1, p2}, Landroid/view/InflateException;-><init>(Ljava/lang/String;)V
 
     throw p1
@@ -80,89 +82,55 @@
     :cond_1
     const-string p2, "controlX1"
 
-    .line 9
-    invoke-static {p3, p2}, Lw/f;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    .line 11
+    invoke-static {p3, p2}, Lw/f;->h(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_5
 
     const-string v0, "controlY1"
 
-    .line 10
-    invoke-static {p3, v0}, Lw/f;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    .line 12
+    invoke-static {p3, v0}, Lw/f;->h(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_8
+    if-eqz v1, :cond_4
 
     const/4 v1, 0x0
 
-    .line 11
-    invoke-static {p3, p2}, Lw/f;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
-
-    move-result p2
-
     const/4 v2, 0x0
 
-    if-nez p2, :cond_2
+    .line 13
+    invoke-static {p1, p3, p2, v1, v2}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
-    const/4 p2, 0x0
+    move-result v4
 
-    const/4 v4, 0x0
-
-    goto :goto_0
-
-    .line 12
-    :cond_2
-    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
-
-    move-result p2
-
-    move v4, p2
-
-    :goto_0
     const/4 p2, 0x1
 
-    .line 13
-    invoke-static {p3, v0}, Lw/f;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_3
-
-    const/4 p2, 0x0
-
-    const/4 v5, 0x0
-
-    goto :goto_1
-
     .line 14
-    :cond_3
-    invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
+    invoke-static {p1, p3, v0, p2, v2}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
-    move-result p2
+    move-result v5
 
-    move v5, p2
-
-    :goto_1
     const-string p2, "controlX2"
 
     .line 15
-    invoke-static {p3, p2}, Lw/f;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p3, p2}, Lw/f;->h(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result v0
 
     const-string v1, "controlY2"
 
     .line 16
-    invoke-static {p3, v1}, Lw/f;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p3, v1}, Lw/f;->h(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result v3
 
-    if-ne v0, v3, :cond_7
+    if-ne v0, v3, :cond_3
 
-    if-nez v0, :cond_4
+    if-nez v0, :cond_2
 
     .line 17
     new-instance p2, Landroid/graphics/Path;
@@ -180,63 +148,29 @@
     .line 20
     invoke-virtual {p0, p2}, Lw0/f;->a(Landroid/graphics/Path;)V
 
-    goto :goto_4
+    goto :goto_0
 
-    :cond_4
+    :cond_2
     const/4 v0, 0x2
 
     .line 21
-    invoke-static {p3, p2}, Lw/f;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    invoke-static {p1, p3, p2, v0, v2}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
-    move-result p2
+    move-result v6
 
-    if-nez p2, :cond_5
-
-    const/4 p2, 0x0
-
-    const/4 v6, 0x0
-
-    goto :goto_2
-
-    .line 22
-    :cond_5
-    invoke-virtual {p1, v0, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
-
-    move-result p2
-
-    move v6, p2
-
-    :goto_2
     const/4 p2, 0x3
 
+    .line 22
+    invoke-static {p1, p3, v1, p2, v2}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+
+    move-result v7
+
     .line 23
-    invoke-static {p3, v1}, Lw/f;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
-
-    move-result p3
-
-    if-nez p3, :cond_6
-
-    const/4 p2, 0x0
-
-    const/4 v7, 0x0
-
-    goto :goto_3
-
-    .line 24
-    :cond_6
-    invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
-
-    move-result p2
-
-    move v7, p2
-
-    .line 25
-    :goto_3
     new-instance p2, Landroid/graphics/Path;
 
     invoke-direct {p2}, Landroid/graphics/Path;-><init>()V
 
-    .line 26
+    .line 24
     invoke-virtual {p2, v2, v2}, Landroid/graphics/Path;->moveTo(FF)V
 
     const/high16 v8, 0x3f800000    # 1.0f
@@ -245,20 +179,20 @@
 
     move-object v3, p2
 
-    .line 27
+    .line 25
     invoke-virtual/range {v3 .. v9}, Landroid/graphics/Path;->cubicTo(FFFFFF)V
 
-    .line 28
+    .line 26
     invoke-virtual {p0, p2}, Lw0/f;->a(Landroid/graphics/Path;)V
 
-    .line 29
-    :goto_4
+    .line 27
+    :goto_0
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
 
-    .line 30
-    :cond_7
+    .line 28
+    :cond_3
     new-instance p1, Landroid/view/InflateException;
 
     const-string p2, "pathInterpolator requires both controlX2 and controlY2 for cubic Beziers."
@@ -267,8 +201,8 @@
 
     throw p1
 
-    .line 31
-    :cond_8
+    .line 29
+    :cond_4
     new-instance p1, Landroid/view/InflateException;
 
     const-string p2, "pathInterpolator requires the controlY1 attribute"
@@ -277,8 +211,8 @@
 
     throw p1
 
-    .line 32
-    :cond_9
+    .line 30
+    :cond_5
     new-instance p1, Landroid/view/InflateException;
 
     const-string p2, "pathInterpolator requires the controlX1 attribute"
@@ -522,10 +456,12 @@
 
     const-string v0, "The Path must start at (0,0) and end at (1,1) start: "
 
+    .line 17
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 18
     iget-object v4, p0, Lw0/f;->a:[F
 
     aget v4, v4, v1
@@ -570,7 +506,7 @@
 
     throw p1
 
-    .line 17
+    .line 19
     :cond_5
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -599,7 +535,7 @@
     goto :goto_2
 .end method
 
-.method public getInterpolation(F)F
+.method public final getInterpolation(F)F
     .locals 6
 
     const/4 v0, 0x0
@@ -696,7 +632,7 @@
     .line 8
     aget v0, v0, v2
 
-    invoke-static {v0, v1, p1, v1}, Lo/o;->a(FFFF)F
+    invoke-static {v0, v1, p1, v1}, Lo/p;->a(FFFF)F
 
     move-result p1
 

@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment$1;->this$0:Lcom/kakaogame/promotion/view/StartingPromotionFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

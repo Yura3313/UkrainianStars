@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final a:Ld0/c;
+.field public static final a:Ld0/d$d;
 
-.field public static final b:Ld0/c;
+.field public static final b:Ld0/d$d;
 
-.field public static final c:Ld0/c;
+.field public static final c:Ld0/d$d;
 
-.field public static final d:Ld0/c;
+.field public static final d:Ld0/d$d;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {v0, v1, v2}, Ld0/d$d;-><init>(Ld0/d$b;Z)V
 
-    sput-object v0, Ld0/d;->a:Ld0/c;
+    sput-object v0, Ld0/d;->a:Ld0/d$d;
 
     .line 2
     new-instance v0, Ld0/d$d;
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v3}, Ld0/d$d;-><init>(Ld0/d$b;Z)V
 
-    sput-object v0, Ld0/d;->b:Ld0/c;
+    sput-object v0, Ld0/d;->b:Ld0/d$d;
 
     .line 3
     new-instance v0, Ld0/d$d;
@@ -55,14 +55,14 @@
 
     invoke-direct {v0, v1, v2}, Ld0/d$d;-><init>(Ld0/d$b;Z)V
 
-    sput-object v0, Ld0/d;->c:Ld0/c;
+    sput-object v0, Ld0/d;->c:Ld0/d$d;
 
     .line 4
     new-instance v0, Ld0/d$d;
 
     invoke-direct {v0, v1, v3}, Ld0/d$d;-><init>(Ld0/d$b;Z)V
 
-    sput-object v0, Ld0/d;->d:Ld0/c;
+    sput-object v0, Ld0/d;->d:Ld0/d$d;
 
     return-void
 .end method

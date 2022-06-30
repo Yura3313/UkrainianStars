@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lcom/google/protobuf/r;
+.field public static final a:Lcom/google/protobuf/s;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/protobuf/r<",
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Lcom/google/protobuf/s;-><init>()V
 
-    sput-object v0, Lcom/google/protobuf/t;->a:Lcom/google/protobuf/r;
+    sput-object v0, Lcom/google/protobuf/t;->a:Lcom/google/protobuf/s;
 
     :try_start_0
     const-string v0, "com.google.protobuf.ExtensionSchemaFull"

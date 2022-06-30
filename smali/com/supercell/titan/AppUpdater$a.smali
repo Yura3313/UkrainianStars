@@ -1,9 +1,9 @@
-.class public Lcom/supercell/titan/AppUpdater$a;
+.class public final Lcom/supercell/titan/AppUpdater$a;
 .super Ljava/lang/Object;
 .source "AppUpdater.java"
 
 # interfaces
-.implements Lw4/b;
+.implements Ly4/b;
 
 
 # annotations
@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,14 +28,14 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)V
+.method public final a(Ljava/lang/Object;)V
     .locals 0
 
     .line 1
-    check-cast p1, Lw4/a;
+    check-cast p1, Ly4/a;
 
     .line 2
-    invoke-static {p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     return-void
 .end method

@@ -16,11 +16,11 @@
     .end annotation
 .end field
 
-.field public static final h:Lc2/e;
+.field public static final g:Ld2/e;
 
 
 # instance fields
-.field public final g:Landroid/os/Bundle;
+.field public final f:Landroid/os/Bundle;
 
 
 # direct methods
@@ -28,20 +28,20 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lc2/e;
+    new-instance v0, Ld2/e;
 
     const-string v1, "MetadataBundle"
 
     const-string v2, ""
 
-    invoke-direct {v0, v1, v2}, Lc2/e;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Ld2/e;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->h:Lc2/e;
+    sput-object v0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Ld2/e;
 
     .line 2
-    new-instance v0, Lq2/i;
+    new-instance v0, Lr2/i;
 
-    invoke-direct {v0}, Lq2/i;-><init>()V
+    invoke-direct {v0}, Lr2/i;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -54,10 +54,10 @@
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    if-eqz p1, :cond_3
-
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
+    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iput-object p1, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->f:Landroid/os/Bundle;
 
     .line 3
     const-class v0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
@@ -99,15 +99,13 @@
     check-cast v1, Ljava/lang/String;
 
     .line 6
-    sget-object v3, Lq2/e;->a:Ljava/util/Map;
-
-    check-cast v3, Ljava/util/HashMap;
+    sget-object v3, Lr2/e;->a:Ljava/util/HashMap;
 
     invoke-virtual {v3, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Lp2/a;
+    check-cast v3, Lq2/a;
 
     if-nez v3, :cond_0
 
@@ -115,7 +113,7 @@
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 8
-    sget-object v3, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->h:Lc2/e;
+    sget-object v3, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Ld2/e;
 
     const/4 v4, 0x1
 
@@ -125,7 +123,7 @@
 
     const-string v1, "Ignored unknown metadata field in bundle: %s"
 
-    invoke-virtual {v3, v1, v4}, Lc2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v3, v1, v4}, Ld2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -147,7 +145,7 @@
     check-cast v1, Ljava/lang/String;
 
     .line 10
-    iget-object v3, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
+    iget-object v3, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->f:Landroid/os/Bundle;
 
     invoke-virtual {v3, v1}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 
@@ -155,26 +153,31 @@
 
     :cond_2
     return-void
-
-    .line 11
-    :cond_3
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "null reference"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    goto :goto_3
-
-    :goto_2
-    throw p1
-
-    :goto_3
-    goto :goto_2
 .end method
 
 
 # virtual methods
+.method public final D2(Lq2/a;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lq2/a<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->f:Landroid/os/Bundle;
+
+    invoke-interface {p1, v0}, Lq2/a;->P0(Landroid/os/Bundle;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 6
 
@@ -205,14 +208,14 @@
     check-cast p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
+    iget-object v2, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->f:Landroid/os/Bundle;
 
     invoke-virtual {v2}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
     move-result-object v2
 
     .line 4
-    iget-object v3, p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
+    iget-object v3, p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->f:Landroid/os/Bundle;
 
     invoke-virtual {v3}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
@@ -246,19 +249,19 @@
     check-cast v3, Ljava/lang/String;
 
     .line 6
-    iget-object v4, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
+    iget-object v4, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->f:Landroid/os/Bundle;
 
     invoke-virtual {v4, v3}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v4
 
-    iget-object v5, p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
+    iget-object v5, p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->f:Landroid/os/Bundle;
 
     invoke-virtual {v5, v3}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
-    invoke-static {v4, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -278,7 +281,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->f:Landroid/os/Bundle;
 
     invoke-virtual {v0}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
@@ -306,7 +309,7 @@
     mul-int/lit8 v1, v1, 0x1f
 
     .line 2
-    iget-object v3, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
+    iget-object v3, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->f:Landroid/os/Bundle;
 
     invoke-virtual {v3, v2}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -325,48 +328,24 @@
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 3
+    .locals 2
 
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x2
-
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->f:Landroid/os/Bundle;
 
-    const/4 v2, 0x0
+    const/4 v1, 0x2
 
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->d(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
+    invoke-static {p1, v1, v0}, Le2/b;->d(Landroid/os/Parcel;ILandroid/os/Bundle;)V
 
     .line 3
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
-.end method
-
-.method public final z2(Lp2/a;)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lp2/a<",
-            "TT;>;)TT;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
-
-    invoke-interface {p1, v0}, Lp2/a;->N0(Landroid/os/Bundle;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
 .end method

@@ -36,7 +36,6 @@
 .method public constructor <init>(Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/log/FirebaseEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSNSShare$3;->val$callback:Lcom/kakaogame/KGResultCallback;
 
     iput-object p2, p0, Lcom/kakaogame/KGSNSShare$3;->val$fbEvent:Lcom/kakaogame/log/FirebaseEvent;

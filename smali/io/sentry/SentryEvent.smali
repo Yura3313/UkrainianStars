@@ -144,7 +144,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryEvent;->unknown:Ljava/util/Map;
 
     return-void
@@ -153,7 +152,6 @@
 .method public getDebugMeta()Lio/sentry/protocol/DebugMeta;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEvent;->debugMeta:Lio/sentry/protocol/DebugMeta;
 
     return-object v0
@@ -170,7 +168,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEvent;->exception:Lio/sentry/SentryValues;
 
     if-nez v0, :cond_0
@@ -199,7 +196,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEvent;->fingerprint:Ljava/util/List;
 
     return-object v0
@@ -208,7 +204,6 @@
 .method public getLevel()Lio/sentry/SentryLevel;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEvent;->level:Lio/sentry/SentryLevel;
 
     return-object v0
@@ -217,7 +212,6 @@
 .method public getLogger()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEvent;->logger:Ljava/lang/String;
 
     return-object v0
@@ -226,7 +220,6 @@
 .method public getMessage()Lio/sentry/protocol/Message;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEvent;->message:Lio/sentry/protocol/Message;
 
     return-object v0
@@ -267,7 +260,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEvent;->modules:Ljava/util/Map;
 
     return-object v0
@@ -305,7 +297,6 @@
 .method public getTimestamp()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEvent;->timestamp:Ljava/util/Date;
 
     invoke-virtual {v0}, Ljava/util/Date;->clone()Ljava/lang/Object;
@@ -320,7 +311,6 @@
 .method public getTransaction()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEvent;->transaction:Ljava/lang/String;
 
     return-object v0
@@ -338,7 +328,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEvent;->unknown:Ljava/util/Map;
 
     return-object v0
@@ -420,7 +409,6 @@
 .method public isErrored()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEvent;->exception:Lio/sentry/SentryValues;
 
     if-eqz v0, :cond_0
@@ -464,7 +452,6 @@
 .method public setDebugMeta(Lio/sentry/protocol/DebugMeta;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryEvent;->debugMeta:Lio/sentry/protocol/DebugMeta;
 
     return-void
@@ -481,7 +468,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/sentry/SentryValues;
 
     invoke-direct {v0, p1}, Lio/sentry/SentryValues;-><init>(Ljava/util/List;)V
@@ -504,7 +490,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
@@ -523,7 +508,6 @@
 .method public setLevel(Lio/sentry/SentryLevel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryEvent;->level:Lio/sentry/SentryLevel;
 
     return-void
@@ -532,7 +516,6 @@
 .method public setLogger(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryEvent;->logger:Ljava/lang/String;
 
     return-void
@@ -541,7 +524,6 @@
 .method public setMessage(Lio/sentry/protocol/Message;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryEvent;->message:Lio/sentry/protocol/Message;
 
     return-void
@@ -583,7 +565,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newHashMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
@@ -604,7 +585,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/sentry/SentryValues;
 
     invoke-direct {v0, p1}, Lio/sentry/SentryValues;-><init>(Ljava/util/List;)V
@@ -617,7 +597,6 @@
 .method public setTransaction(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/SentryEvent;->transaction:Ljava/lang/String;
 
     return-void

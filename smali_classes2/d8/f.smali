@@ -1,55 +1,94 @@
-.class public Ld8/f;
-.super Ljava/lang/Object;
-.source "AndroidHSNetworkMetadataDAO.java"
+.class public final enum Ld8/f;
+.super Ljava/lang/Enum;
+.source "UnexpectedException.java"
+
+# interfaces
+.implements Ld8/a;
 
 
-# instance fields
-.field public final a:Lm9/c;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Ld8/f;",
+        ">;",
+        "Ld8/a;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final enum f:Ld8/f;
+
+.field public static final synthetic g:[Ld8/f;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 2
+.method public static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Ld8/f;
+
+    invoke-direct {v0}, Ld8/f;-><init>()V
+
+    sput-object v0, Ld8/f;->f:Ld8/f;
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Ld8/f;
+
+    const/4 v2, 0x0
+
+    aput-object v0, v1, v2
 
     .line 2
-    const-class v0, Lm9/c;
-
-    monitor-enter v0
-
-    .line 3
-    :try_start_0
-    sget-object v1, Lm9/c;->h:Lm9/c;
-
-    if-nez v1, :cond_0
-
-    .line 4
-    new-instance v1, Lm9/c;
-
-    invoke-direct {v1, p1}, Lm9/c;-><init>(Landroid/content/Context;)V
-
-    sput-object v1, Lm9/c;->h:Lm9/c;
-
-    .line 5
-    :cond_0
-    sget-object p1, Lm9/c;->h:Lm9/c;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit v0
-
-    .line 6
-    iput-object p1, p0, Ld8/f;->a:Lm9/c;
+    sput-object v1, Ld8/f;->g:[Ld8/f;
 
     return-void
+.end method
 
-    :catchall_0
-    move-exception p1
+.method public constructor <init>()V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
-    .line 7
-    monitor-exit v0
+    const-string v0, "GENERIC"
 
-    throw p1
+    const/4 v1, 0x0
+
+    invoke-direct {p0, v0, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Ld8/f;
+    .locals 1
+
+    const-class v0, Ld8/f;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Ld8/f;
+
+    return-object p0
+.end method
+
+.method public static values()[Ld8/f;
+    .locals 1
+
+    sget-object v0, Ld8/f;->g:[Ld8/f;
+
+    invoke-virtual {v0}, [Ld8/f;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Ld8/f;
+
+    return-object v0
 .end method

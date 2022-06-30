@@ -29,11 +29,11 @@
     .end annotation
 .end field
 
-.field public static final h:Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;
+.field public static final g:Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;
 
 
 # instance fields
-.field public final g:Ljava/util/List;
+.field public final f:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -49,9 +49,9 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lq2/a;
+    new-instance v0, Lr2/a;
 
-    invoke-direct {v0}, Lq2/a;-><init>()V
+    invoke-direct {v0}, Lr2/a;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -70,7 +70,7 @@
     invoke-direct {v1, v0}, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;-><init>(Ljava/util/Collection;)V
 
     .line 4
-    sput-object v1, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->h:Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;
+    sput-object v1, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;
 
     return-void
 .end method
@@ -89,30 +89,84 @@
     .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
-    if-eqz p1, :cond_0
-
     .line 2
+    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/List;
+    iput-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
 
     return-void
-
-    .line 3
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "null reference"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
 # virtual methods
+.method public final D2()Ljava/util/Map;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Lcom/google/android/gms/drive/metadata/CustomPropertyKey;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/HashMap;
+
+    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
+
+    .line 2
+    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/gms/drive/metadata/internal/zzc;
+
+    .line 3
+    iget-object v3, v2, Lcom/google/android/gms/drive/metadata/internal/zzc;->f:Lcom/google/android/gms/drive/metadata/CustomPropertyKey;
+
+    .line 4
+    iget-object v2, v2, Lcom/google/android/gms/drive/metadata/internal/zzc;->g:Ljava/lang/String;
+
+    .line 5
+    invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
@@ -138,13 +192,13 @@
 
     .line 2
     :cond_1
-    invoke-virtual {p0}, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->z2()Ljava/util/Map;
+    invoke-virtual {p0}, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->D2()Ljava/util/Map;
 
     move-result-object v0
 
     check-cast p1, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->z2()Ljava/util/Map;
+    invoke-virtual {p1}, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->D2()Ljava/util/Map;
 
     move-result-object p1
 
@@ -169,7 +223,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
 
     const/4 v2, 0x0
 
@@ -194,10 +248,9 @@
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -210,84 +263,21 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x2
-
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
+
+    const/4 v1, 0x2
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, v1, v0, v2}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 3
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
-.end method
-
-.method public final z2()Ljava/util/Map;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Lcom/google/android/gms/drive/metadata/CustomPropertyKey;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Ljava/util/HashMap;
-
-    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
-
-    .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/google/android/gms/drive/metadata/internal/zzc;
-
-    .line 3
-    iget-object v3, v2, Lcom/google/android/gms/drive/metadata/internal/zzc;->g:Lcom/google/android/gms/drive/metadata/CustomPropertyKey;
-
-    .line 4
-    iget-object v2, v2, Lcom/google/android/gms/drive/metadata/internal/zzc;->h:Ljava/lang/String;
-
-    .line 5
-    invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
-
-    move-result-object v0
-
-    return-object v0
 .end method

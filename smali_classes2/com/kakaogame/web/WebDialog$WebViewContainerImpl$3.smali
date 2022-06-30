@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;Landroid/webkit/JsResult;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl$3;->this$1:Lcom/kakaogame/web/WebDialog$WebViewContainerImpl;
 
     iput-object p2, p0, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl$3;->val$result:Landroid/webkit/JsResult;
@@ -42,7 +41,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/kakaogame/web/WebDialog$WebViewContainerImpl$3;->val$result:Landroid/webkit/JsResult;
 
     invoke-virtual {p1}, Landroid/webkit/JsResult;->confirm()V

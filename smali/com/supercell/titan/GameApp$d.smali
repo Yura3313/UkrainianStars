@@ -1,14 +1,14 @@
-.class public Lcom/supercell/titan/GameApp$d;
+.class public final Lcom/supercell/titan/GameApp$d;
 .super Ljava/lang/Object;
 .source "GameApp.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/hardware/display/DisplayManager$DisplayListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/titan/GameApp;->setSystemUiVisibilityDelayed(J)V
+    value = Lcom/supercell/titan/GameApp;->onStart()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,16 +17,9 @@
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Lcom/supercell/titan/GameApp;
-
-
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/GameApp;)V
+.method public constructor <init>()V
     .locals 0
-
-    .line 1
-    iput-object p1, p0, Lcom/supercell/titan/GameApp$d;->g:Lcom/supercell/titan/GameApp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,13 +28,26 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 1
+.method public final onDisplayAdded(I)V
+    .locals 0
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp$d;->g:Lcom/supercell/titan/GameApp;
+    invoke-static {p1}, Lcom/supercell/titan/GameApp;->nOnDisplayAdded(I)V
 
-    invoke-virtual {v0}, Lcom/supercell/titan/GameApp;->setSystemUiVisibility()V
+    return-void
+.end method
+
+.method public final onDisplayChanged(I)V
+    .locals 0
+
+    invoke-static {p1}, Lcom/supercell/titan/GameApp;->nOnDisplayChanged(I)V
+
+    return-void
+.end method
+
+.method public final onDisplayRemoved(I)V
+    .locals 0
+
+    invoke-static {p1}, Lcom/supercell/titan/GameApp;->nOnDisplayRemoved(I)V
 
     return-void
 .end method

@@ -15,7 +15,6 @@
 
     const-string v0, "UTC"
 
-    .line 1
     invoke-static {v0}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
 
     move-result-object v0
@@ -28,7 +27,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
 .method private static checkOffset(Ljava/lang/String;IC)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -971,7 +968,7 @@
 
     .line 53
     :goto_a
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -992,6 +989,7 @@
 
     move-result-object v3
 
+    .line 56
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v4
@@ -1010,7 +1008,7 @@
 
     move-result-object v3
 
-    .line 56
+    .line 57
     :cond_16
     new-instance v4, Ljava/text/ParseException;
 
@@ -1040,10 +1038,10 @@
 
     invoke-direct {v4, v1, v2}, Ljava/text/ParseException;-><init>(Ljava/lang/String;I)V
 
-    .line 57
-    invoke-virtual {v4, v0}, Ljava/text/ParseException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
-
     .line 58
+    invoke-virtual {v4, v0}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+
+    .line 59
     throw v4
 .end method
 
@@ -1093,10 +1091,12 @@
     :cond_0
     new-instance v1, Ljava/lang/NumberFormatException;
 
+    .line 4
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 5
     invoke-virtual {p0, p1, p2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
@@ -1121,7 +1121,7 @@
 
     add-int/lit8 v4, v2, 0x1
 
-    .line 4
+    .line 6
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -1140,14 +1140,16 @@
 
     goto :goto_0
 
-    .line 5
+    .line 7
     :cond_2
     new-instance v1, Ljava/lang/NumberFormatException;
 
+    .line 8
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 9
     invoke-virtual {p0, p1, p2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
@@ -1167,7 +1169,7 @@
 
     return p0
 
-    .line 6
+    .line 10
     :cond_4
     new-instance p1, Ljava/lang/NumberFormatException;
 

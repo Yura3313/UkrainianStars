@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/snackbar/BaseTransientBottomBar$f;
+.class public final Lcom/google/android/material/snackbar/BaseTransientBottomBar$f;
 .super Ljava/lang/Object;
 .source "BaseTransientBottomBar.java"
 
@@ -15,12 +15,12 @@
 
 
 # instance fields
-.field public a:Lcom/google/android/material/snackbar/i$b;
+.field public a:Lcom/google/android/material/snackbar/BaseTransientBottomBar$e;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/behavior/SwipeDismissBehavior;)V
-    .locals 3
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -32,23 +32,22 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
-    const v1, 0x3dcccccd
-
-    const/high16 v2, 0x3f800000    # 1.0f
-
     .line 2
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->u(FFF)F
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result v1
-
-    iput v1, p1, Lcom/google/android/material/behavior/SwipeDismissBehavior;->f:F
-
-    const v1, 0x3f19999a
+    const v0, 0x3dcccccd
 
     .line 3
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->u(FFF)F
+    invoke-static {v0}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->u(F)F
+
+    move-result v0
+
+    iput v0, p1, Lcom/google/android/material/behavior/SwipeDismissBehavior;->f:F
+
+    const v0, 0x3f19999a
+
+    .line 4
+    invoke-static {v0}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->u(F)F
 
     move-result v0
 
@@ -56,7 +55,7 @@
 
     const/4 v0, 0x0
 
-    .line 4
+    .line 5
     iput v0, p1, Lcom/google/android/material/behavior/SwipeDismissBehavior;->d:I
 
     return-void

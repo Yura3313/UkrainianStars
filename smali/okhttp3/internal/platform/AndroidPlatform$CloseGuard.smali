@@ -160,7 +160,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lokhttp3/internal/platform/AndroidPlatform$CloseGuard;->warnIfOpenMethod:Ljava/lang/reflect/Method;
 

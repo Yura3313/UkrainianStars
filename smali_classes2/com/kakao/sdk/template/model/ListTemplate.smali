@@ -91,7 +91,7 @@
 
     move-object v3, p3
 
-    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/ListTemplate;-><init>(Ljava/lang/String;Lcom/kakao/sdk/template/model/Link;Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILle/g;)V
+    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/ListTemplate;-><init>(Ljava/lang/String;Lcom/kakao/sdk/template/model/Link;Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILse/e;)V
 
     return-void
 .end method
@@ -128,7 +128,7 @@
 
     move-object v4, p4
 
-    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/ListTemplate;-><init>(Ljava/lang/String;Lcom/kakao/sdk/template/model/Link;Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILle/g;)V
+    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/ListTemplate;-><init>(Ljava/lang/String;Lcom/kakao/sdk/template/model/Link;Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILse/e;)V
 
     return-void
 .end method
@@ -151,13 +151,17 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "headerTitle"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "headerLink"
 
-    if-eqz p3, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "contents"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -178,31 +182,9 @@
     iput-object p1, p0, Lcom/kakao/sdk/template/model/ListTemplate;->objectType:Ljava/lang/String;
 
     return-void
-
-    :cond_0
-    const-string p1, "contents"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "headerLink"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "headerTitle"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Lcom/kakao/sdk/template/model/Link;Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILle/g;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Lcom/kakao/sdk/template/model/Link;Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILse/e;)V
     .locals 7
 
     and-int/lit8 p7, p6, 0x8
@@ -239,7 +221,7 @@
 
     move-object v4, p3
 
-    .line 4
+    .line 3
     invoke-direct/range {v1 .. v6}, Lcom/kakao/sdk/template/model/ListTemplate;-><init>(Ljava/lang/String;Lcom/kakao/sdk/template/model/Link;Ljava/util/List;Ljava/util/List;Ljava/lang/String;)V
 
     return-void
@@ -387,13 +369,17 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "headerTitle"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "headerLink"
 
-    if-eqz p3, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "contents"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/template/model/ListTemplate;
 
@@ -412,28 +398,6 @@
     invoke-direct/range {v1 .. v6}, Lcom/kakao/sdk/template/model/ListTemplate;-><init>(Ljava/lang/String;Lcom/kakao/sdk/template/model/Link;Ljava/util/List;Ljava/util/List;Ljava/lang/String;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "contents"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "headerLink"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "headerTitle"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -459,7 +423,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/ListTemplate;->headerTitle:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -469,7 +433,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/ListTemplate;->headerLink:Lcom/kakao/sdk/template/model/Link;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -479,7 +443,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/ListTemplate;->contents:Ljava/util/List;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -489,7 +453,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/ListTemplate;->buttons:Ljava/util/List;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -499,7 +463,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/template/model/ListTemplate;->buttonTitle:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -522,7 +486,6 @@
 .method public final getButtonTitle()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/template/model/ListTemplate;->buttonTitle:Ljava/lang/String;
 
     return-object v0
@@ -539,7 +502,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/template/model/ListTemplate;->buttons:Ljava/util/List;
 
     return-object v0
@@ -556,7 +518,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/template/model/ListTemplate;->contents:Ljava/util/List;
 
     return-object v0
@@ -565,7 +526,6 @@
 .method public final getHeaderLink()Lcom/kakao/sdk/template/model/Link;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/template/model/ListTemplate;->headerLink:Lcom/kakao/sdk/template/model/Link;
 
     return-object v0
@@ -574,7 +534,6 @@
 .method public final getHeaderTitle()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/template/model/ListTemplate;->headerTitle:Ljava/lang/String;
 
     return-object v0
@@ -583,7 +542,6 @@
 .method public final getObjectType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/template/model/ListTemplate;->objectType:Ljava/lang/String;
 
     return-object v0
@@ -683,10 +641,12 @@
 
     const-string v0, "ListTemplate(headerTitle="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakao/sdk/template/model/ListTemplate;->headerTitle:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -723,7 +683,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -733,7 +694,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    if-eqz p1, :cond_3
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/template/model/ListTemplate;->headerTitle:Ljava/lang/String;
 
@@ -819,20 +782,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     return-void
-
-    :cond_3
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    goto :goto_3
-
-    :goto_2
-    throw p1
-
-    :goto_3
-    goto :goto_2
 .end method

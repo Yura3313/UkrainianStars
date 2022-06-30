@@ -19,19 +19,18 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field public final h:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lt1/e;
+    new-instance v0, Lu1/e;
 
-    invoke-direct {v0}, Lt1/e;-><init>()V
+    invoke-direct {v0}, Lu1/e;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/api/credentials/IdToken;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -54,7 +53,7 @@
     const-string v1, "account type string cannot be null or empty"
 
     .line 3
-    invoke-static {v0, v1}, Lc2/h;->b(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Ld2/h;->b(ZLjava/lang/Object;)V
 
     .line 4
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -66,13 +65,13 @@
     const-string v1, "id token string cannot be null or empty"
 
     .line 5
-    invoke-static {v0, v1}, Lc2/h;->b(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Ld2/h;->b(ZLjava/lang/Object;)V
 
     .line 6
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->f:Ljava/lang/String;
 
     .line 7
-    iput-object p2, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -103,22 +102,22 @@
     check-cast p1, Lcom/google/android/gms/auth/api/credentials/IdToken;
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->f:Ljava/lang/String;
 
-    iget-object v3, p1, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
+    iget-object v3, p1, Lcom/google/android/gms/auth/api/credentials/IdToken;->f:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/google/android/gms/auth/api/credentials/IdToken;->h:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
 
     .line 4
-    invoke-static {v1, p1}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -136,30 +135,30 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x1
-
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->f:Ljava/lang/String;
+
+    const/4 v1, 0x1
 
     const/4 v2, 0x0
 
     .line 3
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    const/4 v0, 0x2
+    invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
+
+    const/4 v1, 0x2
 
     .line 5
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

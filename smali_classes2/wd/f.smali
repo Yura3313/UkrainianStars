@@ -1,204 +1,91 @@
 .class public final Lwd/f;
-.super Ljava/lang/Object;
-.source "ShopStorage.kt"
+.super Lse/h;
+.source "TokenLoginFlow.kt"
+
+# interfaces
+.implements Lre/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/l<",
+        "Lwc/e;",
+        "Lie/h;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Lqc/y$a;
-
-.field public final c:Ljava/lang/String;
+.field public final synthetic f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lqc/y$a;Ljava/lang/String;)V
-    .locals 1
+.method public constructor <init>(Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;)V
+    .locals 0
 
-    const/4 v0, 0x0
+    iput-object p1, p0, Lwd/f;->f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
-    if-eqz p1, :cond_2
+    const/4 p1, 0x1
 
-    if-eqz p2, :cond_1
-
-    if-eqz p3, :cond_0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lwd/f;->a:Ljava/lang/String;
-
-    iput-object p2, p0, Lwd/f;->b:Lqc/y$a;
-
-    iput-object p3, p0, Lwd/f;->c:Ljava/lang/String;
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
-
-    :cond_0
-    const-string p1, "scid"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "type"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "game"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
-    .locals 2
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
 
-    if-eq p0, p1, :cond_1
+    .line 1
+    check-cast p1, Lwc/e;
 
-    instance-of v0, p1, Lwd/f;
+    const-string v0, "it"
 
-    if-eqz v0, :cond_0
+    .line 2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast p1, Lwd/f;
+    .line 3
+    iget-object p1, p0, Lwd/f;->f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
-    iget-object v0, p0, Lwd/f;->a:Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
-    iget-object v1, p1, Lwd/f;->a:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lwd/f;->b:Lqc/y$a;
-
-    iget-object v1, p1, Lwd/f;->b:Lqc/y$a;
-
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lwd/f;->c:Ljava/lang/String;
-
-    iget-object p1, p1, Lwd/f;->c:Ljava/lang/String;
-
-    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
+    move-result-object p1
 
     if-eqz p1, :cond_0
 
-    goto :goto_0
+    .line 4
+    new-instance v0, Lcom/supercell/id/IdLoginDetails;
 
-    :cond_0
-    const/4 p1, 0x0
+    iget-object v1, p0, Lwd/f;->f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
-    return p1
+    .line 5
+    iget-object v2, v1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->k0:Ljava/lang/String;
 
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
+    .line 6
+    iget-object v1, v1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->l0:Ljava/lang/String;
 
-    return p1
-.end method
+    const/4 v3, 0x1
 
-.method public hashCode()I
-    .locals 3
+    const/4 v4, 0x0
 
-    iget-object v0, p0, Lwd/f;->a:Ljava/lang/String;
+    .line 7
+    invoke-direct {v0, v2, v1, v3, v4}, Lcom/supercell/id/IdLoginDetails;-><init>(Ljava/lang/String;Ljava/lang/String;ZZ)V
 
-    const/4 v1, 0x0
+    const/4 v1, 0x2
 
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lwd/f;->b:Lqc/y$a;
-
-    if-eqz v2, :cond_1
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v2, 0x0
-
-    :goto_1
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lwd/f;->c:Ljava/lang/String;
-
-    if-eqz v2, :cond_2
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v1
-
-    :cond_2
-    add-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 3
-
-    const-string v0, "DonateInProgress(game="
-
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1, v0, v4, v1}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v0
 
-    iget-object v1, p0, Lwd/f;->a:Ljava/lang/String;
+    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->C(Lcom/supercell/id/ui/BackStack$Entry;)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 8
+    :cond_0
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    const-string v1, ", type="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lwd/f;->b:Lqc/y$a;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", scid="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lwd/f;->c:Ljava/lang/String;
-
-    const-string v2, ")"
-
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    return-object p1
 .end method

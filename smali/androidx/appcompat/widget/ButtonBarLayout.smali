@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public g:Z
+.field public f:Z
 
-.field public h:I
+.field public g:I
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 8
+    .locals 7
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -19,7 +19,7 @@
     const/4 v0, -0x1
 
     .line 2
-    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->h:I
+    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:I
 
     .line 3
     sget-object v3, Landroidx/appcompat/R$styleable;->ButtonBarLayout:[I
@@ -30,8 +30,6 @@
 
     const/4 v6, 0x0
 
-    const/4 v7, 0x0
-
     move-object v1, p0
 
     move-object v2, p1
@@ -41,7 +39,7 @@
     move-object v5, v0
 
     .line 4
-    invoke-static/range {v1 .. v7}, Lf0/r;->z(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v1 .. v6}, Lf0/r;->C(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 5
     sget p1, Landroidx/appcompat/R$styleable;->ButtonBarLayout_allowStacking:I
@@ -52,7 +50,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->f:Z
 
     .line 6
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -82,7 +80,7 @@
     .line 3
     sget v0, Landroidx/appcompat/R$id;->spacer:I
 
-    invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -103,7 +101,7 @@
 
     .line 5
     :cond_2
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getChildCount()I
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result p1
 
@@ -113,11 +111,11 @@
     if-ltz p1, :cond_3
 
     .line 6
-    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->bringChildToFront(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->bringChildToFront(Landroid/view/View;)V
 
     add-int/lit8 p1, p1, -0x1
 
@@ -133,7 +131,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getChildCount()I
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
@@ -141,7 +139,7 @@
     if-ge p1, v0, :cond_1
 
     .line 2
-    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -167,7 +165,6 @@
 .method public final b()Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getOrientation()I
 
     move-result v0
@@ -188,8 +185,7 @@
 .method public getMinimumHeight()I
     .locals 2
 
-    .line 1
-    invoke-super {p0}, Landroid/widget/LinearLayout;->getMinimumHeight()I
+    invoke-super {p0}, Landroid/view/View;->getMinimumHeight()I
 
     move-result v0
 
@@ -202,7 +198,7 @@
     return v0
 .end method
 
-.method public onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 5
 
     .line 1
@@ -211,14 +207,14 @@
     move-result v0
 
     .line 2
-    iget-boolean v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:Z
+    iget-boolean v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->f:Z
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_1
 
     .line 3
-    iget v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->h:I
+    iget v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:I
 
     if-le v0, v1, :cond_0
 
@@ -233,7 +229,7 @@
 
     .line 5
     :cond_0
-    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->h:I
+    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:I
 
     .line 6
     :cond_1
@@ -274,7 +270,7 @@
     invoke-super {p0, v0, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
     .line 9
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->f:Z
 
     if-eqz v0, :cond_4
 
@@ -285,7 +281,7 @@
     if-nez v0, :cond_4
 
     .line 10
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getMeasuredWidthAndState()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidthAndState()I
 
     move-result v0
 
@@ -327,7 +323,7 @@
     if-ltz p1, :cond_8
 
     .line 14
-    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object p2
 
@@ -339,7 +335,7 @@
     check-cast v0, Landroid/widget/LinearLayout$LayoutParams;
 
     .line 16
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getPaddingTop()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v1
 
@@ -376,7 +372,7 @@
     if-ltz p1, :cond_6
 
     .line 19
-    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -387,7 +383,7 @@
     const/high16 v0, 0x41800000    # 16.0f
 
     .line 20
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -416,7 +412,7 @@
 
     .line 21
     :cond_7
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getPaddingBottom()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
 
     move-result p1
 
@@ -435,7 +431,7 @@
     if-eq p1, v2, :cond_9
 
     .line 24
-    invoke-virtual {p0, v2}, Landroid/widget/LinearLayout;->setMinimumHeight(I)V
+    invoke-virtual {p0, v2}, Landroid/view/View;->setMinimumHeight(I)V
 
     :cond_9
     return-void
@@ -445,12 +441,12 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->f:Z
 
     if-eq v0, p1, :cond_1
 
     .line 2
-    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->f:Z
 
     if-nez p1, :cond_0
 
@@ -470,7 +466,7 @@
 
     .line 5
     :cond_0
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->requestLayout()V
+    invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
     :cond_1
     return-void

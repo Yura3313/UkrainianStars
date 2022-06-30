@@ -120,7 +120,7 @@
 
     invoke-direct {v3, p0, v1, p1, p2}, Lcom/kakaogame/coupon/CouponManager$CouponPopupDialog$1;-><init>(Lcom/kakaogame/coupon/CouponManager$CouponPopupDialog;Landroid/widget/EditText;Landroid/app/Activity;Lcom/kakaogame/KGResultCallback;)V
 
-    invoke-virtual {v1, v3}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
     .line 14
     new-instance v3, Lcom/kakaogame/coupon/CouponManager$CouponPopupDialog$2;

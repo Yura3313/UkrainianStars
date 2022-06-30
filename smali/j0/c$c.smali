@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,10 +25,10 @@
 
 
 # virtual methods
-.method public abstract a(Landroid/view/View;II)I
+.method public abstract a(Landroid/view/View;I)I
 .end method
 
-.method public abstract b(Landroid/view/View;II)I
+.method public abstract b(Landroid/view/View;I)I
 .end method
 
 .method public c(Landroid/view/View;)I
@@ -40,12 +39,12 @@
     return p1
 .end method
 
-.method public d(Landroid/view/View;)I
-    .locals 0
+.method public d()I
+    .locals 1
 
-    const/4 p1, 0x0
+    const/4 v0, 0x0
 
-    return p1
+    return v0
 .end method
 
 .method public e(II)V
@@ -54,7 +53,7 @@
     return-void
 .end method
 
-.method public f(II)V
+.method public f()V
     .locals 0
 
     return-void
@@ -69,7 +68,7 @@
 .method public abstract h(I)V
 .end method
 
-.method public abstract i(Landroid/view/View;IIII)V
+.method public abstract i(Landroid/view/View;II)V
 .end method
 
 .method public abstract j(Landroid/view/View;FF)V

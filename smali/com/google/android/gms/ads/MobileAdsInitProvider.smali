@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final g:Lcom/google/android/gms/internal/ads/zzza;
+.field public final f:Lcom/google/android/gms/internal/ads/zzza;
 
 
 # direct methods
@@ -19,29 +19,27 @@
 
     invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzza;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
+    iput-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->f:Lcom/google/android/gms/internal/ads/zzza;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
+.method public final attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->f:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/ads/zzza;->attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
 
     return-void
 .end method
 
-.method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+.method public final delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 0
 
-    .line 1
-    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->f:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -50,11 +48,10 @@
     return p1
 .end method
 
-.method public getType(Landroid/net/Uri;)Ljava/lang/String;
+.method public final getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 0
 
-    .line 1
-    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->f:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -63,11 +60,10 @@
     return-object p1
 .end method
 
-.method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+.method public final insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 0
 
-    .line 1
-    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->f:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -76,11 +72,10 @@
     return-object p1
 .end method
 
-.method public onCreate()Z
+.method public final onCreate()Z
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->f:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -89,11 +84,10 @@
     return v0
 .end method
 
-.method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+.method public final query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 0
 
-    .line 1
-    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->f:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -102,11 +96,10 @@
     return-object p1
 .end method
 
-.method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+.method public final update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 0
 
-    .line 1
-    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->f:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

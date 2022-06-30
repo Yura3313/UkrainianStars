@@ -15,7 +15,8 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lw/e$b$a;
+        Lw/e$b$a;,
+        Lw/e$b$b;
     }
 .end annotation
 
@@ -32,7 +33,7 @@
     if-lt v0, v1, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Landroid/content/res/Resources$Theme;->rebase()V
+    invoke-static {p0}, Lw/e$b$b;->a(Landroid/content/res/Resources$Theme;)V
 
     goto :goto_1
 
@@ -73,7 +74,7 @@
     sput-object v3, Lw/e$b$a;->b:Ljava/lang/reflect/Method;
 
     .line 6
-    invoke-virtual {v3, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v3, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_1
     .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0

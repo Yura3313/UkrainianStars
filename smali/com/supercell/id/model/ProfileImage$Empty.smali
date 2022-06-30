@@ -22,7 +22,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/supercell/id/model/ProfileImage$Empty;
 
     invoke-direct {v0}, Lcom/supercell/id/model/ProfileImage$Empty;-><init>()V
@@ -33,12 +32,9 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, v0}, Lcom/supercell/id/model/ProfileImage;-><init>(Lle/g;)V
+    invoke-direct {p0}, Lcom/supercell/id/model/ProfileImage;-><init>()V
 
     return-void
 .end method

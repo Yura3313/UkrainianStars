@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$1;->this$0:Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;
 
     iput-object p2, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$1;->val$activity:Landroid/app/Activity;

@@ -1,117 +1,275 @@
 .class public final Lcom/google/protobuf/u1$a;
 .super Ljava/lang/Object;
-.source "UnsafeUtil.java"
-
-# interfaces
-.implements Ljava/security/PrivilegedExceptionAction;
+.source "Utf8.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/protobuf/u1;->s()Lsun/misc/Unsafe;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/protobuf/u1;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x9
-    name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/security/PrivilegedExceptionAction<",
-        "Lsun/misc/Unsafe;",
-        ">;"
-    }
+    name = "a"
 .end annotation
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a()Lsun/misc/Unsafe;
-    .locals 7
+.method public static a(BBBB[CI)V
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/lang/Exception;
+            Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
     .line 1
-    const-class v0, Lsun/misc/Unsafe;
+    invoke-static {p1}, Lcom/google/protobuf/u1$a;->f(B)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    shl-int/lit8 v0, p0, 0x1c
+
+    add-int/lit8 v1, p1, 0x70
+
+    add-int/2addr v1, v0
+
+    shr-int/lit8 v0, v1, 0x1e
+
+    if-nez v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
+    invoke-static {p2}, Lcom/google/protobuf/u1$a;->f(B)Z
 
-    move-result-object v1
+    move-result v0
 
-    array-length v2, v1
-
-    const/4 v3, 0x0
-
-    :goto_0
-    const/4 v4, 0x0
-
-    if-ge v3, v2, :cond_1
-
-    aget-object v5, v1, v3
-
-    const/4 v6, 0x1
+    if-nez v0, :cond_0
 
     .line 3
-    invoke-virtual {v5, v6}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-static {p3}, Lcom/google/protobuf/u1$a;->f(B)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    and-int/lit8 p0, p0, 0x7
+
+    shl-int/lit8 p0, p0, 0x12
+
+    and-int/lit8 p1, p1, 0x3f
+
+    shl-int/lit8 p1, p1, 0xc
+
+    or-int/2addr p0, p1
+
+    and-int/lit8 p1, p2, 0x3f
+
+    shl-int/lit8 p1, p1, 0x6
+
+    or-int/2addr p0, p1
+
+    and-int/lit8 p1, p3, 0x3f
+
+    or-int/2addr p0, p1
+
+    ushr-int/lit8 p1, p0, 0xa
+
+    const p2, 0xd7c0
+
+    add-int/2addr p1, p2
+
+    int-to-char p1, p1
 
     .line 4
-    invoke-virtual {v5, v4}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    aput-char p1, p4, p5
 
-    move-result-object v4
+    add-int/lit8 p5, p5, 0x1
+
+    and-int/lit16 p0, p0, 0x3ff
+
+    const p1, 0xdc00
+
+    add-int/2addr p0, p1
+
+    int-to-char p0, p0
 
     .line 5
-    invoke-virtual {v0, v4}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+    aput-char p0, p4, p5
 
-    move-result v5
-
-    if-eqz v5, :cond_0
+    return-void
 
     .line 6
-    invoke-virtual {v0, v4}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lsun/misc/Unsafe;
-
-    return-object v0
-
     :cond_0
-    add-int/lit8 v3, v3, 0x1
+    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->c()Lcom/google/protobuf/InvalidProtocolBufferException;
+
+    move-result-object p0
+
+    throw p0
+.end method
+
+.method public static b(B)Z
+    .locals 1
+
+    const/16 v0, -0x20
+
+    if-ge p0, v0, :cond_0
+
+    const/4 p0, 0x1
 
     goto :goto_0
 
-    :cond_1
-    return-object v4
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
 .end method
 
-.method public bridge synthetic run()Ljava/lang/Object;
+.method public static c(BB[CI)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/lang/Exception;
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    const/16 v0, -0x3e
+
+    if-lt p0, v0, :cond_0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/protobuf/u1$a;->f(B)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    and-int/lit8 p0, p0, 0x1f
+
+    shl-int/lit8 p0, p0, 0x6
+
+    and-int/lit8 p1, p1, 0x3f
+
+    or-int/2addr p0, p1
+
+    int-to-char p0, p0
+
+    .line 2
+    aput-char p0, p2, p3
+
+    return-void
+
+    .line 3
+    :cond_0
+    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->c()Lcom/google/protobuf/InvalidProtocolBufferException;
+
+    move-result-object p0
+
+    throw p0
+.end method
+
+.method public static d(B)Z
+    .locals 1
+
+    const/16 v0, -0x10
+
+    if-ge p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public static e(BBB[CI)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/protobuf/u1$a;->a()Lsun/misc/Unsafe;
+    invoke-static {p1}, Lcom/google/protobuf/u1$a;->f(B)Z
 
-    move-result-object v0
+    move-result v0
 
-    return-object v0
+    if-nez v0, :cond_2
+
+    const/16 v0, -0x20
+
+    const/16 v1, -0x60
+
+    if-ne p0, v0, :cond_0
+
+    if-lt p1, v1, :cond_2
+
+    :cond_0
+    const/16 v0, -0x13
+
+    if-ne p0, v0, :cond_1
+
+    if-ge p1, v1, :cond_2
+
+    .line 2
+    :cond_1
+    invoke-static {p2}, Lcom/google/protobuf/u1$a;->f(B)Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    and-int/lit8 p0, p0, 0xf
+
+    shl-int/lit8 p0, p0, 0xc
+
+    and-int/lit8 p1, p1, 0x3f
+
+    shl-int/lit8 p1, p1, 0x6
+
+    or-int/2addr p0, p1
+
+    and-int/lit8 p1, p2, 0x3f
+
+    or-int/2addr p0, p1
+
+    int-to-char p0, p0
+
+    .line 3
+    aput-char p0, p3, p4
+
+    return-void
+
+    .line 4
+    :cond_2
+    invoke-static {}, Lcom/google/protobuf/InvalidProtocolBufferException;->c()Lcom/google/protobuf/InvalidProtocolBufferException;
+
+    move-result-object p0
+
+    throw p0
+.end method
+
+.method public static f(B)Z
+    .locals 1
+
+    const/16 v0, -0x41
+
+    if-le p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
 .end method

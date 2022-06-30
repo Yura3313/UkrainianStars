@@ -25,7 +25,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/viewpager/widget/RtlViewPager;Landroidx/viewpager/widget/ViewPager$h;)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -34,7 +34,10 @@
         }
     .end annotation
 
-    .line 1
+    const-string v0, "mListener"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     iput-object p1, p0, Landroidx/viewpager/widget/RtlViewPager$b;->b:Landroidx/viewpager/widget/RtlViewPager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,20 +49,20 @@
 
 
 # virtual methods
-.method public a(IFI)V
+.method public final a(IFI)V
     .locals 5
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$b;->b:Landroidx/viewpager/widget/RtlViewPager;
 
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {v0}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
     .line 2
     iget-object v1, p0, Landroidx/viewpager/widget/RtlViewPager$b;->b:Landroidx/viewpager/widget/RtlViewPager;
 
-    invoke-static {v1}, Landroidx/viewpager/widget/RtlViewPager;->D(Landroidx/viewpager/widget/RtlViewPager;)Ly0/b;
+    invoke-static {v1}, Landroidx/viewpager/widget/RtlViewPager;->E(Landroidx/viewpager/widget/RtlViewPager;)Ly0/b;
 
     move-result-object v1
 
@@ -67,7 +70,7 @@
     iget-object v2, p0, Landroidx/viewpager/widget/RtlViewPager$b;->b:Landroidx/viewpager/widget/RtlViewPager;
 
     .line 4
-    invoke-virtual {v2}, Landroidx/viewpager/widget/RtlViewPager;->E()Z
+    invoke-virtual {v2}, Landroidx/viewpager/widget/RtlViewPager;->F()Z
 
     move-result v2
 
@@ -146,10 +149,9 @@
     return-void
 .end method
 
-.method public c(I)V
+.method public final c(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$b;->a:Landroidx/viewpager/widget/ViewPager$h;
 
     invoke-interface {v0, p1}, Landroidx/viewpager/widget/ViewPager$h;->c(I)V
@@ -157,13 +159,13 @@
     return-void
 .end method
 
-.method public d(I)V
+.method public final d(I)V
     .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$b;->b:Landroidx/viewpager/widget/RtlViewPager;
 
-    invoke-static {v0}, Landroidx/viewpager/widget/RtlViewPager;->D(Landroidx/viewpager/widget/RtlViewPager;)Ly0/b;
+    invoke-static {v0}, Landroidx/viewpager/widget/RtlViewPager;->E(Landroidx/viewpager/widget/RtlViewPager;)Ly0/b;
 
     move-result-object v0
 
@@ -171,7 +173,7 @@
     iget-object v1, p0, Landroidx/viewpager/widget/RtlViewPager$b;->b:Landroidx/viewpager/widget/RtlViewPager;
 
     .line 3
-    invoke-virtual {v1}, Landroidx/viewpager/widget/RtlViewPager;->E()Z
+    invoke-virtual {v1}, Landroidx/viewpager/widget/RtlViewPager;->F()Z
 
     move-result v1
 

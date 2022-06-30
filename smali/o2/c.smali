@@ -10,7 +10,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/drive/events/zze;",
+        "Lcom/google/android/gms/drive/Contents;",
         ">;"
     }
 .end annotation
@@ -20,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,7 @@
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 7
+    .locals 10
 
     .line 1
     invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
@@ -40,79 +39,136 @@
 
     const/4 v2, 0x0
 
-    move-object v3, v2
+    move-object v4, v2
 
-    const/4 v2, 0x0
+    move-object v7, v4
+
+    move-object v9, v7
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v8, 0x0
 
     .line 2
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result v4
+    move-result v1
 
-    if-ge v4, v0, :cond_3
+    if-ge v1, v0, :cond_6
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v4
+    move-result v1
 
-    const v5, 0xffff
+    const v2, 0xffff
 
-    and-int/2addr v5, v4
+    and-int/2addr v2, v1
 
-    const/4 v6, 0x2
+    const/4 v3, 0x2
 
-    if-eq v5, v6, :cond_2
+    if-eq v2, v3, :cond_5
 
-    const/4 v6, 0x3
+    const/4 v3, 0x3
 
-    if-eq v5, v6, :cond_1
+    if-eq v2, v3, :cond_4
 
-    const/4 v6, 0x4
+    const/4 v3, 0x4
 
-    if-eq v5, v6, :cond_0
+    if-eq v2, v3, :cond_3
+
+    const/4 v3, 0x5
+
+    if-eq v2, v3, :cond_2
+
+    const/4 v3, 0x7
+
+    if-eq v2, v3, :cond_1
+
+    const/16 v3, 0x8
+
+    if-eq v2, v3, :cond_0
 
     .line 4
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     .line 5
     :cond_0
-    sget-object v3, Lcom/google/android/gms/drive/DriveSpace;->CREATOR:Landroid/os/Parcelable$Creator;
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v9
+
+    goto :goto_0
 
     .line 6
-    invoke-static {p1, v4, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->m(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
+    :cond_1
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
 
-    move-result-object v3
+    move-result v8
 
     goto :goto_0
 
     .line 7
-    :cond_1
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
-
-    move-result v2
-
-    goto :goto_0
+    :cond_2
+    sget-object v2, Lcom/google/android/gms/drive/DriveId;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 8
-    :cond_2
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
-    move-result v1
+    move-result-object v1
+
+    move-object v7, v1
+
+    check-cast v7, Lcom/google/android/gms/drive/DriveId;
 
     goto :goto_0
 
     .line 9
     :cond_3
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+
+    move-result v6
+
+    goto :goto_0
 
     .line 10
-    new-instance p1, Lcom/google/android/gms/drive/events/zze;
+    :cond_4
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
 
-    invoke-direct {p1, v1, v2, v3}, Lcom/google/android/gms/drive/events/zze;-><init>(IZLjava/util/List;)V
+    move-result v5
+
+    goto :goto_0
+
+    .line 11
+    :cond_5
+    sget-object v2, Landroid/os/ParcelFileDescriptor;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 12
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v4, v1
+
+    check-cast v4, Landroid/os/ParcelFileDescriptor;
+
+    goto :goto_0
+
+    .line 13
+    :cond_6
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+
+    .line 14
+    new-instance p1, Lcom/google/android/gms/drive/Contents;
+
+    move-object v3, p1
+
+    invoke-direct/range {v3 .. v9}, Lcom/google/android/gms/drive/Contents;-><init>(Landroid/os/ParcelFileDescriptor;IILcom/google/android/gms/drive/DriveId;ZLjava/lang/String;)V
 
     return-object p1
 .end method
@@ -120,8 +176,7 @@
 .method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
-    new-array p1, p1, [Lcom/google/android/gms/drive/events/zze;
+    new-array p1, p1, [Lcom/google/android/gms/drive/Contents;
 
     return-object p1
 .end method

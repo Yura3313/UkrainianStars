@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract a(Landroidx/appcompat/widget/ViewStubCompat;Landroid/view/View;)V
+.method public abstract a()V
 .end method

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingamechat/ChatFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/ingamechat/ChatFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,20 +19,19 @@
 
 .field public final synthetic b:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
-.field public final synthetic c:Lle/q;
+.field public final synthetic c:Lse/o;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/ingamechat/ChatFragment$a;Lcom/supercell/id/ui/ingamechat/ChatFragment;Lle/q;)V
+.method public constructor <init>(Lcom/supercell/id/ui/ingamechat/ChatFragment$a;Lcom/supercell/id/ui/ingamechat/ChatFragment;Lse/o;)V
     .locals 0
 
     iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->a:Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
 
     iput-object p2, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->b:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
-    iput-object p3, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->c:Lle/q;
+    iput-object p3, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->c:Lse/o;
 
-    .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$g;-><init>()V
 
     return-void
@@ -40,13 +39,13 @@
 
 
 # virtual methods
-.method public d(II)V
+.method public final d(II)V
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->c:Lle/q;
+    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->c:Lse/o;
 
-    iget-boolean p1, p1, Lle/q;->g:Z
+    iget-boolean p1, p1, Lse/o;->f:Z
 
     if-eqz p1, :cond_0
 
@@ -55,7 +54,7 @@
 
     sget p2, Lcom/supercell/id/R$id;->messagesList:I
 
-    invoke-virtual {p1, p2}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p1, p2}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -63,7 +62,7 @@
 
     iget-object p2, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->a:Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
 
-    invoke-virtual {p2}, Lvd/k1;->b()I
+    invoke-virtual {p2}, Lae/c2;->b()I
 
     move-result p2
 

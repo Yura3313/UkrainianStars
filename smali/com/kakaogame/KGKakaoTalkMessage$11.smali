@@ -27,7 +27,6 @@
 .method public constructor <init>(Ljava/lang/String;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGKakaoTalkMessage$11;->val$text:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/kakaogame/KGKakaoTalkMessage$11;->val$idpLoginLock:Lcom/kakaogame/util/MutexLock;
@@ -101,7 +100,7 @@
     const/16 v0, 0xfaa
 
     .line 7
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 

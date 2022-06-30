@@ -160,7 +160,6 @@
 .method public final toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "RefreshTokenResult{accessToken=\'#####\', expiresInMillis="

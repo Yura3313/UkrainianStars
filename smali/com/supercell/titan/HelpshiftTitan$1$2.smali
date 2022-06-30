@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/HelpshiftTitan$1;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,7 +30,7 @@
 # virtual methods
 .method public onBackground()V
     .locals 4
-    .annotation runtime Landroidx/lifecycle/q;
+    .annotation runtime Landroidx/lifecycle/p;
         value = .enum Landroidx/lifecycle/f$b;->ON_STOP:Landroidx/lifecycle/f$b;
     .end annotation
 
@@ -67,7 +66,7 @@
 
 .method public onForeground()V
     .locals 4
-    .annotation runtime Landroidx/lifecycle/q;
+    .annotation runtime Landroidx/lifecycle/p;
         value = .enum Landroidx/lifecycle/f$b;->ON_START:Landroidx/lifecycle/f$b;
     .end annotation
 

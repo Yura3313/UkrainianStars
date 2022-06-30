@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public static synthetic issueAccessToken$default(Lcom/kakao/sdk/auth/AuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic issueAccessToken$default(Lcom/kakao/sdk/auth/AuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lef/b;
     .locals 10
 
     if-nez p9, :cond_3
@@ -71,7 +71,7 @@
     move-object v6, p4
 
     .line 1
-    invoke-interface/range {v2 .. v9}, Lcom/kakao/sdk/auth/AuthApi;->issueAccessToken(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lxe/b;
+    invoke-interface/range {v2 .. v9}, Lcom/kakao/sdk/auth/AuthApi;->issueAccessToken(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lef/b;
 
     move-result-object v0
 
@@ -88,7 +88,7 @@
     throw v0
 .end method
 
-.method public static synthetic refreshAccessToken$default(Lcom/kakao/sdk/auth/AuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic refreshAccessToken$default(Lcom/kakao/sdk/auth/AuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lef/b;
     .locals 6
 
     if-nez p7, :cond_2
@@ -120,7 +120,7 @@
     move-object v3, p3
 
     .line 1
-    invoke-interface/range {v0 .. v5}, Lcom/kakao/sdk/auth/AuthApi;->refreshAccessToken(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lxe/b;
+    invoke-interface/range {v0 .. v5}, Lcom/kakao/sdk/auth/AuthApi;->refreshAccessToken(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lef/b;
 
     move-result-object p0
 

@@ -46,7 +46,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,10 +62,10 @@
         }
     .end annotation
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 2
     iput-object p1, p0, Lio/sentry/protocol/SentryStackTrace;->frames:Ljava/util/List;
 
     return-void
@@ -89,7 +88,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackTrace;->unknown:Ljava/util/Map;
 
     return-void
@@ -106,7 +104,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackTrace;->frames:Ljava/util/List;
 
     return-object v0
@@ -124,7 +121,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackTrace;->registers:Ljava/util/Map;
 
     return-object v0
@@ -133,7 +129,6 @@
 .method public getSnapshot()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryStackTrace;->snapshot:Ljava/lang/Boolean;
 
     return-object v0
@@ -150,7 +145,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackTrace;->frames:Ljava/util/List;
 
     return-void
@@ -168,7 +162,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackTrace;->registers:Ljava/util/Map;
 
     return-void
@@ -177,7 +170,6 @@
 .method public setSnapshot(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryStackTrace;->snapshot:Ljava/lang/Boolean;
 
     return-void

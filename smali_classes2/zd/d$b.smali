@@ -1,45 +1,66 @@
 .class public final Lzd/d$b;
 .super Ljava/lang/Object;
-.source "-ViewPumpLayoutInflater.kt"
+.source "YoungPlayerRegisterEnterEmailPageFragment.kt"
+
+# interfaces
+.implements Landroid/text/TextWatcher;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lzd/d;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lzd/d;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = "b"
+    name = null
 .end annotation
 
 
-# direct methods
-.method public constructor <init>(Lle/g;)V
-    .locals 0
+# instance fields
+.field public final synthetic f:Lzd/d;
 
-    .line 1
+
+# direct methods
+.method public constructor <init>(Lzd/d;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lzd/d$b;->f:Lzd/d;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static final a(Lzd/d$b;)Ljava/lang/reflect/Field;
+
+# virtual methods
+.method public final afterTextChanged(Landroid/text/Editable;)V
     .locals 1
 
     .line 1
-    sget-object p0, Lzd/d;->f:Lae/c;
+    iget-object p1, p0, Lzd/d$b;->f:Lzd/d;
+
+    sget v0, Lzd/d;->f0:I
 
     .line 2
-    sget-object v0, Lzd/d;->g:Lzd/d$b;
+    invoke-virtual {p1}, Lzd/d;->X0()V
 
-    check-cast p0, Lae/f;
+    return-void
+.end method
 
-    invoke-virtual {p0}, Lae/f;->getValue()Ljava/lang/Object;
+.method public final beforeTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
 
-    move-result-object p0
+    return-void
+.end method
 
-    check-cast p0, Ljava/lang/reflect/Field;
+.method public final onTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
 
-    return-object p0
+    return-void
 .end method

@@ -1,93 +1,84 @@
-.class public final Li1/d;
+.class public final synthetic Li1/d;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/nl0;
 
-# instance fields
-.field public final a:I
 
-.field public final b:Landroid/view/ViewGroup$LayoutParams;
-
-.field public final c:Landroid/view/ViewGroup;
-
-.field public final d:Landroid/content/Context;
+# static fields
+.field public static final a:Li1/d;
 
 
 # direct methods
-.method public constructor <init>(Lj3/gh;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Li1/c;
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 1
+    new-instance v0, Li1/d;
+
+    invoke-direct {v0}, Li1/d;-><init>()V
+
+    sput-object v0, Li1/d;->a:Li1/d;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)Lk3/em0;
+    .locals 2
+
+    .line 1
+    check-cast p1, Lorg/json/JSONObject;
+
+    const-string v0, "isSuccessful"
+
+    const/4 v1, 0x0
+
     .line 2
-    invoke-interface {p1}, Lj3/gh;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
 
-    move-result-object v0
-
-    iput-object v0, p0, Li1/d;->b:Landroid/view/ViewGroup$LayoutParams;
-
-    .line 3
-    invoke-interface {p1}, Lj3/gh;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    .line 4
-    invoke-interface {p1}, Lj3/gh;->s()Landroid/content/Context;
-
-    move-result-object v1
-
-    iput-object v1, p0, Li1/d;->d:Landroid/content/Context;
+    move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 5
-    instance-of v1, v0, Landroid/view/ViewGroup;
+    const-string v0, "appSettingsJson"
 
-    if-eqz v1, :cond_0
+    .line 3
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 4
+    sget-object v0, Li1/o;->B:Li1/o;
+
+    iget-object v0, v0, Li1/o;->g:Lk3/ia;
+
+    .line 5
+    invoke-virtual {v0}, Lk3/ia;->f()Lk3/ua;
+
+    move-result-object v0
 
     .line 6
-    check-cast v0, Landroid/view/ViewGroup;
+    check-cast v0, Lk3/xa;
 
-    iput-object v0, p0, Li1/d;->c:Landroid/view/ViewGroup;
+    invoke-virtual {v0, p1}, Lk3/xa;->v(Ljava/lang/String;)V
+
+    :cond_0
+    const/4 p1, 0x0
 
     .line 7
-    invoke-interface {p1}, Lj3/gh;->getView()Landroid/view/View;
+    invoke-static {p1}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
 
-    move-result-object v1
+    move-result-object p1
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
-
-    move-result v1
-
-    iput v1, p0, Li1/d;->a:I
-
-    .line 8
-    invoke-interface {p1}, Lj3/gh;->getView()Landroid/view/View;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
-
-    const/4 v0, 0x1
-
-    .line 9
-    invoke-interface {p1, v0}, Lj3/gh;->w0(Z)V
-
-    return-void
-
-    .line 10
-    :cond_0
-    new-instance p1, Li1/c;
-
-    const-string v0, "Could not get the parent of the WebView for an overlay."
-
-    invoke-direct {p1, v0}, Li1/c;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return-object p1
 .end method

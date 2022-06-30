@@ -1,45 +1,61 @@
-.class public final Lcom/google/crypto/tink/shaded/protobuf/n;
-.super Lcom/google/crypto/tink/shaded/protobuf/c;
-.source "FloatArrayList.java"
-
-# interfaces
-.implements Ljava/util/RandomAccess;
-.implements Lm5/s;
+.class public abstract Lcom/google/crypto/tink/shaded/protobuf/n;
+.super Lcom/google/crypto/tink/shaded/protobuf/a;
+.source "GeneratedMessageLite.java"
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/crypto/tink/shaded/protobuf/n$b;,
+        Lcom/google/crypto/tink/shaded/protobuf/n$e;,
+        Lcom/google/crypto/tink/shaded/protobuf/n$d;,
+        Lcom/google/crypto/tink/shaded/protobuf/n$c;,
+        Lcom/google/crypto/tink/shaded/protobuf/n$a;,
+        Lcom/google/crypto/tink/shaded/protobuf/n$f;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/google/crypto/tink/shaded/protobuf/c<",
-        "Ljava/lang/Float;",
-        ">;",
-        "Ljava/util/RandomAccess;",
-        "Lm5/s;"
+        "<MessageType:",
+        "Lcom/google/crypto/tink/shaded/protobuf/n<",
+        "TMessageType;TBuilderType;>;BuilderType:",
+        "Lcom/google/crypto/tink/shaded/protobuf/n$a<",
+        "TMessageType;TBuilderType;>;>",
+        "Lcom/google/crypto/tink/shaded/protobuf/a<",
+        "TMessageType;TBuilderType;>;"
     }
 .end annotation
 
 
-# instance fields
-.field public h:[F
+# static fields
+.field private static defaultInstanceMap:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Object;",
+            "Lcom/google/crypto/tink/shaded/protobuf/n<",
+            "**>;>;"
+        }
+    .end annotation
+.end field
 
-.field public i:I
+
+# instance fields
+.field public memoizedSerializedSize:I
+
+.field public unknownFields:Lcom/google/crypto/tink/shaded/protobuf/i0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    new-instance v0, Lcom/google/crypto/tink/shaded/protobuf/n;
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    new-array v2, v1, [F
-
-    invoke-direct {v0, v2, v1}, Lcom/google/crypto/tink/shaded/protobuf/n;-><init>([FI)V
-
-    .line 2
-    iput-boolean v1, v0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
+    sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/n;->defaultInstanceMap:Ljava/util/Map;
 
     return-void
 .end method
@@ -47,740 +63,923 @@
 .method public constructor <init>()V
     .locals 1
 
-    const/16 v0, 0xa
-
-    new-array v0, v0, [F
-
     .line 1
-    invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;-><init>()V
+    invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/a;-><init>()V
 
     .line 2
-    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/i0;->f:Lcom/google/crypto/tink/shaded/protobuf/i0;
 
-    const/4 v0, 0x0
+    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->unknownFields:Lcom/google/crypto/tink/shaded/protobuf/i0;
+
+    const/4 v0, -0x1
 
     .line 3
-    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
+    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->memoizedSerializedSize:I
 
     return-void
 .end method
 
-.method public constructor <init>([FI)V
-    .locals 0
+.method public static g(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/n<",
+            "TT;*>;>(TT;)TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/n;->isInitialized()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-object p0
+
+    .line 2
+    :cond_0
+    new-instance p0, Lcom/google/crypto/tink/shaded/protobuf/UninitializedMessageException;
+
+    invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/UninitializedMessageException;-><init>()V
+
+    .line 3
+    new-instance v0, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;-><init>(Ljava/lang/String;)V
 
     .line 4
-    invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;-><init>()V
+    throw v0
+.end method
+
+.method public static j(Ljava/lang/Class;)Lcom/google/crypto/tink/shaded/protobuf/n;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/n<",
+            "**>;>(",
+            "Ljava/lang/Class<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n;->defaultInstanceMap:Ljava/util/Map;
+
+    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    if-nez v0, :cond_0
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {p0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v2
+
+    invoke-static {v0, v1, v2}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 3
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n;->defaultInstanceMap:Ljava/util/Map;
+
+    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    .line 4
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "Class initialization cannot fail."
+
+    invoke-direct {v0, v1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v0
+
+    :cond_0
+    :goto_0
+    if-nez v0, :cond_2
 
     .line 5
-    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
+    invoke-static {p0}, Lo5/d0;->b(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->k()Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
 
     .line 6
-    iput p2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/n;->defaultInstanceMap:Ljava/util/Map;
+
+    invoke-interface {v1, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_1
+
+    .line 7
+    :cond_1
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    invoke-direct {p0}, Ljava/lang/IllegalStateException;-><init>()V
+
+    throw p0
+
+    :cond_2
+    :goto_1
+    return-object v0
+.end method
+
+.method static varargs l(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    move-exception p0
+
+    .line 2
+    invoke-virtual {p0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
+
+    move-result-object p0
+
+    .line 3
+    instance-of p1, p0, Ljava/lang/RuntimeException;
+
+    if-nez p1, :cond_1
+
+    .line 4
+    instance-of p1, p0, Ljava/lang/Error;
+
+    if-eqz p1, :cond_0
+
+    .line 5
+    check-cast p0, Ljava/lang/Error;
+
+    throw p0
+
+    .line 6
+    :cond_0
+    new-instance p1, Ljava/lang/RuntimeException;
+
+    const-string p2, "Unexpected exception thrown by generated accessor method."
+
+    invoke-direct {p1, p2, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw p1
+
+    .line 7
+    :cond_1
+    check-cast p0, Ljava/lang/RuntimeException;
+
+    throw p0
+
+    :catch_1
+    move-exception p0
+
+    .line 8
+    new-instance p1, Ljava/lang/RuntimeException;
+
+    const-string p2, "Couldn\'t use Java reflection to implement protocol message reflection."
+
+    invoke-direct {p1, p2, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw p1
+.end method
+
+.method public static m(Lcom/google/crypto/tink/shaded/protobuf/n;Lo5/d;Lcom/google/crypto/tink/shaded/protobuf/i;)Lcom/google/crypto/tink/shaded/protobuf/n;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/n<",
+            "TT;*>;>(TT;",
+            "Lo5/d;",
+            "Lcom/google/crypto/tink/shaded/protobuf/i;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p1}, Lo5/d;->j()Lcom/google/crypto/tink/shaded/protobuf/f;
+
+    move-result-object p1
+
+    .line 2
+    invoke-static {p0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/n;->o(Lcom/google/crypto/tink/shaded/protobuf/n;Lcom/google/crypto/tink/shaded/protobuf/f;Lcom/google/crypto/tink/shaded/protobuf/i;)Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    move-result-object p0
+    :try_end_0
+    .catch Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_1
+
+    const/4 p2, 0x0
+
+    .line 3
+    :try_start_1
+    invoke-virtual {p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/f;->a(I)V
+    :try_end_1
+    .catch Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 4
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/n;->g(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    return-object p0
+
+    :catch_0
+    move-exception p0
+
+    .line 5
+    :try_start_2
+    throw p0
+    :try_end_2
+    .catch Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException; {:try_start_2 .. :try_end_2} :catch_1
+
+    :catch_1
+    move-exception p0
+
+    .line 6
+    throw p0
+.end method
+
+.method public static n(Lcom/google/crypto/tink/shaded/protobuf/n;[BLcom/google/crypto/tink/shaded/protobuf/i;)Lcom/google/crypto/tink/shaded/protobuf/n;
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/n<",
+            "TT;*>;>(TT;[B",
+            "Lcom/google/crypto/tink/shaded/protobuf/i;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 1
+    array-length v0, p1
+
+    .line 2
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/n$f;->i:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+
+    .line 3
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    .line 4
+    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    .line 5
+    :try_start_0
+    sget-object v1, Lo5/w;->c:Lo5/w;
+
+    .line 6
+    invoke-virtual {v1, p0}, Lo5/w;->b(Ljava/lang/Object;)Lcom/google/crypto/tink/shaded/protobuf/d0;
+
+    move-result-object v7
+
+    add-int/lit8 v5, v0, 0x0
+
+    .line 7
+    new-instance v6, Lcom/google/crypto/tink/shaded/protobuf/d$a;
+
+    invoke-direct {v6, p2}, Lcom/google/crypto/tink/shaded/protobuf/d$a;-><init>(Lcom/google/crypto/tink/shaded/protobuf/i;)V
+
+    const/4 v4, 0x0
+
+    move-object v1, v7
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    invoke-interface/range {v1 .. v6}, Lcom/google/crypto/tink/shaded/protobuf/d0;->i(Ljava/lang/Object;[BIILcom/google/crypto/tink/shaded/protobuf/d$a;)V
+
+    .line 8
+    invoke-interface {v7, p0}, Lcom/google/crypto/tink/shaded/protobuf/d0;->e(Ljava/lang/Object;)V
+
+    .line 9
+    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/a;->memoizedHashCode:I
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez p1, :cond_0
+
+    .line 10
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/n;->g(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    return-object p0
+
+    .line 11
+    :cond_0
+    :try_start_1
+    new-instance p0, Ljava/lang/RuntimeException;
+
+    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
+
+    throw p0
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 12
+    :catch_0
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;->h()Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+
+    move-result-object p0
+
+    throw p0
+
+    :catch_1
+    move-exception p0
+
+    .line 13
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    instance-of p1, p1, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+
+    if-eqz p1, :cond_1
+
+    .line 14
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+
+    throw p0
+
+    .line 15
+    :cond_1
+    new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public static o(Lcom/google/crypto/tink/shaded/protobuf/n;Lcom/google/crypto/tink/shaded/protobuf/f;Lcom/google/crypto/tink/shaded/protobuf/i;)Lcom/google/crypto/tink/shaded/protobuf/n;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/n<",
+            "TT;*>;>(TT;",
+            "Lcom/google/crypto/tink/shaded/protobuf/f;",
+            "Lcom/google/crypto/tink/shaded/protobuf/i;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->i:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    .line 3
+    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    .line 4
+    :try_start_0
+    sget-object v0, Lo5/w;->c:Lo5/w;
+
+    .line 5
+    invoke-virtual {v0, p0}, Lo5/w;->b(Ljava/lang/Object;)Lcom/google/crypto/tink/shaded/protobuf/d0;
+
+    move-result-object v0
+
+    .line 6
+    iget-object v1, p1, Lcom/google/crypto/tink/shaded/protobuf/f;->c:Lcom/google/crypto/tink/shaded/protobuf/g;
+
+    if-eqz v1, :cond_0
+
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    new-instance v1, Lcom/google/crypto/tink/shaded/protobuf/g;
+
+    invoke-direct {v1, p1}, Lcom/google/crypto/tink/shaded/protobuf/g;-><init>(Lcom/google/crypto/tink/shaded/protobuf/f;)V
+
+    .line 8
+    :goto_0
+    invoke-interface {v0, p0, v1, p2}, Lcom/google/crypto/tink/shaded/protobuf/d0;->h(Ljava/lang/Object;Lo5/y;Lcom/google/crypto/tink/shaded/protobuf/i;)V
+
+    .line 9
+    invoke-interface {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/d0;->e(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    move-exception p0
+
+    .line 10
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    instance-of p1, p1, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+
+    if-eqz p1, :cond_1
+
+    .line 11
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+
+    throw p0
+
+    .line 12
+    :cond_1
+    throw p0
+
+    :catch_1
+    move-exception p0
+
+    .line 13
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    instance-of p1, p1, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+
+    if-eqz p1, :cond_2
+
+    .line 14
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+
+    throw p0
+
+    .line 15
+    :cond_2
+    new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
+
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public static p(Ljava/lang/Class;Lcom/google/crypto/tink/shaded/protobuf/n;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/n<",
+            "**>;>(",
+            "Ljava/lang/Class<",
+            "TT;>;TT;)V"
+        }
+    .end annotation
+
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n;->defaultInstanceMap:Ljava/util/Map;
+
+    invoke-interface {v0, p0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public add(ILjava/lang/Object;)V
-    .locals 5
-
-    .line 1
-    check-cast p2, Ljava/lang/Float;
-
-    .line 2
-    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
-
-    move-result p2
-
-    .line 3
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
-
-    if-ltz p1, :cond_1
-
-    .line 4
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    if-gt p1, v0, :cond_1
-
-    .line 5
-    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    array-length v2, v1
-
-    if-ge v0, v2, :cond_0
-
-    add-int/lit8 v2, p1, 0x1
-
-    sub-int/2addr v0, p1
-
-    .line 6
-    invoke-static {v1, p1, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v2, 0x3
-
-    const/4 v3, 0x2
-
-    const/4 v4, 0x1
-
-    invoke-static {v0, v2, v3, v4}, Lj3/xq0;->a(IIII)I
-
-    move-result v0
-
-    .line 7
-    new-array v0, v0, [F
-
-    const/4 v2, 0x0
-
-    .line 8
-    invoke-static {v1, v2, v0, v2, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 9
-    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    add-int/lit8 v2, p1, 0x1
-
-    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    sub-int/2addr v3, p1
-
-    invoke-static {v1, p1, v0, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 10
-    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    .line 11
-    :goto_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    aput p2, v0, p1
-
-    .line 12
-    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    .line 13
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    return-void
-
-    .line 14
-    :cond_1
-    new-instance p2, Ljava/lang/IndexOutOfBoundsException;
-
-    invoke-virtual {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/n;->e(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    throw p2
-.end method
-
-.method public add(Ljava/lang/Object;)Z
-    .locals 0
-
-    .line 15
-    check-cast p1, Ljava/lang/Float;
-
-    .line 16
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    move-result p1
-
-    invoke-virtual {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/n;->c(F)V
-
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public addAll(Ljava/util/Collection;)Z
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
+.method public final b(Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(",
-            "Ljava/util/Collection<",
-            "+",
-            "Ljava/lang/Float;",
-            ">;)Z"
+            Ljava/io/IOException;
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
+    sget-object v0, Lo5/w;->c:Lo5/w;
 
     .line 2
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/q;->a:Ljava/nio/charset/Charset;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
-    instance-of v0, p1, Lcom/google/crypto/tink/shaded/protobuf/n;
+    move-result-object v1
 
-    if-nez v0, :cond_0
-
-    .line 5
-    invoke-super {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/c;->addAll(Ljava/util/Collection;)Z
-
-    move-result p1
-
-    return p1
-
-    .line 6
-    :cond_0
-    check-cast p1, Lcom/google/crypto/tink/shaded/protobuf/n;
-
-    .line 7
-    iget v0, p1, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_1
-
-    return v1
-
-    :cond_1
-    const v2, 0x7fffffff
-
-    .line 8
-    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    sub-int/2addr v2, v3
-
-    if-lt v2, v0, :cond_3
-
-    add-int/2addr v3, v0
-
-    .line 9
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    array-length v2, v0
-
-    if-le v3, v2, :cond_2
-
-    .line 10
-    invoke-static {v0, v3}, Ljava/util/Arrays;->copyOf([FI)[F
+    invoke-virtual {v0, v1}, Lo5/w;->a(Ljava/lang/Class;)Lcom/google/crypto/tink/shaded/protobuf/d0;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    .line 11
-    :cond_2
-    iget-object v0, p1, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    iget v4, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    iget p1, p1, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    invoke-static {v0, v1, v2, v4, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 12
-    iput v3, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    .line 13
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    const/4 v0, 0x1
-
-    add-int/2addr p1, v0
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    return v0
-
-    .line 14
-    :cond_3
-    new-instance p1, Ljava/lang/OutOfMemoryError;
-
-    invoke-direct {p1}, Ljava/lang/OutOfMemoryError;-><init>()V
-
-    throw p1
-.end method
-
-.method public c(F)V
-    .locals 5
-
-    .line 1
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
-
-    .line 2
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    array-length v2, v1
-
-    if-ne v0, v2, :cond_0
-
-    const/4 v2, 0x3
-
-    const/4 v3, 0x2
-
-    const/4 v4, 0x1
-
-    invoke-static {v0, v2, v3, v4}, Lj3/xq0;->a(IIII)I
-
-    move-result v2
-
-    .line 3
-    new-array v2, v2, [F
-
-    const/4 v3, 0x0
-
     .line 4
-    invoke-static {v1, v3, v2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    iget-object v1, p1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->a:Lo5/e;
+
+    if-eqz v1, :cond_0
+
+    goto :goto_0
 
     .line 5
-    iput-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
+    :cond_0
+    new-instance v1, Lo5/e;
+
+    invoke-direct {v1, p1}, Lo5/e;-><init>(Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;)V
 
     .line 6
-    :cond_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    add-int/lit8 v2, v1, 0x1
-
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    aput p1, v0, v1
+    :goto_0
+    invoke-interface {v0, p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/d0;->j(Ljava/lang/Object;Lo5/g0;)V
 
     return-void
 .end method
 
-.method public final d(I)V
+.method final c()I
     .locals 1
 
-    if-ltz p1, :cond_0
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->memoizedSerializedSize:I
 
-    .line 1
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    if-ge p1, v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
-
-    invoke-virtual {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/n;->e(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    return v0
 .end method
 
-.method public final e(I)Ljava/lang/String;
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
-
-    const-string v0, "Index:"
-
-    const-string v1, ", Size:"
-
-    .line 1
-    invoke-static {v0, p1, v1}, Lqc/a0;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
-    .locals 5
-
-    const/4 v0, 0x1
 
     if-ne p0, p1, :cond_0
 
-    return v0
+    const/4 p1, 0x1
+
+    return p1
 
     .line 1
     :cond_0
-    instance-of v1, p1, Lcom/google/crypto/tink/shaded/protobuf/n;
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/n;->k()Lcom/google/crypto/tink/shaded/protobuf/n;
 
-    if-nez v1, :cond_1
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const/4 p1, 0x0
+
+    return p1
 
     .line 2
-    invoke-super {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/c;->equals(Ljava/lang/Object;)Z
+    :cond_1
+    sget-object v0, Lo5/w;->c:Lo5/w;
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lo5/w;->a(Ljava/lang/Class;)Lcom/google/crypto/tink/shaded/protobuf/d0;
+
+    move-result-object v0
+
+    .line 5
+    check-cast p1, Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/d0;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
     return p1
-
-    .line 3
-    :cond_1
-    check-cast p1, Lcom/google/crypto/tink/shaded/protobuf/n;
-
-    .line 4
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    iget v2, p1, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    const/4 v3, 0x0
-
-    if-eq v1, v2, :cond_2
-
-    return v3
-
-    .line 5
-    :cond_2
-    iget-object p1, p1, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    const/4 v1, 0x0
-
-    .line 6
-    :goto_0
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    if-ge v1, v2, :cond_4
-
-    .line 7
-    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    aget v2, v2, v1
-
-    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    move-result v2
-
-    aget v4, p1, v1
-
-    invoke-static {v4}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    move-result v4
-
-    if-eq v2, v4, :cond_3
-
-    return v3
-
-    :cond_3
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_4
-    return v0
 .end method
 
-.method public get(I)Ljava/lang/Object;
-    .locals 1
+.method final f(I)V
+    .locals 0
 
-    .line 1
-    invoke-virtual {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/n;->d(I)V
-
-    .line 2
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    aget p1, v0, p1
-
-    .line 3
-    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public hashCode()I
-    .locals 3
-
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
-
-    .line 1
-    :goto_0
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    if-ge v1, v2, :cond_0
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 2
-    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    aget v2, v2, v1
-
-    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    move-result v2
-
-    add-int/2addr v0, v2
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    return v0
-.end method
-
-.method public o(I)Lcom/google/crypto/tink/shaded/protobuf/q$c;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    if-lt p1, v0, :cond_0
-
-    .line 2
-    new-instance v0, Lcom/google/crypto/tink/shaded/protobuf/n;
-
-    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    invoke-static {v1, p1}, Ljava/util/Arrays;->copyOf([FI)[F
-
-    move-result-object p1
-
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    invoke-direct {v0, p1, v1}, Lcom/google/crypto/tink/shaded/protobuf/n;-><init>([FI)V
-
-    return-object v0
-
-    .line 3
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
-
-    throw p1
-.end method
-
-.method public remove(I)Ljava/lang/Object;
-    .locals 4
-
-    .line 7
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
-
-    .line 8
-    invoke-virtual {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/n;->d(I)V
-
-    .line 9
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    aget v1, v0, p1
-
-    .line 10
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    add-int/lit8 v3, v2, -0x1
-
-    if-ge p1, v3, :cond_0
-
-    add-int/lit8 v3, p1, 0x1
-
-    sub-int/2addr v2, p1
-
-    add-int/lit8 v2, v2, -0x1
-
-    .line 11
-    invoke-static {v0, v3, v0, p1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 12
-    :cond_0
-    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    add-int/lit8 p1, p1, -0x1
-
-    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    .line 13
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    .line 14
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public remove(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    .line 2
-    :goto_0
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    if-ge v1, v2, :cond_1
-
-    .line 3
-    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    aget v2, v2, v1
-
-    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v2
-
-    invoke-virtual {p1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 4
-    iget-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    add-int/lit8 v0, v1, 0x1
-
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    sub-int/2addr v2, v1
-
-    const/4 v3, 0x1
-
-    sub-int/2addr v2, v3
-
-    invoke-static {p1, v0, p1, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 5
-    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    sub-int/2addr p1, v3
-
-    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    .line 6
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    add-int/2addr p1, v3
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    return v3
-
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    return v0
-.end method
-
-.method public removeRange(II)V
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
-
-    if-lt p2, p1, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
-
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    sub-int/2addr v1, p2
-
-    invoke-static {v0, p2, v0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 3
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    sub-int/2addr p2, p1
-
-    sub-int/2addr v0, p2
-
-    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
-
-    .line 4
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
+    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->memoizedSerializedSize:I
 
     return-void
-
-    .line 5
-    :cond_0
-    new-instance p1, Ljava/lang/IndexOutOfBoundsException;
-
-    const-string p2, "toIndex < fromIndex"
-
-    invoke-direct {p1, p2}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
-.method public set(ILjava/lang/Object;)Ljava/lang/Object;
+.method public final bridge synthetic getDefaultInstanceForType()Lcom/google/crypto/tink/shaded/protobuf/x;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/n;->k()Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getSerializedSize()I
     .locals 2
 
     .line 1
-    check-cast p2, Ljava/lang/Float;
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->memoizedSerializedSize:I
+
+    const/4 v1, -0x1
+
+    if-ne v0, v1, :cond_0
 
     .line 2
-    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
-
-    move-result p2
+    sget-object v0, Lo5/w;->c:Lo5/w;
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    invoke-virtual {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/n;->d(I)V
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lo5/w;->a(Ljava/lang/Class;)Lcom/google/crypto/tink/shaded/protobuf/d0;
+
+    move-result-object v0
 
     .line 5
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->h:[F
+    invoke-interface {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/d0;->g(Ljava/lang/Object;)I
 
-    aget v1, v0, p1
+    move-result v0
+
+    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->memoizedSerializedSize:I
 
     .line 6
-    aput p2, v0, p1
+    :cond_0
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->memoizedSerializedSize:I
 
-    .line 7
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object p1
-
-    return-object p1
+    return v0
 .end method
 
-.method public size()I
+.method public final h()Lcom/google/crypto/tink/shaded/protobuf/n$a;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<MessageType:",
+            "Lcom/google/crypto/tink/shaded/protobuf/n<",
+            "TMessageType;TBuilderType;>;BuilderType:",
+            "Lcom/google/crypto/tink/shaded/protobuf/n$a<",
+            "TMessageType;TBuilderType;>;>()TBuilderType;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->j:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 3
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/n$a;
+
+    return-object v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/a;->memoizedHashCode:I
+
+    if-eqz v0, :cond_0
+
+    return v0
+
+    .line 2
+    :cond_0
+    sget-object v0, Lo5/w;->c:Lo5/w;
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lo5/w;->a(Ljava/lang/Class;)Lcom/google/crypto/tink/shaded/protobuf/d0;
+
+    move-result-object v0
+
+    .line 5
+    invoke-interface {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/d0;->b(Ljava/lang/Object;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/a;->memoizedHashCode:I
+
+    return v0
+.end method
+
+.method public abstract i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
+.end method
+
+.method public final isInitialized()Z
+    .locals 2
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->f:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 3
+    check-cast v0, Ljava/lang/Byte;
+
+    invoke-virtual {v0}, Ljava/lang/Byte;->byteValue()B
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    if-nez v0, :cond_1
+
+    const/4 v1, 0x0
+
+    goto :goto_0
+
+    .line 4
+    :cond_1
+    sget-object v0, Lo5/w;->c:Lo5/w;
+
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lo5/w;->a(Ljava/lang/Class;)Lcom/google/crypto/tink/shaded/protobuf/d0;
+
+    move-result-object v0
+
+    .line 7
+    invoke-interface {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/d0;->f(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    .line 8
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->g:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+
+    .line 9
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
+
+    :goto_0
+    return v1
+.end method
+
+.method public final k()Lcom/google/crypto/tink/shaded/protobuf/n;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TMessageType;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->k:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 3
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/n;
+
+    return-object v0
+.end method
+
+.method public final newBuilderForType()Lcom/google/crypto/tink/shaded/protobuf/x$a;
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n;->i:I
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->j:Lcom/google/crypto/tink/shaded/protobuf/n$f;
 
-    return v0
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 3
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/n$a;
+
+    return-object v0
+.end method
+
+.method public final toBuilder()Lcom/google/crypto/tink/shaded/protobuf/x$a;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->j:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 3
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/n$a;
+
+    .line 4
+    invoke-virtual {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f(Lcom/google/crypto/tink/shaded/protobuf/n;)Lcom/google/crypto/tink/shaded/protobuf/n$a;
+
+    return-object v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/y;->d(Lcom/google/crypto/tink/shaded/protobuf/x;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

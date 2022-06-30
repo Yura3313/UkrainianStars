@@ -46,7 +46,6 @@
 .method public getData()Landroid/content/Intent;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/core/CoreImpl$ActivityResultData;->data:Landroid/content/Intent;
 
     return-object v0
@@ -55,7 +54,6 @@
 .method public getRequestCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/core/CoreImpl$ActivityResultData;->requestCode:I
 
     return v0
@@ -64,7 +62,6 @@
 .method public getResultCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/core/CoreImpl$ActivityResultData;->resultCode:I
 
     return v0

@@ -1,22 +1,83 @@
 .class public final Ld5/b;
 .super Ljava/lang/Object;
-.source "CryptoFormat.java"
-
-
-# static fields
-.field public static final a:[B
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public static final declared-synchronized a(Landroid/content/Context;Ljava/util/Set;)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Ljava/util/Set<",
+            "Ljava/io/File;",
+            ">;)V"
+        }
+    .end annotation
 
-    const/4 v0, 0x0
+    const-class v0, Ld5/b;
 
-    new-array v0, v0, [B
+    monitor-enter v0
 
-    .line 1
-    sput-object v0, Ld5/b;->a:[B
+    :try_start_0
+    invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
+
+    move-result-object p0
+
+    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/io/File;
+
+    invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "addAssetPath"
+
+    const-class v3, Ljava/lang/Integer;
+
+    const-class v4, Ljava/lang/String;
+
+    invoke-static {p0, v2, v3, v4, v1}, La5/g0;->d(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Integer;
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :cond_0
+    monitor-exit v0
 
     return-void
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+
+    goto :goto_2
+
+    :goto_1
+    throw p0
+
+    :goto_2
+    goto :goto_1
 .end method

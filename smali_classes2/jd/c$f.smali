@@ -1,14 +1,11 @@
 .class public final Ljd/c$f;
-.super Lle/j;
-.source "OnboardingInviteFriendsPageFragment.kt"
-
-# interfaces
-.implements Lke/a;
+.super Landroidx/recyclerview/widget/RecyclerView$q;
+.source "EmbeddedIngameChatDialog.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljd/c;-><init>()V
+    value = Ljd/c;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,57 +13,42 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/a<",
-        "Ljava/lang/Boolean;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field public final synthetic g:Ljd/c;
+.field public final synthetic a:Lse/o;
 
 
 # direct methods
-.method public constructor <init>(Ljd/c;)V
+.method public constructor <init>(Lse/o;)V
     .locals 0
 
-    iput-object p1, p0, Ljd/c$f;->g:Ljd/c;
+    iput-object p1, p0, Ljd/c$f;->a:Lse/o;
 
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
-    .locals 2
+.method public final a(Landroidx/recyclerview/widget/RecyclerView;I)V
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Ljd/c$f;->g:Ljd/c;
+    const-string p2, "recyclerView"
 
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->M()Landroid/content/res/Resources;
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object v0
+    iget-object p2, p0, Ljd/c$f;->a:Lse/o;
 
-    const-string v1, "resources"
+    const/4 v0, 0x1
 
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->canScrollVertically(I)Z
 
-    invoke-static {v0}, Lcom/android/billingclient/api/a0;->i(Landroid/content/res/Resources;)Z
+    move-result p1
 
-    move-result v0
+    xor-int/2addr p1, v0
 
-    .line 2
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    iput-boolean p1, p2, Lse/o;->f:Z
 
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

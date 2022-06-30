@@ -27,7 +27,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +35,6 @@
 .method public static synthetic access$000()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/core/LocaleManager;->prefName:Ljava/lang/String;
 
     return-object v0
@@ -45,7 +43,6 @@
 .method public static synthetic access$100()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/core/LocaleManager;->languageCode:Ljava/lang/String;
 
     return-object v0
@@ -279,7 +276,7 @@
     const-string p1, "geoIpCountryCode: "
 
     .line 15
-    invoke-static {p1, p0, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, p0, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object p0
 
@@ -458,7 +455,7 @@
     const-string p1, "-hant"
 
     .line 9
-    invoke-static {p0, p1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -468,7 +465,7 @@
     const-string p1, "-hans"
 
     .line 10
-    invoke-static {p0, p1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -554,7 +551,6 @@
 .method public static getSystemLanguageCode()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/core/LocaleManager;->systemLanguageCode:Ljava/lang/String;
 
     return-object v0
@@ -625,6 +621,7 @@
 
     move-result-object v0
 
+    .line 3
     sget-object v1, Lcom/kakaogame/core/LocaleManager;->systemLanguageCode:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -637,12 +634,12 @@
 
     invoke-static {v1, v0}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
+    .line 4
     invoke-static {}, Lcom/kakaogame/auth/AuthDataManager;->getPlayerId()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4
+    .line 5
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -659,7 +656,7 @@
 
     invoke-static {v1, v2}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
+    .line 6
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -690,14 +687,14 @@
 
     sput-object p1, Lcom/kakaogame/core/LocaleManager;->prefName:Ljava/lang/String;
 
-    .line 6
+    .line 7
     invoke-static {p0, p1, v0}, Lcom/kakaogame/util/PreferenceUtil;->contains(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 7
+    .line 8
     sget-object p1, Lcom/kakaogame/core/LocaleManager;->prefName:Ljava/lang/String;
 
     invoke-static {p0, p1, v0}, Lcom/kakaogame/util/PreferenceUtil;->getString(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -706,12 +703,12 @@
 
     sput-object p1, Lcom/kakaogame/core/LocaleManager;->languageCode:Ljava/lang/String;
 
-    .line 8
+    .line 9
     invoke-static {p0, p1, v0}, Lcom/kakaogame/core/LocaleManager;->changeLocale(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 9
+    .line 10
     :cond_0
     sget-object p1, Lcom/kakaogame/core/LocaleManager;->systemLanguageCode:Ljava/lang/String;
 
@@ -720,11 +717,12 @@
     :goto_0
     const-string p1, "initialize: "
 
-    .line 10
+    .line 11
     invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
+    .line 12
     sget-object v0, Lcom/kakaogame/core/LocaleManager;->languageCode:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -735,7 +733,7 @@
 
     invoke-static {v1, p1}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
+    .line 13
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object p1
@@ -1114,7 +1112,7 @@
 
     .line 14
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1123,7 +1121,7 @@
     const/16 p1, 0xfa1
 
     .line 15
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1191,7 +1189,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     sput-boolean v0, Lcom/kakaogame/core/LocaleManager;->useDefaultCountry:Z
 
     return-void

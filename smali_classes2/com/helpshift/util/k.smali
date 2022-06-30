@@ -1,84 +1,130 @@
 .class public final Lcom/helpshift/util/k;
 .super Ljava/lang/Object;
-.source "HSFormat.java"
-
-
-# static fields
-.field public static final a:Lcom/helpshift/util/o;
-
-.field public static final b:Lcom/helpshift/util/o;
+.source "HSAnimationUtil.java"
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 4
+.method public static a(Landroid/view/View;)V
+    .locals 3
 
     .line 1
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+    invoke-virtual {p0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    int-to-long v1, v1
 
     .line 2
-    new-instance v1, Ljava/text/SimpleDateFormat;
-
-    const-string v2, "yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'"
-
-    invoke-direct {v1, v2, v0}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
-
-    .line 3
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+    invoke-virtual {v0, v1, v2}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
+    new-instance v1, Landroid/view/animation/LinearInterpolator;
+
+    invoke-direct {v1}, Landroid/view/animation/LinearInterpolator;-><init>()V
+
+    .line 3
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/helpshift/util/i;
+
+    invoke-direct {v1, p0}, Lcom/helpshift/util/i;-><init>(Landroid/view/View;)V
+
     .line 4
-    new-instance v1, Ljava/text/SimpleDateFormat;
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
-    invoke-direct {v1, v2, v0}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
-
-    const-string v0, "UTC"
+    move-result-object p0
 
     .line 5
-    invoke-static {v0}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
+    invoke-virtual {p0}, Landroid/view/ViewPropertyAnimator;->start()V
 
-    move-result-object v2
+    return-void
+.end method
 
-    invoke-virtual {v1, v2}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+.method public static b(Landroid/view/View;)V
+    .locals 3
 
-    .line 6
-    new-instance v1, Lcom/helpshift/util/o;
+    .line 1
+    invoke-virtual {p0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
-    .line 7
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+    move-result-object v0
 
-    move-result-object v2
+    const/high16 v1, 0x3f800000    # 1.0f
 
-    const-string v3, "yyyyMMddHHmmssSSS"
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
 
-    invoke-direct {v1, v3, v2}, Lcom/helpshift/util/o;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+    move-result-object v0
 
-    sput-object v1, Lcom/helpshift/util/k;->a:Lcom/helpshift/util/o;
+    const/4 v1, 0x0
 
-    .line 8
-    new-instance v1, Ljava/text/DecimalFormat;
+    int-to-long v1, v1
 
-    new-instance v2, Ljava/text/DecimalFormatSymbols;
+    .line 2
+    invoke-virtual {v0, v1, v2}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
-    sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
+    move-result-object v0
 
-    invoke-direct {v2, v3}, Ljava/text/DecimalFormatSymbols;-><init>(Ljava/util/Locale;)V
+    new-instance v1, Landroid/view/animation/LinearInterpolator;
 
-    const-string v3, "0.000"
+    invoke-direct {v1}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
-    invoke-direct {v1, v3, v2}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;Ljava/text/DecimalFormatSymbols;)V
+    .line 3
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
 
-    .line 9
-    new-instance v1, Lcom/helpshift/util/o;
+    move-result-object v0
 
-    const-string v2, "dd/MM/yyyy HH:mm:ss"
+    new-instance v1, Lcom/helpshift/util/j;
 
-    invoke-direct {v1, v2, v0}, Lcom/helpshift/util/o;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, p0}, Lcom/helpshift/util/j;-><init>(Landroid/view/View;)V
 
-    sput-object v1, Lcom/helpshift/util/k;->b:Lcom/helpshift/util/o;
+    .line 4
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object p0
+
+    .line 5
+    invoke-virtual {p0}, Landroid/view/ViewPropertyAnimator;->start()V
+
+    return-void
+.end method
+
+.method public static c(Landroid/view/View;F)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Landroid/view/ViewPropertyAnimator;->rotation(F)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object p0
+
+    const/16 p1, 0x64
+
+    int-to-long v0, p1
+
+    .line 2
+    invoke-virtual {p0, v0, v1}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object p0
+
+    new-instance p1, Landroid/view/animation/LinearInterpolator;
+
+    invoke-direct {p1}, Landroid/view/animation/LinearInterpolator;-><init>()V
+
+    .line 3
+    invoke-virtual {p0, p1}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
 
     return-void
 .end method

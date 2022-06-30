@@ -1,4 +1,4 @@
-.class public synthetic Landroidx/lifecycle/f$a;
+.class public final synthetic Landroidx/lifecycle/f$a;
 .super Ljava/lang/Object;
 .source "Lifecycle.java"
 

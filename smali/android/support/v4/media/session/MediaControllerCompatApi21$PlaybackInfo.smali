@@ -26,7 +26,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +34,6 @@
 .method public static getAudioAttributes(Ljava/lang/Object;)Landroid/media/AudioAttributes;
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaController$PlaybackInfo;
 
     invoke-virtual {p0}, Landroid/media/session/MediaController$PlaybackInfo;->getAudioAttributes()Landroid/media/AudioAttributes;
@@ -48,7 +46,6 @@
 .method public static getCurrentVolume(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaController$PlaybackInfo;
 
     invoke-virtual {p0}, Landroid/media/session/MediaController$PlaybackInfo;->getCurrentVolume()I
@@ -77,7 +74,6 @@
 .method public static getMaxVolume(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaController$PlaybackInfo;
 
     invoke-virtual {p0}, Landroid/media/session/MediaController$PlaybackInfo;->getMaxVolume()I
@@ -90,7 +86,6 @@
 .method public static getPlaybackType(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaController$PlaybackInfo;
 
     invoke-virtual {p0}, Landroid/media/session/MediaController$PlaybackInfo;->getPlaybackType()I
@@ -103,7 +98,6 @@
 .method public static getVolumeControl(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaController$PlaybackInfo;
 
     invoke-virtual {p0}, Landroid/media/session/MediaController$PlaybackInfo;->getVolumeControl()I

@@ -1,63 +1,75 @@
 .class public final Lv3/b;
-.super Ljava/lang/Object;
-.source "com.android.billingclient:billing@@3.0.3"
+.super Lv3/s4$a;
+.source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
 
 
-# static fields
-.field public static final synthetic a:I
+# instance fields
+.field public final synthetic j:Ljava/lang/String;
+
+.field public final synthetic k:Ljava/lang/String;
+
+.field public final synthetic l:Lcom/google/android/gms/internal/measurement/zzk;
+
+.field public final synthetic m:Lv3/s4;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    const-class v0, Lv3/b;
-
-    .line 1
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lv3/s4;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/measurement/zzk;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    iput-object p1, p0, Lv3/b;->m:Lv3/s4;
+
+    iput-object p2, p0, Lv3/b;->j:Ljava/lang/String;
+
+    iput-object p3, p0, Lv3/b;->k:Ljava/lang/String;
+
+    iput-object p4, p0, Lv3/b;->l:Lcom/google/android/gms/internal/measurement/zzk;
+
+    const/4 p2, 0x1
+
+    .line 2
+    invoke-direct {p0, p1, p2}, Lv3/s4$a;-><init>(Lv3/s4;Z)V
 
     return-void
 .end method
 
-.method public static a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
+
+# virtual methods
+.method public final a()V
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "<T::",
-            "Landroid/os/Parcelable;",
-            ">(",
-            "Landroid/os/Parcel;",
-            "Landroid/os/Parcelable$Creator<",
-            "TT;>;)TT;"
+            Landroid/os/RemoteException;
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
+    iget-object v0, p0, Lv3/b;->m:Lv3/s4;
 
     .line 2
-    :cond_0
-    invoke-interface {p1, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    iget-object v0, v0, Lv3/s4;->f:Lcom/google/android/gms/internal/measurement/zzm;
 
-    move-result-object p0
+    .line 3
+    iget-object v1, p0, Lv3/b;->j:Ljava/lang/String;
 
-    check-cast p0, Landroid/os/Parcelable;
+    iget-object v2, p0, Lv3/b;->k:Ljava/lang/String;
 
-    return-object p0
+    iget-object v3, p0, Lv3/b;->l:Lcom/google/android/gms/internal/measurement/zzk;
+
+    invoke-interface {v0, v1, v2, v3}, Lcom/google/android/gms/internal/measurement/zzm;->getConditionalUserProperties(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/measurement/zzn;)V
+
+    return-void
+.end method
+
+.method public final b()V
+    .locals 2
+
+    iget-object v0, p0, Lv3/b;->l:Lcom/google/android/gms/internal/measurement/zzk;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/measurement/zzk;->zza(Landroid/os/Bundle;)V
+
+    return-void
 .end method

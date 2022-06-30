@@ -27,14 +27,13 @@
 
 
 # instance fields
-.field public final g:Lx0/b;
+.field public final f:Lx0/b;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/versionedparcelable/ParcelImpl$a;
 
     invoke-direct {v0}, Landroidx/versionedparcelable/ParcelImpl$a;-><init>()V
@@ -59,14 +58,14 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/versionedparcelable/ParcelImpl;->g:Lx0/b;
+    iput-object p1, p0, Landroidx/versionedparcelable/ParcelImpl;->f:Lx0/b;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -74,7 +73,7 @@
     return v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1
@@ -83,9 +82,9 @@
     invoke-direct {p2, p1}, Lx0/a;-><init>(Landroid/os/Parcel;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/versionedparcelable/ParcelImpl;->g:Lx0/b;
+    iget-object p1, p0, Landroidx/versionedparcelable/ParcelImpl;->f:Lx0/b;
 
-    invoke-virtual {p2, p1}, Landroidx/versionedparcelable/VersionedParcel;->w(Lx0/b;)V
+    invoke-virtual {p2, p1}, Landroidx/versionedparcelable/VersionedParcel;->y(Lx0/b;)V
 
     return-void
 .end method

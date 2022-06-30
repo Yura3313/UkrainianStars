@@ -255,7 +255,7 @@
     return-object p1
 .end method
 
-.method public synthetic process(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryTransaction;
+.method public final synthetic process(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryTransaction;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/b;->b(Lio/sentry/EventProcessor;Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryTransaction;

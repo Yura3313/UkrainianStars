@@ -1,183 +1,89 @@
-.class public abstract Lv8/a;
+.class public final Lv8/a;
 .super Ljava/lang/Object;
-.source "ConversationDBLoader.java"
+.source "ConversationInboxRecord.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lv8/a$a;
+    }
+.end annotation
 
 
 # instance fields
-.field public a:Ld8/a;
+.field public final a:J
 
-.field public b:Z
+.field public final b:Ljava/lang/String;
+
+.field public final c:Ljava/lang/String;
+
+.field public final d:Ljava/lang/String;
+
+.field public final e:J
+
+.field public final f:Lu8/a;
+
+.field public final g:I
+
+.field public final h:Ljava/lang/String;
+
+.field public final i:Ljava/lang/String;
+
+.field public final j:Z
+
+.field public final k:Ljava/lang/String;
+
+.field public final l:Ljava/lang/Boolean;
+
+.field public final m:Ljava/lang/Long;
 
 
 # direct methods
-.method public constructor <init>(Ld8/a;)V
-    .locals 1
+.method public constructor <init>(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;JLu8/a;ILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Long;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x1
-
     .line 2
-    iput-boolean v0, p0, Lv8/a;->b:Z
+    iput-wide p1, p0, Lv8/a;->a:J
 
     .line 3
-    iput-object p1, p0, Lv8/a;->a:Ld8/a;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;J)Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "J)",
-            "Ljava/util/List<",
-            "Lp8/d;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public b(Ljava/lang/String;JLjava/util/List;)Ljava/util/List;
-    .locals 6
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "J",
-            "Ljava/util/List<",
-            "Ln8/w;",
-            ">;)",
-            "Ljava/util/List<",
-            "Ln8/w;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p4}, Lk2/h;->a(Ljava/util/List;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    const-wide/16 v0, 0x1
-
-    cmp-long v2, p2, v0
-
-    if-gez v2, :cond_0
-
-    goto :goto_2
-
-    .line 2
-    :cond_0
-    invoke-static {p4}, Ll8/c;->h(Ljava/util/List;)V
-
-    .line 3
-    invoke-static {p1}, Lp5/c0;->h(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    goto :goto_1
+    iput-object p3, p0, Lv8/a;->b:Ljava/lang/String;
 
     .line 4
-    :cond_1
-    invoke-static {p1}, Lh8/b;->b(Ljava/lang/String;)J
-
-    move-result-wide v0
+    iput-object p4, p0, Lv8/a;->c:Ljava/lang/String;
 
     .line 5
-    new-instance p1, Ljava/util/ArrayList;
-
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+    iput-object p5, p0, Lv8/a;->d:Ljava/lang/String;
 
     .line 6
-    invoke-interface {p4}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object p4
-
-    :goto_0
-    invoke-interface {p4}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    invoke-interface {p4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ln8/w;
+    iput-wide p6, p0, Lv8/a;->e:J
 
     .line 7
-    iget-wide v3, v2, Ln8/w;->x:J
-
-    cmp-long v5, v0, v3
-
-    if-lez v5, :cond_2
+    iput-object p8, p0, Lv8/a;->f:Lu8/a;
 
     .line 8
-    invoke-virtual {p1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
+    iput p9, p0, Lv8/a;->g:I
 
     .line 9
-    :cond_2
-    invoke-static {p1}, Lk2/h;->a(Ljava/util/List;)Z
-
-    move-result p4
-
-    if-eqz p4, :cond_3
+    iput-object p10, p0, Lv8/a;->h:Ljava/lang/String;
 
     .line 10
-    new-instance p1, Ljava/util/ArrayList;
-
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    return-object p1
-
-    :cond_3
-    move-object p4, p1
+    iput-object p11, p0, Lv8/a;->i:Ljava/lang/String;
 
     .line 11
-    :goto_1
-    invoke-interface {p4}, Ljava/util/List;->size()I
-
-    move-result p1
-
-    const/4 v0, 0x0
-
-    int-to-long v1, p1
-
-    sub-long/2addr v1, p2
-
-    long-to-int p2, v1
+    iput-boolean p12, p0, Lv8/a;->j:Z
 
     .line 12
-    invoke-static {v0, p2}, Ljava/lang/Math;->max(II)I
-
-    move-result p2
+    iput-object p13, p0, Lv8/a;->k:Ljava/lang/String;
 
     .line 13
-    invoke-interface {p4, p2, p1}, Ljava/util/List;->subList(II)Ljava/util/List;
-
-    move-result-object p1
-
-    return-object p1
+    iput-object p14, p0, Lv8/a;->l:Ljava/lang/Boolean;
 
     .line 14
-    :cond_4
-    :goto_2
-    new-instance p1, Ljava/util/ArrayList;
+    iput-object p15, p0, Lv8/a;->m:Ljava/lang/Long;
 
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    return-object p1
+    return-void
 .end method

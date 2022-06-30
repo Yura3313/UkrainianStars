@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/b;
+.class public final Lcom/supercell/titan/b;
 .super Landroid/os/AsyncTask;
 .source "TimeAlarm.java"
 
@@ -53,7 +53,7 @@
 
 
 # virtual methods
-.method public doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+.method public final doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
     .line 1

@@ -36,7 +36,7 @@
 
     const/4 v1, 0x1
 
-    invoke-direct {p0, v0, v1, v0}, Lcom/kakao/sdk/common/util/AESCipher;-><init>(Lcom/kakao/sdk/common/model/ContextInfo;ILle/g;)V
+    invoke-direct {p0, v0, v1, v0}, Lcom/kakao/sdk/common/util/AESCipher;-><init>(Lcom/kakao/sdk/common/model/ContextInfo;ILse/e;)V
 
     return-void
 .end method
@@ -44,7 +44,9 @@
 .method public constructor <init>(Lcom/kakao/sdk/common/model/ContextInfo;)V
     .locals 9
 
-    if-eqz p1, :cond_0
+    const-string v0, "contextInfo"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -83,7 +85,7 @@
     iput v4, p0, Lcom/kakao/sdk/common/util/AESCipher;->KEY_LENGTH:I
 
     .line 7
-    sget-object v5, Lre/a;->a:Ljava/nio/charset/Charset;
+    sget-object v5, Lye/a;->a:Ljava/nio/charset/Charset;
 
     iput-object v5, p0, Lcom/kakao/sdk/common/util/AESCipher;->CHAR_SET:Ljava/nio/charset/Charset;
 
@@ -130,7 +132,7 @@
 
     const-string v6, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
 
-    invoke-static {v5, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5}, Ljava/lang/String;->toCharArray()[C
 
@@ -138,7 +140,7 @@
 
     const-string v6, "(this as java.lang.String).toCharArray()"
 
-    invoke-static {v5, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 13
     invoke-interface {p1}, Lcom/kakao/sdk/common/model/ContextInfo;->getSalt()[B
@@ -160,9 +162,9 @@
 
     const-string v4, "tmp"
 
-    invoke-static {p1, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-interface {p1}, Ljavax/crypto/SecretKey;->getEncoded()[B
+    invoke-interface {p1}, Ljava/security/Key;->getEncoded()[B
 
     move-result-object v4
 
@@ -175,7 +177,7 @@
 
     const-string v4, "Cipher.getInstance(cipherAlgorithm)"
 
-    invoke-static {v2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object v2, p0, Lcom/kakao/sdk/common/util/AESCipher;->encryptor:Ljavax/crypto/Cipher;
 
@@ -184,7 +186,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object v1, p0, Lcom/kakao/sdk/common/util/AESCipher;->decryptor:Ljavax/crypto/Cipher;
 
@@ -205,11 +207,11 @@
     :catch_0
     new-instance v0, Ljavax/crypto/spec/SecretKeySpec;
 
-    invoke-interface {p1}, Ljavax/crypto/SecretKey;->getEncoded()[B
+    invoke-interface {p1}, Ljava/security/Key;->getEncoded()[B
 
     move-result-object v1
 
-    invoke-interface {p1}, Ljavax/crypto/SecretKey;->getEncoded()[B
+    invoke-interface {p1}, Ljava/security/Key;->getEncoded()[B
 
     move-result-object p1
 
@@ -242,16 +244,6 @@
     :goto_0
     return-void
 
-    :cond_0
-    const-string p1, "contextInfo"
-
-    .line 24
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-
     nop
 
     :array_0
@@ -275,14 +267,14 @@
     .end array-data
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/common/model/ContextInfo;ILle/g;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/common/model/ContextInfo;ILse/e;)V
     .locals 0
 
     and-int/lit8 p2, p2, 0x1
 
     if-eqz p2, :cond_0
 
-    .line 25
+    .line 24
     sget-object p1, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p1}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -300,18 +292,17 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p1, v0}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object p1
 
     const-string v0, "Base64.decode(source, Base64.DEFAULT)"
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/String;
 
-    sget-object v1, Lre/a;->a:Ljava/nio/charset/Charset;
+    sget-object v1, Lye/a;->a:Ljava/nio/charset/Charset;
 
     invoke-direct {v0, p1, v1}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
@@ -355,14 +346,14 @@
 
     move-result-object p2
 
-    invoke-static {p2, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-virtual {p1}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object p1
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     array-length v0, p1
@@ -422,9 +413,10 @@
 .method public decrypt(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string v0, "encrypted"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     iget-object v0, p0, Lcom/kakao/sdk/common/util/AESCipher;->decryptor:Ljavax/crypto/Cipher;
 
     const/4 v1, 0x2
@@ -439,7 +431,7 @@
 
     const-string v0, "decryptor.doFinal(Base64\u2026crypted, Base64.NO_WRAP))"
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/kakao/sdk/common/util/AESCipher;->CHAR_SET:Ljava/nio/charset/Charset;
 
@@ -448,24 +440,15 @@
     invoke-direct {v1, p1, v0}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
     return-object v1
-
-    :cond_0
-    const-string p1, "encrypted"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public encrypt(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string v0, "value"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     iget-object v0, p0, Lcom/kakao/sdk/common/util/AESCipher;->encryptor:Ljavax/crypto/Cipher;
 
     iget-object v1, p0, Lcom/kakao/sdk/common/util/AESCipher;->CHAR_SET:Ljava/nio/charset/Charset;
@@ -476,7 +459,7 @@
 
     const-string v1, "(this as java.lang.String).getBytes(charset)"
 
-    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, p1}, Ljavax/crypto/Cipher;->doFinal([B)[B
 
@@ -490,17 +473,7 @@
 
     const-string v0, "Base64.encodeToString(en\u2026AR_SET)), Base64.NO_WRAP)"
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
-
-    :cond_0
-    const-string p1, "value"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

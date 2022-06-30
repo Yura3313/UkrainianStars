@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/tabs/TabLayout$a;
+.class public final Lcom/google/android/material/tabs/TabLayout$a;
 .super Ljava/lang/Object;
 .source "TabLayout.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/tabs/TabLayout;->f()V
+    value = Lcom/google/android/material/tabs/TabLayout;->g()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/tabs/TabLayout;
+.field public final synthetic f:Lcom/google/android/material/tabs/TabLayout;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/tabs/TabLayout;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$a;->g:Lcom/google/android/material/tabs/TabLayout;
+    iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$a;->f:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +34,10 @@
 
 
 # virtual methods
-.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$a;->g:Lcom/google/android/material/tabs/TabLayout;
+    iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$a;->f:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -53,7 +51,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, p1, v1}, Landroid/widget/HorizontalScrollView;->scrollTo(II)V
+    invoke-virtual {v0, p1, v1}, Landroid/view/View;->scrollTo(II)V
 
     return-void
 .end method

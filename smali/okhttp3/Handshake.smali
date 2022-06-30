@@ -276,7 +276,6 @@
 .method public cipherSuite()Lokhttp3/CipherSuite;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Handshake;->cipherSuite:Lokhttp3/CipherSuite;
 
     return-object v0
@@ -307,7 +306,7 @@
 
     iget-object v2, p1, Lokhttp3/Handshake;->tlsVersion:Lokhttp3/TlsVersion;
 
-    invoke-virtual {v0, v2}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -358,7 +357,7 @@
     .line 1
     iget-object v0, p0, Lokhttp3/Handshake;->tlsVersion:Lokhttp3/TlsVersion;
 
-    invoke-virtual {v0}, Ljava/lang/Enum;->hashCode()I
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
 
@@ -411,7 +410,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Handshake;->localCertificates:Ljava/util/List;
 
     return-object v0
@@ -466,7 +464,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Handshake;->peerCertificates:Ljava/util/List;
 
     return-object v0
@@ -513,7 +510,6 @@
 .method public tlsVersion()Lokhttp3/TlsVersion;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Handshake;->tlsVersion:Lokhttp3/TlsVersion;
 
     return-object v0

@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final synthetic g:Lio/sentry/cache/a;
+.field public static final synthetic f:Lio/sentry/cache/a;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lio/sentry/cache/a;-><init>()V
 
-    sput-object v0, Lio/sentry/cache/a;->g:Lio/sentry/cache/a;
+    sput-object v0, Lio/sentry/cache/a;->f:Lio/sentry/cache/a;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     check-cast p2, Ljava/io/File;
 
-    invoke-static {p1, p2}, Lio/sentry/cache/CacheStrategy;->a(Ljava/io/File;Ljava/io/File;)I
+    invoke-static {p1, p2}, Lio/sentry/cache/CacheStrategy;->b(Ljava/io/File;Ljava/io/File;)I
 
     move-result p1
 

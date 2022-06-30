@@ -159,7 +159,7 @@
 
     invoke-direct {v1, v0}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
-    invoke-virtual {p0, v1}, Ljava/lang/Exception;->printStackTrace(Ljava/io/PrintWriter;)V
+    invoke-virtual {p0, v1}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
 
     .line 3
     invoke-virtual {v0}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
@@ -246,7 +246,6 @@
 .method public getHttpResponseCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/linecorp/linesdk/LineApiError;->httpResponseCode:I
 
     return v0
@@ -255,7 +254,6 @@
 .method public getMessage()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineApiError;->message:Ljava/lang/String;
 
     return-object v0

@@ -3,265 +3,398 @@
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
 
-# direct methods
-.method public static a([Ljava/lang/Object;Ljava/lang/Object;)Z
-    .locals 4
-    .param p0    # [Ljava/lang/Object;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/Object;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
+# static fields
+.field public static final b:Ljava/lang/Object;
+
+.field public static volatile c:Lk2/a;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
+
+
+# instance fields
+.field public a:Ljava/util/concurrent/ConcurrentHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">([TT;TT;)Z"
+            "Ljava/util/concurrent/ConcurrentHashMap<",
+            "Landroid/content/ServiceConnection;",
+            "Landroid/content/ServiceConnection;",
+            ">;"
         }
     .end annotation
+.end field
 
-    .line 1
-    array-length v0, p0
 
-    const/4 v1, 0x0
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
 
-    const/4 v2, 0x0
+    new-instance v0, Ljava/lang/Object;
 
-    :goto_0
-    if-ge v2, v0, :cond_1
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    aget-object v3, p0, v2
+    sput-object v0, Lk2/a;->b:Ljava/lang/Object;
 
-    invoke-static {v3, p1}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    goto :goto_1
-
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v2, -0x1
-
-    :goto_1
-    if-ltz v2, :cond_2
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_2
-    return v1
+    return-void
 .end method
 
-.method public static varargs b([Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 8
-    .param p0    # [Ljava/lang/Object;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .param p1    # [Ljava/lang/Object;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .annotation build Landroidx/annotation/RecentlyNullable;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">([TT;[TT;)[TT;"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    if-nez p0, :cond_0
-
-    return-object v0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    :cond_0
-    array-length v1, p1
-
-    if-nez v1, :cond_1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    array-length p1, p0
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
-    invoke-static {p0, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    move-result-object p0
+    iput-object v0, p0, Lk2/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
-    return-object p0
+    return-void
+.end method
+
+.method public static b()Lk2/a;
+    .locals 2
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
+
+    .line 1
+    sget-object v0, Lk2/a;->c:Lk2/a;
+
+    if-nez v0, :cond_1
+
+    .line 2
+    sget-object v0, Lk2/a;->b:Ljava/lang/Object;
+
+    monitor-enter v0
 
     .line 3
-    :cond_1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_start_0
+    sget-object v1, Lk2/a;->c:Lk2/a;
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
-
-    move-result-object v1
-
-    array-length v2, p0
-
-    invoke-static {v1, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, [Ljava/lang/Object;
+    if-nez v1, :cond_0
 
     .line 4
-    array-length v2, p1
+    new-instance v1, Lk2/a;
 
-    const/4 v3, 0x0
+    invoke-direct {v1}, Lk2/a;-><init>()V
 
-    const/4 v4, 0x1
-
-    if-ne v2, v4, :cond_3
+    sput-object v1, Lk2/a;->c:Lk2/a;
 
     .line 5
-    array-length v2, p0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    :goto_0
-    if-ge v4, v2, :cond_6
-
-    aget-object v6, p0, v4
-
-    .line 6
-    aget-object v7, p1, v3
-
-    invoke-static {v7, v6}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-nez v7, :cond_2
-
-    add-int/lit8 v7, v5, 0x1
-
-    .line 7
-    aput-object v6, v1, v5
-
-    move v5, v7
-
-    :cond_2
-    add-int/lit8 v4, v4, 0x1
+    :cond_0
+    monitor-exit v0
 
     goto :goto_0
 
-    .line 8
-    :cond_3
-    array-length v2, p0
+    :catchall_0
+    move-exception v1
 
-    const/4 v4, 0x0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    :goto_1
-    if-ge v3, v2, :cond_5
+    throw v1
 
-    aget-object v5, p0, v3
+    .line 6
+    :cond_1
+    :goto_0
+    sget-object v0, Lk2/a;->c:Lk2/a;
 
-    .line 9
-    invoke-static {p1, v5}, Lk2/a;->a([Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-nez v6, :cond_4
-
-    add-int/lit8 v6, v4, 0x1
-
-    .line 10
-    aput-object v5, v1, v4
-
-    move v4, v6
-
-    :cond_4
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    :cond_5
-    move v5, v4
-
-    :cond_6
-    if-nez v1, :cond_7
+    invoke-static {v0}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object v0
-
-    .line 11
-    :cond_7
-    array-length p0, v1
-
-    if-eq v5, p0, :cond_8
-
-    .line 12
-    invoke-static {v1, v5}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
-
-    move-result-object v1
-
-    :cond_8
-    return-object v1
 .end method
 
-.method public static c(Ljava/lang/StringBuilder;[Ljava/lang/Object;)V
-    .locals 3
-    .param p0    # Ljava/lang/StringBuilder;
+
+# virtual methods
+.method public final a(Landroid/content/Context;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
+    .locals 7
+    .param p1    # Landroid/content/Context;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
-    .param p1    # [Ljava/lang/Object;
+    .param p2    # Landroid/content/Intent;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/Signature;
+    .param p3    # Landroid/content/ServiceConnection;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v3
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v4, p2
+
+    move-object v5, p3
+
+    move v6, p4
+
+    invoke-virtual/range {v1 .. v6}, Lk2/a;->d(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final c(Landroid/content/Context;Landroid/content/ServiceConnection;)V
+    .locals 1
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/content/ServiceConnection;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation build Landroid/annotation/SuppressLint;
         value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/StringBuilder;",
-            "[TT;)V"
+            "UntrackedBindService"
         }
     .end annotation
 
     .line 1
-    array-length v0, p1
+    instance-of v0, p2, Ld2/i0;
+
+    xor-int/lit8 v0, v0, 0x1
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lk2/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v0, p2}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    :try_start_0
+    iget-object v0, p0, Lk2/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v0, p2}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/ServiceConnection;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 4
+    :try_start_1
+    invoke-virtual {p1, v0}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
+    :try_end_1
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/util/NoSuchElementException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 5
+    :catch_0
+    iget-object p1, p0, Lk2/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {p1, p2}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 6
+    iget-object v0, p0, Lk2/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v0, p2}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 7
+    throw p1
+
+    .line 8
+    :cond_0
+    :try_start_2
+    invoke-virtual {p1, p2}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
+    :try_end_2
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Ljava/util/NoSuchElementException; {:try_start_2 .. :try_end_2} :catch_1
+
+    :catch_1
+    return-void
+.end method
+
+.method public final d(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
+    .locals 4
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroid/content/Intent;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .param p4    # Landroid/content/ServiceConnection;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-virtual {p3}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
+
+    move-result-object v0
 
     const/4 v1, 0x0
 
-    :goto_0
-    if-ge v1, v0, :cond_1
+    const/4 v2, 0x1
 
-    if-eqz v1, :cond_0
-
-    const-string v2, ","
-
-    .line 2
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 3
-    :cond_0
-    aget-object v2, p1, v1
-
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    add-int/lit8 v1, v1, 0x1
+    if-nez v0, :cond_0
 
     goto :goto_0
 
+    .line 2
+    :cond_0
+    invoke-virtual {v0}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v3, "com.google.android.gms"
+
+    .line 3
+    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 4
+    :try_start_0
+    invoke-static {p1}, Ln2/c;->a(Landroid/content/Context;)Ln2/b;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v0, v1}, Ln2/b;->a(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+
+    move-result-object v0
+
+    .line 5
+    iget v0, v0, Landroid/content/pm/ApplicationInfo;->flags:I
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/high16 v3, 0x200000
+
+    and-int/2addr v0, v3
+
+    if-eqz v0, :cond_1
+
+    const/4 v0, 0x1
+
+    goto :goto_1
+
+    :catch_0
     :cond_1
-    return-void
+    :goto_0
+    const/4 v0, 0x0
+
+    :goto_1
+    if-eqz v0, :cond_2
+
+    goto :goto_3
+
+    .line 6
+    :cond_2
+    instance-of v0, p4, Ld2/i0;
+
+    xor-int/2addr v0, v2
+
+    if-eqz v0, :cond_4
+
+    .line 7
+    iget-object v0, p0, Lk2/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 8
+    invoke-virtual {v0, p4, p4}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/ServiceConnection;
+
+    if-eqz v0, :cond_3
+
+    if-eq p4, v0, :cond_3
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    aput-object p4, v0, v1
+
+    aput-object p2, v0, v2
+
+    const/4 p2, 0x2
+
+    .line 9
+    invoke-virtual {p3}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v1
+
+    aput-object v1, v0, p2
+
+    const-string p2, "Duplicate binding with the same ServiceConnection: %s, %s, %s."
+
+    .line 10
+    invoke-static {p2, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 11
+    :cond_3
+    :try_start_1
+    invoke-virtual {p1, p3, p4, p5}, Landroid/content/Context;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
+
+    move-result p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    if-nez p1, :cond_5
+
+    .line 12
+    iget-object p2, p0, Lk2/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {p2, p4, p4}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception p1
+
+    .line 13
+    iget-object p2, p0, Lk2/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {p2, p4, p4}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 14
+    throw p1
+
+    .line 15
+    :cond_4
+    invoke-virtual {p1, p3, p4, p5}, Landroid/content/Context;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
+
+    move-result p1
+
+    :cond_5
+    :goto_2
+    move v1, p1
+
+    :goto_3
+    return v1
 .end method

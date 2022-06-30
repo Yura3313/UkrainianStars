@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/appcompat/app/AppCompatActivity;-><init>()V
 
     return-void
@@ -30,7 +29,6 @@
 .method public static final synthetic access$getFullUri$p(Lcom/kakao/sdk/auth/CustomTabLauncherActivity;)Landroid/net/Uri;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;->fullUri:Landroid/net/Uri;
 
     if-eqz p0, :cond_0
@@ -40,7 +38,7 @@
     :cond_0
     const-string p0, "fullUri"
 
-    invoke-static {p0}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {p0}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -50,7 +48,6 @@
 .method public static final synthetic access$getResultReceiver$p(Lcom/kakao/sdk/auth/CustomTabLauncherActivity;)Landroid/os/ResultReceiver;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;->resultReceiver:Landroid/os/ResultReceiver;
 
     if-eqz p0, :cond_0
@@ -60,7 +57,7 @@
     :cond_0
     const-string p0, "resultReceiver"
 
-    invoke-static {p0}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {p0}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -70,7 +67,6 @@
 .method public static final synthetic access$sendError(Lcom/kakao/sdk/auth/CustomTabLauncherActivity;Lcom/kakao/sdk/common/model/KakaoSdkError;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;->sendError(Lcom/kakao/sdk/common/model/KakaoSdkError;)V
 
     return-void
@@ -79,7 +75,6 @@
 .method public static final synthetic access$setFullUri$p(Lcom/kakao/sdk/auth/CustomTabLauncherActivity;Landroid/net/Uri;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;->fullUri:Landroid/net/Uri;
 
     return-void
@@ -88,7 +83,6 @@
 .method public static final synthetic access$setResultReceiver$p(Lcom/kakao/sdk/auth/CustomTabLauncherActivity;Landroid/os/ResultReceiver;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;->resultReceiver:Landroid/os/ResultReceiver;
 
     return-void
@@ -176,7 +170,7 @@
     :cond_0
     const-string p1, "resultReceiver"
 
-    invoke-static {p1}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {p1}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -219,7 +213,7 @@
     :cond_0
     const-string p1, "resultReceiver"
 
-    invoke-static {p1}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {p1}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -295,9 +289,9 @@
 .method public loadData(Landroid/content/Intent;)V
     .locals 4
 
-    const/4 v0, 0x0
+    const-string v0, "intent"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     :try_start_0
@@ -307,32 +301,32 @@
 
     if-eqz p1, :cond_2
 
-    const-string v1, "key.bundle"
+    const-string v0, "key.bundle"
 
     .line 2
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object p1
 
     if-eqz p1, :cond_2
 
-    const-string v1, "key.result.receiver"
+    const-string v0, "key.result.receiver"
 
     .line 3
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
-    check-cast v1, Landroid/os/ResultReceiver;
+    check-cast v0, Landroid/os/ResultReceiver;
 
-    iput-object v1, p0, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;->resultReceiver:Landroid/os/ResultReceiver;
+    iput-object v0, p0, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;->resultReceiver:Landroid/os/ResultReceiver;
 
-    const-string v1, "key.full_authorize_uri"
+    const-string v0, "key.full_authorize_uri"
 
     .line 4
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
 
@@ -347,9 +341,9 @@
     :cond_0
     new-instance p1, Lkotlin/TypeCastException;
 
-    const-string v1, "null cannot be cast to non-null type android.net.Uri"
+    const-string v0, "null cannot be cast to non-null type android.net.Uri"
 
-    invoke-direct {p1, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
@@ -357,9 +351,9 @@
     :cond_1
     new-instance p1, Lkotlin/TypeCastException;
 
-    const-string v1, "null cannot be cast to non-null type android.os.ResultReceiver"
+    const-string v0, "null cannot be cast to non-null type android.os.ResultReceiver"
 
-    invoke-direct {p1, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
@@ -370,13 +364,13 @@
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
-    move-result-object v1
+    move-result-object v0
 
-    new-instance v2, Lcom/kakao/sdk/auth/CustomTabLauncherActivity$loadData$2;
+    new-instance v1, Lcom/kakao/sdk/auth/CustomTabLauncherActivity$loadData$2;
 
-    invoke-direct {v2, p0}, Lcom/kakao/sdk/auth/CustomTabLauncherActivity$loadData$2;-><init>(Lcom/kakao/sdk/auth/CustomTabLauncherActivity;)V
+    invoke-direct {v1, p0}, Lcom/kakao/sdk/auth/CustomTabLauncherActivity$loadData$2;-><init>(Lcom/kakao/sdk/auth/CustomTabLauncherActivity;)V
 
-    invoke-direct {p1, v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
+    invoke-direct {p1, v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
     iput-object p1, p0, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;->internalHandler:Landroid/os/Handler;
     :try_end_0
@@ -388,33 +382,27 @@
     move-exception p1
 
     .line 7
-    sget-object v1, Lcom/kakao/sdk/common/util/SdkLog;->Companion:Lcom/kakao/sdk/common/util/SdkLog$Companion;
+    sget-object v0, Lcom/kakao/sdk/common/util/SdkLog;->Companion:Lcom/kakao/sdk/common/util/SdkLog$Companion;
 
-    invoke-virtual {v1, p1}, Lcom/kakao/sdk/common/util/SdkLog$Companion;->e(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Lcom/kakao/sdk/common/util/SdkLog$Companion;->e(Ljava/lang/Object;)V
 
     .line 8
-    new-instance v1, Lcom/kakao/sdk/common/model/ClientError;
+    new-instance v0, Lcom/kakao/sdk/common/model/ClientError;
 
-    sget-object v2, Lcom/kakao/sdk/common/model/ClientErrorCause;->Unknown:Lcom/kakao/sdk/common/model/ClientErrorCause;
+    sget-object v1, Lcom/kakao/sdk/common/model/ClientErrorCause;->Unknown:Lcom/kakao/sdk/common/model/ClientErrorCause;
 
-    const/4 v3, 0x2
+    const/4 v2, 0x2
 
-    invoke-direct {v1, v2, v0, v3, v0}, Lcom/kakao/sdk/common/model/ClientError;-><init>(Lcom/kakao/sdk/common/model/ClientErrorCause;Ljava/lang/String;ILle/g;)V
+    const/4 v3, 0x0
 
-    invoke-virtual {v1, p1}, Ljava/lang/RuntimeException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-direct {v0, v1, v3, v2, v3}, Lcom/kakao/sdk/common/model/ClientError;-><init>(Lcom/kakao/sdk/common/model/ClientErrorCause;Ljava/lang/String;ILse/e;)V
 
-    invoke-direct {p0, v1}, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;->sendError(Lcom/kakao/sdk/common/model/KakaoSdkError;)V
+    invoke-virtual {v0, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+
+    invoke-direct {p0, v0}, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;->sendError(Lcom/kakao/sdk/common/model/KakaoSdkError;)V
 
     :goto_1
     return-void
-
-    :cond_3
-    const-string p1, "intent"
-
-    .line 9
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
@@ -430,7 +418,7 @@
 
     const-string v0, "intent"
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0, p1}, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;->loadData(Landroid/content/Intent;)V
 
@@ -448,7 +436,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->unbindService(Landroid/content/ServiceConnection;)V
+    invoke-virtual {p0, v0}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
     :cond_0
     return-void
@@ -494,7 +482,7 @@
     :goto_0
     sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {v0, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -560,7 +548,7 @@
     :cond_0
     const-string v0, "fullUri"
 
-    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {v0}, Lt3/e;->g(Ljava/lang/String;)V
 
     throw v1
 
@@ -605,7 +593,7 @@
     :cond_3
     sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    invoke-static {v1, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 

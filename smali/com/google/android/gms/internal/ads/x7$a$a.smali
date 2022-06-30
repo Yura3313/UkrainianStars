@@ -27,25 +27,11 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
-    invoke-static {}, Lcom/google/android/gms/internal/ads/x7$a;->C()Lcom/google/android/gms/internal/ads/x7$a;
+    invoke-static {}, Lcom/google/android/gms/internal/ads/x7$a;->A()Lcom/google/android/gms/internal/ads/x7$a;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/v5$b;-><init>(Lcom/google/android/gms/internal/ads/v5;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/w8;)V
-    .locals 0
-
-    .line 2
-    invoke-static {}, Lcom/google/android/gms/internal/ads/x7$a;->C()Lcom/google/android/gms/internal/ads/x7$a;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/ads/v5$b;-><init>(Lcom/google/android/gms/internal/ads/v5;)V
 
     return-void
 .end method
@@ -56,7 +42,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     if-eqz v0, :cond_0
 
@@ -66,15 +52,15 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-boolean v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->g:Lcom/google/android/gms/internal/ads/v5;
 
     check-cast v0, Lcom/google/android/gms/internal/ads/x7$a;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/v5$b;->j()Lj3/dt0;
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/v5$b;->i()Lk3/ws0;
 
     move-result-object p1
 
@@ -82,16 +68,16 @@
 
     check-cast p1, Lcom/google/android/gms/internal/ads/x7$c;
 
-    invoke-static {v0, p1}, Lcom/google/android/gms/internal/ads/x7$a;->z(Lcom/google/android/gms/internal/ads/x7$a;Lcom/google/android/gms/internal/ads/x7$c;)V
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/ads/x7$a;->x(Lcom/google/android/gms/internal/ads/x7$a;Lcom/google/android/gms/internal/ads/x7$c;)V
 
     return-object p0
 .end method
 
-.method public final p(I)Lcom/google/android/gms/internal/ads/x7$a$a;
+.method public final p()Lcom/google/android/gms/internal/ads/x7$a$a;
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     if-eqz v0, :cond_0
 
@@ -101,15 +87,15 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-boolean v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/v5$b;->g:Lcom/google/android/gms/internal/ads/v5;
 
     check-cast v0, Lcom/google/android/gms/internal/ads/x7$a;
 
-    invoke-static {v0, p1}, Lcom/google/android/gms/internal/ads/x7$a;->y(Lcom/google/android/gms/internal/ads/x7$a;I)V
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/x7$a;->w(Lcom/google/android/gms/internal/ads/x7$a;)V
 
     return-object p0
 .end method

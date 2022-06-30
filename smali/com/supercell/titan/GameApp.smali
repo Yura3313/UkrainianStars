@@ -9,27 +9,27 @@
         Lcom/supercell/titan/GameApp$UnbotifyActivityLifecycleCallbacks;,
         Lcom/supercell/titan/GameApp$ActivityEventListener;,
         Lcom/supercell/titan/GameApp$OnActivityResultListener;,
-        Lcom/supercell/titan/GameApp$h;
+        Lcom/supercell/titan/GameApp$i;
     }
 .end annotation
 
 
 # static fields
-.field public static O:Lcom/supercell/titan/GameApp;
+.field public static N:Lcom/supercell/titan/GameApp;
 
-.field public static P:I
+.field public static O:I
 
-.field public static final Q:Ljava/util/Vector;
+.field public static final P:Ljava/util/Vector;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Vector<",
-            "Lcom/supercell/titan/GameApp$h;",
+            "Lcom/supercell/titan/GameApp$i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public static final R:Ljava/util/Vector;
+.field public static final Q:Ljava/util/Vector;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Vector<",
@@ -41,15 +41,13 @@
 
 
 # instance fields
-.field public A:Lcom/supercell/titan/SecurePreferences;
+.field public A:I
 
-.field public B:I
+.field public B:Lcom/supercell/titan/GoogleServiceClient;
 
-.field public C:Lcom/supercell/titan/GoogleServiceClient;
+.field public C:Z
 
-.field public D:Z
-
-.field public final E:Ljava/util/Vector;
+.field public final D:Ljava/util/Vector;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Vector<",
@@ -59,11 +57,11 @@
     .end annotation
 .end field
 
-.field public F:I
+.field public E:I
 
-.field public final G:Lcom/supercell/titan/GameApp$UnbotifyActivityLifecycleCallbacks;
+.field public final F:Lcom/supercell/titan/GameApp$UnbotifyActivityLifecycleCallbacks;
 
-.field public H:Ljava/util/List;
+.field public G:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -73,31 +71,31 @@
     .end annotation
 .end field
 
+.field public H:F
+
 .field public I:F
 
-.field public J:F
+.field public J:I
 
-.field public K:I
+.field public K:Ljava/util/concurrent/locks/ReentrantLock;
 
-.field public L:Ljava/util/concurrent/locks/ReentrantLock;
+.field public final L:Lcom/supercell/titan/GameApp$b;
 
-.field public final M:Ljava/lang/Runnable;
+.field public M:Z
 
-.field public N:Z
+.field public f:Landroid/net/wifi/WifiManager$WifiLock;
 
-.field public g:Landroid/net/wifi/WifiManager$WifiLock;
+.field public g:Landroid/os/Handler;
 
-.field public h:Landroid/os/Handler;
+.field public h:Z
 
 .field public i:Z
 
-.field public j:Z
+.field public j:Ljava/lang/Thread;
 
-.field public k:Ljava/lang/Thread;
+.field public k:Lcom/supercell/titan/GameApp$d;
 
-.field public l:Landroid/hardware/display/DisplayManager$DisplayListener;
-
-.field public m:Ljava/util/Vector;
+.field public l:Ljava/util/Vector;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Vector<",
@@ -107,25 +105,25 @@
     .end annotation
 .end field
 
-.field public n:Lcom/supercell/titan/GL2JNISurfaceView;
+.field public m:Lcom/supercell/titan/GL2JNISurfaceView;
+
+.field public n:Z
 
 .field public o:Z
 
 .field public p:Z
 
-.field public q:Z
+.field public q:Landroid/app/AlarmManager;
 
-.field public r:Landroid/app/AlarmManager;
+.field public r:Ljava/lang/String;
 
 .field public s:Ljava/lang/String;
 
-.field public t:Ljava/lang/String;
+.field public final t:I
 
-.field public final u:I
+.field public u:Landroid/os/Bundle;
 
-.field public v:Landroid/os/Bundle;
-
-.field public final w:Ljava/lang/Class;
+.field public final v:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -134,7 +132,9 @@
     .end annotation
 .end field
 
-.field public x:Lcom/supercell/titan/PurchaseManager;
+.field public w:Lcom/supercell/titan/PurchaseManagerGoogle;
+
+.field public x:Lcom/supercell/titan/SecurePreferences;
 
 .field public y:Lcom/supercell/titan/SecurePreferences;
 
@@ -156,21 +156,21 @@
 
     long-to-int v1, v0
 
-    sput v1, Lcom/supercell/titan/GameApp;->P:I
+    sput v1, Lcom/supercell/titan/GameApp;->O:I
 
     .line 2
     new-instance v0, Ljava/util/Vector;
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    sput-object v0, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sput-object v0, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     .line 3
     new-instance v0, Ljava/util/Vector;
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    sput-object v0, Lcom/supercell/titan/GameApp;->R:Ljava/util/Vector;
+    sput-object v0, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
 
     return-void
 .end method
@@ -224,68 +224,68 @@
     const/4 p3, 0x0
 
     .line 5
-    iput-object p3, p0, Lcom/supercell/titan/GameApp;->l:Landroid/hardware/display/DisplayManager$DisplayListener;
+    iput-object p3, p0, Lcom/supercell/titan/GameApp;->k:Lcom/supercell/titan/GameApp$d;
 
     const-string p3, ""
 
     .line 6
-    iput-object p3, p0, Lcom/supercell/titan/GameApp;->s:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/titan/GameApp;->r:Ljava/lang/String;
 
     const-string p3, "this game"
 
     .line 7
-    iput-object p3, p0, Lcom/supercell/titan/GameApp;->t:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/titan/GameApp;->s:Ljava/lang/String;
 
     .line 8
     new-instance p3, Ljava/util/Vector;
 
     invoke-direct {p3}, Ljava/util/Vector;-><init>()V
 
-    iput-object p3, p0, Lcom/supercell/titan/GameApp;->E:Ljava/util/Vector;
+    iput-object p3, p0, Lcom/supercell/titan/GameApp;->D:Ljava/util/Vector;
 
     const/4 p3, -0x1
 
     .line 9
-    iput p3, p0, Lcom/supercell/titan/GameApp;->F:I
+    iput p3, p0, Lcom/supercell/titan/GameApp;->E:I
 
     .line 10
     new-instance p3, Lcom/supercell/titan/GameApp$UnbotifyActivityLifecycleCallbacks;
 
     invoke-direct {p3}, Lcom/supercell/titan/GameApp$UnbotifyActivityLifecycleCallbacks;-><init>()V
 
-    iput-object p3, p0, Lcom/supercell/titan/GameApp;->G:Lcom/supercell/titan/GameApp$UnbotifyActivityLifecycleCallbacks;
+    iput-object p3, p0, Lcom/supercell/titan/GameApp;->F:Lcom/supercell/titan/GameApp$UnbotifyActivityLifecycleCallbacks;
 
     .line 11
     new-instance p3, Ljava/util/ArrayList;
 
     invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p3, p0, Lcom/supercell/titan/GameApp;->H:Ljava/util/List;
+    iput-object p3, p0, Lcom/supercell/titan/GameApp;->G:Ljava/util/ArrayList;
 
     const/4 p3, 0x0
 
     .line 12
-    iput p3, p0, Lcom/supercell/titan/GameApp;->K:I
+    iput p3, p0, Lcom/supercell/titan/GameApp;->J:I
 
     .line 13
     new-instance p3, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {p3}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
-    iput-object p3, p0, Lcom/supercell/titan/GameApp;->L:Ljava/util/concurrent/locks/ReentrantLock;
+    iput-object p3, p0, Lcom/supercell/titan/GameApp;->K:Ljava/util/concurrent/locks/ReentrantLock;
 
     .line 14
     new-instance p3, Lcom/supercell/titan/GameApp$b;
 
     invoke-direct {p3, p0}, Lcom/supercell/titan/GameApp$b;-><init>(Lcom/supercell/titan/GameApp;)V
 
-    iput-object p3, p0, Lcom/supercell/titan/GameApp;->M:Ljava/lang/Runnable;
+    iput-object p3, p0, Lcom/supercell/titan/GameApp;->L:Lcom/supercell/titan/GameApp$b;
 
     .line 15
-    iput p1, p0, Lcom/supercell/titan/GameApp;->u:I
+    iput p1, p0, Lcom/supercell/titan/GameApp;->t:I
 
     .line 16
-    iput-object p2, p0, Lcom/supercell/titan/GameApp;->w:Ljava/lang/Class;
+    iput-object p2, p0, Lcom/supercell/titan/GameApp;->v:Ljava/lang/Class;
 
     return-void
 .end method
@@ -354,20 +354,20 @@
     invoke-direct {p0, v0, p2, p3}, Lcom/supercell/titan/GameApp;-><init>(ILjava/lang/Class;Ljava/lang/Class;)V
 
     .line 19
-    iput-object p1, p0, Lcom/supercell/titan/GameApp;->t:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/GameApp;->s:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lcom/supercell/titan/GameApp$h;
+.method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lcom/supercell/titan/GameApp$i;
     .locals 3
 
     .line 1
     new-instance v0, Landroid/content/Intent;
 
-    sget-object v1, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v1, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object v2, v1, Lcom/supercell/titan/GameApp;->w:Ljava/lang/Class;
+    iget-object v2, v1, Lcom/supercell/titan/GameApp;->v:Ljava/lang/Class;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -422,29 +422,28 @@
     invoke-virtual {v0, p5, p9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 12
-    new-instance p5, Lcom/supercell/titan/GameApp$h;
-
-    const/4 p6, 0x0
-
-    invoke-direct {p5, p6}, Lcom/supercell/titan/GameApp$h;-><init>(Lcom/supercell/titan/GameApp$b;)V
+    new-instance p5, Lcom/supercell/titan/GameApp$i;
 
     .line 13
-    iput p4, p5, Lcom/supercell/titan/GameApp$h;->c:I
+    invoke-direct {p5}, Lcom/supercell/titan/GameApp$i;-><init>()V
 
     .line 14
-    iput-object p1, p5, Lcom/supercell/titan/GameApp$h;->d:Ljava/lang/String;
+    iput p4, p5, Lcom/supercell/titan/GameApp$i;->c:I
 
     .line 15
-    iput-object p2, p5, Lcom/supercell/titan/GameApp$h;->e:Ljava/lang/String;
+    iput-object p1, p5, Lcom/supercell/titan/GameApp$i;->d:Ljava/lang/String;
 
     .line 16
-    iput-object p0, p5, Lcom/supercell/titan/GameApp$h;->b:Ljava/lang/String;
+    iput-object p2, p5, Lcom/supercell/titan/GameApp$i;->e:Ljava/lang/String;
 
     .line 17
-    iput-object p3, p5, Lcom/supercell/titan/GameApp$h;->f:Ljava/lang/String;
+    iput-object p0, p5, Lcom/supercell/titan/GameApp$i;->b:Ljava/lang/String;
 
     .line 18
-    sget-object p0, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    iput-object p3, p5, Lcom/supercell/titan/GameApp$i;->f:Ljava/lang/String;
+
+    .line 19
+    sget-object p0, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
     const/high16 p1, 0x40000000    # 2.0f
 
@@ -452,7 +451,7 @@
 
     move-result-object p0
 
-    iput-object p0, p5, Lcom/supercell/titan/GameApp$h;->a:Landroid/app/PendingIntent;
+    iput-object p0, p5, Lcom/supercell/titan/GameApp$i;->a:Landroid/app/PendingIntent;
 
     return-object p5
 .end method
@@ -512,12 +511,12 @@
     .locals 15
 
     .line 1
-    sget-object v0, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v0, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object v0, v0, Lcom/supercell/titan/GameApp;->r:Landroid/app/AlarmManager;
+    iget-object v0, v0, Lcom/supercell/titan/GameApp;->q:Landroid/app/AlarmManager;
 
     .line 2
-    sget-object v1, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sget-object v1, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     monitor-enter v1
 
@@ -526,7 +525,7 @@
     invoke-virtual {v1}, Ljava/util/Vector;->clear()V
 
     .line 4
-    sget-object v2, Lcom/supercell/titan/GameApp;->R:Ljava/util/Vector;
+    sget-object v2, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
 
     invoke-virtual {v2}, Ljava/util/Vector;->clear()V
 
@@ -536,9 +535,9 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 6
-    sget-object v1, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v1, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object v1, v1, Lcom/supercell/titan/GameApp;->A:Lcom/supercell/titan/SecurePreferences;
+    iget-object v1, v1, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
 
     const-string v2, "localNotifications"
 
@@ -554,9 +553,9 @@
     if-nez v2, :cond_0
 
     .line 8
-    sget-object v2, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v2, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object v2, v2, Lcom/supercell/titan/GameApp;->A:Lcom/supercell/titan/SecurePreferences;
+    iget-object v2, v2, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
 
     const-string v3, "localNotifications"
 
@@ -654,12 +653,12 @@
     move-result v14
 
     .line 22
-    invoke-static/range {v5 .. v14}, Lcom/supercell/titan/GameApp;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lcom/supercell/titan/GameApp$h;
+    invoke-static/range {v5 .. v14}, Lcom/supercell/titan/GameApp;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lcom/supercell/titan/GameApp$i;
 
     move-result-object v3
 
     .line 23
-    iget-object v3, v3, Lcom/supercell/titan/GameApp$h;->a:Landroid/app/PendingIntent;
+    iget-object v3, v3, Lcom/supercell/titan/GameApp$i;->a:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v3}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
     :try_end_1
@@ -700,7 +699,7 @@
     .locals 15
 
     .line 1
-    sget-object v1, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sget-object v1, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     monitor-enter v1
 
@@ -717,16 +716,16 @@
     if-ltz v2, :cond_1
 
     .line 3
-    sget-object v3, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sget-object v3, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     invoke-virtual {v3, v2}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    check-cast v4, Lcom/supercell/titan/GameApp$h;
+    check-cast v4, Lcom/supercell/titan/GameApp$i;
 
     .line 4
-    iget v4, v4, Lcom/supercell/titan/GameApp$h;->c:I
+    iget v4, v4, Lcom/supercell/titan/GameApp$i;->c:I
 
     if-ne v4, p0, :cond_0
 
@@ -734,7 +733,7 @@
     invoke-virtual {v3, v2}, Ljava/util/Vector;->remove(I)Ljava/lang/Object;
 
     .line 6
-    sget-object v3, Lcom/supercell/titan/GameApp;->R:Ljava/util/Vector;
+    sget-object v3, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
 
     invoke-virtual {v3, v2}, Ljava/util/Vector;->remove(I)Ljava/lang/Object;
 
@@ -747,7 +746,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 8
-    sget-object v1, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v1, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
     if-nez v1, :cond_2
 
@@ -755,7 +754,7 @@
 
     .line 9
     :cond_2
-    iget-object v1, v1, Lcom/supercell/titan/GameApp;->A:Lcom/supercell/titan/SecurePreferences;
+    iget-object v1, v1, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
 
     if-nez v1, :cond_3
 
@@ -777,9 +776,9 @@
     if-nez v2, :cond_8
 
     .line 12
-    sget-object v2, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v2, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object v11, v2, Lcom/supercell/titan/GameApp;->r:Landroid/app/AlarmManager;
+    iget-object v11, v2, Lcom/supercell/titan/GameApp;->q:Landroid/app/AlarmManager;
 
     .line 13
     :try_start_1
@@ -890,12 +889,12 @@
     move v5, p0
 
     .line 27
-    invoke-static/range {v1 .. v10}, Lcom/supercell/titan/GameApp;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lcom/supercell/titan/GameApp$h;
+    invoke-static/range {v1 .. v10}, Lcom/supercell/titan/GameApp;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lcom/supercell/titan/GameApp$i;
 
     move-result-object v1
 
     .line 28
-    iget-object v1, v1, Lcom/supercell/titan/GameApp$h;->a:Landroid/app/PendingIntent;
+    iget-object v1, v1, Lcom/supercell/titan/GameApp$i;->a:Landroid/app/PendingIntent;
 
     invoke-virtual {v11, v1}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
@@ -927,9 +926,9 @@
     if-nez v0, :cond_7
 
     .line 32
-    sget-object v0, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v0, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object v0, v0, Lcom/supercell/titan/GameApp;->A:Lcom/supercell/titan/SecurePreferences;
+    iget-object v0, v0, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
 
     const-string v1, "localNotifications"
 
@@ -944,9 +943,9 @@
     move-result-object v0
 
     .line 34
-    sget-object v1, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v1, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object v1, v1, Lcom/supercell/titan/GameApp;->A:Lcom/supercell/titan/SecurePreferences;
+    iget-object v1, v1, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
 
     const-string v2, "localNotifications"
 
@@ -1021,11 +1020,11 @@
     .line 2
     :cond_1
     :goto_0
-    sget v0, Lcom/supercell/titan/GameApp;->P:I
+    sget v0, Lcom/supercell/titan/GameApp;->O:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/supercell/titan/GameApp;->P:I
+    sput v0, Lcom/supercell/titan/GameApp;->O:I
 
     .line 3
     invoke-static {v0}, Lcom/supercell/titan/GameApp;->cancelNotification(I)V
@@ -1051,7 +1050,7 @@
     move/from16 v14, p5
 
     .line 4
-    invoke-static/range {v5 .. v14}, Lcom/supercell/titan/GameApp;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lcom/supercell/titan/GameApp$h;
+    invoke-static/range {v5 .. v14}, Lcom/supercell/titan/GameApp;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lcom/supercell/titan/GameApp$i;
 
     move-result-object v5
 
@@ -1068,14 +1067,14 @@
     invoke-static {v1, v2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     .line 7
-    sget-object v0, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v0, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object v0, v0, Lcom/supercell/titan/GameApp;->r:Landroid/app/AlarmManager;
+    iget-object v0, v0, Lcom/supercell/titan/GameApp;->q:Landroid/app/AlarmManager;
 
     add-long/2addr v6, v3
 
     .line 8
-    iget-object v1, v5, Lcom/supercell/titan/GameApp$h;->a:Landroid/app/PendingIntent;
+    iget-object v1, v5, Lcom/supercell/titan/GameApp$i;->a:Landroid/app/PendingIntent;
 
     const/4 v2, 0x0
 
@@ -1085,7 +1084,7 @@
 
     .line 9
     :cond_2
-    sget-object v3, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sget-object v3, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     monitor-enter v3
 
@@ -1094,7 +1093,7 @@
     invoke-virtual {v3, v5}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
     .line 11
-    sget-object v4, Lcom/supercell/titan/GameApp;->R:Ljava/util/Vector;
+    sget-object v4, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -1123,7 +1122,7 @@
     if-eqz p0, :cond_0
 
     .line 1
-    sget-object v0, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v0, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
     if-eqz v0, :cond_0
 
@@ -1138,7 +1137,7 @@
     invoke-direct {v1, v0}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
     .line 4
-    invoke-virtual {p0, v1}, Ljava/lang/Exception;->printStackTrace(Ljava/io/PrintWriter;)V
+    invoke-virtual {p0, v1}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
 
     .line 5
     invoke-virtual {v0}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
@@ -1146,9 +1145,9 @@
     move-result-object p0
 
     .line 6
-    sget-object v0, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v0, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object v0, v0, Lcom/supercell/titan/GameApp;->E:Ljava/util/Vector;
+    iget-object v0, v0, Lcom/supercell/titan/GameApp;->D:Ljava/util/Vector;
 
     invoke-virtual {v0, p0}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
@@ -1161,10 +1160,9 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
-    sget-object v0, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v0, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object v0, v0, Lcom/supercell/titan/GameApp;->E:Ljava/util/Vector;
+    iget-object v0, v0, Lcom/supercell/titan/GameApp;->D:Ljava/util/Vector;
 
     invoke-virtual {v0, p0}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
@@ -1193,7 +1191,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+    invoke-virtual {v0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
     move-result-object v0
 
@@ -1346,8 +1344,7 @@
 .method public static getInstance()Lcom/supercell/titan/GameApp;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v0, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
     return-object v0
 .end method
@@ -1370,9 +1367,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/supercell/titan/GameApp$g;
+    new-instance v1, Lcom/supercell/titan/GameApp$h;
 
-    invoke-direct {v1, p0}, Lcom/supercell/titan/GameApp$g;-><init>(I)V
+    invoke-direct {v1, p0}, Lcom/supercell/titan/GameApp$h;-><init>(I)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -1439,7 +1436,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/supercell/titan/GameApp;->k:Ljava/lang/Thread;
+    iget-object v0, v0, Lcom/supercell/titan/GameApp;->j:Ljava/lang/Thread;
 
     invoke-virtual {v0}, Ljava/lang/Thread;->join()V
     :try_end_0
@@ -1451,7 +1448,7 @@
 
     move-result-object v0
 
-    iget-boolean v0, v0, Lcom/supercell/titan/GameApp;->j:Z
+    iget-boolean v0, v0, Lcom/supercell/titan/GameApp;->i:Z
 
     return v0
 .end method
@@ -1496,10 +1493,9 @@
 .method public static isNativeLibraryLoaded()Z
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v0, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-boolean v0, v0, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, v0, Lcom/supercell/titan/GameApp;->o:Z
 
     return v0
 .end method
@@ -1521,7 +1517,7 @@
 
     const-string v1, "audio"
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1773,9 +1769,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/supercell/titan/GameApp$f;
+    new-instance v1, Lcom/supercell/titan/GameApp$g;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/supercell/titan/GameApp$f;-><init>(ILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/supercell/titan/GameApp$g;-><init>(ILjava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 
@@ -1799,7 +1795,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -1890,11 +1886,11 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v0, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
     const-string v1, "vibrator"
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1933,7 +1929,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->m:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->l:Ljava/util/Vector;
 
     if-nez v0, :cond_0
 
@@ -1942,11 +1938,11 @@
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/titan/GameApp;->m:Ljava/util/Vector;
+    iput-object v0, p0, Lcom/supercell/titan/GameApp;->l:Ljava/util/Vector;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->m:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->l:Ljava/util/Vector;
 
     invoke-virtual {v0, p1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
@@ -1956,8 +1952,7 @@
 .method public addActivityResultListener(Lcom/supercell/titan/GameApp$OnActivityResultListener;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->H:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->G:Ljava/util/ArrayList;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -1968,7 +1963,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(Landroid/view/View;)V
 
@@ -2005,51 +2000,51 @@
     if-eqz v0, :cond_2
 
     .line 4
-    iget v0, p0, Lcom/supercell/titan/GameApp;->K:I
+    iget v0, p0, Lcom/supercell/titan/GameApp;->J:I
 
     if-nez v0, :cond_0
 
     .line 5
     new-instance v0, Landroid/os/Handler;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getMainLooper()Landroid/os/Looper;
+    invoke-virtual {p0}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v3
 
     invoke-direct {v0, v3}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     .line 6
-    iget-object v3, p0, Lcom/supercell/titan/GameApp;->M:Ljava/lang/Runnable;
+    iget-object v3, p0, Lcom/supercell/titan/GameApp;->L:Lcom/supercell/titan/GameApp$b;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 7
     :cond_0
-    iget v0, p0, Lcom/supercell/titan/GameApp;->K:I
+    iget v0, p0, Lcom/supercell/titan/GameApp;->J:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/supercell/titan/GameApp;->K:I
+    iput v0, p0, Lcom/supercell/titan/GameApp;->J:I
 
     const/4 v3, 0x4
 
     if-ne v0, v3, :cond_1
 
     .line 8
-    iput v1, p0, Lcom/supercell/titan/GameApp;->K:I
+    iput v1, p0, Lcom/supercell/titan/GameApp;->J:I
 
     .line 9
     :cond_1
-    iget v0, p0, Lcom/supercell/titan/GameApp;->J:F
+    iget v0, p0, Lcom/supercell/titan/GameApp;->I:F
 
-    iget v1, p0, Lcom/supercell/titan/GameApp;->I:F
+    iget v1, p0, Lcom/supercell/titan/GameApp;->H:F
 
     cmpl-float v1, v0, v1
 
     if-lez v1, :cond_4
 
     .line 10
-    iput v0, p0, Lcom/supercell/titan/GameApp;->I:F
+    iput v0, p0, Lcom/supercell/titan/GameApp;->H:F
 
     .line 11
     invoke-static {v0, v2}, Lcom/supercell/titan/VirtualKeyboardHandler;->keyboardSizeChanged(FF)V
@@ -2058,7 +2053,7 @@
 
     .line 12
     :cond_2
-    iget v0, p0, Lcom/supercell/titan/GameApp;->J:F
+    iget v0, p0, Lcom/supercell/titan/GameApp;->I:F
 
     cmpl-float v0, v0, v2
 
@@ -2069,13 +2064,13 @@
 
     .line 14
     :cond_3
-    iput v2, p0, Lcom/supercell/titan/GameApp;->I:F
+    iput v2, p0, Lcom/supercell/titan/GameApp;->H:F
 
     .line 15
-    iput v2, p0, Lcom/supercell/titan/GameApp;->J:F
+    iput v2, p0, Lcom/supercell/titan/GameApp;->I:F
 
     .line 16
-    iput v1, p0, Lcom/supercell/titan/GameApp;->K:I
+    iput v1, p0, Lcom/supercell/titan/GameApp;->J:I
 
     :cond_4
     :goto_0
@@ -2106,7 +2101,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2122,7 +2117,7 @@
 
     .line 4
     :cond_0
-    invoke-static {v0, v2}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v2}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2140,12 +2135,12 @@
 
     .line 1
     :try_start_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
     .line 2
-    invoke-virtual {p0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2309,33 +2304,29 @@
     return v0
 .end method
 
-.method public final d(Landroid/content/Intent;)Ljava/lang/String;
+.method public final d(Landroid/content/Context;)V
     .locals 1
 
-    if-eqz p1, :cond_0
-
     .line 1
-    invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+    new-instance v0, Lcom/supercell/titan/GL2JNISurfaceView;
 
-    move-result-object v0
+    invoke-direct {v0, p1}, Lcom/supercell/titan/GL2JNISurfaceView;-><init>(Landroid/content/Context;)V
 
-    if-eqz v0, :cond_0
+    iput-object v0, p0, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
     .line 2
-    invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(Landroid/view/View;)V
 
-    move-result-object p1
+    .line 3
+    iget-object p1, p0, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
-    invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    new-instance v0, Lcom/supercell/titan/GameApp$c;
 
-    move-result-object p1
+    invoke-direct {v0, p0}, Lcom/supercell/titan/GameApp$c;-><init>(Lcom/supercell/titan/GameApp;)V
 
-    return-object p1
+    invoke-virtual {p1, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    :cond_0
-    const/4 p1, 0x0
-
-    return-object p1
+    return-void
 .end method
 
 .method public final declared-synchronized e(Ljava/lang/String;Ljava/lang/String;Lcom/supercell/titan/SecurePreferences;)Z
@@ -2431,8 +2422,7 @@
 .method public getBundle()Landroid/os/Bundle;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->v:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->u:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -2448,8 +2438,7 @@
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->E:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->D:Ljava/util/Vector;
 
     return-object v0
 .end method
@@ -2457,8 +2446,7 @@
 .method public getGooglePlayClientID()Ljava/lang/String;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->s:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->r:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -2467,12 +2455,12 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
     .line 2
-    invoke-virtual {p0}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2513,7 +2501,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->y:Lcom/supercell/titan/SecurePreferences;
 
     invoke-virtual {v0, p1}, Lcom/supercell/titan/SecurePreferences;->getString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -2536,7 +2524,7 @@
     .line 4
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->y:Lcom/supercell/titan/SecurePreferences;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->x:Lcom/supercell/titan/SecurePreferences;
 
     invoke-virtual {v0, p1}, Lcom/supercell/titan/SecurePreferences;->getString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -2550,7 +2538,7 @@
     if-nez v1, :cond_1
 
     .line 6
-    iget-object v1, p0, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp;->y:Lcom/supercell/titan/SecurePreferences;
 
     invoke-virtual {v1, p1, v0}, Lcom/supercell/titan/SecurePreferences;->put(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2608,8 +2596,7 @@
 .method public getPurchaseManager()Lcom/supercell/titan/PurchaseManager;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->x:Lcom/supercell/titan/PurchaseManager;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->w:Lcom/supercell/titan/PurchaseManagerGoogle;
 
     return-object v0
 .end method
@@ -2617,8 +2604,7 @@
 .method public getSecurePreferences()Lcom/supercell/titan/SecurePreferences;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->y:Lcom/supercell/titan/SecurePreferences;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->x:Lcom/supercell/titan/SecurePreferences;
 
     return-object v0
 .end method
@@ -2627,12 +2613,12 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
     .line 2
-    invoke-virtual {p0}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2650,7 +2636,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2660,8 +2646,7 @@
 .method public getView()Lcom/supercell/titan/GL2JNISurfaceView;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
     return-object v0
 .end method
@@ -2683,7 +2668,7 @@
     const/4 v2, 0x0
 
     .line 2
-    invoke-virtual {p0, v1, v2}, Landroid/app/Activity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -2767,24 +2752,24 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->D:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->C:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->N:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->M:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
     .line 3
-    iput-boolean v0, p0, Lcom/supercell/titan/GameApp;->N:Z
+    iput-boolean v0, p0, Lcom/supercell/titan/GameApp;->M:Z
 
     .line 4
-    new-instance v0, Lcom/supercell/titan/GameApp$e;
+    new-instance v0, Lcom/supercell/titan/GameApp$f;
 
-    invoke-direct {v0, p0}, Lcom/supercell/titan/GameApp$e;-><init>(Lcom/supercell/titan/GameApp;)V
+    invoke-direct {v0, p0}, Lcom/supercell/titan/GameApp$f;-><init>(Lcom/supercell/titan/GameApp;)V
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -2796,7 +2781,7 @@
     .locals 4
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -2815,7 +2800,7 @@
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->reconnect()Z
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->g:Landroid/net/wifi/WifiManager$WifiLock;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->f:Landroid/net/wifi/WifiManager$WifiLock;
 
     if-eqz v0, :cond_0
 
@@ -2826,7 +2811,7 @@
     if-nez v0, :cond_0
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->g:Landroid/net/wifi/WifiManager$WifiLock;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->f:Landroid/net/wifi/WifiManager$WifiLock;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager$WifiLock;->acquire()V
     :try_end_0
@@ -2851,14 +2836,14 @@
     if-nez p1, :cond_4
 
     .line 7
-    iget-object p1, p0, Lcom/supercell/titan/GameApp;->C:Lcom/supercell/titan/GoogleServiceClient;
+    iget-object p1, p0, Lcom/supercell/titan/GameApp;->B:Lcom/supercell/titan/GoogleServiceClient;
 
     invoke-virtual {p1}, Lcom/supercell/titan/GoogleServiceClient;->onStart()V
 
     const-string p1, "notification"
 
     .line 8
-    invoke-virtual {p0, p1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -2875,12 +2860,12 @@
     .line 10
     :catch_1
     :cond_2
-    sget-object p1, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object p1, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object p1, p1, Lcom/supercell/titan/GameApp;->r:Landroid/app/AlarmManager;
+    iget-object p1, p1, Lcom/supercell/titan/GameApp;->q:Landroid/app/AlarmManager;
 
     .line 11
-    sget-object v0, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sget-object v0, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     monitor-enter v0
 
@@ -2889,7 +2874,7 @@
     .line 12
     :goto_1
     :try_start_2
-    sget-object v2, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sget-object v2, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     invoke-virtual {v2}, Ljava/util/Vector;->size()I
 
@@ -2902,10 +2887,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/supercell/titan/GameApp$h;
+    check-cast v2, Lcom/supercell/titan/GameApp$i;
 
     .line 14
-    iget-object v2, v2, Lcom/supercell/titan/GameApp$h;->a:Landroid/app/PendingIntent;
+    iget-object v2, v2, Lcom/supercell/titan/GameApp$i;->a:Landroid/app/PendingIntent;
 
     .line 15
     invoke-virtual {p1, v2}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
@@ -2950,19 +2935,19 @@
     .line 20
     :cond_4
     :goto_2
-    iget-object p1, p0, Lcom/supercell/titan/GameApp;->x:Lcom/supercell/titan/PurchaseManager;
+    iget-object p1, p0, Lcom/supercell/titan/GameApp;->w:Lcom/supercell/titan/PurchaseManagerGoogle;
 
     if-eqz p1, :cond_5
 
     .line 21
-    invoke-virtual {p1}, Lcom/supercell/titan/PurchaseManager;->onResume()V
+    invoke-virtual {p1}, Lcom/supercell/titan/PurchaseManagerGoogle;->onResume()V
 
     .line 22
     :cond_5
     invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->onResume()V
 
     .line 23
-    iget-object p1, p0, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object p1, p0, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
     if-eqz p1, :cond_6
 
@@ -3059,7 +3044,7 @@
 
     .line 5
     :goto_0
-    invoke-virtual {v1}, Ljava/lang/NoSuchMethodException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     goto :goto_4
 
@@ -3075,13 +3060,13 @@
 
     .line 7
     :goto_2
-    invoke-virtual {v1}, Ljava/lang/IllegalAccessException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     goto :goto_4
 
     .line 8
     :goto_3
-    invoke-virtual {v1}, Ljava/lang/ClassNotFoundException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     :goto_4
     return v0
@@ -3090,8 +3075,7 @@
 .method public isPortrait()Z
     .locals 2
 
-    .line 1
-    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -3135,8 +3119,7 @@
 .method public isStopped()Z
     .locals 1
 
-    .line 1
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->o:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->n:Z
 
     return v0
 .end method
@@ -3148,7 +3131,7 @@
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->C:Lcom/supercell/titan/GoogleServiceClient;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->B:Lcom/supercell/titan/GoogleServiceClient;
 
     if-eqz v0, :cond_0
 
@@ -3157,7 +3140,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->x:Lcom/supercell/titan/PurchaseManager;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->w:Lcom/supercell/titan/PurchaseManagerGoogle;
 
     if-eqz v0, :cond_1
 
@@ -3166,8 +3149,6 @@
     if-ne p1, v1, :cond_1
 
     .line 5
-    check-cast v0, Lcom/supercell/titan/PurchaseManagerGoogle;
-
     invoke-virtual {v0, p1, p2, p3}, Lcom/supercell/titan/PurchaseManager;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 6
@@ -3187,7 +3168,7 @@
 
     .line 8
     :cond_2
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->H:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->G:Ljava/util/ArrayList;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3213,7 +3194,7 @@
 
     .line 10
     :cond_3
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->o:Z
 
     if-eqz v0, :cond_4
 
@@ -3241,7 +3222,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
     if-eqz v0, :cond_1
 
@@ -3263,7 +3244,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->o:Z
 
     if-eqz v0, :cond_0
 
@@ -3278,7 +3259,7 @@
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 18
+    .locals 19
 
     move-object/from16 v14, p0
 
@@ -3287,7 +3268,7 @@
 
     move-result-object v0
 
-    iget-object v1, v14, Lcom/supercell/titan/GameApp;->G:Lcom/supercell/titan/GameApp$UnbotifyActivityLifecycleCallbacks;
+    iget-object v1, v14, Lcom/supercell/titan/GameApp;->F:Lcom/supercell/titan/GameApp$UnbotifyActivityLifecycleCallbacks;
 
     invoke-virtual {v0, v1}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
@@ -3295,18 +3276,18 @@
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 3
-    sput-object v14, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sput-object v14, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
     .line 4
     new-instance v0, Landroid/os/Handler;
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getMainLooper()Landroid/os/Looper;
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->h:Landroid/os/Handler;
+    iput-object v0, v14, Lcom/supercell/titan/GameApp;->g:Landroid/os/Handler;
 
     .line 5
     new-instance v0, Lcom/supercell/titan/UnbotifyManager;
@@ -3323,33 +3304,33 @@
 
     move-result-object v0
 
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->s:Ljava/lang/String;
+    iput-object v0, v14, Lcom/supercell/titan/GameApp;->r:Ljava/lang/String;
 
     .line 8
-    iget v0, v14, Lcom/supercell/titan/GameApp;->u:I
+    iget v0, v14, Lcom/supercell/titan/GameApp;->t:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
     .line 9
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    iget v2, v14, Lcom/supercell/titan/GameApp;->u:I
+    iget v2, v14, Lcom/supercell/titan/GameApp;->t:I
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->t:Ljava/lang/String;
+    iput-object v0, v14, Lcom/supercell/titan/GameApp;->s:Ljava/lang/String;
 
     goto :goto_0
 
     .line 10
     :cond_0
-    iget-object v0, v14, Lcom/supercell/titan/GameApp;->t:Ljava/lang/String;
+    iget-object v0, v14, Lcom/supercell/titan/GameApp;->s:Ljava/lang/String;
 
     const-string v2, "this game"
 
@@ -3361,7 +3342,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, v14, Lcom/supercell/titan/GameApp;->t:Ljava/lang/String;
+    iget-object v0, v14, Lcom/supercell/titan/GameApp;->s:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -3377,7 +3358,7 @@
 
     move-result-object v0
 
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->t:Ljava/lang/String;
+    iput-object v0, v14, Lcom/supercell/titan/GameApp;->s:Ljava/lang/String;
 
     .line 12
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
@@ -3387,7 +3368,7 @@
     if-eqz v0, :cond_2
 
     .line 13
-    iput-object v2, v14, Lcom/supercell/titan/GameApp;->t:Ljava/lang/String;
+    iput-object v2, v14, Lcom/supercell/titan/GameApp;->s:Ljava/lang/String;
 
     .line 14
     :cond_2
@@ -3419,10 +3400,10 @@
     move-object/from16 v0, p1
 
     .line 18
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->v:Landroid/os/Bundle;
+    iput-object v0, v14, Lcom/supercell/titan/GameApp;->u:Landroid/os/Bundle;
 
     .line 19
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -3439,7 +3420,7 @@
     if-eqz v0, :cond_4
 
     .line 20
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v3
 
@@ -3447,7 +3428,7 @@
 
     move-result-object v3
 
-    iput-object v3, v14, Lcom/supercell/titan/GameApp;->g:Landroid/net/wifi/WifiManager$WifiLock;
+    iput-object v3, v14, Lcom/supercell/titan/GameApp;->f:Landroid/net/wifi/WifiManager$WifiLock;
 
     .line 21
     :try_start_0
@@ -3465,13 +3446,13 @@
     const-string v0, "alarm"
 
     .line 22
-    invoke-virtual {v14, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v14, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/AlarmManager;
 
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->r:Landroid/app/AlarmManager;
+    iput-object v0, v14, Lcom/supercell/titan/GameApp;->q:Landroid/app/AlarmManager;
 
     .line 23
     invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
@@ -3513,7 +3494,7 @@
 
     move-result v0
 
-    iput v0, v14, Lcom/supercell/titan/GameApp;->B:I
+    iput v0, v14, Lcom/supercell/titan/GameApp;->A:I
 
     .line 29
     sget-object v0, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
@@ -3526,7 +3507,7 @@
 
     if-eqz v0, :cond_7
 
-    iget v0, v14, Lcom/supercell/titan/GameApp;->B:I
+    iget v0, v14, Lcom/supercell/titan/GameApp;->A:I
 
     const/4 v3, 0x7
 
@@ -3538,7 +3519,7 @@
     invoke-virtual {v14, v0}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
     .line 31
-    iget v0, v14, Lcom/supercell/titan/GameApp;->B:I
+    iget v0, v14, Lcom/supercell/titan/GameApp;->A:I
 
     invoke-virtual {v14, v0}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
@@ -3589,10 +3570,10 @@
     invoke-virtual {v4}, Ljava/lang/Thread;->start()V
 
     .line 40
-    iput-object v4, v14, Lcom/supercell/titan/GameApp;->k:Ljava/lang/Thread;
+    iput-object v4, v14, Lcom/supercell/titan/GameApp;->j:Ljava/lang/Thread;
 
     .line 41
-    iget-boolean v0, v14, Lcom/supercell/titan/GameApp;->q:Z
+    iget-boolean v0, v14, Lcom/supercell/titan/GameApp;->p:Z
 
     if-eqz v0, :cond_9
 
@@ -3600,15 +3581,15 @@
 
     .line 42
     :cond_9
-    iput-boolean v2, v14, Lcom/supercell/titan/GameApp;->q:Z
+    iput-boolean v2, v14, Lcom/supercell/titan/GameApp;->p:Z
 
     .line 43
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v15
+    move-result-object v13
 
     .line 44
-    invoke-virtual {v15}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+    invoke-virtual {v13}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
     move-result-object v0
 
@@ -3616,7 +3597,7 @@
     iget-object v3, v0, Landroid/content/pm/ApplicationInfo;->dataDir:Ljava/lang/String;
 
     .line 46
-    invoke-virtual {v15}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+    invoke-virtual {v13}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
     move-result-object v0
 
@@ -3656,9 +3637,9 @@
     goto :goto_2
 
     :cond_a
-    const/4 v0, 0x0
-
     move-wide v7, v5
+
+    const/4 v0, 0x0
 
     :goto_2
     if-eqz v0, :cond_b
@@ -3698,24 +3679,24 @@
     .line 53
     invoke-virtual {v12}, Ljava/io/File;->canWrite()Z
 
-    move-result v13
+    move-result v16
 
-    if-eqz v13, :cond_c
+    if-eqz v16, :cond_c
 
     .line 54
     invoke-virtual {v12}, Ljava/io/File;->toString()Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v16
 
-    invoke-static {v13}, Lcom/supercell/titan/GameApp;->b(Ljava/lang/String;)J
+    invoke-static/range {v16 .. v16}, Lcom/supercell/titan/GameApp;->b(Ljava/lang/String;)J
 
     move-result-wide v16
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    cmp-long v13, v16, v7
+    cmp-long v18, v16, v7
 
-    if-lez v13, :cond_c
+    if-lez v18, :cond_c
 
     move-object v0, v12
 
@@ -3804,7 +3785,7 @@
 
     invoke-direct {v6, v14, v10, v0, v2}, Lcom/supercell/titan/SecurePreferences;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    iput-object v6, v14, Lcom/supercell/titan/GameApp;->y:Lcom/supercell/titan/SecurePreferences;
+    iput-object v6, v14, Lcom/supercell/titan/GameApp;->x:Lcom/supercell/titan/SecurePreferences;
 
     .line 62
     invoke-static {}, Lcom/supercell/titan/ApplicationUtilBase;->getAndroidID()Ljava/lang/String;
@@ -3824,7 +3805,7 @@
     const-string v6, "titan"
 
     .line 64
-    invoke-static {v0, v6}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v6}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -3836,7 +3817,7 @@
 
     invoke-direct {v0, v14, v10, v6, v2}, Lcom/supercell/titan/SecurePreferences;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->A:Lcom/supercell/titan/SecurePreferences;
+    iput-object v0, v14, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
 
     const/16 v0, 0x18
 
@@ -3846,7 +3827,7 @@
     fill-array-data v0, :array_0
 
     .line 67
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v6
 
@@ -3883,6 +3864,7 @@
 
     int-to-char v1, v1
 
+    .line 72
     invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -3893,7 +3875,7 @@
 
     goto :goto_6
 
-    .line 72
+    .line 73
     :cond_15
     new-instance v0, Lcom/supercell/titan/SecurePreferences;
 
@@ -3901,17 +3883,17 @@
 
     invoke-direct {v0, v14, v1, v7, v2}, Lcom/supercell/titan/SecurePreferences;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
+    iput-object v0, v14, Lcom/supercell/titan/GameApp;->y:Lcom/supercell/titan/SecurePreferences;
 
     :try_start_2
     const-string v0, "sentry"
 
-    .line 73
+    .line 74
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
     const-string v0, "sentry-android"
 
-    .line 74
+    .line 75
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
     :try_end_2
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_2 .. :try_end_2} :catch_2
@@ -3920,7 +3902,7 @@
     :try_start_3
     const-string v0, "fmod"
 
-    .line 75
+    .line 76
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
     :try_end_3
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_3 .. :try_end_3} :catch_3
@@ -3938,7 +3920,7 @@
     :try_start_4
     const-string v1, "fmodL"
 
-    .line 76
+    .line 77
     invoke-static {v1}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
     :try_end_4
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_4 .. :try_end_4} :catch_4
@@ -3954,24 +3936,8 @@
     :goto_8
     if-nez v0, :cond_17
 
-    .line 77
-    new-instance v0, Lcom/supercell/titan/GL2JNISurfaceView;
-
-    invoke-direct {v0, v15}, Lcom/supercell/titan/GL2JNISurfaceView;-><init>(Landroid/content/Context;)V
-
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
-
     .line 78
-    invoke-virtual {v14, v0}, Landroid/app/Activity;->setContentView(Landroid/view/View;)V
-
-    .line 79
-    iget-object v0, v14, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
-
-    new-instance v1, Lcom/supercell/titan/g;
-
-    invoke-direct {v1, v14}, Lcom/supercell/titan/g;-><init>(Lcom/supercell/titan/GameApp;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/SurfaceView;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v14, v13}, Lcom/supercell/titan/GameApp;->d(Landroid/content/Context;)V
 
     goto/16 :goto_e
 
@@ -3979,75 +3945,77 @@
     :try_start_5
     const-string v0, "g"
 
-    .line 80
+    .line 79
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
-    .line 81
-    iput-boolean v2, v14, Lcom/supercell/titan/GameApp;->p:Z
+    .line 80
+    iput-boolean v2, v14, Lcom/supercell/titan/GameApp;->o:Z
     :try_end_5
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_5 .. :try_end_5} :catch_5
 
-    .line 82
+    .line 81
     invoke-static/range {p0 .. p0}, Lorg/fmod/FMOD;->init(Landroid/content/Context;)V
 
-    .line 83
+    .line 82
     invoke-static {}, Lcom/supercell/titan/NativeHTTPClientManager;->getInstance()Lcom/supercell/titan/NativeHTTPClientManager;
 
-    .line 84
+    .line 83
     invoke-static/range {p0 .. p0}, Lcom/supercell/titan/NativeFacebookManager;->createInstance(Lcom/supercell/titan/GameApp;)V
 
-    .line 85
+    .line 84
     invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->getNotificationCount()I
 
-    .line 86
+    .line 85
     invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
 
     move-result-object v0
 
-    .line 87
+    .line 86
     invoke-interface {v0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object v0
 
-    .line 88
+    .line 87
     new-instance v1, Landroid/util/DisplayMetrics;
 
     invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
 
-    .line 89
+    .line 88
     invoke-virtual {v0, v1}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
-    .line 90
+    .line 89
     iget v10, v1, Landroid/util/DisplayMetrics;->densityDpi:I
 
-    .line 91
+    .line 90
     new-instance v2, Landroid/graphics/Point;
 
     invoke-direct {v2}, Landroid/graphics/Point;-><init>()V
 
-    .line 92
+    .line 91
     invoke-virtual {v0, v2}, Landroid/view/Display;->getSize(Landroid/graphics/Point;)V
 
-    .line 93
+    .line 92
     iget v6, v2, Landroid/graphics/Point;->x:I
 
-    .line 94
+    .line 93
     iget v7, v2, Landroid/graphics/Point;->y:I
 
     const/4 v11, 0x2
 
-    .line 95
-    invoke-virtual {v15}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
+    .line 94
+    invoke-virtual {v13}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object v0
 
     iget v12, v1, Landroid/util/DisplayMetrics;->xdpi:F
 
-    iget v13, v1, Landroid/util/DisplayMetrics;->ydpi:F
+    iget v2, v1, Landroid/util/DisplayMetrics;->ydpi:F
 
     const/16 v16, 0x0
 
     move-object v1, v3
+
+    move/from16 v17, v2
 
     move-object v2, v4
 
@@ -4059,9 +4027,11 @@
 
     move v9, v12
 
-    move v10, v13
+    move/from16 v10, v17
 
     move/from16 v12, v16
+
+    move-object v15, v13
 
     move-object/from16 v13, p0
 
@@ -4069,55 +4039,55 @@
 
     move-result-object v0
 
-    .line 96
+    .line 95
     new-instance v1, Lcom/supercell/titan/PurchaseManagerGoogle;
 
     invoke-direct {v1, v14, v0}, Lcom/supercell/titan/PurchaseManagerGoogle;-><init>(Lcom/supercell/titan/GameApp;Ljava/lang/String;)V
 
-    .line 97
-    iput-object v1, v14, Lcom/supercell/titan/GameApp;->x:Lcom/supercell/titan/PurchaseManager;
+    .line 96
+    iput-object v1, v14, Lcom/supercell/titan/GameApp;->w:Lcom/supercell/titan/PurchaseManagerGoogle;
 
-    .line 98
+    .line 97
     new-instance v0, Lcom/supercell/titan/GL2JNISurfaceView;
 
     invoke-direct {v0, v15}, Lcom/supercell/titan/GL2JNISurfaceView;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
+    iput-object v0, v14, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
     const/4 v1, 0x1
 
+    .line 98
+    invoke-virtual {v0, v1}, Landroid/view/View;->setFocusable(Z)V
+
     .line 99
-    invoke-virtual {v0, v1}, Landroid/view/SurfaceView;->setFocusable(Z)V
+    iget-object v0, v14, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
     .line 100
-    iget-object v0, v14, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
-
-    invoke-virtual {v0, v1}, Landroid/view/SurfaceView;->setFocusableInTouchMode(Z)V
-
-    .line 101
-    iget-object v0, v14, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object v0, v14, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
     invoke-virtual {v14, v0}, Landroid/app/Activity;->setContentView(Landroid/view/View;)V
 
-    .line 102
+    .line 101
     invoke-virtual/range {p0 .. p0}, Lcom/supercell/titan/GameApp;->setSystemUiVisibility()V
 
-    .line 103
+    .line 102
     new-instance v0, Lcom/supercell/titan/GoogleServiceClient;
 
     invoke-direct {v0, v14}, Lcom/supercell/titan/GoogleServiceClient;-><init>(Lcom/supercell/titan/GameApp;)V
 
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->C:Lcom/supercell/titan/GoogleServiceClient;
+    iput-object v0, v14, Lcom/supercell/titan/GameApp;->B:Lcom/supercell/titan/GoogleServiceClient;
 
-    .line 104
+    .line 103
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-lt v0, v1, :cond_18
 
-    .line 105
-    iget-object v0, v14, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
+    .line 104
+    iget-object v0, v14, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
     new-instance v1, Lcom/supercell/titan/f;
 
@@ -4127,9 +4097,9 @@
 
     goto :goto_d
 
-    .line 106
+    .line 105
     :cond_18
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -4139,8 +4109,8 @@
 
     if-eqz v0, :cond_1b
 
-    .line 107
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    .line 106
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -4152,7 +4122,7 @@
 
     aget v0, v0, v1
 
-    .line 108
+    .line 107
     invoke-virtual/range {p0 .. p0}, Lcom/supercell/titan/GameApp;->isPortrait()Z
 
     move-result v1
@@ -4166,7 +4136,7 @@
     :cond_19
     const/4 v1, 0x0
 
-    .line 109
+    .line 108
     :goto_9
     invoke-virtual/range {p0 .. p0}, Lcom/supercell/titan/GameApp;->isPortrait()Z
 
@@ -4179,15 +4149,15 @@
     :cond_1a
     const/4 v0, 0x0
 
-    .line 110
+    .line 109
     :goto_a
     invoke-static {v1, v1, v0, v0}, Lcom/supercell/titan/GameApp;->setSafeMargins(IIII)V
 
     goto :goto_d
 
-    .line 111
+    .line 110
     :cond_1b
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -4203,7 +4173,7 @@
 
     if-eqz v0, :cond_1e
 
-    .line 112
+    .line 111
     invoke-virtual/range {p0 .. p0}, Lcom/supercell/titan/GameApp;->isPortrait()Z
 
     move-result v0
@@ -4219,7 +4189,7 @@
     :cond_1c
     const/4 v0, 0x0
 
-    .line 113
+    .line 112
     :goto_b
     invoke-virtual/range {p0 .. p0}, Lcom/supercell/titan/GameApp;->isPortrait()Z
 
@@ -4232,67 +4202,71 @@
     :cond_1d
     const/4 v1, 0x0
 
-    .line 114
+    .line 113
     :goto_c
     invoke-static {v0, v0, v1, v1}, Lcom/supercell/titan/GameApp;->setSafeMargins(IIII)V
 
-    .line 115
+    .line 114
     :cond_1e
     :goto_d
-    iget-boolean v0, v14, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, v14, Lcom/supercell/titan/GameApp;->o:Z
 
     if-eqz v0, :cond_1f
 
-    .line 116
+    .line 115
     invoke-static {}, Lcom/supercell/titan/GameApp;->nOnCreate()V
 
     goto :goto_e
 
-    .line 117
     :catch_5
-    new-instance v0, Lcom/supercell/titan/GL2JNISurfaceView;
+    move-object v15, v13
 
-    invoke-direct {v0, v15}, Lcom/supercell/titan/GL2JNISurfaceView;-><init>(Landroid/content/Context;)V
+    .line 116
+    invoke-virtual {v14, v15}, Lcom/supercell/titan/GameApp;->d(Landroid/content/Context;)V
 
-    iput-object v0, v14, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
-
-    .line 118
-    invoke-virtual {v14, v0}, Landroid/app/Activity;->setContentView(Landroid/view/View;)V
-
-    .line 119
-    iget-object v0, v14, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
-
-    new-instance v1, Lcom/supercell/titan/g;
-
-    invoke-direct {v1, v14}, Lcom/supercell/titan/g;-><init>(Lcom/supercell/titan/GameApp;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/SurfaceView;->post(Ljava/lang/Runnable;)Z
-
-    .line 120
+    .line 117
     :cond_1f
     :goto_e
-    iget-boolean v0, v14, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, v14, Lcom/supercell/titan/GameApp;->o:Z
 
     if-nez v0, :cond_20
 
     return-void
 
-    .line 121
+    .line 118
     :cond_20
     invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-virtual {v14, v0}, Lcom/supercell/titan/GameApp;->d(Landroid/content/Intent;)Ljava/lang/String;
+    if-eqz v0, :cond_21
+
+    .line 119
+    invoke-virtual {v0}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_21
+
+    .line 120
+    invoke-virtual {v0}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 122
-    invoke-virtual {v14, v0}, Lcom/supercell/titan/GameApp;->handleDeepLink(Ljava/lang/String;)V
+    invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    goto :goto_f
+
+    :cond_21
+    const/4 v15, 0x0
+
+    .line 121
+    :goto_f
+    invoke-virtual {v14, v15}, Lcom/supercell/titan/GameApp;->handleDeepLink(Ljava/lang/String;)V
 
     return-void
-
-    nop
 
     :array_0
     .array-data 4
@@ -4323,7 +4297,7 @@
     .end array-data
 .end method
 
-.method public onDestroy()V
+.method public final onDestroy()V
     .locals 2
 
     .line 1
@@ -4334,12 +4308,12 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/titan/GameApp;->G:Lcom/supercell/titan/GameApp$UnbotifyActivityLifecycleCallbacks;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp;->F:Lcom/supercell/titan/GameApp$UnbotifyActivityLifecycleCallbacks;
 
     invoke-virtual {v0, v1}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
     .line 3
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->o:Z
 
     if-eqz v0, :cond_0
 
@@ -4347,7 +4321,7 @@
     invoke-static {}, Lcom/supercell/titan/GameApp;->nOnDestroy()V
 
     .line 5
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->h:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->g:Landroid/os/Handler;
 
     const/4 v1, 0x0
 
@@ -4361,12 +4335,12 @@
 
     .line 8
     :cond_0
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->x:Lcom/supercell/titan/PurchaseManager;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->w:Lcom/supercell/titan/PurchaseManagerGoogle;
 
     if-eqz v0, :cond_1
 
     .line 9
-    invoke-virtual {v0}, Lcom/supercell/titan/PurchaseManager;->onDestroy()V
+    invoke-virtual {v0}, Lcom/supercell/titan/PurchaseManagerGoogle;->onDestroy()V
 
     .line 10
     :cond_1
@@ -4412,27 +4386,45 @@
     return p1
 .end method
 
-.method public onNewIntent(Landroid/content/Intent;)V
+.method public final onNewIntent(Landroid/content/Intent;)V
     .locals 1
 
     .line 1
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setIntent(Landroid/content/Intent;)V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
+
+    if-eqz v0, :cond_1
+
+    if-eqz p1, :cond_1
+
+    .line 3
+    invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+
+    move-result-object v0
 
     if-eqz v0, :cond_0
 
-    if-eqz p1, :cond_0
-
-    .line 3
-    invoke-virtual {p0, p1}, Lcom/supercell/titan/GameApp;->d(Landroid/content/Intent;)Ljava/lang/String;
+    .line 4
+    invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lcom/supercell/titan/GameApp;->handleDeepLink(Ljava/lang/String;)V
+    invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_0
 
     :cond_0
+    const/4 p1, 0x0
+
+    .line 5
+    :goto_0
+    invoke-virtual {p0, p1}, Lcom/supercell/titan/GameApp;->handleDeepLink(Ljava/lang/String;)V
+
+    :cond_1
     return-void
 .end method
 
@@ -4443,7 +4435,7 @@
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
     .line 2
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->o:Z
 
     if-nez v0, :cond_0
 
@@ -4469,12 +4461,12 @@
 
     .line 6
     :cond_1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->x:Lcom/supercell/titan/PurchaseManager;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->w:Lcom/supercell/titan/PurchaseManagerGoogle;
 
     if-eqz v0, :cond_2
 
     .line 7
-    invoke-virtual {v0}, Lcom/supercell/titan/PurchaseManager;->onPause()V
+    invoke-virtual {v0}, Lcom/supercell/titan/PurchaseManagerGoogle;->onPause()V
 
     .line 8
     :cond_2
@@ -4490,7 +4482,7 @@
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->m:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->l:Ljava/util/Vector;
 
     if-eqz v0, :cond_0
 
@@ -4521,11 +4513,11 @@
     return-void
 .end method
 
-.method public onRestart()V
+.method public final onRestart()V
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->o:Z
 
     if-eqz v0, :cond_0
 
@@ -4546,7 +4538,7 @@
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
     .line 2
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->o:Z
 
     if-nez v0, :cond_0
 
@@ -4571,7 +4563,7 @@
     const-string v0, "input_method"
 
     .line 5
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -4598,7 +4590,7 @@
     return-void
 .end method
 
-.method public onSaveInstanceState(Landroid/os/Bundle;)V
+.method public final onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
 
     .line 1
@@ -4622,7 +4614,7 @@
     return-void
 .end method
 
-.method public onStart()V
+.method public final onStart()V
     .locals 4
 
     .line 1
@@ -4646,7 +4638,7 @@
 
     .line 4
     :cond_0
-    iget-boolean v1, p0, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v1, p0, Lcom/supercell/titan/GameApp;->o:Z
 
     if-nez v1, :cond_1
 
@@ -4656,33 +4648,33 @@
     const/4 v1, 0x0
 
     .line 5
-    iput-boolean v1, p0, Lcom/supercell/titan/GameApp;->o:Z
+    iput-boolean v1, p0, Lcom/supercell/titan/GameApp;->n:Z
 
     .line 6
-    iget-boolean v2, p0, Lcom/supercell/titan/GameApp;->D:Z
+    iget-boolean v2, p0, Lcom/supercell/titan/GameApp;->C:Z
 
     if-eqz v2, :cond_2
 
     const/4 v1, 0x1
 
     .line 7
-    iput-boolean v1, p0, Lcom/supercell/titan/GameApp;->N:Z
+    iput-boolean v1, p0, Lcom/supercell/titan/GameApp;->M:Z
 
     goto :goto_0
 
     .line 8
     :cond_2
-    iput-boolean v1, p0, Lcom/supercell/titan/GameApp;->N:Z
+    iput-boolean v1, p0, Lcom/supercell/titan/GameApp;->M:Z
 
     .line 9
-    iput-boolean v1, p0, Lcom/supercell/titan/GameApp;->D:Z
+    iput-boolean v1, p0, Lcom/supercell/titan/GameApp;->C:Z
 
     .line 10
     invoke-virtual {p0, v1}, Lcom/supercell/titan/GameApp;->handleResume(Z)V
 
     .line 11
     :goto_0
-    iget-object v1, p0, Lcom/supercell/titan/GameApp;->l:Landroid/hardware/display/DisplayManager$DisplayListener;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp;->k:Lcom/supercell/titan/GameApp$d;
 
     if-nez v1, :cond_3
 
@@ -4691,23 +4683,23 @@
     if-lt v0, v1, :cond_3
 
     .line 12
-    new-instance v0, Lcom/supercell/titan/GameApp$c;
+    new-instance v0, Lcom/supercell/titan/GameApp$d;
 
-    invoke-direct {v0, p0}, Lcom/supercell/titan/GameApp$c;-><init>(Lcom/supercell/titan/GameApp;)V
+    invoke-direct {v0}, Lcom/supercell/titan/GameApp$d;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/titan/GameApp;->l:Landroid/hardware/display/DisplayManager$DisplayListener;
+    iput-object v0, p0, Lcom/supercell/titan/GameApp;->k:Lcom/supercell/titan/GameApp$d;
 
     const-string v0, "display"
 
     .line 13
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/hardware/display/DisplayManager;
 
     .line 14
-    iget-object v1, p0, Lcom/supercell/titan/GameApp;->l:Landroid/hardware/display/DisplayManager$DisplayListener;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp;->k:Lcom/supercell/titan/GameApp$d;
 
     new-instance v2, Landroid/os/Handler;
 
@@ -4726,11 +4718,11 @@
     return-void
 .end method
 
-.method public onStop()V
+.method public final onStop()V
     .locals 13
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->o:Z
 
     if-eqz v0, :cond_0
 
@@ -4741,10 +4733,10 @@
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Lcom/supercell/titan/GameApp;->o:Z
+    iput-boolean v0, p0, Lcom/supercell/titan/GameApp;->n:Z
 
     .line 4
-    iget-object v1, p0, Lcom/supercell/titan/GameApp;->C:Lcom/supercell/titan/GoogleServiceClient;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp;->B:Lcom/supercell/titan/GoogleServiceClient;
 
     if-eqz v1, :cond_1
 
@@ -4768,7 +4760,7 @@
 
     .line 8
     :cond_2
-    iget-object v1, p0, Lcom/supercell/titan/GameApp;->g:Landroid/net/wifi/WifiManager$WifiLock;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp;->f:Landroid/net/wifi/WifiManager$WifiLock;
 
     if-eqz v1, :cond_3
 
@@ -4779,13 +4771,13 @@
     if-eqz v1, :cond_3
 
     .line 9
-    iget-object v1, p0, Lcom/supercell/titan/GameApp;->g:Landroid/net/wifi/WifiManager$WifiLock;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp;->f:Landroid/net/wifi/WifiManager$WifiLock;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager$WifiLock;->release()V
 
     .line 10
     :cond_3
-    iget-object v1, p0, Lcom/supercell/titan/GameApp;->A:Lcom/supercell/titan/SecurePreferences;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
 
     if-eqz v1, :cond_7
 
@@ -4798,9 +4790,9 @@
     invoke-virtual {p0, v1, v2}, Lcom/supercell/titan/GameApp;->removeOutOfDateNotifications(J)V
 
     .line 13
-    sget-object v3, Lcom/supercell/titan/GameApp;->O:Lcom/supercell/titan/GameApp;
+    sget-object v3, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
 
-    iget-object v3, v3, Lcom/supercell/titan/GameApp;->r:Landroid/app/AlarmManager;
+    iget-object v3, v3, Lcom/supercell/titan/GameApp;->q:Landroid/app/AlarmManager;
 
     .line 14
     new-instance v4, Lorg/json/JSONArray;
@@ -4808,7 +4800,7 @@
     invoke-direct {v4}, Lorg/json/JSONArray;-><init>()V
 
     .line 15
-    sget-object v5, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sget-object v5, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     monitor-enter v5
 
@@ -4821,7 +4813,7 @@
     .line 16
     :goto_0
     :try_start_0
-    sget-object v9, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sget-object v9, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     invoke-virtual {v9}, Ljava/util/Vector;->size()I
 
@@ -4830,7 +4822,7 @@
     if-ge v7, v10, :cond_5
 
     .line 17
-    sget-object v10, Lcom/supercell/titan/GameApp;->R:Ljava/util/Vector;
+    sget-object v10, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
 
     invoke-virtual {v10, v7}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
 
@@ -4851,13 +4843,13 @@
 
     move-result-object v9
 
-    check-cast v9, Lcom/supercell/titan/GameApp$h;
+    check-cast v9, Lcom/supercell/titan/GameApp$i;
 
     .line 19
-    iget-object v12, v9, Lcom/supercell/titan/GameApp$h;->d:Ljava/lang/String;
+    iget-object v12, v9, Lcom/supercell/titan/GameApp$i;->d:Ljava/lang/String;
 
     .line 20
-    iget-object v12, v9, Lcom/supercell/titan/GameApp$h;->a:Landroid/app/PendingIntent;
+    iget-object v12, v9, Lcom/supercell/titan/GameApp$i;->a:Landroid/app/PendingIntent;
 
     invoke-virtual {v3, v6, v10, v11, v12}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
@@ -4872,42 +4864,42 @@
     const-string v11, "title"
 
     .line 22
-    iget-object v12, v9, Lcom/supercell/titan/GameApp$h;->e:Ljava/lang/String;
+    iget-object v12, v9, Lcom/supercell/titan/GameApp$i;->e:Ljava/lang/String;
 
     invoke-virtual {v10, v11, v12}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v11, "sound"
 
     .line 23
-    iget-object v12, v9, Lcom/supercell/titan/GameApp$h;->f:Ljava/lang/String;
+    iget-object v12, v9, Lcom/supercell/titan/GameApp$i;->f:Ljava/lang/String;
 
     invoke-virtual {v10, v11, v12}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v11, "msg"
 
     .line 24
-    iget-object v12, v9, Lcom/supercell/titan/GameApp$h;->d:Ljava/lang/String;
+    iget-object v12, v9, Lcom/supercell/titan/GameApp$i;->d:Ljava/lang/String;
 
     invoke-virtual {v10, v11, v12}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v11, "userId"
 
     .line 25
-    iget-object v12, v9, Lcom/supercell/titan/GameApp$h;->b:Ljava/lang/String;
+    iget-object v12, v9, Lcom/supercell/titan/GameApp$i;->b:Ljava/lang/String;
 
     invoke-virtual {v10, v11, v12}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v11, "id"
 
     .line 26
-    iget v12, v9, Lcom/supercell/titan/GameApp$h;->c:I
+    iget v12, v9, Lcom/supercell/titan/GameApp$i;->c:I
 
     invoke-virtual {v10, v11, v12}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     const-string v11, "imageURL"
 
     .line 27
-    iget-object v9, v9, Lcom/supercell/titan/GameApp$h;->g:Ljava/lang/String;
+    iget-object v9, v9, Lcom/supercell/titan/GameApp$i;->g:Ljava/lang/String;
 
     invoke-virtual {v10, v11, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -4948,7 +4940,7 @@
     move-result-object v0
 
     .line 32
-    iget-object v1, p0, Lcom/supercell/titan/GameApp;->A:Lcom/supercell/titan/SecurePreferences;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
 
     const-string v2, "localNotifications"
 
@@ -4958,7 +4950,7 @@
 
     .line 33
     :cond_6
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->A:Lcom/supercell/titan/SecurePreferences;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
 
     const-string v1, "localNotifications"
 
@@ -5003,10 +4995,10 @@
     xor-int/lit8 v0, p1, 0x1
 
     .line 4
-    iput-boolean v0, p0, Lcom/supercell/titan/GameApp;->D:Z
+    iput-boolean v0, p0, Lcom/supercell/titan/GameApp;->C:Z
 
     .line 5
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->o:Z
 
     if-eqz v0, :cond_1
 
@@ -5021,7 +5013,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->m:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->l:Ljava/util/Vector;
 
     if-nez v0, :cond_0
 
@@ -5040,8 +5032,7 @@
 .method public removeActivityResultListener(Lcom/supercell/titan/GameApp$OnActivityResultListener;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->H:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->G:Ljava/util/ArrayList;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -5052,7 +5043,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sget-object v0, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->isEmpty()Z
 
@@ -5075,7 +5066,7 @@
     .locals 6
 
     .line 3
-    sget-object v0, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sget-object v0, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     monitor-enter v0
 
@@ -5092,7 +5083,7 @@
     if-ltz v1, :cond_1
 
     .line 5
-    sget-object v2, Lcom/supercell/titan/GameApp;->R:Ljava/util/Vector;
+    sget-object v2, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
 
     invoke-virtual {v2, v1}, Ljava/util/Vector;->get(I)Ljava/lang/Object;
 
@@ -5109,7 +5100,7 @@
     if-ltz v5, :cond_0
 
     .line 6
-    sget-object v3, Lcom/supercell/titan/GameApp;->Q:Ljava/util/Vector;
+    sget-object v3, Lcom/supercell/titan/GameApp;->P:Ljava/util/Vector;
 
     invoke-virtual {v3, v1}, Ljava/util/Vector;->remove(I)Ljava/lang/Object;
 
@@ -5162,7 +5153,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->h:Z
 
     if-eqz v0, :cond_0
 
@@ -5172,7 +5163,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/supercell/titan/GameApp;->i:Z
+    iput-boolean v0, p0, Lcom/supercell/titan/GameApp;->h:Z
 
     .line 3
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
@@ -5183,8 +5174,7 @@
 .method public runInUiThreadFromCpp(J)V
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->h:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->g:Landroid/os/Handler;
 
     new-instance v1, Lcom/supercell/titan/d;
 
@@ -5204,12 +5194,12 @@
 
     .line 1
     :cond_0
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
     if-nez v0, :cond_2
 
     .line 2
-    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->p:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/GameApp;->o:Z
 
     if-eqz v0, :cond_1
 
@@ -5220,6 +5210,7 @@
 
     move-result-object v0
 
+    .line 4
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -5235,9 +5226,9 @@
     :cond_1
     return-void
 
-    .line 4
+    .line 5
     :cond_2
-    invoke-virtual {v0, p1}, Landroid/view/SurfaceView;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, p1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     return-void
 .end method
@@ -5258,7 +5249,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
     if-nez v0, :cond_0
 
@@ -5266,7 +5257,7 @@
 
     .line 2
     :cond_0
-    iget v0, p0, Lcom/supercell/titan/GameApp;->F:I
+    iget v0, p0, Lcom/supercell/titan/GameApp;->E:I
 
     const/4 v1, -0x1
 
@@ -5292,7 +5283,7 @@
     .line 4
     :cond_1
     :try_start_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -5349,7 +5340,7 @@
     const/16 v0, 0x1706
 
     .line 8
-    iput v0, p0, Lcom/supercell/titan/GameApp;->F:I
+    iput v0, p0, Lcom/supercell/titan/GameApp;->E:I
 
     goto :goto_1
 
@@ -5357,16 +5348,16 @@
     const/16 v0, 0x400
 
     .line 9
-    iput v0, p0, Lcom/supercell/titan/GameApp;->F:I
+    iput v0, p0, Lcom/supercell/titan/GameApp;->E:I
 
     .line 10
     :cond_4
     :goto_1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
 
-    iget v1, p0, Lcom/supercell/titan/GameApp;->F:I
+    iget v1, p0, Lcom/supercell/titan/GameApp;->E:I
 
-    invoke-virtual {v0, v1}, Landroid/view/SurfaceView;->setSystemUiVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
 
     return-void
 .end method
@@ -5380,9 +5371,9 @@
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/GameApp$d;
+    new-instance v1, Lcom/supercell/titan/GameApp$e;
 
-    invoke-direct {v1, p0}, Lcom/supercell/titan/GameApp$d;-><init>(Lcom/supercell/titan/GameApp;)V
+    invoke-direct {v1, p0}, Lcom/supercell/titan/GameApp$e;-><init>(Lcom/supercell/titan/GameApp;)V
 
     .line 3
     invoke-virtual {v0, v1, p1, p2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
@@ -5403,7 +5394,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->y:Lcom/supercell/titan/SecurePreferences;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->x:Lcom/supercell/titan/SecurePreferences;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -5417,7 +5408,7 @@
     .line 3
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp;->z:Lcom/supercell/titan/SecurePreferences;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp;->y:Lcom/supercell/titan/SecurePreferences;
 
     invoke-virtual {p0, p1, p2, v0}, Lcom/supercell/titan/GameApp;->e(Ljava/lang/String;Ljava/lang/String;Lcom/supercell/titan/SecurePreferences;)Z
 
@@ -5426,7 +5417,7 @@
     or-int/lit8 v0, v0, 0x0
 
     .line 4
-    iget-object v1, p0, Lcom/supercell/titan/GameApp;->y:Lcom/supercell/titan/SecurePreferences;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp;->x:Lcom/supercell/titan/SecurePreferences;
 
     invoke-virtual {p0, p1, p2, v1}, Lcom/supercell/titan/GameApp;->e(Ljava/lang/String;Ljava/lang/String;Lcom/supercell/titan/SecurePreferences;)Z
 

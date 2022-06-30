@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/log/PlayerLogManager$1;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/log/PlayerLogManager$1$1;->this$0:Lcom/kakaogame/log/PlayerLogManager$1;
 
     iput-object p2, p0, Lcom/kakaogame/log/PlayerLogManager$1$1;->val$playerId:Ljava/lang/String;

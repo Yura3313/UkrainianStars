@@ -13,7 +13,7 @@
     .end annotation
 .end field
 
-.field public static final k:Ljava/util/List;
+.field public static final j:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -25,13 +25,13 @@
 
 
 # instance fields
+.field public final f:J
+
 .field public final g:J
 
-.field public final h:J
+.field public final h:I
 
-.field public final i:I
-
-.field public final j:Ljava/util/List;
+.field public final i:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -51,12 +51,12 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/gms/internal/drive/zzfl;->k:Ljava/util/List;
+    sput-object v0, Lcom/google/android/gms/internal/drive/zzfl;->j:Ljava/util/List;
 
     .line 2
-    new-instance v0, Lq3/q;
+    new-instance v0, Lr3/q;
 
-    invoke-direct {v0}, Lq3/q;-><init>()V
+    invoke-direct {v0}, Lr3/q;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/drive/zzfl;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -78,16 +78,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-wide p1, p0, Lcom/google/android/gms/internal/drive/zzfl;->g:J
+    iput-wide p1, p0, Lcom/google/android/gms/internal/drive/zzfl;->f:J
 
     .line 3
-    iput-wide p3, p0, Lcom/google/android/gms/internal/drive/zzfl;->h:J
+    iput-wide p3, p0, Lcom/google/android/gms/internal/drive/zzfl;->g:J
 
     .line 4
-    iput p5, p0, Lcom/google/android/gms/internal/drive/zzfl;->i:I
+    iput p5, p0, Lcom/google/android/gms/internal/drive/zzfl;->h:I
 
     .line 5
-    iput-object p6, p0, Lcom/google/android/gms/internal/drive/zzfl;->j:Ljava/util/List;
+    iput-object p6, p0, Lcom/google/android/gms/internal/drive/zzfl;->i:Ljava/util/List;
 
     return-void
 .end method
@@ -100,56 +100,56 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x2
-
     .line 2
-    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzfl;->g:J
+    iget-wide v0, p0, Lcom/google/android/gms/internal/drive/zzfl;->f:J
+
+    const/4 v2, 0x2
 
     const/16 v3, 0x8
 
     .line 3
-    invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v3}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 4
-    invoke-virtual {p1, v1, v2}, Landroid/os/Parcel;->writeLong(J)V
-
-    const/4 v0, 0x3
+    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 5
-    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzfl;->h:J
+    iget-wide v0, p0, Lcom/google/android/gms/internal/drive/zzfl;->g:J
+
+    const/4 v2, 0x3
 
     .line 6
-    invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v3}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 7
-    invoke-virtual {p1, v1, v2}, Landroid/os/Parcel;->writeLong(J)V
+    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 8
-    iget v0, p0, Lcom/google/android/gms/internal/drive/zzfl;->i:I
+    iget v0, p0, Lcom/google/android/gms/internal/drive/zzfl;->h:I
 
     const/4 v1, 0x4
 
     .line 9
-    invoke-static {p1, v1, v1}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v1}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 10
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    const/4 v0, 0x5
-
     .line 11
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzfl;->j:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/internal/drive/zzfl;->i:Ljava/util/List;
+
+    const/4 v1, 0x5
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, v1, v0, v2}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 12
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

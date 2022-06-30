@@ -1,221 +1,53 @@
 .class public final Lae/g;
-.super Ljava/lang/Object;
-.source "Tuples.kt"
-
-# interfaces
-.implements Ljava/io/Serializable;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<A:",
-        "Ljava/lang/Object;",
-        "B:",
-        "Ljava/lang/Object;",
-        "C:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/io/Serializable;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final g:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TA;"
-        }
-    .end annotation
-.end field
-
-.field public final h:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TB;"
-        }
-    .end annotation
-.end field
-
-.field public final i:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TC;"
-        }
-    .end annotation
-.end field
+.super Landroidx/recyclerview/widget/p;
+.source "RecyclerViewUtil.kt"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TA;TB;TC;)V"
-        }
-    .end annotation
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lae/g;->g:Ljava/lang/Object;
-
-    iput-object p2, p0, Lae/g;->h:Ljava/lang/Object;
-
-    iput-object p3, p0, Lae/g;->i:Ljava/lang/Object;
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/p;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
-    .locals 2
+.method public final f(IIIII)I
+    .locals 0
 
-    if-eq p0, p1, :cond_1
+    sub-int/2addr p4, p3
 
-    instance-of v0, p1, Lae/g;
+    div-int/lit8 p4, p4, 0x2
 
-    if-eqz v0, :cond_0
+    add-int/2addr p4, p3
 
-    check-cast p1, Lae/g;
+    sub-int/2addr p2, p1
 
-    iget-object v0, p0, Lae/g;->g:Ljava/lang/Object;
+    div-int/lit8 p2, p2, 0x2
 
-    iget-object v1, p1, Lae/g;->g:Ljava/lang/Object;
+    add-int/2addr p2, p1
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sub-int/2addr p4, p2
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lae/g;->h:Ljava/lang/Object;
-
-    iget-object v1, p1, Lae/g;->h:Ljava/lang/Object;
-
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lae/g;->i:Ljava/lang/Object;
-
-    iget-object p1, p1, Lae/g;->i:Ljava/lang/Object;
-
-    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    return p1
+    return p4
 .end method
 
-.method public hashCode()I
-    .locals 3
+.method public final g(Landroid/util/DisplayMetrics;)F
+    .locals 1
 
-    iget-object v0, p0, Lae/g;->g:Ljava/lang/Object;
+    const-string v0, "displayMetrics"
 
-    const/4 v1, 0x0
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v0, :cond_0
+    iget p1, p1, Landroid/util/DisplayMetrics;->densityDpi:I
 
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    int-to-float p1, p1
 
-    move-result v0
+    const/high16 v0, 0x41200000    # 10.0f
 
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lae/g;->h:Ljava/lang/Object;
-
-    if-eqz v2, :cond_1
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v2, 0x0
-
-    :goto_1
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lae/g;->i:Ljava/lang/Object;
-
-    if-eqz v2, :cond_2
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v1
-
-    :cond_2
-    add-int/2addr v0, v1
+    div-float/2addr v0, p1
 
     return v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const/16 v1, 0x28
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lae/g;->g:Ljava/lang/Object;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lae/g;->h:Ljava/lang/Object;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lae/g;->i:Ljava/lang/Object;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
 .end method

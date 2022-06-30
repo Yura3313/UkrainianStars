@@ -1,4 +1,4 @@
-.class public Landroidx/activity/ComponentActivity$b;
+.class public final Landroidx/activity/ComponentActivity$b;
 .super Landroidx/activity/result/ActivityResultRegistry;
 .source "ComponentActivity.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Landroidx/activity/ComponentActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/activity/ComponentActivity$b;->i:Landroidx/activity/ComponentActivity;
 
     invoke-direct {p0}, Landroidx/activity/result/ActivityResultRegistry;-><init>()V
@@ -32,7 +31,7 @@
 
 
 # virtual methods
-.method public b(ILb/a;Ljava/lang/Object;Lu/b;)V
+.method public final b(ILb/a;Ljava/lang/Object;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -43,7 +42,7 @@
             ">(I",
             "Lb/a<",
             "TI;TO;>;TI;",
-            "Lu/b;",
+            "Ljava/lang/Object;",
             ")V"
         }
     .end annotation
@@ -54,9 +53,9 @@
     .line 2
     invoke-virtual {p2, v0, p3}, Lb/a;->b(Landroid/content/Context;Ljava/lang/Object;)Lb/a$a;
 
-    move-result-object p4
+    move-result-object v1
 
-    if-eqz p4, :cond_0
+    if-eqz v1, :cond_0
 
     .line 3
     new-instance p2, Landroid/os/Handler;
@@ -67,9 +66,9 @@
 
     invoke-direct {p2, p3}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    new-instance p3, Landroidx/activity/ComponentActivity$b$a;
+    new-instance p3, Landroidx/activity/b;
 
-    invoke-direct {p3, p0, p1, p4}, Landroidx/activity/ComponentActivity$b$a;-><init>(Landroidx/activity/ComponentActivity$b;ILb/a$a;)V
+    invoke-direct {p3, p0, p1, v1}, Landroidx/activity/b;-><init>(Landroidx/activity/ComponentActivity$b;ILb/a$a;)V
 
     invoke-virtual {p2, p3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -77,7 +76,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p2, v0, p3}, Lb/a;->a(Landroid/content/Context;Ljava/lang/Object;)Landroid/content/Intent;
+    invoke-virtual {p2, p3}, Lb/a;->a(Ljava/lang/Object;)Landroid/content/Intent;
 
     move-result-object p2
 
@@ -86,44 +85,44 @@
     .line 5
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
-    move-result-object p4
+    move-result-object v1
 
-    if-eqz p4, :cond_1
+    if-eqz v1, :cond_1
 
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
-    move-result-object p4
+    move-result-object v1
 
-    invoke-virtual {p4}, Landroid/os/Bundle;->getClassLoader()Ljava/lang/ClassLoader;
+    invoke-virtual {v1}, Landroid/os/Bundle;->getClassLoader()Ljava/lang/ClassLoader;
 
-    move-result-object p4
+    move-result-object v1
 
-    if-nez p4, :cond_1
+    if-nez v1, :cond_1
 
     .line 6
-    invoke-virtual {v0}, Landroid/app/Activity;->getClassLoader()Ljava/lang/ClassLoader;
+    invoke-virtual {v0}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
 
-    move-result-object p4
+    move-result-object v1
 
-    invoke-virtual {p2, p4}, Landroid/content/Intent;->setExtrasClassLoader(Ljava/lang/ClassLoader;)V
+    invoke-virtual {p2, v1}, Landroid/content/Intent;->setExtrasClassLoader(Ljava/lang/ClassLoader;)V
 
     :cond_1
-    const-string p4, "androidx.activity.result.contract.extra.ACTIVITY_OPTIONS_BUNDLE"
+    const-string v1, "androidx.activity.result.contract.extra.ACTIVITY_OPTIONS_BUNDLE"
 
     .line 7
-    invoke-virtual {p2, p4}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
+    invoke-virtual {p2, v1}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_2
+    if-eqz v2, :cond_2
 
     .line 8
-    invoke-virtual {p2, p4}, Landroid/content/Intent;->getBundleExtra(Ljava/lang/String;)Landroid/os/Bundle;
+    invoke-virtual {p2, v1}, Landroid/content/Intent;->getBundleExtra(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object p3
 
     .line 9
-    invoke-virtual {p2, p4}, Landroid/content/Intent;->removeExtra(Ljava/lang/String;)V
+    invoke-virtual {p2, v1}, Landroid/content/Intent;->removeExtra(Ljava/lang/String;)V
 
     :cond_2
     move-object v7, p3
@@ -133,9 +132,9 @@
 
     move-result-object p3
 
-    const-string p4, "androidx.activity.result.contract.action.REQUEST_PERMISSIONS"
+    const-string v1, "androidx.activity.result.contract.action.REQUEST_PERMISSIONS"
 
-    invoke-virtual {p4, p3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p3
 
@@ -156,7 +155,7 @@
 
     .line 12
     :cond_3
-    invoke-static {v0, p2, p1}, Lu/a;->h(Landroid/app/Activity;[Ljava/lang/String;I)V
+    invoke-static {v0, p2, p1}, Lu/a;->k(Landroid/app/Activity;[Ljava/lang/String;I)V
 
     goto :goto_0
 
@@ -166,9 +165,9 @@
 
     move-result-object p3
 
-    const-string p4, "androidx.activity.result.contract.action.INTENT_SENDER_REQUEST"
+    const-string v1, "androidx.activity.result.contract.action.INTENT_SENDER_REQUEST"
 
-    invoke-virtual {p4, p3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p3
 
@@ -185,21 +184,21 @@
 
     .line 15
     :try_start_0
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->o()Landroid/content/IntentSender;
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->l()Landroid/content/IntentSender;
 
     move-result-object v1
 
     .line 16
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->b()Landroid/content/Intent;
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->a()Landroid/content/Intent;
 
     move-result-object v3
 
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->i()I
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->d()I
 
     move-result v4
 
     .line 17
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->k()I
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->j()I
 
     move-result v5
 
@@ -225,15 +224,15 @@
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
-    move-result-object p4
+    move-result-object v0
 
-    invoke-direct {p3, p4}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    invoke-direct {p3, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    new-instance p4, Landroidx/activity/ComponentActivity$b$b;
+    new-instance v0, Landroidx/activity/c;
 
-    invoke-direct {p4, p0, p1, p2}, Landroidx/activity/ComponentActivity$b$b;-><init>(Landroidx/activity/ComponentActivity$b;ILandroid/content/IntentSender$SendIntentException;)V
+    invoke-direct {v0, p0, p1, p2}, Landroidx/activity/c;-><init>(Landroidx/activity/ComponentActivity$b;ILandroid/content/IntentSender$SendIntentException;)V
 
-    invoke-virtual {p3, p4}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {p3, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 

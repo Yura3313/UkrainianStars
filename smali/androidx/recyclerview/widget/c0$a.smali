@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/c0$a;
+.class public final Landroidx/recyclerview/widget/c0$a;
 .super Landroidx/recyclerview/widget/RecyclerView$q;
 .source "SnapHelper.java"
 
@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/recyclerview/widget/RecyclerView;I)V
+.method public final a(Landroidx/recyclerview/widget/RecyclerView;I)V
     .locals 0
 
     if-nez p2, :cond_0
@@ -63,7 +63,7 @@
     return-void
 .end method
 
-.method public b(Landroidx/recyclerview/widget/RecyclerView;II)V
+.method public final b(Landroidx/recyclerview/widget/RecyclerView;II)V
     .locals 0
 
     if-nez p2, :cond_0
@@ -73,7 +73,6 @@
     :cond_0
     const/4 p1, 0x1
 
-    .line 1
     iput-boolean p1, p0, Landroidx/recyclerview/widget/c0$a;->a:Z
 
     :cond_1

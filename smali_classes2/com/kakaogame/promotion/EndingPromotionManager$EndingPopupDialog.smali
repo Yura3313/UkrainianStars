@@ -176,7 +176,7 @@
 
     invoke-direct {p2, p0, v2, v0}, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$4;-><init>(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;Landroid/widget/ImageView;Landroid/widget/ImageView;)V
 
-    invoke-static {p1, v2, p2}, Lcom/kakaogame/ui/ImageDownloader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Lgc/a;)V
+    invoke-static {p1, v2, p2}, Lcom/kakaogame/ui/ImageDownloader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Lkc/a;)V
 
     goto :goto_0
 
@@ -197,7 +197,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;->getClickLink()Ljava/lang/String;
 
     move-result-object p0
@@ -208,7 +207,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;->handleClick()V
 
     return-void
@@ -217,7 +215,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;)Lcom/kakaogame/promotion/KGPromotionData;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;->promotion:Lcom/kakaogame/promotion/KGPromotionData;
 
     return-object p0
@@ -226,7 +223,6 @@
 .method public static synthetic access$302(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;->clickLink:Ljava/lang/String;
 
     return-object p1
@@ -235,7 +231,6 @@
 .method public static synthetic access$400(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;)Landroid/app/Activity;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;->activity:Landroid/app/Activity;
 
     return-object p0
@@ -244,7 +239,6 @@
 .method private getClickLink()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;->clickLink:Ljava/lang/String;
 
     return-object v0

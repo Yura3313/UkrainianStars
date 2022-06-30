@@ -30,53 +30,45 @@
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 7
 
-    if-eqz p1, :cond_0
+    const-string v0, "in"
 
-    new-instance v6, Lcom/kakao/sdk/auth/model/OAuthToken;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lcom/kakao/sdk/auth/model/OAuthToken;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readSerializable()Ljava/io/Serializable;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readSerializable()Ljava/io/Serializable;
+    move-object v3, v1
 
-    move-result-object v0
-
-    move-object v2, v0
-
-    check-cast v2, Ljava/util/Date;
+    check-cast v3, Ljava/util/Date;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readSerializable()Ljava/io/Serializable;
 
-    move-result-object v0
+    move-result-object v1
 
-    move-object v4, v0
+    move-object v5, v1
 
-    check-cast v4, Ljava/util/Date;
+    check-cast v5, Ljava/util/Date;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
 
-    move-result-object v5
+    move-result-object v6
 
-    move-object v0, v6
+    move-object v1, v0
 
-    invoke-direct/range {v0 .. v5}, Lcom/kakao/sdk/auth/model/OAuthToken;-><init>(Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;Ljava/util/Date;Ljava/util/List;)V
+    invoke-direct/range {v1 .. v6}, Lcom/kakao/sdk/auth/model/OAuthToken;-><init>(Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;Ljava/util/Date;Ljava/util/List;)V
 
-    return-object v6
-
-    :cond_0
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

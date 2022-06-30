@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;
-.super Lle/j;
+.super Lse/h;
 .source "IngameFriendsFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->j(Landroid/view/ViewGroup;I)Lvd/k1$a;
+    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->o(Landroid/view/ViewGroup;I)Lae/c2$a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,141 +18,136 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
+        "Lse/h;",
+        "Lre/l<",
         "Landroid/view/View;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lvd/k1$a;
+.field public final synthetic f:Lae/c2$a;
 
 
 # direct methods
-.method public constructor <init>(Lvd/k1$a;)V
+.method public constructor <init>(Lae/c2$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->g:Lvd/k1$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->f:Lae/c2$a;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
     .line 1
     check-cast p1, Landroid/view/View;
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_3
+    const-string v0, "it"
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->g:Lvd/k1$a;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p1, Lvd/k1$a;->B:Landroid/view/View;
+    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->f:Lae/c2$a;
 
     .line 4
-    sget v1, Lcom/supercell/id/R$id;->fbExclamationMark:I
+    iget-object p1, p1, Lae/c2$a;->A:Landroid/view/View;
 
-    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    .line 5
+    sget v0, Lcom/supercell/id/R$id;->fbExclamationMark:I
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroid/widget/ImageView;
 
-    const-string v1, "containerView.fbExclamationMark"
+    const-string v0, "containerView.fbExclamationMark"
 
-    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->g:Lvd/k1$a;
-
-    .line 5
-    iget-object v1, v1, Lvd/k1$a;->B:Landroid/view/View;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->f:Lae/c2$a;
 
     .line 6
-    sget v2, Lcom/supercell/id/R$id;->fbIcon:I
+    iget-object v0, v0, Lae/c2$a;->A:Landroid/view/View;
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    .line 7
+    sget v1, Lcom/supercell/id/R$id;->fbIcon:I
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    const-string v1, "containerView.fbIcon"
+
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 8
+    invoke-virtual {v0}, Landroid/view/View;->getWidth()I
+
+    move-result v0
+
+    div-int/lit8 v0, v0, 0x2
+
+    .line 9
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
-    check-cast v1, Landroid/widget/ImageView;
+    instance-of v2, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
-    const-string v2, "containerView.fbIcon"
+    const/4 v3, 0x0
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    if-nez v2, :cond_0
 
-    .line 7
-    invoke-virtual {v1}, Landroid/view/View;->getWidth()I
-
-    move-result v1
-
-    div-int/lit8 v1, v1, 0x2
-
-    .line 8
-    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v2
-
-    instance-of v3, v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
-
-    if-nez v3, :cond_0
-
-    move-object v2, v0
+    move-object v1, v3
 
     :cond_0
-    check-cast v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
+    check-cast v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_1
 
-    .line 9
-    iget v3, v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->n:I
+    .line 10
+    iget v2, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->n:I
 
-    if-ne v1, v3, :cond_1
+    if-ne v0, v2, :cond_1
 
     goto :goto_0
 
     :cond_1
-    if-eqz v2, :cond_2
-
-    .line 10
-    iput v1, v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->n:I
-
-    move-object v0, v2
+    if-eqz v1, :cond_2
 
     .line 11
-    :cond_2
-    invoke-virtual {p1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    iput v0, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->n:I
+
+    move-object v3, v1
 
     .line 12
+    :cond_2
+    invoke-virtual {p1, v3}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 13
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object p1
 
     invoke-interface {p1}, Landroid/view/ViewParent;->requestLayout()V
 
-    .line 13
+    .line 14
     :goto_0
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
-
-    :cond_3
-    const-string p1, "it"
-
-    .line 14
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

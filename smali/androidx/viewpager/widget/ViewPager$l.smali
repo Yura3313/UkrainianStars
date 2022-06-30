@@ -1,4 +1,4 @@
-.class public Landroidx/viewpager/widget/ViewPager$l;
+.class public final Landroidx/viewpager/widget/ViewPager$l;
 .super Ljava/lang/Object;
 .source "ViewPager.java"
 
@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +37,7 @@
 
 
 # virtual methods
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 2
 
     .line 1

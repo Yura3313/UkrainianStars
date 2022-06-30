@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static b(Landroid/content/Context;I)Lf0/p;
+.method public static b(Landroid/content/Context;)Lf0/p;
     .locals 2
 
     .line 1
@@ -33,7 +33,9 @@
     .line 2
     new-instance v0, Lf0/p;
 
-    invoke-static {p0, p1}, Landroid/view/PointerIcon;->getSystemIcon(Landroid/content/Context;I)Landroid/view/PointerIcon;
+    const/16 v1, 0x3ea
+
+    invoke-static {p0, v1}, Landroid/view/PointerIcon;->getSystemIcon(Landroid/content/Context;I)Landroid/view/PointerIcon;
 
     move-result-object p0
 
@@ -45,19 +47,18 @@
     :cond_0
     new-instance p0, Lf0/p;
 
-    const/4 p1, 0x0
+    const/4 v0, 0x0
 
-    invoke-direct {p0, p1}, Lf0/p;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p0, v0}, Lf0/p;-><init>(Ljava/lang/Object;)V
 
     return-object p0
 .end method
 
 
 # virtual methods
-.method public a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lf0/p;->a:Ljava/lang/Object;
 
     return-object v0

@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/kakaogame/idp/KGKakao2Auth;Landroid/content/Context;II[Lcom/kakaogame/idp/KGKakao2Auth$Item;Landroid/app/Activity;[Lcom/kakaogame/idp/KGKakao2Auth$Item;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/idp/KGKakao2Auth$5;->this$0:Lcom/kakaogame/idp/KGKakao2Auth;
 
     iput-object p6, p0, Lcom/kakaogame/idp/KGKakao2Auth$5;->val$activity:Landroid/app/Activity;
@@ -96,7 +95,7 @@
     .line 6
     iget-object v0, p0, Lcom/kakaogame/idp/KGKakao2Auth$5;->val$activity:Landroid/app/Activity;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -126,7 +125,7 @@
     :cond_1
     iget-object v0, p0, Lcom/kakaogame/idp/KGKakao2Auth$5;->val$activity:Landroid/app/Activity;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 

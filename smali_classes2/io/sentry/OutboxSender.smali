@@ -31,7 +31,6 @@
 
     const-string v0, "UTF-8"
 
-    .line 1
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     move-result-object v0
@@ -139,7 +138,6 @@
 .method private logItemCaptured(I)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
     sget-object v1, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
@@ -166,7 +164,6 @@
 .method private logTimeout(Lio/sentry/protocol/SentryId;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
     sget-object v1, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
@@ -336,7 +333,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v4, v6}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v6}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -513,7 +510,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v4, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v7}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -906,7 +903,6 @@
 
     const-string v0, "session"
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result p1
@@ -927,7 +923,6 @@
 .method public bridge synthetic processDirectory(Ljava/io/File;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lio/sentry/DirectoryProcessor;->processDirectory(Ljava/io/File;)V
 
     return-void

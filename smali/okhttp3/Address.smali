@@ -257,7 +257,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Address;->certificatePinner:Lokhttp3/CertificatePinner;
 
     return-object v0
@@ -274,7 +273,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Address;->connectionSpecs:Ljava/util/List;
 
     return-object v0
@@ -283,7 +281,6 @@
 .method public dns()Lokhttp3/Dns;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Address;->dns:Lokhttp3/Dns;
 
     return-object v0
@@ -612,7 +609,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Address;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
 
     return-object v0
@@ -629,7 +625,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Address;->protocols:Ljava/util/List;
 
     return-object v0
@@ -640,7 +635,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Address;->proxy:Ljava/net/Proxy;
 
     return-object v0
@@ -649,7 +643,6 @@
 .method public proxyAuthenticator()Lokhttp3/Authenticator;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Address;->proxyAuthenticator:Lokhttp3/Authenticator;
 
     return-object v0
@@ -658,7 +651,6 @@
 .method public proxySelector()Ljava/net/ProxySelector;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Address;->proxySelector:Ljava/net/ProxySelector;
 
     return-object v0
@@ -667,7 +659,6 @@
 .method public socketFactory()Ljavax/net/SocketFactory;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Address;->socketFactory:Ljavax/net/SocketFactory;
 
     return-object v0
@@ -678,7 +669,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Address;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
 
     return-object v0
@@ -759,7 +749,6 @@
 .method public url()Lokhttp3/HttpUrl;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Address;->url:Lokhttp3/HttpUrl;
 
     return-object v0

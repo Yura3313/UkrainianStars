@@ -1,6 +1,6 @@
-.class public Lp3/a;
+.class public final Lp3/a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.source "com.google.android.gms:play-services-base@@17.5.0"
 
 
 # static fields
@@ -11,7 +11,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lp3/a;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -22,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,25 +61,26 @@
     return-object p0
 .end method
 
-.method public static b(Landroid/os/Parcel;Landroid/os/IInterface;)V
-    .locals 0
+.method public static b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    .locals 2
+
+    const/4 v0, 0x0
 
     if-nez p1, :cond_0
 
-    const/4 p1, 0x0
-
     .line 1
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
+    invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
 
-    .line 2
     :cond_0
-    invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
+    const/4 v1, 0x1
 
-    move-result-object p1
+    .line 2
+    invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
+    .line 3
+    invoke-interface {p1, p0, v0}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
 
     return-void
 .end method

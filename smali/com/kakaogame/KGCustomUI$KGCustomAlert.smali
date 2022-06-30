@@ -133,7 +133,6 @@
 .method public static makeAlert(Lcom/kakaogame/KGCustomUI$KGCustomAlertType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/KGCustomUI$KGCustomAlert;
     .locals 9
 
-    .line 1
     new-instance v8, Lcom/kakaogame/KGCustomUI$KGCustomAlert;
 
     move-object v0, v8

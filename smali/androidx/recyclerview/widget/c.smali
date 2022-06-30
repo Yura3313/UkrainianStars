@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/c;
+.class public final Landroidx/recyclerview/widget/c;
 .super Ljava/lang/Object;
 .source "BatchingListUpdateCallback.java"
 
@@ -51,7 +51,7 @@
 
 
 # virtual methods
-.method public a(II)V
+.method public final a(II)V
     .locals 1
 
     .line 1
@@ -65,7 +65,7 @@
     return-void
 .end method
 
-.method public b(II)V
+.method public final b(II)V
     .locals 4
 
     .line 1
@@ -115,7 +115,7 @@
     return-void
 .end method
 
-.method public c(II)V
+.method public final c(II)V
     .locals 3
 
     .line 1
@@ -161,7 +161,7 @@
     return-void
 .end method
 
-.method public d(IILjava/lang/Object;)V
+.method public final d(IILjava/lang/Object;)V
     .locals 5
 
     .line 1
@@ -175,9 +175,9 @@
 
     iget v2, p0, Landroidx/recyclerview/widget/c;->d:I
 
-    add-int v3, v0, v2
+    add-int/2addr v2, v0
 
-    if-gt p1, v3, :cond_0
+    if-gt p1, v2, :cond_0
 
     add-int v3, p1, p2
 
@@ -186,8 +186,6 @@
     iget-object v4, p0, Landroidx/recyclerview/widget/c;->e:Ljava/lang/Object;
 
     if-ne v4, p3, :cond_0
-
-    add-int/2addr v2, v0
 
     .line 2
     invoke-static {p1, v0}, Ljava/lang/Math;->min(II)I
@@ -228,7 +226,7 @@
     return-void
 .end method
 
-.method public e()V
+.method public final e()V
     .locals 4
 
     .line 1

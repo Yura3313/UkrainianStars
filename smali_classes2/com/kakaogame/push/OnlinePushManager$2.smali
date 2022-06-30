@@ -27,7 +27,6 @@
 .method public constructor <init>(Landroid/app/Activity;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/push/OnlinePushManager$2;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/push/OnlinePushManager$2;->val$message:Ljava/lang/String;
@@ -83,14 +82,14 @@
     .line 8
     iget-object v1, p0, Lcom/kakaogame/push/OnlinePushManager$2;->val$activity:Landroid/app/Activity;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
     .line 9
     iget-object v2, p0, Lcom/kakaogame/push/OnlinePushManager$2;->val$activity:Landroid/app/Activity;
 
-    invoke-virtual {v2}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
@@ -170,7 +169,7 @@
     move-exception v0
 
     .line 19
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 

@@ -1,6 +1,6 @@
-.class public Lo/m;
+.class public final Lo/m;
 .super Lo/c;
-.source "KeyTrigger.java"
+.source "KeyTimeCycle.java"
 
 
 # annotations
@@ -12,43 +12,37 @@
 
 
 # instance fields
-.field public e:Ljava/lang/String;
+.field public e:I
 
-.field public f:I
+.field public f:F
 
-.field public g:Ljava/lang/String;
+.field public g:F
 
-.field public h:Ljava/lang/String;
+.field public h:F
 
-.field public i:I
+.field public i:F
 
-.field public j:I
+.field public j:F
 
-.field public k:Landroid/view/View;
+.field public k:F
 
 .field public l:F
 
-.field public m:Z
+.field public m:F
 
-.field public n:Z
+.field public n:F
 
-.field public o:Z
+.field public o:F
 
 .field public p:F
 
-.field public q:Ljava/lang/reflect/Method;
+.field public q:F
 
-.field public r:Ljava/lang/reflect/Method;
+.field public r:I
 
-.field public s:Ljava/lang/reflect/Method;
+.field public s:F
 
 .field public t:F
-
-.field public u:Z
-
-.field public v:Landroid/graphics/RectF;
-
-.field public w:Landroid/graphics/RectF;
 
 
 # direct methods
@@ -58,72 +52,63 @@
     .line 1
     invoke-direct {p0}, Lo/c;-><init>()V
 
-    const/4 v0, 0x0
+    const/4 v0, -0x1
 
     .line 2
-    iput-object v0, p0, Lo/m;->e:Ljava/lang/String;
+    iput v0, p0, Lo/m;->e:I
 
-    const/4 v1, -0x1
+    const/high16 v0, 0x7fc00000    # Float.NaN
 
     .line 3
-    iput v1, p0, Lo/m;->f:I
+    iput v0, p0, Lo/m;->f:F
 
     .line 4
-    iput-object v0, p0, Lo/m;->g:Ljava/lang/String;
+    iput v0, p0, Lo/m;->g:F
 
     .line 5
-    iput-object v0, p0, Lo/m;->h:Ljava/lang/String;
+    iput v0, p0, Lo/m;->h:F
 
     .line 6
-    iput v1, p0, Lo/m;->i:I
+    iput v0, p0, Lo/m;->i:F
 
     .line 7
-    iput v1, p0, Lo/m;->j:I
+    iput v0, p0, Lo/m;->j:F
 
     .line 8
-    iput-object v0, p0, Lo/m;->k:Landroid/view/View;
-
-    const v0, 0x3dcccccd
+    iput v0, p0, Lo/m;->k:F
 
     .line 9
     iput v0, p0, Lo/m;->l:F
 
-    const/4 v0, 0x1
-
     .line 10
-    iput-boolean v0, p0, Lo/m;->m:Z
+    iput v0, p0, Lo/m;->m:F
 
     .line 11
-    iput-boolean v0, p0, Lo/m;->n:Z
+    iput v0, p0, Lo/m;->n:F
 
     .line 12
-    iput-boolean v0, p0, Lo/m;->o:Z
-
-    const/high16 v0, 0x7fc00000    # Float.NaN
+    iput v0, p0, Lo/m;->o:F
 
     .line 13
     iput v0, p0, Lo/m;->p:F
 
-    const/4 v0, 0x0
-
     .line 14
-    iput-boolean v0, p0, Lo/m;->u:Z
+    iput v0, p0, Lo/m;->q:F
+
+    const/4 v1, 0x0
 
     .line 15
-    new-instance v0, Landroid/graphics/RectF;
-
-    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
-
-    iput-object v0, p0, Lo/m;->v:Landroid/graphics/RectF;
+    iput v1, p0, Lo/m;->r:I
 
     .line 16
-    new-instance v0, Landroid/graphics/RectF;
+    iput v0, p0, Lo/m;->s:F
 
-    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
-
-    iput-object v0, p0, Lo/m;->w:Landroid/graphics/RectF;
+    const/4 v0, 0x0
 
     .line 17
+    iput v0, p0, Lo/m;->t:F
+
+    .line 18
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -135,23 +120,29 @@
 
 
 # virtual methods
-.method public a(Ljava/util/HashMap;)V
-    .locals 0
+.method public final a(Ljava/util/HashMap;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/HashMap<",
             "Ljava/lang/String;",
-            "Lo/s;",
+            "Lo/t;",
             ">;)V"
         }
     .end annotation
 
-    return-void
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, " KeyTimeCycles do not support SplineSet"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method
 
-.method public b(Ljava/util/HashSet;)V
-    .locals 0
+.method public final b(Ljava/util/HashSet;)V
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -161,14 +152,247 @@
         }
     .end annotation
 
+    .line 1
+    iget v0, p0, Lo/m;->f:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "alpha"
+
+    .line 2
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 3
+    :cond_0
+    iget v0, p0, Lo/m;->g:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "elevation"
+
+    .line 4
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 5
+    :cond_1
+    iget v0, p0, Lo/m;->h:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    const-string v0, "rotation"
+
+    .line 6
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 7
+    :cond_2
+    iget v0, p0, Lo/m;->i:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    const-string v0, "rotationX"
+
+    .line 8
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 9
+    :cond_3
+    iget v0, p0, Lo/m;->j:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    const-string v0, "rotationY"
+
+    .line 10
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 11
+    :cond_4
+    iget v0, p0, Lo/m;->n:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    const-string v0, "translationX"
+
+    .line 12
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 13
+    :cond_5
+    iget v0, p0, Lo/m;->o:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_6
+
+    const-string v0, "translationY"
+
+    .line 14
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 15
+    :cond_6
+    iget v0, p0, Lo/m;->p:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_7
+
+    const-string v0, "translationZ"
+
+    .line 16
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 17
+    :cond_7
+    iget v0, p0, Lo/m;->k:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_8
+
+    const-string v0, "transitionPathRotate"
+
+    .line 18
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 19
+    :cond_8
+    iget v0, p0, Lo/m;->l:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_9
+
+    const-string v0, "scaleX"
+
+    .line 20
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 21
+    :cond_9
+    iget v0, p0, Lo/m;->m:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_a
+
+    const-string v0, "scaleY"
+
+    .line 22
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 23
+    :cond_a
+    iget v0, p0, Lo/m;->q:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_b
+
+    const-string v0, "progress"
+
+    .line 24
+    invoke-virtual {p1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 25
+    :cond_b
+    iget-object v0, p0, Lo/c;->d:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->size()I
+
+    move-result v0
+
+    if-lez v0, :cond_c
+
+    .line 26
+    iget-object v0, p0, Lo/c;->d:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_c
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    .line 27
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "CUSTOM,"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :cond_c
     return-void
 .end method
 
-.method public c(Landroid/content/Context;Landroid/util/AttributeSet;)V
+.method public final c(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
 
     .line 1
-    sget-object v0, Landroidx/constraintlayout/widget/R$styleable;->KeyTrigger:[I
+    sget-object v0, Landroidx/constraintlayout/widget/R$styleable;->KeyTimeCycle:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -185,7 +409,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    if-ge v0, p2, :cond_3
+    if-ge v0, p2, :cond_4
 
     .line 4
     invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getIndex(I)I
@@ -201,83 +425,194 @@
 
     packed-switch v2, :pswitch_data_0
 
-    :pswitch_0
-    goto/16 :goto_1
-
     .line 6
-    :pswitch_1
-    iget v2, p0, Lo/m;->f:I
+    :pswitch_0
+    invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    sget-object v2, Lo/m$a;->a:Landroid/util/SparseIntArray;
+
+    invoke-virtual {v2, v1}, Landroid/util/SparseIntArray;->get(I)I
+
+    goto/16 :goto_1
 
     .line 7
-    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    :pswitch_1
+    invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
 
-    move-result v2
+    move-result-object v2
 
     .line 8
-    iput v2, p0, Lo/m;->f:I
+    iget v2, v2, Landroid/util/TypedValue;->type:I
 
-    goto/16 :goto_1
+    const/4 v3, 0x5
+
+    if-ne v2, v3, :cond_0
 
     .line 9
-    :pswitch_2
-    iget-boolean v2, p0, Lo/m;->u:Z
+    iget v2, p0, Lo/m;->t:F
 
     .line 10
-    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
     move-result v1
 
     .line 11
-    iput-boolean v1, p0, Lo/m;->u:Z
+    iput v1, p0, Lo/m;->t:F
 
-    goto/16 :goto_2
+    goto/16 :goto_1
 
     .line 12
-    :pswitch_3
-    iget v2, p0, Lo/m;->j:I
+    :cond_0
+    iget v2, p0, Lo/m;->t:F
 
     .line 13
-    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result v1
 
     .line 14
-    iput v1, p0, Lo/m;->j:I
+    iput v1, p0, Lo/m;->t:F
 
-    goto/16 :goto_2
+    goto/16 :goto_1
 
     .line 15
+    :pswitch_2
+    iget v2, p0, Lo/m;->s:F
+
+    .line 16
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    move-result v1
+
+    .line 17
+    iput v1, p0, Lo/m;->s:F
+
+    goto/16 :goto_1
+
+    .line 18
+    :pswitch_3
+    iget v2, p0, Lo/m;->r:I
+
+    .line 19
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    move-result v1
+
+    .line 20
+    iput v1, p0, Lo/m;->r:I
+
+    goto/16 :goto_1
+
+    .line 21
     :pswitch_4
+    iget v2, p0, Lo/m;->q:F
+
+    .line 22
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    move-result v1
+
+    .line 23
+    iput v1, p0, Lo/m;->q:F
+
+    goto/16 :goto_1
+
+    .line 24
+    :pswitch_5
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v3, 0x15
+
+    if-lt v2, v3, :cond_3
+
+    .line 25
+    iget v2, p0, Lo/m;->p:F
+
+    .line 26
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v1
+
+    .line 27
+    iput v1, p0, Lo/m;->p:F
+
+    goto/16 :goto_1
+
+    .line 28
+    :pswitch_6
+    iget v2, p0, Lo/m;->o:F
+
+    .line 29
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v1
+
+    .line 30
+    iput v1, p0, Lo/m;->o:F
+
+    goto/16 :goto_1
+
+    .line 31
+    :pswitch_7
+    iget v2, p0, Lo/m;->n:F
+
+    .line 32
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v1
+
+    .line 33
+    iput v1, p0, Lo/m;->n:F
+
+    goto/16 :goto_1
+
+    .line 34
+    :pswitch_8
+    iget v2, p0, Lo/m;->m:F
+
+    .line 35
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    move-result v1
+
+    .line 36
+    iput v1, p0, Lo/m;->m:F
+
+    goto/16 :goto_1
+
+    .line 37
+    :pswitch_9
+    iget v2, p0, Lo/m;->e:I
+
+    .line 38
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getInteger(II)I
+
+    move-result v1
+
+    .line 39
+    iput v1, p0, Lo/m;->e:I
+
+    goto/16 :goto_1
+
+    .line 40
+    :pswitch_a
     iget v2, p0, Lo/c;->a:I
 
-    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getInteger(II)I
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v1
 
     iput v1, p0, Lo/c;->a:I
 
-    int-to-float v1, v1
+    goto/16 :goto_1
 
-    const/high16 v2, 0x3f000000    # 0.5f
+    .line 41
+    :pswitch_b
+    sget-boolean v2, Landroidx/constraintlayout/motion/widget/MotionLayout;->H0:Z
 
-    add-float/2addr v1, v2
+    if-eqz v2, :cond_1
 
-    const/high16 v2, 0x42c80000    # 100.0f
-
-    div-float/2addr v1, v2
-
-    .line 16
-    iput v1, p0, Lo/m;->p:F
-
-    goto :goto_2
-
-    .line 17
-    :pswitch_5
-    sget-boolean v2, Landroidx/constraintlayout/motion/widget/MotionLayout;->I0:Z
-
-    if-eqz v2, :cond_0
-
-    .line 18
+    .line 42
     iget v2, p0, Lo/c;->b:I
 
     invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -288,19 +623,19 @@
 
     const/4 v3, -0x1
 
-    if-ne v2, v3, :cond_2
+    if-ne v2, v3, :cond_3
 
-    .line 19
+    .line 43
     invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     iput-object v1, p0, Lo/c;->c:Ljava/lang/String;
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 20
-    :cond_0
+    .line 44
+    :cond_1
     invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
 
     move-result-object v2
@@ -309,19 +644,19 @@
 
     const/4 v3, 0x3
 
-    if-ne v2, v3, :cond_1
+    if-ne v2, v3, :cond_2
 
-    .line 21
+    .line 45
     invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     iput-object v1, p0, Lo/c;->c:Ljava/lang/String;
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 22
-    :cond_1
+    .line 46
+    :cond_2
     iget v2, p0, Lo/c;->b:I
 
     invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -330,91 +665,136 @@
 
     iput v1, p0, Lo/c;->b:I
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 23
-    :pswitch_6
-    iget v2, p0, Lo/m;->i:I
+    .line 47
+    :pswitch_c
+    invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
-    .line 24
-    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    goto :goto_1
 
-    move-result v1
+    .line 48
+    :pswitch_d
+    iget v2, p0, Lo/m;->k:F
 
-    .line 25
-    iput v1, p0, Lo/m;->i:I
-
-    goto :goto_2
-
-    .line 26
-    :pswitch_7
-    iget v2, p0, Lo/m;->l:F
-
+    .line 49
     invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result v1
 
+    .line 50
+    iput v1, p0, Lo/m;->k:F
+
+    goto :goto_1
+
+    .line 51
+    :pswitch_e
+    iget v2, p0, Lo/m;->l:F
+
+    .line 52
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    move-result v1
+
+    .line 53
     iput v1, p0, Lo/m;->l:F
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 27
-    :pswitch_8
-    invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+    .line 54
+    :pswitch_f
+    iget v2, p0, Lo/m;->j:F
 
-    move-result-object v1
+    .line 55
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
-    .line 28
-    iput-object v1, p0, Lo/m;->e:Ljava/lang/String;
+    move-result v1
 
-    goto :goto_2
+    .line 56
+    iput v1, p0, Lo/m;->j:F
 
-    .line 29
-    :pswitch_9
-    invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+    goto :goto_1
 
-    move-result-object v1
+    .line 57
+    :pswitch_10
+    iget v2, p0, Lo/m;->i:F
 
-    .line 30
-    iput-object v1, p0, Lo/m;->h:Ljava/lang/String;
+    .line 58
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
-    goto :goto_2
+    move-result v1
 
-    .line 31
-    :pswitch_a
-    invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+    .line 59
+    iput v1, p0, Lo/m;->i:F
 
-    move-result-object v1
+    goto :goto_1
 
-    .line 32
-    iput-object v1, p0, Lo/m;->g:Ljava/lang/String;
+    .line 60
+    :pswitch_11
+    iget v2, p0, Lo/m;->h:F
 
-    goto :goto_2
+    .line 61
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
-    .line 33
+    move-result v1
+
+    .line 62
+    iput v1, p0, Lo/m;->h:F
+
+    goto :goto_1
+
+    .line 63
+    :pswitch_12
+    iget v2, p0, Lo/m;->g:F
+
+    .line 64
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v1
+
+    .line 65
+    iput v1, p0, Lo/m;->g:F
+
+    goto :goto_1
+
+    .line 66
+    :pswitch_13
+    iget v2, p0, Lo/m;->f:F
+
+    .line 67
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    move-result v1
+
+    .line 68
+    iput v1, p0, Lo/m;->f:F
+
+    :cond_3
     :goto_1
-    invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
-
-    sget-object v2, Lo/m$a;->a:Landroid/util/SparseIntArray;
-
-    invoke-virtual {v2, v1}, Landroid/util/SparseIntArray;->get(I)I
-
-    :cond_2
-    :goto_2
     add-int/lit8 v0, v0, 0x1
 
     goto/16 :goto_0
 
-    :cond_3
+    :cond_4
     return-void
 
     nop
 
     :pswitch_data_0
     .packed-switch 0x1
+        :pswitch_13
+        :pswitch_12
+        :pswitch_0
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_0
         :pswitch_a
         :pswitch_9
-        :pswitch_0
         :pswitch_8
         :pswitch_7
         :pswitch_6
@@ -426,54 +806,331 @@
     .end packed-switch
 .end method
 
-.method public final e(Landroid/graphics/RectF;Landroid/view/View;Z)V
-    .locals 1
+.method public final d(Ljava/util/HashMap;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Integer;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    invoke-virtual {p2}, Landroid/view/View;->getTop()I
+    iget v0, p0, Lo/m;->e:I
 
-    move-result v0
+    const/4 v1, -0x1
 
-    int-to-float v0, v0
+    if-ne v0, v1, :cond_0
 
-    iput v0, p1, Landroid/graphics/RectF;->top:F
+    return-void
 
     .line 2
-    invoke-virtual {p2}, Landroid/view/View;->getBottom()I
+    :cond_0
+    iget v0, p0, Lo/m;->f:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
 
     move-result v0
 
-    int-to-float v0, v0
-
-    iput v0, p1, Landroid/graphics/RectF;->bottom:F
+    if-nez v0, :cond_1
 
     .line 3
-    invoke-virtual {p2}, Landroid/view/View;->getLeft()I
+    iget v0, p0, Lo/m;->e:I
 
-    move-result v0
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    int-to-float v0, v0
+    move-result-object v0
 
-    iput v0, p1, Landroid/graphics/RectF;->left:F
+    const-string v1, "alpha"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    invoke-virtual {p2}, Landroid/view/View;->getRight()I
+    :cond_1
+    iget v0, p0, Lo/m;->g:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
 
     move-result v0
 
-    int-to-float v0, v0
-
-    iput v0, p1, Landroid/graphics/RectF;->right:F
-
-    if-eqz p3, :cond_0
+    if-nez v0, :cond_2
 
     .line 5
-    invoke-virtual {p2}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
+    iget v0, p0, Lo/m;->e:I
 
-    move-result-object p2
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-virtual {p2, p1}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
+    move-result-object v0
 
-    :cond_0
+    const-string v1, "elevation"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    :cond_2
+    iget v0, p0, Lo/m;->h:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    .line 7
+    iget v0, p0, Lo/m;->e:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "rotation"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    :cond_3
+    iget v0, p0, Lo/m;->i:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    .line 9
+    iget v0, p0, Lo/m;->e:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "rotationX"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    :cond_4
+    iget v0, p0, Lo/m;->j:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    .line 11
+    iget v0, p0, Lo/m;->e:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "rotationY"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 12
+    :cond_5
+    iget v0, p0, Lo/m;->n:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_6
+
+    .line 13
+    iget v0, p0, Lo/m;->e:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "translationX"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    :cond_6
+    iget v0, p0, Lo/m;->o:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_7
+
+    .line 15
+    iget v0, p0, Lo/m;->e:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "translationY"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 16
+    :cond_7
+    iget v0, p0, Lo/m;->p:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_8
+
+    .line 17
+    iget v0, p0, Lo/m;->e:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "translationZ"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 18
+    :cond_8
+    iget v0, p0, Lo/m;->k:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_9
+
+    .line 19
+    iget v0, p0, Lo/m;->e:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "transitionPathRotate"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 20
+    :cond_9
+    iget v0, p0, Lo/m;->l:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_a
+
+    .line 21
+    iget v0, p0, Lo/m;->e:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "scaleX"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 22
+    :cond_a
+    iget v0, p0, Lo/m;->l:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_b
+
+    .line 23
+    iget v0, p0, Lo/m;->e:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "scaleY"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 24
+    :cond_b
+    iget v0, p0, Lo/m;->q:F
+
+    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result v0
+
+    if-nez v0, :cond_c
+
+    .line 25
+    iget v0, p0, Lo/m;->e:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "progress"
+
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 26
+    :cond_c
+    iget-object v0, p0, Lo/c;->d:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->size()I
+
+    move-result v0
+
+    if-lez v0, :cond_d
+
+    .line 27
+    iget-object v0, p0, Lo/c;->d:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_d
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    const-string v2, "CUSTOM,"
+
+    .line 28
+    invoke-static {v2, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 29
+    iget v2, p0, Lo/m;->e:I
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_d
     return-void
 .end method

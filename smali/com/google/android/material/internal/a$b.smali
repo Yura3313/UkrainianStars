@@ -1,14 +1,14 @@
-.class public Lcom/google/android/material/internal/a$b;
+.class public final Lcom/google/android/material/internal/a$b;
 .super Ljava/lang/Object;
 .source "CollapsingTextHelper.java"
 
 # interfaces
-.implements Lo4/a$a;
+.implements Lp4/a$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/internal/a;->s(I)V
+    value = Lcom/google/android/material/internal/a;->t(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/google/android/material/internal/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/internal/a$b;->a:Lcom/google/android/material/internal/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,13 +34,12 @@
 
 
 # virtual methods
-.method public a(Landroid/graphics/Typeface;)V
+.method public final a(Landroid/graphics/Typeface;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/internal/a$b;->a:Lcom/google/android/material/internal/a;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/material/internal/a;->v(Landroid/graphics/Typeface;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/material/internal/a;->w(Landroid/graphics/Typeface;)V
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lo/d$a;
+.class public final Lo/d$a;
 .super Ljava/lang/Object;
 .source "KeyAttributes.java"
 

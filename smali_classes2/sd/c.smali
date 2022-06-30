@@ -1,224 +1,184 @@
 .class public final Lsd/c;
-.super Lrc/q1;
-.source "TutorialPageFragment.kt"
+.super Lse/h;
+.source "FriendsFragment.kt"
+
+# interfaces
+.implements Lre/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/p<",
+        "Lsd/b;",
+        "Ljava/lang/Exception;",
+        "Lie/h;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public d0:Ljava/util/HashMap;
+.field public final synthetic f:Lsd/a;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lsd/a;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lrc/q1;-><init>()V
+    iput-object p1, p0, Lsd/c;->f:Lsd/a;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
-.end method
-
-.method public static final c1(Ljava/lang/String;)Lsd/c;
-    .locals 3
-
-    .line 1
-    new-instance v0, Lsd/c;
-
-    invoke-direct {v0}, Lsd/c;-><init>()V
-
-    .line 2
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
-
-    if-eqz v1, :cond_0
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    new-instance v1, Landroid/os/Bundle;
-
-    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
-
-    :goto_0
-    const-string v2, "imageKey"
-
-    .line 4
-    invoke-virtual {v1, v2, p0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 5
-    invoke-virtual {v0, v1}, Landroidx/fragment/app/Fragment;->J0(Landroid/os/Bundle;)V
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public W0()V
-    .locals 1
-
-    iget-object v0, p0, Lsd/c;->d0:Ljava/util/HashMap;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 1
-
-    if-eqz p1, :cond_0
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    sget p3, Lcom/supercell/id/R$layout;->fragment_tutorial_image_page:I
+    check-cast p1, Lsd/b;
 
-    const/4 v0, 0x0
+    check-cast p2, Ljava/lang/Exception;
 
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p1
-
-    return-object p1
-
-    :cond_0
-    const-string p1, "inflater"
+    const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 p1, 0x0
+    const-string v0, "it"
 
-    throw p1
-.end method
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-.method public i0()V
-    .locals 1
-
-    invoke-super {p0}, Lrc/q1;->i0()V
-
-    .line 1
-    iget-object v0, p0, Lsd/c;->d0:Ljava/util/HashMap;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public s0(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 2
-
-    const/4 p2, 0x0
-
-    if-eqz p1, :cond_6
-
-    .line 1
-    sget p1, Lcom/supercell/id/R$id;->image:I
-
-    .line 2
-    iget-object v0, p0, Lsd/c;->d0:Ljava/util/HashMap;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lsd/c;->d0:Ljava/util/HashMap;
-
-    :cond_0
-    iget-object v0, p0, Lsd/c;->d0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 3
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
-    check-cast v0, Landroid/view/View;
+    const/4 v1, 0x0
 
-    if-nez v0, :cond_2
+    if-eqz v0, :cond_0
 
-    .line 3
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    sget-object v2, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
-    if-nez v0, :cond_1
+    .line 4
+    invoke-virtual {v0, p2, v1}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
 
-    move-object v0, p2
+    .line 5
+    :cond_0
+    iget-object p2, p1, Lsd/b;->b0:Ljava/util/List;
+
+    if-eqz p2, :cond_6
+
+    .line 6
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 7
+    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p2
+
+    :cond_1
+    :goto_0
+    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 8
+    check-cast v2, Lae/b2;
+
+    .line 9
+    instance-of v3, v2, Lsd/a;
+
+    if-nez v3, :cond_2
+
+    move-object v2, v1
+
+    :cond_2
+    check-cast v2, Lsd/a;
+
+    if-eqz v2, :cond_1
+
+    .line 10
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 4
-    :cond_1
-    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    .line 11
+    :cond_3
+    new-instance p2, Ljava/util/ArrayList;
+
+    const/16 v1, 0xa
+
+    invoke-static {v0, v1}, Lje/f;->q(Ljava/lang/Iterable;I)I
+
+    move-result v1
+
+    invoke-direct {p2, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 12
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    iget-object v1, p0, Lsd/c;->d0:Ljava/util/HashMap;
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result v1
 
-    move-result-object p1
+    if-eqz v1, :cond_5
 
-    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 5
-    :cond_2
-    :goto_0
-    check-cast v0, Landroid/widget/ImageView;
+    move-result-object v1
 
-    if-eqz v0, :cond_5
+    .line 13
+    check-cast v1, Lsd/a;
 
-    .line 6
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
+    .line 14
+    iget-object v2, p0, Lsd/c;->f:Lsd/a;
 
-    if-eqz p1, :cond_4
+    invoke-virtual {v1, v2}, Lsd/a;->d(Lae/b2;)Z
 
-    const-string v1, "imageKey"
+    move-result v2
 
-    .line 7
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    if-eqz v2, :cond_4
 
-    move-result-object p1
+    iget-object v2, p0, Lsd/c;->f:Lsd/a;
 
-    if-eqz p1, :cond_3
+    .line 15
+    iget-object v2, v2, Lsd/a;->f:Lcom/supercell/id/model/IdRelationshipStatus;
 
-    const-string p2, "arguments!!.getString(IMAGE_KEY)!!"
+    .line 16
+    invoke-static {v1, v2}, Lsd/a;->e(Lsd/a;Lcom/supercell/id/model/IdRelationshipStatus;)Lsd/a;
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v1
 
-    const/4 p2, 0x1
-
-    .line 8
-    invoke-static {v0, p1, p2}, Lpd/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    :cond_4
+    invoke-virtual {p2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 9
-    :cond_3
-    invoke-static {}, Ls3/b;->g()V
-
-    throw p2
-
-    :cond_4
-    invoke-static {}, Ls3/b;->g()V
-
-    throw p2
-
+    .line 17
     :cond_5
-    :goto_1
-    return-void
+    invoke-virtual {p1, p2}, Lsd/b;->V0(Ljava/util/List;)V
 
+    .line 18
     :cond_6
-    const-string p1, "view"
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    .line 10
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw p2
+    return-object p1
 .end method

@@ -26,7 +26,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/android/core/AppStartState;
 
     invoke-direct {v0}, Lio/sentry/android/core/AppStartState;-><init>()V
@@ -53,7 +52,6 @@
 .method public static getInstance()Lio/sentry/android/core/AppStartState;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/android/core/AppStartState;->instance:Lio/sentry/android/core/AppStartState;
 
     return-object v0
@@ -126,7 +124,6 @@
 .method public getAppStartTime()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/AppStartState;->appStartTime:Ljava/util/Date;
 
     return-object v0
@@ -135,7 +132,6 @@
 .method public isColdStart()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/AppStartState;->coldStart:Ljava/lang/Boolean;
 
     return-object v0
@@ -144,7 +140,6 @@
 .method public resetInstance()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/android/core/AppStartState;
 
     invoke-direct {v0}, Lio/sentry/android/core/AppStartState;-><init>()V

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -37,10 +37,9 @@
 .method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$b;->a:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
-    invoke-static {p1}, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->p1(Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;)V
+    invoke-static {p1}, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->g1(Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;)V
 
     return-void
 .end method

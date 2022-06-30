@@ -4,15 +4,15 @@
 
 
 # static fields
-.field public static final l:I
+.field public static final k:I
 
-.field public static final m:[[I
+.field public static final l:[[I
 
 
 # instance fields
-.field public j:Landroid/content/res/ColorStateList;
+.field public i:Landroid/content/res/ColorStateList;
 
-.field public k:Z
+.field public j:Z
 
 
 # direct methods
@@ -22,7 +22,7 @@
     .line 1
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_CompoundButton_CheckBox:I
 
-    sput v0, Lcom/google/android/material/checkbox/MaterialCheckBox;->l:I
+    sput v0, Lcom/google/android/material/checkbox/MaterialCheckBox;->k:I
 
     const/4 v0, 0x4
 
@@ -61,7 +61,7 @@
 
     aput-object v1, v0, v2
 
-    sput-object v0, Lcom/google/android/material/checkbox/MaterialCheckBox;->m:[[I
+    sput-object v0, Lcom/google/android/material/checkbox/MaterialCheckBox;->l:[[I
 
     return-void
 
@@ -105,16 +105,16 @@
     .locals 7
 
     .line 2
-    sget v4, Lcom/google/android/material/checkbox/MaterialCheckBox;->l:I
+    sget v4, Lcom/google/android/material/checkbox/MaterialCheckBox;->k:I
 
-    invoke-static {p1, p2, p3, v4}, Lt4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
+    invoke-static {p1, p2, p3, v4}, Lu4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
     move-result-object p1
 
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatCheckBox;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/CheckBox;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
@@ -132,7 +132,7 @@
     move v3, p3
 
     .line 5
-    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/l;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
+    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/k;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
@@ -146,7 +146,7 @@
     if-eqz v0, :cond_0
 
     .line 7
-    invoke-static {p1, p2, p3}, Lo4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {p1, p2, p3}, Lp4/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
@@ -162,7 +162,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->k:Z
+    iput-boolean p1, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->j:Z
 
     .line 11
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
@@ -174,35 +174,35 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->j:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->i:Landroid/content/res/ColorStateList;
 
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/google/android/material/checkbox/MaterialCheckBox;->m:[[I
+    sget-object v0, Lcom/google/android/material/checkbox/MaterialCheckBox;->l:[[I
 
-    array-length v1, v0
+    const/4 v1, 0x4
 
     new-array v1, v1, [I
 
     .line 3
     sget v2, Lcom/google/android/material/R$attr;->colorControlActivated:I
 
-    invoke-static {p0, v2}, Lh4/a;->e(Landroid/view/View;I)I
+    invoke-static {p0, v2}, Lk3/q5;->f(Landroid/view/View;I)I
 
     move-result v2
 
     .line 4
     sget v3, Lcom/google/android/material/R$attr;->colorSurface:I
 
-    invoke-static {p0, v3}, Lh4/a;->e(Landroid/view/View;I)I
+    invoke-static {p0, v3}, Lk3/q5;->f(Landroid/view/View;I)I
 
     move-result v3
 
     .line 5
     sget v4, Lcom/google/android/material/R$attr;->colorOnSurface:I
 
-    invoke-static {p0, v4}, Lh4/a;->e(Landroid/view/View;I)I
+    invoke-static {p0, v4}, Lk3/q5;->f(Landroid/view/View;I)I
 
     move-result v4
 
@@ -211,7 +211,7 @@
     const/high16 v6, 0x3f800000    # 1.0f
 
     .line 6
-    invoke-static {v3, v2, v6}, Lh4/a;->f(IIF)I
+    invoke-static {v3, v2, v6}, Lk3/q5;->g(IIF)I
 
     move-result v2
 
@@ -222,7 +222,7 @@
     const v5, 0x3f0a3d71
 
     .line 7
-    invoke-static {v3, v4, v5}, Lh4/a;->f(IIF)I
+    invoke-static {v3, v4, v5}, Lk3/q5;->g(IIF)I
 
     move-result v5
 
@@ -233,7 +233,7 @@
     const v5, 0x3ec28f5c
 
     .line 8
-    invoke-static {v3, v4, v5}, Lh4/a;->f(IIF)I
+    invoke-static {v3, v4, v5}, Lk3/q5;->g(IIF)I
 
     move-result v6
 
@@ -242,7 +242,7 @@
     const/4 v2, 0x3
 
     .line 9
-    invoke-static {v3, v4, v5}, Lh4/a;->f(IIF)I
+    invoke-static {v3, v4, v5}, Lk3/q5;->g(IIF)I
 
     move-result v3
 
@@ -253,25 +253,25 @@
 
     invoke-direct {v2, v0, v1}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
 
-    iput-object v2, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->j:Landroid/content/res/ColorStateList;
+    iput-object v2, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->i:Landroid/content/res/ColorStateList;
 
     .line 11
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->j:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->i:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/widget/CheckBox;->onAttachedToWindow()V
+    invoke-super {p0}, Landroid/widget/TextView;->onAttachedToWindow()V
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->k:Z
+    iget-boolean v0, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->j:Z
 
     if-eqz v0, :cond_0
 
@@ -294,7 +294,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->k:Z
+    iput-boolean p1, p0, Lcom/google/android/material/checkbox/MaterialCheckBox;->j:Z
 
     if-eqz p1, :cond_0
 

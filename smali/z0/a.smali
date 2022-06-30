@@ -1,4 +1,4 @@
-.class public Lz0/a;
+.class public final Lz0/a;
 .super Ljava/lang/Object;
 .source "EmulatorDetector.java"
 
@@ -7,19 +7,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lz0/b$a;
+.field public final synthetic f:Lz0/b$a;
 
-.field public final synthetic h:Lz0/b;
+.field public final synthetic g:Lz0/b;
 
 
 # direct methods
 .method public constructor <init>(Lz0/b;Lz0/b$a;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lz0/a;->h:Lz0/b;
+    iput-object p1, p0, Lz0/a;->g:Lz0/b;
 
-    iput-object p2, p0, Lz0/a;->g:Lz0/b$a;
+    iput-object p2, p0, Lz0/a;->f:Lz0/b$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,11 +27,11 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 13
 
     .line 1
-    iget-object v0, p0, Lz0/a;->h:Lz0/b;
+    iget-object v0, p0, Lz0/a;->g:Lz0/b;
 
     .line 2
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -59,16 +58,16 @@
 
     move-result v7
 
-    const-string v9, "google_sdk"
+    const/4 v9, 0x0
 
-    const/4 v10, 0x0
+    const/4 v10, 0x1
 
-    const/4 v11, 0x1
+    const-string v11, "google_sdk"
 
     if-nez v7, :cond_1
 
     .line 5
-    invoke-virtual {v5, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v5, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v7
 
@@ -142,7 +141,7 @@
     if-nez v2, :cond_1
 
     .line 13
-    invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -278,7 +277,7 @@
 
     .line 22
     :cond_4
-    invoke-virtual {v9, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -338,28 +337,28 @@
     .line 29
     sget-object v3, Lz0/b;->d:[Ljava/lang/String;
 
-    array-length v4, v3
-
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
     :goto_5
-    if-ge v5, v4, :cond_6
+    const/16 v5, 0x10
 
-    aget-object v6, v3, v5
+    if-ge v4, v5, :cond_6
+
+    aget-object v5, v3, v4
 
     .line 30
-    invoke-virtual {v6, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v5, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    move-result v6
+    move-result v5
 
-    if-eqz v6, :cond_5
+    if-eqz v5, :cond_5
 
     const/4 v1, 0x1
 
     goto :goto_6
 
     :cond_5
-    add-int/lit8 v5, v5, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_5
 
@@ -387,28 +386,28 @@
     .line 34
     sget-object v3, Lz0/b;->e:[Ljava/lang/String;
 
-    array-length v4, v3
-
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
     :goto_7
-    if-ge v5, v4, :cond_8
+    const/4 v5, 0x3
 
-    aget-object v6, v3, v5
+    if-ge v4, v5, :cond_8
+
+    aget-object v5, v3, v4
 
     .line 35
-    invoke-virtual {v6, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v5, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    move-result v6
+    move-result v5
 
-    if-eqz v6, :cond_7
+    if-eqz v5, :cond_7
 
     const/4 v1, 0x1
 
     goto :goto_8
 
     :cond_7
-    add-int/lit8 v5, v5, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_7
 
@@ -436,28 +435,26 @@
     .line 39
     sget-object v3, Lz0/b;->f:[Ljava/lang/String;
 
-    array-length v4, v3
-
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
     :goto_9
-    if-ge v5, v4, :cond_a
+    if-ge v4, v10, :cond_a
 
-    aget-object v6, v3, v5
+    aget-object v5, v3, v4
 
     .line 40
-    invoke-virtual {v6, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v5, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    move-result v6
+    move-result v5
 
-    if-eqz v6, :cond_9
+    if-eqz v5, :cond_9
 
     const/4 v1, 0x1
 
     goto :goto_a
 
     :cond_9
-    add-int/lit8 v5, v5, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_9
 
@@ -504,10 +501,8 @@
     .line 44
     sget-object v1, Lz0/b;->g:[Ljava/lang/String;
 
-    const-string v2, "BS"
-
     .line 45
-    invoke-virtual {v0, v1, v2}, Lz0/b;->a([Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lz0/b;->a([Ljava/lang/String;)Z
 
     move-result v1
 
@@ -515,10 +510,8 @@
 
     sget-object v1, Lz0/b;->h:[Ljava/lang/String;
 
-    const-string v2, "Geny"
-
     .line 46
-    invoke-virtual {v0, v1, v2}, Lz0/b;->a([Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lz0/b;->a([Ljava/lang/String;)Z
 
     move-result v1
 
@@ -526,10 +519,8 @@
 
     sget-object v1, Lz0/b;->l:[Ljava/lang/String;
 
-    const-string v2, "Andy"
-
     .line 47
-    invoke-virtual {v0, v1, v2}, Lz0/b;->a([Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lz0/b;->a([Ljava/lang/String;)Z
 
     move-result v1
 
@@ -537,10 +528,8 @@
 
     sget-object v1, Lz0/b;->m:[Ljava/lang/String;
 
-    const-string v2, "Nox"
-
     .line 48
-    invoke-virtual {v0, v1, v2}, Lz0/b;->a([Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lz0/b;->a([Ljava/lang/String;)Z
 
     move-result v1
 
@@ -557,7 +546,7 @@
 
     invoke-direct {v3, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    aput-object v3, v2, v10
+    aput-object v3, v2, v9
 
     new-instance v3, Ljava/io/File;
 
@@ -565,7 +554,7 @@
 
     invoke-direct {v3, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    aput-object v3, v2, v11
+    aput-object v3, v2, v10
 
     const/4 v3, 0x0
 
@@ -615,7 +604,7 @@
     move-exception v5
 
     .line 54
-    invoke-virtual {v5}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v5}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 55
     :goto_d
@@ -626,28 +615,26 @@
     .line 56
     sget-object v6, Lz0/b;->i:[Ljava/lang/String;
 
-    array-length v7, v6
-
-    const/4 v8, 0x0
+    const/4 v7, 0x0
 
     :goto_e
-    if-ge v8, v7, :cond_e
+    if-ge v7, v10, :cond_e
 
-    aget-object v9, v6, v8
+    aget-object v8, v6, v7
 
     .line 57
-    invoke-virtual {v5, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v5, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v9
+    move-result v8
 
-    if-eqz v9, :cond_d
+    if-eqz v8, :cond_d
 
     const/4 v1, 0x1
 
     goto :goto_f
 
     :cond_d
-    add-int/lit8 v8, v8, 0x1
+    add-int/lit8 v7, v7, 0x1
 
     goto :goto_e
 
@@ -665,10 +652,8 @@
     .line 58
     sget-object v1, Lz0/b;->j:[Ljava/lang/String;
 
-    const-string v2, "Pipes"
-
     .line 59
-    invoke-virtual {v0, v1, v2}, Lz0/b;->a([Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lz0/b;->a([Ljava/lang/String;)Z
 
     move-result v1
 
@@ -685,11 +670,11 @@
 
     if-nez v1, :cond_13
 
-    new-array v1, v11, [Ljava/lang/String;
+    new-array v1, v10, [Ljava/lang/String;
 
     const-string v2, "/system/bin/netcfg"
 
-    aput-object v2, v1, v10
+    aput-object v2, v1, v9
 
     .line 61
     new-instance v2, Ljava/lang/StringBuilder;
@@ -712,7 +697,7 @@
     invoke-virtual {v3, v1}, Ljava/lang/ProcessBuilder;->directory(Ljava/io/File;)Ljava/lang/ProcessBuilder;
 
     .line 64
-    invoke-virtual {v3, v11}, Ljava/lang/ProcessBuilder;->redirectErrorStream(Z)Ljava/lang/ProcessBuilder;
+    invoke-virtual {v3, v10}, Ljava/lang/ProcessBuilder;->redirectErrorStream(Z)Ljava/lang/ProcessBuilder;
 
     .line 65
     invoke-virtual {v3}, Ljava/lang/ProcessBuilder;->start()Ljava/lang/Process;
@@ -839,97 +824,97 @@
     .line 76
     sget-object v1, Lz0/b;->n:[Lz0/c;
 
-    array-length v2, v1
+    const/4 v2, 0x0
 
     const/4 v3, 0x0
 
-    const/4 v4, 0x0
-
     :goto_14
-    if-ge v3, v2, :cond_16
+    const/16 v4, 0xe
 
-    aget-object v5, v1, v3
+    if-ge v2, v4, :cond_16
+
+    aget-object v4, v1, v2
 
     .line 77
-    iget-object v6, v0, Lz0/b;->a:Landroid/content/Context;
+    iget-object v5, v0, Lz0/b;->a:Landroid/content/Context;
 
-    iget-object v7, v5, Lz0/c;->a:Ljava/lang/String;
+    iget-object v6, v4, Lz0/c;->a:Ljava/lang/String;
 
     .line 78
     :try_start_2
-    invoke-virtual {v6}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
+    invoke-virtual {v5}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
 
-    move-result-object v6
+    move-result-object v5
 
-    const-string v8, "android.os.SystemProperties"
+    const-string v7, "android.os.SystemProperties"
 
     .line 79
-    invoke-virtual {v6, v8}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-virtual {v5, v7}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
 
-    move-result-object v6
+    move-result-object v5
 
-    const-string v8, "get"
+    const-string v7, "get"
 
-    new-array v9, v11, [Ljava/lang/Class;
+    new-array v8, v10, [Ljava/lang/Class;
 
     .line 80
-    const-class v12, Ljava/lang/String;
+    const-class v11, Ljava/lang/String;
 
-    aput-object v12, v9, v10
+    aput-object v11, v8, v9
 
-    invoke-virtual {v6, v8, v9}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v5, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    move-result-object v8
+    move-result-object v7
 
-    new-array v9, v11, [Ljava/lang/Object;
+    new-array v8, v10, [Ljava/lang/Object;
 
-    aput-object v7, v9, v10
+    aput-object v6, v8, v9
 
     .line 81
-    invoke-virtual {v8, v6, v9}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v7, v5, v8}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v5
 
-    check-cast v6, Ljava/lang/String;
+    check-cast v5, Ljava/lang/String;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
 
     goto :goto_15
 
     :catch_2
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
     .line 82
     :goto_15
-    iget-object v5, v5, Lz0/c;->b:Ljava/lang/String;
+    iget-object v4, v4, Lz0/c;->b:Ljava/lang/String;
 
-    if-nez v5, :cond_14
+    if-nez v4, :cond_14
 
-    if-eqz v6, :cond_14
+    if-eqz v5, :cond_14
 
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     :cond_14
-    if-eqz v5, :cond_15
+    if-eqz v4, :cond_15
 
     .line 83
-    invoke-virtual {v6, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v5, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_15
+    if-eqz v4, :cond_15
 
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     :cond_15
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_14
 
     :cond_16
     const/4 v1, 0x5
 
-    if-lt v4, v1, :cond_17
+    if-lt v3, v1, :cond_17
 
     const/4 v1, 0x1
 
@@ -944,9 +929,7 @@
     .line 84
     sget-object v1, Lz0/b;->k:[Ljava/lang/String;
 
-    const-string v2, "X86"
-
-    invoke-virtual {v0, v1, v2}, Lz0/b;->a([Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lz0/b;->a([Ljava/lang/String;)Z
 
     move-result v1
 
@@ -968,7 +951,7 @@
     if-nez v1, :cond_1e
 
     .line 85
-    iget-object v1, v0, Lz0/b;->c:Ljava/util/List;
+    iget-object v1, v0, Lz0/b;->c:Ljava/util/ArrayList;
 
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
@@ -987,7 +970,7 @@
     move-result-object v1
 
     .line 87
-    iget-object v0, v0, Lz0/b;->c:Ljava/util/List;
+    iget-object v0, v0, Lz0/b;->c:Ljava/util/ArrayList;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1027,21 +1010,21 @@
 
     if-nez v2, :cond_1c
 
-    const/4 v10, 0x1
+    const/4 v9, 0x1
 
     :cond_1d
     :goto_19
-    move v1, v10
+    move v1, v9
 
     .line 91
     :cond_1e
-    iget-object v0, p0, Lz0/a;->h:Lz0/b;
+    iget-object v0, p0, Lz0/a;->g:Lz0/b;
 
     .line 92
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 93
-    iget-object v0, p0, Lz0/a;->g:Lz0/b$a;
+    iget-object v0, p0, Lz0/a;->f:Lz0/b$a;
 
     if-eqz v0, :cond_1f
 
@@ -1052,7 +1035,7 @@
     iget-object v0, v0, Lcom/supercell/titan/e;->a:Lcom/supercell/titan/GameApp;
 
     .line 96
-    iput-boolean v1, v0, Lcom/supercell/titan/GameApp;->j:Z
+    iput-boolean v1, v0, Lcom/supercell/titan/GameApp;->i:Z
 
     :cond_1f
     return-void

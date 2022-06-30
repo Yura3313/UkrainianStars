@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/KeyboardDialog$b$a;
+.class public final Lcom/supercell/titan/KeyboardDialog$b$a;
 .super Ljava/lang/Object;
 .source "KeyboardDialog.java"
 
@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/KeyboardDialog$b;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,10 +28,9 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/supercell/titan/VirtualKeyboardHandler;->inputOkPressed()V
 
     return-void

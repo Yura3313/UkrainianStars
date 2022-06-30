@@ -1,5 +1,5 @@
-.class public Ln/g;
-.super Lo/q;
+.class public final Ln/g;
+.super Lo/r;
 .source "StopLogic.java"
 
 
@@ -36,7 +36,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lo/q;-><init>()V
+    invoke-direct {p0}, Lo/r;-><init>()V
 
     const/4 v0, 0x0
 
@@ -48,10 +48,9 @@
 
 
 # virtual methods
-.method public a()F
+.method public final a()F
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Ln/g;->k:Z
 
     if-eqz v0, :cond_0
@@ -77,7 +76,7 @@
     return v0
 .end method
 
-.method public b(FFFFFF)V
+.method public final b(FFFFFF)V
     .locals 6
 
     .line 1
@@ -137,7 +136,7 @@
     return-void
 .end method
 
-.method public c(F)F
+.method public final c(F)F
     .locals 3
 
     .line 1
@@ -573,7 +572,7 @@
     return-void
 .end method
 
-.method public getInterpolation(F)F
+.method public final getInterpolation(F)F
     .locals 6
 
     .line 1

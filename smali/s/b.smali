@@ -1,4 +1,4 @@
-.class public Ls/b;
+.class public final Ls/b;
 .super Ljava/lang/Object;
 .source "ConstraintLayoutStates.java"
 
@@ -82,24 +82,24 @@
 
     move-result-object p2
 
+    const/4 p3, 0x0
+
     .line 9
     :try_start_0
     invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
 
-    move-result p3
-
-    const/4 v1, 0x0
+    move-result v1
 
     :goto_0
     const/4 v2, 0x1
 
-    if-eq p3, v2, :cond_7
+    if-eq v1, v2, :cond_7
 
-    if-eqz p3, :cond_5
+    if-eqz v1, :cond_5
 
     const/4 v3, 0x2
 
-    if-eq p3, v3, :cond_0
+    if-eq v1, v3, :cond_0
 
     goto/16 :goto_3
 
@@ -107,16 +107,16 @@
     :cond_0
     invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
-    move-result-object p3
+    move-result-object v1
 
     .line 11
-    invoke-virtual {p3}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
     move-result v4
 
-    const/4 v5, 0x4
+    const/4 v5, 0x3
 
-    const/4 v6, 0x3
+    const/4 v6, 0x4
 
     sparse-switch v4, :sswitch_data_0
 
@@ -125,82 +125,82 @@
     :sswitch_0
     const-string v4, "Variant"
 
-    invoke-virtual {p3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p3
+    move-result v1
 
-    if-eqz p3, :cond_1
+    if-eqz v1, :cond_1
 
-    const/4 p3, 0x3
+    const/4 v1, 0x3
 
     goto :goto_2
 
     :sswitch_1
     const-string v4, "layoutDescription"
 
-    invoke-virtual {p3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p3
+    move-result v1
 
-    if-eqz p3, :cond_1
+    if-eqz v1, :cond_1
 
-    const/4 p3, 0x0
+    const/4 v1, 0x0
 
     goto :goto_2
 
     :sswitch_2
     const-string v4, "StateSet"
 
-    invoke-virtual {p3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p3
+    move-result v1
 
-    if-eqz p3, :cond_1
+    if-eqz v1, :cond_1
 
-    const/4 p3, 0x1
+    const/4 v1, 0x1
 
     goto :goto_2
 
     :sswitch_3
     const-string v4, "State"
 
-    invoke-virtual {p3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p3
+    move-result v1
 
-    if-eqz p3, :cond_1
+    if-eqz v1, :cond_1
 
-    const/4 p3, 0x2
+    const/4 v1, 0x2
 
     goto :goto_2
 
     :sswitch_4
     const-string v4, "ConstraintSet"
 
-    invoke-virtual {p3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p3
+    move-result v1
 
-    if-eqz p3, :cond_1
+    if-eqz v1, :cond_1
 
-    const/4 p3, 0x4
+    const/4 v1, 0x4
 
     goto :goto_2
 
     :cond_1
     :goto_1
-    const/4 p3, -0x1
+    const/4 v1, -0x1
 
     :goto_2
-    if-eqz p3, :cond_6
+    if-eqz v1, :cond_6
 
-    if-eq p3, v2, :cond_6
+    if-eq v1, v2, :cond_6
 
-    if-eq p3, v3, :cond_4
+    if-eq v1, v3, :cond_4
 
-    if-eq p3, v6, :cond_3
+    if-eq v1, v5, :cond_3
 
-    if-eq p3, v5, :cond_2
+    if-eq v1, v6, :cond_2
 
     goto :goto_3
 
@@ -212,16 +212,16 @@
 
     .line 13
     :cond_3
-    new-instance p3, Ls/b$b;
+    new-instance v1, Ls/b$b;
 
-    invoke-direct {p3, p1, p2}, Ls/b$b;-><init>(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)V
+    invoke-direct {v1, p1, p2}, Ls/b$b;-><init>(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)V
 
-    if-eqz v1, :cond_6
+    if-eqz p3, :cond_6
 
     .line 14
-    iget-object v2, v1, Ls/b$a;->b:Ljava/util/ArrayList;
+    iget-object v2, p3, Ls/b$a;->b:Ljava/util/ArrayList;
 
-    invoke-virtual {v2, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
@@ -238,8 +238,6 @@
 
     invoke-virtual {v1, v2, p3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    move-object v1, p3
-
     goto :goto_3
 
     .line 17
@@ -251,7 +249,7 @@
     :goto_3
     invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
-    move-result p3
+    move-result v1
     :try_end_0
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -262,7 +260,7 @@
     move-exception p1
 
     .line 19
-    invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_4
 
@@ -275,6 +273,8 @@
     :cond_7
     :goto_4
     return-void
+
+    nop
 
     :sswitch_data_0
     .sparse-switch

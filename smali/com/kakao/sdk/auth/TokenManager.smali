@@ -21,7 +21,7 @@
 
 .field public static final atKey:Ljava/lang/String; = "com.kakao.token.AccessToken"
 
-.field private static final instance$delegate:Lae/c;
+.field private static final instance$delegate:Lie/c;
 
 .field public static final rtExpiresAtKey:Ljava/lang/String; = "com.kakao.token.RefreshToken.ExpiresAt"
 
@@ -50,18 +50,17 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/auth/TokenManager$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/auth/TokenManager$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/auth/TokenManager;->Companion:Lcom/kakao/sdk/auth/TokenManager$Companion;
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/TokenManager$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/auth/TokenManager$Companion$instance$2;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/auth/TokenManager;->instance$delegate:Lae/c;
+    sput-object v0, Lcom/kakao/sdk/auth/TokenManager;->instance$delegate:Lie/c;
 
     return-void
 .end method
@@ -73,7 +72,7 @@
 
     const/4 v1, 0x3
 
-    invoke-direct {p0, v0, v0, v1, v0}, Lcom/kakao/sdk/auth/TokenManager;-><init>(Lcom/kakao/sdk/common/util/PersistentKVStore;Lcom/kakao/sdk/common/util/Cipher;ILle/g;)V
+    invoke-direct {p0, v0, v0, v1, v0}, Lcom/kakao/sdk/auth/TokenManager;-><init>(Lcom/kakao/sdk/common/util/PersistentKVStore;Lcom/kakao/sdk/common/util/Cipher;ILse/e;)V
 
     return-void
 .end method
@@ -81,11 +80,13 @@
 .method public constructor <init>(Lcom/kakao/sdk/common/util/PersistentKVStore;Lcom/kakao/sdk/common/util/Cipher;)V
     .locals 3
 
-    const/4 v0, 0x0
+    const-string v0, "appCache"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_2
+    const-string v0, "encryptor"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -94,25 +95,27 @@
 
     iput-object p2, p0, Lcom/kakao/sdk/auth/TokenManager;->encryptor:Lcom/kakao/sdk/common/util/Cipher;
 
-    const-string v1, "com.kakao.sdk.version"
+    const-string v0, "com.kakao.sdk.version"
+
+    const/4 v1, 0x0
 
     const/4 v2, 0x2
 
     .line 2
-    invoke-static {p1, v1, v0, v2, v0}, Lcom/kakao/sdk/common/util/PersistentKVStore$DefaultImpls;->getString$default(Lcom/kakao/sdk/common/util/PersistentKVStore;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, v0, v1, v2, v1}, Lcom/kakao/sdk/common/util/PersistentKVStore$DefaultImpls;->getString$default(Lcom/kakao/sdk/common/util/PersistentKVStore;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-nez v1, :cond_0
+    if-nez v0, :cond_0
 
     .line 3
     invoke-direct {p0}, Lcom/kakao/sdk/auth/TokenManager;->migrateFromOldVersion()V
 
     :cond_0
-    const-string v1, "com.kakao.sdk.oauth_token"
+    const-string v0, "com.kakao.sdk.oauth_token"
 
     .line 4
-    invoke-static {p1, v1, v0, v2, v0}, Lcom/kakao/sdk/common/util/PersistentKVStore$DefaultImpls;->getString$default(Lcom/kakao/sdk/common/util/PersistentKVStore;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, v0, v1, v2, v1}, Lcom/kakao/sdk/common/util/PersistentKVStore$DefaultImpls;->getString$default(Lcom/kakao/sdk/common/util/PersistentKVStore;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -120,7 +123,7 @@
 
     .line 5
     :try_start_0
-    sget-object v1, Lcom/kakao/sdk/common/util/KakaoJson;->INSTANCE:Lcom/kakao/sdk/common/util/KakaoJson;
+    sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->INSTANCE:Lcom/kakao/sdk/common/util/KakaoJson;
 
     .line 6
     invoke-interface {p2, p1}, Lcom/kakao/sdk/common/util/Cipher;->decrypt(Ljava/lang/String;)Ljava/lang/String;
@@ -131,7 +134,7 @@
     const-class p2, Lcom/kakao/sdk/auth/model/OAuthToken;
 
     .line 8
-    invoke-virtual {v1, p1, p2}, Lcom/kakao/sdk/common/util/KakaoJson;->fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Lcom/kakao/sdk/common/util/KakaoJson;->fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -139,7 +142,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    move-object v0, p1
+    move-object v1, p1
 
     goto :goto_0
 
@@ -154,37 +157,22 @@
     .line 10
     :cond_1
     :goto_0
-    iput-object v0, p0, Lcom/kakao/sdk/auth/TokenManager;->currentToken:Lcom/kakao/sdk/auth/model/OAuthToken;
+    iput-object v1, p0, Lcom/kakao/sdk/auth/TokenManager;->currentToken:Lcom/kakao/sdk/auth/model/OAuthToken;
 
     return-void
-
-    :cond_2
-    const-string p1, "encryptor"
-
-    .line 11
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "appCache"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/common/util/PersistentKVStore;Lcom/kakao/sdk/common/util/Cipher;ILle/g;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/common/util/PersistentKVStore;Lcom/kakao/sdk/common/util/Cipher;ILse/e;)V
     .locals 0
 
     and-int/lit8 p4, p3, 0x1
 
     if-eqz p4, :cond_0
 
-    .line 12
+    .line 11
     new-instance p1, Lcom/kakao/sdk/common/util/SharedPrefsWrapper;
 
-    .line 13
+    .line 12
     sget-object p4, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p4}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -195,7 +183,7 @@
 
     move-result-object p4
 
-    .line 14
+    .line 13
     invoke-direct {p1, p4}, Lcom/kakao/sdk/common/util/SharedPrefsWrapper;-><init>(Landroid/content/SharedPreferences;)V
 
     :cond_0
@@ -203,14 +191,14 @@
 
     if-eqz p3, :cond_1
 
-    .line 15
+    .line 14
     new-instance p2, Lcom/kakao/sdk/common/util/AESCipher;
 
     const/4 p3, 0x0
 
     const/4 p4, 0x1
 
-    invoke-direct {p2, p3, p4, p3}, Lcom/kakao/sdk/common/util/AESCipher;-><init>(Lcom/kakao/sdk/common/model/ContextInfo;ILle/g;)V
+    invoke-direct {p2, p3, p4, p3}, Lcom/kakao/sdk/common/util/AESCipher;-><init>(Lcom/kakao/sdk/common/model/ContextInfo;ILse/e;)V
 
     :cond_1
     invoke-direct {p0, p1, p2}, Lcom/kakao/sdk/auth/TokenManager;-><init>(Lcom/kakao/sdk/common/util/PersistentKVStore;Lcom/kakao/sdk/common/util/Cipher;)V
@@ -218,11 +206,10 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lae/c;
+.method public static final synthetic access$getInstance$cp()Lie/c;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/kakao/sdk/auth/TokenManager;->instance$delegate:Lae/c;
+    sget-object v0, Lcom/kakao/sdk/auth/TokenManager;->instance$delegate:Lie/c;
 
     return-object v0
 .end method
@@ -308,7 +295,7 @@
 
     move-result-object v9
 
-    invoke-static {v9, v12}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v9, v12}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v9}, Lcom/google/gson/JsonElement;->getAsString()Ljava/lang/String;
 
@@ -362,7 +349,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Lcom/google/gson/JsonElement;->getAsString()Ljava/lang/String;
 
@@ -371,7 +358,7 @@
     if-eqz v0, :cond_2
 
     .line 8
-    invoke-static {v9, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v9, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v14
 
@@ -451,7 +438,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Lcom/google/gson/JsonElement;->getAsString()Ljava/lang/String;
 
@@ -460,7 +447,7 @@
     if-eqz v0, :cond_4
 
     .line 13
-    invoke-static {v9, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v9, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -540,7 +527,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v12}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v12}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Lcom/google/gson/JsonElement;->getAsLong()J
 
@@ -613,7 +600,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v12}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v12}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Lcom/google/gson/JsonElement;->getAsLong()J
 
@@ -694,7 +681,7 @@
     move-object/from16 v19, v4
 
     .line 27
-    invoke-direct/range {v15 .. v22}, Lcom/kakao/sdk/auth/model/OAuthToken;-><init>(Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;Ljava/util/Date;Ljava/util/List;ILle/g;)V
+    invoke-direct/range {v15 .. v22}, Lcom/kakao/sdk/auth/model/OAuthToken;-><init>(Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;Ljava/util/Date;Ljava/util/List;ILse/e;)V
 
     .line 28
     iget-object v2, v1, Lcom/kakao/sdk/auth/TokenManager;->appCache:Lcom/kakao/sdk/common/util/PersistentKVStore;
@@ -777,7 +764,6 @@
 .method public final getAppCache()Lcom/kakao/sdk/common/util/PersistentKVStore;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/TokenManager;->appCache:Lcom/kakao/sdk/common/util/PersistentKVStore;
 
     return-object v0
@@ -786,7 +772,6 @@
 .method public final getEncryptor()Lcom/kakao/sdk/common/util/Cipher;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/TokenManager;->encryptor:Lcom/kakao/sdk/common/util/Cipher;
 
     return-object v0
@@ -795,7 +780,6 @@
 .method public getToken()Lcom/kakao/sdk/auth/model/OAuthToken;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/TokenManager;->currentToken:Lcom/kakao/sdk/auth/model/OAuthToken;
 
     return-object v0
@@ -804,60 +788,62 @@
 .method public setToken(Lcom/kakao/sdk/auth/model/OAuthToken;)V
     .locals 7
 
-    if-eqz p1, :cond_0
+    const-string v0, "token"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    new-instance v6, Lcom/kakao/sdk/auth/model/OAuthToken;
+    new-instance v0, Lcom/kakao/sdk/auth/model/OAuthToken;
 
     .line 2
     invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/OAuthToken;->getAccessToken()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
     .line 3
     invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/OAuthToken;->getAccessTokenExpiresAt()Ljava/util/Date;
 
-    move-result-object v2
+    move-result-object v3
 
     .line 4
     invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/OAuthToken;->getRefreshToken()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
     .line 5
     invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/OAuthToken;->getRefreshTokenExpiresAt()Ljava/util/Date;
 
-    move-result-object v4
+    move-result-object v5
 
     .line 6
     invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/OAuthToken;->getScopes()Ljava/util/List;
 
-    move-result-object v5
+    move-result-object v6
 
-    move-object v0, v6
+    move-object v1, v0
 
     .line 7
-    invoke-direct/range {v0 .. v5}, Lcom/kakao/sdk/auth/model/OAuthToken;-><init>(Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;Ljava/util/Date;Ljava/util/List;)V
+    invoke-direct/range {v1 .. v6}, Lcom/kakao/sdk/auth/model/OAuthToken;-><init>(Ljava/lang/String;Ljava/util/Date;Ljava/lang/String;Ljava/util/Date;Ljava/util/List;)V
 
     .line 8
     :try_start_0
     iget-object p1, p0, Lcom/kakao/sdk/auth/TokenManager;->appCache:Lcom/kakao/sdk/common/util/PersistentKVStore;
 
-    const-string v0, "com.kakao.sdk.oauth_token"
+    const-string v1, "com.kakao.sdk.oauth_token"
 
-    iget-object v1, p0, Lcom/kakao/sdk/auth/TokenManager;->encryptor:Lcom/kakao/sdk/common/util/Cipher;
+    iget-object v2, p0, Lcom/kakao/sdk/auth/TokenManager;->encryptor:Lcom/kakao/sdk/common/util/Cipher;
 
-    sget-object v2, Lcom/kakao/sdk/common/util/KakaoJson;->INSTANCE:Lcom/kakao/sdk/common/util/KakaoJson;
+    sget-object v3, Lcom/kakao/sdk/common/util/KakaoJson;->INSTANCE:Lcom/kakao/sdk/common/util/KakaoJson;
 
-    invoke-virtual {v2, v6}, Lcom/kakao/sdk/common/util/KakaoJson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v3, v0}, Lcom/kakao/sdk/common/util/KakaoJson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-interface {v2, v3}, Lcom/kakao/sdk/common/util/Cipher;->encrypt(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {v1, v2}, Lcom/kakao/sdk/common/util/Cipher;->encrypt(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-interface {p1, v0, v1}, Lcom/kakao/sdk/common/util/PersistentKVStore;->putString(Ljava/lang/String;Ljava/lang/String;)Lcom/kakao/sdk/common/util/PersistentKVStore;
+    invoke-interface {p1, v1, v2}, Lcom/kakao/sdk/common/util/PersistentKVStore;->putString(Ljava/lang/String;Ljava/lang/String;)Lcom/kakao/sdk/common/util/PersistentKVStore;
 
     move-result-object p1
 
@@ -871,23 +857,13 @@
     move-exception p1
 
     .line 9
-    sget-object v0, Lcom/kakao/sdk/common/util/SdkLog;->Companion:Lcom/kakao/sdk/common/util/SdkLog$Companion;
+    sget-object v1, Lcom/kakao/sdk/common/util/SdkLog;->Companion:Lcom/kakao/sdk/common/util/SdkLog$Companion;
 
-    invoke-virtual {v0, p1}, Lcom/kakao/sdk/common/util/SdkLog$Companion;->e(Ljava/lang/Object;)V
+    invoke-virtual {v1, p1}, Lcom/kakao/sdk/common/util/SdkLog$Companion;->e(Ljava/lang/Object;)V
 
     .line 10
     :goto_0
-    iput-object v6, p0, Lcom/kakao/sdk/auth/TokenManager;->currentToken:Lcom/kakao/sdk/auth/model/OAuthToken;
+    iput-object v0, p0, Lcom/kakao/sdk/auth/TokenManager;->currentToken:Lcom/kakao/sdk/auth/model/OAuthToken;
 
     return-void
-
-    :cond_0
-    const-string p1, "token"
-
-    .line 11
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

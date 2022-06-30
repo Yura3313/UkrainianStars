@@ -48,7 +48,6 @@
 .method public static start(Ljava/lang/String;)Lcom/kakaogame/util/Stopwatch;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakaogame/util/Stopwatch;
 
     invoke-direct {v0, p0}, Lcom/kakaogame/util/Stopwatch;-><init>(Ljava/lang/String;)V
@@ -81,7 +80,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/util/Stopwatch;->name:Ljava/lang/String;
 
     return-object v0
@@ -90,7 +88,6 @@
 .method public getStartTime()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/util/Stopwatch;->startMilsTime:J
 
     return-wide v0

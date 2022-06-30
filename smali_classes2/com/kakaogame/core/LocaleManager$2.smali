@@ -37,7 +37,6 @@
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/LocaleManager$2;->val$context:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/kakaogame/core/LocaleManager$2;->val$languageCode:Ljava/lang/String;

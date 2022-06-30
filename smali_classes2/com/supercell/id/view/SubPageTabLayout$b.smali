@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/view/SubPageTabLayout$b;
-.super Lle/j;
+.super Lse/h;
 .source "SubPageTabLayout.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/view/SubPageTabLayout$b;
+.field public static final f:Lcom/supercell/id/view/SubPageTabLayout$b;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/view/SubPageTabLayout$b;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/view/SubPageTabLayout$b;->g:Lcom/supercell/id/view/SubPageTabLayout$b;
+    sput-object v0, Lcom/supercell/id/view/SubPageTabLayout$b;->f:Lcom/supercell/id/view/SubPageTabLayout$b;
 
     return-void
 .end method
@@ -39,17 +39,16 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

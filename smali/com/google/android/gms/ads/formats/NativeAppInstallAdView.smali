@@ -34,7 +34,6 @@
 
     const-string v0, "2004"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/android/gms/ads/formats/NativeAdView;->b(Ljava/lang/String;)Landroid/view/View;
 
     move-result-object v0
@@ -47,7 +46,6 @@
 
     const-string v0, "2002"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/android/gms/ads/formats/NativeAdView;->b(Ljava/lang/String;)Landroid/view/View;
 
     move-result-object v0
@@ -60,7 +58,6 @@
 
     const-string v0, "2001"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/android/gms/ads/formats/NativeAdView;->b(Ljava/lang/String;)Landroid/view/View;
 
     move-result-object v0
@@ -73,7 +70,6 @@
 
     const-string v0, "2003"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/android/gms/ads/formats/NativeAdView;->b(Ljava/lang/String;)Landroid/view/View;
 
     move-result-object v0
@@ -86,7 +82,6 @@
 
     const-string v0, "2007"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/android/gms/ads/formats/NativeAdView;->b(Ljava/lang/String;)Landroid/view/View;
 
     move-result-object v0
@@ -125,7 +120,6 @@
 
     const-string v0, "2006"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/android/gms/ads/formats/NativeAdView;->b(Ljava/lang/String;)Landroid/view/View;
 
     move-result-object v0
@@ -138,7 +132,6 @@
 
     const-string v0, "2008"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/android/gms/ads/formats/NativeAdView;->b(Ljava/lang/String;)Landroid/view/View;
 
     move-result-object v0
@@ -151,7 +144,6 @@
 
     const-string v0, "2005"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/android/gms/ads/formats/NativeAdView;->b(Ljava/lang/String;)Landroid/view/View;
 
     move-result-object v0
@@ -164,7 +156,6 @@
 
     const-string v0, "2004"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/ads/formats/NativeAdView;->a(Ljava/lang/String;Landroid/view/View;)V
 
     return-void
@@ -175,7 +166,6 @@
 
     const-string v0, "2002"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/ads/formats/NativeAdView;->a(Ljava/lang/String;Landroid/view/View;)V
 
     return-void
@@ -186,7 +176,6 @@
 
     const-string v0, "2001"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/ads/formats/NativeAdView;->a(Ljava/lang/String;Landroid/view/View;)V
 
     return-void
@@ -197,7 +186,6 @@
 
     const-string v0, "2003"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/ads/formats/NativeAdView;->a(Ljava/lang/String;Landroid/view/View;)V
 
     return-void
@@ -208,7 +196,6 @@
 
     const-string v0, "2007"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/ads/formats/NativeAdView;->a(Ljava/lang/String;Landroid/view/View;)V
 
     return-void
@@ -219,7 +206,6 @@
 
     const-string v0, "2011"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/ads/formats/NativeAdView;->a(Ljava/lang/String;Landroid/view/View;)V
 
     return-void
@@ -230,7 +216,6 @@
 
     const-string v0, "2006"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/ads/formats/NativeAdView;->a(Ljava/lang/String;Landroid/view/View;)V
 
     return-void
@@ -241,7 +226,6 @@
 
     const-string v0, "2008"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/ads/formats/NativeAdView;->a(Ljava/lang/String;Landroid/view/View;)V
 
     return-void
@@ -252,7 +236,6 @@
 
     const-string v0, "2005"
 
-    .line 1
     invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/ads/formats/NativeAdView;->a(Ljava/lang/String;Landroid/view/View;)V
 
     return-void

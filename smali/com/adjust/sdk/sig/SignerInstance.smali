@@ -19,7 +19,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,7 +84,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     sput-boolean v0, Lcom/adjust/sdk/sig/SignerInstance;->didEnableSigning:Z
 
     return-void
@@ -96,7 +94,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     sput-boolean v0, Lcom/adjust/sdk/sig/SignerInstance;->didEnableSigning:Z
 
     return-void
@@ -238,7 +235,7 @@
     move-exception p1
 
     .line 6
-    invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 7
     invoke-direct {p0, p4}, Lcom/adjust/sdk/sig/SignerInstance;->restoreMap(Ljava/util/Map;)V
@@ -256,7 +253,7 @@
 
     .line 9
     :goto_1
-    invoke-virtual {v0}, Ljava/security/GeneralSecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     add-int/lit8 p5, p5, -0x1
 

@@ -1,4 +1,4 @@
-.class public Landroidx/transition/ChangeBounds$i;
+.class public final Landroidx/transition/ChangeBounds$i;
 .super Landroidx/transition/d;
 .source "ChangeBounds.java"
 
@@ -15,92 +15,90 @@
 
 
 # instance fields
-.field public g:Z
+.field public f:Z
 
-.field public final synthetic h:Landroid/view/ViewGroup;
+.field public final synthetic g:Landroid/view/ViewGroup;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/transition/ChangeBounds;Landroid/view/ViewGroup;)V
+.method public constructor <init>(Landroid/view/ViewGroup;)V
     .locals 0
 
     .line 1
-    iput-object p2, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
+    iput-object p1, p0, Landroidx/transition/ChangeBounds$i;->g:Landroid/view/ViewGroup;
 
     invoke-direct {p0}, Landroidx/transition/d;-><init>()V
 
     const/4 p1, 0x0
 
     .line 2
-    iput-boolean p1, p0, Landroidx/transition/ChangeBounds$i;->g:Z
+    iput-boolean p1, p0, Landroidx/transition/ChangeBounds$i;->f:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b(Landroidx/transition/Transition;)V
-    .locals 1
+.method public final a()V
+    .locals 2
 
-    .line 1
-    iget-object p1, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->g:Landroid/view/ViewGroup;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    invoke-static {p1, v0}, Lv0/w;->b(Landroid/view/ViewGroup;Z)V
+    invoke-static {v0, v1}, Lv0/w;->c(Landroid/view/ViewGroup;Z)V
 
     return-void
 .end method
 
-.method public c(Landroidx/transition/Transition;)V
+.method public final b()V
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Landroidx/transition/ChangeBounds$i;->g:Z
+    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->g:Landroid/view/ViewGroup;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lv0/w;->c(Landroid/view/ViewGroup;Z)V
+
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Landroidx/transition/ChangeBounds$i;->f:Z
+
+    return-void
+.end method
+
+.method public final c(Landroidx/transition/Transition;)V
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Landroidx/transition/ChangeBounds$i;->f:Z
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->g:Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lv0/w;->b(Landroid/view/ViewGroup;Z)V
+    invoke-static {v0, v1}, Lv0/w;->c(Landroid/view/ViewGroup;Z)V
 
     .line 3
     :cond_0
-    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->y(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     return-void
 .end method
 
-.method public d(Landroidx/transition/Transition;)V
-    .locals 1
+.method public final e()V
+    .locals 2
 
-    .line 1
-    iget-object p1, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->g:Landroid/view/ViewGroup;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x1
 
-    invoke-static {p1, v0}, Lv0/w;->b(Landroid/view/ViewGroup;Z)V
-
-    const/4 p1, 0x1
-
-    .line 2
-    iput-boolean p1, p0, Landroidx/transition/ChangeBounds$i;->g:Z
-
-    return-void
-.end method
-
-.method public e(Landroidx/transition/Transition;)V
-    .locals 1
-
-    .line 1
-    iget-object p1, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
-
-    const/4 v0, 0x1
-
-    invoke-static {p1, v0}, Lv0/w;->b(Landroid/view/ViewGroup;Z)V
+    invoke-static {v0, v1}, Lv0/w;->c(Landroid/view/ViewGroup;Z)V
 
     return-void
 .end method

@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/ui/PermissionManager$8;->val$uiLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/kakaogame/ui/PermissionManager$8;->val$uiLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {p1}, Lcom/kakaogame/util/MutexLock;->unlock()V

@@ -14,7 +14,7 @@
 # static fields
 .field public static final Companion:Lcom/kakao/sdk/partner/auth/AgeAuthClient$Companion;
 
-.field private static final instance$delegate:Lae/c;
+.field private static final instance$delegate:Lie/c;
 
 
 # direct methods
@@ -25,18 +25,17 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/partner/auth/AgeAuthClient$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/partner/auth/AgeAuthClient$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->Companion:Lcom/kakao/sdk/partner/auth/AgeAuthClient$Companion;
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/partner/auth/AgeAuthClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/partner/auth/AgeAuthClient$Companion$instance$2;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->instance$delegate:Lae/c;
+    sput-object v0, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->instance$delegate:Lie/c;
 
     return-void
 .end method
@@ -44,17 +43,15 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lae/c;
+.method public static final synthetic access$getInstance$cp()Lie/c;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->instance$delegate:Lae/c;
+    sget-object v0, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->instance$delegate:Lie/c;
 
     return-object v0
 .end method
@@ -78,7 +75,6 @@
 
     if-eqz p6, :cond_0
 
-    .line 1
     sget-object p5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     :cond_0
@@ -101,7 +97,7 @@
     return-object p0
 .end method
 
-.method public static synthetic verifyAgeWithAuthentication$default(Lcom/kakao/sdk/partner/auth/AgeAuthClient;Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lke/l;ILjava/lang/Object;)V
+.method public static synthetic verifyAgeWithAuthentication$default(Lcom/kakao/sdk/partner/auth/AgeAuthClient;Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lre/l;ILjava/lang/Object;)V
     .locals 10
 
     and-int/lit8 v0, p8, 0x2
@@ -158,7 +154,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 1
     sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     move-object v8, v0
@@ -175,7 +170,7 @@
 
     move-object/from16 v9, p7
 
-    invoke-virtual/range {v2 .. v9}, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->verifyAgeWithAuthentication(Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lke/l;)V
+    invoke-virtual/range {v2 .. v9}, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->verifyAgeWithAuthentication(Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lre/l;)V
 
     return-void
 .end method
@@ -413,23 +408,24 @@
     return-object p1
 .end method
 
-.method public final resultReceiver(Lke/l;)Landroid/os/ResultReceiver;
+.method public final synthetic resultReceiver(Lre/l;)Landroid/os/ResultReceiver;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lke/l<",
+            "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)",
             "Landroid/os/ResultReceiver;"
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "callback"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     new-instance v0, Lcom/kakao/sdk/partner/auth/AgeAuthClient$resultReceiver$1;
 
     new-instance v1, Landroid/os/Handler;
@@ -440,22 +436,12 @@
 
     invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    invoke-direct {v0, p1, v1}, Lcom/kakao/sdk/partner/auth/AgeAuthClient$resultReceiver$1;-><init>(Lke/l;Landroid/os/Handler;)V
+    invoke-direct {v0, p1, v1}, Lcom/kakao/sdk/partner/auth/AgeAuthClient$resultReceiver$1;-><init>(Lre/l;Landroid/os/Handler;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public final verifyAgeWithAuthentication(Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lke/l;)V
+.method public final verifyAgeWithAuthentication(Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lre/l;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -466,19 +452,21 @@
             "Ljava/lang/Boolean;",
             "Ljava/lang/Boolean;",
             "Ljava/lang/Boolean;",
-            "Lke/l<",
+            "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p7, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p7, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     move-object v0, p0
 
@@ -510,7 +498,7 @@
     invoke-direct {p4}, Landroid/os/Bundle;-><init>()V
 
     .line 4
-    invoke-virtual {p0, p7}, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->resultReceiver(Lke/l;)Landroid/os/ResultReceiver;
+    invoke-virtual {p0, p7}, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->resultReceiver(Lre/l;)Landroid/os/ResultReceiver;
 
     move-result-object p5
 
@@ -539,7 +527,7 @@
 
     const-string p3, "Intent(context, AgeAuthA\u2026t.FLAG_ACTIVITY_NEW_TASK)"
 
-    invoke-static {p2, p3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 8
     :try_start_0
@@ -558,23 +546,8 @@
     invoke-virtual {p2, p1}, Lcom/kakao/sdk/common/util/SdkLog$Companion;->e(Ljava/lang/Object;)V
 
     .line 10
-    invoke-interface {p7, p1}, Lke/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p7, p1}, Lre/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 11
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

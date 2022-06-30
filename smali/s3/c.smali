@@ -1,45 +1,118 @@
 .class public final Ls3/c;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-games@@20.0.1"
+.super Ljava/lang/ref/WeakReference;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/ref/WeakReference<",
+        "Ljava/lang/Throwable;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:I
 
 
 # direct methods
-.method public static a(La2/n;)La2/p;
-    .locals 2
+.method public constructor <init>(Ljava/lang/Throwable;Ljava/lang/ref/ReferenceQueue;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<ResultT:",
-            "Ljava/lang/Object;",
-            ">(",
-            "La2/n<",
-            "Ly2/g;",
-            "Lb4/g<",
-            "TResultT;>;>;)",
-            "La2/p<",
-            "Ly2/g;",
-            "TResultT;>;"
+            "(",
+            "Ljava/lang/Throwable;",
+            "Ljava/lang/ref/ReferenceQueue<",
+            "Ljava/lang/Throwable;",
+            ">;)V"
         }
     .end annotation
 
     .line 1
-    new-instance v0, La2/p$a;
+    invoke-direct {p0, p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, La2/p$a;-><init>(Lb5/m;)V
+    if-eqz p1, :cond_0
 
     .line 2
-    new-instance v1, Ls3/d;
+    invoke-static {p1}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
-    invoke-direct {v1, p0}, Ls3/d;-><init>(La2/n;)V
+    move-result p1
+
+    iput p1, p0, Ls3/c;->a:I
+
+    return-void
 
     .line 3
-    iput-object v1, v0, La2/p$a;->a:La2/n;
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
 
-    .line 4
-    invoke-virtual {v0}, La2/p$a;->a()La2/p;
+    const-string p2, "The referent cannot be null"
 
-    move-result-object p0
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
-    return-object p0
+    throw p1
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    const-class v2, Ls3/c;
+
+    if-eq v1, v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x1
+
+    if-ne p0, p1, :cond_1
+
+    return v1
+
+    .line 2
+    :cond_1
+    check-cast p1, Ls3/c;
+
+    .line 3
+    iget v2, p0, Ls3/c;->a:I
+
+    iget v3, p1, Ls3/c;->a:I
+
+    if-ne v2, v3, :cond_2
+
+    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne v2, p1, :cond_2
+
+    return v1
+
+    :cond_2
+    :goto_0
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    iget v0, p0, Ls3/c;->a:I
+
+    return v0
 .end method

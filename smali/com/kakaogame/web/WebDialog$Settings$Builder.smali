@@ -40,7 +40,6 @@
 .method public build()Lcom/kakaogame/web/WebDialog$Settings;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     return-object v0
@@ -49,7 +48,6 @@
 .method public setBackgroundColor(I)Lcom/kakaogame/web/WebDialog$Settings$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     invoke-static {v0, p1}, Lcom/kakaogame/web/WebDialog$Settings;->access$2002(Lcom/kakaogame/web/WebDialog$Settings;I)I
@@ -96,7 +94,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     invoke-static {v0, p1}, Lcom/kakaogame/web/WebDialog$Settings;->access$1902(Lcom/kakaogame/web/WebDialog$Settings;Ljava/util/Map;)Ljava/util/Map;
@@ -107,7 +104,6 @@
 .method public setFixedFontSize(Z)Lcom/kakaogame/web/WebDialog$Settings$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     invoke-static {v0, p1}, Lcom/kakaogame/web/WebDialog$Settings;->access$2302(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
@@ -118,7 +114,6 @@
 .method public setFixedTitle()Lcom/kakaogame/web/WebDialog$Settings$Builder;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     const/4 v1, 0x1
@@ -131,7 +126,6 @@
 .method public setHideCloseButton(Z)Lcom/kakaogame/web/WebDialog$Settings$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     invoke-static {v0, p1}, Lcom/kakaogame/web/WebDialog$Settings;->access$2502(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
@@ -142,7 +136,6 @@
 .method public setHideTopBar(Z)Lcom/kakaogame/web/WebDialog$Settings$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     invoke-static {v0, p1}, Lcom/kakaogame/web/WebDialog$Settings;->access$2402(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
@@ -153,7 +146,6 @@
 .method public setIsActivity(Z)Lcom/kakaogame/web/WebDialog$Settings$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     invoke-static {v0, p1}, Lcom/kakaogame/web/WebDialog$Settings;->access$1702(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
@@ -236,7 +228,6 @@
 .method public setPulltoRefresh(Z)Lcom/kakaogame/web/WebDialog$Settings$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     invoke-static {v0, p1}, Lcom/kakaogame/web/WebDialog$Settings;->access$102(Lcom/kakaogame/web/WebDialog$Settings;Z)Z
@@ -334,7 +325,6 @@
 .method public setTitleBackgroundColor(I)Lcom/kakaogame/web/WebDialog$Settings$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     invoke-static {v0, p1}, Lcom/kakaogame/web/WebDialog$Settings;->access$2102(Lcom/kakaogame/web/WebDialog$Settings;I)I
@@ -345,7 +335,6 @@
 .method public setTitleTextColor(I)Lcom/kakaogame/web/WebDialog$Settings$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     invoke-static {v0, p1}, Lcom/kakaogame/web/WebDialog$Settings;->access$2202(Lcom/kakaogame/web/WebDialog$Settings;I)I
@@ -356,7 +345,6 @@
 .method public setViewCloseListener(Lcom/kakaogame/web/WebDialog$OnCloseListener;)Lcom/kakaogame/web/WebDialog$Settings$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebDialog$Settings$Builder;->settings:Lcom/kakaogame/web/WebDialog$Settings;
 
     invoke-static {v0, p1}, Lcom/kakaogame/web/WebDialog$Settings;->access$1802(Lcom/kakaogame/web/WebDialog$Settings;Lcom/kakaogame/web/WebDialog$OnCloseListener;)Lcom/kakaogame/web/WebDialog$OnCloseListener;

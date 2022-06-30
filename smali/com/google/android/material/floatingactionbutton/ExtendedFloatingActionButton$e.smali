@@ -1,5 +1,5 @@
-.class public Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
-.super Lm4/a;
+.class public final Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
+.super Ln4/a;
 .source "ExtendedFloatingActionButton.java"
 
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;
+.field public final g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;
 
 .field public final h:Z
 
@@ -23,17 +23,17 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lf1/i;Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;Z)V
+.method public constructor <init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lj1/d;Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;Z)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     .line 2
-    invoke-direct {p0, p1, p2}, Lm4/a;-><init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lf1/i;)V
+    invoke-direct {p0, p1, p2}, Ln4/a;-><init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lj1/d;)V
 
     .line 3
-    iput-object p3, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;
+    iput-object p3, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;
 
     .line 4
     iput-boolean p4, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->h:Z
@@ -43,28 +43,23 @@
 
 
 # virtual methods
-.method public b()I
-    .locals 1
-
-    .line 1
-    sget v0, Lcom/google/android/material/R$animator;->mtrl_extended_fab_change_size_motion_spec:I
-
-    return v0
-.end method
-
-.method public c()V
+.method public final a()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
-
-    iget-boolean v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->h:Z
+    invoke-super {p0}, Ln4/a;->a()V
 
     .line 2
-    iput-boolean v1, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:Z
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setHorizontallyScrolling(Z)V
 
     .line 3
-    invoke-virtual {v0}, Landroid/widget/Button;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
+
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
@@ -74,9 +69,9 @@
 
     .line 4
     :cond_0
-    iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;
+    iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;
 
-    invoke-interface {v1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-interface {v1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
@@ -85,9 +80,63 @@
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;
+    iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;
 
-    invoke-interface {v1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-interface {v1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v1
+
+    iget v1, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
+
+    iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
+
+    return-void
+.end method
+
+.method public final c()I
+    .locals 1
+
+    sget v0, Lcom/google/android/material/R$animator;->mtrl_extended_fab_change_size_motion_spec:I
+
+    return v0
+.end method
+
+.method public final d()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
+
+    iget-boolean v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->h:Z
+
+    .line 2
+    iput-boolean v1, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Z
+
+    .line 3
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 4
+    :cond_0
+    iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;
+
+    invoke-interface {v1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v1
+
+    iget v1, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
+
+    iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
+
+    .line 5
+    iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;
+
+    invoke-interface {v1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
@@ -98,12 +147,18 @@
     .line 6
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
-    invoke-virtual {v0}, Landroid/widget/Button;->requestLayout()V
+    invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
 
     return-void
 .end method
 
-.method public d()Z
+.method public final e()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final f()Z
     .locals 3
 
     .line 1
@@ -112,7 +167,7 @@
     iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     .line 2
-    iget-boolean v2, v1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:Z
+    iget-boolean v2, v1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Z
 
     if-eq v0, v2, :cond_1
 
@@ -125,7 +180,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
-    invoke-virtual {v0}, Landroid/widget/Button;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -150,68 +205,18 @@
     return v0
 .end method
 
-.method public e()V
-    .locals 2
-
-    .line 1
-    invoke-super {p0}, Lm4/a;->e()V
-
-    .line 2
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setHorizontallyScrolling(Z)V
-
-    .line 3
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
-
-    invoke-virtual {v0}, Landroid/widget/Button;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 4
-    :cond_0
-    iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;
-
-    invoke-interface {v1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v1
-
-    iget v1, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
-
-    iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
-
-    .line 5
-    iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;
-
-    invoke-interface {v1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v1
-
-    iget v1, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
-
-    iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
-
-    return-void
-.end method
-
-.method public f()Landroid/animation/AnimatorSet;
+.method public final g()Landroid/animation/AnimatorSet;
     .locals 9
 
     .line 1
-    invoke-virtual {p0}, Lm4/a;->i()Lc4/g;
+    invoke-virtual {p0}, Ln4/a;->i()Ld4/g;
 
     move-result-object v0
 
     const-string v1, "width"
 
     .line 2
-    invoke-virtual {v0, v1}, Lc4/g;->g(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Ld4/g;->g(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -224,7 +229,7 @@
     if-eqz v2, :cond_0
 
     .line 3
-    invoke-virtual {v0, v1}, Lc4/g;->e(Ljava/lang/String;)[Landroid/animation/PropertyValuesHolder;
+    invoke-virtual {v0, v1}, Ld4/g;->e(Ljava/lang/String;)[Landroid/animation/PropertyValuesHolder;
 
     move-result-object v2
 
@@ -235,7 +240,7 @@
 
     iget-object v8, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
-    invoke-virtual {v8}, Landroid/widget/Button;->getWidth()I
+    invoke-virtual {v8}, Landroid/view/View;->getWidth()I
 
     move-result v8
 
@@ -243,9 +248,9 @@
 
     aput v8, v7, v5
 
-    iget-object v8, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;
+    iget-object v8, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;
 
-    invoke-interface {v8}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;->getWidth()I
+    invoke-interface {v8}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;->getWidth()I
 
     move-result v8
 
@@ -256,22 +261,20 @@
     invoke-virtual {v6, v7}, Landroid/animation/PropertyValuesHolder;->setFloatValues([F)V
 
     .line 5
-    iget-object v6, v0, Lc4/g;->b:Lm/g;
-
-    invoke-virtual {v6, v1, v2}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2}, Ld4/g;->h(Ljava/lang/String;[Landroid/animation/PropertyValuesHolder;)V
 
     :cond_0
     const-string v1, "height"
 
     .line 6
-    invoke-virtual {v0, v1}, Lc4/g;->g(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Ld4/g;->g(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
     .line 7
-    invoke-virtual {v0, v1}, Lc4/g;->e(Ljava/lang/String;)[Landroid/animation/PropertyValuesHolder;
+    invoke-virtual {v0, v1}, Ld4/g;->e(Ljava/lang/String;)[Landroid/animation/PropertyValuesHolder;
 
     move-result-object v2
 
@@ -282,7 +285,7 @@
 
     iget-object v7, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
-    invoke-virtual {v7}, Landroid/widget/Button;->getHeight()I
+    invoke-virtual {v7}, Landroid/view/View;->getHeight()I
 
     move-result v7
 
@@ -290,9 +293,9 @@
 
     aput v7, v4, v5
 
-    iget-object v5, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;
+    iget-object v5, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;
 
-    invoke-interface {v5}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;->getHeight()I
+    invoke-interface {v5}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;->getHeight()I
 
     move-result v5
 
@@ -303,57 +306,35 @@
     invoke-virtual {v6, v4}, Landroid/animation/PropertyValuesHolder;->setFloatValues([F)V
 
     .line 9
-    iget-object v3, v0, Lc4/g;->b:Lm/g;
-
-    invoke-virtual {v3, v1, v2}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2}, Ld4/g;->h(Ljava/lang/String;[Landroid/animation/PropertyValuesHolder;)V
 
     .line 10
     :cond_1
-    invoke-virtual {p0, v0}, Lm4/a;->h(Lc4/g;)Landroid/animation/AnimatorSet;
+    invoke-virtual {p0, v0}, Ln4/a;->h(Ld4/g;)Landroid/animation/AnimatorSet;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public g(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public onAnimationStart(Landroid/animation/Animator;)V
-    .locals 2
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lm4/a;->d:Lf1/i;
+    invoke-super {p0, p1}, Ln4/a;->onAnimationStart(Landroid/animation/Animator;)V
 
     .line 2
-    iget-object v1, v0, Lf1/i;->g:Ljava/lang/Object;
-
-    check-cast v1, Landroid/animation/Animator;
-
-    if-eqz v1, :cond_0
-
-    .line 3
-    invoke-virtual {v1}, Landroid/animation/Animator;->cancel()V
-
-    .line 4
-    :cond_0
-    iput-object p1, v0, Lf1/i;->g:Ljava/lang/Object;
-
-    .line 5
     iget-object p1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     iget-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->h:Z
 
-    .line 6
-    iput-boolean v0, p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:Z
+    .line 3
+    iput-boolean v0, p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Z
 
     const/4 v0, 0x1
 
-    .line 7
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setHorizontallyScrolling(Z)V
+    .line 4
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setHorizontallyScrolling(Z)V
 
     return-void
 .end method

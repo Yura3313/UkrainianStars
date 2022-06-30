@@ -39,7 +39,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +61,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryThread;->unknown:Ljava/util/Map;
 
     return-void
@@ -71,7 +69,6 @@
 .method public getId()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryThread;->id:Ljava/lang/Long;
 
     return-object v0
@@ -80,7 +77,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryThread;->name:Ljava/lang/String;
 
     return-object v0
@@ -89,7 +85,6 @@
 .method public getPriority()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryThread;->priority:Ljava/lang/Integer;
 
     return-object v0
@@ -98,7 +93,6 @@
 .method public getStacktrace()Lio/sentry/protocol/SentryStackTrace;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryThread;->stacktrace:Lio/sentry/protocol/SentryStackTrace;
 
     return-object v0
@@ -107,7 +101,6 @@
 .method public getState()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryThread;->state:Ljava/lang/String;
 
     return-object v0
@@ -116,7 +109,6 @@
 .method public isCrashed()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryThread;->crashed:Ljava/lang/Boolean;
 
     return-object v0
@@ -125,7 +117,6 @@
 .method public isCurrent()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryThread;->current:Ljava/lang/Boolean;
 
     return-object v0
@@ -134,7 +125,6 @@
 .method public isDaemon()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/SentryThread;->daemon:Ljava/lang/Boolean;
 
     return-object v0
@@ -143,7 +133,6 @@
 .method public setCrashed(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryThread;->crashed:Ljava/lang/Boolean;
 
     return-void
@@ -152,7 +141,6 @@
 .method public setCurrent(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryThread;->current:Ljava/lang/Boolean;
 
     return-void
@@ -161,7 +149,6 @@
 .method public setDaemon(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryThread;->daemon:Ljava/lang/Boolean;
 
     return-void
@@ -170,7 +157,6 @@
 .method public setId(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryThread;->id:Ljava/lang/Long;
 
     return-void
@@ -179,7 +165,6 @@
 .method public setName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryThread;->name:Ljava/lang/String;
 
     return-void
@@ -188,7 +173,6 @@
 .method public setPriority(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryThread;->priority:Ljava/lang/Integer;
 
     return-void
@@ -197,7 +181,6 @@
 .method public setStacktrace(Lio/sentry/protocol/SentryStackTrace;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryThread;->stacktrace:Lio/sentry/protocol/SentryStackTrace;
 
     return-void
@@ -206,7 +189,6 @@
 .method public setState(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/SentryThread;->state:Ljava/lang/String;
 
     return-void

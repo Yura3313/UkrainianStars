@@ -7,7 +7,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -161,7 +160,6 @@
 .method private static getSentryReleaseVersion(Landroid/content/pm/PackageInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -176,9 +174,15 @@
 
     iget-object p0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
-    const-string v1, "+"
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, p0, v1, p1}, Landroidx/fragment/app/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string p0, "+"
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -564,7 +568,6 @@
 .method private static isNdkAvailable(Lio/sentry/android/core/IBuildInfoProvider;)Z
     .locals 1
 
-    .line 1
     invoke-interface {p0}, Lio/sentry/android/core/IBuildInfoProvider;->getSdkInfoVersion()I
 
     move-result p0
@@ -587,7 +590,6 @@
 .method private static synthetic lambda$installDefaultIntegrations$0(Lio/sentry/SentryOptions;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lio/sentry/SentryOptions;->getCacheDirPath()Ljava/lang/String;
 
     move-result-object p0
@@ -598,7 +600,6 @@
 .method private static synthetic lambda$installDefaultIntegrations$1(Lio/sentry/SentryOptions;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lio/sentry/SentryOptions;->getOutboxPath()Ljava/lang/String;
 
     move-result-object p0

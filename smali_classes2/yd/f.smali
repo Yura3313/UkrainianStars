@@ -1,68 +1,79 @@
 .class public final Lyd/f;
-.super Lle/j;
-.source "ViewPumpContextWrapper.kt"
+.super Lse/h;
+.source "YoungPlayerLoginConfirmPageFragment.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
-        "Lzd/d;",
+        "Lse/h;",
+        "Lre/p<",
+        "Ljava/lang/String;",
+        "Landroid/text/SpannableStringBuilder;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Lyd/g;
+# static fields
+.field public static final f:Lyd/f;
 
 
 # direct methods
-.method public constructor <init>(Lyd/g;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lyd/f;->g:Lyd/g;
+    new-instance v0, Lyd/f;
 
-    const/4 p1, 0x0
+    invoke-direct {v0}, Lyd/f;-><init>()V
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    sput-object v0, Lyd/f;->f:Lyd/f;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
-    .locals 4
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    new-instance v0, Lzd/d;
+    check-cast p1, Ljava/lang/String;
+
+    check-cast p2, Landroid/text/SpannableStringBuilder;
+
+    const-string v0, "text"
 
     .line 2
-    iget-object v1, p0, Lyd/f;->g:Lyd/g;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+    const-string v0, "result"
 
-    move-result-object v1
-
-    invoke-static {v1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    move-result-object v1
-
-    const-string v2, "LayoutInflater.from(baseContext)"
-
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iget-object v2, p0, Lyd/f;->g:Lyd/g;
-
-    const/4 v3, 0x0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-direct {v0, v1, v2, v3}, Lzd/d;-><init>(Landroid/view/LayoutInflater;Landroid/content/Context;Z)V
+    invoke-static {p1}, Lud/f0;->b(Ljava/lang/String;)Landroid/text/Spanned;
 
-    return-object v0
+    move-result-object p1
+
+    invoke-virtual {p2, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 4
+    sget-object p1, Lie/h;->a:Lie/h;
+
+    return-object p1
 .end method

@@ -1,173 +1,50 @@
-.class public final Lod/a;
-.super Lod/r;
-.source "RegisterDonePageFragment.kt"
-
-
-# instance fields
-.field public d0:Ljava/util/HashMap;
+.class public abstract Lod/a;
+.super Lwc/w;
+.source "OnboardingFlow.kt"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lod/r;-><init>()V
+    invoke-direct {p0}, Lwc/w;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public W0()V
-    .locals 1
-
-    iget-object v0, p0, Lod/a;->d0:Ljava/util/HashMap;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public Z0()V
-    .locals 1
-
-    .line 1
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object v0
-
-    .line 2
-    iget-object v0, v0, Lvd/r;->m:Lcom/supercell/titan/h;
-
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    return-void
-.end method
-
-.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    sget p3, Lcom/supercell/id/R$layout;->fragment_register_done_page:I
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p1
-
-    return-object p1
-
-    :cond_0
-    const-string p1, "inflater"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public synthetic i0()V
+.method public N0()V
     .locals 0
 
-    invoke-super {p0}, Lod/r;->i0()V
-
-    invoke-virtual {p0}, Lod/a;->W0()V
-
     return-void
 .end method
 
-.method public s0(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final U0()Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
     .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+
+    .line 2
+    instance-of v1, v0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
+
+    if-nez v1, :cond_0
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_3
-
-    .line 1
-    invoke-super {p0, p1, p2}, Lrc/w;->s0(Landroid/view/View;Landroid/os/Bundle;)V
-
-    .line 2
-    sget p1, Lcom/supercell/id/R$id;->okButton:I
-
-    .line 3
-    iget-object p2, p0, Lod/a;->d0:Ljava/util/HashMap;
-
-    if-nez p2, :cond_0
-
-    new-instance p2, Ljava/util/HashMap;
-
-    invoke-direct {p2}, Ljava/util/HashMap;-><init>()V
-
-    iput-object p2, p0, Lod/a;->d0:Ljava/util/HashMap;
-
     :cond_0
-    iget-object p2, p0, Lod/a;->d0:Ljava/util/HashMap;
+    check-cast v0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    return-object v0
+.end method
 
-    move-result-object v1
+.method public synthetic a0()V
+    .locals 0
 
-    invoke-virtual {p2, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-super {p0}, Lwc/w;->a0()V
 
-    move-result-object p2
-
-    check-cast p2, Landroid/view/View;
-
-    if-nez p2, :cond_2
-
-    .line 4
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
-
-    if-nez p2, :cond_1
-
-    goto :goto_0
-
-    .line 5
-    :cond_1
-    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p2
-
-    iget-object v0, p0, Lod/a;->d0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_2
-    move-object v0, p2
-
-    .line 6
-    :goto_0
-    check-cast v0, Landroid/widget/Button;
-
-    new-instance p1, Lod/a$a;
-
-    invoke-direct {p1, p0}, Lod/a$a;-><init>(Lod/a;)V
-
-    invoke-virtual {v0, p1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p0}, Lod/a;->N0()V
 
     return-void
-
-    :cond_3
-    const-string p1, "view"
-
-    .line 7
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

@@ -1,9 +1,9 @@
 .class public abstract Lkotlinx/coroutines/android/HandlerDispatcher;
-.super Lse/i1;
+.super Lze/i1;
 .source "HandlerDispatcher.kt"
 
 # interfaces
-.implements Lse/h0;
+.implements Lze/g0;
 
 
 # direct methods
@@ -11,12 +11,12 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lse/i1;-><init>()V
+    invoke-direct {p0}, Lze/i1;-><init>()V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lle/g;)V
+.method public synthetic constructor <init>(Lse/e;)V
     .locals 0
 
     .line 2
@@ -27,14 +27,14 @@
 
 
 # virtual methods
-.method public delay(JLde/d;)Ljava/lang/Object;
+.method public delay(JLke/d;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
-            "Lde/d<",
+            "Lke/d<",
             "-",
-            "Lae/i;",
+            "Lie/h;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -47,27 +47,25 @@
     if-gtz v2, :cond_0
 
     .line 1
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     goto :goto_0
 
     .line 2
     :cond_0
-    new-instance v0, Lse/g;
+    new-instance v0, Lze/g;
 
-    invoke-static {p3}, Lee/d;->e(Lde/d;)Lde/d;
+    invoke-static {p3}, Lpe/a;->e(Lke/d;)Lke/d;
 
     move-result-object p3
 
-    const/4 v1, 0x1
-
-    invoke-direct {v0, p3, v1}, Lse/g;-><init>(Lde/d;I)V
+    invoke-direct {v0, p3}, Lze/g;-><init>(Lke/d;)V
 
     .line 3
-    invoke-interface {p0, p1, p2, v0}, Lse/h0;->scheduleResumeAfterDelay(JLse/f;)V
+    invoke-interface {p0, p1, p2, v0}, Lze/g0;->scheduleResumeAfterDelay(JLze/f;)V
 
     .line 4
-    invoke-virtual {v0}, Lse/g;->o()Ljava/lang/Object;
+    invoke-virtual {v0}, Lze/g;->m()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -78,42 +76,31 @@
 .method public abstract getImmediate()Lkotlinx/coroutines/android/HandlerDispatcher;
 .end method
 
-.method public invokeOnTimeout(JLjava/lang/Runnable;)Lse/m0;
+.method public invokeOnTimeout(JLjava/lang/Runnable;)Lze/l0;
     .locals 1
 
-    if-eqz p3, :cond_0
+    const-string v0, "block"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    sget-object v0, Lse/e0;->a:Lse/h0;
+    sget-object v0, Lze/d0;->a:Lze/c0;
 
     .line 2
-    check-cast v0, Lse/d0;
-
-    .line 3
-    invoke-virtual {v0, p1, p2, p3}, Lse/q0;->E(JLjava/lang/Runnable;)Lse/m0;
+    invoke-virtual {v0, p1, p2, p3}, Lze/c0;->invokeOnTimeout(JLjava/lang/Runnable;)Lze/l0;
 
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "block"
-
-    .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public abstract synthetic scheduleResumeAfterDelay(JLse/f;)V
+.method public abstract synthetic scheduleResumeAfterDelay(JLze/f;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
-            "Lse/f<",
+            "Lze/f<",
             "-",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation

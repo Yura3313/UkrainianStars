@@ -37,7 +37,7 @@
 
 .field public g:F
 
-.field public final h:Lj0/c$c;
+.field public final h:Lcom/google/android/material/behavior/SwipeDismissBehavior$a;
 
 
 # direct methods
@@ -70,20 +70,23 @@
 
     invoke-direct {v0, p0}, Lcom/google/android/material/behavior/SwipeDismissBehavior$a;-><init>(Lcom/google/android/material/behavior/SwipeDismissBehavior;)V
 
-    iput-object v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->h:Lj0/c$c;
+    iput-object v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->h:Lcom/google/android/material/behavior/SwipeDismissBehavior$a;
 
     return-void
 .end method
 
-.method public static u(FFF)F
-    .locals 0
+.method public static u(F)F
+    .locals 1
 
-    .line 1
-    invoke-static {p0, p1}, Ljava/lang/Math;->max(FF)F
+    const/4 v0, 0x0
+
+    invoke-static {v0, p0}, Ljava/lang/Math;->max(FF)F
 
     move-result p0
 
-    invoke-static {p0, p2}, Ljava/lang/Math;->min(FF)F
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    invoke-static {p0, v0}, Ljava/lang/Math;->min(FF)F
 
     move-result p0
 
@@ -161,10 +164,10 @@
     if-nez p2, :cond_2
 
     .line 6
-    iget-object p2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->h:Lj0/c$c;
+    iget-object p2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->h:Lcom/google/android/material/behavior/SwipeDismissBehavior$a;
 
     .line 7
-    invoke-static {p1, p2}, Lj0/c;->l(Landroid/view/ViewGroup;Lj0/c$c;)Lj0/c;
+    invoke-static {p1, p2}, Lj0/c;->k(Landroid/view/ViewGroup;Lj0/c$c;)Lj0/c;
 
     move-result-object p1
 
@@ -174,7 +177,7 @@
     :cond_2
     iget-object p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->a:Lj0/c;
 
-    invoke-virtual {p1, p3}, Lj0/c;->z(Landroid/view/MotionEvent;)Z
+    invoke-virtual {p1, p3}, Lj0/c;->y(Landroid/view/MotionEvent;)Z
 
     move-result p1
 
@@ -184,8 +187,8 @@
     return v2
 .end method
 
-.method public h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
-    .locals 1
+.method public final h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -207,12 +210,12 @@
     const/4 p1, 0x1
 
     .line 3
-    invoke-static {p2, p1}, Lf0/r;->D(Landroid/view/View;I)V
+    invoke-static {p2, p1}, Lf0/r;->I(Landroid/view/View;I)V
 
     const/high16 p1, 0x100000
 
     .line 4
-    invoke-static {p2, p1}, Lf0/r;->v(Landroid/view/View;I)V
+    invoke-static {p2, p1}, Lf0/r;->y(Landroid/view/View;I)V
 
     .line 5
     invoke-virtual {p0, p2}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->t(Landroid/view/View;)Z
@@ -222,15 +225,13 @@
     if-eqz p1, :cond_0
 
     .line 6
-    sget-object p1, Lg0/b$a;->l:Lg0/b$a;
+    sget-object p1, Lg0/c$a;->l:Lg0/c$a;
 
-    const/4 p3, 0x0
+    new-instance p3, Lcom/google/android/material/behavior/a;
 
-    new-instance v0, Lcom/google/android/material/behavior/a;
+    invoke-direct {p3, p0}, Lcom/google/android/material/behavior/a;-><init>(Lcom/google/android/material/behavior/SwipeDismissBehavior;)V
 
-    invoke-direct {v0, p0}, Lcom/google/android/material/behavior/a;-><init>(Lcom/google/android/material/behavior/SwipeDismissBehavior;)V
-
-    invoke-static {p2, p1, p3, v0}, Lf0/r;->x(Landroid/view/View;Lg0/b$a;Ljava/lang/CharSequence;Lg0/d;)V
+    invoke-static {p2, p1, p3}, Lf0/r;->A(Landroid/view/View;Lg0/c$a;Lg0/e;)V
 
     :cond_0
     const/4 p1, 0x0
@@ -238,7 +239,7 @@
     return p1
 .end method
 
-.method public s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public final s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -256,7 +257,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    invoke-virtual {p1, p3}, Lj0/c;->s(Landroid/view/MotionEvent;)V
+    invoke-virtual {p1, p3}, Lj0/c;->r(Landroid/view/MotionEvent;)V
 
     const/4 p1, 0x1
 

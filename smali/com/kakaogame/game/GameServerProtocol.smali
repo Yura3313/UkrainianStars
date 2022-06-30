@@ -115,7 +115,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -124,7 +123,6 @@
 .method private static initAPIProxyAuthority()Ljava/lang/String;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/kakaogame/game/GameServerProtocol;->DEPLOY_PHASE:Lcom/kakao/sdk/partner/model/KakaoPhase;
 
     invoke-virtual {v0}, Lcom/kakao/sdk/partner/model/KakaoPhase;->getPhaseName()Ljava/lang/String;
@@ -275,7 +273,6 @@
 .method private static initGameAPIAuthority()Ljava/lang/String;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/kakaogame/game/GameServerProtocol;->DEPLOY_PHASE:Lcom/kakao/sdk/partner/model/KakaoPhase;
 
     invoke-virtual {v0}, Lcom/kakao/sdk/partner/model/KakaoPhase;->getPhaseName()Ljava/lang/String;
@@ -380,7 +377,6 @@
 .method private static initKageAPIAuthority()Ljava/lang/String;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/kakaogame/game/GameServerProtocol;->DEPLOY_PHASE:Lcom/kakao/sdk/partner/model/KakaoPhase;
 
     invoke-virtual {v0}, Lcom/kakao/sdk/partner/model/KakaoPhase;->getPhaseName()Ljava/lang/String;
@@ -486,7 +482,6 @@
 .method private static final initReachAuthority()Ljava/lang/String;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/kakaogame/game/GameServerProtocol;->DEPLOY_PHASE:Lcom/kakao/sdk/partner/model/KakaoPhase;
 
     invoke-virtual {v0}, Lcom/kakao/sdk/partner/model/KakaoPhase;->getPhaseName()Ljava/lang/String;

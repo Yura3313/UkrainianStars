@@ -56,11 +56,13 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JLjava/lang/Long;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "accessToken"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p6, :cond_0
+    const-string v0, "tokenType"
+
+    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -78,24 +80,9 @@
     iput-object p7, p0, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->scopes:Ljava/lang/String;
 
     return-void
-
-    :cond_0
-    const-string p1, "tokenType"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "accessToken"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;JLjava/lang/Long;Ljava/lang/String;Ljava/lang/String;ILle/g;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;JLjava/lang/Long;Ljava/lang/String;Ljava/lang/String;ILse/e;)V
     .locals 10
 
     and-int/lit8 v0, p8, 0x2
@@ -144,7 +131,7 @@
 
     move-object/from16 v8, p6
 
-    .line 3
+    .line 2
     invoke-direct/range {v2 .. v9}, Lcom/kakao/sdk/auth/model/AccessTokenResponse;-><init>(Ljava/lang/String;Ljava/lang/String;JLjava/lang/Long;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -279,17 +266,21 @@
 .method public final copy(Ljava/lang/String;Ljava/lang/String;JLjava/lang/Long;Ljava/lang/String;Ljava/lang/String;)Lcom/kakao/sdk/auth/model/AccessTokenResponse;
     .locals 9
 
-    const/4 v0, 0x0
+    const-string v0, "accessToken"
 
-    if-eqz p1, :cond_1
+    move-object v2, p1
 
-    if-eqz p6, :cond_0
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "tokenType"
+
+    move-object v7, p6
+
+    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/auth/model/AccessTokenResponse;
 
     move-object v1, v0
-
-    move-object v2, p1
 
     move-object v3, p2
 
@@ -297,28 +288,11 @@
 
     move-object v6, p5
 
-    move-object v7, p6
-
     move-object/from16 v8, p7
 
     invoke-direct/range {v1 .. v8}, Lcom/kakao/sdk/auth/model/AccessTokenResponse;-><init>(Ljava/lang/String;Ljava/lang/String;JLjava/lang/Long;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
-
-    :cond_0
-    const-string v1, "tokenType"
-
-    .line 1
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string v1, "accessToken"
-
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -348,7 +322,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->accessToken:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -358,7 +332,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->refreshToken:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -386,7 +360,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->refreshTokenExpiresIn:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -396,7 +370,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->tokenType:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -406,7 +380,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->scopes:Ljava/lang/String;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -425,7 +399,6 @@
 .method public final getAccessToken()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->accessToken:Ljava/lang/String;
 
     return-object v0
@@ -434,7 +407,6 @@
 .method public final getAccessTokenExpiresIn()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->accessTokenExpiresIn:J
 
     return-wide v0
@@ -443,7 +415,6 @@
 .method public final getRefreshToken()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->refreshToken:Ljava/lang/String;
 
     return-object v0
@@ -452,7 +423,6 @@
 .method public final getRefreshTokenExpiresIn()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->refreshTokenExpiresIn:Ljava/lang/Long;
 
     return-object v0
@@ -461,7 +431,6 @@
 .method public final getScopes()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->scopes:Ljava/lang/String;
 
     return-object v0
@@ -470,7 +439,6 @@
 .method public final getTokenType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->tokenType:Ljava/lang/String;
 
     return-object v0
@@ -584,10 +552,12 @@
 
     const-string v0, "AccessTokenResponse(accessToken="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->accessToken:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -632,7 +602,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -642,7 +613,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    if-eqz p1, :cond_1
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->accessToken:Ljava/lang/String;
 
@@ -687,14 +660,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     return-void
-
-    :cond_1
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

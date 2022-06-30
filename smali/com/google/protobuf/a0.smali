@@ -60,7 +60,10 @@
     sput-object v2, Lcom/google/protobuf/a0;->c:Ljava/nio/ByteBuffer;
 
     .line 5
-    invoke-static {v1, v0, v0, v0}, Lcom/google/protobuf/j;->i([BIIZ)Lcom/google/protobuf/j;
+    array-length v2, v1
+
+    .line 6
+    invoke-static {v1, v0, v2, v0}, Lcom/google/protobuf/j;->i([BIIZ)Lcom/google/protobuf/j;
 
     return-void
 .end method
@@ -112,10 +115,10 @@
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    check-cast p0, Lcom/google/protobuf/GeneratedMessageLite$b;
+    check-cast p0, Lcom/google/protobuf/GeneratedMessageLite$a;
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$b;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->f:Lcom/google/protobuf/GeneratedMessageLite;
 
     .line 4
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -135,21 +138,16 @@
     check-cast p1, Lcom/google/protobuf/GeneratedMessageLite;
 
     .line 7
-    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$b;->d()V
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/GeneratedMessageLite$a;->f(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$a;
 
     .line 8
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$b;->h:Lcom/google/protobuf/GeneratedMessageLite;
-
-    invoke-virtual {p0, v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->g(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/GeneratedMessageLite;)V
-
-    .line 9
-    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$b;->c()Lcom/google/protobuf/GeneratedMessageLite;
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$a;->c()Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object p0
 
     return-object p0
 
-    .line 10
+    .line 9
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

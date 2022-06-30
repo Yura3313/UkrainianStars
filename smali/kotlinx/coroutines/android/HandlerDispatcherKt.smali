@@ -25,7 +25,7 @@
 
     const-string v2, "Looper.getMainLooper()"
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v2, 0x1
 
@@ -44,13 +44,13 @@
     :catchall_0
     move-exception v0
 
-    invoke-static {v0}, Lcom/android/billingclient/api/v;->b(Ljava/lang/Throwable;)Ljava/lang/Object;
+    invoke-static {v0}, Le5/i;->h(Ljava/lang/Throwable;)Ljava/lang/Object;
 
     move-result-object v0
 
     .line 2
     :goto_0
-    instance-of v1, v0, Lae/e$a;
+    instance-of v1, v0, Lie/e$a;
 
     if-eqz v1, :cond_0
 
@@ -71,20 +71,18 @@
     return-void
 .end method
 
-.method public static final synthetic access$postFrameCallback(Landroid/view/Choreographer;Lse/f;)V
+.method public static final synthetic access$postFrameCallback(Landroid/view/Choreographer;Lze/f;)V
     .locals 0
 
-    .line 1
-    invoke-static {p0, p1}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->postFrameCallback(Landroid/view/Choreographer;Lse/f;)V
+    invoke-static {p0, p1}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->postFrameCallback(Landroid/view/Choreographer;Lze/f;)V
 
     return-void
 .end method
 
-.method public static final synthetic access$updateChoreographerAndPostFrameCallback(Lse/f;)V
+.method public static final synthetic access$updateChoreographerAndPostFrameCallback(Lze/f;)V
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->updateChoreographerAndPostFrameCallback(Lse/f;)V
+    invoke-static {p0}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->updateChoreographerAndPostFrameCallback(Lze/f;)V
 
     return-void
 .end method
@@ -92,27 +90,29 @@
 .method public static final asHandler(Landroid/os/Looper;Z)Landroid/os/Handler;
     .locals 7
 
-    const/4 v0, 0x0
+    const-string v0, "$this$asHandler"
 
-    if-eqz p0, :cond_3
+    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p1, :cond_2
 
     .line 1
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x1c
+    const/16 v0, 0x1c
+
+    const/4 v1, 0x0
 
     const/4 v2, 0x0
 
     const/4 v3, 0x1
 
-    if-lt p1, v1, :cond_1
+    if-lt p1, v0, :cond_1
 
     .line 2
     const-class p1, Landroid/os/Handler;
 
-    const-string v1, "createAsync"
+    const-string v0, "createAsync"
 
     new-array v4, v3, [Ljava/lang/Class;
 
@@ -120,16 +120,16 @@
 
     aput-object v5, v4, v2
 
-    invoke-virtual {p1, v1, v4}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {p1, v0, v4}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p1
 
-    new-array v1, v3, [Ljava/lang/Object;
+    new-array v0, v3, [Ljava/lang/Object;
 
-    aput-object p0, v1, v2
+    aput-object p0, v0, v2
 
     .line 3
-    invoke-virtual {p1, v0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -153,9 +153,9 @@
     :try_start_0
     const-class p1, Landroid/os/Handler;
 
-    const/4 v1, 0x3
+    const/4 v0, 0x3
 
-    new-array v4, v1, [Ljava/lang/Class;
+    new-array v4, v0, [Ljava/lang/Class;
 
     const-class v5, Landroid/os/Looper;
 
@@ -179,28 +179,28 @@
 
     const-string v4, "Handler::class.java.getD\u2026:class.javaPrimitiveType)"
 
-    invoke-static {p1, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
-    new-array v1, v1, [Ljava/lang/Object;
+    new-array v0, v0, [Ljava/lang/Object;
 
-    aput-object p0, v1, v2
+    aput-object p0, v0, v2
 
-    aput-object v0, v1, v3
+    aput-object v1, v0, v3
 
     .line 7
     sget-object p0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    aput-object p0, v1, v6
+    aput-object p0, v0, v6
 
-    invoke-virtual {p1, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
     const-string p1, "constructor.newInstance(this, null, true)"
 
-    invoke-static {p0, p1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p0, Landroid/os/Handler;
 
@@ -221,22 +221,14 @@
     invoke-direct {p1, p0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-object p1
-
-    :cond_3
-    const-string p0, "$this$asHandler"
-
-    .line 10
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public static final awaitFrame(Lde/d;)Ljava/lang/Object;
+.method public static final awaitFrame(Lke/d;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lde/d<",
+            "Lke/d<",
             "-",
             "Ljava/lang/Long;",
             ">;)",
@@ -247,24 +239,22 @@
     .line 1
     sget-object v0, Lkotlinx/coroutines/android/HandlerDispatcherKt;->choreographer:Landroid/view/Choreographer;
 
-    const/4 v1, 0x1
-
     if-eqz v0, :cond_0
 
     .line 2
-    new-instance v2, Lse/g;
+    new-instance v1, Lze/g;
 
-    invoke-static {p0}, Lee/d;->e(Lde/d;)Lde/d;
+    invoke-static {p0}, Lpe/a;->e(Lke/d;)Lke/d;
 
     move-result-object p0
 
-    invoke-direct {v2, p0, v1}, Lse/g;-><init>(Lde/d;I)V
+    invoke-direct {v1, p0}, Lze/g;-><init>(Lke/d;)V
 
     .line 3
-    invoke-static {v0, v2}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->access$postFrameCallback(Landroid/view/Choreographer;Lse/f;)V
+    invoke-static {v0, v1}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->access$postFrameCallback(Landroid/view/Choreographer;Lze/f;)V
 
     .line 4
-    invoke-virtual {v2}, Lse/g;->o()Ljava/lang/Object;
+    invoke-virtual {v1}, Lze/g;->m()Ljava/lang/Object;
 
     move-result-object p0
 
@@ -272,33 +262,33 @@
 
     .line 5
     :cond_0
-    new-instance v0, Lse/g;
+    new-instance v0, Lze/g;
 
-    invoke-static {p0}, Lee/d;->e(Lde/d;)Lde/d;
+    invoke-static {p0}, Lpe/a;->e(Lke/d;)Lke/d;
 
     move-result-object p0
 
-    invoke-direct {v0, p0, v1}, Lse/g;-><init>(Lde/d;I)V
+    invoke-direct {v0, p0}, Lze/g;-><init>(Lke/d;)V
 
     .line 6
-    sget-object p0, Lse/l0;->a:Lse/w;
+    sget-object p0, Lze/k0;->a:Lze/t0;
 
     .line 7
-    sget-object p0, Lte/r;->a:Lse/i1;
+    sget-object p0, Laf/q;->a:Lze/i1;
 
     .line 8
-    sget-object v1, Lde/g;->g:Lde/g;
+    sget-object v1, Lke/h;->f:Lke/h;
 
     .line 9
     new-instance v2, Lkotlinx/coroutines/android/HandlerDispatcherKt$$special$$inlined$Runnable$1;
 
-    invoke-direct {v2, v0}, Lkotlinx/coroutines/android/HandlerDispatcherKt$$special$$inlined$Runnable$1;-><init>(Lse/f;)V
+    invoke-direct {v2, v0}, Lkotlinx/coroutines/android/HandlerDispatcherKt$$special$$inlined$Runnable$1;-><init>(Lze/f;)V
 
     .line 10
-    invoke-virtual {p0, v1, v2}, Lse/w;->dispatch(Lde/f;Ljava/lang/Runnable;)V
+    invoke-virtual {p0, v1, v2}, Lze/w;->dispatch(Lke/f;Ljava/lang/Runnable;)V
 
     .line 11
-    invoke-virtual {v0}, Lse/g;->o()Ljava/lang/Object;
+    invoke-virtual {v0}, Lze/g;->m()Ljava/lang/Object;
 
     move-result-object p0
 
@@ -322,24 +312,15 @@
 .method public static final from(Landroid/os/Handler;Ljava/lang/String;)Lkotlinx/coroutines/android/HandlerDispatcher;
     .locals 1
 
-    if-eqz p0, :cond_0
+    const-string v0, "$this$asCoroutineDispatcher"
 
-    .line 1
+    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     new-instance v0, Lkotlinx/coroutines/android/HandlerContext;
 
     invoke-direct {v0, p0, p1}, Lkotlinx/coroutines/android/HandlerContext;-><init>(Landroid/os/Handler;Ljava/lang/String;)V
 
     return-object v0
-
-    :cond_0
-    const-string p0, "$this$asCoroutineDispatcher"
-
-    .line 2
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p0, 0x0
-
-    throw p0
 .end method
 
 .method public static synthetic from$default(Landroid/os/Handler;Ljava/lang/String;ILjava/lang/Object;)Lkotlinx/coroutines/android/HandlerDispatcher;
@@ -351,7 +332,6 @@
 
     const/4 p1, 0x0
 
-    .line 1
     :cond_0
     invoke-static {p0, p1}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->from(Landroid/os/Handler;Ljava/lang/String;)Lkotlinx/coroutines/android/HandlerDispatcher;
 
@@ -360,35 +340,34 @@
     return-object p0
 .end method
 
-.method private static final postFrameCallback(Landroid/view/Choreographer;Lse/f;)V
+.method private static final postFrameCallback(Landroid/view/Choreographer;Lze/f;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/view/Choreographer;",
-            "Lse/f<",
+            "Lze/f<",
             "-",
             "Ljava/lang/Long;",
             ">;)V"
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lkotlinx/coroutines/android/HandlerDispatcherKt$postFrameCallback$1;
 
-    invoke-direct {v0, p1}, Lkotlinx/coroutines/android/HandlerDispatcherKt$postFrameCallback$1;-><init>(Lse/f;)V
+    invoke-direct {v0, p1}, Lkotlinx/coroutines/android/HandlerDispatcherKt$postFrameCallback$1;-><init>(Lze/f;)V
 
     invoke-virtual {p0, v0}, Landroid/view/Choreographer;->postFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
 
     return-void
 .end method
 
-.method private static final updateChoreographerAndPostFrameCallback(Lse/f;)V
+.method private static final updateChoreographerAndPostFrameCallback(Lze/f;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lse/f<",
+            "Lze/f<",
             "-",
             "Ljava/lang/Long;",
             ">;)V"
@@ -414,13 +393,13 @@
 
     .line 3
     :goto_0
-    invoke-static {v0, p0}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->postFrameCallback(Landroid/view/Choreographer;Lse/f;)V
+    invoke-static {v0, p0}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->postFrameCallback(Landroid/view/Choreographer;Lze/f;)V
 
     return-void
 
     .line 4
     :cond_1
-    invoke-static {}, Ls3/b;->g()V
+    invoke-static {}, Lt3/e;->f()V
 
     const/4 p0, 0x0
 

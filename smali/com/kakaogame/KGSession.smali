@@ -49,7 +49,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +57,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/KGResult;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/KGSession;->returnResultOnCallback(Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/KGResult;)V
 
     return-void
@@ -67,7 +65,6 @@
 .method public static synthetic access$200(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;J)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lcom/kakaogame/KGSession;->request(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;J)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -78,7 +75,6 @@
 .method public static synthetic access$400()Lcom/kakaogame/KGSession$OnlinePushManager;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/KGSession;->onlinePushManager:Lcom/kakaogame/KGSession$OnlinePushManager;
 
     return-object v0
@@ -152,7 +148,6 @@
 .method public static getAccessToken()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v0
@@ -175,7 +170,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v0
@@ -337,7 +331,7 @@
     move-exception p0
 
     .line 5
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -397,7 +391,7 @@
     move-exception v1
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -740,7 +734,7 @@
     const-string v0, "KGSession"
 
     .line 6
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -971,7 +965,7 @@
 
     .line 24
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -980,7 +974,7 @@
     const/16 p1, 0xfa1
 
     .line 25
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1180,7 +1174,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-interface {p0, p1}, Lcom/kakaogame/KGResultCallback;->onResult(Lcom/kakaogame/KGResult;)V
 
     :cond_0
@@ -1440,7 +1433,7 @@
     const-string v0, "KGSession"
 
     .line 6
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 

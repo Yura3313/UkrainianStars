@@ -1,26 +1,61 @@
 .class public final Lnd/h;
 .super Ljava/lang/Object;
-.source "FriendsFragment.kt"
+.source "Comparisons.kt"
+
+# interfaces
+.implements Ljava/util/Comparator;
 
 
-# static fields
-.field public static final a:Lvd/j;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "TT;>;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>()V
+    .locals 0
 
-    .line 1
-    new-instance v0, Lvd/j;
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    invoke-direct {v0, v1, v2}, Lvd/j;-><init>(II)V
-
-    sput-object v0, Lnd/h;->a:Lvd/j;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)I"
+        }
+    .end annotation
+
+    .line 1
+    check-cast p2, Lnd/l;
+
+    .line 2
+    invoke-virtual {p2}, Lnd/l;->e()Ljava/util/Date;
+
+    move-result-object p2
+
+    check-cast p1, Lnd/l;
+
+    .line 3
+    invoke-virtual {p1}, Lnd/l;->e()Ljava/util/Date;
+
+    move-result-object p1
+
+    invoke-static {p2, p1}, Lid/h;->b(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+
+    move-result p1
+
+    return p1
 .end method

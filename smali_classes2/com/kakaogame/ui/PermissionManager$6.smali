@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/ui/PermissionManager$6;->val$permissionResultLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,10 +42,11 @@
     const-string v1, " : "
 
     .line 1
-    invoke-static {v0, p1, v1}, Lqc/a0;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, v1}, Lcom/supercell/titan/a;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -67,11 +67,12 @@
 
     const-string p1, "permissions: "
 
-    .line 2
+    .line 3
     invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
+    .line 4
     invoke-static {p2}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2
@@ -84,7 +85,7 @@
 
     invoke-static {v1, p1}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
+    .line 5
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -105,12 +106,12 @@
 
     invoke-static {v1, p1}, Lcom/kakaogame/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
+    .line 6
     invoke-static {p3}, Lcom/kakaogame/ui/PermissionManager;->access$100([I)Z
 
     move-result p1
 
-    .line 5
+    .line 7
     iget-object p2, p0, Lcom/kakaogame/ui/PermissionManager$6;->val$permissionResultLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -119,7 +120,7 @@
 
     invoke-virtual {p2, p1}, Lcom/kakaogame/util/MutexLock;->setContent(Ljava/lang/Object;)V
 
-    .line 6
+    .line 8
     iget-object p1, p0, Lcom/kakaogame/ui/PermissionManager$6;->val$permissionResultLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-virtual {p1}, Lcom/kakaogame/util/MutexLock;->unlock()V

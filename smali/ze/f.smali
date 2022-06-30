@@ -1,32 +1,44 @@
-.class public interface abstract annotation Lze/f;
+.class public interface abstract Lze/f;
 .super Ljava/lang/Object;
-.source "GET.java"
+.source "CancellableContinuation.kt"
 
 # interfaces
-.implements Ljava/lang/annotation/Annotation;
+.implements Lke/d;
 
 
 # annotations
-.annotation system Ldalvik/annotation/AnnotationDefault;
-    value = .subannotation Lze/f;
-        value = ""
-    .end subannotation
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Documented;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Target;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lke/d<",
+        "TT;>;"
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract value()Ljava/lang/String;
+.method public abstract n(Lre/l;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lre/l<",
+            "-",
+            "Ljava/lang/Throwable;",
+            "Lie/h;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract r(Lze/w;Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lze/w;",
+            "TT;)V"
+        }
+    .end annotation
 .end method

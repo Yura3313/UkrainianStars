@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/NativeDialogManager$b;
+.class public final Lcom/supercell/titan/NativeDialogManager$b;
 .super Ljava/lang/Object;
 .source "NativeDialogManager.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/titan/NativeDialogManager;
+.field public final synthetic f:Lcom/supercell/titan/NativeDialogManager;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/NativeDialogManager;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/supercell/titan/NativeDialogManager$b;->g:Lcom/supercell/titan/NativeDialogManager;
+    iput-object p1, p0, Lcom/supercell/titan/NativeDialogManager$b;->f:Lcom/supercell/titan/NativeDialogManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
+.method public final onClick(Landroid/content/DialogInterface;I)V
     .locals 1
 
     const/4 p1, -0x1
@@ -60,10 +59,10 @@
 
     .line 1
     :goto_0
-    iget-object p2, p0, Lcom/supercell/titan/NativeDialogManager$b;->g:Lcom/supercell/titan/NativeDialogManager;
+    iget-object p2, p0, Lcom/supercell/titan/NativeDialogManager$b;->f:Lcom/supercell/titan/NativeDialogManager;
 
     .line 2
-    iget v0, p2, Lcom/supercell/titan/NativeDialogManager;->g:I
+    iget v0, p2, Lcom/supercell/titan/NativeDialogManager;->f:I
 
     .line 3
     invoke-virtual {p2, v0, p1}, Lcom/supercell/titan/NativeDialogManager;->b(II)V

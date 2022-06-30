@@ -12,7 +12,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
 
     return-void
@@ -134,7 +133,6 @@
 .method public shutdown()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->close()V
 
     return-void

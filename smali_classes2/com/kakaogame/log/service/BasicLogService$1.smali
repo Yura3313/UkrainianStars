@@ -27,7 +27,6 @@
 .method public constructor <init>(Ljava/util/Map;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/log/service/BasicLogService$1;->val$body:Ljava/util/Map;
 
     iput-object p2, p0, Lcom/kakaogame/log/service/BasicLogService$1;->val$callback:Lcom/kakaogame/KGResultCallback;

@@ -23,68 +23,68 @@
 
 
 # static fields
-.field public static final synthetic s0:I
+.field public static final synthetic q0:I
 
 
 # instance fields
-.field public j0:Ljava/util/List;
+.field public h0:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
             "+",
-            "Lvd/j1;",
+            "Lae/b2;",
             ">;"
         }
     .end annotation
 .end field
 
+.field public i0:Z
+
+.field public j0:Z
+
 .field public k0:Z
 
-.field public l0:Z
+.field public l0:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lvc/w;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public m0:Z
+.field public m0:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lvc/w;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field public n0:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lqc/x;",
+            "Lvc/c;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public o0:Ljava/util/List;
+.field public final o0:Lae/o2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/List<",
-            "Lqc/x;",
+            "Lae/o2<",
+            "Lae/e2;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public p0:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lqc/c;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final q0:Lvd/w1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lvd/w1<",
-            "Lvd/m1;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public r0:Ljava/util/HashMap;
+.field public p0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -95,18 +95,18 @@
     invoke-direct {p0}, Lcom/supercell/id/ui/BaseFragment;-><init>()V
 
     .line 2
-    sget-object v0, Lbe/m;->g:Lbe/m;
+    sget-object v0, Lje/l;->f:Lje/l;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
+    iput-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->l0:Ljava/util/List;
 
     .line 3
-    iput-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o0:Ljava/util/List;
+    iput-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->m0:Ljava/util/List;
 
     .line 4
-    iput-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/List;
+    iput-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
 
     .line 5
-    new-instance v0, Lvd/w1;
+    new-instance v0, Lae/o2;
 
     new-instance v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;
 
@@ -118,19 +118,19 @@
     invoke-direct {v2, p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;-><init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
 
     .line 7
-    invoke-direct {v0, v1, v2}, Lvd/w1;-><init>(Lke/l;Lke/l;)V
+    invoke-direct {v0, v1, v2}, Lae/o2;-><init>(Lre/l;Lre/l;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->q0:Lvd/w1;
+    iput-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o0:Lae/o2;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public W0()V
+.method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->r0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -140,12 +140,13 @@
     return-void
 .end method
 
-.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string p3, "inflater"
 
-    .line 1
+    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sget p3, Lcom/supercell/id/R$layout;->fragment_profile_selector:I
 
     const/4 v0, 0x0
@@ -155,25 +156,14 @@
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "inflater"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public i0()V
+.method public final a0()V
     .locals 1
 
-    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->i0()V
+    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->r0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -183,34 +173,10 @@
     return-void
 .end method
 
-.method public o0()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
-
-    .line 2
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object v0
-
-    .line 3
-    iget-object v0, v0, Lvd/r;->m:Lcom/supercell/titan/h;
-
-    .line 4
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    return-void
-.end method
-
-.method public o1(I)Landroid/view/View;
+.method public final f1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->r0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -218,10 +184,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->r0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->r0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -236,7 +202,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -250,7 +216,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->r0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -262,18 +228,42 @@
     return-object v0
 .end method
 
-.method public final p1()Z
+.method public final g0()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    .line 1
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+
+    .line 2
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object v0
+
+    .line 3
+    iget-object v0, v0, Lae/u;->m:La5/d0;
+
+    .line 4
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    return-void
+.end method
+
+.method public final g1()Z
     .locals 3
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v1
 
     .line 2
-    iget-object v1, v1, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object v1, v1, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 3
     invoke-virtual {v1}, Lcom/supercell/id/IdConfiguration;->getHasGameAccountToken()Z
@@ -284,12 +274,12 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lvd/r;->l:Lcom/supercell/id/IdAccount;
+    iget-object v0, v0, Lae/u;->l:Lcom/supercell/id/IdAccount;
 
     if-eqz v0, :cond_0
 
@@ -301,7 +291,7 @@
     if-eq v0, v2, :cond_1
 
     :cond_0
-    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k0:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->i0:Z
 
     if-nez v0, :cond_1
 
@@ -314,7 +304,7 @@
     return v2
 .end method
 
-.method public final q1(Z)V
+.method public final h1(Z)V
     .locals 3
 
     .line 1
@@ -326,23 +316,23 @@
 
     .line 2
     :try_start_0
-    iput-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->l0:Z
+    iput-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->j0:Z
 
     goto :goto_0
 
     .line 3
     :cond_0
-    iput-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->m0:Z
+    iput-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k0:Z
 
     .line 4
     :goto_0
-    iget-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->l0:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->j0:Z
 
     const/4 v1, 0x0
 
     if-eqz p1, :cond_1
 
-    iget-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->m0:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k0:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -365,7 +355,7 @@
 
     .line 6
     :cond_2
-    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/List;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
@@ -373,7 +363,7 @@
 
     if-eqz p1, :cond_4
 
-    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o0:Ljava/util/List;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->m0:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
@@ -382,13 +372,15 @@
     if-eqz p1, :cond_4
 
     .line 7
-    invoke-virtual {p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p1()Z
+    invoke-virtual {p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->g1()Z
 
     move-result p1
 
+    const/4 v2, 0x0
+
     if-eqz p1, :cond_3
 
-    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->l0:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
@@ -397,40 +389,40 @@
     if-eqz p1, :cond_3
 
     .line 8
-    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
-    new-instance v2, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;
+    new-instance v0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;
 
-    invoke-direct {v2, v1, v0}, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;-><init>(ZI)V
+    .line 9
+    invoke-direct {v0, v1}, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;-><init>(Z)V
 
-    invoke-virtual {p1, v2}, Lcom/supercell/id/ui/MainActivity;->C(Lcom/supercell/id/ui/BackStack$Entry;)V
+    .line 10
+    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->C(Lcom/supercell/id/ui/BackStack$Entry;)V
 
     goto :goto_2
 
-    .line 9
+    .line 11
     :cond_3
-    invoke-virtual {p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p1()Z
+    invoke-virtual {p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->g1()Z
 
     move-result p1
 
     if-nez p1, :cond_4
 
-    .line 10
-    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    .line 12
+    invoke-static {p0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
-    const/4 v1, 0x0
+    iget-boolean v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->i0:Z
 
-    iget-boolean v2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k0:Z
-
-    invoke-static {p1, v1, v2, v0}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {p1, v2, v1, v0}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v0
 
@@ -443,915 +435,785 @@
     :catchall_0
     move-exception p1
 
-    .line 11
+    .line 13
     monitor-exit p0
 
     throw p1
 .end method
 
-.method public final r1()V
-    .locals 21
-
-    move-object/from16 v0, p0
+.method public final i1()V
+    .locals 15
 
     .line 1
-    iget-object v1, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
 
     .line 2
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v1, Ljava/util/ArrayList;
 
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 3
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v0
 
     :cond_0
     :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v2
 
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
-    if-eqz v3, :cond_2
+    if-eqz v2, :cond_2
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 4
+    check-cast v2, Lvc/c;
+
+    .line 5
+    iget-object v2, v2, Lvc/c;->d:Lcom/supercell/id/model/IdConnectedSystem;
+
+    if-eqz v2, :cond_1
+
+    .line 6
+    iget-object v2, v2, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/lang/Integer;
+
+    if-eqz v2, :cond_1
+
+    .line 7
+    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Math;->abs(I)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
-    .line 4
-    check-cast v3, Lqc/c;
-
-    .line 5
-    iget-object v3, v3, Lqc/c;->d:Lcom/supercell/id/model/IdConnectedSystem;
-
-    if-eqz v3, :cond_1
-
-    .line 6
-    iget-object v3, v3, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Integer;
-
-    if-eqz v3, :cond_1
-
-    .line 7
-    invoke-virtual {v3}, Ljava/lang/Number;->intValue()I
-
-    move-result v3
-
-    invoke-static {v3}, Ljava/lang/Math;->abs(I)I
-
-    move-result v3
-
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
     :cond_1
-    if-eqz v4, :cond_0
+    if-eqz v3, :cond_0
 
     .line 8
-    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     .line 9
     :cond_2
-    iget-object v1, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o0:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->m0:Ljava/util/List;
 
     .line 10
-    new-instance v3, Ljava/util/ArrayList;
+    new-instance v2, Ljava/util/ArrayList;
 
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 11
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v0
 
     :cond_3
     :goto_1
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_7
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 12
+    check-cast v4, Lvc/w;
+
+    .line 13
+    iget-object v4, v4, Lvc/w;->e:Ljava/util/List;
+
+    .line 14
+    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v4
+
+    :cond_4
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v5
 
-    if-eqz v5, :cond_7
+    if-eqz v5, :cond_5
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    .line 12
-    check-cast v5, Lqc/x;
-
-    .line 13
-    iget-object v5, v5, Lqc/x;->e:Ljava/util/List;
-
-    .line 14
-    invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v5
 
-    :cond_4
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+    move-object v6, v5
+
+    check-cast v6, Lcom/supercell/id/model/IdConnectedSystem;
+
+    .line 15
+    iget-object v6, v6, Lcom/supercell/id/model/IdConnectedSystem;->f:Ljava/lang/String;
+
+    .line 16
+    sget-object v7, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v7}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object v7
+
+    .line 17
+    iget-object v7, v7, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
+
+    .line 18
+    invoke-virtual {v7}, Lcom/supercell/id/IdConfiguration;->getGame()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
-    if-eqz v6, :cond_5
-
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v6
-
-    move-object v7, v6
-
-    check-cast v7, Lcom/supercell/id/model/IdConnectedSystem;
-
-    .line 15
-    iget-object v7, v7, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
-
-    .line 16
-    sget-object v8, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v8}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object v8
-
-    .line 17
-    iget-object v8, v8, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
-
-    .line 18
-    invoke-virtual {v8}, Lcom/supercell/id/IdConfiguration;->getGame()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v7, v8}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_4
+    if-eqz v6, :cond_4
 
     goto :goto_2
 
     :cond_5
-    move-object v6, v4
+    move-object v5, v3
 
     :goto_2
-    check-cast v6, Lcom/supercell/id/model/IdConnectedSystem;
-
-    if-eqz v6, :cond_6
-
-    .line 19
-    iget-object v5, v6, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Integer;
+    check-cast v5, Lcom/supercell/id/model/IdConnectedSystem;
 
     if-eqz v5, :cond_6
 
+    .line 19
+    iget-object v4, v5, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/lang/Integer;
+
+    if-eqz v4, :cond_6
+
     .line 20
-    invoke-virtual {v5}, Ljava/lang/Number;->intValue()I
+    invoke-virtual {v4}, Ljava/lang/Number;->intValue()I
 
-    move-result v5
+    move-result v4
 
-    invoke-static {v5}, Ljava/lang/Math;->abs(I)I
+    invoke-static {v4}, Ljava/lang/Math;->abs(I)I
 
-    move-result v5
+    move-result v4
 
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v5
+    move-result-object v4
 
     goto :goto_3
 
     :cond_6
-    move-object v5, v4
+    move-object v4, v3
 
     :goto_3
-    if-eqz v5, :cond_3
+    if-eqz v4, :cond_3
 
     .line 21
-    invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
     .line 22
     :cond_7
-    invoke-static {v2, v3}, Lbe/k;->O(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v1, v2}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v0
 
     .line 23
-    check-cast v1, Ljava/util/ArrayList;
+    check-cast v0, Ljava/util/ArrayList;
 
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v0
 
     .line 24
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v2
+    move-result v1
 
-    if-nez v2, :cond_8
+    if-nez v1, :cond_8
 
-    move-object v2, v4
+    move-object v1, v3
 
     goto :goto_5
 
     .line 25
     :cond_8
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Comparable;
+
+    .line 26
+    :cond_9
+    :goto_4
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_a
+
+    .line 27
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/Comparable;
 
-    .line 26
-    :cond_9
-    :goto_4
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_a
-
-    .line 27
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/Comparable;
-
     .line 28
-    invoke-interface {v2, v3}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
+    invoke-interface {v1, v2}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
-    move-result v5
+    move-result v4
 
-    if-gez v5, :cond_9
+    if-gez v4, :cond_9
 
-    move-object v2, v3
+    move-object v1, v2
 
     goto :goto_4
 
     .line 29
     :cond_a
     :goto_5
-    check-cast v2, Ljava/lang/Integer;
+    check-cast v1, Ljava/lang/Integer;
 
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
-    if-eqz v2, :cond_b
+    if-eqz v1, :cond_b
 
-    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
 
-    move-result v2
+    move-result v1
 
-    int-to-double v5, v2
+    int-to-double v4, v1
 
-    int-to-double v7, v3
+    int-to-double v6, v2
 
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
+    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
 
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
+    invoke-static {v6, v7}, Ljava/lang/Double;->isNaN(D)Z
 
-    invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
+    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
 
-    invoke-static {v7, v8}, Ljava/lang/Double;->isNaN(D)Z
+    invoke-static {v6, v7}, Ljava/lang/Double;->isNaN(D)Z
 
-    add-double/2addr v5, v7
+    add-double/2addr v4, v6
 
-    invoke-static {v5, v6}, Ljava/lang/Math;->log10(D)D
+    invoke-static {v4, v5}, Ljava/lang/Math;->log10(D)D
 
-    move-result-wide v5
+    move-result-wide v4
 
-    invoke-static {v5, v6}, Ljava/lang/Math;->ceil(D)D
+    invoke-static {v4, v5}, Ljava/lang/Math;->ceil(D)D
 
-    move-result-wide v5
+    move-result-wide v4
 
-    double-to-int v2, v5
+    double-to-int v1, v4
 
-    invoke-static {v3, v2}, Ljava/lang/Math;->max(II)I
+    invoke-static {v2, v1}, Ljava/lang/Math;->max(II)I
 
-    move-result v2
+    move-result v1
 
     goto :goto_6
 
     :cond_b
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 30
     :goto_6
-    new-instance v5, Lle/s;
+    new-instance v4, Lse/q;
 
-    invoke-direct {v5}, Lle/s;-><init>()V
+    invoke-direct {v4}, Lse/q;-><init>()V
 
-    sget-object v6, Lbe/m;->g:Lbe/m;
+    sget-object v5, Lje/l;->f:Lje/l;
 
-    iput-object v6, v5, Lle/s;->g:Ljava/lang/Object;
+    iput-object v5, v4, Lse/q;->f:Ljava/lang/Object;
 
     .line 31
-    invoke-virtual/range {p0 .. p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p1()Z
+    invoke-virtual {p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->g1()Z
 
-    move-result v6
+    move-result v5
 
-    const-string v7, "switch_heading_switch"
+    const-string v6, "switch_heading_switch"
 
-    const/16 v8, 0xa
+    const/16 v7, 0xa
 
-    if-eqz v6, :cond_d
+    if-eqz v5, :cond_d
 
-    iget-object v6, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
+    iget-object v5, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->l0:Ljava/util/List;
 
-    invoke-interface {v6}, Ljava/util/Collection;->isEmpty()Z
+    invoke-interface {v5}, Ljava/util/Collection;->isEmpty()Z
 
-    move-result v6
+    move-result v5
 
-    xor-int/2addr v6, v3
+    xor-int/2addr v5, v2
 
-    if-eqz v6, :cond_d
+    if-eqz v5, :cond_d
 
     .line 32
-    iget-object v6, v5, Lle/s;->g:Ljava/lang/Object;
+    iget-object v5, v4, Lse/q;->f:Ljava/lang/Object;
 
-    check-cast v6, Ljava/util/List;
+    check-cast v5, Ljava/util/List;
 
-    new-instance v9, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;
+    new-instance v8, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;
 
-    const-string v10, "switch_heading_connect"
+    const-string v9, "switch_heading_connect"
 
-    invoke-direct {v9, v10}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;-><init>(Ljava/lang/String;)V
+    invoke-direct {v8, v9}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v6, v9}, Lbe/k;->P(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v5, v8}, Lje/j;->J(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v6
+    move-result-object v5
 
     .line 33
-    iget-object v9, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
+    iget-object v8, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->l0:Ljava/util/List;
 
     .line 34
-    new-instance v11, Ljava/util/ArrayList;
+    new-instance v10, Ljava/util/ArrayList;
 
-    invoke-static {v9, v8}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {v8, v7}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
-    move-result v12
+    move-result v11
 
-    invoke-direct {v11, v12}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v10, v11}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 35
-    invoke-interface {v9}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v8}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v9
+    move-result-object v8
 
     :goto_7
-    invoke-interface {v9}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v12
+    move-result v11
 
-    if-eqz v12, :cond_c
+    if-eqz v11, :cond_c
 
-    invoke-interface {v9}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v12
+    move-result-object v11
 
     .line 36
-    check-cast v12, Lqc/x;
+    check-cast v11, Lvc/w;
 
     .line 37
-    new-instance v13, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
+    new-instance v12, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
 
-    invoke-direct {v13, v12}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;-><init>(Lqc/x;)V
+    invoke-direct {v12, v11}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;-><init>(Lvc/w;)V
 
-    invoke-virtual {v11, v13}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v10, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_7
 
     :cond_c
-    invoke-static {v6, v11}, Lbe/k;->O(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v5, v10}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
-    move-result-object v6
+    move-result-object v5
 
     .line 38
-    sget-object v9, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$k;->b:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$k;
+    sget-object v8, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$k;->b:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$k;
 
-    invoke-static {v6, v9}, Lbe/k;->P(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v5, v8}, Lje/j;->J(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v6
+    move-result-object v5
 
-    iput-object v6, v5, Lle/s;->g:Ljava/lang/Object;
+    iput-object v5, v4, Lse/q;->f:Ljava/lang/Object;
 
     .line 39
-    sget v6, Lcom/supercell/id/R$id;->saved_logins:I
+    sget v5, Lcom/supercell/id/R$id;->saved_logins:I
 
-    invoke-virtual {v0, v6}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
 
-    move-result-object v6
+    move-result-object v5
 
-    if-eqz v6, :cond_e
+    if-eqz v5, :cond_e
 
-    sget v9, Lcom/supercell/id/R$id;->tab_title:I
+    sget v8, Lcom/supercell/id/R$id;->tab_title:I
 
-    invoke-virtual {v6, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v5, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v6
+    move-result-object v5
 
-    check-cast v6, Landroid/widget/TextView;
+    check-cast v5, Landroid/widget/TextView;
 
-    if-eqz v6, :cond_e
+    if-eqz v5, :cond_e
 
     .line 40
-    invoke-static {v6, v10, v4}, Lpd/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lke/p;)V
+    invoke-static {v5, v9, v3}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     goto :goto_8
 
     .line 41
     :cond_d
-    sget v6, Lcom/supercell/id/R$id;->saved_logins:I
+    sget v5, Lcom/supercell/id/R$id;->saved_logins:I
 
-    invoke-virtual {v0, v6}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
 
-    move-result-object v6
+    move-result-object v5
 
-    if-eqz v6, :cond_e
+    if-eqz v5, :cond_e
 
-    sget v9, Lcom/supercell/id/R$id;->tab_title:I
+    sget v8, Lcom/supercell/id/R$id;->tab_title:I
 
-    invoke-virtual {v6, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v5, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v6
+    move-result-object v5
 
-    check-cast v6, Landroid/widget/TextView;
+    check-cast v5, Landroid/widget/TextView;
 
-    if-eqz v6, :cond_e
+    if-eqz v5, :cond_e
 
     .line 42
-    invoke-static {v6, v7, v4}, Lpd/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lke/p;)V
+    invoke-static {v5, v6, v3}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 43
     :cond_e
     :goto_8
-    iget-object v6, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o0:Ljava/util/List;
+    iget-object v5, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->m0:Ljava/util/List;
 
-    invoke-interface {v6}, Ljava/util/Collection;->isEmpty()Z
+    invoke-interface {v5}, Ljava/util/Collection;->isEmpty()Z
 
-    move-result v6
+    move-result v5
 
-    xor-int/2addr v6, v3
+    xor-int/2addr v5, v2
 
-    if-nez v6, :cond_f
+    if-nez v5, :cond_f
 
-    iget-object v6, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/List;
+    iget-object v5, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
 
-    invoke-interface {v6}, Ljava/util/Collection;->isEmpty()Z
+    invoke-interface {v5}, Ljava/util/Collection;->isEmpty()Z
 
-    move-result v6
+    move-result v5
 
-    xor-int/2addr v6, v3
+    xor-int/2addr v5, v2
 
-    if-eqz v6, :cond_1c
+    if-eqz v5, :cond_18
 
     .line 44
     :cond_f
-    iget-object v6, v5, Lle/s;->g:Ljava/lang/Object;
+    iget-object v5, v4, Lse/q;->f:Ljava/lang/Object;
 
-    check-cast v6, Ljava/util/List;
+    check-cast v5, Ljava/util/List;
 
-    invoke-virtual/range {p0 .. p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p1()Z
+    invoke-virtual {p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->g1()Z
 
-    move-result v9
+    move-result v8
 
-    if-eqz v9, :cond_10
+    if-eqz v8, :cond_10
 
-    iget-object v9, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
+    iget-object v8, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->l0:Ljava/util/List;
 
-    invoke-interface {v9}, Ljava/util/Collection;->isEmpty()Z
+    invoke-interface {v8}, Ljava/util/Collection;->isEmpty()Z
 
-    move-result v9
+    move-result v8
 
-    xor-int/2addr v9, v3
+    xor-int/2addr v8, v2
 
-    if-eqz v9, :cond_10
+    if-eqz v8, :cond_10
 
-    new-instance v7, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;
+    new-instance v6, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;
 
-    const-string v9, "switch_switch_heading"
+    const-string v8, "switch_switch_heading"
 
-    invoke-direct {v7, v9}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v8}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;-><init>(Ljava/lang/String;)V
 
     goto :goto_9
 
     :cond_10
-    new-instance v9, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;
+    new-instance v8, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;
 
-    invoke-direct {v9, v7}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;-><init>(Ljava/lang/String;)V
+    invoke-direct {v8, v6}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;-><init>(Ljava/lang/String;)V
 
-    move-object v7, v9
+    move-object v6, v8
 
     :goto_9
-    invoke-static {v6, v7}, Lbe/k;->P(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v5, v6}, Lje/j;->J(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v5
+
+    .line 45
+    iget-object v6, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->m0:Ljava/util/List;
+
+    .line 46
+    new-instance v8, Ljava/util/ArrayList;
+
+    invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
+
+    .line 47
+    invoke-interface {v6}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v6
 
-    .line 45
-    iget-object v7, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o0:Ljava/util/List;
-
-    .line 46
-    new-instance v9, Ljava/util/ArrayList;
-
-    invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
-
-    .line 47
-    invoke-interface {v7}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v7
-
     :cond_11
     :goto_a
-    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v10
+    move-result v9
 
-    if-eqz v10, :cond_15
+    if-eqz v9, :cond_15
 
-    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v10
+    move-result-object v9
 
-    move-object v11, v10
+    move-object v10, v9
 
-    check-cast v11, Lqc/x;
+    check-cast v10, Lvc/w;
 
     .line 48
-    iget-object v12, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/List;
+    iget-object v11, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
 
-    invoke-interface {v12}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v11}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v11
+
+    :cond_12
+    invoke-interface {v11}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v12
+
+    if-eqz v12, :cond_13
+
+    invoke-interface {v11}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v12
 
-    :cond_12
-    invoke-interface {v12}, Ljava/util/Iterator;->hasNext()Z
+    move-object v13, v12
 
-    move-result v13
+    check-cast v13, Lvc/c;
 
-    if-eqz v13, :cond_13
+    .line 49
+    iget-object v13, v13, Lvc/c;->a:Lcom/supercell/id/IdAccount;
 
-    invoke-interface {v12}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 50
+    invoke-virtual {v13}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
 
     move-result-object v13
 
-    move-object v14, v13
-
-    check-cast v14, Lqc/c;
-
-    .line 49
-    iget-object v14, v14, Lqc/c;->a:Lcom/supercell/id/IdAccount;
-
-    .line 50
-    invoke-virtual {v14}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
-
-    move-result-object v14
-
     .line 51
-    iget-object v15, v11, Lqc/x;->b:Ljava/lang/String;
+    iget-object v14, v10, Lvc/w;->b:Ljava/lang/String;
 
     .line 52
-    invoke-static {v14, v15}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v13, v14}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v14
+    move-result v13
 
-    if-eqz v14, :cond_12
+    if-eqz v13, :cond_12
 
     goto :goto_b
 
     :cond_13
-    move-object v13, v4
+    move-object v12, v3
 
     :goto_b
-    if-nez v13, :cond_14
+    if-nez v12, :cond_14
 
-    const/4 v11, 0x1
+    const/4 v10, 0x1
 
     goto :goto_c
 
     :cond_14
-    const/4 v11, 0x0
+    const/4 v10, 0x0
 
     :goto_c
-    if-eqz v11, :cond_11
+    if-eqz v10, :cond_11
 
-    invoke-virtual {v9, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v8, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_a
 
     .line 53
     :cond_15
-    new-instance v1, Ljava/util/ArrayList;
+    new-instance v0, Ljava/util/ArrayList;
 
-    invoke-static {v9, v8}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {v8, v7}, Lje/f;->q(Ljava/lang/Iterable;I)I
+
+    move-result v2
+
+    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 54
+    invoke-virtual {v8}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_d
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
 
-    invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(I)V
+    if-eqz v3, :cond_16
 
-    .line 54
-    invoke-virtual {v9}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
 
-    :goto_d
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v7
-
-    if-eqz v7, :cond_1a
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v7
-
     .line 55
-    check-cast v7, Lqc/x;
+    check-cast v3, Lvc/w;
 
     .line 56
-    new-instance v9, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
+    new-instance v6, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
 
-    if-eqz v7, :cond_19
+    invoke-direct {v6, v3, v1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;-><init>(Lvc/w;I)V
 
-    .line 57
-    iget-object v10, v7, Lqc/x;->a:Ljava/util/List;
-
-    .line 58
-    invoke-static {v10}, Lbe/k;->F(Ljava/util/List;)Ljava/lang/Object;
-
-    move-result-object v10
-
-    check-cast v10, Lcom/supercell/id/IdAccount;
-
-    if-eqz v10, :cond_16
-
-    goto :goto_e
-
-    .line 59
-    :cond_16
-    new-instance v10, Lcom/supercell/id/IdAccount;
-
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
-
-    const/4 v15, 0x0
-
-    const/16 v17, 0x0
-
-    const/16 v18, 0x0
-
-    const/16 v19, 0x60
-
-    const/16 v20, 0x0
-
-    const-string v12, ""
-
-    const-string v16, ""
-
-    move-object v11, v10
-
-    invoke-direct/range {v11 .. v20}, Lcom/supercell/id/IdAccount;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILle/g;)V
-
-    .line 60
-    :goto_e
-    iget-object v11, v7, Lqc/x;->c:Ljava/lang/String;
-
-    .line 61
-    iget-object v12, v7, Lqc/x;->d:Lcom/supercell/id/model/ProfileImage;
-
-    .line 62
-    iget-object v13, v7, Lqc/x;->e:Ljava/util/List;
-
-    .line 63
-    invoke-interface {v13}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v13
-
-    :goto_f
-    invoke-interface {v13}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v14
-
-    if-eqz v14, :cond_18
-
-    invoke-interface {v13}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v14
-
-    move-object v15, v14
-
-    check-cast v15, Lcom/supercell/id/model/IdConnectedSystem;
-
-    .line 64
-    iget-object v15, v15, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
-
-    .line 65
-    sget-object v16, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual/range {v16 .. v16}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object v8
-
-    .line 66
-    iget-object v8, v8, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
-
-    .line 67
-    invoke-virtual {v8}, Lcom/supercell/id/IdConfiguration;->getGame()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v15, v8}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_17
-
-    goto :goto_10
-
-    :cond_17
-    const/16 v8, 0xa
-
-    goto :goto_f
-
-    :cond_18
-    move-object v14, v4
-
-    :goto_10
-    check-cast v14, Lcom/supercell/id/model/IdConnectedSystem;
-
-    .line 68
-    new-instance v8, Lqc/c;
-
-    invoke-direct {v8, v10, v11, v12, v14}, Lqc/c;-><init>(Lcom/supercell/id/IdAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdConnectedSystem;)V
-
-    invoke-direct {v9, v8, v2, v7}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;-><init>(Lqc/c;ILqc/x;)V
-
-    .line 69
-    invoke-virtual {v1, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    const/16 v8, 0xa
+    invoke-virtual {v0, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_d
 
+    :cond_16
+    invoke-static {v5, v0}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+
+    move-result-object v0
+
+    .line 57
+    iget-object v2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
+
+    .line 58
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-static {v2, v7}, Lje/f;->q(Ljava/lang/Iterable;I)I
+
+    move-result v5
+
+    invoke-direct {v3, v5}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 59
+    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_e
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_17
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 60
+    check-cast v5, Lvc/c;
+
+    .line 61
+    new-instance v6, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
+
+    invoke-direct {v6, v5, v1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;-><init>(Lvc/c;I)V
+
+    invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_e
+
+    :cond_17
+    invoke-static {v0, v3}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+
+    move-result-object v0
+
+    .line 62
+    sget-object v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$k;->b:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$k;
+
+    invoke-static {v0, v1}, Lje/j;->J(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    iput-object v0, v4, Lse/q;->f:Ljava/lang/Object;
+
+    .line 63
+    :cond_18
+    iget-object v0, v4, Lse/q;->f:Ljava/lang/Object;
+
+    check-cast v0, Ljava/util/List;
+
+    new-instance v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;
+
+    const-string v2, "switch_other_accounts_heading"
+
+    invoke-direct {v1, v2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v0, v1}, Lje/j;->J(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    .line 64
+    sget-object v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$e;->b:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$e;
+
+    invoke-static {v0, v1}, Lje/j;->J(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    iput-object v0, v4, Lse/q;->f:Ljava/lang/Object;
+
+    .line 65
+    invoke-virtual {p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->g1()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_19
+
+    .line 66
+    iget-object v0, v4, Lse/q;->f:Ljava/lang/Object;
+
+    check-cast v0, Ljava/util/List;
+
+    sget-object v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$i;->b:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$i;
+
+    invoke-static {v0, v1}, Lje/j;->J(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    iput-object v0, v4, Lse/q;->f:Ljava/lang/Object;
+
+    .line 67
     :cond_19
-    const-string v1, "sharedProfile"
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h0:Ljava/util/List;
 
-    .line 70
-    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
+    .line 68
+    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o0:Lae/o2;
 
-    throw v4
+    new-instance v2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;
 
-    .line 71
-    :cond_1a
-    invoke-static {v6, v1}, Lbe/k;->O(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-direct {v2, v0, v4}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;-><init>(Ljava/util/List;Lse/q;)V
 
-    move-result-object v1
+    invoke-static {v2}, Lae/u1;->o(Lre/a;)Lze/e0;
 
-    .line 72
-    iget-object v3, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p0:Ljava/util/List;
+    move-result-object v0
 
-    .line 73
-    new-instance v6, Ljava/util/ArrayList;
-
-    const/16 v7, 0xa
-
-    invoke-static {v3, v7}, Lbe/g;->v(Ljava/lang/Iterable;I)I
-
-    move-result v7
-
-    invoke-direct {v6, v7}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 74
-    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v3
-
-    :goto_11
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v7
-
-    if-eqz v7, :cond_1b
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v7
-
-    .line 75
-    check-cast v7, Lqc/c;
-
-    .line 76
-    new-instance v8, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
-
-    .line 77
-    invoke-direct {v8, v7, v2, v4}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;-><init>(Lqc/c;ILqc/x;)V
-
-    .line 78
-    invoke-virtual {v6, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_11
-
-    :cond_1b
-    invoke-static {v1, v6}, Lbe/k;->O(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
-
-    move-result-object v1
-
-    .line 79
-    sget-object v2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$k;->b:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$k;
-
-    invoke-static {v1, v2}, Lbe/k;->P(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v1
-
-    iput-object v1, v5, Lle/s;->g:Ljava/lang/Object;
-
-    .line 80
-    :cond_1c
-    iget-object v1, v5, Lle/s;->g:Ljava/lang/Object;
-
-    check-cast v1, Ljava/util/List;
-
-    new-instance v2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;
-
-    const-string v3, "switch_other_accounts_heading"
-
-    invoke-direct {v2, v3}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$j;-><init>(Ljava/lang/String;)V
-
-    invoke-static {v1, v2}, Lbe/k;->P(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v1
-
-    .line 81
-    sget-object v2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$e;->b:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$e;
-
-    invoke-static {v1, v2}, Lbe/k;->P(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v1
-
-    iput-object v1, v5, Lle/s;->g:Ljava/lang/Object;
-
-    .line 82
-    invoke-virtual/range {p0 .. p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->p1()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1d
-
-    .line 83
-    iget-object v1, v5, Lle/s;->g:Ljava/lang/Object;
-
-    check-cast v1, Ljava/util/List;
-
-    sget-object v2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$i;->b:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$i;
-
-    invoke-static {v1, v2}, Lbe/k;->P(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v1
-
-    iput-object v1, v5, Lle/s;->g:Ljava/lang/Object;
-
-    .line 84
-    :cond_1d
-    iget-object v1, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->j0:Ljava/util/List;
-
-    .line 85
-    iget-object v2, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->q0:Lvd/w1;
-
-    new-instance v3, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;
-
-    invoke-direct {v3, v1, v5}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;-><init>(Ljava/util/List;Lle/s;)V
-
-    invoke-static {v3}, Lvd/e1;->n(Lke/a;)Lse/f0;
-
-    move-result-object v1
-
-    invoke-virtual {v2, v1}, Lvd/w1;->b(Lse/f0;)V
+    invoke-virtual {v1, v0}, Lae/o2;->b(Lze/e0;)V
 
     return-void
 .end method
 
-.method public s0(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final k0(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 8
 
-    const/4 v0, 0x0
+    const-string v0, "view"
 
-    if-eqz p1, :cond_e
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
     sget p1, Lcom/supercell/id/R$id;->saved_logins:I
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
 
     move-result-object p1
 
-    const/4 p2, 0x1
+    const/4 p2, 0x0
+
+    const/4 v0, 0x1
 
     if-eqz p1, :cond_0
 
@@ -1371,7 +1233,7 @@
 
     sget v2, Lcom/supercell/id/R$drawable;->tab_icon_shadows:I
 
-    invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->setBackgroundResource(I)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 5
     sget v1, Lcom/supercell/id/R$id;->tab_icon_left:I
@@ -1384,12 +1246,12 @@
 
     const-string v2, "tab_icon_left"
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v2, "tab_icon_id.png"
 
     .line 6
-    invoke-static {v1, v2, p2}, Lpd/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {v1, v2, v0}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     .line 7
     sget v1, Lcom/supercell/id/R$id;->tab_icon_right:I
@@ -1402,12 +1264,12 @@
 
     const-string v2, "tab_icon_right"
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v2, "tab_icon_gear.png"
 
     .line 8
-    invoke-static {v1, v2, p2}, Lpd/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {v1, v2, v0}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     .line 9
     sget v1, Lcom/supercell/id/R$id;->tab_title:I
@@ -1420,17 +1282,17 @@
 
     const-string v2, "tab_title"
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v2, "switch_heading"
 
     .line 10
-    invoke-static {v1, v2, v0}, Lpd/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lke/p;)V
+    invoke-static {v1, v2, p2}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 11
-    new-instance v1, Lvd/a2;
+    new-instance v1, Lae/s2;
 
-    invoke-direct {v1, p1}, Lvd/a2;-><init>(Landroid/view/View;)V
+    invoke-direct {v1, p1}, Lae/s2;-><init>(Landroid/view/View;)V
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -1441,7 +1303,7 @@
     invoke-direct {p1, p0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;-><init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
 
     .line 13
-    invoke-static {p0}, Lrc/b;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {p0}, La2/j;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v1
 
@@ -1454,7 +1316,7 @@
     .line 14
     iget-boolean v1, v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
 
-    if-ne v1, p2, :cond_1
+    if-ne v1, v0, :cond_1
 
     const/4 v1, 0x1
 
@@ -1465,7 +1327,7 @@
 
     .line 15
     :goto_0
-    iput-boolean v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k0:Z
+    iput-boolean v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->i0:Z
 
     .line 16
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
@@ -1481,26 +1343,26 @@
 
     move-result-object v4
 
-    invoke-static {v4}, Lbe/f;->m([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v4}, Lje/e;->k([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v4
 
     .line 18
-    new-instance v5, Lwd/b0;
+    new-instance v5, Lbe/z;
 
-    invoke-direct {v5, v1, v4}, Lwd/b0;-><init>(Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {v5, v1, v4}, Lbe/z;-><init>(Landroid/content/Context;Ljava/util/List;)V
 
-    invoke-static {v5}, Lvd/e1;->n(Lke/a;)Lse/f0;
+    invoke-static {v5}, Lae/u1;->o(Lre/a;)Lze/e0;
 
     move-result-object v1
 
     .line 19
-    sget-object v4, Lmd/a;->g:Lmd/a;
+    sget-object v4, Lrd/a;->f:Lrd/a;
 
-    invoke-static {v1, p0, v4}, Lvd/e1;->m(Lse/f0;Ljava/lang/Object;Lke/p;)Lse/f0;
+    invoke-static {v1, p0, v4}, Lae/u1;->n(Lze/e0;Ljava/lang/Object;Lre/p;)Lze/e0;
 
     .line 20
-    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v1
 
@@ -1513,12 +1375,12 @@
     if-nez v1, :cond_9
 
     .line 21
-    invoke-virtual {v3}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {v3}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v1
 
     .line 22
-    iget-object v1, v1, Lvd/r;->o:Lmc/f0;
+    iget-object v1, v1, Lae/u;->o:Lrc/d0;
 
     .line 23
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1528,7 +1390,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lbe/f;->m([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v3}, Lje/e;->k([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v3
 
@@ -1537,7 +1399,7 @@
 
     const/16 v5, 0xa
 
-    invoke-static {v3, v5}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {v3, v5}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
     move-result v6
 
@@ -1612,7 +1474,7 @@
     goto :goto_3
 
     :cond_5
-    move-object v6, v0
+    move-object v6, p2
 
     .line 31
     :goto_3
@@ -1621,13 +1483,13 @@
     if-eqz v6, :cond_7
 
     .line 32
-    new-instance v0, Ljava/util/ArrayList;
+    new-instance p2, Ljava/util/ArrayList;
 
-    invoke-static {v3, v5}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {v3, v5}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
     move-result v4
 
-    invoke-direct {v0, v4}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {p2, v4}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 33
     invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -1649,28 +1511,28 @@
     check-cast v5, Lcom/supercell/id/IdAccount;
 
     .line 35
-    new-instance v7, Lqc/d0$b;
+    new-instance v7, Lcom/supercell/id/model/IdSocialAccount$Scid;
 
     invoke-virtual {v5}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-direct {v7, v5}, Lqc/d0$b;-><init>(Ljava/lang/String;)V
+    invoke-direct {v7, v5}, Lcom/supercell/id/model/IdSocialAccount$Scid;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_4
 
     :cond_6
-    new-instance v4, Lmc/k0;
+    new-instance v4, Lrc/i0;
 
-    invoke-direct {v4, v3}, Lmc/k0;-><init>(Ljava/util/List;)V
+    invoke-direct {v4, v3}, Lrc/i0;-><init>(Ljava/util/List;)V
 
     const-string v3, "SYSTEM_PROGRESS"
 
-    invoke-virtual {v1, v0, v3, v6, v4}, Lmc/f0;->p(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lke/l;)Lse/f0;
+    invoke-virtual {v1, p2, v3, v6, v4}, Lrc/d0;->p(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lre/l;)Lze/e0;
 
-    move-result-object v0
+    move-result-object p2
 
     goto :goto_6
 
@@ -1678,7 +1540,7 @@
     :cond_7
     new-instance v1, Ljava/util/ArrayList;
 
-    invoke-static {v3, v5}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {v3, v5}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
     move-result v4
 
@@ -1704,11 +1566,11 @@
     check-cast v4, Lcom/supercell/id/IdAccount;
 
     .line 39
-    new-instance v5, Lqc/c;
+    new-instance v5, Lvc/c;
 
     sget-object v6, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
 
-    invoke-direct {v5, v4, v0, v6, v0}, Lqc/c;-><init>(Lcom/supercell/id/IdAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdConnectedSystem;)V
+    invoke-direct {v5, v4, p2, v6, p2}, Lvc/c;-><init>(Lcom/supercell/id/IdAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdConnectedSystem;)V
 
     invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1716,43 +1578,43 @@
 
     .line 40
     :cond_8
-    invoke-static {v1}, Lp5/h;->a(Ljava/lang/Object;)Lse/o;
+    invoke-static {v1}, Lbf/g;->b(Ljava/lang/Object;)Lze/o;
 
-    move-result-object v0
+    move-result-object p2
 
     .line 41
     :goto_6
-    sget-object v1, Lmd/b;->g:Lmd/b;
+    sget-object v1, Lrd/b;->f:Lrd/b;
 
-    invoke-static {v0, p0, v1}, Lvd/e1;->m(Lse/f0;Ljava/lang/Object;Lke/p;)Lse/f0;
+    invoke-static {p2, p0, v1}, Lae/u1;->n(Lze/e0;Ljava/lang/Object;Lre/p;)Lze/e0;
 
     .line 42
     :cond_9
-    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
-    move-result-object v0
+    move-result-object p2
 
-    if-eqz v0, :cond_a
+    if-eqz p2, :cond_a
 
-    invoke-virtual {v0}, Lcom/supercell/id/ui/MainActivity;->r()Z
+    invoke-virtual {p2}, Lcom/supercell/id/ui/MainActivity;->r()Z
 
-    move-result v0
+    move-result p2
 
-    if-ne v0, p2, :cond_a
+    if-ne p2, v0, :cond_a
 
     .line 43
-    invoke-virtual {p0, v2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->q1(Z)V
+    invoke-virtual {p0, v2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h1(Z)V
 
     .line 44
     :cond_a
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    move-result-object v0
+    move-result-object p2
 
     .line 45
-    iget-object v1, v0, Lvd/r;->y:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v1, p2, Lae/u;->z:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->getAndSet(Z)Z
 
@@ -1760,7 +1622,7 @@
 
     if-eqz v1, :cond_b
 
-    invoke-virtual {v0}, Lvd/r;->j()Ljava/util/List;
+    invoke-virtual {p2}, Lae/u;->j()Ljava/util/List;
 
     move-result-object v1
 
@@ -1768,51 +1630,51 @@
 
     move-result v1
 
-    xor-int/2addr v1, p2
+    xor-int/2addr v1, v0
 
     if-eqz v1, :cond_b
 
     .line 46
-    iget-object v1, v0, Lvd/r;->o:Lmc/f0;
+    iget-object v1, p2, Lae/u;->o:Lrc/d0;
 
-    invoke-virtual {v1}, Lmc/f0;->q()Lse/f0;
+    invoke-virtual {v1}, Lrc/d0;->q()Lze/e0;
 
     move-result-object v1
 
-    new-instance v3, Lvd/s;
+    new-instance v3, Lae/v;
 
-    invoke-direct {v3, v0}, Lvd/s;-><init>(Lvd/r;)V
+    invoke-direct {v3, p2}, Lae/v;-><init>(Lae/u;)V
 
-    invoke-static {v1, v3}, Lvd/e1;->k(Lse/f0;Lke/l;)Lse/f0;
+    invoke-static {v1, v3}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
 
     goto :goto_7
 
     .line 47
     :cond_b
-    iget-object v0, v0, Lvd/r;->x:Ljava/util/List;
+    iget-object p2, p2, Lae/u;->y:Ljava/util/List;
 
     .line 48
-    invoke-static {v0}, Lp5/h;->a(Ljava/lang/Object;)Lse/o;
+    invoke-static {p2}, Lbf/g;->b(Ljava/lang/Object;)Lze/o;
 
     move-result-object v1
 
     .line 49
     :goto_7
-    new-instance v0, Lmd/c;
+    new-instance p2, Lrd/c;
 
-    invoke-direct {v0, p0}, Lmd/c;-><init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
+    invoke-direct {p2, p0}, Lrd/c;-><init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
 
-    invoke-static {v1, v0}, Lvd/e1;->l(Lse/f0;Lke/l;)Lse/f0;
+    invoke-static {v1, p2}, Lae/u1;->m(Lze/e0;Lre/l;)Lze/e0;
 
     .line 50
-    new-instance v0, Lmd/d;
+    new-instance p2, Lrd/d;
 
-    invoke-direct {v0, p0}, Lmd/d;-><init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
+    invoke-direct {p2, p0}, Lrd/d;-><init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
 
-    invoke-static {v1, v0}, Lvd/e1;->a(Lse/f0;Lke/a;)Lse/f0;
+    invoke-static {v1, p2}, Lae/u1;->b(Lze/e0;Lre/a;)Lze/e0;
 
     .line 51
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->j0:Ljava/util/List;
+    iget-object p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h0:Ljava/util/List;
 
     const/4 v1, 0x4
 
@@ -1820,93 +1682,93 @@
 
     const-string v4, "profileList"
 
-    if-nez v0, :cond_c
+    if-nez p2, :cond_c
 
     .line 52
-    sget v0, Lcom/supercell/id/R$id;->profileList:I
+    sget p2, Lcom/supercell/id/R$id;->profileList:I
 
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-static {v0, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
-
-    .line 53
-    sget v0, Lcom/supercell/id/R$id;->progressBar:I
-
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-static {v0, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
-
-    goto :goto_8
-
-    .line 54
-    :cond_c
-    sget v0, Lcom/supercell/id/R$id;->profileList:I
-
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-static {v0, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
-
-    .line 55
-    sget v0, Lcom/supercell/id/R$id;->progressBar:I
-
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-static {v0, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 56
-    :goto_8
-    sget v0, Lcom/supercell/id/R$id;->profileList:I
-
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-virtual {v1, p2}, Landroidx/recyclerview/widget/RecyclerView;->setHasFixedSize(Z)V
-
-    .line 57
-    iget-object p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->j0:Ljava/util/List;
-
-    if-eqz p2, :cond_d
-
-    goto :goto_9
-
-    :cond_d
-    sget-object p2, Lbe/m;->g:Lbe/m;
-
-    .line 58
-    :goto_9
-    iput-object p2, p1, Lvd/k1;->d:Ljava/util/List;
-
-    .line 59
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
 
     move-result-object p2
 
     check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-static {p2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p2, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 53
+    sget p2, Lcom/supercell/id/R$id;->progressBar:I
+
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
+
+    move-result-object p2
+
+    invoke-static {p2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p2, v2}, Landroid/view/View;->setVisibility(I)V
+
+    goto :goto_8
+
+    .line 54
+    :cond_c
+    sget p2, Lcom/supercell/id/R$id;->profileList:I
+
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-static {p2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p2, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 55
+    sget p2, Lcom/supercell/id/R$id;->progressBar:I
+
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
+
+    move-result-object p2
+
+    invoke-static {p2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p2, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 56
+    :goto_8
+    sget p2, Lcom/supercell/id/R$id;->profileList:I
+
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->setHasFixedSize(Z)V
+
+    .line 57
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h0:Ljava/util/List;
+
+    if-eqz v0, :cond_d
+
+    goto :goto_9
+
+    :cond_d
+    sget-object v0, Lje/l;->f:Lje/l;
+
+    .line 58
+    :goto_9
+    iput-object v0, p1, Lae/c2;->d:Ljava/util/List;
+
+    .line 59
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-static {v0, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v1, Lcom/supercell/id/ui/profile/LinearLayoutManagerWrapper;
 
@@ -1916,32 +1778,18 @@
 
     invoke-direct {v1, v2}, Lcom/supercell/id/ui/profile/LinearLayoutManagerWrapper;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p2, v1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$m;)V
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$m;)V
 
     .line 60
-    invoke-virtual {p0, v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {p0, p2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
 
     move-result-object p2
 
     check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-static {p2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2, p1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$e;)V
 
     return-void
-
-    :cond_e
-    const-string p1, "view"
-
-    .line 61
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    goto :goto_b
-
-    :goto_a
-    throw v0
-
-    :goto_b
-    goto :goto_a
 .end method

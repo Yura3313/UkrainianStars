@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/ApplicationUtil$a;
+.class public final Lcom/supercell/titan/ApplicationUtil$a;
 .super Ljava/lang/Thread;
 .source "ApplicationUtil.java"
 
@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
     return-void
@@ -26,7 +25,7 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 3
 
     const/16 v0, 0xa

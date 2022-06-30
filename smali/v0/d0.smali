@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -332,7 +331,7 @@
     sput-object v0, Lv0/d0;->b:Ljava/lang/reflect/Method;
 
     .line 3
-    invoke-virtual {v0, v5}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v0, v5}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -457,7 +456,7 @@
     sput-object v1, Lv0/d0;->d:Ljava/lang/reflect/Field;
 
     .line 3
-    invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v1, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
 

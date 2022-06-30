@@ -41,7 +41,6 @@
 
     const-string v0, "UTF-8"
 
-    .line 1
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     move-result-object v0
@@ -283,7 +282,6 @@
 .method public getLevel()Lokhttp3/logging/HttpLoggingInterceptor$Level;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/logging/HttpLoggingInterceptor;->level:Lokhttp3/logging/HttpLoggingInterceptor$Level;
 
     return-object v0
@@ -410,6 +408,7 @@
 
     move-result-object v10
 
+    .line 13
     invoke-interface {v7}, Lokhttp3/Connection;->protocol()Lokhttp3/Protocol;
 
     move-result-object v7
@@ -440,11 +439,12 @@
 
     if-eqz v5, :cond_6
 
-    .line 13
+    .line 14
     invoke-static {v7, v10}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
+    .line 15
     invoke-virtual {v6}, Lokhttp3/RequestBody;->contentLength()J
 
     move-result-wide v11
@@ -457,7 +457,7 @@
 
     move-result-object v7
 
-    .line 14
+    .line 16
     :cond_6
     iget-object v11, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
@@ -471,22 +471,24 @@
 
     if-eqz v5, :cond_8
 
-    .line 15
+    .line 17
     invoke-virtual {v6}, Lokhttp3/RequestBody;->contentType()Lokhttp3/MediaType;
 
     move-result-object v13
 
     if-eqz v13, :cond_7
 
-    .line 16
+    .line 18
     iget-object v13, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     const-string v14, "Content-Type: "
 
+    .line 19
     invoke-static {v14}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v14
 
+    .line 20
     invoke-virtual {v6}, Lokhttp3/RequestBody;->contentType()Lokhttp3/MediaType;
 
     move-result-object v15
@@ -499,7 +501,7 @@
 
     invoke-interface {v13, v14}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
-    .line 17
+    .line 21
     :cond_7
     invoke-virtual {v6}, Lokhttp3/RequestBody;->contentLength()J
 
@@ -509,15 +511,17 @@
 
     if-eqz v15, :cond_8
 
-    .line 18
+    .line 22
     iget-object v11, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     const-string v12, "Content-Length: "
 
+    .line 23
     invoke-static {v12}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v12
 
+    .line 24
     invoke-virtual {v6}, Lokhttp3/RequestBody;->contentLength()J
 
     move-result-wide v13
@@ -530,13 +534,13 @@
 
     invoke-interface {v11, v12}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
-    .line 19
+    .line 25
     :cond_8
     invoke-virtual {v3}, Lokhttp3/Request;->headers()Lokhttp3/Headers;
 
     move-result-object v11
 
-    .line 20
+    .line 26
     invoke-virtual {v11}, Lokhttp3/Headers;->size()I
 
     move-result v12
@@ -546,14 +550,14 @@
     :goto_5
     if-ge v13, v12, :cond_a
 
-    .line 21
+    .line 27
     invoke-virtual {v11, v13}, Lokhttp3/Headers;->name(I)Ljava/lang/String;
 
     move-result-object v14
 
     const-string v15, "Content-Type"
 
-    .line 22
+    .line 28
     invoke-virtual {v15, v14}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v15
@@ -568,7 +572,7 @@
 
     if-nez v14, :cond_9
 
-    .line 23
+    .line 29
     invoke-direct {v1, v11, v13}, Lokhttp3/logging/HttpLoggingInterceptor;->logHeader(Lokhttp3/Headers;I)V
 
     :cond_9
@@ -585,7 +589,7 @@
 
     goto/16 :goto_6
 
-    .line 24
+    .line 30
     :cond_b
     invoke-virtual {v3}, Lokhttp3/Request;->headers()Lokhttp3/Headers;
 
@@ -597,13 +601,15 @@
 
     if-eqz v5, :cond_c
 
-    .line 25
+    .line 31
     iget-object v5, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
+    .line 32
     invoke-static {v11}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v6
 
+    .line 33
     invoke-virtual {v3}, Lokhttp3/Request;->method()Ljava/lang/String;
 
     move-result-object v11
@@ -622,44 +628,44 @@
 
     goto/16 :goto_7
 
-    .line 26
+    .line 34
     :cond_c
     new-instance v5, Lokio/Buffer;
 
     invoke-direct {v5}, Lokio/Buffer;-><init>()V
 
-    .line 27
+    .line 35
     invoke-virtual {v6, v5}, Lokhttp3/RequestBody;->writeTo(Lokio/BufferedSink;)V
 
-    .line 28
+    .line 36
     sget-object v12, Lokhttp3/logging/HttpLoggingInterceptor;->UTF8:Ljava/nio/charset/Charset;
 
-    .line 29
+    .line 37
     invoke-virtual {v6}, Lokhttp3/RequestBody;->contentType()Lokhttp3/MediaType;
 
     move-result-object v13
 
     if-eqz v13, :cond_d
 
-    .line 30
+    .line 38
     invoke-virtual {v13, v12}, Lokhttp3/MediaType;->charset(Ljava/nio/charset/Charset;)Ljava/nio/charset/Charset;
 
     move-result-object v12
 
-    .line 31
+    .line 39
     :cond_d
     iget-object v13, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     invoke-interface {v13, v9}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
-    .line 32
+    .line 40
     invoke-static {v5}, Lokhttp3/logging/HttpLoggingInterceptor;->isPlaintext(Lokio/Buffer;)Z
 
     move-result v13
 
     if-eqz v13, :cond_e
 
-    .line 33
+    .line 41
     iget-object v13, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     invoke-virtual {v5, v12}, Lokio/Buffer;->readString(Ljava/nio/charset/Charset;)Ljava/lang/String;
@@ -668,13 +674,15 @@
 
     invoke-interface {v13, v5}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
-    .line 34
+    .line 42
     iget-object v5, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
+    .line 43
     invoke-static {v11}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v11
 
+    .line 44
     invoke-virtual {v3}, Lokhttp3/Request;->method()Ljava/lang/String;
 
     move-result-object v12
@@ -683,7 +691,7 @@
 
     invoke-virtual {v11, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 35
+    .line 45
     invoke-virtual {v6}, Lokhttp3/RequestBody;->contentLength()J
 
     move-result-wide v12
@@ -696,19 +704,21 @@
 
     move-result-object v6
 
-    .line 36
+    .line 46
     invoke-interface {v5, v6}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
     goto :goto_7
 
-    .line 37
+    .line 47
     :cond_e
     iget-object v5, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
+    .line 48
     invoke-static {v11}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v11
 
+    .line 49
     invoke-virtual {v3}, Lokhttp3/Request;->method()Ljava/lang/String;
 
     move-result-object v12
@@ -719,7 +729,7 @@
 
     invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 38
+    .line 50
     invoke-virtual {v6}, Lokhttp3/RequestBody;->contentLength()J
 
     move-result-wide v12
@@ -732,20 +742,22 @@
 
     move-result-object v6
 
-    .line 39
+    .line 51
     invoke-interface {v5, v6}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
     goto :goto_7
 
-    .line 40
+    .line 52
     :cond_f
     :goto_6
     iget-object v5, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
+    .line 53
     invoke-static {v11}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v6
 
+    .line 54
     invoke-virtual {v3}, Lokhttp3/Request;->method()Ljava/lang/String;
 
     move-result-object v11
@@ -758,14 +770,14 @@
 
     invoke-interface {v5, v6}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
-    .line 41
+    .line 55
     :cond_10
     :goto_7
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v5
 
-    .line 42
+    .line 56
     :try_start_0
     invoke-interface {v0, v3}, Lokhttp3/Interceptor$Chain;->proceed(Lokhttp3/Request;)Lokhttp3/Response;
 
@@ -773,7 +785,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 43
+    .line 57
     sget-object v3, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-static {}, Ljava/lang/System;->nanoTime()J
@@ -786,12 +798,12 @@
 
     move-result-wide v5
 
-    .line 44
+    .line 58
     invoke-virtual {v0}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
     move-result-object v3
 
-    .line 45
+    .line 59
     invoke-virtual {v3}, Lokhttp3/ResponseBody;->contentLength()J
 
     move-result-wide v11
@@ -802,7 +814,7 @@
 
     if-eqz v15, :cond_11
 
-    .line 46
+    .line 60
     new-instance v13, Ljava/lang/StringBuilder;
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
@@ -822,26 +834,27 @@
     :cond_11
     const-string v13, "unknown-length"
 
-    .line 47
+    .line 61
     :goto_8
     iget-object v14, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     const-string v15, "<-- "
 
+    .line 62
     invoke-static {v15}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v15
 
     move-object/from16 v16, v8
 
-    .line 48
+    .line 63
     invoke-virtual {v0}, Lokhttp3/Response;->code()I
 
     move-result v8
 
     invoke-virtual {v15, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 49
+    .line 64
     invoke-virtual {v0}, Lokhttp3/Response;->message()Ljava/lang/String;
 
     move-result-object v8
@@ -888,7 +901,7 @@
 
     invoke-virtual {v15, v11}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 50
+    .line 65
     invoke-virtual {v0}, Lokhttp3/Response;->request()Lokhttp3/Request;
 
     move-result-object v8
@@ -913,8 +926,8 @@
 
     const-string v6, " body"
 
-    .line 51
-    invoke-static {v5, v13, v6}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 66
+    invoke-static {v5, v13, v6}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -923,6 +936,7 @@
     :cond_13
     move-object v5, v9
 
+    .line 67
     :goto_a
     invoke-virtual {v15, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -934,17 +948,17 @@
 
     move-result-object v5
 
-    .line 52
+    .line 68
     invoke-interface {v14, v5}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
     if-eqz v2, :cond_1e
 
-    .line 53
+    .line 69
     invoke-virtual {v0}, Lokhttp3/Response;->headers()Lokhttp3/Headers;
 
     move-result-object v2
 
-    .line 54
+    .line 70
     invoke-virtual {v2}, Lokhttp3/Headers;->size()I
 
     move-result v5
@@ -954,7 +968,7 @@
     :goto_b
     if-ge v6, v5, :cond_14
 
-    .line 55
+    .line 71
     invoke-direct {v1, v2, v6}, Lokhttp3/logging/HttpLoggingInterceptor;->logHeader(Lokhttp3/Headers;I)V
 
     add-int/lit8 v6, v6, 0x1
@@ -964,7 +978,7 @@
     :cond_14
     if-eqz v4, :cond_1d
 
-    .line 56
+    .line 72
     invoke-static {v0}, Lokhttp3/internal/http/HttpHeaders;->hasBody(Lokhttp3/Response;)Z
 
     move-result v4
@@ -973,7 +987,7 @@
 
     goto/16 :goto_e
 
-    .line 57
+    .line 73
     :cond_15
     invoke-virtual {v0}, Lokhttp3/Response;->headers()Lokhttp3/Headers;
 
@@ -985,7 +999,7 @@
 
     if-eqz v4, :cond_16
 
-    .line 58
+    .line 74
     iget-object v2, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     const-string v3, "<-- END HTTP (encoded body omitted)"
@@ -994,7 +1008,7 @@
 
     goto/16 :goto_f
 
-    .line 59
+    .line 75
     :cond_16
     invoke-virtual {v3}, Lokhttp3/ResponseBody;->source()Lokio/BufferedSource;
 
@@ -1002,17 +1016,17 @@
 
     const-wide v5, 0x7fffffffffffffffL
 
-    .line 60
+    .line 76
     invoke-interface {v4, v5, v6}, Lokio/BufferedSource;->request(J)Z
 
-    .line 61
+    .line 77
     invoke-interface {v4}, Lokio/BufferedSource;->buffer()Lokio/Buffer;
 
     move-result-object v4
 
     const-string v5, "Content-Encoding"
 
-    .line 62
+    .line 78
     invoke-virtual {v2, v5}, Lokhttp3/Headers;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -1027,7 +1041,7 @@
 
     if-eqz v2, :cond_18
 
-    .line 63
+    .line 79
     invoke-virtual {v4}, Lokio/Buffer;->size()J
 
     move-result-wide v10
@@ -1036,7 +1050,7 @@
 
     move-result-object v2
 
-    .line 64
+    .line 80
     :try_start_1
     new-instance v6, Lokio/GzipSource;
 
@@ -1048,18 +1062,18 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 65
+    .line 81
     :try_start_2
     new-instance v4, Lokio/Buffer;
 
     invoke-direct {v4}, Lokio/Buffer;-><init>()V
 
-    .line 66
+    .line 82
     invoke-virtual {v4, v6}, Lokio/Buffer;->writeAll(Lokio/Source;)J
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 67
+    .line 83
     invoke-virtual {v6}, Lokio/GzipSource;->close()V
 
     move-object v5, v2
@@ -1084,24 +1098,24 @@
     :cond_17
     throw v0
 
-    .line 68
+    .line 84
     :cond_18
     :goto_d
     sget-object v2, Lokhttp3/logging/HttpLoggingInterceptor;->UTF8:Ljava/nio/charset/Charset;
 
-    .line 69
+    .line 85
     invoke-virtual {v3}, Lokhttp3/ResponseBody;->contentType()Lokhttp3/MediaType;
 
     move-result-object v3
 
     if-eqz v3, :cond_19
 
-    .line 70
+    .line 86
     invoke-virtual {v3, v2}, Lokhttp3/MediaType;->charset(Ljava/nio/charset/Charset;)Ljava/nio/charset/Charset;
 
     move-result-object v2
 
-    .line 71
+    .line 87
     :cond_19
     invoke-static {v4}, Lokhttp3/logging/HttpLoggingInterceptor;->isPlaintext(Lokio/Buffer;)Z
 
@@ -1109,20 +1123,22 @@
 
     if-nez v3, :cond_1a
 
-    .line 72
+    .line 88
     iget-object v2, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     invoke-interface {v2, v9}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
-    .line 73
+    .line 89
     iget-object v2, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     const-string v3, "<-- END HTTP (binary "
 
+    .line 90
     invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
+    .line 91
     invoke-virtual {v4}, Lokio/Buffer;->size()J
 
     move-result-wide v4
@@ -1146,12 +1162,12 @@
 
     if-eqz v3, :cond_1b
 
-    .line 74
+    .line 92
     iget-object v3, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     invoke-interface {v3, v9}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
-    .line 75
+    .line 93
     iget-object v3, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     invoke-virtual {v4}, Lokio/Buffer;->clone()Lokio/Buffer;
@@ -1169,13 +1185,15 @@
 
     if-eqz v5, :cond_1c
 
-    .line 76
+    .line 94
     iget-object v3, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
+    .line 95
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 96
     invoke-virtual {v4}, Lokio/Buffer;->size()J
 
     move-result-wide v6
@@ -1200,14 +1218,16 @@
 
     goto :goto_f
 
-    .line 77
+    .line 97
     :cond_1c
     iget-object v3, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
+    .line 98
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 99
     invoke-virtual {v4}, Lokio/Buffer;->size()J
 
     move-result-wide v4
@@ -1226,7 +1246,7 @@
 
     goto :goto_f
 
-    .line 78
+    .line 100
     :cond_1d
     :goto_e
     iget-object v2, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
@@ -1244,7 +1264,7 @@
 
     move-object v2, v0
 
-    .line 79
+    .line 101
     iget-object v0, v1, Lokhttp3/logging/HttpLoggingInterceptor;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1263,7 +1283,7 @@
 
     invoke-interface {v0, v3}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
-    .line 80
+    .line 102
     goto :goto_11
 
     :goto_10

@@ -27,7 +27,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/id/view/FastScroll$e;->a:Lcom/supercell/id/view/FastScroll;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>()V
@@ -37,8 +36,12 @@
 
 
 # virtual methods
-.method public b(Landroidx/recyclerview/widget/RecyclerView;II)V
+.method public final b(Landroidx/recyclerview/widget/RecyclerView;II)V
     .locals 1
+
+    const-string p2, "recyclerView"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p2, 0x0
 
@@ -101,7 +104,7 @@
     :goto_0
     iget-object p2, p0, Lcom/supercell/id/view/FastScroll$e;->a:Lcom/supercell/id/view/FastScroll;
 
-    invoke-virtual {p2}, Landroid/widget/LinearLayout;->getHeight()I
+    invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result p3
 

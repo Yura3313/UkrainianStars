@@ -1,11 +1,11 @@
-.class public Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;
+.class public final Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "FabTransformationScrimBehavior.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->v(Landroid/view/View;Landroid/view/View;ZZ)Landroid/animation/AnimatorSet;
+    value = Lcom/google/android/material/transformation/FabTransformationScrimBehavior;->u(Landroid/view/View;Landroid/view/View;ZZ)Landroid/animation/AnimatorSet;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,19 +15,18 @@
 
 
 # instance fields
-.field public final synthetic g:Z
+.field public final synthetic f:Z
 
-.field public final synthetic h:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/transformation/FabTransformationScrimBehavior;ZLandroid/view/View;)V
+.method public constructor <init>(ZLandroid/view/View;)V
     .locals 0
 
-    .line 1
-    iput-boolean p2, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->g:Z
+    iput-boolean p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->f:Z
 
-    iput-object p3, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->h:Landroid/view/View;
+    iput-object p2, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->g:Landroid/view/View;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -36,16 +35,16 @@
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/animation/Animator;)V
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
     .line 1
-    iget-boolean p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->g:Z
+    iget-boolean p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->f:Z
 
     if-nez p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->h:Landroid/view/View;
+    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->g:Landroid/view/View;
 
     const/4 v0, 0x4
 
@@ -55,16 +54,16 @@
     return-void
 .end method
 
-.method public onAnimationStart(Landroid/animation/Animator;)V
+.method public final onAnimationStart(Landroid/animation/Animator;)V
     .locals 1
 
     .line 1
-    iget-boolean p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->g:Z
+    iget-boolean p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->f:Z
 
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->h:Landroid/view/View;
+    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->g:Landroid/view/View;
 
     const/4 v0, 0x0
 

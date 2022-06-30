@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/SearchView$f;
+.class public final Landroidx/appcompat/widget/SearchView$f;
 .super Ljava/lang/Object;
 .source "SearchView.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/SearchView;
+.field public final synthetic f:Landroidx/appcompat/widget/SearchView;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$f;->g:Landroidx/appcompat/widget/SearchView;
+    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$f;->f:Landroidx/appcompat/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,51 +34,51 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public final onClick(Landroid/view/View;)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$f;->g:Landroidx/appcompat/widget/SearchView;
+    iget-object v0, p0, Landroidx/appcompat/widget/SearchView$f;->f:Landroidx/appcompat/widget/SearchView;
 
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->z:Landroid/widget/ImageView;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->y:Landroid/widget/ImageView;
 
     if-ne p1, v1, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Landroidx/appcompat/widget/SearchView;->t()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/SearchView;->s()V
 
     goto :goto_1
 
     .line 3
     :cond_0
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->B:Landroid/widget/ImageView;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->A:Landroid/widget/ImageView;
 
     if-ne p1, v1, :cond_1
 
     .line 4
-    invoke-virtual {v0}, Landroidx/appcompat/widget/SearchView;->p()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/SearchView;->o()V
 
     goto :goto_1
 
     .line 5
     :cond_1
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->A:Landroid/widget/ImageView;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->z:Landroid/widget/ImageView;
 
     if-ne p1, v1, :cond_2
 
     .line 6
-    invoke-virtual {v0}, Landroidx/appcompat/widget/SearchView;->u()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/SearchView;->t()V
 
     goto :goto_1
 
     .line 7
     :cond_2
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->C:Landroid/widget/ImageView;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->B:Landroid/widget/ImageView;
 
     if-ne p1, v1, :cond_6
 
     .line 8
-    iget-object p1, v0, Landroidx/appcompat/widget/SearchView;->l0:Landroid/app/SearchableInfo;
+    iget-object p1, v0, Landroidx/appcompat/widget/SearchView;->k0:Landroid/app/SearchableInfo;
 
     if-nez p1, :cond_3
 
@@ -95,7 +94,7 @@
     if-eqz v1, :cond_5
 
     .line 10
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->N:Landroid/content/Intent;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->M:Landroid/content/Intent;
 
     .line 11
     new-instance v2, Landroid/content/Intent;
@@ -126,7 +125,7 @@
     invoke-virtual {v2, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 15
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
@@ -143,14 +142,14 @@
     if-eqz v1, :cond_7
 
     .line 17
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->O:Landroid/content/Intent;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->N:Landroid/content/Intent;
 
     invoke-virtual {v0, v1, p1}, Landroidx/appcompat/widget/SearchView;->m(Landroid/content/Intent;Landroid/app/SearchableInfo;)Landroid/content/Intent;
 
     move-result-object p1
 
     .line 18
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -162,7 +161,7 @@
 
     .line 19
     :cond_6
-    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->v:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
+    iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->u:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
     if-ne p1, v1, :cond_7
 

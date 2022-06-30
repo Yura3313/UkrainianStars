@@ -15,14 +15,5 @@
 
 
 # virtual methods
-.method public abstract a(Lp/h;)V
-.end method
-
-.method public abstract b(Lp/d;[Z)Lp/h;
-.end method
-
-.method public abstract clear()V
-.end method
-
-.method public abstract isEmpty()Z
+.method public abstract a([Z)Lp/h;
 .end method

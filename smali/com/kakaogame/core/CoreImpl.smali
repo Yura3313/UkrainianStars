@@ -71,7 +71,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -80,7 +79,6 @@
 .method public static synthetic access$000()Lcom/android/installreferrer/api/InstallReferrerClient;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/core/CoreImpl;->referrerClient:Lcom/android/installreferrer/api/InstallReferrerClient;
 
     return-object v0
@@ -239,7 +237,6 @@
 .method public static getActivity()Landroid/app/Activity;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/core/CoreImpl;->activity:Landroid/app/Activity;
 
     return-object v0
@@ -1002,7 +999,7 @@
     const/16 p1, 0xfa1
 
     .line 58
-    invoke-static {p0, v1, p0, p1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v1, p0, p1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -1397,7 +1394,7 @@
     const/16 v2, 0xfa1
 
     .line 7
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -1454,7 +1451,8 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    .line 6
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2000,7 +1998,7 @@
 
     .line 39
     :try_start_4
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -2009,7 +2007,7 @@
     const/16 p1, 0x270f
 
     .line 40
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 

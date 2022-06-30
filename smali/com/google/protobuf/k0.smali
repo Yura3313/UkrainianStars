@@ -18,11 +18,11 @@
 
 
 # static fields
-.field public static final h:Lcom/google/protobuf/k0;
+.field public static final g:Lcom/google/protobuf/k0;
 
 
 # instance fields
-.field public g:Z
+.field public f:Z
 
 
 # direct methods
@@ -34,12 +34,12 @@
 
     invoke-direct {v0}, Lcom/google/protobuf/k0;-><init>()V
 
-    sput-object v0, Lcom/google/protobuf/k0;->h:Lcom/google/protobuf/k0;
+    sput-object v0, Lcom/google/protobuf/k0;->g:Lcom/google/protobuf/k0;
 
     const/4 v1, 0x0
 
     .line 2
-    iput-boolean v1, v0, Lcom/google/protobuf/k0;->g:Z
+    iput-boolean v1, v0, Lcom/google/protobuf/k0;->f:Z
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/protobuf/k0;->g:Z
+    iput-boolean v0, p0, Lcom/google/protobuf/k0;->f:Z
 
     return-void
 .end method
@@ -74,7 +74,7 @@
     const/4 p1, 0x1
 
     .line 4
-    iput-boolean p1, p0, Lcom/google/protobuf/k0;->g:Z
+    iput-boolean p1, p0, Lcom/google/protobuf/k0;->f:Z
 
     return-void
 .end method
@@ -159,7 +159,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/protobuf/k0;->g:Z
+    iget-boolean v0, p0, Lcom/google/protobuf/k0;->f:Z
 
     if-eqz v0, :cond_0
 
@@ -174,7 +174,7 @@
     throw v0
 .end method
 
-.method public c()Lcom/google/protobuf/k0;
+.method public final c()Lcom/google/protobuf/k0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -184,8 +184,7 @@
         }
     .end annotation
 
-    .line 1
-    invoke-virtual {p0}, Ljava/util/LinkedHashMap;->isEmpty()Z
+    invoke-virtual {p0}, Ljava/util/AbstractMap;->isEmpty()Z
 
     move-result v0
 
@@ -206,7 +205,7 @@
     return-object v0
 .end method
 
-.method public clear()V
+.method public final clear()V
     .locals 0
 
     .line 1
@@ -218,7 +217,7 @@
     return-void
 .end method
 
-.method public entrySet()Ljava/util/Set;
+.method public final entrySet()Ljava/util/Set;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -229,8 +228,7 @@
         }
     .end annotation
 
-    .line 1
-    invoke-virtual {p0}, Ljava/util/LinkedHashMap;->isEmpty()Z
+    invoke-virtual {p0}, Ljava/util/AbstractMap;->isEmpty()Z
 
     move-result v0
 
@@ -251,7 +249,7 @@
     return-object v0
 .end method
 
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 6
 
     .line 1
@@ -382,7 +380,7 @@
     return v1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 4
 
     .line 1
@@ -436,7 +434,7 @@
     return v1
 .end method
 
-.method public put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -457,14 +455,14 @@
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    invoke-super {p0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-super {p0, p1, p2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public putAll(Ljava/util/Map;)V
+.method public final putAll(Ljava/util/Map;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -515,12 +513,12 @@
 
     .line 7
     :cond_0
-    invoke-super {p0, p1}, Ljava/util/LinkedHashMap;->putAll(Ljava/util/Map;)V
+    invoke-super {p0, p1}, Ljava/util/AbstractMap;->putAll(Ljava/util/Map;)V
 
     return-void
 .end method
 
-.method public remove(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -534,7 +532,7 @@
     invoke-virtual {p0}, Lcom/google/protobuf/k0;->b()V
 
     .line 2
-    invoke-super {p0, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-super {p0, p1}, Ljava/util/AbstractMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

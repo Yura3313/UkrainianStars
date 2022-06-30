@@ -114,7 +114,6 @@
 .method public static synthetic access$1100(Lcom/kakaogame/log/PlayerLogManager$SummaryLogData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/kakaogame/log/PlayerLogManager$SummaryLogData;->equals(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
@@ -125,7 +124,6 @@
 .method public static synthetic access$1300(Lcom/kakaogame/log/PlayerLogManager$SummaryLogData;J)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/kakaogame/log/PlayerLogManager$SummaryLogData;->setValue(J)V
 
     return-void

@@ -31,7 +31,6 @@
 .method public constructor <init>(Lcom/kakaogame/coupon/CouponManager$CouponPopupDialog;Landroid/widget/EditText;Landroid/app/Activity;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/coupon/CouponManager$CouponPopupDialog$3;->this$0:Lcom/kakaogame/coupon/CouponManager$CouponPopupDialog;
 
     iput-object p2, p0, Lcom/kakaogame/coupon/CouponManager$CouponPopupDialog$3;->val$couponInputView:Landroid/widget/EditText;

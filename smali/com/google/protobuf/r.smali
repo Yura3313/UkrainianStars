@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -69,7 +68,7 @@
 .method public abstract f(Ljava/lang/Object;)V
 .end method
 
-.method public abstract g(Lcom/google/protobuf/h1;Ljava/lang/Object;Lcom/google/protobuf/q;Lcom/google/protobuf/v;Ljava/lang/Object;Lcom/google/protobuf/q1;)Ljava/lang/Object;
+.method public abstract g(Lcom/google/protobuf/h1;Ljava/lang/Object;Lcom/google/protobuf/q;Lcom/google/protobuf/v;Ljava/lang/Object;Lcom/google/protobuf/p1;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<UT:",
@@ -82,7 +81,7 @@
             "Lcom/google/protobuf/q;",
             "Lcom/google/protobuf/v<",
             "TT;>;TUB;",
-            "Lcom/google/protobuf/q1<",
+            "Lcom/google/protobuf/p1<",
             "TUT;TUB;>;)TUB;"
         }
     .end annotation
@@ -132,11 +131,11 @@
     .end annotation
 .end method
 
-.method public abstract j(Lcom/google/protobuf/y1;Ljava/util/Map$Entry;)V
+.method public abstract j(Lcom/google/protobuf/x1;Ljava/util/Map$Entry;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/protobuf/y1;",
+            "Lcom/google/protobuf/x1;",
             "Ljava/util/Map$Entry<",
             "**>;)V"
         }

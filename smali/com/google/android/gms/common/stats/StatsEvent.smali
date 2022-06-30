@@ -15,7 +15,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     return-void
@@ -23,48 +22,53 @@
 
 
 # virtual methods
-.method public abstract A2()I
+.method public abstract D2()J
 .end method
 
-.method public abstract B2()J
+.method public abstract E2()I
 .end method
 
-.method public abstract C2()Ljava/lang/String;
+.method public abstract F2()J
+.end method
+
+.method public abstract G2()Ljava/lang/String;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 8
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->z2()J
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->D2()J
 
     move-result-wide v0
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->A2()I
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->E2()I
 
     move-result v2
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->B2()J
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->F2()J
 
     move-result-wide v3
 
     .line 4
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->C2()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->G2()Ljava/lang/String;
 
     move-result-object v5
 
     const/16 v6, 0x35
 
+    .line 5
     invoke-static {v5, v6}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v6
 
+    .line 6
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7, v6}, Ljava/lang/StringBuilder;-><init>(I)V
@@ -88,7 +92,4 @@
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public abstract z2()J
 .end method

@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/o;
+.class public final Landroidx/recyclerview/widget/o;
 .super Ljava/lang/Object;
 .source "LayoutState.java"
 
@@ -48,7 +48,7 @@
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
     const-string v0, "LayoutState{mAvailable="
@@ -58,6 +58,7 @@
 
     move-result-object v0
 
+    .line 2
     iget v1, p0, Landroidx/recyclerview/widget/o;->b:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;

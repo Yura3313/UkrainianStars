@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/supercell/titan/NativeHTTPClientManager$b;
+        Lcom/supercell/titan/NativeHTTPClientManager$a;
     }
 .end annotation
 
@@ -28,7 +28,7 @@
 
 
 # instance fields
-.field public final a:Lcom/supercell/titan/NativeHTTPClientManager$b;
+.field public final a:Lcom/supercell/titan/NativeHTTPClientManager$a;
 
 .field public final b:Ljava/util/concurrent/ExecutorService;
 
@@ -60,19 +60,17 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Lcom/supercell/titan/NativeHTTPClientManager$b;
+    new-instance v0, Lcom/supercell/titan/NativeHTTPClientManager$a;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Lcom/supercell/titan/NativeHTTPClientManager$a;-><init>()V
 
-    invoke-direct {v0, v1}, Lcom/supercell/titan/NativeHTTPClientManager$b;-><init>(Lcom/supercell/titan/NativeHTTPClientManager$a;)V
-
-    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPClientManager;->a:Lcom/supercell/titan/NativeHTTPClientManager$b;
+    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPClientManager;->a:Lcom/supercell/titan/NativeHTTPClientManager$a;
 
     .line 3
     invoke-static {}, Ljava/util/concurrent/Executors;->newCachedThreadPool()Ljava/util/concurrent/ExecutorService;
@@ -90,7 +88,6 @@
 .method public static getInstance()Lcom/supercell/titan/NativeHTTPClientManager;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/NativeHTTPClientManager;->e:Lcom/supercell/titan/NativeHTTPClientManager;
 
     return-object v0
@@ -111,7 +108,7 @@
     new-instance v1, Lcom/supercell/titan/NativeHTTPConnection;
 
     .line 3
-    iget-object v2, v0, Lcom/supercell/titan/NativeHTTPClientManager;->a:Lcom/supercell/titan/NativeHTTPClientManager$b;
+    iget-object v2, v0, Lcom/supercell/titan/NativeHTTPClientManager;->a:Lcom/supercell/titan/NativeHTTPClientManager$a;
 
     .line 4
     invoke-direct {v1, v2, p2, p3}, Lcom/supercell/titan/NativeHTTPConnection;-><init>(Landroid/os/Handler;Ljava/lang/String;Ljava/lang/String;)V
@@ -126,15 +123,15 @@
 
     sput p1, Lcom/supercell/titan/NativeHTTPClientManager;->d:I
 
-    iput p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->g:I
+    iput p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->f:I
 
     .line 7
     iget-object p0, v0, Lcom/supercell/titan/NativeHTTPClientManager;->b:Ljava/util/concurrent/ExecutorService;
 
-    invoke-interface {p0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {p0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     .line 8
-    iget p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->g:I
+    iget p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->f:I
 
     return p0
 .end method
@@ -151,7 +148,7 @@
     new-instance v1, Lcom/supercell/titan/NativeHTTPConnection;
 
     .line 3
-    iget-object v2, v0, Lcom/supercell/titan/NativeHTTPClientManager;->a:Lcom/supercell/titan/NativeHTTPClientManager$b;
+    iget-object v2, v0, Lcom/supercell/titan/NativeHTTPClientManager;->a:Lcom/supercell/titan/NativeHTTPClientManager$a;
 
     const-string v3, ""
 
@@ -168,15 +165,15 @@
 
     sput p1, Lcom/supercell/titan/NativeHTTPClientManager;->d:I
 
-    iput p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->g:I
+    iput p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->f:I
 
     .line 7
     iget-object p0, v0, Lcom/supercell/titan/NativeHTTPClientManager;->b:Ljava/util/concurrent/ExecutorService;
 
-    invoke-interface {p0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {p0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     .line 8
-    iget p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->g:I
+    iget p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->f:I
 
     return p0
 .end method
@@ -214,7 +211,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lcom/supercell/titan/NativeHTTPConnection$Status;->j:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    sget-object v5, Lcom/supercell/titan/NativeHTTPConnection$Status;->i:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     if-ne v4, v5, :cond_0
 
@@ -227,7 +224,7 @@
 
     .line 4
     :goto_1
-    iget v5, v3, Lcom/supercell/titan/NativeHTTPConnection;->g:I
+    iget v5, v3, Lcom/supercell/titan/NativeHTTPConnection;->f:I
 
     .line 5
     invoke-virtual {v3}, Lcom/supercell/titan/NativeHTTPConnection;->getReceivedData()[B
@@ -239,7 +236,7 @@
 
     move-result-object v7
 
-    sget-object v8, Lcom/supercell/titan/NativeHTTPConnection$Method;->g:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    sget-object v8, Lcom/supercell/titan/NativeHTTPConnection$Method;->f:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
     if-ne v7, v8, :cond_1
 

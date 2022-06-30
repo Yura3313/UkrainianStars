@@ -59,10 +59,12 @@
 
     const-string v4, "\t ContextName = \""
 
+    .line 1
     invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
+    .line 2
     iget-object v5, p1, Lcom/unbotify/mobile/sdk/reports/ContextReport;->contextName:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -100,10 +102,12 @@
 
     const-string v7, "\" -> added Custom Event = "
 
+    .line 3
     invoke-static {v4, v7}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
+    .line 4
     invoke-virtual {v5}, Lcom/unbotify/mobile/sdk/events/IntegerUnEvent;->getInt()I
 
     move-result v5
@@ -139,6 +143,7 @@
 
     iget-object v5, p0, Lcom/unbotify/mobile/sdk/engine/listeners/OnFeatureListener;->LOG:Lcom/unbotify/mobile/sdk/utils/Logger;
 
+    .line 5
     invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
@@ -147,6 +152,7 @@
 
     goto :goto_1
 
+    .line 6
     :pswitch_2
     iget-boolean v5, v0, Lcom/unbotify/mobile/sdk/engine/features/Flow;->receivedKeyEvents:Z
 
@@ -159,6 +165,7 @@
 
     iget-object v5, p0, Lcom/unbotify/mobile/sdk/engine/listeners/OnFeatureListener;->LOG:Lcom/unbotify/mobile/sdk/utils/Logger;
 
+    .line 7
     invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
@@ -167,6 +174,7 @@
 
     goto :goto_1
 
+    .line 8
     :pswitch_3
     iget-boolean v5, v0, Lcom/unbotify/mobile/sdk/engine/features/Flow;->receivedTouchEvent:Z
 
@@ -179,12 +187,14 @@
 
     iget-object v5, p0, Lcom/unbotify/mobile/sdk/engine/listeners/OnFeatureListener;->LOG:Lcom/unbotify/mobile/sdk/utils/Logger;
 
+    .line 9
     invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
     const-string v6, "\" -> Touch Events = OK"
 
+    .line 10
     :goto_1
     invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

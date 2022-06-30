@@ -1,373 +1,623 @@
 .class public final Lld/c;
-.super Landroidx/recyclerview/widget/RecyclerView$e;
-.source "AvatarAdapters.kt"
+.super Ljava/lang/Object;
+.source "IngameFriendsFragment.kt"
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lld/c$a;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Landroidx/recyclerview/widget/RecyclerView$e<",
-        "Lld/c$a;",
-        ">;"
-    }
-.end annotation
+# interfaces
+.implements Lae/b2;
 
 
 # instance fields
-.field public c:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final a:Lcom/supercell/id/model/IdSocialAccount;
 
-.field public d:I
+.field public final b:Ljava/lang/String;
 
-.field public final e:Landroid/content/Context;
+.field public final c:Ljava/lang/String;
 
-.field public final f:Lke/p;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lke/p<",
-            "Ljava/lang/String;",
-            "Lcom/supercell/id/view/AvatarEditView$b;",
-            "Lae/i;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final d:I
+
+.field public final e:Ljava/lang/String;
+
+.field public final f:Ljava/lang/String;
+
+.field public final g:Ljava/lang/String;
+
+.field public final h:Ljava/lang/String;
+
+.field public final i:Z
+
+.field public final j:Lvc/u;
+
+.field public final k:Z
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lke/p;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/content/Context;",
-            "Lke/p<",
-            "-",
-            "Ljava/lang/String;",
-            "-",
-            "Lcom/supercell/id/view/AvatarEditView$b;",
-            "Lae/i;",
-            ">;)V"
-        }
-    .end annotation
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLvc/u;Z)V
+    .locals 1
+
+    const-string v0, "appAccount"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "profile"
+
+    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$e;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lld/c;->e:Landroid/content/Context;
+    iput-object p1, p0, Lld/c;->e:Ljava/lang/String;
 
-    iput-object p2, p0, Lld/c;->f:Lke/p;
+    iput-object p2, p0, Lld/c;->f:Ljava/lang/String;
+
+    iput-object p3, p0, Lld/c;->g:Ljava/lang/String;
+
+    iput-object p4, p0, Lld/c;->h:Ljava/lang/String;
+
+    iput-boolean p5, p0, Lld/c;->i:Z
+
+    iput-object p6, p0, Lld/c;->j:Lvc/u;
+
+    iput-boolean p7, p0, Lld/c;->k:Z
 
     .line 2
-    sget-object p1, Lbe/m;->g:Lbe/m;
-
-    iput-object p1, p0, Lld/c;->c:Ljava/util/List;
-
-    const/4 p1, -0x1
+    iget-object p1, p6, Lvc/u;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 3
+    iput-object p1, p0, Lld/c;->a:Lcom/supercell/id/model/IdSocialAccount;
+
+    .line 4
+    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->d()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 5
+    iget-object p3, p6, Lvc/u;->b:Ljava/lang/String;
+
+    goto :goto_0
+
+    :cond_0
+    if-eqz p3, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    move-object p3, p2
+
+    .line 6
+    :goto_0
+    iput-object p3, p0, Lld/c;->b:Ljava/lang/String;
+
+    .line 7
+    invoke-static {p3, p2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    xor-int/lit8 p1, p1, 0x1
+
+    if-eqz p1, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    const/4 p2, 0x0
+
+    :goto_1
+    iput-object p2, p0, Lld/c;->c:Ljava/lang/String;
+
+    .line 8
+    sget p1, Lcom/supercell/id/R$layout;->fragment_ingame_friends_list_item_friend:I
+
     iput p1, p0, Lld/c;->d:I
 
     return-void
+.end method
+
+.method public static e(Lld/c;Lvc/u;ZI)Lld/c;
+    .locals 10
+
+    and-int/lit8 v0, p3, 0x1
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lld/c;->e:Ljava/lang/String;
+
+    move-object v3, v0
+
+    goto :goto_0
+
+    :cond_0
+    move-object v3, v1
+
+    :goto_0
+    and-int/lit8 v0, p3, 0x2
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lld/c;->f:Ljava/lang/String;
+
+    move-object v4, v0
+
+    goto :goto_1
+
+    :cond_1
+    move-object v4, v1
+
+    :goto_1
+    and-int/lit8 v0, p3, 0x4
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lld/c;->g:Ljava/lang/String;
+
+    move-object v5, v0
+
+    goto :goto_2
+
+    :cond_2
+    move-object v5, v1
+
+    :goto_2
+    and-int/lit8 v0, p3, 0x8
+
+    if-eqz v0, :cond_3
+
+    iget-object v1, p0, Lld/c;->h:Ljava/lang/String;
+
+    :cond_3
+    move-object v6, v1
+
+    and-int/lit8 v0, p3, 0x10
+
+    if-eqz v0, :cond_4
+
+    iget-boolean v0, p0, Lld/c;->i:Z
+
+    move v7, v0
+
+    goto :goto_3
+
+    :cond_4
+    const/4 v0, 0x0
+
+    const/4 v7, 0x0
+
+    :goto_3
+    and-int/lit8 v0, p3, 0x20
+
+    if-eqz v0, :cond_5
+
+    iget-object p1, p0, Lld/c;->j:Lvc/u;
+
+    :cond_5
+    move-object v8, p1
+
+    and-int/lit8 p1, p3, 0x40
+
+    if-eqz p1, :cond_6
+
+    iget-boolean p2, p0, Lld/c;->k:Z
+
+    :cond_6
+    move v9, p2
+
+    const-string p0, "appAccount"
+
+    invoke-static {v3, p0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p0, "profile"
+
+    invoke-static {v8, p0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance p0, Lld/c;
+
+    move-object v2, p0
+
+    invoke-direct/range {v2 .. v9}, Lld/c;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLvc/u;Z)V
+
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public b()I
-    .locals 1
+.method public final a(Lae/b2;)Z
+    .locals 3
+
+    const-string v0, "other"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lld/c;->c:Ljava/util/List;
+    instance-of v0, p1, Lld/c;
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lld/c;->b:Ljava/lang/String;
+
+    check-cast p1, Lld/c;
+
+    iget-object v2, p1, Lld/c;->b:Ljava/lang/String;
+
+    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lld/c;->c:Ljava/lang/String;
+
+    iget-object v2, p1, Lld/c;->c:Ljava/lang/String;
+
+    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-boolean v0, p0, Lld/c;->k:Z
+
+    iget-boolean v2, p1, Lld/c;->k:Z
+
+    if-ne v0, v2, :cond_1
+
+    iget-object v0, p0, Lld/c;->j:Lvc/u;
+
+    .line 3
+    iget-object v0, v0, Lvc/u;->d:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    .line 4
+    iget-object v2, p1, Lld/c;->j:Lvc/u;
+
+    .line 5
+    iget-object v2, v2, Lvc/u;->d:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    .line 6
+    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lld/c;->j:Lvc/u;
+
+    .line 7
+    iget-boolean v0, v0, Lvc/u;->e:Z
+
+    .line 8
+    iget-object p1, p1, Lld/c;->j:Lvc/u;
+
+    .line 9
+    iget-boolean p1, p1, Lvc/u;->e:Z
+
+    if-ne v0, p1, :cond_1
+
+    const/4 v1, 0x1
+
+    :cond_1
+    return v1
+.end method
+
+.method public final c()I
+    .locals 1
+
+    iget v0, p0, Lld/c;->d:I
 
     return v0
 .end method
 
-.method public f(Landroidx/recyclerview/widget/RecyclerView$z;I)V
-    .locals 7
+.method public final d(Lae/b2;)Z
+    .locals 1
 
-    .line 1
-    check-cast p1, Lld/c$a;
+    const-string v0, "other"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
-    iget-object v0, p0, Lld/c;->c:Ljava/util/List;
+    instance-of v0, p1, Lld/c;
 
-    invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    if-eqz v0, :cond_0
 
-    move-result-object v0
+    check-cast p1, Lld/c;
 
-    check-cast v0, Ljava/lang/String;
+    iget-object p1, p1, Lld/c;->e:Ljava/lang/String;
 
-    .line 3
-    iget v1, p0, Lld/c;->d:I
+    iget-object v0, p0, Lld/c;->e:Ljava/lang/String;
 
-    const-string v2, "itemView.image_outer_circle"
+    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    const-string v3, "itemView.checkmark"
-
-    const/4 v4, 0x0
-
-    const-string v5, "itemView"
-
-    if-ne v1, p2, :cond_0
-
-    .line 4
-    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
-
-    invoke-static {v1, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget v6, Lcom/supercell/id/R$id;->checkmark:I
-
-    invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/ImageView;
-
-    invoke-static {v1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 5
-    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
-
-    invoke-static {v1, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/ImageView;
-
-    iget-object v3, p0, Lld/c;->e:Landroid/content/Context;
-
-    sget v6, Lcom/supercell/id/R$anim;->bounce:I
-
-    invoke-static {v3, v6}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
-
-    move-result-object v3
-
-    invoke-virtual {v1, v3}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
-
-    .line 6
-    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
-
-    invoke-static {v1, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget v3, Lcom/supercell/id/R$id;->image_outer_circle:I
-
-    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/ImageView;
-
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    goto :goto_0
-
-    .line 7
-    :cond_0
-    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
-
-    invoke-static {v1, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget v6, Lcom/supercell/id/R$id;->checkmark:I
-
-    invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/ImageView;
-
-    invoke-virtual {v1}, Landroid/widget/ImageView;->clearAnimation()V
-
-    .line 8
-    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
-
-    invoke-static {v1, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/ImageView;
-
-    invoke-static {v1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v3, 0x4
-
-    invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 9
-    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
-
-    invoke-static {v1, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget v6, Lcom/supercell/id/R$id;->image_outer_circle:I
-
-    invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/ImageView;
-
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 10
-    :goto_0
-    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
-
-    new-instance v2, Lld/d;
-
-    invoke-direct {v2, p1, v0, p0, p2}, Lld/d;-><init>(Lld/c$a;Ljava/lang/String;Lld/c;I)V
-
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 11
-    sget-object p2, Lvd/a1;->b:Lvd/a1;
-
-    new-instance p2, Lvd/d;
-
-    new-instance v1, Lvd/c;
-
-    invoke-direct {v1, v4, v4}, Lvd/c;-><init>(II)V
-
-    invoke-direct {p2, v0, v1}, Lvd/d;-><init>(Ljava/lang/String;Lvd/c;)V
-
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
-
-    invoke-static {p1, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget v0, Lcom/supercell/id/R$id;->profile_image_list_item:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/google/android/material/imageview/ShapeableImageView;
-
-    .line 12
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object v0
-
-    .line 13
-    iget-object v0, v0, Lvd/r;->s:Lpd/i;
-
-    .line 14
-    new-instance v1, Lvd/m0;
-
-    invoke-direct {v1, p2, p1}, Lvd/m0;-><init>(Lvd/d;Landroid/widget/ImageView;)V
-
-    const-string p1, "portraits.png"
-
-    invoke-virtual {v0, p1, v1}, Lpd/i;->b(Ljava/lang/String;Lke/p;)V
-
-    return-void
-
-    :cond_1
-    const-string p1, "holder"
-
-    .line 15
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public g(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$z;
-    .locals 3
+    move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 1
-    new-instance p2, Lld/c$a;
+    const/4 p1, 0x1
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    move-result-object v0
-
-    sget v1, Lcom/supercell/id/R$layout;->fragment_profile_image_editor_avatar_image_item:I
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p1
-
-    const-string v0, "LayoutInflater.from(pare\u2026mage_item, parent, false)"
-
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-direct {p2, p1}, Lld/c$a;-><init>(Landroid/view/View;)V
-
-    return-object p2
+    goto :goto_0
 
     :cond_0
-    const-string p1, "parent"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
     const/4 p1, 0x0
 
-    throw p1
+    :goto_0
+    return p1
 .end method
 
-.method public final i(I)V
-    .locals 3
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
 
-    .line 1
-    iget v0, p0, Lld/c;->d:I
+    if-eq p0, p1, :cond_1
 
-    .line 2
-    iput p1, p0, Lld/c;->d:I
+    instance-of v0, p1, Lld/c;
 
-    if-ltz v0, :cond_0
+    if-eqz v0, :cond_0
 
-    .line 3
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView$e;->e(I)V
+    check-cast p1, Lld/c;
 
-    .line 4
+    iget-object v0, p0, Lld/c;->e:Ljava/lang/String;
+
+    iget-object v1, p1, Lld/c;->e:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lld/c;->f:Ljava/lang/String;
+
+    iget-object v1, p1, Lld/c;->f:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lld/c;->g:Ljava/lang/String;
+
+    iget-object v1, p1, Lld/c;->g:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lld/c;->h:Ljava/lang/String;
+
+    iget-object v1, p1, Lld/c;->h:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Lld/c;->i:Z
+
+    iget-boolean v1, p1, Lld/c;->i:Z
+
+    if-ne v0, v1, :cond_0
+
+    iget-object v0, p0, Lld/c;->j:Lvc/u;
+
+    iget-object v1, p1, Lld/c;->j:Lvc/u;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Lld/c;->k:Z
+
+    iget-boolean p1, p1, Lld/c;->k:Z
+
+    if-ne v0, p1, :cond_0
+
+    goto :goto_0
+
     :cond_0
-    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$e;->a:Landroidx/recyclerview/widget/RecyclerView$f;
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 4
+
+    iget-object v0, p0, Lld/c;->e:Ljava/lang/String;
 
     const/4 v1, 0x0
 
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lld/c;->f:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    move-result v2
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v2, 0x0
+
+    :goto_1
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lld/c;->g:Ljava/lang/String;
+
+    if-eqz v2, :cond_2
+
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    move-result v2
+
+    goto :goto_2
+
+    :cond_2
+    const/4 v2, 0x0
+
+    :goto_2
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lld/c;->h:Ljava/lang/String;
+
+    if-eqz v2, :cond_3
+
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    move-result v2
+
+    goto :goto_3
+
+    :cond_3
+    const/4 v2, 0x0
+
+    :goto_3
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-boolean v2, p0, Lld/c;->i:Z
+
+    const/4 v3, 0x1
+
+    if-eqz v2, :cond_4
+
     const/4 v2, 0x1
 
-    .line 5
-    invoke-virtual {v0, p1, v2, v1}, Landroidx/recyclerview/widget/RecyclerView$f;->d(IILjava/lang/Object;)V
+    :cond_4
+    add-int/2addr v0, v2
 
-    return-void
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lld/c;->j:Lvc/u;
+
+    if-eqz v2, :cond_5
+
+    invoke-virtual {v2}, Lvc/u;->hashCode()I
+
+    move-result v1
+
+    :cond_5
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-boolean v1, p0, Lld/c;->k:Z
+
+    if-eqz v1, :cond_6
+
+    goto :goto_4
+
+    :cond_6
+    move v3, v1
+
+    :goto_4
+    add-int/2addr v0, v3
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "FriendRow(appAccount="
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v1, p0, Lld/c;->e:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", username="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lld/c;->f:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", realname="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lld/c;->g:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", imageUrl="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lld/c;->h:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", isFacebookFriend="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Lld/c;->i:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, ", profile="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lld/c;->j:Lvc/u;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", seen="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Lld/c;->k:Z
+
+    const-string v2, ")"
+
+    .line 3
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

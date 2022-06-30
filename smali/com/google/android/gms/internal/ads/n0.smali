@@ -8,13 +8,11 @@
 
 .field public b:Landroid/content/Context;
 
-.field public c:Lj3/a40;
-
-.field public d:Lcom/google/android/gms/internal/ads/zzbbg;
+.field public c:Lcom/google/android/gms/internal/ads/zzbbg;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;Lcom/google/android/gms/internal/ads/q7;Lj3/a40;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;Lcom/google/android/gms/internal/ads/q7;Lk3/x30;)V
     .locals 0
 
     .line 1
@@ -24,13 +22,10 @@
     iput-object p1, p0, Lcom/google/android/gms/internal/ads/n0;->b:Landroid/content/Context;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/n0;->d:Lcom/google/android/gms/internal/ads/zzbbg;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/n0;->c:Lcom/google/android/gms/internal/ads/zzbbg;
 
     .line 4
     iput-object p3, p0, Lcom/google/android/gms/internal/ads/n0;->a:Lcom/google/android/gms/internal/ads/q7;
-
-    .line 5
-    iput-object p4, p0, Lcom/google/android/gms/internal/ads/n0;->c:Lj3/a40;
 
     return-void
 .end method

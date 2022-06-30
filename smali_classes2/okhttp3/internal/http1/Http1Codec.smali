@@ -217,7 +217,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http1/Http1Codec;->sink:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
@@ -233,7 +232,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http1/Http1Codec;->sink:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
@@ -244,7 +242,6 @@
 .method public isClosed()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/http1/Http1Codec;->state:I
 
     const/4 v1, 0x6
@@ -290,10 +287,12 @@
 
     const-string v1, "state: "
 
+    .line 5
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 6
     iget v2, p0, Lokhttp3/internal/http1/Http1Codec;->state:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -340,10 +339,12 @@
 
     const-string v0, "state: "
 
+    .line 5
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 6
     iget v1, p0, Lokhttp3/internal/http1/Http1Codec;->state:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -385,10 +386,12 @@
 
     const-string p2, "state: "
 
+    .line 5
     invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
+    .line 6
     iget v0, p0, Lokhttp3/internal/http1/Http1Codec;->state:I
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -435,10 +438,12 @@
 
     const-string p2, "state: "
 
+    .line 5
     invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
+    .line 6
     iget v0, p0, Lokhttp3/internal/http1/Http1Codec;->state:I
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -503,10 +508,12 @@
 
     const-string v1, "state: "
 
+    .line 8
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 9
     iget v2, p0, Lokhttp3/internal/http1/Http1Codec;->state:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -722,10 +729,12 @@
 
     const-string v0, "state: "
 
+    .line 3
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 4
     iget v1, p0, Lokhttp3/internal/http1/Http1Codec;->state:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -738,7 +747,7 @@
 
     throw p1
 
-    .line 3
+    .line 5
     :cond_1
     :goto_0
     :try_start_0
@@ -750,33 +759,33 @@
 
     move-result-object v0
 
-    .line 4
+    .line 6
     new-instance v2, Lokhttp3/Response$Builder;
 
     invoke-direct {v2}, Lokhttp3/Response$Builder;-><init>()V
 
     iget-object v3, v0, Lokhttp3/internal/http/StatusLine;->protocol:Lokhttp3/Protocol;
 
-    .line 5
+    .line 7
     invoke-virtual {v2, v3}, Lokhttp3/Response$Builder;->protocol(Lokhttp3/Protocol;)Lokhttp3/Response$Builder;
 
     move-result-object v2
 
     iget v3, v0, Lokhttp3/internal/http/StatusLine;->code:I
 
-    .line 6
+    .line 8
     invoke-virtual {v2, v3}, Lokhttp3/Response$Builder;->code(I)Lokhttp3/Response$Builder;
 
     move-result-object v2
 
     iget-object v3, v0, Lokhttp3/internal/http/StatusLine;->message:Ljava/lang/String;
 
-    .line 7
+    .line 9
     invoke-virtual {v2, v3}, Lokhttp3/Response$Builder;->message(Ljava/lang/String;)Lokhttp3/Response$Builder;
 
     move-result-object v2
 
-    .line 8
+    .line 10
     invoke-virtual {p0}, Lokhttp3/internal/http1/Http1Codec;->readHeaders()Lokhttp3/Headers;
 
     move-result-object v3
@@ -789,7 +798,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 9
+    .line 11
     iget p1, v0, Lokhttp3/internal/http/StatusLine;->code:I
 
     if-ne p1, v3, :cond_2
@@ -798,13 +807,13 @@
 
     return-object p1
 
-    .line 10
+    .line 12
     :cond_2
     iget p1, v0, Lokhttp3/internal/http/StatusLine;->code:I
 
     if-ne p1, v3, :cond_3
 
-    .line 11
+    .line 13
     iput v1, p0, Lokhttp3/internal/http1/Http1Codec;->state:I
 
     return-object v2
@@ -812,7 +821,7 @@
     :cond_3
     const/4 p1, 0x4
 
-    .line 12
+    .line 14
     iput p1, p0, Lokhttp3/internal/http1/Http1Codec;->state:I
     :try_end_0
     .catch Ljava/io/EOFException; {:try_start_0 .. :try_end_0} :catch_0
@@ -822,15 +831,17 @@
     :catch_0
     move-exception p1
 
-    .line 13
+    .line 15
     new-instance v0, Ljava/io/IOException;
 
     const-string v1, "unexpected end of stream on "
 
+    .line 16
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 17
     iget-object v2, p0, Lokhttp3/internal/http1/Http1Codec;->streamAllocation:Lokhttp3/internal/connection/StreamAllocation;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -841,10 +852,10 @@
 
     invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    .line 14
-    invoke-virtual {v0, p1}, Ljava/io/IOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    .line 18
+    invoke-virtual {v0, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    .line 15
+    .line 19
     throw v0
 .end method
 
@@ -935,10 +946,12 @@
 
     const-string p2, "state: "
 
+    .line 11
     invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
+    .line 12
     iget v0, p0, Lokhttp3/internal/http1/Http1Codec;->state:I
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;

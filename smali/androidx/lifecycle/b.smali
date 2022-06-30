@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/Map;
+.field public final a:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -29,7 +29,7 @@
     .end annotation
 .end field
 
-.field public final b:Ljava/util/Map;
+.field public final b:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -46,7 +46,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/lifecycle/b;
 
     invoke-direct {v0}, Landroidx/lifecycle/b;-><init>()V
@@ -67,14 +66,14 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Landroidx/lifecycle/b;->a:Ljava/util/Map;
+    iput-object v0, p0, Landroidx/lifecycle/b;->a:Ljava/util/HashMap;
 
     .line 3
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Landroidx/lifecycle/b;->b:Ljava/util/Map;
+    iput-object v0, p0, Landroidx/lifecycle/b;->b:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -110,8 +109,6 @@
     invoke-virtual {p0, v0}, Landroidx/lifecycle/b;->b(Ljava/lang/Class;)Landroidx/lifecycle/b$a;
 
     move-result-object v0
-
-    if-eqz v0, :cond_0
 
     .line 4
     iget-object v0, v0, Landroidx/lifecycle/b$a;->b:Ljava/util/Map;
@@ -216,13 +213,13 @@
     aget-object v5, p2, v2
 
     .line 13
-    const-class v6, Landroidx/lifecycle/q;
+    const-class v6, Landroidx/lifecycle/p;
 
     invoke-virtual {v5, v6}, Ljava/lang/reflect/Method;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
 
     move-result-object v6
 
-    check-cast v6, Landroidx/lifecycle/q;
+    check-cast v6, Landroidx/lifecycle/p;
 
     const/4 v7, 0x1
 
@@ -271,7 +268,7 @@
 
     .line 18
     :goto_4
-    invoke-interface {v6}, Landroidx/lifecycle/q;->value()Landroidx/lifecycle/f$b;
+    invoke-interface {v6}, Landroidx/lifecycle/p;->value()Landroidx/lifecycle/f$b;
 
     move-result-object v6
 
@@ -361,12 +358,12 @@
     invoke-direct {p2, v1}, Landroidx/lifecycle/b$a;-><init>(Ljava/util/Map;)V
 
     .line 29
-    iget-object v0, p0, Landroidx/lifecycle/b;->a:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/lifecycle/b;->a:Ljava/util/HashMap;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 30
-    iget-object v0, p0, Landroidx/lifecycle/b;->b:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/lifecycle/b;->b:Ljava/util/HashMap;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -395,7 +392,7 @@
     goto :goto_7
 .end method
 
-.method public b(Ljava/lang/Class;)Landroidx/lifecycle/b$a;
+.method public final b(Ljava/lang/Class;)Landroidx/lifecycle/b$a;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -407,7 +404,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/b;->a:Ljava/util/Map;
+    iget-object v0, p0, Landroidx/lifecycle/b;->a:Ljava/util/HashMap;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -468,11 +465,12 @@
 
     const-string v1, "Method "
 
+    .line 4
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 4
+    .line 5
     invoke-virtual {p1}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
     move-result-object p1
@@ -513,7 +511,7 @@
     :goto_0
     if-nez v0, :cond_2
 
-    .line 5
+    .line 6
     invoke-interface {p1, p2, p3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_2

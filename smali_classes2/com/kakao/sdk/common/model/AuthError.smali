@@ -42,28 +42,31 @@
 .method public constructor <init>(ILcom/kakao/sdk/common/model/AuthErrorCause;Lcom/kakao/sdk/common/model/AuthErrorResponse;)V
     .locals 2
 
-    const/4 v0, 0x0
+    const-string v0, "reason"
 
-    if-eqz p2, :cond_2
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p3, :cond_1
+    const-string v0, "response"
 
-    .line 1
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-virtual {p3}, Lcom/kakao/sdk/common/model/AuthErrorResponse;->getErrorDescription()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     goto :goto_0
 
     :cond_0
     invoke-virtual {p3}, Lcom/kakao/sdk/common/model/AuthErrorResponse;->getError()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
     :goto_0
-    invoke-direct {p0, v1, v0}, Lcom/kakao/sdk/common/model/KakaoSdkError;-><init>(Ljava/lang/String;Lle/g;)V
+    const/4 v1, 0x0
+
+    invoke-direct {p0, v0, v1}, Lcom/kakao/sdk/common/model/KakaoSdkError;-><init>(Ljava/lang/String;Lse/e;)V
 
     iput p1, p0, Lcom/kakao/sdk/common/model/AuthError;->statusCode:I
 
@@ -72,21 +75,6 @@
     iput-object p3, p0, Lcom/kakao/sdk/common/model/AuthError;->response:Lcom/kakao/sdk/common/model/AuthErrorResponse;
 
     return-void
-
-    :cond_1
-    const-string p1, "response"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "reason"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/common/model/AuthError;ILcom/kakao/sdk/common/model/AuthErrorCause;Lcom/kakao/sdk/common/model/AuthErrorResponse;ILjava/lang/Object;)Lcom/kakao/sdk/common/model/AuthError;
@@ -149,32 +137,19 @@
 .method public final copy(ILcom/kakao/sdk/common/model/AuthErrorCause;Lcom/kakao/sdk/common/model/AuthErrorResponse;)Lcom/kakao/sdk/common/model/AuthError;
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "reason"
 
-    if-eqz p2, :cond_1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p3, :cond_0
+    const-string v0, "response"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/common/model/AuthError;
 
     invoke-direct {v0, p1, p2, p3}, Lcom/kakao/sdk/common/model/AuthError;-><init>(ILcom/kakao/sdk/common/model/AuthErrorCause;Lcom/kakao/sdk/common/model/AuthErrorResponse;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "response"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "reason"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -220,7 +195,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/common/model/AuthError;->reason:Lcom/kakao/sdk/common/model/AuthErrorCause;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -230,7 +205,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/common/model/AuthError;->response:Lcom/kakao/sdk/common/model/AuthErrorResponse;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -249,7 +224,6 @@
 .method public final getReason()Lcom/kakao/sdk/common/model/AuthErrorCause;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/common/model/AuthError;->reason:Lcom/kakao/sdk/common/model/AuthErrorCause;
 
     return-object v0
@@ -258,7 +232,6 @@
 .method public final getResponse()Lcom/kakao/sdk/common/model/AuthErrorResponse;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/common/model/AuthError;->response:Lcom/kakao/sdk/common/model/AuthErrorResponse;
 
     return-object v0
@@ -267,7 +240,6 @@
 .method public final getStatusCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/common/model/AuthError;->statusCode:I
 
     return v0
@@ -319,10 +291,12 @@
 
     const-string v0, "AuthError(statusCode="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget v1, p0, Lcom/kakao/sdk/common/model/AuthError;->statusCode:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -357,7 +331,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget p2, p0, Lcom/kakao/sdk/common/model/AuthError;->statusCode:I
 
@@ -378,14 +354,4 @@
     invoke-interface {p2, p1, v0}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
 
     return-void
-
-    :cond_0
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

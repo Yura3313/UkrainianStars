@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method public onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 6
 
     .line 1
@@ -64,7 +64,7 @@
     invoke-virtual {p0, v1}, Landroid/widget/TextView;->setMaxLines(I)V
 
     .line 7
-    invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 

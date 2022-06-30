@@ -1,4 +1,4 @@
-.class public Landroidx/viewpager2/widget/g;
+.class public final Landroidx/viewpager2/widget/g;
 .super Ljava/lang/Object;
 .source "ViewPager2.java"
 
@@ -7,10 +7,9 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/viewpager2/widget/ViewPager2;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -18,13 +17,13 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;)V
+.method public final a()V
     .locals 0
 
     return-void
 .end method
 
-.method public b(Landroid/view/View;)V
+.method public final b(Landroid/view/View;)V
     .locals 2
 
     .line 1

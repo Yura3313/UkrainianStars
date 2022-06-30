@@ -3,16 +3,16 @@
 .source "AppCompatCheckBox.java"
 
 # interfaces
-.implements Landroidx/core/widget/i;
+.implements Landroidx/core/widget/j;
 .implements Lf0/q;
 
 
 # instance fields
-.field public final g:Landroidx/appcompat/widget/f;
+.field public final f:Landroidx/appcompat/widget/e;
 
-.field public final h:Landroidx/appcompat/widget/e;
+.field public final g:Landroidx/appcompat/widget/d;
 
-.field public final i:Landroidx/appcompat/widget/n;
+.field public final h:Landroidx/appcompat/widget/m;
 
 
 # direct methods
@@ -31,48 +31,48 @@
     .locals 0
 
     .line 2
-    invoke-static {p1}, Landroidx/appcompat/widget/f0;->a(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {p1}, Landroidx/appcompat/widget/e0;->a(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/CheckBox;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/CheckBox;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Landroidx/appcompat/widget/d0;->a(Landroid/view/View;Landroid/content/Context;)V
+    invoke-static {p0, p1}, Landroidx/appcompat/widget/c0;->a(Landroid/view/View;Landroid/content/Context;)V
 
     .line 4
-    new-instance p1, Landroidx/appcompat/widget/f;
-
-    invoke-direct {p1, p0}, Landroidx/appcompat/widget/f;-><init>(Landroid/widget/CompoundButton;)V
-
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/f;
-
-    .line 5
-    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/f;->b(Landroid/util/AttributeSet;I)V
-
-    .line 6
     new-instance p1, Landroidx/appcompat/widget/e;
 
-    invoke-direct {p1, p0}, Landroidx/appcompat/widget/e;-><init>(Landroid/view/View;)V
+    invoke-direct {p1, p0}, Landroidx/appcompat/widget/e;-><init>(Landroid/widget/CompoundButton;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/e;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
+
+    .line 5
+    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/e;->b(Landroid/util/AttributeSet;I)V
+
+    .line 6
+    new-instance p1, Landroidx/appcompat/widget/d;
+
+    invoke-direct {p1, p0}, Landroidx/appcompat/widget/d;-><init>(Landroid/view/View;)V
+
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     .line 7
-    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/e;->d(Landroid/util/AttributeSet;I)V
+    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/d;->d(Landroid/util/AttributeSet;I)V
 
     .line 8
-    new-instance p1, Landroidx/appcompat/widget/n;
+    new-instance p1, Landroidx/appcompat/widget/m;
 
-    invoke-direct {p1, p0}, Landroidx/appcompat/widget/n;-><init>(Landroid/widget/TextView;)V
+    invoke-direct {p1, p0}, Landroidx/appcompat/widget/m;-><init>(Landroid/widget/TextView;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->i:Landroidx/appcompat/widget/n;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/m;
 
     .line 9
-    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/n;->e(Landroid/util/AttributeSet;I)V
+    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/m;->f(Landroid/util/AttributeSet;I)V
 
     return-void
 .end method
@@ -83,37 +83,46 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/widget/CheckBox;->drawableStateChanged()V
+    invoke-super {p0}, Landroid/widget/CompoundButton;->drawableStateChanged()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-virtual {v0}, Landroidx/appcompat/widget/e;->a()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/d;->a()V
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->i:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
     .line 5
-    invoke-virtual {v0}, Landroidx/appcompat/widget/n;->b()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/m;->b()V
 
     :cond_1
     return-void
 .end method
 
 .method public getCompoundPaddingLeft()I
-    .locals 1
+    .locals 2
 
     .line 1
-    invoke-super {p0}, Landroid/widget/CheckBox;->getCompoundPaddingLeft()I
+    invoke-super {p0}, Landroid/widget/CompoundButton;->getCompoundPaddingLeft()I
 
     move-result v0
 
+    .line 2
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    :cond_0
     return v0
 .end method
 
@@ -121,12 +130,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Landroidx/appcompat/widget/e;->b()Landroid/content/res/ColorStateList;
+    invoke-virtual {v0}, Landroidx/appcompat/widget/d;->b()Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
@@ -143,12 +152,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Landroidx/appcompat/widget/e;->c()Landroid/graphics/PorterDuff$Mode;
+    invoke-virtual {v0}, Landroidx/appcompat/widget/d;->c()Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v0
 
@@ -165,12 +174,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/f;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Landroidx/appcompat/widget/f;->b:Landroid/content/res/ColorStateList;
+    iget-object v0, v0, Landroidx/appcompat/widget/e;->b:Landroid/content/res/ColorStateList;
 
     goto :goto_0
 
@@ -185,12 +194,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/f;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Landroidx/appcompat/widget/f;->c:Landroid/graphics/PorterDuff$Mode;
+    iget-object v0, v0, Landroidx/appcompat/widget/e;->c:Landroid/graphics/PorterDuff$Mode;
 
     goto :goto_0
 
@@ -205,15 +214,15 @@
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Landroid/widget/CheckBox;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-super {p0, p1}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/e;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz p1, :cond_0
 
     .line 3
-    invoke-virtual {p1}, Landroidx/appcompat/widget/e;->e()V
+    invoke-virtual {p1}, Landroidx/appcompat/widget/d;->e()V
 
     :cond_0
     return-void
@@ -223,15 +232,15 @@
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Landroid/widget/CheckBox;->setBackgroundResource(I)V
+    invoke-super {p0, p1}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/e;->f(I)V
+    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/d;->f(I)V
 
     :cond_0
     return-void
@@ -241,7 +250,7 @@
     .locals 1
 
     .line 7
-    invoke-virtual {p0}, Landroid/widget/CheckBox;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -258,22 +267,22 @@
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Landroid/widget/CheckBox;->setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-super {p0, p1}, Landroid/widget/CompoundButton;->setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/f;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     if-eqz p1, :cond_1
 
     .line 3
-    iget-boolean v0, p1, Landroidx/appcompat/widget/f;->f:Z
+    iget-boolean v0, p1, Landroidx/appcompat/widget/e;->f:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
     .line 4
-    iput-boolean v0, p1, Landroidx/appcompat/widget/f;->f:Z
+    iput-boolean v0, p1, Landroidx/appcompat/widget/e;->f:Z
 
     goto :goto_0
 
@@ -281,10 +290,10 @@
     const/4 v0, 0x1
 
     .line 5
-    iput-boolean v0, p1, Landroidx/appcompat/widget/f;->f:Z
+    iput-boolean v0, p1, Landroidx/appcompat/widget/e;->f:Z
 
     .line 6
-    invoke-virtual {p1}, Landroidx/appcompat/widget/f;->a()V
+    invoke-virtual {p1}, Landroidx/appcompat/widget/e;->a()V
 
     :cond_1
     :goto_0
@@ -295,12 +304,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/e;->h(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/d;->h(Landroid/content/res/ColorStateList;)V
 
     :cond_0
     return-void
@@ -310,12 +319,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->h:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/e;->i(Landroid/graphics/PorterDuff$Mode;)V
+    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/d;->i(Landroid/graphics/PorterDuff$Mode;)V
 
     :cond_0
     return-void
@@ -325,20 +334,20 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/f;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput-object p1, v0, Landroidx/appcompat/widget/f;->b:Landroid/content/res/ColorStateList;
+    iput-object p1, v0, Landroidx/appcompat/widget/e;->b:Landroid/content/res/ColorStateList;
 
     const/4 p1, 0x1
 
     .line 3
-    iput-boolean p1, v0, Landroidx/appcompat/widget/f;->d:Z
+    iput-boolean p1, v0, Landroidx/appcompat/widget/e;->d:Z
 
     .line 4
-    invoke-virtual {v0}, Landroidx/appcompat/widget/f;->a()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/e;->a()V
 
     :cond_0
     return-void
@@ -348,20 +357,20 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->g:Landroidx/appcompat/widget/f;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckBox;->f:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput-object p1, v0, Landroidx/appcompat/widget/f;->c:Landroid/graphics/PorterDuff$Mode;
+    iput-object p1, v0, Landroidx/appcompat/widget/e;->c:Landroid/graphics/PorterDuff$Mode;
 
     const/4 p1, 0x1
 
     .line 3
-    iput-boolean p1, v0, Landroidx/appcompat/widget/f;->e:Z
+    iput-boolean p1, v0, Landroidx/appcompat/widget/e;->e:Z
 
     .line 4
-    invoke-virtual {v0}, Landroidx/appcompat/widget/f;->a()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/e;->a()V
 
     :cond_0
     return-void

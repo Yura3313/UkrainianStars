@@ -7,7 +7,7 @@
 
 
 # direct methods
-.method public static Q0(Landroid/os/IBinder;)Lcom/google/android/gms/common/internal/zzr;
+.method public static S0(Landroid/os/IBinder;)Lcom/google/android/gms/common/internal/zzr;
     .locals 2
 
     if-nez p0, :cond_0

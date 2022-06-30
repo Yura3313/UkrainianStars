@@ -21,7 +21,6 @@
 .method public constructor <init>(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/android/installreferrer/api/ReferrerDetails;->mOriginalBundle:Landroid/os/Bundle;
@@ -38,7 +37,6 @@
 
     const-string v1, "google_play_instant"
 
-    .line 1
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
     move-result v0
@@ -53,7 +51,6 @@
 
     const-string v1, "install_begin_timestamp_seconds"
 
-    .line 1
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v0
@@ -68,7 +65,6 @@
 
     const-string v1, "install_referrer"
 
-    .line 1
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -83,7 +79,6 @@
 
     const-string v1, "referrer_click_timestamp_seconds"
 
-    .line 1
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v0

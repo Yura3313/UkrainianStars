@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/motion/widget/b;
+.class public final Landroidx/constraintlayout/motion/widget/b;
 .super Ljava/lang/Object;
 .source "TouchResponse.java"
 
@@ -598,7 +598,7 @@
 
 
 # virtual methods
-.method public a(Landroid/view/ViewGroup;Landroid/graphics/RectF;)Landroid/graphics/RectF;
+.method public final a(Landroid/view/ViewGroup;Landroid/graphics/RectF;)Landroid/graphics/RectF;
     .locals 3
 
     .line 1
@@ -614,7 +614,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -653,7 +653,7 @@
     return-object p2
 .end method
 
-.method public b(Z)V
+.method public final b(Z)V
     .locals 7
 
     const/4 v0, 0x6
@@ -763,10 +763,9 @@
     return-void
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

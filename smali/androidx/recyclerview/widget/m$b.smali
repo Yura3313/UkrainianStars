@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/m$b;
+.class public final Landroidx/recyclerview/widget/m$b;
 .super Landroidx/recyclerview/widget/RecyclerView$q;
 .source "FastScroller.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Landroidx/recyclerview/widget/m;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/m$b;->a:Landroidx/recyclerview/widget/m;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>()V
@@ -32,7 +31,7 @@
 
 
 # virtual methods
-.method public b(Landroidx/recyclerview/widget/RecyclerView;II)V
+.method public final b(Landroidx/recyclerview/widget/RecyclerView;II)V
     .locals 8
 
     .line 1
@@ -122,7 +121,7 @@
     if-eqz p1, :cond_6
 
     .line 11
-    invoke-virtual {p2, v3}, Landroidx/recyclerview/widget/m;->k(I)V
+    invoke-virtual {p2, v3}, Landroidx/recyclerview/widget/m;->l(I)V
 
     goto :goto_2
 
@@ -207,7 +206,7 @@
 
     .line 18
     :cond_5
-    invoke-virtual {p2, v4}, Landroidx/recyclerview/widget/m;->k(I)V
+    invoke-virtual {p2, v4}, Landroidx/recyclerview/widget/m;->l(I)V
 
     :cond_6
     :goto_2

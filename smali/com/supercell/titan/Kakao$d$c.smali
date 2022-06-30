@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/Kakao$d$c;
+.class public final Lcom/supercell/titan/Kakao$d$c;
 .super Ljava/lang/Object;
 .source "Kakao.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/kakaogame/KGResult;
+.field public final synthetic f:Lcom/kakaogame/KGResult;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/Kakao$d;Lcom/kakaogame/KGResult;)V
+.method public constructor <init>(Lcom/kakaogame/KGResult;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Lcom/supercell/titan/Kakao$d$c;->g:Lcom/kakaogame/KGResult;
+    iput-object p1, p0, Lcom/supercell/titan/Kakao$d$c;->f:Lcom/kakaogame/KGResult;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +34,10 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/titan/Kakao$d$c;->g:Lcom/kakaogame/KGResult;
+    iget-object v0, p0, Lcom/supercell/titan/Kakao$d$c;->f:Lcom/kakaogame/KGResult;
 
     invoke-virtual {v0}, Lcom/kakaogame/KGResult;->toString()Ljava/lang/String;
 

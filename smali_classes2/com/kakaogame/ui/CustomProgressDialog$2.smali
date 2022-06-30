@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/ui/CustomProgressDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/ui/CustomProgressDialog$2;->this$0:Lcom/kakaogame/ui/CustomProgressDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

@@ -1,4 +1,4 @@
-.class public Lf0/t;
+.class public final Lf0/t;
 .super Lf0/r$b;
 .source "ViewCompat.java"
 
@@ -14,21 +14,19 @@
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/Class;I)V
+.method public constructor <init>(I)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1, p2, p3}, Lf0/r$b;-><init>(ILjava/lang/Class;I)V
+    invoke-direct {p0, p1}, Lf0/r$b;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b(Landroid/view/View;)Ljava/lang/Object;
+.method public final b(Landroid/view/View;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->isAccessibilityHeading()Z
 
     move-result p1
@@ -40,7 +38,7 @@
     return-object p1
 .end method
 
-.method public c(Landroid/view/View;Ljava/lang/Object;)V
+.method public final c(Landroid/view/View;Ljava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -56,7 +54,7 @@
     return-void
 .end method
 
-.method public f(Ljava/lang/Object;Ljava/lang/Object;)Z
+.method public final f(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
 
     .line 1

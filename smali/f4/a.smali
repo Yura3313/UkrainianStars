@@ -1,51 +1,45 @@
-.class public Lf4/a;
-.super Landroid/view/ViewOutlineProvider;
-.source "Chip.java"
-
-
-# instance fields
-.field public final synthetic a:Lcom/google/android/material/chip/Chip;
+.class public final Lf4/a;
+.super Ljava/lang/Object;
+.source "CanvasCompat.java"
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/chip/Chip;)V
-    .locals 0
+.method public static a(Landroid/graphics/Canvas;FFFFI)I
+    .locals 7
 
     .line 1
-    iput-object p1, p0, Lf4/a;->a:Lcom/google/android/material/chip/Chip;
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    invoke-direct {p0}, Landroid/view/ViewOutlineProvider;-><init>()V
+    const/16 v1, 0x15
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
-    .locals 0
-    .annotation build Landroid/annotation/TargetApi;
-        value = 0x15
-    .end annotation
-
-    .line 1
-    iget-object p1, p0, Lf4/a;->a:Lcom/google/android/material/chip/Chip;
+    if-le v0, v1, :cond_0
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/material/chip/Chip;->j:Lcom/google/android/material/chip/a;
+    invoke-virtual/range {p0 .. p5}, Landroid/graphics/Canvas;->saveLayerAlpha(FFFFI)I
 
-    if-eqz p1, :cond_0
+    move-result p0
 
-    .line 3
-    invoke-virtual {p1, p2}, Lcom/google/android/material/chip/a;->getOutline(Landroid/graphics/Outline;)V
-
-    goto :goto_0
+    return p0
 
     :cond_0
-    const/4 p1, 0x0
+    const/16 v6, 0x1f
 
-    .line 4
-    invoke-virtual {p2, p1}, Landroid/graphics/Outline;->setAlpha(F)V
+    move-object v0, p0
 
-    :goto_0
-    return-void
+    move v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    move v5, p5
+
+    .line 3
+    invoke-virtual/range {v0 .. v6}, Landroid/graphics/Canvas;->saveLayerAlpha(FFFFII)I
+
+    move-result p0
+
+    return p0
 .end method

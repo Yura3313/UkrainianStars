@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
 
     return-void
@@ -20,7 +19,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {p1}, Lm2/c;->a(Landroid/content/Context;)Lm2/b;
+    invoke-static {p1}, Ln2/c;->a(Landroid/content/Context;)Ln2/b;
 
     move-result-object v0
 
@@ -31,7 +30,7 @@
 
     const/16 v2, 0x80
 
-    invoke-virtual {v0, v1, v2}, Lm2/b;->a(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+    invoke-virtual {v0, v1, v2}, Ln2/b;->a(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
     move-result-object v0
 
@@ -48,20 +47,20 @@
 
     .line 4
     :goto_0
-    sget-object v1, Lj3/h6;->h:Lj3/h6;
+    sget-object v1, Lk3/g6;->g:Lk3/g6;
 
     if-nez v1, :cond_0
 
     .line 5
-    new-instance v1, Lj3/h6;
+    new-instance v1, Lk3/g6;
 
-    invoke-direct {v1}, Lj3/h6;-><init>()V
+    invoke-direct {v1}, Lk3/g6;-><init>()V
 
-    sput-object v1, Lj3/h6;->h:Lj3/h6;
+    sput-object v1, Lk3/g6;->g:Lk3/g6;
 
     .line 6
     :cond_0
-    sget-object v1, Lj3/h6;->h:Lj3/h6;
+    sget-object v1, Lk3/g6;->g:Lk3/g6;
 
     if-nez v0, :cond_1
 
@@ -163,7 +162,7 @@
 
     .line 15
     :cond_3
-    iget-object v0, v1, Lj3/h6;->g:Ljava/lang/Object;
+    iget-object v0, v1, Lk3/g6;->f:Ljava/lang/Object;
 
     check-cast v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -179,11 +178,11 @@
     :cond_4
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v3, Lj3/g6;
+    new-instance v1, Lk3/f6;
 
-    invoke-direct {v3, v1, p1, v2, v6}, Lj3/g6;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v1, p1, v2}, Lk3/f6;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    invoke-direct {v0, v3}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
     .line 17
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
@@ -221,7 +220,7 @@
 
     .line 21
     :cond_7
-    iget-object v0, v1, Lj3/h6;->g:Ljava/lang/Object;
+    iget-object v0, v1, Lk3/g6;->f:Ljava/lang/Object;
 
     check-cast v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -237,9 +236,9 @@
     :cond_8
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v2, Lj3/r21;
+    new-instance v2, Lk3/g21;
 
-    invoke-direct {v2, v1, p1}, Lj3/r21;-><init>(Lj3/h6;Landroid/content/Context;)V
+    invoke-direct {v2, v1, p1}, Lk3/g21;-><init>(Lk3/g6;Landroid/content/Context;)V
 
     invoke-direct {v0, v2}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 

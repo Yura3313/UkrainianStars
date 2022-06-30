@@ -4,16 +4,18 @@
 
 
 # instance fields
-.field public final g:Lae/c;
+.field public final f:Lie/f;
 
-.field public final h:Lae/c;
+.field public final g:Lie/f;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 0
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -28,150 +30,139 @@
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/MyAvatarView$a;-><init>(Lcom/supercell/id/view/MyAvatarView;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {p1}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView;->g:Lae/c;
+    check-cast p1, Lie/f;
+
+    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView;->f:Lie/f;
 
     .line 4
     new-instance p1, Lcom/supercell/id/view/MyAvatarView$b;
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/MyAvatarView$b;-><init>(Lcom/supercell/id/view/MyAvatarView;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {p1}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView;->h:Lae/c;
+    check-cast p1, Lie/f;
+
+    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView;->g:Lie/f;
 
     return-void
-
-    :cond_0
-    const-string p1, "context"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public static a(Lcom/supercell/id/view/MyAvatarView;Lcom/supercell/id/model/MyProfileImage;ZI)V
-    .locals 4
+.method public static a(Lcom/supercell/id/view/MyAvatarView;Lcom/supercell/id/model/MyProfileImage;)V
+    .locals 6
 
-    and-int/lit8 p3, p3, 0x2
-
-    if-eqz p3, :cond_0
-
-    const/4 p2, 0x1
+    const/4 v0, 0x1
 
     .line 1
-    :cond_0
     invoke-direct {p0}, Lcom/supercell/id/view/MyAvatarView;->getImageView()Lcom/google/android/material/imageview/ShapeableImageView;
-
-    move-result-object p3
-
-    const-string v0, "imageView"
-
-    invoke-static {p3, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget-object v0, Lpd/d0;->a:Ljava/util/Map;
-
-    const/4 v0, 0x0
-
-    .line 2
-    instance-of v1, p1, Lcom/supercell/id/model/MyProfileImage$Avatar;
-
-    if-nez v1, :cond_1
-
-    move-object v1, v0
-
-    goto :goto_0
-
-    :cond_1
-    move-object v1, p1
-
-    :goto_0
-    check-cast v1, Lcom/supercell/id/model/MyProfileImage$Avatar;
-
-    if-eqz v1, :cond_2
-
-    invoke-virtual {v1}, Lcom/supercell/id/model/MyProfileImage$Avatar;->b()Ljava/lang/String;
 
     move-result-object v1
 
+    const-string v2, "imageView"
+
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v2, Lud/f0;->a:Ljava/util/Map;
+
+    .line 2
+    instance-of v2, p1, Lcom/supercell/id/model/MyProfileImage$Avatar;
+
+    const/4 v3, 0x0
+
+    if-nez v2, :cond_0
+
+    move-object v2, v3
+
+    goto :goto_0
+
+    :cond_0
+    move-object v2, p1
+
+    :goto_0
+    check-cast v2, Lcom/supercell/id/model/MyProfileImage$Avatar;
+
+    if-eqz v2, :cond_1
+
+    .line 3
+    iget-object v2, v2, Lcom/supercell/id/model/MyProfileImage$Avatar;->f:Ljava/lang/String;
+
     goto :goto_1
 
-    :cond_2
-    move-object v1, v0
+    :cond_1
+    move-object v2, v3
 
+    .line 4
     :goto_1
-    instance-of v2, p1, Lcom/supercell/id/model/MyProfileImage$Image;
+    instance-of v4, p1, Lcom/supercell/id/model/MyProfileImage$Image;
 
-    if-nez v2, :cond_3
+    if-nez v4, :cond_2
 
-    move-object v2, v0
+    move-object v4, v3
 
     goto :goto_2
 
-    :cond_3
-    move-object v2, p1
+    :cond_2
+    move-object v4, p1
 
     :goto_2
-    check-cast v2, Lcom/supercell/id/model/MyProfileImage$Image;
+    check-cast v4, Lcom/supercell/id/model/MyProfileImage$Image;
 
-    if-eqz v2, :cond_4
+    if-eqz v4, :cond_3
 
-    invoke-virtual {v2}, Lcom/supercell/id/model/MyProfileImage$Image;->b()Ljava/lang/String;
-
-    move-result-object v2
+    .line 5
+    iget-object v4, v4, Lcom/supercell/id/model/MyProfileImage$Image;->f:Ljava/lang/String;
 
     goto :goto_3
 
-    :cond_4
-    move-object v2, v0
+    :cond_3
+    move-object v4, v3
 
+    .line 6
     :goto_3
-    instance-of v3, p1, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;
+    instance-of v5, p1, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;
 
-    if-nez v3, :cond_5
+    if-nez v5, :cond_4
 
-    move-object p1, v0
+    move-object p1, v3
 
-    :cond_5
+    :cond_4
     check-cast p1, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;
 
-    if-eqz p1, :cond_6
+    if-eqz p1, :cond_5
 
-    invoke-virtual {p1}, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->b()Ljava/lang/String;
+    .line 7
+    iget-object v3, p1, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->f:Ljava/lang/String;
 
-    move-result-object v0
+    .line 8
+    :cond_5
+    invoke-static {v1, v2, v4, v3, v0}, Lud/f0;->a(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    :cond_6
-    invoke-static {p3, v1, v2, v0, p2}, Lpd/d0;->a(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
-
-    .line 3
+    .line 9
     invoke-direct {p0}, Lcom/supercell/id/view/MyAvatarView;->getUnderReviewView()Landroid/view/ViewGroup;
 
     move-result-object p0
 
     const-string p1, "underReviewView"
 
-    invoke-static {p0, p1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v3, :cond_7
+    if-eqz v5, :cond_6
 
     const/4 p1, 0x0
 
     goto :goto_4
 
-    :cond_7
+    :cond_6
     const/16 p1, 0x8
 
     :goto_4
-    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
     return-void
 .end method
@@ -179,9 +170,9 @@
 .method private final getImageView()Lcom/google/android/material/imageview/ShapeableImageView;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView;->g:Lae/c;
+    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView;->f:Lie/f;
 
-    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -193,9 +184,9 @@
 .method private final getUnderReviewView()Landroid/view/ViewGroup;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView;->h:Lae/c;
+    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView;->g:Lie/f;
 
-    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 

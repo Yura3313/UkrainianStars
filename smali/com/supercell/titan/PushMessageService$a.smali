@@ -1,9 +1,9 @@
-.class public Lcom/supercell/titan/PushMessageService$a;
+.class public final Lcom/supercell/titan/PushMessageService$a;
 .super Ljava/lang/Object;
 .source "PushMessageService.java"
 
 # interfaces
-.implements Lb4/e;
+.implements Lc4/e;
 
 
 # annotations
@@ -19,8 +19,8 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lb4/e<",
-        "Lw5/a;",
+        "Lc4/e<",
+        "Ly5/a;",
         ">;"
     }
 .end annotation
@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,14 +37,14 @@
 
 
 # virtual methods
-.method public onSuccess(Ljava/lang/Object;)V
+.method public final onSuccess(Ljava/lang/Object;)V
     .locals 2
 
     .line 1
-    check-cast p1, Lw5/a;
+    check-cast p1, Ly5/a;
 
     .line 2
-    invoke-interface {p1}, Lw5/a;->getToken()Ljava/lang/String;
+    invoke-interface {p1}, Ly5/a;->getToken()Ljava/lang/String;
 
     move-result-object p1
 

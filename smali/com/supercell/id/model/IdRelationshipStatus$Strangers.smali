@@ -22,7 +22,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
 
     invoke-direct {v0}, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;-><init>()V
@@ -33,12 +32,9 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, v0}, Lcom/supercell/id/model/IdRelationshipStatus;-><init>(Lle/g;)V
+    invoke-direct {p0}, Lcom/supercell/id/model/IdRelationshipStatus;-><init>()V
 
     return-void
 .end method

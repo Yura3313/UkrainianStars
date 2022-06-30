@@ -41,7 +41,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/support/v4/media/session/MediaSessionCompat$Token$1;
 
     invoke-direct {v0}, Landroid/support/v4/media/session/MediaSessionCompat$Token$1;-><init>()V
@@ -258,7 +257,6 @@
 .method public getExtraBinder()Landroid/support/v4/media/session/IMediaSession;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Token;->mExtraBinder:Landroid/support/v4/media/session/IMediaSession;
 
     return-object v0
@@ -267,7 +265,6 @@
 .method public getSessionToken2Bundle()Landroid/os/Bundle;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Token;->mSessionToken2Bundle:Landroid/os/Bundle;
 
     return-object v0
@@ -276,7 +273,6 @@
 .method public getToken()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Token;->mInner:Ljava/lang/Object;
 
     return-object v0
@@ -306,7 +302,6 @@
 .method public setExtraBinder(Landroid/support/v4/media/session/IMediaSession;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$Token;->mExtraBinder:Landroid/support/v4/media/session/IMediaSession;
 
     return-void
@@ -315,7 +310,6 @@
 .method public setSessionToken2Bundle(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$Token;->mSessionToken2Bundle:Landroid/os/Bundle;
 
     return-void

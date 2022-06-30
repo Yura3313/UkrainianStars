@@ -57,7 +57,6 @@
 .method public markFlushed()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/UncaughtExceptionHandlerIntegration$UncaughtExceptionHint;->latch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V

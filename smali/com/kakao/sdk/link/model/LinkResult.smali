@@ -74,15 +74,18 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "intent"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "warningMsg"
 
-    if-eqz p3, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    const-string v0, "argumentMsg"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/kakao/sdk/link/model/LinkResult;->intent:Landroid/content/Intent;
@@ -92,28 +95,6 @@
     iput-object p3, p0, Lcom/kakao/sdk/link/model/LinkResult;->argumentMsg:Ljava/util/Map;
 
     return-void
-
-    :cond_0
-    const-string p1, "argumentMsg"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "warningMsg"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "intent"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/link/model/LinkResult;Landroid/content/Intent;Ljava/util/Map;Ljava/util/Map;ILjava/lang/Object;)Lcom/kakao/sdk/link/model/LinkResult;
@@ -209,41 +190,23 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "intent"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "warningMsg"
 
-    if-eqz p3, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "argumentMsg"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/link/model/LinkResult;
 
     invoke-direct {v0, p1, p2, p3}, Lcom/kakao/sdk/link/model/LinkResult;-><init>(Landroid/content/Intent;Ljava/util/Map;Ljava/util/Map;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "argumentMsg"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "warningMsg"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "intent"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public describeContents()I
@@ -269,7 +232,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/link/model/LinkResult;->intent:Landroid/content/Intent;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -279,7 +242,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/link/model/LinkResult;->warningMsg:Ljava/util/Map;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -289,7 +252,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/link/model/LinkResult;->argumentMsg:Ljava/util/Map;
 
-    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -321,7 +284,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/LinkResult;->argumentMsg:Ljava/util/Map;
 
     return-object v0
@@ -330,7 +292,6 @@
 .method public final getIntent()Landroid/content/Intent;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/LinkResult;->intent:Landroid/content/Intent;
 
     return-object v0
@@ -348,7 +309,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/model/LinkResult;->warningMsg:Ljava/util/Map;
 
     return-object v0
@@ -412,10 +372,12 @@
 
     const-string v0, "LinkResult(intent="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/kakao/sdk/link/model/LinkResult;->intent:Landroid/content/Intent;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -450,7 +412,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    if-eqz p1, :cond_2
+    const-string v0, "parcel"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/kakao/sdk/link/model/LinkResult;->intent:Landroid/content/Intent;
 
@@ -549,20 +513,4 @@
 
     :cond_1
     return-void
-
-    :cond_2
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    goto :goto_3
-
-    :goto_2
-    throw p1
-
-    :goto_3
-    goto :goto_2
 .end method

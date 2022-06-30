@@ -1,98 +1,69 @@
 .class public final Lod/j;
-.super Lle/j;
-.source "RegisterEnterPhoneTabPageFragment.kt"
+.super Ljava/lang/Object;
+.source "OnboardingInviteFriendsPageFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Ljava/lang/Boolean;",
-        "Lae/i;",
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lod/c$a;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Ljava/lang/ref/WeakReference;
-
-.field public final synthetic h:Ljava/lang/String;
+# static fields
+.field public static final f:Lod/j;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/ref/WeakReference;Ljava/lang/String;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lod/j;
+
+    invoke-direct {v0}, Lod/j;-><init>()V
+
+    sput-object v0, Lod/j;->f:Lod/j;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Lod/j;->g:Ljava/lang/ref/WeakReference;
-
-    iput-object p2, p0, Lod/j;->h:Ljava/lang/String;
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
 
     .line 1
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Lod/c$a;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast p2, Lod/c$a;
 
     .line 2
-    iget-object p1, p0, Lod/j;->g:Ljava/lang/ref/WeakReference;
+    iget-object p1, p1, Lod/c$a;->b:Ljava/lang/String;
 
-    invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lod/l;
-
-    if-eqz p1, :cond_1
+    iget-object p2, p2, Lod/c$a;->b:Ljava/lang/String;
 
     .line 3
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    invoke-static {p1, p2}, Lcom/google/android/gms/ads/q;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v1, p0, Lod/j;->h:Ljava/lang/String;
+    move-result p1
 
-    invoke-virtual {v0, v1}, Lcom/supercell/id/SupercellId;->setPendingRegistrationWithPhone$supercellId_release(Ljava/lang/String;)V
-
-    .line 4
-    iget-object v0, p0, Lod/j;->h:Ljava/lang/String;
-
-    .line 5
-    invoke-virtual {p1}, Lod/l;->f1()Lcom/supercell/id/ui/register/RegisterFlowFragment;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 6
-    iput-object v0, v1, Lcom/supercell/id/ui/register/RegisterFlowFragment;->m0:Ljava/lang/String;
-
-    .line 7
-    :cond_0
-    invoke-virtual {p1}, Lod/l;->f1()Lcom/supercell/id/ui/register/RegisterFlowFragment;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->s1()V
-
-    .line 8
-    :cond_1
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
+    return p1
 .end method

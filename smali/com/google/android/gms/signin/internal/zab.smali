@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/gms/signin/internal/zad;-><init>()V
 
     return-void
@@ -15,7 +14,7 @@
 
 
 # virtual methods
-.method public L1(Lcom/google/android/gms/signin/internal/zak;)V
+.method public O1(Lcom/google/android/gms/signin/internal/zak;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

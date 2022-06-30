@@ -27,7 +27,6 @@
 .method public constructor <init>(Lokio/Timeout;Ljava/io/InputStream;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokio/Okio$2;->val$timeout:Lokio/Timeout;
 
     iput-object p2, p0, Lokio/Okio$2;->val$in:Ljava/io/InputStream;
@@ -47,7 +46,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/Okio$2;->val$in:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
@@ -168,10 +166,12 @@
 
     const-string v0, "byteCount < 0: "
 
+    .line 10
     invoke-static {v0, p2, p3}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p2
 
+    .line 11
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1
@@ -180,7 +180,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/Okio$2;->val$timeout:Lokio/Timeout;
 
     return-object v0
@@ -196,6 +195,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lokio/Okio$2;->val$in:Ljava/io/InputStream;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

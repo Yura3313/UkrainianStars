@@ -30,7 +30,6 @@
 .method public static getFirebaseEvent(Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/log/FirebaseEvent;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakaogame/log/FirebaseEvent;
 
     invoke-direct {v0, p0, p1}, Lcom/kakaogame/log/FirebaseEvent;-><init>(Ljava/lang/String;Ljava/lang/String;)V
@@ -79,7 +78,6 @@
 .method public static sendEvent(Ljava/lang/String;Ljava/lang/String;Lcom/kakaogame/KGResult;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v0
@@ -94,7 +92,6 @@
 .method public addMetric(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v0
@@ -109,7 +106,6 @@
 .method public setResult(Lcom/kakaogame/KGResult;)V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/core/CoreManager;->getInstance()Lcom/kakaogame/core/CoreManager;
 
     move-result-object v0

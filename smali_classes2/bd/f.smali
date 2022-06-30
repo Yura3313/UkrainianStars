@@ -1,81 +1,82 @@
 .class public final Lbd/f;
-.super Lle/j;
-.source "IngameInviteToPlayFragment.kt"
+.super Ljava/lang/Object;
+.source "DonateFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lae/b2;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;",
-        "Ljava/lang/Exception;",
-        "Lae/i;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final a:I
 
-
-# instance fields
-.field public final synthetic g:Ljava/util/List;
+.field public static final b:Lbd/f;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lbd/f;
+
+    invoke-direct {v0}, Lbd/f;-><init>()V
+
+    sput-object v0, Lbd/f;->b:Lbd/f;
+
+    .line 2
+    sget v0, Lcom/supercell/id/R$layout;->fragment_donate_list_header:I
+
+    sput v0, Lbd/f;->a:I
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Lbd/f;->g:Ljava/util/List;
-
-    const/4 p1, 0x2
-
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a(Lae/b2;)Z
     .locals 1
 
-    .line 1
-    check-cast p1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    const-string v0, "other"
 
-    check-cast p2, Ljava/lang/Exception;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
+    sget-object v0, Lbd/f;->b:Lbd/f;
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    if-eqz p2, :cond_0
+    move-result p1
 
-    .line 2
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    return p1
+.end method
 
-    iget-object p2, p0, Lbd/f;->g:Ljava/util/List;
+.method public final c()I
+    .locals 1
 
-    invoke-virtual {p1, p2}, Lcom/supercell/id/SupercellId;->inviteToPlayFailed$supercellId_release(Ljava/util/Collection;)V
+    sget v0, Lbd/f;->a:I
 
-    .line 3
-    sget-object p1, Lae/i;->a:Lae/i;
+    return v0
+.end method
 
-    return-object p1
+.method public final d(Lae/b2;)Z
+    .locals 1
 
-    :cond_0
-    const-string p1, "it"
+    const-string v0, "other"
 
-    .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    throw v0
+    sget-object v0, Lbd/f;->b:Lbd/f;
 
-    :cond_1
-    const-string p1, "$receiver"
+    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    move-result p1
 
-    throw v0
+    return p1
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/tabs/TabLayout$g;
+.class public final Lcom/google/android/material/tabs/TabLayout$g;
 .super Ljava/lang/Object;
 .source "TabLayout.java"
 
@@ -47,13 +47,13 @@
 
 
 # virtual methods
-.method public a(I)Lcom/google/android/material/tabs/TabLayout$g;
+.method public final a(I)Lcom/google/android/material/tabs/TabLayout$g;
     .locals 3
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$g;->g:Lcom/google/android/material/tabs/TabLayout$i;
 
-    invoke-virtual {v0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -79,7 +79,7 @@
     return-object p0
 .end method
 
-.method public b(Ljava/lang/CharSequence;)Lcom/google/android/material/tabs/TabLayout$g;
+.method public final b(Ljava/lang/CharSequence;)Lcom/google/android/material/tabs/TabLayout$g;
     .locals 1
 
     .line 1
@@ -100,7 +100,7 @@
     .line 2
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$g;->g:Lcom/google/android/material/tabs/TabLayout$i;
 
-    invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 3
     :cond_0
@@ -112,7 +112,7 @@
     return-object p0
 .end method
 
-.method public c()V
+.method public final c()V
     .locals 1
 
     .line 1
@@ -121,7 +121,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout$i;->g()V
+    invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout$i;->h()V
 
     :cond_0
     return-void

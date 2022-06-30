@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/google/android/material/appbar/AppBarLayout;I)V
+.method public abstract a(I)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;I)V"

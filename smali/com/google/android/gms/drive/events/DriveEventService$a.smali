@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/drive/events/DriveEventService$a;
-.super Lq3/k1;
+.super Lr3/k1;
 
 
 # annotations
@@ -30,18 +30,18 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/drive/events/DriveEventService;Lcom/google/android/gms/drive/events/a;)V
-    .locals 0
+.method public constructor <init>(Lcom/google/android/gms/drive/events/DriveEventService;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Lq3/k1;-><init>()V
+    invoke-direct {p0}, Lr3/k1;-><init>()V
 
     .line 2
-    new-instance p2, Ljava/lang/ref/WeakReference;
+    new-instance v0, Ljava/lang/ref/WeakReference;
 
-    invoke-direct {p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object p2, p0, Lcom/google/android/gms/drive/events/DriveEventService$a;->a:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService$a;->a:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
@@ -65,7 +65,7 @@
     if-eq v0, v2, :cond_0
 
     .line 2
-    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->l:Lc2/e;
+    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
 
     new-array v2, v3, [Ljava/lang/Object;
 
@@ -78,7 +78,7 @@
 
     const-string v0, "Unexpected message type: %s"
 
-    invoke-virtual {p1, v0, v2}, Lc2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {p1, v0, v2}, Ld2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-void
 
@@ -96,23 +96,23 @@
     :cond_1
     iget-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService$a;->a:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/android/gms/drive/events/DriveEventService;
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_7
 
     .line 6
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/gms/internal/drive/zzfp;
 
-    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->l:Lc2/e;
+    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
 
     .line 7
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/drive/zzfp;->z2()Lcom/google/android/gms/drive/events/DriveEvent;
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/drive/zzfp;->D2()Lcom/google/android/gms/drive/events/DriveEvent;
 
     move-result-object p1
 
@@ -135,7 +135,7 @@
     if-eq v4, v5, :cond_2
 
     .line 9
-    sget-object v2, Lcom/google/android/gms/drive/events/DriveEventService;->l:Lc2/e;
+    sget-object v2, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
 
     const-string v4, "Unhandled event: %s"
 
@@ -143,7 +143,7 @@
 
     aput-object p1, v5, v1
 
-    invoke-virtual {v2, v4, v5}, Lc2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v2, v4, v5}, Ld2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -152,19 +152,19 @@
     check-cast p1, Lcom/google/android/gms/drive/events/zzv;
 
     .line 11
-    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->l:Lc2/e;
+    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
 
     const-string v5, "Unhandled transfer state event in %s: %s"
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v6, v0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/lang/String;
+    iget-object v6, v0, Lcom/google/android/gms/drive/events/DriveEventService;->f:Ljava/lang/String;
 
     aput-object v6, v2, v1
 
     aput-object p1, v2, v3
 
-    invoke-virtual {v4, v5, v2}, Lc2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v4, v5, v2}, Ld2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -173,11 +173,11 @@
     check-cast p1, Lcom/google/android/gms/drive/events/zzb;
 
     .line 13
-    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->l:Lc2/e;
+    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/lang/String;
+    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->f:Ljava/lang/String;
 
     aput-object v5, v2, v1
 
@@ -185,7 +185,7 @@
 
     const-string p1, "Unhandled changes available event in %s: %s"
 
-    invoke-virtual {v4, p1, v2}, Lc2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v4, p1, v2}, Ld2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -194,11 +194,11 @@
     check-cast p1, Lcom/google/android/gms/drive/events/CompletionEvent;
 
     .line 15
-    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->l:Lc2/e;
+    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/lang/String;
+    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->f:Ljava/lang/String;
 
     aput-object v5, v2, v1
 
@@ -206,7 +206,7 @@
 
     const-string p1, "Unhandled completion event in %s: %s"
 
-    invoke-virtual {v4, p1, v2}, Lc2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v4, p1, v2}, Ld2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -215,11 +215,11 @@
     check-cast p1, Lcom/google/android/gms/drive/events/ChangeEvent;
 
     .line 17
-    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->l:Lc2/e;
+    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/lang/String;
+    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->f:Ljava/lang/String;
 
     aput-object v5, v2, v1
 
@@ -227,7 +227,7 @@
 
     const-string p1, "Unhandled change event in %s: %s"
 
-    invoke-virtual {v4, p1, v2}, Lc2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v4, p1, v2}, Ld2/e;->c(Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -237,11 +237,11 @@
     nop
 
     .line 18
-    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->l:Lc2/e;
+    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
 
     new-array v2, v3, [Ljava/lang/Object;
 
-    iget-object v0, v0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/lang/String;
+    iget-object v0, v0, Lcom/google/android/gms/drive/events/DriveEventService;->f:Ljava/lang/String;
 
     aput-object v0, v2, v1
 
@@ -254,29 +254,21 @@
     const/4 v1, 0x6
 
     .line 19
-    invoke-virtual {p1, v1}, Lc2/e;->a(I)Z
+    invoke-virtual {p1, v1}, Ld2/e;->a(I)Z
 
     move-result v1
 
-    if-eqz v1, :cond_7
+    if-eqz v1, :cond_6
 
     .line 20
-    iget-object p1, p1, Lc2/e;->b:Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ld2/e;->d(Ljava/lang/String;)Ljava/lang/String;
 
-    if-nez p1, :cond_6
-
-    goto :goto_0
-
-    .line 21
     :cond_6
-    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    :cond_7
     :goto_0
     return-void
 
-    .line 22
-    :cond_8
+    .line 21
+    :cond_7
     invoke-virtual {p0}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
     move-result-object p1

@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/HelpshiftTitan$j;
+.class public final Lcom/supercell/titan/HelpshiftTitan$j;
 .super Ljava/lang/Object;
 .source "HelpshiftTitan.java"
 
@@ -18,19 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic f:Ljava/lang/String;
 
-.field public final synthetic h:Lja/a;
+.field public final synthetic g:Lla/a;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lja/a;)V
+.method public constructor <init>(Ljava/lang/String;Lla/a;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$j;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$j;->f:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/titan/HelpshiftTitan$j;->h:Lja/a;
+    iput-object p2, p0, Lcom/supercell/titan/HelpshiftTitan$j;->g:Lla/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +38,7 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 5
 
     const/4 v0, 0x1
@@ -53,12 +52,12 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$j;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$j;->f:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/supercell/titan/HelpshiftTitan$j;->h:Lja/a;
+    iget-object v2, p0, Lcom/supercell/titan/HelpshiftTitan$j;->g:Lla/a;
 
     .line 3
-    invoke-static {}, Lcom/helpshift/util/q;->c()Z
+    invoke-static {}, Lcom/helpshift/util/u;->b()Z
 
     move-result v3
 
@@ -68,12 +67,12 @@
 
     .line 4
     :cond_0
-    invoke-static {v2}, Lgb/c;->b(Lja/a;)Ljava/util/Map;
+    invoke-static {v2}, Lib/c;->b(Lla/a;)Ljava/util/Map;
 
     move-result-object v2
 
     .line 5
-    invoke-static {}, Lcom/helpshift/util/q;->c()Z
+    invoke-static {}, Lcom/helpshift/util/u;->b()Z
 
     move-result v3
 
@@ -83,16 +82,14 @@
 
     .line 6
     :cond_1
-    sget-object v3, Ljb/b;->a:Ljb/a;
+    sget-object v3, Lmb/a;->a:Lmb/b;
 
     .line 7
-    new-instance v4, Lja/z;
+    new-instance v4, Lla/z;
 
-    invoke-direct {v4, v0, v1, v2}, Lja/z;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v4, v0, v1, v2}, Lla/z;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/util/Map;)V
 
-    check-cast v3, Ljb/c;
-
-    invoke-virtual {v3, v4}, Ljb/c;->a(Ljava/lang/Runnable;)V
+    invoke-virtual {v3, v4}, Lmb/b;->b(Ljava/lang/Runnable;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

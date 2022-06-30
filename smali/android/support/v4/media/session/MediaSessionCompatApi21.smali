@@ -21,7 +21,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +29,6 @@
 .method public static createCallback(Landroid/support/v4/media/session/MediaSessionCompatApi21$Callback;)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/support/v4/media/session/MediaSessionCompatApi21$CallbackProxy;
 
     invoke-direct {v0, p0}, Landroid/support/v4/media/session/MediaSessionCompatApi21$CallbackProxy;-><init>(Landroid/support/v4/media/session/MediaSessionCompatApi21$Callback;)V
@@ -41,7 +39,6 @@
 .method public static createSession(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/media/session/MediaSession;
 
     invoke-direct {v0, p0, p1}, Landroid/media/session/MediaSession;-><init>(Landroid/content/Context;Ljava/lang/String;)V
@@ -52,7 +49,6 @@
 .method public static getSessionToken(Ljava/lang/Object;)Landroid/os/Parcelable;
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     invoke-virtual {p0}, Landroid/media/session/MediaSession;->getSessionToken()Landroid/media/session/MediaSession$Token;
@@ -84,7 +80,7 @@
     const/4 v2, 0x1
 
     .line 2
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v1, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 3
     invoke-virtual {v1, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -106,7 +102,6 @@
 .method public static isActive(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     invoke-virtual {p0}, Landroid/media/session/MediaSession;->isActive()Z
@@ -119,7 +114,6 @@
 .method public static release(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     invoke-virtual {p0}, Landroid/media/session/MediaSession;->release()V
@@ -130,7 +124,6 @@
 .method public static sendSessionEvent(Ljava/lang/Object;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     invoke-virtual {p0, p1, p2}, Landroid/media/session/MediaSession;->sendSessionEvent(Ljava/lang/String;Landroid/os/Bundle;)V
@@ -141,7 +134,6 @@
 .method public static setActive(Ljava/lang/Object;Z)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     invoke-virtual {p0, p1}, Landroid/media/session/MediaSession;->setActive(Z)V
@@ -152,7 +144,6 @@
 .method public static setCallback(Ljava/lang/Object;Ljava/lang/Object;Landroid/os/Handler;)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     check-cast p1, Landroid/media/session/MediaSession$Callback;
@@ -165,7 +156,6 @@
 .method public static setExtras(Ljava/lang/Object;Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     invoke-virtual {p0, p1}, Landroid/media/session/MediaSession;->setExtras(Landroid/os/Bundle;)V
@@ -176,7 +166,6 @@
 .method public static setFlags(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     invoke-virtual {p0, p1}, Landroid/media/session/MediaSession;->setFlags(I)V
@@ -187,7 +176,6 @@
 .method public static setMediaButtonReceiver(Ljava/lang/Object;Landroid/app/PendingIntent;)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     invoke-virtual {p0, p1}, Landroid/media/session/MediaSession;->setMediaButtonReceiver(Landroid/app/PendingIntent;)V
@@ -198,7 +186,6 @@
 .method public static setMetadata(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     check-cast p1, Landroid/media/MediaMetadata;
@@ -211,7 +198,6 @@
 .method public static setPlaybackState(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     check-cast p1, Landroid/media/session/PlaybackState;
@@ -247,7 +233,6 @@
 .method public static setPlaybackToRemote(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     check-cast p1, Landroid/media/VolumeProvider;
@@ -321,7 +306,6 @@
 .method public static setQueueTitle(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     invoke-virtual {p0, p1}, Landroid/media/session/MediaSession;->setQueueTitle(Ljava/lang/CharSequence;)V
@@ -332,7 +316,6 @@
 .method public static setSessionActivity(Ljava/lang/Object;Landroid/app/PendingIntent;)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/session/MediaSession;
 
     invoke-virtual {p0, p1}, Landroid/media/session/MediaSession;->setSessionActivity(Landroid/app/PendingIntent;)V

@@ -188,10 +188,12 @@
 
     const-string v1, "Unknown control opcode: "
 
+    .line 10
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 11
     iget v2, p0, Lokhttp3/internal/ws/WebSocketReader;->opcode:I
 
     invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
@@ -208,7 +210,7 @@
 
     throw v0
 
-    .line 10
+    .line 12
     :pswitch_0
     iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->frameCallback:Lokhttp3/internal/ws/WebSocketReader$FrameCallback;
 
@@ -222,7 +224,7 @@
 
     goto :goto_1
 
-    .line 11
+    .line 13
     :pswitch_1
     iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->frameCallback:Lokhttp3/internal/ws/WebSocketReader$FrameCallback;
 
@@ -239,7 +241,7 @@
     :pswitch_2
     const/16 v0, 0x3ed
 
-    .line 12
+    .line 14
     iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Lokio/Buffer;
 
     invoke-virtual {v1}, Lokio/Buffer;->size()J
@@ -256,21 +258,21 @@
 
     if-eqz v1, :cond_2
 
-    .line 13
+    .line 15
     iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->readShort()S
 
     move-result v0
 
-    .line 14
+    .line 16
     iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Lokio/Buffer;
 
     invoke-virtual {v1}, Lokio/Buffer;->readUtf8()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 15
+    .line 17
     invoke-static {v0}, Lokhttp3/internal/ws/WebSocketProtocol;->closeCodeExceptionMessage(I)Ljava/lang/String;
 
     move-result-object v2
@@ -279,7 +281,7 @@
 
     goto :goto_0
 
-    .line 16
+    .line 18
     :cond_1
     new-instance v0, Ljava/net/ProtocolException;
 
@@ -290,7 +292,7 @@
     :cond_2
     const-string v1, ""
 
-    .line 17
+    .line 19
     :goto_0
     iget-object v2, p0, Lokhttp3/internal/ws/WebSocketReader;->frameCallback:Lokhttp3/internal/ws/WebSocketReader$FrameCallback;
 
@@ -298,13 +300,13 @@
 
     const/4 v0, 0x1
 
-    .line 18
+    .line 20
     iput-boolean v0, p0, Lokhttp3/internal/ws/WebSocketReader;->closed:Z
 
     :goto_1
     return-void
 
-    .line 19
+    .line 21
     :cond_3
     new-instance v0, Ljava/net/ProtocolException;
 
@@ -582,13 +584,15 @@
 
     const-string v1, "Frame length 0x"
 
+    .line 18
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 19
     iget-wide v2, p0, Lokhttp3/internal/ws/WebSocketReader;->frameLength:J
 
-    .line 18
+    .line 20
     invoke-static {v2, v3}, Ljava/lang/Long;->toHexString(J)Ljava/lang/String;
 
     move-result-object v2
@@ -607,7 +611,7 @@
 
     throw v0
 
-    .line 19
+    .line 21
     :cond_c
     :goto_8
     iget-boolean v0, p0, Lokhttp3/internal/ws/WebSocketReader;->isControlFrame:Z
@@ -624,7 +628,7 @@
 
     goto :goto_9
 
-    .line 20
+    .line 22
     :cond_d
     new-instance v0, Ljava/net/ProtocolException;
 
@@ -638,7 +642,7 @@
     :goto_9
     if-eqz v1, :cond_f
 
-    .line 21
+    .line 23
     iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lokio/BufferedSource;
 
     iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->maskKey:[B
@@ -648,7 +652,7 @@
     :cond_f
     return-void
 
-    .line 22
+    .line 24
     :cond_10
     new-instance v0, Ljava/net/ProtocolException;
 
@@ -661,7 +665,7 @@
     :catchall_0
     move-exception v2
 
-    .line 23
+    .line 25
     iget-object v3, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lokio/BufferedSource;
 
     invoke-interface {v3}, Lokio/Source;->timeout()Lokio/Timeout;
@@ -674,7 +678,7 @@
 
     throw v2
 
-    .line 24
+    .line 26
     :cond_11
     new-instance v0, Ljava/io/IOException;
 
@@ -779,10 +783,12 @@
 
     const-string v1, "Expected continuation opcode. Got: "
 
+    .line 13
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 14
     iget v2, p0, Lokhttp3/internal/ws/WebSocketReader;->opcode:I
 
     invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
@@ -799,7 +805,7 @@
 
     throw v0
 
-    .line 13
+    .line 15
     :cond_3
     new-instance v0, Ljava/io/IOException;
 
@@ -843,10 +849,12 @@
 
     const-string v2, "Unknown opcode: "
 
+    .line 3
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 4
     invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -861,14 +869,14 @@
 
     throw v1
 
-    .line 3
+    .line 5
     :cond_1
     :goto_0
     invoke-direct {p0}, Lokhttp3/internal/ws/WebSocketReader;->readMessage()V
 
     if-ne v0, v1, :cond_2
 
-    .line 4
+    .line 6
     iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->frameCallback:Lokhttp3/internal/ws/WebSocketReader$FrameCallback;
 
     iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Lokio/Buffer;
@@ -881,7 +889,7 @@
 
     goto :goto_1
 
-    .line 5
+    .line 7
     :cond_2
     iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->frameCallback:Lokhttp3/internal/ws/WebSocketReader$FrameCallback;
 

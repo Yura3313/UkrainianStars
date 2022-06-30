@@ -125,7 +125,6 @@
 .method public getAccessToken()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/nova/interop/line/auth/InternalAccessToken;->accessToken:Ljava/lang/String;
 
     return-object v0
@@ -134,7 +133,6 @@
 .method public getExpiresInMillis()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/linecorp/nova/interop/line/auth/InternalAccessToken;->expiresInMillis:J
 
     return-wide v0
@@ -143,7 +141,6 @@
 .method public getIssuedClientTimeMillis()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/linecorp/nova/interop/line/auth/InternalAccessToken;->issuedClientTimeMillis:J
 
     return-wide v0
@@ -152,7 +149,6 @@
 .method public getRefreshToken()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/nova/interop/line/auth/InternalAccessToken;->refreshToken:Ljava/lang/String;
 
     return-object v0
@@ -220,6 +216,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lcom/linecorp/nova/interop/line/auth/InternalAccessToken;->accessToken:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;

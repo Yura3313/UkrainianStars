@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -21,7 +20,6 @@
 .method public getAsBigDecimal()Ljava/math/BigDecimal;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -40,7 +38,6 @@
 .method public getAsBigInteger()Ljava/math/BigInteger;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -59,7 +56,6 @@
 .method public getAsBoolean()Z
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -78,7 +74,6 @@
 .method public getAsByte()B
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -99,7 +94,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -118,7 +112,6 @@
 .method public getAsDouble()D
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -137,7 +130,6 @@
 .method public getAsFloat()F
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -156,7 +148,6 @@
 .method public getAsInt()I
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -335,7 +326,6 @@
 .method public getAsLong()J
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -354,7 +344,6 @@
 .method public getAsNumber()Ljava/lang/Number;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -373,7 +362,6 @@
 .method public getAsShort()S
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -392,7 +380,6 @@
 .method public getAsString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -411,7 +398,6 @@
 .method public isJsonArray()Z
     .locals 1
 
-    .line 1
     instance-of v0, p0, Lcom/google/gson/JsonArray;
 
     return v0
@@ -420,7 +406,6 @@
 .method public isJsonNull()Z
     .locals 1
 
-    .line 1
     instance-of v0, p0, Lcom/google/gson/JsonNull;
 
     return v0
@@ -429,7 +414,6 @@
 .method public isJsonObject()Z
     .locals 1
 
-    .line 1
     instance-of v0, p0, Lcom/google/gson/JsonObject;
 
     return v0
@@ -438,7 +422,6 @@
 .method public isJsonPrimitive()Z
     .locals 1
 
-    .line 1
     instance-of v0, p0, Lcom/google/gson/JsonPrimitive;
 
     return v0

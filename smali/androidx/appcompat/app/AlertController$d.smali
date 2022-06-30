@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/AlertController$d;
+.class public final Landroidx/appcompat/app/AlertController$d;
 .super Landroid/widget/ArrayAdapter;
 .source "AlertController.java"
 
@@ -23,20 +23,21 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;II[Ljava/lang/CharSequence;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;I)V
+    .locals 2
 
-    const/4 p4, 0x0
+    const v0, 0x1020014
 
-    .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;II[Ljava/lang/Object;)V
+    const/4 v1, 0x0
+
+    invoke-direct {p0, p1, p2, v0, v1}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;II[Ljava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getItemId(I)J
+.method public final getItemId(I)J
     .locals 2
 
     int-to-long v0, p1
@@ -44,7 +45,7 @@
     return-wide v0
 .end method
 
-.method public hasStableIds()Z
+.method public final hasStableIds()Z
     .locals 1
 
     const/4 v0, 0x1

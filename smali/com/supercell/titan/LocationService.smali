@@ -53,7 +53,7 @@
     const-string v1, "location"
 
     .line 4
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -252,7 +252,6 @@
 .method public init(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/supercell/titan/LocationService;->d:J
 
     return-void
@@ -276,7 +275,7 @@
     :try_start_0
     iget-object v2, p0, Lcom/supercell/titan/LocationService;->c:Lcom/supercell/titan/GameApp;
 
-    invoke-virtual {v2}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -308,7 +307,7 @@
     :cond_1
     iget-object v0, p0, Lcom/supercell/titan/LocationService;->c:Lcom/supercell/titan/GameApp;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -428,9 +427,9 @@
 
     move-result-object v4
 
-    new-instance v5, Lcom/supercell/titan/l;
+    new-instance v5, Lcom/supercell/titan/j;
 
-    invoke-direct {v5, p0, p0}, Lcom/supercell/titan/l;-><init>(Lcom/supercell/titan/LocationService;Lcom/supercell/titan/LocationService;)V
+    invoke-direct {v5, p0, p0}, Lcom/supercell/titan/j;-><init>(Lcom/supercell/titan/LocationService;Lcom/supercell/titan/LocationService;)V
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -492,7 +491,7 @@
 
     .line 4
     :try_start_2
-    invoke-virtual {v1}, Ljava/lang/Exception;->getCause()Ljava/lang/Throwable;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
@@ -504,7 +503,6 @@
 .method public startUpdatingLocation()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
     move-result-object v0
@@ -526,7 +524,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
     move-result-object v0

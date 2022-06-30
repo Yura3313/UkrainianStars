@@ -38,7 +38,6 @@
 .method public constructor <init>(Ljava/lang/String;Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/log/FirebaseEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSNSShare$4;->val$eventSeq:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/kakaogame/KGSNSShare$4;->val$callback:Lcom/kakaogame/KGResultCallback;
@@ -100,10 +99,12 @@
 
     const-string v3, ","
 
+    .line 5
     invoke-static {v0, v3}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 6
     iget-object v3, p0, Lcom/kakaogame/KGSNSShare$4;->val$eventSeq:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -114,13 +115,13 @@
 
     invoke-virtual {v2, v1, v0}, Lcom/kakaogame/KGLocalPlayer;->saveCustomProperty(Ljava/lang/String;Ljava/lang/String;)Lcom/kakaogame/KGResult;
 
-    .line 5
+    .line 7
     :goto_0
     invoke-static {p1}, Lcom/kakaogame/KGResult;->getResult(Ljava/util/Map;)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 
-    .line 6
+    .line 8
     iget-object v0, p0, Lcom/kakaogame/KGSNSShare$4;->val$callback:Lcom/kakaogame/KGResultCallback;
 
     iget-object v1, p0, Lcom/kakaogame/KGSNSShare$4;->val$fbEvent:Lcom/kakaogame/log/FirebaseEvent;

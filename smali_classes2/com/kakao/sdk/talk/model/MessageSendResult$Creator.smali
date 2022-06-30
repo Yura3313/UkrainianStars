@@ -30,32 +30,32 @@
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 5
 
-    const/4 v0, 0x0
+    const-string v0, "in"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v1, Lcom/kakao/sdk/talk/model/MessageSendResult;
+    new-instance v0, Lcom/kakao/sdk/talk/model/MessageSendResult;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
 
-    move-result-object v2
+    move-result-object v1
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_1
+    if-eqz v2, :cond_0
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v0
+    move-result v2
 
     new-instance v3, Ljava/util/ArrayList;
 
-    invoke-direct {v3, v0}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v3, v2}, Ljava/util/ArrayList;-><init>(I)V
 
     :goto_0
-    if-eqz v0, :cond_0
+    if-eqz v2, :cond_1
 
     sget-object v4, Lcom/kakao/sdk/talk/model/MessageFailureInfo;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -67,31 +67,17 @@
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    add-int/lit8 v0, v0, -0x1
+    add-int/lit8 v2, v2, -0x1
 
     goto :goto_0
 
     :cond_0
-    move-object v0, v3
+    const/4 v3, 0x0
 
     :cond_1
-    invoke-direct {v1, v2, v0}, Lcom/kakao/sdk/talk/model/MessageSendResult;-><init>(Ljava/util/List;Ljava/util/List;)V
+    invoke-direct {v0, v1, v3}, Lcom/kakao/sdk/talk/model/MessageSendResult;-><init>(Ljava/util/List;Ljava/util/List;)V
 
-    return-object v1
-
-    :cond_2
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    goto :goto_2
-
-    :goto_1
-    throw v0
-
-    :goto_2
-    goto :goto_1
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

@@ -159,7 +159,6 @@
 .method public static synthetic access$100(Lio/sentry/transport/AsyncHttpTransport;)Lio/sentry/SentryOptions;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/sentry/transport/AsyncHttpTransport;->options:Lio/sentry/SentryOptions;
 
     return-object p0
@@ -168,7 +167,6 @@
 .method public static synthetic access$200(Lio/sentry/transport/AsyncHttpTransport;)Lio/sentry/transport/ITransportGate;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/sentry/transport/AsyncHttpTransport;->transportGate:Lio/sentry/transport/ITransportGate;
 
     return-object p0
@@ -177,7 +175,6 @@
 .method public static synthetic access$300(Lio/sentry/transport/AsyncHttpTransport;)Lio/sentry/transport/HttpConnection;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/sentry/transport/AsyncHttpTransport;->connection:Lio/sentry/transport/HttpConnection;
 
     return-object p0
@@ -406,7 +403,6 @@
 .method public flush(J)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/transport/AsyncHttpTransport;->executor:Lio/sentry/transport/QueuedThreadPoolExecutor;
 
     invoke-virtual {v0, p1, p2}, Lio/sentry/transport/QueuedThreadPoolExecutor;->waitTillIdle(J)V
@@ -414,7 +410,7 @@
     return-void
 .end method
 
-.method public synthetic send(Lio/sentry/SentryEnvelope;)V
+.method public final synthetic send(Lio/sentry/SentryEnvelope;)V
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/transport/b;->a(Lio/sentry/transport/ITransport;Lio/sentry/SentryEnvelope;)V

@@ -35,7 +35,6 @@
 .method public constructor <init>(ZLcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/KGPlayer$5;->val$enable:Z
 
     iput-object p2, p0, Lcom/kakaogame/KGPlayer$5;->val$callback:Lcom/kakaogame/KGResultCallback;

@@ -224,7 +224,6 @@
 .method public body()Lokhttp3/RequestBody;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/MultipartBody$Part;->body:Lokhttp3/RequestBody;
 
     return-object v0
@@ -235,7 +234,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/MultipartBody$Part;->headers:Lokhttp3/Headers;
 
     return-object v0

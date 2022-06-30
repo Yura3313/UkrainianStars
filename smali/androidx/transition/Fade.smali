@@ -28,7 +28,7 @@
     invoke-direct {p0}, Landroidx/transition/Visibility;-><init>()V
 
     .line 2
-    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->O(I)V
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->P(I)V
 
     return-void
 .end method
@@ -55,19 +55,19 @@
     check-cast p2, Landroid/content/res/XmlResourceParser;
 
     .line 7
-    iget v0, p0, Landroidx/transition/Visibility;->E:I
+    iget v0, p0, Landroidx/transition/Visibility;->D:I
 
     const-string v1, "fadingMode"
 
     const/4 v2, 0x0
 
     .line 8
-    invoke-static {p1, p2, v1, v2, v0}, Lw/f;->d(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+    invoke-static {p1, p2, v1, v2, v0}, Lw/f;->e(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
     move-result p2
 
     .line 9
-    invoke-virtual {p0, p2}, Landroidx/transition/Visibility;->O(I)V
+    invoke-virtual {p0, p2}, Landroidx/transition/Visibility;->P(I)V
 
     .line 10
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
@@ -77,7 +77,7 @@
 
 
 # virtual methods
-.method public L(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public final N(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
     .locals 1
 
     const/4 p1, 0x0
@@ -85,7 +85,7 @@
     if-eqz p3, :cond_0
 
     .line 1
-    iget-object p3, p3, Lv0/s;->a:Ljava/util/Map;
+    iget-object p3, p3, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string p4, "android:fade:transitionAlpha"
 
@@ -121,14 +121,14 @@
 
     .line 3
     :goto_1
-    invoke-virtual {p0, p2, p1, p4}, Landroidx/transition/Fade;->P(Landroid/view/View;FF)Landroid/animation/Animator;
+    invoke-virtual {p0, p2, p1, p4}, Landroidx/transition/Fade;->Q(Landroid/view/View;FF)Landroid/animation/Animator;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public N(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public final O(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;)Landroid/animation/Animator;
     .locals 0
 
     .line 1
@@ -136,8 +136,10 @@
 
     invoke-virtual {p1, p2}, Lv0/d0;->c(Landroid/view/View;)V
 
+    if-eqz p3, :cond_0
+
     .line 2
-    iget-object p1, p3, Lv0/s;->a:Ljava/util/Map;
+    iget-object p1, p3, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string p3, "android:fade:transitionAlpha"
 
@@ -163,14 +165,14 @@
     const/4 p3, 0x0
 
     .line 4
-    invoke-virtual {p0, p2, p1, p3}, Landroidx/transition/Fade;->P(Landroid/view/View;FF)Landroid/animation/Animator;
+    invoke-virtual {p0, p2, p1, p3}, Landroidx/transition/Fade;->Q(Landroid/view/View;FF)Landroid/animation/Animator;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final P(Landroid/view/View;FF)Landroid/animation/Animator;
+.method public final Q(Landroid/view/View;FF)Landroid/animation/Animator;
     .locals 2
 
     cmpl-float v0, p2, p3
@@ -183,12 +185,10 @@
 
     .line 1
     :cond_0
-    sget-object v0, Lv0/x;->a:Lv0/d0;
-
-    invoke-virtual {v0, p1, p2}, Lv0/d0;->f(Landroid/view/View;F)V
+    invoke-static {p1, p2}, Lv0/x;->c(Landroid/view/View;F)V
 
     .line 2
-    sget-object p2, Lv0/x;->b:Landroid/util/Property;
+    sget-object p2, Lv0/x;->b:Lv0/x$a;
 
     const/4 v0, 0x1
 
@@ -208,26 +208,26 @@
     invoke-direct {p3, p1}, Landroidx/transition/Fade$b;-><init>(Landroid/view/View;)V
 
     .line 4
-    invoke-virtual {p2, p3}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {p2, p3}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 5
     new-instance p3, Landroidx/transition/Fade$a;
 
-    invoke-direct {p3, p0, p1}, Landroidx/transition/Fade$a;-><init>(Landroidx/transition/Fade;Landroid/view/View;)V
+    invoke-direct {p3, p1}, Landroidx/transition/Fade$a;-><init>(Landroid/view/View;)V
 
     invoke-virtual {p0, p3}, Landroidx/transition/Transition;->a(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     return-object p2
 .end method
 
-.method public g(Lv0/s;)V
+.method public final g(Lv0/s;)V
     .locals 2
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->J(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->L(Lv0/s;)V
 
     .line 2
-    iget-object v0, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object v0, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     iget-object p1, p1, Lv0/s;->b:Landroid/view/View;
 

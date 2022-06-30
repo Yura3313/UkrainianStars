@@ -1,4 +1,4 @@
-.class public Ln/a;
+.class public final Ln/a;
 .super Ln/b;
 .source "ArcCurveFit.java"
 
@@ -151,7 +151,7 @@
 
 
 # virtual methods
-.method public b(DI)D
+.method public final b(D)D
     .locals 5
 
     .line 1
@@ -204,7 +204,7 @@
 
     array-length v2, v0
 
-    if-ge v1, v2, :cond_6
+    if-ge v1, v2, :cond_4
 
     .line 6
     aget-object v2, v0, v1
@@ -213,21 +213,19 @@
 
     cmpg-double v4, p1, v2
 
-    if-gtz v4, :cond_5
+    if-gtz v4, :cond_3
 
     .line 7
     aget-object v2, v0, v1
 
     iget-boolean v2, v2, Ln/a$a;->r:Z
 
-    if-eqz v2, :cond_3
-
-    if-nez p3, :cond_2
+    if-eqz v2, :cond_2
 
     .line 8
-    aget-object p3, v0, v1
+    aget-object v0, v0, v1
 
-    invoke-virtual {p3, p1, p2}, Ln/a$a;->c(D)D
+    invoke-virtual {v0, p1, p2}, Ln/a$a;->c(D)D
 
     move-result-wide p1
 
@@ -235,23 +233,11 @@
 
     .line 9
     :cond_2
-    aget-object p3, v0, v1
-
-    invoke-virtual {p3, p1, p2}, Ln/a$a;->d(D)D
-
-    move-result-wide p1
-
-    return-wide p1
-
-    .line 10
-    :cond_3
     aget-object v0, v0, v1
 
     invoke-virtual {v0, p1, p2}, Ln/a$a;->g(D)V
 
-    if-nez p3, :cond_4
-
-    .line 11
+    .line 10
     iget-object p1, p0, Ln/a;->b:[Ln/a$a;
 
     aget-object p1, p1, v1
@@ -262,30 +248,18 @@
 
     return-wide p1
 
-    .line 12
-    :cond_4
-    iget-object p1, p0, Ln/a;->b:[Ln/a$a;
-
-    aget-object p1, p1, v1
-
-    invoke-virtual {p1}, Ln/a$a;->f()D
-
-    move-result-wide p1
-
-    return-wide p1
-
-    :cond_5
+    :cond_3
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    :cond_6
+    :cond_4
     const-wide/high16 p1, 0x7ff8000000000000L    # Double.NaN
 
     return-wide p1
 .end method
 
-.method public c(D[D)V
+.method public final c(D[D)V
     .locals 7
 
     .line 1
@@ -419,7 +393,7 @@
     return-void
 .end method
 
-.method public d(D[F)V
+.method public final d(D[F)V
     .locals 7
 
     .line 1
@@ -564,7 +538,7 @@
     return-void
 .end method
 
-.method public e(DI)D
+.method public final e(D)D
     .locals 5
 
     .line 1
@@ -615,7 +589,7 @@
 
     array-length v2, v0
 
-    if-ge v1, v2, :cond_6
+    if-ge v1, v2, :cond_4
 
     .line 6
     aget-object v2, v0, v1
@@ -624,16 +598,14 @@
 
     cmpg-double v4, p1, v2
 
-    if-gtz v4, :cond_5
+    if-gtz v4, :cond_3
 
     .line 7
     aget-object v2, v0, v1
 
     iget-boolean v2, v2, Ln/a$a;->r:Z
 
-    if-eqz v2, :cond_3
-
-    if-nez p3, :cond_2
+    if-eqz v2, :cond_2
 
     .line 8
     aget-object p1, v0, v1
@@ -645,22 +617,11 @@
 
     .line 10
     :cond_2
-    aget-object p1, v0, v1
-
-    .line 11
-    iget-wide p1, p1, Ln/a$a;->m:D
-
-    return-wide p1
-
-    .line 12
-    :cond_3
     aget-object v0, v0, v1
 
     invoke-virtual {v0, p1, p2}, Ln/a$a;->g(D)V
 
-    if-nez p3, :cond_4
-
-    .line 13
+    .line 11
     iget-object p1, p0, Ln/a;->b:[Ln/a$a;
 
     aget-object p1, p1, v1
@@ -671,30 +632,18 @@
 
     return-wide p1
 
-    .line 14
-    :cond_4
-    iget-object p1, p0, Ln/a;->b:[Ln/a$a;
-
-    aget-object p1, p1, v1
-
-    invoke-virtual {p1}, Ln/a$a;->b()D
-
-    move-result-wide p1
-
-    return-wide p1
-
-    :cond_5
+    :cond_3
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    :cond_6
+    :cond_4
     const-wide/high16 p1, 0x7ff8000000000000L    # Double.NaN
 
     return-wide p1
 .end method
 
-.method public f(D[D)V
+.method public final f(D[D)V
     .locals 7
 
     .line 1
@@ -829,10 +778,9 @@
     return-void
 .end method
 
-.method public g()[D
+.method public final g()[D
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ln/a;->a:[D
 
     return-object v0

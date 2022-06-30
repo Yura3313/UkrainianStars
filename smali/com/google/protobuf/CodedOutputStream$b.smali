@@ -21,8 +21,6 @@
 
 .field public f:I
 
-.field public g:I
-
 
 # direct methods
 .method public constructor <init>(I)V
@@ -42,11 +40,13 @@
 
     move-result p1
 
-    new-array v0, p1, [B
+    new-array p1, p1, [B
 
-    iput-object v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
+    iput-object p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
 
     .line 3
+    array-length p1, p1
+
     iput p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->e:I
 
     return-void
@@ -64,7 +64,7 @@
 
 
 # virtual methods
-.method public final d0(I)V
+.method public final b0(I)V
     .locals 4
 
     .line 1
@@ -121,18 +121,11 @@
 
     aput-byte p1, v0, v2
 
-    .line 5
-    iget p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
-
-    add-int/lit8 p1, p1, 0x4
-
-    iput p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
-
     return-void
 .end method
 
-.method public final e0(J)V
-    .locals 8
+.method public final c0(J)V
+    .locals 7
 
     .line 1
     iget-object v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
@@ -160,43 +153,43 @@
 
     const/16 v5, 0x8
 
-    shr-long v6, p1, v5
+    shr-long v5, p1, v5
 
-    and-long/2addr v6, v3
+    and-long/2addr v5, v3
 
-    long-to-int v7, v6
+    long-to-int v6, v5
 
-    int-to-byte v6, v7
+    int-to-byte v5, v6
 
-    aput-byte v6, v0, v2
+    aput-byte v5, v0, v2
 
     add-int/lit8 v2, v1, 0x1
 
     .line 3
     iput v2, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
 
-    const/16 v6, 0x10
+    const/16 v5, 0x10
 
-    shr-long v6, p1, v6
+    shr-long v5, p1, v5
 
-    and-long/2addr v6, v3
+    and-long/2addr v5, v3
 
-    long-to-int v7, v6
+    long-to-int v6, v5
 
-    int-to-byte v6, v7
+    int-to-byte v5, v6
 
-    aput-byte v6, v0, v1
+    aput-byte v5, v0, v1
 
     add-int/lit8 v1, v2, 0x1
 
     .line 4
     iput v1, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
 
-    const/16 v6, 0x18
+    const/16 v5, 0x18
 
-    shr-long v6, p1, v6
+    shr-long v5, p1, v5
 
-    and-long/2addr v3, v6
+    and-long/2addr v3, v5
 
     long-to-int v4, v3
 
@@ -272,86 +265,70 @@
 
     aput-byte p1, v0, v2
 
-    .line 9
-    iget p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
+    return-void
+.end method
 
-    add-int/2addr p1, v5
+.method public final d0(II)V
+    .locals 0
 
-    iput p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
+    shl-int/lit8 p1, p1, 0x3
+
+    or-int/2addr p1, p2
+
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/CodedOutputStream$b;->e0(I)V
 
     return-void
 .end method
 
-.method public final f0(I)V
-    .locals 6
+.method public final e0(I)V
+    .locals 4
 
     .line 1
     sget-boolean v0, Lcom/google/protobuf/CodedOutputStream;->c:Z
 
     if-eqz v0, :cond_1
 
-    .line 2
-    iget v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
-
-    int-to-long v0, v0
-
     :goto_0
-    and-int/lit8 v2, p1, -0x80
+    and-int/lit8 v0, p1, -0x80
 
-    if-nez v2, :cond_0
+    if-nez v0, :cond_0
 
-    .line 3
-    iget-object v2, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
+    .line 2
+    iget-object v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
 
-    iget v3, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
+    iget v1, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
 
-    add-int/lit8 v4, v3, 0x1
+    add-int/lit8 v2, v1, 0x1
 
-    iput v4, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
+    iput v2, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
 
-    int-to-long v3, v3
+    int-to-long v1, v1
 
     int-to-byte p1, p1
 
-    invoke-static {v2, v3, v4, p1}, Lcom/google/protobuf/u1;->u([BJB)V
-
-    .line 4
-    iget p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
-
-    int-to-long v2, p1
-
-    sub-long/2addr v2, v0
-
-    long-to-int p1, v2
-
-    .line 5
-    iget v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
-
-    add-int/2addr v0, p1
-
-    iput v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
+    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/t1;->u([BJB)V
 
     return-void
 
-    .line 6
+    .line 3
     :cond_0
-    iget-object v2, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
+    iget-object v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
 
-    iget v3, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
+    iget v1, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
 
-    add-int/lit8 v4, v3, 0x1
+    add-int/lit8 v2, v1, 0x1
 
-    iput v4, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
+    iput v2, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
 
-    int-to-long v3, v3
+    int-to-long v1, v1
 
-    and-int/lit8 v5, p1, 0x7f
+    and-int/lit8 v3, p1, 0x7f
 
-    or-int/lit16 v5, v5, 0x80
+    or-int/lit16 v3, v3, 0x80
 
-    int-to-byte v5, v5
+    int-to-byte v3, v3
 
-    invoke-static {v2, v3, v4, v5}, Lcom/google/protobuf/u1;->u([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lcom/google/protobuf/t1;->u([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -363,7 +340,7 @@
 
     if-nez v0, :cond_2
 
-    .line 7
+    .line 4
     iget-object v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
 
     iget v1, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
@@ -376,16 +353,9 @@
 
     aput-byte p1, v0, v1
 
-    .line 8
-    iget p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
-
     return-void
 
-    .line 9
+    .line 5
     :cond_2
     iget-object v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
 
@@ -403,20 +373,13 @@
 
     aput-byte v2, v0, v1
 
-    .line 10
-    iget v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    iput v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
-
     ushr-int/lit8 p1, p1, 0x7
 
     goto :goto_1
 .end method
 
-.method public final g0(J)V
-    .locals 11
+.method public final f0(J)V
+    .locals 9
 
     .line 1
     sget-boolean v0, Lcom/google/protobuf/CodedOutputStream;->c:Z
@@ -429,19 +392,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
-    iget v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
-
-    int-to-long v6, v0
-
     :goto_0
-    and-long v8, p1, v4
+    and-long v6, p1, v4
 
-    cmp-long v0, v8, v2
+    cmp-long v0, v6, v2
 
     if-nez v0, :cond_0
 
-    .line 3
+    .line 2
     iget-object v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
 
     iget v1, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
@@ -456,47 +414,31 @@
 
     int-to-byte p1, p2
 
-    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/u1;->u([BJB)V
-
-    .line 4
-    iget p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
-
-    int-to-long p1, p1
-
-    sub-long/2addr p1, v6
-
-    long-to-int p2, p1
-
-    .line 5
-    iget p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
-
-    add-int/2addr p1, p2
-
-    iput p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
+    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/t1;->u([BJB)V
 
     return-void
 
-    .line 6
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
 
-    iget v8, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
+    iget v6, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
 
-    add-int/lit8 v9, v8, 0x1
+    add-int/lit8 v7, v6, 0x1
 
-    iput v9, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
+    iput v7, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
 
-    int-to-long v8, v8
+    int-to-long v6, v6
 
-    long-to-int v10, p1
+    long-to-int v8, p1
 
-    and-int/lit8 v10, v10, 0x7f
+    and-int/lit8 v8, v8, 0x7f
 
-    or-int/lit16 v10, v10, 0x80
+    or-int/lit16 v8, v8, 0x80
 
-    int-to-byte v10, v10
+    int-to-byte v8, v8
 
-    invoke-static {v0, v8, v9, v10}, Lcom/google/protobuf/u1;->u([BJB)V
+    invoke-static {v0, v6, v7, v8}, Lcom/google/protobuf/t1;->u([BJB)V
 
     ushr-long/2addr p1, v1
 
@@ -510,7 +452,7 @@
 
     if-nez v0, :cond_2
 
-    .line 7
+    .line 4
     iget-object v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
 
     iget v1, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
@@ -525,16 +467,9 @@
 
     aput-byte p1, v0, v1
 
-    .line 8
-    iget p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
-
     return-void
 
-    .line 9
+    .line 5
     :cond_2
     iget-object v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->d:[B
 
@@ -553,13 +488,6 @@
     int-to-byte v7, v7
 
     aput-byte v7, v0, v6
-
-    .line 10
-    iget v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    iput v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
 
     ushr-long/2addr p1, v1
 

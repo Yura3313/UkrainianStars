@@ -27,7 +27,7 @@
     .end annotation
 .end field
 
-.field public static final d:Ljava/util/Map;
+.field public static final d:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -41,7 +41,7 @@
 
 .field public static e:[Ljava/lang/String;
 
-.field public static f:Ljava/util/Map;
+.field public static f:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -87,7 +87,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/supercell/titan/HelpshiftTitan;->d:Ljava/util/Map;
+    sput-object v0, Lcom/supercell/titan/HelpshiftTitan;->d:Ljava/util/HashMap;
 
     const/4 v0, 0x0
 
@@ -101,7 +101,7 @@
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v1, Lcom/supercell/titan/HelpshiftTitan;->f:Ljava/util/Map;
+    sput-object v1, Lcom/supercell/titan/HelpshiftTitan;->f:Ljava/util/HashMap;
 
     new-array v1, v0, [Ljava/lang/String;
 
@@ -114,7 +114,7 @@
     sput-object v0, Lcom/supercell/titan/HelpshiftTitan;->h:[Ljava/lang/String;
 
     .line 7
-    sget-object v0, Lja/e0$c;->c:Ljava/lang/Integer;
+    sget-object v0, Lla/e0$c;->c:Ljava/lang/Integer;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
@@ -136,7 +136,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -146,12 +145,12 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lcom/supercell/titan/h;
+    new-instance v0, La5/e0;
 
-    invoke-direct {v0}, Lcom/supercell/titan/h;-><init>()V
+    invoke-direct {v0}, La5/e0;-><init>()V
 
     .line 2
-    invoke-static {}, Lcom/helpshift/util/q;->c()Z
+    invoke-static {}, Lcom/helpshift/util/u;->b()Z
 
     move-result v1
 
@@ -161,29 +160,24 @@
 
     .line 3
     :cond_0
-    sget-object v1, Ljb/b;->a:Ljb/a;
+    sget-object v1, Lmb/a;->a:Lmb/b;
 
     .line 4
-    new-instance v2, Lja/t;
+    new-instance v2, Lla/t;
 
-    invoke-direct {v2, v0}, Lja/t;-><init>(Lja/r;)V
+    invoke-direct {v2, v0}, Lla/t;-><init>(Lla/r;)V
 
-    check-cast v1, Ljb/c;
-
-    .line 5
-    iget-object v0, v1, Ljb/c;->c:Landroid/os/Handler;
-
-    invoke-virtual {v0, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v1, v2}, Lmb/b;->a(Ljava/lang/Runnable;)V
 
     :goto_0
     return-void
 .end method
 
-.method public static b()Lja/a;
-    .locals 21
+.method public static b()Lla/a;
+    .locals 13
 
     .line 1
-    sget-object v0, Lja/e0$c;->a:Ljava/lang/Integer;
+    sget-object v0, Lla/e0$c;->a:Ljava/lang/Integer;
 
     .line 2
     new-instance v1, Ljava/util/HashMap;
@@ -206,15 +200,15 @@
 
     .line 5
     :cond_0
-    new-instance v15, Lja/q;
+    new-instance v10, Lla/q;
 
-    invoke-direct {v15, v1}, Lja/q;-><init>(Ljava/util/Map;)V
+    invoke-direct {v10, v1}, Lla/q;-><init>(Ljava/util/Map;)V
 
     const/4 v6, 0x0
 
-    const/4 v11, 0x1
+    const/4 v7, 0x1
 
-    const/4 v12, 0x1
+    const/4 v8, 0x1
 
     .line 6
     sget v1, Lcom/supercell/titan/HelpshiftTitan;->j:I
@@ -226,7 +220,7 @@
     if-eqz v1, :cond_1
 
     .line 7
-    sget-object v2, Lja/e0$c;->e:Ljava/util/HashSet;
+    sget-object v2, Lla/e0$c;->e:Ljava/util/HashSet;
 
     .line 8
     invoke-virtual {v2, v1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
@@ -244,10 +238,10 @@
 
     .line 9
     :goto_0
-    sget-object v19, Lcom/supercell/titan/HelpshiftTitan;->d:Ljava/util/Map;
+    sget-object v11, Lcom/supercell/titan/HelpshiftTitan;->d:Ljava/util/HashMap;
 
     .line 10
-    sget-object v20, Lcom/supercell/titan/HelpshiftTitan;->f:Ljava/util/Map;
+    sget-object v12, Lcom/supercell/titan/HelpshiftTitan;->f:Ljava/util/HashMap;
 
     .line 11
     sget-object v0, Lcom/supercell/titan/HelpshiftTitan;->h:[Ljava/lang/String;
@@ -257,44 +251,28 @@
     if-lez v1, :cond_2
 
     .line 12
-    new-instance v1, Lja/d;
+    new-instance v1, Lla/d;
 
     const-string v2, "or"
 
-    invoke-direct {v1, v2, v0}, Lja/d;-><init>(Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-direct {v1, v2, v0}, Lla/d;-><init>(Ljava/lang/String;[Ljava/lang/String;)V
 
-    move-object v14, v1
+    move-object v9, v1
 
     goto :goto_1
 
     :cond_2
     const/4 v0, 0x0
 
-    move-object v14, v0
+    move-object v9, v0
 
     .line 13
     :goto_1
-    new-instance v0, Lja/a;
+    new-instance v0, Lla/a;
 
     move-object v4, v0
 
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
-
-    const/4 v13, 0x0
-
-    const/16 v16, 0x0
-
-    const/16 v17, 0x0
-
-    const/16 v18, 0x0
-
-    invoke-direct/range {v4 .. v20}, Lja/a;-><init>(Ljava/lang/Integer;ZZZLjava/lang/String;ZZZLjava/util/List;Lja/d;Lja/q;IZZLjava/util/Map;Ljava/util/Map;)V
+    invoke-direct/range {v4 .. v12}, Lla/a;-><init>(Ljava/lang/Integer;ZZZLla/d;Lla/q;Ljava/util/Map;Ljava/util/Map;)V
 
     return-object v0
 .end method
@@ -308,7 +286,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Lja/c0$b;->a:Lja/c0;
+    sget-object v0, Lla/c0$b;->a:Lla/c0;
 
     .line 3
     sput-object v0, Lcom/helpshift/CoreInternal;->a:Lcom/helpshift/a$a;
@@ -343,12 +321,12 @@
     sput-object v0, Lcom/supercell/titan/HelpshiftTitan;->h:[Ljava/lang/String;
 
     .line 4
-    sget-object v0, Lcom/supercell/titan/HelpshiftTitan;->d:Ljava/util/Map;
+    sget-object v0, Lcom/supercell/titan/HelpshiftTitan;->d:Ljava/util/HashMap;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
     .line 5
-    sget-object v0, Lcom/supercell/titan/HelpshiftTitan;->f:Ljava/util/Map;
+    sget-object v0, Lcom/supercell/titan/HelpshiftTitan;->f:Ljava/util/HashMap;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
@@ -364,23 +342,40 @@
 .method public static getNotificationCount()I
     .locals 1
 
-    .line 1
     sget v0, Lcom/supercell/titan/HelpshiftTitan;->a:I
 
     return v0
 .end method
 
 .method public static handlePushInternal(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 0
+    .locals 2
 
     .line 1
     :try_start_0
     invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->callInit()V
 
     .line 2
-    invoke-static {p0, p1}, Lcom/helpshift/CoreInternal;->a(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
 
     .line 3
+    :cond_0
+    sget-object v0, Lmb/a;->a:Lmb/b;
+
+    .line 4
+    new-instance v1, Lcom/helpshift/e;
+
+    invoke-direct {v1, p0, p1}, Lcom/helpshift/e;-><init>(Landroid/content/Context;Landroid/content/Intent;)V
+
+    invoke-virtual {v0, v1}, Lmb/b;->a(Ljava/lang/Runnable;)V
+
+    .line 5
+    :goto_0
     invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->requestNotificationCount()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -398,7 +393,6 @@
 .method public static isVisible()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/supercell/titan/HelpshiftTitan;->l:Z
 
     return v0
@@ -407,7 +401,6 @@
 .method public static leaveBreadcrumb(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
     move-result-object v0
@@ -424,7 +417,6 @@
 .method public static login(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
     move-result-object v0
@@ -486,7 +478,6 @@
 .method public static setContactUsMode(I)V
     .locals 0
 
-    .line 1
     sput p0, Lcom/supercell/titan/HelpshiftTitan;->j:I
 
     return-void
@@ -495,8 +486,7 @@
 .method public static setCustomIssueField(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
 
-    .line 1
-    sget-object v0, Lcom/supercell/titan/HelpshiftTitan;->d:Ljava/util/Map;
+    sget-object v0, Lcom/supercell/titan/HelpshiftTitan;->d:Ljava/util/HashMap;
 
     const/4 v1, 0x2
 
@@ -518,8 +508,7 @@
 .method public static setInitialUserMessage(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
-    sget-object v0, Lcom/supercell/titan/HelpshiftTitan;->f:Ljava/util/Map;
+    sget-object v0, Lcom/supercell/titan/HelpshiftTitan;->f:Ljava/util/HashMap;
 
     const-string v1, "initialUserMessage"
 
@@ -531,7 +520,6 @@
 .method public static setMetadata(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/HelpshiftTitan;->c:Ljava/util/HashMap;
 
     invoke-virtual {v0, p0, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -542,7 +530,6 @@
 .method public static setMetadataCallback()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
     move-result-object v0
@@ -606,7 +593,6 @@
 .method public static setSDKLanguage(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
     move-result-object v0
@@ -650,7 +636,7 @@
     .locals 3
 
     .line 1
-    invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->b()Lja/a;
+    invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->b()Lla/a;
 
     move-result-object v0
 
@@ -661,7 +647,7 @@
 
     new-instance v2, Lcom/supercell/titan/HelpshiftTitan$g;
 
-    invoke-direct {v2, v0}, Lcom/supercell/titan/HelpshiftTitan$g;-><init>(Lja/a;)V
+    invoke-direct {v2, v0}, Lcom/supercell/titan/HelpshiftTitan$g;-><init>(Lla/a;)V
 
     invoke-virtual {v1, v2}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 
@@ -672,7 +658,7 @@
     .locals 3
 
     .line 1
-    invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->b()Lja/a;
+    invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->b()Lla/a;
 
     move-result-object v0
 
@@ -683,7 +669,7 @@
 
     new-instance v2, Lcom/supercell/titan/HelpshiftTitan$h;
 
-    invoke-direct {v2, v0}, Lcom/supercell/titan/HelpshiftTitan$h;-><init>(Lja/a;)V
+    invoke-direct {v2, v0}, Lcom/supercell/titan/HelpshiftTitan$h;-><init>(Lla/a;)V
 
     invoke-virtual {v1, v2}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 
@@ -694,7 +680,7 @@
     .locals 3
 
     .line 1
-    invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->b()Lja/a;
+    invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->b()Lla/a;
 
     move-result-object v0
 
@@ -705,7 +691,7 @@
 
     new-instance v2, Lcom/supercell/titan/HelpshiftTitan$j;
 
-    invoke-direct {v2, p0, v0}, Lcom/supercell/titan/HelpshiftTitan$j;-><init>(Ljava/lang/String;Lja/a;)V
+    invoke-direct {v2, p0, v0}, Lcom/supercell/titan/HelpshiftTitan$j;-><init>(Ljava/lang/String;Lla/a;)V
 
     invoke-virtual {v1, v2}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 
@@ -716,7 +702,7 @@
     .locals 3
 
     .line 1
-    invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->b()Lja/a;
+    invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->b()Lla/a;
 
     move-result-object v0
 
@@ -727,7 +713,7 @@
 
     new-instance v2, Lcom/supercell/titan/HelpshiftTitan$i;
 
-    invoke-direct {v2, p0, v0}, Lcom/supercell/titan/HelpshiftTitan$i;-><init>(Ljava/lang/String;Lja/a;)V
+    invoke-direct {v2, p0, v0}, Lcom/supercell/titan/HelpshiftTitan$i;-><init>(Ljava/lang/String;Lla/a;)V
 
     invoke-virtual {v1, v2}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 

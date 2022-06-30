@@ -37,7 +37,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +59,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Message;->unknown:Ljava/util/Map;
 
     return-void
@@ -69,7 +67,6 @@
 .method public getFormatted()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Message;->formatted:Ljava/lang/String;
 
     return-object v0
@@ -78,7 +75,6 @@
 .method public getMessage()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Message;->message:Ljava/lang/String;
 
     return-object v0
@@ -95,7 +91,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Message;->params:Ljava/util/List;
 
     return-object v0
@@ -104,7 +99,6 @@
 .method public setFormatted(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Message;->formatted:Ljava/lang/String;
 
     return-void
@@ -113,7 +107,6 @@
 .method public setMessage(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Message;->message:Ljava/lang/String;
 
     return-void
@@ -130,7 +123,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newArrayList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1

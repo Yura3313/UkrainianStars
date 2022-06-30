@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field public static final g:Lcom/supercell/id/PresentationInfo$Connect;
+.field public static final f:Lcom/supercell/id/PresentationInfo$Connect;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/PresentationInfo$Connect;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/PresentationInfo$Connect;->g:Lcom/supercell/id/PresentationInfo$Connect;
+    sput-object v0, Lcom/supercell/id/PresentationInfo$Connect;->f:Lcom/supercell/id/PresentationInfo$Connect;
 
     .line 2
     new-instance v0, Lcom/supercell/id/PresentationInfo$Connect$a;
@@ -51,32 +51,21 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, v0}, Lcom/supercell/id/PresentationInfo;-><init>(Lle/g;)V
+    invoke-direct {p0}, Lcom/supercell/id/PresentationInfo;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    if-eqz p1, :cond_0
+    const-string p2, "dest"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "dest"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

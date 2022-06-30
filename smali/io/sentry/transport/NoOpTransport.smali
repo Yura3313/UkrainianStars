@@ -19,7 +19,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/transport/NoOpTransport;
 
     invoke-direct {v0}, Lio/sentry/transport/NoOpTransport;-><init>()V
@@ -32,7 +31,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public static getInstance()Lio/sentry/transport/NoOpTransport;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/transport/NoOpTransport;->instance:Lio/sentry/transport/NoOpTransport;
 
     return-object v0
@@ -66,7 +63,7 @@
     return-void
 .end method
 
-.method public synthetic send(Lio/sentry/SentryEnvelope;)V
+.method public final synthetic send(Lio/sentry/SentryEnvelope;)V
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/transport/b;->a(Lio/sentry/transport/ITransport;Lio/sentry/SentryEnvelope;)V

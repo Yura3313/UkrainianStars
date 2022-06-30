@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.client.IAdMetadataListener"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzgt;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -20,7 +19,7 @@
 
 
 # virtual methods
-.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final t7(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -38,12 +37,12 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzvd;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzvd;->g:Lo1/a;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzvd;->f:Lp1/a;
 
     if-eqz p1, :cond_0
 
     .line 3
-    invoke-virtual {p1}, Lo1/a;->c()V
+    invoke-virtual {p1}, Lp1/a;->c()V
 
     .line 4
     :cond_0

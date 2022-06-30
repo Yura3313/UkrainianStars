@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract Z1()V
+.method public abstract d2()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -29,15 +29,15 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
+
+.field public g:I
 
 .field public h:I
 
-.field public i:I
+.field public i:Z
 
-.field public j:Z
-
-.field public final synthetic k:Lm/f;
+.field public final synthetic j:Lm/f;
 
 
 # direct methods
@@ -45,37 +45,36 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lm/f$a;->k:Lm/f;
+    iput-object p1, p0, Lm/f$a;->j:Lm/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lm/f$a;->j:Z
+    iput-boolean v0, p0, Lm/f$a;->i:Z
 
     .line 3
-    iput p2, p0, Lm/f$a;->g:I
+    iput p2, p0, Lm/f$a;->f:I
 
     .line 4
     invoke-virtual {p1}, Lm/f;->d()I
 
     move-result p1
 
-    iput p1, p0, Lm/f$a;->h:I
+    iput p1, p0, Lm/f$a;->g:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public hasNext()Z
+.method public final hasNext()Z
     .locals 2
 
-    .line 1
-    iget v0, p0, Lm/f$a;->i:I
+    iget v0, p0, Lm/f$a;->h:I
 
-    iget v1, p0, Lm/f$a;->h:I
+    iget v1, p0, Lm/f$a;->g:I
 
     if-ge v0, v1, :cond_0
 
@@ -90,7 +89,7 @@
     return v0
 .end method
 
-.method public next()Ljava/lang/Object;
+.method public final next()Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -106,27 +105,27 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lm/f$a;->k:Lm/f;
+    iget-object v0, p0, Lm/f$a;->j:Lm/f;
 
-    iget v1, p0, Lm/f$a;->i:I
+    iget v1, p0, Lm/f$a;->h:I
 
-    iget v2, p0, Lm/f$a;->g:I
+    iget v2, p0, Lm/f$a;->f:I
 
     invoke-virtual {v0, v1, v2}, Lm/f;->b(II)Ljava/lang/Object;
 
     move-result-object v0
 
     .line 3
-    iget v1, p0, Lm/f$a;->i:I
+    iget v1, p0, Lm/f$a;->h:I
 
     const/4 v2, 0x1
 
     add-int/2addr v1, v2
 
-    iput v1, p0, Lm/f$a;->i:I
+    iput v1, p0, Lm/f$a;->h:I
 
     .line 4
-    iput-boolean v2, p0, Lm/f$a;->j:Z
+    iput-boolean v2, p0, Lm/f$a;->i:Z
 
     return-object v0
 
@@ -139,35 +138,35 @@
     throw v0
 .end method
 
-.method public remove()V
+.method public final remove()V
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lm/f$a;->j:Z
+    iget-boolean v0, p0, Lm/f$a;->i:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget v0, p0, Lm/f$a;->i:I
+    iget v0, p0, Lm/f$a;->h:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lm/f$a;->i:I
+    iput v0, p0, Lm/f$a;->h:I
 
     .line 3
-    iget v1, p0, Lm/f$a;->h:I
+    iget v1, p0, Lm/f$a;->g:I
 
     add-int/lit8 v1, v1, -0x1
 
-    iput v1, p0, Lm/f$a;->h:I
+    iput v1, p0, Lm/f$a;->g:I
 
     const/4 v1, 0x0
 
     .line 4
-    iput-boolean v1, p0, Lm/f$a;->j:Z
+    iput-boolean v1, p0, Lm/f$a;->i:Z
 
     .line 5
-    iget-object v1, p0, Lm/f$a;->k:Lm/f;
+    iget-object v1, p0, Lm/f$a;->j:Lm/f;
 
     invoke-virtual {v1, v0}, Lm/f;->h(I)V
 

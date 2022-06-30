@@ -10,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -18,25 +17,25 @@
 
 
 # virtual methods
-.method public a(Landroidx/transition/Transition;)V
+.method public a()V
     .locals 0
 
     return-void
 .end method
 
-.method public b(Landroidx/transition/Transition;)V
+.method public b()V
     .locals 0
 
     return-void
 .end method
 
-.method public d(Landroidx/transition/Transition;)V
+.method public d()V
     .locals 0
 
     return-void
 .end method
 
-.method public e(Landroidx/transition/Transition;)V
+.method public e()V
     .locals 0
 
     return-void

@@ -44,7 +44,6 @@
 .method public onCloseWindow(Landroid/webkit/WebView;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0, p1}, Lcom/kakaogame/web/WebViewContainer;->onCloseWindow(Landroid/webkit/WebView;)V
@@ -55,7 +54,6 @@
 .method public onConsoleMessage(Landroid/webkit/ConsoleMessage;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0, p1}, Lcom/kakaogame/web/WebViewContainer;->onConsoleMessage(Landroid/webkit/ConsoleMessage;)Z
@@ -84,6 +82,7 @@
     :cond_0
     const-string p2, "false"
 
+    .line 2
     :goto_0
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -95,7 +94,7 @@
 
     invoke-static {v0, p2}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     invoke-virtual {p1}, Landroid/webkit/WebView;->getHandler()Landroid/os/Handler;
 
     move-result-object p2
@@ -104,10 +103,10 @@
 
     move-result-object p2
 
-    .line 3
+    .line 4
     invoke-virtual {p1, p2}, Landroid/webkit/WebView;->requestFocusNodeHref(Landroid/os/Message;)V
 
-    .line 4
+    .line 5
     invoke-virtual {p2}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
     move-result-object p2
@@ -118,7 +117,7 @@
 
     move-result-object p2
 
-    .line 5
+    .line 6
     invoke-static {p3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p3
@@ -127,6 +126,7 @@
 
     const-string p2, "null"
 
+    .line 7
     :cond_1
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -136,24 +136,24 @@
 
     invoke-static {v0, p2}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
-    invoke-virtual {p1}, Landroid/webkit/WebView;->removeAllViews()V
+    .line 8
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->removeAllViews()V
 
-    .line 7
+    .line 9
     new-instance p2, Landroid/webkit/WebView;
 
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
     invoke-direct {p2, p1}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V
 
-    .line 8
+    .line 10
     iget-object p1, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-static {p1, p2}, Lcom/kakaogame/web/WebViewContainer;->access$200(Lcom/kakaogame/web/WebViewContainer;Landroid/webkit/WebView;)V
 
-    .line 9
+    .line 11
     new-instance p1, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;
 
     iget-object p3, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
@@ -162,14 +162,14 @@
 
     invoke-virtual {p2, p1}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
 
-    .line 10
+    .line 12
     new-instance p1, Landroid/webkit/WebViewClient;
 
     invoke-direct {p1}, Landroid/webkit/WebViewClient;-><init>()V
 
     invoke-virtual {p2, p1}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
-    .line 11
+    .line 13
     new-instance p1, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 p3, -0x1
@@ -178,29 +178,29 @@
 
     invoke-virtual {p2, p1}, Landroid/webkit/WebView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 12
+    .line 14
     iget-object p1, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     iget-object p1, p1, Lcom/kakaogame/web/WebViewContainer;->webView:Landroid/webkit/WebView;
 
-    invoke-virtual {p1, p2}, Landroid/webkit/WebView;->addView(Landroid/view/View;)V
+    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    .line 13
+    .line 15
     iget-object p1, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     iget-object p1, p1, Lcom/kakaogame/web/WebViewContainer;->innerPopupViews:Ljava/util/Stack;
 
     invoke-virtual {p1, p2}, Ljava/util/Stack;->push(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 14
+    .line 16
     iget-object p1, p4, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p1, Landroid/webkit/WebView$WebViewTransport;
 
-    .line 15
+    .line 17
     invoke-virtual {p1, p2}, Landroid/webkit/WebView$WebViewTransport;->setWebView(Landroid/webkit/WebView;)V
 
-    .line 16
+    .line 18
     invoke-virtual {p4}, Landroid/os/Message;->sendToTarget()V
 
     const/4 p1, 0x1
@@ -213,7 +213,6 @@
 
     move-object v0, p0
 
-    .line 1
     iget-object v1, v0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     move-object v2, p1
@@ -236,7 +235,6 @@
 .method public onGeolocationPermissionsHidePrompt()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0}, Lcom/kakaogame/web/WebViewContainer;->onGeolocationPermissionsHidePrompt()V
@@ -247,7 +245,6 @@
 .method public onGeolocationPermissionsShowPrompt(Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0, p1, p2}, Lcom/kakaogame/web/WebViewContainer;->onGeolocationPermissionsShowPrompt(Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V
@@ -272,7 +269,6 @@
 .method public onJsAlert(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/kakaogame/web/WebViewContainer;->onJsAlert(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z
@@ -285,7 +281,6 @@
 .method public onJsBeforeUnload(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/kakaogame/web/WebViewContainer;->onJsBeforeUnload(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z
@@ -298,7 +293,6 @@
 .method public onJsConfirm(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/kakaogame/web/WebViewContainer;->onJsConfirm(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z
@@ -311,7 +305,6 @@
 .method public onJsPrompt(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsPromptResult;)Z
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     move-object v1, p1
@@ -334,7 +327,6 @@
 .method public onJsTimeout()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0}, Lcom/kakaogame/web/WebViewContainer;->onJsTimeout()Z
@@ -347,7 +339,6 @@
 .method public onProgressChanged(Landroid/webkit/WebView;I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0, p1, p2}, Lcom/kakaogame/web/WebViewContainer;->onProgressChanged(Landroid/webkit/WebView;I)V
@@ -358,7 +349,6 @@
 .method public onReachedMaxAppCacheSize(JJLandroid/webkit/WebStorage$QuotaUpdater;)V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     move-wide v1, p1
@@ -375,7 +365,6 @@
 .method public onReceivedIcon(Landroid/webkit/WebView;Landroid/graphics/Bitmap;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0, p1, p2}, Lcom/kakaogame/web/WebViewContainer;->onReceivedIcon(Landroid/webkit/WebView;Landroid/graphics/Bitmap;)V
@@ -386,7 +375,6 @@
 .method public onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0, p1, p2}, Lcom/kakaogame/web/WebViewContainer;->onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
@@ -397,7 +385,6 @@
 .method public onReceivedTouchIconUrl(Landroid/webkit/WebView;Ljava/lang/String;Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/kakaogame/web/WebViewContainer;->onReceivedTouchIconUrl(Landroid/webkit/WebView;Ljava/lang/String;Z)V
@@ -408,7 +395,6 @@
 .method public onRequestFocus(Landroid/webkit/WebView;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-virtual {v0, p1}, Lcom/kakaogame/web/WebViewContainer;->onRequestFocus(Landroid/webkit/WebView;)V
@@ -477,6 +463,7 @@
 
     move-result-object p1
 
+    .line 2
     invoke-virtual {p3}, Landroid/webkit/WebChromeClient$FileChooserParams;->getAcceptTypes()[Ljava/lang/String;
 
     move-result-object v0
@@ -501,17 +488,17 @@
 
     invoke-static {v0, p1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 3
     iget-object p1, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-static {p1}, Lcom/kakaogame/web/WebViewContainer;->access$300(Lcom/kakaogame/web/WebViewContainer;)V
 
-    .line 3
+    .line 4
     iget-object p1, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     iput-object p2, p1, Lcom/kakaogame/web/WebViewContainer;->uploadMessages:Landroid/webkit/ValueCallback;
 
-    .line 4
+    .line 5
     invoke-virtual {p3}, Landroid/webkit/WebChromeClient$FileChooserParams;->createIntent()Landroid/content/Intent;
 
     move-result-object p2
@@ -542,20 +529,20 @@
 
     const-string v1, "openFileChooser1"
 
-    .line 1
+    .line 11
     invoke-static {v0, v1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 12
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-static {v0}, Lcom/kakaogame/web/WebViewContainer;->access$300(Lcom/kakaogame/web/WebViewContainer;)V
 
-    .line 3
+    .line 13
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     iput-object p1, v0, Lcom/kakaogame/web/WebViewContainer;->uploadMessage:Landroid/webkit/ValueCallback;
 
-    .line 4
+    .line 14
     invoke-static {v0}, Lcom/kakaogame/web/WebViewContainer;->access$400(Lcom/kakaogame/web/WebViewContainer;)V
 
     return-void
@@ -578,20 +565,20 @@
 
     const-string v1, "WebViewContainer"
 
-    .line 5
-    invoke-static {v0, p2, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .line 1
+    invoke-static {v0, p2, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
+    .line 2
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-static {v0}, Lcom/kakaogame/web/WebViewContainer;->access$300(Lcom/kakaogame/web/WebViewContainer;)V
 
-    .line 7
+    .line 3
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     iput-object p1, v0, Lcom/kakaogame/web/WebViewContainer;->uploadMessage:Landroid/webkit/ValueCallback;
 
-    .line 8
+    .line 4
     invoke-static {v0, p2}, Lcom/kakaogame/web/WebViewContainer;->access$500(Lcom/kakaogame/web/WebViewContainer;Ljava/lang/String;)V
 
     return-void
@@ -611,7 +598,7 @@
         }
     .end annotation
 
-    .line 9
+    .line 15
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -636,17 +623,17 @@
 
     invoke-static {v0, p3}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10
+    .line 16
     iget-object p3, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     invoke-static {p3}, Lcom/kakaogame/web/WebViewContainer;->access$300(Lcom/kakaogame/web/WebViewContainer;)V
 
-    .line 11
+    .line 17
     iget-object p3, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;
 
     iput-object p1, p3, Lcom/kakaogame/web/WebViewContainer;->uploadMessage:Landroid/webkit/ValueCallback;
 
-    .line 12
+    .line 18
     invoke-static {p3, p2}, Lcom/kakaogame/web/WebViewContainer;->access$500(Lcom/kakaogame/web/WebViewContainer;Ljava/lang/String;)V
 
     return-void

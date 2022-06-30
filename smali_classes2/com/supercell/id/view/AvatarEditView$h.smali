@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/view/AvatarEditView$h;
-.super Lle/j;
+.super Lse/h;
 .source "AvatarEditView.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
@@ -18,46 +18,49 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
+        "Lse/h;",
+        "Lre/l<",
         "Landroid/graphics/Bitmap;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Ljava/lang/ref/WeakReference;
+.field public final synthetic f:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$h;->g:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$h;->f:Ljava/lang/ref/WeakReference;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
     check-cast p1, Landroid/graphics/Bitmap;
 
-    if-eqz p1, :cond_1
+    const-string v0, "bitmap"
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView$h;->g:Ljava/lang/ref/WeakReference;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    .line 3
+    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView$h;->f:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -65,22 +68,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 4
     invoke-virtual {v0, p1}, Lcom/supercell/id/view/AvatarEditView;->setAvatarBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 4
+    .line 5
     :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
-
-    :cond_1
-    const-string p1, "bitmap"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

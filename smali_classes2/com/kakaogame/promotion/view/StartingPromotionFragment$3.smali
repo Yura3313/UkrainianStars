@@ -35,7 +35,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/view/StartingPromotionFragment;Lcom/kakaogame/ui/CustomProgressDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment$3;->this$0:Lcom/kakaogame/promotion/view/StartingPromotionFragment;
 
     iput-object p2, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment$3;->val$progress:Lcom/kakaogame/ui/CustomProgressDialog;
@@ -204,7 +203,7 @@
     :cond_2
     iget-object v0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment$3;->this$0:Lcom/kakaogame/promotion/view/StartingPromotionFragment;
 
-    invoke-virtual {v0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -219,7 +218,7 @@
     .line 11
     iget-object v0, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment$3;->this$0:Lcom/kakaogame/promotion/view/StartingPromotionFragment;
 
-    invoke-virtual {v0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

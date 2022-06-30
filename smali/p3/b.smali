@@ -1,23 +1,37 @@
-.class public Lp3/b;
-.super Landroid/os/Handler;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.class public final Lp3/b;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-base@@17.5.0"
+
+
+# static fields
+.field public static final a:Lcom/google/android/gms/common/Feature;
+
+.field public static final b:[Lcom/google/android/gms/common/Feature;
 
 
 # direct methods
-.method public constructor <init>(Landroid/os/Looper;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    new-instance v0, Lcom/google/android/gms/common/Feature;
 
-    return-void
-.end method
+    const-string v1, "CLIENT_TELEMETRY"
 
-.method public constructor <init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
-    .locals 0
+    invoke-direct {v0, v1}, Lcom/google/android/gms/common/Feature;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lp3/b;->a:Lcom/google/android/gms/common/Feature;
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Lcom/google/android/gms/common/Feature;
+
+    const/4 v2, 0x0
+
+    aput-object v0, v1, v2
 
     .line 2
-    invoke-direct {p0, p1, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
+    sput-object v1, Lp3/b;->b:[Lcom/google/android/gms/common/Feature;
 
     return-void
 .end method

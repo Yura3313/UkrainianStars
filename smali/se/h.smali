@@ -1,80 +1,66 @@
-.class public final Lse/h;
-.super Lse/q;
-.source "CompletedExceptionally.kt"
+.class public abstract Lse/h;
+.super Ljava/lang/Object;
+.source "Lambda.kt"
+
+# interfaces
+.implements Lse/f;
+.implements Ljava/io/Serializable;
 
 
-# static fields
-.field public static final c:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<R:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lse/f<",
+        "TR;>;",
+        "Ljava/io/Serializable;"
+    }
+.end annotation
 
 
 # instance fields
-.field private volatile _resumed:I
+.field private final arity:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(I)V
+    .locals 0
 
-    const-class v0, Lse/h;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v1, "_resumed"
-
-    invoke-static {v0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
-
-    move-result-object v0
-
-    sput-object v0, Lse/h;->c:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+    iput p1, p0, Lse/h;->arity:I
 
     return-void
 .end method
 
-.method public constructor <init>(Lde/d;Ljava/lang/Throwable;Z)V
+
+# virtual methods
+.method public getArity()I
+    .locals 1
+
+    iget v0, p0, Lse/h;->arity:I
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lde/d<",
-            "*>;",
-            "Ljava/lang/Throwable;",
-            "Z)V"
-        }
-    .end annotation
-
-    if-eqz p2, :cond_0
-
-    goto :goto_0
 
     .line 1
-    :cond_0
-    new-instance p2, Ljava/util/concurrent/CancellationException;
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "Continuation "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string p1, " was cancelled normally"
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
-
-    :goto_0
-    invoke-direct {p0, p2, p3}, Lse/q;-><init>(Ljava/lang/Throwable;Z)V
-
-    const/4 p1, 0x0
+    sget-object v0, Lse/r;->a:Lse/s;
 
     .line 2
-    iput p1, p0, Lse/h;->_resumed:I
+    invoke-virtual {v0, p0}, Lse/s;->b(Lse/f;)Ljava/lang/String;
 
-    return-void
+    move-result-object v0
+
+    const-string v1, "Reflection.renderLambdaToString(this)"
+
+    .line 3
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object v0
 .end method

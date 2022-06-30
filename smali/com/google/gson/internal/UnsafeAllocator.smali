@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -50,10 +49,12 @@
 
     const-string v1, "Abstract class can\'t be instantiated! Class name: "
 
+    .line 5
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 6
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -68,16 +69,18 @@
 
     throw v0
 
-    .line 5
+    .line 7
     :cond_1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "Interface can\'t be instantiated! Interface name: "
 
+    .line 8
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 9
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -120,7 +123,7 @@
     move-result-object v5
 
     .line 3
-    invoke-virtual {v5, v3}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v5, v3}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 4
     invoke-virtual {v5, v1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -170,7 +173,7 @@
     move-result-object v5
 
     .line 9
-    invoke-virtual {v5, v3}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v5, v3}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     new-array v6, v3, [Ljava/lang/Object;
 
@@ -208,7 +211,7 @@
     move-result-object v5
 
     .line 13
-    invoke-virtual {v5, v3}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v5, v3}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 14
     new-instance v6, Lcom/google/gson/internal/UnsafeAllocator$2;
@@ -240,7 +243,7 @@
     move-result-object v0
 
     .line 17
-    invoke-virtual {v0, v3}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v0, v3}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 18
     new-instance v1, Lcom/google/gson/internal/UnsafeAllocator$3;

@@ -1,119 +1,167 @@
-.class public final Lxe/k;
-.super Lxe/c$a;
-.source "DefaultCallAdapterFactory.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lxe/k$b;
-    }
-.end annotation
-
-
-# instance fields
-.field public final a:Ljava/util/concurrent/Executor;
-    .annotation runtime Ljavax/annotation/Nullable;
-    .end annotation
-.end field
+.class public Lxe/k;
+.super Lxe/h;
+.source "_Sequences.kt"
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;)V
-    .locals 0
-    .param p1    # Ljava/util/concurrent/Executor;
-        .annotation runtime Ljavax/annotation/Nullable;
-        .end annotation
-    .end param
+.method public static e(Lxe/d;Ljava/lang/CharSequence;)Ljava/lang/String;
+    .locals 7
 
-    .line 1
-    invoke-direct {p0}, Lxe/c$a;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lxe/k;->a:Ljava/util/concurrent/Executor;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lxe/b0;)Lxe/c;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/reflect/Type;",
-            "[",
-            "Ljava/lang/annotation/Annotation;",
-            "Lxe/b0;",
-            ")",
-            "Lxe/c<",
-            "**>;"
-        }
-    .end annotation
-
-    .annotation runtime Ljavax/annotation/Nullable;
-    .end annotation
-
-    .line 1
-    invoke-static {p1}, Lxe/f0;->g(Ljava/lang/reflect/Type;)Ljava/lang/Class;
-
-    move-result-object p3
-
-    .line 2
-    const-class v0, Lxe/b;
+    const-string v0, ""
 
     const/4 v1, 0x0
 
-    if-eq p3, v0, :cond_0
+    const-string v2, "separator"
 
-    return-object v1
+    .line 1
+    invoke-static {p1, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 3
-    :cond_0
-    instance-of p3, p1, Ljava/lang/reflect/ParameterizedType;
-
-    if-eqz p3, :cond_2
-
-    const/4 p3, 0x0
+    invoke-interface {v2, v0}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     .line 4
-    check-cast p1, Ljava/lang/reflect/ParameterizedType;
-
-    invoke-static {p3, p1}, Lxe/f0;->f(ILjava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/Type;
-
-    move-result-object p1
+    check-cast p0, Lxe/l;
 
     .line 5
-    const-class p3, Lxe/d0;
-
-    invoke-static {p2, p3}, Lxe/f0;->j([Ljava/lang/annotation/Annotation;Ljava/lang/Class;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_1
-
-    goto :goto_0
+    iget-object v3, p0, Lxe/l;->a:Lxe/d;
 
     .line 6
-    :cond_1
-    iget-object v1, p0, Lxe/k;->a:Ljava/util/concurrent/Executor;
+    invoke-interface {v3}, Lxe/d;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    const/4 v4, 0x0
 
     .line 7
     :goto_0
-    new-instance p2, Lxe/k$a;
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
-    invoke-direct {p2, p0, p1, v1}, Lxe/k$a;-><init>(Lxe/k;Ljava/lang/reflect/Type;Ljava/util/concurrent/Executor;)V
+    move-result v5
 
-    return-object p2
+    if-eqz v5, :cond_1
 
     .line 8
-    :cond_2
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    iget-object v5, p0, Lxe/l;->b:Lre/l;
 
-    const-string p2, "Call return type must be parameterized as Call<Foo> or Call<? extends Foo>"
+    .line 9
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    move-result-object v6
 
-    throw p1
+    invoke-interface {v5, v6}, Lre/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    const/4 v6, 0x1
+
+    add-int/2addr v4, v6
+
+    if-le v4, v6, :cond_0
+
+    .line 10
+    invoke-interface {v2, p1}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    .line 11
+    :cond_0
+    invoke-static {v2, v5, v1}, Lcom/helpshift/util/r;->a(Ljava/lang/Appendable;Ljava/lang/Object;Lre/l;)V
+
+    goto :goto_0
+
+    .line 12
+    :cond_1
+    invoke-interface {v2, v0}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    .line 13
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "joinTo(StringBuilder(), \u2026ed, transform).toString()"
+
+    invoke-static {p0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public static final f(Lxe/d;Lre/l;)Lxe/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "R:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lxe/d<",
+            "+TT;>;",
+            "Lre/l<",
+            "-TT;+TR;>;)",
+            "Lxe/d<",
+            "TR;>;"
+        }
+    .end annotation
+
+    const-string v0, "transform"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lxe/l;
+
+    invoke-direct {v0, p0, p1}, Lxe/l;-><init>(Lxe/d;Lre/l;)V
+
+    return-object v0
+.end method
+
+.method public static final g(Lxe/d;)Ljava/util/List;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lxe/d<",
+            "+TT;>;)",
+            "Ljava/util/List<",
+            "TT;>;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 2
+    invoke-interface {p0}, Lxe/d;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 3
+    invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    invoke-static {v0}, Lcom/android/billingclient/api/z;->l(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
 .end method

@@ -1,21 +1,11 @@
-.class public interface abstract annotation Lze/l;
+.class public interface abstract Lze/l;
 .super Ljava/lang/Object;
-.source "Multipart.java"
+.source "Job.kt"
 
 # interfaces
-.implements Ljava/lang/annotation/Annotation;
+.implements Lze/b1;
 
 
-# annotations
-.annotation runtime Ljava/lang/annotation/Documented;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Target;
-    value = {
-        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;
-    }
-.end annotation
+# virtual methods
+.method public abstract j(Lze/m1;)V
+.end method

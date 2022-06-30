@@ -258,7 +258,6 @@
 .method private getActivityName(Landroid/app/Activity;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -379,7 +378,6 @@
 .method private isPerformanceEnabled(Lio/sentry/android/core/SentryAndroidOptions;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Lio/sentry/SentryOptions;->isTracingEnabled()Z
 
     move-result v0
@@ -406,7 +404,6 @@
 .method private isRunningTransaction(Landroid/app/Activity;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/ActivityLifecycleIntegration;->activitiesWithOngoingTransactions:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->containsKey(Ljava/lang/Object;)Z
@@ -465,7 +462,6 @@
 .method private synthetic lambda$startTracing$0(Landroid/app/Activity;Lio/sentry/ITransaction;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/ActivityLifecycleIntegration;->activityFramesTracker:Lio/sentry/android/core/ActivityFramesTracker;
 
     invoke-interface {p2}, Lio/sentry/ITransaction;->getEventId()Lio/sentry/protocol/SentryId;
@@ -480,7 +476,6 @@
 .method private synthetic lambda$startTracing$1(Landroid/app/Activity;Lio/sentry/ITransaction;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/ActivityLifecycleIntegration;->activityFramesTracker:Lio/sentry/android/core/ActivityFramesTracker;
 
     invoke-interface {p2}, Lio/sentry/ITransaction;->getEventId()Lio/sentry/protocol/SentryId;
@@ -495,7 +490,6 @@
 .method private synthetic lambda$startTracing$2(Lio/sentry/ITransaction;Lio/sentry/Scope;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p2, p1}, Lio/sentry/android/core/ActivityLifecycleIntegration;->applyScope(Lio/sentry/Scope;Lio/sentry/ITransaction;)V
 
     return-void
@@ -755,7 +749,6 @@
     .annotation build Lorg/jetbrains/annotations/VisibleForTesting;
     .end annotation
 
-    .line 1
     new-instance v0, Lio/sentry/android/core/b;
 
     invoke-direct {v0, p0, p1, p2}, Lio/sentry/android/core/b;-><init>(Lio/sentry/android/core/ActivityLifecycleIntegration;Lio/sentry/Scope;Lio/sentry/ITransaction;)V
@@ -819,7 +812,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/ActivityLifecycleIntegration;->activitiesWithOngoingTransactions:Ljava/util/WeakHashMap;
 
     return-object v0
@@ -828,7 +820,6 @@
 .method public getAppStartSpan()Lio/sentry/ISpan;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/ActivityLifecycleIntegration;->appStartSpan:Lio/sentry/ISpan;
 
     return-object v0

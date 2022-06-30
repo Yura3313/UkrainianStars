@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/imageview/ShapeableImageView$a;
+.class public final Lcom/google/android/material/imageview/ShapeableImageView$a;
 .super Landroid/view/ViewOutlineProvider;
 .source "ShapeableImageView.java"
 
@@ -45,14 +45,14 @@
 
 
 # virtual methods
-.method public getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
+.method public final getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
     .locals 1
 
     .line 1
     iget-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView$a;->b:Lcom/google/android/material/imageview/ShapeableImageView;
 
     .line 2
-    iget-object v0, p1, Lcom/google/android/material/imageview/ShapeableImageView;->n:Lr4/k;
+    iget-object v0, p1, Lcom/google/android/material/imageview/ShapeableImageView;->m:Ls4/k;
 
     if-nez v0, :cond_0
 
@@ -60,7 +60,7 @@
 
     .line 3
     :cond_0
-    iget-object p1, p1, Lcom/google/android/material/imageview/ShapeableImageView;->h:Landroid/graphics/RectF;
+    iget-object p1, p1, Lcom/google/android/material/imageview/ShapeableImageView;->g:Landroid/graphics/RectF;
 
     .line 4
     iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView$a;->a:Landroid/graphics/Rect;
@@ -71,7 +71,7 @@
     iget-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView$a;->b:Lcom/google/android/material/imageview/ShapeableImageView;
 
     .line 6
-    iget-object p1, p1, Lcom/google/android/material/imageview/ShapeableImageView;->q:Lr4/g;
+    iget-object p1, p1, Lcom/google/android/material/imageview/ShapeableImageView;->p:Ls4/g;
 
     .line 7
     iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView$a;->a:Landroid/graphics/Rect;
@@ -82,10 +82,10 @@
     iget-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView$a;->b:Lcom/google/android/material/imageview/ShapeableImageView;
 
     .line 9
-    iget-object p1, p1, Lcom/google/android/material/imageview/ShapeableImageView;->q:Lr4/g;
+    iget-object p1, p1, Lcom/google/android/material/imageview/ShapeableImageView;->p:Ls4/g;
 
     .line 10
-    invoke-virtual {p1, p2}, Lr4/g;->getOutline(Landroid/graphics/Outline;)V
+    invoke-virtual {p1, p2}, Ls4/g;->getOutline(Landroid/graphics/Outline;)V
 
     return-void
 .end method

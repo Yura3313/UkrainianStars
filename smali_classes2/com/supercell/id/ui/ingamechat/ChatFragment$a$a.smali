@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingamechat/ChatFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
+    value = Lcom/supercell/id/ui/ingamechat/ChatFragment$a;->n(Lae/c2$a;ILae/b2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
+.field public final synthetic f:Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingamechat/ChatFragment$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$a$a;->g:Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$a$a;->f:Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,43 +35,39 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 7
+    .locals 4
 
     .line 1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object p1
 
     .line 2
-    iget-object v0, p1, Lvd/r;->m:Lcom/supercell/titan/h;
+    iget-object p1, p1, Lae/u;->m:La5/d0;
 
-    const/4 v4, 0x0
+    const-string v0, "Chat - Messages"
 
-    const/4 v5, 0x0
+    const-string v1, "click"
 
-    const/16 v6, 0x18
+    const/4 v2, 0x0
 
-    const-string v1, "Chat - Messages"
-
-    const-string v2, "click"
-
-    const-string v3, "Retry"
+    const/16 v3, 0x18
 
     .line 3
-    invoke-static/range {v0 .. v6}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static {p1, v0, v1, v2, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
-    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$a$a;->g:Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$a$a;->f:Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
 
     .line 5
-    iget-object p1, p1, Lvd/q;->f:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
 
     .line 6
     check-cast p1, Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
-    invoke-virtual {p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->p1()V
+    invoke-virtual {p1}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->g1()V
 
     return-void
 .end method

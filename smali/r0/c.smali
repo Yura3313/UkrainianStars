@@ -1,4 +1,4 @@
-.class public Lr0/c;
+.class public final Lr0/c;
 .super Ljava/lang/Object;
 .source "MultiDex.java"
 
@@ -69,14 +69,14 @@
     iput-object p1, p0, Lr0/c;->a:Ljava/lang/reflect/Constructor;
 
     .line 4
-    invoke-virtual {p1, v2}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
+    invoke-virtual {p1, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/io/File;Ldalvik/system/DexFile;)Ljava/lang/Object;
+.method public final a(Ljava/io/File;Ldalvik/system/DexFile;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -87,7 +87,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lr0/c;->a:Ljava/lang/reflect/Constructor;
 
     const/4 v1, 0x3

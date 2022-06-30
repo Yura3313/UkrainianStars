@@ -608,7 +608,6 @@
 .method private static intCount(Lokio/Buffer;)I
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Lokio/Buffer;->size()J
 
     move-result-wide v0
@@ -973,7 +972,6 @@
 .method public final size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/Options;->byteStrings:[Lokio/ByteString;
 
     array-length v0, v0

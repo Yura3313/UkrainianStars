@@ -23,7 +23,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,7 +30,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 2
 
     .line 1
@@ -147,7 +146,7 @@
     throw v0
 .end method
 
-.method public b(Lb0/a$a;)V
+.method public final b(Lb0/a$a;)V
     .locals 1
 
     .line 1

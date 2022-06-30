@@ -1,4 +1,4 @@
-.class public Lv0/f0;
+.class public final Lv0/f0;
 .super Ljava/lang/Object;
 .source "WindowIdApi18.java"
 
@@ -29,10 +29,9 @@
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lv0/f0;
 
     if-eqz v0, :cond_0
@@ -60,10 +59,9 @@
     return p1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lv0/f0;->a:Landroid/view/WindowId;
 
     invoke-virtual {v0}, Landroid/view/WindowId;->hashCode()I

@@ -7,52 +7,55 @@
 .method private static final getAuthApi()Lcom/kakao/sdk/partner/auth/PartnerAuthApi;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/network/ApiFactory;->INSTANCE:Lcom/kakao/sdk/network/ApiFactory;
 
-    invoke-static {v0}, Lcom/kakao/sdk/auth/network/ApiFactoryKt;->getKauth(Lcom/kakao/sdk/network/ApiFactory;)Lxe/b0;
+    invoke-static {v0}, Lcom/kakao/sdk/auth/network/ApiFactoryKt;->getKauth(Lcom/kakao/sdk/network/ApiFactory;)Lef/d0;
 
     move-result-object v0
 
     const-class v1, Lcom/kakao/sdk/partner/auth/PartnerAuthApi;
 
-    invoke-virtual {v0, v1}, Lxe/b0;->b(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lef/d0;->b(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
     const-string v1, "ApiFactory.kauth.create(\u2026rtnerAuthApi::class.java)"
 
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Lcom/kakao/sdk/partner/auth/PartnerAuthApi;
 
     return-object v0
 .end method
 
-.method public static final issueAccessToken(Lcom/kakao/sdk/auth/AuthApiClient;Ljava/lang/String;Lke/p;)V
+.method public static final issueAccessToken(Lcom/kakao/sdk/auth/AuthApiClient;Ljava/lang/String;Lre/p;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/kakao/sdk/auth/AuthApiClient;",
             "Ljava/lang/String;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "$this$issueAccessToken"
 
-    if-eqz p0, :cond_2
+    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p1, :cond_1
+    const-string v0, "groupRefreshToken"
 
-    if-eqz p2, :cond_0
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "callback"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-static {}, Lcom/kakao/sdk/partner/auth/AuthApiClientKt;->getAuthApi()Lcom/kakao/sdk/partner/auth/PartnerAuthApi;
@@ -95,43 +98,21 @@
     move-object v2, p1
 
     .line 5
-    invoke-static/range {v1 .. v8}, Lcom/kakao/sdk/partner/auth/PartnerAuthApi$DefaultImpls;->issueAccessToken$default(Lcom/kakao/sdk/partner/auth/PartnerAuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lxe/b;
+    invoke-static/range {v1 .. v8}, Lcom/kakao/sdk/partner/auth/PartnerAuthApi$DefaultImpls;->issueAccessToken$default(Lcom/kakao/sdk/partner/auth/PartnerAuthApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lef/b;
 
     move-result-object p1
 
     .line 6
     new-instance v0, Lcom/kakao/sdk/partner/auth/AuthApiClientKt$issueAccessToken$1;
 
-    invoke-direct {v0, p0, p2}, Lcom/kakao/sdk/partner/auth/AuthApiClientKt$issueAccessToken$1;-><init>(Lcom/kakao/sdk/auth/AuthApiClient;Lke/p;)V
+    invoke-direct {v0, p0, p2}, Lcom/kakao/sdk/partner/auth/AuthApiClientKt$issueAccessToken$1;-><init>(Lcom/kakao/sdk/auth/AuthApiClient;Lre/p;)V
 
-    invoke-interface {p1, v0}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, v0}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p0, "callback"
-
-    .line 7
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p0, "groupRefreshToken"
-
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p0, "$this$issueAccessToken"
-
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public static final verifyAge(Lcom/kakao/sdk/auth/AuthApiClient;Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lke/l;)V
+.method public static final verifyAge(Lcom/kakao/sdk/auth/AuthApiClient;Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lre/l;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -143,23 +124,26 @@
             "Ljava/lang/Boolean;",
             "Ljava/lang/Boolean;",
             "Ljava/lang/Boolean;",
-            "Lke/l<",
+            "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "$this$verifyAge"
 
-    if-eqz p0, :cond_2
+    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p1, :cond_1
+    const-string p0, "context"
 
-    if-eqz p7, :cond_0
+    invoke-static {p1, p0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    const-string p0, "callback"
+
+    invoke-static {p7, p0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sget-object p0, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->Companion:Lcom/kakao/sdk/partner/auth/AgeAuthClient$Companion;
 
     invoke-virtual {p0}, Lcom/kakao/sdk/partner/auth/AgeAuthClient$Companion;->getInstance()Lcom/kakao/sdk/partner/auth/AgeAuthClient;
@@ -180,34 +164,12 @@
 
     move-object v7, p7
 
-    invoke-virtual/range {v0 .. v7}, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->verifyAgeWithAuthentication(Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lke/l;)V
+    invoke-virtual/range {v0 .. v7}, Lcom/kakao/sdk/partner/auth/AgeAuthClient;->verifyAgeWithAuthentication(Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lre/l;)V
 
     return-void
-
-    :cond_0
-    const-string p0, "callback"
-
-    .line 2
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p0, "context"
-
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p0, "$this$verifyAge"
-
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public static synthetic verifyAge$default(Lcom/kakao/sdk/auth/AuthApiClient;Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lke/l;ILjava/lang/Object;)V
+.method public static synthetic verifyAge$default(Lcom/kakao/sdk/auth/AuthApiClient;Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lre/l;ILjava/lang/Object;)V
     .locals 10
 
     and-int/lit8 v0, p8, 0x2
@@ -264,7 +226,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 1
     sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     move-object v8, v0
@@ -281,7 +242,7 @@
 
     move-object/from16 v9, p7
 
-    invoke-static/range {v2 .. v9}, Lcom/kakao/sdk/partner/auth/AuthApiClientKt;->verifyAge(Lcom/kakao/sdk/auth/AuthApiClient;Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lke/l;)V
+    invoke-static/range {v2 .. v9}, Lcom/kakao/sdk/partner/auth/AuthApiClientKt;->verifyAge(Lcom/kakao/sdk/auth/AuthApiClient;Landroid/content/Context;Ljava/lang/Integer;Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lre/l;)V
 
     return-void
 .end method

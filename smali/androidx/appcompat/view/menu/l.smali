@@ -30,10 +30,19 @@
 
 
 # virtual methods
-.method public e(Landroidx/appcompat/view/menu/g;)Z
+.method public final A(Landroidx/appcompat/view/menu/e$a;)V
     .locals 1
 
-    .line 1
+    iget-object v0, p0, Landroidx/appcompat/view/menu/l;->z:Landroidx/appcompat/view/menu/e;
+
+    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/e;->A(Landroidx/appcompat/view/menu/e$a;)V
+
+    return-void
+.end method
+
+.method public final e(Landroidx/appcompat/view/menu/g;)Z
+    .locals 1
+
     iget-object v0, p0, Landroidx/appcompat/view/menu/l;->z:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/e;->e(Landroidx/appcompat/view/menu/g;)Z
@@ -43,7 +52,7 @@
     return p1
 .end method
 
-.method public f(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)Z
+.method public final f(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)Z
     .locals 1
 
     .line 1
@@ -77,10 +86,9 @@
     return p1
 .end method
 
-.method public g(Landroidx/appcompat/view/menu/g;)Z
+.method public final g(Landroidx/appcompat/view/menu/g;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/l;->z:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/e;->g(Landroidx/appcompat/view/menu/g;)Z
@@ -90,16 +98,15 @@
     return p1
 .end method
 
-.method public getItem()Landroid/view/MenuItem;
+.method public final getItem()Landroid/view/MenuItem;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/l;->A:Landroidx/appcompat/view/menu/g;
 
     return-object v0
 .end method
 
-.method public k()Ljava/lang/String;
+.method public final k()Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -145,10 +152,9 @@
     return-object v0
 .end method
 
-.method public l()Landroidx/appcompat/view/menu/e;
+.method public final l()Landroidx/appcompat/view/menu/e;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/l;->z:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/e;->l()Landroidx/appcompat/view/menu/e;
@@ -158,10 +164,9 @@
     return-object v0
 .end method
 
-.method public n()Z
+.method public final n()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/l;->z:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/e;->n()Z
@@ -171,10 +176,9 @@
     return v0
 .end method
 
-.method public o()Z
+.method public final o()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/l;->z:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/e;->o()Z
@@ -184,10 +188,9 @@
     return v0
 .end method
 
-.method public p()Z
+.method public final p()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/l;->z:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/e;->p()Z
@@ -197,10 +200,9 @@
     return v0
 .end method
 
-.method public setGroupDividerEnabled(Z)V
+.method public final setGroupDividerEnabled(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/l;->z:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/e;->setGroupDividerEnabled(Z)V
@@ -208,7 +210,7 @@
     return-void
 .end method
 
-.method public setHeaderIcon(I)Landroid/view/SubMenu;
+.method public final setHeaderIcon(I)Landroid/view/SubMenu;
     .locals 6
 
     const/4 v1, 0x0
@@ -224,12 +226,12 @@
     move v3, p1
 
     .line 2
-    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/e;->z(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
+    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/e;->B(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
 
     return-object p0
 .end method
 
-.method public setHeaderIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;
+.method public final setHeaderIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;
     .locals 6
 
     const/4 v1, 0x0
@@ -245,12 +247,12 @@
     move-object v4, p1
 
     .line 1
-    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/e;->z(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
+    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/e;->B(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
 
     return-object p0
 .end method
 
-.method public setHeaderTitle(I)Landroid/view/SubMenu;
+.method public final setHeaderTitle(I)Landroid/view/SubMenu;
     .locals 6
 
     const/4 v2, 0x0
@@ -266,12 +268,12 @@
     move v1, p1
 
     .line 2
-    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/e;->z(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
+    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/e;->B(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
 
     return-object p0
 .end method
 
-.method public setHeaderTitle(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
+.method public final setHeaderTitle(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
     .locals 6
 
     const/4 v1, 0x0
@@ -287,12 +289,12 @@
     move-object v2, p1
 
     .line 1
-    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/e;->z(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
+    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/e;->B(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
 
     return-object p0
 .end method
 
-.method public setHeaderView(Landroid/view/View;)Landroid/view/SubMenu;
+.method public final setHeaderView(Landroid/view/View;)Landroid/view/SubMenu;
     .locals 6
 
     const/4 v1, 0x0
@@ -307,13 +309,12 @@
 
     move-object v5, p1
 
-    .line 1
-    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/e;->z(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
+    invoke-virtual/range {v0 .. v5}, Landroidx/appcompat/view/menu/e;->B(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
 
     return-object p0
 .end method
 
-.method public setIcon(I)Landroid/view/SubMenu;
+.method public final setIcon(I)Landroid/view/SubMenu;
     .locals 1
 
     .line 2
@@ -324,7 +325,7 @@
     return-object p0
 .end method
 
-.method public setIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;
+.method public final setIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;
     .locals 1
 
     .line 1
@@ -335,10 +336,9 @@
     return-object p0
 .end method
 
-.method public setQwertyMode(Z)V
+.method public final setQwertyMode(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/l;->z:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/e;->setQwertyMode(Z)V

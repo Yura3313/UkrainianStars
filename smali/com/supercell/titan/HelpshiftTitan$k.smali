@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/HelpshiftTitan$k;
+.class public final Lcom/supercell/titan/HelpshiftTitan$k;
 .super Ljava/lang/Object;
 .source "HelpshiftTitan.java"
 
@@ -18,10 +18,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/HelpshiftTitan$1;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,7 @@
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -99,11 +98,11 @@
     .line 7
     aget-object p1, p3, v1
 
-    check-cast p1, Lcom/helpshift/f;
+    check-cast p1, Lcom/helpshift/g;
 
     aget-object p1, p3, v0
 
-    check-cast p1, Lq9/a;
+    check-cast p1, Ls9/a;
 
     .line 8
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
@@ -124,11 +123,13 @@
 
     const-string p3, "unexpected invocation exception: "
 
+    .line 10
     invoke-static {p3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p3
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    .line 11
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 

@@ -124,7 +124,6 @@
 .method public static synthetic access$000(Lio/sentry/CircularFifoQueue;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lio/sentry/CircularFifoQueue;->start:I
 
     return p0
@@ -133,7 +132,6 @@
 .method public static synthetic access$100(Lio/sentry/CircularFifoQueue;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lio/sentry/CircularFifoQueue;->full:Z
 
     return p0
@@ -142,7 +140,6 @@
 .method public static synthetic access$102(Lio/sentry/CircularFifoQueue;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lio/sentry/CircularFifoQueue;->full:Z
 
     return p1
@@ -151,7 +148,6 @@
 .method public static synthetic access$200(Lio/sentry/CircularFifoQueue;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lio/sentry/CircularFifoQueue;->end:I
 
     return p0
@@ -160,7 +156,6 @@
 .method public static synthetic access$202(Lio/sentry/CircularFifoQueue;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lio/sentry/CircularFifoQueue;->end:I
 
     return p1
@@ -169,7 +164,6 @@
 .method public static synthetic access$300(Lio/sentry/CircularFifoQueue;I)I
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lio/sentry/CircularFifoQueue;->increment(I)I
 
     move-result p0
@@ -180,7 +174,6 @@
 .method public static synthetic access$400(Lio/sentry/CircularFifoQueue;)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/sentry/CircularFifoQueue;->elements:[Ljava/lang/Object;
 
     return-object p0
@@ -189,7 +182,6 @@
 .method public static synthetic access$500(Lio/sentry/CircularFifoQueue;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lio/sentry/CircularFifoQueue;->maxElements:I
 
     return p0
@@ -198,7 +190,6 @@
 .method public static synthetic access$600(Lio/sentry/CircularFifoQueue;I)I
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lio/sentry/CircularFifoQueue;->decrement(I)I
 
     move-result p0
@@ -213,7 +204,6 @@
 
     if-gez p1, :cond_0
 
-    .line 1
     iget p1, p0, Lio/sentry/CircularFifoQueue;->maxElements:I
 
     add-int/lit8 p1, p1, -0x1
@@ -227,7 +217,6 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 1
     iget v0, p0, Lio/sentry/CircularFifoQueue;->maxElements:I
 
     if-lt p1, v0, :cond_0
@@ -560,7 +549,6 @@
 .method public isAtFullCapacity()Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lio/sentry/CircularFifoQueue;->size()I
 
     move-result v0
@@ -583,7 +571,6 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lio/sentry/CircularFifoQueue;->size()I
 
     move-result v0
@@ -619,7 +606,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/sentry/CircularFifoQueue$1;
 
     invoke-direct {v0, p0}, Lio/sentry/CircularFifoQueue$1;-><init>(Lio/sentry/CircularFifoQueue;)V
@@ -630,7 +616,6 @@
 .method public maxSize()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/sentry/CircularFifoQueue;->maxElements:I
 
     return v0
@@ -644,7 +629,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lio/sentry/CircularFifoQueue;->add(Ljava/lang/Object;)Z
 
     move-result p1

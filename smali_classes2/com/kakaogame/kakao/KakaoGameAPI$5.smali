@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/kakao/KakaoGameAPI$5;->val$resultLock:Lcom/kakaogame/util/MutexLock;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -33,17 +32,17 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lae/i;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lie/h;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoGameAPI$5;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lae/i;
+    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoGameAPI$5;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lie/h;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lae/i;
+.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lie/h;
     .locals 0
 
     if-eqz p2, :cond_0
@@ -92,7 +91,7 @@
 
     .line 8
     :goto_0
-    sget-object p0, Lae/i;->a:Lae/i;
+    sget-object p0, Lie/h;->a:Lie/h;
 
     return-object p0
 .end method
@@ -102,7 +101,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/kakao/sdk/talk/TalkApiClient;->getInstance()Lcom/kakao/sdk/talk/TalkApiClient;
 
     move-result-object v0
@@ -113,7 +111,7 @@
 
     invoke-direct {v2, v1}, Lcom/kakaogame/kakao/f;-><init>(Lcom/kakaogame/util/MutexLock;)V
 
-    invoke-virtual {v0, v2}, Lcom/kakao/sdk/talk/TalkApiClient;->profile(Lke/p;)V
+    invoke-virtual {v0, v2}, Lcom/kakao/sdk/talk/TalkApiClient;->profile(Lre/p;)V
 
     return-void
 .end method

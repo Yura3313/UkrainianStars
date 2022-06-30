@@ -313,7 +313,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/DeflaterSink;->sink:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/Sink;->timeout()Lokio/Timeout;
@@ -333,6 +332,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lokio/DeflaterSink;->sink:Lokio/BufferedSink;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

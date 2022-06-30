@@ -33,7 +33,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/linecorp/linesdk/a/a/d$a;
 
     invoke-direct {v0}, Lcom/linecorp/linesdk/a/a/d$a;-><init>()V

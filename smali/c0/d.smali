@@ -1,4 +1,4 @@
-.class public Lc0/d;
+.class public final Lc0/d;
 .super Ljava/lang/Object;
 .source "FontsContractCompat.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lc0/d;->a:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,10 +34,9 @@
 
 
 # virtual methods
-.method public bridge synthetic a(Ljava/lang/Object;)V
+.method public final bridge synthetic a(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lc0/e$d;
 
     invoke-virtual {p0, p1}, Lc0/d;->b(Lc0/e$d;)V
@@ -46,7 +44,7 @@
     return-void
 .end method
 
-.method public b(Lc0/e$d;)V
+.method public final b(Lc0/e$d;)V
     .locals 4
 
     .line 1
@@ -60,33 +58,37 @@
 
     iget-object v2, p0, Lc0/d;->a:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lm/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v3, 0x0
+
+    .line 3
+    invoke-virtual {v1, v2, v3}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
+    .line 4
     check-cast v2, Ljava/util/ArrayList;
 
     if-nez v2, :cond_0
 
-    .line 3
+    .line 5
     monitor-exit v0
 
     return-void
 
-    .line 4
+    .line 6
     :cond_0
     iget-object v3, p0, Lc0/d;->a:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Lm/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
+    .line 7
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     const/4 v0, 0x0
 
-    .line 6
+    .line 8
     :goto_0
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -94,7 +96,7 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 7
+    .line 9
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -113,7 +115,7 @@
     :catchall_0
     move-exception p1
 
-    .line 8
+    .line 10
     :try_start_1
     monitor-exit v0
     :try_end_1

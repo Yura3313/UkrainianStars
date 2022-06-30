@@ -1,25 +1,26 @@
 .class public final Lqd/f;
-.super Lle/j;
-.source "SettingsGeneralTabFragment.kt"
+.super Lse/h;
+.source "ProfileImageEditorFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lrc/m0;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/p<",
+        "Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;",
+        "Ljava/lang/Exception;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lqd/f;
+.field public static final f:Lqd/f;
 
 
 # direct methods
@@ -30,7 +31,7 @@
 
     invoke-direct {v0}, Lqd/f;-><init>()V
 
-    sput-object v0, Lqd/f;->g:Lqd/f;
+    sput-object v0, Lqd/f;->f:Lqd/f;
 
     return-void
 .end method
@@ -38,59 +39,81 @@
 .method public constructor <init>()V
     .locals 1
 
-    const/4 v0, 0x1
+    const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
-
-    check-cast p1, Lrc/m0;
-
-    if-eqz p1, :cond_0
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    check-cast p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    check-cast p2, Ljava/lang/Exception;
+
+    const-string v0, "$receiver"
+
+    .line 2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "it"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "profile_image_rejected"
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    iget-object v0, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->h0:Lcom/supercell/id/model/MyProfileImage;
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    sget-object v0, Lcom/supercell/id/model/MyProfileImage$Empty;->f:Lcom/supercell/id/model/MyProfileImage$Empty;
+
+    .line 6
+    :goto_0
+    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->u1(Lcom/supercell/id/model/MyProfileImage;)V
+
+    .line 7
+    invoke-virtual {p1, v1}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->s1(Lcom/supercell/id/model/MyProfileImage;)V
+
+    .line 8
+    :cond_1
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
-    .line 2
-    iget-object v0, p1, Lvd/r;->m:Lcom/supercell/titan/h;
+    if-eqz p1, :cond_2
 
-    const/4 v4, 0x0
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
-    const/4 v5, 0x1
+    .line 9
+    invoke-virtual {p1, p2, v1}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
 
-    const/16 v6, 0x8
-
-    const-string v1, "Settings"
-
-    const-string v2, "click"
-
-    const-string v3, "Confirm logout"
-
-    .line 3
-    invoke-static/range {v0 .. v6}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
-
-    .line 4
-    sget-object p1, Lae/i;->a:Lae/i;
+    .line 10
+    :cond_2
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
-
-    :cond_0
-    const-string p1, "it"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

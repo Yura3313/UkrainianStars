@@ -1315,7 +1315,6 @@
 .method public getPosition()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/util/json/parser/Yylex;->yychar:I
 
     return v0
@@ -1324,7 +1323,6 @@
 .method public final yybegin(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/kakaogame/util/json/parser/Yylex;->zzLexicalState:I
 
     return-void
@@ -1333,7 +1331,6 @@
 .method public final yycharat(I)C
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/util/json/parser/Yylex;->zzBuffer:[C
 
     iget v1, p0, Lcom/kakaogame/util/json/parser/Yylex;->zzStartRead:I
@@ -1378,7 +1375,6 @@
 .method public final yylength()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/util/json/parser/Yylex;->zzMarkedPos:I
 
     iget v1, p0, Lcom/kakaogame/util/json/parser/Yylex;->zzStartRead:I
@@ -2038,7 +2034,6 @@
 .method public final yystate()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/util/json/parser/Yylex;->zzLexicalState:I
 
     return v0
@@ -2047,7 +2042,6 @@
 .method public final yytext()Ljava/lang/String;
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/String;
 
     iget-object v1, p0, Lcom/kakaogame/util/json/parser/Yylex;->zzBuffer:[C

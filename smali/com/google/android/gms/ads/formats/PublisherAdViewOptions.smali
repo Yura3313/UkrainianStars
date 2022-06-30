@@ -16,18 +16,17 @@
 
 
 # instance fields
-.field public final g:Z
+.field public final f:Z
 
-.field public final h:Lcom/google/android/gms/internal/ads/zzxc;
+.field public final g:Lcom/google/android/gms/internal/ads/zzxc;
 
-.field public final i:Landroid/os/IBinder;
+.field public final h:Landroid/os/IBinder;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lf1/h;
 
     invoke-direct {v0}, Lf1/h;-><init>()V
@@ -44,12 +43,12 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->g:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->f:Z
 
     if-eqz p2, :cond_1
 
     .line 3
-    sget p1, Lcom/google/android/gms/internal/ads/zzxf;->g:I
+    sget p1, Lcom/google/android/gms/internal/ads/zzxf;->f:I
 
     const-string p1, "com.google.android.gms.ads.internal.client.IAppEventListener"
 
@@ -81,10 +80,10 @@
 
     .line 8
     :goto_0
-    iput-object p1, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->h:Lcom/google/android/gms/internal/ads/zzxc;
+    iput-object p1, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->g:Lcom/google/android/gms/internal/ads/zzxc;
 
     .line 9
-    iput-object p3, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->i:Landroid/os/IBinder;
+    iput-object p3, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->h:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -97,25 +96,25 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->g:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->f:Z
 
     const/4 v1, 0x1
 
     const/4 v2, 0x4
 
     .line 3
-    invoke-static {p1, v1, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 4
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->h:Lcom/google/android/gms/internal/ads/zzxc;
+    iget-object v0, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->g:Lcom/google/android/gms/internal/ads/zzxc;
 
     if-nez v0, :cond_0
 
@@ -129,23 +128,21 @@
     move-result-object v0
 
     :goto_0
-    const/4 v1, 0x0
-
-    const/4 v2, 0x2
+    const/4 v1, 0x2
 
     .line 6
-    invoke-static {p1, v2, v0, v1}, Ld2/b;->f(Landroid/os/Parcel;ILandroid/os/IBinder;Z)V
+    invoke-static {p1, v1, v0}, Le2/b;->f(Landroid/os/Parcel;ILandroid/os/IBinder;)V
 
     const/4 v0, 0x3
 
     .line 7
-    iget-object v2, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->i:Landroid/os/IBinder;
+    iget-object v1, p0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->h:Landroid/os/IBinder;
 
     .line 8
-    invoke-static {p1, v0, v2, v1}, Ld2/b;->f(Landroid/os/Parcel;ILandroid/os/IBinder;Z)V
+    invoke-static {p1, v0, v1}, Le2/b;->f(Landroid/os/Parcel;ILandroid/os/IBinder;)V
 
     .line 9
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

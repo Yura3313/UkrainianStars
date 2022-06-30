@@ -9,7 +9,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0}, Lio/sentry/ISentryClient;->captureEnvelope(Lio/sentry/SentryEnvelope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -22,7 +21,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0, v0}, Lio/sentry/ISentryClient;->captureEvent(Lio/sentry/SentryEvent;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -35,7 +33,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, p2, v0}, Lio/sentry/ISentryClient;->captureEvent(Lio/sentry/SentryEvent;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -48,7 +45,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0, p2}, Lio/sentry/ISentryClient;->captureEvent(Lio/sentry/SentryEvent;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -61,7 +57,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0, v0}, Lio/sentry/ISentryClient;->captureException(Ljava/lang/Throwable;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -74,7 +69,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, p2, v0}, Lio/sentry/ISentryClient;->captureException(Ljava/lang/Throwable;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -103,7 +97,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0, p2}, Lio/sentry/ISentryClient;->captureException(Ljava/lang/Throwable;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -116,7 +109,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, p2, v0}, Lio/sentry/ISentryClient;->captureMessage(Ljava/lang/String;Lio/sentry/SentryLevel;Lio/sentry/Scope;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -159,7 +151,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0}, Lio/sentry/ISentryClient;->captureSession(Lio/sentry/Session;Ljava/lang/Object;)V
 
     return-void
@@ -170,7 +161,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0, v0, v0}, Lio/sentry/ISentryClient;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -183,7 +173,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, v0, p2, p3}, Lio/sentry/ISentryClient;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
@@ -198,7 +187,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0, p1, p2, v0, v0}, Lio/sentry/ISentryClient;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0

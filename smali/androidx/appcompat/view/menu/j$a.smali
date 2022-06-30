@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract d(Landroidx/appcompat/view/menu/g;I)V
+.method public abstract d(Landroidx/appcompat/view/menu/g;)V
 .end method
 
 .method public abstract getItemData()Landroidx/appcompat/view/menu/g;

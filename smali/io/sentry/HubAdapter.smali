@@ -14,7 +14,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/sentry/HubAdapter;
 
     invoke-direct {v0}, Lio/sentry/HubAdapter;-><init>()V
@@ -27,7 +26,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
 .method public static getInstance()Lio/sentry/HubAdapter;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/sentry/HubAdapter;->INSTANCE:Lio/sentry/HubAdapter;
 
     return-object v0
@@ -44,7 +41,7 @@
 
 
 # virtual methods
-.method public synthetic addBreadcrumb(Lio/sentry/Breadcrumb;)V
+.method public final synthetic addBreadcrumb(Lio/sentry/Breadcrumb;)V
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/f;->a(Lio/sentry/IHub;Lio/sentry/Breadcrumb;)V
@@ -61,7 +58,7 @@
     return-void
 .end method
 
-.method public synthetic addBreadcrumb(Ljava/lang/String;)V
+.method public final synthetic addBreadcrumb(Ljava/lang/String;)V
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/f;->b(Lio/sentry/IHub;Ljava/lang/String;)V
@@ -69,7 +66,7 @@
     return-void
 .end method
 
-.method public synthetic addBreadcrumb(Ljava/lang/String;Ljava/lang/String;)V
+.method public final synthetic addBreadcrumb(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/f;->c(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;)V
@@ -80,13 +77,12 @@
 .method public bindClient(Lio/sentry/ISentryClient;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lio/sentry/Sentry;->bindClient(Lio/sentry/ISentryClient;)V
 
     return-void
 .end method
 
-.method public synthetic captureEnvelope(Lio/sentry/SentryEnvelope;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureEnvelope(Lio/sentry/SentryEnvelope;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/f;->d(Lio/sentry/IHub;Lio/sentry/SentryEnvelope;)Lio/sentry/protocol/SentryId;
@@ -113,7 +109,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureEvent(Lio/sentry/SentryEvent;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureEvent(Lio/sentry/SentryEvent;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/f;->e(Lio/sentry/IHub;Lio/sentry/SentryEvent;)Lio/sentry/protocol/SentryId;
@@ -134,7 +130,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureException(Ljava/lang/Throwable;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureException(Ljava/lang/Throwable;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/f;->f(Lio/sentry/IHub;Ljava/lang/Throwable;)Lio/sentry/protocol/SentryId;
@@ -155,7 +151,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureMessage(Ljava/lang/String;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureMessage(Ljava/lang/String;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/f;->g(Lio/sentry/IHub;Ljava/lang/String;)Lio/sentry/protocol/SentryId;
@@ -176,7 +172,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/f;->h(Lio/sentry/IHub;Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
@@ -201,7 +197,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/f;->i(Lio/sentry/IHub;Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
@@ -214,7 +210,6 @@
 .method public captureUserFeedback(Lio/sentry/UserFeedback;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lio/sentry/Sentry;->captureUserFeedback(Lio/sentry/UserFeedback;)V
 
     return-void
@@ -223,7 +218,6 @@
 .method public clearBreadcrumbs()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->clearBreadcrumbs()V
 
     return-void
@@ -263,7 +257,6 @@
 .method public close()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->close()V
 
     return-void
@@ -272,7 +265,6 @@
 .method public configureScope(Lio/sentry/ScopeCallback;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lio/sentry/Sentry;->configureScope(Lio/sentry/ScopeCallback;)V
 
     return-void
@@ -281,7 +273,6 @@
 .method public endSession()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->endSession()V
 
     return-void
@@ -290,7 +281,6 @@
 .method public flush(J)V
     .locals 0
 
-    .line 1
     invoke-static {p1, p2}, Lio/sentry/Sentry;->flush(J)V
 
     return-void
@@ -299,7 +289,6 @@
 .method public getLastEventId()Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getLastEventId()Lio/sentry/protocol/SentryId;
 
     move-result-object v0
@@ -310,7 +299,6 @@
 .method public getOptions()Lio/sentry/SentryOptions;
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -325,7 +313,6 @@
 .method public getSpan()Lio/sentry/ISpan;
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -340,7 +327,6 @@
 .method public isCrashedLastRun()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->isCrashedLastRun()Ljava/lang/Boolean;
 
     move-result-object v0
@@ -351,7 +337,6 @@
 .method public isEnabled()Z
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->isEnabled()Z
 
     move-result v0
@@ -362,7 +347,6 @@
 .method public popScope()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->popScope()V
 
     return-void
@@ -371,7 +355,6 @@
 .method public pushScope()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->pushScope()V
 
     return-void
@@ -380,7 +363,6 @@
 .method public removeExtra(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lio/sentry/Sentry;->removeExtra(Ljava/lang/String;)V
 
     return-void
@@ -389,7 +371,6 @@
 .method public removeTag(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lio/sentry/Sentry;->removeTag(Ljava/lang/String;)V
 
     return-void
@@ -398,7 +379,6 @@
 .method public setExtra(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p1, p2}, Lio/sentry/Sentry;->setExtra(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -415,7 +395,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/Sentry;->setFingerprint(Ljava/util/List;)V
 
     return-void
@@ -424,7 +403,6 @@
 .method public setLevel(Lio/sentry/SentryLevel;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lio/sentry/Sentry;->setLevel(Lio/sentry/SentryLevel;)V
 
     return-void
@@ -433,7 +411,6 @@
 .method public setSpanContext(Ljava/lang/Throwable;Lio/sentry/ISpan;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
 
     move-result-object v0
@@ -446,7 +423,6 @@
 .method public setTag(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p1, p2}, Lio/sentry/Sentry;->setTag(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -455,7 +431,6 @@
 .method public setTransaction(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lio/sentry/Sentry;->setTransaction(Ljava/lang/String;)V
 
     return-void
@@ -464,7 +439,6 @@
 .method public setUser(Lio/sentry/protocol/User;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lio/sentry/Sentry;->setUser(Lio/sentry/protocol/User;)V
 
     return-void
@@ -473,7 +447,6 @@
 .method public startSession()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->startSession()V
 
     return-void
@@ -490,7 +463,7 @@
     return-object p1
 .end method
 
-.method public synthetic startTransaction(Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
+.method public final synthetic startTransaction(Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/f;->k(Lio/sentry/IHub;Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
@@ -537,7 +510,7 @@
     return-object p1
 .end method
 
-.method public synthetic startTransaction(Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
+.method public final synthetic startTransaction(Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/f;->l(Lio/sentry/IHub;Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
@@ -547,7 +520,7 @@
     return-object p1
 .end method
 
-.method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ITransaction;
+.method public final synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ITransaction;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/f;->m(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ITransaction;
@@ -557,7 +530,7 @@
     return-object p1
 .end method
 
-.method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
+.method public final synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
     .locals 0
 
     invoke-static {p0, p1, p2, p3}, Lio/sentry/f;->n(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
@@ -567,7 +540,7 @@
     return-object p1
 .end method
 
-.method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
+.method public final synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
     .locals 0
 
     invoke-static {p0, p1, p2, p3, p4}, Lio/sentry/f;->o(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
@@ -577,7 +550,7 @@
     return-object p1
 .end method
 
-.method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;ZLio/sentry/TransactionFinishedCallback;)Lio/sentry/ITransaction;
+.method public final synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;ZLio/sentry/TransactionFinishedCallback;)Lio/sentry/ITransaction;
     .locals 0
 
     invoke-static/range {p0 .. p5}, Lio/sentry/f;->p(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;ZLio/sentry/TransactionFinishedCallback;)Lio/sentry/ITransaction;
@@ -587,7 +560,7 @@
     return-object p1
 .end method
 
-.method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Z)Lio/sentry/ITransaction;
+.method public final synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Z)Lio/sentry/ITransaction;
     .locals 0
 
     invoke-static {p0, p1, p2, p3}, Lio/sentry/f;->q(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Z)Lio/sentry/ITransaction;
@@ -600,7 +573,6 @@
 .method public traceHeaders()Lio/sentry/SentryTraceHeader;
     .locals 1
 
-    .line 1
     invoke-static {}, Lio/sentry/Sentry;->traceHeaders()Lio/sentry/SentryTraceHeader;
 
     move-result-object v0
@@ -611,7 +583,6 @@
 .method public withScope(Lio/sentry/ScopeCallback;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lio/sentry/Sentry;->withScope(Lio/sentry/ScopeCallback;)V
 
     return-void

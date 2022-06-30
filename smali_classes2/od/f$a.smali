@@ -1,14 +1,14 @@
 .class public final Lod/f$a;
 .super Ljava/lang/Object;
-.source "RegisterEnterEmailPageFragment.kt"
+.source "OnboardingInviteFriendsPageFragment.kt"
 
 # interfaces
-.implements Landroid/text/TextWatcher;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lod/f;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lod/f;->onLayoutChange(Landroid/view/View;IIIIIIII)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lod/f;
+.field public final synthetic f:Landroidx/recyclerview/widget/RecyclerView;
+
+.field public final synthetic g:I
 
 
 # direct methods
-.method public constructor <init>(Lod/f;)V
+.method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
-    .line 1
-    iput-object p1, p0, Lod/f$a;->g:Lod/f;
+    iput-object p1, p0, Lod/f$a;->f:Landroidx/recyclerview/widget/RecyclerView;
+
+    iput p2, p0, Lod/f$a;->g:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,28 +38,46 @@
 
 
 # virtual methods
-.method public afterTextChanged(Landroid/text/Editable;)V
-    .locals 1
+.method public final run()V
+    .locals 3
 
     .line 1
-    iget-object p1, p0, Lod/f$a;->g:Lod/f;
+    iget-object v0, p0, Lod/f$a;->f:Landroidx/recyclerview/widget/RecyclerView;
 
-    sget v0, Lod/f;->h0:I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$m;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->m0()Landroid/os/Parcelable;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
 
     .line 2
-    invoke-virtual {p1}, Lod/f;->h1()V
+    :goto_0
+    iget-object v1, p0, Lod/f$a;->f:Landroidx/recyclerview/widget/RecyclerView;
 
-    return-void
-.end method
+    iget v2, p0, Lod/f$a;->g:I
 
-.method public beforeTextChanged(Ljava/lang/CharSequence;III)V
-    .locals 0
+    invoke-static {v1, v2}, Lae/z2;->p(Landroid/view/View;I)V
 
-    return-void
-.end method
+    .line 3
+    iget-object v1, p0, Lod/f$a;->f:Landroidx/recyclerview/widget/RecyclerView;
 
-.method public onTextChanged(Ljava/lang/CharSequence;III)V
-    .locals 0
+    invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$m;
 
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView$m;->l0(Landroid/os/Parcelable;)V
+
+    :cond_1
     return-void
 .end method

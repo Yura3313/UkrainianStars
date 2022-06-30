@@ -22,7 +22,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,7 +30,6 @@
 .method public static synthetic access$000(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/promotion/StartingPromotionManager$HidePrefManager;->clearDate(Landroid/content/Context;)V
 
     return-void
@@ -40,7 +38,6 @@
 .method public static synthetic access$200(Landroid/content/Context;I)Z
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/kakaogame/promotion/StartingPromotionManager$HidePrefManager;->isHideDate(Landroid/content/Context;I)Z
 
     move-result p0
@@ -53,7 +50,6 @@
 
     const-string v0, "StartingPromotionHide"
 
-    .line 1
     invoke-static {p0, v0}, Lcom/kakaogame/util/PreferenceUtil;->remove(Landroid/content/Context;Ljava/lang/String;)V
 
     return-void
@@ -74,14 +70,14 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {v0, v1}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 3
     new-instance v1, Ljava/util/Date;
 
     invoke-direct {v1}, Ljava/util/Date;-><init>()V
 
-    invoke-virtual {v0, v1}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -1,4 +1,4 @@
-.class public Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$d;
+.class public final Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$d;
 .super Ljava/lang/Object;
 .source "SwipeRefreshLayout.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$d;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/view/animation/Animation;)V
+.method public final onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 1
 
     .line 1
@@ -48,18 +47,18 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0}, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->r(Landroid/view/animation/Animation$AnimationListener;)V
+    invoke-virtual {p1, v0}, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->q(Landroid/view/animation/Animation$AnimationListener;)V
 
     return-void
 .end method
 
-.method public onAnimationRepeat(Landroid/view/animation/Animation;)V
+.method public final onAnimationRepeat(Landroid/view/animation/Animation;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onAnimationStart(Landroid/view/animation/Animation;)V
+.method public final onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 0
 
     return-void

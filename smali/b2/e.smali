@@ -3,25 +3,9 @@
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
-
-
 # virtual methods
-.method public abstract e2()Ljava/lang/Object;
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
+.method public abstract J0(I)V
+.end method
 
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
+.method public abstract onConnected()V
 .end method

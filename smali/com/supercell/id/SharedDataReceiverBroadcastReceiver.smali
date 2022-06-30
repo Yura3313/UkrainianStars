@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -15,14 +14,16 @@
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_2
+    const-string p1, "intent"
+
+    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
@@ -66,10 +67,10 @@
 
     .line 4
     :goto_0
-    sget-object v1, Llc/a;->b:Llc/a;
+    sget-object v1, Lpc/a;->b:Lpc/a;
 
     .line 5
-    sget-object v1, Llc/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
+    sget-object v1, Lpc/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -91,27 +92,12 @@
 
     move-result-object p1
 
-    check-cast p1, Lse/o;
+    check-cast p1, Lze/o;
 
     if-eqz p1, :cond_1
 
-    invoke-interface {p1, p2}, Lse/o;->j(Ljava/lang/Object;)Z
+    invoke-interface {p1, p2}, Lze/o;->m(Ljava/lang/Object;)Z
 
     :cond_1
     return-void
-
-    :cond_2
-    const-string p1, "intent"
-
-    .line 6
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

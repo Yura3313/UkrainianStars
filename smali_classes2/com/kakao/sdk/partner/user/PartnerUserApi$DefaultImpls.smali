@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public static synthetic ageAuthInfo$default(Lcom/kakao/sdk/partner/user/PartnerUserApi;Ljava/lang/Integer;Ljava/lang/String;ILjava/lang/Object;)Lxe/b;
+.method public static synthetic ageAuthInfo$default(Lcom/kakao/sdk/partner/user/PartnerUserApi;Ljava/lang/Integer;Ljava/lang/String;ILjava/lang/Object;)Lef/b;
     .locals 1
 
     if-nez p4, :cond_2
@@ -37,7 +37,7 @@
 
     .line 1
     :cond_1
-    invoke-interface {p0, p1, p2}, Lcom/kakao/sdk/partner/user/PartnerUserApi;->ageAuthInfo(Ljava/lang/Integer;Ljava/lang/String;)Lxe/b;
+    invoke-interface {p0, p1, p2}, Lcom/kakao/sdk/partner/user/PartnerUserApi;->ageAuthInfo(Ljava/lang/Integer;Ljava/lang/String;)Lef/b;
 
     move-result-object p0
 
@@ -54,7 +54,7 @@
     throw p0
 .end method
 
-.method public static synthetic me$default(Lcom/kakao/sdk/partner/user/PartnerUserApi;Ljava/lang/String;ZILjava/lang/Object;)Lxe/b;
+.method public static synthetic me$default(Lcom/kakao/sdk/partner/user/PartnerUserApi;Ljava/lang/String;ZILjava/lang/Object;)Lef/b;
     .locals 0
 
     if-nez p4, :cond_2
@@ -74,7 +74,7 @@
 
     .line 1
     :cond_1
-    invoke-interface {p0, p1, p2}, Lcom/kakao/sdk/partner/user/PartnerUserApi;->me(Ljava/lang/String;Z)Lxe/b;
+    invoke-interface {p0, p1, p2}, Lcom/kakao/sdk/partner/user/PartnerUserApi;->me(Ljava/lang/String;Z)Lef/b;
 
     move-result-object p0
 

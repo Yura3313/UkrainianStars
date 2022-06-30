@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract a(Landroidx/recyclerview/widget/RecyclerView$z;)V
+.method public abstract a()V
 .end method

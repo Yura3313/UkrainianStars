@@ -211,7 +211,7 @@
     .line 11
     new-instance v1, Ljava/net/ProtocolException;
 
-    invoke-virtual {v0}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -377,10 +377,12 @@
 
     const-string v0, "byteCount < 0: "
 
+    .line 13
     invoke-static {v0, p2, p3}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p2
 
+    .line 14
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1

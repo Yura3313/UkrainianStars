@@ -16,9 +16,11 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 0
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -26,27 +28,19 @@
     const/4 p1, 0x0
 
     .line 3
-    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->setWillNotDraw(Z)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setWillNotDraw(Z)V
 
     return-void
-
-    :cond_0
-    const-string p1, "context"
-
-    .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public dispatchDraw(Landroid/graphics/Canvas;)V
+.method public final dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 4
 
-    if-eqz p1, :cond_2
+    const-string v0, "canvas"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
@@ -80,7 +74,7 @@
 
     .line 4
     :goto_1
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v1
 
@@ -90,7 +84,7 @@
 
     div-float/2addr v1, v2
 
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v3
 
@@ -107,19 +101,9 @@
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     return-void
-
-    :cond_2
-    const-string p1, "canvas"
-
-    .line 7
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 0
 
     sub-int/2addr p4, p2
@@ -174,7 +158,7 @@
     return-void
 .end method
 
-.method public onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 2
 
     const/4 v0, 0x0
@@ -208,13 +192,13 @@
     move-result p2
 
     .line 5
-    invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->setMeasuredDimension(II)V
+    invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
     goto :goto_0
 
     .line 6
     :cond_0
-    invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onMeasure(II)V
+    invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
     :goto_0
     return-void

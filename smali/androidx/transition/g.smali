@@ -1,4 +1,4 @@
-.class public Landroidx/transition/g;
+.class public final Landroidx/transition/g;
 .super Ljava/lang/Object;
 .source "TranslationAnimationCreator.java"
 
@@ -176,7 +176,7 @@
     invoke-virtual {v0, v5}, Landroidx/transition/Transition;->a(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     .line 16
-    invoke-virtual {v4, v5}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {v4, v5}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 17
     invoke-static {v4, v5}, Landroidx/transition/a;->a(Landroid/animation/Animator;Landroid/animation/AnimatorListenerAdapter;)V
@@ -184,7 +184,7 @@
     move-object/from16 v0, p8
 
     .line 18
-    invoke-virtual {v4, v0}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+    invoke-virtual {v4, v0}, Landroid/animation/Animator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     return-object v4
 .end method

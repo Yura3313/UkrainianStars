@@ -59,7 +59,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -250,38 +249,7 @@
     .end annotation
 .end method
 
-.method public l(I)[Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Lm/f;->d()I
-
-    move-result v0
-
-    .line 2
-    new-array v1, v0, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v0, :cond_0
-
-    .line 3
-    invoke-virtual {p0, v2, p1}, Lm/f;->b(II)Ljava/lang/Object;
-
-    move-result-object v3
-
-    aput-object v3, v1, v2
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    return-object v1
-.end method
-
-.method public m([Ljava/lang/Object;I)[Ljava/lang/Object;
+.method public final l([Ljava/lang/Object;I)[Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {

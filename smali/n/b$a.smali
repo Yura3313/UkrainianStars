@@ -1,4 +1,4 @@
-.class public Ln/b$a;
+.class public final Ln/b$a;
 .super Ln/b;
 .source "CurveFit.java"
 
@@ -38,21 +38,21 @@
 
 
 # virtual methods
-.method public b(DI)D
-    .locals 0
+.method public final b(D)D
+    .locals 2
 
-    .line 1
     iget-object p1, p0, Ln/b$a;->b:[D
 
-    aget-wide p2, p1, p3
+    const/4 p2, 0x0
 
-    return-wide p2
+    aget-wide v0, p1, p2
+
+    return-wide v0
 .end method
 
-.method public c(D[D)V
+.method public final c(D[D)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Ln/b$a;->b:[D
 
     array-length p2, p1
@@ -64,7 +64,7 @@
     return-void
 .end method
 
-.method public d(D[F)V
+.method public final d(D[F)V
     .locals 2
 
     const/4 p1, 0x0
@@ -92,7 +92,7 @@
     return-void
 .end method
 
-.method public e(DI)D
+.method public final e(D)D
     .locals 0
 
     const-wide/16 p1, 0x0
@@ -100,7 +100,7 @@
     return-wide p1
 .end method
 
-.method public f(D[D)V
+.method public final f(D[D)V
     .locals 2
 
     const/4 p1, 0x0
@@ -126,14 +126,13 @@
     return-void
 .end method
 
-.method public g()[D
+.method public final g()[D
     .locals 4
 
     const/4 v0, 0x1
 
     new-array v0, v0, [D
 
-    .line 1
     iget-wide v1, p0, Ln/b$a;->a:D
 
     const/4 v3, 0x0

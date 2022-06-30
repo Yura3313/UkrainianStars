@@ -1,32 +1,32 @@
-.class public interface abstract annotation Lze/o;
+.class public interface abstract Lze/o;
 .super Ljava/lang/Object;
-.source "POST.java"
+.source "CompletableDeferred.kt"
 
 # interfaces
-.implements Ljava/lang/annotation/Annotation;
+.implements Lze/e0;
 
 
 # annotations
-.annotation system Ldalvik/annotation/AnnotationDefault;
-    value = .subannotation Lze/o;
-        value = ""
-    .end subannotation
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Documented;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Target;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lze/e0<",
+        "TT;>;"
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract value()Ljava/lang/String;
+.method public abstract l(Ljava/lang/Throwable;)Z
+.end method
+
+.method public abstract m(Ljava/lang/Object;)Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)Z"
+        }
+    .end annotation
 .end method

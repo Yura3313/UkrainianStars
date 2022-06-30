@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public g:Lcom/google/android/gms/common/internal/BaseGmsClient;
+.field public f:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
-.field public final h:I
+.field public final g:I
 
 
 # direct methods
@@ -28,10 +28,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/IGmsCallbacks$zza;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->g:Lcom/google/android/gms/common/internal/BaseGmsClient;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->f:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->h:I
+    iput p2, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->g:I
 
     return-void
 .end method

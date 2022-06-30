@@ -20,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,7 +36,6 @@
 .method public onResume()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/adjust/sdk/sig/NativeLibHelper;->nOnResume()V
 
     return-void
@@ -46,7 +44,6 @@
 .method public sign(Landroid/content/Context;Ljava/lang/Object;[BI)[B
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/adjust/sdk/sig/NativeLibHelper;->nSign(Landroid/content/Context;Ljava/lang/Object;[BI)[B
 
     move-result-object p1

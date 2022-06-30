@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final j0:Lae/c;
+.field public final h0:Lie/f;
 
 
 # direct methods
@@ -30,29 +30,32 @@
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/game/GameFragment$b$a;-><init>(Lcom/supercell/id/ui/game/GameFragment$b;)V
 
-    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->j0:Lae/c;
+    check-cast v0, Lie/f;
+
+    iput-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->h0:Lie/f;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public W0()V
+.method public final N0()V
     .locals 0
 
     return-void
 .end method
 
-.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final Y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string p3, "inflater"
 
-    .line 1
+    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sget p3, Lcom/supercell/id/R$layout;->fragment_game_head:I
 
     const/4 v0, 0x0
@@ -62,33 +65,25 @@
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "inflater"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public synthetic i0()V
+.method public final synthetic a0()V
     .locals 0
 
-    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->i0()V
+    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
 
     return-void
 .end method
 
-.method public s0(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final k0(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "view"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
     sget p2, Lcom/supercell/id/R$id;->head_logo:I
@@ -101,7 +96,7 @@
 
     const-string p2, "view.head_logo"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -112,9 +107,9 @@
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->j0:Lae/c;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->h0:Lie/f;
 
-    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -134,17 +129,7 @@
     const/4 v0, 0x1
 
     .line 5
-    invoke-static {p1, p2, v0}, Lpd/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {p1, p2, v0}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     return-void
-
-    :cond_0
-    const-string p1, "view"
-
-    .line 6
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

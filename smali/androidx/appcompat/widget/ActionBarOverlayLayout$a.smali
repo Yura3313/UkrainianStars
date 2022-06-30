@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/ActionBarOverlayLayout$a;
+.class public final Landroidx/appcompat/widget/ActionBarOverlayLayout$a;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "ActionBarOverlayLayout.java"
 
@@ -15,15 +15,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/appcompat/widget/ActionBarOverlayLayout;
+.field public final synthetic f:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/ActionBarOverlayLayout;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$a;->g:Landroidx/appcompat/widget/ActionBarOverlayLayout;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$a;->f:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -32,38 +31,38 @@
 
 
 # virtual methods
-.method public onAnimationCancel(Landroid/animation/Animator;)V
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$a;->g:Landroidx/appcompat/widget/ActionBarOverlayLayout;
+    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$a;->f:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
     const/4 v0, 0x0
 
-    iput-object v0, p1, Landroidx/appcompat/widget/ActionBarOverlayLayout;->G:Landroid/view/ViewPropertyAnimator;
+    iput-object v0, p1, Landroidx/appcompat/widget/ActionBarOverlayLayout;->F:Landroid/view/ViewPropertyAnimator;
 
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p1, Landroidx/appcompat/widget/ActionBarOverlayLayout;->q:Z
+    iput-boolean v0, p1, Landroidx/appcompat/widget/ActionBarOverlayLayout;->p:Z
 
     return-void
 .end method
 
-.method public onAnimationEnd(Landroid/animation/Animator;)V
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$a;->g:Landroidx/appcompat/widget/ActionBarOverlayLayout;
+    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$a;->f:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
     const/4 v0, 0x0
 
-    iput-object v0, p1, Landroidx/appcompat/widget/ActionBarOverlayLayout;->G:Landroid/view/ViewPropertyAnimator;
+    iput-object v0, p1, Landroidx/appcompat/widget/ActionBarOverlayLayout;->F:Landroid/view/ViewPropertyAnimator;
 
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p1, Landroidx/appcompat/widget/ActionBarOverlayLayout;->q:Z
+    iput-boolean v0, p1, Landroidx/appcompat/widget/ActionBarOverlayLayout;->p:Z
 
     return-void
 .end method

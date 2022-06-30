@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Class;)Lcom/google/protobuf/o0;
+.method public final a(Ljava/lang/Class;)Lcom/google/protobuf/o0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -40,7 +39,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/IllegalStateException;
 
     const-string v0, "This should never be called."
@@ -50,7 +48,7 @@
     throw p1
 .end method
 
-.method public b(Ljava/lang/Class;)Z
+.method public final b(Ljava/lang/Class;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {

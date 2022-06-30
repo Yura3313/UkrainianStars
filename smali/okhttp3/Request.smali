@@ -91,7 +91,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Request;->body:Lokhttp3/RequestBody;
 
     return-object v0
@@ -126,7 +125,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
 
     invoke-virtual {v0, p1}, Lokhttp3/Headers;->get(Ljava/lang/String;)Ljava/lang/String;
@@ -171,7 +169,6 @@
 .method public isHttps()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
 
     invoke-virtual {v0}, Lokhttp3/HttpUrl;->isHttps()Z
@@ -184,7 +181,6 @@
 .method public method()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Request;->method:Ljava/lang/String;
 
     return-object v0
@@ -193,7 +189,6 @@
 .method public newBuilder()Lokhttp3/Request$Builder;
     .locals 1
 
-    .line 1
     new-instance v0, Lokhttp3/Request$Builder;
 
     invoke-direct {v0, p0}, Lokhttp3/Request$Builder;-><init>(Lokhttp3/Request;)V
@@ -255,6 +250,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lokhttp3/Request;->method:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -289,7 +285,6 @@
 .method public url()Lokhttp3/HttpUrl;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
 
     return-object v0

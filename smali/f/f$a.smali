@@ -1,4 +1,4 @@
-.class public Lf/f$a;
+.class public final Lf/f$a;
 .super Ljava/lang/Object;
 .source "SupportActionModeWrapper.java"
 
@@ -76,7 +76,7 @@
 
 
 # virtual methods
-.method public a(Lf/b;Landroid/view/Menu;)Z
+.method public final a(Lf/b;Landroid/view/Menu;)Z
     .locals 1
 
     .line 1
@@ -99,7 +99,7 @@
     return p1
 .end method
 
-.method public b(Lf/b;Landroid/view/Menu;)Z
+.method public final b(Lf/b;Landroid/view/Menu;)Z
     .locals 1
 
     .line 1
@@ -122,10 +122,9 @@
     return p1
 .end method
 
-.method public c(Lf/b;Landroid/view/MenuItem;)Z
+.method public final c(Lf/b;Landroid/view/MenuItem;)Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lf/f$a;->a:Landroid/view/ActionMode$Callback;
 
     invoke-virtual {p0, p1}, Lf/f$a;->e(Lf/b;)Landroid/view/ActionMode;
@@ -147,10 +146,9 @@
     return p1
 .end method
 
-.method public d(Lf/b;)V
+.method public final d(Lf/b;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lf/f$a;->a:Landroid/view/ActionMode$Callback;
 
     invoke-virtual {p0, p1}, Lf/f$a;->e(Lf/b;)Landroid/view/ActionMode;
@@ -162,7 +160,7 @@
     return-void
 .end method
 
-.method public e(Lf/b;)Landroid/view/ActionMode;
+.method public final e(Lf/b;)Landroid/view/ActionMode;
     .locals 4
 
     .line 1

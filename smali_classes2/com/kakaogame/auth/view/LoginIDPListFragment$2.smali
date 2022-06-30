@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/auth/view/LoginIDPListFragment;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/LoginIDPListFragment$2;->this$0:Lcom/kakaogame/auth/view/LoginIDPListFragment;
 
     iput-object p2, p0, Lcom/kakaogame/auth/view/LoginIDPListFragment$2;->val$idpCode:Ljava/lang/String;

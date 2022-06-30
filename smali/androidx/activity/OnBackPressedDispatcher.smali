@@ -19,7 +19,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayDeque<",
-            "Landroidx/activity/b;",
+            "Landroidx/activity/d;",
             ">;"
         }
     .end annotation
@@ -48,7 +48,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/lifecycle/j;Landroidx/activity/b;)V
+.method public final a(Landroidx/lifecycle/j;Landroidx/activity/d;)V
     .locals 2
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -70,7 +70,7 @@
     iget-object v0, v0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 4
-    sget-object v1, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->f:Landroidx/lifecycle/f$c;
 
     if-ne v0, v1, :cond_0
 
@@ -80,17 +80,17 @@
     :cond_0
     new-instance v0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;
 
-    invoke-direct {v0, p0, p1, p2}, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;-><init>(Landroidx/activity/OnBackPressedDispatcher;Landroidx/lifecycle/f;Landroidx/activity/b;)V
+    invoke-direct {v0, p0, p1, p2}, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;-><init>(Landroidx/activity/OnBackPressedDispatcher;Landroidx/lifecycle/f;Landroidx/activity/d;)V
 
     .line 6
-    iget-object p1, p2, Landroidx/activity/b;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
+    iget-object p1, p2, Landroidx/activity/d;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
 
     invoke-virtual {p1, v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method
 
-.method public b()V
+.method public final b()V
     .locals 3
 
     .line 1
@@ -114,15 +114,15 @@
 
     move-result-object v1
 
-    check-cast v1, Landroidx/activity/b;
+    check-cast v1, Landroidx/activity/d;
 
     .line 5
-    iget-boolean v2, v1, Landroidx/activity/b;->a:Z
+    iget-boolean v2, v1, Landroidx/activity/d;->a:Z
 
     if-eqz v2, :cond_0
 
     .line 6
-    invoke-virtual {v1}, Landroidx/activity/b;->a()V
+    invoke-virtual {v1}, Landroidx/activity/d;->a()V
 
     return-void
 

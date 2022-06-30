@@ -15,7 +15,6 @@
 .method public static constructor <clinit>()V
     .locals 4
 
-    .line 1
     new-instance v0, Lio/sentry/SpanId;
 
     new-instance v1, Ljava/util/UUID;
@@ -147,7 +146,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SpanId;->value:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -160,7 +158,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SpanId;->value:Ljava/lang/String;
 
     return-object v0

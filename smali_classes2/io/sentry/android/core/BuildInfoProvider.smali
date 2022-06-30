@@ -15,7 +15,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,7 +25,6 @@
 .method public getBuildTags()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/os/Build;->TAGS:Ljava/lang/String;
 
     return-object v0
@@ -35,7 +33,6 @@
 .method public getSdkInfoVersion()I
     .locals 1
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     return v0

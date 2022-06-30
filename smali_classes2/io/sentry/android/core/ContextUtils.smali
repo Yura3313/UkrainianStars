@@ -7,7 +7,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -84,7 +83,6 @@
 .method private static getVersionCodeDep(Landroid/content/pm/PackageInfo;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
 
     invoke-static {p0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;

@@ -87,7 +87,6 @@
 
     new-array v0, v0, [C
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lokhttp3/HttpUrl;->HEX_DIGITS:[C
@@ -769,7 +768,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Lokhttp3/HttpUrl;->get(Ljava/lang/String;)Lokhttp3/HttpUrl;
 
@@ -1526,7 +1524,6 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Lokhttp3/HttpUrl;
 
     if-eqz v0, :cond_0
@@ -1559,7 +1556,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/HttpUrl;->fragment:Ljava/lang/String;
 
     return-object v0
@@ -1568,7 +1564,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/HttpUrl;->url:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -1581,7 +1576,6 @@
 .method public host()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/HttpUrl;->host:Ljava/lang/String;
 
     return-object v0
@@ -1590,7 +1584,6 @@
 .method public isHttps()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokhttp3/HttpUrl;->scheme:Ljava/lang/String;
 
     const-string v1, "https"
@@ -1714,7 +1707,6 @@
 .method public password()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/HttpUrl;->password:Ljava/lang/String;
 
     return-object v0
@@ -1731,7 +1723,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/HttpUrl;->pathSegments:Ljava/util/List;
 
     return-object v0
@@ -1740,7 +1731,6 @@
 .method public pathSize()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/HttpUrl;->pathSegments:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1753,7 +1743,6 @@
 .method public port()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/HttpUrl;->port:I
 
     return v0
@@ -2055,7 +2044,6 @@
 .method public querySize()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/HttpUrl;->queryNamesAndValues:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -2139,7 +2127,6 @@
 .method public scheme()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/HttpUrl;->scheme:Ljava/lang/String;
 
     return-object v0
@@ -2148,7 +2135,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/HttpUrl;->url:Ljava/lang/String;
 
     return-object v0
@@ -2273,7 +2259,6 @@
 .method public username()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/HttpUrl;->username:Ljava/lang/String;
 
     return-object v0

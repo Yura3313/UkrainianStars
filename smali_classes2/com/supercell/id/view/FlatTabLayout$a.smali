@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/view/FlatTabLayout;->a(Lcom/google/android/material/tabs/TabLayout$g;IZ)V
+    value = Lcom/supercell/id/view/FlatTabLayout;->b(Lcom/google/android/material/tabs/TabLayout$g;IZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/view/FlatTabLayout$a;
+.field public static final f:Lcom/supercell/id/view/FlatTabLayout$a;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/view/FlatTabLayout$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/view/FlatTabLayout$a;->g:Lcom/supercell/id/view/FlatTabLayout$a;
+    sput-object v0, Lcom/supercell/id/view/FlatTabLayout$a;->f:Lcom/supercell/id/view/FlatTabLayout$a;
 
     return-void
 .end method
@@ -50,17 +50,17 @@
     .line 1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lvd/r;->v:Lnc/a;
+    iget-object p1, p1, Lae/u;->w:Lsc/a;
 
     .line 3
-    sget-object v0, Lnc/a$a;->j:Lnc/a$a;
+    sget-object v0, Lsc/a$a;->i:Lsc/a$a;
 
-    invoke-virtual {p1, v0}, Lnc/a;->b(Lnc/a$a;)V
+    invoke-virtual {p1, v0}, Lsc/a;->b(Lsc/a$a;)V
 
     return-void
 .end method

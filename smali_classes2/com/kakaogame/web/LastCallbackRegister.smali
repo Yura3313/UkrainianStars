@@ -25,7 +25,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakaogame/web/LastCallbackRegister;
 
     invoke-direct {v0}, Lcom/kakaogame/web/LastCallbackRegister;-><init>()V
@@ -52,7 +51,6 @@
 .method public static getInstance()Lcom/kakaogame/web/LastCallbackRegister;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/web/LastCallbackRegister;->instance:Lcom/kakaogame/web/LastCallbackRegister;
 
     return-object v0
@@ -71,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/web/LastCallbackRegister;->callback:Lcom/kakaogame/KGResultCallback;
 
     return-object v0

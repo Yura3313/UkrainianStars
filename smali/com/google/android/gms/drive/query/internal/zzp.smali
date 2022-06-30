@@ -14,16 +14,16 @@
 
 
 # static fields
-.field public static final CREATOR:Ls2/i;
+.field public static final CREATOR:Lt2/i;
 
 
 # instance fields
-.field public final g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+.field public final f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
-.field public final h:Lp2/c;
+.field public final g:Lq2/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lp2/c<",
+            "Lq2/c<",
             "TT;>;"
         }
     .end annotation
@@ -34,12 +34,11 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Ls2/i;
+    new-instance v0, Lt2/i;
 
-    invoke-direct {v0}, Ls2/i;-><init>()V
+    invoke-direct {v0}, Lt2/i;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/drive/query/internal/zzp;->CREATOR:Ls2/i;
+    sput-object v0, Lcom/google/android/gms/drive/query/internal/zzp;->CREATOR:Lt2/i;
 
     return-void
 .end method
@@ -51,76 +50,73 @@
     invoke-direct {p0}, Lcom/google/android/gms/drive/query/internal/zza;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     .line 3
-    invoke-static {p1}, Ls2/f;->k(Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;)Lp2/a;
+    invoke-static {p1}, Lt2/f;->e(Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;)Lq2/a;
 
     move-result-object p1
 
-    check-cast p1, Lp2/c;
+    check-cast p1, Lq2/c;
 
-    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->h:Lp2/c;
+    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->g:Lq2/c;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final B1(Lj3/y1;)Ljava/lang/Object;
+.method public final I1(Lef/t;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
             "Ljava/lang/Object;",
             ">(",
-            "Lj3/y1;",
+            "Lef/t;",
             ")TF;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/query/internal/zzp;->h:Lp2/c;
+    iget-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->g:Lq2/c;
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iget-object v0, p0, Lcom/google/android/gms/drive/query/internal/zzp;->f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
-    invoke-virtual {v1, v0}, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->z2(Lp2/a;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->D2(Lq2/a;)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v0
 
-    check-cast v1, Ljava/util/Collection;
+    check-cast v0, Ljava/util/Collection;
 
-    invoke-interface {v1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v0
+
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Ljava/lang/Object;
 
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 p1, 0x2
-
-    new-array p1, p1, [Ljava/lang/Object;
-
-    .line 4
-    iget-object v0, v0, Lp2/b;->a:Ljava/lang/String;
+    iget-object p1, p1, Lq2/b;->a:Ljava/lang/String;
 
     const/4 v2, 0x0
 
-    aput-object v0, p1, v2
+    aput-object p1, v1, v2
 
-    const/4 v0, 0x1
+    const/4 p1, 0x1
 
-    aput-object v1, p1, v0
+    aput-object v0, v1, p1
 
-    const-string v0, "contains(%s,%s)"
+    const-string p1, "contains(%s,%s)"
 
-    .line 5
-    invoke-static {v0, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    .line 4
+    invoke-static {p1, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -133,21 +129,21 @@
     const/16 v0, 0x4f45
 
     .line 1
-    invoke-static {p1, v0}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v0
 
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/drive/query/internal/zzp;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iget-object v2, p0, Lcom/google/android/gms/drive/query/internal/zzp;->f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     const/4 v3, 0x0
 
-    invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 3
-    invoke-static {p1, v0}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

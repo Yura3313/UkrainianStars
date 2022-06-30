@@ -3,7 +3,7 @@
 
 
 # virtual methods
-.method public getErrorCode()I
+.method public final getErrorCode()I
     .locals 1
 
     const/4 v0, 0x0

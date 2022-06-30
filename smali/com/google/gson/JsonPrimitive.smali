@@ -126,7 +126,6 @@
 .method public bridge synthetic deepCopy()Lcom/google/gson/JsonElement;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->deepCopy()Lcom/google/gson/JsonPrimitive;
 
     move-result-object v0
@@ -306,7 +305,6 @@
 .method public getAsBigDecimal()Ljava/math/BigDecimal;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonPrimitive;->value:Ljava/lang/Object;
 
     instance-of v1, v0, Ljava/math/BigDecimal;
@@ -399,7 +397,6 @@
 .method public getAsByte()B
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->isNumber()Z
 
     move-result v0
@@ -432,7 +429,6 @@
 .method public getAsCharacter()C
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->getAsString()Ljava/lang/String;
 
     move-result-object v0
@@ -449,7 +445,6 @@
 .method public getAsDouble()D
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->isNumber()Z
 
     move-result v0
@@ -482,7 +477,6 @@
 .method public getAsFloat()F
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->isNumber()Z
 
     move-result v0
@@ -515,7 +509,6 @@
 .method public getAsInt()I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->isNumber()Z
 
     move-result v0
@@ -548,7 +541,6 @@
 .method public getAsLong()J
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->isNumber()Z
 
     move-result v0
@@ -581,7 +573,6 @@
 .method public getAsNumber()Ljava/lang/Number;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonPrimitive;->value:Ljava/lang/Object;
 
     instance-of v1, v0, Ljava/lang/String;
@@ -608,7 +599,6 @@
 .method public getAsShort()S
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->isNumber()Z
 
     move-result v0
@@ -762,7 +752,6 @@
 .method public isBoolean()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonPrimitive;->value:Ljava/lang/Object;
 
     instance-of v0, v0, Ljava/lang/Boolean;
@@ -773,7 +762,6 @@
 .method public isNumber()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonPrimitive;->value:Ljava/lang/Object;
 
     instance-of v0, v0, Ljava/lang/Number;
@@ -784,7 +772,6 @@
 .method public isString()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonPrimitive;->value:Ljava/lang/Object;
 
     instance-of v0, v0, Ljava/lang/String;

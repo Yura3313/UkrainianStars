@@ -1,4 +1,4 @@
-.class public Lcom/journeyapps/barcodescanner/ViewfinderView$a;
+.class public final Lcom/journeyapps/barcodescanner/ViewfinderView$a;
 .super Ljava/lang/Object;
 .source "ViewfinderView.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/journeyapps/barcodescanner/ViewfinderView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/journeyapps/barcodescanner/ViewfinderView$a;->a:Lcom/journeyapps/barcodescanner/ViewfinderView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 1
 
     .line 1
@@ -51,25 +50,25 @@
     return-void
 .end method
 
-.method public b(Ljava/lang/Exception;)V
+.method public final b(Ljava/lang/Exception;)V
     .locals 0
 
     return-void
 .end method
 
-.method public c()V
+.method public final c()V
     .locals 0
 
     return-void
 .end method
 
-.method public d()V
+.method public final d()V
     .locals 0
 
     return-void
 .end method
 
-.method public e()V
+.method public final e()V
     .locals 0
 
     return-void

@@ -299,7 +299,7 @@
 
     move-result-object p1
 
-    invoke-interface {p1}, Ljavax/crypto/SecretKey;->getEncoded()[B
+    invoke-interface {p1}, Ljava/security/Key;->getEncoded()[B
 
     move-result-object p1
     :try_end_0

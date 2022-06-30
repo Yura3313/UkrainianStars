@@ -4,16 +4,15 @@
 
 
 # instance fields
-.field public g:Lcom/journeyapps/barcodescanner/b;
+.field public f:Lcom/journeyapps/barcodescanner/b;
 
-.field public h:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
+.field public g:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
     return-void
@@ -21,7 +20,7 @@
 
 
 # virtual methods
-.method public onCreate(Landroid/os/Bundle;)V
+.method public final onCreate(Landroid/os/Bundle;)V
     .locals 17
 
     move-object/from16 v0, p0
@@ -46,16 +45,16 @@
     check-cast v2, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     .line 4
-    iput-object v2, v0, Lcom/journeyapps/barcodescanner/CaptureActivity;->h:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
+    iput-object v2, v0, Lcom/journeyapps/barcodescanner/CaptureActivity;->g:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     .line 5
     new-instance v2, Lcom/journeyapps/barcodescanner/b;
 
-    iget-object v3, v0, Lcom/journeyapps/barcodescanner/CaptureActivity;->h:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
+    iget-object v3, v0, Lcom/journeyapps/barcodescanner/CaptureActivity;->g:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     invoke-direct {v2, v0, v3}, Lcom/journeyapps/barcodescanner/b;-><init>(Landroid/app/Activity;Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;)V
 
-    iput-object v2, v0, Lcom/journeyapps/barcodescanner/CaptureActivity;->g:Lcom/journeyapps/barcodescanner/b;
+    iput-object v2, v0, Lcom/journeyapps/barcodescanner/CaptureActivity;->f:Lcom/journeyapps/barcodescanner/b;
 
     .line 6
     invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
@@ -129,7 +128,7 @@
     .line 14
     iget-object v8, v2, Lcom/journeyapps/barcodescanner/b;->a:Landroid/app/Activity;
 
-    invoke-virtual {v8}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v8}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
@@ -210,7 +209,7 @@
     invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 19
-    sget-object v8, Lg6/d;->a:Ljava/util/regex/Pattern;
+    sget-object v8, Li6/d;->a:Ljava/util/regex/Pattern;
 
     const-string v8, "SCAN_FORMATS"
 
@@ -224,7 +223,7 @@
     if-eqz v8, :cond_8
 
     .line 21
-    sget-object v10, Lg6/d;->a:Ljava/util/regex/Pattern;
+    sget-object v10, Li6/d;->a:Ljava/util/regex/Pattern;
 
     invoke-virtual {v10, v8}, Ljava/util/regex/Pattern;->split(Ljava/lang/CharSequence;)[Ljava/lang/String;
 
@@ -250,7 +249,7 @@
     if-eqz v8, :cond_9
 
     .line 23
-    const-class v11, Lc6/a;
+    const-class v11, Le6/a;
 
     invoke-static {v11}, Ljava/util/EnumSet;->noneOf(Ljava/lang/Class;)Ljava/util/EnumSet;
 
@@ -276,7 +275,7 @@
     check-cast v12, Ljava/lang/String;
 
     .line 25
-    invoke-static {v12}, Lc6/a;->valueOf(Ljava/lang/String;)Lc6/a;
+    invoke-static {v12}, Le6/a;->valueOf(Ljava/lang/String;)Le6/a;
 
     move-result-object v12
 
@@ -293,9 +292,7 @@
     if-eqz v10, :cond_a
 
     .line 26
-    sget-object v8, Lg6/d;->b:Ljava/util/Map;
-
-    check-cast v8, Ljava/util/HashMap;
+    sget-object v8, Li6/d;->i:Ljava/util/HashMap;
 
     invoke-virtual {v8, v10}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -313,7 +310,7 @@
     .line 27
     :cond_b
     :goto_5
-    sget v8, Lg6/e;->a:I
+    sget v8, Li6/e;->a:I
 
     .line 28
     invoke-virtual {v3}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
@@ -335,12 +332,12 @@
     :cond_c
     new-instance v9, Ljava/util/EnumMap;
 
-    const-class v10, Lc6/d;
+    const-class v10, Le6/d;
 
     invoke-direct {v9, v10}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 31
-    invoke-static {}, Lc6/d;->values()[Lc6/d;
+    invoke-static {}, Le6/d;->values()[Le6/d;
 
     move-result-object v10
 
@@ -354,15 +351,15 @@
     aget-object v14, v10, v13
 
     .line 32
-    sget-object v15, Lc6/d;->k:Lc6/d;
+    sget-object v15, Le6/d;->j:Le6/d;
 
     if-eq v14, v15, :cond_10
 
-    sget-object v15, Lc6/d;->p:Lc6/d;
+    sget-object v15, Le6/d;->o:Le6/d;
 
     if-eq v14, v15, :cond_10
 
-    sget-object v15, Lc6/d;->i:Lc6/d;
+    sget-object v15, Le6/d;->h:Le6/d;
 
     if-ne v14, v15, :cond_d
 
@@ -382,7 +379,7 @@
     if-eqz v16, :cond_10
 
     .line 35
-    iget-object v1, v14, Lc6/d;->g:Ljava/lang/Class;
+    iget-object v1, v14, Le6/d;->f:Ljava/lang/Class;
 
     .line 36
     const-class v6, Ljava/lang/Void;
@@ -407,7 +404,7 @@
     move-result-object v1
 
     .line 39
-    iget-object v6, v14, Lc6/d;->g:Ljava/lang/Class;
+    iget-object v6, v14, Le6/d;->f:Ljava/lang/Class;
 
     .line 40
     invoke-virtual {v6, v1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
@@ -425,9 +422,7 @@
     :cond_f
     invoke-virtual {v14}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    if-eqz v1, :cond_10
-
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-static {v1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     :cond_10
     :goto_7
@@ -446,9 +441,9 @@
     .line 44
     :cond_12
     :goto_8
-    new-instance v1, Lpb/f;
+    new-instance v1, Lsb/f;
 
-    invoke-direct {v1}, Lpb/f;-><init>()V
+    invoke-direct {v1}, Lsb/f;-><init>()V
 
     const-string v6, "SCAN_CAMERA_ID"
 
@@ -467,7 +462,7 @@
     if-ltz v4, :cond_13
 
     .line 47
-    iput v4, v1, Lpb/f;->a:I
+    iput v4, v1, Lsb/f;->a:I
 
     :cond_13
     const-string v4, "PROMPT_MESSAGE"
@@ -498,26 +493,26 @@
     move-result-object v6
 
     .line 52
-    new-instance v8, Lc6/g;
+    new-instance v8, Le6/g;
 
-    invoke-direct {v8}, Lc6/g;-><init>()V
+    invoke-direct {v8}, Le6/g;-><init>()V
 
     .line 53
-    invoke-virtual {v8, v9}, Lc6/g;->d(Ljava/util/Map;)V
+    invoke-virtual {v8, v9}, Le6/g;->d(Ljava/util/Map;)V
 
     .line 54
-    iget-object v8, v5, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v8, v5, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
-    invoke-virtual {v8, v1}, Lcom/journeyapps/barcodescanner/CameraPreview;->setCameraSettings(Lpb/f;)V
+    invoke-virtual {v8, v1}, Lcom/journeyapps/barcodescanner/CameraPreview;->setCameraSettings(Lsb/f;)V
 
     .line 55
-    iget-object v1, v5, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v1, v5, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
-    new-instance v5, Lob/i;
+    new-instance v5, Lrb/i;
 
-    invoke-direct {v5, v11, v9, v6, v4}, Lob/i;-><init>(Ljava/util/Collection;Ljava/util/Map;Ljava/lang/String;I)V
+    invoke-direct {v5, v11, v9, v6, v4}, Lrb/i;-><init>(Ljava/util/Collection;Ljava/util/Map;Ljava/lang/String;I)V
 
-    invoke-virtual {v1, v5}, Lcom/journeyapps/barcodescanner/BarcodeView;->setDecoderFactory(Lob/f;)V
+    invoke-virtual {v1, v5}, Lcom/journeyapps/barcodescanner/BarcodeView;->setDecoderFactory(Lrb/f;)V
 
     :cond_15
     const-string v1, "BEEP_ENABLED"
@@ -532,10 +527,10 @@
     if-nez v1, :cond_16
 
     .line 57
-    iget-object v1, v2, Lcom/journeyapps/barcodescanner/b;->g:Lg6/c;
+    iget-object v1, v2, Lcom/journeyapps/barcodescanner/b;->g:Li6/c;
 
     .line 58
-    iput-boolean v7, v1, Lg6/c;->b:Z
+    iput-boolean v7, v1, Li6/c;->b:Z
 
     :cond_16
     const-string v1, "TIMEOUT"
@@ -548,9 +543,9 @@
     if-eqz v4, :cond_17
 
     .line 60
-    new-instance v4, Lob/d;
+    new-instance v4, Lrb/d;
 
-    invoke-direct {v4, v2}, Lob/d;-><init>(Lcom/journeyapps/barcodescanner/b;)V
+    invoke-direct {v4, v2}, Lrb/d;-><init>(Lcom/journeyapps/barcodescanner/b;)V
 
     .line 61
     iget-object v5, v2, Lcom/journeyapps/barcodescanner/b;->h:Landroid/os/Handler;
@@ -580,27 +575,27 @@
 
     .line 64
     :cond_18
-    iget-object v1, v0, Lcom/journeyapps/barcodescanner/CaptureActivity;->g:Lcom/journeyapps/barcodescanner/b;
+    iget-object v1, v0, Lcom/journeyapps/barcodescanner/CaptureActivity;->f:Lcom/journeyapps/barcodescanner/b;
 
     .line 65
     iget-object v2, v1, Lcom/journeyapps/barcodescanner/b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
-    iget-object v1, v1, Lcom/journeyapps/barcodescanner/b;->j:Lob/a;
+    iget-object v1, v1, Lcom/journeyapps/barcodescanner/b;->j:Lcom/journeyapps/barcodescanner/b$a;
 
     .line 66
-    iget-object v3, v2, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v3, v2, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     new-instance v4, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;
 
-    invoke-direct {v4, v2, v1}, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;-><init>(Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;Lob/a;)V
+    invoke-direct {v4, v2, v1}, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;-><init>(Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;Lrb/a;)V
 
     const/4 v1, 0x2
 
     .line 67
-    iput v1, v3, Lcom/journeyapps/barcodescanner/BarcodeView;->H:I
+    iput v1, v3, Lcom/journeyapps/barcodescanner/BarcodeView;->G:I
 
     .line 68
-    iput-object v4, v3, Lcom/journeyapps/barcodescanner/BarcodeView;->I:Lob/a;
+    iput-object v4, v3, Lcom/journeyapps/barcodescanner/BarcodeView;->H:Lrb/a;
 
     .line 69
     invoke-virtual {v3}, Lcom/journeyapps/barcodescanner/BarcodeView;->j()V
@@ -608,14 +603,14 @@
     return-void
 .end method
 
-.method public onDestroy()V
+.method public final onDestroy()V
     .locals 2
 
     .line 1
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
     .line 2
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->g:Lcom/journeyapps/barcodescanner/b;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->f:Lcom/journeyapps/barcodescanner/b;
 
     const/4 v1, 0x1
 
@@ -623,9 +618,9 @@
     iput-boolean v1, v0, Lcom/journeyapps/barcodescanner/b;->e:Z
 
     .line 4
-    iget-object v1, v0, Lcom/journeyapps/barcodescanner/b;->f:Lg6/f;
+    iget-object v1, v0, Lcom/journeyapps/barcodescanner/b;->f:Li6/f;
 
-    invoke-virtual {v1}, Lg6/f;->a()V
+    invoke-virtual {v1}, Li6/f;->b()V
 
     .line 5
     iget-object v0, v0, Lcom/journeyapps/barcodescanner/b;->h:Landroid/os/Handler;
@@ -637,11 +632,10 @@
     return-void
 .end method
 
-.method public onKeyDown(ILandroid/view/KeyEvent;)Z
+.method public final onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->h:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->g:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     invoke-virtual {v0, p1, p2}, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
@@ -670,28 +664,28 @@
     return p1
 .end method
 
-.method public onPause()V
+.method public final onPause()V
     .locals 8
 
     .line 1
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
     .line 2
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->g:Lcom/journeyapps/barcodescanner/b;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->f:Lcom/journeyapps/barcodescanner/b;
 
     .line 3
-    iget-object v1, v0, Lcom/journeyapps/barcodescanner/b;->f:Lg6/f;
+    iget-object v1, v0, Lcom/journeyapps/barcodescanner/b;->f:Li6/f;
 
-    invoke-virtual {v1}, Lg6/f;->a()V
+    invoke-virtual {v1}, Li6/f;->b()V
 
     .line 4
     iget-object v0, v0, Lcom/journeyapps/barcodescanner/b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     .line 5
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     .line 6
-    invoke-virtual {v0}, Lcom/journeyapps/barcodescanner/CameraPreview;->getCameraInstance()Lpb/d;
+    invoke-virtual {v0}, Lcom/journeyapps/barcodescanner/CameraPreview;->getCameraInstance()Lsb/d;
 
     move-result-object v1
 
@@ -707,7 +701,7 @@
     if-eqz v1, :cond_1
 
     .line 9
-    iget-boolean v0, v1, Lpb/d;->g:Z
+    iget-boolean v0, v1, Lsb/d;->g:Z
 
     if-nez v0, :cond_1
 
@@ -743,11 +737,11 @@
     return-void
 .end method
 
-.method public onRequestPermissionsResult(I[Ljava/lang/String;[I)V
+.method public final onRequestPermissionsResult(I[Ljava/lang/String;[I)V
     .locals 1
 
     .line 1
-    iget-object p2, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->g:Lcom/journeyapps/barcodescanner/b;
+    iget-object p2, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->f:Lcom/journeyapps/barcodescanner/b;
 
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -769,30 +763,27 @@
     .line 3
     iget-object p1, p2, Lcom/journeyapps/barcodescanner/b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
-    .line 4
-    iget-object p1, p1, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
-
-    invoke-virtual {p1}, Lcom/journeyapps/barcodescanner/CameraPreview;->f()V
+    invoke-virtual {p1}, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->b()V
 
     goto :goto_0
 
-    .line 5
+    .line 4
     :cond_0
-    invoke-virtual {p2}, Lcom/journeyapps/barcodescanner/b;->b()V
+    invoke-virtual {p2}, Lcom/journeyapps/barcodescanner/b;->c()V
 
     :cond_1
     :goto_0
     return-void
 .end method
 
-.method public onResume()V
+.method public final onResume()V
     .locals 6
 
     .line 1
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
     .line 2
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->g:Lcom/journeyapps/barcodescanner/b;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->f:Lcom/journeyapps/barcodescanner/b;
 
     .line 3
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -817,20 +808,17 @@
     .line 5
     iget-object v1, v0, Lcom/journeyapps/barcodescanner/b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
-    .line 6
-    iget-object v1, v1, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
-
-    invoke-virtual {v1}, Lcom/journeyapps/barcodescanner/CameraPreview;->f()V
+    invoke-virtual {v1}, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->b()V
 
     goto :goto_0
 
-    .line 7
+    .line 6
     :cond_0
     iget-boolean v1, v0, Lcom/journeyapps/barcodescanner/b;->l:Z
 
     if-nez v1, :cond_2
 
-    .line 8
+    .line 7
     iget-object v1, v0, Lcom/journeyapps/barcodescanner/b;->a:Landroid/app/Activity;
 
     new-array v4, v2, [Ljava/lang/String;
@@ -841,36 +829,33 @@
 
     const/16 v3, 0xfa
 
-    invoke-static {v1, v4, v3}, Lu/a;->h(Landroid/app/Activity;[Ljava/lang/String;I)V
+    invoke-static {v1, v4, v3}, Lu/a;->k(Landroid/app/Activity;[Ljava/lang/String;I)V
 
-    .line 9
+    .line 8
     iput-boolean v2, v0, Lcom/journeyapps/barcodescanner/b;->l:Z
 
     goto :goto_0
 
-    .line 10
+    .line 9
     :cond_1
     iget-object v1, v0, Lcom/journeyapps/barcodescanner/b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
-    .line 11
-    iget-object v1, v1, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    invoke-virtual {v1}, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->b()V
 
-    invoke-virtual {v1}, Lcom/journeyapps/barcodescanner/CameraPreview;->f()V
-
-    .line 12
+    .line 10
     :cond_2
     :goto_0
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/b;->f:Lg6/f;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/b;->f:Li6/f;
 
-    .line 13
-    iget-boolean v1, v0, Lg6/f;->c:Z
+    .line 11
+    iget-boolean v1, v0, Li6/f;->c:Z
 
     if-nez v1, :cond_3
 
-    .line 14
-    iget-object v1, v0, Lg6/f;->a:Landroid/content/Context;
+    .line 12
+    iget-object v1, v0, Li6/f;->a:Landroid/content/Context;
 
-    iget-object v3, v0, Lg6/f;->b:Landroid/content/BroadcastReceiver;
+    iget-object v3, v0, Li6/f;->b:Li6/f$a;
 
     new-instance v4, Landroid/content/IntentFilter;
 
@@ -880,43 +865,24 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 15
-    iput-boolean v2, v0, Lg6/f;->c:Z
+    .line 13
+    iput-boolean v2, v0, Li6/f;->c:Z
 
-    .line 16
+    .line 14
     :cond_3
-    iget-object v1, v0, Lg6/f;->d:Landroid/os/Handler;
+    invoke-virtual {v0}, Li6/f;->a()V
 
-    const/4 v2, 0x0
-
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
-
-    .line 17
-    iget-boolean v1, v0, Lg6/f;->f:Z
-
-    if-eqz v1, :cond_4
-
-    .line 18
-    iget-object v1, v0, Lg6/f;->d:Landroid/os/Handler;
-
-    iget-object v0, v0, Lg6/f;->e:Ljava/lang/Runnable;
-
-    const-wide/32 v2, 0x493e0
-
-    invoke-virtual {v1, v0, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    :cond_4
     return-void
 .end method
 
-.method public onSaveInstanceState(Landroid/os/Bundle;)V
+.method public final onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
 
     .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->g:Lcom/journeyapps/barcodescanner/b;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/CaptureActivity;->f:Lcom/journeyapps/barcodescanner/b;
 
     .line 3
     iget v0, v0, Lcom/journeyapps/barcodescanner/b;->c:I

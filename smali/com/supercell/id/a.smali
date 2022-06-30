@@ -1,25 +1,25 @@
 .class public final Lcom/supercell/id/a;
-.super Lle/j;
+.super Lse/h;
 .source "SupercellId.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
+        "Lse/h;",
+        "Lre/l<",
         "Ljava/lang/Boolean;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/a;
+.field public static final f:Lcom/supercell/id/a;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/a;->g:Lcom/supercell/id/a;
+    sput-object v0, Lcom/supercell/id/a;->f:Lcom/supercell/id/a;
 
     return-void
 .end method
@@ -40,14 +40,14 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 1
@@ -61,7 +61,7 @@
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
 .end method

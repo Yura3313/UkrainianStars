@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final E:[Ljava/lang/String;
+.field public static final D:[Ljava/lang/String;
 
 
 # direct methods
@@ -21,8 +21,7 @@
 
     aput-object v2, v0, v1
 
-    .line 1
-    sput-object v0, Landroidx/transition/ChangeClipBounds;->E:[Ljava/lang/String;
+    sput-object v0, Landroidx/transition/ChangeClipBounds;->D:[Ljava/lang/String;
 
     return-void
 .end method
@@ -47,7 +46,7 @@
 
 
 # virtual methods
-.method public final J(Lv0/s;)V
+.method public final L(Lv0/s;)V
     .locals 4
 
     .line 1
@@ -74,11 +73,11 @@
     move-result-object v1
 
     .line 5
-    iget-object v2, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object v2, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v3, "android:clipBounds:clip"
 
-    invoke-interface {v2, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v3, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     if-nez v1, :cond_1
 
@@ -98,35 +97,33 @@
     invoke-direct {v1, v3, v3, v2, v0}, Landroid/graphics/Rect;-><init>(IIII)V
 
     .line 7
-    iget-object p1, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object p1, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v0, "android:clipBounds:bounds"
 
-    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_1
     return-void
 .end method
 
-.method public d(Lv0/s;)V
+.method public final d(Lv0/s;)V
     .locals 0
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeClipBounds;->J(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeClipBounds;->L(Lv0/s;)V
 
     return-void
 .end method
 
-.method public g(Lv0/s;)V
+.method public final g(Lv0/s;)V
     .locals 0
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeClipBounds;->J(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeClipBounds;->L(Lv0/s;)V
 
     return-void
 .end method
 
-.method public l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public final l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
     .locals 7
 
     const/4 p1, 0x0
@@ -136,21 +133,21 @@
     if-eqz p3, :cond_6
 
     .line 1
-    iget-object v0, p2, Lv0/s;->a:Ljava/util/Map;
+    iget-object v0, p2, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v1, "android:clipBounds:clip"
 
     .line 2
-    invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p3, Lv0/s;->a:Ljava/util/Map;
+    iget-object v0, p3, Lv0/s;->a:Ljava/util/HashMap;
 
     .line 3
-    invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -160,26 +157,26 @@
 
     .line 4
     :cond_0
-    iget-object v0, p2, Lv0/s;->a:Ljava/util/Map;
+    iget-object v0, p2, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/graphics/Rect;
 
     .line 5
-    iget-object v2, p3, Lv0/s;->a:Ljava/util/Map;
+    iget-object v2, p3, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/graphics/Rect;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    const/4 v3, 0x1
 
     if-nez v1, :cond_1
 
@@ -203,9 +200,9 @@
     if-nez v0, :cond_3
 
     .line 6
-    iget-object p2, p2, Lv0/s;->a:Ljava/util/Map;
+    iget-object p2, p2, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {p2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
@@ -219,9 +216,9 @@
     if-nez v1, :cond_4
 
     .line 7
-    iget-object p2, p3, Lv0/s;->a:Ljava/util/Map;
+    iget-object p2, p3, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {p2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
@@ -261,15 +258,15 @@
     .line 12
     iget-object p2, p3, Lv0/s;->b:Landroid/view/View;
 
-    sget-object v5, Lv0/x;->c:Landroid/util/Property;
+    sget-object v5, Lv0/x;->c:Lv0/x$b;
 
     const/4 v6, 0x2
 
     new-array v6, v6, [Landroid/graphics/Rect;
 
-    aput-object v0, v6, v3
+    aput-object v0, v6, v2
 
-    aput-object v1, v6, v2
+    aput-object v1, v6, v3
 
     invoke-static {p2, v5, p1, v6}, Landroid/animation/ObjectAnimator;->ofObject(Ljava/lang/Object;Landroid/util/Property;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ObjectAnimator;
 
@@ -283,20 +280,19 @@
     .line 14
     new-instance p3, Landroidx/transition/ChangeClipBounds$a;
 
-    invoke-direct {p3, p0, p2}, Landroidx/transition/ChangeClipBounds$a;-><init>(Landroidx/transition/ChangeClipBounds;Landroid/view/View;)V
+    invoke-direct {p3, p2}, Landroidx/transition/ChangeClipBounds$a;-><init>(Landroid/view/View;)V
 
-    invoke-virtual {p1, p3}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {p1, p3}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     :cond_6
     :goto_2
     return-object p1
 .end method
 
-.method public r()[Ljava/lang/String;
+.method public final r()[Ljava/lang/String;
     .locals 1
 
-    .line 1
-    sget-object v0, Landroidx/transition/ChangeClipBounds;->E:[Ljava/lang/String;
+    sget-object v0, Landroidx/transition/ChangeClipBounds;->D:[Ljava/lang/String;
 
     return-object v0
 .end method

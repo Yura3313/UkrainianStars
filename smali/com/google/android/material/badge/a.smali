@@ -1,10 +1,10 @@
-.class public Lcom/google/android/material/badge/a;
+.class public final Lcom/google/android/material/badge/a;
 .super Ljava/lang/Object;
 .source "BadgeUtils.java"
 
 
 # direct methods
-.method public static a(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;Landroid/widget/FrameLayout;)V
+.method public static a(Lcom/google/android/material/badge/BadgeDrawable;Landroid/view/View;)V
     .locals 1
 
     .line 1
@@ -18,25 +18,10 @@
     .line 3
     invoke-virtual {p0, v0}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
+    const/4 v0, 0x0
+
     .line 4
-    new-instance v0, Ljava/lang/ref/WeakReference;
-
-    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
-
-    iput-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->u:Ljava/lang/ref/WeakReference;
-
-    .line 5
-    new-instance p1, Ljava/lang/ref/WeakReference;
-
-    invoke-direct {p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
-
-    iput-object p1, p0, Lcom/google/android/material/badge/BadgeDrawable;->v:Ljava/lang/ref/WeakReference;
-
-    .line 6
-    invoke-virtual {p0}, Lcom/google/android/material/badge/BadgeDrawable;->k()V
-
-    .line 7
-    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/material/badge/BadgeDrawable;->k(Landroid/view/View;Landroid/view/ViewGroup;)V
 
     return-void
 .end method

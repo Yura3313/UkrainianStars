@@ -1,64 +1,26 @@
-.class public Lb9/b;
+.class public abstract Lb9/b;
 .super Ljava/lang/Object;
-.source "SISearchResultDTO.java"
+.source "BaseSmartIntentViewState.java"
 
 
 # instance fields
-.field public final a:Z
+.field public final a:Ljava/lang/String;
 
-.field public final b:Ljava/lang/Integer;
-
-.field public final c:Ljava/lang/Integer;
-
-.field public final d:Ljava/lang/Integer;
-
-.field public final e:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lcom/helpshift/util/a0<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Double;",
-            ">;>;"
-        }
-    .end annotation
-.end field
+.field public final b:Z
 
 
 # direct methods
-.method public constructor <init>(ZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/util/List;)V
+.method public constructor <init>(Ljava/lang/String;Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(Z",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Integer;",
-            "Ljava/util/List<",
-            "Lcom/helpshift/util/a0<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Double;",
-            ">;>;)V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-boolean p1, p0, Lb9/b;->a:Z
+    iput-object p1, p0, Lb9/b;->a:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lb9/b;->b:Ljava/lang/Integer;
-
-    .line 4
-    iput-object p3, p0, Lb9/b;->c:Ljava/lang/Integer;
-
-    .line 5
-    iput-object p4, p0, Lb9/b;->d:Ljava/lang/Integer;
-
-    .line 6
-    iput-object p5, p0, Lb9/b;->e:Ljava/util/List;
+    iput-boolean p2, p0, Lb9/b;->b:Z
 
     return-void
 .end method

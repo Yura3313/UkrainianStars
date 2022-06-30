@@ -11,7 +11,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -20,7 +19,6 @@
 .method public static synthetic access$000(Ljava/net/URL;)Z
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/server/ServerSecurityManager;->isRealHost(Ljava/net/URL;)Z
 
     move-result p0
@@ -31,7 +29,6 @@
 .method public static getHostnameVerifier(Ljava/net/URL;)Ljavax/net/ssl/HostnameVerifier;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakaogame/server/ServerSecurityManager$1;
 
     invoke-direct {v0, p0}, Lcom/kakaogame/server/ServerSecurityManager$1;-><init>(Ljava/net/URL;)V
@@ -104,7 +101,6 @@
 .method private static getTrustManager()Ljavax/net/ssl/TrustManager;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakaogame/server/ServerSecurityManager$2;
 
     invoke-direct {v0}, Lcom/kakaogame/server/ServerSecurityManager$2;-><init>()V

@@ -39,7 +39,6 @@
 .method public constructor <init>(Lcom/kakaogame/auth/view/LoginUIManager$RequestType;Landroid/app/Activity;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/LoginUIManager$14;->val$requestType:Lcom/kakaogame/auth/view/LoginUIManager$RequestType;
 
     iput-object p2, p0, Lcom/kakaogame/auth/view/LoginUIManager$14;->val$activity:Landroid/app/Activity;

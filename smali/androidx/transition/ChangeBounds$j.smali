@@ -1,4 +1,4 @@
-.class public Landroidx/transition/ChangeBounds$j;
+.class public final Landroidx/transition/ChangeBounds$j;
 .super Ljava/lang/Object;
 .source "ChangeBounds.java"
 
@@ -45,7 +45,7 @@
 
 
 # virtual methods
-.method public a(Landroid/graphics/PointF;)V
+.method public final a(Landroid/graphics/PointF;)V
     .locals 4
 
     .line 1
@@ -101,7 +101,7 @@
     return-void
 .end method
 
-.method public b(Landroid/graphics/PointF;)V
+.method public final b(Landroid/graphics/PointF;)V
     .locals 4
 
     .line 1

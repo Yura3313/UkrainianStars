@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +37,6 @@
 .method public onLogin(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/server/PresenceService;->startHeartbeat()V
 
     return-void
@@ -47,7 +45,6 @@
 .method public onLogout(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/server/PresenceService;->access$100()V
 
     return-void
@@ -56,7 +53,6 @@
 .method public onPause()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/server/PresenceService;->access$100()V
 
     return-void
@@ -65,7 +61,6 @@
 .method public onUnregister(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/server/PresenceService;->access$100()V
 
     return-void

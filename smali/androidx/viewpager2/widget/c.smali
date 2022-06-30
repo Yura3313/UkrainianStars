@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/List;
+.field public final a:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -16,8 +16,8 @@
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Landroidx/viewpager2/widget/ViewPager2$g;-><init>()V
@@ -25,23 +25,25 @@
     .line 2
     new-instance v0, Ljava/util/ArrayList;
 
-    invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(I)V
+    const/4 v1, 0x3
 
-    iput-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/List;
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    iput-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/ArrayList;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(I)V
+.method public final a(I)V
     .locals 2
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/List;
+    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/ArrayList;
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -72,7 +74,7 @@
     move-exception p1
 
     .line 3
-    invoke-virtual {p0, p1}, Landroidx/viewpager2/widget/c;->d(Ljava/util/ConcurrentModificationException;)V
+    invoke-virtual {p0, p1}, Landroidx/viewpager2/widget/c;->e(Ljava/util/ConcurrentModificationException;)V
 
     const/4 p1, 0x0
 
@@ -85,14 +87,14 @@
     goto :goto_1
 .end method
 
-.method public b(IFI)V
+.method public final b(IFI)V
     .locals 2
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/List;
+    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/ArrayList;
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -123,7 +125,7 @@
     move-exception p1
 
     .line 3
-    invoke-virtual {p0, p1}, Landroidx/viewpager2/widget/c;->d(Ljava/util/ConcurrentModificationException;)V
+    invoke-virtual {p0, p1}, Landroidx/viewpager2/widget/c;->e(Ljava/util/ConcurrentModificationException;)V
 
     const/4 p1, 0x0
 
@@ -136,14 +138,14 @@
     goto :goto_1
 .end method
 
-.method public c(I)V
+.method public final c(I)V
     .locals 2
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/List;
+    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/ArrayList;
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -174,7 +176,7 @@
     move-exception p1
 
     .line 3
-    invoke-virtual {p0, p1}, Landroidx/viewpager2/widget/c;->d(Ljava/util/ConcurrentModificationException;)V
+    invoke-virtual {p0, p1}, Landroidx/viewpager2/widget/c;->e(Ljava/util/ConcurrentModificationException;)V
 
     const/4 p1, 0x0
 
@@ -187,10 +189,19 @@
     goto :goto_1
 .end method
 
-.method public final d(Ljava/util/ConcurrentModificationException;)V
+.method public final d(Landroidx/viewpager2/widget/ViewPager2$g;)V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public final e(Ljava/util/ConcurrentModificationException;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "Adding and removing callbacks during dispatch to callbacks is not supported"

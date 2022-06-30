@@ -57,7 +57,7 @@
     iput v0, p0, Landroidx/viewpager/widget/ViewPager$LayoutParams;->c:F
 
     .line 5
-    sget-object v0, Landroidx/viewpager/widget/ViewPager;->k0:[I
+    sget-object v0, Landroidx/viewpager/widget/ViewPager;->j0:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 

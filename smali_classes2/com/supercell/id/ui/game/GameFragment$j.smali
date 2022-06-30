@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/game/GameFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/game/GameFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -40,7 +40,7 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-static {v0, p1}, Lc2/n0;->e(II)Loe/c;
+    invoke-static {v0, p1}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
 
     move-result-object p1
 
@@ -49,7 +49,7 @@
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v2}, Lbe/g;->v(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
     move-result v2
 
@@ -69,9 +69,9 @@
 
     move-object v2, p1
 
-    check-cast v2, Lbe/t;
+    check-cast v2, Lje/s;
 
-    invoke-virtual {v2}, Lbe/t;->b()I
+    invoke-virtual {v2}, Lje/s;->a()I
 
     move-result v2
 
@@ -84,7 +84,7 @@
 
     sget v5, Lcom/supercell/id/R$id;->contentList:I
 
-    invoke-virtual {v4, v5}, Lcom/supercell/id/ui/game/GameFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {v4, v5}, Lcom/supercell/id/ui/game/GameFragment;->f1(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -126,9 +126,9 @@
     move-result-object v2
 
     .line 5
-    new-instance v4, Lae/d;
+    new-instance v4, Lie/d;
 
-    invoke-direct {v4, v3, v2}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, v3, v2}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 6
     invoke-interface {v1, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
@@ -141,7 +141,7 @@
 
     invoke-direct {p1}, Lcom/supercell/id/ui/game/GameFragment$j$a;-><init>()V
 
-    invoke-static {v1, p1}, Lbe/k;->R(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v1, p1}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object p1
 
@@ -150,10 +150,10 @@
 
     move-result-object p1
 
-    check-cast p1, Lae/d;
+    check-cast p1, Lie/d;
 
     .line 9
-    iget-object p1, p1, Lae/d;->g:Ljava/lang/Object;
+    iget-object p1, p1, Lie/d;->f:Ljava/lang/Object;
 
     .line 10
     check-cast p1, Ljava/lang/Number;

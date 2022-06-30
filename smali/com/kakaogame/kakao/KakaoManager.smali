@@ -21,16 +21,15 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lae/i;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lie/h;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoManager;->lambda$getKakaoSyncAgreement$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lae/i;
+    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoManager;->lambda$getKakaoSyncAgreement$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lie/h;
 
     move-result-object p0
 
@@ -40,7 +39,6 @@
 .method public static synthetic access$000()Lcom/kakaogame/kakao/UserProfile;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/kakao/KakaoManager;->userProfile:Lcom/kakaogame/kakao/UserProfile;
 
     return-object v0
@@ -343,7 +341,7 @@
 
     invoke-direct {v3, v1}, Lcom/kakaogame/kakao/g;-><init>(Lcom/kakaogame/util/MutexLock;)V
 
-    invoke-virtual {v2, v3}, Lcom/kakao/sdk/user/UserApiClient;->serviceTerms(Lke/p;)V
+    invoke-virtual {v2, v3}, Lcom/kakao/sdk/user/UserApiClient;->serviceTerms(Lre/p;)V
 
     .line 4
     invoke-virtual {v1}, Lcom/kakaogame/util/MutexLock;->lock()V
@@ -365,7 +363,7 @@
     const/16 v2, 0xfa1
 
     .line 6
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -375,7 +373,6 @@
 .method public static getTalkProfile()Lcom/kakao/sdk/talk/model/TalkProfile;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/kakao/KakaoManager;->talkProfile:Lcom/kakao/sdk/talk/model/TalkProfile;
 
     return-object v0
@@ -437,7 +434,6 @@
 .method public static isKakaoLoginUser()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/kakao/KakaoManager;->userProfile:Lcom/kakaogame/kakao/UserProfile;
 
     if-eqz v0, :cond_0
@@ -455,7 +451,6 @@
 .method public static isSignup()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/kakaogame/kakao/KakaoManager;->isSignup:Z
 
     return v0
@@ -464,7 +459,6 @@
 .method public static isTalkUser()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/kakao/KakaoManager;->talkProfile:Lcom/kakao/sdk/talk/model/TalkProfile;
 
     if-eqz v0, :cond_0
@@ -479,7 +473,7 @@
     return v0
 .end method
 
-.method private static synthetic lambda$getKakaoSyncAgreement$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lae/i;
+.method private static synthetic lambda$getKakaoSyncAgreement$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lie/h;
     .locals 0
 
     if-eqz p2, :cond_0
@@ -528,7 +522,7 @@
 
     .line 8
     :goto_0
-    sget-object p0, Lae/i;->a:Lae/i;
+    sget-object p0, Lie/h;->a:Lie/h;
 
     return-object p0
 .end method
@@ -736,7 +730,7 @@
     const/16 v2, 0xfa1
 
     .line 6
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -874,7 +868,7 @@
 
     .line 15
     :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -883,7 +877,7 @@
     const/16 p1, 0xfa1
 
     .line 16
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -925,7 +919,6 @@
 .method public static setIsSignup(Z)V
     .locals 0
 
-    .line 1
     sput-boolean p0, Lcom/kakaogame/kakao/KakaoManager;->isSignup:Z
 
     return-void
@@ -1110,7 +1103,7 @@
     move-exception p0
 
     .line 7
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1228,7 +1221,7 @@
 
     const-string v3, "kakaoAppUserId"
 
-    invoke-virtual {v2, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v3}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -1326,7 +1319,7 @@
     const/16 p1, 0xfa1
 
     .line 18
-    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -1427,7 +1420,7 @@
 
     .line 10
     :try_start_1
-    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1436,7 +1429,7 @@
     const/16 v0, 0xfa1
 
     .line 11
-    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 

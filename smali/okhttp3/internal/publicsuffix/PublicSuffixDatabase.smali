@@ -615,7 +615,6 @@
 .method public static get()Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;
     .locals 1
 
-    .line 1
     sget-object v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->instance:Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;
 
     return-object v0

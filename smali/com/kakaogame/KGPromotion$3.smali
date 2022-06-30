@@ -39,7 +39,6 @@
 .method public constructor <init>(Lcom/kakaogame/ui/CustomProgressDialog;Landroid/app/Activity;Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/log/FirebaseEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGPromotion$3;->val$progress:Lcom/kakaogame/ui/CustomProgressDialog;
 
     iput-object p2, p0, Lcom/kakaogame/KGPromotion$3;->val$activity:Landroid/app/Activity;
@@ -189,7 +188,6 @@
 .method public onPreExecute()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGPromotion$3;->val$progress:Lcom/kakaogame/ui/CustomProgressDialog;
 
     invoke-virtual {v0}, Lcom/kakaogame/ui/CustomProgressDialog;->show()V

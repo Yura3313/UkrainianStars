@@ -36,14 +36,14 @@
     const/4 p1, 0x1
 
     .line 4
-    invoke-virtual {p2, p1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {p2, p1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
     const/4 v0, 0x1
@@ -100,10 +100,9 @@
     return v0
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 2
 
-    .line 1
     iget v0, p0, Landroidx/lifecycle/b$b;->a:I
 
     mul-int/lit8 v0, v0, 0x1f

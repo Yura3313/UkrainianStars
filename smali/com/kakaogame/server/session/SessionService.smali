@@ -86,7 +86,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -95,7 +94,6 @@
 .method public static synthetic access$000()Ljava/util/Set;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/server/session/SessionService;->onlinePushListenerList:Ljava/util/Set;
 
     return-object v0
@@ -104,7 +102,6 @@
 .method public static synthetic access$100()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/kakaogame/server/session/SessionService;->connecting:Z
 
     return v0
@@ -113,7 +110,6 @@
 .method public static synthetic access$200()Lcom/kakaogame/session/WebSocketManager;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakaogame/server/session/SessionService;->manager:Lcom/kakaogame/session/WebSocketManager;
 
     return-object v0
@@ -122,7 +118,6 @@
 .method public static synthetic access$300(Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/server/session/SessionService;->addRequestQueue(Lcom/kakaogame/util/MutexLock;)V
 
     return-void
@@ -131,7 +126,6 @@
 .method public static synthetic access$400()J
     .locals 2
 
-    .line 1
     sget-wide v0, Lcom/kakaogame/server/session/SessionService;->sessionTimeout:J
 
     return-wide v0
@@ -142,7 +136,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     sget-object v0, Lcom/kakaogame/server/session/SessionService;->onlinePushListenerList:Ljava/util/Set;
 
     invoke-interface {v0, p0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
@@ -215,7 +208,7 @@
     move-exception v1
 
     .line 4
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -335,7 +328,7 @@
     move-exception v2
 
     .line 5
-    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -548,7 +541,7 @@
     const-string v2, "SessionService"
 
     .line 18
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -560,7 +553,7 @@
     const/16 v1, 0xfa1
 
     .line 20
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -915,7 +908,7 @@
     move-exception p0
 
     .line 33
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -924,7 +917,7 @@
     const/16 v0, 0xfa1
 
     .line 34
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1031,7 +1024,7 @@
     move-exception p0
 
     .line 4
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1084,7 +1077,7 @@
     :try_start_0
     sget-object v1, Lcom/kakaogame/server/session/SessionService;->requestQueue:Ljava/util/LinkedList;
 
-    invoke-virtual {v1}, Ljava/util/LinkedList;->isEmpty()Z
+    invoke-virtual {v1}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v1
 
@@ -1093,7 +1086,7 @@
     .line 3
     sget-object v1, Lcom/kakaogame/server/session/SessionService;->requestQueue:Ljava/util/LinkedList;
 
-    invoke-virtual {v1}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v1}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 

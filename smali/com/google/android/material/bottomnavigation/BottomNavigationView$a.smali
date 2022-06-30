@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;
+.class public final Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;
 .super Ljava/lang/Object;
 .source "BottomNavigationView.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
+.field public final synthetic f:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/bottomnavigation/BottomNavigationView;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
+    iput-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,14 +34,14 @@
 
 
 # virtual methods
-.method public a(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)Z
-    .locals 2
+.method public final a(Landroidx/appcompat/view/menu/e;Landroid/view/MenuItem;)Z
+    .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
+    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationView;->m:Lcom/google/android/material/bottomnavigation/BottomNavigationView$b;
+    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationView;->l:Lcom/google/android/material/bottomnavigation/BottomNavigationView$b;
 
     const/4 v0, 0x1
 
@@ -53,36 +52,36 @@
 
     move-result p1
 
-    iget-object v1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
+    iget-object p2, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
 
-    invoke-virtual {v1}, Lcom/google/android/material/bottomnavigation/BottomNavigationView;->getSelectedItemId()I
+    invoke-virtual {p2}, Lcom/google/android/material/bottomnavigation/BottomNavigationView;->getSelectedItemId()I
 
-    move-result v1
+    move-result p2
 
-    if-ne p1, v1, :cond_0
+    if-ne p1, p2, :cond_0
 
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
+    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
 
     .line 5
-    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationView;->m:Lcom/google/android/material/bottomnavigation/BottomNavigationView$b;
+    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationView;->l:Lcom/google/android/material/bottomnavigation/BottomNavigationView$b;
 
     .line 6
-    invoke-interface {p1, p2}, Lcom/google/android/material/bottomnavigation/BottomNavigationView$b;->a(Landroid/view/MenuItem;)V
+    invoke-interface {p1}, Lcom/google/android/material/bottomnavigation/BottomNavigationView$b;->a()V
 
     return v0
 
     .line 7
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
+    iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$a;->f:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
 
     .line 8
-    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationView;->l:Lcom/google/android/material/bottomnavigation/BottomNavigationView$c;
+    iget-object p1, p1, Lcom/google/android/material/bottomnavigation/BottomNavigationView;->k:Lcom/google/android/material/bottomnavigation/BottomNavigationView$c;
 
     if-eqz p1, :cond_1
 
     .line 9
-    invoke-interface {p1, p2}, Lcom/google/android/material/bottomnavigation/BottomNavigationView$c;->a(Landroid/view/MenuItem;)Z
+    invoke-interface {p1}, Lcom/google/android/material/bottomnavigation/BottomNavigationView$c;->a()Z
 
     move-result p1
 
@@ -97,7 +96,7 @@
     return v0
 .end method
 
-.method public b(Landroidx/appcompat/view/menu/e;)V
+.method public final b(Landroidx/appcompat/view/menu/e;)V
     .locals 0
 
     return-void

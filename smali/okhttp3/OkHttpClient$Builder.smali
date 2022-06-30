@@ -493,7 +493,6 @@
 .method public build()Lokhttp3/OkHttpClient;
     .locals 1
 
-    .line 1
     new-instance v0, Lokhttp3/OkHttpClient;
 
     invoke-direct {v0, p0}, Lokhttp3/OkHttpClient;-><init>(Lokhttp3/OkHttpClient$Builder;)V
@@ -649,7 +648,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lokhttp3/internal/Util;->immutableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
@@ -771,7 +769,6 @@
 .method public followRedirects(Z)Lokhttp3/OkHttpClient$Builder;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lokhttp3/OkHttpClient$Builder;->followRedirects:Z
 
     return-object p0
@@ -780,7 +777,6 @@
 .method public followSslRedirects(Z)Lokhttp3/OkHttpClient$Builder;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lokhttp3/OkHttpClient$Builder;->followSslRedirects:Z
 
     return-object p0
@@ -818,7 +814,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/OkHttpClient$Builder;->interceptors:Ljava/util/List;
 
     return-object v0
@@ -835,7 +830,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/OkHttpClient$Builder;->networkInterceptors:Ljava/util/List;
 
     return-object v0
@@ -1053,7 +1047,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lokhttp3/OkHttpClient$Builder;->proxy:Ljava/net/Proxy;
 
     return-object p0
@@ -1142,7 +1135,6 @@
 .method public retryOnConnectionFailure(Z)Lokhttp3/OkHttpClient$Builder;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lokhttp3/OkHttpClient$Builder;->retryOnConnectionFailure:Z
 
     return-object p0

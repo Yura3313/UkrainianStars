@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public F0(ILandroid/os/Parcel;)Z
+.method public J0(ILandroid/os/Parcel;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -70,7 +70,7 @@
 
     :cond_1
     :goto_0
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/play/core/internal/j;->F0(ILandroid/os/Parcel;)Z
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/play/core/internal/j;->J0(ILandroid/os/Parcel;)Z
 
     move-result p1
 

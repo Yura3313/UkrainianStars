@@ -1,4 +1,4 @@
-.class public Landroidx/media/g;
+.class public final Landroidx/media/g;
 .super Ljava/lang/Object;
 .source "MediaBrowserServiceCompat.java"
 
@@ -7,35 +7,18 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/media/MediaBrowserServiceCompat$j;
+.field public final synthetic f:Landroidx/media/MediaBrowserServiceCompat$j;
 
-.field public final synthetic h:Ljava/lang/String;
-
-.field public final synthetic i:I
-
-.field public final synthetic j:I
-
-.field public final synthetic k:Landroid/os/Bundle;
-
-.field public final synthetic l:Landroidx/media/MediaBrowserServiceCompat$i;
+.field public final synthetic g:Landroidx/media/MediaBrowserServiceCompat$i;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat$i;Landroidx/media/MediaBrowserServiceCompat$j;Ljava/lang/String;IILandroid/os/Bundle;)V
+.method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat$i;Landroidx/media/MediaBrowserServiceCompat$j;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/media/g;->l:Landroidx/media/MediaBrowserServiceCompat$i;
+    iput-object p1, p0, Landroidx/media/g;->g:Landroidx/media/MediaBrowserServiceCompat$i;
 
-    iput-object p2, p0, Landroidx/media/g;->g:Landroidx/media/MediaBrowserServiceCompat$j;
-
-    iput-object p3, p0, Landroidx/media/g;->h:Ljava/lang/String;
-
-    iput p4, p0, Landroidx/media/g;->i:I
-
-    iput p5, p0, Landroidx/media/g;->j:I
-
-    iput-object p6, p0, Landroidx/media/g;->k:Landroid/os/Bundle;
+    iput-object p2, p0, Landroidx/media/g;->f:Landroidx/media/MediaBrowserServiceCompat$j;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,11 +27,11 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 9
+.method public final run()V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/media/g;->g:Landroidx/media/MediaBrowserServiceCompat$j;
+    iget-object v0, p0, Landroidx/media/g;->f:Landroidx/media/MediaBrowserServiceCompat$j;
 
     check-cast v0, Landroidx/media/MediaBrowserServiceCompat$k;
 
@@ -57,52 +40,25 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Landroidx/media/g;->l:Landroidx/media/MediaBrowserServiceCompat$i;
+    iget-object v1, p0, Landroidx/media/g;->g:Landroidx/media/MediaBrowserServiceCompat$i;
 
     iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat$i;->a:Landroidx/media/MediaBrowserServiceCompat;
 
-    iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat;->h:Lm/a;
+    iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat;->g:Lm/a;
 
     invoke-virtual {v1, v0}, Lm/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
-    new-instance v1, Landroidx/media/MediaBrowserServiceCompat$a;
+    move-result-object v1
 
-    iget-object v2, p0, Landroidx/media/g;->l:Landroidx/media/MediaBrowserServiceCompat$i;
+    check-cast v1, Landroidx/media/MediaBrowserServiceCompat$b;
 
-    iget-object v3, v2, Landroidx/media/MediaBrowserServiceCompat$i;->a:Landroidx/media/MediaBrowserServiceCompat;
-
-    iget-object v4, p0, Landroidx/media/g;->h:Ljava/lang/String;
-
-    iget v5, p0, Landroidx/media/g;->i:I
-
-    iget v6, p0, Landroidx/media/g;->j:I
-
-    iget-object v7, p0, Landroidx/media/g;->k:Landroid/os/Bundle;
-
-    iget-object v8, p0, Landroidx/media/g;->g:Landroidx/media/MediaBrowserServiceCompat$j;
-
-    move-object v2, v1
-
-    invoke-direct/range {v2 .. v8}, Landroidx/media/MediaBrowserServiceCompat$a;-><init>(Landroidx/media/MediaBrowserServiceCompat;Ljava/lang/String;IILandroid/os/Bundle;Landroidx/media/MediaBrowserServiceCompat$j;)V
-
-    .line 4
-    iget-object v2, p0, Landroidx/media/g;->l:Landroidx/media/MediaBrowserServiceCompat$i;
-
-    iget-object v2, v2, Landroidx/media/MediaBrowserServiceCompat$i;->a:Landroidx/media/MediaBrowserServiceCompat;
-
-    iget-object v2, v2, Landroidx/media/MediaBrowserServiceCompat;->h:Lm/a;
-
-    invoke-virtual {v2, v0, v1}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz v1, :cond_0
 
     const/4 v2, 0x0
 
-    .line 5
-    :try_start_0
-    invoke-interface {v0, v1, v2}, Landroid/os/IBinder;->linkToDeath(Landroid/os/IBinder$DeathRecipient;I)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 3
+    invoke-interface {v0, v1, v2}, Landroid/os/IBinder;->unlinkToDeath(Landroid/os/IBinder$DeathRecipient;I)Z
 
-    :catch_0
+    :cond_0
     return-void
 .end method

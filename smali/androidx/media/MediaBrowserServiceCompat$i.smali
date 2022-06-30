@@ -1,4 +1,4 @@
-.class public Landroidx/media/MediaBrowserServiceCompat$i;
+.class public final Landroidx/media/MediaBrowserServiceCompat$i;
 .super Ljava/lang/Object;
 .source "MediaBrowserServiceCompat.java"
 
@@ -22,7 +22,6 @@
 .method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$i;->a:Landroidx/media/MediaBrowserServiceCompat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

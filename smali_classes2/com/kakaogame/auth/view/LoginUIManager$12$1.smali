@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/auth/view/LoginUIManager$12;Lcom/kakaogame/KGResult;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/LoginUIManager$12$1;->this$0:Lcom/kakaogame/auth/view/LoginUIManager$12;
 
     iput-object p2, p0, Lcom/kakaogame/auth/view/LoginUIManager$12$1;->val$result:Lcom/kakaogame/KGResult;

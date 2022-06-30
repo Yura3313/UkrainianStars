@@ -1,14 +1,14 @@
 .class public final synthetic Lcom/supercell/id/ui/settings/SettingsFragment$a;
-.super Lle/i;
+.super Lse/g;
 .source "SettingsFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/settings/SettingsFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/settings/SettingsFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/i;",
-        "Lke/l<",
+        "Lse/g;",
+        "Lre/l<",
         "Ljava/lang/Integer;",
         "Ljava/lang/String;",
         ">;"
@@ -28,12 +28,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lvd/v1;)V
+.method public constructor <init>(Lae/m2;)V
     .locals 1
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0, p1}, Lle/i;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p0, v0, p1}, Lse/g;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -48,12 +48,12 @@
     return-object v0
 .end method
 
-.method public final getOwner()Lpe/d;
+.method public final getOwner()Lwe/d;
     .locals 1
 
-    const-class v0, Lvd/v1;
+    const-class v0, Lae/m2;
 
-    invoke-static {v0}, Lle/t;->a(Ljava/lang/Class;)Lpe/c;
+    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
 
     move-result-object v0
 
@@ -68,7 +68,7 @@
     return-object v0
 .end method
 
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
@@ -79,12 +79,12 @@
     move-result p1
 
     .line 2
-    iget-object v0, p0, Lle/c;->receiver:Ljava/lang/Object;
+    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
 
-    check-cast v0, Lvd/v1;
+    check-cast v0, Lae/m2;
 
     .line 3
-    invoke-virtual {v0, p1}, Lvd/v1;->x(I)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lae/m2;->x(I)Ljava/lang/String;
 
     move-result-object p1
 

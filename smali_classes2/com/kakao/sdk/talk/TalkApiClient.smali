@@ -14,7 +14,7 @@
 # static fields
 .field public static final Companion:Lcom/kakao/sdk/talk/TalkApiClient$Companion;
 
-.field private static final instance$delegate:Lae/c;
+.field private static final instance$delegate:Lie/c;
 
 
 # instance fields
@@ -33,18 +33,17 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/talk/TalkApiClient$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/talk/TalkApiClient$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/talk/TalkApiClient;->Companion:Lcom/kakao/sdk/talk/TalkApiClient$Companion;
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/talk/TalkApiClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/talk/TalkApiClient$Companion$instance$2;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/talk/TalkApiClient;->instance$delegate:Lae/c;
+    sput-object v0, Lcom/kakao/sdk/talk/TalkApiClient;->instance$delegate:Lie/c;
 
     return-void
 .end method
@@ -64,7 +63,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/kakao/sdk/talk/TalkApiClient;-><init>(Lcom/kakao/sdk/talk/TalkApi;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;ILle/g;)V
+    invoke-direct/range {v0 .. v5}, Lcom/kakao/sdk/talk/TalkApiClient;-><init>(Lcom/kakao/sdk/talk/TalkApi;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;ILse/e;)V
 
     return-void
 .end method
@@ -72,13 +71,17 @@
 .method public constructor <init>(Lcom/kakao/sdk/talk/TalkApi;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "talkApi"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "applicationInfo"
 
-    if-eqz p3, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "contextInfo"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -90,53 +93,31 @@
     iput-object p3, p0, Lcom/kakao/sdk/talk/TalkApiClient;->contextInfo:Lcom/kakao/sdk/common/model/ContextInfo;
 
     return-void
-
-    :cond_0
-    const-string p1, "contextInfo"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "applicationInfo"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "talkApi"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/talk/TalkApi;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;ILle/g;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/talk/TalkApi;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;ILse/e;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x1
 
     if-eqz p5, :cond_0
 
-    .line 3
+    .line 2
     sget-object p1, Lcom/kakao/sdk/network/ApiFactory;->INSTANCE:Lcom/kakao/sdk/network/ApiFactory;
 
-    invoke-static {p1}, Lcom/kakao/sdk/auth/network/ApiFactoryKt;->getKapiWithOAuth(Lcom/kakao/sdk/network/ApiFactory;)Lxe/b0;
+    invoke-static {p1}, Lcom/kakao/sdk/auth/network/ApiFactoryKt;->getKapiWithOAuth(Lcom/kakao/sdk/network/ApiFactory;)Lef/d0;
 
     move-result-object p1
 
     const-class p5, Lcom/kakao/sdk/talk/TalkApi;
 
-    invoke-virtual {p1, p5}, Lxe/b0;->b(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p1, p5}, Lef/d0;->b(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p1
 
     const-string p5, "ApiFactory.kapiWithOAuth\u2026eate(TalkApi::class.java)"
 
-    invoke-static {p1, p5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Lcom/kakao/sdk/talk/TalkApi;
 
@@ -145,7 +126,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 4
+    .line 3
     sget-object p2, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p2}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -157,7 +138,7 @@
 
     if-eqz p4, :cond_2
 
-    .line 5
+    .line 4
     sget-object p3, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p3}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -170,11 +151,10 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lae/c;
+.method public static final synthetic access$getInstance$cp()Lie/c;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/kakao/sdk/talk/TalkApiClient;->instance$delegate:Lae/c;
+    sget-object v0, Lcom/kakao/sdk/talk/TalkApiClient;->instance$delegate:Lie/c;
 
     return-object v0
 .end method
@@ -233,12 +213,12 @@
 
     const-string p2, "Uri.Builder().scheme(com\u2026ER, Constants.API_VER_10)"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method
 
-.method public static synthetic channels$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;Lke/p;ILjava/lang/Object;)V
+.method public static synthetic channels$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;Lre/p;ILjava/lang/Object;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x1
@@ -247,14 +227,13 @@
 
     const/4 p1, 0x0
 
-    .line 1
     :cond_0
-    invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/talk/TalkApiClient;->channels(Ljava/util/List;Lke/p;)V
+    invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/talk/TalkApiClient;->channels(Ljava/util/List;Lre/p;)V
 
     return-void
 .end method
 
-.method public static synthetic friends$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lke/p;ILjava/lang/Object;)V
+.method public static synthetic friends$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lre/p;ILjava/lang/Object;)V
     .locals 7
 
     and-int/lit8 p7, p6, 0x1
@@ -311,8 +290,7 @@
 
     move-object v6, p5
 
-    .line 1
-    invoke-virtual/range {v1 .. v6}, Lcom/kakao/sdk/talk/TalkApiClient;->friends(Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lke/p;)V
+    invoke-virtual/range {v1 .. v6}, Lcom/kakao/sdk/talk/TalkApiClient;->friends(Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lre/p;)V
 
     return-void
 .end method
@@ -329,7 +307,7 @@
     return-object v0
 .end method
 
-.method public static synthetic sendCustomMemo$default(Lcom/kakao/sdk/talk/TalkApiClient;JLjava/util/Map;Lke/l;ILjava/lang/Object;)V
+.method public static synthetic sendCustomMemo$default(Lcom/kakao/sdk/talk/TalkApiClient;JLjava/util/Map;Lre/l;ILjava/lang/Object;)V
     .locals 0
 
     and-int/lit8 p5, p5, 0x2
@@ -338,14 +316,13 @@
 
     const/4 p3, 0x0
 
-    .line 1
     :cond_0
-    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/kakao/sdk/talk/TalkApiClient;->sendCustomMemo(JLjava/util/Map;Lke/l;)V
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/kakao/sdk/talk/TalkApiClient;->sendCustomMemo(JLjava/util/Map;Lre/l;)V
 
     return-void
 .end method
 
-.method public static synthetic sendCustomMessage$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;JLjava/util/Map;Lke/p;ILjava/lang/Object;)V
+.method public static synthetic sendCustomMessage$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;JLjava/util/Map;Lre/p;ILjava/lang/Object;)V
     .locals 6
 
     and-int/lit8 p6, p6, 0x4
@@ -365,13 +342,12 @@
 
     move-object v5, p5
 
-    .line 1
-    invoke-virtual/range {v0 .. v5}, Lcom/kakao/sdk/talk/TalkApiClient;->sendCustomMessage(Ljava/util/List;JLjava/util/Map;Lke/p;)V
+    invoke-virtual/range {v0 .. v5}, Lcom/kakao/sdk/talk/TalkApiClient;->sendCustomMessage(Ljava/util/List;JLjava/util/Map;Lre/p;)V
 
     return-void
 .end method
 
-.method public static synthetic sendScrapMemo$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lke/l;ILjava/lang/Object;)V
+.method public static synthetic sendScrapMemo$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lre/l;ILjava/lang/Object;)V
     .locals 1
 
     and-int/lit8 p6, p5, 0x2
@@ -389,14 +365,13 @@
 
     move-object p3, v0
 
-    .line 1
     :cond_1
-    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMemo(Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lke/l;)V
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMemo(Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lre/l;)V
 
     return-void
 .end method
 
-.method public static synthetic sendScrapMessage$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+.method public static synthetic sendScrapMessage$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
     .locals 7
 
     and-int/lit8 p7, p6, 0x4
@@ -433,8 +408,7 @@
 
     move-object v6, p5
 
-    .line 1
-    invoke-virtual/range {v1 .. v6}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMessage(Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lke/p;)V
+    invoke-virtual/range {v1 .. v6}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMessage(Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lre/p;)V
 
     return-void
 .end method
@@ -444,7 +418,9 @@
 .method public final addChannelUrl(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string v0, "channelPublicId"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/TalkApiClient;->applicationInfo:Lcom/kakao/sdk/common/model/ApplicationInfo;
@@ -488,25 +464,17 @@
 
     const-string v0, "baseUri(appKey = applica\u2026nstants.FRIEND}\").build()"
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
-
-    :cond_0
-    const-string p1, "channelPublicId"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final channelChatUrl(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
 
-    if-eqz p1, :cond_0
+    const-string v0, "channelPublicId"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/TalkApiClient;->applicationInfo:Lcom/kakao/sdk/common/model/ApplicationInfo;
@@ -550,22 +518,12 @@
 
     const-string v0, "baseUri(appKey = applica\u2026Constants.CHAT}\").build()"
 
-    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
-
-    :cond_0
-    const-string p1, "channelPublicId"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public final channels(Ljava/util/List;Lke/p;)V
+.method public final channels(Ljava/util/List;Lre/p;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -573,65 +531,62 @@
             "Ljava/util/List<",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/ChannelRelations;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "callback"
 
-    if-eqz p2, :cond_1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v1, p0, Lcom/kakao/sdk/talk/TalkApiClient;->talkApi:Lcom/kakao/sdk/talk/TalkApi;
+    iget-object v0, p0, Lcom/kakao/sdk/talk/TalkApiClient;->talkApi:Lcom/kakao/sdk/talk/TalkApi;
 
     if-eqz p1, :cond_0
 
-    sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->INSTANCE:Lcom/kakao/sdk/common/util/KakaoJson;
+    sget-object v1, Lcom/kakao/sdk/common/util/KakaoJson;->INSTANCE:Lcom/kakao/sdk/common/util/KakaoJson;
 
-    invoke-virtual {v0, p1}, Lcom/kakao/sdk/common/util/KakaoJson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v1, p1}, Lcom/kakao/sdk/common/util/KakaoJson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p1
+
+    goto :goto_0
 
     :cond_0
-    invoke-interface {v1, v0}, Lcom/kakao/sdk/talk/TalkApi;->channels(Ljava/lang/String;)Lxe/b;
+    const/4 p1, 0x0
+
+    :goto_0
+    invoke-interface {v0, p1}, Lcom/kakao/sdk/talk/TalkApi;->channels(Ljava/lang/String;)Lef/b;
 
     move-result-object p1
 
     .line 2
     new-instance v0, Lcom/kakao/sdk/talk/TalkApiClient$channels$2;
 
-    invoke-direct {v0, p2}, Lcom/kakao/sdk/talk/TalkApiClient$channels$2;-><init>(Lke/p;)V
+    invoke-direct {v0, p2}, Lcom/kakao/sdk/talk/TalkApiClient$channels$2;-><init>(Lre/p;)V
 
-    invoke-interface {p1, v0}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, v0}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_1
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public final channels(Lke/p;)V
+.method public final channels(Lre/p;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/ChannelRelations;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -640,12 +595,12 @@
 
     const/4 v1, 0x1
 
-    invoke-static {p0, v0, p1, v1, v0}, Lcom/kakao/sdk/talk/TalkApiClient;->channels$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;Lke/p;ILjava/lang/Object;)V
+    invoke-static {p0, v0, p1, v1, v0}, Lcom/kakao/sdk/talk/TalkApiClient;->channels$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final friends(Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lke/p;)V
+.method public final friends(Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lre/p;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -654,47 +609,39 @@
             "Ljava/lang/Integer;",
             "Lcom/kakao/sdk/talk/model/Order;",
             "Lcom/kakao/sdk/talk/model/FriendOrder;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/Friends<",
             "Lcom/kakao/sdk/talk/model/Friend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    if-eqz p5, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/TalkApiClient;->talkApi:Lcom/kakao/sdk/talk/TalkApi;
 
-    invoke-interface {v0, p1, p2, p3, p4}, Lcom/kakao/sdk/talk/TalkApi;->friends(Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;)Lxe/b;
+    invoke-interface {v0, p1, p2, p3, p4}, Lcom/kakao/sdk/talk/TalkApi;->friends(Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;)Lef/b;
 
     move-result-object p1
 
     .line 2
     new-instance p2, Lcom/kakao/sdk/talk/TalkApiClient$friends$1;
 
-    invoke-direct {p2, p5}, Lcom/kakao/sdk/talk/TalkApiClient$friends$1;-><init>(Lke/p;)V
+    invoke-direct {p2, p5}, Lcom/kakao/sdk/talk/TalkApiClient$friends$1;-><init>(Lre/p;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public final friends(Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lke/p;)V
+.method public final friends(Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lre/p;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -702,13 +649,13 @@
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
             "Lcom/kakao/sdk/talk/model/Order;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/Friends<",
             "Lcom/kakao/sdk/talk/model/Friend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -729,25 +676,25 @@
 
     move-object v5, p4
 
-    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->friends$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->friends$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final friends(Ljava/lang/Integer;Ljava/lang/Integer;Lke/p;)V
+.method public final friends(Ljava/lang/Integer;Ljava/lang/Integer;Lre/p;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/Friends<",
             "Lcom/kakao/sdk/talk/model/Friend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -768,24 +715,24 @@
 
     move-object v5, p3
 
-    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->friends$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->friends$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final friends(Ljava/lang/Integer;Lke/p;)V
+.method public final friends(Ljava/lang/Integer;Lre/p;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Integer;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/Friends<",
             "Lcom/kakao/sdk/talk/model/Friend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -806,23 +753,23 @@
 
     move-object v5, p2
 
-    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->friends$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->friends$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final friends(Lke/p;)V
+.method public final friends(Lre/p;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/Friends<",
             "Lcom/kakao/sdk/talk/model/Friend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -843,56 +790,48 @@
 
     move-object v5, p1
 
-    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->friends$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->friends$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/kakao/sdk/talk/model/Order;Lcom/kakao/sdk/talk/model/FriendOrder;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final profile(Lke/p;)V
+.method public final profile(Lre/p;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/TalkProfile;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/TalkApiClient;->talkApi:Lcom/kakao/sdk/talk/TalkApi;
 
-    invoke-interface {v0}, Lcom/kakao/sdk/talk/TalkApi;->profile()Lxe/b;
+    invoke-interface {v0}, Lcom/kakao/sdk/talk/TalkApi;->profile()Lef/b;
 
     move-result-object v0
 
     .line 2
     new-instance v1, Lcom/kakao/sdk/talk/TalkApiClient$profile$1;
 
-    invoke-direct {v1, p1}, Lcom/kakao/sdk/talk/TalkApiClient$profile$1;-><init>(Lke/p;)V
+    invoke-direct {v1, p1}, Lcom/kakao/sdk/talk/TalkApiClient$profile$1;-><init>(Lre/p;)V
 
-    invoke-interface {v0, v1}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {v0, v1}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public final sendCustomMemo(JLjava/util/Map;Lke/l;)V
+.method public final sendCustomMemo(JLjava/util/Map;Lre/l;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -901,52 +840,44 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lke/l<",
+            "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    if-eqz p4, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/TalkApiClient;->talkApi:Lcom/kakao/sdk/talk/TalkApi;
 
-    invoke-interface {v0, p1, p2, p3}, Lcom/kakao/sdk/talk/TalkApi;->sendCustomMemo(JLjava/util/Map;)Lxe/b;
+    invoke-interface {v0, p1, p2, p3}, Lcom/kakao/sdk/talk/TalkApi;->sendCustomMemo(JLjava/util/Map;)Lef/b;
 
     move-result-object p1
 
     .line 2
     new-instance p2, Lcom/kakao/sdk/talk/TalkApiClient$sendCustomMemo$1;
 
-    invoke-direct {p2, p4}, Lcom/kakao/sdk/talk/TalkApiClient$sendCustomMemo$1;-><init>(Lke/l;)V
+    invoke-direct {p2, p4}, Lcom/kakao/sdk/talk/TalkApiClient$sendCustomMemo$1;-><init>(Lre/l;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public final sendCustomMemo(JLke/l;)V
+.method public final sendCustomMemo(JLre/l;)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
-            "Lke/l<",
+            "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -963,12 +894,12 @@
 
     move-object v4, p3
 
-    invoke-static/range {v0 .. v6}, Lcom/kakao/sdk/talk/TalkApiClient;->sendCustomMemo$default(Lcom/kakao/sdk/talk/TalkApiClient;JLjava/util/Map;Lke/l;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v6}, Lcom/kakao/sdk/talk/TalkApiClient;->sendCustomMemo$default(Lcom/kakao/sdk/talk/TalkApiClient;JLjava/util/Map;Lre/l;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final sendCustomMessage(Ljava/util/List;JLjava/util/Map;Lke/p;)V
+.method public final sendCustomMessage(Ljava/util/List;JLjava/util/Map;Lre/p;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -980,21 +911,23 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "receiverUuids"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p5, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/TalkApiClient;->talkApi:Lcom/kakao/sdk/talk/TalkApi;
@@ -1005,36 +938,21 @@
 
     move-result-object p1
 
-    invoke-interface {v0, p1, p2, p3, p4}, Lcom/kakao/sdk/talk/TalkApi;->sendCustomMessage(Ljava/lang/String;JLjava/util/Map;)Lxe/b;
+    invoke-interface {v0, p1, p2, p3, p4}, Lcom/kakao/sdk/talk/TalkApi;->sendCustomMessage(Ljava/lang/String;JLjava/util/Map;)Lef/b;
 
     move-result-object p1
 
     .line 2
     new-instance p2, Lcom/kakao/sdk/talk/TalkApiClient$sendCustomMessage$1;
 
-    invoke-direct {p2, p5}, Lcom/kakao/sdk/talk/TalkApiClient$sendCustomMessage$1;-><init>(Lke/p;)V
+    invoke-direct {p2, p5}, Lcom/kakao/sdk/talk/TalkApiClient$sendCustomMessage$1;-><init>(Lre/p;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "receiverUuids"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public final sendCustomMessage(Ljava/util/List;JLke/p;)V
+.method public final sendCustomMessage(Ljava/util/List;JLre/p;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1042,12 +960,12 @@
             "Ljava/util/List<",
             "Ljava/lang/String;",
             ">;J",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1066,64 +984,51 @@
 
     move-object v5, p4
 
-    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->sendCustomMessage$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;JLjava/util/Map;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->sendCustomMessage$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;JLjava/util/Map;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final sendDefaultMemo(Lcom/kakao/sdk/template/model/DefaultTemplate;Lke/l;)V
+.method public final sendDefaultMemo(Lcom/kakao/sdk/template/model/DefaultTemplate;Lre/l;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/kakao/sdk/template/model/DefaultTemplate;",
-            "Lke/l<",
+            "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "template"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/TalkApiClient;->talkApi:Lcom/kakao/sdk/talk/TalkApi;
 
-    invoke-interface {v0, p1}, Lcom/kakao/sdk/talk/TalkApi;->sendDefaultMemo(Lcom/kakao/sdk/template/model/DefaultTemplate;)Lxe/b;
+    invoke-interface {v0, p1}, Lcom/kakao/sdk/talk/TalkApi;->sendDefaultMemo(Lcom/kakao/sdk/template/model/DefaultTemplate;)Lef/b;
 
     move-result-object p1
 
     .line 2
     new-instance v0, Lcom/kakao/sdk/talk/TalkApiClient$sendDefaultMemo$1;
 
-    invoke-direct {v0, p2}, Lcom/kakao/sdk/talk/TalkApiClient$sendDefaultMemo$1;-><init>(Lke/l;)V
+    invoke-direct {v0, p2}, Lcom/kakao/sdk/talk/TalkApiClient$sendDefaultMemo$1;-><init>(Lre/l;)V
 
-    invoke-interface {p1, v0}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, v0}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "template"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public final sendDefaultMessage(Ljava/util/List;Lcom/kakao/sdk/template/model/DefaultTemplate;Lke/p;)V
+.method public final sendDefaultMessage(Ljava/util/List;Lcom/kakao/sdk/template/model/DefaultTemplate;Lre/p;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1132,23 +1037,27 @@
             "Ljava/lang/String;",
             ">;",
             "Lcom/kakao/sdk/template/model/DefaultTemplate;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "receiverUuids"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "template"
 
-    if-eqz p3, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "callback"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/TalkApiClient;->talkApi:Lcom/kakao/sdk/talk/TalkApi;
@@ -1159,43 +1068,21 @@
 
     move-result-object p1
 
-    invoke-interface {v0, p1, p2}, Lcom/kakao/sdk/talk/TalkApi;->sendDefaultMessage(Ljava/lang/String;Lcom/kakao/sdk/template/model/DefaultTemplate;)Lxe/b;
+    invoke-interface {v0, p1, p2}, Lcom/kakao/sdk/talk/TalkApi;->sendDefaultMessage(Ljava/lang/String;Lcom/kakao/sdk/template/model/DefaultTemplate;)Lef/b;
 
     move-result-object p1
 
     .line 2
     new-instance p2, Lcom/kakao/sdk/talk/TalkApiClient$sendDefaultMessage$1;
 
-    invoke-direct {p2, p3}, Lcom/kakao/sdk/talk/TalkApiClient$sendDefaultMessage$1;-><init>(Lke/p;)V
+    invoke-direct {p2, p3}, Lcom/kakao/sdk/talk/TalkApiClient$sendDefaultMessage$1;-><init>(Lre/p;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "template"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "receiverUuids"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public final sendScrapMemo(Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lke/l;)V
+.method public final sendScrapMemo(Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lre/l;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1206,63 +1093,50 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lke/l<",
+            "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "requestUrl"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p4, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/TalkApiClient;->talkApi:Lcom/kakao/sdk/talk/TalkApi;
 
-    invoke-interface {v0, p1, p2, p3}, Lcom/kakao/sdk/talk/TalkApi;->sendScrapMemo(Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;)Lxe/b;
+    invoke-interface {v0, p1, p2, p3}, Lcom/kakao/sdk/talk/TalkApi;->sendScrapMemo(Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;)Lef/b;
 
     move-result-object p1
 
     .line 2
     new-instance p2, Lcom/kakao/sdk/talk/TalkApiClient$sendScrapMemo$1;
 
-    invoke-direct {p2, p4}, Lcom/kakao/sdk/talk/TalkApiClient$sendScrapMemo$1;-><init>(Lke/l;)V
+    invoke-direct {p2, p4}, Lcom/kakao/sdk/talk/TalkApiClient$sendScrapMemo$1;-><init>(Lre/l;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "requestUrl"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public final sendScrapMemo(Ljava/lang/String;Ljava/lang/Long;Lke/l;)V
+.method public final sendScrapMemo(Ljava/lang/String;Ljava/lang/Long;Lre/l;)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/Long;",
-            "Lke/l<",
+            "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1281,21 +1155,21 @@
 
     move-object v4, p3
 
-    invoke-static/range {v0 .. v6}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMemo$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lke/l;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v6}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMemo$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lre/l;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final sendScrapMemo(Ljava/lang/String;Lke/l;)V
+.method public final sendScrapMemo(Ljava/lang/String;Lre/l;)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
-            "Lke/l<",
+            "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1314,12 +1188,12 @@
 
     move-object v4, p2
 
-    invoke-static/range {v0 .. v6}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMemo$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lke/l;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v6}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMemo$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lre/l;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final sendScrapMessage(Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lke/p;)V
+.method public final sendScrapMessage(Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lre/p;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1333,23 +1207,27 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "receiverUuids"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "requestUrl"
 
-    if-eqz p5, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "callback"
+
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/talk/TalkApiClient;->talkApi:Lcom/kakao/sdk/talk/TalkApi;
@@ -1360,43 +1238,21 @@
 
     move-result-object p1
 
-    invoke-interface {v0, p1, p2, p3, p4}, Lcom/kakao/sdk/talk/TalkApi;->sendScrapMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;)Lxe/b;
+    invoke-interface {v0, p1, p2, p3, p4}, Lcom/kakao/sdk/talk/TalkApi;->sendScrapMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;)Lef/b;
 
     move-result-object p1
 
     .line 2
     new-instance p2, Lcom/kakao/sdk/talk/TalkApiClient$sendScrapMessage$1;
 
-    invoke-direct {p2, p5}, Lcom/kakao/sdk/talk/TalkApiClient$sendScrapMessage$1;-><init>(Lke/p;)V
+    invoke-direct {p2, p5}, Lcom/kakao/sdk/talk/TalkApiClient$sendScrapMessage$1;-><init>(Lre/p;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "requestUrl"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "receiverUuids"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public final sendScrapMessage(Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Lke/p;)V
+.method public final sendScrapMessage(Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Lre/p;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1406,12 +1262,12 @@
             ">;",
             "Ljava/lang/String;",
             "Ljava/lang/Long;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1432,12 +1288,12 @@
 
     move-object v5, p4
 
-    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMessage$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMessage$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final sendScrapMessage(Ljava/util/List;Ljava/lang/String;Lke/p;)V
+.method public final sendScrapMessage(Ljava/util/List;Ljava/lang/String;Lre/p;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1446,12 +1302,12 @@
             "Ljava/lang/String;",
             ">;",
             "Ljava/lang/String;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -1472,7 +1328,7 @@
 
     move-object v5, p3
 
-    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMessage$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v7}, Lcom/kakao/sdk/talk/TalkApiClient;->sendScrapMessage$default(Lcom/kakao/sdk/talk/TalkApiClient;Ljava/util/List;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/snackbar/g;
+.class public final Lcom/google/android/material/snackbar/g;
 .super Ljava/lang/Object;
 .source "BaseTransientBottomBar.java"
 
@@ -14,7 +14,6 @@
 .method public constructor <init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/snackbar/g;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,7 +23,7 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;)V
+.method public final a(Landroid/view/View;)V
     .locals 1
 
     const/16 v0, 0x8
@@ -42,7 +41,7 @@
     return-void
 .end method
 
-.method public b(I)V
+.method public final b(I)V
     .locals 1
 
     if-eqz p1, :cond_1
@@ -65,7 +64,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/snackbar/g;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
-    iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->m:Lcom/google/android/material/snackbar/i$b;
+    iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->m:Lcom/google/android/material/snackbar/BaseTransientBottomBar$e;
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/snackbar/i;->e(Lcom/google/android/material/snackbar/i$b;)V
 
@@ -79,7 +78,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/snackbar/g;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
-    iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->m:Lcom/google/android/material/snackbar/i$b;
+    iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->m:Lcom/google/android/material/snackbar/BaseTransientBottomBar$e;
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/snackbar/i;->f(Lcom/google/android/material/snackbar/i$b;)V
 

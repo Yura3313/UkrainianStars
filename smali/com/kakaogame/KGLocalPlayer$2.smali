@@ -39,7 +39,6 @@
 .method public constructor <init>(Lcom/kakaogame/KGLocalPlayer;Ljava/lang/String;Ljava/lang/String;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGLocalPlayer$2;->this$0:Lcom/kakaogame/KGLocalPlayer;
 
     iput-object p2, p0, Lcom/kakaogame/KGLocalPlayer$2;->val$key:Ljava/lang/String;
@@ -114,7 +113,7 @@
     const-string v1, "KGLocalPlayer"
 
     .line 3
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     .line 4
     iget-object v0, p0, Lcom/kakaogame/KGLocalPlayer$2;->val$callback:Lcom/kakaogame/KGResultCallback;

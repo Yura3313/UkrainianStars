@@ -33,7 +33,6 @@
 .method public constructor <init>(Lcom/kakaogame/idp/KGKakao2Auth;[Lcom/kakaogame/idp/KGKakao2Auth$Item;Lcom/kakaogame/util/MutexLock;Landroid/app/Activity;Landroid/app/Dialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/idp/KGKakao2Auth$7;->this$0:Lcom/kakaogame/idp/KGKakao2Auth;
 
     iput-object p2, p0, Lcom/kakaogame/idp/KGKakao2Auth$7;->val$authItems:[Lcom/kakaogame/idp/KGKakao2Auth$Item;
@@ -120,7 +119,7 @@
 
     iget-object p3, p0, Lcom/kakaogame/idp/KGKakao2Auth$7;->val$activity:Landroid/app/Activity;
 
-    invoke-virtual {p1, p3, p2}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lke/p;)V
+    invoke-virtual {p1, p3, p2}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoAccount(Landroid/content/Context;Lre/p;)V
 
     goto :goto_1
 
@@ -132,7 +131,7 @@
 
     iget-object p3, p0, Lcom/kakaogame/idp/KGKakao2Auth$7;->val$activity:Landroid/app/Activity;
 
-    invoke-virtual {p1, p3, p2}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoTalk(Landroid/content/Context;Lke/p;)V
+    invoke-virtual {p1, p3, p2}, Lcom/kakao/sdk/user/UserApiClient;->loginWithKakaoTalk(Landroid/content/Context;Lre/p;)V
 
     goto :goto_1
 

@@ -1,5 +1,5 @@
 .class public final Lcom/kakao/sdk/common/util/KakaoCustomTabsClient$openWithDefault$connection$1;
-.super Lk/c;
+.super Lk/b;
 .source "KakaoCustomTabsClient.kt"
 
 
@@ -26,14 +26,13 @@
 .method public constructor <init>(Landroid/net/Uri;Ljava/lang/String;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakao/sdk/common/util/KakaoCustomTabsClient$openWithDefault$connection$1;->$uri:Landroid/net/Uri;
 
     iput-object p2, p0, Lcom/kakao/sdk/common/util/KakaoCustomTabsClient$openWithDefault$connection$1;->$packageName:Ljava/lang/String;
 
     iput-object p3, p0, Lcom/kakao/sdk/common/util/KakaoCustomTabsClient$openWithDefault$connection$1;->$context:Landroid/content/Context;
 
-    invoke-direct {p0}, Lk/c;-><init>()V
+    invoke-direct {p0}, Lk/b;-><init>()V
 
     return-void
 .end method
@@ -103,7 +102,6 @@
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/util/SdkLog;->Companion:Lcom/kakao/sdk/common/util/SdkLog$Companion;
 
     new-instance v1, Ljava/lang/StringBuilder;

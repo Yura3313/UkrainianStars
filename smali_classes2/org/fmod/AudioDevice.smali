@@ -172,7 +172,6 @@
 .method public write([BI)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/fmod/AudioDevice;->mTrack:Landroid/media/AudioTrack;
 
     const/4 v1, 0x0

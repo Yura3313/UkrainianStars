@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public g:I
+.field public f:I
 
 
 # direct methods
@@ -19,7 +19,7 @@
     const/4 p1, -0x1
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iput p1, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     return-void
 .end method
@@ -33,7 +33,7 @@
     const/4 p1, -0x1
 
     .line 4
-    iput p1, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iput p1, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     return-void
 .end method
@@ -43,13 +43,12 @@
 .method public getBaseline()I
     .locals 1
 
-    .line 1
-    iget v0, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iget v0, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     return v0
 .end method
 
-.method public onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 6
 
     .line 1
@@ -58,14 +57,14 @@
     move-result p1
 
     .line 2
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result p3
 
     sub-int/2addr p4, p2
 
     .line 3
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingRight()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingRight()I
 
     move-result p2
 
@@ -74,7 +73,7 @@
     sub-int/2addr p4, p3
 
     .line 4
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result p2
 
@@ -118,7 +117,7 @@
     add-int/2addr v3, p3
 
     .line 10
-    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     const/4 v5, -0x1
 
@@ -131,7 +130,7 @@
     if-eq v4, v5, :cond_1
 
     .line 11
-    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     add-int/2addr v4, p2
 
@@ -163,7 +162,7 @@
     return-void
 .end method
 
-.method public onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 11
 
     .line 1
@@ -268,7 +267,7 @@
     if-eq v6, v1, :cond_3
 
     .line 11
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingBottom()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
 
     move-result v0
 
@@ -284,11 +283,11 @@
     move-result v3
 
     .line 13
-    iput v6, p0, Lcom/google/android/material/internal/BaselineLayout;->g:I
+    iput v6, p0, Lcom/google/android/material/internal/BaselineLayout;->f:I
 
     .line 14
     :cond_3
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getSuggestedMinimumHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumHeight()I
 
     move-result v0
 
@@ -297,7 +296,7 @@
     move-result v0
 
     .line 15
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getSuggestedMinimumWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumWidth()I
 
     move-result v1
 
@@ -318,7 +317,7 @@
     move-result p2
 
     .line 18
-    invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->setMeasuredDimension(II)V
+    invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
     return-void
 .end method

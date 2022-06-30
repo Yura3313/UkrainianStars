@@ -96,7 +96,6 @@
 .method public build()Lokhttp3/CertificatePinner;
     .locals 3
 
-    .line 1
     new-instance v0, Lokhttp3/CertificatePinner;
 
     new-instance v1, Ljava/util/LinkedHashSet;

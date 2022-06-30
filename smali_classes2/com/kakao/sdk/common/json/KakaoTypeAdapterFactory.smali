@@ -10,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,11 +32,13 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "gson"
 
-    if-eqz p1, :cond_4
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_3
+    const-string p1, "type"
+
+    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
@@ -49,7 +50,7 @@
     .line 2
     const-class p2, Ljava/util/Date;
 
-    invoke-static {p1, p2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p2
 
@@ -78,7 +79,9 @@
     return-object p2
 
     :cond_1
-    return-object v0
+    const/4 p1, 0x0
+
+    return-object p1
 
     .line 6
     :cond_2
@@ -89,19 +92,4 @@
     invoke-direct {p1, p2}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
 
     throw p1
-
-    :cond_3
-    const-string p1, "type"
-
-    .line 7
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_4
-    const-string p1, "gson"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

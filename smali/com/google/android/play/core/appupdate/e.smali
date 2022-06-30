@@ -1,104 +1,242 @@
-.class public abstract Lcom/google/android/play/core/appupdate/e;
-.super Ljava/lang/Object;
+.class public final Lcom/google/android/play/core/appupdate/e;
+.super Lb5/c;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lb5/c<",
+        "Ly4/a;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 3
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, La5/b;
+
+    const-string v1, "AppUpdateListenerRegistry"
+
+    invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
+
+    new-instance v1, Landroid/content/IntentFilter;
+
+    const-string v2, "com.google.android.play.core.install.ACTION_INSTALL_STATUS"
+
+    invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+
+    invoke-direct {p0, v0, v1, p1}, Lb5/c;-><init>(La5/b;Landroid/content/IntentFilter;Landroid/content/Context;)V
 
     return-void
 .end method
 
-.method public static c(I)Lcom/google/android/play/core/appupdate/e;
-    .locals 3
+
+# virtual methods
+.method public final a(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "package.name"
+
+    invoke-virtual {v1, v3}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x3
+
+    const/4 v6, 0x0
+
+    if-eqz v2, :cond_1
+
+    iget-object v2, v0, Lb5/c;->a:La5/b;
+
+    new-array v7, v6, [Ljava/lang/Object;
+
+    const-string v8, "List of extras in received intent:"
 
     .line 1
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
+    invoke-virtual {v2, v5, v8, v7}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
-    const-string v1, ""
+    move-result-object v2
 
-    if-nez p0, :cond_0
+    invoke-virtual {v2}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
-    const-string v2, " appUpdateType"
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v7
+
+    const-string v8, "Key: %s; value: %s"
+
+    const/4 v9, 0x2
+
+    if-eqz v7, :cond_0
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/lang/String;
+
+    iget-object v10, v0, Lb5/c;->a:La5/b;
+
+    new-array v9, v9, [Ljava/lang/Object;
+
+    aput-object v7, v9, v6
+
+    invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
+
+    move-result-object v11
+
+    invoke-virtual {v11, v7}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    aput-object v7, v9, v4
 
     .line 3
-    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    :cond_0
-    if-nez v0, :cond_1
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, " allowClearStorage"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    :cond_1
-    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
-
-    move-result v2
-
-    if-nez v2, :cond_3
-
-    new-instance p0, Ljava/lang/IllegalStateException;
-
-    const-string v0, "Missing required properties:"
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
-    new-instance v1, Ljava/lang/String;
-
-    invoke-direct {v1, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v10, v5, v8, v9}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     goto :goto_0
 
-    :cond_2
-    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    .line 4
+    :cond_0
+    iget-object v2, v0, Lb5/c;->a:La5/b;
+
+    new-array v7, v6, [Ljava/lang/Object;
+
+    const-string v10, "List of extras in received intent needed by fromUpdateIntent:"
+
+    .line 5
+    invoke-virtual {v2, v5, v10, v7}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+
+    new-array v7, v9, [Ljava/lang/Object;
+
+    const-string v10, "install.status"
+
+    aput-object v10, v7, v6
+
+    .line 6
+    invoke-virtual {v1, v10, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v11
+
+    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v11
+
+    aput-object v11, v7, v4
+
+    .line 7
+    invoke-virtual {v2, v5, v8, v7}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+
+    new-array v7, v9, [Ljava/lang/Object;
+
+    const-string v9, "error.code"
+
+    aput-object v9, v7, v6
+
+    .line 8
+    invoke-virtual {v1, v9, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v11
+
+    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v11
+
+    aput-object v11, v7, v4
+
+    .line 9
+    invoke-virtual {v2, v5, v8, v7}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+
+    .line 10
+    invoke-virtual {v1, v10, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v12
+
+    const-wide/16 v7, 0x0
+
+    const-string v2, "bytes.downloaded"
+
+    invoke-virtual {v1, v2, v7, v8}, Landroid/content/Intent;->getLongExtra(Ljava/lang/String;J)J
+
+    move-result-wide v13
+
+    const-string v2, "total.bytes.to.download"
+
+    invoke-virtual {v1, v2, v7, v8}, Landroid/content/Intent;->getLongExtra(Ljava/lang/String;J)J
+
+    move-result-wide v15
+
+    invoke-virtual {v1, v9, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v17
+
+    invoke-virtual {v1, v3}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v18
+
+    invoke-static/range {v12 .. v18}, Ly4/a;->a(IJJILjava/lang/String;)Ly4/a;
 
     move-result-object v1
 
-    :goto_0
-    invoke-direct {p0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    iget-object v2, v0, Lb5/c;->a:La5/b;
 
-    throw p0
+    new-array v3, v4, [Ljava/lang/Object;
 
-    :cond_3
-    new-instance v1, Lcom/google/android/play/core/appupdate/o;
+    aput-object v1, v3, v6
 
-    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
+    const-string v4, "ListenerRegistryBroadcastReceiver.onReceive: %s"
 
-    move-result p0
+    .line 11
+    invoke-virtual {v2, v5, v4, v3}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    .line 12
+    invoke-virtual {v0, v1}, Lb5/c;->b(Ljava/lang/Object;)V
 
-    move-result v0
+    return-void
 
-    invoke-direct {v1, p0, v0}, Lcom/google/android/play/core/appupdate/o;-><init>(IZ)V
+    :cond_1
+    iget-object v2, v0, Lb5/c;->a:La5/b;
 
-    return-object v1
-.end method
+    new-array v4, v4, [Ljava/lang/Object;
 
+    invoke-virtual {v1, v3}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
-# virtual methods
-.method public abstract a()Z
-.end method
+    move-result-object v1
 
-.method public abstract b()I
+    aput-object v1, v4, v6
+
+    const-string v1, "ListenerRegistryBroadcastReceiver received broadcast for third party app: %s"
+
+    .line 13
+    invoke-virtual {v2, v5, v1, v4}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+
+    return-void
 .end method

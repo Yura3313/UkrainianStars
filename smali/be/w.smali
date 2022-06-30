@@ -1,125 +1,166 @@
-.class public final Lbe/w;
-.super Lbe/x;
+.class public abstract Lbe/w;
+.super Ljava/lang/Object;
+.source "ProfileStorage.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lbe/w$a;,
+        Lbe/w$b;
+    }
+.end annotation
 
 
 # direct methods
-.method public static final f(Ljava/util/Set;Ljava/lang/Iterable;)Ljava/util/Set;
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/supercell/id/model/IdProfile;
     .locals 2
 
-    const/4 v0, 0x0
-
-    if-eqz p0, :cond_3
-
-    if-eqz p1, :cond_2
-
     .line 1
-    instance-of v1, p1, Ljava/util/Collection;
+    instance-of v0, p0, Lbe/w$a;
+
+    if-eqz v0, :cond_1
+
+    move-object v0, p0
+
+    check-cast v0, Lbe/w$a;
+
+    .line 2
+    iget-object v1, v0, Lbe/w$a;->b:Lcom/supercell/id/model/IdProfile;
 
     if-eqz v1, :cond_0
 
-    move-object v0, p1
+    goto :goto_0
 
-    check-cast v0, Ljava/util/Collection;
-
-    invoke-interface {v0}, Ljava/util/Collection;->size()I
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
+    .line 3
     :cond_0
-    if-eqz v0, :cond_1
-
-    .line 2
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
-
-    move-result v0
-
-    invoke-interface {p0}, Ljava/util/Set;->size()I
-
-    move-result v1
-
-    add-int/2addr v1, v0
+    iget-object v1, v0, Lbe/w$a;->a:Lcom/supercell/id/model/IdProfile;
 
     goto :goto_0
 
-    :cond_1
-    invoke-interface {p0}, Ljava/util/Set;->size()I
-
-    move-result v0
-
-    mul-int/lit8 v1, v0, 0x2
-
-    :goto_0
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/d;->e(I)I
-
-    move-result v0
-
-    new-instance v1, Ljava/util/LinkedHashSet;
-
-    invoke-direct {v1, v0}, Ljava/util/LinkedHashSet;-><init>(I)V
-
-    .line 3
-    invoke-virtual {v1, p0}, Ljava/util/LinkedHashSet;->addAll(Ljava/util/Collection;)Z
-
     .line 4
-    invoke-static {v1, p1}, Lbe/i;->z(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    :cond_1
+    instance-of v0, p0, Lbe/w$b;
 
-    return-object v1
+    if-eqz v0, :cond_3
 
-    :cond_2
-    const-string p0, "elements"
+    move-object v0, p0
+
+    check-cast v0, Lbe/w$b;
 
     .line 5
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
+    iget-object v1, v0, Lbe/w$b;->b:Lcom/supercell/id/model/IdProfile;
 
-    throw v0
+    if-eqz v1, :cond_2
 
+    goto :goto_0
+
+    .line 6
+    :cond_2
+    iget-object v1, v0, Lbe/w$b;->a:Lcom/supercell/id/model/IdProfile;
+
+    :goto_0
+    return-object v1
+
+    .line 7
     :cond_3
-    const-string p0, "$this$plus"
+    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
 
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
 
     throw v0
 .end method
 
-.method public static final g(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
-    .locals 2
-
-    if-eqz p0, :cond_0
+.method public final b()Lcom/supercell/id/model/IdProfile;
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/util/LinkedHashSet;
+    instance-of v0, p0, Lbe/w$b;
 
-    invoke-interface {p0}, Ljava/util/Set;->size()I
+    if-eqz v0, :cond_0
 
-    move-result v1
+    move-object v0, p0
 
-    add-int/lit8 v1, v1, 0x1
-
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/d;->e(I)I
-
-    move-result v1
-
-    invoke-direct {v0, v1}, Ljava/util/LinkedHashSet;-><init>(I)V
+    check-cast v0, Lbe/w$b;
 
     .line 2
-    invoke-virtual {v0, p0}, Ljava/util/LinkedHashSet;->addAll(Ljava/util/Collection;)Z
+    iget-object v0, v0, Lbe/w$b;->a:Lcom/supercell/id/model/IdProfile;
 
-    .line 3
-    invoke-virtual {v0, p1}, Ljava/util/LinkedHashSet;->add(Ljava/lang/Object;)Z
-
-    return-object v0
+    goto :goto_0
 
     :cond_0
-    const-string p0, "$this$plus"
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public final c(Lcom/supercell/id/model/IdProfile;)Lbe/w;
+    .locals 2
+
+    .line 1
+    instance-of v0, p0, Lbe/w$a;
+
+    if-eqz v0, :cond_0
+
+    move-object v0, p0
+
+    check-cast v0, Lbe/w$a;
+
+    .line 2
+    iget-object v0, v0, Lbe/w$a;->a:Lcom/supercell/id/model/IdProfile;
+
+    const-string v1, "fromPersistentStorage"
+
+    .line 3
+    invoke-static {v0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v1, Lbe/w$a;
+
+    invoke-direct {v1, v0, p1}, Lbe/w$a;-><init>(Lcom/supercell/id/model/IdProfile;Lcom/supercell/id/model/IdProfile;)V
+
+    goto :goto_0
 
     .line 4
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
+    :cond_0
+    instance-of v0, p0, Lbe/w$b;
 
-    const/4 p0, 0x0
+    if-eqz v0, :cond_1
 
-    throw p0
+    move-object v0, p0
+
+    check-cast v0, Lbe/w$b;
+
+    .line 5
+    iget-object v0, v0, Lbe/w$b;->a:Lcom/supercell/id/model/IdProfile;
+
+    const-string v1, "fromServer"
+
+    .line 6
+    invoke-static {v0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v1, Lbe/w$b;
+
+    invoke-direct {v1, v0, p1}, Lbe/w$b;-><init>(Lcom/supercell/id/model/IdProfile;Lcom/supercell/id/model/IdProfile;)V
+
+    :goto_0
+    return-object v1
+
+    .line 7
+    :cond_1
+    new-instance p1, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {p1}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    throw p1
 .end method

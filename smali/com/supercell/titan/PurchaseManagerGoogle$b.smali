@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/PurchaseManagerGoogle$b;
+.class public final Lcom/supercell/titan/PurchaseManagerGoogle$b;
 .super Ljava/lang/Object;
 .source "PurchaseManagerGoogle.java"
 
@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public a(Lcom/android/billingclient/api/e;Ljava/util/List;)V
+.method public final a(Lcom/android/billingclient/api/e;Ljava/util/List;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -121,7 +121,7 @@
     .line 11
     iget-object p2, p0, Lcom/supercell/titan/PurchaseManagerGoogle$b;->b:Lcom/supercell/titan/PurchaseManagerGoogle;
 
-    invoke-virtual {p1}, Lorg/json/JSONException;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 

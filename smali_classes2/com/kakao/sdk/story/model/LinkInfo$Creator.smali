@@ -30,13 +30,11 @@
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 10
 
-    if-eqz p1, :cond_0
+    const-string v0, "in"
 
-    new-instance v9, Lcom/kakao/sdk/story/model/LinkInfo;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v1
+    new-instance v0, Lcom/kakao/sdk/story/model/LinkInfo;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -62,25 +60,19 @@
 
     move-result-object v7
 
-    invoke-virtual {p1}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v8
 
-    move-object v0, v9
+    invoke-virtual {p1}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
 
-    invoke-direct/range {v0 .. v8}, Lcom/kakao/sdk/story/model/LinkInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+    move-result-object v9
 
-    return-object v9
+    move-object v1, v0
 
-    :cond_0
-    const-string p1, "in"
+    invoke-direct/range {v1 .. v9}, Lcom/kakao/sdk/story/model/LinkInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

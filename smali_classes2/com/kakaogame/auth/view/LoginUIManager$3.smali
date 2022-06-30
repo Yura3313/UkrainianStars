@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/util/MutexLock;Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/LoginUIManager$3;->val$uiPopupLock:Lcom/kakaogame/util/MutexLock;
 
     iput-object p2, p0, Lcom/kakaogame/auth/view/LoginUIManager$3;->val$activity:Landroid/app/Activity;

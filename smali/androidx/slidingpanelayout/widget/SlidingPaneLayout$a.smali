@@ -1,4 +1,4 @@
-.class public Landroidx/slidingpanelayout/widget/SlidingPaneLayout$a;
+.class public final Landroidx/slidingpanelayout/widget/SlidingPaneLayout$a;
 .super Lf0/a;
 .source "SlidingPaneLayout.java"
 
@@ -41,13 +41,11 @@
 
 
 # virtual methods
-.method public d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
-    .locals 1
+.method public final d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
-
-    invoke-virtual {v0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    invoke-super {p0, p1, p2}, Lf0/a;->d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
     .line 2
     const-class p1, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;
@@ -56,219 +54,192 @@
 
     move-result-object p1
 
-    invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityEvent;->setClassName(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityRecord;->setClassName(Ljava/lang/CharSequence;)V
 
     return-void
 .end method
 
-.method public e(Landroid/view/View;Lg0/b;)V
+.method public final e(Landroid/view/View;Lg0/c;)V
     .locals 3
 
     .line 1
-    iget-object v0, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-static {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->obtain(Landroid/view/accessibility/AccessibilityNodeInfo;)Landroid/view/accessibility/AccessibilityNodeInfo;
+    invoke-static {p2}, Lg0/c;->v(Lg0/c;)Lg0/c;
 
     move-result-object v0
 
     .line 2
     iget-object v1, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
 
-    invoke-virtual {v1, p1, v0}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
-
     .line 3
-    iget-object v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$a;->d:Landroid/graphics/Rect;
+    iget-object v2, v0, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
     .line 4
-    invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->getBoundsInParent(Landroid/graphics/Rect;)V
+    invoke-virtual {v1, p1, v2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
     .line 5
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setBoundsInParent(Landroid/graphics/Rect;)V
+    iget-object v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$a;->d:Landroid/graphics/Rect;
 
     .line 6
-    invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->getBoundsInScreen(Landroid/graphics/Rect;)V
+    invoke-virtual {v0, v1}, Lg0/c;->g(Landroid/graphics/Rect;)V
 
     .line 7
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setBoundsInScreen(Landroid/graphics/Rect;)V
+    invoke-virtual {p2, v1}, Lg0/c;->A(Landroid/graphics/Rect;)V
 
     .line 8
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isVisibleToUser()Z
-
-    move-result v1
+    invoke-virtual {v0, v1}, Lg0/c;->h(Landroid/graphics/Rect;)V
 
     .line 9
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setVisibleToUser(Z)V
+    invoke-virtual {p2, v1}, Lg0/c;->B(Landroid/graphics/Rect;)V
 
     .line 10
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getPackageName()Ljava/lang/CharSequence;
+    iget-object v1, v0, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
-    move-result-object v1
+    invoke-virtual {v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->isVisibleToUser()Z
+
+    move-result v1
 
     .line 11
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setPackageName(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, v1}, Lg0/c;->a0(Z)V
 
     .line 12
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getClassName()Ljava/lang/CharSequence;
+    invoke-virtual {v0}, Lg0/c;->m()Ljava/lang/CharSequence;
 
     move-result-object v1
+
+    invoke-virtual {p2, v1}, Lg0/c;->R(Ljava/lang/CharSequence;)V
 
     .line 13
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
-
-    .line 14
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getContentDescription()Ljava/lang/CharSequence;
+    invoke-virtual {v0}, Lg0/c;->i()Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    .line 15
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    invoke-virtual {p2, v1}, Lg0/c;->E(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setContentDescription(Ljava/lang/CharSequence;)V
+    .line 14
+    invoke-virtual {v0}, Lg0/c;->k()Ljava/lang/CharSequence;
+
+    move-result-object v1
+
+    invoke-virtual {p2, v1}, Lg0/c;->I(Ljava/lang/CharSequence;)V
+
+    .line 15
+    invoke-virtual {v0}, Lg0/c;->p()Z
+
+    move-result v1
+
+    invoke-virtual {p2, v1}, Lg0/c;->K(Z)V
 
     .line 16
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isEnabled()Z
+    invoke-virtual {v0}, Lg0/c;->o()Z
 
     move-result v1
+
+    invoke-virtual {p2, v1}, Lg0/c;->F(Z)V
 
     .line 17
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    invoke-virtual {v0}, Lg0/c;->q()Z
 
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setEnabled(Z)V
+    move-result v1
+
+    invoke-virtual {p2, v1}, Lg0/c;->M(Z)V
 
     .line 18
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isClickable()Z
+    invoke-virtual {v0}, Lg0/c;->r()Z
 
     move-result v1
+
+    invoke-virtual {p2, v1}, Lg0/c;->N(Z)V
 
     .line 19
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    iget-object v1, v0, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClickable(Z)V
+    invoke-virtual {v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->isAccessibilityFocused()Z
+
+    move-result v1
 
     .line 20
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isFocusable()Z
-
-    move-result v1
+    invoke-virtual {p2, v1}, Lg0/c;->y(Z)V
 
     .line 21
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    invoke-virtual {v0}, Lg0/c;->t()Z
 
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setFocusable(Z)V
+    move-result v1
 
     .line 22
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isFocused()Z
+    iget-object v2, p2, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
-    move-result v1
+    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setSelected(Z)V
 
     .line 23
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setFocused(Z)V
-
-    .line 24
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isAccessibilityFocused()Z
+    invoke-virtual {v0}, Lg0/c;->s()Z
 
     move-result v1
 
-    .line 25
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    .line 24
+    iget-object v2, p2, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setAccessibilityFocused(Z)V
+    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setLongClickable(Z)V
+
+    .line 25
+    invoke-virtual {v0}, Lg0/c;->f()I
+
+    move-result v1
+
+    invoke-virtual {p2, v1}, Lg0/c;->a(I)V
 
     .line 26
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isSelected()Z
+    iget-object v1, v0, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+
+    invoke-virtual {v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->getMovementGranularities()I
 
     move-result v1
 
     .line 27
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setSelected(Z)V
-
-    .line 28
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isLongClickable()Z
-
-    move-result v1
-
-    .line 29
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setLongClickable(Z)V
-
-    .line 30
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getActions()I
-
-    move-result v1
-
-    .line 31
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->addAction(I)V
-
-    .line 32
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getMovementGranularities()I
-
-    move-result v1
-
-    .line 33
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    iget-object v2, p2, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setMovementGranularities(I)V
 
-    .line 34
-    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->recycle()V
+    .line 28
+    invoke-virtual {v0}, Lg0/c;->w()V
 
-    .line 35
+    .line 29
     const-class v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 36
-    iget-object v1, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-virtual {v1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, v0}, Lg0/c;->E(Ljava/lang/CharSequence;)V
 
     const/4 v0, -0x1
 
-    .line 37
-    iput v0, p2, Lg0/b;->c:I
+    .line 30
+    iput v0, p2, Lg0/c;->c:I
 
-    .line 38
-    iget-object v0, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    .line 31
+    iget-object v0, p2, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-virtual {v0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setSource(Landroid/view/View;)V
 
-    .line 39
+    .line 32
     sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
-    .line 40
+    .line 33
     invoke-virtual {p1}, Landroid/view/View;->getParentForAccessibility()Landroid/view/ViewParent;
 
     move-result-object p1
 
-    .line 41
+    .line 34
     instance-of v0, p1, Landroid/view/View;
 
     if-eqz v0, :cond_0
 
-    .line 42
+    .line 35
     check-cast p1, Landroid/view/View;
 
-    invoke-virtual {p2, p1}, Lg0/b;->w(Landroid/view/View;)V
+    invoke-virtual {p2, p1}, Lg0/c;->T(Landroid/view/View;)V
 
-    .line 43
+    .line 36
     :cond_0
     iget-object p1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$a;->e:Landroidx/slidingpanelayout/widget/SlidingPaneLayout;
 
@@ -281,23 +252,23 @@
     :goto_0
     if-ge v0, p1, :cond_2
 
-    .line 44
+    .line 37
     iget-object v1, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$a;->e:Landroidx/slidingpanelayout/widget/SlidingPaneLayout;
 
     invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 45
+    .line 38
     iget-object v2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$a;->e:Landroidx/slidingpanelayout/widget/SlidingPaneLayout;
 
-    invoke-virtual {v2, v1}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->c(Landroid/view/View;)Z
+    invoke-virtual {v2, v1}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->b(Landroid/view/View;)Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 46
+    .line 39
     invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
 
     move-result v2
@@ -306,11 +277,11 @@
 
     const/4 v2, 0x1
 
-    .line 47
-    invoke-static {v1, v2}, Lf0/r;->D(Landroid/view/View;I)V
+    .line 40
+    invoke-static {v1, v2}, Lf0/r;->I(Landroid/view/View;I)V
 
-    .line 48
-    iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+    .line 41
+    iget-object v2, p2, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-virtual {v2, v1}, Landroid/view/accessibility/AccessibilityNodeInfo;->addChild(Landroid/view/View;)V
 
@@ -323,22 +294,20 @@
     return-void
 .end method
 
-.method public g(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+.method public final g(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
 
     .line 1
     iget-object v0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$a;->e:Landroidx/slidingpanelayout/widget/SlidingPaneLayout;
 
-    invoke-virtual {v0, p2}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->c(Landroid/view/View;)Z
+    invoke-virtual {v0, p2}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout;->b(Landroid/view/View;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
-
-    invoke-virtual {v0, p1, p2, p3}, Landroid/view/View$AccessibilityDelegate;->onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+    invoke-super {p0, p1, p2, p3}, Lf0/a;->g(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
     move-result p1
 

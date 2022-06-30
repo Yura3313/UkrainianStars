@@ -1,4 +1,4 @@
-.class public Lc0/f$b;
+.class public final Lc0/f$b;
 .super Ljava/lang/Object;
 .source "SelfDestructiveThread.java"
 
@@ -18,31 +18,30 @@
 
 
 # instance fields
-.field public final synthetic g:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final synthetic f:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field public final synthetic h:Ljava/util/concurrent/Callable;
+.field public final synthetic g:Ljava/util/concurrent/Callable;
 
-.field public final synthetic i:Ljava/util/concurrent/locks/ReentrantLock;
+.field public final synthetic h:Ljava/util/concurrent/locks/ReentrantLock;
 
-.field public final synthetic j:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final synthetic i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field public final synthetic k:Ljava/util/concurrent/locks/Condition;
+.field public final synthetic j:Ljava/util/concurrent/locks/Condition;
 
 
 # direct methods
-.method public constructor <init>(Lc0/f;Ljava/util/concurrent/atomic/AtomicReference;Ljava/util/concurrent/Callable;Ljava/util/concurrent/locks/ReentrantLock;Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/util/concurrent/locks/Condition;)V
+.method public constructor <init>(Ljava/util/concurrent/atomic/AtomicReference;Ljava/util/concurrent/Callable;Ljava/util/concurrent/locks/ReentrantLock;Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/util/concurrent/locks/Condition;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Lc0/f$b;->g:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object p1, p0, Lc0/f$b;->f:Ljava/util/concurrent/atomic/AtomicReference;
 
-    iput-object p3, p0, Lc0/f$b;->h:Ljava/util/concurrent/Callable;
+    iput-object p2, p0, Lc0/f$b;->g:Ljava/util/concurrent/Callable;
 
-    iput-object p4, p0, Lc0/f$b;->i:Ljava/util/concurrent/locks/ReentrantLock;
+    iput-object p3, p0, Lc0/f$b;->h:Ljava/util/concurrent/locks/ReentrantLock;
 
-    iput-object p5, p0, Lc0/f$b;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object p4, p0, Lc0/f$b;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    iput-object p6, p0, Lc0/f$b;->k:Ljava/util/concurrent/locks/Condition;
+    iput-object p5, p0, Lc0/f$b;->j:Ljava/util/concurrent/locks/Condition;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,14 +50,14 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 2
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lc0/f$b;->g:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lc0/f$b;->f:Ljava/util/concurrent/atomic/AtomicReference;
 
-    iget-object v1, p0, Lc0/f$b;->h:Ljava/util/concurrent/Callable;
+    iget-object v1, p0, Lc0/f$b;->g:Ljava/util/concurrent/Callable;
 
     invoke-interface {v1}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
 
@@ -70,27 +69,27 @@
 
     .line 2
     :catch_0
-    iget-object v0, p0, Lc0/f$b;->i:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lc0/f$b;->h:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
     .line 3
     :try_start_1
-    iget-object v0, p0, Lc0/f$b;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lc0/f$b;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 4
-    iget-object v0, p0, Lc0/f$b;->k:Ljava/util/concurrent/locks/Condition;
+    iget-object v0, p0, Lc0/f$b;->j:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Condition;->signal()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 5
-    iget-object v0, p0, Lc0/f$b;->i:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lc0/f$b;->h:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -99,7 +98,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lc0/f$b;->i:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lc0/f$b;->h:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 

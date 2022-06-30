@@ -1,9 +1,9 @@
-.class public Lcom/supercell/titan/GoogleServiceClient$b;
+.class public final Lcom/supercell/titan/GoogleServiceClient$b;
 .super Ljava/lang/Object;
 .source "GoogleServiceClient.java"
 
 # interfaces
-.implements Lb4/c;
+.implements Lc4/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lb4/c<",
+        "Lc4/c<",
         "Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;",
         ">;"
     }
@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/supercell/titan/GoogleServiceClient;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/titan/GoogleServiceClient$b;->a:Lcom/supercell/titan/GoogleServiceClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,25 +43,25 @@
 
 
 # virtual methods
-.method public a(Lb4/f;)V
+.method public final a(Lc4/f;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lb4/f<",
+            "Lc4/f<",
             "Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lb4/f;->l()Z
+    invoke-virtual {p1}, Lc4/f;->m()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Lb4/f;->h()Ljava/lang/Object;
+    invoke-virtual {p1}, Lc4/f;->i()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -71,7 +70,7 @@
     .line 2
     iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$b;->a:Lcom/supercell/titan/GoogleServiceClient;
 
-    invoke-virtual {p1}, Lb4/f;->h()Ljava/lang/Object;
+    invoke-virtual {p1}, Lc4/f;->i()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -84,7 +83,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p1}, Lb4/f;->g()Ljava/lang/Exception;
+    invoke-virtual {p1}, Lc4/f;->h()Ljava/lang/Exception;
 
     :goto_0
     return-void

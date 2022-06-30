@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/MainActivity$l;
+.field public final synthetic f:Lcom/supercell/id/ui/MainActivity$m;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/MainActivity$l;)V
+.method public constructor <init>(Lcom/supercell/id/ui/MainActivity$m;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -19,8 +19,7 @@
         }
     .end annotation
 
-    .line 1
-    iput-object p1, p0, Lcom/supercell/id/ui/b;->g:Lcom/supercell/id/ui/MainActivity$l;
+    iput-object p1, p0, Lcom/supercell/id/ui/b;->f:Lcom/supercell/id/ui/MainActivity$m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,18 +28,20 @@
 
 
 # virtual methods
-.method public a(Landroid/graphics/Rect;)V
+.method public final a(Landroid/graphics/Rect;)V
     .locals 4
 
-    if-eqz p1, :cond_2
+    const-string v0, "systemWindowInsets"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/b;->g:Lcom/supercell/id/ui/MainActivity$l;
+    iget-object v0, p0, Lcom/supercell/id/ui/b;->f:Lcom/supercell/id/ui/MainActivity$m;
 
-    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity$l;->g:Lcom/supercell/id/ui/MainActivity;
+    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity$m;->f:Lcom/supercell/id/ui/MainActivity;
 
     .line 2
-    iget-object v1, v0, Lcom/supercell/id/ui/MainActivity;->m:Landroid/graphics/Rect;
+    iget-object v1, v0, Lcom/supercell/id/ui/MainActivity;->l:Landroid/graphics/Rect;
 
     if-eqz v1, :cond_1
 
@@ -66,30 +67,20 @@
     invoke-static {v0}, Lcom/supercell/id/ui/MainActivity;->e(Lcom/supercell/id/ui/MainActivity;)V
 
     .line 5
-    iget-object v0, p0, Lcom/supercell/id/ui/b;->g:Lcom/supercell/id/ui/MainActivity$l;
+    iget-object v0, p0, Lcom/supercell/id/ui/b;->f:Lcom/supercell/id/ui/MainActivity$m;
 
-    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity$l;->g:Lcom/supercell/id/ui/MainActivity;
+    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity$m;->f:Lcom/supercell/id/ui/MainActivity;
 
     invoke-static {v0}, Lcom/supercell/id/ui/MainActivity;->d(Lcom/supercell/id/ui/MainActivity;)V
 
     .line 6
     :cond_1
-    iget-object v0, p0, Lcom/supercell/id/ui/b;->g:Lcom/supercell/id/ui/MainActivity$l;
+    iget-object v0, p0, Lcom/supercell/id/ui/b;->f:Lcom/supercell/id/ui/MainActivity$m;
 
-    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity$l;->g:Lcom/supercell/id/ui/MainActivity;
+    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity$m;->f:Lcom/supercell/id/ui/MainActivity;
 
     .line 7
-    iput-object p1, v0, Lcom/supercell/id/ui/MainActivity;->m:Landroid/graphics/Rect;
+    iput-object p1, v0, Lcom/supercell/id/ui/MainActivity;->l:Landroid/graphics/Rect;
 
     return-void
-
-    :cond_2
-    const-string p1, "systemWindowInsets"
-
-    .line 8
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

@@ -1,74 +1,25 @@
-.class public Lpb/n;
-.super Ljava/lang/Object;
-.source "PreviewScalingStrategy.java"
-
-# interfaces
-.implements Ljava/util/Comparator;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lob/o;",
-        ">;"
-    }
-.end annotation
+.class public final Lpb/n;
+.super Lcom/helpshift/websockets/WebSocketException;
+.source "InsufficientDataException.java"
 
 
 # instance fields
-.field public final synthetic g:Lob/o;
-
-.field public final synthetic h:Lpb/o;
+.field public final g:I
 
 
 # direct methods
-.method public constructor <init>(Lpb/o;Lob/o;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lpb/n;->h:Lpb/o;
-
-    iput-object p2, p0, Lpb/n;->g:Lob/o;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public constructor <init>(I)V
     .locals 2
 
-    .line 1
-    check-cast p1, Lob/o;
+    const/16 v0, 0x14
 
-    check-cast p2, Lob/o;
+    const-string v1, "The end of the stream has been reached unexpectedly."
+
+    .line 1
+    invoke-direct {p0, v0, v1}, Lcom/helpshift/websockets/WebSocketException;-><init>(ILjava/lang/String;)V
 
     .line 2
-    iget-object v0, p0, Lpb/n;->h:Lpb/o;
+    iput p1, p0, Lpb/n;->g:I
 
-    iget-object v1, p0, Lpb/n;->g:Lob/o;
-
-    invoke-virtual {v0, p1, v1}, Lpb/o;->a(Lob/o;Lob/o;)F
-
-    move-result p1
-
-    .line 3
-    iget-object v0, p0, Lpb/n;->h:Lpb/o;
-
-    iget-object v1, p0, Lpb/n;->g:Lob/o;
-
-    invoke-virtual {v0, p2, v1}, Lpb/o;->a(Lob/o;Lob/o;)F
-
-    move-result p2
-
-    .line 4
-    invoke-static {p2, p1}, Ljava/lang/Float;->compare(FF)I
-
-    move-result p1
-
-    return p1
+    return-void
 .end method

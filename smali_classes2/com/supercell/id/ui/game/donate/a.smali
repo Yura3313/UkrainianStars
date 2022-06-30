@@ -1,79 +1,67 @@
 .class public final Lcom/supercell/id/ui/game/donate/a;
-.super Lle/j;
+.super Lse/h;
 .source "DonateFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
+        "Lse/h;",
+        "Lre/p<",
         "Landroid/graphics/drawable/Drawable;",
-        "Lpd/g;",
-        "Lae/i;",
+        "Lud/g;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lke/l;
+.field public final synthetic f:Lre/l;
 
 
 # direct methods
-.method public constructor <init>(Lke/l;)V
+.method public constructor <init>(Lre/l;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/a;->g:Lke/l;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/a;->f:Lre/l;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
     check-cast p1, Landroid/graphics/drawable/Drawable;
 
-    check-cast p2, Lpd/g;
+    check-cast p2, Lud/g;
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
-
-    if-eqz p2, :cond_0
+    const-string v0, "drawable"
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/ui/game/donate/a;->g:Lke/l;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-interface {p2, p1}, Lke/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v0, "<anonymous parameter 1>"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    sget-object p1, Lae/i;->a:Lae/i;
+    iget-object p2, p0, Lcom/supercell/id/ui/game/donate/a;->f:Lre/l;
 
-    return-object p1
-
-    :cond_0
-    const-string p1, "<anonymous parameter 1>"
+    invoke-interface {p2, p1}, Lre/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    throw v0
-
-    :cond_1
-    const-string p1, "drawable"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return-object p1
 .end method

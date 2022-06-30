@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/SupercellId$k;
-.super Lle/j;
+.super Lse/h;
 .source "SupercellId.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/SupercellId;->requestBackgroundTimeout()Z
+    value = Lcom/supercell/id/SupercellId;->reloadAssetsToMemoryCache()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lae/i;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/a<",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/SupercellId$k;
+.field public static final f:Lcom/supercell/id/SupercellId$k;
 
 
 # direct methods
@@ -39,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/SupercellId$k;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/SupercellId$k;->g:Lcom/supercell/id/SupercellId$k;
+    sput-object v0, Lcom/supercell/id/SupercellId$k;->f:Lcom/supercell/id/SupercellId$k;
 
     return-void
 .end method
@@ -47,52 +46,124 @@
 .method public constructor <init>()V
     .locals 1
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final invoke()Ljava/lang/Object;
+    .locals 7
 
     .line 1
-    check-cast p1, Lae/i;
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    if-eqz p1, :cond_1
+    invoke-static {v0}, Lcom/supercell/id/SupercellId;->access$getWeakContext$p(Lcom/supercell/id/SupercellId;)Ljava/lang/ref/WeakReference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2
+
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/content/Context;
+
+    if-eqz v1, :cond_2
 
     .line 2
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    const/4 v0, 0x0
-
-    invoke-static {p1, v0}, Lcom/supercell/id/SupercellId;->access$set_isRunInBackgroundEnabled$p(Lcom/supercell/id/SupercellId;Z)V
+    move-result-object v2
 
     .line 3
-    invoke-static {p1}, Lcom/supercell/id/SupercellId;->access$getDelegate$p(Lcom/supercell/id/SupercellId;)Lcom/supercell/id/SupercellIdDelegate;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    invoke-interface {p1}, Lcom/supercell/id/SupercellIdDelegate;->backgroundTimeout()V
+    iget-object v2, v2, Lae/u;->w:Lsc/a;
 
     .line 4
-    :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "it"
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    const/4 p1, 0x0
+    move-result-object v3
 
-    throw p1
+    .line 6
+    iget-object v3, v3, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
+
+    .line 7
+    invoke-virtual {v3}, Lcom/supercell/id/IdConfiguration;->getSfxEnabled()Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    goto :goto_1
+
+    .line 8
+    :cond_0
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object v0
+
+    .line 9
+    iget-object v0, v0, Lae/u;->s:Lud/j;
+
+    .line 10
+    iget-object v0, v0, Lud/j;->g:Lud/h;
+
+    .line 11
+    invoke-virtual {v0, v1}, Lud/p0;->a(Landroid/content/Context;)Ljava/io/File;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    .line 12
+    invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    goto :goto_1
+
+    .line 13
+    :cond_1
+    invoke-virtual {v0}, Ljava/io/File;->list()[Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2
+
+    .line 14
+    array-length v3, v1
+
+    const/4 v4, 0x0
+
+    :goto_0
+    if-ge v4, v3, :cond_2
+
+    aget-object v5, v1, v4
+
+    .line 15
+    new-instance v6, Ljava/io/File;
+
+    invoke-direct {v6, v0, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-virtual {v2, v6}, Lsc/a;->c(Ljava/io/File;)V
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    .line 16
+    :cond_2
+    :goto_1
+    sget-object v0, Lie/h;->a:Lie/h;
+
+    return-object v0
 .end method

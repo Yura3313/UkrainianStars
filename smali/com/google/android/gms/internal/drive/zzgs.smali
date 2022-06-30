@@ -15,21 +15,20 @@
 
 
 # instance fields
-.field public final g:Lcom/google/android/gms/drive/DriveId;
+.field public final f:Lcom/google/android/gms/drive/DriveId;
 
-.field public final h:I
+.field public final g:I
 
-.field public final i:Lcom/google/android/gms/drive/events/zzt;
+.field public final h:Lcom/google/android/gms/drive/events/zzt;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lq3/g0;
+    new-instance v0, Lr3/g0;
 
-    invoke-direct {v0}, Lq3/g0;-><init>()V
+    invoke-direct {v0}, Lr3/g0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/drive/zzgs;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -43,13 +42,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgs;->g:Lcom/google/android/gms/drive/DriveId;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgs;->f:Lcom/google/android/gms/drive/DriveId;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/drive/zzgs;->h:I
+    iput p2, p0, Lcom/google/android/gms/internal/drive/zzgs;->g:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzgs;->i:Lcom/google/android/gms/drive/events/zzt;
+    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzgs;->h:Lcom/google/android/gms/drive/events/zzt;
 
     return-void
 .end method
@@ -62,39 +61,39 @@
     const/16 v0, 0x4f45
 
     .line 1
-    invoke-static {p1, v0}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v0
 
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzgs;->g:Lcom/google/android/gms/drive/DriveId;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzgs;->f:Lcom/google/android/gms/drive/DriveId;
 
     const/4 v3, 0x0
 
-    invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/4 v1, 0x3
 
     .line 3
-    iget v2, p0, Lcom/google/android/gms/internal/drive/zzgs;->h:I
+    iget v2, p0, Lcom/google/android/gms/internal/drive/zzgs;->g:I
 
     const/4 v4, 0x4
 
     .line 4
-    invoke-static {p1, v1, v4}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v4}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 5
     invoke-virtual {p1, v2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgs;->i:Lcom/google/android/gms/drive/events/zzt;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgs;->h:Lcom/google/android/gms/drive/events/zzt;
 
-    invoke-static {p1, v4, v1, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v4, v1, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 7
-    invoke-static {p1, v0}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

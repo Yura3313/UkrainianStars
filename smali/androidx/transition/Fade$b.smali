@@ -1,4 +1,4 @@
-.class public Landroidx/transition/Fade$b;
+.class public final Landroidx/transition/Fade$b;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "Fade.java"
 
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final g:Landroid/view/View;
+.field public final f:Landroid/view/View;
 
-.field public h:Z
+.field public g:Z
 
 
 # direct methods
@@ -30,36 +30,33 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Landroidx/transition/Fade$b;->h:Z
+    iput-boolean v0, p0, Landroidx/transition/Fade$b;->g:Z
 
     .line 3
-    iput-object p1, p0, Landroidx/transition/Fade$b;->g:Landroid/view/View;
+    iput-object p1, p0, Landroidx/transition/Fade$b;->f:Landroid/view/View;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/animation/Animator;)V
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
 
     .line 1
-    iget-object p1, p0, Landroidx/transition/Fade$b;->g:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/Fade$b;->f:Landroid/view/View;
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    invoke-static {p1, v0}, Lv0/x;->c(Landroid/view/View;F)V
 
     .line 2
-    sget-object v0, Lv0/x;->a:Lv0/d0;
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    invoke-virtual {v0, p1, v1}, Lv0/d0;->f(Landroid/view/View;F)V
-
-    .line 3
-    iget-boolean p1, p0, Landroidx/transition/Fade$b;->h:Z
+    iget-boolean p1, p0, Landroidx/transition/Fade$b;->g:Z
 
     if-eqz p1, :cond_0
 
-    .line 4
-    iget-object p1, p0, Landroidx/transition/Fade$b;->g:Landroid/view/View;
+    .line 3
+    iget-object p1, p0, Landroidx/transition/Fade$b;->f:Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -71,11 +68,11 @@
     return-void
 .end method
 
-.method public onAnimationStart(Landroid/animation/Animator;)V
+.method public final onAnimationStart(Landroid/animation/Animator;)V
     .locals 2
 
     .line 1
-    iget-object p1, p0, Landroidx/transition/Fade$b;->g:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/Fade$b;->f:Landroid/view/View;
 
     sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
@@ -87,7 +84,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Landroidx/transition/Fade$b;->g:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/Fade$b;->f:Landroid/view/View;
 
     .line 4
     invoke-virtual {p1}, Landroid/view/View;->getLayerType()I
@@ -99,10 +96,10 @@
     const/4 p1, 0x1
 
     .line 5
-    iput-boolean p1, p0, Landroidx/transition/Fade$b;->h:Z
+    iput-boolean p1, p0, Landroidx/transition/Fade$b;->g:Z
 
     .line 6
-    iget-object p1, p0, Landroidx/transition/Fade$b;->g:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/Fade$b;->f:Landroid/view/View;
 
     const/4 v0, 0x2
 

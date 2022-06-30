@@ -1,4 +1,4 @@
-.class public Landroidx/coordinatorlayout/widget/CoordinatorLayout$g;
+.class public final Landroidx/coordinatorlayout/widget/CoordinatorLayout$g;
 .super Ljava/lang/Object;
 .source "CoordinatorLayout.java"
 
@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +37,7 @@
 
 
 # virtual methods
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
 
     .line 1
@@ -47,12 +46,12 @@
     check-cast p2, Landroid/view/View;
 
     .line 2
-    invoke-static {p1}, Lf0/r;->n(Landroid/view/View;)F
+    invoke-static {p1}, Lf0/r;->q(Landroid/view/View;)F
 
     move-result p1
 
     .line 3
-    invoke-static {p2}, Lf0/r;->n(Landroid/view/View;)F
+    invoke-static {p2}, Lf0/r;->q(Landroid/view/View;)F
 
     move-result p2
 

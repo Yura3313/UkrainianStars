@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/RecyclerView$r$a;
+.class public final Landroidx/recyclerview/widget/RecyclerView$r$a;
 .super Ljava/lang/Object;
 .source "RecyclerView.java"
 

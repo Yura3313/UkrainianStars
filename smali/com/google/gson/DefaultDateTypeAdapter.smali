@@ -644,6 +644,7 @@
 
     move-result-object v1
 
+    .line 4
     check-cast v0, Ljava/text/SimpleDateFormat;
 
     invoke-virtual {v0}, Ljava/text/SimpleDateFormat;->toPattern()Ljava/lang/String;
@@ -660,12 +661,13 @@
 
     return-object v0
 
-    .line 4
+    .line 5
     :cond_0
     invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 6
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0

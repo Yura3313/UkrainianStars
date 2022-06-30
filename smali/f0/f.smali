@@ -1,4 +1,4 @@
-.class public Lf0/f;
+.class public final Lf0/f;
 .super Ljava/lang/Object;
 .source "MenuItemCompat.java"
 
@@ -7,15 +7,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lf0/g;
+.field public final synthetic a:Lf0/g$a;
 
 
 # direct methods
-.method public constructor <init>(Lf0/g;)V
+.method public constructor <init>(Lf0/g$a;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lf0/f;->a:Lf0/g;
+    iput-object p1, p0, Lf0/f;->a:Lf0/g$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,26 +23,24 @@
 
 
 # virtual methods
-.method public onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
+.method public final onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lf0/f;->a:Lf0/g;
+    iget-object v0, p0, Lf0/f;->a:Lf0/g$a;
 
-    invoke-interface {v0, p1}, Lf0/g;->onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
+    invoke-interface {v0, p1}, Lf0/g$a;->onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public onMenuItemActionExpand(Landroid/view/MenuItem;)Z
+.method public final onMenuItemActionExpand(Landroid/view/MenuItem;)Z
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lf0/f;->a:Lf0/g;
+    iget-object v0, p0, Lf0/f;->a:Lf0/g$a;
 
-    invoke-interface {v0, p1}, Lf0/g;->onMenuItemActionExpand(Landroid/view/MenuItem;)Z
+    invoke-interface {v0, p1}, Lf0/g$a;->onMenuItemActionExpand(Landroid/view/MenuItem;)Z
 
     move-result p1
 

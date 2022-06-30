@@ -25,7 +25,6 @@
 .method public constructor <init>(Lorg/fmod/MediaCodec;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/fmod/MediaCodec$1DataSource;->this$0:Lorg/fmod/MediaCodec;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

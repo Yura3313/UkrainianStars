@@ -12,11 +12,11 @@
 
 
 # static fields
-.field public static i:I = 0x3e8
+.field public static h:I = 0x3e8
 
-.field public static j:Lcom/supercell/titan/NativeDialogManager;
+.field public static i:Lcom/supercell/titan/NativeDialogManager;
 
-.field public static final k:Ljava/util/Vector;
+.field public static final j:Ljava/util/Vector;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Vector<",
@@ -28,21 +28,20 @@
 
 
 # instance fields
-.field public g:I
+.field public f:I
 
-.field public h:Z
+.field public g:Z
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/Vector;
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    sput-object v0, Lcom/supercell/titan/NativeDialogManager;->k:Ljava/util/Vector;
+    sput-object v0, Lcom/supercell/titan/NativeDialogManager;->j:Ljava/util/Vector;
 
     return-void
 .end method
@@ -56,7 +55,7 @@
     const/4 v0, -0x1
 
     .line 2
-    iput v0, p0, Lcom/supercell/titan/NativeDialogManager;->g:I
+    iput v0, p0, Lcom/supercell/titan/NativeDialogManager;->f:I
 
     return-void
 .end method
@@ -65,14 +64,14 @@
     .locals 7
 
     .line 1
-    sget v0, Lcom/supercell/titan/NativeDialogManager;->i:I
+    sget v0, Lcom/supercell/titan/NativeDialogManager;->h:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/supercell/titan/NativeDialogManager;->i:I
+    sput v0, Lcom/supercell/titan/NativeDialogManager;->h:I
 
     .line 2
-    sget-object v1, Lcom/supercell/titan/NativeDialogManager;->j:Lcom/supercell/titan/NativeDialogManager;
+    sget-object v1, Lcom/supercell/titan/NativeDialogManager;->i:Lcom/supercell/titan/NativeDialogManager;
 
     if-nez v1, :cond_0
 
@@ -97,30 +96,29 @@
     :cond_0
     new-instance v1, Lcom/supercell/titan/NativeDialogManager$c;
 
-    const/4 v2, 0x0
-
-    invoke-direct {v1, v2}, Lcom/supercell/titan/NativeDialogManager$c;-><init>(Lcom/supercell/titan/NativeDialogManager$a;)V
-
     .line 5
-    iput-object p0, v1, Lcom/supercell/titan/NativeDialogManager$c;->a:Ljava/lang/String;
+    invoke-direct {v1}, Lcom/supercell/titan/NativeDialogManager$c;-><init>()V
 
     .line 6
-    iput-object p1, v1, Lcom/supercell/titan/NativeDialogManager$c;->b:Ljava/lang/String;
+    iput-object p0, v1, Lcom/supercell/titan/NativeDialogManager$c;->a:Ljava/lang/String;
 
     .line 7
-    iput-object p2, v1, Lcom/supercell/titan/NativeDialogManager$c;->c:Ljava/lang/String;
+    iput-object p1, v1, Lcom/supercell/titan/NativeDialogManager$c;->b:Ljava/lang/String;
 
     .line 8
-    iput-object p3, v1, Lcom/supercell/titan/NativeDialogManager$c;->d:Ljava/lang/String;
+    iput-object p2, v1, Lcom/supercell/titan/NativeDialogManager$c;->c:Ljava/lang/String;
 
     .line 9
-    iput-object p4, v1, Lcom/supercell/titan/NativeDialogManager$c;->e:Ljava/lang/String;
+    iput-object p3, v1, Lcom/supercell/titan/NativeDialogManager$c;->d:Ljava/lang/String;
 
     .line 10
-    iput v0, v1, Lcom/supercell/titan/NativeDialogManager$c;->f:I
+    iput-object p4, v1, Lcom/supercell/titan/NativeDialogManager$c;->e:Ljava/lang/String;
 
     .line 11
-    sget-object p0, Lcom/supercell/titan/NativeDialogManager;->k:Ljava/util/Vector;
+    iput v0, v1, Lcom/supercell/titan/NativeDialogManager$c;->f:I
+
+    .line 12
+    sget-object p0, Lcom/supercell/titan/NativeDialogManager;->j:Ljava/util/Vector;
 
     invoke-virtual {p0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
@@ -164,7 +162,7 @@
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, p0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -221,7 +219,7 @@
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, p0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -274,8 +272,7 @@
 .method public static isDialogVisible()Z
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/supercell/titan/NativeDialogManager;->j:Lcom/supercell/titan/NativeDialogManager;
+    sget-object v0, Lcom/supercell/titan/NativeDialogManager;->i:Lcom/supercell/titan/NativeDialogManager;
 
     if-eqz v0, :cond_0
 
@@ -294,24 +291,24 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/supercell/titan/NativeDialogManager;->k:Ljava/util/Vector;
+    sget-object v0, Lcom/supercell/titan/NativeDialogManager;->j:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->clear()V
 
     .line 2
-    sget-object v0, Lcom/supercell/titan/NativeDialogManager;->j:Lcom/supercell/titan/NativeDialogManager;
+    sget-object v0, Lcom/supercell/titan/NativeDialogManager;->i:Lcom/supercell/titan/NativeDialogManager;
 
     const/4 v1, 0x0
 
     .line 3
-    sput-object v1, Lcom/supercell/titan/NativeDialogManager;->j:Lcom/supercell/titan/NativeDialogManager;
+    sput-object v1, Lcom/supercell/titan/NativeDialogManager;->i:Lcom/supercell/titan/NativeDialogManager;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x1
 
     .line 4
-    iput-boolean v1, v0, Lcom/supercell/titan/NativeDialogManager;->h:Z
+    iput-boolean v1, v0, Lcom/supercell/titan/NativeDialogManager;->g:Z
 
     .line 5
     :try_start_0
@@ -346,7 +343,7 @@
     .locals 7
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/titan/NativeDialogManager;->h:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/NativeDialogManager;->g:Z
 
     if-eqz v0, :cond_0
 
@@ -356,12 +353,12 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/supercell/titan/NativeDialogManager;->h:Z
+    iput-boolean v0, p0, Lcom/supercell/titan/NativeDialogManager;->g:Z
 
     const/4 v0, 0x0
 
     .line 3
-    sput-object v0, Lcom/supercell/titan/NativeDialogManager;->j:Lcom/supercell/titan/NativeDialogManager;
+    sput-object v0, Lcom/supercell/titan/NativeDialogManager;->i:Lcom/supercell/titan/NativeDialogManager;
 
     .line 4
     invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
@@ -369,7 +366,7 @@
     move-result-object v0
 
     .line 5
-    sget-object v1, Lcom/supercell/titan/NativeDialogManager;->k:Ljava/util/Vector;
+    sget-object v1, Lcom/supercell/titan/NativeDialogManager;->j:Ljava/util/Vector;
 
     invoke-virtual {v1}, Ljava/util/Vector;->isEmpty()Z
 
@@ -413,7 +410,7 @@
     const-string v1, "wifi"
 
     .line 14
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -457,7 +454,7 @@
     invoke-direct {v0, p0}, Lcom/supercell/titan/NativeDialogManager$b;-><init>(Lcom/supercell/titan/NativeDialogManager;)V
 
     .line 3
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -468,7 +465,7 @@
     move-result-object v1
 
     .line 4
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v2
 
@@ -479,7 +476,7 @@
     move-result-object v2
 
     .line 5
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v3
 
@@ -490,7 +487,7 @@
     move-result-object v3
 
     .line 6
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v4
 
@@ -501,7 +498,7 @@
     move-result-object v4
 
     .line 7
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v5
 
@@ -512,7 +509,7 @@
     move-result-object v5
 
     .line 8
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v6
 
@@ -522,7 +519,7 @@
 
     move-result v6
 
-    iput v6, p0, Lcom/supercell/titan/NativeDialogManager;->g:I
+    iput v6, p0, Lcom/supercell/titan/NativeDialogManager;->f:I
 
     .line 9
     new-instance v6, Landroid/app/AlertDialog$Builder;
@@ -590,7 +587,7 @@
     invoke-virtual {p1}, Lcom/supercell/titan/GameApp;->setSystemUiVisibility()V
 
     .line 3
-    iget p1, p0, Lcom/supercell/titan/NativeDialogManager;->g:I
+    iget p1, p0, Lcom/supercell/titan/NativeDialogManager;->f:I
 
     const/4 v0, 0x0
 
@@ -605,7 +602,7 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Lcom/supercell/titan/NativeDialogManager;->h:Z
+    iput-boolean v0, p0, Lcom/supercell/titan/NativeDialogManager;->g:Z
 
     .line 2
     :try_start_0

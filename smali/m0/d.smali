@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public getInterpolation(F)F
+.method public final getInterpolation(F)F
     .locals 4
 
     const/high16 v0, 0x3f800000    # 1.0f
@@ -104,7 +104,7 @@
 
     aget v0, v1, v0
 
-    invoke-static {v3, v0, p1, v2}, Lo/o;->a(FFFF)F
+    invoke-static {v3, v0, p1, v2}, Lo/p;->a(FFFF)F
 
     move-result p1
 

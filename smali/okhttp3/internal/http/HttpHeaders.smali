@@ -37,7 +37,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -292,11 +291,12 @@
     :cond_3
     new-instance v2, Lokhttp3/Challenge;
 
+    .line 11
     invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 11
+    .line 12
     invoke-static {v4, v5}, Lokhttp3/internal/http/HttpHeaders;->repeat(CI)Ljava/lang/String;
 
     move-result-object v4
@@ -307,7 +307,7 @@
 
     move-result-object v3
 
-    .line 12
+    .line 13
     invoke-static {v0, v3}, Ljava/util/Collections;->singletonMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object v3
@@ -318,13 +318,13 @@
 
     goto :goto_0
 
-    .line 13
+    .line 14
     :cond_4
     new-instance v2, Ljava/util/LinkedHashMap;
 
     invoke-direct {v2}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 14
+    .line 15
     invoke-static {p1, v4}, Lokhttp3/internal/http/HttpHeaders;->skipAll(Lokio/Buffer;B)I
 
     move-result v6
@@ -334,12 +334,12 @@
     :goto_2
     if-nez v3, :cond_6
 
-    .line 15
+    .line 16
     invoke-static {p1}, Lokhttp3/internal/http/HttpHeaders;->readToken(Lokio/Buffer;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 16
+    .line 17
     invoke-static {p1}, Lokhttp3/internal/http/HttpHeaders;->skipWhitespaceAndCommas(Lokio/Buffer;)Z
 
     move-result v5
@@ -348,7 +348,7 @@
 
     goto :goto_3
 
-    .line 17
+    .line 18
     :cond_5
     invoke-static {p1, v4}, Lokhttp3/internal/http/HttpHeaders;->skipAll(Lokio/Buffer;B)I
 
@@ -357,7 +357,7 @@
     :cond_6
     if-nez v5, :cond_7
 
-    .line 18
+    .line 19
     :goto_3
     new-instance v4, Lokhttp3/Challenge;
 
@@ -376,7 +376,7 @@
 
     return-void
 
-    .line 19
+    .line 20
     :cond_8
     invoke-static {p1}, Lokhttp3/internal/http/HttpHeaders;->skipWhitespaceAndCommas(Lokio/Buffer;)Z
 
@@ -386,7 +386,7 @@
 
     return-void
 
-    .line 20
+    .line 21
     :cond_9
     invoke-virtual {p1}, Lokio/Buffer;->exhausted()Z
 
@@ -404,14 +404,14 @@
 
     if-ne v6, v7, :cond_a
 
-    .line 21
+    .line 22
     invoke-static {p1}, Lokhttp3/internal/http/HttpHeaders;->readQuotedString(Lokio/Buffer;)Ljava/lang/String;
 
     move-result-object v6
 
     goto :goto_4
 
-    .line 22
+    .line 23
     :cond_a
     invoke-static {p1}, Lokhttp3/internal/http/HttpHeaders;->readToken(Lokio/Buffer;)Ljava/lang/String;
 
@@ -422,7 +422,7 @@
 
     return-void
 
-    .line 23
+    .line 24
     :cond_b
     invoke-interface {v2, v3, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -434,7 +434,7 @@
 
     return-void
 
-    .line 24
+    .line 25
     :cond_c
     invoke-static {p1}, Lokhttp3/internal/http/HttpHeaders;->skipWhitespaceAndCommas(Lokio/Buffer;)Z
 
@@ -524,7 +524,6 @@
 .method public static parseSeconds(Ljava/lang/String;I)I
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
@@ -924,7 +923,6 @@
 
     return-wide v0
 
-    .line 1
     :cond_0
     :try_start_0
     invoke-static {p0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J

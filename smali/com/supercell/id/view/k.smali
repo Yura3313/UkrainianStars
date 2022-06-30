@@ -3,18 +3,18 @@
 .source "RootFrameLayout.kt"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnLayoutChangeListener;
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/view/RootFrameLayout;
+.field public final synthetic a:Lcom/supercell/id/view/RootFrameLayout;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/RootFrameLayout;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/k;->g:Lcom/supercell/id/view/RootFrameLayout;
+    iput-object p1, p0, Lcom/supercell/id/view/k;->a:Lcom/supercell/id/view/RootFrameLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -23,44 +23,16 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 0
 
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/k;->g:Lcom/supercell/id/view/RootFrameLayout;
+    iget-object p1, p0, Lcom/supercell/id/view/k;->a:Lcom/supercell/id/view/RootFrameLayout;
 
-    .line 2
-    iget-object v0, v0, Lcom/supercell/id/view/RootFrameLayout;->h:Ljava/util/List;
+    invoke-virtual {p1}, Lcom/supercell/id/view/RootFrameLayout;->getPropagateSystemWindowInsets()Ljava/lang/Runnable;
 
-    .line 3
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    move-result-object p2
 
-    move-result-object v0
+    invoke-virtual {p1, p2}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/supercell/id/view/RootFrameLayout$a;
-
-    .line 4
-    iget-object v2, p0, Lcom/supercell/id/view/k;->g:Lcom/supercell/id/view/RootFrameLayout;
-
-    invoke-virtual {v2}, Lcom/supercell/id/view/RootFrameLayout;->getSystemWindowInsets()Landroid/graphics/Rect;
-
-    move-result-object v2
-
-    invoke-interface {v1, v2}, Lcom/supercell/id/view/RootFrameLayout$a;->a(Landroid/graphics/Rect;)V
-
-    goto :goto_0
-
-    :cond_0
     return-void
 .end method

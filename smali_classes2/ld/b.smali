@@ -1,28 +1,38 @@
 .class public final Lld/b;
 .super Ljava/lang/Object;
-.source "AvatarAdapters.kt"
+.source "IngameFriendsFragment.kt"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lae/b2;
 
 
-# instance fields
-.field public final synthetic g:Lld/a$a;
+# static fields
+.field public static final a:I
 
-.field public final synthetic h:Lvd/c;
-
-.field public final synthetic i:Lld/a;
+.field public static final b:Lld/b;
 
 
 # direct methods
-.method public constructor <init>(Lld/a$a;Lvd/c;Lld/a;I)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lld/b;
+
+    invoke-direct {v0}, Lld/b;-><init>()V
+
+    sput-object v0, Lld/b;->b:Lld/b;
+
+    .line 2
+    sget v0, Lcom/supercell/id/R$layout;->fragment_ingame_friends_list_item_fb_warning:I
+
+    sput v0, Lld/b;->a:I
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
-
-    iput-object p1, p0, Lld/b;->g:Lld/a$a;
-
-    iput-object p2, p0, Lld/b;->h:Lvd/c;
-
-    iput-object p3, p0, Lld/b;->i:Lld/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,103 +41,38 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 3
+.method public final a(Lae/b2;)Z
+    .locals 1
 
-    .line 1
-    iget-object p1, p0, Lld/b;->i:Lld/a;
+    const-string v0, "other"
 
-    .line 2
-    iget v0, p1, Lld/a;->d:I
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 3
-    iget-object v1, p0, Lld/b;->g:Lld/a$a;
+    invoke-static {p1, p0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView$z;->e()I
+    move-result p1
 
-    move-result v1
+    return p1
+.end method
 
-    invoke-virtual {p1, v1}, Lld/a;->i(I)V
+.method public final c()I
+    .locals 1
 
-    .line 4
-    iget-object p1, p0, Lld/b;->i:Lld/a;
+    sget v0, Lld/b;->a:I
 
-    .line 5
-    iget-object v1, p1, Lld/a;->f:Lke/p;
+    return v0
+.end method
 
-    .line 6
-    iget-object v2, p0, Lld/b;->h:Lvd/c;
+.method public final d(Lae/b2;)Z
+    .locals 1
 
-    .line 7
-    iget p1, p1, Lld/a;->d:I
+    const-string v0, "other"
 
-    if-eq v0, p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-gez v0, :cond_0
+    invoke-static {p1, p0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    goto :goto_1
+    move-result p1
 
-    :cond_0
-    if-le v0, p1, :cond_1
-
-    const/4 p1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 8
-    :goto_0
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object v0
-
-    .line 9
-    iget-object v0, v0, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
-
-    .line 10
-    invoke-virtual {v0}, Lcom/supercell/id/IdConfiguration;->isRTL()Z
-
-    move-result v0
-
-    if-ne p1, v0, :cond_2
-
-    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->i:Lcom/supercell/id/view/AvatarEditView$b;
-
-    goto :goto_2
-
-    .line 11
-    :cond_2
-    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->h:Lcom/supercell/id/view/AvatarEditView$b;
-
-    goto :goto_2
-
-    .line 12
-    :cond_3
-    :goto_1
-    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
-
-    .line 13
-    :goto_2
-    invoke-interface {v1, v2, p1}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 14
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
-
-    move-result-object p1
-
-    .line 15
-    iget-object p1, p1, Lvd/r;->v:Lnc/a;
-
-    .line 16
-    sget-object v0, Lnc/a$a;->h:Lnc/a$a;
-
-    invoke-virtual {p1, v0}, Lnc/a;->b(Lnc/a$a;)V
-
-    return-void
+    return p1
 .end method

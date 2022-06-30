@@ -21,9 +21,9 @@
 
 
 # instance fields
-.field public final g:Z
+.field public final f:Z
 
-.field public final h:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -38,10 +38,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lj3/g8;
+    new-instance v0, Lk3/f8;
 
-    invoke-direct {v0}, Lj3/g8;-><init>()V
+    invoke-direct {v0}, Lk3/f8;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzasa;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -62,10 +61,10 @@
     const/4 v1, 0x0
 
     .line 3
-    iput-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
+    iput-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->f:Z
 
     .line 4
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->h:Ljava/util/List;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Ljava/util/List;
 
     return-void
 .end method
@@ -85,10 +84,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 6
-    iput-boolean p1, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/internal/ads/zzasa;->f:Z
 
     .line 7
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzasa;->h:Ljava/util/List;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Ljava/util/List;
 
     return-void
 .end method
@@ -101,34 +100,32 @@
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result p2
 
-    const/4 v0, 0x2
-
     .line 2
-    iget-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->f:Z
+
+    const/4 v1, 0x2
 
     const/4 v2, 0x4
 
     .line 3
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 4
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/4 v0, 0x3
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Ljava/util/List;
 
-    const/4 v2, 0x0
+    const/4 v1, 0x3
 
-    invoke-static {p1, v0, v1, v2}, Ld2/b;->o(Landroid/os/Parcel;ILjava/util/List;Z)V
+    invoke-static {p1, v1, v0}, Le2/b;->o(Landroid/os/Parcel;ILjava/util/List;)V
 
     .line 6
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

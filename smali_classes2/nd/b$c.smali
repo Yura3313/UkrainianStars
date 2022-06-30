@@ -1,14 +1,14 @@
 .class public final Lnd/b$c;
-.super Ljava/lang/Object;
-.source "FriendsFragment.kt"
+.super Lse/h;
+.source "MessagesTabFriendsFragment.kt"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lnd/b;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lnd/b;-><init>()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,104 +16,161 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/l<",
+        "Lbe/l0;",
+        "Lie/h;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
-.field public final synthetic a:Lnd/b;
-
-.field public final synthetic b:I
+.field public final synthetic f:Lnd/b;
 
 
 # direct methods
-.method public constructor <init>(Lnd/b;I)V
+.method public constructor <init>(Lnd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lnd/b$c;->a:Lnd/b;
+    iput-object p1, p0, Lnd/b$c;->f:Lnd/b;
 
-    iput p2, p0, Lnd/b$c;->b:I
+    const/4 p1, 0x1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 0
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iget-object p2, p0, Lnd/b$c;->a:Lnd/b;
-
-    sget p3, Lcom/supercell/id/R$id;->progressBar:I
-
-    invoke-virtual {p2, p3}, Lnd/b;->c1(I)Landroid/view/View;
-
-    move-result-object p2
-
-    const-string p3, "v"
-
-    if-eqz p2, :cond_0
+    check-cast p1, Lbe/l0;
 
     .line 2
-    invoke-static {p1, p3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v0, p0, Lnd/b$c;->f:Lnd/b;
 
-    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
-
-    move-result p4
+    if-eqz p1, :cond_3
 
     .line 3
-    invoke-static {p2}, Lvd/g2;->f(Landroid/view/View;)I
+    iget-object p1, p1, Lbe/l0;->a:Lae/m;
 
-    move-result p5
-
-    if-eq p4, p5, :cond_0
+    if-eqz p1, :cond_3
 
     .line 4
-    new-instance p5, Lnd/b$c$a;
+    instance-of v1, p1, Lae/m$a;
 
-    invoke-direct {p5, p2, p4}, Lnd/b$c$a;-><init>(Landroid/view/View;I)V
+    if-eqz v1, :cond_1
 
-    invoke-virtual {p2, p5}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+    check-cast p1, Lae/m$a;
 
     .line 5
-    :cond_0
-    iget-object p2, p0, Lnd/b$c;->a:Lnd/b;
-
-    sget p4, Lcom/supercell/id/R$id;->friendsList:I
-
-    invoke-virtual {p2, p4}, Lnd/b;->c1(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
-
-    if-eqz p2, :cond_1
+    iget-object p1, p1, Lae/m$a;->a:Ljava/lang/Object;
 
     .line 6
-    invoke-static {p1, p3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
-
-    move-result p1
-
-    iget p3, p0, Lnd/b$c;->b:I
-
-    add-int/2addr p1, p3
+    check-cast p1, Lvc/z;
 
     .line 7
-    invoke-static {p2}, Lvd/g2;->f(Landroid/view/View;)I
-
-    move-result p3
-
-    if-eq p1, p3, :cond_1
+    iget-object p1, p1, Lvc/z;->d:Ljava/util/List;
 
     .line 8
-    new-instance p3, Lnd/b$c$b;
+    new-instance v1, Ljava/util/ArrayList;
 
-    invoke-direct {p3, p2, p1}, Lnd/b$c$b;-><init>(Landroidx/recyclerview/widget/RecyclerView;I)V
+    const/16 v2, 0xa
 
-    invoke-virtual {p2, p3}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
+    invoke-static {p1, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
 
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 9
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 10
+    check-cast v2, Lvc/x;
+
+    .line 11
+    new-instance v3, Lnd/l;
+
+    invoke-direct {v3, v2}, Lnd/l;-><init>(Lvc/x;)V
+
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    new-instance p1, Lnd/h;
+
+    invoke-direct {p1}, Lnd/h;-><init>()V
+
+    invoke-static {v1, p1}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+
+    move-result-object p1
+
+    .line 13
+    new-instance v1, Lae/m$a;
+
+    invoke-direct {v1, p1}, Lae/m$a;-><init>(Ljava/lang/Object;)V
+
+    goto :goto_1
+
+    .line 14
     :cond_1
-    return-void
+    instance-of v1, p1, Lae/m$b;
+
+    if-eqz v1, :cond_2
+
+    new-instance v1, Lae/m$b;
+
+    check-cast p1, Lae/m$b;
+
+    .line 15
+    iget-object p1, p1, Lae/m$b;->a:Ljava/lang/Object;
+
+    .line 16
+    invoke-direct {v1, p1}, Lae/m$b;-><init>(Ljava/lang/Object;)V
+
+    goto :goto_1
+
+    :cond_2
+    new-instance p1, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {p1}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    throw p1
+
+    :cond_3
+    const/4 v1, 0x0
+
+    .line 17
+    :goto_1
+    iput-object v1, v0, Lnd/b;->b0:Lae/m;
+
+    .line 18
+    invoke-virtual {v0}, Lnd/b;->W0()V
+
+    .line 19
+    sget-object p1, Lie/h;->a:Lie/h;
+
+    return-object p1
 .end method

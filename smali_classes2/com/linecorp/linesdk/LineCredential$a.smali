@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +40,6 @@
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/linecorp/linesdk/LineCredential;
 
     const/4 v1, 0x0
@@ -54,7 +52,6 @@
 .method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Lcom/linecorp/linesdk/LineCredential;
 
     return-object p1

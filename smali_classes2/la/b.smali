@@ -1,103 +1,13 @@
-.class public Lla/b;
-.super Landroidx/fragment/app/e0;
-.source "SectionPagerAdapter.java"
+.class public interface abstract Lla/b;
+.super Ljava/lang/Object;
+.source "Callable.java"
 
 
-# instance fields
-.field public j:Lja/d;
-
-.field public k:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lcom/helpshift/support/Section;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
-# direct methods
-.method public constructor <init>(Landroidx/fragment/app/FragmentManager;Ljava/util/List;Lja/d;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/fragment/app/FragmentManager;",
-            "Ljava/util/List<",
-            "Lcom/helpshift/support/Section;",
-            ">;",
-            "Lja/d;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0, p1}, Landroidx/fragment/app/e0;-><init>(Landroidx/fragment/app/FragmentManager;)V
-
-    .line 2
-    iput-object p2, p0, Lla/b;->k:Ljava/util/List;
-
-    .line 3
-    iput-object p3, p0, Lla/b;->j:Lja/d;
-
-    return-void
-.end method
+# annotations
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
 
 
 # virtual methods
-.method public e()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lla/b;->k:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public g(I)Ljava/lang/CharSequence;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lla/b;->k:Ljava/util/List;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/helpshift/support/Section;
-
-    .line 2
-    iget-object p1, p1, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
-
-    return-object p1
-.end method
-
-.method public n(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
-    .locals 1
-
-    .line 1
-    :try_start_0
-    invoke-super {p0, p1, p2}, Landroidx/fragment/app/e0;->n(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p1
-
-    const-string p2, "Helpshift_SectionPager"
-
-    const-string v0, "Exception in restoreState: "
-
-    .line 2
-    invoke-static {p2, v0, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    :goto_0
-    return-void
+.method public abstract call()Ljava/util/Map;
 .end method

@@ -127,7 +127,7 @@
 
 
 # virtual methods
-.method public a(Ld0/b$a;)Z
+.method public final a(Ld0/b$a;)Z
     .locals 4
 
     .line 1
@@ -164,7 +164,7 @@
     :cond_1
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextSize()F
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextSize()F
 
     move-result v2
 
@@ -172,7 +172,7 @@
     iget-object v3, p1, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 8
-    invoke-virtual {v3}, Landroid/text/TextPaint;->getTextSize()F
+    invoke-virtual {v3}, Landroid/graphics/Paint;->getTextSize()F
 
     move-result v3
 
@@ -186,7 +186,7 @@
     :cond_2
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextScaleX()F
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextScaleX()F
 
     move-result v2
 
@@ -194,7 +194,7 @@
     iget-object v3, p1, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 11
-    invoke-virtual {v3}, Landroid/text/TextPaint;->getTextScaleX()F
+    invoke-virtual {v3}, Landroid/graphics/Paint;->getTextScaleX()F
 
     move-result v3
 
@@ -208,7 +208,7 @@
     :cond_3
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextSkewX()F
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextSkewX()F
 
     move-result v2
 
@@ -216,7 +216,7 @@
     iget-object v3, p1, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 14
-    invoke-virtual {v3}, Landroid/text/TextPaint;->getTextSkewX()F
+    invoke-virtual {v3}, Landroid/graphics/Paint;->getTextSkewX()F
 
     move-result v3
 
@@ -281,7 +281,7 @@
     :cond_6
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getFlags()I
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getFlags()I
 
     move-result v2
 
@@ -289,7 +289,7 @@
     iget-object v3, p1, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 24
-    invoke-virtual {v3}, Landroid/text/TextPaint;->getFlags()I
+    invoke-virtual {v3}, Landroid/graphics/Paint;->getFlags()I
 
     move-result v3
 
@@ -329,7 +329,7 @@
     :cond_8
     iget-object v0, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v0}, Landroid/text/TextPaint;->getTextLocale()Ljava/util/Locale;
+    invoke-virtual {v0}, Landroid/graphics/Paint;->getTextLocale()Ljava/util/Locale;
 
     move-result-object v0
 
@@ -337,7 +337,7 @@
     iget-object v2, p1, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 30
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextLocale()Ljava/util/Locale;
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextLocale()Ljava/util/Locale;
 
     move-result-object v2
 
@@ -353,7 +353,7 @@
     :cond_9
     iget-object v0, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v0}, Landroid/text/TextPaint;->getTypeface()Landroid/graphics/Typeface;
+    invoke-virtual {v0}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object v0
 
@@ -363,7 +363,7 @@
     iget-object p1, p1, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 33
-    invoke-virtual {p1}, Landroid/text/TextPaint;->getTypeface()Landroid/graphics/Typeface;
+    invoke-virtual {p1}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object p1
 
@@ -375,7 +375,7 @@
     :cond_a
     iget-object v0, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v0}, Landroid/text/TextPaint;->getTypeface()Landroid/graphics/Typeface;
+    invoke-virtual {v0}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object v0
 
@@ -383,7 +383,7 @@
     iget-object p1, p1, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 36
-    invoke-virtual {p1}, Landroid/text/TextPaint;->getTypeface()Landroid/graphics/Typeface;
+    invoke-virtual {p1}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object p1
 
@@ -401,43 +401,39 @@
     return p1
 .end method
 
-.method public b()I
+.method public final b()I
     .locals 1
 
-    .line 1
     iget v0, p0, Ld0/b$a;->c:I
 
     return v0
 .end method
 
-.method public c()I
+.method public final c()I
     .locals 1
 
-    .line 1
     iget v0, p0, Ld0/b$a;->d:I
 
     return v0
 .end method
 
-.method public d()Landroid/text/TextDirectionHeuristic;
+.method public final d()Landroid/text/TextDirectionHeuristic;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ld0/b$a;->b:Landroid/text/TextDirectionHeuristic;
 
     return-object v0
 .end method
 
-.method public e()Landroid/text/TextPaint;
+.method public final e()Landroid/text/TextPaint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     return-object v0
 .end method
 
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
     const/4 v0, 0x1
@@ -484,7 +480,7 @@
     return v0
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 14
 
     .line 1
@@ -523,7 +519,7 @@
     .line 2
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextSize()F
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextSize()F
 
     move-result v2
 
@@ -535,7 +531,7 @@
 
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextScaleX()F
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextScaleX()F
 
     move-result v2
 
@@ -548,7 +544,7 @@
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 3
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextSkewX()F
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextSkewX()F
 
     move-result v2
 
@@ -572,7 +568,7 @@
 
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getFlags()I
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getFlags()I
 
     move-result v2
 
@@ -593,7 +589,7 @@
 
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTypeface()Landroid/graphics/Typeface;
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object v2
 
@@ -649,7 +645,7 @@
     .line 7
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextSize()F
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextSize()F
 
     move-result v2
 
@@ -661,7 +657,7 @@
 
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextScaleX()F
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextScaleX()F
 
     move-result v2
 
@@ -674,7 +670,7 @@
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 8
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextSkewX()F
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextSkewX()F
 
     move-result v2
 
@@ -698,7 +694,7 @@
 
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getFlags()I
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getFlags()I
 
     move-result v2
 
@@ -711,7 +707,7 @@
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 9
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextLocale()Ljava/util/Locale;
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextLocale()Ljava/util/Locale;
 
     move-result-object v2
 
@@ -719,7 +715,7 @@
 
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTypeface()Landroid/graphics/Typeface;
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object v2
 
@@ -771,7 +767,7 @@
     .line 12
     iget-object v1, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v1}, Landroid/text/TextPaint;->getTextSize()F
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getTextSize()F
 
     move-result v1
 
@@ -783,7 +779,7 @@
 
     iget-object v1, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v1}, Landroid/text/TextPaint;->getTextScaleX()F
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getTextScaleX()F
 
     move-result v1
 
@@ -796,7 +792,7 @@
     iget-object v1, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 13
-    invoke-virtual {v1}, Landroid/text/TextPaint;->getTextSkewX()F
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getTextSkewX()F
 
     move-result v1
 
@@ -808,7 +804,7 @@
 
     iget-object v1, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v1}, Landroid/text/TextPaint;->getFlags()I
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getFlags()I
 
     move-result v1
 
@@ -820,7 +816,7 @@
 
     iget-object v1, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v1}, Landroid/text/TextPaint;->getTextLocale()Ljava/util/Locale;
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getTextLocale()Ljava/util/Locale;
 
     move-result-object v1
 
@@ -829,7 +825,7 @@
     iget-object v1, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     .line 14
-    invoke-virtual {v1}, Landroid/text/TextPaint;->getTypeface()Landroid/graphics/Typeface;
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object v1
 
@@ -863,7 +859,7 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -880,32 +876,10 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
-
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextSize()F
-
-    move-result v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, ", textScaleX="
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextScaleX()F
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextSize()F
 
     move-result v2
 
@@ -922,13 +896,13 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, ", textSkewX="
+    const-string v2, ", textScaleX="
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v2}, Landroid/text/TextPaint;->getTextSkewX()F
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextScaleX()F
 
     move-result v2
 
@@ -941,6 +915,29 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 5
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, ", textSkewX="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
+
+    invoke-virtual {v2}, Landroid/graphics/Paint;->getTextSkewX()F
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 6
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x15
@@ -949,11 +946,12 @@
 
     const-string v2, ", letterSpacing="
 
-    .line 6
+    .line 7
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 8
     iget-object v3, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     invoke-virtual {v3}, Landroid/text/TextPaint;->getLetterSpacing()F
@@ -968,7 +966,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
+    .line 9
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -998,11 +996,12 @@
 
     if-lt v1, v2, :cond_1
 
-    .line 8
+    .line 10
     invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 11
     iget-object v3, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     invoke-virtual {v3}, Landroid/text/TextPaint;->getTextLocales()Landroid/os/LocaleList;
@@ -1019,15 +1018,16 @@
 
     goto :goto_0
 
-    .line 9
+    .line 12
     :cond_1
     invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 13
     iget-object v3, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v3}, Landroid/text/TextPaint;->getTextLocale()Ljava/util/Locale;
+    invoke-virtual {v3}, Landroid/graphics/Paint;->getTextLocale()Ljava/util/Locale;
 
     move-result-object v3
 
@@ -1042,14 +1042,15 @@
     :goto_0
     const-string v2, ", typeface="
 
-    .line 10
+    .line 14
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 15
     iget-object v3, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
-    invoke-virtual {v3}, Landroid/text/TextPaint;->getTypeface()Landroid/graphics/Typeface;
+    invoke-virtual {v3}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object v3
 
@@ -1067,11 +1068,12 @@
 
     const-string v1, ", variationSettings="
 
-    .line 11
+    .line 16
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 17
     iget-object v2, p0, Ld0/b$a;->a:Landroid/text/TextPaint;
 
     invoke-virtual {v2}, Landroid/text/TextPaint;->getFontVariationSettings()Ljava/lang/String;
@@ -1089,11 +1091,12 @@
     :cond_2
     const-string v1, ", textDir="
 
-    .line 12
+    .line 18
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 19
     iget-object v2, p0, Ld0/b$a;->b:Landroid/text/TextDirectionHeuristic;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -1104,7 +1107,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 13
+    .line 20
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1123,7 +1126,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 14
+    .line 21
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1144,10 +1147,10 @@
 
     const-string v1, "}"
 
-    .line 15
+    .line 22
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 16
+    .line 23
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0

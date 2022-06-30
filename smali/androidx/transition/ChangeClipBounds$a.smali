@@ -1,4 +1,4 @@
-.class public Landroidx/transition/ChangeClipBounds$a;
+.class public final Landroidx/transition/ChangeClipBounds$a;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "ChangeClipBounds.java"
 
@@ -15,15 +15,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic f:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/transition/ChangeClipBounds;Landroid/view/View;)V
+.method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/transition/ChangeClipBounds$a;->g:Landroid/view/View;
+    iput-object p1, p0, Landroidx/transition/ChangeClipBounds$a;->f:Landroid/view/View;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -32,11 +31,11 @@
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/animation/Animator;)V
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/transition/ChangeClipBounds$a;->g:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/ChangeClipBounds$a;->f:Landroid/view/View;
 
     sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 

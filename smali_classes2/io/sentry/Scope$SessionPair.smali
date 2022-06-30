@@ -41,7 +41,6 @@
 .method public getCurrent()Lio/sentry/Session;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope$SessionPair;->current:Lio/sentry/Session;
 
     return-object v0
@@ -50,7 +49,6 @@
 .method public getPrevious()Lio/sentry/Session;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Scope$SessionPair;->previous:Lio/sentry/Session;
 
     return-object v0

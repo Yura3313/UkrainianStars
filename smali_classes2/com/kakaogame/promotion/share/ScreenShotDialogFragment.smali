@@ -60,7 +60,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;)Landroid/app/Activity;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;->activity:Landroid/app/Activity;
 
     return-object p0
@@ -69,7 +68,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;->isUnity:Z
 
     return p0
@@ -78,7 +76,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;)Lcom/kakaogame/KGResultCallback;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;->callback:Lcom/kakaogame/KGResultCallback;
 
     return-object p0
@@ -166,7 +163,6 @@
 .method private reopenDialog(ZZ)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;->activity:Landroid/app/Activity;
 
     new-instance v1, Lcom/kakaogame/promotion/share/ScreenShotDialogFragment$1;
@@ -184,7 +180,7 @@
     .locals 2
 
     .line 1
-    invoke-super {p0, p1}, Landroid/app/DialogFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 2
     iget v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;->preOrientation:I
@@ -214,6 +210,7 @@
 
     move-result-object v0
 
+    .line 6
     invoke-virtual {p1}, Landroid/content/res/Configuration;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -322,7 +319,7 @@
 
     .line 5
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Landroid/app/DialogFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object p1
 
@@ -336,7 +333,7 @@
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onDismiss(Landroid/content/DialogInterface;)V
 
     .line 2
-    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -469,7 +466,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/app/DialogFragment;->onPause()V
+    invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
     .line 2
     iget-object v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;->dialog:Lcom/kakaogame/promotion/share/ScreenShotDialog;
@@ -483,7 +480,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/app/DialogFragment;->onResume()V
+    invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     .line 2
     iget-object v0, p0, Lcom/kakaogame/promotion/share/ScreenShotDialogFragment;->dialog:Lcom/kakaogame/promotion/share/ScreenShotDialog;

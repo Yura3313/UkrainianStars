@@ -73,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/sentry/SynchronizedQueue;
 
     invoke-direct {v0, p0}, Lio/sentry/SynchronizedQueue;-><init>(Ljava/util/Queue;)V

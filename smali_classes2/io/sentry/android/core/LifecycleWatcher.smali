@@ -103,7 +103,6 @@
 .method public static synthetic access$000(Lio/sentry/android/core/LifecycleWatcher;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lio/sentry/android/core/LifecycleWatcher;->addSessionBreadcrumb(Ljava/lang/String;)V
 
     return-void
@@ -112,7 +111,6 @@
 .method public static synthetic access$100(Lio/sentry/android/core/LifecycleWatcher;)Lio/sentry/IHub;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/sentry/android/core/LifecycleWatcher;->hub:Lio/sentry/IHub;
 
     return-object p0
@@ -121,7 +119,6 @@
 .method public static synthetic access$200(Lio/sentry/android/core/LifecycleWatcher;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/sentry/android/core/LifecycleWatcher;->runningSession:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-object p0
@@ -321,7 +318,6 @@
 .method public getTimerTask()Ljava/util/TimerTask;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/LifecycleWatcher;->timerTask:Ljava/util/TimerTask;
 
     return-object v0
@@ -330,7 +326,6 @@
 .method public isRunningSession()Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/android/core/LifecycleWatcher;->runningSession:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-object v0

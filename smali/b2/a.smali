@@ -1,92 +1,28 @@
-.class public abstract Lb2/a;
+.class public final Lb2/a;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 # interfaces
-.implements Lb2/b;
+.implements La5/u0;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lb2/b<",
-        "TT;>;"
-    }
-.end annotation
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 0
 
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-# instance fields
-.field public final g:Lcom/google/android/gms/common/data/DataHolder;
-    .annotation build Landroidx/annotation/RecentlyNullable;
-    .end annotation
-.end field
+    return-void
+.end method
 
 
 # virtual methods
-.method public final close()V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lb2/a;->release()V
-
-    return-void
-.end method
-
-.method public getCount()I
+.method public e()Ljava/lang/Object;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lb2/a;->g:Lcom/google/android/gms/common/data/DataHolder;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/k0;
 
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    return v0
-
-    .line 2
-    :cond_0
-    iget v0, v0, Lcom/google/android/gms/common/data/DataHolder;->n:I
-
-    return v0
-.end method
-
-.method public iterator()Ljava/util/Iterator;
-    .locals 1
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Iterator<",
-            "TT;>;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lb2/c;
-
-    invoke-direct {v0, p0}, Lb2/c;-><init>(Lb2/b;)V
+    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/k0;-><init>()V
 
     return-object v0
-.end method
-
-.method public release()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lb2/a;->g:Lcom/google/android/gms/common/data/DataHolder;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-virtual {v0}, Lcom/google/android/gms/common/data/DataHolder;->close()V
-
-    :cond_0
-    return-void
 .end method

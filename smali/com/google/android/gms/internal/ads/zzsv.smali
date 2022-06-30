@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public g:Landroid/os/ParcelFileDescriptor;
+.field public f:Landroid/os/ParcelFileDescriptor;
     .annotation build Ljavax/annotation/concurrent/GuardedBy;
         value = "this"
     .end annotation
@@ -27,10 +27,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lj3/g41;
+    new-instance v0, Lk3/v31;
 
-    invoke-direct {v0}, Lj3/g41;-><init>()V
+    invoke-direct {v0}, Lk3/v31;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzsv;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -46,7 +45,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->f:Landroid/os/ParcelFileDescriptor;
 
     return-void
 .end method
@@ -58,110 +57,20 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 4
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzsv;->f:Landroid/os/ParcelFileDescriptor;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized A2()Ljava/io/InputStream;
-    .locals 3
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    .line 2
-    monitor-exit p0
-
-    return-object v1
-
-    .line 3
-    :cond_0
-    :try_start_1
-    new-instance v0, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;
-
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
-
-    invoke-direct {v0, v2}, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;-><init>(Landroid/os/ParcelFileDescriptor;)V
-
-    .line 4
-    iput-object v1, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 5
-    monitor-exit p0
-
-    return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 4
-
-    const/16 v0, 0x4f45
-
-    .line 1
-    invoke-static {p1, v0}, Ld2/b;->r(Landroid/os/Parcel;I)I
-
-    move-result v0
-
-    const/4 v1, 0x2
-
-    .line 2
-    monitor-enter p0
-
-    .line 3
-    :try_start_0
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    const/4 v3, 0x0
-
-    .line 4
-    invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
-
-    .line 5
-    invoke-static {p1, v0}, Ld2/b;->u(Landroid/os/Parcel;I)V
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    .line 6
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public final declared-synchronized z2()Z
+.method public final declared-synchronized D2()Z
     .locals 1
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->f:Landroid/os/ParcelFileDescriptor;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -191,4 +100,93 @@
 
     :goto_2
     goto :goto_1
+.end method
+
+.method public final declared-synchronized E2()Ljava/io/InputStream;
+    .locals 3
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->f:Landroid/os/ParcelFileDescriptor;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    .line 2
+    monitor-exit p0
+
+    return-object v1
+
+    .line 3
+    :cond_0
+    :try_start_1
+    new-instance v0, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;
+
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzsv;->f:Landroid/os/ParcelFileDescriptor;
+
+    invoke-direct {v0, v2}, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;-><init>(Landroid/os/ParcelFileDescriptor;)V
+
+    .line 4
+    iput-object v1, p0, Lcom/google/android/gms/internal/ads/zzsv;->f:Landroid/os/ParcelFileDescriptor;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 5
+    monitor-exit p0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 4
+
+    const/16 v0, 0x4f45
+
+    .line 1
+    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    .line 2
+    monitor-enter p0
+
+    .line 3
+    :try_start_0
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzsv;->f:Landroid/os/ParcelFileDescriptor;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    const/4 v3, 0x0
+
+    .line 4
+    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+
+    .line 5
+    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 6
+    monitor-exit p0
+
+    throw p1
 .end method

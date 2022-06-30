@@ -1,9 +1,9 @@
 .class final Lcom/kakao/sdk/auth/UriUtility$authorize$1$4$1;
-.super Lle/j;
+.super Lse/h;
 .source "UriUtility.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
+        "Lse/h;",
+        "Lre/l<",
         "Lcom/kakao/sdk/auth/model/Prompt;",
         "Ljava/lang/String;",
         ">;"
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
@@ -72,7 +72,9 @@
 .method public final invoke(Lcom/kakao/sdk/auth/model/Prompt;)Ljava/lang/String;
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "prompt"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     const-class v0, Lcom/kakao/sdk/auth/model/Prompt;
@@ -98,14 +100,4 @@
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "prompt"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

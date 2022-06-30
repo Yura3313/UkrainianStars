@@ -1,9 +1,9 @@
-.class public Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$a;
+.class public final Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$a;
 .super Ljava/lang/Object;
 .source "ExtendedFloatingActionButton.java"
 
 # interfaces
-.implements Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;
+.implements Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;
 
 
 # annotations
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$a;->a:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,23 +34,21 @@
 
 
 # virtual methods
-.method public getHeight()I
+.method public final getHeight()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$a;->a:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
-    invoke-virtual {v0}, Landroid/widget/Button;->getMeasuredHeight()I
+    invoke-virtual {v0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v0
 
     return v0
 .end method
 
-.method public getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+.method public final getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/view/ViewGroup$LayoutParams;
 
     const/4 v1, -0x2
@@ -61,13 +58,12 @@
     return-object v0
 .end method
 
-.method public getWidth()I
+.method public final getWidth()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$a;->a:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
-    invoke-virtual {v0}, Landroid/widget/Button;->getMeasuredWidth()I
+    invoke-virtual {v0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v0
 

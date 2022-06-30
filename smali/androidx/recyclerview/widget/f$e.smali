@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/f$e;
+.class public final Landroidx/recyclerview/widget/f$e;
 .super Ljava/lang/Object;
 .source "DefaultItemAnimator.java"
 

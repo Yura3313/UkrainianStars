@@ -1,32 +1,13 @@
-.class public interface abstract annotation Lze/r;
+.class public final Lze/r;
 .super Ljava/lang/Object;
-.source "PartMap.java"
-
-# interfaces
-.implements Ljava/lang/annotation/Annotation;
-
-
-# annotations
-.annotation system Ldalvik/annotation/AnnotationDefault;
-    value = .subannotation Lze/r;
-        encoding = "binary"
-    .end subannotation
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Documented;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Target;
-    value = {
-        .enum Ljava/lang/annotation/ElementType;->PARAMETER:Ljava/lang/annotation/ElementType;
-    }
-.end annotation
+.source "CancellableContinuationImpl.kt"
 
 
 # virtual methods
-.method public abstract encoding()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "CompletedIdempotentResult[null]"
+
+    return-object v0
 .end method

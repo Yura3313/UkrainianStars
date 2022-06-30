@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/web/WebDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/web/WebDialog$3;->this$0:Lcom/kakaogame/web/WebDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/s;
+.class public final Landroidx/recyclerview/widget/s;
 .super Ljava/lang/Object;
 .source "OpReorderer.java"
 

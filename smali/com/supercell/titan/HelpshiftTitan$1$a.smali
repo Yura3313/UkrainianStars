@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/HelpshiftTitan$1$a;
+.class public final Lcom/supercell/titan/HelpshiftTitan$1$a;
 .super Landroid/os/Handler;
 .source "HelpshiftTitan.java"
 
@@ -15,10 +15,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/HelpshiftTitan$1;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
@@ -26,7 +25,7 @@
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)V
+.method public final handleMessage(Landroid/os/Message;)V
     .locals 1
 
     .line 1

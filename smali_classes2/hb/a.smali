@@ -1,168 +1,114 @@
-.class public Lhb/a;
-.super Landroid/webkit/WebChromeClient;
-.source "CustomWebChromeClient.java"
+.class public final Lhb/a;
+.super Ljava/lang/Object;
+.source "AndroidAnalyticsEventDAO.java"
 
 
 # instance fields
-.field public final a:Landroid/view/View;
-
-.field public final b:Landroid/view/View;
-
-.field public final c:Landroid/view/ViewGroup;
-
-.field public d:Landroid/webkit/WebChromeClient$CustomViewCallback;
-
-.field public e:Landroid/view/View;
+.field public a:Lk3/s9;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Landroid/view/View;)V
+.method public constructor <init>(Lk3/s9;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroid/webkit/WebChromeClient;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lhb/a;->a:Landroid/view/View;
-
-    .line 3
-    iput-object p2, p0, Lhb/a;->b:Landroid/view/View;
-
-    const p2, 0x1020002
-
-    .line 4
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/view/ViewGroup;
-
-    iput-object p1, p0, Lhb/a;->c:Landroid/view/ViewGroup;
+    iput-object p1, p0, Lhb/a;->a:Lk3/s9;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onHideCustomView()V
+.method public final a()Ljava/util/HashMap;
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lhb/a;->e:Landroid/view/View;
+    iget-object v0, p0, Lhb/a;->a:Lk3/s9;
+
+    const-string v1, "unsent_analytics_events"
+
+    invoke-virtual {v0, v1}, Lk3/s9;->f(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
 
     if-nez v0, :cond_0
 
-    return-void
-
-    :cond_0
-    const/16 v1, 0x8
-
     .line 2
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    goto :goto_0
 
     .line 3
-    iget-object v0, p0, Lhb/a;->c:Landroid/view/ViewGroup;
+    :cond_0
+    check-cast v0, Ljava/util/HashMap;
 
-    iget-object v1, p0, Lhb/a;->e:Landroid/view/View;
+    :goto_0
+    return-object v0
+.end method
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+.method public final b(Ljava/lang/String;)V
+    .locals 2
 
-    const/4 v0, 0x0
-
-    .line 4
-    iput-object v0, p0, Lhb/a;->e:Landroid/view/View;
-
-    .line 5
-    iget-object v0, p0, Lhb/a;->d:Landroid/webkit/WebChromeClient$CustomViewCallback;
-
-    if-eqz v0, :cond_1
-
-    .line 6
-    invoke-interface {v0}, Landroid/webkit/WebChromeClient$CustomViewCallback;->onCustomViewHidden()V
-
-    .line 7
-    :cond_1
-    iget-object v0, p0, Lhb/a;->b:Landroid/view/View;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 8
-    iget-object v0, p0, Lhb/a;->a:Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->getSystemUiVisibility()I
+    .line 1
+    invoke-static {p1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
 
     move-result v0
 
-    and-int/lit8 v0, v0, -0x3
-
-    and-int/lit8 v0, v0, -0x5
-
-    and-int/lit16 v0, v0, -0x1001
-
-    .line 9
-    iget-object v1, p0, Lhb/a;->a:Landroid/view/View;
-
-    invoke-virtual {v1, v0}, Landroid/view/View;->setSystemUiVisibility(I)V
-
-    return-void
-.end method
-
-.method public onShowCustomView(Landroid/view/View;Landroid/webkit/WebChromeClient$CustomViewCallback;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lhb/a;->e:Landroid/view/View;
-
     if-eqz v0, :cond_0
 
-    .line 2
-    invoke-interface {p2}, Landroid/webkit/WebChromeClient$CustomViewCallback;->onCustomViewHidden()V
-
     return-void
 
-    .line 3
+    .line 2
     :cond_0
-    iget-object v0, p0, Lhb/a;->c:Landroid/view/ViewGroup;
+    invoke-virtual {p0}, Lhb/a;->a()Ljava/util/HashMap;
 
-    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+    move-result-object v0
+
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    iput-object p1, p0, Lhb/a;->e:Landroid/view/View;
-
-    const/high16 v0, -0x1000000
-
-    .line 5
-    invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundColor(I)V
-
-    .line 6
-    iput-object p2, p0, Lhb/a;->d:Landroid/webkit/WebChromeClient$CustomViewCallback;
-
-    .line 7
-    iget-object p1, p0, Lhb/a;->b:Landroid/view/View;
-
-    const/16 p2, 0x8
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
-
-    .line 8
-    iget-object p1, p0, Lhb/a;->a:Landroid/view/View;
-
-    invoke-virtual {p1}, Landroid/view/View;->getSystemUiVisibility()I
+    invoke-virtual {v0}, Ljava/util/HashMap;->size()I
 
     move-result p1
 
-    or-int/lit8 p1, p1, 0x2
+    const-string v1, "unsent_analytics_events"
 
-    or-int/lit8 p1, p1, 0x4
+    if-nez p1, :cond_1
 
-    or-int/lit16 p1, p1, 0x1000
+    .line 5
+    iget-object p1, p0, Lhb/a;->a:Lk3/s9;
 
-    .line 9
-    iget-object p2, p0, Lhb/a;->a:Landroid/view/View;
+    const/4 v0, 0x0
 
-    invoke-virtual {p2, p1}, Landroid/view/View;->setSystemUiVisibility(I)V
+    .line 6
+    invoke-virtual {p1, v1, v0}, Lk3/s9;->j(Ljava/lang/String;Ljava/io/Serializable;)V
 
+    goto :goto_0
+
+    .line 7
+    :cond_1
+    iget-object p1, p0, Lhb/a;->a:Lk3/s9;
+
+    .line 8
+    invoke-virtual {p1, v1, v0}, Lk3/s9;->j(Ljava/lang/String;Ljava/io/Serializable;)V
+
+    :goto_0
     return-void
 .end method

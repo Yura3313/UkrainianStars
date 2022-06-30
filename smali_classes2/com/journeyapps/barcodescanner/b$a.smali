@@ -1,9 +1,9 @@
-.class public Lcom/journeyapps/barcodescanner/b$a;
+.class public final Lcom/journeyapps/barcodescanner/b$a;
 .super Ljava/lang/Object;
 .source "CaptureManager.java"
 
 # interfaces
-.implements Lob/a;
+.implements Lrb/a;
 
 
 # annotations
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/journeyapps/barcodescanner/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$a;->a:Lcom/journeyapps/barcodescanner/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,21 @@
 
 
 # virtual methods
-.method public a(Lob/b;)V
+.method public final a(Ljava/util/List;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Le6/l;",
+            ">;)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public final b(Lrb/b;)V
     .locals 2
 
     .line 1
@@ -45,7 +58,7 @@
     iget-object v0, v0, Lcom/journeyapps/barcodescanner/b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     .line 3
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     invoke-virtual {v0}, Lcom/journeyapps/barcodescanner/BarcodeView;->d()V
 
@@ -53,19 +66,19 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/b$a;->a:Lcom/journeyapps/barcodescanner/b;
 
     .line 5
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/b;->g:Lg6/c;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/b;->g:Li6/c;
 
     .line 6
     monitor-enter v0
 
     .line 7
     :try_start_0
-    iget-boolean v1, v0, Lg6/c;->b:Z
+    iget-boolean v1, v0, Li6/c;->b:Z
 
     if-eqz v1, :cond_0
 
     .line 8
-    invoke-virtual {v0}, Lg6/c;->a()Landroid/media/MediaPlayer;
+    invoke-virtual {v0}, Li6/c;->a()Landroid/media/MediaPlayer;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -82,7 +95,7 @@
     .line 12
     new-instance v1, Lcom/journeyapps/barcodescanner/b$a$a;
 
-    invoke-direct {v1, p0, p1}, Lcom/journeyapps/barcodescanner/b$a$a;-><init>(Lcom/journeyapps/barcodescanner/b$a;Lob/b;)V
+    invoke-direct {v1, p0, p1}, Lcom/journeyapps/barcodescanner/b$a$a;-><init>(Lcom/journeyapps/barcodescanner/b$a;Lrb/b;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -95,18 +108,4 @@
     monitor-exit v0
 
     throw p1
-.end method
-
-.method public b(Ljava/util/List;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lc6/l;",
-            ">;)V"
-        }
-    .end annotation
-
-    return-void
 .end method

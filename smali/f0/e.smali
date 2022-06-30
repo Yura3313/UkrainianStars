@@ -33,7 +33,7 @@
     sput-object v1, Lf0/e;->a:Ljava/lang/reflect/Field;
 
     .line 3
-    invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v1, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -63,7 +63,7 @@
 
     .line 8
     :catch_1
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-static {p0}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     :cond_1
     :goto_1

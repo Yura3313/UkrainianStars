@@ -2,108 +2,86 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
 
+# static fields
+.field public static final a:La4/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/common/api/a$a<",
+            "Lb4/a;",
+            "La4/a;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/signin/internal/zai;",
-        ">;"
-    }
-.end annotation
+.field public static final b:La4/e;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/common/api/a$a<",
+            "Lb4/a;",
+            "La4/d;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final c:Lcom/google/android/gms/common/api/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/common/api/a<",
+            "La4/a;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lcom/google/android/gms/common/api/a$g;
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 6
-
-    .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    move-object v2, v1
+    invoke-direct {v0}, Lcom/google/android/gms/common/api/a$g;-><init>()V
 
     .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    new-instance v1, La4/b;
 
-    move-result v3
+    invoke-direct {v1}, La4/b;-><init>()V
 
-    if-ge v3, v0, :cond_2
+    sput-object v1, La4/c;->a:La4/b;
 
     .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+    new-instance v2, La4/e;
 
-    move-result v3
+    invoke-direct {v2}, La4/e;-><init>()V
 
-    const v4, 0xffff
-
-    and-int/2addr v4, v3
-
-    const/4 v5, 0x1
-
-    if-eq v4, v5, :cond_1
-
-    const/4 v5, 0x2
-
-    if-eq v4, v5, :cond_0
+    sput-object v2, La4/c;->b:La4/e;
 
     .line 4
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    new-instance v2, Lcom/google/android/gms/common/api/Scope;
 
-    goto :goto_0
+    const-string v3, "profile"
+
+    invoke-direct {v2, v3}, Lcom/google/android/gms/common/api/Scope;-><init>(Ljava/lang/String;)V
 
     .line 5
-    :cond_0
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    new-instance v2, Lcom/google/android/gms/common/api/Scope;
 
-    move-result-object v2
+    const-string v3, "email"
 
-    goto :goto_0
+    invoke-direct {v2, v3}, Lcom/google/android/gms/common/api/Scope;-><init>(Ljava/lang/String;)V
 
     .line 6
-    :cond_1
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->k(Landroid/os/Parcel;I)Ljava/util/ArrayList;
+    new-instance v2, Lcom/google/android/gms/common/api/a;
 
-    move-result-object v1
+    const-string v3, "SignIn.API"
 
-    goto :goto_0
+    invoke-direct {v2, v3, v1, v0}, Lcom/google/android/gms/common/api/a;-><init>(Ljava/lang/String;Lcom/google/android/gms/common/api/a$a;Lcom/google/android/gms/common/api/a$g;)V
 
-    .line 7
-    :cond_2
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    sput-object v2, La4/c;->c:Lcom/google/android/gms/common/api/a;
 
-    .line 8
-    new-instance p1, Lcom/google/android/gms/signin/internal/zai;
-
-    invoke-direct {p1, v1, v2}, Lcom/google/android/gms/signin/internal/zai;-><init>(Ljava/util/List;Ljava/lang/String;)V
-
-    return-object p1
-.end method
-
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    new-array p1, p1, [Lcom/google/android/gms/signin/internal/zai;
-
-    return-object p1
+    return-void
 .end method

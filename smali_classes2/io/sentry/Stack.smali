@@ -134,7 +134,6 @@
 .method public peek()Lio/sentry/Stack$StackItem;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Stack;->items:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->peek()Ljava/lang/Object;
@@ -206,7 +205,6 @@
 .method public push(Lio/sentry/Stack$StackItem;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Stack;->items:Ljava/util/Deque;
 
     invoke-interface {v0, p1}, Ljava/util/Deque;->push(Ljava/lang/Object;)V
@@ -217,7 +215,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Stack;->items:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->size()I

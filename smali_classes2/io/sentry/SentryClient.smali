@@ -382,7 +382,7 @@
 
     invoke-direct {v1, p2}, Lio/sentry/protocol/Contexts;-><init>(Lio/sentry/protocol/Contexts;)V
 
-    invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+    invoke-virtual {v1}, Ljava/util/AbstractMap;->entrySet()Ljava/util/Set;
 
     move-result-object p2
 
@@ -409,7 +409,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Ljava/util/AbstractMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -426,7 +426,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_5
 
@@ -881,7 +881,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p1}, Lio/sentry/Scope;->getAttachments()Ljava/util/List;
 
     move-result-object p1
@@ -1282,7 +1281,7 @@
     .line 3
     iget-object v0, p0, Lio/sentry/SentryClient;->random:Ljava/security/SecureRandom;
 
-    invoke-virtual {v0}, Ljava/security/SecureRandom;->nextDouble()D
+    invoke-virtual {v0}, Ljava/util/Random;->nextDouble()D
 
     move-result-wide v4
 
@@ -1383,7 +1382,7 @@
 
 
 # virtual methods
-.method public synthetic captureEnvelope(Lio/sentry/SentryEnvelope;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureEnvelope(Lio/sentry/SentryEnvelope;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/g;->a(Lio/sentry/ISentryClient;Lio/sentry/SentryEnvelope;)Lio/sentry/protocol/SentryId;
@@ -1452,7 +1451,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureEvent(Lio/sentry/SentryEvent;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureEvent(Lio/sentry/SentryEvent;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/g;->b(Lio/sentry/ISentryClient;Lio/sentry/SentryEvent;)Lio/sentry/protocol/SentryId;
@@ -1462,7 +1461,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureEvent(Lio/sentry/SentryEvent;Lio/sentry/Scope;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureEvent(Lio/sentry/SentryEvent;Lio/sentry/Scope;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/g;->c(Lio/sentry/ISentryClient;Lio/sentry/SentryEvent;Lio/sentry/Scope;)Lio/sentry/protocol/SentryId;
@@ -1763,7 +1762,7 @@
     return-object v1
 .end method
 
-.method public synthetic captureEvent(Lio/sentry/SentryEvent;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureEvent(Lio/sentry/SentryEvent;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/g;->d(Lio/sentry/ISentryClient;Lio/sentry/SentryEvent;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
@@ -1773,7 +1772,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureException(Ljava/lang/Throwable;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureException(Ljava/lang/Throwable;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/g;->e(Lio/sentry/ISentryClient;Ljava/lang/Throwable;)Lio/sentry/protocol/SentryId;
@@ -1783,7 +1782,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureException(Ljava/lang/Throwable;Lio/sentry/Scope;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureException(Ljava/lang/Throwable;Lio/sentry/Scope;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/g;->f(Lio/sentry/ISentryClient;Ljava/lang/Throwable;Lio/sentry/Scope;)Lio/sentry/protocol/SentryId;
@@ -1793,7 +1792,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureException(Ljava/lang/Throwable;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureException(Ljava/lang/Throwable;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1, p2, p3}, Lio/sentry/g;->g(Lio/sentry/ISentryClient;Ljava/lang/Throwable;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
@@ -1803,7 +1802,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureException(Ljava/lang/Throwable;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureException(Ljava/lang/Throwable;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/g;->h(Lio/sentry/ISentryClient;Ljava/lang/Throwable;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
@@ -1813,7 +1812,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureMessage(Ljava/lang/String;Lio/sentry/SentryLevel;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureMessage(Ljava/lang/String;Lio/sentry/SentryLevel;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/g;->i(Lio/sentry/ISentryClient;Ljava/lang/String;Lio/sentry/SentryLevel;)Lio/sentry/protocol/SentryId;
@@ -1823,7 +1822,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureMessage(Ljava/lang/String;Lio/sentry/SentryLevel;Lio/sentry/Scope;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureMessage(Ljava/lang/String;Lio/sentry/SentryLevel;Lio/sentry/Scope;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1, p2, p3}, Lio/sentry/g;->j(Lio/sentry/ISentryClient;Ljava/lang/String;Lio/sentry/SentryLevel;Lio/sentry/Scope;)Lio/sentry/protocol/SentryId;
@@ -1833,7 +1832,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureSession(Lio/sentry/Session;)V
+.method public final synthetic captureSession(Lio/sentry/Session;)V
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/g;->k(Lio/sentry/ISentryClient;Lio/sentry/Session;)V
@@ -1938,7 +1937,7 @@
     return-void
 .end method
 
-.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/g;->l(Lio/sentry/ISentryClient;Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryId;
@@ -1948,7 +1947,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1, p2, p3}, Lio/sentry/g;->m(Lio/sentry/ISentryClient;Lio/sentry/protocol/SentryTransaction;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
@@ -1958,7 +1957,7 @@
     return-object p1
 .end method
 
-.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
+.method public final synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/g;->n(Lio/sentry/ISentryClient;Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
@@ -2410,7 +2409,6 @@
 .method public flush(J)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryClient;->transport:Lio/sentry/transport/ITransport;
 
     invoke-interface {v0, p1, p2}, Lio/sentry/transport/ITransport;->flush(J)V
@@ -2421,7 +2419,6 @@
 .method public isEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/sentry/SentryClient;->enabled:Z
 
     return v0
@@ -2440,9 +2437,9 @@
     if-eqz p3, :cond_0
 
     .line 2
-    new-instance v0, Lio/sentry/n;
+    new-instance v0, Lio/sentry/m;
 
-    invoke-direct {v0, p0, p1, p2}, Lio/sentry/n;-><init>(Lio/sentry/SentryClient;Lio/sentry/SentryEvent;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1, p2}, Lio/sentry/m;-><init>(Lio/sentry/SentryClient;Lio/sentry/SentryEvent;Ljava/lang/Object;)V
 
     .line 3
     invoke-virtual {p3, v0}, Lio/sentry/Scope;->withSession(Lio/sentry/Scope$IWithSession;)Lio/sentry/Session;

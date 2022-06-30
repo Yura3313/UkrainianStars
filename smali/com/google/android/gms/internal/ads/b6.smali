@@ -3,23 +3,22 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/fs0;
+.implements Lk3/xr0;
 
 
 # static fields
-.field public static final a:Lj3/fs0;
+.field public static final a:Lcom/google/android/gms/internal/ads/b6;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/gms/internal/ads/b6;
 
     invoke-direct {v0}, Lcom/google/android/gms/internal/ads/b6;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/internal/ads/b6;->a:Lj3/fs0;
+    sput-object v0, Lcom/google/android/gms/internal/ads/b6;->a:Lcom/google/android/gms/internal/ads/b6;
 
     return-void
 .end method
@@ -27,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/games/snapshot/SnapshotMetadataRef;
-.super Lb2/d;
+.super Lc2/d;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 # interfaces
@@ -7,7 +7,31 @@
 
 
 # virtual methods
-.method public final E1()Lcom/google/android/gms/games/Player;
+.method public final A2()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "external_snapshot_id"
+
+    invoke-virtual {p0, v0}, Lc2/d;->x(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final B1()Landroid/net/Uri;
+    .locals 1
+
+    const-string v0, "cover_icon_image_uri"
+
+    invoke-virtual {p0, v0}, Lc2/d;->K(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final N1()Lcom/google/android/gms/games/Player;
     .locals 1
 
     const/4 v0, 0x0
@@ -15,38 +39,24 @@
     return-object v0
 .end method
 
-.method public final G0()J
-    .locals 4
+.method public final S0()J
+    .locals 2
 
-    .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+    const-string v0, "progress_value"
 
-    iget v1, p0, Lb2/d;->h:I
-
-    iget v2, p0, Lb2/d;->i:I
-
-    const-string v3, "progress_value"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->C2(Ljava/lang/String;II)J
+    invoke-virtual {p0, v0}, Lc2/d;->q(Ljava/lang/String;)J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public final O1()Z
-    .locals 4
+.method public final V1()Z
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+    const-string v0, "pending_change_count"
 
-    iget v1, p0, Lb2/d;->h:I
-
-    iget v2, p0, Lb2/d;->i:I
-
-    const-string v3, "pending_change_count"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
+    invoke-virtual {p0, v0}, Lc2/d;->l(Ljava/lang/String;)I
 
     move-result v0
 
@@ -62,52 +72,6 @@
     return v0
 .end method
 
-.method public final V()J
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->h:I
-
-    iget v2, p0, Lb2/d;->i:I
-
-    const-string v3, "duration"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->C2(Ljava/lang/String;II)J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method public final c()Lcom/google/android/gms/games/Game;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final c1()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->h:I
-
-    iget v2, p0, Lb2/d;->i:I
-
-    const-string v3, "device_name"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method public final describeContents()I
     .locals 1
 
@@ -116,13 +80,10 @@
     return v0
 .end method
 
-.method public final synthetic e2()Ljava/lang/Object;
+.method public final e()Lcom/google/android/gms/games/Game;
     .locals 1
 
-    .line 1
-    new-instance v0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;-><init>(Lcom/google/android/gms/games/snapshot/SnapshotMetadata;)V
+    const/4 v0, 0x0
 
     return-object v0
 .end method
@@ -130,8 +91,7 @@
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;->A2(Lcom/google/android/gms/games/snapshot/SnapshotMetadata;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;->E2(Lcom/google/android/gms/games/snapshot/SnapshotMetadata;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -139,18 +99,11 @@
 .end method
 
 .method public final getCoverImageUrl()Ljava/lang/String;
-    .locals 4
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+    const-string v0, "cover_icon_image_url"
 
-    iget v1, p0, Lb2/d;->h:I
-
-    iget v2, p0, Lb2/d;->i:I
-
-    const-string v3, "cover_icon_image_url"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lc2/d;->x(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -158,18 +111,11 @@
 .end method
 
 .method public final getDescription()Ljava/lang/String;
-    .locals 4
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+    const-string v0, "description"
 
-    iget v1, p0, Lb2/d;->h:I
-
-    iget v2, p0, Lb2/d;->i:I
-
-    const-string v3, "description"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lc2/d;->x(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -177,18 +123,11 @@
 .end method
 
 .method public final getTitle()Ljava/lang/String;
-    .locals 4
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+    const-string v0, "title"
 
-    iget v1, p0, Lb2/d;->h:I
-
-    iget v2, p0, Lb2/d;->i:I
-
-    const-string v3, "title"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lc2/d;->x(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -198,8 +137,7 @@
 .method public final hashCode()I
     .locals 1
 
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;->z2(Lcom/google/android/gms/games/snapshot/SnapshotMetadata;)I
+    invoke-static {p0}, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;->D2(Lcom/google/android/gms/games/snapshot/SnapshotMetadata;)I
 
     move-result v0
 
@@ -207,50 +145,53 @@
 .end method
 
 .method public final j0()J
-    .locals 4
+    .locals 2
 
-    .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+    const-string v0, "duration"
 
-    iget v1, p0, Lb2/d;->h:I
-
-    iget v2, p0, Lb2/d;->i:I
-
-    const-string v3, "last_modified_timestamp"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->C2(Ljava/lang/String;II)J
+    invoke-virtual {p0, v0}, Lc2/d;->q(Ljava/lang/String;)J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public final n2()F
-    .locals 5
+.method public final j1()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "device_name"
+
+    invoke-virtual {p0, v0}, Lc2/d;->x(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final synthetic k2()Ljava/lang/Object;
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;-><init>(Lcom/google/android/gms/games/snapshot/SnapshotMetadata;)V
+
+    return-object v0
+.end method
+
+.method public final t2()F
+    .locals 4
+
+    const-string v0, "cover_icon_image_height"
 
     .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->h:I
-
-    iget v2, p0, Lb2/d;->i:I
-
-    const-string v3, "cover_icon_image_height"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->H2(Ljava/lang/String;II)F
+    invoke-virtual {p0, v0}, Lc2/d;->j(Ljava/lang/String;)F
 
     move-result v0
 
+    const-string v1, "cover_icon_image_width"
+
     .line 2
-    iget-object v1, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v2, p0, Lb2/d;->h:I
-
-    iget v3, p0, Lb2/d;->i:I
-
-    const-string v4, "cover_icon_image_width"
-
-    invoke-virtual {v1, v4, v2, v3}, Lcom/google/android/gms/common/data/DataHolder;->H2(Ljava/lang/String;II)F
+    invoke-virtual {p0, v1}, Lc2/d;->j(Ljava/lang/String;)F
 
     move-result v1
 
@@ -268,62 +209,10 @@
     return v1
 .end method
 
-.method public final s1()Landroid/net/Uri;
-    .locals 1
-
-    const-string v0, "cover_icon_image_uri"
-
-    .line 1
-    invoke-virtual {p0, v0}, Lb2/d;->B(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final t2()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->h:I
-
-    iget v2, p0, Lb2/d;->i:I
-
-    const-string v3, "unique_name"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;->B2(Lcom/google/android/gms/games/snapshot/SnapshotMetadata;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final w2()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->h:I
-
-    iget v2, p0, Lb2/d;->i:I
-
-    const-string v3, "external_snapshot_id"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;->F2(Lcom/google/android/gms/games/snapshot/SnapshotMetadata;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -342,4 +231,28 @@
     invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;->writeToParcel(Landroid/os/Parcel;I)V
 
     return-void
+.end method
+
+.method public final x2()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "unique_name"
+
+    invoke-virtual {p0, v0}, Lc2/d;->x(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final y0()J
+    .locals 2
+
+    const-string v0, "last_modified_timestamp"
+
+    invoke-virtual {p0, v0}, Lc2/d;->q(Ljava/lang/String;)J
+
+    move-result-wide v0
+
+    return-wide v0
 .end method

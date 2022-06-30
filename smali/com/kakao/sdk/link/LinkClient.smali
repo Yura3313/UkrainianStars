@@ -14,7 +14,7 @@
 # static fields
 .field public static final Companion:Lcom/kakao/sdk/link/LinkClient$Companion;
 
-.field private static final instance$delegate:Lae/c;
+.field private static final instance$delegate:Lie/c;
 
 
 # instance fields
@@ -31,18 +31,17 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/link/LinkClient$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/link/LinkClient$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/link/LinkClient;->Companion:Lcom/kakao/sdk/link/LinkClient$Companion;
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/link/LinkClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/link/LinkClient$Companion$instance$2;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/link/LinkClient;->instance$delegate:Lae/c;
+    sput-object v0, Lcom/kakao/sdk/link/LinkClient;->instance$delegate:Lie/c;
 
     return-void
 .end method
@@ -54,7 +53,7 @@
 
     const/4 v1, 0x3
 
-    invoke-direct {p0, v0, v0, v1, v0}, Lcom/kakao/sdk/link/LinkClient;-><init>(Lcom/kakao/sdk/link/LinkApi;Lcom/kakao/sdk/link/KakaoLinkIntentClient;ILle/g;)V
+    invoke-direct {p0, v0, v0, v1, v0}, Lcom/kakao/sdk/link/LinkClient;-><init>(Lcom/kakao/sdk/link/LinkApi;Lcom/kakao/sdk/link/KakaoLinkIntentClient;ILse/e;)V
 
     return-void
 .end method
@@ -62,11 +61,13 @@
 .method public constructor <init>(Lcom/kakao/sdk/link/LinkApi;Lcom/kakao/sdk/link/KakaoLinkIntentClient;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "linkApi"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string v0, "linkIntentClient"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -76,46 +77,31 @@
     iput-object p2, p0, Lcom/kakao/sdk/link/LinkClient;->linkIntentClient:Lcom/kakao/sdk/link/KakaoLinkIntentClient;
 
     return-void
-
-    :cond_0
-    const-string p1, "linkIntentClient"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "linkApi"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/link/LinkApi;Lcom/kakao/sdk/link/KakaoLinkIntentClient;ILle/g;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/link/LinkApi;Lcom/kakao/sdk/link/KakaoLinkIntentClient;ILse/e;)V
     .locals 0
 
     and-int/lit8 p4, p3, 0x1
 
     if-eqz p4, :cond_0
 
-    .line 3
+    .line 2
     sget-object p1, Lcom/kakao/sdk/network/ApiFactory;->INSTANCE:Lcom/kakao/sdk/network/ApiFactory;
 
-    invoke-virtual {p1}, Lcom/kakao/sdk/network/ApiFactory;->getKapi()Lxe/b0;
+    invoke-virtual {p1}, Lcom/kakao/sdk/network/ApiFactory;->getKapi()Lef/d0;
 
     move-result-object p1
 
     const-class p4, Lcom/kakao/sdk/link/LinkApi;
 
-    invoke-virtual {p1, p4}, Lxe/b0;->b(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p1, p4}, Lef/d0;->b(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p1
 
     const-string p4, "ApiFactory.kapi.create(LinkApi::class.java)"
 
-    invoke-static {p1, p4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Lcom/kakao/sdk/link/LinkApi;
 
@@ -124,7 +110,7 @@
 
     if-eqz p3, :cond_1
 
-    .line 4
+    .line 3
     sget-object p2, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->Companion:Lcom/kakao/sdk/link/KakaoLinkIntentClient$Companion;
 
     invoke-virtual {p2}, Lcom/kakao/sdk/link/KakaoLinkIntentClient$Companion;->getInstance()Lcom/kakao/sdk/link/KakaoLinkIntentClient;
@@ -137,16 +123,15 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lae/c;
+.method public static final synthetic access$getInstance$cp()Lie/c;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/kakao/sdk/link/LinkClient;->instance$delegate:Lae/c;
+    sget-object v0, Lcom/kakao/sdk/link/LinkClient;->instance$delegate:Lie/c;
 
     return-object v0
 .end method
 
-.method public static synthetic customTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;JLjava/util/Map;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+.method public static synthetic customTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;JLjava/util/Map;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
     .locals 9
 
     and-int/lit8 v0, p7, 0x4
@@ -183,13 +168,12 @@
 
     move-object v8, p6
 
-    .line 1
-    invoke-virtual/range {v2 .. v8}, Lcom/kakao/sdk/link/LinkClient;->customTemplate(Landroid/content/Context;JLjava/util/Map;Ljava/util/Map;Lke/p;)V
+    invoke-virtual/range {v2 .. v8}, Lcom/kakao/sdk/link/LinkClient;->customTemplate(Landroid/content/Context;JLjava/util/Map;Ljava/util/Map;Lre/p;)V
 
     return-void
 .end method
 
-.method public static synthetic defaultTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+.method public static synthetic defaultTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
     .locals 0
 
     and-int/lit8 p5, p5, 0x4
@@ -198,9 +182,8 @@
 
     const/4 p3, 0x0
 
-    .line 1
     :cond_0
-    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/kakao/sdk/link/LinkClient;->defaultTemplate(Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Ljava/util/Map;Lke/p;)V
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/kakao/sdk/link/LinkClient;->defaultTemplate(Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Ljava/util/Map;Lre/p;)V
 
     return-void
 .end method
@@ -217,7 +200,7 @@
     return-object v0
 .end method
 
-.method public static synthetic scrapImage$default(Lcom/kakao/sdk/link/LinkClient;Ljava/lang/String;ZLke/p;ILjava/lang/Object;)V
+.method public static synthetic scrapImage$default(Lcom/kakao/sdk/link/LinkClient;Ljava/lang/String;ZLre/p;ILjava/lang/Object;)V
     .locals 0
 
     and-int/lit8 p4, p4, 0x2
@@ -226,14 +209,13 @@
 
     const/4 p2, 0x1
 
-    .line 1
     :cond_0
-    invoke-virtual {p0, p1, p2, p3}, Lcom/kakao/sdk/link/LinkClient;->scrapImage(Ljava/lang/String;ZLke/p;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/kakao/sdk/link/LinkClient;->scrapImage(Ljava/lang/String;ZLre/p;)V
 
     return-void
 .end method
 
-.method public static synthetic scrapTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+.method public static synthetic scrapTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
     .locals 9
 
     and-int/lit8 v0, p7, 0x4
@@ -282,13 +264,12 @@
 
     move-object v8, p6
 
-    .line 1
-    invoke-virtual/range {v2 .. v8}, Lcom/kakao/sdk/link/LinkClient;->scrapTemplate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lke/p;)V
+    invoke-virtual/range {v2 .. v8}, Lcom/kakao/sdk/link/LinkClient;->scrapTemplate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lre/p;)V
 
     return-void
 .end method
 
-.method public static synthetic uploadImage$default(Lcom/kakao/sdk/link/LinkClient;Ljava/io/File;ZLke/p;ILjava/lang/Object;)V
+.method public static synthetic uploadImage$default(Lcom/kakao/sdk/link/LinkClient;Ljava/io/File;ZLre/p;ILjava/lang/Object;)V
     .locals 0
 
     and-int/lit8 p4, p4, 0x2
@@ -297,16 +278,15 @@
 
     const/4 p2, 0x1
 
-    .line 1
     :cond_0
-    invoke-virtual {p0, p1, p2, p3}, Lcom/kakao/sdk/link/LinkClient;->uploadImage(Ljava/io/File;ZLke/p;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/kakao/sdk/link/LinkClient;->uploadImage(Ljava/io/File;ZLre/p;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final customTemplate(Landroid/content/Context;JLjava/util/Map;Ljava/util/Map;Lke/p;)V
+.method public final customTemplate(Landroid/content/Context;JLjava/util/Map;Ljava/util/Map;Lre/p;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -321,55 +301,42 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/LinkResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p6, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/LinkClient;->linkApi:Lcom/kakao/sdk/link/LinkApi;
 
-    invoke-interface {v0, p2, p3, p4}, Lcom/kakao/sdk/link/LinkApi;->validateCustom(JLjava/util/Map;)Lxe/b;
+    invoke-interface {v0, p2, p3, p4}, Lcom/kakao/sdk/link/LinkApi;->validateCustom(JLjava/util/Map;)Lef/b;
 
     move-result-object p2
 
     .line 2
     new-instance p3, Lcom/kakao/sdk/link/LinkClient$customTemplate$1;
 
-    invoke-direct {p3, p0, p6, p1, p5}, Lcom/kakao/sdk/link/LinkClient$customTemplate$1;-><init>(Lcom/kakao/sdk/link/LinkClient;Lke/p;Landroid/content/Context;Ljava/util/Map;)V
+    invoke-direct {p3, p0, p6, p1, p5}, Lcom/kakao/sdk/link/LinkClient$customTemplate$1;-><init>(Lcom/kakao/sdk/link/LinkClient;Lre/p;Landroid/content/Context;Ljava/util/Map;)V
 
-    invoke-interface {p2, p3}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p2, p3}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public final customTemplate(Landroid/content/Context;JLjava/util/Map;Lke/p;)V
+.method public final customTemplate(Landroid/content/Context;JLjava/util/Map;Lre/p;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -380,12 +347,12 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/LinkResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -406,24 +373,24 @@
 
     move-object v6, p5
 
-    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/link/LinkClient;->customTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;JLjava/util/Map;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/link/LinkClient;->customTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;JLjava/util/Map;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final customTemplate(Landroid/content/Context;JLke/p;)V
+.method public final customTemplate(Landroid/content/Context;JLre/p;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
             "J",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/LinkResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -444,12 +411,12 @@
 
     move-object v6, p4
 
-    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/link/LinkClient;->customTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;JLjava/util/Map;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/link/LinkClient;->customTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;JLjava/util/Map;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final defaultTemplate(Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Ljava/util/Map;Lke/p;)V
+.method public final defaultTemplate(Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Ljava/util/Map;Lre/p;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -460,76 +427,58 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/LinkResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "defaultTemplate"
 
-    if-eqz p4, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "callback"
+
+    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/LinkClient;->linkApi:Lcom/kakao/sdk/link/LinkApi;
 
-    invoke-interface {v0, p2}, Lcom/kakao/sdk/link/LinkApi;->validateDefault(Lcom/kakao/sdk/template/model/DefaultTemplate;)Lxe/b;
+    invoke-interface {v0, p2}, Lcom/kakao/sdk/link/LinkApi;->validateDefault(Lcom/kakao/sdk/template/model/DefaultTemplate;)Lef/b;
 
     move-result-object p2
 
     .line 2
     new-instance v0, Lcom/kakao/sdk/link/LinkClient$defaultTemplate$1;
 
-    invoke-direct {v0, p0, p4, p1, p3}, Lcom/kakao/sdk/link/LinkClient$defaultTemplate$1;-><init>(Lcom/kakao/sdk/link/LinkClient;Lke/p;Landroid/content/Context;Ljava/util/Map;)V
+    invoke-direct {v0, p0, p4, p1, p3}, Lcom/kakao/sdk/link/LinkClient$defaultTemplate$1;-><init>(Lcom/kakao/sdk/link/LinkClient;Lre/p;Landroid/content/Context;Ljava/util/Map;)V
 
-    invoke-interface {p2, v0}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p2, v0}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "defaultTemplate"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public final defaultTemplate(Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Lke/p;)V
+.method public final defaultTemplate(Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Lre/p;)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
             "Lcom/kakao/sdk/template/model/DefaultTemplate;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/LinkResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -548,7 +497,7 @@
 
     move-object v4, p3
 
-    invoke-static/range {v0 .. v6}, Lcom/kakao/sdk/link/LinkClient;->defaultTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v6}, Lcom/kakao/sdk/link/LinkClient;->defaultTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Lcom/kakao/sdk/template/model/DefaultTemplate;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -556,7 +505,6 @@
 .method public final getLinkIntentClient()Lcom/kakao/sdk/link/KakaoLinkIntentClient;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/LinkClient;->linkIntentClient:Lcom/kakao/sdk/link/KakaoLinkIntentClient;
 
     return-object v0
@@ -565,9 +513,10 @@
 .method public final isKakaoLinkAvailable(Landroid/content/Context;)Z
     .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "context"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     iget-object v0, p0, Lcom/kakao/sdk/link/LinkClient;->linkIntentClient:Lcom/kakao/sdk/link/KakaoLinkIntentClient;
 
     invoke-virtual {v0, p1}, Lcom/kakao/sdk/link/KakaoLinkIntentClient;->isKakaoLinkAvailable(Landroid/content/Context;)Z
@@ -575,30 +524,20 @@
     move-result p1
 
     return p1
-
-    :cond_0
-    const-string p1, "context"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public final scrapImage(Ljava/lang/String;Lke/p;)V
+.method public final scrapImage(Ljava/lang/String;Lre/p;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/ImageUploadResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -615,33 +554,35 @@
 
     move-object v3, p2
 
-    invoke-static/range {v0 .. v5}, Lcom/kakao/sdk/link/LinkClient;->scrapImage$default(Lcom/kakao/sdk/link/LinkClient;Ljava/lang/String;ZLke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v5}, Lcom/kakao/sdk/link/LinkClient;->scrapImage$default(Lcom/kakao/sdk/link/LinkClient;Ljava/lang/String;ZLre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final scrapImage(Ljava/lang/String;ZLke/p;)V
+.method public final scrapImage(Ljava/lang/String;ZLre/p;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Z",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/ImageUploadResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "imageUrl"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p3, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/LinkClient;->linkApi:Lcom/kakao/sdk/link/LinkApi;
@@ -650,36 +591,21 @@
 
     move-result-object p2
 
-    invoke-interface {v0, p1, p2}, Lcom/kakao/sdk/link/LinkApi;->scrapImage(Ljava/lang/String;Ljava/lang/Boolean;)Lxe/b;
+    invoke-interface {v0, p1, p2}, Lcom/kakao/sdk/link/LinkApi;->scrapImage(Ljava/lang/String;Ljava/lang/Boolean;)Lef/b;
 
     move-result-object p1
 
     .line 2
     new-instance p2, Lcom/kakao/sdk/link/LinkClient$scrapImage$1;
 
-    invoke-direct {p2, p3}, Lcom/kakao/sdk/link/LinkClient$scrapImage$1;-><init>(Lke/p;)V
+    invoke-direct {p2, p3}, Lcom/kakao/sdk/link/LinkClient$scrapImage$1;-><init>(Lre/p;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "imageUrl"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public final scrapTemplate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lke/p;)V
+.method public final scrapTemplate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lre/p;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -695,64 +621,46 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/LinkResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_1
+    const-string v0, "url"
 
-    if-eqz p6, :cond_0
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "callback"
+
+    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/LinkClient;->linkApi:Lcom/kakao/sdk/link/LinkApi;
 
-    invoke-interface {v0, p2, p3, p4}, Lcom/kakao/sdk/link/LinkApi;->validateScrap(Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;)Lxe/b;
+    invoke-interface {v0, p2, p3, p4}, Lcom/kakao/sdk/link/LinkApi;->validateScrap(Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;)Lef/b;
 
     move-result-object p2
 
     .line 2
     new-instance p3, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;
 
-    invoke-direct {p3, p0, p6, p1, p5}, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;-><init>(Lcom/kakao/sdk/link/LinkClient;Lke/p;Landroid/content/Context;Ljava/util/Map;)V
+    invoke-direct {p3, p0, p6, p1, p5}, Lcom/kakao/sdk/link/LinkClient$scrapTemplate$1;-><init>(Lcom/kakao/sdk/link/LinkClient;Lre/p;Landroid/content/Context;Ljava/util/Map;)V
 
-    invoke-interface {p2, p3}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p2, p3}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "url"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public final scrapTemplate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lke/p;)V
+.method public final scrapTemplate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Lre/p;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -764,12 +672,12 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/LinkResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -792,12 +700,12 @@
 
     move-object v6, p5
 
-    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/link/LinkClient;->scrapTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/link/LinkClient;->scrapTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final scrapTemplate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Lke/p;)V
+.method public final scrapTemplate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Lre/p;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -805,12 +713,12 @@
             "Landroid/content/Context;",
             "Ljava/lang/String;",
             "Ljava/lang/Long;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/LinkResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -833,24 +741,24 @@
 
     move-object v6, p4
 
-    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/link/LinkClient;->scrapTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/link/LinkClient;->scrapTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final scrapTemplate(Landroid/content/Context;Ljava/lang/String;Lke/p;)V
+.method public final scrapTemplate(Landroid/content/Context;Ljava/lang/String;Lre/p;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
             "Ljava/lang/String;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/LinkResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -873,23 +781,23 @@
 
     move-object v6, p3
 
-    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/link/LinkClient;->scrapTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v8}, Lcom/kakao/sdk/link/LinkClient;->scrapTemplate$default(Lcom/kakao/sdk/link/LinkClient;Landroid/content/Context;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final uploadImage(Ljava/io/File;Lke/p;)V
+.method public final uploadImage(Ljava/io/File;Lre/p;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/io/File;",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/ImageUploadResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
@@ -906,33 +814,35 @@
 
     move-object v3, p2
 
-    invoke-static/range {v0 .. v5}, Lcom/kakao/sdk/link/LinkClient;->uploadImage$default(Lcom/kakao/sdk/link/LinkClient;Ljava/io/File;ZLke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v5}, Lcom/kakao/sdk/link/LinkClient;->uploadImage$default(Lcom/kakao/sdk/link/LinkClient;Ljava/io/File;ZLre/p;ILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final uploadImage(Ljava/io/File;ZLke/p;)V
+.method public final uploadImage(Ljava/io/File;ZLre/p;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/io/File;",
             "Z",
-            "Lke/p<",
+            "Lre/p<",
             "-",
             "Lcom/kakao/sdk/link/model/ImageUploadResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lae/i;",
+            "Lie/h;",
             ">;)V"
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const-string v0, "image"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p3, :cond_0
+    const-string v0, "callback"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/link/LinkClient;->linkApi:Lcom/kakao/sdk/link/LinkApi;
@@ -962,7 +872,7 @@
 
     const-string v1, "MultipartBody.Part.creat\u2026*\"), image)\n            )"
 
-    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 5
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -970,31 +880,16 @@
     move-result-object p2
 
     .line 6
-    invoke-interface {v0, p1, p2}, Lcom/kakao/sdk/link/LinkApi;->uploadImage(Lokhttp3/MultipartBody$Part;Ljava/lang/Boolean;)Lxe/b;
+    invoke-interface {v0, p1, p2}, Lcom/kakao/sdk/link/LinkApi;->uploadImage(Lokhttp3/MultipartBody$Part;Ljava/lang/Boolean;)Lef/b;
 
     move-result-object p1
 
     .line 7
     new-instance p2, Lcom/kakao/sdk/link/LinkClient$uploadImage$1;
 
-    invoke-direct {p2, p3}, Lcom/kakao/sdk/link/LinkClient$uploadImage$1;-><init>(Lke/p;)V
+    invoke-direct {p2, p3}, Lcom/kakao/sdk/link/LinkClient$uploadImage$1;-><init>(Lre/p;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lef/b;->x(Lef/d;)V
 
     return-void
-
-    :cond_0
-    const-string p1, "callback"
-
-    .line 8
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "image"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method

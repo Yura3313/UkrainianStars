@@ -3,12 +3,12 @@
 .source "KakaoRetrofitConverterFactory.kt"
 
 # interfaces
-.implements Lxe/j;
+.implements Lef/j;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kakao/sdk/network/KakaoRetrofitConverterFactory;->stringConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lxe/b0;)Lxe/j;
+    value = Lcom/kakao/sdk/network/KakaoRetrofitConverterFactory;->stringConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lef/d0;)Lef/j;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,7 +24,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lxe/j<",
+        "Lef/j<",
         "Ljava/util/Date;",
         "Ljava/lang/String;",
         ">;"
@@ -75,7 +75,9 @@
 .method public final convert(Ljava/util/Date;)Ljava/lang/String;
     .locals 4
 
-    if-eqz p1, :cond_0
+    const-string v0, "value"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-virtual {p1}, Ljava/util/Date;->getTime()J
@@ -93,14 +95,4 @@
     move-result-object p1
 
     return-object p1
-
-    :cond_0
-    const-string p1, "value"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

@@ -6,7 +6,7 @@
 
 
 # virtual methods
-.method public abstract G3(Lcom/google/android/gms/internal/drive/zzfy;)V
+.method public abstract A0()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -14,7 +14,7 @@
     .end annotation
 .end method
 
-.method public abstract H0(Lcom/google/android/gms/common/api/Status;)V
+.method public abstract B5(Lcom/google/android/gms/common/api/Status;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -22,7 +22,7 @@
     .end annotation
 .end method
 
-.method public abstract H6(Lcom/google/android/gms/internal/drive/zzfn;)V
+.method public abstract D6(Lcom/google/android/gms/internal/drive/zzfn;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -30,7 +30,7 @@
     .end annotation
 .end method
 
-.method public abstract I3(Lcom/google/android/gms/internal/drive/zzfh;)V
+.method public abstract L4(Lcom/google/android/gms/internal/drive/zzft;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -38,7 +38,7 @@
     .end annotation
 .end method
 
-.method public abstract K4(Lcom/google/android/gms/internal/drive/zzft;)V
+.method public abstract N3(Lcom/google/android/gms/internal/drive/zzfy;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -46,7 +46,7 @@
     .end annotation
 .end method
 
-.method public abstract i2(Lcom/google/android/gms/internal/drive/zzga;)V
+.method public abstract P3(Lcom/google/android/gms/internal/drive/zzfh;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -54,7 +54,7 @@
     .end annotation
 .end method
 
-.method public abstract p5(Lcom/google/android/gms/internal/drive/zzfj;)V
+.method public abstract l2(Lcom/google/android/gms/internal/drive/zzga;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -62,7 +62,7 @@
     .end annotation
 .end method
 
-.method public abstract p6(Lcom/google/android/gms/internal/drive/zzfv;)V
+.method public abstract l6(Lcom/google/android/gms/internal/drive/zzfv;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -70,7 +70,7 @@
     .end annotation
 .end method
 
-.method public abstract u0()V
+.method public abstract o5(Lcom/google/android/gms/internal/drive/zzfj;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

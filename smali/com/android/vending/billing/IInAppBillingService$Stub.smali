@@ -101,7 +101,6 @@
 .method public static getDefaultImpl()Lcom/android/vending/billing/IInAppBillingService;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/android/vending/billing/IInAppBillingService$Stub$Proxy;->sDefaultImpl:Lcom/android/vending/billing/IInAppBillingService;
 
     return-object v0

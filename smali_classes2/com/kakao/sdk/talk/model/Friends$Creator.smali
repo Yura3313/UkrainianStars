@@ -28,13 +28,13 @@
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 8
+    .locals 7
 
-    const/4 v0, 0x0
+    const-string v0, "in"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v7, Lcom/kakao/sdk/talk/model/Friends;
+    new-instance v0, Lcom/kakao/sdk/talk/model/Friends;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -76,14 +76,19 @@
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v0
+    move-result v1
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v0
+    move-result-object v1
+
+    goto :goto_1
 
     :cond_1
-    move-object v4, v0
+    const/4 v1, 0x0
+
+    :goto_1
+    move-object v4, v1
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -93,25 +98,11 @@
 
     move-result-object v6
 
-    move-object v1, v7
+    move-object v1, v0
 
     invoke-direct/range {v1 .. v6}, Lcom/kakao/sdk/talk/model/Friends;-><init>(ILjava/util/List;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)V
 
-    return-object v7
-
-    :cond_2
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    goto :goto_2
-
-    :goto_1
-    throw v0
-
-    :goto_2
-    goto :goto_1
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

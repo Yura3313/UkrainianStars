@@ -27,7 +27,6 @@
 .method public constructor <init>(Landroid/app/Activity;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/broker/InterfaceBrokerManager$1;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/broker/InterfaceBrokerManager$1;->val$requestString:Ljava/lang/String;
@@ -42,7 +41,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/broker/InterfaceBrokerManager$1;->val$activity:Landroid/app/Activity;
 
     iget-object v1, p0, Lcom/kakaogame/broker/InterfaceBrokerManager$1;->val$requestString:Ljava/lang/String;

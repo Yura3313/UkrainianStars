@@ -1,4 +1,4 @@
-.class public Landroidx/viewpager/widget/ViewPager$c;
+.class public final Landroidx/viewpager/widget/ViewPager$c;
 .super Ljava/lang/Object;
 .source "ViewPager.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Landroidx/viewpager/widget/ViewPager;
+.field public final synthetic f:Landroidx/viewpager/widget/ViewPager;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/viewpager/widget/ViewPager;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/viewpager/widget/ViewPager$c;->g:Landroidx/viewpager/widget/ViewPager;
+    iput-object p1, p0, Landroidx/viewpager/widget/ViewPager$c;->f:Landroidx/viewpager/widget/ViewPager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,23 +34,20 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager/widget/ViewPager$c;->g:Landroidx/viewpager/widget/ViewPager;
+    iget-object v0, p0, Landroidx/viewpager/widget/ViewPager$c;->f:Landroidx/viewpager/widget/ViewPager;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroidx/viewpager/widget/ViewPager;->setScrollState(I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/viewpager/widget/ViewPager$c;->g:Landroidx/viewpager/widget/ViewPager;
+    iget-object v0, p0, Landroidx/viewpager/widget/ViewPager$c;->f:Landroidx/viewpager/widget/ViewPager;
 
-    .line 3
-    iget v1, v0, Landroidx/viewpager/widget/ViewPager;->l:I
-
-    invoke-virtual {v0, v1}, Landroidx/viewpager/widget/ViewPager;->s(I)V
+    invoke-virtual {v0}, Landroidx/viewpager/widget/ViewPager;->s()V
 
     return-void
 .end method

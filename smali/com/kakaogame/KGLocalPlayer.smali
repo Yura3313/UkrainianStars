@@ -24,7 +24,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/KGPlayer;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -33,7 +32,6 @@
 .method public static synthetic access$000(Ljava/util/Map;)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/kakaogame/KGLocalPlayer;->setAgreement(Ljava/util/Map;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -44,7 +42,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/KGLocalPlayer;Ljava/util/Map;)Lcom/kakaogame/KGResult;
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/KGLocalPlayer;->saveCustomProperties(Ljava/util/Map;)Lcom/kakaogame/KGResult;
 
     move-result-object p0
@@ -109,7 +106,7 @@
     move-exception v1
 
     .line 5
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -188,7 +185,7 @@
     move-exception v1
 
     .line 8
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -244,7 +241,6 @@
 .method public static initialize()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/KGLocalPlayer;->initInterfaceBroker()V
 
     return-void
@@ -425,7 +421,7 @@
 
     .line 15
     :try_start_2
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -434,7 +430,7 @@
     const/16 v0, 0xfa1
 
     .line 16
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -593,7 +589,7 @@
     const-string v2, "KGLocalPlayer"
 
     .line 12
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -602,7 +598,7 @@
     const/16 v2, 0xfa1
 
     .line 13
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -741,7 +737,7 @@
     move-exception v0
 
     .line 2
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -814,7 +810,7 @@
     move-exception v0
 
     .line 6
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1000,7 +996,7 @@
     const-string p2, "KGLocalPlayer"
 
     .line 13
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1009,7 +1005,7 @@
     const/16 p2, 0xfa1
 
     .line 14
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 

@@ -33,7 +33,6 @@
 .method public constructor <init>(Lokhttp3/internal/ws/WebSocketWriter;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter$FrameSink;->this$0:Lokhttp3/internal/ws/WebSocketWriter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -149,7 +148,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter$FrameSink;->this$0:Lokhttp3/internal/ws/WebSocketWriter;
 
     iget-object v0, v0, Lokhttp3/internal/ws/WebSocketWriter;->sink:Lokio/BufferedSink;

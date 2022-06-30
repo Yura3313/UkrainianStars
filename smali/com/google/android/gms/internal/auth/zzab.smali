@@ -15,21 +15,20 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
 
-.field public final h:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final i:I
+.field public final h:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Ll3/a;
+    new-instance v0, Lm3/a;
 
-    invoke-direct {v0}, Ll3/a;-><init>()V
+    invoke-direct {v0}, Lm3/a;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/auth/zzab;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -45,76 +44,64 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, Lcom/google/android/gms/internal/auth/zzab;->g:I
-
-    if-eqz p1, :cond_0
+    iput v0, p0, Lcom/google/android/gms/internal/auth/zzab;->f:I
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzab;->h:Ljava/lang/String;
+    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzab;->g:Ljava/lang/String;
 
     .line 4
-    iput p2, p0, Lcom/google/android/gms/internal/auth/zzab;->i:I
+    iput p2, p0, Lcom/google/android/gms/internal/auth/zzab;->h:I
 
     return-void
-
-    .line 5
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "null reference"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
 # virtual methods
 .method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 4
+    .locals 6
 
     const/16 p2, 0x4f45
 
     .line 1
-    invoke-static {p1, p2}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Le2/b;->r(Landroid/os/Parcel;I)I
 
-    move-result p2
-
-    const/4 v0, 0x1
+    move-result v5
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/internal/auth/zzab;->g:I
+    iget p2, p0, Lcom/google/android/gms/internal/auth/zzab;->f:I
+
+    const/4 v0, 0x1
 
     const/4 v2, 0x4
 
     .line 3
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v0, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 4
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 5
+    iget-object p2, p0, Lcom/google/android/gms/internal/auth/zzab;->g:Ljava/lang/String;
 
     const/4 v0, 0x2
 
-    .line 5
-    iget-object v1, p0, Lcom/google/android/gms/internal/auth/zzab;->h:Ljava/lang/String;
+    const/4 v1, 0x0
 
-    const/4 v3, 0x0
-
-    invoke-static {p1, v0, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    const/4 v0, 0x3
+    invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    iget v1, p0, Lcom/google/android/gms/internal/auth/zzab;->i:I
+    iget v3, p0, Lcom/google/android/gms/internal/auth/zzab;->h:I
+
+    const/4 v1, 0x3
+
+    move-object v0, p1
+
+    move-object v4, p1
 
     .line 7
-    invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
-
-    .line 8
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 9
-    invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static/range {v0 .. v5}, Li1/i;->b(Landroid/os/Parcel;IIILandroid/os/Parcel;I)V
 
     return-void
 .end method

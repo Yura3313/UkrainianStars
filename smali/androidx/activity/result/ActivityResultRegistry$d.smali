@@ -1,4 +1,4 @@
-.class public Landroidx/activity/result/ActivityResultRegistry$d;
+.class public final Landroidx/activity/result/ActivityResultRegistry$d;
 .super Ljava/lang/Object;
 .source "ActivityResultRegistry.java"
 

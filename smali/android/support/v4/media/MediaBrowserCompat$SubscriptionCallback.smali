@@ -150,7 +150,6 @@
 .method public setSubscription(Landroid/support/v4/media/MediaBrowserCompat$Subscription;)V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V

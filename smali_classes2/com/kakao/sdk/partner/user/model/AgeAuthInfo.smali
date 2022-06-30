@@ -50,7 +50,6 @@
 .method public constructor <init>(JLcom/kakao/sdk/partner/auth/model/AgeAuthLevel;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/Date;Ljava/lang/Boolean;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->id:J
@@ -309,7 +308,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->authLevel:Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -319,7 +318,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->authLevelCode:Ljava/lang/Integer;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -329,7 +328,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->bypassAgeLimit:Ljava/lang/Boolean;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -339,7 +338,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->authenticatedAt:Ljava/util/Date;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -349,7 +348,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->ciNeedsAgreement:Ljava/lang/Boolean;
 
-    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -359,7 +358,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->ci:Ljava/lang/String;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -378,7 +377,6 @@
 .method public final getAuthLevel()Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->authLevel:Lcom/kakao/sdk/partner/auth/model/AgeAuthLevel;
 
     return-object v0
@@ -387,7 +385,6 @@
 .method public final getAuthLevelCode()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->authLevelCode:Ljava/lang/Integer;
 
     return-object v0
@@ -396,7 +393,6 @@
 .method public final getAuthenticatedAt()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->authenticatedAt:Ljava/util/Date;
 
     return-object v0
@@ -405,7 +401,6 @@
 .method public final getBypassAgeLimit()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->bypassAgeLimit:Ljava/lang/Boolean;
 
     return-object v0
@@ -414,7 +409,6 @@
 .method public final getCi()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->ci:Ljava/lang/String;
 
     return-object v0
@@ -423,7 +417,6 @@
 .method public final getCiNeedsAgreement()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->ciNeedsAgreement:Ljava/lang/Boolean;
 
     return-object v0
@@ -432,7 +425,6 @@
 .method public final getId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->id:J
 
     return-wide v0
@@ -564,10 +556,12 @@
 
     const-string v0, "AgeAuthInfo(id="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget-wide v1, p0, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->id:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
@@ -620,7 +614,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -630,7 +625,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    if-eqz p1, :cond_4
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-wide v0, p0, Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;->id:J
 
@@ -680,10 +677,12 @@
 
     if-eqz p2, :cond_2
 
-    invoke-static {p1, v0, p2}, Lj3/ap0;->e(Landroid/os/Parcel;ILjava/lang/Boolean;)V
+    .line 1
+    invoke-static {p1, v0, p2}, Lk3/vo0;->c(Landroid/os/Parcel;ILjava/lang/Boolean;)V
 
     goto :goto_2
 
+    .line 2
     :cond_2
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -696,10 +695,12 @@
 
     if-eqz p2, :cond_3
 
-    invoke-static {p1, v0, p2}, Lj3/ap0;->e(Landroid/os/Parcel;ILjava/lang/Boolean;)V
+    .line 3
+    invoke-static {p1, v0, p2}, Lk3/vo0;->c(Landroid/os/Parcel;ILjava/lang/Boolean;)V
 
     goto :goto_3
 
+    .line 4
     :cond_3
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -709,14 +710,4 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     return-void
-
-    :cond_4
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

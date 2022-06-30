@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/kakaogame/core/LocaleManager$1;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/core/LocaleManager$1$1;->this$0:Lcom/kakaogame/core/LocaleManager$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -60,7 +59,7 @@
     const-string v1, "LocaleManager"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/a;->a(Ljava/lang/String;Lcom/kakaogame/KGResult;Ljava/lang/String;)V
 
     return-void
 .end method

@@ -27,7 +27,6 @@
 .method public constructor <init>(ZLandroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/kakaogame/push/OnlinePushManager$5;->val$terminate:Z
 
     iput-object p2, p0, Lcom/kakaogame/push/OnlinePushManager$5;->val$activity:Landroid/app/Activity;

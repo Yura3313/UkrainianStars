@@ -14,9 +14,9 @@
 
 
 # static fields
-.field public static final H:[Ljava/lang/String;
+.field public static final G:[Ljava/lang/String;
 
-.field public static final I:Landroid/util/Property;
+.field public static final H:Landroidx/transition/ChangeTransform$a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/Property<",
@@ -26,7 +26,7 @@
     .end annotation
 .end field
 
-.field public static final J:Landroid/util/Property;
+.field public static final I:Landroidx/transition/ChangeTransform$b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/Property<",
@@ -37,15 +37,15 @@
     .end annotation
 .end field
 
-.field public static final K:Z
+.field public static final J:Z
 
 
 # instance fields
+.field public D:Z
+
 .field public E:Z
 
-.field public F:Z
-
-.field public G:Landroid/graphics/Matrix;
+.field public F:Landroid/graphics/Matrix;
 
 
 # direct methods
@@ -56,60 +56,54 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "android:changeTransform:matrix"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "android:changeTransform:matrix"
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-string v1, "android:changeTransform:transforms"
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-string v3, "android:changeTransform:transforms"
 
-    aput-object v1, v0, v3
+    aput-object v3, v0, v2
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
     const-string v4, "android:changeTransform:parentMatrix"
 
-    aput-object v4, v0, v1
+    aput-object v4, v0, v3
 
     .line 1
-    sput-object v0, Landroidx/transition/ChangeTransform;->H:[Ljava/lang/String;
+    sput-object v0, Landroidx/transition/ChangeTransform;->G:[Ljava/lang/String;
 
     .line 2
     new-instance v0, Landroidx/transition/ChangeTransform$a;
 
-    const-class v1, [F
+    invoke-direct {v0}, Landroidx/transition/ChangeTransform$a;-><init>()V
 
-    const-string v4, "nonTranslations"
-
-    invoke-direct {v0, v1, v4}, Landroidx/transition/ChangeTransform$a;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
-
-    sput-object v0, Landroidx/transition/ChangeTransform;->I:Landroid/util/Property;
+    sput-object v0, Landroidx/transition/ChangeTransform;->H:Landroidx/transition/ChangeTransform$a;
 
     .line 3
     new-instance v0, Landroidx/transition/ChangeTransform$b;
 
-    const-class v1, Landroid/graphics/PointF;
+    const-class v3, Landroid/graphics/PointF;
 
-    const-string v4, "translations"
+    invoke-direct {v0, v3}, Landroidx/transition/ChangeTransform$b;-><init>(Ljava/lang/Class;)V
 
-    invoke-direct {v0, v1, v4}, Landroidx/transition/ChangeTransform$b;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
-
-    sput-object v0, Landroidx/transition/ChangeTransform;->J:Landroid/util/Property;
+    sput-object v0, Landroidx/transition/ChangeTransform;->I:Landroidx/transition/ChangeTransform$b;
 
     .line 4
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x15
+    const/16 v3, 0x15
 
-    if-lt v0, v1, :cond_0
+    if-lt v0, v3, :cond_0
 
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
     :cond_0
-    sput-boolean v2, Landroidx/transition/ChangeTransform;->K:Z
+    sput-boolean v1, Landroidx/transition/ChangeTransform;->J:Z
 
     return-void
 .end method
@@ -123,17 +117,17 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Landroidx/transition/ChangeTransform;->E:Z
+    iput-boolean v0, p0, Landroidx/transition/ChangeTransform;->D:Z
 
     .line 3
-    iput-boolean v0, p0, Landroidx/transition/ChangeTransform;->F:Z
+    iput-boolean v0, p0, Landroidx/transition/ChangeTransform;->E:Z
 
     .line 4
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object v0, p0, Landroidx/transition/ChangeTransform;->G:Landroid/graphics/Matrix;
+    iput-object v0, p0, Landroidx/transition/ChangeTransform;->F:Landroid/graphics/Matrix;
 
     return-void
 .end method
@@ -152,17 +146,17 @@
     const/4 v0, 0x1
 
     .line 6
-    iput-boolean v0, p0, Landroidx/transition/ChangeTransform;->E:Z
+    iput-boolean v0, p0, Landroidx/transition/ChangeTransform;->D:Z
 
     .line 7
-    iput-boolean v0, p0, Landroidx/transition/ChangeTransform;->F:Z
+    iput-boolean v0, p0, Landroidx/transition/ChangeTransform;->E:Z
 
     .line 8
     new-instance v1, Landroid/graphics/Matrix;
 
     invoke-direct {v1}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object v1, p0, Landroidx/transition/ChangeTransform;->G:Landroid/graphics/Matrix;
+    iput-object v1, p0, Landroidx/transition/ChangeTransform;->F:Landroid/graphics/Matrix;
 
     .line 9
     sget-object v1, Lv0/p;->e:[I
@@ -180,7 +174,7 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Landroidx/transition/ChangeTransform;->E:Z
+    iput-boolean v1, p0, Landroidx/transition/ChangeTransform;->D:Z
 
     const-string v1, "reparent"
 
@@ -191,7 +185,7 @@
 
     move-result p2
 
-    iput-boolean p2, p0, Landroidx/transition/ChangeTransform;->F:Z
+    iput-boolean p2, p0, Landroidx/transition/ChangeTransform;->E:Z
 
     .line 12
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
@@ -199,34 +193,7 @@
     return-void
 .end method
 
-.method public static K(Landroid/view/View;)V
-    .locals 9
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    const/high16 v5, 0x3f800000    # 1.0f
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    move-object v0, p0
-
-    .line 1
-    invoke-static/range {v0 .. v8}, Landroidx/transition/ChangeTransform;->L(Landroid/view/View;FFFFFFFF)V
-
-    return-void
-.end method
-
-.method public static L(Landroid/view/View;FFFFFFFF)V
+.method public static M(Landroid/view/View;FFFFFFFF)V
     .locals 0
 
     .line 1
@@ -236,32 +203,21 @@
     invoke-virtual {p0, p2}, Landroid/view/View;->setTranslationY(F)V
 
     .line 3
-    sget-object p1, Lf0/r;->a:Ljava/util/WeakHashMap;
+    invoke-static {p0, p3}, Lf0/r;->O(Landroid/view/View;F)V
 
     .line 4
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 p2, 0x15
-
-    if-lt p1, p2, :cond_0
-
-    .line 5
-    invoke-virtual {p0, p3}, Landroid/view/View;->setTranslationZ(F)V
-
-    .line 6
-    :cond_0
     invoke-virtual {p0, p4}, Landroid/view/View;->setScaleX(F)V
 
-    .line 7
+    .line 5
     invoke-virtual {p0, p5}, Landroid/view/View;->setScaleY(F)V
 
-    .line 8
+    .line 6
     invoke-virtual {p0, p6}, Landroid/view/View;->setRotationX(F)V
 
-    .line 9
+    .line 7
     invoke-virtual {p0, p7}, Landroid/view/View;->setRotationY(F)V
 
-    .line 10
+    .line 8
     invoke-virtual {p0, p8}, Landroid/view/View;->setRotation(F)V
 
     return-void
@@ -269,7 +225,7 @@
 
 
 # virtual methods
-.method public final J(Lv0/s;)V
+.method public final L(Lv0/s;)V
     .locals 4
 
     .line 1
@@ -288,7 +244,7 @@
 
     .line 3
     :cond_0
-    iget-object v1, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -296,7 +252,7 @@
 
     const-string v3, "android:changeTransform:parent"
 
-    invoke-interface {v1, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     new-instance v1, Landroidx/transition/ChangeTransform$e;
@@ -304,11 +260,11 @@
     invoke-direct {v1, v0}, Landroidx/transition/ChangeTransform$e;-><init>(Landroid/view/View;)V
 
     .line 5
-    iget-object v2, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object v2, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v3, "android:changeTransform:transforms"
 
-    invoke-interface {v2, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v3, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     invoke-virtual {v0}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
@@ -340,14 +296,14 @@
 
     .line 9
     :goto_1
-    iget-object v1, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v3, "android:changeTransform:matrix"
 
-    invoke-interface {v1, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
-    iget-boolean v1, p0, Landroidx/transition/ChangeTransform;->F:Z
+    iget-boolean v1, p0, Landroidx/transition/ChangeTransform;->E:Z
 
     if-eqz v1, :cond_3
 
@@ -364,12 +320,10 @@
     check-cast v2, Landroid/view/ViewGroup;
 
     .line 13
-    sget-object v3, Lv0/x;->a:Lv0/d0;
-
-    invoke-virtual {v3, v2, v1}, Lv0/d0;->h(Landroid/view/View;Landroid/graphics/Matrix;)V
+    invoke-static {v2, v1}, Lv0/x;->e(Landroid/view/View;Landroid/graphics/Matrix;)V
 
     .line 14
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getScrollX()I
+    invoke-virtual {v2}, Landroid/view/View;->getScrollX()I
 
     move-result v3
 
@@ -377,7 +331,7 @@
 
     int-to-float v3, v3
 
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getScrollY()I
+    invoke-virtual {v2}, Landroid/view/View;->getScrollY()I
 
     move-result v2
 
@@ -388,14 +342,14 @@
     invoke-virtual {v1, v3, v2}, Landroid/graphics/Matrix;->preTranslate(FF)Z
 
     .line 15
-    iget-object v2, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object v2, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v3, "android:changeTransform:parentMatrix"
 
-    invoke-interface {v2, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v3, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 16
-    iget-object v1, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     sget v2, Landroidx/transition/R$id;->transition_transform:I
 
@@ -407,10 +361,10 @@
     const-string v3, "android:changeTransform:intermediateMatrix"
 
     .line 18
-    invoke-interface {v1, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19
-    iget-object p1, p1, Lv0/s;->a:Ljava/util/Map;
+    iget-object p1, p1, Lv0/s;->a:Ljava/util/HashMap;
 
     sget v1, Landroidx/transition/R$id;->parent_matrix:I
 
@@ -422,29 +376,28 @@
     const-string v1, "android:changeTransform:intermediateParentMatrix"
 
     .line 21
-    invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_3
     return-void
 .end method
 
-.method public d(Lv0/s;)V
+.method public final d(Lv0/s;)V
     .locals 0
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeTransform;->J(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeTransform;->L(Lv0/s;)V
 
     return-void
 .end method
 
-.method public g(Lv0/s;)V
+.method public final g(Lv0/s;)V
     .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeTransform;->J(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeTransform;->L(Lv0/s;)V
 
     .line 2
-    sget-boolean v0, Landroidx/transition/ChangeTransform;->K:Z
+    sget-boolean v0, Landroidx/transition/ChangeTransform;->J:Z
 
     if-nez v0, :cond_0
 
@@ -465,8 +418,8 @@
     return-void
 .end method
 
-.method public l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
-    .locals 24
+.method public final l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+    .locals 27
 
     move-object/from16 v8, p0
 
@@ -476,38 +429,38 @@
 
     move-object/from16 v10, p3
 
-    if-eqz v9, :cond_2b
+    if-eqz v9, :cond_1a
 
-    if-eqz v10, :cond_2b
+    if-eqz v10, :cond_1a
 
     .line 1
-    iget-object v1, v9, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, v9, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v12, "android:changeTransform:parent"
 
     .line 2
-    invoke-interface {v1, v12}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v12}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_2b
+    if-eqz v1, :cond_1a
 
-    iget-object v1, v10, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, v10, Lv0/s;->a:Ljava/util/HashMap;
 
     .line 3
-    invoke-interface {v1, v12}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v12}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    goto/16 :goto_1c
+    goto/16 :goto_c
 
     .line 4
     :cond_0
-    iget-object v1, v9, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, v9, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v1, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -516,16 +469,16 @@
     check-cast v13, Landroid/view/ViewGroup;
 
     .line 5
-    iget-object v1, v10, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, v10, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v1, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/view/ViewGroup;
 
     .line 6
-    iget-boolean v2, v8, Landroidx/transition/ChangeTransform;->F:Z
+    iget-boolean v2, v8, Landroidx/transition/ChangeTransform;->E:Z
 
     const/4 v15, 0x1
 
@@ -585,11 +538,11 @@
 
     .line 10
     :goto_3
-    iget-object v1, v9, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, v9, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v2, "android:changeTransform:intermediateMatrix"
 
-    invoke-interface {v1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -600,18 +553,18 @@
     if-eqz v1, :cond_5
 
     .line 11
-    iget-object v3, v9, Lv0/s;->a:Ljava/util/Map;
+    iget-object v3, v9, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v3, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 12
     :cond_5
-    iget-object v1, v9, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, v9, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v3, "android:changeTransform:intermediateParentMatrix"
 
     .line 13
-    invoke-interface {v1, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -622,17 +575,17 @@
     if-eqz v1, :cond_6
 
     .line 14
-    iget-object v3, v9, Lv0/s;->a:Ljava/util/Map;
+    iget-object v3, v9, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v3, v7, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v7, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_6
     if-eqz v16, :cond_8
 
     .line 15
-    iget-object v1, v10, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, v10, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v1, v7}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v7}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -646,7 +599,7 @@
     invoke-virtual {v3, v4, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 17
-    iget-object v3, v8, Landroidx/transition/ChangeTransform;->G:Landroid/graphics/Matrix;
+    iget-object v3, v8, Landroidx/transition/ChangeTransform;->F:Landroid/graphics/Matrix;
 
     .line 18
     invoke-virtual {v3}, Landroid/graphics/Matrix;->reset()V
@@ -655,9 +608,9 @@
     invoke-virtual {v1, v3}, Landroid/graphics/Matrix;->invert(Landroid/graphics/Matrix;)Z
 
     .line 20
-    iget-object v1, v9, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, v9, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -671,15 +624,15 @@
     invoke-direct {v1}, Landroid/graphics/Matrix;-><init>()V
 
     .line 22
-    iget-object v4, v9, Lv0/s;->a:Ljava/util/Map;
+    iget-object v4, v9, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v4, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 23
     :cond_7
-    iget-object v4, v9, Lv0/s;->a:Ljava/util/Map;
+    iget-object v4, v9, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v4, v7}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v7}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -693,18 +646,18 @@
 
     .line 26
     :cond_8
-    iget-object v1, v9, Lv0/s;->a:Ljava/util/Map;
+    iget-object v1, v9, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/graphics/Matrix;
 
     .line 27
-    iget-object v3, v10, Lv0/s;->a:Ljava/util/Map;
+    iget-object v3, v10, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -713,13 +666,13 @@
     if-nez v1, :cond_9
 
     .line 28
-    sget-object v1, Lv0/i;->a:Landroid/graphics/Matrix;
+    sget-object v1, Lv0/i;->a:Lv0/i$a;
 
     :cond_9
     if-nez v2, :cond_a
 
     .line 29
-    sget-object v2, Lv0/i;->a:Landroid/graphics/Matrix;
+    sget-object v2, Lv0/i;->a:Lv0/i$a;
 
     :cond_a
     move-object v4, v2
@@ -733,13 +686,11 @@
 
     if-eqz v2, :cond_b
 
-    move-object/from16 v21, v12
-
     move-object/from16 v17, v13
 
-    const/4 v12, 0x2
-
     const/4 v14, 0x0
+
+    const/16 v21, 0x2
 
     move-object v13, v7
 
@@ -747,11 +698,11 @@
 
     .line 31
     :cond_b
-    iget-object v2, v10, Lv0/s;->a:Ljava/util/Map;
+    iget-object v2, v10, Lv0/s;->a:Ljava/util/HashMap;
 
     const-string v3, "android:changeTransform:transforms"
 
-    invoke-interface {v2, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -762,8 +713,26 @@
     .line 32
     iget-object v5, v10, Lv0/s;->b:Landroid/view/View;
 
+    const/16 v19, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    const/high16 v22, 0x3f800000    # 1.0f
+
+    const/high16 v23, 0x3f800000    # 1.0f
+
+    const/16 v24, 0x0
+
+    const/16 v25, 0x0
+
+    const/16 v26, 0x0
+
+    move-object/from16 v18, v5
+
     .line 33
-    invoke-static {v5}, Landroidx/transition/ChangeTransform;->K(Landroid/view/View;)V
+    invoke-static/range {v18 .. v26}, Landroidx/transition/ChangeTransform;->M(Landroid/view/View;FFFFFFFF)V
 
     const/16 v2, 0x9
 
@@ -783,7 +752,7 @@
     invoke-direct {v11, v5, v3}, Landroidx/transition/ChangeTransform$d;-><init>(Landroid/view/View;[F)V
 
     .line 37
-    sget-object v15, Landroidx/transition/ChangeTransform;->I:Landroid/util/Property;
+    sget-object v15, Landroidx/transition/ChangeTransform;->H:Landroidx/transition/ChangeTransform$a;
 
     new-instance v14, Lv0/c;
 
@@ -806,9 +775,8 @@
     move-result-object v2
 
     .line 38
-    iget-object v14, v8, Landroidx/transition/Transition;->A:Landroidx/transition/PathMotion;
+    iget-object v14, v8, Landroidx/transition/Transition;->z:Landroidx/transition/PathMotion;
 
-    .line 39
     aget v15, v3, v6
 
     const/16 v21, 0x5
@@ -821,12 +789,13 @@
 
     aget v1, v1, v21
 
+    .line 39
     invoke-virtual {v14, v15, v3, v7, v1}, Landroidx/transition/PathMotion;->a(FFFF)Landroid/graphics/Path;
 
     move-result-object v1
 
     .line 40
-    sget-object v3, Landroidx/transition/ChangeTransform;->J:Landroid/util/Property;
+    sget-object v3, Landroidx/transition/ChangeTransform;->I:Landroidx/transition/ChangeTransform$b;
 
     invoke-static {v3, v1}, Lv0/l;->a(Landroid/util/Property;Landroid/graphics/Path;)Landroid/animation/PropertyValuesHolder;
 
@@ -856,45 +825,41 @@
 
     move/from16 v3, v16
 
-    const/4 v7, 0x2
+    const/16 v21, 0x2
 
     move-object/from16 v6, v17
-
-    move-object/from16 v21, v12
 
     move-object/from16 v17, v13
 
     move-object/from16 v13, v22
-
-    const/4 v12, 0x2
 
     move-object v7, v11
 
     invoke-direct/range {v1 .. v7}, Landroidx/transition/b;-><init>(Landroidx/transition/ChangeTransform;ZLandroid/graphics/Matrix;Landroid/view/View;Landroidx/transition/ChangeTransform$e;Landroidx/transition/ChangeTransform$d;)V
 
     .line 43
-    invoke-virtual {v14, v15}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {v14, v15}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 44
     invoke-static {v14, v15}, Landroidx/transition/a;->a(Landroid/animation/Animator;Landroid/animation/AnimatorListenerAdapter;)V
 
     :goto_4
-    if-eqz v16, :cond_29
+    if-eqz v16, :cond_18
 
-    if-eqz v14, :cond_29
+    if-eqz v14, :cond_18
 
     .line 45
-    iget-boolean v1, v8, Landroidx/transition/ChangeTransform;->E:Z
+    iget-boolean v1, v8, Landroidx/transition/ChangeTransform;->D:Z
 
-    if-eqz v1, :cond_29
+    if-eqz v1, :cond_18
 
     .line 46
     iget-object v1, v10, Lv0/s;->b:Landroid/view/View;
 
     .line 47
-    iget-object v2, v10, Lv0/s;->a:Ljava/util/Map;
+    iget-object v2, v10, Lv0/s;->a:Ljava/util/HashMap;
 
-    invoke-interface {v2, v13}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v13}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -906,9 +871,7 @@
     invoke-direct {v3, v2}, Landroid/graphics/Matrix;-><init>(Landroid/graphics/Matrix;)V
 
     .line 49
-    sget-object v2, Lv0/x;->a:Lv0/d0;
-
-    invoke-virtual {v2, v0, v3}, Lv0/d0;->i(Landroid/view/View;Landroid/graphics/Matrix;)V
+    invoke-static {v0, v3}, Lv0/x;->f(Landroid/view/View;Landroid/graphics/Matrix;)V
 
     .line 50
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -918,7 +881,7 @@
     if-ne v2, v4, :cond_f
 
     .line 51
-    sget-boolean v2, Lv0/f;->l:Z
+    sget-boolean v2, Lv0/f;->k:Z
 
     const/4 v4, 0x3
 
@@ -926,7 +889,7 @@
 
     .line 52
     :try_start_0
-    sget-boolean v2, Lv0/f;->j:Z
+    sget-boolean v2, Lv0/f;->i:Z
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
 
@@ -940,7 +903,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lv0/f;->i:Ljava/lang/Class;
+    sput-object v2, Lv0/f;->h:Ljava/lang/Class;
     :try_end_1
     .catch Ljava/lang/ClassNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_1
@@ -950,14 +913,14 @@
 
     .line 54
     :try_start_2
-    sput-boolean v2, Lv0/f;->j:Z
+    sput-boolean v2, Lv0/f;->i:Z
     :try_end_2
     .catch Ljava/lang/NoSuchMethodException; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 55
     :cond_c
     :try_start_3
-    sget-object v2, Lv0/f;->i:Ljava/lang/Class;
+    sget-object v2, Lv0/f;->h:Ljava/lang/Class;
 
     const-string v5, "addGhost"
 
@@ -977,16 +940,16 @@
 
     const-class v7, Landroid/graphics/Matrix;
 
-    aput-object v7, v6, v12
+    aput-object v7, v6, v21
 
     invoke-virtual {v2, v5, v6}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v2
 
-    sput-object v2, Lv0/f;->k:Ljava/lang/reflect/Method;
+    sput-object v2, Lv0/f;->j:Ljava/lang/reflect/Method;
 
     .line 56
-    invoke-virtual {v2, v11}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v2, v11}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_3
     .catch Ljava/lang/NoSuchMethodException; {:try_start_3 .. :try_end_3} :catch_1
 
@@ -995,7 +958,7 @@
 
     .line 57
     :catch_2
-    sput-boolean v2, Lv0/f;->l:Z
+    sput-boolean v2, Lv0/f;->k:Z
 
     goto :goto_5
 
@@ -1004,7 +967,7 @@
 
     .line 58
     :goto_5
-    sget-object v5, Lv0/f;->k:Ljava/lang/reflect/Method;
+    sget-object v5, Lv0/f;->j:Ljava/lang/reflect/Method;
 
     if-eqz v5, :cond_e
 
@@ -1020,7 +983,7 @@
 
     aput-object v0, v4, v2
 
-    aput-object v3, v4, v12
+    aput-object v3, v4, v21
 
     const/4 v0, 0x0
 
@@ -1038,7 +1001,7 @@
 
     move-object v11, v6
 
-    goto :goto_6
+    goto/16 :goto_9
 
     :catch_3
     move-exception v0
@@ -1058,16 +1021,13 @@
     :cond_e
     const/4 v11, 0x0
 
-    :goto_6
-    move-object/from16 v23, v1
+    goto/16 :goto_9
 
-    move-object/from16 v22, v14
-
-    goto/16 :goto_19
+    :cond_f
+    const/4 v7, 0x0
 
     .line 62
-    :cond_f
-    sget v2, Lv0/g;->m:I
+    sget v2, Lv0/g;->l:I
 
     .line 63
     invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -1076,15 +1036,15 @@
 
     instance-of v2, v2, Landroid/view/ViewGroup;
 
-    if-eqz v2, :cond_28
+    if-eqz v2, :cond_17
 
     .line 64
-    sget v2, Lv0/e;->i:I
+    sget v2, Lv0/e;->h:I
 
     .line 65
     sget v2, Landroidx/transition/R$id;->ghost_view_holder:I
 
-    invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->getTag(I)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -1102,7 +1062,7 @@
     if-eqz v4, :cond_10
 
     .line 67
-    invoke-virtual {v4}, Landroid/view/ViewGroup;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v4}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v5
 
@@ -1111,22 +1071,22 @@
     if-eq v5, v2, :cond_10
 
     .line 68
-    iget v6, v4, Lv0/g;->j:I
+    iget v6, v4, Lv0/g;->i:I
 
     .line 69
-    invoke-virtual {v5, v4}, Landroid/widget/FrameLayout;->removeView(Landroid/view/View;)V
+    invoke-virtual {v5, v4}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     const/4 v11, 0x0
 
-    goto :goto_7
+    goto :goto_6
 
     :cond_10
     move-object v11, v4
 
     const/4 v6, 0x0
 
-    :goto_7
-    if-nez v11, :cond_24
+    :goto_6
+    if-nez v11, :cond_13
 
     .line 70
     new-instance v4, Lv0/g;
@@ -1134,7 +1094,7 @@
     invoke-direct {v4, v1}, Lv0/g;-><init>(Landroid/view/View;)V
 
     .line 71
-    iput-object v3, v4, Lv0/g;->k:Landroid/graphics/Matrix;
+    iput-object v3, v4, Lv0/g;->j:Landroid/graphics/Matrix;
 
     if-nez v2, :cond_11
 
@@ -1143,554 +1103,55 @@
 
     invoke-direct {v2, v0}, Lv0/e;-><init>(Landroid/view/ViewGroup;)V
 
-    goto :goto_8
+    goto :goto_7
 
     .line 73
     :cond_11
-    iget-boolean v3, v2, Lv0/e;->h:Z
+    iget-boolean v3, v2, Lv0/e;->g:Z
 
-    if-eqz v3, :cond_23
+    if-eqz v3, :cond_12
 
     .line 74
-    iget-object v3, v2, Lv0/e;->g:Landroid/view/ViewGroup;
+    iget-object v3, v2, Lv0/e;->f:Landroid/view/ViewGroup;
 
     .line 75
-    invoke-virtual {v3}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
+    new-instance v5, Lv0/u;
 
-    move-result-object v3
+    invoke-direct {v5, v3}, Lv0/u;-><init>(Landroid/view/ViewGroup;)V
 
     .line 76
-    invoke-virtual {v3, v2}, Landroid/view/ViewGroupOverlay;->remove(Landroid/view/View;)V
+    invoke-virtual {v5, v2}, Lv0/u;->c(Landroid/view/View;)V
 
     .line 77
-    iget-object v3, v2, Lv0/e;->g:Landroid/view/ViewGroup;
+    iget-object v3, v2, Lv0/e;->f:Landroid/view/ViewGroup;
 
     .line 78
-    invoke-virtual {v3}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
+    new-instance v5, Lv0/u;
 
-    move-result-object v3
+    invoke-direct {v5, v3}, Lv0/u;-><init>(Landroid/view/ViewGroup;)V
 
     .line 79
-    invoke-virtual {v3, v2}, Landroid/view/ViewGroupOverlay;->add(Landroid/view/View;)V
+    invoke-virtual {v5, v2}, Lv0/u;->b(Landroid/view/View;)V
 
     .line 80
-    :goto_8
+    :goto_7
     invoke-static {v0, v2}, Lv0/g;->b(Landroid/view/View;Landroid/view/View;)V
 
     .line 81
     invoke-static {v0, v4}, Lv0/g;->b(Landroid/view/View;Landroid/view/View;)V
 
     .line 82
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-virtual {v2, v4}, Lv0/e;->a(Lv0/g;)V
 
     .line 83
-    iget-object v3, v4, Lv0/g;->i:Landroid/view/View;
-
-    invoke-static {v3, v0}, Lv0/e;->a(Landroid/view/View;Ljava/util/ArrayList;)V
-
-    .line 84
-    new-instance v3, Ljava/util/ArrayList;
-
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
-
-    .line 85
-    invoke-virtual {v2}, Landroid/widget/FrameLayout;->getChildCount()I
-
-    move-result v5
-
-    const/4 v7, 0x1
-
-    sub-int/2addr v5, v7
-
-    const/4 v7, 0x0
-
-    :goto_9
-    if-gt v7, v5, :cond_20
-
-    add-int v11, v7, v5
-
-    .line 86
-    div-int/2addr v11, v12
-
-    .line 87
-    invoke-virtual {v2, v11}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v13
-
-    check-cast v13, Lv0/g;
-
-    .line 88
-    iget-object v13, v13, Lv0/g;->i:Landroid/view/View;
-
-    invoke-static {v13, v3}, Lv0/e;->a(Landroid/view/View;Ljava/util/ArrayList;)V
-
-    .line 89
-    invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
-
-    move-result v13
-
-    if-nez v13, :cond_1e
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->isEmpty()Z
-
-    move-result v13
-
-    if-nez v13, :cond_1e
-
-    const/4 v13, 0x0
-
-    .line 90
-    invoke-virtual {v0, v13}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v15
-
-    invoke-virtual {v3, v13}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v12
-
-    if-eq v15, v12, :cond_12
-
-    goto/16 :goto_11
-
-    .line 91
-    :cond_12
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v12
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
-
-    move-result v13
-
-    invoke-static {v12, v13}, Ljava/lang/Math;->min(II)I
-
-    move-result v12
-
-    const/4 v13, 0x1
-
-    :goto_a
-    if-ge v13, v12, :cond_1c
-
-    .line 92
-    invoke-virtual {v0, v13}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v15
-
-    check-cast v15, Landroid/view/View;
-
-    .line 93
-    invoke-virtual {v3, v13}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v17
-
-    move-object/from16 p1, v0
-
-    move-object/from16 v0, v17
-
-    check-cast v0, Landroid/view/View;
-
-    if-eq v15, v0, :cond_1b
-
-    .line 94
-    invoke-virtual {v15}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v12
-
-    check-cast v12, Landroid/view/ViewGroup;
-
-    .line 95
-    invoke-virtual {v12}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v13
-
-    move/from16 v17, v5
-
-    .line 96
-    sget v5, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v8, 0x15
-
-    if-lt v5, v8, :cond_14
-
-    .line 97
-    invoke-virtual {v15}, Landroid/view/View;->getZ()F
-
-    move-result v5
-
-    invoke-virtual {v0}, Landroid/view/View;->getZ()F
-
-    move-result v8
-
-    cmpl-float v5, v5, v8
-
-    if-eqz v5, :cond_14
-
-    .line 98
-    invoke-virtual {v15}, Landroid/view/View;->getZ()F
-
-    move-result v5
-
-    invoke-virtual {v0}, Landroid/view/View;->getZ()F
-
-    move-result v0
-
-    cmpl-float v0, v5, v0
-
-    if-lez v0, :cond_13
-
-    goto/16 :goto_f
-
-    :cond_13
-    move-object/from16 v23, v1
-
-    move-object/from16 v22, v14
-
-    const/4 v8, 0x2
-
-    const/16 v20, 0x0
-
-    goto/16 :goto_10
-
-    :cond_14
-    const/4 v5, 0x0
-
-    :goto_b
-    if-ge v5, v13, :cond_1a
-
-    .line 99
-    sget v8, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    move/from16 v18, v13
-
-    const/16 v13, 0x1d
-
-    if-lt v8, v13, :cond_15
-
-    .line 100
-    invoke-virtual {v12, v5}, Landroid/view/ViewGroup;->getChildDrawingOrder(I)I
-
-    move-result v8
-
-    move-object/from16 v23, v1
-
-    move v1, v8
-
-    move-object/from16 v22, v14
-
-    const/4 v8, 0x2
-
-    const/16 v20, 0x0
-
-    goto :goto_e
-
-    .line 101
-    :cond_15
-    sget-boolean v8, Lv0/w;->c:Z
-
-    if-nez v8, :cond_16
-
-    .line 102
-    :try_start_5
-    const-class v8, Landroid/view/ViewGroup;
-
-    const-string v13, "getChildDrawingOrder"
-    :try_end_5
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_5 .. :try_end_5} :catch_6
-
-    move-object/from16 v22, v14
-
-    const/4 v14, 0x2
-
-    :try_start_6
-    new-array v10, v14, [Ljava/lang/Class;
-
-    sget-object v14, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    const/16 v20, 0x0
-
-    aput-object v14, v10, v20
-    :try_end_6
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_6 .. :try_end_6} :catch_5
-
-    move-object/from16 v23, v1
-
-    const/4 v1, 0x1
-
-    :try_start_7
-    aput-object v14, v10, v1
-
-    invoke-virtual {v8, v13, v10}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v8
-
-    sput-object v8, Lv0/w;->b:Ljava/lang/reflect/Method;
-
-    .line 103
-    invoke-virtual {v8, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
-    :try_end_7
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_7 .. :try_end_7} :catch_7
-
-    goto :goto_c
-
-    :catch_5
-    move-object/from16 v23, v1
-
-    goto :goto_c
-
-    :catch_6
-    move-object/from16 v23, v1
-
-    move-object/from16 v22, v14
-
-    :goto_c
-    const/4 v1, 0x1
-
-    .line 104
-    :catch_7
-    sput-boolean v1, Lv0/w;->c:Z
-
-    goto :goto_d
-
-    :cond_16
-    move-object/from16 v23, v1
-
-    move-object/from16 v22, v14
-
-    .line 105
-    :goto_d
-    sget-object v1, Lv0/w;->b:Ljava/lang/reflect/Method;
-
-    if-eqz v1, :cond_17
-
-    const/4 v8, 0x2
-
-    :try_start_8
-    new-array v10, v8, [Ljava/lang/Object;
-
-    .line 106
-    invoke-virtual {v12}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v13
-
-    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v13
-    :try_end_8
-    .catch Ljava/lang/IllegalAccessException; {:try_start_8 .. :try_end_8} :catch_8
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_8 .. :try_end_8} :catch_8
-
-    const/16 v20, 0x0
-
-    :try_start_9
-    aput-object v13, v10, v20
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v13
-
-    const/4 v14, 0x1
-
-    aput-object v13, v10, v14
-
-    .line 107
-    invoke-virtual {v1, v12, v10}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Integer;
-
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    move-result v1
-    :try_end_9
-    .catch Ljava/lang/IllegalAccessException; {:try_start_9 .. :try_end_9} :catch_9
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_9 .. :try_end_9} :catch_9
-
-    goto :goto_e
-
-    :cond_17
-    const/4 v8, 0x2
-
-    :catch_8
-    const/16 v20, 0x0
-
-    :catch_9
-    move v1, v5
-
-    .line 108
-    :goto_e
-    invoke-virtual {v12, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v1
-
-    if-ne v1, v15, :cond_18
-
-    goto :goto_10
-
-    :cond_18
-    if-ne v1, v0, :cond_19
-
-    goto :goto_13
-
-    :cond_19
-    add-int/lit8 v5, v5, 0x1
-
-    move-object/from16 v10, p3
-
-    move/from16 v13, v18
-
-    move-object/from16 v14, v22
-
-    move-object/from16 v1, v23
-
-    goto/16 :goto_b
-
-    :cond_1a
-    :goto_f
-    move-object/from16 v23, v1
-
-    goto :goto_12
-
-    :cond_1b
-    move-object/from16 v23, v1
-
-    move/from16 v17, v5
-
-    move-object/from16 v22, v14
-
-    const/4 v8, 0x2
-
-    const/16 v20, 0x0
-
-    add-int/lit8 v13, v13, 0x1
-
-    move-object/from16 v8, p0
-
-    move-object/from16 v0, p1
-
-    move-object/from16 v10, p3
-
-    goto/16 :goto_a
-
-    :cond_1c
-    move-object/from16 p1, v0
-
-    move-object/from16 v23, v1
-
-    move/from16 v17, v5
-
-    move-object/from16 v22, v14
-
-    const/4 v8, 0x2
-
-    const/16 v20, 0x0
-
-    .line 109
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    if-ne v0, v12, :cond_1d
-
-    goto :goto_13
-
-    :cond_1d
-    :goto_10
-    const/4 v0, 0x0
-
-    goto :goto_14
-
-    :cond_1e
-    :goto_11
-    move-object/from16 p1, v0
-
-    move-object/from16 v23, v1
-
-    move/from16 v17, v5
-
-    :goto_12
-    move-object/from16 v22, v14
-
-    const/4 v8, 0x2
-
-    const/16 v20, 0x0
-
-    :goto_13
-    const/4 v0, 0x1
-
-    :goto_14
-    if-eqz v0, :cond_1f
-
-    add-int/lit8 v11, v11, 0x1
-
-    move v7, v11
-
-    move/from16 v5, v17
-
-    goto :goto_15
-
-    :cond_1f
-    add-int/lit8 v11, v11, -0x1
-
-    move v5, v11
-
-    .line 110
-    :goto_15
-    invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
-
-    move-object/from16 v8, p0
-
-    move-object/from16 v0, p1
-
-    move-object/from16 v10, p3
-
-    move-object/from16 v14, v22
-
-    move-object/from16 v1, v23
-
-    const/4 v12, 0x2
-
-    goto/16 :goto_9
-
-    :cond_20
-    move-object/from16 v23, v1
-
-    move-object/from16 v22, v14
-
-    if-ltz v7, :cond_22
-
-    .line 111
-    invoke-virtual {v2}, Landroid/widget/FrameLayout;->getChildCount()I
-
-    move-result v0
-
-    if-lt v7, v0, :cond_21
-
-    goto :goto_16
-
-    .line 112
-    :cond_21
-    invoke-virtual {v2, v4, v7}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;I)V
-
-    goto :goto_17
-
-    .line 113
-    :cond_22
-    :goto_16
-    invoke-virtual {v2, v4}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
-
-    .line 114
-    :goto_17
-    iput v6, v4, Lv0/g;->j:I
+    iput v6, v4, Lv0/g;->i:I
 
     move-object v11, v4
 
-    goto :goto_18
+    goto :goto_8
 
-    .line 115
-    :cond_23
+    .line 84
+    :cond_12
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "This GhostViewHolder is detached!"
@@ -1699,101 +1160,87 @@
 
     throw v0
 
-    :cond_24
-    move-object/from16 v23, v1
+    .line 85
+    :cond_13
+    iput-object v3, v11, Lv0/g;->j:Landroid/graphics/Matrix;
 
-    move-object/from16 v22, v14
+    .line 86
+    :goto_8
+    iget v0, v11, Lv0/g;->i:I
 
-    .line 116
-    iput-object v3, v11, Lv0/g;->k:Landroid/graphics/Matrix;
+    const/4 v2, 0x1
 
-    .line 117
-    :goto_18
-    iget v0, v11, Lv0/g;->j:I
+    add-int/2addr v0, v2
 
-    const/4 v1, 0x1
+    iput v0, v11, Lv0/g;->i:I
 
-    add-int/2addr v0, v1
+    :goto_9
+    if-nez v11, :cond_14
 
-    iput v0, v11, Lv0/g;->j:I
+    goto :goto_b
 
-    :goto_19
-    if-nez v11, :cond_25
+    .line 87
+    :cond_14
+    iget-object v0, v9, Lv0/s;->a:Ljava/util/HashMap;
 
-    goto :goto_1b
-
-    .line 118
-    :cond_25
-    iget-object v0, v9, Lv0/s;->a:Ljava/util/Map;
-
-    move-object/from16 v1, v21
-
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v12}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iget-object v1, v9, Lv0/s;->b:Landroid/view/View;
+    iget-object v2, v9, Lv0/s;->b:Landroid/view/View;
 
-    invoke-interface {v11, v0, v1}, Lv0/d;->a(Landroid/view/ViewGroup;Landroid/view/View;)V
+    invoke-interface {v11, v0, v2}, Lv0/d;->a(Landroid/view/ViewGroup;Landroid/view/View;)V
 
-    move-object/from16 v0, p0
+    move-object v0, v8
 
-    .line 119
-    :goto_1a
-    iget-object v1, v0, Landroidx/transition/Transition;->o:Landroidx/transition/TransitionSet;
+    .line 88
+    :goto_a
+    iget-object v2, v0, Landroidx/transition/Transition;->n:Landroidx/transition/TransitionSet;
 
-    if-eqz v1, :cond_26
+    if-eqz v2, :cond_15
 
-    move-object v0, v1
+    move-object v0, v2
 
-    goto :goto_1a
+    goto :goto_a
 
-    .line 120
-    :cond_26
-    new-instance v1, Landroidx/transition/ChangeTransform$c;
+    .line 89
+    :cond_15
+    new-instance v2, Landroidx/transition/ChangeTransform$c;
 
-    move-object/from16 v2, v23
+    invoke-direct {v2, v1, v11}, Landroidx/transition/ChangeTransform$c;-><init>(Landroid/view/View;Lv0/d;)V
 
-    invoke-direct {v1, v2, v11}, Landroidx/transition/ChangeTransform$c;-><init>(Landroid/view/View;Lv0/d;)V
+    .line 90
+    invoke-virtual {v0, v2}, Landroidx/transition/Transition;->a(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
-    .line 121
-    invoke-virtual {v0, v1}, Landroidx/transition/Transition;->a(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    .line 91
+    sget-boolean v0, Landroidx/transition/ChangeTransform;->J:Z
 
-    .line 122
-    sget-boolean v0, Landroidx/transition/ChangeTransform;->K:Z
+    if-eqz v0, :cond_19
 
-    if-eqz v0, :cond_2a
-
-    .line 123
+    .line 92
     iget-object v0, v9, Lv0/s;->b:Landroid/view/View;
 
-    move-object/from16 v1, p3
+    iget-object v2, v10, Lv0/s;->b:Landroid/view/View;
 
-    iget-object v1, v1, Lv0/s;->b:Landroid/view/View;
+    if-eq v0, v2, :cond_16
 
-    if-eq v0, v1, :cond_27
+    const/4 v2, 0x0
 
-    const/4 v1, 0x0
+    .line 93
+    invoke-static {v0, v2}, Lv0/x;->c(Landroid/view/View;F)V
 
-    .line 124
-    sget-object v3, Lv0/x;->a:Lv0/d0;
-
-    invoke-virtual {v3, v0, v1}, Lv0/d0;->f(Landroid/view/View;F)V
-
-    :cond_27
+    :cond_16
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 125
-    sget-object v1, Lv0/x;->a:Lv0/d0;
+    .line 94
+    invoke-static {v1, v0}, Lv0/x;->c(Landroid/view/View;F)V
 
-    invoke-virtual {v1, v2, v0}, Lv0/d0;->f(Landroid/view/View;F)V
+    goto :goto_b
 
-    goto :goto_1b
-
-    .line 126
-    :cond_28
+    .line 95
+    :cond_17
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Ghosted views must be parented by a ViewGroup"
@@ -1802,37 +1249,34 @@
 
     throw v0
 
-    :cond_29
-    move-object/from16 v22, v14
+    .line 96
+    :cond_18
+    sget-boolean v0, Landroidx/transition/ChangeTransform;->J:Z
 
-    .line 127
-    sget-boolean v0, Landroidx/transition/ChangeTransform;->K:Z
+    if-nez v0, :cond_19
 
-    if-nez v0, :cond_2a
-
-    .line 128
+    .line 97
     iget-object v0, v9, Lv0/s;->b:Landroid/view/View;
 
     move-object/from16 v1, v17
 
     invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
 
-    :cond_2a
-    :goto_1b
-    return-object v22
+    :cond_19
+    :goto_b
+    return-object v14
 
-    :cond_2b
-    :goto_1c
+    :cond_1a
+    :goto_c
     const/4 v0, 0x0
 
     return-object v0
 .end method
 
-.method public r()[Ljava/lang/String;
+.method public final r()[Ljava/lang/String;
     .locals 1
 
-    .line 1
-    sget-object v0, Landroidx/transition/ChangeTransform;->H:[Ljava/lang/String;
+    sget-object v0, Landroidx/transition/ChangeTransform;->G:[Ljava/lang/String;
 
     return-object v0
 .end method

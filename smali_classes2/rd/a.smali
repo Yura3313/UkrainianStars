@@ -1,26 +1,29 @@
 .class public final Lrd/a;
-.super Lle/j;
-.source "TokenLoginConfirmPageFragment.kt"
+.super Lse/h;
+.source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lrd/e;",
-        "Ljava/lang/String;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/p<",
+        "Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;",
+        "Ljava/util/List<",
+        "+",
+        "Lvc/c;",
+        ">;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lrd/a;
+.field public static final f:Lrd/a;
 
 
 # direct methods
@@ -31,7 +34,7 @@
 
     invoke-direct {v0}, Lrd/a;-><init>()V
 
-    sput-object v0, Lrd/a;->g:Lrd/a;
+    sput-object v0, Lrd/a;->f:Lrd/a;
 
     return-void
 .end method
@@ -41,54 +44,62 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    check-cast p1, Lrd/e;
+    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    check-cast p2, Ljava/lang/String;
+    check-cast p2, Ljava/util/List;
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
+    const-string v0, "$receiver"
 
     .line 2
-    invoke-virtual {p1}, Lrd/f;->f1()Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object p1
+    const-string v0, "it"
 
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->s1()V
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    :cond_0
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "it"
+    iget-object v0, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
 
     .line 4
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
-    throw v0
+    move-result v0
 
-    :cond_2
-    const-string p1, "$receiver"
+    if-eqz v0, :cond_0
 
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    invoke-interface {p2}, Ljava/util/Collection;->isEmpty()Z
 
-    throw v0
+    move-result v0
+
+    const/4 v1, 0x1
+
+    xor-int/2addr v0, v1
+
+    if-eqz v0, :cond_0
+
+    .line 5
+    iput-object p2, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
+
+    .line 6
+    invoke-virtual {p1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->i1()V
+
+    .line 7
+    invoke-virtual {p1, v1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h1(Z)V
+
+    .line 8
+    :cond_0
+    sget-object p1, Lie/h;->a:Lie/h;
+
+    return-object p1
 .end method

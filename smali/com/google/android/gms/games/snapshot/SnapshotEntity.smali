@@ -25,19 +25,18 @@
 
 
 # instance fields
-.field public final g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+.field public final f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
-.field public final h:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
+.field public final g:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lf3/b;
+    new-instance v0, Lg3/b;
 
-    invoke-direct {v0}, Lf3/b;-><init>()V
+    invoke-direct {v0}, Lg3/b;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -55,10 +54,10 @@
 
     invoke-direct {v0, p1}, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;-><init>(Lcom/google/android/gms/games/snapshot/SnapshotMetadata;)V
 
-    iput-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+    iput-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->h:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
+    iput-object p2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
 
     return-void
 .end method
@@ -89,25 +88,25 @@
     move-result-object v1
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
     .line 5
-    invoke-static {v1, v2}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 6
-    invoke-interface {p1}, Lcom/google/android/gms/games/snapshot/Snapshot;->u2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
+    invoke-interface {p1}, Lcom/google/android/gms/games/snapshot/Snapshot;->y2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->u2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
+    invoke-virtual {p0}, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->y2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
 
     move-result-object v1
 
-    invoke-static {p1, v1}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -124,8 +123,7 @@
 .method public final getMetadata()Lcom/google/android/gms/games/snapshot/SnapshotMetadata;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+    iget-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
     return-object v0
 .end method
@@ -138,7 +136,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+    iget-object v1, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
     const/4 v2, 0x0
 
@@ -147,7 +145,7 @@
     const/4 v1, 0x1
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->u2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
+    invoke-virtual {p0}, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->y2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
 
     move-result-object v2
 
@@ -165,22 +163,20 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lc2/f$a;
+    new-instance v0, Ld2/f$a;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lc2/f$a;-><init>(Ljava/lang/Object;Lc2/n0;)V
+    invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+    iget-object v1, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
     const-string v2, "Metadata"
 
     .line 3
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 4
-    invoke-virtual {p0}, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->u2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
+    invoke-virtual {p0}, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->y2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
 
     move-result-object v1
 
@@ -200,24 +196,60 @@
 
     const-string v2, "HasContents"
 
-    invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
+    invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 5
-    invoke-virtual {v0}, Lc2/f$a;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ld2/f$a;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final u2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 4
+
+    const/16 v0, 0x4f45
+
+    .line 1
+    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    .line 2
+    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+
+    const/4 v3, 0x0
+
+    .line 3
+    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+
+    const/4 v1, 0x3
+
+    .line 4
+    invoke-virtual {p0}, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->y2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
+
+    move-result-object v2
+
+    .line 5
+    invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+
+    .line 6
+    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public final y2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->h:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
+    iget-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
 
     .line 2
-    iget-object v1, v0, Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;->g:Lcom/google/android/gms/drive/Contents;
+    iget-object v1, v0, Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;->f:Lcom/google/android/gms/drive/Contents;
 
     if-nez v1, :cond_0
 
@@ -235,40 +267,4 @@
 
     :cond_1
     return-object v0
-.end method
-
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 4
-
-    const/16 v0, 0x4f45
-
-    .line 1
-    invoke-static {p1, v0}, Ld2/b;->r(Landroid/os/Parcel;I)I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    .line 2
-    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
-
-    const/4 v3, 0x0
-
-    .line 3
-    invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
-
-    const/4 v1, 0x3
-
-    .line 4
-    invoke-virtual {p0}, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->u2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
-
-    move-result-object v2
-
-    .line 5
-    invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
-
-    .line 6
-    invoke-static {p1, v0}, Ld2/b;->u(Landroid/os/Parcel;I)V
-
-    return-void
 .end method

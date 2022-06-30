@@ -1,49 +1,496 @@
 .class public La2/a;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-base@@17.5.0"
+.source "com.google.android.gms:play-services-basement@@17.5.0"
+
+
+# static fields
+.field public static final a:[Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 0
+.method static synthetic constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    sput-object v0, La2/a;->a:[Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public static final a(Lke/p;Ljava/lang/Object;Lde/d;)V
-    .locals 0
+.method public static a(I)Ljava/lang/String;
+    .locals 2
+
+    packed-switch p0, :pswitch_data_0
+
+    :pswitch_0
+    const/16 v0, 0x20
+
+    const-string v1, "unknown status code: "
 
     .line 1
-    :try_start_0
-    invoke-static {p0, p1, p2}, Lee/d;->a(Lke/p;Ljava/lang/Object;Lde/d;)Lde/d;
+    invoke-static {v0, v1, p0}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-static {p0}, Lee/d;->e(Lde/d;)Lde/d;
+    return-object p0
+
+    :pswitch_1
+    const-string p0, "RECONNECTION_TIMED_OUT"
+
+    return-object p0
+
+    :pswitch_2
+    const-string p0, "RECONNECTION_TIMED_OUT_DURING_UPDATE"
+
+    return-object p0
+
+    :pswitch_3
+    const-string p0, "CONNECTION_SUSPENDED_DURING_CALL"
+
+    return-object p0
+
+    :pswitch_4
+    const-string p0, "REMOTE_EXCEPTION"
+
+    return-object p0
+
+    :pswitch_5
+    const-string p0, "DEAD_CLIENT"
+
+    return-object p0
+
+    :pswitch_6
+    const-string p0, "API_NOT_CONNECTED"
+
+    return-object p0
+
+    :pswitch_7
+    const-string p0, "CANCELED"
+
+    return-object p0
+
+    :pswitch_8
+    const-string p0, "TIMEOUT"
+
+    return-object p0
+
+    :pswitch_9
+    const-string p0, "INTERRUPTED"
+
+    return-object p0
+
+    :pswitch_a
+    const-string p0, "ERROR"
+
+    return-object p0
+
+    :pswitch_b
+    const-string p0, "DEVELOPER_ERROR"
+
+    return-object p0
+
+    :pswitch_c
+    const-string p0, "INTERNAL_ERROR"
+
+    return-object p0
+
+    :pswitch_d
+    const-string p0, "NETWORK_ERROR"
+
+    return-object p0
+
+    :pswitch_e
+    const-string p0, "RESOLUTION_REQUIRED"
+
+    return-object p0
+
+    :pswitch_f
+    const-string p0, "INVALID_ACCOUNT"
+
+    return-object p0
+
+    :pswitch_10
+    const-string p0, "SIGN_IN_REQUIRED"
+
+    return-object p0
+
+    :pswitch_11
+    const-string p0, "SERVICE_DISABLED"
+
+    return-object p0
+
+    :pswitch_12
+    const-string p0, "SERVICE_VERSION_UPDATE_REQUIRED"
+
+    return-object p0
+
+    :pswitch_13
+    const-string p0, "SUCCESS"
+
+    return-object p0
+
+    :pswitch_14
+    const-string p0, "SUCCESS_CACHE"
+
+    return-object p0
+
+    :pswitch_data_0
+    .packed-switch -0x1
+        :pswitch_14
+        :pswitch_13
+        :pswitch_0
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_0
+        :pswitch_b
+        :pswitch_0
+        :pswitch_0
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+    .end packed-switch
+.end method
+
+.method public static final b(Ljava/util/Collection;)[Ljava/lang/Object;
+    .locals 4
+
+    const-string v0, "collection"
+
+    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-interface {p0}, Ljava/util/Collection;->size()I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 2
+    :goto_0
+    sget-object p0, La2/a;->a:[Ljava/lang/Object;
+
+    goto :goto_3
+
+    .line 3
+    :cond_0
+    invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    sget-object p1, Lae/i;->a:Lae/i;
+    .line 4
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
-    invoke-static {p0, p1}, Lse/j0;->b(Lde/d;Ljava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    move-result v1
+
+    if-nez v1, :cond_1
 
     goto :goto_0
 
-    :catchall_0
-    move-exception p0
+    .line 5
+    :cond_1
+    new-array v0, v0, [Ljava/lang/Object;
 
-    .line 2
-    invoke-static {p0}, Lcom/android/billingclient/api/v;->b(Ljava/lang/Throwable;)Ljava/lang/Object;
+    const/4 v1, 0x0
+
+    :goto_1
+    add-int/lit8 v2, v1, 0x1
+
+    .line 6
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    aput-object v3, v0, v1
+
+    .line 7
+    array-length v1, v0
+
+    if-lt v2, v1, :cond_5
+
+    .line 8
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    move-object p0, v0
+
+    goto :goto_3
+
+    :cond_2
+    mul-int/lit8 v1, v2, 0x3
+
+    add-int/lit8 v1, v1, 0x1
+
+    ushr-int/lit8 v1, v1, 0x1
+
+    const v3, 0x7ffffffd
+
+    if-gt v1, v2, :cond_4
+
+    if-ge v2, v3, :cond_3
+
+    const v1, 0x7ffffffd
+
+    goto :goto_2
+
+    .line 9
+    :cond_3
+    new-instance p0, Ljava/lang/OutOfMemoryError;
+
+    invoke-direct {p0}, Ljava/lang/OutOfMemoryError;-><init>()V
+
+    throw p0
+
+    .line 10
+    :cond_4
+    :goto_2
+    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    const-string v1, "Arrays.copyOf(result, newSize)"
+
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    goto :goto_4
+
+    .line 11
+    :cond_5
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-nez v1, :cond_6
+
+    .line 12
+    invoke-static {v0, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object p0
 
-    invoke-interface {p2, p0}, Lde/d;->b(Ljava/lang/Object;)V
+    const-string v0, "Arrays.copyOf(result, size)"
+
+    invoke-static {p0, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    :goto_3
+    return-object p0
+
+    :cond_6
+    :goto_4
+    move v1, v2
+
+    goto :goto_1
+.end method
+
+.method public static final c(Ljava/util/Collection;[Ljava/lang/Object;)[Ljava/lang/Object;
+    .locals 5
+
+    const-string v0, "collection"
+
+    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    invoke-interface {p0}, Ljava/util/Collection;->size()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    if-nez v0, :cond_0
+
+    .line 3
+    array-length p0, p1
+
+    if-lez p0, :cond_8
+
+    aput-object v1, p1, v2
+
+    goto/16 :goto_2
+
+    .line 4
+    :cond_0
+    invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    .line 5
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    .line 6
+    array-length p0, p1
+
+    if-lez p0, :cond_8
+
+    aput-object v1, p1, v2
+
+    goto :goto_2
+
+    .line 7
+    :cond_1
+    array-length v3, p1
+
+    if-gt v0, v3, :cond_2
+
+    move-object v0, p1
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
+
+    move-result-object v3
+
+    invoke-static {v3, v0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_a
+
+    check-cast v0, [Ljava/lang/Object;
 
     :goto_0
-    return-void
+    add-int/lit8 v3, v2, 0x1
+
+    .line 8
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    aput-object v4, v0, v2
+
+    .line 9
+    array-length v2, v0
+
+    if-lt v3, v2, :cond_6
+
+    .line 10
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-nez v2, :cond_3
+
+    move-object p1, v0
+
+    goto :goto_2
+
+    :cond_3
+    mul-int/lit8 v2, v3, 0x3
+
+    add-int/lit8 v2, v2, 0x1
+
+    ushr-int/lit8 v2, v2, 0x1
+
+    const v4, 0x7ffffffd
+
+    if-gt v2, v3, :cond_5
+
+    if-ge v3, v4, :cond_4
+
+    const v2, 0x7ffffffd
+
+    goto :goto_1
+
+    .line 11
+    :cond_4
+    new-instance p0, Ljava/lang/OutOfMemoryError;
+
+    invoke-direct {p0}, Ljava/lang/OutOfMemoryError;-><init>()V
+
+    throw p0
+
+    .line 12
+    :cond_5
+    :goto_1
+    invoke-static {v0, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    const-string v2, "Arrays.copyOf(result, newSize)"
+
+    invoke-static {v0, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    goto :goto_3
+
+    .line 13
+    :cond_6
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-nez v2, :cond_9
+
+    if-ne v0, p1, :cond_7
+
+    .line 14
+    aput-object v1, p1, v3
+
+    goto :goto_2
+
+    .line 15
+    :cond_7
+    invoke-static {v0, v3}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object p0
+
+    const-string p1, "Arrays.copyOf(result, size)"
+
+    invoke-static {p0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    move-object p1, p0
+
+    :cond_8
+    :goto_2
+    return-object p1
+
+    :cond_9
+    :goto_3
+    move v2, v3
+
+    goto :goto_0
+
+    .line 16
+    :cond_a
+    new-instance p0, Lkotlin/TypeCastException;
+
+    const-string p1, "null cannot be cast to non-null type kotlin.Array<kotlin.Any?>"
+
+    invoke-direct {p0, p1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+
+    goto :goto_5
+
+    :goto_4
+    throw p0
+
+    :goto_5
+    goto :goto_4
 .end method

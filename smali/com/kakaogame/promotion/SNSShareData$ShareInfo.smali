@@ -82,7 +82,7 @@
     if-nez v1, :cond_0
 
     .line 4
-    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ljava/util/AbstractMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -95,7 +95,7 @@
 
     .line 5
     :goto_0
-    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -104,7 +104,7 @@
     if-eqz p1, :cond_2
 
     .line 6
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
 
@@ -116,7 +116,7 @@
     const/4 v0, 0x0
 
     .line 7
-    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -242,7 +242,7 @@
     const-string v1, "SNSShareData"
 
     .line 11
-    invoke-static {p1, v0, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
 .end method

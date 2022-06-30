@@ -1,128 +1,89 @@
-.class public Ls4/d;
-.super Landroid/animation/AnimatorListenerAdapter;
-.source "BaseTransientBottomBar.java"
-
-
-# instance fields
-.field public final synthetic g:I
-
-.field public final synthetic h:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+.class public final Ls4/d;
+.super Lj1/q;
+.source "CutCornerTreatment.java"
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;I)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Ls4/d;->h:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
-
-    iput p2, p0, Ls4/d;->g:I
-
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    invoke-direct {p0}, Lj1/q;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 1
+.method public final b(Ls4/n;FF)V
+    .locals 6
+
+    mul-float v0, p3, p2
+
+    const/4 v1, 0x0
+
+    const/high16 v2, 0x43340000    # 180.0f
+
+    const/high16 v3, 0x42b40000    # 90.0f
 
     .line 1
-    iget-object p1, p0, Ls4/d;->h:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    invoke-virtual {p1, v1, v0, v2, v3}, Ls4/n;->f(FFFF)V
 
-    iget v0, p0, Ls4/d;->g:I
-
-    invoke-virtual {p1, v0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->d(I)V
-
-    return-void
-.end method
-
-.method public onAnimationStart(Landroid/animation/Animator;)V
-    .locals 7
-
-    .line 1
-    iget-object p1, p0, Ls4/d;->h:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    float-to-double v2, v3
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->d:Ls4/f;
+    invoke-static {v2, v3}, Ljava/lang/Math;->toRadians(D)D
+
+    move-result-wide v2
+
+    invoke-static {v2, v3}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v2
+
+    float-to-double v4, p3
+
+    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
+
+    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
+
+    mul-double v2, v2, v4
+
+    float-to-double p2, p2
+
+    invoke-static {p2, p3}, Ljava/lang/Double;->isNaN(D)Z
+
+    invoke-static {p2, p3}, Ljava/lang/Double;->isNaN(D)Z
+
+    mul-double v2, v2, p2
+
+    double-to-float v0, v2
+
+    float-to-double v1, v1
 
     .line 3
-    check-cast p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;
+    invoke-static {v1, v2}, Ljava/lang/Math;->toRadians(D)D
+
+    move-result-wide v1
+
+    invoke-static {v1, v2}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v1
+
+    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
+
+    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
+
+    mul-double v1, v1, v4
+
+    invoke-static {p2, p3}, Ljava/lang/Double;->isNaN(D)Z
+
+    invoke-static {p2, p3}, Ljava/lang/Double;->isNaN(D)Z
+
+    mul-double v1, v1, p2
+
+    double-to-float p2, v1
 
     .line 4
-    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/TextView;
+    invoke-virtual {p1, v0, p2}, Ls4/n;->d(FF)V
 
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setAlpha(F)V
-
-    .line 5
-    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/TextView;
-
-    invoke-virtual {v0}, Landroid/widget/TextView;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v0
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v2}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v0
-
-    const/16 v3, 0xb4
-
-    int-to-long v3, v3
-
-    invoke-virtual {v0, v3, v4}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v0
-
-    const/4 v5, 0x0
-
-    int-to-long v5, v5
-
-    invoke-virtual {v0, v5, v6}, Landroid/view/ViewPropertyAnimator;->setStartDelay(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/ViewPropertyAnimator;->start()V
-
-    .line 6
-    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
-
-    invoke-virtual {v0}, Landroid/widget/Button;->getVisibility()I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 7
-    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
-
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setAlpha(F)V
-
-    .line 8
-    iget-object p1, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
-
-    invoke-virtual {p1}, Landroid/widget/Button;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    invoke-virtual {p1, v2}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    invoke-virtual {p1, v3, v4}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    invoke-virtual {p1, v5, v6}, Landroid/view/ViewPropertyAnimator;->setStartDelay(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V
-
-    :cond_0
     return-void
 .end method

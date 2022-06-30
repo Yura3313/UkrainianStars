@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/widget/a$d;
+.class public final Landroidx/constraintlayout/widget/a$d;
 .super Ljava/lang/Object;
 .source "ConstraintSet.java"
 
@@ -59,7 +59,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/constraintlayout/widget/a$d;)V
+.method public final a(Landroidx/constraintlayout/widget/a$d;)V
     .locals 1
 
     .line 1
@@ -90,7 +90,7 @@
     return-void
 .end method
 
-.method public b(Landroid/content/Context;Landroid/util/AttributeSet;)V
+.method public final b(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
 
     .line 1

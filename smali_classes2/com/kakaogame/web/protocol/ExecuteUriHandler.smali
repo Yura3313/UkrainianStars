@@ -9,7 +9,6 @@
 
     const-string v0, "executeUri"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/kakaogame/web/protocol/WebAppProtocolHandler;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -28,7 +27,7 @@
     move-result-object p2
 
     .line 2
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 

@@ -24,7 +24,6 @@
 .method public constructor <init>(Lokhttp3/internal/http1/Http1Codec;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/http1/Http1Codec$UnknownLengthSource;->this$0:Lokhttp3/internal/http1/Http1Codec;
 
     const/4 v0, 0x0
@@ -142,10 +141,12 @@
 
     const-string v0, "byteCount < 0: "
 
+    .line 8
     invoke-static {v0, p2, p3}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p2
 
+    .line 9
     invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1

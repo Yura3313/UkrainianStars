@@ -207,7 +207,6 @@
 .method public getHeader()Lio/sentry/SentryEnvelopeHeader;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEnvelope;->header:Lio/sentry/SentryEnvelopeHeader;
 
     return-object v0
@@ -224,7 +223,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryEnvelope;->items:Ljava/lang/Iterable;
 
     return-object v0

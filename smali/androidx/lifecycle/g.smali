@@ -1,4 +1,4 @@
-.class public Landroidx/lifecycle/g;
+.class public final Landroidx/lifecycle/g;
 .super Ljava/lang/Object;
 .source "LifecycleDispatcher.java"
 
@@ -19,7 +19,6 @@
 .method public static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0

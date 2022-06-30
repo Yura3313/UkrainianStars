@@ -25,7 +25,7 @@
     :cond_0
     sget v0, Landroidx/core/R$id;->tag_transition_group:I
 
-    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getTag(I)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -42,14 +42,14 @@
 
     .line 5
     :cond_1
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getBackground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     if-nez v0, :cond_3
 
     .line 6
-    invoke-static {p0}, Lf0/r;->m(Landroid/view/View;)Ljava/lang/String;
+    invoke-static {p0}, Lf0/r;->o(Landroid/view/View;)Ljava/lang/String;
 
     move-result-object p0
 

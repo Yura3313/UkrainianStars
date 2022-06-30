@@ -1,4 +1,4 @@
-.class public Lcom/journeyapps/barcodescanner/CameraPreview$d;
+.class public final Lcom/journeyapps/barcodescanner/CameraPreview$d;
 .super Ljava/lang/Object;
 .source "CameraPreview.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/journeyapps/barcodescanner/CameraPreview;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,17 +34,17 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 2
 
     .line 1
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
 
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -71,17 +70,17 @@
     return-void
 .end method
 
-.method public b(Ljava/lang/Exception;)V
+.method public final b(Ljava/lang/Exception;)V
     .locals 2
 
     .line 1
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
 
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -107,17 +106,17 @@
     return-void
 .end method
 
-.method public c()V
+.method public final c()V
     .locals 2
 
     .line 1
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
 
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -143,17 +142,17 @@
     return-void
 .end method
 
-.method public d()V
+.method public final d()V
     .locals 2
 
     .line 1
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
 
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -179,17 +178,17 @@
     return-void
 .end method
 
-.method public e()V
+.method public final e()V
     .locals 2
 
     .line 1
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
 
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 

@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
 
 
 # direct methods
@@ -23,13 +23,11 @@
     aput-object v1, v0, v2
 
     .line 1
-    sget-object v1, Lv4/a;->a:Ljava/util/Map;
+    sget-object v1, Lx4/a;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
-
-    check-cast v1, Ljava/util/HashMap;
 
     invoke-virtual {v1, v2}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -43,9 +41,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    sget-object v3, Lv4/a;->b:Ljava/util/Map;
-
-    check-cast v3, Ljava/util/HashMap;
+    sget-object v3, Lx4/a;->b:Ljava/util/HashMap;
 
     invoke-virtual {v3, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -114,7 +110,7 @@
 
     if-eqz p1, :cond_1
 
-    iput p1, p0, Lcom/google/android/play/core/assetpacks/AssetPackException;->g:I
+    iput p1, p0, Lcom/google/android/play/core/assetpacks/AssetPackException;->f:I
 
     return-void
 
@@ -130,10 +126,10 @@
 
 
 # virtual methods
-.method public getErrorCode()I
+.method public final getErrorCode()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackException;->g:I
+    iget v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackException;->f:I
 
     return v0
 .end method

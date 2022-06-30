@@ -157,10 +157,9 @@
 
 
 # virtual methods
-.method public a()I
+.method public final a()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->a:Landroidx/recyclerview/widget/RecyclerView$z;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$z;->f()I
@@ -170,10 +169,9 @@
     return v0
 .end method
 
-.method public b()Z
+.method public final b()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->a:Landroidx/recyclerview/widget/RecyclerView$z;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$z;->p()Z
@@ -183,10 +181,9 @@
     return v0
 .end method
 
-.method public c()Z
+.method public final c()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->a:Landroidx/recyclerview/widget/RecyclerView$z;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$z;->m()Z

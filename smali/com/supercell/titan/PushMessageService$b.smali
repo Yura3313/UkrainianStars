@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/PushMessageService$b;
+.class public final Lcom/supercell/titan/PushMessageService$b;
 .super Ljava/lang/Object;
 .source "PushMessageService.java"
 
@@ -18,19 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/titan/PushMessageService;
+.field public final synthetic f:Lcom/supercell/titan/PushMessageService;
 
-.field public final synthetic h:Ljava/util/Map;
+.field public final synthetic g:Ljava/util/Map;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/PushMessageService;Lcom/supercell/titan/PushMessageService;Ljava/util/Map;)V
+.method public constructor <init>(Lcom/supercell/titan/PushMessageService;Ljava/util/Map;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Lcom/supercell/titan/PushMessageService$b;->g:Lcom/supercell/titan/PushMessageService;
+    iput-object p1, p0, Lcom/supercell/titan/PushMessageService$b;->f:Lcom/supercell/titan/PushMessageService;
 
-    iput-object p3, p0, Lcom/supercell/titan/PushMessageService$b;->h:Ljava/util/Map;
+    iput-object p2, p0, Lcom/supercell/titan/PushMessageService$b;->g:Ljava/util/Map;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,15 +38,15 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/PushMessageService$b;->g:Lcom/supercell/titan/PushMessageService;
+    iget-object v0, p0, Lcom/supercell/titan/PushMessageService$b;->f:Lcom/supercell/titan/PushMessageService;
 
-    iget-object v1, p0, Lcom/supercell/titan/PushMessageService$b;->h:Ljava/util/Map;
+    iget-object v1, p0, Lcom/supercell/titan/PushMessageService$b;->g:Ljava/util/Map;
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_3
 
     .line 2
     invoke-interface {v1}, Ljava/util/Map;->size()I
@@ -113,9 +112,26 @@
     invoke-virtual {v2, v3}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     .line 8
-    invoke-static {v0, v2}, Lcom/helpshift/CoreInternal;->a(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-static {}, Lcom/helpshift/util/u;->b()Z
 
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    goto :goto_1
+
+    .line 9
     :cond_2
+    sget-object v1, Lmb/a;->a:Lmb/b;
+
+    .line 10
+    new-instance v3, Lcom/helpshift/e;
+
+    invoke-direct {v3, v0, v2}, Lcom/helpshift/e;-><init>(Landroid/content/Context;Landroid/content/Intent;)V
+
+    invoke-virtual {v1, v3}, Lmb/b;->a(Ljava/lang/Runnable;)V
+
+    :cond_3
     :goto_1
     return-void
 .end method

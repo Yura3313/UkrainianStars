@@ -1,4 +1,4 @@
-.class public Lcom/google/android/material/button/MaterialButtonToggleGroup$c;
+.class public final Lcom/google/android/material/button/MaterialButtonToggleGroup$c;
 .super Ljava/lang/Object;
 .source "MaterialButtonToggleGroup.java"
 
@@ -22,10 +22,9 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;Lcom/google/android/material/button/MaterialButtonToggleGroup$a;)V
+.method public constructor <init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$c;->a:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,14 +34,14 @@
 
 
 # virtual methods
-.method public a(Lcom/google/android/material/button/MaterialButton;Z)V
+.method public final a(Lcom/google/android/material/button/MaterialButton;Z)V
     .locals 2
 
     .line 1
     iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$c;->a:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
     .line 2
-    iget-boolean v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
+    iget-boolean v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->l:Z
 
     if-eqz v1, :cond_0
 
@@ -50,14 +49,14 @@
 
     .line 3
     :cond_0
-    iget-boolean v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->n:Z
+    iget-boolean v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
 
     if-eqz v1, :cond_2
 
     if-eqz p2, :cond_1
 
     .line 4
-    invoke-virtual {p1}, Landroid/widget/Button;->getId()I
+    invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v1
 
@@ -68,13 +67,13 @@
 
     .line 5
     :goto_0
-    iput v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->p:I
+    iput v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->o:I
 
     .line 6
     :cond_2
     iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$c;->a:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
-    invoke-virtual {p1}, Landroid/widget/Button;->getId()I
+    invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v1
 
@@ -88,7 +87,7 @@
     .line 8
     iget-object p2, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$c;->a:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
-    invoke-virtual {p1}, Landroid/widget/Button;->getId()I
+    invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
@@ -103,7 +102,7 @@
     :cond_3
     iget-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$c;->a:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
-    invoke-virtual {p1}, Landroid/widget/LinearLayout;->invalidate()V
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
 
     return-void
 .end method

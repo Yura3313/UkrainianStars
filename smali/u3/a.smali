@@ -1,211 +1,227 @@
 .class public final Lu3/a;
-.super Lu3/u4$a;
-.source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
+.super Lcom/google/android/gms/common/internal/a;
 
 
-# instance fields
-.field public final synthetic k:Landroid/content/Context;
-
-.field public final synthetic l:Landroid/os/Bundle;
-
-.field public final synthetic m:Lu3/u4;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/android/gms/common/internal/a<",
+        "Lcom/google/android/gms/internal/instantapps/zzu;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lu3/u4;Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Landroid/os/Bundle;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/api/c$a;Lcom/google/android/gms/common/api/c$b;)V
+    .locals 14
 
     .line 1
-    iput-object p1, p0, Lu3/a;->m:Lu3/u4;
+    new-instance v2, Ljava/util/HashSet;
 
-    iput-object p4, p0, Lu3/a;->k:Landroid/content/Context;
-
-    iput-object p5, p0, Lu3/a;->l:Landroid/os/Bundle;
-
-    const/4 p2, 0x1
+    invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
     .line 2
-    invoke-direct {p0, p1, p2}, Lu3/u4$a;-><init>(Lu3/u4;Z)V
+    new-instance v0, Ljava/util/HashSet;
+
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+
+    .line 3
+    new-instance v3, Lm/a;
+
+    invoke-direct {v3}, Lm/a;-><init>()V
+
+    .line 4
+    new-instance v0, Lm/a;
+
+    invoke-direct {v0}, Lm/a;-><init>()V
+
+    .line 5
+    sget-object v1, Lz1/c;->c:Ljava/lang/Object;
+
+    sget-object v1, Lz1/c;->d:Lz1/c;
+
+    .line 6
+    sget-object v1, La4/c;->a:La4/b;
+
+    .line 7
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 8
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 9
+    invoke-virtual {p1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
+
+    .line 10
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 11
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 12
+    sget-object v1, La4/a;->f:La4/a;
+
+    .line 13
+    sget-object v6, La4/c;->c:Lcom/google/android/gms/common/api/a;
+
+    invoke-virtual {v0, v6}, Lm/g;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_0
+
+    const/4 v1, 0x0
+
+    .line 14
+    invoke-virtual {v0, v6, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 15
+    check-cast v0, La4/a;
+
+    move-object v6, v0
+
+    goto :goto_0
+
+    :cond_0
+    move-object v6, v1
+
+    .line 16
+    :goto_0
+    new-instance v11, Ld2/c;
+
+    const/4 v1, 0x0
+
+    move-object v0, v11
+
+    invoke-direct/range {v0 .. v6}, Ld2/c;-><init>(Landroid/accounts/Account;Ljava/util/Set;Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;La4/a;)V
+
+    const/16 v10, 0x79
+
+    move-object v7, p0
+
+    move-object v8, p1
+
+    move-object/from16 v9, p2
+
+    move-object/from16 v12, p3
+
+    move-object/from16 v13, p4
+
+    .line 17
+    invoke-direct/range {v7 .. v13}, Lcom/google/android/gms/common/internal/a;-><init>(Landroid/content/Context;Landroid/os/Looper;ILd2/c;Lb2/e;Lb2/l;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 15
+.method public final i()I
+    .locals 1
 
-    const-string v0, "com.google.android.gms.measurement.dynamite"
+    const v0, 0xba2840
 
-    const/4 v1, 0x1
+    return v0
+.end method
+
+.method public final synthetic p(Landroid/os/IBinder;)Landroid/os/IInterface;
+    .locals 2
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :cond_0
+    const-string v0, "com.google.android.gms.instantapps.internal.IInstantAppsService"
+
+    .line 1
+    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
+    move-result-object v0
+
+    .line 2
+    instance-of v1, v0, Lcom/google/android/gms/internal/instantapps/zzu;
+
+    if-eqz v1, :cond_1
+
+    .line 3
+    check-cast v0, Lcom/google/android/gms/internal/instantapps/zzu;
+
+    return-object v0
+
+    .line 4
+    :cond_1
+    new-instance v0, Lcom/google/android/gms/internal/instantapps/zzt;
+
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/instantapps/zzt;-><init>(Landroid/os/IBinder;)V
+
+    return-object v0
+.end method
+
+.method public final r()[Lcom/google/android/gms/common/Feature;
+    .locals 3
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [Lcom/google/android/gms/common/Feature;
+
+    sget-object v1, Lj3/c;->a:Lcom/google/android/gms/common/Feature;
 
     const/4 v2, 0x0
 
-    .line 1
-    :try_start_0
-    iget-object v3, p0, Lu3/a;->m:Lu3/u4;
+    aput-object v1, v0, v2
 
-    new-instance v4, Ljava/util/ArrayList;
+    sget-object v1, Lj3/c;->b:Lcom/google/android/gms/common/Feature;
 
-    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+    const/4 v2, 0x1
 
-    .line 2
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    aput-object v1, v0, v2
 
-    const/4 v13, 0x0
+    sget-object v1, Lj3/c;->c:Lcom/google/android/gms/common/Feature;
 
-    const/4 v11, 0x0
+    const/4 v2, 0x2
 
-    const/4 v12, 0x0
+    aput-object v1, v0, v2
 
-    .line 3
-    iget-object v3, p0, Lu3/a;->k:Landroid/content/Context;
+    sget-object v1, Lj3/c;->d:Lcom/google/android/gms/common/Feature;
 
-    invoke-static {v3}, Lu3/u4;->h(Landroid/content/Context;)V
+    const/4 v2, 0x3
 
-    .line 4
-    sget-object v3, Lu3/u4;->i:Ljava/lang/Boolean;
+    aput-object v1, v0, v2
 
-    .line 5
-    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+    return-object v0
+.end method
 
-    move-result v3
+.method public final w()Ljava/lang/String;
+    .locals 1
 
-    if-nez v3, :cond_0
+    const-string v0, "com.google.android.gms.instantapps.internal.IInstantAppsService"
 
-    const/4 v3, 0x0
+    return-object v0
+.end method
 
-    goto :goto_0
+.method public final x()Ljava/lang/String;
+    .locals 1
 
-    :cond_0
-    const/4 v3, 0x1
+    const-string v0, "com.google.android.gms.instantapps.START"
 
-    .line 6
-    :goto_0
-    iget-object v4, p0, Lu3/a;->m:Lu3/u4;
-
-    iget-object v5, p0, Lu3/a;->k:Landroid/content/Context;
-
-    invoke-virtual {v4, v5, v3}, Lu3/u4;->b(Landroid/content/Context;Z)Lcom/google/android/gms/internal/measurement/zzm;
-
-    move-result-object v5
-
-    .line 7
-    iput-object v5, v4, Lu3/u4;->f:Lcom/google/android/gms/internal/measurement/zzm;
-
-    .line 8
-    iget-object v4, p0, Lu3/a;->m:Lu3/u4;
-
-    .line 9
-    iget-object v4, v4, Lu3/u4;->f:Lcom/google/android/gms/internal/measurement/zzm;
-
-    if-nez v4, :cond_1
-
-    return-void
-
-    .line 10
-    :cond_1
-    iget-object v4, p0, Lu3/a;->k:Landroid/content/Context;
-
-    .line 11
-    invoke-static {v4, v0}, Lcom/google/android/gms/dynamite/DynamiteModule;->a(Landroid/content/Context;Ljava/lang/String;)I
-
-    move-result v4
-
-    .line 12
-    iget-object v5, p0, Lu3/a;->k:Landroid/content/Context;
-
-    .line 13
-    invoke-static {v5, v0}, Lcom/google/android/gms/dynamite/DynamiteModule;->b(Landroid/content/Context;Ljava/lang/String;)I
-
-    move-result v0
-
-    if-eqz v3, :cond_3
-
-    .line 14
-    invoke-static {v4, v0}, Ljava/lang/Math;->max(II)I
-
-    move-result v3
-
-    if-ge v0, v4, :cond_2
-
-    const/4 v0, 0x1
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v0, 0x0
-
-    :goto_1
-    move v10, v0
-
-    goto :goto_3
-
-    :cond_3
-    if-lez v4, :cond_4
-
-    move v0, v4
-
-    :cond_4
-    if-lez v4, :cond_5
-
-    const/4 v3, 0x1
-
-    goto :goto_2
-
-    :cond_5
-    const/4 v3, 0x0
-
-    :goto_2
-    move v10, v3
-
-    move v3, v0
-
-    .line 15
-    :goto_3
-    new-instance v0, Lcom/google/android/gms/internal/measurement/zzv;
-
-    const-wide/16 v6, 0x46b6
-
-    int-to-long v8, v3
-
-    iget-object v14, p0, Lu3/a;->l:Landroid/os/Bundle;
-
-    move-object v5, v0
-
-    invoke-direct/range {v5 .. v14}, Lcom/google/android/gms/internal/measurement/zzv;-><init>(JJZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
-
-    .line 16
-    iget-object v3, p0, Lu3/a;->m:Lu3/u4;
-
-    .line 17
-    iget-object v3, v3, Lu3/u4;->f:Lcom/google/android/gms/internal/measurement/zzm;
-
-    .line 18
-    iget-object v4, p0, Lu3/a;->k:Landroid/content/Context;
-
-    .line 19
-    new-instance v5, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    invoke-direct {v5, v4}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
-
-    .line 20
-    iget-wide v6, p0, Lu3/u4$a;->g:J
-
-    invoke-interface {v3, v5, v0, v6, v7}, Lcom/google/android/gms/internal/measurement/zzm;->initialize(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/internal/measurement/zzv;J)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-void
-
-    :catch_0
-    move-exception v0
-
-    .line 21
-    iget-object v3, p0, Lu3/a;->m:Lu3/u4;
-
-    .line 22
-    invoke-virtual {v3, v0, v1, v2}, Lu3/u4;->e(Ljava/lang/Exception;ZZ)V
-
-    return-void
+    return-object v0
 .end method

@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/widget/ConstraintLayout$a;
+.class public final Landroidx/constraintlayout/widget/ConstraintLayout$a;
 .super Ljava/lang/Object;
 .source "ConstraintLayout.java"
 
@@ -52,7 +52,7 @@
 
 
 # virtual methods
-.method public a(IIIIII)V
+.method public final a(IIIIII)V
     .locals 0
 
     .line 1
@@ -140,7 +140,7 @@
     move-object/from16 v2, p2
 
     .line 1
-    sget-object v3, Lq/e$a;->g:Lq/e$a;
+    sget-object v3, Lq/e$a;->f:Lq/e$a;
 
     if-nez v1, :cond_0
 
@@ -148,7 +148,7 @@
 
     .line 2
     :cond_0
-    iget v4, v1, Lq/e;->j0:I
+    iget v4, v1, Lq/e;->c0:I
 
     const/16 v5, 0x8
 
@@ -157,7 +157,7 @@
     if-ne v4, v5, :cond_1
 
     .line 3
-    iget-boolean v4, v1, Lq/e;->B:Z
+    iget-boolean v4, v1, Lq/e;->z:Z
 
     if-nez v4, :cond_1
 
@@ -174,7 +174,7 @@
 
     .line 7
     :cond_1
-    iget-object v4, v1, Lq/e;->R:Lq/e;
+    iget-object v4, v1, Lq/e;->P:Lq/e;
 
     if-nez v4, :cond_2
 
@@ -204,7 +204,7 @@
     iget v10, v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->d:I
 
     .line 14
-    iget-object v11, v1, Lq/e;->h0:Ljava/lang/Object;
+    iget-object v11, v1, Lq/e;->b0:Ljava/lang/Object;
 
     .line 15
     check-cast v11, Landroid/view/View;
@@ -216,15 +216,15 @@
 
     const/4 v13, 0x3
 
-    const/4 v14, 0x2
+    const/4 v15, 0x2
 
-    const/4 v15, 0x1
+    const/4 v14, 0x1
 
     if-eqz v12, :cond_f
 
-    if-eq v12, v15, :cond_e
+    if-eq v12, v14, :cond_e
 
-    if-eq v12, v14, :cond_6
+    if-eq v12, v15, :cond_6
 
     if-eq v12, v13, :cond_3
 
@@ -237,7 +237,7 @@
     iget v7, v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->f:I
 
     .line 18
-    iget-object v12, v1, Lq/e;->F:Lq/d;
+    iget-object v12, v1, Lq/e;->D:Lq/d;
 
     if-eqz v12, :cond_4
 
@@ -253,7 +253,7 @@
 
     .line 20
     :goto_0
-    iget-object v6, v1, Lq/e;->H:Lq/d;
+    iget-object v6, v1, Lq/e;->F:Lq/d;
 
     if-eqz v6, :cond_5
 
@@ -287,7 +287,7 @@
     .line 24
     iget v7, v1, Lq/e;->l:I
 
-    if-ne v7, v15, :cond_7
+    if-ne v7, v14, :cond_7
 
     const/4 v7, 0x1
 
@@ -300,9 +300,9 @@
     :goto_1
     iget v10, v2, Lr/b$a;->j:I
 
-    if-eq v10, v15, :cond_9
+    if-eq v10, v14, :cond_9
 
-    if-ne v10, v14, :cond_8
+    if-ne v10, v15, :cond_8
 
     goto :goto_2
 
@@ -335,7 +335,7 @@
     :goto_3
     iget v12, v2, Lr/b$a;->j:I
 
-    if-eq v12, v14, :cond_d
+    if-eq v12, v15, :cond_d
 
     if-eqz v7, :cond_d
 
@@ -349,7 +349,7 @@
     if-nez v7, :cond_d
 
     .line 28
-    invoke-virtual/range {p1 .. p1}, Lq/e;->G()Z
+    invoke-virtual/range {p1 .. p1}, Lq/e;->E()Z
 
     move-result v7
 
@@ -370,7 +370,7 @@
     if-eqz v7, :cond_8
 
     .line 29
-    invoke-virtual/range {p1 .. p1}, Lq/e;->x()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->v()I
 
     move-result v6
 
@@ -415,9 +415,9 @@
 
     if-eqz v6, :cond_1c
 
-    if-eq v6, v15, :cond_1b
+    if-eq v6, v14, :cond_1b
 
-    if-eq v6, v14, :cond_13
+    if-eq v6, v15, :cond_13
 
     if-eq v6, v13, :cond_10
 
@@ -430,12 +430,12 @@
     iget v6, v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->g:I
 
     .line 34
-    iget-object v8, v1, Lq/e;->F:Lq/d;
+    iget-object v8, v1, Lq/e;->D:Lq/d;
 
     if-eqz v8, :cond_11
 
     .line 35
-    iget-object v8, v1, Lq/e;->G:Lq/d;
+    iget-object v8, v1, Lq/e;->E:Lq/d;
 
     iget v8, v8, Lq/d;->g:I
 
@@ -450,12 +450,12 @@
 
     .line 36
     :goto_8
-    iget-object v10, v1, Lq/e;->H:Lq/d;
+    iget-object v10, v1, Lq/e;->F:Lq/d;
 
     if-eqz v10, :cond_12
 
     .line 37
-    iget-object v10, v1, Lq/e;->I:Lq/d;
+    iget-object v10, v1, Lq/e;->G:Lq/d;
 
     iget v10, v10, Lq/d;->g:I
 
@@ -486,7 +486,7 @@
     .line 40
     iget v8, v1, Lq/e;->m:I
 
-    if-ne v8, v15, :cond_14
+    if-ne v8, v14, :cond_14
 
     const/4 v8, 0x1
 
@@ -499,9 +499,9 @@
     :goto_9
     iget v9, v2, Lr/b$a;->j:I
 
-    if-eq v9, v15, :cond_16
+    if-eq v9, v14, :cond_16
 
-    if-ne v9, v14, :cond_15
+    if-ne v9, v15, :cond_15
 
     goto :goto_a
 
@@ -517,7 +517,7 @@
 
     move-result v9
 
-    invoke-virtual/range {p1 .. p1}, Lq/e;->x()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->v()I
 
     move-result v10
 
@@ -534,7 +534,7 @@
     :goto_b
     iget v10, v2, Lr/b$a;->j:I
 
-    if-eq v10, v14, :cond_1a
+    if-eq v10, v15, :cond_1a
 
     if-eqz v8, :cond_1a
 
@@ -548,7 +548,7 @@
     if-nez v8, :cond_1a
 
     .line 44
-    invoke-virtual/range {p1 .. p1}, Lq/e;->H()Z
+    invoke-virtual/range {p1 .. p1}, Lq/e;->F()Z
 
     move-result v8
 
@@ -608,7 +608,7 @@
 
     .line 48
     :goto_f
-    iget-object v6, v1, Lq/e;->R:Lq/e;
+    iget-object v6, v1, Lq/e;->P:Lq/e;
 
     .line 49
     check-cast v6, Lq/f;
@@ -619,7 +619,7 @@
     iget-object v8, v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->h:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 51
-    iget v8, v8, Landroidx/constraintlayout/widget/ConstraintLayout;->o:I
+    iget v8, v8, Landroidx/constraintlayout/widget/ConstraintLayout;->n:I
 
     const/16 v9, 0x100
 
@@ -635,7 +635,7 @@
 
     move-result v8
 
-    invoke-virtual/range {p1 .. p1}, Lq/e;->x()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->v()I
 
     move-result v9
 
@@ -646,7 +646,7 @@
 
     move-result v8
 
-    invoke-virtual {v6}, Lq/e;->x()I
+    invoke-virtual {v6}, Lq/e;->v()I
 
     move-result v9
 
@@ -680,22 +680,22 @@
     move-result v6
 
     .line 58
-    iget v8, v1, Lq/e;->c0:I
+    iget v8, v1, Lq/e;->W:I
 
     if-ne v6, v8, :cond_1e
 
     .line 59
-    invoke-virtual/range {p1 .. p1}, Lq/e;->F()Z
+    invoke-virtual/range {p1 .. p1}, Lq/e;->D()Z
 
     move-result v6
 
     if-nez v6, :cond_1e
 
     .line 60
-    iget v6, v1, Lq/e;->D:I
+    iget v6, v1, Lq/e;->B:I
 
     .line 61
-    invoke-virtual/range {p1 .. p1}, Lq/e;->x()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->v()I
 
     move-result v8
 
@@ -706,7 +706,7 @@
     if-eqz v6, :cond_1d
 
     .line 62
-    iget v6, v1, Lq/e;->E:I
+    iget v6, v1, Lq/e;->C:I
 
     .line 63
     invoke-virtual/range {p1 .. p1}, Lq/e;->r()I
@@ -730,7 +730,7 @@
     if-eqz v6, :cond_1e
 
     .line 64
-    invoke-virtual/range {p1 .. p1}, Lq/e;->x()I
+    invoke-virtual/range {p1 .. p1}, Lq/e;->v()I
 
     move-result v3
 
@@ -744,7 +744,7 @@
     iput v3, v2, Lr/b$a;->f:I
 
     .line 66
-    iget v1, v1, Lq/e;->c0:I
+    iget v1, v1, Lq/e;->W:I
 
     .line 67
     iput v1, v2, Lr/b$a;->g:I
@@ -753,7 +753,7 @@
 
     .line 68
     :cond_1e
-    sget-object v6, Lq/e$a;->i:Lq/e$a;
+    sget-object v6, Lq/e$a;->h:Lq/e$a;
 
     if-ne v4, v6, :cond_1f
 
@@ -776,7 +776,7 @@
 
     .line 69
     :goto_12
-    sget-object v9, Lq/e$a;->j:Lq/e$a;
+    sget-object v9, Lq/e$a;->i:Lq/e$a;
 
     if-eq v5, v9, :cond_22
 
@@ -815,7 +815,7 @@
     if-eqz v8, :cond_25
 
     .line 70
-    iget v9, v1, Lq/e;->U:F
+    iget v9, v1, Lq/e;->S:F
 
     cmpl-float v9, v9, v4
 
@@ -832,7 +832,7 @@
     if-eqz v6, :cond_26
 
     .line 71
-    iget v12, v1, Lq/e;->U:F
+    iget v12, v1, Lq/e;->S:F
 
     cmpl-float v4, v12, v4
 
@@ -861,9 +861,9 @@
     .line 73
     iget v13, v2, Lr/b$a;->j:I
 
-    if-eq v13, v15, :cond_29
-
     if-eq v13, v14, :cond_29
+
+    if-eq v13, v15, :cond_29
 
     if-eqz v8, :cond_29
 
@@ -923,10 +923,10 @@
 
     .line 78
     :goto_1a
-    iput v7, v1, Lq/e;->D:I
+    iput v7, v1, Lq/e;->B:I
 
     .line 79
-    iput v10, v1, Lq/e;->E:I
+    iput v10, v1, Lq/e;->C:I
 
     const/4 v6, 0x0
 
@@ -949,41 +949,41 @@
     move-result v13
 
     .line 84
-    iget v14, v1, Lq/e;->o:I
+    iget v15, v1, Lq/e;->o:I
 
-    if-lez v14, :cond_2b
+    if-lez v15, :cond_2b
 
     .line 85
-    invoke-static {v14, v6}, Ljava/lang/Math;->max(II)I
+    invoke-static {v15, v6}, Ljava/lang/Math;->max(II)I
 
-    move-result v14
+    move-result v15
 
     goto :goto_1b
 
     :cond_2b
-    move v14, v6
+    move v15, v6
 
     .line 86
     :goto_1b
-    iget v15, v1, Lq/e;->p:I
+    iget v14, v1, Lq/e;->p:I
 
-    if-lez v15, :cond_2c
+    if-lez v14, :cond_2c
 
     .line 87
-    invoke-static {v15, v14}, Ljava/lang/Math;->min(II)I
+    invoke-static {v14, v15}, Ljava/lang/Math;->min(II)I
 
-    move-result v14
+    move-result v15
 
     .line 88
     :cond_2c
-    iget v15, v1, Lq/e;->r:I
+    iget v14, v1, Lq/e;->r:I
 
-    if-lez v15, :cond_2d
+    if-lez v14, :cond_2d
 
     .line 89
-    invoke-static {v15, v8}, Ljava/lang/Math;->max(II)I
+    invoke-static {v14, v8}, Ljava/lang/Math;->max(II)I
 
-    move-result v15
+    move-result v14
 
     move/from16 v16, v7
 
@@ -992,7 +992,7 @@
     :cond_2d
     move/from16 v16, v7
 
-    move v15, v8
+    move v14, v8
 
     .line 90
     :goto_1c
@@ -1001,16 +1001,16 @@
     if-lez v7, :cond_2e
 
     .line 91
-    invoke-static {v7, v15}, Ljava/lang/Math;->min(II)I
+    invoke-static {v7, v14}, Ljava/lang/Math;->min(II)I
 
-    move-result v15
+    move-result v14
 
     .line 92
     :cond_2e
     iget-object v7, v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->h:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 93
-    iget v7, v7, Landroidx/constraintlayout/widget/ConstraintLayout;->o:I
+    iget v7, v7, Landroidx/constraintlayout/widget/ConstraintLayout;->n:I
 
     const/4 v0, 0x1
 
@@ -1028,9 +1028,9 @@
     if-eqz v5, :cond_2f
 
     .line 95
-    iget v3, v1, Lq/e;->U:F
+    iget v3, v1, Lq/e;->S:F
 
-    int-to-float v4, v15
+    int-to-float v4, v14
 
     mul-float v4, v4, v3
 
@@ -1038,7 +1038,7 @@
 
     float-to-int v0, v4
 
-    move v14, v0
+    move v15, v0
 
     goto :goto_1d
 
@@ -1048,9 +1048,9 @@
     if-eqz v3, :cond_30
 
     .line 96
-    iget v3, v1, Lq/e;->U:F
+    iget v3, v1, Lq/e;->S:F
 
-    int-to-float v4, v14
+    int-to-float v4, v15
 
     div-float/2addr v4, v3
 
@@ -1058,13 +1058,13 @@
 
     float-to-int v0, v4
 
-    move v15, v0
+    move v14, v0
 
     :cond_30
     :goto_1d
-    if-ne v6, v14, :cond_32
+    if-ne v6, v15, :cond_32
 
-    if-eq v8, v15, :cond_31
+    if-eq v8, v14, :cond_31
 
     goto :goto_1e
 
@@ -1077,27 +1077,25 @@
 
     :cond_32
     :goto_1e
-    if-eq v6, v14, :cond_33
-
     const/high16 v0, 0x40000000    # 2.0f
 
+    if-eq v6, v15, :cond_33
+
     .line 97
-    invoke-static {v14, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+    invoke-static {v15, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v7
 
     goto :goto_1f
 
     :cond_33
-    const/high16 v0, 0x40000000    # 2.0f
-
     move/from16 v7, v16
 
     :goto_1f
-    if-eq v8, v15, :cond_34
+    if-eq v8, v14, :cond_34
 
     .line 98
-    invoke-static {v15, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+    invoke-static {v14, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v10
 
@@ -1106,10 +1104,10 @@
     invoke-virtual {v11, v7, v10}, Landroid/view/View;->measure(II)V
 
     .line 100
-    iput v7, v1, Lq/e;->D:I
+    iput v7, v1, Lq/e;->B:I
 
     .line 101
-    iput v10, v1, Lq/e;->E:I
+    iput v10, v1, Lq/e;->C:I
 
     const/4 v10, 0x0
 
@@ -1131,9 +1129,9 @@
 
     move-result v4
 
-    move v14, v0
+    move v15, v0
 
-    move v15, v3
+    move v14, v3
 
     move v13, v4
 
@@ -1153,11 +1151,11 @@
     :goto_21
     iget v3, v2, Lr/b$a;->c:I
 
-    if-ne v14, v3, :cond_37
+    if-ne v15, v3, :cond_37
 
     iget v3, v2, Lr/b$a;->d:I
 
-    if-eq v15, v3, :cond_36
+    if-eq v14, v3, :cond_36
 
     goto :goto_22
 
@@ -1188,7 +1186,7 @@
     if-eq v13, v3, :cond_39
 
     .line 108
-    iget v1, v1, Lq/e;->c0:I
+    iget v1, v1, Lq/e;->W:I
 
     if-eq v1, v13, :cond_39
 
@@ -1199,10 +1197,10 @@
 
     .line 110
     :cond_39
-    iput v14, v2, Lr/b$a;->e:I
+    iput v15, v2, Lr/b$a;->e:I
 
     .line 111
-    iput v15, v2, Lr/b$a;->f:I
+    iput v14, v2, Lr/b$a;->f:I
 
     .line 112
     iput-boolean v0, v2, Lr/b$a;->h:Z

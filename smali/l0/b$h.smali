@@ -1,4 +1,4 @@
-.class public Ll0/b$h;
+.class public interface abstract Ll0/b$h;
 .super Ljava/lang/Object;
 .source "DynamicAnimation.java"
 
@@ -9,23 +9,11 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
+    accessFlags = 0x609
     name = "h"
 .end annotation
 
 
-# instance fields
-.field public a:F
-
-.field public b:F
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
+# virtual methods
+.method public abstract a()V
 .end method

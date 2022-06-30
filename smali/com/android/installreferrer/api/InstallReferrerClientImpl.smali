@@ -1,4 +1,4 @@
-.class public Lcom/android/installreferrer/api/InstallReferrerClientImpl;
+.class public final Lcom/android/installreferrer/api/InstallReferrerClientImpl;
 .super Lcom/android/installreferrer/api/InstallReferrerClient;
 .source "InstallReferrerClientImpl.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/installreferrer/api/InstallReferrerClientImpl$b;,
+        Lcom/android/installreferrer/api/InstallReferrerClientImpl$a;,
         Lcom/android/installreferrer/api/InstallReferrerClientImpl$ClientState;
     }
 .end annotation
@@ -19,7 +19,7 @@
 
 .field public c:Lcom/google/android/finsky/externalreferrer/IGetInstallReferrerService;
 
-.field public d:Landroid/content/ServiceConnection;
+.field public d:Lcom/android/installreferrer/api/InstallReferrerClientImpl$a;
 
 
 # direct methods
@@ -45,14 +45,14 @@
 
 
 # virtual methods
-.method public endConnection()V
+.method public final endConnection()V
     .locals 3
 
     const/4 v0, 0x3
 
     iput v0, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->a:I
 
-    iget-object v0, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->d:Landroid/content/ServiceConnection;
+    iget-object v0, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->d:Lcom/android/installreferrer/api/InstallReferrerClientImpl$a;
 
     const/4 v1, 0x0
 
@@ -67,12 +67,12 @@
 
     iget-object v0, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->b:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->d:Landroid/content/ServiceConnection;
+    iget-object v2, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->d:Lcom/android/installreferrer/api/InstallReferrerClientImpl$a;
 
     .line 2
     invoke-virtual {v0, v2}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
-    iput-object v1, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->d:Landroid/content/ServiceConnection;
+    iput-object v1, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->d:Lcom/android/installreferrer/api/InstallReferrerClientImpl$a;
 
     :cond_0
     iput-object v1, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->c:Lcom/google/android/finsky/externalreferrer/IGetInstallReferrerService;
@@ -80,7 +80,7 @@
     return-void
 .end method
 
-.method public getInstallReferrer()Lcom/android/installreferrer/api/ReferrerDetails;
+.method public final getInstallReferrer()Lcom/android/installreferrer/api/ReferrerDetails;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -118,7 +118,7 @@
     iget-object v2, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->c:Lcom/google/android/finsky/externalreferrer/IGetInstallReferrerService;
 
     .line 5
-    invoke-interface {v2, v0}, Lcom/google/android/finsky/externalreferrer/IGetInstallReferrerService;->h(Landroid/os/Bundle;)Landroid/os/Bundle;
+    invoke-interface {v2, v0}, Lcom/google/android/finsky/externalreferrer/IGetInstallReferrerService;->c(Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -157,7 +157,7 @@
     throw v0
 .end method
 
-.method public isReady()Z
+.method public final isReady()Z
     .locals 2
 
     iget v0, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->a:I
@@ -170,7 +170,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->d:Landroid/content/ServiceConnection;
+    iget-object v0, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->d:Lcom/android/installreferrer/api/InstallReferrerClientImpl$a;
 
     if-eqz v0, :cond_0
 
@@ -184,7 +184,7 @@
     return v0
 .end method
 
-.method public startConnection(Lcom/android/installreferrer/api/InstallReferrerStateListener;)V
+.method public final startConnection(Lcom/android/installreferrer/api/InstallReferrerStateListener;)V
     .locals 8
 
     .line 1
@@ -339,14 +339,12 @@
     .line 19
     invoke-direct {v3, v0}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
-    new-instance v0, Lcom/android/installreferrer/api/InstallReferrerClientImpl$b;
-
-    const/4 v5, 0x0
+    new-instance v0, Lcom/android/installreferrer/api/InstallReferrerClientImpl$a;
 
     .line 20
-    invoke-direct {v0, p0, p1, v5}, Lcom/android/installreferrer/api/InstallReferrerClientImpl$b;-><init>(Lcom/android/installreferrer/api/InstallReferrerClientImpl;Lcom/android/installreferrer/api/InstallReferrerStateListener;Lcom/android/installreferrer/api/InstallReferrerClientImpl$a;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/installreferrer/api/InstallReferrerClientImpl$a;-><init>(Lcom/android/installreferrer/api/InstallReferrerClientImpl;Lcom/android/installreferrer/api/InstallReferrerStateListener;)V
 
-    iput-object v0, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->d:Landroid/content/ServiceConnection;
+    iput-object v0, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->d:Lcom/android/installreferrer/api/InstallReferrerClientImpl$a;
 
     iget-object v5, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->b:Landroid/content/Context;
 

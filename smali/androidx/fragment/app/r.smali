@@ -1,98 +1,182 @@
 .class public Landroidx/fragment/app/r;
-.super Landroid/animation/AnimatorListenerAdapter;
-.source "FragmentAnim.java"
+.super Ljava/lang/Object;
+.source "FragmentFactory.java"
 
 
-# instance fields
-.field public final synthetic g:Landroid/view/ViewGroup;
-
-.field public final synthetic h:Landroid/view/View;
-
-.field public final synthetic i:Landroidx/fragment/app/Fragment;
-
-.field public final synthetic j:Landroidx/fragment/app/n0$a;
-
-.field public final synthetic k:Lb0/a;
+# static fields
+.field public static final a:Lm/g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lm/g<",
+            "Ljava/lang/ClassLoader;",
+            "Lm/g<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Class<",
+            "*>;>;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/ViewGroup;Landroid/view/View;Landroidx/fragment/app/Fragment;Landroidx/fragment/app/n0$a;Lb0/a;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    iput-object p1, p0, Landroidx/fragment/app/r;->g:Landroid/view/ViewGroup;
+    new-instance v0, Lm/g;
 
-    iput-object p2, p0, Landroidx/fragment/app/r;->h:Landroid/view/View;
+    invoke-direct {v0}, Lm/g;-><init>()V
 
-    iput-object p3, p0, Landroidx/fragment/app/r;->i:Landroidx/fragment/app/Fragment;
-
-    iput-object p4, p0, Landroidx/fragment/app/r;->j:Landroidx/fragment/app/n0$a;
-
-    iput-object p5, p0, Landroidx/fragment/app/r;->k:Lb0/a;
-
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    sput-object v0, Landroidx/fragment/app/r;->a:Lm/g;
 
     return-void
 .end method
 
+.method public constructor <init>()V
+    .locals 0
 
-# virtual methods
-.method public onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static b(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/ClassLoader;",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/ClassNotFoundException;
+        }
+    .end annotation
 
     .line 1
-    iget-object p1, p0, Landroidx/fragment/app/r;->g:Landroid/view/ViewGroup;
-
-    iget-object v0, p0, Landroidx/fragment/app/r;->h:Landroid/view/View;
-
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
-
-    .line 2
-    iget-object p1, p0, Landroidx/fragment/app/r;->i:Landroidx/fragment/app/Fragment;
-
-    .line 3
-    iget-object v0, p1, Landroidx/fragment/app/Fragment;->Q:Landroidx/fragment/app/Fragment$d;
+    sget-object v0, Landroidx/fragment/app/r;->a:Lm/g;
 
     const/4 v1, 0x0
 
-    if-nez v0, :cond_0
+    .line 2
+    invoke-virtual {v0, p0, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-object v0, v1
+    move-result-object v2
 
-    goto :goto_0
+    .line 3
+    check-cast v2, Lm/g;
+
+    if-nez v2, :cond_0
 
     .line 4
-    :cond_0
-    iget-object v0, v0, Landroidx/fragment/app/Fragment$d;->b:Landroid/animation/Animator;
+    new-instance v2, Lm/g;
+
+    invoke-direct {v2}, Lm/g;-><init>()V
 
     .line 5
-    :goto_0
-    invoke-virtual {p1, v1}, Landroidx/fragment/app/Fragment;->I0(Landroid/animation/Animator;)V
-
-    if-eqz v0, :cond_1
+    invoke-virtual {v0, p0, v2}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
-    iget-object p1, p0, Landroidx/fragment/app/r;->g:Landroid/view/ViewGroup;
+    :cond_0
+    invoke-virtual {v2, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, Landroidx/fragment/app/r;->h:Landroid/view/View;
-
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
-
-    move-result p1
-
-    if-gez p1, :cond_1
+    move-result-object v0
 
     .line 7
-    iget-object p1, p0, Landroidx/fragment/app/r;->j:Landroidx/fragment/app/n0$a;
+    check-cast v0, Ljava/lang/Class;
 
-    iget-object v0, p0, Landroidx/fragment/app/r;->i:Landroidx/fragment/app/Fragment;
+    if-nez v0, :cond_1
 
-    iget-object v1, p0, Landroidx/fragment/app/r;->k:Lb0/a;
+    const/4 v0, 0x0
 
-    check-cast p1, Landroidx/fragment/app/FragmentManager$d;
+    .line 8
+    invoke-static {p1, v0, p0}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
 
-    invoke-virtual {p1, v0, v1}, Landroidx/fragment/app/FragmentManager$d;->a(Landroidx/fragment/app/Fragment;Lb0/a;)V
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v2, p1, v0}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_1
-    return-void
+    return-object v0
+.end method
+
+.method public static c(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/ClassLoader;",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/lang/Class<",
+            "+",
+            "Landroidx/fragment/app/Fragment;",
+            ">;"
+        }
+    .end annotation
+
+    const-string v0, "Unable to instantiate fragment "
+
+    .line 1
+    :try_start_0
+    invoke-static {p0, p1}, Landroidx/fragment/app/r;->b(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    move-exception p0
+
+    .line 2
+    new-instance v1, Landroidx/fragment/app/Fragment$InstantiationException;
+
+    const-string v2, ": make sure class is a valid subclass of Fragment"
+
+    .line 3
+    invoke-static {v0, p1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 4
+    invoke-direct {v1, p1, p0}, Landroidx/fragment/app/Fragment$InstantiationException;-><init>(Ljava/lang/String;Ljava/lang/Exception;)V
+
+    throw v1
+
+    :catch_1
+    move-exception p0
+
+    .line 5
+    new-instance v1, Landroidx/fragment/app/Fragment$InstantiationException;
+
+    const-string v2, ": make sure class name exists"
+
+    .line 6
+    invoke-static {v0, p1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 7
+    invoke-direct {v1, p1, p0}, Landroidx/fragment/app/Fragment$InstantiationException;-><init>(Ljava/lang/String;Ljava/lang/Exception;)V
+
+    throw v1
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/ClassLoader;Ljava/lang/String;)Landroidx/fragment/app/Fragment;
+    .locals 0
+
+    const/4 p0, 0x0
+
+    throw p0
 .end method

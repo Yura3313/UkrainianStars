@@ -1,4 +1,4 @@
-.class public Le0/e;
+.class public final Le0/e;
 .super Le0/d;
 .source "Pools.java"
 
@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method public a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -72,7 +72,7 @@
     throw v1
 .end method
 
-.method public b(Ljava/lang/Object;)Z
+.method public final b(Ljava/lang/Object;)Z
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {

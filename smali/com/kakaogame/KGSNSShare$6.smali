@@ -29,7 +29,6 @@
 .method public constructor <init>(Ljava/lang/String;Lcom/kakaogame/util/MutexLock;J)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSNSShare$6;->val$baseUrl:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/kakaogame/KGSNSShare$6;->val$resultLock:Lcom/kakaogame/util/MutexLock;

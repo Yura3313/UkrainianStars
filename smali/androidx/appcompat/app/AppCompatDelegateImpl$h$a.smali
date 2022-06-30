@@ -1,11 +1,11 @@
-.class public Landroidx/appcompat/app/AppCompatDelegateImpl$h$a;
+.class public final Landroidx/appcompat/app/AppCompatDelegateImpl$h$a;
 .super Landroid/content/BroadcastReceiver;
 .source "AppCompatDelegateImpl.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/appcompat/app/AppCompatDelegateImpl$h;->e()V
+    value = Landroidx/appcompat/app/AppCompatDelegateImpl$h;->d()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,7 +22,6 @@
 .method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl$h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h$a;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$h;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -32,13 +31,12 @@
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h$a;->a:Landroidx/appcompat/app/AppCompatDelegateImpl$h;
 
-    invoke-virtual {p1}, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->d()V
+    invoke-virtual {p1}, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->c()V
 
     return-void
 .end method

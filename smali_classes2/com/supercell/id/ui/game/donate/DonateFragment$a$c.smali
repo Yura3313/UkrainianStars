@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;
-.super Lle/j;
+.super Lse/h;
 .source "DonateFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/game/donate/DonateFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
+    value = Lcom/supercell/id/ui/game/donate/DonateFragment$a;->n(Lae/c2$a;ILae/b2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,68 +18,71 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
+        "Lse/h;",
+        "Lre/l<",
         "Landroid/graphics/drawable/Drawable;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Ljava/lang/ref/WeakReference;
+.field public final synthetic f:Ljava/lang/ref/WeakReference;
 
-.field public final synthetic h:Lvd/j1;
+.field public final synthetic g:Lae/b2;
 
-.field public final synthetic i:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/ref/WeakReference;Lvd/j1;Landroid/view/View;)V
+.method public constructor <init>(Ljava/lang/ref/WeakReference;Lae/b2;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->g:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->f:Ljava/lang/ref/WeakReference;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->h:Lvd/j1;
+    iput-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->g:Lae/b2;
 
-    iput-object p3, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->i:Landroid/view/View;
+    iput-object p3, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->h:Landroid/view/View;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
     .line 1
     check-cast p1, Landroid/graphics/drawable/Drawable;
 
-    if-eqz p1, :cond_2
+    const-string v0, "bitmapDrawable"
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->g:Ljava/lang/ref/WeakReference;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    .line 3
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->f:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lvd/k1$a;
+    check-cast v0, Lae/c2$a;
 
     if-eqz v0, :cond_1
 
-    .line 3
-    iget-object v0, v0, Lvd/k1$a;->A:Lvd/j1;
-
     .line 4
-    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->h:Lvd/j1;
+    iget-object v0, v0, Lae/c2$a;->z:Lae/b2;
 
-    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 5
+    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->g:Lae/b2;
+
+    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -89,9 +92,9 @@
 
     goto :goto_0
 
-    .line 5
+    .line 6
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->i:Landroid/view/View;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->h:Landroid/view/View;
 
     sget v1, Lcom/supercell/id/R$id;->gameIconView:I
 
@@ -103,20 +106,10 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 6
+    .line 7
     :cond_1
     :goto_0
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
-
-    :cond_2
-    const-string p1, "bitmapDrawable"
-
-    .line 7
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

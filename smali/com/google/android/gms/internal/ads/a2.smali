@@ -7,19 +7,18 @@
 
 
 # instance fields
-.field public final synthetic a:Lj3/on0;
+.field public final synthetic a:Lk3/kn0;
 
-.field public final synthetic b:Lj3/gn0;
+.field public final synthetic b:Lk3/cn0;
 
 
 # direct methods
-.method public constructor <init>(Lj3/on0;Lj3/gn0;)V
+.method public constructor <init>(Lk3/kn0;Lk3/cn0;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/a2;->a:Lj3/on0;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/a2;->a:Lk3/kn0;
 
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/a2;->b:Lj3/gn0;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/a2;->b:Lk3/cn0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,8 +27,8 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Class;)Lj3/fn0;
-    .locals 3
+.method public final a(Ljava/lang/Class;)Lk3/bn0;
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<Q:",
@@ -37,7 +36,7 @@
             ">(",
             "Ljava/lang/Class<",
             "TQ;>;)",
-            "Lj3/fn0<",
+            "Lk3/bn0<",
             "TQ;>;"
         }
     .end annotation
@@ -52,11 +51,9 @@
     :try_start_0
     new-instance v0, Lcom/google/android/gms/internal/ads/x1;
 
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/a2;->a:Lj3/on0;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/a2;->a:Lk3/kn0;
 
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/a2;->b:Lj3/gn0;
-
-    invoke-direct {v0, v1, v2, p1}, Lcom/google/android/gms/internal/ads/x1;-><init>(Lj3/on0;Lj3/gn0;Ljava/lang/Class;)V
+    invoke-direct {v0, v1, p1}, Lcom/google/android/gms/internal/ads/x1;-><init>(Lk3/kn0;Ljava/lang/Class;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -85,8 +82,7 @@
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/a2;->b:Lj3/gn0;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/a2;->b:Lk3/cn0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -106,22 +102,21 @@
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/a2;->a:Lj3/on0;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/a2;->a:Lk3/kn0;
 
-    invoke-virtual {v0}, Lj3/gn0;->d()Ljava/util/Set;
+    invoke-virtual {v0}, Lk3/cn0;->d()Ljava/util/Set;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final d()Lj3/fn0;
-    .locals 4
+.method public final d()Lk3/bn0;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lj3/fn0<",
+            "Lk3/bn0<",
             "*>;"
         }
     .end annotation
@@ -129,15 +124,13 @@
     .line 1
     new-instance v0, Lcom/google/android/gms/internal/ads/x1;
 
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/a2;->a:Lj3/on0;
-
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/a2;->b:Lj3/gn0;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/a2;->a:Lk3/kn0;
 
     .line 2
-    iget-object v3, v1, Lj3/gn0;->c:Ljava/lang/Class;
+    iget-object v2, v1, Lk3/cn0;->c:Ljava/lang/Class;
 
     .line 3
-    invoke-direct {v0, v1, v2, v3}, Lcom/google/android/gms/internal/ads/x1;-><init>(Lj3/on0;Lj3/gn0;Ljava/lang/Class;)V
+    invoke-direct {v0, v1, v2}, Lcom/google/android/gms/internal/ads/x1;-><init>(Lk3/kn0;Ljava/lang/Class;)V
 
     return-object v0
 .end method
@@ -152,8 +145,7 @@
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/a2;->a:Lj3/on0;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/a2;->a:Lk3/kn0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

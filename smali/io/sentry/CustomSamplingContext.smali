@@ -65,7 +65,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/CustomSamplingContext;->data:Ljava/util/Map;
 
     return-object v0

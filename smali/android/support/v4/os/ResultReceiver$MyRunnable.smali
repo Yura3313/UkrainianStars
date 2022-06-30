@@ -48,7 +48,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/os/ResultReceiver$MyRunnable;->this$0:Landroid/support/v4/os/ResultReceiver;
 
     iget v1, p0, Landroid/support/v4/os/ResultReceiver$MyRunnable;->mResultCode:I

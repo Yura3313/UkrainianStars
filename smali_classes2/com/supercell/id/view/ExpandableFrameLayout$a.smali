@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field public g:Z
+.field public f:Z
 
-.field public final h:I
+.field public final g:I
 
-.field public final synthetic i:Lcom/supercell/id/view/ExpandableFrameLayout;
+.field public final synthetic h:Lcom/supercell/id/view/ExpandableFrameLayout;
 
 
 # direct methods
@@ -34,68 +34,60 @@
         }
     .end annotation
 
-    .line 1
-    iput-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->i:Lcom/supercell/id/view/ExpandableFrameLayout;
+    iput-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->h:Lcom/supercell/id/view/ExpandableFrameLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p2, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->h:I
+    iput p2, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->g:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 0
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "animation"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x1
 
-    .line 1
-    iput-boolean p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->g:Z
+    iput-boolean p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->f:Z
 
     return-void
-
-    :cond_0
-    const-string p1, "animation"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public onAnimationEnd(Landroid/animation/Animator;)V
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
 
-    if-eqz p1, :cond_2
+    const-string v0, "animation"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-boolean p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->g:Z
+    iget-boolean p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->f:Z
 
     if-nez p1, :cond_1
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->i:Lcom/supercell/id/view/ExpandableFrameLayout;
+    iget-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->h:Lcom/supercell/id/view/ExpandableFrameLayout;
 
-    iget v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->h:I
+    iget v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->g:I
 
     if-nez v0, :cond_0
 
-    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->g:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->f:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     goto :goto_0
 
     :cond_0
-    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->j:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->i:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     .line 3
     :goto_0
-    iput-object v1, p1, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iput-object v1, p1, Lcom/supercell/id/view/ExpandableFrameLayout;->g:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     int-to-float v0, v0
 
@@ -104,68 +96,42 @@
 
     :cond_1
     return-void
-
-    :cond_2
-    const-string p1, "animation"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public onAnimationRepeat(Landroid/animation/Animator;)V
-    .locals 0
-
-    if-eqz p1, :cond_0
-
-    return-void
-
-    :cond_0
-    const-string p1, "animation"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public onAnimationStart(Landroid/animation/Animator;)V
+.method public final onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 1
 
-    if-eqz p1, :cond_1
+    const-string v0, "animation"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 1
+
+    const-string v0, "animation"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->i:Lcom/supercell/id/view/ExpandableFrameLayout;
+    iget-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->h:Lcom/supercell/id/view/ExpandableFrameLayout;
 
-    iget v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->h:I
+    iget v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout$a;->g:I
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->g:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     goto :goto_0
 
     :cond_0
-    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->i:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     .line 2
     :goto_0
-    iput-object v0, p1, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iput-object v0, p1, Lcom/supercell/id/view/ExpandableFrameLayout;->g:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     return-void
-
-    :cond_1
-    const-string p1, "animation"
-
-    .line 3
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

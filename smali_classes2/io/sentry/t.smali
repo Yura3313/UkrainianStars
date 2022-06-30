@@ -7,20 +7,16 @@
 
 
 # instance fields
-.field public final synthetic a:Lio/sentry/ISerializer;
-
-.field public final synthetic b:Lio/sentry/UserFeedback;
+.field public final synthetic a:Lio/sentry/SentryEnvelopeItem$CachedItem;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/sentry/ISerializer;Lio/sentry/UserFeedback;)V
+.method public synthetic constructor <init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lio/sentry/t;->a:Lio/sentry/ISerializer;
-
-    iput-object p2, p0, Lio/sentry/t;->b:Lio/sentry/UserFeedback;
+    iput-object p1, p0, Lio/sentry/t;->a:Lio/sentry/SentryEnvelopeItem$CachedItem;
 
     return-void
 .end method
@@ -28,13 +24,11 @@
 
 # virtual methods
 .method public final call()Ljava/lang/Object;
-    .locals 2
+    .locals 1
 
-    iget-object v0, p0, Lio/sentry/t;->a:Lio/sentry/ISerializer;
+    iget-object v0, p0, Lio/sentry/t;->a:Lio/sentry/SentryEnvelopeItem$CachedItem;
 
-    iget-object v1, p0, Lio/sentry/t;->b:Lio/sentry/UserFeedback;
-
-    invoke-static {v0, v1}, Lio/sentry/SentryEnvelopeItem;->e(Lio/sentry/ISerializer;Lio/sentry/UserFeedback;)[B
+    invoke-static {v0}, Lio/sentry/SentryEnvelopeItem;->a(Lio/sentry/SentryEnvelopeItem$CachedItem;)Ljava/lang/Integer;
 
     move-result-object v0
 

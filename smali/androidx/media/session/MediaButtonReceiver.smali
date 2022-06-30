@@ -19,7 +19,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -129,7 +128,7 @@
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
 
     if-eqz p2, :cond_4
@@ -241,7 +240,7 @@
     .line 16
     :cond_4
     :goto_1
-    invoke-static {p2}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {p2}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     return-void
 .end method

@@ -14,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,6 +33,7 @@
 
     const-string v2, "_"
 
+    .line 2
     invoke-virtual {p1, v1, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p1
@@ -61,7 +61,7 @@
 
 
 # virtual methods
-.method public synthetic getBooleanProperty(Ljava/lang/String;)Ljava/lang/Boolean;
+.method public final synthetic getBooleanProperty(Ljava/lang/String;)Ljava/lang/Boolean;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/config/a;->a(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;)Ljava/lang/Boolean;
@@ -71,7 +71,7 @@
     return-object p1
 .end method
 
-.method public synthetic getDoubleProperty(Ljava/lang/String;)Ljava/lang/Double;
+.method public final synthetic getDoubleProperty(Ljava/lang/String;)Ljava/lang/Double;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/config/a;->b(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;)Ljava/lang/Double;
@@ -81,7 +81,7 @@
     return-object p1
 .end method
 
-.method public synthetic getList(Ljava/lang/String;)Ljava/util/List;
+.method public final synthetic getList(Ljava/lang/String;)Ljava/util/List;
     .locals 0
 
     invoke-static {p0, p1}, Lio/sentry/config/a;->c(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;)Ljava/util/List;
@@ -116,16 +116,17 @@
 
     const-string v1, "_"
 
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 2
+    invoke-static {v0, p1, v1}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
+    .line 3
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    .line 3
+    .line 4
     invoke-static {}, Ljava/lang/System;->getenv()Ljava/util/Map;
 
     move-result-object v1
@@ -152,21 +153,21 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 4
+    .line 5
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Ljava/lang/String;
 
-    .line 5
+    .line 6
     invoke-virtual {v3, p1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 6
+    .line 7
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -181,7 +182,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 7
+    .line 8
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v4
@@ -226,7 +227,7 @@
     return-object p1
 .end method
 
-.method public synthetic getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public final synthetic getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     invoke-static {p0, p1, p2}, Lio/sentry/config/a;->d(Lio/sentry/config/PropertiesProvider;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;

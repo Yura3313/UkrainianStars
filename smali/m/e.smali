@@ -34,10 +34,6 @@
 
 .field public e:I
 
-.field public f:I
-
-.field public g:I
-
 
 # direct methods
 .method public constructor <init>(I)V
@@ -103,11 +99,11 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget v0, p0, Lm/e;->f:I
+    iget v0, p0, Lm/e;->d:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lm/e;->f:I
+    iput v0, p0, Lm/e;->d:I
 
     .line 4
     monitor-exit p0
@@ -116,11 +112,11 @@
 
     .line 5
     :cond_0
-    iget p1, p0, Lm/e;->g:I
+    iget p1, p0, Lm/e;->e:I
 
     add-int/lit8 p1, p1, 0x1
 
-    iput p1, p0, Lm/e;->g:I
+    iput p1, p0, Lm/e;->e:I
 
     .line 6
     monitor-exit p0
@@ -166,13 +162,6 @@
 
     .line 2
     :try_start_0
-    iget v0, p0, Lm/e;->d:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    iput v0, p0, Lm/e;->d:I
-
-    .line 3
     iget v0, p0, Lm/e;->b:I
 
     invoke-virtual {p0, p1, p2}, Lm/e;->c(Ljava/lang/Object;Ljava/lang/Object;)I
@@ -183,16 +172,16 @@
 
     iput v0, p0, Lm/e;->b:I
 
-    .line 4
+    .line 3
     iget-object v0, p0, Lm/e;->a:Ljava/util/LinkedHashMap;
 
-    invoke-virtual {v0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
     if-eqz p2, :cond_0
 
-    .line 5
+    .line 4
     iget v0, p0, Lm/e;->b:I
 
     invoke-virtual {p0, p1, p2}, Lm/e;->c(Ljava/lang/Object;Ljava/lang/Object;)I
@@ -203,13 +192,13 @@
 
     iput v0, p0, Lm/e;->b:I
 
-    .line 6
+    .line 5
     :cond_0
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
+    .line 6
     iget p1, p0, Lm/e;->c:I
 
     invoke-virtual {p0, p1}, Lm/e;->e(I)V
@@ -219,7 +208,7 @@
     :catchall_0
     move-exception p1
 
-    .line 8
+    .line 7
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -227,7 +216,7 @@
 
     throw p1
 
-    .line 9
+    .line 8
     :cond_1
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -297,7 +286,7 @@
     return p1
 .end method
 
-.method public e(I)V
+.method public final e(I)V
     .locals 3
 
     .line 1
@@ -312,7 +301,7 @@
 
     iget-object v0, p0, Lm/e;->a:Ljava/util/LinkedHashMap;
 
-    invoke-virtual {v0}, Ljava/util/LinkedHashMap;->isEmpty()Z
+    invoke-virtual {v0}, Ljava/util/AbstractMap;->isEmpty()Z
 
     move-result v0
 
@@ -330,7 +319,7 @@
 
     iget-object v0, p0, Lm/e;->a:Ljava/util/LinkedHashMap;
 
-    invoke-virtual {v0}, Ljava/util/LinkedHashMap;->isEmpty()Z
+    invoke-virtual {v0}, Ljava/util/AbstractMap;->isEmpty()Z
 
     move-result v0
 
@@ -369,7 +358,7 @@
     .line 7
     iget-object v2, p0, Lm/e;->a:Ljava/util/LinkedHashMap;
 
-    invoke-virtual {v2, v1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v1}, Ljava/util/AbstractMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     iget v2, p0, Lm/e;->b:I
@@ -383,25 +372,18 @@
     iput v2, p0, Lm/e;->b:I
 
     .line 9
-    iget v0, p0, Lm/e;->e:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    iput v0, p0, Lm/e;->e:I
-
-    .line 10
     monitor-exit p0
 
     goto :goto_0
 
-    .line 11
+    .line 10
     :cond_2
     :goto_1
     monitor-exit p0
 
     return-void
 
-    .line 12
+    .line 11
     :cond_3
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -434,7 +416,7 @@
     :catchall_0
     move-exception p1
 
-    .line 13
+    .line 12
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -455,9 +437,9 @@
 
     .line 1
     :try_start_0
-    iget v0, p0, Lm/e;->f:I
+    iget v0, p0, Lm/e;->d:I
 
-    iget v1, p0, Lm/e;->g:I
+    iget v1, p0, Lm/e;->e:I
 
     add-int/2addr v1, v0
 
@@ -496,7 +478,7 @@
 
     const/4 v2, 0x1
 
-    iget v5, p0, Lm/e;->f:I
+    iget v5, p0, Lm/e;->d:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -506,7 +488,7 @@
 
     const/4 v2, 0x2
 
-    iget v5, p0, Lm/e;->g:I
+    iget v5, p0, Lm/e;->e:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

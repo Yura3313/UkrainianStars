@@ -545,7 +545,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(Ljava/util/Map;)V
@@ -558,7 +557,6 @@
 .method public getCategory()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Breadcrumb;->category:Ljava/lang/String;
 
     return-object v0
@@ -601,7 +599,6 @@
 .method public getLevel()Lio/sentry/SentryLevel;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Breadcrumb;->level:Lio/sentry/SentryLevel;
 
     return-object v0
@@ -610,7 +607,6 @@
 .method public getMessage()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Breadcrumb;->message:Ljava/lang/String;
 
     return-object v0
@@ -619,7 +615,6 @@
 .method public getTimestamp()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Breadcrumb;->timestamp:Ljava/util/Date;
 
     invoke-virtual {v0}, Ljava/util/Date;->clone()Ljava/lang/Object;
@@ -634,7 +629,6 @@
 .method public getType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Breadcrumb;->type:Ljava/lang/String;
 
     return-object v0
@@ -652,7 +646,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Breadcrumb;->unknown:Ljava/util/Map;
 
     return-object v0
@@ -661,7 +654,6 @@
 .method public removeData(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Breadcrumb;->data:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -672,7 +664,6 @@
 .method public setCategory(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/Breadcrumb;->category:Ljava/lang/String;
 
     return-void
@@ -681,7 +672,6 @@
 .method public setData(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/Breadcrumb;->data:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -692,7 +682,6 @@
 .method public setLevel(Lio/sentry/SentryLevel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/Breadcrumb;->level:Lio/sentry/SentryLevel;
 
     return-void
@@ -701,7 +690,6 @@
 .method public setMessage(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/Breadcrumb;->message:Ljava/lang/String;
 
     return-void
@@ -710,7 +698,6 @@
 .method public setType(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/Breadcrumb;->type:Ljava/lang/String;
 
     return-void

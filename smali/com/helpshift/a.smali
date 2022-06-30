@@ -1,4 +1,4 @@
-.class public Lcom/helpshift/a;
+.class public final Lcom/helpshift/a;
 .super Ljava/lang/Object;
 .source "Core.java"
 
@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method public static a(Landroid/app/Application;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lc7/b;)V
+.method public static a(Landroid/app/Application;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Le7/b;)V
     .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -31,7 +31,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 3
-    iget-boolean v1, p4, Lc7/b;->a:Z
+    iget-boolean v1, p4, Le7/b;->a:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -42,7 +42,7 @@
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    iget v1, p4, Lc7/b;->b:I
+    iget v1, p4, Le7/b;->b:I
 
     if-eqz v1, :cond_0
 
@@ -69,7 +69,7 @@
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
-    iget-boolean v1, p4, Lc7/b;->c:Z
+    iget-boolean v1, p4, Le7/b;->c:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -105,7 +105,7 @@
     invoke-interface {v0, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 12
-    iget-object v2, p4, Lc7/b;->d:Ljava/util/Map;
+    iget-object v2, p4, Le7/b;->d:Ljava/util/Map;
 
     if-eqz v2, :cond_2
 
@@ -133,7 +133,7 @@
     check-cast v3, Ljava/lang/String;
 
     .line 14
-    iget-object v4, p4, Lc7/b;->d:Ljava/util/Map;
+    iget-object v4, p4, Le7/b;->d:Ljava/util/Map;
 
     invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -142,7 +142,7 @@
     if-eqz v4, :cond_1
 
     .line 15
-    iget-object v4, p4, Lc7/b;->d:Ljava/util/Map;
+    iget-object v4, p4, Le7/b;->d:Ljava/util/Map;
 
     invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -182,7 +182,7 @@
     if-eqz p4, :cond_a
 
     .line 21
-    invoke-static {p1}, Lp5/h;->i(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Ll2/g;->d(Ljava/lang/CharSequence;)Z
 
     move-result p4
 
@@ -194,7 +194,7 @@
 
     .line 22
     :cond_4
-    invoke-static {p2}, Lp5/h;->i(Ljava/lang/CharSequence;)Z
+    invoke-static {p2}, Ll2/g;->d(Ljava/lang/CharSequence;)Z
 
     move-result p4
 
@@ -211,7 +211,7 @@
 
     .line 23
     :goto_1
-    invoke-static {p3}, Lp5/h;->i(Ljava/lang/CharSequence;)Z
+    invoke-static {p3}, Ll2/g;->d(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -223,7 +223,7 @@
 
     .line 24
     :cond_6
-    invoke-static {p1}, Lp5/h;->i(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Ll2/g;->d(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -234,7 +234,7 @@
     if-eqz v0, :cond_9
 
     .line 25
-    invoke-static {p4}, Lp5/c0;->h(Ljava/lang/String;)Z
+    invoke-static {p4}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -243,14 +243,14 @@
     if-eqz v0, :cond_8
 
     .line 26
-    invoke-static {p3}, Lcom/helpshift/util/y;->j(Ljava/lang/String;)Z
+    invoke-static {p3}, Lcom/helpshift/util/f0;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
     .line 27
-    sget-object v8, Ljb/b;->a:Ljb/a;
+    sget-object v8, Lmb/a;->a:Lmb/b;
 
     .line 28
     new-instance v9, Lcom/helpshift/b;
@@ -269,9 +269,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/helpshift/b;-><init>(Landroid/app/Application;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
-    check-cast v8, Ljb/c;
-
-    invoke-virtual {v8, v9}, Ljb/c;->b(Ljava/lang/Runnable;)V
+    invoke-virtual {v8, v9}, Lmb/b;->c(Ljava/lang/Runnable;)V
 
     .line 29
     new-instance v9, Lcom/helpshift/c;
@@ -290,13 +288,10 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/helpshift/c;-><init>(Landroid/app/Application;Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    invoke-virtual {v8, v9}, Lmb/b;->a(Ljava/lang/Runnable;)V
+
     .line 30
-    iget-object p0, v8, Ljb/c;->c:Landroid/os/Handler;
-
-    invoke-virtual {p0, v9}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    .line 31
-    sget-object p0, Lcom/helpshift/util/q;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object p0, Lcom/helpshift/util/u;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 p1, 0x0
 
@@ -304,7 +299,7 @@
 
     return-void
 
-    .line 32
+    .line 31
     :cond_7
     new-instance p0, Lcom/helpshift/exceptions/InstallException;
 
@@ -314,7 +309,7 @@
 
     throw p0
 
-    .line 33
+    .line 32
     :cond_8
     new-instance p0, Lcom/helpshift/exceptions/InstallException;
 
@@ -324,7 +319,7 @@
 
     throw p0
 
-    .line 34
+    .line 33
     :cond_9
     new-instance p0, Lcom/helpshift/exceptions/InstallException;
 
@@ -334,7 +329,7 @@
 
     throw p0
 
-    .line 35
+    .line 34
     :cond_a
     new-instance p0, Lcom/helpshift/exceptions/HelpshiftInitializationException;
 

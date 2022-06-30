@@ -42,7 +42,7 @@
 
 
 # virtual methods
-.method public a()Ls0/c;
+.method public final a()Ls0/c;
     .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -261,7 +261,7 @@
     .line 25
     new-instance v1, Ljava/security/GeneralSecurityException;
 
-    invoke-virtual {v0}, Ljava/security/ProviderException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -291,11 +291,12 @@
 
     const-string v2, "invalid padding mode, want NoPadding got "
 
+    .line 29
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 29
+    .line 30
     invoke-virtual {v0}, Landroid/security/keystore/KeyGenParameterSpec;->getEncryptionPaddings()[Ljava/lang/String;
 
     move-result-object v0
@@ -314,17 +315,18 @@
 
     throw v1
 
-    .line 30
+    .line 31
     :cond_7
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     const-string v2, "invalid purposes mode, want PURPOSE_ENCRYPT | PURPOSE_DECRYPT got "
 
+    .line 32
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 31
+    .line 33
     invoke-virtual {v0}, Landroid/security/keystore/KeyGenParameterSpec;->getPurposes()I
 
     move-result v0
@@ -339,17 +341,18 @@
 
     throw v1
 
-    .line 32
+    .line 34
     :cond_8
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     const-string v2, "invalid block mode, want GCM got "
 
+    .line 35
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 33
+    .line 36
     invoke-virtual {v0}, Landroid/security/keystore/KeyGenParameterSpec;->getBlockModes()[Ljava/lang/String;
 
     move-result-object v0
@@ -368,17 +371,18 @@
 
     throw v1
 
-    .line 34
+    .line 37
     :cond_9
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     const-string v2, "invalid key size, want 256 bits got "
 
+    .line 38
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 35
+    .line 39
     invoke-virtual {v0}, Landroid/security/keystore/KeyGenParameterSpec;->getKeySize()I
 
     move-result v0
@@ -397,7 +401,7 @@
 
     throw v1
 
-    .line 36
+    .line 40
     :cond_a
     new-instance v0, Ljava/lang/NullPointerException;
 
@@ -407,7 +411,7 @@
 
     throw v0
 
-    .line 37
+    .line 41
     :cond_b
     new-instance v0, Ls0/c;
 
@@ -418,75 +422,72 @@
     return-object v0
 .end method
 
-.method public b(I)Ls0/c$a;
+.method public final b()Ls0/c$a;
     .locals 3
 
-    if-eqz p1, :cond_3
-
-    add-int/lit8 v0, p1, -0x1
-
-    if-nez v0, :cond_2
+    const/4 v0, 0x1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-static {v0}, Lp/g;->b(I)I
 
-    const/16 v1, 0x17
+    move-result v1
 
-    if-lt v0, v1, :cond_1
+    if-nez v1, :cond_2
 
     .line 2
-    iget-object v0, p0, Ls0/c$a;->b:Landroid/security/keystore/KeyGenParameterSpec;
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    if-nez v0, :cond_0
+    const/16 v2, 0x17
+
+    if-lt v1, v2, :cond_1
+
+    .line 3
+    iget-object v1, p0, Ls0/c$a;->b:Landroid/security/keystore/KeyGenParameterSpec;
+
+    if-nez v1, :cond_0
 
     goto :goto_0
 
-    .line 3
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string v0, "KeyScheme set after setting a KeyGenParamSpec"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
     .line 4
-    :cond_1
-    :goto_0
-    iput p1, p0, Ls0/c$a;->c:I
-
-    return-object p0
-
-    .line 5
-    :cond_2
+    :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-string v1, "KeyScheme set after setting a KeyGenParamSpec"
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Unsupported scheme: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-static {p1}, Lcom/supercell/titan/a;->a(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    :cond_3
-    const/4 p1, 0x0
+    .line 5
+    :cond_1
+    :goto_0
+    iput v0, p0, Ls0/c$a;->c:I
+
+    return-object p0
 
     .line 6
-    throw p1
+    :cond_2
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
+    const-string v2, "Unsupported scheme: "
+
+    .line 7
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 8
+    invoke-static {v0}, La2/i;->b(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v1
 .end method

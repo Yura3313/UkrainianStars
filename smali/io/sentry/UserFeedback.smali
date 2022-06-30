@@ -51,7 +51,6 @@
 .method public getComments()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/UserFeedback;->comments:Ljava/lang/String;
 
     return-object v0
@@ -60,7 +59,6 @@
 .method public getEmail()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/UserFeedback;->email:Ljava/lang/String;
 
     return-object v0
@@ -69,7 +67,6 @@
 .method public getEventId()Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/UserFeedback;->eventId:Lio/sentry/protocol/SentryId;
 
     return-object v0
@@ -78,7 +75,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/UserFeedback;->name:Ljava/lang/String;
 
     return-object v0
@@ -87,7 +83,6 @@
 .method public setComments(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/UserFeedback;->comments:Ljava/lang/String;
 
     return-void
@@ -96,7 +91,6 @@
 .method public setEmail(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/UserFeedback;->email:Ljava/lang/String;
 
     return-void
@@ -105,7 +99,6 @@
 .method public setName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/UserFeedback;->name:Ljava/lang/String;
 
     return-void
@@ -121,6 +114,7 @@
 
     move-result-object v0
 
+    .line 2
     iget-object v1, p0, Lio/sentry/UserFeedback;->eventId:Lio/sentry/protocol/SentryId;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

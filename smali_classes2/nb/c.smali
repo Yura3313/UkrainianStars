@@ -1,63 +1,43 @@
-.class public abstract Lnb/c;
-.super Ljava/lang/Object;
-.source "HSBaseObservable.java"
+.class public final Lnb/c;
+.super Landroid/text/style/MetricAffectingSpan;
+.source "HSTypefaceSpan.java"
 
 
 # instance fields
-.field public a:Lz7/f;
-
-.field public b:Lnb/d;
+.field public final f:Landroid/graphics/Typeface;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/graphics/Typeface;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lnb/c;->f:Landroid/graphics/Typeface;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)V
-    .locals 2
+.method public final updateDrawState(Landroid/text/TextPaint;)V
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lnb/c;->b:Lnb/d;
+    iget-object v0, p0, Lnb/c;->f:Landroid/graphics/Typeface;
 
-    if-eqz v0, :cond_0
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
-    iget-object v0, p0, Lnb/c;->a:Lz7/f;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    new-instance v1, Lnb/c$a;
-
-    invoke-direct {v1, p0, p1}, Lnb/c$a;-><init>(Lnb/c;Ljava/lang/Object;)V
-
-    invoke-virtual {v0, v1}, Lz7/f;->h(Lz7/g;)V
-
-    :cond_0
     return-void
 .end method
 
-.method public abstract b()V
-.end method
+.method public final updateMeasureState(Landroid/text/TextPaint;)V
+    .locals 1
 
-.method public c(Lz7/f;Lnb/d;)V
-    .locals 0
+    iget-object v0, p0, Lnb/c;->f:Landroid/graphics/Typeface;
 
-    .line 1
-    iput-object p1, p0, Lnb/c;->a:Lz7/f;
-
-    .line 2
-    iput-object p2, p0, Lnb/c;->b:Lnb/d;
-
-    .line 3
-    invoke-virtual {p0}, Lnb/c;->b()V
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
     return-void
 .end method

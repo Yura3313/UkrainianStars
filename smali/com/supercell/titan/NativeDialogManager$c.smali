@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/NativeDialogManager$c;
+.class public final Lcom/supercell/titan/NativeDialogManager$c;
 .super Ljava/lang/Object;
 .source "NativeDialogManager.java"
 
@@ -51,32 +51,6 @@
 
     .line 6
     iput-object v0, p0, Lcom/supercell/titan/NativeDialogManager$c;->e:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lcom/supercell/titan/NativeDialogManager$a;)V
-    .locals 0
-
-    .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const-string p1, ""
-
-    .line 8
-    iput-object p1, p0, Lcom/supercell/titan/NativeDialogManager$c;->a:Ljava/lang/String;
-
-    .line 9
-    iput-object p1, p0, Lcom/supercell/titan/NativeDialogManager$c;->b:Ljava/lang/String;
-
-    .line 10
-    iput-object p1, p0, Lcom/supercell/titan/NativeDialogManager$c;->c:Ljava/lang/String;
-
-    .line 11
-    iput-object p1, p0, Lcom/supercell/titan/NativeDialogManager$c;->d:Ljava/lang/String;
-
-    .line 12
-    iput-object p1, p0, Lcom/supercell/titan/NativeDialogManager$c;->e:Ljava/lang/String;
 
     return-void
 .end method

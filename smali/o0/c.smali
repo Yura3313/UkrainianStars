@@ -27,13 +27,25 @@
 
 
 # static fields
-.field public static final l:Ljava/util/concurrent/Executor;
+.field public static final k:Lo0/c$a;
 
-.field public static m:Lo0/c$e;
+.field public static final l:Ljava/util/concurrent/LinkedBlockingQueue;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/BlockingQueue<",
+            "Ljava/lang/Runnable;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final m:Ljava/util/concurrent/ThreadPoolExecutor;
+
+.field public static n:Lo0/c$e;
 
 
 # instance fields
-.field public final g:Lo0/c$f;
+.field public final f:Lo0/c$b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lo0/c$f<",
@@ -42,7 +54,7 @@
     .end annotation
 .end field
 
-.field public final h:Ljava/util/concurrent/FutureTask;
+.field public final g:Lo0/c$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/FutureTask<",
@@ -51,11 +63,11 @@
     .end annotation
 .end field
 
-.field public volatile i:I
+.field public volatile h:I
+
+.field public final i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 .field public final j:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field public final k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 
 # direct methods
@@ -67,12 +79,16 @@
 
     invoke-direct {v7}, Lo0/c$a;-><init>()V
 
+    sput-object v7, Lo0/c;->k:Lo0/c$a;
+
     .line 2
     new-instance v6, Ljava/util/concurrent/LinkedBlockingQueue;
 
     const/16 v0, 0xa
 
     invoke-direct {v6, v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>(I)V
+
+    sput-object v6, Lo0/c;->l:Ljava/util/concurrent/LinkedBlockingQueue;
 
     .line 3
     new-instance v8, Ljava/util/concurrent/ThreadPoolExecutor;
@@ -89,7 +105,7 @@
 
     invoke-direct/range {v0 .. v7}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
-    sput-object v8, Lo0/c;->l:Ljava/util/concurrent/Executor;
+    sput-object v8, Lo0/c;->m:Ljava/util/concurrent/ThreadPoolExecutor;
 
     return-void
 .end method
@@ -103,42 +119,42 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, Lo0/c;->i:I
+    iput v0, p0, Lo0/c;->h:I
 
     .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
-    iput-object v0, p0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lo0/c;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 4
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
-    iput-object v0, p0, Lo0/c;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 5
     new-instance v0, Lo0/c$b;
 
     invoke-direct {v0, p0}, Lo0/c$b;-><init>(Lo0/c;)V
 
-    iput-object v0, p0, Lo0/c;->g:Lo0/c$f;
+    iput-object v0, p0, Lo0/c;->f:Lo0/c$b;
 
     .line 6
     new-instance v1, Lo0/c$c;
 
     invoke-direct {v1, p0, v0}, Lo0/c$c;-><init>(Lo0/c;Ljava/util/concurrent/Callable;)V
 
-    iput-object v1, p0, Lo0/c;->h:Ljava/util/concurrent/FutureTask;
+    iput-object v1, p0, Lo0/c;->g:Lo0/c$c;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public varargs abstract a([Ljava/lang/Object;)Ljava/lang/Object;
+.method public varargs abstract a([Ljava/lang/Object;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([TParams;)TResult;"
@@ -146,7 +162,7 @@
     .end annotation
 .end method
 
-.method public b(Ljava/lang/Object;)V
+.method public b()V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -168,7 +184,7 @@
     return-void
 .end method
 
-.method public d(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final d(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -183,7 +199,7 @@
 
     .line 2
     :try_start_0
-    sget-object v1, Lo0/c;->m:Lo0/c$e;
+    sget-object v1, Lo0/c;->n:Lo0/c$e;
 
     if-nez v1, :cond_0
 
@@ -192,11 +208,11 @@
 
     invoke-direct {v1}, Lo0/c$e;-><init>()V
 
-    sput-object v1, Lo0/c;->m:Lo0/c$e;
+    sput-object v1, Lo0/c;->n:Lo0/c$e;
 
     .line 4
     :cond_0
-    sget-object v1, Lo0/c;->m:Lo0/c$e;
+    sget-object v1, Lo0/c;->n:Lo0/c$e;
 
     monitor-exit v0
     :try_end_0

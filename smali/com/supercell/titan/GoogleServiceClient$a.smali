@@ -1,9 +1,9 @@
-.class public Lcom/supercell/titan/GoogleServiceClient$a;
+.class public final Lcom/supercell/titan/GoogleServiceClient$a;
 .super Ljava/lang/Object;
 .source "GoogleServiceClient.java"
 
 # interfaces
-.implements Lb4/c;
+.implements Lc4/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lb4/c<",
+        "Lc4/c<",
         "Lcom/google/android/gms/games/Player;",
         ">;"
     }
@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/supercell/titan/GoogleServiceClient;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/titan/GoogleServiceClient$a;->a:Lcom/supercell/titan/GoogleServiceClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,26 +43,26 @@
 
 
 # virtual methods
-.method public a(Lb4/f;)V
+.method public final a(Lc4/f;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lb4/f<",
+            "Lc4/f<",
             "Lcom/google/android/gms/games/Player;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lb4/f;->l()Z
+    invoke-virtual {p1}, Lc4/f;->m()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 2
-    invoke-virtual {p1}, Lb4/f;->h()Ljava/lang/Object;
+    invoke-virtual {p1}, Lc4/f;->i()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -87,7 +86,7 @@
     .line 5
     iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$a;->a:Lcom/supercell/titan/GoogleServiceClient;
 
-    invoke-interface {p1}, Lcom/google/android/gms/games/Player;->s2()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/Player;->w2()Ljava/lang/String;
 
     move-result-object v1
 
@@ -110,11 +109,11 @@
     invoke-interface {p1}, Lcom/google/android/gms/games/Player;->getTitle()Ljava/lang/String;
 
     .line 12
-    invoke-interface {p1}, Lcom/google/android/gms/games/Player;->a()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/games/Player;->c()Landroid/net/Uri;
 
     move-result-object p1
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
 
     .line 13
     invoke-static {}, Lcom/supercell/titan/GoogleServiceClient;->onSignIn()V

@@ -1,147 +1,49 @@
-.class public Lpb/h;
-.super Ljava/lang/Object;
-.source "CameraThread.java"
+.class public final Lpb/h;
+.super Lpb/m;
+.source "FixedDistanceHuffman.java"
 
 
 # static fields
-.field public static e:Lpb/h;
-
-
-# instance fields
-.field public a:Landroid/os/Handler;
-
-.field public b:Landroid/os/HandlerThread;
-
-.field public c:I
-
-.field public final d:Ljava/lang/Object;
+.field public static final e:Lpb/h;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lpb/h;
 
-    const/4 v0, 0x0
+    invoke-direct {v0}, Lpb/h;-><init>()V
 
-    .line 2
-    iput v0, p0, Lpb/h;->c:I
-
-    .line 3
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lpb/h;->d:Ljava/lang/Object;
+    sput-object v0, Lpb/h;->e:Lpb/h;
 
     return-void
 .end method
 
+.method public constructor <init>()V
+    .locals 4
 
-# virtual methods
-.method public final a()V
-    .locals 3
+    const/16 v0, 0x20
+
+    new-array v1, v0, [I
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v0, :cond_0
+
+    const/4 v3, 0x5
 
     .line 1
-    iget-object v0, p0, Lpb/h;->d:Ljava/lang/Object;
+    aput v3, v1, v2
 
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    iget-object v1, p0, Lpb/h;->a:Landroid/os/Handler;
-
-    if-nez v1, :cond_1
-
-    .line 3
-    iget v1, p0, Lpb/h;->c:I
-
-    if-lez v1, :cond_0
-
-    .line 4
-    new-instance v1, Landroid/os/HandlerThread;
-
-    const-string v2, "CameraThread"
-
-    invoke-direct {v1, v2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
-
-    iput-object v1, p0, Lpb/h;->b:Landroid/os/HandlerThread;
-
-    .line 5
-    invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
-
-    .line 6
-    new-instance v1, Landroid/os/Handler;
-
-    iget-object v2, p0, Lpb/h;->b:Landroid/os/HandlerThread;
-
-    invoke-virtual {v2}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    iput-object v1, p0, Lpb/h;->a:Landroid/os/Handler;
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 7
-    :cond_0
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    const-string v2, "CameraThread is not open"
-
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 8
-    :cond_1
-    :goto_0
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
-.end method
-
-.method public b(Ljava/lang/Runnable;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lpb/h;->d:Ljava/lang/Object;
-
-    monitor-enter v0
-
     .line 2
-    :try_start_0
-    invoke-virtual {p0}, Lpb/h;->a()V
-
-    .line 3
-    iget-object v1, p0, Lpb/h;->a:Landroid/os/Handler;
-
-    invoke-virtual {v1, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    .line 4
-    monitor-exit v0
+    :cond_0
+    invoke-direct {p0, v1}, Lpb/m;-><init>([I)V
 
     return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
 .end method

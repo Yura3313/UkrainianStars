@@ -1,29 +1,68 @@
-.class public abstract Lcom/google/android/play/core/assetpacks/g2;
+.class public final Lcom/google/android/play/core/assetpacks/g2;
 .super Ljava/lang/Object;
+
+# interfaces
+.implements La5/u0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "La5/u0<",
+        "Lcom/google/android/play/core/assetpacks/f2;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final f:La5/u0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "La5/u0<",
+            "Lcom/google/android/play/core/assetpacks/z;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(La5/u0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "La5/u0<",
+            "Lcom/google/android/play/core/assetpacks/z;",
+            ">;)V"
+        }
+    .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/g2;->f:La5/u0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a()Ljava/lang/String;
-.end method
+.method public final bridge synthetic e()Ljava/lang/Object;
+    .locals 2
 
-.method public abstract b()J
-.end method
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/g2;->f:La5/u0;
 
-.method public abstract c()I
-.end method
+    invoke-interface {v0}, La5/u0;->e()Ljava/lang/Object;
 
-.method public abstract d()Z
-.end method
+    move-result-object v0
 
-.method public abstract e()[B
+    new-instance v1, Lcom/google/android/play/core/assetpacks/f2;
+
+    check-cast v0, Lcom/google/android/play/core/assetpacks/z;
+
+    invoke-direct {v1, v0}, Lcom/google/android/play/core/assetpacks/f2;-><init>(Lcom/google/android/play/core/assetpacks/z;)V
+
+    return-object v1
 .end method

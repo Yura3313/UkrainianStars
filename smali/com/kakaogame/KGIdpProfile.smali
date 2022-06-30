@@ -32,7 +32,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/KGObject;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -41,7 +40,6 @@
 .method public static synthetic access$000()Lcom/kakaogame/KGResult;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/KGIdpProfile;->refreshLocalIdpProfile()Lcom/kakaogame/KGResult;
 
     move-result-object v0
@@ -106,7 +104,7 @@
     move-exception v1
 
     .line 4
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -120,7 +118,6 @@
 .method private static initInterfaceBroker()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/kakaogame/KGIdpProfile$2;
 
     invoke-direct {v0}, Lcom/kakaogame/KGIdpProfile$2;-><init>()V
@@ -135,7 +132,6 @@
 .method public static initialize()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/kakaogame/KGIdpProfile;->initInterfaceBroker()V
 
     return-void
@@ -304,7 +300,7 @@
     const/16 v2, 0xfa1
 
     .line 18
-    invoke-static {v0, v1, v0, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v0, v1, v0, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -355,7 +351,6 @@
 
     const-string v0, "idpAccessToken"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -420,7 +415,6 @@
 
     const-string v0, "idpUserId"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -435,7 +429,6 @@
 
     const-string v0, "playerId"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/kakaogame/KGObject;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0

@@ -23,7 +23,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -166,7 +165,7 @@
 
     const-string p1, "url"
 
-    invoke-virtual {p0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -187,7 +186,7 @@
     const/16 p1, 0xfa1
 
     .line 13
-    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 
@@ -327,7 +326,8 @@
 
     move-result-object p1
 
-    invoke-virtual {p0}, Ljava/lang/RuntimeException;->toString()Ljava/lang/String;
+    .line 15
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -341,7 +341,7 @@
 
     invoke-static {p1, p0}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 15
+    .line 16
     :cond_0
     :goto_0
     sget-object p0, Lcom/kakaogame/infodesk/InfodeskService$Settings;->getInfodeskParamMap:Ljava/util/Map;
@@ -491,7 +491,8 @@
 
     move-result-object v2
 
-    invoke-virtual {v1}, Ljava/lang/RuntimeException;->toString()Ljava/lang/String;
+    .line 15
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -505,7 +506,7 @@
 
     invoke-static {v2, v1}, Lcom/kakaogame/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 15
+    .line 16
     :cond_0
     :goto_0
     sget-object v1, Lcom/kakaogame/infodesk/InfodeskService$Settings;->getInfodeskParamMap:Ljava/util/Map;
@@ -767,7 +768,7 @@
     const-string p1, "apps"
 
     .line 15
-    invoke-virtual {p0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -782,14 +783,14 @@
 
     .line 17
     :goto_0
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v1
 
     if-ge v0, v1, :cond_3
 
     .line 18
-    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -836,7 +837,7 @@
     const/16 p1, 0xfa1
 
     .line 23
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1025,7 +1026,7 @@
     move-exception v0
 
     .line 20
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1037,7 +1038,7 @@
     invoke-static {v1, v2, v3, v0, v3}, Lcom/kakaogame/log/ErrorLogManager;->sendInfodeskError(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/String;)V
 
     .line 22
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 

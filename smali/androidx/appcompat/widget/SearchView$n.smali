@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/SearchView$n;
+.class public final Landroidx/appcompat/widget/SearchView$n;
 .super Ljava/lang/Object;
 .source "SearchView.java"
 
@@ -69,7 +69,7 @@
     iput-object v2, p0, Landroidx/appcompat/widget/SearchView$n;->a:Ljava/lang/reflect/Method;
 
     .line 8
-    invoke-virtual {v2, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v2, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -90,7 +90,7 @@
     iput-object v2, p0, Landroidx/appcompat/widget/SearchView$n;->b:Ljava/lang/reflect/Method;
 
     .line 11
-    invoke-virtual {v2, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v2, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_1
     .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -115,7 +115,7 @@
     iput-object v0, p0, Landroidx/appcompat/widget/SearchView$n;->c:Ljava/lang/reflect/Method;
 
     .line 14
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v0, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_2
     .catch Ljava/lang/NoSuchMethodException; {:try_start_2 .. :try_end_2} :catch_2
 

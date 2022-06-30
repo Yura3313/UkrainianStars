@@ -1,82 +1,87 @@
 .class public final Lnd/f;
-.super Ljava/lang/Object;
-.source "Comparisons.kt"
+.super Lse/h;
+.source "MessagesTabFriendsFragment.kt"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "TT;>;"
+        "Lse/h;",
+        "Lre/p<",
+        "Lnd/b;",
+        "Ljava/lang/Exception;",
+        "Lie/h;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic g:Ljava/util/Comparator;
+# static fields
+.field public static final f:Lnd/f;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Comparator;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lnd/f;->g:Ljava/util/Comparator;
+    new-instance v0, Lnd/f;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Lnd/f;-><init>()V
+
+    sput-object v0, Lnd/f;->f:Lnd/f;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)I"
-        }
-    .end annotation
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lnd/f;->g:Ljava/util/Comparator;
+    check-cast p1, Lnd/b;
 
-    check-cast p1, Lnd/a;
+    check-cast p2, Ljava/lang/Exception;
+
+    const-string v0, "$receiver"
 
     .line 2
-    iget-object p1, p1, Lnd/a;->c:Ljava/lang/String;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v1, ""
+    const-string v0, "it"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object p1
 
     if-eqz p1, :cond_0
 
-    goto :goto_0
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
-    :cond_0
-    move-object p1, v1
-
-    .line 3
-    :goto_0
-    check-cast p2, Lnd/a;
+    const/4 v0, 0x0
 
     .line 4
-    iget-object p2, p2, Lnd/a;->c:Ljava/lang/String;
-
-    if-eqz p2, :cond_1
-
-    move-object v1, p2
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
 
     .line 5
-    :cond_1
-    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    :cond_0
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    move-result p1
-
-    return p1
+    return-object p1
 .end method

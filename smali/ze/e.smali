@@ -1,21 +1,33 @@
-.class public interface abstract annotation Lze/e;
+.class public abstract Lze/e;
 .super Ljava/lang/Object;
-.source "FormUrlEncoded.java"
+.source "CompletionHandler.kt"
 
 # interfaces
-.implements Ljava/lang/annotation/Annotation;
+.implements Lre/l;
 
 
 # annotations
-.annotation runtime Ljava/lang/annotation/Documented;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Target;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;
+        "Ljava/lang/Object;",
+        "Lre/l<",
+        "Ljava/lang/Throwable;",
+        "Lie/h;",
+        ">;"
     }
 .end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/Throwable;)V
+.end method

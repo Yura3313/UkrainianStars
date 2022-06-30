@@ -1,4 +1,4 @@
-.class public Landroidx/viewpager/widget/PagerTitleStrip$b;
+.class public final Landroidx/viewpager/widget/PagerTitleStrip$b;
 .super Landroid/text/method/SingleLineTransformationMethod;
 .source "PagerTitleStrip.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public g:Ljava/util/Locale;
+.field public f:Ljava/util/Locale;
 
 
 # direct methods
@@ -36,18 +36,18 @@
 
     iget-object p1, p1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
-    iput-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$b;->g:Ljava/util/Locale;
+    iput-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$b;->f:Ljava/util/Locale;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
+.method public final getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroid/text/method/SingleLineTransformationMethod;->getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
+    invoke-super {p0, p1, p2}, Landroid/text/method/ReplacementTransformationMethod;->getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
 
     move-result-object p1
 
@@ -58,7 +58,7 @@
 
     move-result-object p1
 
-    iget-object p2, p0, Landroidx/viewpager/widget/PagerTitleStrip$b;->g:Ljava/util/Locale;
+    iget-object p2, p0, Landroidx/viewpager/widget/PagerTitleStrip$b;->f:Ljava/util/Locale;
 
     invoke-virtual {p1, p2}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
 

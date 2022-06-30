@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/Set;
+.field public final a:Ljava/util/concurrent/CopyOnWriteArraySet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArraySet;-><init>()V
 
-    iput-object v0, p0, La/a;->a:Ljava/util/Set;
+    iput-object v0, p0, La/a;->a:Ljava/util/concurrent/CopyOnWriteArraySet;
 
     return-void
 .end method

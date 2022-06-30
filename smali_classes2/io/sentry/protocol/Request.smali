@@ -66,7 +66,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -75,30 +74,30 @@
 .method public constructor <init>(Lio/sentry/protocol/Request;)V
     .locals 1
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 2
     iget-object v0, p1, Lio/sentry/protocol/Request;->url:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Request;->url:Ljava/lang/String;
 
-    .line 4
+    .line 3
     iget-object v0, p1, Lio/sentry/protocol/Request;->cookies:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Request;->cookies:Ljava/lang/String;
 
-    .line 5
+    .line 4
     iget-object v0, p1, Lio/sentry/protocol/Request;->method:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Request;->method:Ljava/lang/String;
 
-    .line 6
+    .line 5
     iget-object v0, p1, Lio/sentry/protocol/Request;->queryString:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/protocol/Request;->queryString:Ljava/lang/String;
 
-    .line 7
+    .line 6
     iget-object v0, p1, Lio/sentry/protocol/Request;->headers:Ljava/util/Map;
 
     invoke-static {v0}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -107,7 +106,7 @@
 
     iput-object v0, p0, Lio/sentry/protocol/Request;->headers:Ljava/util/Map;
 
-    .line 8
+    .line 7
     iget-object v0, p1, Lio/sentry/protocol/Request;->env:Ljava/util/Map;
 
     invoke-static {v0}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -116,7 +115,7 @@
 
     iput-object v0, p0, Lio/sentry/protocol/Request;->env:Ljava/util/Map;
 
-    .line 9
+    .line 8
     iget-object v0, p1, Lio/sentry/protocol/Request;->other:Ljava/util/Map;
 
     invoke-static {v0}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -125,7 +124,7 @@
 
     iput-object v0, p0, Lio/sentry/protocol/Request;->other:Ljava/util/Map;
 
-    .line 10
+    .line 9
     iget-object v0, p1, Lio/sentry/protocol/Request;->unknown:Ljava/util/Map;
 
     invoke-static {v0}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -134,7 +133,7 @@
 
     iput-object v0, p0, Lio/sentry/protocol/Request;->unknown:Ljava/util/Map;
 
-    .line 11
+    .line 10
     iget-object p1, p1, Lio/sentry/protocol/Request;->data:Ljava/lang/Object;
 
     iput-object p1, p0, Lio/sentry/protocol/Request;->data:Ljava/lang/Object;
@@ -159,7 +158,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Request;->unknown:Ljava/util/Map;
 
     return-void
@@ -168,7 +166,6 @@
 .method public getCookies()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Request;->cookies:Ljava/lang/String;
 
     return-object v0
@@ -177,7 +174,6 @@
 .method public getData()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Request;->data:Ljava/lang/Object;
 
     return-object v0
@@ -195,7 +191,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Request;->env:Ljava/util/Map;
 
     return-object v0
@@ -213,7 +208,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Request;->headers:Ljava/util/Map;
 
     return-object v0
@@ -222,7 +216,6 @@
 .method public getMethod()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Request;->method:Ljava/lang/String;
 
     return-object v0
@@ -240,7 +233,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Request;->other:Ljava/util/Map;
 
     return-object v0
@@ -249,7 +241,6 @@
 .method public getQueryString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Request;->queryString:Ljava/lang/String;
 
     return-object v0
@@ -267,7 +258,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Request;->unknown:Ljava/util/Map;
 
     return-object v0
@@ -276,7 +266,6 @@
 .method public getUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/protocol/Request;->url:Ljava/lang/String;
 
     return-object v0
@@ -285,7 +274,6 @@
 .method public setCookies(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Request;->cookies:Ljava/lang/String;
 
     return-void
@@ -294,7 +282,6 @@
 .method public setData(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Request;->data:Ljava/lang/Object;
 
     return-void
@@ -312,7 +299,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
@@ -334,7 +320,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
@@ -347,7 +332,6 @@
 .method public setMethod(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Request;->method:Ljava/lang/String;
 
     return-void
@@ -365,7 +349,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
@@ -378,7 +361,6 @@
 .method public setQueryString(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Request;->queryString:Ljava/lang/String;
 
     return-void
@@ -387,7 +369,6 @@
 .method public setUrl(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/sentry/protocol/Request;->url:Ljava/lang/String;
 
     return-void

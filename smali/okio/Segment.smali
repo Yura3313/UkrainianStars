@@ -310,7 +310,6 @@
 .method public final unsharedCopy()Lokio/Segment;
     .locals 7
 
-    .line 1
     new-instance v6, Lokio/Segment;
 
     iget-object v0, p0, Lokio/Segment;->data:[B

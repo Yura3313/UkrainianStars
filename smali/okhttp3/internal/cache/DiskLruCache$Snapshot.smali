@@ -56,7 +56,6 @@
 .method public static synthetic access$000(Lokhttp3/internal/cache/DiskLruCache$Snapshot;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->key:Ljava/lang/String;
 
     return-object p0
@@ -101,7 +100,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->key:Ljava/lang/String;
@@ -118,7 +116,6 @@
 .method public getLength(I)J
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->lengths:[J
 
     aget-wide v1, v0, p1
@@ -129,7 +126,6 @@
 .method public getSource(I)Lokio/Source;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->sources:[Lokio/Source;
 
     aget-object p1, v0, p1
@@ -140,7 +136,6 @@
 .method public key()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->key:Ljava/lang/String;
 
     return-object v0

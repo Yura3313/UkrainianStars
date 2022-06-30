@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->n(Lae/c2$a;ILae/b2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+.field public final synthetic f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
-.field public final synthetic h:Lcom/supercell/id/IdAccount;
+.field public final synthetic g:Lcom/supercell/id/IdAccount;
 
-.field public final synthetic i:Lqc/x;
+.field public final synthetic h:Lvc/w;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;Lcom/supercell/id/IdAccount;Lqc/x;)V
+.method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;Lcom/supercell/id/IdAccount;Lvc/w;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->h:Lcom/supercell/id/IdAccount;
+    iput-object p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->g:Lcom/supercell/id/IdAccount;
 
-    iput-object p3, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->i:Lqc/x;
+    iput-object p3, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->h:Lvc/w;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,47 +43,43 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 8
+    .locals 6
 
     .line 1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, v0, Lvd/r;->m:Lcom/supercell/titan/h;
+    iget-object v0, v0, Lae/u;->m:La5/d0;
 
-    const/4 v5, 0x0
+    const-string v1, "Shared Credentials"
 
-    const/4 v6, 0x0
+    const-string v2, "click"
 
-    const/16 v7, 0x18
+    const/4 v3, 0x0
 
-    const-string v2, "Shared Credentials"
-
-    const-string v3, "click"
-
-    const-string v4, "Login with shared credentials"
+    const/16 v4, 0x18
 
     .line 3
-    invoke-static/range {v1 .. v7}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->h:Lcom/supercell/id/IdAccount;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->g:Lcom/supercell/id/IdAccount;
 
     invoke-virtual {v0}, Lcom/supercell/id/IdAccount;->getScidToken()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     if-nez v0, :cond_0
 
@@ -95,16 +91,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    const/4 v3, 0x0
-
     if-nez v0, :cond_2
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object p1
 
     .line 5
-    iget-object p1, p1, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object p1, p1, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 6
     invoke-virtual {p1}, Lcom/supercell/id/IdConfiguration;->isYoungPlayer()Z
@@ -117,13 +111,13 @@
 
     .line 7
     :cond_1
-    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
     .line 8
     iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
     .line 9
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -131,33 +125,33 @@
 
     new-instance v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->h:Lcom/supercell/id/IdAccount;
+    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->g:Lcom/supercell/id/IdAccount;
 
     invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getEmail()Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->h:Lcom/supercell/id/IdAccount;
+    iget-object v2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->g:Lcom/supercell/id/IdAccount;
 
     invoke-virtual {v2}, Lcom/supercell/id/IdAccount;->getPhone()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->h:Lcom/supercell/id/IdAccount;
+    iget-object v4, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->g:Lcom/supercell/id/IdAccount;
 
     invoke-virtual {v4}, Lcom/supercell/id/IdAccount;->getScidToken()Ljava/lang/String;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->i:Lqc/x;
+    iget-object v5, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->h:Lvc/w;
 
-    invoke-virtual {v5}, Lqc/x;->b()Z
+    invoke-virtual {v5}, Lvc/w;->b()Z
 
     move-result v5
 
     invoke-direct {v0, v1, v2, v4, v5}, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
 
     .line 10
     invoke-virtual {p1, v0, v3}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
@@ -167,13 +161,13 @@
     .line 11
     :cond_2
     :goto_1
-    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
     .line 12
     iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
     .line 13
-    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -182,23 +176,23 @@
     .line 14
     new-instance v0, Lcom/supercell/id/IdLoginDetails;
 
-    iget-object v4, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->h:Lcom/supercell/id/IdAccount;
+    iget-object v4, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->g:Lcom/supercell/id/IdAccount;
 
     invoke-virtual {v4}, Lcom/supercell/id/IdAccount;->getEmail()Ljava/lang/String;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->h:Lcom/supercell/id/IdAccount;
+    iget-object v5, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$h;->g:Lcom/supercell/id/IdAccount;
 
     invoke-virtual {v5}, Lcom/supercell/id/IdAccount;->getPhone()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-direct {v0, v4, v5, v1, v2}, Lcom/supercell/id/IdLoginDetails;-><init>(Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-direct {v0, v4, v5, v2, v1}, Lcom/supercell/id/IdLoginDetails;-><init>(Ljava/lang/String;Ljava/lang/String;ZZ)V
 
-    const/4 v1, 0x2
+    const/4 v2, 0x2
 
-    invoke-static {p1, v0, v2, v1}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {p1, v0, v1, v2}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v0
 

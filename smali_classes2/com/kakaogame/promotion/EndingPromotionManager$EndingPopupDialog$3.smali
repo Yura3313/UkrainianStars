@@ -31,7 +31,6 @@
 .method public constructor <init>(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;Landroid/widget/ImageView;Landroid/view/animation/Animation;Lcom/kakaogame/promotion/KGPromotionData;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$3;->this$0:Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;
 
     iput-object p2, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$3;->val$progressView:Landroid/widget/ImageView;
@@ -55,7 +54,7 @@
 
     iget-object v0, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$3;->val$anim:Landroid/view/animation/Animation;
 
-    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 2
     iget-object p1, p0, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$3;->val$promotion:Lcom/kakaogame/promotion/KGPromotionData;

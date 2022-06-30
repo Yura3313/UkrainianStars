@@ -78,7 +78,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/support/v4/media/MediaDescriptionCompat$1;
 
     invoke-direct {v0}, Landroid/support/v4/media/MediaDescriptionCompat$1;-><init>()V
@@ -378,7 +377,6 @@
 .method public getDescription()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaDescriptionCompat;->mDescription:Ljava/lang/CharSequence;
 
     return-object v0
@@ -387,7 +385,6 @@
 .method public getExtras()Landroid/os/Bundle;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaDescriptionCompat;->mExtras:Landroid/os/Bundle;
 
     return-object v0
@@ -396,7 +393,6 @@
 .method public getIconBitmap()Landroid/graphics/Bitmap;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaDescriptionCompat;->mIcon:Landroid/graphics/Bitmap;
 
     return-object v0
@@ -405,7 +401,6 @@
 .method public getIconUri()Landroid/net/Uri;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaDescriptionCompat;->mIconUri:Landroid/net/Uri;
 
     return-object v0
@@ -524,7 +519,6 @@
 .method public getMediaId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaDescriptionCompat;->mMediaId:Ljava/lang/String;
 
     return-object v0
@@ -533,7 +527,6 @@
 .method public getMediaUri()Landroid/net/Uri;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaDescriptionCompat;->mMediaUri:Landroid/net/Uri;
 
     return-object v0
@@ -542,7 +535,6 @@
 .method public getSubtitle()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaDescriptionCompat;->mSubtitle:Ljava/lang/CharSequence;
 
     return-object v0
@@ -551,7 +543,6 @@
 .method public getTitle()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaDescriptionCompat;->mTitle:Ljava/lang/CharSequence;
 
     return-object v0
@@ -560,7 +551,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

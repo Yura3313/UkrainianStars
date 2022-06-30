@@ -281,7 +281,6 @@
 .method public final getHeightInPixels(Landroid/content/Context;)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
 
     invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/f;->a(Landroid/content/Context;)I
@@ -306,7 +305,6 @@
 .method public final getWidthInPixels(Landroid/content/Context;)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
 
     invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/f;->b(Landroid/content/Context;)I
@@ -319,7 +317,6 @@
 .method public final hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
 
     invoke-virtual {v0}, Lcom/google/android/gms/ads/f;->hashCode()I

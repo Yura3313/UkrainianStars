@@ -14,6 +14,8 @@
 
 
 # static fields
+.field public static final enum h:Lcom/google/protobuf/b0;
+
 .field public static final enum i:Lcom/google/protobuf/b0;
 
 .field public static final enum j:Lcom/google/protobuf/b0;
@@ -32,13 +34,11 @@
 
 .field public static final enum q:Lcom/google/protobuf/b0;
 
-.field public static final enum r:Lcom/google/protobuf/b0;
-
-.field public static final synthetic s:[Lcom/google/protobuf/b0;
+.field public static final synthetic r:[Lcom/google/protobuf/b0;
 
 
 # instance fields
-.field public final g:Ljava/lang/Class;
+.field public final f:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -47,268 +47,220 @@
     .end annotation
 .end field
 
-.field public final h:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 27
+    .locals 16
 
     .line 1
-    new-instance v6, Lcom/google/protobuf/b0;
+    const-class v0, Ljava/lang/Integer;
 
-    const-class v3, Ljava/lang/Void;
+    new-instance v1, Lcom/google/protobuf/b0;
 
-    const-class v4, Ljava/lang/Void;
+    const-class v2, Ljava/lang/Void;
 
-    const-string v1, "VOID"
+    const-class v2, Ljava/lang/Void;
 
-    const/4 v2, 0x0
+    const-string v3, "VOID"
+
+    const/4 v4, 0x0
 
     const/4 v5, 0x0
 
-    move-object v0, v6
+    invoke-direct {v1, v3, v4, v2, v5}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Object;)V
 
-    invoke-direct/range {v0 .. v5}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    sput-object v6, Lcom/google/protobuf/b0;->i:Lcom/google/protobuf/b0;
+    sput-object v1, Lcom/google/protobuf/b0;->h:Lcom/google/protobuf/b0;
 
     .line 2
-    new-instance v0, Lcom/google/protobuf/b0;
+    new-instance v2, Lcom/google/protobuf/b0;
 
-    sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const-class v11, Ljava/lang/Integer;
+    move-result-object v3
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const-string v6, "INT"
 
-    move-result-object v12
+    const/4 v7, 0x1
 
-    const-string v8, "INT"
+    invoke-direct {v2, v6, v7, v0, v3}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Object;)V
 
-    const/4 v9, 0x1
-
-    move-object v7, v0
-
-    move-object v10, v1
-
-    invoke-direct/range {v7 .. v12}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    sput-object v0, Lcom/google/protobuf/b0;->j:Lcom/google/protobuf/b0;
+    sput-object v2, Lcom/google/protobuf/b0;->i:Lcom/google/protobuf/b0;
 
     .line 3
     new-instance v3, Lcom/google/protobuf/b0;
 
-    sget-object v16, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+    const-class v6, Ljava/lang/Long;
 
-    const-class v17, Ljava/lang/Long;
+    const-wide/16 v8, 0x0
 
-    const-wide/16 v4, 0x0
+    invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    move-result-object v8
 
-    move-result-object v18
+    const-string v9, "LONG"
 
-    const-string v14, "LONG"
+    const/4 v10, 0x2
 
-    const/4 v15, 0x2
+    invoke-direct {v3, v9, v10, v6, v8}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Object;)V
 
-    move-object v13, v3
-
-    invoke-direct/range {v13 .. v18}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    sput-object v3, Lcom/google/protobuf/b0;->k:Lcom/google/protobuf/b0;
+    sput-object v3, Lcom/google/protobuf/b0;->j:Lcom/google/protobuf/b0;
 
     .line 4
-    new-instance v4, Lcom/google/protobuf/b0;
+    new-instance v6, Lcom/google/protobuf/b0;
 
-    sget-object v10, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+    const-class v8, Ljava/lang/Float;
 
-    const-class v11, Ljava/lang/Float;
+    const/4 v9, 0x0
 
-    const/4 v5, 0x0
+    invoke-static {v9}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    move-result-object v9
 
-    move-result-object v12
+    const-string v11, "FLOAT"
 
-    const-string v8, "FLOAT"
+    const/4 v12, 0x3
 
-    const/4 v9, 0x3
+    invoke-direct {v6, v11, v12, v8, v9}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Object;)V
 
-    move-object v7, v4
-
-    invoke-direct/range {v7 .. v12}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    sput-object v4, Lcom/google/protobuf/b0;->l:Lcom/google/protobuf/b0;
+    sput-object v6, Lcom/google/protobuf/b0;->k:Lcom/google/protobuf/b0;
 
     .line 5
-    new-instance v5, Lcom/google/protobuf/b0;
+    new-instance v8, Lcom/google/protobuf/b0;
 
-    sget-object v16, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    const-class v9, Ljava/lang/Double;
 
-    const-class v17, Ljava/lang/Double;
+    const-wide/16 v13, 0x0
 
-    const-wide/16 v7, 0x0
+    invoke-static {v13, v14}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
-    invoke-static {v7, v8}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    move-result-object v11
 
-    move-result-object v18
+    const-string v13, "DOUBLE"
 
-    const-string v14, "DOUBLE"
+    const/4 v14, 0x4
 
-    const/4 v15, 0x4
+    invoke-direct {v8, v13, v14, v9, v11}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Object;)V
 
-    move-object v13, v5
-
-    invoke-direct/range {v13 .. v18}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    sput-object v5, Lcom/google/protobuf/b0;->m:Lcom/google/protobuf/b0;
+    sput-object v8, Lcom/google/protobuf/b0;->l:Lcom/google/protobuf/b0;
 
     .line 6
-    new-instance v13, Lcom/google/protobuf/b0;
-
-    sget-object v10, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    new-instance v9, Lcom/google/protobuf/b0;
 
     const-class v11, Ljava/lang/Boolean;
 
-    sget-object v12, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v13, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    const-string v8, "BOOLEAN"
+    const-string v15, "BOOLEAN"
 
-    const/4 v9, 0x5
+    const/4 v14, 0x5
 
-    move-object v7, v13
+    invoke-direct {v9, v15, v14, v11, v13}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Object;)V
 
-    invoke-direct/range {v7 .. v12}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    sput-object v13, Lcom/google/protobuf/b0;->n:Lcom/google/protobuf/b0;
+    sput-object v9, Lcom/google/protobuf/b0;->m:Lcom/google/protobuf/b0;
 
     .line 7
-    new-instance v20, Lcom/google/protobuf/b0;
+    new-instance v11, Lcom/google/protobuf/b0;
 
-    const-class v17, Ljava/lang/String;
-
-    const-class v18, Ljava/lang/String;
+    const-class v13, Ljava/lang/String;
 
     const-string v15, "STRING"
 
-    const/16 v16, 0x6
+    const/4 v14, 0x6
 
-    const-string v19, ""
+    const-string v12, ""
 
-    move-object/from16 v14, v20
+    invoke-direct {v11, v15, v14, v13, v12}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Object;)V
 
-    invoke-direct/range {v14 .. v19}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    sput-object v20, Lcom/google/protobuf/b0;->o:Lcom/google/protobuf/b0;
+    sput-object v11, Lcom/google/protobuf/b0;->n:Lcom/google/protobuf/b0;
 
     .line 8
-    new-instance v14, Lcom/google/protobuf/b0;
+    new-instance v12, Lcom/google/protobuf/b0;
 
-    const-class v10, Lcom/google/protobuf/i;
+    const-class v13, Lcom/google/protobuf/i;
 
-    const-class v11, Lcom/google/protobuf/i;
+    const-class v13, Lcom/google/protobuf/i;
 
-    sget-object v12, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
+    sget-object v15, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
 
-    const-string v8, "BYTE_STRING"
+    const-string v14, "BYTE_STRING"
 
-    const/4 v9, 0x7
+    const/4 v10, 0x7
 
-    move-object v7, v14
+    invoke-direct {v12, v14, v10, v13, v15}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Object;)V
 
-    invoke-direct/range {v7 .. v12}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    sput-object v14, Lcom/google/protobuf/b0;->p:Lcom/google/protobuf/b0;
+    sput-object v12, Lcom/google/protobuf/b0;->o:Lcom/google/protobuf/b0;
 
     .line 9
-    new-instance v15, Lcom/google/protobuf/b0;
+    new-instance v13, Lcom/google/protobuf/b0;
 
-    const-class v11, Ljava/lang/Integer;
+    const-string v14, "ENUM"
 
-    const-string v8, "ENUM"
+    const/16 v15, 0x8
 
-    const/16 v9, 0x8
+    invoke-direct {v13, v14, v15, v0, v5}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Object;)V
 
-    const/4 v12, 0x0
-
-    move-object v7, v15
-
-    move-object v10, v1
-
-    invoke-direct/range {v7 .. v12}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
-
-    sput-object v15, Lcom/google/protobuf/b0;->q:Lcom/google/protobuf/b0;
+    sput-object v13, Lcom/google/protobuf/b0;->p:Lcom/google/protobuf/b0;
 
     .line 10
-    new-instance v1, Lcom/google/protobuf/b0;
+    new-instance v0, Lcom/google/protobuf/b0;
 
-    const-class v24, Ljava/lang/Object;
+    const-class v14, Ljava/lang/Object;
 
-    const-class v25, Ljava/lang/Object;
+    const-string v15, "MESSAGE"
 
-    const-string v22, "MESSAGE"
+    const/16 v10, 0x9
 
-    const/16 v23, 0x9
+    invoke-direct {v0, v15, v10, v14, v5}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Object;)V
 
-    const/16 v26, 0x0
+    sput-object v0, Lcom/google/protobuf/b0;->q:Lcom/google/protobuf/b0;
 
-    move-object/from16 v21, v1
+    const/16 v5, 0xa
 
-    invoke-direct/range {v21 .. v26}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
+    new-array v5, v5, [Lcom/google/protobuf/b0;
 
-    sput-object v1, Lcom/google/protobuf/b0;->r:Lcom/google/protobuf/b0;
+    aput-object v1, v5, v4
 
-    const/16 v7, 0xa
+    aput-object v2, v5, v7
 
-    new-array v7, v7, [Lcom/google/protobuf/b0;
+    const/4 v1, 0x2
 
-    aput-object v6, v7, v2
+    aput-object v3, v5, v1
 
-    const/4 v2, 0x1
+    const/4 v1, 0x3
 
-    aput-object v0, v7, v2
+    aput-object v6, v5, v1
 
-    const/4 v0, 0x2
+    const/4 v1, 0x4
 
-    aput-object v3, v7, v0
+    aput-object v8, v5, v1
 
-    const/4 v0, 0x3
+    const/4 v1, 0x5
 
-    aput-object v4, v7, v0
+    aput-object v9, v5, v1
 
-    const/4 v0, 0x4
+    const/4 v1, 0x6
 
-    aput-object v5, v7, v0
+    aput-object v11, v5, v1
 
-    const/4 v0, 0x5
+    const/4 v1, 0x7
 
-    aput-object v13, v7, v0
+    aput-object v12, v5, v1
 
-    const/4 v0, 0x6
+    const/16 v1, 0x8
 
-    aput-object v20, v7, v0
+    aput-object v13, v5, v1
 
-    const/4 v0, 0x7
-
-    aput-object v14, v7, v0
-
-    const/16 v0, 0x8
-
-    aput-object v15, v7, v0
-
-    const/16 v0, 0x9
-
-    aput-object v1, v7, v0
+    aput-object v0, v5, v10
 
     .line 11
-    sput-object v7, Lcom/google/protobuf/b0;->s:[Lcom/google/protobuf/b0;
+    sput-object v5, Lcom/google/protobuf/b0;->r:[Lcom/google/protobuf/b0;
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
+.method public constructor <init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -326,10 +278,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput-object p4, p0, Lcom/google/protobuf/b0;->g:Ljava/lang/Class;
+    iput-object p3, p0, Lcom/google/protobuf/b0;->f:Ljava/lang/Class;
 
     .line 3
-    iput-object p5, p0, Lcom/google/protobuf/b0;->h:Ljava/lang/Object;
+    iput-object p4, p0, Lcom/google/protobuf/b0;->g:Ljava/lang/Object;
 
     return-void
 .end method
@@ -337,7 +289,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/protobuf/b0;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/protobuf/b0;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -352,8 +303,7 @@
 .method public static values()[Lcom/google/protobuf/b0;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/google/protobuf/b0;->s:[Lcom/google/protobuf/b0;
+    sget-object v0, Lcom/google/protobuf/b0;->r:[Lcom/google/protobuf/b0;
 
     invoke-virtual {v0}, [Lcom/google/protobuf/b0;->clone()Ljava/lang/Object;
 

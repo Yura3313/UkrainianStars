@@ -39,7 +39,6 @@
 .method public constructor <init>(Lcom/kakaogame/KGKakaoTalkGroupChat;Ljava/lang/String;Ljava/util/Map;Lcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGKakaoTalkMessage$8;->val$groupChat:Lcom/kakaogame/KGKakaoTalkGroupChat;
 
     iput-object p2, p0, Lcom/kakaogame/KGKakaoTalkMessage$8;->val$templateId:Ljava/lang/String;

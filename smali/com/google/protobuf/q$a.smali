@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
     .line 1
@@ -73,10 +73,9 @@
     return v1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/q$a;->a:Ljava/lang/Object;
 
     invoke-static {v0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I

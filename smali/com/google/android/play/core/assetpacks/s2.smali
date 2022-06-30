@@ -2,56 +2,67 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ly4/p;
+.implements La5/u0;
 
 
-# static fields
-.field public static final g:Ls3/e;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "La5/u0<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final f:La5/u0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "La5/u0<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Ls3/e;
-
-    invoke-direct {v0}, Ls3/e;-><init>()V
-
-    sput-object v0, Lcom/google/android/play/core/assetpacks/s2;->g:Ls3/e;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>()V
+.method public constructor <init>(La5/u0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "La5/u0<",
+            "Landroid/content/Context;",
+            ">;)V"
+        }
+    .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/s2;->f:La5/u0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b(Ljava/lang/ClassLoader;Ljava/util/Set;)V
+.method public final bridge synthetic e()Ljava/lang/Object;
     .locals 1
 
-    .line 1
-    new-instance v0, Lt3/p;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/s2;->f:La5/u0;
 
-    invoke-direct {v0}, Lt3/p;-><init>()V
+    check-cast v0, Lcom/google/android/play/core/assetpacks/r2;
 
-    invoke-static {p1, p2, v0}, Lp5/h;->e(Ljava/lang/ClassLoader;Ljava/util/Set;Ly4/w;)V
+    invoke-virtual {v0}, Lcom/google/android/play/core/assetpacks/r2;->a()Landroid/content/Context;
 
-    return-void
-.end method
+    move-result-object v0
 
-.method public c(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/io/File;Z)Z
-    .locals 0
+    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/n2;->a(Landroid/content/Context;)Ljava/lang/String;
 
-    invoke-static {p1, p2, p3, p4}, Ly4/z;->a(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/io/File;Z)Z
+    move-result-object v0
 
-    move-result p1
-
-    return p1
+    return-object v0
 .end method

@@ -32,7 +32,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/linecorp/linesdk/LineProfile$a;
 
     invoke-direct {v0}, Lcom/linecorp/linesdk/LineProfile$a;-><init>()V
@@ -236,7 +235,6 @@
 .method public getDisplayName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineProfile;->displayName:Ljava/lang/String;
 
     return-object v0
@@ -245,7 +243,6 @@
 .method public getPictureUrl()Landroid/net/Uri;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineProfile;->pictureUrl:Landroid/net/Uri;
 
     return-object v0
@@ -254,7 +251,6 @@
 .method public getStatusMessage()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineProfile;->statusMessage:Ljava/lang/String;
 
     return-object v0
@@ -263,7 +259,6 @@
 .method public getUserId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/linecorp/linesdk/LineProfile;->userId:Ljava/lang/String;
 
     return-object v0
@@ -284,52 +279,53 @@
     .line 2
     iget-object v1, p0, Lcom/linecorp/linesdk/LineProfile;->displayName:Ljava/lang/String;
 
-    const/16 v2, 0x1f
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
-    invoke-static {v1, v0, v2}, Lcom/kakaogame/d;->a(Ljava/lang/String;II)I
+    move-result v1
 
-    move-result v0
+    add-int/2addr v1, v0
+
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 3
-    iget-object v1, p0, Lcom/linecorp/linesdk/LineProfile;->pictureUrl:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/linecorp/linesdk/LineProfile;->pictureUrl:Landroid/net/Uri;
 
     const/4 v2, 0x0
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v1}, Landroid/net/Uri;->hashCode()I
+    invoke-virtual {v0}, Landroid/net/Uri;->hashCode()I
 
-    move-result v1
+    move-result v0
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     :goto_0
-    add-int/2addr v0, v1
+    add-int/2addr v1, v0
 
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 4
-    iget-object v1, p0, Lcom/linecorp/linesdk/LineProfile;->statusMessage:Ljava/lang/String;
+    iget-object v0, p0, Lcom/linecorp/linesdk/LineProfile;->statusMessage:Ljava/lang/String;
 
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v2
 
     :cond_1
-    add-int/2addr v0, v2
+    add-int/2addr v1, v2
 
-    return v0
+    return v1
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "LineProfile{displayName=\'"

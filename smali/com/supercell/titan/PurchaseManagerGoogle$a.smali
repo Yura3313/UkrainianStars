@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/PurchaseManagerGoogle$a;
+.class public final Lcom/supercell/titan/PurchaseManagerGoogle$a;
 .super Ljava/lang/Object;
 .source "PurchaseManagerGoogle.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/supercell/titan/PurchaseManagerGoogle;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/titan/PurchaseManagerGoogle$a;->a:Lcom/supercell/titan/PurchaseManagerGoogle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public a(Lcom/android/billingclient/api/e;Ljava/util/List;)V
+.method public final a(Lcom/android/billingclient/api/e;Ljava/util/List;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {

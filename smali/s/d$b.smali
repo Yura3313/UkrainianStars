@@ -1,4 +1,4 @@
-.class public Ls/d$b;
+.class public final Ls/d$b;
 .super Ljava/lang/Object;
 .source "StateSet.java"
 
@@ -201,7 +201,7 @@
 
 
 # virtual methods
-.method public a(FF)Z
+.method public final a(FF)Z
     .locals 2
 
     .line 1

@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/ActionMenuView$b;
+.class public final Landroidx/appcompat/widget/ActionMenuView$b;
 .super Ljava/lang/Object;
 .source "ActionMenuView.java"
 
@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,13 +28,13 @@
 
 
 # virtual methods
-.method public b(Landroidx/appcompat/view/menu/e;Z)V
+.method public final b(Landroidx/appcompat/view/menu/e;Z)V
     .locals 0
 
     return-void
 .end method
 
-.method public c(Landroidx/appcompat/view/menu/e;)Z
+.method public final c(Landroidx/appcompat/view/menu/e;)Z
     .locals 0
 
     const/4 p1, 0x0

@@ -1,139 +1,129 @@
-.class public abstract Lrd/f;
-.super Lrc/w;
-.source "TokenLoginFlow.kt"
+.class public final Lrd/f;
+.super Lse/h;
+.source "ProfileSelectorFragment.kt"
+
+# interfaces
+.implements Lre/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/h;",
+        "Lre/l<",
+        "Lwc/q;",
+        "Lie/h;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+
+.field public final synthetic g:Lcom/supercell/id/IdAccount;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;Lcom/supercell/id/IdAccount;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lrc/w;-><init>()V
+    iput-object p1, p0, Lrd/f;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+
+    iput-object p2, p0, Lrd/f;->g:Lcom/supercell/id/IdAccount;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public W0()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final d1()Z
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    invoke-virtual {p0}, Lrd/f;->f1()Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
+    check-cast p1, Lwc/q;
+
+    const-string v0, "it"
+
+    .line 2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    .line 4
+    iget-object v0, v0, Lae/u;->m:La5/d0;
 
-    .line 2
-    iget-boolean v0, v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->p0:Z
+    const-string v1, "Saved Credentials"
 
-    goto :goto_0
+    const-string v2, "click"
 
-    :cond_0
-    const/4 v0, 0x0
+    const/4 v3, 0x0
 
-    :goto_0
-    return v0
-.end method
+    const/16 v4, 0x18
 
-.method public final e1()Ljava/lang/String;
-    .locals 1
+    .line 5
+    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
-    .line 1
-    invoke-virtual {p0}, Lrd/f;->f1()Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
+    .line 6
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lrd/f;->g:Lcom/supercell/id/IdAccount;
 
-    .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->m0:Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
 
-    goto :goto_0
+    move-result-object v1
 
-    :cond_0
-    const/4 v0, 0x0
+    invoke-virtual {v0, v1}, Lae/u;->o(Ljava/lang/String;)V
 
-    :goto_0
-    return-object v0
-.end method
+    .line 7
+    iget-object v0, p0, Lrd/f;->g:Lcom/supercell/id/IdAccount;
 
-.method public f1()Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
-
-    .line 2
-    instance-of v1, v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
-
-    if-nez v1, :cond_0
-
-    const/4 v0, 0x0
-
-    :cond_0
-    check-cast v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
-
-    return-object v0
-.end method
-
-.method public final g1()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lrd/f;->f1()Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
+    invoke-virtual {v0}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lrd/f;->g:Lcom/supercell/id/IdAccount;
 
-    .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->n0:Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getEmail()Ljava/lang/String;
 
-    goto :goto_0
+    move-result-object v1
 
-    :cond_0
-    const/4 v0, 0x0
+    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/SupercellId;->forgetAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;)V
 
-    :goto_0
-    return-object v0
-.end method
+    .line 8
+    iget-object p1, p0, Lrd/f;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-.method public final h1()Lcom/supercell/id/model/IdConnectedSystem;
-    .locals 1
+    iget-object v0, p0, Lrd/f;->g:Lcom/supercell/id/IdAccount;
 
-    .line 1
-    invoke-virtual {p0}, Lrd/f;->f1()Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
+    .line 9
+    iget-object v1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h0:Ljava/util/List;
+
+    .line 10
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o0:Lae/o2;
+
+    new-instance v2, Lrd/e;
+
+    invoke-direct {v2, v1, v0}, Lrd/e;-><init>(Ljava/util/List;Lcom/supercell/id/IdAccount;)V
+
+    invoke-static {v2}, Lae/u1;->o(Lre/a;)Lze/e0;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    invoke-virtual {p1, v0}, Lae/o2;->b(Lze/e0;)V
 
-    .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->q0:Lcom/supercell/id/model/IdConnectedSystem;
+    .line 11
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return-object v0
-.end method
-
-.method public synthetic i0()V
-    .locals 0
-
-    invoke-super {p0}, Lrc/w;->i0()V
-
-    invoke-virtual {p0}, Lrd/f;->W0()V
-
-    return-void
+    return-object p1
 .end method

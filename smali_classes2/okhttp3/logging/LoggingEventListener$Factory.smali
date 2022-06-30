@@ -50,7 +50,6 @@
 .method public create(Lokhttp3/Call;)Lokhttp3/EventListener;
     .locals 2
 
-    .line 1
     new-instance p1, Lokhttp3/logging/LoggingEventListener;
 
     iget-object v0, p0, Lokhttp3/logging/LoggingEventListener$Factory;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;

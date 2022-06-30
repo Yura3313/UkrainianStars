@@ -14,7 +14,7 @@
 # static fields
 .field public static final Companion:Lcom/kakao/sdk/link/WebSharerClient$Companion;
 
-.field private static final instance$delegate:Lae/c;
+.field private static final instance$delegate:Lie/c;
 
 
 # instance fields
@@ -31,18 +31,17 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/link/WebSharerClient$Companion;-><init>(Lle/g;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/link/WebSharerClient$Companion;-><init>(Lse/e;)V
 
     sput-object v0, Lcom/kakao/sdk/link/WebSharerClient;->Companion:Lcom/kakao/sdk/link/WebSharerClient$Companion;
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/link/WebSharerClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/link/WebSharerClient$Companion$instance$2;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/link/WebSharerClient;->instance$delegate:Lae/c;
+    sput-object v0, Lcom/kakao/sdk/link/WebSharerClient;->instance$delegate:Lie/c;
 
     return-void
 .end method
@@ -54,7 +53,7 @@
 
     const/4 v1, 0x3
 
-    invoke-direct {p0, v0, v0, v1, v0}, Lcom/kakao/sdk/link/WebSharerClient;-><init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;ILle/g;)V
+    invoke-direct {p0, v0, v0, v1, v0}, Lcom/kakao/sdk/link/WebSharerClient;-><init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;ILse/e;)V
 
     return-void
 .end method
@@ -62,11 +61,13 @@
 .method public constructor <init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "contextInfo"
 
-    if-eqz p1, :cond_1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_0
+    const-string v0, "applicationInfo"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -76,31 +77,16 @@
     iput-object p2, p0, Lcom/kakao/sdk/link/WebSharerClient;->applicationInfo:Lcom/kakao/sdk/common/model/ApplicationInfo;
 
     return-void
-
-    :cond_0
-    const-string p1, "applicationInfo"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "contextInfo"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;ILle/g;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;ILse/e;)V
     .locals 0
 
     and-int/lit8 p4, p3, 0x1
 
     if-eqz p4, :cond_0
 
-    .line 3
+    .line 2
     sget-object p1, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p1}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -112,7 +98,7 @@
 
     if-eqz p3, :cond_1
 
-    .line 4
+    .line 3
     sget-object p2, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-virtual {p2}, Lcom/kakao/sdk/common/KakaoSdk;->getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
@@ -125,11 +111,10 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lae/c;
+.method public static final synthetic access$getInstance$cp()Lie/c;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/kakao/sdk/link/WebSharerClient;->instance$delegate:Lae/c;
+    sget-object v0, Lcom/kakao/sdk/link/WebSharerClient;->instance$delegate:Lie/c;
 
     return-object v0
 .end method
@@ -224,7 +209,7 @@
     const-string p1, "builder"
 
     .line 8
-    invoke-static {v0, p1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -247,7 +232,6 @@
 
     move-object p4, v0
 
-    .line 1
     :cond_1
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/kakao/sdk/link/WebSharerClient;->customTemplateUri(JLjava/util/Map;Ljava/util/Map;)Landroid/net/Uri;
 
@@ -265,7 +249,6 @@
 
     const/4 p2, 0x0
 
-    .line 1
     :cond_0
     invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/link/WebSharerClient;->defaultTemplateUri(Lcom/kakao/sdk/template/model/DefaultTemplate;Ljava/util/Map;)Landroid/net/Uri;
 
@@ -311,7 +294,6 @@
 
     move-object p4, v0
 
-    .line 1
     :cond_2
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/kakao/sdk/link/WebSharerClient;->scrapTemplateUri(Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;)Landroid/net/Uri;
 
@@ -461,7 +443,7 @@
 
     const-string p2, "builder.build()"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method
@@ -494,7 +476,9 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    const-string v0, "templateParams"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lcom/google/gson/JsonObject;
@@ -555,19 +539,9 @@
 
     const-string p2, "builder.build()"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
-
-    :cond_0
-    const-string p1, "templateParams"
-
-    .line 8
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final scrapTemplateUri(Ljava/lang/String;)Landroid/net/Uri;
@@ -673,7 +647,9 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_2
+    const-string v0, "requestUrl"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lcom/google/gson/JsonObject;
@@ -755,17 +731,7 @@
 
     const-string p2, "builder.build()"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
-
-    :cond_2
-    const-string p1, "requestUrl"
-
-    .line 11
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

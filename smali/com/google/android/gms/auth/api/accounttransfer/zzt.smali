@@ -13,7 +13,7 @@
     .end annotation
 .end field
 
-.field public static final n:Ljava/util/HashMap;
+.field public static final m:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -26,7 +26,7 @@
 
 
 # instance fields
-.field public final g:Ljava/util/Set;
+.field public final f:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -36,27 +36,27 @@
     .end annotation
 .end field
 
-.field public final h:I
+.field public final g:I
 
-.field public i:Ljava/lang/String;
+.field public h:Ljava/lang/String;
 
-.field public j:I
+.field public i:I
 
-.field public k:[B
+.field public j:[B
 
-.field public l:Landroid/app/PendingIntent;
+.field public k:Landroid/app/PendingIntent;
 
-.field public m:Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;
+.field public l:Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 12
+    .locals 11
 
     .line 1
-    new-instance v0, Ls1/d;
+    new-instance v0, Lt1/d;
 
-    invoke-direct {v0}, Ls1/d;-><init>()V
+    invoke-direct {v0}, Lt1/d;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -66,13 +66,13 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 3
-    sput-object v0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->n:Ljava/util/HashMap;
+    sput-object v0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->m:Ljava/util/HashMap;
 
     const-string v1, "accountType"
 
     const/4 v2, 0x2
 
-    invoke-static {v1, v2}, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->A2(Ljava/lang/String;I)Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
+    invoke-static {v1, v2}, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->D2(Ljava/lang/String;I)Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
 
     move-result-object v2
 
@@ -89,45 +89,35 @@
 
     const/4 v7, 0x0
 
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
-
     const-string v8, "status"
 
     const/4 v9, 0x3
 
+    const/4 v10, 0x0
+
     move-object v3, v1
 
-    invoke-direct/range {v3 .. v11}, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;-><init>(IZIZLjava/lang/String;ILjava/lang/Class;Lcom/google/android/gms/common/server/response/FastJsonResponse$a;)V
+    invoke-direct/range {v3 .. v10}, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;-><init>(IZIZLjava/lang/String;ILjava/lang/Class;)V
 
     const-string v2, "status"
 
     .line 5
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v9, 0x4
-
     .line 6
     new-instance v1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
 
     const/16 v4, 0x8
 
-    const/4 v5, 0x0
-
     const/16 v6, 0x8
-
-    const/4 v7, 0x0
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
 
     const-string v8, "transferBytes"
 
+    const/4 v9, 0x4
+
     move-object v3, v1
 
-    invoke-direct/range {v3 .. v11}, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;-><init>(IZIZLjava/lang/String;ILjava/lang/Class;Lcom/google/android/gms/common/server/response/FastJsonResponse$a;)V
+    invoke-direct/range {v3 .. v10}, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;-><init>(IZIZLjava/lang/String;ILjava/lang/Class;)V
 
     const-string v2, "transferBytes"
 
@@ -150,12 +140,12 @@
 
     invoke-direct {v0, v1}, Lm/c;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->g:Ljava/util/Set;
+    iput-object v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->f:Ljava/util/Set;
 
     const/4 v0, 0x1
 
     .line 11
-    iput v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->h:I
+    iput v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->g:I
 
     return-void
 .end method
@@ -180,45 +170,44 @@
     invoke-direct {p0}, Lcom/google/android/gms/internal/auth/zzaz;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->g:Ljava/util/Set;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->f:Ljava/util/Set;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->h:I
+    iput p2, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->g:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->i:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->h:Ljava/lang/String;
 
     .line 5
-    iput p4, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->j:I
+    iput p4, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->i:I
 
     .line 6
-    iput-object p5, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->k:[B
+    iput-object p5, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->j:[B
 
     .line 7
-    iput-object p6, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->l:Landroid/app/PendingIntent;
+    iput-object p6, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->k:Landroid/app/PendingIntent;
 
     .line 8
-    iput-object p7, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->m:Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;
+    iput-object p7, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->l:Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public synthetic b()Ljava/util/Map;
+.method public final synthetic a()Ljava/util/Map;
     .locals 1
 
-    .line 1
-    sget-object v0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->n:Ljava/util/HashMap;
+    sget-object v0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->m:Ljava/util/HashMap;
 
     return-object v0
 .end method
 
-.method public i(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
+.method public final d(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
     .locals 3
 
     .line 1
-    iget v0, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->m:I
+    iget v0, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->l:I
 
     const/4 v1, 0x1
 
@@ -237,7 +226,7 @@
     if-ne v0, v1, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->k:[B
+    iget-object p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->j:[B
 
     return-object p1
 
@@ -246,24 +235,25 @@
     new-instance v0, Ljava/lang/IllegalStateException;
 
     .line 4
-    iget p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->m:I
+    iget p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->l:I
 
     const/16 v1, 0x25
 
     const-string v2, "Unknown SafeParcelable id="
 
     .line 5
-    invoke-static {v1, v2, p1}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v2, p1}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
+    .line 6
     invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 6
+    .line 7
     :cond_1
-    iget p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->j:I
+    iget p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->i:I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -271,15 +261,15 @@
 
     return-object p1
 
-    .line 7
+    .line 8
     :cond_2
-    iget-object p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->i:Ljava/lang/String;
+    iget-object p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->h:Ljava/lang/String;
 
     return-object p1
 
-    .line 8
+    .line 9
     :cond_3
-    iget p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->h:I
+    iget p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->g:I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -288,14 +278,14 @@
     return-object p1
 .end method
 
-.method public o(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
+.method public final l(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->g:Ljava/util/Set;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->f:Ljava/util/Set;
 
     .line 2
-    iget p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->m:I
+    iget p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->l:I
 
     .line 3
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -309,18 +299,18 @@
     return p1
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 6
 
     const/16 v0, 0x4f45
 
     .line 1
-    invoke-static {p1, v0}, Ld2/b;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Le2/b;->r(Landroid/os/Parcel;I)I
 
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->g:Ljava/util/Set;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->f:Ljava/util/Set;
 
     const/4 v2, 0x1
 
@@ -338,10 +328,10 @@
     if-eqz v3, :cond_0
 
     .line 4
-    iget v3, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->h:I
+    iget v3, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->g:I
 
     .line 5
-    invoke-static {p1, v2, v4}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v4}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 6
     invoke-virtual {p1, v3}, Landroid/os/Parcel;->writeInt(I)V
@@ -361,10 +351,10 @@
     if-eqz v5, :cond_1
 
     .line 8
-    iget-object v5, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->i:Ljava/lang/String;
+    iget-object v5, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->h:Ljava/lang/String;
 
     .line 9
-    invoke-static {p1, v3, v5, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v3, v5, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     :cond_1
     const/4 v3, 0x3
@@ -381,10 +371,10 @@
     if-eqz v5, :cond_2
 
     .line 11
-    iget v5, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->j:I
+    iget v5, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->i:I
 
     .line 12
-    invoke-static {p1, v3, v4}, Ld2/b;->s(Landroid/os/Parcel;II)V
+    invoke-static {p1, v3, v4}, Le2/b;->s(Landroid/os/Parcel;II)V
 
     .line 13
     invoke-virtual {p1, v5}, Landroid/os/Parcel;->writeInt(I)V
@@ -402,10 +392,10 @@
     if-eqz v3, :cond_3
 
     .line 15
-    iget-object v3, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->k:[B
+    iget-object v3, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->j:[B
 
     .line 16
-    invoke-static {p1, v4, v3, v2}, Ld2/b;->e(Landroid/os/Parcel;I[BZ)V
+    invoke-static {p1, v4, v3, v2}, Le2/b;->e(Landroid/os/Parcel;I[BZ)V
 
     :cond_3
     const/4 v3, 0x5
@@ -422,10 +412,10 @@
     if-eqz v4, :cond_4
 
     .line 18
-    iget-object v4, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->l:Landroid/app/PendingIntent;
+    iget-object v4, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->k:Landroid/app/PendingIntent;
 
     .line 19
-    invoke-static {p1, v3, v4, p2, v2}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v3, v4, p2, v2}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     :cond_4
     const/4 v3, 0x6
@@ -442,14 +432,14 @@
     if-eqz v1, :cond_5
 
     .line 21
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->m:Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/accounttransfer/zzt;->l:Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;
 
     .line 22
-    invoke-static {p1, v3, v1, p2, v2}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v3, v1, p2, v2}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 23
     :cond_5
-    invoke-static {p1, v0}, Ld2/b;->u(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
 .end method

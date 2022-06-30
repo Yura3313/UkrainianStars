@@ -12,7 +12,6 @@
 
     const-string v0, "com.google.android.gms.ads.internal.client.IVideoLifecycleCallbacks"
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzgu;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
 
     return-void
@@ -20,7 +19,7 @@
 
 
 # virtual methods
-.method public final G0()V
+.method public final D0()V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -29,19 +28,40 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->F0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->J0()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    const/4 v1, 0x4
+
+    .line 2
+    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->c2(ILandroid/os/Parcel;)V
+
+    return-void
+.end method
+
+.method public final L0()V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->J0()Landroid/os/Parcel;
 
     move-result-object v0
 
     const/4 v1, 0x2
 
     .line 2
-    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->Y0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->c2(ILandroid/os/Parcel;)V
 
     return-void
 .end method
 
-.method public final c0()V
+.method public final g5()V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -50,19 +70,40 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->F0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->J0()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    .line 2
+    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->c2(ILandroid/os/Parcel;)V
+
+    return-void
+.end method
+
+.method public final k0()V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->J0()Landroid/os/Parcel;
 
     move-result-object v0
 
     const/4 v1, 0x3
 
     .line 2
-    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->Y0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->c2(ILandroid/os/Parcel;)V
 
     return-void
 .end method
 
-.method public final h1(Z)V
+.method public final k1(Z)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -71,12 +112,12 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->F0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->J0()Landroid/os/Parcel;
 
     move-result-object v0
 
     .line 2
-    sget-object v1, Lj3/mw0;->a:Ljava/lang/ClassLoader;
+    sget-object v1, Lk3/cw0;->a:Ljava/lang/ClassLoader;
 
     .line 3
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
@@ -84,49 +125,7 @@
     const/4 p1, 0x5
 
     .line 4
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->Y0(ILandroid/os/Parcel;)V
-
-    return-void
-.end method
-
-.method public final h5()V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->F0()Landroid/os/Parcel;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    .line 2
-    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->Y0(ILandroid/os/Parcel;)V
-
-    return-void
-.end method
-
-.method public final z0()V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->F0()Landroid/os/Parcel;
-
-    move-result-object v0
-
-    const/4 v1, 0x4
-
-    .line 2
-    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->Y0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->c2(ILandroid/os/Parcel;)V
 
     return-void
 .end method

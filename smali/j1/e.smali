@@ -1,40 +1,13 @@
-.class public interface abstract Lj1/e;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.class public final Lj1/e;
+.super Ljava/lang/Exception;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# virtual methods
-.method public abstract a()I
-.end method
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
 
-.method public abstract b()Z
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-.end method
+    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-.method public abstract c()Ljava/util/Date;
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-.end method
-
-.method public abstract d()Z
-.end method
-
-.method public abstract e()Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract f()Landroid/location/Location;
-.end method
-
-.method public abstract g()I
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    return-void
 .end method

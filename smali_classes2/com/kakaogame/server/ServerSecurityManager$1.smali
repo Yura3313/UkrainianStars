@@ -25,7 +25,6 @@
 .method public constructor <init>(Ljava/net/URL;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/server/ServerSecurityManager$1;->val$url:Ljava/net/URL;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

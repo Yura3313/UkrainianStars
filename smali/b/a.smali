@@ -26,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,8 +33,8 @@
 
 
 # virtual methods
-.method public abstract a(Landroid/content/Context;Ljava/lang/Object;)Landroid/content/Intent;
-    .param p2    # Ljava/lang/Object;
+.method public abstract a(Ljava/lang/Object;)Landroid/content/Intent;
+    .param p1    # Ljava/lang/Object;
         .annotation build Landroid/annotation/SuppressLint;
             value = {
                 "UnknownNullness"

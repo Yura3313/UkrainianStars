@@ -13,7 +13,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
@@ -46,7 +45,7 @@
 
 
 # virtual methods
-.method public a()Z
+.method public final a()Z
     .locals 11
 
     .line 1

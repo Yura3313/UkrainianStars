@@ -1,14 +1,14 @@
 .class public final Ljd/c$d;
-.super Lle/j;
-.source "OnboardingInviteFriendsPageFragment.kt"
+.super Lse/h;
+.source "EmbeddedIngameChatDialog.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljd/c;-><init>()V
+    value = Ljd/c;->a()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,53 +18,52 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
-        "Ljava/lang/Integer;",
+        "Lse/h;",
+        "Lre/l<",
+        "Lie/h;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Ljd/c;
+.field public final synthetic f:Ljd/c;
 
 
 # direct methods
 .method public constructor <init>(Ljd/c;)V
     .locals 0
 
-    iput-object p1, p0, Ljd/c$d;->g:Ljd/c;
+    iput-object p1, p0, Ljd/c$d;->f:Ljd/c;
 
-    const/4 p1, 0x0
+    const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
-    .locals 2
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Ljd/c$d;->g:Ljd/c;
+    check-cast p1, Lie/h;
 
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->M()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    sget v1, Lcom/supercell/id/R$dimen;->onboarding_friends_max_width:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v0
+    const-string v0, "it"
 
     .line 2
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object v0
+    .line 3
+    iget-object p1, p0, Ljd/c$d;->f:Ljd/c;
 
-    return-object v0
+    invoke-virtual {p1}, Ljd/c;->a()V
+
+    .line 4
+    sget-object p1, Lie/h;->a:Lie/h;
+
+    return-object p1
 .end method

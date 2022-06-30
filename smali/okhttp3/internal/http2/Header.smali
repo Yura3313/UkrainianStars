@@ -240,7 +240,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-object v1, p0, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
 
     invoke-virtual {v1}, Lokio/ByteString;->utf8()Ljava/lang/String;

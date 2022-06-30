@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract M()V
+.method public abstract R()V
 .end method
 
 .method public abstract a(I)V

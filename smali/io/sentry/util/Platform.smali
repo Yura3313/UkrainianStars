@@ -49,7 +49,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +57,6 @@
 .method public static isAndroid()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lio/sentry/util/Platform;->isAndroid:Z
 
     return v0
@@ -67,7 +65,6 @@
 .method public static isJvm()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lio/sentry/util/Platform;->isAndroid:Z
 
     xor-int/lit8 v0, v0, 0x1

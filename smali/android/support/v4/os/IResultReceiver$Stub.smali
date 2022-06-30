@@ -85,7 +85,6 @@
 .method public static getDefaultImpl()Landroid/support/v4/os/IResultReceiver;
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/support/v4/os/IResultReceiver$Stub$Proxy;->sDefaultImpl:Landroid/support/v4/os/IResultReceiver;
 
     return-object v0

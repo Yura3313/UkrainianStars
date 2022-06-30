@@ -52,7 +52,7 @@ TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,Beli <NUM> Token dan maju ke Tingkat berik
 TID_PURCHASE_BRAWL_PASS_TITLE,DAPATKAN BRAWL PASS!
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,BRAWL PASS
 TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,PAKET BRAWL PASS
-TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"Raih hadiah Brawl Pass, Tugas ekstra, dan +2 acak ulang Tugas per minggu"
+TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"Buka hadiah Brawl Pass, Tugas ekstra, dan <NUM> Acak Ulang Tugas per minggu"
 TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,BRAWL PASS + <NUM> TINGKATAN
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,Brawl Pass musim yang lalu tidak dapat dibeli
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,Brawl Pass musim ini tidak ditemukan. Coba lagi nanti.
@@ -274,7 +274,7 @@ TID_LONG_RANGE_SHOTGUN_DESC,"Senapan Shelly menembakkan peluru sebar dengan jang
 TID_MEGA_BLASH_ULTI,SELONGSONG SUPER
 TID_MEGA_BLASH_ULTI_DESC,Selongsong Super milik Shelly melibas halangan dan lawan. Lawan yang masih berdiri akan terhantam mundur.
 TID_GUNSLINGER,COLT
-TID_GUNSLINGER_DESC,Colt menembakkan berondongan peluru dari dua revolvernya. Serangan Supernya mencabik-cabik halangan dan memperpanjang berondongan pelurunya!
+TID_GUNSLINGER_DESC,Pahlawan kesiangan yang sering datang di waktu dan situasi yang tidak tepat. Dia sangat senang bersolek karena penampilan adalah sumber kepercayaan dirinya!
 TID_RAPID_FIRE,REVOLVER
 TID_RAPID_FIRE_DESC,Colt menembakkan 6 peluru dari revolvernya. Tembakan ini lurus dan memiliki jangkauan yang jauh.
 TID_RAPID_FIRE_ULTI,BADAI PELURU
@@ -286,13 +286,13 @@ TID_SHOTGUN_BLAST_DESC,"Senapan laras ganda milik Bull memberikan kerusakan besa
 TID_CHARGE,BULDOSER
 TID_CHARGE_DESC,"Bull akan merunduk dan menerjang, melibas lawan dan halangan. Kepalanya memang sekeras baja!"
 TID_ROCKET_GIRL,BROCK
-TID_ROCKET_GIRL_DESC,Brock menembakkan roket berhulu ledak dengan jangkauan jauh. Serangan Supernya berupa hujan roket balistik yang menghancurkan halangan!
+TID_ROCKET_GIRL_DESC,"Saat sedang tidak sibuk membuat medan pertempuran membara dengan roket-roket miliknya, Brock membuat lantai dansa membara dengan tarian yang memikat."
 TID_FIREWORKS_WEAPON,ROKET KEREN
 TID_FIREWORKS_WEAPON_DESC,Brock menerbangkan Roket Keren yang benar-benar meluncur jauh.
 TID_FIREWORKS_ULTI,HUJAN ROKET
 TID_FIREWORKS_ULTI_DESC,Brock menembakkan berondongan roket yang akan menghancurkan lawan dan halangan. Dia hanya ingin lawan mandi Hujan Roket!
 TID_TNT_DUDE,DYNAMIKE
-TID_TNT_DUDE_DESC,Dynamike melemparkan dua dinamit eksplosif. Serangan Supernya adalah satu tong penuh dinamit yang meledakkan halangan!
+TID_TNT_DUDE_DESC,"Setelah sekian lama terjebak dalam tambang yang gelap, kini Dynamike telah kembali. Tak ada yang tahu apa yang terjadi dalam tambang yang membuatnya terobsesi untuk meledakkan semua hal hingga berkeping-keping!"
 TID_MORTAR,SUMBU PENDEK
 TID_MORTAR_DESC,Dynamike melemparkan dua batang dinamit melewati halangan apa pun. Sumbunya telah dipangkas mengikuti kepribadian eksplosifnya!
 TID_MORTAR_ULTI,BOM TONG BESAR
@@ -316,7 +316,7 @@ TID_CACTUS_WEAPON_DESC,Spike melemparkan kaktus kecil yang meledak dan menembakk
 TID_CACTUS_ULTI,TERUS MELEKAT!
 TID_CACTUS_ULTI_DESC,Spike melemparkan granat berduri. Lawan yang terjebak di area duri akan menerima kerusakan dan melambat.
 TID_BARKEEP,BARLEY
-TID_BARKEEP_DESC,Barley menyerang dengan melemparkan botol ke lawan yang cipratannya memberikan kerusakan. Kekuatan Supernya adalah berondongan botol membara!
+TID_BARKEEP_DESC,"Minuman buatan Barley adalah yang paling enak di Starr Park. Tapi, kalau kamu sampai mengotori bar miliknya, dia akan sangat marah dan botol-botol akan mulai beterbangan."
 TID_BARKEEP_WEAPON,RACIKAN PEKAT
 TID_BARKEEP_WEAPON_DESC,"Barley melemparkan botol yang pecah saat mendarat. Percikannya memberi kerusakan pada lawan. Semakin lama lawan berdiri dalam genangan, semakin besar kerusakannya."
 TID_BARKEEP_ULTI,PESANAN TERAKHIR
@@ -340,7 +340,7 @@ TID_UNDERTAKER_WEAPON_DESC,"Mortis menerjang maju sembari mengayunkan cangkul ta
 TID_UNDERTAKER_ULTI,DARAH KEHIDUPAN
 TID_UNDERTAKER_ULTI_DESC,Mortis memanggil kawanan kelelawar vampir yang akan mengisap kesehatan Jagoan lawan untuk menyembuhkan dirinya. Seram!
 TID_CROW,CROW
-TID_CROW_DESC,Crow melemparkan tiga belati beracun. Jurus Supernya: Terbang sembari melemparkan belati beracun saat melompat dan mendarat!
+TID_CROW_DESC,"Tidak ada yang tahu kapan dan dari mana dia tiba. Yang jelas, siapa pun yang berani mengganggu tidak akan ditemukan lagi keesokan hari."
 TID_CROW_WEAPON,PISAU LIPAT
 TID_CROW_WEAPON_DESC,Crow melemparkan tiga belati beracun yang akan memberikan kerusakan seiring waktu dan membuat semua efek penyembuhan yang diterima lawan berkurang.
 TID_CROW_ULTI,TERBANG MENYAMBAR
@@ -376,7 +376,7 @@ TID_BONE_THROWER_WEAPON_DESC,Si Senapan Mini mampu memanggul senapan mesin raksa
 TID_BONE_THROWER_ULTI,DISPENSER PERBAN
 TID_BONE_THROWER_ULTI_DESC,Luka dan lecet adalah suatu yang biasa ditemukan dalam baku tembak intensitas tinggi. Dispenser Perban akan memastikan seluruh tim siap tempur!
 TID_BLACK_HOLE,TARA
-TID_BLACK_HOLE_DESC,Serangan tiga kartu tarot dari Tara bisa menembus lawan. Serangan Supernya adalah lubang hitam yang dapat mengisap lawan terdekat dan memberi kerusakan!
+TID_BLACK_HOLE_DESC,"Cenayang ini datang dari negeri antah-berantah untuk membacakan ramalanmu. Yang unik, semua hasil ramalan darinya sama: KAMU AKAN KALAH!"
 TID_BLACK_HOLE_WEAPON,TAROT LIPAT TIGA
 TID_BLACK_HOLE_WEAPON_DESC,Tara melemparkan tiga kartu tarot tajam yang mampu menembus lawan! Trik kartu luar biasa!
 TID_BLACK_HOLE_ULTI,GRAVITASI
@@ -670,11 +670,11 @@ TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
 TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Peluang mendapatkan Jagoan KROMATIK akan meningkat di tiap Musim Brawl Pass. Kelangkaan Jagoan akan dimulai dengan LEGENDARIS, lalu menjadi MISTIS, hingga akhirnya menjadi EPIK.\n\nUntuk Musim ini, kelangkaan <BRAWLER> adalah <RARITY>."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"Peluang mendapatkan Jagoan KROMATIK akan meningkat di tiap Musim Brawl Pass. Kelangkaan Jagoan akan dimulai dengan LEGENDARIS, lalu menjadi MISTIS, hingga akhirnya menjadi EPIK.\n\n<BRAWLER> akan tersedia untuk dibuka melalui kotak begitu kamu mencapai Tingkat <TIER> dari Musim <SEASON>."
 TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"Peluang mendapatkan Jagoan KROMATIK akan meningkat di tiap Musim Brawl Pass. Kelangkaan Jagoan akan dimulai dengan LEGENDARIS, lalu menjadi MISTIS, hingga akhirnya menjadi EPIK.\n\n<BRAWLER> akan hadir di Musim <SEASON>."
-TID_MATCHMAKE_FAILED_5,Pencarian lawan gagal: Acara telah berakhir
-TID_MATCHMAKE_FAILED_7,Pencarian lawan gagal: Koneksi anggota tim terputus
-TID_MATCHMAKE_FAILED_9,Pencarian lawan gagal: Pemeliharaan dimulai
-TID_MATCHMAKE_FAILED_11,Pencarian lawan gagal: Anggota tim keluar dari pencarian lawan
-TID_MATCHMAKE_FAILED_12,Pencarian lawan gagal: Bos terakhir sudah kamu kalahkan
+TID_MATCHMAKE_FAILED_5,Pencarian lawan gagal: acara telah berakhir
+TID_MATCHMAKE_FAILED_7,Pencarian lawan gagal: sambungan anggota tim terputus
+TID_MATCHMAKE_FAILED_9,Pencarian lawan gagal: pemeliharaan akan segera dimulai
+TID_MATCHMAKE_FAILED_11,Pencarian lawan gagal: anggota tim meninggalkan pencarian lawan
+TID_MATCHMAKE_FAILED_12,Pencarian lawan gagal: bos terakhir sudah kamu kalahkan
 TID_MATCHMAKE_FAILED_14,ARENA BINTANG hanya bisa diikuti oleh Jagoan dengan Kekuatan Bintang
 TID_MATCHMAKE_FAILED_15,Semua laga ARENA BINTANG untuk hari ini sudah dimainkan
 TID_MATCHMAKE_FAILED_19,Jagoan yang dipilih tidak dapat digunakan di ARENA BINTANG dan Tantangan musim ini
@@ -717,7 +717,7 @@ TID_SKIN_REWARD_INFO_0,Tim Dukungan Brawl Stars memberikan Kostum baru untukmu.
 TID_SKIN_REWARD_TITLE_3,PESAN DARI TIM DUKUNGAN
 TID_SKIN_REWARD_INFO_3,Tim Dukungan Brawl Stars memberikan Kostum baru untukmu.
 TID_REWARD_TITLE,PESAN DARI TIM DUKUNGAN
-TID_REWARD_INFO,Ada pemberian dari Tim Dukungan Brawl Stars yang menantimu
+TID_REWARD_INFO,Ada pemberian yang belum diklaim dari Tim Dukungan Brawl Stars
 TID_REWARD_INFO_RESOURCE_FIRSTWINS,<AMOUNT> Token Bintang diklaim
 TID_REWARD_INFO_RESOURCE_GOLD,<AMOUNT> Token diklaim
 TID_REWARD_INFO_RESOURCE_LEGENDARYTROPHIES,<AMOUNT> Poin Bintang diklaim
@@ -890,7 +890,7 @@ TID_FRIEND_STATUS_BATTLE,<cffffff>berlaga</c> selama <TIME>
 TID_FRIEND_STATUS_BATTLE_END_SCREEN,<cffffff>layar akhir laga</c>
 TID_FRIEND_STATUS_SPECTATING,<cffffff>menonton</c>
 TID_FRIEND_STATUS_PRACTICING,<cffffff>berlatih</c>
-TID_FRIEND_STATUS_MATCHMAKE,<cffffff>dalam pencarian lawan</c>
+TID_FRIEND_STATUS_MATCHMAKE,<cffffff>Pencarian Lawan</c>
 TID_FRIEND_STATUS_HOME_AD_FULL,<cffffff>dalam tim</c>
 TID_FRIEND_STATUS_HOME_WITH_AD,<cffffff>dalam tim</c>
 TID_FRIEND_STATUS_HOME_IN_GAMEROOM,<cffffff>dalam tim</c>
@@ -912,7 +912,7 @@ TID_CLAN_MEMBER_ONLINE_STATUS_OFFLINE_LONG,Online: <cf7f7f7>> 1 bulan yang lalu<
 TID_CLAN_MEMBER_ONLINE_STATUS_1,<cff1e00>BERLAGA</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_2,<cffffff>DI MENU</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_3,<cffffff>DI MENU</c>
-TID_CLAN_MEMBER_ONLINE_STATUS_4,<cff1e00>MENCARI LAWAN</c>
+TID_CLAN_MEMBER_ONLINE_STATUS_4,<cff1e00>DALAM PENCARIAN LAWAN</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_5,<cffffff>DI MENU</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_7,<cff1e00>MENONTON</c>
 TID_CLAN_MEMBER_ONLINE_STATUS_8,<cff1e00>BERLATIH</c>
@@ -1115,7 +1115,7 @@ TID_TEAM_MEMBER_STATUS_0,<c999999>OFFLINE</c>
 TID_TEAM_MEMBER_STATUS_1,<cff1e00>BERLAGA</c>
 TID_TEAM_MEMBER_STATUS_2,<c006cff>PERGI</c>
 TID_TEAM_MEMBER_STATUS_3,<c999999>BELUM SIAP</c>
-TID_TEAM_MEMBER_STATUS_4,<cff1e00>MENCARI LAWAN</c>
+TID_TEAM_MEMBER_STATUS_4,<cff1e00>DALAM PENCARIAN LAWAN</c>
 TID_TEAM_MEMBER_STATUS_5,<cff1e00>LAYAR AKHIR</c>
 TID_TEAM_MEMBER_STATUS_6,<c999999>OFFLINE</c>
 TID_TEAM_MEMBER_STATUS_7,<cff1e00>MENONTON</c>
@@ -1146,8 +1146,8 @@ TID_STREAM_EVENT_101,Tim dibuat oleh <sender>
 TID_STREAM_EVENT_102,Pemain <sender> masuk
 TID_STREAM_EVENT_103,Pemain <sender> keluar
 TID_STREAM_EVENT_104,Dah! <sender> ditendang <target>
-TID_STREAM_EVENT_105,pencarian lawan dimulai
-TID_STREAM_EVENT_106,pencarian lawan digagalkan
+TID_STREAM_EVENT_105,Pencarian lawan dimulai
+TID_STREAM_EVENT_106,Pencarian lawan dibatalkan
 TID_STREAM_EVENT_107,Laga dimulai
 TID_STREAM_EVENT_108,Laga menang
 TID_STREAM_EVENT_109,Laga kalah
@@ -1242,7 +1242,7 @@ TID_SHOP_GEM_PACKS,PAKET PERMATA
 TID_SHOP_PURCHASED,Telah Dibeli
 TID_SHOP_OBTAINED,Telah Diraih
 TID_SHOP_INVALIDATED,Kedaluwarsa
-TID_SHOP_NEED_HERO,Jagoan diperlukan
+TID_SHOP_NEED_HERO,Belum dimiliki
 TID_SHOP_EXCLUSIVE,Eksklusif
 TID_SHOP_ACTIVE,Aktif
 TID_SHOP_CHALLENGE,Tantangan
@@ -1422,7 +1422,7 @@ TID_ERROR_POP_UP_UNLOCK_UNAVAILABLE,Pembukaan kunci akun tak tersedia saat ini. 
 TID_ERROR_POP_UP_UNLOCK_UNAVAILABLE_BUTTON,Coba lagi
 TID_ACCOUNT_LOCKED_INVALID_CODE,Kode pembuka tidak valid!
 TID_ACCOUNT_LOCKED_TITLE,Akun Terkunci
-TID_ACCONT_LOCKED_TEXT,Akun terkunci karena alasan keamanan. Hubungi dukungan untuk memulihkan akun.
+TID_ACCONT_LOCKED_TEXT,Akun terkunci karena alasan keamanan. Hubungi Tim Dukungan untuk memulihkan akun.
 TID_ACCOUNT_LOCKED_TEXT2,Masukkan kode pembuka di sini:
 TID_HERO_LIST_CONFIRM_GEM_GATCHA,Ketuk untuk konfirmasi
 TID_NOT_ENOUGH_GEMS_TITLE,Permata tidak cukup
@@ -1625,11 +1625,11 @@ TID_BARREL_BOT_WEAPON_DESC,Dua senapan sebar Darryl menyemburkan ledakan dua tah
 TID_BARREL_BOT_ULTI,TONG GELINDING
 TID_BARREL_BOT_ULTI_DESC,Darryl menggelinding maju dalam badan tongnya dan akan memantul di tembok! Lawan yang ada di jalurnya akan terhantam mundur dan kerusakan yang diterima akan berkurang. Bilah kekuatan Super miliknya akan terisi ulang seiring waktu!
 TID_ARTILLERY_DUDE,PENNY
-TID_ARTILLERY_DUDE_DESC,"Penny menembakkan berkantung-kantung koin, memberi kerusakan pada target dan apa saja yang ada di belakangnya. Serangan Supernya mengerahkan turet meriam mortir!"
+TID_ARTILLERY_DUDE_DESC,"Hidup di lautan lepas, Penny haus tantangan, berjiwa petualang, dan tidak mau dikekang. Berhati-hatilah karena dia tidak akan segan-segan menjarah kapal mana saja yang melintas!"
 TID_ARTILLERY_DUDE_WEAPON,PLUNDERBUSS
 TID_ARTILLERY_DUDE_WEAPON_DESC,"Menembakkan kantung berisi emas palsu. Jika mengenai lawan, akan terbuka dan keping koinnya akan mengincar lawan di belakangnya."
 TID_ARTILLERY_DUDE_ULTI,MERIAM SALVO
-TID_ARTILLERY_DUDE_ULTI_DESC,Penny mengerahkan meriamnya! Menembak lawan jarak jauh bahkan saat mereka sedang berlindung.
+TID_ARTILLERY_DUDE_ULTI_DESC,Penny mengerahkan meriam yang bisa menembak lawan dari jarak jauh bahkan saat mereka sedang berlindung. Peluru meriam akan membakar area target.
 TID_ITEM_NAME_SPECIAL,KEKUATAN BINTANG
 TID_HERO_INFO_ITEM_LOCKED,Ini bisa ditemukan setelah level <LEVEL>
 TID_HERO_INFO_LOCKED_INFO,Dapatkan dari Kotak Jagoan
@@ -2166,7 +2166,7 @@ TID_TEAM_MEMBER_STATUS_NEW_0,<c999999>OFFLINE</c>
 TID_TEAM_MEMBER_STATUS_NEW_1,BERLAGA
 TID_TEAM_MEMBER_STATUS_NEW_2,PERGI
 TID_TEAM_MEMBER_STATUS_NEW_3,<EMPTY>
-TID_TEAM_MEMBER_STATUS_NEW_4,MENCARI LAWAN
+TID_TEAM_MEMBER_STATUS_NEW_4,PENCARIAN LAWAN
 TID_TEAM_MEMBER_STATUS_NEW_5,LAYAR AKHIR
 TID_TEAM_MEMBER_STATUS_NEW_6,<c999999>OFFLINE</c>
 TID_TEAM_MEMBER_STATUS_NEW_7,MENONTON
@@ -2532,8 +2532,8 @@ TID_CONTENT_UPDATE,Mengunduh Konten...
 TID_BATTLE_ROYALE_28,Fantasi Terbang
 TID_SHAMAN_SHIBA_SKIN,NITA SHIBA
 TID_PENNY_BUNNY_SKIN,PENNY KELINCI
-TID_SHAMAN_SHIBA_SKIN_SHOP,NITA SHIBA
-TID_PENNY_BUNNY_SKIN_SHOP,PENNY KELINCI
+TID_SHAMAN_SHIBA_SKIN_SHOP,NITA\nSHIBA
+TID_PENNY_BUNNY_SKIN_SHOP,PENNY\nKELINCI
 TID_PURCHASE_POPUP_CONFIRM_OFFER,BELI PENAWARAN?
 TID_PURCHASE_POPUP_CONFIRM_SKIN,BELI KOSTUM?
 TID_PURCHASE_POPUP_CONFIRM_HERO,BELI JAGOAN?
@@ -3145,7 +3145,7 @@ TID_POCO_PIRATE_SKIN_SHOP,POCO\nBAJAK LAUT
 TID_BEA_LADYBUG_SKIN,BEA KEPIK
 TID_BEA_LADYBUG_SKIN_SHOP,BEA\nKEPIK
 TID_MAX_BLUE_SKIN,MAX TURBO
-TID_MAX_BLUE_SKIN_SHOP,MAX\nTURBO
+TID_MAX_BLUE_SKIN_SHOP,MAX TURBO
 TID_CTF_3,Hadiah Berharga
 TID_CTF_4,Penjarahan Liburan
 TID_CTF_5,Liburan Meriah
@@ -3338,6 +3338,8 @@ TID_ACCESSORY_BLOCKED_SUPER_REQUIRED,Kekuatan Super diperlukan!
 TID_ACCESSORY_BLOCKED_REQUIRES_MECHA,Perubahan MECHA diperlukan!
 TID_ACCESSORY_BLOCKED_REQUIRES_DUPLICATE,Lola memerlukan Ego!
 TID_ACCESSORY_BLOCKED_DUPLICATE_TOO_FAR,Ego Lola terlalu jauh!
+TID_ACCESSORY_BLOCKED_SILENCED,Dinonaktifkan!
+TID_ACCESSORY_BLOCKED_RANGE_TO_TURRET,Tidak ada lawan dalam jangkauan!
 TID_WALLY_SHORT_DESC,PENDUKUNG
 TID_WALLY_DESC,"Sebagai robot yang diciptakan untuk menanam tanaman, Sprout dilengkapi dengan fitur Bom Benih yang bisa memantul saat dilemparkan. Sprout juga memiliki kekuatan Super berupa menumbuhkan pagar tanaman!"
 TID_WALLY_WEAPON,BOM BENIH
@@ -3774,7 +3776,7 @@ TID_BRAWLPASS_POPUP_UNLOCKED,BRAWL PASS TERBUKA!
 TID_BRAWL_PASS_SEASON_1,MUSIM PANAS MONSTER
 TID_BRAWL_PASS_INFO_TEXT_1,Raih banyak hadiah ekstra seperti:\n\nSURGE - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF: <SKIN_1>!\n\nKOSTUM EKSKLUSIF: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN untuk SURGE\n\n<NUM>KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
 TID_EMOTE_EQUIP_NOT_OWNED,Dapatkan Pin ini dari Paket Pin!
-TID_RAID_BOSS_TOWN_CRUSHER_INTRO_TEXT,KALAHKAN MONSTER MEGA!
+TID_RAID_BOSS_TOWN_CRUSHER_INTRO_TEXT,Kalahkan Monster Mega!
 TID_EMOTE_CATEGORY_1,SLOT 1
 TID_EMOTE_CATEGORY_2,SLOT 2
 TID_EMOTE_CATEGORY_3,SLOT 3
@@ -3868,13 +3870,13 @@ TID_KING_OF_HILL_28,Kontrol Ketat
 TID_EMOTE_EQUIP_NOT_OWNED_SPECIAL,Pin Kolektor! Pin ini tidak mudah ditemukan!
 TID_LOGIN_WITH_FACEBOOK,Masuk dengan Facebook
 TID_TERMS_OF_SERVICE_BUTTON_TENCENT,Lisensi dan Perjanjian Layanan Tencent Games
-TID_PRIVACY_POLICY_BUTTON_TENCENT,Panduan Perlindungan Privasi Tencent Games
+TID_PRIVACY_POLICY_BUTTON_TENCENT,荒野乱斗隐私保护指引
 TID_PARENTS_GUIDE_BUTTON_TENCENT,Panduan Perlindungan Privasi Anak Tencent Games
 TID_TENCENT_LOGIN_AGREEMENTS,"Saya telah membaca dengan saksama dan setuju dengan <TOS>, <PP>, <CHILDREN>, dan <THIRDPARTY>."
 TID_THIRD_PARTY_SHARING_BUTTON_TENCENT,Daftar Informasi yang Dibagikan dengan Pihak Ketiga
 TID_TENCENT_THIRDPARTY_INFO,Daftar Informasi yang Dibagikan dengan Pihak Ketiga
 TID_TENCENT_LOGIN_TOS,Lisensi dan Perjanjian Layanan Tencent Games
-TID_TENCENT_LOGIN_PP,Panduan Perlindungan Privasi Tencent Games
+TID_TENCENT_LOGIN_PP,荒野乱斗隐私保护指引
 TID_TENCENT_LOGIN_CHILDREN,Panduan Perlindungan Privasi Anak Tencent Games
 TID_TENCENT_LOGIN_AGREEMENT_NOTE,"Kamu perlu membaca dengan saksama dan menyetujui\n<TOS>,\n<PP>,\n<CHILDREN>, dan\n<THIRDPARTY>\nsebelum mengakses game."
 TID_KING_OF_HILL_29,TRANSFER DIRI
@@ -3995,12 +3997,19 @@ TID_TENCENT_LOGIN_AGREEMENT_POPUP_2_TITLE,Pemberitahuan Penting
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_2,"Perlu diperhatikan bahwa kamu harus membaca dengan saksama dan setuju dengan\n<TOS>,\n<PP>,\n<CHILDREN>, dan\n<THIRDPARTY>\nsebelum mengakses game."
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_BACK,Kembali
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_NO,Tidak
+TID_TENCENT_LOGIN_BS_PP,荒野乱斗隐私保护指引
+TID_TENCENT_LOGIN_SPECIAL_TOS,《腾讯游戏许可及服务协议》
+TID_TENCENT_LOGIN_SPECIAL_OLD_PP,《腾讯游戏隐私保护指引》
+TID_TENCENT_LOGIN_SPECIAL_BS_PP,《荒野乱斗隐私保护指引》
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1_TITLE,更新提示
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_1,尊敬的腾讯游戏用户：\n为充分保障您的权利及个人信息安全，我们根据法律法规要求，\n对<OLDPP>进行了更新。我们结合本产品和业务实际，更详细、具体地向您说明我们收集和使用您个人信息的业务场景及目的，具体可参见<PP>内更新提示。\n您也可以阅读完整版\n<PP>和<TOS>\n了解详尽的个人信息处理规则和用户权利义务。如您已详细阅读并同意\n<TOS>和<PP>，\n请点击\q同意\q继续使用我们的服务。
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_OLD_ACCT_2,尊敬的用户，您需要详细阅读并同意\n<TOS>、<PP>、\n<CHILDREN>和<THIRDPARTY>，\n才可进入游戏哦。
 TID_BRAWL_PASS_SEASON_2,AYO KE STARR PARK!
 TID_BRAWL_PASS_INFO_TEXT_2,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF: <SKIN_1>!\n\nKOSTUM EKSKLUSIF: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN untuk <BRAWLER>\n\n<NUM> KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
 TID_BRAWL_PASS_SEASON_3,SAATNYA LIBURAN
 TID_BRAWL_PASS_INFO_TEXT_3,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF: <SKIN_1>!\n\nKOSTUM EKSKLUSIF: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN untuk <BRAWLER>\n\n<NUM> KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
 TID_BRAWL_PASS_SEASON_4,ARMADA STARR!
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF BERBATAS WAKTU: <SKIN_1>!\n\nKOSTUM EKSKLUSIF BERBATAS WAKTU: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN BERBATAS WAKTU untuk <BRAWLER>\n\nCAT EKSKLUSIF BERBATAS WAKTU\n\n<NUM> KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\n<NUM> ACAK TUGAS EKSTRA PER MINGGU\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF BERBATAS WAKTU: <SKIN_1>!\n\nKOSTUM EKSKLUSIF BERBATAS WAKTU: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN BERBATAS WAKTU untuk <BRAWLER>\n\nCAT EKSKLUSIF BERBATAS WAKTU\n\n<NUM_BOX> KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\n<NUM_REROLL>ACAK TUGAS EKSTRA PER MINGGU\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
 TID_QUESTS_MORE,Tampilkan Semua Tugas
 TID_QUESTS_MORE_NEXT_SEASON,Kamu telah menyelesaikan semua Tugas untuk Musim <THIS_SEASON>. Tugas Baru akan tersedia saat Musim <NEXT_SEASON> dimulai.
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,Hadiah Musim <NUM>
@@ -4378,12 +4387,12 @@ TID_BOSS_7,Laga Keren
 TID_BOSS_8,Musim Terbuka
 TID_COOP_7,Habis-habisan
 TID_COOP_8,Pertahanan Terakhir
-TID_HERO_INFO_LOCKED_BP_TIER_INFO_SHORT,Tersedia setelah Tingkat Musim <NUM>
-TID_HERO_INFO_LOCKED_BP_TIER_INFO,Tersedia setelah Tingkat Musim <NUM>
+TID_HERO_INFO_LOCKED_BP_TIER_INFO_SHORT,Tersedia saat mencapai Tingkat <NUM> musim ini
+TID_HERO_INFO_LOCKED_BP_TIER_INFO,Tersedia saat mencapai Tingkat <NUM> musim ini
 TID_HERO_INFO_LOCKED_BP_INFO_SHORT,Raih dengan mengaktifkan Brawl Pass atau dari Kotak
 TID_HERO_INFO_LOCKED_BP_INFO,Raih dengan mengaktifkan Brawl Pass atau dari Kotak
-TID_HERO_INFO_LOCKED_BP_TIER_OWNED_INFO_SHORT,Buka saat mencapai Tingkat Musim <NUM>
-TID_HERO_INFO_LOCKED_BP_TIER_OWNED_INFO,Buka saat mencapai Tingkat Musim <NUM>
+TID_HERO_INFO_LOCKED_BP_TIER_OWNED_INFO_SHORT,Buka saat mencapai Tingkat <NUM> musim ini
+TID_HERO_INFO_LOCKED_BP_TIER_OWNED_INFO,Buka saat mencapai Tingkat <NUM> musim ini
 TID_HERO_INFO_LOCKED_BP_FUTURE_SEASON_INFO,Hadir di Musim <SEASON>
 TID_HERO_INFO_LOCKED_BP_FUTURE_SEASON_INFO_SHORT,Hadir di Musim <SEASON>
 TID_RAID_4,Gemuruh Rimba
@@ -4475,7 +4484,7 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,PIN LIBURAN JAGOAN
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,Pemberitahuan Penting
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Terima kasih telah menggunakan Kreator Peta. Mohon untuk mematuhi Lisensi dan Perjanjian Layanan Tencent Games serta regulasi terkait lainnya saat menggunakan Kreator Peta. Dilarang membuat atau menyebarkan konten tidak pantas yang bersifat erotis, tidak senonoh, atau membahayakan persatuan bangsa, kedaulatan, integritas wilayah, serta melanggar hukum dan peraturan lainnya."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Terima kasih telah menggunakan Kreator Peta. Mohon untuk mematuhi Persetujuan Pengguna serta regulasi terkait lainnya saat menggunakan Kreator Peta. Dilarang membuat atau menyebarkan konten tidak pantas yang bersifat erotis, tidak senonoh, atau membahayakan persatuan bangsa, kedaulatan, integritas wilayah, serta melanggar hukum dan peraturan lainnya."
-TID_RUFFS,KOLONEL RUFFS
+TID_RUFFS,KOLONEL\nRUFFS
 TID_RUFFS_SHORT_DESC,PENDUKUNG
 TID_RUFFS_DESC,Ruffs menembakkan laser ganda yang akan memantul dari tembok. Kekuatan Super miliknya berupa kiriman suplai yang dapat memberikan kerusakan pada lawan yang berada di area pendaratan dan akan meninggalkan penguat yang bisa digunakan oleh rekan tim.
 TID_RUFFS_WEAPON,LASER GANDA
@@ -4649,7 +4658,7 @@ TID_RANKED_CLUB_LEAGUE_EVENT_LOCATION_INFO,Mode Laga dan Peta Acak
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_1,Ayo bertanding 3vs3 dalam tim atau bersama pemain acak dengan level keterampilan yang setara.
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_2,Tim pertama yang memenangkan dua laga akan menang.
 TID_RANKED_CLUB_LEAGUE_EVENT_DESC_3,"Mode Laga dan peta akan dirotasi secara acak dan berkala, jadi bersiaplah!"
-TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"Saat musim berakhir, kamu akan mendapatkan hadiah berdasarkan berapa banyak Tiket yang kamu mainkan serta peringkat Geng di musim itu."
+TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"Saat minggu berakhir, kamu akan mendapatkan hadiah berdasarkan berapa banyak Tiket yang kamu mainkan serta peringkat Geng di musim itu."
 TID_RANKED_EVENT_SEASON_REWARDS_BUTTON,HADIAH MUSIM
 TID_RANKED_EVENT_SOLO,LIGA BINTANG
 TID_RANKED_EVENT_TEAMS,LIGA BINTANG
@@ -4742,6 +4751,7 @@ TID_RANKED_PICK_ERROR_BRAWLER_BANNED,Jagoan ini telah diblokir! Pilih Jagoan lai
 TID_RANKED_PICK_ERROR_BRAWLER_PICKED,Jagoan ini telah dipilih! Pilih Jagoan lain!
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED,Jagoan ini belum tersedia di Liga Bintang. Pilih Jagoan lain!
 TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED_CLUB_LEAGUE,Jagoan ini belum tersedia di Laga Bintang. Pilih Jagoan lain!
+TID_RANKED_ERROR_BRAWLER_BLACKLISTED,Jagoan ini dinonaktifkan oleh penyelenggara turnamen
 TID_RANKED_HERO_POWER,LEVEL <NUM>
 TID_RANKED_REWARD_POPUP_SEASON,MUSIM <SEASON>
 TID_RANKED_REWARDS_TOOL_TIP,"Ada dua mode 3v3 dalam Liga Bintang:\n\n- Mode Solo, di mana kamu akan bermain bersama dua pemain acak dengan level liga yang setara denganmu.\n\n- Mode Tim, di mana kamu akan membuat tim yang terdiri dari tiga pemain untuk bisa bertanding.\n\nHadiah LIGA BINTANG akan ditentukan berdasarkan peringkat tertinggi yang dicapai dalam satu musim di salah satu mode."
@@ -4789,6 +4799,8 @@ TID_RANKED_MATCH_TERMINATED_REASON_1,Pertandingan terhenti: Koneksi <NAME> terpu
 TID_RANKED_MATCH_TERMINATED_REASON_2,Pertandingan terhenti: Tidak ada respons dari <NAME>.
 TID_RANKED_MATCH_TERMINATED_REASON_3,Pertandingan terhenti: Musim berakhir
 TID_RANKED_MATCH_TERMINATED_REASON_4,Pertandingan terhenti (<CODE>). Silakan coba lagi.
+TID_RANKED_MATCH_TERMINATED_REASON_5,Laga dihentikan: Berlangsung terlalu lama.
+TID_RANKED_MATCH_TERMINATED_REASON_6,Laga dihentikan: Berjalan terlalu lama.
 TID_RANKED_GOAL_REWARD_PURCHASE_OPTION_SKIN,OPSI PEMBELIAN KOSTUM EKSKLUSIF
 TID_RANKED_MATCH_TERMINATED_NAME_PLAYER,pemain
 TID_RANKED2_CONFIRM_PICKED,DIPILIH
@@ -5358,17 +5370,17 @@ TID_CLUB_LEAGUES_BUTTON_EVENT_DAY,Hari Acara <DAY>
 TID_CLUB_LEAGUES_BUTTON_DAY_NEW,HARI BARU!
 TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,ACARA BERIKUTNYA
 TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,Hari Acara berikutnya:
-TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Musim berikutnya:
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Peringkat Musim: <RANK>
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Tidak ada peringkat Musim
+TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Minggu berikutnya:
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Peringkat minggu ini: <RANK>
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Tidak ada peringkat minggu ini
 TID_CLUB_LEAGUES_BUTTON_JOIN_CLUB_DESC,Gabung ke Geng untuk bermain
 TID_CLUB_LEAGUES_BUTTON_REGISTRATION_CLOSED,Pendaftaran ditutup
 TID_CLUB_LEAGUE_EVENT_TIME_LEFT,<TIME> tersisa
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_DESC,Hari Acara Berikutnya:
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_TIME,<TIME>
-TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,Musim berikutnya: <TIME>
+TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,Minggu berikutnya: <TIME>
 TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TITLE,LIGA GENG
-TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,Acara musim berikutnya:
+TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,Acara minggu depan:
 TID_CLUB_LEAGUE_TICKETS_PER_PLAY,<NUM><cA4B7E0>/LAGA</c>
 TID_CLUB_LEAGUE_TROPHIES_MAX_PER_WIN,Maks./Menang
 TID_CLUB_LEAGUE_EVENT_TROPHY_WIN_DESC,Menang bersama Tim Geng:
@@ -5408,17 +5420,17 @@ TID_CLUB_LEAGUE_MASTERS,MASTER
 TID_CLUB_LEAGUE_TIER_1,I
 TID_CLUB_LEAGUE_TIER_2,II
 TID_CLUB_LEAGUE_TIER_3,III
-TID_CLUB_LEAGUE_SEASON_PROGRESS,PROGRES MUSIM
+TID_CLUB_LEAGUE_SEASON_PROGRESS,PROGRES MINGGUAN
 TID_CLUB_LEAGUE_SEASON_ENDS_IN,Berakhir dalam:
 TID_CLUB_LEAGUE_WAITING_FINAL_RESULTS,Menunggu hasil akhir
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,Menanti hasil Musim
-TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,Hasil Musim sedang diproses. Kembalilah nanti untuk melihat hasil akhir!
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS,Menunggu hasil minggu ini
+TID_CLUB_LEAGUE_WAITING_FINAL_SEASON_RESULTS_DESC,Hasil mingguan sedang diproses. Kembalilah nanti untuk melihat hasil akhir!
 TID_CLUB_LEAGUE_RESULTS_TITLE,Hasil:
-TID_CLUB_LEAGUE_SEASON_OVER,MUSIM BERAKHIR!
-TID_CLUB_LEAGUE_SEASON_OVER_2,MUSIM BERAKHIR
+TID_CLUB_LEAGUE_SEASON_OVER,MINGGU BERAKHIR!
+TID_CLUB_LEAGUE_SEASON_OVER_2,MINGGU BERAKHIR
 TID_CLUB_LEAGUE_MAX_TROPHIES_AVAILABLE,Trofi maks tersedia
-TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,PROGRES MUSIM
-TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,HASIL MUSIM
+TID_CLUB_LEAGUE_SEASON_PROGRESS_TITLE,PROGRES MINGGUAN
+TID_CLUB_LEAGUE_SEASON_RESULTS_TITLE,HASIL MINGGUAN
 TID_CLUB_LEAGUE_ITEM_PROMOTING,DIPROMOSIKAN
 TID_CLUB_LEAGUE_ITEM_PROMOTING_MULTIPLE,DIPROMOSIKAN x<NUM>
 TID_CLUB_LEAGUE_ITEM_DEMOTING,DIDEMOSIKAN
@@ -5430,15 +5442,15 @@ TID_CLUB_LEAGUE_COLUMN_MAX_REWARD,HADIAH MAKS
 TID_CLUB_LEAGUE_SHOP_DESC,Raih progres lebih cepat dan beli kostum eksklusif!
 TID_CLUB_LEAGUE_SHOP_BUTTON_DESC,RAIH PROGRES LEBIH CEPAT DAN BELI KOSTUM EKSKLUSIF:
 TID_CLUB_LEAGUE_BUTTON_VISIT_CLUB_SHOP,BUKA TOKO GENG
-TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,HADIAH AKHIR MUSIM
+TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,HADIAH AKHIR MINGGU
 TID_CLUB_LEAGUE_SEASON_END_REWARD_CLAIMED,DIKLAIM
 TID_CLUB_LEAGUE_NOT_YET_RANKED,BELUM BERPERINGKAT
-TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,PENDAFTARAN MUSIM DITUTUP
-TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,TONTON MUSIM INI
-TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,Tunggu musim berikutnya untuk bermain!
-TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,Acara musim berikutnya:
-TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,Musim berikutnya dimulai dalam <TIME>
-TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,Mainkan semua Tiket untuk memaksimalkan hadiah!
+TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,PENDAFTARAN MINGGU INI DITUTUP
+TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,TONTON LAGA MINGGU INI
+TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,Tunggu minggu berikutnya untuk bermain!
+TID_CLUB_LEAGUE_NEXT_SEASONS_EVENTS,Acara minggu depan:
+TID_CLUB_LEAGUE_NEXT_SEASON_STARTS_TIME,Minggu berikutnya: <TIME>
+TID_CLUB_LEAGUE_SEASON_TICKETS_REWARD_DESC,Mainkan semua Tiket untuk memaksimalkan hadiah individu!
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED_TITLE,TIKET DIMAINKAN:
 TID_CLUB_LEAGUE_SEASON_TICKETS_PLAYED,<NUM>/<MAX>
 TID_CLUB_LEAGUE_SEASON_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5449,7 +5461,7 @@ TID_CLUB_LEAGUE_NEED_MORE_GOLDEN_TICKETS,Kamu perlu <NUM> Tiket Emas lagi untuk 
 TID_CLUB_LEAGUE_NOT_ENOUGH_GOLDEN_TICKETS_AVAILABLE_TO_PURCHASE,Sudah tidak ada lagi Tiket Emas yang bisa dibeli
 TID_CLUB_LEAGUE_FEATURE_UNAVAILABLE,Fitur ini belum tersedia saat ini
 TID_CLUB_LEAGUE_NOT_IN_LEAGUE,Geng saat ini belum masuk liga
-TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,Geng belum masuk musim liga saat ini!
+TID_CLUB_LEAGUE_NO_CURRENT_LEAGUE_SEASON,Geng tidak berpartisipasi di liga minggu ini!
 TID_DUPLICATOR,LOLA
 TID_DUPLICATOR_SHORT_DESC,PENYERANG
 TID_DUPLICATOR_DESC,"Lola yang berprofesi sebagai pemandu wisata, aktris, sekaligus diva ini sering mengaku kalau dia adalah bintang top di Brawlywood.\n\nDia menyerang dengan syal miliknya dan akan menggunakan Ego sebagai kekuatan Super."
@@ -5467,21 +5479,21 @@ TID_CLUB_UNLOCK_TITLE_CLUBS,GENG
 TID_CLUB_UNLOCK_TITLE_UNLOCKED,Terbuka!
 TID_CLUB_UNLOCK_SEARCHING_FOR_CLUB,Mencari Geng terbaik untukmu...
 TID_CLUB_UNLOCK_CLUB_LEAGUE_TITLE,LIGA GENG
-TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,Ikuti musim berikutnya untuk memenangkan hadiah eksklusif!
+TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,Ikuti minggu berikutnya untuk memenangkan hadiah eksklusif!
 TID_CLUB_UNLOCK_CLUB_FOUND,GENG DITEMUKAN!
 TID_CLUB_UNLOCK_WELCOME_TO_CLUB,SELAMAT DATANG DI GENG!
 TID_CLUB_UNLOCK_LETS_GO,AYO
 TID_CLUB_UNLOCK_REQUIRED_TROPHIES,TROFI MINIMUM
 TID_CLUB_UNLOCK_INFO_TITLE,Kamu sekarang anggota:
-TID_CLUB_UNLOCK_FOUND_DESC,"Kami pikir Geng ini sangat cocok untukmu! Kamu selalu bisa keluar dan mencari Geng lain jika mau. Atau, kamu juga bisa memulai gengmu sendiri!"
+TID_CLUB_UNLOCK_FOUND_DESC,Kami rasa Geng ini cocok untukmu! Kamu bisa keluar kapan saja dan mencari Geng lain jika mau. Kamu juga bisa membuat Geng sendiri!
 TID_CLUB_UNLOCK_FOUND_CLUB_DESC,Selamat datang di Geng baru! Ayo berlaga bersama rekan Geng dan capai puncak Liga!
 TID_CLUB_UNLOCK_STAT_TAG,Tagar Geng
 TID_CLUB_UNLOCK_STAT_TYPE,Tipe
 TID_SHOP_BRAWLOWEEN_TITLE,BRAWL-O-WEEN
 TID_SHOP_BRAWLOWEEN_INFO,Set kostum
 TID_SKIN_INFO_BRAWLOWEEN,Kostum Brawl-o-ween
-TID_CLUB_LEAGUE_FLOW_NEW_SEASON,Musim Baru!
-TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Musim telah berakhir
+TID_CLUB_LEAGUE_FLOW_NEW_SEASON,Minggu Baru!
+TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Minggu telah berakhir
 TID_CLUB_LEAGUE_FLOW_CLUB_LEAGUE,LIGA GENG
 TID_CLUB_LEAGUE_FLOW_DAY_NEW,BARU!
 TID_CLUB_LEAGUE_FLOW_EVENT_DAY_STARTED,HARI ACARA <NUM> DIMULAI!
@@ -5492,8 +5504,8 @@ TID_CLUB_LEAGUE_FLOW_BUTTON_GO_SEASON_END,OKE
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_START,AYO
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_DAY_END,OKE
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_LEAGUE_PROMOTION,OKE
-TID_CLUB_LEAGUE_FLOW_SEASON_RANK,Peringkat Musim
-TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,HADIAH AKHIR MUSIM
+TID_CLUB_LEAGUE_FLOW_SEASON_RANK,Peringkat Mingguan
+TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_REWARD,HADIAH AKHIR MINGGU
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED_TITLE,Tiket dimainkan
 TID_CLUB_LEAGUE_FLOW_TICKETS_PLAYED,<NUM><cA4B7E0>/<MAX></c>
 TID_CLUB_LEAGUE_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
@@ -5504,7 +5516,7 @@ TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_1,Pembelian gagal
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_COINS,Koin tidak cukup!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_GEMS,Permata tidak cukup!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_3,Tiket tidak tersedia untuk dibeli!
-TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,Musim berakhir dalam <TIME>
+TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,Minggu berakhir dalam: <TIME>
 TID_CLUB_LEAGUE_TICKET_SHOP_TITLE,TIKET EMAS
 TID_CLUB_LEAGUE_TICKET_SHOP_INFO,"Kamu bisa memainkan hingga <cFEA305><NUM> Tiket Emas </c> selama musim Liga Geng. Gunakan Tiket Emas tersebut untuk memainkan pertandingan tambahan dan mendapatkan lebih banyak Trofi Geng. Dengan Tiket Emas, Geng bisa meraih peringkat yang lebih tinggi di Hari Acara saat tiket digunakan.\n\nDi akhir musim, Tiket Emas yang tersisa akan secara otomatis ditransfer ke musim berikutnya.\n\nTiket Emas tidak diperhitungkan dalam kalkulasi hadiah akhir musim."
 TID_CLUB_LEAGUE_TICKETS_GET_MORE,Dapatkan lebih banyak...
@@ -5527,18 +5539,18 @@ TID_CLUB_LEAGUE_EVENTS_TITLE,ACARA
 TID_CLUB_LEAGUE_EVENT_UNLOCKS_AT,Terbuka di
 TID_CLUB_LEAGUE_SHOW_TICKETS_TOGGLE,Tampilkan jumlah Trofi Geng <cFFDA14>maks</c> yang tersedia untuk dikumpulkan
 TID_CLUB_LEAGUE_INFO_TITLE,INFO LIGA GENG
-TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Musim & Hari Acara
-TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>MUSIM & HARI ACARA</c>
-TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Di setiap musim mingguan, Geng akan bersaing dengan 7 Geng lain di Liga.\n\nMainkan acara Liga Geng selama 3 Hari Acara dan menangkan Trofi Geng harian! Geng dengan Trofi terbanyak di akhir setiap hari akan mendapatkan poin terbanyak di papan peringkat musim.\n\nTrofi Geng akan DIRESET di akhir tiap Hari Acara.\n\n<cFCBC22>KIAT: Bentuk tim dengan anggota Geng untuk mendapatkan Trofi Geng bonus!</c>"
-TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Tiket
-TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>TIKET</c>
-TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,"Tiket diperlukan untuk bermain di acara Liga Geng. Setiap anggota Geng akan mendapatkan Tiket untuk dimainkan di setiap Hari Acara.\n\nUntuk memaksimalkan hadiah Musim serta perolehan trofi Geng, pastikan untuk memanfaatkan semua Tiket!"
-TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,Liga
-TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>LIGA</c>
-TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,"Geng dengan poin musim terbanyak di akhir minggu akan dipromosikan ke liga berikutnya, sementara Geng dengan performa terendah akan didemosikan. Naik ke liga tertinggi untuk tantangan dan hadiah yang lebih tinggi!"
+TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Selamat Datang
+TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>SELAMAT DATANG DI PERMAINAN GENG</c>
+TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Main dengan rekan Geng dan raih hadiah <cFCBC22>Toko Geng</c> setiap minggu!\n\nSatu Permainan Geng akan aktif setiap minggu:\n<cFCBC22>MINGGU LIGA GENG</c> - Ayo bersaing dengan Geng lain di Liga Geng untuk meraih hadiah di peringkat tertinggi dan mendaki liga.\n<cFCBC22>MINGGU TUGAS GENG</c> - Selesaikan tiga tugas Geng demi meraih poin untuk Geng. Makin banyak tugas yang diselesaikan oleh seluruh anggota Geng selama Minggu Tugas, makin tinggi hadiah yang akan diraih semua anggota."
+TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Liga Geng
+TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>MINGGU LIGA GENG</c>
+TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,"Dalam Liga Geng, 7 Geng dari liga yang sama akan bersaing selama seminggu. Mainkan acara Liga Geng dalam <cFCBC22>3 hari terpisah</c> dan raih <cFCBC22>Trofi Geng</c> tertinggi. <cFCBC22>Tiket</c> diperlukan untuk bermain di Liga Geng.\n\nGeng dengan performa terbaik sepanjang minggu akan meraih hadiah terbaik. Geng bisa mendapatkan <cFCBC22>promosi</c> atau <cFCBC22>demosi</c> di akhir minggu.\n\nBonus: Main dengan rekan Geng untuk mendapatkan <cFCBC22>Trofi Geng Ekstra</c> dari laga."
+TID_CLUB_LEAGUE_INFO_PAGE_3_MARKER,Tugas Geng
+TID_CLUB_LEAGUE_INFO_PAGE_3_TITLE,<cFCBC22>MINGGU TUGAS GENG</c>
+TID_CLUB_LEAGUE_INFO_PAGE_3_DESC,"Selama Minggu Tugas Geng, akan ada <cFCBC22>3 Tugas</c> untuk diselesaikan.\n\nKamu bisa menyumbang <cFCBC22>poin</c> kepada Geng dengan menyelesaikan Tugas Geng. Semakin banyak poin yang diraih di akhir minggu, semakin tinggi hadiah yang akan diterima semua anggota.\n\nBonus: Main dengan rekan Geng untuk <cFCBC22>menggandakan progres tugas</c>."
 TID_CLUB_LEAGUE_INFO_PAGE_4_MARKER,Toko Geng
-TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>TOKO GENG</c>
-TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,"Berpartisipasi dalam Liga Geng akan memberikan Koin Geng. Makin tinggi peringkat Liga dan musim, makin banyak Koin Geng yang dapat dimenangkan. Mainkan semua tiket dalam satu musim untuk mengumpulkan semua hadiah Koin Geng.\n\nBelanjakan Koin Geng di Toko Geng! Ada Kostum eksklusif, Poin Kekuatan, Koin, serta item Buster. Ayo tengok!"
+TID_CLUB_LEAGUE_INFO_PAGE_4_TITLE,<cFCBC22>APA ITU TOKO GENG?</c>
+TID_CLUB_LEAGUE_INFO_PAGE_4_DESC,"Mainkan Liga Geng & Tugas Geng untuk mendapatkan <cFCBC22>Koin Geng</c>. Belanjakan Koin Geng di Toko Geng!\n\nDi Toko Geng, kamu bisa <cFCBC22>mempercepat progres</c> hingga 50% dan menemukan <cFCBC22>Kostum Eksklusif</c>!"
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_1,BERLAGA MELAWAN 7 GENG
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_2,ACARA 3 HARI
 TID_CLUB_LEAGUE_INFO_PAGE_1_IMAGE_3,MAIN DI ACARA DEMI MERAIH TROFI GENG
@@ -5579,9 +5591,9 @@ TID_CLUB_SHOP_BUTTON,TOKO GENG
 TID_CLUB_SHOP_DESC,Raih progres lebih cepat dan beli kostum eksklusif!
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED,Jagoan terkunci
 TID_CLUB_SHOP_SKIN_BRAWLER_LOCKED_DESC,Buka Jagoan untuk membeli Kostum ini!
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,AKHIR MUSIM LIGA GENG: Geng mencapai PERINGKAT <RANKING>. Terimalah <COINS><cEE1B39>Koin Geng</c> sebagai hadiah!
-TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"AKHIR MUSIM LIGA GENG: Geng mencapai PERINGKAT <RANKING>, tetapi kamu tidak berlaga di musim ini. Ayo berlaga di musim berikutnya untuk mendapatkan Koin Geng!"
-TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,HADIAH MAKSIMUM AKHIR MUSIM
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION,MINGGU LIGA GENG BERAKHIR: Geng mencapai PERINGKAT <RANKING>. Terimalah <COINS> <cEE1B39>Koin Geng</c> sebagai hadiah!
+TID_CLUB_LEAGUE_SEASON_END_NOTIFICATION_NO_REWARD,"MINGGU LIGA GENG BERAKHIR: Geng mencapai PERINGKAT <RANKING>, tetapi kamu tidak berpartisipasi di musim ini. Ayo berpartisipasi di musim berikutnya untuk mendapatkan Koin Geng!"
+TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_TITLE,HADIAH MAKSIMUM AKHIR MINGGU
 TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,Mainkan semua Tiket untuk memaksimalkan hadiah!
 TID_CLUB_LEAGUE_SEASON_REWARD_MAX,MAKS
 TID_CLUB_LEAGUE_SEASON_PROMOTING_DESC,Dipromosikan ke Liga yang lebih tinggi
@@ -5589,7 +5601,7 @@ TID_CLUB_LEAGUE_SEASON_DEMOTING_DESC,Didemosikan ke Liga yang lebih rendah
 TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,Mencari Tim:
 TID_CLUB_LEAGUE_LOOKING_FOR_PLAYERS,Mencari Pemain:
 TID_CLUB_INFO_TAB_PLAYER_RANKS,PERINGKAT PEMAIN
-TID_CLUB_INFO_TAB_LEAGUE_SEASON,MUSIM LIGA GENG
+TID_CLUB_INFO_TAB_LEAGUE_SEASON,MINGGU LIGA GENG
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY,HARI ACARA <NUM>
 TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY_NONE,HARI ACARA
 TID_CLUB_MEMBER_LEAGUE_TICKETS,<NUM>/<MAX>
@@ -5624,20 +5636,24 @@ TID_CLUB_EVENT_INFO_CLUB_TROPHY_REWARDS,HADIAH TROFI GENG
 TID_REWARD_DESC_GEAR_TOKENS,TOKEN BUSTER
 TID_REWARD_DESC_GEAR_TOKEN_SINGLE,TOKEN BUSTER
 TID_REWARD_DESC_GEAR_SCRAP,FRAGMEN BUSTER
-TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hai! Sepertinya kamu sudah terlambat untuk ikut bermain di musim ini.\n\nSilakan melihat-lihat dan tonton laga Gengmu sebelum musim berikutnya dimulai!
+TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hai! Sepertinya kamu sudah terlambat untuk ikut bermain di minggu ini.\n\nSilakan melihat-lihat dan tonton laga Geng sebelum musim berikutnya dimulai!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Ayo lihat ada apa di Toko Geng!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Hasil Akhir:
 TID_CLUB_LEAGUE_TEASER_TITLE,LIGA GENG
 TID_CLUB_LEAGUE_TEASER_JOIN_CLUB,MASUK GENG
 TID_CLUB_LEAGUE_TEASER_MESSAGE,Ayo berlaga dengan Geng untuk meraih progres lebih cepat dan raih kostum eksklusif bersama!
 TID_CLUB_LEAGUE_TEASER_REACH_TROPHIES_TO_UNLOCK,Capai <NUM> Trofi untuk membuka Geng!
-TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,Gabung ke Geng untuk berlaga di musim berikutnya
+TID_CLUB_LEAGUE_TEASER_JOIN_A_CLUB,Gabung ke Geng untuk bermain!
 TID_CLUB_LEAGUE_TEASER_FIND_OUT_MORE,CARI TAHU SELENGKAPNYA
-TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,Jadwal Musim Ini:
-TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,Jadwal Musim Berikutnya:
+TID_CLUB_LEAGUE_EVENTS_DAYS_CURRENT_SEASON,Jadwal Minggu Ini:
+TID_CLUB_LEAGUE_EVENTS_DAYS_NEXT_SEASON,Jadwal Minggu Depan:
 TID_CLUB_LEAGUE_EVENTS_DAY_STARTS_IN,Dimulai dalam: <TIME>
 TID_CLUB_LEAGUE_EVENTS_DAY_ENDS_IN,Berakhir dalam: <TIME>
 TID_CLUB_LEAGUE_EVENTS_INFO_BUTTON,APA ITU LIGA GENG?
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_CURRENT_SEASON,MINGGU INI
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_ENDS_IN,Berakhir dalam <TIME>
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_NEXT_SEASON,MINGGU DEPAN
+TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON_STARTS_IN,Dimulai dalam <TIME>
 TID_CLUBS_MEMBERS_CLUB_TROPHIES,Trofi Geng
 TID_CLUBS_MEMBERS_TICKETS_USED,Tiket Digunakan
 TID_CLUBS_MEMBERS_POWER_LEAGUE_RANK,Peringkat Liga Bintang
@@ -5668,7 +5684,7 @@ TID_HEADLESS_RIDER_STU_SKIN,STU KEPALA BUNTUNG
 TID_COUNT_PENGULA_MRP_SKIN,MR. DRAKULA
 TID_SWAMP_GENE_SKIN,GENE MONSTER RAWA
 TID_GHOST_SQUEAK_SKIN_SHOP,SQUEAK\nHANTU
-TID_SURGE KONG_SKIN_SHOP,SURGE KONG
+TID_SURGE KONG_SKIN_SHOP,SURGE\nKONG
 TID_HEADLESS_RIDER_STU_SKIN_SHOP,STU\nKEPALA BUNTUNG
 TID_COUNT_PENGULA_MRP_SKIN_SHOP,MR.\nDRAKULA
 TID_SWAMP_GENE_SKIN_SHOP,GENE\nMONSTER RAWA
@@ -5758,7 +5774,7 @@ TID_LOOKING_TOGGLE_LOOKING_FOR_A_TEAM,Statusmu kini ditampilkan kepada pemain on
 TID_LOOKING_TOGGLE_LOOKING_FOR_PLAYERS,Tim kini ditampilkan kepada pemain online lain sebagai MENCARI PEMAIN
 TID_CLUB_JOIN_FAIL_FEATURE_LOCKED,Gagal bergabung: Geng terbuka saat mencapai <NUM> Trofi.
 TID_CLUB_LEAGUE_LEAGUES_POPUP_CURRENT_LEAGUE,LIGA SAAT INI
-TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,Promosi dan demosi akan dilakukan di akhir setiap musim Liga Geng!\nCapai Liga Geng yang lebih tinggi untuk memaksimalkan hadiah Koin Geng.
+TID_CLUB_LEAGUE_LEAGUES_POPUP_MESSAGE,Promosi dan demosi akan dilakukan di akhir setiap minggu Liga Geng!\nCapai Liga Geng yang lebih tinggi untuk memaksimalkan hadiah Koin Geng.
 TID_CLUB_LEAGUE_LEAGUES_POPUP_BUTTON,OKE
 TID_CLUB_LEAGUE_LEAGUES_POPUP_TITLE,LIGA
 TID_IMPORTANT_MESSAGE_TITLE,PEMBERITAHUAN PENTING
@@ -5835,8 +5851,8 @@ TID_FURIOUS_FANG_SKIN,FANG GARANG
 TID_FURIOUS_FANG_SKIN_SHOP,FANG\nGARANG
 TID_CLASSIC MIKE_SKIN,DYNAMIKE KLASIK
 TID_CLASSIC MIKE_SKIN_SHOP,DYNAMIKE\nKLASIK
-TID_EL_PRIMO_VALENTINES,El CORAZÓN
-TID_EL_PRIMO_VALENTINES_SHOP,El\nCORAZÓN
+TID_EL_PRIMO_VALENTINES,EL CORAZÓN
+TID_EL_PRIMO_VALENTINES_SHOP,EL\nCORAZÓN
 TID_GRIFF_SLEIGH_SKIN,GRIFF KERETA LUNCUR
 TID_GRIFF_SLEIGH_SKIN_SHOP,GRIFF\nKERETA LUNCUR
 TID_SANTA_BO_SKIN,BO HO HO HO
@@ -5923,10 +5939,10 @@ TID_CLAIM_VOUCHER_POPUP_TITLE,Klaim Hadiah
 TID_CLAIM_VOUCHER_BUTTON_CLAIM,Klaim
 TID_CLAIM_VOUCHER_BUTTON_CANCEL,Batal
 TID_SPELL_FACTORY_CLAIM_FAILED_TITLE,Gagal mengeklaim hadiah
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,Gagal mengeklaim hadiah dengan kode <c267F00><CODE></c>.
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,Gagal mengeklaim: hadiah dengan kode\n\n<c267F00><CODE></c> sudah diklaim.
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,KODE TIDAK VALID\n\n<c7F0000><CODE></c>
-TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,Gagal mengeklaim: hadiah dengan kode\n\n<c267F00><CODE></c> sudah kedaluwarsa.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_UNKNOWN,Gagal mengeklaim hadiah.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_ALREADY_CLAIMED,Gagal mengeklaim: hadiah sudah diklaim.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_INVALID_CODE,Gagal mengeklaim: kode tidak valid.
+TID_SPELL_FACTORY_CLAIM_FAILED_REASON_EXPIRED,Gagal mengeklaim: hadiah sudah kedaluwarsa.
 TID_RANKED_FRIENDLY_BEST_OF_TOGGLE_TITLE,TERBAIK DARI
 TID_FLEA,EVE
 TID_FLEA_SHORT_DESC,PENYERANG
@@ -5938,7 +5954,7 @@ TID_FLEA_ULTI_DESC,Eve mengeluarkan sebutir telur besar yang akan menetas menjad
 TID_SPEC_ABI_FLEA_1,MELAWAN HUKUM ALAM
 TID_SPEC_ABI_FLEA_1_DESC,Urutan telur dari Penembak Telur akan dibalik.
 TID_SPEC_ABI_FLEA_2,KELAHIRAN TAK TERDUGA
-TID_SPEC_ABI_FLEA_2_DESC,"Saat mengenai Jagoan lawan, telur terbesar akan menetas menjadi larva."
+TID_SPEC_ABI_FLEA_2_DESC,"Setiap <c00cc00><VALUE1></c> detik, telur terbesar berikutnya yang mengenai lawan akan menetas menjadi larva."
 TID_ACCESSORY_FLEA_JUMP,SELAMAT TINGGAL!
 TID_ACCESSORY_FLEA_JUMP_DESC,Eve melompat pergi sembari meninggalkan larva.
 TID_ACCESSORY_FLEA_SYMBIOSIS,KASIH IBU
@@ -5950,7 +5966,7 @@ TID_HATCHLING_HEALTH,Kesehatan Larva
 TID_HATCHLING_DAMAGE,Kerusakan Larva
 TID_HATCHLING_COUNT,Jumlah Larva
 TID_ACCESSORY_DUPLICATOR_SWAP,PEMERAN PENGGANTI
-TID_ACCESSORY_DUPLICATOR_SWAP_DESC,Lola dan Ego miliknya bertukar tempat dan memulihkan <c00cc00><VALUE1></c> kesehatan.
+TID_ACCESSORY_DUPLICATOR_SWAP_DESC,Lola dan Ego miliknya bertukar tempat dan memulihkan <c00cc00><VALUE1></c> kesehatan Lola.
 TID_ACCESSORY_BLOCKED_EGO_TOO_FAR,Ego terlalu jauh!
 TID_ACCESSORY_BLOCKED_MISSING_EGO,Tidak dapat diaktifkan tanpa Ego!
 TID_GAME_MODE_25,SIKAT HABIS
@@ -5967,13 +5983,13 @@ TID_ACCESSORY_BASEBALL_STICKY,JERAT PERMEN KARET
 TID_ACCESSORY_BASEBALL_STICKY_DESC,Bola Karet berikutnya dari Bibi akan menghambat pergerakan lawan selama <c00cc00><VALUE1></c> detik!
 TID_ACCESSORY_MUMMY_ACID,SEMPROTAN ASAM
 TID_ACCESSORY_MUMMY_ACID_DESC,"Semprotan rambut Emz yang berikutnya bisa menyusup melewati penghalang, namun memberikan kerusakan <ccc0000><VALUE1>%</c> lebih sedikit."
-TID_FIRST_BLOOD,BURUAN PERTAMA <name>!
-TID_KILL_NUMBER_OWN,EMPAT BURUAN LAGI!
-TID_KILL_NUMBER_OPPONENT,EMPAT BURUAN TERSISA UNTUK LAWAN!
-TID_ONE_POINT_FROM_VICTORY,SATU BURUAN LAGI UNTUK MENANG!
-TID_OPPONENT_ONE_POINT_FROM_VICTORY,"SATU LAGI, KAMU KALAH!"
-TID_VICTORY_MATCH_OVER,MENANG!
-TID_LOSS_MATCH_OVER,KALAH!
+TID_FIRST_BLOOD,Buruan Pertama <name>!
+TID_KILL_NUMBER_OWN,4 Buruan lagi!
+TID_KILL_NUMBER_OPPONENT,4 Buruan tersisa untuk lawan!
+TID_ONE_POINT_FROM_VICTORY,1 Buruan lagi untuk menang!
+TID_OPPONENT_ONE_POINT_FROM_VICTORY,"1 Buruan lagi, kamu kalah!"
+TID_VICTORY_MATCH_OVER,MENANG!\nLaga Berakhir
+TID_LOSS_MATCH_OVER,KALAH!\nLaga Berakhir
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2022,Kostum Imlek Jagoan 2022
 TID_LOGIN_CALENDAR_LEFT_TITLE,HADIAH MASUK BERTURUT-TURUT
 TID_LOGIN_CALENDAR_LEFT_SUBTITLE,<cfffc11>MASUK SETIAP HARI SELAMA 15 HARI</c> untuk mengeklaim <cfffc11>HADIAH GRATIS</c>! <cfffc11>JANGAN LEWATKAN SATU HARI PUN</c> jika tidak ingin hadiah berakhir!
@@ -6066,25 +6082,25 @@ TID_LOGIN_CALENDAR_REWARD_DESC_BRAWLER,Buka <HERONAME>
 TID_DOCTOR_EDGAR_SKIN,DR. EDGAR
 TID_DOCTOR_EDGAR_SKIN_SHOP,DR.\nEDGAR
 TID_FIREFLY_RICO_SKIN,RICO KUNANG-KUNANG
-TID_FIREFLY_RICO_SKIN_SHOP,RICO KUNANG-KUNANG
+TID_FIREFLY_RICO_SKIN_SHOP,RICO\nKUNANG-KUNANG
 TID_STAG_BEETLE_MEG_SKIN,MEG KUMBANG
-TID_STAG_BEETLE_MEG_SKIN_SHOP,MEG KUMBANG
+TID_STAG_BEETLE_MEG_SKIN_SHOP,MEG\nKUMBANG
 TID_SAVAGE_BULL_SKIN,BULL SINGA
-TID_SAVAGE_BULL_SKIN_SHOP,BULL SINGA
+TID_SAVAGE_BULL_SKIN_SHOP,BULL\nSINGA
 TID_WASP_BO_SKIN,BO TAWON
-TID_WASP_BO_SKIN_SHOP,BO TAWON
+TID_WASP_BO_SKIN_SHOP,BO\nTAWON
 TID_MR_FLY_SKIN,MR. LALAT
 TID_MR_FLY_SKIN_SHOP,MR. LALAT
 TID_BUNNY_GROM_SKIN,GROM KELINCI
-TID_BUNNY_GROM_SKIN_SHOP,GROM KELINCI
+TID_BUNNY_GROM_SKIN_SHOP,GROM\nKELINCI
 TID_MANTIS_ROSA_SKIN,ROSA BELALANG
-TID_MANTIS_ROSA_SKIN_SHOP,ROSA BELALANG
+TID_MANTIS_ROSA_SKIN_SHOP,ROSA\nBELALANG
 TID_SPIKY_EVE_SKIN,EVE BUNGA BERDURI
-TID_SPIKY_EVE_SKIN_SHOP,EVE BUNGA BERDURI
+TID_SPIKY_EVE_SKIN_SHOP,EVE\nBUNGA BERDURI
 TID_CORRUPTED_SPROUT_SKIN,SPROUT PARASIT
 TID_CORRUPTED_SPROUT_SKIN_SHOP,SPROUT\nPARASIT
 TID_IVY_BELLE_SKIN,BELLE BOTANI
-TID_IVY_BELLE_SKIN_SHOP,BELLE BOTANI
+TID_IVY_BELLE_SKIN_SHOP,BELLE\nBOTANI
 TID_TRUE_GOLD_SPROUT_SKIN,SPROUT EMAS
 TID_TRUE_GOLD_SPROUT_SKIN_SHOP,SPROUT\nEMAS
 TID_TRUE_GOLD_SURGE_SKIN,SURGE EMAS
@@ -6257,7 +6273,7 @@ TID_ENEMY_TEAM_BANS,BLOKIR TIM MERAH
 TID_PRE_PICK_YOUR_BRAWLER,PILIH JAGOAN TERLEBIH DAHULU
 TID_PRE_PICK,PILIH TERLEBIH DAHULU
 TID_CANCEL,BATAL
-TID_WANTS_TO_PLAY,INGIN BERMAIN
+TID_WANTS_TO_PLAY,INGIN MEMILIH
 TID_WANT_TO_PLAY,INGIN BERMAIN
 TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,<num> REKAN TIM
 TID_BRAWL_PASS_SEASON_11,ATRAKSI MEMUKAU
@@ -6302,7 +6318,7 @@ TID_TRUE_SILVER_LOLA_SKIN_SHOP,LOLA\nPERAK
 TID_CRASH_TEST_DARRYL_SKIN,DARRYL UJI TABRAKAN
 TID_CRASH_TEST_DARRYL_SKIN_SHOP,DARRYL\nUJI TABRAKAN
 TID_BIKER_CARL_SKIN,CARL PENGENDARA MOTOR
-TID_BIKER_CARL_SKIN_SHOP,CARL PENGENDARA MOTOR
+TID_BIKER_CARL_SKIN_SHOP,CARL\nPENGENDARA MOTOR
 TID_PYRO_SPIKE_SKIN,SPIKE PELEMPAR API
 TID_PYRO_SPIKE_SKIN_SHOP,SPIKE\nPELEMPAR API
 TID_MONSTER_TRUCK_MEG_SKIN,MEG TRUK MONSTER
@@ -6361,12 +6377,231 @@ TID_LOGIN_CALENDAR_LOYALTY_PROGRAM,PROGRAM LOYALITAS
 TID_LOGIN_CALENDAR_TITLE,PROGRAM LOYALITAS STARR PARK
 TID_REWARD_DESC_PLAYER_ICON_REGULAR,IKON PEMAIN
 TID_CLUB_LEAGUE_CLUB_COINS_HOW_TO_GET,Raih Koin Geng dengan bermain di Liga Geng
+TID_CLUB_EVENTS_TITLE,PERMAINAN GENG
+TID_CLUB_EVENTS_LEAGUE_TAB_DAY,HARI ACARA
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY,HARI ACARA <NUM>
+TID_CLUB_EVENTS_LEAGUE_TAB_EVENT_DAY_COMPLETE,SELESAI
+TID_CLUB_EVENTS_LEAGUE_TAB_SEASON,MINGGU
+TID_CLUB_EVENTS_TAB_LEAGUE,LIGA
+TID_CLUB_EVENTS_TAB_QUESTS,TUGAS
+TID_CLUB_EVENTS_BUTTON_CLUB_SHOP,TOKO GENG
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_IS_TOP,Hanya hasil dari <TOP> posisi teratas di tiap Geng yang akan dihitung. Kamu berada di posisi ke-<NUM>.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_TOP,Hanya hasil dari <TOP> posisi teratas di tiap Geng yang akan dihitung. Kamu berada di posisi ke-<cF76263><NUM></c>.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_RANKED,Hanya hasil dari <TOP> posisi teratas di tiap Geng yang akan dihitung. <cF76263>Kamu belum berpartisipasi.</c>
+TID_CLUB_INFO_TOP_EVENT_DAY_PLAYER_DIVIDER,Hanya hasil dari <TOP> peserta teratas di tiap Geng yang akan dihitung.
+TID_CLUB_QUESTS_PLAYER_REWARD_DESC,HADIAH AKHIR MINGGU
+TID_CLUB_QUESTS_LOCKED_REWARD_DESC,SELESAIKAN TUGAS GENG MANA PUN UNTUK MEMBUKA
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY,Raih <POINTS> poin bersama rekan Geng untuk mendapatkan hadiah ini di akhir minggu!
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_CURRENT,Ini adalah hadiah akhir minggu dari Tugas Geng saat ini.
+TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY_LOCKED,Ini adalah hadiah dari Tugas Geng saat ini. Selesaikan Tugas Geng untuk menerimanya saat minggu berakhir!
+TID_CLUB_QUESTS_LEAGUES_BUTTON,LIGA
+TID_CLUB_QUESTS_LEAGUES_DESC,Ayo naik ke Liga Geng yang lebih tinggi untuk MEMAKSIMALKAN HADIAH!
+TID_CLUB_QUESTS_RANKS_CURRENT_LEAGUE,LIGA SAAT INI
+TID_CLUB_QUESTS_RANKS_MAX_REWARD,HADIAH MAKS.
+TID_CLUB_QUESTS_RANKS_MESSAGE,Liga Geng menentukan hadiah maksimum dari Tugas Geng di minggu tersebut. Capai liga berikutnya untuk meningkatkan hadiah Koin Geng!
+TID_CLUB_QUESTS_RANKS_TITLE,LIGA
+TID_CLUB_QUESTS_FLOW_NEW_SEASON,Minggu Baru!
+TID_CLUB_QUESTS_FLOW_SEASON_ENDED,Minggu telah berakhir
+TID_CLUB_QUESTS_FLOW_CLUB_QUESTS,TUGAS GENG
+TID_CLUB_QUESTS_FLOW_MAX_REWARD,HADIAH MAKS.
+TID_CLUB_QUESTS_FLOW_BUTTON_GO,SETUJU
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_START,AYO
+TID_CLUB_QUESTS_FLOW_BUTTON_GO_SEASON_END,OKE
+TID_CLUB_QUESTS_FLOW_SEASON_RANK,Peringkat Mingguan
+TID_CLUB_QUESTS_FLOW_END_OF_SEASON_REWARD,HADIAH AKHIR MINGGU
+TID_CLUB_QUESTS_FLOW_CLUB_COIN_REWARD,<NUM>/<MAX>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_BADGE,<cFCF044>x2</c>
+TID_CLUB_QUESTS_DOUBLE_PROGRESS_DESC,Main dengan setidaknya 1 Anggota Geng untuk <cFCF044>MENGGANDAKAN</c> progres Tugas Geng
+TID_CLUB_QUESTS_ALL_COMPLETED_DESC,Semua Tugas Geng minggu ini selesai!
+TID_CLUB_QUEST_ALREADY_COMPLETED,Tugas Geng ini sudah diselesaikan!
+TID_CLUB_QUESTS_SEASON_ENDS_IN_TIME,Minggu berakhir dalam:
+TID_CLUB_QUESTS_REWARD_LOCKED_DESC,Hadiah akan terbuka di tugas pertama!
+TID_CLUB_QUESTS_COMPLETED_NUM,Tugas selesai: <NUM>/<MAX>
+TID_CLUB_QUESTS_TITLE,TUGAS GENG
+TID_CLUB_QUESTS_NEW_SEASON,MINGGU BARU!
+TID_CLUB_QUESTS_SEASON_END_NOTIFICATION,MINGGU TUGAS GENG BERAKHIR: Terimalah <COINS> <cEE1B39>Koin Geng</c> sebagai hadiah minggu ini!
+TID_CLUB_QUESTS_CONTRIBUTIONS_TITLE,KONTRIBUSI MINGGU INI
+TID_CLUB_QUESTS_CONTRIBUTIONS_MEMBERS,Anggota Geng: <NUM>
+TID_CLUB_QUESTS_CLUB_TEAM_BONUS,BONUS TIM GENG x2
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TITLE,BONUS TIM!
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_DESC,Main dengan setidaknya 1 Anggota Geng untuk <cFCF044>MENGGANDAKAN</c> progres Tugas Geng!
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PROGRESS,Progres Tugas Geng
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_X2,x2
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_PLAY_SOLO,MAIN SOLO
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_ONLINE,Online: <NUM>
+TID_CLUB_QUESTS_TEAM_BONUS_POPUP_TEAM_UP,BUAT TIM!
+TID_CLUB_QUESTS_WARNING_NOT_AVAILABLE,Kamu hanya bisa berkontribusi pada Geng yang kamu ikuti pada saat minggu ini dimulai.\n\nTunggu hingga minggu depan untuk bisa berkontribusi bagi Geng ini!
+TID_CLUB_QUESTS_SEASON_END_REWARD_CLAIMED,DIKLAIM
+TID_CLUB_LEAGUE_WARNING_NOT_AVAILABLE,Hai! Sepertinya Gengmu belum berpartisipasi di Liga Geng minggu ini. Kamu bisa bersaing dengan Geng lain saat minggu Liga Geng berikutnya dimulai.
+TID_CLUB_EVENT_TIME_LEFT,<TIME> tersisa
+TID_SHOP_CLUB_SHOP_SEE_OFFERS,LIHAT PENAWARAN
+TID_SHOP_CLUB_SHOP_TITLE,TOKO GENG
+TID_SHOP_CLUB_SHOP_DESC,PERCEPAT PROGRES
 TID_SHOP_OFFER_INFO_25,Ikon Pemain baru!
 TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,<cFFB820>KEMBALI BESOK</c> untuk MENGEKLAIM hadiah ini atau seluruh sisa hadiah akan hilang!
 TID_BRAWLBALL_49,Lebih Kenyal
 TID_BRAWLBALL_50,Penuh Goyangan
 TID_BRAWLBALL_51,Skor Tertinggi
 TID_BRAWLBALL_52,Ping Pong
+TID_INBOX_CAPTION_72_68,PEMBERIAN: CAT
+TID_SILENCER,OTIS
+TID_SILENCER_SHORT_DESC,PENYERANG
+TID_SILENCER_DESC,Otis adalah seniman jalanan yang punya misi untuk memenuhi dinding Starr Park dengan grafiti. Tentunya bersama Cil si sahabat bintang laut miliknya.
+TID_SILENCER_WEAPON,SENI TINTA
+TID_SILENCER_WEAPON_DESC,Otis akan menyemprotkan tinta berturut-turut dari penyemprot tinta di lengannya.
+TID_SILENCER_ULTI,CENGKERAMAN BAHARI
+TID_SILENCER_ULTI_DESC,Otis melemparkan Cil yang akan mencengkeram lawan pertama yang dikenainya dan menyebabkan mereka tak bisa menyerang dalam waktu singkat.
+TID_SPEC_ABI_SILENCER_1,LEM STENSIL
+TID_SPEC_ABI_SILENCER_1_DESC,Cil akan mencengkeram lawan dengan segenap kekuatan dan membuat mereka tidak bisa menyerang selama <c00cc00><VALUE1>%</c> lebih lama.
+TID_SPEC_ABI_SILENCER_2,TINTA EKSTRA
+TID_SPEC_ABI_SILENCER_2_DESC,Kini Otis menembakkan tinta <c00cc00><VALUE1>%</c> lebih banyak.
+TID_ACCESSORY_SILENCER_GADGET_1,JEBAKAN BINTANG LAUT
+TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Jika bintang laut berikutnya tidak mengenai lawan, dia akan tertidur di lantai arena hingga ada lawan yang mendekat."
+TID_ACCESSORY_SILENCER_GADGET_2,GENANGAN TINTA
+TID_ACCESSORY_SILENCER_GADGET_2_DESC,"Pada serangan berikutnya, Otis akan menembakkan bola tinta raksasa yang meninggalkan genangan dan memberikan <c00cc00><VALUE1></c> kerusakan seiring waktu selama <c00cc00> detik."
+TID_RANDOM_GAME_MODE,MISTERI
+TID_NOTIFICATION_RANDOM,Ada peta baru di mode MISTERI! Saatnya untuk memenangkan Hadiah baru!
+TID_SKIN_INFO_DEEPSEA,Kostum Jagoan Bawah Laut
+TID_EMOTE_BUNDLE_DEEPSEA_PACK,Pin Jagoan Bawah Laut
+TID_SUGGEST,SARANKAN
+TID_SUGGEST_CANCEL,BATAL
+TID_PURCHASE_BRAWL_PASS_INFO_SHOP,BUKA HADIAH BRAWL PASS + TUGAS & ACAK ULANG EKSTRA!
+TID_SUGGESTED_BY,Disarankan oleh
+TID_SHOP_DEEPSEA_SKINS,Kostum Jagoan Bawah Laut
+TID_SHOP_DEEPSEA_TITLE,JAGOAN BAWAH LAUT
+TID_SHOP_DEEPSEA_INFO,Set Kostum
+TID_SKIN_INFO_BT21,Kostum BT21
+TID_CLUB_EVENTS_ONBOARDING_TITLE,PERMAINAN GENG
+TID_CLUB_EVENTS_ONBOARDING_SUBTITLE,Raih progres lebih cepat & dapatkan kostum eksklusif!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_1_TITLE,Selamat datang di acara mingguan:\nPERMAINAN GENG!
+TID_CLUB_EVENTS_ONBOARDING_NEW_GAME,Baru: Permainan Geng!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_TITLE,LIGA GENG
+TID_CLUB_EVENTS_ONBOARDING_PAGE_2_DESCRIPTION,Ayo bersaing dengan Geng lain!\nCapai puncak Liga!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_TITLE,TUGAS GENG
+TID_CLUB_EVENTS_ONBOARDING_PAGE_3_DESCRIPTION,Selesaikan tugas bersama Geng!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_1,Main dengan Geng! 1 Permainan Geng per minggu!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_2,Raih Koin Geng!
+TID_CLUB_EVENTS_ONBOARDING_PAGE_4_3,Raih progres lebih cepat melalui Toko Geng!
+TID_SUGGEST_TITLE,Sarankan Jagoan
+TID_CLUB_LEAGUE_TOP_24_REWARDS,Semua pemain berhak untuk mengambil hadiah akhir minggu
+TID_CLUB_LEAGUE_STARTS_IN,Liga Geng dimulai dalam:
+TID_CLUB_QUESTS_STARTS_IN,Tugas Geng dimulai dalam:
+TID_SHOWDOWN_71,Taman Trampolin
+TID_SHOWDOWN_72,Sirkuit Jagoan
+TID_SHOWDOWN_73,Zona Teleportasi
+TID_CLUB_QUESTS_NOT_AVAILABLE,Tugas Geng sedang tidak tersedia
+TID_CLUB_LEAGUE_NOT_AVAILABLE,Liga Geng sedang tidak tersedia
+TID_CLUB_QUESTS_WEEK_ACTIVE,MINGGU TUGAS aktif selama:
+TID_CLUB_LEAGUE_WEEK_ACTIVE,MINGGU LIGA aktif selama:
+TID_CLUB_EVENTS_ACTIVE,Aktif
+TID_CLUB_EVENTS_STARTING,Segera dimulai
+TID_CLUB_EVENTS_WAITING,Menunggu
+TID_CLUB_LEAGUE_PREVIOUS_WEEK,MINGGU LALU
+TID_CLUB_LEAGUE_RESULTS,Hasil:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_SHORT,MINGGU LIGA dimulai dalam:
+TID_CLUB_QUESTS_WEEK_STARTS_IN_SHORT,MINGGU TUGAS dimulai dalam:
+TID_CLUB_LEAGUE_WEEK_STARTS_IN,Minggu Liga Geng berikutnya: <TIME>
+TID_CLUB_QUESTS_WEEK_STARTS_IN,Minggu Tugas Geng berikutnya: <TIME>
+TID_CLUB_LEAGUE_WEEK_SCHEDULE,JADWAL
+TID_CLUB_QUESTS_PREVIOUS_WEEK_REWARD,HADIAH MINGGU LALU
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TEXT,Minggu Liga Geng berikutnya
+TID_CLUB_LEAGUE_WEEK_STARTS_IN_TIME,Dimulai dalam: <TIME>
+TID_CLUB_EVENTS_PREVIOUS_WEEK,MINGGU BERAKHIR!
+TID_BT21_SANDY_SKIN,SANDY KOYA
+TID_BT21_SANDY_SKIN_SHOP,SANDY\nKOYA
+TID_BT21_EDGAR_SKIN,EDGAR TATA
+TID_BT21_EDGAR_SKIN_SHOP,EDGAR\nTATA
+TID_BT21_RUFFS_SKIN,RUFFS CHIMMY
+TID_BT21_RUFFS_SKIN_SHOP,RUFFS\nCHIMMY
+TID_BT21_BULL_SKIN,BULL MANG
+TID_BT21_BULL_SKIN_SHOP,BULL\nMANG
+TID_BT21_BIBI_SKIN,BIBI RJ
+TID_BT21_BIBI_SKIN_SHOP,BIBI\nRJ
+TID_BT21_JACKY_SKIN,JACKY COOKY
+TID_BT21_JACKY_SKIN_SHOP,JACKY\nCOOKY
+TID_BT21_TICK_SKIN,TICK SHOOKY
+TID_BT21_TICK_SKIN_SHOP,TICK\nSHOOKY
+TID_POSTAL_BROCK_SKIN,BROCK TUKANG PAKET
+TID_POSTAL_BROCK_SKIN_SHOP,BROCK\nTUKANG PAKET
+TID_MAKE_EMZ_SKIN,DJ 3.M.Z
+TID_MAKE_EMZ_SKIN_SHOP,DJ 3.M.Z
+TID_SHARK_JAW_COLT_SKIN,COLT GIGI HIU
+TID_SHARK_JAW_COLT_SKIN_SHOP,COLT\nGIGI HIU
+TID_OCTO_FANG_SKIN,FANG GURITA
+TID_OCTO_FANG_SKIN_SHOP,FANG\nGURITA
+TID_CORAL_BELLE_SKIN,BELLE KORAL
+TID_CORAL_BELLE_SKIN_SHOP,BELLE\nKORAL
+TID_PHARA_OTIS_SKIN,OTIS MUMI
+TID_PHARA_OTIS_SKIN_SHOP,OTIS MUMI
+TID_RANKED_SUGGESTING_BRAWLER,Menyarankan Jagoan untuk <NAME>
+TID_RANKED_BRAWLER_SUGGESTED,JAGOAN DISARANKAN
+TID_RANKED_SUGGESTION,<NAME> menyarankan <BRAWLER>
+TID_CLUB_EVENTS_STARTS_IN,Dimulai dalam:
+TID_CLUB_EVENTS_ACTIVE_FOR,Aktif selama:
+TID_GAME_MODE_28,PERBURUAN
+TID_GAME_MODE_28_DESC,Saatnya berburu!\n\nKumpulkan poin dengan memburu dan menumbangkan lawan. Pemain PERTAMA yang meraih <MAX_SCORE> poin akan memenangkan laga!
+TID_DEATHMATCH_FFA_INTRO_TEXT,Tumbangkan lawan!
+TID_NOTIFICATION_DEATHMATCH_FFA,Ada peta baru di mode PEMBURU! Saatnya untuk memenangkan Hadiah baru!
+TID_DEATHMATCH_FFA_1,Cobaan dan Ujian
+TID_DEATHMATCH_FFA_2,Musim Berburu
+TID_DEATHMATCH_FFA_3,Mangsa
+TID_DEATHMATCH_FFA_4,Kecepatan dan Ketahanan
+TID_DEATHMATCH_FFA_5,Pembebasan
+TID_DEATHMATCH_FFA_6,Tantangan Sejati
+TID_DEATHMATCH_FFA_7,Omega
+TID_CLUB_EVENTS_CHANGED_CLUB,Kamu hanya bisa berkontribusi pada Geng yang kamu ikuti pada saat minggu ini dimulai.\n\nTunggu hingga minggu depan untuk bisa berkontribusi bagi Geng ini!\n\nMinggu berikutnya dimulai dalam: <TIME>
+TID_CLUB_QUESTS_CURRENT_CLUB_POINTS,Total poin yang diraih Geng minggu ini
+TID_CLUB_QUESTS_THIS_WEEKS_QUESTS,TUGAS GENG MINGGU INI
+TID_SPEC_ABI_ARTILLERY_DUDE_1,BUNTALAN HARTA
+TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,Kantong Emas Penny akan meledak dan membentuk kerucut yang <c00cc00><VALUE1>%</c> lebih lebar setelah tiap serangan.
+TID_SPEC_ABI_ARTILLERY_DUDE_2,AHLI LEDAKAN
+TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Meriam Penny memberikan <c00cc00><VALUE1></c> kerusakan dan menghantam mundur lawan yang berada di area target.
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,TONG GARAM
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,Penny menjatuhkan tong garam yang menghalangi proyektil lawan. Dia juga bisa menggunakannya untuk menembakkan kantong emas miliknya.
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,TEMBAKAN TERKOORDINASI
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2_DESC,Meriam Penny akan menembak semua lawan yang tampak berada dalam jangkauan.
+TID_RANDOM_GAME_MODE_DESC,"Mainkan laga acak dari berbagai macam mode laga, peta, dan, modifikasi laga. Tak ada yang tahu kamu akan dapat apa!"
+TID_CLUB_QUESTS_EXPIRED,TUGAS KEDALUWARSA
+TID_CLUB_LEAGUE_ACTIVE,MINGGU LIGA aktif
+TID_CLUB_QUESTS_TUTORIAL,Selesaikan 3 Tugas Geng minggu ini demi meraih poin untuk Geng
+TID_CLUB_QUESTS_YOUR_QUESTS,TUGAS GENG MINGGU INI
+TID_CLUB_QUESTS_NEW_QUESTS,TUGAS GENG BARU
+TID_CLUB_QUESTS_REWARDS_INCREASED,Hadiah Maks. telah ditingkatkan untuk Liga Geng dan Tugas Geng.
+TID_BRAWLBALL_441,Bahaya Ganda
+TID_BRAWLBALL_442,Memantul
+TID_KNOCKOUT_441,Lawan Tersembunyi
+TID_KNOCKOUT_442,Area Terbuka
+TID_BANKHEIST_441,Bantaran Sungai
+TID_BANKHEIST_442,Trilogi
+TID_GEMGRAB_441,Gelas Setengah Penuh
+TID_GEMGRAB_442,Dualitas
+TID_BOUNTY_441,Jangan Menengok
+TID_BOUNTY_442,Bersampingan
+TID_HOTZONE_441,Trisula
+TID_HOTZONE_442,Timpang Sebelah
+TID_SHOWDOWN_441,Tersudut
+TID_SHOWDOWN_442,Mengecil
+TID_TRUE_GOLD_FANG_SKIN,FANG EMAS
+TID_TRUE_GOLD_FANG_SKIN_SHOP,FANG\nEMAS
+TID_TRUE_SILVER_FANG_SKIN,FANG PERAK
+TID_TRUE_SILVER_FANG_SKIN_SHOP,FANG\nPERAK
+TID_TRUE_GOLD_BONNIE_SKIN,BONNIE EMAS
+TID_TRUE_GOLD_BONNIE_SKIN_SHOP,BONNIE\nEMAS
+TID_TRUE_SILVER_BONNIE_SKIN,BONNIE PERAK
+TID_TRUE_SILVER_BONNIE_SKIN_SHOP,BONNIE\nPERAK
+TID_TRUE_GOLD_JANET_SKIN,JANET EMAS
+TID_TRUE_GOLD_JANET_SKIN_SHOP,JANET\nEMAS
+TID_TRUE_SILVER_JANET_SKIN,JANET PERAK
+TID_TRUE_SILVER_JANET_SKIN_SHOP,JANET\nPERAK
+TID_TRUE_GOLD_GROM_SKIN,GROM EMAS
+TID_TRUE_GOLD_GROM_SKIN_SHOP,GROM\nEMAS
+TID_TRUE_SILVER_GROM_SKIN,GROM PERAK
+TID_TRUE_SILVER_GROM_SKIN_SHOP,GROM\nPERAK
+TID_TRUE_GOLD_EVE_SKIN,EVE EMAS
+TID_TRUE_GOLD_EVE_SKIN_SHOP,EVE\nEMAS
+TID_TRUE_SILVER_EVE_SKIN,EVE PERAK
+TID_TRUE_SILVER_EVE_SKIN_SHOP,EVE\nPERAK
+TID_BRAWL_PASS_SEASON_12,JAGOAN BAWAH LAUT
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

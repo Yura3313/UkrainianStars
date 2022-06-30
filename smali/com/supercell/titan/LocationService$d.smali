@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/LocationService$d;
+.class public final Lcom/supercell/titan/LocationService$d;
 .super Ljava/lang/Object;
 .source "LocationService.java"
 
@@ -18,19 +18,18 @@
 
 
 # instance fields
-.field public final synthetic g:Landroid/location/Location;
+.field public final synthetic f:Landroid/location/Location;
 
-.field public final synthetic h:Lcom/supercell/titan/LocationService;
+.field public final synthetic g:Lcom/supercell/titan/LocationService;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/LocationService;Landroid/location/Location;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lcom/supercell/titan/LocationService$d;->h:Lcom/supercell/titan/LocationService;
+    iput-object p1, p0, Lcom/supercell/titan/LocationService$d;->g:Lcom/supercell/titan/LocationService;
 
-    iput-object p2, p0, Lcom/supercell/titan/LocationService$d;->g:Landroid/location/Location;
+    iput-object p2, p0, Lcom/supercell/titan/LocationService$d;->f:Landroid/location/Location;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,23 +38,23 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->h:Lcom/supercell/titan/LocationService;
+    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->g:Lcom/supercell/titan/LocationService;
 
     .line 2
     iget-wide v1, v0, Lcom/supercell/titan/LocationService;->d:J
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->g:Landroid/location/Location;
+    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->f:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v3
 
-    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->g:Landroid/location/Location;
+    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->f:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->getLongitude()D
 

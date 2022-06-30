@@ -209,7 +209,6 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/util/json/ItemList;->items:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
@@ -220,7 +219,6 @@
 .method public get(I)Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/util/json/ItemList;->items:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -235,7 +233,6 @@
 .method public getArray()[Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/util/json/ItemList;->items:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->toArray()[Ljava/lang/Object;
@@ -258,7 +255,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/util/json/ItemList;->items:Ljava/util/List;
 
     return-object v0
@@ -283,7 +279,6 @@
 .method public setSP(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/util/json/ItemList;->sp:Ljava/lang/String;
 
     return-void
@@ -292,7 +287,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/util/json/ItemList;->items:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I

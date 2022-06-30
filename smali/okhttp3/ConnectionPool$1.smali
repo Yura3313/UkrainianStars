@@ -25,7 +25,6 @@
 .method public constructor <init>(Lokhttp3/ConnectionPool;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/ConnectionPool$1;->this$0:Lokhttp3/ConnectionPool;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

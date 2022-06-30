@@ -164,7 +164,6 @@
 .method public static synthetic access$000(Lcom/kakaogame/log/SDKLogManager;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/kakaogame/log/SDKLogManager;->isSaveOnFile:Z
 
     return p0
@@ -173,7 +172,6 @@
 .method public static synthetic access$100(Lcom/kakaogame/log/SDKLogManager;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/log/SDKLogManager;->getTokenInsertChar(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -184,7 +182,6 @@
 .method public static synthetic access$200(Lcom/kakaogame/log/SDKLogManager;I)C
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/log/SDKLogManager;->getLevelCode(I)C
 
     move-result p0
@@ -195,7 +192,6 @@
 .method public static synthetic access$300(Lcom/kakaogame/log/SDKLogManager;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/log/SDKLogManager;->writeLogOnFile(Ljava/lang/String;)V
 
     return-void
@@ -204,7 +200,6 @@
 .method public static synthetic access$400(Lcom/kakaogame/log/SDKLogManager;Z)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/kakaogame/log/SDKLogManager;->setIsUpload(Z)V
 
     return-void
@@ -213,7 +208,6 @@
 .method public static synthetic access$500(Lcom/kakaogame/log/SDKLogManager;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/kakaogame/log/SDKLogManager;->uploadFile(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p0
@@ -224,7 +218,6 @@
 .method public static synthetic access$600(Lcom/kakaogame/log/SDKLogManager;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/log/SDKLogManager;->setNewFileName()V
 
     return-void
@@ -233,7 +226,6 @@
 .method public static synthetic access$700(Lcom/kakaogame/log/SDKLogManager;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/kakaogame/log/SDKLogManager;->completeSendFilesImmediately()V
 
     return-void
@@ -493,13 +485,14 @@
     const-string v2, " =============\n"
 
     .line 8
-    invoke-static {v1, v0, v2}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 9
     invoke-direct {p0, v0}, Lcom/kakaogame/log/SDKLogManager;->writeLogOnFile(Ljava/lang/String;)V
 
-    .line 9
+    .line 10
     :cond_2
     new-instance v0, Lcom/kakaogame/log/SDKLogManager$1;
 
@@ -625,6 +618,7 @@
 
     move-result-object v0
 
+    .line 6
     iget-wide v1, p0, Lcom/kakaogame/log/SDKLogManager;->index:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
@@ -737,10 +731,10 @@
     const/16 v1, 0x4e20
 
     .line 9
-    invoke-virtual {p2, v1}, Ljavax/net/ssl/HttpsURLConnection;->setConnectTimeout(I)V
+    invoke-virtual {p2, v1}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
     .line 10
-    invoke-virtual {p2, v1}, Ljavax/net/ssl/HttpsURLConnection;->setReadTimeout(I)V
+    invoke-virtual {p2, v1}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     .line 11
     invoke-static {p1}, Lcom/kakaogame/server/ServerSecurityManager;->getHostnameVerifier(Ljava/net/URL;)Ljavax/net/ssl/HostnameVerifier;
@@ -759,26 +753,26 @@
     const/4 p1, 0x1
 
     .line 13
-    invoke-virtual {p2, p1}, Ljavax/net/ssl/HttpsURLConnection;->setDoOutput(Z)V
+    invoke-virtual {p2, p1}, Ljava/net/URLConnection;->setDoOutput(Z)V
 
     const-string p1, "PUT"
 
     .line 14
-    invoke-virtual {p2, p1}, Ljavax/net/ssl/HttpsURLConnection;->setRequestMethod(Ljava/lang/String;)V
+    invoke-virtual {p2, p1}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
     const-string p1, "Connection"
 
     const-string v1, "close"
 
     .line 15
-    invoke-virtual {p2, p1, v1}, Ljavax/net/ssl/HttpsURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p2, p1, v1}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     .line 16
     new-instance v1, Ljava/io/DataOutputStream;
 
-    invoke-virtual {p2}, Ljavax/net/ssl/HttpsURLConnection;->getOutputStream()Ljava/io/OutputStream;
+    invoke-virtual {p2}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v2
 
@@ -837,7 +831,7 @@
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->flush()V
 
     .line 22
-    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_7
@@ -864,7 +858,7 @@
     invoke-static {}, Ljava/lang/System;->gc()V
 
     .line 25
-    invoke-virtual {p2}, Ljavax/net/ssl/HttpsURLConnection;->getResponseCode()I
+    invoke-virtual {p2}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result p1
     :try_end_4
@@ -882,7 +876,7 @@
 
     .line 26
     :try_start_5
-    invoke-virtual {p2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
@@ -891,7 +885,7 @@
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->flush()V
 
     .line 28
-    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_3
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_7
@@ -927,7 +921,7 @@
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->flush()V
 
     .line 32
-    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
     :try_end_9
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_5
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_7
@@ -962,7 +956,7 @@
     move-exception p1
 
     .line 36
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     return v0
 .end method
@@ -1142,16 +1136,17 @@
 
     const-string v2, "KGLog"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3
+    .line 4
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 4
+    .line 5
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -1160,7 +1155,7 @@
 
     return-void
 
-    .line 5
+    .line 6
     :cond_0
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 

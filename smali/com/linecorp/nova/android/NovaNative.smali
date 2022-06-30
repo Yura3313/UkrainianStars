@@ -58,7 +58,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -67,7 +66,6 @@
 .method public static synthetic access$000()Landroid/app/Activity;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/linecorp/nova/android/NovaNative;->m_activity:Landroid/app/Activity;
 
     return-object v0
@@ -76,7 +74,6 @@
 .method public static synthetic access$100(J)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/linecorp/nova/android/NovaNative;->nativeOnAndroidUiThread(J)V
 
     return-void
@@ -85,7 +82,6 @@
 .method public static activity()Landroid/app/Activity;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/linecorp/nova/android/NovaNative;->m_activity:Landroid/app/Activity;
 
     return-object v0
@@ -94,10 +90,9 @@
 .method private static classLoader()Ljava/lang/ClassLoader;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/linecorp/nova/android/NovaNative;->m_activity:Landroid/app/Activity;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getClassLoader()Ljava/lang/ClassLoader;
+    invoke-virtual {v0}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v0
 
@@ -107,7 +102,6 @@
 .method private static clearLostActions()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/linecorp/nova/android/NovaNative;->m_lostActions:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
@@ -129,7 +123,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {v0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -139,10 +133,9 @@
 .method private static getAssets()Landroid/content/res/AssetManager;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/linecorp/nova/android/NovaNative;->m_activity:Landroid/app/Activity;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getAssets()Landroid/content/res/AssetManager;
+    invoke-virtual {v0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object v0
 
@@ -160,7 +153,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/linecorp/nova/android/NovaNative;->m_lostActions:Ljava/util/ArrayList;
 
     return-object v0
@@ -169,10 +161,9 @@
 .method private static getResources()Landroid/content/res/Resources;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/linecorp/nova/android/NovaNative;->m_activity:Landroid/app/Activity;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -337,7 +328,7 @@
 
     .line 3
     :cond_1
-    invoke-virtual {v0}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -605,7 +596,6 @@
 .method private static runOnUiThread(J)V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/linecorp/nova/android/NovaNative$b;
 
     invoke-direct {v0, p0, p1}, Lcom/linecorp/nova/android/NovaNative$b;-><init>(J)V
@@ -618,7 +608,6 @@
 .method public static setActivity(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/linecorp/nova/android/NovaNative;->m_activity:Landroid/app/Activity;
 
     return-void
@@ -627,7 +616,6 @@
 .method public static setStarted(Z)V
     .locals 0
 
-    .line 1
     sput-boolean p0, Lcom/linecorp/nova/android/NovaNative;->m_started:Z
 
     return-void
@@ -636,7 +624,6 @@
 .method public static startIntent(Landroid/content/Intent;I)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/linecorp/nova/android/NovaNative;->m_activity:Landroid/app/Activity;
 
     invoke-virtual {v0, p0, p1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
@@ -647,7 +634,6 @@
 .method public static startIntentOnUiThread(Landroid/content/Intent;I)V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/linecorp/nova/android/NovaNative;->m_activity:Landroid/app/Activity;
 
     new-instance v1, Lcom/linecorp/nova/android/NovaNative$a;
@@ -662,7 +648,6 @@
 .method public static started()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/linecorp/nova/android/NovaNative;->m_started:Z
 
     return v0

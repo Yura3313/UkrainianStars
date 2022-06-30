@@ -44,7 +44,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/graphics/Rect;)Z
+.method public a(Landroid/view/View;Landroid/graphics/Rect;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -61,7 +61,7 @@
     return p1
 .end method
 
-.method public b(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+.method public b(Landroid/view/View;Landroid/view/View;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -101,7 +101,7 @@
     return p1
 .end method
 
-.method public e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)V
+.method public e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -154,7 +154,7 @@
     return p1
 .end method
 
-.method public i(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;IIII)Z
+.method public i(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -169,7 +169,7 @@
     return p1
 .end method
 
-.method public j(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;FF)Z
+.method public j(Landroid/view/View;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -201,7 +201,7 @@
     return-void
 .end method
 
-.method public l(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;IIIII)V
+.method public l()V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -220,7 +220,7 @@
 .end method
 
 .method public m(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;IIIII[I)V
-    .locals 2
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -231,26 +231,26 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const/4 p1, 0x0
 
     .line 1
-    aget v1, p9, v0
+    aget p2, p9, p1
 
-    add-int/2addr v1, p6
+    add-int/2addr p2, p6
 
-    aput v1, p9, v0
+    aput p2, p9, p1
 
-    const/4 v0, 0x1
+    const/4 p1, 0x1
 
     .line 2
-    aget v1, p9, v0
+    aget p2, p9, p1
 
-    add-int/2addr v1, p7
+    add-int/2addr p2, p7
 
-    aput v1, p9, v0
+    aput p2, p9, p1
 
     .line 3
-    invoke-virtual/range {p0 .. p8}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->l(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;IIIII)V
+    invoke-virtual {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->l()V
 
     return-void
 .end method
@@ -272,7 +272,7 @@
     return p1
 .end method
 
-.method public o(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/os/Parcelable;)V
+.method public o(Landroid/view/View;Landroid/os/Parcelable;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -287,7 +287,7 @@
     return-void
 .end method
 
-.method public p(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)Landroid/os/Parcelable;
+.method public p(Landroid/view/View;)Landroid/os/Parcelable;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -298,13 +298,12 @@
         }
     .end annotation
 
-    .line 1
     sget-object p1, Landroid/view/View$BaseSavedState;->EMPTY_STATE:Landroid/view/AbsSavedState;
 
     return-object p1
 .end method
 
-.method public q(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;II)Z
+.method public q(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;II)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {

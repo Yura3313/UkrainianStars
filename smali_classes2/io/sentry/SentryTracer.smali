@@ -250,9 +250,9 @@
 
     iget-object v6, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
 
-    new-instance v8, Lio/sentry/d0;
+    new-instance v8, Lio/sentry/c0;
 
-    invoke-direct {v8, p0}, Lio/sentry/d0;-><init>(Lio/sentry/SentryTracer;)V
+    invoke-direct {v8, p0}, Lio/sentry/c0;-><init>(Lio/sentry/SentryTracer;)V
 
     move-object v1, v0
 
@@ -454,7 +454,6 @@
 
     if-ne p2, p0, :cond_0
 
-    .line 1
     invoke-virtual {p1}, Lio/sentry/Scope;->clearTransaction()V
 
     :cond_0
@@ -464,10 +463,9 @@
 .method private synthetic lambda$finish$2(Lio/sentry/Scope;)V
     .locals 1
 
-    .line 1
-    new-instance v0, Lio/sentry/a0;
+    new-instance v0, Lio/sentry/z;
 
-    invoke-direct {v0, p0, p1}, Lio/sentry/a0;-><init>(Lio/sentry/SentryTracer;Lio/sentry/Scope;)V
+    invoke-direct {v0, p0, p1}, Lio/sentry/z;-><init>(Lio/sentry/SentryTracer;Lio/sentry/Scope;)V
 
     invoke-virtual {p1, v0}, Lio/sentry/Scope;->withTransaction(Lio/sentry/Scope$IWithTransaction;)V
 
@@ -477,7 +475,6 @@
 .method private static synthetic lambda$traceState$3(Ljava/util/concurrent/atomic/AtomicReference;Lio/sentry/Scope;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lio/sentry/Scope;->getUser()Lio/sentry/protocol/User;
 
     move-result-object p1
@@ -642,9 +639,9 @@
     :cond_3
     iget-object p1, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
 
-    new-instance v0, Lio/sentry/b0;
+    new-instance v0, Lio/sentry/a0;
 
-    invoke-direct {v0, p0}, Lio/sentry/b0;-><init>(Lio/sentry/SentryTracer;)V
+    invoke-direct {v0, p0}, Lio/sentry/a0;-><init>(Lio/sentry/SentryTracer;)V
 
     invoke-interface {p1, v0}, Lio/sentry/IHub;->configureScope(Lio/sentry/ScopeCallback;)V
 
@@ -686,7 +683,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->children:Ljava/util/List;
 
     return-object v0
@@ -700,7 +696,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$ScheduledForRemoval;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->contexts:Lio/sentry/protocol/Contexts;
 
     return-object v0
@@ -744,7 +739,6 @@
 .method public getDescription()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0}, Lio/sentry/Span;->getDescription()Ljava/lang/String;
@@ -757,7 +751,6 @@
 .method public getEventId()Lio/sentry/protocol/SentryId;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->eventId:Lio/sentry/protocol/SentryId;
 
     return-object v0
@@ -826,7 +819,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->name:Ljava/lang/String;
 
     return-object v0
@@ -835,7 +827,6 @@
 .method public getOperation()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0}, Lio/sentry/Span;->getOperation()Ljava/lang/String;
@@ -853,7 +844,6 @@
     .annotation build Lorg/jetbrains/annotations/ApiStatus$ScheduledForRemoval;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->request:Lio/sentry/protocol/Request;
 
     return-object v0
@@ -862,7 +852,6 @@
 .method public getRoot()Lio/sentry/Span;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     return-object v0
@@ -871,7 +860,6 @@
 .method public getSpanContext()Lio/sentry/SpanContext;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0}, Lio/sentry/Span;->getSpanContext()Lio/sentry/SpanContext;
@@ -892,7 +880,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->children:Ljava/util/List;
 
     return-object v0
@@ -901,7 +888,6 @@
 .method public getStartTimestamp()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0}, Lio/sentry/Span;->getStartTimestamp()Ljava/util/Date;
@@ -914,7 +900,6 @@
 .method public getStatus()Lio/sentry/SpanStatus;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0}, Lio/sentry/Span;->getStatus()Lio/sentry/SpanStatus;
@@ -927,7 +912,6 @@
 .method public getTag(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0, p1}, Lio/sentry/Span;->getTag(Ljava/lang/String;)Ljava/lang/String;
@@ -940,7 +924,6 @@
 .method public getThrowable()Ljava/lang/Throwable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0}, Lio/sentry/Span;->getThrowable()Ljava/lang/Throwable;
@@ -953,7 +936,6 @@
 .method public getTimestamp()Ljava/util/Date;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0}, Lio/sentry/Span;->getTimestamp()Ljava/util/Date;
@@ -966,7 +948,6 @@
 .method public isFinished()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0}, Lio/sentry/Span;->isFinished()Z
@@ -979,7 +960,6 @@
 .method public isSampled()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0}, Lio/sentry/Span;->isSampled()Ljava/lang/Boolean;
@@ -1239,7 +1219,6 @@
 .method public toSentryTrace()Lio/sentry/SentryTraceHeader;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0}, Lio/sentry/Span;->toSentryTrace()Lio/sentry/SentryTraceHeader;
@@ -1340,9 +1319,9 @@
     .line 5
     iget-object v1, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
 
-    new-instance v2, Lio/sentry/c0;
+    new-instance v2, Lio/sentry/b0;
 
-    invoke-direct {v2, v0}, Lio/sentry/c0;-><init>(Ljava/util/concurrent/atomic/AtomicReference;)V
+    invoke-direct {v2, v0}, Lio/sentry/b0;-><init>(Ljava/util/concurrent/atomic/AtomicReference;)V
 
     invoke-interface {v1, v2}, Lio/sentry/IHub;->configureScope(Lio/sentry/ScopeCallback;)V
 

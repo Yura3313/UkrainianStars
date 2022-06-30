@@ -1,96 +1,47 @@
-.class public final Lre/f;
-.super Lle/j;
-.source "Regex.kt"
+.class public interface abstract Lre/f;
+.super Ljava/lang/Object;
+.source "Functions.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lie/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/a<",
-        "Lre/c;",
-        ">;"
+        "<P1:",
+        "Ljava/lang/Object;",
+        "P2:",
+        "Ljava/lang/Object;",
+        "P3:",
+        "Ljava/lang/Object;",
+        "P4:",
+        "Ljava/lang/Object;",
+        "P5:",
+        "Ljava/lang/Object;",
+        "P6:",
+        "Ljava/lang/Object;",
+        "P7:",
+        "Ljava/lang/Object;",
+        "P8:",
+        "Ljava/lang/Object;",
+        "P9:",
+        "Ljava/lang/Object;",
+        "P10:",
+        "Ljava/lang/Object;",
+        "P11:",
+        "Ljava/lang/Object;",
+        "P12:",
+        "Ljava/lang/Object;",
+        "P13:",
+        "Ljava/lang/Object;",
+        "P14:",
+        "Ljava/lang/Object;",
+        "R:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lie/a<",
+        "TR;>;"
     }
 .end annotation
-
-
-# instance fields
-.field public final synthetic g:Lre/e;
-
-.field public final synthetic h:Ljava/lang/CharSequence;
-
-.field public final synthetic i:I
-
-
-# direct methods
-.method public constructor <init>(Lre/e;Ljava/lang/CharSequence;I)V
-    .locals 0
-
-    iput-object p1, p0, Lre/f;->g:Lre/e;
-
-    iput-object p2, p0, Lre/f;->h:Ljava/lang/CharSequence;
-
-    iput p3, p0, Lre/f;->i:I
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public invoke()Ljava/lang/Object;
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lre/f;->g:Lre/e;
-
-    iget-object v1, p0, Lre/f;->h:Ljava/lang/CharSequence;
-
-    iget v2, p0, Lre/f;->i:I
-
-    const/4 v3, 0x0
-
-    if-eqz v1, :cond_1
-
-    .line 2
-    iget-object v0, v0, Lre/e;->g:Ljava/util/regex/Pattern;
-
-    invoke-virtual {v0, v1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    move-result-object v0
-
-    const-string v4, "nativePattern.matcher(input)"
-
-    invoke-static {v0, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 3
-    invoke-virtual {v0, v2}, Ljava/util/regex/Matcher;->find(I)Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    new-instance v3, Lre/d;
-
-    invoke-direct {v3, v0, v1}, Lre/d;-><init>(Ljava/util/regex/Matcher;Ljava/lang/CharSequence;)V
-
-    :goto_0
-    return-object v3
-
-    :cond_1
-    const-string v0, "input"
-
-    .line 4
-    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v3
-.end method

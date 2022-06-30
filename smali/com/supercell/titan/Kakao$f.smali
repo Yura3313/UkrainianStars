@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/Kakao$f;
+.class public final Lcom/supercell/titan/Kakao$f;
 .super Ljava/lang/Object;
 .source "Kakao.java"
 
@@ -31,7 +31,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +38,7 @@
 
 
 # virtual methods
-.method public onResult(Lcom/kakaogame/KGResult;)V
+.method public final onResult(Lcom/kakaogame/KGResult;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -62,7 +61,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    sget-object v0, Lcom/supercell/titan/Kakao;->a:Ljava/util/Map;
+    sget-object v0, Lcom/supercell/titan/Kakao;->a:Ljava/util/HashMap;
 
     .line 4
     invoke-interface {v0}, Ljava/util/Map;->clear()V
@@ -73,7 +72,7 @@
     .line 6
     new-instance v1, Lcom/supercell/titan/Kakao$f$a;
 
-    invoke-direct {v1, p0, p1}, Lcom/supercell/titan/Kakao$f$a;-><init>(Lcom/supercell/titan/Kakao$f;Lcom/kakaogame/KGResult;)V
+    invoke-direct {v1, p1}, Lcom/supercell/titan/Kakao$f$a;-><init>(Lcom/kakaogame/KGResult;)V
 
     invoke-interface {v0, v1}, Lcom/supercell/titan/ActivityRunner;->runOnView(Ljava/lang/Runnable;)V
 

@@ -1,4 +1,4 @@
-.class public Lcom/google/android/gms/common/internal/BaseGmsClient$d;
+.class public final Lcom/google/android/gms/common/internal/BaseGmsClient$d;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
@@ -29,7 +29,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$d;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,7 +38,7 @@
 
 
 # virtual methods
-.method public a(Lcom/google/android/gms/common/ConnectionResult;)V
+.method public final a(Lcom/google/android/gms/common/ConnectionResult;)V
     .locals 2
     .param p1    # Lcom/google/android/gms/common/ConnectionResult;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -47,7 +46,7 @@
     .end param
 
     .line 1
-    invoke-virtual {p1}, Lcom/google/android/gms/common/ConnectionResult;->A2()Z
+    invoke-virtual {p1}, Lcom/google/android/gms/common/ConnectionResult;->E2()Z
 
     move-result v0
 
@@ -76,7 +75,7 @@
     if-eqz v0, :cond_1
 
     .line 5
-    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$b;->Q0(Lcom/google/android/gms/common/ConnectionResult;)V
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$b;->S0(Lcom/google/android/gms/common/ConnectionResult;)V
 
     :cond_1
     return-void

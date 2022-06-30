@@ -31,7 +31,6 @@
 .method public constructor <init>(Landroid/app/Activity;ZLcom/kakaogame/KGResultCallback;Lcom/kakaogame/log/FirebaseEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/KGSNSShare$14;->val$activity:Landroid/app/Activity;
 
     iput-boolean p2, p0, Lcom/kakaogame/KGSNSShare$14;->val$isUnity:Z
@@ -96,7 +95,7 @@
     const/16 v2, 0xfa1
 
     .line 4
-    invoke-static {v0, v1, v0, v2}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v0, v1, v0, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 

@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field public final synthetic i:Lcom/google/android/play/core/assetpacks/o;
+.field public final synthetic h:Lcom/google/android/play/core/assetpacks/o;
 
 
 # direct methods
@@ -28,7 +28,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/m;->i:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/m;->h:Lcom/google/android/play/core/assetpacks/o;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/play/core/assetpacks/j;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;)V
 
@@ -37,12 +37,12 @@
 
 
 # virtual methods
-.method public final t0(Landroid/os/Bundle;Landroid/os/Bundle;)V
+.method public final z0(Landroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 3
 
-    invoke-super {p0, p1, p2}, Lcom/google/android/play/core/assetpacks/j;->t0(Landroid/os/Bundle;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/google/android/play/core/assetpacks/j;->z0(Landroid/os/Bundle;Landroid/os/Bundle;)V
 
-    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/m;->i:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/m;->h:Lcom/google/android/play/core/assetpacks/o;
 
     .line 1
     iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -59,7 +59,7 @@
     if-nez p2, :cond_0
 
     .line 3
-    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:Ly4/b;
+    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
 
     new-array v0, v1, [Ljava/lang/Object;
 
@@ -68,7 +68,7 @@
     const-string v2, "Expected keepingAlive to be true, but was false."
 
     .line 4
-    invoke-virtual {p2, v1, v2, v0}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p2, v1, v2, v0}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     :cond_0
     const-string p2, "keep_alive"
@@ -80,9 +80,9 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/m;->i:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/m;->h:Lcom/google/android/play/core/assetpacks/o;
 
-    invoke-virtual {p1}, Lcom/google/android/play/core/assetpacks/o;->g0()V
+    invoke-virtual {p1}, Lcom/google/android/play/core/assetpacks/o;->o0()V
 
     :cond_1
     return-void

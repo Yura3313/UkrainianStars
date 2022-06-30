@@ -182,7 +182,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -193,7 +192,6 @@
 .method public final getEXTRA_APPLICATION_KEY()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/Constants;->EXTRA_APPLICATION_KEY:Ljava/lang/String;
 
     return-object v0
@@ -202,7 +200,6 @@
 .method public final getEXTRA_ERROR_DESCRIPTION()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/Constants;->EXTRA_ERROR_DESCRIPTION:Ljava/lang/String;
 
     return-object v0
@@ -211,7 +208,6 @@
 .method public final getEXTRA_ERROR_TYPE()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/Constants;->EXTRA_ERROR_TYPE:Ljava/lang/String;
 
     return-object v0
@@ -220,7 +216,6 @@
 .method public final getEXTRA_EXTRAPARAMS()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/Constants;->EXTRA_EXTRAPARAMS:Ljava/lang/String;
 
     return-object v0
@@ -229,7 +224,6 @@
 .method public final getEXTRA_KA_HEADER()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/Constants;->EXTRA_KA_HEADER:Ljava/lang/String;
 
     return-object v0
@@ -238,7 +232,6 @@
 .method public final getEXTRA_REDIRECT_URI()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/Constants;->EXTRA_REDIRECT_URI:Ljava/lang/String;
 
     return-object v0
@@ -247,7 +240,6 @@
 .method public final getEXTRA_REDIRECT_URL()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/Constants;->EXTRA_REDIRECT_URL:Ljava/lang/String;
 
     return-object v0
@@ -256,7 +248,6 @@
 .method public final getNOT_SUPPORT_ERROR()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/Constants;->NOT_SUPPORT_ERROR:Ljava/lang/String;
 
     return-object v0
@@ -265,7 +256,6 @@
 .method public final getUNKNOWN_ERROR()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/auth/Constants;->UNKNOWN_ERROR:Ljava/lang/String;
 
     return-object v0

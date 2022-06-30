@@ -27,7 +27,6 @@
 .method public constructor <init>(Lcom/kakaogame/push/AppBadgeManager$AppBadgeChangeListener;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/push/AppBadgeManager$1;->val$listener:Lcom/kakaogame/push/AppBadgeManager$AppBadgeChangeListener;
 
     iput p2, p0, Lcom/kakaogame/push/AppBadgeManager$1;->val$badgeCount:I
@@ -42,7 +41,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/push/AppBadgeManager$1;->val$listener:Lcom/kakaogame/push/AppBadgeManager$AppBadgeChangeListener;
 
     iget v1, p0, Lcom/kakaogame/push/AppBadgeManager$1;->val$badgeCount:I

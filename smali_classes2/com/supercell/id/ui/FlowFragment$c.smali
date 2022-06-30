@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/FlowFragment;->a0(Landroid/os/Bundle;)V
+    value = Lcom/supercell/id/ui/FlowFragment;->S(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -31,7 +31,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/id/ui/FlowFragment$c;->a:Lcom/supercell/id/ui/FlowFragment;
 
     iput-object p2, p0, Lcom/supercell/id/ui/FlowFragment$c;->b:Lcom/supercell/id/ui/FlowFragment$a;
@@ -43,16 +42,16 @@
 
 
 # virtual methods
-.method public a(IFI)V
+.method public final a(IFI)V
     .locals 1
 
     .line 1
     iget-object p3, p0, Lcom/supercell/id/ui/FlowFragment$c;->a:Lcom/supercell/id/ui/FlowFragment;
 
-    sget v0, Lcom/supercell/id/ui/FlowFragment;->k0:I
+    sget v0, Lcom/supercell/id/ui/FlowFragment;->i0:I
 
     .line 2
-    invoke-virtual {p3}, Lcom/supercell/id/ui/FlowFragment;->q1()Lcom/supercell/id/ui/FlowFragment$b;
+    invoke-virtual {p3}, Lcom/supercell/id/ui/FlowFragment;->h1()Lcom/supercell/id/ui/FlowFragment$b;
 
     move-result-object p3
 
@@ -63,26 +62,26 @@
     add-float/2addr p1, p2
 
     .line 3
-    invoke-virtual {p3, p1}, Lcom/supercell/id/ui/FlowFragment$b;->o1(F)V
+    invoke-virtual {p3, p1}, Lcom/supercell/id/ui/FlowFragment$b;->f1(F)V
 
     :cond_0
     return-void
 .end method
 
-.method public d(I)V
+.method public final d(I)V
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$c;->b:Lcom/supercell/id/ui/FlowFragment$a;
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/FlowFragment$a;->h:Ljava/util/Map;
+    iget-object v0, v0, Lcom/supercell/id/ui/FlowFragment$a;->h:Ljava/util/LinkedHashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -90,11 +89,11 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lrc/w;
+    check-cast p1, Lwc/w;
 
     goto :goto_0
 
@@ -105,7 +104,7 @@
     if-eqz p1, :cond_1
 
     .line 3
-    invoke-virtual {p1}, Lrc/w;->c1()V
+    invoke-virtual {p1}, Lwc/w;->T0()V
 
     :cond_1
     return-void

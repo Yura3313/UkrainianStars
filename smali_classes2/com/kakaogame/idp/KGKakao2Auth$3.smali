@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/kakaogame/idp/KGKakao2Auth;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/idp/KGKakao2Auth$3;->this$0:Lcom/kakaogame/idp/KGKakao2Auth;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

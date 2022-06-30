@@ -1,9 +1,9 @@
 .class final Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;
-.super Lle/j;
+.super Lse/h;
 .source "RequiredScopesInterceptor.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lre/p;
 
 
 # annotations
@@ -18,11 +18,11 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
+        "Lse/h;",
+        "Lre/p<",
         "Ljava/lang/String;",
         "Ljava/lang/Throwable;",
-        "Lae/i;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
@@ -31,28 +31,28 @@
 # instance fields
 .field public final synthetic $chain$inlined:Lokhttp3/Interceptor$Chain;
 
-.field public final synthetic $error:Lle/s;
+.field public final synthetic $error:Lse/q;
 
 .field public final synthetic $latch:Ljava/util/concurrent/CountDownLatch;
 
 .field public final synthetic $requiredScopes:Ljava/util/List;
 
-.field public final synthetic $token:Lle/s;
+.field public final synthetic $token:Lse/q;
 
 .field public final synthetic this$0:Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor;
 
 
 # direct methods
-.method public constructor <init>(Lle/s;Ljava/util/concurrent/CountDownLatch;Ljava/util/List;Lle/s;Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor;Lokhttp3/Interceptor$Chain;)V
+.method public constructor <init>(Lse/q;Ljava/util/concurrent/CountDownLatch;Ljava/util/List;Lse/q;Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor;Lokhttp3/Interceptor$Chain;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$error:Lle/s;
+    iput-object p1, p0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$error:Lse/q;
 
     iput-object p2, p0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$latch:Ljava/util/concurrent/CountDownLatch;
 
     iput-object p3, p0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$requiredScopes:Ljava/util/List;
 
-    iput-object p4, p0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$token:Lle/s;
+    iput-object p4, p0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$token:Lse/q;
 
     iput-object p5, p0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->this$0:Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor;
 
@@ -60,7 +60,7 @@
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
@@ -77,7 +77,7 @@
 
     invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->invoke(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    sget-object p1, Lae/i;->a:Lae/i;
+    sget-object p1, Lie/h;->a:Lie/h;
 
     return-object p1
 .end method
@@ -88,9 +88,9 @@
     if-eqz p2, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$error:Lle/s;
+    iget-object p1, p0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$error:Lse/q;
 
-    iput-object p2, p1, Lle/s;->g:Ljava/lang/Object;
+    iput-object p2, p1, Lse/q;->f:Ljava/lang/Object;
 
     .line 3
     iget-object p1, p0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$latch:Ljava/util/concurrent/CountDownLatch;
@@ -148,7 +148,7 @@
     move-object v4, p1
 
     .line 9
-    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lke/p;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v12}, Lcom/kakao/sdk/auth/AuthCodeClient;->authorizeWithKakaoAccount$default(Lcom/kakao/sdk/auth/AuthCodeClient;Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZLjava/util/Map;Ljava/lang/String;Lre/p;ILjava/lang/Object;)V
 
     :goto_0
     return-void

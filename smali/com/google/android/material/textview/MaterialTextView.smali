@@ -21,23 +21,19 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-static {p1, p2, p3, v0}, Lt4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
+    invoke-static {p1, p2, p3, v0}, Lu4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
     move-result-object p1
 
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
     .line 4
-    sget v1, Lcom/google/android/material/R$attr;->textAppearanceLineHeightEnabled:I
-
-    const/4 v2, 0x1
-
-    invoke-static {p1, v1, v2}, Lo4/b;->b(Landroid/content/Context;IZ)Z
+    invoke-static {p1}, Lcom/google/android/material/textview/MaterialTextView;->e(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -49,48 +45,50 @@
     move-result-object v1
 
     .line 6
-    sget-object v3, Lcom/google/android/material/R$styleable;->MaterialTextView:[I
+    sget-object v2, Lcom/google/android/material/R$styleable;->MaterialTextView:[I
 
     .line 7
-    invoke-virtual {v1, p2, v3, p3, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    invoke-virtual {v1, p2, v2, p3, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
-    move-result-object v4
+    move-result-object v3
 
-    const/4 v5, 0x2
+    const/4 v4, 0x2
 
-    new-array v5, v5, [I
+    new-array v4, v4, [I
 
     .line 8
-    sget v6, Lcom/google/android/material/R$styleable;->MaterialTextView_android_lineHeight:I
+    sget v5, Lcom/google/android/material/R$styleable;->MaterialTextView_android_lineHeight:I
 
-    aput v6, v5, v0
+    aput v5, v4, v0
 
-    sget v6, Lcom/google/android/material/R$styleable;->MaterialTextView_lineHeight:I
+    sget v5, Lcom/google/android/material/R$styleable;->MaterialTextView_lineHeight:I
 
-    aput v6, v5, v2
+    const/4 v6, 0x1
+
+    aput v5, v4, v6
 
     .line 9
-    invoke-static {p1, v4, v5}, Lcom/google/android/material/textview/MaterialTextView;->e(Landroid/content/Context;Landroid/content/res/TypedArray;[I)I
+    invoke-static {p1, v3, v4}, Lcom/google/android/material/textview/MaterialTextView;->f(Landroid/content/Context;Landroid/content/res/TypedArray;[I)I
 
     move-result p1
 
     .line 10
-    invoke-virtual {v4}, Landroid/content/res/TypedArray;->recycle()V
+    invoke-virtual {v3}, Landroid/content/res/TypedArray;->recycle()V
 
-    const/4 v4, -0x1
+    const/4 v3, -0x1
 
-    if-eq p1, v4, :cond_0
+    if-eq p1, v3, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x0
+    const/4 v6, 0x0
 
     :goto_0
-    if-nez v2, :cond_1
+    if-nez v6, :cond_1
 
     .line 11
-    invoke-virtual {v1, p2, v3, p3, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    invoke-virtual {v1, p2, v2, p3, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
@@ -98,14 +96,14 @@
     sget p2, Lcom/google/android/material/R$styleable;->MaterialTextView_android_textAppearance:I
 
     .line 13
-    invoke-virtual {p1, p2, v4}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    invoke-virtual {p1, p2, v3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result p2
 
     .line 14
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    if-eq p2, v4, :cond_1
+    if-eq p2, v3, :cond_1
 
     .line 15
     invoke-virtual {p0, v1, p2}, Lcom/google/android/material/textview/MaterialTextView;->c(Landroid/content/res/Resources$Theme;I)V
@@ -114,7 +112,43 @@
     return-void
 .end method
 
-.method public static varargs e(Landroid/content/Context;Landroid/content/res/TypedArray;[I)I
+.method public static e(Landroid/content/Context;)Z
+    .locals 3
+
+    .line 1
+    sget v0, Lcom/google/android/material/R$attr;->textAppearanceLineHeightEnabled:I
+
+    .line 2
+    invoke-static {p0, v0}, Lp4/b;->a(Landroid/content/Context;I)Landroid/util/TypedValue;
+
+    move-result-object p0
+
+    const/4 v0, 0x1
+
+    if-eqz p0, :cond_1
+
+    .line 3
+    iget v1, p0, Landroid/util/TypedValue;->type:I
+
+    const/16 v2, 0x12
+
+    if-ne v1, v2, :cond_1
+
+    iget p0, p0, Landroid/util/TypedValue;->data:I
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :cond_1
+    :goto_0
+    return v0
+.end method
+
+.method public static varargs f(Landroid/content/Context;Landroid/content/res/TypedArray;[I)I
     .locals 7
 
     const/4 v0, -0x1
@@ -215,7 +249,7 @@
     move-result-object p1
 
     .line 2
-    invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -236,7 +270,7 @@
     aput v1, v0, v2
 
     .line 3
-    invoke-static {p2, p1, v0}, Lcom/google/android/material/textview/MaterialTextView;->e(Landroid/content/Context;Landroid/content/res/TypedArray;[I)I
+    invoke-static {p2, p1, v0}, Lcom/google/android/material/textview/MaterialTextView;->f(Landroid/content/Context;Landroid/content/res/TypedArray;[I)I
 
     move-result p2
 
@@ -252,18 +286,14 @@
     return-void
 .end method
 
-.method public setTextAppearance(Landroid/content/Context;I)V
-    .locals 2
+.method public final setTextAppearance(Landroid/content/Context;I)V
+    .locals 1
 
     .line 1
     invoke-super {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatTextView;->setTextAppearance(Landroid/content/Context;I)V
 
     .line 2
-    sget v0, Lcom/google/android/material/R$attr;->textAppearanceLineHeightEnabled:I
-
-    const/4 v1, 0x1
-
-    invoke-static {p1, v0, v1}, Lo4/b;->b(Landroid/content/Context;IZ)Z
+    invoke-static {p1}, Lcom/google/android/material/textview/MaterialTextView;->e(Landroid/content/Context;)Z
 
     move-result v0
 

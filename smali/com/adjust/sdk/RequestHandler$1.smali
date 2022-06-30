@@ -86,10 +86,12 @@
 
     if-eqz v3, :cond_0
 
+    .line 1
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 2
     iget-object v3, p0, Lcom/adjust/sdk/RequestHandler$1;->this$0:Lcom/adjust/sdk/RequestHandler;
 
     invoke-static {v3}, Lcom/adjust/sdk/RequestHandler;->access$000(Lcom/adjust/sdk/RequestHandler;)Ljava/lang/String;
@@ -102,11 +104,13 @@
 
     move-result-object v2
 
+    .line 3
     :cond_0
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 4
     iget-object v3, p0, Lcom/adjust/sdk/RequestHandler$1;->val$activityPackage:Lcom/adjust/sdk/ActivityPackage;
 
     invoke-virtual {v3}, Lcom/adjust/sdk/ActivityPackage;->getPath()Ljava/lang/String;
@@ -204,10 +208,12 @@
 
     if-eqz v3, :cond_4
 
+    .line 5
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 6
     iget-object v3, p0, Lcom/adjust/sdk/RequestHandler$1;->this$0:Lcom/adjust/sdk/RequestHandler;
 
     invoke-static {v3}, Lcom/adjust/sdk/RequestHandler;->access$200(Lcom/adjust/sdk/RequestHandler;)Ljava/lang/String;
@@ -220,11 +226,13 @@
 
     move-result-object v2
 
+    .line 7
     :cond_4
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 8
     iget-object v3, p0, Lcom/adjust/sdk/RequestHandler$1;->val$activityPackage:Lcom/adjust/sdk/ActivityPackage;
 
     invoke-virtual {v3}, Lcom/adjust/sdk/ActivityPackage;->getPath()Ljava/lang/String;
@@ -312,10 +320,12 @@
 
     if-eqz v3, :cond_8
 
+    .line 9
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 10
     iget-object v3, p0, Lcom/adjust/sdk/RequestHandler$1;->this$0:Lcom/adjust/sdk/RequestHandler;
 
     invoke-static {v3}, Lcom/adjust/sdk/RequestHandler;->access$300(Lcom/adjust/sdk/RequestHandler;)Ljava/lang/String;
@@ -328,11 +338,13 @@
 
     move-result-object v2
 
+    .line 11
     :cond_8
     invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
+    .line 12
     iget-object v3, p0, Lcom/adjust/sdk/RequestHandler$1;->val$activityPackage:Lcom/adjust/sdk/ActivityPackage;
 
     invoke-virtual {v3}, Lcom/adjust/sdk/ActivityPackage;->getPath()Ljava/lang/String;

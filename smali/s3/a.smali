@@ -1,61 +1,32 @@
 .class public Ls3/a;
-.super Lcom/google/android/gms/common/api/b;
-.source "com.google.android.gms:play-services-games@@20.0.1"
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/android/gms/common/api/b<",
-        "Lu2/b$a;",
-        ">;"
-    }
-.end annotation
+.super Landroid/os/Handler;
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;Lu2/b$a;)V
-    .locals 2
+.method public constructor <init>(Landroid/os/Looper;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lu2/b;->c:Lcom/google/android/gms/common/api/a;
+    invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    sget-object v1, Lcom/google/android/gms/common/api/b$a;->c:Lcom/google/android/gms/common/api/b$a;
+    return-void
+.end method
 
-    invoke-direct {p0, p1, v0, p2, v1}, Lcom/google/android/gms/common/api/b;-><init>(Landroid/app/Activity;Lcom/google/android/gms/common/api/a;Lcom/google/android/gms/common/api/a$d;Lcom/google/android/gms/common/api/b$a;)V
+.method public constructor <init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Lc2/c$a;
-    .locals 2
+.method public final dispatchMessage(Landroid/os/Message;)V
+    .locals 0
 
-    .line 1
-    invoke-super {p0}, Lcom/google/android/gms/common/api/b;->a()Lc2/c$a;
+    invoke-super {p0, p1}, Landroid/os/Handler;->dispatchMessage(Landroid/os/Message;)V
 
-    move-result-object v0
-
-    .line 2
-    iget-object v1, p0, Lcom/google/android/gms/common/api/b;->d:Lcom/google/android/gms/common/api/a$d;
-
-    if-eqz v1, :cond_1
-
-    .line 3
-    check-cast v1, Lu2/b$a;
-
-    iget-object v1, v1, Lu2/b$a;->q:Ljava/lang/String;
-
-    if-nez v1, :cond_0
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    invoke-virtual {v0, v1}, Lc2/c$a;->b(Ljava/lang/String;)Lc2/c$a;
-
-    :cond_1
-    :goto_0
-    return-object v0
+    return-void
 .end method

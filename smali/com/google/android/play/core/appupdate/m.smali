@@ -3,16 +3,16 @@
 
 
 # static fields
-.field public static final e:Ly4/b;
+.field public static final e:La5/b;
 
 .field public static final f:Landroid/content/Intent;
 
 
 # instance fields
-.field public a:Ly4/l;
+.field public a:La5/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ly4/l<",
+            "La5/l<",
             "Lcom/google/android/play/core/internal/n;",
             ">;"
         }
@@ -23,20 +23,20 @@
 
 .field public final c:Landroid/content/Context;
 
-.field public final d:Lcom/google/android/play/core/assetpacks/z;
+.field public final d:Lcom/google/android/play/core/assetpacks/a0;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Ly4/b;
+    new-instance v0, La5/b;
 
     const-string v1, "AppUpdateService"
 
-    invoke-direct {v0, v1}, Ly4/b;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/android/play/core/appupdate/m;->e:Ly4/b;
+    sput-object v0, Lcom/google/android/play/core/appupdate/m;->e:La5/b;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -68,13 +68,13 @@
 
     iput-object p1, p0, Lcom/google/android/play/core/appupdate/m;->c:Landroid/content/Context;
 
-    invoke-static {p1}, Ly4/c0;->a(Landroid/content/Context;)Z
+    invoke-static {p1}, La5/h0;->a(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    new-instance v0, Ly4/l;
+    new-instance v0, La5/l;
 
     .line 1
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -92,26 +92,26 @@
 
     .line 2
     :goto_0
-    sget-object v3, Lcom/google/android/play/core/appupdate/m;->e:Ly4/b;
+    sget-object v3, Lcom/google/android/play/core/appupdate/m;->e:La5/b;
 
     sget-object v5, Lcom/google/android/play/core/appupdate/m;->f:Landroid/content/Intent;
 
-    sget-object v6, Lc2/n0;->k:Ly4/h;
+    sget-object v6, Lcom/google/android/play/core/appupdate/g;->a:Lcom/google/android/play/core/appupdate/g;
 
     const-string v4, "AppUpdateService"
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v6}, Ly4/l;-><init>(Landroid/content/Context;Ly4/b;Ljava/lang/String;Landroid/content/Intent;Ly4/h;)V
+    invoke-direct/range {v1 .. v6}, La5/l;-><init>(Landroid/content/Context;La5/b;Ljava/lang/String;Landroid/content/Intent;La5/h;)V
 
-    iput-object v0, p0, Lcom/google/android/play/core/appupdate/m;->a:Ly4/l;
+    iput-object v0, p0, Lcom/google/android/play/core/appupdate/m;->a:La5/l;
 
     :cond_1
-    new-instance v0, Lcom/google/android/play/core/assetpacks/z;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/a0;
 
-    invoke-direct {v0, p1}, Lcom/google/android/play/core/assetpacks/z;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/google/android/play/core/assetpacks/a0;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/google/android/play/core/appupdate/m;->d:Lcom/google/android/play/core/assetpacks/z;
+    iput-object v0, p0, Lcom/google/android/play/core/appupdate/m;->d:Lcom/google/android/play/core/assetpacks/a0;
 
     return-void
 .end method
@@ -128,11 +128,11 @@
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    const-string v2, "playcore.version.code"
+    const/16 v2, 0x29ce
 
-    const/16 v3, 0x29ce
+    const-string v3, "playcore.version.code"
 
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 2
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
@@ -171,7 +171,7 @@
     goto :goto_0
 
     :catch_0
-    sget-object p0, Lcom/google/android/play/core/appupdate/m;->e:Ly4/b;
+    sget-object p0, Lcom/google/android/play/core/appupdate/m;->e:La5/b;
 
     new-array p1, p1, [Ljava/lang/Object;
 
@@ -180,7 +180,7 @@
     const-string v2, "The current version of the app could not be retrieved"
 
     .line 3
-    invoke-virtual {p0, v1, v2, p1}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {p0, v1, v2, p1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     const/4 p0, 0x0
 
@@ -212,7 +212,7 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/google/android/play/core/appupdate/m;->e:Ly4/b;
+    sget-object v0, Lcom/google/android/play/core/appupdate/m;->e:La5/b;
 
     const/4 v1, 0x1
 
@@ -233,7 +233,7 @@
     const-string v4, "onError(%d)"
 
     .line 1
-    invoke-virtual {v0, v3, v4, v1}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v3, v4, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
     new-instance v0, Lcom/google/android/play/core/install/InstallException;

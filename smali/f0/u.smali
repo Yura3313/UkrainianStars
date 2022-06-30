@@ -122,3 +122,137 @@
 
     return p0
 .end method
+
+.method public static b(Landroid/view/ViewConfiguration;Landroid/content/Context;)F
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1a
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledHorizontalScrollFactor()F
+
+    move-result p0
+
+    return p0
+
+    .line 3
+    :cond_0
+    invoke-static {p0, p1}, Lf0/u;->a(Landroid/view/ViewConfiguration;Landroid/content/Context;)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static c(Landroid/view/ViewConfiguration;)I
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1c
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledHoverSlop()I
+
+    move-result p0
+
+    return p0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
+
+    move-result p0
+
+    div-int/lit8 p0, p0, 0x2
+
+    return p0
+.end method
+
+.method public static d(Landroid/view/ViewConfiguration;Landroid/content/Context;)F
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1a
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledVerticalScrollFactor()F
+
+    move-result p0
+
+    return p0
+
+    .line 3
+    :cond_0
+    invoke-static {p0, p1}, Lf0/u;->a(Landroid/view/ViewConfiguration;Landroid/content/Context;)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static e(Landroid/view/ViewConfiguration;Landroid/content/Context;)Z
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1c
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->shouldShowMenuShortcutsWhenKeyboardPresent()Z
+
+    move-result p0
+
+    return p0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    const-string p1, "config_showMenuShortcutsWhenKeyboardPresent"
+
+    const-string v0, "bool"
+
+    const-string v1, "android"
+
+    .line 4
+    invoke-virtual {p0, p1, v0, v1}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    .line 5
+    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getBoolean(I)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method

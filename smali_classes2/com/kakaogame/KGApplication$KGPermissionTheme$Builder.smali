@@ -78,7 +78,6 @@
 .method public build()Lcom/kakaogame/KGApplication$KGPermissionTheme;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;->theme:Lcom/kakaogame/KGApplication$KGPermissionTheme;
 
     return-object v0
@@ -87,7 +86,6 @@
 .method public setBackgroundColor(I)Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;->theme:Lcom/kakaogame/KGApplication$KGPermissionTheme;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -104,7 +102,6 @@
 .method public setBackgroundResourceId(I)Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;->theme:Lcom/kakaogame/KGApplication$KGPermissionTheme;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -121,7 +118,6 @@
 .method public setConfirmTextColor(I)Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;->theme:Lcom/kakaogame/KGApplication$KGPermissionTheme;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -138,7 +134,6 @@
 .method public setContentTextColor(I)Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;->theme:Lcom/kakaogame/KGApplication$KGPermissionTheme;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -155,7 +150,6 @@
 .method public setIconResourceId(I)Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;->theme:Lcom/kakaogame/KGApplication$KGPermissionTheme;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -172,7 +166,6 @@
 .method public setTitleTextColor(I)Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGApplication$KGPermissionTheme$Builder;->theme:Lcom/kakaogame/KGApplication$KGPermissionTheme;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;

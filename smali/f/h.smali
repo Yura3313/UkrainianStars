@@ -1,4 +1,4 @@
-.class public Lf/h;
+.class public final Lf/h;
 .super Ljava/lang/Object;
 .source "ViewPropertyAnimatorCompatSet.java"
 
@@ -8,7 +8,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Lf0/w;",
+            "Lf0/x;",
             ">;"
         }
     .end annotation
@@ -18,11 +18,11 @@
 
 .field public c:Landroid/view/animation/Interpolator;
 
-.field public d:Lf0/x;
+.field public d:Lf0/y;
 
 .field public e:Z
 
-.field public final f:Lbe/e;
+.field public final f:Lf/h$a;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, p0}, Lf/h$a;-><init>(Lf/h;)V
 
-    iput-object v0, p0, Lf/h;->f:Lbe/e;
+    iput-object v0, p0, Lf/h;->f:Lf/h$a;
 
     .line 4
     new-instance v0, Ljava/util/ArrayList;
@@ -56,7 +56,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public final a()V
     .locals 2
 
     .line 1
@@ -85,10 +85,10 @@
 
     move-result-object v1
 
-    check-cast v1, Lf0/w;
+    check-cast v1, Lf0/x;
 
     .line 3
-    invoke-virtual {v1}, Lf0/w;->b()V
+    invoke-virtual {v1}, Lf0/x;->b()V
 
     goto :goto_0
 
@@ -101,7 +101,24 @@
     return-void
 .end method
 
-.method public b()V
+.method public final b(Lf0/x;)Lf/h;
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lf/h;->e:Z
+
+    if-nez v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lf/h;->a:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_0
+    return-object p0
+.end method
+
+.method public final c()V
     .locals 7
 
     .line 1
@@ -131,7 +148,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lf0/w;
+    check-cast v1, Lf0/x;
 
     .line 3
     iget-wide v2, p0, Lf/h;->b:J
@@ -143,7 +160,7 @@
     if-ltz v6, :cond_2
 
     .line 4
-    invoke-virtual {v1, v2, v3}, Lf0/w;->c(J)Lf0/w;
+    invoke-virtual {v1, v2, v3}, Lf0/x;->c(J)Lf0/x;
 
     .line 5
     :cond_2
@@ -152,9 +169,9 @@
     if-eqz v2, :cond_3
 
     .line 6
-    iget-object v3, v1, Lf0/w;->a:Ljava/lang/ref/WeakReference;
+    iget-object v3, v1, Lf0/x;->a:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v3}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -171,20 +188,20 @@
 
     .line 8
     :cond_3
-    iget-object v2, p0, Lf/h;->d:Lf0/x;
+    iget-object v2, p0, Lf/h;->d:Lf0/y;
 
     if-eqz v2, :cond_4
 
     .line 9
-    iget-object v2, p0, Lf/h;->f:Lbe/e;
+    iget-object v2, p0, Lf/h;->f:Lf/h$a;
 
-    invoke-virtual {v1, v2}, Lf0/w;->d(Lf0/x;)Lf0/w;
+    invoke-virtual {v1, v2}, Lf0/x;->d(Lf0/y;)Lf0/x;
 
     .line 10
     :cond_4
-    iget-object v1, v1, Lf0/w;->a:Ljava/lang/ref/WeakReference;
+    iget-object v1, v1, Lf0/x;->a:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v1
 

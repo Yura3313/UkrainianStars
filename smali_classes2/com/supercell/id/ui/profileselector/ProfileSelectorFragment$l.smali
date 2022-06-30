@@ -1,9 +1,9 @@
 .class public final Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;
-.super Lle/j;
+.super Lse/h;
 .source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lre/l;
 
 
 # annotations
@@ -18,202 +18,197 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Lvd/m1;",
-        "Lae/i;",
+        "Lse/h;",
+        "Lre/l<",
+        "Lae/e2;",
+        "Lie/h;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+.field public final synthetic f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    check-cast p1, Lvd/m1;
+    check-cast p1, Lae/e2;
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_9
+    const-string v0, "it"
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v2, v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->j0:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
     .line 4
-    iget-object v3, p1, Lvd/m1;->a:Ljava/util/List;
+    iget-object v1, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h0:Ljava/util/List;
 
-    if-eq v2, v3, :cond_0
+    .line 5
+    iget-object v2, p1, Lae/e2;->a:Ljava/util/List;
+
+    if-eq v1, v2, :cond_0
 
     goto/16 :goto_4
 
-    .line 5
-    :cond_0
-    iget-object v2, p1, Lvd/m1;->b:Ljava/util/List;
-
     .line 6
-    iput-object v2, v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->j0:Ljava/util/List;
-
-    const/4 v3, 0x4
-
-    const/4 v4, 0x0
-
-    if-nez v2, :cond_2
+    :cond_0
+    iget-object v1, p1, Lae/e2;->b:Ljava/util/List;
 
     .line 7
-    sget v2, Lcom/supercell/id/R$id;->profileList:I
+    iput-object v1, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h0:Ljava/util/List;
 
-    invoke-virtual {v1, v2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
+    const/4 v2, 0x4
 
-    move-result-object v1
+    const/4 v3, 0x0
 
-    check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
-
-    if-eqz v1, :cond_1
-
-    invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->setVisibility(I)V
+    if-nez v1, :cond_2
 
     .line 8
+    sget v1, Lcom/supercell/id/R$id;->profileList:I
+
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 9
     :cond_1
-    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    sget v2, Lcom/supercell/id/R$id;->progressBar:I
+    sget v1, Lcom/supercell/id/R$id;->progressBar:I
 
-    invoke-virtual {v1, v2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_4
+    if-eqz v0, :cond_4
 
-    invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 9
-    :cond_2
-    sget v2, Lcom/supercell/id/R$id;->profileList:I
-
-    invoke-virtual {v1, v2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
-
-    if-eqz v1, :cond_3
-
-    invoke-virtual {v1, v4}, Landroid/view/ViewGroup;->setVisibility(I)V
-
     .line 10
-    :cond_3
-    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    :cond_2
+    sget v1, Lcom/supercell/id/R$id;->profileList:I
 
-    sget v2, Lcom/supercell/id/R$id;->progressBar:I
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
 
-    invoke-virtual {v1, v2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
+    move-result-object v0
 
-    move-result-object v1
+    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
 
-    if-eqz v1, :cond_4
+    if-eqz v0, :cond_3
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 11
+    :cond_3
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+
+    sget v1, Lcom/supercell/id/R$id;->progressBar:I
+
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 12
     :cond_4
     :goto_0
-    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    sget v2, Lcom/supercell/id/R$id;->profileList:I
+    sget v1, Lcom/supercell/id/R$id;->profileList:I
 
-    invoke-virtual {v1, v2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->o1(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->f1(I)Landroid/view/View;
 
-    move-result-object v1
+    move-result-object v0
 
-    check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
+    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
 
-    if-eqz v1, :cond_5
+    const/4 v1, 0x0
 
-    invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$e;
+    if-eqz v0, :cond_5
 
-    move-result-object v1
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$e;
+
+    move-result-object v0
 
     goto :goto_1
 
     :cond_5
-    move-object v1, v0
+    move-object v0, v1
 
     :goto_1
-    instance-of v2, v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    instance-of v2, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
     if-nez v2, :cond_6
 
     goto :goto_2
 
     :cond_6
-    move-object v0, v1
+    move-object v1, v0
 
     :goto_2
-    check-cast v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    check-cast v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
-    if-eqz v0, :cond_8
-
-    .line 12
-    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    if-eqz v1, :cond_8
 
     .line 13
-    iget-object v1, v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->j0:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$l;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    if-eqz v1, :cond_7
+    .line 14
+    iget-object v0, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h0:Ljava/util/List;
+
+    if-eqz v0, :cond_7
 
     goto :goto_3
 
-    .line 14
-    :cond_7
-    sget-object v1, Lbe/m;->g:Lbe/m;
-
     .line 15
-    :goto_3
-    iput-object v1, v0, Lvd/k1;->d:Ljava/util/List;
+    :cond_7
+    sget-object v0, Lje/l;->f:Lje/l;
 
     .line 16
-    iget-object p1, p1, Lvd/m1;->c:Landroidx/recyclerview/widget/l$c;
+    :goto_3
+    iput-object v0, v1, Lae/c2;->d:Ljava/util/List;
 
     .line 17
-    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/l$c;->a(Landroidx/recyclerview/widget/RecyclerView$e;)V
+    iget-object p1, p1, Lae/e2;->c:Landroidx/recyclerview/widget/l$c;
 
     .line 18
-    :cond_8
-    :goto_4
-    sget-object p1, Lae/i;->a:Lae/i;
-
-    return-object p1
-
-    :cond_9
-    const-string p1, "it"
+    invoke-virtual {p1, v1}, Landroidx/recyclerview/widget/l$c;->a(Landroidx/recyclerview/widget/RecyclerView$e;)V
 
     .line 19
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+    :cond_8
+    :goto_4
+    sget-object p1, Lie/h;->a:Lie/h;
 
-    throw v0
+    return-object p1
 .end method

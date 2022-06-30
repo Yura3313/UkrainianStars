@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/a$b;
+.class public final Landroidx/recyclerview/widget/a$b;
 .super Ljava/lang/Object;
 .source "AdapterHelper.java"
 
@@ -48,7 +48,7 @@
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
     const/4 v0, 0x1
@@ -172,7 +172,7 @@
     return v1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 2
 
     .line 1
@@ -195,7 +195,7 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
     .line 1

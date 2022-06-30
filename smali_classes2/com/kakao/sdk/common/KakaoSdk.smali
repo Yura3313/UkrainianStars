@@ -29,7 +29,6 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/kakao/sdk/common/KakaoSdk;
 
     invoke-direct {v0}, Lcom/kakao/sdk/common/KakaoSdk;-><init>()V
@@ -42,7 +41,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -147,11 +145,13 @@
 .method public static final init(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/kakao/sdk/common/model/ServerHosts;Lcom/kakao/sdk/common/model/ApprovalType;)V
     .locals 9
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p0, :cond_5
+    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p1, :cond_4
+    const-string v0, "appKey"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v1, Lcom/kakao/sdk/common/KakaoSdk;->INSTANCE:Lcom/kakao/sdk/common/KakaoSdk;
@@ -164,7 +164,7 @@
     const-string p2, "kakao"
 
     .line 2
-    invoke-static {p2, p1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -225,21 +225,6 @@
     invoke-virtual/range {v1 .. v8}, Lcom/kakao/sdk/common/KakaoSdk;->init(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ZLcom/kakao/sdk/common/model/ServerHosts;Lcom/kakao/sdk/common/model/ApprovalType;Lcom/kakao/sdk/common/KakaoSdk$Type;)V
 
     return-void
-
-    :cond_4
-    const-string p0, "appKey"
-
-    .line 8
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_5
-    const-string p0, "context"
-
-    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public static synthetic init$default(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/kakao/sdk/common/model/ServerHosts;Lcom/kakao/sdk/common/model/ApprovalType;ILjava/lang/Object;)V
@@ -299,7 +284,6 @@
 
     move-object v2, p1
 
-    .line 1
     invoke-static/range {v1 .. v6}, Lcom/kakao/sdk/common/KakaoSdk;->init(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/kakao/sdk/common/model/ServerHosts;Lcom/kakao/sdk/common/model/ApprovalType;)V
 
     return-void
@@ -310,7 +294,6 @@
 .method public final getAppKey()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/KakaoSdk;->applicationContextInfo:Lcom/kakao/sdk/common/model/ApplicationContextInfo;
 
     if-eqz v0, :cond_0
@@ -324,7 +307,7 @@
     :cond_0
     const-string v0, "applicationContextInfo"
 
-    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {v0}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -334,7 +317,6 @@
 .method public final getApplicationContextInfo()Lcom/kakao/sdk/common/model/ApplicationContextInfo;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/KakaoSdk;->applicationContextInfo:Lcom/kakao/sdk/common/model/ApplicationContextInfo;
 
     if-eqz v0, :cond_0
@@ -344,7 +326,7 @@
     :cond_0
     const-string v0, "applicationContextInfo"
 
-    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {v0}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -354,7 +336,6 @@
 .method public final getApprovalType()Lcom/kakao/sdk/common/model/ApprovalType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/KakaoSdk;->approvalType:Lcom/kakao/sdk/common/model/ApprovalType;
 
     if-eqz v0, :cond_0
@@ -364,7 +345,7 @@
     :cond_0
     const-string v0, "approvalType"
 
-    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {v0}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -374,7 +355,6 @@
 .method public final getHosts()Lcom/kakao/sdk/common/model/ServerHosts;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/KakaoSdk;->hosts:Lcom/kakao/sdk/common/model/ServerHosts;
 
     if-eqz v0, :cond_0
@@ -384,7 +364,7 @@
     :cond_0
     const-string v0, "hosts"
 
-    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {v0}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -394,7 +374,6 @@
 .method public final getKaHeader()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/KakaoSdk;->applicationContextInfo:Lcom/kakao/sdk/common/model/ApplicationContextInfo;
 
     if-eqz v0, :cond_0
@@ -408,7 +387,7 @@
     :cond_0
     const-string v0, "applicationContextInfo"
 
-    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {v0}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -418,7 +397,6 @@
 .method public final getKeyHash()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/KakaoSdk;->applicationContextInfo:Lcom/kakao/sdk/common/model/ApplicationContextInfo;
 
     if-eqz v0, :cond_0
@@ -432,7 +410,7 @@
     :cond_0
     const-string v0, "applicationContextInfo"
 
-    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {v0}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -442,7 +420,6 @@
 .method public final getLoggingEnabled()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/kakao/sdk/common/KakaoSdk;->loggingEnabled:Z
 
     return v0
@@ -451,7 +428,6 @@
 .method public final getRedirectUri()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/KakaoSdk;->applicationContextInfo:Lcom/kakao/sdk/common/model/ApplicationContextInfo;
 
     if-eqz v0, :cond_0
@@ -465,7 +441,7 @@
     :cond_0
     const-string v0, "applicationContextInfo"
 
-    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {v0}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -475,7 +451,6 @@
 .method public final getType()Lcom/kakao/sdk/common/KakaoSdk$Type;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/kakao/sdk/common/KakaoSdk;->type:Lcom/kakao/sdk/common/KakaoSdk$Type;
 
     if-eqz v0, :cond_0
@@ -485,7 +460,7 @@
     :cond_0
     const-string v0, "type"
 
-    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
+    invoke-static {v0}, Lt3/e;->g(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -495,33 +470,43 @@
 .method public final init(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ZLcom/kakao/sdk/common/model/ServerHosts;Lcom/kakao/sdk/common/model/ApprovalType;Lcom/kakao/sdk/common/KakaoSdk$Type;)V
     .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "context"
 
-    if-eqz p1, :cond_5
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p2, :cond_4
+    const-string v0, "appKey"
 
-    if-eqz p3, :cond_3
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p5, :cond_2
+    const-string v0, "customScheme"
 
-    if-eqz p6, :cond_1
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p7, :cond_0
+    const-string v0, "hosts"
 
-    .line 9
-    sput-object p5, Lcom/kakao/sdk/common/KakaoSdk;->hosts:Lcom/kakao/sdk/common/model/ServerHosts;
+    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 10
-    sput-boolean p4, Lcom/kakao/sdk/common/KakaoSdk;->loggingEnabled:Z
+    const-string v0, "approvalType"
 
-    .line 11
-    sput-object p7, Lcom/kakao/sdk/common/KakaoSdk;->type:Lcom/kakao/sdk/common/KakaoSdk$Type;
+    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 12
-    sput-object p6, Lcom/kakao/sdk/common/KakaoSdk;->approvalType:Lcom/kakao/sdk/common/model/ApprovalType;
+    const-string v0, "type"
+
+    invoke-static {p7, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 13
+    sput-object p5, Lcom/kakao/sdk/common/KakaoSdk;->hosts:Lcom/kakao/sdk/common/model/ServerHosts;
+
+    .line 14
+    sput-boolean p4, Lcom/kakao/sdk/common/KakaoSdk;->loggingEnabled:Z
+
+    .line 15
+    sput-object p7, Lcom/kakao/sdk/common/KakaoSdk;->type:Lcom/kakao/sdk/common/KakaoSdk$Type;
+
+    .line 16
+    sput-object p6, Lcom/kakao/sdk/common/KakaoSdk;->approvalType:Lcom/kakao/sdk/common/model/ApprovalType;
+
+    .line 17
     new-instance p4, Lcom/kakao/sdk/common/model/ApplicationContextInfo;
 
     invoke-direct {p4, p1, p2, p3, p7}, Lcom/kakao/sdk/common/model/ApplicationContextInfo;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/kakao/sdk/common/KakaoSdk$Type;)V
@@ -529,140 +514,60 @@
     sput-object p4, Lcom/kakao/sdk/common/KakaoSdk;->applicationContextInfo:Lcom/kakao/sdk/common/model/ApplicationContextInfo;
 
     return-void
-
-    :cond_0
-    const-string p1, "type"
-
-    .line 14
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "approvalType"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "hosts"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "customScheme"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_4
-    const-string p1, "appKey"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_5
-    const-string p1, "context"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public final setApplicationContextInfo(Lcom/kakao/sdk/common/model/ApplicationContextInfo;)V
-    .locals 0
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "<set-?>"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sput-object p1, Lcom/kakao/sdk/common/KakaoSdk;->applicationContextInfo:Lcom/kakao/sdk/common/model/ApplicationContextInfo;
 
     return-void
-
-    :cond_0
-    const-string p1, "<set-?>"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final setApprovalType(Lcom/kakao/sdk/common/model/ApprovalType;)V
-    .locals 0
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "<set-?>"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sput-object p1, Lcom/kakao/sdk/common/KakaoSdk;->approvalType:Lcom/kakao/sdk/common/model/ApprovalType;
 
     return-void
-
-    :cond_0
-    const-string p1, "<set-?>"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final setHosts(Lcom/kakao/sdk/common/model/ServerHosts;)V
-    .locals 0
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "<set-?>"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sput-object p1, Lcom/kakao/sdk/common/KakaoSdk;->hosts:Lcom/kakao/sdk/common/model/ServerHosts;
 
     return-void
-
-    :cond_0
-    const-string p1, "<set-?>"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final setLoggingEnabled(Z)V
     .locals 0
 
-    .line 1
     sput-boolean p1, Lcom/kakao/sdk/common/KakaoSdk;->loggingEnabled:Z
 
     return-void
 .end method
 
 .method public final setType(Lcom/kakao/sdk/common/KakaoSdk$Type;)V
-    .locals 0
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "<set-?>"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     sput-object p1, Lcom/kakao/sdk/common/KakaoSdk;->type:Lcom/kakao/sdk/common/KakaoSdk$Type;
 
     return-void
-
-    :cond_0
-    const-string p1, "<set-?>"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

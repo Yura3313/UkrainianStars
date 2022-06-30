@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/Kakao$f$a;
+.class public final Lcom/supercell/titan/Kakao$f$a;
 .super Ljava/lang/Object;
 .source "Kakao.java"
 
@@ -18,15 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/kakaogame/KGResult;
+.field public final synthetic f:Lcom/kakaogame/KGResult;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/Kakao$f;Lcom/kakaogame/KGResult;)V
+.method public constructor <init>(Lcom/kakaogame/KGResult;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Lcom/supercell/titan/Kakao$f$a;->g:Lcom/kakaogame/KGResult;
+    iput-object p1, p0, Lcom/supercell/titan/Kakao$f$a;->f:Lcom/kakaogame/KGResult;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +34,11 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/Kakao$f$a;->g:Lcom/kakaogame/KGResult;
+    iget-object v0, p0, Lcom/supercell/titan/Kakao$f$a;->f:Lcom/kakaogame/KGResult;
 
     invoke-virtual {v0}, Lcom/kakaogame/KGResult;->getContent()Ljava/lang/Object;
 
@@ -108,7 +107,7 @@
     if-eqz v3, :cond_0
 
     .line 9
-    sget-object v5, Lcom/supercell/titan/Kakao;->a:Ljava/util/Map;
+    sget-object v5, Lcom/supercell/titan/Kakao;->a:Ljava/util/HashMap;
 
     .line 10
     invoke-interface {v5, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

@@ -32,7 +32,9 @@
 
     const-class v0, Lcom/kakao/sdk/partner/talk/model/Relation;
 
-    if-eqz p1, :cond_0
+    const-string v1, "in"
+
+    invoke-static {p1, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v1, Lcom/kakao/sdk/partner/talk/model/FriendRelation;
 
@@ -59,16 +61,6 @@
     invoke-direct {v1, v2, p1}, Lcom/kakao/sdk/partner/talk/model/FriendRelation;-><init>(Lcom/kakao/sdk/partner/talk/model/Relation;Lcom/kakao/sdk/partner/talk/model/Relation;)V
 
     return-object v1
-
-    :cond_0
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

@@ -1,4 +1,4 @@
-.class public Lh0/a;
+.class public final Lh0/a;
 .super Ljava/lang/Object;
 .source "PathInterpolatorApi14.java"
 
@@ -13,7 +13,7 @@
 
 
 # direct methods
-.method public constructor <init>(FFFF)V
+.method public constructor <init>(FFF)V
     .locals 8
 
     .line 1
@@ -26,6 +26,8 @@
     .line 2
     invoke-virtual {v7, v0, v0}, Landroid/graphics/Path;->moveTo(FF)V
 
+    const/high16 v4, 0x3f800000    # 1.0f
+
     const/high16 v5, 0x3f800000    # 1.0f
 
     const/high16 v6, 0x3f800000    # 1.0f
@@ -37,8 +39,6 @@
     move v2, p2
 
     move v3, p3
-
-    move v4, p4
 
     .line 3
     invoke-virtual/range {v0 .. v6}, Landroid/graphics/Path;->cubicTo(FFFFFF)V
@@ -58,65 +58,65 @@
 
     move-result p3
 
-    const p4, 0x3b03126f
+    const v0, 0x3b03126f
 
-    div-float p4, p3, p4
+    div-float v0, p3, v0
 
-    float-to-int p4, p4
+    float-to-int v0, v0
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
-    add-int/2addr p4, v0
+    add-int/2addr v0, v1
 
     .line 7
-    new-array v1, p4, [F
+    new-array v2, v0, [F
 
-    iput-object v1, p0, Lh0/a;->a:[F
+    iput-object v2, p0, Lh0/a;->a:[F
 
     .line 8
-    new-array v1, p4, [F
+    new-array v2, v0, [F
 
-    iput-object v1, p0, Lh0/a;->b:[F
+    iput-object v2, p0, Lh0/a;->b:[F
 
-    const/4 v1, 0x2
+    const/4 v2, 0x2
 
-    new-array v1, v1, [F
+    new-array v2, v2, [F
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     :goto_0
-    if-ge v2, p4, :cond_0
+    if-ge v3, v0, :cond_0
 
-    int-to-float v3, v2
+    int-to-float v4, v3
 
-    mul-float v3, v3, p3
+    mul-float v4, v4, p3
 
-    add-int/lit8 v4, p4, -0x1
+    add-int/lit8 v5, v0, -0x1
 
-    int-to-float v4, v4
+    int-to-float v5, v5
 
-    div-float/2addr v3, v4
+    div-float/2addr v4, v5
 
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
     .line 9
-    invoke-virtual {p1, v3, v1, v4}, Landroid/graphics/PathMeasure;->getPosTan(F[F[F)Z
+    invoke-virtual {p1, v4, v2, v5}, Landroid/graphics/PathMeasure;->getPosTan(F[F[F)Z
 
     .line 10
-    iget-object v3, p0, Lh0/a;->a:[F
+    iget-object v4, p0, Lh0/a;->a:[F
 
-    aget v4, v1, p2
+    aget v5, v2, p2
 
-    aput v4, v3, v2
+    aput v5, v4, v3
 
     .line 11
-    iget-object v3, p0, Lh0/a;->b:[F
+    iget-object v4, p0, Lh0/a;->b:[F
 
-    aget v4, v1, v0
+    aget v5, v2, v1
 
-    aput v4, v3, v2
+    aput v5, v4, v3
 
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
@@ -126,7 +126,7 @@
 
 
 # virtual methods
-.method public getInterpolation(F)F
+.method public final getInterpolation(F)F
     .locals 6
 
     const/4 v0, 0x0
@@ -223,7 +223,7 @@
     .line 8
     aget v0, v0, v2
 
-    invoke-static {v0, v1, p1, v1}, Lo/o;->a(FFFF)F
+    invoke-static {v0, v1, p1, v1}, Lo/p;->a(FFFF)F
 
     move-result p1
 

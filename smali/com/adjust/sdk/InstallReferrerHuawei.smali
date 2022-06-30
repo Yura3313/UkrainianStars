@@ -241,7 +241,7 @@
     :try_start_4
     new-array v6, v10, [Ljava/lang/Object;
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 

@@ -31,8 +31,8 @@
 
 
 # virtual methods
-.method public final Y3(Landroid/os/Bundle;Landroid/os/Bundle;)V
-    .locals 3
+.method public final c7(Landroid/os/Bundle;)V
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -40,40 +40,40 @@
     .end annotation
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
 
     .line 2
-    iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/l;
+    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
 
     .line 3
-    invoke-virtual {p2}, Ly4/l;->a()V
+    invoke-virtual {v0}, La5/l;->a()V
 
     .line 4
-    sget-object p2, Lcom/google/android/play/core/assetpacks/o;->f:Ly4/b;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/o;->f:La5/b;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    new-array v0, v0, [Ljava/lang/Object;
+    new-array v1, v1, [Ljava/lang/Object;
 
-    const/4 v1, 0x4
+    const/4 v2, 0x4
 
-    const-string v2, "onGetChunkFileDescriptor"
+    const-string v3, "onGetChunkFileDescriptor"
 
     .line 5
-    invoke-virtual {p2, v1, v2, v0}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+    invoke-virtual {v0, v2, v3, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
-    const-string p2, "chunk_file_descriptor"
+    const-string v0, "chunk_file_descriptor"
 
     .line 6
-    invoke-virtual {p1, p2}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/os/ParcelFileDescriptor;
 
-    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/tasks/i;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->f:Lcom/google/android/play/core/tasks/i;
 
-    invoke-virtual {p2, p1}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Object;)V
 
     return-void
 .end method

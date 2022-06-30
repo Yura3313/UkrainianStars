@@ -4,20 +4,18 @@
 
 
 # virtual methods
-.method public final C5(Ljava/lang/String;)V
+.method public final D5(Ljava/lang/String;)V
     .locals 0
 
     const/4 p1, 0x0
 
-    .line 1
     throw p1
 .end method
 
-.method public final o7()V
+.method public final k7()V
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 1
     throw v0
 .end method

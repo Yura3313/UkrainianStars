@@ -108,7 +108,7 @@
     iget v0, p0, Lcom/google/android/gms/common/internal/BaseGmsClient$i;->a:I
 
     .line 13
-    iget-object v1, p1, Lcom/google/android/gms/common/internal/BaseGmsClient;->f:Landroid/os/Handler;
+    iget-object v1, p1, Lcom/google/android/gms/common/internal/BaseGmsClient;->f:Lcom/google/android/gms/common/internal/BaseGmsClient$g;
 
     new-instance v2, Lcom/google/android/gms/common/internal/BaseGmsClient$k;
 
@@ -167,7 +167,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 7
-    iget-object p1, v0, Lcom/google/android/gms/common/internal/BaseGmsClient;->f:Landroid/os/Handler;
+    iget-object p1, v0, Lcom/google/android/gms/common/internal/BaseGmsClient;->f:Lcom/google/android/gms/common/internal/BaseGmsClient$g;
 
     const/4 v0, 0x6
 

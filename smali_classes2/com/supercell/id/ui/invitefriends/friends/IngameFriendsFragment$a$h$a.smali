@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
+.field public final synthetic f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,12 +38,12 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
 
-    iget-object v0, v0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;->a:Lvd/k1$a;
+    iget-object v0, v0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;->a:Lae/c2$a;
 
     .line 2
-    iget-object v0, v0, Lvd/k1$a;->B:Landroid/view/View;
+    iget-object v0, v0, Lae/c2$a;->A:Landroid/view/View;
 
     .line 3
     sget v1, Lcom/supercell/id/R$id;->friendFbExclamationMark:I
@@ -56,14 +56,14 @@
 
     const-string v1, "containerView.friendFbExclamationMark"
 
-    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
 
-    iget-object v1, v1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;->a:Lvd/k1$a;
+    iget-object v1, v1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;->a:Lae/c2$a;
 
     .line 4
-    iget-object v1, v1, Lvd/k1$a;->B:Landroid/view/View;
+    iget-object v1, v1, Lae/c2$a;->A:Landroid/view/View;
 
     .line 5
     sget v2, Lcom/supercell/id/R$id;->friendFbIcon:I
@@ -76,9 +76,7 @@
 
     const-string v2, "containerView.friendFbIcon"
 
-    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v2, 0x0
+    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 6
     invoke-virtual {v1}, Landroid/view/View;->getWidth()I
@@ -90,37 +88,39 @@
     .line 7
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-    move-result-object v3
+    move-result-object v2
 
-    instance-of v4, v3, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
+    instance-of v3, v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
-    if-nez v4, :cond_0
+    const/4 v4, 0x0
 
-    move-object v3, v2
+    if-nez v3, :cond_0
+
+    move-object v2, v4
 
     :cond_0
-    check-cast v3, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
+    check-cast v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
-    if-eqz v3, :cond_1
+    if-eqz v2, :cond_1
 
     .line 8
-    iget v4, v3, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->n:I
+    iget v3, v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->n:I
 
-    if-ne v1, v4, :cond_1
+    if-ne v1, v3, :cond_1
 
     goto :goto_0
 
     :cond_1
-    if-eqz v3, :cond_2
+    if-eqz v2, :cond_2
 
     .line 9
-    iput v1, v3, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->n:I
+    iput v1, v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->n:I
 
-    move-object v2, v3
+    move-object v4, v2
 
     .line 10
     :cond_2
-    invoke-virtual {v0, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, v4}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 11
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;

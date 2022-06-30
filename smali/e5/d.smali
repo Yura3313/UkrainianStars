@@ -1,193 +1,85 @@
-.class public Le5/d;
-.super Ld5/i;
-.source "AesCtrKeyManager.java"
+.class public final Le5/d;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ld5/i<",
-        "Ll5/i;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic f:Le5/a;
+
+.field public final synthetic g:I
+
+.field public final synthetic h:I
+
+.field public final synthetic i:Le5/e;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 4
+.method public constructor <init>(Le5/e;Le5/a;II)V
+    .locals 0
 
-    .line 1
-    const-class v0, Ll5/i;
+    iput-object p1, p0, Le5/d;->i:Le5/e;
 
-    const/4 v1, 0x1
+    iput-object p2, p0, Le5/d;->f:Le5/a;
 
-    new-array v1, v1, [Ld5/i$b;
+    iput p3, p0, Le5/d;->g:I
 
-    new-instance v2, Le5/d$a;
+    iput p4, p0, Le5/d;->h:I
 
-    const-class v3, Lp5/d0;
-
-    invoke-direct {v2, v3}, Le5/d$a;-><init>(Ljava/lang/Class;)V
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    invoke-direct {p0, v0, v1}, Ld5/i;-><init>(Ljava/lang/Class;[Ld5/i$b;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Ljava/lang/String;
-    .locals 1
+.method public final run()V
+    .locals 15
 
-    const-string v0, "type.googleapis.com/google.crypto.tink.AesCtrKey"
+    iget-object v0, p0, Le5/d;->i:Le5/e;
 
-    return-object v0
-.end method
+    iget-object v1, p0, Le5/d;->f:Le5/a;
 
-.method public c()Ld5/i$a;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ld5/i$a<",
-            "Ll5/j;",
-            "Ll5/i;",
-            ">;"
-        }
-    .end annotation
+    iget v4, p0, Le5/d;->g:I
 
-    .line 1
-    new-instance v0, Le5/d$b;
+    iget v5, p0, Le5/d;->h:I
 
-    const-class v1, Ll5/j;
+    new-instance v14, Le5/b;
 
-    invoke-direct {v0, p0, v1}, Le5/d$b;-><init>(Le5/d;Ljava/lang/Class;)V
+    invoke-virtual {v1}, Le5/a;->g()I
 
-    return-object v0
-.end method
+    move-result v3
 
-.method public d()Ll5/v0$c;
-    .locals 1
+    invoke-virtual {v1}, Le5/a;->c()J
 
-    .line 1
-    sget-object v0, Ll5/v0$c;->i:Ll5/v0$c;
+    move-result-wide v6
 
-    return-object v0
-.end method
+    invoke-virtual {v1}, Le5/a;->i()J
 
-.method public e(Lm5/c;)Lcom/google/crypto/tink/shaded/protobuf/a0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;
-        }
-    .end annotation
+    move-result-wide v8
 
-    .line 1
-    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/j;->a()Lcom/google/crypto/tink/shaded/protobuf/j;
+    invoke-virtual {v1}, Le5/a;->a()Ljava/util/List;
 
-    move-result-object v0
+    move-result-object v10
 
-    invoke-static {p1, v0}, Ll5/i;->z(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/i;
+    invoke-virtual {v1}, Le5/a;->b()Ljava/util/List;
 
-    move-result-object p1
+    move-result-object v11
 
-    return-object p1
-.end method
+    invoke-virtual {v1}, Le5/a;->f()Landroid/app/PendingIntent;
 
-.method public bridge synthetic g(Lcom/google/crypto/tink/shaded/protobuf/a0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+    move-result-object v12
 
-    .line 1
-    check-cast p1, Ll5/i;
+    invoke-virtual {v1}, Le5/a;->d()Ljava/util/List;
 
-    invoke-virtual {p0, p1}, Le5/d;->h(Ll5/i;)V
+    move-result-object v13
+
+    move-object v2, v14
+
+    invoke-direct/range {v2 .. v13}, Le5/b;-><init>(IIIJJLjava/util/List;Ljava/util/List;Landroid/app/PendingIntent;Ljava/util/List;)V
+
+    invoke-virtual {v0, v14}, Lb5/c;->b(Ljava/lang/Object;)V
 
     return-void
-.end method
-
-.method public h(Ll5/i;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p1}, Ll5/i;->x()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lp5/m0;->e(II)V
-
-    .line 2
-    invoke-virtual {p1}, Ll5/i;->v()Lm5/c;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lm5/c;->size()I
-
-    move-result v0
-
-    invoke-static {v0}, Lp5/m0;->a(I)V
-
-    .line 3
-    invoke-virtual {p1}, Ll5/i;->w()Ll5/k;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Le5/d;->i(Ll5/k;)V
-
-    return-void
-.end method
-
-.method public final i(Ll5/k;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p1}, Ll5/k;->s()I
-
-    move-result v0
-
-    const/16 v1, 0xc
-
-    if-lt v0, v1, :cond_0
-
-    invoke-virtual {p1}, Ll5/k;->s()I
-
-    move-result p1
-
-    const/16 v0, 0x10
-
-    if-gt p1, v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "invalid IV size"
-
-    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method

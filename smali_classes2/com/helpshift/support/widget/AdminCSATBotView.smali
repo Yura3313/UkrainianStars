@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public g:Landroid/widget/RatingBar;
+.field public f:Landroid/widget/RatingBar;
 
-.field public h:Lcom/helpshift/views/HSButton;
+.field public g:Lcom/helpshift/views/HSButton;
 
-.field public i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+.field public h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     const/4 p2, 0x0
 
     .line 2
-    iput-object p2, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+    iput-object p2, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
     .line 3
     sget p2, Lcom/helpshift/R$layout;->hs__csat_bot_view:I
@@ -51,7 +51,7 @@
     const/4 p2, 0x0
 
     .line 5
-    iput-object p2, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+    iput-object p2, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
     .line 6
     sget p2, Lcom/helpshift/R$layout;->hs__csat_bot_view:I
@@ -63,74 +63,71 @@
 
 
 # virtual methods
-.method public onFinishInflate()V
-    .locals 3
+.method public final onFinishInflate()V
+    .locals 2
 
     .line 1
-    invoke-super {p0}, Landroid/widget/RelativeLayout;->onFinishInflate()V
+    invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 2
     sget v0, Lcom/helpshift/R$id;->ratingBar:I
 
-    invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/RatingBar;
 
-    iput-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Landroid/widget/RatingBar;
+    iput-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->f:Landroid/widget/RatingBar;
 
     .line 3
     sget v0, Lcom/helpshift/R$id;->csat_sendfeedback_btn:I
 
-    invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Lcom/helpshift/views/HSButton;
 
-    iput-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/views/HSButton;
+    iput-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Lcom/helpshift/views/HSButton;
 
     .line 4
-    invoke-virtual {p0}, Landroid/widget/RelativeLayout;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Landroid/widget/RatingBar;
+    iget-object v1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->f:Landroid/widget/RatingBar;
 
-    invoke-virtual {v1}, Landroid/widget/RatingBar;->getProgressDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1}, Landroid/widget/ProgressBar;->getProgressDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
+    invoke-static {v0, v1}, Lib/g;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)V
+
     .line 5
-    sget v2, Lcom/helpshift/R$attr;->colorAccent:I
-
-    invoke-static {v0, v1, v2}, Lcom/helpshift/util/z;->d(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
-
-    .line 6
-    iget-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Landroid/widget/RatingBar;
+    iget-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->f:Landroid/widget/RatingBar;
 
     invoke-virtual {v0, p0}, Landroid/widget/RatingBar;->setOnRatingBarChangeListener(Landroid/widget/RatingBar$OnRatingBarChangeListener;)V
 
-    .line 7
-    iget-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/views/HSButton;
+    .line 6
+    iget-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Lcom/helpshift/views/HSButton;
 
     new-instance v1, Lcom/helpshift/support/widget/AdminCSATBotView$a;
 
     invoke-direct {v1, p0}, Lcom/helpshift/support/widget/AdminCSATBotView$a;-><init>(Lcom/helpshift/support/widget/AdminCSATBotView;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method
 
-.method public onRatingChanged(Landroid/widget/RatingBar;FZ)V
+.method public final onRatingChanged(Landroid/widget/RatingBar;FZ)V
     .locals 3
 
     if-eqz p3, :cond_3
 
     .line 1
-    iget-object p3, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+    iget-object p3, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
     if-eqz p3, :cond_3
 
@@ -152,39 +149,39 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+    iget-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
-    check-cast p1, Lpa/e;
+    check-cast p1, Lra/e;
 
     .line 5
-    iget-object p3, p1, Lpa/e;->a:Lpa/g$a;
+    iget-object p3, p1, Lra/e;->a:Lra/g$a;
 
-    iget-object p3, p3, Lpa/g$a;->B:Lcom/helpshift/views/HSButton;
+    iget-object p3, p3, Lra/g$a;->A:Lcom/helpshift/views/HSButton;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p3, v0}, Landroid/widget/Button;->setVisibility(I)V
+    invoke-virtual {p3, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 6
-    iget-object p3, p1, Lpa/e;->a:Lpa/g$a;
+    iget-object p3, p1, Lra/e;->a:Lra/g$a;
 
-    iget-object p3, p3, Lpa/g$a;->E:Lcom/helpshift/views/HSTextView;
+    iget-object p3, p3, Lra/g$a;->D:Lcom/helpshift/views/HSTextView;
 
     const/16 v1, 0x8
 
-    invoke-virtual {p3, v1}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {p3, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 7
-    iget-object p3, p1, Lpa/e;->a:Lpa/g$a;
+    iget-object p3, p1, Lra/e;->a:Lra/g$a;
 
-    iget-object p3, p3, Lpa/g$a;->D:Lcom/helpshift/views/HSTextView;
+    iget-object p3, p3, Lra/g$a;->C:Lcom/helpshift/views/HSTextView;
 
-    invoke-virtual {p3, v1}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {p3, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 8
-    iget-object p3, p1, Lpa/e;->b:Lo8/a;
+    iget-object p3, p1, Lra/e;->b:Lp8/a;
 
-    iget-object p3, p3, Lo8/a;->k:Ljava/util/List;
+    iget-object p3, p3, Lp8/a;->j:Ljava/util/List;
 
     invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -201,57 +198,57 @@
 
     move-result-object v1
 
-    check-cast v1, Lo8/a$a;
+    check-cast v1, Lp8/a$a;
 
     .line 9
-    iget v2, v1, Lo8/a$a;->h:I
+    iget v2, v1, Lp8/a$a;->g:I
 
     if-ne p2, v2, :cond_1
 
     .line 10
-    iget-object p2, p1, Lpa/e;->a:Lpa/g$a;
+    iget-object p2, p1, Lra/e;->a:Lra/g$a;
 
-    iget-object p2, p2, Lpa/g$a;->F:Lcom/helpshift/views/HSTextView;
+    iget-object p2, p2, Lra/g$a;->E:Lcom/helpshift/views/HSTextView;
 
-    iget-object p3, v1, Lo8/a$a;->g:Ljava/lang/String;
+    iget-object p3, v1, Lp8/a$a;->f:Ljava/lang/String;
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 11
     :cond_2
-    iget-object p2, p1, Lpa/e;->a:Lpa/g$a;
+    iget-object p2, p1, Lra/e;->a:Lra/g$a;
 
-    iget-object p2, p2, Lpa/g$a;->F:Lcom/helpshift/views/HSTextView;
+    iget-object p2, p2, Lra/g$a;->E:Lcom/helpshift/views/HSTextView;
 
-    invoke-virtual {p2, v0}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {p2, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 12
-    iget-object p2, p1, Lpa/e;->d:Lpa/g;
+    iget-object p2, p1, Lra/e;->d:Lra/g;
 
-    iget-object p2, p2, Lpa/u;->b:Lpa/u$a;
+    iget-object p2, p2, Lra/u;->b:Lra/u$a;
 
     if-eqz p2, :cond_3
 
     .line 13
-    iget-object p1, p1, Lpa/e;->c:Ln8/f;
+    iget-object p1, p1, Lra/e;->c:Lo8/g;
 
-    iget-object p1, p1, Ln8/w;->j:Ljava/lang/String;
+    iget-object p1, p1, Lo8/y;->i:Ljava/lang/String;
 
-    check-cast p2, Loa/p0;
+    check-cast p2, Lqa/p0;
 
     .line 14
-    iget-object p2, p2, Loa/p0;->e:Lpa/w;
+    iget-object p2, p2, Lqa/p0;->e:Lra/x;
 
     if-eqz p2, :cond_3
 
     .line 15
-    check-cast p2, Loa/t;
+    check-cast p2, Lqa/t;
 
     .line 16
-    iget-object p2, p2, Loa/t;->o0:Ld9/i;
+    iget-object p2, p2, Lqa/t;->m0:Lf9/i;
 
     .line 17
-    iget-object p3, p2, Ld9/i;->F:Ljava/lang/String;
+    iget-object p3, p2, Lf9/i;->F:Ljava/lang/String;
 
     invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -262,10 +259,10 @@
     const/16 p3, 0x13
 
     .line 18
-    invoke-virtual {p2, p3}, Ld9/i;->L(I)V
+    invoke-virtual {p2, p3}, Lf9/i;->M(I)V
 
     .line 19
-    iput-object p1, p2, Ld9/i;->F:Ljava/lang/String;
+    iput-object p1, p2, Lf9/i;->F:Ljava/lang/String;
 
     :cond_3
     return-void
@@ -275,38 +272,38 @@
     .locals 2
 
     .line 1
-    iput-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+    iput-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
     .line 2
-    check-cast p1, Lpa/e;
+    check-cast p1, Lra/e;
 
     .line 3
-    iget-object v0, p1, Lpa/e;->d:Lpa/g;
+    iget-object v0, p1, Lra/e;->d:Lra/g;
 
-    iget-object v0, v0, Lpa/u;->b:Lpa/u$a;
+    iget-object v0, v0, Lra/u;->b:Lra/u$a;
 
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object p1, p1, Lpa/e;->c:Ln8/f;
+    iget-object p1, p1, Lra/e;->c:Lo8/g;
 
-    iget-object p1, p1, Ln8/w;->j:Ljava/lang/String;
+    iget-object p1, p1, Lo8/y;->i:Ljava/lang/String;
 
-    check-cast v0, Loa/p0;
+    check-cast v0, Lqa/p0;
 
     .line 5
-    iget-object v0, v0, Loa/p0;->e:Lpa/w;
+    iget-object v0, v0, Lqa/p0;->e:Lra/x;
 
     if-eqz v0, :cond_0
 
     .line 6
-    check-cast v0, Loa/t;
+    check-cast v0, Lqa/t;
 
     .line 7
-    iget-object v0, v0, Loa/t;->o0:Ld9/i;
+    iget-object v0, v0, Lqa/t;->m0:Lf9/i;
 
     .line 8
-    iget-object v1, v0, Ld9/i;->G:Ljava/lang/String;
+    iget-object v1, v0, Lf9/i;->G:Ljava/lang/String;
 
     invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -317,10 +314,10 @@
     const/16 v1, 0x22
 
     .line 9
-    invoke-virtual {v0, v1}, Ld9/i;->L(I)V
+    invoke-virtual {v0, v1}, Lf9/i;->M(I)V
 
     .line 10
-    iput-object p1, v0, Ld9/i;->G:Ljava/lang/String;
+    iput-object p1, v0, Lf9/i;->G:Ljava/lang/String;
 
     :cond_0
     return-void

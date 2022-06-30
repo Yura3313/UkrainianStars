@@ -28,13 +28,13 @@
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 8
+    .locals 7
 
-    const/4 v0, 0x0
+    const-string v0, "in"
 
-    if-eqz p1, :cond_3
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v7, Lcom/kakao/sdk/template/model/Commerce;
+    new-instance v0, Lcom/kakao/sdk/template/model/Commerce;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -43,6 +43,8 @@
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
+
+    const/4 v3, 0x0
 
     if-eqz v1, :cond_0
 
@@ -54,12 +56,12 @@
 
     move-result-object v1
 
-    move-object v3, v1
+    move-object v4, v1
 
     goto :goto_0
 
     :cond_0
-    move-object v3, v0
+    move-object v4, v3
 
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -76,12 +78,12 @@
 
     move-result-object v1
 
-    move-object v4, v1
+    move-object v5, v1
 
     goto :goto_1
 
     :cond_1
-    move-object v4, v0
+    move-object v5, v3
 
     :goto_1
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -92,32 +94,37 @@
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-result v0
+    move-result v1
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v0
+    move-result-object v1
+
+    move-object v6, v1
+
+    goto :goto_2
 
     :cond_2
-    move-object v5, v0
+    move-object v6, v3
 
+    :goto_2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object p1
 
-    move-object v1, v7
+    move-object v1, v0
+
+    move-object v3, v4
+
+    move-object v4, v5
+
+    move-object v5, v6
+
+    move-object v6, p1
 
     invoke-direct/range {v1 .. v6}, Lcom/kakao/sdk/template/model/Commerce;-><init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;)V
 
-    return-object v7
-
-    :cond_3
-    const-string p1, "in"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;

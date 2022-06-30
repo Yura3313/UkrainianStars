@@ -31,7 +31,6 @@
 .method public constructor <init>(Landroid/app/Activity;Ljava/util/List;ZLcom/kakaogame/KGResultCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/promotion/StartingPromotionManager$1;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/promotion/StartingPromotionManager$1;->val$promotionList:Ljava/util/List;

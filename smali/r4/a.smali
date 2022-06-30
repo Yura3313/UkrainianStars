@@ -1,102 +1,189 @@
 .class public final Lr4/a;
 .super Ljava/lang/Object;
-.source "AbsoluteCornerSize.java"
+.source "ShadowRenderer.java"
 
-# interfaces
-.implements Lr4/c;
+
+# static fields
+.field public static final i:[I
+
+.field public static final j:[F
+
+.field public static final k:[I
+
+.field public static final l:[F
 
 
 # instance fields
-.field public final a:F
+.field public final a:Landroid/graphics/Paint;
+
+.field public final b:Landroid/graphics/Paint;
+
+.field public final c:Landroid/graphics/Paint;
+
+.field public d:I
+
+.field public e:I
+
+.field public f:I
+
+.field public final g:Landroid/graphics/Path;
+
+.field public h:Landroid/graphics/Paint;
 
 
 # direct methods
-.method public constructor <init>(F)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
+
+    const/4 v0, 0x3
+
+    new-array v1, v0, [I
+
+    .line 1
+    sput-object v1, Lr4/a;->i:[I
+
+    new-array v0, v0, [F
+
+    .line 2
+    fill-array-data v0, :array_0
+
+    sput-object v0, Lr4/a;->j:[F
+
+    const/4 v0, 0x4
+
+    new-array v1, v0, [I
+
+    .line 3
+    sput-object v1, Lr4/a;->k:[I
+
+    new-array v0, v0, [F
+
+    .line 4
+    fill-array-data v0, :array_1
+
+    sput-object v0, Lr4/a;->l:[F
+
+    return-void
+
+    nop
+
+    :array_0
+    .array-data 4
+        0x0
+        0x3f000000    # 0.5f
+        0x3f800000    # 1.0f
+    .end array-data
+
+    :array_1
+    .array-data 4
+        0x0
+        0x0
+        0x3f000000    # 0.5f
+        0x3f800000    # 1.0f
+    .end array-data
+.end method
+
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput p1, p0, Lr4/a;->a:F
+    new-instance v0, Landroid/graphics/Path;
+
+    invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
+
+    iput-object v0, p0, Lr4/a;->g:Landroid/graphics/Path;
+
+    .line 3
+    new-instance v0, Landroid/graphics/Paint;
+
+    invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
+
+    iput-object v0, p0, Lr4/a;->h:Landroid/graphics/Paint;
+
+    .line 4
+    new-instance v0, Landroid/graphics/Paint;
+
+    invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
+
+    iput-object v0, p0, Lr4/a;->a:Landroid/graphics/Paint;
+
+    const/high16 v0, -0x1000000
+
+    .line 5
+    invoke-virtual {p0, v0}, Lr4/a;->a(I)V
+
+    .line 6
+    iget-object v0, p0, Lr4/a;->h:Landroid/graphics/Paint;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
+
+    .line 7
+    new-instance v0, Landroid/graphics/Paint;
+
+    const/4 v1, 0x4
+
+    invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
+
+    iput-object v0, p0, Lr4/a;->b:Landroid/graphics/Paint;
+
+    .line 8
+    sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
+    .line 9
+    new-instance v1, Landroid/graphics/Paint;
+
+    invoke-direct {v1, v0}, Landroid/graphics/Paint;-><init>(Landroid/graphics/Paint;)V
+
+    iput-object v1, p0, Lr4/a;->c:Landroid/graphics/Paint;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/graphics/RectF;)F
-    .locals 0
+.method public final a(I)V
+    .locals 1
+
+    const/16 v0, 0x44
 
     .line 1
-    iget p1, p0, Lr4/a;->a:F
-
-    return p1
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    const/4 v0, 0x1
-
-    if-ne p0, p1, :cond_0
-
-    return v0
-
-    .line 1
-    :cond_0
-    instance-of v1, p1, Lr4/a;
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_1
-
-    return v2
-
-    .line 2
-    :cond_1
-    check-cast p1, Lr4/a;
-
-    .line 3
-    iget v1, p0, Lr4/a;->a:F
-
-    iget p1, p1, Lr4/a;->a:F
-
-    cmpl-float p1, v1, p1
-
-    if-nez p1, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public hashCode()I
-    .locals 3
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 1
-    iget v1, p0, Lr4/a;->a:F
-
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    .line 2
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+    invoke-static {p1, v0}, Lx/b;->d(II)I
 
     move-result v0
 
-    return v0
+    iput v0, p0, Lr4/a;->d:I
+
+    const/16 v0, 0x14
+
+    .line 2
+    invoke-static {p1, v0}, Lx/b;->d(II)I
+
+    move-result v0
+
+    iput v0, p0, Lr4/a;->e:I
+
+    const/4 v0, 0x0
+
+    .line 3
+    invoke-static {p1, v0}, Lx/b;->d(II)I
+
+    move-result p1
+
+    iput p1, p0, Lr4/a;->f:I
+
+    .line 4
+    iget-object p1, p0, Lr4/a;->a:Landroid/graphics/Paint;
+
+    iget v0, p0, Lr4/a;->d:I
+
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setColor(I)V
+
+    return-void
 .end method

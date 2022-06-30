@@ -1,32 +1,16 @@
-.class public interface abstract annotation Lze/d;
-.super Ljava/lang/Object;
-.source "FieldMap.java"
+.class public abstract Lze/d;
+.super Lze/e;
+.source "CancellableContinuationImpl.kt"
 
 # interfaces
-.implements Ljava/lang/annotation/Annotation;
+.implements Lze/l1;
 
 
-# annotations
-.annotation system Ldalvik/annotation/AnnotationDefault;
-    value = .subannotation Lze/d;
-        encoded = false
-    .end subannotation
-.end annotation
+# direct methods
+.method public constructor <init>()V
+    .locals 0
 
-.annotation runtime Ljava/lang/annotation/Documented;
-.end annotation
+    invoke-direct {p0}, Lze/e;-><init>()V
 
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Target;
-    value = {
-        .enum Ljava/lang/annotation/ElementType;->PARAMETER:Ljava/lang/annotation/ElementType;
-    }
-.end annotation
-
-
-# virtual methods
-.method public abstract encoded()Z
+    return-void
 .end method

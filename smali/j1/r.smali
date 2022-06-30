@@ -1,6 +1,8 @@
 .class public interface abstract Lj1/r;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj1/e;
+
+# virtual methods
+.method public abstract X3()V
+.end method

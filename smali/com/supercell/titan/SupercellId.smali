@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/supercell/titan/SupercellId$x;
+        Lcom/supercell/titan/SupercellId$w;
     }
 .end annotation
 
@@ -40,7 +40,6 @@
 .method public static getInstance()Lcom/supercell/titan/SupercellId;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/titan/SupercellId;->b:Lcom/supercell/titan/SupercellId;
 
     return-object v0
@@ -57,9 +56,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$i;
+    new-instance v1, Lcom/supercell/titan/SupercellId$h;
 
-    invoke-direct {v1, p0}, Lcom/supercell/titan/SupercellId$i;-><init>(Lcom/supercell/titan/SupercellId;)V
+    invoke-direct {v1}, Lcom/supercell/titan/SupercellId$h;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -75,9 +74,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$j;
+    new-instance v1, Lcom/supercell/titan/SupercellId$i;
 
-    invoke-direct {v1, p0}, Lcom/supercell/titan/SupercellId$j;-><init>(Lcom/supercell/titan/SupercellId;)V
+    invoke-direct {v1}, Lcom/supercell/titan/SupercellId$i;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -93,9 +92,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$h;
+    new-instance v1, Lcom/supercell/titan/SupercellId$g;
 
-    invoke-direct {v1, p0, p1}, Lcom/supercell/titan/SupercellId$h;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;)V
+    invoke-direct {v1, p1}, Lcom/supercell/titan/SupercellId$g;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -120,9 +119,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$u;
+    new-instance v1, Lcom/supercell/titan/SupercellId$t;
 
-    invoke-direct {v1, p0, p1}, Lcom/supercell/titan/SupercellId$u;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;)V
+    invoke-direct {v1, p1}, Lcom/supercell/titan/SupercellId$t;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -152,9 +151,9 @@
     move-result-object v0
 
     .line 3
-    new-instance v1, Lcom/supercell/titan/SupercellId$l;
+    new-instance v1, Lcom/supercell/titan/SupercellId$j;
 
-    invoke-direct {v1, p0}, Lcom/supercell/titan/SupercellId$l;-><init>(Lcom/supercell/titan/SupercellId;)V
+    invoke-direct {v1, p0}, Lcom/supercell/titan/SupercellId$j;-><init>(Lcom/supercell/titan/SupercellId;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -170,9 +169,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$f;
+    new-instance v1, Lcom/supercell/titan/SupercellId$e;
 
-    invoke-direct {v1, p0}, Lcom/supercell/titan/SupercellId$f;-><init>(Lcom/supercell/titan/SupercellId;)V
+    invoke-direct {v1}, Lcom/supercell/titan/SupercellId$e;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -188,9 +187,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$v;
+    new-instance v1, Lcom/supercell/titan/SupercellId$u;
 
-    invoke-direct {v1, p0, p1}, Lcom/supercell/titan/SupercellId$v;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;)V
+    invoke-direct {v1, p1}, Lcom/supercell/titan/SupercellId$u;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -218,16 +217,13 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$s;
+    new-instance v1, Lcom/supercell/titan/SupercellId$r;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/supercell/titan/SupercellId$s;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, p1, p2}, Lcom/supercell/titan/SupercellId$r;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     return-void
-.end method
-
-.method public native donationReceivedNotification(Lcom/supercell/id/IdShopDonation;)V
 .end method
 
 .method public native forgetAccount(Ljava/lang/String;Ljava/lang/String;)V
@@ -254,7 +250,6 @@
 .method public getObjPtr()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/supercell/titan/SupercellId;->a:J
 
     return-wide v0
@@ -269,7 +264,6 @@
 .method public getVersionString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getVersionString()Ljava/lang/String;
@@ -288,9 +282,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$n;
+    new-instance v1, Lcom/supercell/titan/SupercellId$m;
 
-    invoke-direct {v1, p0, p1, v0}, Lcom/supercell/titan/SupercellId$n;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;Lcom/supercell/titan/GameApp;)V
+    invoke-direct {v1, p1, v0}, Lcom/supercell/titan/SupercellId$m;-><init>(Ljava/lang/String;Lcom/supercell/titan/GameApp;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -311,7 +305,7 @@
     .line 3
     new-instance v0, Lcom/supercell/titan/SupercellId$k;
 
-    invoke-direct {v0, p0, p1, p0}, Lcom/supercell/titan/SupercellId$k;-><init>(Lcom/supercell/titan/SupercellId;Lcom/supercell/titan/GameApp;Lcom/supercell/titan/SupercellId;)V
+    invoke-direct {v0, p1, p0}, Lcom/supercell/titan/SupercellId$k;-><init>(Lcom/supercell/titan/GameApp;Lcom/supercell/titan/SupercellId;)V
 
     invoke-virtual {p1, v0}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -357,9 +351,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$e;
+    new-instance v1, Lcom/supercell/titan/SupercellId$d;
 
-    invoke-direct {v1, p0, p1, v0}, Lcom/supercell/titan/SupercellId$e;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;Lcom/supercell/titan/GameApp;)V
+    invoke-direct {v1, p1, v0}, Lcom/supercell/titan/SupercellId$d;-><init>(Ljava/lang/String;Lcom/supercell/titan/GameApp;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -375,9 +369,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$c;
+    new-instance v1, Lcom/supercell/titan/SupercellId$b;
 
-    invoke-direct {v1, p0, p1, p2, v0}, Lcom/supercell/titan/SupercellId$c;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;Ljava/lang/String;Lcom/supercell/titan/GameApp;)V
+    invoke-direct {v1, p1, p2, v0}, Lcom/supercell/titan/SupercellId$b;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/supercell/titan/GameApp;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -393,9 +387,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$d;
+    new-instance v1, Lcom/supercell/titan/SupercellId$c;
 
-    invoke-direct {v1, p0, p1, v0, p2}, Lcom/supercell/titan/SupercellId$d;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;Lcom/supercell/titan/GameApp;Ljava/lang/String;)V
+    invoke-direct {v1, p1, v0, p2}, Lcom/supercell/titan/SupercellId$c;-><init>(Ljava/lang/String;Lcom/supercell/titan/GameApp;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -414,9 +408,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$b;
+    new-instance v1, Lcom/supercell/titan/SupercellId$a;
 
-    invoke-direct {v1, p0, p1, v0, p2}, Lcom/supercell/titan/SupercellId$b;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;Lcom/supercell/titan/GameApp;Ljava/lang/String;)V
+    invoke-direct {v1, p1, v0, p2}, Lcom/supercell/titan/SupercellId$a;-><init>(Ljava/lang/String;Lcom/supercell/titan/GameApp;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -432,9 +426,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$p;
+    new-instance v1, Lcom/supercell/titan/SupercellId$o;
 
-    invoke-direct {v1, p0}, Lcom/supercell/titan/SupercellId$p;-><init>(Lcom/supercell/titan/SupercellId;)V
+    invoke-direct {v1}, Lcom/supercell/titan/SupercellId$o;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -444,7 +438,6 @@
 .method public presentingActivity()Landroid/app/Activity;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
     move-result-object v0
@@ -467,9 +460,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$g;
+    new-instance v1, Lcom/supercell/titan/SupercellId$f;
 
-    invoke-direct {v1, p0, p1, v0, p2}, Lcom/supercell/titan/SupercellId$g;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;Lcom/supercell/titan/GameApp;Ljava/lang/String;)V
+    invoke-direct {v1, p1, v0, p2}, Lcom/supercell/titan/SupercellId$f;-><init>(Ljava/lang/String;Lcom/supercell/titan/GameApp;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -479,7 +472,6 @@
 .method public requestBackgroundTimeout()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->requestBackgroundTimeout()Z
@@ -498,9 +490,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$t;
+    new-instance v1, Lcom/supercell/titan/SupercellId$s;
 
-    invoke-direct {v1, p0}, Lcom/supercell/titan/SupercellId$t;-><init>(Lcom/supercell/titan/SupercellId;)V
+    invoke-direct {v1}, Lcom/supercell/titan/SupercellId$s;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -516,9 +508,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$m;
+    new-instance v1, Lcom/supercell/titan/SupercellId$l;
 
-    invoke-direct {v1, p0, p1}, Lcom/supercell/titan/SupercellId$m;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;)V
+    invoke-direct {v1, p1}, Lcom/supercell/titan/SupercellId$l;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -534,9 +526,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$r;
+    new-instance v1, Lcom/supercell/titan/SupercellId$q;
 
-    invoke-direct {v1, p0}, Lcom/supercell/titan/SupercellId$r;-><init>(Lcom/supercell/titan/SupercellId;)V
+    invoke-direct {v1}, Lcom/supercell/titan/SupercellId$q;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -544,27 +536,6 @@
 .end method
 
 .method public native resetPresences([Lcom/supercell/id/IdPresence;)V
-.end method
-
-.method public respondToDonation(Ljava/lang/String;Z)V
-    .locals 2
-
-    .line 1
-    invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
-
-    move-result-object v0
-
-    .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$w;
-
-    invoke-direct {v1, p0, p1, p2, v0}, Lcom/supercell/titan/SupercellId$w;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;ZLcom/supercell/titan/GameApp;)V
-
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
-.method public native respondToDonationResult(Ljava/lang/String;Ljava/lang/String;)V
 .end method
 
 .method public native setNotificationBadge(ZI)V
@@ -579,9 +550,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$o;
+    new-instance v1, Lcom/supercell/titan/SupercellId$n;
 
-    invoke-direct {v1, p0, p1, v0}, Lcom/supercell/titan/SupercellId$o;-><init>(Lcom/supercell/titan/SupercellId;ZLcom/supercell/titan/GameApp;)V
+    invoke-direct {v1, p1, v0}, Lcom/supercell/titan/SupercellId$n;-><init>(ZLcom/supercell/titan/GameApp;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -591,7 +562,6 @@
 .method public setObjPtr(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/supercell/titan/SupercellId;->a:J
 
     return-void
@@ -606,9 +576,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$q;
+    new-instance v1, Lcom/supercell/titan/SupercellId$p;
 
-    invoke-direct {v1, p0, p1}, Lcom/supercell/titan/SupercellId$q;-><init>(Lcom/supercell/titan/SupercellId;Z)V
+    invoke-direct {v1, p1}, Lcom/supercell/titan/SupercellId$p;-><init>(Z)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -645,9 +615,9 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/supercell/titan/SupercellId$a;
+    new-instance v1, Lcom/supercell/titan/SupercellId$v;
 
-    invoke-direct {v1, p0, p1, v0}, Lcom/supercell/titan/SupercellId$a;-><init>(Lcom/supercell/titan/SupercellId;Ljava/lang/String;Lcom/supercell/titan/GameApp;)V
+    invoke-direct {v1, p1, v0}, Lcom/supercell/titan/SupercellId$v;-><init>(Ljava/lang/String;Lcom/supercell/titan/GameApp;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 

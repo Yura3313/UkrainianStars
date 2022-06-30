@@ -33,7 +33,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "Required method destroyItem was not overridden"
@@ -46,7 +45,6 @@
 .method public b(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2, p3}, Ly0/b;->a(Landroid/view/View;ILjava/lang/Object;)V
 
     return-void
@@ -63,7 +61,6 @@
 .method public d(Landroid/view/ViewGroup;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Ly0/b;->c(Landroid/view/View;)V
 
     return-void
@@ -101,7 +98,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "Required method instantiateItem was not overridden"
@@ -114,7 +110,6 @@
 .method public j(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Ly0/b;->i(Landroid/view/View;I)Ljava/lang/Object;
 
     move-result-object p1
@@ -168,10 +163,9 @@
 .method public m(Landroid/database/DataSetObserver;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ly0/b;->a:Landroid/database/DataSetObservable;
 
-    invoke-virtual {v0, p1}, Landroid/database/DataSetObservable;->registerObserver(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroid/database/Observable;->registerObserver(Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -201,7 +195,6 @@
 .method public q(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2, p3}, Ly0/b;->p(Landroid/view/View;ILjava/lang/Object;)V
 
     return-void
@@ -218,7 +211,6 @@
 .method public s(Landroid/view/ViewGroup;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Ly0/b;->r(Landroid/view/View;)V
 
     return-void
@@ -227,10 +219,9 @@
 .method public t(Landroid/database/DataSetObserver;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Ly0/b;->a:Landroid/database/DataSetObservable;
 
-    invoke-virtual {v0, p1}, Landroid/database/DataSetObservable;->unregisterObserver(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroid/database/Observable;->unregisterObserver(Ljava/lang/Object;)V
 
     return-void
 .end method

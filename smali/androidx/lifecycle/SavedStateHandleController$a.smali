@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,20 +28,20 @@
 
 
 # virtual methods
-.method public a(Landroidx/savedstate/c;)V
+.method public final a(Landroidx/savedstate/c;)V
     .locals 5
 
     .line 1
-    instance-of v0, p1, Landroidx/lifecycle/d0;
+    instance-of v0, p1, Landroidx/lifecycle/z;
 
     if-eqz v0, :cond_2
 
     .line 2
     move-object v0, p1
 
-    check-cast v0, Landroidx/lifecycle/d0;
+    check-cast v0, Landroidx/lifecycle/z;
 
-    invoke-interface {v0}, Landroidx/lifecycle/d0;->getViewModelStore()Landroidx/lifecycle/c0;
+    invoke-interface {v0}, Landroidx/lifecycle/z;->getViewModelStore()Landroidx/lifecycle/y;
 
     move-result-object v0
 
@@ -57,7 +56,7 @@
     .line 5
     new-instance v2, Ljava/util/HashSet;
 
-    iget-object v3, v0, Landroidx/lifecycle/c0;->a:Ljava/util/HashMap;
+    iget-object v3, v0, Landroidx/lifecycle/y;->a:Ljava/util/HashMap;
 
     invoke-virtual {v3}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -84,20 +83,20 @@
     check-cast v3, Ljava/lang/String;
 
     .line 7
-    iget-object v4, v0, Landroidx/lifecycle/c0;->a:Ljava/util/HashMap;
+    iget-object v4, v0, Landroidx/lifecycle/y;->a:Ljava/util/HashMap;
 
     invoke-virtual {v4, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Landroidx/lifecycle/x;
+    check-cast v3, Landroidx/lifecycle/w;
 
     .line 8
     invoke-interface {p1}, Landroidx/lifecycle/j;->getLifecycle()Landroidx/lifecycle/f;
 
     move-result-object v4
 
-    invoke-static {v3, v1, v4}, Landroidx/lifecycle/SavedStateHandleController;->b(Landroidx/lifecycle/x;Landroidx/savedstate/a;Landroidx/lifecycle/f;)V
+    invoke-static {v3, v1, v4}, Landroidx/lifecycle/SavedStateHandleController;->b(Landroidx/lifecycle/w;Landroidx/savedstate/a;Landroidx/lifecycle/f;)V
 
     goto :goto_0
 
@@ -105,7 +104,7 @@
     :cond_0
     new-instance p1, Ljava/util/HashSet;
 
-    iget-object v0, v0, Landroidx/lifecycle/c0;->a:Ljava/util/HashMap;
+    iget-object v0, v0, Landroidx/lifecycle/y;->a:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -121,9 +120,7 @@
     if-nez p1, :cond_1
 
     .line 11
-    const-class p1, Landroidx/lifecycle/SavedStateHandleController$a;
-
-    invoke-virtual {v1, p1}, Landroidx/savedstate/a;->c(Ljava/lang/Class;)V
+    invoke-virtual {v1}, Landroidx/savedstate/a;->c()V
 
     :cond_1
     return-void

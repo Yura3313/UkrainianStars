@@ -173,7 +173,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -722,7 +721,6 @@
 .method public static encodeUrl([B)Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lokio/Base64;->URL_MAP:[B
 
     invoke-static {p0, v0}, Lokio/Base64;->encode([B[B)Ljava/lang/String;

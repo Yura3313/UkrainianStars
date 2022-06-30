@@ -1,42 +1,54 @@
 .class public interface abstract Lke/f;
 .super Ljava/lang/Object;
-.source "Functions.kt"
+.source "CoroutineContext.kt"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "<P1:",
-        "Ljava/lang/Object;",
-        "P2:",
-        "Ljava/lang/Object;",
-        "P3:",
-        "Ljava/lang/Object;",
-        "P4:",
-        "Ljava/lang/Object;",
-        "P5:",
-        "Ljava/lang/Object;",
-        "P6:",
-        "Ljava/lang/Object;",
-        "P7:",
-        "Ljava/lang/Object;",
-        "P8:",
-        "Ljava/lang/Object;",
-        "P9:",
-        "Ljava/lang/Object;",
-        "P10:",
-        "Ljava/lang/Object;",
-        "P11:",
-        "Ljava/lang/Object;",
-        "P12:",
-        "Ljava/lang/Object;",
-        "P13:",
-        "Ljava/lang/Object;",
-        "P14:",
-        "Ljava/lang/Object;",
-        "R:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
+        Lke/f$b;,
+        Lke/f$a;
     }
 .end annotation
+
+
+# virtual methods
+.method public abstract fold(Ljava/lang/Object;Lre/p;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<R:",
+            "Ljava/lang/Object;",
+            ">(TR;",
+            "Lre/p<",
+            "-TR;-",
+            "Lke/f$a;",
+            "+TR;>;)TR;"
+        }
+    .end annotation
+.end method
+
+.method public abstract get(Lke/f$b;)Lke/f$a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E::",
+            "Lke/f$a;",
+            ">(",
+            "Lke/f$b<",
+            "TE;>;)TE;"
+        }
+    .end annotation
+.end method
+
+.method public abstract minusKey(Lke/f$b;)Lke/f;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lke/f$b<",
+            "*>;)",
+            "Lke/f;"
+        }
+    .end annotation
+.end method
+
+.method public abstract plus(Lke/f;)Lke/f;
+.end method

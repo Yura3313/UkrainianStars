@@ -46,7 +46,7 @@
 .end method
 
 .method public constructor <init>(ILjava/util/List;)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -56,9 +56,10 @@
         }
     .end annotation
 
-    if-eqz p2, :cond_0
+    const-string v0, "elements"
 
-    .line 1
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lcom/kakao/sdk/partner/talk/model/Chats;->totalCount:I
@@ -66,16 +67,6 @@
     iput-object p2, p0, Lcom/kakao/sdk/partner/talk/model/Chats;->elements:Ljava/util/List;
 
     return-void
-
-    :cond_0
-    const-string p1, "elements"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public static synthetic copy$default(Lcom/kakao/sdk/partner/talk/model/Chats;ILjava/util/List;ILjava/lang/Object;)Lcom/kakao/sdk/partner/talk/model/Chats;
@@ -140,23 +131,15 @@
         }
     .end annotation
 
-    if-eqz p2, :cond_0
+    const-string v0, "elements"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/partner/talk/model/Chats;
 
     invoke-direct {v0, p1, p2}, Lcom/kakao/sdk/partner/talk/model/Chats;-><init>(ILjava/util/List;)V
 
     return-object v0
-
-    :cond_0
-    const-string p1, "elements"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
 .method public describeContents()I
@@ -202,7 +185,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/partner/talk/model/Chats;->elements:Ljava/util/List;
 
-    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -229,7 +212,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakao/sdk/partner/talk/model/Chats;->elements:Ljava/util/List;
 
     return-object v0
@@ -238,7 +220,6 @@
 .method public final getTotalCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakao/sdk/partner/talk/model/Chats;->totalCount:I
 
     return v0
@@ -275,10 +256,12 @@
 
     const-string v0, "Chats(totalCount="
 
+    .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
+    .line 2
     iget v1, p0, Lcom/kakao/sdk/partner/talk/model/Chats;->totalCount:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -291,7 +274,8 @@
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Lt6/b;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Ltb/a;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -301,7 +285,9 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    if-eqz p1, :cond_1
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget p2, p0, Lcom/kakao/sdk/partner/talk/model/Chats;->totalCount:I
 
@@ -340,20 +326,4 @@
 
     :cond_0
     return-void
-
-    :cond_1
-    const-string p1, "parcel"
-
-    .line 1
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    goto :goto_2
-
-    :goto_1
-    throw p1
-
-    :goto_2
-    goto :goto_1
 .end method

@@ -20,7 +20,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/viewpager/widget/RtlViewPager;Ly0/b;)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -29,7 +29,10 @@
         }
     .end annotation
 
-    .line 1
+    const-string v0, "adapter"
+
+    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     iput-object p1, p0, Landroidx/viewpager/widget/RtlViewPager$a;->d:Landroidx/viewpager/widget/RtlViewPager;
 
     invoke-direct {p0, p2}, Ly0/a;-><init>(Ly0/b;)V
@@ -39,22 +42,24 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;ILjava/lang/Object;)V
+.method public final a(Landroid/view/View;ILjava/lang/Object;)V
     .locals 2
 
-    const/4 v0, 0x0
+    const-string v0, "container"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p3, :cond_1
+    const-string v0, "object"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$a;->d:Landroidx/viewpager/widget/RtlViewPager;
 
-    sget v1, Landroidx/viewpager/widget/RtlViewPager;->r0:I
+    sget v1, Landroidx/viewpager/widget/RtlViewPager;->q0:I
 
     .line 2
-    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->E()Z
+    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->F()Z
 
     move-result v0
 
@@ -76,35 +81,26 @@
     invoke-virtual {v0, p1, p2, p3}, Ly0/b;->a(Landroid/view/View;ILjava/lang/Object;)V
 
     return-void
-
-    :cond_1
-    const-string p1, "object"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "container"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public b(Landroid/view/ViewGroup;ILjava/lang/Object;)V
+.method public final b(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 2
 
-    if-eqz p3, :cond_1
+    const-string v0, "container"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "object"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$a;->d:Landroidx/viewpager/widget/RtlViewPager;
 
-    sget v1, Landroidx/viewpager/widget/RtlViewPager;->r0:I
+    sget v1, Landroidx/viewpager/widget/RtlViewPager;->q0:I
 
     .line 2
-    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->E()Z
+    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->F()Z
 
     move-result v0
 
@@ -126,22 +122,14 @@
     invoke-virtual {v0, p1, p2, p3}, Ly0/b;->b(Landroid/view/ViewGroup;ILjava/lang/Object;)V
 
     return-void
-
-    :cond_1
-    const-string p1, "object"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public f(Ljava/lang/Object;)I
+.method public final f(Ljava/lang/Object;)I
     .locals 2
 
-    if-eqz p1, :cond_3
+    const-string v0, "object"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1}, Ly0/a;->f(Ljava/lang/Object;)I
@@ -151,10 +139,10 @@
     .line 2
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$a;->d:Landroidx/viewpager/widget/RtlViewPager;
 
-    sget v1, Landroidx/viewpager/widget/RtlViewPager;->r0:I
+    sget v1, Landroidx/viewpager/widget/RtlViewPager;->q0:I
 
     .line 3
-    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->E()Z
+    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->F()Z
 
     move-result v0
 
@@ -189,28 +177,18 @@
     :cond_2
     :goto_1
     return p1
-
-    :cond_3
-    const-string p1, "object"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public g(I)Ljava/lang/CharSequence;
+.method public final g(I)Ljava/lang/CharSequence;
     .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$a;->d:Landroidx/viewpager/widget/RtlViewPager;
 
-    sget v1, Landroidx/viewpager/widget/RtlViewPager;->r0:I
+    sget v1, Landroidx/viewpager/widget/RtlViewPager;->q0:I
 
     .line 2
-    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->E()Z
+    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->F()Z
 
     move-result v0
 
@@ -236,16 +214,16 @@
     return-object p1
 .end method
 
-.method public h(I)F
+.method public final h(I)F
     .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$a;->d:Landroidx/viewpager/widget/RtlViewPager;
 
-    sget v1, Landroidx/viewpager/widget/RtlViewPager;->r0:I
+    sget v1, Landroidx/viewpager/widget/RtlViewPager;->q0:I
 
     .line 2
-    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->E()Z
+    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->F()Z
 
     move-result v0
 
@@ -271,18 +249,20 @@
     return p1
 .end method
 
-.method public i(Landroid/view/View;I)Ljava/lang/Object;
+.method public final i(Landroid/view/View;I)Ljava/lang/Object;
     .locals 2
 
-    if-eqz p1, :cond_1
+    const-string v0, "container"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$a;->d:Landroidx/viewpager/widget/RtlViewPager;
 
-    sget v1, Landroidx/viewpager/widget/RtlViewPager;->r0:I
+    sget v1, Landroidx/viewpager/widget/RtlViewPager;->q0:I
 
     .line 2
-    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->E()Z
+    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->F()Z
 
     move-result v0
 
@@ -307,31 +287,25 @@
 
     const-string p2, "delegate.instantiateItem(container, position)"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
-
-    :cond_1
-    const-string p1, "container"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method
 
-.method public j(Landroid/view/ViewGroup;I)Ljava/lang/Object;
+.method public final j(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 2
+
+    const-string v0, "container"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$a;->d:Landroidx/viewpager/widget/RtlViewPager;
 
-    sget v1, Landroidx/viewpager/widget/RtlViewPager;->r0:I
+    sget v1, Landroidx/viewpager/widget/RtlViewPager;->q0:I
 
     .line 2
-    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->E()Z
+    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->F()Z
 
     move-result v0
 
@@ -356,27 +330,29 @@
 
     const-string p2, "delegate.instantiateItem(container, position)"
 
-    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method
 
-.method public p(Landroid/view/View;ILjava/lang/Object;)V
+.method public final p(Landroid/view/View;ILjava/lang/Object;)V
     .locals 2
 
-    const/4 v0, 0x0
+    const-string v0, "container"
 
-    if-eqz p1, :cond_2
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p3, :cond_1
+    const-string v0, "object"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$a;->d:Landroidx/viewpager/widget/RtlViewPager;
 
-    sget v1, Landroidx/viewpager/widget/RtlViewPager;->r0:I
+    sget v1, Landroidx/viewpager/widget/RtlViewPager;->q0:I
 
     .line 2
-    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->E()Z
+    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->F()Z
 
     move-result v0
 
@@ -398,35 +374,26 @@
     invoke-virtual {v0, p1, p2, p3}, Ly0/b;->p(Landroid/view/View;ILjava/lang/Object;)V
 
     return-void
-
-    :cond_1
-    const-string p1, "object"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "container"
-
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public q(Landroid/view/ViewGroup;ILjava/lang/Object;)V
+.method public final q(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 2
 
-    if-eqz p3, :cond_1
+    const-string v0, "container"
+
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "object"
+
+    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$a;->d:Landroidx/viewpager/widget/RtlViewPager;
 
-    sget v1, Landroidx/viewpager/widget/RtlViewPager;->r0:I
+    sget v1, Landroidx/viewpager/widget/RtlViewPager;->q0:I
 
     .line 2
-    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->E()Z
+    invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->F()Z
 
     move-result v0
 
@@ -448,14 +415,4 @@
     invoke-virtual {v0, p1, p2, p3}, Ly0/b;->q(Landroid/view/ViewGroup;ILjava/lang/Object;)V
 
     return-void
-
-    :cond_1
-    const-string p1, "object"
-
-    .line 5
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

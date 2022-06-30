@@ -1,6 +1,6 @@
-.class public Lo/t$d;
+.class public final Lo/t$d;
 .super Lo/t;
-.source "TimeCycleSplineSet.java"
+.source "SplineSet.java"
 
 
 # annotations
@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lo/t;-><init>()V
 
     return-void
@@ -26,11 +25,8 @@
 
 
 # virtual methods
-.method public d(Landroid/view/View;FJLo/e;)Z
+.method public final d(Landroid/view/View;F)V
     .locals 0
 
-    .line 1
-    iget-boolean p1, p0, Lo/t;->h:Z
-
-    return p1
+    return-void
 .end method

@@ -4,29 +4,20 @@
 
 
 # instance fields
-.field public final g:I
+.field public final f:I
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;I)V
-    .locals 0
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const-string v0, "message"
 
-    .line 1
+    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-    iput p2, p0, Lcom/supercell/id/api/ApiServerException;->g:I
+    iput p2, p0, Lcom/supercell/id/api/ApiServerException;->f:I
 
     return-void
-
-    :cond_0
-    const-string p1, "message"
-
-    .line 2
-    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

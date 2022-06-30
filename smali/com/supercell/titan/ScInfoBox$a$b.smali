@@ -1,4 +1,4 @@
-.class public Lcom/supercell/titan/ScInfoBox$a$b;
+.class public final Lcom/supercell/titan/ScInfoBox$a$b;
 .super Ljava/lang/Object;
 .source "ScInfoBox.java"
 
@@ -25,7 +25,6 @@
 .method public constructor <init>(Lcom/supercell/titan/ScInfoBox$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/supercell/titan/ScInfoBox$a$b;->a:Lcom/supercell/titan/ScInfoBox$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,20 +34,19 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;)V
+.method public final a(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/supercell/titan/ScInfoBox$a$b;->a:Lcom/supercell/titan/ScInfoBox$a;
 
-    iget-object p1, p1, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
+    iget-object p1, p1, Lcom/supercell/titan/ScInfoBox$a;->g:Lcom/supercell/titan/ScInfoBox;
 
     invoke-virtual {p1}, Lcom/supercell/titan/ScInfoBox;->dismiss()V
 
     return-void
 .end method
 
-.method public b(I)V
+.method public final b(I)V
     .locals 0
 
     return-void

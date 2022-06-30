@@ -22,11 +22,11 @@
 
 .field public i:D
 
-.field public final j:Ll0/b$h;
+.field public final j:Ll0/b$g;
 
 
 # direct methods
-.method public constructor <init>(F)V
+.method public constructor <init>()V
     .locals 2
 
     .line 1
@@ -51,21 +51,18 @@
     .line 4
     iput-boolean v0, p0, Ll0/e;->c:Z
 
-    const-wide v0, 0x7fefffffffffffffL    # Double.MAX_VALUE
-
     .line 5
-    iput-wide v0, p0, Ll0/e;->i:D
+    new-instance v0, Ll0/b$g;
+
+    invoke-direct {v0}, Ll0/b$g;-><init>()V
+
+    iput-object v0, p0, Ll0/e;->j:Ll0/b$g;
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    float-to-double v0, v0
 
     .line 6
-    new-instance v0, Ll0/b$h;
-
-    invoke-direct {v0}, Ll0/b$h;-><init>()V
-
-    iput-object v0, p0, Ll0/e;->j:Ll0/b$h;
-
-    float-to-double v0, p1
-
-    .line 7
     iput-wide v0, p0, Ll0/e;->i:D
 
     return-void
@@ -73,7 +70,7 @@
 
 
 # virtual methods
-.method public a(F)Ll0/e;
+.method public final a(F)Ll0/e;
     .locals 2
 
     const/4 v0, 0x0
@@ -105,7 +102,7 @@
     throw p1
 .end method
 
-.method public b(F)Ll0/e;
+.method public final b(F)Ll0/e;
     .locals 2
 
     const/4 v0, 0x0
@@ -141,7 +138,7 @@
     throw p1
 .end method
 
-.method public c(DDJ)Ll0/b$h;
+.method public final c(DDJ)Ll0/b$g;
     .locals 16
 
     move-object/from16 v0, p0
@@ -534,7 +531,7 @@
 
     .line 30
     :goto_2
-    iget-object v1, v0, Ll0/e;->j:Ll0/b$h;
+    iget-object v1, v0, Ll0/e;->j:Ll0/b$g;
 
     iget-wide v5, v0, Ll0/e;->i:D
 
@@ -542,12 +539,12 @@
 
     double-to-float v2, v12
 
-    iput v2, v1, Ll0/b$h;->a:F
+    iput v2, v1, Ll0/b$g;->a:F
 
     double-to-float v2, v3
 
     .line 31
-    iput v2, v1, Ll0/b$h;->b:F
+    iput v2, v1, Ll0/b$g;->b:F
 
     return-object v1
 

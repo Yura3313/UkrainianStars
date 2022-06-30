@@ -30,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,8 +37,8 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 7
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
     const-class v0, Lcom/google/android/material/datepicker/Month;
@@ -52,71 +51,58 @@
 
     move-result-object v0
 
-    move-object v2, v0
+    check-cast v0, Lcom/google/android/material/datepicker/Month;
+
+    .line 2
+    const-class v1, Lcom/google/android/material/datepicker/Month;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/android/material/datepicker/Month;
+
+    .line 3
+    const-class v2, Lcom/google/android/material/datepicker/Month;
+
+    invoke-virtual {v2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v2}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    move-result-object v2
 
     check-cast v2, Lcom/google/android/material/datepicker/Month;
 
-    .line 2
-    const-class v0, Lcom/google/android/material/datepicker/Month;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
-
-    move-result-object v0
-
-    move-object v3, v0
-
-    check-cast v3, Lcom/google/android/material/datepicker/Month;
-
-    .line 3
-    const-class v0, Lcom/google/android/material/datepicker/Month;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
-
-    move-result-object v0
-
-    move-object v4, v0
-
-    check-cast v4, Lcom/google/android/material/datepicker/Month;
-
     .line 4
-    const-class v0, Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
+    const-class v3, Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+    invoke-virtual {v3}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+    invoke-virtual {p1, v3}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
 
     move-result-object p1
 
-    move-object v5, p1
-
-    check-cast v5, Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
+    check-cast p1, Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
     .line 5
-    new-instance p1, Lcom/google/android/material/datepicker/CalendarConstraints;
+    new-instance v3, Lcom/google/android/material/datepicker/CalendarConstraints;
 
-    const/4 v6, 0x0
+    invoke-direct {v3, v0, v1, v2, p1}, Lcom/google/android/material/datepicker/CalendarConstraints;-><init>(Lcom/google/android/material/datepicker/Month;Lcom/google/android/material/datepicker/Month;Lcom/google/android/material/datepicker/Month;Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;)V
 
-    move-object v1, p1
-
-    invoke-direct/range {v1 .. v6}, Lcom/google/android/material/datepicker/CalendarConstraints;-><init>(Lcom/google/android/material/datepicker/Month;Lcom/google/android/material/datepicker/Month;Lcom/google/android/material/datepicker/Month;Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;Lcom/google/android/material/datepicker/CalendarConstraints$a;)V
-
-    return-object p1
+    return-object v3
 .end method
 
-.method public newArray(I)[Ljava/lang/Object;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Lcom/google/android/material/datepicker/CalendarConstraints;
 
     return-object p1

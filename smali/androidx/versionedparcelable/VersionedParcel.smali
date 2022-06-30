@@ -331,7 +331,7 @@
 .method public abstract j()I
 .end method
 
-.method public k(II)I
+.method public final k(II)I
     .locals 0
 
     .line 1
@@ -362,7 +362,7 @@
     .end annotation
 .end method
 
-.method public m(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
+.method public final m(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -393,7 +393,7 @@
 .method public abstract n()Ljava/lang/String;
 .end method
 
-.method public o()Lx0/b;
+.method public final o()Lx0/b;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -531,13 +531,37 @@
 .method public abstract t(I)V
 .end method
 
-.method public abstract u(Landroid/os/Parcelable;)V
+.method public final u(II)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p2}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
+
+    .line 2
+    invoke-virtual {p0, p1}, Landroidx/versionedparcelable/VersionedParcel;->t(I)V
+
+    return-void
 .end method
 
-.method public abstract v(Ljava/lang/String;)V
+.method public abstract v(Landroid/os/Parcelable;)V
 .end method
 
-.method public w(Lx0/b;)V
+.method public final w(Landroid/os/Parcelable;I)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p2}, Landroidx/versionedparcelable/VersionedParcel;->p(I)V
+
+    .line 2
+    invoke-virtual {p0, p1}, Landroidx/versionedparcelable/VersionedParcel;->v(Landroid/os/Parcelable;)V
+
+    return-void
+.end method
+
+.method public abstract x(Ljava/lang/String;)V
+.end method
+
+.method public final y(Lx0/b;)V
     .locals 5
 
     const/4 v0, 0x0
@@ -545,7 +569,7 @@
     if-nez p1, :cond_0
 
     .line 1
-    invoke-virtual {p0, v0}, Landroidx/versionedparcelable/VersionedParcel;->v(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Landroidx/versionedparcelable/VersionedParcel;->x(Ljava/lang/String;)V
 
     return-void
 
@@ -567,7 +591,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroidx/versionedparcelable/VersionedParcel;->v(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Landroidx/versionedparcelable/VersionedParcel;->x(Ljava/lang/String;)V
 
     .line 4
     invoke-virtual {p0}, Landroidx/versionedparcelable/VersionedParcel;->b()Landroidx/versionedparcelable/VersionedParcel;

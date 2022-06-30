@@ -46,7 +46,6 @@
 .method public getPassword()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/transport/ProxyAuthenticator;->password:Ljava/lang/String;
 
     return-object v0
@@ -88,7 +87,6 @@
 .method public getUser()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/sentry/transport/ProxyAuthenticator;->user:Ljava/lang/String;
 
     return-object v0

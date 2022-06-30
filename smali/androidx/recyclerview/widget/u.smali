@@ -5,19 +5,16 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView$m;)V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, p1, v0}, Landroidx/recyclerview/widget/v;-><init>(Landroidx/recyclerview/widget/RecyclerView$m;Landroidx/recyclerview/widget/t;)V
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/v;-><init>(Landroidx/recyclerview/widget/RecyclerView$m;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b(Landroid/view/View;)I
+.method public final b(Landroid/view/View;)I
     .locals 2
 
     .line 1
@@ -41,8 +38,8 @@
     return p1
 .end method
 
-.method public c(Landroid/view/View;)I
-    .locals 2
+.method public final c(Landroid/view/View;)I
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -54,10 +51,31 @@
     .line 2
     iget-object v1, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
 
-    invoke-virtual {v1, p1}, Landroidx/recyclerview/widget/RecyclerView$m;->D(Landroid/view/View;)I
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 3
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
+
+    iget-object v1, v1, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->b:Landroid/graphics/Rect;
+
+    .line 4
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result p1
 
+    iget v2, v1, Landroid/graphics/Rect;->top:I
+
+    add-int/2addr p1, v2
+
+    iget v1, v1, Landroid/graphics/Rect;->bottom:I
+
+    add-int/2addr p1, v1
+
+    .line 5
     iget v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     add-int/2addr p1, v1
@@ -69,7 +87,56 @@
     return p1
 .end method
 
-.method public d(Landroid/view/View;)I
+.method public final d(Landroid/view/View;)I
+    .locals 3
+
+    .line 1
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
+
+    .line 2
+    iget-object v1, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
+
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 3
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
+
+    iget-object v1, v1, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->b:Landroid/graphics/Rect;
+
+    .line 4
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result p1
+
+    iget v2, v1, Landroid/graphics/Rect;->left:I
+
+    add-int/2addr p1, v2
+
+    iget v1, v1, Landroid/graphics/Rect;->right:I
+
+    add-int/2addr p1, v1
+
+    .line 5
+    iget v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
+
+    add-int/2addr p1, v1
+
+    iget v0, v0, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
+
+    add-int/2addr p1, v0
+
+    return p1
+.end method
+
+.method public final e(Landroid/view/View;)I
     .locals 2
 
     .line 1
@@ -86,34 +153,6 @@
 
     move-result p1
 
-    iget v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
-
-    add-int/2addr p1, v1
-
-    iget v0, v0, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
-
-    add-int/2addr p1, v0
-
-    return p1
-.end method
-
-.method public e(Landroid/view/View;)I
-    .locals 2
-
-    .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
-
-    .line 2
-    iget-object v1, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
-
-    invoke-virtual {v1, p1}, Landroidx/recyclerview/widget/RecyclerView$m;->G(Landroid/view/View;)I
-
-    move-result p1
-
     iget v0, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     sub-int/2addr p1, v0
@@ -121,7 +160,50 @@
     return p1
 .end method
 
-.method public f()I
+.method public final f()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
+
+    .line 2
+    iget v0, v0, Landroidx/recyclerview/widget/RecyclerView$m;->q:I
+
+    return v0
+.end method
+
+.method public final g()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
+
+    .line 2
+    iget v1, v0, Landroidx/recyclerview/widget/RecyclerView$m;->q:I
+
+    .line 3
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->K()I
+
+    move-result v0
+
+    sub-int/2addr v1, v0
+
+    return v1
+.end method
+
+.method public final h()I
+    .locals 1
+
+    iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
+
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->K()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final i()I
     .locals 1
 
     .line 1
@@ -133,86 +215,41 @@
     return v0
 .end method
 
-.method public g()I
+.method public final j()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
+
+    .line 2
+    iget v0, v0, Landroidx/recyclerview/widget/RecyclerView$m;->n:I
+
+    return v0
+.end method
+
+.method public final k()I
+    .locals 1
+
+    iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
+
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->N()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final l()I
     .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
 
     .line 2
-    iget v1, v0, Landroidx/recyclerview/widget/RecyclerView$m;->o:I
+    iget v1, v0, Landroidx/recyclerview/widget/RecyclerView$m;->q:I
 
     .line 3
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->M()I
-
-    move-result v0
-
-    sub-int/2addr v1, v0
-
-    return v1
-.end method
-
-.method public h()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->M()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public i()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
-
-    .line 2
-    iget v0, v0, Landroidx/recyclerview/widget/RecyclerView$m;->m:I
-
-    return v0
-.end method
-
-.method public j()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
-
-    .line 2
-    iget v0, v0, Landroidx/recyclerview/widget/RecyclerView$m;->l:I
-
-    return v0
-.end method
-
-.method public k()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->P()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public l()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
-
-    .line 2
-    iget v1, v0, Landroidx/recyclerview/widget/RecyclerView$m;->o:I
-
-    .line 3
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->P()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->N()I
 
     move-result v0
 
@@ -221,7 +258,7 @@
     iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
 
     .line 4
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->M()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$m;->K()I
 
     move-result v0
 
@@ -230,17 +267,15 @@
     return v1
 .end method
 
-.method public n(Landroid/view/View;)I
-    .locals 3
+.method public final n(Landroid/view/View;)I
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
 
     iget-object v1, p0, Landroidx/recyclerview/widget/v;->c:Landroid/graphics/Rect;
 
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, p1, v2, v1}, Landroidx/recyclerview/widget/RecyclerView$m;->T(Landroid/view/View;ZLandroid/graphics/Rect;)V
+    invoke-virtual {v0, p1, v1}, Landroidx/recyclerview/widget/RecyclerView$m;->R(Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 2
     iget-object p1, p0, Landroidx/recyclerview/widget/v;->c:Landroid/graphics/Rect;
@@ -250,17 +285,15 @@
     return p1
 .end method
 
-.method public o(Landroid/view/View;)I
-    .locals 3
+.method public final o(Landroid/view/View;)I
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
 
     iget-object v1, p0, Landroidx/recyclerview/widget/v;->c:Landroid/graphics/Rect;
 
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, p1, v2, v1}, Landroidx/recyclerview/widget/RecyclerView$m;->T(Landroid/view/View;ZLandroid/graphics/Rect;)V
+    invoke-virtual {v0, p1, v1}, Landroidx/recyclerview/widget/RecyclerView$m;->R(Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 2
     iget-object p1, p0, Landroidx/recyclerview/widget/v;->c:Landroid/graphics/Rect;
@@ -270,13 +303,12 @@
     return p1
 .end method
 
-.method public p(I)V
+.method public final p(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/v;->a:Landroidx/recyclerview/widget/RecyclerView$m;
 
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$m;->Y(I)V
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$m;->W(I)V
 
     return-void
 .end method

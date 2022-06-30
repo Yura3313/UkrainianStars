@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field public final g:Landroid/view/View;
+.field public final f:Landroid/view/View;
 
-.field public h:Landroid/view/ViewTreeObserver;
+.field public g:Landroid/view/ViewTreeObserver;
 
-.field public final i:Ljava/lang/Runnable;
+.field public final h:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -23,17 +23,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lf0/o;->g:Landroid/view/View;
+    iput-object p1, p0, Lf0/o;->f:Landroid/view/View;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object p1
 
-    iput-object p1, p0, Lf0/o;->h:Landroid/view/ViewTreeObserver;
+    iput-object p1, p0, Lf0/o;->g:Landroid/view/ViewTreeObserver;
 
     .line 4
-    iput-object p2, p0, Lf0/o;->i:Ljava/lang/Runnable;
+    iput-object p2, p0, Lf0/o;->h:Ljava/lang/Runnable;
 
     return-void
 .end method
@@ -41,7 +41,9 @@
 .method public static a(Landroid/view/View;Ljava/lang/Runnable;)Lf0/o;
     .locals 1
 
-    if-eqz p0, :cond_0
+    if-eqz p0, :cond_1
+
+    if-eqz p1, :cond_0
 
     .line 1
     new-instance v0, Lf0/o;
@@ -64,6 +66,16 @@
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
+    const-string p1, "runnable == null"
+
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 5
+    :cond_1
+    new-instance p0, Ljava/lang/NullPointerException;
+
     const-string p1, "view == null"
 
     invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
@@ -73,11 +85,11 @@
 
 
 # virtual methods
-.method public b()V
+.method public final b()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lf0/o;->h:Landroid/view/ViewTreeObserver;
+    iget-object v0, p0, Lf0/o;->g:Landroid/view/ViewTreeObserver;
 
     invoke-virtual {v0}, Landroid/view/ViewTreeObserver;->isAlive()Z
 
@@ -86,7 +98,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lf0/o;->h:Landroid/view/ViewTreeObserver;
+    iget-object v0, p0, Lf0/o;->g:Landroid/view/ViewTreeObserver;
 
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
@@ -94,7 +106,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lf0/o;->g:Landroid/view/View;
+    iget-object v0, p0, Lf0/o;->f:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
@@ -104,21 +116,21 @@
 
     .line 4
     :goto_0
-    iget-object v0, p0, Lf0/o;->g:Landroid/view/View;
+    iget-object v0, p0, Lf0/o;->f:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 
     return-void
 .end method
 
-.method public onPreDraw()Z
+.method public final onPreDraw()Z
     .locals 1
 
     .line 1
     invoke-virtual {p0}, Lf0/o;->b()V
 
     .line 2
-    iget-object v0, p0, Lf0/o;->i:Ljava/lang/Runnable;
+    iget-object v0, p0, Lf0/o;->h:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
@@ -127,23 +139,21 @@
     return v0
 .end method
 
-.method public onViewAttachedToWindow(Landroid/view/View;)V
+.method public final onViewAttachedToWindow(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object p1
 
-    iput-object p1, p0, Lf0/o;->h:Landroid/view/ViewTreeObserver;
+    iput-object p1, p0, Lf0/o;->g:Landroid/view/ViewTreeObserver;
 
     return-void
 .end method
 
-.method public onViewDetachedFromWindow(Landroid/view/View;)V
+.method public final onViewDetachedFromWindow(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lf0/o;->b()V
 
     return-void

@@ -1,4 +1,4 @@
-.class public Lm/a;
+.class public final Lm/a;
 .super Lm/g;
 .source "ArrayMap.java"
 
@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field public n:Lm/f;
+.field public m:Lm/a$a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lm/f<",
@@ -63,7 +63,7 @@
 
 
 # virtual methods
-.method public entrySet()Ljava/util/Set;
+.method public final entrySet()Ljava/util/Set;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -98,7 +98,7 @@
     return-object v0
 .end method
 
-.method public keySet()Ljava/util/Set;
+.method public final keySet()Ljava/util/Set;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -143,7 +143,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lm/a;->n:Lm/f;
+    iget-object v0, p0, Lm/a;->m:Lm/a$a;
 
     if-nez v0, :cond_0
 
@@ -152,16 +152,16 @@
 
     invoke-direct {v0, p0}, Lm/a$a;-><init>(Lm/a;)V
 
-    iput-object v0, p0, Lm/a;->n:Lm/f;
+    iput-object v0, p0, Lm/a;->m:Lm/a$a;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lm/a;->n:Lm/f;
+    iget-object v0, p0, Lm/a;->m:Lm/a$a;
 
     return-object v0
 .end method
 
-.method public putAll(Ljava/util/Map;)V
+.method public final putAll(Ljava/util/Map;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -172,7 +172,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lm/g;->i:I
+    iget v0, p0, Lm/g;->h:I
 
     invoke-interface {p1}, Ljava/util/Map;->size()I
 
@@ -221,7 +221,7 @@
     return-void
 .end method
 
-.method public values()Ljava/util/Collection;
+.method public final values()Ljava/util/Collection;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {

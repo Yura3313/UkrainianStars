@@ -76,7 +76,6 @@
 .method public getMaxCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/KGMessage$KGMessageResponse;->maxCount:I
 
     return v0
@@ -93,7 +92,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/KGMessage$KGMessageResponse;->messages:Ljava/util/List;
 
     return-object v0
@@ -102,7 +100,6 @@
 .method public getNextPageKey()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/kakaogame/KGMessage$KGMessageResponse;->nextPageKey:J
 
     return-wide v0
@@ -111,7 +108,6 @@
 .method public getTotalCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/kakaogame/KGMessage$KGMessageResponse;->totalCount:I
 
     return v0

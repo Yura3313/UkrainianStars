@@ -537,7 +537,6 @@
 .method public boundary()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/MultipartBody;->boundary:Lokio/ByteString;
 
     invoke-virtual {v0}, Lokio/ByteString;->utf8()Ljava/lang/String;
@@ -584,7 +583,6 @@
 .method public contentType()Lokhttp3/MediaType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/MultipartBody;->contentType:Lokhttp3/MediaType;
 
     return-object v0
@@ -593,7 +591,6 @@
 .method public part(I)Lokhttp3/MultipartBody$Part;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/MultipartBody;->parts:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -616,7 +613,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/MultipartBody;->parts:Ljava/util/List;
 
     return-object v0
@@ -625,7 +621,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/MultipartBody;->parts:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -638,7 +633,6 @@
 .method public type()Lokhttp3/MediaType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/MultipartBody;->originalType:Lokhttp3/MediaType;
 
     return-object v0
@@ -654,7 +648,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lokhttp3/MultipartBody;->writeOrCountBytes(Lokio/BufferedSink;Z)J
 
     return-void

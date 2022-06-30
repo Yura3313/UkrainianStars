@@ -15,30 +15,26 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/model/MyProfileImage$Empty;
+.field public static final f:Lcom/supercell/id/model/MyProfileImage$Empty;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/supercell/id/model/MyProfileImage$Empty;
 
     invoke-direct {v0}, Lcom/supercell/id/model/MyProfileImage$Empty;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/model/MyProfileImage$Empty;->g:Lcom/supercell/id/model/MyProfileImage$Empty;
+    sput-object v0, Lcom/supercell/id/model/MyProfileImage$Empty;->f:Lcom/supercell/id/model/MyProfileImage$Empty;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, v0}, Lcom/supercell/id/model/MyProfileImage;-><init>(Lle/g;)V
+    invoke-direct {p0}, Lcom/supercell/id/model/MyProfileImage;-><init>()V
 
     return-void
 .end method

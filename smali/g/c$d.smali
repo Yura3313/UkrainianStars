@@ -1,4 +1,4 @@
-.class public Lg/c$d;
+.class public final Lg/c$d;
 .super Ljava/lang/Object;
 .source "MenuItemWrapperICS.java"
 
@@ -40,10 +40,9 @@
 
 
 # virtual methods
-.method public onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
+.method public final onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lg/c$d;->a:Landroid/view/MenuItem$OnActionExpandListener;
 
     iget-object v1, p0, Lg/c$d;->b:Lg/c;
@@ -59,10 +58,9 @@
     return p1
 .end method
 
-.method public onMenuItemActionExpand(Landroid/view/MenuItem;)Z
+.method public final onMenuItemActionExpand(Landroid/view/MenuItem;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lg/c$d;->a:Landroid/view/MenuItem$OnActionExpandListener;
 
     iget-object v1, p0, Lg/c$d;->b:Lg/c;

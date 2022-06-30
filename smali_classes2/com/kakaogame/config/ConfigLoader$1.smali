@@ -27,7 +27,6 @@
 .method public constructor <init>(Landroid/app/Activity;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/config/ConfigLoader$1;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/config/ConfigLoader$1;->val$showData:Ljava/lang/String;
@@ -47,10 +46,12 @@
 
     const-string v1, "Change Local Config: "
 
+    .line 2
     invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
+    .line 3
     iget-object v2, p0, Lcom/kakaogame/config/ConfigLoader$1;->val$showData:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -69,10 +70,10 @@
 
     const/4 v2, 0x0
 
-    .line 2
+    .line 4
     invoke-virtual {v0, v1, v2, v2}, Landroid/widget/Toast;->setGravity(III)V
 
-    .line 3
+    .line 5
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     return-void

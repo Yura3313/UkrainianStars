@@ -1,41 +1,56 @@
-.class public Lj1/g;
-.super Lj1/c;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.class public final Lj1/g;
+.super Landroid/widget/RelativeLayout;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
-.end annotation
+# instance fields
+.field public f:Lk3/pb;
+
+.field public g:Z
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;ZLandroid/location/Location;IILjava/lang/String;Lcom/google/android/gms/ads/f;Ljava/lang/String;)V
-    .locals 11
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v3, p3
-
-    move-object v4, p4
-
-    move/from16 v5, p5
-
-    move-object/from16 v6, p6
-
-    move/from16 v7, p7
-
-    move/from16 v8, p8
-
-    move-object/from16 v9, p9
-
-    move-object/from16 v10, p11
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
 
     .line 1
-    invoke-direct/range {v0 .. v10}, Lj1/c;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;ZLandroid/location/Location;IILjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
+
+    .line 2
+    new-instance v0, Lk3/pb;
+
+    .line 3
+    invoke-direct {v0, p1}, Lk3/pb;-><init>(Landroid/content/Context;)V
+
+    .line 4
+    iput-object p2, v0, Lk3/pb;->b:Ljava/lang/String;
+
+    .line 5
+    iput-object v0, p0, Lj1/g;->f:Lk3/pb;
+
+    .line 6
+    iput-object p3, v0, Lk3/pb;->d:Ljava/lang/String;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lj1/g;->g:Z
+
+    if-nez v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lj1/g;->f:Lk3/pb;
+
+    invoke-virtual {v0, p1}, Lk3/pb;->c(Landroid/view/MotionEvent;)V
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
 .end method

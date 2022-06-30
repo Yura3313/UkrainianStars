@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Application;-><init>()V
 
     return-void
@@ -18,7 +17,6 @@
 .method public onCreate()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
 
     return-void

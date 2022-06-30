@@ -31,7 +31,6 @@
 .method public constructor <init>(Landroid/app/Activity;Lcom/kakaogame/auth/view/LoginUIManager$RequestType;Lcom/kakaogame/KGResultCallback;Lcom/kakaogame/util/MutexLock;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/kakaogame/auth/view/LoginUIManager$13;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/kakaogame/auth/view/LoginUIManager$13;->val$requestType:Lcom/kakaogame/auth/view/LoginUIManager$RequestType;
@@ -50,7 +49,6 @@
 .method public onSelectIdp(Ljava/lang/String;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/kakaogame/auth/view/LoginUIManager$13;->val$activity:Landroid/app/Activity;
 
     iget-object v1, p0, Lcom/kakaogame/auth/view/LoginUIManager$13;->val$requestType:Lcom/kakaogame/auth/view/LoginUIManager$RequestType;

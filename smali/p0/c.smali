@@ -1,4 +1,4 @@
-.class public Lp0/c;
+.class public final Lp0/c;
 .super Ljava/lang/Object;
 .source "AudioAttributesImplBase.java"
 
@@ -44,7 +44,7 @@
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 10
 
     .line 1
@@ -211,14 +211,13 @@
     .end packed-switch
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 3
 
     const/4 v0, 0x4
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget v1, p0, Lp0/c;->b:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -266,7 +265,7 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -314,7 +313,7 @@
     const-string v2, "unknown usage "
 
     .line 7
-    invoke-static {v2, v1}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v1}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 
