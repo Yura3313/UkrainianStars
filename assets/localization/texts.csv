@@ -49,11 +49,11 @@ TID_BRAWLPASS_PURCHASE_ERROR_5,Неможливо купити збір брав
 TID_BRAWLPASS_PURCHASE_ERROR_6,Не можна купити бравл пас з негативним балансом гемів
 TID_PURCHASE_BRAWL_PASS_PROGRESS_TITLE,Купити ячейку?
 TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,Купити <NUM> токенів щоб перейти на наступну ячейку бравл паса
-TID_PURCHASE_BRAWL_PASS_TITLE,ДІСТАТИ БРАВЛ ПАСС
+TID_PURCHASE_BRAWL_PASS_TITLE,КУПИТИ БРАВЛ ПАСС
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,БРАВЛ ПАСС
-TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,НАБІР БРАВЛ ПАССВ
+TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,НАБІР БРАВЛ ПАСС
 TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,Відкрий Бравл Пассні Нагороди додаткові нагороди та <NUM> перезаписування квестів
-TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,БРАВЛ ПАСС + <NUM> РІВЕНЬ
+TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,БРАВЛ ПАСС + <NUM> РІВЕНІВ
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,Минулий сезон Бравл пасса не можна купити
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,"Теперішний сезон Бравл Пасса не можна знайти, попробуте пізнше"
 TID_BRAWL_PASS_CANNOT_PURCHASE_ALREADY_UNLOCKED,Теперішній Бравл Пасс уже було відкрито
@@ -570,7 +570,7 @@ TID_TEAM_TEAMCODE,Код команди
 TID_TEAM_TEAMCODE_DESC,"Ваші друзі можуть отримати доступ до команди, використовуючи цей код"
 TID_TEAM_WAITING_FOR_PLAYER,Запросіть із кодом команди
 TID_TEAM_NO_MEMBER,БОТ
-TID_TEAM_NO_MEMBER_INVITE,ЗАПРОШУЄМО
+TID_TEAM_NO_MEMBER_INVITE,ЗАПРОСИТИ
 TID_TEAMCREATE_EVENT,Карта
 TID_TEAM_KICK,Кікнути
 TID_TEAM_PROFILE,Профіль
@@ -667,9 +667,9 @@ TID_HERO_INFO_ACCESSORIES_BLOCKED,Покращіть <HERONAME> за допом�
 TID_HERO_INFO_STAR_POWER_LABEL,ПАСІВКА: <NAME>
 TID_HERO_INFO_ACCESSORIES_LABEL,ГАДЖЕТ: <NAME>
 TID_HERO_INFO_ABILITY_DESC,<c<COLOR>><CAPTION></c>\n<BODY>
-TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Шанс отримати CHROMATIC Brawler збільшується з кожним сезоном Brawl Pass. Шанси починаються з ЛЕГЕНДАРНОГО, потім збільшуються до МІФІЧНОГО і, нарешті, стають ЕПІЧНИМИ.\n\nУ цьому сезоні шанс розблокувати <BRAWLER> – є <РІДКІСТЬ>."
-TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"Шанс отримати CHROMATIC Brawler збільшується з кожним сезоном Brawl Pass. Шанси починаються з ЛЕГЕНДАРНОГО, потім збільшуються до МІФІЧНОГО і нарешті стають ЕПІЧНИМИ.\n\nВи повинні досягти рівня <TIER> сезону <SEASON>, щоб зробити <BRAWLER> доступним у коробках."
-TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"Шанс отримати CHROMATIC Brawler збільшується з кожним сезоном Brawl Pass. Шанси починаються з ЛЕГЕНДАРНОГО, потім збільшуються до МІФІЧНОГО і, нарешті, стають ЕПІЧНИМИ.\n\n<BRAWLER> з’являється в сезоні <СЕЗОН>."
+TID_HERO_INFO_DYNAMIC_RARITY_INFO,"Шанс отримати хроматичного бравлера збільшується з кожним сезоном Бравл Пасс. Шанси починаються з ЛЕГЕНДАРНОГО, потім збільшуються до МІФІЧНОГО і, нарешті, стають ЕПІЧНИМИ.\n\nУ цьому сезоні шанс розблокувати <BRAWLER> – є <RARITY>."
+TID_HERO_INFO_DYNAMIC_RARITY_INFO_TIER,"Шанс отримати хроматичного бравлера збільшується з кожним сезоном Бравл Пассу. Шанси починаються з ЛЕГЕНДАРНОГО, потім збільшуються до МІФІЧНОГО і нарешті стають ЕПІЧНИМИ.\n\nВи повинні досягти рівня <TIER> сезону <SEASON>, щоб зробити <BRAWLER> доступним у коробках."
+TID_HERO_INFO_DYNAMIC_RARITY_INFO_TEASER,"Шанс отримати хроматичного бравлера збільшується з кожним сезоном Бравл пассу. Шанси починаються з ЛЕГЕНДАРНОГО, потім збільшуються до МІФІЧНОГО і, нарешті, стають ЕПІЧНИМИ.\n\n<BRAWLER> з’являється в сезоні <SEASON>."
 TID_MATCHMAKE_FAILED_5,Не вдалося знайти матч: термін дії події закінчився
 TID_MATCHMAKE_FAILED_7,Не вдалося знайти матч: учасник команди був відключений
 TID_MATCHMAKE_FAILED_9,Не вдалося знайти матч: розпочинається технічне обслуговування
@@ -829,12 +829,12 @@ TID_UNLOCK_SKIN_BUTTON_LABEL,Купити
 TID_HERO_LIST_TOTAL_TROPHIES,Всього трофеїв
 TID_TOP_TOOL_TIP_1,"<c00ccff>Токени</c> розблокують нагороди Brawl Pass.\n\nЗбирайте токени з квестів, нових подій і битв."
 TID_TOP_TOOL_TIP_3,"<c0ed12d>Кристали</c> використовуються для покупки Боксів, скінів та інших речей у Магазині.\n\nОтримайте кристали за нагороду Brawl Pass або купуйте в Магазині за гривні."
-TID_TOP_TOOL_TIP_2,<cff8E1b>Coins</c> are used to upgrade your Brawlers.\n\nFind Coins inside Brawl Boxes.
-TID_TOP_TOOL_TIP_4,<cff0000>Event Tickets</c> give you entry to Ticket Events.
-TID_TOP_TOOL_TIP_5,"<cff00ff>Star Points</c> are used to buy exclusive items from the Shop.\n\nEarn Star Points from the Trophy League, or when any Brawler reaches rank 10 and every five ranks after that!"
-TID_TOP_TOOL_TIP_6,<cff0000>Tickets</c> are used to play Club League Events
+TID_TOP_TOOL_TIP_2,<cff8E1b>Монети</c> використовуються для покращення ваших скандалістів.\n\nЗнайдіть монети в ящиках бійки.
+TID_TOP_TOOL_TIP_4,<cff0000>Квитки на події</c> дають вам доступ до квиткових подій.
+TID_TOP_TOOL_TIP_5,<cff00ff>Зіркові бали</c> використовуються для покупки ексклюзивних предметів у магазині.\n\nЗаробляйте зіркові бали в Трофейній лізі або коли будь-який бравлер досягає 10-го рангу та кожні п’ять рангів після цього!
+TID_TOP_TOOL_TIP_6,<cff0000>Квитки</c> використовуються для участі в турнірах клубної ліги
 TID_TOP_TOOL_TIP_8,<cff0000>Клубні монети</c> використовуються для покупки ексклюзивних предметів у магазині Клубної ліги.\n\nЗаробляйте клубні монети від Клубної ліги!
-TID_TOP_TOOL_TIP_9,<c3bb0f0>Scrap</c> is used to upgrade Gears
+TID_TOP_TOOL_TIP_9,<c3bb0f0>Металобрухт</c> використовується для покащення шестерней
 TID_GAME_MODE_0,ЗБІР КРИСТАЛІВ
 TID_GAME_MODE_0_DESC,"Збирайте дорогоцінні камені, які випливають з шахти дорогоцінних каменів у середині карти. Або просто заберіть їх у полеглих супротивників! Збережіть десять дорогоцінних каменів протягом зворотного відліку, щоб виграти гру!"
 TID_GAME_MODE_2,ПОГРАБУВАННЯ
@@ -2065,7 +2065,7 @@ TID_WANTED_9,Канал Гранде
 TID_HOOK,ДЖИН
 TID_STAR_KEY_INFO_EXTENSION,\n\nStar Tokens are used to open Big Boxes.
 TID_TEAM_OWNER_TEXT,<NAME>'s team
-TID_SPECTATE_AUTO,Automatic
+TID_SPECTATE_AUTO,Автоматичне
 TID_BATTLE_ROYALE_11,Переможний лук
 TID_FRIEND_POPOVER_INVITE,INVITE TO TEAM
 TID_TEAM_ERROR_ALREADY_IN_ROOM,Player is already in your team!
@@ -2162,21 +2162,21 @@ TID_RAID_BOSS_DIFFICULTY_19,Божевільний XVI
 TID_RAID_BOSS_DIFFICULTY_20,YOU GUYS ROCK!
 TID_MODES_NEW_EVENT,НОВА ПОДІЯ!
 TID_MODES_NEW_EVENTS,НОВІ ПОДІЇ!
-TID_TEAM_MEMBER_STATUS_NEW_0,<c999999>OFFLINE</c>
-TID_TEAM_MEMBER_STATUS_NEW_1,BATTLING
-TID_TEAM_MEMBER_STATUS_NEW_2,AWAY
+TID_TEAM_MEMBER_STATUS_NEW_0,<c999999>ОФЛАЙН</c>
+TID_TEAM_MEMBER_STATUS_NEW_1,БОРОТЬБА
+TID_TEAM_MEMBER_STATUS_NEW_2,ГЕТЬ
 TID_TEAM_MEMBER_STATUS_NEW_3,<EMPTY>
-TID_TEAM_MEMBER_STATUS_NEW_4,MATCHMAKE
-TID_TEAM_MEMBER_STATUS_NEW_5,END SCREEN
-TID_TEAM_MEMBER_STATUS_NEW_6,<c999999>OFFLINE</c>
-TID_TEAM_MEMBER_STATUS_NEW_7,SPECTATING
-TID_TEAM_MEMBER_STATUS_NEW_8,PRACTICING
-TID_TEAM_MEMBER_STATUS_NEW_9,TYPING...
-TID_TEAM_MEMBER_STATUS_NEW_10,CHOOSING BRAWLER
-TID_TEAM_MEMBER_STATUS_NEW_11,BROWSING EVENTS
-TID_TEAM_MEMBER_STATUS_NEW_12,LOOKING FOR A MEMBER
-TID_TEAM_MEMBER_STATUS_NEW_13,BROWSING QUESTS
-TID_TEAM_MEMBER_STATUS_NEW_READY,READY
+TID_TEAM_MEMBER_STATUS_NEW_4,СВАТИ
+TID_TEAM_MEMBER_STATUS_NEW_5,КІНЦЕВИЙ ЕКРАН
+TID_TEAM_MEMBER_STATUS_NEW_6,<c999999>ОФЛАЙН</c>
+TID_TEAM_MEMBER_STATUS_NEW_7,СПОГЛЯДУЮЧИЙ
+TID_TEAM_MEMBER_STATUS_NEW_8,ПРАКТИКА
+TID_TEAM_MEMBER_STATUS_NEW_9,ВВЕДЕННЯ...
+TID_TEAM_MEMBER_STATUS_NEW_10,ВИБІР БРАВЛЕР
+TID_TEAM_MEMBER_STATUS_NEW_11,ПЕРЕГЛЯД ПОДІЙ
+TID_TEAM_MEMBER_STATUS_NEW_12,ШУКАЄ ТЕММЕЙТІВ
+TID_TEAM_MEMBER_STATUS_NEW_13,ПЕРЕГЛЯДАЄ КВЕСТИ
+TID_TEAM_MEMBER_STATUS_NEW_READY,ГОТОВИЙ
 TID_BUTTON_SPECTATE,SPECTATE
 TID_NEW_EVENT_IN,Зміна через: <TIME>
 TID_NEW_EVENT_NOW,ДОСТУПНА НОВА ПОДІЯ!
@@ -2184,7 +2184,7 @@ TID_NEW_EVENT_ICON_PREFIX,Next:
 TID_NEW_EVENT_ICON_SUFFIX,Через <TIME>
 TID_SHOP_TITLE,МАГАЗИН
 TID_SELECT_EVENT_TITLE,ВИБЕРИ ПОДІЮ
-TID_HERO_LIST_LABEL_NEW,<c53C5F7><COUNT> БРАВЛЕРІВ ІЗ /<TOTAL></c>
+TID_HERO_LIST_LABEL_NEW,<c53C5F7><COUNT> БРАВЛЕРІВ ІЗ <TOTAL></c>
 TID_KEY_COUNTER,"Якщо ви самотні, поруч може з’явитися КОКТЕЙЛЬ. Візьміть його, щоб ненадовго підвищити шкоду та швидкість вашого бравлера!"
 TID_ONLINE_TAB_1,ONLINE PLAYERS
 TID_ONLINE_TAB_2,TEAM CHAT
@@ -2484,7 +2484,7 @@ TID_TEAMING_WARNING,<c99dd3333>ATTACK ENEMIES</c> or get hit by <c99dd3333>SUPER
 TID_FREE_NAME_CHANGE_INTRO_TEXT,"You only get one free name change. Use it wisely, as future name changes will cost you Gems."
 TID_PAID_NAME_CHANGE_INTRO_TEXT,"Use Gems to choose a new name?\nIf you pick an inappropriate name, we reserve the right to change it without refunding your Gems."
 TID_NAME_CHANGE_INTRO_TITLE,CHANGE NAME
-TID_NAME_CHANGE_ON_COOLDOWN,You need to wait another <time> to change your name again.
+TID_NAME_CHANGE_ON_COOLDOWN,Почекай <time> щоб змінити своє ім'я щераз
 TID_NAME_CHANGE_FREE,БЕЗПЛАТНО
 TID_PLAYER_YOU,ТИ
 TID_NEWS_TAB_NEWS,НОВИНИ
@@ -2892,7 +2892,7 @@ TID_SPEC_ABI_HEAL_SUPER_DMG_DESC,Emz recovers <c00cc00><VALUE1></c> health per s
 TID_FRIEND_ADD_YOUR_ID,Твоє ІД: <ID>
 TID_FRIEND_ADD_BUTTON,ADD\nFRIEND
 TID_FRIEND_ADD_BUTTON_SHORT,ADD
-TID_FRIEND_ADD_DEFAULT_TEXT,Enter Player ID
+TID_FRIEND_ADD_DEFAULT_TEXT,Введи ІД гравця
 TID_FRIEND_ADD_CODE_SENT,Friend request sent
 TID_FRIEND_ADD_CODE_INVALID,Invalid player id!
 TID_IAP_CYBER_WEEK_19_1,CYBER WEEK DEAL
@@ -3035,8 +3035,8 @@ TID_QUICK_MESSAGE_OOPS,Ой
 TID_QUICK_MESSAGE_SUGGEST_BRAWLER,Can you play as <c<COLOR>><NAME></c>?
 TID_QUICK_MESSAGE_SUGGEST_STARPOWER,Can you use <c<COLOR>><NAME></c>?
 TID_QUICK_MESSAGE_SUGGEST_MODE,Let's play <c<COLOR>><NAME></c>!
-TID_QUICK_MESSAGE_ASK_BRAWLER,Якого мені взяти бравлера
-TID_QUICK_MESSAGE_ASK_MODE,Який режим заграємо
+TID_QUICK_MESSAGE_ASK_BRAWLER,Якого бравлера мені взяти?
+TID_QUICK_MESSAGE_ASK_MODE,Який режим зіграємо?
 TID_PLAYER_CTX_SUGGEST_BRAWLER_SHORT,SUGGEST
 TID_PLAYER_CTX_SUGGEST_CANCEL,CANCEL SUGGESTION
 TID_SUGGEST_BRAWLER_TITLE_SHORT,SUGGEST A BRAWLER
@@ -3445,7 +3445,7 @@ TID_KAKAO_TEAM_INVITED_FAILED_MONTHLY_LIMIT,"Invite failed, monthly invite limit
 TID_KAKAO_TEAM_INVITED_FAILED_GENERIC,"Invite failed, please try again later!"
 TID_MUTE_FREE_TEXT_CHAT,Вимкнути текстовий чат
 TID_QUICK_MESSAGE_LETS_CHAT,Want to chat?
-TID_FAMILY_FRIENDLY,FAMILY FRIENDLY
+TID_FAMILY_FRIENDLY,ДРУЖНІЙ ДЛЯ СІМ'Ї
 TID_CLAN_INFO_FF_NOTICE,This setting can't be changed later
 TID_CLAN_INFO_FF_INFO,"By setting your Club as Family Friendly, you allow players of all ages to join."
 TID_CLAN_INFO_FF_NOTICE_ON_OFF,"If you turn this setting ON, it can't be changed OFF later"
@@ -3636,8 +3636,8 @@ TID_QUEST_NEW_DAILY_IN,Daily Quests refresh in:
 TID_BRAWL_PASS_OLD_BOXES_BUTTON,OPEN OLD BOXES
 TID_BRAWL_PASS_TIER_INFO,Earn Tokens to unlock this Tier. You can get tokens from Battles and completing Quests.
 TID_BRAWL_PASS_TIER_SHORTCUT,TIER <NUM>: <REWARD>
-TID_BRAWL_PASS_TAIL_TITLE,Bonus Big Box!
-TID_BRAWL_PASS_TAIL_INFO,"Once you've completed the Brawl Pass, you will earn a Big Box for every <NUM> tokens!"
+TID_BRAWL_PASS_TAIL_TITLE,Бонусні Великі бокси
+TID_BRAWL_PASS_TAIL_INFO,Після проходження Бравл Пасс ви отримуватимете Великий Бокс за кожні <NUM> жетонів!
 TID_BRAWL_PASS_PURCHASE_OR,OR
 TID_EMOTES_POPUP_TITLE,ЕМОЗІ
 TID_EMOTES_POPUP_TEXT,Виберіть емозі для використання в битві.
@@ -4175,41 +4175,41 @@ TID_MAP_EDITOR_HOT_ZONE_AREA,Ви повинні розмістити деякі
 TID_MAP_EDITOR_SIEGE_BOLT,Ви повинні розмістити кілька місць для болтів
 TID_MAP_EDITOR_MODIFIERS_TITLE,Модифікації
 TID_PLAYER_MAP_SLOT_MAPS_MADE,Maps made: <NUM>/<MAX>
-TID_PLAYER_MAP_SLOT_DRAFT_MAPS,Карт - чернкток: <NUM>/<MAX>
+TID_PLAYER_MAP_SLOT_DRAFT_MAPS,Карт чернеток: <NUM>/<MAX>
 TID_PLAYER_MAP_SLOT_STATUS,Status: <STATUS>
 TID_PLAYER_MAP_SLOT_STATUS_UNKNOWN,Unknown
-TID_PLAYER_MAP_SLOT_STATUS_DRAFT,Draft
+TID_PLAYER_MAP_SLOT_STATUS_DRAFT,Чернетка
 TID_PLAYER_MAP_SLOT_STATUS_SUBMITTED,Submitted. <APPROVAL>
 TID_PLAYER_MAP_SLOT_STATUS_GREENLIGHTED,Greenlit
-TID_PLAYER_MAP_SLOT_STATUS_PUBLISHED,Published
-TID_PLAYER_MAP_SLOT_STATUS_PUBLISHED_VOTE,Published. <VOTE>
-TID_PLAYER_MAP_SLOT_STATUS_BANNED,Banned
-TID_PLAYER_MAP_SLOT_STATUS_WINNER,Winner
-TID_PLAYER_MAP_SLOT_STATUS_REJECTED,Rejected
-TID_PLAYER_MAP_SLOT_STATUS_FEATURED,Featured. <VOTE>
-TID_PLAYER_MAP_STATUS_INFO_TITLE,Your map status
-TID_PLAYER_MAP_STATUS_INFO_DRAFT,"You can submit a new map for approval in Friendly battles. If approved by other players, you can publish it as a Candidate of the Day Map."
-TID_PLAYER_MAP_STATUS_INFO_SUBMITTED,"If enough players approve a map in Friendly battles, it can enter the map competition. Editing a map returns it back to draft status, and removes previous approvals of the map."
-TID_PLAYER_MAP_STATUS_INFO_GREENLIGHTED,"Once approved by other players, your map can enter the map competition. Note! Editing a map removes any previous approvals."
-TID_PLAYER_MAP_STATUS_INFO_PUBLISHED,"Published maps take part in the map competition, and other participating players will be able to play it. Based on their votes, winning maps will get a place in the winners' event."
-TID_PLAYER_MAP_STATUS_INFO_BANNED,Banned maps have been removed from editing. They can be only deleted.
-TID_PLAYER_MAP_STATUS_INFO_REJECTED,"If your map got rejected, don't worry. You can still edit and improve it, and submit it again."
-TID_PLAYER_MAP_STATUS_INFO_WINNER,"We have winners, congratulations! Winning maps will show up in the winners' event."
-TID_PLAYER_MAP_STATUS_INFO_FEATURED,"Featured maps have been presented in the Candidates of the Day slot. Based on players' votes, winning maps will get a place in the winners' event."
-TID_PLAYER_MAP_STATUS_INFO_DRAFT_AUTOREVIEW,You can submit new maps to take part in map competition. Submitted maps need to be first checked for inappropriate content and get greenlit before publication.
-TID_PLAYER_MAP_STATUS_INFO_SUBMITTED_AUTOREVIEW,"Submitted map waits to get greenlit for publication, after which it can enter the map competition. Editing a map returns it back to draft status and removes previous approval of the map."
-TID_PLAYER_MAP_STATUS_INFO_GREENLIGHTED_AUTOREVIEW,"Once approved for publication, your map can enter the map competition. Note! Editing a map removes greenlit status."
-TID_PLAYER_MAP_STATUS_INFO_REJECTED_AUTOREVIEW,"If your map got rejected, don't worry. You can still edit and improve it, and submit it again."
-TID_PLAYER_MAP_CREATE_POPUP_TITLE,CREATE NEW MAP
-TID_PLAYER_MAP_CREATE_POPUP_MAP_NAME,MAP NAME
-TID_PLAYER_MAP_CREATE_POPUP_SELECT_MODE,SELECT GAME MODE
-TID_PLAYER_MAP_CREATE_POPUP_SELECT_MODE_WARNING,Choose the game mode first!
-TID_PLAYER_MAP_CREATE_POPUP_SELECT_ENVIRONMENT,SELECT ENVIRONMENT
-TID_PLAYER_MAP_CREATE_POPUP_SELECT_ENVIRONMENT_WARNING,Choose the environment first!
-TID_PLAYER_MAP_CREATE_POPUP_BUTTON_CREATE,CREATE
+TID_PLAYER_MAP_SLOT_STATUS_PUBLISHED,Опублікована.
+TID_PLAYER_MAP_SLOT_STATUS_PUBLISHED_VOTE,Опублікована. <VOTE>
+TID_PLAYER_MAP_SLOT_STATUS_BANNED,Забанена
+TID_PLAYER_MAP_SLOT_STATUS_WINNER,Виграшна!
+TID_PLAYER_MAP_SLOT_STATUS_REJECTED,Відхилино
+TID_PLAYER_MAP_SLOT_STATUS_FEATURED,Оглянуто: <VOTE>
+TID_PLAYER_MAP_STATUS_INFO_TITLE,Статус вашої карти
+TID_PLAYER_MAP_STATUS_INFO_DRAFT,"Ви можете подати нову карту на затвердження в товариських боях. Якщо її схвалять інші гравці, ви можете опублікувати її як карту «Кандидат дня»."
+TID_PLAYER_MAP_STATUS_INFO_SUBMITTED,"Якщо достатня кількість гравців схвалить карту в дружніх боях, вона може взяти участь у конкурсі карт. Редагування карти повертає її до стану чернетки та видаляє попередні схвалення карти."
+TID_PLAYER_MAP_STATUS_INFO_GREENLIGHTED,Після схвалення іншими гравцями ваша карта може брати участь у конкурсі карт. Примітка! Редагування карти видаляє всі попередні схвалення.
+TID_PLAYER_MAP_STATUS_INFO_PUBLISHED,"Опубліковані карти беруть участь у конкурсі карт, і інші гравці-учасники зможуть грати в них. На основі їхніх голосів карти-переможці отримають місце в події переможців."
+TID_PLAYER_MAP_STATUS_INFO_BANNED,Заборонені карти видалені з редагування. Їх можна лише видалити.
+TID_PLAYER_MAP_STATUS_INFO_REJECTED,"Якщо вашу карту було відхилено, не хвилюйтеся. Ви все ще можете редагувати та вдосконалювати його, а також надсилати його знову."
+TID_PLAYER_MAP_STATUS_INFO_WINNER,"У нас є переможці, вітаємо! Переможні карти відображатимуться в подіях переможців."
+TID_PLAYER_MAP_STATUS_INFO_FEATURED,"Рекомендовані карти представлені в розділі «День кандидата». Виходячи з голосів гравців, переможні карти отримують місце в події переможців."
+TID_PLAYER_MAP_STATUS_INFO_DRAFT_AUTOREVIEW,Ви можете подати нові карти для участі в конкурсі карт. Надіслані карти потрібно спочатку перевірити на неприйнятний вміст і отримати зелений світло перед публікацією.
+TID_PLAYER_MAP_STATUS_INFO_SUBMITTED_AUTOREVIEW,"Надіслана карта очікує на отримання зеленого світла для публікації, після чого вона може брати участь у конкурсі карт. Редагування карти повертає її до стану чернетки та видаляє попереднє схвалення карти."
+TID_PLAYER_MAP_STATUS_INFO_GREENLIGHTED_AUTOREVIEW,Після схвалення до публікації ваша карта може брати участь у конкурсі карт. Примітка! Редагування карти видаляє статус зеленого світла.
+TID_PLAYER_MAP_STATUS_INFO_REJECTED_AUTOREVIEW,"Якщо вашу карту було відхилено, не хвилюйтеся. Ви все ще можете редагувати та вдосконалювати його, а також надсилати його знову."
+TID_PLAYER_MAP_CREATE_POPUP_TITLE,СТВОРИТИ НОВУ КАРТУ
+TID_PLAYER_MAP_CREATE_POPUP_MAP_NAME,НАЗВА КАРТИ
+TID_PLAYER_MAP_CREATE_POPUP_SELECT_MODE,ВИБЕРІТЬ РЕЖИМ ГРИ
+TID_PLAYER_MAP_CREATE_POPUP_SELECT_MODE_WARNING,Спочатку виберіть режим гри!
+TID_PLAYER_MAP_CREATE_POPUP_SELECT_ENVIRONMENT,ОБЕРІТЬ СЕРЕДОВИЩЕ
+TID_PLAYER_MAP_CREATE_POPUP_SELECT_ENVIRONMENT_WARNING,Спершу оберіть середовище!
+TID_PLAYER_MAP_CREATE_POPUP_BUTTON_CREATE,СТВОРИТИ
 TID_BUTTON_MAP_EDITOR,РОЗРОБНИК КАРТ
 TID_PLAYER_MAP_LIST_TITLE,РОЗРОБНИК КАРТ
-TID_PLAYER_MAP_UNNAMED,Unnamed
+TID_PLAYER_MAP_UNNAMED,Без назви
 TID_CREATE_MAP_ERROR_INTERNAL,"Internal error creating map, please try again later."
 TID_CREATE_MAP_ERROR_MISSING_NAME,Map name missing
 TID_CREATE_MAP_ERROR_EXISTING_NAME,Map name already exists
@@ -4370,10 +4370,10 @@ TID_SPEC_ABI_ICE_DUDE_1_DESC,Opponents standing on Lou's Super area get frozen <
 TID_SPEC_ABI_ICE_DUDE_2,HYPOTHERMIA
 TID_SPEC_ABI_ICE_DUDE_2_DESC,Opponents lose up to <c00cc00><VALUE1>%</c> of their damage based on how frozen they are from Lou's attacks.
 TID_ACCESSORY_ICE_DUDE_GADGET,ICE BLOCK
-TID_ACCESSORY_ICE_DUDE_GADGET_DESC,"Lou shields himself with ice, becoming invulnerable for <c00cc00><VALUE1></c> seconds."
-TID_INVITE_CLAN_TOKEN_ERROR_FULL,"Can't invite, your Club is full"
-TID_INVITE_CLAN_TOKEN_ERROR_TOO_MANY_INVITES,"Can't invite, you've invited too many players"
-TID_INVITE_CLAN_TOKEN_ERROR_NO_PERMISSION,"Can't invite, only Club Presidents can invite new members"
+TID_ACCESSORY_ICE_DUDE_GADGET_DESC,"Лу захищається льодом, стаючи невразливим на <c00cc00><VALUE1></c> секунд."
+TID_INVITE_CLAN_TOKEN_ERROR_FULL,"Неможливо запросити, ваш клуб заповнений"
+TID_INVITE_CLAN_TOKEN_ERROR_TOO_MANY_INVITES,"Неможливо запросити, ви запросили забагато гравців"
+TID_INVITE_CLAN_TOKEN_ERROR_NO_PERMISSION,"Неможливо запросити, лише президенти клубів можуть запрошувати нових членів"
 TID_BRAWLPASS_PROMO_POPUP_TITLE,NEW SEASON HAS STARTED!
 TID_BRAWLPASS_PROMO_POPUP_TEXT,Welcome to Season <NUM>: <SEASON>!
 TID_QUESTS_RECOMMENDED,Recommended
@@ -6394,10 +6394,10 @@ TID_CLUB_EVENTS_LEAGUE_TAB_SEASON,WEEK
 TID_CLUB_EVENTS_TAB_LEAGUE,LEAGUE
 TID_CLUB_EVENTS_TAB_QUESTS,QUESTS
 TID_CLUB_EVENTS_BUTTON_CLUB_SHOP,КЛУБНИЙ МАГАЗИН
-TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_IS_TOP,Only the top <TOP> results of each club are counted. You are in position <NUM>.
-TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_TOP,Only the top <TOP> results of each club are counted. You are in position <cF76263><NUM></c>.
-TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_RANKED,Only the top <TOP> results of each club are counted. <cF76263>You haven't participated yet.</c>
-TID_CLUB_INFO_TOP_EVENT_DAY_PLAYER_DIVIDER,Only the top <TOP> results of each club are counted. <cF76263>You haven't participated yet.</c>
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_IS_TOP,Враховуються лише найкращі <TOP> результати кожного клубу. Ви в позиції <NUM>.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_TOP,Враховуються лише найкращі <TOP> результати кожного клубу. Ви в позиції <cF76263><NUM></c>.
+TID_CLUB_LEAGUE_MEMBER_RANKINGS_NUM_DESC_NOT_RANKED,Враховуються лише найкращі <TOP> результати кожного клубу. <cF76263>Ви ще не брали участі.</c>
+TID_CLUB_INFO_TOP_EVENT_DAY_PLAYER_DIVIDER,Враховуються лише найкращі <TOP> результати кожного клубу. <cF76263>Ви ще не брали участі.</c>
 TID_CLUB_QUESTS_PLAYER_REWARD_DESC,YOUR END OF WEEK REWARD
 TID_CLUB_QUESTS_LOCKED_REWARD_DESC,ВИКОНАЙ БУДЬ ЯКИЙ КВЕСТ ЩОБ ОТРИМАТИ
 TID_CLUB_QUESTS_REWARD_TRACK_OVERLAY,"Наберіть <POINTS> балів у своєму клубі, щоб отримати це як нагороду кінця тижня!"
@@ -6492,7 +6492,7 @@ TID_CLUB_EVENTS_ONBOARDING_PAGE_4_1,Грайте зі своїм клубом! 1
 TID_CLUB_EVENTS_ONBOARDING_PAGE_4_2,Заробляйте клубні монети!
 TID_CLUB_EVENTS_ONBOARDING_PAGE_4_3,Купляйте речі  у Магазині Клубу!
 TID_SUGGEST_TITLE,Запропонувати Бравлера
-TID_CLUB_LEAGUE_TOP_24_REWARDS,All players are eligible to collect their end of week rewards
+TID_CLUB_LEAGUE_TOP_24_REWARDS,Усі гравці мають право отримати свої нагороди наприкінці тижня
 TID_CLUB_LEAGUE_STARTS_IN,Club League starts in:
 TID_CLUB_QUESTS_STARTS_IN,Club Quests starts in:
 TID_SHOWDOWN_71,Jump Park
